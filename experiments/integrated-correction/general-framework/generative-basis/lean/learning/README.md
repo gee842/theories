@@ -127,6 +127,10 @@ five use only standard `propext` and/or `Quot.sound`. The separate
 source hashes and checker/compiler hashes. It does not alter the original
 48-theorem record below or claim new verification of unrelated branches.
 
+### Bounded completion extension
+
+[The additive completion package](protocol-completion-README.md) proves bounded first return under explicit actual progress conditions and applies it to the unchanged paid example and predictor. Its fresh Lean 4.29.1 build passes 34 new theorem audits and rechecks 244 inherited audits across 15 modules. Separate internal review accepts maximal-attempt, returned-state and resource-account scope. Entry refusal, paid deadlock, stalling and depleted readmission delimit application; no scheduler or perpetual-renewal guarantee is added.
+
 ### Paid protocol composition extension
 
 `ProtocolComposition.lean` defines nonempty first-return physical blocks under

@@ -1,0 +1,287 @@
+PredictionProtocolCompletion.lean:73:62: error: unsolved goals
+case written
+p : Parameters
+a : Bool
+s : State
+hs : Live p s.physical.core.selector s
+inside : 4 < s.score
+hq : s.score ≤ 4
+step :
+  (committed
+        { boundary := fun s => s.phase = Phase.ready ∧ s.score ≤ 4,
+          permits := fun a s e x =>
+            match e with
+            | Event.rent => a = (!decide (s.score < 2) && (decide (2 < s.score) || s.physical.core.selector))
+            | Event.work => a = (!decide (s.score < 2) && (decide (2 < s.score) || s.physical.core.selector))
+            | Event.write => a = s.physical.core.selector
+            | Event.finish => a = s.physical.core.selector
+            | Event.formUpdater fast => False
+            | Event.reverse => False }
+        s.physical.core.selector).step
+    s Event.finish
+    {
+      physical :=
+        {
+          core :=
+            { fuel := s.physical.core.fuel, packets := s.physical.core.packets, selector := s.physical.core.selector,
+              lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+              regime := s.physical.core.regime },
+          directed := s.physical.directed,
+          moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+          selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder, material := s.physical.material },
+      score := s.score, receipt := false, phase := Phase.ready }
+hg : a = s.physical.core.selector ∧ PredictionAction.Enabled p s Event.finish
+hp : s.phase = Phase.written
+⊢ s.physical.core.selector = (!decide (s.score < 2) && (decide (2 < s.score) || s.physical.core.selector)) ∧
+    PredictionAction.Enabled p
+        {
+          physical :=
+            {
+              core :=
+                { fuel := s.physical.core.fuel, packets := s.physical.core.packets,
+                  selector := s.physical.core.selector,
+                  lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                  regime := s.physical.core.regime },
+              directed := s.physical.directed,
+              moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+              selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+              material := s.physical.material },
+          score := s.score, receipt := false, phase := Phase.ready }
+        Event.rent ∧
+      PredictionAction.Enabled p
+          {
+            physical :=
+              {
+                core :=
+                  { fuel := s.physical.core.fuel - p.rent, packets := s.physical.core.packets,
+                    selector := s.physical.core.selector,
+                    lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                    regime := s.physical.core.regime },
+                directed := s.physical.directed,
+                moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                material := s.physical.material },
+            score := s.score, receipt := false, phase := Phase.rented }
+          Event.work ∧
+        PredictionAction.Enabled p
+            {
+              physical :=
+                {
+                  core :=
+                    {
+                      fuel :=
+                        if
+                            capture
+                                {
+                                  physical :=
+                                    {
+                                      core :=
+                                        { fuel := s.physical.core.fuel - p.rent, packets := s.physical.core.packets,
+                                          selector := s.physical.core.selector,
+                                          lease :=
+                                            if s.receipt = true then p.base.selector.lifetime
+                                            else s.physical.core.lease - 1,
+                                          regime := s.physical.core.regime },
+                                      directed := s.physical.directed,
+                                      moduleLease :=
+                                        if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                                      selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                                      material := s.physical.material },
+                                  score := s.score, receipt := false, phase := Phase.rented } =
+                              true then
+                          s.physical.core.fuel - p.rent - p.base.selector.trial + p.base.selector.packet - maintenance p
+                        else s.physical.core.fuel - p.rent - p.base.selector.trial,
+                      packets := s.physical.core.packets - 1,
+                      selector := !decide (s.score < 2) && (decide (2 < s.score) || s.physical.core.selector),
+                      lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                      regime := s.physical.core.regime },
+                  directed := s.physical.directed,
+                  moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                  selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                  material := s.physical.material },
+              score := s.score,
+              receipt :=
+                capture
+                  {
+                    physical :=
+                      {
+                        core :=
+                          { fuel := s.physical.core.fuel - p.rent, packets := s.physical.core.packets,
+                            selector := s.physical.core.selector,
+                            lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                            regime := s.physical.core.regime },
+                        directed := s.physical.directed,
+                        moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                        selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                        material := s.physical.material },
+                    score := s.score, receipt := false, phase := Phase.rented },
+              phase := Phase.observed }
+            Event.write ∧
+          PredictionAction.Enabled p
+            {
+              physical :=
+                {
+                  core :=
+                    {
+                      fuel :=
+                        (if
+                              capture
+                                  {
+                                    physical :=
+                                      {
+                                        core :=
+                                          { fuel := s.physical.core.fuel - p.rent, packets := s.physical.core.packets,
+                                            selector := s.physical.core.selector,
+                                            lease :=
+                                              if s.receipt = true then p.base.selector.lifetime
+                                              else s.physical.core.lease - 1,
+                                            regime := s.physical.core.regime },
+                                        directed := s.physical.directed,
+                                        moduleLease :=
+                                          if s.receipt = true then p.base.moduleLifetime
+                                          else s.physical.moduleLease - 1,
+                                        selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                                        material := s.physical.material },
+                                    score := s.score, receipt := false, phase := Phase.rented } =
+                                true then
+                            s.physical.core.fuel - p.rent - p.base.selector.trial + p.base.selector.packet -
+                              maintenance p
+                          else s.physical.core.fuel - p.rent - p.base.selector.trial) -
+                          p.writing,
+                      packets := s.physical.core.packets - 1,
+                      selector := !decide (s.score < 2) && (decide (2 < s.score) || s.physical.core.selector),
+                      lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                      regime := s.physical.core.regime },
+                  directed := s.physical.directed,
+                  moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                  selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                  material := s.physical.material },
+              score :=
+                revisedScore s.physical.directed s.score
+                  (label
+                    {
+                      physical :=
+                        {
+                          core :=
+                            {
+                              fuel :=
+                                if
+                                    capture
+                                        {
+                                          physical :=
+                                            {
+                                              core :=
+                                                { fuel := s.physical.core.fuel - p.rent,
+                                                  packets := s.physical.core.packets,
+                                                  selector := s.physical.core.selector,
+                                                  lease :=
+                                                    if s.receipt = true then p.base.selector.lifetime
+                                                    else s.physical.core.lease - 1,
+                                                  regime := s.physical.core.regime },
+                                              directed := s.physical.directed,
+                                              moduleLease :=
+                                                if s.receipt = true then p.base.moduleLifetime
+                                                else s.physical.moduleLease - 1,
+                                              selectorSeen := s.physical.selectorSeen,
+                                              remainder := s.physical.remainder, material := s.physical.material },
+                                          score := s.score, receipt := false, phase := Phase.rented } =
+                                      true then
+                                  s.physical.core.fuel - p.rent - p.base.selector.trial + p.base.selector.packet -
+                                    maintenance p
+                                else s.physical.core.fuel - p.rent - p.base.selector.trial,
+                              packets := s.physical.core.packets - 1,
+                              selector := !decide (s.score < 2) && (decide (2 < s.score) || s.physical.core.selector),
+                              lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                              regime := s.physical.core.regime },
+                          directed := s.physical.directed,
+                          moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                          selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                          material := s.physical.material },
+                      score := s.score,
+                      receipt :=
+                        capture
+                          {
+                            physical :=
+                              {
+                                core :=
+                                  { fuel := s.physical.core.fuel - p.rent, packets := s.physical.core.packets,
+                                    selector := s.physical.core.selector,
+                                    lease :=
+                                      if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                                    regime := s.physical.core.regime },
+                                directed := s.physical.directed,
+                                moduleLease :=
+                                  if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                                selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                                material := s.physical.material },
+                            score := s.score, receipt := false, phase := Phase.rented },
+                      phase := Phase.observed }),
+              receipt :=
+                capture
+                  {
+                    physical :=
+                      {
+                        core :=
+                          { fuel := s.physical.core.fuel - p.rent, packets := s.physical.core.packets,
+                            selector := s.physical.core.selector,
+                            lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+                            regime := s.physical.core.regime },
+                        directed := s.physical.directed,
+                        moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+                        selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder,
+                        material := s.physical.material },
+                    score := s.score, receipt := false, phase := Phase.rented },
+              phase := Phase.written }
+            Event.finish
+PredictionProtocolCompletion.lean:86:77: error: unsolved goals
+case written
+p : Parameters
+a : Bool
+s : State
+hs : Live p a s
+inside : 4 < s.score
+hq : s.score ≤ 4
+step :
+  (committed
+        { boundary := fun s => s.phase = Phase.ready ∧ s.score ≤ 4,
+          permits := fun a s e x =>
+            match e with
+            | Event.rent => a = command s
+            | Event.work => a = command s
+            | Event.write => a = s.physical.core.selector
+            | Event.finish => a = s.physical.core.selector
+            | Event.formUpdater fast => False
+            | Event.reverse => False }
+        a).step
+    s Event.finish
+    {
+      physical :=
+        {
+          core :=
+            { fuel := s.physical.core.fuel, packets := s.physical.core.packets, selector := s.physical.core.selector,
+              lease := if s.receipt = true then p.base.selector.lifetime else s.physical.core.lease - 1,
+              regime := s.physical.core.regime },
+          directed := s.physical.directed,
+          moduleLease := if s.receipt = true then p.base.moduleLifetime else s.physical.moduleLease - 1,
+          selectorSeen := s.physical.selectorSeen, remainder := s.physical.remainder, material := s.physical.material },
+      score := s.score, receipt := false, phase := Phase.ready }
+hp : s.phase = Phase.written
+⊢ False
+PredictionProtocolCompletion.lean:114:5: error: unexpected token 'prefix'; expected '_' or identifier
+PredictionProtocolCompletion.lean:114:13: error: unexpected identifier; expected prec
+PredictionProtocolCompletion.lean:116:65: error: unexpected identifier; expected ':'
+PredictionProtocolCompletion.lean:120:5: error: unexpected token 'prefix'; expected '_' or identifier
+PredictionProtocolCompletion.lean:120:13: error: unexpected identifier; expected prec
+PredictionProtocolCompletion.lean:122:67: error: unexpected identifier; expected ':'
+'PredictionProtocolCompletion.live_entry_iff' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.live_has_next' does not depend on any axioms
+'PredictionProtocolCompletion.live_preserved_inside' depends on axioms: [propext, sorryAx, Quot.sound]
+'PredictionProtocolCompletion.rank_decreases_inside' depends on axioms: [propext, sorryAx, Quot.sound]
+'PredictionProtocolCompletion.payable_trial_contract' depends on axioms: [propext, sorryAx, Quot.sound]
+'PredictionProtocolCompletion.admitted_trial_completes' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+PredictionProtocolCompletion.lean:139:14: error(lean.unknownIdentifier): Unknown constant `PredictionProtocolCompletion.admitted_prefix_has_extension`
+PredictionProtocolCompletion.lean:140:14: error(lean.unknownIdentifier): Unknown constant `PredictionProtocolCompletion.admitted_no_internal_deadlock`
+'PredictionProtocolCompletion.admitted_no_infinite_internal_run' depends on axioms: [propext, sorryAx, Quot.sound]

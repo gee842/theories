@@ -1,0 +1,661 @@
+{
+  "checked_at_utc": "2026-10-06T01:16:22.608573+00:00",
+  "status": "accepted_scoped_internal_review",
+  "review_type": "Independent collaborating-AI source, proof-statement, receipt and prose audit; not external peer review.",
+  "scientific_rerun": false,
+  "formal_build_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-audit.json",
+  "formal_build_receipt_sha256": "826ac31c89cb9e8d676fa16b0888868cdae0b91a31b67448c29f0cb76838749b",
+  "formal_build_status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "source_and_build_identity_checks": 18,
+  "new_theorem_audits": 34,
+  "inherited_theorem_audits": 244,
+  "total_modules": 15,
+  "new_empty_axiom_audits": 8,
+  "module_audits": [
+    {
+      "module": "GenerativeCore",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 18,
+      "axioms": []
+    },
+    {
+      "module": "Depletion",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 5,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ResourceContinuation",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 21,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ControllerRevision",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 8,
+      "axioms": []
+    },
+    {
+      "module": "ControlledRefinement",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 15,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtocolComposition",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 17,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtocolExamples",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 22,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtocolCompletion",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 13,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "ProtocolCompletionExamples",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 8,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "FormedSelection",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 43,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "SelectorRevision",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 21,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "UpdaterFormation",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 25,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "PredictionAction",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 34,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "PredictionProtocolBridge",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 15,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "PredictionProtocolCompletion",
+      "source_match": true,
+      "compiler_exit_code": 0,
+      "audit_names_match": true,
+      "audits": 13,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "final_preserved_attempt_matches": true,
+  "bound_files": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean": "55b3d154a8cef06fb14dba0ae9ab06e8fb2f607136344bf4865de73adfab49bd",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean": "ee438240d0ca70476152d337b83ffe6668d222625bdfb0d576d8ab883c8e10d7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean": "f7722a463fe05d2cc14b7c1cc3bc89b9c1d1435febb1c084a000f48ce98d9ee3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean": "0b575dcc675e9489b3e7cbeece309061352d840b60f9565b8ac6ba46df502e14",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletion.lean": "0d205ad3ce57311bf73fd6bf4266202877c2138ca2980531b8dbe7a1f2da71f3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletionExamples.lean": "8b49c0b9b29c5d07a5734998dcee0f5ae1ef72fcf18c512c846f225be71785dd",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean": "4a96b3a8a6a37e592a28d18e9b7b2db805bd58d8070b076b843c33d1c89320e0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolCompletion.lean": "a24c91215991f49372e473761514277e758e48afd1a15268632d613da248e42a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/check_protocol_completion.py": "e6e3e70be2ed7b1fdc8d481bcbf899f4ab08dca53d35172a8b1dca88ba381558",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-audit.json": "826ac31c89cb9e8d676fa16b0888868cdae0b91a31b67448c29f0cb76838749b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-development/20261006T011134517329Z/PredictionProtocolCompletion.lean": "a24c91215991f49372e473761514277e758e48afd1a15268632d613da248e42a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-development/20261006T011134517329Z/ProtocolCompletion.lean": "0d205ad3ce57311bf73fd6bf4266202877c2138ca2980531b8dbe7a1f2da71f3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-development/20261006T011134517329Z/ProtocolCompletionExamples.lean": "8b49c0b9b29c5d07a5734998dcee0f5ae1ef72fcf18c512c846f225be71785dd",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-development/20261006T011134517329Z/audit.json": "500d5cff8e9aae22256681f0aed8aed71e7ed0d2c7f7eac1cd18c3a58ad429c1",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-development/20261006T011134517329Z/checker.py": "e6e3e70be2ed7b1fdc8d481bcbf899f4ab08dca53d35172a8b1dca88ba381558",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md": "20bb70038114e9f1ef7a1bc23c6f100b5c86ade6009a3b260dfc806b9d5e348a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md": "5f21abb309912b68a14cb7c1b0f2f25dfadf4b9dd64ed5715cbbf95abe16d6ea",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md": "c3051f48ab2003e8adb7363989160fdd15a5df9aa8b549af0a3e3b79b7c03f6a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md": "bc4aa091ebe8b4d40c34aa94bc17b4a3415dd5912fb8e65b5749714c59788753",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md": "a9eed40847876863dc029f0c5b089a68e4b73e030ae7f8ca369642ee97295edf",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md": "3a470fedb9a4f2e7eccc97e27eac0a159634f5696390ff229d09b7abaa9392d5"
+  },
+  "bound_file_count": 29,
+  "owned_integration_fragments": [
+    {
+      "path": "RESEARCH.md",
+      "old_text": "**Paid implementation across event scales, 6 October 2026:** [protocol composition](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md) extends the controller interface from single matching events to completed sequences of physical events. Thirty-nine new Lean audits establish flattening through actual boundary states, physically decoded memory under a local implementation contract, prefix resource accounts and internal-rank bounds. Paid examples preserve finite source depletion, unaffordable entry and an actual paid deadlock. Two implementations have exactly the same completed finite macro histories while one admits infinite internal stalling under the same committed command. The [review](_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md) accepts the finite implementation interface; the subsequent concrete predictor bridge above establishes its trial contract, while completion, probability and timing require further premises.",
+      "old_sha256": "fd964ae9c2a8b5aefe028accf9b8de294d04440de4fe4eedf166e0ad4ba7abbc",
+      "new_text": "**Paid implementation across event scales, 6 October 2026:** [protocol composition](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md) extends the controller interface from single matching events to completed sequences of physical events. Thirty-nine new Lean audits establish flattening through actual boundary states, physically decoded memory under a local implementation contract, prefix resource accounts and internal-rank bounds. Paid examples preserve finite source depletion, unaffordable entry and an actual paid deadlock. Two implementations have exactly the same completed finite macro histories while one admits infinite internal stalling under the same committed command. The [review](_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md) accepts the finite implementation interface; the subsequent concrete predictor bridge above establishes its trial contract, while completion, probability and timing require further premises.\n\n**Issued-operation completion, 6 October 2026:** [the completion contract](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md) now adds actual next-event availability, preservation and strict internal rank to the completed-history interface. Thirty-four new Lean audits establish bounded completion of maximal admitted operations, continuation through actual returned states and separate prefix accounts. The unchanged predictor trial completes exactly four events under its explicit guards; refusal, paid deadlock, stalling and depleted readmission remain visible. [Separate review](_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md) accepts this conditional contribution to compatible composition. It supplies no elapsed-time, unrestricted-scheduler or perpetual-renewal guarantee. The central successor, warranted revision and empirical identification work remains ongoing.",
+      "new_sha256": "49f6174331b434ac05cf36853c839d740af48a9fe663cceefb6e09a799360528",
+      "present_in_live_document": true,
+      "scope": "Only this owned replacement fragment is bound; unrelated concurrent document text is excluded."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "old_text": "**Physical events now compose into completed learning operations, 6 October 2026:** [protocol composition](unified-2026-10-05/PROTOCOL-COMPOSITION.md) supplies a conditional implementation contract across event scales, with 39 new Lean audits. Finite completed protocols concatenate through actual intermediate states and costs, with controller memory decoded from physical boundary states. Identical completed behavior can coexist with infinite stalling; another checked attempt spends its last fuel and deadlocks. This closes a formal event-granularity interface. The subsequent concrete predictor connection above verifies its trial mapping while retaining unsuccessful execution and supplied construction recipes.",
+      "old_sha256": "ac3d9f0eb2f3bf46355464e2897412abddad9ecd0abbcbb1d64da34e591d51fe",
+      "new_text": "**Physical events now compose into completed learning operations, 6 October 2026:** [protocol composition](unified-2026-10-05/PROTOCOL-COMPOSITION.md) supplies a conditional implementation contract across event scales, with 39 new Lean audits. Finite completed protocols concatenate through actual intermediate states and costs, with controller memory decoded from physical boundary states. Identical completed behavior can coexist with infinite stalling; another checked attempt spends its last fuel and deadlocks. This closes a formal event-granularity interface. The subsequent concrete predictor connection above verifies its trial mapping while retaining unsuccessful execution and supplied construction recipes.\n\n**Bounded completion under physical progress conditions, 6 October 2026:** [protocol completion](unified-2026-10-05/PROTOCOL-COMPLETION.md) closes a further conditional implication from an admitted operation to actual first return. Thirty-four new Lean audits cover the general contract, paid counterexamples and the unchanged four-event predictor. Every permitted internal branch must remain enabled and lower rank; next operations use the actual depleted boundary. This advances compatible composition without deriving scheduling, time, automatic renewal or justified concern.",
+      "new_sha256": "392c23c73bda29fa4ecd00caf311148fb5bf716e2063bfba53cd69fd7714fac2",
+      "present_in_live_document": true,
+      "scope": "Only this owned replacement fragment is bound; unrelated concurrent document text is excluded."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "old_text": "**Paid protocols across event scales, 6 October 2026:** [protocol composition](PROTOCOL-COMPOSITION.md) now supplies the additional event/trace mapping described below: completed nonempty physical blocks compose into finite controlled histories under an explicit per-boundary implementation contract. Memory is decoded from actual physical states; micro-event support accounts retain all intermediate expenditures. Thirty-nine new Lean results include paid entry failure, source depletion, a paid deadlock and two implementations with identical completed macro histories but different possible internal executions. Rank descent excludes infinite internal runs only under its stated premise and does not supply nonblocking. This advances compatible composition; the subsequent actual-predictor bridge above establishes the deterministic trial contract, while uncompleted attempts cannot be erased from later probability or reliability claims.",
+      "old_sha256": "43aed83dd8bb748409ccaec6bcaa8f8964c34b4310949a37ba17d95c387af7f8",
+      "new_text": "**Paid protocols across event scales, 6 October 2026:** [protocol composition](PROTOCOL-COMPOSITION.md) now supplies the additional event/trace mapping described below: completed nonempty physical blocks compose into finite controlled histories under an explicit per-boundary implementation contract. Memory is decoded from actual physical states; micro-event support accounts retain all intermediate expenditures. Thirty-nine new Lean results include paid entry failure, source depletion, a paid deadlock and two implementations with identical completed macro histories but different possible internal executions. Rank descent excludes infinite internal runs only under its stated premise and does not supply nonblocking. This advances compatible composition; the subsequent actual-predictor bridge above establishes the deterministic trial contract, while uncompleted attempts cannot be erased from later probability or reliability claims.\n\n**Completion condition discharged for an explicit law class, 6 October 2026:** [protocol completion](PROTOCOL-COMPLETION.md) strengthens that interface with an admitted domain, actual nonblocking, preservation under every internal outcome and strict rank descent. Thirty-four new Lean audits prove bounded first return for maximal admitted operations and apply it to the unchanged four-event predictor. Finite repetition needs explicit admission and closure at actual returned states; finite source depletion can defeat readmission. This advances requirement 3 without adding a completion criterion or installing a scheduler, sensor, free failure report or renewable supply. Actual successor composition, justified evaluative revision and empirical identification retain their separate outstanding obligations.",
+      "new_sha256": "51931f167b2cb63369b5eab7369a7e9a4ea01dafa05588f7903d2726711d041c",
+      "present_in_live_document": true,
+      "scope": "Only this owned replacement fragment is bound; unrelated concurrent document text is excluded."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md",
+      "old_text": "**Subsequent concrete connection:** [Prediction protocol](PREDICTION-PROTOCOL.md) now proves the actual formed predictor's four-event trial contract, using independently stated arithmetic command/update equations and its actual consumed receipt. Thirty-eight additional Lean results retain paid failures, finite source and inherited accounts. That application covers deterministic payable-write trials on full physical boundary states; this generic result and its limits remain unchanged.",
+      "old_sha256": "2cdaba3d5543b804aec10a227a3a61b2f8d01bd4b5a1433aabe9c4c3045468e2",
+      "new_text": "**Subsequent concrete connection:** [Prediction protocol](PREDICTION-PROTOCOL.md) now proves the actual formed predictor's four-event trial contract, using independently stated arithmetic command/update equations and its actual consumed receipt. Thirty-eight additional Lean results retain paid failures, finite source and inherited accounts. That application covers deterministic payable-write trials on full physical boundary states; this generic result and its limits remain unchanged.\n\n**Subsequent completion result:** [the checked progress contract](PROTOCOL-COMPLETION.md) now supplies bounded nonempty first return when actual next-event availability, preservation and strict internal descent hold. It applies to the unchanged payable predictor and retains depleted boundary states. These are additional hypotheses: this original completed-history result still makes no unconditional execution guarantee.",
+      "new_sha256": "dad88dc7f894ea3f17c38f17172601edc4a9bacadf9a954af1c7874e56fd42ef",
+      "present_in_live_document": true,
+      "scope": "Only this owned replacement fragment is bound; unrelated concurrent document text is excluded."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "old_text": "| Expenditure → requirements on continued provision |",
+      "old_sha256": "f28681a69a87b0d697507a2d5c9df463a045c74d760458623ac6d4d4ad71525e",
+      "new_text": "| Completed-step correspondence → an issued operation actually returns | Actual next-event availability, preservation of an admitted domain under every internal branch, and strict natural-number rank descent | Rank alone allows paid deadlock; enabledness alone allows internal stalling. The unchanged predictor satisfies the bounded contract at explicitly admitted states; its returned state need not admit another trial. [Completion contract](PROTOCOL-COMPLETION.md) |\n| Expenditure → requirements on continued provision |",
+      "new_sha256": "5cb8cfac7e66367c730d3a69560d001ac6254b967c984c604a302368bc9bee51",
+      "present_in_live_document": true,
+      "scope": "Only this owned replacement fragment is bound; unrelated concurrent document text is excluded."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "old_text": "| Activating more inherited material can help some tasks and impede others |",
+      "old_sha256": "9e1514a0e117b8dbc4ae7d46b7a867c1c97ed695fb72d5e0df073fe6301aca74",
+      "new_text": "| An admitted physical operation completes within a finite event bound | Conditional total-correctness theorem with unchanged paid and predictor instances | Actual nonblocking, invariant preservation and strict internal rank cover every permitted branch; finite repetition additionally requires returned-state admission and closure; no scheduler, time or automatic renewal conclusion | [Protocol completion](PROTOCOL-COMPLETION.md) |\n| Activating more inherited material can help some tasks and impede others |",
+      "new_sha256": "a1594058464d9c983b9700be6a985e3c91dbf3484684cad12b8b1fcc0ff16b5d",
+      "present_in_live_document": true,
+      "scope": "Only this owned replacement fragment is bound; unrelated concurrent document text is excluded."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md",
+      "old_text": "### Paid protocol composition extension\n",
+      "old_sha256": "a9b7430043835257cbc10344ea5e49303cb32ef218060cc472e20f3d5dd29c85",
+      "new_text": "### Bounded completion extension\n\n[The additive completion package](protocol-completion-README.md) proves bounded first return under explicit actual progress conditions and applies it to the unchanged paid example and predictor. Its fresh Lean 4.29.1 build passes 34 new theorem audits and rechecks 244 inherited audits across 15 modules. Separate internal review accepts maximal-attempt, returned-state and resource-account scope. Entry refusal, paid deadlock, stalling and depleted readmission delimit application; no scheduler or perpetual-renewal guarantee is added.\n\n### Paid protocol composition extension\n",
+      "new_sha256": "f22a69c1de3e9403578f2d3095a47b8c7d922e00929de510f0929a23ba906cfd",
+      "present_in_live_document": true,
+      "scope": "Only this owned replacement fragment is bound; unrelated concurrent document text is excluded."
+    }
+  ],
+  "active_local_link_checks": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "PROTOCOL-COMPLETION-REVIEW.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletion.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletionExamples.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolCompletion.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-audit.json",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "PROTOCOL-COMPLETION-MATH.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "PROTOCOL-COMPLETION-REVIEW.json",
+      "exists": true,
+      "receipt_self_link": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletion.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletionExamples.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolCompletion.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/check_protocol_completion.py",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-audit.json",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "target": "PROTOCOL-COMPLETION-INTEGRATION.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolCompletion.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-audit.json",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "PROTOCOL-COMPLETION-REVIEW.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PredictionOverlap.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+      "target": "PROTOCOL-COMPLETION-MATH.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+      "target": "PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-audit.json",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+      "target": "PROTOCOL-COMPLETION-REVIEW.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+      "target": "PROTOCOL-COMPLETION-REVIEW.json",
+      "exists": true,
+      "receipt_self_link": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "PROTOCOL-COMPOSITION.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "GENERATIVE-GROUNDING.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "PREDICTION-PROTOCOL.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "target": "EVALUATIVE-UPTAKE.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "ProtocolCompletion.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "ProtocolCompletionExamples.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "PredictionProtocolCompletion.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "ProtocolComposition.lean",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "check_protocol_completion.py",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "protocol-completion-audit.json",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "protocol-completion-development/",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "prediction-protocol-completion-development/",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+      "exists": true,
+      "receipt_self_link": false
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-completion-README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+      "exists": true,
+      "receipt_self_link": false
+    }
+  ],
+  "active_local_link_count": 61,
+  "scope": [
+    "Actual nonempty bounded first return under supplied Live, nonblocking, closure and natural-rank premises.",
+    "Finite maximal-attempt theorem plus exclusion of infinite internal runs; no physical-clock or scheduler guarantee.",
+    "Actual reported boundary/controller-memory continuation and coordinate-wise prefix accounts under existing LocalExact and account laws.",
+    "Reusable boundary D closure is sufficient for every finite length and stronger than one horizon-specific funded job.",
+    "Unchanged paid example and four-event predictor instantiate the contract; refusal, paid deadlock, stalling and exhausted readmission remain outside stronger guarantees.",
+    "Actual-state admission and actor-available admission remain distinct; no future-outcome sensor, escrow, reset or new stochastic refinement.",
+    "Supporting contribution to fixed foundation requirement 3; no empirical universality, ethical warrant or whole-foundation completion."
+  ],
+  "blockers": [],
+  "receipt_hash_excluded_to_avoid_recursion": true
+}

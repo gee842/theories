@@ -1,0 +1,16 @@
+'Generative.Learning.Protocols.Completion.internal_prefix_live' does not depend on any axioms
+'Generative.Learning.Protocols.Completion.internal_prefix_rank' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.Completion.internal_prefix_has_extension' does not depend on any axioms
+'Generative.Learning.Protocols.Completion.no_unfinished_deadlocked_prefix' does not depend on any axioms
+'Generative.Learning.Protocols.Completion.completed_block_bound' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.Completion.completion_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.Learning.Protocols.Completion.no_infinite_internal_run' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.Completion.finite_maximal_attempt_completes' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.Completion.reported_realization_append' depends on axioms: [propext]
+'Generative.Learning.Protocols.Completion.issued_reference_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.Learning.Protocols.Completion.reported_history_continues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.Learning.Protocols.Completion.reported_history_prefix_accounts' depends on axioms: [propext, Quot.sound]

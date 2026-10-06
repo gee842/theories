@@ -1,0 +1,17 @@
+'Generative.Learning.Protocols.blockPath_nonempty' depends on axioms: [propext]
+'Generative.Learning.Protocols.blockPath_ends_at_boundary' does not depend on any axioms
+'Generative.Learning.Protocols.blockPath_committed_trace' does not depend on any axioms
+'Generative.Learning.Protocols.blockPath_micro_trace' does not depend on any axioms
+'Generative.Learning.Protocols.realization_micro_trace' does not depend on any axioms
+'Generative.Learning.Protocols.realization_block_trace' does not depend on any axioms
+'Generative.Learning.Protocols.block_trace_iff_realization' does not depend on any axioms
+'Generative.Learning.Protocols.realization_length_bound' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.reportedRealization_forget' does not depend on any axioms
+'Generative.Learning.Protocols.reportedRealization_trace' does not depend on any axioms
+'Generative.Learning.Protocols.reported_trace_iff_realization' does not depend on any axioms
+'Generative.Learning.Protocols.controller_trace_iff_implementation' does not depend on any axioms
+'Generative.Learning.Protocols.realization_support_bound' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.realization_prefix_support' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.block_length_bound' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.internal_trace_rank_bound' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Protocols.no_infinite_internal_execution' depends on axioms: [propext, Quot.sound]

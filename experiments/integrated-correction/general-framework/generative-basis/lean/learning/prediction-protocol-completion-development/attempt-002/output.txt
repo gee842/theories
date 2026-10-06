@@ -1,0 +1,26 @@
+PredictionProtocolCompletion.lean:161:40: error: failed to synthesize
+  Decidable
+    (let s := exampleState 4 1 0 false 6 true true 2;
+    let observed := advance primary (advance primary s Event.rent) Event.work;
+    ¬Live primary false observed)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PredictionProtocolCompletion.lean:167:79: error: failed to synthesize
+  Decidable
+    (let s := exampleState 5 1 0 false 1 true true 1;
+    Live primary false s ∧ ¬Live primary (command (cycleEnd primary s)) (cycleEnd primary s))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'PredictionProtocolCompletion.live_entry_iff' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.live_has_next' does not depend on any axioms
+'PredictionProtocolCompletion.live_preserved_inside' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.rank_decreases_inside' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.payable_trial_contract' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.admitted_trial_completes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredictionProtocolCompletion.admitted_prefix_has_extension' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.admitted_no_internal_deadlock' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.admitted_no_infinite_internal_run' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.maximal_admitted_trial_exact' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.sufficient_initial_fuel_admits' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.unpaid_observed_state_not_live' depends on axioms: [sorryAx]
+'PredictionProtocolCompletion.completion_need_not_renew_admission' depends on axioms: [sorryAx]

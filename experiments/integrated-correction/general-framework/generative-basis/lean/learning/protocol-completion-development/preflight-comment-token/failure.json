@@ -1,0 +1,11 @@
+{
+  "status": "preflight_failed",
+  "message": "AssertionError: PredictionProtocolCompletion; forbidden-token regex matched ordinary word admit inside a Lean doc comment before compiler invocation",
+  "correction": "Comment-aware lexical scan; no transition, theorem or predictor-source change",
+  "sources": {
+    "check_protocol_completion.py": "4388c9abc2fa5a5b79680340f4392b59aa9b2b5b79f22b5ec8e1754a83c40cb0",
+    "ProtocolCompletion.lean": "0d205ad3ce57311bf73fd6bf4266202877c2138ca2980531b8dbe7a1f2da71f3",
+    "ProtocolCompletionExamples.lean": "8b49c0b9b29c5d07a5734998dcee0f5ae1ef72fcf18c512c846f225be71785dd",
+    "PredictionProtocolCompletion.lean": "a24c91215991f49372e473761514277e758e48afd1a15268632d613da248e42a"
+  }
+}

@@ -1,0 +1,13 @@
+'PredictionProtocolCompletion.live_entry_iff' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.live_has_next' does not depend on any axioms
+'PredictionProtocolCompletion.live_preserved_inside' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.rank_decreases_inside' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.payable_trial_contract' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.admitted_trial_completes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredictionProtocolCompletion.admitted_prefix_has_extension' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.admitted_no_internal_deadlock' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.admitted_no_infinite_internal_run' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.maximal_admitted_trial_exact' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.sufficient_initial_fuel_admits' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolCompletion.unpaid_observed_state_not_live' does not depend on any axioms
+'PredictionProtocolCompletion.completion_need_not_renew_admission' does not depend on any axioms

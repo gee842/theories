@@ -1,0 +1,15 @@
+'Generative.Learning.Refinement.local_exact_comp' does not depend on any axioms
+'Generative.Learning.Refinement.compatible_observations_agree_on_fibres' does not depend on any axioms
+'Generative.Learning.Refinement.observation_compatible_comp' does not depend on any axioms
+'Generative.Learning.Refinement.closed_loop_local_exact' does not depend on any axioms
+'Generative.Learning.Refinement.controlled_trace_exact' does not depend on any axioms
+'Generative.Learning.Refinement.controlled_feasible_exact' does not depend on any axioms
+'Generative.Learning.Refinement.ObservationLoss.world_local_exact' does not depend on any axioms
+'Generative.Learning.Refinement.ObservationLoss.world_trace_exact' does not depend on any axioms
+'Generative.Learning.Refinement.ObservationLoss.summary_unit_account' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Refinement.ObservationLoss.concrete_unit_account' depends on axioms: [propext, Quot.sound]
+'Generative.Learning.Refinement.ObservationLoss.no_compatible_summary_channel' does not depend on any axioms
+'Generative.Learning.Refinement.ObservationLoss.concrete_probe_then_right' depends on axioms: [propext]
+'Generative.Learning.Refinement.ObservationLoss.summary_probe_then_left' depends on axioms: [propext]
+'Generative.Learning.Refinement.ObservationLoss.summary_cannot_issue_probe_then_right' does not depend on any axioms
+'Generative.Learning.Refinement.ObservationLoss.controlled_local_exact_fails' depends on axioms: [propext]

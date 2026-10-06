@@ -1,0 +1,54 @@
+{
+  "GenerativeCore": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "Depletion": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+    "sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0"
+  },
+  "ResourceContinuation": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
+    "sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e"
+  },
+  "ControllerRevision": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean",
+    "sha256": "55b3d154a8cef06fb14dba0ae9ab06e8fb2f607136344bf4865de73adfab49bd"
+  },
+  "ControlledRefinement": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean",
+    "sha256": "ee438240d0ca70476152d337b83ffe6668d222625bdfb0d576d8ab883c8e10d7"
+  },
+  "ProtocolComposition": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean",
+    "sha256": "f7722a463fe05d2cc14b7c1cc3bc89b9c1d1435febb1c084a000f48ce98d9ee3"
+  },
+  "FormedSelection": {
+    "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+    "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+  },
+  "SelectorRevision": {
+    "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
+    "sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a"
+  },
+  "UpdaterFormation": {
+    "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean",
+    "sha256": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3"
+  },
+  "PredictionAction": {
+    "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
+    "sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c"
+  },
+  "PredictionProtocolBridge": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean",
+    "sha256": "4a96b3a8a6a37e592a28d18e9b7b2db805bd58d8070b076b843c33d1c89320e0"
+  },
+  "ProtocolCompletion": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletion.lean",
+    "sha256": "9163985feeb9c06e0ee4f95169261860b8e37d2c1307639b815deec6c01aec81"
+  },
+  "PredictionProtocolCompletion": {
+    "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolCompletion.lean",
+    "sha256": "b26739172a8375fe28efd4525fc452aeb26022516c51b3eabe3d839d6a61509e"
+  }
+}

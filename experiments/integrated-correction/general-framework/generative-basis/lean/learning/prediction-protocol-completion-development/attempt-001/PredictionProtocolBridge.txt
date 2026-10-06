@@ -1,0 +1,15 @@
+'PredictionProtocolBridge.committed_event' does not depend on any axioms
+'PredictionProtocolBridge.block_remaining_shape' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.cycle_boundary' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.cycle_block' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.cycle_trace_enabled' does not depend on any axioms
+'PredictionProtocolBridge.blockPath_iff_cycle' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.cycle_enabled_iff_macroGuard' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.cycle_end_eq_macroEnd' does not depend on any axioms
+'PredictionProtocolBridge.completed_step_iff' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.macro_step_iff_completed' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.macro_trace_iff_realization' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.realization_event_count' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.realization_source_consumption' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.realized_energy_material' depends on axioms: [propext, Quot.sound]
+'PredictionProtocolBridge.realized_prefix_ledger' depends on axioms: [propext, Quot.sound]

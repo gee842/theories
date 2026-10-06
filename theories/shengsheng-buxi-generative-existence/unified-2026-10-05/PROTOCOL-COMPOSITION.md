@@ -4,6 +4,8 @@
 
 **Subsequent concrete connection:** [Prediction protocol](PREDICTION-PROTOCOL.md) now proves the actual formed predictor's four-event trial contract, using independently stated arithmetic command/update equations and its actual consumed receipt. Thirty-eight additional Lean results retain paid failures, finite source and inherited accounts. That application covers deterministic payable-write trials on full physical boundary states; this generic result and its limits remain unchanged.
 
+**Subsequent completion result:** [the checked progress contract](PROTOCOL-COMPLETION.md) now supplies bounded nonempty first return when actual next-event availability, preservation and strict internal descent hold. It applies to the unchanged payable predictor and retains depleted boundary states. These are additional hypotheses: this original completed-history result still makes no unconditional execution guarantee.
+
 ## The missing connection
 
 The [previous composition result](CONTROLLED-REFINEMENT.md) preserves a learner across descriptions that use the same event granularity. Actual sensing or updating can take several events. Formation, measurement and writing may each consume support before the resulting prediction can be used. An intermediate failure therefore matters even when the abstract before-and-after description appears affordable.
