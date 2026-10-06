@@ -1,0 +1,342 @@
+{
+  "checked_at_utc": "2026-10-06T19:56:04.503520+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
+  "checker_sha256": "06849a0e870eccdcf9a3a5fb022dc4a92a00c0f7f06d7883d691c1addd2af0c2",
+  "modules": 41,
+  "audits": 800,
+  "renamed_declarations": 44,
+  "mismatches": [],
+  "rows": [
+    {
+      "module": "BoundaryModels",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "source_sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "audits": 8,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "audits": 18,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "Depletion",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "source_sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
+      "audits": 5,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "RootRealization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "source_sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524",
+      "audits": 32,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "ProductTower",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "source_sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "audits": 7,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GeneratedPaths",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "source_sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "audits": 9,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "HistoryRealization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "source_sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "audits": 7,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "source_sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "audits": 9,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "DynamicSymmetry",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "source_sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+      "audits": 20,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "DynamicConsequences",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "source_sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "audits": 9,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "DynamicClassification",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "source_sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698",
+      "audits": 6,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GeneratedSelf",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "source_sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d",
+      "audits": 23,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "EthicalOrientation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "source_sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+      "audits": 17,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "source_sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+      "audits": 8,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "OutcomeContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "source_sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+      "audits": 14,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeOutcomeModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "source_sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9",
+      "audits": 3,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "InquirySufficiency",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "source_sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+      "audits": 17,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeInquirySufficiencyModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "source_sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef",
+      "audits": 0,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "FiniteInquiryClassification",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FiniteInquiryClassification.lean",
+      "source_sha256": "1a0613f734ccdd432656770d6d73d7ee7db4b119f57b379ebe8ff7f623054375",
+      "audits": 15,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeFiniteInquiryModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean",
+      "source_sha256": "23a987f6c021df07456bd8b9bb0b5a5a99855144b54cfee06ce8207be33a0b20",
+      "audits": 0,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "AttainableQuestions",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+      "source_sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8",
+      "audits": 43,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "OnePacketQuestions",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+      "source_sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd",
+      "audits": 37,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeAttainableQuestionsModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean",
+      "source_sha256": "3fe522856537ed7ddef2eb32f0ff9a2ebdf8f68c8b08a3162ac5550b96834be3",
+      "audits": 0,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "ReachedInquiryComposition",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ReachedInquiryComposition.lean",
+      "source_sha256": "81b21a6afd4b3dd8dd98eefb25ad3d549e3f91dcf0e61fe871dea687c3a93c2f",
+      "audits": 24,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "DerivedInquiryCertificates",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/DerivedInquiryCertificates.lean",
+      "source_sha256": "225b565b3ad9cc0cb89f3f251897ed104e2b2a5aa1b044246fb22ac9ab6fbd20",
+      "audits": 32,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "OnePacketAdmissibility",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+      "source_sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730",
+      "audits": 11,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "OnePacketInquirySynthesis",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketInquirySynthesis.lean",
+      "source_sha256": "f0d1661dc04dd900debd760348764d8777c8132dec30833b9ea7fe435a25f8d7",
+      "audits": 35,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeDerivedInquiryModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean",
+      "source_sha256": "c8eeededa432a8d29c96a6e47fd60f1be6ba25f98c185755453f8dc81b7f4e16",
+      "audits": 0,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "NativePacketProcess",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+      "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
+      "audits": 45,
+      "renamed": 12,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "PacketLawDerivation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+      "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
+      "audits": 51,
+      "renamed": 3,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "NativePacketCases",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean",
+      "source_sha256": "70199646e488cb29e4fed6681299739dc4ad1336fee1f6e46cf8709a03e7d02e",
+      "audits": 94,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "GenerativeDerivedProcessLawModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean",
+      "source_sha256": "30bcc293221bad98b29cc98fa577f02ac5306a1c866baf8ae6530f6d940e5e1f",
+      "audits": 0,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "ResourceContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
+      "source_sha256": "ef6e676fbc511d0ba9fd695cccb00252dbb61561fb9a9dd9093ed420ca3b40ca",
+      "audits": 21,
+      "renamed": 13,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "RenewalExamples",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean",
+      "source_sha256": "46b522669e65f15b64d312d07f8651ff3e06f91351ceba4258554853928cdd77",
+      "audits": 21,
+      "renamed": 10,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "SupportNecessity",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean",
+      "source_sha256": "30050ec7366ef84fa6d2bd71ea8f5998ef0d9975b6841393b7014b147573b715",
+      "audits": 18,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "NativePortContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean",
+      "source_sha256": "238725297fe5f757c8a925bdfcafb2c00181813afa72072ff06994152ad4a789",
+      "audits": 23,
+      "renamed": 6,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "PatientConcern",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "source_sha256": "49305a0bf2d91c3175a5161e342a4e7761bb90fcc5b5d70724b4cd72a24a8fa6",
+      "audits": 32,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "ControllerRevision",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean",
+      "source_sha256": "8cb7aa18fda81add37baa3b60904918c7f3b597b1c94c0c3cffc69021b422c26",
+      "audits": 8,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "FormedSelection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "source_sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "audits": 43,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "FormationRoot",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean",
+      "source_sha256": "2ef3a84db441945ae20057041e1ccab668ea4fff320c78882929e4f42cfa09e8",
+      "audits": 10,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "FormationSupport",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean",
+      "source_sha256": "e56fc1dc0b86a289df66613845ff4dfdb92a18cfe9e62dbaa235ca52497a8df5",
+      "audits": 25,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    }
+  ],
+  "scope": "Every audited declaration in the 41-module closure reports the same axioms as before the vocabulary rename, under the declared renames. This certifies a renaming, not a new result."
+}

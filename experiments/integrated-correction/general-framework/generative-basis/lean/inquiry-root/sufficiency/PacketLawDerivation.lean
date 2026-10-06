@@ -17,7 +17,7 @@ The alignment schedule uses the comparison's already-known common phase; its
 acquisition is not derived here. Nor is every permissive macro `control o`
 identified with an available native command. This is the probe-law interface.
 
-The native port's interaction and accounting recipe remains the identified
+The native port's interaction and draw schedule remain the identified
 source law. Deriving this effective law does not derive fundamental dynamics,
 physical calibration or a uniquely necessary generative ontology.
 -/
@@ -151,9 +151,9 @@ theorem alignment_reaches_requested_output (phase : NativePacketProcess.Phase) (
     NativePacketProcess.output (phaseAfter (alignmentCount phase desired) phase) = desired := by
   cases phase <;> cases desired <;> rfl
 
-/-- The endpoint computed by the native paid `.a` operation. -/
+/-- The endpoint computed by the native supported `.a` operation. -/
 def rotateOnce (s : Native) : Native :=
-  { NativePacketProcess.debit s with phase := NativePacketProcess.nextPhase s.phase }
+  { NativePacketProcess.enact s with phase := NativePacketProcess.nextPhase s.phase }
 
 def rotations : Nat → Native → Native
   | 0, s => s
@@ -165,7 +165,7 @@ def rotationEvents : Nat → List NativePacketProcess.Command
 
 def RotationsReady : Nat → Native → Prop
   | 0, _ => True
-  | count + 1, s => NativePacketProcess.Payable s ∧ RotationsReady count (rotateOnce s)
+  | count + 1, s => NativePacketProcess.Supportable s ∧ RotationsReady count (rotateOnce s)
 
 theorem zero_sub_constructive (n : Nat) : 0 - n = 0 := Nat.zero_sub n
 
@@ -179,15 +179,15 @@ theorem sub_sub_constructive (n m k : Nat) : n - m - k = n - (m + k) := by
       rw [Nat.succ_add, Nat.succ_sub_succ, Nat.succ_sub_succ]
       exact ih n
 
-theorem le_sub_from_sum (n k m : Nat) (funded : n + k ≤ m) : n ≤ m - k := by
+theorem le_sub_from_sum (n k m : Nat) (covered : n + k ≤ m) : n ≤ m - k := by
   induction k generalizing m with
-  | zero => exact funded
+  | zero => exact covered
   | succ k ih =>
     cases m with
-    | zero => exact False.elim (Nat.not_succ_le_zero _ funded)
+    | zero => exact False.elim (Nat.not_succ_le_zero _ covered)
     | succ m =>
       rw [Nat.succ_sub_succ]
-      exact ih m (Nat.le_of_succ_le_succ funded)
+      exact ih m (Nat.le_of_succ_le_succ covered)
 
 theorem sub_add_cancel_constructive (m k : Nat) (bound : k ≤ m) : (m - k) + k = m := by
   induction k generalizing m with
@@ -199,19 +199,19 @@ theorem sub_add_cancel_constructive (m k : Nat) (bound : k ≤ m) : (m - k) + k 
       rw [Nat.succ_sub_succ]
       exact congrArg Nat.succ (ih m (Nat.le_of_succ_le_succ bound))
 
-theorem sum_le_from_remainder (n k m : Nat) (spent : k ≤ m) (remaining : n ≤ m - k) :
+theorem sum_le_from_remainder (n k m : Nat) (drawn : k ≤ m) (remaining : n ≤ m - k) :
     n + k ≤ m := by
   have total := Nat.add_le_add_right remaining k
-  rw [sub_add_cancel_constructive m k spent] at total
+  rw [sub_add_cancel_constructive m k drawn] at total
   exact total
 
-theorem rotations_ready_implies_budget (count : Nat) (s : Native)
-    (ready : RotationsReady count s) : count * NativePacketProcess.bill s ≤ s.fuel := by
+theorem rotations_ready_implies_held_bound (count : Nat) (s : Native)
+    (ready : RotationsReady count s) : count * NativePacketProcess.draw s ≤ s.held := by
   induction count generalizing s with
   | zero => rw [Nat.zero_mul]; exact Nat.zero_le _
   | succ count ih =>
     have remaining := ih (rotateOnce s) ready.2
-    change count * NativePacketProcess.bill s ≤ s.fuel - NativePacketProcess.bill s at remaining
+    change count * NativePacketProcess.draw s ≤ s.held - NativePacketProcess.draw s at remaining
     rw [Nat.succ_mul]
     exact sum_le_from_remainder _ _ _ ready.1.2 remaining
 
@@ -222,37 +222,37 @@ theorem rotation_fields (count : Nat) (s : Native) :
     (rotations count s).receiptFlip = s.receiptFlip ∧
     (rotations count s).source = s.source ∧
     NativePacketProcess.peak (rotations count s) = NativePacketProcess.peak s ∧
-    NativePacketProcess.bill (rotations count s) = NativePacketProcess.bill s ∧
+    NativePacketProcess.draw (rotations count s) = NativePacketProcess.draw s ∧
     (rotations count s).capacity = s.capacity := by
   induction count generalizing s with
   | zero => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
   | succ count ih => exact ih (rotateOnce s)
 
-theorem rotation_fuel (count : Nat) (s : Native) :
-    (rotations count s).fuel = s.fuel - count * NativePacketProcess.bill s := by
+theorem rotation_held (count : Nat) (s : Native) :
+    (rotations count s).held = s.held - count * NativePacketProcess.draw s := by
   induction count generalizing s with
   | zero => rw [Nat.zero_mul]; rfl
   | succ count ih =>
     rw [rotations, ih]
-    change s.fuel - NativePacketProcess.bill s - count * NativePacketProcess.bill s = _
+    change s.held - NativePacketProcess.draw s - count * NativePacketProcess.draw s = _
     rw [Nat.succ_mul]
     exact (sub_sub_constructive _ _ _).trans
-      (congrArg (fun spent => s.fuel - spent) (Nat.add_comm _ _))
+      (congrArg (fun drawn => s.held - drawn) (Nat.add_comm _ _))
 
-/-- Funding and capacity are sufficient for every prefix, not a promised final
-path. The source is never used to pay these preceding alignment commands. -/
-theorem rotations_ready_from_budget (count : Nat) (s : Native)
+/-- What is held and capacity suffice for every prefix, not a promised final
+path. The source never supports these preceding alignment commands. -/
+theorem rotations_ready_from_held_bound (count : Nat) (s : Native)
     (capacity : NativePacketProcess.peak s ≤ s.capacity)
-    (funding : count * NativePacketProcess.bill s ≤ s.fuel) : RotationsReady count s := by
+    (covered : count * NativePacketProcess.draw s ≤ s.held) : RotationsReady count s := by
   induction count generalizing s with
   | zero => exact True.intro
   | succ count ih =>
-    have total := funding
+    have total := covered
     rw [Nat.succ_mul] at total
-    have current : NativePacketProcess.bill s ≤ s.fuel :=
+    have current : NativePacketProcess.draw s ≤ s.held :=
       Nat.le_trans (Nat.le_add_left _ _) total
     refine ⟨⟨capacity, current⟩, ih (rotateOnce s) capacity ?_⟩
-    change count * NativePacketProcess.bill s ≤ s.fuel - NativePacketProcess.bill s
+    change count * NativePacketProcess.draw s ≤ s.held - NativePacketProcess.draw s
     exact le_sub_from_sum _ _ _ total
 
 theorem rotations_have_native_trace (count : Nat) (s : Native)
@@ -272,41 +272,41 @@ theorem common_phase_same_schedule (desired : Bool) (left right : Native)
     (phase : left.phase = right.phase) : alignedEvents desired left = alignedEvents desired right :=
   congrArg (fun phase => rotationEvents (alignmentCount phase desired) ++ [.probe]) phase
 
-/-- Exact direct native bills for alignment, probe dispatch, and later receipt.
+/-- Exact direct native draws for alignment, probe dispatch, and later receipt.
 The final receipt may use only an actual arrival, after source consumption.
 This feasibility condition reads phase and actual arrival; it is not an
 installed observable admission policy or a granted predictor of the outcome. -/
 def AlignmentGuard (desired : Bool) (s : Native) : Prop :=
   NativePacketProcess.peak s ≤ s.capacity ∧
-  (alignmentCount s.phase desired + 1) * NativePacketProcess.bill s ≤ s.fuel ∧
+  (alignmentCount s.phase desired + 1) * NativePacketProcess.draw s ≤ s.held ∧
   10 ≤ s.source ∧
-  NativePacketProcess.bill s ≤
-    s.fuel - (alignmentCount s.phase desired + 1) * NativePacketProcess.bill s +
-      NativePacketProcess.gain (alignedState desired s)
+  NativePacketProcess.draw s ≤
+    s.held - (alignmentCount s.phase desired + 1) * NativePacketProcess.draw s +
+      NativePacketProcess.arrivalAmount (alignedState desired s)
 
 theorem alignment_guard_supplies_native_guards (desired : Bool) (s : Native)
     (guard : AlignmentGuard desired s) :
     RotationsReady (alignmentCount s.phase desired) s ∧
       NativePacketProcess.ProbeReady (alignedState desired s) := by
   have fields := rotation_fields (alignmentCount s.phase desired) s
-  have funds := rotation_fuel (alignmentCount s.phase desired) s
-  obtain ⟨capacity, funding, source, receipt⟩ := guard
-  have prior : alignmentCount s.phase desired * NativePacketProcess.bill s ≤ s.fuel := by
-    rw [Nat.succ_mul] at funding
-    exact Nat.le_trans (Nat.le_add_right _ _) funding
-  refine ⟨rotations_ready_from_budget _ s capacity prior, ?_⟩
+  have heldBound := rotation_held (alignmentCount s.phase desired) s
+  obtain ⟨capacity, covered, source, receipt⟩ := guard
+  have prior : alignmentCount s.phase desired * NativePacketProcess.draw s ≤ s.held := by
+    rw [Nat.succ_mul] at covered
+    exact Nat.le_trans (Nat.le_add_right _ _) covered
+  refine ⟨rotations_ready_from_held_bound _ s capacity prior, ?_⟩
   apply (NativePacketProcess.probeReady_exact _).mpr
   change NativePacketProcess.peak (rotations _ s) ≤ (rotations _ s).capacity ∧
-    NativePacketProcess.bill (rotations _ s) ≤ (rotations _ s).fuel ∧
+    NativePacketProcess.draw (rotations _ s) ≤ (rotations _ s).held ∧
     10 ≤ (rotations _ s).source ∧
-    NativePacketProcess.bill (rotations _ s) ≤
-      (rotations _ s).fuel - NativePacketProcess.bill (rotations _ s) +
-        NativePacketProcess.gain (alignedState desired s)
+    NativePacketProcess.draw (rotations _ s) ≤
+      (rotations _ s).held - NativePacketProcess.draw (rotations _ s) +
+        NativePacketProcess.arrivalAmount (alignedState desired s)
   rw [fields.2.2.2.2.2.1, fields.2.2.2.2.2.2.1, fields.2.2.2.2.2.2.2,
-    fields.2.2.2.2.1, funds]
+    fields.2.2.2.2.1, heldBound]
   refine ⟨capacity, ?_, source, ?_⟩
-  · rw [Nat.succ_mul] at funding
-    exact le_sub_from_sum _ _ _ ((Nat.add_comm _ _).symm ▸ funding)
+  · rw [Nat.succ_mul] at covered
+    exact le_sub_from_sum _ _ _ ((Nat.add_comm _ _).symm ▸ covered)
   · rw [Nat.succ_mul] at receipt
     rw [sub_sub_constructive]
     exact receipt
@@ -319,17 +319,17 @@ theorem alignment_guard_iff_native_guards (desired : Bool) (s : Native) :
   · exact alignment_guard_supplies_native_guards desired s
   · rintro ⟨rotationsReady, probeReady⟩
     have fields := rotation_fields (alignmentCount s.phase desired) s
-    have funds := rotation_fuel (alignmentCount s.phase desired) s
+    have heldBound := rotation_held (alignmentCount s.phase desired) s
     have exactProbe := (NativePacketProcess.probeReady_exact (alignedState desired s)).mp probeReady
     change NativePacketProcess.peak (rotations _ s) ≤ (rotations _ s).capacity ∧
-      NativePacketProcess.bill (rotations _ s) ≤ (rotations _ s).fuel ∧
+      NativePacketProcess.draw (rotations _ s) ≤ (rotations _ s).held ∧
       10 ≤ (rotations _ s).source ∧
-      NativePacketProcess.bill (rotations _ s) ≤
-        (rotations _ s).fuel - NativePacketProcess.bill (rotations _ s) +
-          NativePacketProcess.gain (alignedState desired s) at exactProbe
+      NativePacketProcess.draw (rotations _ s) ≤
+        (rotations _ s).held - NativePacketProcess.draw (rotations _ s) +
+          NativePacketProcess.arrivalAmount (alignedState desired s) at exactProbe
     rw [fields.2.2.2.2.2.1, fields.2.2.2.2.2.2.1, fields.2.2.2.2.2.2.2,
-      fields.2.2.2.2.1, funds] at exactProbe
-    have prior := rotations_ready_implies_budget _ s rotationsReady
+      fields.2.2.2.2.1, heldBound] at exactProbe
+    have prior := rotations_ready_implies_held_bound _ s rotationsReady
     refine ⟨exactProbe.1, ?_, exactProbe.2.2.1, ?_⟩
     · have total := sum_le_from_remainder _ _ _ prior exactProbe.2.1
       rw [Nat.add_comm] at total
@@ -394,7 +394,7 @@ theorem native_guard_realizes_macro_probe (s : Native)
   exact ⟨NativePacketProcess.probeFinal s, NativePacketProcess.receiptBit s,
     actual, projected.2.1, projected.2.2.1⟩
 
-/-- The prep phase is reached by actual paid rotations; the source and target
+/-- The prep phase is reached by actual supported rotations; the source and target
 coordinates are retained throughout those operations. -/
 theorem aligned_state_properties (desired : Bool) (s : Native) :
     NativePacketProcess.output (alignedState desired s).phase = desired ∧
@@ -414,7 +414,7 @@ theorem aligned_state_properties (desired : Bool) (s : Native) :
     rw [fields.2.1, fields.2.2.1]
 
 /-- Either macro probe has an actual native realization from every admitted
-representative, with at most two paid rotations followed by the completed probe.
+representative, with at most two supported rotations followed by the completed probe.
 No reset, restored packet or free movement is inserted at the interface. -/
 theorem aligned_probe_realizes_macro (desired : Bool) (s : Native)
     (source : s.source = 10) (calibrated : s.receiptFlip = false)
@@ -447,7 +447,7 @@ theorem aligned_probe_realizes_macro (desired : Bool) (s : Native)
     exact projected.2.2.1
 
 /-- After exhaustion the old macro denial is extra permissive access. Native
-execution cannot complete another probe, irrespective of available fuel. -/
+execution cannot complete another probe, irrespective of what is held. -/
 theorem exhausted_native_probe_cannot_complete (s : Native) (source : s.source = 0)
     (t : Native) (observation : NativePacketProcess.Observation) :
     ¬ NativePacketProcess.execute s .probe = .complete t observation := by
@@ -466,7 +466,7 @@ theorem macro_denial_is_not_native_completion (s : Native) (source : s.source = 
   cases which <;> rfl
 
 /-- A real completed two-packet attempt still leaves native source for another
-attempt. Its later funding remains separate. This excludes extending the
+attempt. Supporting its later stages remains a separate condition. This excludes extending the
 one-packet projection to arbitrary positive source stocks. -/
 theorem two_packet_completion_retains_source (s t : Native)
     (observation : NativePacketProcess.Observation) (source : s.source = 20)
@@ -506,8 +506,8 @@ end Generative.InquirySufficiency.PacketLawDerivation
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.rotationEvents
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.RotationsReady
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.rotation_fields
-#print axioms Generative.InquirySufficiency.PacketLawDerivation.rotation_fuel
-#print axioms Generative.InquirySufficiency.PacketLawDerivation.rotations_ready_from_budget
+#print axioms Generative.InquirySufficiency.PacketLawDerivation.rotation_held
+#print axioms Generative.InquirySufficiency.PacketLawDerivation.rotations_ready_from_held_bound
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.rotations_have_native_trace
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.alignedState
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.alignedEvents
@@ -526,7 +526,7 @@ end Generative.InquirySufficiency.PacketLawDerivation
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.macro_denial_is_not_native_completion
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.sub_add_cancel_constructive
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.sum_le_from_remainder
-#print axioms Generative.InquirySufficiency.PacketLawDerivation.rotations_ready_implies_budget
+#print axioms Generative.InquirySufficiency.PacketLawDerivation.rotations_ready_implies_held_bound
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.alignment_guard_iff_native_guards
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.common_phase_same_schedule
 #print axioms Generative.InquirySufficiency.PacketLawDerivation.two_packet_completion_retains_source

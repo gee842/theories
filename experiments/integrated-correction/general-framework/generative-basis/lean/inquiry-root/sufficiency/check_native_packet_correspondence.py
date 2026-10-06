@@ -216,13 +216,18 @@ def run_original(module, case):
     return {"kind": kind, "detail": detail, "state": state}, extra
 
 
+# The Python original keeps its names; the Lean reconstruction uses the
+# vocabulary adopted on 6 October 2026 at Ren's direction.
+LEAN_FIELD = {"fuel": "held", "spent": "enacted", "income": "arrived", "wasted": "dissipated"}
+
+
 def lean_state(state):
     fields = []
     for field in FIELDS:
         value = state[field]
         token = ".p" + str(value) if field == "phase" else (
             "true" if value is True else "false" if value is False else str(value))
-        fields.append(field + " := " + token)
+        fields.append(LEAN_FIELD.get(field, field) + " := " + token)
     return "{ " + ", ".join(fields) + " }"
 
 
@@ -233,11 +238,11 @@ def lean_result(result, command):
         if detail.startswith("capacity:native_"):
             reason = "interfaceCapacity"
         elif detail.startswith("funding:native_"):
-            reason = "interfaceFunding"
+            reason = "interfaceInsufficient"
         else:
             reason = {"source_unavailable": "sourceUnavailable",
                       "capacity:arrival_receipt": "receiptCapacity",
-                      "funding:arrival_receipt": "receiptFunding"}[detail]
+                      "funding:arrival_receipt": "receiptInsufficient"}[detail]
         return ".stopped (" + state + ") ." + reason
     detail = result["detail"]
     observation = ".silent" if detail is None else (
@@ -254,7 +259,7 @@ def generated_text(rows, manifest_sha, bindings):
             "These are fresh command fixtures, not reruns of the scientific suite.",
             "All expected results below were obtained from the original executor.",
             "State omits audit logs and historical peak; the Python report checks them separately.",
-            "Default scale-one tariff; fuel, spent and income use 65536 ticks per unit.",
+            "Default scale one; held, enacted and arrived (Python fuel, spent, income) use 65536 ticks per unit.",
             "Input manifest SHA256: " + manifest_sha, "-/", "",
             "namespace Generative.NativePacketCases", "", "open NativePacketProcess", "",
             "set_option maxRecDepth 100000", "set_option maxHeartbeats 0", "",

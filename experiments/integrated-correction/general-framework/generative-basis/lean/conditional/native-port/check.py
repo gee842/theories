@@ -28,7 +28,7 @@ SOURCES = {
 INHERITED_SHA256 = {
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
     "Depletion": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
-    "NativePacketProcess": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+    "NativePacketProcess": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
 }
 NEW = "NativePortContinuation"
 ALLOWED_AXIOMS = {"propext", "Quot.sound"}

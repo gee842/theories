@@ -1,4 +1,4 @@
-# Conditional universality: laws of expenditure, provision and support
+# Conditional universality: laws of what is held, enacted and arrives, and of support
 
 6 October 2026. Research direction: Yongxu Ren. AI-assisted theory, Lean development and separate internal review, following [Ren's proposal and instruction](../../../sources/15-codex-theory-conversations/2026-10-06-conditional-universality-request.md). This extends [the deeper root](DEEPER-GENERATIVE-ROOT.md) and advances the explicit-grounding and cross-model generality obligations of [the unified foundation](GENERATIVE-GROUNDING.md).
 
@@ -22,66 +22,68 @@ Let \(P\) be any process with states \(S\), event labels \(A\), and an admitted 
 
 For one stated support, specify natural-number quantities:
 
-- \(r(s)\): usable reserve or an independently justified nonnegative support certificate;
-- \(d(s,a,t)\): demand charged to this event;
-- \(c(s,a,t)\): provision credited during this event.
+- \(h(s)\): what is held available for further activity, or an independently justified nonnegative support certificate;
+- \(e(s,a,t)\): what this event enacts;
+- \(\alpha(s,a,t)\): what arrives during this event.
+
+These names were adopted on 6 October 2026 at [Ren's direction](../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md), replacing reserve, demand and credit, which carried an exchange picture. The three quantities are aspects of one continuing activity, not an owner's balance. The statements are unchanged.
 
 The local law is
 
 \[
-\boxed{r(t)+d(s,a,t)\le r(s)+c(s,a,t)}
+\boxed{h(t)+e(s,a,t)\le h(s)+\alpha(s,a,t)}
 \tag{U1}
 \]
 
-for **every admitted transition**. An inequality permits additional uncredited losses. Demand and credit may depend on the actual source, event and successor. Zero-demand events are allowed; the generic law does not equate change with expenditure.
+for **every admitted transition**: no event enacts more than was held plus what arrived, so nothing appears from nowhere. The inequality permits additional unrecorded losses. What is enacted and what arrives may depend on the actual source, event and successor. Events that enact nothing are allowed; the generic law does not equate change with enactment. In Lean the law is `SustainLaw`.
 
-The quantities must use commensurate units within this one support account. Natural numbers define the checked discrete class. Application to continuous magnitudes needs justified discrete bounds or a separately proved ordered-number extension; it is not automatic rounding. A mathematical potential may also be valid, but then its interpretation as a certificate rather than a freely exchangeable material stock must remain explicit.
+The quantities must use commensurate units within this one supporting quantity. Natural numbers define the checked discrete class. Application to continuous magnitudes needs justified discrete bounds or a separately proved ordered-number extension; it is not automatic rounding. A mathematical potential may also be valid, but then its interpretation as a certificate rather than a freely exchangeable material stock must remain explicit.
 
-The law alone is deliberately permissive. Assigning zero to all quantities satisfies it for every process. Assigning demand equal to invented provision is equally uninformative. Its explanatory content comes from an independent account of what is consumed, what arrives, what remains usable and which quantities can become unbounded. The analyst's outcome score does not operate the mechanism or supply the credited input.
+The law alone is deliberately permissive. Assigning zero to all quantities satisfies it for every process. Setting what is enacted equal to an invented arrival is equally uninformative. Its explanatory content comes from an independent account of what is consumed, what arrives, what remains usable and which quantities can become unbounded. The analyst's outcome score does not operate the mechanism or supply what arrives.
 
 ## 3. The universal prefix bound
 
-For an actual finite history \(s_0\xrightarrow{a_0}s_1\cdots\xrightarrow{a_{n-1}}s_n\), define cumulative demand and provision along those exact edges:
+For an actual finite history \(s_0\xrightarrow{a_0}s_1\cdots\xrightarrow{a_{n-1}}s_n\), define what is cumulatively enacted and what cumulatively arrives along those exact edges:
 
 \[
-D_n=\sum_{k<n}d(s_k,a_k,s_{k+1}),\qquad
-C_n=\sum_{k<n}c(s_k,a_k,s_{k+1}).
+E_n=\sum_{k<n}e(s_k,a_k,s_{k+1}),\qquad
+\Lambda_n=\sum_{k<n}\alpha(s_k,a_k,s_{k+1}).
 \]
 
 Summing U1 gives
 
 \[
-\boxed{D_n+r(s_n)\le r(s_0)+C_n.}
+\boxed{E_n+h(s_n)\le h(s_0)+\Lambda_n.}
 \tag{U2}
 \]
 
-The Lean development proves this for actual ledger traces and execution segments, retaining intermediate states. Every prefix obeys the same bound. An eventual total cannot repair an earlier violated prefix. Within-event ordering is only as detailed as the primitive process: if payment and receipt order matters, that event must be refined or its admissibility justified independently. U2 is a necessary constraint, not a proof that every numerically balanced transaction can occur.
+The Lean development proves this for actual supported traces and execution segments, retaining intermediate states. Every prefix obeys the same bound. An eventual total cannot repair an earlier violated prefix. Within-event ordering is only as detailed as the primitive process: if the order of enacting and arriving within an event matters, that event must be refined or its admissibility justified independently. U2 is a necessary constraint, not a proof that every numerically consistent event can occur.
 
 Consequences include:
 
-1. If cumulative provision is bounded by \(B\), cumulative demand cannot exceed \(r(s_0)+B\).
-2. If actual cumulative demand is unbounded, actual cumulative provision is unbounded.
-3. If every event demands at least one unit, an \(n\)-event history requires \(n\le r(s_0)+C_n\).
-4. If each positive-credit event supplies at most \(K\) units, its count \(N_n\) satisfies \(n\le r(s_0)+K N_n\) in that positive-demand subclass.
-5. An infinite lawful execution in that subclass must have a positive-credit event in every suffix window longer than the reserve available at the start of that window. Consequently such events occur arbitrarily late.
+1. If what cumulatively arrives is bounded by \(B\), what is cumulatively enacted cannot exceed \(h(s_0)+B\).
+2. If what is actually enacted is cumulatively unbounded, what actually arrives is cumulatively unbounded.
+3. If every event enacts at least one unit, an \(n\)-event history requires \(n\le h(s_0)+\Lambda_n\).
+4. If at most \(K\) units arrive in any one event, the count \(N_n\) of events in which something arrives satisfies \(n\le h(s_0)+K N_n\) in that positive-enactment subclass.
+5. An infinite lawful execution in that subclass must have an event in which something arrives in every suffix window longer than what is held at the start of that window. Consequently such events occur arbitrarily late.
 
-These are universal necessities for the law class. The existence of an infinite execution is a hypothesis when used, not a consequence. The account derives that continued expenditure requires continued provision; it has not yet identified whether that provision is imported, internally produced, or supplied by a combination.
+These are universal necessities for the law class. The existence of an infinite execution is a hypothesis when used, not a consequence. The law derives that continued enactment requires continued arrival; it has not yet identified whether what arrives is imported, internally produced, or a combination.
 
-A family of accounts indexed by support type satisfies U2 **coordinate by coordinate**. This does not require adding money, competence, information access and authority into one numerical value. If any indispensable coordinate fails its independently justified bound, the proposed joint history cannot meet all the stated conditions.
+A family of supporting quantities indexed by support type satisfies U2 **coordinate by coordinate**. This does not require adding money, competence, information access and authority into one numerical value. If any indispensable coordinate fails its independently justified bound, the proposed joint history cannot meet all the stated conditions.
 
-There is also a constructive counterpart. Accounted histories concatenate through their actual shared boundary state, adding demand, provision and credited-event counts. If an executable history returns to its starting state, Lean proves that every finite number of repetitions is executable, with each total multiplied by the repetition count. For a nonempty cycle this permits arbitrarily long histories. Its demand must be covered by provision. This is possible recurrence under the supplied transition law; it does not force a process to choose that cycle. A depleting external supplier must be included in the state or justified as an ongoing input, rather than hidden behind an apparent local return.
+There is also a constructive counterpart. Supported histories concatenate through their actual shared boundary state, adding what is enacted, what arrives and arrival-event counts. If an executable history returns to its starting state, Lean proves that every finite number of repetitions is executable, with each total multiplied by the repetition count. For a nonempty cycle this permits arbitrarily long histories. What it enacts must be covered by what arrives. This is possible recurrence under the supplied transition law; it does not force a process to choose that cycle. A depleting external supplier must be included in the state or justified as an ongoing input, rather than hidden behind an apparent local return.
 
 ## 4. Transport across implementations
 
-To apply the result, a concrete process may map into a simpler process through a state map \(q\) that preserves each concrete step as an admitted abstract step. Pull back the abstract reserve, demand and provision through \(q\). U1 then holds on the concrete process, so its histories inherit U2.
+To apply the result, a concrete process may map into a simpler process through a state map \(q\) that preserves each concrete step as an admitted abstract step. Pull back what the abstract process holds, enacts and receives through \(q\). U1 then holds on the concrete process, so its histories inherit U2.
 
-A forward step-preserving map suffices for this necessary bound; a two-way exact representation is stronger than needed here. The map must preserve the quantities and meanings used by the account. Merely assigning the same names to unrelated variables does not supply the bridge. This transport does not give a participant access to the mapped state, prove a policy implementable, or preserve probabilities.
+A forward step-preserving map suffices for this necessary bound; a two-way exact representation is stronger than needed here. The map must preserve the quantities and meanings used by the law. Merely assigning the same names to unrelated variables does not supply the bridge. This transport does not give a participant access to the mapped state, prove a policy implementable, or preserve probabilities.
 
-The existing concrete regulation and variant studies can use this interface when their costs, receipts and successors satisfy the law. Their particular chemistry remains a legitimate local input. The generic theorem imposes a common constraint without pretending that one specific chemistry governs every realization.
+The existing concrete regulation and variant studies can use this interface when what they enact, what arrives and their successors satisfy the law. Their particular chemistry remains a legitimate local input. The generic theorem imposes a common constraint without pretending that one specific chemistry governs every realization.
 
-## 5. From provision to support ancestry
+## 5. From arrival to support ancestry
 
-Provision accounting alone cannot prove internal repair or a renewal cycle. The separate support theorem identifies a law class in which continuing organization has a finite deadline if its production dependencies have bounded acyclic depth.
+The law of what is held, enacted and arrives cannot by itself prove internal repair or a renewal cycle. The separate support theorem identifies a law class in which continuing organization has a finite deadline if its production dependencies have bounded acyclic depth.
 
 Use natural-number time and functioning episodes. An episode has a type \(i\), birth time \(b\) and expiry time \(e\). It functions at times \(b\le t\le e\): expiry is inclusive. Specify:
 
@@ -111,16 +113,16 @@ The older [turnover and closure theorem](../../../_process/research/2026-10-05-g
 
 ## 6. Witnesses, counterexamples and limits
 
-The formal package supplies an admitted consume/restore process to show that the accounting class is nonempty and compatible with indefinite provision-supported activity. That witness's restoration rule and input are supplied; it is not a costed derivation of the apparatus that repairs it.
+The formal package supplies an admitted consume/restore process to show that the law class is nonempty and compatible with indefinite activity sustained by what arrives. That witness's restoration rule and input are supplied; it is not a costed derivation of the apparatus that repairs it.
 
 The relevant failure boundaries are equally important:
 
 | Stronger proposed inference | Why the stated conditions do not establish it |
 |---|---|
-| Infinitely many events require replenishment | Zero-demand events can continue indefinitely. The theorem requires unbounded cumulative demand or its positive-demand subclass. |
-| Continually positive loss must exhaust a reserve | A positive real-valued loss can have finite total. Unbounded cumulative demand is the relevant condition. |
-| Repeated provision guarantees continuation | Provision can be inadequate for the demanded rate, unavailable at a required prefix, or unusable by the necessary mechanism. |
-| Few replenishments cannot support many events | One arbitrarily large receipt defeats a uniform frequency bound unless per-receipt credit is capped. |
+| Infinitely many events require replenishment | Events that enact nothing can continue indefinitely. The theorem requires unbounded cumulative enactment or its positive-enactment subclass. |
+| Continually positive loss must exhaust what is held | A positive real-valued loss can have finite total. Unbounded cumulative enactment is the relevant condition. |
+| Repeated arrival guarantees continuation | What arrives can be inadequate for the rate of enactment, unavailable at a required prefix, or unusable by the necessary mechanism. |
+| Few replenishments cannot support many events | One arbitrarily large arrival defeats a uniform frequency bound unless what arrives per event is capped. |
 | A finite lifetime always forces a type cycle | An infinite acyclic succession of new support types can continue while violating the bounded-rank premise. |
 | A cycle guarantees self-maintenance | Availability, timing, gain, resources, startup and joint dependencies can still fail. |
 | A renewed process must learn or widen concern | Renewal places no such requirement on its response or evaluation mechanism. |
@@ -131,15 +133,15 @@ The original [fixed-selector countermodel](../../../experiments/integrated-corre
 
 The new [Lean package](../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md) contains the exact statements, checker, frozen-source hashes and compiler logs. A fresh Lean 4.29.1 build passed **60 new theorem audits**: 21 accounting and composition results, 21 realization and boundary results, and 18 support results. It also rebuilt 18 inherited core audits. Of the 60 new audits, 34 report empty axiom dependencies; the other 26 depend only on Lean's standard `propext` and `Quot.sound`. There are no custom axioms or proof holes. Explicit model hypotheses and Lean's underlying logic remain; this is not an axiom-free account of existence. The [separate internal review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md) checks the interpretation, counterexamples and source-to-theorem correspondence. This is AI-assisted internal review, not human peer review or empirical validation.
 
-The mathematics uses ordinary cumulative accounting, ranking and ancestry arguments. The advance is a checked, reusable connection from explicit local law properties to constraints on all admitted histories, with compatible representation maps and preserved support distinctions. It is not presented as a new physical law, proof that all reality is digital, or certification that these are the weakest possible assumptions.
+The mathematics uses ordinary cumulative-sum, ranking and ancestry arguments. The advance is a checked, reusable connection from explicit local law properties to constraints on all admitted histories, with compatible representation maps and preserved support distinctions. It is not presented as a new physical law, proof that all reality is digital, or certification that these are the weakest possible assumptions.
 
 The universal reading is therefore exact: **every process satisfying the displayed conditions obeys the corresponding conclusion, regardless of its implementation**. Evidence must establish the interpretation and adequacy of those conditions in a real system. The theory can cover both generative and degenerative histories because the law class permits adequate provision, insufficient provision, depletion and stopping.
 
 ## 8. Connection to the unified derivation
 
-**Checked continuation, 6 October 2026:** [the learning-interface extension](LEARNING-INTERFACE.md) now proves the account laws for the actual formed-variant process, including its local capture requirement and spent-resource handoff. It also proves a general complete-feedback obstruction to incompatible next-response requirements and constructs a separately costed diagnostic witness. This connects the support theorem to an existing mechanism and an information-flow requirement; controller formation and revision remain open explanatory tasks.
+**Checked continuation, 6 October 2026:** [the learning-interface extension](LEARNING-INTERFACE.md) now proves the sustaining laws for the actual formed-variant process, including its local capture requirement and spent-resource handoff. It also proves a general complete-feedback obstruction to incompatible next-response requirements and constructs a separately costed diagnostic witness. This connects the support theorem to an existing mechanism and an information-flow requirement; controller formation and revision remain open explanatory tasks.
 
-The shared foundation asks how activities alter the conditions of further activities. This development identifies a conditional necessity within that account: expenditure beyond inherited support requires actual provision, and bounded acyclic replacement dependencies impose a continuation deadline. Sensing, models, selectors and their reconstruction are subject to these constraints wherever their material implementations satisfy the same conditions.
+The shared foundation asks how activities alter the conditions of further activities. This development identifies a conditional necessity within that account: enactment beyond what was inherited as held requires actual arrival, and bounded acyclic replacement dependencies impose a continuation deadline. Sensing, models, selectors and their reconstruction are subject to these constraints wherever their material implementations satisfy the same conditions.
 
 These results do not insert a reward or preinstalled learner. They expose the support obligations that a proposed origin of learning must meet. The [parallel concrete programme](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) now joins formation of competing response variants to differential retention under one paid history. Its inheritance and access mechanisms remain supplied; deriving their formation and revision must retain the same accounting discipline. Applying the present general theorems to that construction still requires explicit interface proofs.
 

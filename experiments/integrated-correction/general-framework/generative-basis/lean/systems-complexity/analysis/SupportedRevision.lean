@@ -116,7 +116,7 @@ theorem acquired_observation_controls_next_gain (channel : Channel) (s : State) 
   exact ⟨rfl, rfl⟩
 
 theorem fuel_account (channel : Channel) :
-    AccountLaw (process channel) State.fuel demand credit := by
+    SustainLaw (process channel) State.fuel demand credit := by
   intro s a t hs
   cases a with
   | operate =>
@@ -150,7 +150,7 @@ theorem exact_total_support_step (channel : Channel) {s t : State} {a : Event}
       omega
 
 theorem total_support_account (channel : Channel) :
-    AccountLaw (process channel) totalSupport demand (fun _ _ _ => 0) := by
+    SustainLaw (process channel) totalSupport demand (fun _ _ _ => 0) := by
   intro s a t hs
   have h := exact_total_support_step channel hs
   change totalSupport t + 1 ≤ totalSupport s + 0
@@ -268,7 +268,7 @@ theorem original_packets_exhaust (channel : Channel) (s : State) :
 theorem any_history_length_bound (channel : Channel) {s t : State} {word : List Event}
     (h : Trace (process channel) s word t) : word.length + totalSupport t ≤ totalSupport s := by
   obtain ⟨spent, received, count, accounted⟩ :=
-    trace_has_support_account demand (fun _ _ _ => 0) h
+    trace_has_support_totals demand (fun _ _ _ => 0) h
   have bound := support_trace_length_bound totalSupport (total_support_account channel)
     (fun _ _ _ _ => Nat.le_refl 1) 0 (by intro _ _ _ _; exact Nat.le_refl 0) accounted
   simpa using bound
@@ -277,7 +277,7 @@ theorem no_infinite_execution (channel : Channel) (states : ℕ → State)
     (actions : ℕ → Event) :
     ¬ (∀ n, (process channel).step (states n) (actions n) (states (n + 1))) := by
   intro steps
-  have h := infinite_unit_execution_unbounded_credit totalSupport (total_support_account channel)
+  have h := infinite_unit_execution_unbounded_arrival totalSupport (total_support_account channel)
     (fun _ _ _ _ => Nat.le_refl 1) states actions steps 0
   obtain ⟨length, positive⟩ := h
   have zero : intervalTotal (fun _ => 0) 0 length = 0 := by

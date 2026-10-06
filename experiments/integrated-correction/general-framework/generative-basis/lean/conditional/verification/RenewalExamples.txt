@@ -1,21 +1,21 @@
-'Generative.Conditional.Examples.renewal_account_law' does not depend on any axioms
-'Generative.Conditional.Examples.renewal_unit_demand' does not depend on any axioms
-'Generative.Conditional.Examples.renewal_credit_cap' does not depend on any axioms
+'Generative.Conditional.Examples.renewal_sustain_law' does not depend on any axioms
+'Generative.Conditional.Examples.renewal_unit_enactment' does not depend on any axioms
+'Generative.Conditional.Examples.renewal_arrival_cap' does not depend on any axioms
 'Generative.Conditional.Examples.renewal_cycle' does not depend on any axioms
 'Generative.Conditional.Examples.terminal_branch' does not depend on any axioms
 'Generative.Conditional.Examples.terminal_has_no_continuation' does not depend on any axioms
 'Generative.Conditional.Examples.cycle_is_lawful' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Examples.renewal_admits_infinite_execution' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Examples.same_law_admits_continuation_and_loss' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Examples.insufficient_account_law' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Examples.insufficient_credit_is_always_positive' does not depend on any axioms
+'Generative.Conditional.Examples.insufficient_sustain_law' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Examples.insufficient_arrival_is_always_positive' does not depend on any axioms
 'Generative.Conditional.Examples.insufficient_finite_bound' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Examples.insufficient_has_no_infinite_execution' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Examples.free_account_law' does not depend on any axioms
+'Generative.Conditional.Examples.free_sustain_law' does not depend on any axioms
 'Generative.Conditional.Examples.free_infinite_execution' does not depend on any axioms
-'Generative.Conditional.Examples.free_process_has_no_unit_demand' does not depend on any axioms
-'Generative.Conditional.Examples.bulk_account_law' does not depend on any axioms
-'Generative.Conditional.Examples.bulk_has_no_uniform_credit_cap' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Examples.free_process_has_no_unit_enactment' does not depend on any axioms
+'Generative.Conditional.Examples.bulk_sustain_law' does not depend on any axioms
+'Generative.Conditional.Examples.bulk_has_no_uniform_arrival_cap' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Examples.bulk_single_delivery' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Examples.bulk_consumes_reserve' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Examples.bulk_consumes_held' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Examples.bulk_single_delivery_then_run' depends on axioms: [propext, Quot.sound]

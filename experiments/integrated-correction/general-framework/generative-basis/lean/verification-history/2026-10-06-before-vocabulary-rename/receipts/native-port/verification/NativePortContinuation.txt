@@ -1,0 +1,23 @@
+'Generative.NativePortContinuation.continues_refl' does not depend on any axioms
+'Generative.NativePortContinuation.continues_trans' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.debit_continues' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.convert_continues' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.phase_continues' does not depend on any axioms
+'Generative.NativePortContinuation.paid_continues' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.execute_conserves' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.step_continues' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.trace_continues' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.step_balance_exact' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.port_account_law' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.completed_shape' does not depend on any axioms
+'Generative.NativePortContinuation.bill_positive' does not depend on any axioms
+'Generative.NativePortContinuation.step_enacts' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.port_history_bound' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.continuing_port_needs_arrivals' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.arrival_amount' does not depend on any axioms
+'Generative.NativePortContinuation.debit_lowers_potential' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.convert_keeps_potential_bound' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.phase_keeps_potential' does not depend on any axioms
+'Generative.NativePortContinuation.step_lowers_potential' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.port_history_length' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.port_cannot_continue_indefinitely' depends on axioms: [propext, Quot.sound]

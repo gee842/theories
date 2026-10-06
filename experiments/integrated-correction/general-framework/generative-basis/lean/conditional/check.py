@@ -31,7 +31,14 @@ def main():
     toolchain = (ROOT / "lean-toolchain").read_text().strip()
     assert toolchain == "leanprover/lean4:v4.29.1"
     prefix = ["lean", "+" + toolchain]
-    version = run(prefix + ["--version"], ROOT)
+    try:
+        version = run(prefix + ["--version"], ROOT)
+    except FileNotFoundError:
+        version = None
+    if version is None or version.returncode:
+        # Without elan, accept a Lean 4.29.1 on PATH; the version is asserted below.
+        prefix = ["lean"]
+        version = run(prefix + ["--version"], ROOT)
     version.check_returncode()
     assert "version 4.29.1," in version.stdout
     compiler_prefix = run(prefix + ["--print-prefix"], ROOT)

@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-10-06T19:26:51.505120+00:00",
+  "checked_at_utc": "2026-10-06T19:56:26.984081+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "toolchain": "leanprover/lean4:v4.29.1",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
-  "checker_sha256": "5463c58945ebd21cdd529dac1e3c612d2595aeb9a55fced3f3b4faf58ce1276c",
+  "checker_sha256": "928b0a57f6ec2d171c98f6523b565979dd1e4629b23d4cd6a32be0512f5c95d6",
   "fresh_temporary_build": true,
   "source_unchanged_during_check": true,
   "allowed_standard_axioms_for_new_module": [
@@ -14,32 +14,29 @@
   "new_module_audits": 23,
   "new_module_empty_audits": 6,
   "new_declarations": [
-    "held",
-    "enacted",
-    "arrived",
     "Continues",
     "continues_refl",
     "continues_trans",
-    "debit_continues",
+    "enact_continues",
     "convert_continues",
     "phase_continues",
-    "paid_continues",
+    "supported_continues",
     "execute_conserves",
     "step_continues",
     "trace_continues",
     "enactedBy",
     "arrivedBy",
-    "step_balance_exact",
-    "port_account_law",
+    "step_sustained_exact",
+    "port_sustain_law",
     "completed_shape",
-    "bill_positive",
+    "draw_positive",
     "step_enacts",
     "port_history_bound",
     "continuing_port_needs_arrivals",
     "yieldPerUnit",
     "arrival_amount",
     "potential",
-    "debit_lowers_potential",
+    "enact_lowers_potential",
     "convert_keeps_potential_bound",
     "phase_keeps_potential",
     "step_lowers_potential",
@@ -74,19 +71,19 @@
     {
       "module": "NativePacketProcess",
       "source": "../../inquiry-root/sufficiency/NativePacketProcess.lean",
-      "source_sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+      "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
       "exit_code": 0,
       "audits": 45,
       "axioms": [],
       "empty_axiom_audits": 45,
       "clean": true,
       "log": "verification/NativePacketProcess.txt",
-      "log_sha256": "fffb47e4a6877aef698d75e77b0b26213cf3b2a930ccdcc3343a9d6b9507b9da"
+      "log_sha256": "141fcf22210c9addef6015445ca2600f697588a00fa22f451997c2e40132f058"
     },
     {
       "module": "ResourceContinuation",
       "source": "../ResourceContinuation.lean",
-      "source_sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+      "source_sha256": "ef6e676fbc511d0ba9fd695cccb00252dbb61561fb9a9dd9093ed420ca3b40ca",
       "exit_code": 0,
       "audits": 21,
       "axioms": [
@@ -96,12 +93,12 @@
       "empty_axiom_audits": 5,
       "clean": true,
       "log": "verification/ResourceContinuation.txt",
-      "log_sha256": "041c9b2e2f06dd9d427a1f0811985f67812be10a17825cc3df153bb4cf2e8ef4"
+      "log_sha256": "05d3e455017e691ecbfd654f12f4d864a657f9e9ca4b94ef317a7990c7c7742d"
     },
     {
       "module": "NativePortContinuation",
       "source": "NativePortContinuation.lean",
-      "source_sha256": "d49c9c45d9f789bb59f3326b5733e748419ed0d929ce6919be9fdb3f00d17930",
+      "source_sha256": "238725297fe5f757c8a925bdfcafb2c00181813afa72072ff06994152ad4a789",
       "exit_code": 0,
       "audits": 23,
       "axioms": [
@@ -111,7 +108,7 @@
       "empty_axiom_audits": 6,
       "clean": true,
       "log": "verification/NativePortContinuation.txt",
-      "log_sha256": "649d5878114125c7c1b4f59b3d58a64b3f537dd838015bf4dd4fa750e8a7ecce"
+      "log_sha256": "980707fc82be74df7ac698a4f8b327c202f566334131844513b5b1b472a911e8"
     }
   ],
   "scope": "The reconstructed native port conserves held + enacted relative to arrived on every call, belongs to the conditional account-law class U1 with equality, inherits the U2 history bound and arrival-window theorem, and with only its own source strictly lowers a potential on every completed call, so it has no infinite execution. No inherited source is changed. This is a statement about the Lean reconstruction, not physical identification or a derivation of the port's gate, cycle or tariff."

@@ -139,8 +139,8 @@ theorem closed_loop_account_law
     (C : Controller Memory Action Observation) (P : Process State Action)
     (sense : State → Action → State → Observation)
     (reserve : State → Nat) (demand credit : State → Action → State → Nat)
-    (h : Conditional.AccountLaw P reserve demand credit) :
-    Conditional.AccountLaw (closedLoop C P sense) (fun p => reserve p.1)
+    (h : Conditional.SustainLaw P reserve demand credit) :
+    Conditional.SustainLaw (closedLoop C P sense) (fun p => reserve p.1)
       (fun p e q => demand p.1 e.1 q.1)
       (fun p e q => credit p.1 e.1 q.1) := by
   intro p e q hs

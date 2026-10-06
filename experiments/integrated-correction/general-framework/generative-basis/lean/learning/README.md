@@ -26,7 +26,7 @@ The main results establish:
   their specified future action words, identical feedback cannot support both.
   Conversely, achieving both such possibilities requires a feedback difference.
 - Restricting a world process by a controller preserves an independently
-  justified `AccountLaw` on that world, through the actual world-state projection.
+  justified `SustainLaw` on that world, through the actual world-state projection.
 
 The incompatibility statement uses the core's actual `Feasible` relation. Its
 future word is an analyst's comparison task, with no path from that task to the
