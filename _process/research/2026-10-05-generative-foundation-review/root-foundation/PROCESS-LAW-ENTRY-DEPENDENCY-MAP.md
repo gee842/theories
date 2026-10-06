@@ -130,3 +130,26 @@ Anything else is **still assumed**, and the claim that relies on it is not finis
 | Lean's `propext` and `Quot.sound` | Conditional package and native port: **removed** (all 90 audits empty, checkers now reject any axiom). Still used: renewal package 81 of 95 audits; other studies' modules such as `FormationSupport` | Still assumed where used | Re-prove constructively in those packages, as done here |
 | Lean's logic itself | Everything | Framework presupposition; not declared discharged | — |
 
+## 8. Splits checked against the one process
+
+Ren added on 6 October 2026: do not fall into narrative, priors or hidden assumptions, and especially not into Western dualist narrative, which tends to return unnoticed. The theory is monist and relational ([source note](../../../../sources/15-codex-theory-conversations/2026-10-06-no-narrative-no-dualist-attractor.md)).
+
+Each row is a split that the results above use. **Derived** means a Lean theorem shows both sides are coordinates or projections of one process, related by its steps. **Supplied** means the split is still drawn by the model and counts as an assumption under §7.
+
+| Split | Where it appears | Status | Evidence or what would close it |
+|---|---|---|---|
+| Port and its source | Native port: `source` beside `held` | **Derived.** Both are coordinates of one state; conversion moves amount from one to the other, and `potential = held + 65536 · source` is one quantity that every step lowers | `convert_continues`, `convert_keeps_potential_bound`, `step_lowers_potential` |
+| Held, enacted and arrived | U1, native port | **Derived** as aspects of one continuing activity, not three stores | `Continues`, `execute_conserves`, `step_sustained_exact` (equality) |
+| System and environment (what "arrives") | U1 statement | **Supplied.** U1 is relative to a declared boundary; what counts as arriving changes with the boundary. For the port, arrival is internal (from `source`), but U1 itself does not derive where a boundary lies | Derive the boundary from the process, e.g. as the coordinates a step relation retains |
+| Observer and observed (receipt, record, arrival) | Calibration, inquiry | **Derived.** Receipt and record are both coordinates of the port's state; the reading is a function of its own trace, and the receipt's inversion is acquired from that trace | `inquiry_reveals`, `inquiry_calibrates_receipt`, `acquired_calibration_realizes_macro` |
+| Deciding agent and mechanism | Formation | **Derived** in the revising port: the decision is a step of the same process, and the rule is the unique one that works | `RevisingPort.memory_trace`, `port_trace`, `decision_rule_unique` |
+| Ordinary activity and formation events | `FormationClosure.extend activity formation` | **Supplied.** Formation is added as a second event family beside native activity; that one law generates both is not shown | Derive formation as native activity, or prove the two families are one relation |
+| Learner and world | Three-phase cycle, acquisition study | **Supplied** here. The learner's model and the target law are separate machines in Python; their agreement is checked, not derived in Lean | Lean acquisition of the cycle inside the port's own history |
+| Fixed fault settings and changing state | Native port | Partly **derived:** the settings are coordinates of the same state that execution retains (`execute_retains_parameters`). How they form is **supplied** | Represent fault formation as activity |
+| Process and its law | Relational core | **Supplied.** `Process.step` is given to the model. Under the nondual method a supplied law is not thereby outside the process, but it is not derived | See §7, "which dynamics a carrier has" |
+| Macro and native levels | Inquiry layer | **Derived:** the macro law is a projection of native execution | `completed_probe_projects`, `aligned_probe_realizes_macro` |
+| Evaluation and the evaluated process | Ethical claims | Handled in the [naturalism study](ETHICAL-NATURALISM.md), which restates evaluation as a record within the same process; not settled by this entry | — |
+| Lean model and Python port | Correspondence | **Supplied** as a representational relation; checked on 5,928 cases | A refinement proof, or treat Lean as primary |
+
+Vocabulary is checked the same way. The earlier fuel/spent/income and account/reserve/demand/credit names imported an owner trading with an outside; they were replaced (§3.4, [rename record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-vocabulary-rename/README.md)). "Arrived" is now used only for what comes in through a step, relative to the declared boundary.
+
