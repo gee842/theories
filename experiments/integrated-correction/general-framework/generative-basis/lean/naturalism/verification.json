@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T20:49:14.653971+00:00",
+  "checked_at_utc": "2026-10-06T20:51:01.031611+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
@@ -142,18 +142,18 @@
     {
       "module": "PremiseNecessity",
       "source": "PremiseNecessity.lean",
-      "source_sha256": "001958fad556e0d493afe424938c1d0105fc97d083199f81246357c8d34ba305",
+      "source_sha256": "1ed08ac3223a9e126c1d6065053076974f2b2548f55881b25ffe28efb64688da",
       "exit_code": 0,
       "new": true,
-      "dependency_audits": 6,
+      "dependency_audits": 9,
       "axioms": [],
-      "empty_axiom_audits": 6,
+      "empty_axiom_audits": 9,
       "clean": true,
       "output": "verification/PremiseNecessity.txt",
-      "output_sha256": "41faa9508d7e9706ba6331bc0f5f4dd1fd3fa86e4d25bde2aac632bf14832cab"
+      "output_sha256": "aac159a0e4022bc72ca84686849fd83449f9abaaec5771c22374d8f3166223d1"
     }
   ],
-  "new_audited_declarations": 102,
-  "new_empty_axiom_audits": 102,
+  "new_audited_declarations": 105,
+  "new_empty_axiom_audits": 105,
   "scope": "Supervenience is factorization through base-identity classes; a step quality along a history is a function of its visited states, composes through the shared boundary, is invariant under exact re-representation, and is not fixed by endpoints and action word; damage-free histories keep every initially realizable activity realizable throughout, and every loss is located at an actual transition. These credentials hold equally for the converse orientation. Under the stated non-undermining premise over the whole scope of activities, admissible orientations are exactly sub-relations of continuation inclusion; fixed scopes and complete (including scalar) rankings fail it in finite examples, including over actual transitions. The structural credentials hold for every step relation; continuation inclusion registers restraint, every exclusive choice and every recovered dip as damage. A scope derived from the process (ongoing activities that remove no other ongoing activity, with eventual realizability) separates restraint from harm only with every activity in scope and only in a process where the victim removes nothing, and separates untaken from carried courses only with the exercised scope; no single scope does both, symmetric rivals stay unprotected, and unrecovered falls are not damage. The orientation input and the whole-scope input are proved necessary: the credentials do not determine the verdict, and unprivileged scopes include both the empty and the whole scope. No moral predicate is formalized: the premise, the supervenience of moral properties, property identity and any ethical verdict are not asserted."
 }
