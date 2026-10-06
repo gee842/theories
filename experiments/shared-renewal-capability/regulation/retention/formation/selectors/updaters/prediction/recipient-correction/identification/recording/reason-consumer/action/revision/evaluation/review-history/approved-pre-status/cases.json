@@ -1,0 +1,1085 @@
+{
+  "status": "prospective_draft_pending_root_and_independent_freeze",
+  "protocol": "DRAFT-PROTOCOL.md",
+  "scope": "Finite deterministic native signal schedules; existing parent path probabilities retained unchanged.",
+  "initial": {
+    "material": 60,
+    "common": 276,
+    "source": 200,
+    "energy": 476
+  },
+  "principal_arms": [
+    "shared",
+    "identity_gated",
+    "conventional"
+  ],
+  "parent_producers": [
+    "variable",
+    "conventional",
+    "fixed_normal"
+  ],
+  "native_source_fate": "Debit only actual return; each unused remainder stays isolated after its opportunity.",
+  "shortage_policy": "Fixed initial total; withheld common and source in separate inaccessible compartments.",
+  "case_count": 29,
+  "cases": [
+    {
+      "name": "signals_000",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          0,
+          0,
+          0
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "signals_001",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          0,
+          0,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "signals_010",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          0,
+          1,
+          0
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "signals_011",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          0,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "signals_100",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          0,
+          0
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "signals_101",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          0,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "signals_110",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          0
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "signals_111",
+      "purpose": "All actual native shortfall words with matched principal arms.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "meter_missing_middle",
+      "purpose": "Missing acquisition is not a zero shortfall; same actual native returns.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "missing",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "meter_inverted",
+      "purpose": "False native reports while actual operation returns are preserved.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "inverted",
+          "inverted",
+          "inverted"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "update_disabled",
+      "purpose": "Same paid exposures and writes; weight stays zero.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "update_disabled",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "fixed_coefficient",
+      "purpose": "Same all-return history and learned n as signals_000; literal seven valuation isolates fixed content from acquired content.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          0,
+          0,
+          0
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "fixed7",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "cell_missing",
+      "purpose": "Omit the most-significant weight cell, retaining its pair and fee idle.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 5,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "adapter_missing",
+      "purpose": "Omit native/transfer adapter, retaining its pair and fee idle.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": false,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "initial_port_missing",
+      "purpose": "Omit initial evaluator; later construction remains a distinct paid opportunity.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": false,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "transfer_absent",
+      "purpose": "Recipient channel and coefficient retained; valuation path unavailable.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "absent",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "transfer_inverted",
+      "purpose": "Negative transfer under unchanged training; menu contains help/abstain only.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "inverted",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "unknown_fresh_fact",
+      "purpose": "Use every actual second-outage revision prefix, including root-only publications.",
+      "config": {
+        "parent_revision_case": "second_outage",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "false_fresh_channel",
+      "purpose": "Use every actual inverted-factual-channel revision prefix.",
+      "config": {
+        "parent_revision_case": "false_fresh_channel",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "inherited_scope_interruption",
+      "purpose": "Retain every actual old scope-loss-after-rent history; no free phase repair.",
+      "config": {
+        "parent_revision_case": "parent_scope_loss_after_rent",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "late_efficacy_change",
+      "purpose": "Physical law changes before the first new work and remains changed; no controller law read.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": true,
+        "interventions": []
+      }
+    },
+    {
+      "name": "permission_loss",
+      "purpose": "Voluntary action permission cut before evaluation, with factual knowledge and n retained.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": [
+          {
+            "at": "before_first_evaluation",
+            "kind": "permission_loss"
+          }
+        ]
+      }
+    },
+    {
+      "name": "scope_loss_after_read",
+      "purpose": "Invalidate the first paid read before assessment; retain paid costs and facts.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": [
+          {
+            "at": "after_first_evaluation_read",
+            "kind": "scope_loss"
+          }
+        ]
+      }
+    },
+    {
+      "name": "scope_loss_after_rent",
+      "purpose": "Retain actual rented interruption; later port assembly cannot repair core phase.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": [
+          {
+            "at": "after_first_rent",
+            "kind": "scope_loss"
+          }
+        ]
+      }
+    },
+    {
+      "name": "training_short",
+      "purpose": "Withhold one training unit into idle common; retain coupled actual core and all paid prefixes.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 11,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "later_short",
+      "purpose": "Withhold one later-service unit into idle common; no borrowing the recipient packet.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 10,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "spare_pair_unavailable",
+      "purpose": "Held material remains physically present but inaccessible to replacement.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": false,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "trial_surcharge1",
+      "purpose": "Actual extra service changes both cost comparison and prefix affordability.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 1,
+        "suppression_cost": null,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    },
+    {
+      "name": "cheap_suppression",
+      "purpose": "Paid one-unit persistent exclusion after learning; not an equilibrium claim.",
+      "config": {
+        "parent_revision_case": "primary",
+        "native_signals": [
+          1,
+          1,
+          1
+        ],
+        "native_meter": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "learning": "acquire",
+        "valuation": "learned",
+        "transfer": "positive",
+        "memory_cells": 6,
+        "adapter": true,
+        "initial_port": true,
+        "spare_pair_accessible": true,
+        "training_reserve": 12,
+        "later_reserve": 11,
+        "native_packets": [
+          2,
+          2,
+          2
+        ],
+        "later_packet": 10,
+        "trial_surcharge": 0,
+        "suppression_cost": 1,
+        "late_law_flip": false,
+        "interventions": []
+      }
+    }
+  ]
+}

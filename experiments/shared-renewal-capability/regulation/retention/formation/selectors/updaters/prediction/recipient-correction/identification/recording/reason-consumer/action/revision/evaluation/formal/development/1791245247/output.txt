@@ -1,0 +1,24 @@
+EvaluationPreparation.lean:37:81: error: unexpected identifier; expected '}'
+EvaluationPreparation.lean:60:2: error: unsolved goals
+case a
+ext : ∀ (s t : ArchivePreparation.Assembly), s.plant = t.plant → s.cells = t.cells → s.readers = t.readers → s = t
+⊢ { aFree := 1 - 1, hFree := 2 - 1, resident := FormedSelection.Resident.active, intact := true, localFuel := true,
+      fuel := 199, source := 186 } =
+    { aFree := 0, hFree := 1, resident := FormedSelection.Resident.active, intact := true, localFuel := true,
+      fuel := 176, source := 170 }
+EvaluationPreparation.lean:61:4: error: 'change' tactic failed, pattern
+  (prepared 276 200).cells - 6 = (RevisionPreparation.prepared 227 184).cells
+is not definitionally equal to target
+  (parentProjection (prepared 276 200)).cells = (RevisionPreparation.prepared 227 184).cells
+EvaluationPreparation.lean:63:4: error: 'change' tactic failed, pattern
+  (prepared 276 200).readers - 2 = (RevisionPreparation.prepared 227 184).readers
+is not definitionally equal to target
+  (parentProjection (prepared 276 200)).readers = (RevisionPreparation.prepared 227 184).readers
+'EvaluationPreparation.runnable_trace' depends on axioms: [propext]
+'EvaluationPreparation.prospective_formation_feasible' depends on axioms: [propext]
+'EvaluationPreparation.prospective_formation_trace' depends on axioms: [propext]
+'EvaluationPreparation.formation_endpoint' depends on axioms: [propext]
+'EvaluationPreparation.assemblies_feasible' does not depend on any axioms
+'EvaluationPreparation.material_partition' depends on axioms: [propext]
+'EvaluationPreparation.exact_parent_prepared_projection' depends on axioms: [propext, sorryAx]
+'EvaluationPreparation.original_compartments' does not depend on any axioms

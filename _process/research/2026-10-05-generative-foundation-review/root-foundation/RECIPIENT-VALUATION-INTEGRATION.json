@@ -1,0 +1,1124 @@
+{
+  "schema_version": 1,
+  "status": "pass: accepted descriptive recipient-harm study identities and integration verified",
+  "named_connection": "Recipient-linked physical consequences to changing action under unchanged offered food.",
+  "scope": "Checks saved byte identities, receipt consistency, accepted canonical identity and local file-link targets. No scientific calculation or checker rerun; no network verification or new data collection.",
+  "source_manifest_files_checked": 20,
+  "osf_originals_checked": 4,
+  "osf_original_checks": [
+    {
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "osf_id": "5df090bce82e200009068115",
+      "version": 1,
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef",
+      "md5": "4bc767bc216248b87b3130996526ba9a",
+      "bytes": 64550
+    },
+    {
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "osf_id": "5df09136078b52000c59db63",
+      "version": 1,
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44",
+      "md5": "64ad5d2fc1663374cb6c65f69da8b778",
+      "bytes": 16683
+    },
+    {
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "osf_id": "5df09136e82e20000906816a",
+      "version": 1,
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df",
+      "md5": "c569bf2e1400f791ef7c64839f14a3b4",
+      "bytes": 28171
+    },
+    {
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "osf_id": "5e96c067f13535049fd54766",
+      "version": 1,
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8",
+      "md5": "b1b70351652f597ac740b3cbbe80e22d",
+      "bytes": 21282
+    }
+  ],
+  "source_workbook_validation": {
+    "mode": "saved manifest claim, not recomputed",
+    "osf_original_hashes_match": true,
+    "trial_workbook_cached_cells_compared": 7128,
+    "trial_workbook_cached_cell_mismatches": 0,
+    "trial_identity_join_count": 78,
+    "summary_identity_count": 142
+  },
+  "saved_independent_verification_counts": {
+    "comparison_count": 21581,
+    "actors": 78,
+    "raw_trial_slots": 6240,
+    "groups": 7,
+    "contrasts": 6,
+    "leave_one_actor": 26,
+    "leave_one_sbl_label": 4,
+    "hypothetical_completions": 3,
+    "source_audit_comparisons": 780,
+    "source_audit_flags": 39
+  },
+  "saved_fault_checks_rejected": 12,
+  "primary_change": {
+    "preferred_offered": "-841/5040",
+    "alternative_offered": "827/5040",
+    "nonresponse_offered": "1/360",
+    "unknown_offered": "0",
+    "preferred_completed": "-5451/33040"
+  },
+  "source_audit_categories": {
+    "spreadsheet_average_ignores_undefined_session": 1,
+    "omitted_total_summary": 32,
+    "scheduled_versus_completed_response_denominator": 6
+  },
+  "preserved_parser_failure": {
+    "path": "experiments/recipient-harm-valuation/review-history/summary-nan/analysis.py",
+    "sha256": "d207eb657df1218f3e31ac11c65efb1c1513a3ef70ed5b901578bd593131afe0",
+    "bytes": 11705
+  },
+  "accepted_canonical_sha256": "abb7a2bd5dd9e260c660b261dfd9127ca847f4fb02de951c6ca202120f9d6b70",
+  "markdown_files_checked": 10,
+  "local_file_links_checked": 104,
+  "local_file_links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "GENERATIVE-GROUNDING.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../sources/15-codex-theory-conversations/2026-10-06-alignment-governance-and-future.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-06-alignment-governance-and-future.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../experiments/recipient-harm-valuation/PROTOCOL.md",
+      "target": "experiments/recipient-harm-valuation/PROTOCOL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "target": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../experiments/recipient-harm-valuation/ANALYSIS-REPAIRS.md",
+      "target": "experiments/recipient-harm-valuation/ANALYSIS-REPAIRS.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../experiments/recipient-harm-valuation/README.md",
+      "target": "experiments/recipient-harm-valuation/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../_process/research/2026-10-05-concern-theory/learning-formal.md",
+      "target": "_process/research/2026-10-05-concern-theory/learning-formal.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "ETHICAL-FOUNDATION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-EVIDENCE-DOWNSTREAM-CONTRACT.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-EVIDENCE-DOWNSTREAM-CONTRACT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "destination": "ALIGNMENT-COMPLETION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "original/hernandez2020.pdf",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "original/TrialByTrialChoicesMainPaper.csv",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "original/dataMainPaper.xlsx",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "original/dataMainPaper.csv",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "original/license.txt",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "metadata/retrieval.json",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/metadata/retrieval.json"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "manifest.json",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/manifest.json"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "schema.json",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/schema.json"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "reading/hernandez2020.txt",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/reading/hernandez2020.txt"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md"
+    },
+    {
+      "from": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "destination": "../../experiments/recipient-harm-valuation/PROTOCOL.md",
+      "target": "experiments/recipient-harm-valuation/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/schema.json",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/schema.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/PROTOCOL.md",
+      "target": "experiments/recipient-harm-valuation/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/source-summary-audit.py",
+      "target": "experiments/recipient-harm-valuation/source-summary-audit.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/source-summary-audit.json",
+      "target": "experiments/recipient-harm-valuation/source-summary-audit.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "RECIPIENT-EVIDENCE-DOWNSTREAM-CONTRACT.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-EVIDENCE-DOWNSTREAM-CONTRACT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../2026-10-05-concern-theory/learning-formal.md",
+      "target": "_process/research/2026-10-05-concern-theory/learning-formal.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../2026-10-05-concern-theory/dynamics-formal.md",
+      "target": "_process/research/2026-10-05-concern-theory/dynamics-formal.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/concern/README.md",
+      "target": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/concern/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/PROTOCOL.md",
+      "target": "experiments/recipient-harm-valuation/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/PROTOCOL.md",
+      "target": "experiments/recipient-harm-valuation/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "target": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/check_analysis.py",
+      "target": "experiments/recipient-harm-valuation/check_analysis.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/independent-verification.json",
+      "target": "experiments/recipient-harm-valuation/independent-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/independent-reconstruction.json",
+      "target": "experiments/recipient-harm-valuation/independent-reconstruction.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/independent-detail.json",
+      "target": "experiments/recipient-harm-valuation/independent-detail.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md",
+      "destination": "RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/results.json",
+      "target": "experiments/recipient-harm-valuation/results.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/independent-verification.json",
+      "target": "experiments/recipient-harm-valuation/independent-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md",
+      "destination": "../../../../experiments/recipient-harm-valuation/source-summary-audit.json",
+      "target": "experiments/recipient-harm-valuation/source-summary-audit.json"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "results.json",
+      "target": "experiments/recipient-harm-valuation/results.json"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "independent-verification.json",
+      "target": "experiments/recipient-harm-valuation/independent-verification.json"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "../../sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/README.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "PROTOCOL.md",
+      "target": "experiments/recipient-harm-valuation/PROTOCOL.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "SCHEMA-CLARIFICATION.md",
+      "target": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "ANALYSIS-REPAIRS.md",
+      "target": "experiments/recipient-harm-valuation/ANALYSIS-REPAIRS.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CHECK.py",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CHECK.py"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-INTEGRATION.json",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-INTEGRATION.json"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/README.md",
+      "destination": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "destination": "../../sources/30-recipient-harm-valuation-2026-10-06/",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06"
+    },
+    {
+      "from": "experiments/recipient-harm-valuation/ANALYSIS-REPAIRS.md",
+      "destination": "review-history/summary-nan/preservation.json",
+      "target": "experiments/recipient-harm-valuation/review-history/summary-nan/preservation.json"
+    },
+    {
+      "from": "RESEARCH.md",
+      "destination": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "destination": "unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "RECIPIENT-VALUATION-EVIDENCE.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "RECIPIENT-VALUATION-REVIEW.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "RECIPIENT-VALUATION-CANONICAL-REVIEW.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "RECIPIENT-VALUATION-CHECK.py",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CHECK.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "RECIPIENT-VALUATION-INTEGRATION.json",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-INTEGRATION.json"
+    },
+    {
+      "from": "experiments/README.md",
+      "destination": "recipient-harm-valuation/README.md",
+      "target": "experiments/recipient-harm-valuation/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "destination": "30-recipient-harm-valuation-2026-10-06/README.md",
+      "target": "sources/30-recipient-harm-valuation-2026-10-06/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "destination": "../experiments/recipient-harm-valuation/README.md",
+      "target": "experiments/recipient-harm-valuation/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "destination": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "destination": "RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "destination": "RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "destination": "RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "destination": "RECIPIENT-RENEWAL.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "destination": "RECIPIENT-REASON-REVISION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "destination": "EVALUATIVE-UPTAKE.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "destination": "EVALUATIVE-APPLICATION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "destination": "RECIPIENT-HARM-AND-ACTION.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    }
+  ],
+  "fragment_anchors_checked": false,
+  "shared_index_excerpts_checked": 8,
+  "shared_index_excerpts": [
+    {
+      "path": "RESEARCH.md",
+      "matching_lines": [
+        "**Recipient consequences and learned action, 6 October 2026:** the [new empirical study](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md) reanalyzes original public rat-choice data under a frozen retrospective protocol. In the primary 26-actor comparison, preferred responses decline 16.69 percentage points more in the male contingent-harm group than in male controls, principally through alternative responses rather than nonperformance. Independent reconstruction passes 21,581 comparisons and twelve fault checks across all 78 released trial actors; source bytes, one unknown trial and 39 explained summary flags remain preserved. Unverified group assignment and disjoint undocumented record labels limit causal inference. The study supplies evidence about external recipient consequences entering learned action with unchanged offered food; it does not identify newly acquired valuation or ethical justification. Next is the existing formed-understanding \u2192 justified evaluative influence \u2192 effective, corrigible action connection, with belief, value, correspondence and recipient relief distinguished."
+      ],
+      "excerpt_sha256": "6f45b0a5e3b903a18128508d576896c50a207c489f0ed2e19c09f025db9fbe2b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "matching_lines": [
+        "**External recipient consequences entering action, 6 October 2026:** [the accepted empirical reanalysis](unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md) finds a 16.69-percentage-point larger decline in preferred responses in the male harm group than in male no-harm controls, with offered food unchanged. Independent computation retains all released trial actors, nonresponses, one unknown and original source conventions. Group confounding prevents a randomized causal interpretation; behavior alone does not distinguish learned consequence knowledge from acquired value. This supplies empirical contact for Ren's external-relations account while keeping the formation and justification of concern, legitimate authority and effective action as separate connections."
+      ],
+      "excerpt_sha256": "dbd963371655f0a5b716460bcb863414dde93c8226abdcbca15ac742f198cc38"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "matching_lines": [
+        "**Recipient harm and action, 6 October 2026:** [evidence and source audit](RECIPIENT-VALUATION-EVIDENCE.md), [identification argument](RECIPIENT-VALUATION-IDENTIFICATION.md), [prospective and numerical review](RECIPIENT-VALUATION-REVIEW.md), and [final canonical review](RECIPIENT-VALUATION-CANONICAL-REVIEW.md) support the [new empirical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md). The primary descriptive change contrast is \u221216.69 percentage points; independent reconstruction retains all 78 actors and passes 21,581 comparisons plus twelve deliberate faults. Acquired contingency, valuation, correspondence and ethical reasons remain distinct. The [integration checker](RECIPIENT-VALUATION-CHECK.py) and [receipt](RECIPIENT-VALUATION-INTEGRATION.json) bind saved source and review artifacts without repeating scientific calculations."
+      ],
+      "excerpt_sha256": "df5e320b996fe3e7fbaeec2c9c51d80933fd49b13640c7c7c19c1ba92bd4a9b3"
+    },
+    {
+      "path": "experiments/README.md",
+      "matching_lines": [
+        "**Recipient harm and action, 6 October 2026:** [recipient-harm-valuation](recipient-harm-valuation/README.md) preserves a frozen retrospective protocol, original public choice data, exact-fraction producer, independent reconstruction and source-summary audit. The 26-actor primary contrast is \u221216.69 percentage points in preferred-response change, with alternative responses and nonperformance separate. All 78 trial actors and 6,240 slots remain; one unknown has explicit sensitivity cases. Independent verification passes 21,581 comparisons and twelve fault checks. This is descriptive animal evidence, not a new experiment, a causal identification of acquired concern or a learned-AI alignment test."
+      ],
+      "excerpt_sha256": "73a77c1710b13beb5705a05e8988aa1d2921e23d1c0b62d4e0e8b654da2f30c1"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "matching_lines": [
+        "Added 2026-10-06: [30-recipient-harm-valuation-2026-10-06](30-recipient-harm-valuation-2026-10-06/README.md) preserves the four original OSF project `65j3g` files, version metadata, publisher paper and a labeled reading extraction for Hernandez-Lallement et al. (2020), *Harm to Others Acts as a Negative Reinforcer in Rats*. All four OSF originals match their upstream hashes; the trial CSV and workbook agree across 7,128 cached cells. The source manifest covers twenty files. The data license is CC BY-NC-SA 4.0 and the article license is CC BY 4.0. Seventy-eight trial actors join the 142-actor summary; these files are not a complete assignment/exclusion ledger. Original blanks, `NaN` text, formulas and denominator conventions remain unchanged. The [new reanalysis](../experiments/recipient-harm-valuation/README.md) and [interpretation](../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md) are separate AI-authored research, with retrospective selection and causal limits explicit."
+      ],
+      "excerpt_sha256": "22953b9fdfd71a6dff01ee6758c5d1f475a3f4eae6fb463f4b7698ea3ceac2fa"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "matching_lines": [
+        "**Recipient consequence \u2192 learned action, 6 October 2026:** [the empirical reanalysis](RECIPIENT-HARM-AND-ACTION.md) adds a physical recipient-harm contingency and a descriptive \u221216.69-percentage-point primary change contrast under unchanged offered food. Independent reconstruction covers all 78 released trial actors; preserved sources and reviews distinguish observed action from newly acquired value. Group assignment, recipient experience, the valuation/correspondence decomposition and ethical application remain unestablished by these data. This advances the existing empirical-support requirement and constrains the concern mechanism: learning which action causes an already aversive event is not itself evidence of acquiring a new evaluative ground. The next central connection and five completion criteria remain unchanged."
+      ],
+      "excerpt_sha256": "9313100cb160fa0843b9b12056aabe671a55726e5d827d9100a73cbbf0ca6421"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "matching_lines": [
+        "| Establish explanatory and empirical reach | Discriminating predictions and interventions in materially different systems, calibrated uncertainty, independent review, failed cases and comparison with simpler accounts | The [recipient-harm reanalysis](RECIPIENT-HARM-AND-ACTION.md) adds independently reconstructed behavioral evidence about external consequences entering action, with fixed food offers, preserved nonperformance and group confounding explicit. It does not identify newly acquired value or instantiate the full mechanism. The complete chain and superiority claims lack sufficient empirical support |",
+        "The [recipient-harm study](RECIPIENT-HARM-AND-ACTION.md) now supplies a complementary empirical result: across 26 male actors, preferred responses decline 16.69 percentage points more under contingent harm than under no harm, principally through alternative responses. Offered food is unchanged. Independent reconstruction retains all 78 released trial actors, original unknowns and summary conventions. Undocumented assignment and disjoint record labels prevent a randomized causal interpretation. The source does not observe the initial formation of valuation or separate actual recipient relief from relief of an actor's aversive cue. This narrows empirical interpretation of the central bridge without substituting behavior for warranted concern. The [identification argument](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md) distinguishes factual learning, efficacy, valuation and correspondence; the full completion requirements remain unchanged."
+      ],
+      "excerpt_sha256": "e991dc028c5dea69c52095af6aee435d84b8077ed242ab7773464fee00a37e0a"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "matching_lines": [
+        "**Subsequent behavioral evidence, 6 October 2026:** [recipient harm and action](RECIPIENT-HARM-AND-ACTION.md) now adds original public data in which a previously preferred lever acquires a harmful consequence for another rat while offered food stays equal. The frozen retrospective primary contrast is a 16.69-percentage-point larger decline in preferred responses in the male harm group than in male controls. Independent reconstruction preserves all released trial actors, nonperformance and source conventions; group assignment remains unverified. The result provides empirical contact with recipient-linked action before reflective moral argument. It does not establish the formation of valuation, recipient-specific understanding or a reason's ethical validity. These are the distinctions the full generative account must explain and connect.",
+        "**Current status of that continuation, 6 October 2026:** the finite [successor-renewal](RECIPIENT-RENEWAL.md) and [fresh-evidence/action](RECIPIENT-REASON-REVISION.md) connections have since been accepted; those interfaces no longer need to be reconstructed merely to restate this assessment. The active [evaluative-uptake construction](EVALUATIVE-UPTAKE.md) holds recipient information fixed while asking whether newly acquired consequences change its practical influence. Its implementation is still being checked. The separately accepted [ethical application audit](EVALUATIVE-APPLICATION.md) states when acquired facts support a justified action under independently defended patient goods, authority and competing claims. The [new animal reanalysis](RECIPIENT-HARM-AND-ACTION.md) constrains empirical interpretation of this connection; it does not validate that exact constructed mechanism."
+      ],
+      "excerpt_sha256": "b8418bb4c49c06da5dba995b7c315348880df21bcccacff4e8e33cb7d1e5777d"
+    }
+  ],
+  "shared_index_scope": "Only matching study-integration lines checked and excerpt-hashed; unrelated concurrent edits are outside this receipt.",
+  "hash_claims_checked": 79,
+  "hash_claims": [
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/README.md",
+      "sha256": "83bd890f64c07fcf95b6c4dea39e25ada9867dc1bf24738d4f6415e50f3e7349"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5df090bce82e200009068115.json",
+      "sha256": "5d940c3ed655d16162b5da0579e089a1968eb78e642d0bc74a3c20030aed82b3"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5df09136078b52000c59db63.json",
+      "sha256": "e6ddeb6771e2cc6e4db80188d8a824456b4474aef87f90e5b6686fc47dd0b746"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5df09136e82e20000906816a.json",
+      "sha256": "69d2570aeed1cef5c0b93f00728687776047b088f3127bab8618d36d075cf687"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5e96c067f13535049fd54766.json",
+      "sha256": "28ce4322152cd8d6a7565eb6fae89be23d40d3d634c43c53cf37423a92a303b0"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/files.json",
+      "sha256": "b7d61b91300213761f6f174451c184aba955a566fcd53a3136b6daac87ca3d0b"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/license.json",
+      "sha256": "da0a1badc22f4953181c2df202bd2df8baffa818c608f1f22c30f9441156c9b7"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/node.json",
+      "sha256": "e57c1e70388ac4946683def8eff0fcdfae154f42e548e6ec5d98fbe85b1804f0"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/retrieval.json",
+      "sha256": "6450663415a34bb08042d8191889a8581e59bfdf5029a10a386b30642d7f16e5"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5df090bce82e200009068115.json",
+      "sha256": "d3fb9aeffc1176b021f1769cea0529c12a181e3c22c95365074bb7b5e1619c10"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5df09136078b52000c59db63.json",
+      "sha256": "10b6bf52fa3353e2ef8b93fadaa616f458dd2ac43873372e04f65ec3cc6cb86d"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5df09136e82e20000906816a.json",
+      "sha256": "790bfdbfa5b475be4ad061075ef5ea1dc309853b9c0bc246bfa085926c10ef2a"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5e96c067f13535049fd54766.json",
+      "sha256": "530e158bd1a4f5283b033abbc1e6e1ec302e00f76580dd1d72a495376491c04d"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "sha256": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/reading/hernandez2020.txt",
+      "sha256": "2bb4b88b605f6fbe94a244666222de9db5097b2856e2e25df2e697dd22086bb2"
+    },
+    {
+      "claim": "source_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/schema.json",
+      "sha256": "ae346e1e771c92022ac868c7a94e1832d0135534e2a05b9df2d6138cc71a2ab7"
+    },
+    {
+      "claim": "osf_original_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "preserved_osf_api_sha256",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "osf_original_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "preserved_osf_api_sha256",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "osf_original_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "preserved_osf_api_sha256",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "osf_original_manifest",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8"
+    },
+    {
+      "claim": "preserved_osf_api_sha256",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8"
+    },
+    {
+      "claim": "protocol_freeze",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "protocol_frozen_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "protocol_frozen_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "protocol_frozen_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "protocol_frozen_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "sha256": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17"
+    },
+    {
+      "claim": "protocol_frozen_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8"
+    },
+    {
+      "claim": "schema_clarification_freeze",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "schema_clarification_freeze",
+      "path": "experiments/recipient-harm-valuation/protocol-freeze.json",
+      "sha256": "531739cd1362fe805411820eb8687636a3c150046f7a9f8be6447378b1ba5f39"
+    },
+    {
+      "claim": "schema_clarification_freeze",
+      "path": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d"
+    },
+    {
+      "claim": "producer_receipt",
+      "path": "experiments/recipient-harm-valuation/analysis.py",
+      "sha256": "3e8be041aaab7ce7bb25966edfe97177f0def2ca9a4fb9f4c3da2a3965822c6f"
+    },
+    {
+      "claim": "producer_receipt",
+      "path": "experiments/recipient-harm-valuation/results.json",
+      "sha256": "55efc4831c90d2d99263ecb36573cc0ded9e20dface3b8c79937f20e01a969f2"
+    },
+    {
+      "claim": "producer_receipt",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "producer_receipt",
+      "path": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d"
+    },
+    {
+      "claim": "results_input",
+      "path": "experiments/recipient-harm-valuation/analysis.py",
+      "sha256": "3e8be041aaab7ce7bb25966edfe97177f0def2ca9a4fb9f4c3da2a3965822c6f"
+    },
+    {
+      "claim": "results_input",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "results_input",
+      "path": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d"
+    },
+    {
+      "claim": "results_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "results_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "results_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "results_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "sha256": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17"
+    },
+    {
+      "claim": "results_sources",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8"
+    },
+    {
+      "claim": "independent_verification",
+      "path": "experiments/recipient-harm-valuation/check_analysis.py",
+      "sha256": "9f1a821edc3ca5918c2fe416e10356ecbf360b9cc841a8a6a702b6d110ac168b"
+    },
+    {
+      "claim": "independent_verification",
+      "path": "experiments/recipient-harm-valuation/results.json",
+      "sha256": "55efc4831c90d2d99263ecb36573cc0ded9e20dface3b8c79937f20e01a969f2"
+    },
+    {
+      "claim": "independent_verification",
+      "path": "experiments/recipient-harm-valuation/independent-reconstruction.json",
+      "sha256": "2be3aa0196c0fc7f226b2706302c65a223e9f985ad0a37ef6f842bc2fd3f3cb6"
+    },
+    {
+      "claim": "independent_verification",
+      "path": "experiments/recipient-harm-valuation/independent-detail.json",
+      "sha256": "f805e271c1ee51800ab64bd4b9f38f6bab6f7da3fe01b09cbad7ceb701209779"
+    },
+    {
+      "claim": "independent_verification",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "independent_verification",
+      "path": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d"
+    },
+    {
+      "claim": "independent-reconstruction.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "independent-reconstruction.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "independent-reconstruction.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "independent-reconstruction.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "sha256": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17"
+    },
+    {
+      "claim": "independent-reconstruction.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8"
+    },
+    {
+      "claim": "independent-reconstruction.json",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "independent-reconstruction.json",
+      "path": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d"
+    },
+    {
+      "claim": "independent-detail.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "independent-detail.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "sha256": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17"
+    },
+    {
+      "claim": "independent-detail.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "independent-detail.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "independent-detail.json",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt",
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8"
+    },
+    {
+      "claim": "independent-detail.json",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "independent-detail.json",
+      "path": "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md",
+      "sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv",
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv",
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx",
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf",
+      "sha256": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "sources/30-recipient-harm-valuation-2026-10-06/manifest.json",
+      "sha256": "6d25c2934fc28120e47a64c34c13aaeb83b141000d0a1999afd85494e7065a81"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "experiments/recipient-harm-valuation/results.json",
+      "sha256": "55efc4831c90d2d99263ecb36573cc0ded9e20dface3b8c79937f20e01a969f2"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "experiments/recipient-harm-valuation/PROTOCOL.md",
+      "sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd"
+    },
+    {
+      "claim": "source_summary_audit_inputs",
+      "path": "experiments/recipient-harm-valuation/source-summary-audit.py",
+      "sha256": "9f5430301b7a2a313b9b042af99bd0fc4d9c7334708fe18a8ccdb042889d882a"
+    },
+    {
+      "claim": "preserved_initial_parser_failure",
+      "path": "experiments/recipient-harm-valuation/review-history/summary-nan/analysis.py",
+      "sha256": "d207eb657df1218f3e31ac11c65efb1c1513a3ef70ed5b901578bd593131afe0"
+    },
+    {
+      "claim": "accepted_canonical_identity",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+      "sha256": "abb7a2bd5dd9e260c660b261dfd9127ca847f4fb02de951c6ca202120f9d6b70"
+    }
+  ],
+  "bound_file_count": 44,
+  "file_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md": "1cbbb167b3bd42a0ec9a30795aa95645ee11f1d51d4b41ce00fda5ea1de9284f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CHECK.py": "9c389e613e35fea50d11e7227577b55fc9c65e754efc1cbcc9296c6066193b45",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md": "ea57a5c53cc0f5df7a4a6c01e39f62b3dd6c17c96c8dc5ccc8bfba0e29a30cda",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md": "c5398d0c2d55237a02f97b421f4801fc2e6f3b7c9447919406984eecfa1ef98d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md": "c4641c741e7b060c893f2c99636cb0c67ebd37e63b35c411f7c6a40b29e58229",
+    "experiments/recipient-harm-valuation/ANALYSIS-REPAIRS.md": "67a77c9deb0daac78a440fc135d7603d13eebbeb8622959787b807f9c93fe2ec",
+    "experiments/recipient-harm-valuation/PROTOCOL.md": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd",
+    "experiments/recipient-harm-valuation/README.md": "c62f5693fdb9bf41d5dd24521d5c1254b56457e3ff27be4f22416c7517d76376",
+    "experiments/recipient-harm-valuation/SCHEMA-CLARIFICATION.md": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d",
+    "experiments/recipient-harm-valuation/analysis-receipt.json": "a5a39341d1d85eed91331676070e7259da74c671b836f5f257687f96bfded742",
+    "experiments/recipient-harm-valuation/analysis.py": "3e8be041aaab7ce7bb25966edfe97177f0def2ca9a4fb9f4c3da2a3965822c6f",
+    "experiments/recipient-harm-valuation/check_analysis.py": "9f1a821edc3ca5918c2fe416e10356ecbf360b9cc841a8a6a702b6d110ac168b",
+    "experiments/recipient-harm-valuation/independent-detail.json": "f805e271c1ee51800ab64bd4b9f38f6bab6f7da3fe01b09cbad7ceb701209779",
+    "experiments/recipient-harm-valuation/independent-reconstruction.json": "2be3aa0196c0fc7f226b2706302c65a223e9f985ad0a37ef6f842bc2fd3f3cb6",
+    "experiments/recipient-harm-valuation/independent-verification.json": "8156b366bd49cdbc2f783daa69534fbad9ba3dd042280f1b90f66e5f64eab313",
+    "experiments/recipient-harm-valuation/protocol-freeze.json": "531739cd1362fe805411820eb8687636a3c150046f7a9f8be6447378b1ba5f39",
+    "experiments/recipient-harm-valuation/results.json": "55efc4831c90d2d99263ecb36573cc0ded9e20dface3b8c79937f20e01a969f2",
+    "experiments/recipient-harm-valuation/review-history/summary-nan/analysis.py": "d207eb657df1218f3e31ac11c65efb1c1513a3ef70ed5b901578bd593131afe0",
+    "experiments/recipient-harm-valuation/review-history/summary-nan/preservation.json": "0b63475732d64eda87d3c8f8da2c0fc2d099b138e1ff68ff3e3bd7fb3964137d",
+    "experiments/recipient-harm-valuation/schema-clarification-freeze.json": "1f362bd2208c141a45b2a3a5fdb4deba10f66b5299cad8fe13b43598ccfe3e4f",
+    "experiments/recipient-harm-valuation/source-summary-audit.json": "283dc6ee018be4d2fb78dab5033fa5cb722ac162771fa41cf6a16f6be54d85b2",
+    "experiments/recipient-harm-valuation/source-summary-audit.py": "9f5430301b7a2a313b9b042af99bd0fc4d9c7334708fe18a8ccdb042889d882a",
+    "sources/30-recipient-harm-valuation-2026-10-06/README.md": "83bd890f64c07fcf95b6c4dea39e25ada9867dc1bf24738d4f6415e50f3e7349",
+    "sources/30-recipient-harm-valuation-2026-10-06/manifest.json": "6d25c2934fc28120e47a64c34c13aaeb83b141000d0a1999afd85494e7065a81",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5df090bce82e200009068115.json": "5d940c3ed655d16162b5da0579e089a1968eb78e642d0bc74a3c20030aed82b3",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5df09136078b52000c59db63.json": "e6ddeb6771e2cc6e4db80188d8a824456b4474aef87f90e5b6686fc47dd0b746",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5df09136e82e20000906816a.json": "69d2570aeed1cef5c0b93f00728687776047b088f3127bab8618d36d075cf687",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/file-5e96c067f13535049fd54766.json": "28ce4322152cd8d6a7565eb6fae89be23d40d3d634c43c53cf37423a92a303b0",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/files.json": "b7d61b91300213761f6f174451c184aba955a566fcd53a3136b6daac87ca3d0b",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/license.json": "da0a1badc22f4953181c2df202bd2df8baffa818c608f1f22c30f9441156c9b7",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/node.json": "e57c1e70388ac4946683def8eff0fcdfae154f42e548e6ec5d98fbe85b1804f0",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/retrieval.json": "6450663415a34bb08042d8191889a8581e59bfdf5029a10a386b30642d7f16e5",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5df090bce82e200009068115.json": "d3fb9aeffc1176b021f1769cea0529c12a181e3c22c95365074bb7b5e1619c10",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5df09136078b52000c59db63.json": "10b6bf52fa3353e2ef8b93fadaa616f458dd2ac43873372e04f65ec3cc6cb86d",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5df09136e82e20000906816a.json": "790bfdbfa5b475be4ad061075ef5ea1dc309853b9c0bc246bfa085926c10ef2a",
+    "sources/30-recipient-harm-valuation-2026-10-06/metadata/versions-5e96c067f13535049fd54766.json": "530e158bd1a4f5283b033abbc1e6e1ec302e00f76580dd1d72a495376491c04d",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/license.txt": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8",
+    "sources/30-recipient-harm-valuation-2026-10-06/reading/hernandez2020.txt": "2bb4b88b605f6fbe94a244666222de9db5097b2856e2e25df2e697dd22086bb2",
+    "sources/30-recipient-harm-valuation-2026-10-06/schema.json": "ae346e1e771c92022ac868c7a94e1832d0135534e2a05b9df2d6138cc71a2ab7",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md": "abb7a2bd5dd9e260c660b261dfd9127ca847f4fb02de951c6ca202120f9d6b70"
+  },
+  "checker_sha256": "9c389e613e35fea50d11e7227577b55fc9c65e754efc1cbcc9296c6066193b45",
+  "shared_indexes_edited": false,
+  "scientific_reruns": 0,
+  "new_animal_experiments": 0,
+  "unified_foundation_complete": false,
+  "remaining_scope": [
+    "assignment and dependence identification",
+    "separate value/correspondence acquisition",
+    "recipient outcome versus actor cue relief",
+    "ethical standing and justified action"
+  ]
+}

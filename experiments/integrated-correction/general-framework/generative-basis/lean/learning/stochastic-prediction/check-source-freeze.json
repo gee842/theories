@@ -1,0 +1,69 @@
+{
+  "status": "frozen_before_new_numerical_comparisons",
+  "timestamp_utc": "2026-10-06T00:01:54.121514+00:00",
+  "git_head": "2970e2fbf66db5bc13cae5d469ea80e12bc8f0af",
+  "files": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean": {
+      "sha256": "4a96b3a8a6a37e592a28d18e9b7b2db805bd58d8070b076b843c33d1c89320e0",
+      "bytes": 12669
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean": {
+      "sha256": "f7722a463fe05d2cc14b7c1cc3bc89b9c1d1435febb1c084a000f48ce98d9ee3",
+      "bytes": 15680
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/CHECK-PROTOCOL.md": {
+      "sha256": "1ae6aa9af176f476ac92f2e03e79432bad8c9b834939c4aeec36a283e50c3058",
+      "bytes": 11922
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Evaluate.lean": {
+      "sha256": "7860a7b4d7f806613a8f62712b1b70fab0872c52a483a1a2c415d85cde090788",
+      "bytes": 1613
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Exposure.lean": {
+      "sha256": "4c69bfe66106200939bc5410e9d1542232f4bff0d1ad76a9f8871f539bfa55d8",
+      "bytes": 12330
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PROTOCOL.md": {
+      "sha256": "c05d0af38929154a866f3dda3abe926041628f7c2b82cca2b9b6cba31136e429",
+      "bytes": 2656
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": {
+      "sha256": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+      "bytes": 9464
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": {
+      "sha256": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+      "bytes": 11858
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/PROTOCOL.md": {
+      "sha256": "ab8aad275955833ea958106362a48b8f1c5a85c6de6d758db491fda3b7276b8b",
+      "bytes": 8186
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/check.py": {
+      "sha256": "fbec6d6cd2119e62e8081f290cd41e09683f1d0ca967aeabbd14d9aa324abf8d",
+      "bytes": 6289
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean": {
+      "sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+      "bytes": 22705
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": {
+      "sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+      "bytes": 12775
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/results.json": {
+      "sha256": "052c5e2d175a9e2c52c169f2a44c6bae24e5e1313970ac69aef958cf69f0da5d",
+      "bytes": 96320
+    },
+    "experiments/shared-renewal-capability/regulation/retention/model.py": {
+      "sha256": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+      "bytes": 9392
+    }
+  },
+  "counts": {
+    "inherited_cases": 8,
+    "arms": 8,
+    "declared_guard_calls": 9600
+  },
+  "scope": "New numerical kernel/prefix correspondence; no new source law or probability estimate."
+}

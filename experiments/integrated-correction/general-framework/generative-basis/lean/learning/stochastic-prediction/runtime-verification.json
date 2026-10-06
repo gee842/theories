@@ -1,0 +1,23 @@
+{
+  "checker_sha256": "4b2c3033c8f5bc569e32c54810be5e94ed16dcf8a1d151623f6fbd434127832f",
+  "counts": {
+    "checked_prefix_states": 608316,
+    "compiled_distinct_tapes": 38412,
+    "guard_calls": 9600,
+    "positive_weight_tapes": 89844,
+    "reachable_invocations": 7702,
+    "unique_calls": 15985
+  },
+  "formal_freeze_sha256": "0c6a5e6ad3d43a5d34989a0420d3151fa5d5c4b512105ea842c3f1f7a40a90d4",
+  "outputs_sha256": {
+    "formal-fixtures.tsv.gz": "1c4843ecf7089b1d742774b481594426f33c5a2b7acf670c3fe43ed901a22aaf",
+    "prefix-traces.json": "01ccd3e595f93a224e44d28d28c4296a552e2c25399cd26053e9ea425b323cef",
+    "runtime-calls.jsonl.gz": "49be507f62502383a3592e5d5e61ce720a220e3edecb17ae7d1616a00b2d67d3",
+    "runtime-results.json": "334022661fa21beea46c841df5dc3c07e16da5d59762db8f6d752f8074d63da0"
+  },
+  "parent_model_sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+  "scope": "Exact finite full-state/increment kernels, inherited endpoint laws and weighted cumulative first moments; compiled Lean operational tapes agree on declared source-valid inputs. No universal Python refinement or new empirical validation.",
+  "source_freeze_sha256": "0441166dcffa580f2c11a7fdd8e0b66c75ca57862bf565f0036d66562e63007f",
+  "status": "passed",
+  "timestamp_utc": "2026-10-06T00:08:53.054825+00:00"
+}

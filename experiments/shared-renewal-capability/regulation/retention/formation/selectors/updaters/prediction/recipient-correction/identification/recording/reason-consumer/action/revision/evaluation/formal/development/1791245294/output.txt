@@ -1,0 +1,59 @@
+AcquiredEvaluation.lean:60:2: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable (Current s ∧ s.parent.parent.scope = true)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AcquiredEvaluation.lean:208:62: warning: This simp argument is unused:
+  core
+
+Hint: Omit it from the simp argument list.
+  simp [RecipientAction.Settlement,c̵o̵r̵e̵,̵ ̲FreshRevision.core] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+AcquiredEvaluation.lean:208:67: warning: This simp argument is unused:
+  FreshRevision.core
+
+Hint: Omit it from the simp argument list.
+  simp [̵R̵e̵c̵i̵p̵i̵e̵n̵t̵A̵c̵t̵i̵o̵n̵.̵S̵e̵t̵t̵l̵e̵m̵e̵n̵t̵,̵c̵o̵r̵e̵,̵F̵r̵e̵s̵h̵R̵e̵v̵i̵s̵i̵o̵n̵.̵c̵o̵r̵e̵]̵[̲R̲e̲c̲i̲p̲i̲e̲n̲t̲A̲c̲t̲i̲o̲n̲.̲S̲e̲t̲t̲l̲e̲m̲e̲n̲t̲,̲ ̲c̲o̲r̲e̲]̲ at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+AcquiredEvaluation.lean:214:30: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  s.portMode
+in the target expression
+  Enabled s Event.replace
+
+case inl
+s : State
+he : Enabled s Event.replace
+h : s.portMode = PortMode.read
+⊢ False
+AcquiredEvaluation.lean:214:30: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  s.portMode
+in the target expression
+  Enabled s Event.replace
+
+case inr.inl
+s : State
+he : Enabled s Event.replace
+h : s.portMode = PortMode.help
+⊢ False
+AcquiredEvaluation.lean:214:30: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  s.portMode
+in the target expression
+  Enabled s Event.replace
+
+case inr.inr
+s : State
+he : Enabled s Event.replace
+h : s.portMode = PortMode.abstain
+⊢ False
+'AcquiredEvaluation.runnable_trace' depends on axioms: [propext, sorryAx]
+'AcquiredEvaluation.update_bounded' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.shared_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.three_losses' does not depend on any axioms
+'AcquiredEvaluation.conventional_same_on_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.permission_cut_retains_evaluation' depends on axioms: [propext, sorryAx]
+'AcquiredEvaluation.trial_projects' depends on axioms: [propext, sorryAx]
+'AcquiredEvaluation.recipient_only' depends on axioms: [propext, sorryAx]
+'AcquiredEvaluation.writes_consume_assessment' depends on axioms: [propext, sorryAx]
+'AcquiredEvaluation.no_new_trial_after_consumption' depends on axioms: [propext, sorryAx]
+'AcquiredEvaluation.pending_port_not_replaceable' depends on axioms: [propext, sorryAx]

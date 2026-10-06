@@ -1,0 +1,16 @@
+{
+  "status": "development_findings_pending_resolution",
+  "recorded_utc": "2026-10-06T00:11:24.850873+00:00",
+  "source_sha256": "f3bed8428d7288de2dd525fe42683985ffc74042071813d4fedd098c18297d9c",
+  "scope": "Root source-level review before accepted formal build; no executed exploit or proof result.",
+  "findings": [
+    {
+      "id": "direct-voluntary-bypass",
+      "claim": "Public Event.voluntary uses only parent enablement, so the new .trial-only no-reuse theorem does not establish global assessment gating. Remove or explicitly scope the alternative."
+    },
+    {
+      "id": "opportunity-phase-guard",
+      "claim": "State lacks protocol first/second opportunity phase; scope/reason consumption can make a port replaceable without explicit first opportunity closure. Implement exact lifecycle or justify restricted statement."
+    }
+  ]
+}

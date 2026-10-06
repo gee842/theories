@@ -1,0 +1,4368 @@
+{
+  "adverse_cases": {
+    "actual_arrival_funds_receipt": {
+      "belief": [
+        [
+          2,
+          2
+        ]
+      ],
+      "ledger": {
+        "events": 41,
+        "fuel": "599555/65536",
+        "income": "10",
+        "peak_cells": 149,
+        "source": 0,
+        "spent": "934043/65536",
+        "wasted": 0
+      },
+      "retained": true,
+      "status": "complete"
+    },
+    "capacity_64": {
+      "belief": [],
+      "ledger": {
+        "events": 1,
+        "fuel": "118521/8192",
+        "income": "0",
+        "peak_cells": 31,
+        "source": 10,
+        "spent": "82199/65536",
+        "wasted": 0
+      },
+      "retained": false,
+      "status": "capacity:generate_candidate_family"
+    },
+    "expanded_inherited_capacity": {
+      "belief": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          2
+        ]
+      ],
+      "ledger": {
+        "events": 3,
+        "fuel": "720259/65536",
+        "income": "0",
+        "peak_cells": 215,
+        "source": 10,
+        "spent": "77527/16384",
+        "wasted": 0
+      },
+      "retained": false,
+      "status": "capacity:prepare_read"
+    },
+    "fourfold_tariffs": {
+      "belief": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "ledger": {
+        "events": 4,
+        "fuel": "15063/65536",
+        "income": "0",
+        "peak_cells": 147,
+        "source": 10,
+        "spent": "126913/8192",
+        "wasted": 0
+      },
+      "retained": false,
+      "status": "funding:native_read"
+    },
+    "fourth_phase_detected": {
+      "belief": [],
+      "ledger": {
+        "events": 18,
+        "fuel": "210471/32768",
+        "income": "0",
+        "peak_cells": 149,
+        "source": 10,
+        "spent": "609425/65536",
+        "wasted": 0
+      },
+      "retained": false,
+      "status": "model_family_inadequate"
+    },
+    "fourth_phase_undetected": {
+      "belief": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ledger": {
+        "events": 43,
+        "fuel": "52327/65536",
+        "income": "0",
+        "peak_cells": 149,
+        "source": 0,
+        "spent": "122255/8192",
+        "wasted": 10
+      },
+      "retained": true,
+      "status": "complete"
+    },
+    "installation_unfunded": {
+      "belief": [],
+      "ledger": {
+        "events": 0,
+        "fuel": "1/2",
+        "income": "0",
+        "peak_cells": 15,
+        "source": 10,
+        "spent": "0",
+        "wasted": 0
+      },
+      "retained": false,
+      "status": "funding:diagnostic_installation"
+    },
+    "inverted_receipt": {
+      "belief": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ledger": {
+        "events": 41,
+        "fuel": "187921/16384",
+        "income": "10",
+        "peak_cells": 149,
+        "source": 0,
+        "spent": "934043/65536",
+        "wasted": 0
+      },
+      "retained": true,
+      "status": "complete"
+    },
+    "no_arrival_receipt_unfunded": {
+      "belief": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "ledger": {
+        "events": 36,
+        "fuel": "0",
+        "income": "0",
+        "peak_cells": 149,
+        "source": 0,
+        "spent": "439119/32768",
+        "wasted": 10
+      },
+      "retained": false,
+      "status": "funding:arrival_receipt"
+    },
+    "unmodeled_blocked_transfer": {
+      "belief": [
+        [
+          3,
+          2
+        ]
+      ],
+      "ledger": {
+        "events": 40,
+        "fuel": "24081/16384",
+        "income": "0",
+        "peak_cells": 149,
+        "source": 0,
+        "spent": "934043/65536",
+        "wasted": 10
+      },
+      "retained": true,
+      "status": "complete"
+    }
+  },
+  "expanded_assay": {
+    "scope": "explicit mathematical assay funds10000/capacity512, not inherited affordable continuation",
+    "three_after_nonarrival": 36,
+    "unique_after_arrival": 12,
+    "worlds": 48
+  },
+  "factored_continuation": {
+    "maximum_peak_cells": 150,
+    "probe_complete": 36,
+    "probe_records": {
+      "0000@0": {
+        "belief": [
+          [
+            0,
+            2
+          ]
+        ],
+        "fuel": "671801/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "506963/32768",
+        "status": "complete"
+      },
+      "0000@1": {
+        "belief": [
+          [
+            0,
+            2
+          ]
+        ],
+        "fuel": "663651/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "255519/16384",
+        "status": "complete"
+      },
+      "0000@2": {
+        "belief": [
+          [
+            0,
+            2
+          ]
+        ],
+        "fuel": "707669/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "489029/32768",
+        "status": "complete"
+      },
+      "0001@0": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "31525/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "499421/32768",
+        "status": "funding:retain_diagnosis"
+      },
+      "0001@1": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "23375/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "62937/4096",
+        "status": "funding:retain_diagnosis"
+      },
+      "0001@2": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "0010@0": {
+        "belief": [
+          [
+            4,
+            2
+          ]
+        ],
+        "fuel": "715819/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "242477/16384",
+        "status": "complete"
+      },
+      "0010@1": {
+        "belief": [
+          [
+            4,
+            2
+          ]
+        ],
+        "fuel": "707669/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "489029/32768",
+        "status": "complete"
+      },
+      "0010@2": {
+        "belief": [
+          [
+            4,
+            2
+          ]
+        ],
+        "fuel": "751687/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "116755/8192",
+        "status": "complete"
+      },
+      "0011@0": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "43739/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "246657/16384",
+        "status": "complete"
+      },
+      "0011@1": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "0011@2": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "79607/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "118845/8192",
+        "status": "complete"
+      },
+      "0100@0": {
+        "belief": [
+          [
+            2,
+            2
+          ]
+        ],
+        "fuel": "671801/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "506963/32768",
+        "status": "complete"
+      },
+      "0100@1": {
+        "belief": [
+          [
+            2,
+            2
+          ]
+        ],
+        "fuel": "663651/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "255519/16384",
+        "status": "complete"
+      },
+      "0100@2": {
+        "belief": [
+          [
+            2,
+            2
+          ]
+        ],
+        "fuel": "707669/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "489029/32768",
+        "status": "complete"
+      },
+      "0101@0": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "31525/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "499421/32768",
+        "status": "funding:retain_diagnosis"
+      },
+      "0101@1": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "23375/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "62937/4096",
+        "status": "funding:retain_diagnosis"
+      },
+      "0101@2": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "0110@0": {
+        "belief": [
+          [
+            6,
+            2
+          ]
+        ],
+        "fuel": "715819/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "242477/16384",
+        "status": "complete"
+      },
+      "0110@1": {
+        "belief": [
+          [
+            6,
+            2
+          ]
+        ],
+        "fuel": "707669/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "489029/32768",
+        "status": "complete"
+      },
+      "0110@2": {
+        "belief": [
+          [
+            6,
+            2
+          ]
+        ],
+        "fuel": "751687/65536",
+        "income": "10",
+        "retained": true,
+        "spent": "116755/8192",
+        "status": "complete"
+      },
+      "0111@0": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "43739/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "246657/16384",
+        "status": "complete"
+      },
+      "0111@1": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "0111@2": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "79607/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "118845/8192",
+        "status": "complete"
+      },
+      "1000@0": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "31525/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "499421/32768",
+        "status": "funding:retain_diagnosis"
+      },
+      "1000@1": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "23375/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "62937/4096",
+        "status": "funding:retain_diagnosis"
+      },
+      "1000@2": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1001@0": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "31525/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "499421/32768",
+        "status": "funding:retain_diagnosis"
+      },
+      "1001@1": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "23375/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "62937/4096",
+        "status": "funding:retain_diagnosis"
+      },
+      "1001@2": {
+        "belief": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1010@0": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "43739/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "246657/16384",
+        "status": "complete"
+      },
+      "1010@1": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1010@2": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "79607/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "118845/8192",
+        "status": "complete"
+      },
+      "1011@0": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "43739/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "246657/16384",
+        "status": "complete"
+      },
+      "1011@1": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1011@2": {
+        "belief": [
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "fuel": "79607/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "118845/8192",
+        "status": "complete"
+      },
+      "1100@0": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "31525/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "499421/32768",
+        "status": "funding:retain_diagnosis"
+      },
+      "1100@1": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "23375/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "62937/4096",
+        "status": "funding:retain_diagnosis"
+      },
+      "1100@2": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1101@0": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "31525/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "499421/32768",
+        "status": "funding:retain_diagnosis"
+      },
+      "1101@1": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "23375/65536",
+        "income": "0",
+        "retained": false,
+        "spent": "62937/4096",
+        "status": "funding:retain_diagnosis"
+      },
+      "1101@2": {
+        "belief": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1110@0": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "43739/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "246657/16384",
+        "status": "complete"
+      },
+      "1110@1": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1110@2": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "79607/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "118845/8192",
+        "status": "complete"
+      },
+      "1111@0": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "43739/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "246657/16384",
+        "status": "complete"
+      },
+      "1111@1": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "35589/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "497389/32768",
+        "status": "complete"
+      },
+      "1111@2": {
+        "belief": [
+          [
+            7,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        "fuel": "79607/65536",
+        "income": "0",
+        "retained": true,
+        "spent": "118845/8192",
+        "status": "complete"
+      }
+    },
+    "probe_retention_unfunded": 12,
+    "runs": 96,
+    "scope": "paid factor representation of full48 class; same actual inherited stocks",
+    "sensor_complete": 48,
+    "worlds": 48
+  },
+  "hashes": {
+    "../model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "PROTOCOL.md": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6",
+    "diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "independent_check.py": "719aa55c41d8cd6046aad99df0226da5767515381878c6427236a6d6b6837167"
+  },
+  "inherited": {
+    "fuel": "1030367/65536",
+    "initial_live_cells": 15,
+    "model": {
+      "alphabet": [
+        "a"
+      ],
+      "initial": 0,
+      "outputs": [
+        0,
+        0,
+        1
+      ],
+      "transitions": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ]
+    },
+    "physical_phase_environment_only": 2,
+    "source": 10
+  },
+  "primary_class": {
+    "independent_policy_and_update_matches": 48,
+    "records": {
+      "000@0": {
+        "probe": {
+          "final_belief": [
+            [
+              0,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 47,
+            "fuel": "357913/32768",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "969901/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "000@1": {
+        "probe": {
+          "final_belief": [
+            [
+              0,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 44,
+            "fuel": "707687/65536",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "122255/8192",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "000@2": {
+        "probe": {
+          "final_belief": [
+            [
+              0,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 41,
+            "fuel": "187921/16384",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "934043/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "001@0": {
+        "probe": {
+          "final_belief": [
+            [
+              4,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 44,
+            "fuel": "747029/65536",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "469349/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "001@1": {
+        "probe": {
+          "final_belief": [
+            [
+              4,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 41,
+            "fuel": "369445/32768",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "946837/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "001@2": {
+        "probe": {
+          "final_belief": [
+            [
+              4,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 38,
+            "fuel": "782887/65536",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "112855/8192",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "010@0": {
+        "probe": {
+          "final_belief": [
+            [
+              2,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 47,
+            "fuel": "357913/32768",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "969901/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "010@1": {
+        "probe": {
+          "final_belief": [
+            [
+              2,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 44,
+            "fuel": "707687/65536",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "122255/8192",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "010@2": {
+        "probe": {
+          "final_belief": [
+            [
+              2,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 41,
+            "fuel": "187921/16384",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "934043/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "011@0": {
+        "probe": {
+          "final_belief": [
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 44,
+            "fuel": "747029/65536",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "469349/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "011@1": {
+        "probe": {
+          "final_belief": [
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 41,
+            "fuel": "369445/32768",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "946837/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "011@2": {
+        "probe": {
+          "final_belief": [
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 38,
+            "fuel": "782887/65536",
+            "income": "10",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "112855/8192",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "probe",
+              "observation": 1
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "100@0": {
+        "probe": {
+          "final_belief": [
+            [
+              1,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 46,
+            "fuel": "30233/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "969901/65536",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "100@1": {
+        "probe": {
+          "final_belief": [
+            [
+              1,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 43,
+            "fuel": "52327/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "122255/8192",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "100@2": {
+        "probe": {
+          "final_belief": [
+            [
+              1,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 40,
+            "fuel": "24081/16384",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "934043/65536",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "101@0": {
+        "probe": {
+          "final_belief": [
+            [
+              5,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 43,
+            "fuel": "91669/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "469349/32768",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "101@1": {
+        "probe": {
+          "final_belief": [
+            [
+              5,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 40,
+            "fuel": "41765/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "946837/65536",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "101@2": {
+        "probe": {
+          "final_belief": [
+            [
+              5,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "127527/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "112855/8192",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "110@0": {
+        "probe": {
+          "final_belief": [
+            [
+              3,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 46,
+            "fuel": "30233/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "969901/65536",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "110@1": {
+        "probe": {
+          "final_belief": [
+            [
+              3,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 43,
+            "fuel": "52327/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "122255/8192",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "110@2": {
+        "probe": {
+          "final_belief": [
+            [
+              3,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 40,
+            "fuel": "24081/16384",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "934043/65536",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            }
+          ]
+        }
+      },
+      "111@0": {
+        "probe": {
+          "final_belief": [
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 43,
+            "fuel": "91669/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "469349/32768",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "8781/4096",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "889871/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "111@1": {
+        "probe": {
+          "final_belief": [
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 40,
+            "fuel": "41765/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "946837/65536",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 34,
+            "fuel": "132357/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "449005/32768",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      },
+      "111@2": {
+        "probe": {
+          "final_belief": [
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 37,
+            "fuel": "127527/65536",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 0,
+            "spent": "112855/8192",
+            "wasted": 10
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "probe",
+              "observation": 0
+            }
+          ]
+        },
+        "sensor_only": {
+          "final_belief": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "ledger": {
+            "events": 31,
+            "fuel": "88177/32768",
+            "income": "0",
+            "peak_cells": 149,
+            "source": 10,
+            "spent": "854013/65536",
+            "wasted": 0
+          },
+          "native_trace": [
+            {
+              "command": "read",
+              "observation": 1
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 0
+            },
+            {
+              "command": "reset",
+              "observation": null
+            },
+            {
+              "command": "a",
+              "observation": null
+            },
+            {
+              "command": "read",
+              "observation": 1
+            }
+          ]
+        }
+      }
+    },
+    "replayed_resource_ledgers": 48,
+    "runs": 48,
+    "scope": "same inherited stocks; alternate physical phases are explicit boundary perturbations",
+    "worlds": 24
+  },
+  "retained_model_relabelling": {
+    "native_traces_and_costs_preserved": true,
+    "state_renamings": 6
+  },
+  "scope": "independent consistency policy and state update; replay of stipulated macro-operation charges"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "full_reconstruction_passed_additional_review_pending",
+  "completed_utc": "2026-10-06T00:20:51.557142+00:00",
+  "counts": {
+    "cases": 29,
+    "mixtures": 261,
+    "histories": 3306,
+    "prefixes": 40200,
+    "aggregate_metrics": 8352,
+    "preparation_prefix_comparisons": 3071,
+    "catalog_entries": 152
+  },
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py": "2e4adca30d9d21636add4d5cd1d9f44b257160ae40763e758674bf30770d044a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/DRAFT-PROTOCOL.md": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/cases.json": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/INTERFACE.md": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/result-files.json": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/results.json.gz": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/fixtures.json": "01facecb0b4cfef6bb9dacf93244b10a74c706ffef7cc145f570bdccf4cb90af",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/reporting.json": "9c234d315e1f55d26189d03a6d89fca7f74f8fe0774513499e77c34edbb09c5b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/check_model.py": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a"
+  },
+  "scope": "First independent full reconstruction passed without implementation or oracle corrections after reading outcomes. Additional mutation, formal and explanatory audit remains."
+}

@@ -1,0 +1,13 @@
+# Exact weighted exposure composition
+
+Prospective formal scope, 6 October 2026. The target is the operational projection of `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py:advance`, not a probability law silently attached to the older four-event Lean relation.
+
+The projection retains common fuel, gate kind and lifetime, assembly stage and predictor lifetime, score, last action and written flag. Historical `prelearn`, `stale`, `corrected`, `witness` and diagnostic moments do not affect those successor coordinates. Their separate Python agreement is an executable checking obligation. Gate absence is encoded as natural 2, while Python uses -1; stage 0/1/2 and score 0..4 retain their existing meanings.
+
+The formal exposure includes gate formation, base/prior formation, retrofit, rent, failed-rent destruction, no-work continuation, trial receipt, optional paid/sham write and lifetime change. Every call consumes its scheduled source packet: an uncaptured packet is waste even if no work occurs. Skipped writing does not absorb the carrier or prohibit later formation. The external schedule and source provision remain supplied. Source packets must exist before their scheduled calls; no indefinite supply follows from finite composition.
+
+All eight existing arms are covered operationally. Natural weights describe rational availability k/N, with N positive and k≤N. Each exposure uses a gate bit, a prior bit and an availability bit, with weight 1×1×(k or N−k); unused bits remain marginalized. Total unnormalized weight is 4N. This states a supplied independent sampling law, not a derived physical randomness theorem. Whole paths retain actual successors and all failed/no-work/unpaid-write outcomes; they are never conditionally renormalized to completed writes.
+
+Planned obligations: per-branch physical ledger; total exposure weight; arbitrary finite schedule mass and actual-successor composition; overlap with `PredictionAction` only for installed hardware, deterministic available capture and payable completed cycles; explicit counterexamples outside that overlap. The older relation can remain in an intermediate observed phase and can retain an unconsumed packet where this callable does neither.
+
+The proof uses Lean 4.29.1 and Std, natural weighted finite lists, no custom axioms or unverified decision shortcut. Source correspondence to Python is a separate independently checked finite/executable and source-audit claim, not verification of arbitrary Python. Every source and compiler/log dependency is hashed; fresh temporary builds audit every declared theorem.

@@ -53,7 +53,7 @@ The three-phase apparatus has the same kind of boundary. Let \(x\in\{0,1,2\}\) a
 | World | Reported contact | Productive readiness |
 |---|---|---|
 | Sensor inversion only | \(1-c(x)\) | \(c(x)\) |
-| Sensor and productive-readiness inversion | \(1-c(x)\) | \(1-c(x)\) |
+| Readiness change with faithful sensor | \(1-c(x)\) | \(1-c(x)\) |
 
 Every reset/action/read sequence has the same report in both worlds. This follows by induction: corresponding states start equal, each command preserves their equality, and the observation functions agree. Adaptive policies also receive identical transcripts and therefore cannot choose a separating read-only experiment. The failure is structural, not merely an insufficient finite sample.
 

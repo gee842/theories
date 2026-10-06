@@ -1,0 +1,23 @@
+{
+  "status": "compiled_frozen_evaluator_before_comparison",
+  "timestamp_utc": "2026-10-06T00:08:14.493119+00:00",
+  "sources": {
+    "Exposure.lean": "99ae15f4c34a90d7f5f77440a392181af72f11586f8ced29de0f4e9f8a2d7063",
+    "Evaluate.lean": "7860a7b4d7f806613a8f62712b1b70fab0872c52a483a1a2c415d85cde090788"
+  },
+  "initial_source_snapshot_sha256": "0441166dcffa580f2c11a7fdd8e0b66c75ca57862bf565f0036d66562e63007f",
+  "scope_clarification_sha256": "73bd3551b4696834592653dc37cdb187b8608be1339363c20cbee6b925ee9895",
+  "independent_checker_sha256_before_first_run": "4b2c3033c8f5bc569e32c54810be5e94ed16dcf8a1d151623f6fbd434127832f",
+  "preparation_program_sha256": "beff5849e7a9bc8f4a519f83456d1e310368c83884a7a4fbc714776d3dbc60cb",
+  "lean_executable": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "lean_executable_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_path": "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/stochastic-prediction-eval-7ek_q1gb",
+  "command": [
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+    "--run",
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/stochastic-prediction-eval-7ek_q1gb/Evaluate.lean"
+  ],
+  "compiled_object_sha256": "00a66d476c316c313244339d1e1f33f9032ff0fe05569153f5c942ca64b245f2",
+  "build_output_sha256": "67f2f0a3827541b8d805647e3395730024088992f5da4f0caafeceadf2a75ebd",
+  "note": "Initial formal snapshot preserved; proof/audit finalization rebound before outcomes. Parent laws unchanged. First compile working-directory error preserved under development/."
+}

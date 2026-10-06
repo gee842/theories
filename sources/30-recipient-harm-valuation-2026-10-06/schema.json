@@ -1,0 +1,883 @@
+{
+  "scope": "Source structure and exact encoding only; no scientific outcome aggregate.",
+  "trial_csv": {
+    "encoding": "utf-8-sig",
+    "physical_rows": 81,
+    "columns": 88,
+    "header_rows": 2,
+    "actor_rows": 78,
+    "trailing_blank_rows": 1,
+    "id_column_zero_based": 1,
+    "group_column_zero_based": 2,
+    "phase_columns_zero_based_half_open": {
+      "Baseline": [
+        3,
+        23
+      ],
+      "Shock 1": [
+        23,
+        43
+      ],
+      "Shock 2": [
+        43,
+        63
+      ],
+      "Shock 3": [
+        63,
+        83
+      ]
+    },
+    "codes": {
+      "2": "shock lever (baseline preferred), trial completed",
+      "1": "no-shock lever, trial completed",
+      "0": "non-performed trial"
+    },
+    "trial_cell_lexical_domain": [
+      "",
+      "0",
+      "1",
+      "2"
+    ],
+    "precomputed_nonperformance_columns_zero_based": {
+      "bsl": 83,
+      "shk1": 84,
+      "shk2": 85,
+      "shk3": 86,
+      "total": 87
+    },
+    "blank_trial_coordinates": [
+      {
+        "actor": "70",
+        "group": "1vs3Pellets",
+        "phase": "Shock 3",
+        "trial": 11,
+        "spreadsheet_row": 72,
+        "column_zero_based": 73
+      }
+    ]
+  },
+  "summary_csv": {
+    "encoding": "utf-8-sig",
+    "physical_rows": 144,
+    "columns": 69,
+    "header_rows": 1,
+    "animal_rows": 142,
+    "trailing_blank_rows": 1,
+    "join_column_zero_based": 2,
+    "identity_columns_zero_based": {
+      "SBL#": 0,
+      "Rat Number": 1,
+      "Animal Number": 2,
+      "Condition": 3,
+      "Group": 4,
+      "Gender": 5
+    },
+    "headers": [
+      "SBL#",
+      "Rat Number",
+      "Animal Number",
+      "Condition",
+      "Group",
+      "Gender",
+      "Baseline",
+      "Shock 1",
+      "Shock 2",
+      "Shock 3",
+      "AverageShock",
+      "SI",
+      "idx_stable_pref",
+      "Significant Switcher",
+      "Food1",
+      "Food2",
+      "Food3",
+      "FoodIIndex",
+      "",
+      "Log_Rwd_Poke_bsl_ShkTrials",
+      "Log_Rwd_Poke_shk1_ShkTrials",
+      "Log_Rwd_Poke_shk2_ShkTrials",
+      "Log_Rwd_Poke_shk3_ShkTrials",
+      "Log_Rwd_Poke_bsl_NoShkTrials",
+      "Log_Rwd_Poke_shk1_NoShkTrials",
+      "Log_Rwd_Poke_shk2_NoShkTrials",
+      "Log_Rwd_Poke_shk3_NoShkTrials",
+      "",
+      "Log_Rwd_Duration_bsl_ShkTrials",
+      "Log_Rwd_Duration_shk1_ShkTrials",
+      "Log_Rwd_Duration_shk2_ShkTrials",
+      "Log_Rwd_Duration_shk3_ShkTrials",
+      "Log_Rwd_Duration_bsl_NoShkTrials",
+      "Log_Rwd_Duration_shk1_NoShkTrials",
+      "Log_Rwd_Duration_shk2_NoShkTrials",
+      "Log_Rwd_Duration_shk3_NoShkTrials",
+      "",
+      "freez_pre_exp_bsl",
+      "freez_pre_exp_shk1",
+      "freez_pre_exp_shk2",
+      "freez_pre_exp_shk3",
+      "freez_pre_exp_shk4",
+      "",
+      "freez_shk",
+      "freez_shk_shk1",
+      "freez_shk_shk2",
+      "freez_shk_shk3",
+      "freez_noshk",
+      "freez_noshk_shk1",
+      "freez_noshk_shk2",
+      "freez_noshk_shk3",
+      "",
+      "wall_shk_bsl",
+      "wall_shk_shk1",
+      "wall_shk_shk2",
+      "wall_shk_shk3",
+      "wall_noshk_bsl",
+      "wall_noshk_shk1",
+      "wall_noshk_shk2",
+      "wall_noshk_shk3",
+      "",
+      "LogTrialDur_shk_bsl",
+      "LogTrialDur_shk_shk1",
+      "LogTrialDur_shk_shk2",
+      "LogTrialDur_shk_shk3",
+      "LogTrialDur_noshk_bsl",
+      "LogTrialDur_noshk_shk1",
+      "LogTrialDur_noshk_shk2",
+      "LogTrialDur_noshk_shk3"
+    ]
+  },
+  "cohort_identity": [
+    {
+      "actor_number": 1,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_1-1",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 2,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_3-1",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 3,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_1-2",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 4,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_3-2",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 5,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_1-3",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 6,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_3-3",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 7,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_1-4",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 8,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_3-4",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 9,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_1-5",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 10,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_3-5",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 11,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_1-6",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 12,
+      "trial_group": "NoHarm",
+      "sbl": "SBL049",
+      "rat_number": "Rat_3-6",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 13,
+      "trial_group": "NoHarm",
+      "sbl": "SBL053b",
+      "rat_number": "Rat_1-1",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 14,
+      "trial_group": "NoHarm",
+      "sbl": "SBL053b",
+      "rat_number": "Rat_3-1",
+      "condition": "NoHarm",
+      "group": "NoHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 15,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042e",
+      "rat_number": "Rat_1-1",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 16,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042e",
+      "rat_number": "Rat_3-1",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 17,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042e",
+      "rat_number": "Rat_1-2",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 18,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042e",
+      "rat_number": "Rat_3-2",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 19,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042e",
+      "rat_number": "Rat_1-3",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 20,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042e",
+      "rat_number": "Rat_3-3",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 21,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL048",
+      "rat_number": "Rat_1-1",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 22,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL048",
+      "rat_number": "Rat_3-1",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 23,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL048",
+      "rat_number": "Rat_1-2",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 24,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL048",
+      "rat_number": "Rat_3-2",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 25,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL048",
+      "rat_number": "Rat_1-3",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 26,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL048",
+      "rat_number": "Rat_3-3",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmMale",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 27,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_1-1",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 28,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_3-1",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 29,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_1-2",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 30,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_3-2",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 31,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_1-3",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 32,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_3-3",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 33,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_1-4",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 34,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_3-4",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 35,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_1-5",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 36,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_3-5",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 37,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_1-6",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 38,
+      "trial_group": "ContingentHarm",
+      "sbl": "SBL042d",
+      "rat_number": "Rat_3-6",
+      "condition": "ContingentHarm",
+      "group": "ContingentHarmFemale",
+      "gender_as_stored": "Female"
+    },
+    {
+      "actor_number": 39,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_1-1",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 40,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_3-1",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 41,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_1-2",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 42,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_3-2",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 43,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_1-3",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 44,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_3-3",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 45,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_1-4",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 46,
+      "trial_group": "RandomHarm",
+      "sbl": "SBL050b",
+      "rat_number": "Rat_3-4",
+      "condition": "RandomHarm",
+      "group": "RandomHarm",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 47,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_1-1",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 48,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_3-1",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 49,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_1-2",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 50,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_3-2",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 51,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_1-3",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 52,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_3-3",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 53,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_1-4",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 54,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_3-4",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 55,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_1-5",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 56,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "rat_number": "Rat_3-5",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 57,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "rat_number": "Rat_1-1",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 58,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "rat_number": "Rat_3-1",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 59,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "rat_number": "Rat_1-2",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 60,
+      "trial_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "rat_number": "Rat_3-2",
+      "condition": "Non PreExposed",
+      "group": "Non PreExposed",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 61,
+      "trial_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "rat_number": "Rat_1-1",
+      "condition": "1vs2Pellets",
+      "group": "1vs2Pellets",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 62,
+      "trial_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "rat_number": "Rat_3-1",
+      "condition": "1vs2Pellets",
+      "group": "1vs2Pellets",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 63,
+      "trial_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "rat_number": "Rat_1-2",
+      "condition": "1vs2Pellets",
+      "group": "1vs2Pellets",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 64,
+      "trial_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "rat_number": "Rat_3-2",
+      "condition": "1vs2Pellets",
+      "group": "1vs2Pellets",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 65,
+      "trial_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "rat_number": "Rat_1-3",
+      "condition": "1vs2Pellets",
+      "group": "1vs2Pellets",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 66,
+      "trial_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "rat_number": "Rat_3-3",
+      "condition": "1vs2Pellets",
+      "group": "1vs2Pellets",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 67,
+      "trial_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "rat_number": "Rat_1-4",
+      "condition": "1vs2Pellets",
+      "group": "1vs2Pellets",
+      "gender_as_stored": "Male"
+    },
+    {
+      "actor_number": 68,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_1-1",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 69,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_3-1",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 70,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_1-2",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 71,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_3-2",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 72,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_1-3",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 73,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_3-3",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 74,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_1-4",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 75,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_3-4",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 76,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_1-5",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 77,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_3-5",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    },
+    {
+      "actor_number": 78,
+      "trial_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "rat_number": "Rat_1-1",
+      "condition": "1vs3Pellets",
+      "group": "1vs3Pellets",
+      "gender_as_stored": "Male "
+    }
+  ],
+  "workbook": {
+    "sheets": [
+      {
+        "name": "data",
+        "rows": 144,
+        "columns": 69
+      },
+      {
+        "name": "Choice",
+        "rows": 81,
+        "columns": 88
+      }
+    ],
+    "choice_cached_cell_comparison": {
+      "compared_cells": 7128,
+      "mismatches": [],
+      "method": "CSV text compared to unchanged workbook cached Choice cell values; None mapped to empty string, integral numeric values to integer text."
+    },
+    "raw_csv_to_summary_identity_join_complete": true
+  },
+  "missing_metadata": [
+    "explicit cage ID dictionary",
+    "definition of SBL#",
+    "physical shock-lever side/force per actor",
+    "condition randomization schedule",
+    "raw acquisition timestamps",
+    "trial-level forced choices",
+    "independent recipient-understanding assay",
+    "recipient experience measures in choice CSV"
+  ],
+  "discovery_exposure": "Primary published findings were read before selection. Schema inspection printed the first three NoHarm data/Choice rows (IDs1,2,3) before protocol freeze. No choice aggregate was computed. Licence first failed UTF-8 decoding; retained bytes and read CP1252 instead.",
+  "created_utc": "2026-10-05T23:54:03.532755+00:00"
+}

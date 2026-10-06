@@ -1,0 +1,767 @@
+{
+  "status": "passed",
+  "scope": "Supplemental producer checks on exact preserved first outputs; independent oracle remains separate.",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_producer.py": "0c1a55ec950dcd9329fa8d9f3524c0a6d7d3103cbfed3eaabea7a8df3cd62990",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/results.json.gz": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/result-files.json": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/first-run-receipt.json": "b05c8dbfd412ae76658beac9dd82e1772a49331e4ef5166ded127336961a2ab0"
+  },
+  "counts": {
+    "conventional_paths": 1102,
+    "matched_training_paths": 1102,
+    "faithful_three_word_paths": 144,
+    "no_fourth_native": 474,
+    "no_reused_assessment": 456,
+    "no_second_replacement": 438,
+    "funded_reuse_obstructions": 372
+  },
+  "strict_reached_witnesses": [
+    {
+      "parent_ref": "primary/variable/4/37",
+      "command": 1,
+      "retained": 66,
+      "recipient": 60,
+      "n": 7,
+      "new_spent": 33
+    },
+    {
+      "parent_ref": "primary/variable/11/37",
+      "command": 0,
+      "retained": 66,
+      "recipient": 60,
+      "n": 7,
+      "new_spent": 33
+    }
+  ],
+  "support_by_case_and_producer": {
+    "adapter_missing": {
+      "variable": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "cell_missing": {
+      "variable": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "cheap_suppression": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "false_fresh_channel": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "fixed_coefficient": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "inherited_scope_interruption": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "initial_port_missing": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "late_efficacy_change": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "later_short": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "meter_inverted": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "meter_missing_middle": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "permission_loss": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "scope_loss_after_read": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "scope_loss_after_rent": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_000": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_001": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_010": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_011": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_100": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_101": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_110": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "signals_111": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "spare_pair_unavailable": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "training_short": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "transfer_absent": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "transfer_inverted": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "trial_surcharge1": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "unknown_fresh_fact": {
+      "variable": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 6,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 6,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [],
+        "completed_native_without_supported_command": 6,
+        "completed_native_command_disagreements": 0
+      }
+    },
+    "update_disabled": {
+      "variable": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "conventional": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      },
+      "fixed_normal": {
+        "reached_supported_commands": [
+          0,
+          1
+        ],
+        "completed_native_without_supported_command": 0,
+        "completed_native_command_disagreements": 0
+      }
+    }
+  }
+}

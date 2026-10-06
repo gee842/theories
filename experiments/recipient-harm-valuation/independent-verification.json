@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "time_utc": "2026-10-06T00:00:50.988538+00:00",
+  "checker_sha256": "9f1a821edc3ca5918c2fe416e10356ecbf360b9cc841a8a6a702b6d110ac168b",
+  "producer_results_sha256": "55efc4831c90d2d99263ecb36573cc0ded9e20dface3b8c79937f20e01a969f2",
+  "independent_reconstruction_sha256": "2be3aa0196c0fc7f226b2706302c65a223e9f985ad0a37ef6f842bc2fd3f3cb6",
+  "independent_detail_sha256": "f805e271c1ee51800ab64bd4b9f38f6bab6f7da3fe01b09cbad7ceb701209779",
+  "protocol_sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd",
+  "clarification_sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d",
+  "comparison_count": 21581,
+  "actors": 78,
+  "raw_trial_slots": 6240,
+  "groups": 7,
+  "contrasts": 6,
+  "leave_one_actor": 26,
+  "leave_one_sbl_label": 4,
+  "hypothetical_completions": 3,
+  "source_audit_comparisons": 780,
+  "source_audit_flags": 39,
+  "source_audit_flag_kinds": {
+    "missing_total_nonperformance_fields": 32,
+    "undefined_session_aggregation": 1,
+    "percentage_denominator_difference": 6
+  },
+  "fault_checks": [
+    {
+      "name": "omitted_actor",
+      "rejected": true,
+      "at": "('results.actors', 'list length')"
+    },
+    {
+      "name": "inverted_source_lever_code",
+      "rejected": true,
+      "at": "('results.actors[0].codes[0]', 1, 2)"
+    },
+    {
+      "name": "wrong_baseline",
+      "rejected": true,
+      "at": "('results.actors[0].phases.baseline.preferred_offered', '1/2', '19/20')"
+    },
+    {
+      "name": "wrong_group_denominator",
+      "rejected": true,
+      "at": "('results.groups.contingent_harm_male.n', 24, 12)"
+    },
+    {
+      "name": "unknown_replaced_by_nonresponse",
+      "rejected": true,
+      "at": "('results.actors[69].codes[70]', 0, None)"
+    },
+    {
+      "name": "zero_response_as_harmless_choice",
+      "rejected": true,
+      "at": "('results.actors[36].phases.shock3.alternative', 20, 0)"
+    },
+    {
+      "name": "pseudoreplicated_animal_count",
+      "rejected": true,
+      "at": "('results.groups.contingent_harm_male.means.shock_all.preferred_offered.known', 720, 12)"
+    },
+    {
+      "name": "pooled_sexes_primary",
+      "rejected": true,
+      "at": "('results.contrasts.primary_harm_minus_no_harm.left_actors', 'list length')"
+    },
+    {
+      "name": "wrong_contrast_sign",
+      "rejected": true,
+      "at": "('results.contrasts.primary_harm_minus_no_harm.change_differences.shock_all.preferred_offered', '841/5040', '-841/5040')"
+    },
+    {
+      "name": "missing_influence_case",
+      "rejected": true,
+      "at": "('results.primary_leave_one_sbl_label_out', 'key mismatch', {'SBL048', 'SBL053b', 'SBL042e'}, {'SBL049', 'SBL053b', 'SBL048', 'SBL042e'})"
+    },
+    {
+      "name": "hidden_source_percentage_mismatch",
+      "rejected": true,
+      "at": "('results.source_summary_audit.discrepancies', 'list length')"
+    },
+    {
+      "name": "wrong_source_digest",
+      "rejected": true,
+      "at": "('results.protocol_sha256', '0000000000000000000000000000000000000000000000000000000000000000', '0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd')"
+    }
+  ],
+  "producer_imported": false,
+  "scope": "Independent original-CSV reconstruction; descriptive archived-cohort statistics only. Does not establish random assignment, cage independence, latent motives, or normative validity."
+}

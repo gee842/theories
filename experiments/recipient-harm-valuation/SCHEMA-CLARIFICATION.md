@@ -1,0 +1,11 @@
+# One unreleased choice value and the available cohort
+
+6 October 2026. Appended after the initial protocol freeze and before any new local outcome aggregate. This clarifies source coverage; it does not change primary selection or choose a result-dependent estimator.
+
+The source audit identifies one genuinely empty trial cell: actor 70, in the secondary 1-vs-3-pellet group, harm-phase session 3, trial 11. It is **unknown**, distinct from explicit code 0 (observed nonperformance). The initial protocol's three-category accounting applies to complete rows. For all-source reporting, add a fourth unknown category so offered frequencies still sum to one. Retain the blank's location and the 20 offered slots; never replace it with a harmless choice or a nonperformed trial.
+
+Conditional preferred/completed fractions use only the recorded 1/2 responses and carry the unknown count. They do not identify what the absent entry would have been. The secondary pellet comparison is therefore a descriptive known-record frequency with a disclosed missing choice. Give an additional extreme-completion sensitivity for that single blank coded, separately, as 0, 1 or 2; this is hypothetical completion of one source record, not a corrected raw file or a recovered observation. The primary male contingent-harm/no-harm comparison and prior-experience comparison have no such blank.
+
+The summary CSV contains 142 actor records, while the trial CSV contains 78. The workbook's `Choice` sheet matches the released trial CSV, including its empty cell. The publication's 314 ordered rats include victims and additional experimental conditions; neither released file supplies a complete assignment/exclusion ledger for every ordered rat. Our primary cohort means all 26 **released trial-file actors in the two specified male groups**, not every rat ordered or every unobserved trained/assigned actor. Preserve the trial-to-summary join and summarize the other released groups without claiming their raw choices are present.
+
+The original protocol and first freeze retain their identities. The combined freeze binds this clarification, so the unknown rule is fixed before computation. Any summary-percentage or supplied nonperformance-count mismatch involving this cell must be reported, not silently reconciled.

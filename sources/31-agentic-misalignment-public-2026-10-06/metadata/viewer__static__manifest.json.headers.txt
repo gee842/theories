@@ -1,0 +1,26 @@
+HTTP/2 200 
+date: Tue, 06 Oct 2026 00:21:04 GMT
+content-type: application/json; charset=utf-8
+server: cloudflare
+last-modified: Fri, 12 Jun 2026 17:49:20 GMT
+access-control-allow-origin: *
+etag: W/"6a2c46a0-6dac6"
+expires: Tue, 06 Oct 2026 00:29:12 GMT
+cache-control: max-age=600
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-proxy-cache: MISS
+x-github-request-id: 421A:54914:2561C7:26BF62:6AC43E80
+x-github-edge-region: southeastasia
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Me%2BZ8Cw1kvEhgfdEmLsAZvcnm5VVKcXzb53qqMnL1m8RAMbN1hqKe%2FkD7swL3YRYhGbLswDDQ7PSECm557rbpaneHIRPT6BAk8UIZruAjWTtok%2Bl%2Buk3HUy3cw5dKr%2FfVBgMGibl"}]}
+age: 0
+via: 1.1 varnish
+x-served-by: cache-bkk2280027-BKK
+x-cache: HIT
+x-cache-hits: 0
+x-timer: S1791246064.831130,VS0,VE282
+vary: Accept-Encoding
+x-fastly-request-id: f249620a1a1c718a1a4a00cf4c135c3a043b4ff3
+cf-cache-status: DYNAMIC
+cf-ray: a46080fadfe9aad7-BKK
+alt-svc: h3=":443"; ma=86400
+

@@ -641,3 +641,97 @@ The current [recipient-reason revision construction](../../../../theories/shengs
 **Acceptance test and root consequence.** Preserve matched endpoint histories with different prior grants, legitimate delegation, later endorsement and withdrawal. Require the choice mechanism to retain the distinctions its defended authority rule actually needs, while allowing warranted changes of patient judgment. Measure relief separately from agreement and report suppression. No actor reward for consent is inserted. If the proposed foundation claims justified intervention, it must explain this formation-sensitive interface or defend a different authority account; successful outcome feedback alone cannot close it. No experiment, code or formal compilation is added.
 
 **Bounded review, 6 October 2026:** independent argument review passed T13–T14; its permission/duty and third-party-cost precisions were incorporated. This author reviewed [self-ground audit §16](HUIGEN-SELF-GROUND-AUDIT.md#16-concern-authorship-and-the-authority-to-intervene), [source discussion §13](HUIGEN-SELF-GROUND-SOURCES.md#13-benefit-authorship-and-permission), and the canonical lead, new authority subsection and §8. No blocker remains. All distinguish scoped permission from complete justification, retain revisable judgment and delegation, and avoid identifying operational tokens with patient consent. This is conceptual/interface review, without new primary-source inspection, empirical validation or formal reruns. No canonical or index file was edited.
+
+## 16. Reliable action under partial evidence
+
+6 October 2026. The named connection is **acquired partial evidence → justified application → a reliably appropriate response**. The [accepted application contract](EVALUATIVE-APPLICATION-MATH.md) already separates robust non-domination from a common license; T13 gives the exact deterministic information condition. The [inquiry study, I1–I3](SCIENTIFIC-INQUIRY-CONDITIONS.md) already handles adaptive transcripts, noisy discrimination, total variation and zero-error certificates. The following is a quantitative application of those established methods to set-valued action requirements, not a new statistical principle, completed normative theory or additional gate for a witness with settled premises.
+
+### State the criterion before optimizing its satisfaction
+
+Fix finite nonempty sets of models \(M\), complete accessible transcripts \(H\) and action alternatives \(A\). One actual common acquisition protocol yields transcript distributions \(P_m\). Initialization, hidden-world-dependent information, costs and available actions must be included in the stated interface. For each \(m\), independently specify \(L_m\subseteq A\), the actions meeting a declared requirement. A common decision kernel is \(\delta(a\mid h)\). Define the requirement-failure probability
+
+\[
+e_m=\sum_hP_m(h)\delta(A\setminus L_m\mid h).
+\tag{T15a}
+\]
+
+The type of the requirement matters. Satisfying a condition under the actual facts, being permissible given the actor's justified evidence, and being an authorized decision procedure are different assessments. The symbol \(L_m\) does not make an action morally licensed. A permissible risky choice can miss a fact-relative target; a low failure frequency does not establish permission to take the risk or measure its severity. If permission depends on a lottery, deliberation procedure or prior history, those must be represented in the decision object or assessed separately. One cannot optimize a fixed matrix while silently changing what its entries mean with the chosen kernel. The fixed-\(L_m\) results below apply only when that specification is appropriate.
+
+A real-world guarantee additionally requires the actual observation law and relevant action-requirement interpretation to be covered by \(M\). This is an independently justified application premise. An excluded model may produce familiar transcripts, so nonempty \(M(h)\) does not certify that the model class is adequate. Off-model detection below catches some failures, not every hidden misspecification.
+
+### T15. Exact zero-error action need not identify the model
+
+Let \(M(h)=\{m:P_m(h)>0\}\). Then \(e_m=0\) for every model if and only if, at every reachable transcript,
+
+\[
+\operatorname{supp}\delta(\cdot\mid h)
+\subseteq\bigcap_{m\in M(h)}L_m.
+\tag{T15b}
+\]
+
+**Proof.** Every term contributing to \(e_m\) is nonnegative. Zero total error therefore requires every action with positive conditional probability at a positive-probability transcript to meet that model's requirement. Requiring this for every compatible model gives the intersection. The same condition makes every error term zero, proving sufficiency. ∎
+
+For unrestricted decision kernels, a zero-error rule exists exactly when each reachable intersection is nonempty. Choosing and implementing its members may still require unavailable information or resources. If the retained model set gives an actually observed transcript zero probability everywhere, the account has encountered model mismatch; its empty compatibility set does not authorize arbitrary action by vacuity. If some individual \(L_m\) is empty, there is a feasibility or requirement problem even with perfect knowledge of \(m\).
+
+Model identification can be unnecessary. With identical transcript laws and \(L_0=\{a,b\}\), \(L_1=\{b,c\}\), the constant choice \(b\) meets both requirements. The inquirer need not resolve which model holds. Conversely, pairwise overlaps do not guarantee a common action for a larger family.
+
+### T16. An exact benchmark when evidence cannot distinguish the models
+
+Suppose \(P_m=P\) for every \(m\). Any common kernel induces one action distribution \(p(a)=\sum_hP(h)\delta(a\mid h)\). Thus, when arbitrary constant mixtures are available,
+
+\[
+\min_\delta\max_m e_m
+=1-\max_{p\in\Delta(A)}\min_m p(L_m).
+\tag{T16}
+\]
+
+**Proof.** The success probability in model \(m\) is \(p(L_m)\). Conversely, every distribution \(p\) can be represented by the constant kernel \(\delta(a\mid h)=p(a)\). Optimization over the finite-dimensional simplex attains the displayed value. ∎
+
+This is a declared worst-case compliance benchmark. If actual policies cannot implement all mixtures, its value is only a lower bound on their achievable worst-case failure. It is not a theorem that minimizing this frequency is the right ethical decision principle.
+
+For an exact three-action example, let \(L_1=\{a,b\}\), \(L_2=\{b,c\}\), and \(L_3=\{a,c\}\). Each pair intersects, but the joint intersection is empty. For any mixture the three success probabilities sum to two, so their minimum cannot exceed \(2/3\). Uniform mixing attains \(2/3\) in each model, giving unavoidable worst-case failure \(1/3\). Every fixed pure action fails completely in one model; a deterministic rule applied to a random but uninformative transcript can itself produce a mixture. Randomization improves this specified guarantee without adding information, but cannot make it perfect or certify the lottery's moral permissibility.
+
+### T17. Disjoint requirements impose an information bound
+
+For two models with \(L_0\cap L_1=\varnothing\),
+
+\[
+e_0+e_1\ge1-\operatorname{TV}(P_0,P_1),
+\qquad
+\max(e_0,e_1)\ge\frac{1-\operatorname{TV}(P_0,P_1)}2.
+\tag{T17}
+\]
+
+**Proof.** Put \(r_i(h)=\delta(L_i\mid h)\). Disjointness gives \(r_0+r_1\le1\). Hence the sum of success probabilities is at most
+\(\sum_h[P_0(h)r_0(h)+P_1(h)(1-r_0(h))]\), which is at most \(1+\operatorname{TV}(P_0,P_1)\). Rearranging gives the first inequality; the larger error is at least their average. ∎
+
+When both sets are nonempty and all relevant kernels are implementable, choosing a representative action from the more likely model's set attains the equal-prior average bound. It need not attain that value for the worst-model criterion. A shared acceptable action removes this particular disjointness obstruction. The theorem demands relevant distinction only where the requested responses cannot be jointly satisfied.
+
+### T18. Abstention changes coverage, not the meaning of justification
+
+To report erroneous commitments separately, add a symbol \(\bot\) that makes no commitment in this statistic. Let \(k(h)=\sum_{a\in A}\delta(a\mid h)\), \(c_i=\sum_hP_i(h)k(h)\), and \(u_i=\sum_hP_i(h)\delta(A\setminus L_i\mid h)\). For disjoint requirements, set \(c=(c_0+c_1)/2\). Then
+
+\[
+u_0+u_1\ge c-\frac12\sum_hk(h)|P_0(h)-P_1(h)|
+\ge c-\operatorname{TV}(P_0,P_1).
+\tag{T18a}
+\]
+
+**Proof.** At each transcript, \(r_0+r_1\le k\). The sum of erroneous-commitment contributions is therefore at least \(k\min(P_0,P_1)\). Sum and use \(\min(p,q)=(p+q-|p-q|)/2\). The second inequality uses \(0\le k\le1\). ∎
+
+For \(c>0\), the equal-prior conditional error among commitments is consequently at least
+
+\[
+\max\left\{0,\frac{c-\operatorname{TV}(P_0,P_1)}{2c}\right\}.
+\tag{T18b}
+\]
+
+Report \(c_0,c_1\) as well as their mean; conditional error is undefined at zero coverage. The first bound is attainable for a fixed \(k\) with nonempty requirement sets and implementable kernels by choosing the more likely model's representative when committing. The coarser TV bound need not be tight. For example, \(P_0=(3/4,1/4)\), \(P_1=(1/4,3/4)\) have best equal-prior conditional error \(1/4\) at every positive coverage, although the coarser lower bound is zero when \(c\le1/2\). A zero lower bound is not a construction of error-free action.
+
+With identical laws for all models, coverage is common. At fixed \(c>0\), normalizing the committed action probabilities shows that unrestricted minimax erroneous-commitment probability is \(c\) times T16's value, while conditional worst-model error retains that value. Merely committing less often cannot resolve an indistinguishable conflict. The statistic's exemption for \(\bot\) is not moral permission to abstain: waiting can cause harm or violate an assistance duty. When that consequence is assessed, waiting belongs among the substantive actions or policy effects.
+
+### What this requires of the whole foundation
+
+A claimed response guarantee needs sufficient information **or** sufficient overlap among acceptable responses, plus an actual means of acting. It need not require identifying every hidden fact. New evidence can help only when it separates relevant possibilities; purely normative disagreement is not automatically settled by additional sensor readings. Acquiring information may also consume resources, miss a deadline or alter authority, so its effect on the complete decision problem must be reassessed rather than inferred from informativeness alone.
+
+The [accepted application account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md) remains closed at its conditional scope. These results neither demand new randomization machinery for its settled witness nor convert a retained self-loss coefficient into a moral risk allowance. The next judgment must say what its requirement measures, what grounds it, which interpretations it covers and which causal capacities the learner actually possesses. The [reason-guided-action comparison](HUIGEN-SELF-GROUND-SOURCES.md#14-reason-guided-action-and-uncertain-outcomes) separates those obligations from the stronger attribution of acting for a justified reason. No empirical measurement, code experiment or formal compilation is added here.

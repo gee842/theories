@@ -1,0 +1,11 @@
+'StochasticPrediction.old_command_agrees' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.old_update_agrees' does not depend on any axioms
+'StochasticPrediction.installed_preparation_identity' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.payable_cycle_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StochasticPrediction.payable_receipt_overlap' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.payable_cycle_packet_debit' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.old_cycle_marked_account' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.payable_total_account_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StochasticPrediction.payable_spent_and_waste_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StochasticPrediction.unpaid_write_is_not_old_completed_cycle' does not depend on any axioms
+'StochasticPrediction.no_work_is_not_old_source_boundary' does not depend on any axioms

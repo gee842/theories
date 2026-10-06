@@ -1,0 +1,9 @@
+{
+  "status": "clarification_frozen_before_first_aggregate",
+  "time_utc": "2026-10-05T23:55:14.422692+00:00",
+  "files": {
+    "PROTOCOL.md": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd",
+    "protocol-freeze.json": "531739cd1362fe805411820eb8687636a3c150046f7a9f8be6447378b1ba5f39",
+    "SCHEMA-CLARIFICATION.md": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "computed",
+  "code_sha256": "3e8be041aaab7ce7bb25966edfe97177f0def2ca9a4fb9f4c3da2a3965822c6f",
+  "results_sha256": "55efc4831c90d2d99263ecb36573cc0ded9e20dface3b8c79937f20e01a969f2",
+  "protocol_sha256": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd",
+  "clarification_sha256": "3ca3fe1968ffaddce59eac44de80cba435e0dc6fa6d79bfb5be743df043f619d",
+  "actors": 78,
+  "primary_actors": 26,
+  "trial_slots": 6240,
+  "source_discrepancies": 39
+}

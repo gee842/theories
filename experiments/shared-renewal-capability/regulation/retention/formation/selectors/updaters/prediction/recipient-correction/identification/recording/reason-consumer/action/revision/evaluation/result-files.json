@@ -1,0 +1,9 @@
+{
+  "file": "results.json.gz",
+  "format": "gzip-compressed JSON; exact lossless parent catalog + live-state overlays",
+  "compressed_sha256": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+  "compressed_bytes": 1612592,
+  "uncompressed_sha256": "93a32ce9c7aef6fd576eccac2d58cfca20fcc510b0831a9c6805ab2e249d7831",
+  "uncompressed_bytes": 70478250,
+  "semantic_cases_sha256": "7595060cbdb55f196c218454b3d17171538340667b8cb58f4f98b0172def78d8"
+}

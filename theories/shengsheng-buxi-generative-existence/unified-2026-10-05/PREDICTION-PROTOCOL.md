@@ -1,5 +1,7 @@
 # The formed predictor implements a paid learning operation
 
+**Subsequent complete-exposure bridge, 6 October 2026:** [stochastic predictor composition](STOCHASTIC-PREDICTION-COMPOSITION.md) now includes the callable program's failed rent, no-work packet loss, optional writing and actual later continuation. It proves the exact installed payable overlap with this older law, while preserving their different behavior outside it. The completed deterministic trial theorem below retains its original scope.
+
 6 October 2026. AI-assisted development under the [generative-grounding goal](GENERATIVE-GROUNDING.md). The named connection is **the actual predictor's physical events → an acquired prediction and its next command**, preserving the memory, source and costs of the same continuing system.
 
 ## A concrete connection between the parallel studies

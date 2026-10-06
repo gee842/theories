@@ -1,0 +1,201 @@
+{
+  "title": "Hernandez-Lallement et al. 2020 recipient-harm valuation source preservation",
+  "created_utc": "2026-10-05T23:56:33.759418+00:00",
+  "doi": "10.1016/j.cub.2020.01.017",
+  "osf_node": "65j3g",
+  "project_url": "https://osf.io/65j3g/",
+  "preservation_scope": "All four OSF root files plus institutional primary paper and API metadata. FigureS1/FigureS2 subfolders not preserved. No scientific outcome aggregate.",
+  "original_osf_files": [
+    {
+      "path": "original/dataMainPaper.xlsx",
+      "osf_id": "5df090bce82e200009068115",
+      "guid": "q6m2a",
+      "osf_version": 1,
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef",
+      "bytes": 64550,
+      "source_created": "2019-12-11T06:46:20.515922Z",
+      "source_modified": "2019-12-11T06:46:20.515922",
+      "download_url": "https://osf.io/download/q6m2a/",
+      "metadata_path": "metadata/file-5df090bce82e200009068115.json",
+      "license": "CC-BY-NC-SA-4.0",
+      "upstream_hash_match": true
+    },
+    {
+      "path": "original/TrialByTrialChoicesMainPaper.csv",
+      "osf_id": "5df09136078b52000c59db63",
+      "guid": "q4hvf",
+      "osf_version": 1,
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44",
+      "bytes": 16683,
+      "source_created": "2019-12-11T06:48:22.458015Z",
+      "source_modified": "2019-12-11T06:48:22.458015",
+      "download_url": "https://osf.io/download/q4hvf/",
+      "metadata_path": "metadata/file-5df09136078b52000c59db63.json",
+      "license": "CC-BY-NC-SA-4.0",
+      "upstream_hash_match": true
+    },
+    {
+      "path": "original/dataMainPaper.csv",
+      "osf_id": "5df09136e82e20000906816a",
+      "guid": "7sxdg",
+      "osf_version": 1,
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df",
+      "bytes": 28171,
+      "source_created": "2019-12-11T06:48:22.319037Z",
+      "source_modified": "2019-12-11T06:48:22.319037",
+      "download_url": "https://osf.io/download/7sxdg/",
+      "metadata_path": "metadata/file-5df09136e82e20000906816a.json",
+      "license": "CC-BY-NC-SA-4.0",
+      "upstream_hash_match": true
+    },
+    {
+      "path": "original/license.txt",
+      "osf_id": "5e96c067f13535049fd54766",
+      "guid": "4gt9c",
+      "osf_version": 1,
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8",
+      "bytes": 21282,
+      "source_created": "2020-04-15T08:05:59.458508Z",
+      "source_modified": "2020-04-15T08:05:59.458508",
+      "download_url": "https://osf.io/download/4gt9c/",
+      "metadata_path": "metadata/file-5e96c067f13535049fd54766.json",
+      "license": "CC-BY-NC-SA-4.0",
+      "upstream_hash_match": true
+    }
+  ],
+  "article": {
+    "path": "original/hernandez2020.pdf",
+    "url": "https://pure.knaw.nl/ws/portalfiles/portal/13278204/hernandez2020.pdf",
+    "license": "CC-BY-4.0",
+    "version_note": "Institutional cover identifies Version of Record; embedded article retains in-press pagination."
+  },
+  "read_only_validation": {
+    "osf_original_hashes_match": true,
+    "trial_workbook_cached_cells_compared": 7128,
+    "trial_workbook_cached_cell_mismatches": 0,
+    "trial_identity_join_count": 78,
+    "summary_identity_count": 142
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4967,
+      "sha256": "83bd890f64c07fcf95b6c4dea39e25ada9867dc1bf24738d4f6415e50f3e7349",
+      "kind": "authored_documentation"
+    },
+    {
+      "path": "metadata/file-5df090bce82e200009068115.json",
+      "bytes": 2166,
+      "sha256": "5d940c3ed655d16162b5da0579e089a1968eb78e642d0bc74a3c20030aed82b3",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/file-5df09136078b52000c59db63.json",
+      "bytes": 2194,
+      "sha256": "e6ddeb6771e2cc6e4db80188d8a824456b4474aef87f90e5b6686fc47dd0b746",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/file-5df09136e82e20000906816a.json",
+      "bytes": 2164,
+      "sha256": "69d2570aeed1cef5c0b93f00728687776047b088f3127bab8618d36d075cf687",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/file-5e96c067f13535049fd54766.json",
+      "bytes": 2152,
+      "sha256": "28ce4322152cd8d6a7565eb6fae89be23d40d3d634c43c53cf37423a92a303b0",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/files.json",
+      "bytes": 12087,
+      "sha256": "b7d61b91300213761f6f174451c184aba955a566fcd53a3136b6daac87ca3d0b",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/license.json",
+      "bytes": 304,
+      "sha256": "da0a1badc22f4953181c2df202bd2df8baffa818c608f1f22c30f9441156c9b7",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/node.json",
+      "bytes": 4455,
+      "sha256": "e57c1e70388ac4946683def8eff0fcdfae154f42e548e6ec5d98fbe85b1804f0",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/retrieval.json",
+      "bytes": 21420,
+      "sha256": "6450663415a34bb08042d8191889a8581e59bfdf5029a10a386b30642d7f16e5",
+      "kind": "retrieval_log"
+    },
+    {
+      "path": "metadata/versions-5df090bce82e200009068115.json",
+      "bytes": 654,
+      "sha256": "d3fb9aeffc1176b021f1769cea0529c12a181e3c22c95365074bb7b5e1619c10",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/versions-5df09136078b52000c59db63.json",
+      "bytes": 668,
+      "sha256": "10b6bf52fa3353e2ef8b93fadaa616f458dd2ac43873372e04f65ec3cc6cb86d",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/versions-5df09136e82e20000906816a.json",
+      "bytes": 653,
+      "sha256": "790bfdbfa5b475be4ad061075ef5ea1dc309853b9c0bc246bfa085926c10ef2a",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "metadata/versions-5e96c067f13535049fd54766.json",
+      "bytes": 647,
+      "sha256": "530e158bd1a4f5283b033abbc1e6e1ec302e00f76580dd1d72a495376491c04d",
+      "kind": "raw_api_metadata"
+    },
+    {
+      "path": "original/TrialByTrialChoicesMainPaper.csv",
+      "bytes": 16683,
+      "sha256": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44",
+      "kind": "unaltered_download"
+    },
+    {
+      "path": "original/dataMainPaper.csv",
+      "bytes": 28171,
+      "sha256": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df",
+      "kind": "unaltered_download"
+    },
+    {
+      "path": "original/dataMainPaper.xlsx",
+      "bytes": 64550,
+      "sha256": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef",
+      "kind": "unaltered_download"
+    },
+    {
+      "path": "original/hernandez2020.pdf",
+      "bytes": 4060957,
+      "sha256": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17",
+      "kind": "unaltered_download"
+    },
+    {
+      "path": "original/license.txt",
+      "bytes": 21282,
+      "sha256": "b9e86bf048a1131a90d5e9b504f7a6b5e4385b07b9dbea5dde71bb8e587ab1a8",
+      "kind": "unaltered_download"
+    },
+    {
+      "path": "reading/hernandez2020.txt",
+      "bytes": 111670,
+      "sha256": "2bb4b88b605f6fbe94a244666222de9db5097b2856e2e25df2e697dd22086bb2",
+      "kind": "derived_text"
+    },
+    {
+      "path": "schema.json",
+      "bytes": 22569,
+      "sha256": "ae346e1e771c92022ac868c7a94e1832d0135534e2a05b9df2d6138cc71a2ab7",
+      "kind": "authored_documentation"
+    }
+  ]
+}

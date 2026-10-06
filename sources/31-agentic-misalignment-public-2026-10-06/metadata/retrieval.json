@@ -1,0 +1,83 @@
+{
+  "method": "curl -f -sS -L with Mozilla/5.0 User-Agent; no client JavaScript execution",
+  "prior_access_failure": "Initial Python urllib request to viewer entry returned HTTP 403; curl with browser User-Agent returned HTTP 200. Web extraction returned no text because entry is a JavaScript shell.",
+  "files": [
+    {
+      "path": "original/summer-2026.html",
+      "url": "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
+      "effective_url": "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-06T00:21:02.971988+00:00",
+      "bytes": 119073,
+      "sha256": "9d08e4a578585468f56eb07ea1a2de68397670875cf47705e71c70d58cc95312",
+      "role": "primary article HTML",
+      "headers": "metadata/summer-2026.html.headers.txt"
+    },
+    {
+      "path": "original/teaching-claude-why.html",
+      "url": "https://alignment.anthropic.com/2026/teaching-claude-why/",
+      "effective_url": "https://alignment.anthropic.com/2026/teaching-claude-why/",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-06T00:21:03.060827+00:00",
+      "bytes": 104226,
+      "sha256": "6cf2a89751ecf54854a0cbb9c6c5fa457fc2cdaaa0002bf171dabfcc5663a0b0",
+      "role": "primary article HTML",
+      "headers": "metadata/teaching-claude-why.html.headers.txt"
+    },
+    {
+      "path": "original/viewer/index.html",
+      "url": "https://www.aenguslynch.com/portfolio-transcript-viewer/",
+      "effective_url": "https://www.aenguslynch.com/portfolio-transcript-viewer/",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-06T00:21:03.410547+00:00",
+      "bytes": 468,
+      "sha256": "3870df79c20c2e3bbf781e8c890878d6edf4e9208acb82d85264650375d32bb7",
+      "role": "public viewer entry HTML",
+      "headers": "metadata/viewer__index.html.headers.txt"
+    },
+    {
+      "path": "original/viewer/assets/index-Ivi1Vlum.js",
+      "url": "https://www.aenguslynch.com/portfolio-transcript-viewer/assets/index-Ivi1Vlum.js",
+      "effective_url": "https://www.aenguslynch.com/portfolio-transcript-viewer/assets/index-Ivi1Vlum.js",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-06T00:21:03.758457+00:00",
+      "bytes": 8520,
+      "sha256": "fef426f7c933c9ef989c9c7ef9051b95419ac78425bc4fe00ebf9a3ab6a0b656",
+      "role": "public viewer client JavaScript, preserved only, not executed",
+      "headers": "metadata/viewer__assets__index-Ivi1Vlum.js.headers.txt"
+    },
+    {
+      "path": "original/viewer/static/manifest.json",
+      "url": "https://www.aenguslynch.com/portfolio-transcript-viewer/static/manifest.json",
+      "effective_url": "https://www.aenguslynch.com/portfolio-transcript-viewer/static/manifest.json",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-06T00:21:04.130591+00:00",
+      "bytes": 449222,
+      "sha256": "499d3bd0f7bd934d736e33a278cb7802c347f3843583df5e3527e466243a032d",
+      "role": "complete publicly served viewer manifest",
+      "headers": "metadata/viewer__static__manifest.json.headers.txt"
+    },
+    {
+      "path": "original/viewer/static/transcripts/motivated-mislabelling/mislabel-input-welfare-sonnet46-993324.json",
+      "url": "https://www.aenguslynch.com/portfolio-transcript-viewer/static/transcripts/motivated-mislabelling/mislabel-input-welfare-sonnet46-993324.json",
+      "effective_url": "https://www.aenguslynch.com/portfolio-transcript-viewer/static/transcripts/motivated-mislabelling/mislabel-input-welfare-sonnet46-993324.json",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-06T00:21:04.495420+00:00",
+      "bytes": 34817,
+      "sha256": "5058338af47f0e16c92cbba522055a77e3808da3709e6b4ea8d4fa0d392229e8",
+      "role": "first manifest-listed one-turn judge input schema exemplar",
+      "headers": "metadata/viewer__static__transcripts__motivated-mislabelling__mislabel-input-welfare-sonnet46-993324.json.headers.txt"
+    },
+    {
+      "path": "original/viewer/static/transcripts/motivated-mislabelling/motivated-mislabelling-opus-4-6-auditor-run4-d15f4b.json",
+      "url": "https://www.aenguslynch.com/portfolio-transcript-viewer/static/transcripts/motivated-mislabelling/motivated-mislabelling-opus-4-6-auditor-run4-d15f4b.json",
+      "effective_url": "https://www.aenguslynch.com/portfolio-transcript-viewer/static/transcripts/motivated-mislabelling/motivated-mislabelling-opus-4-6-auditor-run4-d15f4b.json",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-06T00:21:04.846053+00:00",
+      "bytes": 116304,
+      "sha256": "7f8bd608da22bb5e611922170126faaf089c9628ea8d1be58c24d481e1c61d33",
+      "role": "first manifest-listed selected multi-turn case schema exemplar",
+      "headers": "metadata/viewer__static__transcripts__motivated-mislabelling__motivated-mislabelling-opus-4-6-auditor-run4-d15f4b.json.headers.txt"
+    }
+  ]
+}

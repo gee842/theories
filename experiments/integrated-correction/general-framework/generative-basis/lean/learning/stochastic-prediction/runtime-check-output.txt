@@ -1,0 +1,1 @@
+{"checked_prefix_states":608316,"compiled_distinct_tapes":38412,"guard_calls":9600,"positive_weight_tapes":89844,"reachable_invocations":7702,"status":"passed","unique_calls":15985}

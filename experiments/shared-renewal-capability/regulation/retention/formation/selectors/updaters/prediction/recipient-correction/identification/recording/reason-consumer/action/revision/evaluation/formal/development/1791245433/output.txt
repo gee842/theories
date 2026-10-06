@@ -1,0 +1,71 @@
+AcquiredEvaluation.lean:266:32: warning: This simp argument is unused:
+  withFuel
+
+Hint: Omit it from the simp argument list.
+  simp only [advance, ̲energy,w̵i̵t̵h̵F̵u̵e̵l̵,̵ ̲setCore, ̲core, ̲fuel, ̲FreshRevision.core, ̲FreshRevision.energy,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲RecipientAction.energy, ̲RecipientAction.core, ̲RecipientAction.setCore,
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲RecipientIdentification.energy, ̲PaidRecipientReasons.energy, ̲charge] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+AcquiredEvaluation.lean:317:89: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  0 ≤ b ≤ 1
+  b - c ≥ 0
+  0 ≤ b ≤ 1
+  a ≥ 0
+  a + b - c ≥ 2
+where
+ a := ↑(fuel s)
+ b := ↑(s.parent.parent.reasons.reader.world.world.core.hardware.fuel + transfer s -
+    (s.parent.parent.reasons.reader.world.world.core.hardware.fuel + transfer s - 2))
+ c := ↑s.parent.parent.reasons.reader.world.world.core.hardware.fuel
+AcquiredEvaluation.lean:317:89: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  0 ≤ b ≤ 1
+  b - c ≥ 0
+  0 ≤ b ≤ 1
+  a ≥ 0
+  a + b - c ≥ 2
+where
+ a := ↑(fuel s)
+ b := ↑(s.parent.parent.reasons.reader.world.world.core.hardware.fuel + transfer s -
+    (s.parent.parent.reasons.reader.world.world.core.hardware.fuel + transfer s - 2))
+ c := ↑s.parent.parent.reasons.reader.world.world.core.hardware.fuel
+AcquiredEvaluation.lean:317:89: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 2
+  c ≥ 0
+  0 ≤ b ≤ 1
+  b - c ≥ 0
+  0 ≤ b ≤ 1
+  a ≥ 0
+  a + b - c ≥ 2
+where
+ a := ↑(fuel s)
+ b := ↑(s.parent.parent.reasons.reader.world.world.core.hardware.fuel + transfer s -
+    (s.parent.parent.reasons.reader.world.world.core.hardware.fuel + transfer s - 2))
+ c := ↑s.parent.parent.reasons.reader.world.world.core.hardware.fuel
+ d := ↑s.count
+'AcquiredEvaluation.runnable_trace' depends on axioms: [propext]
+'AcquiredEvaluation.update_bounded' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.shared_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.three_losses' does not depend on any axioms
+'AcquiredEvaluation.conventional_same_on_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.permission_cut_retains_evaluation' depends on axioms: [propext]
+'AcquiredEvaluation.trial_projects' depends on axioms: [propext]
+'AcquiredEvaluation.recipient_only' depends on axioms: [propext]
+'AcquiredEvaluation.writes_consume_assessment' depends on axioms: [propext]
+'AcquiredEvaluation.no_new_trial_after_consumption' depends on axioms: [propext]
+'AcquiredEvaluation.pending_port_not_replaceable' depends on axioms: [propext]
+'AcquiredEvaluation.energy_with_fuel' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.old_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.step_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.trace_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.step_material' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.trace_material' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.native_operation_shortfall' depends on axioms: [propext, sorryAx, Quot.sound]
+'AcquiredEvaluation.known_command_meaning' depends on axioms: [propext]
+'AcquiredEvaluation.trace_trial_projects' depends on axioms: [propext]
+'AcquiredEvaluation.current_selected_trial_effect' depends on axioms: [propext, Quot.sound]

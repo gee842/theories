@@ -1,0 +1,116 @@
+{
+  "checked_at_utc": "2026-10-06T00:21:51.453977+00:00",
+  "status": "accepted_scope_hashes_and_local_links_verified",
+  "scope": "Preservation and local-link reconciliation only; no formal build or scientific computation repeated. Accepted declared-law proofs, independent finite Python/compiled comparison and source audit retain their distinct scopes.",
+  "accepted_receipts": {
+    "formal": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification.json",
+      "sha256": "34c8c6f53e666fa8ccc09e89b93db98c53a21ba3e1b79472195a54383e1a166a",
+      "status": "passed",
+      "modules": 10,
+      "new_theorem_audits": 53,
+      "inherited_audits": 141
+    },
+    "runtime": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-verification.json",
+      "sha256": "9e5987d15aaae2cc1e618b171ecb40ad5cdda3e1a7b5a8dc55452c88785da348",
+      "status": "passed",
+      "distinct_compiled_tapes": 38412,
+      "distinct_source_calls": 15985
+    },
+    "independent_review": {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-REVIEW.md",
+      "sha256": "8c47409bb66cdd2d8bbce4eeb61d47bf27eb7030288be4f9c116b2677091dcec",
+      "verdict": "accepted at declared scope"
+    }
+  },
+  "receipt_consistency": {
+    "formal_source_log_checker_toolchain_protocol_compiler_hashes": "match",
+    "runtime_output_checker_freeze_and_final_evaluator_source_hashes": "match",
+    "original_source_dependencies": "unchanged",
+    "historical_staged_source_not_asserted_equal_to_final": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Exposure.lean"
+    ],
+    "historical_note": "The initial formal snapshot predates proof/audit finalization. Final Exposure/Evaluate hashes were separately frozen before compiled comparison and match the accepted formal receipt."
+  },
+  "local_links": {
+    "documents": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-MATH.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STOCHASTIC-PREDICTION-COMPOSITION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/CHECK-CLARIFICATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/CHECK-PROTOCOL.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PROTOCOL.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/RUNTIME-RESULTS.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/RUNTIME-SOURCE-AUDIT.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/development/CHECK-PROTOCOL-before-analytic-fixtures.md"
+    ],
+    "checked_relative_or_fragment_links": 54,
+    "checked_heading_fragments": 2,
+    "failures": [],
+    "external_links": "not refetched"
+  },
+  "files_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-INTEGRATION.md": "857e952c8b2a07618ad271e954b83f264e1db98d628bb42be8892d7f2d4bd831",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-MATH.md": "1fc8d6e547961bbd810d75537ccae6de47a59bca26760a6e18b40ddd22348ec7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-REVIEW.md": "8c47409bb66cdd2d8bbce4eeb61d47bf27eb7030288be4f9c116b2677091dcec",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean": "4a96b3a8a6a37e592a28d18e9b7b2db805bd58d8070b076b843c33d1c89320e0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean": "f7722a463fe05d2cc14b7c1cc3bc89b9c1d1435febb1c084a000f48ce98d9ee3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/CHECK-CLARIFICATION.md": "73bd3551b4696834592653dc37cdb187b8608be1339363c20cbee6b925ee9895",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/CHECK-PROTOCOL.md": "1ae6aa9af176f476ac92f2e03e79432bad8c9b834939c4aeec36a283e50c3058",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Evaluate.lean": "7860a7b4d7f806613a8f62712b1b70fab0872c52a483a1a2c415d85cde090788",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Exposure.lean": "99ae15f4c34a90d7f5f77440a392181af72f11586f8ced29de0f4e9f8a2d7063",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/ExposureExamples.lean": "e9f4ac18c8888c105f156b518835c5a5fd453d16438afebb54196ca8794e9381",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/FiniteExposureKernel.lean": "5bde1c1690c9dc9c62e97b4d271b83e98f8e68075da0e57820f61969eb31c14d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PROTOCOL.md": "c05d0af38929154a866f3dda3abe926041628f7c2b82cca2b9b6cba31136e429",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PredictionOverlap.lean": "ec37a979da9e9455f39b3c8637762cb5dd589fd56d40b2d75ffb2b9d95af314d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md": "b8cb19873ba64d6c0046d5acb644e8c43f907c349a2ef19acd4321788aa96893",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/RUNTIME-RESULTS.md": "4a3451cbf24863d2d84f8d64e4f2936281ed1cbf90c40d031de434acc785022c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/RUNTIME-SOURCE-AUDIT.md": "cd362486bbd298c4c7213b077658a450a15107e7f8fd7752987797c44a3f2971",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/check-source-freeze.json": "0441166dcffa580f2c11a7fdd8e0b66c75ca57862bf565f0036d66562e63007f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/check.py": "90946cfd8b2b3cb88d987af8264cbeeed68e5a21747a4f57755960379889abcf",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/check_runtime.py": "4b2c3033c8f5bc569e32c54810be5e94ed16dcf8a1d151623f6fbd434127832f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/development/CHECK-PROTOCOL-before-analytic-fixtures.md": "ec239072427a9c0db25a95a368864f53f0790483f20a3a69f4a28bd6214c91a7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/development/runtime-evaluator-build-initial.txt": "097669bceb98a76437d384d4f34f8e0edbf014b202dbb8c9ae9e25fb1aef7c91",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/formal-fixtures.tsv.gz": "1c4843ecf7089b1d742774b481594426f33c5a2b7acf670c3fe43ed901a22aaf",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/prefix-traces.json": "01ccd3e595f93a224e44d28d28c4296a552e2c25399cd26053e9ea425b323cef",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/prepare_runtime.py": "beff5849e7a9bc8f4a519f83456d1e310368c83884a7a4fbc714776d3dbc60cb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/protocol-freeze.json": "20733be5d756d0623a2fb050701d5168e1ffa211c977570ee3809e617fcbe2ea",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-calls.jsonl.gz": "49be507f62502383a3592e5d5e61ce720a220e3edecb17ae7d1616a00b2d67d3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-check-output.txt": "c48ef4d51080edf9cb2abae445ff2cdcd640cc9a120a53f468080aa2a199ba74",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-evaluator-build.txt": "67f2f0a3827541b8d805647e3395730024088992f5da4f0caafeceadf2a75ebd",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-formal-freeze.json": "0c6a5e6ad3d43a5d34989a0420d3151fa5d5c4b512105ea842c3f1f7a40a90d4",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-results.json": "334022661fa21beea46c841df5dc3c07e16da5d59762db8f6d752f8074d63da0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-verification.json": "9e5987d15aaae2cc1e618b171ecb40ad5cdda3e1a7b5a8dc55452c88785da348",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/Evaluate.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/Exposure.txt": "67f2f0a3827541b8d805647e3395730024088992f5da4f0caafeceadf2a75ebd",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/ExposureExamples.txt": "7d2b7038a308176e35e3defec4fe08363c78984defa4fe73bb1273863f73f933",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/FiniteExposureKernel.txt": "61ec868ac0f6948407f1bd8e769740386b951e316a07725beccd463fcee5a5a8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/FormedSelection.txt": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/PredictionAction.txt": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/PredictionOverlap.txt": "3fe9008f7c5830b833b9e363a8e19ba98c9d0c0eb348aa9254191ba9c286c6ba",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/SelectorRevision.txt": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification/UpdaterFormation.txt": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification.json": "34c8c6f53e666fa8ccc09e89b93db98c53a21ba3e1b79472195a54383e1a166a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/PROTOCOL.md": "ab8aad275955833ea958106362a48b8f1c5a85c6de6d758db491fda3b7276b8b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/check.py": "fbec6d6cd2119e62e8081f290cd41e09683f1d0ca967aeabbd14d9aa324abf8d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/results.json": "052c5e2d175a9e2c52c169f2a44c6bae24e5e1313970ac69aef958cf69f0da5d",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STOCHASTIC-PREDICTION-COMPOSITION.md": "5fc97020172076f0e41488f8399c177cb4e2417345af784b597129b75866f5c3"
+  },
+  "exclusions": [
+    "This integrity record does not include its own hash.",
+    "No unrelated canonical map or parallel study was edited or claimed revalidated."
+  ]
+}

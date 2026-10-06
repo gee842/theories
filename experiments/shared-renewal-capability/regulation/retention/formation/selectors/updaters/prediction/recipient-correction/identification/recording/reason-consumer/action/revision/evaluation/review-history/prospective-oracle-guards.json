@@ -1,0 +1,15 @@
+{
+  "status": "prospective_oracle_draft_not_executed",
+  "created_utc": "2026-10-06T00:03:59.938962+00:00",
+  "oracle_sha256": "8693e68ac1284fa667a0cbaf11306cf4df1e24f57e945194f49dffb6d7ae474a",
+  "source": "review-history/prospective-oracle-guards.py.txt",
+  "protocol_sha256": "b4b262e398133e72555310a23313657d0400e22b02249470dc683fcbf1f21599",
+  "cases_sha256": "12fa9a8c49719db0a73abea8a1e125248e34a793a49b175deda2cbd897f4272d",
+  "prior_oracle_sha256": "b810dbb39a2cd920e2e175a710c0ca63b48fd1ead17fb3b7013eb1b3d0c93b7d",
+  "changes": [
+    "Permission/delivery guard action only; they do not defeat an assessment.",
+    "Use guard rechecks actual candidate/support agreement.",
+    "Replacement requires first opportunity closed and old port consumed or absent."
+  ],
+  "basis": "Explicit author/reviewer/root prospective guard clarification before producer implementation/outcomes. No functions executed; syntax parsed only."
+}

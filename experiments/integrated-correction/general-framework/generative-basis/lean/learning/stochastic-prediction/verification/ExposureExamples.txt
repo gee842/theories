@@ -1,0 +1,9 @@
+'StochasticPrediction.formation_preserves_coherence' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.exposure_preserves_coherence' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.example_source_domain' does not depend on any axioms
+'StochasticPrediction.unpaid_then_paid_continuation' does not depend on any axioms
+'StochasticPrediction.discarded_unpaid_loses_future_mass' depends on axioms: [propext]
+'StochasticPrediction.no_work_still_loses_packet' does not depend on any axioms
+'StochasticPrediction.failed_rent_resets_operative_memory' does not depend on any axioms
+'StochasticPrediction.paid_write_selection_bias' does not depend on any axioms
+'StochasticPrediction.zero_score_retained_across_the_example' does not depend on any axioms

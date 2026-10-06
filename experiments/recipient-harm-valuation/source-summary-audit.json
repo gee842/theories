@@ -1,0 +1,1532 @@
+{
+  "status": "pass",
+  "scope": "Exhaustive semantics classification of the 39 existing discrepancy flags. No redefinition of primary estimates.",
+  "discrepancies_classified": 39,
+  "categories": {
+    "spreadsheet_average_ignores_undefined_session": 1,
+    "omitted_total_summary": 32,
+    "scheduled_versus_completed_response_denominator": 6
+  },
+  "findings": [
+    {
+      "actor": 37,
+      "field": "AverageShock",
+      "original_discrepancy": {
+        "actor": 37,
+        "field": "AverageShock",
+        "given": "97.50",
+        "computed": null,
+        "absolute_difference": null,
+        "agree": false
+      },
+      "summary_group": "ContingentHarmFemale",
+      "sbl": "SBL042d",
+      "category": "spreadsheet_average_ignores_undefined_session",
+      "shock_summary_cells": {
+        "data!H38": 95,
+        "data!I38": 100,
+        "data!J38": "NaN"
+      },
+      "average_cell": "data!K38",
+      "average_formula": "=AVERAGE(H38:J38)",
+      "average_cached": 97.5,
+      "shock3_trial_counts": {
+        "0": 20
+      },
+      "interpretation": "Workbook mean over two numeric sessions differs from a mean requiring all three conditional choices to be defined."
+    },
+    {
+      "actor": 47,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 47,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ49",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 48,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 48,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ50",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 49,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 49,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ51",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 50,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 50,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ52",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 51,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 51,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ53",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 52,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 52,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ54",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 53,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 53,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ55",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 54,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 54,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ56",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 55,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 55,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ57",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 56,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 56,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL053a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ58",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 57,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 57,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ59",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 58,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 58,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ60",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 59,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 59,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ61",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 60,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 60,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "Non PreExposed",
+      "sbl": "SBL060",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ62",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 61,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 61,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ63",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 62,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 62,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ64",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 63,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 63,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ65",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 64,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 64,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ66",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 65,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 65,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ67",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 66,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 66,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ68",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 67,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 67,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs2Pellets",
+      "sbl": "SBL041a",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ69",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 68,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 68,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ70",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 69,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 69,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ71",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 70,
+      "field": "Shock 3",
+      "original_discrepancy": {
+        "actor": 70,
+        "field": "Shock 3",
+        "given": "85",
+        "computed": "1700/19",
+        "absolute_difference": "85/19",
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "scheduled_versus_completed_response_denominator",
+      "phases": [
+        {
+          "phase": "Shock 1",
+          "counts": {
+            "2": 17,
+            "1": 3
+          },
+          "scheduled_percentage": "85",
+          "completed_response_percentage": "85"
+        },
+        {
+          "phase": "Shock 2",
+          "counts": {
+            "2": 18,
+            "1": 2
+          },
+          "scheduled_percentage": "90",
+          "completed_response_percentage": "90"
+        },
+        {
+          "phase": "Shock 3",
+          "counts": {
+            "1": 2,
+            "2": 17,
+            "": 1
+          },
+          "scheduled_percentage": "85",
+          "completed_response_percentage": "1700/19"
+        }
+      ],
+      "average_scheduled_percentage": "260/3",
+      "average_completed_response_percentage": "1675/19",
+      "workbook_average_cell": "data!K71",
+      "workbook_average_formula": "=AVERAGE(H71:J71)",
+      "interpretation": "Exact arithmetic match to code2 divided by 20 in the supplied summaries; this identifies a denominator difference, not the original analyst intention. A blank does not become a known code."
+    },
+    {
+      "actor": 70,
+      "field": "AverageShock",
+      "original_discrepancy": {
+        "actor": 70,
+        "field": "AverageShock",
+        "given": "86.67",
+        "computed": "1675/19",
+        "absolute_difference": "2827/1900",
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "scheduled_versus_completed_response_denominator",
+      "phases": [
+        {
+          "phase": "Shock 1",
+          "counts": {
+            "2": 17,
+            "1": 3
+          },
+          "scheduled_percentage": "85",
+          "completed_response_percentage": "85"
+        },
+        {
+          "phase": "Shock 2",
+          "counts": {
+            "2": 18,
+            "1": 2
+          },
+          "scheduled_percentage": "90",
+          "completed_response_percentage": "90"
+        },
+        {
+          "phase": "Shock 3",
+          "counts": {
+            "1": 2,
+            "2": 17,
+            "": 1
+          },
+          "scheduled_percentage": "85",
+          "completed_response_percentage": "1700/19"
+        }
+      ],
+      "average_scheduled_percentage": "260/3",
+      "average_completed_response_percentage": "1675/19",
+      "workbook_average_cell": "data!K71",
+      "workbook_average_formula": "=AVERAGE(H71:J71)",
+      "interpretation": "Exact arithmetic match to code2 divided by 20 in the supplied summaries; this identifies a denominator difference, not the original analyst intention. A blank does not become a known code."
+    },
+    {
+      "actor": 70,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 70,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ72",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 71,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 71,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ73",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 72,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 72,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ74",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 73,
+      "field": "Shock 3",
+      "original_discrepancy": {
+        "actor": 73,
+        "field": "Shock 3",
+        "given": "80",
+        "computed": "800/9",
+        "absolute_difference": "80/9",
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "scheduled_versus_completed_response_denominator",
+      "phases": [
+        {
+          "phase": "Shock 1",
+          "counts": {
+            "2": 20
+          },
+          "scheduled_percentage": "100",
+          "completed_response_percentage": "100"
+        },
+        {
+          "phase": "Shock 2",
+          "counts": {
+            "2": 17,
+            "1": 3
+          },
+          "scheduled_percentage": "85",
+          "completed_response_percentage": "85"
+        },
+        {
+          "phase": "Shock 3",
+          "counts": {
+            "2": 16,
+            "1": 2,
+            "0": 2
+          },
+          "scheduled_percentage": "80",
+          "completed_response_percentage": "800/9"
+        }
+      ],
+      "average_scheduled_percentage": "265/3",
+      "average_completed_response_percentage": "2465/27",
+      "workbook_average_cell": "data!K74",
+      "workbook_average_formula": "=AVERAGE(H74:J74)",
+      "interpretation": "Exact arithmetic match to code2 divided by 20 in the supplied summaries; this identifies a denominator difference, not the original analyst intention. A blank does not become a known code."
+    },
+    {
+      "actor": 73,
+      "field": "AverageShock",
+      "original_discrepancy": {
+        "actor": 73,
+        "field": "AverageShock",
+        "given": "88.33",
+        "computed": "2465/27",
+        "absolute_difference": "8009/2700",
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "scheduled_versus_completed_response_denominator",
+      "phases": [
+        {
+          "phase": "Shock 1",
+          "counts": {
+            "2": 20
+          },
+          "scheduled_percentage": "100",
+          "completed_response_percentage": "100"
+        },
+        {
+          "phase": "Shock 2",
+          "counts": {
+            "2": 17,
+            "1": 3
+          },
+          "scheduled_percentage": "85",
+          "completed_response_percentage": "85"
+        },
+        {
+          "phase": "Shock 3",
+          "counts": {
+            "2": 16,
+            "1": 2,
+            "0": 2
+          },
+          "scheduled_percentage": "80",
+          "completed_response_percentage": "800/9"
+        }
+      ],
+      "average_scheduled_percentage": "265/3",
+      "average_completed_response_percentage": "2465/27",
+      "workbook_average_cell": "data!K74",
+      "workbook_average_formula": "=AVERAGE(H74:J74)",
+      "interpretation": "Exact arithmetic match to code2 divided by 20 in the supplied summaries; this identifies a denominator difference, not the original analyst intention. A blank does not become a known code."
+    },
+    {
+      "actor": 73,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 73,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 2,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ75",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "reconstructed_total": 2,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 74,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 74,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ76",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 75,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 75,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ77",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 76,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 76,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ78",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 77,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 77,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 0,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ79",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reconstructed_total": 0,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    },
+    {
+      "actor": 78,
+      "field": "Shock 3",
+      "original_discrepancy": {
+        "actor": 78,
+        "field": "Shock 3",
+        "given": "65",
+        "computed": "260/3",
+        "absolute_difference": "65/3",
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "scheduled_versus_completed_response_denominator",
+      "phases": [
+        {
+          "phase": "Shock 1",
+          "counts": {
+            "2": 20
+          },
+          "scheduled_percentage": "100",
+          "completed_response_percentage": "100"
+        },
+        {
+          "phase": "Shock 2",
+          "counts": {
+            "2": 20
+          },
+          "scheduled_percentage": "100",
+          "completed_response_percentage": "100"
+        },
+        {
+          "phase": "Shock 3",
+          "counts": {
+            "1": 2,
+            "2": 13,
+            "0": 5
+          },
+          "scheduled_percentage": "65",
+          "completed_response_percentage": "260/3"
+        }
+      ],
+      "average_scheduled_percentage": "265/3",
+      "average_completed_response_percentage": "860/9",
+      "workbook_average_cell": "data!K79",
+      "workbook_average_formula": "=AVERAGE(H79:J79)",
+      "interpretation": "Exact arithmetic match to code2 divided by 20 in the supplied summaries; this identifies a denominator difference, not the original analyst intention. A blank does not become a known code."
+    },
+    {
+      "actor": 78,
+      "field": "AverageShock",
+      "original_discrepancy": {
+        "actor": 78,
+        "field": "AverageShock",
+        "given": "88.33",
+        "computed": "860/9",
+        "absolute_difference": "6503/900",
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "scheduled_versus_completed_response_denominator",
+      "phases": [
+        {
+          "phase": "Shock 1",
+          "counts": {
+            "2": 20
+          },
+          "scheduled_percentage": "100",
+          "completed_response_percentage": "100"
+        },
+        {
+          "phase": "Shock 2",
+          "counts": {
+            "2": 20
+          },
+          "scheduled_percentage": "100",
+          "completed_response_percentage": "100"
+        },
+        {
+          "phase": "Shock 3",
+          "counts": {
+            "1": 2,
+            "2": 13,
+            "0": 5
+          },
+          "scheduled_percentage": "65",
+          "completed_response_percentage": "260/3"
+        }
+      ],
+      "average_scheduled_percentage": "265/3",
+      "average_completed_response_percentage": "860/9",
+      "workbook_average_cell": "data!K79",
+      "workbook_average_formula": "=AVERAGE(H79:J79)",
+      "interpretation": "Exact arithmetic match to code2 divided by 20 in the supplied summaries; this identifies a denominator difference, not the original analyst intention. A blank does not become a known code."
+    },
+    {
+      "actor": 78,
+      "field": "nonperformance_total",
+      "original_discrepancy": {
+        "actor": 78,
+        "field": "nonperformance_total",
+        "given": "",
+        "computed": 5,
+        "agree": false
+      },
+      "summary_group": "1vs3Pellets",
+      "sbl": "SBL035c",
+      "category": "omitted_total_summary",
+      "csv_total": "",
+      "workbook_cell": "Choice!CJ80",
+      "workbook_formula_value": null,
+      "workbook_cached_value": null,
+      "phase_zero_counts": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "reconstructed_total": 5,
+      "interpretation": "Absent summary cell, not a contradictory reported count."
+    }
+  ],
+  "first46_total_formulas_cover_shock_phases_only": {
+    "1": "=SUM(CG3:CI3)",
+    "2": "=SUM(CG4:CI4)",
+    "3": "=SUM(CG5:CI5)",
+    "4": "=SUM(CG6:CI6)",
+    "5": "=SUM(CG7:CI7)",
+    "6": "=SUM(CG8:CI8)",
+    "7": "=SUM(CG9:CI9)",
+    "8": "=SUM(CG10:CI10)",
+    "9": "=SUM(CG11:CI11)",
+    "10": "=SUM(CG12:CI12)",
+    "11": "=SUM(CG13:CI13)",
+    "12": "=SUM(CG14:CI14)",
+    "13": "=SUM(CG15:CI15)",
+    "14": "=SUM(CG16:CI16)",
+    "15": "=SUM(CG17:CI17)",
+    "16": "=SUM(CG18:CI18)",
+    "17": "=SUM(CG19:CI19)",
+    "18": "=SUM(CG20:CI20)",
+    "19": "=SUM(CG21:CI21)",
+    "20": "=SUM(CG22:CI22)",
+    "21": "=SUM(CG23:CI23)",
+    "22": "=SUM(CG24:CI24)",
+    "23": "=SUM(CG25:CI25)",
+    "24": "=SUM(CG26:CI26)",
+    "25": "=SUM(CG27:CI27)",
+    "26": "=SUM(CG28:CI28)",
+    "27": "=SUM(CG29:CI29)",
+    "28": "=SUM(CG30:CI30)",
+    "29": "=SUM(CG31:CI31)",
+    "30": "=SUM(CG32:CI32)",
+    "31": "=SUM(CG33:CI33)",
+    "32": "=SUM(CG34:CI34)",
+    "33": "=SUM(CG35:CI35)",
+    "34": "=SUM(CG36:CI36)",
+    "35": "=SUM(CG37:CI37)",
+    "36": "=SUM(CG38:CI38)",
+    "37": "=SUM(CG39:CI39)",
+    "38": "=SUM(CG40:CI40)",
+    "39": "=SUM(CG41:CI41)",
+    "40": "=SUM(CG42:CI42)",
+    "41": "=SUM(CG43:CI43)",
+    "42": "=SUM(CG44:CI44)",
+    "43": "=SUM(CG45:CI45)",
+    "44": "=SUM(CG46:CI46)",
+    "45": "=SUM(CG47:CI47)",
+    "46": "=SUM(CG48:CI48)"
+  },
+  "all78_baseline_zero_counts_are_zero": true,
+  "primary26_male_actor_discrepancy_count": 0,
+  "ordinary_rounding_fields_already_within_primary_tolerance": [
+    {
+      "actor": 1,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 2,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 3,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 4,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 5,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 6,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 7,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 9,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 10,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 11,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 12,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 13,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 14,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 16,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 17,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 18,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 19,
+      "field": "Shock 2",
+      "absolute_difference": "1/475"
+    },
+    {
+      "actor": 19,
+      "field": "AverageShock",
+      "absolute_difference": "1/1425"
+    },
+    {
+      "actor": 20,
+      "field": "Shock 2",
+      "absolute_difference": "2/475"
+    },
+    {
+      "actor": 20,
+      "field": "AverageShock",
+      "absolute_difference": "9/1900"
+    },
+    {
+      "actor": 21,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 22,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 24,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 26,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 27,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 28,
+      "field": "Shock 1",
+      "absolute_difference": "1/700"
+    },
+    {
+      "actor": 28,
+      "field": "AverageShock",
+      "absolute_difference": "1/350"
+    },
+    {
+      "actor": 29,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 30,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 32,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 33,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 34,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 35,
+      "field": "Shock 3",
+      "absolute_difference": "1/950"
+    },
+    {
+      "actor": 35,
+      "field": "AverageShock",
+      "absolute_difference": "7/1900"
+    },
+    {
+      "actor": 39,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 40,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 41,
+      "field": "Shock 1",
+      "absolute_difference": "1/1900"
+    },
+    {
+      "actor": 41,
+      "field": "AverageShock",
+      "absolute_difference": "1/285"
+    },
+    {
+      "actor": 43,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 44,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 45,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 48,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 50,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 51,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 52,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 53,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 54,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 55,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 58,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 59,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 60,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 61,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 63,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 64,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 65,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 66,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 67,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 69,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 74,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    },
+    {
+      "actor": 76,
+      "field": "AverageShock",
+      "absolute_difference": "1/300"
+    }
+  ],
+  "methods_support": {
+    "PDF18_e3": "20 free choices after four forced samples; failed free trials advance.",
+    "PDF20_e5": "Forced trials excluded from all analyses; failed trials separately quantified.",
+    "PDF21_e6": "Sshock defined as average proportion across three shock sessions; no explicit all-nonresponse convention."
+  },
+  "input_sha256": {
+    "sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv": "6c594ee27eb186b47f90b511d6173eb44dad27f5bc68692b04a9095c1a0d8b44",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv": "8ecbff58da5de5e52420cd8163951219b9472de0ff8cfce7aefb4447af6f50df",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.xlsx": "dee91bd9bce910d80e5eca1d0cea74c9d0839bf7f6ebe1334a656ada0bb674ef",
+    "sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf": "70e20bd121156af8ff409be41020cdceec9b4ce415b7f00caa7a4b0ffea9ce17",
+    "sources/30-recipient-harm-valuation-2026-10-06/manifest.json": "6d25c2934fc28120e47a64c34c13aaeb83b141000d0a1999afd85494e7065a81",
+    "experiments/recipient-harm-valuation/results.json": "55efc4831c90d2d99263ecb36573cc0ded9e20dface3b8c79937f20e01a969f2",
+    "experiments/recipient-harm-valuation/PROTOCOL.md": "0629fa7157a911a94ca42802061c10f06ae16637360f44c15a1583f10dd58bfd",
+    "experiments/recipient-harm-valuation/source-summary-audit.py": "9f5430301b7a2a313b9b042af99bd0fc4d9c7334708fe18a8ccdb042889d882a"
+  }
+}

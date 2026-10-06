@@ -1,0 +1,379 @@
+AcquiredEvaluation.lean:152:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.close with
+    | Event.pay =>
+      (s.parent.opened = true ∧
+          s.parent.reading = true ∧
+            Current s ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧
+                (core s).active = true ∧ s.parent.parent.scope = true ∧ s.cells = 6 ∧ s.adapter = true) ∧
+        s.mode = NativeMode.ready ∧ s.count < 3 ∧ 2 ≤ fuel s + transfer s
+    | Event.returnNative b => s.mode = NativeMode.paid ∧ returned b ≤ source s
+    | Event.readNative channel => s.mode = NativeMode.returned ∧ 1 ≤ fuel s
+    | Event.writeNative => (s.mode = NativeMode.known ∨ s.mode = NativeMode.missing) ∧ s.count < 3 ∧ 1 ≤ fuel s
+    | Event.read =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            s.cells = 6 ∧
+              s.adapter = true ∧
+                s.port = true ∧
+                  PortMode.idle = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.assess =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.idle = PortMode.read ∧ Known s ∧ 1 ≤ fuel s
+    | Event.attempt =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.idle = PortMode.help
+    | Event.abstain =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ PortMode.idle = PortMode.abstain
+    | Event.close =>
+      Due s ∧
+        match PortMode.idle with
+        | PortMode.idle => ¬Readable s
+        | PortMode.read => ¬Assessable s
+        | PortMode.help => False
+        | PortMode.abstain => False
+        | PortMode.executing => True
+        | PortMode.consumed => True
+    | Event.replace =>
+      s.opportunity = Opportunity.firstClosed ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            PortMode.idle = PortMode.consumed ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.freeA ∧ 1 ≤ s.freeH ∧ 1 ≤ s.later
+    | Event.suppress =>
+      s.count = 3 ∧
+        s.mode = NativeMode.closed ∧
+          PortMode.idle = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.trial e =>
+      RecipientAction.Enabled s.parent.parent (RecipientAction.Event.voluntary e) ∧
+        (RecipientAction.Settlement s.parent.parent e ∨
+          PortMode.idle = PortMode.executing ∧
+            (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ Known s)
+    | Event.reason e => RecipientAction.Enabled s.parent.parent (RecipientAction.Event.reason e)
+    | Event.scope v => True
+    | Event.permission v => True
+    | Event.delivery v => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AcquiredEvaluation.lean:152:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.close with
+    | Event.pay =>
+      (s.parent.opened = true ∧
+          s.parent.reading = true ∧
+            Current s ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧
+                (core s).active = true ∧ s.parent.parent.scope = true ∧ s.cells = 6 ∧ s.adapter = true) ∧
+        s.mode = NativeMode.ready ∧ s.count < 3 ∧ 2 ≤ fuel s + transfer s
+    | Event.returnNative b => s.mode = NativeMode.paid ∧ returned b ≤ source s
+    | Event.readNative channel => s.mode = NativeMode.returned ∧ 1 ≤ fuel s
+    | Event.writeNative => (s.mode = NativeMode.known ∨ s.mode = NativeMode.missing) ∧ s.count < 3 ∧ 1 ≤ fuel s
+    | Event.read =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            s.cells = 6 ∧
+              s.adapter = true ∧
+                s.port = true ∧
+                  PortMode.read = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.assess =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.read = PortMode.read ∧ Known s ∧ 1 ≤ fuel s
+    | Event.attempt =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.read = PortMode.help
+    | Event.abstain =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ PortMode.read = PortMode.abstain
+    | Event.close =>
+      Due s ∧
+        match PortMode.read with
+        | PortMode.idle => ¬Readable s
+        | PortMode.read => ¬Assessable s
+        | PortMode.help => False
+        | PortMode.abstain => False
+        | PortMode.executing => True
+        | PortMode.consumed => True
+    | Event.replace =>
+      s.opportunity = Opportunity.firstClosed ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            PortMode.read = PortMode.consumed ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.freeA ∧ 1 ≤ s.freeH ∧ 1 ≤ s.later
+    | Event.suppress =>
+      s.count = 3 ∧
+        s.mode = NativeMode.closed ∧
+          PortMode.read = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.trial e =>
+      RecipientAction.Enabled s.parent.parent (RecipientAction.Event.voluntary e) ∧
+        (RecipientAction.Settlement s.parent.parent e ∨
+          PortMode.read = PortMode.executing ∧
+            (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ Known s)
+    | Event.reason e => RecipientAction.Enabled s.parent.parent (RecipientAction.Event.reason e)
+    | Event.scope v => True
+    | Event.permission v => True
+    | Event.delivery v => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AcquiredEvaluation.lean:152:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.close with
+    | Event.pay =>
+      (s.parent.opened = true ∧
+          s.parent.reading = true ∧
+            Current s ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧
+                (core s).active = true ∧ s.parent.parent.scope = true ∧ s.cells = 6 ∧ s.adapter = true) ∧
+        s.mode = NativeMode.ready ∧ s.count < 3 ∧ 2 ≤ fuel s + transfer s
+    | Event.returnNative b => s.mode = NativeMode.paid ∧ returned b ≤ source s
+    | Event.readNative channel => s.mode = NativeMode.returned ∧ 1 ≤ fuel s
+    | Event.writeNative => (s.mode = NativeMode.known ∨ s.mode = NativeMode.missing) ∧ s.count < 3 ∧ 1 ≤ fuel s
+    | Event.read =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            s.cells = 6 ∧
+              s.adapter = true ∧
+                s.port = true ∧
+                  PortMode.help = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.assess =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.help = PortMode.read ∧ Known s ∧ 1 ≤ fuel s
+    | Event.attempt =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.help = PortMode.help
+    | Event.abstain =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ PortMode.help = PortMode.abstain
+    | Event.close =>
+      Due s ∧
+        match PortMode.help with
+        | PortMode.idle => ¬Readable s
+        | PortMode.read => ¬Assessable s
+        | PortMode.help => False
+        | PortMode.abstain => False
+        | PortMode.executing => True
+        | PortMode.consumed => True
+    | Event.replace =>
+      s.opportunity = Opportunity.firstClosed ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            PortMode.help = PortMode.consumed ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.freeA ∧ 1 ≤ s.freeH ∧ 1 ≤ s.later
+    | Event.suppress =>
+      s.count = 3 ∧
+        s.mode = NativeMode.closed ∧
+          PortMode.help = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.trial e =>
+      RecipientAction.Enabled s.parent.parent (RecipientAction.Event.voluntary e) ∧
+        (RecipientAction.Settlement s.parent.parent e ∨
+          PortMode.help = PortMode.executing ∧
+            (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ Known s)
+    | Event.reason e => RecipientAction.Enabled s.parent.parent (RecipientAction.Event.reason e)
+    | Event.scope v => True
+    | Event.permission v => True
+    | Event.delivery v => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AcquiredEvaluation.lean:152:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.close with
+    | Event.pay =>
+      (s.parent.opened = true ∧
+          s.parent.reading = true ∧
+            Current s ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧
+                (core s).active = true ∧ s.parent.parent.scope = true ∧ s.cells = 6 ∧ s.adapter = true) ∧
+        s.mode = NativeMode.ready ∧ s.count < 3 ∧ 2 ≤ fuel s + transfer s
+    | Event.returnNative b => s.mode = NativeMode.paid ∧ returned b ≤ source s
+    | Event.readNative channel => s.mode = NativeMode.returned ∧ 1 ≤ fuel s
+    | Event.writeNative => (s.mode = NativeMode.known ∨ s.mode = NativeMode.missing) ∧ s.count < 3 ∧ 1 ≤ fuel s
+    | Event.read =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            s.cells = 6 ∧
+              s.adapter = true ∧
+                s.port = true ∧
+                  PortMode.abstain = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.assess =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.abstain = PortMode.read ∧ Known s ∧ 1 ≤ fuel s
+    | Event.attempt =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.abstain = PortMode.help
+    | Event.abstain =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        PortMode.abstain = PortMode.abstain
+    | Event.close =>
+      Due s ∧
+        match PortMode.abstain with
+        | PortMode.idle => ¬Readable s
+        | PortMode.read => ¬Assessable s
+        | PortMode.help => False
+        | PortMode.abstain => False
+        | PortMode.executing => True
+        | PortMode.consumed => True
+    | Event.replace =>
+      s.opportunity = Opportunity.firstClosed ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            PortMode.abstain = PortMode.consumed ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.freeA ∧ 1 ≤ s.freeH ∧ 1 ≤ s.later
+    | Event.suppress =>
+      s.count = 3 ∧
+        s.mode = NativeMode.closed ∧
+          PortMode.abstain = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.trial e =>
+      RecipientAction.Enabled s.parent.parent (RecipientAction.Event.voluntary e) ∧
+        (RecipientAction.Settlement s.parent.parent e ∨
+          PortMode.abstain = PortMode.executing ∧
+            (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ Known s)
+    | Event.reason e => RecipientAction.Enabled s.parent.parent (RecipientAction.Event.reason e)
+    | Event.scope v => True
+    | Event.permission v => True
+    | Event.delivery v => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AcquiredEvaluation.lean:152:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.close with
+    | Event.pay =>
+      (s.parent.opened = true ∧
+          s.parent.reading = true ∧
+            Current s ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧
+                (core s).active = true ∧ s.parent.parent.scope = true ∧ s.cells = 6 ∧ s.adapter = true) ∧
+        s.mode = NativeMode.ready ∧ s.count < 3 ∧ 2 ≤ fuel s + transfer s
+    | Event.returnNative b => s.mode = NativeMode.paid ∧ returned b ≤ source s
+    | Event.readNative channel => s.mode = NativeMode.returned ∧ 1 ≤ fuel s
+    | Event.writeNative => (s.mode = NativeMode.known ∨ s.mode = NativeMode.missing) ∧ s.count < 3 ∧ 1 ≤ fuel s
+    | Event.read =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            s.cells = 6 ∧
+              s.adapter = true ∧
+                s.port = true ∧
+                  PortMode.executing = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.assess =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.executing = PortMode.read ∧ Known s ∧ 1 ≤ fuel s
+    | Event.attempt =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.executing = PortMode.help
+    | Event.abstain =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        PortMode.executing = PortMode.abstain
+    | Event.close =>
+      Due s ∧
+        match PortMode.executing with
+        | PortMode.idle => ¬Readable s
+        | PortMode.read => ¬Assessable s
+        | PortMode.help => False
+        | PortMode.abstain => False
+        | PortMode.executing => True
+        | PortMode.consumed => True
+    | Event.replace =>
+      s.opportunity = Opportunity.firstClosed ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            PortMode.executing = PortMode.consumed ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.freeA ∧ 1 ≤ s.freeH ∧ 1 ≤ s.later
+    | Event.suppress =>
+      s.count = 3 ∧
+        s.mode = NativeMode.closed ∧
+          PortMode.executing = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.trial e =>
+      RecipientAction.Enabled s.parent.parent (RecipientAction.Event.voluntary e) ∧
+        (RecipientAction.Settlement s.parent.parent e ∨
+          PortMode.executing = PortMode.executing ∧
+            (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ Known s)
+    | Event.reason e => RecipientAction.Enabled s.parent.parent (RecipientAction.Event.reason e)
+    | Event.scope v => True
+    | Event.permission v => True
+    | Event.delivery v => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AcquiredEvaluation.lean:152:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.close with
+    | Event.pay =>
+      (s.parent.opened = true ∧
+          s.parent.reading = true ∧
+            Current s ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧
+                (core s).active = true ∧ s.parent.parent.scope = true ∧ s.cells = 6 ∧ s.adapter = true) ∧
+        s.mode = NativeMode.ready ∧ s.count < 3 ∧ 2 ≤ fuel s + transfer s
+    | Event.returnNative b => s.mode = NativeMode.paid ∧ returned b ≤ source s
+    | Event.readNative channel => s.mode = NativeMode.returned ∧ 1 ≤ fuel s
+    | Event.writeNative => (s.mode = NativeMode.known ∨ s.mode = NativeMode.missing) ∧ s.count < 3 ∧ 1 ≤ fuel s
+    | Event.read =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            s.cells = 6 ∧
+              s.adapter = true ∧
+                s.port = true ∧
+                  PortMode.consumed = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.assess =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.consumed = PortMode.read ∧ Known s ∧ 1 ≤ fuel s
+    | Event.attempt =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        s.port = true ∧ PortMode.consumed = PortMode.help
+    | Event.abstain =>
+      (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧
+        PortMode.consumed = PortMode.abstain
+    | Event.close =>
+      Due s ∧
+        match PortMode.consumed with
+        | PortMode.idle => ¬Readable s
+        | PortMode.read => ¬Assessable s
+        | PortMode.help => False
+        | PortMode.abstain => False
+        | PortMode.executing => True
+        | PortMode.consumed => True
+    | Event.replace =>
+      s.opportunity = Opportunity.firstClosed ∧
+        s.count = 3 ∧
+          s.mode = NativeMode.closed ∧
+            PortMode.consumed = PortMode.consumed ∧
+              (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.freeA ∧ 1 ≤ s.freeH ∧ 1 ≤ s.later
+    | Event.suppress =>
+      s.count = 3 ∧
+        s.mode = NativeMode.closed ∧
+          PortMode.consumed = PortMode.idle ∧ (core s).phase = RecipientIdentification.Phase.ready ∧ 1 ≤ fuel s
+    | Event.trial e =>
+      RecipientAction.Enabled s.parent.parent (RecipientAction.Event.voluntary e) ∧
+        (RecipientAction.Settlement s.parent.parent e ∨
+          PortMode.consumed = PortMode.executing ∧
+            (s.opportunity = Opportunity.firstDue ∨ s.opportunity = Opportunity.secondDue) ∧ Known s)
+    | Event.reason e => RecipientAction.Enabled s.parent.parent (RecipientAction.Event.reason e)
+    | Event.scope v => True
+    | Event.permission v => True
+    | Event.delivery v => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AcquiredEvaluation.lean:369:13: error(lean.unknownIdentifier): Unknown identifier `RecipientIdentification.receiptOf`
+'AcquiredEvaluation.runnable_trace' depends on axioms: [propext]
+'AcquiredEvaluation.update_bounded' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.shared_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.three_losses' does not depend on any axioms
+'AcquiredEvaluation.conventional_same_on_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.permission_cut_retains_evaluation' depends on axioms: [propext]
+'AcquiredEvaluation.trial_projects' depends on axioms: [propext]
+'AcquiredEvaluation.recipient_only' depends on axioms: [propext]
+'AcquiredEvaluation.writes_consume_assessment' depends on axioms: [propext]
+'AcquiredEvaluation.no_new_trial_after_consumption' depends on axioms: [propext]
+'AcquiredEvaluation.pending_port_not_replaceable' depends on axioms: [propext]
+'AcquiredEvaluation.energy_with_fuel' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.old_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.step_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.trace_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.step_material' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.trace_material' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.native_operation_shortfall' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.known_command_meaning' depends on axioms: [propext]
+'AcquiredEvaluation.trace_trial_projects' depends on axioms: [propext]
+'AcquiredEvaluation.current_selected_trial_effect' depends on axioms: [propext, Quot.sound]

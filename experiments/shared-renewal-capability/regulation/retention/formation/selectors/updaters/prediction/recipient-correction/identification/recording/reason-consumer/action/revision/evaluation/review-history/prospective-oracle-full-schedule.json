@@ -1,0 +1,15 @@
+{
+  "status": "prospective_full_schedule_not_executed",
+  "created_utc": "2026-10-06T00:09:36.576275+00:00",
+  "oracle_sha256": "8faf4e03908ec34c6e78bb618110509e73f214e5362d32201100b8daad6bf700",
+  "source": "review-history/prospective-oracle-full-schedule.py.txt",
+  "protocol_sha256": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+  "cases_sha256": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+  "old_independent_checker_sha256": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+  "changes": [
+    "Added exact accepted-parent prefix extraction.",
+    "Added independent native, evaluation, intervention, recipient RI continuation, replacement and account schedule.",
+    "Imports only accepted parent independent checker on demand, never new producer transitions."
+  ],
+  "basis": "Frozen protocol and interface messages only. No new producer implementation/outcomes read; no oracle functions executed. AST syntax checked."
+}

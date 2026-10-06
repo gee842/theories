@@ -1,0 +1,10 @@
+{
+  "status": "prospective_oracle_draft_not_executed",
+  "created_utc": "2026-10-06T00:01:25.803790+00:00",
+  "oracle_sha256": "b810dbb39a2cd920e2e175a710c0ca63b48fd1ead17fb3b7013eb1b3d0c93b7d",
+  "source": "review-history/prospective-oracle-initial.py.txt",
+  "protocol_sha256": "2f2901713c568a163b0d89b416b4eefafd2182de738bb9e06c349e40d744464b",
+  "cases_sha256": "12fa9a8c49719db0a73abea8a1e125248e34a793a49b175deda2cbd897f4272d",
+  "independence": "Written from draft protocol/cases and already accepted parent checker before any new evaluation model source existed or numerical outcomes were run. AST syntax parse only; no oracle functions executed.",
+  "remaining": "Concrete schema adapter, initial/end-to-end state reconstruction, event/budget/target/invalidation checks, final law clarifications and full validation."
+}

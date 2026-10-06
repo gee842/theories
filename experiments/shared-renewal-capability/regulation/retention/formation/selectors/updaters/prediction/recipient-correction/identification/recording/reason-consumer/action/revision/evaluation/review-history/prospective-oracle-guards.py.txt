@@ -1,0 +1,162 @@
+#!/usr/bin/env python3
+"""Independent evaluative-uptake oracle, prospective draft.
+
+Written from DRAFT-PROTOCOL.md and cases.json before inspecting any new
+evaluation implementation or outcome.  This initial layer supplies native
+state transitions, local payment rules and a separate decision table.  The
+concrete snapshot adapter and end-to-end checker will be added after the
+protocol/schema freeze, with draft bytes and revisions preserved.
+
+No new producer transitions are imported.  An eventual old-law adapter may
+reuse the independently authored and accepted parent checker only.
+"""
+
+from copy import deepcopy
+from dataclasses import dataclass, replace
+from fractions import Fraction
+
+
+@dataclass(frozen=True)
+class Native:
+    """Projection onto the pair-backed native module and the single core."""
+    fuel: int
+    reserve: int
+    sources: tuple[int, int, int] = (2, 2, 2)
+    numerator: int = 0
+    completed: int = 0
+    mode: str = "ready"
+    bit: int = 0
+    spent: int = 0
+
+
+def native_energy(s):
+    return s.fuel + s.reserve + sum(s.sources)
+
+
+def native_check(s):
+    assert min(s.fuel, s.reserve, *s.sources, s.spent) >= 0
+    assert 0 <= s.numerator <= 7 and 0 <= s.completed <= 3
+    assert s.bit in (0, 1)
+    assert s.mode in {"ready", "paid", "returned", "read_known", "read_missing", "closed"}
+    assert (s.mode == "closed") == (s.completed == 3)
+
+
+def native_pay(s):
+    """Allocate at most four protected units and pay the next operation.
+
+    This projected macro contains the two resource events if the concrete
+    producer emits them separately. Existing core fuel remains spendable;
+    twelve protected units are not asserted to be a necessary entry threshold.
+    """
+    native_check(s)
+    assert s.mode == "ready" and s.completed < 3
+    allocation = min(4, s.reserve)
+    assert s.fuel + allocation >= 2
+    t = replace(s, fuel=s.fuel + allocation - 2,
+                reserve=s.reserve-allocation, mode="paid", spent=s.spent+2)
+    assert native_energy(t)+2 == native_energy(s)
+    return t
+
+
+def native_return(s, actual_return):
+    """Only the plant event receives an actual return, not a desired weight."""
+    native_check(s)
+    assert s.mode == "paid" and actual_return in (0, 2)
+    assert s.sources[s.completed] >= actual_return
+    stocks = list(s.sources)
+    stocks[s.completed] -= actual_return
+    t = replace(s, fuel=s.fuel+actual_return, sources=tuple(stocks),
+                bit=actual_return//2, mode="returned")
+    assert native_energy(t) == native_energy(s)
+    return t
+
+
+def native_read(s, channel="faithful"):
+    native_check(s)
+    assert s.mode == "returned" and s.fuel >= 1
+    assert channel in {"faithful", "missing", "inverted"}
+    # The physical bit encodes actual return presence until this paid read.
+    observed = 1-s.bit
+    if channel == "inverted":
+        observed = 1-observed
+    t = replace(s, fuel=s.fuel-1, spent=s.spent+1,
+                bit=0 if channel == "missing" else observed,
+                mode="read_missing" if channel == "missing" else "read_known")
+    assert native_energy(t)+1 == native_energy(s)
+    return t
+
+
+def native_write(s, learning="acquire"):
+    native_check(s)
+    assert s.mode in {"read_known", "read_missing"} and s.fuel >= 1
+    assert learning in {"acquire", "update_disabled"}
+    n = s.numerator
+    if learning == "update_disabled":
+        n = 0
+    elif s.mode == "read_known":
+        n = n//2+4*s.bit
+    count = s.completed+1
+    t = replace(s, fuel=s.fuel-1, spent=s.spent+1, numerator=n,
+                completed=count, bit=0, mode="closed" if count == 3 else "ready")
+    native_check(t)
+    assert native_energy(t)+1 == native_energy(s)
+    return t
+
+
+def exact_three_bit_estimate(bits):
+    """Closed-form oracle for three honest acquired bits from zero."""
+    assert len(bits) == 3 and all(b in (0, 1) for b in bits)
+    return bits[0]+2*bits[1]+4*bits[2]
+
+
+def decision(n, *, arm, transfer="positive", valuation="learned", surcharge=0, suppressed=False):
+    """Choice oracle contains no physical truth or private-return parameter."""
+    assert 0 <= n <= 7 and surcharge >= 0
+    assert arm in {"shared", "identity_gated", "conventional"}
+    assert transfer in {"positive", "absent", "inverted"}
+    assert valuation in {"learned", "fixed7"}
+    if arm == "identity_gated" or transfer != "positive" or suppressed:
+        return False
+    value = 7 if valuation == "fixed7" else n
+    if arm == "conventional":
+        # Explicit independent table for the frozen tariffs 8 and 9.
+        if surcharge == 0:
+            return (False, False, False, False, False, False, False, True)[value]
+        if surcharge == 1:
+            return False
+    return Fraction(5*value, 4) > 8+surcharge
+
+
+def read_enabled(*, port_mode, native_count, core_phase, fuel):
+    return port_mode == "idle" and native_count == 3 and core_phase == "ready" and fuel >= 1
+
+
+def assessment_enabled(*, port_mode, native_count, current, same_destination,
+                       scope, candidate, supported, fuel):
+    # Factual eligibility and evaluation survive permission/delivery loss.
+    # Those interventions block action, rather than refute the reason.
+    return (port_mode == "read" and native_count == 3 and current and same_destination
+            and scope and candidate == supported and supported in (0, 1)
+            and fuel >= 1)
+
+
+def use_start_enabled(*, port_mode, current, same_destination, scope,
+                      permission, delivery, core_phase, source, candidate, supported):
+    # Original RI rent/miss separately checks active state and available fuel.
+    return (port_mode == "assessed_help" and current and same_destination
+            and scope and permission and delivery and core_phase == "ready" and source >= 10
+            and candidate == supported and supported in (0, 1))
+
+
+def replacement_enabled(*, native_count, first_closed, old_port_present, old_port_mode,
+                        core_phase, spare_accessible, spare_used, reserve):
+    return (native_count == 3 and first_closed and core_phase == "ready"
+            and (not old_port_present or old_port_mode == "consumed")
+            and spare_accessible and not spare_used and reserve >= 1)
+
+
+def strict_design_account():
+    """Prospective identity only; not an executed witness or a validation run."""
+    return dict(initial=476, parent_prefix=351, new_construction=26,
+                native_service=12, first_service=10, later_service=11,
+                recipient=60, isolated_native_source=6)

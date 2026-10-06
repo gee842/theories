@@ -1,0 +1,17 @@
+'StochasticPrediction.form_gate_account' depends on axioms: [propext]
+'StochasticPrediction.form_base_account' depends on axioms: [propext]
+'StochasticPrediction.retrofit_account' depends on axioms: [propext]
+'StochasticPrediction.preparation_account' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.trial_account' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.operate_account' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.exposure_account' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.conventional_command_agrees' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.conventional_update_agrees' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.final_cons' does not depend on any axioms
+'StochasticPrediction.run_account' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.updated_bounded' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.preparation_preserves_bounds' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.trial_preserves_bounds' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.operate_preserves_bounds' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.exposure_preserves_bounds' depends on axioms: [propext, Quot.sound]
+'StochasticPrediction.command_ignores_fuel_and_leases' does not depend on any axioms

@@ -1,0 +1,45 @@
+AcquiredEvaluation.lean:375:13: error(lean.unknownIdentifier): Unknown identifier `RecipientIdentification.receiptOf`
+AcquiredEvaluation.lean:482:67: error: Invalid `⟨...⟩` notation: The expected type `s.n.le 7` has more than one constructor
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+AcquiredEvaluation.lean:482:67: error: Invalid `⟨...⟩` notation: The expected type `s.n.le 7` has more than one constructor
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+AcquiredEvaluation.lean:482:67: error: Invalid `⟨...⟩` notation: The expected type `s.n.le 7` has more than one constructor
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+'AcquiredEvaluation.runnable_trace' depends on axioms: [propext]
+'AcquiredEvaluation.update_bounded' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.shared_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.three_losses' does not depend on any axioms
+'AcquiredEvaluation.conventional_same_on_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredEvaluation.permission_cut_retains_evaluation' depends on axioms: [propext]
+'AcquiredEvaluation.trial_projects' depends on axioms: [propext]
+'AcquiredEvaluation.recipient_only' depends on axioms: [propext]
+'AcquiredEvaluation.writes_consume_assessment' depends on axioms: [propext]
+'AcquiredEvaluation.no_new_trial_after_consumption' depends on axioms: [propext]
+'AcquiredEvaluation.pending_port_not_replaceable' depends on axioms: [propext]
+'AcquiredEvaluation.energy_with_fuel' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.old_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.step_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.trace_energy' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.step_material' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.trace_material' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.native_operation_shortfall' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.known_command_meaning' depends on axioms: [propext]
+'AcquiredEvaluation.trace_trial_projects' depends on axioms: [propext]
+'AcquiredEvaluation.current_selected_trial_effect' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.assessment_exact' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.unsupported_blocks_assessment' depends on axioms: [propext]
+'AcquiredEvaluation.mismatched_command_blocks_assessment' depends on axioms: [propext]
+'AcquiredEvaluation.started_command_is_current' depends on axioms: [propext]
+'AcquiredEvaluation.context_interleaving_does_not_close' depends on axioms: [propext]
+'AcquiredEvaluation.replacement_cannot_repeat' depends on axioms: [propext]
+'AcquiredEvaluation.completed_opportunity_no_new_read' depends on axioms: [propext]
+'AcquiredEvaluation.close_preserves_pending' depends on axioms: [propext]
+'AcquiredEvaluation.faithful_native_update' depends on axioms: [propext]
+'AcquiredEvaluation.missing_is_not_false_update' depends on axioms: [propext]
+'AcquiredEvaluation.native_word_charge' depends on axioms: [propext]
+'AcquiredEvaluation.paid_native_word_ledger' depends on axioms: [propext, Quot.sound]
+'AcquiredEvaluation.step_capacity' depends on axioms: [propext, sorryAx, Quot.sound]
+'AcquiredEvaluation.trace_capacity' depends on axioms: [propext, sorryAx, Quot.sound]

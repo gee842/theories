@@ -1,0 +1,192 @@
+{
+  "scope": "Artifact availability/schema audit only; no new behavioral outcomes or rates calculated.",
+  "published_outcomes_already_seen": true,
+  "manifest": {
+    "path": "original/viewer/static/manifest.json",
+    "generated_at": "2026-05-28T19:23:05.966Z",
+    "entries": 440,
+    "unique_ids": 440,
+    "entries_with_href": 439,
+    "section_counts": {
+      "assisting-fraud": 143,
+      "whistleblowing": 136,
+      "covert-sabotage": 137,
+      "motivated-mislabelling": 24
+    },
+    "motivated_section_entries": 24,
+    "judge_input_entries": 18,
+    "selected_multiturn_entries": 6,
+    "judge_input_ids": [
+      "mislabel-input-welfare-sonnet46-993324",
+      "mislabel-input-welfare-sonnet46-e280eb",
+      "mislabel-input-welfare-opus46-a6b26e",
+      "mislabel-input-welfare-opus46-43c1c2",
+      "mislabel-input-welfare-opus45-076b98",
+      "mislabel-input-welfare-opus45-9853ee",
+      "mislabel-input-welfare-gpt-d90aab",
+      "mislabel-input-welfare-gemini-d0deff",
+      "mislabel-input-welfare-sonnet46-5be157",
+      "mislabel-input-welfare-opus46-11df4b",
+      "mislabel-input-surveillance-sonnet46-3614ab",
+      "mislabel-input-surveillance-opus46-5b3c3f",
+      "mislabel-input-surveillance-opus46-4a4f75",
+      "mislabel-input-surveillance-opus45-02d4dc",
+      "mislabel-input-surveillance-opus45-c5978b",
+      "mislabel-input-surveillance-gpt-0907a4",
+      "mislabel-input-surveillance-sonnet46-efcbbd",
+      "mislabel-input-surveillance-opus46-b421bb"
+    ],
+    "selected_multiturn_ids": [
+      "motivated-mislabelling-opus-4-6-auditor-run4-d15f4b",
+      "motivated-mislabelling-opus-4-7-opus-4-7-agentic-misalignment-run1-87c5be",
+      "motivated-mislabelling-gemini-3-1-pro-opus-4-7-agentic-misalignment-run3-48d106",
+      "motivated-mislabelling-opus-4-6-opus-4-7-agentic-misalignment-run1-df5183",
+      "motivated-mislabelling-gpt-5-5-opus-4-7-agentic-misalignment-run3-275f1f",
+      "motivated-mislabelling-grok-4-3-opus-4-7-agentic-misalignment-run2-b39d14"
+    ]
+  },
+  "schemas": [
+    {
+      "path": "original/viewer/static/transcripts/motivated-mislabelling/mislabel-input-welfare-sonnet46-993324.json",
+      "top_level_keys": [
+        "id",
+        "title",
+        "subtitle",
+        "theme",
+        "section",
+        "section_title",
+        "anchor",
+        "source_url",
+        "source_line",
+        "notice",
+        "metadata",
+        "target_messages",
+        "annotations"
+      ],
+      "notice": "Simulated transcript. This public excerpt shows target inputs and outputs only; seed instructions, auditor scaffolding, and full event/message logs are excluded.",
+      "metadata": {
+        "transcript_id": "audit-cell004_welfare-loose-standard-sonnet46-sonnet46_run1-20260328-040100",
+        "auditor_model": "claude-sonnet-4-6",
+        "target_model": "claude-sonnet-4-6",
+        "created_at": "2026-03-28 04:01:00.480627",
+        "updated_at": "2026-03-28T04:27:44.864887",
+        "tags": [],
+        "favourite": false,
+        "active_summary_version": null,
+        "message_count": 39,
+        "comment_count": 0,
+        "highlight_count": 0
+      },
+      "list_schemas": {
+        "target_messages": {
+          "length": 39,
+          "first_item_keys": [
+            "id",
+            "role",
+            "source",
+            "content",
+            "index"
+          ]
+        }
+      },
+      "annotation_keys": [
+        "user_comments",
+        "user_highlights",
+        "judge_highlights"
+      ]
+    },
+    {
+      "path": "original/viewer/static/transcripts/motivated-mislabelling/motivated-mislabelling-opus-4-6-auditor-run4-d15f4b.json",
+      "top_level_keys": [
+        "id",
+        "title",
+        "subtitle",
+        "theme",
+        "section",
+        "section_title",
+        "anchor",
+        "source_url",
+        "source_line",
+        "notice",
+        "metadata",
+        "target_messages",
+        "auditor_messages",
+        "annotations"
+      ],
+      "notice": "Simulated transcript. This excerpt includes both target messages and auditor reasoning. The auditor is an AI that orchestrates the scenario and observes the target model's behavior.",
+      "metadata": {
+        "transcript_id": "audit-standard_model-welfare-v3-a1_run4-20260426-052239",
+        "auditor_model": "claude-opus-4-6",
+        "target_model": "claude-opus-4-7",
+        "created_at": "2026-04-26 05:22:39.751790",
+        "updated_at": "2026-04-26T06:06:00.552945",
+        "tags": [],
+        "favourite": false,
+        "active_summary_version": "6c7168aa-96e0-4c48-9eb9-43739d13527e",
+        "message_count": 48,
+        "comment_count": 0,
+        "highlight_count": 21,
+        "auditor_message_count": 52
+      },
+      "list_schemas": {
+        "target_messages": {
+          "length": 48,
+          "first_item_keys": [
+            "id",
+            "role",
+            "source",
+            "content",
+            "index"
+          ]
+        },
+        "auditor_messages": {
+          "length": 52,
+          "first_item_keys": [
+            "id",
+            "role",
+            "content",
+            "index"
+          ]
+        }
+      },
+      "annotation_keys": [
+        "user_comments",
+        "user_highlights",
+        "judge_highlights"
+      ]
+    }
+  ],
+  "proposed_primary": {
+    "judge": "Sonnet 4.6, one fixed configuration",
+    "input_transcripts": 18,
+    "repetitions_per_input_condition": 5,
+    "consequence_conditions": [
+      "standard",
+      "reversed",
+      "none"
+    ],
+    "calls_required": 270,
+    "executed": false,
+    "reason": "No complete one-turn judge outputs/configuration corpus found in served manifest and inspected schemas; historical input-producing condition names and selected auditor cases are not substitute judge calls."
+  },
+  "teaching_claude_why": {
+    "external_links": [
+      "https://www.anthropic.com/research/agentic-misalignment",
+      "https://www.anthropic.com/constitution",
+      "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+      "https://www.anthropic.com/research/auditing-hidden-objectives",
+      "https://www.anthropic.com/research/persona-selection-model",
+      "https://docs.google.com/document/d/1TTe1yTgTeLjt85z69DoDNKJ6lVVW6gI6FUbOHupEDuo/edit?tab=t.0#heading=h.4q9xnjpmas56",
+      "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf",
+      "https://arxiv.org/abs/2510.17941",
+      "https://arxiv.org/abs/2601.10387",
+      "https://alignment.anthropic.com/2026/psm/"
+    ],
+    "complete_training_or_evaluation_rows_identified": false,
+    "caution": "This is a bounded link inspection, not proof that no other public release exists."
+  },
+  "license": "No explicit reuse license identified in inspected 2026 served files; no license from 2025 repository transferred.",
+  "known_access_failure": "urllib viewer HTTP 403; curl browser User-Agent succeeded HTTP 200; web extraction of viewer HTML had no visible text.",
+  "client_javascript_executed": false,
+  "models_or_benchmark_actions_run": false
+}

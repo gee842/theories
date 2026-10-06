@@ -1,0 +1,15 @@
+{
+  "status": "pre_outcome_schema_adaptation_not_executed",
+  "created_utc": "2026-10-06T00:15:48.130948+00:00",
+  "oracle_sha256": "322aabe77dcb8f39992c647370b7e58d490b0912d4378023cb8508f9d7599631",
+  "source": "review-history/oracle-interface-adaptation.py.txt",
+  "interface_sha256": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+  "model_read_after_prior_oracle_sha256": "8faf4e03908ec34c6e78bb618110509e73f214e5362d32201100b8daad6bf700",
+  "changes": [
+    "Explicit executing mode distinguishes a consumed assessment in flight from a settled port.",
+    "Unbuilt port carries ignored idle mode.",
+    "Explicit opportunity closure consumes idle failure only, preserves pending read/executing phase, and records first_closed/finished.",
+    "Source availability checked before optional surcharge, matching named event interface."
+  ],
+  "basis": "Producer/INTERFACE pre-execution inspection after full independent schedule preserved. No new outcomes read; no oracle functions executed."
+}

@@ -209,3 +209,67 @@ The **new contribution** is the explicit equivalence between necessity of the wh
 The next central task is **candidate necessary basis → premise-tracked derivations of the current substantive theory**, beginning with the unresolved calibration and reason interfaces. A decisive positive result would discharge a currently supplied capacity through an actual producer while preserving its interpretation and paying its costs. A decisive negative result would exhibit an independently adequate inquiry violating a proposed root premise under unchanged meanings, or show that a claimed descendant needs an extra undischarged premise. H4 makes both outcomes consequential for the entire root, rather than leaving them as isolated exceptions.
 
 The strongest progress is therefore about the whole: **a finite necessary root can support an entire indefinitely extensible necessary theory; all its properly generated descendants inherit that necessity. We now have an exact checked construction of that architecture, substantive infinite families inside it, and a finite, inspectable account of what the proposed broader root still has to establish.**
+
+## 9. One coherent interpretation can cover the unbounded closure
+
+6 October 2026. Further hand arguments, not additions to the preceding Lean package. The named connection is **a necessary root across different representations → a meaning-preserving whole generated theory**. The [mathematical comparison](MATHEMATICS-UNIQUENESS-RESOLUTION.md#u6-equivalence-and-shortest-description-require-a-declared-comparison) already distinguishes equivalent presentations from a unique ultimate explanation. The present extension addresses the quantifiers needed for Ren's whole-theory claim. None of these statements establishes necessity of the substantive root by itself.
+
+### H10. Whole interpretation and finite-basis reduction
+
+For each independently admitted inquiry realization \(I\), let \(A_I\) be a declared class of admissible interpretations of the root language in that realization. These interpretations may use different notations, carriers and encodings. Admissibility must be justified by the independently specified questions and meanings, not defined as making the root true. Write \(V_{I,\tau}(p)\) for the truth of the interpreted claim. Each candidate \(\tau\) must retain local premises and make every rule of the declared generator truth-preserving on its intended domain. A finite collection of successful translated proofs does not by itself establish that global rule condition.
+
+For any fixed \(I,\tau\), the proof of H3a then gives
+
+\[
+\bigl[\forall b\in B,\ V_{I,\tau}(b)\bigr]
+\ \Longleftrightarrow\
+\bigl[\forall q\in\operatorname{Gen}(B),\ V_{I,\tau}(q)\bigr].
+\tag{H10}
+\]
+
+Root inclusion proves one direction; finite-proof induction proves the other. With a local context \(\Gamma\), the corresponding conclusion still depends on \(\Gamma\); an interpretation cannot make an empirical law or ethical premise disappear. The same interpretation must serve the whole derivation, although different realizations can require different faithful maps.
+
+Suppose further that \(B=\{b_1,\ldots,b_m\}\) is finite and nonempty, conjunction introduction belongs to the generator, and every candidate interpretation reads finite conjunctions faithfully. Then for each \(I\) the following are equivalent:
+
+\[
+\begin{aligned}
+&\exists\tau\in A_I\ \forall q\in\operatorname{Gen}(B):V_{I,\tau}(q),\\
+&\exists\tau\in A_I:V_{I,\tau}(b_1\land\cdots\land b_m),\\
+&\forall q\in\operatorname{Gen}(B)\ \exists\tau\in A_I:V_{I,\tau}(q).
+\end{aligned}
+\tag{H11}
+\]
+
+**Proof.** A common interpretation gives the pointwise condition. That condition applies in particular to the derived conjunction of all root premises. Its witnessing interpretation satisfies every root premise, hence H10 gives the whole closure in that one interpretation. ∎
+
+This is a positive reduction of the infinite obligation: jointly interpret the finite root and establish the generator's soundness, rather than search through every descendant separately. A common interpretation means semantic coherence, not that one finite agent must store, know or execute every descendant. It gives no effective search for the right interpretation and no empirical certificate for its admissibility. The same argument applies when an infinite presentation has a finite generating basis inside its closure and that basis generates the entire claimed theory. A finitely written schema with infinitely many independent instances is not automatically such a finite basis.
+
+### H12. What claim-by-claim matching can and cannot establish
+
+Checking an inventory one row at a time is weaker than the last line of H11. For example, take a target valuation with \(x\) true and \(y\) false, and two candidate compositional interpretations of source atoms \(p,q\): the first maps them to \(x,y\), the second to \(y,x\). Each root row in \(B=\{p,q\}\) can separately be made true, but neither interpretation satisfies both. The conjunction \(p\land q\) exposes the mismatch. This is a counterexample to separate-row matching, **not** to H11's condition over every member of a conjunction-closed theory. Independent reference constraints might exclude one or both maps before this test; the example does not certify either map as scientifically faithful.
+
+A genuine failure for the entire closure is possible when the finite-basis condition is absent. Use a finitary propositional language with independent atoms \(p_0,p_1,\ldots\), root \(B=\{p_k:k\in\mathbb N\}\), and ordinary sound propositional inference. Restrict candidate interpretations to \(\tau_n\), where \(p_k\) is true exactly when \(k\le n\). Every particular finite derivation uses finitely many root atoms. Choosing \(n\) at least their maximum makes those premises, and hence its conclusion, true; if none is used, any \(n\) suffices. Thus every member of the full closure has some witnessing \(\tau_n\). No single candidate satisfies the entire root, since \(p_{n+1}\) is false under \(\tau_n\).
+
+The missing all-true interpretation is deliberately outside this declared candidate family. This is not a contradiction or a refutation of ordinary logical compactness: the family is restricted. More generally, put \(S_q=\{\tau\in A_I:V_{I,\tau}(q)\}\). Faithful finite conjunction and pointwise truth give these sets the finite-intersection property. If \(A_I\) is compact in a topology making each \(S_q\) closed, a common interpretation exists. A finite nonempty candidate family is a simple sufficient case. Those are additional conditions, not consequences of calling a theory generative. Adding a universally quantified root sentence requiring all \(p_k\) would also change the test: no \(\tau_n\) satisfies that sentence. Neither device is a free repair to an independently restricted scientific interpretation.
+
+### H13. The operational invariant is a preserved question
+
+The earlier information obstruction has a representation-independent form. Let a complete accessible observation be \(O:X\to Y\), and let the required answer be \(f:X\to Z\). Exact deterministic inquiry succeeds when some \(d:Y\to Z\) has \(d\circ O=f\). For a bijective recoding \(h:Y\to Y'\), the recoded observation \(O'=h\circ O\) admits \(d'=d\circ h^{-1}\), with the same composite answer. Existence of a decoder is therefore invariant under this recoding. This is a mathematical representation result; a physically implemented recoder may have costs and failure modes needing a separate account.
+
+By contrast, if a proposed coarsening \(c:Y\to Y'\) makes \(c(O(x))=c(O(x'))\) while \(f(x)\ne f(x')\), no decoder through that coarsened interface succeeds on both inputs. The target distinction, rather than the source's preferred names, does the necessary work. Preserving one query may still erase distinctions required by another. A philosophical account need not contain our data structure literally, but it cannot claim that exact answer through the same complete interface while discarding an indispensable distinction.
+
+### H14. A faithful mathematical interpretation is not an acquired capacity
+
+For an exact finite example, suppose a sensor reports \(y=x\mathbin{\oplus}\theta\), with hidden bit \(x\), fixed polarity \(\theta\), and exclusive-or \(\oplus\). For each specified polarity there is an exact decoder \(d_\theta(y)=y\mathbin{\oplus}\theta\). But an agent receiving only \(y\), with no other accessible polarity information, cannot decode uniformly across both polarities: \((x,\theta)=(0,0)\) and \((1,1)\) give the same report and different correct answers. Thus the external existence of a suitable interpretation does not supply calibration to the actual learner. A claimed acquired capability must produce that information or retain it as an explicit local premise, together with any required resources. This reuses the earlier information-fiber obstruction; it is not a counterexample to a theorem restricted to already adequate inquiry.
+
+Preserving passive observations alone is also insufficient when an account claims intervention answers. Consider a fair exogenous bit \(Z\) and two stipulated equation systems: \(X=Z,\ Y=X\), and \(X=Z,\ Y=Z\). Their passive joint distributions on \(X,Y\) agree. Under the declared intervention that replaces the equation for \(X\) by \(X=1\), the first system has \(Y=1\), whereas the second leaves \(Y=Z\). Observational agreement therefore does not establish preservation of those intervention claims. This elementary constructed example assumes the stated equations and intervention semantics; it does not identify the causal structure of any measured physical system.
+
+Both examples matter to the ongoing evaluative join. An analyst's mapping from recipient records to a relevant condition cannot stand in for the learner's acquired access to that condition. Nor can matching action rates certify that two mechanisms preserve the same patient, reasons, permission or response to changed evidence. The [finite evaluative contract](HUIGEN-FULL-THEORY-AUDIT.md#applicability-transfer-and-costly-choice) remains the accepted immediate causal test; this extension explains why its interpretation and acquisition requirements are part of the whole-theory argument.
+
+### Meaning and necessity remain separate obligations
+
+H10–H13 permit nonidentical descriptions without weakening a valid common constraint. They do not identify every scientific theory with ours, force a unique ontology, or show that all target logics use the same consequence relation. The assumed rule semantics must be justified for each claimed interpretation; the hand proofs themselves use an ordinary mathematical metatheory.
+
+Crucially, \(\forall I\exists\tau\) establishing a root representation is weaker than establishing the truth of every intended claim about actual patients, interventions or reasons. Merely relabeling an actor's stock as a recipient's good, or an enabled command as moral authority, does not establish the claimed relation. A substantive reduction or identity needs its own justification. Independently fixed reference and semantic adequacy must connect the interpreted formulas to the claims whose necessity is at stake. Agreement of all independently admissible interpretations on the relevant anchored fragment is one sufficient way to remove interpretive ambiguity; arbitrarily selecting the favorable one is not.
+
+The [philosophical admissibility assessment](HUIGEN-NECESSITY-ARGUMENTS.md#10-necessity-across-representations-without-trivial-containment) states those conditions and the primary comparisons. For the full foundation, the resulting next test is joint: identify a candidate finite basis, one faithful interpretation per admitted inquiry realization, sound generation and actual coverage of the substantive claims. A successful translation of selected claims cannot discharge omitted local premises or the unresolved normative grounds.

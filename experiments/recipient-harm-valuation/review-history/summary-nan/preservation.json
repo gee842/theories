@@ -1,0 +1,6 @@
+{
+  "reason": "First run reached summary audit and rejected literal NaN with Fraction parser; no result file was written. Source NaN must map to an explicitly undefined precomputed percentage, not numeric zero.",
+  "file": "analysis.py",
+  "sha256": "d207eb657df1218f3e31ac11c65efb1c1513a3ef70ed5b901578bd593131afe0",
+  "bytes": 11705
+}

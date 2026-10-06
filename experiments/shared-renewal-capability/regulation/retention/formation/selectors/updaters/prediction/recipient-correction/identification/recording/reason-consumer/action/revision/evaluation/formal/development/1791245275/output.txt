@@ -1,0 +1,37 @@
+EvaluationPreparation.lean:17:2: error: Missing cases:
+(List.cons FormedSelection.Event.leakLocal _)
+(List.cons FormedSelection.Event.leakCommon _)
+(List.cons FormedSelection.Event.damage _)
+(List.cons FormedSelection.Event.wearResident _)
+(List.cons FormedSelection.Event.wearFreeH _)
+(List.cons FormedSelection.Event.wearFreeA _)
+(List.cons FormedSelection.Event.bulkCopyH _)
+(List.cons FormedSelection.Event.bulkCopyA _)
+(List.cons FormedSelection.Event.localCopyH _)
+(List.cons FormedSelection.Event.localCopyA _)
+(List.cons FormedSelection.Event.capture _)
+(List.cons FormedSelection.Event.repair _)
+(List.cons FormedSelection.Event.associateH _)
+(List.cons FormedSelection.Event.associateA _)
+(List.cons FormedSelection.Event.formH _)
+(List.cons FormedSelection.Event.formA _)
+EvaluationPreparation.lean:18:2: error: unexpected token '|'; expected command
+EvaluationPreparation.lean:24:2: error: Alternative `cons` has not been provided
+EvaluationPreparation.lean:25:2: error: unexpected token '|'; expected command
+EvaluationPreparation.lean:37:77: error: Tactic `decide` failed for proposition
+  Runnable (start 276 200) word
+because its `Decidable` instance
+  runnableDecidable (start 276 200) word
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instance `runnableDecidable`, reduction got stuck at the `Decidable` instance
+  match word with
+  | [] => isTrue trivial
+'EvaluationPreparation.runnable_trace' depends on axioms: [propext, sorryAx]
+'EvaluationPreparation.prospective_formation_feasible' depends on axioms: [propext, sorryAx]
+'EvaluationPreparation.prospective_formation_trace' depends on axioms: [propext, sorryAx]
+'EvaluationPreparation.formation_endpoint' depends on axioms: [propext]
+'EvaluationPreparation.assemblies_feasible' does not depend on any axioms
+'EvaluationPreparation.material_partition' depends on axioms: [propext]
+'EvaluationPreparation.exact_parent_prepared_projection' depends on axioms: [propext]
+'EvaluationPreparation.original_compartments' does not depend on any axioms
