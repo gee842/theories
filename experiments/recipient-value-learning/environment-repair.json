@@ -1,0 +1,27 @@
+{
+  "recorded_at_utc": "2026-10-06T00:40:20.753614+00:00",
+  "scope": "Dependency repair before either successful scientific run; no source, estimand or analysis code change.",
+  "initial_failure": "Bundled Python had NumPy but not SciPy; both estimators stopped at import, before data reading.",
+  "interpreter": "/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "isolated_dependency_directory": "/tmp/ren-recipient-value-deps",
+  "installation_arguments": [
+    "-m",
+    "pip",
+    "install",
+    "--target",
+    "/tmp/ren-recipient-value-deps",
+    "--no-deps",
+    "scipy==1.15.3"
+  ],
+  "bundled_dependency_directory_modified": false,
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.15.3",
+  "student_t_sanity_check": {
+    "df": 30,
+    "probability": 0.975,
+    "quantile": 2.0422724563012373
+  },
+  "unchanged_analysis_sha256": "64b26c5442bca23e3a763b9e7b002040b517910e543ccda302dc2311afcf9712",
+  "unchanged_protocol_sha256": "6f105f981cb904b45574543d296fae1e10114f322cbe842473180ea607f7a3fb",
+  "protocol_freeze_sha256": "83133aa2f44edea95a81e7c761e5d4c6341c1834c11ca13838eb16e787127732"
+}

@@ -1,0 +1,408 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-06T00:53:42.717423+00:00",
+  "scope": "Preservation and integration check, not a new numerical analysis or external peer review",
+  "numerical_receipt_sha256": "8517594f9ce98bb4fc34ce082debd3e40aa6533333005cd3631f6d75cd9c9c13",
+  "final_review_receipt_sha256": "8bdb53761caa2aaa66f58707e4f9df28d217e4054682ba1875c692e969c4be93",
+  "review_bound_files_current": 24,
+  "numerical_bound_files_current": 11,
+  "source_original_hashes_and_sizes_verified": 398,
+  "local_link_targets_checked": 89,
+  "links": [
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "IDENTIFICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../sources/32-mental-state-reward-learning-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../experiments/recipient-value-learning/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../experiments/recipient-value-learning/protocol-freeze.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../experiments/recipient-value-learning/analysis.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../experiments/recipient-value-learning/independent_check.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../experiments/recipient-value-learning/independent-check.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../experiments/recipient-value-learning/environment-repair.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../experiments/recipient-value-learning/independent-execution-log.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "development/IDENTIFICATION-before-reporting-clarification.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md#one-discriminating-contrast-that-would-change-the-account"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+      "target": "development/IDENTIFICATION-before-reporting-clarification.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+      "target": "../../../../experiments/recipient-value-learning/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+      "target": "../conceptual-evidence.md#7-four-primary-empirical-anchors-with-narrow-claims"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/PROSPECTIVE-REVIEW.md",
+      "target": "../../../../experiments/recipient-value-learning/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/PROSPECTIVE-REVIEW.md",
+      "target": "IDENTIFICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/PROSPECTIVE-REVIEW.md",
+      "target": "prospective-review.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "PROSPECTIVE-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "../../../../sources/32-mental-state-reward-learning-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "../../../../experiments/recipient-value-learning/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "IDENTIFICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "../../../../experiments/recipient-value-learning/independent-check.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "../../../../experiments/recipient-value-learning/independent-execution-log.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "development/IDENTIFICATION-before-reporting-clarification.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md",
+      "target": "review-receipt.json"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "independent-check.json"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "../../sources/32-mental-state-reward-learning-2026-10-06/README.md"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "results.json"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "../../_process/research/2026-10-05-concern-theory/conceptual-evidence.md"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "protocol-freeze.json"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "analysis.py"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "verification.json"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "participants.json"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "prepared-trials.csv"
+    },
+    {
+      "document": "experiments/recipient-value-learning/README.md",
+      "target": "development/first-run-failure.txt"
+    },
+    {
+      "document": "experiments/recipient-value-learning/PROTOCOL.md",
+      "target": "../../sources/32-mental-state-reward-learning-2026-10-06/"
+    },
+    {
+      "document": "experiments/recipient-value-learning/PROTOCOL.md",
+      "target": "../../_process/research/2026-10-05-concern-theory/conceptual-evidence.md#7-four-primary-empirical-anchors-with-narrow-claims"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "../../experiments/recipient-value-learning/PROTOCOL.md"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/zhang-hackel-2025-psych-science.pdf"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "metadata/registration.json"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "metadata/osf-files.json"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "metadata/archive-files.json"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "metadata/file-metadata.json"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "metadata/license.json"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "metadata-verification.json"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/Experiment_3/data_raw_primary/Qualtrics/post_task_survey_3_anonymized.csv"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/Experiment_3/data_clean/data_3.csv"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/Experiment_3/code/cleaning_3.R"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/Experiment_3/code/analysis_3.R"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/codebook.xlsx"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/Experiment_3/study_materials/psychopy_task_3.zip"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "originals/Experiment_3/study_materials/qualtrics_survey_2.docx"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "audit_sources.py"
+    },
+    {
+      "document": "sources/32-mental-state-reward-learning-2026-10-06/README.md",
+      "target": "source-schema-audit.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../sources/32-mental-state-reward-learning-2026-10-06/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../experiments/recipient-value-learning/PROTOCOL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../experiments/recipient-value-learning/results.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/conceptual-evidence.md#7-four-primary-empirical-anchors-with-narrow-claims"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../experiments/recipient-value-learning/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../experiments/recipient-value-learning/independent-check.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "document": "experiments/README.md",
+      "target": "recipient-value-learning/README.md"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "32-mental-state-reward-learning-2026-10-06/README.md"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "../experiments/recipient-value-learning/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
+      "target": "../../2026-10-05-concern-theory/reward-association/INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/conceptual-evidence.md",
+      "target": "../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/conceptual-evidence.md",
+      "target": "../../../sources/32-mental-state-reward-learning-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-concern-theory/conceptual-evidence.md",
+      "target": "reward-association/INTEGRATION.md"
+    }
+  ],
+  "owned_shared_map_fragments": [
+    {
+      "path": "RESEARCH.md",
+      "fragment_sha256": "519b61ddd146b7fe56ede45e27d39fdfebdd9b0538bd5c0f1b59b2abe20487ef",
+      "occurrences": 1
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "fragment_sha256": "fe5295d20cded46417ee13a938ace2b73cd27bb5421a72bcf71cac5e44bc3eaf",
+      "occurrences": 1
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment_sha256": "65a875c1455b914bfb74eca2463c2643e2b43c935805288f438f1cf3a3bb7cb6",
+      "occurrences": 1
+    },
+    {
+      "path": "experiments/README.md",
+      "fragment_sha256": "277fd974f86b64b72a1f25c26a3e647932798a699a0067369c07659fd11ca8fb",
+      "occurrences": 1
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "fragment_sha256": "0242b128466bc79268cc812cdef1d665c5c74b8fa8e877ef6cb077159357c96e",
+      "occurrences": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
+      "fragment_sha256": "514ec8a4f9e01ab43c4dba0616bca051642a5297730c27e25ab5eb01fe46141d",
+      "occurrences": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-concern-theory/conceptual-evidence.md",
+      "fragment_sha256": "de53319fe5787246d5e1d8bb33f7b60779bf2295654442faa7d66fcda1757f0a",
+      "occurrences": 1
+    }
+  ],
+  "historical_copies": "Pre-output and superseded-review bytes remain unchanged; their relative paths retain original-location meaning. Active-document paths are checked separately.",
+  "full_foundation_complete": false
+}

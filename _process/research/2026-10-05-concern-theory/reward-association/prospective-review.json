@@ -1,0 +1,11 @@
+{
+  "status": "prospective scope accepted; new numerical computation not yet run",
+  "timing": "After publication/script/source-schema exposure; before new outcome aggregation",
+  "hashes": {
+    "experiments/recipient-value-learning/PROTOCOL.md": "6f105f981cb904b45574543d296fae1e10114f322cbe842473180ea607f7a3fb",
+    "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md": "4cec28f13f0384f1ab56eadf41f622a192174b2c9ff5374de876e64ba7702899",
+    "sources/32-mental-state-reward-learning-2026-10-06/manifest.json": "0971f94037dcc3e00fbc04cef7d694382f09c78441bdf3a35ffbe35940ff9f1d",
+    "experiments/recipient-value-learning/independent_check.py": "d6ea8c62df60b311dd607a8899c0495e8473c1ff122fc30278706680f9a15e84"
+  },
+  "checker_stage": "raw reconstruction and estimator core written; producer adapter not yet written; syntax-only check"
+}

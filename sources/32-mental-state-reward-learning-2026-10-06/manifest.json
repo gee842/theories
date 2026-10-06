@@ -1,0 +1,2406 @@
+{
+  "status": "source preservation and schema audit; no outcome analysis in this package",
+  "retrieved_utc": "2026-10-06T00:31:45.445792+00:00",
+  "archive": {
+    "url": "https://osf.io/download/367m5/",
+    "bytes": 54540908,
+    "sha256": "069107e3ebeb7d3aa71314edf40a85123192823aa52ab09ca9befb02fdafb376",
+    "osf_expected_sha256": "069107e3ebeb7d3aa71314edf40a85123192823aa52ab09ca9befb02fdafb376",
+    "retained": false,
+    "selection": "Exact selected original bytes; excludes other experiments, caches and editor metadata. Original task zip retained."
+  },
+  "paper": {
+    "url": "https://www.hackellab.org/media/zhang-hackel-2025-psych-science.pdf",
+    "path": "originals/zhang-hackel-2025-psych-science.pdf",
+    "bytes": 7877069,
+    "sha256": "fb26fb2f01ea7c6a7b3feeefbafd3e49d5541f6c996f1bda642370473c1508f6"
+  },
+  "selected_archive_members": [
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/ReadMe.rtf",
+      "path": "originals/ReadMe.rtf",
+      "bytes": 2732,
+      "sha256": "fbbc8188311912f40dabb912e01a86b8513d307ddeed9c3f618c30b53fc31794"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/renv.lock",
+      "path": "originals/renv.lock",
+      "bytes": 319797,
+      "sha256": "3343b18b6b07022d65def84d2a3ca8fb0df2e5a5efb79b97ff5b947b101e9303"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/codebook.xlsx",
+      "path": "originals/codebook.xlsx",
+      "bytes": 16111,
+      "sha256": "d5eb245f831352fbab11e63b760af1c0e564d1847f1097961193f231922efe8e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/study_materials/psychopy_task_3.zip",
+      "path": "originals/Experiment_3/study_materials/psychopy_task_3.zip",
+      "bytes": 15315318,
+      "sha256": "96aa485d374d87c7ec64676bd735f0a19e0614cce8325894031cc88bb4e81c1f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/study_materials/qualtrics_survey_2.docx",
+      "path": "originals/Experiment_3/study_materials/qualtrics_survey_2.docx",
+      "bytes": 37502,
+      "sha256": "0d947c2f5855f721088210a773249efff8454afa522dc66ad99d553038522b55"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/code/cleaning_3.R",
+      "path": "originals/Experiment_3/code/cleaning_3.R",
+      "bytes": 16769,
+      "sha256": "0127d0ca3e80e19d4bd5d66bdfbae885a4c86e1dbdf72b03784a6070a03e0b4b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/code/analysis_3.R",
+      "path": "originals/Experiment_3/code/analysis_3.R",
+      "bytes": 12622,
+      "sha256": "808618b6d95d2fc6145f039ea0338258010cac5cf9bfbc352ea0e7587a77e393"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/code/visualization_3.R",
+      "path": "originals/Experiment_3/code/visualization_3.R",
+      "bytes": 4891,
+      "sha256": "0cca36da0852d8f865ccee3c7290b6c0d1ecc67b8af7784561c203d695655acf"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_clean/data_3.csv",
+      "path": "originals/Experiment_3/data_clean/data_3.csv",
+      "bytes": 1645721,
+      "sha256": "843885218f17d97bb194171da9f3a7e8819357d1cc630167c4399a5455bfa5d8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P231_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P231_exp_3.csv",
+      "bytes": 26974,
+      "sha256": "8df08acee40c3c6de81ae1a6308cd5bea56bd43f1e98ebbe586d3550aee004f7"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P377_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P377_exp_3.csv",
+      "bytes": 27263,
+      "sha256": "a4fcf01e9f2734402f249f8ec5784897f7c56d2c85bf1e4fd04174d3f2f5374f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P188_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P188_exp_3.csv",
+      "bytes": 26920,
+      "sha256": "93af5f13c43b7a1b853b4af16b69c8e1ebb4f8e34f6adc400f9b306535ba0b12"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P141_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P141_exp_3.csv",
+      "bytes": 26998,
+      "sha256": "aaaddfc752909347071e146672e43a4e6fbe043ec4bff72534709c2591dbdc79"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P411_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P411_exp_3.csv",
+      "bytes": 27016,
+      "sha256": "031051366fb04d5ec3b47e7de3405c3b7528458c5122378e80aca210e3fc7bc9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P282_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P282_exp_3.csv",
+      "bytes": 27024,
+      "sha256": "f2a6a22417a0337625bc8de95b6522e1e0887eb240756d6cc0845c575ea931c8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P296_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P296_exp_3.csv",
+      "bytes": 26745,
+      "sha256": "67c9b63b851bc37f9bd049132870ede66c9008a476b37dea1c85af2093a7f62c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P405_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P405_exp_3.csv",
+      "bytes": 27008,
+      "sha256": "b3eea85868c609c2bf2020e7b1554147663a28d44ba7ba65ac532bd47790abc2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P319_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P319_exp_3.csv",
+      "bytes": 26495,
+      "sha256": "02d9e3f15564e97625c7199a20bc2bb9e9044cf2d1f4a11e223a59d9e040e15e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P155_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P155_exp_3.csv",
+      "bytes": 27010,
+      "sha256": "9fd8fc48ce085b9a9b360e92242a17d978d85cb2e149cbcc8770c79e840aee98"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P363_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P363_exp_3.csv",
+      "bytes": 26588,
+      "sha256": "baa8e9586a949ffda59ea6deea05fafe0c5acede251cc8cd0c129b681a171d83"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P225_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P225_exp_3.csv",
+      "bytes": 27017,
+      "sha256": "ab5e7dcae0c8b0422028f28e06dfa875ea0086845fde02994f0fd8605a0bd5a1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P338_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P338_exp_3.csv",
+      "bytes": 26911,
+      "sha256": "528c1a30a0d066b9e622a6066ce27fb0c6f11e8d093bd05c9d5f42872b1b0adc"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P424_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P424_exp_3.csv",
+      "bytes": 26852,
+      "sha256": "51b908b7c150b673aca6acc577d1fbbeb11e33d3e16c34ebcb6823e7803e7cdf"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P342_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P342_exp_3.csv",
+      "bytes": 27032,
+      "sha256": "37c74934e98d59121aa6df154909b01e8855f58e882a79e96885bf9428013871"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P174_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P174_exp_3.csv",
+      "bytes": 26969,
+      "sha256": "8be672b16f808a223990617f8912b9ca98c22b37ab27106067115cf3c1fa5825"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P204_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P204_exp_3.csv",
+      "bytes": 27005,
+      "sha256": "40a636e0f0403b888077c1fa7fe123a09246c067988c04f9f966d88a79580c39"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P210_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P210_exp_3.csv",
+      "bytes": 26940,
+      "sha256": "d55e7101240d301a5f5f32b8c442405f2f771b7cbd153c58ce4876bc88e97d70"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P160_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P160_exp_3.csv",
+      "bytes": 27036,
+      "sha256": "78fcd04f714d9cb3e48c0c7dc7b4b5d1048357406b584bab58cbb4c0af56fd2c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P483_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P483_exp_3.csv",
+      "bytes": 27028,
+      "sha256": "e4e45aedd7efa9c519c10d8684e029e0da0f7a1f0672d17960b02de90443eea8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P356_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P356_exp_3.csv",
+      "bytes": 26914,
+      "sha256": "f165f12b64e2154ae73360304109ad688c17f8e650aa6c3c1af0117bf2e8a6c5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P430_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P430_exp_3.csv",
+      "bytes": 26977,
+      "sha256": "2a4e5282c504d0999f5d3167b7c4e74005b29c0da5dc2fc20f104db0a5d2521d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P185_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P185_exp_3.csv",
+      "bytes": 26937,
+      "sha256": "8c9a28aee76d67cd432a84e817c9763c3d41333947c91ff0834d4a558e6e9ebf"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P466_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P466_exp_3.csv",
+      "bytes": 26815,
+      "sha256": "47826c224529e9d87e5b05b84ca8d305781e0b422f6a60b6dc7e808a1eeb2040"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P246_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P246_exp_3.csv",
+      "bytes": 26939,
+      "sha256": "94d9f47220c9c1c1bea4bcd48c2444a46115ee109fb35162c6e1031e4b71cb1a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P136_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P136_exp_3.csv",
+      "bytes": 27264,
+      "sha256": "04ec1b5948e1997989bba824eda0de063ae70483d4af9cf4b93c4bd5eee119f1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P300_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P300_exp_3.csv",
+      "bytes": 27036,
+      "sha256": "625d06d8eb66ad0e96fb8e04dbd17206b3b4ea786c4a704138faa17a2df43ba1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P314_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P314_exp_3.csv",
+      "bytes": 26973,
+      "sha256": "5548fffa0b0bb0a1dc4c398adc887a77f5d206a6d334a4543e4af9d3d0585f35"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P122_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P122_exp_3.csv",
+      "bytes": 26921,
+      "sha256": "d99ac4c7fe0e7baee6939da6384fe11f508b3a85d29998ce1637677be53108e4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P408_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P408_exp_3.csv",
+      "bytes": 26920,
+      "sha256": "5d63848806108c629849a219e276d1af475a268d00619997fdae7f8822d4c93e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P252_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P252_exp_3.csv",
+      "bytes": 27028,
+      "sha256": "528105db81877ce1c35e28c01f69e11e1d76878a31a70a6e1d1e09e0b492afdc"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P228_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P228_exp_3.csv",
+      "bytes": 27019,
+      "sha256": "d2aec7e4bdd41791e999c5c3ce03308a5accac6f0e9f253bf66fd03ab8eddb66"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P158_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P158_exp_3.csv",
+      "bytes": 27212,
+      "sha256": "a36e2dcbc85fb2972eb3fa0fa99783b2d2b1428c62820df645317f69aa26394c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P472_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P472_exp_3.csv",
+      "bytes": 26964,
+      "sha256": "fdecfadea080966edb5e24bc9ddf7a49e24830bc9d1a1d06eb6cb4e0c4a01e84"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P191_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P191_exp_3.csv",
+      "bytes": 26972,
+      "sha256": "7a6af28d6fb68202df014258ec4c8628b5be1641804209f251542702dc44b1a4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P429_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P429_exp_3.csv",
+      "bytes": 26997,
+      "sha256": "7fd2498e64ecacb1353482876a0022c68e843484a49fe8d1b268a060215b51d0"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P335_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P335_exp_3.csv",
+      "bytes": 27262,
+      "sha256": "4956ea4ceea6f7056258dac495e1d753c9c2d094ee3a218443925518e67fcff5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P273_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P273_exp_3.csv",
+      "bytes": 26868,
+      "sha256": "6ce2ec0fb9cda3bc3f677fe08db7aed500611207f5dfdf23a2f88fc85fcfd9e2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P209_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P209_exp_3.csv",
+      "bytes": 25997,
+      "sha256": "e08549b320f0d35e6f46862cf2d217b82e97aabe3ac0dc2bedb1933461219a7c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P453_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P453_exp_3.csv",
+      "bytes": 27002,
+      "sha256": "2ada23955465015aa9eb3b0cde1ed099987ef02bfb3544e6ab4b1e447892eace"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P179_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P179_exp_3.csv",
+      "bytes": 27039,
+      "sha256": "4afcf2a8dedab4a5fa5efcc8ffe4192cecbf7bbe5dba11409a09a7ec92158da3"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P386_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P386_exp_3.csv",
+      "bytes": 27270,
+      "sha256": "abc5cb57e30a8b235a24f9cff8c222bef187be4286f2e442495375ba5dfc0dd0"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P392_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P392_exp_3.csv",
+      "bytes": 26892,
+      "sha256": "1fe3ffe8bd8a9a395028ad0a038fdfbe051965f18b101433bfa10a3d7b5bd81d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P447_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P447_exp_3.csv",
+      "bytes": 27008,
+      "sha256": "83ab92e7bd339ae8a0651bdd9a4fdd62c2bae56928c31b4458ceae64e7234085"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P267_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P267_exp_3.csv",
+      "bytes": 27284,
+      "sha256": "087a66435c6d7dc72bddcbd8d1626022b26da76413b66006e23200be9895e066"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P321_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P321_exp_3.csv",
+      "bytes": 27158,
+      "sha256": "d4ae781da0ab6c51db3dc07c922f1049c79856ff542d80b6a9cc65609ecb8299"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P117_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P117_exp_3.csv",
+      "bytes": 26830,
+      "sha256": "db505f7c6a24d6410bbb197b29be3078501b17e8393de3222976b5e01a59c7ad"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P202_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P202_exp_3.csv",
+      "bytes": 27009,
+      "sha256": "6771528ee5e6bac6df0a424d8cb8047831aa1955435cb49f52851c71e21f2dd0"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P344_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P344_exp_3.csv",
+      "bytes": 27008,
+      "sha256": "b3a5a310f968954aa338701868d9f6cab25e664e1d4fddff9479e986e4b31959"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P491_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P491_exp_3.csv",
+      "bytes": 27004,
+      "sha256": "079fd893ed65a117e208750ff5a930b3ee048914b8539da477d22d518fe61a2f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P172_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P172_exp_3.csv",
+      "bytes": 27142,
+      "sha256": "ffbc3b88dddf01fa29a79406a0ad009f6d8986cf46bea194db505de18e0f289d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P458_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P458_exp_3.csv",
+      "bytes": 27309,
+      "sha256": "12df1548571c47120cd11467548f461bd3e41e5d2339b9f405b4428162662905"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P422_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P422_exp_3.csv",
+      "bytes": 27013,
+      "sha256": "c3e051762290e66b1f73a3cbefc283867b049039309d8c04546c3bd34479a60a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P278_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P278_exp_3.csv",
+      "bytes": 26991,
+      "sha256": "339fd846925486679fa178a651e46400674479e6a0c48e663089bd4ef9f971b0"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P436_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P436_exp_3.csv",
+      "bytes": 27031,
+      "sha256": "3223469963bc3d38c747967771c13d7508aaade3f1fe890d1f811e45f86ef917"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P166_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P166_exp_3.csv",
+      "bytes": 26998,
+      "sha256": "fd515dd9512f7276f33bb304f398364074fad4224cd16ea5518cb5d6d5239fb4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P485_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P485_exp_3.csv",
+      "bytes": 27030,
+      "sha256": "b69d52b4d764ec24dfebb7819aa154cd41b69f7f7122914f5616997d939867e4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P350_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P350_exp_3.csv",
+      "bytes": 26373,
+      "sha256": "9a1549183d721901c2b0de87911fb828bb41a8934b27a0c108c75906ffea7590"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P399_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P399_exp_3.csv",
+      "bytes": 26672,
+      "sha256": "b276bf289cb409683af01562721b8c6af52eaedea18001659635de02468eded6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P216_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P216_exp_3.csv",
+      "bytes": 26843,
+      "sha256": "dec31cfeece1b90b4258f7f03b29ef60928370f2b5772f5f58417623e5ba1943"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P284_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P284_exp_3.csv",
+      "bytes": 27002,
+      "sha256": "8cd401d2126c8d87c8ed96d3776fdfd7cdb57598b6d0720028c43bfc39e555fb"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P417_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P417_exp_3.csv",
+      "bytes": 26963,
+      "sha256": "910d84b4666f3cb8f658d0b15bceba0f9134a88ed87b86f68bf292bbec59908d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P371_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P371_exp_3.csv",
+      "bytes": 26998,
+      "sha256": "c88dd683d60e72763023d66cc73d6d40e3f2a1f0fadc5ac904c0dffbf24c01d4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P147_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P147_exp_3.csv",
+      "bytes": 27007,
+      "sha256": "7055080dd861e0d26779b6b2fdf4a4bc67353338daa899c37c79b9ca8d7f49ab"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P237_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P237_exp_3.csv",
+      "bytes": 27640,
+      "sha256": "1b746bf34d5973ee7d63695624048123815500d3d37cdfedced6663a85c531cc"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P223_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P223_exp_3.csv",
+      "bytes": 27024,
+      "sha256": "74726860f46a7e4a45d08190c20b6c2282eca70ccc4490e95cb18b6dbffc2db9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P479_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P479_exp_3.csv",
+      "bytes": 26986,
+      "sha256": "1095adfba1644fd067fc4b24b98fa108407b9ff1d09efdd81fa16053f429fcbb"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P153_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P153_exp_3.csv",
+      "bytes": 26992,
+      "sha256": "643fa7ad52ca14416fc4090e02c607bc7c42c8028345c6ed30e6ffdcbe8efb17"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P365_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P365_exp_3.csv",
+      "bytes": 27240,
+      "sha256": "978fd5c16628ecf6088b5c4df89e6f2562d5ae01f1a4d61889897c27c94167df"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P403_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P403_exp_3.csv",
+      "bytes": 26985,
+      "sha256": "02be49271af4d0d4777be4363c5359faa4f478d0eba662dad8ec3059dead2555"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P129_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P129_exp_3.csv",
+      "bytes": 26926,
+      "sha256": "5a8c9ef9375f1ad75c085db45abc2d022cbff95ee907c5e4c4ea17be51ebbbf6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P290_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P290_exp_3.csv",
+      "bytes": 19514,
+      "sha256": "76019d68c29a5b9782e0e16ff8b164e631e670118fae585cba4d5194bc5130c6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P259_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P259_exp_3.csv",
+      "bytes": 27605,
+      "sha256": "bbad3cce169eab5d53c8760138fcd9aa1c08eadcec3e5a0a48f541ddedfc4422"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P455_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P455_exp_3.csv",
+      "bytes": 26922,
+      "sha256": "89c71f036ed0fa8aee799a61ff368b446faab55c0722dd059a7ed7c460c0479a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P380_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P380_exp_3.csv",
+      "bytes": 26932,
+      "sha256": "efe9196aa8ed063071cc680dfffe8bff5926fa4de3fa4fbfe3cdc17cab51975e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P349_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P349_exp_3.csv",
+      "bytes": 26991,
+      "sha256": "db5509b362fb6ef1c088f616f730af0e45474ca8fb0b604205f7806b04786e4d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P275_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P275_exp_3.csv",
+      "bytes": 26419,
+      "sha256": "dd64c06e29c19b21c8fc6d75954b525eac09c60fea592b5319cabbb8d97f4b86"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P333_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P333_exp_3.csv",
+      "bytes": 27154,
+      "sha256": "fb875699598cabd4932d2b7c77d1eae7a3156a0708a66e0b86c1cb0183d13005"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P327_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P327_exp_3.csv",
+      "bytes": 26999,
+      "sha256": "7a516fb03be1af89b5aa2cced7bdf00f770096985453f169a85e972984f8fdc5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P111_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P111_exp_3.csv",
+      "bytes": 26876,
+      "sha256": "8798c27c6c2ada45f2e1d072f862d000789c3f4ccc6e5f525d12e78da034bc83"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P261_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P261_exp_3.csv",
+      "bytes": 27561,
+      "sha256": "707337aa85405ccf59ae72b4189fcd18c896fa9dd3d809f2057f223c1d89190b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P394_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P394_exp_3.csv",
+      "bytes": 26982,
+      "sha256": "f903595b845358d0b48de30ab100e217b81c2fe41e8ce11e80b02319efaa5a11"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P441_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P441_exp_3.csv",
+      "bytes": 26997,
+      "sha256": "5659694c57548a598146544c29771c384483733c20296e6ad8b73e8fccce2aaa"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P488_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P488_exp_3.csv",
+      "bytes": 27038,
+      "sha256": "d3f593e6efa4460dab9ea571ce80a65cd6585d369ecb4317cee543a926f9fff6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P130_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P130_exp_3.csv",
+      "bytes": 27013,
+      "sha256": "71a5df3d78d0aa390abd1886e4c87a12016a99c2d43a93b1cbba08cd1376c7af"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P306_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P306_exp_3.csv",
+      "bytes": 26910,
+      "sha256": "5c285f0e981b7c574042b33c3f8350a0b12ab94b20be28a7e129e8b7be4296e1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P240_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P240_exp_3.csv",
+      "bytes": 26802,
+      "sha256": "7145acadd57c2208542e7a9fea895050fbf42295a46c90e46122475bf0a7a40d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P289_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P289_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "166e52937cb43834c1a986ded90afb4990f76e27126eb3c8a15d4225ec41b88d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P183_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P183_exp_3.csv",
+      "bytes": 27030,
+      "sha256": "9db02ca46e55cb1cd07ec5797c2aba222f40e1803ef852dcf048846080dced92"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P460_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P460_exp_3.csv",
+      "bytes": 27278,
+      "sha256": "487ddcb491fe3e6161db1dfc8f2c72dc3a79bfcf0ef17058aaabc998669ce7b1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P368_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P368_exp_3.csv",
+      "bytes": 27125,
+      "sha256": "f335d9850ef72905b9355e0c4239133054074ac1f17fd1bdfbc25c8da3d48184"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P474_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P474_exp_3.csv",
+      "bytes": 26163,
+      "sha256": "40e81ccf012c6b17aeb975ea5d0653872f45b0993173d491fd169997440322a2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P197_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P197_exp_3.csv",
+      "bytes": 27634,
+      "sha256": "42ac00daafbc82cba586dd98053447300a0d8e4e912de5c7b856f209a477b550"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P254_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P254_exp_3.csv",
+      "bytes": 27655,
+      "sha256": "1fe616bec53dc8ed0ad942887cfb5437fd36dda415b340292d6ffbaa6b6f6d80"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P312_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P312_exp_3.csv",
+      "bytes": 27134,
+      "sha256": "46cd744d003b317be9ca56e865d557ef1652b85dc011f5836c9cc323629bb77c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P124_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P124_exp_3.csv",
+      "bytes": 26937,
+      "sha256": "21f1723ebcd000ce9ef5e86fa9a894ff2926bb8135f8de3be77240d699df6ca2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P404_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P404_exp_3.csv",
+      "bytes": 27008,
+      "sha256": "38dd3aecac4a392272645529f21fa65928b8c60be26f24954018c821e13c4828"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P318_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P318_exp_3.csv",
+      "bytes": 27106,
+      "sha256": "b09c001f1a2e712e7334f28ff1b6e47c8e0d1d8a7b62d313d4841454789e6995"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P297_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P297_exp_3.csv",
+      "bytes": 26912,
+      "sha256": "257d8982a151f295f28ba47aac9e7e8db0ffcd4b668f42759e41aed72a54b37f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P224_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P224_exp_3.csv",
+      "bytes": 26953,
+      "sha256": "0711c185a9787797b2e29d637cbcedf39558fa11ae44a10d4b1cf6a1fecb3dc1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P154_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P154_exp_3.csv",
+      "bytes": 26766,
+      "sha256": "939faafc23899d942021ada592a1abd113db2d611d555db325b7ce5bd0cce486"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P362_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P362_exp_3.csv",
+      "bytes": 26977,
+      "sha256": "d707002c0c90cee3c842483dff2eee2634a813375c3ca8b9edd1697089276647"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P376_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P376_exp_3.csv",
+      "bytes": 26952,
+      "sha256": "fc976a616b016d2ff173c742f0ae833af7c442e10ef452f380f01b8c4d184ad5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P189_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P189_exp_3.csv",
+      "bytes": 26868,
+      "sha256": "215e93f2fb4cf3e33f436892367e6e0f6991374da358b0f924679e95c17cf457"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P140_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P140_exp_3.csv",
+      "bytes": 27275,
+      "sha256": "4bf89d3afe5edd912fc745f751d6712f3b1edc32d8c13bee7ba9d01be0faa229"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P230_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P230_exp_3.csv",
+      "bytes": 27008,
+      "sha256": "ba350826746df822b993d2f50ab471afd1d20e3a42411c1d04a9a77d605b1d9e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P283_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P283_exp_3.csv",
+      "bytes": 27562,
+      "sha256": "b1a2c2b5e2140487a3ec25f9803ccac51569ad3f50c891dc5d1b17d523d9e81f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P410_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P410_exp_3.csv",
+      "bytes": 26812,
+      "sha256": "3c5252d64bf28989192567c5bc27ca04ba9aa6a82aebbdeea081987ee8595fe2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P161_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P161_exp_3.csv",
+      "bytes": 26929,
+      "sha256": "2093cd0aa0355ab0ea8501f2837fed7946eb7e062f4d86a00ebe982e5c8cfb3b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P482_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P482_exp_3.csv",
+      "bytes": 27013,
+      "sha256": "bfb7541e99c358d8dac0b7ee7ec75f1c10fac3511e0073137ac0a4c0242301a8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P357_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P357_exp_3.csv",
+      "bytes": 27606,
+      "sha256": "d9cab09a74f6d5b5d7e4c32112f7ce452d1611f57efa6a9734a824faaf81cce3"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P211_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P211_exp_3.csv",
+      "bytes": 27034,
+      "sha256": "774924bad7fa96ac436bcb64387b601030f3a6a40312ee930e278155eb741ced"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P431_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P431_exp_3.csv",
+      "bytes": 27000,
+      "sha256": "d98819f78c8d0d1e5f0981ae88e67bb4c54e01e4793fb521efec71b1a4193120"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P339_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P339_exp_3.csv",
+      "bytes": 26823,
+      "sha256": "8b452d68d7dee8a7e011f3384e47da4b42ec574258420f2c82d8080bf6ca83e6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P425_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P425_exp_3.csv",
+      "bytes": 27260,
+      "sha256": "deb309f1f08efa7f1b23bb1b26f4df849676a33517d686faa646d382a0ff261d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P205_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P205_exp_3.csv",
+      "bytes": 26975,
+      "sha256": "150357ca6d8006a97a7352483b4a0b60652e26994924cc9d40dd0f1d80d637d5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P343_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P343_exp_3.csv",
+      "bytes": 26891,
+      "sha256": "8ba7791838d1bfe4377606a175a5db61b45bc0bc4af83941c4e66e3a867a2503"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P175_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P175_exp_3.csv",
+      "bytes": 27030,
+      "sha256": "fa41ef351ce00e7a3655e9cc8b35b479c540902ab954861afade6a39e4251185"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P253_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P253_exp_3.csv",
+      "bytes": 26997,
+      "sha256": "b03b878c5ac5ac9ea37c64cb9de9809d2ef566529d5b9c27408bb31522eced85"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P315_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P315_exp_3.csv",
+      "bytes": 26983,
+      "sha256": "ba6bcd9cdb1dfe3e951dabf340eae201fa86978ee8908745b360485e8aa73ef6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P123_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P123_exp_3.csv",
+      "bytes": 27121,
+      "sha256": "3008099f9da821d5f8d21cb3bd78e3fc18e402099136907b2253e512fd477fd4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P409_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P409_exp_3.csv",
+      "bytes": 27009,
+      "sha256": "3a4d50d2f2ee055355c82eb3e2512e6c72e147a48413b1871dbbd6b5df5a5e91"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P159_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P159_exp_3.csv",
+      "bytes": 26978,
+      "sha256": "53b101e1cf4bffb26c14d30b624b195672894c1a9326c20e43cf2b8f95e66ee1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P473_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P473_exp_3.csv",
+      "bytes": 27204,
+      "sha256": "94e6de1493f42e8ec1ac890fe0549e2a6b2fc013603daeb782c5260df82d6366"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P190_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P190_exp_3.csv",
+      "bytes": 26913,
+      "sha256": "183774fb010818360bff2d987879d194ca6227984ae4f9dc54fe9fefbc70d43d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P229_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P229_exp_3.csv",
+      "bytes": 27023,
+      "sha256": "ee075e87c9d3fd60b5c246bbbea8c734065e304533ea4748ba4d1354145386da"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P184_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P184_exp_3.csv",
+      "bytes": 27032,
+      "sha256": "ca0865822d95d8790e89cf97cfa511228281065f20b42a35e04922b6966aaa29"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P467_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P467_exp_3.csv",
+      "bytes": 26821,
+      "sha256": "019132a183ce47b2c02dc7ef70dbb3d1934359e7306d695aecb6782770ef57b4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P137_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P137_exp_3.csv",
+      "bytes": 26842,
+      "sha256": "85bc5755a827b8b5f8d78764c4dc9ee379b6eebd5318ceae2cc48bfcf24d0cd2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P301_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P301_exp_3.csv",
+      "bytes": 26630,
+      "sha256": "0afbd39be1fb25117024754f9d05b91a05759ca3777474fa6f6d4a154e25a36b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P247_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P247_exp_3.csv",
+      "bytes": 27677,
+      "sha256": "a80cb2596b3888be1f0c39f12dfb072036d9be91cd41e2cbd66287d3d55d7641"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P393_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P393_exp_3.csv",
+      "bytes": 26945,
+      "sha256": "8a0959e275200e5c82590e32a28c0514bbe0bb5fd02b12e4949937cd72f8dded"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P446_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P446_exp_3.csv",
+      "bytes": 27565,
+      "sha256": "b39d3aea6b4c0c08bfd5457da4c59cc77dcdde153af9a00bbbd71be42366c4f9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P320_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P320_exp_3.csv",
+      "bytes": 26923,
+      "sha256": "4830e2df5f5e9810ae144ac0b6aaca1e2ded0a07c92c03e08e1c0d87e9320841"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P116_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P116_exp_3.csv",
+      "bytes": 26929,
+      "sha256": "3e7440a111c04a593ff4f52948d4db33ba708a736250d68936082955cea83403"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P266_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P266_exp_3.csv",
+      "bytes": 26991,
+      "sha256": "28c73261d497ac15cd794cc7cc0caafe1664ab2d6aa9475945fab04744980291"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P272_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P272_exp_3.csv",
+      "bytes": 26821,
+      "sha256": "9d3c38eb0548c900942450a5db59286a9d0dfc589ea97aac5dc32c61fb7cc723"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P428_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P428_exp_3.csv",
+      "bytes": 27013,
+      "sha256": "95189c6261001281134b1b8faf41e2c1225c7c3447b4db0c7ab44587cb87ff46"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P334_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P334_exp_3.csv",
+      "bytes": 26844,
+      "sha256": "b4afde00cba1e9918280e67ac3f665d63a0c2821498dee2bd739dde5731ade3a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P452_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P452_exp_3.csv",
+      "bytes": 27372,
+      "sha256": "cd90aec5df2758fe7c1ff904a1fc094f4c949dce14937324ff643716e6b6a009"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P178_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P178_exp_3.csv",
+      "bytes": 26945,
+      "sha256": "920b2454f7db516a3089b9754ef3988a950ebc4bde36e1797678d35b7e8ca6e6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P387_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P387_exp_3.csv",
+      "bytes": 27036,
+      "sha256": "a8d1ed9d2920793da7c4e1f1936aa7bd15d25c4e60081ccf25090962d78443eb"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P208_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P208_exp_3.csv",
+      "bytes": 26895,
+      "sha256": "95353f93d41f95f43717be50a35ef225764998b46e23bd51dbeb45d8fad77f4e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P437_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P437_exp_3.csv",
+      "bytes": 26980,
+      "sha256": "e3a6e6feda0984ad16121e0d2c64a0bb1b0e791e9c5ccaae92dcaf2b854ff54c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P217_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P217_exp_3.csv",
+      "bytes": 27081,
+      "sha256": "b32031dd365272e53931585cbd69e5b1d3e13585e92a6febef4a460818f3929b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P167_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P167_exp_3.csv",
+      "bytes": 27176,
+      "sha256": "524275c13b0f4dba2a3147a94ec5479fa8d57410c3f690d3e568de2eb1656684"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P484_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P484_exp_3.csv",
+      "bytes": 27607,
+      "sha256": "d088ae818d94d3d64682b45c6bb12c7e137bf5080603cd71992301d0996dc71e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P351_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P351_exp_3.csv",
+      "bytes": 26987,
+      "sha256": "6f79b19daa749477383b593742992bf708f237a6b8cdf975b6ee8ecbc86b5565"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P398_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P398_exp_3.csv",
+      "bytes": 27190,
+      "sha256": "4ec6e3a6f107aef4bcbe5554ab6af86161bf52d6c50d5ab78378a10728d2438b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P345_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P345_exp_3.csv",
+      "bytes": 26961,
+      "sha256": "b2187757308952e52180d97a6d54b6f812ddf52fb1d7947812fe92929689ed43"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P490_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P490_exp_3.csv",
+      "bytes": 27611,
+      "sha256": "fc6dd310019df48d424e566d3ff8f284f8724380d275c75badc33be1cdae0a60"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P173_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P173_exp_3.csv",
+      "bytes": 27302,
+      "sha256": "f259df4ba78935bd6641ee5cf5785bb0c695c6aa55d71275b732be5a4cb3c6f8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P459_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P459_exp_3.csv",
+      "bytes": 27276,
+      "sha256": "7b580fe730fd6bd92d1b4aa8887575f354d6d1ef4a0d2a6aaed52ade62338605"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P203_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P203_exp_3.csv",
+      "bytes": 27000,
+      "sha256": "429409c8e599cedbb06fc8d97a5c9bffc76ba92a538a736b5e20fb6a3ee8e2d1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P279_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P279_exp_3.csv",
+      "bytes": 27003,
+      "sha256": "31fb15d71e97ad76e1609db13759744c2718bbb14b98a3372bbb5231af3cb831"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P109_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P109_exp_3.csv",
+      "bytes": 26973,
+      "sha256": "3af3164ae9239de06361caee9d51d1f31fdb4c9c31243d2eedc13c43a4d9ed91"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P423_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P423_exp_3.csv",
+      "bytes": 26578,
+      "sha256": "cd800279f269998f786cd5dcb00b47709bb98408c497913d41ca595d0ddf5565"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P478_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P478_exp_3.csv",
+      "bytes": 27005,
+      "sha256": "835a15972b3d38fc896586b999ded67a38264017d93be3a4708f48b2caac3351"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P152_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P152_exp_3.csv",
+      "bytes": 26974,
+      "sha256": "3017fba79c90ee479a330ef42b904fdc54796665ad7896b22d9bc91a7edf1d7b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P364_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P364_exp_3.csv",
+      "bytes": 26887,
+      "sha256": "c4d91c15af992ecba4976aa054b3a61ee4163691f7a341cf58096f7f59823f81"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P222_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P222_exp_3.csv",
+      "bytes": 26819,
+      "sha256": "eae0548235e71969698ef506ac9d10d4383c8410bf355ee425cb50757c3d3b50"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P291_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P291_exp_3.csv",
+      "bytes": 26838,
+      "sha256": "59c4a771259575618a765f710891770f3baf114aa772774735f04d9dd1aca239"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P258_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P258_exp_3.csv",
+      "bytes": 26971,
+      "sha256": "192ca0f202cfae8ed3df222d3c3b8c4a83068ab8b5ffad459d0556d5de34f9fd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P402_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P402_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "0f9c0b7ff17f136c967b393b601e487a0603568a670888e6cbc1482f90ec8582"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P128_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P128_exp_3.csv",
+      "bytes": 27278,
+      "sha256": "a51f007090efdb21cf8c67f862d8f57b0b0a1f8b454ef25677cb103c4c03ed4e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P416_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P416_exp_3.csv",
+      "bytes": 26821,
+      "sha256": "7d1c90d4f8e5d833118a31926e732b47027f69683784d5847f94abe8982bbc13"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P285_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P285_exp_3.csv",
+      "bytes": 26944,
+      "sha256": "b9e09d7221b6a6893033d323c55ccf9ee6fd4efa03ad5cb5bc5c892f92ab2acd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P236_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P236_exp_3.csv",
+      "bytes": 27228,
+      "sha256": "92fd44f2ebf3196b5fbb5f1652895d3a3dd9af64015ae487dc8f1302eba79484"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P370_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P370_exp_3.csv",
+      "bytes": 27035,
+      "sha256": "6c49b6487d5e26eca80225579965c21383f3f4158c831896738be58612dfd9b1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P146_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P146_exp_3.csv",
+      "bytes": 26888,
+      "sha256": "63a80bfa78af72481b3a3a6cff0caff7df2de38e2b585016d83b30121a6f8103"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P260_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P260_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "31e0036a7e1c3bdab5cc95c987dd890dc7e08ec0760448c14d44791f9de91626"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P326_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P326_exp_3.csv",
+      "bytes": 26913,
+      "sha256": "dc180adb236473175d95a5a3085db2e65338775d40a09a331956cba35fd5f8f7"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P110_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P110_exp_3.csv",
+      "bytes": 26915,
+      "sha256": "0a89cb44b6b5d3c9fb91285a6da08df045374c8d6414256a9700eebff6285868"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P395_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P395_exp_3.csv",
+      "bytes": 26993,
+      "sha256": "e89d6b0012f9539fcb11efb327271eeadacf3055310e09dcdbfb9dcf8ffb0a48"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P440_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P440_exp_3.csv",
+      "bytes": 26938,
+      "sha256": "06754b3a694bc0c2ff9f2835461bf1f59df1f74351aeebca32092fee046765fb"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P489_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P489_exp_3.csv",
+      "bytes": 27612,
+      "sha256": "07415195496fd2c7e6a64bf753fffbd69d8ab640b3499418597e97e730e7a5b5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P454_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P454_exp_3.csv",
+      "bytes": 26991,
+      "sha256": "04c5985d5672bba8733cfc4504fdba4d0d0b2b87762cafe54d9213ee18bdbab4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P381_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P381_exp_3.csv",
+      "bytes": 26936,
+      "sha256": "ed74458e8bc8aa5aacce703cb985785413df60e1377de273ab3e35bb5cdec09c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P348_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P348_exp_3.csv",
+      "bytes": 26898,
+      "sha256": "9c637cdc2e0bcf41b876aa0e3f18665ca052b9079578cefda9f6d7cd2e0a2167"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P332_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P332_exp_3.csv",
+      "bytes": 26669,
+      "sha256": "dcd8704dad46fbd1ec9702cd66ea22ef1789c80be51e882f4625283ba335bbe6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P274_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P274_exp_3.csv",
+      "bytes": 27314,
+      "sha256": "da80f75d994165c5651618f899f3b3b3b77556026ccd7054ff3505c44ca6bbe1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P369_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P369_exp_3.csv",
+      "bytes": 26879,
+      "sha256": "822549fa34282e07ba7ceb9afa5088bd165ed909c0346c26541e6e6b68f7daab"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P475_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P475_exp_3.csv",
+      "bytes": 27030,
+      "sha256": "acab95d5e389f441f9c02eadd1005cad46f0ada472e5464cbed89eaeb95c706d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P196_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P196_exp_3.csv",
+      "bytes": 27021,
+      "sha256": "fcd723030895f3bc1c44dc80bdb103e70476dd9559a4437b269bc6de49f6c633"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P313_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P313_exp_3.csv",
+      "bytes": 27266,
+      "sha256": "a5fba0dc57c73751f39897900906dc31aaac11a49a9ec674b3ef0feda8ee66ea"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P125_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P125_exp_3.csv",
+      "bytes": 26939,
+      "sha256": "c8b6294473d01679fbeefde4ed08baf4934cd4e120199ea0dc2c15fd4fbfcc54"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P255_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P255_exp_3.csv",
+      "bytes": 26836,
+      "sha256": "b5a2ac7c0b5ececc579ee894499cd01ed975852ed4d9cb6fd55307fb9697b25f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P241_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P241_exp_3.csv",
+      "bytes": 27642,
+      "sha256": "27d453dcab8b25ad1ea8c49c7329428a387f87a4f4113fc396cb7b64eb2578f4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P288_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P288_exp_3.csv",
+      "bytes": 27315,
+      "sha256": "0045d20346c9bb1361c3ee28ba48bd504fc40994574b3ab3f94b366e2d85ca20"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P131_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P131_exp_3.csv",
+      "bytes": 27034,
+      "sha256": "ad14805fbd46553f9f37bd883a91d5b70767ed8006714d00ac68671c5ec438b8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P307_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P307_exp_3.csv",
+      "bytes": 27026,
+      "sha256": "0bdfef98c89bcfef90f56942dcb498ec35875c2943c714016a2e3daf9bd41290"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P182_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P182_exp_3.csv",
+      "bytes": 27008,
+      "sha256": "e462f4dc6f6066cc458ecacad44cc8d72b3a7aadde3f82c9b4fb31fdb6fedf0b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P461_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P461_exp_3.csv",
+      "bytes": 27207,
+      "sha256": "cd816705705691f285101cba7f41e0504cb020711fb3752c3180f22a9a2e2e96"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P426_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P426_exp_3.csv",
+      "bytes": 27001,
+      "sha256": "86129eff5d776f7a0e0e1777aab69bb83c9f816ac1e9e4f08a41a7942b4f231c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P340_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P340_exp_3.csv",
+      "bytes": 26981,
+      "sha256": "6f5c1fd84becfafc05edf434518b8f6ed768f52f0d2adbfd8ba6c110e797fe84"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P389_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P389_exp_3.csv",
+      "bytes": 26912,
+      "sha256": "521751cf7afd949ce3768636052cf37b1b8fa8e253683f98294605f1593c1554"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P495_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P495_exp_3.csv",
+      "bytes": 26661,
+      "sha256": "b9b210853e00c8548e099ae2beb3f7d026c004e586edb56005cbae3593a0489a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P176_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P176_exp_3.csv",
+      "bytes": 27015,
+      "sha256": "ad9ff021e67bad700cf80ee9e51e54d9aa88a4274d779c9be571341de9225a56"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P206_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P206_exp_3.csv",
+      "bytes": 27238,
+      "sha256": "32fbe0bd5323c274957ff47be226823d7b35ac7523029f969cadeed9e0a9f7aa"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P212_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P212_exp_3.csv",
+      "bytes": 26295,
+      "sha256": "2f9374b30a8f093f3431d315bac1d0e1eb449e1e0e7bd49316b3820c03bf06b0"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P162_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P162_exp_3.csv",
+      "bytes": 26940,
+      "sha256": "cec4d90d178c541d9589f326738e0a5cef36c9a194c3a6e7b0d6a186903be3fd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P481_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P481_exp_3.csv",
+      "bytes": 27179,
+      "sha256": "b2e5c32a65e75494d65e12578cf3673f73d9a1248402e557c26b4bfd54dae2a9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P448_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P448_exp_3.csv",
+      "bytes": 26889,
+      "sha256": "a7064131e277ddd86759d3c0dd84b43b5ef9d245d6e748fc8f13d4735d638940"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P354_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P354_exp_3.csv",
+      "bytes": 26832,
+      "sha256": "8c8549cbf4363fc6df0309bfc6c8317486896779a980623c07d1f9ffebfd34a1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P118_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P118_exp_3.csv",
+      "bytes": 27286,
+      "sha256": "3183d7abb886d566d2b00620b706d5ddd83c2e69d7baa7cef8781e02388c0338"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P432_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P432_exp_3.csv",
+      "bytes": 26892,
+      "sha256": "32527d357dacece99226e2e56c158e38aa7f818225c5bdb99bee3ea7aa1166da"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P268_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P268_exp_3.csv",
+      "bytes": 27033,
+      "sha256": "94eef88169e55d65a4baf544ecf61b6c2127f7d86558249884751ed5e15384bd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P233_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P233_exp_3.csv",
+      "bytes": 27175,
+      "sha256": "f55b27975affdda9a8d675c7025ecb9edcbde4bd5716208bbc3d338dd2ba0f2a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P375_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P375_exp_3.csv",
+      "bytes": 27005,
+      "sha256": "1fdc81a0a81a4c8577c14adc8d48db78651f15ba06cfd58a2dbdafcd248393a7"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P469_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P469_exp_3.csv",
+      "bytes": 26983,
+      "sha256": "c5d9e8819e8dde94c7acb1d581d40910aab5402ecad4dc1523a80d6c3d459371"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P143_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P143_exp_3.csv",
+      "bytes": 26950,
+      "sha256": "477ac79af8392130f96ed4b03145eb0921e186c61b4afb61a12451e540cfff9c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P413_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P413_exp_3.csv",
+      "bytes": 27007,
+      "sha256": "7deb814bba6c11cee115d79306fcc14a07a019b1f2e594d2159be252b2c96d3d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P139_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P139_exp_3.csv",
+      "bytes": 27672,
+      "sha256": "d8a154db30201e8b8872bd5340b02e7275f38c1d084b4c3dc1f9ecb5c8e3743e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P280_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P280_exp_3.csv",
+      "bytes": 26885,
+      "sha256": "036ab419345840610fd13c90166e88f7885518330f847fa6c75cd3555d016527"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P249_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P249_exp_3.csv",
+      "bytes": 26902,
+      "sha256": "11f8d54d459e56fefa1fb7e07585c40c7daff0fcfcf6cc1398a9961f5ea87686"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P294_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P294_exp_3.csv",
+      "bytes": 27522,
+      "sha256": "b8ab91f5c35f2f5d42fb2d025ad3f11ccff712162679b92362b448c954a7a3a9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P407_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P407_exp_3.csv",
+      "bytes": 26963,
+      "sha256": "b2c653f472c073fb2d82b101f8baca3badc27cdeb518f0d8e1b9954e32c62966"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P157_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P157_exp_3.csv",
+      "bytes": 26987,
+      "sha256": "ec444bc84640c6a204d027679818b9d4d2f8ab903b0527bc420c7cb4ccde1623"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P361_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P361_exp_3.csv",
+      "bytes": 26844,
+      "sha256": "a70e51961002da1f268dacb96b5361d4b0edb92ae702f98f5ee0a810e92562cb"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P227_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P227_exp_3.csv",
+      "bytes": 27531,
+      "sha256": "1851cf6cab32517c5455fd944f860b78bc217142500289cf347f9ae033be478e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P337_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P337_exp_3.csv",
+      "bytes": 26920,
+      "sha256": "8a18ad86fe1c202da33a0e27bfed314431c12d9da210105f87d51477387835fd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P271_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P271_exp_3.csv",
+      "bytes": 26999,
+      "sha256": "d6f200a49c6c3abf2108c88ccc1feeab0779e5627d618e19802e52dfeac82de5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P451_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P451_exp_3.csv",
+      "bytes": 26978,
+      "sha256": "d29fb8113aaa39fde81691ef2748f7a3e905d5ee00de2006b0928fdef86707d3"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P384_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P384_exp_3.csv",
+      "bytes": 26813,
+      "sha256": "cba51996ea2e624ee991a86e2fa707f7f72e7f12b6d3e15435e761a9255936b2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P390_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P390_exp_3.csv",
+      "bytes": 26543,
+      "sha256": "f474ccdfb8c632b52e29f37e45c1d469479841daf8ebea7b091c900b041b3b01"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P359_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P359_exp_3.csv",
+      "bytes": 25710,
+      "sha256": "d3b0067cf22de68d487aba8c15668b8d25d9ae1713226803abcf1b8d722a4beb"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P445_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P445_exp_3.csv",
+      "bytes": 27020,
+      "sha256": "8fa9fe7fc55c632cbb927be072ee193ad687ea80ddeac797f2afb2b46be40943"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P265_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P265_exp_3.csv",
+      "bytes": 26870,
+      "sha256": "c8ef3e813fede9927b111c4523cb451db8b18e79871da0b4d023e2375eea9044"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P323_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P323_exp_3.csv",
+      "bytes": 26995,
+      "sha256": "c9e5941519cd57a28a7b089028b662fa97ad2ecb69d59bfe8f7feaf53f7c1add"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P115_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P115_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "27a850213f76d2c2e8e839b9ff69f8a3eccf8c7f73e7be9754b9f4e9f010dd64"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P187_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P187_exp_3.csv",
+      "bytes": 27597,
+      "sha256": "da5d623a2894b8618d3cadf9bc407b9018fa430ff6ec787d93b6f27c72a1bd41"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P464_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P464_exp_3.csv",
+      "bytes": 27185,
+      "sha256": "50f570a955b73ec3e79bb840c822a6b45f6ba1995141f9f404ce250ab5d89970"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P378_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P378_exp_3.csv",
+      "bytes": 26985,
+      "sha256": "c27f253b139c34029214de1bc466b0794de02911f3cd0cff05ff21f22b1b11ca"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P244_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P244_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "aebd548bacc439dfc3bd4e3fa2fb26e9ca5908eef85e204ed63177fe308fd8e2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P134_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P134_exp_3.csv",
+      "bytes": 26975,
+      "sha256": "6f7fad43a5589f25ba171ff39d5876581f4eae04f3f5b794ff80afa9f7104720"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P302_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P302_exp_3.csv",
+      "bytes": 27015,
+      "sha256": "a263cb00ef223dca77221188b617225c7e4f83cbaa3b9780ec692858634ff112"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P316_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P316_exp_3.csv",
+      "bytes": 26901,
+      "sha256": "606c642d3f008959ae9310ec069c4ce79cd3bb4342cf0b1317ed522adecc24da"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P120_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P120_exp_3.csv",
+      "bytes": 27010,
+      "sha256": "87491b66dc62f2d1d2588e8db9491c0f9df50ee743fa5e0958fb37a9f87c98fe"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P250_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P250_exp_3.csv",
+      "bytes": 27016,
+      "sha256": "9dd0b82fe75b7d1e5bf1e208daed74945f08da14b1e85422ed48359e30dc84db"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P299_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P299_exp_3.csv",
+      "bytes": 27038,
+      "sha256": "d2d90beb694d687147682e42d52be41fec72fc5ef6c6dcfd86a03f56328f75e8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P470_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P470_exp_3.csv",
+      "bytes": 26718,
+      "sha256": "a30d0d743d8c668ec84f221a6c3f1f68464b7add9ad1cb411821fe68b4640b06"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P193_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P193_exp_3.csv",
+      "bytes": 26801,
+      "sha256": "fb59d593094296bf8168ca04f106913e649dd337b752b3f3bbf238c6ba6ed018"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P286_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P286_exp_3.csv",
+      "bytes": 27032,
+      "sha256": "2e1ddd33ae8997f47d72417cfa9d67cf2c7a407394f25f90f12c5cde233603cc"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P309_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P309_exp_3.csv",
+      "bytes": 26947,
+      "sha256": "720441d11a8605f6a974f6cf73560ea87e263765fcf38a84b14dec7557fe8981"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P415_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P415_exp_3.csv",
+      "bytes": 27648,
+      "sha256": "30e4e587660d7b5a15bcd66655d20a3a58e077e29d2262f0b467c69d0c57d843"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P373_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P373_exp_3.csv",
+      "bytes": 26902,
+      "sha256": "f8c24b434b0d4df7b9fff9221642c1ca66e9ee11cdf310896113c85b42692f2d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P145_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P145_exp_3.csv",
+      "bytes": 26648,
+      "sha256": "944690f9428f01c479b63f26e34a38a1cda37870c4d3628ce68aa9f8b572df22"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P235_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P235_exp_3.csv",
+      "bytes": 26907,
+      "sha256": "96ae20fe43d04098eb26113b55d515c422805e3a068cc1ffa387d4d5dd33b6fd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P221_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P221_exp_3.csv",
+      "bytes": 26988,
+      "sha256": "5e4acd51a7db43d6e12dd884506251907364e671260478cf3ae135c47fc75d0c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P198_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P198_exp_3.csv",
+      "bytes": 26998,
+      "sha256": "cd40eb7f0d978b89957ddcaca10dce48c08ce5797925b7ec69f5563f16cebf38"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P151_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P151_exp_3.csv",
+      "bytes": 27649,
+      "sha256": "c8d2aeddac404da1048855e034fc2adf30a20ce47389e09f374e39f695dfc1c2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P367_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P367_exp_3.csv",
+      "bytes": 27671,
+      "sha256": "50bbb34a047fc5b8542d0bfe34582d379fe625cc49ce9e9598086a9d86162970"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P401_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P401_exp_3.csv",
+      "bytes": 26965,
+      "sha256": "4c61cbf57a67e41b1d922559b6ac4e9b91a34e7999e657e929e043c1cccc7201"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P292_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P292_exp_3.csv",
+      "bytes": 26902,
+      "sha256": "ac51ee6b561ebd3c43d4dbc868cd7d76cbc1a483b548ff29cf13c6818c9feed3"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P200_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P200_exp_3.csv",
+      "bytes": 26789,
+      "sha256": "e84e2610aeede56c0ce1c3964fcc0e0a99aebec01b925763f406f7af45c26bdd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P346_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P346_exp_3.csv",
+      "bytes": 27042,
+      "sha256": "f16f356699560504719a67ac014609987d7a0f3d359573af01f68d4899c31b54"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P493_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P493_exp_3.csv",
+      "bytes": 26947,
+      "sha256": "9ea305c8e1c674d0e53e276d1e26027e6273b1ac13b05c4829a9e5822f5fd299"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P170_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P170_exp_3.csv",
+      "bytes": 27007,
+      "sha256": "c47731519a6b71af00be41333b39e91f499bac7fcc19bd902006404ed8d3dc7a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P420_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P420_exp_3.csv",
+      "bytes": 27260,
+      "sha256": "41adc0cb97ef8545c698e21ebdf6a1a3bbeb38a38fd7541de7acdf3cb2c779b9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P434_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P434_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "44657a577f10b31f01e48db39bcd966e13151d17b3e88173c34defcc9f7b6212"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P328_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P328_exp_3.csv",
+      "bytes": 27005,
+      "sha256": "0478fc30547d567d425730b83532160dd74c6644e5b36593bb02bb50ad300ed6"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P164_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P164_exp_3.csv",
+      "bytes": 26911,
+      "sha256": "15ef23b51f6754798b4d6292d4623f6a3e67939dc12ae899aa875d6496936a3f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P487_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P487_exp_3.csv",
+      "bytes": 27023,
+      "sha256": "ccc241ce5b91ed5dfe191758fe219838f28c5585c2c2ca652008ab5e4f590001"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P352_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P352_exp_3.csv",
+      "bytes": 26840,
+      "sha256": "00c6e86a5fb20eeb6018666738f81aa27bab4f533b5c569ba477419983d03b7c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P214_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P214_exp_3.csv",
+      "bytes": 27027,
+      "sha256": "7bec18629c228a7f7ab0d80b77c92d713b1dd5917202c605953898f3d5e2aa57"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P132_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P132_exp_3.csv",
+      "bytes": 26923,
+      "sha256": "6d8777e259bb4ced419ab2315f0a7334cc35e1032c896217549c1e3afcb1fba1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P418_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P418_exp_3.csv",
+      "bytes": 26909,
+      "sha256": "124fdca9090700622e8653294bb8abe4e2f8b83731cbe8f24bfe7b76818b728d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P304_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P304_exp_3.csv",
+      "bytes": 27017,
+      "sha256": "22e1f5809d695b5716668fea7a4eccc3abfd23f91ac275ebce122acb8d1f1fda"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P242_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P242_exp_3.csv",
+      "bytes": 27197,
+      "sha256": "c7f0f996d30f409862eea1ca165bb5174faa53b60c59baebfd66fcbbb3ce3b39"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P238_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P238_exp_3.csv",
+      "bytes": 26905,
+      "sha256": "599d0bd0ebc18fb26de1e1cf077e9374c705a4312df79583344f3e2bd046a030"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P148_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P148_exp_3.csv",
+      "bytes": 26993,
+      "sha256": "fdf51bcdbb690b8ccec6114baddf5b6998b87c0a714c129bf0dc746a27d8f342"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P181_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P181_exp_3.csv",
+      "bytes": 27673,
+      "sha256": "ec722603b4ccfc82f13947f86f62905ecd064ab14dc33d0f7b9cfd8873cdd47e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P462_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P462_exp_3.csv",
+      "bytes": 27003,
+      "sha256": "b6292aae90d8a724ffec2ae917bee78f1490235e04859e59a57f2beb03ec107f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P476_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P476_exp_3.csv",
+      "bytes": 27014,
+      "sha256": "1f20e8fe6efcd7984189ca05c034b6912b579b639c4b87156a0f50309f603924"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P195_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P195_exp_3.csv",
+      "bytes": 26895,
+      "sha256": "c892098c83674fb8d76cc5b15b942d2eebbb97935da7f4aa8ca380f6e655b1dd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P256_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P256_exp_3.csv",
+      "bytes": 27015,
+      "sha256": "6e85a78209a80d5ae1089b818c27077db63540dede91d107f46361e8b151f49d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P310_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P310_exp_3.csv",
+      "bytes": 27035,
+      "sha256": "21b0d204440a491e3caacbbe920743d119184ec4864a15ebaf10013e3b906ec9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P126_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P126_exp_3.csv",
+      "bytes": 26964,
+      "sha256": "5bf4496f80ac5afbf4eaac261cbcf9f88a7246b9337877cd6a77564a26eda2be"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P457_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P457_exp_3.csv",
+      "bytes": 27001,
+      "sha256": "3502c396a586f7745f47d49dd1a6bd281fb2b65af0ef2fc1a967785d778410ab"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P382_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P382_exp_3.csv",
+      "bytes": 27124,
+      "sha256": "270eda96768f54f6d38b5c990a64e24fb138f3163dac8697b6df528aab069569"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P277_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P277_exp_3.csv",
+      "bytes": 26914,
+      "sha256": "f0ea8f3b64815a4bf5d61073f57c59d2745f1feee34363459d58a6ca898f4036"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P331_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P331_exp_3.csv",
+      "bytes": 27216,
+      "sha256": "edda82435f5b238730ece5300557bb64d9fec2623a41c12b689b0d7117871245"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P325_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P325_exp_3.csv",
+      "bytes": 27602,
+      "sha256": "a5e8231db6d4eae6e603569b1640e5ade07340e25269a4ef419a01420f416b6e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P439_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P439_exp_3.csv",
+      "bytes": 27218,
+      "sha256": "2f777a7a6e687c8fb65a295d0bbb0ad8df39d3f8b2ab1b3717103a00655b1866"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P113_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P113_exp_3.csv",
+      "bytes": 27076,
+      "sha256": "ff7d1315527d916ea1c9ccbea4f1acf284157ce657e0a4b9b40e6a774154a995"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P263_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P263_exp_3.csv",
+      "bytes": 27575,
+      "sha256": "3be0e455e7527d90115b7647a183eb6e0fffb931463d326a4bf76645f82abd48"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P219_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P219_exp_3.csv",
+      "bytes": 26986,
+      "sha256": "600209641367abc207b8993ec27a19a3983de8145857b2ef66af9b32ebea86f7"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P396_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P396_exp_3.csv",
+      "bytes": 27265,
+      "sha256": "209bd6f7cae385d55fab48a8bba8d98af8aad7a2118270b0a759316e0dc443bf"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P443_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P443_exp_3.csv",
+      "bytes": 26855,
+      "sha256": "49ed5f2ff460cec55eecece6fd2a6ebf89cbd4bda8db45a167548ec48c72f7e7"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P169_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P169_exp_3.csv",
+      "bytes": 27025,
+      "sha256": "95a43501268627c469e0f36febce001d7ab27fe4a9ce198fccfc1eb292b75e9b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P163_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P163_exp_3.csv",
+      "bytes": 27213,
+      "sha256": "d03dfdf89cfbdabaf11163859631c566106fcd5557901f5986915bad9b94f389"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P480_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P480_exp_3.csv",
+      "bytes": 27025,
+      "sha256": "3c90d9663bfd8f61ad49d712edf12302bc29eb30931d09d1408d37b028d20769"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P449_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P449_exp_3.csv",
+      "bytes": 27182,
+      "sha256": "1bf8a787b0fe7159e047bf68247b700efcd1cfe8c05455604b8514d2bfb1cb86"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P355_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P355_exp_3.csv",
+      "bytes": 26994,
+      "sha256": "d8dd4d38da666c56a7b2918a8209941a6503462316697bff9ac2bdea6fd1a07f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P213_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P213_exp_3.csv",
+      "bytes": 27026,
+      "sha256": "813e55a09eb533be594912d51e40f5bcb5ac5bc758e8e4661714633f9e557487"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P269_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P269_exp_3.csv",
+      "bytes": 27017,
+      "sha256": "473d3ca0e27a1bf77b4818dce6f151e850a0de1dcef923a5d738c5fee9ccbcf4"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P119_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P119_exp_3.csv",
+      "bytes": 26518,
+      "sha256": "266669aecddb4bac9add96c3bf40a40b153246e5fe8f3f11e12fc4efd4b69f6b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P433_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P433_exp_3.csv",
+      "bytes": 27003,
+      "sha256": "5d3fe98fa810ddf83a1a534d0d9b5fd106c207973870d5408b6a863a55bca6d3"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P427_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P427_exp_3.csv",
+      "bytes": 26996,
+      "sha256": "52439247115536f63bbf9b76bcf691a1496ed017a30dd47436dcd44271f5bf33"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P207_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P207_exp_3.csv",
+      "bytes": 26931,
+      "sha256": "17bae0d7485aa91b7464d3dcbf836b4b8d8b128116d143b6ad4cf3fcd8705a5f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P341_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P341_exp_3.csv",
+      "bytes": 26933,
+      "sha256": "98add4974e798bf83157d347f2e934c4c57af295121994217a675704484f98b1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P388_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P388_exp_3.csv",
+      "bytes": 26995,
+      "sha256": "fbcb0118df6507c7ada513eca36e4b24c2433128cbc5e45075eb69db0ad23a1e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P494_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P494_exp_3.csv",
+      "bytes": 26971,
+      "sha256": "5b7d505b72626e46ca6b7a171788a901206de04f0f89ad3700ca44865408f842"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P177_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P177_exp_3.csv",
+      "bytes": 26938,
+      "sha256": "67e8ee2cedc5a0b24435f5e151700c05c35ff4b93f056d3bf375bfadd6730dac"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P406_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P406_exp_3.csv",
+      "bytes": 27109,
+      "sha256": "2ddc8ae423aac20f274f6a0558c9d157b96b9ddddb0f6a3ffa5add8aa70fbb46"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P295_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P295_exp_3.csv",
+      "bytes": 27007,
+      "sha256": "337151a92f46682a963848cfe9762f3f96b4c5c54fd7de95a1af7b45d5421165"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P226_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P226_exp_3.csv",
+      "bytes": 27211,
+      "sha256": "b22ffc21ad82be34aefdc906187833ee69ef571b162bbfb3b75f1c132c8aaa6a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P156_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P156_exp_3.csv",
+      "bytes": 26262,
+      "sha256": "ee9c0df1af2ebec0c9eccee8acc3dfd26268ca65184576bb1a3e17eaa404f76a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P360_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P360_exp_3.csv",
+      "bytes": 26808,
+      "sha256": "8630012a2b1b96f63a72ed8846c66e3552a2cf2f16af62d5517c3b391024811c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P374_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P374_exp_3.csv",
+      "bytes": 26998,
+      "sha256": "09443b35b8cc201eb8f82d8c2fc650e814c3a17540549d11ef2d2b3d8927946e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P468_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P468_exp_3.csv",
+      "bytes": 27668,
+      "sha256": "cad3fb1502e18084ddb47f93fabfc0aabbc46b9206cdeb07138432bc8fb13bd9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P142_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P142_exp_3.csv",
+      "bytes": 27005,
+      "sha256": "1242a7199435f5189cc8d1786ffcba87a874fec2f70f765ece187cffe5aac1f5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P232_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P232_exp_3.csv",
+      "bytes": 26867,
+      "sha256": "b6343352f5afec9330318c4e4a9d430493d7f68b44cb712e139d422347330956"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P281_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P281_exp_3.csv",
+      "bytes": 26919,
+      "sha256": "514d5bfb31efecbc71b5401b75d8ba6c8999fac80cf576ac465ca56b3e936834"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P248_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P248_exp_3.csv",
+      "bytes": 27197,
+      "sha256": "ef9ca514c81bcdd341d98e9c4a6e5b755a3ed9e353a4135a882cb74c4a2222bd"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P412_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P412_exp_3.csv",
+      "bytes": 27219,
+      "sha256": "450b53f574037b437ca2311eff9d5f60d05f14ea01bae06e1bcced0c81adcf0c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P138_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P138_exp_3.csv",
+      "bytes": 26989,
+      "sha256": "95ade1bc2f323e139c3f3f26269d5150e347b29fd73f48786ef37a21924d3636"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P391_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P391_exp_3.csv",
+      "bytes": 27158,
+      "sha256": "6fce7038fe862dc420e4b1e5aa5a961f65eeec5091c4e65e52c98ad80e11c3bf"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P358_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P358_exp_3.csv",
+      "bytes": 26593,
+      "sha256": "3d4f428730a12ef219fc65f4869e662397e7c7a14067de2208af2928fc01e551"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P444_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P444_exp_3.csv",
+      "bytes": 26933,
+      "sha256": "856c3b50d4eeee1b03da9ca00fa05a832a759ed378a083c161587401eec4d70f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P322_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P322_exp_3.csv",
+      "bytes": 27013,
+      "sha256": "ac75a90427c15e79efb834c85b11824e2d2ee36fb53032f112676d6da6823824"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P114_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P114_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "a85b9b14cd8b32d872962a415e45af9cf3fe61477f0d8ff5839d6083ff785c5d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P264_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P264_exp_3.csv",
+      "bytes": 26937,
+      "sha256": "9b2c6e5572c71aae158cfe34661acd057417fd8df546381feee82aae96643cb3"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P270_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P270_exp_3.csv",
+      "bytes": 27155,
+      "sha256": "ad7d2d2b0b23176aa65697609cebea6c25cb063f99f10a8459e3d24e3999ede1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P336_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P336_exp_3.csv",
+      "bytes": 26683,
+      "sha256": "0221aeac2e8e6a465b68472bea86a38778f4a79fc7842cea06eef43ce0ce53bf"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P450_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P450_exp_3.csv",
+      "bytes": 27186,
+      "sha256": "7735c81734590cb155b67002b429caf113ea30771d1606556c7e7df710c63402"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P385_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P385_exp_3.csv",
+      "bytes": 26839,
+      "sha256": "c19ec97679413f89c233ef68aa958fb2de352fdcdd932367c46e75c1bbaabace"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P251_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P251_exp_3.csv",
+      "bytes": 26990,
+      "sha256": "863f061dd476041dc87485ecee693f61e82e5aace97816e206f5fbf7e72002de"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P298_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P298_exp_3.csv",
+      "bytes": 26985,
+      "sha256": "fb71128d40522933ef887f709474b04794ce7cc770a4fa6a018e0086db1360a8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P317_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P317_exp_3.csv",
+      "bytes": 26980,
+      "sha256": "20f1d13dfe2323acfeef63250916e3343069b2e38c35f31c8b5956a029f8270d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P121_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P121_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "6d4373c5ffd874dd2f71dbed8733a5453aaef46cd542b25ce10f6a2c78d66351"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P471_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P471_exp_3.csv",
+      "bytes": 26991,
+      "sha256": "7cf38d90f12db21cc7757c72b4703654b4792f940a9a35a1fe2cd268b50f87f1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P192_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P192_exp_3.csv",
+      "bytes": 27554,
+      "sha256": "acb054be96db1c364302d883f5b8fa054d536760e414495541e84301fa01d626"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P186_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P186_exp_3.csv",
+      "bytes": 26862,
+      "sha256": "f5a06874341e963f16f890a7547d7850137520c72d508fa5c2269a540096d5e1"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P465_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P465_exp_3.csv",
+      "bytes": 26905,
+      "sha256": "ae8963a6faf9957069a130b30e3ecb77b6efce6484d3c0738938f881194af85a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P379_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P379_exp_3.csv",
+      "bytes": 26993,
+      "sha256": "2e758f9439ae5de19b60b461106fb232b69d9826c9263a401586dbc5dd702f48"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P135_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P135_exp_3.csv",
+      "bytes": 26968,
+      "sha256": "0968b7394a149441c46935a29e923864f60aa1a038fdb6655009c109ca3f0832"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P303_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P303_exp_3.csv",
+      "bytes": 26902,
+      "sha256": "e4802a407063eb7976a12378dedccb373172be813a3669a775ab66fb4d70c34c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P245_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P245_exp_3.csv",
+      "bytes": 27190,
+      "sha256": "6c370ac275de719f63ce6c591c0c5c4fae09fc63c0124fa8bad1fcd0f96a79c0"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P199_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P199_exp_3.csv",
+      "bytes": 27659,
+      "sha256": "3c4b0084b09dea01e12046bec5f5e21ffb6dea3aac695897a2322d74f9c14d4f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P150_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P150_exp_3.csv",
+      "bytes": 26996,
+      "sha256": "013890474fe9d48a587e45892657bc2f1a5c980a278b48d25098555a9918d20a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P366_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P366_exp_3.csv",
+      "bytes": 27119,
+      "sha256": "07fc167e0edacef2d17bd1a601337c55172021bd19a2350c1c83cb2a738c50bb"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P220_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P220_exp_3.csv",
+      "bytes": 27019,
+      "sha256": "00985a8420c395e059b11cd3c4063b24f8a2090660c92ea1fa9b05c331bf7bfe"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P293_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P293_exp_3.csv",
+      "bytes": 26996,
+      "sha256": "fff0d518957703da46ab278f4a42ab1ea2f38745510a1da73ca0a52b8bc605c5"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P400_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P400_exp_3.csv",
+      "bytes": 26908,
+      "sha256": "331e5b705f589e18532da54b93c2d10b0111813b53f69470881a4a35b44079f8"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P308_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P308_exp_3.csv",
+      "bytes": 26762,
+      "sha256": "79319c6f92b3a5f5e4ba5555ce262363168e5cc20150adac45b1c774be775d2c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P414_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P414_exp_3.csv",
+      "bytes": 27013,
+      "sha256": "1199b9548bc9b1b5cf176e550c270f6162851de9307791ce822397d7497b0513"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P287_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P287_exp_3.csv",
+      "bytes": 27024,
+      "sha256": "655c6cf6f221b45cbcb411dc49a4e64312dce7348db3b914f21b3df84252a2c3"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P234_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P234_exp_3.csv",
+      "bytes": 26886,
+      "sha256": "2a371dd71d573dcde96c4aa96c750e9a259ad7dcdf19f1d9c2d628636b0ae56f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P372_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P372_exp_3.csv",
+      "bytes": 27002,
+      "sha256": "a674c72208849d92604d0818fae54f50d23f70479200322ecb7d05afc20e9897"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P144_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P144_exp_3.csv",
+      "bytes": 27008,
+      "sha256": "2ace22c5256492bcfd29c782ebf73736c6fe634287daeddd7ba599cb9392f547"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P435_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P435_exp_3.csv",
+      "bytes": 26888,
+      "sha256": "84569d4228e035a54c614e1380eb3b835078a6d13f566d84ebf75fcf22650624"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P329_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P329_exp_3.csv",
+      "bytes": 27187,
+      "sha256": "ab4f7716e6943ccc93795730356a17ba115deb9f454a50c686fd8299a5493f5a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P215_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P215_exp_3.csv",
+      "bytes": 26997,
+      "sha256": "6a71d80d284065f66d3080ad1e86dbdfb82a76e3f32ba69d25d40b258f325d3e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P165_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P165_exp_3.csv",
+      "bytes": 27206,
+      "sha256": "75fc3ea8c21cd0b9bfc39ad95d06dbbc944a26fba56fbe5913a2fc6f2a7d0ea2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P486_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P486_exp_3.csv",
+      "bytes": 26821,
+      "sha256": "46a4ac38ebadb373d984f47622bb7bbf83917e08beb7e5917031ffce39a5b682"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P353_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P353_exp_3.csv",
+      "bytes": 27024,
+      "sha256": "61dc38d991104f8bf31673e2dba8102770a833d7b12a051d58ec556c7bbf4ea7"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P347_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P347_exp_3.csv",
+      "bytes": 27003,
+      "sha256": "dae0de4458ea4b3f7113f6104a46dd84a5f1ff5d20a515dd82f7db50a6738485"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P492_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P492_exp_3.csv",
+      "bytes": 26929,
+      "sha256": "7d0e327aa9a14ccd3b8be840570f52138be904431aa980c922cd545a2656467b"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P171_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P171_exp_3.csv",
+      "bytes": 27622,
+      "sha256": "49a8ba2ebbddb05d41895bbfce61ea320e20b485c5ecad8c36a89714a05d04a9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P201_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P201_exp_3.csv",
+      "bytes": 26915,
+      "sha256": "49e7e5d53f02554557f03d13772855d082c2ecbdb80305c40e7055a8959efd32"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P421_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P421_exp_3.csv",
+      "bytes": 27187,
+      "sha256": "a15b24e9e04051cd1553af1bc545a09de014f94c36c6a8977aba2a292bd4e8aa"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P477_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P477_exp_3.csv",
+      "bytes": 27029,
+      "sha256": "1da468d6f062a2781d3b8fc78d61ae2c133dde02cb570b744c13ce389a02673f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P194_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P194_exp_3.csv",
+      "bytes": 27425,
+      "sha256": "320d3649790dc8e39b7f8c0e6b71bfa8274a2819f54172378ed758939be43c33"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P311_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P311_exp_3.csv",
+      "bytes": 27625,
+      "sha256": "92bc107cb12201fbf2822bcdbde4a68c3289281e3fc3fc87ab6e4ff1ad511665"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P127_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P127_exp_3.csv",
+      "bytes": 27022,
+      "sha256": "f5081d7a354b450213da24a5b11d5a180ac5386b983645c3e953933834ed7067"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P257_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P257_exp_3.csv",
+      "bytes": 26957,
+      "sha256": "ae6b4dd4ebdb24e34127acd1dcd4da40339f201e125e45582d911a78d54e713d"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P243_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P243_exp_3.csv",
+      "bytes": 27026,
+      "sha256": "65e2bf8d8911bfdccf61706f05101259cabb9f28457fb0f43198e6c6f548bd51"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P133_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P133_exp_3.csv",
+      "bytes": 27017,
+      "sha256": "d37c1a473e654a9ba217fb02da257697c2bf424cb4fbfe1949e3c3807b269ea7"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P419_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P419_exp_3.csv",
+      "bytes": 26849,
+      "sha256": "d56f11859568db53ff77e4c6ca5c38f7b3079571c0c509c59c7a79328ec61b16"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P305_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P305_exp_3.csv",
+      "bytes": 26931,
+      "sha256": "68f7018d8d4f716971cfbcaa5148c34df615fbb27fe6fccf2c21ad70598e2d35"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P149_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P149_exp_3.csv",
+      "bytes": 26830,
+      "sha256": "4de2db399eaf168dfb260884024c479ed6c1939b81a1bfc829a6b961ee47f9a9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P180_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P180_exp_3.csv",
+      "bytes": 26891,
+      "sha256": "3a377682a8817643e4486e6a9c019aafdb639fb0286bb304db1371a50d24618f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P463_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P463_exp_3.csv",
+      "bytes": 27026,
+      "sha256": "e933e2943f16b2c27975e32db04f282c5d71293a23759e898a0fe67d9778075e"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P239_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P239_exp_3.csv",
+      "bytes": 26951,
+      "sha256": "c3960a5d96b331cb3e0c09e99eb6f6faf570fdd02ef0e4c7ef7005f383c2c170"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P262_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P262_exp_3.csv",
+      "bytes": 26961,
+      "sha256": "897434d870443177462fa00553567fb4eb68b32d269e8a49c7fbdcd4d20c676c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P324_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P324_exp_3.csv",
+      "bytes": 27039,
+      "sha256": "599db3ed83fe739698db05766e637e09aed1cb1fb03054e706247658dd1c3d5a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P438_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P438_exp_3.csv",
+      "bytes": 27021,
+      "sha256": "6b54ec01d81caa061266873a458eb85894daa295e88d53857b67c0109a15d48f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P112_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P112_exp_3.csv",
+      "bytes": 26914,
+      "sha256": "80083ff52a0e28619f97b706763d78913875e5169a5ec4a912c55d4e7db6017f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P397_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P397_exp_3.csv",
+      "bytes": 27214,
+      "sha256": "d05ff98859ef69e0e8e30cb458334c9fe7d5882677b82f7d4154d9e34e292608"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P442_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P442_exp_3.csv",
+      "bytes": 26643,
+      "sha256": "bdaaa2f93b50b51d0b9d329a62a028341fccca432b89b159943f4391e2db239f"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P168_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P168_exp_3.csv",
+      "bytes": 26936,
+      "sha256": "05db120c3501f860223c1dceb81e8af4e9e2fc4f905b73c88696c1dc4a37444c"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P218_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P218_exp_3.csv",
+      "bytes": 27004,
+      "sha256": "0c1682a2a48e34ee46fa212f66967050f60f6cf82f0319617c3e497de8d3dab2"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P456_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P456_exp_3.csv",
+      "bytes": 26794,
+      "sha256": "728fea436d5455a6da9a75b723618ec79966867e8048036b9afb18dd3b056fac"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P383_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P383_exp_3.csv",
+      "bytes": 26906,
+      "sha256": "d4b00cb07945d5a5184732d31f95f2b1e78866735648cf8a28340dbe18b8ddb9"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P330_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P330_exp_3.csv",
+      "bytes": 26974,
+      "sha256": "5f9967e374043acaa3fe17a42d3ec0a0a3762eac91336913916ab2113a6e2f64"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Pavlovia/P276_exp_3.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Pavlovia/P276_exp_3.csv",
+      "bytes": 27533,
+      "sha256": "3d81fdedc1a333bc76f4c8360294b9592b576cbf9280830bd866fdd660f9052a"
+    },
+    {
+      "archive_member": "osf_materials_reproducibility_check_5.11.25/Experiment_3/data_raw_primary/Qualtrics/post_task_survey_3_anonymized.csv",
+      "path": "originals/Experiment_3/data_raw_primary/Qualtrics/post_task_survey_3_anonymized.csv",
+      "bytes": 373655,
+      "sha256": "49be66a74c2dc04d26fc1738650844ee7f650b27a241e8575e78c8cd52cb0f2e"
+    }
+  ],
+  "preregistration": {
+    "url": "https://aspredicted.org/zb4cs.pdf",
+    "status": "not retrieved: direct request HTTP406; web tool inaccessible; no prereg PDF in public data archive"
+  }
+}

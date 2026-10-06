@@ -1,0 +1,414 @@
+{
+  "awareness_descriptive_only": [
+    {
+      "current": 1,
+      "missing": 0,
+      "no": 42,
+      "participants": 89,
+      "training": 1,
+      "yes": 47
+    },
+    {
+      "current": 1,
+      "missing": 0,
+      "no": 44,
+      "participants": 68,
+      "training": 0,
+      "yes": 24
+    },
+    {
+      "current": 0,
+      "missing": 0,
+      "no": 50,
+      "participants": 94,
+      "training": 1,
+      "yes": 44
+    },
+    {
+      "current": 0,
+      "missing": 0,
+      "no": 52,
+      "participants": 82,
+      "training": 0,
+      "yes": 30
+    }
+  ],
+  "cohort": {
+    "author_eligible": 333,
+    "author_excluded": 52,
+    "completed_after_cutoff": 390,
+    "completed_before_cutoff": 105,
+    "eligibility_source_rows_checked": 387,
+    "matched_survey_ids": 385,
+    "postcutoff_without_usable_id": 5,
+    "raw_offered_trials": 12320,
+    "saved_respondents": 385,
+    "task_files": 387
+  },
+  "full_randomized_ITT_identified": false,
+  "glmm_reproduced": false,
+  "mechanistic_mediation_identified": false,
+  "primary": {
+    "cells": [
+      {
+        "current": 1,
+        "mean_liked_fraction": 0.8441011235955056,
+        "mean_offered_response_fraction": 0.9901685393258427,
+        "mean_response_fraction": 0.9901685393258427,
+        "numerator_liked_responses": 2404,
+        "offered_trials": 2848,
+        "participants": 89,
+        "qualifying_responses": 2820,
+        "sd_liked_fraction": 0.16186600413359728,
+        "training": 1
+      },
+      {
+        "current": 1,
+        "mean_liked_fraction": 0.8478860294117647,
+        "mean_offered_response_fraction": 0.9885110294117647,
+        "mean_response_fraction": 0.9885110294117647,
+        "numerator_liked_responses": 1845,
+        "offered_trials": 2176,
+        "participants": 68,
+        "qualifying_responses": 2151,
+        "sd_liked_fraction": 0.15203305950518323,
+        "training": 0
+      },
+      {
+        "current": 0,
+        "mean_liked_fraction": 0.5388962765957447,
+        "mean_offered_response_fraction": 0.988031914893617,
+        "mean_response_fraction": 0.988031914893617,
+        "numerator_liked_responses": 1621,
+        "offered_trials": 3008,
+        "participants": 94,
+        "qualifying_responses": 2972,
+        "sd_liked_fraction": 0.2937838207699706,
+        "training": 1
+      },
+      {
+        "current": 0,
+        "mean_liked_fraction": 0.5251524390243902,
+        "mean_offered_response_fraction": 0.9866615853658537,
+        "mean_response_fraction": 0.9866615853658537,
+        "numerator_liked_responses": 1378,
+        "offered_trials": 2624,
+        "participants": 82,
+        "qualifying_responses": 2589,
+        "sd_liked_fraction": 0.2514156976377352,
+        "training": 0
+      }
+    ],
+    "coding_reconciliation": {
+      "current_incongruent_response_contrast": 0.001370329527763281,
+      "optimal_no_reversal_minus_reversal": {
+        "ci95": [
+          -0.04285887673694612,
+          0.05144747896427805
+        ],
+        "degenerate_zero_variance": false,
+        "df": 283.723646668296,
+        "estimate": 0.004294301113665966,
+        "se": 0.023955561561696374
+      },
+      "response_adjusted_identity_error": -5.551115123125783e-17,
+      "scope": "participant risk difference, not original GLMM coefficient"
+    },
+    "components": {
+      "current_congruent": -0.003784905816259121,
+      "current_incongruent": 0.013743837571354445
+    },
+    "denominator": "32_offered_trials",
+    "participants": 333,
+    "population": "author_eligible",
+    "qualifier": "all_valid_responses",
+    "standardized_training_contrast": {
+      "ci95": [
+        -0.042459882241486155,
+        0.05241881399658148
+      ],
+      "degenerate_zero_variance": false,
+      "df": 282.45796561599025,
+      "estimate": 0.004979465877547662,
+      "se": 0.024100484053801618
+    },
+    "zero_answer_exclusions": []
+  },
+  "scope": "Retrospective Experiment 3 participant-level assignment contrasts",
+  "sensitivities": {
+    "all_saved": {
+      "cells": [
+        {
+          "current": 1,
+          "mean_liked_fraction": 0.8160714285714286,
+          "mean_offered_response_fraction": 0.9758928571428571,
+          "mean_response_fraction": 0.9758928571428571,
+          "numerator_liked_responses": 2742,
+          "offered_trials": 3360,
+          "participants": 105,
+          "qualifying_responses": 3279,
+          "sd_liked_fraction": 0.18960726336312894,
+          "training": 1
+        },
+        {
+          "current": 1,
+          "mean_liked_fraction": 0.8256777108433735,
+          "mean_offered_response_fraction": 0.9777861445783133,
+          "mean_response_fraction": 0.9777861445783133,
+          "numerator_liked_responses": 2193,
+          "offered_trials": 2656,
+          "participants": 83,
+          "qualifying_responses": 2597,
+          "sd_liked_fraction": 0.17879437249918909,
+          "training": 0
+        },
+        {
+          "current": 0,
+          "mean_liked_fraction": 0.5235119047619048,
+          "mean_offered_response_fraction": 0.9755952380952381,
+          "mean_response_fraction": 0.9755952380952381,
+          "numerator_liked_responses": 1759,
+          "offered_trials": 3360,
+          "participants": 105,
+          "qualifying_responses": 3278,
+          "sd_liked_fraction": 0.2850893445081844,
+          "training": 1
+        },
+        {
+          "current": 0,
+          "mean_liked_fraction": 0.5200407608695652,
+          "mean_offered_response_fraction": 0.9772418478260869,
+          "mean_response_fraction": 0.9772418478260869,
+          "numerator_liked_responses": 1531,
+          "offered_trials": 2944,
+          "participants": 92,
+          "qualifying_responses": 2877,
+          "sd_liked_fraction": 0.25045380865709205,
+          "training": 0
+        }
+      ],
+      "coding_reconciliation": {
+        "current_incongruent_response_contrast": -0.001646609730848847,
+        "optimal_no_reversal_minus_reversal": {
+          "ci95": [
+            -0.0477077648242946,
+            0.04321923617553806
+          ],
+          "degenerate_zero_variance": false,
+          "df": 347.9433417765957,
+          "estimate": -0.00224426432437827,
+          "se": 0.023115404233893633
+        },
+        "response_adjusted_identity_error": -2.7755575615628914e-17,
+        "scope": "participant risk difference, not original GLMM coefficient"
+      },
+      "components": {
+        "current_congruent": -0.009606282271944933,
+        "current_incongruent": 0.003471143892339601
+      },
+      "denominator": "32_offered_trials",
+      "participants": 385,
+      "population": "all_saved_respondents",
+      "qualifier": "all_valid_responses",
+      "standardized_training_contrast": {
+        "ci95": [
+          -0.049020248040889856,
+          0.042885109661284525
+        ],
+        "degenerate_zero_variance": false,
+        "df": 345.30724228307344,
+        "estimate": -0.003067569189802666,
+        "se": 0.023363498905281513
+      },
+      "zero_answer_exclusions": []
+    },
+    "answered": {
+      "cells": [
+        {
+          "current": 1,
+          "mean_liked_fraction": 0.8519383793061786,
+          "mean_offered_response_fraction": 0.9901685393258427,
+          "mean_response_fraction": 1.0,
+          "numerator_liked_responses": 2404,
+          "offered_trials": 2848,
+          "participants": 89,
+          "qualifying_responses": 2820,
+          "sd_liked_fraction": 0.15971110814685718,
+          "training": 1
+        },
+        {
+          "current": 1,
+          "mean_liked_fraction": 0.857708962339107,
+          "mean_offered_response_fraction": 0.9885110294117647,
+          "mean_response_fraction": 1.0,
+          "numerator_liked_responses": 1845,
+          "offered_trials": 2176,
+          "participants": 68,
+          "qualifying_responses": 2151,
+          "sd_liked_fraction": 0.15154400905814594,
+          "training": 0
+        },
+        {
+          "current": 0,
+          "mean_liked_fraction": 0.5445036693646998,
+          "mean_offered_response_fraction": 0.988031914893617,
+          "mean_response_fraction": 1.0,
+          "numerator_liked_responses": 1621,
+          "offered_trials": 3008,
+          "participants": 94,
+          "qualifying_responses": 2972,
+          "sd_liked_fraction": 0.2944427048219325,
+          "training": 1
+        },
+        {
+          "current": 0,
+          "mean_liked_fraction": 0.5318769669551534,
+          "mean_offered_response_fraction": 0.9866615853658537,
+          "mean_response_fraction": 1.0,
+          "numerator_liked_responses": 1378,
+          "offered_trials": 2624,
+          "participants": 82,
+          "qualifying_responses": 2589,
+          "sd_liked_fraction": 0.25252201445514666,
+          "training": 0
+        }
+      ],
+      "coding_reconciliation": {
+        "current_incongruent_response_contrast": 0.0,
+        "optimal_no_reversal_minus_reversal": {
+          "ci95": [
+            -0.04402232012608619,
+            0.05087843950270436
+          ],
+          "degenerate_zero_variance": false,
+          "df": 280.66164673400846,
+          "estimate": 0.0034280596883090875,
+          "se": 0.024105424582726562
+        },
+        "response_adjusted_identity_error": 8.326672684688674e-17,
+        "scope": "participant risk difference, not original GLMM coefficient"
+      },
+      "components": {
+        "current_congruent": -0.0057705830329284336,
+        "current_incongruent": 0.012626702409546442
+      },
+      "denominator": "answered_trials",
+      "participants": 333,
+      "population": "author_eligible",
+      "qualifier": "all_valid_responses",
+      "standardized_training_contrast": {
+        "ci95": [
+          -0.04402232012608627,
+          0.05087843950270428
+        ],
+        "degenerate_zero_variance": false,
+        "df": 280.66164673400846,
+        "estimate": 0.003428059688309004,
+        "se": 0.024105424582726562
+      },
+      "zero_answer_exclusions": []
+    },
+    "rt_qualified": {
+      "cells": [
+        {
+          "current": 1,
+          "mean_liked_fraction": 0.8430477528089888,
+          "mean_offered_response_fraction": 0.988061797752809,
+          "mean_response_fraction": 0.988061797752809,
+          "numerator_liked_responses": 2401,
+          "offered_trials": 2848,
+          "participants": 89,
+          "qualifying_responses": 2814,
+          "sd_liked_fraction": 0.16340014620245497,
+          "training": 1
+        },
+        {
+          "current": 1,
+          "mean_liked_fraction": 0.8382352941176471,
+          "mean_offered_response_fraction": 0.9692095588235294,
+          "mean_response_fraction": 0.9692095588235294,
+          "numerator_liked_responses": 1824,
+          "offered_trials": 2176,
+          "participants": 68,
+          "qualifying_responses": 2109,
+          "sd_liked_fraction": 0.1810086833199602,
+          "training": 0
+        },
+        {
+          "current": 0,
+          "mean_liked_fraction": 0.5382313829787234,
+          "mean_offered_response_fraction": 0.9863696808510638,
+          "mean_response_fraction": 0.9863696808510638,
+          "numerator_liked_responses": 1619,
+          "offered_trials": 3008,
+          "participants": 94,
+          "qualifying_responses": 2967,
+          "sd_liked_fraction": 0.2932281402887632,
+          "training": 1
+        },
+        {
+          "current": 0,
+          "mean_liked_fraction": 0.5137195121951219,
+          "mean_offered_response_fraction": 0.9664634146341463,
+          "mean_response_fraction": 0.9664634146341463,
+          "numerator_liked_responses": 1348,
+          "offered_trials": 2624,
+          "participants": 82,
+          "qualifying_responses": 2536,
+          "sd_liked_fraction": 0.25867927670151863,
+          "training": 0
+        }
+      ],
+      "coding_reconciliation": {
+        "current_incongruent_response_contrast": 0.01990626621691749,
+        "optimal_no_reversal_minus_reversal": {
+          "ci95": [
+            -0.04400402374999394,
+            0.05342208700801963
+          ],
+          "degenerate_zero_variance": false,
+          "df": 293.0403846874494,
+          "estimate": 0.004709031629012844,
+          "se": 0.024751407589667075
+        },
+        "response_adjusted_identity_error": -2.7755575615628914e-17,
+        "scope": "participant risk difference, not original GLMM coefficient"
+      },
+      "components": {
+        "current_congruent": 0.0048124586913417255,
+        "current_incongruent": 0.024511870783601508
+      },
+      "denominator": "32_offered_trials",
+      "participants": 333,
+      "population": "author_eligible",
+      "qualifier": "RT >= 0.2",
+      "standardized_training_contrast": {
+        "ci95": [
+          -0.03466520101675872,
+          0.06398953049170195
+        ],
+        "degenerate_zero_variance": false,
+        "df": 290.8463890323998,
+        "estimate": 0.014662164737471617,
+        "se": 0.025062758494006947
+      },
+      "zero_answer_exclusions": []
+    }
+  },
+  "source_reconciliation": {
+    "anonymous_mapping": "eligible participants in original sorted task-filename order",
+    "fields": [
+      "training",
+      "current",
+      "reversal",
+      "optimal",
+      "response_time"
+    ],
+    "mapping_selected_by_outcome": false,
+    "matched_answered_trials": 10532,
+    "rt_tolerance": {
+      "absolute": 1e-12,
+      "relative": 1e-12
+    }
+  }
+}

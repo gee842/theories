@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-10-06T00:35:58.200115+00:00",
+  "scope": "Metadata preservation only. License fetched after original-data manifest freeze; selected original data and that manifest unchanged.",
+  "files": [
+    {
+      "path": "metadata/archive-files.json",
+      "bytes": 2313,
+      "sha256": "6122d29072e9d589fbccf255d2e05eae004459437d4c1bba9591ee8888f33b56"
+    },
+    {
+      "path": "metadata/file-metadata.json",
+      "bytes": 2194,
+      "sha256": "f8a3fb78bcc8a80efeba029e4c745b58a4977e26dfaed065002316a813e11191"
+    },
+    {
+      "path": "metadata/license.json",
+      "bytes": 6681,
+      "sha256": "852c5c07ec6c25ae6d8e89a120d3133a53371b6c5f043cee1f86d4ef8fe9468c"
+    },
+    {
+      "path": "metadata/osf-files.json",
+      "bytes": 1875,
+      "sha256": "7c63f2b2db97851b0fc75b092ca541b58cdbc89db842b53555716af2eba8280d"
+    },
+    {
+      "path": "metadata/registration.json",
+      "bytes": 7559,
+      "sha256": "a08e488d0b97f773a226ab17994409ee63605f17c8b73a0ef0005cb31e7e1cee"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "scope": "Independent raw reconstruction and comparison; no producer imports, GLMM, mediation or full randomized ITT claim",
+  "independence": "Estimator and original independent results saved before reading producer outputs; comparison adapter added afterward",
+  "participants": 385,
+  "eligible": 333,
+  "offered_trials": 12320,
+  "clean_answered_trials": 10532,
+  "counts": {
+    "participant_fields": 6160,
+    "offered_trial_fields": 98560,
+    "aggregate_fields": 200,
+    "awareness_fields": 16,
+    "hash_checks": 412
+  },
+  "maximum_absolute_numeric_discrepancy": 1.1368683772161603e-13,
+  "tolerance": 1e-12,
+  "four_fixed_analyses": [
+    "eligible_offered",
+    "all_saved_offered",
+    "eligible_answered",
+    "eligible_rt_offered"
+  ],
+  "descriptive_publication_discrepancy": {
+    "paper_location": "Preserved primary paper, page 16, awareness paragraph",
+    "reported_unaware": 187,
+    "reported_percent": 56.1,
+    "raw_and_clean_eligible_unaware": 188,
+    "raw_and_clean_eligible_aware": 145,
+    "eligible_with_zero_rt_qualified_answers": 0,
+    "status": "Unresolved one-person reporting discrepancy; no recoding, exclusions, awareness-selected outcomes or primary changes"
+  },
+  "python": "3.12.14",
+  "scipy": "1.15.3",
+  "post_output_interpretation_clarification": {
+    "scope": "Task-history equivalence requires a shared reporting law to extend to post-task questionnaires; no source, code estimand or result change",
+    "frozen_original": "_process/research/2026-10-05-concern-theory/reward-association/development/IDENTIFICATION-before-reporting-clarification.md",
+    "frozen_original_sha256": "4cec28f13f0384f1ab56eadf41f622a192174b2c9ff5374de876e64ba7702899",
+    "current_interpretation": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+    "current_interpretation_sha256": "593c04a3030f99567e0a9bb8e113b848f0f2f9b8cf7e5a951a12996c0e9b0f85"
+  },
+  "input_hashes": {
+    "independent_check.py": "ee004c4e420c4f4db11cf515dc9943f9b7660d01092ff9b2fab44c4a7d68323b",
+    "independent-results.json": "17f5601aede822e624461a64d4881b1494565de22c799b816d1275931b7bda69",
+    "analysis.py": "64b26c5442bca23e3a763b9e7b002040b517910e543ccda302dc2311afcf9712",
+    "results.json": "fb5c379765fb1b993d1bfa8e4b7ce1f345833be758b55b73908e493d469ed9d0",
+    "participants.json": "cd4b0dc111210dd8c7921b9848ba1bda438e764cbdd554ee811717d0b52f20e3",
+    "prepared-trials.csv": "a9fa634e7ecffa8d88c524cbfe4ec1e22e6b03ca0d54406c37be4eec5c813e71",
+    "verification.json": "9fb94d82c9eb395add6e42e4a9ead9df211526871631047c663446ee34d9bfab",
+    "PROTOCOL.md": "6f105f981cb904b45574543d296fae1e10114f322cbe842473180ea607f7a3fb",
+    "protocol-freeze.json": "83133aa2f44edea95a81e7c761e5d4c6341c1834c11ca13838eb16e787127732",
+    "development/independent-before-comparison.py": "d6ea8c62df60b311dd607a8899c0495e8473c1ff122fc30278706680f9a15e84",
+    "independent-execution-log.json": "1e075ed5bd9a186e45c905659e8821855076a14b875b6f84be2efd38bdf2bb66"
+  }
+}

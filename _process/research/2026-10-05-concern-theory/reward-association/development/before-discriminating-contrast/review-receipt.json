@@ -1,0 +1,37 @@
+{
+  "status": "accepted within the bounded retrospective computation and identification scope",
+  "review_type": "Internal collaborating-AI independent reconstruction and source/claim review; not external peer review",
+  "limits": [
+    "No reliable positive primary contrast established; no equivalence or no-learning result",
+    "No GLMM reproduction, unique psychological mediator, full randomized ITT, verified recipient fulfillment or ethical justification",
+    "One-person published awareness-count discrepancy remains unresolved"
+  ],
+  "numerical_receipt": "experiments/recipient-value-learning/independent-check.json",
+  "pre_output_raw_estimator_preserved": true,
+  "post_output_reporting_law_clarification_preserved": true,
+  "primary_independent_output_unchanged": true,
+  "hashes": {
+    "_process/research/2026-10-05-concern-theory/reward-association/REVIEW.md": "1c7d1be33776a5d04aad0df7e1d76dfa1d6697e4388a215fb4320be2a84c77bc",
+    "_process/research/2026-10-05-concern-theory/reward-association/PROSPECTIVE-REVIEW.md": "a612c82f3980cd191e7c197890331b39987883e4aac525129b05c2886c763290",
+    "_process/research/2026-10-05-concern-theory/reward-association/prospective-review.json": "64d4ec198c4d775d9ba1af36bd8ec79d2ba7f5733f14fcbdb37878b246c56816",
+    "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md": "593c04a3030f99567e0a9bb8e113b848f0f2f9b8cf7e5a951a12996c0e9b0f85",
+    "_process/research/2026-10-05-concern-theory/reward-association/INTEGRATION.md": "0b268effd97938508fb6ca448307be1ab6c550aa5f14a13388e942faad0b1cc7",
+    "_process/research/2026-10-05-concern-theory/reward-association/development/IDENTIFICATION-before-reporting-clarification.md": "4cec28f13f0384f1ab56eadf41f622a192174b2c9ff5374de876e64ba7702899",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md": "aa4f861a8424b5cc70a838b4e488040364042bbe1e9dcbc3f4d063bc87e9d2c3",
+    "experiments/recipient-value-learning/README.md": "801255058a6fd439cd1da201b6fd472e85c9db49694b1941b89fdd6c93da0686",
+    "experiments/recipient-value-learning/PROTOCOL.md": "6f105f981cb904b45574543d296fae1e10114f322cbe842473180ea607f7a3fb",
+    "experiments/recipient-value-learning/independent_check.py": "ee004c4e420c4f4db11cf515dc9943f9b7660d01092ff9b2fab44c4a7d68323b",
+    "experiments/recipient-value-learning/independent-check.json": "8517594f9ce98bb4fc34ce082debd3e40aa6533333005cd3631f6d75cd9c9c13",
+    "experiments/recipient-value-learning/independent-results.json": "17f5601aede822e624461a64d4881b1494565de22c799b816d1275931b7bda69",
+    "experiments/recipient-value-learning/independent-execution-log.json": "1e075ed5bd9a186e45c905659e8821855076a14b875b6f84be2efd38bdf2bb66",
+    "experiments/recipient-value-learning/development/independent-before-comparison.py": "d6ea8c62df60b311dd607a8899c0495e8473c1ff122fc30278706680f9a15e84",
+    "experiments/recipient-value-learning/development/independent-before-reporting-clarification.py": "476f57fd683e02cfa251e2253c98f7a6be7e7bfa597bc28ee60bf6f83f93b234",
+    "experiments/recipient-value-learning/development/independent-check-before-reporting-clarification.json": "9fd75c54fd02b35a6bbd01f7e45dbb69b80073f144f427b919a1a500587544d4",
+    "experiments/recipient-value-learning/analysis.py": "64b26c5442bca23e3a763b9e7b002040b517910e543ccda302dc2311afcf9712",
+    "experiments/recipient-value-learning/results.json": "fb5c379765fb1b993d1bfa8e4b7ce1f345833be758b55b73908e493d469ed9d0",
+    "experiments/recipient-value-learning/verification.json": "9fb94d82c9eb395add6e42e4a9ead9df211526871631047c663446ee34d9bfab",
+    "experiments/recipient-value-learning/protocol-freeze.json": "83133aa2f44edea95a81e7c761e5d4c6341c1834c11ca13838eb16e787127732",
+    "sources/32-mental-state-reward-learning-2026-10-06/README.md": "aa71d074716eb7b76cfb0cd307788c5fd5c47c0276164a1fb2581af141767f3f",
+    "sources/32-mental-state-reward-learning-2026-10-06/manifest.json": "0971f94037dcc3e00fbc04cef7d694382f09c78441bdf3a35ffbe35940ff9f1d"
+  }
+}

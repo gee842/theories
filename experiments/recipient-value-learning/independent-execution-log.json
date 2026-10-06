@@ -1,0 +1,32 @@
+{
+  "phase": "Independent reconstruction passed; comparison adapter added after own results frozen",
+  "initial_checker_sha256": "d6ea8c62df60b311dd607a8899c0495e8473c1ff122fc30278706680f9a15e84",
+  "attempts": [
+    {
+      "command": "bundled Python independent_check.py --execute-after-freeze",
+      "outcome": "ModuleNotFoundError: No module named 'scipy' at import line 22",
+      "source_data_read": false,
+      "outcome_aggregation_run": false
+    },
+    {
+      "command": "same command with previous motor-study PYTHONPATH=/tmp/motor-cost-producer-deps",
+      "outcome": "ModuleNotFoundError: No module named 'scipy' at import line 22; prior temporary dependencies no longer present",
+      "source_data_read": false,
+      "outcome_aggregation_run": false
+    },
+    {
+      "command": "PYTHONPATH=/tmp/ren-recipient-value-deps bundled Python independent_check.py --execute-after-freeze",
+      "outcome": "passed; 385 saved/333 eligible; 10532 author-clean answered rows exact",
+      "outcome_aggregation_run": true,
+      "independent_results_sha256_before_producer_inspection": "17f5601aede822e624461a64d4881b1494565de22c799b816d1275931b7bda69"
+    }
+  ],
+  "resolution": "Used isolated PYTHONPATH=/tmp/ren-recipient-value-deps, SciPy 1.15.3, bundled Python 3.12.14. No source or estimator change.",
+  "comparison_adapter_corrections": [
+    {
+      "first_error": "(('rv001', 1, 'liked'), 'True', '1')",
+      "cause": "Producer CSV serializes choice booleans as True/False; independent source decoding uses 1/0. This was an adapter representation mismatch, not a numerical discrepancy.",
+      "repair": "Normalize only liked/optimal producer CSV Boolean tokens to integer tokens before exact comparison. Independent reconstruction and result file unchanged."
+    }
+  ]
+}

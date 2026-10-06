@@ -1,0 +1,13 @@
+First authorized execution after protocol freeze, 2026-10-06.
+Command:
+/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 experiments/recipient-value-learning/analysis.py --run
+
+Exit code: 1
+Traceback (most recent call last):
+  File "/Users/ren/theories/experiments/recipient-value-learning/analysis.py", line 21, in <module>
+    import scipy
+ModuleNotFoundError: No module named 'scipy'
+
+Failure occurred during imports, before source loading or any outcome aggregation.
+Frozen first analysis.py SHA256: 64b26c5442bca23e3a763b9e7b002040b517910e543ccda302dc2311afcf9712.
+No estimand or observation changed.

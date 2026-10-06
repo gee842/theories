@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2757
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww24360\viewh13800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ##############Folder overview##############\
+Each experiment has its own folder and each folder contains the following subfolders:\
+\
+1. [The code folder] Codes for cleaning the raw data and performing the analyses + visualization in the manuscript.\
+2. [The data_raw_primary folder] Raw and primary data directed downloaded from Pavlovia and Qualtrics. These are the first, unaltered version of the experiment data. The cleaning_[experiment index]. The data cleaning script (cleaning_[experiment index].R) can be run to convert these raw data into a cleaned version for further analyses.\
+3. [The data_clean folder] Cleaned data. For the Pilot Experiment and Experiments 1a, 1b, and 2, there are two separate files for the empathy and PIT analyses; for Experiment 3 there is only one file.\
+4. [The study materials folder] The original study materials, including the PsychoPy task (which is used to create the Pavlovia project) and the exported Qualtrics survey(s).\
+\
+##############Version information##############\
+R version 4.3.1 (2023-06-16)\
+Platform: aarch64-apple-darwin20 (64-bit)\
+Running under: macOS Sonoma 14.0\
+\
+Package versions:\
+psychReport_3.0.2 \
+emmeans_1.8.9 \
+glmmTMB_1.1.11    \
+lmerTest_3.1-3   \
+lme4_1.1-34      \
+Matrix_1.6-1.1    \
+ez_4.4-0          \
+psych_2.3.9       \
+Rmisc_1.5.1       \
+plyr_1.8.9       \
+lattice_0.21-8    \
+lubridate_1.9.3   \
+forcats_1.0.0     \
+stringr_1.5.0     \
+dplyr_1.1.3      \
+purrr_1.0.2       \
+readr_2.1.4       \
+tidyr_1.3.0       \
+tibble_3.2.1      \
+ggplot2_3.4.4    \
+tidyverse_2.0.0  \
+\
+##############Instructions for computational reproducibility##############\
+To computationally reproduce the results reported in the manuscript, you should follow the following steps:\
+\
+1. Open \'93osf_materials_reproducibility_check.Rproj\'94 in R Studio.\
+2. Execute renv::restore() in the console (this will install required packages in the same version as listed above).\
+3. Run the analysis_[experiment index].R scripts to reproduce the analyses reported in the main manuscript and the supplement.\
+4. Run the visualization_[experiment index].R scripts to create the figures included in the main manuscript and the supplement.\
+5. If needed, you can also run the cleaning_[experiment index].R scripts to re-create the cleaned data files using the raw/primary data in the data_raw_primary folder.\
+\
+\
+\
+}

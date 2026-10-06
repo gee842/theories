@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-10-06T00:37:53.206399+00:00",
+  "approved_for_execution": true,
+  "scope": "One retrospective primary participant-level factorial contrast and three fixed sensitivities; no GLMM reproduction or causal mediation claim. Published outcomes were known before this computational plan.",
+  "protocol_sha256": "6f105f981cb904b45574543d296fae1e10114f322cbe842473180ea607f7a3fb",
+  "root_review": "Approved protocol, original source and producer code before new outcome aggregation. Explicit cell order is a pre-execution clarification.",
+  "independent_reviews": [
+    "regulation_challenge accepted prospective protocol and identification algebra before calculations; final text to be saved separately.",
+    "regulation_evidence accepted exact source mapping and eligibility, no outcome aggregation."
+  ],
+  "inputs_sha256": {
+    "experiments/recipient-value-learning/PROTOCOL.md": "6f105f981cb904b45574543d296fae1e10114f322cbe842473180ea607f7a3fb",
+    "experiments/recipient-value-learning/analysis.py": "64b26c5442bca23e3a763b9e7b002040b517910e543ccda302dc2311afcf9712",
+    "sources/32-mental-state-reward-learning-2026-10-06/manifest.json": "0971f94037dcc3e00fbc04cef7d694382f09c78441bdf3a35ffbe35940ff9f1d",
+    "sources/32-mental-state-reward-learning-2026-10-06/source-schema-audit.json": "8bee218a749dba79bb49f6d0f34d2e09515941d5e4aeb5acdc7f2bf270de5988",
+    "sources/32-mental-state-reward-learning-2026-10-06/README.md": "aa71d074716eb7b76cfb0cd307788c5fd5c47c0276164a1fb2581af141767f3f",
+    "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md": "4cec28f13f0384f1ab56eadf41f622a192174b2c9ff5374de876e64ba7702899"
+  },
+  "source_originals_bound_by_manifest": 398,
+  "no_new_outcome_aggregation_at_freeze": true,
+  "known_source_outcomes": "Published all-sample reversal finding and post-task awareness moderation were already read. This is not outcome-blind preregistration.",
+  "expected_source_counts": {
+    "saved_complete": 385,
+    "eligible": 333,
+    "clean_answered_rows": 10532
+  }
+}
