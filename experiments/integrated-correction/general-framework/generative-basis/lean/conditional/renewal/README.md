@@ -10,6 +10,8 @@
 
 Without such a population, every execution stops being live by an explicit time (`no_self_renewing_population_explicit_deadline`). With rates at most `A` and positive formation demands, that time is `((1 + A·D)^W · P₀ + 2) · W`. Here `W = (n + 1)·D + 1`, and `P₀` is the initial reserve plus what the initial tokens can open.
 
+**Keeping designated kinds** (`renewal_keeping_theorem`). The proof is carried out for any decidable set of designated kinds. Some execution keeps a live token of a designated kind at every time exactly when some self-renewing population contains a designated kind. The renewal theorem is the case where every kind is designated. When the means of correction (records, readers) are designated, this decides whether correction capacity can be renewed along with the rest. In `lapsingCorrection`, a closure that exactly renews itself supports a correction kind that falls short. The closure renews forever, but no execution keeps the correction kind (`lapsing_correction_cannot_be_kept`).
+
 ## What is proved
 
 **`RenewalClosure.lean`: late activity descends from a realized closure.**
@@ -58,20 +60,20 @@ An `Execution` is a supplied sequence of `channelProcess` ticks. Its only extra 
 **`RenewalCharacterization.lean`: the exact condition.**
 
 - `self_renewing_renews_forever`: sufficiency, through the steady configuration as an execution (`steadyExecution`).
-- `renewal_dichotomy`: for any execution, either the law has a self-renewing population, or the execution stops being live by `(P + 2) · W`, where `P` is the opening potential at time `W`. The proof has two cases.
-  - Suppose a kind that brings in more than its demand is formed after time `W`. Its formation descends from a realized cycle. The cycle plus the walk to that kind, with enough repeats of the kind, is a self-renewing population (`cycle_with_tail`, `excess_population`).
-  - Otherwise, the opening potential cannot rise, and each formation of a short kind lowers it (`stretch_potential`, `stretch_potential_short`). So some window of length `W` has no short formation. The closure that the live configuration at its end descends from consists of kinds that bring in enough.
-- `renews_forever_has_self_renewing_population`, `renewal_closure_theorem`: necessity, and the equivalence.
-- `potential_growth`, `potential_bound`, `no_self_renewing_population_explicit_deadline`: the deadline from the initial configuration alone.
+- `renewal_dichotomy_keeping`: for any execution and designated kinds, either some self-renewing population contains a designated kind, or the execution holds no designated live token at some time by `(P + 2) · W`, where `P` is the opening potential at time `W`. `renewal_dichotomy` is the case where every kind is designated. The proof has two cases.
+  - Suppose a kind that brings in more than its demand is formed after time `W`. Its formation descends from a realized cycle, and so does a designated kind kept at time `W` (`kept_kind_descends`). The two cycles with their walks, plus enough repeats of the excess kind, form a self-renewing population (`cycle_with_tail`, `excess_population`).
+  - Otherwise, the opening potential cannot rise, and each formation of a short kind lowers it (`stretch_potential`, `stretch_potential_short`). So some window of length `W` has no short formation. A designated kind kept at its end descends from a cycle and walk of kinds all formed in that window, so they all bring in enough.
+- `renews_forever_has_self_renewing_population`, `renewal_closure_theorem`, `renewal_keeping_theorem`: necessity, and the two equivalences.
+- `potential_growth`, `potential_bound`, `no_keeping_population_explicit_deadline`, `no_self_renewing_population_explicit_deadline`: the deadlines from the initial configuration alone.
 - `closed_open_short_has_no_self_renewing_population`: the single short kind of Phase 1 is decided by the law.
 - `dangling_support_renews_forever`, `dangling_kind_outside_every_closure`, `dangling_closure_falls_short`. A short self-supporting kind supports a second kind that supports nothing but brings in more than its demand. The second kind is in no closed set of the support relation, and the closure alone falls short, yet the law renews forever. **Renewal still needs a realized two-sided closure (`live_late_descends_from_realized_closure`). But the population that renews need only be closed under support. The kind that captures the flow can sit outside every two-sided closure of the support relation, and it is generative only through the provision it opens.**
 
-`RenewalClosure`'s window theorems now also state that the walk's occurrences come no later than the late occurrence (`s ≤ t`). The proofs build them that way, and the exact condition needs it.
+`RenewalClosure`'s window theorems now also state that the walk's occurrences come no later than the late occurrence (`s ≤ t`), and they cover the walk from the cycle as well as the cycle. The proofs build them that way, and the exact conditions need both.
 
 ## What is not yet proved
 
 - That the aggregate condition is equivalent to the roadmap's two named cases, a cycle of kinds that each bring in enough or an excess kind supported from a cycle, as a statement about the law alone. The necessity proof constructs one of the two, and sufficiency is proved for each, but the static cycle extraction is not stated.
-- Renewability of whole configurations, roadmap Phase 2b: which configurations can reach a standing renewal, and which histories damage that possibility.
+- Renewability of whole configurations, the rest of roadmap Phase 2b: which configurations can reach a standing renewal, and which histories damage that possibility.
 - The generalizations of Phase 3 (several required supporters, several flows) and the derivation of constraints inside the core (Phase 4).
 
 Kinds, edges, spans, demands and rates are supplied inputs. Nothing here says which history occurs, that a system reaches the steady configuration, or that continuation is favorable.
@@ -86,4 +88,4 @@ The checker:
 - rejects `sorry`, custom axioms and warnings;
 - requires every new theorem to be audited.
 
-The [receipt](verification.json) records **95 new audits**: 14 with empty axiom reports, and 81 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package. `Classical.choice` is avoided throughout; the note on `omega` in the Phase 2 note says how.
+The [receipt](verification.json) records **111 new audits**: 16 with empty axiom reports, and 95 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package. `Classical.choice` is avoided throughout; the note on `omega` in the Phase 2 note says how.
