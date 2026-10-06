@@ -1,6 +1,6 @@
 # 伦理自然主义的四条论证：生成论的对应、证明与未完成部分
 
-2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中：三个模块共 53 条声明全部审计，45 条不依赖任何公理，其余只依赖 Lean 标准的 `propext` 与 `Quot.sound`；无 `sorry`、无自定义公理，继承模块的源码哈希与主收据一致。本文不是 Ren 原话，也不宣称伦理结论已经证明。
+2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 102 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
 
 **审查状态。** 首版发表后，同日由一个独立 AI 审查者复核。审查确认证明全部成立，但指出四处阻断性的表述过度和若干应改之处。本版已按审查改写；第7节列出改正内容，首版保留在 git 历史中。新增的 `NaturalismReview.lean` 给出改正后的形式陈述，前两个模块未改动。
 
@@ -16,14 +16,14 @@
 
 | 论证 | 生成论的对应 | 已有结果 | 本轮证明了什么 | 未证 |
 |---|---|---|---|---|
-| 随附性（Jackson） | 候选质量是整段历史的函数 | 中途下降不能由终点摘要恢复（[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)）；整体评价先于时间表达（[FUTURE-GOOD-INTEGRAL §7](FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)） | 随附与在商上分解等价（对任意性质成立的一般事实）；候选质量一般不随附于起点、终点加动作序列 | 道德属性随附于自然基础；必然共外延到属性同一 |
+| 随附性（Jackson） | 候选质量是整段历史的函数 | 中途下降不能由终点摘要恢复（[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)）；整体评价先于时间表达（[FUTURE-GOOD-INTEGRAL §7](FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)） | 随附蕴含在商上分解，基础的函数随附（对任意性质成立的一般事实）；候选质量一般不随附于起点、终点加动作序列 | 道德属性随附于自然基础；必然共外延到属性同一 |
 | 怪异性（Mackie）／简约（Harman） | 候选质量只用过程本身定义 | 核心语义只有可行转换（`GenerativeCore`） | 保持动作词汇不变的精确重表示下不变 | 规范的"应被追求性"；对动作词汇选择的依赖 |
 | 认识论 | 损失有有限见证，并落在实际转换上 | 询问何时有用（`InquiryWarrant`）；估值经共同经历形成，正负皆可（[估值发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)）；完全对称的起点不能由记录决定（[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)） | 有限见证否定保全；损失定位；只看终点认识不到 | 道德信念怎样经观察形成并得到辩护；反思平衡是否收敛 |
 | 解释作用（康奈尔） | 候选质量在一切过程中蕴含"活动始终可实现" | `short_kinds_cannot_renew_forever` | 一条跨过程成立的定律式推论 | Sturgeon/Harman 意义上对观察与信念的因果解释 |
 
 ## 1. 随附性与 Jackson 的论证
 
-**一般事实。** `Supervenes M N` 指：基础 `N` 相同则 `M` 相同。`supervenes_iff_factors` 证明：`M` 随附于 `N`，当且仅当 `M` 是 `N` 的同一类（商）上的函数。这对任意 `M`、`N` 都成立，是商的泛性质，不是关于道德的定理。它表明：**一旦**承认道德属性全局随附于自然基础，就有一个由基础定义的性质与之在一切所论情形中共外延。前件，即道德属性确实随附，本轮没有证明；Lean 里也没有模态量化。
+**一般事实。** `Supervenes M N` 指：基础 `N` 相同则 `M` 相同。`supervenes_factors` 证明：若 `M` 随附于 `N`，则 `M` 是 `N` 的同一类（商）上的函数；`base_defined_supervenes` 给出反方向。这对任意 `M`、`N` 都成立，是商的泛性质，不是关于道德的定理。（首版的 `supervenes_iff_factors` 依赖 `Quot.sound`，为满足无公理规则拆成这两条；命题值性质的随附改用不需要 `propext` 的共变形式 `Covaries`。）它表明：**一旦**承认道德属性全局随附于自然基础，就有一个由基础定义的性质与之在一切所论情形中共外延。前件，即道德属性确实随附，本轮没有证明；Lean 里也没有模态量化。
 
 **生成论的具体内容。** `Run` 把历史作为数据保存，包括每个中间状态。`Along R r` 表示关系 `R` 在 `r` 的每一次实际转换上成立。取 `R` 为延续条件序 `ContinuationLe`（后一状态能实现前一状态能实现的一切有限动作序列），候选质量就是"整段展开没有取消任何活动的可实现性"。
 
@@ -126,9 +126,24 @@ Mackie 还有两部分没有被消解。第一，**规范的"应被追求性"**�
   - 解释作用、Moore、孪生地球、Mackie/Harman、McDowell 的表述按审查改正；
   - 候选比较改为以前提为条件。
 
+## 8. 剩余输入的处理（Ren 的无假设、无公理规则）
+
+Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 Lean 中由过程导出，要么在 Lean 中证明其必要。本线程的处理如下。
+
+| 输入 | 处理 | 定理 |
+|---|---|---|
+| Lean 标准公理 `propext`、`Quot.sound` | 已消除：102 条新声明全部不依赖任何公理 | 收据 `verification.json` |
+| 取向（以"不损失"为上，而非相反） | 已证必要：所有自然资格都相同的两个关系，对同一实际转换给出相反判断 | `credentials_do_not_determine_verdict` |
+| 受保护范围取全部活动 | 已证必要："不偏向任何活动"同时允许空范围与全范围，二者对逆向取向的判断不同 | `unprivileged_does_not_fix_scope` |
+| 各个示例过程（`dip`、`restraint` 等） | 不是假设：一般定理对任意过程成立，示例只作为存在性见证与反例 | 各模块 |
+| 活动词汇与"存在一条路径"的可行性 | **尚未处理**：判断依赖动作词汇，这一依赖既未消除也未证明必要。消除它是下一步 | — |
+| 道德属性随附、属性同一 | 不是 Lean 命题：Lean 中没有道德谓词，这两项属于哲学论证，不在形式范围内 | — |
+
+两项规范输入都已证明不可省去。它们只出现在定理的定义或前提里，没有被任何定理暗中使用。
+
 ## 形式索引
 
-`WholeQualityNaturalism.lean`：`supervenes_iff_factors`、`base_defined_supervenes`、`supervenes_of_finer`、`Run`、`Along`、`along_iff_steps`、`along_iff_chain`、`along_supervenes_on_states`、`along_append`、`along_mono`、`chain_map`、`along_continuation_transport`、`preserved_throughout`、`witness_refutes_preservation`、`loss_localizes`、`loss_localizes_nn`、`located_loss_breaks_quality`、`quality_not_fixed_by_endpoints_and_word`、`quality_not_supervenient_on_word`、`availability_not_fixed_by_endpoints_and_word`。
+`WholeQualityNaturalism.lean`：`supervenes_factors`、`Covaries`、`covaries_of_supervenes`、`chain_congr`、`base_defined_supervenes`、`supervenes_of_finer`、`Run`、`Along`、`along_iff_steps`、`along_iff_chain`、`along_supervenes_on_states`、`along_append`、`along_mono`、`chain_map`、`along_continuation_transport`、`preserved_throughout`、`witness_refutes_preservation`、`loss_localizes`、`loss_localizes_nn`、`located_loss_breaks_quality`、`quality_not_fixed_by_endpoints_and_word`、`quality_not_supervenient_on_word`、`availability_not_fixed_by_endpoints_and_word`。
 
 `NaturalismIdentity.lean`：`converse_projection_iff`、`dip_two_dominates_one`、`naturalist_criteria_do_not_fix_orientation`、`NonUndermining`、`nonUndermining_whole_iff`、`generation_order_greatest`、`unprivileged_scope_is_whole_scope`、`guided_history_preserves`、`converse_undermines_in_dip`、`fixed_scope_permits_loss`、`generation_leaves_pair_unranked`、`total_orders_undermine`、`scalar_ranking_undermines`、`restraint_registers_as_damage`。其中 `total_orders_undermine`、`scalar_ranking_undermines` 只涉及状态对，由下一模块的实际转换版本取代。
 

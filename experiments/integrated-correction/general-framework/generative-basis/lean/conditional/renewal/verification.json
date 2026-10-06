@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-10-06T20:40:17.659752+00:00",
+  "checked_at_utc": "2026-10-06T20:48:13.855121+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "checker_sha256": "a14572ce29621304a30546f7442db5f7f3d5d97f97732f0961c64075b354efe9",
+  "checker_sha256": "605f6555caf5b8e8482c9378fd63edde5248654af022f0e7784643e06f956f96",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
   "allowed_standard_axioms": [
@@ -130,9 +130,25 @@
       "clean": true,
       "output": "verification/RenewalCharacterization.txt",
       "output_sha256": "0b01199973e85560c0b4350ef3e9e96dca84889e4bea3272ef99b294cde5b6dc"
+    },
+    {
+      "module": "RenewalConfigurations",
+      "source": "RenewalConfigurations.lean",
+      "source_sha256": "639a64280cdc05e94bacbb588f7e0688829156e37e1e93f88c5bf5eeac3ce1af",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 24,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 3,
+      "clean": true,
+      "output": "verification/RenewalConfigurations.txt",
+      "output_sha256": "8421907f1861f723690dbf1268de9118bc3ec1820d9d2ba370d0be354f51ba9e"
     }
   ],
-  "new_audited_declarations": 111,
-  "new_empty_axiom_audits": 16,
-  "scope": "Conditional statements over supplied kinds, support edges, spans, formation demands and arrival rates: late occurrence descends from a realized closure of kinds; acyclic support has a deadline without a supplied rank; when every kind brings in less than its formation demands, a combined potential strictly decreases on every live tick, so renewal ends by an explicit deadline; a support-closed population that is balanced, or that supports an excess kind, has a steady configuration fixed by one tick and so renews forever; and on one execution of the constraint-flow process, endless liveness needs both a realized closure of supporters that outlast the tick and a kind that brings in at least its formation demand; and, with finitely many kinds and spans between one and D, some execution stays live forever exactly when a nonempty population of kinds is closed under support by constraints that outlast a tick and opens over its spans at least what forming it demands, otherwise every execution stops being live by an explicit time; the same holds for keeping a live token of designated kinds, such as means of correction, exactly when some self-renewing population contains one. No physical identification or ethical appraisal is asserted."
+  "new_audited_declarations": 135,
+  "new_empty_axiom_audits": 19,
+  "scope": "Conditional statements over supplied kinds, support edges, spans, formation demands and arrival rates: late occurrence descends from a realized closure of kinds; acyclic support has a deadline without a supplied rank; when every kind brings in less than its formation demands, a combined potential strictly decreases on every live tick, so renewal ends by an explicit deadline; a support-closed population that is balanced, or that supports an excess kind, has a steady configuration fixed by one tick and so renews forever; and on one execution of the constraint-flow process, endless liveness needs both a realized closure of supporters that outlast the tick and a kind that brings in at least its formation demand; and, with finitely many kinds and spans between one and D, some execution stays live forever exactly when a nonempty population of kinds is closed under support by constraints that outlast a tick and opens over its spans at least what forming it demands, otherwise every execution stops being live by an explicit time; the same holds for keeping a live token of designated kinds, such as means of correction, exactly when some self-renewing population contains one; for whole configurations, renewability is never gained along a history without import, a seeded configuration with enough reserve reaches a standing renewal, and renewability is not a function of the reserve and kinds present. No physical identification or ethical appraisal is asserted."
 }

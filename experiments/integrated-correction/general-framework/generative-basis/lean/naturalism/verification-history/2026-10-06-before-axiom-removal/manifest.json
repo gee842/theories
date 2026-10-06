@@ -1,0 +1,37 @@
+{
+  "note": "Sources and receipt before eliminating propext and Quot.sound, under Ren's no-axioms rule (6 October 2026). These files are preserved unchanged.",
+  "files": [
+    {
+      "snapshot": "sources/NaturalismIdentity.lean",
+      "sha256": "7f52bb8c9a8e3aceeedeef6b1ff14c5dcf5d3c9bdc7622da1b64be2116736f91"
+    },
+    {
+      "snapshot": "sources/NaturalismReview.lean",
+      "sha256": "6301940e1960a63e0ff3b8a4df7c679129205453d499208abf17fdd56287af36"
+    },
+    {
+      "snapshot": "sources/PremiseNecessity.lean",
+      "sha256": "258256712c1678132ba365a978dc155df2954e88d2207b4aef2d3a1000a77844"
+    },
+    {
+      "snapshot": "sources/ProtectedScope.lean",
+      "sha256": "be6ef436c4008b06decb7c01fac6f8bdbf2772d32b3c1af4ec0d0fa91fd9fe8c"
+    },
+    {
+      "snapshot": "sources/ProtectedScopeLimits.lean",
+      "sha256": "5e95cdd06badaa14279240096025173f02ed032cc93c7cb4b9229886bc68526d"
+    },
+    {
+      "snapshot": "sources/WholeQualityNaturalism.lean",
+      "sha256": "cb96099235cc69567e9af9f85b5417c207b378536b9f03ee48fb58dfa3513994"
+    },
+    {
+      "snapshot": "sources/check.py",
+      "sha256": "0a341cf3802d26d0369dcb1660613674cf4180b53a37d816ceaeea808d246c99"
+    },
+    {
+      "snapshot": "sources/verification.json",
+      "sha256": "741d994c3b0ca9df24c0d25aac3b598fe9e8db4fddde419ecc7263e17f979bb4"
+    }
+  ]
+}
