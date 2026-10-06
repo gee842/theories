@@ -1,0 +1,35 @@
+import ValuationBridges
+open ValuationDevelopment
+#print axioms wsum_append
+#print axioms wsum_scale
+#print axioms wsum_bind
+#print axioms wsum_le
+#print axioms wsum_congr
+#print axioms wsum_const_mul
+#print axioms wsum_const
+#print axioms mem_wbind
+#print axioms wbind_preserves
+#print axioms wmass_bind_le
+#print axioms wtotal_bind
+#print axioms wmass_le_of_imp
+#print axioms wmass_le_total
+#print axioms escape_bound
+#print axioms SOrg.step_mass_flag
+#print axioms wmass_false
+#print axioms wrun_preserves
+#print axioms stochastic_coverage
+#print axioms stochastic_estimate_exact
+#print axioms eps_greedy_estimate_exact
+#print axioms eps_greedy_three_steps
+#print axioms noisy_greedy_locks
+#print axioms curiosity_escapes_noisy_lock
+#print axioms seq_sustained
+#print axioms par_sustained
+#print axioms branch_sustained
+#print axioms lineLedger_fields
+#print axioms lineage_sustained
+#print axioms lineage_needs_arrivals
+#print axioms count_le_enacted
+#print axioms later_arrivals_needed
+#print axioms lineage_needs_inheritance
+#print axioms ledger_silent_on_valuation

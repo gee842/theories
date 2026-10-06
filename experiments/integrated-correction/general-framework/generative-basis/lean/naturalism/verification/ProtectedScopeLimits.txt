@@ -1,0 +1,6 @@
+'Generative.Naturalism.restraint_damage_exercised' does not depend on any axioms
+'Generative.Naturalism.hurt_stuck' does not depend on any axioms
+'Generative.Naturalism.esc_stuck' does not depend on any axioms
+'Generative.Naturalism.escape_live_removes_harm' does not depend on any axioms
+'Generative.Naturalism.escape_harm_unregistered' does not depend on any axioms
+'Generative.Naturalism.dip_fall_zero_not_damage' does not depend on any axioms
