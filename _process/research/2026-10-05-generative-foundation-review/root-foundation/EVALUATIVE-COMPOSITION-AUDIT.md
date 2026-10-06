@@ -8,6 +8,8 @@
 
 **Later accepted integration:** [§11](#11-accepted-common-map-and-positive-application-synthesis) credits the actual composition map and the positive concern/bounded-wisdom argument. Their former generic synthesis obligations are closed at the reviewed scopes.
 
+**Accepted proof update:** [§12](#12-formal-provenance-delivery-and-the-pending-service-boundary) records `0b3a804`. The formerly pending application-evidence proof is accepted; its conditional service obstruction remains distinct from a policy that acts on it.
+
 ## 1. One account with distinct meanings
 
 The [frozen uptake protocol][uptake] proposes own-consequence learning → retained recipient-sensitive influence → paid choice. The accepted [application account][application] specifies when that same choice can count as warranted concern. Neither result substitutes for the other.
@@ -210,6 +212,14 @@ What remains must be named at the exact interface. The physical lineage supplies
 For a claim that this child corrects its application after fulfillment, the remaining actual use is still historical evidence → justified application status → dependent recommendation changed → feasible choice affected. Generic correction remains closed elsewhere; the present class has no sound pending comparator at a known-command boundary when query1 qualifies the fixed service. The pending provenance/delivery formal extension is not accepted here and cannot by itself supply this policy update. An unconditional stop or an edited episode would not repair it.
 
 The [current completion account](FIXED-FINISH-LINE-AUDIT.md#13-common-explanation-composition-and-positive-application-now-established) therefore closes the earlier explanatory deliverables and retains only claim-specific missing inferences. Existing evidence reconciliation and conditional transports should be used at their accepted scopes. Neither another complete apparatus nor putting every result on one hardware trajectory follows from the new map. No scientific or compiler execution was performed for this update.
+
+## 12. Formal provenance, delivery and the pending-service boundary
+
+The accepted [application-evidence package](APPLICATION-EVIDENCE-MATH.md), commit `0b3a804`, now proves the operational origin behind §10's source-bound interpretation. An initially ready, empty-bank producer and a paid reader over its actual resulting archive yield a positive frame from current non-root command support. The **same archived index/frame** has an actual acquisition whose own prefix contains a recipient work event crediting ten units. Ready initialization excludes preloaded positive-work state; arbitrary payloads, another bank or a later unrelated credit cannot substitute for that history. The [independent review](APPLICATION-EVIDENCE-REVIEW.md) accepts the 24 new declarations and their exact scope.
+
+The generic theorem's reader context is a declared input, not an independently sensed global present or the service's ethical episode. `EpisodeBound` and `ServiceMeaning` separately connect the actual work to an independently specified patient/service episode. Then `Met` and `Pending → ¬Met` exclude a sound pending-one-service entrance. The inherited actual instance uses the second query's positive frame and paid 24-unit consumer, leaving recipient70, actor10 and one packet before optional selected use. Historical delivery is therefore established while another act remains physically feasible.
+
+This closes the narrow provenance/delivery proof obligation and strengthens the application obstruction. It does not implement the inference as a new policy, withdraw a recommendation, derive ethical standing or make every further delivery unwarranted. The physical proof needs no ethical G; its service interpretation still needs the displayed independent premises. Generic premise-sensitive correction stays closed elsewhere, and this exact lineage's application-withdrawal use remains required only if claimed. The [completion update](FIXED-FINISH-LINE-AUDIT.md#14-historical-delivery-and-the-one-service-obstruction-now-proved) preserves the same central evaluative/justificatory question without adding another default apparatus requirement.
 
 [application-existing]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md#an-existing-witness-of-correction-and-feasible-choice
 [succession-proposal]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md
