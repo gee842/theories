@@ -347,7 +347,7 @@ This audit read preserved proofs and results and confirmed all ten source hashes
 
 ## 10. A retained fulfillment-evidence source in first succession outcomes
 
-**First producer outcomes; independent acceptance pending.** The [succession source][succession-model] and [saved results][succession-results] now exhibit a specific paid child continuation. This section maps that preserved output without promoting producer checks into independent validation. Read-only SHA-256 inspection matched the requested source bytes:
+**Current acceptance update, 6 October 2026.** This section originally mapped the first producer outcomes before independent acceptance. That checkpoint and its exact hashes/data below are preserved. The unchanged [succession source][succession-model] and [saved results][succession-results] are now independently accepted at the separate scopes stated in [EVALUATIVE-SUCCESSION](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md) and its [integration receipt](EVALUATIVE-SUCCESSION-INTEGRATION.json): reconstruction of 3,306 histories across 29 cases/261 mixtures; 92 new Lean declaration audits; and 14 selected formal/runtime milestones. The selected formal witness and staged preparation do not establish all-case stochastic refinement. Acceptance establishes the finite causal succession/correction bridge, not the fulfillment-sensitive application policy discussed below. This status refresh adds no build, simulation or apparatus. The original read-only SHA-256 inspection matched:
 
 - `model.py`: `cf7afad69d8c48f428a8a94d3cf7eb7cb713ab6c72fda6ab39b2668c98dab184`.
 - `results.json.gz`: `d91c4f20b3783fdbd41eb5d7f9c40d4750e832654b983ee4b05093bb359d31ed`.
