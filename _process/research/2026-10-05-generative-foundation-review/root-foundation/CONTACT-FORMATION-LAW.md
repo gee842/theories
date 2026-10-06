@@ -1,6 +1,6 @@
 # Supported contact formation changes the derived packet law
 
-**Track closed, 6 October 2026.** The [closing section](#closing-the-track-formation-from-the-ports-own-failures) generalizes the result, removes the inherited spare stock and states what retained evidence can decide.
+**Track closed, 6 October 2026.** The [closing section](#closing-the-track-formation-from-the-ports-own-failures) generalizes the result and removes the inherited spare stock. The [acquisition section](#acquiring-the-contact-inversion-and-receipt-calibration) derives the decision to form, receipt calibration and the inversion from an inquiry the port runs on itself.
 
 6 October 2026. AI-assisted Lean continuation of the [process-law derivation](PROCESS-LAW-DERIVATION.md), at Ren's direction to keep proving the generative core in Lean. This addresses the next derivation that note names: **formation of the contact organization → changed effective inquiry law**.
 
@@ -53,11 +53,31 @@ All 26 audited declarations have empty axiom reports.
 
 **One closed history.** `failure_opens_contact` executes a single history from a blocked class-C port with no spares and an empty ledger: two supported rotations, a probe whose transfer fails, recovery of that waste, formation, and a second probe. The port ends in class A with ten units transferred, ten wasted, no source left, no spare left and one pair recovered. The executed run is proved sound as a `Trace` of the extended process (`run_sound`). Without formation the same port stays class C after any native history (`start_native_history_stays_C`).
 
+## Acquiring the contact, inversion and receipt calibration
+
+[AcquiredContact.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean) crosses the bridge the closing section left open. It adds 26 declarations, all with empty axiom reports.
+
+The port runs an inquiry on itself with native operations only: reset, probe, two rotations, probe. An intact reset fixes the phase, so the two probes test both outputs. Each probe leaves two traces: its receipt, and the change in the port's own record of transferred material. The record shows actual arrival directly; the receipt shows it through the possibly inverted receipt path.
+
+| Theorem | Content |
+|---|---|
+| `inquiry_reveals`, `inquiry_reads_profile` | The two recorded arrivals are exactly the transfer-response profile; the receipts are those arrivals through the receipt inversion. |
+| `inquiry_calibrates_receipt` | Each receipt differs from its recorded arrival by exactly the receipt inversion. Receipt calibration is acquired from the port's own record. |
+| `inquiry_identifies_class` | Two inquiries agree on recorded arrivals exactly when their ports are in the same A/B/C class. |
+| `decision_identifies_contact` | Deciding to form when neither output arrived is sound and complete: it forms exactly when the contact is blocked. |
+| `open_inquiry_reveals_inversion` | With an open contact, the first recorded arrival is the inversion itself. |
+| `blocked_hides_inversion` | A blocked contact hides the inversion: both inversions give identical readings. |
+| `receipts_confound_inversions` | Receipts alone cannot separate inversion from receipt inversion; flipping both leaves every receipt unchanged. |
+| `inquiry_needs_two_packets` | Any completed inquiry started with at least twenty source units. |
+| `acquired_loop`, `acquired_start_decides_to_form` | One executed history from a blocked class-C port with no spares: the first inquiry finds no arrival and so decides to form, the waste of its two failed probes is recovered into a pair, the contact is formed, and the second inquiry records one arrival and reveals the inversion. The port ends in class B with ten units transferred and thirty wasted. |
+
+This refines the closing section's limit rather than reversing it. A single failed probe cannot identify blockage; a two-probe inquiry from a known phase can, because a blocked contact fails at both outputs while an open one arrives at exactly one. The inquiry needs an intact reset; a broken reset leaves the phase unknown and the theorems do not apply.
+
 ## What the track establishes and what remains
 
-Established, at this model's scope: the contact coordinate is no longer an unexplained fixed input of the effective inquiry law. It changes only through formation, formation is materially backed by the port's own recorded failures, and one history realizes the whole loop from failure to transfer.
+Established, at this model's scope: the contact coordinate is no longer an unexplained fixed input of the effective inquiry law. It changes only through formation, formation draws on the port's own recorded failures, and the decision to form follows soundly from an inquiry the port runs on itself. The same inquiry acquires receipt calibration and, once the contact is open, the inversion. One history realizes the whole loop from failure through inquiry and formation to transfer.
 
-Still supplied: the recovery rate of ten wasted units per pair, applying the native interface demand to recovery and formation, and the rule that formation clears `blocked`. Inversion `tau`, sensor parity and receipt inversion remain fixed. The decision to recover or form is not derived. The evidence results show why: accounting cannot identify blockage, so a sound trigger needs phase and inversion knowledge that this track does not acquire. Deriving that knowledge (phase acquisition through supported reads, receipt calibration) is the open bridge from this track to learning. The three-phase cycle and accounting rules are being examined in a separate thread.
+Still supplied: the recovery rate of ten wasted units per pair, applying the native interface demand to recovery and formation, the rule that formation clears `blocked`, and the inquiry schedule itself. Reading the record and applying the decision rule are described in the theorems, not built as a further mechanism inside the port; why the port runs this inquiry rather than another is not derived. Sensor parity remains fixed and unused here. The three-phase cycle and accounting rules are being examined in a separate thread.
 
 ## Reproduce
 
@@ -67,7 +87,7 @@ From `experiments/integrated-correction/general-framework/generative-basis/lean/
 python3 check_contact_formation.py
 ```
 
-It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them and both new modules fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The closing run passed 34 modules and 673 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
+It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them and the three new modules fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The latest run passed 35 modules and 699 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
 
 ## Vocabulary
 

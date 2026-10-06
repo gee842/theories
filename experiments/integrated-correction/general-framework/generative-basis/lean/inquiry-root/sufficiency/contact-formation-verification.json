@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T19:27:07.900595+00:00",
+  "checked_at_utc": "2026-10-06T19:50:47.457616+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -308,12 +308,22 @@
       "audits": 48,
       "nonempty_audits": {},
       "clean": true
+    },
+    {
+      "module": "AcquiredContact",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean",
+      "source_sha256": "11cc317b453298dfc4807cb8ecf01188b85ee0b8f65bd6ceed20a4cbda057ac8",
+      "exit_code": 0,
+      "audits": 26,
+      "nonempty_audits": {},
+      "clean": true
     }
   ],
-  "total_audits": 673,
+  "total_audits": 699,
   "new_module_audits": {
     "ContactFormation": 26,
-    "FormationClosure": 48
+    "FormationClosure": 48,
+    "AcquiredContact": 26
   },
-  "scope": "ContactFormation and FormationClosure over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the decision to form is not derived."
+  "scope": "ContactFormation, FormationClosure and AcquiredContact over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."
 }

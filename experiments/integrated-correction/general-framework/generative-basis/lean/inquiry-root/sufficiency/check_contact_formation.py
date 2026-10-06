@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fresh build of ContactFormation and FormationClosure over the unchanged 32-module process-law closure.
+"""Fresh build of ContactFormation, FormationClosure and AcquiredContact over the unchanged 32-module process-law closure.
 
 Portable: uses `lean` from PATH (or $LEAN) and checks its version against the
 pinned toolchain. Sources are copied into a temporary directory; no local
@@ -15,7 +15,7 @@ HERE = Path(__file__).resolve().parent
 CORE = HERE.parents[1]
 REPO = CORE.parents[4]
 CLOSURE = HERE / "process-law-verification.json"
-NEW = ["ContactFormation", "FormationClosure"]
+NEW = ["ContactFormation", "FormationClosure", "AcquiredContact"]
 AUDIT = re.compile(r"'([^']+)' (?:does not depend on any axioms|depends on axioms: \[([^\]]*)\])")
 
 
@@ -68,7 +68,7 @@ def main():
               "status": "passed" if passed else "failed", "lean_version": version,
               "modules": rows, "total_audits": sum(r["audits"] for r in rows),
               "new_module_audits": {r["module"]: r["audits"] for r in new_rows},
-              "scope": "ContactFormation and FormationClosure over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the decision to form is not derived."}
+              "scope": "ContactFormation, FormationClosure and AcquiredContact over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."}
     (HERE / "contact-formation-verification.json").write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps({"status": record["status"], "modules": len(rows), "audits": record["total_audits"]}))
     raise SystemExit(0 if passed else 1)
