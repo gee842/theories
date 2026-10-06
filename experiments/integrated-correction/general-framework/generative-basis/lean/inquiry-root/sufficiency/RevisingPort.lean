@@ -57,10 +57,15 @@ broken reset can probe the same output twice, and then no rule decides
 `PortValuation.disposition_stale_then_recovers` shows the reading taken before
 the act goes stale.
 
-Two inputs of the extended port remain and are the next to remove: the recovery
-rate of ten wasted units per pair (being grounded in a separate thread), and
-the formation rule (formation meets the native interface demand and clears
-`blocked`). "Valuation" keeps the package's thin functional sense: a selective
+For the extended port's formation step: some event outside native activity is
+necessary for any contact change (`FormationLaw.change_requires_formation`), and
+consuming a recovered pair is necessary for every opening to be backed by
+recorded failures (`unconsumed_formation_unbacked`). Not yet derived: that
+formation meets the native interface demand (no current result needs it; it
+keeps every completed step drawing), and formation as a primitive event rather
+than a rearrangement of the port's own material. The recovery rate of ten
+wasted units per pair is being grounded in a separate thread.
+"Valuation" keeps the package's thin functional sense: a selective
 disposition.
 -/
 
@@ -593,6 +598,25 @@ theorem broken_reset_cannot_decide (f : Reading → Bool) :
   rw [broken_readings_agree] at blocked
   exact Bool.noConfusion (blocked.symm.trans opened)
 
+/-! ## Why formation consumes a recovered pair -/
+
+/-- A rival formation step that meets the interface demand and opens the contact
+without consuming a pair. -/
+def unconsumedFormation : Process Port Unit where
+  step x _ y := ∃ ready, charge x.native = .paid ready ∧
+    y = ⟨ContactFormation.openContact ready, x.spare, x.recovered⟩
+
+/-- With that rival, a port with no spares, no recoveries and no recorded failure
+opens its contact: the formation is backed by nothing. So consuming a recovered
+pair is necessary for `formations_backed_by_failures`. -/
+theorem unconsumed_formation_unbacked :
+    ∃ y, Trace (extend activity unconsumedFormation) FormationClosure.start [.inr ()] y ∧
+      FormationClosure.start.spare = 0 ∧ FormationClosure.start.native.wasted = 0 ∧
+      targetOf FormationClosure.start.native.tau FormationClosure.start.native.blocked = .C ∧
+      targetOf y.native.tau y.native.blocked = .A ∧
+      formations ([.inr ()] : List Event) = 1 ∧ recoveries [.inr ()] = 0 :=
+  ⟨_, .cons ⟨_, rfl, rfl⟩ (.nil _), rfl, rfl, rfl, rfl, rfl, rfl⟩
+
 end Generative.InquirySufficiency.RevisingPort
 
 #print axioms Generative.InquirySufficiency.RevisingPort.actingConsequence
@@ -654,3 +678,5 @@ end Generative.InquirySufficiency.RevisingPort
 #print axioms Generative.InquirySufficiency.RevisingPort.broken_readings_agree
 #print axioms Generative.InquirySufficiency.RevisingPort.broken_reset_cannot_decide
 #print axioms Generative.InquirySufficiency.RevisingPort.reading_changes_only_at_encounters
+#print axioms Generative.InquirySufficiency.RevisingPort.unconsumedFormation
+#print axioms Generative.InquirySufficiency.RevisingPort.unconsumed_formation_unbacked
