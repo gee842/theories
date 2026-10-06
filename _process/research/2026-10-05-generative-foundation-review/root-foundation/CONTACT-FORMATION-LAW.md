@@ -51,7 +51,7 @@ All 26 audited declarations have empty axiom reports.
 
 **What evidence can decide.** A blocked contact and an open but misaligned contact give the same receipt, dissipation, transfer, held amount, arrivals and source after a probe, yet they belong to different classes (`failed_transfer_indistinguishable`). The retained record alone cannot identify blockage. Forming an already open contact draws on what is held, uses a pair and changes no class (`redundant_formation_draws`). Aligned to the output that differs from `tau`, a transfer identifies the contact exactly (`aligned_transfer_identifies_contact`). That alignment uses phase and inversion knowledge not acquired here. These countercases are kept as results, not removed.
 
-**One closed history.** `failure_opens_contact` executes a single history from a blocked class-C port with no spares and an empty record: two supported rotations, a probe whose transfer fails, recovery of that dissipation, formation, and a second probe. The port ends in class A with ten units transferred, ten wasted, no source left, no spare left and one pair recovered. The executed run is proved sound as a `Trace` of the extended process (`run_sound`). Without formation the same port stays class C after any native history (`start_native_history_stays_C`).
+**One closed history.** `failure_opens_contact` executes a single history from a blocked class-C port with no spares and an empty record: two supported rotations, a probe whose transfer fails, recovery of that dissipation, formation, and a second probe. The port ends in class A with ten units transferred, ten dissipated, no source left, no spare left and one pair recovered. The executed run is proved sound as a `Trace` of the extended process (`run_sound`). Without formation the same port stays class C after any native history (`start_native_history_stays_C`).
 
 ## Acquiring the contact, inversion and receipt calibration
 
@@ -69,7 +69,7 @@ The port runs an inquiry on itself with native operations only: reset, probe, tw
 | `blocked_hides_inversion` | A blocked contact hides the inversion: both inversions give identical readings. |
 | `receipts_confound_inversions` | Receipts alone cannot separate inversion from receipt inversion; flipping both leaves every receipt unchanged. |
 | `inquiry_needs_two_packets` | Any completed inquiry started with at least twenty source units. |
-| `acquired_loop`, `acquired_start_decides_to_form` | One executed history from a blocked class-C port with no spares: the first inquiry finds no arrival and so decides to form, the dissipation of its two failed probes is recovered into a pair, the contact is formed, and the second inquiry records one arrival and reveals the inversion. The port ends in class B with ten units transferred and thirty wasted. |
+| `acquired_loop`, `acquired_start_decides_to_form` | One executed history from a blocked class-C port with no spares: the first inquiry finds no arrival and so decides to form, the dissipation of its two failed probes is recovered into a pair, the contact is formed, and the second inquiry records one arrival and reveals the inversion. The port ends in class B with ten units transferred and thirty dissipated. |
 
 This refines the closing section's limit rather than reversing it. A single failed probe cannot identify blockage; a two-probe inquiry from a known phase can, because a blocked contact fails at both outputs while an open one arrives at exactly one. The inquiry needs an intact reset; a broken reset leaves the phase unknown and the theorems do not apply.
 
