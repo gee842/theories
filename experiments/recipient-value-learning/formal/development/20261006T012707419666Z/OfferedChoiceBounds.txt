@@ -1,0 +1,14 @@
+OfferedChoiceBounds.lean:79:64: warning: unused variable `hm`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'OfferedChoice.total_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.overlap_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.pointwise_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.good_overlap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.signed_population_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.swap_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_map_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.mirrored_population_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

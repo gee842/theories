@@ -1,0 +1,23 @@
+OfferedChoiceBounds.lean:45:8: error: unsolved goals
+case nil
+f g : Pair → Rat
+⊢ 0 = 0 + 0
+OfferedChoiceBounds.lean:51:8: error: unsolved goals
+case nil
+f g : Pair → Rat
+⊢ 0 = 0 - 0
+OfferedChoiceBounds.lean:90:17: error(lean.unknownIdentifier): Unknown identifier `min_eq_left`
+OfferedChoiceBounds.lean:90:6: error: `simp` made no progress
+OfferedChoiceBounds.lean:96:17: error(lean.unknownIdentifier): Unknown identifier `min_eq_right`
+OfferedChoiceBounds.lean:96:6: error: `simp` made no progress
+'OfferedChoice.total_add' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.total_sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.total_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.overlap_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.pointwise_gap' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.good_overlap_lower' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.signed_population_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.swap_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_map_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.mirrored_population_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

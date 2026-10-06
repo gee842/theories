@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-06T01:28:38.448108+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "bcad818d39afdc73ccb215b8d2dc2d67c88ee0abaa0922cd0ff96763f2f1af65",
+  "prospective_contract_sha256": "53243da5e388becfba25285a45822933e0f29476df2b82d60ca2df57c6ab2ee6",
+  "fresh_temporary_build": true,
+  "source_unchanged_during_check": true,
+  "new_theorem_audits": 16,
+  "empty_axiom_audits": 0,
+  "allowed_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": [
+    {
+      "module": "OfferedChoiceBounds",
+      "source_sha256": "50db216f0712624f8062cc73f93d547406c3c4eaad96bd1be22124d7020c2ee3",
+      "exit_code": 0,
+      "audited_declarations": [
+        "OfferedChoice.total_add",
+        "OfferedChoice.total_sub",
+        "OfferedChoice.total_scale",
+        "OfferedChoice.total_mono",
+        "OfferedChoice.overlap_bounds",
+        "OfferedChoice.pointwise_gap",
+        "OfferedChoice.good_overlap_lower",
+        "OfferedChoice.signed_population_bound",
+        "OfferedChoice.swap_valid",
+        "OfferedChoice.total_map_swap",
+        "OfferedChoice.mirrored_population_bound",
+        "OfferedChoice.sharp_population_valid",
+        "OfferedChoice.sharp_population_account",
+        "OfferedChoice.sharp_population_attains",
+        "OfferedChoice.disjoint_gate_counterexample",
+        "OfferedChoice.rational_frontier_example"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "clean_dependency_audit": true,
+      "log": "development/20261006T012836664132Z/OfferedChoiceBounds.txt",
+      "log_sha256": "e84a48b0133a9c6ef4cb4d6ea3f4ef1d0775d91b6c99e4b32f739fbe5696477a",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "OfferedChoiceBounds.olean",
+        "OfferedChoiceBounds.lean"
+      ]
+    }
+  ],
+  "scope": "Finite rational paired population, conditional probability-gap and coverage premises, exact signed offered-choice frontier. Real logistic interpretation, empirical calibration and ethical conclusions are separate.",
+  "preserved_attempt": "development/20261006T012836664132Z"
+}

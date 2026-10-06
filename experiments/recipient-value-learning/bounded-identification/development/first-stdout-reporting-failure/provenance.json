@@ -1,0 +1,14 @@
+{
+  "status": "first scientific checks passed; final stdout serialization failed",
+  "initial_checker_sha256": "91d941b08b590027e8c1ad7c8feea4c7e3fef60c1cbd2c2cc2b86eade1b26db6",
+  "checker_preservation": "Reconstructed by reversing only the stdout convert patch; matched the SHA256 recorded before the first run.",
+  "initial_result_preservation": "Recovered from preserved_previous_attempts[0] of the final checks.json, removing only the later reporting-failure annotation. The original pre-overwrite receipt hash was not recorded; exact original bytes are not independently certified.",
+  "failure": {
+    "exit_code": 1,
+    "exception": "TypeError: Object of type Fraction is not JSON serializable",
+    "location": "final stdout summary; all checks completed and this result file had already been written",
+    "planned_fix": "Apply the existing convert function to the stdout summary; no grid, formula or assertion changes."
+  },
+  "correction": "Applied the existing convert function to the final stdout summary. No grid, formula, assertion or scientific output was changed.",
+  "subsequent_run": "Final checks.json records a successful rerun and retains the first report and failure annotation."
+}

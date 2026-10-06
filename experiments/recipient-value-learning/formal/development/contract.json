@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-10-06T01:26:13.143678+00:00",
+  "status": "prospective before source compilation",
+  "domain": "Finite rational weighted paired units, nonnegative weights summing to one; r0,r1,p0,p1 in [0,1]. Covered pairs obey both directed probability gaps <= m; uncovered mass <= epsilon. m and epsilon in [0,1].",
+  "primary_obligation": "L1-L0 <= R1-(1-m)*max(0,R0+R1-1-epsilon), with mirrored negative bound.",
+  "sharpness": "Construct five binary-gate strata at minimal intersection, concentrate bad mass on that intersection, use good-both p0=(1-m)/2,p1=(1+m)/2 and exclusive/extreme probabilities. Attainment in bounded-probability class; only supremal generally for finite real logits.",
+  "optional_odds_obligation": "Rational k>=1, rho in [0,1], t>=0. Pointwise nonnegative Q(t)=k*(B-rho)*t^2+((k+1)*B-(k-1+rho))*t+B implies k*t/(1+k*t)-(1-rho)*t/(1+t)<=B. Stronger universally checkable quadratic certificate if feasible.",
+  "interpretation_boundary": "No new empirical estimation, nuisance calibration, coupling identification, real exponential/square-root proof, or ethical conclusion. General real logistic sharpness belongs to separate analytical note.",
+  "verification": "Pinned Lean4.29.1 Std only, fresh source-frozen temporary build; audit every theorem; no proof holes/custom axioms/native shortcuts; preserve failed attempts."
+}

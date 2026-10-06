@@ -1,0 +1,210 @@
+OfferedChoiceBounds.lean:90:6: error: `grind` failed
+case grind
+m : Rat
+x : Pair
+left : 0 ≤ x.weight
+hr0 : 0 ≤ x.r0
+hr01 : x.r0 ≤ 1
+hr1 : 0 ≤ x.r1
+hr11 : x.r1 ≤ 1
+hp0 : 0 ≤ x.p0
+hp01 : x.p0 ≤ 1
+hp1 : 0 ≤ x.p1
+hp11 : x.p1 ≤ 1
+gap : x.covered = true → x.p1 - x.p0 ≤ m ∧ x.p0 - x.p1 ≤ m
+covered : x.covered = true
+hg : x.p1 - x.p0 ≤ m
+gates : x.r0 ≤ x.r1
+d : 0 ≤ x.r1 - x.r0
+h : (x.r1 - x.r0) * x.p1 ≤ (x.r1 - x.r0) * 1
+k : x.r0 * (x.p1 - x.p0) ≤ x.r0 * m
+h_1 : ¬x.r1 * x.p1 - x.r0 * x.p0 ≤ x.r1 - (1 - m) * min x.r0 x.r1
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] 0 ≤ x.weight
+    [prop] 0 ≤ x.r0
+    [prop] x.r0 ≤ 1
+    [prop] 0 ≤ x.r1
+    [prop] x.r1 ≤ 1
+    [prop] 0 ≤ x.p0
+    [prop] x.p0 ≤ 1
+    [prop] 0 ≤ x.p1
+    [prop] x.p1 ≤ 1
+    [prop] (x.covered = true → x.p1 - x.p0 ≤ m) ∧ (x.covered = true → x.p0 - x.p1 ≤ m)
+    [prop] x.covered = true
+    [prop] x.p1 - x.p0 ≤ m
+    [prop] x.r0 ≤ x.r1
+    [prop] 0 ≤ x.r1 - x.r0
+    [prop] (x.r1 - x.r0) * x.p1 ≤ x.r1 - x.r0
+    [prop] x.r0 * (x.p1 - x.p0) ≤ x.r0 * m
+    [prop] ¬x.r1 * x.p1 - x.r0 * x.p0 ≤ x.r1 - (1 - m) * min x.r0 x.r1
+    [prop] min x.r0 x.r1 = if x.r0 ≤ x.r1 then x.r0 else x.r1
+  [eqc] True propositions
+    [prop] (x.covered = true → x.p1 - x.p0 ≤ m) ∧ (x.covered = true → x.p0 - x.p1 ≤ m)
+    [prop] x.covered = true
+    [prop] x.p0 ≤ 1
+    [prop] x.p1 ≤ 1
+    [prop] x.r0 ≤ x.r1
+    [prop] x.r0 ≤ 1
+    [prop] x.r1 ≤ 1
+    [prop] 0 ≤ x.p0
+    [prop] 0 ≤ x.p1
+    [prop] 0 ≤ x.r0
+    [prop] 0 ≤ x.r1
+    [prop] 0 ≤ x.weight
+    [prop] 0 ≤ x.r1 - x.r0
+    [prop] x.r0 * (x.p1 - x.p0) ≤ x.r0 * m
+    [prop] (x.r1 - x.r0) * x.p1 ≤ x.r1 - x.r0
+    [prop] x.p0 - x.p1 ≤ m
+    [prop] x.p1 - x.p0 ≤ m
+    [prop] x.covered = true → x.p0 - x.p1 ≤ m
+    [prop] x.covered = true → x.p1 - x.p0 ≤ m
+  [eqc] False propositions
+    [prop] x.r1 * x.p1 - x.r0 * x.p0 ≤ x.r1 - (1 - m) * min x.r0 x.r1
+  [eqc] Equivalence classes
+    [eqc] {true, x.covered}
+    [eqc] {x.r0, min x.r0 x.r1}
+      [eqc] {if x.r0 ≤ x.r1 then x.r0 else x.r1}
+    [eqc] {-1 • x.r0 + 0 • One.one, -1 • min x.r0 x.r1 + 0 • One.one}
+    [eqc] {-1 • x.r0, -1 • min x.r0 x.r1}
+    [eqc] {1 • x.r0, 1 • min x.r0 x.r1}
+  [ematch] E-matching patterns
+    [thm] Rat.min_def: [@min `[Rat] `[Rat.instMin] #1 #0]
+    [thm] Int.min_def: [@min `[Int] `[Int.instMin] #1 #0]
+    [thm] Nat.min_def: [@min `[Nat] `[instMinNat] #1 #0]
+  [linarith] Linarith assignment for `Rat`
+    [assign] m := 1
+    [assign] x.p0 := 0
+    [assign] x.p1 := 0
+    [assign] x.r0 := 58
+    [assign] x.r1 := 0
+    [assign] x.weight := 1
+    [assign] min x.r0 x.r1 := 58
+  [ring] Ring `Rat`
+    [basis] Basis
+      [_] x.r0 + -1 * min x.r0 x.r1 = 0
+  [assoc] Operator `min`
+    [basis] Basis
+      [_] min x.r0 x.r1 = x.r0
+    [properties] Properties
+      [_] commutative
+      [_] idempotent
+[grind] Diagnostics
+  [thm] E-Matching instances
+    [thm] Rat.min_def ↦ 1
+OfferedChoiceBounds.lean:95:6: error: `grind` failed
+case grind
+m : Rat
+x : Pair
+left : 0 ≤ x.weight
+hr0 : 0 ≤ x.r0
+hr01 : x.r0 ≤ 1
+hr1 : 0 ≤ x.r1
+hr11 : x.r1 ≤ 1
+hp0 : 0 ≤ x.p0
+hp01 : x.p0 ≤ 1
+hp1 : 0 ≤ x.p1
+hp11 : x.p1 ≤ 1
+gap : x.covered = true → x.p1 - x.p0 ≤ m ∧ x.p0 - x.p1 ≤ m
+covered : x.covered = true
+hg : x.p1 - x.p0 ≤ m
+gates : ¬x.r0 ≤ x.r1
+gates' : x.r1 ≤ x.r0
+d : 0 ≤ x.r0 - x.r1
+h : 0 ≤ (x.r0 - x.r1) * x.p0
+k : x.r1 * (x.p1 - x.p0) ≤ x.r1 * m
+h_1 : ¬x.r1 * x.p1 - x.r0 * x.p0 ≤ x.r1 - (1 - m) * min x.r0 x.r1
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] 0 ≤ x.weight
+    [prop] 0 ≤ x.r0
+    [prop] x.r0 ≤ 1
+    [prop] 0 ≤ x.r1
+    [prop] x.r1 ≤ 1
+    [prop] 0 ≤ x.p0
+    [prop] x.p0 ≤ 1
+    [prop] 0 ≤ x.p1
+    [prop] x.p1 ≤ 1
+    [prop] (x.covered = true → x.p1 - x.p0 ≤ m) ∧ (x.covered = true → x.p0 - x.p1 ≤ m)
+    [prop] x.covered = true
+    [prop] x.p1 - x.p0 ≤ m
+    [prop] ¬x.r0 ≤ x.r1
+    [prop] x.r1 ≤ x.r0
+    [prop] 0 ≤ x.r0 - x.r1
+    [prop] 0 ≤ (x.r0 - x.r1) * x.p0
+    [prop] x.r1 * (x.p1 - x.p0) ≤ x.r1 * m
+    [prop] ¬x.r1 * x.p1 - x.r0 * x.p0 ≤ x.r1 - (1 - m) * min x.r0 x.r1
+    [prop] min x.r0 x.r1 = if x.r0 ≤ x.r1 then x.r0 else x.r1
+  [eqc] True propositions
+    [prop] (x.covered = true → x.p1 - x.p0 ≤ m) ∧ (x.covered = true → x.p0 - x.p1 ≤ m)
+    [prop] x.covered = true
+    [prop] x.p0 ≤ 1
+    [prop] x.p1 ≤ 1
+    [prop] x.r0 ≤ 1
+    [prop] x.r1 ≤ x.r0
+    [prop] x.r1 ≤ 1
+    [prop] 0 ≤ x.p0
+    [prop] 0 ≤ x.p1
+    [prop] 0 ≤ x.r0
+    [prop] 0 ≤ x.r1
+    [prop] 0 ≤ x.weight
+    [prop] 0 ≤ (x.r0 - x.r1) * x.p0
+    [prop] 0 ≤ x.r0 - x.r1
+    [prop] x.r1 * (x.p1 - x.p0) ≤ x.r1 * m
+    [prop] x.p0 - x.p1 ≤ m
+    [prop] x.p1 - x.p0 ≤ m
+    [prop] x.covered = true → x.p0 - x.p1 ≤ m
+    [prop] x.covered = true → x.p1 - x.p0 ≤ m
+  [eqc] False propositions
+    [prop] x.r0 ≤ x.r1
+    [prop] x.r1 * x.p1 - x.r0 * x.p0 ≤ x.r1 - (1 - m) * min x.r0 x.r1
+  [eqc] Equivalence classes
+    [eqc] {true, x.covered}
+    [eqc] {x.r1, min x.r0 x.r1}
+      [eqc] {if x.r0 ≤ x.r1 then x.r0 else x.r1}
+    [eqc] {-1 • x.r1 + 0 • One.one, -1 • min x.r0 x.r1 + 0 • One.one}
+    [eqc] {1 • x.r1 + 0 • One.one, 1 • min x.r0 x.r1 + 0 • One.one}
+    [eqc] {-1 • x.r1, -1 • min x.r0 x.r1}
+    [eqc] {1 • x.r1, 1 • min x.r0 x.r1}
+  [ematch] E-matching patterns
+    [thm] Rat.min_def: [@min `[Rat] `[Rat.instMin] #1 #0]
+    [thm] Int.min_def: [@min `[Int] `[Int.instMin] #1 #0]
+    [thm] Nat.min_def: [@min `[Nat] `[instMinNat] #1 #0]
+  [linarith] Linarith assignment for `Rat`
+    [assign] m := 1
+    [assign] x.p0 := 0
+    [assign] x.p1 := 0
+    [assign] x.r0 := 1
+    [assign] x.r1 := 60
+    [assign] x.weight := 1
+    [assign] min x.r0 x.r1 := 60
+  [ring] Ring `Rat`
+    [basis] Basis
+      [_] x.r1 + -1 * min x.r0 x.r1 = 0
+  [assoc] Operator `min`
+    [basis] Basis
+      [_] min x.r0 x.r1 = x.r1
+    [properties] Properties
+      [_] commutative
+      [_] idempotent
+[grind] Diagnostics
+  [thm] E-Matching instances
+    [thm] Rat.min_def ↦ 1
+'OfferedChoice.total_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.overlap_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.pointwise_gap' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.good_overlap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.signed_population_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.swap_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_map_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.mirrored_population_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.sharp_population_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.sharp_population_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.sharp_population_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.disjoint_gate_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.rational_frontier_example' depends on axioms: [propext, Classical.choice, Quot.sound]

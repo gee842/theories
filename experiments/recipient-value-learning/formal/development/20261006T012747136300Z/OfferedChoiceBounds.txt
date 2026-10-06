@@ -1,0 +1,258 @@
+OfferedChoiceBounds.lean:79:64: warning: unused variable `hm`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+OfferedChoiceBounds.lean:182:41: error: Tactic `subst` failed: invalid equality proof, it is not of the form (x = t) or (t = x)
+  x = { weight := 1 - u - v + max 0 (u + v - 1), r0 := 0, r1 := 0, p0 := 0, p1 := 0, covered := true } ∨ x ∈ []
+
+case inr.inr.inr.inr
+u v epsilon m : Rat
+hu0 : 0 ≤ u
+hu1 : u ≤ 1
+hv0 : 0 ≤ v
+hv1 : v ≤ 1
+he : 0 ≤ epsilon
+hm0 : 0 ≤ m
+hm1 : m ≤ 1
+x : Pair
+h✝ : x = { weight := 1 - u - v + max 0 (u + v - 1), r0 := 0, r1 := 0, p0 := 0, p1 := 0, covered := true } ∨ x ∈ []
+⊢ Pair.Valid m x
+OfferedChoiceBounds.lean:181:45: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [sharpPopulation, List.mem_cons,̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵] at hx
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+OfferedChoiceBounds.lean:185:5: warning: unused variable `hu0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+OfferedChoiceBounds.lean:185:19: warning: unused variable `hu1`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+OfferedChoiceBounds.lean:185:33: warning: unused variable `hv0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+OfferedChoiceBounds.lean:185:47: warning: unused variable `hv1`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+OfferedChoiceBounds.lean:186:5: warning: unused variable `he`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+OfferedChoiceBounds.lean:211:37: error: Tactic `decide` failed for proposition
+  0 ≤ 1 / 2
+because its `Decidable` instance
+  Rat.instDecidableLe 0 (1 / 2)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match (1 / 2).blt 0, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:211:49: error: Tactic `decide` failed for proposition
+  1 / 2 ≤ 1
+because its `Decidable` instance
+  (1 / 2).instDecidableLe 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match Rat.blt 1 (1 / 2), false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:211:61: error: Tactic `decide` failed for proposition
+  0 ≤ 1 / 2
+because its `Decidable` instance
+  Rat.instDecidableLe 0 (1 / 2)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match (1 / 2).blt 0, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:211:73: error: Tactic `decide` failed for proposition
+  1 / 2 ≤ 1
+because its `Decidable` instance
+  (1 / 2).instDecidableLe 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match Rat.blt 1 (1 / 2), false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:213:4: error: Tactic `decide` failed for proposition
+  (total (sharpPopulation (1 / 2) (1 / 2) 0 0) fun x => 1) = 1 ∧
+    R0 (sharpPopulation (1 / 2) (1 / 2) 0 0) = 1 / 2 ∧
+      R1 (sharpPopulation (1 / 2) (1 / 2) 0 0) = 1 / 2 ∧
+        total (sharpPopulation (1 / 2) (1 / 2) 0 0) Pair.bad = 0 ∧
+          L1 (sharpPopulation (1 / 2) (1 / 2) 0 0) - L0 (sharpPopulation (1 / 2) (1 / 2) 0 0) = 1 / 2
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    (({ weight := max 0 (1 / 2 + 1 / 2 - 1) - min 0 (max 0 (1 / 2 + 1 / 2 - 1)), r0 := 1, r1 := 1, p0 := (1 - 0) / 2,
+                p1 := (1 + 0) / 2, covered := true }.weight *
+            (fun x => 1)
+              { weight := max 0 (1 / 2 + 1 / 2 - 1) - min 0 (max 0 (1 / 2 + 1 / 2 - 1)), r0 := 1, r1 := 1,
+                p0 := (1 - 0) / 2, p1 := (1 + 0) / 2, covered := true }).add
+        (List.foldr (fun x tail => x.weight * (fun x => 1) x + tail) 0
+          [{ weight := min 0 (max 0 (1 / 2 + 1 / 2 - 1)), r0 := 1, r1 := 1, p0 := 0, p1 := 1, covered := false },
+            { weight := 1 / 2 - max 0 (1 / 2 + 1 / 2 - 1), r0 := 0, r1 := 1, p0 := 1, p1 := 1, covered := true },
+            { weight := 1 / 2 - max 0 (1 / 2 + 1 / 2 - 1), r0 := 1, r1 := 0, p0 := 0, p1 := 0, covered := true },
+            { weight := 1 - 1 / 2 - 1 / 2 + max 0 (1 / 2 + 1 / 2 - 1), r0 := 0, r1 := 0, p0 := 0, p1 := 0,
+              covered := true }])).num,
+    ↑1 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+OfferedChoiceBounds.lean:222:37: error: Tactic `decide` failed for proposition
+  0 ≤ 3 / 4
+because its `Decidable` instance
+  Rat.instDecidableLe 0 (3 / 4)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match (3 / 4).blt 0, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:222:49: error: Tactic `decide` failed for proposition
+  3 / 4 ≤ 1
+because its `Decidable` instance
+  (3 / 4).instDecidableLe 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match Rat.blt 1 (3 / 4), false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:222:61: error: Tactic `decide` failed for proposition
+  0 ≤ 4 / 5
+because its `Decidable` instance
+  Rat.instDecidableLe 0 (4 / 5)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match (4 / 5).blt 0, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:222:73: error: Tactic `decide` failed for proposition
+  4 / 5 ≤ 1
+because its `Decidable` instance
+  (4 / 5).instDecidableLe 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match Rat.blt 1 (4 / 5), false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:223:10: error: Tactic `decide` failed for proposition
+  0 ≤ 1 / 10
+because its `Decidable` instance
+  Rat.instDecidableLe 0 (1 / 10)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match (1 / 10).blt 0, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:223:22: error: Tactic `decide` failed for proposition
+  0 ≤ 1 / 3
+because its `Decidable` instance
+  Rat.instDecidableLe 0 (1 / 3)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match (1 / 3).blt 0, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:223:34: error: Tactic `decide` failed for proposition
+  1 / 3 ≤ 1
+because its `Decidable` instance
+  (1 / 3).instDecidableLe 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match Rat.blt 1 (1 / 3), false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+OfferedChoiceBounds.lean:224:4: error: Tactic `decide` failed for proposition
+  (total (sharpPopulation (3 / 4) (4 / 5) (1 / 10) (1 / 3)) fun x => 1) = 1 ∧
+    R0 (sharpPopulation (3 / 4) (4 / 5) (1 / 10) (1 / 3)) = 3 / 4 ∧
+      R1 (sharpPopulation (3 / 4) (4 / 5) (1 / 10) (1 / 3)) = 4 / 5 ∧
+        total (sharpPopulation (3 / 4) (4 / 5) (1 / 10) (1 / 3)) Pair.bad = 1 / 10 ∧
+          L1 (sharpPopulation (3 / 4) (4 / 5) (1 / 10) (1 / 3)) -
+              L0 (sharpPopulation (3 / 4) (4 / 5) (1 / 10) (1 / 3)) =
+            1 / 2
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    (({ weight := max 0 (3 / 4 + 4 / 5 - 1) - min (1 / 10) (max 0 (3 / 4 + 4 / 5 - 1)), r0 := 1, r1 := 1,
+                p0 := (1 - 1 / 3) / 2, p1 := (1 + 1 / 3) / 2, covered := true }.weight *
+            (fun x => 1)
+              { weight := max 0 (3 / 4 + 4 / 5 - 1) - min (1 / 10) (max 0 (3 / 4 + 4 / 5 - 1)), r0 := 1, r1 := 1,
+                p0 := (1 - 1 / 3) / 2, p1 := (1 + 1 / 3) / 2, covered := true }).add
+        (List.foldr (fun x tail => x.weight * (fun x => 1) x + tail) 0
+          [{ weight := min (1 / 10) (max 0 (3 / 4 + 4 / 5 - 1)), r0 := 1, r1 := 1, p0 := 0, p1 := 1, covered := false },
+            { weight := 4 / 5 - max 0 (3 / 4 + 4 / 5 - 1), r0 := 0, r1 := 1, p0 := 1, p1 := 1, covered := true },
+            { weight := 3 / 4 - max 0 (3 / 4 + 4 / 5 - 1), r0 := 1, r1 := 0, p0 := 0, p1 := 0, covered := true },
+            { weight := 1 - 3 / 4 - 4 / 5 + max 0 (3 / 4 + 4 / 5 - 1), r0 := 0, r1 := 0, p0 := 0, p1 := 0,
+              covered := true }])).num,
+    ↑1 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+'OfferedChoice.total_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.overlap_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.pointwise_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.good_overlap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.signed_population_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.swap_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.total_map_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.mirrored_population_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.sharp_population_valid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.sharp_population_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.sharp_population_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OfferedChoice.disjoint_gate_counterexample' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OfferedChoice.rational_frontier_example' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

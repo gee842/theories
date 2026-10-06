@@ -1,0 +1,149 @@
+OddsEnvelope.lean:39:2: error: `grind` failed
+case grind
+s t : Rat
+hs : 0 ≤ s
+hst : s ≤ t
+ht : 0 ≤ t
+a : probability s * (1 + s) = s
+b : probability t * (1 + t) = t
+denominator : 0 < (1 + s) * (1 + t)
+h : ¬probability s * ((1 + s) * (1 + t)) ≤ probability t * ((1 + s) * (1 + t))
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] 0 ≤ s
+    [prop] s ≤ t
+    [prop] 0 ≤ t
+    [prop] probability s * (1 + s) = s
+    [prop] probability t * (1 + t) = t
+    [prop] 0 < (1 + s) * (1 + t)
+    [prop] ¬probability s * ((1 + s) * (1 + t)) ≤ probability t * ((1 + s) * (1 + t))
+  [eqc] True propositions
+    [prop] s ≤ t
+    [prop] 0 ≤ s
+    [prop] 0 ≤ t
+    [prop] 0 < (1 + s) * (1 + t)
+  [eqc] False propositions
+    [prop] probability s * ((1 + s) * (1 + t)) ≤ probability t * ((1 + s) * (1 + t))
+  [eqc] Equivalence classes
+    [eqc] {s, probability s * (1 + s)}
+    [eqc] {t, probability t * (1 + t)}
+  [linarith] Linarith assignment for `Rat`
+    [assign] s := 1
+    [assign] t := 2
+    [assign] probability s := 1
+    [assign] probability t := 2
+  [ring] Ring `Rat`
+    [basis] Basis
+      [_] s * probability s + -1 * s + probability s = 0
+      [_] t * probability t + -1 * t + probability t = 0
+OddsEnvelope.lean:81:30: error: `grind` failed
+case grind
+A M B t : Rat
+hA : 0 ≤ A
+hB : 0 ≤ B
+ht : 0 ≤ t
+discriminant : M * M ≤ 4 * A * B
+zero : A = 0
+sq : 0 ≤ M * M
+h : ¬M * M = 0
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] 0 ≤ A
+    [prop] 0 ≤ B
+    [prop] 0 ≤ t
+    [prop] M * M ≤ 4 * A * B
+    [prop] A = 0
+    [prop] 0 ≤ M * M
+    [prop] ¬M * M = 0
+  [eqc] True propositions
+    [prop] 0 ≤ A
+    [prop] 0 ≤ B
+    [prop] 0 ≤ t
+    [prop] 0 ≤ M * M
+    [prop] M * M ≤ 4 * A * B
+  [eqc] False propositions
+    [prop] M * M = 0
+  [eqc] Equivalence classes
+    [eqc] {A, 0}
+    [eqc] {1, M * M * (M * M)⁻¹}
+  [ematch] E-matching patterns
+    [thm] Nat.pow_pos: [@HPow.hPow `[Nat] `[Nat] `[Nat] `[instHPow] #2 #1]
+    [thm] Nat.div_pow_of_pos: [@HPow.hPow `[Nat] `[Nat] `[Nat] `[instHPow] #2 #1]
+  [linarith] Linarith assignment for `Rat`
+    [assign] A := 0
+    [assign] M := 2
+    [assign] B := 1
+    [assign] t := 1
+    [assign] 「M ^ 2」 := 1
+  [ring] Ring `Rat`
+    [basis] Basis
+      [_] M ^ 2 * (M * M)⁻¹ + -1 = 0
+      [_] A = 0
+OddsEnvelope.lean:84:6: error: `grind` failed
+case grind
+A M B t : Rat
+hA : 0 ≤ A
+hB : 0 ≤ B
+ht : 0 ≤ t
+discriminant : M * M ≤ 4 * A * B
+zero : A = 0
+sq : 0 ≤ M * M
+eq : M * M = 0
+mz : M = 0
+h : ¬0 ≤ A * t * t + M * t + B
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] 0 ≤ A
+    [prop] 0 ≤ B
+    [prop] 0 ≤ t
+    [prop] M * M ≤ 4 * A * B
+    [prop] A = 0
+    [prop] 0 ≤ M * M
+    [prop] M * M = 0
+    [prop] M = 0
+    [prop] ¬0 ≤ A * t * t + M * t + B
+  [eqc] True propositions
+    [prop] 0 ≤ A
+    [prop] 0 ≤ B
+    [prop] 0 ≤ t
+    [prop] 0 ≤ M * M
+    [prop] M * M ≤ 4 * A * B
+  [eqc] False propositions
+    [prop] 0 ≤ A * t * t + M * t + B
+  [eqc] Equivalence classes
+    [eqc] {A, M, 0, M * M}
+    [eqc] {A * t, M * t}
+  [ematch] E-matching patterns
+    [thm] Nat.pow_pos: [@HPow.hPow `[Nat] `[Nat] `[Nat] `[instHPow] #2 #1]
+    [thm] Nat.div_pow_of_pos: [@HPow.hPow `[Nat] `[Nat] `[Nat] `[instHPow] #2 #1]
+  [linarith] Linarith assignment for `Rat`
+    [assign] A := 0
+    [assign] M := 0
+    [assign] B := 1
+    [assign] t := 1
+    [assign] 「M ^ 2」 := 0
+    [assign] 「t ^ 2」 := 27
+  [ring] Ring `Rat`
+    [basis] Basis
+      [_] A = 0
+      [_] M = 0
+OddsEnvelope.lean:109:5: warning: unused variable `hr0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+OddsEnvelope.lean:109:20: warning: unused variable `hr01`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'OddsEnvelope.probability_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddsEnvelope.probability_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddsEnvelope.probability_monotone' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OddsEnvelope.quadratic_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddsEnvelope.square_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddsEnvelope.nonnegative_quadratic' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OddsEnvelope.certified_envelope' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OddsEnvelope.paired_gates_bounded' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OddsEnvelope.fourfold_odds_modulus' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OddsEnvelope.fourfold_odds_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddsEnvelope.gated_rational_attainment' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

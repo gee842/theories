@@ -1,0 +1,319 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-10-06T01:30:20.467084+00:00",
+  "checker_sha256": "91d941b08b590027e8c1ad7c8feea4c7e3fef60c1cbd2c2cc2b86eade1b26db6",
+  "inputs": "Only declared synthetic grids; no empirical input files or producer imports.",
+  "grid": {
+    "exact_probabilities": [
+      "0",
+      "1/4",
+      "1/2",
+      "3/4",
+      "1"
+    ],
+    "atom_coordinates": [
+      "0",
+      "1/2",
+      "1"
+    ],
+    "D": [
+      0.0,
+      0.1,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "rho": [
+      0.0,
+      0.05,
+      0.25,
+      0.5,
+      0.9,
+      1.0
+    ]
+  },
+  "scope": "Independent exact finite checks and floating diagnostics; analytical and Lean scopes remain separate.",
+  "exact": {
+    "signed_sharp_witnesses": 1250,
+    "two_atom_mixtures": 131220,
+    "mean_absolute_gate_envelopes": 45927,
+    "canonical_example_ceiling": "117/1000",
+    "confidence_rectangles": 5625,
+    "rectangle_interior_comparisons": 30625,
+    "budget_monotonicity_comparisons": 5625
+  },
+  "logistic": {
+    "dense_logit_evaluations": 288036,
+    "pointwise_rows": [
+      {
+        "D": 0.0,
+        "rho": 0.0,
+        "envelope": 0.0,
+        "dense_supremum": 0.0
+      },
+      {
+        "D": 0.0,
+        "rho": 0.05,
+        "envelope": 0.05,
+        "dense_supremum": 0.050000000000000044
+      },
+      {
+        "D": 0.0,
+        "rho": 0.25,
+        "envelope": 0.25,
+        "dense_supremum": 0.25
+      },
+      {
+        "D": 0.0,
+        "rho": 0.5,
+        "envelope": 0.5,
+        "dense_supremum": 0.5
+      },
+      {
+        "D": 0.0,
+        "rho": 0.9,
+        "envelope": 0.9,
+        "dense_supremum": 0.9
+      },
+      {
+        "D": 0.0,
+        "rho": 1.0,
+        "envelope": 1.0,
+        "dense_supremum": 1.0
+      },
+      {
+        "D": 0.1,
+        "rho": 0.0,
+        "envelope": 0.02499479296842074,
+        "dense_supremum": 0.024994792968420665
+      },
+      {
+        "D": 0.1,
+        "rho": 0.05,
+        "envelope": 0.05577856292590361,
+        "dense_supremum": 0.05577851959298552
+      },
+      {
+        "D": 0.1,
+        "rho": 0.25,
+        "envelope": 0.25,
+        "dense_supremum": 0.2500000000000002
+      },
+      {
+        "D": 0.1,
+        "rho": 0.5,
+        "envelope": 0.5,
+        "dense_supremum": 0.5000000000000001
+      },
+      {
+        "D": 0.1,
+        "rho": 0.9,
+        "envelope": 0.9,
+        "dense_supremum": 0.9
+      },
+      {
+        "D": 0.1,
+        "rho": 1.0,
+        "envelope": 1.0,
+        "dense_supremum": 1.0
+      },
+      {
+        "D": 0.5,
+        "rho": 0.0,
+        "envelope": 0.12435300177159613,
+        "dense_supremum": 0.1243530017715962
+      },
+      {
+        "D": 0.5,
+        "rho": 0.05,
+        "envelope": 0.14751317866337196,
+        "dense_supremum": 0.14751290967530256
+      },
+      {
+        "D": 0.5,
+        "rho": 0.25,
+        "envelope": 0.2693360287055048,
+        "dense_supremum": 0.2693359213955153
+      },
+      {
+        "D": 0.5,
+        "rho": 0.5,
+        "envelope": 0.5,
+        "dense_supremum": 0.5000000000000001
+      },
+      {
+        "D": 0.5,
+        "rho": 0.9,
+        "envelope": 0.9,
+        "dense_supremum": 0.9
+      },
+      {
+        "D": 0.5,
+        "rho": 1.0,
+        "envelope": 1.0,
+        "dense_supremum": 1.0
+      },
+      {
+        "D": 1.0,
+        "rho": 0.0,
+        "envelope": 0.24491866240370916,
+        "dense_supremum": 0.24491866240370913
+      },
+      {
+        "D": 1.0,
+        "rho": 0.05,
+        "envelope": 0.26441087221485604,
+        "dense_supremum": 0.26440958333262493
+      },
+      {
+        "D": 1.0,
+        "rho": 0.25,
+        "envelope": 0.3565263916201069,
+        "dense_supremum": 0.3565257149859127
+      },
+      {
+        "D": 1.0,
+        "rho": 0.5,
+        "envelope": 0.516002574302411,
+        "dense_supremum": 0.5160024511547705
+      },
+      {
+        "D": 1.0,
+        "rho": 0.9,
+        "envelope": 0.9,
+        "dense_supremum": 0.9
+      },
+      {
+        "D": 1.0,
+        "rho": 1.0,
+        "envelope": 1.0,
+        "dense_supremum": 1.0
+      },
+      {
+        "D": 2.0,
+        "rho": 0.0,
+        "envelope": 0.4621171572600097,
+        "dense_supremum": 0.4621171572600098
+      },
+      {
+        "D": 2.0,
+        "rho": 0.05,
+        "envelope": 0.47583700334000323,
+        "dense_supremum": 0.47583521984825056
+      },
+      {
+        "D": 2.0,
+        "rho": 0.25,
+        "envelope": 0.5369891592159577,
+        "dense_supremum": 0.536988350941326
+      },
+      {
+        "D": 2.0,
+        "rho": 0.5,
+        "envelope": 0.6330864854119098,
+        "dense_supremum": 0.6330864834630886
+      },
+      {
+        "D": 2.0,
+        "rho": 0.9,
+        "envelope": 0.9,
+        "dense_supremum": 0.9000000000000001
+      },
+      {
+        "D": 2.0,
+        "rho": 1.0,
+        "envelope": 1.0,
+        "dense_supremum": 1.0
+      },
+      {
+        "D": 4.0,
+        "rho": 0.0,
+        "envelope": 0.761594155955765,
+        "dense_supremum": 0.7615941559557647
+      },
+      {
+        "D": 4.0,
+        "rho": 0.05,
+        "envelope": 0.7676426885628443,
+        "dense_supremum": 0.7676416354491087
+      },
+      {
+        "D": 4.0,
+        "rho": 0.25,
+        "envelope": 0.7938693671984477,
+        "dense_supremum": 0.7938693121352924
+      },
+      {
+        "D": 4.0,
+        "rho": 0.5,
+        "envelope": 0.8330221594829484,
+        "dense_supremum": 0.8330220254399064
+      },
+      {
+        "D": 4.0,
+        "rho": 0.9,
+        "envelope": 0.9333325981574697,
+        "dense_supremum": 0.93333239354318
+      },
+      {
+        "D": 4.0,
+        "rho": 1.0,
+        "envelope": 1.0,
+        "dense_supremum": 1.0
+      }
+    ],
+    "largest_dense_gap": 1.7834917526715621e-06,
+    "finite_logit_sharpness_approximations": 500,
+    "largest_finite_logit_gap": 1.8707257964933888e-13
+  },
+  "fault_cases": {
+    "equal_response_means": {
+      "R0": "1/2",
+      "R1": "1/2",
+      "L0": "1/8",
+      "L1": "3/8",
+      "delta": "1/4",
+      "epsilon": "0",
+      "m": "0",
+      "good_overlap": "0"
+    },
+    "equal_expectancy_means": {
+      "mean_scaled_expectancy_both": "0",
+      "choice0": "1/2",
+      "choice1": "4/7",
+      "delta": "1/14"
+    },
+    "disjoint_armwise_failures": {
+      "population": {
+        "R0": "1",
+        "R1": "1",
+        "L0": "3/10",
+        "L1": "7/10",
+        "delta": "2/5",
+        "epsilon": "1/2",
+        "m": "0",
+        "good_overlap": "1/2"
+      },
+      "armwise_error": "1/4",
+      "incorrect_paired_bound": "1/4",
+      "correct_bound": "1/2"
+    },
+    "selected_population": {
+      "full_population": {
+        "R0": "1",
+        "R1": "1",
+        "L0": "1/2",
+        "L1": "1/2",
+        "delta": "0",
+        "epsilon": "0",
+        "m": "0",
+        "good_overlap": "1"
+      },
+      "selected_delta": "1/2",
+      "invalid_selected_frontier": "0"
+    }
+  },
+  "elapsed_seconds": 6.149879249976948,
+  "finished_at_utc": "2026-10-06T01:30:26.616977+00:00"
+}
