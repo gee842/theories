@@ -1,0 +1,27 @@
+{
+  "status": "prospective_oracle_preserved_before_new_implementation_and_outcomes",
+  "created_at": "2026-10-06T01:13:07.393642+00:00",
+  "author": "independent collaborating AI reviewer /root/constructed_formal",
+  "accepted_parent_commit": "23148d6692effd99185f8afd769423fb2d26a517",
+  "source_sha256": {
+    "check_model.py": "8d4b1652236ad92beba54eb72add1afbfe2616a92cd75b01df5a0f5ce86e77e6",
+    "DRAFT-PROTOCOL.md": "6888c564187411274982b2314aaab9be1f6390aab9b25b66d696fb2e4b6038d1",
+    "INTERFACE.md": "a5607e4291c06a905b50a30bd501ad9013d0cef8a54d45cd2bd7b46216555564",
+    "cases.json": "80c483cd18d41aa5c6f13376785d6b775f0a568d797eaf829261f359be5132f8"
+  },
+  "accepted_law_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/check_model.py": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8"
+  },
+  "new_implementation_or_outcomes_present": false,
+  "new_implementation_or_outcomes_inspected": false,
+  "validation": "Python syntax parsed only; no scientific executions or model tests performed.",
+  "scope": "Independent pure ownership/assembly/handoff/evaluation guards, old RI and record/reader law reuse, original-budget ledger, and 25 adversarial obligations. Concrete schema adapter and exhaustive trace checking remain to be added after freeze.",
+  "preserved_files": [
+    "check_model.py",
+    "DRAFT-PROTOCOL.md",
+    "INTERFACE.md",
+    "cases.json"
+  ]
+}

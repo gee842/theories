@@ -1,0 +1,29 @@
+{
+  "status": "prospective_freeze_accepted_by_root_before_implementation",
+  "checked_at_utc": "2026-10-06T01:21:42.486697+00:00",
+  "protocol_freeze_sha256": "6cdbc9ed4a96783e60a196e5970b8e7c9f1872b5c221c7fbfa16c5b6e0dcccc5",
+  "accepted_parent_commit": "23148d6692effd99185f8afd769423fb2d26a517",
+  "verified_file_counts": {
+    "source_sha256": 150,
+    "contract_files_sha256": 3,
+    "preserved_prospective_files_sha256": 17
+  },
+  "case_count": 29,
+  "new_model_or_formal_implementation_present": false,
+  "new_results_present": false,
+  "scope": "Prospective contract, provenance and preservation checks; no scientific outcome accepted. No change to the five foundation completion conditions.",
+  "independent_review_receipt": {
+    "current_path_at_freeze": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/check_model.py",
+    "source_sha256_at_freeze": "1d4450f4bb5b4ed550b1f2ea1147aee546fde4b36cd158ad16fcfd6a78519124",
+    "preserved_source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/review-history/prospective-reader-predicate-completion/check_model.py",
+    "preserved_receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/review-history/prospective-reader-predicate-completion/receipt.json",
+    "preserved_receipt_sha256": "795f872cd03b943cad0c817f81d36a5c089752d3a6c3afa6a5ad99ebbf3a1250",
+    "scope": "Independent prospective ownership, accounting, admission and evaluation guard law; concrete schema/history adapter may be added later with preserved provenance, without importing new producer transitions."
+  },
+  "root_scope_note": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-SCOPE.md",
+  "next_step": "Implement the frozen finite construction and prove the named staged interfaces; preserve first sources/runs/failures before repairs and obtain independent full-history reconstruction.",
+  "independent_freeze_verification": {
+    "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/review-history/prospective-reader-predicate-completion/freeze-verification.json",
+    "sha256": "d9583a7f932f85eb2c5c1aba33e17a29dd8ca9fed4a9e5b17bd4b24ac4694a69"
+  }
+}

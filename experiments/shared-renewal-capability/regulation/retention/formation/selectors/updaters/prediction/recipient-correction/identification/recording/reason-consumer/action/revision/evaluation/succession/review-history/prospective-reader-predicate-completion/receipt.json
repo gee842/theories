@@ -1,0 +1,18 @@
+{
+  "status": "prospective_static_oracle_correction_before_implementation",
+  "created_at": "2026-10-06T01:19:52.315388+00:00",
+  "author": "independent collaborating AI reviewer /root/constructed_formal",
+  "source_sha256": {
+    "check_model.py": "1d4450f4bb5b4ed550b1f2ea1147aee546fde4b36cd158ad16fcfd6a78519124",
+    "DRAFT-PROTOCOL.md": "df60bc8641368b52c2653606386911fa02414ec4f519e1c2834d1c9066ab84c9",
+    "INTERFACE.md": "5f7b8ffd65f8a067d40033ee1531c7ac12818adb8fc8cf85e51737a55babff62",
+    "cases.json": "9af372c92ed3790256e432dcd133dedafb6749a322a98230bec0f28192733e5a"
+  },
+  "previous_receipt": "review-history/prospective-reader-admission-oracle/receipt.json",
+  "previous_receipt_sha256": "28c73d50c52d268c8053da7ba46d9e991a3791a6d0e6c86466533e0de8f0d392",
+  "changes": "Added the two already-agreed cold-state predicates orientation=None and conflict=False; oracle omission caught by static comparison to INTERFACE. No event law, case or protocol change. Previous oracle bytes remain preserved.",
+  "new_implementation_or_outcomes_present": false,
+  "new_implementation_or_outcomes_inspected": false,
+  "validation": "Syntax and literal predicate comparison only. No new scientific execution.",
+  "unresolved_design_blockers": []
+}

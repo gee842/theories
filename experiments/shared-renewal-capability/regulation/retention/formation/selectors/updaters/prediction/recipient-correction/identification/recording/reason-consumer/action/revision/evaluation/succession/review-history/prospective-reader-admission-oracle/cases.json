@@ -1,0 +1,1294 @@
+{
+  "status": "prospectively frozen for root acceptance; no implementation or outcomes authorized",
+  "accepted_parent_commit": "23148d6692effd99185f8afd769423fb2d26a517",
+  "arms": [
+    "shared",
+    "identity_gated",
+    "conventional"
+  ],
+  "producers": [
+    "variable",
+    "conventional",
+    "fixed_normal"
+  ],
+  "source_rule": "Every child arm starts from the same saved parent_case/shared endpoint for that case and producer, retaining all original histories/masses.",
+  "resource_rule": "All initial totals remain M78/common360/source230; withheld amounts and omitted assembly parts/fees remain typed inaccessible compartments.",
+  "cases": [
+    {
+      "name": "changed",
+      "purpose": "Primary combined succession, fresh correction and selected use.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "stable",
+      "purpose": "Identical inquiry schedule with stable recipient efficacy.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "same_as_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "actual_n0",
+      "purpose": "Actual all-return donor; new correction does not manufacture evaluative influence.",
+      "config": {
+        "parent_case": "signals_000",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "n_disconnected",
+      "purpose": "Child obtains new facts but retained n is unavailable.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": false,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "n_cut_after_read",
+      "purpose": "Paid assessment read does not survive loss of actual retained n access.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "after_evaluation_read",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "locked_qualification",
+      "purpose": "Matched paid alternative birth recipe sets the qualification bit true; this is a supplied clamp, not inherited evidence or reset.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "forced_qualified",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "window_missing",
+      "purpose": "New window pair/assembly absent: retain committed child and failed access-binding prefix.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": false,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "stable_first_outage",
+      "purpose": "A zero under stable efficacy can lead exploration astray; second zero is not a positive certificate.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "same_as_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          false,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "second_outage",
+      "purpose": "Changed-law acquisition has no positive second receipt.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          false,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "second_feedback_missing",
+      "purpose": "Actual second consequence is not acquired; emitted missingness is not false evidence.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "missing",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "late_efficacy_change",
+      "purpose": "Faithful acquired evidence can cease to apply before selected work.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "opposite_probe_law",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "child_grant_denied",
+      "purpose": "Technical permission gates both inquiry and selected work; deny both without claiming fresh acquired facts. Assembly does not supply permission.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": false,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "permission_cut_before_evaluation",
+      "purpose": "Keep facts and n; positive assessment is separate from permission to execute.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "after_consumer",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "scope_cut_after_read",
+      "purpose": "A paid read cannot authorize action after recipient binding is lost.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "after_evaluation_read",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "scope_cut_after_rent",
+      "purpose": "Keep the real interrupted paid RI phase; no donor reactivation or free settlement.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "after_final_rent",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "assembly7",
+      "purpose": "Fail before eighth initial assembly; keep all completed components and untouched donor.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 7,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "assembly8",
+      "purpose": "Copy commits and retires donor, then final access assembly is unaffordable.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 8,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "copy0",
+      "purpose": "Initial assemblies exist but candidate read cannot be paid.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 0,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "copy1",
+      "purpose": "Paid read quiesces donor and retains pending q; no committed child.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 1,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "actor15",
+      "purpose": "First full probe can leave an unaffordable second RI opportunity.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 15,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "actor16",
+      "purpose": "Two probes can complete, but evaluation read has no fuel.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 16,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "actor17",
+      "purpose": "Paid evaluation read can be left without a funded write.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 17,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "actor25",
+      "purpose": "Positive assessment can leave only seven units; exact RI miss applies.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 25,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "writer4",
+      "purpose": "Whole bind guard requires five units: four remains unspent, no frame is fabricated, actual inquiry may proceed unrecorded.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 4,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "reader13",
+      "purpose": "Factual reading cannot complete at its final payment.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 13,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "reader23",
+      "purpose": "Factual reading completes but the new reason publication does not.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 23,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "source0",
+      "purpose": "No new complete packet exists: block actual RI event, never produce a zero observation.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 0,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "source20",
+      "purpose": "Two packets may support inquiry but no third selected-use packet exists.",
+      "config": {
+        "parent_case": "signals_111",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 20,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    },
+    {
+      "name": "inherited_interruption",
+      "purpose": "Actual rented/scope-lost donor remains blocked; extension stocks are not repairs.",
+      "config": {
+        "parent_case": "scope_loss_after_rent",
+        "parent_arm": "shared",
+        "efficacy_before_probes": "opposite_donor_final_law",
+        "efficacy_before_final": "unchanged_from_probes",
+        "qualification_recipe": "unknown",
+        "window_present": true,
+        "n_access": true,
+        "n_cut": "none",
+        "scope_cut": "none",
+        "permission_cut": "none",
+        "child_grant": {
+          "scope": true,
+          "permission": true,
+          "delivery": true
+        },
+        "availability": [
+          true,
+          true,
+          true
+        ],
+        "feedback": [
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "assembly_fuel": 9,
+        "copy_fuel": 2,
+        "actor_fuel": 26,
+        "writer_fuel": 5,
+        "reader_fuel": 24,
+        "new_source": 30,
+        "child_binding": {
+          "donor_id": "original_learner",
+          "child_id": "new_child_1",
+          "recipient_id": "same_retained_recipient",
+          "bank_id": "new_physical_bank_1",
+          "physical_same_recipient": true
+        }
+      }
+    }
+  ]
+}
