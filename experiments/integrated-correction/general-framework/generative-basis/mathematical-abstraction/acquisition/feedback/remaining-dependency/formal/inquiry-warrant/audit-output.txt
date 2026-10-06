@@ -1,0 +1,27 @@
+'InquiryWarrant.Continuation' does not depend on any axioms
+'InquiryWarrant.agrees' does not depend on any axioms
+'InquiryWarrant.agrees_iff_local' depends on axioms: [propext]
+'InquiryWarrant.InquiryAdequate' does not depend on any axioms
+'InquiryWarrant.AbstentionAdequate' does not depend on any axioms
+'InquiryWarrant.AnswerBearing' does not depend on any axioms
+'InquiryWarrant.abstention_adequate_iff' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.inquiry_adequate_iff' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.bearing_adequate_iff_sufficient' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.InquirySecures' does not depend on any axioms
+'InquiryWarrant.AbstentionSecures' does not depend on any axioms
+'InquiryWarrant.InquiryNeeded' does not depend on any axioms
+'InquiryWarrant.inquiry_needed_iff' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.NeededFor' does not depend on any axioms
+'InquiryWarrant.needed_for_iff' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.dominated_without_reliance' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.selfOnly' does not depend on any axioms
+'InquiryWarrant.self_needed_implies_needed' depends on axioms: [propext]
+'InquiryWarrant.self_scoped_rule_ignores_others' depends on axioms: [propext]
+'InquiryWarrant.selfReuse' does not depend on any axioms
+'InquiryWarrant.othersReuse' does not depend on any axioms
+'InquiryWarrant.selfElsewhere' does not depend on any axioms
+'InquiryWarrant.othersSettled' does not depend on any axioms
+'InquiryWarrant.needed_only_through_other' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.answering_can_remove_the_means' depends on axioms: [propext, Quot.sound]
+'InquiryWarrant.JointlySecures' does not depend on any axioms
+'InquiryWarrant.competing_continuations' depends on axioms: [propext, Quot.sound]
