@@ -1,0 +1,385 @@
+{
+  "status": "accepted_bounded_internal_collaborating_ai_review",
+  "reviewed_at_utc": "2026-10-06T01:53:08.523553+00:00",
+  "review": "EMPIRICAL-SCOPE-REVIEW.md",
+  "external_peer_review": false,
+  "source_baseline_commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+  "scope": "Bounded evidence/claim/scope reconciliation. No new observations, estimator execution, experiment run, formal compilation, whole-foundation acceptance or acceptance of pending succession.",
+  "finite_review_criteria": [
+    {
+      "criterion": "claim units and acceptance boundaries",
+      "status": "passed"
+    },
+    {
+      "criterion": "measurement-to-theory mapping and limits",
+      "status": "passed"
+    },
+    {
+      "criterion": "primary uncertainty and comparator preservation",
+      "status": "passed"
+    },
+    {
+      "criterion": "separate quantifiers and evidence types",
+      "status": "passed"
+    },
+    {
+      "criterion": "explicit revising comparisons or failures",
+      "status": "passed"
+    },
+    {
+      "criterion": "full goal retained; no added completion gate",
+      "status": "passed"
+    }
+  ],
+  "resolved_requests": [
+    "Formal package separates 16 population declarations and 11 odds declarations.",
+    "One observed full lineage explicitly not a new completion gate; evidence must match each retained claim.",
+    "Empirical examples explicitly selected and nonexhaustive; existing motor result not discarded.",
+    "Conditional-note LaTeX epsilon escape repaired before final freeze."
+  ],
+  "reviewed_files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "sha256": "7e20e0a0d875d4bfc820736c0775be3da93af54e9e45a065e449dbf0ba8909ba",
+      "bytes": 18590
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+      "sha256": "f03fadb649bf6ab6ed07f77bd74596258f943acd5975202754eb70137fbcf0a8",
+      "bytes": 18471
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+      "sha256": "20f78f431920d13b587fcd2ddaca2ad17f54be8c93a57c0f113911ac95041ddc",
+      "bytes": 16905
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-SCOPE-REVIEW.md",
+      "sha256": "d1d44bbf2ac1c1a80b5fb6db4fe04f1f4007d51212195297ced3f1b6f4259295",
+      "bytes": 10333
+    }
+  ],
+  "reviewed_shared_fragments": [
+    {
+      "path": "RESEARCH.md",
+      "reviewed_text": "**A quantitative test of unchanged evaluation, 6 October 2026:** [the bounded-identification result](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-IDENTIFICATION-BOUNDS.md) derives a sharp offered-choice envelope from a justified choice-score budget, paired coverage and the two marginal response levels. Twenty-seven Lean audits verify the finite rational probability theorem, general sharpness construction and rational-odds certificates; separate analytical and numerical review covers logistic interpretation, uncertainty and counterexamples. Equal mean responses or belief reports cannot supply paired latent bounds. This makes the preceding unrun discriminator quantitatively testable and advances requirement 5. The existing data do not establish the required calibration, so their estimates remain unchanged; rejection would challenge a restricted model class, not uniquely establish acquired concern or ethical warrant. The central successor and justified-action connection remains ongoing.\n\n**Evidence and scope consolidated, 6 October 2026:** [the candidate evidence ledger](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md) connects accepted law-class results, actual constructions, selection outcomes, ethical arguments and six observed connections without conflating their claims. It preserves conventional equality, uncertain reward transfer, source/population limits and the missing calibration for a stronger acquired-valuation inference. This closes bounded evidence/scope reconciliation under requirement 5, not whole-foundation acceptance. The remaining work is the advertised succession join, warranted application and coherent composition/regime synthesis; another experiment is needed only for a stronger retained empirical claim. No scientific result was rerun.",
+      "sha256": "895251b206fab89eae2e30abcab9965885ceedd2bef709613a143e4b0bc47bdb",
+      "replaced_text_sha256": "208da13dd0438ac5d8181b2d205d0d2595ababfa4d12c7f57d6674ec0fbaeb84"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reviewed_text": "**Bounded alternatives now have a testable ceiling, 6 October 2026:** [valuation-identification bounds](unified-2026-10-05/VALUATION-IDENTIFICATION-BOUNDS.md) quantify how much offered target-directed responding can change with unchanged evaluation under independently justified nuisance and coverage assumptions. The sharp bound uses marginal response levels while retaining selection ambiguity. Twenty-seven Lean audits and separate mathematical/numerical review establish the conditional result. No participant data are reanalyzed, and calibrated measurement remains necessary before empirical use. This advances the existing learning-to-evaluation discriminator within the same foundation goal.\n\n**Evidence scope for the candidate, 6 October 2026:** [the consolidated ledger](unified-2026-10-05/EMPIRICAL-SCOPE.md) distinguishes checked conditional mechanisms from measured regulation, correction and recipient-related action. Six observed connections retain their units, rivals and source limitations; no observed full developmental chain or uniquely acquired valuation is asserted. The new identification bound specifies what calibrated evidence could reject. This reconciles the existing empirical-support obligation while preserving the complete organization → concern → wisdom goal and the remaining succession, application and composition work.",
+      "sha256": "0b93bd7eb2014330fa8d30e279a3e581d215b72b704921f6678d8a769e5d5932",
+      "replaced_text_sha256": "103d7151a1855bf7952bcc51802e3a5173b5f97bb7ab16a457e71fec5a7698f7"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reviewed_text": "**Bounded empirical alternative, 6 October 2026:** [the quantitative identification contract](VALUATION-IDENTIFICATION-BOUNDS.md) now gives a sharp ceiling for offered choice under bounded unchanged-evaluation alternatives, using actual marginal response levels and paired measurement coverage. Its 27 Lean audits cover finite rational bounds and certificates; real logistic and statistical arguments retain separate review. It closes the earlier mathematical threshold obligation for the proposed discriminator, while validated latent budgets, common-population transport and the new-recipient experiment remain unestablished. No new observation, ethical ground or completion condition is added; the central succession and warranted-action connection remains active.\n\n**Claim/evidence reconciliation, 6 October 2026:** [the empirical-scope ledger](EMPIRICAL-SCOPE.md) now maps accepted conditional results and six observed connections to their actual populations, comparisons and identification limits. The sharp valuation test remains unapplied without independent calibration; uncertainty and exact conventional equality remain results. This closes a bounded synthesis obligation within requirement 5, while the full five-condition assessment, warranted concern and wisdom, and actual continuing composition remain active. Restricting unsupported empirical generalizations does not remove any central derivation from the governing goal.",
+      "sha256": "5bd73183d68a5fc3021e4e63a353e1ea3bc533209c37418db1941da14745fa6d",
+      "replaced_text_sha256": "765a285265bb603fcec7aaea7bbee22e15b8687d7f799a4b2beaa961ee8f0516"
+    }
+  ],
+  "baseline_authority_verification": {
+    "references": 35,
+    "unique_files": 31,
+    "identities": [
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "3d3b9ce38296f444398f775da110343df0cea4b4",
+        "sha256": "004a3e5ecf016eaf8f11e5aca748cacc2210d56f57bf50bcf6abdc57c9c661cb",
+        "bytes": 116732
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "862220b5281684813ba58fa92ab1cb7e96c03c5e",
+        "sha256": "7075ca4d06f40a85bd530e39b3dddfad0a6278a1d32039026960705fdabbbfce",
+        "bytes": 20260
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "4c39d921305c04fa21b97b438486a4ec3843fbb4",
+        "sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+        "bytes": 16335
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/verification.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "4e19f97d5eb4e11043f696512c8e28cc4017471e",
+        "sha256": "1b49527f4c3c3dd2d29595b4542ae0c4831974d8f0a17dbe5cc1ad61ca55cfd9",
+        "bytes": 12284
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "6c02314a5148ec7866d79b894ed20e09d6bbe25b",
+        "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+        "bytes": 20106
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/formal/verification.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "290918f51d61636fccd93a1a897cf41052bbb586",
+        "sha256": "c956842920c9fb747f84a3996771cc79362cee585ae2d9ad76a0a0cf3f363d13",
+        "bytes": 13942
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "fa9459e79454f2be1b6158216d16f96a0a6c3319",
+        "sha256": "20f827f1ea41fcf8814deb2df03ca4b05d9103a1a3afca8f2047fd3762ac5254",
+        "bytes": 15089
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/verification.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "643167f6be1b67de8fb662da475b6acf16fa4449",
+        "sha256": "bd4ad789213f48183049fe681ad3ad0421b6eef51fa7fcb5097d9e4fcfb12aa4",
+        "bytes": 59764
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-REVIEW.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "cfc2dee10843d681d78adbdac26b9b0bec3c6f2a",
+        "sha256": "936ccd86fed9cebf2af852c20fe39aab1ff06d12998c18219bbb0352d8bd9920",
+        "bytes": 14995
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "4a907fb2619570481ffde80842e0dd9d3290c72e",
+        "sha256": "9a76a953876f64635198bcd23f01dda720f4e6dc7b8d081da8aeea4f8ecd93c2",
+        "bytes": 57233
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "d1d8869fbdbd65c0879e96de35374410169baf88",
+        "sha256": "80ad95cf050d2c44c60c6f94f6fcb81c2467ddc7c733a9428eb8d04998fea7ec",
+        "bytes": 42447
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "dc1a7193480baa76d8447f17573bed53c3c511a6",
+        "sha256": "593c04a3030f99567e0a9bb8e113b848f0f2f9b8cf7e5a951a12996c0e9b0f85",
+        "bytes": 9694
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/results.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "4b62ccf19eabad550cc1f19a21de4891b0be5963",
+        "sha256": "fb5c379765fb1b993d1bfa8e4b7ce1f345833be758b55b73908e493d469ed9d0",
+        "bytes": 13337
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/independent-check.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "7af114c3c962828e72f6594cf880cbe410d05255",
+        "sha256": "8517594f9ce98bb4fc34ce082debd3e40aa6533333005cd3631f6d75cd9c9c13",
+        "bytes": 3034
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/formal/OfferedChoiceBounds.lean",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "63fa4e4e0e9400284d58fe0c2264265ab918a10e",
+        "sha256": "50db216f0712624f8062cc73f93d547406c3c4eaad96bd1be22124d7020c2ee3",
+        "bytes": 10627
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/formal/OddsEnvelope.lean",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "3e43796f5dda21d99091bfa3c2691d50e6c2ad57",
+        "sha256": "e56c4b33512cda807119ce5c51956eaa111157a3a884ee3be701c3b26fba1bb4",
+        "bytes": 6863
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/formal/verification.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "a5059d49b599a4c7a984c4c75eb38c29a223f682",
+        "sha256": "8043b70be53e5f428acebdc3b266aa38f1056ca92c85d69b0763452d3d24b5ec",
+        "bytes": 4048
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-concern-theory/reward-association/BOUNDED-IDENTIFICATION-MATH.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "c6509c600b4a056d0420d307550c516c729a8c54",
+        "sha256": "cc625868805bb5f0956d3c86826e94b7d8d15c50d98806a66d269ae2a519ac0f",
+        "bytes": 21698
+      },
+      {
+        "source_note": "CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-concern-theory/reward-association/bounded-identification-review.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "df9b9ca5be34b975528bdb83bb3078d9ea1af451",
+        "sha256": "d7f2c7d3daf72e00becb10ecf8d97d8284556e2a127705b6de29442061f0c9b8",
+        "bytes": 16078
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-CERONI.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "e0b673c6fbe6902e1a382730afba99f6cc3a4f32",
+        "sha256": "0754eafdaf48040a638d8f2e9f13284a37524aa63de2d1faa3840d86697de1ed",
+        "bytes": 32285
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/evidence/ceroni-2018/MANIFEST.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "cab868ec417c091e464bc7aa2351764fd6821f80",
+        "sha256": "11ae39159dc5d03e8da3c9e21cce90d5c2059c95126f25810d8ad17876c203cf",
+        "bytes": 2237
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "798955c0cae5e4bce76f4bdab30daec6844737ff",
+        "sha256": "2ecf5afb505129416ede3e44238361a81b93db4a7aa5ded96601e5c44f145da5",
+        "bytes": 14013
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-revisable-concern/settlement/evidence/existing-evidence-audit.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "e7bed8314afbd0cdc723ed76d4f1b22800d8e0ac",
+        "sha256": "3348cb25d7954583f42781def0eb3000aebaa3788a61a455c26ded6843bdc975",
+        "bytes": 31216
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "ffe7302c6b0302a879d37e1ba2099eaabde8427c",
+        "sha256": "8b31776518be0240bdb864ec84825989dfff39dd24fbcdf3115433ead32098ef",
+        "bytes": 9891
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "701abd794460052d3a7950606189725cfe38d321",
+        "sha256": "b74dd8b8e92864a5bab5ddcb399c35c885dad72f1ba36a8899efbcd6ab378e35",
+        "bytes": 14205
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-cue-grounding/independent-verification.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "59d3533de0e6a37dbd9c39189ffcecf857fea73c",
+        "sha256": "9bef774ff02951f6ee930804bb7959eec65fa46569e92bb92e7a2ea1bdca86ef",
+        "bytes": 15348
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "sources/27-rat-cue-grounding-2026-10-06/manifest.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "1cb0601bfab5805df347dbcee7f4e1e01cd0e479",
+        "sha256": "e64739f7a6ecbc79e59f8c4c71fa26257bd83e5b967920c4b541ad1a5ce4e08e",
+        "bytes": 6293
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-harm-valuation/README.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "5304f0859cdefa81107780ce0b6311abeac4e644",
+        "sha256": "c62f5693fdb9bf41d5dd24521d5c1254b56457e3ff27be4f22416c7517d76376",
+        "bytes": 5586
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-harm-valuation/independent-verification.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "f6a09fff68be5e8a41d3b7fe6352602197bdc837",
+        "sha256": "8156b366bd49cdbc2f783daa69534fbad9ba3dd042280f1b90f66e5f64eab313",
+        "bytes": 3369
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/README.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "e20004e4aa99ecb3f488da4b04d5ba245e2ab704",
+        "sha256": "801255058a6fd439cd1da201b6fd472e85c9db49694b1941b89fdd6c93da0686",
+        "bytes": 7559
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/independent-check.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "7af114c3c962828e72f6594cf880cbe410d05255",
+        "sha256": "8517594f9ce98bb4fc34ce082debd3e40aa6533333005cd3631f6d75cd9c9c13",
+        "bytes": 3034
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-concern-theory/reward-association/IDENTIFICATION.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "dc1a7193480baa76d8447f17573bed53c3c511a6",
+        "sha256": "593c04a3030f99567e0a9bb8e113b848f0f2f9b8cf7e5a951a12996c0e9b0f85",
+        "bytes": 9694
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-concern-theory/reward-association/BOUNDED-IDENTIFICATION-MATH.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "c6509c600b4a056d0420d307550c516c729a8c54",
+        "sha256": "cc625868805bb5f0956d3c86826e94b7d8d15c50d98806a66d269ae2a519ac0f",
+        "bytes": 21698
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "experiments/recipient-value-learning/formal/verification.json",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "a5059d49b599a4c7a984c4c75eb38c29a223f682",
+        "sha256": "8043b70be53e5f428acebdc3b266aa38f1056ca92c85d69b0763452d3d24b5ec",
+        "bytes": 4048
+      },
+      {
+        "source_note": "EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+        "path": "_process/research/2026-10-05-concern-theory/reward-association/BOUNDED-IDENTIFICATION-REVIEW.md",
+        "commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+        "git_blob": "ad04a6b90588526a6dba19423ec6eb1abfb9fc99",
+        "sha256": "04d8cd44715f03c43e8962c931bb4964238e8d63bab389c3a00901a1b221e1f2",
+        "bytes": 12688
+      }
+    ],
+    "scope": "Exact immutable Git blob identity checks. Prior receipts retain their earlier scientific authority; upstream raw data and external URLs not revalidated here."
+  },
+  "governing_completion_conditions": {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "baseline_commit": "9a6a7795e9d8a8dd777c0973eadf2f4523615e48",
+    "sentences_unchanged": true,
+    "text": "1. **Explicit grounding.** State the common premises, why each is needed, and their informative consequences. Distinguish them from additional physical laws, historical conditions and model choices. Compare simpler alternatives; a claim of unique minimality needs its own argument.\n2. **Connected derivations.** Explain the transitions from interacting differences to organization, operational significance, learning and selection over selectors, models of shared consequences, concern and wisdom. Show how the relevant mechanisms arise and change under stated conditions. A supplied reward, interpretation, transfer architecture or benevolent selector cannot silently stand in for the capacity whose origin is being explained.\n3. **Compatible composition.** Show that the output of one mechanism actually supplies the next mechanism's required input. Shared situations must retain their resources, information, timing, affected centers and successor conditions wherever these matter. Separate successful examples do not establish a joint process if joining them resets costs, removes conflicts or installs unexplained capacities.\n4. **Generative and degenerative dynamics.** Use the common account to explain when capabilities develop, persist, widen, narrow or collapse, and what can change those paths. Include failures of learning, exclusion and domination. State whose possibilities change and over what horizon. Claims about attractors, favorable direction or ethical justification carry their own arguments and evidence.\n5. **Discriminating support and an integrated statement.** Give explicit mappings to materially different domains, predictions or interventions that distinguish the account from alternatives, and evidence at the level claimed. Check the derivations and bridges independently of their construction. Present a coherent synthesis with a traceable record of premises, proofs, observations, ethical arguments and conjectures, preserving counterexamples and specifying what would revise the account.",
+    "sha256": "c3bb6c92b8dc4fb6befcff95cf09181149d0f88c1fab2a3f2e3a7d5c456e17ef"
+  },
+  "link_check": {
+    "local_target_occurrences_checked": 87,
+    "missing_targets": [],
+    "undefined_reference_links": [],
+    "scope": "Local file/directory target existence and reference definitions in four owned Markdown files and three exact fragments. Receipt path created by this write. Not external URL or full anchor validation."
+  },
+  "regime_assessment": "Constructive and destructive explanations already established at accepted model scopes. Consolidating centers, resources, information, control and horizons remains synthesis; another adverse specimen or attractor theorem is not required by this ledger.",
+  "goal_assessment": "Restrictions concern unsupported prevalence, unique-mechanism and empirical generality claims. Organization, significance, learning, selection over selectors, concern and wisdom remain in the governing explanatory task.",
+  "receipt_self_hash": "Intentionally omitted."
+}

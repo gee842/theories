@@ -1,0 +1,94 @@
+# What the candidate foundation's evidence establishes
+
+6 October 2026. AI-authored claim–evidence synthesis under the unchanged [generative-grounding goal](GENERATIVE-GROUNDING.md). This document reconciles accepted results; it reports no new experiment, data analysis or proof compilation. Its source baseline is commit `9a6a7795e9d8a8dd777c0973eadf2f4523615e48`. The [empirical source notes][empirical-notes] and [conditional-claim notes][conditional-notes] identify the inspected versions. Later studies retain their own acceptance records. The [separate collaborating-AI review][review] and [version receipt][receipt] record this synthesis’s assessment; this is internal review, not external peer review.
+
+**The candidate has checked conditional mechanisms and empirical contact with several of their connections. The evidence does not yet identify one observed developmental chain from organizational formation to newly acquired, justified concern and wisdom.** These are different claims. The absence of that full observation does not invalidate a conditional construction; a successful construction does not provide the missing observation.
+
+The empirical claims retained here concern identified regulation, correction, beneficiary-related learning and action in specified settings. The explanatory task remains the full progression. In particular, supplying concern as an unexplained preference and then demonstrating its effects would not complete that task.
+
+## 1. Match the kind of claim to its evidence
+
+| Retained claim form | Existing substantive support | Scope that must accompany the claim |
+|---|---|---|
+| **Every process satisfying specified law conditions obeys a constraint.** | [Conditional universality](CONDITIONAL-UNIVERSALITY.md) derives support requirements from actual per-event accounts; [protocol completion](PROTOCOL-COMPLETION.md) derives bounded return from enabled progress, domain preservation and strict rank descent. | The premises and the identification of their quantities are explicit. These results do not select a law of nature, build a learner or guarantee successful learning. |
+| **A capacity can form and operate through a compatible history.** | Formation, prediction, paid revision and [evaluative uptake](EVALUATIVE-UPTAKE.md) carry constructed machinery and acquired state into use with resource and information guards. | The supplied recipes, observation laws, transfer rules and reached histories remain visible. A finite witness establishes conditional possibility; its probability and selection require their own laws. |
+| **A mechanism changes which continuation is chosen or retained.** | Uptake's equal-information routing controls change recipient-directed selection; [route revision](LEARNING-ROUTE-REVISION.md) carries changed learning into actual later use and copying. | Credit the derived outcome under the stated choice or retention law, including feasible alternatives and costs. Naming a selector is insufficient, and favorable selection in this setting does not imply favorable selection everywhere. |
+| **A response is warranted for an affected being.** | The [ethical foundation](ETHICAL-FOUNDATION.md) offers arguments about standing and answerability; [evaluative application](EVALUATIVE-APPLICATION.md) connects an independently warranted ground to sound, causally used means knowledge and addressed action. | The ground, patient-good interpretation, legitimate authority and relevant comparison require their own defense. Neither a proof checker nor observed persistence establishes ethical validity. |
+| **A real system instantiates a proposed connection.** | The observations in §2 identify particular interventions, records and consequences. | Measurements and comparators determine what has been identified. Similar vocabulary across studies does not join their subjects, resources, histories or ethical meanings. |
+
+These forms support one another through explicit interfaces. They cannot be added into a single proof count or confidence percentage. Mathematical validity, adequate modeling, empirical identification and justified application are separate assessments.
+
+## 2. The observed connections and their alternatives
+
+This is a selected ledger of observed connections used by the current synthesis, not an exhaustive inventory of the repository’s evidence. The table retains the unit and comparison needed to interpret each result. “Observed” includes published observations reconstructed from their released records, not new observations collected by this synthesis. Source limitations and internal review remain part of the claim.
+
+| Connection and actual unit | Evidence retained | Comparator and identified limit | What would change the interpretation |
+|---|---|---|---|
+| **Burden → installed feedback → host/output consequences.** Engineered bacterial cultures under specified induction, strain and temperature conditions. | The [Ceroni source audit][ceroni] supports burden-responsive targeting and changes in growth, reporter capacity and output. Controller burden can worsen net growth even while the capacity reporter improves. | Targeting controls and fixed attenuation probe ordinary feedback and resource-allocation explanations. The installed plasmid is supplied; growth and fluorescence do not identify a complete energy budget or formation from absent architecture. Preserved workbook discrepancies prevent some precise controller attributions. | A faithful matched comparison that removed the claimed benefit would narrow that design's effect. Independent preparation, resource and replacement measurements would be required for the stronger formation/renewal mapping. |
+| **Acquired correction → available record → successor response.** Preserved AI founder/successor task runs. | The [saved task and scoring audit][ai-audit] records differences under timely/delayed feedback and successor access. These are actual model responses in the supplied task. | Conventional candidate elimination also solves the stipulated rule family. Task-slot costs, supplied objectives and controlled access do not measure physical reconstruction or acquired concern. The archive is not an independent deployment population. | A matched access/context intervention can test whether the record is used appropriately. Comparable success without it constrains its incremental contribution, without showing that correction is absent. |
+| **Represented beneficiary → probabilistic outcome learning.** The published Lockwood study's 31 analyzed male participants. | The [existing primary-source audit][cross-domain] supports learning under self, other and no-beneficiary instructions and the reported model comparisons. | The other was a confederate and actual payment was fixed. Outcomes establish believed beneficiary-specific learning, not measured recipient welfare or formation of beneficiary valuation from zero. Conventional reinforcement-learning accounts remain comparators. | Independently delivered outcomes and matched factual-knowledge/evaluation interventions would support a stronger mapping. A better explanation of the same records can revise mechanism attribution without erasing the observed choices. |
+| **Remote social cue → local food-access action.** Twenty-four paired focal-animal records transcribed from a public preview. | The accepted [cue reanalysis](RECIPIENT-CUE-GROUNDING.md) finds a mean paired difference of **+4/3 pulls in seven minutes**. The original CSV was not retrieved; the preview/publication sample discrepancy remains. | Same donor identity constrains an identity-only account. Cue potentiation, donor activity or arousal, generalized reciprocity and richer recipient models remain compatible. Pulling measures food access, not ingestion or future welfare. | Independently vary cue source, beneficiary and delivery conditions. If the difference disappears under matched activity/state controls, narrow the cue account; successful targeted transfer would support a stronger functional interpretation. |
+| **Recipient-linked harm contingency → changed action.** Twelve male contingent-harm and fourteen male no-harm actors in the released rat archive. | The accepted [harm reanalysis](RECIPIENT-HARM-AND-ACTION.md) finds a descriptive **−16.69 percentage-point difference in preferred-response changes per offered opportunity**; nearly all appears as alternative responses. | Offered food is unchanged, but cohort/assignment and shared-unit structure are unresolved. Nonperformance is retained separately. The physical contingency is stronger evidence of an externally directed consequence than a displayed score, yet private aversion and learning an already-valued consequence remain alternatives to newly acquired valuation. | A comparable, independently assigned contrast can strengthen causal attribution. Preserved factual competence with a selective change in evaluative use could distinguish an influence route; it would still not prove moral standing. |
+| **Reward association → later target-directed choice.** Three hundred thirty-three eligible respondents, with all 385 saved matched respondents retained in sensitivity analysis. | The accepted [reward reanalysis](REWARD-LEARNING-AND-RECIPIENT-CHOICE.md) finds **+0.50 percentage points**, approximate 95% interval **[−4.25, +5.24]**, for its fixed offered-choice contrast. All three fixed sensitivity intervals include zero. | The result is uncertain, not an equivalence finding. Post-assignment eligibility limits population claims. Changed private-payoff expectation can reproduce changed recipient-value behavior in the stated latent model. Target-liked selection has no verified recipient-fulfillment ledger here. | A precise result against a prespecified meaningful effect would constrain this acquisition route. A contrast exceeding independently justified unchanged-evaluation bounds could reject those restricted alternatives; §3 states the outstanding measurements. |
+
+The bacterial controls, AI tasks, animal actions and human choices concern different mechanisms, units and horizons. They are neither independent replications of the whole foundation nor successive stages of one observed lineage. The complete source-specific qualifications remain in the linked studies; this table does not replace their methods.
+
+## 3. The precise open identification claim
+
+The most specific unresolved empirical claim about acquired evaluation is:
+
+> Training changes the practical influence of another center's condition beyond what changed factual knowledge, private-payoff expectations, other decision influences and response selection can explain.
+
+The [accepted identification bound](VALUATION-IDENTIFICATION-BOUNDS.md) makes a restricted version of this claim testable. Let $L_j$ be target-directed responses per offered opportunity and $R_j$ the response rate in condition $j$, on the declared common population. If unchanged-evaluation alternatives imply an absolute logit change at most $D\ge0$ on a common covered fraction at least $1-\varepsilon$, with $0\le\varepsilon\le1$, put
+
+\[
+m=\tanh(D/4),\qquad H=\max(0,R_0+R_1-1-\varepsilon).
+\]
+
+The sharp population bound is
+
+\[
+-R_0+(1-m)H\ \le L_1-L_0\ \le R_1-(1-m)H.
+\]
+
+The formal package has 27 Lean declaration audits: 16 for the finite rational population results and 11 for rational odds results. The real logistic and statistical arguments have separate mathematical review. This synthesis neither recompiles those proofs nor applies the inequality to an uncalibrated dataset.
+
+To test the restricted null, offered-choice and response measurements must be combined with independently supported nuisance/score and paired-coverage bounds. The decision scale, baseline and payoff sensitivity cannot be allowed to vary arbitrarily after the outcome. Equal mean response or belief reports do not establish these pointwise or paired premises. Post-treatment participant selection does not establish a common population. The accepted study supplies explicit counterexamples and simultaneous-confidence rules.
+
+No inspected dataset currently provides the required calibration. Exceeding a valid bound would reject the **joint restricted unchanged-evaluation and measurement model**. It would not alone identify one learning architecture, concern acquired from zero, recipient benefit or ethical warrant. Failure to exceed it would not establish absence of learning. The previously proposed contingent-versus-yoked/new-recipient contrast remains unrun; it is one possible test if the stronger empirical claim is retained, not a new universal completion requirement.
+
+## 4. Common consequences without overstating novelty
+
+The model families already explain both favorable and adverse outcomes. Paid repair can restore operation; observation can correct or mislead; retained knowledge can influence recipient action or be excluded; sufficient private resources can preserve a mistaken or harmful practice. The [regime ledger](FOUNDATION-PREMISES.md#5-how-constructive-and-destructive-regimes-share-the-root) states the conditions and compatible-history limits. No additional adverse specimen is required merely to acknowledge degeneration.
+
+The substantive common proposal is that formation, knowledge, control, support and inheritance constrain one another through actual interactions. It earns explanatory force through identified dependencies and intervention contrasts: a missing component cannot be replaced by money alone; a correct record without access cannot direct the specified action; eventual proceeds cannot pay an earlier unaffordable bill. Applying any of these consequences to a real case requires the corresponding component, information or account mapping.
+
+Some conventional controllers have the same transition law and therefore the same predictions. That equality is retained. A claim of additional predictive value must identify a particular rival's omissions and fix equal observations, resources and opportunities before comparing outcomes. An unrestricted rival allowed every relevant state is not defeated by giving those states generative names. Conversely, equal predictions do not erase a useful integrated explanation or its checked dependency constraints; they restrict claims of uniqueness and empirical advantage.
+
+Historical domination, cooperation and civilizational change remain potential applications. The present records do not establish exactly two attractors, prevalence of the proposed mechanisms across history or inevitable favorable direction. These stronger claims are not premises of the conditional foundation.
+
+## 5. Consequence for completion and confidence
+
+A single observed full lineage is not an additional completion gate. Evidence must match the empirical claims actually retained; separate studies cannot be presented as one joined observation.
+
+This ledger closes a bounded **evidence/scope reconciliation** obligation. It preserves the substantive empirical contacts, the uncertain and adverse results, and the comparisons that could justify or defeat stronger claims. It does not pronounce the whole fifth completion condition, or the foundation, complete.
+
+| Question | Current basis for confidence | What remains open |
+|---|---|---|
+| Do the accepted formal implications hold in their stated interpretations? | Kernel-checked declarations with recorded sources and dependencies, supported where relevant by independently written reconstruction. | Modeling adequacy, empirical premises and semantic interpretation are separate; selected runtime crosschecks are not automatically complete simulator-refinement proofs. |
+| Can the proposed capacities coexist at the constructed scopes? | Actual accepted formation, revision and uptake histories preserve information, costs and failure cases at their named interfaces. | Complete the remaining advertised joins and the common composition map. Pending succession outcomes do not count as accepted results in this snapshot. |
+| Do real systems instantiate relevant connections? | The measured regulation, correction and recipient-related behaviors in §2 provide partial empirical support with stated limitations. | Full-chain observation, newly acquired valuation under discriminating calibration, natural prevalence and transfer to untested settings remain unestablished. |
+| Does the account explain justified concern and wisdom? | Causal constructions and explicit arguments about standing, recognition, authority and revisability provide distinct contributions. | Complete their substantive connection and defend the retained ethical claims. Observed behavior, successful persistence and formal consistency cannot substitute for that work. |
+
+The remaining roadmap is the one already fixed: integrate the accepted causal and conceptual connections; finish the named succession connection if its lineage claim is retained; map warranted application, regimes and resources at their actual scopes; and review the resulting statement against all [five completion conditions](GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). A new experiment is necessary for a stronger empirical assertion only when existing evidence cannot support it. A new mechanism is necessary when an advertised central capacity remains supplied or an actual interface is missing.
+
+The aim remains a common explanation of organization, significance, learning, selection over selectors, concern and wisdom—including their failures. Restricting unsupported prevalence or unique-mechanism claims preserves that aim. Omitting concern, reclassifying an assumed evaluative capacity as derived, or presenting several incompatible successes as one history would not.
+
+[empirical-notes]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-CLAIM-SCOPE-NOTES.md
+[conditional-notes]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md
+[ceroni]: ../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-CERONI.md
+[ai-audit]: ../../../_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md
+[cross-domain]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md
+
+[review]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-SCOPE-REVIEW.md
+[receipt]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/empirical-scope-review.json
