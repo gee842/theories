@@ -83,6 +83,8 @@ The disposition is history- and consequence-dependent (`port_history_dependent`,
 
 `revision_changes_continuation` compares two executed histories from the same blocked start with the same two inquiries. The history that revises its contact on its own reading ends with ten units transferred and reserve 793,184; the history that only inquires ends class C with nothing transferred, forty units wasted and reserve 170,596. Revision guided by acquired evidence changes the conditions of the port's further activity.
 
+[ValuationInCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ValuationInCore.lean) places every organization of that package inside the generative core (8 declarations, all empty). Each organization induces a core process whose finite traces are exactly its runs (`trace_iff_run`). Under this embedding the package's "no retention, no history" result and this track's formation law become one theorem: a disposition that reads only a coordinate every step retains is the same after every history (`retained_disposition_constant`). History-dependent valuation therefore needs a coordinate the organization's own activity changes (`history_dependence_needs_changed_coordinate`).
+
 "Valuation" keeps the package's thin functional sense: a selective disposition, not experience or ethical warrant.
 
 ## What the track establishes and what remains
@@ -99,7 +101,7 @@ From `experiments/integrated-correction/general-framework/generative-basis/lean/
 python3 check_contact_formation.py
 ```
 
-It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them, the four new modules and the two valuation-development modules they import fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The latest run passed 38 modules and 710 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
+It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them, the four new modules and the two valuation-development modules they import fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The latest run passed 39 modules and 718 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
 
 ## Vocabulary
 
