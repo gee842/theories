@@ -1,0 +1,11 @@
+'ValuationDevelopment.unreached_estimate_kept' depends on axioms: [propext]
+'ValuationDevelopment.reached_estimate_exact' depends on axioms: [propext]
+'ValuationDevelopment.coverage_equalizes' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.no_coverage_keeps_initial' depends on axioms: [propext]
+'ValuationDevelopment.reaches_append' depends on axioms: [propext]
+'ValuationDevelopment.greedy_exact' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.greedy_low_never_covers' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.optimism_covers' depends on axioms: [Quot.sound]
+'ValuationDevelopment.curious_exact' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.curiosity_covers_in_three' does not depend on any axioms
+'ValuationDevelopment.curiosity_equalizes_forever' depends on axioms: [propext, Quot.sound]
