@@ -343,6 +343,34 @@ Both bridges named in §15 are closed at the scope stated. Chance is closed for 
 
 This completes the study at its formal scope. It does not complete the unified foundation.
 
+## 17. Formal unification: the lineage on the shared process
+
+Ren set formal unification as the goal. The generation ledger of §16 was a separate model. The [lineage-in-process module](../../../../experiments/valuation-development/lean/LineageInProcess.lean) adds 14 core-Lean results, 2 of them infrastructure lemmas. These results show that the ledger is not a separate model: it is the per-event support law of the shared `Process` (`AccountLaw`, U1, called SustainLaw in the project vocabulary), and its lineage bound is that law's prefix bound (U2). The module imports the verified `ResourceContinuation` and renewal modules unchanged.
+
+**A. Histories have ledgers (general).**
+- Every actual history of every process satisfying U1 has a sustained ledger (`history_ledger_sustained`).
+- Consecutive segments of one history are generations: the successor inherits exactly what its predecessor holds at the end. Succession of ledgers (`Ledger.seq`) is the ledger of the concatenated history (`consecutive_segments_are_generations`).
+
+**B. Generations are events of a U1 process (general).** In `lineageProcess`, the state is the support held, and an event is a sustained generation that starts with no more than is held. A generation that starts with less than was held records support dissipated between generations. This process satisfies U1 (`lineage_account_law`).
+- A line of sustained, inheriting generations is an actual history of the lineage process (`line_is_lineage_history`).
+- The §16 lineage bound is recovered as the core prefix bound `support_trace_balance` (`lineage_bound_is_prefix_bound`).
+- An endless line of demanding generations needs unbounded arrivals, by the core theorem `unbounded_demand_requires_unbounded_credit` (`endless_demanding_line_needs_unbounded_arrivals`).
+
+The per-generation sustainment and inheritance that §16 supplied as hypotheses are, in A, consequences of U1 along one history.
+
+**C. Renewal (general, plus the renewal thread's witnesses).**
+- The renewal channel process satisfies U1: a tick's formations are demanded from the reserve, and arrivals are opened by the organization's own live tokens (`channel_account_law`).
+- Every window of every execution is therefore a sustained generation (`generation_sustained`). Successive windows inherit exactly and compose (`generations_succeed`). Each execution, cut into windows of equal length, is a history of the lineage process (`execution_lineage`).
+- `lineage_renewal_theorem` puts this together with the renewal–closure theorem on the same process. With finitely many kinds and spans between one and `D`, some lineage stays live forever exactly when the law has a self-renewing population.
+
+**The attribution link of §16.** The renewal model makes arrivals attributable to kinds, because each token opens arrival at its kind's rate. The question left open was whether support filters valuations one coupling at a time. On this process it does not: what a lineage keeps is decided by membership in a self-renewing population (`renewal_keeping_theorem`), not by what each kind brings in. The two witnesses (`attribution_is_by_population`) are the renewal thread's own:
+- In `danglingSupport`, kind `false` opens 2 against a formation demand of 5, yet some lineage keeps it forever on arrivals opened by kind `true`.
+- In `lapsingCorrection`, a closure renews forever while the correction kind it supports cannot be kept.
+
+So the §5 question has a precise answer at this scope. Support constrains which *populations* of formed kinds can continue. A kind, or the valuation that selects it, persists by belonging to such a population, whatever its own balance.
+
+**Scope.** This connects the valuation study's lineage account, not its selection-and-retention organizations, to the shared process. The study's organizations are embedded in the core by the separate `ValuationInCore` work. Two things are not built here: valuations selecting *which* kinds a channel process forms, and a theorem that a valuation forming only short kinds outside every self-renewing population loses them. The latter follows from `no_keeping_population_deadline` once the selection is expressed as a set of designated kinds. The study now has 117 core-Lean results across six modules, none with custom axioms. No empirical or ethical claim is made.
+
 ## Verification
 
-From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12, the [exploration audit output](../../../../experiments/valuation-development/lean/exploration-audit-output.txt) lists the 11 results for §13, the [completion audit output](../../../../experiments/valuation-development/lean/completion-audit-output.txt) lists the 15 results for §14, and the [bridges audit output](../../../../experiments/valuation-development/lean/bridges-audit-output.txt) lists the 33 results for §16. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.
+From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12, the [exploration audit output](../../../../experiments/valuation-development/lean/exploration-audit-output.txt) lists the 11 results for §13, the [completion audit output](../../../../experiments/valuation-development/lean/completion-audit-output.txt) lists the 15 results for §14, the [bridges audit output](../../../../experiments/valuation-development/lean/bridges-audit-output.txt) lists the 33 results for §16, and the [lineage audit output](../../../../experiments/valuation-development/lean/lineage-audit-output.txt) lists the 14 results for §17. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.

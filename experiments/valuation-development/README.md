@@ -17,6 +17,8 @@
 | [lean/CompletionAudit.lean](lean/CompletionAudit.lean), [lean/completion-audit-output.txt](lean/completion-audit-output.txt) | `#print axioms` for the completion module and its saved result |
 | [lean/ValuationBridges.lean](lean/ValuationBridges.lean) | 33 theorems (§16): finite weighted laws and one escape bound; coverage and exact estimates for one option with probability at least `1 - (r/q)^n` (positive totals); a noisy witness in which greedy lock-in tends to certainty, and a curiosity witness; ledgers of generations closed under succession and division (formalized for lines and one division step), the lineage prefix bound, late arrivals needed under positive demand, and a countermodel without inheritance and an attribution illustration |
 | [lean/BridgesAudit.lean](lean/BridgesAudit.lean), [lean/bridges-audit-output.txt](lean/bridges-audit-output.txt) | `#print axioms` for the bridges module and its saved result |
+| [lean/LineageInProcess.lean](lean/LineageInProcess.lean) | 14 theorems (§17): the generation ledger is the core per-event support law (`AccountLaw`, U1) of a lineage process, and the lineage bound is its prefix bound; histories of every U1 process split into inheriting generations; the renewal channel process obeys U1, its windows are sustained generations, and lineage and the renewal–closure theorem hold on one process; persistence of a kind is decided by population membership |
+| [lean/LineageAudit.lean](lean/LineageAudit.lean), [lean/lineage-audit-output.txt](lean/lineage-audit-output.txt) | `#print axioms` for the lineage-in-process module and its saved result |
 | [lean/lean-toolchain](lean/lean-toolchain) | `leanprover/lean4:v4.29.1` |
 
 ## Reproduce
@@ -35,10 +37,16 @@ LEAN_PATH=. lean -o ValuationCompletion.olean ValuationCompletion.lean
 LEAN_PATH=. lean CompletionAudit.lean
 LEAN_PATH=. lean -o ValuationBridges.olean ValuationBridges.lean
 LEAN_PATH=. lean BridgesAudit.lean
+# LineageInProcess also needs GenerativeCore, Depletion, SupportNecessity, ResourceContinuation
+# and the renewal modules (RenewalAccounting, RenewalClosure, RenewalSufficiency, RenewalLink,
+# RenewalCharacterization) from experiments/integrated-correction/general-framework/generative-basis/lean,
+# compiled into the same LEAN_PATH in dependency order.
+LEAN_PATH=. lean -o LineageInProcess.olean LineageInProcess.lean
+LEAN_PATH=. lean LineageAudit.lean
 rm -f *.olean *.ilean
 ```
 
-Result on 7 October 2026: 27 theorems depend on no axioms. `coupled_signal_bounded`, `shared_exposure_contracts`, `shared_exposure_converges`, `shared_exposure_equalizes` and `multistable_divergence_forever` depend on `propext` and `Quot.sound`. `rounding_gap_forever` depends on `propext` only. These come through `omega` and `simp`. There are no custom axioms, no `sorry` and no `native_decide`. The closed-loop module adds 11 theorems: 5 depend on no axioms and 6 depend on `propext` and `Quot.sound` only. The exploration module adds 11 theorems and the completion module 15, all depending on no axioms or only on standard `propext` and `Quot.sound`. The bridges module adds 33: 5 depend on no axioms, 6 on `propext` only and 22 on `propext` and `Quot.sound`. In total there are 103 theorems.
+Result on 7 October 2026: 27 theorems depend on no axioms. `coupled_signal_bounded`, `shared_exposure_contracts`, `shared_exposure_converges`, `shared_exposure_equalizes` and `multistable_divergence_forever` depend on `propext` and `Quot.sound`. `rounding_gap_forever` depends on `propext` only. These come through `omega` and `simp`. There are no custom axioms, no `sorry` and no `native_decide`. The closed-loop module adds 11 theorems: 5 depend on no axioms and 6 depend on `propext` and `Quot.sound` only. The exploration module adds 11 theorems and the completion module 15, all depending on no axioms or only on standard `propext` and `Quot.sound`. The bridges module adds 33: 5 depend on no axioms, 6 on `propext` only and 22 on `propext` and `Quot.sound`. The lineage-in-process module adds 14: 2 depend on no axioms and 12 on `propext` and `Quot.sound`. In total there are 117 theorems.
 
 ## Scope
 
