@@ -1,12 +1,12 @@
 {
-  "checked_at_utc": "2026-10-06T19:56:04.503520+00:00",
+  "checked_at_utc": "2026-10-06T20:24:18.143862+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
-  "checker_sha256": "06849a0e870eccdcf9a3a5fb022dc4a92a00c0f7f06d7883d691c1addd2af0c2",
-  "modules": 41,
-  "audits": 800,
-  "renamed_declarations": 44,
+  "checker_sha256": "f36827c2cb3e28d3763da6487daf149ed5f1f60f4b25e1c554dbc0ae6a61bb0c",
+  "modules": 48,
+  "audits": 963,
+  "renamed_declarations": 48,
   "mismatches": [],
   "rows": [
     {
@@ -336,7 +336,63 @@
       "audits": 25,
       "renamed": 0,
       "matches_before_under_renames": true
+    },
+    {
+      "module": "ContactFormation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
+      "source_sha256": "e94ede1ad6ce5cc98b9947a819dfa99918fa2508bf3da4616c845d73cd0a3032",
+      "audits": 26,
+      "renamed": 2,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "FormationClosure",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
+      "source_sha256": "c4ce285254e7a76f2b0bb3a371e590eee7379b84d072df0f1a402a177236092d",
+      "audits": 48,
+      "renamed": 2,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "AcquiredContact",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean",
+      "source_sha256": "3ccbebd1b8c135a67346eb578934f41fb97a99ef8368053cfc57d1bbf25c9a5b",
+      "audits": 26,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "ValuationDevelopment",
+      "source": "experiments/valuation-development/lean/ValuationDevelopment.lean",
+      "source_sha256": "646fe738830cf9da7037f9ef554aa455af0dd85b32ae1ba3591ba7e6dbb3b9d2",
+      "audits": 0,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "ClosedLoopValuation",
+      "source": "experiments/valuation-development/lean/ClosedLoopValuation.lean",
+      "source_sha256": "ba21df526dae8fdf0b4f5e1f1947ab12391572e083d9f521e3b0284fbf2c43d3",
+      "audits": 0,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "PortValuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean",
+      "source_sha256": "d0e52b7ee400f919f8ebd2aba1251aa35581a3475d13cc517934e9ab8b39e529",
+      "audits": 11,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "PhaseCycleDerivation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
+      "source_sha256": "327cfcd02d8f7deaf4c4bc45a95c12888c6e1241362ed14806dc5781ce32f94d",
+      "audits": 52,
+      "renamed": 0,
+      "matches_before_under_renames": true
     }
   ],
-  "scope": "Every audited declaration in the 41-module closure reports the same axioms as before the vocabulary rename, under the declared renames. This certifies a renaming, not a new result."
+  "scope": "Every audited declaration in the checked closure reports the same axioms as before the vocabulary rename, under the declared renames. This certifies a renaming, not a new result."
 }

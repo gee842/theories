@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import tempfile
 import time
@@ -76,9 +77,17 @@ def main():
     toolchain_bytes = (CORE / "lean-toolchain").read_bytes()
     assert sha(toolchain_bytes) == baseline["toolchain_sha256"]
     compiler = Path(baseline["compiler"])
-    assert sha(compiler.read_bytes()) == baseline["compiler_sha256"]
-    version = subprocess.check_output([str(compiler), "--version"], text=True).strip()
-    assert version == baseline["lean_version"]
+    if compiler.exists():
+        assert sha(compiler.read_bytes()) == baseline["compiler_sha256"]
+        version = subprocess.check_output([str(compiler), "--version"], text=True).strip()
+        assert version == baseline["lean_version"]
+    else:
+        # Another host: accept the same Lean release and commit, recording its own binary.
+        compiler = Path(os.environ.get("LEAN") or shutil.which("lean") or "lean")
+        version = subprocess.check_output([str(compiler), "--version"], text=True).strip()
+        same = lambda v: (re.search(r"version (\S+),", v).group(1), re.search(r"commit (\w+)", v).group(1))
+        assert same(version) == same(baseline["lean_version"]), (version, baseline["lean_version"])
+    compiler_sha256 = sha(compiler.read_bytes())
     imports, requests, declarations = {}, {}, {}
     for name, data in frozen.items():
         source = data.decode()
@@ -166,7 +175,7 @@ def main():
     names = {n for row in rows for n in row["axioms_by_declaration"]}
     passed = len(rows) == len(paths) and unchanged and old_names <= names and all(row["passed"] for row in rows)
     record = {"status": "passed" if passed else "failed", "checked_at_utc": datetime.now(timezone.utc).isoformat(),
-        "compiler": str(compiler), "compiler_sha256": baseline["compiler_sha256"], "lean_version": version,
+        "compiler": str(compiler), "compiler_sha256": compiler_sha256, "lean_version": version,
         "toolchain_sha256": sha(toolchain_bytes), "checker_sha256": sha(checker_bytes),
         "baseline": str(BASELINE.relative_to(REPO)), "baseline_sha256": sha(baseline_bytes),
         "baseline_snapshot": str((attempt / "baseline-verification.json").relative_to(HERE)),

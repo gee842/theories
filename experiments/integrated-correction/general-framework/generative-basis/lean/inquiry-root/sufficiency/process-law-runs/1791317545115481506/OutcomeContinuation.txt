@@ -1,0 +1,14 @@
+'Generative.OutcomeContinuation.exists_outcome_iff_feasible' does not depend on any axioms
+'Generative.OutcomeContinuation.outcome_residual_update' does not depend on any axioms
+'Generative.OutcomeContinuation.outcome_iff_actual_boundary' does not depend on any axioms
+'Generative.OutcomeContinuation.outcome_of_actual_history' does not depend on any axioms
+'Generative.OutcomeContinuation.outcome_singleton_iff' does not depend on any axioms
+'Generative.OutcomeContinuation.outcome_singleton_at_unique_successor' does not depend on any axioms
+'Generative.OutcomeContinuation.empty_future_at_unique_endpoint' does not depend on any axioms
+'Generative.OutcomeContinuation.outcome_profiles_extend' does not depend on any axioms
+'Generative.OutcomeContinuation.outcome_profiles_retain_feasibility' does not depend on any axioms
+'Generative.OutcomeContinuation.exact_outcome_summary_collision' does not depend on any axioms
+'Generative.OutcomeContinuation.exact_outcome_summary_distinguishes' does not depend on any axioms
+'Generative.OutcomeContinuation.exact_outcome_summary_exists_iff' does not depend on any axioms
+'Generative.OutcomeContinuation.identity_outcome_iff_trace' does not depend on any axioms
+'Generative.OutcomeContinuation.step_agreement_iff_endpoint_outcomes' does not depend on any axioms

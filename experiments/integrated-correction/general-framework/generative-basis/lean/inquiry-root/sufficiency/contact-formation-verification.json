@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T19:55:53.574866+00:00",
+  "checked_at_utc": "2026-10-06T20:14:35.697045+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -96,7 +96,7 @@
     {
       "module": "NativePacketProcess",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
-      "source_sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+      "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
       "exit_code": 0,
       "audits": 45,
       "nonempty_audits": {},
@@ -132,7 +132,7 @@
     {
       "module": "NativePacketCases",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean",
-      "source_sha256": "36f9d1ea87f201b70715699b05c045e0fdebe6f3497df3278d2a7cfbbe32d0d4",
+      "source_sha256": "70199646e488cb29e4fed6681299739dc4ad1336fee1f6e46cf8709a03e7d02e",
       "exit_code": 0,
       "audits": 94,
       "nonempty_audits": {},
@@ -231,7 +231,7 @@
     {
       "module": "PacketLawDerivation",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
-      "source_sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70",
+      "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
       "exit_code": 0,
       "audits": 51,
       "nonempty_audits": {},
@@ -294,7 +294,7 @@
     {
       "module": "ContactFormation",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
-      "source_sha256": "08a268ad3039cdb8e50876f47a013fa5e6a77f4a9e33e74d8170fa7a6cfd5423",
+      "source_sha256": "e94ede1ad6ce5cc98b9947a819dfa99918fa2508bf3da4616c845d73cd0a3032",
       "exit_code": 0,
       "audits": 26,
       "nonempty_audits": {},
@@ -303,7 +303,7 @@
     {
       "module": "FormationClosure",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
-      "source_sha256": "6c98403b67434950a48d8278ddfafb70d027d82b272ab5210c23172c3bf21559",
+      "source_sha256": "c4ce285254e7a76f2b0bb3a371e590eee7379b84d072df0f1a402a177236092d",
       "exit_code": 0,
       "audits": 48,
       "nonempty_audits": {},
@@ -312,18 +312,46 @@
     {
       "module": "AcquiredContact",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean",
-      "source_sha256": "11cc317b453298dfc4807cb8ecf01188b85ee0b8f65bd6ceed20a4cbda057ac8",
+      "source_sha256": "3ccbebd1b8c135a67346eb578934f41fb97a99ef8368053cfc57d1bbf25c9a5b",
       "exit_code": 0,
       "audits": 26,
       "nonempty_audits": {},
       "clean": true
+    },
+    {
+      "module": "ValuationDevelopment",
+      "source": "experiments/valuation-development/lean/ValuationDevelopment.lean",
+      "source_sha256": "646fe738830cf9da7037f9ef554aa455af0dd85b32ae1ba3591ba7e6dbb3b9d2",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "ClosedLoopValuation",
+      "source": "experiments/valuation-development/lean/ClosedLoopValuation.lean",
+      "source_sha256": "ba21df526dae8fdf0b4f5e1f1947ab12391572e083d9f521e3b0284fbf2c43d3",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "PortValuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean",
+      "source_sha256": "d0e52b7ee400f919f8ebd2aba1251aa35581a3475d13cc517934e9ab8b39e529",
+      "exit_code": 0,
+      "audits": 11,
+      "nonempty_audits": {},
+      "clean": true
     }
   ],
-  "total_audits": 699,
+  "total_audits": 710,
   "new_module_audits": {
     "ContactFormation": 26,
     "FormationClosure": 48,
-    "AcquiredContact": 26
+    "AcquiredContact": 26,
+    "PortValuation": 11
   },
-  "scope": "ContactFormation, FormationClosure and AcquiredContact over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."
+  "scope": "ContactFormation, FormationClosure, AcquiredContact, ValuationDevelopment, ClosedLoopValuation and PortValuation over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."
 }

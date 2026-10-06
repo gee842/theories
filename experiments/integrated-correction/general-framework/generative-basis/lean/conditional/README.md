@@ -128,3 +128,9 @@ only on the allowed standard axioms.
 declarations, dependency results, and whether sources stayed unchanged during the
 check. `verification/` preserves the compiler output. Local compiled caches are
 ignored and are not trusted by the checker.
+
+## Later package: renewal and closure
+
+[`renewal/`](renewal/README.md) builds on `SupportNecessity`, the core `Depletion` theorems and the U1 law (6 October 2026, 32 audits).
+- It proves the cycle extraction this package did not claim: late activity descends from a realized closure of kinds, and acyclic support has a deadline without a supplied rank.
+- It shows that constraints which bring in less than their formation demands cannot renew forever, whatever their closure.

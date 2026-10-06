@@ -1,6 +1,6 @@
 # Vocabulary renames, 6 October 2026
 
-At [Ren's direction](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md), market and exchange names were replaced with names for what the activity does. Only names changed: every audited declaration reports the same axioms as before ([check.py](check.py), [receipt.json](receipt.json): 41 modules, 800 audits, 44 renamed declarations, no mismatch).
+At [Ren's direction](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md), market and exchange names were replaced with names for what the activity does. Only names changed: every audited declaration reports the same axioms as before ([check.py](check.py), [receipt.json](receipt.json): 48 modules, 963 audits, 48 renamed declarations, no mismatch).
 
 ## Core vocabulary
 
@@ -70,10 +70,23 @@ At [Ren's direction](../../../../../../../sources/15-codex-theory-conversations/
 | `step_balance_exact` | `step_sustained_exact` |
 | `port_account_law` | `port_sustain_law` |
 
+## Contact-formation, phase-cycle and valuation modules (renamed when merged with main)
+
+`ContactFormation`, `FormationClosure`, `AcquiredContact`, `PhaseCycleDerivation` and `PortValuation` reached main while the rename was under way. On merge they take the native-port names above, plus:
+
+| Old | New |
+|---|---|
+| `form_reserve_stops` | `form_insufficient_stops` |
+| `FormFailure.interfaceReserve` | `FormFailure.interfaceInsufficient` |
+| `spare_accounting` | `spare_count` |
+| `completed_native_wasted_monotone` | `completed_native_dissipated_monotone` |
+| `pair_ledger` | `pair_record` |
+| hypothesis `noWaste` | `noDissipation` |
+
 ## Kept on purpose
 
 - The Python originals (`diagnosis.py` and its port) keep `fuel`, `spent`, `income`; the correspondence checker maps them (`LEAN_FIELD`).
 - `receipt` names an observation of the completed conversion, not a payment.
 - `spent` in `OnePacketQuestions` is the macro packet state, not a quantity.
 - Downstream studies that only import these laws (`PatientConcern`, `ControllerRevision`, `FormationSupport`, `SupportedRevision`) had the imported names updated; their own local vocabulary is unchanged.
-- The 32-module core closure (for example `Depletion.reserve`, `BoundaryModels.FuelState`, `CompletionApplicability.queryCredit`) is not renamed in this round.
+- The 32-module core closure (for example `Depletion.reserve`, `BoundaryModels.FuelState`, `CompletionApplicability.queryCredit`) and the renewal package's own `reserve`/`demand` (`conditional/renewal/RenewalAccounting.lean`) are not renamed in this round.
