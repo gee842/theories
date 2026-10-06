@@ -316,3 +316,31 @@ The next connection is therefore precise: **actual paid recipient outcome → wa
 [episode-uptake-model]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py
 [episode-uptake-law]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean
 [episode-parent-results]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/results.json.gz
+
+## 9. An existing witness of generic correction
+
+The accepted [reason-protection branch][correction-readme] already supplies a bounded **generic paid correction-and-choice capacity**. This is an existing result, not a newly implemented continuation of the recipient evaluator or fulfillment interface above.
+
+Its original material17/common83/source20 preparation actually forms the reader and actuator. The paid history records `111`, audits and protects both patients; changes context, records `011`, audits and protects only `q`; then clears operating reason state, replays the retained archive and again protects `q`. In [ReasonProtection][correction-formal], `actual_construction_revision_and_protection` proves the whole staged trace; `actual_revised_audit` and `actual_revised_action` give its reached revision; `actual_retraction_keeps_harm_visible` states installed masks `full → qOnly → qOnly`. [ReasonReplay][episode-replay] preserves all six observations and the alternative direct root-to-`q` route. Its `calibrated_negative_refutes_only_edge_fact` requires separate negative calibration to interpret the new zero as refuting the root-to-`p` factual premise. Neither a missing record nor failed route proves that `p` lacks standing or other grounds.
+
+The scopes of execution and selection differ. The Lean witness explicitly supplies its action words. Its general `reached_reason_and_protection` theorem also assumes the chosen covering mask, feasible trace and independent permissibility. Selection is established separately by the accepted [finite game][correction-model]: `_decide` reads the completed current publication into `admitted`, passes it into `learned` when uptake is accessible, and uses that mask in the warm score. The solver enumerates gate masks, withdrawal, safeguards, funded cuts and refusal. This externally solved supplied game does not construct or physically charge an optimizer; its actual action expenses do not cover deliberation hardware by implication.
+
+The [saved primary decisions][correction-results], `games.primary.trace[1]` and `[2]`, show genuine alternatives after revision:
+
+| Reached decision, after its paid audit | Common fuel | Trustee cash | Selected protection |
+|---|---:|---:|---|
+| Second opportunity | 20 | 22 | `q` only |
+| Third opportunity | 6 | 33 | `q` only |
+
+At both, protecting **both** remains feasible: its arm/safeguard/release word costs four physical units and its gate costs four cash units. The `q` word costs three of each; withdrawal is available without physical expenditure. Authority, delivery and the open opportunity remain available. These stores have separate laws, despite the coincident numbers; they are not exchangeable. `action_feasible_iff` gives the physical word criterion. Thus the changed selection is not forced by depletion or a consumed opportunity.
+
+At the last opportunity, hand substitution into the supplied concern weight five gives warm scores: `q` only 37, both 36, no protection 35, withdrawal 34, and `p` only 32. With no future continuation, the operator protects exactly the requested mask: two cash per safeguard is cheaper than three per leaf cut or five for the shared cut, while production pays seven. The saved `q` selection is strict. Changing only uptake to `full` in this decision formula would instead favor both, scoring36; that is a conditional law-sensitivity calculation, not another reached acquisition history.
+
+The particular support withdrawal therefore reaches an actual, funded change in protective selection under the supplied evaluation and game law. Harm to `p` remains one after the revised act and two finally; final common3/source18 and both harm counters remain recorded. This does not acquire moral grounds or establish that withholding `p`'s protection is ethically justified. Calibration, relevance, evaluation coupling, legitimate permission and the comparative interpretation remain separate premises. Nor does this history carry the new recipient evaluator's acquired `n`, its ports or an episode-fulfillment certificate: no same-state composition or recipient succession is claimed.
+
+This audit read preserved proofs and results and confirmed all ten source hashes in the saved model receipt. It added no build, simulation, formal apparatus or theorem.
+
+[correction-readme]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/README.md
+[correction-formal]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean
+[correction-model]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/model.py
+[correction-results]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/model-verification.json
