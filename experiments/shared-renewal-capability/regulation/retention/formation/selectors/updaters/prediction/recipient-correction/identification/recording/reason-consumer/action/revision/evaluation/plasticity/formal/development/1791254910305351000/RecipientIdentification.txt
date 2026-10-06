@@ -1,0 +1,45 @@
+'RecipientIdentification.positive_receipt_identifies' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.zero_receipt_ambiguity' does not depend on any axioms
+'RecipientIdentification.no_total_zero_decoder' does not depend on any axioms
+'RecipientIdentification.revise_sound' depends on axioms: [propext]
+'RecipientIdentification.recipient_physical_feedback_sound' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.unknown_zero_explores' depends on axioms: [propext]
+'RecipientIdentification.unknown_positive_qualifies' depends on axioms: [propext]
+'RecipientIdentification.qualified_record_retained' depends on axioms: [propext]
+'RecipientIdentification.actor_cell_preserved' depends on axioms: [propext]
+'RecipientIdentification.actor_feedback_is_sham' depends on axioms: [propext]
+'RecipientIdentification.missing_feedback_retains' depends on axioms: [propext]
+'RecipientIdentification.revise_bounded' depends on axioms: [propext]
+'RecipientIdentification.three_bits_decode' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.encoded_state_injective' does not depend on any axioms
+'RecipientIdentification.retrofit_paid' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.retrofit_is_unknown' depends on axioms: [propext]
+'RecipientIdentification.retrofit_preserves_acquired_actor' depends on axioms: [propext]
+'RecipientIdentification.retrofit_preserves_hardware' does not depend on any axioms
+'RecipientIdentification.handoff_valid' depends on axioms: [propext]
+'RecipientIdentification.handoff_energy' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.qualified_command' depends on axioms: [propext]
+'RecipientIdentification.feedback_bounded' depends on axioms: [propext]
+'RecipientIdentification.step_valid' depends on axioms: [propext]
+'RecipientIdentification.step_energy' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.trace_energy' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.admission_prefunded' does not depend on any axioms
+'RecipientIdentification.unpayable_no_query' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.inactive_no_query' depends on axioms: [propext]
+'RecipientIdentification.recipient_cannot_fund_own_query' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.trial_exists' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.trial_registers' depends on axioms: [propext]
+'RecipientIdentification.trial_actor_preserved' depends on axioms: [propext]
+'RecipientIdentification.trial_sound' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.trial_positive_qualifies' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.trace_run' depends on axioms: [propext]
+'RecipientIdentification.paid_trial_sound' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.paid_qualified_use' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.actual_client_handoff' does not depend on any axioms
+'RecipientIdentification.actual_five_query_trace' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.paid_exploration_then_qualified_use' depends on axioms: [propext]
+'RecipientIdentification.concrete_whole_suffix_account' depends on axioms: [propext]
+'RecipientIdentification.five_query_budget_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientIdentification.twenty_five_blocks_second_actor' depends on axioms: [propext]
+'RecipientIdentification.no_exploration_can_stall' does not depend on any axioms
+'RecipientIdentification.changed_target_invalidates_old_qualification' does not depend on any axioms

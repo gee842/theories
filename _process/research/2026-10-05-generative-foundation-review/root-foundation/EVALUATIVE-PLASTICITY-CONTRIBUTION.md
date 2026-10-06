@@ -2,6 +2,8 @@
 
 6 October 2026. Independent contribution and premise audit, using existing accepted work and the current separately reconstructed finite plasticity executions. No new calculation, empirical observation or source study was performed for this note. The numerical comparison and corruption tests pass; package acceptance and any formal certificate retain their own review status. This note neither changes the frozen protocol nor adds a completion condition.
 
+**Continuity update:** §§1–7 preserve the earlier numerical contribution snapshot committed in `790ef14`. Their remaining-work language must be read with §8, which credits the subsequently reconciled common explanation, positive application, bounded wisdom and application-evidence results. The corrected plasticity formal review is now accepted at its stated scope; neither status update is a new scientific run.
+
 ## 1. A real conditional construction, with a narrow derived object
 
 The new transition is **paid paired consequences → an initially nonconducting, materially backed connection → its retained signed influence on one later recipient assessment**, with one paid change of that connection. This is more than relabeling the old live `shared` constructor. Initially both sockets are empty. They cannot transmit. A paid recipient shortfall encounter and the separate acquired own bit determine whether a real pair binds and whether it conducts positively or negatively. The final port reads the occupied components, not an analyst's benevolent-route label. Inert components pay the same construction bill without conductance; the identity filter retains knowledge and links but blocks their influence. The optional revision retires and replaces a component while matched native learning continues.
@@ -72,6 +74,36 @@ The next whole-foundation bridge is **acquired evaluative influence → warrante
 Concretely, the release account should identify which independently defended patient/episode/role/authority and full-comparison premises license use of the acquired link, which available evidence defeats that use, and whether the actual controller uses that evidence before an affordable choice. Already fulfilled service must not be relabeled unmet because a new evaluator or link appears. Existing conditional revision/application results should discharge what they actually prove; a physical combination is needed only for a retained claim of that particular continuing mechanism.
 
 A central capacity remains open if it is still merely named or supplied as its own explanation. A conditional account does not remain open merely because some more detailed implementation can be imagined. Integrating the supplied local functions, the defended ethical interpretation, the actual compositions and the empirical claim boundaries is the substantive next assessment. No further apparatus is automatically required by accepting this result.
+
+## 8. Integration update: credit closed interfaces and isolate the remaining inference
+
+The following accepted contributions answer parts of the earlier §§6–7. They are not reopened by material plasticity's remaining local premises:
+
+| Accepted commit | Contribution to this account |
+|---|---|
+| `3c34431c0124a8828f20c81e1fa770ec09345950` | The common explanatory argument and [actual composition map](FOUNDATION-COMPOSITION.md) connect dependency, accessible evidence, retention and issued action through shared constraints. They also preserve incompatible witnesses and distinct local regimes. A generic new synthesis or a demand to connect every possible pair of implementations is not an outstanding deliverable. |
+| `914fe21712ff883868a0f3788d58b0805ef6e362` | [Positive conditional application and bounded practical wisdom](EVALUATIVE-APPLICATION-MATH.md) already connect independently defended patient-related grounds, authority and complete comparison to recommendation, acquired mediation and effective choice. These are substantive conditional results, not a missing positive account or an arbitrary favorable score. Their defended premises remain distinct from the physical mechanism that learns an influence. |
+| `b405480a8c48295f1bb0311285623cf10c97b338` | The [fixed completion audit](FIXED-FINISH-LINE-AUDIT.md#13-common-explanation-composition-and-positive-application-now-established) closes those bounded synthesis obligations and isolates the evaluative inference. The five completion conditions remain unchanged; no new whole-lineage empirical gate, algorithmic-superiority test or indefinite implementation requirement is added. |
+| `0b3a804ddd6fc2dca638abbfa074ab1818478bb7` | [Application evidence](APPLICATION-EVIDENCE-MATH.md) proves historical delivery behind a current paid non-root publication: an actual ready producer and empty archive lead to the same acquired frame whose own prefix contains recipient-crediting work. With independently supplied episode and service meaning, this establishes fulfillment and excludes a pending-one-service interpretation at that entrance. It does not itself install withdrawal or justify the patient ground. |
+
+The current plasticity contribution is consequently specific: it supplies formation and paid revision of an **effective evaluative connection**, where earlier uptake supplied its operative transfer route. The corrected [formal semantic review](EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md) accepts 60 new and 553 inherited audits and the separately scoped selected correspondence. It preserves the repaired authorization-invalidation mismatch, actual staged witness, two-latch representation and remaining abstraction boundaries. Formal acceptance adds no ethical premise to the numerical contribution.
+
+The precise remaining bridge is **formed or revised effective evaluative connection → independently defended patient-related reason in an actual application**, with the source of the evidence, the deliberator's role, rightful authority and full feasible comparison explicit. The positive application account already states how warranted choice can follow under those grounds. What must not be inferred is that the new link's sign, strength, formation history or material retention supplies that warrant. Nor may the two-unit teaching operation silently become a welfare interpretation of the ten-unit service.
+
+Application-evidence provenance sharpens this limit. Where actual inquiry has already delivered the specified service, that history cannot be redescribed as an outstanding one-service claim just because a new link or evaluator is present. A retained claim that this particular controller withdraws or changes its recommendation must show its actual use of the defeating evidence; accepting bounded application in general does not require adding that policy to every specimen. Similarly, the optional sign revision's reduction of otherwise effective delivery is not evidence of wiser judgment.
+
+This updates the earlier table's broad remaining-work wording, rather than requiring common explanation, compatible composition, positive application or bounded wisdom to be proved again. The substantive assessment is whether the existing independently defended grounds and actual mechanism can meet at the stated application interface. It neither declares whole-foundation completion nor substitutes universal favorable direction for it.
+
+### Accepted-source identities for this update
+
+These SHA-256 values identify the tracked document bytes at the named commits, rather than concurrently edited working-tree versions. They supplement, without replacing, the earlier read-source record below.
+
+| Commit and document | SHA-256 |
+|---|---|
+| `3c34431` — `FOUNDATION-COMPOSITION.md` | `044a55c5e82f4c38610820a86b2b1df4b1afee4f80ff3b3066e35f7b751f960b` |
+| `914fe21` — `EVALUATIVE-APPLICATION-MATH.md` | `7d6bdb64c8927c723cbb4347bc9c148c9f67f36a47591330757ebc3071a519ff` |
+| `b405480` — `FIXED-FINISH-LINE-AUDIT.md` | `0ac62847674493527690d5da758843c8ec24879465abb6fdb94f2bc2efb90413` |
+| `0b3a804` — `APPLICATION-EVIDENCE-MATH.md` | `58c827830fcef060c41ad45aa0b0d7987d81a84cc5eb5fd24ddf294e3249106f` |
 
 ## Read-source identities
 

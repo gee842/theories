@@ -1,0 +1,30 @@
+{
+  "sources": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "FormedSelection": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "RecipientCorrection": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+    "RecipientIdentification": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8",
+    "EmissionArchive": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+    "RecipientArchive": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0",
+    "ArchivePreparation": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248",
+    "PaidArchiveReader": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9",
+    "RecordedEvidence": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "ReasonReplay": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "RecipientReasons": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d",
+    "PaidRecipientReasons": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218",
+    "ReasonPreparation": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6",
+    "ReasonReplayBridge": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e",
+    "RecipientAction": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b",
+    "ActionPreparation": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "ActionWitness": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7",
+    "PublicationSafety": "27f5be6e07bbaad59101ff24c41e0513f573949b7acd80c94bd8b8b2f760c2fd",
+    "PublicationBudget": "a947733ac7394a00d90c8be94410aaf27324f7d9b418d8be07aae5dad9f21f97",
+    "PublicationBridge": "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538",
+    "RevisionPreparation": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "FreshRevision": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38",
+    "RevisionWitness": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f",
+    "PlasticityPreparation": "9cbffa50aa314afc7e9cd3ebed1270d720b4e755deb079487f11612d85ca7f87",
+    "PairedPlasticity": "32a86d069b6b99f86fdf7005eda37fecaa8d5705a96762373cea7925e650fa96"
+  },
+  "contract": "f1e5aeac5a966aec04593a54f271e15feff0141a931f302d36dd3d4efe44e0d6"
+}

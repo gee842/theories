@@ -1,0 +1,127 @@
+PairedPlasticity.lean:226:35: error: simp_all made no progress
+PairedPlasticity.lean:226:35: error: simp_all made no progress
+PairedPlasticity.lean:233:16: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PairedPlasticity.lean:220:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PairedPlasticity.lean:258:8: error: (kernel) unknown constant 'PairedPlasticity.step_energy'
+PairedPlasticity.lean:319:35: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  s.phase
+in the target expression
+  Enabled s Event.bind
+
+case left
+s : State
+h : s.phase = Phase.missing
+he : Enabled s Event.bind
+⊢ False
+PairedPlasticity.lean:319:35: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  s.phase
+in the target expression
+  Enabled s Event.nativeWrite
+
+case right
+s : State
+h : s.phase = Phase.missing
+he : Enabled s Event.nativeWrite
+⊢ False
+PairedPlasticity.lean:342:77: error: unsolved goals
+s : State
+channel : Bool
+hv : RecipientIdentification.Valid (core s)
+hr : RecipientIdentification.targetOf (core s).phase = RecipientCorrection.Target.recipient
+right✝ : 1 ≤ (core s).escrow
+target : RecipientCorrection.Target
+r : Bool
+hp : (core s).phase = RecipientIdentification.Phase.worked target r
+⊢ match RecipientIdentification.Event.acquire channel, (RecipientAction.core s.parent.parent).phase with
+  | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+  | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+  | x, x_1 => False
+PairedPlasticity.lean:344:37: warning: This simp argument is unused:
+  hp
+
+Hint: Omit it from the simp argument list.
+  simp [RecipientAction.Settlement,̵h̵p̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+PairedPlasticity.lean:351:52: error: unsolved goals
+laws : Laws
+s : State
+⊢ (RecipientAction.clear
+          { reasons := s.parent.parent.reasons, port := s.parent.parent.port, freeA := s.parent.parent.freeA,
+            freeH := s.parent.parent.freeH, commandReserve := s.parent.parent.commandReserve,
+            readerReserve := s.parent.parent.readerReserve, sourceReserve := s.parent.parent.sourceReserve,
+            latch := s.parent.parent.latch, imported := s.parent.parent.imported, scope := false,
+            permission := s.parent.parent.permission, delivery := s.parent.parent.delivery }).reasons =
+      s.parent.parent.reasons ∧
+    (current
+        {
+          parent :=
+            {
+              parent :=
+                RecipientAction.clear
+                  { reasons := s.parent.parent.reasons, port := s.parent.parent.port, freeA := s.parent.parent.freeA,
+                    freeH := s.parent.parent.freeH, commandReserve := s.parent.parent.commandReserve,
+                    readerReserve := s.parent.parent.readerReserve, sourceReserve := s.parent.parent.sourceReserve,
+                    latch := s.parent.parent.latch, imported := s.parent.parent.imported, scope := false,
+                    permission := s.parent.parent.permission, delivery := s.parent.parent.delivery },
+              bank := s.parent.bank, adapter := s.parent.adapter, cells := s.parent.cells, freeA := s.parent.freeA,
+              freeH := s.parent.freeH, actorReserve := s.parent.actorReserve, readerReserve := s.parent.readerReserve,
+              sourceReserve := s.parent.sourceReserve, opened := s.parent.opened, reading := s.parent.reading },
+          n := s.n, count := s.count, phase := s.phase, ownBit := s.ownBit, recipientBit := s.recipientBit,
+          cells := s.cells, adapter := s.adapter, port := s.port,
+          portMode := if s.portMode = PortMode.idle then PortMode.idle else PortMode.consumed, readCommand := none,
+          continuation := s.continuation, variant := s.variant, updates := s.updates, link0 := s.link0,
+          link1 := s.link1, blanks := s.blanks, replacement := s.replacement, retired := s.retired,
+          idleParts := s.idleParts, training := s.training, revision := s.revision, idleFuel := s.idleFuel,
+          ownSource := s.ownSource, recipientSource := s.recipientSource, idleSource := s.idleSource } →
+      (RecipientAction.clear
+              { reasons := s.parent.parent.reasons, port := s.parent.parent.port, freeA := s.parent.parent.freeA,
+                freeH := s.parent.parent.freeH, commandReserve := s.parent.parent.commandReserve,
+                readerReserve := s.parent.parent.readerReserve, sourceReserve := s.parent.parent.sourceReserve,
+                latch := s.parent.parent.latch, imported := s.parent.parent.imported, scope := false,
+                permission := s.parent.parent.permission, delivery := s.parent.parent.delivery }).scope =
+          true →
+        RecipientAction.route
+            (RecipientAction.clear
+                  { reasons := s.parent.parent.reasons, port := s.parent.parent.port, freeA := s.parent.parent.freeA,
+                    freeH := s.parent.parent.freeH, commandReserve := s.parent.parent.commandReserve,
+                    readerReserve := s.parent.parent.readerReserve, sourceReserve := s.parent.parent.sourceReserve,
+                    latch := s.parent.parent.latch, imported := s.parent.parent.imported, scope := false,
+                    permission := s.parent.parent.permission, delivery := s.parent.parent.delivery }).reasons.working =
+          none)
+PairedPlasticity.lean:352:16: warning: This simp argument is unused:
+  invalidate
+
+Hint: Omit it from the simp argument list.
+  simp [advance,i̵n̵v̵a̵l̵i̵d̵a̵t̵e̵,̵ ̲old, ̲FreshRevision.actionAdvance, ̲RecipientAction.advance, ̲command]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PairedPlasticity.Sources.set_account' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.runnable_trace' depends on axioms: [propext]
+'PairedPlasticity.update_bounded' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.transmission_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PairedPlasticity.conventional_equality' depends on axioms: [propext]
+'PairedPlasticity.balances_account' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.old_account' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.step_energy' does not depend on any axioms
+'PairedPlasticity.trace_energy' depends on axioms: [propext, PairedPlasticity.trace_energy]
+'PairedPlasticity.step_material' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.trace_material' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.step_capacity' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.trace_capacity' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.binding_uses_acquired_pair' depends on axioms: [propext]
+'PairedPlasticity.no_second_binding' depends on axioms: [propext]
+'PairedPlasticity.missing_is_not_acquired' depends on axioms: [propext, sorryAx]
+'PairedPlasticity.no_recipient_actor_source_credit' depends on axioms: [propext]
+'PairedPlasticity.trial_projects' depends on axioms: [propext]
+'PairedPlasticity.no_new_rent_after_consumption' depends on axioms: [propext]
+'PairedPlasticity.settlement_survives_scope_cut' depends on axioms: [propext, sorryAx]
+'PairedPlasticity.scope_cut_invalidates_only_application' depends on axioms: [propext, sorryAx]

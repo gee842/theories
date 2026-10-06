@@ -1,0 +1,12 @@
+'ArchivePreparation.runnable_trace' depends on axioms: [propext]
+'ArchivePreparation.actual_formation_feasible' depends on axioms: [propext]
+'ArchivePreparation.actual_formation_endpoint' does not depend on any axioms
+'ArchivePreparation.actual_formation_trace' depends on axioms: [propext]
+'ArchivePreparation.actual_formation_accounts' depends on axioms: [propext]
+'ArchivePreparation.assembly_material' depends on axioms: [propext, Quot.sound]
+'ArchivePreparation.assembly_energy' depends on axioms: [propext, Quot.sound]
+'ArchivePreparation.actual_assembly_feasible' does not depend on any axioms
+'ArchivePreparation.actual_assembly_endpoint' depends on axioms: [propext]
+'ArchivePreparation.original_stocks_partition' does not depend on any axioms
+'ArchivePreparation.construction_ledger' does not depend on any axioms
+'ArchivePreparation.primary_whole_ledger' does not depend on any axioms

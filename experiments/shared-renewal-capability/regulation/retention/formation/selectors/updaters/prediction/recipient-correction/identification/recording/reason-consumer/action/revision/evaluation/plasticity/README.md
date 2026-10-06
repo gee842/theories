@@ -1,6 +1,6 @@
 # Paid formation and revision of an evaluative connection
 
-6 October 2026. AI-assisted research within [generative grounding](../../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). **Producer and independent numerical comparison passed; formal and final acceptance pending.** This is a conditional synthetic construction, not an empirical identification or an ethical justification.
+6 October 2026. AI-assisted research within [generative grounding](../../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). **Accepted at the declared finite numerical and formal scopes.** This is a conditional synthetic construction, not an empirical identification or an ethical justification.
 
 The study tests actual paired consequences → materially formed signed connection → its causal use in a recipient-directed choice. It begins with no conducting cross-channel link. The native evaluator, compatible sockets, calibrated meters, local binding chemistry, addressing, gain and finite control recipes remain supplied. The original recipient factual knowledge is preserved through training. Its two-unit paired operation and inherited ten-unit command trial are distinct modalities; their later assessment relation is an explicit transduction premise.
 
@@ -14,7 +14,7 @@ The [independent comparison](model-verification.json) reconstructs every saved p
 
 The result retains 38 exact incoming prefixes and their entire probability mass, carried through 66 case/variant/producer distributions: 836 histories and 15,358 producer state snapshots. These probabilities belong to the declared controlled extension of accepted predecessor distributions. They are not newly calculated formation probabilities for freely interacting M68 chemistry.
 
-## Independently reconstructed finite results, pending full-package acceptance
+## Independently reconstructed finite results
 
 All principal conditions have own shortfall word1001. Recipient words1001,0110 and1100 each have two losses and two returns. The completed active histories form, respectively, two positive links, two negative links, or one of each. Assessment reads the actual graph and learned n; it has no installed `shared` routing switch.
 
@@ -38,7 +38,7 @@ Withholding all new primary fuel still permits complete training at mass1/16 fro
 
 ## Interpretation and next connection
 
-A successful reviewed package would replace an initially operative cross-target connection with its actual paid formation and replacement history. It would supply a conditional mechanism for changing what enters evaluation. It would not derive the primitive coding, calibration, sign-setting chemistry, gain, selection of the learning schedule or ethical standing of the recipient. The unchanged command can remain effective even when the acquired evaluative connection suppresses its use.
+The accepted package replaces an initially operative cross-target connection with its actual paid formation and replacement history. It supplies a conditional mechanism for changing what enters evaluation. It does not derive the primitive coding, calibration, sign-setting chemistry, gain, selection of the learning schedule or ethical standing of the recipient. The unchanged command can remain effective even when the acquired evaluative connection suppresses its use.
 
 The separate accepted evaluative-successor and warranted-application studies retain their scopes. This altered architecture does not automatically inherit their composition results. A future claim about its continuing use must preserve the changed mechanism, actual accounts, beneficiary meanings and warranted grounds. The governing five completion conditions remain unchanged.
 
@@ -46,4 +46,12 @@ The separate accepted evaluative-successor and warranted-application studies ret
 
 The initial producer is intentionally guarded against overwriting its first receipt. Reproduction should use a fresh external copy or a separately named attempt with preserved source hashes and outputs; do not erase first outputs to rerun. [result-files.json](result-files.json) binds the compressed and decompressed result bytes. [reporting.json](reporting.json) contains exact aggregate metrics; [fixtures.json](fixtures.json) preserves preparation witnesses.
 
-The Python producer executes the fixed schedule/menu. Its helper functions are not claimed to be a complete arbitrary-interleaving transition kernel. The separately implemented Lean event law and selected correspondence checks must state their own scope. Independent reconstruction and mutation rejection have their separate receipts. Formal checking, selected runtime correspondence and the final scope review remain pending; numerical agreement alone does not accept the whole package.
+The Python producer executes the fixed schedule/menu. Its helper functions are not claimed to be a complete arbitrary-interleaving transition kernel. The separately implemented Lean event law and selected correspondence checks must state their own scope. The [fresh Lean receipt](formal/verification.json) records 60 new and 553 inherited declaration audits across 26 modules. [Fourteen compiled milestones](formal-correspondence.json) match the saved execution at 25 selected coordinates, with explicit source-unit, socket-count and closed-phase mappings. These are selected comparisons, not a whole-program refinement proof. The independently reviewed event law, executable reconstruction and scientific interpretation have distinct scopes.
+
+## Formal and semantic review
+
+The [formal package](formal/README.md) establishes an actual M68 formation/preparation and exact protected projection to the accepted parent, general resource/material and bounded-memory laws, paid acquisition-to-binding provenance, a complete suffix from the actual inherited entry through learning and assessment to action, and matched replacement/control witnesses. It also proves that a closed consumed port cannot restart. Existing local functionality and law assumptions remain explicit.
+
+Review found a genuine contract gap after an earlier kernel pass: permission/delivery toggles could retain an unconsumed assessment even though the frozen protocol required invalidation. The corrected law consumes that authorization; four additional regressions prove off/on cannot restore it while already funded acquisition/write settlement remains available. The prior pass and all build attempts are preserved in `formal/development/` and [the correspondence correction record](development/formal-correspondence-before-binding-fix/NOTE.md). No numerical output changed because those toggles are outside the fixed numerical menu. A compiler pass alone did not establish protocol adequacy.
+
+The formal layer uses ordered sockets and retained material counts; numerical histories additionally preserve component IDs and retired signs. Its explicit zero-cost training-close event and off-menu own-meter failure interface are documented. Its paid-event invariants apply to its stated law; the Python run executes the declared finite schedule. General representation equivalence is not claimed.

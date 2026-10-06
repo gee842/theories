@@ -1,0 +1,496 @@
+import ReasonReplayBridge
+
+/- A fixed, supplied recipient port. Its Boolean scope input represents an
+independently bound destination/lineage/request, not self-authenticating tags.
+Only internally minted latches are reachable. Every reader/reason intervention
+invalidates them, including same-context reopening. No recording capacity is
+added. The new port projects to the existing identification core, not the
+exhausted three-query archive producer. -/
+namespace RecipientAction
+
+open RecipientCorrection (Laws packedAct packedWrite lookup)
+
+abbrev Archive := EmissionArchive.State RecipientArchive.World RecipientArchive.Header RecipientArchive.Frame
+abbrev Reasons := PaidRecipientReasons.State Archive
+
+structure State where
+  reasons : Reasons
+  port : Bool
+  freeA : Nat
+  freeH : Nat
+  commandReserve : Nat
+  readerReserve : Nat
+  sourceReserve : Nat
+  latch : Option Bool
+  imported : Option Bool
+  scope : Bool
+  permission : Bool
+  delivery : Bool
+
+def core (s : State) : RecipientIdentification.State := s.reasons.reader.world.world.core
+
+def setCore (s : State) (c : RecipientIdentification.State) : State :=
+  { s with reasons := { s.reasons with reader := { s.reasons.reader with world :=
+    { s.reasons.reader.world with world := { s.reasons.reader.world.world with core := c } } } } }
+
+def debit (s : State) (n : Nat) : State :=
+  setCore s { core s with hardware := { (core s).hardware with fuel := (core s).hardware.fuel-n } }
+
+def clear (s : State) : State := { s with latch := none, imported := none }
+
+instance (r : Reasons) : Decidable (PaidRecipientReasons.CurrentPublication r) := by
+  unfold PaidRecipientReasons.CurrentPublication PaidArchiveReader.Complete
+  infer_instance
+
+def route (m : ReasonReplay.Mask) : Option Bool :=
+  match m.p,m.q with
+  | true,false => some false
+  | false,true => some true
+  | _,_ => none
+
+def supported (s : State) : Option Bool :=
+  if PaidRecipientReasons.CurrentPublication s.reasons ∧ s.scope=true ∧ s.permission=true
+  then route s.reasons.working else none
+
+def ReadyImport (s : State) : Prop := ∃ b, s.latch=some b ∧ supported s=some b
+
+def Authorized (s : State) : Prop :=
+  s.port=true ∧ s.delivery=true ∧ ∃ b, s.imported=some b ∧ supported s=some b ∧
+    packedAct (core s).hardware.q .recipient=b ∧ (core s).hardware.last=true
+
+def Settlement (s : State) (e : RecipientIdentification.Event) : Prop :=
+  match e,(core s).phase with
+  | .acquire _,.worked _ _ | .write,.acquired _ _ => True
+  | _,_ => False
+
+def RecipientOnly (s : State) : RecipientIdentification.Event → Prop
+  | .sense target => target=.recipient
+  | .reserve | .work _ | .acquire _ | .write =>
+      RecipientIdentification.targetOf (core s).phase=.recipient
+  | _ => True
+
+inductive Event where
+  | fund | fundReader | read | install
+  | reason (e : PaidRecipientReasons.Event)
+  | execute (e : RecipientIdentification.Event)
+  | voluntary (e : RecipientIdentification.Event)
+  | setScope (valid : Bool) | setPermission (allowed : Bool) | setDelivery (available : Bool)
+  deriving DecidableEq, Repr
+
+def importCore (s : State) (b : Bool) : RecipientIdentification.State :=
+  { core s with hardware := { (core s).hardware with
+    fuel := (core s).hardware.fuel-1,
+    q := packedWrite (core s).hardware.q .recipient b, last := true } }
+
+def stepCore (laws : Laws) (s : State) (e : RecipientIdentification.Event) : State :=
+  let t := setCore s (RecipientIdentification.advance laws (core s) e)
+  match e with | .write | .miss => clear t | _ => t
+
+def advance (laws : Laws) (s : State) : Event → State
+  | .fund =>
+      let t := setCore s { core s with
+        hardware := { (core s).hardware with fuel := (core s).hardware.fuel+s.commandReserve },
+        packets := (core s).packets+s.sourceReserve/10 }
+      { t with commandReserve := 0, sourceReserve := s.sourceReserve%10 }
+  | .fundReader => { s with reasons := { s.reasons with reader :=
+      { s.reasons.reader with fuel := s.reasons.reader.fuel+s.readerReserve } }, readerReserve := 0 }
+  | .read => { debit s 1 with latch := supported s, imported := none }
+  | .install => match s.latch with
+      | none => s
+      | some b => { setCore s (importCore s b) with latch := none, imported := some b }
+  | .reason e => clear { s with reasons := PaidRecipientReasons.advance s.reasons e }
+  | .execute e | .voluntary e => stepCore laws s e
+  | .setScope v => clear { s with scope := v }
+  | .setPermission v => { s with permission := v }
+  | .setDelivery v => { s with delivery := v }
+
+def Enabled (s : State) : Event → Prop
+  | .fund | .fundReader => True
+  | .read => s.port=true ∧ (core s).phase=.ready ∧ 1≤(core s).hardware.fuel
+  | .install => s.port=true ∧ (core s).phase=.ready ∧ 1≤(core s).hardware.fuel ∧ ReadyImport s
+  | .reason e => PaidRecipientReasons.Enabled s.reasons e
+  | .execute e => RecipientIdentification.Valid (core s) ∧ RecipientIdentification.Enabled (core s) e ∧
+      RecipientOnly s e ∧ (Settlement s e ∨ Authorized s)
+  | .voluntary e => RecipientIdentification.Valid (core s) ∧ RecipientIdentification.Enabled (core s) e ∧
+      RecipientOnly s e ∧ (Settlement s e ∨ (s.scope=true ∧ s.permission=true ∧ s.delivery=true))
+  | .setScope _ | .setPermission _ | .setDelivery _ => True
+
+def Step (laws : Laws) (s : State) (e : Event) (t : State) : Prop :=
+  Enabled s e ∧ t=advance laws s e
+
+def process (laws : Laws) : Generative.Process State Event := ⟨Step laws⟩
+
+def energy (s : State) : Nat := RecipientIdentification.energy (core s) +
+  s.reasons.reader.world.budget+s.reasons.reader.world.escrow+PaidRecipientReasons.energy s.reasons+
+  s.commandReserve+s.readerReserve+s.sourceReserve
+
+def material (s : State) : Nat := 30+s.freeA+s.freeH+2*(if s.port then 1 else 0)
+
+def charge (laws : Laws) (s : State) : Event → Nat
+  | .read | .install => 1
+  | .reason e => PaidRecipientReasons.charge e
+  | .execute e | .voluntary e => RecipientIdentification.spending e+RecipientIdentification.waste laws (core s) e
+  | _ => 0
+
+def spent (laws : Laws) (s : State) : List Event → Nat
+  | [] => 0
+  | e::es => charge laws s e+spent laws (advance laws s e) es
+
+def run (laws : Laws) (s : State) : List Event → State
+  | [] => s
+  | e::es => run laws (advance laws s e) es
+
+theorem core_set (s : State) (c : RecipientIdentification.State) : core (setCore s c)=c := rfl
+
+theorem import_is_typed (s : State) (b : Bool) :
+    packedAct (importCore s b).hardware.q .recipient=b ∧
+    packedAct (importCore s b).hardware.q .actor=packedAct (core s).hardware.q .actor ∧
+    (importCore s b).hardware.last=true := by
+  simp [importCore,RecipientCorrection.packed_write_sets_queried_cell,
+    RecipientCorrection.recipient_write_preserves_actor_cell]
+
+theorem import_qualification_sound (s : State) (b z : Bool)
+    (hc : RecipientReasons.Compatible z b) :
+    RecipientIdentification.Sound (RecipientIdentification.registers (importCore s b).hardware) z := by
+  intro _
+  change packedAct (importCore s b).hardware.q .recipient=z
+  rw [(import_is_typed s b).1]
+  exact (RecipientReasons.compatible_iff z b).mp hc
+
+theorem read_does_not_observe_receipt (laws : Laws) (s : State) :
+    (advance laws s .read).reasons.reader.archive=s.reasons.reader.archive ∧
+    (core (advance laws s .read)).patient=(core s).patient ∧
+    (core (advance laws s .read)).packets=(core s).packets := ⟨rfl,rfl,rfl⟩
+
+theorem reason_interleaving_clears (laws : Laws) (s : State) (e : PaidRecipientReasons.Event) :
+    (advance laws s (.reason e)).latch=none ∧
+    (advance laws s (.reason e)).imported=none := ⟨rfl,rfl⟩
+
+theorem scope_intervention_clears (laws : Laws) (s : State) (v : Bool) :
+    (advance laws s (.setScope v)).latch=none ∧
+    (advance laws s (.setScope v)).imported=none ∧
+    (advance laws s (.setScope v)).reasons=s.reasons := ⟨rfl,rfl,rfl⟩
+
+theorem control_cuts_retain_reasons (laws : Laws) (s : State) (v : Bool) :
+    (advance laws s (.setPermission v)).reasons=s.reasons ∧
+    (advance laws s (.setDelivery v)).reasons=s.reasons := ⟨rfl,rfl⟩
+
+theorem no_imported_authorization (s : State) (h : s.imported=none) : ¬ Authorized s := by
+  rintro ⟨_,_,b,hb,_⟩
+  rw [h] at hb
+  cases hb
+
+theorem scope_cut_blocks_work (s : State) (av : Bool) (h : s.scope=false) :
+    ¬ Enabled s (.execute (.work av)) := by
+  rintro ⟨_,_,_,hs|ha⟩
+  · cases (core s).phase <;> simp [Settlement] at hs
+  · rcases ha with ⟨_,_,b,_,hb,_⟩
+    simp [supported,h] at hb
+
+theorem settlement_after_cut (s : State) (laws : Laws) (channel : Bool)
+    (hv : RecipientIdentification.Valid (core s)) (he : RecipientIdentification.Enabled (core s) (.acquire channel))
+    (recipient : RecipientIdentification.targetOf (core s).phase=.recipient) :
+    Step laws s (.execute (.acquire channel)) (advance laws s (.execute (.acquire channel))) := by
+  refine ⟨⟨hv,he,recipient,Or.inl ?_⟩,rfl⟩
+  rcases he with ⟨⟨target,r,hp⟩,_⟩
+  simp [Settlement,hp]
+
+theorem execute_projects {laws : Laws} {s t : State} {e : RecipientIdentification.Event}
+    (h : Step laws s (.execute e) t) : RecipientIdentification.Step laws (core s) e (core t) := by
+  rcases h with ⟨he,rfl⟩
+  refine ⟨he.1,he.2.1,?_⟩
+  cases e <;> rfl
+
+theorem voluntary_projects {laws : Laws} {s t : State} {e : RecipientIdentification.Event}
+    (h : Step laws s (.voluntary e) t) : RecipientIdentification.Step laws (core s) e (core t) := by
+  rcases h with ⟨he,rfl⟩
+  refine ⟨he.1,he.2.1,?_⟩
+  cases e <;> rfl
+
+theorem nonrecording_port_retains_archive (laws : Laws) (s : State) (e : RecipientIdentification.Event) :
+    (advance laws s (.execute e)).reasons.reader.archive=s.reasons.reader.archive ∧
+    (advance laws s (.execute e)).reasons.reader.world.records=s.reasons.reader.world.records ∧
+    (advance laws s (.execute e)).reasons.reader.world.world.next=s.reasons.reader.world.world.next ∧
+    (advance laws s (.execute e)).reasons.reader.world.world.current=s.reasons.reader.world.world.current := by
+  cases e <;> exact ⟨rfl,rfl,rfl,rfl⟩
+
+theorem exhausted_recorder_cannot_project (laws : Laws) (w : RecipientArchive.World)
+    (h : w.next=3) (t : RecipientArchive.World) :
+    ¬ RecipientArchive.Step laws w (.core (.sense .recipient)) t := by
+  rintro ⟨⟨_,hb⟩,_⟩
+  have hn:=hb rfl
+  omega
+
+theorem step_material {laws : Laws} {s t : State} {e : Event}
+    (h : Step laws s e t) : material t=material s := by
+  rcases h with ⟨_,rfl⟩
+  cases e with
+  | install => cases hl : s.latch <;> simp only [advance,hl] <;> rfl
+  | execute e | voluntary e => cases e <;> rfl
+  | _ => rfl
+
+theorem step_energy {laws : Laws} {s t : State} {e : Event}
+    (h : Step laws s e t) : energy t+charge laws s e=energy s := by
+  rcases h with ⟨he,rfl⟩
+  cases e with
+  | fund => simp [advance,energy,core,setCore,RecipientIdentification.energy,PaidRecipientReasons.energy,charge]; omega
+  | fundReader => simp [advance,energy,core,PaidRecipientReasons.energy,charge]; omega
+  | read =>
+      have hf:=he.2.2
+      simp [advance,energy,core,debit,setCore,RecipientIdentification.energy,PaidRecipientReasons.energy,charge] at *
+      omega
+  | install =>
+      rcases he.2.2.2 with ⟨b,hb,_⟩
+      have hf:=he.2.2.1
+      simp [advance,hb,energy,core,setCore,importCore,RecipientIdentification.energy,PaidRecipientReasons.energy,charge] at *
+      omega
+  | reason e =>
+      have hp : PaidRecipientReasons.Step s.reasons e (PaidRecipientReasons.advance s.reasons e):=⟨he,rfl⟩
+      have hh:=PaidRecipientReasons.step_ledger hp
+      have hw:=PaidRecipientReasons.step_preserves_world hp
+      simp only [advance,clear,energy,core,charge]
+      rw [hw]
+      omega
+  | execute e =>
+      have hh:=RecipientIdentification.step_energy (execute_projects (show Step laws s (.execute e) _ from ⟨he,rfl⟩))
+      cases e <;> simp_all [advance,stepCore,clear,setCore,core,energy,charge,RecipientIdentification.energy,PaidRecipientReasons.energy]
+      all_goals omega
+  | voluntary e =>
+      have hh:=RecipientIdentification.step_energy (voluntary_projects (show Step laws s (.voluntary e) _ from ⟨he,rfl⟩))
+      cases e <;> simp_all [advance,stepCore,clear,setCore,core,energy,charge,RecipientIdentification.energy,PaidRecipientReasons.energy]
+      all_goals omega
+  | setScope v => simp [advance,clear,energy,core,charge]
+  | setPermission v => simp [advance,energy,core,charge]
+  | setDelivery v => simp [advance,energy,core,charge]
+
+theorem trace_energy {laws : Laws} {s t : State} {es : List Event}
+    (h : Generative.Trace (process laws) s es t) : energy t+spent laws s es=energy s := by
+  induction h with
+  | nil => simp [spent]
+  | cons he _ ih =>
+      have hh:=step_energy he
+      rcases he with ⟨_,rfl⟩
+      simp only [spent]
+      omega
+
+theorem trace_run {laws : Laws} {s t : State} {es : List Event}
+    (h : Generative.Trace (process laws) s es t) : t=run laws s es := by
+  induction h with
+  | nil => rfl
+  | cons he _ ih => rcases he with ⟨_,rfl⟩; exact ih
+
+theorem trace_execute_projects {laws : Laws} {s t : State} {es : List RecipientIdentification.Event}
+    (h : Generative.Trace (process laws) s (es.map Event.execute) t) :
+    Generative.Trace (RecipientIdentification.process laws) (core s) es (core t) := by
+  induction es generalizing s with
+  | nil => cases h; exact .nil _
+  | cons e es ih =>
+      cases h with
+      | cons he ht => exact .cons (execute_projects he) (ih ht)
+
+/- Two independent contracts: genuine paid reason provenance determines the
+imported command; a feasible old-core trial and available source opportunity
+supply the physical effect. No positive receipt or motivation is fabricated. -/
+theorem semantic_import_then_receipt {laws : Laws} (s : State) (b : Bool) {G : Prop}
+    (meaning : G ∧ RecipientReasons.Compatible (lookup laws .recipient) b)
+    {t : RecipientIdentification.State} {channel : Bool}
+    (execution : Generative.Trace (RecipientIdentification.process laws) (importCore s b)
+      (RecipientIdentification.trial .recipient true channel) t) :
+    G ∧ t.patient=(core s).patient+10 ∧
+    RecipientIdentification.actor (RecipientIdentification.registers t.hardware)=RecipientIdentification.actor (RecipientIdentification.registers (core s).hardware) := by
+  have hs:=import_qualification_sound s b _ meaning.2
+  have hp:=RecipientIdentification.paid_qualified_use execution hs (import_is_typed s b).2.2
+  have ha:=RecipientIdentification.trial_actor_preserved laws (importCore s b) .recipient true channel
+  rw [←RecipientIdentification.trace_run execution] at ha
+  refine ⟨meaning.1,hp,?_⟩
+  exact ha.trans (import_is_typed s b).2.1
+
+
+def commandNode : Bool → ReasonReplay.Node | false => .p | true => .q
+
+theorem route_is_member {m : ReasonReplay.Mask} {b : Bool} (h : route m=some b) :
+    m.has (commandNode b) := by
+  rcases m with ⟨p,q⟩
+  cases p <;> cases q <;> cases b <;> simp_all [route,commandNode,ReasonReplay.Mask.has]
+
+theorem supported_is_current {s : State} {b : Bool} (h : supported s=some b) :
+    PaidRecipientReasons.CurrentPublication s.reasons ∧ s.scope=true ∧ s.permission=true ∧
+    route s.reasons.working=some b := by
+  unfold supported at h
+  split at h
+  · rename_i hc
+    exact ⟨hc.1,hc.2.1,hc.2.2,h⟩
+  · cases h
+
+theorem command_meaning {G : Prop} {z b : Bool} :
+    RecipientReasons.Meaning G z (commandNode b) ↔ G ∧ RecipientReasons.Compatible z b := by
+  cases b <;> rfl
+
+theorem imported_core_exact {laws : Laws} {s u : State}
+    (hi : Step laws s .install u) :
+    ∃ b, supported s=some b ∧ core u=importCore s b := by
+  rcases hi with ⟨he,rfl⟩
+  rcases he.2.2.2 with ⟨b,hb,hs⟩
+  exact ⟨b,hs,by simp [advance,hb,core,setCore]⟩
+
+theorem paid_import_and_execution {laws : Laws} {s u t : State} {G : Prop}
+    (sound : ∀ v, s.reasons.working.has v → RecipientReasons.Meaning G (lookup laws .recipient) v)
+    (hi : Step laws s .install u) {channel : Bool}
+    (ht : Generative.Trace (process laws) u
+      ((RecipientIdentification.trial .recipient true channel).map Event.execute) t) :
+    G ∧ (core t).patient=(core s).patient+10 ∧
+    RecipientIdentification.actor (RecipientIdentification.registers (core t).hardware)=
+      RecipientIdentification.actor (RecipientIdentification.registers (core s).hardware) := by
+  rcases imported_core_exact hi with ⟨b,hs,hc⟩
+  have hm:=sound (commandNode b) (route_is_member (supported_is_current hs).2.2.2)
+  have he:=trace_execute_projects ht
+  rw [hc] at he
+  exact semantic_import_then_receipt s b (command_meaning.mp hm) he
+
+/- Actual archived producer history, both paid reason cycles, paid import, and
+actual retained-core execution are joined here. No fabricated publication flag
+is accepted as the semantic provenance premise. -/
+theorem actual_archive_replay_import_execution {laws : Laws}
+    {backing : Nat → Bool} {addresses budget cells : Nat}
+    {w : RecipientArchive.World} {a : Archive}
+    {events : List (EmissionArchive.Event RecipientArchive.World RecipientArchive.Event RecipientArchive.Header)}
+    (ready : w.core.phase=.ready)
+    (history : Generative.Trace (EmissionArchive.process (RecipientArchive.producer laws backing) addresses)
+      (EmissionArchive.empty w budget cells) events a)
+    (context : Bool) {G : Prop} (root : G) {p s u t : State}
+    (joined : p.reasons=ReasonReplayBridge.final
+      (PaidArchiveReader.run (PaidArchiveReader.initial a a.records context 20) PaidArchiveReader.word) 28)
+    (paidRead : Generative.Trace (process laws) p [.fund,.read] s)
+    (hi : Step laws s .install u) {channel : Bool}
+    (ht : Generative.Trace (process laws) u
+      ((RecipientIdentification.trial .recipient true channel).map Event.execute) t) :
+    G ∧ (core t).patient=(core s).patient+10 ∧
+    RecipientIdentification.actor (RecipientIdentification.registers (core t).hardware)=
+      RecipientIdentification.actor (RecipientIdentification.registers (core s).hardware) := by
+  apply paid_import_and_execution _ hi ht
+  intro v hm
+  have hmasks : s.reasons.working=p.reasons.working := by
+    rw [trace_run paidRead]
+    rfl
+  rw [hmasks,joined] at hm
+  exact ReasonReplayBridge.actual_archive_to_cold_replayed_reasons ready history context root hm
+
+theorem partial_packet_preserved (laws : Laws) (s : State) (h : s.sourceReserve<10) :
+    (core (advance laws s .fund)).packets=(core s).packets ∧
+    (advance laws s .fund).sourceReserve=s.sourceReserve := by
+  simp [advance,core,setCore,Nat.div_eq_of_lt h,Nat.mod_eq_of_lt h]
+
+theorem original_recipient_balance_cannot_fund_import (s : State)
+    (hf : (core s).hardware.fuel=0) (n : Nat) :
+    ¬ Enabled (setCore s { core s with patient:=n }) .install := by
+  simp [Enabled,core,setCore] at *
+  omega
+
+theorem step_archive_bytes {laws : Laws} {s t : State} {e : Event}
+    (h : Step laws s e t) : t.reasons.reader.archive=s.reasons.reader.archive := by
+  rcases h with ⟨he,rfl⟩
+  cases e with
+  | install => cases hl : s.latch <;> simp only [advance,hl] <;> rfl
+  | reason e => exact PaidRecipientReasons.step_preserves_archive ⟨he,rfl⟩
+  | execute e | voluntary e => cases e <;> rfl
+  | _ => rfl
+
+theorem trace_archive_bytes {laws : Laws} {s t : State} {es : List Event}
+    (h : Generative.Trace (process laws) s es t) : t.reasons.reader.archive=s.reasons.reader.archive := by
+  induction h with
+  | nil => rfl
+  | cons he _ ih => exact ih.trans (step_archive_bytes he)
+
+theorem exact_core_trial_budget (laws : Laws) (s : RecipientIdentification.State)
+    (hv : RecipientIdentification.Valid s) (hp : s.phase=.ready) (ha : s.active=true)
+    (available channel : Bool) :
+    (∃ t, Generative.Trace (RecipientIdentification.process laws) s
+      (RecipientIdentification.trial .recipient available channel) t) ↔
+      8≤s.hardware.fuel ∧ 0<s.packets := by
+  constructor
+  · rintro ⟨t,ht⟩
+    cases ht with
+    | cons he _ => exact ⟨he.2.1.2.2.2,he.2.1.2.2.1⟩
+  · rintro ⟨hf,hn⟩
+    exact ⟨_,RecipientIdentification.trial_exists laws s .recipient available channel hv hp ha hf hn⟩
+
+theorem prescribed_import_then_rent_requires_ten {laws : Laws} {s u v : State}
+    (ht : Generative.Trace (process laws) s [.read,.install] u)
+    (hr : Step laws u (.execute .rent) v) : 10≤(core s).hardware.fuel := by
+  cases ht with
+  | cons hread tail =>
+      cases tail with
+      | cons hi done =>
+          cases done
+          rcases imported_core_exact hi with ⟨b,_,hc⟩
+          have hf := (execute_projects hr).2.1.2.2.2
+          rw [hc] at hf
+          rcases hread with ⟨_,rfl⟩
+          simp [importCore,advance,debit,setCore,core] at hf
+          unfold core
+          omega
+
+theorem trace_material {laws : Laws} {s t : State} {es : List Event}
+    (h : Generative.Trace (process laws) s es t) : material t=material s := by
+  induction h with
+  | nil => rfl
+  | cons he _ ih => exact ih.trans (step_material he)
+
+theorem recipient_port_cannot_sense_actor (s : State) :
+    ¬ Enabled s (.execute (.sense .actor)) ∧ ¬ Enabled s (.voluntary (.sense .actor)) := by
+  simp [Enabled,RecipientOnly]
+
+theorem executed_work_targets_recipient {laws : Laws} {s t : State} {av : Bool}
+    (h : Step laws s (.execute (.work av)) t) :
+    RecipientIdentification.targetOf (core s).phase=.recipient := h.1.2.2.1
+
+theorem executed_recipient_work_has_no_actor_credit {laws : Laws} {s t : State} {av : Bool}
+    (h : Step laws s (.execute (.work av)) t) :
+    (core t).hardware.fuel+3=(core s).hardware.fuel := by
+  have hp:=execute_projects h
+  have ht:=executed_work_targets_recipient h
+  rcases hp.2.1 with ⟨⟨target,hphase⟩,hf,_⟩
+  simp only [hphase,RecipientIdentification.targetOf] at ht
+  subst target
+  rw [hp.2.2]
+  simp [RecipientIdentification.advance,hphase,RecipientIdentification.targetOf,RecipientIdentification.credit]
+  omega
+
+end RecipientAction
+
+#print axioms RecipientAction.core_set
+#print axioms RecipientAction.import_is_typed
+#print axioms RecipientAction.import_qualification_sound
+#print axioms RecipientAction.read_does_not_observe_receipt
+#print axioms RecipientAction.reason_interleaving_clears
+#print axioms RecipientAction.scope_intervention_clears
+#print axioms RecipientAction.control_cuts_retain_reasons
+#print axioms RecipientAction.no_imported_authorization
+#print axioms RecipientAction.scope_cut_blocks_work
+#print axioms RecipientAction.settlement_after_cut
+#print axioms RecipientAction.execute_projects
+#print axioms RecipientAction.voluntary_projects
+#print axioms RecipientAction.nonrecording_port_retains_archive
+#print axioms RecipientAction.exhausted_recorder_cannot_project
+#print axioms RecipientAction.step_material
+#print axioms RecipientAction.step_energy
+#print axioms RecipientAction.trace_energy
+#print axioms RecipientAction.trace_run
+#print axioms RecipientAction.trace_execute_projects
+#print axioms RecipientAction.semantic_import_then_receipt
+#print axioms RecipientAction.route_is_member
+#print axioms RecipientAction.supported_is_current
+#print axioms RecipientAction.command_meaning
+#print axioms RecipientAction.imported_core_exact
+#print axioms RecipientAction.paid_import_and_execution
+#print axioms RecipientAction.actual_archive_replay_import_execution
+#print axioms RecipientAction.partial_packet_preserved
+#print axioms RecipientAction.original_recipient_balance_cannot_fund_import
+#print axioms RecipientAction.step_archive_bytes
+#print axioms RecipientAction.trace_archive_bytes
+#print axioms RecipientAction.exact_core_trial_budget
+#print axioms RecipientAction.prescribed_import_then_rent_requires_ten
+#print axioms RecipientAction.trace_material
+#print axioms RecipientAction.recipient_port_cannot_sense_actor
+#print axioms RecipientAction.executed_work_targets_recipient
+#print axioms RecipientAction.executed_recipient_work_has_no_actor_credit

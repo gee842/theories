@@ -1,0 +1,8 @@
+{
+  "status": "previous_kernel_pass_preserved_not_final_contract_acceptance",
+  "previous_receipt_sha256": "e0cb6b7ca37f32b3d124be3351f5dcce172061e4b94f3bfc0b7f274cefe0a967",
+  "preserved_receipt": "1791255132840263000/receipt.json",
+  "finding": "Protocol invalidates an unconsumed read/assessment on any binding change. Permission/delivery setters incorrectly preserved the port authorization; an off/on detour could reuse it. No selected numerical case contains that detour.",
+  "correction": "Permission and delivery setters now invalidate non-idle port authorization and clear the port read command, as scope already did. A first idle read remains paid then validated. Prepaid post-work acquisition/write settlement remains admitted by the inherited settlement exception. New regression and fresh build required.",
+  "numerical_menu_changed": false
+}

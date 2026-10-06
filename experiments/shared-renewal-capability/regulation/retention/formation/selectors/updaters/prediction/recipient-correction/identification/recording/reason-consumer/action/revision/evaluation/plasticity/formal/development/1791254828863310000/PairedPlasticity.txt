@@ -1,0 +1,184 @@
+PairedPlasticity.lean:240:16: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  p ≥ 0
+  0 ≤ o ≤ 3
+  n ≥ 0
+  n + p ≥ 0
+  m ≥ 0
+  m - n ≥ -2
+  m ≥ 0
+  l ≥ 0
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a + b - h - n - p ≥ 1
+  a + b + c + d + e + f - g - h - i - j - k - l - 2*n - p ≤ -2
+where
+ a := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).training
+ b := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).revision
+ c := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).idleFuel
+ d := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).ownSource.total
+ e := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).recipientSource.total
+ f := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).idleSource
+ g := ↑(FreshRevision.energy s.parent)
+ h := ↑s.revision
+ i := ↑s.idleFuel
+ j := ↑s.ownSource.total
+ k := ↑s.recipientSource.total
+ l := ↑s.idleSource
+ m := ↑(fuel s + transfer s - 2)
+ n := ↑(transfer s)
+ o := ↑s.count
+ p := ↑(s.training - transfer s)
+PairedPlasticity.lean:240:16: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  p ≥ 0
+  o ≥ 4
+  n ≥ 0
+  n + p ≥ 0
+  m ≥ 0
+  m - n ≥ -2
+  m ≥ 0
+  l ≥ 0
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a + b - h - n - p ≥ 1
+  a + b + c + d + e + f - g - h - i - j - k - l - 2*n - p ≤ -2
+where
+ a := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).training
+ b := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).revision
+ c := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).idleFuel
+ d := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).ownSource.total
+ e := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).recipientSource.total
+ f := ↑(withBalances s (fuel s + transfer s - 2) (patient s)).idleSource
+ g := ↑(FreshRevision.energy s.parent)
+ h := ↑s.training
+ i := ↑s.idleFuel
+ j := ↑s.ownSource.total
+ k := ↑s.recipientSource.total
+ l := ↑s.idleSource
+ m := ↑(fuel s + transfer s - 2)
+ n := ↑(transfer s)
+ o := ↑s.count
+ p := ↑(s.revision - transfer s)
+PairedPlasticity.lean:246:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  q ≥ 0
+  p ≥ 0
+  o ≥ 0
+  n ≥ 0
+  m ≥ 0
+  l ≥ 0
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  c + d + e + f + h + i - k - l - m - n - o - p - q ≤ -1
+  c + d + e + f + g + h + i - k - l - m - n - o - p - 2*q ≥ 0
+  c + d + e + f + g + h + i - k - l - m - n - o - p - q ≥ 0
+  a ≥ 0
+  a ≥ 0
+  a + q ≥ 0
+where
+ a := ↑(s.ownSource.get s.count - receipt b)
+ c := ↑(FreshRevision.energy (withBalances s (fuel s + receipt b) (patient s)).parent)
+ d := ↑(withBalances s (fuel s + receipt b) (patient s)).training
+ e := ↑(withBalances s (fuel s + receipt b) (patient s)).revision
+ f := ↑(withBalances s (fuel s + receipt b) (patient s)).idleFuel
+ g := ↑(withBalances s (fuel s + receipt b) (patient s)).ownSource.total
+ h := ↑(withBalances s (fuel s + receipt b) (patient s)).recipientSource.total
+ i := ↑(withBalances s (fuel s + receipt b) (patient s)).idleSource
+ j := ↑(fuel s)
+ k := ↑(FreshRevision.energy s.parent)
+ l := ↑s.training
+ m := ↑s.revision
+ n := ↑s.idleFuel
+ o := ↑s.recipientSource.total
+ p := ↑s.idleSource
+ q := ↑(receipt b)
+PairedPlasticity.lean:252:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  r ≥ 0
+  q ≥ 0
+  p ≥ 0
+  o ≥ 0
+  n ≥ 0
+  m ≥ 0
+  l ≥ 0
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  c + d + e + f + g + i - l - m - n - o - p - q - r ≤ -1
+  c + d + e + f + g + h + i - l - m - n - o - p - q - 2*r ≥ 0
+  c + d + e + f + g + h + i - l - m - n - o - p - q - r ≥ 0
+  a ≥ 0
+  a ≥ 0
+  a + r ≥ 0
+where
+ a := ↑(s.recipientSource.get s.count - receipt b)
+ c := ↑(FreshRevision.energy (withBalances s (fuel s) (patient s + receipt b)).parent)
+ d := ↑(withBalances s (fuel s) (patient s + receipt b)).training
+ e := ↑(withBalances s (fuel s) (patient s + receipt b)).revision
+ f := ↑(withBalances s (fuel s) (patient s + receipt b)).idleFuel
+ g := ↑(withBalances s (fuel s) (patient s + receipt b)).ownSource.total
+ h := ↑(withBalances s (fuel s) (patient s + receipt b)).recipientSource.total
+ i := ↑(withBalances s (fuel s) (patient s + receipt b)).idleSource
+ j := ↑(fuel s)
+ k := ↑(patient s)
+ l := ↑(FreshRevision.energy s.parent)
+ m := ↑s.training
+ n := ↑s.revision
+ o := ↑s.idleFuel
+ p := ↑s.ownSource.total
+ q := ↑s.idleSource
+ r := ↑(receipt b)
+'PairedPlasticity.Sources.set_account' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.runnable_trace' depends on axioms: [propext]
+'PairedPlasticity.update_bounded' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.transmission_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PairedPlasticity.conventional_equality' depends on axioms: [propext]
+'PairedPlasticity.balances_account' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.old_account' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.fuel_account' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.step_energy' depends on axioms: [propext, sorryAx, Quot.sound]
+'PairedPlasticity.trace_energy' depends on axioms: [propext, sorryAx, Quot.sound]
+'PairedPlasticity.step_material' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.trace_material' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.step_capacity' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.trace_capacity' depends on axioms: [propext, Quot.sound]
+'PairedPlasticity.binding_uses_acquired_pair' depends on axioms: [propext]
+'PairedPlasticity.no_second_binding' depends on axioms: [propext]
+'PairedPlasticity.missing_is_not_acquired' depends on axioms: [propext]
+'PairedPlasticity.no_recipient_actor_source_credit' depends on axioms: [propext]
+'PairedPlasticity.trial_projects' depends on axioms: [propext]
+'PairedPlasticity.no_new_rent_after_consumption' depends on axioms: [propext]
+'PairedPlasticity.settlement_survives_scope_cut' depends on axioms: [propext]
+'PairedPlasticity.scope_cut_invalidates_only_application' depends on axioms: [propext]
