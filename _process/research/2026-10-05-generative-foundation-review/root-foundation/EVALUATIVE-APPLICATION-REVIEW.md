@@ -1,0 +1,123 @@
+# Acquired evaluation and warranted application: independent review
+
+6 October 2026. AI-authored interface and assumption review. **Status: accepted as a conditional application and interpretation study; the causal evaluator remains prospective and unverified by this review.** The producer's reported fields and prices below are an unfrozen contract, not independently verified executions. This review adds no experiment, ethical axiom, generic claims ledger or scientific rerun. It owns only this file; the evaluator, application contract, mathematical account and canonical statement have separate owners. Sections 7–8 retain the earlier review decisions; Section 9 records final document acceptance.
+
+## 1. The precise contribution worth accepting
+
+The named connection is **an actually acquired operational evaluation → a warranted application to a particular recipient → an actual paid response**. Causal acquisition, normative warrant and actual realization are distinct relations. The proposed evaluator can establish how a previously absent coefficient forms from self-consequences and later influences a recipient choice. The application adapter must identify when that particular choice also conforms to independently defended recipient-ground, authority and comparison premises.
+
+Much of the general mathematics is already present. [The finite transfer contract](HUIGEN-FULL-THEORY-AUDIT.md#applicability-transfer-and-costly-choice) states the five interpretive entries, the positive-weight/cost countermodel, qualitative dominance and the requirement to consider the complete declared feasible menu. [Finite decision mathematics](../../2026-10-05-revisable-concern/settlement/normative/decision-math.md) supplies robust dominance, its nonempty remainder, identity consistency and information obstructions. [Reason transport](HUIGEN-REASON-TRANSPORT.md#15-authorization-requires-more-than-a-beneficial-endpoint) supplies the evidence-class permission and common-choice criteria. [Claims through execution](CLAIM-EXECUTION-MATH.md) already separates admitted claims, partial certificates, permission, actual paid effects and assessment horizons. Those results should be used and credited, not introduced as new discoveries here.
+
+The additional work is a **producer-specific semantic and resource map**, checked against the actual acquired state and chosen action. It must expose what the physical record establishes, what the ethical interpretation supplies, what remains unknown, and what the reached trace actually delivers. A further generic implication saying that sound premises imply a sound conclusion would not by itself close this mapping.
+
+## 2. Prospective producer fields and their limited meanings
+
+The coordinating researcher reports the following unfrozen proposal. The eventual protocol and implementation remain authoritative; any change must be reflected in the final mapping.
+
+| Reported field or transition | Prospective operational meaning | What it does not yet establish |
+|---|---|---|
+| Initially absent coefficient, represented by `n=0`, with `w=n/8` | A retained operational sensitivity that can change through subsequent paid updates | A first-person experience, a moral weight or a justified interpersonal conversion |
+| Three native self operations, each paying two units and returning two or zero | Actual consequences for the same actor's fuel account | That fuel losses exhaust the actor's relevant interests |
+| `Y=(beforefuel-afterreturn)/2` | Loss relative to the operation's own two-unit bill, before the separate observation/write charges | An independently warranted measurement of suffering or recipient significance |
+| Observation and write cost one unit each; `n'=floor(n/2)+4Y` | Paid information acquisition and a bounded update from the actual operation | A normatively valid learning target merely because the update is causal |
+| Three observed losses give `0→4→6→7` | The hand-derived candidate trajectory under the reported recurrence | Its actual reachability, probability or sufficient total funding in the producer |
+| Shared recipient choice uses `10n>64`, with recipient trial cost eight | The operational comparison `10w>8`; for integer `0≤n≤7`, only `n=7` clears it | That the proxy ten and the physical price eight are normatively commensurable |
+| Evaluation costs two and replaces the old two-unit import step | A proposed replacement within a continuing paid history | A free addition, or permission to reuse the original import authorization |
+| Equal factual/private opportunities in shared and filtered variants | A proposed contrast isolating recipient influence if the actual bills and feasible menus match | Formation or authority of the shared transfer architecture itself |
+| Entrance at the actual `RevisionWitness.consumed` state before the old action | A proposed use of the inherited core, fresh facts and remaining resources | A fresh reset of fuel, opportunity, delivery, permission or memory |
+
+The recurrence observation boundary matters. If `afterreturn` were read after the extra observation/write expenses, an otherwise loss-free operation could be classified as a loss and the stated update would have a different meaning. A failed or unaffordable observation must not be silently replaced with a zero, and a write that has not been paid cannot count as an acquired update. The exact native-operation, read and write phases are therefore part of the causal mapping, not cosmetic implementation detail.
+
+The threshold above is an algebraic reading of the proposed controller. It is neither an empirical estimate nor a justified sacrifice margin. A causal explanation of why `n` reaches seven does not show why that numerical state correctly ranks helping over every private alternative. A positive `g*w` supplies operational influence when used by the mechanism; even its sign does not establish the relevant normative ordering. The existing transfer contract already proves that underdetermination.
+
+The prospective inherited technical scope, permission and delivery fields must retain their actual meanings. Technical permission is not patient consent or legitimate representative authority. The imported factual conclusion identifies command efficacy under its declared observation/use law; it does not independently identify the recipient good or its ethical weight.
+
+## 3. Nonempty compatible applications and actual coverage
+
+Let `d` denote the actual accessible record and inherited physical state at application time. A retained application class `M(d)` may contain alternative patient-good mappings, use-time factual conditions, relevant authority histories and competing consequences. Its construction must have an evidential and argumentative basis fixed independently of whether the evaluator helps.
+
+Two conditions are indispensable for a conditional guarantee:
+
+1. `M(d)` is nonempty. Universal certification over an empty class is not an achieved application.
+2. The actual application belongs to the class under the declared calibration, interpretation and normative premises. Merely including one favorable possibility establishes neither this coverage nor warrant.
+
+These conditions do not supply an oracle for which ethical account is ultimately correct. They delimit a conditional claim relative to independently defended premises. A resource-only realization must remain a resource-support interpretation unless additional evidence and argument establish an experiential or other patient-good interpretation. An analyst cannot choose the favorable interpretation after seeing the action and then call agreement a test.
+
+The same patient, action, context and assessment interval must survive every stage. Where a datum is absent, misleading or stale, keep the corresponding alternatives or unknown status rather than importing the evaluator's hidden environment parameters. A claimed stable relation must cover the observation-to-use interval. An interpretation can retain patient standing while rejecting a particular command, transfer map or comparative ranking.
+
+## 4. Correct quantifiers for comparison and permission
+
+Different certificates support different conclusions. The application must name the one it uses.
+
+**Survival under the supplied comparisons.** The existing finite decision remainder removes actions that are weakly worse in every retained model and strictly worse in at least one. Membership says the supplied robust comparison has not excluded the action. Choosing from that remainder is already an explicit weak normative commitment in the prior result. It does not establish uniquely right action, complete justification or universal worldwise optimality.
+
+**Uniform license.** Let `L(m)` contain the actions licensed by the independently supplied decision rule in interpretation `m`, incorporating the relevant permission and comparative conditions. A fixed action is uniformly licensed exactly when it belongs to `∩_{m∈M(d)} L(m)`. Existence of a common licensed action requires a nonempty intersection. Selecting a different favorable action in each interpretation proves only `∀m ∃a`; the implemented evidence-based choice needs one action meeting the advertised guarantee, `∃a ∀m`.
+
+This stronger certificate is an available scoped claim, not a newly imposed universal ethical rule. A partial reason order may deliberately leave several options unresolved; additional authority or a defensible decision rule is needed before calling each maximal option fully justified. The certificate should retain a weaker status when that is all the premises support.
+
+**Counterexample to exchanging the order of operations.** Take two indistinguishable interpretations and two actions, help and abstain. The first licenses only help; the second licenses only abstention. Their common reason order contains neither strict comparison, so both can survive the robust-dominance remainder. Their worldwise licensed sets have empty intersection. Computing maximal actions after intersecting the orders cannot certify a uniformly licensed choice.
+
+**Unknown authority.** If one compatible history contains a valid intervention grant and another lacks any sufficient authority, the benefit forecast does not remove the ambiguity. Conversely, lack of established intervention permission does not establish that abstention is fully justified: a separately admitted assistance requirement could constrain it. Retain distinct statuses for possible permission, uniform permission, physical feasibility and the complete comparative verdict. An empty uniform-license set is failure of this guarantee, not a proof that every actual action is impermissible.
+
+If intervals are used for a normative magnitude, their bounds require their own justification. An interval learned from private fuel outcomes is not automatically an interval of justified recipient weights. For a declared scalar comparison, endpoint checks can audit a supplied interval; they neither produce that interval nor show that the scalar representation is morally adequate. Equalities and ties must follow the stated decision rule rather than inherit the producer's strict numerical threshold by default.
+
+## 5. Full menu, costs and use-time realization
+
+The comparison must cover the complete **declared** physical menu, including abstention, private uses, suppression or bypass where available under that law. A verdict against one paid comparator is not a verdict against every alternative. This requirement does not enlarge the menu to every imaginable apparatus; it requires an honest account of the options actually claimed available.
+
+Physical expense and normative sacrifice are not identical. Expense can be real while causing no additional relevant loss under a defended bounded comparison; conversely, a small fuel difference can remove a necessary later capacity. Treating unused terminal fuel as morally worthless because no later task was simulated would conceal an additional normative and horizon premise. Relevant future burdens must be included or the claim explicitly restricted. “No competing sacrifice” is not “no physical bill,” and a dominated-cost comparison is not established by describing all expenditures as maintenance.
+
+Check prefix affordability, actual stocks and inherited opportunities at the chosen entrance. A future return cannot prepay an earlier observation, update, port replacement or action. Costs already sunk in both compared branches must not be charged again as a differential reason; unshared costs must not disappear from the counterfactual. If the shared and filtered architectures have different prices or action access, report their combined effect unless a matched comparison isolates evaluation.
+
+A supported intended command is not an executed response. The final map must connect its patient and meaning to a reached same-patient action under the actual delivery, command, source and payment law. Where execution fails, retain the action's failed or unavailable status without erasing any independently admitted patient reason. The claims-ledger work already supplies the relevant distinction between unfulfilled claims and refuted grounds.
+
+## 6. External certification and causal recognition
+
+This adapter is a proof or audit interface unless it actually constructs additional machinery. A sound external interpretation can show that the evaluator's action conforms to defended premises at the stated scope. It cannot by itself show that the evaluator represents those premises, recognizes their authority, reasons through the application, or can revise them after criticism.
+
+The causal mechanism may establish that admitting recipient consequences changes selection. That is stronger than accidental behavioral agreement, but it still does not identify a representation of legitimate authority or a normative ground unless the state and update law actually realize those roles. A policy can choose the warranted act for an unrelated cue or a mistaken reason. Such a history can have a warranted outcome without constituting the claimed process of reason recognition.
+
+Similarly, distinguish a reusable factual warrant from a consumable command authorization. A true record need not become false after one use. A token enabling one physical action must not authorize additional trials without the required new binding and payment. Conversely, consuming an action token must not be described as extinguishing the patient's standing. The prior fresh-revision repair makes this a concrete interface risk, not a hypothetical demand for another controller.
+
+No charge is owed for a mathematical predicate merely because the reviewer evaluates it. If the study claims an installed runtime certifier, its access, storage, computation and influence then need a physical account. The present adapter should not silently claim that stronger mechanism.
+
+## 7. Prospective adversarial review and acceptance boundary
+
+Final review should inspect the producer-specific mapping and its own declared checks against these discriminating cases:
+
+| Case | Incorrect conclusion it must prevent |
+|---|---|
+| Empty compatible class or favorable singleton selected after the outcome | Vacuous or circular certification |
+| Same acquired coefficient and physical receipt, incompatible patient-good mappings | Receipt or transfer treated as a sufficient ethical interpretation |
+| Opposing worldwise rankings over the same available actions | Robust survival presented as uniform license |
+| Unresolved grant, withdrawal or competing authority | Technical enablement presented as legitimate authority |
+| Helping beats a paid comparator but loses to an available private alternative | Pairwise success presented as a full-menu verdict |
+| Fuel cost destroys a relevant future capacity omitted from the comparison | Unmodeled opportunity cost treated as zero |
+| Accurate past evidence with an unsupported use-time stability assumption | Historical support presented as current applicability |
+| Correct selected command without an enabled paid delivery | Intended protection presented as an actual recipient effect |
+| Reused authorization or reset entrance stocks | Two executions certified from one opportunity or payment |
+| Warranted output with no represented ground or criticism-sensitive uptake | External conformance presented as endogenous reason recognition |
+
+These are specification countercases, not claims that the unfinished producer has these defects. Existing tests can discharge them where their exact contracts apply; another apparatus or new generic theorem is not required by default.
+
+A satisfactory local result will preserve the actual acquisition/transfer/use history, bind it to nonempty and soundly covered application interpretations, name the exact comparison certificate, and establish its reached same-patient consequence under the actual bills. It may then report acquired recipient-sensitive control, or a conditional instance of warranted action when the independent patient, ground, authority and comparative premises apply. It must preserve unknown and failed cases, disclose proof-level versus runtime scope, and keep formation of the shared architecture, ultimate normative authority and universal favorable development separate.
+
+**Current decision: prospective only.** The outline is suitable for a producer-specific adapter. Final acceptance awaits the concrete contract, mathematical statement, canonical claims and authoritative producer-field mapping. No scientific sources were rerun or edited for this review.
+
+## 8. First document review
+
+The first complete [field contract](EVALUATIVE-APPLICATION-CONTRACT.md), [mathematical account](EVALUATIVE-APPLICATION-MATH.md) and [canonical application statement](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md) were read on 6 October. The field contract is accepted at its explicitly prospective source/interface scope. It distinguishes the actual consumed-state entrance, the two producers' different record encodings, gross lesson payments from net depletion, materials from energy, assessment metadata from installed storage, and receipt from a justified patient-good interpretation.
+
+The mathematical draft correctly computes the eight three-observation states, distinguishes common individual non-domination from the robust remainder, and preserves the full worldwise menu when authority or feasibility differs. Five targeted corrections were requested: retain the native-return-before-read/write timing instead of claiming all four lesson units precede the return; label 476 as energy with 60 material separate; use the actual `RevisionWitness.consumed` namespace; split the composition proof's robust-remainder and uniform-license cases; and make the common-menu hypothesis explicit where the prior N2 result is invoked. The canonical draft has no substantive premise omission identified; two scope precisions were requested for comparison with distinct permissible alternatives and the explicitly conditional status of the concluding application arrow.
+
+These are document reviews, not a rerun of the physical predecessor or acceptance of the unfrozen evaluator. Final document acceptance awaits the corrected versions. The causal construction and concrete patient/authority/competing-burden realization remain outside this review's presently accepted scope.
+
+## 9. Final document acceptance
+
+The corrected contract, mathematical account and canonical statement were reread on 6 October. All five mathematical corrections above were verified. The composition statement now also explicitly supplies authority for the selected action in every retained interpretation, matching the proof's instantiation of that premise; this is one sufficient conditional contract, not a claim that every ethical decision must meet that guarantee. The canonical comparison now concerns distinct alternatives in the feasible, permitted menu, and its concluding arrow is expressly a conditional application contract.
+
+**Accepted at the stated document scope.** The hand recurrence, eight-word table, robust-remainder/common-license distinction, varying-menu audit formula and conditional composition have no remaining issue identified in this review. The positive applications explicitly retain patient-good identification, legitimate authority, full competing burdens and the adopted comparison rule. The documents distinguish externally warranted action from a mechanism recognizing its ground. No premise-free ethical entailment, completed causal evaluator, physical joining of the two existing recipient producers, empirical validation or new generic decision theorem is claimed.
+
+The acquired-state fields remain prospective until their separately owned producer is frozen and checked. The present documents establish an inspectable mapping and conditional application result; they do not establish that the concrete physical witness already satisfies the patient-good, authority and competing-burden premises. If only native fuel sensitivity, transferred influence and receipt are realized, the warranted causal description remains acquired recipient-sensitive resource control. A stronger application needs the declared independent premises, not another favorable coefficient or a retrospective interpretation fitted to the action.
+
+Seven repository-relative links in this review resolve. Validation was read-only source and argument inspection plus local link existence, with edits confined to this owned review. No simulation, scientific calculation package or Lean build was rerun.
