@@ -1,0 +1,20 @@
+'Generative.AcquiredActivityScope.inherited_training_is_actual' depends on axioms: [propext]
+'Generative.AcquiredActivityScope.admitted_is_actual_trace' depends on axioms: [propext]
+'Generative.AcquiredActivityScope.legacy_activation_does_not_choose' does not depend on any axioms
+'Generative.AcquiredActivityScope.priming_changes_actual_continuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredActivityScope.ending_A_preserves_B' depends on axioms: [propext]
+'Generative.AcquiredActivityScope.admitted_native_is_original' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredActivityScope.primitive_history_preserved' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredActivityScope.primitive_products_preserved' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredActivityScope.step_preserves_history_and_products' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredActivityScope.trace_preserves_history_and_products' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredActivityScope.actual_empty_scope_has_different_products' depends on axioms: [propext]
+'Generative.AcquiredActivityScope.primitive_zero_common_retains_B' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredActivityScope.step_zero_common_retains_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.AcquiredActivityScope.depleted_common_blocks_every_B_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

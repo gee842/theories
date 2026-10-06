@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "scorer_sha256": "feedba73ce7d9cbc98a73563d7cda864131833bea4a2107b0490569eba188ba9",
+  "created_at_utc": "2026-10-06T02:50:18.082554+00:00",
+  "manifest_path": "/Users/ren/theories/experiments/agentdojo-evidence-boundary/correction-action/case-manifest.json",
+  "scientific_reanalysis": false,
+  "manifest_sha256": "18d62829d7ba3d47de8f43da8734557f5112b588e5ad429e98929a4d08017752",
+  "status": "pass",
+  "method": "in-memory copies of existing reports/receipts and artificial file metadata; no replay or model execution",
+  "tests": [
+    {
+      "name": "corrected_reference",
+      "expected_accept": true,
+      "observed_accept": true,
+      "pass": true
+    },
+    {
+      "name": "buggy_reference_in_withdrawn_case",
+      "expected_accept": true,
+      "observed_accept": true,
+      "pass": true
+    },
+    {
+      "name": "buggy_report_not_repaired",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "top_level_runtime_difference_allowed",
+      "expected_accept": true,
+      "observed_accept": true,
+      "pass": true
+    },
+    {
+      "name": "optional_candidate_metadata_absent",
+      "expected_accept": true,
+      "observed_accept": true,
+      "pass": true
+    },
+    {
+      "name": "historical_predicate_alteration_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "blanket_null_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "conditional_requirement_mutation_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "duplicate_trace_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "omitted_trace_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "wrong_source_hash_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "incorrect_optional_candidate_metadata_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "reference_field_mutation_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "correct_receipt",
+      "expected_accept": true,
+      "observed_accept": true,
+      "pass": true
+    },
+    {
+      "name": "forged_code_receipt_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "forged_result_receipt_rejected",
+      "expected_accept": false,
+      "observed_accept": false,
+      "pass": true
+    },
+    {
+      "name": "protected_raw_content_change_rejected",
+      "pass": true
+    },
+    {
+      "name": "mtime_only_touch_distinguished",
+      "pass": true
+    }
+  ],
+  "replay_executions": 0,
+  "participant_calls": 0,
+  "prepared_case_inventory_checks": [
+    {
+      "id": "k01",
+      "files": 408,
+      "expected_files": 408,
+      "initial_inventory_exact": true,
+      "nonregular_paths": []
+    },
+    {
+      "id": "k02",
+      "files": 408,
+      "expected_files": 408,
+      "initial_inventory_exact": true,
+      "nonregular_paths": []
+    },
+    {
+      "id": "k03",
+      "files": 408,
+      "expected_files": 408,
+      "initial_inventory_exact": true,
+      "nonregular_paths": []
+    },
+    {
+      "id": "k04",
+      "files": 408,
+      "expected_files": 408,
+      "initial_inventory_exact": true,
+      "nonregular_paths": []
+    }
+  ]
+}

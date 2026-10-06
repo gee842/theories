@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "filename": "harman-2004-author-linked.pdf",
+      "author": "Elizabeth Harman",
+      "title": "Can We Harm and Benefit in Creating?",
+      "year": 2004,
+      "doi": "10.1111/j.1520-8583.2004.00022.x",
+      "author_page": "https://www.elizabethharman.org/all-publications",
+      "requested_url": "https://www.elizabethharman.org/s/2004_can-we-harm-and-benefit-in-creating.pdf",
+      "final_url": "https://static1.squarespace.com/static/5ebc5c2582dd0f3baac5e9cc/t/5f9f02afff6048551e5ab22a/1604256431842/2004_can+we+harm+and+benefit+in+creating.pdf",
+      "retrieved_at_utc": "2026-10-06T09:37:44.607621+00:00",
+      "content_type": "application/pdf",
+      "bytes": 715187,
+      "sha256": "d3827db045f36dba6b2acc0f5cd4db95cb81d1b532d3696f547c9d73140ad46f",
+      "status": "Exact downloaded PDF bytes; no normalization or modification. Author-linked journal article with JSTOR cover. The old Princeton URL produced a web extraction initially, then web404 and ordinary-download403; this is a distinct current author link."
+    },
+    {
+      "filename": "parfit-2017-journal-layout.pdf",
+      "author": "Derek Parfit",
+      "title": "Future People, the Non-Identity Problem, and Person-Affecting Principles",
+      "year": 2017,
+      "doi": "10.1111/papa.12088",
+      "requested_url": "https://pgrim.org/philosophersannual/37articles/parfit-future.pdf",
+      "final_url": "https://pgrim.org/philosophersannual/37articles/parfit-future.pdf",
+      "retrieved_at_utc": "2026-10-06T09:38:30.328498+00:00",
+      "content_type": "application/pdf",
+      "bytes": 220385,
+      "sha256": "715fa4ea2c2485a9a83ccfe28e49bbd6124d1cbba5a9cb2111e6be18993c547e",
+      "status": "Exact downloaded journal-layout PDF bytes from The Philosophers Annual host; no normalization or modification. Posthumous editorial status recorded in source note."
+    }
+  ]
+}

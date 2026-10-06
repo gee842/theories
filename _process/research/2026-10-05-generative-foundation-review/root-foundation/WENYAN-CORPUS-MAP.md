@@ -23,6 +23,7 @@
 | 《荀子》 | 本轮《性恶》《天论》《正名》《礼论》《解蔽》指定段；《劝学》正文首段 | [儒家记录](WENYAN-CONFUCIAN.md)、[语言记录](WENYAN-LANGUAGE-AND-CORPUS.md)：欲求、制作、规范与制名权 |
 | 《墨子》 | 本轮《兼爱中》《尚同上》《天志上》《非命上》四篇读至篇末 | [墨家记录](WENYAN-MOHIST-POLITICAL.md)：扩大关切、规谏、天与行为塑造 |
 | 《墨子·小取》 | 本轮开篇及类推、名称替换讨论的指定段 | [语言记录](WENYAN-LANGUAGE-AND-CORPUS.md)：表达、根据与相似性；未完成墨辩通读 |
+| 《墨子·大取》 | 后续 2026-10-07 选读：开篇至志、功关系段，另读贵为天子、二子事亲、藉臧也死三段；不计全篇 | [精确访问记录](WHOLE-PROCESS-REALIZATION-SOURCES.md#inclusive-care-and-differentiated-provision)及[整体论证 §33](WHOLE-PROCESS-GROUNDING-ARGUMENT.md#33-renewal-causal-importance-and-the-good-realized) |
 | 《韩非子》 | 本轮《二柄》《五蠹》读至篇末 | [法术记录](WENYAN-MOHIST-POLITICAL.md)：评价迎合、奖励控制、环境变迁 |
 | 《商君书》 | 本轮《弱民》一篇读至篇末；同卷其他篇未计 | [法术记录](WENYAN-MOHIST-POLITICAL.md)：利益渠道、依赖与削弱他者 |
 | 《公孙龙子》 | 本轮《白马论》读至篇末；另核题署以辨认后注，不计《迹府》研究完成 | [名辩记录](WENYAN-MOHIST-POLITICAL.md)：同一、归类与求取；宋注独立 |

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "prospectively_selected_before_implementation_runs",
+  "question": "Actual v0 diagnosis delivery followed by selective continuation under current authority",
+  "episodes": [
+    {"id": "b01", "policy": "conventional_reference", "branch": "retained"},
+    {"id": "b02", "policy": "conventional_reference", "branch": "revoked"},
+    {"id": "w01", "policy": "fresh_learned_context", "branch": "revoked"},
+    {"id": "w02", "policy": "fresh_learned_context", "branch": "retained"}
+  ],
+  "learned_initial_prompt": "TASK.txt",
+  "learned_continuation_prompt": "CONTINUE.txt",
+  "parse_error_prompt": "PARSE-ERROR.txt",
+  "maximum_requests_per_episode": 16,
+  "learned_context_history": "fork_turns=none",
+  "model_override": null,
+  "replacement_or_exclusion": "none; preserve every scheduled episode and invalid attempt",
+  "baseline_scope": "domain-specific controller using same public observations and supplied repair recipe",
+  "data_scope": "same known defect and archived trajectories; no held-out bug discovery or clean host isolation claim",
+  "development": "separate labeled instrument probes; not participant outcomes"
+}

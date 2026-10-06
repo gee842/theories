@@ -1,5 +1,7 @@
 # Primary evidence: the organization of generative health
 
+**Continuation, 6 October 2026:** [Recipient consequence and supported continuation](succession/RECIPIENT-CONTINUATION.md) grounds a conditional enabling claim in an independently identified recipient activity. The [subsequent correction analysis](succession/CONTINUITY-AND-CORRECTION.md) proves a source-level prefix invariant for the existing plasticity history and derives when selection among its routes cannot preserve the specified continuation. It credits the earlier liquidity and protocol results, adds a prospective buffer condition, and distinguishes adequacy failure, ethical warrant and implemented revision.
+
 Prepared 5 October 2026. Scope: causal arrangements that sustain adaptive and generative capacity while their implementations change. This is a focused evidence memo, not a systematic review or a claim to have established a universal law.
 
 ## Strongest supported answer

@@ -1,0 +1,521 @@
+{
+  "scope": "Editorial revision of present foundational exposition only",
+  "created_utc": "2026-10-06T07:15:30.399084+00:00",
+  "owner": "distinguish_lenses",
+  "status": "completed_editorial_revision",
+  "files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "before_sha256": "67872c8e6b449a21cdac21d1a0a0d24d37ba9741270f25c7b8a5793235e7bf44",
+      "before_bytes": 28313,
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "changes": [
+        {
+          "before": "Actual formation and paid action explain its effectiveness; independently defended responsibility and patient-related reasons justify its use.",
+          "after": "Its formation and subsequent action explain how it becomes effective; independently defended responsibility and reasons concerning the affected being justify its use.",
+          "reason": "Separate causal operation from ethical justification without a general payment metaphor."
+        },
+        {
+          "before": "policy agreement and paid execution.",
+          "after": "policy agreement and execution under the stated resource conditions.",
+          "reason": "Identify resource conditions as local requirements on execution."
+        },
+        {
+          "before": "This is the proposed root of 生生. The subject is a whole situation with differentiated centers and relations. A center exists through those relations; its particular consequences still matter. A flourishing aggregate can conceal a depleted participant, just as a stable measured total can conceal a growing internal difference.",
+          "after": "This is the proposed root of 生生. The account begins with activity whose relations and effects differentiate within its unfolding. Centers of experience and action, where they form, exist through those relations; their different experiences and consequences remain real. Acting and undergoing are related aspects of particular histories, not a division into already complete givers and passive receivers. A flourishing whole can still contain deprivation, just as a stable measured total can conceal a growing internal difference.",
+          "reason": "Begin with activity and explain differentiated positions without treating actor and recipient as foundational types."
+        },
+        {
+          "before": "a supported command requires a recorded acquisition preceded by an actual recipient delivery.",
+          "after": "a supported command requires an acquired record preceded by the modeled service to the being whose claim is at issue.",
+          "reason": "Describe the specific service relation rather than presupposing a generic recipient role."
+        },
+        {
+          "before": "B --> C[Changed conditions and delivered capacities]",
+          "after": "B --> C[Changed conditions and capacities for further activity]",
+          "reason": "Remove delivery framing from the general causal diagram."
+        },
+        {
+          "before": "The lower route can fail at observation, understanding, authority, finance, timing, or succession.",
+          "after": "The lower route can fail through inadequate observation, understanding, authority, means of acting, timing, or succession.",
+          "reason": "Keep general enabling conditions broader than finance."
+        },
+        {
+          "before": "An actual constructive history with its component, observation and payment guards",
+          "after": "An actual constructive history satisfying its component, observation and resource requirements",
+          "reason": "State the relevant local requirements rather than a generic payment guard."
+        },
+        {
+          "before": "actual correction changes a later paid command. [Paid route revision](LEARNING-ROUTE-REVISION.md)",
+          "after": "actual correction changes a later command whose execution consumes specified resources. [Learning-route revision](LEARNING-ROUTE-REVISION.md)",
+          "reason": "Explain the modeled operation and retain its resource condition."
+        },
+        {
+          "before": "[paid protocol composition](PREDICTION-PROTOCOL.md)",
+          "after": "[protocol composition with explicit resource use](PREDICTION-PROTOCOL.md)",
+          "reason": "Clarify nonfinancial protocol scope without changing its link."
+        },
+        {
+          "before": "[Motor-coupling revision and a recipient route](GENERATIVE-DEVELOPMENT.md)",
+          "after": "[Motor-coupling revision and a route affecting another center](GENERATIVE-DEVELOPMENT.md)",
+          "reason": "Name the actual cross-center relation in introductory prose."
+        },
+        {
+          "before": "[learning through an actual formed recipient route, with paid maintenance](ARCHITECTURE-LEARNING.md)",
+          "after": "[learning through that formed route, including its maintenance requirements](ARCHITECTURE-LEARNING.md)",
+          "reason": "Describe route formation and maintenance rather than preassigned recipient/payment roles."
+        },
+        {
+          "before": "joins actual new acquisition, sparse records, paid instrumental reasoning and same-recipient action.",
+          "after": "joins new evidence acquisition, sparse records, reasoning with specified resource use, and action affecting the same identified being.",
+          "reason": "Preserve acquisition costs and target identity in concrete language."
+        },
+        {
+          "before": "[paid inherited-route revision](LEARNING-ROUTE-REVISION.md)",
+          "after": "[inherited-route revision](LEARNING-ROUTE-REVISION.md)",
+          "reason": "Avoid using payment as the name of a nonfinancial mechanism."
+        },
+        {
+          "before": "now supplies paid access to actual acquired influence, a distinct child, fresh evidence and selected use.",
+          "after": "now supplies access to actual acquired influence, a distinct child, fresh evidence and selected use, with resource requirements tracked throughout.",
+          "reason": "Retain the resource contract while describing the actual succession process."
+        },
+        {
+          "before": "joins paid acquisition, current evidence and recipient use.",
+          "after": "joins acquisition, current evidence and action through the identified help route, with each operation meeting its resource requirements.",
+          "reason": "Explain operations and conditions rather than using market language."
+        },
+        {
+          "before": "The enlarged precursors explicitly pay for their added construction and source; they do not refund depleted endpoints.",
+          "after": "The enlarged precursors include the resources required for their added construction and source access; later stages begin with the stocks actually left by earlier activity.",
+          "reason": "Replace accounting metaphor with actual construction and state continuity."
+        },
+        {
+          "before": "Persistence, truth, recipient benefit and ethical warrant are separate outcomes.",
+          "after": "Persistence, truth, benefit to the affected being and ethical warrant are separate outcomes.",
+          "reason": "Identify the ethical referent without making a passive role fundamental."
+        },
+        {
+          "before": "**Preserving the whole does not automatically preserve its participants.** A second model keeps production and shared support intact while an affected participant loses a protected capacity.",
+          "after": "**Preserving the whole does not automatically preserve each being within it.** A second, institutional model keeps production and shared support intact while an affected participant loses a protected capacity.",
+          "reason": "Introduce the institutional role locally and retain the economic application."
+        },
+        {
+          "before": "Local architecture formation, recipient-specific learning and paid finite maintenance now have conditional constructions.",
+          "after": "Local architecture formation, learning about effects on another center, and finite maintenance under specified resource conditions now have conditional constructions.",
+          "reason": "Keep the research scope while avoiding a market vocabulary at the general level."
+        },
+        {
+          "before": "Learned replacement can suppress effective affordable help.",
+          "after": "Learned replacement can suppress effective help even when the means to act remain available.",
+          "reason": "Retain the nonfinancial feasibility counterexample."
+        }
+      ],
+      "after_sha256": "7433f4bec310ec7cc9d9f465c2883ff92fc09e698732b24b486264fa94ca158a",
+      "after_bytes": 29038,
+      "status": "reviewed",
+      "editorial_checks": {
+        "snapshot_hash_matches": true,
+        "edited_hash_matches": true,
+        "all_changes_recorded": true,
+        "link_destinations_unchanged": true,
+        "inline_code_unchanged": true,
+        "display_math_unchanged": true,
+        "inline_math_unchanged": true,
+        "blockquote_lines_unchanged": true,
+        "numerical_tokens_unchanged": true,
+        "no_replacement_characters": true
+      },
+      "integration_sha256": "7433f4bec310ec7cc9d9f465c2883ff92fc09e698732b24b486264fa94ca158a"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "before_sha256": "2398ea610e5c38dd44cadf61fad3d7d81720d16762707f4fc77a60d0dd1d83e4",
+      "before_bytes": 63080,
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "changes": [
+        {
+          "before": "conditional solutions for joint formation, paid evidence and protection, reason revision, and renewal.",
+          "after": "conditional solutions for joint formation, evidence acquisition and protection under explicit resource conditions, reason revision, and renewal.",
+          "reason": "Frame local resource requirements without treating evidence as purchased at the foundation."
+        },
+        {
+          "before": "A process can change the conditions through which further processes become possible. Some of those changes replenish a support, establish a new relationship, reveal a consequential difference, or leave a successor able to act. Others consume the support, obstruct the relationship, conceal the difference, or leave a successor with an unusable inheritance. The object of explanation is the evolving situation containing these relations, including the centers that perceive and act within it.",
+          "after": "Activity forms and changes the conditions of further activity. Some effects persist, enter new relations, and become conditions of later transformation. They may renew a support, reveal a consequential difference, or leave a successor able to act; they may also deplete a support, obstruct a relation, or prevent later action. The account must explain how these differences arise, including how centers of experience and response form within the unfolding situation.",
+          "reason": "Begin with activity and continuing effects before introducing formed centers or successor roles."
+        },
+        {
+          "before": "worked reconstruction in the existing paid learning history.",
+          "after": "worked reconstruction in the existing history of learning and resource use.",
+          "reason": "Describe the actual learner history without a payment metaphor."
+        },
+        {
+          "before": "A functioning organization may be exhausting its material supports. A renewable organization may be depleting a participant. A participant may see the problem but lack a route to act.",
+          "after": "A functioning organization may be exhausting its material supports. An organization that renews itself may undermine another being's continuation. That being may recognize what is happening yet lack an effective way to respond.",
+          "reason": "Preserve differentiated agency and undergoing rather than treating participation as a primitive role."
+        },
+        {
+          "before": "A productive trajectory spending down its future",
+          "after": "A productive trajectory depleting the supports it needs to continue",
+          "reason": "Replace a financial metaphor with the actual dependency."
+        },
+        {
+          "before": "What can the next carrier recover, afford, and revise?",
+          "after": "What can the next carrier recover, use, and revise?",
+          "reason": "Keep succession general while later models state specific resource requirements."
+        },
+        {
+          "before": "A center is a relatively organized locus of response within this situation. The theory permits centers to overlap, divide, merge, disappear, or be replaced.",
+          "after": "A center is a relatively organized locus of response within this situation. Acting and undergoing distinguish relations within particular histories: the same organized activity can affect other activity and be changed by it. These relations do not erase differences in experience, control or consent. The theory permits centers to overlap, divide, merge, disappear, or be replaced.",
+          "reason": "Explain acting and undergoing locally while retaining real experiential and practical distinctions."
+        },
+        {
+          "before": "The observer receives no exemption. Instruments, concepts, attention, evidence access, and intervention powers have causes and costs. Including them makes knowing part of the account. It does not give the observer complete access to the whole.",
+          "after": "The observer belongs within the same inquiry. Instruments, concepts, attention, evidence access, and capacities to intervene form and change through activity. Their enabling conditions and effects require explanation, including resource use where it occurs. This places knowing within the account without granting complete access to the whole.",
+          "reason": "Avoid implying a universally positive cost while preserving the observer’s material and causal dependence."
+        },
+        {
+          "before": "This elementary balance has a substantial implication: a favorable eventual average cannot pay an earlier bill. A successor that becomes capable after its predecessor fails can arrive too late. A diagnostic that becomes affordable after irreversible damage is no longer the same remedy.",
+          "after": "This elementary balance has a substantial implication: later replenishment cannot prevent an earlier breach of the required floor. A successor that becomes capable after its predecessor fails can arrive too late. A diagnostic that becomes usable after irreversible damage can no longer prevent that damage.",
+          "reason": "Express prefix constraints as temporal consequences, not a financial analogy."
+        },
+        {
+          "before": "The difference is causal. A repair may be technically possible but require inaccessible evidence. It may be accessible but unfunded. It may be funded but blocked by an incumbent. It may succeed and still destroy the machinery needed to repair again.",
+          "after": "The difference is causal. A repair may be technically possible but require inaccessible evidence. The evidence may be available while the means of repair are missing. Those means may exist while someone with control prevents their use. A repair may also succeed while destroying the machinery needed to repeat it.",
+          "reason": "State distinct access, implementation and power relations at the general level."
+        },
+        {
+          "before": "The experiment changes a fixed search procedure or charges resources.",
+          "after": "The experiment changes a fixed search procedure or imposes specified resource requirements.",
+          "reason": "Describe the bounded search model’s resource rule without market language."
+        },
+        {
+          "before": "Actual paid consequences form initially absent signed connections that affect a recipient-directed choice. A later paid replacement can suppress the same effective, affordable service even though both comparison arms acquire the same new data and preserve factual command knowledge.",
+          "after": "The consequences of paired operations contribute to forming initially absent signed connections, which then affect whether the learner acts through the modeled help route. Formation and later replacement consume the resources specified by the local law. A replacement can suppress the same effective service while the means to perform it remain available, even though both comparison arms acquire the same new data and preserve factual command knowledge.",
+          "reason": "Describe what forms and changes, separating operations, resources and the relation affected."
+        },
+        {
+          "before": "Success may buy more productive ability; it may also buy influence over what is recognized as success, who can challenge it, or which alternatives receive support.",
+          "after": "Success can increase productive capacity and control over later activity, including how success is judged, who can challenge that judgment, and which alternatives receive support.",
+          "reason": "Replace buying as a generic mechanism with the actual possible change in capacity and control."
+        },
+        {
+          "before": "make evidence usable and finance the actual transition.",
+          "after": "make evidence usable and sustain the required transition.",
+          "reason": "Keep the synthesis broader than its particular financial mechanisms."
+        },
+        {
+          "before": "An accurate and adaptive oppressor also demonstrates that epistemic competence alone does not establish ethical wisdom;",
+          "after": "An accurate and adaptive oppressor demonstrates that epistemic competence alone does not establish ethical wisdom;",
+          "reason": "Remove unnecessary connective wording while retaining the counterexample."
+        },
+        {
+          "before": "relevant consistency prevents their force disappearing solely with a change of identity or bookkeeping boundary;",
+          "after": "relevant consistency prevents their force disappearing solely with a change of identity or analytical boundary;",
+          "reason": "Express the ethical consistency claim without an accounting metaphor."
+        },
+        {
+          "before": "A costed carrier/read/select/act history realizes the designated response, reduces the same patient's modeled burden, and retains the actual account.",
+          "after": "A history of carrier formation, observation, selection and action realizes the designated response under the specified resource conditions. It reduces the same patient's modeled burden and preserves the resource changes at each step.",
+          "reason": "Explain the local operations and tracked quantities rather than compressing them into accounting language."
+        },
+        {
+          "before": "Permission loss or insufficient funds cannot erase the patient condition;",
+          "after": "Loss of permission or unavailable means cannot erase the patient condition;",
+          "reason": "Keep ethical significance distinct from local action feasibility without assuming money."
+        },
+        {
+          "before": "Two patient-directed reasons need not admit a jointly funded response or a single numerical priority.",
+          "after": "Two patient-directed reasons need not admit a jointly feasible response or a single numerical priority.",
+          "reason": "State the general feasibility issue while retaining distinct patient-directed reasons."
+        },
+        {
+          "before": "A high-performing current method can leave expensive successors.",
+          "after": "A high-performing current method can leave successors unable to meet its continuing requirements.",
+          "reason": "Replace an ambiguous economic metaphor with the continuation problem."
+        },
+        {
+          "before": "A replacement must pay its transition cost and preserve the specified obligations.",
+          "after": "A replacement must meet its transition requirements and preserve the specified obligations.",
+          "reason": "Keep transition dependencies general; specific costs remain in local results."
+        },
+        {
+          "before": "Later results connect acquired prediction, paid updater revision, recipient evidence, acquired influence and actual succession;",
+          "after": "Later results connect acquired prediction, updater revision with explicit resource requirements, evidence about effects on another center, acquired influence and actual succession;",
+          "reason": "Explain the composed mechanisms without presenting paid or recipient roles as generative primitives."
+        },
+        {
+          "before": "under declared teaching, shared routing, and paid evidence.",
+          "after": "under declared teaching and shared routing, with resource use specified for evidence acquisition.",
+          "reason": "Keep resource use a local condition on acquisition."
+        },
+        {
+          "before": "A stronger study must test useful new distinctions and interventions on withheld problems, charge their construction and transmission, and permit simpler alternatives to succeed.",
+          "after": "A stronger study must test useful new distinctions and interventions on withheld problems, include the conditions and resource use of their construction and transmission, and permit simpler alternatives to succeed.",
+          "reason": "Require accountable experimental conditions without making artificial charges foundational."
+        },
+        {
+          "before": "the full inquiry policy sometimes consumes funds needed for ordinary service",
+          "after": "the full inquiry policy sometimes consumes resources needed for ordinary service",
+          "reason": "Describe the simulation resource requirement without assuming money."
+        },
+        {
+          "before": "yet rewards paid from the same production can also exhaust shared renewal.",
+          "after": "yet rewards drawn from the same production can also exhaust shared renewal.",
+          "reason": "Name the allocation relation without monetary implication."
+        },
+        {
+          "before": "A physical implementation must also support and pay for the policy's memory and computation.",
+          "after": "A physical implementation must also sustain the policy's memory and computation, including their actual resource requirements.",
+          "reason": "Avoid making payment part of general physical implementation."
+        }
+      ],
+      "after_sha256": "3376d9af0c452171e143a383af1ce262058aa108a82defb535a460131343657a",
+      "after_bytes": 64083,
+      "status": "reviewed",
+      "editorial_checks": {
+        "snapshot_hash_matches": true,
+        "edited_hash_matches": true,
+        "all_changes_recorded": true,
+        "link_destinations_unchanged": true,
+        "inline_code_unchanged": true,
+        "display_math_unchanged": true,
+        "inline_math_unchanged": true,
+        "blockquote_lines_unchanged": true,
+        "numerical_tokens_unchanged": true,
+        "no_replacement_characters": true
+      },
+      "integration_sha256": "3376d9af0c452171e143a383af1ce262058aa108a82defb535a460131343657a"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "before_sha256": "839b045896ff019628899d797edc01469b59f141178c62c592b0dfdece788c76",
+      "before_bytes": 48596,
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "changes": [
+        {
+          "before": "places actual retained learning, evaluative influence, a current permission cut and paid settlement in the same successor trace.",
+          "after": "places actual retained learning, evaluative influence, a current permission cut and changes in local reserves in the same successor trace.",
+          "reason": "Name the modeled changes without treating them as a monetary settlement."
+        },
+        {
+          "before": "The candidate treats organizations, observers, retained models and evaluations as causally effective formations in the reality they describe. A model that changes action belongs in the same account as the action's consequences. Where a mechanism is said to form, persist or change, its enabling conditions, construction history and effects on later possibilities have to be identified.",
+          "after": "The candidate begins with activity forming and changing the conditions of further activity. Organizations, observers, retained models and evaluations are formations within that unfolding. A model that changes action belongs in the same explanation as the action's consequences. Where a mechanism is said to form, persist or change, its enabling relations, formation history and effects on later possibilities have to be identified.",
+          "reason": "Anchor explanatory commitments in generative activity rather than an inventory of independent entities."
+        },
+        {
+          "before": "Different formations and opposed consequences remain within the account.",
+          "after": "Different formations and opposed consequences remain within the account. Acting and undergoing distinguish relations within particular histories; neither requires a permanently active giver or passive receiver. Where a local model identifies a learner, responder or recipient, those names specify roles in that model. They do not by themselves explain the formation of the beings involved or erase differences in experience, agency and consent.",
+          "reason": "Introduce local roles explicitly and preserve experiential and ethical differentiation."
+        },
+        {
+          "before": "An ethical reason can remain valid even when the modeled actor fails to recognize or finance it.",
+          "after": "An ethical reason can remain valid even when the modeled actor fails to recognize or act on it.",
+          "reason": "Separate normative validity from response without assuming financial realization."
+        },
+        {
+          "before": "Reinitializing a later example may restore fuel or information already spent. Exact history representation and paid protocols constrain the join.",
+          "after": "Reinitializing a later example may restore depleted fuel or lost information. Exact history representation and protocols that preserve resource changes constrain the join.",
+          "reason": "State the actual resource or information loss and continuity requirement."
+        },
+        {
+          "before": "Rank alone allows paid deadlock;",
+          "after": "Rank alone allows deadlock after resources have been consumed;",
+          "reason": "Describe the counterexample’s event order without payment language."
+        },
+        {
+          "before": "The paid repair/capture construction identifies a particular path.",
+          "after": "The repair/capture construction identifies a particular path with specified resource requirements.",
+          "reason": "Keep resource requirements within the stated construction."
+        },
+        {
+          "before": "A misleading channel can make a payable response destructive.",
+          "after": "A misleading channel can make an otherwise executable response destructive.",
+          "reason": "Distinguish feasibility from consequences without monetary implication."
+        },
+        {
+          "before": "Appropriate free components, a functional recipe, actual payment and lifetime conditions",
+          "after": "Appropriate unallocated components, a functional recipe, satisfaction of its resource requirements and lifetime conditions",
+          "reason": "Clarify that component availability and resource sufficiency are separate local requirements."
+        },
+        {
+          "before": "| Paid observations → warranted retained evidence |",
+          "after": "| Acquired observations → warranted retained evidence |",
+          "reason": "Name the epistemic transition independently of a payment descriptor."
+        },
+        {
+          "before": "Paying all bills can coexist with selective outcome deletion and misleading stored evidence.",
+          "after": "Meeting every resource requirement can coexist with selective outcome deletion and misleading stored evidence.",
+          "reason": "Preserve the resource-sufficient counterexample without an accounting metaphor."
+        },
+        {
+          "before": "Actor reserve, recipient functioning, retained evidence, authority to correct and future reconstruction are separate coordinates. A greater aggregate balance cannot by itself establish that each center's possibilities improved.",
+          "after": "Where one organization acts and another undergoes its effects, their conditions of continuation must be distinguished. A local model may represent these through the acting organization's reserve, the other being's functioning, retained evidence, authority to correct and means of reconstruction. An aggregate increase cannot by itself establish that each center's possibilities improved.",
+          "reason": "Derive analytical coordinates from a specified relation rather than present actor/recipient accounts as primitives."
+        },
+        {
+          "before": "private success can finance exclusion;",
+          "after": "private success can enable exclusion;",
+          "reason": "Keep the adverse general mechanism broader than finance."
+        },
+        {
+          "before": "Consequences can change the mechanism of updating, and later operation funds copying",
+          "after": "Consequences can change the mechanism of updating, and later operation supplies the resources needed for copying",
+          "reason": "Name the local support relation rather than funding as the general mechanism."
+        },
+        {
+          "before": "Late change or surplus funds can preserve a wrong updater;",
+          "after": "Late change or surplus resources can preserve a wrong updater;",
+          "reason": "Use the model’s resource condition without suggesting monetary exchange."
+        },
+        {
+          "before": "New acquisition changes the supported command and its paid consequence",
+          "after": "New acquisition changes the supported command and the subsequent action’s consequence",
+          "reason": "Consequences are produced by action, not purchased."
+        },
+        {
+          "before": "every acquisition/payment prefix.",
+          "after": "the resource state before and after each acquisition and action.",
+          "reason": "Make the preserved temporal condition explicit."
+        },
+        {
+          "before": "Equally informed filtering or paid suppression excludes that influence;",
+          "after": "Equally informed filtering or resource-consuming suppression excludes that influence;",
+          "reason": "Identify the modeled suppression operation and its requirement."
+        },
+        {
+          "before": "actual funds and separate inquiry/selected receipts.",
+          "after": "available resources and distinct outcome records for inquiry and selected action.",
+          "reason": "Explain receipts as records of differentiated operations."
+        },
+        {
+          "before": "Paid replacement can suppress an effective affordable service;",
+          "after": "Replacement can suppress an effective service even when its required resources remain available;",
+          "reason": "Preserve the feasibility counterexample without financial framing."
+        },
+        {
+          "before": "A paid descendant uses and revises a transmitted response;",
+          "after": "A descendant uses and revises a transmitted response under the stated resource conditions;",
+          "reason": "Describe actual succession and its scoped resource contract."
+        },
+        {
+          "before": "positive eventual return cannot pay an earlier shortage",
+          "after": "later replenishment cannot prevent an earlier resource shortfall",
+          "reason": "State the prefix constraint directly."
+        },
+        {
+          "before": "through paid retained-support access, new evidence and selected action,",
+          "after": "through access to retained support, new evidence and selected action, with their resource requirements met,",
+          "reason": "Retain the local access costs and avoid paid as a foundational descriptor."
+        },
+        {
+          "before": "actual interactions can construct, finance, redirect or destroy the conditions for each subsequent capacity.",
+          "after": "actual interactions can form, sustain, redirect or destroy the conditions for each subsequent capacity.",
+          "reason": "Use generative terms in the common explanatory claim."
+        },
+        {
+          "before": "In the repair-and-capture construction, a usable relation to the source changes which later expenditures and reconstructions are possible.",
+          "after": "In the repair-and-capture construction, a usable relation to the source changes which later operations and reconstructions are possible.",
+          "reason": "Describe activity before its particular resource debit."
+        },
+        {
+          "before": "When payment must precede a receipt, the actual event law or its finer protocol must retain that order; the prefix inequality alone does not forbid credit within one primitive event. Under the stated prepayment guards, a later benefit cannot pay an earlier unaffordable operation. Different indispensable supports retain different accounts.",
+          "after": "Where an operation consumes support before replenishment occurs, the event law or its finer protocol must retain that order; the prefix inequality alone does not specify the order of consumption and provision within one primitive event. Under the stated resource guards, an operation requires sufficient incoming support. Later replenishment cannot supply it retrospectively. Different indispensable supports must be represented separately.",
+          "reason": "Explain the actual chronological resource constraint while preserving the exact displayed inequality."
+        },
+        {
+          "before": "diagnostic evidence can also trigger paid replacement of the mechanism that changes those responses.",
+          "after": "diagnostic evidence can also trigger replacement of the mechanism that changes those responses, with the local construction and resource requirements satisfied.",
+          "reason": "Describe evidence, construction and resource use as related events."
+        },
+        {
+          "before": "a coefficient acquired from paid consequences enters an implemented recipient assessment and changes selected action while the exclusion control retains the same factual information.",
+          "after": "a coefficient acquired from the consequences of resource-consuming operations enters the learner’s assessment of action through a specified help route. It changes selected action while the exclusion control retains the same factual information.",
+          "reason": "Explain acquired effects and the local relation being evaluated."
+        },
+        {
+          "before": "to a distinct child, fresh recipient evidence and paid use.",
+          "after": "to a distinct child, fresh evidence about the being affected, and actual use under the stated resource conditions.",
+          "reason": "Preserve target continuity and the successor’s actual operation."
+        },
+        {
+          "before": "Paid paired operations and acquisition bind initially absent signed components; their occupancy and sign then determine how acquired influence enters assessment. Further acquired data can pay to retire and replace a component.",
+          "after": "Paired operations and record acquisition bind initially absent signed components under the specified construction and resource rules. Their occupancy and sign then determine how acquired influence enters assessment. Further acquired data can guide retirement and replacement of a component when the required means are available.",
+          "reason": "Replace the misleading claim that data pay with the actual sequence of acquisition and component change."
+        },
+        {
+          "before": "The matched replacement preserves new observations, native updating, payment and service affordability, yet can suppress a still-effective recipient command.",
+          "after": "The matched replacement preserves new observations, native updating, resource consumption and the means to perform the service, yet can suppress a command that would still produce its intended effect on the identified recipient.",
+          "reason": "Retain resource and target controls while specifying what suppression changes."
+        },
+        {
+          "before": "shows a paid premise revision affecting feasible choice while an independent reason survives.",
+          "after": "shows a premise revision, with its resource requirements met, affecting feasible choice while an independent reason survives.",
+          "reason": "State the scoped resource condition separately from logical revision."
+        },
+        {
+          "before": "finance a mistaken successor,",
+          "after": "sustain a mistaken successor,",
+          "reason": "Keep the general failure mode independent of monetary realization."
+        },
+        {
+          "before": "The construction, paid operation, replacement, inherited state and evaluative application of those rules wherever their origin or continuation is claimed",
+          "after": "The formation, conditions of operation, replacement, inherited state and evaluative application of those rules wherever their origin or continuation is claimed",
+          "reason": "Describe the general developmental question at the generative level."
+        },
+        {
+          "before": "positive-link formation, acquired command use and funded delivery.",
+          "after": "positive-link formation, acquired command use and delivery under the specified resource conditions.",
+          "reason": "Retain the physical scope without implying a funding institution."
+        },
+        {
+          "before": "the same acquired observations and bills can change the effective sign and suppress an affordable remedy",
+          "after": "the same acquired observations and resource use can change the effective sign and suppress a remedy whose required means remain available",
+          "reason": "Describe the matched comparison and feasibility precisely."
+        },
+        {
+          "before": "It does not identify continuous fields, discrete market rounds and paid material histories merely through shared notation.",
+          "after": "It does not identify continuous fields, discrete market rounds and material histories with explicit resource use merely through shared notation.",
+          "reason": "Preserve real market vocabulary for the market model while distinguishing material models."
+        },
+        {
+          "before": "## 10. Noninstrumental concern and paid patient response",
+          "after": "<a id=\"10-noninstrumental-concern-and-paid-patient-response\"></a>\n\n## 10. Noninstrumental concern in a concrete response process",
+          "reason": "Use a nonfinancial section title while preserving the existing anchor for incoming links."
+        }
+      ],
+      "after_sha256": "4deaadaec236dcc10600036e42c585e3cc9560a8a94bc3b36da4274395237f7d",
+      "after_bytes": 50217,
+      "status": "reviewed",
+      "editorial_checks": {
+        "snapshot_hash_matches": true,
+        "edited_hash_matches": true,
+        "all_changes_recorded": true,
+        "link_destinations_unchanged": true,
+        "inline_code_unchanged": true,
+        "display_math_unchanged": true,
+        "inline_math_unchanged": true,
+        "blockquote_lines_unchanged": true,
+        "no_replacement_characters": true,
+        "numerical_tokens_unchanged_except_retained_anchor": true
+      },
+      "integration_sha256": "7c2e48fead87be3e0c64688f47560d903b8db23ef390ee2e3dffb1fa74ab8a08"
+    }
+  ],
+  "validation_scope": "Static preservation and prose review only; no experiment, scientific test, or proof rerun.",
+  "intentional_terms": [
+    "Money, payment, funding, rent, prices and accounts remain in explicitly financial institutional and strategic examples.",
+    "Resource stocks, demand/provision accounts, inequalities, numerical premises and prefix constraints remain where the local models specify them.",
+    "Recipient, actor, patient and responder remain where they identify a specific modeled relation, target identity, ethical ground or established study label; explanatory prose introduces those as local roles.",
+    "Code identifiers, formal expressions, quotation blocks, and all link destinations remain unchanged; one old heading anchor is retained explicitly for compatibility."
+  ],
+  "conceptual_risks_and_limits": [
+    "This changes exposition, not the existing generative model, its proofs, evidence, ethical premises or completion status.",
+    "General relational language does not establish the formation of experience, agency, consent or ethical authority; the open explanations remain explicit.",
+    "Resource conditions have not been erased: nonfinancial operations are described in terms of their specified construction, consumption, availability and continuation effects."
+  ],
+  "integrator_followup": {
+    "change": "START-HERE: modeled delivery associated with the claim avoids implying that the numerical position has been established as a being.",
+    "block_preservation_exception": "One Mermaid label revised from delivered capacities to capacities for further activity; topology preserved. See central checks.json."
+  }
+}

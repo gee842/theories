@@ -1,0 +1,4724 @@
+{
+  "scope": "New read-only extraction and causal interpretation of prior accepted results. No dynamics, model import, scientific rerun or new theorem.",
+  "extractor_sha256": "c08a753d9e69443038ae8aa99989def8c17900f765434aac0d2a3c4129d04a44",
+  "bindings": {
+    "acquisition": {
+      "results": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json",
+        "sha256": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e"
+      },
+      "prior_independent_check": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/independent-check.json",
+        "sha256": "32114a9195d58bb3989bf2afff27c4e87ef0adb3c4a51587d5515ae72d8da96c",
+        "scope": "independent semantic comparator, product graph/minimality and tariff replay; not empirical calibration",
+        "verified_source_bindings": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+            "sha256": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/independent_check.py",
+            "sha256": "61c27c153b5158ba7dabe0eea6c5680a33ab692a2167d64a3defc6a9ccb239ad"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+            "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+          }
+        ]
+      },
+      "verified_source_bindings": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+          "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+          "sha256": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+          "sha256": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8"
+        }
+      ]
+    },
+    "access": {
+      "results": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+        "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+      },
+      "prior_independent_check": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent-check.json",
+        "sha256": "5efe94e31a1d06026a02708ec5792ead962371fc59e57dc185a9b6f56bd7afb7",
+        "scope": "independent consistency policy and state update; replay of stipulated macro-operation charges",
+        "verified_source_bindings": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+            "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+            "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+            "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent_check.py",
+            "sha256": "719aa55c41d8cd6046aad99df0226da5767515381878c6427236a6d6b6837167"
+          }
+        ]
+      },
+      "verified_source_bindings": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+          "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+          "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+          "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+        }
+      ]
+    },
+    "methods": {
+      "results": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/results.json",
+        "sha256": "7106ef4c49504ff0d1ba86c127abc4d8c207097810477a269043ff39947d9173"
+      },
+      "prior_independent_check": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent-check.json",
+        "sha256": "d2e3aca076eb8cccc315dbf9716adbaba762f15a3f4fc58868d5090f75dd6b35",
+        "scope": "independent entire symbolic-operation schedule, native apparatus, candidate update and fuel/memory reference",
+        "verified_source_bindings": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py",
+            "sha256": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py",
+            "sha256": "84e62031fd46bca6b28356df262ab498df65b579f96a29a2333515c59ba27d5d"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py",
+            "sha256": "bba25f7c9639c9c995f8fa950b85f0eea43e98359d2b3f295a8e2aea73684c09"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/PROTOCOL.md",
+            "sha256": "05229487040e2489ba89bc94727e481bf23e63cd265ba320f95b9948265ad20e"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py",
+            "sha256": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+            "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+            "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+          }
+        ]
+      },
+      "verified_source_bindings": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py",
+          "sha256": "84e62031fd46bca6b28356df262ab498df65b579f96a29a2333515c59ba27d5d"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py",
+          "sha256": "bba25f7c9639c9c995f8fa950b85f0eea43e98359d2b3f295a8e2aea73684c09"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/PROTOCOL.md",
+          "sha256": "05229487040e2489ba89bc94727e481bf23e63cd265ba320f95b9948265ad20e"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py",
+          "sha256": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+          "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+        }
+      ]
+    }
+  },
+  "methods_handoff": {
+    "original_history": {
+      "original_energy": 145,
+      "preparation_spent": 4,
+      "old_adapter_spent": 1,
+      "operational_spent": 74,
+      "waste": 10,
+      "fuel": 36,
+      "source": 20,
+      "probability": "1/36",
+      "commissioning_probability": "2/9",
+      "unsuccessful_preparation_probability": "7/9",
+      "initial_blank_workspace_cartridges": 1,
+      "inherited_state": {
+        "fuel": 36,
+        "gate": 1,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "prelearn": true,
+        "stale": 1,
+        "corrected": true,
+        "witness": true
+      },
+      "preparation_record": {
+        "state": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          20,
+          120
+        ],
+        "probability": "2/9",
+        "commissioned": true,
+        "preparation_spent": 4,
+        "remaining_energy": 141,
+        "reserve": 20,
+        "packets": 12,
+        "remainder": 0,
+        "transformed_A": 1,
+        "transformed_H": 1,
+        "backing_slots": 2
+      },
+      "path": [
+        {
+          "exposure": 1,
+          "state": {
+            "fuel": 17,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": false,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1/4"
+        },
+        {
+          "exposure": 2,
+          "state": {
+            "fuel": 20,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 3,
+          "state": {
+            "fuel": 23,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 4,
+          "state": {
+            "fuel": 26,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 5,
+          "state": {
+            "fuel": 29,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 6,
+          "state": {
+            "fuel": 32,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 7,
+          "state": {
+            "fuel": 27,
+            "gate": 1,
+            "gate_life": 1,
+            "stage": 2,
+            "life": 5,
+            "q": 0,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 8,
+          "state": {
+            "fuel": 30,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": true
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 9,
+          "state": {
+            "fuel": 33,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": true
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 10,
+          "state": {
+            "fuel": 36,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": true
+          },
+          "probability": "1"
+        }
+      ],
+      "source_hashes": {
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+        "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+        "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+      }
+    },
+    "old_acquisition_spent": "1984289/65536",
+    "fuel": "1030367/65536",
+    "source": 10,
+    "environment_phase": 2,
+    "learned_machine": {
+      "alphabet": [
+        "a"
+      ],
+      "outputs": [
+        0,
+        0,
+        1
+      ],
+      "transitions": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "initial": 0
+    },
+    "live_cells": 15,
+    "capacity": 256,
+    "old_discarded_archive_sizes": [
+      0,
+      0,
+      0
+    ],
+    "source_hashes": {
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+      "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+      "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+    }
+  },
+  "verified_handoff_source_bindings": [
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py",
+      "sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py",
+      "sha256": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "sha256": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/model.py",
+      "sha256": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "sha256": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+    }
+  ],
+  "method_fixtures": {
+    "three_feedback": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "use_confirmed": true,
+      "method_bit": 0,
+      "recipe": 0,
+      "generated": {
+        "recipe": 0,
+        "candidates": 6,
+        "machines": [
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "initial": 0
+          }
+        ]
+      },
+      "receipt": 1,
+      "plan": [
+        "a",
+        "a"
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 0
+      },
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "starting_fuel": "1030367/65536",
+      "fuel": "142991/8192",
+      "spent": "541799/65536",
+      "income": "10",
+      "source_remaining": 0,
+      "wasted": 0,
+      "physical_phase": 2,
+      "peak_cells": 68,
+      "predictively_equivalent": true,
+      "prior_withdrawal": "0",
+      "native_trace": [
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 1
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ],
+      "history": [
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "derived_from_saved_events": {
+        "native_events": 11,
+        "acquisition_reads": 3,
+        "acquisition_readings": [
+          1,
+          0,
+          0
+        ],
+        "survivors_after_read": [
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    "three_broad": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "use_confirmed": true,
+      "method_bit": 0,
+      "recipe": 1,
+      "generated": {
+        "recipe": 1,
+        "candidates": 14,
+        "machines": [
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "initial": 0
+          },
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                3
+              ],
+              [
+                0
+              ],
+              [
+                2
+              ]
+            ],
+            "initial": 0
+          }
+        ]
+      },
+      "receipt": 1,
+      "plan": [
+        "a",
+        "a"
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 0,
+        "family": 0
+      },
+      "use_receipt": {
+        "expected": 0,
+        "observed": 0
+      },
+      "starting_fuel": "1030367/65536",
+      "fuel": "897353/65536",
+      "spent": "394187/32768",
+      "income": "10",
+      "source_remaining": 0,
+      "wasted": 0,
+      "physical_phase": 0,
+      "peak_cells": 117,
+      "predictively_equivalent": true,
+      "prior_withdrawal": "0",
+      "native_trace": [
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 1
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        }
+      ],
+      "history": [
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      ],
+      "derived_from_saved_events": {
+        "native_events": 13,
+        "acquisition_reads": 4,
+        "acquisition_readings": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "survivors_after_read": [
+          7,
+          4,
+          2,
+          1
+        ]
+      }
+    },
+    "three_misleading_receipt": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "use_confirmed": true,
+      "method_bit": 1,
+      "recipe": 1,
+      "generated": {
+        "recipe": 1,
+        "candidates": 14,
+        "machines": [
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "initial": 0
+          },
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                3
+              ],
+              [
+                0
+              ],
+              [
+                2
+              ]
+            ],
+            "initial": 0
+          }
+        ]
+      },
+      "receipt": 0,
+      "plan": [
+        "a",
+        "a"
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 0,
+        "family": 0
+      },
+      "use_receipt": {
+        "expected": 0,
+        "observed": 0
+      },
+      "starting_fuel": "1030367/65536",
+      "fuel": "897353/65536",
+      "spent": "394187/32768",
+      "income": "10",
+      "source_remaining": 0,
+      "wasted": 0,
+      "physical_phase": 0,
+      "peak_cells": 117,
+      "predictively_equivalent": true,
+      "prior_withdrawal": "0",
+      "native_trace": [
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        }
+      ],
+      "history": [
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      ],
+      "derived_from_saved_events": {
+        "native_events": 13,
+        "acquisition_reads": 4,
+        "acquisition_readings": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "survivors_after_read": [
+          7,
+          4,
+          2,
+          1
+        ]
+      }
+    },
+    "three_misleading_frozen": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "use_confirmed": true,
+      "method_bit": 0,
+      "recipe": 0,
+      "generated": {
+        "recipe": 0,
+        "candidates": 6,
+        "machines": [
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "initial": 0
+          }
+        ]
+      },
+      "receipt": 0,
+      "plan": [
+        "a",
+        "a"
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 0
+      },
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "starting_fuel": "1030367/65536",
+      "fuel": "142991/8192",
+      "spent": "541799/65536",
+      "income": "10",
+      "source_remaining": 0,
+      "wasted": 0,
+      "physical_phase": 2,
+      "peak_cells": 68,
+      "predictively_equivalent": true,
+      "prior_withdrawal": "0",
+      "native_trace": [
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ],
+      "history": [
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "derived_from_saved_events": {
+        "native_events": 11,
+        "acquisition_reads": 3,
+        "acquisition_readings": [
+          1,
+          0,
+          0
+        ],
+        "survivors_after_read": [
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    "four_feedback": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "use_confirmed": true,
+      "method_bit": 1,
+      "recipe": 1,
+      "generated": {
+        "recipe": 1,
+        "candidates": 14,
+        "machines": [
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "initial": 0
+          },
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                3
+              ],
+              [
+                0
+              ],
+              [
+                2
+              ]
+            ],
+            "initial": 0
+          }
+        ]
+      },
+      "receipt": 0,
+      "plan": [
+        "a",
+        "a"
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 1
+      },
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "starting_fuel": "1030367/65536",
+      "fuel": "167501/65536",
+      "spent": "431433/32768",
+      "income": "0",
+      "source_remaining": 0,
+      "wasted": 10,
+      "physical_phase": 2,
+      "peak_cells": 117,
+      "predictively_equivalent": true,
+      "prior_withdrawal": "0",
+      "native_trace": [
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ],
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      ],
+      "derived_from_saved_events": {
+        "native_events": 15,
+        "acquisition_reads": 5,
+        "acquisition_readings": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "survivors_after_read": [
+          7,
+          4,
+          2,
+          2,
+          1
+        ]
+      }
+    },
+    "four_frozen": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "use_confirmed": true,
+      "method_bit": 0,
+      "recipe": 0,
+      "generated": {
+        "recipe": 0,
+        "candidates": 6,
+        "machines": [
+          {
+            "alphabet": [
+              "a"
+            ],
+            "outputs": [
+              0,
+              0,
+              1
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "initial": 0
+          }
+        ]
+      },
+      "receipt": 0,
+      "plan": [
+        "a",
+        "a"
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 1,
+        "family": 0
+      },
+      "use_receipt": {
+        "expected": 0,
+        "observed": 0
+      },
+      "starting_fuel": "1030367/65536",
+      "fuel": "61071/8192",
+      "spent": "541799/65536",
+      "income": "0",
+      "source_remaining": 0,
+      "wasted": 10,
+      "physical_phase": 1,
+      "peak_cells": 68,
+      "predictively_equivalent": false,
+      "prior_withdrawal": "0",
+      "native_trace": [
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        }
+      ],
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "derived_from_saved_events": {
+        "native_events": 11,
+        "acquisition_reads": 3,
+        "acquisition_readings": [
+          0,
+          1,
+          0
+        ],
+        "survivors_after_read": [
+          3,
+          2,
+          1
+        ]
+      }
+    }
+  },
+  "acquisition_cases": {
+    "primary_unary": {
+      "status": "complete",
+      "certified": true,
+      "retained": true,
+      "model": {
+        "alphabet": [
+          "a"
+        ],
+        "outputs": [
+          0,
+          0,
+          1
+        ],
+        "transitions": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ],
+        "initial": 0
+      },
+      "hypotheses": [
+        {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0
+          ],
+          "transitions": [
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        }
+      ],
+      "queries": [
+        {
+          "word": "",
+          "output": 0
+        },
+        {
+          "word": "a",
+          "output": 0
+        },
+        {
+          "word": "aa",
+          "output": 1
+        },
+        {
+          "word": "aaa",
+          "output": 0
+        },
+        {
+          "word": "aaaa",
+          "output": 0
+        }
+      ],
+      "trace": [
+        {
+          "kind": "prediction_failure",
+          "word": "aa",
+          "predicted": 0,
+          "observed": 1
+        },
+        {
+          "kind": "distinction",
+          "histories": [
+            "",
+            "a"
+          ],
+          "suffix": "a",
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "use": {
+        "word": "aaaaa",
+        "success": true,
+        "transferred": 10,
+        "wasted": 0,
+        "source": 10,
+        "fuel_after_return": "1030367/65536"
+      }
+    },
+    "frozen_first_candidate": {
+      "status": "frozen_after_prediction_failure",
+      "certified": false,
+      "retained": false,
+      "model": {
+        "alphabet": [
+          "a"
+        ],
+        "outputs": [
+          0
+        ],
+        "transitions": [
+          [
+            0
+          ]
+        ],
+        "initial": 0
+      },
+      "hypotheses": [
+        {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0
+          ],
+          "transitions": [
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        }
+      ],
+      "queries": [
+        {
+          "word": "",
+          "output": 0
+        },
+        {
+          "word": "a",
+          "output": 0
+        },
+        {
+          "word": "aa",
+          "output": 1
+        }
+      ],
+      "trace": [
+        {
+          "kind": "prediction_failure",
+          "word": "aa",
+          "predicted": 0,
+          "observed": 1
+        }
+      ],
+      "use": null
+    },
+    "binary_same_resources": {
+      "status": "funding:cache_lookup",
+      "certified": false,
+      "retained": false,
+      "model": {
+        "alphabet": [
+          "a",
+          "b"
+        ],
+        "outputs": [
+          0
+        ],
+        "transitions": [
+          [
+            0,
+            0
+          ]
+        ],
+        "initial": 0
+      },
+      "hypotheses": [
+        {
+          "alphabet": [
+            "a",
+            "b"
+          ],
+          "outputs": [
+            0
+          ],
+          "transitions": [
+            [
+              0,
+              0
+            ]
+          ],
+          "initial": 0
+        }
+      ],
+      "queries": [
+        {
+          "word": "",
+          "output": 0
+        },
+        {
+          "word": "a",
+          "output": 0
+        },
+        {
+          "word": "b",
+          "output": 0
+        },
+        {
+          "word": "aa",
+          "output": 1
+        },
+        {
+          "word": "ab",
+          "output": 0
+        },
+        {
+          "word": "aaa",
+          "output": 0
+        },
+        {
+          "word": "aab",
+          "output": 0
+        },
+        {
+          "word": "ba",
+          "output": 0
+        }
+      ],
+      "trace": [
+        {
+          "kind": "prediction_failure",
+          "word": "aa",
+          "predicted": 0,
+          "observed": 1
+        },
+        {
+          "kind": "distinction",
+          "histories": [
+            "",
+            "a"
+          ],
+          "suffix": "a",
+          "observations": [
+            0,
+            1
+          ]
+        }
+      ],
+      "use": null
+    }
+  },
+  "access_fixtures": {
+    "primary_sensor_flip": {
+      "status": "complete",
+      "retained": true,
+      "final_belief": [
+        [
+          2,
+          2
+        ]
+      ],
+      "verdict": {
+        "status": "unique",
+        "alternatives": [
+          [
+            2,
+            2
+          ]
+        ],
+        "agrees": {
+          "readiness_flip": [
+            0
+          ],
+          "sensor_flip": [
+            1
+          ],
+          "broken_reset": [
+            0
+          ],
+          "blocked_transfer": [
+            0
+          ]
+        },
+        "blocked_factor": null,
+        "inversion_parity": [
+          1
+        ]
+      },
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "reset",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "probe",
+          "observation": 1,
+          "survivors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        }
+      ],
+      "native_trace": [
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 1
+        }
+      ],
+      "income": "10",
+      "source_remaining": 0
+    },
+    "sensor_only_ambiguity": {
+      "status": "complete",
+      "retained": true,
+      "final_belief": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "verdict": {
+        "status": "ambiguous",
+        "alternatives": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "agrees": {
+          "readiness_flip": [
+            0,
+            1
+          ],
+          "sensor_flip": [
+            0,
+            1
+          ],
+          "broken_reset": [
+            0
+          ],
+          "blocked_transfer": [
+            0
+          ]
+        },
+        "blocked_factor": null,
+        "inversion_parity": [
+          1
+        ]
+      },
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "reset",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        }
+      ],
+      "native_trace": [
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ],
+      "income": "0",
+      "source_remaining": 10
+    },
+    "readiness_change": {
+      "status": "complete",
+      "retained": true,
+      "final_belief": [
+        [
+          1,
+          2
+        ]
+      ],
+      "verdict": {
+        "status": "unique",
+        "alternatives": [
+          [
+            1,
+            2
+          ]
+        ],
+        "agrees": {
+          "readiness_flip": [
+            1
+          ],
+          "sensor_flip": [
+            0
+          ],
+          "broken_reset": [
+            0
+          ],
+          "blocked_transfer": [
+            0
+          ]
+        },
+        "blocked_factor": null,
+        "inversion_parity": [
+          1
+        ]
+      },
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "reset",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "probe",
+          "observation": 0,
+          "survivors": [
+            [
+              1,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        }
+      ],
+      "native_trace": [
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        }
+      ],
+      "income": "0",
+      "source_remaining": 0
+    },
+    "reset_failure": {
+      "status": "complete",
+      "retained": true,
+      "final_belief": [
+        [
+          4,
+          2
+        ]
+      ],
+      "verdict": {
+        "status": "unique",
+        "alternatives": [
+          [
+            4,
+            2
+          ]
+        ],
+        "agrees": {
+          "readiness_flip": [
+            0
+          ],
+          "sensor_flip": [
+            0
+          ],
+          "broken_reset": [
+            1
+          ],
+          "blocked_transfer": [
+            0
+          ]
+        },
+        "blocked_factor": null,
+        "inversion_parity": [
+          0
+        ]
+      },
+      "history": [
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "reset",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "probe",
+          "observation": 1,
+          "survivors": [
+            [
+              4,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        }
+      ],
+      "native_trace": [
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "probe",
+          "observation": 1
+        }
+      ],
+      "income": "10",
+      "source_remaining": 0
+    },
+    "factored_access_ambiguity": {
+      "status": "complete",
+      "retained": true,
+      "final_belief": [
+        [
+          3,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          11,
+          2
+        ]
+      ],
+      "verdict": {
+        "status": "ambiguous",
+        "alternatives": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "agrees": {
+          "readiness_flip": [
+            0,
+            1
+          ],
+          "sensor_flip": [
+            0,
+            1
+          ],
+          "broken_reset": [
+            0
+          ],
+          "blocked_transfer": [
+            0,
+            1
+          ]
+        },
+        "blocked_factor": null,
+        "inversion_parity": [
+          0
+        ]
+      },
+      "history": [
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "reset",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "blocked_factor": [
+            0,
+            1
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              11,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "probe",
+          "observation": 0,
+          "survivors": [
+            [
+              3,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              11,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        }
+      ],
+      "native_trace": [
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        }
+      ],
+      "income": "0",
+      "source_remaining": 0
+    },
+    "inverted_consequence_receipt": {
+      "status": "complete",
+      "retained": true,
+      "final_belief": [
+        [
+          3,
+          2
+        ]
+      ],
+      "verdict": {
+        "status": "unique",
+        "alternatives": [
+          [
+            3,
+            2
+          ]
+        ],
+        "agrees": {
+          "readiness_flip": [
+            1
+          ],
+          "sensor_flip": [
+            1
+          ],
+          "broken_reset": [
+            0
+          ],
+          "blocked_transfer": [
+            0
+          ]
+        },
+        "blocked_factor": null,
+        "inversion_parity": [
+          0
+        ]
+      },
+      "history": [
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "reset",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        },
+        {
+          "command": "probe",
+          "observation": 0,
+          "survivors": [
+            [
+              3,
+              2
+            ]
+          ],
+          "blocked_factor": null
+        }
+      ],
+      "native_trace": [
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        }
+      ],
+      "income": "10",
+      "source_remaining": 0
+    }
+  },
+  "interpretive_limits": [
+    "The H3 matched contrast changes inquiry duration within a fixed primitive command and observation interface.",
+    "G0's first later-use action/read is physically the same as G1's extra acquisition action/read. Total native traces diverge only after G0's use completes.",
+    "The receipt-to-method mapping, candidate generators and singleton stopping rule are supplied.",
+    "Primary unary query order also matches fixed bounded enumeration; suffix revision alone does not discriminate adaptive physical sampling.",
+    "Diagnoser.run receives probe versus sensor-only choice as an argument; acquired belief controls movement within the selected protocol."
+  ]
+}

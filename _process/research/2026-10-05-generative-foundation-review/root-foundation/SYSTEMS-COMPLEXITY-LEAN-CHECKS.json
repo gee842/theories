@@ -1,0 +1,593 @@
+{
+  "checked_at_utc": "2026-10-06T08:47:18.887506+00:00",
+  "status": "passed",
+  "scope": "Current Lean integration links and correspondence to the two accepted proof receipts; no repeated scientific run.",
+  "distinct_new_audits": 104,
+  "selected_inherited_core_audits": 18,
+  "new_empty_axiom_audits": 31,
+  "local_links_checked": 104,
+  "errors": [],
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "NONDUAL-METHOD.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md#2-bertalanffy-general-systems-theory-and-cybernetics-overlap-without-identity",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md#1-bertalanffy-laws-of-classes-of-organized-systems",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../sources/41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../README.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "GENERATIVE-GROUNDING.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "NONINSTRUMENTAL-CONCERN.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../sources/41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md#lean-follow-up",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/verification.json",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/verification.json",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/CHAOS-LEAN-NOTES.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/verification.json",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsComplexity.lean",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/verification.json",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/verification-history/before-core-correspondence/verification.json",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/verification.json",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "SystemsOrganization.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "FeedbackDynamics.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "SymbolicDynamics.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "SystemsComplexity.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "analysis/RealFeedback.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "check.py",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "verification.json",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "verification/SystemsComplexity.txt",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "verification-history/before-core-correspondence/verification.json",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "analysis/check.py",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "analysis/verification.json",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "SYSTEMS-LEAN-NOTES.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "FEEDBACK-LEAN-NOTES.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "target": "CHAOS-LEAN-NOTES.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SYSTEMS-LEAN-NOTES.md",
+      "target": "SystemsOrganization.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SYSTEMS-LEAN-NOTES.md",
+      "target": "../GenerativeCore.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SYSTEMS-LEAN-NOTES.md",
+      "target": "check.py",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SYSTEMS-LEAN-NOTES.md",
+      "target": "verification.json",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SYSTEMS-LEAN-NOTES.md",
+      "target": "verification-history/before-core-correspondence/verification.json",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SYSTEMS-LEAN-NOTES.md",
+      "target": "SystemsComplexity.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FEEDBACK-LEAN-NOTES.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FEEDBACK-LEAN-NOTES.md",
+      "target": "FeedbackDynamics.lean",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/CHAOS-LEAN-NOTES.md",
+      "target": "SymbolicDynamics.lean",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "2026-10-06-concern-inquiry-revision.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "2026-10-06-project-wide-nondual-method.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "pass": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "pass": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "pass": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md#lean-follow-up",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md#lean-completion-of-the-mathematical-connections",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md#lean-completion-of-the-mathematical-connections",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md#lean-completion-of-the-mathematical-connections",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "target": "INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../sources/41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/README.md",
+      "target": "integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "pass": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "systems-complexity/README.md",
+      "pass": true
+    }
+  ],
+  "receipt_source_hash_checks": [
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsComplexity.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsComplexity.lean",
+      "pass": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean",
+      "pass": true
+    }
+  ],
+  "owned_markdown_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md": "0a2553c2a163ec1281d505ebc6cfff8468811fe3e62b09f508e90ec2189fe5ff",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md": "15119d1cb84073f41ad51e0e55e3791afd55f0ce29e816fe6b4887b6556a845e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md": "8be07f170cd0e84eb56abe1e52ea4b72696fc41ad8bd0e7b47cd3ae354121260",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md": "5b4d51911ea82dc7fc015c381c9bd83bdc88b5299f673d4fbcb2e424da269d36",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SYSTEMS-LEAN-NOTES.md": "b19d2ba49f66c5bfad4d50d210ff4af478870b51ab4f017446ccbc0c83d11281",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FEEDBACK-LEAN-NOTES.md": "310fc4bbc77dda741c1324a75c26b86bf6351d7ce7c11f8cf925ddfa0d87bd0c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/CHAOS-LEAN-NOTES.md": "d878c776212503c49af15483f6fc5eaff24355f2ae9c137157cc7937621ff7ab",
+    "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md": "c0a3d787da47d5aaa007200c25833dcfb4c599db8d3fd7fcca52f9ec1912a9ac"
+  },
+  "source_pdf_preservation": "Both original PDF hashes unchanged",
+  "proof_receipts": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/verification.json": "b63d7ee11df965310e6632dc68a4b0d1d4cc6600fa0317dbbb9f06e7b0284411",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/verification.json": "192ddc29f5aec599db60fae63d09b18d33e7282efae04825447d857eba3b50ef"
+  }
+}

@@ -1,0 +1,4 @@
+'NondualConcernAdapter.legacy_c2_is_situational_contract' does not depend on any axioms
+'NondualConcernAdapter.contract_pulls_back' does not depend on any axioms
+'NondualConcernAdapter.covered_role_presentation_reflects_contract' does not depend on any axioms
+'NondualConcernAdapter.covered_role_presentation_contract_iff' does not depend on any axioms

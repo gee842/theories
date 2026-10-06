@@ -1,0 +1,8 @@
+'GenerativeBoundary.ObservationLoss.no_observation_only_classifier' does not depend on any axioms
+'GenerativeBoundary.SharedResource.individual_feasibility_without_joint_feasibility' does not depend on any axioms
+'GenerativeBoundary.FixedSelector.returns_after_two' does not depend on any axioms
+'GenerativeBoundary.FixedSelector.changes_phase_every_step' does not depend on any axioms
+'GenerativeBoundary.FixedSelector.selector_changes_next_phase' does not depend on any axioms
+'GenerativeBoundary.FixedSelector.selector_preserved_by_step' does not depend on any axioms
+'GenerativeBoundary.FixedSelector.selector_unchanged_at_every_time' does not depend on any axioms
+'GenerativeBoundary.FixedSelector.recurrent_process_with_fixed_selector' does not depend on any axioms

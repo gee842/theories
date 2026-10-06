@@ -1,0 +1,48 @@
+ConnectedModel.lean:70:40: error(lean.invalidField): Invalid field notation: Type of
+  w
+is not known; cannot resolve field `core`
+
+Hint: Consider replacing the field projection with a call to one of the following:
+  • `AcquiredEvaluation.core`
+  • `FreshRevision.core`
+  • `RecipientAction.core`
+  • `ActionWitness.ArchiveEvent.core`
+  • `EmissionArchive.Event.core`
+  • `State.core`
+  • `RecipientArchive.Event.core`
+  • `RecipientArchive.World.core`
+  • `RevisionWitness.Command.core`
+  • `SuccessionWitness.Command.core`
+  • `Lean.Grind.CommRing.Stepwise.core`
+ConnectedModel.lean:70:15: error: Type mismatch
+  congrArg fun w => ?m.229
+has type
+  ?m.226 = ?m.227 → ?m.230 ?m.226 = ?m.230 ?m.227
+but is expected to have type
+  (advance laws s (Event.bank EmissionArchive.Event.write)).core.patient = s.core.patient
+ConnectedModel.lean:68:4: error: Alternative `core` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `assemble` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `omitWindow` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `copyRead` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `copyWrite` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `bindAccess` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `release` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `probeStart` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `probeEnd` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `prepare` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `reason` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `read` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `assess` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `attempt` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `abstain` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `scope` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `permission` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `delivery` has not been provided
+ConnectedModel.lean:62:2: error: Alternative `access` has not been provided
+ConnectedModel.lean:71:8: error: unexpected token '('; expected command
+'Generative.ConnectedModel.permission_cut_step' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_trial_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_bank_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_step_preserves_patient' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ConnectedModel.permission_cut_trace' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ConnectedModel.permission_cut_connected_accounts' depends on axioms: [propext, sorryAx, Quot.sound]

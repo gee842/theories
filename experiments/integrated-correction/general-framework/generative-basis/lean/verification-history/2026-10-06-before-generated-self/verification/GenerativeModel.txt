@@ -1,0 +1,5 @@
+'Generative.Model.laws_iff_endpoint_histories' does not depend on any axioms
+'Generative.Model.boolean_symmetry_iff_history_classes' does not depend on any axioms
+'Generative.Model.reduced_boolean_properties_iff_history_classes' does not depend on any axioms
+'Generative.Model.symmetric_laws_same_words_different_histories' does not depend on any axioms
+'Generative.Model.synchronized_word_constraints_preserve_feasibility_agreement' does not depend on any axioms

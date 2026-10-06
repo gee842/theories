@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "status": "accepted_and_frozen_before_any_learned_dispatch",
+  "at_utc": "2026-10-06T04:24:16.034497+00:00",
+  "files": {
+    "broker.py": {
+      "sha256": "cfdf39a5f7cfcce9fca2ce79e9f83b09769b1a59c5ae8111bdd17dd4fd5b2463",
+      "snapshot": "frozen/dispatch/broker.py"
+    },
+    "baseline.py": {
+      "sha256": "b605991a1dfa365f65539f65f81404c7b6505864d7e4b27f2fe1b136938d1ecc",
+      "snapshot": "frozen/dispatch/baseline.py"
+    },
+    "score.py": {
+      "sha256": "ce229a7decc58501ba6318c780b7cf5dc49a268731b20474af760af0e655bf6d",
+      "snapshot": "frozen/dispatch/score.py"
+    },
+    "PROTOCOL.md": {
+      "sha256": "a9db48eaaa401f52adbbe19fc9aee7e71f55174d5fd50607894f329b6f5d0692",
+      "snapshot": "frozen/dispatch/PROTOCOL.md"
+    },
+    "SCORING-CLARIFICATION.md": {
+      "sha256": "9781d3b2202fa48b9e3658334e17facccdcceb3575d25a1bbfd283caae2809d1",
+      "snapshot": "frozen/dispatch/SCORING-CLARIFICATION.md"
+    },
+    "TASK.txt": {
+      "sha256": "6ff25f1b9ed18fcc92d0d533932d6c0f7e13c621f0ba8c08693ac6f55cfb397b",
+      "snapshot": "frozen/dispatch/TASK.txt"
+    },
+    "CONTINUE.txt": {
+      "sha256": "fb15e69b9e6cbaa1e71da793638f4f07775c52bcd09c7464b88364f504aca16e",
+      "snapshot": "frozen/dispatch/CONTINUE.txt"
+    },
+    "PARSE-ERROR.txt": {
+      "sha256": "3e5211b9ea366d357ad54b496dfa675a256d0d4ea9da6eee86b8249ce03eb1d3",
+      "snapshot": "frozen/dispatch/PARSE-ERROR.txt"
+    },
+    "COHORT.json": {
+      "sha256": "6dbccd8045017d795da432cf248824f526d9bea76df879317b01f0284358ab90",
+      "snapshot": "frozen/dispatch/COHORT.json"
+    },
+    "case-manifest.json": {
+      "sha256": "193596d4261a7a8e193126d244418f556666c7f0e4d53f337547688de573f017",
+      "snapshot": "frozen/dispatch/case-manifest.json"
+    },
+    "REVIEW.md": {
+      "sha256": "e6a2e26b0112078fb100a1065e95a781873a0aee4c7772524ad791c8f559e3f0",
+      "snapshot": "frozen/dispatch/REVIEW.md"
+    },
+    "dispatch-arguments.json": {
+      "sha256": "a154763ff4377a7a341f87088588a09f9d1668aaeecc81c8d542b9df7e54bc1d",
+      "snapshot": "frozen/dispatch/dispatch-arguments.json"
+    },
+    "BASELINE-ACCOUNTING.json": {
+      "sha256": "9de62337f3212509002dd6a2664f80a6a838b83597667b7ea832bc409b9751b5",
+      "snapshot": "frozen/dispatch/BASELINE-ACCOUNTING.json"
+    },
+    "BASELINE-ACCOUNTING-ROOT.json": {
+      "sha256": "a28c90b9ea47ba595b99cfa72a80d8f39c8e1456b3203e2f08b7e5ed802e1452",
+      "snapshot": "frozen/dispatch/BASELINE-ACCOUNTING-ROOT.json"
+    },
+    "BASELINE-ACCOUNTING-REVIEW.json": {
+      "sha256": "9a7a62562eb24c04d510ff1b959231ae82adc90eb0a7ee6323d08a5e1383a4aa",
+      "snapshot": "frozen/dispatch/BASELINE-ACCOUNTING-REVIEW.json"
+    },
+    "baseline-b01-score.json": {
+      "sha256": "66e1b3e2d237813d6370b9d3decf01cb1e075030e8f9feed6c673239706eac9f",
+      "snapshot": "frozen/dispatch/baseline-b01-score.json"
+    },
+    "baseline-b02-score.json": {
+      "sha256": "cd8badd565604cae981ab99d0c214df11d4fcc5479b3d886e2fa79ef11b3725f",
+      "snapshot": "frozen/dispatch/baseline-b02-score.json"
+    },
+    "IMPLEMENTATION-FREEZE.json": {
+      "sha256": "d379b591b5352cf9ff34ecd1dda082c1e53d5f3fb4d3a9778eeb7dc54c779990",
+      "snapshot": "frozen/dispatch/IMPLEMENTATION-FREEZE.json"
+    },
+    "development/scoring/preflight-results.json": {
+      "sha256": "c4e081b0ad97cb7500d55dede1991901f195eb5226dd3ec85f4cc8ac52af6a24",
+      "snapshot": "frozen/dispatch/development/scoring/preflight-results.json"
+    },
+    "development/review/preparation-review-01.json": {
+      "sha256": "25ffea51a4e43e350cdae6b3a185a2526788e6360a704a2f9d7510cacb02da48",
+      "snapshot": "frozen/dispatch/development/review/preparation-review-01.json"
+    },
+    "prompts/w01.txt": {
+      "sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+      "snapshot": "frozen/dispatch/prompts/w01.txt"
+    },
+    "prompts/w02.txt": {
+      "sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+      "snapshot": "frozen/dispatch/prompts/w02.txt"
+    }
+  },
+  "worker_initial_states": {
+    "w01": {
+      "sha256": "53862f5dd7a29fc6685d6bca758208e5fd338d5c13d21b91e1661da028005462",
+      "snapshot": "frozen/dispatch/initial-states/w01.json",
+      "preparation_sha256": "51d05beac287f78f788881aa408d0b16aa559c3106e6775573de059ecbf868c7"
+    },
+    "w02": {
+      "sha256": "83b6327776f5a68241f3c3efdfcfbbcbc9c0b145903f7c2fc309230f468baa79",
+      "snapshot": "frozen/dispatch/initial-states/w02.json",
+      "preparation_sha256": "69e2fba886a889626d9696e11db6e4bbdb62cb3f9b875aba51237938485d8255"
+    }
+  },
+  "dispatch_model": "No override; inherited runtime model, exact model version not reported by collaboration schema",
+  "limits": "Mediated operations only; same-host known-defect workflow; no causal superiority or acquired-concern claim"
+}

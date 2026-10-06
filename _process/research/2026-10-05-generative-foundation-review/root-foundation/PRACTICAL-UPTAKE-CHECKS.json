@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "scope": "Document integrity of revised canonical, four follow-up notes, six owned additive integration paragraphs and byte-preserved historical canonical. Philosophical review is internal collaborating-AI review; these checks do not validate ethical truth or unrelated concurrent work.",
+  "current_files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "d76a4a19240c2ee36c84743a4babe301fd6b6fe5598c17d6be16bb946055543e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-ARGUMENT.md",
+      "sha256": "c50e8d8e26ab16fbaac4c5e85e91767fb4240b4f0709003429a8181f7bc73733"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-COUNTERREVIEW.md",
+      "sha256": "2cbcb3cacb0ecb9d4f285c33284eac86bc6d8ea594b2583d2d68c9edb7cdeb3d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-SOURCES.md",
+      "sha256": "eba643f9e993bb3b15fad26292c8de7737bdd3b3b74b82cb52b8292f4216d075"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-INTEGRATION.md",
+      "sha256": "463b531d5b9568780b91fce8968cc3b75977f34b3d155e4f8374bfdab73415df"
+    }
+  ],
+  "owned_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "marker": "**Direct patient-ground before end adoption,",
+      "paragraph_sha256": "07e419c73581638ac50b4ad665175b5523a4861a21d3bb360386bea27651aeb1"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "marker": "**Patient benefit can precede a helping end,",
+      "paragraph_sha256": "a4d83931442c241c15193489b03811dc4138dd6dc94346bbc55c7e7067fc4523"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "marker": "**Practical uptake without a prior adopted end,",
+      "paragraph_sha256": "40779cb7f0a47f72e9f8220fd57f59153074d5280db5157dc95bd8281afe6b15"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "marker": "**Patient significance → direct action reason → possible practical uptake,",
+      "paragraph_sha256": "8f87fe0d841e31503c8a1c29530bbab985e105263db30ac24820ff172564a601"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "marker": "**Direct-reason continuation:**",
+      "paragraph_sha256": "ad5a7b416753cc559cfe747f7e0de2f7f7e64208360f00c17589beb87ba524f9"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "marker": "Practical-uptake primary comparison,",
+      "paragraph_sha256": "9e47d257ff625bf631f8c2084d5d20f7e8db633ebe518f36d084f66254c75585"
+    }
+  ],
+  "local_links_checked": 79,
+  "heading_fragments_checked": 17,
+  "reviewed_snapshot_hashes_verified": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-SOURCES.md"
+  ],
+  "historical_canonical": {
+    "date": "2026-10-06",
+    "purpose": "Byte-preserving historical formulation before correcting the possible mandatory end-adoption route. This is a preserved research version, not another active editing location.",
+    "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-PRACTICAL-UPTAKE.md",
+    "sha256": "4d31e3928f86b89643817a2a62d15f4c539e7b25075875f8eacc451865397904",
+    "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+    "prior_receipt": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GROUNDING-CHECKS.json",
+    "note": "Relative links in this unmodified snapshot retain their original canonical base. The earlier receipt remains a historical result; the current version is checked separately."
+  },
+  "five_prior_files_and_six_prior_paragraphs_unchanged": true,
+  "new_empirical_studies": 0,
+  "new_formal_theorems": 0,
+  "errors": []
+}

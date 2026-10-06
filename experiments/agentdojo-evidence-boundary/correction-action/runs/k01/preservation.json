@@ -1,0 +1,39 @@
+{
+  "case_id": "k01",
+  "artifacts": [
+    {
+      "original_relative_path": "analysis-note.md",
+      "sha256": "415001d3ecc775dc8379ce4ba68fd5e011bff4f887a223a02ed77827639b160d",
+      "bytes": 4684,
+      "encoding": "identity",
+      "storage": "preserved_unique_bytes",
+      "saved_path": "experiments/agentdojo-evidence-boundary/correction-action/runs/k01/analysis-note.md",
+      "stored_sha256": "415001d3ecc775dc8379ce4ba68fd5e011bff4f887a223a02ed77827639b160d"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay.py",
+      "sha256": "10dec2fd6177a5f7a971a819d81fbd23cbc7875145ae567a82c4aed65b3e1271",
+      "bytes": 23536,
+      "storage": "existing_exact_reference",
+      "reference_path": "experiments/agentdojo-evidence-boundary/replay.py"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay-results.json",
+      "sha256": "9bb0f3207bed4404ed82e424b5347b1fd3b811c44b9b260b799c7847ea0ef4e7",
+      "bytes": 5148640,
+      "storage": "existing_exact_reference",
+      "reference_path": "experiments/agentdojo-evidence-boundary/replay-results.json"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay-receipt.json",
+      "sha256": "4e8828fc794ba0752bf26b2a385a71ae2e7ff8df83b8d2360437900ccd79a9e0",
+      "bytes": 1015,
+      "storage": "existing_exact_reference",
+      "reference_path": "experiments/agentdojo-evidence-boundary/replay-receipt.json"
+    }
+  ],
+  "final_inventory_sha256": "4d87260d51fdb5ad1631e09b6eb20d79dfafabb44dfa66a295d83666550ededf",
+  "dispatch_sha256": "5c61de68c5eb4bfd3909b2cc4bf35f367e397b2b63d5e33486f9619e50bfeed7",
+  "received_final_sha256": "7f835ee5c23b43b8160953702e4b87f308faca095270298bb1701f4b8b9a675e",
+  "final_provenance": "Orchestrator copy of received collaboration final; no independent full tool transcript."
+}

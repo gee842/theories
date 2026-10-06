@@ -1,0 +1,55 @@
+MODULE GenerativeCore
+COMMAND ["/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean", "-o", "GenerativeCore.olean", "GenerativeCore.lean"]
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+
+MODULE DynamicUnderdetermination
+COMMAND ["/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean", "-o", "DynamicUnderdetermination.olean", "DynamicUnderdetermination.lean"]
+'Generative.Deeper.idle_no_event' does not depend on any axioms
+'Generative.Deeper.static_event' does not depend on any axioms
+'Generative.Deeper.static_never_changes' does not depend on any axioms
+'Generative.Deeper.toggle_event' does not depend on any axioms
+'Generative.Deeper.toggle_always_changes' does not depend on any axioms
+'Generative.Deeper.static_history_never_changes' does not depend on any axioms
+'Generative.Deeper.toggle_two_event_cycle' does not depend on any axioms
+'Generative.Deeper.same_carrier_incompatible_laws' does not depend on any axioms
+'Generative.Deeper.event_without_state_distinction' does not depend on any axioms
+
+MODULE DynamicSymmetry
+COMMAND ["/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean", "-o", "DynamicSymmetry.olean", "DynamicSymmetry.lean"]
+'Generative.Deeper.unique_predecessor_of_total_deterministic_symmetric' does not depend on any axioms
+'Generative.Deeper.static_total' does not depend on any axioms
+'Generative.Deeper.toggle_total' does not depend on any axioms
+'Generative.Deeper.static_deterministic' does not depend on any axioms
+'Generative.Deeper.toggle_deterministic' does not depend on any axioms
+'Generative.Deeper.static_symmetric' does not depend on any axioms
+'Generative.Deeper.toggle_symmetric' does not depend on any axioms
+'Generative.Deeper.static_unique_predecessor' does not depend on any axioms
+'Generative.Deeper.toggle_unique_predecessor' does not depend on any axioms
+'Generative.Deeper.identity_bool_bijection' does not depend on any axioms
+'Generative.Deeper.negation_bool_bijection' does not depend on any axioms
+'Generative.Deeper.injective_bool_map_forms' does not depend on any axioms
+'Generative.Deeper.injective_bool_map_commutes_not' does not depend on any axioms
+'Generative.Deeper.static_renaming_invariant' does not depend on any axioms
+'Generative.Deeper.toggle_renaming_invariant' does not depend on any axioms
+'Generative.Deeper.static_symmetry_candidate' does not depend on any axioms
+'Generative.Deeper.toggle_symmetry_candidate' does not depend on any axioms
+'Generative.Deeper.static_ne_toggle' does not depend on any axioms
+'Generative.Deeper.no_state_map_identifies_static_toggle' does not depend on any axioms
+'Generative.Deeper.symmetric_dynamics_remain_underdetermined' does not depend on any axioms

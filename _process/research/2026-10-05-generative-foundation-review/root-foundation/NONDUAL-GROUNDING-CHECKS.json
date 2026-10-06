@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integrity and preservation only. No claim of ontological, moral, empirical or formal proof.",
+  "owned_documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "sha256": "083bfca5a6cefeff5fb8b1c72f005672825eac2ec8da36f4258748ae21ed35e5",
+      "bytes": 37051
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GROUNDING-QUESTION.md",
+      "sha256": "7e73fcc151f0e627af2bb20dc4295339b6b78d408625b6f0a2a6a7003a9cb7d7",
+      "bytes": 10218
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-nondual-me-world-intuition.md",
+      "sha256": "8560e41f4578b744fdd666dd2537ea87f51a82427849709761dfe508ebb0b335",
+      "bytes": 1487
+    }
+  ],
+  "local_links_checked": 73,
+  "snapshot_hash_verified": "ef81d3c9db748fa7dbc120b177fb6d7bb25b6358b38c3bae8d88a9e547bdb939",
+  "shared_additions_checked": 5,
+  "errors": [],
+  "goal_status": "active; tentative user steering reopens root formulation; previous conditional results retained"
+}

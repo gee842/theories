@@ -1,0 +1,59 @@
+The JSON below is the unedited response to your preceding operation. Use its actual evidence and current authority to select the next operation. Return exactly one JSON request. No additional instructions or task changes are implied.
+
+{
+  "schema_version": 1,
+  "attempt_id": "a0004",
+  "request_id": "audit-w02-004",
+  "operation": "stage",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "candidate": "c0001",
+    "base": "v0",
+    "code": {
+      "path": "candidates/c0001/replay.py",
+      "sha256": "10dec2fd6177a5f7a971a819d81fbd23cbc7875145ae567a82c4aed65b3e1271",
+      "bytes": 23536
+    },
+    "patch": {
+      "path": "candidates/c0001/patch.diff",
+      "sha256": "6b6238820b3777e70cd3adcdd7c4bc633e0689b91e332028d8cdeddfd89eb391",
+      "bytes": 1743
+    }
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v0",
+    "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

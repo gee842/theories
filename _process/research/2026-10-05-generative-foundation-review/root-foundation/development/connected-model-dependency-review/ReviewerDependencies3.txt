@@ -1,0 +1,23 @@
+'DependencyReview.exhaustiveRoute' does not depend on any axioms
+'DependencyReview.route_equal' depends on axioms: [propext]
+def RecipientArchive.producer : RecipientCorrection.Laws →
+  (Nat → Bool) →
+    EmissionArchive.Producer RecipientArchive.World RecipientArchive.Event RecipientArchive.Header
+      RecipientArchive.Frame :=
+fun laws backing =>
+  { step := RecipientArchive.Step laws, bind := fun s i h => RecipientArchive.binding s i h ∧ i < 3 ∧ backing i = true,
+    writable := fun s => s.live = true, emission := RecipientArchive.emission, encode := RecipientArchive.encode,
+    fourBits := RecipientArchive.producer._proof_1,
+    encoding_injective := fun {r x} => RecipientArchive.encode_injective,
+    energy := fun s => RecipientIdentification.energy s.core, charge := fun s e x => RecipientArchive.charge laws s e,
+    ledger := fun {s t} {e} => RecipientArchive.step_energy }
+@[reducible] def RecipientAction.route._sparseCasesOn_1.{u} : {motive : Bool → Sort u} →
+  (t : Bool) → motive true → (Nat.hasNotBit 2 t.ctorIdx → motive t) → motive t :=
+fun {motive} t true =>
+  Bool.rec (motive := fun t => (Nat.hasNotBit 2 t.ctorIdx → motive t) → motive t) (fun «else» => «else» ⋯)
+    (fun «else» => true) t
+@[reducible] def RecipientAction.route._sparseCasesOn_2.{u} : {motive : Bool → Sort u} →
+  (t : Bool) → motive false → (Nat.hasNotBit 1 t.ctorIdx → motive t) → motive t :=
+fun {motive} t false =>
+  Bool.rec (motive := fun t => (Nat.hasNotBit 1 t.ctorIdx → motive t) → motive t) (fun «else» => false)
+    (fun «else» => «else» ⋯) t

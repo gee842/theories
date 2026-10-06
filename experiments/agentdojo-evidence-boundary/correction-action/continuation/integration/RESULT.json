@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-06",
+  "status": "local_study_completed_and_integrated",
+  "scope": "Four fixed episodes accepted at frozen local scope, with parent-restored runtime in w01. Conventional comparator also succeeds. No general alignment, novel algorithmic advantage, external peer review or whole-foundation completion claimed.",
+  "artifacts": [
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/RESULTS.md",
+      "bytes": 10452,
+      "sha256": "5fe773bd761dab83df31a79965fa8521119940a7941f8f6c82646585a02984c5"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/RESULTS-REVIEW.md",
+      "bytes": 12161,
+      "sha256": "6cfeb8fb6dc0b622820ed3c3cfa08e950a564c3110e854f3a440ecd2a2ea4860"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/scores.json",
+      "bytes": 44080,
+      "sha256": "6458c902ae146276d6da7962927dab8926cfb09bf8e3ee0eb608736dae3e7c02"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/ALL-ACCOUNTING.json",
+      "bytes": 9598,
+      "sha256": "43926d28c336d297a8d1c06c0ae78b0e4f2325b78c02a1adff6a2248a15eebd2"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/LEARNED-ACCOUNTING-ROOT.json",
+      "bytes": 2403,
+      "sha256": "5481656e88961bcd48daadadbc09ac9357e4accfbdb794a58876669ec72be764"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/LEARNED-ACCOUNTING-REVIEW.json",
+      "bytes": 3205,
+      "sha256": "a458fcb1039d6fe3531e992817e2090a25d71176d680555dc6c6e7f5d6957b23"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/cohort-effects-score.json",
+      "bytes": 38456,
+      "sha256": "8dcd744f68d93873b229130f683b4a4079592886a43947d4a7884f82ca4c1e43"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/preservation.json",
+      "bytes": 3977705,
+      "sha256": "7cb33d6f1b79f36c56814e3eb033d631c86022b5ed35a93195379417c97f57f5"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/PRESERVATION-CHECK.json",
+      "bytes": 241,
+      "sha256": "44307b50fbf3bdcfb73abdfbbc7f80468e7f0ee99adcf0685161768640e54ead"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/TRANSPORT-DEVIATIONS.md",
+      "bytes": 4489,
+      "sha256": "c0f46db5cfc598eeb298f9d845823d49ae5c17c7c0c0ead4fb4514d03e644629"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/DISPATCHES.json",
+      "bytes": 1487,
+      "sha256": "6841a268331814dfdbe91fa91e78cec8bd3620fe06e0cc4e8668ac928c562281"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/ADDITIONAL-TRANSPORT.json",
+      "bytes": 1067,
+      "sha256": "60a6073b09ee85799d3785219a1542c0bf80f653a749c7e9b6bff9d0be4d60ce"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/transcripts/transport-messaging.jsonl",
+      "bytes": 9552,
+      "sha256": "b3df1386e96006f359634ec4f3767a34853ac2f22f433fc06bdbb36be4c4b370"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/BEFORE.json",
+      "bytes": 4688,
+      "sha256": "c607ebf58e230fff51f1b6a3a883277e6a96c401f18271a208494bd83e7fb93e"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/REBASED-EDITS.json",
+      "bytes": 18399,
+      "sha256": "21cb5ea4c3b453459a44ab51e0bae00840ef744f033a4113b8a2d48fe004d820"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/README-EDIT.json",
+      "bytes": 400,
+      "sha256": "0d3a3a50ff7130045dca2a38db834ca962059c6cff39df055ae898ef9d963550"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/CHECKS.json",
+      "bytes": 35647,
+      "sha256": "3b9c7b6a7a954dc36d09fa943052044220e80c716e93f69043e1e95f1b4fd679"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/development/review/learned-record-review-01.json",
+      "bytes": 6777,
+      "sha256": "7b168e88becf58bc2570065d5c8a04aeb9014642e9f7b9830f6961d357af3cdb"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/development/review/terminal-preservation-review-01.json",
+      "bytes": 677,
+      "sha256": "f187ed9871c09a0855344d8a7dc5f46371b4a3330a86292c866d3148be0fb880"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/FRONTIER-CONSTRUCTIVE-ALIGNMENT-NOTE.md",
+      "bytes": 3601,
+      "sha256": "61c24145525cdebd5ead524f57a4ac0789673951d7b55e056886222ab6d04ff4"
+    }
+  ],
+  "integration_documents_at_delivery": [
+    {
+      "path": "RESEARCH.md",
+      "recorded_after_sha256": "82c55b21d39fd458a8f810af6c59a293a86eb8e8287d8d825eac2b03cf27a939",
+      "current_sha256": "82c55b21d39fd458a8f810af6c59a293a86eb8e8287d8d825eac2b03cf27a939",
+      "same": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "recorded_after_sha256": "e7252bb6688996eb23f5aa8c8c5edc26af4dd40dd23bc3400ddc2fc2ccb248b6",
+      "current_sha256": "e7252bb6688996eb23f5aa8c8c5edc26af4dd40dd23bc3400ddc2fc2ccb248b6",
+      "same": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "recorded_after_sha256": "06128e677a19a47509650d85e1053bd13876e5042a9542dff68fe346bb243bdf",
+      "current_sha256": "06128e677a19a47509650d85e1053bd13876e5042a9542dff68fe346bb243bdf",
+      "same": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "recorded_after_sha256": "8282057300e2394be2bd33003875c3ea5aac77c18c4bf3fd4b919c1a08873abb",
+      "current_sha256": "8282057300e2394be2bd33003875c3ea5aac77c18c4bf3fd4b919c1a08873abb",
+      "same": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "recorded_after_sha256": "1cfd896417f3f84fbc3b43d56c340a4eb77c3f7fb39df35866cb6039416505e4",
+      "current_sha256": "1cfd896417f3f84fbc3b43d56c340a4eb77c3f7fb39df35866cb6039416505e4",
+      "same": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "recorded_after_sha256": "90d9fa30f5e64b3a4102695107ef121a4958c0f04a80939e26313f8a099ca9e4",
+      "current_sha256": "90d9fa30f5e64b3a4102695107ef121a4958c0f04a80939e26313f8a099ca9e4",
+      "same": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md",
+      "recorded_after_sha256": "e2fec86e87a014de3cf2e56ab53a788804f52a793766f4258e2bf2d93fdf6017",
+      "current_sha256": "e2fec86e87a014de3cf2e56ab53a788804f52a793766f4258e2bf2d93fdf6017",
+      "same": true
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/README.md",
+      "recorded_after_sha256": "3031ef7355cb22d529cb0416516b2267539dea9a852c4080e424585203943aa1",
+      "current_sha256": "3031ef7355cb22d529cb0416516b2267539dea9a852c4080e424585203943aa1",
+      "same": true
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/README.md",
+      "recorded_after_sha256": "3e0733587fb6d8370d6c83f5d03e16e55b20deac71dbdef20d57c0989941a260",
+      "current_sha256": "3e0733587fb6d8370d6c83f5d03e16e55b20deac71dbdef20d57c0989941a260",
+      "same": true
+    }
+  ],
+  "seven_broader_alignment_requirements": "unchanged and open",
+  "next_unresolved_application_connection": "Warranted actual action through changes in means, private incentives, affected claimants or successor context; these variables were not varied here. Stronger root goal remains separate and active."
+}

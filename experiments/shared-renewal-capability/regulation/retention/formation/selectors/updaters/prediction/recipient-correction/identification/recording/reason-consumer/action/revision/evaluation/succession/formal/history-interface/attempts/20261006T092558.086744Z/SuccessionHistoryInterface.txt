@@ -1,0 +1,24 @@
+'SuccessionHistoryInterface.withHistory_self' does not depend on any axioms
+'SuccessionHistoryInterface.withHistory_overwrite' does not depend on any axioms
+'SuccessionHistoryInterface.live_data' does not depend on any axioms
+'SuccessionHistoryInterface.archive_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.current_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.command_withHistory' depends on axioms: [propext]
+'SuccessionHistoryInterface.known_withHistory' depends on axioms: [propext]
+'SuccessionHistoryInterface.help_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.energy_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.material_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.enabled_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.advance_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.charge_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.run_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.runnable_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.spent_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.trace_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.continuation_interface' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.toOld_withHistory' depends on axioms: [propext]
+'SuccessionHistoryInterface.bankWord_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.runBank_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.actual_suffix_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.actual_suffix_accounting' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.actual_suffix_live_outcome' depends on axioms: [propext, Quot.sound]

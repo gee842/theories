@@ -1,0 +1,42 @@
+'SystemsComplexity.SupportedRevision.gain_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycle_plant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycle_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycle_fuel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycle_packets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.acquired_observation_controls_next_gain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.fuel_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.exact_total_support_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.total_support_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycle_support_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycles_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycles_fuel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycles_packets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.funded_cycles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.funded_cycles_generative_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.funded_cycles_exact_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.selected_gain_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.cycle_trajectory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.funded_regulation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.depleted_packets_block_operation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.original_packets_exhaust' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.any_history_length_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.no_infinite_execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.actual_revision_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SupportedRevision.clamped_reader_changes_later_operation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SupportedRevision.matched_reader_support' depends on axioms: [propext, Classical.choice, Quot.sound]

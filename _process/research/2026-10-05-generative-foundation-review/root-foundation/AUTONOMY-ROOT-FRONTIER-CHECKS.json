@@ -1,0 +1,55 @@
+{
+  "scope": "document and source-currency checks; formal arguments are hand proofs with separate internal review",
+  "documents_or_owned_sections": 20,
+  "local_links": 89,
+  "anchors": 6,
+  "formula_delimiters": "balanced",
+  "full_file_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md": "00be09a14fda3ae3fc53ea859b2e105032e8d8ba18d51b11aa753fb0ff067d02",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md": "78c8bb5b445c7cafeaed5d8e5a4a532d9f67359c8104a0c3414d9c7ded203bc6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-MATH.md": "1cf3fcf0badb92a4829cc3e6b6118263d9d4cea554aac6d519f1ee5b93c434b7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-REVIEW.md": "f2d0d80432fc1b6e1aef35468ce4fd2b40b16b8846e58f8244b30f0dbfdc681d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ROOT-FRONTIER-MATH.md": "1d5b9cc946ed88a30bc2fbf20df114d05a9dc1d08541d3732241e887f9fe1918",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ROOT-FRONTIER-SOURCES.md": "75e2c736ccd92bb8960dc76393a4e4a171272db5afd6aae4357ef5473ec04877",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ROOT-FRONTIER-REVIEW.md": "ad61ac381dc40c0bd52e31fae7959a4f14c678df2ac41c635f6be7f35bc73781",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/README.md": "f06fb88d8e08c154a5ff488beb7d154952895ebcea9937f428e8664bcbc22681",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/PROTOCOL.md": "0491194fc7502ea6be11375f793ffc96fe3b60ba59c1468e5afe0c17eb53cd65",
+    "sources/15-codex-theory-conversations/2026-10-06-autonomy-and-mathematical-root-frontier.md": "8e1582f1fad3d0051b15f7ca5037bf80d4b1a5a63cab70713fb50f3a260a04b2"
+  },
+  "owned_section_sha256": {
+    "RESEARCH.md": "b5bb7f022a05773dd9d7561aa622f807adccc3b264fc5a44faa22f9716f09729",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "bdf4b1906f94cd757a0c988b2f7b5af4afd1ef2da443e4a1551b1d4186b345f3",
+    "theories/shengsheng-buxi-generative-existence/README.md": "209803b92a4765666fd30a3c18fcc1a60f70360adc3e22263ce7782d990514b8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "ed23b6b3a57a858a29dcfa33126a976058b33647c058332509f4be4f3831ec01",
+    "experiments/README.md": "586bc7d38bde44f2c837664233f8711ed0f42d1c99340103dc374942a2057c74",
+    "sources/SOURCES.md": "9a291655587f1effd284c6a569ebdb983e57a1a25bbfb93dd11aafd0ff5c75e3",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md": "af03badc0777a04c442e4c1940ae66ee478094f7f9c9d115218e0613cd9eacb0",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md": "b59481d753c1141a6d7a9902edb63d344d705bb48b29468a81965a758ff7095f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/README.md": "7156cd5eddef398c8a4f4c80fc3b2134b089d2bdb144e9668debb819ba1b3b58",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-REVIEW.md": "b073514aae14871c912d70d589769de12ba85875f4febaf6e718a7d1fdbdab29"
+  },
+  "scientific_dependency_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py": "f2bcc85688975d9a6e6fac4c0944e5b4f6ce0ede779707719c41428db3a4d303",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/check.py": "5eddfd8d8e2d10c3e858ad443b683f2106f38d8adfb08a3b1049e00781ffc0ab",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/PROTOCOL.md": "0491194fc7502ea6be11375f793ffc96fe3b60ba59c1468e5afe0c17eb53cd65",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py": "84e62031fd46bca6b28356df262ab498df65b579f96a29a2333515c59ba27d5d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py": "bba25f7c9639c9c995f8fa950b85f0eea43e98359d2b3f295a8e2aea73684c09",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/independent_check.py": "6c0901f5da5a7fc202e2a743591a36d0ca978a36c0f8ca9fc6de7946f1e5d8c9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/PROTOCOL.md": "05229487040e2489ba89bc94727e481bf23e63cd265ba320f95b9948265ad20e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+  },
+  "scientific_receipt_sha256": {
+    "results.json": "2b0afb08f3507eaf2de3126dcc43a3dca8dd65ff6603658ee8aae697e42263e4",
+    "independent-check.json": "343271383adae738f6fcbf7a0541d399fa85ad4d19942fcea33803403f40ef97"
+  },
+  "checker_sha256": "6338c6c037d43381025954ff02dc896175b0f7c679a4f03b110c64fa3300111c",
+  "index_edit_manifest_sha256": "9075f9720d982cce30d32f3c9715baed71bd880c2a0e2b0986be2fb67ad4c916"
+}

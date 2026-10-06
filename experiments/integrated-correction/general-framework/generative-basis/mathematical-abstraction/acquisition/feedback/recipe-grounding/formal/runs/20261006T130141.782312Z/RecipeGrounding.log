@@ -1,0 +1,16 @@
+'RecipeGrounding.generated_exact' depends on axioms: [propext]
+'RecipeGrounding.four_distinct_generated_tables' does not depend on any axioms
+'RecipeGrounding.generated_represents_every_unary_function' depends on axioms: [propext]
+'RecipeGrounding.selection_exists_iff_distinct' depends on axioms: [propext, Quot.sound]
+'RecipeGrounding.selected_table_is_generated' depends on axioms: [propext]
+'RecipeGrounding.actual_selected_decoder_recovers' depends on axioms: [propext, Quot.sound]
+'RecipeGrounding.equal_reference_replies_preclude_any_decoder' does not depend on any axioms
+'RecipeGrounding.selected_recovery_iff_possible' depends on axioms: [propext, Quot.sound]
+'RecipeGrounding.one_reference_cannot_certify_recoverability' does not depend on any axioms
+'RecipeGrounding.equal_observations_equal_adaptive_memory' does not depend on any axioms
+'RecipeGrounding.compensated_routes_have_equal_observations' does not depend on any axioms
+'RecipeGrounding.compensated_routes_preserve_real_target_difference' does not depend on any axioms
+'RecipeGrounding.opposite_routes_have_no_common_reliable_decoder' depends on axioms: [propext]
+'RecipeGrounding.no_adaptive_unreferenced_reliable_selection' depends on axioms: [propext]
+'RecipeGrounding.changed_use_transduction_defeats_calibrated_recipe' does not depend on any axioms
+'RecipeGrounding.swapped_reference_binding_defeats_selected_recipe' does not depend on any axioms

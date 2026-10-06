@@ -1,0 +1,24 @@
+PretrainingEvidence.lean:41:2: error: unsolved goals
+case pos
+laws : RecipientCorrection.Laws
+s : State
+vacant : s.link0 = none ∨ s.link1 = none
+h0 : s.link0 = none
+⊢ (1 +
+      match s.link1 with
+      | none => 0
+      | some val => 1) =
+    (match s.link1 with
+      | none => 0
+      | some val => 1) +
+      1
+'PretrainingEvidence.pair_patient' depends on axioms: [propext, Quot.sound]
+'PretrainingEvidence.pair_count' depends on axioms: [propext]
+'PretrainingEvidence.pair_latches_cleared' depends on axioms: [propext]
+'PretrainingEvidence.bind_sockets' depends on axioms: [propext, sorryAx]
+'PretrainingEvidence.pair_sockets' depends on axioms: [propext, sorryAx]
+'PretrainingEvidence.pair_preserves_depletion_account' depends on axioms: [propext, sorryAx, Quot.sound]
+'PretrainingEvidence.prefix_is_actual' depends on axioms: [propext]
+'PretrainingEvidence.prefix_depletion_account' depends on axioms: [propext, sorryAx, Quot.sound]
+'PretrainingEvidence.actual_entry_depletion' depends on axioms: [propext, sorryAx, Quot.sound]
+'PretrainingEvidence.same_retained_sockets_same_depletion' depends on axioms: [propext, sorryAx, Quot.sound]

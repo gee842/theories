@@ -1,0 +1,332 @@
+{
+  "status": "passed",
+  "scope": "Integration/source-preservation/link checks after independent numerical acceptance; no scientific rerun.",
+  "scientific_receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-independent-check.json",
+  "scientific_counts": {
+    "cases": 6,
+    "suffix_events": 42,
+    "state_points_including_starts": 48,
+    "corruption_rejections": 7
+  },
+  "source_bindings_verified": 22,
+  "prior_reconstruction_artifacts_preserved": 10,
+  "prior_reconstruction_integration_fragments_preserved": 7,
+  "new_additive_fragments": 5,
+  "pre_edit_documents_exactly_recoverable": true,
+  "local_links_and_anchors_checked": 73,
+  "artifact_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md": "dc0a27f0d14bcafc5da67e05753f783eee41107f6f71e95ea1060a2db703a898",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md": "46988a02cded8d39372833cf2498ba5ff2080fa2a8853884f49431a2c8b7aa0a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md": "3fe01ccf7a1431e3990274781f8c13201825472e6aec6b28a8465c55d3093364",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md": "f6a28b36df865a427c13f81b11b993209b08659c306f09c9f1bcf85f52db54d8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md": "47b25788e20a10c8aa074091fa1447f5eb03f08a136eb01d8c7bffb02357d301",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization.py": "9d25b4aadf8efa56e75089b55caaecce03e05d0dfbbbc215dc3062940658e9ea",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-results.json": "b1be5effd5a0aff4029495dbdad4ba506565fc779627344907ac68e9c008c8d1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization_check_review.py": "5f022d553af594acf0b24d00d2f8ecebd01942f124741e8c5e25ea5c3770b8e9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-independent-check.json": "57a0bf08cb4982f41b4ffebb858128a2a6f15c91d759f24a8276e81a907a02be",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-DOC-EDITS.json": "142b31ad3292c11df2f8e9c2a864ba5a1318f0188fb126098f5c5d9edef3210c"
+  },
+  "links": [
+    {
+      "source": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#correction-can-use-an-interaction-omitted-from-the-schedule"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "YITI-REN-CRITERION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "YITI-REN-PURPOSE-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "INQUIRY-SUFFICIENCY-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization_check_review.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REFINEMENT-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "REMAINING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "INQUIRY-SUFFICIENCY-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "YITI-REN-CRITERION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "YITI-REN-PURPOSE-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "HUIGEN-REASON-TRANSPORT.md#t13-exact-sufficiency-for-permission-and-for-choosing"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "INQUIRY-SUFFICIENCY-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization_check_review.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "APPLICATION-DISTINCTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "REMAINING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md",
+      "reference": "remaining-dependency-results.json"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md",
+      "reference": "REMAINING-DEPENDENCY-PROTOCOL.md"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md",
+      "reference": "remaining-dependency/formal/RemainingDependency.lean"
+    }
+  ],
+  "scope_review": {
+    "independent_argument_review": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+    "integration_review": "Mechanism agent found no material overclaims after distinguishing source interface from physical route and prescribed inquiry from autonomous selection."
+  },
+  "new_event_law": false,
+  "autonomous_inquiry_selection_established": false,
+  "new_lean_compilation": false,
+  "new_empirical_observation": false,
+  "stronger_foundation_complete": false
+}

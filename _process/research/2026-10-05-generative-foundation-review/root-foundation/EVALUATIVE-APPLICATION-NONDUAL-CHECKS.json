@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-06",
+  "scope": "Documentation, link and historical-section preservation checks only. No new empirical experiment, scientific model run or Lean theorem. Cross-branch working-tree sources retain their owners and acceptance scopes.",
+  "base_commit": "037b68889c60772cd4a40476202be30558c27826",
+  "status": "pass",
+  "checked_local_links": 117,
+  "preservation": {
+    "MATH_earlier_sections_unchanged": true,
+    "REVIEW_earlier_sections_unchanged": true,
+    "CONTRACT_earlier_sections_and_reference_definitions_unchanged": true
+  },
+  "files": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md": "8490e0482bfb05f72774fb22df04ac9d6e5e0db3b7e653b1f30a7bb5cb29b74c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-CONTRACT.md": "9f7db38d3e73536d4fae083028e81fa689b3033fcd01e514efa88436e815c0ff",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md": "d97c699edb9cb5fab97b589dcec716a814b65fa252d75ac63548ba1716ccd466",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md": "22900411a93d8094dbf932d85090504eb6a1528792eedee0fa97adf5237e456e"
+  },
+  "index_paragraphs": {
+    "RESEARCH.md": "32df6a64a142f9683cab10728ba0b3b75063ef49e0e60cf0ce25476f430ba5b5",
+    "theories/shengsheng-buxi-generative-existence/README.md": "b45270136612492f6bc3914c3fbdb70ba85dd110eebcac1d66378c4c81781680",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "1d21322902b2b0fe46eea900a10758369bbef00809fdac51f81c2196db6c72cb",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "66e907492cace80c0154b788e21af7e19018f9e9d54a59d5b1f0d548881acec4"
+  },
+  "review_scope": "Three collaborating agents reviewed mechanism, positive application and counterexamples; this is internal AI review, not external peer review or new empirical evidence.",
+  "working_tree_dependencies": "The linked current nondual, connected-model and constitutive investigations include parallel uncommitted files. This receipt records a local working-tree integration; it does not claim a self-contained committed snapshot."
+}

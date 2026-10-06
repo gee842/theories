@@ -1,0 +1,3 @@
+The supplied implementation and results already contain the correction. All 24 ambiguous goal-1 cases correctly report null; all 320 rows reproduced in memory. Protected files remain unchanged.
+
+Diagnosis and verification details: [analysis-note.md](/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-local-maintenance-2i52at3z/k04/analysis-note.md).

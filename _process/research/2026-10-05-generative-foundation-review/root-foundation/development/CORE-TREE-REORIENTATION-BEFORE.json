@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "purpose": "Preserve canonical formulations before core/tree nonduality changes the governing research order. Original link bases retained.",
+  "files": [
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-CORE-TREE-REORIENTATION.md",
+      "sha256": "2b3b42835021575f630bb6dfd3b1eed10815fc52b9e046a83cd082b3b2418d0c",
+      "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/DEEPER-GENERATIVE-ROOT-BEFORE-CORE-TREE-REORIENTATION.md",
+      "sha256": "092c8c694558e0af20ebee45159681d2ba0604ba5adfbfd7241798d88673d258",
+      "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    }
+  ]
+}

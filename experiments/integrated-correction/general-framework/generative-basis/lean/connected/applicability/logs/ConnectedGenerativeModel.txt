@@ -1,0 +1,8 @@
+'Generative.Connected.identificationValid' does not depend on any axioms
+'Generative.Connected.identificationProcess' does not depend on any axioms
+'Generative.Connected.acquired_recipient_record_is_used' does not depend on any axioms
+'Generative.Connected.missing_receipt_writes_existing_registers' does not depend on any axioms
+'Generative.Connected.identification_step_iff' depends on axioms: [propext]
+'Generative.Connected.identification_histories_iff' depends on axioms: [propext]
+'Generative.Connected.identification_outcomes_iff' depends on axioms: [propext]
+'Generative.Connected.acquired_cut_bounds_every_recorded_outcome' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,6 @@
+{
+  "path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/README.md",
+  "before_sha256": "e68795c39c91aefeee1b7e26096a927312954c8448ec2754584ace0a634f247f",
+  "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/continuation-README.md",
+  "after_sha256": "3e0733587fb6d8370d6c83f5d03e16e55b20deac71dbdef20d57c0989941a260"
+}

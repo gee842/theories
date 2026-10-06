@@ -1,0 +1,14 @@
+'Generative.CoupledConcernHistory.runnable_occurrences' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.trace_endpoint_is_actual_run' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.trace_occurrences' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.runnable_prefix' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.occurrences_join_at_actual_state' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.actual_formation_then_response' depends on axioms: [propext, Quot.sound]
+'Generative.CoupledConcernHistory.consequence_and_acquisition_are_distinct_dependent_changes' depends on axioms: [propext,
+ Quot.sound]
+'Generative.CoupledConcernHistory.actual_feedback_changes_response_constraints' depends on axioms: [propext, Quot.sound]
+'Generative.CoupledConcernHistory.actual_return_does_not_erase_intermediate_decrease' depends on axioms: [propext,
+ Quot.sound]
+'Generative.CoupledConcernHistory.no_endpoint_summary_decoder_of_actual_decrease' depends on axioms: [propext,
+ Quot.sound]
+'Generative.CoupledConcernHistory.missing_readout_does_not_remove_consequence' depends on axioms: [propext, Quot.sound]

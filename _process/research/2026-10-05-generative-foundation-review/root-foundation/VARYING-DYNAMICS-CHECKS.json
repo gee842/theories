@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-10-06T09:33:52.901172+00:00",
+  "status": "passed",
+  "scope": "Local Markdown targets/anchors, new index entries, frozen Lean sources/logs/checker and inherited source/checker preservation. No scientific rerun or external URL check.",
+  "local_links_checked": 109,
+  "new_theorem_audits": 58,
+  "replayed_inherited_audits": 143,
+  "proof_receipt_sha256": "b7cf69e93e30ef0b53897ff832825bcc059facc27715ae12d10b021218fcd485",
+  "proof_checked_at_utc": "2026-10-06T09:26:18.592213+00:00",
+  "files": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-INTEGRATION.md": "727617c0f3f6cc662f02ea38b5ce88327c5fb11ae1b46face511943b01fb33ab",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-MECHANISM.md": "db8b71df54d343668978620122f92d1599c570bf04eba67ce18a90ca84cc2b3f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-REVIEW.md": "88775a988cdf4e3f586ef5f294759baa2281591982706b8b9ab3211fb0b9219f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-HIGHER-DYNAMICS.md": "d09992c07241c4b3004ee6043272fab72ac15a2308cfb73155c0ca14188833d7",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md": "715bed026da97a1cce467cda41fb1f5416cfc67b0b4528349ae402cd44d95bbb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md": "735356a5b7d060d0ed30f585ed9c298d6d9f935d14e8511a9d5d7692ca8a8e4d",
+    "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md": "1f43597e6e5c4ced1d7e9c4567220f5c4753d5ee2eb3ff4d8edb7b59e03e4dc3",
+    "RESEARCH.md": "0ae07eceb685b1e7fc49119d20a69d791019a64c6db2bce703c6bddd502d9916",
+    "theories/shengsheng-buxi-generative-existence/README.md": "5f0403cdaa2228ad16bdb23cbee2f30d9870d442a2ed3b4ec6832db4962f3a28",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "10d92ff9b9306e2486398580c1c7e27ce0271ea0203917d2a19560a3fff64fd2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "e018e08dbd12e43c64b7802215e8221e52248e03ac7265905b10b849ddf1a4f8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-CHECK.py": "4350bf1166ff4f74f13a25bacbc547724af228e4994ea90ef70d8a68f4058707"
+  },
+  "failures": []
+}

@@ -1,0 +1,7 @@
+'Generative.CoupledOccurrence.erase_described_trace' does not depend on any axioms
+'Generative.CoupledOccurrence.describe_actual_trace' does not depend on any axioms
+'Generative.CoupledOccurrence.described_trace_exact' does not depend on any axioms
+'Generative.CoupledOccurrence.described_append_actual_iff' does not depend on any axioms
+'Generative.CoupledOccurrence.map_described_trace' does not depend on any axioms
+'Generative.CoupledOccurrence.actual_continuation_retains_occurrence' depends on axioms: [propext]
+'Generative.CoupledOccurrence.replay_append' depends on axioms: [propext]

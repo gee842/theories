@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-06",
+  "scope": "Before interpretation correction; no scientific rerun",
+  "before_files": {
+    "_process/research/2026-10-05-generative-health/succession/ANSWER.md": "1404be700f6539cc9373bcd2dfb41e9a63c963067dedbca276ea7be602baaed8",
+    "experiments/constructive-succession/model.py": "539f0c0de887a0f0623df01349f66f8c9e1c66696976151bd157bd7cb86dd94c",
+    "experiments/constructive-succession/results/summary.json": "5bc182c13acd33a60e253c66166d7927fd3800bc074745e64a6c260ba291b4cf",
+    "experiments/constructive-succession/results-access/summary.json": "46c6511b3ae77c24a9fbbf66c51a658f42771debbc474afd9826eb481a3fcb39"
+  },
+  "preserved_answer": "_process/research/2026-10-05-generative-health/succession/ranking-correction/ANSWER-before-correction.md"
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Exact preservation hashes, not independent experimental validation",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1548,
+      "sha256": "36542cccb3751a005a8c64338a3f1311e15036869f997594f2d63a9a8a49eb14"
+    },
+    {
+      "path": "metadata/provenance.json",
+      "bytes": 4916,
+      "sha256": "89a7410821c997c505c2546ad413438350ffd7503f5c6900d36dd3b68a487af2"
+    },
+    {
+      "path": "original/beran-smith-2011-figure3.jpg",
+      "bytes": 34307,
+      "sha256": "9893bac97734de9b1b7ed15f19d2e65b0cfc9194da723a055df27fc8e75dfbaa"
+    },
+    {
+      "path": "original/beran-smith-2011.html",
+      "bytes": 246022,
+      "sha256": "448e70a0c91a592171fe99a5eae32ec16fab623cddf676667b6cb21f8a6de78a"
+    },
+    {
+      "path": "reading/beran-smith-2011.txt",
+      "bytes": 83708,
+      "sha256": "0f273a27b49003666c1d3e648e040ec6377271bc63b2b6b2766d5be810e698ea"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 4318,
+      "sha256": "315d43c844edcd1a6e360dafaa953cd3552ae7454ffb0d58dbba13194f63196e"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+'SystemsComplexity.SymbolicDynamics.iterate_add' depends on axioms: [propext]
+'SystemsComplexity.SymbolicDynamics.eraseValue_injective' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.finite_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.finite_eventually_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SymbolicDynamics.finite_eventuallyPeriodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SymbolicDynamics.prefix_refl' does not depend on any axioms
+'SystemsComplexity.SymbolicDynamics.prefix_symm' does not depend on any axioms
+'SystemsComplexity.SymbolicDynamics.prefix_trans' does not depend on any axioms
+'SystemsComplexity.SymbolicDynamics.prefix_mono' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.prefix_open_empty' does not depend on any axioms
+'SystemsComplexity.SymbolicDynamics.prefix_open_univ' does not depend on any axioms
+'SystemsComplexity.SymbolicDynamics.prefix_open_inter' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.prefix_open_union' does not depend on any axioms
+'SystemsComplexity.SymbolicDynamics.cylinder_open' does not depend on any axioms
+'SystemsComplexity.SymbolicDynamics.member_lt_coordinateBound' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.prefix_open_iff_coordinate_open' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.iterate_shift' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.shift_continuous' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.splice_prefix' depends on axioms: [propext]
+'SystemsComplexity.SymbolicDynamics.splice_shift' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.shift_transitive' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.repeat_agrees' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.repeat_periodic' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.shift_dense_periodic' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.flip_agrees' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.flip_separates' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.no_isolated_stream' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.singleton_not_open' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.spike_injective' depends on axioms: [propext]
+'SystemsComplexity.SymbolicDynamics.stream_not_finitely_encoded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.SymbolicDynamics.shift_sensitive' depends on axioms: [propext, Quot.sound]
+'SystemsComplexity.SymbolicDynamics.binary_shift_chaotic' depends on axioms: [propext, Quot.sound]

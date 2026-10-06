@@ -1,0 +1,7 @@
+{
+  "original_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/PROTOCOL.md",
+  "original_link_base": "experiments/agentdojo-evidence-boundary/correction-action/continuation",
+  "saved_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/development/review/PROTOCOL-REVIEW-01.md",
+  "sha256": "c483665965503f30cf6cb621bc30191a1ce0edc547c269fcbb7b41d90548fb64",
+  "reason": "Preserve protocol bytes before independent initial review of diagnostic ordering, duplicate-check scoring and cached retry semantics. No participant or broker code existed in this directory at inspection."
+}

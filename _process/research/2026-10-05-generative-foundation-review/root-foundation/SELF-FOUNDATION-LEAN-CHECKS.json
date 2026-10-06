@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-06",
+  "scope": "Local links, exact source quotation, current build receipts, earlier source/theorem preservation, snapshot hashes and document integration; not validation of a complete self or ethical foundation.",
+  "local_links_checked": 126,
+  "document_edits": 12,
+  "preserved_model_files": 17,
+  "lean_modules": 14,
+  "lean_audited_declarations": 162,
+  "new_lean_audits": 43,
+  "new_axiom_dependencies": [],
+  "previous_nonentry_sources_unchanged": true,
+  "owned_documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
+      "sha256": "d8d48dc96f92bb91639799d939b363e02ca925d1f266b5fa91b261f4208c2b49"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-LEAN-MECHANISM.md",
+      "sha256": "b608ab2562bdd8e3e426379143b2577b65521487076a70d49a1e69a62246cb1e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-ETHICS-LEAN-GROUND.md",
+      "sha256": "54e92596430551e770bfaf2b66d44045b00d32d2b5f081fad2a67443a5801cb0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-REVIEW.md",
+      "sha256": "f9eed308408386025c196b27924459dd70687a73012d2c10dd74ac86cc80ef94"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-self-foundation-lean-no-additions.md",
+      "sha256": "de5fe4f740832bfb96698222f3bddbf9d8105e6c317ae858505c8528791a305c"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+      "sha256": "9a574c30e9ac2af39514636abae4f8b0d92c91fe1f0bbfc3601d530f56cd7b23"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "sha256": "6965c5117107efd81b45d99490ba692d13b8a2cbf174ba5a26b0eb5e7c157507"
+    }
+  ],
+  "errors": []
+}

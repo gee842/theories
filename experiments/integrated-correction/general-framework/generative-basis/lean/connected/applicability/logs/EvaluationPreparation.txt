@@ -1,0 +1,8 @@
+'EvaluationPreparation.runnable_trace' depends on axioms: [propext]
+'EvaluationPreparation.prospective_formation_feasible' depends on axioms: [propext]
+'EvaluationPreparation.prospective_formation_trace' depends on axioms: [propext]
+'EvaluationPreparation.formation_endpoint' depends on axioms: [propext]
+'EvaluationPreparation.assemblies_feasible' does not depend on any axioms
+'EvaluationPreparation.material_partition' depends on axioms: [propext]
+'EvaluationPreparation.exact_parent_prepared_projection' depends on axioms: [propext]
+'EvaluationPreparation.original_compartments' does not depend on any axioms

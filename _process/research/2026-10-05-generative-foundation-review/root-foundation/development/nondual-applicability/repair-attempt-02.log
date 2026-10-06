@@ -1,0 +1,17 @@
+0
+'Generative.RepairApplicability.bit_bound' does not depend on any axioms
+'Generative.RepairApplicability.step_restoration_balance' depends on axioms: [propext]
+'Generative.RepairApplicability.trace_restoration_balance' depends on axioms: [propext, Quot.sound]
+'Generative.RepairApplicability.tally_zero_of_absent' depends on axioms: [propext]
+'Generative.RepairApplicability.later_repairs_bounded_by_new_damage' depends on axioms: [propext, Quot.sound]
+'Generative.RepairApplicability.new_repair_requires_intervening_damage' depends on axioms: [propext, Quot.sound]
+'Generative.RepairApplicability.repair_removes_own_condition' depends on axioms: [propext, Quot.sound]
+'Generative.RepairApplicability.restored_capture_uses_current_conditions' depends on axioms: [propext]
+'Generative.RepairApplicability.capture_removes_own_condition' depends on axioms: [propext, Quot.sound]
+'Generative.RepairApplicability.local_copy_reopens_capture' depends on axioms: [propext]
+'Generative.RepairApplicability.restoration_without_source_has_no_capture' depends on axioms: [propext]
+'Generative.RepairApplicability.Actual.existing_formed_prefix' depends on axioms: [propext]
+'Generative.RepairApplicability.Actual.restored_with_spare_support' depends on axioms: [propext]
+'Generative.RepairApplicability.Actual.actual_disturbance_restoration' depends on axioms: [propext]
+'Generative.RepairApplicability.Actual.actual_local_reconstruction_and_capture' depends on axioms: [propext]
+'Generative.RepairApplicability.Actual.actual_continuation_keeps_whole_history' depends on axioms: [propext, Quot.sound]

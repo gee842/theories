@@ -1,0 +1,14 @@
+0
+'Generative.RecipientContinuationProjection.shift_preserves_control_coordinates' does not depend on any axioms
+'Generative.RecipientContinuationProjection.enabled_ignores_patient_amount' does not depend on any axioms
+'Generative.RecipientContinuationProjection.valid_ignores_patient_amount' depends on axioms: [propext]
+'Generative.RecipientContinuationProjection.advance_commutes_with_patient_shift' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RecipientContinuationProjection.shift_patient_injective' depends on axioms: [propext]
+'Generative.RecipientContinuationProjection.step_shift_iff' depends on axioms: [propext, Quot.sound]
+'Generative.RecipientContinuationProjection.trace_patient_shift' depends on axioms: [propext, Quot.sound]
+'Generative.RecipientContinuationProjection.trace_from_shifted_start' depends on axioms: [propext, Quot.sound]
+'Generative.RecipientContinuationProjection.feasible_ignores_patient_amount' depends on axioms: [propext, Quot.sound]
+'Generative.RecipientContinuationProjection.patient_outcome_and_energy_are_shifted' depends on axioms: [propext]
+'Generative.RecipientContinuationProjection.positive_shift_changes_recorded_outcome' depends on axioms: [propext,
+ Quot.sound]

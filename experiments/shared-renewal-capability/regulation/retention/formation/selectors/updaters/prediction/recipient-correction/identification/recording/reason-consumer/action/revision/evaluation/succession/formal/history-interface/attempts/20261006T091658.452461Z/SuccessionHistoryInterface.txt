@@ -1,0 +1,55 @@
+SuccessionHistoryInterface.lean:163:57: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+SuccessionHistoryInterface.lean:164:54: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+SuccessionHistoryInterface.lean:167:10: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+SuccessionHistoryInterface.lean:168:10: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+SuccessionHistoryInterface.lean:169:11: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+SuccessionHistoryInterface.lean:181:12: error: Expected type must not contain free variables
+  (withHistory SuccessionWitness.final h).core.patient = 80
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SuccessionHistoryInterface.lean:181:22: error: Expected type must not contain free variables
+  (withHistory SuccessionWitness.final h).core.hardware.q = 2
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SuccessionHistoryInterface.lean:181:32: error: Expected type must not contain free variables
+  (withHistory SuccessionWitness.final h).native.n = 7
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SuccessionHistoryInterface.lean:181:42: error: Expected type must not contain free variables
+  (withHistory SuccessionWitness.final h).port = Port.consumed
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+'SuccessionHistoryInterface.withHistory_self' does not depend on any axioms
+'SuccessionHistoryInterface.withHistory_overwrite' does not depend on any axioms
+'SuccessionHistoryInterface.live_data' does not depend on any axioms
+'SuccessionHistoryInterface.archive_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.current_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.command_withHistory' depends on axioms: [propext]
+'SuccessionHistoryInterface.known_withHistory' depends on axioms: [propext]
+'SuccessionHistoryInterface.help_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.energy_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.material_withHistory' does not depend on any axioms
+'SuccessionHistoryInterface.enabled_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.advance_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.charge_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.run_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.runnable_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.spent_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.trace_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.continuation_interface' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.toOld_withHistory' depends on axioms: [propext]
+'SuccessionHistoryInterface.bankWord_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.runBank_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.actual_suffix_withHistory' depends on axioms: [propext, Quot.sound]
+'SuccessionHistoryInterface.actual_suffix_accounting' depends on axioms: [propext, sorryAx, Quot.sound]
+'SuccessionHistoryInterface.actual_suffix_live_outcome' depends on axioms: [propext, sorryAx, Quot.sound]

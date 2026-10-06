@@ -1,0 +1,515 @@
+{
+  "checked_at_utc": "2026-10-06T06:42:11.189843+00:00",
+  "status": "passed",
+  "scope": "Preserved-source, receipt and local-link verification; no proof or empirical rerun.",
+  "combined_build_modules": 55,
+  "new_audited_declarations": 27,
+  "new_empty_named_axiom_reports": 3,
+  "import_entry_audits": 0,
+  "all_current_sources_snapshots_logs_and_compiler_match_receipt": true,
+  "ancestor_receipt_and_development_hashes_verified": true,
+  "physical_law_changed": false,
+  "separate_process_histories_physically_spliced": false,
+  "whole_closure_named_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "assumption_free_foundation_established": false,
+  "empirical_experiment_rerun": false,
+  "next_connection": "Formed and revisable participation, internally acquired consequence distinctions, and changes in affected continuation within one history.",
+  "integration_edits": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "95567338c9eb5246a301ac5d02f1cf86310632ba83995dbf95aa00bc63107577",
+      "own_fragment_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "95567338c9eb5246a301ac5d02f1cf86310632ba83995dbf95aa00bc63107577",
+      "own_fragment_present": true,
+      "matches_immediate_post_edit": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha256": "ef55b03ab4a33e3ce0da8bcc125fefee2f24c8122992f7271bdc2a6ba7230478",
+      "own_fragment_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "34cfb16c9c8164b78d7a2a747cb4757783bb8f9cafde078045794e6d38f004ef",
+      "own_fragment_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "3553a275f318c8c48c0370c483f7e092f193a5464561a7689e1fd00c7fcec96c",
+      "own_fragment_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "sha256": "3acbffd838545ff7073ae83f2d50a40aa41e9594893d305d98ac4ab466f37a41",
+      "own_fragment_present": true,
+      "matches_immediate_post_edit": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sha256": "d31adc2aa7b6a6ed38697664e62d7b293ea185f1a1ef6800dce17c87774c437b",
+      "own_fragment_present": true,
+      "matches_immediate_post_edit": false
+    }
+  ],
+  "local_links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#applicability-changes-within-the-activity-itself"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "NONDUAL-APPLICABILITY-QUESTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "NONDUAL-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "NONDUAL-APPLICABILITY-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "NONDUAL-APPLICABILITY-COMPARATORS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "GenerativeNondualApplicabilityModel.lean"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "connected/nondual/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-QUESTION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-QUESTION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "COMPLETION-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "development/nondual-applicability/DEVELOPMENT-ATTEMPTS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "target": "NONDUAL-APPLICABILITY-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#from-interacting-differences-to-consequential-organization"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#3-a-situation-with-differentiated-centers"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "COMPLETION-APPLICABILITY-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "development/nondual-applicability/DEVELOPMENT-ATTEMPTS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/check.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "target": "NONDUAL-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "../../../../sources/12-claude-ai-chats/2026-05-02_\u751f\u751f\u4e0d\u606f\u7684\u51fa\u5904_1bd809e5.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "NONDUAL-TREE-GENEALOGY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "NONDUAL-TREE-MECHANISM.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "NONDUAL-TREE-MECHANISM.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "NONDUAL-TREE-GENEALOGY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "target": "../../../../sources/12-claude-ai-chats/2026-05-02_\u751f\u751f\u4e0d\u606f\u7684\u51fa\u5904_1bd809e5.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-QUESTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-REVIEW.md#exact-formal-source-acceptance"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-COMPARATORS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "development/nondual-applicability/DEVELOPMENT-ATTEMPTS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION-CHECK.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-one-connected-generative-model.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-COMPARATORS.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/check.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/INPUTS.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-MECHANISM.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "../applicability/README.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "INPUTS.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "check.py"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "verification.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md"
+    }
+  ],
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-QUESTION.md",
+      "sha256": "38017cfa748092ae9e46d5be25d43d10943c79a7629e44719aa67587ca1abfc7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+      "sha256": "4673fd1773b62c1dbab8a8503ec31bc603b38618f3b615da147bbf1bacd574d6"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+      "sha256": "1e79da61f6415de968fd8809646cda9c3a259b3886dc6302856c26b578cc32fa"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+      "sha256": "91107b05be18738d8dabc7619364ed63e6f97d71849e9a44054fe7be72361791"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "sha256": "bfedc7264a865d366e21018a42b4d6fb3324752d2c1a9947f3c84321b4016a52"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "95567338c9eb5246a301ac5d02f1cf86310632ba83995dbf95aa00bc63107577"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
+      "sha256": "4d7a45e20245e62607c7bbffe4e2b73b4ca629e7db2be49aeb8d466c5158e6ee"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/check.py",
+      "sha256": "91f9058f578cb4d5c935d2ade2724fc6521fe640041aee241041a5287dc14f7b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/INPUTS.json",
+      "sha256": "96de885ba38e5ccdf28152dd4633d1917afb7273c8a7650b89d2c5549e0f9068"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json",
+      "sha256": "bf3d9b8e15da760b2e5283298e45cfadb4ee66802babcd6b02aa1d45ac138ec4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-CANONICAL-EDITS.json",
+      "sha256": "952ce49779d7ea256cb9669f4c558d91569ef8136166ceb8d63ead0d34a3c73d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/DEVELOPMENT-ATTEMPTS.json",
+      "sha256": "f692f98e8bbf2e3a855e37dd3689ddf81fe84f927ad5bed9656e8598aa8e5b00"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION-CHECK.py",
+      "sha256": "3dc0f45c2dbc785343353902a153e326ab2ecfe14c8f8518186864a4abf4a032"
+    }
+  ]
+}

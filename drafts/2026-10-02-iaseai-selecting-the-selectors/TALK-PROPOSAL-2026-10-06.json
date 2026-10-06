@@ -1,0 +1,42 @@
+{
+  "status": "filled_not_submitted",
+  "prepared_on": "2026-10-06",
+  "destination": "https://members.iaseai.org/s/talk-proposal",
+  "event": "IASEAI'27",
+  "presenter": "Yongxu Ren",
+  "title": "From Generativity to Wisdom: A Unified Foundation for AI Safety",
+  "description": "AI can become more capable while undermining the conditions for reliable judgment, concern for others and future correction. This talk presents a unified generative theory of that divergence and a constructive direction for AI development.\n\nThe starting point is simple: activity forms and changes the conditions of further activity. Agents and environments, knowing and acting, and the institutions that evaluate success differentiate within this continuing process. Their differences remain consequential: a shared world contains distinct experiences, interests, powers and possibilities.\n\nI develop a connected account of organization, significance, learning, selection over selectors, concern and wisdom. Within an organization, consequences can sustain, transform or disrupt the relations that enable its activity. Regulation makes these differences operative; learning changes responses; deeper revision changes the mechanisms that select and learn. Concern brings the lives and possibilities of other beings into effective consideration. Wisdom joins understanding and warranted action with the capacity to examine and renew the conditions of understanding and action themselves. The ethical argument locates goodness in those lives and possibilities, including where their flourishing brings no return to the initiating agent.\n\nThis account explains generative and destructive dynamics within the same framework. Accurate prediction does not determine what an agent protects. An organization can sustain itself while harming those affected by it. Competitive success can accumulate control over evaluation, funding, standards and the formation of future decision-makers. AI delegation can increase present performance while eroding the independent competence needed to challenge or replace the delegate. In each case, present activity reshapes what future learning, agency and correction remain possible.\n\nDrawing on 生生不息 (unceasing generation), systems theory, formal models and ethical reasoning, the presentation connects technical alignment with the governance of these changing conditions. It develops the implications for recursive self-improvement, revisable objectives, independent evaluation and institutional competition. Constructive intelligence supports worthwhile possibilities, attends to consequences beyond its own success, and sustains the evidence, practical capacities and legitimate authority needed for justified correction.\n\nParticipants will leave with three questions they can apply to models, deployments and institutions: What conditions does this capability depend on and change? Whose consequences can actually influence its decisions? What will remain possible for the next person, system or institution that must understand, challenge or revise it? These questions connect alignment, concern and wisdom within one account of intelligence that supports plural flourishing.",
+  "program_themes": [
+    "Alignment",
+    "Frontier-risk governance",
+    "Recursive self-improvement"
+  ],
+  "format": [
+    "Oral Presentation"
+  ],
+  "other_substantive_contributors": "No",
+  "parallel_and_competing_interest_disclosure": "I am the sole human contributor to this work. I have no relevant parallel or competing financial interests to disclose.",
+  "supporting_materials": {
+    "link": null,
+    "file": null
+  },
+  "provenance": {
+    "drafting": "AI-assisted proposal prepared from Ren's research at Ren's request. Presents the unified account as the subject of the proposed talk; does not update the research-completion status.",
+    "contributor_and_interest_declaration": "Confirmed by Ren in this conversation on 2026-10-06.",
+    "sources": [
+      "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "v7.3/START-HERE.md"
+    ]
+  },
+  "generated_supporting_material": {
+    "file": "output/pdf/generativity-to-wisdom-supporting-statement.pdf",
+    "status": "generated_and_verified_not_attached",
+    "pages": 8,
+    "sha256": "9911df7a63178c49626f0931a1349230d8175965e3c9d97789afff17044e915e",
+    "attachment_note": "The form upload control did not yield a usable file chooser; the proposal remains unsubmitted.",
+    "language": "English only",
+    "edition": "Technical supporting statement"
+  }
+}

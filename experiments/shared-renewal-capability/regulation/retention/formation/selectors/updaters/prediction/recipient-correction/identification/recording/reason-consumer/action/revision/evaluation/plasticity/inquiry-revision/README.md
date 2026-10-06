@@ -1,0 +1,25 @@
+# Inquiry revision on the actual continuing concern learner
+
+6 October 2026. **Accepted at the declared finite runtime and formal scopes.** This additive extension implements the connection specified in [the protocol](PROTOCOL.md): retained consequences are acquired and used to change the operative continuation requirement from six encounters to four. A contact forms from the actual spare component pair; the read reuses two existing cleared cells. Assembly, reading and rewriting each consume one fuel unit. The inherited response then executes without another teaching encounter.
+
+The initial continuation setting is six. The preceding four-encounter history is reproduced exactly from the accepted actual parent `primary/variable/11/37`; no four-encounter sibling entrance is substituted. At the successful endpoint, fuel is 1, affected stock is 46, retained energy is 75, material is 68 and the teaching count remains 4. The original source files and results are unchanged.
+
+The [theory integration](../../../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md) explains the acquired/supplied distinction. The trigger, formation and rewrite laws, calibration and legitimate mandate remain declared local premises. Formation of the contact and evidence-dependent use of the new rule are implemented; universal ethical necessity is not asserted.
+
+## Execution and verification
+
+- [model.py](model.py) imports the preserved original runtime, executes its actual prefix and response, and adds the formed read/rewrite mechanism. Its isolated trace emitter accounts for the converted component and reused cells.
+- [reporting.json](reporting.json) summarizes 27 named controls and all 256 four-encounter shortfall schedules. The [compressed results](results.json.gz) preserve every state. There are 176 complete prefixes, 80 blocked prefixes and 96 faithful rewrites.
+- [check_independent.py](check_independent.py) independently reconstructs the saved event states and checks the new guards, conservation and adverse cases. Its [accepted receipt](independent-check.json) covers 283 traces/10,096 complete states, 8,016 differential steps, fourteen targeted guards, the fuel threshold and five detected mutations. This acceptance is separate from producer success.
+- [The additive Lean module](../formal/inquiry-revision/InquiryRevision.lean) defines an event law, generic conservation theorems, the actual complete trace, enabled-action changes and controls. The [fresh-build checker](../formal/inquiry-revision/check.py) preserves source snapshots and logs, rejects untrusted proof holes and audits every new theorem. Its [accepted receipt](../formal/inquiry-revision/verification.json) records 29 new and 629 inherited audits across 28 modules.
+- [check_formal_correspondence.py](check_formal_correspondence.py) compares thirteen selected compiled milestones at thirty coordinates, including the acquired bits, operative limit, mode and command register. The [comparison passes](formal-correspondence.json); it is a selected comparison, not whole-program refinement.
+
+The old numerical runtime combines closure with its evaluation-read boundary; Lean represents closure by an explicit zero-cost event. The comparison declares that mapping. Numerical component identities and the broader old formation history retain their prior accepted evidence; the new proof does not silently replace them with this finite wrapper.
+
+## Failures retained
+
+Missing, zeroed or wrongly bound evidence blocks rewriting. A no-op inherited context event invalidates an earlier read; restoring scope does not restore evidence, but another actual read can. A cost-matched sham leaves early service unavailable. Actual opposed and mixed histories can rewrite successfully while the unchanged learned evaluator abstains. A coherent false-positive report on a genuine zero-loss history also rewrites, exposing dependence on calibration. With twelve rather than thirteen available units at count four, rewriting and assessment can succeed while the original service misses. Reusing the spare pair for this contact can block later link replacement if teaching resumes.
+
+The first producer attempt incorrectly invalidated evidence before a disabled inherited-read attempt. The corrected event handling preserves state when the attempt is disabled. Original successful endpoint values were unaffected. [The earlier source/results](attempts/01-before-disabled-read-correction/CORRECTION.md) and the subsequent source-closure binding change are preserved in `attempts/`; failed formal attempts remain in `../formal/inquiry-revision/runs/`.
+
+Run the producer, independent checker, formal checker and milestone comparison with Python from their respective directories. Current inputs must match their saved hashes. Preserve prior sources and outputs before substantive changes; an unchanged-source reproduction may add a receipt without constituting new independent evidence. Do not rerun the original plasticity producer or replace its original receipts.

@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "status": "prepared_no_controller_or_learned_execution",
+  "temporary_base": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl",
+  "cohort_sha256": "6dbccd8045017d795da432cf248824f526d9bea76df879317b01f0284358ab90",
+  "preparer_sha256": "e8c474c9ce0630136e40c4bbcb506c26f8fba50bac9a5aea5368e223930369ce",
+  "episodes": [
+    {
+      "id": "b01",
+      "policy": "conventional_reference",
+      "branch": "retained",
+      "case_dir": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/b01",
+      "preparation": {
+        "path": "preparation.json",
+        "sha256": "4b5ce54f1fd3002d34a78fac4314eecb846f81728778154d6ed78d201f44eae8",
+        "bytes": 175028
+      },
+      "initial_observation": {
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      },
+      "prompt": {
+        "path": "prompts/b01.txt",
+        "sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+        "bytes": 5306
+      }
+    },
+    {
+      "id": "b02",
+      "policy": "conventional_reference",
+      "branch": "revoked",
+      "case_dir": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/b02",
+      "preparation": {
+        "path": "preparation.json",
+        "sha256": "76ed300c374e82b91cb858d173fb349de7bbdb56ae7951044342c95079c2f3e4",
+        "bytes": 175027
+      },
+      "initial_observation": {
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      },
+      "prompt": {
+        "path": "prompts/b02.txt",
+        "sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+        "bytes": 5306
+      }
+    },
+    {
+      "id": "w01",
+      "policy": "fresh_learned_context",
+      "branch": "revoked",
+      "case_dir": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/w01",
+      "preparation": {
+        "path": "preparation.json",
+        "sha256": "51d05beac287f78f788881aa408d0b16aa559c3106e6775573de059ecbf868c7",
+        "bytes": 175027
+      },
+      "initial_observation": {
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      },
+      "prompt": {
+        "path": "prompts/w01.txt",
+        "sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+        "bytes": 5306
+      }
+    },
+    {
+      "id": "w02",
+      "policy": "fresh_learned_context",
+      "branch": "retained",
+      "case_dir": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/w02",
+      "preparation": {
+        "path": "preparation.json",
+        "sha256": "69e2fba886a889626d9696e11db6e4bbdb62cb3f9b875aba51237938485d8255",
+        "bytes": 175028
+      },
+      "initial_observation": {
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      },
+      "prompt": {
+        "path": "prompts/w02.txt",
+        "sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+        "bytes": 5306
+      }
+    }
+  ]
+}

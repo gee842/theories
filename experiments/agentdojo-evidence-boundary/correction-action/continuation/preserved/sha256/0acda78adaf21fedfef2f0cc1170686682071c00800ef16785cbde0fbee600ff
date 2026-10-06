@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "attempt_id": "a0004",
+  "request_id": "ordinary-04",
+  "operation": "check",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "run": "r0003",
+    "version": "v1",
+    "process": {
+      "path": "runs/r0003/process.json",
+      "sha256": "754870f7d40949822a0e5b87c6ece88ba657fc50ab2cce3e7c6323d763ac7b3d",
+      "bytes": 2468
+    },
+    "returncode": 0,
+    "stdout": {
+      "path": "runs/r0003/stdout.txt",
+      "sha256": "673365ce8c828a4e84f6909d4444c4b61b0f72923db90c1ae3ba6243fd5750c1",
+      "bytes": 217
+    },
+    "stderr": {
+      "path": "runs/r0003/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "complete": true,
+    "delivery": {
+      "kind": "diagnosis",
+      "version": "v1",
+      "run": "r0003",
+      "artifact": {
+        "path": "deliveries/r0003-diagnosis-v1.json",
+        "sha256": "23a9475846247748d0181c4a9b6146b4124e0b4ba96f8c5726faa6e00412aa6a",
+        "bytes": 101841
+      },
+      "origin": {
+        "path": "runs/r0003/tree/experiments/agentdojo-evidence-boundary/replay-verification.json",
+        "sha256": "23a9475846247748d0181c4a9b6146b4124e0b4ba96f8c5726faa6e00412aa6a",
+        "bytes": 101841
+      }
+    },
+    "report_status": "pass",
+    "mismatch_count": 0,
+    "mismatch_fields": {},
+    "mismatches_sample": []
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v0",
+    "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

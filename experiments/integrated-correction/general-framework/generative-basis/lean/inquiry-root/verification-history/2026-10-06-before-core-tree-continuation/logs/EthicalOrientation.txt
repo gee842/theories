@@ -1,0 +1,17 @@
+'Generative.EthicalOrientation.continuation_preorder' does not depend on any axioms
+'Generative.EthicalOrientation.converse_preorder' does not depend on any axioms
+'Generative.EthicalOrientation.pullback_preorder' does not depend on any axioms
+'Generative.EthicalOrientation.pullback_fiber_invariant' does not depend on any axioms
+'Generative.EthicalOrientation.continuation_product_mono' does not depend on any axioms
+'Generative.EthicalOrientation.continuation_projection_iff' does not depend on any axioms
+'Generative.EthicalOrientation.history_length_map' does not depend on any axioms
+'Generative.EthicalOrientation.history_length_preorder' does not depend on any axioms
+'Generative.EthicalOrientation.history_orders_renaming_invariant' does not depend on any axioms
+'Generative.EthicalOrientation.two_events_strictly_longer' does not depend on any axioms
+'Generative.EthicalOrientation.opposed_coherent_annotation_invariant_orders' does not depend on any axioms
+'Generative.EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth' does not depend on any axioms
+'Generative.EthicalOrientation.toggle_same_endpoint_histories' does not depend on any axioms
+'Generative.EthicalOrientation.toggle_continuation_equivalent' does not depend on any axioms
+'Generative.EthicalOrientation.toggle_compared_histories_same_residual' does not depend on any axioms
+'Generative.EthicalOrientation.actual_histories_with_unselected_orientation' does not depend on any axioms
+'Generative.EthicalOrientation.toggle_has_no_every_step_strict_order' does not depend on any axioms

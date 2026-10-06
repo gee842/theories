@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-06",
+  "scope": "Before additive whole-history repair comparison; originals remain in place, not portable copies.",
+  "files": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-ARGUMENT.md",
+      "bytes": 8711,
+      "sha256": "eea77bcdfaad61f200058bfab1e9979a0ab36c64d1d6b196c4990ea4473c8018"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "bytes": 8237,
+      "sha256": "fadabc2f93cacfc8822ac207c7892a3c5ca16cc2d5de33724194dd20c4e0247c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-SCOPE.md",
+      "bytes": 7304,
+      "sha256": "3653e291cc2cc31b344f1598c972ab580b5ffa78aa589444b0e4fc9bd0795224"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-INTEGRATION.md",
+      "bytes": 5857,
+      "sha256": "ced73ddf2a27f5e73c8ebd7f02825cc29efcee4cb450b7d58f8e70255817d7d9"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "bytes": 167603,
+      "sha256": "203f49b71b3d4d24451dfcd7abc51ddd5e6c362f85ce548c752132ffcb374810"
+    },
+    {
+      "path": "RESEARCH.md",
+      "bytes": 223872,
+      "sha256": "daef6d127059f17f7a884eac1d03eecd913cf8761921fbb5094b891eec5d6a2f"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "bytes": 569438,
+      "sha256": "7c304ef86994653f0776b679f55ca292682e5c2a0733b35b341a9644b43dd927"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "bytes": 225697,
+      "sha256": "b66d5e3dcdd47a543767900098b5d7d0a1558ac21d9ded8d1859699804c72777"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "bytes": 107788,
+      "sha256": "fce4f4e4d1c919bbdda9cdec71d0846bbf82167f0b531c925129aaaf11c982af"
+    }
+  ]
+}

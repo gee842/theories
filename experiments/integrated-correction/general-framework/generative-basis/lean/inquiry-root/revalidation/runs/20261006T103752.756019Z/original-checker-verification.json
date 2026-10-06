@@ -1,0 +1,125 @@
+{
+  "checked_at_utc": "2026-10-06T10:37:56.253130+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "af7e7ab1c4ae38d11811f06772f37f6f099393ec299e87c4572c931de19a6101",
+  "fresh_temporary_build": true,
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "inherited": true,
+      "source": "../GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "Depletion",
+      "inherited": true,
+      "source": "../Depletion.lean",
+      "source_sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.trace_reserve_bound",
+        "Generative.trace_length_bound",
+        "Generative.no_nonempty_cycle_under_depletion",
+        "Generative.infinite_execution_contradicts_depletion",
+        "Generative.no_infinite_execution_under_depletion"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/Depletion.txt",
+      "output_sha256": "2e14c5291bcd4c020c329f10cf29d7771d129d2758b87d960c03e56adab84679"
+    },
+    {
+      "module": "GenerativeClosure",
+      "inherited": false,
+      "source": "GenerativeClosure.lean",
+      "source_sha256": "bf9a625ac70c7cd1fe78ba39ee37bd506caf319f31d7ea4059ca6a2549908bf4",
+      "exit_code": 0,
+      "audited_declarations": [
+        "InquiryRoot.derivation_sound",
+        "InquiryRoot.all_closed_descendants_necessary",
+        "InquiryRoot.all_relative_descendants_necessary",
+        "InquiryRoot.entire_closure_necessary_iff_basis",
+        "InquiryRoot.local_justification_discharges_context",
+        "InquiryRoot.no_counterexample_to_closed_descendant",
+        "InquiryRoot.countermodel_excludes_derivation",
+        "InquiryRoot.derived_lemma_extension_preserves_necessity",
+        "InquiryRoot.extra_claim_derives_with_one_local_premise",
+        "InquiryRoot.extra_claim_not_necessary",
+        "InquiryRoot.extra_claim_not_closed_derivable",
+        "InquiryRoot.one_local_premise_becomes_an_implication"
+      ],
+      "axioms": [
+        "propext"
+      ],
+      "clean_dependency_audit": true,
+      "output": "verification/GenerativeClosure.txt",
+      "output_sha256": "06516b35852c7eead00c1e185cc1820b7c90f5ca9197b148c993b10064be50db"
+    },
+    {
+      "module": "InquiryFamilies",
+      "inherited": false,
+      "source": "InquiryFamilies.lean",
+      "source_sha256": "9b8ccc77d1f3fc7c2c4731312dc416a50bbb3079320e0571994fe43965547a75",
+      "exit_code": 0,
+      "audited_declarations": [
+        "InquiryRoot.threshold_available_iff",
+        "InquiryRoot.every_threshold_has_a_finite_realization",
+        "InquiryRoot.next_threshold_exceeds_that_realization",
+        "InquiryRoot.threshold_capability_sets_pairwise_distinct",
+        "InquiryRoot.spending_trace_iff",
+        "InquiryRoot.spending_feasible_iff",
+        "InquiryRoot.every_budget_excludes_a_different_horizon",
+        "InquiryRoot.local_basis_valid",
+        "InquiryRoot.entire_local_closure_valid",
+        "InquiryRoot.combined_capability_descendant",
+        "InquiryRoot.combined_capability_implication_in_closed_theory",
+        "InquiryRoot.uniform_basis_valid",
+        "InquiryRoot.entire_uniform_closure_valid",
+        "InquiryRoot.every_threshold_contract_is_a_descendant",
+        "InquiryRoot.every_support_contract_is_a_descendant"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "clean_dependency_audit": true,
+      "output": "verification/InquiryFamilies.txt",
+      "output_sha256": "e4b5695c35ae43d6ee671116bcf543724ca1e795b22e9a5c9f2d1ba1d4fcadec"
+    }
+  ],
+  "new_audited_declarations": 27,
+  "inherited_audited_declarations": 23,
+  "scope": "Necessity preservation for all finite premise-tracked derivations; exact clipped-observation threshold family; actual inherited spending traces and finite reserve exclusions; concrete local-basis composition. No proof of necessity of the full proposed ontology or of empirical or ethical premises, physical infinite computation, or complete wisdom."
+}

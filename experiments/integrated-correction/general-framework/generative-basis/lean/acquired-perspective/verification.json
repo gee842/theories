@@ -1,0 +1,2056 @@
+{
+  "checked_at_utc": "2026-10-06T05:41:32.432534+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "8681d440b8de55bc5a8580803ca032b6197909ce1f5f283ff0880f06ee1aaade",
+  "fresh_temporary_build": true,
+  "sources_unchanged_during_check": true,
+  "baseline_receipts_unchanged_during_check": true,
+  "pinned_baseline_json": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/verification.json": "56eb4b70d285c83ca27dd6264ebf1e1a6565312efab2b27289ad8b4380642dab",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/verification.json": "51662eed968f7aa66253d0d40c23c145c5902875376667df66b91e23cdec69a7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json": "0e446764280518fc43fa040f4325789da2899ebaf8ae7e0493fa3ac42c64e665"
+  },
+  "inherited_source_and_receipt_pins": {
+    "GenerativeCore": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeCore.txt",
+      "receipt_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    "BoundaryModels": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "source_sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/BoundaryModels.txt",
+      "receipt_sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    "Depletion": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "source_sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/Depletion.txt",
+      "receipt_sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    "RootRealization": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "source_sha256": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/RootRealization.txt",
+      "receipt_sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    "ProductTower": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "source_sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/ProductTower.txt",
+      "receipt_sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    "DynamicUnderdetermination": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "source_sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicUnderdetermination.txt",
+      "receipt_sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    "GeneratedPaths": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "source_sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GeneratedPaths.txt",
+      "receipt_sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    "HistoryRealization": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "source_sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/HistoryRealization.txt",
+      "receipt_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    "DynamicSymmetry": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "source_sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicSymmetry.txt",
+      "receipt_sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    "DynamicConsequences": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "source_sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicConsequences.txt",
+      "receipt_sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    "DynamicClassification": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "source_sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicClassification.txt",
+      "receipt_sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    "GeneratedSelf": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "source_sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GeneratedSelf.txt",
+      "receipt_sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    "EthicalOrientation": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "source_sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/EthicalOrientation.txt",
+      "receipt_sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    "OutcomeContinuation": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "source_sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/OutcomeContinuation.txt",
+      "receipt_sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    "GenerativeModel": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "source_sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeModel.txt",
+      "receipt_sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    "GenerativeOutcomeModel": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "source_sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeOutcomeModel.txt",
+      "receipt_sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    "FormedSelection": {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "source_sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/verification/FormedSelection.txt",
+      "receipt_sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    "SelectorRevision": {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
+      "source_sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/verification/SelectorRevision.txt",
+      "receipt_sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+    },
+    "UpdaterFormation": {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean",
+      "source_sha256": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/verification/UpdaterFormation.txt",
+      "receipt_sha256": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904"
+    },
+    "ConstructedUpdater": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/ConstructedUpdater.lean",
+      "source_sha256": "c59f5c934ed1884ffddfa36d982b89e6f934386d462a56927478004018e02023",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/verification/ConstructedUpdater.txt",
+      "receipt_sha256": "8d9362e4a7aa4b29954a620eea9ae423a97d9bb89371b96c3573066e5da43ad9"
+    },
+    "PredictionAction": {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
+      "source_sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/verification/PredictionAction.txt",
+      "receipt_sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
+    },
+    "ConstructedPrediction": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/ConstructedPrediction.lean",
+      "source_sha256": "b3dca9bd1fa58b1c45450c3c77d66ad2bdbbe153c1797fbc4fca534d6878d51f",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/verification/ConstructedPrediction.txt",
+      "receipt_sha256": "f419242fff5b399f6594c4a643f0c133d78b8f872609c74e87f3bd35352f46b2"
+    },
+    "RecipientCorrection": {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean",
+      "source_sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+      "receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/verification/RecipientCorrection.txt",
+      "receipt_sha256": "797b6ef74c6d412e922bd75d25cc1719e5919c5bfcdbdfa0a0995326caed8ab7"
+    }
+  },
+  "inherited_axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "axioms_by_declaration": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 18,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "BoundaryModels",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "source_sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "exit_code": 0,
+      "audited_declarations": [
+        "GenerativeBoundary.ObservationLoss.no_observation_only_classifier",
+        "GenerativeBoundary.SharedResource.individual_feasibility_without_joint_feasibility",
+        "GenerativeBoundary.FixedSelector.returns_after_two",
+        "GenerativeBoundary.FixedSelector.changes_phase_every_step",
+        "GenerativeBoundary.FixedSelector.selector_changes_next_phase",
+        "GenerativeBoundary.FixedSelector.selector_preserved_by_step",
+        "GenerativeBoundary.FixedSelector.selector_unchanged_at_every_time",
+        "GenerativeBoundary.FixedSelector.recurrent_process_with_fixed_selector"
+      ],
+      "axioms_by_declaration": {
+        "GenerativeBoundary.ObservationLoss.no_observation_only_classifier": [],
+        "GenerativeBoundary.SharedResource.individual_feasibility_without_joint_feasibility": [],
+        "GenerativeBoundary.FixedSelector.returns_after_two": [],
+        "GenerativeBoundary.FixedSelector.changes_phase_every_step": [],
+        "GenerativeBoundary.FixedSelector.selector_changes_next_phase": [],
+        "GenerativeBoundary.FixedSelector.selector_preserved_by_step": [],
+        "GenerativeBoundary.FixedSelector.selector_unchanged_at_every_time": [],
+        "GenerativeBoundary.FixedSelector.recurrent_process_with_fixed_selector": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 8,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/BoundaryModels.txt",
+      "output_sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "module": "Depletion",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "source_sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.trace_reserve_bound",
+        "Generative.trace_length_bound",
+        "Generative.no_nonempty_cycle_under_depletion",
+        "Generative.infinite_execution_contradicts_depletion",
+        "Generative.no_infinite_execution_under_depletion"
+      ],
+      "axioms_by_declaration": {
+        "Generative.trace_reserve_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.trace_length_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.no_nonempty_cycle_under_depletion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.infinite_execution_contradicts_depletion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.no_infinite_execution_under_depletion": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/Depletion.txt",
+      "output_sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "module": "RootRealization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "source_sha256": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Realization.activity_changes_its_continuation_conditions",
+        "Generative.Realization.phase_determined_by_support_and_selector",
+        "Generative.Realization.restoration_guard",
+        "Generative.Realization.consequential_internal_revision",
+        "Generative.Realization.revision_guard_requires_depletion",
+        "Generative.Realization.restoration_requires_external_provision",
+        "Generative.Realization.reaches_renewable_state",
+        "Generative.Realization.nonempty_cycle",
+        "Generative.Realization.recurrent_execution",
+        "Generative.Realization.reaches_terminal",
+        "Generative.Realization.terminal_has_no_action",
+        "Generative.Realization.no_continuation_after_loss",
+        "Generative.Realization.same_law_admits_renewal_and_loss",
+        "Generative.Realization.decoration_local_exact",
+        "Generative.Realization.decoration_trace_exact",
+        "Generative.Realization.support_alone_is_incomplete"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Realization.activity_changes_its_continuation_conditions": [
+          "propext"
+        ],
+        "Generative.Realization.phase_determined_by_support_and_selector": [
+          "propext"
+        ],
+        "Generative.Realization.restoration_guard": [
+          "propext"
+        ],
+        "Generative.Realization.consequential_internal_revision": [
+          "propext"
+        ],
+        "Generative.Realization.revision_guard_requires_depletion": [
+          "propext"
+        ],
+        "Generative.Realization.restoration_requires_external_provision": [
+          "propext"
+        ],
+        "Generative.Realization.reaches_renewable_state": [
+          "propext"
+        ],
+        "Generative.Realization.nonempty_cycle": [
+          "propext"
+        ],
+        "Generative.Realization.recurrent_execution": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.Realization.reaches_terminal": [
+          "propext"
+        ],
+        "Generative.Realization.terminal_has_no_action": [
+          "propext"
+        ],
+        "Generative.Realization.no_continuation_after_loss": [
+          "propext"
+        ],
+        "Generative.Realization.same_law_admits_renewal_and_loss": [
+          "propext"
+        ],
+        "Generative.Realization.decoration_local_exact": [
+          "propext"
+        ],
+        "Generative.Realization.decoration_trace_exact": [
+          "propext"
+        ],
+        "Generative.Realization.support_alone_is_incomplete": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/RootRealization.txt",
+      "output_sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "module": "ProductTower",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "source_sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Deeper.leaf_diagonal",
+        "Generative.Deeper.diagonal_injective",
+        "Generative.Deeper.tower_nonempty_iff",
+        "Generative.Deeper.tower_subsingleton",
+        "Generative.Deeper.tower_subsingleton_iff",
+        "Generative.Deeper.tower_empty_iff",
+        "Generative.Deeper.seed_distinction_persists"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Deeper.leaf_diagonal": [],
+        "Generative.Deeper.diagonal_injective": [],
+        "Generative.Deeper.tower_nonempty_iff": [],
+        "Generative.Deeper.tower_subsingleton": [],
+        "Generative.Deeper.tower_subsingleton_iff": [],
+        "Generative.Deeper.tower_empty_iff": [],
+        "Generative.Deeper.seed_distinction_persists": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 7,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/ProductTower.txt",
+      "output_sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "source_sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Deeper.idle_no_event",
+        "Generative.Deeper.static_event",
+        "Generative.Deeper.static_never_changes",
+        "Generative.Deeper.toggle_event",
+        "Generative.Deeper.toggle_always_changes",
+        "Generative.Deeper.static_history_never_changes",
+        "Generative.Deeper.toggle_two_event_cycle",
+        "Generative.Deeper.same_carrier_incompatible_laws",
+        "Generative.Deeper.event_without_state_distinction"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Deeper.idle_no_event": [],
+        "Generative.Deeper.static_event": [],
+        "Generative.Deeper.static_never_changes": [],
+        "Generative.Deeper.toggle_event": [],
+        "Generative.Deeper.toggle_always_changes": [],
+        "Generative.Deeper.static_history_never_changes": [],
+        "Generative.Deeper.toggle_two_event_cycle": [],
+        "Generative.Deeper.same_carrier_incompatible_laws": [],
+        "Generative.Deeper.event_without_state_distinction": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 9,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/DynamicUnderdetermination.txt",
+      "output_sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "module": "GeneratedPaths",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "source_sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Deeper.reach_refl",
+        "Generative.Deeper.reach_step",
+        "Generative.Deeper.reach_trans",
+        "Generative.Deeper.trace_evaluate",
+        "Generative.Deeper.reach_evaluate",
+        "Generative.Deeper.reach_least",
+        "Generative.Deeper.reach_is_least_closure",
+        "Generative.Deeper.least_closure_unique",
+        "Generative.Deeper.reach_without_steps_iff"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Deeper.reach_refl": [],
+        "Generative.Deeper.reach_step": [],
+        "Generative.Deeper.reach_trans": [],
+        "Generative.Deeper.trace_evaluate": [],
+        "Generative.Deeper.reach_evaluate": [],
+        "Generative.Deeper.reach_least": [],
+        "Generative.Deeper.reach_is_least_closure": [],
+        "Generative.Deeper.least_closure_unique": [],
+        "Generative.Deeper.reach_without_steps_iff": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 9,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/GeneratedPaths.txt",
+      "output_sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "module": "HistoryRealization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "source_sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Deeper.append_nil_constructive": [],
+        "Generative.Deeper.append_assoc_constructive": [],
+        "Generative.Deeper.history_trace_iff": [],
+        "Generative.Deeper.history_from_empty_iff": [],
+        "Generative.Deeper.history_feasible_iff": [],
+        "Generative.Deeper.process_language_prefix_closed": [],
+        "Generative.Deeper.process_language_exact_history_realization": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 7,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/HistoryRealization.txt",
+      "output_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "module": "DynamicSymmetry",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "source_sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Deeper.unique_predecessor_of_total_deterministic_symmetric",
+        "Generative.Deeper.static_total",
+        "Generative.Deeper.toggle_total",
+        "Generative.Deeper.static_deterministic",
+        "Generative.Deeper.toggle_deterministic",
+        "Generative.Deeper.static_symmetric",
+        "Generative.Deeper.toggle_symmetric",
+        "Generative.Deeper.static_unique_predecessor",
+        "Generative.Deeper.toggle_unique_predecessor",
+        "Generative.Deeper.identity_bool_bijection",
+        "Generative.Deeper.negation_bool_bijection",
+        "Generative.Deeper.injective_bool_map_forms",
+        "Generative.Deeper.injective_bool_map_commutes_not",
+        "Generative.Deeper.static_renaming_invariant",
+        "Generative.Deeper.toggle_renaming_invariant",
+        "Generative.Deeper.static_symmetry_candidate",
+        "Generative.Deeper.toggle_symmetry_candidate",
+        "Generative.Deeper.static_ne_toggle",
+        "Generative.Deeper.no_state_map_identifies_static_toggle",
+        "Generative.Deeper.symmetric_dynamics_remain_underdetermined"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Deeper.unique_predecessor_of_total_deterministic_symmetric": [],
+        "Generative.Deeper.static_total": [],
+        "Generative.Deeper.toggle_total": [],
+        "Generative.Deeper.static_deterministic": [],
+        "Generative.Deeper.toggle_deterministic": [],
+        "Generative.Deeper.static_symmetric": [],
+        "Generative.Deeper.toggle_symmetric": [],
+        "Generative.Deeper.static_unique_predecessor": [],
+        "Generative.Deeper.toggle_unique_predecessor": [],
+        "Generative.Deeper.identity_bool_bijection": [],
+        "Generative.Deeper.negation_bool_bijection": [],
+        "Generative.Deeper.injective_bool_map_forms": [],
+        "Generative.Deeper.injective_bool_map_commutes_not": [],
+        "Generative.Deeper.static_renaming_invariant": [],
+        "Generative.Deeper.toggle_renaming_invariant": [],
+        "Generative.Deeper.static_symmetry_candidate": [],
+        "Generative.Deeper.toggle_symmetry_candidate": [],
+        "Generative.Deeper.static_ne_toggle": [],
+        "Generative.Deeper.no_state_map_identifies_static_toggle": [],
+        "Generative.Deeper.symmetric_dynamics_remain_underdetermined": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 20,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/DynamicSymmetry.txt",
+      "output_sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "module": "DynamicConsequences",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "source_sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Deeper.same_steps_iff_endpoint_traces",
+        "Generative.Deeper.same_steps_feasible_iff",
+        "Generative.Deeper.feasible_of_step_total",
+        "Generative.Deeper.total_processes_same_feasible",
+        "Generative.Deeper.static_toggle_same_feasible",
+        "Generative.Deeper.static_toggle_singleton_endpoints_differ",
+        "Generative.Deeper.static_toggle_not_endpoint_trace_equivalent",
+        "Generative.Deeper.static_toggle_not_same_steps",
+        "Generative.Deeper.word_feasibility_does_not_determine_endpoints"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Deeper.same_steps_iff_endpoint_traces": [],
+        "Generative.Deeper.same_steps_feasible_iff": [],
+        "Generative.Deeper.feasible_of_step_total": [],
+        "Generative.Deeper.total_processes_same_feasible": [],
+        "Generative.Deeper.static_toggle_same_feasible": [],
+        "Generative.Deeper.static_toggle_singleton_endpoints_differ": [],
+        "Generative.Deeper.static_toggle_not_endpoint_trace_equivalent": [],
+        "Generative.Deeper.static_toggle_not_same_steps": [],
+        "Generative.Deeper.word_feasibility_does_not_determine_endpoints": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 9,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/DynamicConsequences.txt",
+      "output_sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "module": "DynamicClassification",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "source_sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Deeper.symmetry_candidate_of_step_description",
+        "Generative.Deeper.total_deterministic_renaming_descriptions",
+        "Generative.Deeper.total_deterministic_renaming_iff_descriptions",
+        "Generative.Deeper.symmetry_candidate_iff_descriptions",
+        "Generative.Deeper.symmetry_candidate_iff_reduced_properties",
+        "Generative.Deeper.static_toggle_descriptions_exclusive"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Deeper.symmetry_candidate_of_step_description": [],
+        "Generative.Deeper.total_deterministic_renaming_descriptions": [],
+        "Generative.Deeper.total_deterministic_renaming_iff_descriptions": [],
+        "Generative.Deeper.symmetry_candidate_iff_descriptions": [],
+        "Generative.Deeper.symmetry_candidate_iff_reduced_properties": [],
+        "Generative.Deeper.static_toggle_descriptions_exclusive": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 6,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/DynamicClassification.txt",
+      "output_sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "module": "GeneratedSelf",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "source_sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.SelfFormation.residual_empty_history",
+        "Generative.SelfFormation.residual_empty_future",
+        "Generative.SelfFormation.residual_iff_actual_boundary",
+        "Generative.SelfFormation.residual_update",
+        "Generative.SelfFormation.residual_prefix",
+        "Generative.SelfFormation.actual_continuation_enters_residual",
+        "Generative.SelfFormation.residual_at_unique_endpoint",
+        "Generative.SelfFormation.residual_history_realization",
+        "Generative.SelfFormation.profiles_refl",
+        "Generative.SelfFormation.profiles_symm",
+        "Generative.SelfFormation.profiles_trans",
+        "Generative.SelfFormation.profiles_extend",
+        "Generative.SelfFormation.profiles_retain_feasibility",
+        "Generative.SelfFormation.exact_summary_collision_profiles",
+        "Generative.SelfFormation.exact_summary_distinguishes",
+        "Generative.SelfFormation.exact_summary_exists_iff",
+        "Generative.SelfFormation.residual_exact_projection",
+        "Generative.SelfFormation.residual_of_total",
+        "Generative.SelfFormation.total_profiles_identical",
+        "Generative.SelfFormation.toggle_states_differ_profiles_agree",
+        "Generative.SelfFormation.no_profile_only_toggle_state_decoder",
+        "Generative.SelfFormation.recurrence_without_profile_differentiation",
+        "Generative.SelfFormation.no_invariant_unique_toggle_center"
+      ],
+      "axioms_by_declaration": {
+        "Generative.SelfFormation.residual_empty_history": [],
+        "Generative.SelfFormation.residual_empty_future": [],
+        "Generative.SelfFormation.residual_iff_actual_boundary": [],
+        "Generative.SelfFormation.residual_update": [],
+        "Generative.SelfFormation.residual_prefix": [],
+        "Generative.SelfFormation.actual_continuation_enters_residual": [],
+        "Generative.SelfFormation.residual_at_unique_endpoint": [],
+        "Generative.SelfFormation.residual_history_realization": [],
+        "Generative.SelfFormation.profiles_refl": [],
+        "Generative.SelfFormation.profiles_symm": [],
+        "Generative.SelfFormation.profiles_trans": [],
+        "Generative.SelfFormation.profiles_extend": [],
+        "Generative.SelfFormation.profiles_retain_feasibility": [],
+        "Generative.SelfFormation.exact_summary_collision_profiles": [],
+        "Generative.SelfFormation.exact_summary_distinguishes": [],
+        "Generative.SelfFormation.exact_summary_exists_iff": [],
+        "Generative.SelfFormation.residual_exact_projection": [],
+        "Generative.SelfFormation.residual_of_total": [],
+        "Generative.SelfFormation.total_profiles_identical": [],
+        "Generative.SelfFormation.toggle_states_differ_profiles_agree": [],
+        "Generative.SelfFormation.no_profile_only_toggle_state_decoder": [],
+        "Generative.SelfFormation.recurrence_without_profile_differentiation": [],
+        "Generative.SelfFormation.no_invariant_unique_toggle_center": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 23,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/GeneratedSelf.txt",
+      "output_sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "module": "EthicalOrientation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "source_sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.EthicalOrientation.continuation_preorder",
+        "Generative.EthicalOrientation.converse_preorder",
+        "Generative.EthicalOrientation.pullback_preorder",
+        "Generative.EthicalOrientation.pullback_fiber_invariant",
+        "Generative.EthicalOrientation.continuation_product_mono",
+        "Generative.EthicalOrientation.continuation_projection_iff",
+        "Generative.EthicalOrientation.history_length_map",
+        "Generative.EthicalOrientation.history_length_preorder",
+        "Generative.EthicalOrientation.history_orders_renaming_invariant",
+        "Generative.EthicalOrientation.two_events_strictly_longer",
+        "Generative.EthicalOrientation.opposed_coherent_annotation_invariant_orders",
+        "Generative.EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth",
+        "Generative.EthicalOrientation.toggle_same_endpoint_histories",
+        "Generative.EthicalOrientation.toggle_continuation_equivalent",
+        "Generative.EthicalOrientation.toggle_compared_histories_same_residual",
+        "Generative.EthicalOrientation.actual_histories_with_unselected_orientation",
+        "Generative.EthicalOrientation.toggle_has_no_every_step_strict_order"
+      ],
+      "axioms_by_declaration": {
+        "Generative.EthicalOrientation.continuation_preorder": [],
+        "Generative.EthicalOrientation.converse_preorder": [],
+        "Generative.EthicalOrientation.pullback_preorder": [],
+        "Generative.EthicalOrientation.pullback_fiber_invariant": [],
+        "Generative.EthicalOrientation.continuation_product_mono": [],
+        "Generative.EthicalOrientation.continuation_projection_iff": [],
+        "Generative.EthicalOrientation.history_length_map": [],
+        "Generative.EthicalOrientation.history_length_preorder": [],
+        "Generative.EthicalOrientation.history_orders_renaming_invariant": [],
+        "Generative.EthicalOrientation.two_events_strictly_longer": [],
+        "Generative.EthicalOrientation.opposed_coherent_annotation_invariant_orders": [],
+        "Generative.EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth": [],
+        "Generative.EthicalOrientation.toggle_same_endpoint_histories": [],
+        "Generative.EthicalOrientation.toggle_continuation_equivalent": [],
+        "Generative.EthicalOrientation.toggle_compared_histories_same_residual": [],
+        "Generative.EthicalOrientation.actual_histories_with_unselected_orientation": [],
+        "Generative.EthicalOrientation.toggle_has_no_every_step_strict_order": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 17,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/EthicalOrientation.txt",
+      "output_sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "module": "OutcomeContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "source_sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.OutcomeContinuation.exists_outcome_iff_feasible",
+        "Generative.OutcomeContinuation.outcome_residual_update",
+        "Generative.OutcomeContinuation.outcome_iff_actual_boundary",
+        "Generative.OutcomeContinuation.outcome_of_actual_history",
+        "Generative.OutcomeContinuation.outcome_singleton_iff",
+        "Generative.OutcomeContinuation.outcome_singleton_at_unique_successor",
+        "Generative.OutcomeContinuation.empty_future_at_unique_endpoint",
+        "Generative.OutcomeContinuation.outcome_profiles_extend",
+        "Generative.OutcomeContinuation.outcome_profiles_retain_feasibility",
+        "Generative.OutcomeContinuation.exact_outcome_summary_collision",
+        "Generative.OutcomeContinuation.exact_outcome_summary_distinguishes",
+        "Generative.OutcomeContinuation.exact_outcome_summary_exists_iff",
+        "Generative.OutcomeContinuation.identity_outcome_iff_trace",
+        "Generative.OutcomeContinuation.step_agreement_iff_endpoint_outcomes"
+      ],
+      "axioms_by_declaration": {
+        "Generative.OutcomeContinuation.exists_outcome_iff_feasible": [],
+        "Generative.OutcomeContinuation.outcome_residual_update": [],
+        "Generative.OutcomeContinuation.outcome_iff_actual_boundary": [],
+        "Generative.OutcomeContinuation.outcome_of_actual_history": [],
+        "Generative.OutcomeContinuation.outcome_singleton_iff": [],
+        "Generative.OutcomeContinuation.outcome_singleton_at_unique_successor": [],
+        "Generative.OutcomeContinuation.empty_future_at_unique_endpoint": [],
+        "Generative.OutcomeContinuation.outcome_profiles_extend": [],
+        "Generative.OutcomeContinuation.outcome_profiles_retain_feasibility": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_collision": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_distinguishes": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_exists_iff": [],
+        "Generative.OutcomeContinuation.identity_outcome_iff_trace": [],
+        "Generative.OutcomeContinuation.step_agreement_iff_endpoint_outcomes": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 14,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/OutcomeContinuation.txt",
+      "output_sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "module": "GenerativeModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "source_sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Model.laws_iff_endpoint_histories",
+        "Generative.Model.boolean_symmetry_iff_history_classes",
+        "Generative.Model.reduced_boolean_properties_iff_history_classes",
+        "Generative.Model.symmetric_laws_same_words_different_histories",
+        "Generative.Model.synchronized_word_constraints_preserve_feasibility_agreement",
+        "Generative.Model.history_record_exactness_iff",
+        "Generative.Model.changed_endpoint_with_no_profile_only_decoder",
+        "Generative.Model.history_profiles_and_invariance_do_not_select_orientation"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Model.laws_iff_endpoint_histories": [],
+        "Generative.Model.boolean_symmetry_iff_history_classes": [],
+        "Generative.Model.reduced_boolean_properties_iff_history_classes": [],
+        "Generative.Model.symmetric_laws_same_words_different_histories": [],
+        "Generative.Model.synchronized_word_constraints_preserve_feasibility_agreement": [],
+        "Generative.Model.history_record_exactness_iff": [],
+        "Generative.Model.changed_endpoint_with_no_profile_only_decoder": [],
+        "Generative.Model.history_profiles_and_invariance_do_not_select_orientation": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 8,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/GenerativeModel.txt",
+      "output_sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "module": "GenerativeOutcomeModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "source_sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Model.outcome_record_exactness_iff",
+        "Generative.Model.outcome_agreement_preserves_feasible_future_agreement",
+        "Generative.Model.same_words_can_have_different_outcomes"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Model.outcome_record_exactness_iff": [],
+        "Generative.Model.outcome_agreement_preserves_feasible_future_agreement": [],
+        "Generative.Model.same_words_can_have_different_outcomes": []
+      },
+      "axioms": [],
+      "empty_axiom_audits": 3,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/GenerativeOutcomeModel.txt",
+      "output_sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "module": "FormedSelection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "source_sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "exit_code": 0,
+      "audited_declarations": [
+        "FormedSelection.population_type_sum",
+        "FormedSelection.step_valid",
+        "FormedSelection.trace_valid",
+        "FormedSelection.material_ledger",
+        "FormedSelection.trace_material_ledger",
+        "FormedSelection.step_energy_ledger",
+        "FormedSelection.trace_energy_ledger",
+        "FormedSelection.step_common_ledger",
+        "FormedSelection.trace_common_ledger",
+        "FormedSelection.copy_increment_le_spent",
+        "FormedSelection.copy_tally_le_spent",
+        "FormedSelection.trace_copy_budget",
+        "FormedSelection.exact_step_rank_drop",
+        "FormedSelection.step_strict_rank",
+        "FormedSelection.trace_event_bound",
+        "FormedSelection.no_infinite_event_path",
+        "FormedSelection.step_paid_phase",
+        "FormedSelection.trace_paid_phase",
+        "FormedSelection.repair_needs_three_initial_common_units",
+        "FormedSelection.low_fuel_cannot_restore_site",
+        "FormedSelection.step_paid_mixed_phase",
+        "FormedSelection.trace_paid_mixed_phase",
+        "FormedSelection.restored_site_and_alternative_need_four_initial_common_units",
+        "FormedSelection.a_absence_step",
+        "FormedSelection.h_absence_step",
+        "FormedSelection.a_absence_trace",
+        "FormedSelection.h_absence_trace",
+        "FormedSelection.a_appearance_requires_formation",
+        "FormedSelection.h_appearance_requires_formation",
+        "FormedSelection.a_copy_has_template",
+        "FormedSelection.h_copy_has_template",
+        "FormedSelection.owned_support_step",
+        "FormedSelection.owned_support_trace",
+        "FormedSelection.owned_support_forbids_h_local_copy",
+        "FormedSelection.no_h_local_copies_without_resident_wear",
+        "FormedSelection.paid_formation_to_copy",
+        "FormedSelection.witness_accounting",
+        "FormedSelection.repair_enables_capture",
+        "FormedSelection.capture_enables_copy",
+        "FormedSelection.initial_owned_support",
+        "FormedSelection.no_h_local_copies_from_absence_without_resident_wear",
+        "FormedSelection.repaired_site_can_pass_to_alternative",
+        "FormedSelection.inheritance_accounting"
+      ],
+      "axioms_by_declaration": {
+        "FormedSelection.population_type_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.copy_increment_le_spent": [
+          "propext"
+        ],
+        "FormedSelection.copy_tally_le_spent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_copy_budget": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.exact_step_rank_drop": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_strict_rank": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_event_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.no_infinite_event_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.repair_needs_three_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.low_fuel_cannot_restore_site": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.restored_site_and_alternative_need_four_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.a_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.a_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.h_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.h_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_step": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_trace": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_forbids_h_local_copy": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.paid_formation_to_copy": [
+          "propext"
+        ],
+        "FormedSelection.witness_accounting": [
+          "propext"
+        ],
+        "FormedSelection.repair_enables_capture": [
+          "propext"
+        ],
+        "FormedSelection.capture_enables_copy": [
+          "propext"
+        ],
+        "FormedSelection.initial_owned_support": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_from_absence_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.repaired_site_can_pass_to_alternative": [
+          "propext"
+        ],
+        "FormedSelection.inheritance_accounting": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/FormedSelection.txt",
+      "output_sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    {
+      "module": "SelectorRevision",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
+      "source_sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+      "exit_code": 0,
+      "audited_declarations": [
+        "SelectorRevision.response_matches_iff",
+        "SelectorRevision.commands_do_not_read_regime",
+        "SelectorRevision.step_energy_ledger",
+        "SelectorRevision.trace_energy_ledger",
+        "SelectorRevision.trial_preserves_selector",
+        "SelectorRevision.renewal_inherits_selector",
+        "SelectorRevision.failed_trial_wears_selector",
+        "SelectorRevision.changed_selector_requires_paid_assembly",
+        "SelectorRevision.reversal_preserves_actual_resources_and_selector",
+        "SelectorRevision.trace_composition_uses_actual_state",
+        "SelectorRevision.revised_selector_witness",
+        "SelectorRevision.witness_changes_response_mapping",
+        "SelectorRevision.paid_ledger",
+        "SelectorRevision.paid_exists_iff",
+        "SelectorRevision.failure_cost_sum",
+        "SelectorRevision.recovery_cost_sum",
+        "SelectorRevision.recovery_prefix_affordable_iff",
+        "SelectorRevision.no_recovery_below_first_cost",
+        "SelectorRevision.each_failed_candidate_adds_full_block",
+        "SelectorRevision.each_failed_candidate_adds_lifetime_trials",
+        "SelectorRevision.source_horizon_obstruction"
+      ],
+      "axioms_by_declaration": {
+        "SelectorRevision.response_matches_iff": [
+          "propext"
+        ],
+        "SelectorRevision.commands_do_not_read_regime": [],
+        "SelectorRevision.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.trial_preserves_selector": [
+          "propext"
+        ],
+        "SelectorRevision.renewal_inherits_selector": [
+          "propext"
+        ],
+        "SelectorRevision.failed_trial_wears_selector": [
+          "propext"
+        ],
+        "SelectorRevision.changed_selector_requires_paid_assembly": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.reversal_preserves_actual_resources_and_selector": [],
+        "SelectorRevision.trace_composition_uses_actual_state": [],
+        "SelectorRevision.revised_selector_witness": [],
+        "SelectorRevision.witness_changes_response_mapping": [],
+        "SelectorRevision.paid_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.paid_exists_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.failure_cost_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.recovery_cost_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.recovery_prefix_affordable_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.no_recovery_below_first_cost": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.each_failed_candidate_adds_full_block": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.each_failed_candidate_adds_lifetime_trials": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.source_horizon_obstruction": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 5,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/SelectorRevision.txt",
+      "output_sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+    },
+    {
+      "module": "UpdaterFormation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean",
+      "source_sha256": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+      "exit_code": 0,
+      "audited_declarations": [
+        "UpdaterFormation.event_projection",
+        "UpdaterFormation.step_remainder_material",
+        "UpdaterFormation.step_energy_ledger",
+        "UpdaterFormation.trace_energy_ledger",
+        "UpdaterFormation.trace_material_preserved",
+        "UpdaterFormation.trace_projects_when_no_modules_formed",
+        "UpdaterFormation.directed_module_changes_available_assembly",
+        "UpdaterFormation.module_change_requires_paid_formation",
+        "UpdaterFormation.bridge_energy_exact",
+        "UpdaterFormation.bridge_has_two_actual_materials",
+        "UpdaterFormation.bridge_material_exact",
+        "UpdaterFormation.old_depleted_witness_cannot_pay_bridge",
+        "UpdaterFormation.old_step_preserved_exactly",
+        "UpdaterFormation.old_trace_embeds",
+        "UpdaterFormation.organization_trace_embeds",
+        "UpdaterFormation.actual_formation_bridge_continuation",
+        "UpdaterFormation.joined_energy_ledger",
+        "UpdaterFormation.synchronized_prefix_affordable_iff",
+        "UpdaterFormation.new_module_budget_obstruction",
+        "UpdaterFormation.actual_old_preparation",
+        "UpdaterFormation.actual_old_entrance_enabled",
+        "UpdaterFormation.entrance_is_actual_paid_state",
+        "UpdaterFormation.paid_updater_revision_witness",
+        "UpdaterFormation.whole_preparation_to_changed_updater_witness",
+        "UpdaterFormation.whole_witness_accounting"
+      ],
+      "axioms_by_declaration": {
+        "UpdaterFormation.event_projection": [
+          "propext"
+        ],
+        "UpdaterFormation.step_remainder_material": [],
+        "UpdaterFormation.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.trace_material_preserved": [],
+        "UpdaterFormation.trace_projects_when_no_modules_formed": [
+          "propext"
+        ],
+        "UpdaterFormation.directed_module_changes_available_assembly": [
+          "propext"
+        ],
+        "UpdaterFormation.module_change_requires_paid_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.bridge_energy_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.bridge_has_two_actual_materials": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.bridge_material_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.old_depleted_witness_cannot_pay_bridge": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.old_step_preserved_exactly": [
+          "propext"
+        ],
+        "UpdaterFormation.old_trace_embeds": [
+          "propext"
+        ],
+        "UpdaterFormation.organization_trace_embeds": [
+          "propext"
+        ],
+        "UpdaterFormation.actual_formation_bridge_continuation": [
+          "propext"
+        ],
+        "UpdaterFormation.joined_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.synchronized_prefix_affordable_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.new_module_budget_obstruction": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.actual_old_preparation": [
+          "propext"
+        ],
+        "UpdaterFormation.actual_old_entrance_enabled": [
+          "propext"
+        ],
+        "UpdaterFormation.entrance_is_actual_paid_state": [],
+        "UpdaterFormation.paid_updater_revision_witness": [],
+        "UpdaterFormation.whole_preparation_to_changed_updater_witness": [
+          "propext"
+        ],
+        "UpdaterFormation.whole_witness_accounting": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 4,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/UpdaterFormation.txt",
+      "output_sha256": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904"
+    },
+    {
+      "module": "ConstructedUpdater",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/ConstructedUpdater.lean",
+      "source_sha256": "c59f5c934ed1884ffddfa36d982b89e6f934386d462a56927478004018e02023",
+      "exit_code": 0,
+      "audited_declarations": [
+        "ConstructedUpdater.step_projects",
+        "ConstructedUpdater.trace_projects",
+        "ConstructedUpdater.command_lifts_iff",
+        "ConstructedUpdater.step_part_ledgers",
+        "ConstructedUpdater.trace_part_ledgers",
+        "ConstructedUpdater.abstract_trace_lifts_with_parts",
+        "ConstructedUpdater.material_trace_lift_iff",
+        "ConstructedUpdater.step_preserves_side_stores",
+        "ConstructedUpdater.trace_preserves_side_stores",
+        "ConstructedUpdater.trace_preserves_matter",
+        "ConstructedUpdater.trace_energy_ledger",
+        "ConstructedUpdater.bridge_projects",
+        "ConstructedUpdater.bridge_energy_exact",
+        "ConstructedUpdater.bridge_material_exact",
+        "ConstructedUpdater.bridge_retains_resident_site",
+        "ConstructedUpdater.changed_updater_consumes_parts",
+        "ConstructedUpdater.step_preserves_module_hardware",
+        "ConstructedUpdater.reachable_active_module_has_new_parts",
+        "ConstructedUpdater.formation_trace_embeds",
+        "ConstructedUpdater.operational_trace_embeds",
+        "ConstructedUpdater.actual_formation_bridge_continuation",
+        "ConstructedUpdater.joined_energy_ledger",
+        "ConstructedUpdater.joined_material_ledger",
+        "ConstructedUpdater.core_material_relabel_trace",
+        "ConstructedUpdater.cost_decomposes",
+        "ConstructedUpdater.competing_construction_budgets",
+        "ConstructedUpdater.finite_stock_bounds_updater_formations",
+        "ConstructedUpdater.actual_part_preparation",
+        "ConstructedUpdater.actual_typed_bridge",
+        "ConstructedUpdater.inherited_entrance_exact",
+        "ConstructedUpdater.runnable_trace",
+        "ConstructedUpdater.actual_updater_revision",
+        "ConstructedUpdater.full_formation_to_updater_revision",
+        "ConstructedUpdater.whole_witness_accounting",
+        "ConstructedUpdater.old_two_material_bridge_is_insufficient",
+        "ConstructedUpdater.fuel_does_not_substitute_for_parts",
+        "ConstructedUpdater.parts_do_not_substitute_for_fuel",
+        "ConstructedUpdater.actual_post_revision_exhaustion",
+        "ConstructedUpdater.coarse_continuation_blocked_by_spent_parts"
+      ],
+      "axioms_by_declaration": {
+        "ConstructedUpdater.step_projects": [
+          "propext"
+        ],
+        "ConstructedUpdater.trace_projects": [
+          "propext"
+        ],
+        "ConstructedUpdater.command_lifts_iff": [
+          "propext"
+        ],
+        "ConstructedUpdater.step_part_ledgers": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.trace_part_ledgers": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.abstract_trace_lifts_with_parts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.material_trace_lift_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.step_preserves_side_stores": [
+          "propext"
+        ],
+        "ConstructedUpdater.trace_preserves_side_stores": [
+          "propext"
+        ],
+        "ConstructedUpdater.trace_preserves_matter": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.bridge_projects": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.bridge_energy_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.bridge_material_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.bridge_retains_resident_site": [
+          "propext"
+        ],
+        "ConstructedUpdater.changed_updater_consumes_parts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.step_preserves_module_hardware": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.reachable_active_module_has_new_parts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.formation_trace_embeds": [
+          "propext"
+        ],
+        "ConstructedUpdater.operational_trace_embeds": [
+          "propext"
+        ],
+        "ConstructedUpdater.actual_formation_bridge_continuation": [
+          "propext"
+        ],
+        "ConstructedUpdater.joined_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.joined_material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.core_material_relabel_trace": [],
+        "ConstructedUpdater.cost_decomposes": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.competing_construction_budgets": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.finite_stock_bounds_updater_formations": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedUpdater.actual_part_preparation": [
+          "propext"
+        ],
+        "ConstructedUpdater.actual_typed_bridge": [
+          "propext"
+        ],
+        "ConstructedUpdater.inherited_entrance_exact": [
+          "propext"
+        ],
+        "ConstructedUpdater.runnable_trace": [
+          "propext"
+        ],
+        "ConstructedUpdater.actual_updater_revision": [
+          "propext"
+        ],
+        "ConstructedUpdater.full_formation_to_updater_revision": [
+          "propext"
+        ],
+        "ConstructedUpdater.whole_witness_accounting": [
+          "propext"
+        ],
+        "ConstructedUpdater.old_two_material_bridge_is_insufficient": [
+          "propext"
+        ],
+        "ConstructedUpdater.fuel_does_not_substitute_for_parts": [
+          "propext"
+        ],
+        "ConstructedUpdater.parts_do_not_substitute_for_fuel": [
+          "propext"
+        ],
+        "ConstructedUpdater.actual_post_revision_exhaustion": [
+          "propext"
+        ],
+        "ConstructedUpdater.coarse_continuation_blocked_by_spent_parts": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 1,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/ConstructedUpdater.txt",
+      "output_sha256": "8d9362e4a7aa4b29954a620eea9ae423a97d9bb89371b96c3573066e5da43ad9"
+    },
+    {
+      "module": "PredictionAction",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
+      "source_sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+      "exit_code": 0,
+      "audited_declarations": [
+        "PredictionAction.noiseless_receipt_decodes_target",
+        "PredictionAction.outage_record_is_ambiguous",
+        "PredictionAction.changing_memory_changes_command",
+        "PredictionAction.command_does_not_read_hidden_regime",
+        "PredictionAction.revised_score_bounded",
+        "PredictionAction.step_score_bounded",
+        "PredictionAction.trace_score_bounded",
+        "PredictionAction.updater_reformation_retains_memory",
+        "PredictionAction.reversal_retains_memory_and_resources",
+        "PredictionAction.step_energy_ledger",
+        "PredictionAction.trace_energy_ledger",
+        "PredictionAction.step_material_preserved",
+        "PredictionAction.trace_material_preserved",
+        "PredictionAction.retrofit_preserves_actual_memory_reference",
+        "PredictionAction.paid_retrofit_energy",
+        "PredictionAction.whole_history_energy_ledger",
+        "PredictionAction.paid_cycle",
+        "PredictionAction.cycle_then",
+        "PredictionAction.three_evidence_then_action_affordable_iff",
+        "PredictionAction.slow_needs_three_false_writes_from_four",
+        "PredictionAction.fast_one_false_write_from_four",
+        "PredictionAction.old_joined_trace_embeds",
+        "PredictionAction.prediction_trace_embeds",
+        "PredictionAction.join_actual_formed_machinery",
+        "PredictionAction.actual_old_preparation",
+        "PredictionAction.actual_bridge_enabled",
+        "PredictionAction.actual_paid_old_machinery",
+        "PredictionAction.actual_retrofit_enabled",
+        "PredictionAction.actual_retrofit_state",
+        "PredictionAction.acquired_corrected_prediction_action_witness",
+        "PredictionAction.actual_formed_prefix",
+        "PredictionAction.whole_formation_prediction_corrected_action_witness",
+        "PredictionAction.corrective_write_changes_command_with_action_held_fixed",
+        "PredictionAction.whole_witness_accounting"
+      ],
+      "axioms_by_declaration": {
+        "PredictionAction.noiseless_receipt_decodes_target": [],
+        "PredictionAction.outage_record_is_ambiguous": [],
+        "PredictionAction.changing_memory_changes_command": [
+          "propext"
+        ],
+        "PredictionAction.command_does_not_read_hidden_regime": [],
+        "PredictionAction.revised_score_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.step_score_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.trace_score_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.updater_reformation_retains_memory": [],
+        "PredictionAction.reversal_retains_memory_and_resources": [],
+        "PredictionAction.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.step_material_preserved": [],
+        "PredictionAction.trace_material_preserved": [],
+        "PredictionAction.retrofit_preserves_actual_memory_reference": [],
+        "PredictionAction.paid_retrofit_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.whole_history_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.paid_cycle": [],
+        "PredictionAction.cycle_then": [],
+        "PredictionAction.three_evidence_then_action_affordable_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.slow_needs_three_false_writes_from_four": [],
+        "PredictionAction.fast_one_false_write_from_four": [],
+        "PredictionAction.old_joined_trace_embeds": [
+          "propext"
+        ],
+        "PredictionAction.prediction_trace_embeds": [
+          "propext"
+        ],
+        "PredictionAction.join_actual_formed_machinery": [
+          "propext"
+        ],
+        "PredictionAction.actual_old_preparation": [
+          "propext"
+        ],
+        "PredictionAction.actual_bridge_enabled": [
+          "propext"
+        ],
+        "PredictionAction.actual_paid_old_machinery": [],
+        "PredictionAction.actual_retrofit_enabled": [],
+        "PredictionAction.actual_retrofit_state": [],
+        "PredictionAction.acquired_corrected_prediction_action_witness": [],
+        "PredictionAction.actual_formed_prefix": [
+          "propext"
+        ],
+        "PredictionAction.whole_formation_prediction_corrected_action_witness": [
+          "propext"
+        ],
+        "PredictionAction.corrective_write_changes_command_with_action_held_fixed": [],
+        "PredictionAction.whole_witness_accounting": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 17,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/PredictionAction.txt",
+      "output_sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
+    },
+    {
+      "module": "ConstructedPrediction",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/ConstructedPrediction.lean",
+      "source_sha256": "b3dca9bd1fa58b1c45450c3c77d66ad2bdbbe153c1797fbc4fca534d6878d51f",
+      "exit_code": 0,
+      "audited_declarations": [
+        "ConstructedPrediction.step_projects",
+        "ConstructedPrediction.trace_projects",
+        "ConstructedPrediction.command_lifts_iff",
+        "ConstructedPrediction.step_part_ledgers",
+        "ConstructedPrediction.trace_part_ledgers",
+        "ConstructedPrediction.abstract_trace_lifts_with_parts",
+        "ConstructedPrediction.material_trace_lift_iff",
+        "ConstructedPrediction.trace_preserves_backing",
+        "ConstructedPrediction.trace_preserves_matter",
+        "ConstructedPrediction.finite_stock_bounds_updater_replacements",
+        "ConstructedPrediction.trace_energy_ledger",
+        "ConstructedPrediction.trace_score_bounded",
+        "ConstructedPrediction.updater_replacement_retains_memory_and_backing",
+        "ConstructedPrediction.retrofit_energy_exact",
+        "ConstructedPrediction.retrofit_material_exact",
+        "ConstructedPrediction.retrofit_keeps_actual_memory_reference",
+        "ConstructedPrediction.old_construction_trace_embeds",
+        "ConstructedPrediction.prediction_trace_embeds",
+        "ConstructedPrediction.compose_actual_state",
+        "ConstructedPrediction.whole_history_energy_ledger",
+        "ConstructedPrediction.whole_history_material_ledger",
+        "ConstructedPrediction.core_material_relabel_trace",
+        "ConstructedPrediction.actual_part_preparation",
+        "ConstructedPrediction.actual_typed_adapter",
+        "ConstructedPrediction.actual_typed_machinery",
+        "ConstructedPrediction.actual_formed_prefix",
+        "ConstructedPrediction.actual_typed_retrofit",
+        "ConstructedPrediction.inherited_predictive_entrance_exact",
+        "ConstructedPrediction.runnable_trace",
+        "ConstructedPrediction.actual_acquired_corrected_action",
+        "ConstructedPrediction.full_formation_prediction_corrected_action",
+        "ConstructedPrediction.whole_witness_accounting",
+        "ConstructedPrediction.actual_replacement_retains_acquired_memory",
+        "ConstructedPrediction.material_backed_write_changes_future_command",
+        "ConstructedPrediction.actual_prior_revision_cannot_supply_register",
+        "ConstructedPrediction.coarse_capacity_does_not_supply_register"
+      ],
+      "axioms_by_declaration": {
+        "ConstructedPrediction.step_projects": [
+          "propext"
+        ],
+        "ConstructedPrediction.trace_projects": [
+          "propext"
+        ],
+        "ConstructedPrediction.command_lifts_iff": [
+          "propext"
+        ],
+        "ConstructedPrediction.step_part_ledgers": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.trace_part_ledgers": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.abstract_trace_lifts_with_parts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.material_trace_lift_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.trace_preserves_backing": [
+          "propext"
+        ],
+        "ConstructedPrediction.trace_preserves_matter": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.finite_stock_bounds_updater_replacements": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.trace_score_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.updater_replacement_retains_memory_and_backing": [
+          "propext"
+        ],
+        "ConstructedPrediction.retrofit_energy_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.retrofit_material_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.retrofit_keeps_actual_memory_reference": [],
+        "ConstructedPrediction.old_construction_trace_embeds": [
+          "propext"
+        ],
+        "ConstructedPrediction.prediction_trace_embeds": [
+          "propext"
+        ],
+        "ConstructedPrediction.compose_actual_state": [
+          "propext"
+        ],
+        "ConstructedPrediction.whole_history_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.whole_history_material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ConstructedPrediction.core_material_relabel_trace": [],
+        "ConstructedPrediction.actual_part_preparation": [
+          "propext"
+        ],
+        "ConstructedPrediction.actual_typed_adapter": [
+          "propext"
+        ],
+        "ConstructedPrediction.actual_typed_machinery": [
+          "propext"
+        ],
+        "ConstructedPrediction.actual_formed_prefix": [
+          "propext"
+        ],
+        "ConstructedPrediction.actual_typed_retrofit": [],
+        "ConstructedPrediction.inherited_predictive_entrance_exact": [
+          "propext"
+        ],
+        "ConstructedPrediction.runnable_trace": [
+          "propext"
+        ],
+        "ConstructedPrediction.actual_acquired_corrected_action": [
+          "propext"
+        ],
+        "ConstructedPrediction.full_formation_prediction_corrected_action": [
+          "propext"
+        ],
+        "ConstructedPrediction.whole_witness_accounting": [
+          "propext"
+        ],
+        "ConstructedPrediction.actual_replacement_retains_acquired_memory": [
+          "propext"
+        ],
+        "ConstructedPrediction.material_backed_write_changes_future_command": [
+          "propext"
+        ],
+        "ConstructedPrediction.actual_prior_revision_cannot_supply_register": [
+          "propext"
+        ],
+        "ConstructedPrediction.coarse_capacity_does_not_supply_register": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 3,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/ConstructedPrediction.txt",
+      "output_sha256": "f419242fff5b399f6594c4a643f0c133d78b8f872609c74e87f3bd35352f46b2"
+    },
+    {
+      "module": "RecipientCorrection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean",
+      "source_sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+      "exit_code": 0,
+      "audited_declarations": [
+        "RecipientCorrection.exact_encoding_injective",
+        "RecipientCorrection.exact_encoding_behaviourally_distinct",
+        "RecipientCorrection.four_distinct_controller_states",
+        "RecipientCorrection.no_one_bit_exact_controller",
+        "RecipientCorrection.shared_bit_cannot_serve_opposite_laws",
+        "RecipientCorrection.shared_alternating_writes_interfere",
+        "RecipientCorrection.supplied_opposite_relation_needs_only_one_bit",
+        "RecipientCorrection.unpack_pack",
+        "RecipientCorrection.packed_code_bounded",
+        "RecipientCorrection.packed_table_is_exact",
+        "RecipientCorrection.existing_five_code_register_suffices",
+        "RecipientCorrection.packed_write_bounded",
+        "RecipientCorrection.packed_write_sets_queried_cell",
+        "RecipientCorrection.recipient_write_preserves_actor_cell",
+        "RecipientCorrection.actor_write_preserves_recipient_cell",
+        "RecipientCorrection.distinct_target_writes_commute",
+        "RecipientCorrection.consistent_target_swap_preserves_commands",
+        "RecipientCorrection.consistent_target_swap_preserves_writes",
+        "RecipientCorrection.aliased_recipient_write_can_damage_actor",
+        "RecipientCorrection.noiseless_recipient_receipt_decodes_law",
+        "RecipientCorrection.zero_actor_receipt_aliases_recipient_outcomes",
+        "RecipientCorrection.no_decoder_from_actor_credit",
+        "RecipientCorrection.private_zero_proxy_correct_iff_recipient_failure",
+        "RecipientCorrection.outage_receipt_is_ambiguous",
+        "RecipientCorrection.recipient_feedback_repairs_only_recipient",
+        "RecipientCorrection.corrected_table_serves_both_targets",
+        "RecipientCorrection.paid_feedback_exists_iff",
+        "RecipientCorrection.affordable_feedback",
+        "RecipientCorrection.affordable_noiseless_feedback",
+        "RecipientCorrection.paid_feedback_energy_account",
+        "RecipientCorrection.paid_feedback_preserves_actor",
+        "RecipientCorrection.paid_feedback_corrects_recipient",
+        "RecipientCorrection.unpaid_recipient_feedback_is_absent",
+        "RecipientCorrection.failed_write_retains_observation_charge",
+        "RecipientCorrection.opposite_laws_packed_correction_witness",
+        "RecipientCorrection.opposite_laws_shared_interference_witness"
+      ],
+      "axioms_by_declaration": {
+        "RecipientCorrection.exact_encoding_injective": [],
+        "RecipientCorrection.exact_encoding_behaviourally_distinct": [],
+        "RecipientCorrection.four_distinct_controller_states": [],
+        "RecipientCorrection.no_one_bit_exact_controller": [
+          "propext"
+        ],
+        "RecipientCorrection.shared_bit_cannot_serve_opposite_laws": [],
+        "RecipientCorrection.shared_alternating_writes_interfere": [],
+        "RecipientCorrection.supplied_opposite_relation_needs_only_one_bit": [],
+        "RecipientCorrection.unpack_pack": [],
+        "RecipientCorrection.packed_code_bounded": [],
+        "RecipientCorrection.packed_table_is_exact": [
+          "propext"
+        ],
+        "RecipientCorrection.existing_five_code_register_suffices": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.packed_write_bounded": [],
+        "RecipientCorrection.packed_write_sets_queried_cell": [
+          "propext"
+        ],
+        "RecipientCorrection.recipient_write_preserves_actor_cell": [
+          "propext"
+        ],
+        "RecipientCorrection.actor_write_preserves_recipient_cell": [
+          "propext"
+        ],
+        "RecipientCorrection.distinct_target_writes_commute": [
+          "propext"
+        ],
+        "RecipientCorrection.consistent_target_swap_preserves_commands": [],
+        "RecipientCorrection.consistent_target_swap_preserves_writes": [],
+        "RecipientCorrection.aliased_recipient_write_can_damage_actor": [
+          "propext"
+        ],
+        "RecipientCorrection.noiseless_recipient_receipt_decodes_law": [],
+        "RecipientCorrection.zero_actor_receipt_aliases_recipient_outcomes": [],
+        "RecipientCorrection.no_decoder_from_actor_credit": [],
+        "RecipientCorrection.private_zero_proxy_correct_iff_recipient_failure": [],
+        "RecipientCorrection.outage_receipt_is_ambiguous": [],
+        "RecipientCorrection.recipient_feedback_repairs_only_recipient": [
+          "propext"
+        ],
+        "RecipientCorrection.corrected_table_serves_both_targets": [
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_exists_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.affordable_feedback": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.affordable_noiseless_feedback": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_energy_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_preserves_actor": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_corrects_recipient": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.unpaid_recipient_feedback_is_absent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.failed_write_retains_observation_charge": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.opposite_laws_packed_correction_witness": [],
+        "RecipientCorrection.opposite_laws_shared_interference_witness": []
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 18,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/RecipientCorrection.txt",
+      "output_sha256": "797b6ef74c6d412e922bd75d25cc1719e5919c5bfcdbdfa0a0995326caed8ab7"
+    },
+    {
+      "module": "AcquiredPerspective",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean",
+      "source_sha256": "5afde10eb8e6b1ea829c8ab65b32f449f97aea1fbf8f37bdf792d536b3a05102",
+      "exit_code": 0,
+      "audited_declarations": [
+        "AcquiredPerspective.existing_forecast_is_command_readout",
+        "AcquiredPerspective.forecast_reads_retained_score",
+        "AcquiredPerspective.command_ignores_unobserved_regime",
+        "AcquiredPerspective.fast_receipt_write_models_both_actions",
+        "AcquiredPerspective.work_then_fast_write_models_both_actions",
+        "AcquiredPerspective.exact_effects_command_captures",
+        "AcquiredPerspective.run_trace",
+        "AcquiredPerspective.memory_is_acquired_before_reversal",
+        "AcquiredPerspective.dependency_changes_while_memory_is_retained",
+        "AcquiredPerspective.actual_acquisition_trace",
+        "AcquiredPerspective.formed_acquired_record",
+        "AcquiredPerspective.reached_record_conditions",
+        "AcquiredPerspective.reached_write_is_paid",
+        "AcquiredPerspective.reached_write_models_both_actions",
+        "AcquiredPerspective.reached_write_corrects_both_forecasts",
+        "AcquiredPerspective.reached_write_changes_only_future_action",
+        "AcquiredPerspective.corrected_command_is_actually_used",
+        "AcquiredPerspective.corrected_use_then_paid_retention",
+        "AcquiredPerspective.corrected_action_supports_same_organization",
+        "AcquiredPerspective.own_model_does_not_determine_recipient_effect",
+        "AcquiredPerspective.recipient_acquisition_retains_actor_distinction"
+      ],
+      "axioms_by_declaration": {
+        "AcquiredPerspective.existing_forecast_is_command_readout": [],
+        "AcquiredPerspective.forecast_reads_retained_score": [],
+        "AcquiredPerspective.command_ignores_unobserved_regime": [],
+        "AcquiredPerspective.fast_receipt_write_models_both_actions": [],
+        "AcquiredPerspective.work_then_fast_write_models_both_actions": [],
+        "AcquiredPerspective.exact_effects_command_captures": [],
+        "AcquiredPerspective.run_trace": [
+          "propext"
+        ],
+        "AcquiredPerspective.memory_is_acquired_before_reversal": [
+          "propext"
+        ],
+        "AcquiredPerspective.dependency_changes_while_memory_is_retained": [
+          "propext"
+        ],
+        "AcquiredPerspective.actual_acquisition_trace": [
+          "propext"
+        ],
+        "AcquiredPerspective.formed_acquired_record": [
+          "propext"
+        ],
+        "AcquiredPerspective.reached_record_conditions": [
+          "propext"
+        ],
+        "AcquiredPerspective.reached_write_is_paid": [
+          "propext"
+        ],
+        "AcquiredPerspective.reached_write_models_both_actions": [
+          "propext"
+        ],
+        "AcquiredPerspective.reached_write_corrects_both_forecasts": [
+          "propext"
+        ],
+        "AcquiredPerspective.reached_write_changes_only_future_action": [
+          "propext"
+        ],
+        "AcquiredPerspective.corrected_command_is_actually_used": [
+          "propext"
+        ],
+        "AcquiredPerspective.corrected_use_then_paid_retention": [
+          "propext"
+        ],
+        "AcquiredPerspective.corrected_action_supports_same_organization": [
+          "propext"
+        ],
+        "AcquiredPerspective.own_model_does_not_determine_recipient_effect": [
+          "propext"
+        ],
+        "AcquiredPerspective.recipient_acquisition_retains_actor_distinction": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "propext"
+      ],
+      "empty_axiom_audits": 6,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/AcquiredPerspective.txt",
+      "output_sha256": "ac9670708b7b57361a17b3868cee1c61acbee09c9a98f8243e812211ca3119ef"
+    },
+    {
+      "module": "GenerativeAcquisitionModel",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAcquisitionModel.lean",
+      "source_sha256": "cbf8795df25a666fac47343d7f6772dd4e55431e261bdb052239720a846660de",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Model.Acquisition.correction_and_use_trace",
+        "Generative.Model.Acquisition.formed_acquisition_and_use",
+        "Generative.Model.Acquisition.acquired_representation_and_actual_use"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Model.Acquisition.correction_and_use_trace": [
+          "propext"
+        ],
+        "Generative.Model.Acquisition.formed_acquisition_and_use": [
+          "propext"
+        ],
+        "Generative.Model.Acquisition.acquired_representation_and_actual_use": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "matches_original_dependency_audits": true,
+      "axioms_outside_inherited_chain": [],
+      "clean": true,
+      "output": "verification/GenerativeAcquisitionModel.txt",
+      "output_sha256": "23b2e52372634f3014d4e1402e2222d9e4d2b0778971cf59c855f92e6600d139"
+    }
+  ],
+  "new_declarations_by_module": {
+    "AcquiredPerspective": 21,
+    "GenerativeAcquisitionModel": 3
+  },
+  "new_audited_declarations": 24,
+  "new_empty_axiom_audits": 6,
+  "new_axiom_union": [
+    "propext"
+  ],
+  "scope": "Actual retained action-effect acquisition, correction and organizational use under unchanged ConstructedPrediction dynamics. No new world law, custom axiom, target identity or controller. Imported recipes, funding, binary response and noiseless availability remain model inputs; inherited standard dependencies are retained, not eliminated. Recipient comparison is not a composed physical history."
+}

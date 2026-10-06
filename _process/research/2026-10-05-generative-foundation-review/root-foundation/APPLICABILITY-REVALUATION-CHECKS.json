@@ -1,0 +1,374 @@
+{
+  "status": "passed",
+  "scope": "Stored table correspondence, recorded accounts, original producer bindings, additive entries and local links. No learner import, experiment rerun, independent statistical reconstruction or universal ethical certification.",
+  "source_bindings": [
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "matches": true
+    }
+  ],
+  "record_checks": {
+    "same_cycle_initial_and_transitions": true,
+    "all_three_sensor_outputs_complement_raw": true,
+    "old_raw_target_audit_preserved": true,
+    "use_words_and_outcomes": true,
+    "ordinary_whole_resource_identity": true,
+    "ordinary_retained_sensor_certificate": true,
+    "inverted_whole_resource_identity": true,
+    "inverted_retained_sensor_certificate": true,
+    "same_native_sensor_prefix": true,
+    "opposite_final_probe": true,
+    "primary_sensor_flip_whole_resource_identity": true,
+    "readiness_change_whole_resource_identity": true,
+    "sensor_only_ambiguity_whole_resource_identity": true
+  },
+  "insertions": [
+    {
+      "file": "RESEARCH.md",
+      "present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "present": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "present": true
+    }
+  ],
+  "local_links": [
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#learning-an-undertakings-changing-applicability",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "APPLICABILITY-REVALUATION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "APPLICABILITY-REVALUATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "target": "DISCRIMINATION-REVISION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "target": "COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "APPLICABILITY-REVALUATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md#3-what-changes-when-the-aspiration-remains-stable",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "APPLICABILITY-REVALUATION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "WARRANT-OF-CONCERN-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "RELIEF-AND-RECONSIDERATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "APPLICABILITY-REVALUATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "target": "APPLICABILITY-REVALUATION-CHECKS.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "EXPERIMENTAL-ACCESS-MATH.md#4-an-exact-limit-indistinguishable-access-channels",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "APPLICABILITY-REVALUATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "APPLICABILITY-REVALUATION-COMPARATOR.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "APPLICABILITY-REVALUATION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md#3-what-changes-when-the-aspiration-remains-stable",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "APPLICABILITY-REVALUATION-INTEGRATION.md#a-substantive-test-of-acquired-applicability",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+      "target": "RELIEF-AND-RECONSIDERATION-INTEGRATION.md#continuation-assessment-can-transform-what-it-investigates",
+      "exists": true,
+      "fragment_ok": true
+    }
+  ],
+  "note_sha256": {
+    "APPLICABILITY-REVALUATION-COMPARATOR.md": "005b8f8595279390d4d9c4054e39184039e06ee5d8a1b9f34f07cd48ebc34667",
+    "APPLICABILITY-REVALUATION-INTEGRATION.md": "a5c7c43de62453166262faa4ea35a05be024aa85c1c178e39ec9f4abbd735590",
+    "APPLICABILITY-REVALUATION-MECHANISM.md": "2a95e6c39ac443b7cfa787afb8e18f0cd96d76e563abbf1157e73b8a357b4883",
+    "APPLICABILITY-REVALUATION-REVIEW.md": "86125f3098d222feaabb7fb84cc363d84d4bb869ac7e2a9e446dde8950606079"
+  },
+  "results_sha256": {
+    "acquisition": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "access": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+  },
+  "checker_sha256": "4564df5e17914f780b9182e48ae3d9f72ca7a4d9f61b4a49303e21e4e79c4055"
+}

@@ -1,0 +1,7 @@
+{
+  "declaration": {
+    "diagnosis": "delivered failing v0 report",
+    "repair": "unresolved; blocked by current authority",
+    "explanation": "Delivered v0 report deliveries/r0001-diagnosis-v0.json with 335 mismatches. Its failure completes the requested diagnosis while the separately supported counterpart repair remains applicable. The returned authority no longer grants the protected continuation. No staging, production or publication was requested. Final note delivered."
+  }
+}

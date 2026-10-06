@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "rows": 320,
+  "comparisons": 12833,
+  "coverage": {
+    "replay_complete": 315,
+    "goal_state_complete": 315,
+    "calls": 972,
+    "reads": 483,
+    "mutations": 480,
+    "errors": 4
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integrity only; no scientific experiment, formal proof, ethical truth validation or goal completion. Shared documents checked only at owned additive paragraphs. Historical snapshot links resolved at original base.",
+  "owned_documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "bytes": 25788,
+      "sha256": "cbb554149b2a89ed783463683775b63a7cb51deed6dd3184163121ead0cd5b61"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-ARGUMENT.md",
+      "bytes": 15488,
+      "sha256": "b2cb9fdae687976bb714203207009238be3a7f50266ed922d97c05cf0bc850f8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-REVIEW.md",
+      "bytes": 15865,
+      "sha256": "db3b24a58c8ba87d1086acb5ba4e7493dcefca5169eeb0b203626229820659dd"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-SOURCES.md",
+      "bytes": 11752,
+      "sha256": "26fa98099a8e63db49b66e756efe5262406a42f60b1445da1dc8f2b13b2815a5"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-INTEGRATION.md",
+      "bytes": 8516,
+      "sha256": "1ccb7b231c67cf4fb3cb557dff901d0a85b066622a34c673c3de7d0fa12dd918"
+    }
+  ],
+  "local_link_occurrences_checked": 61,
+  "snapshot_sha256_verified": "05f91cba5ddae940ce4c3a8a04163d0b9ba4fe7407df71657315066af888b027",
+  "snapshot_bytes_verified": 17411,
+  "shared_additive_paragraphs_checked": 5,
+  "errors": [],
+  "goal_status": "active; universal grounding and justified latitude under chronic severe need unfinished"
+}

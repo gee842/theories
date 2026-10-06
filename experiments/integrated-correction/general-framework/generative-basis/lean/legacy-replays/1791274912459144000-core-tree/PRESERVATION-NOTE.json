@@ -1,0 +1,8 @@
+{
+  "scope": "Replay artifact preservation correction, not a change in the historical Lean result.",
+  "historical_checker_passed": true,
+  "original_artifacts_unchanged": true,
+  "issue": "First helper version compared resolved temporary paths against an unresolved macOS /var path; compiler log copying was skipped.",
+  "superseded_by": "../1791275071482105000-core-tree/replay.json",
+  "correction": "The helper resolves both paths, verifies each copied log hash, and requires every module log to be preserved. The corrected replay passed."
+}

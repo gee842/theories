@@ -1,0 +1,22 @@
+{
+  "author": "Johann Frick",
+  "title": "Conditional Reasons and the Procreation Asymmetry",
+  "journal": "Philosophical Perspectives",
+  "volume": 34,
+  "issue": 1,
+  "year": 2020,
+  "pages": "53–87",
+  "first_published": "2020-08-09",
+  "doi": "10.1111/phpe.12139",
+  "primary_html_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/phpe.12139",
+  "primary_pdf_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/phpe.12139",
+  "access_date": "2026-10-06",
+  "web_reading_access": "Direct web-tool publisher HTML extraction succeeded initially at the /doi/full/ URL (lines 0–244), and at the /doi/ URL positioned at line320 (returned lines265–440). Other positioned opens returned403. Additional passages were returned as indexed primary publisher search extraction. PDF web open reported35pages, but subsequent text finds returned no matching text; no PDF reading is claimed.",
+  "ordinary_pdf_retrieval": "HTTP403; no original PDF bytes preserved.",
+  "attempted_html_retrieval_at_utc": "2026-10-06T10:05:23.868460+00:00",
+  "ordinary_html_retrieval": {
+    "http_status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "preservation_status": "Link-only provenance and bounded reading record; no original source bytes, no source hash. Error pages are not preserved as originals."
+}

@@ -1,0 +1,13 @@
+# A correction carried into a local executable audit
+
+Prospective preparation, 6 October 2026. **No participant outcomes are reported here.** Four fresh AI contexts will receive an authentic research-software repair task under a fixed code-state × permission design. The [protocol](PROTOCOL.md) specifies the finite question, supplied authority, persistent effects and interpretation limits.
+
+The prior [counterpart correction](../REPLAY-COUNTERPARTY-REVIEW.md) is already accepted. This study reenacts its application in disposable copies: a worker may need to repair the audit's separate visible-counterparty proxy while preserving original data and the deliberately faithful historical evaluator. Actual saved code and regenerated outputs distinguish execution from a correct verbal answer. Already-corrected and permission-withdrawn cases require appropriate restraint.
+
+[prepare.py](prepare.py) verifies and copies existing originals to temporary roots outside the repository; it makes no replay or model calls. It preserves exact prompts, complete starting inventories and a private `case-manifest.json` under this directory. Do not give that manifest, reference code, reference results or scoring oracle to participants. Initial code, results and receipt are internally consistent in every case.
+
+Run preparation once only after the prospective design is ready. It refuses to overwrite prior prompts or inventories. Root must independently validate and freeze the scorer, exact prompts and inputs before dispatch. Four contexts are fixed; there is no reminder-effect comparison or outcome-dependent expansion.
+
+The [design assessment](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-DESIGN.md) explains why this is a substantive but narrow continuation beyond the earlier answer-only pilot. The primary endpoint is verified persistent effects under supplied permission, not proven absence of transient writes or hostile access. Copied directories and fork-none contexts are not an OS sandbox; the accepted solution already exists on this host. No ethical value acquisition or institutional effectiveness is inferred.
+
+All original sources and accepted analyses remain in their existing locations. Preserve unique participant outputs and receipts here after execution, without importing four redundant source trees. No scientific outcomes from the parent replay are recomputed merely by preparing this study.

@@ -1,0 +1,39 @@
+{
+  "case_id": "k02",
+  "artifacts": [
+    {
+      "original_relative_path": "analysis-note.md",
+      "sha256": "1d8481aca7e43c428bd014d971323a65bd1e389a5c7b36e353e6d46446e25e80",
+      "bytes": 6798,
+      "encoding": "identity",
+      "storage": "preserved_unique_bytes",
+      "saved_path": "experiments/agentdojo-evidence-boundary/correction-action/runs/k02/analysis-note.md",
+      "stored_sha256": "1d8481aca7e43c428bd014d971323a65bd1e389a5c7b36e353e6d46446e25e80"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay.py",
+      "sha256": "e304e6ea5b89a845bf2868b931bd99df19c35fd5723ed334782bbcd8cb5b31f7",
+      "bytes": 23158,
+      "storage": "existing_exact_reference",
+      "reference_path": "experiments/agentdojo-evidence-boundary/review-history/counterparty-uniqueness/replay.py"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay-results.json",
+      "sha256": "be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4",
+      "bytes": 5120563,
+      "storage": "existing_exact_reference",
+      "reference_path": "experiments/agentdojo-evidence-boundary/review-history/counterparty-uniqueness/replay-results.json"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay-receipt.json",
+      "sha256": "d85f375f140a89ea672fb930f4739766b6862f81911902ad2f00ed791606fd9b",
+      "bytes": 1015,
+      "storage": "existing_exact_reference",
+      "reference_path": "experiments/agentdojo-evidence-boundary/review-history/counterparty-uniqueness/replay-receipt.json"
+    }
+  ],
+  "final_inventory_sha256": "729d90f048ff9dde48335a90355e59eedde740e28d4dcd165593f7f05f6ba845",
+  "dispatch_sha256": "b3cd13bc8156f3317dd6a49e2c5cc70d156740a5ae7a1b18efa4aa70e4381f96",
+  "received_final_sha256": "350d3adbef55b9513a3598de1deb4ca2be0d08aa7cf8b744205c2c0fc3d5bf58",
+  "final_provenance": "Orchestrator copy of received collaboration final; no independent full tool transcript."
+}

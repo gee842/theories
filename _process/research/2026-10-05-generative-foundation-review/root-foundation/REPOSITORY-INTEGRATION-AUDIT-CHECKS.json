@@ -1,0 +1,2713 @@
+{
+  "schema_version": 1,
+  "audit_kind": "Source, evidence and infrastructure hash consistency review; no recompilation",
+  "audit_started_utc": "2026-10-06T07:33:23.932618+00:00",
+  "audit_finished_utc": "2026-10-06T07:33:24.035030+00:00",
+  "repository": "/Users/ren/theories",
+  "hash_algorithm": "SHA-256",
+  "status": "passed",
+  "lean_compiler_invoked": false,
+  "verification_checkers_invoked": false,
+  "scientific_experiments_rerun": false,
+  "existing_files_modified": false,
+  "method": [
+    "Read each of seven existing verification receipts and compute its current SHA-256. The receipt digest is identification, not independent authentication.",
+    "Resolve module source paths from the repository when prefixed experiments/, otherwise relative to the receipt directory. Compare current bytes with each recorded module source hash.",
+    "Resolve compiler logs relative to the receipt directory and compare recorded log/output digests. Compare checker, compiler and applicable toolchain digests.",
+    "For each bound INPUTS.json, verify the manifest hash, every saved source snapshot and every saved inherited input hash. For the core/tree baseline manifest, verify each archived and live ancestor file.",
+    "Audit totals are calculated from each receipt module declaration map, not inferred from filenames. Repeated imported declarations across receipts are deliberately counted per receipt, not as independent new theorems.",
+    "Use existing reported axiom maps only; this audit does not replay proof checking, re-evaluate compiler trust or establish theoretical completeness."
+  ],
+  "scope_limits": [
+    "These are current-byte consistency checks against already saved evidence. They do not constitute fresh Lean validation.",
+    "Separate public entry points and separate checkers are legitimate modular organization; successful shared imports do not establish physical history composition.",
+    "A supplied local law is not thereby external to generative reality. Missing formal relations, unexplained theory connections and substantive counterevidence remain distinct under NONDUAL-METHOD.md."
+  ],
+  "totals": {
+    "receipts": 7,
+    "receipt_digests_recorded_without_external_hash_comparison": 7,
+    "module_rows_across_receipts": 289,
+    "audits_across_receipts_with_repeated_inherited_declarations": 5282,
+    "hash_comparisons_by_category": {
+      "baseline_ancestor_live_file": 66,
+      "baseline_ancestor_snapshot": 66,
+      "checker": 7,
+      "compiler_binary": 7,
+      "compiler_log": 289,
+      "inherited_live_receipt": 1,
+      "linked_manifest": 5,
+      "manifest_saved_input": 12,
+      "manifest_source_snapshot": 214,
+      "module_source": 289,
+      "toolchain_file": 2
+    },
+    "hash_comparison_total": 958,
+    "distinct_compared_file_paths": 708,
+    "mismatch_count": 0
+  },
+  "axiom_policy_distinctions": {
+    "default_core": {
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "policy": "Exact historical declarations may retain their recorded dependencies; every new/deeper theorem audit must be empty. This audit does not widen that policy."
+    },
+    "core_tree": {
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree.py",
+      "policy": "Each inherited module retains its exact recorded declaration dependency map; all eleven new theorem audits must be empty."
+    },
+    "connected_family": {
+      "policy": "The connected, applicability, nondual applicability and pretraining checkers disclose standard dependencies (propext, Quot.sound, Classical.choice), reject custom axioms/placeholders, and enforce named empty-dependency contracts. They do not assert the entire closure is empty-dependency."
+    },
+    "coformation": {
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_coformation.py",
+      "policy": "The additive coformation checker accepts only disclosed standard named dependencies; it does not enforce the default-core empty-new-dependency policy.",
+      "CoupledOccurrence": {
+        "audits": 7,
+        "empty": 5,
+        "nonempty": {
+          "Generative.CoupledOccurrence.actual_continuation_retains_occurrence": [
+            "propext"
+          ],
+          "Generative.CoupledOccurrence.replay_append": [
+            "propext"
+          ]
+        }
+      },
+      "CoupledConcernHistory": {
+        "audits": 11,
+        "empty": 0,
+        "named_dependencies": [
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "no_axiom_free_foundation_claim": true,
+    "no_universal_ethical_or_nondual_ontology_proof_claim": true
+  },
+  "receipts": [
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "receipt_current_sha256": "0e446764280518fc43fa040f4325789da2899ebaf8ae7e0493fa3ac42c64e665",
+      "reported_verification_status": "passed",
+      "reported_verification_time_utc": "2026-10-06T05:39:14.354390+00:00",
+      "module_count": 16,
+      "audit_count": 179,
+      "empty_dependency_audit_count": 158,
+      "named_dependencies": [
+        "Quot.sound",
+        "propext"
+      ],
+      "hash_comparisons_by_category": {
+        "checker": 1,
+        "compiler_binary": 1,
+        "compiler_log": 16,
+        "module_source": 16,
+        "toolchain_file": 1
+      },
+      "hash_comparison_total": 35,
+      "all_compared_hashes_match": true,
+      "mismatches": [],
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "linked_manifest_checks": [],
+      "module_audit_inventory": [
+        {
+          "module": "GenerativeCore",
+          "audits": 18,
+          "empty_dependency_audits": 18,
+          "named_dependencies": []
+        },
+        {
+          "module": "BoundaryModels",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "Depletion",
+          "audits": 5,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RootRealization",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ProductTower",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicUnderdetermination",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedPaths",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "HistoryRealization",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicSymmetry",
+          "audits": 20,
+          "empty_dependency_audits": 20,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicConsequences",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicClassification",
+          "audits": 6,
+          "empty_dependency_audits": 6,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedSelf",
+          "audits": 23,
+          "empty_dependency_audits": 23,
+          "named_dependencies": []
+        },
+        {
+          "module": "EthicalOrientation",
+          "audits": 17,
+          "empty_dependency_audits": 17,
+          "named_dependencies": []
+        },
+        {
+          "module": "OutcomeContinuation",
+          "audits": 14,
+          "empty_dependency_audits": 14,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeOutcomeModel",
+          "audits": 3,
+          "empty_dependency_audits": 3,
+          "named_dependencies": []
+        }
+      ],
+      "receipt_bytes_unchanged_during_this_audit": true
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification.json",
+      "receipt_current_sha256": "5077105bbc3f83d7d9a639c966e850cb1c78374d80dbccd92424f1651ea35c39",
+      "reported_verification_status": "passed",
+      "reported_verification_time_utc": "2026-10-06T06:28:28.032201+00:00",
+      "module_count": 31,
+      "audit_count": 400,
+      "empty_dependency_audit_count": 260,
+      "named_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "hash_comparisons_by_category": {
+        "baseline_ancestor_live_file": 66,
+        "baseline_ancestor_snapshot": 66,
+        "checker": 1,
+        "compiler_binary": 1,
+        "compiler_log": 31,
+        "linked_manifest": 1,
+        "module_source": 31,
+        "toolchain_file": 1
+      },
+      "hash_comparison_total": 198,
+      "all_compared_hashes_match": true,
+      "mismatches": [],
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_core_tree.py",
+      "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "linked_manifest_checks": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification-history/2026-10-06-before-core-tree-continuation/manifest.json",
+          "current_sha256": "3f1cb5f088cfc9cdb7b92668e986a016d2bc321e9af33874fc5573fe655450ca",
+          "ancestor_snapshot_hashes_checked": 66,
+          "ancestor_live_file_hashes_checked": 66,
+          "path_rule": "Each files[].source and files[].snapshot is repository-relative; expected digest is files[].sha256."
+        }
+      ],
+      "module_audit_inventory": [
+        {
+          "module": "GenerativeCore",
+          "audits": 18,
+          "empty_dependency_audits": 18,
+          "named_dependencies": []
+        },
+        {
+          "module": "BoundaryModels",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "ProductTower",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "FormedSelection",
+          "audits": 43,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeClosure",
+          "audits": 12,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "Depletion",
+          "audits": 5,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RootRealization",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "DynamicUnderdetermination",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedPaths",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "HistoryRealization",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "OutcomeContinuation",
+          "audits": 14,
+          "empty_dependency_audits": 14,
+          "named_dependencies": []
+        },
+        {
+          "module": "SelectorRevision",
+          "audits": 21,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "NondualCore",
+          "audits": 11,
+          "empty_dependency_audits": 11,
+          "named_dependencies": []
+        },
+        {
+          "module": "CoreTreeRearticulation",
+          "audits": 5,
+          "empty_dependency_audits": 5,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicSymmetry",
+          "audits": 20,
+          "empty_dependency_audits": 20,
+          "named_dependencies": []
+        },
+        {
+          "module": "UpdaterFormation",
+          "audits": 25,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "InquiryFamilies",
+          "audits": 15,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "DynamicConsequences",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "PredictionAction",
+          "audits": 34,
+          "empty_dependency_audits": 17,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "DynamicClassification",
+          "audits": 6,
+          "empty_dependency_audits": 6,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedSelf",
+          "audits": 23,
+          "empty_dependency_audits": 23,
+          "named_dependencies": []
+        },
+        {
+          "module": "EthicalOrientation",
+          "audits": 17,
+          "empty_dependency_audits": 17,
+          "named_dependencies": []
+        },
+        {
+          "module": "AcquiredPredictionRecord",
+          "audits": 15,
+          "empty_dependency_audits": 15,
+          "named_dependencies": []
+        },
+        {
+          "module": "ReceiptIdentification",
+          "audits": 15,
+          "empty_dependency_audits": 15,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeEpisode",
+          "audits": 4,
+          "empty_dependency_audits": 4,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "ReceiptRevisionBoundary",
+          "audits": 15,
+          "empty_dependency_audits": 15,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeOutcomeModel",
+          "audits": 3,
+          "empty_dependency_audits": 3,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeReceiptModel",
+          "audits": 2,
+          "empty_dependency_audits": 2,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeNondualModel",
+          "audits": 2,
+          "empty_dependency_audits": 2,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeCoreTreeModel",
+          "audits": 2,
+          "empty_dependency_audits": 2,
+          "named_dependencies": []
+        }
+      ],
+      "receipt_bytes_unchanged_during_this_audit": true
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+      "receipt_current_sha256": "c3d1c9fef6e0c75488ffa3a681b79d9e2902092539b0ae50b14a5aefa4b1efcd",
+      "reported_verification_status": "passed",
+      "reported_verification_time_utc": "2026-10-06T05:45:54.203753+00:00",
+      "module_count": 48,
+      "audit_count": 949,
+      "empty_dependency_audit_count": 248,
+      "named_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "hash_comparisons_by_category": {
+        "checker": 1,
+        "compiler_binary": 1,
+        "compiler_log": 48,
+        "linked_manifest": 1,
+        "manifest_saved_input": 2,
+        "manifest_source_snapshot": 48,
+        "module_source": 48
+      },
+      "hash_comparison_total": 149,
+      "all_compared_hashes_match": true,
+      "mismatches": [],
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/check.py",
+      "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "linked_manifest_checks": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/INPUTS.json",
+          "current_sha256": "4bc41d478e5c706f53499790ee536aa7a61de038504dcaee18ce7b392a872ccb",
+          "source_snapshot_hashes_checked": 48,
+          "saved_input_hashes_checked": 2,
+          "source_snapshot_path_rule": "Each sources[].snapshot resolves relative to this manifest; expected digest is sources[].sha256.",
+          "saved_input_path_rule": "Each receipt_sources[].saved resolves relative to this manifest; expected digest is receipt_sources[].sha256. Saved inputs are historical provenance; this audit does not require their original live receipts to remain identical."
+        }
+      ],
+      "module_audit_inventory": [
+        {
+          "module": "GenerativeCore",
+          "audits": 18,
+          "empty_dependency_audits": 18,
+          "named_dependencies": []
+        },
+        {
+          "module": "BoundaryModels",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "Depletion",
+          "audits": 5,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RootRealization",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ProductTower",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicUnderdetermination",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedPaths",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "HistoryRealization",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicSymmetry",
+          "audits": 20,
+          "empty_dependency_audits": 20,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicConsequences",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicClassification",
+          "audits": 6,
+          "empty_dependency_audits": 6,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedSelf",
+          "audits": 23,
+          "empty_dependency_audits": 23,
+          "named_dependencies": []
+        },
+        {
+          "module": "EthicalOrientation",
+          "audits": 17,
+          "empty_dependency_audits": 17,
+          "named_dependencies": []
+        },
+        {
+          "module": "OutcomeContinuation",
+          "audits": 14,
+          "empty_dependency_audits": 14,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeOutcomeModel",
+          "audits": 3,
+          "empty_dependency_audits": 3,
+          "named_dependencies": []
+        },
+        {
+          "module": "FormedSelection",
+          "audits": 43,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientCorrection",
+          "audits": 36,
+          "empty_dependency_audits": 18,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientIdentification",
+          "audits": 45,
+          "empty_dependency_audits": 8,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EmissionArchive",
+          "audits": 19,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientArchive",
+          "audits": 22,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ArchivePreparation",
+          "audits": 12,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidArchiveReader",
+          "audits": 14,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecordedEvidence",
+          "audits": 33,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplay",
+          "audits": 58,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientReasons",
+          "audits": 21,
+          "empty_dependency_audits": 6,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidRecipientReasons",
+          "audits": 24,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplayBridge",
+          "audits": 15,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientAction",
+          "audits": 36,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionPreparation",
+          "audits": 13,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionWitness",
+          "audits": 30,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationSafety",
+          "audits": 20,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBudget",
+          "audits": 10,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBridge",
+          "audits": 7,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "FreshRevision",
+          "audits": 30,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionWitness",
+          "audits": 27,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "AcquiredEvaluation",
+          "audits": 41,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationWitness",
+          "audits": 28,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluativeSuccession",
+          "audits": 47,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionWitness",
+          "audits": 37,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ApplicationEvidence",
+          "audits": 24,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedModel",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConstructiveDecisions",
+          "audits": 18,
+          "empty_dependency_audits": 9,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedGenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "receipt_bytes_unchanged_during_this_audit": true
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+      "receipt_current_sha256": "2cac37932f27feb9e5754975f76c808ece26ac7173ff89c55570a0c4dc8ae208",
+      "reported_verification_status": "passed",
+      "reported_verification_time_utc": "2026-10-06T06:05:51.101357+00:00",
+      "module_count": 51,
+      "audit_count": 991,
+      "empty_dependency_audit_count": 269,
+      "named_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "hash_comparisons_by_category": {
+        "checker": 1,
+        "compiler_binary": 1,
+        "compiler_log": 51,
+        "linked_manifest": 1,
+        "manifest_saved_input": 2,
+        "manifest_source_snapshot": 51,
+        "module_source": 51
+      },
+      "hash_comparison_total": 158,
+      "all_compared_hashes_match": true,
+      "mismatches": [],
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/check.py",
+      "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "linked_manifest_checks": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/INPUTS.json",
+          "current_sha256": "1274de20df93ced7c0f49f3f2b825ebdf28805f6c36468e9bee917efe96548e8",
+          "source_snapshot_hashes_checked": 51,
+          "saved_input_hashes_checked": 2,
+          "source_snapshot_path_rule": "Each sources[].snapshot resolves relative to this manifest; expected digest is sources[].sha256.",
+          "saved_input_path_rule": "Each receipt_sources[].saved resolves relative to this manifest; expected digest is receipt_sources[].sha256. Saved inputs are historical provenance; this audit does not require their original live receipts to remain identical."
+        }
+      ],
+      "module_audit_inventory": [
+        {
+          "module": "GenerativeCore",
+          "audits": 18,
+          "empty_dependency_audits": 18,
+          "named_dependencies": []
+        },
+        {
+          "module": "BoundaryModels",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "Depletion",
+          "audits": 5,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RootRealization",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ProductTower",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicUnderdetermination",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedPaths",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "HistoryRealization",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicSymmetry",
+          "audits": 20,
+          "empty_dependency_audits": 20,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicConsequences",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicClassification",
+          "audits": 6,
+          "empty_dependency_audits": 6,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedSelf",
+          "audits": 23,
+          "empty_dependency_audits": 23,
+          "named_dependencies": []
+        },
+        {
+          "module": "EthicalOrientation",
+          "audits": 17,
+          "empty_dependency_audits": 17,
+          "named_dependencies": []
+        },
+        {
+          "module": "OutcomeContinuation",
+          "audits": 14,
+          "empty_dependency_audits": 14,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeOutcomeModel",
+          "audits": 3,
+          "empty_dependency_audits": 3,
+          "named_dependencies": []
+        },
+        {
+          "module": "FormedSelection",
+          "audits": 43,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientCorrection",
+          "audits": 36,
+          "empty_dependency_audits": 18,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientIdentification",
+          "audits": 45,
+          "empty_dependency_audits": 8,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EmissionArchive",
+          "audits": 19,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientArchive",
+          "audits": 22,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ArchivePreparation",
+          "audits": 12,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidArchiveReader",
+          "audits": 14,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecordedEvidence",
+          "audits": 33,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplay",
+          "audits": 58,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientReasons",
+          "audits": 21,
+          "empty_dependency_audits": 6,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidRecipientReasons",
+          "audits": 24,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplayBridge",
+          "audits": 15,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientAction",
+          "audits": 36,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionPreparation",
+          "audits": 13,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionWitness",
+          "audits": 30,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationSafety",
+          "audits": 20,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBudget",
+          "audits": 10,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBridge",
+          "audits": 7,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "FreshRevision",
+          "audits": 30,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionWitness",
+          "audits": 27,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "AcquiredEvaluation",
+          "audits": 41,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationWitness",
+          "audits": 28,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluativeSuccession",
+          "audits": 47,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionWitness",
+          "audits": 37,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ApplicationEvidence",
+          "audits": 24,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedModel",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConstructiveDecisions",
+          "audits": 18,
+          "empty_dependency_audits": 9,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedGenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ClaimLedger",
+          "audits": 21,
+          "empty_dependency_audits": 16,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "CompletionApplicability",
+          "audits": 17,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeApplicabilityModel",
+          "audits": 4,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "receipt_bytes_unchanged_during_this_audit": true
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json",
+      "receipt_current_sha256": "bf3d9b8e15da760b2e5283298e45cfadb4ee66802babcd6b02aa1d45ac138ec4",
+      "reported_verification_status": "passed",
+      "reported_verification_time_utc": "2026-10-06T06:38:40.546242+00:00",
+      "module_count": 55,
+      "audit_count": 1028,
+      "empty_dependency_audit_count": 272,
+      "named_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "hash_comparisons_by_category": {
+        "checker": 1,
+        "compiler_binary": 1,
+        "compiler_log": 55,
+        "linked_manifest": 1,
+        "manifest_saved_input": 2,
+        "manifest_source_snapshot": 55,
+        "module_source": 55
+      },
+      "hash_comparison_total": 170,
+      "all_compared_hashes_match": true,
+      "mismatches": [],
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/check.py",
+      "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "linked_manifest_checks": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/INPUTS.json",
+          "current_sha256": "96de885ba38e5ccdf28152dd4633d1917afb7273c8a7650b89d2c5549e0f9068",
+          "source_snapshot_hashes_checked": 55,
+          "saved_input_hashes_checked": 2,
+          "source_snapshot_path_rule": "Each sources[].snapshot resolves relative to this manifest; expected digest is sources[].sha256.",
+          "saved_input_path_rule": "Each receipt_sources[].saved resolves relative to this manifest; expected digest is receipt_sources[].sha256. Saved inputs are historical provenance; this audit does not require their original live receipts to remain identical."
+        }
+      ],
+      "module_audit_inventory": [
+        {
+          "module": "GenerativeCore",
+          "audits": 18,
+          "empty_dependency_audits": 18,
+          "named_dependencies": []
+        },
+        {
+          "module": "BoundaryModels",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "Depletion",
+          "audits": 5,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RootRealization",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ProductTower",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicUnderdetermination",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedPaths",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "HistoryRealization",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicSymmetry",
+          "audits": 20,
+          "empty_dependency_audits": 20,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicConsequences",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicClassification",
+          "audits": 6,
+          "empty_dependency_audits": 6,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedSelf",
+          "audits": 23,
+          "empty_dependency_audits": 23,
+          "named_dependencies": []
+        },
+        {
+          "module": "EthicalOrientation",
+          "audits": 17,
+          "empty_dependency_audits": 17,
+          "named_dependencies": []
+        },
+        {
+          "module": "OutcomeContinuation",
+          "audits": 14,
+          "empty_dependency_audits": 14,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeOutcomeModel",
+          "audits": 3,
+          "empty_dependency_audits": 3,
+          "named_dependencies": []
+        },
+        {
+          "module": "FormedSelection",
+          "audits": 43,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientCorrection",
+          "audits": 36,
+          "empty_dependency_audits": 18,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientIdentification",
+          "audits": 45,
+          "empty_dependency_audits": 8,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EmissionArchive",
+          "audits": 19,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientArchive",
+          "audits": 22,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ArchivePreparation",
+          "audits": 12,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidArchiveReader",
+          "audits": 14,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecordedEvidence",
+          "audits": 33,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplay",
+          "audits": 58,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientReasons",
+          "audits": 21,
+          "empty_dependency_audits": 6,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidRecipientReasons",
+          "audits": 24,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplayBridge",
+          "audits": 15,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientAction",
+          "audits": 36,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionPreparation",
+          "audits": 13,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionWitness",
+          "audits": 30,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationSafety",
+          "audits": 20,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBudget",
+          "audits": 10,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBridge",
+          "audits": 7,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "FreshRevision",
+          "audits": 30,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionWitness",
+          "audits": 27,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "AcquiredEvaluation",
+          "audits": 41,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationWitness",
+          "audits": 28,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluativeSuccession",
+          "audits": 47,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionWitness",
+          "audits": 37,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ApplicationEvidence",
+          "audits": 24,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedModel",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConstructiveDecisions",
+          "audits": 18,
+          "empty_dependency_audits": 9,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedGenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ClaimLedger",
+          "audits": 21,
+          "empty_dependency_audits": 16,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "CompletionApplicability",
+          "audits": 17,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeApplicabilityModel",
+          "audits": 4,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "FormationRoot",
+          "audits": 10,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeRepairApplicability",
+          "audits": 16,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientContinuationProjection",
+          "audits": 11,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeNondualApplicabilityModel",
+          "audits": 0,
+          "empty_dependency_audits": 0,
+          "named_dependencies": []
+        }
+      ],
+      "receipt_bytes_unchanged_during_this_audit": true
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/verification.json",
+      "receipt_current_sha256": "4f63506cb43e89818d63a8618805a1578bb352f7969e13efd47ab43d03c14e37",
+      "reported_verification_status": "passed",
+      "reported_verification_time_utc": "2026-10-06T07:01:54.715750+00:00",
+      "module_count": 60,
+      "audit_count": 1104,
+      "empty_dependency_audit_count": 274,
+      "named_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "hash_comparisons_by_category": {
+        "checker": 1,
+        "compiler_binary": 1,
+        "compiler_log": 60,
+        "linked_manifest": 1,
+        "manifest_saved_input": 6,
+        "manifest_source_snapshot": 60,
+        "module_source": 60
+      },
+      "hash_comparison_total": 189,
+      "all_compared_hashes_match": true,
+      "mismatches": [],
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/check.py",
+      "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "linked_manifest_checks": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/INPUTS.json",
+          "current_sha256": "bb9f5f14a850b82b7285e6c86c75ef956b462374e1e65a2482938fefa47b9f10",
+          "source_snapshot_hashes_checked": 60,
+          "saved_input_hashes_checked": 6,
+          "source_snapshot_path_rule": "Each sources[].snapshot resolves relative to this manifest; expected digest is sources[].sha256.",
+          "saved_input_path_rule": "Each receipt_sources[].saved resolves relative to this manifest; expected digest is receipt_sources[].sha256. Saved inputs are historical provenance; this audit does not require their original live receipts to remain identical."
+        }
+      ],
+      "module_audit_inventory": [
+        {
+          "module": "GenerativeCore",
+          "audits": 18,
+          "empty_dependency_audits": 18,
+          "named_dependencies": []
+        },
+        {
+          "module": "BoundaryModels",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "Depletion",
+          "audits": 5,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RootRealization",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ProductTower",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicUnderdetermination",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedPaths",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "HistoryRealization",
+          "audits": 7,
+          "empty_dependency_audits": 7,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicSymmetry",
+          "audits": 20,
+          "empty_dependency_audits": 20,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicConsequences",
+          "audits": 9,
+          "empty_dependency_audits": 9,
+          "named_dependencies": []
+        },
+        {
+          "module": "DynamicClassification",
+          "audits": 6,
+          "empty_dependency_audits": 6,
+          "named_dependencies": []
+        },
+        {
+          "module": "GeneratedSelf",
+          "audits": 23,
+          "empty_dependency_audits": 23,
+          "named_dependencies": []
+        },
+        {
+          "module": "EthicalOrientation",
+          "audits": 17,
+          "empty_dependency_audits": 17,
+          "named_dependencies": []
+        },
+        {
+          "module": "OutcomeContinuation",
+          "audits": 14,
+          "empty_dependency_audits": 14,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 8,
+          "named_dependencies": []
+        },
+        {
+          "module": "GenerativeOutcomeModel",
+          "audits": 3,
+          "empty_dependency_audits": 3,
+          "named_dependencies": []
+        },
+        {
+          "module": "FormedSelection",
+          "audits": 43,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientCorrection",
+          "audits": 36,
+          "empty_dependency_audits": 18,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientIdentification",
+          "audits": 45,
+          "empty_dependency_audits": 8,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EmissionArchive",
+          "audits": 19,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientArchive",
+          "audits": 22,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ArchivePreparation",
+          "audits": 12,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidArchiveReader",
+          "audits": 14,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecordedEvidence",
+          "audits": 33,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplay",
+          "audits": 58,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientReasons",
+          "audits": 21,
+          "empty_dependency_audits": 6,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidRecipientReasons",
+          "audits": 24,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplayBridge",
+          "audits": 15,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientAction",
+          "audits": 36,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionPreparation",
+          "audits": 13,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionWitness",
+          "audits": 30,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationSafety",
+          "audits": 20,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBudget",
+          "audits": 10,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBridge",
+          "audits": 7,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "FreshRevision",
+          "audits": 30,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionWitness",
+          "audits": 27,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "AcquiredEvaluation",
+          "audits": 41,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluationWitness",
+          "audits": 28,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "EvaluativeSuccession",
+          "audits": 47,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "SuccessionWitness",
+          "audits": 37,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ApplicationEvidence",
+          "audits": 24,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedModel",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ConstructiveDecisions",
+          "audits": 18,
+          "empty_dependency_audits": 9,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ConnectedGenerativeModel",
+          "audits": 8,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ClaimLedger",
+          "audits": 21,
+          "empty_dependency_audits": 16,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "CompletionApplicability",
+          "audits": 17,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeApplicabilityModel",
+          "audits": 4,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "FormationRoot",
+          "audits": 10,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeRepairApplicability",
+          "audits": 16,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientContinuationProjection",
+          "audits": 11,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativeNondualApplicabilityModel",
+          "audits": 0,
+          "empty_dependency_audits": 0,
+          "named_dependencies": []
+        },
+        {
+          "module": "PlasticityPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "PairedPlasticity",
+          "audits": 30,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PlasticityWitness",
+          "audits": 22,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PretrainingEvidence",
+          "audits": 16,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "GenerativePretrainingEvidenceModel",
+          "audits": 0,
+          "empty_dependency_audits": 0,
+          "named_dependencies": []
+        }
+      ],
+      "receipt_bytes_unchanged_during_this_audit": true
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-verification.json",
+      "receipt_current_sha256": "160459f397ea341ff9480ed01d5ab892a8f97fe84a5eb2bab51b5acfbead02c5",
+      "reported_verification_status": "passed",
+      "reported_verification_time_utc": "2026-10-06T07:12:12.585421+00:00",
+      "module_count": 28,
+      "audit_count": 631,
+      "empty_dependency_audit_count": 93,
+      "named_dependencies": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "hash_comparisons_by_category": {
+        "checker": 1,
+        "compiler_binary": 1,
+        "compiler_log": 28,
+        "inherited_live_receipt": 1,
+        "module_source": 28
+      },
+      "hash_comparison_total": 59,
+      "all_compared_hashes_match": true,
+      "mismatches": [],
+      "checker": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_coformation.py",
+      "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "linked_manifest_checks": [
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/verification.json",
+          "current_sha256": "495dd1170485a5d1d7dfbbd3984c04c5f62fac5229f37270ea3b1defe52816a0",
+          "kind": "inherited plasticity receipt named by check_coformation.py"
+        }
+      ],
+      "module_audit_inventory": [
+        {
+          "module": "GenerativeCore",
+          "audits": 18,
+          "empty_dependency_audits": 18,
+          "named_dependencies": []
+        },
+        {
+          "module": "FormedSelection",
+          "audits": 43,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientCorrection",
+          "audits": 36,
+          "empty_dependency_audits": 18,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientIdentification",
+          "audits": 45,
+          "empty_dependency_audits": 8,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "EmissionArchive",
+          "audits": 19,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientArchive",
+          "audits": 22,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ArchivePreparation",
+          "audits": 12,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidArchiveReader",
+          "audits": 14,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecordedEvidence",
+          "audits": 33,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplay",
+          "audits": 58,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientReasons",
+          "audits": 21,
+          "empty_dependency_audits": 6,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PaidRecipientReasons",
+          "audits": 24,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ReasonReplayBridge",
+          "audits": 15,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RecipientAction",
+          "audits": 36,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionPreparation",
+          "audits": 13,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "ActionWitness",
+          "audits": 30,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationSafety",
+          "audits": 20,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBudget",
+          "audits": 10,
+          "empty_dependency_audits": 1,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PublicationBridge",
+          "audits": 7,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionPreparation",
+          "audits": 10,
+          "empty_dependency_audits": 4,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "FreshRevision",
+          "audits": 30,
+          "empty_dependency_audits": 3,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "RevisionWitness",
+          "audits": 27,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PlasticityPreparation",
+          "audits": 8,
+          "empty_dependency_audits": 2,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "PairedPlasticity",
+          "audits": 30,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "PlasticityWitness",
+          "audits": 22,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "module": "CoupledOccurrence",
+          "audits": 7,
+          "empty_dependency_audits": 5,
+          "named_dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "module": "CoupledConcernHistory",
+          "audits": 11,
+          "empty_dependency_audits": 0,
+          "named_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "receipt_bytes_unchanged_during_this_audit": true
+    }
+  ]
+}

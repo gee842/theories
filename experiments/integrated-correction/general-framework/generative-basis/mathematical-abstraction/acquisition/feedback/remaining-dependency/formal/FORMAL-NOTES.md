@@ -1,0 +1,29 @@
+# Formal scope of acquired remaining dependence
+
+6 October 2026. AI-authored formalization and source-bound correspondence note. **Accepted fresh local build:** [verification.json](verification.json), with [source](RemainingDependency.lean), [checker](check.py), and the separately authored [native review](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REMAINING-DEPENDENCY-REVIEW.md). No original proof, result or receipt was overwritten.
+
+The named connection is actual completed component → paid acquisition of a different operational relation → changed relation maintained or released → distinct full-load use. The new relay/load is a prospectively declared product extension of the exact retained inquiry history. Its value, two-test schedule, repertoire, weak/full-load calibration, bypass preference, finite storage and tariffs remain supplied local inputs. This formalization does not derive an ethical premise or the entire generative foundation.
+
+## What the proofs establish
+
+The module has **43 theorem audits**. General results show that a selected setting is supported by a truthful complete pair; every productive pair in this two-setting family has a supported selection; calibrated weak evidence implies full-load support; and no constant setting serves both the `01` and `10` relations. Missing evidence stays distinct from a negative response. Complete evidence is sufficient for this consumer, without a claim that both probes are always necessary for adequate action.
+
+Meaningful event operations compute charges and effects. General proofs preserve the historical component, actor expenditure account, source/load/waste account and the resulting whole-history total across any requested event word. The initial 145 units are not restored: inherited irreversible consumption is fixed, new actor expenditure reduces actual fuel, and the final packet enters load stock or waste. Neither weak challenges nor slot writes supply the load. The final physical outcome is not acquired as a new completion judgment.
+
+The concrete funded witness begins after the old retention charge, with fuel `178253/16384`, source 10 and 26 live cells. It forms eight additional cells, obtains `[0,1]`, commits relay 1, pays its finite hold, and delivers the separate packet. Final fuel is `214009/32768`, new expenditure `142497/32768`, and load stock 10. The opposite relation commits bypass 0. A matched clamp preserves acquired values and costs through commit but keeps the old completed-component stop. False positive contact can select the wrong setting; broken calibration can waste the packet despite a correct weak record.
+
+## Correspondence and exact acceptance boundary
+
+The checker does **not** execute the producer or replace its independent review. It binds the unchanged [saved native outcomes](../../remaining-dependency-results.json) and [independent runtime receipt](../../remaining-dependency-independent-check.json), then translates all 362 saved state points into explicit Lean values. The projection retains every mutable native/controller coordinate, the complete ancestral model/table/status, account fuel/start/spent/live/peak/capacity, and physical stocks. Actor income and workspace are separately checked to be zero at every snapshot; the fixed inherited-consumption coordinate closes the recorded whole account.
+
+There are **334 saved edges**: 333 requested-operation reductions plus one entrance denial. All 325 successful charges are checked against the semantic tariff, and all eight denials carry their actual source, fuel, capacity or entrance guard. A failed event is not justified merely by labeling its result unchanged. Generated proofs also connect each saved event word to the unchanged generative core and check initial/final whole accounts. These make **446 correspondence/trace/account audits**, alongside the 43 substantive module audits and **18 unchanged core audits**, for **507 total**.
+
+The total Lean event-attempt law allows arbitrary request words and represents denials as unchanged states. Its generic trace theorem alone does not establish admissible producer scheduling, successful funding or equivalence with every possible Python execution. The actual saved words, including abort and final retention ordering, have the finite correspondence; the separate independent replay verifies their native control flow. The helper `continuation` describes the nominal funded assay and selection-driven suffix. The entire original sensory learner is not newly formalized here.
+
+**Twenty-seven cases have ancestry-admissible histories**, including the preserved entrance-denial control. The frozen `capacity_forty` case is different: original acquisition peaked at 114 cells, so a capacity of 40 from the original start cannot produce its claimed endpoint. Its kernel-checked installation denial is only a conditional cut-state capacity test. The original protocol/result and the rejected genealogy remain preserved; no resource reset or later capacity reduction was invented to rescue it.
+
+## Verification record
+
+The fresh isolated build used pinned Lean 4.29.1, rebuilding the unchanged core and the new module before the generated fixture. Every new theorem has an exact `#print axioms` audit. The dependency union is only Lean's standard `propext` and `Quot.sound`; there are no custom axioms, proof holes, `native_decide`, or unsafe declarations. Standard logical dependencies are reported, not described as eliminated substantive premises.
+
+The [receipt](verification.json) records compiler and source hashes, all theorem dependency lists, generated fixture and per-module log hashes, and before/after source stability. Its timestamped run folder preserves exact source snapshots. The separate material-law continuing-dependency study has its own endpoint and resource obstruction; this relay result does not claim to implement that other reader.

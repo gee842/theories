@@ -1,0 +1,10 @@
+'RecipientIdentification.revise' does not depend on any axioms
+'RecipientIdentification.candidate' does not depend on any axioms
+'RecipientIdentification.requiredEscrow' depends on axioms: [propext]
+'RecipientCorrection.packedWrite' does not depend on any axioms
+'RecipientCorrection.receiptOf' does not depend on any axioms
+'RecipientCorrection.lookup' does not depend on any axioms
+'RecipientIdentification.credit' does not depend on any axioms
+'RecipientIdentification.patientCredit' does not depend on any axioms
+'RecipientIdentification.registers' does not depend on any axioms
+'RecipientIdentification.setRegisters' does not depend on any axioms

@@ -1,0 +1,29 @@
+{
+  "id": "v1",
+  "tree": "versions/v1/tree",
+  "origin": "actual_producer_run",
+  "production_run": "r0002",
+  "candidate": "c0001",
+  "artifacts": {
+    "replay.py": {
+      "path": "versions/v1/tree/experiments/agentdojo-evidence-boundary/replay.py",
+      "sha256": "10dec2fd6177a5f7a971a819d81fbd23cbc7875145ae567a82c4aed65b3e1271",
+      "bytes": 23536
+    },
+    "replay-results.json": {
+      "path": "versions/v1/tree/experiments/agentdojo-evidence-boundary/replay-results.json",
+      "sha256": "9bb0f3207bed4404ed82e424b5347b1fd3b811c44b9b260b799c7847ea0ef4e7",
+      "bytes": 5148640
+    },
+    "replay-receipt.json": {
+      "path": "versions/v1/tree/experiments/agentdojo-evidence-boundary/replay-receipt.json",
+      "sha256": "4e8828fc794ba0752bf26b2a385a71ae2e7ff8df83b8d2360437900ccd79a9e0",
+      "bytes": 1015
+    }
+  },
+  "inventory": {
+    "path": "versions/v1/inventory.json",
+    "sha256": "e3111a5560e12d9fa2d7a4b387cc89ebd833283a714364801cd164ecdf6321ca",
+    "bytes": 104635
+  }
+}

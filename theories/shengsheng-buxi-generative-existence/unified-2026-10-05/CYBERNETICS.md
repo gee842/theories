@@ -10,6 +10,10 @@ This advances the comparison and assumption review for [organizational dependenc
 
 ## Three meanings of containment
 
+**Formalized extension, 6 October 2026:** [the systems companion’s Lean completion](SYSTEMS-COMPLEXITY-CHAOS.md#lean-completion-of-the-mathematical-connections) now verifies exact real feedback convergence ranges, delayed stability and divergence, organization/projection conditions, finite recurrence and an infinite symbolic-chaos witness, with actual histories in the existing generative core. These 104 new audits formalize the specified connections; they do not claim that all cybernetic systems are chaotic or that regulation alone justifies concern.
+
+**Extension to systems, complexity and chaos, 6 October 2026:** [the companion integration](SYSTEMS-COMPLEXITY-CHAOS.md) explains how boundaries, exchange, collective organization and dynamical regimes bear on these cybernetic mechanisms. It distinguishes actual selection processes and derives a delay-dependent stability comparison; neither feedback nor complexity establishes chaos or ethical direction. The subsequent [inquiry-revision result](INQUIRY-REVISION.md) has already realized retained consequences changing the arrangement governing inquiry and response access in the particular concern model. These developments extend the earlier checkpoints below at their declared scopes.
+
 1. **Conceptual inclusion.** Feedback, information, regulation, adaptive organization and observing systems have recognizable roles in the theory.
 2. **Formal reconstruction.** A specified cybernetic model is realized within a generative process while preserving its observations, decisions, possibilities and relevant costs. Existing studies establish particular cases.
 3. **Explanatory advance.** The foundation replaces something previously supplied with a mechanism, or yields a useful constraint, identification method or connection across domains. This needs a comparison at the level of the particular result.

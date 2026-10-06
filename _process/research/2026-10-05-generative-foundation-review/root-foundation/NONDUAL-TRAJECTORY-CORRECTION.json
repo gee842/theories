@@ -1,0 +1,77 @@
+{
+  "scope": "Preserved the current user correction and narrowly revised this branch interpretation. Existing project-wide AGENTS/BRIEF/NONDUAL-METHOD already carry the governing direction and were read, not duplicated or overwritten.",
+  "source": "sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
+  "source_sha256": "be0958184f4263e4d0d2b92840a330a6a86cabde046fb8484b27b5abf33ba889",
+  "files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "before_snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-trajectory-correction/before-00-CONNECTED-GENERATIVE-MODEL.md",
+      "before_sha256": "d73c647c9dcd687773c89443073dc2dbfe7627fd97a26f0a98b78f909fec03dd",
+      "after_sha256": "a4f250eeb58e4e91c047ce579001036bb68ecbbf5a1ba8df5dafa7c2ebdc75cf",
+      "patch": "--- theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md\n+++ theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md\n@@ -1,6 +1,8 @@\n # Toward one connected generative model\n \n 6 October 2026. AI-authored continuation of [Ren's direction](../../../sources/15-codex-theory-conversations/2026-10-06-one-connected-generative-model.md): derive learning, concern, governance and alignment in one connected model, preserving the no-assumptions/no-axioms requirement.\n+\n+**Method correction, reaffirmed by Ren:** follow the [shared nondual method](NONDUAL-METHOD.md) and [the current trajectory correction](../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md). Core and tree articulate one generative unfolding; sensing, evaluation, action and their investigation differentiate within it. A law or meaning supplied to this local representation is not thereby external to generative reality. Assess its explanatory status within the reconstructed account, without presuming an outside evaluator. This correction governs the next research step as well as the interpretation of the completed local proofs.\n \n **The whole requirement remains open.** This continuation connects an existing learned successor's actual history to the root's outcome semantics and removes avoidable named-axiom dependencies from an equivalent recipient-learning process. It does not claim that compiling a larger collection derives its supplied laws or ethical grounds.\n \n@@ -38,7 +40,7 @@\n \n The next [mechanism result](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md) strengthens the earlier repeated-service example to a structural theorem. Every event in the existing successor law preserves its route; the earlier native-retention theorem preserves its acquired influence. The internal `help` assessment depends only on those two fields. It therefore remains unchanged through **every admitted finite history**, including factual learning, archive changes, permission cuts and paid settlement. For the actual shared-route learner, every reached, admitted assessment enters the help branch and pays its original one-unit cost. This does not guarantee another assessment becomes enabled or occurs. Current commands, scope, permission, ports and actual execution can still change.\n \n-The [new proof](../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean) also establishes that a presentation preserving every original transition inherits this limitation. Removing proof dependencies or faithfully rewriting the implementation cannot supply the missing behavior. A positive continuation must form a justified mutable path into the assessment, or revise its dependency structure, while preserving the actual learned predecessor and resource history. Neither changing a port externally nor disabling all factual knowledge establishes that path.\n+The [new proof](../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean) establishes a limit of this chosen successor representation: its fixed assessment inputs prevent completion-sensitive revision. A presentation preserving every original transition inherits that limit. This does not by itself establish a foundational gap. The next inquiry must reconstruct how completion, significance and responsive activity are related within the relevant generative unfolding, then distinguish a relationship omitted by this representation from an unresolved explanation or substantive failure of that account. An implementation of such revision would have to change this fixed dependency while preserving its actual history; that implementation requirement is not the starting ontology of the whole theory.\n \n A separate diagnostic locates the question-binding requirement. The actual query delivered ten units. That same modeled endpoint answers an externally specified ten-unit service question differently from a twenty-unit question. No decoder receiving only that unchanged endpoint can answer both unless it also receives the relevant requirement. These are different supplied service interpretations; the twenty-unit interpretation is outside the earlier premise that a qualifying ten-unit transfer fulfills the claim. Quantity is not being defined as welfare or moral significance. A quantity comparator with the requirement supplied resolves these numerical questions but is not an acquired or installed selector.\n \n@@ -60,7 +62,7 @@\n | Concern \u2192 governance of continuing action | The same learned successor obeys its current technical cut through all admitted continuations while retaining prior effects and paid settlement | Legitimate standing, authority, regrant, conflict and formation of effective institutions are not derived from the permission bit. |\n | Learning and governance \u2192 continuing alignment | Actual histories preserve important information, resource and authority boundaries | General reliable reason recognition, warranted selector change, changed incentives, capture and real-system identification remain open. |\n \n-There is an exact unresolved selector connection in the current history. Inquiry has already delivered the service under the supplied one-service episode interpretation, yet the existing selector still performs another delivery. The new theorem preserves that obstruction. It neither calls every repeated service harmful nor installs the desired withdrawal branch by definition. The required continuation is **actual acquired completion/applicability evidence \u2192 warranted change of the operative recommendation**, preserving learned means, independent reasons and costs. The separately observed language-agent maintenance workflow is not this material learner's missing mechanism.\n+There is an exact unresolved selector connection in the current history. Inquiry has already delivered the service under the supplied one-service episode interpretation, yet the existing selector still performs another delivery. The new theorem preserves that obstruction. It neither calls every repeated service harmful nor installs the desired withdrawal branch by definition. For this chosen implementation, the outstanding connection is **actual acquired completion/applicability evidence \u2192 warranted change of the operative recommendation**, preserving learned means, independent reasons and costs. Its place in the foundational inquiry now requires reconstruction under the nondual method above; adding another separately specified component is not an adequate default research direction. The separately observed language-agent maintenance workflow is not this material learner's missing mechanism.\n \n The supporting [receipt-identification result](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md) now derives a precise diagnostic and temporal contract in the existing actor predictor: success identifies its trial's target, unknown outages make failures ambiguous, and actual phase guards preserve freshness until the next write. Later reversal demonstrates why acquired provenance does not establish current applicability. This constrains the evidence side of the open revision bridge above. It does not install an applicability-aware selector in this recipient-successor history or join the two local implementations' resources.\n \n"
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-trajectory-correction/before-01-RESEARCH.md",
+      "before_sha256": "7ada5bd26c092581a930aa19f214ea48ca37684fc388f9b07db56fdfd0fea6b9",
+      "after_sha256": "64f7b7e08cf1eb365399ee1dcfab5348c1cf4fedc3052e06fc2dabd42e851bc6",
+      "patch": "--- RESEARCH.md\n+++ RESEARCH.md\n@@ -1,4 +1,6 @@\n # Current theory and research\n+\n+**Core/tree nondual trajectory correction, 6 October 2026:** [Ren reaffirms the direction](sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md). The [connected-model account](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md) now explicitly applies the [shared nondual method](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): reconstruct core and branches as differentiated articulations of one unfolding. The fixed-help theorem establishes a limit of the chosen local representation; it does not by itself establish a defect of the foundation. Reassess the decomposition and the omitted generative relationship before making another isolated control component the governing next step. Existing proofs remain intact; this is a methodological correction, not a new verification or completion claim.\n \n **Project-wide methodological direction, 6 October 2026:** [Ren's instruction](sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md) makes [nondual understanding of core and tree](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) govern every branch. This builds on the existing role-neutral core and nondual reconstructions. Reconstruct the unfolding relationships and account for the differentiations used by an analysis. Distinguish a missing relationship in a formalization from an unresolved explanation or failure of the reconstructed theory. Test constitutive claims against substantive competing accounts with a fixed target and real revision conditions. This is a methodological integration, with no new proof or empirical run and no change to prior result scopes or the stronger no-assumptions objective.\n \n"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-trajectory-correction/before-02-SOURCES.md",
+      "before_sha256": "625004a39f4cfa02eb305cb00b65b3ee339023fc40911e7b14c9b9814e40b754",
+      "after_sha256": "e1fd5a00b936cf7590f3222fd2eb493fc1d295218decbedac3ef5e242b5f7236",
+      "patch": "--- sources/SOURCES.md\n+++ sources/SOURCES.md\n@@ -1,4 +1,6 @@\n # SOURCES manifest\n+\n+**6 October 2026 \u2014 core/tree trajectory reaffirmation:** [the exact current message](15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) reiterates nonduality of the generative core and tree and asks that the criticism of the recent research direction be remembered. This distinct message continues the earlier project-wide instruction; its AI-authored implementation is labeled separately.\n \n **6 October 2026 \u2014 project-wide nondual method:** [Ren's selected exact messages](15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md) clarify that both generative core and tree are nondual, endorse substantive testing of constitutive connections, and request that the whole project understand this perspective. User words and the quoted assistant proposal are attributed separately. [The shared working method](../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) is an AI-authored implementation of that direction, not a new proof or empirical result.\n \n"
+    }
+  ],
+  "local_links_checked": [
+    {
+      "owner": "sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "owner": "sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
+      "target": "2026-10-06-project-wide-nondual-method.md",
+      "exists": true
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
+      "exists": true
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
+      "exists": true
+    },
+    {
+      "owner": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
+      "exists": true
+    },
+    {
+      "owner": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "exists": true
+    },
+    {
+      "owner": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "owner": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
+      "exists": true
+    }
+  ],
+  "scientific_checks_rerun": false,
+  "proof_sources_changed": false
+}

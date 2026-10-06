@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integrity, not ethical truth, empirical validation, formal proof or completion. Historical links use original canonical base; only owned additions checked in shared files.",
+  "owned_documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "bytes": 33003,
+      "sha256": "ef81d3c9db748fa7dbc120b177fb6d7bb25b6358b38c3bae8d88a9e547bdb939"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-ARGUMENT.md",
+      "bytes": 15497,
+      "sha256": "4506b7fc27b86f710a56e92b0db8db5f7a6be51e2dfc7af3ec2963967c46a1f4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-REVIEW.md",
+      "bytes": 16909,
+      "sha256": "94a74f7c6c52ae15be963af55b8f92ac20adfc5f2f29d869ff378bae6fab7496"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-SOURCES.md",
+      "bytes": 13340,
+      "sha256": "94f6e352fcc343af7a55e53f487313dac642aac1797eaf4c05bbe2f0ea8686d0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-PERMISSION-TRANSPORT.md",
+      "bytes": 6807,
+      "sha256": "2f161f8260b362a482c50af852c2bac146a8baac2ea4958c0600468edad296ca"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-INTEGRATION.md",
+      "bytes": 9479,
+      "sha256": "08714883353c6561a8570382755a4755f7e1b258d0c7bf9f84df0567c2225f3b"
+    }
+  ],
+  "local_link_occurrences_checked": 90,
+  "snapshot_sha256_verified": "cbb554149b2a89ed783463683775b63a7cb51deed6dd3184163121ead0cd5b61",
+  "snapshot_bytes_verified": 25788,
+  "shared_additive_paragraphs_checked": 5,
+  "errors": [],
+  "goal_status": "active; complete patient grounding and justified plural latitude under general serious need remain incomplete"
+}

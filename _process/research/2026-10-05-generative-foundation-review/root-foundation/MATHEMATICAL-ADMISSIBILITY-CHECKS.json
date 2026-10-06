@@ -1,0 +1,19 @@
+{
+  "scope": "Owned text, local links and input preservation; mathematical acceptance by separate hand-proof review",
+  "documents_or_owned_sections": 12,
+  "local_links": 39,
+  "anchors": 4,
+  "math_delimiters": "balanced",
+  "preserved_inputs": 6,
+  "scientific_experiments_executed": false,
+  "new_proof_assistant_audits": 0,
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md": "65a4803a1630a163958ed564aed146b8c15fb4083f5bf38f16a8f78a67acd001",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-MATH.md": "e600414cc0301d2213222a904a0baa628ec12daabd976865069329faa7dcf2c1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-REVIEW.md": "518035e13f4a74ff887716711c52d75e70c177656736201350f3e8e4a3bac3ca",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-SOURCES.md": "0d1ca9524e90ac11d995a426e126e889169b2df93653b9c5a3c63c6d5ee489f2",
+    "sources/15-codex-theory-conversations/2026-10-06-mathematical-admissibility-continuation.md": "189c51ba127e0fe705586a1ebffcd3fd342ad64a8e378dc9bd3ccf10b3195d66",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-EDITS.json": "84147b19d4dde1c404f8142ac9cbd07de7b5f68bdd8ca8b5def761c0086d7fc5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-CHECK.py": "e658128a02d8a69fca6e0c75a186ff824607d37cb509011e2c8c5d9f22ad7d82"
+  }
+}

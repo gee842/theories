@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-06",
+  "scope": "Documentation integration of the accepted acquired-applicability formal closure; no new native scientific run.",
+  "accepted_formal_receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/runs/20261006T090706Z-1791277626988980000/receipt.json",
+  "receipt_sha256": "cc3a6a683a9c51db70a3c6f8a305a336e93f5772bc7e29f6e58219c25eaa4c60",
+  "owned_additive_fragments": [
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
+      "before_sha256": "725218d2475c10b98adc2332afae9b8010441ed08813ccfcc30458215d498b41",
+      "after_sha256": "9fb08b26dfd954fc6a06b516153dac83f8e25ccbfbac74a5478a37f0cf5c8b0b",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Subsequent formal closure, 6 October 2026:** the [accepted Lean integration](ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) completes the formal obligation left open at the native acceptance recorded below. General conservation, evidence-update and selection proofs compose with the existing generative trace framework; all 65 saved continuations satisfy the formal policy and projected event law. The combined build audits 454 explicit declarations with empty dependencies. Native results and their earlier verification remain unchanged; the formal projection and supplied-law limits are stated separately."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-MATH.md",
+      "before_sha256": "d7752dbc5c792726441f424ba65a27ba8fc53c494e752a99a3312ba28a648d63",
+      "after_sha256": "0d91d079dc3626aee2da7fa2c1c54fbcac1fde1f73602863f351cea41a8bb8c6",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Subsequent formal closure, 6 October 2026:** the [accepted proof and execution correspondence](ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) now formalize the conditional applicability mechanism, including resource chronology, true-relation retention under faithful evidence, conservative ambiguity, acquired selection and adverse cases. General Lean results and kernel-checked finite execution certificates have distinct scopes. The hand arguments below retain their original role and premises."
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "63f6644e90e83784ace2fca4c1f2cd5516364d127d7174a2f5edf63179f4161d",
+      "after_sha256": "e149188aa872c5c9e00708de0206f008cbe0294ff6d41eb14cee03004c576141",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Acquired applicability formally closed, 6 October 2026:** the [formal integration](_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) completes the bounded acquired-consequence \u2192 revised use relation \u2192 changed inquiry/use mechanism. Six fresh-compiled Lean modules connect exact resource and source conservation, faithful-evidence update, selection and interruptions to the existing generative trace framework and all 65 saved continuations. All 454 audited explicit declarations have empty dependencies; this does not eliminate supplied local laws. **Next connection:** formation or revision of the applicability family, evidence access and inquiry rule through wider consequences, with renewal and warranted scope still distinct. The governing foundation remains open at its own completion conditions."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "bac16922a587b1433c2890c8bfe701cc2e9fae2b72e1869d24d08f6110fed18f",
+      "after_sha256": "6642f65d7f5e2af925d403cfcb69b1027788606cec6997f63457eafd0f9ba7ea",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Formal completion of the acquired-applicability mechanism, 6 October 2026:** the [accepted closure](../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) joins general Lean proofs to all 65 saved native continuations. It verifies how acquired effects can change the use of accurate knowledge and select further activity while preserving actual support, ambiguous evidence and failed regimes. The supplied coupling law determines the true applicability relation in the proof without giving it to the controller. This completes the local formal obligation; the family, contact, inquiry rule, renewal and warranted scope retain their stated grounding requirements."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md",
+      "before_sha256": "1b8fb5aa9591d33de72f740244a9ef2b50906832e2469ef41f80deb3e13f7aaf",
+      "after_sha256": "99cb43b2cae47763ed34765f3d5b763df81fbe2b2b2782e81bed217711ebed8c",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Formal closure, 6 October 2026:** the [accepted continuation proof](../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) now verifies the native acquired-applicability join below. General declared-law theorems cover exact support/source conservation, preservation of sensory knowledge, faithful acquired updates, ambiguous failure, selected inquiry and interruptions. All 65 saved continuations additionally satisfy the formal event guards and actual scheduling policy, with acquired and committed evidence checked separately. The finite correspondence preserves the failed regimes and the distinction between transfer, acquired receipt and retention; it does not derive the supplied family/contact or establish indefinite renewal."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "6c0869e67cd6283dffc3de323e516287db5f1f2dd7e8ff399ead3f963a586422",
+      "after_sha256": "39bdb779217d481c4e0f77dd2000fc78bac7cd60497330948170a9a3a3a38422",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Acquired applicability: formal obligation completed, 6 October 2026:** the [accepted combined closure](../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) connects actual acquired consequences \u2192 retained qualification of knowledge use \u2192 selected inquiry and further source effects under the declared local law. General Lean proofs and all 65 finite execution certificates pass, with 454 explicit declarations audited without named-axiom dependencies. This credits the bounded mechanism, including misleading and interrupted evidence; it leaves formation of broader applicability relations, access and inquiry rules, continuing renewal and warranted scope as the next substantive connection. Empty proof dependencies do not remove those premises or complete the foundation."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "39bdb779217d481c4e0f77dd2000fc78bac7cd60497330948170a9a3a3a38422",
+      "after_sha256": "8407c0f15629dfc8a98da25a04f86a622e06290da4a59ba19c485251e3e34ad1",
+      "operation": "additive paragraph",
+      "anchor": "**Acquired use relation \u2192 selected encounter \u2192 actual support, 6 October 2026:**",
+      "fragment": "**Formal status of this connection, 6 October 2026:** [the subsequent closure](../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) proves the general resource, evidence and selection results and certifies all 65 saved continuations under the explicit law and policy. It derives family adequacy from the local sensing/extraction coupling and connects faithful updates to that relation, with encounter correspondence explicit. The acquisition ancestry remains supported by its existing evidence; no universal Python refinement, criterion origin or ethical necessity is inferred."
+    },
+    {
+      "path": "experiments/README.md",
+      "before_sha256": "c53b2c97ed32e5d36c5b0786e1206ff9d8d2dc9a8b542a41c180db868545815b",
+      "after_sha256": "50f2c560f7aadd0506df1a14322e9af8d873401ca7d921bb2d40891894628a4d",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Acquired applicability Lean closure, 6 October 2026:** the [formal package](integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md) now connects general conservation, evidence and selection theorems to all 65 saved continuations. Six modules compile in an isolated Lean 4.29.1 build, and all 454 explicit declaration audits have empty dependencies. Finite correspondence covers 1,008 operations with 35 reconstructed extraction endpoints disclosed; the earlier 2,033-snapshot native replay remains a separate verification layer."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/README.md",
+      "before_sha256": "abb23f2d62577487f4dc99b15be09732ef8d302d11cbd5e8ba4b341d4150546c",
+      "after_sha256": "807b4ad538d430bbbba4afe6564ce4f1d30e37f8512f62f87737e95d0b4fbef0",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Formal continuation accepted, 6 October 2026:** the [applicability proof package](applicability/formal/README.md) verifies the declared continuation law and all 65 saved histories, including its actual inherited boundary and adverse cases. It composes with the generative trace interface while preserving this acquisition as separately verified ancestry. The original learner and results remain unchanged."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/README.md",
+      "before_sha256": "609079c902183640ff2027e7c0e84cf61eb2f75add3382ca3191148ef3fd0fbe",
+      "after_sha256": "4749e7d90ab07f71d2db549a3b30008b83bfef126dd735844a8c32d6129e82ff",
+      "operation": "additive paragraph",
+      "anchor": "after first heading",
+      "fragment": "**Formal closure accepted, 6 October 2026:** the [Lean package](formal/README.md) supplies general declared-law proofs and kernel-checked correspondence for all 65 saved continuations. The combined build audits 454 explicit declarations with empty axiom dependencies. It preserves the distinction between actual source effects, acquired observations, committed correction and final retention, and states the finite projection and supplied-law limits explicitly."
+    }
+  ],
+  "validation_status": "accepted",
+  "formal_verification": {
+    "accepted": true,
+    "modules": 6,
+    "audited_explicit_declarations": 454,
+    "all_axiom_dependencies_empty": true,
+    "source_bindings_stable": 21,
+    "finite_histories": 65,
+    "totals": {
+      "native_snapshots": 2033,
+      "charges": 916,
+      "reconstructed_extractions": 35,
+      "projected_operations": 1008,
+      "observed_operation_states": 973
+    },
+    "source_and_log_and_projection_hashes_match": true
+  },
+  "checked_relative_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
+      "target": "ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-MATH.md",
+      "target": "ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md",
+      "target": "../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "experiments/README.md",
+      "target": "integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/README.md",
+      "target": "applicability/formal/README.md",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/README.md",
+      "target": "formal/README.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
+      "target": "ACQUIRED-APPLICABILITY-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "ACQUIRED-APPLICABILITY-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/runs/20261006T090706Z-1791277626988980000/receipt.json",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/check_correspondence.py",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "target": "ACQUIRED-APPLICABILITY-FORMAL-CHECKS.json",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "ACQUIRED-APPLICABILITY-REVIEW.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "ACQUIRED-APPLICABILITY-MATH.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/check_correspondence.py",
+      "exists": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/runs/20261006T090706Z-1791277626988980000/receipt.json",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "../../../../../../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "runs/20261006T090706Z-1791277626988980000/receipt.json",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "../../../../../../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "AcquiredApplicability.lean",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "ApplicabilityProofs.lean",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "ApplicabilityGrounding.lean",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "check_correspondence.py",
+      "exists": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md",
+      "target": "../../../../../../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "exists": true
+    }
+  ],
+  "current_document_hashes": {
+    "RESEARCH.md": "e149188aa872c5c9e00708de0206f008cbe0294ff6d41eb14cee03004c576141",
+    "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md": "099c5cd9765b6b89e598fb47d0938a331244e8587288b7e11dce5cf56188581a",
+    "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md": "0be4605c3fd429b4c3bf9486af368981db2ba42f835b12739068093467286f31",
+    "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md": "aef0417e351df44a41f1f840f05571c15481a8343e9a329a2516847dec4c724d",
+    "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md": "9fb08b26dfd954fc6a06b516153dac83f8e25ccbfbac74a5478a37f0cf5c8b0b",
+    "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-MATH.md": "0d91d079dc3626aee2da7fa2c1c54fbcac1fde1f73602863f351cea41a8bb8c6",
+    "experiments/README.md": "50f2c560f7aadd0506df1a14322e9af8d873401ca7d921bb2d40891894628a4d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/README.md": "807b4ad538d430bbbba4afe6564ce4f1d30e37f8512f62f87737e95d0b4fbef0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/README.md": "4749e7d90ab07f71d2db549a3b30008b83bfef126dd735844a8c32d6129e82ff",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md": "48cdeb2ebb45abbb8b6c16caf0a537bb4d022a65924e8b3fd3ff77466db4d43f",
+    "theories/shengsheng-buxi-generative-existence/README.md": "6642f65d7f5e2af925d403cfcb69b1027788606cec6997f63457eafd0f9ba7ea",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md": "99cb43b2cae47763ed34765f3d5b763df81fbe2b2b2782e81bed217711ebed8c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "8407c0f15629dfc8a98da25a04f86a622e06290da4a59ba19c485251e3e34ad1"
+  },
+  "formal_source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/PROTOCOL.md": "9dfe7dfe921789c78438bb9c9abf773a7cc6d59553a28acb91a75fc59ceb0536",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py": "c96ac67b60d589aef8284f3f1ba8d26b5aa3cdb489ef6ee1e07f728a7e5d35c9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/results.json": "a63cc7addc0b5e1d3fa19d3f6830f5747f3180c58f4d8188e30bfeeecf9fcb14",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/independent_check.py": "cc3ca0e9cf4bf99073e040ece98951bc03c5f119c12c3c6e2a3787f7f9c9f89f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/independent-check.json": "17102fa2c95984499c69355c6afea4ccbd0da90de459e4025a48d07cbf00c22d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean": "a84e67c727185f5f74a732bb5ce94ca1e2665c9cced82c78982e2a755686d0c8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean": "478bfcf788ab21f1c3f8773aabc89c5e93e0d5b253d4e00cc2611872f11ff2b9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean": "df24954110b1cf4fa3a7aff8db9c8d348720e5b4b5dae059912e0bd0bbcaa0cd",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/check_correspondence.py": "c605d6f67432fb967944627bfae066291c9bc35bd393eddc4e57d75ffec7c3f2"
+  },
+  "notes": [
+    "All existing-document edits are additive, recorded above; prior native reports and results are preserved.",
+    "The formal review was separately authored and accepted.",
+    "This receipt is an integration check, not an additional scientific run or a second proof-assistant build.",
+    "Document hashes record integration time; concurrent later changes need not invalidate the source-bound formal receipt."
+  ]
+}

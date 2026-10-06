@@ -1,0 +1,24 @@
+{
+  "scope": "owned documents and insertions; source preservation; no old scientific rerun",
+  "documents_or_owned_sections": 15,
+  "local_links": 59,
+  "anchors": 0,
+  "math_delimiters": "balanced",
+  "validated_saved_decisions": 1080,
+  "unchanged_source_bindings": 7,
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md": "b7a73d284a03220ab3aa860e6cc59c131fc066aafbe34cb46ce1468c445e339b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-MATH.md": "47a5c4180c8a431e79e8619d21397eed8c74c773b6d2126a628bfcc2f0b0266a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-REVIEW.md": "121ef89494b7d8fcbc820f90bc55ad30ecb56d8d3cca30b8f16fc383f987e2bc",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-SOURCES.md": "3b9820bbe1b661ca0bff84ac45572b097e1f9822f4e3fc2048ebc41001375b29",
+    "sources/15-codex-theory-conversations/2026-10-06-inquiry-and-mathematical-identity-continuation.md": "e395848cc450834a8f587d5c113cf66130e1e1534ee1d2dea8d2e9e5f244b2e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/README.md": "9bf39641e827d1104abf7226e18dee9ed36b2d0cec0e37c80f5707bacec6ea4b",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/PROTOCOL.md": "ef2df61885b58502d14ac7112e15c11fac1394f02cd19c70d853bbfffa3191ba",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-INDEX-EDITS.json": "2869a2ba75446e3647b498f3b59c6f285b6ebdbb4f8b01a4edb8ca3feb8ec1bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/results.json": "c89b2f775ad34312d9d5eb2b872a06b053aa18199dbdbcaad2a85a8bbb6b4cff",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/review-check.json": "dc279141d126aa4cb48ce12b70143e70f45cde4370945bce79de0b6a1f80d6d9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/check.py": "7a68aeaaf926a28066b2c82f696ca610d9498601fed6527310ea0791a09f2d00",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/review_check.py": "de65d416786bb4eb2f1689f57b4cc82f4aba3b94a40870840d4c5fd0b02f9bc8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-CHECK.py": "01007e739237c4f9d0e238fcf4cdab60e8db408ec76aa0a34ba021616815ca3f"
+  }
+}

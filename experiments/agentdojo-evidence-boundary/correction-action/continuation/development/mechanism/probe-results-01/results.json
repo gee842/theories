@@ -1,0 +1,197 @@
+{
+  "status": "pass",
+  "kind": "development probes, not learned participants",
+  "temporary_base": "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq",
+  "implementation_sha256": {
+    "broker.py": "48fbbd3ee666a534edb4877d930b68cc93ecf75cbd6955d24a58c0ec56da6f83",
+    "baseline.py": "b605991a1dfa365f65539f65f81404c7b6505864d7e4b27f2fe1b136938d1ecc",
+    "PROTOCOL.md": "a9db48eaaa401f52adbbe19fc9aee7e71f55174d5fd50607894f329b6f5d0692"
+  },
+  "checks": [
+    {
+      "name": "ordinary_retained",
+      "pass_": true,
+      "detail": {
+        "attempts": 7,
+        "current": {
+          "version": "v1",
+          "version_sha256": "6ccca8b9075be9a45a39498c58a3c0a608366a7699618ab3a60cdc18ca33c6d9",
+          "production_run": "r0002",
+          "verification_run": "r0003",
+          "publication_attempt": "a0005"
+        },
+        "declaration": {
+          "declaration": {
+            "diagnosis": "delivered failing v0 report",
+            "repair": "completed; produced, verified and published v1",
+            "explanation": "Delivered v0 report deliveries/r0001-diagnosis-v0.json with 335 mismatches. Its failure completes the requested diagnosis while the separately supported counterpart repair remains applicable. Actual producer run r0002 created v1; independent check r0003 passed and the local current pointer now names v1. Historical v0 remains preserved. Final note delivered."
+          }
+        }
+      }
+    },
+    {
+      "name": "ordinary_revoked",
+      "pass_": true,
+      "detail": {
+        "attempts": 3,
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "declaration": {
+          "declaration": {
+            "diagnosis": "delivered failing v0 report",
+            "repair": "unresolved; blocked by current authority",
+            "explanation": "Delivered v0 report deliveries/r0001-diagnosis-v0.json with 335 mismatches. Its failure completes the requested diagnosis while the separately supported counterpart repair remains applicable. The returned authority no longer grants the protected continuation. No staging, production or publication was requested. Final note delivered."
+          }
+        }
+      }
+    },
+    {
+      "name": "early_authorized_stage_not_broker_gated",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "complete_failed_diagnostic_delivers_then_revokes",
+      "pass_": true,
+      "detail": {
+        "goal_references": 288,
+        "requirements": 23,
+        "conditional_requirements": 24
+      }
+    },
+    {
+      "name": "historical_staging_receipt_current_authority",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "conflicting_id_rejected",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "new_protected_attempt_denied_after_revocation",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "previous_candidate_does_not_restore_execution",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate_json_key_rejected",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "malformed_request_has_no_inherited_id",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_id_v0_check_really_repeats",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "v0_check_does_not_verify_new_production",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "new_version_independent_pass",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "stale_predecessor_rejected",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "produced_verified_current_publication",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "early_abort_not_delivery_or_authority_trigger",
+      "pass_": true,
+      "detail": {
+        "run": "r0001",
+        "version": "v0",
+        "process": {
+          "path": "runs/r0001/process.json",
+          "sha256": "ef5c9cb6c8aeea9c875c4d11d261dfc326e33bebecb66a493c375272cca728c2",
+          "bytes": 2492
+        },
+        "returncode": 1,
+        "stdout": {
+          "path": "runs/r0001/stdout.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "stderr": {
+          "path": "runs/r0001/stderr.txt",
+          "sha256": "a5002cab8559ee63eb0f2a9be7a7d03fcfb6991cc0ae73016a045a2445267bdf",
+          "bytes": 1229
+        },
+        "complete": false,
+        "delivery": null,
+        "report_status": null,
+        "mismatch_count": null,
+        "mismatch_fields": null,
+        "mismatches_sample": null
+      }
+    },
+    {
+      "name": "event_chain_ordinary-retained",
+      "pass_": true,
+      "detail": {
+        "events": 29,
+        "head": "660945ba1c0b31eaeb437ff95516c7747662771dd92a6bd33704d5e0ace1e13c"
+      }
+    },
+    {
+      "name": "event_chain_ordinary-revoked",
+      "pass_": true,
+      "detail": {
+        "events": 13,
+        "head": "ab63516fd157aa2f909f554c8b28991db5c1b97c4d96e7bcbbf4957c6bb8fd98"
+      }
+    },
+    {
+      "name": "event_chain_revocation-and-retry",
+      "pass_": true,
+      "detail": {
+        "events": 31,
+        "head": "66577007c388d257d2e52bbb2360c1f7d14a0638bd946f3f2b21a5785e1fa0d3"
+      }
+    },
+    {
+      "name": "event_chain_publication-binding",
+      "pass_": true,
+      "detail": {
+        "events": 29,
+        "head": "2f86a77f73fc64f484b6b99db86e7d54c8bb88ca4764bd55d70f520ae3f0b703"
+      }
+    },
+    {
+      "name": "event_chain_early-checker-abort",
+      "pass_": true,
+      "detail": {
+        "events": 4,
+        "head": "67bdc5ca48943c6c4225a98fe7af16f94f688daaca253fcdd38423e032307c5a"
+      }
+    }
+  ],
+  "cases": [
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/ordinary-retained",
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/ordinary-revoked",
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/revocation-and-retry",
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/publication-binding",
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/early-checker-abort"
+  ]
+}

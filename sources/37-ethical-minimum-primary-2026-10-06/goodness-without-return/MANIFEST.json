@@ -1,0 +1,47 @@
+{
+  "access_date": "2026-10-06",
+  "record_created_at_utc": "2026-10-06T09:19:10+00:00",
+  "originals": [
+    {
+      "id": "liu-et-al-2015",
+      "authors": [
+        "Pei-Pei Liu",
+        "Vasiliy Safin",
+        "Barry Yang",
+        "Christian C. Luhmann"
+      ],
+      "title": "Direct and Indirect Influence of Altruistic Behavior in a Social Network",
+      "journal": "PLOS ONE",
+      "year": 2015,
+      "volume": "10",
+      "issue": "10",
+      "article_number": "e0140357",
+      "publication_date": "2015-10-15",
+      "doi": "10.1371/journal.pone.0140357",
+      "retrieval_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140357",
+      "effective_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140357",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "filename": "liu-et-al-2015-publisher.html",
+      "bytes": 228281,
+      "sha256": "4010cf58ed23d2a8fcc329afa6d9a29670c8c239b59a7e9e2cd9cb6961abf525",
+      "version": "Unmodified publisher full-text HTML response body after HTTP decompression; not a PDF facsimile. No markup or text normalization applied.",
+      "access_date": "2026-10-06",
+      "status": "original HTML bytes preserved",
+      "reading_scope": "Main Introduction (including The Current Study), Methods, Results and Discussion read through publisher HTML. Locators particularly inspected: Fig. 1; Methods > Tasks > Public goods game; Methods > Procedure; Results > Did Seed Node contributions affect Node-1 participants?; Results > Did Seed Node contributions affect Node-2 participants?; Fig. 2. Downloaded HTML checked for bibliographic metadata and matching procedural passages. Dataset, Appendix A and underlying cited studies not independently audited; no replication or reanalysis.",
+      "limits": [
+        "Seed and terminal node contributions were computer-generated; the two intermediate nodes were human participants.",
+        "The corresponding earlier human contribution was replayed to a later participant without simultaneous participation.",
+        "The second partner contribution was predetermined as 10 minus the first partner contribution.",
+        "The experiment does not establish actual donor sacrifice, increased net welfare, adaptive recipient-specific concern, or moral necessity."
+      ],
+      "license": "Creative Commons Attribution; publisher article states copyright 2015 Liu et al."
+    }
+  ],
+  "not_imported": [
+    "S1 Dataset",
+    "Appendix A as a separate artifact",
+    "Publisher PDF",
+    "Cited background sources"
+  ]
+}

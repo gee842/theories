@@ -1,0 +1,435 @@
+{
+  "date": "2026-10-06",
+  "scope": "Editorial preservation and relative-link checks; not scientific verification.",
+  "files": [
+    {
+      "path": "_process/research/2026-10-05-generative-health/ANSWER.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "88670b58170c9e3e95cf90559def66e1afec113d8ba36aed689c9b5e7bfe987d",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 11,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/ANSWER.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "f51da82f644f2f9700a777400d1bfcc264ee19544022e053687b970fe815f03c",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 11,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "9a07df69ebc12bd2cda7ed024562e626c3466dfec708e47e54ea477066358caa",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 11,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "96c82011c7356eb07ecfb8889b707ee9517a3ab486eba3132bc54167c0816ac0",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 13,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "40e28de5db1f7c0674aff920cc118850305559bcfef168f15f929872159e5395",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 10,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "ad2745b71f13715e5379699ee23d653b7ec9c758852f2a08d4c71bb755fc3e1e",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 41,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "ac417a4537f8c74270ed5c625ab8c641dabd98609cb552de7f09309c606360ab",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 9,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "a1880420dee703a5074cb0e771f298bb68bba95dcec051a2ab870c165056e7e3",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 38,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "f2688a5180fa3ce32fcda9330d38ea8ff9a8580e18f7854868c8b8cbeb9b4af8",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 38,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "5af6340d7518e6867278375934f88b50c31a51587a5ce03c286d7b01b399d888",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 33,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "7433f4bec310ec7cc9d9f465c2883ff92fc09e698732b24b486264fa94ca158a",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": false,
+      "documented_mermaid_label_only": true,
+      "local_links_checked": 65,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "3376d9af0c452171e143a383af1ce262058aa108a82defb535a460131343657a",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 73,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "7c2e48fead87be3e0c64688f47560d903b8db23ef390ee2e3dffb1fa74ab8a08",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 63,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 16,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "52eff825a042d5b179240351281c765caadf3a4366a0170094b984c790fe89be",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 280,
+      "new_link_problems": [
+        {
+          "link": "HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+          "issue": "unresolved anchor"
+        }
+      ],
+      "all_current_link_problems": [
+        {
+          "link": "HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+          "issue": "unresolved anchor"
+        }
+      ]
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "dfbaffa0d38e894f35eb55649138e710fa296b0de24642a11f728ac67db7f05b",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 47,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "c25cf6f2816e8702357407376b8195392b3ff0d4287687727b2acaa6137dbf61",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 52,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "85a3e2358ce587b85a8992a64b126996335b24a125717de20516cf75eb3b00cb",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 40,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "e38f8645aa2f90029f8abd86630325fe6a8c7e931a9efe9811964b804fb52b71",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 29,
+      "new_link_problems": [],
+      "all_current_link_problems": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "3d822e59229e0712527534a97c163d1915014e42feea4cd59898c765021e7407",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 304,
+      "new_link_problems": [
+        {
+          "link": "unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+          "issue": "unresolved anchor"
+        }
+      ],
+      "all_current_link_problems": [
+        {
+          "link": "unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+          "issue": "unresolved anchor"
+        }
+      ]
+    },
+    {
+      "path": "RESEARCH.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "bdc6589d2d11ba40419a0e02f64ce2483fa2dd2671256714dbba4aefcd79f5e4",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 438,
+      "new_link_problems": [
+        {
+          "link": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+          "issue": "unresolved anchor"
+        }
+      ],
+      "all_current_link_problems": [
+        {
+          "link": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        },
+        {
+          "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+          "issue": "unresolved anchor"
+        }
+      ]
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "snapshot_sha256_matches": true,
+      "current_sha256": "65b2b3bbaa9e8171da66b30ff9a468d8ebc63dcf3db2db378b4eb7406983bc09",
+      "display_math_unchanged": true,
+      "indented_formula_lines_unchanged": true,
+      "fenced_blocks_unchanged": true,
+      "documented_mermaid_label_only": false,
+      "local_links_checked": 312,
+      "new_link_problems": [
+        {
+          "link": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        }
+      ],
+      "all_current_link_problems": [
+        {
+          "link": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+          "issue": "unresolved anchor"
+        }
+      ]
+    }
+  ],
+  "supplemental_documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/wording-revision/README.md",
+      "local_links_checked": 10,
+      "problems": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-generative-language-revision.md",
+      "local_links_checked": 4,
+      "problems": []
+    }
+  ],
+  "prior_inspected_source_hashes_unchanged": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean": true,
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean": true,
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean": true,
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean": true,
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-RECONSTRUCTION.md": true
+  },
+  "diff_check_exit_code": 0,
+  "diff_check_output": "",
+  "scientific_rerun": false,
+  "passed": false,
+  "concurrent_link_observations": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "link": "HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "RESEARCH.md",
+      "link": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "RESEARCH.md",
+      "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "RESEARCH.md",
+      "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "link": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    }
+  ],
+  "editorial_scope_passed": true
+}

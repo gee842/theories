@@ -1,0 +1,3 @@
+Repaired the first-match proxy and regenerated results and receipt. Goal 1 now has 3 true, 5 false, and 24 ambiguous unknowns. Historical predicates, states, labels and coverage remained unchanged; repeat replay was byte-identical.
+
+[Analysis note](/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-local-maintenance-2i52at3z/k03/analysis-note.md)

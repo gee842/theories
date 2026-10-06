@@ -1,16 +1,32 @@
-'Generative.Realization.activity_changes_its_continuation_conditions' depends on axioms: [propext]
-'Generative.Realization.phase_determined_by_support_and_selector' depends on axioms: [propext]
-'Generative.Realization.restoration_guard' depends on axioms: [propext]
-'Generative.Realization.consequential_internal_revision' depends on axioms: [propext]
-'Generative.Realization.revision_guard_requires_depletion' depends on axioms: [propext]
-'Generative.Realization.restoration_requires_external_provision' depends on axioms: [propext]
-'Generative.Realization.reaches_renewable_state' depends on axioms: [propext]
-'Generative.Realization.nonempty_cycle' depends on axioms: [propext]
-'Generative.Realization.recurrent_execution' depends on axioms: [propext, Quot.sound]
-'Generative.Realization.reaches_terminal' depends on axioms: [propext]
-'Generative.Realization.terminal_has_no_action' depends on axioms: [propext]
-'Generative.Realization.no_continuation_after_loss' depends on axioms: [propext]
-'Generative.Realization.same_law_admits_renewal_and_loss' depends on axioms: [propext]
-'Generative.Realization.decoration_local_exact' depends on axioms: [propext]
-'Generative.Realization.decoration_trace_exact' depends on axioms: [propext]
-'Generative.Realization.support_alone_is_incomplete' depends on axioms: [propext]
+'_private.RootRealization.0.Generative.Realization.mod_go_fuel_congr' does not depend on any axioms
+'_private.RootRealization.0.Generative.Realization.modCore_eq' does not depend on any axioms
+'_private.RootRealization.0.Generative.Realization.modCore_eq_mod' does not depend on any axioms
+'_private.RootRealization.0.Generative.Realization.mod_eq' does not depend on any axioms
+'_private.RootRealization.0.Generative.Realization.mod_two_add_two' does not depend on any axioms
+'_private.RootRealization.0.Generative.Realization.parity_transition' does not depend on any axioms
+'Generative.Realization.activity_changes_its_continuation_conditions' does not depend on any axioms
+'Generative.Realization.phase_determined_by_support_and_selector' does not depend on any axioms
+'Generative.Realization.restoration_guard' does not depend on any axioms
+'Generative.Realization.consequential_internal_revision' does not depend on any axioms
+'Generative.Realization.revision_guard_requires_depletion' does not depend on any axioms
+'Generative.Realization.restoration_requires_external_provision' does not depend on any axioms
+'Generative.Realization.reaches_renewable_state' does not depend on any axioms
+'Generative.Realization.nonempty_cycle' does not depend on any axioms
+'Generative.Realization.recurrent_execution' does not depend on any axioms
+'Generative.Realization.reaches_terminal' does not depend on any axioms
+'Generative.Realization.terminal_has_no_action' does not depend on any axioms
+'Generative.Realization.no_continuation_after_loss' does not depend on any axioms
+'Generative.Realization.same_law_admits_renewal_and_loss' does not depend on any axioms
+'Generative.Realization.decoration_local_exact' does not depend on any axioms
+'Generative.Realization.decoration_trace_exact' does not depend on any axioms
+'Generative.Realization.support_alone_is_incomplete' does not depend on any axioms
+'Generative.Realization.use_initial' does not depend on any axioms
+'Generative.Realization.no_use_depleted' does not depend on any axioms
+'Generative.Realization.no_restore_depleted' does not depend on any axioms
+'Generative.Realization.supported' does not depend on any axioms
+'Generative.Realization.law' does not depend on any axioms
+'Generative.Realization.process' does not depend on any axioms
+'Generative.Realization.selector' does not depend on any axioms
+'Generative.Realization.cycleState' does not depend on any axioms
+'Generative.Realization.cycleEvent' does not depend on any axioms
+'Generative.Realization.decoratedProcess' does not depend on any axioms

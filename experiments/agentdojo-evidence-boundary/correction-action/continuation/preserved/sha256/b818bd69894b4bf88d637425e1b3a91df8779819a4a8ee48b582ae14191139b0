@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "attempt_id": "a0010",
+  "request_id": "audit-w02-010",
+  "operation": "read",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "artifact": {
+      "path": "versions/v0/tree/experiments/agentdojo-evidence-boundary/replay-receipt.json",
+      "sha256": "d85f375f140a89ea672fb930f4739766b6862f81911902ad2f00ed791606fd9b",
+      "bytes": 1015
+    },
+    "offset": 0,
+    "next_offset": null,
+    "data_base64": "ewogICJzdGF0dXMiOiAiY29tcGxldGVkX2xvY2FsX2RhdGFfcmVwbGF5IiwKICAiY29kZV9zaGEyNTYiOiAiZTMwNGU2ZWE1Yjg5YTg0NWJmMjg2OGI5MzFiZDk5ZGYxOWMzNWZkNTcyM2VkMzM0NzgyYmJjZDhjYjViMzFmNyIsCiAgImNvbnRyYWN0X2hhc2hlcyI6IHsKICAgICJSRVBMQVktQ09OVFJBQ1QubWQiOiAiZmUxY2RkODlmOGJhYjRmN2U4ZDk5NzMyZDY1OTQ5NDJmZmY5ZGE5YWM4YjQ0ZTJkMDQzZjc1Mjk2ODE0YTI4YyIsCiAgICAiUkVQTEFZLVNPVVJDRS1DTEFSSUZJQ0FUSU9OUy5tZCI6ICI0YzIwYzhmOTRlYTM0ZTg3MDYxNGM5OTAzNTA5N2Y2NTQ5MjNlZDVkYTJkZTE0NmVjMmVhNDEzMWYxODQ2ZTA2IiwKICAgICJSRVBMQVktTE9BREVSLUNPUlJFQ1RJT04ubWQiOiAiZmQ1YzFlOWQ1YWJjMjM2NDkyNzAxNWYyNTM0NTNhYzgwODE4M2E3ZDdjYTc0Y2JjNmI1Yjg4MGFmZjY4NGMwMyIKICB9LAogICJyZXN1bHRfc2hhMjU2IjogImJlNjVkOTMyMGJjZDc1YWRlNDc0NjI1OWM1YjNiY2Y3MzEyYzRkNDk1NTI1NDNkNTA3YzhmZWUzYThmYzU1ZDQiLAogICJzb3VyY2VfZmlsZXMiOiAzNDYsCiAgInRyYWplY3RvcmllcyI6IDMyMCwKICAic291cmNlX21hbmlmZXN0X3NoYTI1NiI6ICJlNDM2NGMyN2RmYjVmMzQ1ZGM2MjNjZWNhMzI0MmY5YzY2ZTQ0NWFlNjE0NTAwMWI3NWJjMWZkYTI0YWUwYTQ0IiwKICAiaGlzdG9yaWNhbF9tYW5pZmVzdF9zaGEyNTYiOiAiMmYwMjkxMjZkMzNiYzQ0YzFlYWEzYWZmYmZmYjEzMDZmMzMxMTFhZmZmOWM0YjBkOTY1ZWJjMzdmM2UxZGI4ZSIsCiAgInJlcGxheV9jb21wbGV0ZSI6IDMxNSwKICAiZ29hbF9zdGF0ZV9jb21wbGV0ZSI6IDMxNSwKICAiY2FsbHMiOiB7CiAgICAicmVhZF9tYXRjaGVkIjogNDgzLAogICAgIm11dGF0aW9uX3JlY29uc3RydWN0ZWQiOiA0ODAsCiAgICAicmVjb3JkZWRfZXJyb3Jfbm9fc3VjY2Vzc2Z1bF9lZmZlY3QiOiA0CiAgfSwKICAiaXNzdWVzIjogewogICAgIm1pc3NpbmdfcmVzcG9uc2UiOiA1CiAgfQp9Cg==",
+    "text": "{\n  \"status\": \"completed_local_data_replay\",\n  \"code_sha256\": \"e304e6ea5b89a845bf2868b931bd99df19c35fd5723ed334782bbcd8cb5b31f7\",\n  \"contract_hashes\": {\n    \"REPLAY-CONTRACT.md\": \"fe1cdd89f8bab4f7e8d99732d6594942fff9da9ac8b44e2d043f75296814a28c\",\n    \"REPLAY-SOURCE-CLARIFICATIONS.md\": \"4c20c8f94ea34e870614c99035097f654923ed5da2de146ec2ea4131f1846e06\",\n    \"REPLAY-LOADER-CORRECTION.md\": \"fd5c1e9d5abc2364927015f253453ac808183a7d7ca74cbc6b5b880aff684c03\"\n  },\n  \"result_sha256\": \"be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4\",\n  \"source_files\": 346,\n  \"trajectories\": 320,\n  \"source_manifest_sha256\": \"e4364c27dfb5f345dc623ceca3242f9c66e445ae6145001b75bc1fda24ae0a44\",\n  \"historical_manifest_sha256\": \"2f029126d33bc44c1eaa3affbffb1306f33111afff9c4b0d965ebc37f3e1db8e\",\n  \"replay_complete\": 315,\n  \"goal_state_complete\": 315,\n  \"calls\": {\n    \"read_matched\": 483,\n    \"mutation_reconstructed\": 480,\n    \"recorded_error_no_successful_effect\": 4\n  },\n  \"issues\": {\n    \"missing_response\": 5\n  }\n}\n"
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v1",
+    "version_sha256": "6ccca8b9075be9a45a39498c58a3c0a608366a7699618ab3a60cdc18ca33c6d9",
+    "production_run": "r0002",
+    "verification_run": "r0003",
+    "publication_attempt": "a0007"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

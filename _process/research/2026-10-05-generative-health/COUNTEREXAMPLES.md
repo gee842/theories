@@ -1,5 +1,7 @@
 # What generative health must survive
 
+**Nondual reading clarification, 6 October 2026:** the [current reconstruction](succession/RECIPIENT-CONTINUATION.md) preserves all counterexamples below. Claims that renewal does not establish normative commitments concern the stated renewal-only premises. They are not an impossibility result for explaining significance within generative activity. The new correspondence test distinguishes actual support for a recipient activity from a resource score and from a justified overall health judgment.
+
 Adversarial research memo, 5 October 2026. Prepared in response to the question of what sustains the conditions of further becoming while its forms change. This memo tests the proposed answer, “renewal of the capacity to become, including the capacity to change renewal.” Its examples are constructed witnesses, not empirical findings. It makes no claim of mathematical priority.
 
 ## Finding

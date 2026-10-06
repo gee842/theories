@@ -1,0 +1,29 @@
+{
+  "purpose": "Historical verification evidence before extending default check.py; restore paths relative to original Lean root for reproduction, not an independent implementation.",
+  "files": {
+    "check.py": {
+      "original_path": "experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "sha256": "5008b129bb0c708fced81177396882cf6c1df39a485a6aaffc90c8f623cf2f83"
+    },
+    "verification.json": {
+      "original_path": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "sha256": "9833027efb866fcf88273e840ae806a70970293afd8f6ec559d23b14912c97a2"
+    },
+    "verification/BoundaryModels.txt": {
+      "original_path": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    "verification/Depletion.txt": {
+      "original_path": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/Depletion.txt",
+      "sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    "verification/GenerativeCore.txt": {
+      "original_path": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    "verification/RootRealization.txt": {
+      "original_path": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/RootRealization.txt",
+      "sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    }
+  }
+}

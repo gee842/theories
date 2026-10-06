@@ -1,0 +1,80 @@
+{
+  "scope": "Targeted additive receipt-interpretation integration; concurrent branches retained. Each row records its immediate mutation, so repeated file rows are sequential.",
+  "files": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "b943862831a21e89a2b83ecff00dd9c3c4c8090fbd097c571cc5ca3420ed2153",
+      "after_sha256": "8514703c372d1e668629fedbf237db0e223e2c9ff44e7762f53375e263413932"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "187755c6bc64e9a0366e3dfcc356a36b0bb7de26f8579e9504f8dd843828c8ef",
+      "after_sha256": "540050e24aadcb2feb0fcdc47239a7ef8eced32739fe2eb0943a887c5ea102db"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "8be684e13fed2eb4e5b6b7487584582d6806a22d871d9a0a097cf870028428e9",
+      "after_sha256": "f6df44cc450f2457f0e1507d6dd2a3935fcc72da2161ee716b6e78d4477285da"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "before_sha256": "32217b1e43b115d088ad60a8ff7b60e56b2a7fd2ae2a32102ba42cd518a49ce4",
+      "after_sha256": "f26870bce1e36a7f1e336446fca357d599808fc8d47bc9dc16c202189f3aea0d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "before_sha256": "81d6ea1f839aadf062835c9c8270f8726332ccf88e47ee4f81a93164a884798e",
+      "after_sha256": "ec57044bcc26d0601d5c24acf61dd8a72d751dfab0979c09b25d5f1215bac397"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "before_sha256": "ec57044bcc26d0601d5c24acf61dd8a72d751dfab0979c09b25d5f1215bac397",
+      "after_sha256": "478d2b1687e724cc55fde41f8c82747394a85fab37209a184513714e239a4586"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/README.md",
+      "before_sha256": "4cd0abbd36dc8216693eb223c026c0bed044d7dcb7cf33de13e5e309210f14df",
+      "after_sha256": "543dfb7276725bbc6ed8dc0037b70d8a7e747b65716d8fd7ed1b0b80cf92a201"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "before_sha256": "1f7b22519b049e6b501119e35645d0cd8571f8e077afbd62569a01286e79b588",
+      "after_sha256": "66b4a0e651995cb085d04018e800d6a740dcf305e7f20df12f4289816aa3e210"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "63a580ba37b78ef3eb807e90eec7be5d9d3ce9b7ff63d4db2b9b932afd3c56e3",
+      "after_sha256": "e3392e70e586fc4190c6b6445f7f254403512ecd8fd10cbb2fb56b0b39f0b9f0"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+      "before_sha256": "304aabdd9601ed15c1b19cf671d7db293ef84af98994250aeef740a0163641af",
+      "after_sha256": "3798de9d99006645128ae64f25d458dbfb55d28818ccd5e6b06ac3f23fb7fd88"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "before_sha256": "fb9466e5657a216fa7bda12a204faef8232531dba5c0a57976ac70a83e632035",
+      "after_sha256": "ca916297dfbc9c066fe131861bb6b2ebe9dd19a2926aba8d74b3e559fb5fec89"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "before_sha256": "48c2031d757dbdf3d7da9bbf8551ca91959b02440c6834254717771ac9aad818",
+      "after_sha256": "ed8ec2c572d035a6dff6c3c17e8e0fe9d1fbabf956a2c0fff54e5ecce6880c97"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md",
+      "before_sha256": "f349d96c187e2215d1795d02fe1098c63d9e62f075f7e27613e0ebc549a72145",
+      "after_sha256": "336ffe8b5a888e9a6f4e3d9b3be021ebc13f4bac3411577ef225760d26f3e527"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-INTEGRATION.md",
+      "before_sha256": "dde18b61e0e0424b90a80adf4a969942ad16bc53fd57966f2e8c446a61cb7b11",
+      "after_sha256": "343ec14188be6ee3486ee76af0e827e552b6c6582eb174de338be0568928cab3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/README.md",
+      "before_sha256": "543dfb7276725bbc6ed8dc0037b70d8a7e747b65716d8fd7ed1b0b80cf92a201",
+      "after_sha256": "cd13036d13651509e54e0d55a78e8f53ab6a0f7ca84792b26a4520e8b7459ccd"
+    }
+  ]
+}

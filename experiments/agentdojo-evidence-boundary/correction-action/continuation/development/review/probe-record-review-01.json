@@ -1,0 +1,318 @@
+{
+  "status": "pass",
+  "scope": "Read-only reconstruction of preserved development records, not new process execution or learned-agent outcomes.",
+  "script_sha256": "e57075908399c1ba646d8c1d25ab2b1680e87cfb46380d88c9c387b94d5ca456",
+  "producer_probe_summary_sha256": "daa3b1b6038e9dd8312148310b034e1e0aafca04f5513c42a2a2d522247403d6",
+  "checked_preserved_files": 209,
+  "cases": [
+    {
+      "case": "early-checker-abort",
+      "events": 4,
+      "attempts": [
+        {
+          "attempt": "a0001",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 0
+        }
+      ],
+      "head": "67bdc5ca48943c6c4225a98fe7af16f94f688daaca253fcdd38423e032307c5a",
+      "final_current": {
+        "version": "v0",
+        "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+      },
+      "preservation_sha256": "6a90220940d8cab992f0a290458122858e538a3ae185029368ce312eb68cf887"
+    },
+    {
+      "case": "ordinary-retained",
+      "events": 29,
+      "attempts": [
+        {
+          "attempt": "a0001",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0002",
+          "operation": "stage",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0003",
+          "operation": "replay",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0004",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0005",
+          "operation": "publish",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0006",
+          "operation": "note",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0007",
+          "operation": "finish",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        }
+      ],
+      "head": "660945ba1c0b31eaeb437ff95516c7747662771dd92a6bd33704d5e0ace1e13c",
+      "final_current": {
+        "version": "v1",
+        "version_sha256": "6ccca8b9075be9a45a39498c58a3c0a608366a7699618ab3a60cdc18ca33c6d9",
+        "production_run": "r0002",
+        "verification_run": "r0003",
+        "publication_attempt": "a0005"
+      },
+      "preservation_sha256": "3512d08b50ed5f5197b5409291bf6fdc38a775b90be979f9481fea870d97cc7e"
+    },
+    {
+      "case": "ordinary-revoked",
+      "events": 13,
+      "attempts": [
+        {
+          "attempt": "a0001",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0002",
+          "operation": "note",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0003",
+          "operation": "finish",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        }
+      ],
+      "head": "ab63516fd157aa2f909f554c8b28991db5c1b97c4d96e7bcbbf4957c6bb8fd98",
+      "final_current": {
+        "version": "v0",
+        "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+      },
+      "preservation_sha256": "e9cbc31f39fffd935e4902b549a9b6c4129d3bdc32a423d39ef0ed5f7978cd2a"
+    },
+    {
+      "case": "publication-binding",
+      "events": 29,
+      "attempts": [
+        {
+          "attempt": "a0001",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0002",
+          "operation": "stage",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0003",
+          "operation": "replay",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0004",
+          "operation": "publish",
+          "status": "rejected",
+          "cached": false,
+          "admitted": true,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0005",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0006",
+          "operation": "publish",
+          "status": "rejected",
+          "cached": false,
+          "admitted": true,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0007",
+          "operation": "publish",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        }
+      ],
+      "head": "2f86a77f73fc64f484b6b99db86e7d54c8bb88ca4764bd55d70f520ae3f0b703",
+      "final_current": {
+        "version": "v1",
+        "version_sha256": "6ccca8b9075be9a45a39498c58a3c0a608366a7699618ab3a60cdc18ca33c6d9",
+        "production_run": "r0002",
+        "verification_run": "r0003",
+        "publication_attempt": "a0007"
+      },
+      "preservation_sha256": "9509fef820f2a0097bd382e4d1975ea9baa810cbd274c94b009c7d018748589b"
+    },
+    {
+      "case": "revocation-and-retry",
+      "events": 31,
+      "attempts": [
+        {
+          "attempt": "a0001",
+          "operation": "stage",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 0
+        },
+        {
+          "attempt": "a0002",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0003",
+          "operation": "stage",
+          "status": "ok",
+          "cached": true,
+          "admitted": false,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0004",
+          "operation": "read_authority",
+          "status": "rejected",
+          "cached": false,
+          "admitted": false,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0005",
+          "operation": "stage",
+          "status": "rejected",
+          "cached": false,
+          "admitted": false,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0006",
+          "operation": "replay",
+          "status": "rejected",
+          "cached": false,
+          "admitted": false,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0007",
+          "operation": null,
+          "status": "rejected",
+          "cached": false,
+          "admitted": false,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0008",
+          "operation": null,
+          "status": "rejected",
+          "cached": false,
+          "admitted": false,
+          "settled": false,
+          "authority_epoch_on_response": 1
+        },
+        {
+          "attempt": "a0009",
+          "operation": "check",
+          "status": "ok",
+          "cached": false,
+          "admitted": true,
+          "settled": true,
+          "authority_epoch_on_response": 1
+        }
+      ],
+      "head": "66577007c388d257d2e52bbb2360c1f7d14a0638bd946f3f2b21a5785e1fa0d3",
+      "final_current": {
+        "version": "v0",
+        "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+      },
+      "preservation_sha256": "58f75b938a3d628d51cb6c583af7c3733cd8990746b2f9e5a5cc766999727bad"
+    }
+  ]
+}

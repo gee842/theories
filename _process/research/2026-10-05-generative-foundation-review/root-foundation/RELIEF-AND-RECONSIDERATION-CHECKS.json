@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "scope": "Owned integration fragments, local links and preservation hashes only; no scientific or ethical verification.",
+  "owned_fragments": 10,
+  "recovered_files": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": true,
+    "RESEARCH.md": true,
+    "theories/shengsheng-buxi-generative-existence/README.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": true,
+    "sources/SOURCES.md": true
+  },
+  "local_link_targets": 74,
+  "imported_source_hashes": {
+    "khader-2012-adaptive-preferences-agency-author-manuscript.pdf": "f142c4239885e08fdb86ade11ac9ecfabd26f348d44e8be54028e465a1d0f925",
+    "holton-2004-rational-resolve-author-manuscript.pdf": "e8431e57179e8281744214ddc87b4bd572fd03c7dade860f4ac52abd4f6ffbcf"
+  },
+  "cited_code_hashes_at_check": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean": "fc0da7cc442847e0f58518a5885db53b7ca03a1b2a8651231929ef5963e24468",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py": "f2bcc85688975d9a6e6fac4c0944e5b4f6ce0ede779707719c41428db3a4d303",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean": "cd55efb6dbe9d6bb145d9c46efec6f53e9d4b1cafcca4bb1fbe1f31be0367cbb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean": "4f4c9ca03bb48a93e9b124d998683b9066cae3f6e7d62d6600425fd51da103e6",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean": "e3eb6b0448554a9daa897e056a778f99ad7a08b7817ccbe842e9260ced323e0a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+  },
+  "documents": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-REVIEW.md": "cfaa6dc374d58567ed489ccea648efa82d6680357a88f50bcbe19207575cd767",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-MECHANISM.md": "0a92d82270f0dc063e443e17993adb5a35ac3779b8fb8916d2040eae900165ce",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md": "80e1f5e9e78376ca21aa981732396314828460e1d95e40958da4c2e947f494d1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-REOPENED-EVALUATION.md": "e473d93c8f9a2fdd6df50d8246ecc5da597da252fb3a9576da8fec31f77d4d46",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-SOURCES.md": "48ab322119aa053c8ab0c18e9e8a4c68609e730ba32d920dcdae238110e6b251",
+    "sources/37-ethical-minimum-primary-2026-10-06/relief-reconsideration/README.md": "b5d877b3334150f1ea77bb952140199a1cee4c844e8906e0d966392159e632e7"
+  },
+  "checker_sha256": "e40a9486ef4175654882788b3e7083f26d3a579d49e14d6c68d992a6d2d32cd9",
+  "new_lean_declarations": 0,
+  "new_empirical_runs": 0,
+  "assumption_free_foundation_established": false
+}

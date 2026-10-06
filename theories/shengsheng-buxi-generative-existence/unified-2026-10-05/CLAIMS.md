@@ -1,6 +1,26 @@
 # Claim register for the unified theory
 
+**Attainable-question formal continuation:** [the integrated proof](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) establishes constructive coarsening, shared-policy combination, a no-attainable-common-upper obstruction and conditional continuation through actual leaves. The one-packet criterion is exact for arbitrary finite adaptive inquiries at its permissive fixed-target interface. The fresh public closure passes 307 empty audits; 60 saved comparison decisions agree. Full native correspondence, physically retained decoding, criterion formation and ethical warrant are not supplied by this result.
+
 5 October 2026; later-study status reconciled 6 October 2026. “Proved” below always means under the displayed assumptions of the cited result: the [formal core](FORMAL-CORE.md), [formation proofs](FORMATION-MATH.md), [joint-formation proofs](JOINT-FORMATION-MATH.md), or the separate formal and ethical results linked by the [revisable-concern settlement](REVISABLE-CONCERN-SETTLEMENT.md). Finite checks and numerical illustrations are additional verification, not a replacement for proofs. Reviews were performed by collaborating AI agents, not independent human peer review.
+
+## Recent differentiated results, 6 October 2026
+
+This supplement retains the scopes of the newer connected studies. It does not sum overlapping proof closures or identify their separate histories.
+
+| Claim | Established scope | Remaining condition or limit |
+|---|---|---|
+| Consequence-dependent method selection changes actual native inquiry duration | Existing matched H3 traces, reconstructed in [METHOD-REVISION](METHOD-REVISION.md#what-subsequent-inquiry-actually-changes) | Misleading input can cause unnecessary inquiry; generator recipes and the all-future identification rule remain supplied. |
+| A truthful inquiry can change whether retained candidates agree about the next event | Exact existing-prefix calculation and [conditional common-response composition](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md) | Relative to the declared continuation and horizon; one-step agreement does not discharge the stronger original model-acquisition task. |
+| Pairwise distinguishing experiments need not combine into one identifying inquiry | [Native-law reconstruction, hand proof and finite checks](INQUIRY-AND-MATHEMATICAL-IDENTITY.md) | Initial labels, actual successor configurations and consumed source must remain represented; positive relaxed policies are not installed learners. |
+| Retained occupied structures determine net depletion before further teaching | [Pretraining-evidence proof](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md), integrated in the 60-module entry | Completed faithful prefixes under the given law; exact analytical readout does not itself install a reader or establish the ethical meaning. |
+| Joint occurrences retain intermediate changes omitted by a chosen endpoint summary | [Coformation account and concrete Lean instances](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) | Not experiential realization, an internally acquired occurrence record or universal ethical necessity. |
+| Warranted suspension can preserve an outstanding repair claim | [Completed conditional application](EVALUATIVE-APPLICATION.md#completing-the-application-when-the-protocol-obstructs-repair) | Actual authority, alternatives and effects matter; suspension is not repair or a learner-selected suspension mechanism. |
+| A permissible reopening offer can have a patient-directed ground without prior responsibility | [Relief and reconsideration](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md) | Independently warranted concern and the defended constitutive ground remain substantive; persistence, delegation and self-binding are controls. Universal necessity is not proved. |
+
+The separate [inquiry-revision extension](INQUIRY-REVISION.md) reports its current executable and formal acceptance status. It adds explicit read/rewrite laws to the actual continuing learner. Its positive evidence-dependent revision must be credited at that scope, without converting its installed trigger, calibration or mandate into a premise-free derivation.
+
+## Earlier synthesis and subsequent mechanism ledger
 
 | Claim | Status | Conditions and limit | Location |
 |---|---|---|---|
@@ -79,6 +99,23 @@ These entries connect the later studies to the original register above. A genera
 | Cross-domain evidence supports the whole acquired-concern lineage or a universal favorable tendency | **Not established.** [Identification audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md), [recipient-harm analysis](RECIPIENT-HARM-AND-ACTION.md) and [reward-learning analysis](REWARD-LEARNING-AND-RECIPIENT-CHOICE.md) support or constrain particular interfaces | Outcome meanings and identification differ across studies. The reward-learning primary contrast is uncertain, and choices alone can leave value/expectancy explanations indistinguishable. Exact conventional equivalence precludes an algorithmic-superiority claim from those same comparisons |
 
 The [current completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate) accepts the conditional candidate against the [five fixed conditions](GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). It connects organization, learning, concern and bounded wisdom while explaining failure and exclusion, with supplied laws, defended normative premises and empirical limits explicit. This is an assessment of explanatory adequacy supported by the listed results, not one Lean theorem proving universal reality. Unsupported stronger empirical or application claims remain unestablished; dropping a central derivation would not be an acceptable way to complete the objective.
+
+## V7.3 mechanisms explicitly integrated, 6 October 2026
+
+The [generative selection chapter](GENERATIVE-SELECTION.md) makes the source mechanisms part of the common explanatory account. These rows inherit their original theorem or model scope; this integration adds no scientific run or kernel-checked result. The [mechanism audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md) gives the precise equations and counterexamples.
+
+| Integrated claim | Inherited status and source | Conditions and limit |
+|---|---|---|
+| A shared support benefit can be invisible to relative selection | V7.3 Lemmas 3.3 and 3.11; explicit relation to current shared-return and market results | Additive identical benefit, relative invariance and stated carrier comparisons; absolute survival, unequal exposure and correlated advantages remain distinct |
+| Effective priorities can narrow with held concern and accurate understanding unchanged | V7.3 Proposition 3.9 and Remark 3.10 | Local symmetric deterministic continuation, fixed opponents and finite differentiable discounted returns; reverse return inequality can widen priorities; no general concentration, strategic-equilibrium or ethical inference |
+| Several selection domains can maintain or undo corrective independence | V7.3 §4 and S4, with S16's bounded host/capture join | Specified conversion/correction laws and initial states; row-sum recovery is not transient safety; concentration alone does not establish capture; paid discrete market dynamics remains a distinct realization |
+| Delegation can erode competence needed for safe reversal | V7.3 Lemma 6.3 and its correction interface | Supplied disuse/recovery law and safe floor; maintained competence or available recovery can prevent permanent loss; authority and competence are distinct |
+| Relative objectives can reduce informative communication | V7.3 Proposition 5.16 | Specified cheap-talk game and utility conditions; verified channels and costly signals require separate analysis; two-player boundary is payoff-equivalence to no talk, not a ban on messages |
+| Lasting reform can require sufficient duration, recruitable alternatives and a funded safe path | V7.3 S11.4 and S17.1; relation to current paid market recovery | Slow-state law, available alternatives, executable durable intervention, liability and continuing resources; failed sufficient certificate does not prove impossible reform |
+| All six mechanisms are now one proved or empirically identified process | **Not established** | The synthesis maps interfaces and existing overlaps; shared notation cannot compose continuous fields, strategic equilibria and material histories |
+| Their integration derives universal ethical necessity or the V7.3 policy package | **Not established** | Patient-grounded reasons, legitimate authority, empirical diagnosis and practical comparisons retain separate justification |
+
+The requested explanatory integration is complete at this scope. The next causal connection is actual acquired evaluation under identified continuation/retention incentives, with resources, factual knowledge, recipients and correction preserved. The stronger patient-to-independent-actor grounding remains a separate active research objective.
 
 ## How the theory can be challenged
 

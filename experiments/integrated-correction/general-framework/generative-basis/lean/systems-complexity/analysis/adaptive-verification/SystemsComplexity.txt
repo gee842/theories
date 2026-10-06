@@ -1,0 +1,4 @@
+'SystemsComplexity.iterate_generative_trace' depends on axioms: [propext]
+'SystemsComplexity.binary_shift_trace' depends on axioms: [propext]
+'SystemsComplexity.delayed_eq_iterate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.delayed_feedback_trace' depends on axioms: [propext, Classical.choice, Quot.sound]

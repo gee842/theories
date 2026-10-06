@@ -1,0 +1,1 @@
+subprocess.TimeoutExpired: Lean InitiationFixtures.lean exceeded the subprocess.run timeout of 300 seconds. The original runner did not catch this exception. The tool output preserved this exception, but partial fixture stdout was not serialized and is unavailable. Five preceding module logs were written and passed; no success receipt was written.

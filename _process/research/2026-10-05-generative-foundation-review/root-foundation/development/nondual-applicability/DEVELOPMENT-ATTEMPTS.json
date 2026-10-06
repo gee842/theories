@@ -1,0 +1,55 @@
+{
+  "scope": "Original laws unchanged. Repair attempt01 failed namespace resolution;02 passes16 audits. Projection01 passed with unused simplification warning;02 passes11 audits cleanly. No new runtime or empirical experiment.",
+  "sources": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean",
+      "sha256": "594528f984e6bbbbfe181b52a3a70c0393f3302b665bb34b7da09498e86da1a8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean",
+      "sha256": "f10ddbf697ca7af3984ae3633b5ea98c67a5c100ca40b3b239a2c1a4bde1d102"
+    }
+  ],
+  "files": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/projection-attempt-01.lean",
+      "sha256": "a7ad12a391c7f55a61ee7049c664d5784ead11aeb9ba2ad75f15a4927464cfd4",
+      "bytes": 7168
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/projection-attempt-01.log",
+      "sha256": "d5b29770541fb62cb760b9f90e00b471b162c07f5dff4c87a391441b73dc6b59",
+      "bytes": 1582
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/projection-attempt-02.lean",
+      "sha256": "f10ddbf697ca7af3984ae3633b5ea98c67a5c100ca40b3b239a2c1a4bde1d102",
+      "bytes": 7149
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/projection-attempt-02.log",
+      "sha256": "0edebbbca34e6d5142a69047c6141a47d51c267be4a7a92f816792c1445f96f8",
+      "bytes": 1219
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/repair-attempt-01.lean",
+      "sha256": "7cc7deee33ec337ab047de35aca5e907676fb351a329de7bfa5926afaa3f3379",
+      "bytes": 9951
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/repair-attempt-01.log",
+      "sha256": "70eccf8d04c5fc1c1b0a7e1edc0f38e27fcdef5a9571aa2bb5f0ba43954c9509",
+      "bytes": 10432
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/repair-attempt-02.lean",
+      "sha256": "594528f984e6bbbbfe181b52a3a70c0393f3302b665bb34b7da09498e86da1a8",
+      "bytes": 10289
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/repair-attempt-02.log",
+      "sha256": "214856934ab29bc8ae28a63fd09960162d64f2de514da8d461e4bbf12707c488",
+      "bytes": 1590
+    }
+  ]
+}

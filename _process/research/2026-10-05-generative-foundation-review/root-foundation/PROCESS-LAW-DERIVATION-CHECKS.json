@@ -1,0 +1,888 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T13:03:25.483635+00:00",
+  "scope": "Saved proof/evidence and owned document reconciliation only; no Lean or scientific rerun.",
+  "modules": 32,
+  "audits": 599,
+  "new_audits": 190,
+  "new_declarations": {
+    "theorem": 146,
+    "def": 36,
+    "abbrev": 1,
+    "inductive": 6,
+    "structure": 1
+  },
+  "all_audited_dependencies_empty": true,
+  "all_previous409_audits_retained": true,
+  "native_original_command_cases": 5928,
+  "native_evidence_files": 12,
+  "prior_evidence_files": 16,
+  "owned_fragments": 9,
+  "owned_files": 9,
+  "links_checked": 42,
+  "hash_comparisons": 169,
+  "compiler_hash_verified": true,
+  "assumption_free_foundation_established": false,
+  "checker_sha256": "0b2bb7b8061c79c47ceb2271a82fa58dc6ae33eb2d9adafa137f7c053987d576",
+  "document_hashes_at_check": {
+    "RESEARCH.md": "be62221b63c63cb28e0207b492ff6c03dec00aa30e59c1016549b97974b85793",
+    "theories/shengsheng-buxi-generative-existence/README.md": "aa5aa5e2b2eab4eff178fab50184248dd6856cf43d0337349e12a8330f65b1d4",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "757584a443cd6e58e530cd5c8dee810ce1a0da30f3a662feed958721d6ebf745",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md": "11f0a1e2593a0a11e8d939c7f7e7d473bd126f6c7eec508eb815c670078026f9",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md": "75ab09f6e499f3fd06d57382c5b0403c2f718e0d7cb6940f786b1337f5f4104d",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md": "afe83d8b5fdccf45a9fbaf2b395fa6d2d1390bde5d81a0b8d4cf2434778c46ff",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "8c2c32b405fc1b88e41f3c83c1b173b5af95a84d453dd66e856fa9756017c1b9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/README.md": "9749308bc1e95881ce8abc092be68627670578e96ab3e1235d697294a75b7eae",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md": "9df96f86a2d43e53c4d06972c0135920d256ae5e875af55601478963548645a9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md": "b8805712d47f9e8933116022ec062a82e16db27b79756af72631dc9d33659395",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md": "670c583918568b8ec215b6475536e8ac68c952528873f21cdb85913c614c8bd0"
+  },
+  "hashes": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json",
+      "sha256": "2dd47104443f4eb3495f6336438a3ca8a3171eab5c67a69379588a1d581a37a0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/receipt.json",
+      "sha256": "2dd47104443f4eb3495f6336438a3ca8a3171eab5c67a69379588a1d581a37a0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_process_law.py",
+      "sha256": "1634780b1bc3322ed5746cb4da28b54912dfb80b131f75ab0504a9b07643b959"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_native_packet_correspondence.py",
+      "sha256": "d828746ea9ef506679f2ae786a0a748ce817300dcbd5104ba8c762f907e033ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/native-packet-inputs.json",
+      "sha256": "64f657e1605f1266f03453bd592e9896e8d7664c20503f3fd852a7c1506aa769"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/native-packet-correspondence.json",
+      "sha256": "eed2eb433e79e01345cc5720e588c257f4aca25e13d25f8e325ee38094895e32"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/check_process_law.py",
+      "sha256": "1634780b1bc3322ed5746cb4da28b54912dfb80b131f75ab0504a9b07643b959"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/check_native_packet_correspondence.py",
+      "sha256": "d828746ea9ef506679f2ae786a0a748ce817300dcbd5104ba8c762f907e033ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-packet-inputs.json",
+      "sha256": "64f657e1605f1266f03453bd592e9896e8d7664c20503f3fd852a7c1506aa769"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-packet-correspondence.json",
+      "sha256": "eed2eb433e79e01345cc5720e588c257f4aca25e13d25f8e325ee38094895e32"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/lean-toolchain",
+      "sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/lean-toolchain",
+      "sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/derived-inquiry-runs/1791286286937536000/receipt.json",
+      "sha256": "01fad790e1436e72ab967cf8163240452b360ea2ed8972000ce1caedf93b51ee"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/baseline-verification.json",
+      "sha256": "01fad790e1436e72ab967cf8163240452b360ea2ed8972000ce1caedf93b51ee"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/Depletion.txt",
+      "sha256": "2e14c5291bcd4c020c329f10cf29d7771d129d2758b87d960c03e56adab84679"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/RootRealization.txt",
+      "sha256": "49dedd7571781d42c7772ec6b97ff5357501c42f376b7c0cef4ab7623eedffda"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/InquirySufficiency.txt",
+      "sha256": "34c3b77a268784c2e82a9b368559c1a5ac2ee7c1f32f776b6d03110dbeb4ddf0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+      "sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/NativePacketProcess.lean",
+      "sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/NativePacketProcess.txt",
+      "sha256": "fffb47e4a6877aef698d75e77b0b26213cf3b2a930ccdcc3343a9d6b9507b9da"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FiniteInquiryClassification.lean",
+      "sha256": "1a0613f734ccdd432656770d6d73d7ee7db4b119f57b379ebe8ff7f623054375"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/FiniteInquiryClassification.lean",
+      "sha256": "1a0613f734ccdd432656770d6d73d7ee7db4b119f57b379ebe8ff7f623054375"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/FiniteInquiryClassification.txt",
+      "sha256": "c0dc15bbfd009fb156b81e8dfe822ff83952f625ed8d30dde421e6b6d42098bd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+      "sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/AttainableQuestions.lean",
+      "sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/AttainableQuestions.txt",
+      "sha256": "7095aef37dea667375ae0ded71425005f876915ee8a8e366935c09a2683e10ef"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean",
+      "sha256": "36f9d1ea87f201b70715699b05c045e0fdebe6f3497df3278d2a7cfbbe32d0d4"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/NativePacketCases.lean",
+      "sha256": "36f9d1ea87f201b70715699b05c045e0fdebe6f3497df3278d2a7cfbbe32d0d4"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/NativePacketCases.txt",
+      "sha256": "5a1e45ddc820650f5845852c03e852ee59bd6204ec3d6b9f9fef47549d080e60"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+      "sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/OnePacketQuestions.lean",
+      "sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/OnePacketQuestions.txt",
+      "sha256": "9ef18511533ed90aa0c52a7d29f0cb008a0ae7e5e7a9cd3a8197607f9b9d251f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ReachedInquiryComposition.lean",
+      "sha256": "81b21a6afd4b3dd8dd98eefb25ad3d549e3f91dcf0e61fe871dea687c3a93c2f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/ReachedInquiryComposition.lean",
+      "sha256": "81b21a6afd4b3dd8dd98eefb25ad3d549e3f91dcf0e61fe871dea687c3a93c2f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/ReachedInquiryComposition.txt",
+      "sha256": "b4a264223ad958372a9aa931e804c6133fbebb2f827c1a3be892b008aa77077f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/DerivedInquiryCertificates.lean",
+      "sha256": "225b565b3ad9cc0cb89f3f251897ed104e2b2a5aa1b044246fb22ac9ab6fbd20"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/DerivedInquiryCertificates.lean",
+      "sha256": "225b565b3ad9cc0cb89f3f251897ed104e2b2a5aa1b044246fb22ac9ab6fbd20"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/DerivedInquiryCertificates.txt",
+      "sha256": "99ffbd61bac3a40ddefb09f2d1129ff7512adac7a35a9d86fb991b8f2c794937"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+      "sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/OnePacketAdmissibility.lean",
+      "sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/OnePacketAdmissibility.txt",
+      "sha256": "8b42a5c45ab7bc9b042c477d7450b0b2ffd31018627cd55ee5653a6283bcb47b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketInquirySynthesis.lean",
+      "sha256": "f0d1661dc04dd900debd760348764d8777c8132dec30833b9ea7fe435a25f8d7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/OnePacketInquirySynthesis.lean",
+      "sha256": "f0d1661dc04dd900debd760348764d8777c8132dec30833b9ea7fe435a25f8d7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/OnePacketInquirySynthesis.txt",
+      "sha256": "daaa722181aa0ed05bd2a80523b08862ae8c7d9f4014abb50c64bfa94ed6b4cc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+      "sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/PacketLawDerivation.lean",
+      "sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/PacketLawDerivation.txt",
+      "sha256": "d29db2a9060e5736a02521985f8dfd23da8f5f1a21c9ffd398894796b8292592"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeInquirySufficiencyModel.lean",
+      "sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeInquirySufficiencyModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean",
+      "sha256": "23a987f6c021df07456bd8b9bb0b5a5a99855144b54cfee06ce8207be33a0b20"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeFiniteInquiryModel.lean",
+      "sha256": "23a987f6c021df07456bd8b9bb0b5a5a99855144b54cfee06ce8207be33a0b20"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeFiniteInquiryModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean",
+      "sha256": "3fe522856537ed7ddef2eb32f0ff9a2ebdf8f68c8b08a3162ac5550b96834be3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeAttainableQuestionsModel.lean",
+      "sha256": "3fe522856537ed7ddef2eb32f0ff9a2ebdf8f68c8b08a3162ac5550b96834be3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeAttainableQuestionsModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean",
+      "sha256": "c8eeededa432a8d29c96a6e47fd60f1be6ba25f98c185755453f8dc81b7f4e16"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeDerivedInquiryModel.lean",
+      "sha256": "c8eeededa432a8d29c96a6e47fd60f1be6ba25f98c185755453f8dc81b7f4e16"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeDerivedInquiryModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean",
+      "sha256": "30bcc293221bad98b29cc98fa577f02ac5306a1c866baf8ae6530f6d940e5e1f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/sources/GenerativeDerivedProcessLawModel.lean",
+      "sha256": "30bcc293221bad98b29cc98fa577f02ac5306a1c866baf8ae6530f6d940e5e1f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/GenerativeDerivedProcessLawModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/attainable-inputs.json",
+      "sha256": "a1ce0e30d8443f3f6f4560689d33ad66a40549c8f5829a3fce69f390300b52e2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/derived-inquiry-runs/1791286286937536000/attainable-inputs.json",
+      "sha256": "a1ce0e30d8443f3f6f4560689d33ad66a40549c8f5829a3fce69f390300b52e2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/receipt.json",
+      "sha256": "57a5d6532e98ad281c8e8f982127a21563307ff07813e3ffe39d245cbd710006"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/results.json",
+      "sha256": "e35ec64da8a486eb8b9d089f4334758b41a2f525cdadf4fa12161a6930ec1d8c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/results.json",
+      "sha256": "e35ec64da8a486eb8b9d089f4334758b41a2f525cdadf4fa12161a6930ec1d8c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review-check.json",
+      "sha256": "0b6d37cab949bc23fa1e02b6c0d61cad7692d0844fa51548be5e0804c537fb3f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review-check.json",
+      "sha256": "0b6d37cab949bc23fa1e02b6c0d61cad7692d0844fa51548be5e0804c537fb3f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/check.py",
+      "sha256": "fc5ac39d102f1111b523747d2f123496104b890e07022def73f8ddd55666f134"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/check.py",
+      "sha256": "fc5ac39d102f1111b523747d2f123496104b890e07022def73f8ddd55666f134"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review_check.py",
+      "sha256": "ed9ae426cc108bf3e2786298e0b4e2c6c569e5a520bc7e323a04d7e7230b1538"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review_check.py",
+      "sha256": "ed9ae426cc108bf3e2786298e0b4e2c6c569e5a520bc7e323a04d7e7230b1538"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/PROTOCOL.md",
+      "sha256": "4606949a46f4b6fd3a687aaac7b5d205fe1e8df59d7bbf4cb52ea545831ec708"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/PROTOCOL.md",
+      "sha256": "4606949a46f4b6fd3a687aaac7b5d205fe1e8df59d7bbf4cb52ea545831ec708"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent-check.json",
+      "sha256": "5efe94e31a1d06026a02708ec5792ead962371fc59e57dc185a9b6f56bd7afb7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent-check.json",
+      "sha256": "5efe94e31a1d06026a02708ec5792ead962371fc59e57dc185a9b6f56bd7afb7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent_check.py",
+      "sha256": "719aa55c41d8cd6046aad99df0226da5767515381878c6427236a6d6b6837167"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent_check.py",
+      "sha256": "719aa55c41d8cd6046aad99df0226da5767515381878c6427236a6d6b6837167"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/check.py",
+      "sha256": "7a68aeaaf926a28066b2c82f696ca610d9498601fed6527310ea0791a09f2d00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/check.py",
+      "sha256": "7a68aeaaf926a28066b2c82f696ca610d9498601fed6527310ea0791a09f2d00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/PROTOCOL.md",
+      "sha256": "ef2df61885b58502d14ac7112e15c11fac1394f02cd19c70d853bbfffa3191ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/PROTOCOL.md",
+      "sha256": "ef2df61885b58502d14ac7112e15c11fac1394f02cd19c70d853bbfffa3191ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/results.json",
+      "sha256": "c89b2f775ad34312d9d5eb2b872a06b053aa18199dbdbcaad2a85a8bbb6b4cff"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/results.json",
+      "sha256": "c89b2f775ad34312d9d5eb2b872a06b053aa18199dbdbcaad2a85a8bbb6b4cff"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/review-check.json",
+      "sha256": "dc279141d126aa4cb48ce12b70143e70f45cde4370945bce79de0b6a1f80d6d9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/question-runs/1791281585451526000/evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/review-check.json",
+      "sha256": "dc279141d126aa4cb48ce12b70143e70f45cde4370945bce79de0b6a1f80d6d9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/PROTOCOL.md",
+      "sha256": "ef2df61885b58502d14ac7112e15c11fac1394f02cd19c70d853bbfffa3191ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/PROTOCOL.md",
+      "sha256": "ef2df61885b58502d14ac7112e15c11fac1394f02cd19c70d853bbfffa3191ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/check.py",
+      "sha256": "7a68aeaaf926a28066b2c82f696ca610d9498601fed6527310ea0791a09f2d00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/check.py",
+      "sha256": "7a68aeaaf926a28066b2c82f696ca610d9498601fed6527310ea0791a09f2d00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "sha256": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "sha256": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "sha256": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "sha256": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py",
+      "sha256": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py",
+      "sha256": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py",
+      "sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py",
+      "sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/model.py",
+      "sha256": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/native-evidence/experiments/shared-renewal-capability/regulation/retention/model.py",
+      "sha256": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+    }
+  ],
+  "links": [
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/receipt.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PROCESS-LAW-DERIVATION-REVIEW.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "inquiry-root/sufficiency/process-law-runs/1791291483950888000/receipt.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "../../GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "DERIVED-INQUIRY-PREMISES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_native_packet_correspondence.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/native-packet-correspondence.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "PROCESS-LAW-DERIVATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "PROCESS-LAW-DERIVATION-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "PROCESS-LAW-DERIVATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "target": "PROCESS-LAW-DERIVATION-CHECK.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_native_packet_correspondence.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/native-packet-inputs.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/native-packet-correspondence.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+      "target": "PROCESS-LAW-DERIVATION.md"
+    }
+  ]
+}

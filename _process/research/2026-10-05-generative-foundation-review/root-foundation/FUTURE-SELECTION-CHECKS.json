@@ -1,0 +1,353 @@
+{
+  "checked_at_utc": "2026-10-06T10:10:51.844504+00:00",
+  "status": "passed",
+  "scope": "Owned documentation edit receipts and spans, local references, AI-authored link-only source records and unchanged inspected Lean files. No original Frick bytes were retrieved; no original source hash or new formal/empirical verification is claimed. Earlier preservation receipts remain historical checkpoints.",
+  "concurrent_surroundings": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "RESEARCH.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "surrounding_change": false
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "surrounding_change": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 0,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 1,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 2,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 3,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 4,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 5,
+      "path": "RESEARCH.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 6,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 7,
+      "path": "theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 8,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+    },
+    {
+      "name": "edit-receipt",
+      "passed": true,
+      "edit": 9,
+      "path": "sources/SOURCES.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "RESEARCH.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+    },
+    {
+      "name": "owned-span-present",
+      "passed": true,
+      "path": "sources/SOURCES.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "target": "FUTURE-BEARER-FORMATION-SOURCES.md#frick-conditional-concern-does-not-supply-selection-by-itself"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md",
+      "target": "FUTURE-PROTECTION-CHECKS.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md",
+      "target": "FUTURE-PROTECTION-EDITS.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md",
+      "target": "FUTURE-SELECTION-CHECKS.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md",
+      "target": "FUTURE-SELECTION-EDITS.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md",
+      "target": "../../../../sources/37-ethical-minimum-primary-2026-10-06/conditional-future-concern/README.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md",
+      "target": "FUTURE-BEARER-FORMATION-ARGUMENT.md#7-prospective-concern-at-the-last-effective-window"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md",
+      "target": "FUTURE-BEARER-FORMATION-ARGUMENT.md#8-conditional-concern-and-selection-across-future-lives"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-BEARER-FORMATION-ARGUMENT.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-BEARER-FORMATION-ARGUMENT.md#7-prospective-concern-at-the-last-effective-window"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-BEARER-FORMATION-CHECKS.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-BEARER-FORMATION-REVIEW.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-BEARER-FORMATION-SOURCES.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-PROTECTION-CHECKS.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-SELECTION-CHECKS.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "sources/37-ethical-minimum-primary-2026-10-06/conditional-future-concern/README.md",
+      "target": "MANIFEST.json"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "sources/SOURCES.md",
+      "target": "37-ethical-minimum-primary-2026-10-06/conditional-future-concern/README.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "sources/SOURCES.md",
+      "target": "37-ethical-minimum-primary-2026-10-06/future-formation/README.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "sources/SOURCES.md",
+      "target": "37-ethical-minimum-primary-2026-10-06/future-protection/README.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#forming-those-who-will-live-in-the-future"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#7-prospective-concern-at-the-last-effective-window"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#forming-those-who-will-live-in-the-future"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#8-conditional-concern-and-selection-across-future-lives"
+    },
+    {
+      "name": "local-reference",
+      "passed": true,
+      "origin": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#forming-those-who-will-live-in-the-future"
+    },
+    {
+      "name": "inspected-lean-unchanged",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean"
+    },
+    {
+      "name": "inspected-lean-unchanged",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean"
+    },
+    {
+      "name": "source-record-hash",
+      "passed": true,
+      "path": "sources/37-ethical-minimum-primary-2026-10-06/conditional-future-concern/MANIFEST.json",
+      "kind": "AI-authored link-only provenance record; not original source bytes"
+    },
+    {
+      "name": "source-record-hash",
+      "passed": true,
+      "path": "sources/37-ethical-minimum-primary-2026-10-06/conditional-future-concern/README.md",
+      "kind": "AI-authored link-only provenance record; not original source bytes"
+    },
+    {
+      "name": "link-only-provenance-explicit",
+      "passed": true
+    }
+  ]
+}

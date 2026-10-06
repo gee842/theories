@@ -1,0 +1,31 @@
+{
+  "retrieved": "2026-10-06",
+  "scope": "Primary response-shift comparison for changing appraisal; no clinical replication or selective-incapacity identification",
+  "sources": [
+    {
+      "file": "verdam-2017-thesis-chapter-2-based-on-2012-study.pdf",
+      "url": "https://pure.uva.nl/ws/files/9797580/02.pdf",
+      "bytes": 585868,
+      "sha256": "87fcf9b4be34b4b1ae5e8154ba260d6697923e3ebdb030508021e271a38c4406",
+      "version": "2017 thesis chapter 2, based on Verdam et al. (2012); not collated against journal version",
+      "reading": "Full main chapter, printed pp.23–38, read through primary web text by grounding_realization; tables read as text, no figure facsimile review."
+    },
+    {
+      "file": "vanier-et-al-2021-response-shift-final.pdf",
+      "url": "https://pure.uva.nl/ws/files/302009163/s11136-021-02846-w.pdf",
+      "bytes": 1386281,
+      "sha256": "0e341acc99f85cea9f7e1486e21e9eca6d3d410014aae888003d5090482d83c9",
+      "version": "Institutional copy of final published version, with repository cover",
+      "reading": "grounding_realization read the revised-model, assumptions and implications discussion, printed pp.3316–3320, including Tables 2–3 as text. Root independently read introduction/prior-model discussion pp.3310–3311 and definition/revised-model/implications/conclusion pp.3316–3320, including Tables 2–3 as text. Neither claims full Table 1, reference/supplement reading, or figure-layout inspection."
+    }
+  ],
+  "link_only": [
+    {
+      "citation": "Visser, Oort and Sprangers (2005), Methods to detect response shift in quality of life data: A convergent validity study",
+      "doi": "10.1007/s11136-004-2577-x",
+      "url": "https://www.researchgate.net/publication/7722795_Methods_to_detect_response_shift_in_quality_of_life_data_A_convergent_validity_study",
+      "scope": "Author-uploaded public primary text: introduction, study-design and assessment methods, and focused results/discussion, printed pp.629–637; not a full-paper reading. Same 170-patient cohort reused in Verdam et al. (2012), not independent replication.",
+      "access": "ResearchGate PDF download link returned 404; no local original PDF or reconstructed facsimile claimed."
+    }
+  ]
+}

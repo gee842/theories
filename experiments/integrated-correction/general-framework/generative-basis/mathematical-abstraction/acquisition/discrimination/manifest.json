@@ -1,0 +1,28 @@
+{
+  "scope": "Preservation and local links, not an independent scientific replay.",
+  "artifacts": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "sha256": "7a20d7d36befac773678373eae91adab2e7a1bc90195cabbb13c442e46a1ba3c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/study.py",
+      "sha256": "0299dec928a82fedc92718410adcfb2978755b2c5262083e3af96a8ef4bb3f76"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/results.json",
+      "sha256": "420ff454768f51dd2127351e893effcca008489c6a08f958a61be38f94181751"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/README.md",
+      "sha256": "20149e2da69cad7131be0a0fa74fcb700b5c30e2ba51b39d6d9ea90bc876251a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "sha256": "ee60cc094a8c5e8e99957c4363a1cb1c669a2274bbad7481f80b72e0bf20e580"
+    }
+  ],
+  "links_checked": 18,
+  "producer_attempts": 1,
+  "failed_attempts": 0
+}

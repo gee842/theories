@@ -1,0 +1,35 @@
+1
+CompletionApplicability.lean:119:12: error: failed to synthesize
+  Decidable (QuantityMet 10 10)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+CompletionApplicability.lean:119:23: error: failed to synthesize
+  Decidable ¬QuantityMet 20 10
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'Generative.CompletionApplicability.step_preserves_route' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.trace_preserves_route' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.same_selector_inputs_same_help' does not depend on any axioms
+'Generative.CompletionApplicability.help_invariant_on_every_trace' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.no_current_law_recommendation_reversal' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.equivalent_process_preserves_help' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.Actual.entrance_recommends' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.Actual.all_reached_states_recommend' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.Actual.every_reached_assessment_recommends_and_pays' depends on axioms: [propext,
+ Quot.sound]
+'Generative.CompletionApplicability.Actual.actual_query_credit_is_ten' depends on axioms: [propext, Quot.sound]
+'Generative.CompletionApplicability.Actual.actual_history_keeps_completed_query_and_recommends' depends on axioms: [propext,
+ Quot.sound]
+'Generative.CompletionApplicability.Actual.same_actual_credit_opposite_quantity_completions' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.CompletionApplicability.Actual.no_requirement_free_full_state_decoder' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.CompletionApplicability.Actual.no_requirement_free_record_decoder' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.CompletionApplicability.Actual.quantity_readout_spec' depends on axioms: [propext]
+'Generative.CompletionApplicability.Actual.query_binding_resolves_these_comparisons' depends on axioms: [propext,
+ Quot.sound]
+

@@ -1,0 +1,28 @@
+{
+  "operation": "replay",
+  "argv": [
+    "/Users/ren/.pyenv/versions/3.11.2/bin/python3",
+    "-B",
+    "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/w02/runs/r0002/tree/experiments/agentdojo-evidence-boundary/replay.py"
+  ],
+  "cwd": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/w02/runs/r0002/tree",
+  "environment": {
+    "PATH": "/Users/ren/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/ren/.codex/tmp/arg0/codex-arg07cVjUc:/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/ren/.unity/bin:/Users/ren/.local/bin:/Users/ren/.elan/bin:/Users/ren/.antigravity/antigravity/bin:/opt/homebrew/Cellar/node/23.11.0/bin:/Users/ren/google-gcloud-sdk/bin:/Users/ren/.rbenv/shims:/Users/ren/.rbenv/bin:/Users/ren/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "LANG": "C.UTF-8"
+  },
+  "started_at_utc": "2026-10-06T04:43:05.833288+00:00",
+  "started": true,
+  "returncode": 0,
+  "timeout": false,
+  "timeout_seconds": 120,
+  "input_inventory": {
+    "path": "runs/r0002/input-inventory.json",
+    "sha256": "4fc3d177844e5259b355afda306cf8e1218d75c488a804c7831ac82127fd7021",
+    "bytes": 104288
+  },
+  "pid": 36559,
+  "elapsed_seconds": 3.019232166989241,
+  "ended_at_utc": "2026-10-06T04:43:08.853122+00:00"
+}

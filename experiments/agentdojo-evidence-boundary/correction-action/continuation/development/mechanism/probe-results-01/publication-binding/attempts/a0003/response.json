@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "attempt_id": "a0003",
+  "request_id": "r",
+  "operation": "replay",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "run": "r0002",
+    "process": {
+      "path": "runs/r0002/process.json",
+      "sha256": "e33a0f362b466d245525ae3eb70ff7067c72c1c434ba6c75f0e3490e62510afa",
+      "bytes": 2486
+    },
+    "stdout": {
+      "path": "runs/r0002/stdout.txt",
+      "sha256": "4e8828fc794ba0752bf26b2a385a71ae2e7ff8df83b8d2360437900ccd79a9e0",
+      "bytes": 1015
+    },
+    "stderr": {
+      "path": "runs/r0002/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "returncode": 0,
+    "produced": true,
+    "version": "v1"
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v0",
+    "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

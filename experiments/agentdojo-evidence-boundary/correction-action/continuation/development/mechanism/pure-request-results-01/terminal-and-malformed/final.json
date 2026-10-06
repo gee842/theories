@@ -1,0 +1,7 @@
+{
+  "declaration": {
+    "diagnosis": "unresolved",
+    "repair": "unresolved",
+    "explanation": "Parser test only; no diagnostic or repair effect claimed."
+  }
+}

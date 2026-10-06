@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T06:10:12.120894+00:00",
+  "scope": "Task-owned text links, source/log binding and preservation only; no proof or finite oracle rerun.",
+  "local_links_checked": 109,
+  "anchors_checked": 15,
+  "checks": 317,
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md": "64bc653251d296ba903ac40acbda0f70a1f464bb7fa5af36bc5e631be6280dfe",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-REVIEW.md": "02b0d259541f1c9e8ef2ba4563c2e4dba6031e7ff6650f23f437c637728a6ded",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-MATH.md": "79afa917f89c907a9571e4861982445bb44abdcd98f95496ad425b04f5e11bf6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-SOURCES.md": "84637e8ed6981b5ed6f4da67eded13a50d90fd552ad62ec8b92e8c4f2f9770b4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-RECONSTRUCTION.md": "a478fce1591bafc1ef582acb5a983f6daa445ec53b7312737e24246938509de7",
+    "sources/15-codex-theory-conversations/2026-10-06-nondual-core-and-subject-extensions.md": "15a6117c3f8d117d799f9fd976ded0923497c8e732d4382d0696a089c4ea77ac",
+    "RESEARCH.md": "80438f331ae7a98441df281127be4e72070ed8145817b824a4da2bfad6bddf4b",
+    "theories/shengsheng-buxi-generative-existence/README.md": "efa407692f83228e90efc557f344b753fa617ec1dc930de9d38978a5b83b4bb0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "bafe3a62c405e2f93ffbfd780b9dfcf759d8f3b1f52958c57f73a82ea7363ea9",
+    "experiments/README.md": "07ce3591db2000e541d11ee6023bf16820173ad90bea666622f1d18e94c53a07",
+    "sources/SOURCES.md": "25ee0f95a31468ed4439ce0e592446da62707b8cb7113a8480478533928eda3f",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "f4e5c0ef89ad62e85fb6e257515ed52413709f11d7275cf1159ad96af5ee32a9",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "f2029e361cc1ef0ff3f150b1a10e97d355aace57e698f56423a7da5611f8842d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/README.md": "ab86afb155fc456691291c628340638089c6cb882eb892fe309f91e4958387b9",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md": "092c8c694558e0af20ebee45159681d2ba0604ba5adfbfd7241798d88673d258",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md": "f10c08633f1b5a7af4ad54855deb5c4479a74056a66d63c41ccf0549c6c7083c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md": "da2fd2052e050e69a92ddd8138106374610823745b57eefa6b03d4d28e63655e",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": "4017a066dce69a5c1c7ea20eae15cb3bac5fbc9517e3fdb97b814499b06a4018"
+  },
+  "receipts_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/nondual-verification.json": "37242f13621f833597a3e26955cd7f9e1eb9be5f53e489bacf0763e00032a325",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/nondual-model-verification.json": "5ea6cf0815b25e7bef9ba7ec294bc48e07ce95eeef08d7480a781b6703e6c6c6",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/nondual-independent-review.json": "e73da7e82e2400f48cedfb4054148943b9e74de9791d52294758830690cf7fe4"
+  },
+  "checker_sha256": "e7fff952348023a5ebe75ccb24e52c703287f15b72c6b29485d0cbb080e04f8c",
+  "distinct_new_declaration_audits": 33,
+  "nondual_architecture_realized": true,
+  "assumption_free_foundation_complete": false,
+  "errors": []
+}

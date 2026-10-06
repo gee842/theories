@@ -1,0 +1,13 @@
+'RecipeNative.paid_conserves' depends on axioms: [propext, Quot.sound]
+'RecipeNative.inherited_conserves' depends on axioms: [propext, Quot.sound]
+'RecipeNative.every_attempt_preserves_account' depends on axioms: [propext, Quot.sound]
+'RecipeNative.run_preserves_account' depends on axioms: [propext, Quot.sound]
+'RecipeNative.every_attempt_preserves_ancestor_and_stocks' depends on axioms: [propext]
+'RecipeNative.run_preserves_ancestor_and_stocks' depends on axioms: [propext]
+'RecipeNative.run_is_core_trace' depends on axioms: [propext]
+'RecipeNative.actual_binder_matches_selected_decoder' does not depend on any axioms
+'RecipeNative.actual_bound_decoder_recovers' depends on axioms: [propext, Quot.sound]
+'RecipeNative.decoding_uses_the_actual_stored_rows' depends on axioms: [propext]
+'RecipeNative.absent_row_is_not_repaired_by_ready' depends on axioms: [propext, Quot.sound]
+'RecipeNative.inherited_complete_pipeline_account' depends on axioms: [propext]
+'RecipeNative.old_pipeline_plus_four_reference_surcharges_is_unfunded' depends on axioms: [propext, Quot.sound]

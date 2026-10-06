@@ -1,0 +1,921 @@
+{
+  "checked_at_utc": "2026-10-06T08:41:01.152523+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "c6aa7d321845a337605d7ecd0759702a2ed67de45fbf5dce7e8eecc1bb31cb00",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "input_source_hashes": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "SystemsOrganization": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+    "FeedbackDynamics": "9a6f8adcbf9ba4afc783fbb81d3ec1e16e34e4886d7ebcbe422657d83e35d51d",
+    "SymbolicDynamics": "f5da626efd96f712791c86552cd2662889dd8f2b1ecfba2f1249e1f5d10afa14",
+    "SystemsComplexity": "b4cc368512489db9624c84aba96a6ecf6ec89cd140c13f7393d36f1abddbf028"
+  },
+  "allowed_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_interpretation": "Standard logical dependencies are reported per theorem; they are not custom physical axioms. An empty list does not remove supplied model definitions, theorem hypotheses, mathematical background or the need for an independently justified real-system correspondence.",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "../GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "snapshot": "verification/sources/GenerativeCore.lean",
+      "exit_code": 0,
+      "imports": [
+        "Std"
+      ],
+      "theorems": [
+        "Generative.trace_nil_iff",
+        "Generative.trace_cons_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.trace_append_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_left",
+        "Generative.trace_product_right",
+        "Generative.trace_product_mk",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "requested_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "coverage_scope": "selected inherited audits",
+      "dependency_audits": 18,
+      "audits": [
+        {
+          "declaration": "Generative.trace_append_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.trace_singleton_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.enabled_iff_singleton_trace",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.enabled_difference_implies_state_difference",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.feasible_append_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.feasible_prefix",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.enabled_product_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.trace_product_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.feasible_product_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.trace_map",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.trace_lift",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.projected_trace_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.projection_exact_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.local_exact_iff_trace_exact",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.enabled_projection_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.feasible_projection_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.feasible_difference_implies_projection_difference",
+          "dependencies": []
+        },
+        {
+          "declaration": "Generative.trace_faithful_iff",
+          "dependencies": []
+        }
+      ],
+      "axioms": [],
+      "empty_axiom_audits": 18,
+      "clean_dependency_audit": true,
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "SystemsOrganization",
+      "source": "SystemsOrganization.lean",
+      "source_sha256": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+      "snapshot": "verification/sources/SystemsOrganization.lean",
+      "exit_code": 0,
+      "imports": [
+        "GenerativeCore"
+      ],
+      "theorems": [
+        "SystemsOrganization.deterministic_trace_iff",
+        "SystemsOrganization.evolve_semiconjugacy",
+        "SystemsOrganization.commuting_iff_all_words",
+        "SystemsOrganization.projected_trace_exact",
+        "SystemsOrganization.reduced_law_exists_iff",
+        "SystemsOrganization.commuting_composes",
+        "SystemsOrganization.coupled_components_preserve_history",
+        "SystemsOrganization.self_routing_fixed",
+        "SystemsOrganization.cross_routing_two_steps",
+        "SystemsOrganization.cross_routing_not_fixed",
+        "SystemsOrganization.same_cells_different_collective_recurrence",
+        "SystemsOrganization.crossed_left_not_fibre_consistent",
+        "SystemsOrganization.no_autonomous_left_law",
+        "SystemsOrganization.link_inventory_preserved",
+        "SystemsOrganization.fuel_does_not_increase",
+        "SystemsOrganization.formation_step",
+        "SystemsOrganization.formation_preserves_cell_values",
+        "SystemsOrganization.formation_consumes_spare_and_fuel",
+        "SystemsOrganization.exchange_unavailable_before_formation",
+        "SystemsOrganization.exchange_available_after_formation",
+        "SystemsOrganization.formation_and_recurrence_same_history",
+        "SystemsOrganization.parts_only_cannot_preserve_futures",
+        "SystemsOrganization.no_fuel_blocks_formation",
+        "SystemsOrganization.no_spare_blocks_formation"
+      ],
+      "requested_audits": [
+        "SystemsOrganization.deterministic_trace_iff",
+        "SystemsOrganization.evolve_semiconjugacy",
+        "SystemsOrganization.commuting_iff_all_words",
+        "SystemsOrganization.projected_trace_exact",
+        "SystemsOrganization.reduced_law_exists_iff",
+        "SystemsOrganization.commuting_composes",
+        "SystemsOrganization.coupled_components_preserve_history",
+        "SystemsOrganization.self_routing_fixed",
+        "SystemsOrganization.cross_routing_two_steps",
+        "SystemsOrganization.cross_routing_not_fixed",
+        "SystemsOrganization.same_cells_different_collective_recurrence",
+        "SystemsOrganization.crossed_left_not_fibre_consistent",
+        "SystemsOrganization.no_autonomous_left_law",
+        "SystemsOrganization.link_inventory_preserved",
+        "SystemsOrganization.fuel_does_not_increase",
+        "SystemsOrganization.formation_step",
+        "SystemsOrganization.formation_preserves_cell_values",
+        "SystemsOrganization.formation_consumes_spare_and_fuel",
+        "SystemsOrganization.exchange_unavailable_before_formation",
+        "SystemsOrganization.exchange_available_after_formation",
+        "SystemsOrganization.formation_and_recurrence_same_history",
+        "SystemsOrganization.parts_only_cannot_preserve_futures",
+        "SystemsOrganization.no_fuel_blocks_formation",
+        "SystemsOrganization.no_spare_blocks_formation"
+      ],
+      "coverage_scope": "every declared theorem/lemma exactly once",
+      "dependency_audits": 24,
+      "audits": [
+        {
+          "declaration": "SystemsOrganization.deterministic_trace_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.evolve_semiconjugacy",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.commuting_iff_all_words",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.projected_trace_exact",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.reduced_law_exists_iff",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.commuting_composes",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.coupled_components_preserve_history",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.self_routing_fixed",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.cross_routing_two_steps",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.cross_routing_not_fixed",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.same_cells_different_collective_recurrence",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.crossed_left_not_fibre_consistent",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.no_autonomous_left_law",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.link_inventory_preserved",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.fuel_does_not_increase",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.formation_step",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.formation_preserves_cell_values",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.formation_consumes_spare_and_fuel",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.exchange_unavailable_before_formation",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.exchange_available_after_formation",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.formation_and_recurrence_same_history",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.parts_only_cannot_preserve_futures",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.no_fuel_blocks_formation",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsOrganization.no_spare_blocks_formation",
+          "dependencies": []
+        }
+      ],
+      "axioms": [],
+      "empty_axiom_audits": 24,
+      "clean_dependency_audit": true,
+      "output": "verification/SystemsOrganization.txt",
+      "output_sha256": "e94da75fc8f1f3ec9a0fe55379f37b31c954776c93cc5a4ddb5e929a04ec458b"
+    },
+    {
+      "module": "FeedbackDynamics",
+      "source": "FeedbackDynamics.lean",
+      "source_sha256": "9a6f8adcbf9ba4afc783fbb81d3ec1e16e34e4886d7ebcbe422657d83e35d51d",
+      "snapshot": "verification/sources/FeedbackDynamics.lean",
+      "exit_code": 0,
+      "imports": [
+        "Std"
+      ],
+      "theorems": [
+        "SystemsComplexity.Feedback.square_nonneg",
+        "SystemsComplexity.Feedback.exists_nat_gt",
+        "SystemsComplexity.Feedback.immediate_formula",
+        "SystemsComplexity.Feedback.delayed_energy_step",
+        "SystemsComplexity.Feedback.delayed_energy_formula",
+        "SystemsComplexity.Feedback.energy_lower",
+        "SystemsComplexity.Feedback.energy_upper",
+        "SystemsComplexity.Feedback.normSq_nonneg",
+        "SystemsComplexity.Feedback.normSq_positive",
+        "SystemsComplexity.Feedback.energy_nonneg",
+        "SystemsComplexity.Feedback.energy_positive",
+        "SystemsComplexity.Feedback.immediate_square_step",
+        "SystemsComplexity.Feedback.immediate_bound",
+        "SystemsComplexity.Feedback.immediate_square_tends_zero",
+        "SystemsComplexity.Feedback.immediate_tends_zero",
+        "SystemsComplexity.Feedback.delayed_energy_growth",
+        "SystemsComplexity.Feedback.delayed_normSq_tends_infinity",
+        "SystemsComplexity.Feedback.delayed_add",
+        "SystemsComplexity.Feedback.delayed_one_six",
+        "SystemsComplexity.Feedback.delayed_one_periodic"
+      ],
+      "requested_audits": [
+        "SystemsComplexity.Feedback.square_nonneg",
+        "SystemsComplexity.Feedback.exists_nat_gt",
+        "SystemsComplexity.Feedback.immediate_formula",
+        "SystemsComplexity.Feedback.delayed_energy_step",
+        "SystemsComplexity.Feedback.delayed_energy_formula",
+        "SystemsComplexity.Feedback.energy_lower",
+        "SystemsComplexity.Feedback.energy_upper",
+        "SystemsComplexity.Feedback.normSq_nonneg",
+        "SystemsComplexity.Feedback.normSq_positive",
+        "SystemsComplexity.Feedback.energy_nonneg",
+        "SystemsComplexity.Feedback.energy_positive",
+        "SystemsComplexity.Feedback.immediate_square_step",
+        "SystemsComplexity.Feedback.immediate_bound",
+        "SystemsComplexity.Feedback.immediate_square_tends_zero",
+        "SystemsComplexity.Feedback.immediate_tends_zero",
+        "SystemsComplexity.Feedback.delayed_energy_growth",
+        "SystemsComplexity.Feedback.delayed_normSq_tends_infinity",
+        "SystemsComplexity.Feedback.delayed_add",
+        "SystemsComplexity.Feedback.delayed_one_six",
+        "SystemsComplexity.Feedback.delayed_one_periodic"
+      ],
+      "coverage_scope": "every declared theorem/lemma exactly once",
+      "dependency_audits": 20,
+      "audits": [
+        {
+          "declaration": "SystemsComplexity.Feedback.square_nonneg",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.exists_nat_gt",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.immediate_formula",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.delayed_energy_step",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.delayed_energy_formula",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.energy_lower",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.energy_upper",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.normSq_nonneg",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.normSq_positive",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.energy_nonneg",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.energy_positive",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.immediate_square_step",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.immediate_bound",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.immediate_square_tends_zero",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.immediate_tends_zero",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.delayed_energy_growth",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.delayed_normSq_tends_infinity",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.delayed_add",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.delayed_one_six",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.Feedback.delayed_one_periodic",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "clean_dependency_audit": true,
+      "output": "verification/FeedbackDynamics.txt",
+      "output_sha256": "3dd3eb4fcce70d48ed35b4a8768b36605b2714a64c6f7f416f6836e8e2750b1d"
+    },
+    {
+      "module": "SymbolicDynamics",
+      "source": "SymbolicDynamics.lean",
+      "source_sha256": "f5da626efd96f712791c86552cd2662889dd8f2b1ecfba2f1249e1f5d10afa14",
+      "snapshot": "verification/sources/SymbolicDynamics.lean",
+      "exit_code": 0,
+      "imports": [
+        "Std"
+      ],
+      "theorems": [
+        "SystemsComplexity.SymbolicDynamics.iterate_add",
+        "SystemsComplexity.SymbolicDynamics.eraseValue_injective",
+        "SystemsComplexity.SymbolicDynamics.finite_collision",
+        "SystemsComplexity.SymbolicDynamics.finite_eventually_periodic",
+        "SystemsComplexity.SymbolicDynamics.finite_eventuallyPeriodic",
+        "SystemsComplexity.SymbolicDynamics.prefix_refl",
+        "SystemsComplexity.SymbolicDynamics.prefix_symm",
+        "SystemsComplexity.SymbolicDynamics.prefix_trans",
+        "SystemsComplexity.SymbolicDynamics.prefix_mono",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_empty",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_univ",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_inter",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_union",
+        "SystemsComplexity.SymbolicDynamics.cylinder_open",
+        "SystemsComplexity.SymbolicDynamics.member_lt_coordinateBound",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_iff_coordinate_open",
+        "SystemsComplexity.SymbolicDynamics.iterate_shift",
+        "SystemsComplexity.SymbolicDynamics.shift_continuous",
+        "SystemsComplexity.SymbolicDynamics.splice_prefix",
+        "SystemsComplexity.SymbolicDynamics.splice_shift",
+        "SystemsComplexity.SymbolicDynamics.shift_transitive",
+        "SystemsComplexity.SymbolicDynamics.repeat_agrees",
+        "SystemsComplexity.SymbolicDynamics.repeat_periodic",
+        "SystemsComplexity.SymbolicDynamics.shift_dense_periodic",
+        "SystemsComplexity.SymbolicDynamics.flip_agrees",
+        "SystemsComplexity.SymbolicDynamics.flip_separates",
+        "SystemsComplexity.SymbolicDynamics.no_isolated_stream",
+        "SystemsComplexity.SymbolicDynamics.singleton_not_open",
+        "SystemsComplexity.SymbolicDynamics.spike_injective",
+        "SystemsComplexity.SymbolicDynamics.stream_not_finitely_encoded",
+        "SystemsComplexity.SymbolicDynamics.shift_sensitive",
+        "SystemsComplexity.SymbolicDynamics.binary_shift_chaotic"
+      ],
+      "requested_audits": [
+        "SystemsComplexity.SymbolicDynamics.iterate_add",
+        "SystemsComplexity.SymbolicDynamics.eraseValue_injective",
+        "SystemsComplexity.SymbolicDynamics.finite_collision",
+        "SystemsComplexity.SymbolicDynamics.finite_eventually_periodic",
+        "SystemsComplexity.SymbolicDynamics.finite_eventuallyPeriodic",
+        "SystemsComplexity.SymbolicDynamics.prefix_refl",
+        "SystemsComplexity.SymbolicDynamics.prefix_symm",
+        "SystemsComplexity.SymbolicDynamics.prefix_trans",
+        "SystemsComplexity.SymbolicDynamics.prefix_mono",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_empty",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_univ",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_inter",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_union",
+        "SystemsComplexity.SymbolicDynamics.cylinder_open",
+        "SystemsComplexity.SymbolicDynamics.member_lt_coordinateBound",
+        "SystemsComplexity.SymbolicDynamics.prefix_open_iff_coordinate_open",
+        "SystemsComplexity.SymbolicDynamics.iterate_shift",
+        "SystemsComplexity.SymbolicDynamics.shift_continuous",
+        "SystemsComplexity.SymbolicDynamics.splice_prefix",
+        "SystemsComplexity.SymbolicDynamics.splice_shift",
+        "SystemsComplexity.SymbolicDynamics.shift_transitive",
+        "SystemsComplexity.SymbolicDynamics.repeat_agrees",
+        "SystemsComplexity.SymbolicDynamics.repeat_periodic",
+        "SystemsComplexity.SymbolicDynamics.shift_dense_periodic",
+        "SystemsComplexity.SymbolicDynamics.flip_agrees",
+        "SystemsComplexity.SymbolicDynamics.flip_separates",
+        "SystemsComplexity.SymbolicDynamics.no_isolated_stream",
+        "SystemsComplexity.SymbolicDynamics.singleton_not_open",
+        "SystemsComplexity.SymbolicDynamics.spike_injective",
+        "SystemsComplexity.SymbolicDynamics.stream_not_finitely_encoded",
+        "SystemsComplexity.SymbolicDynamics.shift_sensitive",
+        "SystemsComplexity.SymbolicDynamics.binary_shift_chaotic"
+      ],
+      "coverage_scope": "every declared theorem/lemma exactly once",
+      "dependency_audits": 32,
+      "audits": [
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.iterate_add",
+          "dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.eraseValue_injective",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.finite_collision",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.finite_eventually_periodic",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.finite_eventuallyPeriodic",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_refl",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_symm",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_trans",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_mono",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_open_empty",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_open_univ",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_open_inter",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_open_union",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.cylinder_open",
+          "dependencies": []
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.member_lt_coordinateBound",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.prefix_open_iff_coordinate_open",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.iterate_shift",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.shift_continuous",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.splice_prefix",
+          "dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.splice_shift",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.shift_transitive",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.repeat_agrees",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.repeat_periodic",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.shift_dense_periodic",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.flip_agrees",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.flip_separates",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.no_isolated_stream",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.singleton_not_open",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.spike_injective",
+          "dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.stream_not_finitely_encoded",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.shift_sensitive",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.SymbolicDynamics.binary_shift_chaotic",
+          "dependencies": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 7,
+      "clean_dependency_audit": true,
+      "output": "verification/SymbolicDynamics.txt",
+      "output_sha256": "32671e775f44827bdeb460cffabd37f1dc62f865d42807460b4abed41f35328b"
+    },
+    {
+      "module": "SystemsComplexity",
+      "source": "SystemsComplexity.lean",
+      "source_sha256": "b4cc368512489db9624c84aba96a6ecf6ec89cd140c13f7393d36f1abddbf028",
+      "snapshot": "verification/sources/SystemsComplexity.lean",
+      "exit_code": 0,
+      "imports": [
+        "SystemsOrganization",
+        "FeedbackDynamics",
+        "SymbolicDynamics"
+      ],
+      "theorems": [
+        "SystemsComplexity.iterate_generative_trace",
+        "SystemsComplexity.binary_shift_trace",
+        "SystemsComplexity.delayed_eq_iterate",
+        "SystemsComplexity.delayed_feedback_trace"
+      ],
+      "requested_audits": [
+        "SystemsComplexity.iterate_generative_trace",
+        "SystemsComplexity.binary_shift_trace",
+        "SystemsComplexity.delayed_eq_iterate",
+        "SystemsComplexity.delayed_feedback_trace"
+      ],
+      "coverage_scope": "every declared theorem/lemma exactly once",
+      "dependency_audits": 4,
+      "audits": [
+        {
+          "declaration": "SystemsComplexity.iterate_generative_trace",
+          "dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.binary_shift_trace",
+          "dependencies": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.delayed_eq_iterate",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "SystemsComplexity.delayed_feedback_trace",
+          "dependencies": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "clean_dependency_audit": true,
+      "output": "verification/SystemsComplexity.txt",
+      "output_sha256": "debb7b5782dc4f06a548e77e00cdc1e130779b8677e603acf1f629b85c6f130f"
+    }
+  ],
+  "audited_declarations": 98,
+  "new_audited_declarations": 80,
+  "new_empty_axiom_audits": 31,
+  "scope": "Actual generative-core trace correspondence for iteration, the binary shift and rational delayed feedback. Conditional structural organization/projection, exact rational feedback dynamics, finite autonomous recurrence and an infinite binary-symbolic chaos witness. This receipt is not an empirical identification, a physical chaos claim for the finite learner, ethical grounding or a universal ontology proof. The separate Mathlib real-analysis package is outside this receipt."
+}

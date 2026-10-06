@@ -1,0 +1,695 @@
+{
+  "checked_at_utc": "2026-10-06T06:10:17.633965+00:00",
+  "status": "passed",
+  "scope": "Integrity and local-link check of the completed bounded connection; no proof or empirical rerun.",
+  "combined_build_modules": 51,
+  "new_audited_declarations": 21,
+  "new_empty_named_axiom_reports": 5,
+  "all_current_sources_snapshots_logs_and_compiler_match_receipt": true,
+  "ancestor_receipt_snapshots_verified": true,
+  "inherited_claim_ledger_audits_not_counted_as_new": 21,
+  "physical_law_changed": false,
+  "runtime_completion_selector_installed": false,
+  "proof_level_ledger_only": true,
+  "whole_closure_named_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "whole_closure_has_empty_axiom_dependencies": false,
+  "assumption_free_foundation_established": false,
+  "empirical_experiment_rerun": false,
+  "review": "Independent source review accepted both new modules, actual-certificate scope and final canonical claims. The mechanism author and root entry author are distinct from the reviewer; the reviewer checked final source/manifest/log bindings.",
+  "next_connection": "Form and use a justified, paid applicability-sensitive selection path from the actual learned predecessor. Preserve acquired means, separate addressed claims, current permission and actual resource/ancestry handoffs; equivalent refactoring alone cannot create the missing behavior.",
+  "upstream_open": [
+    "Origin of supplied event laws and formation recipes",
+    "Sensing, interpretation and calibration",
+    "Independent ethical grounding and legitimate authority"
+  ],
+  "integration_edits": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "d73c647c9dcd687773c89443073dc2dbfe7627fd97a26f0a98b78f909fec03dd",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha256": "80438f331ae7a98441df281127be4e72070ed8145817b824a4da2bfad6bddf4b",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "efa407692f83228e90efc557f344b753fa617ec1dc930de9d38978a5b83b4bb0",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sha256": "f4e5c0ef89ad62e85fb6e257515ed52413709f11d7275cf1159ad96af5ee32a9",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "bafe3a62c405e2f93ffbfd780b9dfcf759d8f3b1f52958c57f73a82ea7363ea9",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "sha256": "23ae3ff694e8683fa33065d1df80811279eaf721721dddd9add20cc5c076adf0",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md",
+      "sha256": "8c1f77cea8b09be0fb838588a1bf027de146a845b85f795e2e373fba64c6e96f",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "sha256": "6bbb54b260241e9d757c22620735493cfb91f9dff2def34b3c0af6874c49c4e6",
+      "before_snapshot_verified": true,
+      "own_additions_present": true,
+      "matches_immediate_post_edit": true
+    }
+  ],
+  "local_links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise",
+      "exists": true,
+      "anchor_checked": true
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise",
+      "exists": true,
+      "anchor_checked": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise",
+      "exists": true,
+      "anchor_checked": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "COMPLETION-APPLICABILITY-MECHANISM.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "COMPLETION-APPLICABILITY-REVIEW.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise",
+      "exists": true,
+      "anchor_checked": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise",
+      "exists": true,
+      "anchor_checked": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md",
+      "target": "applicability/README.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "COMPLETION-APPLICABILITY-MECHANISM.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "COMPLETION-APPLICABILITY-REVIEW.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-one-connected-generative-model.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "GENERATIVE-GROUNDING.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-COMPARATORS.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/check.py",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/INPUTS.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-MECHANISM.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-REVIEW.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "../../GenerativeApplicabilityModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise",
+      "exists": true,
+      "anchor_checked": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "INPUTS.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "../README.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "verification.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "target": "CONNECTED-MODEL-MECHANISM.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "target": "development/completion-applicability/DEVELOPMENT-ATTEMPTS.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "target": "development/completion-applicability/attempt-03.log",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "development/completion-applicability/DEVELOPMENT-ATTEMPTS.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/check.py",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise",
+      "exists": true,
+      "anchor_checked": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/ApplicationEvidence.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/EvaluativeSuccession.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/RecipientArchive.lean",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "APPLICATION-EVIDENCE-MATH.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "exists": true,
+      "anchor_checked": false
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "target": "../foundation-assessment/FRONTIER-GOAL-AUTHORITY-COMPARISON.md",
+      "exists": true,
+      "anchor_checked": false
+    }
+  ],
+  "documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "d73c647c9dcd687773c89443073dc2dbfe7627fd97a26f0a98b78f909fec03dd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
+      "sha256": "15875a82402a419b005321ab35c9049ac33df0e01c866463416ab40d8eca4331"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+      "sha256": "9bd805e93d04ee0f370ebaf08a826e82753da29f9b2243388e32d512732f3a5a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "sha256": "1b714256b213e66da674b69dd22a97fb5e6d728d6739feab853411aa8ea2174e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+      "sha256": "0465bdb045fe8493e4ffef0182f4c127b0b7f947559603117d827e20bc3188cc"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/check.py",
+      "sha256": "698b11df4f8cd9105dfa3165c96ffa7d1ec7c37cbd12f581882e57c51ddc129c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/INPUTS.json",
+      "sha256": "1274de20df93ced7c0f49f3f2b825ebdf28805f6c36468e9bee917efe96548e8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+      "sha256": "2cac37932f27feb9e5754975f76c808ece26ac7173ff89c55570a0c4dc8ae208"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-INTEGRATION-EDITS.json",
+      "sha256": "8ccc62df56aaa5626e797ee2d1d76553347e8d9a519939e01a747190c9661084"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-INTEGRATION-CHECK.py",
+      "sha256": "dfed7e12c797f326895536b9bf05730c59d9b9e78e2fccea1f16d2b17c4f34f7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/DEVELOPMENT-ATTEMPTS.json",
+      "sha256": "141f45c3bd7823e04d6bb82fc67ec4df32b4391e9abd181d4ab403b5720c9416"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-01.lean",
+      "sha256": "754f55a9bbc12322c9f4698b890cb65c826cb142831ed5a0e7f5bc660f654bf8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-01.log",
+      "sha256": "3734faac71a349d91a4a0127277ac83daec7d77bf6e7f713a1a1f0c340496aa9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-02.lean",
+      "sha256": "9ad6771b443b55eb52583baa3d36080122e5149d69ff8821b4c8f2a54b4826e5"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-02.log",
+      "sha256": "21c83480bbc625a459f3766cc2182b91091e0cd1dd932a69af3acb81d3177d12"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-03.lean",
+      "sha256": "89af77e013389b6e12c3e1aab79f102ae978621ec93747ba601714d9ae6d77a2"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-03.log",
+      "sha256": "fbb3841ca4322e44cbc1bf50b1462cc4ed01c26c1e4267c7613f5089a7828fe4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/BEFORE.json",
+      "sha256": "3006c810a1a55d195d514097b284a3c4c5b179cb479f886aaee06483e85c7f20"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/CONCURRENT-EDIT-DETECTED.json",
+      "sha256": "80c1a6b4ecd8a8d4674e9ff6bf12c2c4efbe2ed8ad9d6ebede9ad877fc91a68d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-00-CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "ed8ec2c572d035a6dff6c3c17e8e0fe9d1fbabf956a2c0fff54e5ecce6880c97"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-01-RESEARCH.md",
+      "sha256": "8514703c372d1e668629fedbf237db0e223e2c9ff44e7762f53375e263413932"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-02-README.md",
+      "sha256": "540050e24aadcb2feb0fcdc47239a7ef8eced32739fe2eb0943a887c5ea102db"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-03-GENERATIVE-GROUNDING.md",
+      "sha256": "e3392e70e586fc4190c6b6445f7f254403512ecd8fd10cbb2fb56b0b39f0b9f0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-04-README.md",
+      "sha256": "f6df44cc450f2457f0e1507d6dd2a3935fcc72da2161ee716b6e78d4477285da"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-05-FOUNDATION-COMPOSITION.md",
+      "sha256": "cd8971b0c925899b5fc711d6dafe5a9b80a5dcdbe375932a6f90ffa217f61d51"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-06-FOUNDATION-PREMISES.md",
+      "sha256": "66b4a0e651995cb085d04018e800d6a740dcf305e7f20df12f4289816aa3e210"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-07-README.md",
+      "sha256": "4d49622caef1afda9fff5a5eaf1b444a058b403fed635508865fea8ed63b8f31"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/immediate-before-01-RESEARCH.md",
+      "sha256": "854ac4718f8bc0c7cc21995d819a2c9669822f9622bd407a20d269333a913342"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/immediate-before-02-README.md",
+      "sha256": "10d1afc496acc6ae03bfb151b3d1e0052fa5dad07520131b53c4fc0d5460c406"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/immediate-before-03-GENERATIVE-GROUNDING.md",
+      "sha256": "e3392e70e586fc4190c6b6445f7f254403512ecd8fd10cbb2fb56b0b39f0b9f0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/immediate-before-04-README.md",
+      "sha256": "42d449663e4844e670c64b75e503249f609324b934c4295952de68ec862176f8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/immediate-before-05-FOUNDATION-PREMISES.md",
+      "sha256": "66b4a0e651995cb085d04018e800d6a740dcf305e7f20df12f4289816aa3e210"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/immediate-before-06-README.md",
+      "sha256": "4d49622caef1afda9fff5a5eaf1b444a058b403fed635508865fea8ed63b8f31"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/immediate-before-07-FOUNDATION-COMPOSITION.md",
+      "sha256": "cd8971b0c925899b5fc711d6dafe5a9b80a5dcdbe375932a6f90ffa217f61d51"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/COMMENT-REVISION.json",
+      "sha256": "05925edbbdf12fb157f279c56e1060bbe796efd9e92f85ceb98c9d8c8ca06ff9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-01-GenerativeApplicabilityModel.lean",
+      "sha256": "1a2da82cb0ba45403fbac31ea5bd6365f8baaa30c29971d329e31ccc4803744f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-01-INPUTS.json",
+      "sha256": "fae4d3c7178f57aace2b362170e094893e6cdab262ed7af764a884705dfbbeb1"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-01-build.log",
+      "sha256": "6581c57476731c1d17c75db6f7d8150db62dcc2f8b82fc51fa3e87556e6dcda5"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-01-check.py",
+      "sha256": "698b11df4f8cd9105dfa3165c96ffa7d1ec7c37cbd12f581882e57c51ddc129c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-01-verification.json",
+      "sha256": "ee9b301418f0a562e7a17013d88d1b65c2336d403cf66eb2984a6d80f42d3c07"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-02-GenerativeApplicabilityModel.lean",
+      "sha256": "33866e4b1743f3cd3a7fc05c07c2df15b840776b633be6f7c99a7f93c62dbf2d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-02-INPUTS.json",
+      "sha256": "1274de20df93ced7c0f49f3f2b825ebdf28805f6c36468e9bee917efe96548e8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-02-build.log",
+      "sha256": "6581c57476731c1d17c75db6f7d8150db62dcc2f8b82fc51fa3e87556e6dcda5"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-02-check.py",
+      "sha256": "698b11df4f8cd9105dfa3165c96ffa7d1ec7c37cbd12f581882e57c51ddc129c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-02-verification.json",
+      "sha256": "2cac37932f27feb9e5754975f76c808ece26ac7173ff89c55570a0c4dc8ae208"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
+      "sha256": "89af77e013389b6e12c3e1aab79f102ae978621ec93747ba601714d9ae6d77a2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
+      "sha256": "33866e4b1743f3cd3a7fc05c07c2df15b840776b633be6f7c99a7f93c62dbf2d"
+    }
+  ]
+}

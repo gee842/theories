@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-06",
+  "purpose": "Preserve canonical bytes before integrating the nondual boundary/significance investigation. Snapshot links retain the original canonical base.",
+  "files": [
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-BOUNDARY-SIGNIFICANCE.md",
+      "sha256": "509174f73f7a8b04b07dfe1b0c54762f5b147e17053c38209e12ea2da994ef19",
+      "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/DEEPER-GENERATIVE-ROOT-BEFORE-BOUNDARY-SIGNIFICANCE.md",
+      "sha256": "18faf20356a9b0941c39c789603c51d20ee4445f8d6b9015145d6f3172fb375c",
+      "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    }
+  ],
+  "replaced_index_paragraphs": [
+    {
+      "path": "RESEARCH.md",
+      "paragraph": "**Ethical branch reoriented under core/tree nonduality, 6 October 2026:** [Ren's correction](sources/15-codex-theory-conversations/2026-10-06-core-tree-nonduality-and-method.md) is applied in the [grounding account](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#core-and-tree-are-nondual) and [methodological record](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-NONDUAL-REORIENTATION.md), under the shared nondual method. Earlier C1/C2 and authorization arguments remain local tests and no longer govern the starting divisions or next inquiry. The next provisional study follows practical boundaries, significance and response forming together and changing through their consequences. Model omissions, unresolved explanation and substantive failures remain distinct. This changes the trajectory without a new theorem, empirical result or completion claim.",
+      "sha256": "7bb50407663bd545bc412200deeb1172a62c66840715109c661c063157c94a7c"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "paragraph": "**Ethical branch application of the shared nondual method, 6 October 2026:** [The revised grounding account](unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#core-and-tree-are-nondual) treats core and tree as one generative unfolding whose differentiated formations can revise our core description. The [branch record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-NONDUAL-REORIENTATION.md) diagnoses the earlier drift toward making a sparse core authorize ethical additions. Earlier results remain scoped; a provisional study of boundaries, significance and response forming and changing together now organizes the inquiry. The project-wide method supplies the governing direction; this is its application here.",
+      "sha256": "961b82834aba53975a6f07082bf8abd6825d9f9affcffec9b74786303b8a120a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "paragraph": "**Core/tree correction applied to the ethical branch, 6 October 2026:** [The reorientation](CORE-TREE-NONDUAL-REORIENTATION.md) follows [Ren's exact correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nonduality-and-method.md) under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The ethical account and deeper-root §11 now investigate core and unfolding together. Prior authorization and C1/C2 studies remain local analyses; their former next-step priorities are historical where superseded. The next provisional study concerns boundaries, significance and response forming and changing together. No new scientific or formal result is claimed.",
+      "sha256": "eed593ba3aae1fc8513db4079a6c442f00adff6ae1b81e6c9946da94ff4ee22b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "paragraph": "**Ethical branch: core/tree reorientation, 6 October 2026:** Applying the [shared nondual method](NONDUAL-METHOD.md), the [revised ethical account](UNIFIED-ETHICAL-GROUNDING.md#core-and-tree-are-nondual) now follows **co-formation and consequential revision of practical boundaries, significance and response within the same history**. Concrete unfolding informs the core's articulation. Earlier reason-bridge and authority analyses retain local scope but no longer select this branch's governing starting point. The [methodological record](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-NONDUAL-REORIENTATION.md) preserves the prior formulations and distinguishes this correction from a completed explanation or proof. The dated ethical next steps below remain historical where this direction supersedes them.",
+      "sha256": "a8a143d549e551a2d005e2ed9bf4f7b970612ef049ecfd3e50b43d9550a36ef7"
+    }
+  ]
+}

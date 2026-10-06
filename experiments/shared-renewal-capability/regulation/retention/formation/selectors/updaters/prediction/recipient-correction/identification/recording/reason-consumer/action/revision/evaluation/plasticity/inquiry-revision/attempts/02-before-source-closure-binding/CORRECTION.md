@@ -1,0 +1,1 @@
+No event law or numerical result changed. The next run additionally verifies and binds all 65 accepted ancestor sources before and after execution, rather than binding only the immediate imported source and result artifact.

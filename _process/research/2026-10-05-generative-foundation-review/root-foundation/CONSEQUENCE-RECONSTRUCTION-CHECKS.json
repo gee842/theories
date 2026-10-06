@@ -1,0 +1,365 @@
+{
+  "status": "passed",
+  "scope": "Read-only source binding, old evidence preservation, additive integration and links; no scientific rerun.",
+  "scientific_receipt": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-independent-check.json",
+  "scientific_counts": {
+    "cases": 4,
+    "shared_prefix_events": 115,
+    "suffix_records": 36,
+    "suffix_native_events": 34,
+    "suffix_unavailable_requests": 2,
+    "stored_event_occurrences": 151
+  },
+  "source_bindings": 25,
+  "unique_source_and_helper_bindings": 26,
+  "independent_helpers": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_check_review.py": "bbe629da4557a86523153d9f082a8850d118d4fbef21a4fd2dde9f1e98c23703",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent_check.py": "c9ff5611ac3248b02db951bb2edcf7bf23e77d559f6e7da438c67047791a9250"
+  },
+  "prior_operative_artifacts_preserved": 12,
+  "prior_acquisition_artifacts_preserved": 16,
+  "acquisition_readme_recoverable_by_removing_two_explicit_addenda": true,
+  "prior_integration_fragments_preserved": 7,
+  "new_additive_fragments": 7,
+  "pre_edit_documents_exactly_recoverable": true,
+  "local_links_and_anchors_checked": 79,
+  "artifact_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md": "2002b8182af9a3d492adf854818c10c0029bba56acd7e219babd72e7f6fa0556",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md": "c9d6cf5e989d235964189ffde7bd04816c5789e5559aa9dd09e52092acd9b8f3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md": "caee38012b0c518fe38ec6f0cb88fa55038f5449e5d719aefb6968e358624ef1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md": "61be130cababfe8bc5d2348e2f125a04d76b3207cfc70624628e61b4dd552e4e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/RECONSTRUCTION-PROTOCOL.md": "f741753bd0251edb8f45d1fc9e12970857783888c6cb8ffef1e9e663f95b59c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction.py": "abd57e3e13d17a50d8c32c246bfe8385decad6ebb21282c62a615144c90583ae",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-results.json": "5e63a49c823324dd3f8f1b8b7072e02d9f894d7e5b34dd230f040fdb2ff76866",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction_check_review.py": "fb35ca1fc2f4fd4e19c112a734e16fe0fb60df42290191fe56679e3207c358b7",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-independent-check.json": "e3b70d8ec400190872b880a4e9e4a4d662328118ddd7662e389b097927604f9f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-DOC-EDITS.json": "d802a078c15e27524ba4904559d06e421200dd5c489ba029215b116dbd000742"
+  },
+  "links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/process.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/RECONSTRUCTION-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction_check_review.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/process.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/RECONSTRUCTION-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-MECHANISM.md#what-the-acquired-port-result-can-and-cannot-inherit"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+      "target": "REMAINING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-REVIEW.md#the-apparatus-closure-is-a-source-argument-not-six-path-induction-by-enumeration"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/process.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/RECONSTRUCTION-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction_check_review.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/RECONSTRUCTION-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction-independent-check.json"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/RECONSTRUCTION-PROTOCOL.md",
+      "target": "OPERATIVE-PROTOCOL.md"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#native-consequences-change-carrier-formation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "RECONSTRUCTION-PROTOCOL.md"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "reconstruction.py"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "reconstruction-results.json"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "reconstruction-independent-check.json"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md"
+    }
+  ],
+  "scope_review": {
+    "reviewed_integration_sha256": "2002b8182af9a3d492adf854818c10c0029bba56acd7e219babd72e7f6fa0556",
+    "mechanism_and_identification_review": "Accepted without blocking corrections",
+    "post_replay_algebra": "Independently checked by hand; no general Lean certificate claimed"
+  },
+  "new_reader_revision": false,
+  "new_empirical_experiment": false,
+  "stronger_foundation_complete": false
+}

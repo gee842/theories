@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "scope": "Exact originals and labeled reading/provenance files; no new scientific data or calculations. Primary criticism added after independent review; original first two documents unchanged. Transient Set-Cookie headers intentionally omitted.",
+  "files": {
+    "README.md": {
+      "sha256": "ff5e7b472553d9ed627bf26f472d734103ec98d71fd9918b1c35a05177f85ac2",
+      "bytes": 3372
+    },
+    "metadata/criticism-reading.json": {
+      "sha256": "0c9442e285526ad0b2bb6c340d455a4c0fd22b2d58cf243fab0067914d4a8feb",
+      "bytes": 2530
+    },
+    "metadata/reading-scope.json": {
+      "sha256": "2f8935ab4f068882bab42088d949fd0e609a8799e7bb08bb0d1be8f7c4b7176d",
+      "bytes": 1179
+    },
+    "metadata/retrieval.json": {
+      "sha256": "ade7457677425be2f69621fc452c2c5f751aaa71a41398adb77a44d54e1fd565",
+      "bytes": 2123
+    },
+    "original/kramar-alim-2021.pdf": {
+      "sha256": "1d3a504f89fa1c717287b65f0e4a63ce6161bdbcfb8507b84eddfefcfc89f8a2",
+      "bytes": 1253573
+    },
+    "original/reiber-nogueira-2021.html": {
+      "sha256": "9571bb31770aa01239b51d96266329ae606d92317ed9027c04b94585ce4680c3",
+      "bytes": 102732
+    },
+    "original/sonoda-2012.xml": {
+      "sha256": "233239007e7ba72f428d691536d2b1741a9592eb6d7626ac5dd0eec13cbbfe4a",
+      "bytes": 36170
+    },
+    "reading/kramar-alim-2021.txt": {
+      "sha256": "002dfd06f942ab60531d277708b3363ca5559f12ee00c888331811c85401d706",
+      "bytes": 43463
+    },
+    "reading/reiber-nogueira-2021.txt": {
+      "sha256": "48ce2b3ae4956d4b22edc7536d64055ab8ad92561bc91d947746d362f8399827",
+      "bytes": 6677
+    },
+    "reading/sonoda-2012.txt": {
+      "sha256": "b0c9e9e709b8ac476eb626996278d156eea2605a17f957205bf934496df8ba95",
+      "bytes": 11742
+    }
+  }
+}

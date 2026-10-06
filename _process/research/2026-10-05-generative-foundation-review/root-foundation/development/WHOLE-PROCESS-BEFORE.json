@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "scope": "Exact pre-edit originals including concurrent no-return and other additions; snapshot links retain original bases",
+  "snapshots": [
+    {
+      "original": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-WHOLE-PROCESS.md",
+      "sha256": "2b4a73177093fd04e518733f972f1c32daaba067492a7aa901df901b2b7a50cc"
+    },
+    {
+      "original": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/NONDUAL-METHOD-BEFORE-WHOLE-PROCESS.md",
+      "sha256": "fd745516233a70b6690ccd2feb5b22ece648d5844d5912448a1e75f17c7267d3"
+    }
+  ]
+}

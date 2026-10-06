@@ -1,0 +1,9 @@
+{
+  "recorded_at_utc": "2026-10-06T04:26:15.928920+00:00",
+  "helper_sha256": "ddb7cba389c8f2a669fdb735b1c0421c7a62ac4e83ed577823297a5a30cf464b",
+  "reply_sha256": "567ebe6e99c5ce86605d2690c537b1b7b982c180729a318245584fb7e252763c",
+  "response_sha256": "d36020ee0ab1b055afe5b994c066006e07c7ea647c3f8f0ca1999e172bd7e080",
+  "followup_sha256": "bfc716ab21ba687ffefc788adc53aa75deef931c304ca1981b23cb0a80b790ba",
+  "broker_returncode": 0,
+  "request_number": 1
+}

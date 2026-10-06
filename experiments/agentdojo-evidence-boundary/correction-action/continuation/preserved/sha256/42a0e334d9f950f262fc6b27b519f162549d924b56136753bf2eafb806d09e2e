@@ -1,0 +1,7 @@
+{
+  "request_id": "audit-w02-011",
+  "operation": "read",
+  "artifact": "candidates/c0001/patch.diff",
+  "offset": 0,
+  "limit": 12000
+}

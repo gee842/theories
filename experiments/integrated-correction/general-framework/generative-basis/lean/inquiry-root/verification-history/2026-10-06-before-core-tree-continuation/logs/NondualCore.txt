@@ -1,0 +1,11 @@
+'NondualCore.history_step_preserves' does not depend on any axioms
+'NondualCore.history_step_lifts' does not depend on any axioms
+'NondualCore.history_continuations_exact' does not depend on any axioms
+'NondualCore.forget_present' does not depend on any axioms
+'NondualCore.present_forget' does not depend on any axioms
+'NondualCore.forget_injective' does not depend on any axioms
+'NondualCore.presented_trace_exact' does not depend on any axioms
+'NondualCore.described_history_continuations_exact' does not depend on any axioms
+'NondualCore.presentation_preserves_affected' does not depend on any axioms
+'NondualCore.exact_role_report_iff_fibers' does not depend on any axioms
+'NondualCore.profile_difference_forbids_report_collision' does not depend on any axioms

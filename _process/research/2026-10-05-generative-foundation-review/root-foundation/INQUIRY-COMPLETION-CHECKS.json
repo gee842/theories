@@ -1,0 +1,273 @@
+{
+  "status": "passed",
+  "scope": "Read-only final source preservation, verification freshness, document integration and local link targets; no scientific rerun",
+  "scientific_case_count": 15,
+  "extension_events": 321,
+  "current_source_bindings": 14,
+  "preserved_preceding_result_bindings": {
+    "results.json": 5,
+    "refinement-results.json": 10
+  },
+  "preceding_result_bytes_unchanged": true,
+  "canonical_additions_present": 5,
+  "local_link_targets": 61,
+  "artifact_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md": "7a9ea25ddef5d9e7c91efb0db2d180005b3d525939debabbc108a9de33923a52",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md": "4460853b6ede514c42ff46fb05b9e42f446863dc3408a28f974147efde17d667",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md": "146cc5c6eef02c61a6e0900e5e697ab2c42be67efef4903a9bdf2d526e390a50",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md": "4d987650219f275eb8f9e7099282638807270c0feed1e8f5afde2365e027e446",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md": "daa5b3e08c3bf8ef58ac95715acd2bd151937b833664d0dbf6b3dbc813bba96a",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry_check_review.py": "3770a15d141d5e6e998fb8cf3f241f5397786415525653577c4d7d06fdde0b78",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-independent-check.json": "a4a4324ec2de4446084a742e74456e9329491855693a4af1230656d2e46c2789",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-DOC-EDITS.json": "3f49fda8d98c822b274248b1b77a8d7113ec559c5e2e3bb4136b8b9cbe4fab84"
+  },
+  "links": [
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md",
+      "REFINEMENT-PROTOCOL.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "INQUIRY-PROTOCOL.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "inquiry.py"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "inquiry-results.json"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "inquiry_check_review.py"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "inquiry-independent-check.json"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "INQUIRY-MECHANISM.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
+      "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "INQUIRY-PROTOCOL.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "inquiry.py"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "inquiry-results.json"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "inquiry-independent-check.json"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "REFINEMENT-MECHANISM.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "../PROTOCOL.md"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MATH.md#4-a-finite-contingent-continuation-criterion"
+    ],
+    [
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md",
+      "../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ATTAINABLE-MATHEMATICAL-QUESTIONS.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "APPLICATION-DISTINCTION-INTEGRATION.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "INQUIRY-SUFFICIENCY-MATH.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "INQUIRY-CRITERION-MATH.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "INQUIRY-COMPLETION-COMPARISON.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "SHARED-WORLD-GROUNDING.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+      "INQUIRY-COMPLETION-REVIEW.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "INQUIRY-SUFFICIENCY-MATH.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry_check_review.py"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement_check_review.py"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-independent-check.json"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "INQUIRY-COMPLETION-REVIEW.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "INQUIRY-REVISION-MECHANISM.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/README.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "SHARED-WORLD-GROUNDING.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "../../2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+      "../../../../sources/15-codex-theory-conversations/2026-10-06-whole-process-ethical-goal.md"
+    ],
+    [
+      "RESEARCH.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#acquired-fulfillment-governs-further-inquiry"
+    ],
+    [
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "INQUIRY-COMPLETION-REVIEW.md"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md"
+    ],
+    [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md"
+    ],
+    [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md"
+    ],
+    [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "UNIFIED-ETHICAL-GROUNDING.md#the-whole-as-the-grounding-question"
+    ]
+  ]
+}

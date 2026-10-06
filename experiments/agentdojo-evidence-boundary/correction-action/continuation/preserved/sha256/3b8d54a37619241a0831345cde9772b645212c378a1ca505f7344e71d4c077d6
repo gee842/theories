@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/w01/runs/r0001/tree/experiments/agentdojo-evidence-boundary/check_replay.py", line 16, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'

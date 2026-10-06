@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "producer_imported": false,
+  "native_model_imported": false,
+  "method": "Independent native transitions, complete graph discovery and bottom-up endpoint profiles; source-bound ancestry replay",
+  "configurations": 4800,
+  "grid_counts": {
+    "states": 34744,
+    "edges": 217030,
+    "positive_witnesses": 4096,
+    "witness_events": 11584
+  },
+  "source_binding_count": 9,
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py": "4daecb9934d195f1c638e3b26dddd72143b05a9edfa6cfc789244851650bde5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md": "b0e70c98fc922950ddefeb7549d142e6fcc890526474a9f36c0f74a036a5bde5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1"
+  },
+  "producer_result_sha256": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630",
+  "checker_sha256": "c9ff5611ac3248b02db951bb2edcf7bf23e77d559f6e7da438c67047791a9250",
+  "actual_history_records": 13,
+  "actual_event_occurrences": 1179,
+  "ancestor_events": 94,
+  "shared_prefix_events": 388,
+  "full_local_events": 392,
+  "full_bulk_events": 390,
+  "equal_energy": 216,
+  "support_compositions": [
+    [
+      1,
+      215
+    ],
+    [
+      0,
+      216
+    ]
+  ],
+  "blocked_continuation_states": 3120,
+  "blocked_continuation_edges": 7642,
+  "proof_scope": "Finite reconstruction plus independently reviewed general hand argument; no new Lean build or acquisition mechanism certified here"
+}

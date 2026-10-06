@@ -1,0 +1,82 @@
+{
+  "files": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "f268ff3fdede17448955820dc5060bf4a4c8209febfc6f25572596b30dd7716f",
+      "before_bytes": 150962,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/00-RESEARCH.md"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "9c9176f169e355573584464730af7f005663d1cb951b6df8064ce67c311f2a79",
+      "before_bytes": 517929,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/01-README.md"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "08140fa213c8dcd4d0886857bb6957c6b99a00c817662ef1aff7654ac2673532",
+      "before_bytes": 153161,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/02-GENERATIVE-GROUNDING.md"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "before_sha256": "450848a523e4dc4e9b699406d5e6ff1b1ebf3dacc87d891f31f00ab2914d4436",
+      "before_bytes": 21165,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/03-TOOL-EVIDENCE-AND-AUTHORITY.md"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "before_sha256": "d2d820dac293fdef7438b0678712a0d93c587339f6133e644e3348e98f87c0e4",
+      "before_bytes": 18371,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/04-ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "before_sha256": "d39f4626620ca890b86b5e61779ff9fae2c1e43763350e9894a2426c3c6fb5b5",
+      "before_bytes": 7209,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/05-README.md"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md",
+      "before_sha256": "07083a57b33e197b0622c949f2b607b4f9ef5bebdb6c28c89ed3d10be7bdcff6",
+      "before_bytes": 9092,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/06-ALIGNMENT-FRONTIER-ASSESSMENT.md"
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/README.md",
+      "before_sha256": "aed1b91b64004eefad0ef933d9723014bb4df6688d32c120763fa7fcf4fb5641",
+      "before_bytes": 2475,
+      "snapshot": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/07-README.md"
+    }
+  ],
+  "seven_requirement_and_evidence_cells": [
+    [
+      " Explain the common foundation ",
+      " Informative law conditions and connected mechanisms from organization through significance, externally grounded cognition, learning, selectors, concern and wisdom; necessity claims with explicit quantifiers "
+    ],
+    [
+      " Ground and revise concern ",
+      " An account of how another center's consequences enter evaluation, why relevant reasons withstand scrutiny, how errors and new claimants change the account, and where widening fails "
+    ],
+    [
+      " Compose actual mechanisms ",
+      " Earlier outputs genuinely supply later material, information, identity, timing, authority and resource inputs; no hidden resets or reward substitution "
+    ],
+    [
+      " Protect futures under changing circumstances ",
+      " Continued learning and effective response through target change, scarcity, replacement, lost dependence and changed power; clear limits under infeasible conditions "
+    ],
+    [
+      " Handle plural agency and authority ",
+      " Defensible standing, consent and conflict treatment; effective recourse for affected parties; justified limits on both principals and AI action; no equation of system preservation with everyone's future "
+    ],
+    [
+      " Work in learned AI and social arrangements ",
+      " Implementations with independently identified inputs and adversarial tests of generalization, oversight, manipulation, capture and replacement, compared with strong matched alternatives "
+    ],
+    [
+      " Establish explanatory and empirical reach ",
+      " Discriminating predictions and interventions in materially different systems, calibrated uncertainty, independent review, failed cases and comparison with simpler accounts "
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+'NoninstrumentalConcern.RootGrounding.universal_gives_anchors' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.universal_gives_locality' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.anchors_and_locality_give_universal' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.universal_iff_anchors_and_locality' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.factorization_gives_locality' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.locality_gives_factorization' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.factorization_iff_locality' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.zero_reasons_factor' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.zero_reasons_lack_anchor' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.historical_link_covariant' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.RootGrounding.linked_after_append' depends on axioms: [propext]
+'NoninstrumentalConcern.RootGrounding.no_historical_link_at_origin' depends on axioms: [propext]
+'NoninstrumentalConcern.RootGrounding.diagonal_history_forms_by_actual_trace' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.history_all_events_anchored' depends on axioms: [propext]
+'NoninstrumentalConcern.RootGrounding.history_fixed_event_operator_substitution_fails' depends on axioms: [propext]
+'NoninstrumentalConcern.RootGrounding.history_simultaneous_swap_preserves_reason' depends on axioms: [propext]
+'NoninstrumentalConcern.RootGrounding.never_agent_patient_not_in_own_image' depends on axioms: [propext]
+'NoninstrumentalConcern.RootGrounding.silent_patient_locality' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.silent_patient_own_anchor' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.silent_patient_no_reason' depends on axioms: [propext]
+'NoninstrumentalConcern.RootGrounding.silent_patient_not_covered' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.old_c2_iff_decomposition' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.same_event_preserves_badness' does not depend on any axioms
+'NoninstrumentalConcern.RootGrounding.local_anchor_actual_service' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

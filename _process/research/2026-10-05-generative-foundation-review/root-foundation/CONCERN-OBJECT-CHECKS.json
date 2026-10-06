@@ -1,0 +1,348 @@
+{
+  "date": "2026-10-06",
+  "scope": "Owned text, links and two protected Lean files; no empirical run or ethical proof",
+  "record_sha256": "e1d8fa5c5995d96d6a3777d5f04d7d698171c1efe63949fa62b29d461d9584de",
+  "passed": 68,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "unique replacement 10",
+      "passed": true
+    },
+    {
+      "check": "unique appended content 0",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "check": "unique appended content 1",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "unique appended content 2",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "unique appended content 3",
+      "passed": true
+    },
+    {
+      "check": "unique replacement 4",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "check": "unique replacement 5",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: RESEARCH.md",
+      "passed": true
+    },
+    {
+      "check": "unique replacement 6",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "check": "unique replacement 7",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "check": "unique replacement 8",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true
+    },
+    {
+      "check": "unique replacement 9",
+      "passed": true
+    },
+    {
+      "check": "unowned content unchanged: sources/SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "protected formal file: experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "passed": true
+    },
+    {
+      "check": "protected formal file: experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md -> HUIGEN-SELF-GROUND-AUDIT.md#53-warranted-attention-within-a-shared-perspective",
+      "passed": true
+    },
+    {
+      "check": "heading: HUIGEN-SELF-GROUND-AUDIT.md#53-warranted-attention-within-a-shared-perspective",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md -> FUTURE-GOOD-INTEGRAL.md#attitudes-as-realizations-rather-than-repeated-future-value",
+      "passed": true
+    },
+    {
+      "check": "heading: FUTURE-GOOD-INTEGRAL.md#attitudes-as-realizations-rather-than-repeated-future-value",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md -> WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md -> WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md -> CONCERN-OBJECT-EDITS.json",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md -> CONCERN-OBJECT-CHECKS.json",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md -> WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "local link: theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#attitudes-as-realizations-rather-than-repeated-future-value",
+      "passed": true
+    },
+    {
+      "check": "heading: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#attitudes-as-realizations-rather-than-repeated-future-value",
+      "passed": true
+    },
+    {
+      "check": "local link: RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "heading: _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "local link: theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md -> UNIFIED-ETHICAL-GROUNDING.md#when-fulfilled-concern-itself-needs-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: UNIFIED-ETHICAL-GROUNDING.md#when-fulfilled-concern-itself-needs-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: theories/shengsheng-buxi-generative-existence/README.md -> unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#when-fulfilled-concern-itself-needs-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#when-fulfilled-concern-itself-needs-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-PROCESS-REALIZATION-REVIEW.md#10-review-concerns-object-and-correction",
+      "passed": true
+    },
+    {
+      "check": "heading: WHOLE-PROCESS-REALIZATION-REVIEW.md#10-review-concerns-object-and-correction",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-GOOD-INTEGRAL.md#attitudes-as-realizations-rather-than-repeated-future-value",
+      "passed": true
+    },
+    {
+      "check": "heading: FUTURE-GOOD-INTEGRAL.md#attitudes-as-realizations-rather-than-repeated-future-value",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> CONCERN-OBJECT-EDITS.json",
+      "passed": true
+    },
+    {
+      "check": "local link: _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> CONCERN-OBJECT-CHECKS.json",
+      "passed": true
+    },
+    {
+      "check": "local link: sources/SOURCES.md -> ../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "heading: ../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md#9-attitudes-to-realized-good-and-adversity",
+      "passed": true
+    },
+    {
+      "check": "unique numbered headings: WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "check": "unique numbered headings: WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "unique numbered headings: WHOLE-PROCESS-REALIZATION-REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "unique numbered headings: FUTURE-GOOD-INTEGRAL.md",
+      "passed": true
+    }
+  ],
+  "file_boundaries": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
+      "current_sha256": "7a8fea6fdc5be955f69e50733dd701876bb0f8cac29d4476fb11fcd4e8cba719",
+      "recorded_after_sha256": "7a8fea6fdc5be955f69e50733dd701876bb0f8cac29d4476fb11fcd4e8cba719",
+      "matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "current_sha256": "7b91db5a136829b392e61d6007dcd11165d8608fce536abf04ac1f3861543197",
+      "recorded_after_sha256": "7b91db5a136829b392e61d6007dcd11165d8608fce536abf04ac1f3861543197",
+      "matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md",
+      "current_sha256": "df75d87da51b7557509e3155eaba58e5c3a492aef296242be671163f021eac05",
+      "recorded_after_sha256": "df75d87da51b7557509e3155eaba58e5c3a492aef296242be671163f021eac05",
+      "matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "current_sha256": "688644db561bd6acdec620df536bf8a639081e2965ae07bf251c37980d75dd2a",
+      "recorded_after_sha256": "f6947d1c34331f944b292bfc7bad6e0a86f43674038eefbe4d7d48ec11f8b839",
+      "matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "current_sha256": "a9819c1a5c45df104517c0d7d294cbd182c7f6aba01c66ace4680d3dd6279f25",
+      "recorded_after_sha256": "a9819c1a5c45df104517c0d7d294cbd182c7f6aba01c66ace4680d3dd6279f25",
+      "matches": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "current_sha256": "54c0dac2462463f138b531488ce2c91842969cb69382a7e67998eb5ef1df6d3a",
+      "recorded_after_sha256": "54c0dac2462463f138b531488ce2c91842969cb69382a7e67998eb5ef1df6d3a",
+      "matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "current_sha256": "47deb179c47c65cd752bf0b401b83d22e34814eb03523e989591759e8a71c650",
+      "recorded_after_sha256": "47deb179c47c65cd752bf0b401b83d22e34814eb03523e989591759e8a71c650",
+      "matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "current_sha256": "2bafc0be4470ba5bfe46e4a86b3676a55c468d22b33467279cef87a70ea4e45d",
+      "recorded_after_sha256": "2bafc0be4470ba5bfe46e4a86b3676a55c468d22b33467279cef87a70ea4e45d",
+      "matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "current_sha256": "57a00aa1f73910fde3f1c250ad28f9b8ba35925b510581fffdfd426d7477b815",
+      "recorded_after_sha256": "57a00aa1f73910fde3f1c250ad28f9b8ba35925b510581fffdfd426d7477b815",
+      "matches": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "current_sha256": "6eee8f4297a7d19c23f158ba96502460a264cc8baca004c749bf93e1fc95263e",
+      "recorded_after_sha256": "6eee8f4297a7d19c23f158ba96502460a264cc8baca004c749bf93e1fc95263e",
+      "matches": true
+    }
+  ],
+  "review_status": {
+    "affirmative_argument": "Accepted exact integrated text, no necessary repairs.",
+    "counterreview": "Accepted subject to the applied fair-treatment wording repair.",
+    "source": "Accepted source scopes, bounded synopses and integration; no material corrections."
+  }
+}

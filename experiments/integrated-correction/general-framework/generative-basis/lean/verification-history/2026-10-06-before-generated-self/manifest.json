@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-06",
+  "scope": "Exact entry point, checker, documentation and successful evidence before generated-self/ethical-orientation extension. Source locations preserve original relative-link bases.",
+  "files": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/GenerativeModel.lean",
+      "sha256": "b9f69fd89bd8a1833166e27017d3c28bacbcc68bd449a759baa54d84e42287ae"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/check.py",
+      "sha256": "2683ee7f2a221d63190e5f58b295844dc195fd2efc26f5bcdf39195d80f2f986"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification.json",
+      "sha256": "74d4ff33ea8ca00345bb0dc9d92470e987a30c5a967a840550451d835a171b99"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/README.md",
+      "sha256": "18aa57ff51fcff8f17a5d6974bc57c3cfb243a1a9ce7feb718812b48145f4296"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/lean-toolchain",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/lean-toolchain",
+      "sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/BoundaryModels.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/Depletion.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/Depletion.txt",
+      "sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicClassification.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicConsequences.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicSymmetry.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicUnderdetermination.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GeneratedPaths.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeCore.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeModel.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/GenerativeModel.txt",
+      "sha256": "41b8f5b859a809ab06c37c3880a5ca4bac58b82674962ca4b88e0e00004abc75"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/HistoryRealization.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/ProductTower.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/RootRealization.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-generated-self/verification/RootRealization.txt",
+      "sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    }
+  ]
+}

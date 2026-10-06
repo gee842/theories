@@ -1,0 +1,30 @@
+{
+  "scope": "Remove only reproducible unbound Lean compiled outputs; preserve proof evidence",
+  "protected_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/VERIFICATION.json": "046df9b2b4a9c6ecf7afdc6d883e27dac4d0ec16d97406b4d01c1e960c288e50",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-01.json": "90242a38b6355c417f1e0d8b73afd2676279de90555efa7e25b805cd00e5202f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-01.lean": "8a1ef6ab99e51ee428a0bc52fbe81d7910825e811603a4404ec8c3cbf12e1232",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-01.log": "ebce2b766b3d4859a250dae8ab45f452aaf34ca55b99ae9b33988b2653941219",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-02.json": "8317091ff639ee770cc5c87ce9c61b82af4132df3a301dddb05d1eae75db5007",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-02.lean": "5c86c940d1eb408a310cb2cedb4c7332ad130d7544a60508e1fc7fc75c6d92b0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-02.log": "c672155ee825b8d5499ca83c3c40118d7061b224dd82557bae00923a3ca75c83",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean": "5c86c940d1eb408a310cb2cedb4c7332ad130d7544a60508e1fc7fc75c6d92b0"
+  },
+  "removed": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/FormedSelection.olean",
+      "bytes": 5060056,
+      "sha256": "a30a1b33d26d3c73366c1184c3256a9ae2f7d9379e117d0af22868e9f273bf53"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.olean",
+      "bytes": 676688,
+      "sha256": "ab6b42a8c385cb106699dd981fd760aed9d69bf931746518412780beb33d74a3"
+    }
+  ],
+  "preserved_scripts": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/build-before-cleanup.py": "3311c0413e34e696f68407bf083ca17835acc51ec4403129440e103a8836c58d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/verify-before-cleanup.py": "eef65003574303e9ecd780c3428d03ed17925f4e7355d4f6a913f2d46f4e44d5"
+  }
+}

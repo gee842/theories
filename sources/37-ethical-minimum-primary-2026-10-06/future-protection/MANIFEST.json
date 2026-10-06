@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "filename": "pummer-2024-gpi-working-paper.pdf",
+      "author": "Theron Pummer",
+      "title": "Future Suffering and the Non-Identity Problem",
+      "version": "Global Priorities Institute Working Paper No. 17-2024; July 2024, as stated on the cover",
+      "requested_url": "https://www.globalprioritiesinstitute.org/wp-content/uploads/Pummer-T-Future-Suffering-and-the-Non-Identity-Problem.pdf",
+      "final_url": "https://www.globalprioritiesinstitute.org/wp-content/uploads/Pummer-T-Future-Suffering-and-the-Non-Identity-Problem.pdf",
+      "retrieved_at_utc": "2026-10-06T09:52:51.838622+00:00",
+      "content_type": "application/pdf",
+      "bytes": 622301,
+      "sha256": "e455f9062cee47d6f1ed5bc12c8879e699dff9144d0b6ee2451cae442644446f",
+      "pdf_pages": 51,
+      "preservation": "Exact retrieved PDF bytes, unchanged; no normalization or extraction substituted for the original.",
+      "investigator_reading_scope": "Cover; complete manuscript pages 1–29, 34–38 and 45–46, including notes on those pages, through web and in-memory local text extraction. Not a complete-paper or facsimile reading; manuscript page 1 is PDF page 2."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "request_id": "new-stage",
+  "operation": "stage",
+  "base": "v0",
+  "recipe": "unique_visible_counterparty"
+}

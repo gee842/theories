@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "file": "hepach-vaish-tomasello-2012.pdf",
+      "url": "https://www.eva.mpg.de/documents/Sage/Hepach_Young_PsychScience_2012_1567500.pdf",
+      "bytes": 876915,
+      "sha256": "95216a67b5a9ce0025f9647f0da422e008f96a313a252f02e2826cb98d00ba1d",
+      "retrieved": "2026-10-06",
+      "status": "original PDF bytes; no edits"
+    },
+    {
+      "file": "hepach-vaish-tomasello-2016-online.pdf",
+      "url": "https://sites.duke.edu/tomasellolabduke/files/2017/06/Hepach2c-Vaish2c-Tomasello.pdf",
+      "bytes": 1275050,
+      "sha256": "baf0b6bfa8dbe1d6d1252b9ce57fcf304fc1f0381f15fef1feba8add133473a7",
+      "retrieved": "2026-10-06",
+      "status": "original PDF bytes; no edits"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "scope": "Narrow integration additions; records saved after each phase",
+  "editing_note": "Initial script applied four insertions, then stopped at an overbroad duplicate-prefix assertion before SOURCES.md. Their exact insertion text was recovered from the displayed/current first paragraphs, reversed to bind before states, and not reapplied. No scientific artifact changed.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "operation": "insert_after_first_line",
+      "insert": "\n**Alignment frontier comparison, 6 October 2026:** the [completed targeted assessment](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md) retains the costed formation, warranted repair and destructive-revision construction as a specific contribution candidate. Established learning, goal revision and governance methods prevent broad novelty claims; comparative priority and general practical advantage remain unestablished. The [alignment contract](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md) now credits final acceptance of the conditional foundation and preserves all seven requirements. **Next connection:** selective warranted revision through verified effects in an authentic continuing workflow, against an equally informed ordinary controller; the application contract is proposed, not an executed trial.\n",
+      "before_sha256": "bfc7baa8695fafb3acbc65d9474bc902f00bed2c0d332bcb3d7594f07054a2c5",
+      "after_sha256": "0f773084d114fc4d735d1995e20d92da937817698dfa8c120ba8608e4ca0a482",
+      "before_hash_basis": "reconstructed by removing the exact applied insertion; original in-process hash was not saved before the later guard failure"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "operation": "insert_after_first_line",
+      "insert": "\n**Alignment contribution checkpoint, 6 October 2026:** the [targeted prior-art assessment](../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md) identifies specific formation/application and failure results while leaving field-level novelty and general alignment advantage unestablished. The completed conditional foundation retains its scope. The separate [alignment programme](unified-2026-10-05/ALIGNMENT-COMPLETION.md) now targets reliable selective revision through actual effects with strong matched conventional comparisons.\n",
+      "before_sha256": "6bb3d1e35bdf743737fb3ad7796552a9ff625ae3dff2312b5947919c67fde42c",
+      "after_sha256": "454c377467f5c5a33888f1ab07d800ad8e55cefccf356f078be94504c21ce1cd",
+      "before_hash_basis": "reconstructed by removing the exact applied insertion; original in-process hash was not saved before the later guard failure"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "operation": "insert_after_first_line",
+      "insert": "\n**Current contribution and scope, 6 October 2026:** the [final coordinating review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) accepts the completed conditional candidate foundation. The [new frontier comparison](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md) preserves its particular formation, warranted-application and failure results while leaving comparative priority and general alignment advantage unestablished. Earlier pending-foundation descriptions below are historical checkpoints. The [current seven-requirement contract](ALIGNMENT-COMPLETION.md) credits those closed interfaces and retains the stronger practical alignment/governance obligations.\n",
+      "before_sha256": "7897b50315b987c69f366898dea2e73bcfaeb803b37402998b14f1a8eb2d8309",
+      "after_sha256": "d17a6733462f2a59b0641216a80a3076140ebd0673dda748cb3c09665ab06c61",
+      "before_hash_basis": "reconstructed by removing the exact applied insertion; original in-process hash was not saved before the later guard failure"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "operation": "insert_after_first_line",
+      "insert": "\n**Completed frontier comparison, 6 October 2026:** [the assessment](ALIGNMENT-FRONTIER-ASSESSMENT.md) integrates [construction](FRONTIER-CONSTRUCTION-COMPARISON.md), [adaptive alignment](FRONTIER-ADAPTIVE-ALIGNMENT-SOURCES.md), [relational proposals](FRONTIER-RELATIONAL-COMPARISON.md) and [goal/authority](FRONTIER-GOAL-AUTHORITY-COMPARISON.md) comparisons. Specific local contribution candidates survive; broad novelty and a general practical advance remain unestablished. The [next application contract](FRONTIER-NEXT-APPLICATION.md) is proposed and unexecuted. [Independent review](FRONTIER-INTEGRATION-REVIEW.md) and [integration](FRONTIER-INTEGRATION.json) bind the scope and unchanged seven requirements separately from scientific validation.\n",
+      "before_sha256": "acc741a652cd2059a992376cd7ea11801cfce0ff9c89d2ab53d46abcce836d4c",
+      "after_sha256": "d39f4626620ca890b86b5e61779ff9fae2c1e43763350e9894a2426c3c6fb5b5",
+      "before_hash_basis": "reconstructed by removing the exact applied insertion; original in-process hash was not saved before the later guard failure"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "operation": "insert_after_first_line",
+      "insert": "\nResearch source record, 6 October 2026: [frontier goal/authority comparators](36-alignment-frontier-comparators-2026-10-06/README.md) records three primary readings as link-only access; [relational comparators](36-relational-alignment-comparators-2026-10-06/README.md) separately preserves original Springer HTML and records Wiley reader-only access and unresolved chronology. The full directory names distinguish the concurrently numbered collections. [Ren’s exact frontier question](15-codex-theory-conversations/2026-10-06-alignment-frontier-question.md) is preserved separately from the [AI-authored assessment](../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md). No model training, paper experiment replication or general priority certification is imported.\n",
+      "before_sha256": "923b04469e7b7a4bb42953cad2714f56dc0e54b7206931eebc3079bac334d4da",
+      "after_sha256": "37b7f9d4425727e58de9581cc5001d220b400f52c6cdcd709d62b90b4dc6a758"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "operation": "insert_after_heading",
+      "heading": "## The derivation and the existing work\n",
+      "insert": "\n**Separate alignment application, 6 October 2026:** the [frontier comparison](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md) retains the completed conditional foundation and narrows broad originality claims against primary predecessors. Its next practical bridge is patient-related application grounds → selective revision → authorized verified effects, with an equally informed ordinary comparator. This is an extension under the [alignment requirements](ALIGNMENT-COMPLETION.md), not a newly missing condition of the completed foundation.\n",
+      "before_sha256": "c2c6e08ff2ecca7bafae51df49b892864d0a913a90d4e16c5548b96053bcf793",
+      "after_sha256": "4870c144ca9bf12f798900203356e48053f359a2006d260209955ba027b0fc1d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-LITERATURE.md",
+      "operation": "append",
+      "insert": "\n## Later detailed frontier comparison\n\n6 October 2026. The [current assessment](ALIGNMENT-FRONTIER-ASSESSMENT.md) deepens selected primary readings and adds explicit conventional, goal/authority and relational comparisons. It credits final acceptance of the conditional foundation and distinguishes that result from novelty or general alignment reliability. The named application bridge is selective warranted revision through actual effects. The four supporting notes state their reading limits, reported-source discrepancies and remaining comparison questions; the proposed application contract is not an experiment. The earlier review remains preserved at its original scope.\n",
+      "before_sha256": "6fb8708e3546eb0f39a6e718fc4f98e032763a061df3171fd5d94e66311fff23",
+      "after_sha256": "4d636983af49b1dd71c687dd9b7503972e503cedcccb0014f46577fba433734e"
+    }
+  ]
+}

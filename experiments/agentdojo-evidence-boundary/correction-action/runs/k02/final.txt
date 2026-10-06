@@ -1,0 +1,5 @@
+Confirmed the proxy error remains: 24 goal-1 traces have ambiguous counterpart candidates. Warranted proxy counts are 3 true, 5 false, and 24 unknown.
+
+No repair was applied. All 407 other files remain unchanged; all 320 saved rows and aggregates reproduce in memory.
+
+Diagnosis: [analysis-note.md](/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-local-maintenance-2i52at3z/k02/analysis-note.md).

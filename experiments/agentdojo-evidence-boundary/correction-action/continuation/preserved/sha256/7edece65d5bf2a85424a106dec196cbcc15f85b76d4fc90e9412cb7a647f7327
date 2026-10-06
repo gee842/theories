@@ -1,0 +1,7 @@
+{
+  "request_id": "audit-w02-002",
+  "operation": "read",
+  "artifact": "runs/r0001/stdout.txt",
+  "offset": 0,
+  "limit": 12000
+}

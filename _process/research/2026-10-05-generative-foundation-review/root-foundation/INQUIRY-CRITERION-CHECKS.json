@@ -1,0 +1,25 @@
+{
+  "scope": "Owned documents/insertions and finite verification receipts; no old scientific rerun",
+  "documents_or_owned_sections": 15,
+  "local_links": 64,
+  "anchors": 7,
+  "math_delimiters": "balanced",
+  "saved_decisions": 8100,
+  "preserved_parent_decisions": 1080,
+  "unchanged_source_bindings": 11,
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ATTAINABLE-MATHEMATICAL-QUESTIONS.md": "97ade58b8325359b4c82be12572431371c7bb5a7c75e0264e6731e10a429a0e9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-MATH.md": "c5df5ab485188662a58d0cc035b9c3d13922e4665872c6e3f438bd6e88dd0008",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-REVIEW.md": "41ea84331b852dff7dd1af60ba9b7868cf08ff34d3850b1550bb9cb3efaf224a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-SOURCES.md": "a6c071a160b50743c7c8b3bebe396e853ed5d9388a7fbb75e60eb2b6f549df33",
+    "sources/15-codex-theory-conversations/2026-10-06-attainable-question-continuation.md": "a24f74717a9084a0db38907c3a3d387b964a1f4781c7f14a8c83fc99032c4226",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/README.md": "a240032bef1a5b88c739ea63af2d7d59ff5018045f6bec6ad659c5c431585066",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/PROTOCOL.md": "4606949a46f4b6fd3a687aaac7b5d205fe1e8df59d7bbf4cb52ea545831ec708",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-INDEX-EDITS.json": "91da0933dccc88c26d517d7a9f6b343fa670a2f29f815cb04735c5474ac33cd0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/results.json": "e35ec64da8a486eb8b9d089f4334758b41a2f525cdadf4fa12161a6930ec1d8c",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review-check.json": "0b6d37cab949bc23fa1e02b6c0d61cad7692d0844fa51548be5e0804c537fb3f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/check.py": "fc5ac39d102f1111b523747d2f123496104b890e07022def73f8ddd55666f134",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review_check.py": "ed9ae426cc108bf3e2786298e0b4e2c6c569e5a520bc7e323a04d7e7230b1538",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-CHECK.py": "04f69065a87e1a496c1e6b54da45318150a687c7919d7348309a3fff99960a5e"
+  }
+}

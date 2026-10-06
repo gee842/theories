@@ -1,0 +1,5 @@
+# Preserved exclusionary-reasons source
+
+The [author manuscript](adams-in-defense-of-exclusionary-reasons-author-manuscript.pdf) is the same N. P. Adams work already used in the [assistance-jurisdiction study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md). Its original bytes are now preserved in the repository; this is preservation, not independent evidence or a second publication. The [manifest](manifest.json) records the source URL, DOI, hash, size and bounded reading scope.
+
+Adams argues for a justificatory account of exclusion. The current use distinguishes permitted outcomes, grounds of selection and choice-specific normative contribution. It neither establishes a universal exclusion from helping nor proves universal concern. The award examples in the current argument and review are AI-authored applications; the tennis antecedent is read through Adams, not independently through Scanlon. The manuscript is not silently substituted for the published version.

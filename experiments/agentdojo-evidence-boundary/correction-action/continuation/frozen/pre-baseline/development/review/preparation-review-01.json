@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "scope": "Read-only exact cohort/source/prompt verification before any conventional or learned episode; no program or controller execution.",
+  "script_sha256": "4ee45b73fb117b27ab65e8535d3aa0a297875dcc914e8ecea88faa42bc2cfd8f",
+  "case_manifest_sha256": "193596d4261a7a8e193126d244418f556666c7f0e4d53f337547688de573f017",
+  "protocol_sha256": "a9db48eaaa401f52adbbe19fc9aee7e71f55174d5fd50607894f329b6f5d0692",
+  "task_sha256": "6ff25f1b9ed18fcc92d0d533932d6c0f7e13c621f0ba8c08693ac6f55cfb397b",
+  "broker_sha256": "cfdf39a5f7cfcce9fca2ce79e9f83b09769b1a59c5ae8111bdd17dd4fd5b2463",
+  "baseline_sha256": "b605991a1dfa365f65539f65f81404c7b6505864d7e4b27f2fe1b136938d1ecc",
+  "episodes": [
+    {
+      "id": "b01",
+      "policy": "conventional_reference",
+      "branch": "retained",
+      "preparation_sha256": "4b5ce54f1fd3002d34a78fac4314eecb846f81728778154d6ed78d201f44eae8",
+      "input_files": 415,
+      "v0_files": 418,
+      "prompt_sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+      "zero_attempts_confirmed": true
+    },
+    {
+      "id": "b02",
+      "policy": "conventional_reference",
+      "branch": "revoked",
+      "preparation_sha256": "76ed300c374e82b91cb858d173fb349de7bbdb56ae7951044342c95079c2f3e4",
+      "input_files": 415,
+      "v0_files": 418,
+      "prompt_sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+      "zero_attempts_confirmed": true
+    },
+    {
+      "id": "w01",
+      "policy": "fresh_learned_context",
+      "branch": "revoked",
+      "preparation_sha256": "51d05beac287f78f788881aa408d0b16aa559c3106e6775573de059ecbf868c7",
+      "input_files": 415,
+      "v0_files": 418,
+      "prompt_sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+      "zero_attempts_confirmed": true
+    },
+    {
+      "id": "w02",
+      "policy": "fresh_learned_context",
+      "branch": "retained",
+      "preparation_sha256": "69e2fba886a889626d9696e11db6e4bbdb62cb3f9b875aba51237938485d8255",
+      "input_files": 415,
+      "v0_files": 418,
+      "prompt_sha256": "c3bcbef34fcc3bebf2fa155e16833544eb007c6d04817aae44aa4599c4d255af",
+      "zero_attempts_confirmed": true
+    }
+  ]
+}

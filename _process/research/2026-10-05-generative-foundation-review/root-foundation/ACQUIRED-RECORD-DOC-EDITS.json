@@ -1,0 +1,65 @@
+{
+  "scope": "Targeted current-account additions; existing contributions retained.",
+  "files": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "af16b44f1cfb86527b398c6123a6a2acf65ccb69016ca49efdff23d6631377f9",
+      "after_sha256": "2d7daa412397cd8d6e8d42b0fda2903424ad6d6f0133e511354c0ea7e53474fa"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "c5a766f8ae4a74706e2d01c5fd493b0c233564ecbc1591aaa0406fececfe002e",
+      "after_sha256": "30725e85bc4b7e1df6fa5aa62d175dd38da74471b5be42d155a510da7616cb5b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "5b4e7b8d6b29ba604557589ffd705520d415e4b3b0d70693e52e303d4e1f55dd",
+      "after_sha256": "de48814239d7ca6f39b7e396b150de1b787f6f6f7c0a8ab80c57ed1e9c9783c5"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+      "before_sha256": "4c47faeda9d35d7ec476a9ff08a49746b72d1cfd43e90e89262c31ab04b0cc09",
+      "after_sha256": "304aabdd9601ed15c1b19cf671d7db293ef84af98994250aeef740a0163641af"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "before_sha256": "37a04eb6dbe0c11232da8d406e5358c44987b7f6eb9c3c660f4943b29a0917de",
+      "after_sha256": "f56fff1c833e91ef13d24d2bb7567ce3264b63fd31c2a16d6f2e298f8b19fc60"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "cd2eeea003fe448ec57f938750113abd7c0d298b548731aa0702c1bb6d71791d",
+      "after_sha256": "85f292c64a941e01bf81e3e7f21b85be0ed5f7f7eeeae8224c86497290c09e97"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "before_sha256": "1839ffb957f22ed39e444494cdae1f347f9cf2dbe2d0f4d400b216372e6a730c",
+      "after_sha256": "fb9466e5657a216fa7bda12a204faef8232531dba5c0a57976ac70a83e632035"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "before_sha256": "1ed6af64da8231b7b60b2a6007a0501b79aa2484e12e75ab6373900cbfce7c56",
+      "after_sha256": "a5a0c94742a6cfbd28406f060dd9ef2e447e05516ea4deccc65283eff1971b71"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "before_sha256": "17a8cea7a02f8c6e1a1bf737ae8d944de9b17ed0535a162a41f732fef0e7d85c",
+      "after_sha256": "d7a93abde5f2870dfb6edd53277b72091329cb9b39ba56c00bf3911c176bd84f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/README.md",
+      "before_sha256": "4c3ec26c433e32b0d61dc18b80a35b76fe945bff2be4a7e4b965bdba57b3a301",
+      "after_sha256": "4cd0abbd36dc8216693eb223c026c0bed044d7dcb7cf33de13e5e309210f14df"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-INTEGRATION.md",
+      "before_sha256": "cbe76345ff13bc06ef6f64f350e93fe4b9860adac7d4a3984145fe8d0b651cc9",
+      "after_sha256": "dde18b61e0e0424b90a80adf4a969942ad16bc53fd57966f2e8c446a61cb7b11"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-EVIDENCE.md",
+      "before_sha256": "79aaffa3c27918ed5d87c9fcef4b87ebbf38bb08cd1c1195ac327eb41f286af4",
+      "after_sha256": "944a73fc151974a4a2d9d6704e573646693ba65e3ec6977ff6b512e8cee6cd1c"
+    }
+  ]
+}

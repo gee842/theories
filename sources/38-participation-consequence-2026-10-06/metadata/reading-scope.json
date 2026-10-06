@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-06",
+  "reviewer": "/root/cue_grounding_review",
+  "kramar_alim": {
+    "doi": "10.1073/pnas.2007815118",
+    "pmcid": "PMC7958412",
+    "reading": "Main six-page author-hosted primary PDF; methods, results, model/readout distinction; page 5 and Figure 5 rendered with bundled pdftoppm and visually inspected. Derived text extracted with pypdf.",
+    "not_read_or_run": "73.6 MB supplement, videos, raw data and model code were not acquired or executed. Europe PMC XML endpoint failed; no error body retained as an original."
+  },
+  "sonoda": {
+    "doi": "10.1098/rsbl.2012.0085",
+    "pmcid": "PMC3391464",
+    "reading": "Full primary Europe PMC XML body, especially methods, results and discussion. Derived plain text uses XML itertext; no original figure pixels inspected.",
+    "not_read_or_run": "Supplementary numerical table and raw videos were not acquired or reanalyzed."
+  },
+  "web_access": "PMC direct-open checks returned a browser challenge; search-indexed primary text aided discovery. Preserved successful bytes and retrieval metadata above are the source basis, not an asserted publisher-byte identity for a separately downloaded copy."
+}

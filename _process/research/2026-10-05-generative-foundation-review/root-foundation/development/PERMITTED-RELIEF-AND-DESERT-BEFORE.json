@@ -1,0 +1,23 @@
+{
+  "scope": "Exact preceding canonical bytes; original relative-link bases retained.",
+  "files": [
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIVERSAL-ETHICAL-MINIMUM-BEFORE-PERMITTED-RELIEF.md",
+      "sha256": "81edb2b4a8a5f1b5bdbad80693c411a25778b5f67fbf98ec469a2e81b0dfa804",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-PERMITTED-RELIEF.md",
+      "sha256": "06e95c01a68e3efbc03453d3e055f0b4d168db011c04a1daf5ac8883db168392",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/GENERATIVE-GROUNDING-BEFORE-PERMITTED-RELIEF.md",
+      "sha256": "d548e34b88bd57c6354a27b9237200ec67de4eed84c2f2181216333d44db4548",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    }
+  ]
+}

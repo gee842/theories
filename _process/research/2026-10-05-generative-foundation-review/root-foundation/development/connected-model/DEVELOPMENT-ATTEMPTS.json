@@ -1,0 +1,98 @@
+{
+  "scope": "Development compilation evidence. Failed attempts retained, including the long-normalization attempt 04 interrupted by SIGINT; attempts05-07 bounded timeouts. Attempt08 passes all16 theorem audits. No existing local laws changed.",
+  "files": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-01.lean",
+      "sha256": "0b1ac81d8bc62521c2cf96ba2fca4df13fbcd98cd6c3feb58331fd5bb87b02d2",
+      "bytes": 4777
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-01.log",
+      "sha256": "06d3b496eaae6918871028fb13a8dff4b6a55b08a20126ba5517187655c60527",
+      "bytes": 2575
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-02.lean",
+      "sha256": "3ca867e16b4da2c4c29b6a1b1c2276d5e5b965bf516cf48cc90ddbee7d3e2a09",
+      "bytes": 5011
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-02.log",
+      "sha256": "28fdaf6bfd686a930090333f6e8b2c8cacfad3dd28fa265cc9c7fc971f082002",
+      "bytes": 2985
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-03.lean",
+      "sha256": "4d9a8f60501997a5ec975f0f626fcd26ad69549d0ca7bc51869bdd43a703a48c",
+      "bytes": 5042
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-03.log",
+      "sha256": "5dc122fb6ee5e9ffa2222a1ea1745bbcee4aea61872abab607c9755a964662b7",
+      "bytes": 574
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-04.lean",
+      "sha256": "8391a410de02d9ea2cca68c9346032d2c44c0ab5d1106d94736e06b6eff431b7",
+      "bytes": 11720
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-04.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-05.lean",
+      "sha256": "6f1f4f1922711815322e63868edcf40cf6598d61ed1e639bafbd3cd7c5d63006",
+      "bytes": 11736
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-05.log",
+      "sha256": "753340ffda174f5ae1b5ecc613ab7969a4c6303b48afd5a2e6d585b2e9d350e6",
+      "bytes": 35
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-06.lean",
+      "sha256": "ec2a39ef58e35c5f3314234edfa5b3918a05d8ad1ccad2bb60952f83103d5632",
+      "bytes": 12085
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-06.log",
+      "sha256": "ebbd3abc536a70557b2052940c04e883c8ca4eb041c99d4902486bcb0caffad5",
+      "bytes": 35
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-07.lean",
+      "sha256": "9f3f4aaf9d6ffa45b0e5cf63a23b57a7341c3a2b5be059fae2430c2f45e1bb4f",
+      "bytes": 12677
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-07.log",
+      "sha256": "e0868676619daac27b25ca543ba926a6303f19572c809713d1981dd3e8e31864",
+      "bytes": 35
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-08.lean",
+      "sha256": "e3eb6b0448554a9daa897e056a778f99ad7a08b7817ccbe842e9260ced323e0a",
+      "bytes": 12969
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/ConnectedModel-attempt-08.log",
+      "sha256": "52436c7dc58e1b3b215add8285f520e6ea509e9450c8e1548628d6b4faa81568",
+      "bytes": 2306
+    }
+  ],
+  "final_source": "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean",
+  "final_source_sha256": "e3eb6b0448554a9daa897e056a778f99ad7a08b7817ccbe842e9260ced323e0a",
+  "axioms_by_scope": {
+    "15_current_authority_history_and_witness_theorems": [
+      "propext",
+      "Quot.sound"
+    ],
+    "1_interpreted_fulfillment_theorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "date": "2026-10-06",
+  "scope": "Integration ownership, document links, preservation, and consistency with the integrated Lean receipt; not additional empirical validation.",
+  "owned_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "text": "**Integrated Lean model, 6 October 2026:** [the public entry point](experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) connects the original core to exact law/history equivalence, Boolean classification and a synchronous-composition counterexample. The default twelve-module build checks 119 declarations, including 20 new empty-dependency proofs, with no added axioms or asserted process laws and unchanged original model sources. [Integration and review](_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) separate this completed formal connection from the still-open assumption-free foundation and [six V7.3 mechanisms](_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md). **Next root connection:** the occurrence/transformation claims justified by the proposed root; **next V7.3 interface:** actual common-return effects on an existing selector without unexplained law commitments."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "text": "**Lean root integration, 6 October 2026:** [the common model](../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) now carries the law/history bridge and exact Boolean classification, with reversal and unique predecessors derived within that finite package. Its build verifies 20 new theorems with empty dependency lists and no added primitive laws; inherited proofs retain their recorded scope and dependencies. [The integration record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) distinguishes this completed connection from the unresolved assumption-free foundation and full V7.3 formalization."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "text": "**Public Lean integration, 6 October 2026:** [LEAN-MODEL-INTEGRATION.md](LEAN-MODEL-INTEGRATION.md) records the completed law → endpoint-history connection, exact Boolean classification, reduction of two local premises and the synchronous-composition limit. The default model build verifies 119 declarations across twelve modules, including 20 new empty-dependency theorems; no added axioms or process laws. [V73-LEAN-INTERFACES.md](V73-LEAN-INTERFACES.md) preserves the actual six-mechanism overlap, missing formal mathematics and rejected dependency-expanding rational proof route. The stronger foundation remains unresolved."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "text": "**Formal integration without added laws, 6 October 2026:** [the new common-model entry point](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) proves that primitive steps are determined by endpoint-sensitive finite histories, classifies the two Boolean structural alternatives, derives two formerly separate finite-package requirements, and preserves the counterexample after synchronization on common action words. The [integrated build](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) checks 20 new empty-dependency results alongside 99 inherited declarations without changing the original core. This closes the stated mathematical connection, not the derivation of actual event laws or the full V7.3 mechanisms. The next root obligation remains what occurrence and transformation the proposed generative basis entails; ethical grounding remains distinct."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "text": "**Integrated continuation, 6 October 2026:** [GenerativeModel.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) is now the public entry point, and the default checker compiles twelve modules with 119 audited declarations. The 20 new theorems all have empty axiom dependencies; original model sources and inherited dependency footprints remain unchanged. [The integration record](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) explains the law/history equivalence, exact Boolean classification, derived reversal/predecessor properties and synchronous-product counterexample. This adds no primitive event law or asserted physical/ethical premise. Earlier counts below describe the preserved initial development."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "text": "**Integrated and strengthened, 6 October 2026:** [the default Lean model build](../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md) now includes the deeper proofs and the public model entry point. [New classification and consequence proofs](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) derive reversal and unique predecessors from the reduced Boolean properties, transport the alternatives through the original Trace semantics, and prove that feasible action words still hide their different endpoints under synchronous composition. All 20 new theorem dependencies are empty. The root's actual dynamical content and the stronger no-assumptions foundation remain unresolved."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "text": "**Now included in the main model build, 6 October 2026:** run the parent [check.py](../check.py) for the integrated twelve-module verification, including [GenerativeModel.lean](../GenerativeModel.lean), [DynamicConsequences.lean](DynamicConsequences.lean) and [DynamicClassification.lean](DynamicClassification.lean). These connect primitive laws to endpoint-sensitive traces, classify the existing Boolean structural package and derive two redundant requirements. The new public composition theorem preserves word-feasibility ambiguity under the core's synchronous product. All 20 new audits are empty; the original deeper checker and its four-module result below retain their historical scope. [Full integration and limits](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md)."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "text": "**Subsequent formal integration:** [the next continuation](LEAN-MODEL-INTEGRATION.md) places the symmetry result in the default generative-model build and adds the law/history equivalence, exact Boolean classification, two derived local requirements and synchronous-composition limit. Twenty new proofs have empty axiom dependencies and assert no new model laws. This is progress within the audit; the stronger no-assumptions requirement recorded below remains unmet."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "text": "**Lean status, 6 October 2026:** the [common model's new structural integration](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) now checks exact law/history and composition boundaries without new axioms or asserted process laws. The [six-mechanism interface audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md) identifies existing Lean overlap and precisely which V7.3 mathematics is still absent. This does not turn the six conditional mechanisms below into a completed assumption-free Lean derivation."
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "text": "Recorded 6 October 2026: [Ren's continuation request for Lean integration without added assumptions or axioms](15-codex-theory-conversations/2026-10-06-lean-integration-no-added-assumptions.md) is preserved verbatim. The [implementation record](../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) records the completed structural connection, inherited proof dependencies and remaining full-foundation/V7.3 obligations; it does not attribute those scope judgments to Ren."
+    }
+  ],
+  "other_owned_edits": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "change": "Integrated 12-module verification, preserved original source hashes, enforced no added dependencies, frozen checker and verified historical evidence."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "change": "Public entry documentation, three source rows plus deeper link, new reproduction and exact dependency policy."
+    }
+  ],
+  "reviews": {
+    "proofs": "Separate reviews accepted DynamicClassification and DynamicConsequences, with duplicate StepDescription removed in favor of generic SameSteps.",
+    "entry_and_checker": "Separate read-only review accepted the five public theorem statements, synchronous-product scope, audit coverage and preserved old evidence; recommended checker-byte stability and archive-manifest validation, both implemented before the final passing build.",
+    "v73_interfaces": "Six-mechanism source mapping preserves absent mathematical developments and documented standard-library rational dependencies. No replacement toy mechanism was installed."
+  },
+  "new_file_sha256": {
+    "sources/15-codex-theory-conversations/2026-10-06-lean-integration-no-added-assumptions.md": "b0bd72e1b8f2f7aa4918b675b38336047afda830f6d2d8e9ab1295aebee0612f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md": "2f868cd6dd6c85389bc9076daaf5a3a0076a6554d53ad39543844f60f1847c9b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md": "a5d748e25c000875e70b1bb023c455e1c3459445ecb9b917ba95661d77e3a9b5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean": "b9f69fd89bd8a1833166e27017d3c28bacbcc68bd449a759baa54d84e42287ae",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+  },
+  "v73_source_files_checked": 109,
+  "v73_source_changed_or_missing": [],
+  "local_links_checked": 60,
+  "link_results": [
+    {
+      "from": "RESEARCH.md",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "V73-LEAN-INTERFACES.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "../check.py",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "../GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "DynamicConsequences.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "DynamicClassification.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "ok": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-lean-integration-no-added-assumptions.md",
+      "ok": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-lean-integration-no-added-assumptions.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-lean-integration-no-added-assumptions.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-model-integration/manifest.json",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "target": "V73-LEAN-INTERFACES.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "V73-MECHANISM-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/market-generativity/formal/MarketGenerativity.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/market-generativity/formal/verification/MarketGenerativity.txt",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeCore.txt",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/verification/ControllerRevision.txt",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "GenerativeCore.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "RootRealization.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "Depletion.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "BoundaryModels.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "deeper/README.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "deeper/DynamicConsequences.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "deeper/DynamicClassification.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "GenerativeModel.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "lean-toolchain",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "verification-history/2026-10-06-before-model-integration/manifest.json",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "verification.json",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "verification/",
+      "ok": true
+    }
+  ],
+  "document_errors": [],
+  "lean_status": "passed",
+  "lean_modules": 12,
+  "lean_audited_declarations": 119,
+  "lean_new_audited_declarations": 20,
+  "new_proof_dependencies_empty": true,
+  "lean_source_and_log_hashes_match": true,
+  "checker_hash_matches": true,
+  "historical_evidence_hashes_match": true,
+  "passed": true
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "case_dir": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/b02",
+  "preparation": {
+    "path": "preparation.json",
+    "sha256": "76ed300c374e82b91cb858d173fb349de7bbdb56ae7951044342c95079c2f3e4",
+    "bytes": 175027
+  },
+  "initial_observation": {
+    "authority": {
+      "epoch": 0,
+      "grants": [
+        "check",
+        "finish",
+        "note",
+        "publish",
+        "read",
+        "read_authority",
+        "replay",
+        "stage"
+      ]
+    },
+    "current": {
+      "version": "v0",
+      "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+    },
+    "read_interface": {
+      "aliases": [
+        "contract",
+        "correction",
+        "recipe",
+        "code",
+        "report",
+        "receipt",
+        "checker"
+      ],
+      "artifact": "alias or a previously returned case-relative artifact path",
+      "version": "v0 or returned version; default current",
+      "offset": "byte offset, default 0",
+      "limit": "1..12000 bytes, default 6000",
+      "encoding": "exact base64 bytes plus UTF-8 display"
+    },
+    "request_limit": 16
+  },
+  "freeze_obligation": "Bind preparation.json and input inventory from an independent study manifest before dispatch."
+}

@@ -1,0 +1,861 @@
+{
+  "checked_at_utc": "2026-10-06T08:42:16.971090+00:00",
+  "status": "passed",
+  "fresh_local_source_build": true,
+  "inputs_unchanged": true,
+  "toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "8eb4b218da60c6acaea8f645759b25cd6e426585f1d0325515f34c6aa5296997",
+  "toolchain_sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "dependency_project": "/Users/ren/repos/\u751f\u751f\u4e0d\u606f",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_libraries": "Existing pinned cache used; upstream Mathlib was not rebuilt.",
+  "direct_import_fingerprints": [
+    {
+      "path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean",
+      "sha256": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246"
+    },
+    {
+      "path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean",
+      "sha256": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246"
+    },
+    {
+      "path": "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecificLimits/Basic.olean",
+      "sha256": "d3ae202117c497d08998457702dc6f565813ac074d8c42888adbf34c0d7b6a0f"
+    },
+    {
+      "path": "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean",
+      "sha256": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911"
+    },
+    {
+      "path": "SystemsComplexity.olean",
+      "sha256": "a3d119589f3f4411419f4b0627e4a68b46257de12c6aafab004848325d2af959"
+    }
+  ],
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "audits": [
+        {
+          "name": "Generative.trace_append_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_singleton_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_iff_singleton_trace",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_difference_implies_state_difference",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_append_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_prefix",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_product_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_product_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_product_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_map",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_lift",
+          "axioms": []
+        },
+        {
+          "name": "Generative.projected_trace_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.projection_exact_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.local_exact_iff_trace_exact",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_projection_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_projection_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_difference_implies_projection_difference",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_faithful_iff",
+          "axioms": []
+        }
+      ],
+      "new_in_this_analytic_extension": false
+    },
+    {
+      "module": "SystemsOrganization",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+      "output_sha256": "e94da75fc8f1f3ec9a0fe55379f37b31c954776c93cc5a4ddb5e929a04ec458b",
+      "audits": [
+        {
+          "name": "SystemsOrganization.deterministic_trace_iff",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.evolve_semiconjugacy",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.commuting_iff_all_words",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.projected_trace_exact",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.reduced_law_exists_iff",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.commuting_composes",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.coupled_components_preserve_history",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.self_routing_fixed",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.cross_routing_two_steps",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.cross_routing_not_fixed",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.same_cells_different_collective_recurrence",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.crossed_left_not_fibre_consistent",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.no_autonomous_left_law",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.link_inventory_preserved",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.fuel_does_not_increase",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_step",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_preserves_cell_values",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_consumes_spare_and_fuel",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.exchange_unavailable_before_formation",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.exchange_available_after_formation",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_and_recurrence_same_history",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.parts_only_cannot_preserve_futures",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.no_fuel_blocks_formation",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.no_spare_blocks_formation",
+          "axioms": []
+        }
+      ],
+      "new_in_this_analytic_extension": false
+    },
+    {
+      "module": "FeedbackDynamics",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "9a6f8adcbf9ba4afc783fbb81d3ec1e16e34e4886d7ebcbe422657d83e35d51d",
+      "output_sha256": "3dd3eb4fcce70d48ed35b4a8768b36605b2714a64c6f7f416f6836e8e2750b1d",
+      "audits": [
+        {
+          "name": "SystemsComplexity.Feedback.square_nonneg",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.exists_nat_gt",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.immediate_formula",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.delayed_energy_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.delayed_energy_formula",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.energy_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.energy_upper",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.normSq_nonneg",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.normSq_positive",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.energy_nonneg",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.energy_positive",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.immediate_square_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.immediate_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.immediate_square_tends_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.immediate_tends_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.delayed_energy_growth",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.delayed_normSq_tends_infinity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.delayed_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.delayed_one_six",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.Feedback.delayed_one_periodic",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_analytic_extension": false
+    },
+    {
+      "module": "SymbolicDynamics",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "f5da626efd96f712791c86552cd2662889dd8f2b1ecfba2f1249e1f5d10afa14",
+      "output_sha256": "32671e775f44827bdeb460cffabd37f1dc62f865d42807460b4abed41f35328b",
+      "audits": [
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.iterate_add",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.eraseValue_injective",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.finite_collision",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.finite_eventually_periodic",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.finite_eventuallyPeriodic",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_refl",
+          "axioms": []
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_symm",
+          "axioms": []
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_trans",
+          "axioms": []
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_mono",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_open_empty",
+          "axioms": []
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_open_univ",
+          "axioms": []
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_open_inter",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_open_union",
+          "axioms": []
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.cylinder_open",
+          "axioms": []
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.member_lt_coordinateBound",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.prefix_open_iff_coordinate_open",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.iterate_shift",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.shift_continuous",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.splice_prefix",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.splice_shift",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.shift_transitive",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.repeat_agrees",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.repeat_periodic",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.shift_dense_periodic",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.flip_agrees",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.flip_separates",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.no_isolated_stream",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.singleton_not_open",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.spike_injective",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.stream_not_finitely_encoded",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.shift_sensitive",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.SymbolicDynamics.binary_shift_chaotic",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_analytic_extension": false
+    },
+    {
+      "module": "SystemsComplexity",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "b4cc368512489db9624c84aba96a6ecf6ec89cd140c13f7393d36f1abddbf028",
+      "output_sha256": "debb7b5782dc4f06a548e77e00cdc1e130779b8677e603acf1f629b85c6f130f",
+      "audits": [
+        {
+          "name": "SystemsComplexity.iterate_generative_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.binary_shift_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.delayed_eq_iterate",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.delayed_feedback_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_analytic_extension": false
+    },
+    {
+      "module": "RealFeedback",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "4c4b527f68dc822e05309cbed34e378e48a30d154e7f26e1fdbc0d1e402f4225",
+      "output_sha256": "640a8ebb169df90b8fa003ce8267834116c62d95a1a9c00c531bacca8a8fed33",
+      "audits": [
+        {
+          "name": "SystemsComplexity.RealFeedback.immediate_recurrence",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.immediate_converges_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.squaredNorm_nonnegative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.lyapunov_nonnegative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.lyapunov_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.lyapunov_bounds",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.rate_bounds",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.lyapunov_contraction",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.lyapunov_geometric_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.delayed_converges",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.delayed_stable",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.rotationEnergy_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.rotationEnergy_iterate",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.nonpositive_gain_retains_deviation",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.nonpositive_gain_not_convergent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.rotationEnergy_upper",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.large_gain_not_convergent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.delayed_converges_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.same_gain_different_convergence",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.rotationEnergy_positive",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.delayed_diverges",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.delayed_gain_one_six_periodic",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.delayed_eq_iterate",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "SystemsComplexity.RealFeedback.real_delayed_generative_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_analytic_extension": true
+    }
+  ],
+  "new_audits": 24,
+  "replayed_inherited_audits": 98,
+  "new_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Full real-parameter convergence ranges, delayed Lyapunov stability, nonzero large-gain divergence, period-six boundary, and exact traces in the existing generative core.",
+  "limits": "Supplied linear laws/exact observations and standard mathematical axioms; no empirical identification, ethical theorem, or Lorenz-system chaos proof."
+}

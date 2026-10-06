@@ -1,0 +1,29 @@
+{
+  "author": "AI-authored source-access record",
+  "session_date": "2026-10-06",
+  "scope": "Targeted comparison, not an exhaustive review. This file is provenance, not a copy of the papers.",
+  "records": [
+    {
+      "id": "cohen-levesque-1990",
+      "title": "Intention Is Choice with Commitment",
+      "url": "https://ai.stanford.edu/~epacuit/classes/lori-spr09/cohenlevesque-intention-aij90.pdf",
+      "doi": "10.1016/0004-3702(90)90055-5",
+      "read_scope": "Primary PDF reader output, pp. 213–221: introduction, rational balance, Little Nell problem, persistent goals and idealizations. No full-paper proof audit.",
+      "preservation": "link-only; direct response download stalled and was interrupted before any original bytes were saved"
+    },
+    {
+      "id": "zhu-wang-revocation",
+      "title": "Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asynchronous Execution",
+      "url": "https://arxiv.org/html/2609.21284v1",
+      "read_scope": "Primary HTML abstract, §§1–3.4, §§9.7–10.5 and Appendix A opening. Reported theorem and artifact boundaries inspected; no proof reconstruction or code execution.",
+      "preservation": "link-only; primary HTML read via web tool; original response bytes not downloaded"
+    },
+    {
+      "id": "zhu-wang-succession",
+      "title": "Authorization for Self-Modifying AI Agent Populations: Conserving Authority across Replacement, Forking, and Rollback",
+      "url": "https://arxiv.org/html/2610.00347v1",
+      "read_scope": "Primary HTML abstract, §§3.2–3.4, §§5.10–6.5 and §§9.2–9.4. Architecture, assumptions and reported executable boundary inspected; no proof reconstruction or code execution.",
+      "preservation": "link-only; primary HTML read via web tool; original response bytes not downloaded"
+    }
+  ]
+}

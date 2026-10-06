@@ -1,0 +1,411 @@
+{
+  "counts": {
+    "cases": 20,
+    "ancestry_events": 94,
+    "suffix_events": 4348,
+    "suffix_native_events": 4078,
+    "successes": 8
+  },
+  "summary": [
+    {
+      "case": "ordinary_w0",
+      "status": "complete",
+      "cells": [
+        1,
+        0
+      ],
+      "selected": 0,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        0,
+        214
+      ],
+      "escrow": 0,
+      "spent": 376
+    },
+    {
+      "case": "ordinary_w1",
+      "status": "complete",
+      "cells": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        0,
+        214
+      ],
+      "escrow": 0,
+      "spent": 376
+    },
+    {
+      "case": "clamp0_w0",
+      "status": "complete",
+      "cells": [
+        1,
+        0
+      ],
+      "selected": 0,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        0,
+        214
+      ],
+      "escrow": 0,
+      "spent": 376
+    },
+    {
+      "case": "clamp0_w1",
+      "status": "repair_unavailable",
+      "cells": [
+        0,
+        1
+      ],
+      "selected": 0,
+      "plant": [
+        35,
+        36,
+        1,
+        0,
+        0,
+        0,
+        215
+      ],
+      "escrow": 0,
+      "spent": 375
+    },
+    {
+      "case": "clamp1_w0",
+      "status": "repair_unavailable",
+      "cells": [
+        1,
+        0
+      ],
+      "selected": 1,
+      "plant": [
+        35,
+        36,
+        1,
+        0,
+        0,
+        0,
+        215
+      ],
+      "escrow": 0,
+      "spent": 375
+    },
+    {
+      "case": "clamp1_w1",
+      "status": "complete",
+      "cells": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        0,
+        214
+      ],
+      "escrow": 0,
+      "spent": 376
+    },
+    {
+      "case": "invert_both_w0",
+      "status": "repair_unavailable",
+      "cells": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "plant": [
+        35,
+        36,
+        1,
+        0,
+        0,
+        0,
+        215
+      ],
+      "escrow": 0,
+      "spent": 375
+    },
+    {
+      "case": "invert_both_w1",
+      "status": "repair_unavailable",
+      "cells": [
+        1,
+        0
+      ],
+      "selected": 0,
+      "plant": [
+        35,
+        36,
+        1,
+        0,
+        0,
+        0,
+        215
+      ],
+      "escrow": 0,
+      "spent": 375
+    },
+    {
+      "case": "invert_port0_w0",
+      "status": "no_installed_command",
+      "cells": [
+        0,
+        0
+      ],
+      "selected": null,
+      "plant": [
+        34,
+        36,
+        1,
+        1,
+        0,
+        1,
+        215
+      ],
+      "escrow": 0,
+      "spent": 374
+    },
+    {
+      "case": "invert_port0_w1",
+      "status": "no_installed_command",
+      "cells": [
+        1,
+        1
+      ],
+      "selected": null,
+      "plant": [
+        34,
+        36,
+        1,
+        1,
+        0,
+        1,
+        215
+      ],
+      "escrow": 0,
+      "spent": 374
+    },
+    {
+      "case": "lost_contact0_w0",
+      "status": "contact_lost",
+      "cells": [
+        null,
+        null
+      ],
+      "selected": null,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        288,
+        215
+      ],
+      "escrow": 1,
+      "spent": 86
+    },
+    {
+      "case": "lost_contact0_w1",
+      "status": "contact_lost",
+      "cells": [
+        null,
+        null
+      ],
+      "selected": null,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        287,
+        216
+      ],
+      "escrow": 1,
+      "spent": 86
+    },
+    {
+      "case": "interrupt_commit0_w0",
+      "status": "commit_interrupted",
+      "cells": [
+        null,
+        null
+      ],
+      "selected": null,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        288,
+        215
+      ],
+      "escrow": 1,
+      "spent": 86
+    },
+    {
+      "case": "interrupt_commit0_w1",
+      "status": "commit_interrupted",
+      "cells": [
+        null,
+        null
+      ],
+      "selected": null,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        287,
+        216
+      ],
+      "escrow": 1,
+      "spent": 86
+    },
+    {
+      "case": "interrupt_reader_w0",
+      "status": "reader_interrupted",
+      "cells": [
+        1,
+        0
+      ],
+      "selected": null,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        283,
+        215
+      ],
+      "escrow": 0,
+      "spent": 92
+    },
+    {
+      "case": "interrupt_reader_w1",
+      "status": "reader_interrupted",
+      "cells": [
+        0,
+        1
+      ],
+      "selected": null,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        283,
+        215
+      ],
+      "escrow": 0,
+      "spent": 92
+    },
+    {
+      "case": "rich_clamp0_w0",
+      "status": "complete",
+      "cells": [
+        1,
+        0
+      ],
+      "selected": 0,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        1,
+        214
+      ],
+      "escrow": 0,
+      "spent": 375
+    },
+    {
+      "case": "rich_clamp0_w1",
+      "status": "complete",
+      "cells": [
+        0,
+        1
+      ],
+      "selected": 0,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        0,
+        215
+      ],
+      "escrow": 0,
+      "spent": 375
+    },
+    {
+      "case": "rich_clamp1_w0",
+      "status": "complete",
+      "cells": [
+        1,
+        0
+      ],
+      "selected": 1,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        0,
+        215
+      ],
+      "escrow": 0,
+      "spent": 375
+    },
+    {
+      "case": "rich_clamp1_w1",
+      "status": "complete",
+      "cells": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        1,
+        214
+      ],
+      "escrow": 0,
+      "spent": 375
+    }
+  ]
+}

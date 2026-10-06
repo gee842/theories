@@ -1,0 +1,343 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integration, exact directive preservation, local links and existing V7.3 source-byte preservation. New Lean verification is separately recorded in dynamic-symmetry-verification.json.",
+  "owned_insertions": [
+    {
+      "path": "README.md",
+      "text": "**No-assumptions requirement, 6 October 2026:** [Ren directs that the generative model contain no assumptions](sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md). The [current audit](_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) records that this stronger requirement is unmet. Making premises explicit or eliminating custom Lean axioms is insufficient. Preserve the completed conditional results while tracing and discharging the dependencies of the stronger foundation; the supplied event law is an immediate root gap."
+    },
+    {
+      "path": "_process/BRIEF.md",
+      "text": "**No-assumptions directive, 6 October 2026.** Ren states: [“there shall be no assumptions in generative model”](../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md). Do not substitute “no hidden premises,” “no custom axioms,” or conditional acceptance for this stronger target. The [assumption-elimination audit](research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) records the current shortfall, beginning with distinction → occurrence → changing conditions. Preserve earlier conditional proofs and counterexamples. Trace every explanatory dependency, including law choices, construction recipes, ethical grounds, interpretation and formal background; neither disclosure nor relocation into a definition discharges it. This directive strengthens the governing research requirement without retroactively invalidating results at their former scope."
+    },
+    {
+      "path": "RESEARCH.md",
+      "text": "**Assumption-elimination requirement, 6 October 2026 — unmet:** [Ren's exact directive](sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md) strengthens the foundation goal beyond explicit conditional premises. The [new audit](_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) identifies the supplied event relation as an immediate root gap and traces outstanding dependencies across all six V7.3 mechanisms. An empty Lean axiom report does not remove theorem hypotheses, substantive definitions or application obligations. Existing conditional acceptance remains valid at its stated scope; written V7.3 integration is neither completed Lean integration nor an assumption-free derivation. **Next root connection:** distinction → occurrence → changing conditions, preserving incompatible-law countermodels and the parallel patient-significance → independent-actor-reason investigation."
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "text": "Recorded 6 October 2026: [Ren's no-assumptions directive](15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md) preserves the exact follow-up after the V7.3/Lean-integration exchange. The [audit](../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) is AI-authored interpretation and dependency analysis, not a claim that the requirement is achieved or an additional instruction attributed to Ren."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "text": "**No-assumptions directive, 6 October 2026:** the [assumption-elimination audit](ASSUMPTION-ELIMINATION-AUDIT.md) records [Ren's stronger requirement](../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md) and why the current conditional foundation does not meet it. It audits the supplied dynamics and six V7.3 dependency families, preserving prior proofs and their scopes. Explicit assumptions and empty Lean axiom reports are useful checks but insufficient completion standards."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "text": "**Stronger foundation requirement, 6 October 2026:** [Ren requires no assumptions in the generative model](../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md). The [current audit](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) marks that requirement unmet: the core still takes an event relation as input, and the V7.3 mechanisms retain substantive dependencies. Historical conditional results remain established at their declared scope; they do not complete this stronger target. The next root obligation is distinction → occurrence → changing conditions, alongside the existing ethical-grounding work."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "text": "**No-assumptions requirement, 6 October 2026:** [Ren directs that there be no assumptions in the generative model](../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md). The [dependency audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) records that this requirement is unmet. No claimed explanatory conclusion may count as grounded merely because its premise is explicit, encoded in a definition or absent from Lean's declared axiom list. Supplied dynamics, mechanism recipes, evaluative grounds and application correspondences remain obligations; the formal background is not silently exempted. Earlier acceptance remains acceptance of the conditional candidate only. The immediate root transition is distinction → occurrence → changing conditions; stronger ethical grounding continues in parallel."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "text": "**Status under Ren's new requirement, 6 October 2026:** [“there shall be no assumptions in generative model”](../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md). This ledger exposes what the current candidate still supplies; exposure is not elimination. Its conditional stopping rules below retain their historical and local-model scope but do not satisfy the stronger requirement. The [assumption-elimination audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) records the unresolved root and V7.3 dependencies. The requirement remains unmet."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "text": "**Stronger directive, 6 October 2026:** Ren now requires [no assumptions in the generative model](../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md). The conditional completion reported below does not meet that requirement. In particular, composing an admitted event relation does not derive the relation, and an empty axiom-dependency list does not remove explanatory commitments. The [assumption-elimination audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) preserves these results while treating their supplied dynamics as an open root obligation."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "text": "**Subsequent no-assumptions directive, 6 October 2026:** [Ren requires no assumptions in the generative model](../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md). This chapter's written integration retains conditional laws and therefore does not meet that requirement or constitute completed Lean integration. The [assumption-elimination audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) treats all six mechanisms' remaining dependencies as derivation obligations, preserving the source results and counterexamples."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "text": "**New finite countermodel, 6 October 2026:** the [structural-symmetry extension](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md) proves that static and alternating laws on the same two states are both total and deterministic, have unique predecessors and same-label step reversal, and are invariant under every Boolean bijection. They remain distinct even under state relabeling. These structural requirements therefore do not derive nontrivial change. This strengthens the root audit without identifying a physical law or proving that every deeper grounding must fail; its separate verification leaves the earlier four-module receipt unchanged."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "text": "**Separate symmetry extension, 6 October 2026:** [DynamicSymmetry.lean](DynamicSymmetry.lean) strengthens the two-state countermodel: totality, determinism, unique predecessors, same-label step reversal and invariance under every Boolean bijection still permit both static and alternating laws. Read [DYNAMIC-SYMMETRY.md](DYNAMIC-SYMMETRY.md) for exact scope and reproduction, and the [separate receipt](dynamic-symmetry-verification.json) for its build. The original four-module checker and receipt below are preserved. This extension follows [Ren's no-assumptions directive](../../../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md); it establishes a finite obstruction, not an assumption-free generative foundation."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "text": "**Structural countermodel extension, 6 October 2026:** [the new Lean module](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md) proves that total deterministic dynamics with unique predecessors, same-label reversal and full Boolean renaming invariance can be static or alternating. The [assumption-elimination audit](ASSUMPTION-ELIMINATION-AUDIT.md#a-stronger-finite-test-of-proposed-structural-grounds) integrates the result: these structural requirements do not supply nontrivial change. This closes a finite negative result, leaving the proposed root's occurrence/transformation entailments and the stronger foundation unresolved."
+    },
+    {
+      "path": "RESEARCH.md",
+      "text": "**Finite root countermodel strengthened, 6 October 2026:** [the new Lean symmetry result](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md) shows that totality, determinism, unique predecessors, same-label reversal and invariance under every two-state renaming permit both static and alternating dynamics. Separate source review accepts this finite scope. The [integration audit](_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) records what this rules out: those structural requirements alone do not derive change. The next root connection remains the proposed generative starting point → the occurrence and transformation claims it actually entails; no assumption-free model or universal impossibility is established."
+    }
+  ],
+  "owned_revisions": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "section": "4. Where a derivation may legitimately stop",
+      "change": "Added stronger-requirement scope note, preserving conditional-studies stopping rules."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "section": "7. What “no axioms” establishes",
+      "change": "Reframed earlier defensible target as historical conditional target; preserved result and explicit limit."
+    }
+  ],
+  "reviews": {
+    "audit": "Separate source-level review accepted; incorporated local-discharge vs full-elimination distinction and preserved inclusion of static systems.",
+    "v73_dependencies": "Separate comparison against V7.3 expanded held-objective regularity, inherited correction state/purpose, informative communication and maintained reform obligations.",
+    "lean_source": "Separate source-level review accepted the finite Bool/Unit countermodel; exact reversibility is unique predecessors plus same-label reversal."
+  },
+  "v73_source_files_checked": 109,
+  "v73_source_changed_or_missing": [],
+  "new_file_sha256": {
+    "sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md": "7bb27bc9818c35034c293888eaa79f8c466e79676dcfaa5974785a6466a98cc9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md": "86083ca25b7cb5b444db91f5b9ba6fa871f17bb6fb36d58fbc82360ed52294ce",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md": "46a3d62d0813200ad7104b8f400c53689a1d5b82a7ddc8307f55554a0221c6fb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/dynamic-symmetry-verification.json": "395931e90449307b9a1a7054c8e4f64d3cdc53296b1409ad06e174cd6d3bbd79",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/verification/DynamicSymmetry.txt": "e0c8b0825c08b76be39615f00354c60dfe93794957c95270f18da569ceea43aa"
+  },
+  "local_links_checked": 49,
+  "link_results": [
+    {
+      "from": "README.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "README.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/BRIEF.md",
+      "target": "../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "_process/BRIEF.md",
+      "target": "research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "DynamicSymmetry.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "DYNAMIC-SYMMETRY.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "dynamic-symmetry-verification.json",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "target": "../../../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ASSUMPTION-ELIMINATION-AUDIT.md#a-stronger-finite-test-of-proposed-structural-grounds",
+      "ok": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "ok": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/verification.json",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/dynamic-symmetry-verification.json",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "V73-MECHANISM-AUDIT.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "V73-EVIDENCE-AND-INTERFACES.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STRONGEST-FOUNDATION-CLAIM.md",
+      "ok": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "target": "DynamicUnderdetermination.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "target": "../../../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "target": "DynamicSymmetry.lean",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "target": "dynamic-symmetry-verification.json",
+      "ok": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
+      "target": "verification/DynamicSymmetry.txt",
+      "ok": true
+    }
+  ],
+  "lean_receipt_source_hashes_match": true,
+  "lean_receipt_output_hash_matches": true,
+  "lean_new_audited_declarations": 20,
+  "lean_receipt_status": "passed",
+  "document_errors": [],
+  "passed": true
+}

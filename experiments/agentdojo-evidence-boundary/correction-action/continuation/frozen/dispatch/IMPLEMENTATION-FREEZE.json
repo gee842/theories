@@ -1,0 +1,68 @@
+{
+  "scope": "Pre-baseline implementation and input freeze; learned dispatch not yet accepted",
+  "at_utc": "2026-10-06T04:19:36.410108+00:00",
+  "files": {
+    "broker.py": {
+      "sha256": "cfdf39a5f7cfcce9fca2ce79e9f83b09769b1a59c5ae8111bdd17dd4fd5b2463",
+      "snapshot": "frozen/pre-baseline/broker.py"
+    },
+    "baseline.py": {
+      "sha256": "b605991a1dfa365f65539f65f81404c7b6505864d7e4b27f2fe1b136938d1ecc",
+      "snapshot": "frozen/pre-baseline/baseline.py"
+    },
+    "PROTOCOL.md": {
+      "sha256": "a9db48eaaa401f52adbbe19fc9aee7e71f55174d5fd50607894f329b6f5d0692",
+      "snapshot": "frozen/pre-baseline/PROTOCOL.md"
+    },
+    "TASK.txt": {
+      "sha256": "6ff25f1b9ed18fcc92d0d533932d6c0f7e13c621f0ba8c08693ac6f55cfb397b",
+      "snapshot": "frozen/pre-baseline/TASK.txt"
+    },
+    "CONTINUE.txt": {
+      "sha256": "fb15e69b9e6cbaa1e71da793638f4f07775c52bcd09c7464b88364f504aca16e",
+      "snapshot": "frozen/pre-baseline/CONTINUE.txt"
+    },
+    "PARSE-ERROR.txt": {
+      "sha256": "3e5211b9ea366d357ad54b496dfa675a256d0d4ea9da6eee86b8249ce03eb1d3",
+      "snapshot": "frozen/pre-baseline/PARSE-ERROR.txt"
+    },
+    "COHORT.json": {
+      "sha256": "6dbccd8045017d795da432cf248824f526d9bea76df879317b01f0284358ab90",
+      "snapshot": "frozen/pre-baseline/COHORT.json"
+    },
+    "prepare_cohort.py": {
+      "sha256": "e8c474c9ce0630136e40c4bbcb506c26f8fba50bac9a5aea5368e223930369ce",
+      "snapshot": "frozen/pre-baseline/prepare_cohort.py"
+    },
+    "preserve.py": {
+      "sha256": "49d9f061d19ab74651e353841c19762f563870846428f680a906785096bcb8a6",
+      "snapshot": "frozen/pre-baseline/preserve.py"
+    },
+    "case-manifest.json": {
+      "sha256": "193596d4261a7a8e193126d244418f556666c7f0e4d53f337547688de573f017",
+      "snapshot": "frozen/pre-baseline/case-manifest.json"
+    },
+    "development/review/preparation-review-01.json": {
+      "sha256": "25ffea51a4e43e350cdae6b3a185a2526788e6360a704a2f9d7510cacb02da48",
+      "snapshot": "frozen/pre-baseline/development/review/preparation-review-01.json"
+    }
+  },
+  "preparations": {
+    "b01": {
+      "sha256": "4b5ce54f1fd3002d34a78fac4314eecb846f81728778154d6ed78d201f44eae8",
+      "snapshot": "frozen/pre-baseline/preparations/b01.json"
+    },
+    "b02": {
+      "sha256": "76ed300c374e82b91cb858d173fb349de7bbdb56ae7951044342c95079c2f3e4",
+      "snapshot": "frozen/pre-baseline/preparations/b02.json"
+    },
+    "w01": {
+      "sha256": "51d05beac287f78f788881aa408d0b16aa559c3106e6775573de059ecbf868c7",
+      "snapshot": "frozen/pre-baseline/preparations/w01.json"
+    },
+    "w02": {
+      "sha256": "69e2fba886a889626d9696e11db6e4bbdb62cb3f9b875aba51237938485d8255",
+      "snapshot": "frozen/pre-baseline/preparations/w02.json"
+    }
+  }
+}

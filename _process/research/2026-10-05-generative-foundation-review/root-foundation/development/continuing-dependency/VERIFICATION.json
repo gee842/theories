@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "scope": "Generic necessity and concrete continuation contrast; mathematical sufficiency is separate",
+  "lean_toolchain": "leanprover/lean4:v4.29.1",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeReconstructionRequirement.lean",
+  "source_sha256": "5c86c940d1eb408a310cb2cedb4c7332ad130d7544a60508e1fc7fc75c6d92b0",
+  "unchanged_law": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+  "unchanged_law_sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+  "successful_log_sha256": "c672155ee825b8d5499ca83c3c40118d7061b224dd82557bae00923a3ca75c83",
+  "attempts": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-01.json",
+      "sha256": "90242a38b6355c417f1e0d8b73afd2676279de90555efa7e25b805cd00e5202f",
+      "status": "failed"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/attempt-02.json",
+      "sha256": "8317091ff639ee770cc5c87ce9c61b82af4132df3a301dddb05d1eae75db5007",
+      "status": "passed"
+    }
+  ],
+  "declarations": 20,
+  "dependency_audits": {
+    "Generative.ReconstructionRequirement.step_a_growth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.trace_a_growth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.growth_repair_cost": [
+      "propext"
+    ],
+    "Generative.ReconstructionRequirement.growth_repair_trace_cost": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.growth_repair_support": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.step_source_balance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.trace_source_balance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.no_capture_support": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.step_intact_from_damage": [
+      "propext"
+    ],
+    "Generative.ReconstructionRequirement.capture_from_damage_requires_repair": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.repairs_cost_common": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.reconstruction_common_necessary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.zero_common_is_permanent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.no_future_repair_from_zero_common": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ReconstructionRequirement.local_reconstruction": [
+      "propext"
+    ],
+    "Generative.ReconstructionRequirement.bulk_reconstruction": [
+      "propext"
+    ],
+    "Generative.ReconstructionRequirement.same_reconstruction_same_total_support": [
+      "propext"
+    ],
+    "Generative.ReconstructionRequirement.local_route_allows_fresh_damage_repair": [
+      "propext"
+    ],
+    "Generative.ReconstructionRequirement.bulk_route_blocks_repair_after_damage": [
+      "propext"
+    ],
+    "Generative.ReconstructionRequirement.bulk_route_no_continuation_can_restore_repair": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "verify_source_sha256": "eef65003574303e9ecd780c3428d03ed17925f4e7355d4f6a913f2d46f4e44d5"
+}

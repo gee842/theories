@@ -1,0 +1,658 @@
+{
+  "status": "passed",
+  "date": "2026-10-06",
+  "scope": "Read-only saved-record extraction and preservation checks; no transition rerun, new theorem, or empirical result.",
+  "source_bindings": [
+    {
+      "receipt": "witness.json",
+      "checked_sources": 10,
+      "mismatches": []
+    },
+    {
+      "receipt": "independent-check.json",
+      "checked_sources": 14,
+      "mismatches": []
+    },
+    {
+      "receipt": "handoff-check.json",
+      "checked_sources": 14,
+      "mismatches": []
+    }
+  ],
+  "inspected_artifact_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/witness.json": "36217a9237fc7ad11408fc7533a8ccbf8f4319b24de9b298eb4f61c65ac528dd",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/results.json": "a6481c3a8e80d9e20d5bb54ad1d23bef2920d35676a65d2724684c910e2ff35a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/independent-check.json": "e1e8c40c01d36c54e453dd6f6b489086e543da9617f968f5139504e86e70684c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/handoff-check.json": "64b2061310a215ec36afeeb3fbc972726894fc4358cdb92d2af095f03160d521"
+  },
+  "extractor_sha256": "1d7d21a1f0a177c9397b7d9110f5e02612650d99db8fe41584112bb18b300f50",
+  "learning_entry": {
+    "fuel": 11,
+    "patient": 22,
+    "source": 0,
+    "active": true,
+    "q": 4,
+    "coupling": 0,
+    "last": 1,
+    "raw_r": 0,
+    "raw_d": 0,
+    "raw_w": 1,
+    "raw_t": 0,
+    "guides_e": 3,
+    "guides_i": 0,
+    "inert": 0,
+    "r_nodes": [
+      true,
+      true
+    ],
+    "d_nodes": [
+      true,
+      true
+    ],
+    "graph": [
+      1,
+      5
+    ],
+    "retained": [
+      true,
+      true
+    ],
+    "spent": 37,
+    "patient_used": 2,
+    "damage": 0,
+    "waste": 0,
+    "actor_attempts": 2,
+    "recipient_attempts": 2,
+    "actor_captures": 2,
+    "recipient_captures": 2,
+    "copy_events": 2,
+    "paid_holds": 3,
+    "rent_events": 4,
+    "sensed": 4
+  },
+  "single_complete_word_probability": "1/1080",
+  "same_endpoint_preparation_family_probability": "1/405",
+  "inherited_prior_motor_revision": false,
+  "preserved_topology_fields": [
+    "graph",
+    "coupling",
+    "guides_e",
+    "guides_i",
+    "r_nodes",
+    "d_nodes"
+  ],
+  "actual_learning_trace": [
+    {
+      "event": "A0.rent",
+      "fuel": 10,
+      "patient": 22,
+      "q": 4,
+      "qualification": null,
+      "escrow": 0,
+      "bank": 40
+    },
+    {
+      "event": "A0.sense",
+      "fuel": 9,
+      "patient": 22,
+      "q": 4,
+      "qualification": null,
+      "escrow": 0,
+      "bank": 40
+    },
+    {
+      "event": "A0.work.1",
+      "fuel": 6,
+      "patient": 22,
+      "q": 4,
+      "qualification": null,
+      "escrow": 0,
+      "bank": 40
+    },
+    {
+      "event": "A0.receipt",
+      "fuel": 16,
+      "patient": 22,
+      "q": 4,
+      "qualification": null,
+      "escrow": 0,
+      "bank": 30
+    },
+    {
+      "event": "A0.upkeep",
+      "fuel": 15,
+      "patient": 22,
+      "q": 4,
+      "qualification": null,
+      "escrow": 0,
+      "bank": 30
+    },
+    {
+      "event": "wire.attach",
+      "fuel": 14,
+      "patient": 22,
+      "q": 4,
+      "qualification": null,
+      "escrow": 0,
+      "bank": 30
+    },
+    {
+      "event": "memory.recode",
+      "fuel": 12,
+      "patient": 22,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 30
+    },
+    {
+      "event": "R1.rent",
+      "fuel": 11,
+      "patient": 22,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 30
+    },
+    {
+      "event": "R1.sense",
+      "fuel": 10,
+      "patient": 22,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 30
+    },
+    {
+      "event": "R1.escrow",
+      "fuel": 8,
+      "patient": 22,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 30
+    },
+    {
+      "event": "R1.work.1",
+      "fuel": 5,
+      "patient": 22,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 30
+    },
+    {
+      "event": "R1.damage",
+      "fuel": 5,
+      "patient": 21,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 30
+    },
+    {
+      "event": "R1.spill",
+      "fuel": 5,
+      "patient": 21,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 20
+    },
+    {
+      "event": "R1.observe.real.zero",
+      "fuel": 5,
+      "patient": 21,
+      "q": 3,
+      "qualification": 0,
+      "escrow": 1,
+      "bank": 20
+    },
+    {
+      "event": "R1.write.changed",
+      "fuel": 5,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 20
+    },
+    {
+      "event": "A1.rent",
+      "fuel": 4,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 20
+    },
+    {
+      "event": "A1.sense",
+      "fuel": 3,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 20
+    },
+    {
+      "event": "A1.work.1",
+      "fuel": 0,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 20
+    },
+    {
+      "event": "A1.receipt",
+      "fuel": 10,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 10
+    },
+    {
+      "event": "A1.upkeep",
+      "fuel": 9,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 10
+    },
+    {
+      "event": "R2.rent",
+      "fuel": 8,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 10
+    },
+    {
+      "event": "R2.sense",
+      "fuel": 7,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 0,
+      "bank": 10
+    },
+    {
+      "event": "R2.escrow",
+      "fuel": 5,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 10
+    },
+    {
+      "event": "R2.work.0",
+      "fuel": 2,
+      "patient": 21,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 10
+    },
+    {
+      "event": "R2.receipt",
+      "fuel": 2,
+      "patient": 31,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 0
+    },
+    {
+      "event": "R2.patient_use",
+      "fuel": 2,
+      "patient": 30,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 2,
+      "bank": 0
+    },
+    {
+      "event": "R2.observe.real.positive",
+      "fuel": 2,
+      "patient": 30,
+      "q": 2,
+      "qualification": 0,
+      "escrow": 1,
+      "bank": 0
+    },
+    {
+      "event": "R2.write.unchanged",
+      "fuel": 2,
+      "patient": 30,
+      "q": 2,
+      "qualification": 1,
+      "escrow": 0,
+      "bank": 0
+    },
+    {
+      "event": "hold.0",
+      "fuel": 1,
+      "patient": 30,
+      "q": 2,
+      "qualification": 1,
+      "escrow": 0,
+      "bank": 0
+    },
+    {
+      "event": "hold.1",
+      "fuel": 0,
+      "patient": 30,
+      "q": 2,
+      "qualification": 1,
+      "escrow": 0,
+      "bank": 0
+    }
+  ],
+  "matched_saved_outcomes": {
+    "indexed": {
+      "probability": "1/405",
+      "parent": {
+        "fuel": 0,
+        "patient": 30,
+        "q": 2,
+        "last": 1,
+        "coupling": 0,
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          true
+        ]
+      },
+      "learning": {
+        "wire": true,
+        "indexed": true,
+        "spent": 31,
+        "recipient_captures": 1,
+        "real_positive": 1,
+        "real_zero": 1,
+        "changed_writes": 1,
+        "damage": 1,
+        "patient_used": 1
+      }
+    },
+    "no_feedback": {
+      "probability": "1/405",
+      "parent": {
+        "fuel": 0,
+        "patient": 20,
+        "q": 3,
+        "last": 0,
+        "coupling": 0,
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          true
+        ]
+      },
+      "learning": {
+        "wire": true,
+        "indexed": true,
+        "spent": 31,
+        "recipient_captures": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "changed_writes": 0,
+        "damage": 2,
+        "patient_used": 0
+      }
+    },
+    "misleading": {
+      "probability": "1/405",
+      "parent": {
+        "fuel": 0,
+        "patient": 20,
+        "q": 3,
+        "last": 1,
+        "coupling": 0,
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          true
+        ]
+      },
+      "learning": {
+        "wire": true,
+        "indexed": true,
+        "spent": 31,
+        "recipient_captures": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "changed_writes": 0,
+        "damage": 2,
+        "patient_used": 0
+      }
+    },
+    "private_zero": {
+      "probability": "1/405",
+      "parent": {
+        "fuel": 0,
+        "patient": 30,
+        "q": 3,
+        "last": 0,
+        "coupling": 0,
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          true
+        ]
+      },
+      "learning": {
+        "wire": true,
+        "indexed": true,
+        "spent": 31,
+        "recipient_captures": 1,
+        "real_positive": 0,
+        "real_zero": 0,
+        "changed_writes": 2,
+        "damage": 1,
+        "patient_used": 1
+      }
+    },
+    "shared_write": {
+      "probability": "1/405",
+      "parent": {
+        "fuel": 0,
+        "patient": 21,
+        "q": 0,
+        "last": 0,
+        "coupling": 0,
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          false,
+          false
+        ]
+      },
+      "learning": {
+        "wire": true,
+        "indexed": true,
+        "spent": 21,
+        "recipient_captures": 0,
+        "real_positive": 0,
+        "real_zero": 1,
+        "changed_writes": 1,
+        "damage": 1,
+        "patient_used": 0
+      }
+    }
+  },
+  "saved_unconditional_aggregate_metrics": {
+    "primary": {
+      "indexed": {
+        "recipient_captures": "11/405",
+        "p_strict_witness": "11/405",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "no_feedback": {
+        "recipient_captures": "0",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "private_zero": {
+        "recipient_captures": "11/405",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "shared_write": {
+        "recipient_captures": "0",
+        "p_strict_witness": "0",
+        "p_site_retained": "22/405",
+        "fuel": "224/405",
+        "actor_captures": "25/162",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      }
+    },
+    "same_law": {
+      "indexed": {
+        "recipient_captures": "1/10",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "no_feedback": {
+        "recipient_captures": "1/10",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "private_zero": {
+        "recipient_captures": "59/810",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "shared_write": {
+        "recipient_captures": "1/10",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      }
+    },
+    "same_law_outages": {
+      "indexed": {
+        "recipient_captures": "151/2160",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "no_feedback": {
+        "recipient_captures": "3/40",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "private_zero": {
+        "recipient_captures": "59/1080",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "shared_write": {
+        "recipient_captures": "151/2160",
+        "p_strict_witness": "0",
+        "p_site_retained": "121/1620",
+        "fuel": "1891/3240",
+        "actor_captures": "283/1620",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      }
+    },
+    "reversal_after_positive": {
+      "indexed": {
+        "recipient_captures": "1/18",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "no_feedback": {
+        "recipient_captures": "1/18",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "private_zero": {
+        "recipient_captures": "67/810",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      },
+      "shared_write": {
+        "recipient_captures": "1/18",
+        "p_strict_witness": "0",
+        "p_site_retained": "11/135",
+        "fuel": "481/810",
+        "actor_captures": "49/270",
+        "p_prior_motor_revision_and_strict_witness": "0"
+      }
+    }
+  },
+  "whole_history_energy_account": {
+    "initial": 195,
+    "preparation": 4,
+    "adapter": 1,
+    "prefix_spent": 68,
+    "prefix_waste": 10,
+    "architecture_spent": 37,
+    "architecture_recipient_operation": 2,
+    "architecture_damage": 0,
+    "architecture_waste": 0,
+    "learning_spent": 31,
+    "learning_waste": 10,
+    "learning_recipient_operation": 1,
+    "learning_damage": 1,
+    "actor_remaining": 0,
+    "recipient_remaining": 30
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "scope": "Document integrity of five current Markdown files, six owned additive paragraphs, reviewed hashes, and byte-preserved historical canonical. Philosophical review is internal collaborating-AI assessment at the declared candidate scope, not proof of ethical truth or verification of unrelated concurrent work.",
+  "current_files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "9a752aa0f340fcef7e60402a9e79b050bf5f1ea2b236a1fe66c958177db8cd6c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-RECONSTRUCTION.md",
+      "sha256": "71d1909e5026a88a3784957751db39f09afebaec7e8ccb0855314b14b788e9be"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-SOURCES.md",
+      "sha256": "46229e826e81532bcb02ca3771b8d4e2c470f25fbaf3d45b16668c8233bc417e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-INTEGRATION.md",
+      "sha256": "efee57fd656fa3ae8c9b1ae42f4592d4bdb793abeb030bcc88b0eb76e0f18899"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-nondual-generative-starting-point.md",
+      "sha256": "4f2148f89acf2601aa982d3bfe423195dffd0d426a00613f65c7316c197f6efb"
+    }
+  ],
+  "owned_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "marker": "**Nondual generative reconstruction",
+      "paragraph_sha256": "a568c5794d24fd95bccfd3b9a2930543bf6010e7b19ce9bab4b1d69914a7d7a4"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "marker": "**Nondual starting point and formable response",
+      "paragraph_sha256": "39f691c2c2f4ee5b1df59680efdf990bc3ca41b40016aaf258780dc38c17c873"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "marker": "**Nondual reconstruction and response individuation",
+      "paragraph_sha256": "42b871fb4f2fe18b183736a1644a85d37581302ac5185548d34e3cdbf2afac87"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "marker": "**Occurrence → formable response → differentiated concern",
+      "paragraph_sha256": "6b986d7aa72490e61f818b6245cdc0e8b514599b04a858368850faec0d000306"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "marker": "**Nondual reconstruction:**",
+      "paragraph_sha256": "9a53b16e065d3b1f6d25022e806b676fa9e019fbfeae78247c8111e2f681a5e1"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "marker": "Nondual generative redirection",
+      "paragraph_sha256": "1d195448dd32f60b21f52b4bdfb8c43657992eff78e45759cafdbd80e3c40238"
+    }
+  ],
+  "local_links_checked": 145,
+  "heading_fragments_checked": 21,
+  "reviewed_hashes_verified": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-RECONSTRUCTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-SOURCES.md",
+    "sources/15-codex-theory-conversations/2026-10-06-nondual-generative-starting-point.md"
+  ],
+  "historical_canonical": {
+    "date": "2026-10-06",
+    "purpose": "Preserve the reviewed assistance-jurisdiction formulation before centering the user-requested nondual reconstruction. Historical snapshot, not another active formulation.",
+    "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-NONDUAL-RECONSTRUCTION.md",
+    "sha256": "86b669278b7f06cb951058e9575eeed2efe868dbc9af54e4f7b2fa24f6f40456",
+    "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+    "prior_receipt": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-CHECKS.json"
+  },
+  "four_prior_notes_and_six_prior_paragraphs_unchanged": true,
+  "new_participant_experiments": 0,
+  "new_formal_theorems": 0,
+  "errors": []
+}

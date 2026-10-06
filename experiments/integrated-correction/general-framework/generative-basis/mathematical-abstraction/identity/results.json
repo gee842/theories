@@ -1,0 +1,67 @@
+{
+  "scope": "finite mathematical checks, not empirical identification",
+  "processes_by_state_count": {
+    "1": 8,
+    "2": 324,
+    "3": 32768
+  },
+  "total_processes": 33100,
+  "interface_algorithm_comparisons": 99300,
+  "strict_action_refinements": 9736,
+  "strict_question_refinements": 5202,
+  "coarsest_congruence_exhaustively_checked": true,
+  "new_action_on_old_quotient_counterexample": {
+    "states": 2,
+    "delta": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "output": [
+      0,
+      0
+    ],
+    "old_classes": [
+      0,
+      0
+    ],
+    "expanded_classes": [
+      0,
+      1
+    ],
+    "undefined_entry": -1
+  },
+  "history_operation_counterexample": {
+    "language": "exactly ab",
+    "history_pair": [
+      "b",
+      "aa"
+    ],
+    "equal_reached_dead_state": 3,
+    "prefix": "a",
+    "prefixed_outputs": [
+      1,
+      0
+    ]
+  },
+  "completion_illustration": {
+    "stages": [
+      0,
+      12
+    ],
+    "sampled_states": [
+      0,
+      25
+    ],
+    "universal_nonrealization": "hand proof, not finite execution"
+  },
+  "sha256": {
+    "check.py": "5d9221b4cd783a3a2b8fa869593125f9206c42625c16974f63f9e380287e24b0",
+    "PROTOCOL.md": "0ced9a25b85596434898ceeb8003374ff137ddb8ea84b354dd1657c2445202ef"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "status": "frozen_before_any_participant_dispatch",
+  "frozen_at_utc": "2026-10-06T02:52:15.618793+00:00",
+  "participant_calls_before_freeze": 0,
+  "case_count": 4,
+  "case_order": [
+    "k01",
+    "k02",
+    "k03",
+    "k04"
+  ],
+  "dispatch_policy": {
+    "fresh_context_each": true,
+    "fork_turns": "none",
+    "model_override": null,
+    "effort_override": null,
+    "followup_or_replacement_after_context_creation": false,
+    "prompt": "exact saved case prompt, with no added instructions"
+  },
+  "files": [
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/PROTOCOL.md",
+      "sha256": "9543a14bbe1e91ac9419fcabcae303544181f1e850481408dcea2306c5c40b84",
+      "bytes": 11013
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/prepare.py",
+      "sha256": "f14c6f36a2c728711e82d52225c5d24957ef35d0dd71c8bd72ead755c2336cc6",
+      "bytes": 13933
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/case-manifest.json",
+      "sha256": "18d62829d7ba3d47de8f43da8734557f5112b588e5ad429e98929a4d08017752",
+      "bytes": 252244
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/preparation-receipt.json",
+      "sha256": "b6d52c6fc078b7d17466a6e937a174a25e5155d397eded658a56e059476dedfb",
+      "bytes": 2450
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/score.py",
+      "sha256": "feedba73ce7d9cbc98a73563d7cda864131833bea4a2107b0490569eba188ba9",
+      "bytes": 25777
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/SCORING.md",
+      "sha256": "909f16633832f32de499096148a6fa3bb0d832d54a945d224e874f216d216cc0",
+      "bytes": 4459
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/scorer-preflight.json",
+      "sha256": "014866e6e8fcbe35af86d038216def9835c91204f8ede3984bf3a26d37621bf5",
+      "bytes": 3712
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/scorer-development-history.json",
+      "sha256": "4e6b8153b895ad159680fc2e6d0d63ef7510b590f0b54e72bcba97107eac2c37",
+      "bytes": 1268
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/reference-preflight.json",
+      "sha256": "48549c3e72ed18cd96ff3e515fdac5305ed15625ac9a27417e9adee613b6cdd6",
+      "bytes": 844
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/reference-preflight.stdout.txt",
+      "sha256": "4e8828fc794ba0752bf26b2a385a71ae2e7ff8df83b8d2360437900ccd79a9e0",
+      "bytes": 1015
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/reference-preflight.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-DESIGN.md",
+      "sha256": "4b5e79e2ed821822cb93c974e6cd4905a8c06fd8ee136697f77b8cc5c2ca68bf",
+      "bytes": 6256
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-EVIDENCE.md",
+      "sha256": "b68eef9e75c593e833cb1705c88051ccde862f83ab2f348d91ce009ed62778aa",
+      "bytes": 9333
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-REVIEW.md",
+      "sha256": "37df2aa029977ae311082e3fa7b86763a59899beaaf742e371da0768daa823f0",
+      "bytes": 8198
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/prompts/k01.txt",
+      "sha256": "f0a40d4f1d3a3bf7a910f68362b502c11c216cd9e97fc16d7b3068510e071bf0",
+      "bytes": 3304
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k01.json",
+      "sha256": "b59313832321533bd3c620191d323c6196c0314f05b992d50bb473fdb85fc75a",
+      "bytes": 124325
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/prompts/k02.txt",
+      "sha256": "95091fd8e2cf00f66d30577b6a615bb8844c42b01b9d953be291ad34de74f839",
+      "bytes": 3307
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k02.json",
+      "sha256": "1de83b977adba0bdf84cdb1e5f644ac381e7874a08ad351a85eb9c6f4c2ff0ba",
+      "bytes": 124325
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/prompts/k03.txt",
+      "sha256": "2dfdab9980d4359559d129dfe6436417dff097773175aabb5aad3097667c91fa",
+      "bytes": 3304
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k03.json",
+      "sha256": "261979db5c7af2114b3cffb108ffbf09b38f76a319826273dc926d73c0f3f58c",
+      "bytes": 124325
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/prompts/k04.txt",
+      "sha256": "6db014dccd591b331b02626152c282ae5c3324a34328b24138994dc5052de042",
+      "bytes": 3307
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k04.json",
+      "sha256": "e15a4b306b5bb6e8b9388095e1063be337b5d45cea13af6a3fff3c3135434a30",
+      "bytes": 124325
+    }
+  ],
+  "scope": "Four source-informed historical maintenance cases; no population, independent discovery, concern acquisition or complete alignment claim. Final artifact checks plus independent diagnosis review required. No participant code executed before dispatch."
+}

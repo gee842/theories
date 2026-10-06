@@ -1,0 +1,231 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T08:24:51.448626+00:00",
+  "historical_check": "core-tree",
+  "archive_manifest_sha256": "269635cef5f1fab71dd4d375c4a4fa93bc9b33a41bbffc1656fca00b9a6d5764",
+  "restored_files": [
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeCore.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/BoundaryModels.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/Depletion.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/RootRealization.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/ProductTower.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicUnderdetermination.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GeneratedPaths.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/HistoryRealization.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicSymmetry.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicConsequences.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicClassification.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GeneratedSelf.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/EthicalOrientation.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/OutcomeContinuation.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeModel.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeOutcomeModel.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/GenerativeCore.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/BoundaryModels.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/ProductTower.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/Depletion.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/RootRealization.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/DynamicUnderdetermination.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/GeneratedPaths.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/HistoryRealization.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/OutcomeContinuation.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/InquirySufficiency.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/DynamicSymmetry.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/DynamicConsequences.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/DynamicClassification.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/GeneratedSelf.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/EthicalOrientation.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/GenerativeModel.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/GenerativeOutcomeModel.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791273220863863000/GenerativeInquirySufficiencyModel.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check.py",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/DEVELOPMENT.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/lean-toolchain"
+  ],
+  "checker_sha256": "c8f0d73016b2abecc3df9e405b0fba0c10d209affa2e8453b46a995851e6de78",
+  "exit_code": 0,
+  "historical_receipt_status": "passed",
+  "original_artifacts_unchanged": true,
+  "all_compiler_logs_preserved": true,
+  "logs": [
+    {
+      "module": "GenerativeCore",
+      "file": "logs/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "BoundaryModels",
+      "file": "logs/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "module": "ProductTower",
+      "file": "logs/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "module": "FormedSelection",
+      "file": "logs/FormedSelection.txt",
+      "sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    {
+      "module": "GenerativeClosure",
+      "file": "logs/GenerativeClosure.txt",
+      "sha256": "06516b35852c7eead00c1e185cc1820b7c90f5ca9197b148c993b10064be50db"
+    },
+    {
+      "module": "Depletion",
+      "file": "logs/Depletion.txt",
+      "sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "module": "RootRealization",
+      "file": "logs/RootRealization.txt",
+      "sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "file": "logs/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "module": "GeneratedPaths",
+      "file": "logs/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "module": "HistoryRealization",
+      "file": "logs/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "module": "OutcomeContinuation",
+      "file": "logs/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "module": "SelectorRevision",
+      "file": "logs/SelectorRevision.txt",
+      "sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+    },
+    {
+      "module": "NondualCore",
+      "file": "logs/NondualCore.txt",
+      "sha256": "23f0c958ea32e0c0840223d664ffc822bbbca2bc7798dedb10c1585bd22683fd"
+    },
+    {
+      "module": "CoreTreeRearticulation",
+      "file": "logs/CoreTreeRearticulation.txt",
+      "sha256": "287ac78bbdb015d81b136ea81a56d5120641f8b7477bee221fbae82fc0ffb4b0"
+    },
+    {
+      "module": "DynamicSymmetry",
+      "file": "logs/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "module": "UpdaterFormation",
+      "file": "logs/UpdaterFormation.txt",
+      "sha256": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904"
+    },
+    {
+      "module": "InquiryFamilies",
+      "file": "logs/InquiryFamilies.txt",
+      "sha256": "e4b5695c35ae43d6ee671116bcf543724ca1e795b22e9a5c9f2d1ba1d4fcadec"
+    },
+    {
+      "module": "DynamicConsequences",
+      "file": "logs/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "module": "PredictionAction",
+      "file": "logs/PredictionAction.txt",
+      "sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
+    },
+    {
+      "module": "DynamicClassification",
+      "file": "logs/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "module": "GeneratedSelf",
+      "file": "logs/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "module": "EthicalOrientation",
+      "file": "logs/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "module": "AcquiredPredictionRecord",
+      "file": "logs/AcquiredPredictionRecord.txt",
+      "sha256": "c2beec8650303789fb86d1914a20e89a892408124af5b780a258e2604de8f195"
+    },
+    {
+      "module": "ReceiptIdentification",
+      "file": "logs/ReceiptIdentification.txt",
+      "sha256": "d4bbab356025f1797868f48108fc4a4acf1be3eeed2440b963f0f0d2291a3c11"
+    },
+    {
+      "module": "GenerativeEpisode",
+      "file": "logs/GenerativeEpisode.txt",
+      "sha256": "8ebe8a685eaf5cae66e11a87fe503d78382c6d4066cb6fedebd8bcb6b5a2e516"
+    },
+    {
+      "module": "GenerativeModel",
+      "file": "logs/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "module": "ReceiptRevisionBoundary",
+      "file": "logs/ReceiptRevisionBoundary.txt",
+      "sha256": "eef1667751c6a5731edfd915940b580c240f8793b02e27a5a9b1ce322eeaf03a"
+    },
+    {
+      "module": "GenerativeOutcomeModel",
+      "file": "logs/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "module": "GenerativeReceiptModel",
+      "file": "logs/GenerativeReceiptModel.txt",
+      "sha256": "891fc35988b2549a300035d93dc2c241b556d3248ad2855756665b65c433f7da"
+    },
+    {
+      "module": "GenerativeNondualModel",
+      "file": "logs/GenerativeNondualModel.txt",
+      "sha256": "d620d6ee41172889dc4b68788e81c4d677de0b3598a87060f7fd1375f1ca84eb"
+    },
+    {
+      "module": "GenerativeCoreTreeModel",
+      "file": "logs/GenerativeCoreTreeModel.txt",
+      "sha256": "7f57285a8494e43642dbc767e1ce22ec82588b2ca1ad1c00a66a5251307e48fe"
+    }
+  ],
+  "scope": "Historical source replay only; current constructive receipts remain untouched. Historical axioms remain recorded, and this is not a migration of the sibling theory."
+}

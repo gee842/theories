@@ -1,0 +1,89 @@
+# Actual undergoing and the warrant of concern
+
+6 October 2026. AI-authored constructive review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **actual undergoing and its possible transformation → what warrants concern within that relation**. The [coformation integration](YITI-REN-COFORMATION-INTEGRATION.md) supplies the starting account, not a new proof that every informed process becomes caring. No new experiment, formal result or primary-source reading is claimed.
+
+## 1. Preserve the phenomenon before criticizing the claim
+
+Consider an independently identified severe, continuing, still-unwanted experience, together with an available transformation that genuinely relieves its adverse aspect. Preserve the undergoing continuity, permissions, other consequences and differentiated positions. These conditions describe the case without defining the transformation as already morally favored. Actual opportunity and justified belief about opportunity remain distinct.
+
+The positive proposal locates significance in this changing relation. The improvement is not an observer's approval subsequently attached to neutral events. Nor must value travel between primitive owners. Nevertheless, the proposal concerns practical justification, not merely an accurate causal description. Its claimed range needs support within the same account.
+
+## 2. The informed manipulator is an exact test
+
+A manipulator can accurately understand what someone undergoes, predict how relief or continued adversity changes their conduct, and exploit those differences. It may retain detailed histories and revise ineffective tactics. Denying it every kind of understanding would protect the theory by changing the meaning of understanding after the counterexample appears.
+
+This case discriminates three propositions:
+
+- Accurate understanding alone necessarily produces caring motivation: manipulation challenges this claim.
+- The transformation supplies an ethical consideration, but the manipulator recognizes and opposes it: this challenges reliable uptake, not the consideration's existence.
+- The manipulator denies that the other's improvement contributes any justification to its own available choice: this is a substantive warrant rival, requiring an account of that exclusion.
+
+Behavior alone cannot decide which position obtains. Neither voluntary cruelty nor a missing helping disposition establishes the absence of a reason. Conversely, recognizing what is bad for another does not by itself concede the disputed option-directed justification. The distinction prevents both moralizing ignorance and manufacturing agreement.
+
+## 3. Full context is not an action commitment
+
+A description claiming adequacy to the whole relevant history cannot erase the undergoing merely because the controller succeeds. It must preserve that its success may depend on another's continuing burden. This is a real constraint on explanation: local control is not an adequate summary of the entire relation.
+
+It does not follow that the controller must adopt every represented interest. A practical egoist can acknowledge the complete description while restricting its deliberation to its own projects and accepted obligations. Nothing here requires a second ontology or an external law. Its restriction can itself have a generative history.
+
+The positive account must therefore distinguish descriptive adequacy, morally adequate treatment, and effective pursuit of a selected end. If “full understanding” already includes a commitment to morally adequate treatment, deriving caring action from it would be conditional on that commitment. If it means complete factual understanding, the manipulator remains possible. Neither interpretation settles the warrant by definition.
+
+## 4. A positive, discriminating adjudication
+
+For the clean case, this reviewer favors the direct ground: actual relief contributes a consideration for making that transformation possible before helping has been adopted as a project. What is improved explains the consideration; available participation explains where it can be acted upon. This does not infer favor merely from common existence or symmetrical labels.
+
+Compare two prospective continuations with the same specified private return and outward success signal: one relieves the independently identified burden; the other only conceals it. This is a conceptual contrast, not an observed matched experiment. The relief account gives them different patient-directed justification. The manipulator can judge them equally successful for control while correctly understanding the difference. That equality establishes the limited scope of its success criterion, not moral equivalence.
+
+This target sensitivity supports the direct ground because it makes justification answer to what the response accomplishes there, supports correcting ineffective assistance, and permits withdrawal once the relevant burden actually ends. These virtues are inherited from the [constitutive review](CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIEW.md), not newly discovered. They jointly support a substantive judgment; they do not make it a logical consequence of information completeness. Costs, refusals and competing claims can change permissible or decisive action without erasing this distinction.
+
+The proposed extension assesses the formation and revision of ends themselves. Abandoning a successful controlling project can be favored by what it changes for the affected experience, before a caring project replaces it. If that appraisal is warranted, adopted ends cannot exhaust its ground. The rival may contest the appraisal; successful reproduction alone does not settle it. This is defended normative sufficiency, not a newly derived theorem. This causing case does not settle noncausing stranger scope.
+
+## 5. The remaining rival and the actual result
+
+The strongest restrictive rival accepts the relief comparison's benefit but gives independent self-direction jurisdiction over positive projects. It can allow role obligations and optional charity while denying any pre-adoption practical contribution from an unrelated sufferer's benefit. That restriction deserves substantive assessment. Showing that concern is optional or sometimes legitimately excluded does not establish its blanket absence; neither does the rival's accurate description establish the restriction's authority.
+
+Equally, our account cannot refute it solely by pointing to unchanged suffering. Genuine undertakings, permissions and protective relations can alter what counts in a choice without changing the episode. The [closure audit](ETHICAL-CONSTITUTION-CLOSURE.md) preserves this challenge at its earlier scope. A freely varied ethical predicate would locate an omitted premise in a representation, not defeat the fuller constitutive proposal.
+
+The warranted advance is therefore precise: informed exploitation tests motivation and selective practical use without automatically defeating the ground of concern; full-context explanation corrects false claims of comprehensive success without automatically compelling ethical commitment. The positive relief judgment remains defensible, while its unrestricted practical scope is not established by those corrections. Further progress must justify or defeat the rival's particular exclusion while preserving the actual undergoing. Additional bookkeeping, stronger prediction or another declaration of unity would not decide that disagreement.
+
+## 6. One permitted award outcome, different grounds of selection
+
+**Continuation, 6 October 2026.** This application sharpens the inherited exclusion challenge. The [assistance-jurisdiction review](ASSISTANCE-JURISDICTION-COUNTERREVIEW.md) already distinguishes protected deliberation, genuine disqualification and permission to decline. The [fair-allocation comparison](PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md) preserves a fresh relief opportunity after a settled procedure. Here the award outcome stays fixed while its proposed basis changes. This is an original conceptual test, not an observed case or a new general theory of reasons.
+
+Suppose an adjudicator awards a prize according to an independently defensible merit criterion. Its legitimacy involves the good of the practice and justified equal treatment of entrants; it is not established merely because the organizer announced a rule. P merits the award. Receiving it would also genuinely relieve an independently caused, severe and still-unwanted experiential burden. The adjudicator knows this but has no prior helping project, private return or responsibility for that burden. The recipient permits the relevant receipt. Within this comparison, the restriction to merit remains warranted, including after considering the severity of P's condition; no emergency or other exception defeats it. These are declared conditions of the test, not an assumption-free derivation of prize authority.
+
+The adjudicator's awarding P the prize is permitted on the merits. Using P's burden to determine the winner would violate the justified selection criterion, even though the same person receives the same award. This gives a plausible practical distinction between **permission for an outcome-producing act** and **permission to determine that act by a particular consideration**. It does not establish that the relief contributes no moral favor. That further interpretation is exactly what competing accounts dispute.
+
+Three relations need separate descriptions:
+
+| Relation | What the example asks |
+|---|---|
+| Psychological motivation | What actually moves the adjudicator, including compassion, fear, habit or mixed motives |
+| Governing selection criterion | Which considerations the legitimate award procedure authorizes to determine its winner |
+| Normative ground | Which facts really contribute to justifying the adjudicator's choice, whether recognized or used |
+
+An adjudicator could be compassionately motivated to carry out the valid merit procedure without using need to select its winner. Conversely, someone could implement a need-based selection rule without feeling compassion. Neither observation decides whether relief is a normative ground. Our restriction concerns the basis determining the award, not every emotion accompanying its performance. If an action description includes its determining basis, changing that basis changes the described action. We preserve the award outcome, not identical complete actions or histories under every description.
+
+The role also changes the scope of the test. The adjudicator is unrelated to the cause and prior care of P's burden, but occupies an actual institutional relation to P and the other entrants. This is therefore a challenge to unrestricted application across roles, not a counterexample already contained in the clean project comparison's absence of a special procedure. A generated practice can have genuine normative significance without introducing a primitive owner; its existence alone still does not vindicate its authority.
+
+### Two accounts of the same restriction remain live
+
+On one account, the patient's improvement supplies a first-order moral consideration, while an independently justified higher-order restriction bars determining this award by it. On another, the practice's justified constitution disqualifies that consideration from counting for this award choice. Both can require selection by merit. Observing a compliant award, or hearing that need was excluded, does not choose between them. If the second account is correct, preserving the patient's value for another response does not recover active favor for this choice.
+
+The [existing primary-source record](ASSISTANCE-JURISDICTION-SOURCES.md#1-adams-an-exclusion-can-affect-justification-itself) supports treating this as a real disagreement. Adams contrasts his justificatory account with Raz's account of restrictions on acting for reasons: manuscript pp. 3–7 distinguish retained normative reasons from disqualification of their counting relation. Pages 9–10 and 13–17 connect justified restrictions to practices and roles while limiting their reach. Page 8 already applies aspect-specific relevance within a tennis game: feelings excluded for competitive shots can remain relevant to collegial conduct. This award application is our analysis, not Adams's example or a newly discovered general distinction.
+
+The affirmative conclusion is limited but important: **an otherwise permitted beneficial outcome does not establish authorization to choose it for that benefit**. Conversely, a warranted restriction on that basis does not by itself establish the absence of normative favor. The strongest rival must defend the second account's claim about justification in this very choice. The direct candidate must address it without converting every exclusion into ordinary outweighing.
+
+If a restriction is instead justified by improving conformity with the very patient-directed ground it excludes from direct use, that argument cannot simultaneously show that the underlying ground never existed. This is a conditional explanation of that restriction's dependence, not proof that every exclusion has that rationale or that the ground retains active force for every individual choice. Constitutive restrictions require their own assessment.
+
+### Consequence for the current formal interface
+
+A fresh source inspection finds that [PatientConcern.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean) defines `Eligible` using positive burden, a permission flag and sufficient remaining resources. [GroundingContract.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean) gives `Merit` the type `State → Patient → Prop` and takes C2 as a supplied contract. Its private-variation theorem changes `priorRole` while preserving conditional merit under that contract. That proves the declared local invariance; it does not prove invariance under actual institutional changes whose justified criteria alter the proposed basis of choice.
+
+Before applying this interface to the award case, an interpretation must identify the response, the practical question under assessment, the criterion governing that question, and any justified restriction on using the patient consideration. It must then declare whether `Merit` represents retained first-order favor or current justificatory contribution. The two interpretations cannot be exchanged during a proof. Defining eligibility as whatever already preserves the desired favor would conceal C2 in its antecedent. Merely adding more independently variable predicates would likewise not settle which account fits the actual practice.
+
+This is a requirement for a faithful interpretation or future extension, not a new normative axiom, a new theorem or a claimed defect in Lean. The omitted relationship concerns this local representation; it does not establish an ontological separation between practice, undergoing and evaluation. No scientific checks need repeating for this prose clarification.
+
+**Reading scope and ownership:** this continuation directly reread Adams's existing local manuscript extraction at pp. 3–18 through the conclusion, including notes; the references are not additional source readings. The [earlier source receipt](ASSISTANCE-JURISDICTION-SOURCES.md#6-access-preservation-and-review-receipt) records the retrieved manuscript and its hash; no redundant import was made. A search located Raz's 2021 paper, but full text was inaccessible and no conclusion here is attributed to a new primary reading of it. The source-level Lean inspection covers the named definitions and private-variation theorem; no new formal compilation is claimed. The [exact append receipt](development/WARRANT-OF-CONCERN-OPTION-REVIEW-EDIT.json) preserves the original review bytes and this owned fragment.
+
+**Separate internal review:** the positive-argument contributor read this entire appendix and freshly inspected the named Lean definitions and theorem, finding no blocking scope or inference issue. Its independent primary reading covers Adams's p. 8 tennis passage, not pp. 3–18. This reviewer reciprocally read the new [fixed-award implementation argument](WARRANT-OF-CONCERN-ARGUMENT.md#6-a-fixed-award-and-the-manner-of-carrying-it-out) and found its limited positive judgment and distinction between outcome, basis and timing adequate. These are collaborating-AI checks, not independent empirical evidence.

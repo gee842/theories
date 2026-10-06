@@ -1,0 +1,377 @@
+{
+  "status": "passed",
+  "scope": "Read-only binding, preservation, additive integration and link checks; no scientific rerun.",
+  "scientific_receipt": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-independent-check.json",
+  "scientific_counts": {
+    "cases": 6,
+    "shared_prefix_events": 115,
+    "suffix_native_events": 449,
+    "stored_event_occurrences": 564
+  },
+  "source_bindings": 20,
+  "independent_helpers": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent_check.py": "c9ff5611ac3248b02db951bb2edcf7bf23e77d559f6e7da438c67047791a9250"
+  },
+  "conserved_total_equation": "native remaining energy + escrow + spent = 590",
+  "prior_artifacts_preserved": 16,
+  "prior_readme_recovered_by_removing_owned_addendum": true,
+  "prior_integration_fragments_preserved": 7,
+  "new_additive_fragments": 7,
+  "all_pre_edit_documents_exactly_recoverable": true,
+  "local_links_and_anchors_checked": 83,
+  "artifact_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md": "b30f8056d3617e031dd6b8d30b2d1de545e20a5c5b84a258c9411e3306ec96df",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md": "42ca182f6424667771044db6666676da528ce6ded5792f951452dedb32aeec62",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md": "a9af3d968bc2adb51cf2b413395ec07d6873d4e20186bc075bce75fe3cda1d87",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md": "2333f21355a8b005995c63f775114b3978a67a48165f9afae721faf00c82d67a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md": "4c72373d9f7e1c1154dcc4b37b716c5e7fc13be1cb208d513357829b358bb30e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_response.py": "a5c22759c03cd5c5caecef5d1437eda309148e862293812fae1d36db2e67a2d0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-results.json": "6d3ee8ba419f66f09051f676ee7c31397e94d2bc771e220003bf7da32b2b2be9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_check_review.py": "bbe629da4557a86523153d9f082a8850d118d4fbef21a4fd2dde9f1e98c23703",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-independent-check.json": "1c5bbf0d23e1bfd8b2c739f39e8cc4753ca08955a98d225c403d3e581a1a579f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-DOC-EDITS.json": "cc7f47c9397df40dcb3934af6812f4af9d291e1b02e89ef66762c155085df890",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/development/operative-review-metadata-before/operative-independent-check.json": "282504c63099548d8a3585d03393cb3bcbe26ac9a8b2d32c73959059a347f2c8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/development/operative-review-metadata-before/operative_check_review.py": "45928afd2dac5a27946f253f2953a951638497bd87ba4c50f03ce4cff8fe4933"
+  },
+  "links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_response.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_check_review.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-SELECTOR-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "REMAINING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/process.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "NONDUAL-APPLICABILITY-COMPARATORS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#accepted-work-sequence"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/process.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "INQUIRY-COMPLETION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#the-origin-of-a-need-and-the-value-of-its-repair"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "YITI-REN-PURPOSE-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_check_review.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-independent-check.json"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md",
+      "target": "model.py"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md",
+      "target": "results.json"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#operative-requirements-and-changing-organizations"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "OPERATIVE-PROTOCOL.md"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "operative_response.py"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "operative-results.json"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "operative-independent-check.json"
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/process.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md#2-an-unconditional-statistic-and-its-generator"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-SELECTOR-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+      "target": "REMAINING-DEPENDENCY-INTEGRATION.md"
+    }
+  ],
+  "scope_review": {
+    "reviewed_integration_sha256": "b30f8056d3617e031dd6b8d30b2d1de545e20a5c5b84a258c9411e3306ec96df",
+    "blocking_corrections": []
+  },
+  "stronger_foundation_complete": false,
+  "mechanism_cross_review": "Accepted root integration without correction; final mechanism note includes bounded executed status and concurrent relay credit."
+}

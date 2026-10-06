@@ -1,0 +1,45 @@
+{
+  "scope": "Proof-development attempts; attempt01 was terminated after costly simplification; attempt02 exposed an arithmetic commutativity goal; later clean passes add scoped results.",
+  "files": [
+    {
+      "file": "PretrainingEvidence-attempt01.lean",
+      "sha256": "d97e923c086aaa0497571b1037afa92062c1dd57ef99b51a0361fed0bdc0a957"
+    },
+    {
+      "file": "PretrainingEvidence-attempt01.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "PretrainingEvidence-attempt02.lean",
+      "sha256": "7cfc987f99713b5e6d060055ae1e35147355ab597d618625823e316dc7c1627d"
+    },
+    {
+      "file": "PretrainingEvidence-attempt02.txt",
+      "sha256": "374505e4d297cbb20b94a422d1233940b4a689d899ea57b13cefb48660fc8802"
+    },
+    {
+      "file": "PretrainingEvidence-attempt03.lean",
+      "sha256": "e9c3f2aed7ce13f70310f229cb5cc65a6b768f679de0992fa168a152b3c85685"
+    },
+    {
+      "file": "PretrainingEvidence-attempt03.txt",
+      "sha256": "0455bbbe24657207c4b8a99a3aa5624f7c4d2be31b73c9a5612faaa762f90675"
+    },
+    {
+      "file": "PretrainingEvidence-attempt04.lean",
+      "sha256": "a904bdbed95425563cbd34746f661d28de576ca7ad3900518501503ee9ad7a49"
+    },
+    {
+      "file": "PretrainingEvidence-attempt04.txt",
+      "sha256": "aa7be279606f9cabd02fa839c37dbd3afe39b7e9e50837cb395fb0f5b47ce2e7"
+    },
+    {
+      "file": "PretrainingEvidence-attempt05.lean",
+      "sha256": "ecdd47fbd72a3ca56ba3a2c1700b2eb3b9580d819e6776e3bc5681a8fce234e6"
+    },
+    {
+      "file": "PretrainingEvidence-attempt05.txt",
+      "sha256": "aa7be279606f9cabd02fa839c37dbd3afe39b7e9e50837cb395fb0f5b47ce2e7"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "request_id": "diagnose",
+  "operation": "check",
+  "version": "v0"
+}

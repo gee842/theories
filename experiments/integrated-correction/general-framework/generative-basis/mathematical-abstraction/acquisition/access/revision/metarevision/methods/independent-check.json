@@ -1,0 +1,303 @@
+{
+  "scope": "independent entire symbolic-operation schedule, native apparatus, candidate update and fuel/memory reference",
+  "fixtures": 19,
+  "finite_histories": 896,
+  "summaries": {
+    "feedback": {
+      "cases": 224,
+      "complete": 208,
+      "retained": 208,
+      "correct_retained": 160,
+      "wrong_retained": 48,
+      "broad": 112,
+      "use_prediction_mismatch": 16
+    },
+    "narrow": {
+      "cases": 224,
+      "complete": 192,
+      "retained": 192,
+      "correct_retained": 96,
+      "wrong_retained": 96,
+      "broad": 0,
+      "use_prediction_mismatch": 32
+    },
+    "broad": {
+      "cases": 224,
+      "complete": 224,
+      "retained": 224,
+      "correct_retained": 224,
+      "wrong_retained": 0,
+      "broad": 224
+    },
+    "table": {
+      "cases": 224,
+      "complete": 208,
+      "retained": 208,
+      "correct_retained": 160,
+      "wrong_retained": 48,
+      "broad": 112,
+      "use_prediction_mismatch": 16
+    }
+  },
+  "prefix_denials": [
+    {
+      "operation": "arrival_receipt",
+      "status": "funding:arrival_receipt",
+      "fuel": "16425/65536",
+      "starting_fuel": "183241/65536",
+      "withdrawal": "423563/32768",
+      "receipt": null,
+      "bit": 0,
+      "method_retained": false,
+      "recipe": null,
+      "source": 0,
+      "waste": 10
+    },
+    {
+      "operation": "commit_method_bit",
+      "status": "funding:commit_method_bit",
+      "fuel": "2127/65536",
+      "starting_fuel": "185369/65536",
+      "withdrawal": "422499/32768",
+      "receipt": null,
+      "bit": 0,
+      "method_retained": false,
+      "recipe": null,
+      "source": 0,
+      "waste": 10
+    },
+    {
+      "operation": "retain_method_bit",
+      "status": "funding:retain_method_bit",
+      "fuel": "2111/65536",
+      "starting_fuel": "187481/65536",
+      "withdrawal": "421443/32768",
+      "receipt": 0,
+      "bit": 1,
+      "method_retained": false,
+      "recipe": null,
+      "source": 0,
+      "waste": 10
+    },
+    {
+      "operation": "read_method_bit",
+      "status": "funding:read_method_bit",
+      "fuel": "1089/65536",
+      "starting_fuel": "188571/65536",
+      "withdrawal": "210449/16384",
+      "receipt": 0,
+      "bit": 1,
+      "method_retained": true,
+      "recipe": null,
+      "source": 0,
+      "waste": 10
+    },
+    {
+      "operation": "dispatch_generator",
+      "status": "funding:dispatch_generator",
+      "fuel": "1089/65536",
+      "starting_fuel": "189661/65536",
+      "withdrawal": "420353/32768",
+      "receipt": 0,
+      "bit": 1,
+      "method_retained": true,
+      "recipe": null,
+      "source": 0,
+      "waste": 10
+    },
+    {
+      "operation": "generate_stutter_model",
+      "status": "funding:generate_stutter_model",
+      "fuel": "22153/65536",
+      "starting_fuel": "211815/65536",
+      "withdrawal": "102319/8192",
+      "receipt": 0,
+      "bit": 1,
+      "method_retained": true,
+      "recipe": 1,
+      "source": 0,
+      "waste": 10
+    },
+    {
+      "operation": "generate_current_family",
+      "status": "funding:generate_current_family",
+      "fuel": "15039/16384",
+      "starting_fuel": "67993/16384",
+      "withdrawal": "758395/65536",
+      "receipt": 0,
+      "bit": 1,
+      "method_retained": true,
+      "recipe": 1,
+      "source": 0,
+      "waste": 10
+    },
+    {
+      "operation": "commit_use_cursor",
+      "status": "funding:commit_use_cursor",
+      "fuel": "2125/65536",
+      "starting_fuel": "403177/32768",
+      "withdrawal": "224013/65536",
+      "receipt": 0,
+      "bit": 1,
+      "method_retained": true,
+      "recipe": 1,
+      "source": 0,
+      "waste": 10
+    }
+  ],
+  "renamed_cases": [
+    {
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "environment": "three"
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "environment": "four"
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "environment": "three"
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "environment": "four"
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "environment": "three"
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "environment": "four"
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "environment": "three"
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "environment": "four"
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "environment": "three"
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "environment": "four"
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "environment": "three"
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "environment": "four"
+    }
+  ],
+  "thresholds": {
+    "three": "5213/2048",
+    "four": "431433/32768"
+  },
+  "causal_control": {
+    "real_income": "10",
+    "method_bits": [
+      0,
+      1,
+      0
+    ],
+    "recipes": [
+      0,
+      1,
+      0
+    ],
+    "candidate_counts": [
+      6,
+      14,
+      6
+    ],
+    "accurate_and_frozen_cost_equal": true
+  },
+  "primary": {
+    "three": {
+      "status": "complete",
+      "method_bit": 0,
+      "recipe": 0,
+      "spent": "541799/65536",
+      "income": "10",
+      "wasted": 0,
+      "fuel": "142991/8192",
+      "peak_cells": 68,
+      "live_cells": 34
+    },
+    "four": {
+      "status": "complete",
+      "method_bit": 1,
+      "recipe": 1,
+      "spent": "431433/32768",
+      "income": "0",
+      "wasted": 10,
+      "fuel": "167501/65536",
+      "peak_cells": 117,
+      "live_cells": 36
+    }
+  },
+  "source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py": "84e62031fd46bca6b28356df262ab498df65b579f96a29a2333515c59ba27d5d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py": "bba25f7c9639c9c995f8fa950b85f0eea43e98359d2b3f295a8e2aea73684c09",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/PROTOCOL.md": "05229487040e2489ba89bc94727e481bf23e63cd265ba320f95b9948265ad20e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+  },
+  "checked_results_sha256": "7106ef4c49504ff0d1ba86c127abc4d8c207097810477a269043ff39947d9173"
+}

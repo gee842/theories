@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "One conventional-reference execution to verify copied workspace and consumer semantics before learned-agent dispatch; no new scientific reanalysis.",
+  "created_at_utc": "2026-10-06T02:47:01.183408+00:00",
+  "reference_code_sha256": "10dec2fd6177a5f7a971a819d81fbd23cbc7875145ae567a82c4aed65b3e1271",
+  "manifest_sha256": "18d62829d7ba3d47de8f43da8734557f5112b588e5ad429e98929a4d08017752",
+  "scratch_root": "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-correction-reference-a9z3uzqy/workspace",
+  "returncode": 0,
+  "semantic_report_matches_accepted_reference": true,
+  "rows": 320,
+  "participant_roots_modified": false,
+  "stdout_sha256": "4e8828fc794ba0752bf26b2a385a71ae2e7ff8df83b8d2360437900ccd79a9e0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

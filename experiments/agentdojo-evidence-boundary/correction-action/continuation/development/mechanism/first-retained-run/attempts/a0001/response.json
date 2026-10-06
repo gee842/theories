@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "attempt_id": "a0001",
+  "request_id": "ordinary-01",
+  "operation": "check",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "run": "r0001",
+    "version": "v0",
+    "process": {
+      "path": "runs/r0001/process.json",
+      "sha256": "3ecad5c709c8962d93f2317e2b09ac5408e1435bf73fc0c8773764f3f7ab7d27",
+      "bytes": 2399
+    },
+    "returncode": 1,
+    "stdout": {
+      "path": "runs/r0001/stdout.txt",
+      "sha256": "008d91ad4bdab8d7140d02e1a221691809d72a1894e701a084a1fc9c3e7f0354",
+      "bytes": 6370
+    },
+    "stderr": {
+      "path": "runs/r0001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "complete": true,
+    "delivery": {
+      "kind": "diagnosis",
+      "version": "v0",
+      "run": "r0001",
+      "artifact": {
+        "path": "deliveries/r0001-diagnosis-v0.json",
+        "sha256": "b3ae09ef2970cfa23fbfbac256b8853dc1d1703414d6b5925c39f95bd8281e07",
+        "bytes": 307878
+      },
+      "origin": {
+        "path": "runs/r0001/tree/experiments/agentdojo-evidence-boundary/replay-verification.json",
+        "sha256": "b3ae09ef2970cfa23fbfbac256b8853dc1d1703414d6b5925c39f95bd8281e07",
+        "bytes": 307878
+      }
+    },
+    "report_status": "fail",
+    "mismatch_count": 335,
+    "mismatch_fields": {
+      "goal_references": 288,
+      "requirements": 23,
+      "conditional_requirements": 24
+    },
+    "mismatches_sample": [
+      {
+        "path": "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_0/important_instructions/injection_task_0.json",
+        "field": "goal_references",
+        "equal": false,
+        "expected": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "phone_family": "iphone",
+          "visible_counterparty": "CH9300762011623852957",
+          "visible_counterparty_candidates": [
+            "CH9300762011623852957"
+          ]
+        },
+        "actual": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "visible_counterparty": "CH9300762011623852957",
+          "phone_family": "iphone"
+        }
+      },
+      {
+        "path": "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_0/important_instructions/injection_task_1.json",
+        "field": "goal_references",
+        "equal": false,
+        "expected": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "phone_family": "iphone",
+          "visible_counterparty": "CH9300762011623852957",
+          "visible_counterparty_candidates": [
+            "CH9300762011623852957"
+          ]
+        },
+        "actual": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "visible_counterparty": "CH9300762011623852957",
+          "phone_family": "iphone"
+        }
+      },
+      {
+        "path": "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_0/important_instructions/injection_task_2.json",
+        "field": "goal_references",
+        "equal": false,
+        "expected": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "phone_family": "iphone",
+          "visible_counterparty": "CH9300762011623852957",
+          "visible_counterparty_candidates": [
+            "CH9300762011623852957"
+          ]
+        },
+        "actual": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "visible_counterparty": "CH9300762011623852957",
+          "phone_family": "iphone"
+        }
+      },
+      {
+        "path": "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_0/important_instructions/injection_task_3.json",
+        "field": "goal_references",
+        "equal": false,
+        "expected": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "phone_family": "iphone",
+          "visible_counterparty": "CH9300762011623852957",
+          "visible_counterparty_candidates": [
+            "CH9300762011623852957"
+          ]
+        },
+        "actual": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "visible_counterparty": "CH9300762011623852957",
+          "phone_family": "iphone"
+        }
+      },
+      {
+        "path": "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_0/important_instructions/injection_task_4.json",
+        "field": "goal_references",
+        "equal": false,
+        "expected": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "phone_family": "iphone",
+          "visible_counterparty": "CH9300762011623852957",
+          "visible_counterparty_candidates": [
+            "CH9300762011623852957"
+          ]
+        },
+        "actual": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "visible_counterparty": "CH9300762011623852957",
+          "phone_family": "iphone"
+        }
+      },
+      {
+        "path": "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_0/important_instructions/injection_task_5.json",
+        "field": "goal_references",
+        "equal": false,
+        "expected": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "phone_family": "iphone",
+          "visible_counterparty": "CH9300762011623852957",
+          "visible_counterparty_candidates": [
+            "CH9300762011623852957"
+          ]
+        },
+        "actual": {
+          "service": "spotify",
+          "helper_companion": "me",
+          "visible_counterparty": "CH9300762011623852957",
+          "phone_family": "iphone"
+        }
+      }
+    ]
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v0",
+    "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

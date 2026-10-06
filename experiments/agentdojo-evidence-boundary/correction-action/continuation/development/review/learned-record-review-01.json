@@ -1,0 +1,233 @@
+{
+  "status": "pass",
+  "scope": "Independent read-only reconstruction and artifact binding; no scientific program or scorer executed, no native-host isolation claim.",
+  "script_sha256": "182195510b5b7d0472a38adc812a016da2aa8f30ec758156855af575b5e2ffb2",
+  "dispatch_freeze_sha256": "abac4073448f563d18127da953018610a9d167ede14ffea430aad80a01a5a95e",
+  "frozen_current_and_snapshot_pairs": 22,
+  "cases": [
+    {
+      "case": "w01",
+      "preparation_sha256": "51d05beac287f78f788881aa408d0b16aa559c3106e6775573de059ecbf868c7",
+      "note_sha256": "4f80c7bdc4eee069291a33efb954e4d178435ee3a0c4815f9f8873d48815136c",
+      "finish_request_sha256": "817c0bcbf91bc22458ba6dd838427e52ef1cf6273457d4d98e80e0aff6745ae8",
+      "events_sha256": "ee9e65dcde17e70ca409646997fc44655c00e84620915265ed067d92d2320cf6",
+      "final_sha256": "6b8d6f1486115d86a625de82c270314d5548f9dc3157f8fc28f9c5ccb0536982",
+      "state_sha256": "410f9353d7464f8e6abd4fb037a48614e05bf0d9c2f5da9e7227cbcd58daa503",
+      "current": {
+        "version": "v0",
+        "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+      },
+      "bound_case_files_checked": 1713,
+      "events": 41,
+      "attempts": [
+        {
+          "attempt": "a0001",
+          "operation": "read",
+          "version": "v0",
+          "epoch_on_response": 0
+        },
+        {
+          "attempt": "a0002",
+          "operation": "check",
+          "version": "v0",
+          "epoch_on_response": 0
+        },
+        {
+          "attempt": "a0003",
+          "operation": "read",
+          "version": null,
+          "epoch_on_response": 0
+        },
+        {
+          "attempt": "a0004",
+          "operation": "check",
+          "version": "v0",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0005",
+          "operation": "read",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0006",
+          "operation": "read",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0007",
+          "operation": "read",
+          "version": "v0",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0008",
+          "operation": "read",
+          "version": "v0",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0009",
+          "operation": "note",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0010",
+          "operation": "finish",
+          "version": null,
+          "epoch_on_response": 1
+        }
+      ],
+      "runs": [
+        {
+          "run": "r0001",
+          "operation": "check",
+          "version": "v0",
+          "python": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "returncode": 1,
+          "started": true,
+          "timeout": false
+        },
+        {
+          "run": "r0002",
+          "operation": "check",
+          "version": "v0",
+          "python": "/Users/ren/.pyenv/versions/3.11.2/bin/python3",
+          "returncode": 1,
+          "started": true,
+          "timeout": false
+        }
+      ]
+    },
+    {
+      "case": "w02",
+      "preparation_sha256": "69e2fba886a889626d9696e11db6e4bbdb62cb3f9b875aba51237938485d8255",
+      "note_sha256": "30fb420daf357a130bf67a31aac8837b7614b19872b5df901e31aa63dcd49b2f",
+      "finish_request_sha256": "85ad0673e5a9223c5ad3117770cefa983993686e06ac421430768304577f6ea4",
+      "events_sha256": "d0355eaa2911c5b987aa765d9d206c15c6ded9abc62def41cedd00ee89c9344a",
+      "final_sha256": "0279ae32168bf721389183e7d4b9233e5e0c3a69fd237ecc4d08526d0851994a",
+      "state_sha256": "710ed4c27eb1169cea02384f62b35d974edd1ea9ed03278e52d7450ea670d593",
+      "current": {
+        "version": "v1",
+        "version_sha256": "6ccca8b9075be9a45a39498c58a3c0a608366a7699618ab3a60cdc18ca33c6d9",
+        "production_run": "r0002",
+        "verification_run": "r0003",
+        "publication_attempt": "a0007"
+      },
+      "bound_case_files_checked": 2568,
+      "events": 53,
+      "attempts": [
+        {
+          "attempt": "a0001",
+          "operation": "check",
+          "version": "v0",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0002",
+          "operation": "read",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0003",
+          "operation": "read",
+          "version": "v0",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0004",
+          "operation": "stage",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0005",
+          "operation": "replay",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0006",
+          "operation": "check",
+          "version": "v1",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0007",
+          "operation": "publish",
+          "version": "v1",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0008",
+          "operation": "read",
+          "version": "v1",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0009",
+          "operation": "read",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0010",
+          "operation": "read",
+          "version": "v0",
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0011",
+          "operation": "read",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0012",
+          "operation": "note",
+          "version": null,
+          "epoch_on_response": 1
+        },
+        {
+          "attempt": "a0013",
+          "operation": "finish",
+          "version": null,
+          "epoch_on_response": 1
+        }
+      ],
+      "runs": [
+        {
+          "run": "r0001",
+          "operation": "check",
+          "version": "v0",
+          "python": "/Users/ren/.pyenv/versions/3.11.2/bin/python3",
+          "returncode": 1,
+          "started": true,
+          "timeout": false
+        },
+        {
+          "run": "r0002",
+          "operation": "replay",
+          "version": "v0",
+          "python": "/Users/ren/.pyenv/versions/3.11.2/bin/python3",
+          "returncode": 0,
+          "started": true,
+          "timeout": false
+        },
+        {
+          "run": "r0003",
+          "operation": "check",
+          "version": "v1",
+          "python": "/Users/ren/.pyenv/versions/3.11.2/bin/python3",
+          "returncode": 0,
+          "started": true,
+          "timeout": false
+        }
+      ]
+    }
+  ]
+}

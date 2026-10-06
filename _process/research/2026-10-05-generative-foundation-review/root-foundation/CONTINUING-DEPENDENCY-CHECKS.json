@@ -1,0 +1,313 @@
+{
+  "status": "passed",
+  "scope": "Read-only source binding, evidence preservation and integration checks; no new scientific or Lean run.",
+  "scientific_source_bindings": 9,
+  "finite_configurations": 4800,
+  "grid_counts": {
+    "states": 34744,
+    "edges": 217030,
+    "positive_witnesses": 4096,
+    "witness_events": 11584
+  },
+  "formal_audits": 20,
+  "formal_scope": "General necessity and concrete contrast; general sufficiency is a hand proof. Seven propext-only and thirteen propext/Quot.sound audits.",
+  "proof_evidence_preserved_after_cache_cleanup": true,
+  "preceding_result_bindings": {
+    "results.json": 5,
+    "refinement-results.json": 10,
+    "inquiry-results.json": 11
+  },
+  "preceding_artifacts_unchanged": 11,
+  "canonical_additions_present": 5,
+  "recording_addendum_present": true,
+  "local_links_and_anchors": 67,
+  "artifact_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md": "139cbc5f57b9cfae2b58de9d4483b11ac9107693662da7e134f873c85f7dcbdc",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md": "b0e70c98fc922950ddefeb7549d142e6fcc890526474a9f36c0f74a036a5bde5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md": "ef4e2aa40c3a68bcff7f1181aab6d91332f2fc49c13dab416d71abdefdd92a45",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md": "d100bf9d0f232f7c4b21c99cadb22bb90439d308a3a455a5a36fc59696328534",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md": "c49996b277c54481635ac39498fcebd43797f3c3f279ea200861362a7229deef",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md": "9b15d72e0356e6b2b671812b1e766030c3a9f8e8f3e35b6f0644698649227b1d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py": "4daecb9934d195f1c638e3b26dddd72143b05a9edfa6cfc789244851650bde5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent_check.py": "c9ff5611ac3248b02db951bb2edcf7bf23e77d559f6e7da438c67047791a9250",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent-check.json": "2d9df5711eca01b8d7a814bb08def91151d1a8cbd76a19cfb33878798906ed1a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-DOC-EDITS.json": "541e2fe47513ff1bdc13b874e3b04ee6d3cc7afc64e9b8d28d2e264cd4e3c410",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/VERIFICATION.json": "046df9b2b4a9c6ecf7afdc6d883e27dac4d0ec16d97406b4d01c1e960c288e50",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/VERIFICATION-AFTER-CLEANUP.json": "6bd1176542835959f9c3146f575d4c45dc46f9abbab429a4fc03f058c0546a4e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/CACHE-CLEANUP.json": "79a617fcff34cd483467bf8f06c36969c851e2e8090dc80a6fd8a1e00c103adb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeReconstructionRequirement.lean": "5c86c940d1eb408a310cb2cedb4c7332ad130d7544a60508e1fc7fc75c6d92b0",
+    "sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md": "be0958184f4263e4d0d2b92840a330a6a86cabde046fb8484b27b5abf33ba889"
+  },
+  "links": [
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "study.py"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "results.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "independent_check.py"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "independent-check.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "INQUIRY-COMPLETION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "development/continuing-dependency/VERIFICATION.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "CONTINUING-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "CONTINUING-DEPENDENCY-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "NONDUAL-APPLICABILITY-MECHANISM.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "INQUIRY-COMPLETION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeReconstructionRequirement.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md#5-exact-support-loss-teacher-and-a-censoring-counterexample"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "CONTINUING-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "development/continuing-dependency/VERIFICATION.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "development/continuing-dependency/build.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "development/continuing-dependency/verify.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent-check.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+      "target": "INQUIRY-COMPLETION-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#current-completion-and-the-conditions-of-further-activity"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONTINUING-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONTINUING-DEPENDENCY-IDENTIFICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#the-whole-as-the-grounding-question"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/README.md",
+      "target": "continuing-dependency/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "INQUIRY-COMPLETION-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "VARYING-DYNAMICS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/process.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent_check.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeReconstructionRequirement.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "development/continuing-dependency/VERIFICATION.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent-check.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+      "target": "CONTINUING-DEPENDENCY-DOC-EDITS.json"
+    }
+  ],
+  "final_review_bound": true
+}

@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T05:18:05.931097+00:00",
+  "independent_frozen_temporary_build": true,
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "sources_unchanged": true,
+  "prior_66_receipt_unchanged": true,
+  "prior_66_receipt_sha256": "fb5bdfaa1b0981980a0d8132b0d19fc299ff3d5410f7c613f59c66edd7e9c306",
+  "checker_sha256": "507c169fcf36d4b7a55999d96f8d5c6a11b053eb792a2842c1d792aea4515e46",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "dependency_audits": 18,
+      "axioms": [],
+      "clean": true,
+      "log": "root-independent-logs/GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "ResourceContinuation",
+      "source": "lean/conditional/ResourceContinuation.lean",
+      "source_sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+      "dependency_audits": 21,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "root-independent-logs/ResourceContinuation.txt",
+      "log_sha256": "041c9b2e2f06dd9d427a1f0811985f67812be10a17825cc3df153bb4cf2e8ef4"
+    },
+    {
+      "module": "PatientConcern",
+      "source": "noninstrumental-concern/PatientConcern.lean",
+      "source_sha256": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6",
+      "dependency_audits": 32,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "root-independent-logs/PatientConcern.txt",
+      "log_sha256": "c1f9082411bc1ee7130311e3a7098e2f2df333b7591750e37a94d57c8c6ad355"
+    },
+    {
+      "module": "GroundingContract",
+      "source": "noninstrumental-concern/GroundingContract.lean",
+      "source_sha256": "afc3b934499aeb0c705590ac33dcee6ee784b8705c5a93fba0b7b60dc7f468ac",
+      "dependency_audits": 14,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "root-independent-logs/GroundingContract.txt",
+      "log_sha256": "86551397d4e2d5081c0c4def1045fad5190e9e26af9a03d9d0b6c5ae05c3a30e"
+    },
+    {
+      "module": "RootGrounding",
+      "source": "noninstrumental-concern/RootGrounding.lean",
+      "source_sha256": "df29b3f80dd0a1c70b484256d99aee29391efff336af968d8896d3fa2701a6f1",
+      "dependency_audits": 24,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "root-independent-logs/RootGrounding.txt",
+      "log_sha256": "fcdec28424000321dc6271121aa3c36ff923c3c86724c909792ed471f84aca82"
+    }
+  ],
+  "finite_checks": {
+    "interpretations": 262144,
+    "universal": 19683,
+    "anchors": 91125,
+    "locality": 97336,
+    "anchors_and_locality": 19683,
+    "anchors_without_locality": 71442,
+    "locality_without_anchors": 77653,
+    "bad_events": 3,
+    "candidate_execution_positions": 3,
+    "varied_predicates": "all opportunity and reason matrices; Bad fixed true",
+    "history_covariance_comparisons": 8,
+    "history_anchor_without_executor_closure": true,
+    "never_agent_without_reason_seed": true,
+    "empty_opportunity_requires_qualified_coverage": true
+  },
+  "scope": "Independent proof-source compilation and finite checking of reason coverage versus executor closure. No proof of experiential realization, moral ground, universality of C2, or an assumption-free foundation."
+}

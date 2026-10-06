@@ -1,0 +1,16 @@
+{
+  "pages": 3,
+  "bytes": 68808,
+  "sha256": "3d4ea325e92424c160c1ffd80dd8d15d54295868537dafa72aacbc2db623b49b",
+  "text_extraction": "passed",
+  "source_paths": "passed",
+  "reference_urls": [
+    "https://arxiv.org/abs/2006.04948",
+    "https://doi.org/10.1007/s11229-021-03141-4",
+    "https://proceedings.mlr.press/v216/carey23a.html",
+    "https://proceedings.mlr.press/v267/kulveit25a.html"
+  ],
+  "independent_content_review": "passed after clarifying constructive responsiveness and the controller decision rule",
+  "visual_review": "passed: all three pages of the English-only revision rendered and inspected",
+  "english_only_text": "passed: no CJK or ideographic characters in extracted PDF text"
+}

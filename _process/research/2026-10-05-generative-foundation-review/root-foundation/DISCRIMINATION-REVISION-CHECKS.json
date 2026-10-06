@@ -1,0 +1,413 @@
+{
+  "status": "passed",
+  "scope": "Source bindings, exact additive entries, receipt presence and local links. Independent scientific review has its own receipt and scope; this checker does not rerun or certify it.",
+  "source_checks": [
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/independent-check.json",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/independent_check.py",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/study.py",
+      "matches": true
+    }
+  ],
+  "insertions": [
+    {
+      "file": "RESEARCH.md",
+      "present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "present": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "present": true
+    }
+  ],
+  "local_links": [
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#acquired-tests-become-operative-in-further-inquiry",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "DISCRIMINATION-REVISION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "DISCRIMINATION-REVISION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "DISCRIMINATION-REVISION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "INQUIRY-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-COMPARATORS.md",
+      "target": "DISCRIMINATION-REVISION-REVIEW.md#independent-result-review",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-COMPARATORS.md",
+      "target": "ABSTRACTION-ACQUISITION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-COMPARATORS.md",
+      "target": "INQUIRY-SUFFICIENCY-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "DISCRIMINATION-REVISION-REVIEW.md#final-acceptance-and-explanatory-scope",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/independent-check.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "ABSTRACTION-ACQUISITION-MATH.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "INQUIRY-INTERFACE-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "DISCRIMINATION-REVISION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "DISCRIMINATION-REVISION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "DISCRIMINATION-REVISION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+      "target": "DISCRIMINATION-REVISION-CHECKS.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "ABSTRACTION-ACQUISITION-MATH.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/study.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "target": "DISCRIMINATION-REVISION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "INQUIRY-REVISION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "ABSTRACTION-ACQUISITION-MATH.md#3-acquired-distinctions-and-warranted-composition",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "ABSTRACTION-ACQUISITION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "IMMANENT-MATHEMATICAL-IDENTITY-SOURCES.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/check_review.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/independent-check.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "DISCRIMINATION-REVISION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "target": "DISCRIMINATION-REVISION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "target": "../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "target": "../check.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "target": "../results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/PROTOCOL.md",
+      "target": "../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/README.md",
+      "target": "PROTOCOL.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/README.md",
+      "target": "results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/discrimination/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    }
+  ],
+  "note_sha256": {
+    "DISCRIMINATION-REVISION-COMPARATORS.md": "861042ac82a50a7998c1fe5ca24db2dc9e95fdbf9c67140b7bd53580a43fd34f",
+    "DISCRIMINATION-REVISION-INTEGRATION.md": "49ca98c87c90d03baf83e149509cafd9aa557836d1284221f7f36012a28a8f0b",
+    "DISCRIMINATION-REVISION-MECHANISM.md": "ee60cc094a8c5e8e99957c4363a1cb1c669a2274bbad7481f80b72e0bf20e580",
+    "DISCRIMINATION-REVISION-REVIEW.md": "730701e5cf2c77f18ec36a88c77a1501e8caf7c54c88c679bed24ff019bc3009"
+  },
+  "assay_results_sha256": "420ff454768f51dd2127351e893effcca008489c6a08f958a61be38f94181751",
+  "independent_receipt_sha256": "864e00c9298a535237f7a9c365bde6a0456143a4eefa3bff40bae6a30a8177d0",
+  "checker_sha256": "c6268edf82a3b0c2c6eaee14015f89169df42d3117084289d73ec2484f55abc0"
+}

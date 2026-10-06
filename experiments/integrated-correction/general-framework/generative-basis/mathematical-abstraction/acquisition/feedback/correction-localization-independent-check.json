@@ -1,0 +1,194 @@
+{
+  "bill_ticks": [
+    17480,
+    17480,
+    16420,
+    3144,
+    2156,
+    3144,
+    35908
+  ],
+  "case_count": 6,
+  "cases": {
+    "calibration_break_contact_0": {
+      "charged_events": 7,
+      "contact_selector": 0,
+      "fuel": "166143/32768",
+      "mode": "selected_relay",
+      "selected": 1,
+      "source_case": "calibration_break",
+      "spent": "190363/32768",
+      "state_points": 8,
+      "stocks": {
+        "load": 0,
+        "source": 0,
+        "waste": 10
+      },
+      "suffix_bill": "23933/16384",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "calibration_break_contact_1": {
+      "charged_events": 7,
+      "contact_selector": 1,
+      "fuel": "166143/32768",
+      "mode": "selected_relay",
+      "selected": 1,
+      "source_case": "calibration_break",
+      "spent": "190363/32768",
+      "state_points": 8,
+      "stocks": {
+        "load": 0,
+        "source": 0,
+        "waste": 10
+      },
+      "suffix_bill": "23933/16384",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "false_dependence_contact_0": {
+      "charged_events": 7,
+      "contact_selector": 0,
+      "fuel": "166143/32768",
+      "mode": "no_supported_route",
+      "selected": null,
+      "source_case": "false_dependence",
+      "spent": "190363/32768",
+      "state_points": 8,
+      "stocks": {
+        "load": 0,
+        "source": 0,
+        "waste": 10
+      },
+      "suffix_bill": "23933/16384",
+      "values": [
+        0,
+        0
+      ]
+    },
+    "false_dependence_contact_1": {
+      "charged_events": 7,
+      "contact_selector": 1,
+      "fuel": "166143/32768",
+      "mode": "selected_relay",
+      "selected": 1,
+      "source_case": "false_dependence",
+      "spent": "190363/32768",
+      "state_points": 8,
+      "stocks": {
+        "load": 0,
+        "source": 0,
+        "waste": 10
+      },
+      "suffix_bill": "23933/16384",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "law_01_learned_contact_0": {
+      "charged_events": 7,
+      "contact_selector": 0,
+      "fuel": "166143/32768",
+      "mode": "selected_relay",
+      "selected": 1,
+      "source_case": "law_01_learned",
+      "spent": "190363/32768",
+      "state_points": 8,
+      "stocks": {
+        "load": 10,
+        "source": 0,
+        "waste": 0
+      },
+      "suffix_bill": "23933/16384",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "law_01_learned_contact_1": {
+      "charged_events": 7,
+      "contact_selector": 1,
+      "fuel": "166143/32768",
+      "mode": "selected_relay",
+      "selected": 1,
+      "source_case": "law_01_learned",
+      "spent": "190363/32768",
+      "state_points": 8,
+      "stocks": {
+        "load": 10,
+        "source": 0,
+        "waste": 0
+      },
+      "suffix_bill": "23933/16384",
+      "values": [
+        0,
+        1
+      ]
+    }
+  },
+  "check_source_sha256": "5f022d553af594acf0b24d00d2f8ecebd01942f124741e8c5e25ea5c3770b8e9",
+  "final_fuel_ticks": 332286,
+  "independently_compared_old_projection_records": 48,
+  "independently_reconstructed_charges": 42,
+  "independently_reconstructed_suffix_events": 42,
+  "inherited_original_source_bindings": 14,
+  "limitations": [
+    "Old ancestry is bound to its prior independent receipt, not rerun here.",
+    "Projection equality contains every demonstrated reader input but includes external audit fields.",
+    "Alternate contact selector is supplied API/event-law semantics, not newly formed physical access.",
+    "The diagnostic word is prescribed; the old executor does not autonomously choose it.",
+    "No final full-load receipt, additional packet or restored load service occurs.",
+    "No new Lean build, universal implementation equivalence or ethical warrant is established."
+  ],
+  "matched_pre_contact_pairs": 3,
+  "ordinary_vs_calibration_still_indistinguishable": true,
+  "original_account_conserved": 145,
+  "prefix_guard_failures": 0,
+  "prior_independent_receipt_sha256": "e9adb2a52c661054cd18bb60ca057bf716a33646474076ff13366e0369cd99f1",
+  "protocol_sha256": "47b25788e20a10c8aa074091fa1447f5eb03f08a136eb01d8c7bffb02357d301",
+  "rejected_mutations": [
+    "hidden_boundary_fuel_reset",
+    "contact_tag_misbound",
+    "corrected_value_replaced",
+    "consumer_not_revised",
+    "packet_replenished",
+    "inherited_model_overwritten",
+    "uncharged_command"
+  ],
+  "results_sha256": "b1be5effd5a0aff4029495dbdad4ba506565fc779627344907ac68e9c008c8d1",
+  "scope": "Independent seven-request semantic replay from six exact saved endpoints; no producer imports",
+  "source_binding_count": 22,
+  "source_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md": "47b25788e20a10c8aa074091fa1447f5eb03f08a136eb01d8c7bffb02357d301",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization.py": "9d25b4aadf8efa56e75089b55caaecce03e05d0dfbbbc215dc3062940658e9ea",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json": "e9adb2a52c661054cd18bb60ca057bf716a33646474076ff13366e0369cd99f1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json": "424540b7688e836b8357b86adf1ae7f3382349c7581abe83df37d36ccbae72b2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md": "32a040e263137c0b9fee58ff142dfaa236eac009b70e2fcab53292e21631a398",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json": "c9d75a3677bd5fbe5026b358a1d55bc3c76ca33db3b5af5411e8c27c21a4d0a0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py": "75e715f1a7a0af499a39887e3fc9b38d88b66125d313361de851c421d9197127",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "source_interface_fault_split": true,
+  "status": "passed",
+  "suffix_bill_ticks": 95732,
+  "suffix_state_points_including_exact_starts": 48
+}

@@ -1,0 +1,34 @@
+{
+  "recorded_at_utc": "2026-10-06T04:29:15.621817+00:00",
+  "dispatch_freeze_sha256": "abac4073448f563d18127da953018610a9d167ede14ffea430aad80a01a5a95e",
+  "initial_dispatches": [
+    {
+      "episode_id": "w01",
+      "task_name": "/root/audit_continuation_w01",
+      "fork_turns": "none",
+      "arguments_source": "dispatch-arguments.json:w01",
+      "model_override": null,
+      "returned_metadata": {
+        "task_name": "/root/audit_continuation_w01"
+      }
+    },
+    {
+      "episode_id": "w02",
+      "task_name": "/root/audit_continuation_w02",
+      "fork_turns": "none",
+      "arguments_source": "dispatch-arguments.json:w02",
+      "model_override": null,
+      "returned_metadata": {
+        "task_name": "/root/audit_continuation_w02"
+      }
+    }
+  ],
+  "transport": {
+    "initial_requests": "root preserved and executed first request of each context; root forwarded w02 first broker response",
+    "continuation": "/root/continuation_transport forwards exact saved broker responses plus frozen CONTINUE text; tested contexts are unchanged",
+    "helper": "exchange.py",
+    "helper_sha256": "ddb7cba389c8f2a669fdb735b1c0421c7a62ac4e83ed577823297a5a30cf464b",
+    "timing": "Helper and transport assistant were added after the mechanism/scorer/prompt freeze; neither changes those frozen files or selects worker operations.",
+    "scope": "These records preserve the supplied messages and mediated requests; they do not supply complete native worker logs."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "scope": "Independent reconstruction of restricted paid teaching events from actual protected active entry; no arbitrary old/service interleaving, no ethics or runtime decoder.",
+  "source_sha256": {
+    "PairedPlasticity.lean": "6ce4f08cb9f2b497a409482bbfc2281fd6d83a5efad14d2cabb7fbc2d3792b83",
+    "PlasticityWitness.lean": "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a",
+    "FreshRevision.lean": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38",
+    "RecipientAction.lean": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b"
+  },
+  "four_pair_schedules": 256,
+  "completed": 176,
+  "blocked": 80,
+  "blocked_by_completed_count_and_reason": {
+    "(2, 'bind space')": 32,
+    "(3, 'bind space')": 48
+  },
+  "occupied_counts": {
+    "0": 16,
+    "1": 64,
+    "2": 96
+  },
+  "occupancy_to_patient": {
+    "0": [
+      40
+    ],
+    "1": [
+      38
+    ],
+    "2": [
+      36
+    ]
+  },
+  "completed_prefix_checks_with_repetitions": 912,
+  "actual_count4": {
+    "count": 4,
+    "n": 4,
+    "links": [
+      1,
+      1
+    ],
+    "occupied": 2,
+    "retired": 0,
+    "fuel": 14,
+    "patient": 36,
+    "energy": 88,
+    "spent": 30,
+    "phase": "ready"
+  },
+  "actual_count4_continuation_true": {
+    "limit": 6,
+    "close_enabled": false
+  },
+  "replacement": {
+    "active": {
+      "count": 6,
+      "n": 5,
+      "links": [
+        -1,
+        1
+      ],
+      "occupied": 2,
+      "retired": 1,
+      "fuel": 16,
+      "patient": 34,
+      "energy": 72,
+      "spent": 46,
+      "phase": "ready"
+    },
+    "frozen": {
+      "count": 6,
+      "n": 5,
+      "links": [
+        1,
+        1
+      ],
+      "occupied": 2,
+      "retired": 1,
+      "fuel": 16,
+      "patient": 34,
+      "energy": 72,
+      "spent": 46,
+      "phase": "ready"
+    }
+  },
+  "pending_outside_prefix": {
+    "count": 4,
+    "n": 4,
+    "links": [
+      1,
+      1
+    ],
+    "occupied": 2,
+    "retired": 0,
+    "fuel": 21,
+    "patient": 34,
+    "energy": 84,
+    "spent": 34,
+    "phase": "recipientPaid"
+  },
+  "missing_feedback_after_pending": {
+    "count": 4,
+    "n": 4,
+    "links": [
+      1,
+      1
+    ],
+    "occupied": 2,
+    "retired": 0,
+    "fuel": 19,
+    "patient": 34,
+    "energy": 82,
+    "spent": 36,
+    "phase": "missing"
+  },
+  "service_flags_false_training_prefix": {
+    "count": 4,
+    "n": 4,
+    "links": [
+      1,
+      1
+    ],
+    "occupied": 2,
+    "retired": 0,
+    "fuel": 21,
+    "patient": 34,
+    "energy": 84,
+    "spent": 34,
+    "phase": "recipientPaid"
+  },
+  "scope_cut": {
+    "retained_projection": {
+      "count": 4,
+      "n": 4,
+      "links": [
+        1,
+        1
+      ],
+      "occupied": 2,
+      "retired": 0,
+      "fuel": 14,
+      "patient": 36,
+      "energy": 88,
+      "spent": 30,
+      "phase": "ready"
+    },
+    "scope": false,
+    "next_ownPay_enabled": false
+  },
+  "verification_limits": "No Lean compilation by reviewer; Python interpreter covers only declared events and preserves inherited Admitted premises. Expected totals are assertions after exhaustive enumeration, not substituted for guards."
+}

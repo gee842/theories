@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "scope": "Exact pre-edit originals; links retain each original base",
+  "snapshots": [
+    {
+      "original": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-SHARED-WORLD-CONTINUATION.md",
+      "sha256": "fb2bf4f7bcb776a7ff7a4642e781f425e0837f1eb799c0d86aa3461db3e1d150"
+    },
+    {
+      "original": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "original_link_base": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/SHARED-WORLD-GROUNDING-BEFORE-CONTINUATION.md",
+      "sha256": "01177a3860ae3e3eb572e3e51eca8f55e996e1e32288a4dfd95a01e0bf110672"
+    }
+  ]
+}

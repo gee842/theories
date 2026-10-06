@@ -1,0 +1,5 @@
+'Generative.trace_reserve_bound' does not depend on any axioms
+'Generative.trace_length_bound' does not depend on any axioms
+'Generative.no_nonempty_cycle_under_depletion' does not depend on any axioms
+'Generative.infinite_execution_contradicts_depletion' does not depend on any axioms
+'Generative.no_infinite_execution_under_depletion' does not depend on any axioms

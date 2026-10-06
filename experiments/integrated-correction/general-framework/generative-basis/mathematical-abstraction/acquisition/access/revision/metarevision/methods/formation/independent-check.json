@@ -1,0 +1,783 @@
+{
+  "scope": "independent new formation schedule using previous independent native and ledger laws",
+  "histories": 448,
+  "checked_saved_fixtures": 35,
+  "statuses": {
+    "complete": 448
+  },
+  "retained_correctness": {
+    "True": 448
+  },
+  "controls": {
+    "clamp_formation_0_0": {
+      "status": "no_bound_method_edge",
+      "fuel": "1288941/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "clamp_formation_0_1": {
+      "status": "no_bound_method_edge",
+      "fuel": "1288941/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "clamp_formation_1_0": {
+      "status": "no_bound_method_edge",
+      "fuel": "633581/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "clamp_formation_1_1": {
+      "status": "no_bound_method_edge",
+      "fuel": "633581/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "swap_first_destination_0_0": {
+      "status": "complete",
+      "fuel": "388569/32768",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            1,
+            1,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 1,
+          "recipe": 1
+        }
+      ]
+    },
+    "swap_first_destination_0_1": {
+      "status": "complete",
+      "fuel": "15217/1024",
+      "accepted_recipe": 0,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            1,
+            0,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 0
+        },
+        {
+          "stage": "later_use",
+          "source": 1,
+          "recipe": 0
+        }
+      ]
+    },
+    "swap_first_destination_1_0": {
+      "status": "complete",
+      "fuel": "11/8",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    },
+    "swap_first_destination_1_1": {
+      "status": "complete",
+      "fuel": "4209/65536",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": null
+        },
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    },
+    "mismatch_first_source_0_0": {
+      "status": "method_edge_receipt_mismatch",
+      "fuel": "1288941/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "mismatch_first_source_0_1": {
+      "status": "method_edge_receipt_mismatch",
+      "fuel": "1288941/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "mismatch_first_source_1_0": {
+      "status": "method_edge_receipt_mismatch",
+      "fuel": "633581/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "mismatch_first_source_1_1": {
+      "status": "method_edge_receipt_mismatch",
+      "fuel": "633581/65536",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "break_after_accept_0_0": {
+      "status": "no_bound_method_edge",
+      "fuel": "600451/32768",
+      "accepted_recipe": 0,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            1,
+            0,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 0
+        }
+      ]
+    },
+    "break_after_accept_0_1": {
+      "status": "no_bound_method_edge",
+      "fuel": "551277/32768",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            1,
+            1,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 1
+        }
+      ]
+    },
+    "break_after_accept_1_0": {
+      "status": "no_bound_method_edge",
+      "fuel": "356859/65536",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": null
+        },
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    },
+    "break_after_accept_1_1": {
+      "status": "no_bound_method_edge",
+      "fuel": "221381/32768",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    },
+    "receipt_unfunded": {
+      "status": "funding:arrival_receipt",
+      "fuel": "759979/32768",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "small_capacity": {
+      "status": "capacity:native_reset",
+      "fuel": "465149/32768",
+      "accepted_recipe": null,
+      "trials": [],
+      "invocations": []
+    },
+    "outside_five_0": {
+      "status": "use_prediction_mismatch",
+      "fuel": "58585/65536",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": null
+        },
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            3
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    },
+    "outside_five_1": {
+      "status": "use_prediction_mismatch",
+      "fuel": "18061/8192",
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            3
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    }
+  },
+  "guards": [
+    {
+      "operation": "store_receipt",
+      "budget": "184321/65536",
+      "status": "funding:store_receipt",
+      "edge": null,
+      "archive": [],
+      "native_phase": 3,
+      "selected": null
+    },
+    {
+      "operation": "retain_acquired_record",
+      "budget": "386115/65536",
+      "status": "funding:retain_acquired_record",
+      "edge": null,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_phase": 2,
+      "selected": null
+    },
+    {
+      "operation": "form_method_edge",
+      "budget": "393537/65536",
+      "status": "funding:form_method_edge",
+      "edge": null,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_phase": 2,
+      "selected": null
+    },
+    {
+      "operation": "remove_contradicted_edge",
+      "budget": "234925/32768",
+      "status": "funding:remove_contradicted_edge",
+      "edge": [
+        0,
+        0,
+        1
+      ],
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_phase": 2,
+      "selected": null
+    },
+    {
+      "operation": "retain_accepted_edge",
+      "budget": "668055/65536",
+      "status": "funding:retain_accepted_edge",
+      "edge": [
+        0,
+        1,
+        1
+      ],
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_phase": 2,
+      "selected": null
+    },
+    {
+      "operation": "compact_formed_method_result",
+      "budget": "876915/65536",
+      "status": "funding:compact_formed_method_result",
+      "edge": [
+        0,
+        1,
+        1
+      ],
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_phase": 2,
+      "selected": null
+    },
+    {
+      "operation": "commit_use_cursor",
+      "budget": "476591/32768",
+      "status": "funding:commit_use_cursor",
+      "edge": [
+        0,
+        1,
+        1
+      ],
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_phase": 0,
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 1
+      }
+    },
+    {
+      "operation": "retain_after_use",
+      "budget": "1026157/65536",
+      "status": "funding:retain_after_use",
+      "edge": [
+        0,
+        1,
+        1
+      ],
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "native_phase": 0,
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 0,
+        "family": 1
+      }
+    }
+  ],
+  "renamed_cases": 24,
+  "primary": {
+    "family0_first0": {
+      "status": "complete",
+      "spent": "711839/65536",
+      "fuel": "15217/1024",
+      "income": "10",
+      "wasted": 0,
+      "peak_cells": 52,
+      "live_cells": 43,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            1,
+            0,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 0
+        },
+        {
+          "stage": "later_use",
+          "source": 1,
+          "recipe": 0
+        }
+      ]
+    },
+    "family0_first1": {
+      "status": "complete",
+      "spent": "908589/65536",
+      "fuel": "388569/32768",
+      "income": "10",
+      "wasted": 0,
+      "peak_cells": 61,
+      "live_cells": 43,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            1,
+            1,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 1,
+          "recipe": 1
+        }
+      ]
+    },
+    "family1_first0": {
+      "status": "complete",
+      "spent": "513079/32768",
+      "fuel": "4209/65536",
+      "income": "0",
+      "wasted": 10,
+      "peak_cells": 63,
+      "live_cells": 52,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": null
+        },
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    },
+    "family1_first1": {
+      "status": "complete",
+      "spent": "940255/65536",
+      "fuel": "11/8",
+      "income": "0",
+      "wasted": 10,
+      "peak_cells": 63,
+      "live_cells": 52,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ]
+    }
+  },
+  "source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py": "f2bcc85688975d9a6e6fac4c0944e5b4f6ce0ede779707719c41428db3a4d303",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/PROTOCOL.md": "0491194fc7502ea6be11375f793ffc96fe3b60ba59c1468e5afe0c17eb53cd65",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/independent_check.py": "6c0901f5da5a7fc202e2a743591a36d0ca978a36c0f8ca9fc6de7946f1e5d8c9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/check.py": "5eddfd8d8e2d10c3e858ad443b683f2106f38d8adfb08a3b1049e00781ffc0ab"
+  },
+  "checked_producer_results_sha256": "2b0afb08f3507eaf2de3126dcc43a3dca8dd65ff6603658ee8aae697e42263e4"
+}

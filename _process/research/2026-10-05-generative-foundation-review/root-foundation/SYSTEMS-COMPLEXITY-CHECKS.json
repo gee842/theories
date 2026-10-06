@@ -1,0 +1,418 @@
+{
+  "checked_utc": "2026-10-06T08:24:38.018520+00:00",
+  "scope": "New systems/complexity/chaos integration and its added index links only; not a repository-wide scientific audit.",
+  "result": "pass",
+  "local_links_checked": 73,
+  "link_errors": [],
+  "local_links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "NONDUAL-METHOD.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md#2-bertalanffy-general-systems-theory-and-cybernetics-overlap-without-identity",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md#1-bertalanffy-laws-of-classes-of-organized-systems",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../sources/41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../README.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "GENERATIVE-GROUNDING.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "NONINSTRUMENTAL-CONCERN.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "target": "../../../sources/41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "target": "SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "target": "../../../../sources/12-claude-ai-chats/2024-04-01_Aerospace_Engineer_Knowledge_of_Complex_Systems_Theories_7e9844a5.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "target": "../../../../sources/12-claude-ai-chats/2024-07-04_Emergent_Complexity_in_Systems_728e5a5d.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "target": "SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "target": "INQUIRY-REVISION-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "target": "SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "2026-10-06-concern-inquiry-revision.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "target": "2026-10-06-project-wide-nondual-method.md",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "manifest.json",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "lorenz-1963.pdf",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "lorenz-1963-page-01.png",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "lorenz-1963-page-05.png",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "lorenz-1963-page-12.png",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "may-1976.pdf",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "may-1976-page-01.png",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "may-1976.reading.txt",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "sources/41-systems-complexity-2026-10-06/README.md",
+      "target": "../15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "pass": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+      "target": "INQUIRY-REVISION.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-MECHANISM.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SYSTEMS-COMPLEXITY-REVIEW.md",
+      "pass": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../sources/41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "41-systems-complexity-2026-10-06/README.md",
+      "pass": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+      "pass": true
+    }
+  ],
+  "source_preservation": [
+    {
+      "file": "sources/41-systems-complexity-2026-10-06/lorenz-1963.pdf",
+      "pass": true
+    },
+    {
+      "file": "sources/41-systems-complexity-2026-10-06/may-1976.pdf",
+      "pass": true
+    },
+    {
+      "file": "sources/41-systems-complexity-2026-10-06/lorenz-1963-page-01.png",
+      "pass": true
+    },
+    {
+      "file": "sources/41-systems-complexity-2026-10-06/lorenz-1963-page-05.png",
+      "pass": true
+    },
+    {
+      "file": "sources/41-systems-complexity-2026-10-06/lorenz-1963-page-12.png",
+      "pass": true
+    },
+    {
+      "file": "sources/41-systems-complexity-2026-10-06/may-1976-page-01.png",
+      "pass": true
+    }
+  ],
+  "owned_markdown_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md": "729bd3d20380ac926f88dc583b5b280ad73153b7fadaa0fdb672430e3bcebbca",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md": "5e57ed0e6ae4659b23ce25e69be7b4d1381a67cf8ba65e791c5042568d614389",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md": "4b4421f8819a434c5c5cd4c9766192300f5c2f38798a6e34eb651c24fd6b1939",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md": "0449f2b506f2c493792f8c1a72d6485387ab6142a90f4c7341dff58692b9eb39",
+    "sources/15-codex-theory-conversations/2026-10-06-systems-complexity-chaos-integration.md": "fa21638e09f8b96099712997670b966abc49c0fe58996949f5d403c596720d0d",
+    "sources/41-systems-complexity-2026-10-06/README.md": "919c406d14a7c44a85f95db9a41cc1e498b9be492277bf5e31bb39dbcdb60b4b"
+  },
+  "shared_files_with_targeted_additions": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "sources/SOURCES.md"
+  ],
+  "scientific_checks": "No new simulation, empirical reanalysis or Lean run; hand derivation independently reviewed.",
+  "existing_work": "No experiment, proof or preserved conversation original edited for this integration."
+}

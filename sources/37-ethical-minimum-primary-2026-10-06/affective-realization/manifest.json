@@ -1,0 +1,153 @@
+{
+  "access_date": "2026-10-06",
+  "originals": [
+    {
+      "id": "barlassina-hayward-2019",
+      "authors": [
+        "Luca Barlassina",
+        "Max Khan Hayward"
+      ],
+      "title": "More of me! Less of me!: Reflexive Imperativism about Affective Phenomenal Character",
+      "journal": "Mind",
+      "volume": "128",
+      "issue": "512",
+      "pages": "1013–1044",
+      "year": 2019,
+      "doi": "10.1093/mind/fzz035",
+      "retrieval_url": "https://maxkhanhayward.com/wp-content/uploads/2023/10/more-of-me-less-of-me-hayward-and-barlassina-mind.pdf",
+      "filename": "barlassina-hayward-2019-published.pdf",
+      "sha256": "269f470aa9af25252baa2d84cf16a90696ac1f756a26ba87e45955f9b8c51f24",
+      "version": "Published PDF from author host; unamended version of record",
+      "reading_scope": "Main argument and notes pp.1013–1042 read by argument agent; references not treated as independent readings. Root read initial argument and corrigendum. Review agent inspected selected sections. Cited empirical originals not independently checked.",
+      "bytes": 238844,
+      "access_date": "2026-10-06",
+      "status": "original bytes preserved"
+    },
+    {
+      "id": "martinez-2022",
+      "authors": [
+        "Manolo Martínez"
+      ],
+      "title": "Imperative Transparency",
+      "journal": "Mind",
+      "volume": "131",
+      "issue": "522",
+      "pages": "585–601",
+      "year": 2022,
+      "online_publication_date": "2021-10-11",
+      "doi": "10.1093/mind/fzab009",
+      "landing_url": "https://academic.oup.com/mind/article/131/522/585/6387153",
+      "retrieval_url": "https://oup.silverchair-cdn.com/article-minimal/6387153",
+      "filename": "martinez-2022-publisher.html",
+      "sha256": "d825a6da76818e5d7ae4a6819035e09fb0bd0689092d30a084b0cf5e20519442",
+      "version": "Unmodified publisher full-text HTML obtained via publisher redirect; not a PDF facsimile",
+      "reading_scope": "Full §§1–5 and substantive notes read by review agent. Cited empirical originals not independently checked.",
+      "bytes": 194112,
+      "access_date": "2026-10-06",
+      "status": "original bytes preserved"
+    },
+    {
+      "id": "barlassina-2020",
+      "authors": [
+        "Luca Barlassina"
+      ],
+      "title": "Beyond good and bad: Reflexive imperativism, not evaluativism, explains valence",
+      "journal": "Thought: A Journal of Philosophy",
+      "volume": "9",
+      "pages": "274–284",
+      "year": 2020,
+      "doi": "10.1002/tht3.471",
+      "retrieval_url": "https://www.lucabarlassina.org/uploads/7/7/1/0/77107295/beyond_gb.pdf",
+      "filename": "barlassina-2020-beyond-good-and-bad.pdf",
+      "sha256": "d46d54df2b1d067ea7921846a560a90033d6767a455e574b5e6e143c75c32cbf",
+      "bytes": 1217179,
+      "access_date": "2026-10-06",
+      "status": "original published PDF bytes preserved from author host",
+      "reading_scope": "Root read complete main text pp.274–283 and notes through web tool. Review agent independently read through §6.1; source agent read pp.274–276. Cited empirical originals not independently inspected."
+    },
+    {
+      "id": "shinozaki-2026-pain-value-intuition",
+      "authors": [
+        "篠崎大河"
+      ],
+      "title": "なぜ痛みは悪いもののように思われるのか？―評価的面識説と進化論的説明を比較する―",
+      "publisher_english_title": "Why Do We Think Pain Is Bad? Comparing the Evaluative Acquaintance and the Evolutionary Account",
+      "journal": "科学哲学 / Kagaku tetsugaku",
+      "volume": "58",
+      "issue": "2",
+      "issue_year": 2025,
+      "publication_date": "2026-03-31",
+      "pages": "77–98",
+      "doi": "10.4216/jpssj.58.2_77",
+      "retrieval_url": "https://www.jstage.jst.go.jp/article/jpssj/58/2/58_77/_pdf/-char/en",
+      "landing_url": "https://www.jstage.jst.go.jp/article/jpssj/58/2/58_77/_article/-char/en",
+      "filename": "shinozaki-2026-pain-value-intuition-jstage.pdf",
+      "sha256": "4af4ee4bcd1e128fe8eac86eb627f46926d874d985f09a787dde2a0e2dfc45f0",
+      "bytes": 298454,
+      "version": "Original published J-STAGE PDF; issue labelled 2025, publisher release 31 March 2026",
+      "access_date": "2026-10-06",
+      "status": "original bytes preserved unchanged",
+      "reading_scope": "Root read complete §§6–9, printed pp.85–93, and notes1–17 pp.93–96, plus earlier background passages. Counterreviewer independently read §§6–8 pp.85–92, conclusion p.93 and notes7–17 pp.94–96. Legible native PDFKit extraction; no facsimile claim. Initial pypdf extraction and Poppler rendering were defective and were not used for the central reading. The proposed adaptive history and cited empirical originals were not independently validated."
+    }
+  ],
+  "link_only": [
+    {
+      "id": "barlassina-hayward-corrigendum-2021",
+      "doi": "10.1093/mind/fzaa104",
+      "url": "https://academic.oup.com/mind/article/130/518/731/6154421",
+      "publication_date": "2021-02-28",
+      "journal": "Mind 130(518):731",
+      "status": "link-only; full correction text inspected by root through web tool",
+      "scope": "Corrects quotation in §5.3.2; published original explicitly not replaced. No clinical quotation reproduced in this study."
+    },
+    {
+      "id": "prueitt-sezer-sacchet-2025",
+      "authors": [
+        "Catherine Prueitt",
+        "Idil Sezer",
+        "Matthew D. Sacchet"
+      ],
+      "title": "Reimagining pain as an allostatic imperative: perspectives from contemplative traditions",
+      "doi": "10.1093/nc/niaf049",
+      "journal": "Neuroscience of Consciousness 2025(1), niaf049",
+      "publication_date": "2025-12-09",
+      "url": "https://academic.oup.com/nc/article/2025/1/niaf049/8375410",
+      "read_url": "https://philpapers.org/archive/PRURPA-3.pdf",
+      "status": "link-only; full 15-page PDF read by comparator agent via web tool",
+      "retrieval_limit": "Ordinary direct downloads returned HTTP 403; no local original bytes preserved and no SHA asserted. PMC access was challenged; not bypassed.",
+      "reading_scope": "Whole article. It is a theoretical proposal with no new data; underlying empirical sources not independently inspected."
+    },
+    {
+      "id": "kauppinen-2025-telic",
+      "authors": [
+        "Antti Kauppinen"
+      ],
+      "title": "Telic Perfectionism and the Badness of Pain",
+      "doi": "10.1093/9780191955853.003.0012",
+      "publication": "Ill-Being: Philosophical Perspectives, eds. Mauro Rossi and Christine Tappolet, chapter 11, pp.213–231",
+      "publisher_online_date": "2025-04-11",
+      "publisher_print_date": "2025-07-03",
+      "metadata_note": "Helsinki portal records 1 January 2025; publisher date used. Published chapter not directly read.",
+      "url": "https://academic.oup.com/book/59899/chapter-abstract/512052347",
+      "draft_url": "https://philpapers.org/archive/KAUTPA-4.pdf",
+      "draft_version": "Really final revisions, August 1, 2023; 28 pages",
+      "status": "link-only; no local original bytes or hash",
+      "reading_scope": "Root inspected draft pp.1–12 and opening of p.13 through initial public web extraction. Source agent independently inspected indexed primary passages pp.1,14,16,19,21–22 including seven numbered steps. Not a complete chapter reading. Subsequent ordinary retrieval returned HTTP 403."
+    },
+    {
+      "id": "chow-2026-asymmetry",
+      "authors": [
+        "Zhen Yi Chow"
+      ],
+      "title": "An Asymmetry Problem for Telic Perfectionism: A Reply to Kauppinen",
+      "doi": "10.1017/S0953820826100442",
+      "publication": "Utilitas, First View, pp.1–9",
+      "publication_date": "2026-09-22",
+      "url": "https://www.cambridge.org/core/journals/utilitas/article/abs/an-asymmetry-problem-for-telic-perfectionism-a-reply-to-kauppinen/FE5B286913E841F728EAEE85B05CFD91",
+      "status": "link-only; metadata and abstract only",
+      "reading_scope": "No full argument read; no particular asymmetry attributed. No local original bytes or hash."
+    }
+  ],
+  "adaptations": "None. Original bytes unchanged; temporary text extractions are not imported.",
+  "research_scope": "Philosophical realization comparison; no new empirical data, scientific reanalysis or assumption-free derivation."
+}

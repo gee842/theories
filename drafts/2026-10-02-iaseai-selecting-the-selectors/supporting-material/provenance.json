@@ -1,0 +1,1211 @@
+{
+  "title": "From Generativity to Wisdom: A Unified Foundation for AI Safety",
+  "author": "Yongxu Ren",
+  "date": "2026-10-06",
+  "edition": "Technical supporting statement",
+  "language": "English only",
+  "provenance": "AI-assisted editorial synthesis prepared at Ren's request; does not change the research-completion ledger.",
+  "pdf": "drafts/2026-10-02-iaseai-selecting-the-selectors/output/pdf/generativity-to-wisdom-supporting-statement.pdf",
+  "content_source": "drafts/2026-10-02-iaseai-selecting-the-selectors/supporting-material/technical_content.json",
+  "pdf_sha256": "9911df7a63178c49626f0931a1349230d8175965e3c9d97789afff17044e915e",
+  "content_sha256": "318d0382f3c42b64c7df5eecebf482ab2c4e15ee5048409f53a7068b5f9ae658",
+  "source_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md": "72794058ac7bc8d4ed666b86f92816c3d6ee2261a53bc43f885503dfd29b8714",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "dc8051e49985ac409ed01ad92bbc6a5fdc22c868cb5b9840e7ac7d895367e1eb",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md": "c7afe94311331f984ea9a32a31855ca72a6596e1394231ab9e878749f67e4055",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md": "cc39a580c91c99d3aa7fe7108a8b238f8fee70195e480660e06ce6190cde3e05",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "c928bfcf42b9e6228a8e659a0aba79d09838b689393e845606d86edce48c1179",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": "b92507845feaea7f3f64b648bbbc0cd997a4d8c7a003c170bb181bb362437c7a",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md": "f6e4033286f0e23238f0ac38c3893575e6ed728bf5c12d0230c19ad35e07a523",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md": "1303714069534bb60bef8d0eec07443481d8bc037cb085a5685215ee644d5a6e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md": "0f5cfec45f9aa13a9e0d23ccad626a7ee2395be04eae8f09968f7f4e356c8b23",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md": "e75cee45dda1e7efbf99f7ac97fde0a4e3f45c30dbf6e085c1cd87eb9fec3d7e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md": "ce9d7706a25023bf0b155f8701db5c0430adb6e41e47b927b618bf981d66e312",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md": "32c322a41b342412acfce84658fa9e1a7667be27ac2265c99b7a1192920eb119",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/40_s4.md": "a748946a2543cb07d0dd9a568872db19cabf60024d0514b8dd14e5dc7295b656",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/04_S4.md": "c67459d3db37816cd3946fcd77db3e28c57be898b377e52706f6b92466fe2e2c"
+  },
+  "external_references": [
+    "https://arxiv.org/abs/1606.03137",
+    "https://aclanthology.org/2025.emnlp-main.869/",
+    "https://arxiv.org/html/2607.00001v1",
+    "https://arxiv.org/abs/2011.08827",
+    "https://intelligence.org/files/Corrigibility.pdf",
+    "https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf",
+    "https://proceedings.mlr.press/v80/miconi18a.html"
+  ],
+  "pages": 8,
+  "page_metrics": [
+    {
+      "page": 1,
+      "body_font_pt": 10.2,
+      "content_bottom": 721.9
+    },
+    {
+      "page": 2,
+      "body_font_pt": 10.2,
+      "content_bottom": 777.4
+    },
+    {
+      "page": 3,
+      "body_font_pt": 9.79,
+      "content_bottom": 783.28
+    },
+    {
+      "page": 4,
+      "body_font_pt": 10.2,
+      "content_bottom": 773.3
+    },
+    {
+      "page": 5,
+      "body_font_pt": 9.79,
+      "content_bottom": 778.57
+    },
+    {
+      "page": 6,
+      "body_font_pt": 10.2,
+      "content_bottom": 693.9
+    },
+    {
+      "page": 7,
+      "body_font_pt": 10.2,
+      "content_bottom": 689.5
+    },
+    {
+      "page": 8,
+      "body_font_pt": 9.69,
+      "content_bottom": 777.5
+    }
+  ],
+  "layout": [
+    {
+      "page": 1,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 1,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 53,
+      "bottom": 84,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 89,
+      "bottom": 108,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 115,
+      "bottom": 127,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 142,
+      "bottom": 285.0,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 293.5,
+      "bottom": 307.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 312.6,
+      "bottom": 390.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "equation",
+      "top": 402.1,
+      "bottom": 416.6,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 428.1,
+      "bottom": 493.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 501.6,
+      "bottom": 515.7,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 520.7,
+      "bottom": 572.7,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 578.2,
+      "bottom": 617.2,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 622.7,
+      "bottom": 674.7,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 1,
+      "kind": "text",
+      "top": 682.2,
+      "bottom": 716.4,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 2,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 53,
+      "bottom": 77.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 91.5,
+      "bottom": 156.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 165.0,
+      "bottom": 179.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 184.1,
+      "bottom": 249.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "table",
+      "top": 254.6,
+      "bottom": 391.8,
+      "left": 42,
+      "right": 553.2755905511812
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 397.3,
+      "bottom": 436.3,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "box",
+      "top": 450.8,
+      "bottom": 476.2,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 2,
+      "kind": "box",
+      "top": 481.2,
+      "bottom": 545.7,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 561.2,
+      "bottom": 626.2,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 634.7,
+      "bottom": 648.8,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 653.8,
+      "bottom": 718.8,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 2,
+      "kind": "text",
+      "top": 726.3,
+      "bottom": 771.9,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 3,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 53,
+      "bottom": 77.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 91.5,
+      "bottom": 141.42,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "equation",
+      "top": 152.46,
+      "bottom": 166.38,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 177.42,
+      "bottom": 214.86,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 223.02,
+      "bottom": 236.56,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 241.36,
+      "bottom": 266.32,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "equation",
+      "top": 277.36,
+      "bottom": 291.28,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 3,
+      "kind": "equation",
+      "top": 291.28,
+      "bottom": 305.2,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 3,
+      "kind": "equation",
+      "top": 305.2,
+      "bottom": 319.12,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 330.16,
+      "bottom": 405.04,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 413.2,
+      "bottom": 426.73,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 431.53,
+      "bottom": 468.97,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "table",
+      "top": 474.25,
+      "bottom": 549.52,
+      "left": 42,
+      "right": 553.2755905511812
+    },
+    {
+      "page": 3,
+      "kind": "equation",
+      "top": 560.56,
+      "bottom": 574.48,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 585.52,
+      "bottom": 647.92,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 3,
+      "kind": "box",
+      "top": 661.84,
+      "bottom": 674.03,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 3,
+      "kind": "box",
+      "top": 678.83,
+      "bottom": 728.36,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 3,
+      "kind": "text",
+      "top": 745.16,
+      "bottom": 778.0,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 4,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 53,
+      "bottom": 77.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 91.5,
+      "bottom": 156.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 165.0,
+      "bottom": 179.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 184.1,
+      "bottom": 223.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 228.6,
+      "bottom": 319.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 325.1,
+      "bottom": 390.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 395.6,
+      "bottom": 447.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 456.1,
+      "bottom": 470.2,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 475.2,
+      "bottom": 527.2,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 532.7,
+      "bottom": 610.7,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 619.2,
+      "bottom": 633.3,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 638.3,
+      "bottom": 703.3,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 4,
+      "kind": "text",
+      "top": 710.8,
+      "bottom": 767.8,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 5,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 53,
+      "bottom": 77.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 91.5,
+      "bottom": 141.42,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 149.58,
+      "bottom": 163.12,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 167.92,
+      "bottom": 230.32,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "equation",
+      "top": 241.36,
+      "bottom": 255.28,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 5,
+      "kind": "equation",
+      "top": 255.28,
+      "bottom": 269.2,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 5,
+      "kind": "equation",
+      "top": 269.2,
+      "bottom": 283.12,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 294.16,
+      "bottom": 344.08,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 349.36,
+      "bottom": 399.28,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 407.44,
+      "bottom": 420.97,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 425.77,
+      "bottom": 488.17,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "box",
+      "top": 502.09,
+      "bottom": 514.28,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 5,
+      "kind": "box",
+      "top": 519.08,
+      "bottom": 568.62,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 586.38,
+      "bottom": 599.92,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 604.72,
+      "bottom": 654.64,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 659.92,
+      "bottom": 722.32,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 5,
+      "kind": "text",
+      "top": 729.52,
+      "bottom": 773.29,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 6,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 53,
+      "bottom": 77.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 91.5,
+      "bottom": 169.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 178.0,
+      "bottom": 192.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 197.1,
+      "bottom": 223.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "equation",
+      "top": 234.6,
+      "bottom": 249.1,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 6,
+      "kind": "equation",
+      "top": 249.1,
+      "bottom": 263.6,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 275.1,
+      "bottom": 314.1,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "equation",
+      "top": 325.6,
+      "bottom": 340.1,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 351.6,
+      "bottom": 390.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "equation",
+      "top": 402.1,
+      "bottom": 416.6,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 6,
+      "kind": "equation",
+      "top": 416.6,
+      "bottom": 431.1,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 442.6,
+      "bottom": 507.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 516.1,
+      "bottom": 530.2,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 535.2,
+      "bottom": 574.2,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 6,
+      "kind": "table",
+      "top": 579.7,
+      "bottom": 658.1,
+      "left": 42,
+      "right": 553.2755905511812
+    },
+    {
+      "page": 6,
+      "kind": "text",
+      "top": 665.6,
+      "bottom": 688.4,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 7,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "top": 53,
+      "bottom": 77.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "top": 94.5,
+      "bottom": 108.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "top": 113.6,
+      "bottom": 152.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "equation",
+      "top": 164.1,
+      "bottom": 178.6,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 7,
+      "kind": "equation",
+      "top": 178.6,
+      "bottom": 193.1,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "top": 204.6,
+      "bottom": 269.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "plot",
+      "top": 275.1,
+      "bottom": 497.1,
+      "left": 42,
+      "right": 553.2755905511812
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "top": 497.1,
+      "bottom": 519.7,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "text",
+      "top": 525.2,
+      "bottom": 590.2,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 7,
+      "kind": "box",
+      "top": 604.7,
+      "bottom": 617.4,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 7,
+      "kind": "box",
+      "top": 622.4,
+      "bottom": 674.0,
+      "left": 54,
+      "right": 541.28
+    },
+    {
+      "page": 8,
+      "kind": "furniture",
+      "top": 21,
+      "bottom": 31,
+      "left": 74,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 42,
+      "right": 513.28
+    },
+    {
+      "page": 8,
+      "kind": "furniture",
+      "top": 810.89,
+      "bottom": 820.89,
+      "left": 528.28,
+      "right": 558.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 53,
+      "bottom": 77.5,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 91.5,
+      "bottom": 153.25,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "table",
+      "top": 158.47,
+      "bottom": 350.75,
+      "left": 42,
+      "right": 553.2755905511812
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 358.83,
+      "bottom": 372.23,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 376.98,
+      "bottom": 438.73,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 443.95,
+      "bottom": 505.7,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 513.78,
+      "bottom": 527.17,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 531.92,
+      "bottom": 606.02,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 614.1,
+      "bottom": 627.49,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "reference",
+      "top": 632.24,
+      "bottom": 642.6,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "reference",
+      "top": 645.45,
+      "bottom": 655.8,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "reference",
+      "top": 658.65,
+      "bottom": 669.01,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "reference",
+      "top": 671.86,
+      "bottom": 682.21,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "reference",
+      "top": 685.06,
+      "bottom": 695.42,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "reference",
+      "top": 698.27,
+      "bottom": 708.62,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "reference",
+      "top": 711.47,
+      "bottom": 732.18,
+      "left": 42,
+      "right": 553.28
+    },
+    {
+      "page": 8,
+      "kind": "text",
+      "top": 739.78,
+      "bottom": 772.27,
+      "left": 42,
+      "right": 553.28
+    }
+  ],
+  "previous_edition_source": "archive/build_supporting_pdf.py.english-overview"
+}

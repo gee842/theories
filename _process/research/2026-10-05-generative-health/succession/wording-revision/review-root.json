@@ -1,0 +1,78 @@
+{
+  "scope": "Current exposition wording revision; pre-edit snapshots include concurrent work and are not Git baselines.",
+  "files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "before_sha256": "c0122425b8726fd41244ed0e8ecfdae2ba8f2bf0e63950e495a5d0262d3715ea",
+      "after_sha256": "809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573",
+      "changes_summary": "Positive working formulation; non-intentional sense of activity; descriptive English/Chinese vocabulary; distinction of process, theory and model; current conditional-universality scope.",
+      "integration_sha256": "809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "afd4e6848760ce16fc7de57fba871ce48b4e3734cbfc7c98b2d4cef9937e5937",
+      "after_sha256": "fa49eacd657feb99b0a070baf2c7c62a09e911eddce299e6f84d31248a2b8074",
+      "changes_summary": "Bilingual core formulation; differentiate general explanation from local roles and resource quantities; clarify record operations and evidence-to-revision; place local support correspondence after general model explanation.",
+      "integration_sha256": "52eff825a042d5b179240351281c765caadf3a4366a0170094b984c790fe89be"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "before_sha256": "9c2627dd097ce4593d1fd3333914ca1d93c975ca9d86d557e9e4ae05a5ca0fbb",
+      "after_sha256": "dfbaffa0d38e894f35eb55649138e710fa296b0de24642a11f728ac67db7f05b",
+      "changes_summary": "Replace accounting-boundary metaphor with actual explanatory dependencies; describe record formation and updating directly.",
+      "integration_sha256": "dfbaffa0d38e894f35eb55649138e710fa296b0de24642a11f728ac67db7f05b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "before_sha256": "e12e9b14a0280c27a6a114325d712f4f01eb446c27341406af8aed0802982fe3",
+      "after_sha256": "c25cf6f2816e8702357407376b8195392b3ff0d4287687727b2acaa6137dbf61",
+      "changes_summary": "Scope introductory modeling conventions; restate nonfinancial reserve operations; preserve mathematical premises; accurate F12 task-ranking scope; old anchors retained for F11/F12/F14 title changes.",
+      "integration_sha256": "c25cf6f2816e8702357407376b8195392b3ff0d4287687727b2acaa6137dbf61"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "before_sha256": "6592b0e0075e48b1bff24a227eaa6ea1d1b4942064901519262a5ea57edd37b4",
+      "after_sha256": "d1a8f6f2baa200f32ae385361d4c167802cb696451e63f6abe6c385faa4dc390",
+      "changes_summary": "Explain actual local roles, reserve operations, permission withdrawal and record updating without monetary metaphors; preserve inherited equations and numerical results.",
+      "integration_sha256": "85a3e2358ce587b85a8992a64b126996335b24a125717de20516cf75eb3b00cb"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+      "before_sha256": "3798de9d99006645128ae64f25d458dbfb55d28818ccd5e6b06ac3f23fb7fd88",
+      "after_sha256": "e38f8645aa2f90029f8abd86630325fe6a8c7e931a9efe9811964b804fb52b71",
+      "changes_summary": "Describe record correction, support renewal and specified fuel consumption as distinct local operations.",
+      "integration_sha256": "e38f8645aa2f90029f8abd86630325fe6a8c7e931a9efe9811964b804fb52b71"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "25b4a6bc388d936d985fe8274ed867ee2af12881c60b9cdf6cc8ad4d052cb64b",
+      "after_sha256": "20574c2a92266aa89f2280b91acbb036dda71a82c122cda37a90fc6d4e35990a",
+      "changes_summary": "Integrate the user instruction and editorial correction using existing index entry; preserve unrelated concurrent additions.",
+      "integration_sha256": "3d822e59229e0712527534a97c163d1915014e42feea4cd59898c765021e7407"
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "abb7ceda702cfe16177aa91c1734e1659a1ea19e5e1b50571bef15d8e87e0d68",
+      "after_sha256": "fa57f21282a02f12c8efede55cfa4531c8b47134654af1d8c3e612fc3029f697",
+      "changes_summary": "Integrate the user instruction and editorial correction using existing index entry; preserve unrelated concurrent additions.",
+      "integration_sha256": "bdc6589d2d11ba40419a0e02f64ce2483fa2dd2671256714dbba4aefcd79f5e4"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "288fc82bd449d30d6663859ac99f37bae2cd0adeac32184b9b99fd704c0fac41",
+      "after_sha256": "0951650adc41f200297f7d2e6c519f4a84370de872eda32d01b1777091d34af6",
+      "changes_summary": "Integrate the user instruction and editorial correction using existing index entry; preserve unrelated concurrent additions.",
+      "integration_sha256": "65b2b3bbaa9e8171da66b30ff9a468d8ebc63dcf3db2db378b4eb7406983bc09"
+    }
+  ],
+  "status": "root edits complete; see central checks.json and independent review records",
+  "scope_note": "Exact before snapshots include concurrent work. Later current hashes may also include independently authored additions; the record does not attribute every intervening difference to this wording revision.",
+  "scientific_rerun": false,
+  "review_notes": [
+    "Independent read-only audit identified universalized observation, roles, resources and accounting metaphors before root edits.",
+    "Integrator inspected the actual local reserve and escrow proof context; avoided treating a modeled stock as a living being.",
+    "F12 states the task-ranking quantifiers and leaves a universal criterion over whole situations open.",
+    "Shared fuel in ENDOGENOUS-REGULATION-MATH can support later repair; the typed learner with separate common repair fuel is a different local law.",
+    "Concurrent Huigen purpose-revision links were observed after a passing scan and recorded separately; no unrelated research additions were overwritten."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "Owned inserted fragments only; preserve concurrent edits and historical results.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "position": "after title",
+      "fragment": "**Deriving inquiry premises, 6 October 2026:** [the constructive continuation](_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) removes excessive global preservation and prior prefix-answer requirements, derives nonemptiness from sound non-abort inquiries, and computes actual policies or exact bounded failure from executable finite conditions. The composed search validates its prefix and constructs continuations at actual reached beliefs; no successful inquiry certificates are inputs. The unchanged one-packet law now has a substantive packet-access contract. Its finite encoding and generated native-policy checks preserve adverse cases. This discharges local proof obligations; law provenance, physical planner formation, query significance and whole-process grounding remain open. Next join acquired relevance/conditions to an actual represented query and derived continuation without splicing histories.\n\n",
+      "before_sha256": "606cf1246eeab00b623ad875493139a7129ca288231ac23c8c31a2f25692cc01",
+      "after_sha256": "8ce6da75987d43136cd94c24177cf6301a0538f93702d21ed4504ad260422ab5"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "position": "after title",
+      "fragment": "**Inquiry premises derived, 6 October 2026:** [the new Lean continuation](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) calculates inquiry and continuation certificates from executable conditions, removes excessive global preservation, and replaces unrestricted packet-example safety with proved access conditions. It preserves failed inquiries and the original law. This supports acquired conditions \u2192 possible inquiry; it does not declare the law, criterion significance or whole-process ethical foundation assumption-free.\n\n",
+      "before_sha256": "89773451a9637adcd20ceb4f59da25e180e751962bb6c0dafbbe46a82ecb2221",
+      "after_sha256": "03c1768d99a7c5f433d552316d094c58f8df7ec93fb7eb1ef24a586fa648c4f9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "position": "after title",
+      "fragment": "**Latest premise discharge:** [derived inquiry certificates and reached composition](DERIVED-INQUIRY-PREMISES.md) replace supplied successful-policy proofs by constructive finite search, retaining exact bounded rejection and a substantive packet-access condition. The old generic theorems and counterexamples remain unchanged. [GenerativeDerivedInquiryModel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean) is the combined public entry.\n\n",
+      "before_sha256": "1c289a439d597b3b498be7b5189de7b7b960d8f9ef871c49e797dc844a181b5f",
+      "after_sha256": "da159d8ac4f303fea28f9d79408dadff6284400b9a71b1366337747e24f9da06"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "position": "after title",
+      "fragment": "**Acquired conditions \u2192 derived admissible inquiry, 6 October 2026:** [the constructive premise-discharge continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) computes prefix validity, starting nonemptiness and actual-leaf continuation certificates within the declared finite representation. Excessive global preservation and prior prefix identification are removed; real impossibilities remain. The established applicability, completion and continuing-dependency mechanisms provide interfaces for choosing a represented query, but are not silently identified with an installed planner. Next connect those actual histories to derived inquiry/use while retaining the deeper obligations of law provenance and justified whole-process significance.\n\n",
+      "before_sha256": "d358f7b51975bb51d9b998d11cf7710082322e9d8bdf0d285795bacfaac18e2f",
+      "after_sha256": "43ba9459c51cdbdcb6aba62cea462df976cd8d9879bd2124148d1dd9bae41bb6"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "position": "after title",
+      "fragment": "**Constructive premise discharge, 6 October 2026:** [GenerativeDerivedInquiryModel](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean) extends the earlier closure with calculated inquiry certificates, exact reached-leaf composition, packet-access proofs and concrete synthesis. [The integration](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) records which hypotheses are removed or derived and which model/grounding inputs remain. A computed failure is scoped to the requested depth and, for continuation, the fixed prefix; it is not an unbounded impossibility claim.\n\n",
+      "before_sha256": "f1f6d4fb829a1c30fb91f03458ead437723f1fab576286d451388fb83bf65ce8",
+      "after_sha256": "64fa74e7f0f01745cb70742e7de57bfbd6530b8aa28b859bf87bda52cf598f3d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "position": "after title",
+      "fragment": "**Derived inquiry entry:** [GenerativeDerivedInquiryModel.lean](GenerativeDerivedInquiryModel.lean) preserves the earlier attainable-question closure and adds executable certificate synthesis, exact reached-leaf composition and one-packet access checks. See [premise discharge and remaining scope](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md). Reproduce the fresh combined closure with `python3 inquiry-root/sufficiency/check_derived_inquiry.py` from this directory; earlier verification receipts are preserved.\n\n",
+      "before_sha256": "142f809770f0895f0423204e9f1322bb99e09853f5b9686ce9f27cc39e95d993",
+      "after_sha256": "60dc66a9c7e27fb1972ab91d7b0d4af7ef5dc2be5bca8b6ca2431256907e2201"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "position": "after title",
+      "fragment": "**Derived inquiry certificates:** [this continuation](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) computes a policy or exact bounded failure, validates a proposed prefix, and derives continuations at actual reached beliefs. Global agreement preservation and a supplied successful prefix answer are unnecessary. The concrete packet example uses actual availability instead of `safe := True`. Run `python3 check_derived_inquiry.py` here for the combined fresh build; [the public entry](../../GenerativeDerivedInquiryModel.lean) retains every earlier audited declaration.\n\n",
+      "before_sha256": "3775175800b85bd44b0d752a39683356b7d77101a4986d33957e1b8eb439a942",
+      "after_sha256": "7d632a2be61e06436a3eb66262aa043fd890f7281221edf8da8fff073fd2caca"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "position": "before unified theorem",
+      "fragment": "### Deriving the inquiry certificates\n\n[The next constructive continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) derives the finite application certificates rather than accepting them. For a sound prefix, the continued policy identifies the final question exactly when its actual reached-leaf continuations do. The prefix need not already identify it, and global agreement preservation is unnecessary. Historical-target use still requires preserving the original target; a concrete witness proves this along all admitted traces while falsifying the old global requirement.\n\nAn executable finite search now returns an actual policy and proof, or excludes every policy through the requested depth. Its composed interface also calculates initial nonemptiness and prefix soundness, searches each actual reached leaf, and certifies the final composite without supplied `live`, `first`, `later` or `preserved` proofs. Rejection concerns the specified prefix and per-leaf bound. The unchanged one-packet comparison uses a nontrivial packet-access condition; its exact all-finite-policy obstruction remains. Finite law/question data and physical correspondence remain explicit, and this does not install the search within the original apparatus or ground a query's ethical significance.\n\n",
+      "before_sha256": "83484c641a4c0ea8daeebc7153024b3adb545d37b86def0ccc008c3564b95c42",
+      "after_sha256": "c7afe94311331f984ea9a32a31855ca72a6596e1394231ab9e878749f67e4055"
+    }
+  ]
+}

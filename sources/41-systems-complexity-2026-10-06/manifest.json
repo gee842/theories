@@ -1,0 +1,75 @@
+{
+  "retrieved_utc": "2026-10-06T08:12:19.981383+00:00",
+  "records": [
+    {
+      "file": "lorenz-1963.pdf",
+      "url": "https://cdanfort.w3.uvm.edu/research/lorenz-1963.pdf",
+      "resolved_url": "https://cdanfort.w3.uvm.edu/research/lorenz-1963.pdf",
+      "bytes": 1066948,
+      "sha256": "35cbe8a9e3ac36f210031376989b3b838de85ca3ba0290ba44131dcfd204cc2f",
+      "pages": 12,
+      "text_extraction": "Failed: only page markers; unusable derivative removed.",
+      "direct_visual_reading_printed_pages": [
+        130,
+        134,
+        141
+      ]
+    },
+    {
+      "file": "may-1976.pdf",
+      "url": "https://antoniop.sdsu.edu/teaching/m538/homework/Simple%20mathematical%20models%20with%20very%20complicated%20dynamics%20%28Robert%20M.%20May%29.pdf",
+      "resolved_url": "https://antoniop.sdsu.edu/teaching/m538/homework/Simple%20mathematical%20models%20with%20very%20complicated%20dynamics%20%28Robert%20M.%20May%29.pdf",
+      "bytes": 918912,
+      "sha256": "be7c198d12a7289bb0cbd9f04d5507e1aa0a55404b1c793ac31091b3de7e1035",
+      "pages": 9,
+      "reading_file": "may-1976.reading.txt",
+      "reading_sha256": "e5a26f181292865d9041e1177d4abe11df5c899d3cb406dd8eb4efcae5012afd",
+      "extracted_text_reading_printed_pages": [
+        459,
+        460,
+        461
+      ],
+      "direct_visual_reading_printed_pages": [
+        459
+      ]
+    },
+    {
+      "file": "ott-grebogi-yorke-1990.pdf",
+      "url": "https://yorke.umd.edu/Yorke_papers_most_cited_and_post2000/1990_06_OGY_PRL_Controlling_chaos.pdf",
+      "error": "<urlopen error timed out>",
+      "preserved": false,
+      "read_scope": "Publisher abstract only, link-only"
+    }
+  ],
+  "derivatives": [
+    {
+      "file": "lorenz-1963-page-01.png",
+      "type": "locally rendered reading image",
+      "bytes": 627809,
+      "sha256": "2c86a1349d386007613698e9f4c3c30787c7d281c27d739dbfc58aef80701c33",
+      "visually_inspected": true
+    },
+    {
+      "file": "lorenz-1963-page-05.png",
+      "type": "locally rendered reading image",
+      "bytes": 704937,
+      "sha256": "db9a53dbbd3b598b97530eed24e9c2be20b707560617707bd1edbc096d1b8717",
+      "visually_inspected": true
+    },
+    {
+      "file": "lorenz-1963-page-12.png",
+      "type": "locally rendered reading image",
+      "bytes": 753419,
+      "sha256": "9bf6c480113dbe70edff4437b479ff7a18406b607cbad3e718d985769e498b00",
+      "visually_inspected": true
+    },
+    {
+      "file": "may-1976-page-01.png",
+      "type": "locally rendered reading image",
+      "bytes": 633436,
+      "sha256": "af9fd935a7f328762ad172d5a367c84245a91a1b3ccca741c82ab7ea1a9d7f28",
+      "visually_inspected": true
+    }
+  ],
+  "original_preservation_verified": true
+}

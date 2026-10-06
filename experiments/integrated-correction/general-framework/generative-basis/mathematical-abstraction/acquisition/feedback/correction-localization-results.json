@@ -1,0 +1,5140 @@
+{
+  "ancestry_scope": "Bound to previous independent reconstruction; small original continuation replayed here",
+  "case_count": 6,
+  "cases": [
+    {
+      "contact_selector": 1,
+      "final": {
+        "account": {
+          "capacity": 256,
+          "fuel": "166143/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "190363/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "selected_relay",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            1
+          ],
+          "held": false,
+          "load": 10,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 0
+        },
+        "whole_account": "145"
+      },
+      "inherited_consumption": "2033587/16384",
+      "name": "law_01_learned_contact_1",
+      "old_endpoint": {
+        "account": {
+          "capacity": 256,
+          "fuel": "214009/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "142497/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "service_issued",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            1
+          ],
+          "held": false,
+          "load": 10,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 0
+        },
+        "whole_account": "145"
+      },
+      "original_prefix_records": 16,
+      "original_prefix_verified": true,
+      "source_case": "law_01_learned",
+      "trace": [
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "205269/32768",
+            "kind": "relay_command",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "relay_command",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "205269/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "151237/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "196529/32768",
+            "kind": "weak_challenge",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "weak_challenge",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "196529/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "159977/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": [
+                1,
+                1,
+                1
+              ],
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "4105/16384",
+            "extra": "1/4",
+            "fuel": "188319/32768",
+            "kind": "dependency_contact",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 0,
+            "workspace": 0
+          },
+          "detail": {
+            "probe": 1
+          },
+          "kind": "dependency_contact",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "188319/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "168187/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": [
+                1,
+                1,
+                1
+              ],
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "186747/32768",
+            "kind": "dependency_slot_write",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "dependency_slot_write",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "186747/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "169759/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "539/16384",
+            "extra": "0",
+            "fuel": "185669/32768",
+            "kind": "dependency_read",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 2,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_read",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "185669/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "170837/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "184097/32768",
+            "kind": "dependency_commit",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_commit",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "184097/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "172409/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "8977/16384",
+            "extra": "17/32",
+            "fuel": "166143/32768",
+            "kind": "dependency_retention",
+            "live": 34,
+            "peak": 34,
+            "rewrites": 0,
+            "temporary": 0,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_retention",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "166143/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "190363/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        }
+      ]
+    },
+    {
+      "contact_selector": 0,
+      "final": {
+        "account": {
+          "capacity": 256,
+          "fuel": "166143/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "190363/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "selected_relay",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            1
+          ],
+          "held": false,
+          "load": 10,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 0
+        },
+        "whole_account": "145"
+      },
+      "inherited_consumption": "2033587/16384",
+      "name": "law_01_learned_contact_0",
+      "old_endpoint": {
+        "account": {
+          "capacity": 256,
+          "fuel": "214009/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "142497/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "service_issued",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            1
+          ],
+          "held": false,
+          "load": 10,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 0
+        },
+        "whole_account": "145"
+      },
+      "original_prefix_records": 16,
+      "original_prefix_verified": true,
+      "source_case": "law_01_learned",
+      "trace": [
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "205269/32768",
+            "kind": "relay_command",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "relay_command",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "205269/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "151237/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "196529/32768",
+            "kind": "weak_challenge",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "weak_challenge",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "196529/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "159977/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": [
+                1,
+                1,
+                1
+              ],
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "4105/16384",
+            "extra": "1/4",
+            "fuel": "188319/32768",
+            "kind": "dependency_contact",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 0,
+            "workspace": 0
+          },
+          "detail": {
+            "probe": 0
+          },
+          "kind": "dependency_contact",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "188319/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "168187/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": [
+                1,
+                1,
+                1
+              ],
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "186747/32768",
+            "kind": "dependency_slot_write",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "dependency_slot_write",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "186747/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "169759/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "539/16384",
+            "extra": "0",
+            "fuel": "185669/32768",
+            "kind": "dependency_read",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 2,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_read",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "185669/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "170837/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "184097/32768",
+            "kind": "dependency_commit",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_commit",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "184097/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "172409/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "8977/16384",
+            "extra": "17/32",
+            "fuel": "166143/32768",
+            "kind": "dependency_retention",
+            "live": 34,
+            "peak": 34,
+            "rewrites": 0,
+            "temporary": 0,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_retention",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "166143/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "190363/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                1
+              ],
+              "held": false,
+              "load": 10,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 0
+            },
+            "whole_account": "145"
+          }
+        }
+      ]
+    },
+    {
+      "contact_selector": 1,
+      "final": {
+        "account": {
+          "capacity": 256,
+          "fuel": "166143/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "190363/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "selected_relay",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "inherited_consumption": "2033587/16384",
+      "name": "calibration_break_contact_1",
+      "old_endpoint": {
+        "account": {
+          "capacity": 256,
+          "fuel": "214009/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "142497/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "service_issued",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "original_prefix_records": 16,
+      "original_prefix_verified": true,
+      "source_case": "calibration_break",
+      "trace": [
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "205269/32768",
+            "kind": "relay_command",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "relay_command",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "205269/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "151237/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "196529/32768",
+            "kind": "weak_challenge",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "weak_challenge",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "196529/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "159977/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": [
+                1,
+                1,
+                1
+              ],
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "4105/16384",
+            "extra": "1/4",
+            "fuel": "188319/32768",
+            "kind": "dependency_contact",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 0,
+            "workspace": 0
+          },
+          "detail": {
+            "probe": 1
+          },
+          "kind": "dependency_contact",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "188319/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "168187/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": [
+                1,
+                1,
+                1
+              ],
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "186747/32768",
+            "kind": "dependency_slot_write",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "dependency_slot_write",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "186747/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "169759/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "539/16384",
+            "extra": "0",
+            "fuel": "185669/32768",
+            "kind": "dependency_read",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 2,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_read",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "185669/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "170837/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "184097/32768",
+            "kind": "dependency_commit",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_commit",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "184097/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "172409/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "8977/16384",
+            "extra": "17/32",
+            "fuel": "166143/32768",
+            "kind": "dependency_retention",
+            "live": 34,
+            "peak": 34,
+            "rewrites": 0,
+            "temporary": 0,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_retention",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "166143/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "190363/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        }
+      ]
+    },
+    {
+      "contact_selector": 0,
+      "final": {
+        "account": {
+          "capacity": 256,
+          "fuel": "166143/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "190363/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "selected_relay",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "inherited_consumption": "2033587/16384",
+      "name": "calibration_break_contact_0",
+      "old_endpoint": {
+        "account": {
+          "capacity": 256,
+          "fuel": "214009/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "142497/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "service_issued",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            1
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "original_prefix_records": 16,
+      "original_prefix_verified": true,
+      "source_case": "calibration_break",
+      "trace": [
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "205269/32768",
+            "kind": "relay_command",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "relay_command",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "205269/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "151237/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "196529/32768",
+            "kind": "weak_challenge",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "weak_challenge",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "196529/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "159977/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": [
+                1,
+                1,
+                1
+              ],
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "4105/16384",
+            "extra": "1/4",
+            "fuel": "188319/32768",
+            "kind": "dependency_contact",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 0,
+            "workspace": 0
+          },
+          "detail": {
+            "probe": 0
+          },
+          "kind": "dependency_contact",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "188319/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "168187/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": [
+                1,
+                1,
+                1
+              ],
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "186747/32768",
+            "kind": "dependency_slot_write",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "dependency_slot_write",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "186747/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "169759/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "539/16384",
+            "extra": "0",
+            "fuel": "185669/32768",
+            "kind": "dependency_read",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 2,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_read",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "185669/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "170837/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "184097/32768",
+            "kind": "dependency_commit",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_commit",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "184097/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "172409/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "8977/16384",
+            "extra": "17/32",
+            "fuel": "166143/32768",
+            "kind": "dependency_retention",
+            "live": 34,
+            "peak": 34,
+            "rewrites": 0,
+            "temporary": 0,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_retention",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "166143/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "190363/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                1
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        }
+      ]
+    },
+    {
+      "contact_selector": 1,
+      "final": {
+        "account": {
+          "capacity": 256,
+          "fuel": "166143/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "190363/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "selected_relay",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            0
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "inherited_consumption": "2033587/16384",
+      "name": "false_dependence_contact_1",
+      "old_endpoint": {
+        "account": {
+          "capacity": 256,
+          "fuel": "214009/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "142497/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "service_issued",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            0
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "original_prefix_records": 16,
+      "original_prefix_verified": true,
+      "source_case": "false_dependence",
+      "trace": [
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "205269/32768",
+            "kind": "relay_command",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "relay_command",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "205269/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "151237/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "196529/32768",
+            "kind": "weak_challenge",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "weak_challenge",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "196529/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "159977/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": [
+                1,
+                1,
+                0
+              ],
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "4105/16384",
+            "extra": "1/4",
+            "fuel": "188319/32768",
+            "kind": "dependency_contact",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 0,
+            "workspace": 0
+          },
+          "detail": {
+            "probe": 1
+          },
+          "kind": "dependency_contact",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "188319/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "168187/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": [
+                1,
+                1,
+                1
+              ],
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "186747/32768",
+            "kind": "dependency_slot_write",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "dependency_slot_write",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "186747/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "169759/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "539/16384",
+            "extra": "0",
+            "fuel": "185669/32768",
+            "kind": "dependency_read",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 2,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_read",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "185669/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "170837/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "184097/32768",
+            "kind": "dependency_commit",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_commit",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "184097/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "172409/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "8977/16384",
+            "extra": "17/32",
+            "fuel": "166143/32768",
+            "kind": "dependency_retention",
+            "live": 34,
+            "peak": 34,
+            "rewrites": 0,
+            "temporary": 0,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_retention",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "166143/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "190363/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "selected_relay",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        }
+      ]
+    },
+    {
+      "contact_selector": 0,
+      "final": {
+        "account": {
+          "capacity": 256,
+          "fuel": "166143/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "190363/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": null,
+          "contact": null,
+          "installed": true,
+          "mode": "no_supported_route",
+          "read_mode": "no_supported_route",
+          "retained": true,
+          "selected": null,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            0
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            0
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "inherited_consumption": "2033587/16384",
+      "name": "false_dependence_contact_0",
+      "old_endpoint": {
+        "account": {
+          "capacity": 256,
+          "fuel": "214009/32768",
+          "income": "0",
+          "live": 34,
+          "peak": 42,
+          "spent": "142497/32768",
+          "start": "178253/16384",
+          "workspace": 0
+        },
+        "controller": {
+          "candidate": 1,
+          "contact": null,
+          "installed": true,
+          "mode": "service_issued",
+          "read_mode": "selected_relay",
+          "retained": true,
+          "selected": 1,
+          "tags": [
+            1,
+            1
+          ],
+          "values": [
+            0,
+            1
+          ]
+        },
+        "inherited": {
+          "H": {
+            "alphabet": [
+              "a"
+            ],
+            "initial": 0,
+            "outputs": [
+              1,
+              1,
+              0
+            ],
+            "transitions": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          "component_done": true,
+          "control_location": "reported_episode_complete",
+          "retained": true,
+          "table": [
+            0,
+            1,
+            null
+          ]
+        },
+        "native": {
+          "context": 1,
+          "full_law": [
+            0,
+            0
+          ],
+          "held": false,
+          "load": 0,
+          "pending": null,
+          "relay": 1,
+          "source": 0,
+          "test_law": [
+            0,
+            0
+          ],
+          "waste": 10
+        },
+        "whole_account": "145"
+      },
+      "original_prefix_records": 16,
+      "original_prefix_verified": true,
+      "source_case": "false_dependence",
+      "trace": [
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "205269/32768",
+            "kind": "relay_command",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "relay_command",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "205269/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "151237/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "2185/8192",
+            "extra": "1/4",
+            "fuel": "196529/32768",
+            "kind": "weak_challenge",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "weak_challenge",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "196529/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "159977/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": [
+                1,
+                1,
+                0
+              ],
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "4105/16384",
+            "extra": "1/4",
+            "fuel": "188319/32768",
+            "kind": "dependency_contact",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 0,
+            "workspace": 0
+          },
+          "detail": {
+            "probe": 0
+          },
+          "kind": "dependency_contact",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "188319/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "168187/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": [
+                1,
+                1,
+                0
+              ],
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                1
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "186747/32768",
+            "kind": "dependency_slot_write",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {
+            "setting": 1
+          },
+          "kind": "dependency_slot_write",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "186747/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "169759/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": 1,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "selected_relay",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                0
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "539/16384",
+            "extra": "0",
+            "fuel": "185669/32768",
+            "kind": "dependency_read",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 0,
+            "temporary": 2,
+            "work": 2,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_read",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "185669/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "170837/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": null,
+              "contact": null,
+              "installed": true,
+              "mode": "service_issued",
+              "read_mode": "no_supported_route",
+              "retained": true,
+              "selected": 1,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                0
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "393/8192",
+            "extra": "0",
+            "fuel": "184097/32768",
+            "kind": "dependency_commit",
+            "live": 34,
+            "peak": 36,
+            "rewrites": 2,
+            "temporary": 2,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_commit",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "184097/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "172409/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": null,
+              "contact": null,
+              "installed": true,
+              "mode": "no_supported_route",
+              "read_mode": "no_supported_route",
+              "retained": true,
+              "selected": null,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                0
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        },
+        {
+          "charge": {
+            "bill": "8977/16384",
+            "extra": "17/32",
+            "fuel": "166143/32768",
+            "kind": "dependency_retention",
+            "live": 34,
+            "peak": 34,
+            "rewrites": 0,
+            "temporary": 0,
+            "work": 1,
+            "workspace": 0
+          },
+          "detail": {},
+          "kind": "dependency_retention",
+          "state": {
+            "account": {
+              "capacity": 256,
+              "fuel": "166143/32768",
+              "income": "0",
+              "live": 34,
+              "peak": 42,
+              "spent": "190363/32768",
+              "start": "178253/16384",
+              "workspace": 0
+            },
+            "controller": {
+              "candidate": null,
+              "contact": null,
+              "installed": true,
+              "mode": "no_supported_route",
+              "read_mode": "no_supported_route",
+              "retained": true,
+              "selected": null,
+              "tags": [
+                1,
+                1
+              ],
+              "values": [
+                0,
+                0
+              ]
+            },
+            "inherited": {
+              "H": {
+                "alphabet": [
+                  "a"
+                ],
+                "initial": 0,
+                "outputs": [
+                  1,
+                  1,
+                  0
+                ],
+                "transitions": [
+                  [
+                    1
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    0
+                  ]
+                ]
+              },
+              "component_done": true,
+              "control_location": "reported_episode_complete",
+              "retained": true,
+              "table": [
+                0,
+                1,
+                null
+              ]
+            },
+            "native": {
+              "context": 1,
+              "full_law": [
+                0,
+                0
+              ],
+              "held": false,
+              "load": 0,
+              "pending": null,
+              "relay": 1,
+              "source": 0,
+              "test_law": [
+                0,
+                0
+              ],
+              "waste": 10
+            },
+            "whole_account": "145"
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No final full-load receipt is acquired.",
+    "Contact selector interpretation and faithfulness are supplied source semantics.",
+    "The fixed executor does not choose these new request words.",
+    "No new source, fuel, apparatus or inherited completion is provided.",
+    "Full-load service is not restored and ethical warrant is not derived.",
+    "No new Lean build or universal scheduling theorem is claimed."
+  ],
+  "old_projection": {
+    "fields": [
+      "kind",
+      "detail",
+      "charge",
+      "account",
+      "inherited",
+      "controller"
+    ],
+    "identical": true,
+    "records_per_case": 16,
+    "source_cases": [
+      "law_01_learned",
+      "calibration_break",
+      "false_dependence"
+    ]
+  },
+  "protocol_sha256": "47b25788e20a10c8aa074091fa1447f5eb03f08a136eb01d8c7bffb02357d301",
+  "scope": "Existing source-interface request words; not autonomous or physically derived channel selection",
+  "source_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md": "47b25788e20a10c8aa074091fa1447f5eb03f08a136eb01d8c7bffb02357d301",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization.py": "9d25b4aadf8efa56e75089b55caaecce03e05d0dfbbbc215dc3062940658e9ea",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json": "e9adb2a52c661054cd18bb60ca057bf716a33646474076ff13366e0369cd99f1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json": "424540b7688e836b8357b86adf1ae7f3382349c7581abe83df37d36ccbae72b2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md": "32a040e263137c0b9fee58ff142dfaa236eac009b70e2fcab53292e21631a398",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json": "c9d75a3677bd5fbe5026b358a1d55bc3c76ca33db3b5af5411e8c27c21a4d0a0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py": "75e715f1a7a0af499a39887e3fc9b38d88b66125d313361de851c421d9197127",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "suffix_event_count": 42
+}

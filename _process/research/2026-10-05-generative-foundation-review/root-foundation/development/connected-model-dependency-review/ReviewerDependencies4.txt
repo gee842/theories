@@ -1,0 +1,10 @@
+'RecipientArchive.encode_injective' depends on axioms: [propext]
+'RecipientArchive.step_energy' depends on axioms: [propext, Quot.sound]
+'RecipientIdentification.step_energy' depends on axioms: [propext, Quot.sound]
+'RecipientAction.route._sparseCasesOn_1' depends on axioms: [propext]
+'RecipientAction.route._sparseCasesOn_2' depends on axioms: [propext]
+@[reducible] def RecipientAction.route._sparseCasesOn_1.{u} : {motive : Bool → Sort u} →
+  (t : Bool) → motive true → (Nat.hasNotBit 2 t.ctorIdx → motive t) → motive t :=
+fun {motive} t true =>
+  Bool.rec (motive := fun t => (Nat.hasNotBit 2 t.ctorIdx → motive t) → motive t)
+    (fun «else» => «else» (Nat.ne_of_beq_eq_false (Eq.refl false))) (fun «else» => true) t

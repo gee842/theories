@@ -1,0 +1,619 @@
+{
+  "status": "passed",
+  "scope": "Source preservation, exact additive integration and local links only. No simulation, proof compiler, statistical reanalysis or ethical certification.",
+  "prior_source_bindings": [
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inquiry-interface/extract_inquiry_evidence.py",
+      "sha256": "c08a753d9e69443038ae8aa99989def8c17900f765434aac0d2a3c4129d04a44",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+      "sha256": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent-check.json",
+      "sha256": "5efe94e31a1d06026a02708ec5792ead962371fc59e57dc185a9b6f56bd7afb7",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent_check.py",
+      "sha256": "719aa55c41d8cd6046aad99df0226da5767515381878c6427236a6d6b6837167",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/PROTOCOL.md",
+      "sha256": "05229487040e2489ba89bc94727e481bf23e63cd265ba320f95b9948265ad20e",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py",
+      "sha256": "bba25f7c9639c9c995f8fa950b85f0eea43e98359d2b3f295a8e2aea73684c09",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent-check.json",
+      "sha256": "d2e3aca076eb8cccc315dbf9716adbaba762f15a3f4fc58868d5090f75dd6b35",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py",
+      "sha256": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py",
+      "sha256": "84e62031fd46bca6b28356df262ab498df65b579f96a29a2333515c59ba27d5d",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/results.json",
+      "sha256": "7106ef4c49504ff0d1ba86c127abc4d8c207097810477a269043ff39947d9173",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py",
+      "sha256": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "sha256": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/independent-check.json",
+      "sha256": "32114a9195d58bb3989bf2afff27c4e87ef0adb3c4a51587d5515ae72d8da96c",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/independent_check.py",
+      "sha256": "61c27c153b5158ba7dabe0eea6c5680a33ab692a2167d64a3defc6a9ccb239ad",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json",
+      "sha256": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+      "matches": true
+    },
+    {
+      "file": "experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "sha256": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+      "matches": true
+    },
+    {
+      "file": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py",
+      "sha256": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+      "matches": true
+    },
+    {
+      "file": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py",
+      "sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+      "matches": true
+    },
+    {
+      "file": "experiments/shared-renewal-capability/regulation/retention/model.py",
+      "sha256": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+      "matches": true
+    }
+  ],
+  "primary_package_files": [
+    {
+      "file": "README.md",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "metadata/provenance.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "original/beran-smith-2011-figure3.jpg",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "original/beran-smith-2011.html",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "reading/beran-smith-2011.txt",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "verification.json",
+      "hash_matches": true,
+      "size_matches": true
+    }
+  ],
+  "canonical_insertions": [
+    {
+      "file": "RESEARCH.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "sources/SOURCES.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "inserted_text_present": true
+    }
+  ],
+  "local_links": [
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#acquired-methods-can-change-actual-inquiry",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "INQUIRY-INTERFACE-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "INQUIRY-INTERFACE-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "INQUIRY-INTERFACE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "development/inquiry-interface/INQUIRY-EVIDENCE.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "40-inquiry-interface-2026-10-06/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "METHOD-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "INQUIRY-INTERFACE-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "INQUIRY-INTERFACE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "INQUIRY-INTERFACE-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "INQUIRY-INTERFACE-CANONICAL-EDITS.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "target": "INQUIRY-INTERFACE-CHECKS.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "APPLICATION-REVISION-RECONSTRUCTION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../sources/40-inquiry-interface-2026-10-06/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../sources/40-inquiry-interface-2026-10-06/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "APPLICATION-REVISION-RECONSTRUCTION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "development/inquiry-interface/extract_inquiry_evidence.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "target": "development/inquiry-interface/INQUIRY-EVIDENCE.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "IMMANENT-MATHEMATICAL-IDENTITY-MATH.md#corollary-i2a--strict-refinement-cannot-be-recovered-from-the-old-class-alone",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "INQUIRY-INTERFACE-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "INQUIRY-INTERFACE-ARGUMENT.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "INQUIRY-INTERFACE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+      "target": "../../../../sources/40-inquiry-interface-2026-10-06/manifest.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "original/beran-smith-2011.html",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "original/beran-smith-2011-figure3.jpg",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "reading/beran-smith-2011.txt",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "metadata/provenance.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "verification.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "manifest.json",
+      "exists": true,
+      "fragment_ok": true
+    }
+  ],
+  "local_link_count": 70,
+  "note_sha256": {
+    "INQUIRY-INTERFACE-ARGUMENT.md": "56382d847f721ae3915ea8aafe70ccb3def4c3a1cbe08b6982d327a5630fa3fa",
+    "INQUIRY-INTERFACE-COMPARATORS.md": "ab2e26e8a1e78f54e768e87b4aeb8cbe356bb11b7186d0dd6fa334e50a64f301",
+    "INQUIRY-INTERFACE-MECHANISM.md": "976082b3a24af44a91e44e5353a9bfadd4fa6bdb59f341deab47f563be76e836",
+    "INQUIRY-INTERFACE-REVIEW.md": "7736c7c7a608018fd5749364a644f76a69010d78050d36ea89baaf7f65391eba"
+  },
+  "source_manifest_sha256": "8cefb33da6d2665a717115a9c09f99e4f7b3ee3d4007c165e7fe34031eede304",
+  "checker_sha256": "806b9ff9fdc630dbffb11c9a83ec3be59244eb83c80ab2cfaec9ee5fe4e6e8a8"
+}

@@ -157,3 +157,13 @@ The [integration and remaining derivation](../../../../../../../_process/researc
 connect this finite result to the common roadmap, with the separate
 [internal review](../../../../../../../_process/research/2026-10-05-concern-theory/RECORDING-FIDELITY-REVIEW.md)
 retaining its acceptance scope.
+
+## Continuing dependency before its acquisition
+
+The separate [continuing-dependency analysis](continuing-dependency/README.md)
+characterizes native reconstruction requirements while preserving this recorder's
+original results. Equal present restoration and aggregate energy can leave
+different future repair capacity under the original material law. That study
+identifies what a future record/action connection must preserve; it does not
+import this recorder's replenishment kernel, install new memory or claim the
+native dependency has already been learned.

@@ -1,0 +1,6 @@
+'Generative.Deeper.symmetry_candidate_of_step_description' does not depend on any axioms
+'Generative.Deeper.total_deterministic_renaming_descriptions' does not depend on any axioms
+'Generative.Deeper.total_deterministic_renaming_iff_descriptions' does not depend on any axioms
+'Generative.Deeper.symmetry_candidate_iff_descriptions' does not depend on any axioms
+'Generative.Deeper.symmetry_candidate_iff_reduced_properties' does not depend on any axioms
+'Generative.Deeper.static_toggle_descriptions_exclusive' does not depend on any axioms

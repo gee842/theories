@@ -1,0 +1,23 @@
+# Acquired discriminator and its subsequent use
+
+6 October 2026. Prospective bounded causal study, written before execution. AI-authored under the [nondual method](../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). It tests an operative distinction already implemented by the ancestor's standard observation-table learner. No ancestor source is edited and no new native stopping controller is proposed.
+
+## Fixed target, contract and comparisons
+
+Use the unchanged binary target from [the ancestor check](../check.py): alphabet `(a,b)`, outputs `(0,0,1)`, and transitions `((1,0),(2,0),(0,0))`, initial state0. Preserve source20, declared bound3, all tariffs, reset/observation laws, table algorithm, all-word bounded certificate and novel-use routine. The criterion remains exact prediction of all action words within the supplied stable bounded class; it is not reduced to one next observation.
+
+1. Repeat only the original binary36-fuel/256-cell case and compare every returned ancestor field against its saved result. Preserve its incomplete acquisition, not reinterpret it as a success.
+2. Use fuel10000/capacity4096, the ancestor's separately declared mathematical-assay provision, on the same binary target. This is a new supplemental assay, not a continuation with inherited36 or an added return in its old history. Run acquisition, retention and native novel use. An instrumented subclass records a deep checkpoint immediately after the first acquired distinguishing suffix is written, without charging, selecting actions or changing learner inputs. Its complete returned result must equal the ordinary uninstrumented ancestor run exactly.
+3. From independent copies of that saved post-write checkpoint, execute only the first next `table()` call. The ordinary copy reads the acquired suffix set. The masked copy retains the new suffix, actual physical storage, prior charges, S, cache, plant state and all other checkpoint fields, but its table reader uses the pre-write E view. This is an explicitly external causal intervention, not a permitted endogenous event and not a second completed acquisition. Stop both probes after this one table call.
+
+The masked reader enumerates the same history set T and uses old E for its row columns, concatenated query requests, table workspace and the corresponding declared work envelopes. The actual stored E remains new, and `cells()` continues to count it in retained storage and later answer writes. No old write is refunded. Subsequent resource trajectories need not match: table computations and native queries can differ after the matched checkpoint. These are separate experimental counterfactual copies, not two spends from one real account.
+
+## Acceptance and interpretive boundary
+
+- Check identical post-write snapshots before the probe, including target phase, query log, retained descriptors/cache, fuel, live/workspace/peak cells and prior events; assert that a bound native query callback and learner share the same copied meter.
+- Identify the actual acquired mismatch, the separating cached observations and the newly written suffix. The original decisive evidence is `a→0` versus `aa→1`; a subsequent `ba` query may use that acquired context without being its original discovery.
+- Report fresh native query words, returned row columns/values, operation logs and residual resources for both first-table probes. Identify the precise suffix-dependent request rather than claim a larger primitive action repertoire. The eventual all-word certificate can ask the same word independently; this test concerns its generated role and timing.
+- For the completed supplemental ordinary run, check the original certificate, retention and native-use result. Use an external finite product comparison of target/model tables to check all-word equivalence and distinguish that external audit from learner input.
+- Bind the original source, earlier result, this protocol and study script. Preserve unique failed execution attempts if repair is necessary; do not broaden the sweep.
+
+This is a causal probe of acquired discriminator use, a standard active-automata-learning mechanism. It does not establish mathematical novelty, learned state bounds, a revised all-future contract, independently warranted inquiry, ethics or the no-assumptions foundation. The original false-bound, broken-reset, inverted-sensor and resource failures remain in [the original results](../results.json). The concurrent [inquiry-revision extension](../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md) separately changes an actual encounter limit; its runtime and formal acceptance retain their own scope.

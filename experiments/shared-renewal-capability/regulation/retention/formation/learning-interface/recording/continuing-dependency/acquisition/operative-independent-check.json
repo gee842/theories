@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "scope": "Six admitted native histories, rational propensities and guard inspection; no stochastic typicality or new law",
+  "producer_imported": false,
+  "native_process_imported": false,
+  "independent_helpers": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent_check.py": "c9ff5611ac3248b02db951bb2edcf7bf23e77d559f6e7da438c67047791a9250"
+  },
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py": "4daecb9934d195f1c638e3b26dddd72143b05a9edfa6cfc789244851650bde5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md": "b0e70c98fc922950ddefeb7549d142e6fcc890526474a9f36c0f74a036a5bde5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/model.py": "3d68e40ae687d2a27544b9a6f68050baa545100f0ff8f2ca59086f405c5c847c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md": "8839625aeb6df53a54a54a9cf23b3a917880a56464ed2ab668fdf81debe33ddb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_response.py": "a5c22759c03cd5c5caecef5d1437eda309148e862293812fae1d36db2e67a2d0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md": "4c72373d9f7e1c1154dcc4b37b716c5e7fc13be1cb208d513357829b358bb30e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/results.json": "18de3f7e66394d42443dea66db11e00a4d063393f2ed4891128e8f3fd0b96a93",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent-check.json": "98758832426bd1324584c20131fea9d25f1b6d3318912a619e2df8416bdaaf5f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9"
+  },
+  "producer_bound_files": 20,
+  "unique_bound_inputs_including_helpers": 21,
+  "checker_sha256": "bbe629da4557a86523153d9f082a8850d118d4fbef21a4fd2dde9f1e98c23703",
+  "result_sha256": "6d3ee8ba419f66f09051f676ee7c31397e94d2bc771e220003bf7da32b2b2be9",
+  "counts": {
+    "cases": 6,
+    "shared_prefix_events": 115,
+    "suffix_native_events": 449,
+    "stored_event_occurrences": 564
+  },
+  "observation_tables": 455,
+  "rational_propensity_tables": 455,
+  "apparatus_guard_tables": 455,
+  "declared_guards_per_table": 11,
+  "global_material": 78,
+  "occupied_apparatus_parts": 6,
+  "effective_native_material": 72,
+  "prefix_reuse": "Reconstructs94nativeevents and21existing acquisition events with two bound independent helpers; does not run earlier20-case sweep",
+  "installed_closure_scope": "Source/induction for successful admitted operations: structural guards exclude every apparatus change and native steps preserve apparatus; finite replay checks six installed states only",
+  "invalid_helpers_invoked": false,
+  "outputs": [
+    {
+      "case": "a_vacancy",
+      "final_plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        290,
+        216
+      ],
+      "spent": 84
+    },
+    {
+      "case": "h_vacancy",
+      "final_plant": [
+        36,
+        35,
+        1,
+        1,
+        0,
+        290,
+        216
+      ],
+      "spent": 84
+    },
+    {
+      "case": "source_present_repair",
+      "final_plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        289,
+        216
+      ],
+      "spent": 85
+    },
+    {
+      "case": "store_response",
+      "final_plant": [
+        35,
+        36,
+        1,
+        1,
+        1,
+        290,
+        215
+      ],
+      "spent": 84
+    },
+    {
+      "case": "source_depleted_repair",
+      "final_plant": [
+        35,
+        36,
+        1,
+        1,
+        0,
+        289,
+        0
+      ],
+      "spent": 301
+    },
+    {
+      "case": "installed_continuation",
+      "final_plant": [
+        36,
+        35,
+        1,
+        1,
+        0,
+        280,
+        214
+      ],
+      "spent": 96
+    }
+  ],
+  "conserved_original_energy_including_spent": 590
+}

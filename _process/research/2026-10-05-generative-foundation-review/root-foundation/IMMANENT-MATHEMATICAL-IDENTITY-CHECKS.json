@@ -1,0 +1,23 @@
+{
+  "scope": "new documents and exact owned insertions; no old scientific rerun",
+  "documents_or_owned_sections": 14,
+  "local_links": 58,
+  "anchors": 4,
+  "math_delimiters": "balanced",
+  "finite_processes": 33100,
+  "finite_interface_comparisons": 99300,
+  "inherited_formation_result_sha256": "2b0afb08f3507eaf2de3126dcc43a3dca8dd65ff6603658ee8aae697e42263e4",
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md": "a040cf7c9cba33242b831074a55b584f5989832a3489bc7fa18ccc7b6ad70b6b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md": "70889ab4e4dc1db6f5f32c23f75125dea7cfafe664a74ebfed5224441f3fac6e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md": "e484552b4af70cc8d49ba51382c6c2e38026703225a916635f51cf8f85880d63",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-SOURCES.md": "1633caba48b140608dd9c709c5c790f258c70017d67c53c7d7d4cb74ae341435",
+    "sources/15-codex-theory-conversations/2026-10-06-mathematical-identity-nondual-continuation.md": "dc6d668e7fd9d1946d21d336b65aa11eb2fdeed6d61af07c480c6fd91360602d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/identity/README.md": "d7a42b3139c1ae68204d37e4e0789c2dc9c287a0c01c239233c26b84204439c2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/identity/PROTOCOL.md": "0ced9a25b85596434898ceeb8003374ff137ddb8ea84b354dd1657c2445202ef",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-INDEX-EDITS.json": "6e58f232a34349bd7d1efdde7047f09725dbf5d1d9d6b165068998df33d821bd",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/identity/results.json": "f78a38b45a8a774bf66cdcc86f0a77c7c722609d676c9fa8526c1e3038778633",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/identity/check.py": "5d9221b4cd783a3a2b8fa869593125f9206c42625c16974f63f9e380287e24b0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-CHECK.py": "8b919e65b93f29ed3fe1dc31b9a37b3e9efd2c1875d449640d8ab2cf1a533110"
+  }
+}

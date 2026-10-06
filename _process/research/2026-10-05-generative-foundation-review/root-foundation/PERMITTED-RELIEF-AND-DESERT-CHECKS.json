@@ -1,0 +1,393 @@
+{
+  "scope": "New philosophical notes, source README, exact recorded insertions and preserved bytes; no scientific or Lean verification in this round.",
+  "passed": true,
+  "links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "target": "MINIMUM-GROUNDING-CONTINUATION.md#3-the-next-discriminating-ethical-test",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md#4-a-discriminating-case-must-preserve-the-contested-interval",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "target": "MERCY-AUTHORITY-AND-MOTIVE.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md#7-evidence-for-the-goal-and-the-next-connection",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "target": "PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "target": "PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "target": "../../../../sources/37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/README.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "MERCY-AUTHORITY-AND-MOTIVE.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "CORE-TREE-NONDUAL-REORIENTATION.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-CHECKS.json",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "check_permitted_relief.py",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-EDITS.json",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "target": "development/PERMITTED-RELIEF-AND-DESERT-BEFORE.json",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MERCY-AUTHORITY-AND-MOTIVE.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MERCY-AUTHORITY-AND-MOTIVE.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MERCY-AUTHORITY-AND-MOTIVE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/README.md",
+      "target": "kagan-2005-geometry-of-desert-lindley-lecture.pdf",
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/README.md",
+      "target": "hurka-2003-desert-individualistic-and-holistic-author-manuscript.pdf",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#the-next-decisive-connection",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md#relief-of-a-burden-claimed-as-deserved",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md#relief-of-a-burden-claimed-as-deserved",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "MERCY-AUTHORITY-AND-MOTIVE.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/README.md",
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/MERCY-AUTHORITY-AND-MOTIVE.md",
+      "passed": true
+    }
+  ],
+  "preservation": [
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIVERSAL-ETHICAL-MINIMUM-BEFORE-PERMITTED-RELIEF.md",
+      "sha256": "81edb2b4a8a5f1b5bdbad80693c411a25778b5f67fbf98ec469a2e81b0dfa804",
+      "passed": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-PERMITTED-RELIEF.md",
+      "sha256": "06e95c01a68e3efbc03453d3e055f0b4d168db011c04a1daf5ac8883db168392",
+      "passed": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/GENERATIVE-GROUNDING-BEFORE-PERMITTED-RELIEF.md",
+      "sha256": "d548e34b88bd57c6354a27b9237200ec67de4eed84c2f2181216333d44db4548",
+      "passed": true
+    },
+    {
+      "file": "sources/37-ethical-minimum-primary-2026-10-06/mcmahan-2021-suffering-and-moral-status-author-hosted.pdf",
+      "sha256": "12a05b6373369b04159e787db0af78ccaedf98eedb670e443a83608db9ab37eb",
+      "bytes": 268501,
+      "passed": true
+    },
+    {
+      "file": "sources/37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/kagan-2005-geometry-of-desert-lindley-lecture.pdf",
+      "sha256": "ded574b6b256a3e57bf82a678d99ad2a17a2045abec6cb46d9fdb5338084ebf4",
+      "bytes": 1405258,
+      "passed": true
+    },
+    {
+      "file": "sources/37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/hurka-2003-desert-individualistic-and-holistic-author-manuscript.pdf",
+      "sha256": "234071bb57d5099616c2f346e29996ee9b44c9d48ed4db6b3712ca064c74c8c4",
+      "bytes": 146892,
+      "passed": true
+    }
+  ],
+  "scoped_edits_recoverable": true,
+  "current_files": [
+    {
+      "file": "RESEARCH.md",
+      "sha256": "8113fbbfd75df3a85a855498f557d270e2e295d2a1784fe00751c32641d1aaf6"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MERCY-AUTHORITY-AND-MOTIVE.md",
+      "sha256": "6d52d38817a984ee64c3253d3761c8d8f9d0517e9c9647c33dbd265d5ead04f2"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+      "sha256": "7d562db1835f3ced6b26254212f48b0ae82cd8e22846723322a33a6bc2622ac0"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+      "sha256": "e8dc0c7a61f73098a0e936609223f332a2d321af0d78e8c2b88b4f503733acd0"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "sha256": "a5cc5133d80541393c0d11930ce9cf77c6b81d840db3b3ad4cab909908d8a3a7"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+      "sha256": "156473aefd3640d59affac80755647b79bb777fd3106b804bc9b1d0c6613ecb5"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "f99834c07502c7e780a23c33f01931a6821371d5c75b50dd0dceeb73d916741b"
+    },
+    {
+      "file": "sources/37-ethical-minimum-primary-2026-10-06/permitted-relief-and-desert/README.md",
+      "sha256": "ba1a80e856274bc4086cfae092bd764843c1ea8cf3e7ca5fd606a3f1b9117fb4"
+    },
+    {
+      "file": "sources/SOURCES.md",
+      "sha256": "526e5a09ab20435170d0965a4977806426403a132b72cc8ca9a030f334c0c232"
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "22750a890edffa45a7981d620176d3609ba230913fd00fb3bfb394964d494334"
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sha256": "bf2af909a25243a741c398d8f91b7d77f0459f6f6748ddca9575f3436837bfe2"
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "509174f73f7a8b04b07dfe1b0c54762f5b147e17053c38209e12ea2da994ef19"
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "sha256": "1270ff7c13c0d37f31e8e099ab1e363836f177ff074232010e1b3c36ab3ca1c9"
+    }
+  ],
+  "internal_review": {
+    "scope": "Internal AI argument and source checks, not external peer review or validation of ethical truth.",
+    "reciprocal_note_review": "Passed; exact deserved interval, independently granted permission, contextual remission and prospective patient-ground distinctions retained.",
+    "final_source_and_canonical_review": "Passed after correcting the competing older next-step priority to a retained local question and clarifying that waiver alone does not establish the target example. Mechanical checks do not certify argument truth.",
+    "parent_primary_check": "Parent checked selected Zaibert passages and full Isserow main argument; source contributor independently checked Isserow sections 2–5. Kagan and Hurka readings remain at the recorded delegated scopes."
+  },
+  "errors": []
+}

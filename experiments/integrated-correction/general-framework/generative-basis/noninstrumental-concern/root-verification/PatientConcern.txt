@@ -1,0 +1,32 @@
+'NoninstrumentalConcern.get_put_same' does not depend on any axioms
+'NoninstrumentalConcern.get_put_other' depends on axioms: [propext]
+'NoninstrumentalConcern.runnable_trace' depends on axioms: [propext]
+'NoninstrumentalConcern.step_exact_payment' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.account_law' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.trace_exact_payment' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.insufficient_total_cost' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.read_actual_packet' does not depend on any axioms
+'NoninstrumentalConcern.read_packet_current' does not depend on any axioms
+'NoninstrumentalConcern.unknown_blocks_selection' depends on axioms: [propext]
+'NoninstrumentalConcern.select_retains_acquired_packet' does not depend on any axioms
+'NoninstrumentalConcern.action_has_current_authorization' depends on axioms: [propext]
+'NoninstrumentalConcern.action_reduces_same_patient' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.action_preserves_other_patient' depends on axioms: [propext]
+'NoninstrumentalConcern.action_retires_packet' depends on axioms: [propext]
+'NoninstrumentalConcern.means_stales_same_patient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NoninstrumentalConcern.episode_stales_same_patient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NoninstrumentalConcern.permission_preserves_factual_packet' does not depend on any axioms
+'NoninstrumentalConcern.permission_retires_authorization' does not depend on any axioms
+'NoninstrumentalConcern.permission_toggle_does_not_revive' does not depend on any axioms
+'NoninstrumentalConcern.refusal_preserves_patient' does not depend on any axioms
+'NoninstrumentalConcern.service_plan_cost' depends on axioms: [propext]
+'NoninstrumentalConcern.ready_for_exact_packet' depends on axioms: [propext]
+'NoninstrumentalConcern.selected_service_runnable' depends on axioms: [propext]
+'NoninstrumentalConcern.evidence_service_runnable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NoninstrumentalConcern.carrier_service_runnable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NoninstrumentalConcern.absent_carrier_service_runnable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NoninstrumentalConcern.eligible_has_actual_service_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NoninstrumentalConcern.paid_read_keeps_service_available' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.paid_selection_keeps_service_available' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.eligible_service_delivers_to_same_episode' depends on axioms: [propext]
+'NoninstrumentalConcern.eligible_service_is_paid' depends on axioms: [propext, Classical.choice, Quot.sound]

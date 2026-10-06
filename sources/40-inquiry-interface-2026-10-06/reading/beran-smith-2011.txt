@@ -1,0 +1,430 @@
+Information Seeking by Rhesus Monkeys (Macaca mulatta) and Capuchin Monkeys (Cebus apella) - PMC
+Skip to main content
+An official website of the United States government
+Here's how you know
+Here's how you know
+Official websites use .gov
+A
+.gov website belongs to an official
+government organization in the United States.
+Secure .gov websites use HTTPS
+A lock (
+Lock
+Locked padlock icon
+) or https:// means you've safely
+connected to the .gov website. Share sensitive
+information only on official, secure websites.
+Search
+Log in
+Dashboard
+Publications
+Account settings
+Log out
+Search…
+Search NCBI
+Primary site navigation
+Search
+Logged in as:
+Dashboard
+Publications
+Account settings
+Log in
+Search PMC Full-Text Archive
+Search in PMC
+Journal List
+User Guide
+PERMALINK
+Copy
+As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+the contents by NLM or the National Institutes of Health.
+Learn more:
+PMC Disclaimer
+|
+PMC Copyright Notice
+Cognition. Author manuscript; available in PMC: 2012 Jul 1.
+Published in final edited form as: Cognition. 2011 Apr 2;120(1):90–105. doi: 10.1016/j.cognition.2011.02.016
+Search in PMC
+Search in PubMed
+View in NLM Catalog
+Add to search
+Information Seeking by Rhesus Monkeys (Macaca mulatta) and Capuchin Monkeys (Cebus apella)
+Michael J Beran
+Michael J Beran
+1Language Research Center, Georgia State University
+Find articles by Michael J Beran
+1, J David Smith
+J David Smith
+2University at Buffalo, The State University of New York
+Find articles by J David Smith
+2
+Author information
+Article notes
+Copyright and License information
+1Language Research Center, Georgia State University
+2University at Buffalo, The State University of New York
+✉
+Correspondence concerning this article should be addressed to Michael J. Beran, Language Research Center, Georgia State University, University Plaza, Atlanta, GA 30302. mjberan@yahoo.com
+Issue date 2011 Jul.
+© 2011 Elsevier B.V. All rights reserved.
+PMC Copyright notice
+PMCID: PMC3095768 NIHMSID: NIHMS286243 PMID: 21459372
+The publisher's version of this article is available at Cognition
+This article has been corrected. See the correction in volume 122 on page 264.
+Abstract
+Animal metacognition is an active, growing research area, and one part of metacognition is flexible information-seeking behavior. In Roberts et al. (2009), pigeons failed an intuitive information-seeking task. They basically refused, despite multiple fostering experiments, to view a sample image before attempting to find its match. Roberts et al. concluded that pigeons’ lack of an information-seeking capacity reflected their broader lack of metacognition. We report a striking species contrast to pigeons. Eight rhesus macaques and seven capuchin monkeys passed the Roberts et al. test of information seeking—often in their first testing session. Members of both primate species appreciated immediately the lack of information signaled by an occluded sample, and the need for an information-seeking response to manage the situation. In subsequent testing, macaques demonstrated flexible/varied forms of information management. Capuchins did not. The research findings bear on the phylogenetic distribution of metacognition across the vertebrates, and on the underlying psychological requirements for metacognitive and information-seeking performances.
+Keywords: information seeking, primate cognition, metacognition, comparative cognition, monkeys
+Human decision-making is often guided by our certainty or uncertainty about the accuracy of our own thought processes. We know when we do not have enough information to make an informed decision. We recognize that sometimes the right choice is not to choose, and we ask for further information instead. Humans’ abilities to assess confidence and to manage uncertainty adaptively are collectively called metacognition. Metacognition can be informally defined as “thinking about thinking,” but it also refers to the monitoring of other, more basic “first-order” cognitive processes such as the processes of perceiving and remembering (Flavell, 1979). Whenever humans reflect on what they know, monitor their thought processes, judge their confidence, or seek additional information, they demonstrate their metacognitive abilities (Benjamin, Bjork, & Schwartz, 1998; Dunlosky & Bjork, 2008; Flavell, 1979; Koriat, 1993; Metcalfe & Shimamura, 1994; Nelson, 1992; Schwartz, 1994; Serra & Dunlosky, 2005).
+Metacognition is a highly sophisticated aspect of human cognition, intricately linked as it is to important aspects of mind, including cognitive control, self-awareness, and consciousness. Thus, it is an important question whether we share our capacity for metacognition with nonhuman animals (hereafter, animals). Evidence of such a shared capacity might bear on animals’ self-awareness and consciousness, too, and it would also indicate the evolutionary foundations of metacognition in our own species. Not surprisingly, therefore, numerous research teams have explored this issue empirically (Beran, Smith, Redford, & Washburn, 2006; Call & Carpenter, 2001; Foote & Crystal, 2007; Hampton, 2001; Inman & Shettleworth, 1999; Kornell, Son, & Terrace, 2007; Smith, Shields, & Washburn, 2003; Sutton & Shettleworth, 2008; Washburn, Smith, & Shields, 2006).
+One basic empirical approach has explored animals’ capacity for uncertainty monitoring—that is, their ability to prospectively evaluate the difficulty and error potential of trials and to decline to complete those difficult trials selectively. In these tasks, a trial-decline or uncertainty response serves as an additional alternative to other primary discrimination responses that animals also have been trained to use. The primary tasks themselves can take many forms as long as there are trials that vary from easy to difficult—the latter are critical for possibly stirring up doubt and uncertainty in animals’ minds that animals may or may not manage adaptively. To date, the uncertainty response has been included in tests of psychophysical discrimination in the visual, auditory, and temporal domains (Foote & Crystal, 2007; Smith, Beran, Redford, & Washburn, 2006; Smith, Schull, Strote, McGee, Egnor, & Erb, 1995; Smith, Shields, Schull, & Washburn, 1997), in tests of list memory, item memory, and spatial memory (Hampton, 2001; Smith, Shields, Allendoerfer, & Washburn, 1998; Suda-King, 2008), in tests of two-choice discrimination learning (Washburn et al., 2006), and in tasks involving judgments of quantity (Beran et al., 2006) and judgments of sameness and difference (Shields, Smith, & Washburn, 1997).
+Another basic empirical approach has explored animals’ capacity to assess their states of knowledge and to seek information adaptively when the store of information cannot support optimal responding. For example, Call and Carpenter (2001) assessed chimpanzees’ and orangutans’ knowledge about food-concealment events they had or had not seen. They asked whether the apes would seek more information when it was needed. The apes were presented with tubes into which they could reach and obtain any hidden food items that were located in the tubes. Sometimes, animals had seen the placing of the food bait, and they could know where it was even though it was hidden from sight. At other times, when animals had not seen the hiding event, they could not know without collecting further information. In the latter case, the apes made an additional visual inspection—looking into the tubes before reaching to glean the information necessary to take the bait. Hampton, Zivin, and Murray (2004) tested rhesus macaques (Macaca mulatta) in the Call and Carpenter (2001) paradigm. Macaques also looked for hidden foods before reaching on trials for which they had not seen the hiding event, whereas they reached immediately when they had seen the hiding event. In contrast, dogs showed only minimal information-seeking behavior as they would attend to the pointing of humans, but they would not position themselves to see where food was hidden (McMahon, Macpherson, & Roberts, 2010).
+Basile, Hampton, Suomi, and Murray (2009) presented the food-concealment paradigm to capuchin monkeys (Cebus apella) but found limited evidence of adaptive information-seeking behaviors. In one experiment, only one of five capuchins searched before reaching more often on trials where the hiding event was unseen compared to when it was seen. With additional training, a few more capuchins succeeded, but when the effort to search was increased no capuchins showed the adaptive pattern. The cause of this difference between macaques and capuchins remains unknown, although there are a number of potential causes including social behavior patterns or natural foraging patterns, or even more basic differences involving inhibition. This species difference between macaques and capuchins is evaluated in the present research.
+A third empirical approach evaluates animals’ capacity for metamemory. Pronounced species differences are also found in these paradigms. For example, Hampton (2001) trained rhesus monkeys to remember visual stimuli and then match them using a matching-to-sample test. The delay between the study and test phases was lengthened on some trials to weaken memory through decay and so increase trial difficulty. On some trials, the monkeys were given the choice to opt out of the memory test or accept it, whereas on other trials they had to take the memory test. Monkeys were more likely to decline tests after long delays than after short ones. Moreover, they were more accurate in their primary memory performance when they chose to accept the memory test than when they were forced to complete it. This is consistent with the possibility that macaques were accepting memory trials selectively when they monitored a felicitous metacognitive signal.
+Inman and Shettleworth (1999) presented this same metamemory paradigm to pigeons. In contrast to macaques, pigeons showed almost no evidence that they were using the strength of their internal memories as a discriminative cue in accepting or declining trials. Indeed, the pigeons may simply have learned that the matching task was more rewarding to complete when the delay interval was short. Shedding further light on this issue, Sutton and Shettleworth (2008) also found using multiple tasks and multiple paradigms that pigeons were not able to make uncertainty responses in ways that varied inversely with matching accuracy or directly with trial difficulty. Additionally, pigeons failed to make appropriate retrospective confidence ratings following completion of the matching component, unlike the appropriate confidence wagering shown by macaques (e.g., Kornell et al., 2007; Shields, Smith, Guttmannova, & Washburn, 2005). Recently, there has been some evidence that pigeons can learn to avoid more difficult stimuli in a memory test, and performance on chosen tests exceeded that of forced tests. However, the effects were not as strong or as consistent as the data from studies with rhesus monkeys (Adams & Santi, in press). This species difference between macaques and pigeons is explored further in the present research.
+One of the newest paradigms involves information-seeking behaviors during matching-to-sample trials. Roberts, Feeney, McMillan, MacPherson, Musolino, and Petter (2009) reported that pigeons would not selectively ask for the information they needed to correctly complete automated matching trials. After being trained that two cues provided separate components to a matching trial (one led to presentation of the sample, the other to the presentation of the comparison stimuli), pigeons were given a matching-to-sample test in which they chose between cues that showed them the sample stimulus or allowed them to move directly to the response phase where they could pick a match choice. The optimal response in this situation was to choose to see the sample first, and then to observe the comparison stimuli, because taking the test without seeing the sample would lead to near-chance performance. Pigeons did not spontaneously choose to “study” for the test by illuminating the sample before making a matching response, although with training their performance improved slowly. Instead, they preferred to move directly to observing the comparison stimuli. This suggests that pigeons struggle to determine what information is needed, and it resonates with other findings that have pointed to pigeons’ inability to express any metacognitive performance pattern (e.g., Sutton & Shettleworth, 2008). The procedure of Roberts et al. is itself very appealing because its information-seeking component (illuminating the sample before matching to avoid random guessing) can be given to any species already trained in a matching to sample paradigm.
+In Experiment 1, we gave the Roberts et al. (2009) task to rhesus macaques. We predicted that they would show the performance pattern that pigeons did not show. That is, we predicted that macaques would choose at very high levels to see the sample before confronting their match choices. This demonstration would add an important data point to the developing theme in this area that some nonhuman primates, but not pigeons, can produce behavioral patterns that may reflect a metacognitive capacity.
+In Experiment 2, we extended the matching-to-sample paradigm to create additional kinds of informational contexts that needed to be managed with different information-seeking behaviors. Now, sometimes the sample was already visible, or the comparison stimuli were visible but not the sample, or both were visible and animals could simply complete the matching task, or neither was visible and both had to be illuminated before matching could occur. These four conditions generated four unique optimal response patterns involving the different information-seeking responses available to the animal. We asked whether macaques could assess, on a trial-by-trial basis, the information needed for an appropriate response as compared to the information available, and then use that discrepancy to guide adaptive responding. If so, this would reflect a sophisticated capacity for information monitoring and information seeking behavior in nonhuman animals.
+Finally, in Experiment 3, we tested capuchin monkeys in the same range of informational conditions to investigate another developing theme in this area—that is, the theme that Old World monkeys (e.g., genus Macaca) but not New World monkeys (e.g., genus Cebus) robustly express a metacognitive capacity. Thus, we predicted that macaques would manage the flow of information, and the collection of necessary information, more optimally and adaptively than capuchins. If so, this would extend the growing evidence that there are significant cross-species differences in the expression of various behaviors that may be reflective of metacognitive capacities.
+Experiment 1
+Methods
+Participants
+We tested eight adult male rhesus macaques (Macaca mulatta) (see Table 1 for ages). The macaques had previously been trained to use a joystick with their hands to control a cursor on the computer screen (see Richardson, Washburn, Hopkins, Savage-Rumbaugh, & Rumbaugh, 1990; Washburn & Rumbaugh, 1992). They all had participated in numerous previous computerized experiments (e.g., Beran, 2007, 2008; Beran et al., 2008). The macaques had continuous access to water, and worked for fruit flavored primate pellets. They also received a daily diet of fruits and vegetables independent of the amount of work they completed on the task, and thus they were not food deprived for the purposes of this experiment.
+Table 1.
+Sessions required to complete each phase by each monkey
+Sex
+Age
+Phase 1
+Phase 2
+Phase 3
+Phase 4
+Macaques
+Murph
+M
+16
+1
+1
+1
+5*
+Lou
+M
+16
+1*
+1
+1
+1
+Willie
+M
+24
+1*
+4
+1
+5*
+Hank
+M
+26
+1
+4
+5*
+Chewie
+M
+10
+1
+1
+5*
+Han
+M
+10
+1
+5
+1
+1
+Luke
+M
+7
+1*
+2
+1
+2
+Obi
+M
+6
+1
+1
+2
+1
+Capuchins
+Drella
+M
+19
+4
+5*
+Griffin
+M
+15
+1
+1
+5*
+Liam
+M
+5
+1
+4
+1
+5*
+Lily
+F
+11
+1
+5*
+Logan
+M
+4
+1
+1
+2
+5*
+Nala
+F
+6
+5
+5*
+Wren
+F
+6
+1
+1
+5
+5*
+Open in a new tab
+Note: the *indicates that a monkey did not show optimal responding to all trial types during that phase.
+Apparatus
+Trials were presented on a Compaq DeskPro with an attached 17-inch color monitor. Joystick responses were made with a Gravis GamePad Pro digital joystick mounted vertically to the cage. The test program was written in Visual Basic. Food rewards for correct responses were automatically dispensed by the computer as single 94 mg Bio-Serv food pellets through a dispenser connected to the test cage. Consistent auditory feedback accompanied correct responses. Incorrect responses received a trial-less 20 s timeout period with associated auditory feedback.
+Design and procedure
+Macaques were tested individually in their home cage for a single test session. Their goal for the task was to match a sample stimulus to one of three comparison stimuli that was an identical match to that sample. Sample stimuli and comparison stimuli were drawn randomly on each trial from a set of approximately 500 clip art images. The sample image, when present, was at the top center of the screen, and the comparison stimuli were located along the bottom of the screen (Figure 1). Moving the cursor into contact with the correct (matching) comparison stimulus led to the delivery of a food pellet and a melodic tone. Moving the cursor into contact with an incorrect (non-matching) comparison stimulus led to a buzz tone and a 20 s timeout period during which the screen remained blank.
+Figure 1.
+Open in a new tab
+The task from Experiment 1. Monkeys initially were presented with only a covered sample (gray square at top center) and the two information-revealing response options (rectangles at left and right in Panels A and B). The left rectangle (Panel A)—the Reveal Sample response option—disappeared when contacted by the cursor (the dot at center of screen) and revealed the sample image as shown at top right. The right rectangle (panel B)—the Reveal Comparisons response option—disappeared when contacted by the cursor, cleared the screen for 1 s as shown at bottom left, and then revealed the comparison stimuli as shown at bottom right. With the comparison stimuli revealed, the monkey chose one, with the goal to match the sample that had been shown.
+Also sometimes present on the screen were two additional response options displayed as screen icons in the middle-left and middle-right positions. At middle left was an orange, cross-hatched rectangle that operated to remove an opaque barrier that sometimes occluded the image of the sample stimulus. This response option will henceforth be called the Reveal Sample response. At middle right was a blue, cross-hatched rectangle that operated to present the three comparison stimuli (when they were not already present on the screen). This response option will henceforth be called the Reveal Comparisons response. Macaques could move the cursor into contact with these rectangles at any time during a trial to produce their described outcomes on the screen. It should be noted that all of these stimuli were fixed in the same locations across trials, providing some consistency to the methods used by Roberts et al. (2009) with regard to fixed response locations. Of course, there were differences as the monkeys used joysticks to move a cursor on screen, but we did provide spatial consistency across trials.
+Each macaque completed 60 training trials to begin the single test session that was given. On these trials, the sample image was occluded by a grey opaque rectangle on the screen, and the Reveal Sample response was available as the only response option given to the subject (Figure 1A). When it was contacted, the occluder was removed, the Reveal Sample response was removed, and the sample stimulus was revealed. At the same time, the Reveal Comparisons response was presented (Figure 1B), and it could be chosen (i.e., contacted with the joystick-controlled cursor) by the macaque. When it was chosen, the Reveal Comparisons response was removed, the sample stimulus was removed (Figure 1C), and the three comparison stimuli were presented (Figure 1D). If the macaque chose the matching stimulus, it received a food reward. Otherwise, a 20 s timeout ensued before presentation of the next trial. This training phase was similar to the training phase given to pigeons in Roberts et al. (2009).
+After the 60 training trials, the macaques were presented with the test phase called Phase 1. In this phase, in all trials, the sample was occluded, there were no match choices on the screen, and both the Reveal Sample and Reveal Comparisons responses were simultaneously available on the screen. To be successful at high levels, the macaques had to make the Reveal Sample response before the Reveal Comparisons response, because making the Reveal Comparisons response first would remove from the screen the option for the Reveal Sample response, and the subject would be forced to choose among the three comparison stimuli without ever having seen the sample image. These test trials were also like those given to pigeons in Roberts et al. (2009).
+Results
+Six of the eight macaques completed all of the session’s possible 600 test trials. The two remaining macaques, Murph and Obi, completed 489 and 546 test trials, respectively. During the 60 training trials, the mean performance level for the macaques was 60%, and this exceeded chance levels, t (7) = 4.81, p = .002. Figure 2 (black-diamond symbols) presents the percentage of trials on which each subject responded optimally by choosing to see the sample before choosing to see the match choices on the test trials. The figure also shows the percentage correct achieved by each subject when the Reveal Sample information-seeking response was made (dark gray bars) or when the Reveal Comparisons information-seeking response was made (light gray bars) so that the sample was never seen. Five macaques were significantly more likely to choose to reveal the sample first, all p < .001 as assessed with a sign test. This pattern occurred not only for the full set of test trials, but even within the first 60 test trials, all p < .01. Out of those 60 trials, Murph chose to see the sample all 60 times. Han and Obi chose to see the sample on 53 of 60 trials. Hank chose to see the sample on 51 of 60 trials, and Chewie chose to see the sample on 47 of 60 trials. Moreover, all five monkeys chose to see the sample on the very first trial in which both options were available.
+Figure 2.
+Open in a new tab
+Performance by eight macaques in Experiment 1. The diamonds show the percentage of trials on which each monkey chose to see the sample before choosing to see the match choices (independent of the outcome of their response to the matching component). The bars show the percentage of correct matching choices when the sample was either revealed (dark gray bars) or not revealed (light gray bars). The horizontal line indicates the chance level of performance for matching.
+The remaining three macaques were significantly more likely to choose to take the matching test without first revealing the sample, all p < .005 as assessed with a sign test. They selectively made the Reveal Comparisons response. Of course, for all eight macaques, the matching performance differed greatly depending on whether they chose to reveal the sample before making a matching response (67.4% correct compared to 33% chance accuracy) or instead chose to make a matching response without seeing the sample (30.7% correct compared to 33% chance accuracy). This difference was statistically significant, t (7) = 4.13, p = .004. Finally, for each macaque, matching performance following Reveal Sample responses always exceeded chance levels as assessed with a binomial test (all p’s < .01), but performance following Reveal Comparisons responses was always at near-chance levels (all p’s > .05).
+Discussion
+The pigeons tested by Roberts et al. (2009), trained and tested similarly to the macaques here, demonstrated no recognition of the utility of seeing the sample before taking the matching test. Instead, they showed a strong preference for making the response that was most closely linked temporally to the matching responses that (sometimes) produced reward. In sharp contrast, the majority of macaques, in this single test session, did not gravitate toward the response that was temporally proximate to reward. To the contrary, they chose to reveal the sample, possibly showing that they did recognize the utility of seeing the sample before taking the matching test. This is a clear species difference, one that resonates with previously reported differences in metacognitive skills between rhesus monkeys and pigeons (see Smith, 2009). The species difference shown here is even more striking because it emerged clearly in the macaques’ first testing session, whereas pigeons showed minimal sample-revealing behaviors over four systematic experiments in Roberts et al. (2009). If the macaques’ performance bears a strong interpretation, it may show a new facet of their metacognition, because it shows them adaptively choosing among multiple information-seeking responses to manage the flow of information in performing a complex cognitive task.
+However, there is an alternative interpretation that has nothing to do with metacognition or information seeking. Macaques that chose to reveal the samples first may simply have learned—more strongly and more rigidly—to carry out the series of chained responses that were embodied by the training trials, without recognizing the utility of that response pattern given the new conditions of the test trials (in which both reveal responses were available at once). In fact, macaques might not even have realized that under the new conditions both reveal responses were simultaneously available. Zentall and Stagner (2010) also pointed out that in the Roberts et al. (2009) study pigeons had to choose between an immediate reinforcer on about 50% of the trials and a delayed reinforcer on a significantly higher percentage of the trials. Pigeons may have failed to choose to see the sample because they were sensitive to the delay to reinforcement. When Zentall and Stagner (2010) equated the two alternatives for delay to reinforcement, pigeons then sometimes preferred to see a relevant sample over an irrelevant sample. Macaques that were successful in Experiment 1 may have been less sensitive to the delay of reinforcement that occurred when the sample was requested, and this too may help account for the species difference.
+To evaluate these possibilities, and to ask whether monkeys could indeed show flexible information-seeking behavior in this task, we instituted a number of new conditions—testing phases 2, 3, and 4—in Experiment 2. Each condition was designed to provide a macaque with a different and unique informational situation that would require a different and unique optimal response pattern. The three new informational situations were as follows.
+In Phase 2, we added trials in which the sample was already present and not occluded. Now the need for the Reveal Sample response was eliminated, though subjects might still lead off with that response if they were responding obediently to an entrained chain of behaviors.
+In Phase 3, we added trials in which in which the sample and the match choices were both visible from the trial’s outset, so that from an informational standpoint there was no need for the subject to make either information-seeking response even though training and behavioral chaining would dictate one of these responses.
+In Phase 4, we added trials in which the comparison shapes were already present, but the sample was occluded. Now, the general appearance of the screen could have suggested to the macaques that they just complete the matching trials by choosing a comparison shape. However, the optimal response pattern would be to recognize the lack of sample information and to make the Reveal Sample response before making a matching response.
+Regarding these three phases of testing, the question was whether macaques could independently assess the different trial types, determine the informational context they faced given that context, manage the collection of necessary information optimally, and thus make the correct matching response in the end. If they could, it would strongly disconfirm any idea that they were behaving according to any previously trained sequence or chain of behavioral responses. To the contrary, it would illuminate their capacity for flexible and sophisticated forms of information seeking, especially if they showed such flexibility simultaneously for all of these trial types.
+Experiment 2
+Methods
+Participants
+The same eight rhesus monkeys were tested.
+Apparatus
+The same apparatus was used.
+Design and procedure
+Macaques performed the same matching-to-sample task described in Experiment 1 in which matching trials were presented by computer screen and responded to using a joystick-controlled cursor on the screen. Now the monkeys were tested multiple times each week on the task, and during each session they had continuous access to the computer task. In the three phases of Experiment 2 that are described now, each macaque completed 60 training trials to begin each session, and these were identical to the training trials described in Experiment 1.
+Phase 2
+After the 60 training trials, the trials presented were of two types. In half the trials, macaques were presented with an occluded sample, no match choices on the screen, but with both the Reveal Sample and Reveal Comparisons responses available simultaneously on the screen (Figure 3A). These were the trials the macaques had already experienced in Phase 1 of testing. To be successful at robustly above-chance levels, the macaques had to make the Reveal Sample response before the Reveal Comparisons response, because making the Reveal Comparisons response first would remove the Reveal Sample response from the screen, and the macaques would then be forced to choose among the comparison shapes without having seen the sample image. Going forward, this trial type is called the Occluded Sample trial.
+Figure 3.
+Open in a new tab
+The four trial types from Experiment 2. A. The Occluded Sample trial. B. The Revealed Sample trial. C. The Revealed Sample-Revealed Comparisons trial. D. The Occluded Sample-Revealed Comparisons trial. The cursor is the dot at center of the screen that was controlled by the movement of a digital joystick.
+In the other half of trials, the sample was shown already revealed, there were no comparison choices on the screen, and both the Reveal Sample and Reveal Comparisons responses were simultaneously available on the screen (Figure 3B). On these trials, the macaques did not need to make the Reveal Sample response but could instead move directly to the Reveal Matches response and complete the trial. Yet they might still first make the Reveal Sample response if it was the initial link in some low-level behavioral chain. Going forward, this trial type is called the Revealed Sample trial.
+The two trial types in Phase 2 were randomly intermixed trial by trial.
+Phase 3
+After the 60 training trials, three trial types were presented. One third of the trials were Occluded Sample trials as already described. One third of the trials were Revealed Sample trials as already described. In one third of the trials, the sample image was already revealed, the comparison stimuli were already revealed, and both the Reveal Sample and Reveal Comparisons responses were simultaneously available on the screen (Figure 3C). In this case, macaques needed no additional information to make a correct matching response, as they could already see both the sample and the comparison stimuli. Accordingly, their optimal response was to transcend their training and their learned behavior chains and make neither the Reveal Sample nor Reveal Comparisons response, but to immediately choose the comparison stimulus that was identical to the sample. Going forward, this trial type is called the Revealed Sample-Revealed Comparisons trial. All trial types were randomly intermixed trial by trial.
+Phase 4
+After the 60 training trials, all subsequent trials were of four types. One quarter of the trials were Occluded Sample trials as already described. One quarter were Revealed Sample trials as already described. One quarter were Revealed Sample-Revealed Comparisons trials as just described. Finally, in one quarter of the trials, the sample was occluded, the comparison stimuli were already revealed, and both the Reveal Sample and Reveal Comparisons response were simultaneously available on the screen (Figure 3D). In this case, macaques needed only to make the Reveal Sample response before proceeding directly to make their matching decision because the comparison stimuli were already available. This condition placed an additional cognitive burden on the macaque if it asked redundantly to see the comparison stimuli by making the Reveal Comparisons response. This action removed the sample image from the screen and therefore made the matching task slightly more memory-based and slightly more difficult. Going forward, this trial type is called the Occluded Sample-Revealed Comparisons trial. The four trial types in Phase 4 were randomly intermixed trial by trial.
+Phase 4 of Experiment 2 was a stringent test of the macaques’ information-seeking abilities because during this phase they were faced with all possible combinations of information across different trials – none at all, sample only present, comparison stimuli only present, and sample and comparison stimuli already present.
+Each animal was allowed to complete as many trials as it chose during a session. At the end of the session, performance was evaluated for whether responses to each trial type presented during that session were made optimally at levels better than expected by chance. Chance levels of performance were different for different trial types. On Occluded Sample and Revealed Sample trials, the chance level of performance was 50%. A macaque could choose to make first either the Reveal Sample response or the Reveal Comparisons response. For the Revealed Sample-Revealed Comparisons trials and the Occluded Sample-Revealed Comparisons trials, the chance level of performance was 25%. The subject could make only the Reveal Sample response before matching, it could make only the Reveal Comparisons response before matching, it could make both information-seeking responses before matching, or it could make neither information-seeking response and simply, directly match. Only if a macaque showed a statistically significant level of optimal responding for all trial types in a phase across an entire session did it move to the next phase of the experiment. So, for example, in Phase 3, a macaque would have had to respond optimally to all three trial types (Occluded Sample, Revealed Sample, and Revealed Sample-Revealed Comparisons trials) before moving on to Phase 4. Macaques were given only five sessions to reach this criterion at each phase before their participation in the experiment was discontinued.
+Results
+In this experiment, the crucial question was whether the macaques would obtain the necessary information for the different trial types—that is, the missing information not yet shown on the screen—before completing the matching component of the trial. Answering this question is the purpose of the analyses reported now. Before reporting these analyses, we state that macaques performed well on the actual matching component of the task—often near 100% accuracy—when they did manage the information in the task so as to recruit all the necessary information before making a matching decision. This is not surprising, because the matching trials naturally become easy when the samples and comparisons are visible and able to be compared.
+The number of sessions each monkey completed in each phase is shown in Table 1. In all cases, performance reported to be significantly better than chance was assessed with a binomial test and alpha < .01. Six of the eight macaques progressed to the end of the experiment (Phase 4), and four of those six macaques showed optimal information seeking patterns on all trial types in that final phase.
+Figure 4 presents the percentages of correct information-seeking/matching responses for each trial type in the last session completed in each phase by each macaque. On Occluded Sample trials, the Reveal Sample response was optimal. On Revealed Sample trials, the Reveal Comparisons response was optimal. On Revealed Sample-Revealed Comparisons trials, the matching response was optimal. On Occluded Sample-Revealed Comparisons trials, the Reveal Sample response was optimal. The macaques Lou, Han, Luke, and Obi all were significantly above chance for each trial type in Phase 4 in selecting only that information that was not available at the trial outset or in matching directly when all necessary information was available. Murph was above chance on all trial types except Occluded Sample-Revealed Comparisons trials. On those trials, he chose to reveal the matches only (without revealing the sample) on 97.5% of trials. As expected, he performed at chance levels (33%) on the matching component for these trials. Monkey Willie was above chance in selecting the optimal response for three of the four trial types. However, in the Revealed Sample-Revealed Comparisons trials, he (unnecessarily) chose to reveal the matches on 94% of the trials rather than directly completing the matching component of the task. Despite this, he still performed at 81% correct on those trials, and so the redundant information seeking, and the absence of the sample from the screen during matching, did not lead to low performance in matching. Monkeys Hank and Chewie did not meet criterion on Phase 3. Both animals made the Reveal Matches response unnecessarily when they had all the information available for matching in the Revealed Sample-Revealed Comparisons trials. Although they still exceeded chance levels when matching (77% and 89% correct, respectively), they did not show an optimal sensitivity to the informational situation they faced or manage that situation optimally.
+Figure 4.
+Open in a new tab
+The percentages of optimal responses for each trial type in the last session completed by each macaque in each phase of Experiment 2. Each bar indicates a different trial type with its own optimal first response - Reveal Sample responses made to Occluded Sample trials; Reveal Comparisons responses made to Revealed Sample trials; direct matching responses made to Revealed Sample-Revealed Comparisons trials; Reveal Sample responses made to Occluded Sample-Revealed Comparisons trials.
+A critical issue that remained regarding the successful four monkeys was whether they understood the nature of the different trial types, and the information already present in those trial types, from the outset of the introduction, or whether the monkeys needed extensive experience to gradually learn what responses should be made to which trial types. To assess this, we examined the first 20 trials of each trial type in Phase 2, Phase 3, and Phase 4 for these four monkeys to see whether they made the optimal information seeking response (Figure 5). Although the monkeys did not choose the optimal response for each trial type in every phase at levels better than chance, their performance was very good. For the 36 trials types presented in Figure 5, the monkeys made the optimal information-seeking response in 30 of those trial types (all p < .05, as assessed with a sign test using the chance levels reported above). Phase 2 seemed to present the biggest challenge as only one of those four monkeys made the right information seeking response to both trial types in the earliest trials. In Phase 3, three of the four monkeys performed all trial types optimally from the outset, and in Phase 4 two of the four monkeys performed all trial types optimally.
+Figure 5.
+Open in a new tab
+Percentage of trials on which four rhesus monkeys made the optimal information-seeking response. Each bar shows performance on the first 20 trials of that trial type in that phase. Asterisks indicate performance that exceeded chance levels (chance was 50% for the Occluded Sample and Revealed Sample conditions, and chance was set conservatively at 33% for the Revealed Sample – Revealed Comparisons and Occluded Sample – Revealed Comparisons conditions because the monkey could initially choose the Reveal Sample, Reveal Comparisons, or direct matching response).
+Discussion
+In Phase 1 of testing (Experiment 1), in tests that pigeons failed, rhesus monkeys succeeded. They chose to study the sample before completing the matching component of the task, and consequently were highly successful in their ultimate matching performance. In Phases 2 to 4 of testing (Experiment 2), most of the macaques demonstrated a varied and flexible approach to monitoring the informational context of different conditions, and in responding optimally by seeking the information needed for successful matching. In combination, Experiments 1 and 2 are a confirmation of the species difference that exists between macaques and pigeons in the robustness of the information-seeking behaviors they show and do not show. Experiments 1 and 2 also demonstrate a sophisticated information-seeking performance by nonhumans, and thus they may illuminate a new aspect of macaques’ capacity for metacognition. Importantly, in most cases this capacity emerged very early within the first session when a new trial type was introduced, showing that the monkeys were not simply learning what specific responses were needed for each trial configuration.
+Experiment 3
+An additional goal of the present research was to compare the information-seeking fluency and flexibility shown by rhesus macaques (an Old World monkey species) and capuchin monkeys (a New World monkey species). There is growing evidence that macaques and capuchins express a capacity for metacognition much differently, and particularly that capuchins express that capacity less robustly. This has been shown in converging lines of research.
+For example, Beran, Smith, Coutinho, Couchman, and Boomer (2009) explored capuchins’ uncertainty monitoring in a psychophysical perceptual discrimination. Whereas macaques adaptively chose an uncertainty response on the most difficult trials of the perceptual discrimination, capuchins showed almost no ability to do so, despite numerous deliberate attempts to foster this ability in them. For some reason, capuchins were not sensitive to the psychological signals of uncertainty and difficulty that macaques monitor and use effectively.
+Macaques and capuchins also perform very differently on tests of metamemory. Fujita (2009) gave capuchins a variation of the delayed matching task with an uncertainty response available on some trials but not others. Capuchins showed some hints of a metamemory pattern—they opted out of the memory test more often at longer forgetting intervals when their memories were dimmed and their matching accuracy reduced. A problem with the interpretation of this result is that the uncertainty response might have come under the low-level stimulus control of the delay interval. One monkey did show higher matching accuracies when he chose to complete the memory trial than when he was forced to complete it. This could be stronger evidence of metacognition, because it could mean that the subject was monitoring a felicitous metacognitive signal. However, some capuchins did not show this phenomenon. And, strikingly, some capuchins did not even selectively decline memory trials when they had not been shown any sample at all for the trial, so that they could not possibly remember anything relevant at the point of deciding whether to attempt memory or not. (Macaques decline a very high proportion of these trials—Hampton, 2001). Fujita concluded that metamemory in capuchins was fleeting and somewhat tenuous (for a related conclusion, see Basile et al., 2009; Paukner, Anderson, & Fujita, 2006).
+Thus, there is growing evidence supporting the idea that capuchins lack the full suite of metacognitive abilities shown by apes and macaques. Given the profound implications of this pattern of evidence regarding the emergence of reflective mind in the primates, we sought to strengthen the empirical basis for the species distinction by testing capuchins in Phases 1 to 4 of our information-seeking task.
+Participants
+We tested seven capuchin monkeys. Four were males and three were females (see Table 1 for sex and age information). All capuchins were well trained on the computerized apparatus (see Evans, Beran, Chan, Klein, & Menzel, 2008) and had served as test subjects in a number of previous computerized tests (e.g., Beran, 2008; Beran et al., 2008), including the previous test of uncertainty monitoring in a psychophysical discrimination (Beran et al., 2009). Because of their smaller body size, capuchins were rewarded with 45 mg fruit-flavored primate pellets instead of 94 mg pellets. Capuchins had continuous access to water. They also received a daily diet of fruits and vegetables independent of the amount of work they completed on the task, and thus they were not food deprived or reduced in weight for the purposes of this experiment.
+Apparatus
+Trials were presented using the computerized test apparatus already described. Capuchins were tested individually after choosing to be isolated in a test chamber attached to the home cage.
+Design and procedure
+Capuchins were first given Phase 1 testing as described in Experiment 1 for macaques. They continued through Phases 2 to 4 of testing as described in Experiment 2 for macaques. Given that they have shown a limited capacity for metacognitive-like capacities in other test paradigms, including in several comparisons to macaques, we predicted that capuchins would show considerably less sophistication and flexibility in information-seeking behavior in our tasks. But, we also predicted that capuchins would succeed in the basic task represented by Phase 1 testing. By doing so, they would show more information-seeking sophistication than was shown by pigeons in the closely related procedure of Roberts et al. (2009).
+To reiterate, the capuchins were tested in these four phases.
+Phase 1
+After the 60 training trials, the monkeys were presented with 100% Occluded Sample trials. They had up to 5 sessions to begin to respond optimally to this trial type, by first making the Reveal Sample response before the Reveal Comparisons response on these trials.
+Phase 2
+After the 60 training trials, the monkeys were presented with 50% Occluded Sample trials and 50% Revealed Sample trials. They had up to 5 sessions to begin to respond optimally on both of these trial types, by first making, respectively, the Reveal Sample and Reveal Comparisons responses on these trials.
+Phase 3
+After the 60 training trials, the monkeys were presented with 33% Occluded Sample trials, 33% Revealed Sample trials, and 33% Revealed Sample-Revealed Comparisons trials. They had up to 5 sessions to begin to respond optimally on these three trial types, by making, respectively, the Reveal Sample response first, the Reveal Comparisons response first, and a direct matching response when all the necessary information was visible for a successful match.
+Phase 4
+After the 60 training trials, the monkeys were presented with 25% Occluded Sample trials, 25% Revealed Sample trials, 25% Revealed Sample-Revealed Comparisons trials, and 25% Occluded Sample-Revealed Comparisons trials. They had up to 5 sessions to begin to respond optimally on these four trial types, by making, respectively, the Reveal Sample response first, the Reveal Comparisons response, a direct matching response when all the necessary information was visible for a successful match, or the Reveal Sample response only when the comparison stimuli were visible but not the sample.
+Results
+The number of sessions each monkey completed in each phase is shown in Table 1. In all cases, performance reported to be significantly better than chance was assessed with a binomial test and alpha was < .01.
+The first question was whether the capuchin monkeys would succeed in Phase 1, providing a basic test of whether their information-seeking ability would transcend that shown by pigeons in a similar procedure. All seven capuchins selectively chose the Reveal Sample information-seeking response on Occluded Sample trials. That is, they selectively chose—at levels beyond chance—to reveal the sample before revealing the match choices (76.3% to 99.4%, all p < .01). As was true for the macaques, this pattern emerged very early in this phase. Six of seven capuchins chose to see the sample before matching on a significant number of their first 60 trials: Drella – 50/60; Griffin 60/60; Liam 57/60; Lily 60/60; Logan 46/60; Wren 57/60, all p < .01 as assessed with a sign test. One capuchin, however, did not. Nala chose to see the sample on only 8 of the first 60 trials.
+However, beyond this initial success, performance on the subsequent phases differed sharply from that of the macaques. Figure 6 presents the percentages of correct information-seeking responses and the percentage of correct matching responses for each trial type in the last session completed in each phase by each monkey. On Occluded Sample trials, the Reveal Sample response was optimal. On Revealed Sample trials, the Reveal Comparisons response was optimal. On Revealed Sample-Revealed Comparisons trials, the matching response was optimal. On Occluded Sample-Revealed Comparisons trials, the Reveal Sample response was optimal. The figure shows that only three of the seven monkeys progressed to the end of the experiment (Phase 4), and none of those monkeys showed optimal information seeking patterns on all trial types in that final phase. Strikingly, Drella, Lily, and Nala did not even meet criterion at Phase 2. Faced with only a minimal amount of variability in the informational contexts presented to them, they failed to choose different information-seeking responses on different occasions. Griffin did not meet criterion at Phase 3 for the same reason. It is important to see that in all of these cases, capuchins failed to make the information-seeking response (illuminate the sample so that matching can occur successfully) that pigeons failed to make in Roberts et al. (2009). Capuchins did make this response successfully in Phase 1 of testing. But clearly, when multiple trial types were possible, and the informational contexts presented to the animal grew variable, capuchin monkeys had difficulty discerning what information was needed for success in the trial. This result joins the research already reviewed in this article showing again that capuchins’ capacity for behaviors perhaps reflective of metacognition is fragile and tenuous.
+Figure 6.
+Open in a new tab
+The percentages of optimal response for each trial type in the last session completed by each capuchin in each phase of Experiment 3. Each bar indicates a different trial type with its own optimal first response - Reveal Sample responses made to Occluded Sample trials; Reveal Comparisons responses made to Revealed Sample trials; direct matching responses made to Revealed Sample-Revealed Comparisons trials; Reveal Sample responses made to Occluded Sample-Revealed Comparisons trials.
+However, their capacity was not nil. Liam, Logan, and Wren did reach Phase 4, and moreover they made the optimal responses in three of the four trial types. They all experienced the same failure—they did not illuminate the sample in Phase 4 when the comparison stimuli were already available. They simply matched directly, and of course matched poorly because they had no idea what the sample was. Their percentage of correct matching responses on these trials was, respectively, 39%, 36%, and 29%. Interestingly, this failure was again in essence the failure experienced by Drella, Lily, and Nala in Phase 2 of Experiment 3, and by the pigeons in Roberts et al. (2009), though now in a richer and variable environment of different informational contexts.
+General Discussion
+Roberts et al. (2009) studied information seeking by pigeons in a matching task. Pigeons barely found, initially or in subsequent experiments, the strategy to study the sample image before choosing among the comparison stimuli. One cannot conclude from these null results that pigeons have a qualitative cognitive deficit in this area. Perhaps aspects of the Roberts et al. procedure could have been made more pigeon friendly. However, Roberts et al. did engage in multiple, successive procedural adjustments deliberately intended to foster information seeking by their birds. When this fostering failed, they concluded that pigeons lack an information-seeking capacity as part of a broader lack of a metacognitive capacity (but see Adams & Santi, in press). Here, we found a striking species contrast to pigeons. All eight rhesus macaques and all seven capuchin monkeys passed the Roberts et al. (2009) test of information seeking. Members of both primate species appreciated immediately the lack of information signaled by an occluded sample, and the need to manage the situation with an information-seeking response. Subsequent testing challenged further macaques’ capacity for flexible/varied forms of information management given different informational contexts, by asking them to illuminate samples, to illuminate comparison stimuli, or to illuminate nothing if complete information were already available. Four macaques met all of these additional challenges, and they often did so nearly from the outset of the introduction of the new informational contexts. Capuchins displayed less agility and flexibility in their information seeking in subsequent testing. No capuchins met all of the additional challenges. In many cases, capuchins began to fall prey to the “pigeon error”—that is, failing to study the sample before trying to complete the matching trial.
+How should these species differences be interpreted? It is not sufficient to simply say that some species are better at touching icons or pressing buttons so as to maximize their rate of reinforcement. This casual, reward-maximization hypothesis is really never appropriate in comparative psychology because it always dodges the psychological issue of what cues, processes, and representations the organism used to attain that maximization of rewards. It also seems unlikely that a species-selective training effect produced macaques’ pronounced success in our tasks. Sixty training trials is a minimal number in macaque studies. These animals adaptively illuminated samples almost immediately. In addition, they proved able to flexibly violate their training, depending on the informational context, as when given the display in Figure 3C they did not make the Reveal Comparisons response. The trained-response hypothesis would also force one to explain why capuchins and pigeons would only train fragilely, or would soon forget their training. There is no evidence this would occur. To the contrary, pigeons can remember what they are taught for years (Vaughn & Greene, 1984) and they can remember thousands of individual stimulus-response mappings (Cook, Levison, Gillett, & Blaisdell, 2005).
+Nor is it sufficient to appeal to a low-level, behavioral-chaining hypothesis, by which, for example, one supposed that picture samples automatically triggered the Reveal Comparisons response, or the sample comparisons automatically triggered a Matching response. Once again, one would have to say why pigeons and capuchins are not adept enough to chain behaviors in this way. In addition, some macaques showed clearly in Experiment 2 that they came to systematically deviate from these behavioral chains—always in a way that was appropriate to their informational situation.
+Now one might say that these animals learned that when there was nothing that closely resembled the responses they needed to choose among, then they should make an additional response that repaired the situation. One might say they realized that when everything necessary was present, they could match successfully. But, in that case one has essentially described an information-seeking performance. Indeed, we think that if one attends to the information-processing and contextual demands of these different conditions, one sees that the task verges on being an information-seeking task, and possibly a metacognitive task. We also think there is a parsimony in this explanation, for it describes all aspects of the macaques’ performance simply, when other explanations do not, and it explains all the species differences simply, when other explanations do not. Roberts et al. (2009) endorsed the information-seeking interpretation of performance in these tasks, and we agree with that endorsement.
+The psychology of animals’ information-seeking performances is illuminated by capuchins’ limitations within the present tasks. Capuchins have shown substantial cognitive sophistication—to the point that they are sometimes called the poor person’s chimpanzee—in a variety of other areas such as tool use (Evans & Westergaard, 2004), numerical cognition and quantification (Addessi et al., 2008; Beran et al., 2008; Evans, Beran, Harris, & Rice, 2009; Judge, Evans, & Vyas, 2005; vanMarle et al., 2006), serial learning (D’Amato & Columbo, 1988), observational learning (Visalberghi & Addessi, 2000), concept learning (Wright, 1999; Wright & Katz, 2006), and analogical reasoning (Kennedy & Fragaszy, 2009). One implication from the overall pattern of evidence is that information-seeking and metacognitive performances are different in psychological character or in psychological level from these primary cognitive performances, although additional research will be required to establish the precise character of this difference.
+Illustrating this point, Beran et al. (2009) tested capuchins’ uncertainty monitoring using two related density-discrimination tasks. In the Sparse-Middle-Dense task, capuchins could earn a food reward for making the middle response to intermediate stimulus levels. In the Sparse-Uncertain-Dense task, the same intermediate stimulus levels were near the breakpoint of the Sparse-Dense discrimination, and capuchins could make uncertainty responses to decline these trials (as macaques do). Capuchins responded middle easily and naturally. They essentially never responded uncertain, even under extreme reinforcement circumstances by which each discrimination error cost them the time to complete 30 trials correctly and to receive 30 food rewards. In fact, the present research joins research from multiple laboratories/paradigms in indicating that capuchins express capacities like information seeking and metacognition fragilely, tenuously, and barely (e.g., Basile et al., 2009; Beran et al., 2009; Fujita, 2009; Paukner et al., 2006).
+However, although capuchins have not yet shown the performance levels of macaques in tests of metacognition, this does not mean they will never do so. Thus, we do not conclude that there is a qualitative species difference in uncertainty monitoring between New World and Old World monkeys. Indeed, although no capuchins succeeded in the final test, some at least performed better than the poorest performing macaques. This highlights the need to be sensitive to individual differences in these capacities within a species as well as across species.
+The broader pigeon-primate contrast should be understood relative to the broader phylogenetic distribution of metacognition. Research from multiple laboratories using multiple paradigms has confirmed that whereas pigeons either do not have, or do not express, any metacognitive capacity (Inman & Shettleworth, 1999; Roberts et al., 2009; Sutton & Shettleworth, 2008), apes and macaques do (Call, in press; Call & Carpenter, 2001; Couchman, Coutinho, Beran, & Smith, 2010; Hampton, 2001; Smith, 2009). Thus, it is possible that metacognition is not a general, vertebrate-wide cognitive endowment. However, once again it is important to note that future studies may yet produce more positive evidence for metacognition in pigeons (e.g., Adams & Santi, in press).
+In fact, the comparative map of metacognition—as presently understood and illustrated with pigeons, capuchins, and macaques in the identical information-seeking paradigm—raises a deep issue for comparative psychology. It would be possible based on the existing evidence to argue that only Old World primates (e.g., macaques, apes, hominids) have demonstrated a robust capacity for metacognition. This could suggest that reflective mind emerged narrowly as a singular event in cognitive evolution, and this primate-centered view of the matter has been prominent within comparative psychology for decades if not centuries. However, this suggestion is premature. There has been no research on the corvids—the birds best known for their cognitive sophistication (e.g., Clayton & Emery, 2005; Emery & Clayton, 2005; Schloegl, Dierks, Gajdon, Huber, Kotrschal, & Bugnyar, 2009; Weir, Chappell, & Kacelnik, 2002). That research would provide a strong test of the idea that cognitive self-awareness did not emerge in the avian lineage (see Bugnyer, 2007). There has been preliminary research conducted on a bottlenosed dolphin (Tursiops truncatus). This animal used an uncertainty response selectively and adaptively to avoid the difficult trials in a threshold pitch-height discrimination (Smith et al., 1995). He also showed intriguing ancillary behaviors that could have been indicative of uncertainty states. The interpretation of this study has been debated, especially because it was the inaugural study in the field of animal-metacognition research. Accordingly, it will be constructive to test marine mammals on additional metacognition paradigms, including the information-seeking paradigms used in Roberts et al. (2009) and here. It will be an important conclusion if it turns out that cognitive evolution broadly and inherently produces capacities like information seeking and metacognition.
+We should state clearly that the capacity for information seeking or for elemental forms of metacognitive monitoring do not necessarily imply full conscious awareness or full self-awareness as animals manage adaptively the flow of information within our tasks. (However, we do believe that demonstrations like the present ones may set the stage for asking experimentally about awareness and consciousness, as proposed by Smith, 2009 and Kornell, 2009). Indeed, we believe it is an important theoretical insight—regarding both human and animal metacognition—that metacognition may not be all or none. This can be clearly seen from examining the diverse research goals in studying metacognition. The comparative psychologist seeks to trace its phylogenetic roots and the stages that gradually produced humans’ reflective mind. The developmental psychologist seeks to trace its ontogenetic roots and the stages by which human self-regulation emerges. The educational psychologist seeks to design interventions that may foster self-regulation in populations underlyingly challenged in that capacity. These goals all concern metacognition not only in its full flowering, but also in its emergence and its maturation. Thus, all of these goals will be served best by examining this cognitive capacity in its advanced and elemental forms, too. We take the present tasks to illustrate an elemental form of information seeking or cognitive monitoring.
+It is an intriguing aspect of declarative, conscious cognition in humans that those processes are flexible, changeable, and strategically variable trial by trial and situation by situation. Consciousness is unique for allowing minds to turn on a dime. Here, macaques showed this situational flexibility and agility, and so they possibly also showed a primitive kind of declarative cognition. There is converging evidence for this flexibility and for attributing to macaques at least the beginnings of explicit cognition (Couchman et al., 2010; Smith, Beran, Crossley, Boomer, & Ashby, 2010; Washburn, Gulledge, Beran, & Smith, 2010). However, one still does not know what the appreciation of missing information feels like to a macaque, or whether they have a layer of metarepresentation about their informational state (see Carruthers, 2008), and some take that layer of metarepresentation to be crucial for the claim that a performance pattern is metacognitive.
+Finally, we point out that research on animal metacognition has productive connections to research and educational practice regarding human metacognition. The comparative work could provide animal models for some aspects of cognitive regulation, aiding the search for neurological blocks or biochemical enhancements. It could extend the range of paradigms available for developmental research. The nonverbal, perceptual tasks—suitable for animals—are also highly appropriate for testing young humans and populations of language delayed or autistic children (Balcomb & Gerken, 2008). The comparative work also could motivate the search for basic and implicit forms of cognitive regulation that could be preserved or fostered in children who are challenged in the high-level components of metacognition that feature introspection, verbal report, conscious self-regulation, theory of mind, and executive attention (Farrant, Boucher, & Blades 1999; Holroyd & Baron-Cohen, 1993; Leekam & Perner, 1991; Montague, 1998; Roebers, von der Linden, & Howie, 2007; Whitebread, 1999; for a related approach, see Ruffman, 2000). We believe it is sometimes unnecessary and unfortunate that human and animal psychology are treated as scientific oil and vinegar, though we understand that their separation has deep historical and philosophical roots.
+Acknowledgments
+This research project was supported by Grants RO1061455 and HD38051 from the National Institute of Child Health and Human Development and by Grants BCS-0924811 and BCS-0956993 from the National Science Foundation.
+Footnotes
+Publisher's Disclaimer: This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.
+Contributor Information
+Michael J. Beran, Language Research Center, Georgia State University
+J. David Smith, University at Buffalo, The State University of New York.
+References
+Adams A, Santi A. Pigeons exhibit higher accuracy for chosen memory tests than for forced memory tests in duration matching-to-sample. Learning and Behavior. doi: 10.1007/s13420-010-0001-7. in press. [DOI] [PubMed] [Google Scholar]
+Addessi E, Crescimbene L, Visalberghi E. Food and quantity token discrimination in capuchin monkeys (Cebus apella) Animal Cognition. 2008;11:275–282. doi: 10.1007/s10071-007-0111-6. [DOI] [PubMed] [Google Scholar]
+Balcomb FK, Gerken L. Three-year-old children can access their own memory to guide responses on a visual matching task. Developmental Science. 2008;11:750–760. doi: 10.1111/j.1467-7687.2008.00725.x. [DOI] [PubMed] [Google Scholar]
+Basile BM, Hampton RR, Suomi SJ, Murray EA. An assessment of memory awareness in tufted capuchin monkeys (Cebus apella) Animal Cognition. 2009;12:169–180. doi: 10.1007/s10071-008-0180-1. [DOI] [PMC free article] [PubMed] [Google Scholar]
+Benjamin AS, Bjork RA, Schwartz BL. The mismeasure of memory: When retrieval fluency is misleading as a metacognitive index. Journal of Experimental Psychology: General. 1998;127:55–68. doi: 10.1037/0096-3445.127.1.55. [DOI] [PubMed] [Google Scholar]
+Beran MJ. Rhesus monkeys (Macaca mulatta) enumerate large and small sequentially presented sets of items using analog numerical representations. Journal of Experimental Psychology: Animal Behavior Processes. 2007;33:55–63. doi: 10.1037/0097-7403.33.1.42. [DOI] [PubMed] [Google Scholar]
+Beran MJ. Monkeys (Macaca mulatta and Cebus apella) track, enumerate, and compare multiple sets of moving items. Journal of Experimental Psychology: Animal Behavior Processes. 2008;34:63–74. doi: 10.1037/0097-7403.34.1.63. [DOI] [PubMed] [Google Scholar]
+Beran MJ, Harris EH, Evans TA, Klein ED, Chan B, Flemming TJ, et al. Ordinal judgments of symbolic stimuli by capuchin monkeys (Cebus apella) and rhesus monkeys (Macaca mulatta): The effects of differential and nondifferential reward. Journal of Comparative Psychology. 2008;122:52–61. doi: 10.1037/0735-7036.122.1.52. [DOI] [PubMed] [Google Scholar]
+Beran MJ, Smith JD, Coutinho MVC, Couchman JJ, Boomer J. The psychological organization of “uncertainty” responses and “middle” responses: A dissociation in capuchin monkeys (Cebus apella) Journal of Experimental Psychology: Animal Behavior Processes. 2009;35:371–381. doi: 10.1037/a0014626. [DOI] [PMC free article] [PubMed] [Google Scholar]
+Beran MJ, Smith JD, Redford JS, Washburn DA. Rhesus macaques (Macaca mulatta) monitor uncertainty during numerosity judgments. Journal of Experimental Psychology: Animal Behavior Processes. 2006;32:111–119. doi: 10.1037/0097-7403.32.2.111. [DOI] [PubMed] [Google Scholar]
+Bugnyar T. An integrative approach to the study of "theory-of-mind"-like abilities in ravens. The Japanese Journal of Animal Psychology. 2007;57:15–27. doi: 10.2502/janip.57.1.2. [DOI] [Google Scholar]
+Call J. Do apes know they could be wrong? Animal Cognition. doi: 10.1007/s10071-010-0317-x. in press. [DOI] [PubMed] [Google Scholar]
+Call J, Carpenter M. Do apes and children know what they have seen? Animal Cognition. 2001;4:207–220. doi: 10.1007/s100710100078. [DOI] [Google Scholar]
+Carruther P. Metacognition in animals: A skeptical look. Mind and Language. 2008;23:58–89. [Google Scholar]
+Clayton NS, Emery NJ. Corvid cognition. Current Biology. 2005;15:R80–R81. doi: 10.1016/j.cub.2005.01.020. [DOI] [PubMed] [Google Scholar]
+Cook RG, Levison DG, Gillett SR, Blaisdell AP. Capacity and limits of associative memory in pigeons. Psychonomic Bulletin and Review. 2005;12:350–358. doi: 10.3758/bf03196384. [DOI] [PubMed] [Google Scholar]
+Couchman JJ, Coutinho MVC, Beran MJ, Smith JD. Beyond stimulus cues and reinforcement signals: A new approach to animal metacognition. Journal of Comparative Psychology. 2010;124:356–368. doi: 10.1037/a0020129. [DOI] [PMC free article] [PubMed] [Google Scholar]
+D’Amato MR, Colombo M. Representation of serial order in monkeys (Cebus apella) Journal of Experimental Psychology: Animal Behavior Processes. 1988;14:131–139. doi: 10.1037/0097-7403.14.2.131. [DOI] [PubMed] [Google Scholar]
+Dunlosky J, Bjork RAE. Handbook of memory and metamemory. New York: Psychology Press; 2008. [Google Scholar]
+Emery NJ, Clayton NS. The mentality of crows: Convergent evolution of intelligence in corvids and apes. Science. 2005;306:1903–1907. doi: 10.1126/science.1098410. [DOI] [PubMed] [Google Scholar]
+Evans TA, Beran MJ, Chan B, Klein ED, Menzel CR. An efficient computerized testing method for the capuchin monkey (Cebus apella): Adaptation of the LRC-CTS to a socially housed nonhuman primate species. Behavior Research Methods. 2008;40:590–596. doi: 10.3758/BRM.40.2.590. [DOI] [PubMed] [Google Scholar]
+Evans TA, Beran MJ, Harris EH, Rice D. Quantity judgments of sequentially presented food items by capuchin monkeys (Cebus apella) Animal Cognition. 2009;12:97–105. doi: 10.1007/s10071-008-0174-z. [DOI] [PubMed] [Google Scholar]
+Evans TA, Westergaard GC. Discrimination of functionally appropriate and inappropriate throwing tools by captive tufted capuchins (Cebus apella) Animal Cognition. 2004;7:255–262. doi: 10.1007/s10071-004-0220-4. [DOI] [PubMed] [Google Scholar]
+Farrant A, Boucher J, Blades M. Metamemory in children with autism. Child Development. 1999;70:107–131. doi: 10.1111/1467-8624.00009. [DOI] [PubMed] [Google Scholar]
+Flavell JH. Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. American Psychologist. 1979;34:906–911. doi: 10.1037/0003-066X.34.10.906. [DOI] [Google Scholar]
+Foote AL, Crystal JD. Metacognition in the rat. Current Biology. 2007;17:551–555. doi: 10.1016/j.cub.2007.01.061. [DOI] [PMC free article] [PubMed] [Google Scholar]
+Fujita K. Metamemory in tufted capuchin monkeys (Cebus apella) Animal Cognition. 2009;12:575–585. doi: 10.1007/s10071-009-0217-0. [DOI] [PubMed] [Google Scholar]
+Hampton RR. Rhesus monkeys know when they remember. Proceedings of the National Academy of Sciences. 2001;98:5359–5362. doi: 10.1073/pnas.071600998. [DOI] [PMC free article] [PubMed] [Google Scholar]
+Hampton RR, Zivin A, Murray EA. Rhesus monkeys (Macaca mulatta) discriminate between knowing and not knowing and collect information as needed before acting. Animal Cognition. 2004;7:239–246. doi: 10.1007/s10071-004-0215-1. [DOI] [PubMed] [Google Scholar]
+Holroyd S, Baron-Cohen S. How far can people with autism go in developing a theory of mind? Journal of Autism and Developmental Disorders. 1993;23:379–385. doi: 10.1007/BF01046226. [DOI] [PubMed] [Google Scholar]
+Inman A, Shettleworth SJ. Detecting metamemory in nonverbal subjects: A test with pigeons. Journal of Experimental Psychology: Animal Behavior Processes. 1999;25:389–395. doi: 10.1037/0097-7403.25.3.389. [DOI] [Google Scholar]
+Judge PG, Evans TA, Vyas DK. Ordinal representation of numeric quantities by brown capuchin monkeys (Cebus apella) Journal of Experimental Psychology: Animal Behavior Processes. 2005;31:79–94. doi: 10.1037/0097-7403.31.1.79. [DOI] [PubMed] [Google Scholar]
+Kennedy EH, Fragaszy DH. Analogical reasoning in a capuchin monkey (Cebus apella) Journal of Comparative Psychology. 2008;122:167–175. doi: 10.1037/0735-7036.122.2.167. [DOI] [PubMed] [Google Scholar]
+Koriat A. How do we know that we know? The accessibility model of the feeling of knowing. Psychological Review. 1993;100:609–639. doi: 10.1037/0033-295X.100.4.609. [DOI] [PubMed] [Google Scholar]
+Kornell N. Metacognition in humans and animals. Current Directions in Psychological Science. 2009;18:11–15. doi: 10.1111/j.1467-8721.2009.01597.x. [DOI] [Google Scholar]
+Kornell N, Son LK, Terrace HS. Transfer of metacognitive skills and hint seeking in monkeys. Psychological Science. 2007;18:64–71. doi: 10.1111/j.1467-9280.2007.01850.x. [DOI] [PubMed] [Google Scholar]
+Leekam SR, Perner J. Does the autistic child have a metarepresentational deficit? Cognition. 1991;40:203–218. doi: 10.1016/0010-0277(91)90025-Y. [DOI] [PubMed] [Google Scholar]
+McMahon S, Macpherson K, Roberts WA. Dogs choose a human informant: Metacognition in canines. Behavioural Processes. 2010;85:293–298. doi: 10.1016/j.beproc.2010.07.014. [DOI] [PubMed] [Google Scholar]
+Metcalfe J, Shimamura A. Metacognition: Knowing about knowing. Cambridge, MA: Bradford Books; 1994. [Google Scholar]
+Montague MIE. Research on metacognition in special education. In: Scruggs TA, Mastropieri MA, editors. Advances in learning and behavioral disabilities. Vol. 12. Oxford, UK: Elsevier Science; 1998. pp. 151–183. [Google Scholar]
+Nelson TOE. Metacognition: Core readings. Toronto: Allyn and Bacon; 1992. [Google Scholar]
+Paukner A, Anderson JR, Fujita K. Redundant food searches by capuchin monkeys (Cebus apella): A failure of metacognition? Animal Cognition. 2006;9:110–117. doi: 10.1007/s10071-005-0007-2. [DOI] [PubMed] [Google Scholar]
+Richardson WK, Washburn DA, Hopkins WD, Savage-Rumbaugh ES, Rumbaugh DM. The NASA/LRC Computerized Test System. Behavior Research Methods, Instruments, and Computers. 1990;22:127–131. doi: 10.3758/bf03203132. [DOI] [PubMed] [Google Scholar]
+Roberts WA, Feeney MC, McMillan N, MacPherson K, Musolino E, Petter M. Do pigeons (Columba livia) study for a test? Journal of Experimental Psychology: Animal Behavior Processes. 2009;35:129–142. doi: 10.1037/a0013722. [DOI] [PubMed] [Google Scholar]
+Roebers CM, von der Linden N, Howie P. Favourable and unfavourable conditions for children’s confidence judgments. British Journal of Developmental Psychology. 2007;25:109–134. doi: 10.1348/026151006X104392. [DOI] [Google Scholar]
+Ruffman T. Nonverbal theory of mind: Is it important, is it implicit, is it simulation, is it relevant to autism? In: Astington JW, editor. Minds in the making. Cambridge, MA: Blackwell; 2000. pp. 456–479. [Google Scholar]
+Schloegl C, Dierks A, Gajdon GK, Huber L, Kotrschal K, Bugnyar T. What you see is what you get? Exclusion performances in ravens and keas. PloS ONE. 2009;4:e6368. doi: 10.1371/journal.pone.0006368. [DOI] [PMC free article] [PubMed] [Google Scholar]
+Schwartz BL. Sources of information in metamemory: Judgments of learning and feelings of knowing. Psychonomic Bulletin and Review. 1994;1:357–375. doi: 10.3758/BF03213977. [DOI] [PubMed] [Google Scholar]
+Serra MJ, Dunlosky J. Does retrieval fluency contribute to the underconfidence-with-practice effect? Journal of Experimental Psychology: Learning, Memory, and Cognition. 2005;31:1258–1266. doi: 10.1037/0278-7393.31.6.1258. [DOI] [PubMed] [Google Scholar]
+Shields WE, Smith JD, Guttmannova K, Washburn DA. Confidence judgments by humans and rhesus monkeys. Journal of General Psychology. 2005;132:165–186. [PMC free article] [PubMed] [Google Scholar]
+Shields WE, Smith JD, Washburn DA. Uncertain response by humans and rhesus monkeys (Macaca mulatta) in a psychophysical same-different task. Journal of Experimental Psychology: General. 1997;126:147–164. doi: 10.1037/0096-3445.126.2.147. [DOI] [PubMed] [Google Scholar]
+Smith JD. The study of animal metacognition. Trends in Cognitive Sciences. 2009;13:389–396. doi: 10.1016/j.tics.2009.06.009. [DOI] [PubMed] [Google Scholar]
+Smith JD, Beran MJ, Crossley MJ, Boomer J, Ashby FG. Implicit and explicit category learning by macaques (Macaca mulatta) and humans (Homo sapiens) Journal of Experimental Psychology: Animal Behavior Processes. 2010;36:54–65. doi: 10.1037/a0015892. [DOI] [PMC free article] [PubMed] [Google Scholar]
+Smith JD, Beran MJ, Redford JS, Washburn DA. Dissociating uncertainty responses and reinforcement signals in the comparative study of uncertainty monitoring. Journal of Experimental Psychology: General. 2006;135:282–297. doi: 10.1037/0096-3445.135.2.282. [DOI] [PubMed] [Google Scholar]
+Smith JD, Schull J, Strote J, McGee K, Egnor R, Erb L. The uncertain response in the bottlenosed dolphin (Tursiops truncatus) Journal of Experimental Psychology: General. 1995;124:391–408. doi: 10.1037/0096-3445.124.4.391. [DOI] [PubMed] [Google Scholar]
+Smith JD, Shields WE, Allendoerfer KR, Washburn DA. Memory monitoring by animals and humans. Journal of Experimental Psychology: General. 1998;127:227–250. doi: 10.1037/0096-3445.127.3.227. [DOI] [PubMed] [Google Scholar]
+Smith JD, Shields WE, Schull J, Washburn DA. The uncertain response in humans and animals. Cognition. 1997;62:75–97. doi: 10.1016/S0010-0277(96)00726-3. [DOI] [PubMed] [Google Scholar]
+Smith JD, Shields WE, Washburn DA. A comparative approach to metacognition and uncertainty monitoring. Behavioral and Brain Sciences. 2003;26:317–339. doi: 10.1017/s0140525x03000086. [DOI] [PubMed] [Google Scholar]
+Suda-King C. Do orangutans (Pongo pygmaeus) know when they do not remember? Animal Cognition. 2008;11:21–42. doi: 10.1007/s10071-007-0082-7. [DOI] [PubMed] [Google Scholar]
+Sutton JE, Shettleworth SJ. Memory without awareness: Pigeons do not show metamemory in delayed matching to sample. Journal of Experimental Psychology: Animal Behavior Processes. 2008;34:266–282. doi: 10.1037/0097-7403.34.2.266. [DOI] [PubMed] [Google Scholar]
+vanMarle K, Aw J, McCrink K, Santos LA. How capuchin monkeys (Cebus apella) quantify objects and substances. Journal of Comparative Psychology. 2006;120:416–426. doi: 10.1037/0735-7036.120.4.416. [DOI] [PubMed] [Google Scholar]
+Vaughan W, Greene SL. Pigeon visual memory capacity. Journal of Experimental Psychology: Animal Behavior Processes. 1984;10:256–271. doi: 10.1037/0097-7403.10.2.256. [DOI] [Google Scholar]
+Visalberghi E, Addessi E. Seeing group members eating a familiar food enhances the acceptance of novel foods in capuchin monkeys. Animal Behaviour. 2000;60:69–76. doi: 10.1006/anbe.2000.1425. [DOI] [PubMed] [Google Scholar]
+Washburn DA, Gulledge JP, Beran MJ, Smith JD. With his memory magnetically erased, a monkey knows he is uncertain. Biology Letters. 2010;6:160–162. doi: 10.1098/rsbl.2009.0737. [DOI] [PMC free article] [PubMed] [Google Scholar]
+Washburn DA, Rumbaugh DM. Testing primates with joystick-based automated apparatus: Lessons from the Language Research Center’s Computerized Test System. Behavior Research Methods, Instruments, & Computers. 1992;24:157–164. doi: 10.3758/bf03203490. [DOI] [PubMed] [Google Scholar]
+Washburn DA, Smith JD, Shields WE. Rhesus monkeys (Macaca mulatta) immediately generalize the Uncertain response. Journal of Experimental Psychology: Animal Behavior Processes. 2006;132:185–189. doi: 10.1037/0097-7403.32.2.185. [DOI] [PubMed] [Google Scholar]
+Weir AAS, Chappell J, Kacelnik A. Shaping of hooks in New Caledonian crows. Science. 2002;297:981. doi: 10.1126/science.1073433. [DOI] [PubMed] [Google Scholar]
+Whitebread DI. Interactions between children’s metacognitive abilities, working memory capacity, strategies and performance during problem-solving. European Journal of Psychology of Education. 1999;14:489–507. [Google Scholar]
+Wright AA. Visual list memory in capuchin monkeys (Cebus apella) Journal of Comparative Psychology. 1999;113:74–80. doi: 10.1037/0735-7036.113.1.74. [DOI] [PubMed] [Google Scholar]
+Wright AA, Katz JS. Mechanisms of same/different concept learning in primates and avians. Behavioural Processes. 2006;72:234–254. doi: 10.1016/j.beproc.2006.03.009. [DOI] [PubMed] [Google Scholar]
+Zentall TR, Stagner JP. Pigeons prefer conditional stimuli over their absence: A comment on Roberts et al. (2009) Journal of Experimental Psychology: Animal Behavior Processes. 2010;36:506–509. doi: 10.1037/a0020202. [DOI] [PubMed] [Google Scholar]
+ACTIONS
+View on publisher site
+PDF (936.7 KB)
+Cite
+Collections
+Permalink
+PERMALINK
+Copy
+RESOURCES
+Similar articles
+Cited by other articles
+Links to NCBI Databases
+Cite
+Copy
+Download .nbib
+.nbib
+Format:
+AMA
+APA
+MLA
+NLM
+Add to Collections
+Create a new collection
+Add to an existing collection
+Name your collection
+*
+Choose a collection
+Unable to load your collection due to an error
+Please try again
+Add
+Cancel
+Follow NCBI
+NCBI on X (formerly known as Twitter)
+NCBI on Facebook
+NCBI on LinkedIn
+NCBI on GitHub
+NCBI RSS feed
+Connect with NLM
+NLM on X (formerly known as Twitter)
+NLM on Facebook
+NLM on YouTube
+National Library of Medicine
+8600 Rockville Pike Bethesda, MD 20894
+Web Policies
+FOIA
+HHS Vulnerability Disclosure
+Help
+Accessibility
+Careers
+NLM
+NIH
+HHS
+USA.gov
+Back to Top

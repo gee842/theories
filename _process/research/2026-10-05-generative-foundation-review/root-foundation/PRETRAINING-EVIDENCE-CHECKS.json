@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "scope": "Links, owned-fragment recovery and saved evidence; no scientific rerun.",
+  "local_link_targets": 84,
+  "owned_edits": 12,
+  "recovered_files": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md": true,
+    "RESEARCH.md": true,
+    "theories/shengsheng-buxi-generative-existence/README.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": true,
+    "experiments/integrated-correction/general-framework/generative-basis/lean/README.md": true,
+    "sources/SOURCES.md": true
+  },
+  "concurrent_changes_preserved": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md"
+  ],
+  "checked_source_and_receipt_pins": 70,
+  "source_original_sha256": "d6c932d2e203330f34ae8fc17e948e75261d4c19b930348d25ac033fcb488645",
+  "combined_modules": 60,
+  "new_theorem_audits": 16,
+  "retained_empty_contracts": 39,
+  "complete_schedules": 176,
+  "blocked_schedules": 80,
+  "complete_foundation_established": false,
+  "checker_sha256": "84e65d5fb9ba20c0db3dccf2409f361efd035c73f2fb7e492918ecf8ead377b0",
+  "documents": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-REVIEW.md": "1f23ec69024f862a03634ab90bcb895f39f536572ae8359c5201d9d9181ac58f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-ARGUMENT.md": "07b37d8c47c9f866e0d1041234bea65895549075c310d5c3e0f4fa090e8c9fa7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-MECHANISM.md": "d245a8f2089bd552dd3a071e2aec7dbf57d720e8f6afc21d779a82c08ad098f9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-SOURCES.md": "f478ee0829c4951edce2ca765fed8ae869aa49c40f486388e80ed80f6bc9d412",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md": "f5162cc98d5a015e4a885bb2dc1c42e8ef725cf784627b4f2cbf123cb2d8fe6f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/README.md": "c758613007111ff3a04c3a4602e823b07347978a03d4cab6eb28635a154443e3",
+    "sources/37-ethical-minimum-primary-2026-10-06/pretraining-evidence/README.md": "55400e57bcd815165d800cb4e6eb6fbea05c6d7c221dab37b0467d8467fe7ffd"
+  }
+}

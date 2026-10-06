@@ -1,0 +1,43 @@
+# Formed preferences, retained agency and rational nonreconsideration
+
+6 October 2026. AI-authored primary comparison for **actual response → changed evaluative capacity → warranted reconsideration within the same history**. The [argument](RELIEF-AND-REOPENED-EVALUATION.md) tests a response-specific restriction after genuine relief; the [mechanism reconstruction](RELIEF-AND-RECONSIDERATION-MECHANISM.md) specifies what an actual realization must preserve. These are philosophical comparisons, not new evidence that a particular intervention produces the proposed restriction.
+
+## Two primary constraints on the proposed comparison
+
+**Khader (2012).** Her account allows people to exercise agency while sustaining oppressive arrangements. Choosing among constrained options can express accurate understanding and valued aims; it need not show damaged evaluation. She separates criticism of an arrangement from a license to coerce its participants. Her alternative explicitly relies on basic welfare and a limited perfectionist commitment, rather than deriving all evaluation from autonomy. This constrains diagnoses based only on observed preference. It does not provide our foundation with a premise-free welfare criterion. Read the main argument in the [author manuscript](https://www.serenekhader.com/uploads/5/6/6/4/56647983/penultimate_must_theorizing_about_aps_deny_womens_agency_v02.pdf), pp.1–12 (§§1–5).
+
+**Holton (2004).** His account distinguishes rational persistence from continually reopening an intention. The discussion retains the ability to reconsider while defending some nonexercise of it. Anticipated temptation can favor persistence; changed grounds or significant mistakes can favor reconsideration. He offers fallible, context-sensitive guidance rather than a complete decision rule. This challenges an automatic preference for more reflection, without defending every imposed incapacity. Focused reading: [author manuscript](https://web.mit.edu/holton/www/pubs/rational.resolve.us.pdf), introduction pp.1–3, relevant discussion pp.12–14 and16–18, with adjacent context.
+
+The [preserved originals and manifest](../../../../sources/37-ethical-minimum-primary-2026-10-06/relief-reconsideration/README.md) distinguish manuscripts from published versions and record reading coverage. These readings do not independently verify the empirical studies the authors discuss. A preliminary search located Christman's historical-autonomy work; no full primary reading of it is relied upon here.
+
+## What changes in our own proposed test
+
+The comparison must establish the claimed selective restriction independently of the answer the investigator wants. In one idealized history, a response genuinely relieves an aversive condition while leaving the affected person able to evaluate relevant later considerations about that response. In another, genuine relief remains, but the response also prevents those considerations from entering its own reassessment. An unchanged decision, a disliked preference or an unwillingness to enter the investigator's programme does not distinguish these histories.
+
+This is not a claim that the person becomes generally incapable or lacks a real perspective. The alleged restriction concerns a declared range of considerations about the response's continuing use. The test must also distinguish lack of relevant evidence, lack of safe alternatives, high costs, reasoned refusal and voluntary settlement. If the person accurately sees that every available alternative would be worse, retaining the current response does not establish selective exclusion. An intervention offered as liberation can worsen that real option set.
+
+The proposed positive action must therefore have a defensible target: restoring a usable way to assess a particular live consequence or option, where doing so can protect an independently supported good. It is not successful only when the person changes their mind. A reconsidered endorsement may preserve the earlier course for reasons that were actually assessed. Conversely, the mere existence of an unused option does not establish an extra present benefit, and unwanted continual assessment can impose its own burden.
+
+A genuine resolution also needs to remain a serious control. A planned refusal to revisit anticipated temptation is different from a response-produced inability to assess a relevant change beyond that plan's defended scope. The proposal must show which case it has identified. Neither time passing nor a new proposition by itself defeats a valid settlement. The account cannot settle this by defining all stability as rigidity or every new preference as authentic.
+
+These are applications and refinements developed here, not theories attributed wholesale to either source. They continue the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): understanding, valuation, actual options and responses can change together. An independently assessable difference in their relation must carry the argument, rather than an imagined pre-social owner whose unaltered preference always governs.
+
+## What the comparison does not establish
+
+The source contrast rules out two shortcuts for this inquiry: diagnosing loss of agency from unwelcome preference alone, and identifying adequate concern with maximizing reconsideration. It does not prove that there is no value in agency, that every informed endorsement is conclusive, or that the proposed selective restriction is physically realized in the present model.
+
+Our strongest current positive route is conditional and prospective: a permitted, proportionate reopening can restore responsiveness to an independently warranted changing good. The significance of that good and the practical force it has for an independent responder still need justification within the foundation. Merely substituting the word autonomy for welfare would not supply it. A different argument that establishes a present participation good could strengthen the result, but the existing [opportunity analysis](HUIGEN-SELF-GROUND-AUDIT.md#47-opportunity-and-the-good-of-the-recipient) must be credited and its live rival retained.
+
+The comparison would need revision if the alleged incapacity were really a reasonable refusal, if an intervention removed the only safe means of living with the condition, or if the defended reasons for settlement remained intact. Evidence of a selective acquired restriction and an effective permissible way to reopen its relevant use would strengthen the realization claim. Neither would alone establish an unlimited duty, coercive power or universal moral foundation.
+
+## Independent bounded source review
+
+6 October 2026. A separate internal reviewer checked the claims above against the primary manuscripts, rather than another summary. The review accepts the comparison at its stated scope; no substantive correction is required.
+
+For **Khader**, the reviewer read the body of the preserved manuscript, pp.1–12 (§§1–5), using normalized local text extraction. The retained-agency and constrained-option distinctions are supported. Noncoercion remains qualified: p.10 allows coercion in some rare cases of global autonomy deficit. The objective-welfare commitment is explicit on pp.8–9. The present note does not attribute a blanket prohibition to her. The later endnotes and underlying field studies were not independently investigated.
+
+For **Holton**, the reviewer checked the introduction and focused passages in the author-hosted primary PDF's web text, especially printed pp.8–9,12–14 and16–18. Retained capacity is explicit on pp.8–9 and12; the guidance and its unresolved tensions appear on pp.17–18. The distinction between nonexercise and incapacity therefore rests on the source itself. This is a bounded reading, not a full-paper review. Printed page numbers are one greater than the web tool's zero-indexed PDF page labels.
+
+Both preserved PDFs match the byte counts and SHA-256 hashes in the [manifest](../../../../sources/37-ethical-minimum-primary-2026-10-06/relief-reconsideration/manifest.json). The seven pre-existing local links across this note and the source-directory README resolve, including the opportunity-analysis anchor. No scientific experiment or formal proof was rerun for this source review.
+
+These checks support using the authors as constraints on the proposed comparison. They do not independently establish the actual selective impairment, a permissible remedy, or the universal practical force of another's good. Those remain this project's separate explanatory and justificatory tasks.

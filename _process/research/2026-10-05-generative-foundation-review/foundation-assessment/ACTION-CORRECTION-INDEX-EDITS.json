@@ -1,0 +1,69 @@
+{
+  "scope": "Five narrow index additions and one scope clarification, preserving concurrent content.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "f9892f77a804e4c71b70ea713fe9b518d73895e36067c3a56e234c8b34ab901e",
+      "after_sha256": "2118bc8a0f62da4fd5399996b9d8da9b99a24d6989fc925de6523872bafbfc9e",
+      "inserted_paragraph": "**Actual scoped AI correction, 6 October 2026:** the [four-case maintenance study](experiments/agentdojo-evidence-boundary/correction-action/RESULTS.md) now connects a genuine audit correction to a learned agent’s executable repair and independently reproduced file effects. The other three contexts correctly preserve completed or permission-protected artifacts. The [canonical action account](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md#current-correction-carried-into-executable-maintenance) distinguishes supplied scientific/authority standards, substantive diagnosis, persistent effects and unobserved operations. [Independent review](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md) accepts the four bounded outcomes. This advances the existing practical interface; concern formation, justified evaluative scope and an effective general alignment/governance arrangement remain substantive work.",
+      "operations": [
+        {
+          "before": "# Current theory and research\n\n",
+          "after": "# Current theory and research\n\n**Actual scoped AI correction, 6 October 2026:** the [four-case maintenance study](experiments/agentdojo-evidence-boundary/correction-action/RESULTS.md) now connects a genuine audit correction to a learned agent’s executable repair and independently reproduced file effects. The other three contexts correctly preserve completed or permission-protected artifacts. The [canonical action account](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md#current-correction-carried-into-executable-maintenance) distinguishes supplied scientific/authority standards, substantive diagnosis, persistent effects and unobserved operations. [Independent review](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md) accepts the four bounded outcomes. This advances the existing practical interface; concern formation, justified evaluative scope and an effective general alignment/governance arrangement remain substantive work.\n\n"
+        }
+      ]
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "843c46a30c134ffb9cae94073b6362b4b60635c29bccd3f3fc6e5d0efd07ccc6",
+      "after_sha256": "ae08b3b2be8bd4c544f6b8600e1181ff5c0f57343773c212d608c7eee69a331d",
+      "inserted_paragraph": "**Correction reaching actual AI action, 6 October 2026:** the [new local maintenance result](unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md#current-correction-carried-into-executable-maintenance) adds one learned-agent executable repair with independently reproduced outputs and three appropriate preservation endpoints across current need and permission. The supplied contract and authority remain explicit; four work contexts and the 320 reused input traces have different evidential roles. The full foundation and alignment objectives remain governed by their existing requirements.",
+      "operations": [
+        {
+          "before": "# Generative Existence (生生不息论)\n\n",
+          "after": "# Generative Existence (生生不息论)\n\n**Correction reaching actual AI action, 6 October 2026:** the [new local maintenance result](unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md#current-correction-carried-into-executable-maintenance) adds one learned-agent executable repair with independently reproduced outputs and three appropriate preservation endpoints across current need and permission. The supplied contract and authority remain explicit; four work contexts and the 320 reused input traces have different evidential roles. The full foundation and alignment objectives remain governed by their existing requirements.\n\n"
+        }
+      ]
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "4a9124ed8e7897abc7f27dee3fafb7a44f30da0f24c006cf06dae7894bb66309",
+      "after_sha256": "4d7803b638aa6bfe4314ba5d5abea6d6a06c4357c1693a9b76ba675d964d8405",
+      "inserted_paragraph": "**Supporting practical-action interface, 6 October 2026:** [four fresh maintenance contexts](TOOL-EVIDENCE-AND-AUTHORITY.md#current-correction-carried-into-executable-maintenance) now test whether an applicable correction changes actual executable code and reports while independent findings and current permission are preserved. A saved worker repair reproduces the warranted outputs in a separate run; the other three conditions correctly preserve their primary artifacts. This is a supplied-contract application with actual local effects, not a derivation of ethical standing or concern from successful task performance. The remaining evaluative formation, justified application and common explanatory account retain their own active studies and acceptance scopes; this closed local test adds no completion gate.",
+      "operations": [
+        {
+          "before": "## The derivation and the existing work\n\n",
+          "after": "## The derivation and the existing work\n\n**Supporting practical-action interface, 6 October 2026:** [four fresh maintenance contexts](TOOL-EVIDENCE-AND-AUTHORITY.md#current-correction-carried-into-executable-maintenance) now test whether an applicable correction changes actual executable code and reports while independent findings and current permission are preserved. A saved worker repair reproduces the warranted outputs in a separate run; the other three conditions correctly preserve their primary artifacts. This is a supplied-contract application with actual local effects, not a derivation of ethical standing or concern from successful task performance. The remaining evaluative formation, justified application and common explanatory account retain their own active studies and acceptance scopes; this closed local test adds no completion gate.\n\n"
+        }
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "before_sha256": "5a45a93efbd0301438361aba9f4f4febfd88478104fbe95a3c0d831d8021f950",
+      "after_sha256": "acc741a652cd2059a992376cd7ea11801cfce0ff9c89d2ab53d46abcce836d4c",
+      "inserted_paragraph": "**Completed local correction/action study, 6 October 2026:** the [results](../../../../experiments/agentdojo-evidence-boundary/correction-action/RESULTS.md) add four fresh AI maintenance contexts with verified persistent effects. [Design](ACTION-CORRECTION-DESIGN.md), [evidence/scope](ACTION-CORRECTION-EVIDENCE.md), [frozen prospective review](ACTION-CORRECTION-REVIEW.md) and [independent outcome review](ACTION-CORRECTION-RESULTS-REVIEW.md) retain the distinct questions. The [integration receipt](ACTION-CORRECTION-INTEGRATION.json) binds preservation, unchanged requirements and index updates. Actual repair and current-permission selectivity are established only at this provided task’s scope; full alignment/governance and concern remain open.",
+      "operations": [
+        {
+          "before": "# Foundation assessment review materials\n\n",
+          "after": "# Foundation assessment review materials\n\n**Completed local correction/action study, 6 October 2026:** the [results](../../../../experiments/agentdojo-evidence-boundary/correction-action/RESULTS.md) add four fresh AI maintenance contexts with verified persistent effects. [Design](ACTION-CORRECTION-DESIGN.md), [evidence/scope](ACTION-CORRECTION-EVIDENCE.md), [frozen prospective review](ACTION-CORRECTION-REVIEW.md) and [independent outcome review](ACTION-CORRECTION-RESULTS-REVIEW.md) retain the distinct questions. The [integration receipt](ACTION-CORRECTION-INTEGRATION.json) binds preservation, unchanged requirements and index updates. Actual repair and current-permission selectivity are established only at this provided task’s scope; full alignment/governance and concern remain open.\n\n"
+        }
+      ]
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/README.md",
+      "before_sha256": "b9c6746d36ab337d91fde7fdd75053c0161d401e169d99c48fbc24feef1fba95",
+      "after_sha256": "470fb5d834f8efadbd7b88d1a7e61954fd115efb38c5b0ec96a4d0edd691af3b",
+      "inserted_paragraph": "**Later prospective action test, 6 October 2026:** [four fresh maintenance contexts](correction-action/RESULTS.md) reenacted the genuine counterpart repair in isolated copies by task instruction, without OS isolation. One worker repaired code and regenerated verified results; the three other need/permission combinations appropriately preserved primary artifacts. The inputs, scorer and review were frozen before dispatch. This separate local-action study adds four model contexts while preserving all original retrospective sources and analyses; its [independent review](../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md) retains the supplied-authority and final-effect limits.",
+      "operations": [
+        {
+          "before": "# AgentDojo: external evidence, authority and action\n\n",
+          "after": "# AgentDojo: external evidence, authority and action\n\n**Later prospective action test, 6 October 2026:** [four fresh maintenance contexts](correction-action/RESULTS.md) reenacted the genuine counterpart repair in isolated copies by task instruction, without OS isolation. One worker repaired code and regenerated verified results; the three other need/permission combinations appropriately preserved primary artifacts. The inputs, scorer and review were frozen before dispatch. This separate local-action study adds four model contexts while preserving all original retrospective sources and analyses; its [independent review](../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md) retains the supplied-authority and final-effect limits.\n\n"
+        },
+        {
+          "before": "This experiment adds no model training, live banking action or new model call.",
+          "after": "The retrospective analyses below add no model training, live banking action or new model call."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+'Generative.Applicability.ledger_trace_iff' does not depend on any axioms
+'Generative.Applicability.recordCompletion' does not depend on any axioms
+'Generative.Applicability.actual_certificate_and_fixed_assessment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.Applicability.actual_acquired_outcome_keeps_assessment' depends on axioms: [propext, Quot.sound]

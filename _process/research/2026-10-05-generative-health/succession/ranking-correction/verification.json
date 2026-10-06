@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-06",
+  "scope": "Interpretation correction and nondual reconstruction; no new scientific run, model or proof.",
+  "owned_documents": [
+    "_process/research/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md",
+    "_process/research/2026-10-05-generative-health/succession/SCORING-SCOPE-REVIEW.md",
+    "_process/research/2026-10-05-generative-health/succession/RECONSTRUCTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-health/succession/ANSWER.md",
+    "_process/research/2026-10-05-generative-health/ANSWER.md",
+    "experiments/constructive-succession/README.md",
+    "sources/15-codex-theory-conversations/2026-10-06-ranking-and-nondual-evaluation.md"
+  ],
+  "shared_documents": "Only correction paragraphs added; unrelated concurrent changes preserved.",
+  "shared_paths": [
+    "RESEARCH.md",
+    "sources/SOURCES.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+  ],
+  "preservation": {
+    "_process/research/2026-10-05-generative-health/succession/ANSWER.md": {
+      "verified_path": "_process/research/2026-10-05-generative-health/succession/ranking-correction/ANSWER-before-correction.md",
+      "sha256": "1404be700f6539cc9373bcd2dfb41e9a63c963067dedbca276ea7be602baaed8",
+      "matches": true
+    },
+    "experiments/constructive-succession/model.py": {
+      "verified_path": "experiments/constructive-succession/model.py",
+      "sha256": "539f0c0de887a0f0623df01349f66f8c9e1c66696976151bd157bd7cb86dd94c",
+      "matches": true
+    },
+    "experiments/constructive-succession/results/summary.json": {
+      "verified_path": "experiments/constructive-succession/results/summary.json",
+      "sha256": "5bc182c13acd33a60e253c66166d7927fd3800bc074745e64a6c260ba291b4cf",
+      "matches": true
+    },
+    "experiments/constructive-succession/results-access/summary.json": {
+      "verified_path": "experiments/constructive-succession/results-access/summary.json",
+      "sha256": "46c6511b3ae77c24a9fbbf66c51a658f42771debbc474afd9826eb481a3fcb39",
+      "matches": true
+    }
+  },
+  "local_link_targets_checked": 72,
+  "missing_link_targets": [],
+  "anchor_checks": [
+    {
+      "file": "_process/research/2026-10-05-generative-health/succession/RECONSTRUCTION-REVIEW.md",
+      "link": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions",
+      "matches_heading": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-health/succession/RECONSTRUCTION-REVIEW.md",
+      "link": "../../2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-MECHANISM.md#2-三个方面来自同一次活动的共同方程",
+      "matches_heading": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "unified-2026-10-05/GENERATIVE-GROUNDING.md#what-universality-means-here",
+      "matches_heading": true
+    }
+  ],
+  "diff_check_exit_code": 0,
+  "diff_check_output": "",
+  "reviews": [
+    "SCORING-SCOPE-REVIEW.md",
+    "RECONSTRUCTION-REVIEW.md"
+  ],
+  "review_integration": "Final precision review accepted: explicit universal quantifier, partial-measure scope, and mechanism antecedents.",
+  "scientific_rerun": false
+}

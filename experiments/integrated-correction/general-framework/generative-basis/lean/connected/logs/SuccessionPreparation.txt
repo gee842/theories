@@ -1,0 +1,8 @@
+'SuccessionPreparation.runnable_trace' depends on axioms: [propext]
+'SuccessionPreparation.prospective_formation_feasible' depends on axioms: [propext]
+'SuccessionPreparation.prospective_formation_trace' depends on axioms: [propext]
+'SuccessionPreparation.formation_endpoint' depends on axioms: [propext]
+'SuccessionPreparation.assemblies_feasible' does not depend on any axioms
+'SuccessionPreparation.material_partition' depends on axioms: [propext]
+'SuccessionPreparation.exact_parent_prepared_projection' depends on axioms: [propext]
+'SuccessionPreparation.original_compartments' does not depend on any axioms

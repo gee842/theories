@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T07:16:46.206242+00:00",
+  "scope": "Owned document links, exact recovery of owned edits, and current binding of the completed formal receipt, sources and logs. Pure insertions remain recoverable when concurrent additions move their anchor. Unrelated concurrent edits preserved. No second scientific run.",
+  "local_links_checked": 88,
+  "anchors_checked": 15,
+  "source_bound_formal_modules": 28,
+  "new_formal_audits": 18,
+  "formal_receipt_sha256": "160459f397ea341ff9480ed01d5ab892a8f97fe84a5eb2bab51b5acfbead02c5",
+  "document_sha256": {
+    "RESEARCH.md": "abb7ceda702cfe16177aa91c1734e1659a1ea19e5e1b50571bef15d8e87e0d68",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "e97e0e14cf8422295a47eb96bba0e674bccad518a6248b33711722a5c0ae82cf",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-EDITS.json": "acb5103017985a86d67fd12dd1b19d220b389b728e48ad34564619a766af88e3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md": "aa19915442e06febd21f0d8cc58d880ff3880fafa4576bb71c173f274d9d08cd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-MATH.md": "60ede819df42848dcda01c4c06ad4212c574235cbb737e8921d7bc9f0972476a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md": "3766377bd4c6449960dba13aea2a323e83c79ebcbce87d2011a9308d5f19df41",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md": "bfaad5f2240f378bef5838aa86e2f83507a2defc400001396b1eb5fd0500a7d6",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": "b0bf3baddfd2ed7cb8c5816df4357793476228d9c9192ee78194b6ad5bceafb0",
+    "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md": "d789e6b7d03fa84c57adb906e9fd6fc35b77165ce44d0d11a258b6636d0b19ef",
+    "sources/SOURCES.md": "288fc82bd449d30d6663859ac99f37bae2cd0adeac32184b9b99fd704c0fac41",
+    "theories/shengsheng-buxi-generative-existence/README.md": "25b4a6bc388d936d985fe8274ed867ee2af12881c60b9cdf6cc8ad4d052cb64b",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md": "e12e9b14a0280c27a6a114325d712f4f01eb446c27341406af8aed0802982fe3",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "afd4e6848760ce16fc7de57fba871ce48b4e3734cbfc7c98b2d4cef9937e5937",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "6196ace9ddd94c2444779dafc2defa094d0c2458439a64251d52c356dc9f5d86",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md": "2398ea610e5c38dd44cadf61fad3d7d81720d16762707f4fc77a60d0dd1d83e4",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": "1698b6b46debd9ed52888d0b3dc98d0a455919f98f7f7b48788f33b12a7c1e06",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md": "cc38e7584132c6d0d2c40f8fe30c0d4e16f76284454a310b62745d509dc220be"
+  },
+  "owned_edit_recovery": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": {
+      "owned_edits": 6,
+      "owned_edits_recovered": 6,
+      "all_earlier_bytes_reconstructed": true,
+      "later_changes_outside_owned_fragments_preserved": false
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": true,
+      "later_changes_outside_owned_fragments_preserved": false
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": false,
+      "later_changes_outside_owned_fragments_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": true,
+      "later_changes_outside_owned_fragments_preserved": false
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": false,
+      "later_changes_outside_owned_fragments_preserved": true
+    },
+    "RESEARCH.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": false,
+      "later_changes_outside_owned_fragments_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": false,
+      "later_changes_outside_owned_fragments_preserved": true
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": false,
+      "later_changes_outside_owned_fragments_preserved": true
+    },
+    "sources/SOURCES.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": false,
+      "later_changes_outside_owned_fragments_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": true,
+      "later_changes_outside_owned_fragments_preserved": false
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": {
+      "owned_edits": 1,
+      "owned_edits_recovered": 1,
+      "all_earlier_bytes_reconstructed": true,
+      "later_changes_outside_owned_fragments_preserved": false
+    }
+  },
+  "assumption_free_universal_completion_claimed": false,
+  "errors": []
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-06",
+  "scope": "Comparison note links and V7.3 byte preservation only; no scientific validation rerun.",
+  "note_sha256": "16f392cb911799287dcbbf3e98d7eebfca431dbad42ee5d01e7a17987ed71a91",
+  "local_links_checked": 32,
+  "errors": [],
+  "v73_source_files_checked": 109,
+  "v73_source_changed": [],
+  "separate_reviews": [
+    "V7.3 additional mechanisms and current overlap",
+    "V3\u2013V6 genealogy and later corrections",
+    "V6.1\u2013V7.2 corrections plus latest Lean scope"
+  ],
+  "passed": true
+}

@@ -1,0 +1,6 @@
+'Generative.ConnectedModel.permission_cut_step' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_trial_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_bank_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_step_preserves_patient' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_trace' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_connected_accounts' depends on axioms: [propext, Quot.sound]

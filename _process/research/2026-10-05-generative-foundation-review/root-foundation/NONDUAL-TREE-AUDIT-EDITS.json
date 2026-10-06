@@ -1,0 +1,20 @@
+{
+  "scope": "Exact wording changes only; inherited theorem/countermodel sources and receipts unchanged. Prior wording retained here.",
+  "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+  "before_sha256": "1174968b35ec4ea8cd68a009b371f0ecb1fadc699b118b159802f79705027f1f",
+  "after_sha256": "2a61d09707ca5e459fc794d48f230156e4a4826d16d72f0445491f1aa6112ad9",
+  "changes": [
+    {
+      "before": "A declared physical law, construction recipe, valuation rule or ethical ground is still unexplained wherever the foundation's conclusion depends on it and its justification remains external.",
+      "after": "A declared physical law, construction recipe, valuation rule or ethical ground remains an explanatory dependency wherever the conclusion uses it and the account under review has not established its support. Here a locally supplied input is not thereby outside generative reality; the audit must determine what the connected account already explains and what it still leaves unresolved."
+    },
+    {
+      "before": "## 3. The first concrete gap: distinctions do not select a dynamics",
+      "after": "## 3. The gap in the distinction-only route: distinctions do not select a dynamics"
+    },
+    {
+      "before": "The immediate root investigation is therefore **proposed generative root → the occurrence and transformation claims it actually entails**. Audit distinction → occurrence → changing conditions separately, using the idle/static/toggle alternatives as tests of each advertised implication. A proposed richer root must show why its added content is warranted and which particular claim it supports; simply installing another generator would reproduce the gap.",
+      "after": "For the distinction-only route, audit distinction → occurrence → changing conditions separately, using the idle/static/toggle alternatives as tests of its advertised implications. This does not prescribe the starting sequence for the whole foundation. The current [nondual continuation](NONDUAL-TREE-CONTINUATION.md) begins with the proposed generative unfolding and reconstructs its actual relationships before assessing what its representation omits or leaves unexplained. Its stronger claims still require support and genuine revision conditions; calling supplied content immanent does not by itself explain it."
+    }
+  ]
+}

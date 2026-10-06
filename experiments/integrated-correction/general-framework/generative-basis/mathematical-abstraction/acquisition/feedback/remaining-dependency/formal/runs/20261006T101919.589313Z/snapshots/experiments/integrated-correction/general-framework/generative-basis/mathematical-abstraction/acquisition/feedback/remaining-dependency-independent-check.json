@@ -1,0 +1,653 @@
+{
+  "status": "passed",
+  "scope": "Independent reconstruction of the additive relay/dependency suffix with source-bound independent parent checking",
+  "results_sha256": "424540b7688e836b8357b86adf1ae7f3382349c7581abe83df37d36ccbae72b2",
+  "check_source_sha256": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb",
+  "prospective_protocol_sha256": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+  "source_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py": "75e715f1a7a0af499a39887e3fc9b38d88b66125d313361de851c421d9197127",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry_check_review.py": "3770a15d141d5e6e998fb8cf3f241f5397786415525653577c4d7d06fdde0b78",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement_check_review.py": "456b2aec248f1a36eab3845eff18903b1f7a3789b927918924950127a6411202",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb"
+  },
+  "unique_source_bindings": 19,
+  "preparation": {
+    "states": 20,
+    "terminal_states": 5,
+    "commissioning_probability": "2/9"
+  },
+  "parent_count": 3,
+  "overlapping_ancestry_transitions": 28,
+  "inherited_inquiry_events": 66,
+  "acquisition_and_first_use_events": 276,
+  "case_count": 28,
+  "continuation_state_points": 362,
+  "ancestry_admissible_cases": 27,
+  "conditional_suffix_only_cases": [
+    {
+      "name": "capacity_forty",
+      "declared_capacity": 40,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": false
+    }
+  ],
+  "ancestry_capacity_checks": [
+    {
+      "name": "law_00_learned",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_00_clamped",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_00_conventional",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_01_learned",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_01_clamped",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_01_conventional",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_10_learned",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_10_clamped",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_10_conventional",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_11_learned",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_11_clamped",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "law_11_conventional",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "missing_first",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "missing_second",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "wrong_context",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "wrong_setting",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "false_positive_first",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "false_negative_second",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "both_complemented",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "calibration_break",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "context_change",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "source_exhausted",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "false_dependence",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "wait_eight",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "wait_nine",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "wait_ten",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    },
+    {
+      "name": "capacity_forty",
+      "declared_capacity": 40,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": false
+    },
+    {
+      "name": "unfulfilled_parent",
+      "declared_capacity": 256,
+      "actual_inherited_peak": 114,
+      "whole_history_capacity_admissible": true
+    }
+  ],
+  "successful_charged_events": 325,
+  "matched_pairs": [
+    {
+      "law": "00",
+      "matched_events_before_commit": 11,
+      "conventional_full_match": true
+    },
+    {
+      "law": "01",
+      "matched_events_before_commit": 11,
+      "conventional_full_match": true
+    },
+    {
+      "law": "10",
+      "matched_events_before_commit": 11,
+      "conventional_full_match": true
+    },
+    {
+      "law": "11",
+      "matched_events_before_commit": 11,
+      "conventional_full_match": true
+    }
+  ],
+  "rejected_mutations": [
+    "completion_erased",
+    "false_report_hidden",
+    "contact_did_not_consume_pending",
+    "wrong_selected_setting",
+    "free_actor_return",
+    "unconsumed_hold",
+    "conserving_but_wrong_destination"
+  ],
+  "cases": [
+    {
+      "name": "law_00_learned",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        0,
+        0
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "law_00_clamped",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        0,
+        0
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "law_00_conventional",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        0,
+        0
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "law_01_learned",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "214009/32768",
+      "values": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "load": 10,
+      "waste": 0
+    },
+    {
+      "name": "law_01_clamped",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        0,
+        1
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "law_01_conventional",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "214009/32768",
+      "values": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "load": 10,
+      "waste": 0
+    },
+    {
+      "name": "law_10_learned",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "222201/32768",
+      "values": [
+        1,
+        0
+      ],
+      "selected": 0,
+      "load": 10,
+      "waste": 0
+    },
+    {
+      "name": "law_10_clamped",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        1,
+        0
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "law_10_conventional",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "222201/32768",
+      "values": [
+        1,
+        0
+      ],
+      "selected": 0,
+      "load": 10,
+      "waste": 0
+    },
+    {
+      "name": "law_11_learned",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "222201/32768",
+      "values": [
+        1,
+        1
+      ],
+      "selected": 0,
+      "load": 10,
+      "waste": 0
+    },
+    {
+      "name": "law_11_clamped",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        1,
+        1
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "law_11_conventional",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "222201/32768",
+      "values": [
+        1,
+        1
+      ],
+      "selected": 0,
+      "load": 10,
+      "waste": 0
+    },
+    {
+      "name": "missing_first",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        null,
+        1
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "missing_second",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        0,
+        null
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "wrong_context",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        null,
+        1
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "wrong_setting",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        0,
+        null
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "false_positive_first",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "222201/32768",
+      "values": [
+        1,
+        1
+      ],
+      "selected": 0,
+      "load": 0,
+      "waste": 10
+    },
+    {
+      "name": "false_negative_second",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "240229/32768",
+      "values": [
+        0,
+        0
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "both_complemented",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "222201/32768",
+      "values": [
+        1,
+        0
+      ],
+      "selected": 0,
+      "load": 0,
+      "waste": 10
+    },
+    {
+      "name": "calibration_break",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "214009/32768",
+      "values": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "load": 0,
+      "waste": 10
+    },
+    {
+      "name": "context_change",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 17,
+      "fuel": "214009/32768",
+      "values": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "load": 0,
+      "waste": 10
+    },
+    {
+      "name": "source_exhausted",
+      "status": "source_unavailable:full_load_transfer",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "321053/32768",
+      "values": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "false_dependence",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 16,
+      "fuel": "214009/32768",
+      "values": [
+        0,
+        1
+      ],
+      "selected": 1,
+      "load": 0,
+      "waste": 10
+    },
+    {
+      "name": "wait_eight",
+      "status": "funding:dependency_slot_write",
+      "retention_status": "funding:dependency_retention",
+      "states": 12,
+      "fuel": "31/4096",
+      "values": [
+        0,
+        null
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "wait_nine",
+      "status": "funding:dependency_contact",
+      "retention_status": "funding:dependency_retention",
+      "states": 7,
+      "fuel": "369/4096",
+      "values": [
+        null,
+        null
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "wait_ten",
+      "status": "funding:dependency_installation",
+      "retention_status": "not_installed",
+      "states": 3,
+      "fuel": "28813/32768",
+      "values": [
+        null,
+        null
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "capacity_forty",
+      "status": "capacity:dependency_installation",
+      "retention_status": "not_installed",
+      "states": 2,
+      "fuel": "178253/16384",
+      "values": [
+        null,
+        null
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    },
+    {
+      "name": "unfulfilled_parent",
+      "status": "entrance_not_retained_component_stop",
+      "retention_status": "not_installed",
+      "states": 2,
+      "fuel": "591/8192",
+      "values": [
+        null,
+        null
+      ],
+      "selected": null,
+      "load": 0,
+      "waste": 0
+    }
+  ],
+  "limitations": [
+    "Reviewer advised design; independent reconstruction is not blind replication.",
+    "Existing independent ancestry helper and archived learning-event comparison are reused; original sensory learning is not independently reimplemented.",
+    "The frozen capacity40-from-start claim is rejected: inherited acquisition peaks at114. Its suffix remains only a conditional capacity-guard test, not one of the27 admissible ancestral histories.",
+    "New dormant relay/load, assay family, calibration, schedule, full-pair gate and undertaking remain supplied local premises.",
+    "The material continuing-dependency study has a different law and endpoint; this does not implement its native acquired-reader interface.",
+    "No empirical identification, global optimality, learned ethical warrant or final acquired service-success claim."
+  ]
+}

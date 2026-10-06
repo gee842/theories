@@ -1,0 +1,521 @@
+{
+  "created_at_utc": "2026-10-06T10:49:51.168842+00:00",
+  "status": "passed at owned-content scope; concurrent surrounding changes and moved append context recorded",
+  "scope": "Owned text reversibility, new-span local links/anchors, current numbered section uniqueness, protected Lean and supporting-note hashes. Original snapshot comparison identifies concurrent additions; no philosophical truth, new formal certification, empirical replication or verification of unowned additions is claimed.",
+  "passed": 63,
+  "failed": 0,
+  "checks": [
+    {
+      "kind": "unique reversible owned span",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "sources/SOURCES.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "RESEARCH.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "passed": true
+    },
+    {
+      "kind": "unique reversible owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "passed": true
+    },
+    {
+      "kind": "unique owned appended section after concurrent context move",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "passed": true,
+      "detail": "Original context-containing old/new fields preserved; verify separate owned_addition. No unrelated production text rewritten."
+    },
+    {
+      "kind": "unchanged Lean",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "passed": true
+    },
+    {
+      "kind": "unchanged Lean",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "passed": true
+    },
+    {
+      "kind": "supporting note provenance",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md -> FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md -> FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md -> WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md -> FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md -> FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md -> WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md -> HISTORY-PRIORITY-EDITS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md -> HISTORY-PRIORITY-CHECKS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md -> unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#when-a-fixed-past-changes-present-significance",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md -> unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#when-a-fixed-past-changes-present-significance",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-GOOD-INTEGRAL.md#8-does-a-worse-past-change-the-significance-of-present-relief",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-PROCESS-GROUNDING-REVIEW.md#8-continuation-fixed-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-PROCESS-GROUNDING-REVIEW.md#8-continuation-fixed-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> HISTORY-PRIORITY-EDITS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> HISTORY-PRIORITY-CHECKS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "sources/SOURCES.md -> ../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "sources/SOURCES.md -> ../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md#8-past-adversity-and-present-priority",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "sources/SOURCES.md -> ../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md -> HUIGEN-SELF-GROUND-AUDIT.md#41-local-benefit-history-and-the-value-of-a-life",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md -> HUIGEN-SELF-GROUND-AUDIT.md#41-local-benefit-history-and-the-value-of-a-life",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md -> FUTURE-GOOD-INTEGRAL.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md -> WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md -> WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "passed": true
+    },
+    {
+      "kind": "unique numbered main sections",
+      "target": "FUTURE-GOOD-INTEGRAL.md",
+      "passed": true
+    },
+    {
+      "kind": "full file reconstructed from pre-edit snapshot",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "passed": true
+    },
+    {
+      "kind": "full file reconstructed from pre-edit snapshot",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "passed": true
+    },
+    {
+      "kind": "full file reconstructed from pre-edit snapshot",
+      "target": "RESEARCH.md",
+      "passed": true
+    },
+    {
+      "kind": "full file reconstructed from pre-edit snapshot",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "kind": "full file reconstructed from pre-edit snapshot",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "kind": "full file reconstructed from pre-edit snapshot",
+      "target": "sources/SOURCES.md",
+      "passed": true
+    }
+  ],
+  "historical_boundary_diagnostics": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "stage": "after",
+      "matches_recorded": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "stage": "before",
+      "matches_recorded": false
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "stage": "after",
+      "matches_recorded": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "stage": "before",
+      "matches_recorded": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "stage": "after",
+      "matches_recorded": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "stage": "before",
+      "matches_recorded": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "stage": "after",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "stage": "before",
+      "matches_recorded": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "stage": "after",
+      "matches_recorded": false
+    }
+  ],
+  "concurrent_surrounding_changes": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "expected_after_owned_edits_sha256": "92cfcb572bc4aa0c6e9bd5053a509d4def361743a43a6f5bf2c1ca653c8ace00",
+      "observed_sha256": "19af6245eedaeae28f9931ed38e3b4b96c74a5a6235175cee02d1d9d2c02644f",
+      "blocks": [
+        {
+          "kind": "replace",
+          "current_line_start": 5,
+          "old_excerpt": "8). That structural contribution does not, by itself, identify ethical goodness. Neither result proves that an ethical principle must exist outside generation.",
+          "new_excerpt": "9). That structural contribution does not, by itself, identify ethical goodness. Neither result proves that an ethical principle must exist outside generation."
+        },
+        {
+          "kind": "replace",
+          "current_line_start": 165,
+          "old_excerpt": "Mutual production can determine relative importance",
+          "new_excerpt": "Does a worse past change the significance of present relief?\n\nThe next test concerns **retained lived history → the ethical significance of an available present transformation**. Including the past in G does not yet decide whether it changes the priority of a later benefit. The proposed comparison applies an established temporal-priority dispute to this generative account; it is not a new discovery in moral philosophy. The [self-ground audit §41](HUIGEN-SELF-GROUND-AUDIT.md#41-local-benefit-history-and-the-value-of-a-life) already establishes that a common past cannot simply be cancelled without justifying separability. The present extension tests its role in distributing relief between two continuing lives, rather than reclaiming that gene"
+        },
+        {
+          "kind": "replace",
+          "current_line_start": 268,
+          "old_excerpt": "§8 and accepted its scope. Their clarification that the terminal-type test relaxes irreducibility is incorporated. This is internal AI review and direct mathematical verification; it does not establish the ethical identi",
+          "new_excerpt": "the production section and accepted its scope. Their clarification that the terminal-type test relaxes irreducibility is incorporated. This is internal AI review and direct mathematical verification; it does not establish the ethical identification being investigated."
+        }
+      ],
+      "scope": "Changes outside recorded owned spans retained; not claimed as work of this task."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "expected_after_owned_edits_sha256": "61a25b148cfe35511f1578261c49004c3789c5a75106d04f54fc70e45b7f704f",
+      "observed_sha256": "10def20449722fad76edeec1f766988ff3013feaf4e6761fc7af65e676ec124b",
+      "blocks": [
+        {
+          "kind": "replace",
+          "current_line_start": 160,
+          "old_excerpt": "8-mutual-production-can-determine-relative-importance) gives a positive result beyond the bounded Markov-recursion test. Under an independently justified finite irreducible production law K with positive spectral radius,",
+          "new_excerpt": "9-mutual-production-can-determine-relative-importance) gives a positive result beyond the bounded Markov-recursion test. Under an independently justified finite irreducible production law K with positive spectral radius, relative contribution weights can satisfy Kv=ρ(K)v, with v>0."
+        }
+      ],
+      "scope": "Changes outside recorded owned spans retained; not claimed as work of this task."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "expected_after_owned_edits_sha256": "f9eed40ed1a25b8ca9752f78b531e16cdd8517891c9cdaa075385afeb72e5d2f",
+      "observed_sha256": "17c3e90c8108849a2eef759e8629285f14a2931101f3f9f8f8993b7c4ce5d86e",
+      "blocks": [
+        {
+          "kind": "replace",
+          "current_line_start": 7,
+          "old_excerpt": "8](FUTURE-GOOD-INTEGRAL.md#8-mutual-production-can-determine-relative-importance) derives positive relative contribution under an actual linear production law and distinguishes that weight from an accumulated stream. It ",
+          "new_excerpt": "9](FUTURE-GOOD-INTEGRAL.md#9-mutual-production-can-determine-relative-importance) derives positive relative contribution under an actual linear production law and distinguishes that weight from an accumulated stream. It preserves the existing reproduction/spectral genealogy and identifies terminal-value and ethical-direction limits."
+        }
+      ],
+      "scope": "Changes outside recorded owned spans retained; not claimed as work of this task."
+    }
+  ],
+  "receipt_sha256": "1f28a6c0775c0ff20e513f64529d97639bff67fa6c55d89337ea9e53c3f4370b",
+  "initial_verification": {
+    "passed": 62,
+    "failed": 1,
+    "failure": {
+      "kind": "unique owned appended section after concurrent context move",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "passed": true,
+      "detail": "Original context-containing old/new fields preserved; verify separate owned_addition. No unrelated production text rewritten."
+    },
+    "diagnosis": "The recorded append context moved in concurrent work; the owned appended section remains uniquely present, confirmed after reversing later owned edits."
+  },
+  "updated_at_utc": "2026-10-06T10:50:47.346623+00:00"
+}

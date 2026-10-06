@@ -1,0 +1,111 @@
+{
+  "scope": "Source preservation and link verification only; no new animal observations, raw data analysis or statistical reproduction.",
+  "originals": [
+    {
+      "file": "original/beran-smith-2011.html",
+      "bytes": 246022,
+      "sha256": "448e70a0c91a592171fe99a5eae32ec16fab623cddf676667b6cb21f8a6de78a"
+    },
+    {
+      "file": "original/beran-smith-2011-figure3.jpg",
+      "bytes": 34307,
+      "sha256": "9893bac97734de9b1b7ed15f19d2e65b0cfc9194da723a055df27fc8e75dfbaa"
+    }
+  ],
+  "identity_checks": [
+    "DOI present in original and reading",
+    "PMCID present in original and reading",
+    "Author manuscript edition identified",
+    "General Discussion present in original and reading"
+  ],
+  "response_cookies_preserved": false,
+  "local_link_count": 17,
+  "local_links": [
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "exists": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "original/beran-smith-2011.html",
+      "exists": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "original/beran-smith-2011-figure3.jpg",
+      "exists": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "reading/beran-smith-2011.txt",
+      "exists": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "metadata/provenance.json",
+      "exists": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "verification.json",
+      "exists": true
+    },
+    {
+      "document": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "target": "manifest.json",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "APPLICATION-REVISION-RECONSTRUCTION.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../sources/40-inquiry-interface-2026-10-06/README.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../sources/40-inquiry-interface-2026-10-06/README.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "PRACTICE-TRANSFORMATION-ARGUMENT.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "APPLICATION-REVISION-RECONSTRUCTION.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "target": "CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true
+    }
+  ],
+  "all_passed": true
+}

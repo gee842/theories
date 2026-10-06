@@ -1,0 +1,16 @@
+{
+  "id": "c0001",
+  "base": "v0",
+  "recipe": "unique_visible_counterparty",
+  "attempt_id": "a0004",
+  "code": {
+    "path": "candidates/c0001/replay.py",
+    "sha256": "10dec2fd6177a5f7a971a819d81fbd23cbc7875145ae567a82c4aed65b3e1271",
+    "bytes": 23536
+  },
+  "patch": {
+    "path": "candidates/c0001/patch.diff",
+    "sha256": "6b6238820b3777e70cd3adcdd7c4bc633e0689b91e332028d8cdeddfd89eb391",
+    "bytes": 1743
+  }
+}

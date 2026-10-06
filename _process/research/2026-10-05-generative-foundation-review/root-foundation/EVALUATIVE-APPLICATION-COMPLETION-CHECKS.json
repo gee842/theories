@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-06",
+  "status": "pass",
+  "scope": "Completed source-bound conceptual application and hand-derived joint-feasibility corollary. These are documentation, source-preservation and link checks, not a new Lean compilation, empirical run or implementation of acquired protocol revision.",
+  "checked_local_links": 126,
+  "preservation": {
+    "MATH_prior_nondual_snapshot_preserved": true,
+    "REVIEW_prior_nondual_snapshot_preserved": true,
+    "CONTRACT_prior_nondual_snapshot_preserved": true
+  },
+  "unchanged_accepted_sources": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean": "6ce4f08cb9f2b497a409482bbfc2281fd6d83a5efad14d2cabb7fbc2d3792b83",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean": "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a"
+  },
+  "owned_document_hashes": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md": "6e63f5620ca0563ea0a9c6420749cc7f311460775fed334418a4ac50f19c833e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md": "bfc0135110771c9bbe61e06f475c0ee6888c1a92bb892c024b31a3959964d0f3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-CONTRACT.md": "5b6be98821455f7bd455ad4af5565db88834056638b0483881717bc6dff3d6f3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md": "77b66515312b31d13610e112556489fad01e500f745ca0b348b612fd988dc8df",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md": "b0d630c2440a88eb0b0db6425c16c4f49c18c8906a0367dd4ee1946677c24134"
+  },
+  "owned_index_paragraph_hashes": {
+    "RESEARCH.md": "03751d38ac31f8aa321f3e2575b7cd74fa73bf8b0092d31cf6554582ac767547",
+    "theories/shengsheng-buxi-generative-existence/README.md": "46e48fcf2c3dffce564133f4c6f541fd1d83fa02928eb15304231c63112b49eb",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "fd812ee49bced8f5f5f7f7a06b1c882f87f9d55ea290777b4b35ed1e435f3cc6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "30e84ed687d66d9cc72652d2a8bc84659c59cdeec4af86aa56e91d2bcda8477a"
+  },
+  "review": "EVALUATIVE-APPLICATION-REVIEW.md §23; independent collaborating-AI review, not external peer review.",
+  "prior_receipt": "EVALUATIVE-APPLICATION-NONDUAL-CHECKS.json remains a historical snapshot.",
+  "broader_scope": "Universal necessity, experiential realization, the stronger no-assumptions foundation and acquired selective early repair remain unproved/unimplemented by this result.",
+  "version_control": "Working-tree integration; parallel sources and unrelated modifications were preserved, not staged or committed."
+}

@@ -1,0 +1,733 @@
+{
+  "passed": true,
+  "source_bindings": 16,
+  "ancestor_bindings": 11,
+  "saved_decisions_compared": 60,
+  "complete_unique_coverage": true,
+  "comparison": "f(B)=f(C) or f(A)=f(C), on every saved full-belief one-packet row for the five A/B/C partitions",
+  "original_decisions_preserved": 8100,
+  "producer_or_native_model_executed": false,
+  "scope": "Represented-interface correspondence only; no full native trace refinement or installed-controller affordability claim.",
+  "rows": [
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": true
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 0,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 1,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 2,
+      "parity": 0,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 0,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 0,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 1,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": false
+    },
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "phase": 2,
+      "parity": 1,
+      "broken_reset": 1,
+      "attainable": false
+    }
+  ]
+}

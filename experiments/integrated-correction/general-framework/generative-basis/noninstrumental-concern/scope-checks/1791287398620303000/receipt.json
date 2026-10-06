@@ -1,0 +1,399 @@
+{
+  "status": "failed",
+  "checked_at_utc": "2026-10-06T11:51:14.333400+00:00",
+  "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "e1b56a41e3f9e121f73ca5b1e8451a7df8ddc3ec1998e74d21b2b78ed4bdb7b0",
+  "checker_helper_sha256": "0bb2260b791d0504019ebd96dab7275c6ca8701e166931bca114f7e810c1dad5",
+  "native_results": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+  "native_results_sha256": "ed9cad0a5f961c53ac5ab0acd48708d1e8ea41935672ca4399df8b4faad355a2",
+  "native_source_bindings": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py": "78bbbe753c54f61779199c4a7e7615fdf3741670b7c53a5e4fa72e4a038e20eb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md": "605f54aedd4ed10d6c8b6686bd457ecabc4615474ad1c65ee5f26f8e38500c91",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py": "f014f56dd0da20331d7e8efa44e05be3f6ff1dc73e2040c0e27576e59a1cd67e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md": "a1bf493a722c7bfdf826bd09150f420057e4da78117e7623b4875ff63cfb3acf",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion-results.json": "3d3d6d0db6dc5023dd704a56b226b4ce59a2cab8ba66082210f37d73c631a99e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py": "4daecb9934d195f1c638e3b26dddd72143b05a9edfa6cfc789244851650bde5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1"
+  },
+  "fresh_temporary_build": true,
+  "inputs_unchanged": true,
+  "correspondence": {
+    "cases": 9,
+    "wrapper_events": 2920,
+    "wrapper_states": 2929,
+    "coordinates_per_state": 36,
+    "denied_events": 4,
+    "ancestral_events": 94,
+    "ancestral_states": 95,
+    "inherited_training_events": 22,
+    "inherited_training_states": 23,
+    "additional_lean_only_histories": 2
+  },
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "log": "scope-checks/1791287398620303000/GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "FormedSelection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "FormedSelection.population_type_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.copy_increment_le_spent": [
+          "propext"
+        ],
+        "FormedSelection.copy_tally_le_spent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_copy_budget": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.exact_step_rank_drop": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_strict_rank": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_event_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.no_infinite_event_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.repair_needs_three_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.low_fuel_cannot_restore_site": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.restored_site_and_alternative_need_four_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.a_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.a_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.h_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.h_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_step": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_trace": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_forbids_h_local_copy": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.paid_formation_to_copy": [
+          "propext"
+        ],
+        "FormedSelection.witness_accounting": [
+          "propext"
+        ],
+        "FormedSelection.repair_enables_capture": [
+          "propext"
+        ],
+        "FormedSelection.capture_enables_copy": [
+          "propext"
+        ],
+        "FormedSelection.initial_owned_support": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_from_absence_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.repaired_site_can_pass_to_alternative": [
+          "propext"
+        ],
+        "FormedSelection.inheritance_accounting": [
+          "propext"
+        ]
+      },
+      "log": "scope-checks/1791287398620303000/FormedSelection.txt",
+      "log_sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    {
+      "module": "AcquiredPurposeCriterion",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean",
+      "sha256": "3eb64e26f4128ecf2dc8991806c8010ec636fb123cdc9c89b2999d3a50355abc",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.AcquiredPurposeCriterion.compatible_candidate_retained": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.actual_repair_identifies_common": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.count_only_criterion": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.acquired_requirement_changes_completion_content": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.acquired_common_requirement_reserves_its_reading": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.free_reading_would_misclassify_completion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.learned_criterion_fits_repair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.successful_repair_does_not_exclude_fallback": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.fallback_has_a_genuinely_different_continuation": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.admitted_is_actual_trace": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.native_judgment_and_finish_reserve_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.actual_emission_is_common": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.admitted_native_is_original": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.plant_admitted_is_actual_trace": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.actual_training_forms_requirement": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.matched_consumer_keeps_acquired_checkpoint": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.same_restored_state_different_effective_closure": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.acquired_criterion_has_actual_further_use": [
+          "propext"
+        ],
+        "Generative.AcquiredPurposeCriterion.Native.clamped_criterion_retains_completed_count_but_loses_repair": [
+          "propext"
+        ]
+      },
+      "log": "scope-checks/1791287398620303000/AcquiredPurposeCriterion.txt",
+      "log_sha256": "57c0f37da3692339f4f425876bd6d3e50cd306e3c5214345f0fd281b33f32da5"
+    },
+    {
+      "module": "AcquiredActivityScope",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+      "sha256": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac",
+      "new": true,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.AcquiredActivityScope.inherited_training_is_actual": [
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.admitted_is_actual_trace": [
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.legacy_activation_does_not_choose": [],
+        "Generative.AcquiredActivityScope.priming_changes_actual_continuation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.ending_A_preserves_B": [
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.admitted_native_is_original": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.primitive_history_preserved": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.primitive_products_preserved": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.step_preserves_history_and_products": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.trace_preserves_history_and_products": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.actual_empty_scope_has_different_products": [
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.primitive_zero_common_retains_B": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.step_zero_common_retains_B": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.AcquiredActivityScope.depleted_common_blocks_every_B_completion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "scope-checks/1791287398620303000/AcquiredActivityScope.txt",
+      "log_sha256": "b08fec59afa0913b523a768669fb9fac43033b42afc8f25d8193d6eabe8c6c57"
+    },
+    {
+      "module": "ActivityScopeFixtures",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/ActivityScopeFixtures.lean",
+      "sha256": "1709140ea6751b27d745d5795c0626e0fd8f8561e364ff95289b6dec72c4fe3a",
+      "new": true,
+      "passed": false,
+      "exit_code": -6,
+      "axioms_by_declaration": {},
+      "log": "scope-checks/1791287398620303000/ActivityScopeFixtures.txt",
+      "log_sha256": "1d585ca2457f796085080a27322dcd6d72331a0c7c93241d4a9ac6067ede21bd"
+    }
+  ],
+  "new_audits": 14,
+  "scope": "Material formation, acquisition, revision and cessation of local activity scope; original ancestry, inherited channel training, all nine saved native histories and controls, and two separately labelled Lean-only histories. Explicit reaction/contact/reader laws, initial conditions and schedules remain supplied. Not universal Python refinement or ethical justification."
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "independent closed-form and Bellman-certificate check of saved finite decisions",
+  "checked_decisions": 1080,
+  "checked_source_bindings": 7,
+  "original_experiments_executed": false,
+  "retained_original_probe_records": 36,
+  "original_probe_retention_failures": 12,
+  "producer_results_sha256": "c89b2f775ad34312d9d5eb2b872a06b053aa18199dbdbcaad2a85a8bbb6b4cff",
+  "review_checker_sha256": "de65d416786bb4eb2f1689f57b4cc82f4aba3b94a40870840d4c5fd0b02f9bc8"
+}

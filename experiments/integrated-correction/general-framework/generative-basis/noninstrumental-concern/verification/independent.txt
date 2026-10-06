@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "scope": "finite independent transition reconstruction",
+  "fixture_count": 18,
+  "fixture_fields": 90,
+  "cartesian_states": 14080,
+  "event_menu": 25,
+  "transition_comparisons": 352000,
+  "allowed_transition_comparisons": 287616,
+  "reachable_states_depth_6": 1486,
+  "reachable_transition_comparisons": 10140,
+  "packet_corruptions_rejected": 12,
+  "arbitrary_current_packet_is_not_acquisition_provenance": true,
+  "shortest_service_searches": 640,
+  "shortest_service_equal_on_formation_consistent_states": 352,
+  "typed_preformation_ghost_states_with_cheaper_continuation": 128,
+  "unrelated_change_can_revoke_affordable_selection": true,
+  "sources": {
+    "model.py": "07be70ec48ee80f60a536fe13b5a9b111536f9ca635af2f281391bdcee10b7a6",
+    "cases.json": "5ff5f83779b334737f813e9fc2769e62362b1d364b76dfac8ee22919744e17bc",
+    "PatientConcern.lean": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6",
+    "GroundingContract.lean": "afc3b934499aeb0c705590ac33dcee6ee784b8705c5a93fba0b7b60dc7f468ac",
+    "independent_review.py": "30e06561720dcb0ffb9e5c34566e56266383afc6197f30867f174b2d6ac37e57"
+  },
+  "limitations": [
+    "No machine refinement of arbitrary Python histories.",
+    "Current-state equality is a supplied faithful interlock.",
+    "No experiential identification, normative C1/C2 proof, or empirical observation.",
+    "Typed unreachable states test guards but do not gain a paid acquisition history."
+  ]
+}

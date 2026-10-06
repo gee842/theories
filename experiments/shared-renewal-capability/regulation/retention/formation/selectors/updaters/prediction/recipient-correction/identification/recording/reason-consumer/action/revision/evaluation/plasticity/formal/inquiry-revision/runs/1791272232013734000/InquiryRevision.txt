@@ -1,0 +1,809 @@
+InquiryRevision.lean:127:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  u ≥ 0
+  t ≥ 0
+  r ≥ 0
+  q ≥ 0
+  p ≥ 0
+  o ≥ 0
+  n ≥ 0
+  m ≥ 0
+  l ≥ 0
+  k ≥ 0
+  k + l + m + n + o + u ≥ 0
+  j ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  c + e + i + j - p - q - r - t ≥ 1
+  b ≥ 0
+  a ≥ 0
+where
+ a := ↑s.parent.parent.parent.freeA
+ b := ↑s.parent.parent.parent.freeH
+ c := ↑(if s.parent.parent.parent.port = true then 1 else 0)
+ d := ↑s.parent.parent.cells
+ e := ↑(if s.parent.parent.adapter = true then 1 else 0)
+ f := ↑s.parent.parent.freeA
+ g := ↑s.parent.parent.freeH
+ h := ↑s.parent.cells
+ i := ↑(if s.parent.adapter = true then 1 else 0)
+ j := ↑(if s.parent.port = true then 1 else 0)
+ k := ↑(occupied s.parent.link0)
+ l := ↑(occupied s.parent.link1)
+ m := ↑s.parent.blanks
+ n := ↑s.parent.retired
+ o := ↑s.parent.idleParts
+ p := ↑(if s.parent.parent.parent.port = true then 1 else 0)
+ q := ↑(if s.parent.parent.adapter = true then 1 else 0)
+ r := ↑(if s.parent.adapter = true then 1 else 0)
+ t := ↑(if s.parent.port = true then 1 else 0)
+ u := ↑(s.parent.replacement - 1)
+InquiryRevision.lean:128:14: error: unsolved goals
+case inspect.inl.faithful
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.idle
+he : Enabled s (Event.inspect Channel.faithful)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inl.missing
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.idle
+he : Enabled s (Event.inspect Channel.missing)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inl.zero
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.idle
+he : Enabled s (Event.inspect Channel.zero)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inl.falsePositive
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.idle
+he : Enabled s (Event.inspect Channel.falsePositive)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inl.wrongBinding
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.idle
+he : Enabled s (Event.inspect Channel.wrongBinding)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inl.faithful
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.missing
+he : Enabled s (Event.inspect Channel.faithful)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inl.missing
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.missing
+he : Enabled s (Event.inspect Channel.missing)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inl.zero
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.missing
+he : Enabled s (Event.inspect Channel.zero)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inl.falsePositive
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.missing
+he : Enabled s (Event.inspect Channel.falsePositive)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inl.wrongBinding
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.missing
+he : Enabled s (Event.inspect Channel.wrongBinding)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inr.faithful
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.stale
+he : Enabled s (Event.inspect Channel.faithful)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inr.missing
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.stale
+he : Enabled s (Event.inspect Channel.missing)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inr.zero
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.stale
+he : Enabled s (Event.inspect Channel.zero)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inr.falsePositive
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.stale
+he : Enabled s (Event.inspect Channel.falsePositive)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+
+case inspect.inr.inr.wrongBinding
+laws : RecipientCorrection.Laws
+s : State
+hm : s.mode = Mode.stale
+he : Enabled s (Event.inspect Channel.wrongBinding)
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+InquiryRevision.lean:133:24: error: unsolved goals
+case commit
+laws : RecipientCorrection.Laws
+s : State
+he : Enabled s Event.commit
+hm : s.mode = Mode.observed
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+InquiryRevision.lean:133:24: error: unsolved goals
+case shamCommit
+laws : RecipientCorrection.Laws
+s : State
+he : Enabled s Event.shamCommit
+hm : s.mode = Mode.observed
+⊢ ((((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0) =
+    (((30 + s.parent.parent.parent.freeA + s.parent.parent.parent.freeH +
+                    2 * if s.parent.parent.parent.port = true then 1 else 0) +
+                  2 * s.parent.parent.cells +
+                2 * if s.parent.parent.adapter = true then 1 else 0) +
+              s.parent.parent.freeA +
+            s.parent.parent.freeH +
+          2 * s.parent.cells +
+        2 * if s.parent.adapter = true then 1 else 0) +
+      2 * if s.parent.port = true then 1 else 0
+InquiryRevision.lean:169:60: error: unsolved goals
+laws : RecipientCorrection.Laws
+s : State
+h : Enabled s Event.commit
+hc : s.parent.count = 4
+hp : s.parent.phase = Phase.ready
+⊢ (Admitted
+        { parent := (withFuel s.parent (fuel s.parent - 1)).parent, n := (withFuel s.parent (fuel s.parent - 1)).n,
+          count := (withFuel s.parent (fuel s.parent - 1)).count,
+          phase := (withFuel s.parent (fuel s.parent - 1)).phase, ownBit := false, recipientBit := false,
+          cells := (withFuel s.parent (fuel s.parent - 1)).cells,
+          adapter := (withFuel s.parent (fuel s.parent - 1)).adapter,
+          port := (withFuel s.parent (fuel s.parent - 1)).port,
+          portMode := (withFuel s.parent (fuel s.parent - 1)).portMode,
+          readCommand := (withFuel s.parent (fuel s.parent - 1)).readCommand, continuation := false,
+          variant := (withFuel s.parent (fuel s.parent - 1)).variant,
+          updates := (withFuel s.parent (fuel s.parent - 1)).updates,
+          link0 := (withFuel s.parent (fuel s.parent - 1)).link0,
+          link1 := (withFuel s.parent (fuel s.parent - 1)).link1,
+          blanks := (withFuel s.parent (fuel s.parent - 1)).blanks,
+          replacement := (withFuel s.parent (fuel s.parent - 1)).replacement,
+          retired := (withFuel s.parent (fuel s.parent - 1)).retired,
+          idleParts := (withFuel s.parent (fuel s.parent - 1)).idleParts,
+          training := (withFuel s.parent (fuel s.parent - 1)).training,
+          revision := (withFuel s.parent (fuel s.parent - 1)).revision,
+          idleFuel := (withFuel s.parent (fuel s.parent - 1)).idleFuel,
+          ownSource := (withFuel s.parent (fuel s.parent - 1)).ownSource,
+          recipientSource := (withFuel s.parent (fuel s.parent - 1)).recipientSource,
+          idleSource := (withFuel s.parent (fuel s.parent - 1)).idleSource } →
+      (withFuel s.parent (fuel s.parent - 1)).phase = Phase.ready →
+        (withFuel s.parent (fuel s.parent - 1)).count < 4 →
+          (withFuel s.parent (fuel s.parent - 1)).count < 6 →
+            2 ≤ (withFuel s.parent (fuel s.parent - 1)).ownSource.get (withFuel s.parent (fuel s.parent - 1)).count →
+              2 ≤
+                  (withFuel s.parent (fuel s.parent - 1)).recipientSource.get
+                    (withFuel s.parent (fuel s.parent - 1)).count →
+                2 ≤
+                    patient
+                      { parent := (withFuel s.parent (fuel s.parent - 1)).parent,
+                        n := (withFuel s.parent (fuel s.parent - 1)).n,
+                        count := (withFuel s.parent (fuel s.parent - 1)).count,
+                        phase := (withFuel s.parent (fuel s.parent - 1)).phase, ownBit := false, recipientBit := false,
+                        cells := (withFuel s.parent (fuel s.parent - 1)).cells,
+                        adapter := (withFuel s.parent (fuel s.parent - 1)).adapter,
+                        port := (withFuel s.parent (fuel s.parent - 1)).port,
+                        portMode := (withFuel s.parent (fuel s.parent - 1)).portMode,
+                        readCommand := (withFuel s.parent (fuel s.parent - 1)).readCommand, continuation := false,
+                        variant := (withFuel s.parent (fuel s.parent - 1)).variant,
+                        updates := (withFuel s.parent (fuel s.parent - 1)).updates,
+                        link0 := (withFuel s.parent (fuel s.parent - 1)).link0,
+                        link1 := (withFuel s.parent (fuel s.parent - 1)).link1,
+                        blanks := (withFuel s.parent (fuel s.parent - 1)).blanks,
+                        replacement := (withFuel s.parent (fuel s.parent - 1)).replacement,
+                        retired := (withFuel s.parent (fuel s.parent - 1)).retired,
+                        idleParts := (withFuel s.parent (fuel s.parent - 1)).idleParts,
+                        training := (withFuel s.parent (fuel s.parent - 1)).training,
+                        revision := (withFuel s.parent (fuel s.parent - 1)).revision,
+                        idleFuel := (withFuel s.parent (fuel s.parent - 1)).idleFuel,
+                        ownSource := (withFuel s.parent (fuel s.parent - 1)).ownSource,
+                        recipientSource := (withFuel s.parent (fuel s.parent - 1)).recipientSource,
+                        idleSource := (withFuel s.parent (fuel s.parent - 1)).idleSource } →
+                  fuel
+                        { parent := (withFuel s.parent (fuel s.parent - 1)).parent,
+                          n := (withFuel s.parent (fuel s.parent - 1)).n,
+                          count := (withFuel s.parent (fuel s.parent - 1)).count,
+                          phase := (withFuel s.parent (fuel s.parent - 1)).phase, ownBit := false,
+                          recipientBit := false, cells := (withFuel s.parent (fuel s.parent - 1)).cells,
+                          adapter := (withFuel s.parent (fuel s.parent - 1)).adapter,
+                          port := (withFuel s.parent (fuel s.parent - 1)).port,
+                          portMode := (withFuel s.parent (fuel s.parent - 1)).portMode,
+                          readCommand := (withFuel s.parent (fuel s.parent - 1)).readCommand, continuation := false,
+                          variant := (withFuel s.parent (fuel s.parent - 1)).variant,
+                          updates := (withFuel s.parent (fuel s.parent - 1)).updates,
+                          link0 := (withFuel s.parent (fuel s.parent - 1)).link0,
+                          link1 := (withFuel s.parent (fuel s.parent - 1)).link1,
+                          blanks := (withFuel s.parent (fuel s.parent - 1)).blanks,
+                          replacement := (withFuel s.parent (fuel s.parent - 1)).replacement,
+                          retired := (withFuel s.parent (fuel s.parent - 1)).retired,
+                          idleParts := (withFuel s.parent (fuel s.parent - 1)).idleParts,
+                          training := (withFuel s.parent (fuel s.parent - 1)).training,
+                          revision := (withFuel s.parent (fuel s.parent - 1)).revision,
+                          idleFuel := (withFuel s.parent (fuel s.parent - 1)).idleFuel,
+                          ownSource := (withFuel s.parent (fuel s.parent - 1)).ownSource,
+                          recipientSource := (withFuel s.parent (fuel s.parent - 1)).recipientSource,
+                          idleSource := (withFuel s.parent (fuel s.parent - 1)).idleSource } +
+                      transfer
+                        { parent := (withFuel s.parent (fuel s.parent - 1)).parent,
+                          n := (withFuel s.parent (fuel s.parent - 1)).n,
+                          count := (withFuel s.parent (fuel s.parent - 1)).count,
+                          phase := (withFuel s.parent (fuel s.parent - 1)).phase, ownBit := false,
+                          recipientBit := false, cells := (withFuel s.parent (fuel s.parent - 1)).cells,
+                          adapter := (withFuel s.parent (fuel s.parent - 1)).adapter,
+                          port := (withFuel s.parent (fuel s.parent - 1)).port,
+                          portMode := (withFuel s.parent (fuel s.parent - 1)).portMode,
+                          readCommand := (withFuel s.parent (fuel s.parent - 1)).readCommand, continuation := false,
+                          variant := (withFuel s.parent (fuel s.parent - 1)).variant,
+                          updates := (withFuel s.parent (fuel s.parent - 1)).updates,
+                          link0 := (withFuel s.parent (fuel s.parent - 1)).link0,
+                          link1 := (withFuel s.parent (fuel s.parent - 1)).link1,
+                          blanks := (withFuel s.parent (fuel s.parent - 1)).blanks,
+                          replacement := (withFuel s.parent (fuel s.parent - 1)).replacement,
+                          retired := (withFuel s.parent (fuel s.parent - 1)).retired,
+                          idleParts := (withFuel s.parent (fuel s.parent - 1)).idleParts,
+                          training := (withFuel s.parent (fuel s.parent - 1)).training,
+                          revision := (withFuel s.parent (fuel s.parent - 1)).revision,
+                          idleFuel := (withFuel s.parent (fuel s.parent - 1)).idleFuel,
+                          ownSource := (withFuel s.parent (fuel s.parent - 1)).ownSource,
+                          recipientSource := (withFuel s.parent (fuel s.parent - 1)).recipientSource,
+                          idleSource := (withFuel s.parent (fuel s.parent - 1)).idleSource } <
+                    2) ∧
+    (withFuel s.parent (fuel s.parent - 1)).phase = Phase.ready ∧ (withFuel s.parent (fuel s.parent - 1)).count = 4
+InquiryRevision.lean:172:72: warning: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp [Enabled, ̲advance, ̲release, ̲acquired, ̲PairedPlasticity.Enabled, ̲limit, ̲hc̵,̵h̵p]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+InquiryRevision.lean:172:75: warning: This simp argument is unused:
+  hp
+
+Hint: Omit it from the simp argument list.
+  simp [Enabled, ̲advance, ̲release, ̲acquired, ̲PairedPlasticity.Enabled, ̲limit, ̲hc,̵h̵p̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+InquiryRevision.lean:183:3: error: unexpected token 'prefix'; expected identifier
+InquiryRevision.lean:184:46: error: unexpected token 'prefix'; expected ')' or term
+InquiryRevision.lean:184:52: error: unexpected token ')'; expected ':'
+InquiryRevision.lean:193:12: error: unexpected token 'prefix'; expected term
+InquiryRevision.lean:193:19: error: unexpected token '++'; expected ':'
+InquiryRevision.lean:196:43: error: unexpected token 'prefix'; expected ':=', 'where' or '|'
+InquiryRevision.lean:196:50: error: unexpected token '∧'; expected ':'
+InquiryRevision.lean:204:74: error: Tactic `decide` failed for proposition
+  Enabled s4 Event.assemble ∧
+    Enabled assembled (Event.inspect Channel.faithful) ∧
+      Enabled observed Event.commit ∧
+        assembled.parent.replacement = 0 ∧
+          material assembled = 68 ∧
+            fuel assembled.parent = 13 ∧
+              fuel observed.parent = 12 ∧ observed.parent.ownBit = true ∧ observed.parent.recipientBit = true
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, `instDecidableContext`, `instDecidableEnabled`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : s4.parent.count.beq 4 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+InquiryRevision.lean:209:82: error: Tactic `decide` failed for proposition
+  Enabled s4 (Event.inherited Event.ownPay) ∧
+    ¬Enabled s4 (Event.inherited Event.close) ∧
+      revised.parent.continuation = false ∧
+        revised.parent.count = 4 ∧
+          ¬Enabled revised (Event.inherited Event.ownPay) ∧
+            Enabled revised (Event.inherited Event.close) ∧
+              fuel revised.parent = 11 ∧ patient revised.parent = 36 ∧ revised.parent.n = 4
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableEqMode`, `Nat.decEq`, `instDecidableAdmitted`, and `PairedPlasticity.instDecidableEnabled`, reduction got stuck at the `Decidable` instance
+  match (release s4).parent.parent.opened, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+InquiryRevision.lean:210:84: error: Expected type must not contain free variables
+  Runnable PlasticityWitness.laws entry whole
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+InquiryRevision.lean:212:2: error: Type mismatch
+  runnable_trace whole_actual_runnable
+has type
+  Generative.Trace (process PlasticityWitness.laws) entry ?m.7 (run PlasticityWitness.laws entry ?m.7)
+but is expected to have type
+  Generative.Trace (process PlasticityWitness.laws) entry whole final
+InquiryRevision.lean:218:37: error: Expected type must not contain free variables
+  fuel final.parent = 1 ∧
+    patient final.parent = 46 ∧
+      energy final = 75 ∧
+        material final = 68 ∧
+          final.parent.count = 4 ∧
+            final.parent.n = 4 ∧
+              final.parent.link0 = some Sign.positive ∧
+                final.parent.link1 = some Sign.positive ∧
+                  final.parent.portMode = PortMode.consumed ∧
+                    (core final.parent).packets = 0 ∧
+                      spent PlasticityWitness.laws entry whole = 43 ∧ 505 = 351 + 36 + 43 + energy final
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+InquiryRevision.lean:223:69: error: Tactic `decide` failed for proposition
+  List.count (Event.inherited Event.recipientPay) (adaptation ++ assessment ++ action) = 0 ∧
+    final.parent.ownSource = s4.parent.ownSource ∧
+      final.parent.recipientSource = s4.parent.recipientSource ∧
+        final.parent.training = s4.parent.training ∧
+          final.parent.revision = s4.parent.revision ∧ (core final.parent).hardware.q = (core s4.parent).hardware.q
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableOr`, `Bool.decEq`, `instDecidableEqEvent`, `instDecidableEqMode`, `Nat.decEq`, `PairedPlasticity.instDecidableEqEvent`, `instDecidableEqSources`, `RecipientIdentification.instDecidableEqEvent`, `instDecidableEqEvent.decEq`, `PairedPlasticity.instDecidableEqEvent.decEq`, `instDecidableEqSources.decEq`, and `RecipientIdentification.instDecidableEqEvent.decEq`, reduction got stuck at the `Decidable` instance
+  match h : s4.parent.24.a.beq s4.parent.24.a with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+InquiryRevision.lean:233:97: error: Tactic `decide` failed for proposition
+  ¬Enabled assembled Event.commit ∧
+    ¬Enabled miss Event.commit ∧
+      ¬Enabled zero Event.commit ∧
+        ¬Enabled wrong Event.commit ∧
+          miss.mode = Mode.missing ∧
+            wrong.mode = Mode.stale ∧
+              zero.mode = Mode.observed ∧ fuel miss.parent = 12 ∧ fuel zero.parent = 12 ∧ fuel wrong.parent = 12
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, `instDecidableNot`, `instDecidableContext`, `instDecidableEnabled`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : assembled.parent.count.beq 4 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+InquiryRevision.lean:236:80: error: Tactic `decide` failed for proposition
+  Enabled observed Event.shamCommit ∧
+    fuel sham.parent = 11 ∧
+      sham.parent.continuation = true ∧
+        Enabled sham (Event.inherited Event.ownPay) ∧ ¬Enabled sham (Event.inherited Event.close)
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, `instDecidableContext`, `instDecidableEnabled`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : observed.parent.count.beq 4 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+InquiryRevision.lean:240:86: error: Tactic `decide` failed for proposition
+  Enabled observed (Event.inherited (Event.scope true)) ∧
+    stale.mode = Mode.idle ∧
+      ¬Enabled stale Event.commit ∧
+        Enabled stale (Event.inspect Channel.faithful) ∧
+          Enabled (advance PlasticityWitness.laws stale (Event.inspect Channel.faithful)) Event.commit
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableNot`, `instDecidableTrue`, `Bool.decEq`, `instDecidableContext`, `instDecidableEnabled`, `instDecidableEqMode`, `Nat.decEq`, and `PairedPlasticity.instDecidableEnabled`, reduction got stuck at the `Decidable` instance
+  match h : stale.parent.count.beq 4 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+InquiryRevision.lean:244:50: error: unexpected token 'prefix'; expected ')' or term
+InquiryRevision.lean:244:56: error: unexpected identifier; expected ':'
+InquiryRevision.lean:247:45: error: unexpected token 'prefix'; expected ')' or term
+InquiryRevision.lean:247:51: error: unexpected identifier; expected ':'
+InquiryRevision.lean:262:106: error: Tactic `decide` failed for proposition
+  ¬Enabled scopeDenied Event.assemble ∧
+    ¬Enabled permissionDenied Event.assemble ∧
+      ¬Enabled noPart Event.assemble ∧
+        material noPart = 68 ∧
+          ¬Enabled (withFuelAtFour 0) Event.assemble ∧
+            energy (withFuelAtFour 0) = 88 ∧
+              ¬Enabled (advance PlasticityWitness.laws (withFuelAtFour 1) Event.assemble)
+                    (Event.inspect Channel.faithful) ∧
+                ¬Enabled
+                    (run PlasticityWitness.laws (withFuelAtFour 2) [Event.assemble, Event.inspect Channel.faithful])
+                    Event.commit
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableNot`, `Bool.decEq`, `instDecidableContext`, `instDecidableEnabled`, `instDecidableEqMode`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : scopeDenied.parent.count.beq 4 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+InquiryRevision.lean:266:96: error: Tactic `decide` failed for proposition
+  Runnable PlasticityWitness.laws (withFuelAtFour 13) (adaptation ++ assessment ++ action) ∧
+    fuel (run PlasticityWitness.laws (withFuelAtFour 13) (adaptation ++ assessment ++ action)).parent = 0 ∧
+      ¬Runnable PlasticityWitness.laws (withFuelAtFour 12) (adaptation ++ assessment ++ action)
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, `instDecidableContext`, `instDecidableEnabled`, `runnableDecidable`, `Nat.decEq`, and `runnableDecidable._aux_1`, reduction got stuck at the `Decidable` instance
+  match h : (withFuelAtFour 13).parent.count.beq 4 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+InquiryRevision.lean:269:40: error: unexpected token 'prefix'; expected ')' or term
+InquiryRevision.lean:269:46: error: unexpected identifier; expected ':'
+InquiryRevision.lean:271:53: error: unexpected token 'prefix'; expected ')' or term
+InquiryRevision.lean:271:59: error: unexpected identifier; expected ':'
+InquiryRevision.lean:280:37: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HAppend (List Int) (List Nat) ?m.26
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'InquiryRevision.runnable_trace' depends on axioms: [propext]
+'InquiryRevision.release_energy' does not depend on any axioms
+'InquiryRevision.release_material' depends on axioms: [propext]
+'InquiryRevision.step_energy' depends on axioms: [propext, Quot.sound]
+'InquiryRevision.step_material' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.trace_energy' depends on axioms: [propext, Quot.sound]
+'InquiryRevision.trace_material' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.faithful_read_uses_actual_sockets' depends on axioms: [propext]
+'InquiryRevision.commit_changes_only_access_and_spent_fuel' depends on axioms: [propext]
+'InquiryRevision.commit_replaces_enabled_inquiry_with_closure' depends on axioms: [propext, sorryAx]
+'InquiryRevision.inherited_event_invalidates_observation' depends on axioms: [propext]
+'InquiryRevision.missing_or_stale_cannot_commit' depends on axioms: [propext]
+InquiryRevision.lean:300:14: error(lean.unknownIdentifier): Unknown constant `InquiryRevision.actual_same_continuing_prefix`
+'InquiryRevision.actual_adapter_and_read' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.actual_change_in_access' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.whole_actual_runnable' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.whole_actual_trace' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.final_actual_accounts' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.no_further_teaching_in_suffix' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.blocked_evidence_controls' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.sham_keeps_old_obstruction' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.actual_staleness_and_reacquisition' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.real_zero_and_false_positive' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.component_authority_and_funding_controls' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.sharp_funded_response_boundary' depends on axioms: [propext, sorryAx, Quot.sound]
+'InquiryRevision.signs_still_control_response' depends on axioms: [propext, sorryAx, Quot.sound]
+InquiryRevision.lean:314:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:315:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:316:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:317:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:318:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:319:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:320:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:321:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:322:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:323:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:324:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:325:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.
+InquiryRevision.lean:326:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.

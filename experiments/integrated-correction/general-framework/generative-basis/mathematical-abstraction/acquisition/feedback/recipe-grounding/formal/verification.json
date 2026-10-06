@@ -1,0 +1,5641 @@
+{
+  "status": "passed",
+  "scope": "Exact recipe event-attempt law and saved native words; finite source-bound correspondence, not universal Python refinement",
+  "compiler": {
+    "path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+    "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+  },
+  "source_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-PRESERVATION.json": "1393eca9b7f49687e6bab8713e64ac7c57cb2e86b8d26cbb687bbe14ea3fbf9d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CALIBRATION-REVISION-PROTOCOL.md": "3223b6e2e0b4a65ba3f419deb7373c6f30f88d9d7b2a0e01df6b39ab5f60f085",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-ERRATUM.md": "de9a0dcc45c44633ef1419dda6f492fad3fa8d900e605d1749710a0eb017cb89",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean": "0af00e393b218b3d631693f6decfc13aa080f54b2e964f83b02dfc20092563aa",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/check.py": "a178108cc1725091c840c0179ca5f23288d0bc19e003f1fb5effe55773bca6b4",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/verification.json": "c28247f5465a0f70bf8c507bbf36e65ec5c6e4f6de53958141336f129000c4ce",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-independent-check.json": "f5e0104d85fd981c5e94b506837593b376798c7a1b2534a2bd80434b5fd7a7db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-results.json": "04e0b604172d2042fc8418af54e549a586bbaefc60e43cebe980a56fd164eca1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision.py": "732d855ae20f4be322442dfce767fd839759cc5181ce5a8c33571ddab23efe1b",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision_check_review.py": "c3b92cf690490ab5d3e0cefbb59b4d37d980bd0f81955920531951c28a97ff02",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry_check_review.py": "3770a15d141d5e6e998fb8cf3f241f5397786415525653577c4d7d06fdde0b78",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md": "66c68837be71a3331d19b97bef2eac5c290ee16e1863cd5866f3f1267d27df15",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/check_independent.py": "e970c2629473998f8e4515e49d76beeb6cf9737820de7b4b3a793ad86806817e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean": "b42e6c3327c9719e0a2bdc1dae34d03110d71201c3efb488711018abbee14a50",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean": "44005d69ec737b42c148a9756f54fa3213912b1430433ac9df524872501ad388",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/check.py": "67147788a100930b388ce77516a666232bc41fb31ff836cda6f766f3d6506286",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/independent-check.json": "61410c79c1c18f1a0148b3c00daa35d6b293c0099959555d66d3be7bc8410052",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/model.py": "e79f83dbed348caff345b64d3f808b6505fc37ce10d77f65e933441f086fdaab",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/results.json": "862291d774782bce01d5f90164ddf14d2822ff2e460e962fb4e7eb36d5e0a023",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement_check_review.py": "456b2aec248f1a36eab3845eff18903b1f7a3789b927918924950127a6411202",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean": "862bb838eb7916e6f149cd38fd2673f1965585d775d422ca16e181bdbabf50be",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean": "3ec8363e61404c1d23ecf5f562cb9bb880f6d136a0b936e725e2e4a98c9e4df1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check.py": "3b5fc5fb91aedbb82ae645da5496882ca08d45f2d6fd57b0608cfd8645aaa248",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json": "c9d75a3677bd5fbe5026b358a1d55bc3c76ca33db3b5af5411e8c27c21a4d0a0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json": "e9adb2a52c661054cd18bb60ca057bf716a33646474076ff13366e0369cd99f1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json": "424540b7688e836b8357b86adf1ae7f3382349c7581abe83df37d36ccbae72b2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py": "75e715f1a7a0af499a39887e3fc9b38d88b66125d313361de851c421d9197127",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "source_hashes_stable": true,
+  "generated_fixture": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/SavedRecipeCorrespondence.lean",
+  "generated_fixture_sha256": "7ce6e0d318739095413c1dc2f59ccf3e08e86d224e2dc653b9727c602282e237",
+  "independent_runtime_receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/independent-check.json",
+  "independent_runtime_receipt_sha256": "61410c79c1c18f1a0148b3c00daa35d6b293c0099959555d66d3be7bc8410052",
+  "reused_helpers": [
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/check.py",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check.py"
+  ],
+  "mathematical_theorem_count": 29,
+  "saved_correspondence_theorem_count": 800,
+  "inherited_audit_count": 93,
+  "total_audit_count": 922,
+  "coverage": {
+    "case_count": 33,
+    "cases": [
+      {
+        "name": "positive_identity_learned",
+        "states": 20,
+        "event_attempts": 19,
+        "status": "complete",
+        "retention_status": "retained"
+      },
+      {
+        "name": "positive_identity_conventional",
+        "states": 20,
+        "event_attempts": 19,
+        "status": "complete",
+        "retention_status": "retained"
+      },
+      {
+        "name": "positive_inversion_learned",
+        "states": 20,
+        "event_attempts": 19,
+        "status": "complete",
+        "retention_status": "retained"
+      },
+      {
+        "name": "positive_inversion_conventional",
+        "states": 20,
+        "event_attempts": 19,
+        "status": "complete",
+        "retention_status": "retained"
+      },
+      {
+        "name": "mismatch_identity_learned",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "mismatch_identity_conventional",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "mismatch_inversion_learned",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "mismatch_inversion_conventional",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "old_report_error_identity_learned",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "old_report_error_identity_conventional",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "old_report_error_inversion_learned",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "old_report_error_inversion_conventional",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "positive_constant_0",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "positive_constant_1",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "mismatch_constant_0",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "mismatch_constant_1",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "old_report_error_constant_0",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "old_report_error_constant_1",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "positive_raw_clamped",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "mismatch_raw_clamped",
+        "states": 20,
+        "event_attempts": 19,
+        "status": "complete",
+        "retention_status": "retained"
+      },
+      {
+        "name": "old_report_error_raw_clamped",
+        "states": 20,
+        "event_attempts": 19,
+        "status": "complete",
+        "retention_status": "retained"
+      },
+      {
+        "name": "formation_clamped",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "reference_0_missing",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "reference_0_setting",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "reference_1_missing",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "reference_1_setting",
+        "states": 13,
+        "event_attempts": 11,
+        "status": "decoder_unresolved",
+        "retention_status": "retained"
+      },
+      {
+        "name": "coherent_misforce",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "transducer_drift",
+        "states": 28,
+        "event_attempts": 27,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "mode_dependent_transducer",
+        "states": 27,
+        "event_attempts": 26,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "row_lost_after_ready",
+        "states": 17,
+        "event_attempts": 15,
+        "status": "decoder_row_unavailable",
+        "retention_status": "retained"
+      },
+      {
+        "name": "incurred_wait_one",
+        "states": 21,
+        "event_attempts": 20,
+        "status": "complete",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "incurred_wait_two",
+        "states": 20,
+        "event_attempts": 19,
+        "status": "funding:choose_diagnostic",
+        "retention_status": "funding:calibration_retention"
+      },
+      {
+        "name": "source_denied_ancestor",
+        "states": 2,
+        "event_attempts": 0,
+        "status": "entrance_not_retained_full_operation",
+        "retention_status": "not_installed"
+      }
+    ],
+    "state_count": 648,
+    "saved_edges": 615,
+    "event_attempts": 602,
+    "charged_events": 586,
+    "denied_events": 28,
+    "uncharged_boundary_changes": 1,
+    "parent_construction_equalities": 3,
+    "mask_encoding_equalities": 5,
+    "theorem_count": 800
+  },
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/GenerativeCore.log",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "inherited": true,
+      "audit_count": 18,
+      "theorem_audits": [
+        {
+          "theorem": "Generative.trace_append_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.trace_singleton_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.enabled_iff_singleton_trace",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.enabled_difference_implies_state_difference",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.feasible_append_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.feasible_prefix",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.enabled_product_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.trace_product_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.feasible_product_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.trace_map",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.trace_lift",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.projected_trace_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.projection_exact_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.local_exact_iff_trace_exact",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.enabled_projection_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.feasible_projection_iff",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.feasible_difference_implies_projection_difference",
+          "axioms": []
+        },
+        {
+          "theorem": "Generative.trace_faithful_iff",
+          "axioms": []
+        }
+      ]
+    },
+    {
+      "module": "RemainingDependency",
+      "source_sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/RemainingDependency.log",
+      "log_sha256": "1ebe1f21adfed36245fa0f136eeceb8a6cdbcf3c1c82d3eb732051314469e07d",
+      "inherited": true,
+      "audit_count": 43,
+      "theorem_audits": [
+        {
+          "theorem": "RemainingDependency.charge_conserves",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.charge_never_increases_fuel",
+          "axioms": []
+        },
+        {
+          "theorem": "RemainingDependency.charge_denial_preserves_account",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.chosen_setting_supported",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.productive_pair_has_selected_setting",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.absent_evidence_is_not_negative",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.no_constant_setting_serves_opposed_relations",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.calibrated_selected_setting_transfers",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.faithful_bound_datum_decodes",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.wrong_context_stays_unknown",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.missing_stays_unknown",
+          "axioms": []
+        },
+        {
+          "theorem": "RemainingDependency.discharge_conserves",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.supported_discharge_delivers",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.unsupported_discharge_wastes",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.transfer_actor_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.transfer_stocks_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.empty_source_cannot_debit_actor",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.affordable_calibrated_selection_delivers",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.ancestral_coordinates_unchanged",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.run_ancestral_coordinates_unchanged",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.completed_component_stays_complete",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.run_is_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.consumer_read_ignores_latent_law",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.weak_challenge_does_not_supply_load",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.slot_write_does_not_supply_load",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.paid_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.paid_stocks_preserved",
+          "axioms": []
+        },
+        {
+          "theorem": "RemainingDependency.advance_actor_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.advance_stock_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.run_actor_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.run_stock_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.whole_history_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.finite_original_support_bounds_fuel",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.truthful_paid_assay_acquires_pair",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.truthful_paid_assay_commits_supported_choice",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.actual_dependent_service",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.opposed_dependency_changes_the_enacted_relation",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.matched_assay_cost_through_commit",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.missing_contact_is_unresolved",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.false_positive_can_misdirect_remaining_packet",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.broken_calibration_defeats_correct_weak_record",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RemainingDependency.unavailable_relation_is_not_old_unfulfillment",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "CalibrationRevision",
+      "source_sha256": "0af00e393b218b3d631693f6decfc13aa080f54b2e964f83b02dfc20092563aa",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/CalibrationRevision.log",
+      "log_sha256": "95fd9edd6a6e26ab0e4d4e96da34ef152bd00b0cac8ade9c1edba5019a3fe132",
+      "inherited": true,
+      "audit_count": 32,
+      "theorem_audits": [
+        {
+          "theorem": "CalibrationRevision.untested_full_coordinate_is_underdetermined",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.every_weak_query_word_preserves_the_ambiguity",
+          "axioms": []
+        },
+        {
+          "theorem": "CalibrationRevision.same_observed_pair_has_distinct_full_laws",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.local_mismatch_refutes_global_calibration",
+          "axioms": []
+        },
+        {
+          "theorem": "CalibrationRevision.local_agreement_does_not_establish_global_calibration",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.filtering_never_adds_a_candidate",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.allowed_exactly_matches_coordinate",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.faithful_filter_preserves_actual_map",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.one_full_bit_leaves_eight",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.full_and_fresh_same_setting_leave_four",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.missing_full_indication_does_not_mean_failure",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.paid_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.paid_stocks_preserved",
+          "axioms": []
+        },
+        {
+          "theorem": "CalibrationRevision.advance_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.advance_stocks_preserved",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.run_parent_preserved",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.run_account_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.run_stocks_preserved",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.whole_history_conserved",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.completion_and_old_report_preserved",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.exhausted_source_still_blocks_another_full_transfer",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.run_is_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.proposal_ignores_unread_physical_law",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.actual_parent_pair_has_equal_retained_reports_and_consequences",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.full_failure_revises_application_and_selects_real_inquiry",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.actual_funded_recheck_discloses_local_mismatch",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.actual_funded_recheck_can_contradict_the_old_report",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.matched_clamp_preserves_full_evidence_revision_and_proposal",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.clamped_history_does_not_acquire_the_fresh_reply",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.supported_tested_prediction_does_not_claim_global_calibration",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.missing_full_contact_withholds_mismatch_inquiry",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CalibrationRevision.corrupted_fresh_contact_can_falsify_the_diagnosis",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RecipeGrounding",
+      "source_sha256": "b42e6c3327c9719e0a2bdc1dae34d03110d71201c3efb488711018abbee14a50",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/RecipeGrounding.log",
+      "log_sha256": "4a0231da2dbb58405e870f7d964331b3a54edb34142c613f564c713ddabb7e95",
+      "inherited": false,
+      "audit_count": 16,
+      "theorem_audits": [
+        {
+          "theorem": "RecipeGrounding.generated_exact",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.four_distinct_generated_tables",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeGrounding.generated_represents_every_unary_function",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.selection_exists_iff_distinct",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.selected_table_is_generated",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.actual_selected_decoder_recovers",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.equal_reference_replies_preclude_any_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeGrounding.selected_recovery_iff_possible",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.one_reference_cannot_certify_recoverability",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeGrounding.equal_observations_equal_adaptive_memory",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeGrounding.compensated_routes_have_equal_observations",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeGrounding.compensated_routes_preserve_real_target_difference",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeGrounding.opposite_routes_have_no_common_reliable_decoder",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.no_adaptive_unreferenced_reliable_selection",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeGrounding.changed_use_transduction_defeats_calibrated_recipe",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeGrounding.swapped_reference_binding_defeats_selected_recipe",
+          "axioms": []
+        }
+      ]
+    },
+    {
+      "module": "RecipeNative",
+      "source_sha256": "44005d69ec737b42c148a9756f54fa3213912b1430433ac9df524872501ad388",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/RecipeNative.log",
+      "log_sha256": "25edc9e153bf60daa58788df51c7f24128cc596412e877d39b08f64822d908fb",
+      "inherited": false,
+      "audit_count": 13,
+      "theorem_audits": [
+        {
+          "theorem": "RecipeNative.paid_conserves",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.inherited_conserves",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.every_attempt_preserves_account",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.run_preserves_account",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.every_attempt_preserves_ancestor_and_stocks",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.run_preserves_ancestor_and_stocks",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.run_is_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.actual_binder_matches_selected_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeNative.actual_bound_decoder_recovers",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.decoding_uses_the_actual_stored_rows",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.absent_row_is_not_repaired_by_ready",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.inherited_complete_pipeline_account",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeNative.old_pipeline_plus_four_reference_surcharges_is_unfunded",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "SavedRecipeCorrespondence",
+      "source_sha256": "7ce6e0d318739095413c1dc2f59ccf3e08e86d224e2dc653b9727c602282e237",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/SavedRecipeCorrespondence.log",
+      "log_sha256": "c223f734f1587d92bce7d1679c7245232ee4ee75bb1f8d094228d1e4e335acd6",
+      "inherited": false,
+      "audit_count": 800,
+      "theorem_audits": [
+        {
+          "theorem": "RecipeSaved.parent_calibration_break_prior_construction",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.parent_false_dependence_prior_construction",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.parent_law_01_learned_prior_construction",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mask_51",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mask_204",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mask_255",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mask_65280",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mask_65535",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_learned_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_identity_conventional_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_learned_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_inversion_conventional_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_learned_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_identity_conventional_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_learned_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_inversion_conventional_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_learned_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_identity_conventional_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_learned_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_inversion_conventional_actual_formed_decoder",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_0_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_constant_1_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_0_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_constant_1_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_0_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_constant_1_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.positive_raw_clamped_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mismatch_raw_clamped_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.old_report_error_raw_clamped_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.formation_clamped_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_missing_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_0_setting_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_missing_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_11",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.reference_1_setting_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.coherent_misforce_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_event_27",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.transducer_drift_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_21",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_22",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_23",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_24",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_25",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_event_26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.mode_dependent_transducer_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_15",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.row_lost_after_ready_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_event_20",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_one_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_14",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_15",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_16",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_17",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_18",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_event_19",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.incurred_wait_two_final_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.source_denied_ancestor_entrance",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.source_denied_ancestor_initial_account",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.source_denied_ancestor_event_1",
+          "axioms": []
+        },
+        {
+          "theorem": "RecipeSaved.source_denied_ancestor_saved_run",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.source_denied_ancestor_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "RecipeSaved.source_denied_ancestor_final_account",
+          "axioms": []
+        }
+      ]
+    }
+  ],
+  "standard_axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_free_audits": 157,
+  "custom_axioms": [],
+  "proof_holes": [],
+  "native_decide_used": false,
+  "limitations": [
+    "Native independent replay supplies ancestry and scheduler validation; arbitrary formal words need not be native schedules.",
+    "All four decoder tables belong to the compositional grammar; the fixed two-reference schedule constructs inverses or partial/conflicting wiring, not all four completed tables.",
+    "Reference forcing, target binding, same-map use, construction primitives and tariffs remain explicit local laws.",
+    "The one-reference impossibility includes constant transductions; independently known bijectivity changes that question.",
+    "Parent historical data are not a second support reserve. No source replenishment or full transfer is introduced.",
+    "Reference-formation controller phase is encoded by an explicit finite phase coordinate, not an added hardware cell.",
+    "The retained positive use and unretained adverse diagnoses are different achievements; resource failure is preserved."
+  ]
+}

@@ -1,0 +1,118 @@
+SOURCE experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean
+'FormedSelection.population_type_sum' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_valid' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_valid' depends on axioms: [propext, Quot.sound]
+'FormedSelection.material_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_material_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_energy_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_common_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_common_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.copy_increment_le_spent' depends on axioms: [propext]
+'FormedSelection.copy_tally_le_spent' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_copy_budget' depends on axioms: [propext, Quot.sound]
+'FormedSelection.exact_step_rank_drop' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_strict_rank' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_event_bound' depends on axioms: [propext, Quot.sound]
+'FormedSelection.no_infinite_event_path' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_paid_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_paid_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.repair_needs_three_initial_common_units' depends on axioms: [propext, Quot.sound]
+'FormedSelection.low_fuel_cannot_restore_site' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_paid_mixed_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_paid_mixed_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.restored_site_and_alternative_need_four_initial_common_units' depends on axioms: [propext, Quot.sound]
+'FormedSelection.a_absence_step' depends on axioms: [propext]
+'FormedSelection.h_absence_step' depends on axioms: [propext]
+'FormedSelection.a_absence_trace' depends on axioms: [propext]
+'FormedSelection.h_absence_trace' depends on axioms: [propext]
+'FormedSelection.a_appearance_requires_formation' depends on axioms: [propext, Quot.sound]
+'FormedSelection.h_appearance_requires_formation' depends on axioms: [propext, Quot.sound]
+'FormedSelection.a_copy_has_template' depends on axioms: [propext]
+'FormedSelection.h_copy_has_template' depends on axioms: [propext]
+'FormedSelection.owned_support_step' depends on axioms: [propext]
+'FormedSelection.owned_support_trace' depends on axioms: [propext]
+'FormedSelection.owned_support_forbids_h_local_copy' depends on axioms: [propext]
+'FormedSelection.no_h_local_copies_without_resident_wear' depends on axioms: [propext]
+'FormedSelection.paid_formation_to_copy' depends on axioms: [propext]
+'FormedSelection.witness_accounting' depends on axioms: [propext]
+'FormedSelection.repair_enables_capture' depends on axioms: [propext]
+'FormedSelection.capture_enables_copy' depends on axioms: [propext]
+'FormedSelection.initial_owned_support' depends on axioms: [propext]
+'FormedSelection.no_h_local_copies_from_absence_without_resident_wear' depends on axioms: [propext]
+'FormedSelection.repaired_site_can_pass_to_alternative' depends on axioms: [propext]
+'FormedSelection.inheritance_accounting' depends on axioms: [propext]
+
+SOURCE experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeReconstructionRequirement.lean
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:41:11: error: Tactic `rfl` failed: No `[refl]` lemma registered for relation
+  LE.le
+
+Hint: Add the `[refl]` attribute to reflexivity lemmas for `LE.le` to use this tactic
+
+case nil
+⊢ tally aGrowth [] + count Event.repair [] ≤ tally aGrowth [] + count Event.repair []
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:93:4: error: unsolved goals
+case pos
+M : Nat
+s✝ t✝ : State
+es✝ : List Event
+s u t : State
+es : List Event
+ht : Trace M u es t
+ih : u.intact = false → 0 < count Event.capture es → 0 < count Event.repair es
+damaged : s.intact = false
+hs : Step M s Event.repair u
+captured : 0 < count Event.capture (Event.repair :: es)
+⊢ 0 < 1 + tally (eventIndicator Event.repair) es
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:116:11: error: Tactic `rfl` failed: No `[refl]` lemma registered for relation
+  LE.le
+
+Hint: Add the `[refl]` attribute to reflexivity lemmas for `LE.le` to use this tactic
+
+case nil
+⊢ count Event.repair [] ≤ count Event.repair []
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:136:11: error: unexpected token 'local'; expected '(', ':=', '|' or term
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:136:11: error: Missing cases:
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:134:2: error: unsolved goals
+case neg
+M n : Nat
+s t : State
+es : List Event
+h : Trace M s es t
+restored : aCount s + n ≤ aCount t
+total : n + count Event.repair es ≤ s.fuel + bit s.localFuel + s.source
+hi : s.intact = false
+hc : ¬count Event.capture es = 0
+⊢ min (n - bit s.localFuel) (1 + (n - (bit s.localFuel + s.source))) ≤ s.fuel
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:131:35: error: unsolved goals
+case true
+M n : Nat
+s t : State
+es : List Event
+h : Trace M s es t
+restored : aCount s + n ≤ aCount t
+total : n + count Event.repair es ≤ s.fuel + bit s.localFuel + s.source
+hi : s.intact = true
+⊢ requiredCommon n s ≤ s.fuel
+/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/isolated/GenerativeReconstructionRequirement.lean:136:16: error: unexpected token ':='; expected 'binder_predicate', 'builtin_dsimproc', 'builtin_simproc', 'dsimproc', 'elab', 'elab_rules', 'grind_pattern', 'infix', 'infixl', 'infixr', 'instance', 'macro', 'macro_rules', 'notation', 'postfix', 'prefix', 'simproc', 'syntax' or 'unif_hint'
+'Generative.ReconstructionRequirement.step_a_growth' depends on axioms: [propext, Quot.sound]
+'Generative.ReconstructionRequirement.trace_a_growth' depends on axioms: [propext, Quot.sound]
+'Generative.ReconstructionRequirement.growth_repair_cost' depends on axioms: [propext]
+'Generative.ReconstructionRequirement.growth_repair_trace_cost' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ReconstructionRequirement.growth_repair_support' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ReconstructionRequirement.step_source_balance' depends on axioms: [propext, Quot.sound]
+'Generative.ReconstructionRequirement.trace_source_balance' depends on axioms: [propext, Quot.sound]
+'Generative.ReconstructionRequirement.no_capture_support' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ReconstructionRequirement.step_intact_from_damage' depends on axioms: [propext]
+'Generative.ReconstructionRequirement.capture_from_damage_requires_repair' depends on axioms: [propext, sorryAx]
+'Generative.ReconstructionRequirement.repairs_cost_common' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ReconstructionRequirement.reconstruction_common_necessary' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ReconstructionRequirement.zero_common_is_permanent' depends on axioms: [propext, Quot.sound]
+'Generative.ReconstructionRequirement.no_future_repair_from_zero_common' depends on axioms: [propext, Quot.sound]
+'Generative.ReconstructionRequirement.local_reconstruction' depends on axioms: [propext]
+'Generative.ReconstructionRequirement.bulk_reconstruction' depends on axioms: [propext]
+'Generative.ReconstructionRequirement.same_reconstruction_same_total_support' depends on axioms: [propext]
+'Generative.ReconstructionRequirement.local_route_allows_fresh_damage_repair' depends on axioms: [propext]
+'Generative.ReconstructionRequirement.bulk_route_blocks_repair_after_damage' depends on axioms: [propext]
+'Generative.ReconstructionRequirement.bulk_route_no_continuation_can_restore_repair' depends on axioms: [propext,
+ Quot.sound]

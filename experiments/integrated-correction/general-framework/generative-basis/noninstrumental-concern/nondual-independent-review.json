@@ -1,0 +1,328 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T06:05:13.022256+00:00",
+  "independent_frozen_temporary_build": true,
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "sources_unchanged": true,
+  "old_records_unchanged": true,
+  "public_entry_independently_compiled": true,
+  "public_import_closure_role_free": true,
+  "public_receipt_sha256": "5ea6cf0815b25e7bef9ba7ec294bc48e07ce95eeef08d7480a781b6703e6c6c6",
+  "preserved_sha256": {
+    "verification.json": "fb5bdfaa1b0981980a0d8132b0d19fc299ff3d5410f7c613f59c66edd7e9c306",
+    "root-verification.json": "0cbd3cb4669cb4bbbf1b70b89a791de5644762baaa83bc5770026f56b917640d",
+    "root-independent-review.json": "08a81ee7d9b1a7b4c2ed25a9572433ea6183d540b5c5f84ce1a8ee0d5ef002da",
+    "check.py": "3d28f311c927a1d904f71076d039aeaaabc6d903bb918b3499c51f053cb9778b",
+    "check_root.py": "7f898d4b267ec0612b87134e81653c2ec0765a180f185736f46486d817773918",
+    "Cases.lean": "f50c42a661c6241864b8ee79c31cd97dd8f4ce1c4ade419f9503f9027b66c818"
+  },
+  "checker_sha256": "97974d31dddcd4aae3cc643fc7a9db432e14268156582379a65869dfcc4146b1",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "dependency_audits": 18,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "BoundaryModels",
+      "source": "lean/BoundaryModels.lean",
+      "source_sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "dependency_audits": 8,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/BoundaryModels.txt",
+      "log_sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "module": "Depletion",
+      "source": "lean/Depletion.lean",
+      "source_sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+      "dependency_audits": 5,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "nondual-independent-logs/Depletion.txt",
+      "log_sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "module": "RootRealization",
+      "source": "lean/RootRealization.lean",
+      "source_sha256": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6",
+      "dependency_audits": 16,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "nondual-independent-logs/RootRealization.txt",
+      "log_sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "module": "ProductTower",
+      "source": "lean/deeper/ProductTower.lean",
+      "source_sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "dependency_audits": 7,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/ProductTower.txt",
+      "log_sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "source": "lean/deeper/DynamicUnderdetermination.lean",
+      "source_sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "dependency_audits": 9,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/DynamicUnderdetermination.txt",
+      "log_sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "module": "GeneratedPaths",
+      "source": "lean/deeper/GeneratedPaths.lean",
+      "source_sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "dependency_audits": 9,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/GeneratedPaths.txt",
+      "log_sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "module": "HistoryRealization",
+      "source": "lean/deeper/HistoryRealization.lean",
+      "source_sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "dependency_audits": 7,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/HistoryRealization.txt",
+      "log_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "module": "DynamicSymmetry",
+      "source": "lean/deeper/DynamicSymmetry.lean",
+      "source_sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+      "dependency_audits": 20,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/DynamicSymmetry.txt",
+      "log_sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "module": "DynamicConsequences",
+      "source": "lean/deeper/DynamicConsequences.lean",
+      "source_sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "dependency_audits": 9,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/DynamicConsequences.txt",
+      "log_sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "module": "DynamicClassification",
+      "source": "lean/deeper/DynamicClassification.lean",
+      "source_sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698",
+      "dependency_audits": 6,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/DynamicClassification.txt",
+      "log_sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "module": "GeneratedSelf",
+      "source": "lean/GeneratedSelf.lean",
+      "source_sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d",
+      "dependency_audits": 23,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/GeneratedSelf.txt",
+      "log_sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "module": "EthicalOrientation",
+      "source": "lean/EthicalOrientation.lean",
+      "source_sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+      "dependency_audits": 17,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/EthicalOrientation.txt",
+      "log_sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "module": "OutcomeContinuation",
+      "source": "lean/OutcomeContinuation.lean",
+      "source_sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+      "dependency_audits": 14,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/OutcomeContinuation.txt",
+      "log_sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "module": "GenerativeModel",
+      "source": "lean/GenerativeModel.lean",
+      "source_sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+      "dependency_audits": 8,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/GenerativeModel.txt",
+      "log_sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "module": "GenerativeOutcomeModel",
+      "source": "lean/GenerativeOutcomeModel.lean",
+      "source_sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9",
+      "dependency_audits": 3,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/GenerativeOutcomeModel.txt",
+      "log_sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "module": "NondualCore",
+      "source": "lean/NondualCore.lean",
+      "source_sha256": "116ea0aec116629103bc01b682510a2ac54b20ac37f41262ef8c14920e56374e",
+      "dependency_audits": 11,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/NondualCore.txt",
+      "log_sha256": "23f0c958ea32e0c0840223d664ffc822bbbca2bc7798dedb10c1585bd22683fd"
+    },
+    {
+      "module": "GenerativeNondualModel",
+      "source": "lean/GenerativeNondualModel.lean",
+      "source_sha256": "091b7f30babd883c3884448ec26664f0d449b46522c801958238fe52a1d4fd09",
+      "dependency_audits": 2,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/GenerativeNondualModel.txt",
+      "log_sha256": "d620d6ee41172889dc4b68788e81c4d677de0b3598a87060f7fd1375f1ca84eb"
+    },
+    {
+      "module": "ResourceContinuation",
+      "source": "lean/conditional/ResourceContinuation.lean",
+      "source_sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+      "dependency_audits": 21,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "nondual-independent-logs/ResourceContinuation.txt",
+      "log_sha256": "041c9b2e2f06dd9d427a1f0811985f67812be10a17825cc3df153bb4cf2e8ef4"
+    },
+    {
+      "module": "PatientConcern",
+      "source": "noninstrumental-concern/PatientConcern.lean",
+      "source_sha256": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6",
+      "dependency_audits": 32,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "nondual-independent-logs/PatientConcern.txt",
+      "log_sha256": "c1f9082411bc1ee7130311e3a7098e2f2df333b7591750e37a94d57c8c6ad355"
+    },
+    {
+      "module": "GroundingContract",
+      "source": "noninstrumental-concern/GroundingContract.lean",
+      "source_sha256": "afc3b934499aeb0c705590ac33dcee6ee784b8705c5a93fba0b7b60dc7f468ac",
+      "dependency_audits": 14,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "nondual-independent-logs/GroundingContract.txt",
+      "log_sha256": "86551397d4e2d5081c0c4def1045fad5190e9e26af9a03d9d0b6c5ae05c3a30e"
+    },
+    {
+      "module": "NondualFormation",
+      "source": "noninstrumental-concern/NondualFormation.lean",
+      "source_sha256": "cd55efb6dbe9d6bb145d9c46efec6f53e9d4b1cafcca4bb1fbe1f31be0367cbb",
+      "dependency_audits": 16,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "clean": true,
+      "log": "nondual-independent-logs/NondualFormation.txt",
+      "log_sha256": "186761eb6d1bb946b6e00a0471cdf8d55225a5d24a01ae1d410f33343150e425"
+    },
+    {
+      "module": "NondualConcernAdapter",
+      "source": "noninstrumental-concern/NondualConcernAdapter.lean",
+      "source_sha256": "148a4e58accb70368c495e0e205ba93901d9cd2fe0a7f7b957108b30eef3c2a3",
+      "dependency_audits": 4,
+      "axioms": [],
+      "clean": true,
+      "log": "nondual-independent-logs/NondualConcernAdapter.txt",
+      "log_sha256": "3b55fa8c13896866fd5ce6120102524191b0536efc1efd0b2c6bb6e915d33e4d"
+    }
+  ],
+  "new_dependency_audits": 33,
+  "finite_compiled_comparison": {
+    "finite_graphs": 128,
+    "activity_masks": 32,
+    "states": 4096,
+    "capacity_queries": 8192,
+    "query_targets": [
+      3,
+      4
+    ],
+    "candidate_edges": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "capacity_histogram": {
+      "neither": 3264,
+      "only_3": 192,
+      "only_4": 576,
+      "both": 64
+    },
+    "exact_replayed_states": 6,
+    "role_change_and_ablation_checks": true,
+    "duplicate_and_self_edge_checks": 3,
+    "scope": "All seven-edge and five-activity masks in this declared finite slice; not all unbounded Nat-node networks."
+  },
+  "probe_source_sha256": "32bdc663a5ba8ebe9cd92f151f369f64ea349d6222999460a2e409dd6523d55f",
+  "probe_output_sha256": "6638401fd7c2d63532b9d0ac407c8efa511a98980e6936b9b52038db7736b485",
+  "scope": "Role-free description and supplied signal-connection formation; independently compiled finite capacity and endpoint replay. No biological organization, consciousness, ethical truth, or assumption-free ontology is inferred."
+}

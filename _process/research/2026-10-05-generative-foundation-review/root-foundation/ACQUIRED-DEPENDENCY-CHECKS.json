@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "scope": "Read-only source/receipt binding, preservation and integration verification; no additional scientific run.",
+  "cases": 20,
+  "full_state_event_occurrences": 4442,
+  "producer_source_bindings": 15,
+  "independent_native_helper_bound": true,
+  "first_execution_sources_and_results_unchanged": true,
+  "matched_prefixes": 8,
+  "prior_bound_artifacts_preserved": 15,
+  "prior_parent_readme_preserved_before_explicit_addendum": true,
+  "previous_integration_fragments_preserved": 6,
+  "new_additions_present": 7,
+  "local_links_and_anchors": 67,
+  "artifact_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md": "88b7e8a2c3be923c24aefc47cb9dcab3937d21764cb3a8bdba89bd96f18bb5e8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md": "d127db30e7c65dc112ae2a4d8e1ac711ec837ac6b9eb1e9ae379c8b5e5519ecf",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md": "4025deb5a8f9f6af19b2fc1608d40403dad4d1e108d5105c7eec9c9fe22efc80",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md": "6d5d3da44aa443cc63c90444ac4fe42aa81b0e52a6d4abe44d753c5ec85fab84",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md": "04416a7dfbaee21c53c8c8266943c91fcc7b0ded72ae4537f4c049ae4f2670a7",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md": "8839625aeb6df53a54a54a9cf23b3a917880a56464ed2ab668fdf81debe33ddb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/DEVELOPMENT.md": "d69b509a6c249df23e4d3b7b0a32281cab5fdfb592249ac804f356186de938bc",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/model.py": "3d68e40ae687d2a27544b9a6f68050baa545100f0ff8f2ca59086f405c5c847c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/results.json": "18de3f7e66394d42443dea66db11e00a4d063393f2ed4891128e8f3fd0b96a93",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent-check.json": "98758832426bd1324584c20131fea9d25f1b6d3318912a619e2df8416bdaaf5f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/development/attempt-01/receipt.json": "d49c253427ca190a022c598a4a26f255aaaa792f791bda08226dac4f298dfe58",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/development/attempt-01/inputs.json": "dd3d25b17b885361e6d7ffaa568337d05d71fafcfcb2d0aa4fa266e31c34744f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/development/attempt-01/model.py": "3d68e40ae687d2a27544b9a6f68050baa545100f0ff8f2ca59086f405c5c847c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/development/attempt-01/run.log": "be211e2098bdca9049476d7e8225c3bff34f45560587e31ac84f8deeed1e3b44",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-DOC-EDITS.json": "5076ec81f4f96ec177b1c11e841ee393885d35532ebeb1be79db155273b57ddf"
+  },
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "ACQUIRED-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "ACQUIRED-DEPENDENCY-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "ACQUIRED-DEPENDENCY-MECHANISM.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/results.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent-check.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "CONTINUING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent-check.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "ACQUIRED-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/DEVELOPMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/model.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "CONTINUING-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "../../2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "CONTINUING-DEPENDENCY-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent-check.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "CONTINUING-DEPENDENCY-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md#5-exact-support-loss-teacher-and-a-censoring-counterexample"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "CONTINUING-DEPENDENCY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "APPLICABILITY-REVALUATION-COMPARATOR.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "independent-check.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "model.py"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "DEVELOPMENT.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "development/attempt-01/receipt.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "../README.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md",
+      "target": "../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/DEVELOPMENT.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#native-effects-become-an-acquired-command-correspondence"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ACQUIRED-DEPENDENCY-MECHANISM.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ACQUIRED-DEPENDENCY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "ACQUIRED-DEPENDENCY-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#the-whole-as-the-grounding-question"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "ACQUIRED-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/README.md",
+      "target": "acquisition/README.md"
+    }
+  ],
+  "subsequent_editorial_review_bound": true
+}

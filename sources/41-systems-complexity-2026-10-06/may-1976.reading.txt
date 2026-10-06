@@ -1,0 +1,1410 @@
+AI-generated reading derivative from the adjacent preserved PDF. Page markers are PDF page numbers. The PDF is the source of record.
+
+PDF PAGE 1
+Nature Vol. 261 June 10 1976 459 
+review article 
+Simple mathematical models with very 
+complicated dynamics 
+Robert M. May* 
+First-order d@erence equations arise in many contexts in the biological, economic and social sciences. 
+Such equations, even though simple and deterministic, can exhibit a surprising array of dynamical 
+behaviour, 
+from 
+stable points, to a bifurcating hierarchy of stable cycles, to apparently random 
+fluctuations. There are consequently many fascinating problems, some concerned with delicate 
+mathematical aspects of the 
+fine 
+structure of the trajectories, and some concerned with the 
+practical 
+implications and applications. This is an interpretive review of them. 
+THERE are many situations, in many disciplines, which can be 
+described, at least to a crude first approximation, by a simple 
+tirst-order difference equation. Studies of the dynamical 
+properties of such models usually consist of finding constant 
+equilibrium solutions, and then conducting a linearised analysis 
+to determine their stability with respect to small disturbances: 
+explicitly nonlinear dynamical features are usually not 
+considered. 
+Recent studies have, however, shown that the very simplest 
+nonlinear difference equations can possess an extraordinarily 
+rich spectrum of dynamical behaviour, from stable points, 
+through cascades of stable cycles, to a regime in which the 
+behaviour (although fully deterministic) is in many respects 
+"chaotic", or indistinguishable from the sample function of a 
+random process. 
+This review article has several aims. 
+First, although the main features of these nonlinear phen- 
+omena have been discovered and independently rediscovered by 
+several people, I know of no source where all the main results 
+are collected together. I have therefore tried to give such a 
+synoptic account. This is done in a brief and descriptive way. 
+and includes some new material: the detailed mathematical 
+proofs are to be found in the technical literature, to which 
+signposts are given. 
+Second, r indicate some of the interesting mathematical 
+questions which do not seem to be fully resolved. Some of these 
+problems are of a practical kind, to do with providing a prob- 
+abilistic description for trajectories which seem random, even 
+though their underlying structure is deterministic. Other 
+problems are of intrinsic mathematical interest, and treat such 
+things as the pathology of the bifurcation structure, or the truly 
+random behaviour. that can arise when the nonlinear function 
+F(X)ofequation (I) is not analytical. One aim hereis tostimulate 
+research on these questions, particularly on the empirical 
+questions which relate to processing data. 
+Third, consideration is given to some fields where these 
+notions may find practical application. Such applications range 
+from the abstractly metaphorical (where, for example, the 
+transition from a stable point to "chaos" serves as a metaphor 
+for 
+the onset of turbulence in a fluid), to models for the dynamic 
+behaviour of biological populations (where one can seek to use 
+field 
+or laboratory data to estimate the values of the parameters 
+the difference equation). 
+'KiW's 
+College Research Centre, Cambridge CB2 IST: on leave 
+from 
+Biology Department. Princeton University, Princeton 08540. 
+Fourth, there is a very brief review of the literature pertaining 
+to the way this spectrum of behaviour-stable points, stable 
+cycles. 
+chaos-can 
+arise in second or higher order difference 
+equations (that is, two or more dimensions; two or more 
+interacting species), where the onset of chaos usually requires 
+less severe nonlinearities. Differential equations are also 
+surveyed in this light; it seems that a three-dimensional system 
+of 
+&st-order 
+ordinary differential equations is required for the 
+manifestation of chaotic behaviour. 
+The review ends with an evangelical plea for the introduction 
+of these difference equations into elementary mathematics 
+courses, so that students' intuition may be enriched by seeing 
+the wild things that simple nonlinear equations can do. 
+First-order difference equations 
+One of the simplest systems an ecologist can study is a season- 
+ally breeding population in which generations do not overlap1-'. 
+Many natural populations, particularly among temperate zone 
+insects (including many economically important crop and 
+orchard pests), are of this kind. In this situation, the observa- 
+tional data will usually consist of information about the 
+maximum, or the average, or the total population in each 
+generation. The 
+theoreticlan 
+seeks to understand how the 
+magnitude of the population in 
+generation r . I, X,,,, is 
+related to the magnitude of the population in the preceding 
+generation r, X,: such a relationship may be expressed in the 
+general form 
+The function 
+F(X) 
+will usually 
+be 
+what a biologist calls "density 
+dependent", and a mathematician calls nonlinear; equation (1) is 
+then a first-order, nonlinear difference equation. 
+Although I shall henceforth adopt the habit of referring to the 
+variable X as "the population", there are countless situations 
+outside population biology where the basic equation 
+(I), 
+applies. There are other examples in biology, as, for example 
+in genetics5.@ (where the equation describes the change in genn 
+frequency in time) or in epidemiology7 (with X the fraction of 
+the population infected at time 
+t). 
+Examples in economics 
+include models for the relationship between commodity 
+quantity and pricea, for the theory of business cycles9, and for 
+the temporal sequences generated by various other economic 
+quantitiesL0. The general equation (I) also is germane to the 
+social sciencesn, where it arises, for example, in theories of 
+
+PDF PAGE 2
+learning (where X may be the number of bits of information that 
+can be remembered after an interval t), or in the propagation of 
+rumours 
+in variously structured societies (where X is the 
+number of people to have heard the 
+rumour 
+after time t). The 
+imaginative 
+reader will be able to invent other contexts for 
+equation (I). 
+In many of these contexts, and for biological populations in 
+particular, there is a tendency for the variable X to increase 
+from one generation to the next when it is small, and for it to 
+decrease when it is large. That is, the nonlinear function 
+F(X) 
+often has the following properties: 
+F(O)=O; 
+F(X) 
+increases 
+monotonically as X increases through the range 
+O<X<A 
+(with 
+F(X) 
+attaining its maximum value at 
+X=A); 
+and 
+F(X) 
+deereases mltotonically as X increases beyond X=A. More- 
+over, 
+F(X) 
+will usually contain one or more parameters which 
+"tune" the severity of this nonlinear behaviour; parameters 
+which tune the steepness of the hump in the 
+F(X) 
+curve. These 
+parameters will typically have some biological or economic or 
+soCiologica1 
+significance. 
+A specific example is afforded by the 
+This is sometimes called the "logistic" difference equation. In 
+the limit 
+b=O, 
+it describes a population growing purely expon- 
+entially (for 
+a> 
+1); for 
+b#O, 
+the quadratic nonlinearity pro- 
+duces a growth curve with a hump, the steepness of which is 
+tuned by the parameter a. By writing 
+X=bN/a, 
+the equation may 
+be brought into canonical 
+In this form, which is illustrated in Fig. 
+1, 
+it is arguably the 
+simplest nonlinear difference equation. I shall use equation (3) 
+for most of the numerical examples and illustrations in this 
+article. Although attractive to mathematicians by virtue of its 
+extreme simplicity, in practical applications equation (3) has the 
+disadvantage that it requires X to remain on the interval 
+O< 
+X< 
+1; 
+if X ever exceeds unity, subsequent iterations diverge 
+towards - r' (which means the population becomes extinct). 
+Furthermore, 
+F(X) 
+in equation (3) attains a maximum value of 
+a/4 (at 
+X= f ); the equation therefore possesses non-trivial 
+dynamical behaviour only if 
+a<4. 
+On the other hand, all 
+trajectories are attracted to 
+X-0 
+if 
+a< I. Thus for non-trivial 
+Fig. 1 A typical form for the relationship between X,,, and XI 
+described by equation (1). The curves are for equation (3). with 
+a = 2.707 (a); and a - 3.414 (h). The dashed lines indicate the 
+slope at the "fixed points" where 
+F(X) 
+intersects the 45" line: 
+for the case a this slope is less steep than -45" and the fixed 
+point is stable; for b the slope is steeper than -45", and the 
+point is unstable. 
+Nature Vol. 261 June 10 1976 
+dynamical behaviour we require l <a<4; failing this, the 
+population becomes extinct. 
+Another example, with a more secure provenance in the 
+biological 
+literat~rel'~~-~', 
+is the equation 
+This again describes a population with a propensity to simple 
+exponential growth at low densities, and a tendency to decrease 
+at high densities. The steepness of this nonlinear behaviour is 
+tuned by the parameter r. The model is plausible for a single 
+species population which is regulated by an epidemic disease at 
+high densitya8. The function 
+F(X) 
+of equation (4) is slightly more 
+complicated than that of equation 
+(3), 
+but has the compensating 
+advantage that local stability implies global stability1 for all 
+X> 
+0. 
+The forms (3) and (4) by no means exhaust the list of 
+single- 
+humped functions 
+F(X) 
+for equation 
+(1) 
+which can be culled 
+from the ecological literature. A fairly full such catalogue is 
+given, complete with references, by May and Osterl. Other similar 
+mathematical functions are given by Metropolis et al.16. Yet 
+other forms for 
+F(X) 
+are discussed under the heading of 
+"mathematical curiosities" below. 
+Dynamic properties of equation (1) 
+Possible constant, equilibrium values (or "fixed points") of X in 
+equation 
+(1) 
+may be found algebraically by putting 
+X,+,=X,= - 
+X*, and solving the resulting equation '7 
+An equivalent graphical method is to find the points where the 
+curve 
+F(X) 
+that maps 
+XI 
+into 
+XI+, 
+intersects the 45" line, 
+X,+,=X,, 
+which corresponds to the ideal nirvana of zero 
+population growth; see Fig. 1. For the single-hump curves 
+discussed above, and exemplified by equations (3) and (4), there 
+are two such points: the trivial solution 
+X=O, 
+and a non-trivial 
+solution X* (which for equation (3) is 
+X*=l- 
+[Ila]). 
+The next question concerns the stability of the equilibrium 
+point X*. This can be seen",gs.19-z1.1.4 to depend on the slope 
+of the 
+F(X) 
+curve at X*. This slope, which is illustrated by the 
+dashed lines in Fig. 
+I, 
+can be designated 
+So long as this slope lies between 
+45" 
+and 
+-45" 
+(that is, 
+kc1) 
+between + 1 and - I), making an acute angle with the 45" ZPG 
+line, the equilibrium point X* will be at least locally stable, 5 
+attracting all trajectories in its neighbourhood. In equation(3). I 
+for example, this slope is k(I)=2-a: the equilibrium point is 
+therefore stable, and attracts all trajectories originating in the 
+interval 
+O<X<l, 
+ifand 
+only if 
+l<a<3. 
+As the relevant parameters are tuned so that the curve 
+F(X) 
+becomes more and more steeply humped, this 
+stability-deter- 
+mining slope at X* may eventually steepen beyond 
+-45" 
+(that is, 
+h(lk 
+-1). 
+whereupon the equilibrium point X* is no longer 
+stable. 
+What happens next? What happens, for example, for a > 3 in 
+equation 
+(3)? 
+To answer this question, it is helpful to look at the map which 
+relates the populations at successive intervals 2 generations 
+apart; that is, to look at the function which relates 
+XI+, 
+to 
+XI. 
+This second iterate of equation (1) can be written 
+or, introducing an obvious piece of notation, 1~ 
+The map so derived fromequation (3) is illustrated in Figs 2and 3. 
+Population values which recur every second generation (that 
+
+PDF PAGE 3
+Nature Vd. 261 June I0 1976 461 
+towards h=-1 as the hump in F(X) continues to steepen. 
+Beyond this point the period 2 points will in turn become un- 
+stable, and bifurcate to give an initially stable cycle of period 4. 
+This in turn gives way to a cycle of period 8, and thence to a 
+hierarchy of bifurcating stable cycles of periods 16, 32, 64, . . ., 
+2". In each case, the way in which a stable cycle of period k 
+becomes unstable, simultaneously bifurcating to produce a new 
+and initially stable cycle of period 2k, is basically similar to the 
+process just adumbrated for 
+k=l. 
+A more full and rigorous 
+account of the material covered so far is in ref. I. 
+This "very beautiful bifurcation 
+phenomen~n"~~ 
+is depicted 
+in Fig. 4, for the example equation (3). It cannot be too strongly 
+emphasised 
+that the process is generic to most functions 
+F(X) 
+with a hump of tunable steepness. Metropolis et 
+al." 
+refer to 
+this hierarchy of cycles of periods 2" as the harmonics of the 
+fixed point X*. 
+Although this process produces an infinite sequence of cycles 
+I with periods 2" (n-m), the "window" of parameter values .0 wherein any one cycle is stable progressively diminishes, so that 
+the entire process is a convergent one, being bounded above by 
+some critical parameter value. (This is true for most, but not 
+Fig. 2 The map relating X,,, to X,, obtained by two iterations of all, functions F(X): see equation (17) below.) This critical 
+equation (3). This figure is for the case (a) of ~i~. I, a = 2.707: parameter value is a point of accumulation of period 2" cycles. 
+the basic fixed point is stable, and it is the only point at which For equation(3) it is denoteda,: a,=3.5700.. . 
+Fia'(X) intersects the 45" line (where its slope, shown by the Beyond this point of accumulation (for example, for a> a, in dashed line, is less steep than 45 ). equation (3)) there are an infinite number of fixed points with 
+different periodicities, and an infinite number of different 
+is, 
+fixed points with period 2) may now be written as X*,, and periodic cycles. There are also an uncountable number of initial 
+found either algebraically from points 
+Xo 
+which give totally aperiodic (although bounded) 
+trajectories; no matter how long the time series generated by 
+X*, = F(Y)(X*,) (9) F(X) is run out, the pattern never repeats. These facts may be 
+established by a variety of  method^'.^.^.".". Such a situation, 
+or 
+graphically from the intersection between the map 
+F(z)(X) 
+where an infinite number of different orbits can occur, has been 
+and the 
+45" 
+line, as shown in Figs 2 and 3. Clearly the equi- christened "chaotic" by Li and Yorkem. 
+librium 
+point X* of equation (5) is a solution of equation (9); As the parameter increases beyond the critical value, at first 
+the basic fixed point of period I is a degenerate case of a period all these cycles have even periods, with X, alternating up and 
+2 solution. We now make a simple, but crucial, observation1: down betwan values above, and values below, the fixed point 
+the 
+slope 
+of the curve 
+F(I)(X) 
+at the point X*, defined as X*. Although these cycles may in fact be very complicated 
+h(')(X*) 
+and illustrated by the dashed lines in Figs 2 and 3, is (having a 
+non-degenerate 
+period of, say, 5,726 points before 
+the square of the corresponding slope of 
+F(X) 
+repeating), they will seem to the casual observer to be rather like 
+a somewhat "noisy" cycle of period 2. As the parameter value 
+h(yX*) = [h(1)(X*)]2 (10) continues to increase, there comes a stage (at a=3.6786 . . for 
+equation (3)) at which the first odd period cycle appears. At 
+This fact can now be used to make plain what happens when the first these odd cycles have very long periods, but as the para- 
+fixed point X* becomes unstable. If the slope of F(X) is less than meter value continues to increase cycles with smaller and 
+-45" 
+(that is, Ilcl)I < I), as illustrated by curve u in Fig. I, smaller odd periods are picked up, until at last the three-point 
+then 
+X* 
+is stable. 
+Also,from 
+equation(10). 
+this implies 
+0 <A(*) < I 
+corresponding to the slope of F'=) at X* lying between 0" and Fig. 3 for F;~. 2, except that here a = 3.414, as in Fig. lb. 45", as shown in Fig. 2. As long as the tixed point X* is stable, it The basic fixed point is now unstable: the slope of F(')(X) at 
+provides the only 
+non-trivial 
+solution to 
+equation 
+(9). 
+On 
+the 
+this point steepens beyond 45, leading to the appearance of 
+other hand, when 
+kc1) 
+steepens beyond -45 (that is, two new 
+solut~ons 
+of period 2. 
+I h(')I > I), as illustrated by curve b in Fig 1, X* becomes 
+unstable. At the same time, from equation (10) this implies 1.0. 
+h("> 1, corresponding to the slope of F(2) at X* steepening 
+beyond 
+45", 
+as shown in Fig. 3. As this happens, the curve 
+F'" 
+(XI 
+must develop a "loop", and two new 
+tixed 
+points of 
+period 2 appear, as illustrated in Fig. 3. 
+In short, as the nonlinear function 
+F(X) 
+in equation (I) 
+becomes 
+more steeply humped, the basic fixed point X* may 
+become unstable. At exactly the stage when this occurs. there N+ are born two new and initially stable fixed points of period 2. , 0.5. between which the system alternates in a stable cycle of period 2. * 
+The sort of graphical analysis indicated by Figs 1.2 and 3, along 
+with the equation 
+(lo), 
+is all that is needed to establish this 
+gener 
+ic 
+As 
+before, the stability of this period 2 cycle depends on the 
+t slope of the curve F"'(X) at the 2 points. (This slope is easily 
+shown 
+to be the same at both and more generally to 
+the 
+same at all k points on a period k cycle.) Furthermore, as 
+1s 
+clear 
+by imagining the intermediate stages between Figs 2 and 
+39 
+this 
+stability-determining 
+slope has the value h=+ l at the . 
+birth of the 2-point cycle, and then decreases through zero 
+
+PDF PAGE 4
+Fig. 4 This figure illustrates some of the stable (--) and 
+unstable (- - - -) fixed points of various periods that can 
+arise by bifurcation processes in equation (1) in general, and 
+equation 
+(3) 
+in particular. To the left, the basic stable fixed point 
+becomes unstable and gives rise by a succession of pitchfork 
+bifurcations to stable harmonics of period 
+2"; 
+none of these 
+cycles is stable beyond a = 3.5700. To the right, the two period 
+3 cycles appear by tangent bifurcation: one is initially unstable; 
+the other is initially stable, but becomes unstable and gives way 
+to stable harmonics of period 3 
+x2". 
+which have a point of 
+accumulation at a = 3.8495. Note the change in scale on the 
+a axis, needed to put both examples on the same figure. There 
+are infinitely many other such windows, based on cycles of 
+higher periods. 
+cycle appears (at a=3.8284 . . for equation (3)). Beyond this 
+point, there are cycles with every integer period, as well as an 
+uncountable number of asymptotically aperiodic trajectories: 
+Li and YorkeZ0 entitle their original proof of this result "Period 
+Three Implies Chaos". 
+The term "chaos" evokes an image of dynamical trajectories 
+which are indistinguishable from some stochastic process. 
+Numerical sim~lations~~~~~.~~.~~~~~ of the dynamics of equation 
+(3), (4) and other similar equations tend to confirm this impres- 
+sion. But, for smooth and "sensible" functions F(X) such as in 
+equations (3) and (4), the underlying mathematical fact is that 
+for any specified parameter value there is one unique cycle that 
+is stable, and 
+that 
+attracts essentially all initial 
+p0ints~2-~~ 
+(see 
+ref. 4, appendix A, for a simple and lucid exposition). That is, 
+there is one cycle that "owns" almost all initial points; the 
+remaining 
+infinite 
+number of other cycles, along with the 
+asymptotically aperiodic trajectories, own a set of points which, 
+although uncountable, have measure zero. 
+As is made clear by Tables 3 and 4 below, any one particular 
+stable cycle is likely to occupy an extraordinarily narrow 
+window of parameter values. This fact, coupled with the long 
+time it is likely to take for transients associated with the initial 
+Nature Vol. 261 June 10 I976 
+conditions to damp out, means that in practice the unique 
+cycle is unlikely to be unmasked, and that a stochastic descrip- 
+tion of the dynamics is likely to be appropriate, in spite of the 
+underlying deterministic structure. This point is pursued further 
+under the heading "practical applications", below. 
+The main 
+messages 
+of this section are summarised in Table t 
+I, which sets out the various domains of dynamical behaviour 
+of the equations (3) and (4) as functions of the parameters, a 
+and r respectively, that determine the severity of the nonlinear 
+response. These properties can be understood qualitatively in a 
+graphical way, and are generic to any well behaved F(X) in 
+equation (1). 
+We now proceed to a more detailed discussion of the mathe- 
+matical structure of the chaotic regime for analytical functions, 
+and then to the practical problems alluded to above and to a 
+consideration of the behavioural peculiarities exhibited by 
+non- 
+analytical functions (such as those in the two right hand columns 
+of Table I ). 
+Fine structure of the chaotic regime 
+We have seen how the original fixed point X* bifurcates to give 
+harmonics of period 2". But how do new cycles of period /i 
+arise ? 
+The general process is illustrated in Fig. 5, which shows how 
+period 3 cycles originate. By an obvious extension of the 
+notation introduced in equation (8). populations three genera- 
+tions apart are related by 4 
+If the hump in F(X) is sufficiently steep, the threefold iteration 
+will produce a function FC3)(X) with 4 humps, as shown in 
+Fig. 5 for the F(X) of equation (3). At first (for a< 3.8284 . . in 
+equation 3) the 45" line intersects this curve only at the single 
+point X* (and at X=O), as shown by the solid curve in Fig. 5. 
+As the hump in F(X) steepens, the hills and valleys in FYX) 
+become more pronounced, until simultaneously the first two 
+valleys sink and the final hill rises to touch the 45' line, and then 
+to intercept it at 6 new points, as shown by the dashed curve in 
+Fig. 5. These 6 points divide into two distinct three-point cycles. 
+As can be made plausible by imagining the intermediate stages 
+in Fig. 5, it can be shown that the stability-determining slope of 
+F(3)(X) at three of these points has a common value, which is 
++ 1 at their birth, and thereafter steepens beyond - 1 : 
+this period 3 cycle is never stable. The slope of FTX) at the 
+other three points begins at 
+1, 
+and then decreases 
+towards zero, resulting in a stable cycle of period 3. As F(X) a 
+continues to steepen, the slope for this intially stable 
+three-point cycle decreases beyond - I ; the cycle becomes 
+unstable, and gives rise by the bifurcation process discussed in 
+the previous section to stable cycles of period 6, 12, 24, . . ., 
+3x2". This birth of a stable and unstable pair of period 3 
+cycles, and the subsequent harmonics which arise as the 
+initially stablecycle becomes unstable, are illustrated to the right 
+of Fig. 4. 
+Table 1 Summary of the way various "single-hump" functions F(X), from equation (1 ), behave in the chaotic region, distinguishing the dynamical 
+properties which are generic from those which are not 
+The function 
+F(X) 
+ax; if X< f AX: if X< 1 
+of equation (I ) uX(l - X) Xexp[r(l --X)] u(l -X): if X>+ kX1-': if X> 1 
+Tunable parameter a r a h 
+Fixed point becomes unstable 3.0000 2.0000 1 .0000* 2.0000 
+"Chaotic" region begins 
+[point of accumulation of cycles of period 
+2"] 
+3.5700 2.6924 
+1.0000 
+2.0000 
+First odd-period cycle appears 3.6786 2.8332 1.4142 2.6180 
+Cycle with period 3 
+appcars 
+[and therefore 
+every 
+integer period present] 3.8284 3.1024 1.61 80 3.0000 "Chaotic" region ends 
+4.0000t . m$ 2.000t m$ 
+Are there stable cycles in the chaotic region? Yes Yes No No 
+Below this a value, x - 0 is stable. 
+t All solu!ions are attracted to -a? for a values beyond this. 
+1 In practice, as r or h becomcs large enough, X will eventually be carried so low as to be effectively zero, thus producing extinction in models 
+of 
+biolog~cal 
+populat~ons. 
+
+PDF PAGE 5
+Nature Vd. 261 lune 10 1976 463 
+Table 2 Catalogue of the number of periodic points, and ofthe various cycles (with periods k = 1 up to 12), arising from equation (1) with a 
+single-humped function F(X) 
+k 123456789101112 
+Possible total number of points with period k 2 4 * Possible total number of points with non-degenerate 
+period k 2 2 
+Total number of cycles of period k, including those which 
+aredegenerate and/or 
+harmonicsand/or 
+never locally stable 2 3 
+Total number of non-degenerate cycles 
+(lncludlng 
+harmonics 
+and unstable cycles) 2 1 
+Total number of non-degenerate, stable cycles (including 
+harmonics) 1 I 
+Total number of non-degenerate, stable cycles whose basic 
+period is k (that is, excluding harmonics) 1 - 
+There are, therefore, two basic kinds of bifurcation pro- 
+cessesl-' 
+for first order difference equations. Truly new cycles of 
+period k arise in pairs (one stable, one unstable) as the hills and 
+valleys of higher iterates of 
+F(X) 
+move, respectively, up and 
+down to intercept the 
+45" 
+line, as typified by Fig. 5. Such cycles 
+are born at the moment when the hills and valleys become 
+tangent to the 
+45" 
+line, and the initial slope of the curve F(,) 
+at the points is thus 1: this type of bifurcation may be 
+~alled~.~ 
+a tangent bifurcation or a h= + l bifurcation. Con- 
+versely, an originally stable cycle of period k may become 
+unstable as F(X) steepens. This happens when the slope of F(') 
+at these period k points steepens beyond = - I, whereupon 
+a new and initially stable cycle of period 2k is born in the way 
+typified 
+by Figs 2 and 3. This type of bifurcation may be 
+called a pitchfork bifurcation (borrowing an image from the 
+left hand side of Fig. 4) or a h= - 1 bifurcation1.'. 
+Putting all this together, we conclude that as the parameters 
+in 
+F(X) 
+are varied the fundamental, stable dynamical units are 
+cycles of basic period k, which arise by tangent bifurcation, 
+along with their associated cascade of harmonics of periods 
+k2", 
+which arise by pitchfork bifurcation. On this basis, the 
+constant equilibrium solution 
+X* 
+and the subsequent hierarchy 
+of stable cycles of periods 2" is merely a special case, albeit a 
+conspicuously important one (namely k=l), of a general 
+phenomenon. In addition, 
+remember1.'.22-50 
+that for sensible. 
+analytical functions (such as, for example, those in equations 
+(3) and (4)) there is a unique stable cycle for each value of the 
+parameter in 
+F(X). 
+The entire range of parameter values 
+(1 <a < 4 in equation (3), 0 < r in equation (4)) may thus be 
+regarded as made up of infinitely many windows of parameter 
+3 Fig. 5 The relationship between X,,, and X!, obtained by three 
+iterations of equation (3). The 
+sohd 
+curve IS for a = 3.7, and 
+only intersects the 45" line once. As a increases, the hills and 
+valleys become more pronounced. The dashed curve is for 
+a = 3.9, and six new period 3 points have appeared (arranged 
+as two cycles, each of period 3). 
+values-some large, some unimaginably small-each corres- 
+ponding to a single one of these basic dynamical units. Tables 3 
+and 4, below, illustrate this notion. These windows are divided 
+from each other by points (the points of accumulation of the 
+harmonics of period 
+k2") 
+at which the system is truly chaotic, 
+with no attractive cycle: although there are infinitely many such 
+special parameter values, they have measure zero on the 
+interval of all values. 
+How are these various cycles arranged along the interval of 
+relevant parameter values? This question has to my knowledge 
+been answered independently by at least 6 groups of people, 
+who have seen the problem in the context of combinatorial 
+theory16vs0, 
+numerical 
+analysisls-14, 
+population biology1, and 
+dynamical systems (broadly defined). 
+A simple-minded approach (which has the advantage of 
+requiring little technical apparatus, and the disadvantage of 
+being rather clumsy) consists of first answering the question, 
+how many period k points can there be? That is, how many 
+distinct solutions can there be to the equation 
+If the function 
+F(X) 
+is 
+sufficiently 
+steeply humped, as it will be 
+once the parameter values are sufficiently large, each successive 
+iteration doubles the number of humps, so that 
+F(,'(X) 
+has 
+2 humps. For large enough parameter values, all these hills 
+and valleys will intersect the 
+45" 
+line, producing 2 fixed points 
+of period k. These are listed for 
+k~ 
+12 in the top row of Table 2. 
+Such a list includes degenerate points of period k, whose period 
+is a submultiple of k; in particular, the two period 
+1 
+points 
+(X=O 
+and X*) are degenerate solutions of equation (12) for all 
+k. By working from left to right across Table 2, these degenerate 
+points can be subtracted out, to leave the total number of 
+non- 
+degenerate points of basic period k, as listed in the second row 
+of Table 2. More sophisticated ways of arriving at this result 
+are given 
+For example, there eventually are 
+2@=64 
+points with period 
+6. These include the two points of period 1, the period 2 
+"harmonic" cycle, and the stable and unstable pair of triplets of 
+points with period 3, for a total of 10 points whose basic period 
+is a submultiple of 6; this leaves 54 points whose basic period is 
+6. 
+The 2 period k points are arranged into various cycles of 
+period k, or submultiples thereof, which appear in succession 
+by either tangent or pitchfork bifurcation as the parameters in 
+F(X) 
+are varied. The third row in Table 2 catalogues the total 
+number of distinct cycles of period k which so appear. In the 
+fourth 
+row14, 
+the degenerate cycles are subtracted out, to give 
+the total number of non-degenerate cycles of period k: these 
+numbers must equal those of the second row divided by k. 
+This fourth row includes the (stable) harmonics which arise by 
+pitchfork bifurcation, and the pairs of stable-unstable cycles 
+arising by tangent bifurcation. By subtracting out the cycles 
+which are unstable from birth, the total number of possible 
+stable cycles is given in row five; these figures can also be 
+obtained by less pedestrian methods13.1Gs0. Finally we may 
+subtract out the stable cycles which arise by pitchfork bifurca- 
+tion, as harmonics of some simpler cycle, to arrive at the final 
+
+PDF PAGE 6
+P 
+Nature Vol. 261 June 10 1976 
+Table 3 A catalogue of the stable cycles (with basic periods up to 6) for the equation XI ,, - aX,(I - XI) 
+Width of the range 
+a value at which: Subsequent cascade of a values over 
+of "harmonics" with which the basic cycle, 
+Period of Basic cycle Basic cycle period k2 " all or one of its harmonics, 
+basic cycle first appears becomes unstable become unstable is attractive + 
+row in Table 2, which lists the number of stable cycles whose 
+basic period is k. 
+Returning to the example of period 6, we have already noted 
+the five degenerate cycles whose periods are submultiples of 6. 
+The remaining 54 points are parcelled out into one cycle of 
+period 6 which arises as the harmonic of the only stable three- 
+point cycle, and four distinct pairs of period 6 cycles (that is, 
+four initially stable ones and four unstable ones) which arise by 
+successive tangent bifurcations. Thus, reading from the foot of 
+the column for period 6 in Table 2, we get the numbers 4, 5, 9, 
+14. 
+Using various labelling tricks, or techniques from 
+combina- 
+torial 
+theory, it is also possible to give a generic list of the order 
+in-which the various cycles 
+appear1.'3.'6.22. 
+For example, the 
+basic stable cycles of periods 3, 5, 6 (of which there are respect- 
+ively 
+1, 
+3, 4) must appear in the order 6, 5, 3, 5, 6, 6, 5, 6: 
+compare Tables 3 and 4. Metropolis er al.16 give the explicit such 
+generic list for all cycles of period k d 11. 
+As a corollary it follows that, given the most recent cycle to 
+appear, it is possible (at least in principle) to catalogue all the 
+cycles which have appeared up to this point. An especially 
+elegant way of doing this is given by Smale and 
+Williani~~~, 
+who show, for example, that when the stable cycle of period 3 
+first originates, the total number of other points with periods 
+k, 
+N,, 
+which have appeared by this stage satisfy the Fibonacci 
+series, 
+Nk=2, 4, 5, 8, 12, 19, 30, 48, 77, 124, 200, 323 for 
+k=l, 
+2,. . ., 12: this is to be contrasted with the total number of 
+points of period k which will eventually appear (the top row of 
+Table 2) as F(X) continues to steepen. 
+Such catalogues of the total number of fixed points, and of 
+their order of appearance, are relatively easy to construct. For 
+any particular function 
+F(X), 
+the numerical task of finding the 
+windows of parameter values wherein any one cycle or its 
+harmonics is stable is, in contrast, relatively tedious and 
+inelegant. Before giving such results, two critical parameter 
+values of special significance should be mentioned. 
+Hoppensteadt and 
+HymanZ1 
+have given a simple graphical 
+method for locating the parameter value in the chaotic regime 
+at which the first odd period cycle appears. Their analytic 
+recipe is as follows. Let a be the parameter which tunes the 
+steepness of 
+F(X) 
+(for example, a=a for equation 
+(3), 
+a-r for 
+equation 
+(4)), 
+X*(a) 
+be the fixed point of period 1 (the non- 
+trivial solution of equation 
+(5)), 
+and 
+X,,,(a) 
+the maximum 
+value attainable from iterations of equation 
+(1) 
+(that is, the 
+value of 
+F(X) 
+at its hump or stationary point). The first odd 
+period cycle appears for that value of a which satisfie~~~,~~ 
+As mentioned above, another critical value is that where the 
+period 3 cycle first appears. This parameter value may be found 
+numerically from the solutions of the third iterate of equation 
+(1): for equation (3) it is14 a= 1 + 2/8. 
+MyrbergI3 (for all k< 10) and Metropolis et a1.I6. (for all 
+k d 7) have given numerical information about the stable cycles 
+in equation (3). They do not give the windows of parameter 
+values. but only the single value at which a given cycle is 
+maxinially stable: that is. the value of a for which the 
+stability- 
+determinmg 
+slope of 
+FCk)(X) 
+is zero, 
+h(')=O. 
+Since the slope 
+of the 
+A-times 
+iterated map F( k, at any point on a period k cycle 
+is simply equal to the product of the slopes of 
+F(X) 
+at each of 
+the points 
+X*A 
+on this 
+cy~le~~~~~~, 
+the requirement 
+h(')=O 
+implies that X-A (the stationary point of 
+F(X), 
+where 
+h(')=O) 
+is one of the 
+per~odic 
+polnts 
+in question, which considerably 
+simplifies the numerical calculations. 
+For each basic cycle of period k (as catalogued in the last 
+row of Table 
+2), it is more interesting to know the parameter ? 
+values at which: (1) the cycle first appears (by tangent bifurca- 
+tion); (2) the basic cycle becomes unstable (giving rise by suc- 
+cessive pitchfork bifurcations to a cascade of harmonics of 
+periods 
+A2"); 
+(3) all the harmonics become unstable (the point 
+of accumulation of the period 
+X2" 
+cycles). Tables 3 and 4 extend 
+the work of May and 
+Oster', 
+to give this numerical information 
+for equations (3) and 
+(4), 
+respectively. (The points of 
+accumulation are not ground out mindlessly, but are calculated 
+by a rapidly convergent iterative procedure, see ref. I, appendix 
+A.) Some of these results have also been obtained by 
+Gumowski 
+and 
+Mira32. 
+Practical problems 
+Referring to the paradigmatic example of equation (3), we can 
+now see that the parameter interval l < a<4 is made up of a 
+one-dimensional mosaic of infinitely many windows of a-values. 
+in each of which a unique cycle of period k, or one of its 
+harmonics, attracts essentially all initial points. Of these 
+windows, that for 1 <a< 3.5700 . . corresponding to k= 1 and i. 
+its harmonics is by far the widest and most conspicuous. Beyond 
+the first point of accumulation, it can be seen from Table 
+3 
+that 
+these windows are narrow, even for cycles of quite low periods, 
+and the windows rapidly become very tiny as k increases. 
+As a result, there develops a dichotomy between the under- 
+lying mathematical behaviour (which is exactly determinable) 
+and the "commonsense" conclusions that one would draw from 
+numerical simulations. 
+If 
+the parameter a is held constant at one 
+value in the chaotic region, and equation 
+(3) 
+iterated for an 
+arbitrarily large number of generations, a density plot of the 
+observed values of 
+XI 
+on the interval 
+0 
+to I will settle into k 
+equal spikes (more precisely, delta functions) corresponding to 
+the k points on the stable cycle appropriate to this a-value. But 
+for most a-values this cycle will have a fairly large period, and 
+moreover it will typically take many thousands of generations 
+before the transients associated with the initial conditions are 
+damped out: thus the density plot produced by numerical 
+simulations usually looks like a sample of points taken from 
+some continuous distribution. 
+An especially interesting set of numerical computations are #' 
+due to Hoppensteadt (personal communication) who has 
+combined many iterations to produce a density 
+plot 
+of X, for 
+each one of a sequence of a-values, gradually increasing from 
+3.5700 . . to 4. These results are displayed as a movie. As can 
+be expected from Table 3, some of the more conspicuous cycles 
+
+PDF PAGE 7
+Nature Vol. 261 June 10 1976 
+do show up as sets of delta functions: the 3cycle aid its first 
+few harmonics; the first 
+5cycle; 
+the first 
+6cycle. 
+But for most 
+values of a the density plot looks like the sample function of a 
+random process. This is particularly true in the neighbourhood 
+of the a-value where the first odd cycle appears 
+(a=3.6786 . .), 
+and again in the neighbourhood of a=4: this is not surprising, 
+because 
+each 
+of these locations is a point of accumulation of 
+points of accumulation. Despite the underlying discontinuous 
+changes in the periodicities of the stable cycles, the observed 
+density pattern tends to vary smoothly. For example, as n 
+increases toward the value at which the 3cycle appears, the 
+density plot tends to concentrate around three points, and it 
+smoothly diffuses away from these three points after the 
+3cycle 
+and all its harmonics become unstable. 
+I think the most interesting mathematical problem lies in 
+designing a way to construct some approximate and "effectively 
+continuous" density spectrum, despite the fact that the exact 
+density function is determinable and is always a set of delta 
+functions. Perhaps such techniques have already been devel- 
+oped in 
+ergodic 
+theorys3 (which lies at the foundations of 
+statistical mechanics), as for example in the use of 
+"coarse- 
+grained observers". I do not know. 
+Such an effectively stochastic description of the dynamical 
+properties of equation (4) for large r has been provideds8, albeit 
+by ,tactical tricks peculiar to that equation rather than by any 
+general method. As r increases beyond about 3, the trajectories 
+generated by this equation are, to an increasingly good approxi- 
+mation, almost periodic with period 
+(llr) 
+exp(r- 
+1). 
+The opinion I am airing in this section is that although the 
+exquisite fine structure of the chaotic regime is mathematically 
+fascinating, it is irrelevant for most practical purposes. What 
+seems called for is some effectively stochastic description of the 
+deterministic dynamics. Whereas the various statements about 
+the different cycles and their order of appearance can be made 
+in generic fashion, such stochastic description of the actual 
+dynamics will be quite different for different 
+F(X): 
+witness the 
+difference between the behaviour of equation 
+(4), 
+which for 
+large r is almost periodic "outbreaks" spaced many generations 
+apart, versus the behaviour of equation 
+(3). 
+which for a4 is 
+not very different from a series of Bernoulli coin flips. 
+Mathematical curiosities 
+AS discussed above, the essential reason for the existence of a 
+succession of stable cycles throughout the "chaotic" regime is 
+that as each new pair of cycles is born by tangent bifurcation 
+(see Fig. 5). one of them is at first stable, by virtue of the way 
+the smoothly rounded hills and valleys intercept the 
+45" 
+line. 
+For analytical functions 
+F(X), 
+the only parameter values for 
+which the density plot or "invariant measure" is continuous 
+and truly 
+ergodic 
+are at the points of accumulation of 
+harmonics, which divide one stable cycle from the next. Such 
+exceptional parameter values have found applications, for 
+example, in the use of equation (3) with a=4 as a random 
+number 
+generatoP~~~: 
+it has a continuous density function 
+proportional to 
+[X(1 - X)]-) in the interval 0 < X< 1. 
+Non-analytical functions 
+F(X) 
+in which the hump is in fact a 
+spike provide an interesting special case. Here we may imagine 
+spikey hills and valleys moving 
+to 
+intercept the 
+45" 
+line in Fig. 5. 
+and it may be that both the 
+cycles 
+born by tangent bifurcation 
+are unstable from the outset (one having A(')> 1, the other 
+X( ') < -I), for all k > 1. There are then no stable cycles in the 
+chaotic regime, which is therefore literally chaotic with a 
+continuous and truly 
+ergodic 
+density distribution function. 
+One simple example is provided by 
+defined on the interval 
+0 < X< 1. For 0 <a < 1, all trajectories 
+are attracted to 
+X=O; 
+for 
+1 
+<ac2, 
+there are infinitely many 
+periodic orbits, along with an uncountable number of aperiodic 
+trajectories, none of which are locally stable. The first 
+odd 
+period cycle appears at 
+a=& 
+and all integer periods are 
+represented beyond 
+a=(l+d5)/2. 
+KacS6 
+has given a careful 
+discussion of the case 
+a=2. 
+Another example, this time with an 
+extensive biological 
+pedigree'+, 
+is the equation 
+If h> 1 this possesses a globally stable equilibrium point for 
+b < 2. For b > 2 there is again true chaos, with no stable cycles: 
+the first odd cycle appears at 
+b=(3+1/5)/2, 
+and all integer 
+periods are present beyond 
+b=3. 
+The dynamical properties of 
+equations (14) and (15) are summarised to the right of Table 2. 
+The absence of analyticity is a necessary, but not a sufficient, 
+condition for truly random behavioural. Consider, for example, 
+This is the parabola of equation (3) and Fig. 1, but with the 
+left hand half of 
+F(X) 
+flattened into a straight line. This equation 
+does possess windows of a values, each with its own stable 
+cycle, as described generically above. The stability-determining 
+slopes h( k' vary, however, discontinuously with the parameter a, 
+and the widths of the simpler stable regions are narrower than 
+for equation (3): the fixed point becomes unstable at a=3 ; the 
+point of accumulation of the subsequent harmonics is at 
+a=3.27 . .; the first odd cycle appears at a=3.44 . .; the 
+3-point cycle at 
+a=3.67. . (compare the first column in Table 1). 
+These eccentricities of behaviour manifested by 
+non- 
+analytical functions may be of interest for exploring formal 
+questions in 
+ergodic 
+theory. I think, however, that they have no 
+relevance to models in the biological and social sciences, where 
+functions such as 
+F(X) 
+should be analytical. This view is 
+elaborated elsewhere3'. 
+As a final curiosity, consider the equation 
+x,, , = AX, [ 1 + XI1 -@ (17) 
+Table 4 Catalogue of the stable cycles (with basic periods up to 6) for the equation XI+, = Xt exp[r(l --Xt)l 
+Width of the range 
+t r value at which: Subsequent.cascafle of r values over 
+i of "harmonics" w~th with the basic cycle, 
+S Period of Basic cycle Basic cycle period k2" all or one of its harmonics. 
+basic cycle first appears becomes unstable become unstable is attractive e 
+les 
+
+PDF PAGE 8
+Nature Vol. 261 June 10 1976 
+Fig. 6 The solid lines demarcate the stability domains for the 
+density dependence parameter, $, and the population growth 
+rate,,)c, 
+in equation (17); the dashed line shows where 2-point 
+cycles give way to higher cycles of period 2". The solid circles 
+come from analyses of life table data on field populations, and 
+the open circles from laboratory populations (from ref. 3, 
+after ref. 39). 
+This has been used to fit a considerable amount of data on 
+insect 
+populati~ns~~.~~. 
+Its stability behaviour, as a function of 
+the two parameters 1 and $, is illustrated in Fig. 6. Notice that 
+for h< 7.39 . . there is a globally stable equilibrium point for 
+all p; for 7.39 . . < h < 12.50 . . this fixed point becomes unstable 
+for sufficiently large $, bifurcating to a stable 2-point cycle 
+which is the solution for all larger $; as h increases through the 
+range 12.50 . . < 1< 14.77 . . various other harmonics of 
+period 
+2" 
+appear in turn. The hierarchy of bifurcating cycles of 
+period 
+2" 
+is thus truncated, and the point of accumulation and 
+subsequent regime of chaos is not achieved (even for arbitrarily 
+large B) until h> 14.77 . . . 
+Applications 
+The fact that the simple and deterministic equation (1) can 
+possess dynamical trajectories which look like some sort of 
+random noise has disturbing practical implications. It means, 
+for example, that apparently erratic fluctuations in the census 
+data for an animal population need not necessarily betoken 
+either the vagaries of an unpredictable environment or sampling 
+errors: they may simply derive from a rigidly deterministic 
+population growth relationship such as equation 
+(1). 
+This point 
+is discussed more fully and carefully elsewhere1. 
+Alternatively, it may be observed that in the chaotic regime 
+arbitrarily close initial conditions can lead to trajectories 
+which, after a sufficiently long time, diverge widely. This means 
+that, even if we have a simple model in which all the parameters 
+are determined exactly, long term prediction is nevertheless 
+impossible. In a meteorological context, Lorenz16 has called 
+this general phenomenon the "butterfly effect": even if the 
+atmosphere could be described by a deterministic model in 
+which all parameters were known, the fluttering of a butterfly's 
+wings could alter the initial conditions, and thus (in the chaotic 
+regime) alter the long term prediction. 
+Fluid turbulence provides a classic example where, as a 
+parameter (the Reynolds number) is tuned in a set of deter- 
+ministic equations (the Navier-Stokes equations), the motion 
+can undergo an abrupt transition from some stable configura- 
+tion (for example, laminar flow) into an apparently stochastic, 
+chaotic regime. Various models, based on the Navier-Stokes 
+differential equations, have been proposed as mathematical 
+metaphors for this 
+proce~s'~~'~.~~. 
+In 
+a recent review of the 
+theory of turbulence, Martin4% has observed that the 
+one- 
+dimensional difference equation 
+(1) 
+may be 
+usefur 
+in this 
+context. Compared with the earlier  model^'^.^^.^^', it has the 
+disadvantage of being even more abstractly metaphorical, and 
+the advantage of having a spectrum of dynamical behaviour 
+which is more richly complicated yet more amenable to 
+analytical investigation. e?~ 
+A more down-to-earth application is possible in the use of 
+equation (1) 
+to 
+fit 
+data1.2.3.3"30.43 
+on biological populations 
+with discrete, 
+non-overlapping 
+generations, as is the case for 
+many temperate 
+zone 
+arthropods. Figure 6 shows the parameter 
+values h and $ that are estimated3Q for 24 natural populations 
+and 4 laboratory populations when equation (17) is fitted to the 
+available data. The figure also shows the theoretical stability 
+domains: a stable point; its stable harmonics (stable cycles of 
+period 
+2"); 
+chaos. The natural populations tend to have stable 
+equilibrium point behaviour. The laboratory populations tend 
+to show oscillatory or chaotic behaviour; their behaviour may 
+be exaggeratedly nonlinear because of the absence, in a 
+laboratory setting, of many natural mortality factors. It is 
+perhaps suggestive that the most oscillatory natural population 
+(labelled A in Fig. 6) is the Colorado potato beetle, whose 
+present relationship with its host plant lacks an evolutionary 
+pedigree. These remarks are only tentative, and must be treated 
+with caution for several reasons. Two of the main caveats are 
+that there are technical difficulties in selecting and reducing the 
+data, and that there are no single species populations in the 
+natural world: to obtain a 
+onedimensional 
+difference equation 3 
+by replacing a population's interactions with its biological and 
+physical environment by passive parameters 
+(such 
+as h and $) 
+may do great violence to the reality. 
+Some of the many other areas where these ideas have found 
+applications were alluded to in the second section, 
+One aim of this review article is to provoke applications in yet 
+other fields. 
+Related phenomena in higher dimensions 
+Pairs of coupled, first-order difference equations (equivalent to 
+a single second-order equation) have been investigated in 
+several  context^^+^'-'^, particularly in the study of temperate 
+zone arthropod prey-predator 
+systems2-4e23.47. 
+In these two- 
+dimensional systems, the complications in the dynamical 
+behaviour are further compounded by such facts as: 
+(1) 
+even 
+for analytical functions, there can be truly chaotic behaviour 
+(as for equations (14) and (15) ), corresponding to so-called 
+"strange attractors"; and (2) two or more different stable states 
+(for example, a stable point and a stable cycle of period 3) can a 
+occur together for the same parameter values4. In addition, the 
+manifestation of these phenomena usually requires less severe 
+nonlinearities (less steeply humped F(X) ) than for the one- 
+dimensional case. 
+Similar systems of first-order ordinary differential equations, 
+or two coupled first-order differential equations, have much 
+simpler dynamical behaviour, made up of stable and unstable 
+points and limit cycles4% This is basically because in continuous 
+two-dimensional systems the inside and outside of closed curves 
+can be distinguished; dynamic trajectories cannot cross each 
+other. The situation becomes qualitatively more complicated, 
+and in many ways analogous to first-order difference equations, 
+when one moves to systems of three or more coupled, first-order 
+ordinary differential equations (that is, three-dimensional 
+systems of ordinary differential equations). Scanlon (personal 
+communication) has argued that chaotic behaviour and 
+"strange attractors", that is solutions which are neither points 
+nor periodic 
+orbits48, 
+are typical of such systems. Some well 
+studied examples arise in models for reaction-diffusion systems 
+in chemistry and 
+biology40, 
+and in the models of 
+Lorenz16 
+(three dimensions) and 
+Ruelle 
+and 
+Takens4" 
+(four dimensions) 
+referred to above. 
+The 
+analysis of these systems is, by virtue 
+of their higher dimensionality, much less transparent than for 
+equation (1). 
+An explicit and rather surprising example of a system which 
+
+PDF PAGE 9
+Nature Vol. 261 June 10 1976 
+has recently been studied from this viewpoint is tho ordinary 
+differential equations used in ecology to describe competing 
+species. For one or two species these systems are very tame: 
+dynamic trajectories will converge on some stable equilibrium 
+point (which may represent coexistence, or one or both species 
+becoming extinct). As 
+SmaleS0 
+has recently shown, however, 
+for 3 or more species these general equations can, in a certain 
+reasonable and well-defined sense, be compatible with any 
+dynamical behaviour. 
+Smale'sso 
+discussion is generic and 
+abstract: a specific study of the very peculiar dynamics which 
+can be exhibited by the familiar Lotka-Volterra equations 
+once there are 3 competitors is given by May and Leonards1. 
+Conclusion 
+In spite of the practical problems which remain to be solved, the 
+ideas developed in this review have obvious applications in 
+many areas. 
+The most important applications, however, may be 
+pedagogical. 
+The elegant body of mathematical theory pertaining to linear 
+systems (Fourier analysis, orthogonal functions, and so on), 
+and its successful application to many fundamentally linear 
+problems in the physical sciences, tends to dominate even 
+moderately advanced University courses in mathematics and 
+theoretical physics. The mathematical intuition so developed 
+ill equips the student to confront the bizarre behaviour exhibited 
+by the simplest of discrete nonlinear systems, such as 
+equation (3). Yet such nonlinear systems are surely the rule, 
+not the exception. outside the physical sciences. 
+I would therefore urge that people be introduced to, say, 
+equation (3) early in their mathematical education. This 
+equation can be studied phenomenologically by iterating it on 
+a calculator, or even by hand. Its study does not involve as 
+much conceptual sophistication as does elementary calculus. 
+Such study would greatly enrich the student's intuition about 
+nonlinear systems. 
+Not only in research, but also in the everyday world of 
+politics and economics, we would all be better off if more 
+people realised that simple nonlinear systems do not necessarily 
+possess simple dynamical properties. 
+I have received much help from F. C. Hoppensteadt, H. E. 
+Huppert, A. I. Mees, C. J. Preston, S. Smale, J. A. Yorke, and 
+particularly from G. F. Oster. This work was supported in part 
+by the NSF. 
+May, R. M., and Oster. G. F. Am. Not., IlO (in the press). 
+2 Varley. G. C.. Gradwell. G. R.. and Hassell. M. P.. Insect Population Ecology 
+(Blackwell, Oxford. 1973). 
+3 May, R. M. (ed.). Theoretical Ecoloyy  principle^ and Applications (Blackwell, 
+Orfnrrl 19761 - . . . - . -, . - , - , . 
+4 Guckenheimer. J.. Oster. G. F.. and Ipaktchi, A.. Thror. Pop. Bid. (in the press). 
+3 Oster, G. F.. Ipaktchi. A.. and Rocklin. I.. Theor. Pop. ,9101. (in the press). 
+6 Asmussen. M. A.. and Feldman M. W., J. thror. Biol. (in the press). 
+Hoppensteadt. F. C.. ~uthrmbticul Theorie.~ of Populations: Demographics, 
+Genetics 
+and 
+Epii1emic.s (SIAM. Philadelphia. 1975). 
+8 Samuelson. P. A.. Foundarrans nf Economic Analysis (Harvard University Press. 
+Cambr~dge. 
+Massachusetts. 1947). 
+9 Goodwin. R. E.. Econo~ncrrica. 19. 1-17 (1951). 
+'0 Baumol. W. J.. Economic Dvnamics. 3rd ed. (Macmillan. New York 1970). 
+11 See. for example. Kemeny. J., and Snell. J. L.. Mathematiral Models in the Social 
+Sciences (MIT Press Cambridge Massachusetts 1972). 
+'2 Chaundy. T. W.. and  hilli ips E b. JI Math. 0xbrd 7 74-80 (1936). 
+13 Myrberg P. J. Ann. Akud. s;. ~bhw A. I No. 336/3'(1963). 
+" ~yrberg' P. J.' 41111. Akad. Sc. Fennicue' A 1' No. 259 (1958). 
+13 Lorenr. E. N..'J. Atnroz. Sci. 20 130-141 i1463). TeNur 16 1-1 1 (1964). 
+16 Metropolis. N.. Stein. M. ~.,'anA Stein. P. R.. f.'~omb~natdriol Theory, 15CA). 
+15-U (1973) - - . \ . . . - , . 
+1 7 Maynard Smith. J.. Muthematical Ideas in Biology (Cam bridge University Press. 
+Cambridge. 1968). 
+$8 Krebs, C. J.. E~~~1ou.v (Harper and Row. New York, 1972). 
+19 May R. M. Am. Nut. 107 46-57 (1972). 
+20 Li, i-Y., a& Yorke. i. A.,'A~. Math. Mr~nthly 82 985-992 (1975). 
+zr Hoppensteadt. F. C.. and Hyman. J. M. (~ouranilnsiitute, New York University: 
+preprmt, 1975). 
+22 SITI~I~,~., and Williams. R. (Department of Mathematics. Berkeley: preprint. 
+23 ~6;:x: M.. science. 186.645-647 (1974). 
+24 Moran. P. A. P.. Bio~nerrics. 6, 250-258 (1950). 
+ZJ Ricker. W. E., J. Fish. Rrs. Bd. Can., 11. 559-623 (1954). 
+26 Cook. L. M.. Nature. 207. 316 (1965). 
+27 Macfadyen. A.. Aninrnl Ecolo.qy: Aims and Methods (Pitman. London. 1963). 
+28 May. R. M.. J. theor. Biol.. 51, 51 1-524 (1975). 
+zq Guckenheimer. J.. Pruc. A MS Svmpo~iu in Pure Muth XI V 95-1 24 (1970). 
+30 Gilbert. E. N.. and Riordan. J.; INinr,ir I. Math. 5 &7-66; (1961). 
+3) Preston. C. J. (King's College. Cambridge: prepiin;, 1976). 
+32 Gumowski. 1.. and Mira. C.. C. r. hebd. Scimc. Acud. Sci.. Pari.~, 281~. 45-48 
+(1975): 
+282a. 
+219-222 
+(1976). 
+3, Layzer. D.. Sci. .411r.. 233(6). 56-69 (1975;). 
+1' Ulam. S. M., Proc. Inr. Ct~nar. Marh.1950. Cumbridge. Mass.; Vol. 11, pp. 264-273 
+(AMS. 
+Providence R.I.. 1950). 
+35 Ulam. S. M.. and von Neumann. J.. Bull. Am. mufh. Soc. (abstr.). 53. 1120(1947). 
+36 Kac. M.. Ann. Muth.. 47. 33-49 (1946). 
+37 May. R. M.. Science. 181. 1074 (1973). 
+3'L Hassell. M. P.. J. .4r16rr. Ecnl.. 44, 283-296 ( 1974). 
+3" Hassell. M. P.. Lawton. J. H.. and May. R. M..J. Anim. Ecol. (in the press). 
+40 Ruelle, D.. and Takens. F.. Comm. muth. Ph.v.s.. 20, 167-192 (1971). 
+41 Landau. L. D.. and Lifshitz. E. M.. Fluid Mechanics (Pergamon, London. 1959). 
+42 Martin. P. C., Pruc. Inr. Co~. an Statistir~ul Physics. 1975. Budapest (Hungarian 
+Acad. Sci., Budapest. in the press). 
+43 Southwood. T. R. E.. in Insects, Science and Society (edit. by Pimcntel, D.), 
+151-199 (Academ,ic, New York, 1975). 
+44 Metropolis. N., Ste~n. M. L., and Stem. P. R.. Numer. Math.. 10, 1-19 (1967). 
+4s Gumowski. I.. and Mira. C.. Automatics. 5. 303-317 (1969). 
+46 Stein, P. R., and Ulam. S. M.. Rosprau,y Mar. 39 1-66 (1964). 
+47 Beddington. J. R.. Free. C. A., and Lawton. J.'~..'~ature, 255, 58-60 (1975). 
+48 Hirsch. M. W.. and Srnale. S.. Diferential Equations. Dynamical Systems and 
+Lineur 
+Algebra (Academe. New York. 1974). 
+49 Kolata. G. B.. Science, 189.984-985 (1975). 
+so Smale. S. (Department of Mathematics. Berkele preprint 1976). 
+51 May, R. M., and Leonard. W. J., SIAM I. AppI'Math., 26, 243-253 (1975). 
+articles 
+Prenatal genesis of connections subserving 
+ocular dominance in the rhesus monkey 
+Pasko Rakic 
+Department of Neuropathology, Haward Medical School, and Department of Neuroscience. Children's Hospital Medical Center, 
+Boston, Massachusetts 021 15 
+In foetal nlonkev brain neuronal ~roiections currying DEVELOP MEN^ of the binocular visual system has been a . . . - 
+input from the two eyes initially overlap; they segregate major topic of research since the demonstration more than 
+during second half of become fully a decade ago that neuronal function can be altered in 
+kittens deprived of vision in one eye'. More recently, similar separated in subcortical visual centres and partially observations in the rhesus  monkey^ have underlined the 
+separated in the cortex three weeks before birth and relevance of this research to an understanding of mech- 
+thus before visual experience. anisms of amblyopia ex anopsia in children. In several [ respects, the development of the visual system is similar in i 

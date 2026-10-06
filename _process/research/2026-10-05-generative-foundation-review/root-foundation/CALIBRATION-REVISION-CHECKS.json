@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-06T11:43:08.730790+00:00",
+  "status": "passed",
+  "scope": "Local targets/anchors and owned index/canonical sections; source, snapshot, receipt, log, compiler and inherited-source preservation. No scientific rerun, proof rebuild or external-link verification.",
+  "local_links_checked": 86,
+  "preservation_hash_checks": 132,
+  "native_cases": 25,
+  "native_states": 288,
+  "new_substantive_theorem_audits": 32,
+  "saved_correspondence_audits": 399,
+  "replayed_inherited_audits": 61,
+  "formal_receipt_sha256": "c28247f5465a0f70bf8c507bbf36e65ec5c6e4f6de53958141336f129000c4ce",
+  "review_sha256": "3ee175f5f7cda6096835319c793367f8291595fcffc09da2c25949e8a4054c74",
+  "checked_document_or_section_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CALIBRATION-REVISION-INTEGRATION.md": "30da22a6c29528ee6d53636f91c27cc9a8a0affd661c653eec9868fc7b8e572c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CALIBRATION-REVISION-REVIEW.md": "3ee175f5f7cda6096835319c793367f8291595fcffc09da2c25949e8a4054c74",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-HIGHER-DYNAMICS.md": "acd588bce78683135e63910368201c59289f82a5de75b96f0fbc68f9f7c9aed1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REMAINING-DEPENDENCY-INTEGRATION.md": "38f87360fa3b7022236c107c4c27fd8ad8610d07e868f9f79c16f60b49b36deb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CALIBRATION-REVISION-PROTOCOL.md": "3223b6e2e0b4a65ba3f419deb7373c6f30f88d9d7b2a0e01df6b39ab5f60f085",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CALIBRATION-REVISION-MECHANISM.md": "38f304a9567177dc267eb78cdbe7b00f6c2622377e788f966bca33494c2eb0ae",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/FORMAL-NOTES.md": "d800be4fb996d1327dc9e6baa8da440c0f26819ed07d5979e0747fc4d7105d8a",
+    "sources/15-codex-theory-conversations/2026-10-06-calibration-revision-continuation.md": "ca1d7cadc84b60d8d75790a873c4ad6916ca3fd3fbc13e842c0f4f6b86f993c3",
+    "RESEARCH.md": "9d04a03056eb9ab40618c2381905660454917dc67299a43e2c9e3606bde52bd2",
+    "theories/shengsheng-buxi-generative-existence/README.md": "1a33c8f3cbb10c1cc7c21ee4efe05c5e1d16d83bb80f4060d30866dbd5a3bc9d",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "b6cf851ab00a0252958b683b732007503270f3ae486e9a775d32c79ccb903eb5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "38d67d219ff840f8e8656a28ebc24fe7ec1da1081232746994df43e3d847db32",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md": "ec21ea8d2d9bc1162f94f3a2f85a8957c45a22d3d157905358bc8f9ef8f0146e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md": "98a23e506308a5b83bce16c73759b6d12971eae970b060f7e1e94ac15df1516c"
+  },
+  "checker_sha256": "bae0af01f3eb4ba755758074f41d6844384c2d8047fa28616a1af3e402a25cf9",
+  "final_edit_record_sha256": "abeb7fccea3349a8465ec9a55df8068d33529e52c219537d355453aafbd8de13",
+  "failures": []
+}

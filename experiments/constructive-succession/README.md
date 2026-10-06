@@ -2,6 +2,8 @@
 
 This exploratory computational experiment constructs Boolean programs, removes each predecessor, and tests four successors on changed specifications. It charges construction, exhaustive checking, installation and source transfer to a carried resource balance. The result is conditional: **retained intermediate work can improve later responses, but making all of it active in search can also impede new construction**. Successor capability depends on the inherited package and how it is used.
 
+**Interpretation corrected 6 October 2026:** the [nondual reconstruction](../../_process/research/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md) restricts ranking reversals to this task-success projection. The target genuinely regulates search and installation, but its service significance is not derived, and incoming work does not depend on task fulfillment. This omission does not refute a universal generative criterion. Original results and source snapshots retain their scope; no scientific rerun accompanies this interpretation change.
+
 All arms inherit inspectable successful source and may reuse its subexpressions. The baseline is therefore capable of construction; it is not an opaque product artificially denied reconstruction. Additional archives contain only actually generated components, selected before the next target is available. The primitive language, operator competence and search machinery remain supplied in every generation.
 
 ## Main results

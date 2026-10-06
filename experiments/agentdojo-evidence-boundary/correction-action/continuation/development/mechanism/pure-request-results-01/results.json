@@ -1,0 +1,312 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "seventeenth_cached_attempt_rejects",
+      "pass": true,
+      "observed": {
+        "schema_version": 1,
+        "attempt_id": "a0017",
+        "request_id": "first",
+        "operation": "read_authority",
+        "status": "rejected",
+        "cached": false,
+        "result": null,
+        "error": "Request budget exhausted",
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      }
+    },
+    {
+      "name": "unhashable_operation_explicit_rejection",
+      "pass": true,
+      "observed": {
+        "schema_version": 1,
+        "attempt_id": "a0001",
+        "request_id": "bad-operation",
+        "operation": [],
+        "status": "rejected",
+        "cached": false,
+        "result": null,
+        "error": "Operation must be a string",
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      }
+    },
+    {
+      "name": "duplicate_key_rejected",
+      "pass": true,
+      "observed": {
+        "schema_version": 1,
+        "attempt_id": "a0002",
+        "request_id": null,
+        "operation": null,
+        "status": "rejected",
+        "cached": false,
+        "result": null,
+        "error": "Invalid JSON request or request_id",
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      }
+    },
+    {
+      "name": "malformed_does_not_inherit_request_id",
+      "pass": true,
+      "observed": {
+        "schema_version": 1,
+        "attempt_id": "a0004",
+        "request_id": null,
+        "operation": null,
+        "status": "rejected",
+        "cached": false,
+        "result": null,
+        "error": "Invalid JSON request or request_id",
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      }
+    },
+    {
+      "name": "terminal_identical_retry_receipt_only",
+      "pass": true,
+      "observed": {
+        "schema_version": 1,
+        "attempt_id": "a0006",
+        "request_id": "end",
+        "operation": "finish",
+        "status": "ok",
+        "cached": true,
+        "result": {
+          "declaration": {
+            "diagnosis": "unresolved",
+            "repair": "unresolved",
+            "explanation": "Parser test only; no diagnostic or repair effect claimed."
+          }
+        },
+        "error": null,
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      }
+    },
+    {
+      "name": "terminal_new_request_rejected",
+      "pass": true,
+      "observed": {
+        "schema_version": 1,
+        "attempt_id": "a0007",
+        "request_id": "new-after-end",
+        "operation": "read_authority",
+        "status": "rejected",
+        "cached": false,
+        "result": null,
+        "error": "Episode already finished",
+        "authority": {
+          "epoch": 0,
+          "grants": [
+            "check",
+            "finish",
+            "note",
+            "publish",
+            "read",
+            "read_authority",
+            "replay",
+            "stage"
+          ]
+        },
+        "current": {
+          "version": "v0",
+          "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+        },
+        "read_interface": {
+          "aliases": [
+            "contract",
+            "correction",
+            "recipe",
+            "code",
+            "report",
+            "receipt",
+            "checker"
+          ],
+          "artifact": "alias or a previously returned case-relative artifact path",
+          "version": "v0 or returned version; default current",
+          "offset": "byte offset, default 0",
+          "limit": "1..12000 bytes, default 6000",
+          "encoding": "exact base64 bytes plus UTF-8 display"
+        },
+        "request_limit": 16
+      }
+    },
+    {
+      "name": "no_scientific_program_executed",
+      "pass": true,
+      "observed": {}
+    }
+  ],
+  "cases": [
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-pure-probes-3dex0165/budget",
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-pure-probes-3dex0165/terminal-and-malformed"
+  ],
+  "broker_sha256": "cfdf39a5f7cfcce9fca2ce79e9f83b09769b1a59c5ae8111bdd17dd4fd5b2463",
+  "baseline_sha256": "b605991a1dfa365f65539f65f81404c7b6505864d7e4b27f2fe1b136938d1ecc",
+  "producer_or_checker_executions": 0,
+  "learned_contexts": 0
+}

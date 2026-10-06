@@ -1,0 +1,21 @@
+'AcquiredPerspective.existing_forecast_is_command_readout' does not depend on any axioms
+'AcquiredPerspective.forecast_reads_retained_score' does not depend on any axioms
+'AcquiredPerspective.command_ignores_unobserved_regime' does not depend on any axioms
+'AcquiredPerspective.fast_receipt_write_models_both_actions' does not depend on any axioms
+'AcquiredPerspective.work_then_fast_write_models_both_actions' does not depend on any axioms
+'AcquiredPerspective.exact_effects_command_captures' does not depend on any axioms
+'AcquiredPerspective.run_trace' depends on axioms: [propext]
+'AcquiredPerspective.memory_is_acquired_before_reversal' depends on axioms: [propext]
+'AcquiredPerspective.dependency_changes_while_memory_is_retained' depends on axioms: [propext]
+'AcquiredPerspective.actual_acquisition_trace' depends on axioms: [propext]
+'AcquiredPerspective.formed_acquired_record' depends on axioms: [propext]
+'AcquiredPerspective.reached_record_conditions' depends on axioms: [propext]
+'AcquiredPerspective.reached_write_is_paid' depends on axioms: [propext]
+'AcquiredPerspective.reached_write_models_both_actions' depends on axioms: [propext]
+'AcquiredPerspective.reached_write_corrects_both_forecasts' depends on axioms: [propext]
+'AcquiredPerspective.reached_write_changes_only_future_action' depends on axioms: [propext]
+'AcquiredPerspective.corrected_command_is_actually_used' depends on axioms: [propext]
+'AcquiredPerspective.corrected_use_then_paid_retention' depends on axioms: [propext]
+'AcquiredPerspective.corrected_action_supports_same_organization' depends on axioms: [propext]
+'AcquiredPerspective.own_model_does_not_determine_recipient_effect' depends on axioms: [propext]
+'AcquiredPerspective.recipient_acquisition_retains_actor_distinction' depends on axioms: [propext]

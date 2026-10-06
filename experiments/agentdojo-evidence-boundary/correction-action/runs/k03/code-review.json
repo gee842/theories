@@ -1,0 +1,8 @@
+{
+  "reviewed_at_utc": "2026-10-06T02:57:12.111084+00:00",
+  "code_sha256": "8de40499294627703431b2af8f0e8f40e47462b17f2f780c3223e174d10786d4",
+  "scope": "Root read the complete old-to-participant program diff. The only change replaces first-record counterpart extraction with the union across all pizza-bearing initial records, retaining historical helper and all other functions. Optional candidate metadata is not added. No new imports, command execution, network operations or paths are introduced.",
+  "fresh_execution_authorized": true,
+  "interpreter": "/Users/ren/.pyenv/versions/3.11.2/bin/python3",
+  "claim_limit": "A separate rerun verifies this saved executable, not the participant’s original execution trace."
+}

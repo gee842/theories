@@ -1,0 +1,41 @@
+{
+  "status": "accepted finite continuation: producer checks, independent transition replay, conceptual/source review",
+  "scope": "additive applicability continuation only",
+  "executed_protocol_sha256": "9dfe7dfe921789c78438bb9c9abf773a7cc6d59553a28acb91a75fc59ceb0536",
+  "post_run_model_changes": false,
+  "protocol_timing": "First draft and implementation-envelope clarifications preceded first producer execution; later explanation is in README.",
+  "files": {
+    "PROTOCOL.md": "9dfe7dfe921789c78438bb9c9abf773a7cc6d59553a28acb91a75fc59ceb0536",
+    "model.py": "c96ac67b60d589aef8284f3f1ba8d26b5aa3cdb489ef6ee1e07f728a7e5d35c9",
+    "results.json": "a63cc7addc0b5e1d3fa19d3f6830f5747f3180c58f4d8188e30bfeeecf9fcb14",
+    "check.py": "0eba50d9e4d63d1bcbfd8e50d001c026c7d4dd78c44ac2f979bd4bcf3c266809",
+    "checks.json": "c8e88567eaf9459363ddb008e6d8537606636071d21524841a2bef087204e5bd",
+    "README.md": "609079c902183640ff2027e7c0e84cf61eb2f75add3382ca3191148ef3fd0fbe",
+    "independent_check.py": "cc3ca0e9cf4bf99073e040ece98951bc03c5f119c12c3c6e2a3787f7f9c9f89f",
+    "independent-check.json": "17102fa2c95984499c69355c6afea4ccbd0da90de459e4025a48d07cbf00c22d"
+  },
+  "conceptual_review": {
+    "path": "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-REVIEW.md",
+    "sha256": "dd80a2799d3dd5d88a4d1cf319ff69abaf66b4074f15f0be6b3ea01ca2bac9f1"
+  },
+  "independent_acceptance": {
+    "accepted": true,
+    "traces": 65,
+    "state_comparisons": 2033,
+    "account_event_comparisons": 928,
+    "native_event_comparisons": 555,
+    "inherited_ledger_events": 197,
+    "matched_prefix_states": 29,
+    "mutation_checks": {
+      "ancestral_fuel_reset": "detected",
+      "free_installation": "detected",
+      "altered_sensor_model": "detected",
+      "missing_native_receipt": "detected",
+      "invented_clamp_arrival": "detected",
+      "unmatched_reader_checkpoint": "detected"
+    },
+    "scope": "Independent protocol replay of every saved new event/state; no producer imports or transitions.",
+    "ancestral_scope": "Saved accepted preparation is trusted as ancestry; exact saved pre-use prefixes, 197 ancestral tariff events, original observations and finite sensor-product equivalence are independently checked. No rerun of earlier formation or exhaustive old learning.",
+    "proof_scope": "Finite product-graph sensory equivalence and concrete exact rational replay; no Lean certification, generic formal refinement, empirical verification or optimality claim."
+  }
+}

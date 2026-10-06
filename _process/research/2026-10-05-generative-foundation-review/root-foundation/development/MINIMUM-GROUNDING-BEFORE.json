@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIVERSAL-ETHICAL-MINIMUM-BEFORE-MINIMUM-GROUNDING.md",
+      "sha256": "65a3775025c74023c08b74dfdbda13e772243610296652b71afff2d0431fd3cc",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-MINIMUM-GROUNDING.md",
+      "sha256": "c34dc1e8b474d095bfc6e576a3b99b7187eddcf8775b40d9aeb5cdab6de1b25d",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    }
+  ],
+  "scope": "Exact prior canonical bytes; reading copies retain their original relative-link bases."
+}

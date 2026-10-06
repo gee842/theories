@@ -1,0 +1,6 @@
+{
+  "status": "failed_timeout",
+  "module": "InquiryRevision",
+  "seconds": 240,
+  "cause": "Nested whole-state definitional equality; no weakened statement. Next attempt replaces reduction by a structural inherited-run lemma."
+}

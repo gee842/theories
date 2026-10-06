@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "file": "martin-olson-2013.pdf",
+      "url": "https://vicclab.wordpress.com/wp-content/uploads/2016/04/martinolson2013paternalistichelping.pdf",
+      "final_url": "https://vicclab.wordpress.com/wp-content/uploads/2016/04/martinolson2013paternalistichelping.pdf",
+      "http_status": 200,
+      "bytes": 230212,
+      "sha256": "3814f29da53933d23927424a1b1953cf2f4c884fa99fb129c33a7d7b6a0ce526",
+      "retrieved": "2026-10-06",
+      "original_bytes": true
+    },
+    {
+      "file": "martin-lin-olson-2016.pdf",
+      "url": "https://vicclab.wordpress.com/wp-content/uploads/2016/04/martinlinolson2016childpaternalism.pdf",
+      "final_url": "https://vicclab.wordpress.com/wp-content/uploads/2016/04/martinlinolson2016childpaternalism.pdf",
+      "http_status": 200,
+      "bytes": 297539,
+      "sha256": "e42dd9873b82ac5f82c8b10e9cc1c50ca85dcda5d61e9a53ed7b77532135b627",
+      "retrieved": "2026-10-06",
+      "original_bytes": true
+    }
+  ]
+}

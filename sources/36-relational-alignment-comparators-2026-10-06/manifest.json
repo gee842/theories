@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-10-06",
+  "scope": "Preserved files in this source package; no unavailable Wiley original body is claimed.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 928,
+      "sha256": "aabef0dea6ab06265acc621da22a1e80bee59afa8fcb2514b61abb5772f0239a"
+    },
+    {
+      "path": "metadata/direct-retrieval.json",
+      "bytes": 890,
+      "sha256": "87da7235bc272426b56bb3be147b97e4395417029da94ea8d27db5d0c6183218"
+    },
+    {
+      "path": "original/wagner-springer.html",
+      "bytes": 477778,
+      "sha256": "df24ed45300a1ee7ced96704ce3c66a18148921ae3a24be2f0debf8bc257579c"
+    }
+  ]
+}

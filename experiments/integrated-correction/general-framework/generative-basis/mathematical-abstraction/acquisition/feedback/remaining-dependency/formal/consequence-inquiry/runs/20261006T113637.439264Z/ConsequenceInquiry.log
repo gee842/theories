@@ -1,0 +1,195 @@
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:67:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b Event.commit) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.commit
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case commit
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+⊢ viewBody (advance cfg b Event.commit) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.commit
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b Event.install) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.install
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case install
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+⊢ viewBody (advance cfg b Event.install) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.install
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b (Event.command r✝)) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) (Event.command r✝)
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case command
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+r✝ : Bool
+⊢ viewBody (advance cfg b (Event.command r✝)) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) (Event.command r✝)
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b Event.challenge) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.challenge
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case challenge
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+⊢ viewBody (advance cfg b Event.challenge) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.challenge
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b (Event.contact probe✝)) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) (Event.contact probe✝)
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case contact
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+probe✝ : Bool
+⊢ viewBody (advance cfg b (Event.contact probe✝)) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) (Event.contact probe✝)
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b (Event.write r✝)) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) (Event.write r✝)
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case write
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+r✝ : Bool
+⊢ viewBody (advance cfg b (Event.write r✝)) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) (Event.write r✝)
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b Event.read) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.read
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case read
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+⊢ viewBody (advance cfg b Event.read) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.read
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b Event.hold) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.hold
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case hold
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+⊢ viewBody (advance cfg b Event.hold) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.hold
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b Event.release) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.release
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case release
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+⊢ viewBody (advance cfg b Event.release) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.release
+/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean:71:4: error: Tactic `apply` failed: could not unify the conclusion of `viewBody_paid`
+  viewBody (paid ?b ?w ?l ?t ?e ?r ?f) = paid (viewBody ?b) ?w ?l ?t ?e ?r ?g
+with the goal
+  viewBody (advance cfg b Event.retain) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.retain
+
+Note: The full type of `viewBody_paid` is
+  ∀ (b : Body) (w l t e r : Nat) (f g : Body → Body),
+    (∀ (z : Body), viewBody (f z) = g (viewBody z)) → viewBody (paid b w l t e r f) = paid (viewBody b) w l t e r g
+
+case retain
+cfg : Config
+b : Body
+hz : b.stocks.source = 0
+⊢ viewBody (advance cfg b Event.retain) =
+    advance { weak := cfg.weak, full := { zero := false, one := false }, channels := cfg.channels, clamp := cfg.clamp }
+      (viewBody b) Event.retain
+'ConsequenceInquiry.view_preserves_source' does not depend on any axioms
+'ConsequenceInquiry.view_preserves_stock_total' depends on axioms: [propext]
+'ConsequenceInquiry.advance_preserves_stocks_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.advance_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.viewBody_account' does not depend on any axioms
+'ConsequenceInquiry.viewBody_paid' does not depend on any axioms
+'ConsequenceInquiry.view_advance_at_empty_source' depends on axioms: [propext, sorryAx]
+'ConsequenceInquiry.step_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.view_step_at_empty_source' depends on axioms: [propext, sorryAx]
+'ConsequenceInquiry.run_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.view_run_at_empty_source' depends on axioms: [propext, sorryAx]
+'ConsequenceInquiry.equal_view_runs' depends on axioms: [propext, sorryAx]

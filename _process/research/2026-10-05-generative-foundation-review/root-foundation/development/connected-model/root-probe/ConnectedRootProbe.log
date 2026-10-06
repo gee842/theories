@@ -1,0 +1,5 @@
+'Generative.Connected.identificationValid' does not depend on any axioms
+'Generative.Connected.identificationProcess' does not depend on any axioms
+'Generative.Connected.identification_step_iff' depends on axioms: [propext]
+'Generative.Connected.identification_histories_iff' depends on axioms: [propext]
+'Generative.Connected.identification_outcomes_iff' depends on axioms: [propext]

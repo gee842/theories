@@ -1,5 +1,7 @@
 # Feasibility of further use and revision policy selection
 
+**Constructive continuation, 6 October 2026:** the [method-selection alternative](methods/README.md) now implements a paid native-receipt → retained method bit → later generated-family connection from the earlier acquired-model checkpoint. No fuel/source is added. The depleted endpoints, information countermodels and separate alternative accounts below remain unchanged; this is a prospective different continuation, with the switching law still supplied.
+
 6 October 2026. Boundary audit of the actual [model-family revision endpoints](../README.md). Read the [canonical interpretation](../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/META-REVISION.md), [protocol](PROTOCOL.md), [proofs](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-REVISION-MATH.md), [independent review](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-REVISION-REVIEW.md) and [primary comparators](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-REVISION-COMPARATORS.md).
 
 This study builds no selector over generators or retention policies. It checks further execution of the already installed predictor, the ability to pay a specified additional installation bill, and a separate logical limit on evidence retention. No externally computed accuracy score becomes a native reward.

@@ -1,0 +1,683 @@
+{
+  "checked_utc": "2026-10-06T07:57:58.637589+00:00",
+  "status": "passed",
+  "scope": "Owned synthesis fragments and links, new study documents and formal README; no duplicate Lean run or prior scientific rerun.",
+  "fragments": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "fragment_present": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "fragment_present": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "fragment_present": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "fragment_present": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "fragment_present": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md",
+      "fragment_present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "fragment_present": true
+    }
+  ],
+  "links_checked": 92,
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "fragment": "what-subsequent-inquiry-actually-changes",
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "fragment": "completing-the-application-when-the-protocol-obstructs-repair",
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "fragment": "make-analytical-separations-accountable",
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUCCESSOR-LEARNING.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "fragment": "what-subsequent-inquiry-actually-changes",
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "fragment": "completing-the-application-when-the-protocol-obstructs-repair",
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-verification.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-EDITS.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-EMPIRICAL-EDITS.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "fragment": "acquired-distinctions-change-enacted-participation",
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "sources/38-participation-consequence-2026-10-06/README.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "sources/39-consequence-organization-2026-10-06/README.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "sources/40-inquiry-interface-2026-10-06/README.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-EDITS.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-EMPIRICAL-EDITS.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-DOCUMENT-CHECKS.json",
+      "fragment": null,
+      "status": "self record"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MATH.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+      "to": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/06_S6.md",
+      "fragment": "the-bounded-optimizer-section-64",
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MATH.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-REVIEW.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check.py",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MATH.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check.py",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "to": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/DEVELOPMENT.md",
+      "fragment": null,
+      "status": "passed"
+    }
+  ],
+  "source_snapshots_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean": "43da47be727a896cb26d371fb30e4419f84e0242b942b9163e34c1c559b737b3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean": "b64991cb6dd39ebf7283a7fba72d47feb8251512059ea847c1b5de37d4357e93",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": "bc479fd52131c3d1c0ca82281d796c0c25f23567d5406f31a68e96e40940e2a3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md": "773ef62d0d8115c238d8f3ed7e42eec2552f58d467ea74f08eb8804f6923049a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md": "56382d847f721ae3915ea8aafe70ccb3def4c3a1cbe08b6982d327a5630fa3fa",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md": "2de04e1eddb669e57c0955e9213e3b036c4f362d434add3c8a72ac2fad8be543",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md": "9d22dce99856f9d6c817a2d1a5efc4e9eb45008e69979ac7cd414895543a0c27",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md": "972a8961ca6eb149602c88cc713736f675b245b0d91d04610afcab6ff2ea2bb6",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md": "b100823f400deaf8c4597fe2ae522ec3d22436eea1f84c3c59c82f3568394472",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md": "def7e8feba90b3dc83ca5dfffe2d8300ff02c00a88b58a7733d963e2d5924a46",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md": "cc39a580c91c99d3aa7fe7108a8b238f8fee70195e480660e06ce6190cde3e05",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md": "809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUCCESSOR-LEARNING.md": "8edbdc9508b80e6813be62d00e02f49d2af7d208ac0f7c9e16c519decf7a8b34",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md": "a682fc980c17e312f2359cdaa5f59d17f0567819532fe9dbbb402362d765faee",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md": "f5162cc98d5a015e4a885bb2dc1c42e8ef725cf784627b4f2cbf123cb2d8fe6f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md": "aa19915442e06febd21f0d8cc58d880ff3880fafa4576bb71c173f274d9d08cd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md": "5b217d18111c0bc81cc6fddb3e173ca7594bb90565b5466b40cf978927e63468",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean": "fbc7e8da48b0e9899b86e72291914685791c719cd56f03da52f685201cafe3e1",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-verification.json": "160459f397ea341ff9480ed01d5ab892a8f97fe84a5eb2bab51b5acfbead02c5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md": "6c7f121ef8ba2be742f67956479d106cdb2b188026e3115f18095826e654fcea",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md": "e75cee45dda1e7efbf99f7ac97fde0a4e3f45c30dbf6e085c1cd87eb9fec3d7e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md": "0c94e8f07b91083ee8bec48580a36668a8d4e4eaafe50ddc808f63d7c8270835",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-EDITS.json": "bc3dedbfb31cbf75fd4cd0b6cc74ed7f0b508a9e4088f34e245a8ca09a8bc4d1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-EMPIRICAL-EDITS.json": "8634b72116203db8f423f4f25793c80ef0aec3b00212fe0d15fdde246fc43c7b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json": "37f4dabf0d66841d4b9f2615b6ef4dee012c6028cdf77e7bcdcd08d92851ed25",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md": "15e43f378a05525945932fa2a10a58c0091218002c21f44917c9717f70e63b44",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md": "4b29b7cf0191080e5473860145eb16805f637f0bb4dbf69102c2e937eca4dfc8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md": "bff793306cf5ea1cff15f18be14e168b35cf9c8a3d86c862699efc93bd29faf9",
+    "sources/38-participation-consequence-2026-10-06/README.md": "ff5e7b472553d9ed627bf26f472d734103ec98d71fd9918b1c35a05177f85ac2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md": "bcc149eb9abd38b92b62056d15c92f75dec42234fb7adc76f5a41fc28f69621f",
+    "sources/39-consequence-organization-2026-10-06/README.md": "b0309f9bcd99398394e56950a1f2a7960e1c498b191743e7f3bab2c53a13d2a2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md": "ab2e26e8a1e78f54e768e87b4aeb8cbe356bb11b7186d0dd6fa334e50a64f301",
+    "sources/40-inquiry-interface-2026-10-06/README.md": "36542cccb3751a005a8c64338a3f1311e15036869f997594f2d63a9a8a49eb14",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md": "31b4f2604b5d3e07783d0fc3fe936c374e7349390b7d1d985fbe62ee185e7227",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MATH.md": "6d53056b2473d0522c7784cb0ab655a90e549af9faf5976de31b3a5c88da8f63",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/06_S6.md": "c0c75261c7b53053469a2af17c3d2ab3fa0ddbadeb4850118170cb996a21c2c3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-REVIEW.md": "d74fdb599ec3c7e2a55cb8349a13337b8a3bf3045aea62103feaa6b7b7997407",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check.py": "633896eee9c68b9a9e8468b9078c5fca49e90eca378864d4420f2d0c58010910",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/DEVELOPMENT.md": "f0f1cdfd59478ade58a1edff87835bbbd42b93369dd3df7d9e5bbe143be84164"
+  },
+  "formal_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json",
+    "sha256": "37f4dabf0d66841d4b9f2615b6ef4dee012c6028cdf77e7bcdcd08d92851ed25",
+    "status": "passed",
+    "audits": 196,
+    "new_audits": 17
+  },
+  "errors": []
+}

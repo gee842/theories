@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "scope": "Independent reconstruction of fixed20-case synthetic native-effect acquisition; no new Lean or empirical claim",
+  "producer_imported": false,
+  "native_process_imported": false,
+  "independent_helper": {
+    "path": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent_check.py",
+    "sha256": "c9ff5611ac3248b02db951bb2edcf7bf23e77d559f6e7da438c67047791a9250"
+  },
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py": "4daecb9934d195f1c638e3b26dddd72143b05a9edfa6cfc789244851650bde5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md": "b0e70c98fc922950ddefeb7549d142e6fcc890526474a9f36c0f74a036a5bde5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/model.py": "3d68e40ae687d2a27544b9a6f68050baa545100f0ff8f2ca59086f405c5c847c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md": "8839625aeb6df53a54a54a9cf23b3a917880a56464ed2ab668fdf81debe33ddb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d"
+  },
+  "producer_source_bindings": 15,
+  "result_sha256": "18de3f7e66394d42443dea66db11e00a4d063393f2ed4891128e8f3fd0b96a93",
+  "checker_sha256": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9",
+  "counts": {
+    "cases": 20,
+    "ancestry_events": 94,
+    "suffix_events": 4348,
+    "suffix_native_events": 4078,
+    "successes": 8
+  },
+  "shared_ancestry_counted_once": true,
+  "full_state_event_occurrences": 4442,
+  "matched_clamp_prefixes": 8,
+  "events_per_matched_prefix": 20,
+  "global_material_capacity": 78,
+  "occupied_memory_parts": 6,
+  "effective_native_capacity": 72,
+  "ordinary_final_plant": [
+    35,
+    36,
+    1,
+    1,
+    0,
+    0,
+    214
+  ],
+  "ordinary_spent": 376,
+  "static_and_richer_alternatives_preserved": true,
+  "checked_properties": [
+    "all chronological states and event details",
+    "native law common/source monotonicity",
+    "energy including pending writer escrow",
+    "occupied-material native guards",
+    "native-only action-bound contact interval",
+    "record-only reader selection",
+    "faithful swapped wirings and matched clamped selection",
+    "faults and unfinished records",
+    "actual response plus later damage and admitted/denied repair"
+  ]
+}

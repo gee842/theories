@@ -1,0 +1,459 @@
+{
+  "status": "passed",
+  "scope": "Independent source-bound finite reconstruction; no producer imports or broad legacy rerun",
+  "check_source_sha256": "456b2aec248f1a36eab3845eff18903b1f7a3789b927918924950127a6411202",
+  "results_sha256": "d267882af456aa7ff1c76dab5937a6d471031b4d016db4e6d86fd9adaddffb25",
+  "source_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REFINEMENT-PROTOCOL.md": "f0dea535641ddcd3c11229346e9b07841a2e617d59e1be7ba42751e94b2086f6",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8"
+  },
+  "unique_source_bindings": 12,
+  "preparation": {
+    "states": 20,
+    "terminal_states": 5,
+    "commissioning_probability": "2/9"
+  },
+  "ancestry_cuts": [
+    8,
+    9,
+    10
+  ],
+  "ancestry_transitions": 27,
+  "case_count": 16,
+  "extension_events": 301,
+  "acquisition_and_first_use_events": 1488,
+  "matched_consumer_prefix_events": 18,
+  "cases": [
+    {
+      "name": "acquired_refinement",
+      "status": "complete",
+      "extension_events": 28,
+      "actual_extractions": 3,
+      "selected_use": "a",
+      "partition": [
+        1,
+        2,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 0,
+      "fuel": "153191/8192",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "consumer_masked",
+      "status": "no_supported_response",
+      "extension_events": 19,
+      "actual_extractions": 2,
+      "selected_use": null,
+      "partition": [
+        1,
+        2,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 10,
+      "fuel": "330129/32768",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "static_phase",
+      "status": "complete",
+      "extension_events": 28,
+      "actual_extractions": 3,
+      "selected_use": "a",
+      "partition": [
+        0,
+        1,
+        2
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 0,
+      "fuel": "616423/32768",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "original_ten_novel",
+      "status": "source_unavailable",
+      "extension_events": 20,
+      "actual_extractions": 2,
+      "selected_use": "a",
+      "partition": [
+        1,
+        2,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 0,
+      "fuel": "178265/16384",
+      "denials": [
+        {
+          "reason": "source_unavailable",
+          "available": 0,
+          "required": 10
+        }
+      ],
+      "acquisition_and_first_use_events": 100
+    },
+    {
+      "name": "earlier_eight",
+      "status": "funding:refinement_installation",
+      "extension_events": 0,
+      "actual_extractions": 1,
+      "selected_use": null,
+      "partition": [],
+      "valid": true,
+      "retained": false,
+      "source": 30,
+      "fuel": "4971/4096",
+      "denials": [
+        {
+          "reason": "funding:refinement_installation",
+          "available": "4971/4096",
+          "required": "82217/65536",
+          "peak": 33
+        }
+      ],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "later_ten",
+      "status": "source_unavailable",
+      "extension_events": 20,
+      "actual_extractions": 2,
+      "selected_use": "a",
+      "partition": [
+        1,
+        2,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 0,
+      "fuel": "854713/65536",
+      "denials": [
+        {
+          "reason": "source_unavailable",
+          "available": 0,
+          "required": 10
+        }
+      ],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "nine_novel",
+      "status": "funding:select_same_output_audit",
+      "extension_events": 7,
+      "actual_extractions": 1,
+      "selected_use": null,
+      "partition": [
+        1,
+        1,
+        0
+      ],
+      "valid": true,
+      "retained": false,
+      "source": 20,
+      "fuel": "16913/65536",
+      "denials": [
+        {
+          "reason": "funding:select_same_output_audit",
+          "available": "16913/65536",
+          "required": "19135/65536",
+          "peak": 37
+        },
+        {
+          "reason": "funding:refinement_retention",
+          "available": "16913/65536",
+          "required": "3719/8192",
+          "peak": 28
+        }
+      ],
+      "acquisition_and_first_use_events": 100
+    },
+    {
+      "name": "original_readiness",
+      "status": "no_supported_response",
+      "extension_events": 18,
+      "actual_extractions": 2,
+      "selected_use": null,
+      "partition": [
+        1,
+        1,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 10,
+      "fuel": "1527/8192",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "blocked",
+      "status": "no_supported_response",
+      "extension_events": 18,
+      "actual_extractions": 2,
+      "selected_use": null,
+      "partition": [
+        1,
+        1,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 10,
+      "fuel": "1527/8192",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "unobserved_phase_also_ready",
+      "status": "complete",
+      "extension_events": 28,
+      "actual_extractions": 3,
+      "selected_use": "a",
+      "partition": [
+        1,
+        2,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 0,
+      "fuel": "153191/8192",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "contact_lost",
+      "status": "receipt_unavailable",
+      "extension_events": 5,
+      "actual_extractions": 1,
+      "selected_use": null,
+      "partition": [
+        1,
+        1,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 20,
+      "fuel": "142461/65536",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "false_first",
+      "status": "inconsistent_phase_evidence",
+      "extension_events": 26,
+      "actual_extractions": 3,
+      "selected_use": "",
+      "partition": [
+        1,
+        1,
+        0
+      ],
+      "valid": false,
+      "retained": true,
+      "source": 0,
+      "fuel": "593963/65536",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "false_second",
+      "status": "no_supported_response",
+      "extension_events": 19,
+      "actual_extractions": 2,
+      "selected_use": null,
+      "partition": [
+        1,
+        1,
+        0
+      ],
+      "valid": true,
+      "retained": true,
+      "source": 10,
+      "fuel": "83447/8192",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "false_positive_second",
+      "status": "funding:native_extraction",
+      "extension_events": 20,
+      "actual_extractions": 2,
+      "selected_use": "a",
+      "partition": [
+        1,
+        2,
+        0
+      ],
+      "valid": true,
+      "retained": false,
+      "source": 10,
+      "fuel": "1711/65536",
+      "denials": [
+        {
+          "reason": "funding:native_extraction",
+          "available": "1711/65536",
+          "required": "16419/65536",
+          "peak": 35
+        },
+        {
+          "reason": "funding:refinement_retention",
+          "available": "1711/65536",
+          "required": "7951/16384",
+          "peak": 30
+        }
+      ],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "misbound_second",
+      "status": "inconsistent_phase_evidence",
+      "extension_events": 18,
+      "actual_extractions": 2,
+      "selected_use": null,
+      "partition": [
+        1,
+        1,
+        0
+      ],
+      "valid": false,
+      "retained": true,
+      "source": 10,
+      "fuel": "679321/65536",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "late_readiness_change",
+      "status": "inconsistent_phase_evidence",
+      "extension_events": 27,
+      "actual_extractions": 3,
+      "selected_use": "a",
+      "partition": [
+        1,
+        2,
+        0
+      ],
+      "valid": false,
+      "retained": true,
+      "source": 0,
+      "fuel": "71143/8192",
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    }
+  ],
+  "finite_partition_characterization": {
+    "domain": [
+      0,
+      1,
+      2
+    ],
+    "old_partition": [
+      1,
+      1,
+      0
+    ],
+    "records": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "partitions": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "fitting_records": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "refining_old_partition": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "admissible": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "scope": "Unique partition up to relabeling only under this fixed three-state deterministic record-fitting refinement contract"
+  },
+  "limitations": [
+    "Reviewer advised design; computational reconstruction is independent code.",
+    "Archived acquisition schedule is source-bound and independently costed, not relearned by a separate learner.",
+    "Native information access was inspected, not proved by a verified noninterference system.",
+    "Conditional finite construction is not empirical validation or assumption-free grounding."
+  ]
+}

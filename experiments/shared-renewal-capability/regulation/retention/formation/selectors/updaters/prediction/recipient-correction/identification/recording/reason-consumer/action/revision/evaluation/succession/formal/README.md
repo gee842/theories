@@ -43,3 +43,12 @@ Lean covers this finite normal-cost law and selected actual history. The 29-conf
 Run `python3 check.py`. The checker uses Lean4.29.1, freezes the exact 29 source files, builds in a fresh temporary directory, checks accepted ancestor bytes against their commit and the prospective 150-source freeze, and audits every new theorem. Of the 92 new audits, 4 report no axioms; the others use only standard logical dependencies. It allows only reported standard logical dependencies (`propext`, `Quot.sound`, `Classical.choice`); this is not an axiom-free claim.
 
 [Development snapshots](development/) retain first sources, failed compilations and interrupted elaborations. The [probe-authority review finding](development/review-probe-authority/FINDING.md) preserves the pre-repair draft: repeated operations under one probe authorization and unrestricted restoration events were found and corrected. Later reader/route lens lemmas change proof evaluation, not the event law. No accepted ancestor is edited.
+
+## Dormant history and effective continuation
+
+The later [SuccessionHistoryInterface.lean](SuccessionHistoryInterface.lean) reads this accepted law unchanged. Replacing only the dormant `history` field preserves enabledness, transitions, available finite event words, expenditure and every other state field. The actual post-handoff suffix and the existing state-dependent event generator instantiate that result. Active evidence, inherited influence, access, custody and resources are preserved.
+
+Run `python3 history-interface/check.py` for its separate [fresh receipt](history-interface/verification.json): 29 parent modules plus the new module, with 24 new theorem audits. These counts describe this dependency closure, not a combined total across sibling additions. All parent source hashes match the accepted receipt. Failed attempts remain under `history-interface/attempts/`; the original verification is unchanged.
+
+The historical field was already unread before retirement. This abstraction establishes neither alternative reachable ancestry, physical disappearance, moral equivalence nor independence from a newly history-reading scheduler. The existing access-loss witnesses show why retained influence and usable access are preserved. See the [research integration](../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOODNESS-WITHOUT-RETURN-INTEGRATION.md#which-inherited-effects-remain-operative) for the no-return grounding question and its remaining ethical scope.
+

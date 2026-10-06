@@ -1,0 +1,615 @@
+{
+  "scope": "Owned links, inserted prose and accepted evidence preservation only; no scientific rerun or new proof.",
+  "passed": true,
+  "count": 152,
+  "checks": [
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CALIBRATION-REVISION-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-results.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision_check_review.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/verification.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CALIBRATION-REVISION-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-ERRATUM.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-results.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/model.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/shared-renewal-capability/regulation/retention/model.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision_check_review.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/verification.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-PRESERVATION.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry_check_review.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement_check_review.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/check_independent.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/results.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/check.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/check.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/lean-toolchain",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check.py",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/verification.json",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/SavedRecipeCorrespondence.lean",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/GenerativeCore.log",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/RemainingDependency.log",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/CalibrationRevision.log",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/RecipeGrounding.log",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/RecipeNative.log",
+      "passed": true
+    },
+    {
+      "check": "preserve experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/runs/20261006T130141.782312Z/SavedRecipeCorrespondence.log",
+      "passed": true
+    },
+    {
+      "check": "document _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../sources/15-codex-theory-conversations/2026-10-06-remaining-mechanism-grounding.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> CALIBRATION-REVISION-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md#4-why-this-inquiry-addresses-the-challenged-application",
+      "passed": true
+    },
+    {
+      "check": "anchor CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md#4-why-this-inquiry-addresses-the-challenged-application",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> DERIVED-INQUIRY-PREMISES.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/model.py",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/results.json",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/check_independent.py",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> RECIPE-GROUNDING-REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/verification.json",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md -> RECIPE-GROUNDING-CHECKS.json",
+      "passed": true
+    },
+    {
+      "check": "document _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> CALIBRATION-REVISION-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> DERIVED-INQUIRY-PREMISES.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md#4-why-this-inquiry-addresses-the-challenged-application",
+      "passed": true
+    },
+    {
+      "check": "anchor CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md#4-why-this-inquiry-addresses-the-challenged-application",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ASSUMPTION-ELIMINATION-AUDIT.md#5-how-to-advance-without-hiding-the-gap",
+      "passed": true
+    },
+    {
+      "check": "anchor ASSUMPTION-ELIMINATION-AUDIT.md#5-how-to-advance-without-hiding-the-gap",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/model.py",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/results.json",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/check_independent.py",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> RECIPE-GROUNDING-PRESERVATION.json",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/check.py",
+      "passed": true
+    },
+    {
+      "check": "link _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/verification.json",
+      "passed": true
+    },
+    {
+      "check": "document sources/15-codex-theory-conversations/2026-10-06-remaining-mechanism-grounding.md",
+      "passed": true
+    },
+    {
+      "check": "link sources/15-codex-theory-conversations/2026-10-06-remaining-mechanism-grounding.md -> ../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "link sources/15-codex-theory-conversations/2026-10-06-remaining-mechanism-grounding.md -> ../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "check": "document experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md -> ../calibration_revision.py",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md -> ../remaining-dependency-results.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md -> ../CALIBRATION-REVISION-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "document experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/MECHANISM.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/MECHANISM.md -> PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/MECHANISM.md -> model.py",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/MECHANISM.md -> results.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/MECHANISM.md -> independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/MECHANISM.md -> formal/FORMAL-NOTES.md",
+      "passed": true
+    },
+    {
+      "check": "document experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> model.py",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> results.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> check_independent.py",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> MECHANISM.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> ../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md -> formal/FORMAL-NOTES.md",
+      "passed": true
+    },
+    {
+      "check": "document experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> verification.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> ../PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> ../results.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> ../independent-check.json",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> RecipeGrounding.lean",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> RecipeNative.lean",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> check.py",
+      "passed": true
+    },
+    {
+      "check": "link experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/FORMAL-NOTES.md -> runs/20261006T130141.782312Z/verification.json",
+      "passed": true
+    },
+    {
+      "check": "owned insertion theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "passed": true
+    },
+    {
+      "check": "link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "owned insertion theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "passed": true
+    },
+    {
+      "check": "link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md#the-five-requested-dependencies",
+      "passed": true
+    },
+    {
+      "check": "anchor ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md#the-five-requested-dependencies",
+      "passed": true
+    },
+    {
+      "check": "owned insertion theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "check": "link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md -> CONNECTED-GENERATIVE-MODEL.md#acquired-calibration-forms-the-readers-decoding-connections",
+      "passed": true
+    },
+    {
+      "check": "anchor CONNECTED-GENERATIVE-MODEL.md#acquired-calibration-forms-the-readers-decoding-connections",
+      "passed": true
+    },
+    {
+      "check": "owned insertion RESEARCH.md",
+      "passed": true
+    },
+    {
+      "check": "link RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "owned insertion theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "check": "link theories/shengsheng-buxi-generative-existence/README.md -> unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#acquired-calibration-forms-the-readers-decoding-connections",
+      "passed": true
+    },
+    {
+      "check": "anchor unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#acquired-calibration-forms-the-readers-decoding-connections",
+      "passed": true
+    },
+    {
+      "check": "link theories/shengsheng-buxi-generative-existence/README.md -> ../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+      "passed": true
+    }
+  ]
+}

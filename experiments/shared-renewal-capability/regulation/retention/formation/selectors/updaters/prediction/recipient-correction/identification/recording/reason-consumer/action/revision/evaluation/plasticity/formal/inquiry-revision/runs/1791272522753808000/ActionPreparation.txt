@@ -1,0 +1,13 @@
+'ActionPreparation.runnable_trace' depends on axioms: [propext]
+'ActionPreparation.actual_formation_feasible' depends on axioms: [propext]
+'ActionPreparation.actual_formation_trace' depends on axioms: [propext]
+'ActionPreparation.actual_formation_endpoint' depends on axioms: [propext]
+'ActionPreparation.actual_assemblies_feasible' does not depend on any axioms
+'ActionPreparation.actual_material_partition' depends on axioms: [propext]
+'ActionPreparation.exact_parent_prepared_projection' depends on axioms: [propext]
+'ActionPreparation.original_accounts_partition' does not depend on any axioms
+'ActionPreparation.action_control_preparations_feasible' depends on axioms: [propext]
+'ActionPreparation.exact_control_reserves' does not depend on any axioms
+'ActionPreparation.old_material_has_no_free_command_pair' does not depend on any axioms
+'ActionPreparation.omitted_assembly_retains_parts_and_payment' depends on axioms: [propext]
+'ActionPreparation.whole_history_accounts' does not depend on any axioms

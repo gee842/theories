@@ -1,0 +1,6 @@
+'RecipientCorrection.Laws' does not depend on any axioms
+'RecipientIdentification.State' does not depend on any axioms
+'RecipientIdentification.Event' does not depend on any axioms
+'RecipientIdentification.Valid' depends on axioms: [propext]
+'RecipientIdentification.Enabled' does not depend on any axioms
+'RecipientIdentification.Step' depends on axioms: [propext]

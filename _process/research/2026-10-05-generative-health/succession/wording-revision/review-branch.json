@@ -1,0 +1,73 @@
+{
+  "scope": "Foundational exposition wording revision only; no new science or reruns",
+  "date": "2026-10-06",
+  "status": "five files revised; integrating agent completed preservation and local-link checks in checks.json",
+  "files": [
+    {
+      "path": "_process/research/2026-10-05-generative-health/ANSWER.md",
+      "before_sha256": "6d4be2b3473608904c6f8d528d47d9db9f1beb5728a4c9fc664d7a2f0cd7af61",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/_process/research/2026-10-05-generative-health/ANSWER.md",
+      "after_sha256": "88670b58170c9e3e95cf90559def66e1afec113d8ba36aed689c9b5e7bfe987d",
+      "changes": [
+        "Recast the foundation as activity changing conditions of further activity rather than an accounting vocabulary.",
+        "Describe the establishment model in terms of capacity decay, effort, support and resource-feasible transitions; mathematical blocks, identifiers and results unchanged.",
+        "Preserve shared consequences and normative incompleteness without implying significance originates outside generative activity."
+      ],
+      "integration_sha256": "88670b58170c9e3e95cf90559def66e1afec113d8ba36aed689c9b5e7bfe987d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/ANSWER.md",
+      "before_sha256": "2bb5ab26f886a473d6b386a45bd263f199764a2ae32ad890ddd65f64677aeab1",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/_process/research/2026-10-05-generative-health/succession/ANSWER.md",
+      "after_sha256": "f51da82f644f2f9700a777400d1bfcc264ee19544022e053687b970fe815f03c",
+      "changes": [
+        "Rewrite the principal answer around persistence of construction effects and their participation in later activity.",
+        "Replace economic metaphors in experimental exposition with the specified work consumption and replenishment operations.",
+        "Preserve exact numbers, recurrence, code identifiers, controls, result scope and existing heading anchors."
+      ],
+      "integration_sha256": "f51da82f644f2f9700a777400d1bfcc264ee19544022e053687b970fe815f03c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md",
+      "before_sha256": "ae9ceb145ce6e2c16198e46466fda2e2e1445a27a4728aaba3e448421f39668c",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/_process/research/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md",
+      "after_sha256": "9a07df69ebc12bd2cda7ed024562e626c3466dfec708e47e54ea477066358caa",
+      "changes": [
+        "Rewrite acquired-action exposition as one event changing resources and leaving an action-linked indication used in record formation and updating.",
+        "Describe the model's unanswered target-significance relation without assuming a fixed giver/receiver or service claim.",
+        "Keep the withdrawn ranking inference, source genealogy and positive/nondual claims at their existing scopes."
+      ],
+      "integration_sha256": "9a07df69ebc12bd2cda7ed024562e626c3466dfec708e47e54ea477066358caa"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
+      "before_sha256": "63a208c0b21a5376156d8194eadaa936111d72dce26cf50540f16cca0aa8300b",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/_process/research/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
+      "after_sha256": "96c82011c7356eb07ecfb8889b707ee9517a3ab486eba3132bc54167c0816ac0",
+      "changes": [
+        "Rewrite the foundational opening and main argument around activity, changing support and affected continuation; introduced actor/recipient only as supplied local-model position names.",
+        "Recast the corollary as a comparison of usable stock and resource-feasible paths, retaining all equations, guards, numerical examples and source anchors.",
+        "Distinguish learned observations, numerical stock changes and independently identified lived or organizational consequences without economic or passive-receiver assumptions."
+      ],
+      "integration_sha256": "96c82011c7356eb07ecfb8889b707ee9517a3ab486eba3132bc54167c0816ac0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
+      "before_sha256": "07eabc75664d232344a64b93695d16765b66d41399acb9ffc7209b120d22d2e3",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/_process/research/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
+      "after_sha256": "40e28de5db1f7c0674aff920cc118850305559bcfef168f15f929872159e5395",
+      "changes": [
+        "Rewrite the central result around record, stock consumption/restoration, access and continuation rather than payment/refund/service.",
+        "Keep source event names recipientPay, recipientReturn and local phase/guard names wherever necessary for the proof; explicitly identify their numerical operations and supplied local roles.",
+        "Preserve the payment-free-prefix invariant as the same event-absence claim, the 36→34 result, conditional floor obstruction, selection-only corollary and exact prospective buffer condition.",
+        "Retain lived burdens, consent, authority, independent correspondence and all limitations on ethical and implementation claims."
+      ],
+      "integration_sha256": "40e28de5db1f7c0674aff920cc118850305559bcfef168f15f929872159e5395"
+    }
+  ],
+  "integrator_validation": {
+    "heading_strings_unchanged": true,
+    "scope": "Original proof blocks, numerical examples, code identifiers and local source meanings retained; central checks compare hashes, displayed and indented formulas, and links.",
+    "scientific_rerun": false
+  }
+}

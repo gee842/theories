@@ -1,0 +1,1 @@
+{"request_id":"audit-w01-05","operation":"read","artifact":"runs/r0002/stdout.txt","limit":12000}

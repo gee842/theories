@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-06",
+  "scope": "Exact additive edits; all preceding text preserved",
+  "edits": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "anchor": "## Core and tree are nondual\n\n",
+      "placement": "after",
+      "addition": "**Necessity attempt:** the [latest attempted proof](#necessity-attempt-the-full-ground-of-a-reason) tests unchosen restraint and desire-independent self-relief. It rejects a general prior-adoption barrier for accounts already recognizing restraint, but does not establish the full practical ground of stranger relief. The failed closing inference is preserved explicitly; universal ethical necessity remains unproved.\n\n",
+      "before_sha256": "40de8572dfad5ca49869ac7f030d59333ad4400faeffa4a0717a94caeac7ec5c",
+      "after_sha256": "606237952dbaf3fddfdc5ad080df662a4257d6a143ac1ec976dd0bafe504c672"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "anchor": "## The nondual starting point\n",
+      "placement": "before",
+      "addition": "## Necessity attempt: the full ground of a reason\n\nThe [new necessity attempt](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md) tests whether the proposed ground can be established through the very autonomy invoked to restrict concern. Its target remains some contributory reason under independently specified conditions. Equal concern, compulsory aid and inevitable benevolence are stronger claims; none is required merely by the existence of that reason.\n\nThe positive account begins with actual adverse undergoing and an available transformation of that same undergoing. Its claim is that the relief can give a purpose a point before concern is adopted. To isolate practical scope, this attempt grants the restricted experiential identification and the otherwise permissible, effective means. It does not silently derive them from generic activity or resource change.\n\nThe [argument](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md) then asks what an autonomy-based rival already accepts. If another person's consent or practical independence gives an indifferent stranger a reason against coercing them, lack of adopted concern cannot be a general barrier to all reasons concerning another life. Further, protection against interference does not by itself show that an otherwise permissible, noninterfering relief option has nothing in its favor. These are conditional constraints on a rival accepting the restraint ground. A strict egoist need not accept that starting premise.\n\nThe attempted final inference—therefore relief supplies a reason—does not follow merely from those constraints. Defeating one exclusion does not establish the positive ground. A substantive rival can accept unchosen restraint while claiming a distinct jurisdiction over positive assistance or moral answerability. The formation of that jurisdiction does not vindicate it, but its consistency with nondual differentiation prevents us from dismissing it as an external addition by definition. Both its claimed authority and the direct relief-ground need positive justification.\n\nThe [review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md) identifies the corresponding limit of self-relief. Actual adversity can provide a reason without a chosen self-care project or an ownership concept. That does not establish that adversity and access exhaust its ground. The rival can propose a ground jointly constituted by adversity and a formed continuity. It need not first concede a complete ground and then append an arbitrary restriction. If our account independently establishes that continuity adds no constitutive condition to the baseline reason, the restriction would fail; proving that completeness is the work still required.\n\nThe [focused primary comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md) also keeps special concern distinct from exclusive concern. A challenge to equal altruism does not establish zero contributory favor for an unrelated sufferer. The inspected alternative permitting moderate benevolence and self-priority is conditional; it supplies no necessity proof and is not the hypothetical zero-favor rival.\n\n**This attempt does not solve universal necessity.** It locates the contested constitutive relationship more precisely and preserves the unsuccessful inference. The question is whether actual adversity and an eligible transformation supply baseline practical favor, with continuity and roles explaining further priority, or whether those relations are necessary for that favor to exist at all. Both are accounts within one unfolding. Neither the surviving rival nor the favored candidate has been established as necessary here; no separate ethical realm has been shown required.\n\n",
+      "before_sha256": "606237952dbaf3fddfdc5ad080df662a4257d6a143ac1ec976dd0bafe504c672",
+      "after_sha256": "9c3a15854c4d7069cbd8d976cbc02a3a155ce89f3df42e89f994a7b0f447b86c"
+    },
+    {
+      "path": "RESEARCH.md",
+      "anchor": "# Current theory and research\n\n",
+      "placement": "after",
+      "addition": "**Attempt at universal ethical necessity, 6 October 2026:** the [argument and integration](_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md) test whether unchosen restraint defeats prior-adoption restrictions and whether desire-independent self-relief exhausts its own ground. The first rejects a general adoption barrier for a rival accepting restraint; neither route proves that genuine benefit constitutes a reason for every eligible stranger. A substantive continuity/jurisdiction account survives for assessment. A bounded primary rereading separates special concern from exclusive concern and equal altruism from minimal favor. This closes an attempted inference with universal necessity unproved. Next is independent warrant for the full practical ground and any claimed exclusion, within the same nondual unfolding; no new mechanism, theorem or empirical result is claimed.\n\n",
+      "before_sha256": "6bb7b077252c8a3519df0c6918608f71e12d96cbceb688b8c9c4c557ce7fb16b",
+      "after_sha256": "2c588618cdcd1f802c583825f277135114fe271dd81fd79854f8531d89d91a04"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "anchor": "# Generative Existence (生生不息论)\n\n",
+      "placement": "after",
+      "addition": "**Universal ethical necessity attempted, 6 October 2026:** the [current ethical account](unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#necessity-attempt-the-full-ground-of-a-reason) tests autonomy-based restraint and self-relief as routes to unchosen concern. It preserves a bounded rejection of a general adoption requirement and exposes the unproved claim that the proposed ground is complete. [Argument, review and primary comparison](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md) distinguish some reason from equal obligation. The attempted universal proof does not close; the constitutive ground and substantive exclusions remain to be justified.\n\n",
+      "before_sha256": "afbfad7b948f2c16309d1e827a1da7a6798704c12fec3bcf5743433ed78ed02e",
+      "after_sha256": "9ecfe18c6e8f75346e30cc43e3b20c721b7c0b7159084c38382b84c7b9e4b0f0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "anchor": "# Root-foundation review package\n\n",
+      "placement": "after",
+      "addition": "**Necessity attempt, 6 October 2026:** [argument](NECESSITY-ATTEMPT-ARGUMENT.md), [review](NECESSITY-ATTEMPT-REVIEW.md), [primary sources](NECESSITY-ATTEMPT-SOURCES.md) and [integration](NECESSITY-ATTEMPT-INTEGRATION.md) test unchosen restraint, self-relief and nonexclusive scope. They preserve the successful conditional rejection of a general adoption gate while recording that the closing sufficiency inference fails. The rival can propose a joint adversity/continuity ground; it is not vindicated merely by coherence. No universal ethical necessity or new scientific result is claimed. Next is independent justification of the full practical ground and any legitimate exclusion.\n\n",
+      "before_sha256": "d6019aedef553e3078e54a9e5a0fe0975357f8ca00b480b415534e705488b95c",
+      "after_sha256": "4beb681e4fb4be2d95e43c8b3fb39da4daaa0bf912f41a2750f4281305a608f4"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "anchor": "## The derivation and the existing work\n\n",
+      "placement": "after",
+      "addition": "**Ethical necessity attempt, 6 October 2026.** The [latest attempt](UNIFIED-ETHICAL-GROUNDING.md#necessity-attempt-the-full-ground-of-a-reason) tests actual adversity → unchosen practical favor through autonomy-based restraint and self-relief. A rival accepting restraint cannot require prior concern for every other-directed reason. However, defeating that general barrier does not establish positive assistance; desire independence also does not prove that the proposed ground is complete. Actual experience, permissible efficacy and normative sufficiency retain their independent obligations. The next substantive result must vindicate the full ground or a legitimate restriction, rather than implement the desired verdict. This is a preserved philosophical attempt with unsuccessful universal closure, separate from conditional mathematical universality and uniquely necessary ontology.\n\n",
+      "before_sha256": "0e5631be1fea509e7227c8f2aeca7ebfd7f77c6524ea12dd1a464f4da22030f7",
+      "after_sha256": "f90f52b1079990ad53b0c5a0a4bde25a8417be84d2322385ed57ac5adb1e9da6"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "anchor": "# SOURCES manifest\n\n",
+      "placement": "after",
+      "addition": "**Ownerlessness and minimal ethical necessity, 6 October 2026:** [Harris's original journal PDF and provenance](37-ethical-minimum-primary-2026-10-06/ownerless-necessity/README.md) are preserved for a [focused extension of the inherited reading](../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md). The new scope covers printed pp.103–117, including notes, and distinguishes a challenge to equal altruism from denial of every contributory reason. This is further access to the same work, not independent corroboration or a proof of universal concern. Original bytes, access boundaries and the distinction between Harris and his reconstructed interlocutors remain explicit.\n\n",
+      "before_sha256": "f6735906a703d7ee9fd368377a9341c7e774ee4b3671b5e17fa803bd7144890c",
+      "after_sha256": "5bfdfd12385aa7ddba14719b7cb9ff5ffd9221296aa09e356b6be8d187973e01"
+    }
+  ]
+}

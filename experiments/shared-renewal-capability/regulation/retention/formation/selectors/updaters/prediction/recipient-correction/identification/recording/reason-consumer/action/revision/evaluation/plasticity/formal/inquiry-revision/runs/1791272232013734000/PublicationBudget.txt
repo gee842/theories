@@ -1,0 +1,10 @@
+'PublicationBudget.complete_reader_credit' depends on axioms: [propext]
+'PublicationBudget.reader_step_credit' depends on axioms: [propext, Quot.sound]
+'PublicationBudget.complete_no_sense' does not depend on any axioms
+'PublicationBudget.complete_no_read' depends on axioms: [propext, Quot.sound]
+'PublicationBudget.step_credit' depends on axioms: [propext, Quot.sound]
+'PublicationBudget.trace_credit' depends on axioms: [propext, Quot.sound]
+'PublicationBudget.initialized_count_bound' depends on axioms: [propext, Quot.sound]
+'PublicationBudget.unread_count_bound' depends on axioms: [propext, Quot.sound]
+'PublicationBudget.completed_handoff_count_bound' depends on axioms: [propext, Quot.sound]
+'PublicationBudget.inherited_fuel_count_bound' depends on axioms: [propext, Quot.sound]

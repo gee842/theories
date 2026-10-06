@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/early-checker-abort/runs/r0001/tree/experiments/agentdojo-evidence-boundary/check_replay.py", line 498, in <module>
+    main()
+  File "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/early-checker-abort/runs/r0001/tree/experiments/agentdojo-evidence-boundary/check_replay.py", line 435, in main
+    outputs = json.loads((HERE / "replay-results.json").read_bytes())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ren/.pyenv/versions/3.11.2/lib/python3.11/pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ren/.pyenv/versions/3.11.2/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/early-checker-abort/runs/r0001/tree/experiments/agentdojo-evidence-boundary/replay-results.json'

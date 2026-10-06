@@ -1,0 +1,432 @@
+{
+  "date": "2026-10-06",
+  "status": "failed",
+  "scope": "Documentation and source preservation only. No Lean build, new axiom or scientific experiment; five inspected Lean source hashes compared.",
+  "checks": [
+    {
+      "name": "owned fragment present",
+      "passed": true,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": true,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md"
+    },
+    {
+      "name": "owned fragment present",
+      "passed": false,
+      "path": "RESEARCH.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": false,
+      "path": "RESEARCH.md"
+    },
+    {
+      "name": "owned fragment present",
+      "passed": false,
+      "path": "theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": false,
+      "path": "theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "name": "owned fragment present",
+      "passed": false,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": false,
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+    },
+    {
+      "name": "owned fragment present",
+      "passed": true,
+      "path": "sources/SOURCES.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": true,
+      "path": "sources/SOURCES.md"
+    },
+    {
+      "name": "owned fragment present",
+      "passed": true,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": false,
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "name": "owned fragment present",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/acquired-perspective/README.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/acquired-perspective/README.md"
+    },
+    {
+      "name": "owned fragment present",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md"
+    },
+    {
+      "name": "owned edit reversible to immediate pre-edit hash",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md"
+    },
+    {
+      "name": "preserved original byte hash and size",
+      "passed": true,
+      "path": "sources/37-ethical-minimum-primary-2026-10-06/affective-realization/barlassina-hayward-2019-published.pdf"
+    },
+    {
+      "name": "preserved original byte hash and size",
+      "passed": true,
+      "path": "sources/37-ethical-minimum-primary-2026-10-06/affective-realization/martinez-2022-publisher.html"
+    },
+    {
+      "name": "inspected Lean source unchanged",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "name": "inspected Lean source unchanged",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean",
+      "sha256": "5afde10eb8e6b1ea829c8ab65b32f449f97aea1fbf8f37bdf792d536b3a05102"
+    },
+    {
+      "name": "inspected Lean source unchanged",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAcquisitionModel.lean",
+      "sha256": "cbf8795df25a666fac47343d7f6772dd4e55431e261bdb052239720a846660de"
+    },
+    {
+      "name": "inspected Lean source unchanged",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "sha256": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6"
+    },
+    {
+      "name": "inspected Lean source unchanged",
+      "passed": true,
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "sha256": "afc3b934499aeb0c705590ac33dcee6ee784b8705c5a93fba0b7b60dc7f468ac"
+    },
+    {
+      "name": "all internal file and heading links resolve",
+      "passed": true,
+      "count": 45
+    }
+  ],
+  "links": [
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "destination": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "destination": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md#experiential-direction-before-an-ownership-judgment",
+      "file_exists": true,
+      "anchor_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "destination": "unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md#experiential-direction-before-an-ownership-judgment",
+      "file_exists": true,
+      "anchor_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "destination": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "AFFECTIVE-REALIZATION-REVIEW.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "destination": "AFFECTIVE-REALIZATION-CHECKS.json",
+      "file_exists": true,
+      "passed": true,
+      "pending_creation": "this receipt"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "destination": "37-ethical-minimum-primary-2026-10-06/affective-realization/README.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "destination": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-BOUNDARY-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md#continuation-assessment-can-transform-what-it-investigates",
+      "file_exists": true,
+      "anchor_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "NONDUAL-METHOD.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope",
+      "file_exists": true,
+      "anchor_exists": true,
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/acquired-perspective/README.md",
+      "destination": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "destination": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "destination": "CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "destination": "ETHICAL-CONSTITUTION-CLOSURE.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "destination": "NECESSITY-ATTEMPT-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+      "destination": "AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+      "destination": "AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+      "destination": "RELIEF-APPRAISAL-EVIDENCE.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+      "destination": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+      "destination": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "AFFECTIVE-REALIZATION-REVIEW.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "../../../../sources/37-ethical-minimum-primary-2026-10-06/affective-realization/README.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "NECESSITY-ATTEMPT-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "destination": "AFFECTIVE-REALIZATION-CHECKS.json",
+      "file_exists": true,
+      "passed": true,
+      "pending_creation": "this receipt"
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/affective-realization/README.md",
+      "destination": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/affective-realization/README.md",
+      "destination": "manifest.json",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/affective-realization/README.md",
+      "destination": "barlassina-hayward-2019-published.pdf",
+      "file_exists": true,
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/affective-realization/README.md",
+      "destination": "martinez-2022-publisher.html",
+      "file_exists": true,
+      "passed": true
+    }
+  ],
+  "new_notes": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-ARGUMENT.md",
+      "sha256": "b59672766243a2f7cd3187bf3169fe86c0fc3b499b9d5baf800126a86fbb4928"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+      "sha256": "0492ccc3c233f45b281b27d6d3c2432eaa96f0d11780c809cc54fbebfe72f297"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+      "sha256": "c6e3b4b978b014c98c89e03592317603d6df75ed371855646304a2336934cbfa"
+    }
+  ],
+  "concurrent_prior_changes_preserved": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "sources/SOURCES.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+  ],
+  "review": "Argument and rival cross-read. Disposition/manifestation and coexistence of bodily/reflexive constituents repaired, then accepted. Root integration review pending."
+}

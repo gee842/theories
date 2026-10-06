@@ -1,0 +1,6 @@
+{
+  "stage": "import-order preflight before any compilation",
+  "failure": "AssertionError: ('GenerativeOutcomeModel', 'GenerativeModel')",
+  "cause": "The inherited root closure gained a validated GenerativeOutcomeModel importing GenerativeModel. The draft manifest excluded the previously concurrently edited entry.",
+  "repair": "Both current root entries now match the successful source-bound receipt. Include complete validated closure and import its outcome entry; no existing root files edited."
+}

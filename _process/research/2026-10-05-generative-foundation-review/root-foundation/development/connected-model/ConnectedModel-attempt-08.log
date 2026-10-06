@@ -1,0 +1,46 @@
+0
+elaboration took 193ms
+'Generative.ConnectedModel.permission_cut_step' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_trial_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_bank_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_step_preserves_patient' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_trace' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_connected_accounts' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_payload' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.short_trial_preserves_reader' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_prefix_to_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.reached_work_is_informed_and_affordable' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_cut_before_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_work_then_cut' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_paid_settlement_after_cut' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_joined_cut_settlement' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_cut_all_continuations' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.interpreted_fulfillment_does_not_change_existing_selector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+import took 382ms
+cumulative profiling times:
+	.olean serialization 18.3ms
+	attribute application 14.4ms
+	blocked (unaccounted) 1.76s
+	compilation (IR) 0.973ms
+	compilation (LCNF base) 3.58ms
+	compilation (LCNF impure) 1.07ms
+	compilation (LCNF mono) 1.96ms
+	congr simp thm 0.885ms
+	elaboration 693ms
+	fix level params 0.349ms
+	import 382ms
+	initialization 28.7ms
+	instantiate metavars 3.57ms
+	interpretation 24ms
+	let-to-have transformation 0.182ms
+	linting 8.99ms
+	parsing 6.95ms
+	process pre-definitions 4.9ms
+	share common exprs 2.02ms
+	simp 10.9ms
+	tactic execution 1.35s
+	type checking 346ms
+	typeclass inference 14.3ms

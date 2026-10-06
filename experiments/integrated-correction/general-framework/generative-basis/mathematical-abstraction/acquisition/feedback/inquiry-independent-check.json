@@ -1,0 +1,561 @@
+{
+  "status": "passed",
+  "scope": "Independent finite inquiry reconstruction with a bound independent ancestry helper",
+  "check_source_sha256": "3770a15d141d5e6e998fb8cf3f241f5397786415525653577c4d7d06fdde0b78",
+  "results_sha256": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+  "source_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement_check_review.py": "456b2aec248f1a36eab3845eff18903b1f7a3789b927918924950127a6411202"
+  },
+  "unique_source_bindings": 14,
+  "preparation": {
+    "states": 20,
+    "terminal_states": 5,
+    "commissioning_probability": "2/9"
+  },
+  "ancestry_cuts": [
+    8,
+    9,
+    10
+  ],
+  "overlapping_ancestry_transition_checks": 27,
+  "case_count": 15,
+  "extension_events": 321,
+  "acquisition_and_first_use_events": 1396,
+  "completion_reader_pairs": [
+    {
+      "ordinary": "completion_sensitive",
+      "disconnected": "completion_reader_disconnected",
+      "shared_extension_events": 18
+    },
+    {
+      "ordinary": "both_later_ready",
+      "disconnected": "both_ready_reader_disconnected",
+      "shared_extension_events": 18
+    }
+  ],
+  "cases": [
+    {
+      "name": "completion_sensitive",
+      "status": "reported_episode_complete",
+      "extension_events": 19,
+      "table": [
+        0,
+        1,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 2,
+      "source": 10,
+      "final_fuel": "178253/16384",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "completion_reader_disconnected",
+      "status": "all_phase_outcomes_recorded",
+      "extension_events": 39,
+      "table": [
+        0,
+        1,
+        0
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 3,
+      "source": 0,
+      "final_fuel": "74865/8192",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "last_phase_ready",
+      "status": "reported_episode_complete",
+      "extension_events": 33,
+      "table": [
+        0,
+        0,
+        1
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 3,
+      "source": 0,
+      "final_fuel": "76335/8192",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "blocked",
+      "status": "funding:consequence_contact",
+      "extension_events": 28,
+      "table": [
+        0,
+        0,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "reported_positive": false,
+      "actual_episode_fulfilled": false,
+      "actual_extractions": 3,
+      "source": 0,
+      "final_fuel": "591/8192",
+      "retained": false,
+      "denials": [
+        {
+          "reason": "funding:consequence_contact",
+          "available": "591/8192",
+          "required": "513/2048",
+          "peak": 32
+        },
+        {
+          "reason": "funding:inquiry_retention",
+          "available": "591/8192",
+          "required": "6925/16384",
+          "peak": 26
+        }
+      ],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "both_later_ready",
+      "status": "reported_episode_complete",
+      "extension_events": 19,
+      "table": [
+        0,
+        1,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 2,
+      "source": 10,
+      "final_fuel": "178253/16384",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "both_ready_reader_disconnected",
+      "status": "all_phase_outcomes_recorded",
+      "extension_events": 40,
+      "table": [
+        0,
+        1,
+        1
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 3,
+      "source": 0,
+      "final_fuel": "156785/8192",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "earlier_eight",
+      "status": "funding:inquiry_installation",
+      "extension_events": 0,
+      "table": [],
+      "compatible_with_table_alone": null,
+      "reported_positive": false,
+      "actual_episode_fulfilled": false,
+      "actual_extractions": 1,
+      "source": 30,
+      "final_fuel": "4971/4096",
+      "retained": false,
+      "denials": [
+        {
+          "reason": "funding:inquiry_installation",
+          "available": "4971/4096",
+          "required": "82217/65536",
+          "peak": 33
+        }
+      ],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "later_ten",
+      "status": "reported_episode_complete",
+      "extension_events": 19,
+      "table": [
+        0,
+        1,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 2,
+      "source": 0,
+      "final_fuel": "227405/16384",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "later_ten_last_phase",
+      "status": "source_unavailable",
+      "extension_events": 25,
+      "table": [
+        0,
+        0,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "reported_positive": false,
+      "actual_episode_fulfilled": false,
+      "actual_extractions": 2,
+      "source": 0,
+      "final_fuel": "59825/16384",
+      "retained": true,
+      "denials": [
+        {
+          "reason": "source_unavailable",
+          "available": 0,
+          "required": 10
+        }
+      ],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "original_ten_novel",
+      "status": "reported_episode_complete",
+      "extension_events": 19,
+      "table": [
+        0,
+        1,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 2,
+      "source": 0,
+      "final_fuel": "768015/65536",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 100
+    },
+    {
+      "name": "nine_novel",
+      "status": "funding:native_reset",
+      "extension_events": 11,
+      "table": [
+        0,
+        null,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": false,
+      "actual_episode_fulfilled": false,
+      "actual_extractions": 1,
+      "source": 20,
+      "final_fuel": "14697/65536",
+      "retained": false,
+      "denials": [
+        {
+          "reason": "funding:native_reset",
+          "available": "14697/65536",
+          "required": "16415/65536",
+          "peak": 31
+        },
+        {
+          "reason": "funding:inquiry_retention",
+          "available": "14697/65536",
+          "required": "6925/16384",
+          "peak": 26
+        }
+      ],
+      "acquisition_and_first_use_events": 100
+    },
+    {
+      "name": "contact_lost",
+      "status": "receipt_unavailable",
+      "extension_events": 5,
+      "table": [
+        null,
+        null,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": false,
+      "actual_episode_fulfilled": false,
+      "actual_extractions": 1,
+      "source": 20,
+      "final_fuel": "142461/65536",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "false_positive_first",
+      "status": "reported_episode_complete",
+      "extension_events": 7,
+      "table": [
+        1,
+        null,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": false,
+      "actual_extractions": 1,
+      "source": 20,
+      "final_fuel": "137173/65536",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "false_negative_second",
+      "status": "all_phase_outcomes_recorded",
+      "extension_events": 39,
+      "table": [
+        0,
+        0,
+        0
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "reported_positive": false,
+      "actual_episode_fulfilled": true,
+      "actual_extractions": 3,
+      "source": 0,
+      "final_fuel": "74865/8192",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    },
+    {
+      "name": "false_positive_second",
+      "status": "reported_episode_complete",
+      "extension_events": 18,
+      "table": [
+        0,
+        1,
+        null
+      ],
+      "compatible_with_table_alone": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "reported_positive": true,
+      "actual_episode_fulfilled": false,
+      "actual_extractions": 2,
+      "source": 10,
+      "final_fuel": "14413/16384",
+      "retained": true,
+      "denials": [],
+      "acquisition_and_first_use_events": 92
+    }
+  ],
+  "limitations": [
+    "Reviewer advised design; independent controller reconstruction is not blind replication.",
+    "The reused helper reconstructs ancestry and bills against archived acquisition; no second learning implementation is claimed.",
+    "Table-compatible worlds concern the table alone, not all possible information in account or denial signals.",
+    "Fixed episode, contact, correspondence, recipe and risk remain supplied; no purpose-origin or ethical result."
+  ]
+}

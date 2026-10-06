@@ -1,0 +1,28 @@
+{
+  "operation": "check",
+  "argv": [
+    "/Users/ren/.pyenv/versions/3.11.2/bin/python3",
+    "-B",
+    "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/b01/runs/r0001/tree/experiments/agentdojo-evidence-boundary/check_replay.py"
+  ],
+  "cwd": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/codex-audit-continuation-vy64jbtl/b01/runs/r0001/tree",
+  "environment": {
+    "PATH": "/Users/ren/.pyenv/versions/3.11.2/bin:/opt/homebrew/Cellar/pyenv/2.5.5/libexec:/opt/homebrew/Cellar/pyenv/2.5.5/plugins/python-build/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/ren/.local/bin:/Users/ren/.elan/bin:/Users/ren/.antigravity/antigravity/bin:/opt/homebrew/Cellar/node/23.11.0/bin:/Users/ren/google-gcloud-sdk/bin:/Users/ren/.rbenv/shims:/Users/ren/.rbenv/bin:/Users/ren/.pyenv/shims:/Users/ren/.elan/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public:/Users/ren/.codex/tmp/arg0/codex-arg07cVjUc:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/ren/.unity/bin:/Users/ren/.local/bin:/Users/ren/.elan/bin:/Users/ren/.antigravity/antigravity/bin:/opt/homebrew/Cellar/node/23.11.0/bin:/Users/ren/google-gcloud-sdk/bin:/Users/ren/.rbenv/shims:/Users/ren/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "LANG": "C.UTF-8"
+  },
+  "started_at_utc": "2026-10-06T04:20:24.718130+00:00",
+  "started": true,
+  "returncode": 1,
+  "timeout": false,
+  "timeout_seconds": 120,
+  "input_inventory": {
+    "path": "runs/r0001/input-inventory.json",
+    "sha256": "a4d2a540bcffb2651bfd1d534096d47330ba637036ca0fe6aac29de0678d03b3",
+    "bytes": 104635
+  },
+  "pid": 7234,
+  "elapsed_seconds": 2.8692397499689832,
+  "ended_at_utc": "2026-10-06T04:20:27.587687+00:00"
+}

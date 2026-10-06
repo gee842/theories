@@ -1,0 +1,11 @@
+'InquiryRelevance.LocalAgreement' does not depend on any axioms
+'InquiryRelevance.QuerySufficient' does not depend on any axioms
+'InquiryRelevance.used_setting_sufficient' does not depend on any axioms
+'InquiryRelevance.off_target_witness' depends on axioms: [propext]
+'InquiryRelevance.query_sufficient_iff_used_setting' depends on axioms: [propext]
+'InquiryRelevance.tables' does not depend on any axioms
+'InquiryRelevance.every_table_listed' depends on axioms: [propext]
+'InquiryRelevance.posterior' does not depend on any axioms
+'InquiryRelevance.posterior_membership' depends on axioms: [propext]
+'InquiryRelevance.posterior_size' does not depend on any axioms
+'InquiryRelevance.either_query_splits_equally' does not depend on any axioms

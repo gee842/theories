@@ -1,0 +1,96 @@
+{
+  "scope": "Owned documentation fragments only; unrelated concurrent edits preserved.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "17ea5d1040b113cd0583c18c586d0117542decf2e53dd266cb661d4b88c8cb2b",
+      "after_sha256": "091302f2dd07dab5269d1cdfafb07564a40fcddc0b7d08f38231d0f006ec1a8b",
+      "old": "# Current theory and research\n\n",
+      "new": "# Current theory and research\n\n**Attainable questions integrated into constructive Lean, 6 October 2026:** [the formal continuation](_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) proves downward closure, same-policy answer combination, actual-leaf continuation composition and the one-packet obstruction to any attainable common refinement of “initial A?” and “initial B?”. The exact answer-function criterion covers arbitrary finite adaptive policies, retained initial targets, noninformative controls and exhausted denials. A fresh 23-module public build passes 307 audits, all empty, retaining all 227 inherited audits; 80 are added declarations, not 80 separate scientific discoveries. All 60 relevant saved one-packet decisions match without rerunning the original apparatus. This closes a supporting mathematical integration; physical reporting, full Python refinement, criterion formation and whole-process ethical grounding retain their separate obligations. Next connect the already acquired applicability/completion mechanisms to changes in which attainable distinction or undertaking remains relevant, preserving real failure branches and actual reached histories.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "6519a7e17a1bb50cc056edb5dc217ef91fbc46dd0d1557059c7665fbc50a7c4b",
+      "after_sha256": "013cf31d421cbd3edbe762284f8e4f034db23b1bfb2b5826ea4423d8e38d7296",
+      "old": "# Generative Existence (生生不息论)\n\n",
+      "new": "# Generative Existence (生生不息论)\n\n**No greatest attainable question, now in Lean:** [the formal integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) carries the existing inquiry constraint into the native generative proof framework. Two individually answerable questions need not have an attainable common refinement; continuation composition works only under its actual reached-state contract. The public 23-module closure has 307 empty dependency audits. The exact one-packet interface preserves consumed access, fixed initial targets and arbitrary finite adaptive inquiry; it does not supply a new learner or decide the ethical priority of a question.\n\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "d4ea933835d4e087c9452ea8ab1cc04f8cf7b763a14a06f3f697a11b0a5edbc9",
+      "after_sha256": "876da21e1b210109c72f06b99b583ed4fc1c5b2a9cd8f2b33c60e047bdd8bbb0",
+      "old": "# Root-foundation review package\n\n",
+      "new": "# Root-foundation review package\n\n**Attainable-question Lean integration:** [result and scope](ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md), [independent review](ATTAINABLE-QUESTIONS-LEAN-REVIEW.md), and [public proof entry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean). The fresh 23-module closure passes 307 empty audits, including 80 added declarations. Exact one-packet attainability and the no-common-refinement obstruction are proved over the existing inquiry semantics; actual-leaf composition preserves progress, prefix conditions and fixed targets. Sixty saved comparison decisions are reconciled without a scientific rerun. Further mathematical completion principles and acquired criterion formation remain separately scoped.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+      "before_sha256": "97ade58b8325359b4c82be12572431371c7bb5a7c75e0264e6731e10a429a0e9",
+      "after_sha256": "43416d14283f8f5fff71276939fc1cc451eabf6e00d676c74961e38c859ced6c",
+      "old": "# When there is no most informative feasible inquiry\n\n",
+      "new": "# When there is no most informative feasible inquiry\n\n**Constructive Lean integration, 6 October 2026:** [the formal continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) now proves the downward-closure, shared-policy, missing-refinement and conditional sequential-composition results, together with the exact one-packet A/B/C answer criterion for arbitrary finite adaptive policies. [GenerativeAttainableQuestionsModel](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean) passes a fresh 23-module / 307-audit build with every dependency report empty. The original apparatus and saved results are unchanged. The coverage table distinguishes these checked results from the remaining hand proofs, physical decoder/restoration obligations and full native correspondence.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+      "before_sha256": "43416d14283f8f5fff71276939fc1cc451eabf6e00d676c74961e38c859ced6c",
+      "after_sha256": "e6d70d7302520254afac59008194722e5e2f9fcb6c256fb0d0a15145a15fd1c5",
+      "old": "The general claims rest on hand proofs, with [independent review]",
+      "new": "The original general claims have hand proofs; the [Lean continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) now mechanically checks the scoped subset identified above. The original [independent review]"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+      "before_sha256": "e6d70d7302520254afac59008194722e5e2f9fcb6c256fb0d0a15145a15fd1c5",
+      "after_sha256": "ce9e1c0e6d36dbff75d032206b3cee1cc457d631bb3f5368e1a7123d6e4cbbd0",
+      "old": "(../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-SOURCES.md). The underlying information ordering",
+      "new": "(../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-SOURCES.md) retain their original scope. The underlying information ordering"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-MATH.md",
+      "before_sha256": "c5df5ab485188662a58d0cc035b9c3d13922e4665872c6e3f438bd6e88dd0008",
+      "after_sha256": "b768c147737afaf71fb9874d50da661fd9d5393de8b12cd923d27e6d76035f52",
+      "old": "# Which questions can one continuing inquiry answer?\n\n",
+      "new": "# Which questions can one continuing inquiry answer?\n\n**Subsequent formal integration:** [the Lean continuation](ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) checks K1, K2 with the stronger no-common-upper obstruction, K3 on the permissive A/B/C one-packet interface, conditional K4 and the shared-policy terminal-agreement part of K5. The 23-module public build has 307 empty audits. The hand arguments below retain their complete statements; K2a, physical restoration, probability and decoder-realization claims are not silently counted as newly formalized.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "0ade3eee4b158545291f4a2ccf6b6a1c5c1d63f427658446b0c086a204f1e85d",
+      "after_sha256": "8a0e435c223d29fc6313fa6607ca24898aadd8474bca5bbabbc12fcd2f4672f1",
+      "old": "# Generative grounding of significance and learning\n\n",
+      "new": "# Generative grounding of significance and learning\n\n**Supporting formal connection, 6 October 2026:** [attainable questions in Lean](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) integrate how inquiry changes subsequent information possibilities into the existing Process/Trace account. Separate attainable answers do not imply an attainable common refinement; the exact one-packet case now has an all-finite-policy proof with no named axiom dependency. Certified continuation at actual reached states supplies the positive combination rule. This constrains criterion formation without installing its desired answer or a reward. The next interface remains acquired continuing dependencies changing which question or undertaking matters, connected to the completed applicability and completion-sensitive mechanisms. Full native correspondence and the whole-process ethical significance of the affected continuations remain explicit; the governing completion conditions are unchanged.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "before_sha256": "7698e528fa4177dc7439144c62097213c499f669ade5d2122899ff7fd285975c",
+      "after_sha256": "f1f6d4fb829a1c30fb91f03458ead437723f1fab576286d451388fb83bf65ce8",
+      "old": "# A Lean-checked realization of the generative core\n\n",
+      "new": "# A Lean-checked realization of the generative core\n\n**Attainable-question public entry, 6 October 2026:** [GenerativeAttainableQuestionsModel](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean) extends the 227-audit finite-inquiry entry with constructive question ordering, actual-leaf composition and the exact one-packet impossibility result. Its [fresh receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/questions-verification.json) passes **23 modules / 307 audits, all empty**, including 80 added declarations. [Integration and interpretation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) keep logical answer certification distinct from installed reporting and native affordability. The separately verified applicability, systems, concern and other entries retain their own scopes and dependency contracts; these overlapping counts are not added together.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "before_sha256": "0d934baae68a4dee9f9a1759d700c057f686d43035ffb59b7292b3f9424ca68d",
+      "after_sha256": "83484c641a4c0ea8daeebc7153024b3adb545d37b86def0ccc008c3564b95c42",
+      "old": "## The unified theorem and its precise force\n",
+      "new": "### Attainable questions within that same inquiry\n\n[The constructive continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) reuses `Policy`, native `After` and the progress/safety contract. Terminal-leaf agreement specifies which question the actual observation path identifies. Coarsening preserves attainability; one shared policy identifies two questions exactly when it identifies their common refinement. Two separately available policies supply no such implication. A missing refinement rules out any attainable common upper question, hence a greatest member in any question family containing that pair.\n\nThe one-packet comparison proves, for every answer function on retained initial labels A/B/C, that attainability is equivalent to `f B = f C ∨ f A = f C`. This covers arbitrary finite adaptive policies, common noninformative controls and depleted denials. Thus A? and B? are separately attainable while their join and C? are not. All source consumption and initial-target distinctions used in that argument are retained. Positive logical attainability in the permissive comparison is not a funded native-controller theorem.\n\nSequential composition is proved by attaching admissible inquiries to the first tree's actual reached leaves. Native progress and prefix conditions continue to hold; fixed-target preservation prevents a changed current question from replacing the initial one. The [public entry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean) passes 307 empty audits, including 80 additions. K2a's finite-family converse, full native refinement, arbitrary physical restoration and criterion formation retain their separate proof or application obligations.\n\n## The unified theorem and its precise force\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "before_sha256": "2fcb00a376a9f554ea86ecccbec862994d76fd7fe557a8d93dfc562e4a4d94bb",
+      "after_sha256": "299b5f2d1b34be23b87be30b268baf3af6225cd8f099df04892a458254adbaf8",
+      "old": "# Claim register for the unified theory\n\n",
+      "new": "# Claim register for the unified theory\n\n**Attainable-question formal continuation:** [the integrated proof](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) establishes constructive coarsening, shared-policy combination, a no-attainable-common-upper obstruction and conditional continuation through actual leaves. The one-packet criterion is exact for arbitrary finite adaptive inquiries at its permissive fixed-target interface. The fresh public closure passes 307 empty audits; 60 saved comparison decisions agree. Full native correspondence, physically retained decoding, criterion formation and ethical warrant are not supplied by this result.\n\n"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "before_sha256": "3342e8598079dc5c01afd4e87ec9931d1fd71dc386d5d6155cc6bff5da174346",
+      "after_sha256": "142f809770f0895f0423204e9f1322bb99e09853f5b9686ce9f27cc39e95d993",
+      "old": "# Lean realization of the generative core\n\n",
+      "new": "# Lean realization of the generative core\n\n**Attainable-question entry:** [GenerativeAttainableQuestionsModel](GenerativeAttainableQuestionsModel.lean) now adds question coarsening, shared-policy combination, actual-leaf continuation and the exact one-packet obstruction. Its [fresh receipt](inquiry-root/sufficiency/questions-verification.json) passes **23 modules / 307 audits, all empty**: 227 unchanged inherited audits and 80 additions. [Scope and reproduction](inquiry-root/sufficiency/README.md#attainable-questions) preserve the permissive comparison, original apparatus and remaining implementation obligations. Older entries below retain their own stated counts and scopes.\n\n"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "before_sha256": "39a2b0cc52136e86abd2bbc36d3c1de34cc86b19ee03a14c545f93494536a4b9",
+      "after_sha256": "3775175800b85bd44b0d752a39683356b7d77101a4986d33957e1b8eb439a942",
+      "old": "## Inputs and limits\n",
+      "new": "## Attainable questions\n\n[AttainableQuestions.lean](AttainableQuestions.lean) reuses the original inquiry syntax and native successor semantics. It proves coarsening, answer combination under one shared policy, the no-common-upper obstruction and continuation composition at actual reached leaves. Question agreement is a logical terminal contract; a physical report or retained decoder needs its own implementation. Existing execution theorems supply actual traces and preservation of every declared prefix condition.\n\n[OnePacketQuestions.lean](OnePacketQuestions.lean) formalizes the existing permissive A/B/C comparison, including arbitrary common controls and distinct exhausted denials. For any fixed-initial-target answer function, an inquiry exists exactly when `f B = f C ∨ f A = f C`. Thus A? and B? are separately answerable, while their common refinement and C? are not. This is a proof over arbitrary finite adaptive policies, not a bounded schedule search. The native source law is unchanged; full costed Python refinement and installed-controller affordability are not claimed.\n\nRun the complete entry from the repository root:\n\n```sh\npython3 experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_questions.py\n```\n\nThe [checker](check_questions.py) pins the immutable 227-audit parent receipt, compiles every project import from frozen source, audits every added theorem/definition/abbreviation and requires all old and new reports to be empty. The [passed receipt](questions-verification.json) records **23 modules and 307 audits**: 227 inherited plus **80 added declarations** (47 theorems and 33 definitions/abbreviations). Sixteen evidence files, including eleven inherited source bindings, are frozen alongside the proof run. Every one of the 60 relevant saved full-belief one-packet decisions agrees with the proved criterion; neither the old graph producer nor the native apparatus is executed. Earlier runs and scientific evidence remain unchanged.\n\n[Integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) and [review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-REVIEW.md) distinguish formalized K1–K4/shared-policy results from the remaining finite-family converse, randomized extension, physical restoration and decoder-realization claims. The result supplies a constraint on acquired criterion formation; it does not complete that formation or the common foundation.\n\n## Inputs and limits\n"
+    }
+  ]
+}

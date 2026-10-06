@@ -1,0 +1,22 @@
+# Formal closure of the acquired-applicability mechanism
+
+6 October 2026. AI-authored response to Ren's question, “done? including formal?” The previous [integration](ACQUIRED-APPLICABILITY-INTEGRATION.md) accepted an implementation, independent executable reconstruction and hand arguments. It explicitly did not include Lean certification. This round closes that distinct obligation for the stated bounded mechanism; it does not change the governing foundation's scope or declare the whole research programme complete.
+
+The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) remains governing. Formal state components describe differentiated relations within one history. Supplied laws, representation choices and physiological or ethical interpretation are not eliminated merely because a proof has an empty axiom audit.
+
+## Acceptance before formal execution
+
+1. **Explicit law and representation.** Specify the transition relation or executable transition function independently of the saved outcomes. A certificate must not simply accept an arbitrary supplied next state or unverified favorable verdict. Explain any projection from the runtime state and what it omits. If events carry charges or external outcomes, their admissibility and effect must be constrained by the declared law.
+2. **Actual chronology.** Retain available fuel, source, actual arrival, expenditure, sensory knowledge, acquired evidence, committed candidates and final-retention status at the scope claimed. An operation cannot consume unavailable support through truncated subtraction; a later arrival cannot fund its earlier preparation. Missing observation, observed zero, failed commitment and failed final retention remain distinct.
+3. **General formal claims.** Check conditional preservation of the actual use relation through faithful acquired updates, conservative ambiguity after one failed positive-class use, qualification of the next selected question, and appropriate completion after a positive acquired receipt. Prove the relevant transition/history invariants and identify which are representation-preservation facts rather than independent explanations of the represented phenomenon.
+4. **Connection to native execution.** Establish constructive witnesses or kernel-checked acceptance of the saved runtime continuations under the new law, with exact charges and causal order where represented. State the direction: acceptance of these finite traces is not, by itself, a universal refinement theorem for every possible Python input. Bind extraction, formal sources, input data and compiler to the receipt.
+5. **Core composition.** Connect the mechanism's history relation to the existing generative `Process`/`Trace` interface. Preserve actual intermediate states. Do not reset support or change the old learner's sensory undertaking in order to join the new result.
+6. **Audits and review.** Use a fresh isolated build with the repository's pinned Lean version. Preserve sources, diagnostics, declaration-level axiom audits and correspondence artifacts. No unfinished proof, unreviewed custom axiom or unchecked native-decision shortcut can count as closure. Audit proof-producing definitions as well as named theorems. Keep the earlier default build and receipts unchanged.
+
+These requirements scale to the claimed mechanism. A truth table alone would formalize only the supplied three-function learning problem. A generic process adapter alone would formalize only the trace interface. Neither separately completes the native consequence-to-selection-to-use join.
+
+## Scope that remains supplied
+
+The original acquisition and earlier formation have their own accepted evidence and trust boundaries. Formalizing this continuation need not independently reimplement every ancestor, but must not claim to have done so. The applicability family, contact, transition law, macro-work charges, receipt calibration and stationary interval remain explicit local premises. Finite correspondence and kernel checking do not establish these laws as universally necessary, their empirical adequacy, perpetual renewal or justified concern.
+
+The wider next derivation should credit this formal closure once accepted. Demanding another controller merely to acknowledge the achieved revision would reopen the wrong question. The substantive further question remains how the admitted relations, access and inquiry rules form or change through consequences beyond the current family.

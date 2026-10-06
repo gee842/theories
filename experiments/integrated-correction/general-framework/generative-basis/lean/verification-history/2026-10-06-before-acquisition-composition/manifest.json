@@ -1,0 +1,108 @@
+{
+  "reason": "Preserve inherited evidence before repairing discovered source/receipt mismatch. Live GenerativeModel had eight earlier declarations while receipt/checker expected three additional OutcomeContinuation wrappers. This snapshot records the mismatch; it is not a passed build of the saved live source.",
+  "files": [
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/check.py",
+      "sha256": "7f672e5dcef013001f5864fb260468521dcb94d1ebe56c6d923b613006c88ba1"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification.json",
+      "sha256": "173ed8e77a9930e0c209e7ec94e00fb01a7c3e8ffd9bb9fb8ecfc37238ca31d9"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/lean-toolchain",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/lean-toolchain",
+      "sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/BoundaryModels.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/Depletion.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/Depletion.txt",
+      "sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicClassification.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicConsequences.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicSymmetry.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/DynamicUnderdetermination.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/EthicalOrientation.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GeneratedPaths.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GeneratedSelf.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeCore.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/GenerativeModel.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/GenerativeModel.txt",
+      "sha256": "3d7de52976f444b18758e5f9b39206e12752f6120251cd43e29d85e1edd2868d"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/HistoryRealization.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/OutcomeContinuation.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/ProductTower.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification/RootRealization.txt",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/verification/RootRealization.txt",
+      "sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "original": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-acquisition-composition/repair-attempt-verification.json",
+      "sha256": "764e9cbf08a9516b1779dc7d9e92aa8ad9b37f6594a301f74dc0d820dcac0c08",
+      "note": "Successful intermediate 15-module/179-declaration reconstruction, later superseded when the shared entry was externally restored again."
+    }
+  ],
+  "resolution": "Shared GenerativeModel was left at the live earlier c9752ea5 source after a second external restore. The three outcome wrapper names were reconnected in the uniquely owned GenerativeAcquisitionModel.lean instead. Default checker source remained unchanged and was rerun on the coherent live 15-module/176-declaration set. Original 84909d7d wrapper source bytes were unavailable; new wrapper implementations are scoped reconstructions from preserved OutcomeContinuation, not asserted byte-for-byte recoveries.",
+  "final_resolution": "Parallel work supplied a coherent separate GenerativeOutcomeModel.lean with the three original outcome API connections and a fresh 16-module/179-declaration structural receipt. GenerativeAcquisitionModel imports that entry and AcquiredPerspective, with only its own three acquisition theorems. Temporary reconstructed wrappers were removed; shared GenerativeModel remains byte-identical to c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b. The final acquisition checker pins this coherent live baseline. Earlier mismatch and intermediate repair receipts are retained as history, not claimed current verification."
+}

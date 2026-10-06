@@ -1,0 +1,112 @@
+
+letter Proc Natl Acad Sci U S A. 2021 Sep 1;118(36):e2105928118. doi: 10.1073/pnas.2105928118
+
+
+Search in PMC
+
+Search in PubMed
+
+View in NLM Catalog
+
+Add to search
+
+
+Missing evidence for memory in the monocellular slime mold
+
+H Reiber
+H Reiber
+
+aCSF and Complexity Studies, Georg August University, 37073 Goettingen, Germany;
+Find articles by H Reiber
+
+
+a,1, A F Nogueira Júnior
+A F Nogueira Júnior
+
+bInstitute of Agricultural Sciences, University of Viçosa–Campus Florestal (UFV–Florestal), Florestal - MG, 35690-000, Brazil
+Find articles by A F Nogueira Júnior
+
+
+b
+
+
+Author information
+
+Article notes
+
+Copyright and License information
+
+
+
+
+
+aCSF and Complexity Studies, Georg August University, 37073 Goettingen, Germany;
+
+bInstitute of Agricultural Sciences, University of Viçosa–Campus Florestal (UFV–Florestal), Florestal - MG, 35690-000, Brazil
+
+
+1To whom correspondence may be addressed. Email: CSF.LCR@horeiber.de.
+
+
+Author contributions: H.R. and A.F.N.J. wrote the paper.
+
+
+
+Issue date 2021 Sep 7.
+
+
+Published under the PNAS license.
+
+PMC Copyright notice
+
+
+PMCID: PMC8433532  PMID: 34470820
+
+See the article "Encoding memory in tube diameter hierarchy of living flow network", e2007815118.
+
+The well-conducted study of chemotaxis in the slime mold Physarum polycephalum (1) shows how its mold tube network aligns and reorganizes tube diameters in response to glucose and leucine. The mathematical approach gives evidence for a flow-based signal propagation as the cause of tube diameter growth or shrinkage.
+
+We question the conclusions about a memory function in the slime mold, missing an experimental reasoning for statements such as “encoding of the location of a nutrition stimulus” or “the key to why tube hierarchy represents memory and impacts organism behavior is the flow.” In fact, the authors report a classic cascade of signal reception and processing with immediate response, seen as a self-organizing, calcium-dependent mechanism in many other monocytes (2, 3). As for many species, e.g. moving prokaryotes (4), the authors are unable to show evidence of either an experience-based facilitated response or a molecular trace of learning for the stationary slime mold. The authors could have wanted to propose a kind of embodied learning, but what does their “living flow network” mean in terms of a self-organizing complex system (3) with the ability of learning and retrieval? The authors do not give any clue.
+
+However, from a current ecological perspective, we find the concept that plants and lower organisms can have experience-based behavior change very important. In plant “priming” (5) as a kind of memory, biochemical traces of learning such as an accumulation of proteins, transcription factors, or epigenetic methylation are discussed (5, 6). Undoubtedly, it is an important goal to find mechanisms of decentralized learning in nonneuronal organisms (7). However, if we adopt a term such as “memory” from neuronal learning in a centralized brain (8, 9), even if used only as a metaphor, we need to consider not only different meanings but different biological mechanisms. Animal memories operate on time scales ranging from 10 s to lifelong recall with different biophysical and biochemical learning processes (8, 9). Fast electrical signal processing is already found in some stationary organisms such as fungal mycelium, but did they need learning/remembering experiences to survive? What advantage does the stationary slime mold have in “encoding” a particular food source, such as bees (9), when only chemotactic reorientation to a different, new location would be required? The nature of biological memory with incomplete awareness and situational adaptive recall (10) is understood from its survival function, but not as archiving the past with the possibility of accurate “readout” as the authors call it. This term comes from computer science and refers to error-free internal representations, a major source of misunderstanding in biological memory research.
+
+The authors themselves describe the deficits of their experimental conditions as not being able to show a learning and retrieval process. We fully agree with this. In our opinion, an investigation of learning/recall processes in stationary organisms, as opposed to an individual memory approach in moving species, must additionally take into account natural contexts and networks in order to detect possible permanent behavioral changes of the entire ecosystem involved.
+
+Footnotes
+
+The authors declare no competing interest.
+References
+
+
+
+1.Kramar M., Alim K., Encoding memory in tube diameter hierarchy of living flow network. Proc. Natl. Acad. Sci. U.S.A. 118, e2007815118 (2021). [DOI] [PMC free article] [PubMed] [Google Scholar]
+
+
+2.Goodwin B. C., Trainor L. E. H., Tip and whorl morphogenesis in Acetabularia by calcium-regulated strain fields. J. Theor. Biol. 117, 79–106 (1985). [Google Scholar]
+
+
+3.Reiber H., “Komplexität und Selbstorganisation stabiler biologischer Gestalt in Epigenese und Evolution – Von der genozentrischen zur phänozentrischen Biologie” in Biologie und Gesellschaft. Verhandlungen zur Geschichte und Theorie der Biologie, Kaasch M., Kaasch J., Eds. (Verlag für Wissenschaft und Bildung, Berlin, 2012), vol. 17, pp. 37–80. [Google Scholar]
+
+
+4.Sourjik V., Wingreen N. S., Responding to chemical gradients: Bacterial chemotaxis. Curr. Opin. Cell Biol. 24, 262–268 (2012). [DOI] [PMC free article] [PubMed] [Google Scholar]
+
+
+5.Bruce T. J. A., Matthes M. C., Napier J. A., Pickett J. A., Stressful “memories” of plants: Evidence and possible mechanisms. Plant Sci. 173, 603–608 (2007). [Google Scholar]
+
+
+6.Reiber H., Epigenesis and epigenetics—Understanding chronic diseases as a selforganizing stable phenotype. Neurol. Psychiatry Brain Res. 18, 79–81 (2012). [Google Scholar]
+
+
+7.Reid C. R., Latty T., Dussutour A., Beekman M., Slime mold uses an externalized spatial “memory” to navigate in complex environments. Proc. Natl. Acad. Sci. U.S.A. 109, 17490–17494 (2012). [DOI] [PMC free article] [PubMed] [Google Scholar]
+
+
+8.Rose S., The Making of Memory: From Molecules to Mind (Vintage, 2003). [Google Scholar]
+
+
+9.Menzel R., et al., Honey bees navigate according to a map-like spatial memory. Proc. Natl. Acad. Sci. U.S.A. 102, 3040–3045 (2005). [DOI] [PMC free article] [PubMed] [Google Scholar]
+
+
+10.Dudai Y., Neurobiology. The shaky trace. Nature 406, 686–687 (2000). [DOI] [PubMed] [Google Scholar]
+
+
+Articles from Proceedings of the National Academy of Sciences of the United States of America are provided here courtesy of National Academy of Sciences

@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "preparation_sha256": "579a3803aa48a5c10aa663593392be9802e11b75eb221c8e52be12f4c5c5eb4e",
+  "authority": {
+    "epoch": 0,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "authority_triggered": false,
+  "attempts": 17,
+  "event_seq": 67,
+  "event_head": "9492ef97ba21159ef6fc1a39bd4e9bd3336d62ada271481d7843f1d01e4f37d7",
+  "requests": {
+    "first": {
+      "request_sha256": "e3d21e8c4b80b79a3bb6b962d7b190e52fff27da637f6830fbe8aa71fa819328",
+      "response": {
+        "path": "attempts/a0001/response.json",
+        "sha256": "2a8bfcdcefe3d12e8c29e486b54fc1061bf828139ab87fd91001e55afab1f00e",
+        "bytes": 1185
+      }
+    },
+    "read-2": {
+      "request_sha256": "550ae65f88f8b6309620ccc7781eb0fa839abb1acbeb4919ec2512854ae5f4bf",
+      "response": {
+        "path": "attempts/a0002/response.json",
+        "sha256": "71f78dc986c4aaca58a3281aaf81990351bda9f1cf9f34d2955a91caca17c1bc",
+        "bytes": 1186
+      }
+    },
+    "read-3": {
+      "request_sha256": "cf8b72a3e67cc663f7cb323f03c78d1a980ede7331692f5253315ea77785c666",
+      "response": {
+        "path": "attempts/a0003/response.json",
+        "sha256": "8271edda06b55a9584b50fc8f246559339783b333f1045687fd8e07212fd4139",
+        "bytes": 1186
+      }
+    },
+    "read-4": {
+      "request_sha256": "bffd0fc85dd4fbfa1df9e88918c46dd6795a21deb4dc28b8a4f65933192fdbd8",
+      "response": {
+        "path": "attempts/a0004/response.json",
+        "sha256": "54f627c79d61170c104aac487e2fc85ecba7d4bb4d06ad9e06b1841cec04d0bb",
+        "bytes": 1186
+      }
+    },
+    "read-5": {
+      "request_sha256": "9e49ff5cba74b1fb091bf0fdbe764005a5575c1abf44a237018076a014d0fc8b",
+      "response": {
+        "path": "attempts/a0005/response.json",
+        "sha256": "8eea80cee5aab94998125e492ab22d7d9c92f3aa75b38ede46f70a4c29bf44b0",
+        "bytes": 1186
+      }
+    },
+    "read-6": {
+      "request_sha256": "05da6cedf020b26eb6627a42cefcf73be3861ce05ac2912219e6ccc808ccb366",
+      "response": {
+        "path": "attempts/a0006/response.json",
+        "sha256": "3b3b9333e675156be2abb51a778c63461bbdcf8574cc8376ba4115a81d7b2aca",
+        "bytes": 1186
+      }
+    },
+    "read-7": {
+      "request_sha256": "5bc736ae36f1e0d5d7bd7c88c51a848223cf438233748721a7b1e123e105fb55",
+      "response": {
+        "path": "attempts/a0007/response.json",
+        "sha256": "15400f15ecf224de01eb10c82a0785cb36a1bd781b50948e3ce5424374cc37c1",
+        "bytes": 1186
+      }
+    },
+    "read-8": {
+      "request_sha256": "add459f6e74e04f8918310142d43071fb6ab6c2a23561d22b44b72094d2cc65b",
+      "response": {
+        "path": "attempts/a0008/response.json",
+        "sha256": "7f836b8d777bed2073dc1ced536360700760af094f80f7e01dfb3eded4cf498a",
+        "bytes": 1186
+      }
+    },
+    "read-9": {
+      "request_sha256": "9cca6522e28407c835cf9d3b972bc43d06b93f8ca137085d5935911a03d89cbe",
+      "response": {
+        "path": "attempts/a0009/response.json",
+        "sha256": "91e0ea72c9925cb12a493fa143327024273918dc02c144b34af03090eb7440c9",
+        "bytes": 1186
+      }
+    },
+    "read-10": {
+      "request_sha256": "c71544a2a4881c26c130408809badb5308187e89f0d2a80027f990d9fded485a",
+      "response": {
+        "path": "attempts/a0010/response.json",
+        "sha256": "3062c5905164a21467280310b3f2d9dd6ec5ac8374946c562da55cc234eb63d6",
+        "bytes": 1187
+      }
+    },
+    "read-11": {
+      "request_sha256": "c470861863c05d8c9b1b3174194dbc0d7dc0e6e48d402e83796f4453b9734a8a",
+      "response": {
+        "path": "attempts/a0011/response.json",
+        "sha256": "7b54709e556c7a679f47eaca309c3148325d11db8489e9751c7651e90c90f2f5",
+        "bytes": 1187
+      }
+    },
+    "read-12": {
+      "request_sha256": "df7fde01ab18dddd7afffd6642d899893e7707539452c8af7b241208f5c03b80",
+      "response": {
+        "path": "attempts/a0012/response.json",
+        "sha256": "e048075e8ff0b5e0035f15af962ee05ec69a2e39aab3d2e228a32d6971a4ae26",
+        "bytes": 1187
+      }
+    },
+    "read-13": {
+      "request_sha256": "624ae0b7ae3649d7cb1ea345e4ba7e16260a8a85e28e8f6eb952f3c661707e1e",
+      "response": {
+        "path": "attempts/a0013/response.json",
+        "sha256": "141b73c68bd903abfa36b6d4d8a1ded51e3d65482d116a07df040a1c21fc2166",
+        "bytes": 1187
+      }
+    },
+    "read-14": {
+      "request_sha256": "caad18f7c5ba240a3deb08e8ac380c71bab6952ed6d6d78ba5966c0919b1263f",
+      "response": {
+        "path": "attempts/a0014/response.json",
+        "sha256": "b775bac0fd3b6dc77ec47f29e590396b5c13ab2e057f1bab3115407285fdb730",
+        "bytes": 1187
+      }
+    },
+    "read-15": {
+      "request_sha256": "3a250c0edefb322bbbaad91c249273a91f93da7b515d1d63fe42297d4add1f36",
+      "response": {
+        "path": "attempts/a0015/response.json",
+        "sha256": "353d0fae3e248a81afe150848f23ed56519405f719ca800be4c1a8f4783c0983",
+        "bytes": 1187
+      }
+    },
+    "read-16": {
+      "request_sha256": "cd7099a1d92bc51ada8bbebc5a09c300e3141f7e309006f2a1649becdd3b677b",
+      "response": {
+        "path": "attempts/a0016/response.json",
+        "sha256": "47fa91e8f7bf0bed7ed8298d8fbdc1295e1169f7050d575a9271c1005a8c52d6",
+        "bytes": 1187
+      }
+    }
+  },
+  "versions": {
+    "v0": {
+      "id": "v0",
+      "tree": "versions/v0/tree",
+      "origin": "preserved_historical_artifacts",
+      "production_run": null,
+      "artifacts": {
+        "replay.py": {
+          "path": "versions/v0/tree/experiments/agentdojo-evidence-boundary/replay.py",
+          "sha256": "e304e6ea5b89a845bf2868b931bd99df19c35fd5723ed334782bbcd8cb5b31f7",
+          "bytes": 23158
+        },
+        "replay-results.json": {
+          "path": "versions/v0/tree/experiments/agentdojo-evidence-boundary/replay-results.json",
+          "sha256": "be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4",
+          "bytes": 5120563
+        },
+        "replay-receipt.json": {
+          "path": "versions/v0/tree/experiments/agentdojo-evidence-boundary/replay-receipt.json",
+          "sha256": "d85f375f140a89ea672fb930f4739766b6862f81911902ad2f00ed791606fd9b",
+          "bytes": 1015
+        }
+      },
+      "inventory": {
+        "path": "versions/v0/inventory.json",
+        "sha256": "a4d2a540bcffb2651bfd1d534096d47330ba637036ca0fe6aac29de0678d03b3",
+        "bytes": 104635
+      }
+    }
+  },
+  "candidates": {},
+  "checks": {},
+  "runs": [],
+  "deliveries": [],
+  "finished": false
+}

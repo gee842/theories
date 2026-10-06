@@ -1,0 +1,7 @@
+{
+  "request_id": "audit-w01-10",
+  "operation": "finish",
+  "diagnosis": "Complete independent v0 audit delivered as deliveries/r0002-diagnosis-v0.json: 320 traces, 12,833 comparisons and 335 mismatches. The first-match visible-counterparty defect and missing candidate lists are established. The initial process abort was followed by a complete usable diagnosis; no completed v0 check was repeated.",
+  "repair": "Not staged, executed, verified or published. Current authority at epoch 1 excludes stage, replay and publish. Current local version remains v0.",
+  "explanation": "Final analysis note delivered as deliveries/a0009-analysis-note.md. It documents supported results, mismatch counts, five missing-response coverage gaps, historical meanings, actual observed effects and remaining work. Repair requires restored authority, actual production from the supplied recipe, independent passing verification of the new output and publication against the expected predecessor. Original data and versions remain preserved; actual dinner companionship remains unidentified."
+}

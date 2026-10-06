@@ -1,0 +1,39 @@
+'ConsequenceInquiry.viewBody' does not depend on any axioms
+'ConsequenceInquiry.view' does not depend on any axioms
+'ConsequenceInquiry.view_preserves_source' does not depend on any axioms
+'ConsequenceInquiry.view_preserves_stock_total' depends on axioms: [propext]
+'ConsequenceInquiry.advance_preserves_stocks_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.advance_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.viewBody_account' does not depend on any axioms
+'ConsequenceInquiry.viewBody_paid' does not depend on any axioms
+'ConsequenceInquiry.view_advance_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.step_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.view_step_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.run_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.view_run_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.equal_view_runs' depends on axioms: [propext]
+'ConsequenceInquiry.feedbackRun' depends on axioms: [propext]
+'ConsequenceInquiry.feedbackView' does not depend on any axioms
+'ConsequenceInquiry.feedback_indistinguishable' depends on axioms: [propext]
+'ConsequenceInquirySaved.ordinaryConfig' does not depend on any axioms
+'ConsequenceInquirySaved.ordinary' does not depend on any axioms
+'ConsequenceInquirySaved.calibrationConfig' does not depend on any axioms
+'ConsequenceInquirySaved.calibration' does not depend on any axioms
+'ConsequenceInquirySaved.falseContactConfig' does not depend on any axioms
+'ConsequenceInquirySaved.falseContact' does not depend on any axioms
+'ConsequenceInquirySaved.alternateWord' does not depend on any axioms
+'ConsequenceInquirySaved.ordinaryAlternate' does not depend on any axioms
+'ConsequenceInquirySaved.calibrationAlternate' does not depend on any axioms
+'ConsequenceInquirySaved.falseContactAlternate' does not depend on any axioms
+'ConsequenceInquirySaved.ordinary_source_zero' does not depend on any axioms
+'ConsequenceInquirySaved.calibration_source_zero' does not depend on any axioms
+'ConsequenceInquirySaved.falseContact_source_zero' does not depend on any axioms
+'ConsequenceInquirySaved.ordinary_calibration_same_view' does not depend on any axioms
+'ConsequenceInquirySaved.distinct_actual_outcomes' does not depend on any axioms
+'ConsequenceInquirySaved.same_original_account' does not depend on any axioms
+'ConsequenceInquirySaved.all_words_preserve_ambiguity' depends on axioms: [propext]
+'ConsequenceInquirySaved.no_correct_view_decoder' does not depend on any axioms
+'ConsequenceInquirySaved.ordinary_alternate_correspondence' depends on axioms: [propext]
+'ConsequenceInquirySaved.calibration_alternate_correspondence' depends on axioms: [propext]
+'ConsequenceInquirySaved.falseContact_alternate_correspondence' depends on axioms: [propext]
+'ConsequenceInquirySaved.false_contact_still_separated' does not depend on any axioms

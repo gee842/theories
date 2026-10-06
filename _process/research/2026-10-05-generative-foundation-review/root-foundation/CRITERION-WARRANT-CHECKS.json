@@ -1,0 +1,424 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "scope": "Owned-fragment recovery, local link/anchor checks, preserved original hash, unchanged Lean source hashes and arithmetic on saved record; no fresh scientific run or Lean compilation.",
+  "checks": [
+    {
+      "kind": "owned-edit-preservation",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "RESEARCH.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": false,
+      "unrelated_concurrent_change": true
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "owned-edit-preservation",
+      "path": "sources/SOURCES.md",
+      "owned_fragment_present": true,
+      "before_hash_valid": true,
+      "inverse_matches_before": true,
+      "unrelated_concurrent_change": false
+    },
+    {
+      "kind": "agent-append",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-ARGUMENT.md",
+      "inverse_before_hash": true
+    },
+    {
+      "kind": "agent-append",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "inverse_before_hash": true
+    },
+    {
+      "kind": "agent-append",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+      "inverse_before_hash": true
+    },
+    {
+      "kind": "saved-control-source-hash",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/inquiry-revision/results.json.gz",
+      "valid": true
+    },
+    {
+      "kind": "saved-control-source-hash",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/inquiry-revision/reporting.json",
+      "valid": true
+    },
+    {
+      "kind": "saved-control-source-hash",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/inquiry-revision/model.py",
+      "valid": true
+    },
+    {
+      "kind": "saved-control-source-hash",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/model.py",
+      "valid": true
+    },
+    {
+      "kind": "saved-control-and-arithmetic",
+      "record": "enumeration[113]",
+      "score_if_valid_revised_entrance": 70,
+      "threshold": 64,
+      "declared_total_cost": 13,
+      "actual_revised": false,
+      "scope": "Inspected saved output and recalculated arithmetic; no alternative history executed."
+    },
+    {
+      "kind": "unchanged-lean-source",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "valid": true
+    },
+    {
+      "kind": "unchanged-lean-source",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "valid": true
+    },
+    {
+      "kind": "source-original",
+      "path": "sources/37-ethical-minimum-primary-2026-10-06/assistance-jurisdiction/adams-in-defense-of-exclusionary-reasons-author-manuscript.pdf",
+      "hash_and_size_valid": true
+    }
+  ],
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md",
+      "target": "../../../../sources/37-ethical-minimum-primary-2026-10-06/assistance-jurisdiction/README.md",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md",
+      "target": "WARRANT-OF-CONCERN-REVIEW.md#6-one-permitted-award-outcome-different-grounds-of-selection",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md",
+      "target": "WARRANT-OF-CONCERN-ARGUMENT.md#6-a-fixed-award-and-the-manner-of-carrying-it-out",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+      "target": "WARRANT-OF-CONCERN-REVIEW.md#6-one-permitted-award-outcome-different-grounds-of-selection",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+      "target": "WARRANT-OF-CONCERN-ARGUMENT.md#6-a-fixed-award-and-the-manner-of-carrying-it-out",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md#the-interface",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+      "target": "INQUIRY-REVISION-APPLICATION.md#7-a-supported-response-below-the-installed-revision-threshold",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+      "target": "CRITERION-WARRANT-EDITS.json",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+      "target": "CRITERION-WARRANT-CHECKS.json",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md#6-one-permitted-award-outcome-different-grounds-of-selection",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-ARGUMENT.md#6-a-fixed-award-and-the-manner-of-carrying-it-out",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md#the-interface",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md#7-a-supported-response-below-the-installed-revision-threshold",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md#7-a-supported-response-below-the-installed-revision-threshold",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md#6-one-permitted-award-outcome-different-grounds-of-selection",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#permission-basis-and-access",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "INQUIRY-REVISION-APPLICATION.md#7-a-supported-response-below-the-installed-revision-threshold",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WARRANT-OF-CONCERN-ARGUMENT.md#6-a-fixed-award-and-the-manner-of-carrying-it-out",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WARRANT-OF-CONCERN-REVIEW.md#6-one-permitted-award-outcome-different-grounds-of-selection",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "37-ethical-minimum-primary-2026-10-06/assistance-jurisdiction/README.md",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md#6-one-permitted-award-outcome-different-grounds-of-selection",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-ARGUMENT.md",
+      "target": "ASSISTANCE-JURISDICTION-SOURCES.md#1-adams-an-exclusion-can-affect-justification-itself",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-ARGUMENT.md",
+      "target": "PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "ASSISTANCE-JURISDICTION-COUNTERREVIEW.md",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "ASSISTANCE-JURISDICTION-SOURCES.md#1-adams-an-exclusion-can-affect-justification-itself",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "ASSISTANCE-JURISDICTION-SOURCES.md#6-access-preservation-and-review-receipt",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "development/WARRANT-OF-CONCERN-OPTION-REVIEW-EDIT.json",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+      "target": "WARRANT-OF-CONCERN-ARGUMENT.md#6-a-fixed-award-and-the-manner-of-carrying-it-out",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/inquiry-revision/results.json.gz",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/model.py",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+      "target": "WARRANT-OF-CONCERN-INTEGRATION.md",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+      "target": "development/INQUIRY-REVISION-COVERAGE-APPENDIX.json",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/inquiry-revision/reporting.json",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/inquiry-revision/model.py",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "sources/37-ethical-minimum-primary-2026-10-06/assistance-jurisdiction/README.md",
+      "target": "adams-in-defense-of-exclusionary-reasons-author-manuscript.pdf",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "sources/37-ethical-minimum-primary-2026-10-06/assistance-jurisdiction/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md",
+      "file_exists": true,
+      "anchor_valid": true
+    },
+    {
+      "from": "sources/37-ethical-minimum-primary-2026-10-06/assistance-jurisdiction/README.md",
+      "target": "manifest.json",
+      "file_exists": true,
+      "anchor_valid": true
+    }
+  ],
+  "local_link_count": 44,
+  "unrelated_concurrent_changes_preserved": [
+    "RESEARCH.md"
+  ]
+}

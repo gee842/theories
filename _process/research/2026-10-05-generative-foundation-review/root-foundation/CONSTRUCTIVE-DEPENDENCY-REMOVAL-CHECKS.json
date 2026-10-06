@@ -1,0 +1,1341 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T08:28:13.298288+00:00",
+  "scope": "Saved-evidence and owned-document reconciliation, not a new compiler or scientific run.",
+  "current_builds": [
+    [
+      16,
+      195
+    ],
+    [
+      18,
+      212
+    ],
+    [
+      20,
+      227
+    ]
+  ],
+  "every_current_audited_dependency_empty": true,
+  "archive_files": 60,
+  "historical_replay": {
+    "modules": 31,
+    "audits": 400,
+    "logs_preserved": 31
+  },
+  "owned_fragments": 17,
+  "links_checked": 66,
+  "hash_comparisons": 261,
+  "hashes": [
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/check.py",
+      "sha256": "04caf675cbfaaa9fe4839c876d08fb1ab1f409b20231f8d2c7d7b4938626af8c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/Depletion.txt",
+      "sha256": "2e14c5291bcd4c020c329f10cf29d7771d129d2758b87d960c03e56adab84679"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/RootRealization.txt",
+      "sha256": "49dedd7571781d42c7772ec6b97ff5357501c42f376b7c0cef4ab7623eedffda"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/sources/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check.py",
+      "sha256": "163340812cc60f6ed1f6dfa47f09bcbb97d8795cda7df44abc00b22b5f449b02"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/Depletion.txt",
+      "sha256": "2e14c5291bcd4c020c329f10cf29d7771d129d2758b87d960c03e56adab84679"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/RootRealization.txt",
+      "sha256": "49dedd7571781d42c7772ec6b97ff5357501c42f376b7c0cef4ab7623eedffda"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/InquirySufficiency.txt",
+      "sha256": "34c3b77a268784c2e82a9b368559c1a5ac2ee7c1f32f776b6d03110dbeb4ddf0"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/sources/GenerativeInquirySufficiencyModel.lean",
+      "sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/GenerativeInquirySufficiencyModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-runs/1791274297069388000/receipt.json",
+      "sha256": "362c4eda65deeb23222ed432ef4920d0525da9c6e0b7f101ec71f3e42fff350a"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/baseline-verification.json",
+      "sha256": "362c4eda65deeb23222ed432ef4920d0525da9c6e0b7f101ec71f3e42fff350a"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_finite.py",
+      "sha256": "575efdbc59a2e2c9c5a7e76aef8a1c1413b4f7b192d80829d6b0cd59160c9b6e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/Depletion.lean",
+      "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/Depletion.txt",
+      "sha256": "2e14c5291bcd4c020c329f10cf29d7771d129d2758b87d960c03e56adab84679"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/RootRealization.lean",
+      "sha256": "584af3a49ae9b9ce8e5a0b184eab9412376628e2346fd36f45f672a71794b524"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/RootRealization.txt",
+      "sha256": "49dedd7571781d42c7772ec6b97ff5357501c42f376b7c0cef4ab7623eedffda"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/InquirySufficiency.txt",
+      "sha256": "34c3b77a268784c2e82a9b368559c1a5ac2ee7c1f32f776b6d03110dbeb4ddf0"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FiniteInquiryClassification.lean",
+      "sha256": "1a0613f734ccdd432656770d6d73d7ee7db4b119f57b379ebe8ff7f623054375"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/FiniteInquiryClassification.lean",
+      "sha256": "1a0613f734ccdd432656770d6d73d7ee7db4b119f57b379ebe8ff7f623054375"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/FiniteInquiryClassification.txt",
+      "sha256": "c0dc15bbfd009fb156b81e8dfe822ff83952f625ed8d30dde421e6b6d42098bd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean",
+      "sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/GenerativeInquirySufficiencyModel.lean",
+      "sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/GenerativeInquirySufficiencyModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean",
+      "sha256": "23a987f6c021df07456bd8b9bb0b5a5a99855144b54cfee06ce8207be33a0b20"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/sources/GenerativeFiniteInquiryModel.lean",
+      "sha256": "23a987f6c021df07456bd8b9bb0b5a5a99855144b54cfee06ce8207be33a0b20"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/GenerativeFiniteInquiryModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/runs/1791274724854453000/receipt.json",
+      "sha256": "5b95908a98c1b33ad9cbfaab5dbc00788c5c92e40ef8e778a3c0a2af0ff419bd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/baseline-verification.json",
+      "sha256": "5b95908a98c1b33ad9cbfaab5dbc00788c5c92e40ef8e778a3c0a2af0ff419bd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/manifest.json",
+      "sha256": "269635cef5f1fab71dd4d375c4a4fa93bc9b33a41bbffc1656fca00b9a6d5764"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/Depletion.lean",
+      "sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/Depletion.txt",
+      "sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/RootRealization.lean",
+      "sha256": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/RootRealization.txt",
+      "sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/logs/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/Depletion.txt",
+      "sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/RootRealization.txt",
+      "sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/InquirySufficiency.txt",
+      "sha256": "34c3b77a268784c2e82a9b368559c1a5ac2ee7c1f32f776b6d03110dbeb4ddf0"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sources/GenerativeInquirySufficiencyModel.lean",
+      "sha256": "56b84fd3404017285aa4474f11fb9065c848032147efb758ba01530199b4a0ef"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/logs/GenerativeInquirySufficiencyModel.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/check.py",
+      "sha256": "5b0db4bedefca5aac2cb141bcfc6c4142ebed31d01c0b6d6c24be0c3def50a3d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/verification.json",
+      "sha256": "0e446764280518fc43fa040f4325789da2899ebaf8ae7e0493fa3ac42c64e665"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/default/README.md",
+      "sha256": "25eb6ee19b262c9a0ed16372e1255797e89846dbc422d48ecfb4c8097d2421c6"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/check.py",
+      "sha256": "633896eee9c68b9a9e8468b9078c5fca49e90eca378864d4420f2d0c58010910"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/verification.json",
+      "sha256": "37f4dabf0d66841d4b9f2615b6ef4dee012c6028cdf77e7bcdcd08d92851ed25"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/README.md",
+      "sha256": "15e43f378a05525945932fa2a10a58c0091218002c21f44917c9717f70e63b44"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/sufficiency/DEVELOPMENT.md",
+      "sha256": "f0f1cdfd59478ade58a1edff87835bbbd42b93369dd3df7d9e5bbe143be84164"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/lean-toolchain",
+      "sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/BoundaryModels.txt",
+      "sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/ProductTower.txt",
+      "sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/FormedSelection.txt",
+      "sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeClosure.txt",
+      "sha256": "06516b35852c7eead00c1e185cc1820b7c90f5ca9197b148c993b10064be50db"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/Depletion.txt",
+      "sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/RootRealization.txt",
+      "sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/DynamicUnderdetermination.txt",
+      "sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GeneratedPaths.txt",
+      "sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/HistoryRealization.txt",
+      "sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/OutcomeContinuation.txt",
+      "sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/SelectorRevision.txt",
+      "sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/NondualCore.txt",
+      "sha256": "23f0c958ea32e0c0840223d664ffc822bbbca2bc7798dedb10c1585bd22683fd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/CoreTreeRearticulation.txt",
+      "sha256": "287ac78bbdb015d81b136ea81a56d5120641f8b7477bee221fbae82fc0ffb4b0"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/DynamicSymmetry.txt",
+      "sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/UpdaterFormation.txt",
+      "sha256": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/InquiryFamilies.txt",
+      "sha256": "e4b5695c35ae43d6ee671116bcf543724ca1e795b22e9a5c9f2d1ba1d4fcadec"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/DynamicConsequences.txt",
+      "sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/PredictionAction.txt",
+      "sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/DynamicClassification.txt",
+      "sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GeneratedSelf.txt",
+      "sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/EthicalOrientation.txt",
+      "sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/AcquiredPredictionRecord.txt",
+      "sha256": "c2beec8650303789fb86d1914a20e89a892408124af5b780a258e2604de8f195"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/ReceiptIdentification.txt",
+      "sha256": "d4bbab356025f1797868f48108fc4a4acf1be3eeed2440b963f0f0d2291a3c11"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeEpisode.txt",
+      "sha256": "8ebe8a685eaf5cae66e11a87fe503d78382c6d4066cb6fedebd8bcb6b5a2e516"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeModel.txt",
+      "sha256": "3bf8a416db44d77a5de4d5188bf3af6f0dcad48a6a0b9b8ce66653bf541d2f8d"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/ReceiptRevisionBoundary.txt",
+      "sha256": "eef1667751c6a5731edfd915940b580c240f8793b02e27a5a9b1ce322eeaf03a"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeOutcomeModel.txt",
+      "sha256": "42ee9db54ea181621fac597d7c04898fc532060ecbbe27fa810c163c2f3612cd"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeReceiptModel.txt",
+      "sha256": "891fc35988b2549a300035d93dc2c241b556d3248ad2855756665b65c433f7da"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeNondualModel.txt",
+      "sha256": "d620d6ee41172889dc4b68788e81c4d677de0b3598a87060f7fd1375f1ca84eb"
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/legacy-replays/1791275071482105000-core-tree/logs/GenerativeCoreTreeModel.txt",
+      "sha256": "7f57285a8494e43642dbc767e1ce22ec82588b2ca1ad1c00a66a5251307e48fe"
+    }
+  ],
+  "links": [
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md#historical-replay"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeInquirySufficiencyModel.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FiniteInquiryClassification.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "GenerativeFiniteInquiryModel.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "inquiry-root/sufficiency/finite-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "inquiry-root/sufficiency/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "#historical-replay"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "GenerativeInquirySufficiencyModel.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "inquiry-root/sufficiency/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "inquiry-root/sufficiency/verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "verification-history/2026-10-06-before-axiom-removal/manifest.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "target": "legacy-replays/1791275071482105000-core-tree/replay.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "FiniteInquiryClassification.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "FiniteInquiryClassification.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "../../GenerativeFiniteInquiryModel.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "../../verification-history/2026-10-06-before-axiom-removal/manifest.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "DEVELOPMENT.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "check_finite.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "target": "finite-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+      "target": "CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/manifest.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FiniteInquiryClassification.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "CONSTRUCTIVE-DEPENDENCY-REMOVAL-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "CONSTRUCTIVE-DEPENDENCY-REMOVAL-CHECK.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/replay_before_axiom_removal.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FiniteInquiryClassification.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274561004584000/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeFiniteInquiryModel.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274808194068000/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_finite.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification-history/2026-10-06-before-axiom-removal/manifest.json"
+    }
+  ]
+}

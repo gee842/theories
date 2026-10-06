@@ -1,0 +1,29 @@
+'Generative.AcquiredInitiationConstraint.inherited_scope_is_actual' depends on axioms: [propext]
+'Generative.AcquiredInitiationConstraint.admitted_is_actual_trace' depends on axioms: [propext]
+'Generative.AcquiredInitiationConstraint.learned_joint_reserve_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredInitiationConstraint.instrumentation_preserves_effect' depends on axioms: [propext]
+'Generative.AcquiredInitiationConstraint.actual_training_acquires_costs_and_retains_products' depends on axioms: [propext]
+'Generative.AcquiredInitiationConstraint.admitted_native_is_original' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredInitiationConstraint.primitive_zero_common_retains_B' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredInitiationConstraint.step_zero_common_retains_B' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredInitiationConstraint.depleted_common_blocks_every_B_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredInitiationConstraint.primitive_depletion_blocks_new_A' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredInitiationConstraint.step_depletion_blocks_new_A' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredInitiationConstraint.depletion_blocks_every_new_A_continuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredInitiationConstraint.one_unit_start_forecloses_B' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

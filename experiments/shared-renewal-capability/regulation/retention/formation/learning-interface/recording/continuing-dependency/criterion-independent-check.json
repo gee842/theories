@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T10:18:38.999633+00:00",
+  "cases": 7,
+  "extension_events": 2524,
+  "native_events_including_ancestry": 2473,
+  "ancestry_events": 94,
+  "primary_clamp_matched_prefix": 294,
+  "no_producer_import": true,
+  "whole_history_initial_energy": 590,
+  "detected_mutations": [
+    "plant_source",
+    "occupied_parts",
+    "acquired_channel",
+    "completion",
+    "historical_completion"
+  ],
+  "producer_result_sha256": "3d3d6d0db6dc5023dd704a56b226b4ce59a2cab8ba66082210f37d73c631a99e",
+  "checker_sha256": "7ed004eee7d6829447ea4f6d1a9c8a4efbeff15caac5969d5096c20a5b5d2138",
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py": "f014f56dd0da20331d7e8efa44e05be3f6ff1dc73e2040c0e27576e59a1cd67e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md": "a1bf493a722c7bfdf826bd09150f420057e4da78117e7623b4875ff63cfb3acf",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py": "4daecb9934d195f1c638e3b26dddd72143b05a9edfa6cfc789244851650bde5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1"
+  },
+  "scope": "Independent finite replay of saved native and wrapper events, material/support, actual/acquired receipts and operative criterion controls. Supplied law, model family, ongoing undertaking, copy recipes and sensor access are not derived or ethically certified."
+}

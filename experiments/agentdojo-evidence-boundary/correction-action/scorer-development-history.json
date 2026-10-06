@@ -1,0 +1,30 @@
+{
+  "status": "first_preflight_failed_before_result",
+  "scope": "scorer implementation preflight; no replay/model executions",
+  "previous_code_sha256": "14ce858667117e155774f026d2ff271e716f73cb70151a8af4cb4a0a2a2cab10",
+  "error": "AttributeError: 'NoneType' object has no attribute 'get' in report_check candidate-map comprehension; clean rows have goals=null",
+  "repair": "Handle goals=null as absent optional metadata without changing expected full semantic report.",
+  "edits": [
+    {
+      "before": "r.get(\"goals\", {}).get(\"references\")",
+      "after": "(r.get(\"goals\") or {}).get(\"references\")",
+      "occurrences": 1
+    },
+    {
+      "before": "row.get(\"goals\", {}).get(\"references\", {})",
+      "after": "(row.get(\"goals\") or {}).get(\"references\", {})",
+      "occurrences": 1
+    },
+    {
+      "before": "r.get(\"goals\", {}).get(\"references\", {})",
+      "after": "(r.get(\"goals\") or {}).get(\"references\", {})",
+      "occurrences": 1
+    },
+    {
+      "before": "r[\"goals\"].get(\"historical_source_predicate\")",
+      "after": "(r.get(\"goals\") or {}).get(\"historical_source_predicate\")",
+      "occurrences": 1
+    }
+  ],
+  "repaired_code_sha256": "f48c96ed13ac0a3717d6b483eee58d4eeebb84bde552f5a03acf38ba5a1f3d3b"
+}

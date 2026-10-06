@@ -1,0 +1,524 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T05:39:44.420607+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "734290b8425d03c2162f667b52d4ccfaed22ace9a040a52a6c19da81869443b6",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "baseline_manifest_sha256": "e9b33c34df117031ebb09ef290585200c2051807f9031de031bbf6ab30f712d5",
+  "sources_unchanged": true,
+  "historical_evidence_unchanged": true,
+  "checker_unchanged": true,
+  "fresh_source_only_build": true,
+  "inherited_sources_unchanged": true,
+  "axiom_policy": "Every new theorem has empty dependencies. Only exact historical predictor declarations may retain their own archived dependencies.",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "exit_code": 0,
+      "audits": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "added_axiom_dependencies": {},
+      "clean": true,
+      "output": "acquired-record-verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "FormedSelection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "source_sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "exit_code": 0,
+      "audits": {
+        "FormedSelection.population_type_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.copy_increment_le_spent": [
+          "propext"
+        ],
+        "FormedSelection.copy_tally_le_spent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_copy_budget": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.exact_step_rank_drop": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_strict_rank": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_event_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.no_infinite_event_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.repair_needs_three_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.low_fuel_cannot_restore_site": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.restored_site_and_alternative_need_four_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.a_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.a_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.h_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.h_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_step": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_trace": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_forbids_h_local_copy": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.paid_formation_to_copy": [
+          "propext"
+        ],
+        "FormedSelection.witness_accounting": [
+          "propext"
+        ],
+        "FormedSelection.repair_enables_capture": [
+          "propext"
+        ],
+        "FormedSelection.capture_enables_copy": [
+          "propext"
+        ],
+        "FormedSelection.initial_owned_support": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_from_absence_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.repaired_site_can_pass_to_alternative": [
+          "propext"
+        ],
+        "FormedSelection.inheritance_accounting": [
+          "propext"
+        ]
+      },
+      "added_axiom_dependencies": {},
+      "clean": true,
+      "output": "acquired-record-verification/FormedSelection.txt",
+      "output_sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    {
+      "module": "SelectorRevision",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
+      "source_sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+      "exit_code": 0,
+      "audits": {
+        "SelectorRevision.response_matches_iff": [
+          "propext"
+        ],
+        "SelectorRevision.commands_do_not_read_regime": [],
+        "SelectorRevision.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.trial_preserves_selector": [
+          "propext"
+        ],
+        "SelectorRevision.renewal_inherits_selector": [
+          "propext"
+        ],
+        "SelectorRevision.failed_trial_wears_selector": [
+          "propext"
+        ],
+        "SelectorRevision.changed_selector_requires_paid_assembly": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.reversal_preserves_actual_resources_and_selector": [],
+        "SelectorRevision.trace_composition_uses_actual_state": [],
+        "SelectorRevision.revised_selector_witness": [],
+        "SelectorRevision.witness_changes_response_mapping": [],
+        "SelectorRevision.paid_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.paid_exists_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.failure_cost_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.recovery_cost_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.recovery_prefix_affordable_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.no_recovery_below_first_cost": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.each_failed_candidate_adds_full_block": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.each_failed_candidate_adds_lifetime_trials": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SelectorRevision.source_horizon_obstruction": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "added_axiom_dependencies": {},
+      "clean": true,
+      "output": "acquired-record-verification/SelectorRevision.txt",
+      "output_sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+    },
+    {
+      "module": "UpdaterFormation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean",
+      "source_sha256": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+      "exit_code": 0,
+      "audits": {
+        "UpdaterFormation.event_projection": [
+          "propext"
+        ],
+        "UpdaterFormation.step_remainder_material": [],
+        "UpdaterFormation.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.trace_material_preserved": [],
+        "UpdaterFormation.trace_projects_when_no_modules_formed": [
+          "propext"
+        ],
+        "UpdaterFormation.directed_module_changes_available_assembly": [
+          "propext"
+        ],
+        "UpdaterFormation.module_change_requires_paid_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.bridge_energy_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.bridge_has_two_actual_materials": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.bridge_material_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.old_depleted_witness_cannot_pay_bridge": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.old_step_preserved_exactly": [
+          "propext"
+        ],
+        "UpdaterFormation.old_trace_embeds": [
+          "propext"
+        ],
+        "UpdaterFormation.organization_trace_embeds": [
+          "propext"
+        ],
+        "UpdaterFormation.actual_formation_bridge_continuation": [
+          "propext"
+        ],
+        "UpdaterFormation.joined_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.synchronized_prefix_affordable_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.new_module_budget_obstruction": [
+          "Quot.sound",
+          "propext"
+        ],
+        "UpdaterFormation.actual_old_preparation": [
+          "propext"
+        ],
+        "UpdaterFormation.actual_old_entrance_enabled": [
+          "propext"
+        ],
+        "UpdaterFormation.entrance_is_actual_paid_state": [],
+        "UpdaterFormation.paid_updater_revision_witness": [],
+        "UpdaterFormation.whole_preparation_to_changed_updater_witness": [
+          "propext"
+        ],
+        "UpdaterFormation.whole_witness_accounting": [
+          "propext"
+        ]
+      },
+      "added_axiom_dependencies": {},
+      "clean": true,
+      "output": "acquired-record-verification/UpdaterFormation.txt",
+      "output_sha256": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904"
+    },
+    {
+      "module": "PredictionAction",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
+      "source_sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+      "exit_code": 0,
+      "audits": {
+        "PredictionAction.noiseless_receipt_decodes_target": [],
+        "PredictionAction.outage_record_is_ambiguous": [],
+        "PredictionAction.changing_memory_changes_command": [
+          "propext"
+        ],
+        "PredictionAction.command_does_not_read_hidden_regime": [],
+        "PredictionAction.revised_score_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.step_score_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.trace_score_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.updater_reformation_retains_memory": [],
+        "PredictionAction.reversal_retains_memory_and_resources": [],
+        "PredictionAction.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.step_material_preserved": [],
+        "PredictionAction.trace_material_preserved": [],
+        "PredictionAction.retrofit_preserves_actual_memory_reference": [],
+        "PredictionAction.paid_retrofit_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.whole_history_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.paid_cycle": [],
+        "PredictionAction.cycle_then": [],
+        "PredictionAction.three_evidence_then_action_affordable_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PredictionAction.slow_needs_three_false_writes_from_four": [],
+        "PredictionAction.fast_one_false_write_from_four": [],
+        "PredictionAction.old_joined_trace_embeds": [
+          "propext"
+        ],
+        "PredictionAction.prediction_trace_embeds": [
+          "propext"
+        ],
+        "PredictionAction.join_actual_formed_machinery": [
+          "propext"
+        ],
+        "PredictionAction.actual_old_preparation": [
+          "propext"
+        ],
+        "PredictionAction.actual_bridge_enabled": [
+          "propext"
+        ],
+        "PredictionAction.actual_paid_old_machinery": [],
+        "PredictionAction.actual_retrofit_enabled": [],
+        "PredictionAction.actual_retrofit_state": [],
+        "PredictionAction.acquired_corrected_prediction_action_witness": [],
+        "PredictionAction.actual_formed_prefix": [
+          "propext"
+        ],
+        "PredictionAction.whole_formation_prediction_corrected_action_witness": [
+          "propext"
+        ],
+        "PredictionAction.corrective_write_changes_command_with_action_held_fixed": [],
+        "PredictionAction.whole_witness_accounting": [
+          "propext"
+        ]
+      },
+      "added_axiom_dependencies": {},
+      "clean": true,
+      "output": "acquired-record-verification/PredictionAction.txt",
+      "output_sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
+    },
+    {
+      "module": "OutcomeContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "source_sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+      "exit_code": 0,
+      "audits": {
+        "Generative.OutcomeContinuation.exists_outcome_iff_feasible": [],
+        "Generative.OutcomeContinuation.outcome_residual_update": [],
+        "Generative.OutcomeContinuation.outcome_iff_actual_boundary": [],
+        "Generative.OutcomeContinuation.outcome_of_actual_history": [],
+        "Generative.OutcomeContinuation.outcome_singleton_iff": [],
+        "Generative.OutcomeContinuation.outcome_singleton_at_unique_successor": [],
+        "Generative.OutcomeContinuation.empty_future_at_unique_endpoint": [],
+        "Generative.OutcomeContinuation.outcome_profiles_extend": [],
+        "Generative.OutcomeContinuation.outcome_profiles_retain_feasibility": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_collision": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_distinguishes": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_exists_iff": [],
+        "Generative.OutcomeContinuation.identity_outcome_iff_trace": [],
+        "Generative.OutcomeContinuation.step_agreement_iff_endpoint_outcomes": []
+      },
+      "added_axiom_dependencies": {},
+      "clean": true,
+      "output": "acquired-record-verification/OutcomeContinuation.txt",
+      "output_sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "module": "AcquiredPredictionRecord",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/AcquiredPredictionRecord.lean",
+      "source_sha256": "5bb802f04b30f42b51275d3484761ec66582ea068b3e0b041cde3e51853c3b04",
+      "exit_code": 0,
+      "audits": {
+        "AcquiredPredictionRecord.trace_memory_is_replay": [],
+        "AcquiredPredictionRecord.equal_read_fields_equal_commands": [],
+        "AcquiredPredictionRecord.same_acquisition_same_next_command": [],
+        "AcquiredPredictionRecord.different_commands_require_different_acquisition": [],
+        "AcquiredPredictionRecord.write_retains_action_reference": [],
+        "AcquiredPredictionRecord.work_executes_readout": [],
+        "AcquiredPredictionRecord.work_record_decodes_actual_regime": [],
+        "AcquiredPredictionRecord.no_receipt_only_target_decoder": [],
+        "AcquiredPredictionRecord.enabled_work_outcome_iff": [],
+        "AcquiredPredictionRecord.acquired_record_and_executed_outcome": [],
+        "AcquiredPredictionRecord.same_acquisition_same_work_outcomes": [],
+        "AcquiredPredictionRecord.actual_corrective_prefix": [],
+        "AcquiredPredictionRecord.actual_write_then_corrected_work": [],
+        "AcquiredPredictionRecord.actual_acquisition_replay_and_effect": [],
+        "AcquiredPredictionRecord.actual_acquisition_has_corrected_outcome": []
+      },
+      "added_axiom_dependencies": {},
+      "clean": true,
+      "output": "acquired-record-verification/AcquiredPredictionRecord.txt",
+      "output_sha256": "c2beec8650303789fb86d1914a20e89a892408124af5b780a258e2604de8f195"
+    }
+  ],
+  "audits": 170,
+  "new_bridge_audits": 15,
+  "scope": "Actual paid predictor write provenance, native command dependence and outcome-record interface. The old event law, decoder, update recipes and scheduling remain supplied. No new physical law or assumption-free self/ethical foundation is asserted. Typed material ancestry is an inherited separate result, not newly re-proved here."
+}

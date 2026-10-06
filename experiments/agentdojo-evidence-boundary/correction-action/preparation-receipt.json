@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "preparation_complete_no_participant_dispatched",
+  "created_at_utc": "2026-10-06T02:45:56.673436+00:00",
+  "files": {
+    "experiments/agentdojo-evidence-boundary/correction-action/prepare.py": "f14c6f36a2c728711e82d52225c5d24957ef35d0dd71c8bd72ead755c2336cc6",
+    "experiments/agentdojo-evidence-boundary/correction-action/PROTOCOL.md": "9543a14bbe1e91ac9419fcabcae303544181f1e850481408dcea2306c5c40b84",
+    "experiments/agentdojo-evidence-boundary/correction-action/README.md": "aed1b91b64004eefad0ef933d9723014bb4df6688d32c120763fa7fcf4fb5641",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-DESIGN.md": "4b5e79e2ed821822cb93c974e6cd4905a8c06fd8ee136697f77b8cc5c2ca68bf",
+    "experiments/agentdojo-evidence-boundary/correction-action/case-manifest.json": "18d62829d7ba3d47de8f43da8734557f5112b588e5ad429e98929a4d08017752",
+    "experiments/agentdojo-evidence-boundary/correction-action/prompts/k01.txt": "f0a40d4f1d3a3bf7a910f68362b502c11c216cd9e97fc16d7b3068510e071bf0",
+    "experiments/agentdojo-evidence-boundary/correction-action/prompts/k02.txt": "95091fd8e2cf00f66d30577b6a615bb8844c42b01b9d953be291ad34de74f839",
+    "experiments/agentdojo-evidence-boundary/correction-action/prompts/k03.txt": "2dfdab9980d4359559d129dfe6436417dff097773175aabb5aad3097667c91fa",
+    "experiments/agentdojo-evidence-boundary/correction-action/prompts/k04.txt": "6db014dccd591b331b02626152c282ae5c3324a34328b24138994dc5052de042",
+    "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k01.json": "b59313832321533bd3c620191d323c6196c0314f05b992d50bb473fdb85fc75a",
+    "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k02.json": "1de83b977adba0bdf84cdb1e5f644ac381e7874a08ad351a85eb9c6f4c2ff0ba",
+    "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k03.json": "261979db5c7af2114b3cffb108ffbf09b38f76a319826273dc926d73c0f3f58c",
+    "experiments/agentdojo-evidence-boundary/correction-action/initial-inventories/k04.json": "e15a4b306b5bb6e8b9388095e1063be337b5d45cea13af6a3fff3c3135434a30"
+  },
+  "temporary_case_files": [
+    408,
+    408,
+    408,
+    408
+  ],
+  "originals_copied_without_mutation": true,
+  "replay_executions": 0,
+  "participant_calls": 0,
+  "dispatch_gate": "Root must additionally freeze the independent scoring and accepted review before any call."
+}

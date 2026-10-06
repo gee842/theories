@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-10-06T10:28:18.721836+00:00",
+  "status": "passed",
+  "scope": "Local links/anchors and owned index/canonical sections; preserved native and Lean sources, snapshots, receipts, logs and compiler. No scientific rerun, proof rebuild or external-link verification.",
+  "local_links_checked": 83,
+  "preservation_hash_checks": 84,
+  "native_ancestry_admissible_cases": 27,
+  "rejected_ancestry_conditional_fixtures": [
+    "capacity_forty"
+  ],
+  "new_substantive_theorem_audits": 43,
+  "saved_correspondence_audits": 446,
+  "replayed_core_audits": 18,
+  "formal_receipt_sha256": "c9d75a3677bd5fbe5026b358a1d55bc3c76ca33db3b5af5411e8c27c21a4d0a0",
+  "review_sha256": "08e5b16567740428b172101440a135ca2faf8192a501fec171c6a3ab6339a940",
+  "checked_document_or_section_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REMAINING-DEPENDENCY-INTEGRATION.md": "373925f472ddc1f7f6222035725e9483e2480ff7fc644bda8a38a7d86c75f82d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REMAINING-DEPENDENCY-REVIEW.md": "08e5b16567740428b172101440a135ca2faf8192a501fec171c6a3ab6339a940",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-HIGHER-DYNAMICS.md": "83c653d1c6bfd1ef6191335a2670a6b9a93b37604e9e17b645c177219f16f073",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-MECHANISM.md": "9e536bda96df387f509cf51aaf575ecda68897187a07d5506a79a160e30bd81c",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-ERRATUM.md": "de9a0dcc45c44633ef1419dda6f492fad3fa8d900e605d1749710a0eb017cb89",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md": "32a040e263137c0b9fee58ff142dfaa236eac009b70e2fcab53292e21631a398",
+    "sources/15-codex-theory-conversations/2026-10-06-remaining-dependency-continuation.md": "44a9cead25bc4edaa56050604b50f8e7b0078978a73484753dcaf3826fbd0a66",
+    "RESEARCH.md": "b206bf4a2634966db07cda736b9531fe8d574fec05fe38f8ed18f267b408b5f5",
+    "theories/shengsheng-buxi-generative-existence/README.md": "ba7422c82485924bcdef1842dd7ffb2bbfb88a77e3a5dddd4ef7ab65ecd3aacd",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "822e7559a076ca24bfa6409871f845451a176ad9563fcecda1c6864210ca659a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "002a6aaad2f9b7e55483d7c284cbf9a80aecb1d200038fe08ac75a64f3e671ca",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md": "a957b1b504dd8a8188d8bda4c5829409b22a9943a07124173e2ad69f4aae9177",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md": "bb37bfb001a038b100d7231c63f28784144942978adc5ba8204600050ca08534"
+  },
+  "checker_sha256": "5d2e2312804336808419112d8616a3c4775be557d473cdd374c029ea146a5de2",
+  "final_edit_record_sha256": "ab387e01ca3b36dcd50d985c624f0967910c82f95f70c601a953c70e051b82a1",
+  "failures": []
+}

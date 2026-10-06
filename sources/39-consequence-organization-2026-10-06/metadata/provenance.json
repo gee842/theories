@@ -1,0 +1,136 @@
+{
+  "scope": "Primary source preservation only; no experimental replication or numerical reanalysis.",
+  "documents": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6622209/?report=xml",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6622209/?report=xml",
+      "status": 200,
+      "retrieved_utc": "2026-10-06T07:03:36.521009+00:00",
+      "headers": {
+        "Date": "Tue, 06 Oct 2026 07:03:35 GMT",
+        "Server": "istio-envoy",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "content-type": "text/html; charset=utf-8",
+        "Content-Length": "219680",
+        "vary": "Accept-Encoding,Cookie",
+        "x-frame-options": "DENY",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "same-origin",
+        "cross-origin-opener-policy": "same-origin",
+        "x-envoy-upstream-service-time": "111",
+        "X-UA-Compatible": "IE=Edge",
+        "X-XSS-Protection": "1; mode=block",
+        "Via": "1.1 google",
+        "Alt-Svc": "clear",
+        "Connection": "close"
+      },
+      "header_omissions": [
+        "Set-Cookie"
+      ],
+      "bytes": 219680,
+      "sha256": "98cc81998427495caf4e87511ef2289740a9c0c059baa79a07ac834115bd6f94",
+      "file": "original/hulme-2012.html"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/48dc/6622209/0bbbc7d39c11/zns9991218600004.jpg",
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/48dc/6622209/0bbbc7d39c11/zns9991218600004.jpg",
+      "status": 200,
+      "retrieved_utc": "2026-10-06T07:04:47.634986+00:00",
+      "headers": {
+        "content-type": "image/jpeg",
+        "x-guploader-uploadid": "AP6rU83QVu7sy6-QG-ZzNL64z3UnNkP9Qjnubw6VrdR7obqG2qcPElRXK8AfYE9ntEd44-SU1kBFmts",
+        "expires": "Tue, 06 Oct 2026 08:04:46 GMT",
+        "date": "Tue, 06 Oct 2026 07:04:46 GMT",
+        "cache-control": "public, max-age=3600",
+        "last-modified": "Tue, 13 Feb 2024 14:17:33 GMT",
+        "etag": "\"0bbbc7d39c11c001c32ad3caa253e0ec\"",
+        "x-goog-generation": "1707833853868757",
+        "x-goog-metageneration": "1",
+        "x-goog-stored-content-encoding": "identity",
+        "x-goog-stored-content-length": "210556",
+        "x-goog-hash": "md5=C7vH05wRwAHDKtPKolPg7A==",
+        "x-goog-storage-class": "MULTI_REGIONAL",
+        "accept-ranges": "bytes",
+        "Content-Length": "210556",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Content-Type",
+        "server": "UploadServer",
+        "via": "1.1 google",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-headers": "*",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Connection": "close"
+      },
+      "header_omissions": [
+        "Set-Cookie"
+      ],
+      "file": "original/hulme-2012-figure4.jpg",
+      "bytes": 210556,
+      "sha256": "59264b373496baa5f5c414e5446e1c87402a1b08c1d967b0059776d408227cbd"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/48dc/6622209/95c138071fa8/zns9991218600006.jpg",
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/48dc/6622209/95c138071fa8/zns9991218600006.jpg",
+      "status": 200,
+      "retrieved_utc": "2026-10-06T07:04:48.205896+00:00",
+      "headers": {
+        "content-type": "image/jpeg",
+        "x-guploader-uploadid": "AP6rU82L_bccNJWKlOLeChuJp7pkV021MEvXF5W0Mc8ZnY73JSFDQ78nSzS7cwGBxT8sAWY",
+        "expires": "Tue, 06 Oct 2026 08:04:47 GMT",
+        "date": "Tue, 06 Oct 2026 07:04:47 GMT",
+        "cache-control": "public, max-age=3600",
+        "last-modified": "Tue, 13 Feb 2024 14:17:33 GMT",
+        "etag": "\"95c138071fa8e8a92f3f24f54690d509\"",
+        "x-goog-generation": "1707833853942948",
+        "x-goog-metageneration": "1",
+        "x-goog-stored-content-encoding": "identity",
+        "x-goog-stored-content-length": "87454",
+        "x-goog-hash": "md5=lcE4Bx+o6KkvPyT1RpDVCQ==",
+        "x-goog-storage-class": "MULTI_REGIONAL",
+        "accept-ranges": "bytes",
+        "Content-Length": "87454",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Content-Type",
+        "server": "UploadServer",
+        "via": "1.1 google",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-headers": "*",
+        "Alt-Svc": "h3=\":443\"; ma=2592000",
+        "Connection": "close"
+      },
+      "header_omissions": [
+        "Set-Cookie"
+      ],
+      "file": "original/hulme-2012-figure6.jpg",
+      "bytes": 87454,
+      "sha256": "557c44f7c8f820bb5db2f27e0cf83e383ad1d5955b15305dd46cdeb537fd96d4"
+    }
+  ],
+  "failed_attempts": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6622209/fullTextXML",
+      "method": "Python urllib GET",
+      "result": "HTTP 503; no document body preserved"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6622209/",
+      "method": "web open",
+      "result": "CAPTCHA reading page; no original body preserved"
+    }
+  ],
+  "reading_edition": {
+    "method": "Python standard-library HTMLParser; script/style content excluded; block breaks normalized; original text order retained; navigation and references retained",
+    "input": "original/hulme-2012.html",
+    "output": "reading/hulme-2012.txt",
+    "scope_read": "Full main article methods/results/discussion and figure captions; separate figure4/figure6 JPG visually inspected. No raw data, statistical reproduction or supplementary archive inspection."
+  },
+  "source_caution": "Figure 6D caption names radiatum priming while associated body text names oriens. No conclusion in our note depends on choosing an orientation for that panel.",
+  "bounded_correction_search": {
+    "query": "\"Calcium-Dependent But Action Potential-Independent\" correction erratum",
+    "date": "2026-10-06",
+    "result": "No correction identified in returned search results. This does not establish that none exists."
+  },
+  "privacy": "Set-Cookie response headers omitted; original document/figure bytes unchanged."
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-06T12:03:13.920176+00:00",
+  "status": "passed",
+  "checker_sha256": "b2e34b66fd29f3fdabd324514d4dc0e44ea016205eac8f986c2b8a438438c3f7",
+  "bound_artifacts": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CHECK.py": "7c7f0d1abf49345e42ebb8e7316ad899379bb5b16941bf85cf7298983722824d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification.json": "ec057b15a6934b08598e439d6d0e5cd8ca16bd249ce87c457a3def8fb09a05dc",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/revalidation/verification.json": "74d889d30527451a783ed96416b6d1099c2aa8e3c37540e2d6dbb6d1b263ad19",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/revalidation/runs/20261006T103752.756019Z/verification.json": "74d889d30527451a783ed96416b6d1099c2aa8e3c37540e2d6dbb6d1b263ad19",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/revalidation/runs/20261006T103752.756019Z/original-checker-verification.json": "0f9cf4233df9417c538117892562fc14bea83305755196eec4447d8f911bb063",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/revalidation/check.py": "77bb547895d8e328d5db1349d577b23aa50c96f9bb9daac44a342f36f51d1a51"
+  },
+  "tests": [
+    {
+      "case": "baseline",
+      "expected_behavior_observed": true,
+      "faulted_digest_calls": 0,
+      "consumer_exit_code": 0,
+      "intercepted_report_status": "pass",
+      "current_proof_status": "matches",
+      "current_source_mismatch_count": 0,
+      "exception": null
+    },
+    {
+      "case": "current_source_digest",
+      "expected_behavior_observed": true,
+      "faulted_digest_calls": 2,
+      "consumer_exit_code": 1,
+      "intercepted_report_status": "partial",
+      "current_proof_status": "stale",
+      "current_source_mismatch_count": 1,
+      "exception": null
+    },
+    {
+      "case": "historical_log_digest",
+      "expected_behavior_observed": true,
+      "faulted_digest_calls": 1,
+      "consumer_exit_code": 1,
+      "intercepted_report_status": null,
+      "current_proof_status": null,
+      "current_source_mismatch_count": null,
+      "exception": {
+        "type": "AssertionError",
+        "message": "altered historical proof log"
+      }
+    },
+    {
+      "case": "archived_source_digest",
+      "expected_behavior_observed": true,
+      "faulted_digest_calls": 1,
+      "consumer_exit_code": 1,
+      "intercepted_report_status": null,
+      "current_proof_status": null,
+      "current_source_mismatch_count": null,
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "case": "archived_log_digest",
+      "expected_behavior_observed": true,
+      "faulted_digest_calls": 1,
+      "consumer_exit_code": 1,
+      "intercepted_report_status": null,
+      "current_proof_status": null,
+      "current_source_mismatch_count": null,
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "case": "historical_receipt_digest",
+      "expected_behavior_observed": true,
+      "faulted_digest_calls": 1,
+      "consumer_exit_code": 1,
+      "intercepted_report_status": null,
+      "current_proof_status": null,
+      "current_source_mismatch_count": null,
+      "exception": {
+        "type": "AssertionError",
+        "message": "altered historical proof receipt"
+      }
+    }
+  ],
+  "watched_files_unchanged": true,
+  "watched_file_count": 29,
+  "proof_compilations": 0,
+  "proof_or_consumer_report_writes": 0,
+  "scope": "Consumer integrity and failure behavior under in-memory digest faults. Historical and archived corruption must be rejected; a later live source change must produce a stale current receipt, partial report and exit 1. No proof compilation, physical file corruption, adversarial security claim, new theorem or philosophical necessity result."
+}

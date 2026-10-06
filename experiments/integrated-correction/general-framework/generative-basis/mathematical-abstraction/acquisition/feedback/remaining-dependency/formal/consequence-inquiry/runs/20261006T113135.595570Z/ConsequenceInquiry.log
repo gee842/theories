@@ -1,0 +1,19 @@
+ConsequenceInquiry.lean:16:47: error: unexpected identifier; expected '}'
+ConsequenceInquiry.lean:26:56: error: unsolved goals
+s : State
+⊢ s.body.stocks.load = 0 ∧ s.body.stocks.waste = 0
+ConsequenceInquiry.lean:32:14: error: simp_all made no progress
+ConsequenceInquiry.lean:37:14: error: simp_all made no progress
+ConsequenceInquiry.lean:44:14: error: simp_all made no progress
+ConsequenceInquiry.lean:44:24: warning: This simp argument is unused:
+  viewBody
+
+Hint: Omit it from the simp argument list.
+  simp_all ̵[̵v̵i̵e̵w̵B̵o̵d̵y̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ConsequenceInquiry.view_preserves_source' does not depend on any axioms
+'ConsequenceInquiry.view_preserves_stock_total' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ConsequenceInquiry.advance_preserves_empty_source' depends on axioms: [propext, sorryAx]
+'ConsequenceInquiry.advance_preserves_stocks_at_empty_source' depends on axioms: [propext, sorryAx]
+'ConsequenceInquiry.view_advance_at_empty_source' depends on axioms: [propext, sorryAx]

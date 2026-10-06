@@ -1,0 +1,231 @@
+{
+  "scope": "Exact uninterrupted restoration race; no eventual-reachability or ethical ranking",
+  "selection": "Exploratory comparison of previously reached endpoints; not preregistered",
+  "law": {
+    "material": 78,
+    "mu": "1",
+    "bind": "1",
+    "repair": "1",
+    "capture": "1",
+    "copy": "1",
+    "bulk": "1/1000000",
+    "damage": "1/1000000",
+    "wear": "1/1000000",
+    "leak": "1/1000000",
+    "sigma": "0",
+    "mode": "active"
+  },
+  "results": {
+    "local": {
+      "inherited_endpoint": [
+        38,
+        39,
+        1,
+        1,
+        0,
+        1,
+        215
+      ],
+      "after_wear": [
+        37,
+        39,
+        1,
+        1,
+        0,
+        1,
+        215
+      ],
+      "success": {
+        "numerator": 107504104002983,
+        "denominator": 107516955512246,
+        "decimal": 0.9998804699295867
+      },
+      "failures": {
+        "bulk_h": {
+          "numerator": 8424006123,
+          "denominator": 215033911024492,
+          "decimal": 3.917524488516846e-05
+        },
+        "wear_a": {
+          "numerator": 7992005809,
+          "denominator": 215033911024492,
+          "decimal": 3.7166257967980334e-05
+        },
+        "wear_h": {
+          "numerator": 8424006123,
+          "denominator": 215033911024492,
+          "decimal": 3.917524488516846e-05
+        },
+        "wear_res_a": {
+          "numerator": 216000157,
+          "denominator": 215033911024492,
+          "decimal": 1.004493458594063e-06
+        },
+        "damage": {
+          "numerator": 216000157,
+          "denominator": 215033911024492,
+          "decimal": 1.004493458594063e-06
+        },
+        "leak_common": {
+          "numerator": 216000157,
+          "denominator": 215033911024492,
+          "decimal": 1.004493458594063e-06
+        },
+        "leak_local": {
+          "numerator": 53750000,
+          "denominator": 53758477756123,
+          "decimal": 9.998422991781602e-07
+        }
+      },
+      "transient_states": [
+        {
+          "state": [
+            37,
+            39,
+            1,
+            1,
+            0,
+            1,
+            215
+          ],
+          "rates": {
+            "capture": "215",
+            "bulk_a": "19/500000",
+            "bulk_h": "39/1000000",
+            "wear_a": "37/1000000",
+            "wear_h": "39/1000000",
+            "wear_res_a": "1/1000000",
+            "damage": "1/1000000",
+            "leak_common": "1/1000000"
+          }
+        },
+        {
+          "state": [
+            37,
+            39,
+            1,
+            1,
+            1,
+            1,
+            214
+          ],
+          "rates": {
+            "copy_a": "1",
+            "bulk_a": "19/500000",
+            "bulk_h": "39/1000000",
+            "wear_a": "37/1000000",
+            "wear_h": "39/1000000",
+            "wear_res_a": "1/1000000",
+            "damage": "1/1000000",
+            "leak_common": "1/1000000",
+            "leak_local": "1/1000000"
+          }
+        }
+      ]
+    },
+    "bulk": {
+      "inherited_endpoint": [
+        38,
+        39,
+        1,
+        1,
+        0,
+        0,
+        216
+      ],
+      "after_wear": [
+        37,
+        39,
+        1,
+        1,
+        0,
+        0,
+        216
+      ],
+      "success": {
+        "numerator": 36000000000000,
+        "denominator": 36002857001027,
+        "decimal": 0.9999206451580518
+      },
+      "failures": {
+        "wear_a": {
+          "numerator": 8029002923,
+          "denominator": 216017142006162,
+          "decimal": 3.716836010528724e-05
+        },
+        "wear_h": {
+          "numerator": 2821001027,
+          "denominator": 72005714002054,
+          "decimal": 3.917746065151898e-05
+        },
+        "wear_res_a": {
+          "numerator": 217000079,
+          "denominator": 216017142006162,
+          "decimal": 1.0045502731158714e-06
+        },
+        "damage": {
+          "numerator": 217000079,
+          "denominator": 216017142006162,
+          "decimal": 1.0045502731158714e-06
+        },
+        "leak_local": {
+          "numerator": 36000000,
+          "denominator": 36002857001027,
+          "decimal": 9.999206451580519e-07
+        }
+      },
+      "transient_states": [
+        {
+          "state": [
+            37,
+            39,
+            1,
+            1,
+            0,
+            0,
+            216
+          ],
+          "rates": {
+            "capture": "216",
+            "wear_a": "37/1000000",
+            "wear_h": "39/1000000",
+            "wear_res_a": "1/1000000",
+            "damage": "1/1000000"
+          }
+        },
+        {
+          "state": [
+            37,
+            39,
+            1,
+            1,
+            1,
+            0,
+            215
+          ],
+          "rates": {
+            "copy_a": "1",
+            "wear_a": "37/1000000",
+            "wear_h": "39/1000000",
+            "wear_res_a": "1/1000000",
+            "damage": "1/1000000",
+            "leak_local": "1/1000000"
+          }
+        }
+      ]
+    }
+  },
+  "bulk_minus_local": {
+    "numerator": 22216428274966108276637,
+    "denominator": 552988224927596342876153806,
+    "decimal": 4.017522846508159e-05
+  },
+  "hand_equations_match": true,
+  "outcomes_sum_to_one": true,
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/whole_future_race.py": "491e1fa874d6dedd7888c751b5d4a4fd0ab17dc46b5e3f01a79686cc6f9b4e0e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630"
+  }
+}

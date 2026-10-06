@@ -1,0 +1,120 @@
+{
+  "scope": "Preservation, source identity and local link checks only; no scientific computation or statistical verification.",
+  "originals": [
+    {
+      "file": "original/hulme-2012.html",
+      "bytes": 219680,
+      "sha256": "98cc81998427495caf4e87511ef2289740a9c0c059baa79a07ac834115bd6f94"
+    },
+    {
+      "file": "original/hulme-2012-figure4.jpg",
+      "bytes": 210556,
+      "sha256": "59264b373496baa5f5c414e5446e1c87402a1b08c1d967b0059776d408227cbd"
+    },
+    {
+      "file": "original/hulme-2012-figure6.jpg",
+      "bytes": 87454,
+      "sha256": "557c44f7c8f820bb5db2f27e0cf83e383ad1d5955b15305dd46cdeb537fd96d4"
+    }
+  ],
+  "identity_checks": [
+    "DOI present in original and reading edition",
+    "PMCID present in original and reading edition",
+    "retained-expression discussion present in original and reading edition"
+  ],
+  "response_cookies_preserved": false,
+  "local_link_count": 18,
+  "local_links": [
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "original/hulme-2012.html",
+      "exists": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "original/hulme-2012-figure4.jpg",
+      "exists": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "original/hulme-2012-figure6.jpg",
+      "exists": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "reading/hulme-2012.txt",
+      "exists": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "metadata/provenance.json",
+      "exists": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "manifest.json",
+      "exists": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "verification.json",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COST-SENSITIVE-LEARNING.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../sources/39-consequence-organization-2026-10-06/README.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../sources/39-consequence-organization-2026-10-06/README.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COST-SENSITIVE-LEARNING.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "exists": true
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,317 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T06:32:29.512366+00:00",
+  "scope": "Links, exact prior audit wording reconstruction and source binding to inherited receipts; no scientific rerun.",
+  "checks": 183,
+  "local_links_checked": 77,
+  "anchors_checked": 5,
+  "new_theorems": 0,
+  "new_empirical_or_finite_runs": 0,
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-CONTINUATION.md": "41745e4528ea4271901d6e0679f7b6c0c238f35fb8be3ebf80851c0a2949573c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-GENEALOGY.md": "3cdd404dd579888a0bdefa765ac043cde1ef437b0a9832c219ff626e58cf8fcf",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-REVIEW.md": "e1dc62e180d7a9b2784cd6049a493a55dea009f6991d921169f3b82e08e7800e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-MECHANISM.md": "fae122e29e3bd06f11ae58f5a122f193127c040a4b11dd20644a5997c3010aff",
+    "sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md": "dce6e27aa56e6f67c201f0a8d9616a8473bb40d54615433c106483afd26c7b85",
+    "RESEARCH.md": "c54d60c5beefde89092a25697e2125308a4197eeca29a28752578e7309d2640c",
+    "theories/shengsheng-buxi-generative-existence/README.md": "946fed1c018372721ef54312566ba42c41a8908cdae3d316f1de99768f5078a6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "16ec92c0882c9845999daca7fad926024e5fe87a98945a583ef10eadb49769b0",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md": "26ca4e34d8ed9b90656c8b88331bc2cc85266c27193e8e20d5eae55969e02fda",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "0d261405444a127824c9bc559d49bc61bdf1de8ff570d682a8106567227df284",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "533b361ff962d0288f950c267cbd0ea199cb4a0225a585f5297350db6cc58558",
+    "sources/SOURCES.md": "2d755ec413b8caae7513b71862805663ac2aa3e4c116b9ea9f71e402a50577bc",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md": "a2eaeee744ef82f9d06907e961d052a1669df991b268880e3346fab58bbf98e2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md": "2a61d09707ca5e459fc794d48f230156e4a4826d16d72f0445491f1aa6112ad9"
+  },
+  "inherited_receipts_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/acquired-perspective/verification.json": "98f4e00410f171f6f81c89d0754e2b75cf3f15a40f0dbac7b93090915db73604",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json": "c3d1c9fef6e0c75488ffa3a681b79d9e2902092539b0ae50b14a5aefa4b1efcd"
+  },
+  "inherited_bound_source_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/ConstructedUpdater.lean": "c59f5c934ed1884ffddfa36d982b89e6f934386d462a56927478004018e02023",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/ConstructedPrediction.lean": "b3dca9bd1fa58b1c45450c3c77d66ad2bdbbe153c1797fbc4fca534d6878d51f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean": "5afde10eb8e6b1ea829c8ab65b32f449f97aea1fbf8f37bdf792d536b3a05102",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAcquisitionModel.lean": "cbf8795df25a666fac47343d7f6772dd4e55431e261bdb052239720a846660de",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean": "27f5be6e07bbaad59101ff24c41e0513f573949b7acd80c94bd8b8b2f760c2fd",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean": "a947733ac7394a00d90c8be94410aaf27324f7d9b418d8be07aae5dad9f21f97",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean": "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean": "d28ec685d0683636bc24eb5876368cb055529a04e7e577521bb6c9e1a60e928c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean": "20f827f1ea41fcf8814deb2df03ca4b05d9103a1a3afca8f2047fd3762ac5254",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean": "bb721907d8b0949dd0798365e70849ad4deb82b8db5698cce1a844cfbbde2054",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean": "8b9be215d66a44efc468368d7840e4db7634a97a8cffa5099b35d6f755f3dbc9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean": "dcbf17d1c8e4d57798f7c7d4208e80f6c3ea318ae9202868cf9b83d8e7700fe6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean": "e3eb6b0448554a9daa897e056a778f99ad7a08b7817ccbe842e9260ced323e0a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean": "5c3208103713d60fa65e19f0a97e61b13621898deb859549a91666b9c5e1e31b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean": "4319a3049866ce7119a6d6c8d843c857f0582bf69552162311b7e6cd6be4d1c0"
+  },
+  "primary_reading_sha256": {
+    "sources/12-claude-ai-chats/2026-05-02_生生不息的出处_1bd809e5.md": "b2177c0e7033702aa46cb2568697faa8b5122d291c44f19274a94ed7e3bf840d",
+    "sources/12-claude-ai-chats/2026-05-04_求导求积与其他势的处理方法_35c49130.md": "35bcf0e095a4f98854d52da8045bb7ee91105390498d125eff97512c952244ff"
+  },
+  "assumption_free_foundation_completion_claimed": false,
+  "errors": [],
+  "final_refresh": {
+    "checked_at_utc": "2026-10-06T06:36:07.690596+00:00",
+    "status": "passed",
+    "scope": "Final genealogy and review links/whitespace; all inherited receipt/source hashes and exact audit reconstruction rechecked. No scientific rerun. Other document_sha256 entries retain the earlier reviewed snapshot. Concurrent changes below were not re-reviewed in this refresh.",
+    "refreshed_documents": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-GENEALOGY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-REVIEW.md"
+    ],
+    "local_links_checked": 28,
+    "anchors_checked": 1,
+    "concurrent_current_hashes_not_re_reviewed": {
+      "RESEARCH.md": "5a8731549595dd6d87473cfa0857a75f5b72b1be3d47acd33b32e94ae47d1879",
+      "theories/shengsheng-buxi-generative-existence/README.md": "d8a9464be94b368026182ef4b6fc8575093a16bfba91dd73cd21461626373483",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "7ab375f472833eb5fc80b8ff9b8b79b52fa2d5d274911196c0139f25f0427903",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "6f6a807e072a39fd6d8dce6e2d7064a63ef4ac78dc543cd4fd7fe8a1d5bd5325"
+    },
+    "errors": []
+  },
+  "terminology_amendment": {
+    "scope": "Wording and explanatory-level correction requested by Ren. Earlier hashes and reviews remain historical snapshots; model laws and code unchanged. Original wording reconstructible from ordered replacements.",
+    "changes": [
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md",
+        "before_sha256": "dce6e27aa56e6f67c201f0a8d9616a8473bb40d54615433c106483afd26c7b85",
+        "after_sha256": "835e272a9686c3301a324353b299caf02fbcfb07071be2059560c45aef1e1768",
+        "replacements": [
+          {
+            "before": "# Nondual core and tree: continue from the corrected standpoint\n\n6 October 2026. Exact user message from the current theory-repository chat. The source words below are Ren's; the contextual note is AI-authored.\n\n## Exact user message\n\n> generative core and the generative tree are non dual. a lot of your attempts are from western practices are western, which leads to wrong trajectory\n>\n> please keep this in mind, and continue\n\n## Context and continuing force\n\nThis follows the conditional nondual-core construction in the current chat. Ren extends the correction to the whole generative tree and asks that it persist in subsequent work. The [project-wide direction from the parallel review chat](2026-10-06-project-wide-nondual-method.md) had already been integrated into repository instructions and [the shared method](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) when this continuation began. The present record preserves this chat's renewed instruction without attributing the parallel chat's wording or the assistant's method to this message.\n\nThe working consequence is to begin within the theory's own generative relationships, explain the analytical distinctions used, and allow branch findings to revise the articulation of the core. Historical comparisons and formal tools serve that inquiry. The correction is not recorded as a verdict that a culture's entire thought is uniform, or as authorization to suppress contrary evidence. Prior local proofs and their stated limits remain; a missing connection in a thin representation must not automatically become a defect in the fuller proposed account.\n",
+            "after": "# Nondual core and tree: continue from the corrected standpoint\n\n6 October 2026. Exact user message from the current theory-repository chat. The source words below are Ren's; the contextual note is AI-authored.\n\n## Exact user message\n\n> generative core and the generative tree are non dual. a lot of your attempts are from western practices are western, which leads to wrong trajectory\n>\n> please keep this in mind, and continue\n\n## Context and continuing force\n\nThis follows the conditional nondual-core construction in the current chat. Ren extends the correction to the whole generative tree and asks that it persist in subsequent work. The [project-wide direction from the parallel review chat](2026-10-06-project-wide-nondual-method.md) had already been integrated into repository instructions and [the shared method](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) when this continuation began. The present record preserves this chat's renewed instruction without attributing the parallel chat's wording or the assistant's method to this message.\n\nThe working consequence is to begin within the theory's own generative relationships, explain the analytical distinctions used, and allow branch findings to revise the articulation of the core. Historical comparisons and formal tools serve that inquiry. The correction is not recorded as a verdict that a culture's entire thought is uniform, or as authorization to suppress contrary evidence. Prior local proofs and their stated limits remain; a missing connection in a thin representation must not automatically become a defect in the fuller proposed account.\n\n## Subsequent wording correction, 6 October 2026\n\nRen's exact follow-up message:\n\n> \"付费记录\"? 这个词选的很诡异，太市场了，不够基本\n\nAI interpretation and implementation: the assistant had elevated a local model's resource-consuming write into the foundational phrase “付费记录”. Describe the basic relation as activity changing subsequent conditions, with some changes persisting and participating in later activity. Explain when this develops into retention, memory or a record. Describe concrete resource consumption at the level where the model specifies it; neither monetary payment nor a universally positive resource cost belongs in the definition of recording. The original message and earlier source context above are preserved.\n"
+          },
+          {
+            "before": "activity changing subsequent conditions, with some changes persisting and participating in later activity",
+            "after": "activity forming, maintaining or changing the conditions of subsequent activity, with some effects continuing and participating in later activity"
+          }
+        ]
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+        "before_sha256": "a2eaeee744ef82f9d06907e961d052a1669df991b268880e3346fab58bbf98e2",
+        "after_sha256": "8d5bf4fe5063f2f4709e955bb90a1704416595dcc1b9afa560d6cc5e53fcb5e0",
+        "replacements": [
+          {
+            "before": "## Make analytical separations accountable",
+            "after": "## Keep foundational language at the right level\n\n[Ren's terminology correction](../../../sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md#subsequent-wording-correction-6-october-2026) rejects “付费记录” as too market-like and insufficiently basic. Begin with activity changing subsequent conditions; some changes persist and participate in later activity. This does not yet posit a separate recorder, a representation or a subject remembering an object. Explain the specific relations that constitute retention, memory or a record where those descriptions apply.\n\nUse “记录的形成与更新” / “record formation and updating” when describing the formed learner. Its selected write rule consumes one fuel unit; that is a local mechanism detail, not the meaning of recording. Retention may involve maintenance, decay or transformation, whose conditions must be explained in the relevant process. Do not promote payment, a fixed resource budget or a universally positive cost into a generative primitive. Existing names such as `paid`, `rent` and `lease` remain traceable local-model vocabulary; their presence in source code does not establish market organization at the foundation.\n\n## Make analytical separations accountable"
+          },
+          {
+            "before": "A paid write changes the record, available fuel, phase and future command together.",
+            "after": "The record update changes the retained score, available fuel, phase and future command together; the selected local rule consumes one fuel unit."
+          },
+          {
+            "before": "Begin with activity changing subsequent conditions; some changes persist and participate in later activity.",
+            "after": "Begin with activity forming, maintaining or changing the conditions of subsequent activity; some effects continue and participate in later activity."
+          }
+        ]
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-CONTINUATION.md",
+        "before_sha256": "41745e4528ea4271901d6e0679f7b6c0c238f35fb8be3ebf80851c0a2949573c",
+        "after_sha256": "dc1bd43c5bf5e1102135bfd6eecdd40c480390dfcf9d265718a8a10dae9cbfed",
+        "replacements": [
+          {
+            "before": "## 3. 一个已经存在、可以逐状态检查的同一历程",
+            "after": "## 3. 一个已经存在、可以逐状态检查的同一历程\n\n**依 Ren 后续用词修正：** 基本关系应表述为“活动改变后续条件；其中有些改变得以延续，并参与后续活动”。什么情况下这种延续构成记录、记忆或表征，需要继续说明。这里所选学习者通过写入更新记录，且该局部规则消耗一个燃料单位；不能把这一细节提升为“付费记录”这样的基础概念，也不能由此断言所有记录都必须主动维持或具有统一的正成本。"
+          },
+          {
+            "before": "实际记录、付费写入、改正命令和续存历史",
+            "after": "记录形成与更新、命令改正和续存的历史"
+          },
+          {
+            "before": "也经付费写入改变保留的分数",
+            "after": "也经写入改变保留的分数"
+          },
+          {
+            "before": "写入有成本",
+            "after": "该模型的写入消耗一个燃料单位"
+          },
+          {
+            "before": "R --> M[\"付费写入的记录\"]",
+            "after": "R --> M[\"记录的形成与更新\"]"
+          },
+          {
+            "before": "燃料回款",
+            "after": "燃料补充"
+          },
+          {
+            "before": "给定事件律、付费记录与命令／回执之间的具体关系",
+            "after": "给定事件律、记录形成与命令／回执之间的具体关系"
+          },
+          {
+            "before": "| 付费写入新取得的回执 |",
+            "after": "| 将新取得的回执写入记录 |"
+          },
+          {
+            "before": "是否偷改过去或免费取得记录",
+            "after": "是否改写过去或绕过已指定的写入条件"
+          },
+          {
+            "before": "这里的付费学习器",
+            "after": "这里的物质学习器"
+          },
+          {
+            "before": "活动改变后续条件；其中有些改变得以延续，并参与后续活动",
+            "after": "活动形成、维持或改变后续活动的条件；其中一些作用得以延续，并参与后续活动"
+          }
+        ]
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-MECHANISM.md",
+        "before_sha256": "fae122e29e3bd06f11ae58f5a122f193127c040a4b11dd20644a5997c3010aff",
+        "after_sha256": "c6ac834a14153944e8d858378cc6eb2803e51f818d1d4a1bb246567870f43081",
+        "replacements": [
+          {
+            "before": "下一次付费写入",
+            "after": "下一次记录更新"
+          },
+          {
+            "before": "后续真实回款",
+            "after": "后续实际资源补充"
+          },
+          {
+            "before": "同时支付一个燃料单位",
+            "after": "同时消耗一个燃料单位"
+          },
+          {
+            "before": "有回款则续为",
+            "after": "资源补充成功则续为"
+          },
+          {
+            "before": "write 只能从 observed 出发且必须付得起",
+            "after": "write 只能从 observed 出发且须满足指定的燃料条件"
+          },
+          {
+            "before": "有源包并预付三单位",
+            "after": "有源包，且 work 开始时扣除三单位燃料"
+          },
+          {
+            "before": "花费资源的物质活动",
+            "after": "消耗资源的物质活动"
+          },
+          {
+            "before": "后续回款与租期续存",
+            "after": "后续资源补充与支持期限延续"
+          },
+          {
+            "before": "last 指涉、资金、租期",
+            "after": "last 指涉、可用燃料、租期"
+          },
+          {
+            "before": "刚发生的回款与否",
+            "after": "刚发生的资源补充与否"
+          },
+          {
+            "before": "钱够却材料不足",
+            "after": "燃料足够却缺少所需部件"
+          },
+          {
+            "before": "同时支付原托管成本",
+            "after": "同时消耗原先预留的资源"
+          },
+          {
+            "before": "剩余托管款仍可支付 acquisition/write 结算",
+            "after": "剩余预留资源仍能支持 acquisition/write 步骤"
+          },
+          {
+            "before": "**认识形成后仍可能没钱使用。**",
+            "after": "**认识形成后仍可能缺少行动所需的资源。**"
+          },
+          {
+            "before": "21 单位初始流动资金",
+            "after": "21 单位初始可用燃料"
+          },
+          {
+            "before": "却无法预付接下来的响应",
+            "after": "却不足以执行接下来的响应"
+          },
+          {
+            "before": "## 1. 选定的同一实际历史",
+            "after": "用词修正：本文按 Ren 后续要求，将“付费”“回款”等市场化表述改为对应的记录更新、资源消耗和资源补充。具体数值、事件律和代码标识符保持不变；原模型的 `rent`、支持租期和托管结构只是该实现的命名与安排，不作为生成核心的基本范畴。早先审查记录保留当时措辞。\n\n## 1. 选定的同一实际历史"
+          }
+        ]
+      },
+      {
+        "path": "RESEARCH.md",
+        "before_sha256": "ef55b03ab4a33e3ce0da8bcc125fefee2f24c8122992f7271bdc2a6ba7230478",
+        "after_sha256": "d99c632f34d1f79f09740da023828cd64094c1af1f3ca09c1e8ac9f62d261ac3",
+        "replacements": [
+          {
+            "before": "同一实际回执、资源变化、付费记录和后续行动的共同历程",
+            "after": "同一实际回执、资源变化、记录形成与后续行动的共同历程。按 Ren 后续用词修正，基本表述回到改变的延续及其对后续活动的作用，具体资源消耗留在局部机制中"
+          }
+        ]
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/README.md",
+        "before_sha256": "34cfb16c9c8164b78d7a2a747cb4757783bb8f9cafde078045794e6d38f004ef",
+        "after_sha256": "514eeb20f757ea200e4050c4b5839875d3d610f527dbb1aad2c074297bdb9396",
+        "replacements": [
+          {
+            "before": "reconstructs the existing paid learning history as dependent articulations",
+            "after": "reconstructs the existing history of record formation and use as dependent articulations"
+          }
+        ]
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "before_sha256": "d31adc2aa7b6a6ed38697664e62d7b293ea185f1a1ef6800dce17c87774c437b",
+        "after_sha256": "72b095044ae07951cb9064393aaf54b5b967c1a86e6bb9c06c207e6f98828041",
+        "replacements": [
+          {
+            "before": "实际取得—写入—改正—回款历史",
+            "after": "实际取得—写入—改正—资源补充历史"
+          }
+        ]
+      }
+    ],
+    "validation": {
+      "status": "passed",
+      "checked_at_utc": "2026-10-06T06:48:15.871236+00:00",
+      "documents_checked": 7,
+      "links_in_replacement_text_checked": 3,
+      "new_scientific_runs": 0,
+      "errors": []
+    }
+  }
+}

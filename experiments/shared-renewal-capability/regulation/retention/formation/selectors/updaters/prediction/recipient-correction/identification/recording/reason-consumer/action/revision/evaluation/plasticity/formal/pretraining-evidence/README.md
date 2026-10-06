@@ -1,0 +1,11 @@
+# Retained evidence before further teaching
+
+6 October 2026. Additive investigation of the unchanged plasticity law. The [proof module](../PretrainingEvidence.lean) imports the original witness; [the mechanism note](../../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-MECHANISM.md) explains its source and interpretation scopes.
+
+For complete faithful non-replacement pairs starting before count four, the proof conserves recipient stock plus twice occupied sockets. From the actual empty-socket entrance with stock 40, occupancy therefore identifies net teaching depletion exactly. Sixteen audited theorems also connect the actual count-four state, cleared latches, retained replacement parts and the distinct service/teaching guards. No existing event uses the new mathematical cumulative readout. No ethical premise is proved.
+
+The [fresh check](check.py) builds the unchanged 26-module ancestor closure, the new proof, and [an enumeration driver](Enumeration.lean). It compares all 256 four-pair schedules against an independent integer/event reconstruction, 22 coordinates each. There are 176 complete words and 80 words stopped before a third binding; blocked histories remain recorded. The [receipt](verification.json) reports all source hashes, dependency unions and comparison rows. `new_axioms` in that receipt means the named dependencies of the new theorem audits (`propext`, `Quot.sound`), not newly declared axioms. The inherited development retains its own standard dependencies.
+
+Run `python3 check.py` from this directory when a substantive change warrants fresh verification. Every run uses a fresh temporary build and preserves its logs and new source snapshots under `runs/`. It never updates the ancestor `verification.json`. The [development manifest](development/manifest.json) preserves the initial costly proof expansion and failed arithmetic goal as well as the repaired attempts.
+
+The record checks a scoped mathematical and computational relationship. It does not establish current reflective access, a paid decoder, felt deprivation, teaching consent, an early repair branch or a universal ethical ground.

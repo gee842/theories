@@ -1,0 +1,6 @@
+{
+  "request_id": "audit-w02-007",
+  "operation": "publish",
+  "version": "v1",
+  "expected_current": "v0"
+}

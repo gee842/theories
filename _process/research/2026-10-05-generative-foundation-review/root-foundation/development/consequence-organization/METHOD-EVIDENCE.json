@@ -1,0 +1,1297 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "scope": "Read-only extraction and current-byte binding of accepted source/results; no transition rerun, theorem or empirical result.",
+  "receipt_bound_sources": 5,
+  "source_mismatches": [],
+  "artifact_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py": "f2bcc85688975d9a6e6fac4c0944e5b4f6ce0ede779707719c41428db3a4d303",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/results.json": "2b0afb08f3507eaf2de3126dcc43a3dca8dd65ff6603658ee8aae697e42263e4",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/independent-check.json": "343271383adae738f6fcbf7a0541d399fa85ad4d19942fcea33803403f40ef97"
+  },
+  "extractor_sha256": "ad5d4ae8795273fa44c9d99145f7bd1b5118f2ddf5521e2715f42f64041782fa",
+  "inherited_handoff": {
+    "original_history": {
+      "original_energy": 145,
+      "preparation_spent": 4,
+      "old_adapter_spent": 1,
+      "operational_spent": 74,
+      "waste": 10,
+      "fuel": 36,
+      "source": 20,
+      "probability": "1/36",
+      "commissioning_probability": "2/9",
+      "unsuccessful_preparation_probability": "7/9",
+      "initial_blank_workspace_cartridges": 1,
+      "inherited_state": {
+        "fuel": 36,
+        "gate": 1,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "prelearn": true,
+        "stale": 1,
+        "corrected": true,
+        "witness": true
+      },
+      "preparation_record": {
+        "state": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          20,
+          120
+        ],
+        "probability": "2/9",
+        "commissioned": true,
+        "preparation_spent": 4,
+        "remaining_energy": 141,
+        "reserve": 20,
+        "packets": 12,
+        "remainder": 0,
+        "transformed_A": 1,
+        "transformed_H": 1,
+        "backing_slots": 2
+      },
+      "path": [
+        {
+          "exposure": 1,
+          "state": {
+            "fuel": 17,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": false,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1/4"
+        },
+        {
+          "exposure": 2,
+          "state": {
+            "fuel": 20,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 3,
+          "state": {
+            "fuel": 23,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 4,
+          "state": {
+            "fuel": 26,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 5,
+          "state": {
+            "fuel": 29,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 6,
+          "state": {
+            "fuel": 32,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": -1,
+            "corrected": false,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 7,
+          "state": {
+            "fuel": 27,
+            "gate": 1,
+            "gate_life": 1,
+            "stage": 2,
+            "life": 5,
+            "q": 0,
+            "last": 1,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": false
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 8,
+          "state": {
+            "fuel": 30,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": true
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 9,
+          "state": {
+            "fuel": 33,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": true
+          },
+          "probability": "1"
+        },
+        {
+          "exposure": 10,
+          "state": {
+            "fuel": 36,
+            "gate": 1,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "prelearn": true,
+            "stale": 1,
+            "corrected": true,
+            "witness": true
+          },
+          "probability": "1"
+        }
+      ],
+      "source_hashes": {
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+        "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+        "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+      }
+    },
+    "old_acquisition_spent": "1984289/65536",
+    "fuel": "1030367/65536",
+    "source": 10,
+    "environment_phase": 2,
+    "learned_machine": {
+      "alphabet": [
+        "a"
+      ],
+      "outputs": [
+        0,
+        0,
+        1
+      ],
+      "transitions": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "initial": 0
+    },
+    "live_cells": 15,
+    "capacity": 256,
+    "old_discarded_archive_sizes": [
+      0,
+      0,
+      0
+    ],
+    "source_hashes": {
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+      "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+      "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+      "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+    }
+  },
+  "stored_selected_fixtures": {
+    "three_first_0": {
+      "status": "complete",
+      "receipt": 1,
+      "archive": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "method_edge": [
+        1,
+        0,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 0,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            1,
+            0,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "retired_edges": [],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 0
+        },
+        {
+          "stage": "later_use",
+          "source": 1,
+          "recipe": 0
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 0
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "retained": true,
+      "predictively_equivalent": true,
+      "starting_fuel": "1030367/65536",
+      "spent": "711839/65536",
+      "fuel": "15217/1024",
+      "income": "10",
+      "wasted": 0,
+      "source_remaining": 0,
+      "live_cells": 43,
+      "peak_cells": 52
+    },
+    "three_first_1": {
+      "status": "complete",
+      "receipt": 1,
+      "archive": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "method_edge": [
+        1,
+        1,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            1,
+            1,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "retired_edges": [],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 1,
+          "recipe": 1
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 0
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "retained": true,
+      "predictively_equivalent": true,
+      "starting_fuel": "1030367/65536",
+      "spent": "908589/65536",
+      "fuel": "388569/32768",
+      "income": "10",
+      "wasted": 0,
+      "source_remaining": 0,
+      "live_cells": 43,
+      "peak_cells": 61
+    },
+    "four_first_0": {
+      "status": "complete",
+      "receipt": 0,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "method_edge": [
+        0,
+        1,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": null
+        },
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "retired_edges": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 0,
+        "family": 1
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 0,
+        "observed": 0
+      },
+      "retained": true,
+      "predictively_equivalent": true,
+      "starting_fuel": "1030367/65536",
+      "spent": "513079/32768",
+      "fuel": "4209/65536",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 52,
+      "peak_cells": 63,
+      "native_trace": [
+        {
+          "command": "reset",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "probe",
+          "observation": 0
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        },
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 0
+        }
+      ],
+      "stored_event_counts": {
+        "formation_controller_installation": 1,
+        "derive_positive_plan": 1,
+        "native_reset": 1,
+        "native_a": 8,
+        "native_probe": 1,
+        "arrival_receipt": 1,
+        "store_receipt": 1,
+        "native_read": 7,
+        "append_archive_bit": 6,
+        "retain_acquired_record": 1,
+        "propose_output_port": 2,
+        "form_method_edge": 2,
+        "read_formed_edge": 3,
+        "dispatch_formed_generator": 3,
+        "mark_tried_output": 2,
+        "allocate_survivor_register": 3,
+        "generate_candidate_descriptor": 34,
+        "compare_archived_bit": 73,
+        "advance_replay_candidate": 39,
+        "assess_replayed_family": 3,
+        "remove_contradicted_edge": 1,
+        "discard_trial_storage": 2,
+        "generate_stutter_model": 2,
+        "store_compatible_candidate": 2,
+        "retain_accepted_edge": 1,
+        "compact_formed_method_result": 1,
+        "retain_formed_method_result": 1,
+        "plan_forward_prediction": 1,
+        "commit_use_cursor": 1,
+        "compare_forward_prediction": 1,
+        "retain_after_use": 1
+      }
+    },
+    "four_first_1": {
+      "status": "complete",
+      "receipt": 0,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "method_edge": [
+        0,
+        1,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "retired_edges": [],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 0,
+        "family": 1
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 0,
+        "observed": 0
+      },
+      "retained": true,
+      "predictively_equivalent": true,
+      "starting_fuel": "1030367/65536",
+      "spent": "940255/65536",
+      "fuel": "11/8",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 52,
+      "peak_cells": 63
+    },
+    "formation_clamped": {
+      "status": "no_bound_method_edge",
+      "receipt": 0,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "method_edge": null,
+      "edge_retained": false,
+      "accepted_recipe": null,
+      "trials": [],
+      "retired_edges": [],
+      "invocations": [],
+      "selected": null,
+      "use_confirmed": false,
+      "use_receipt": null,
+      "retained": false,
+      "predictively_equivalent": null,
+      "starting_fuel": "1030367/65536",
+      "spent": "198393/32768",
+      "fuel": "633581/65536",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 41,
+      "peak_cells": 47
+    },
+    "source_port_mismatch": {
+      "status": "method_edge_receipt_mismatch",
+      "receipt": 0,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "method_edge": [
+        1,
+        0,
+        1
+      ],
+      "edge_retained": false,
+      "accepted_recipe": null,
+      "trials": [],
+      "retired_edges": [],
+      "invocations": [],
+      "selected": null,
+      "use_confirmed": false,
+      "use_receipt": null,
+      "retained": false,
+      "predictively_equivalent": null,
+      "starting_fuel": "1030367/65536",
+      "spent": "198393/32768",
+      "fuel": "633581/65536",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 41,
+      "peak_cells": 47
+    },
+    "accepted_edge_broken": {
+      "status": "no_bound_method_edge",
+      "receipt": 0,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "method_edge": [
+        0,
+        1,
+        0
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": null
+        },
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "retired_edges": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        }
+      ],
+      "selected": null,
+      "use_confirmed": false,
+      "use_receipt": null,
+      "retained": false,
+      "predictively_equivalent": null,
+      "starting_fuel": "1030367/65536",
+      "spent": "168377/16384",
+      "fuel": "356859/65536",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 41,
+      "peak_cells": 59
+    },
+    "first_destination_swapped": {
+      "status": "complete",
+      "receipt": 0,
+      "archive": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "method_edge": [
+        0,
+        1,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            2
+          ]
+        }
+      ],
+      "retired_edges": [],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 0,
+        "family": 1
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 0,
+        "observed": 0
+      },
+      "retained": true,
+      "predictively_equivalent": true,
+      "starting_fuel": "1030367/65536",
+      "spent": "940255/65536",
+      "fuel": "11/8",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 52,
+      "peak_cells": 63
+    },
+    "transfer_blocked": {
+      "status": "complete",
+      "receipt": 0,
+      "archive": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "method_edge": [
+        0,
+        0,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 0,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "retired_edges": [],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 0
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 0
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "retained": true,
+      "predictively_equivalent": true,
+      "starting_fuel": "1030367/65536",
+      "spent": "711839/65536",
+      "fuel": "4977/1024",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 43,
+      "peak_cells": 52
+    },
+    "outside_five": {
+      "status": "use_prediction_mismatch",
+      "receipt": 0,
+      "archive": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "method_edge": [
+        0,
+        1,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 1,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            0,
+            0,
+            1
+          ],
+          "survivor": null
+        },
+        {
+          "recipe": 1,
+          "edge": [
+            0,
+            1,
+            1
+          ],
+          "survivor": [
+            2,
+            3
+          ]
+        }
+      ],
+      "retired_edges": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 0
+        },
+        {
+          "stage": "trial",
+          "source": 0,
+          "recipe": 1
+        },
+        {
+          "stage": "later_use",
+          "source": 0,
+          "recipe": 1
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 1
+      },
+      "use_confirmed": false,
+      "use_receipt": {
+        "expected": 1,
+        "observed": 0
+      },
+      "retained": false,
+      "predictively_equivalent": false,
+      "starting_fuel": "1030367/65536",
+      "spent": "485891/32768",
+      "fuel": "58585/65536",
+      "income": "0",
+      "wasted": 10,
+      "source_remaining": 0,
+      "live_cells": 52,
+      "peak_cells": 63
+    },
+    "outside_delayed": {
+      "status": "complete",
+      "receipt": 1,
+      "archive": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "method_edge": [
+        1,
+        0,
+        1
+      ],
+      "edge_retained": true,
+      "accepted_recipe": 0,
+      "trials": [
+        {
+          "recipe": 0,
+          "edge": [
+            1,
+            0,
+            1
+          ],
+          "survivor": [
+            0,
+            1
+          ]
+        }
+      ],
+      "retired_edges": [],
+      "invocations": [
+        {
+          "stage": "trial",
+          "source": 1,
+          "recipe": 0
+        },
+        {
+          "stage": "later_use",
+          "source": 1,
+          "recipe": 0
+        }
+      ],
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 0
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "retained": true,
+      "predictively_equivalent": false,
+      "starting_fuel": "1030367/65536",
+      "spent": "711839/65536",
+      "fuel": "15217/1024",
+      "income": "10",
+      "wasted": 0,
+      "source_remaining": 0,
+      "live_cells": 43,
+      "peak_cells": 52
+    }
+  }
+}

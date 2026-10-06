@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "method": "Independent read-only iteration over every preservation entry; repository reconstruction bytes and still-present terminal case bytes both match saved SHA-256 and size. No scientific program executed.",
+  "preservation_sha256": "7cb33d6f1b79f36c56814e3eb033d631c86022b5ed35a93195379417c97f57f5",
+  "preserver_sha256": "49d9f061d19ab74651e353841c19762f563870846428f680a906785096bcb8a6",
+  "cases": 4,
+  "file_bindings": 8149,
+  "unique_reconstruction_paths": 540,
+  "limitations": "This checks all regular files listed at terminal capture, not the absence of unobserved intermediate operations or native-host actions."
+}

@@ -1,0 +1,16 @@
+'NondualCore.Signals.support_iff_active_link' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NondualCore.Signals.pulse_iff_distinct_supports' depends on axioms: [propext, Quot.sound]
+'NondualCore.Signals.permitted_gives_actual_trace' depends on axioms: [propext]
+'NondualCore.Signals.formation_is_actual' depends on axioms: [propext]
+'NondualCore.Signals.both_responses_are_actual' depends on axioms: [propext]
+'NondualCore.Signals.dissolution_is_actual' depends on axioms: [propext]
+'NondualCore.Signals.composed_formation_response_dissolution' depends on axioms: [propext]
+'NondualCore.Signals.distinct_derived_supports_overlap' depends on axioms: [propext, Quot.sound]
+'NondualCore.Signals.no_capacity_at_origin' does not depend on any axioms
+'NondualCore.Signals.repeated_same_source_does_not_make_joint_support' does not depend on any axioms
+'NondualCore.Signals.each_formed_support_link_is_needed' does not depend on any axioms
+'NondualCore.Signals.response_has_actual_effects' depends on axioms: [propext, Quot.sound]
+'NondualCore.Signals.dissolution_changes_capacity_preserving_activity' does not depend on any axioms
+'NondualCore.Signals.no_activity_only_capacity_report' does not depend on any axioms
+'NondualCore.Signals.rewiring_and_role_change_are_actual' depends on axioms: [propext]
+'NondualCore.Signals.affected_node_becomes_effective_contributor' depends on axioms: [propext, Quot.sound]

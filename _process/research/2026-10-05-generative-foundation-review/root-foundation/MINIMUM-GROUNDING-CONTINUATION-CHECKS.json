@@ -1,0 +1,378 @@
+{
+  "scope": "New philosophical notes, source README, exact recorded insertions and preserved bytes; no scientific or Lean verification in this round.",
+  "passed": true,
+  "links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "target": "PRACTICAL-UPTAKE-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "target": "ETHICAL-CONSTITUTION-CLOSURE.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#a-reason-to-begin-before-a-joint-response-exists",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "target": "RESPONSIVE-FORMATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "target": "ASSISTANCE-JURISDICTION-COUNTERREVIEW.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#23-procedural-standing-without-a-right-to-win",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md#correct-command-withdrawn-application",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "ASSISTANCE-JURISDICTION-COUNTERREVIEW.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "ETHICAL-CONSTITUTION-CLOSURE.md#6-the-formal-interface-needs-a-declared-meaning-of-current-justification",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "ASSISTANCE-JURISDICTION-SOURCES.md#1-adams-an-exclusion-can-affect-justification-itself",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "ASSISTANCE-JURISDICTION-SOURCES.md#6-access-preservation-and-review-receipt",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "target": "DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "target": "NONINSTRUMENTAL-ROOT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "target": "ETHICAL-CONSTITUTION-CLOSURE.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "target": "../../../../sources/37-ethical-minimum-primary-2026-10-06/README.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "SELF-ACQUISITION-BRIDGE.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "DIRECT-GROUNDING-EPISTEMOLOGY.md#a-prospective-first-step-with-a-definite-way-to-be-mistaken",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "DIRECT-GROUNDING-EPISTEMOLOGY.md#2-new-primary-comparison",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "../../../../sources/37-ethical-minimum-primary-2026-10-06/README.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "MINIMUM-GROUNDING-CONTINUATION-CHECKS.json",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md#a-settled-allocation-and-a-new-relief-opportunity",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#test-exclusion-against-the-actual-response",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "development/MINIMUM-GROUNDING-BEFORE.json",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "MINIMUM-GROUNDING-CONTINUATION-EDITS.json",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "target": "check_minimum_grounding.py",
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "sources/37-ethical-minimum-primary-2026-10-06/README.md",
+      "target": "mcmahan-2021-suffering-and-moral-status-author-hosted.pdf",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "passed": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md#a-settled-allocation-and-a-new-relief-opportunity",
+      "passed": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "MINIMUM-GROUNDING-CONTINUATION.md",
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "37-ethical-minimum-primary-2026-10-06/README.md",
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "passed": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "passed": true
+    }
+  ],
+  "preservation": [
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIVERSAL-ETHICAL-MINIMUM-BEFORE-MINIMUM-GROUNDING.md",
+      "sha256": "65a3775025c74023c08b74dfdbda13e772243610296652b71afff2d0431fd3cc",
+      "passed": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-MINIMUM-GROUNDING.md",
+      "sha256": "c34dc1e8b474d095bfc6e576a3b99b7187eddcf8775b40d9aeb5cdab6de1b25d",
+      "passed": true
+    },
+    {
+      "file": "sources/37-ethical-minimum-primary-2026-10-06/mcmahan-2021-suffering-and-moral-status-author-hosted.pdf",
+      "sha256": "12a05b6373369b04159e787db0af78ccaedf98eedb670e443a83608db9ab37eb",
+      "bytes": 268501,
+      "passed": true
+    }
+  ],
+  "scoped_edits_recoverable": true,
+  "current_files": [
+    {
+      "file": "RESEARCH.md",
+      "sha256": "80438f331ae7a98441df281127be4e72070ed8145817b824a4da2bfad6bddf4b"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+      "sha256": "c74bd2635827a53af7991b9b05be08e8101e73d3e81dc796551fdf3b6d5d05fe"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+      "sha256": "49817951d35e8a53fcf3a919a58034e0a3b2502c1ba7707e071cf585758fdef7"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+      "sha256": "6ae460e7ef4203899b6d41e1dd277912a139c033b5903d6c830ed020d166a6ae"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+      "sha256": "f2ac8c39a2492ea24b41a29b2130ca261b2157def900e44be400156afd5c235a"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "bafe3a62c405e2f93ffbfd780b9dfcf759d8f3b1f52958c57f73a82ea7363ea9"
+    },
+    {
+      "file": "sources/37-ethical-minimum-primary-2026-10-06/README.md",
+      "sha256": "4f0a340e9216591cdeb44c64eb2c24dbecddf8124e438b5de7344df03d93822e"
+    },
+    {
+      "file": "sources/SOURCES.md",
+      "sha256": "25ee0f95a31468ed4439ce0e592446da62707b8cb7113a8480478533928eda3f"
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "efa407692f83228e90efc557f344b753fa617ec1dc930de9d38978a5b83b4bb0"
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "2b3b42835021575f630bb6dfd3b1eed10815fc52b9e046a83cd082b3b2418d0c"
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "sha256": "81edb2b4a8a5f1b5bdbad80693c411a25778b5f67fbf98ec469a2e81b0dfa804"
+    }
+  ],
+  "internal_review": {
+    "scope": "Internal AI argument and source checks, not external peer review or validation of ethical truth.",
+    "reciprocal_note_review": "Passed with the fair-draw permission/exclusion clarification incorporated.",
+    "final_source_and_canonical_review": "Passed; clarified that the allocation comparison preserves the possibility of genuine exclusion, rather than establishing it.",
+    "parent_primary_check": "Central epistemic qualifications and McMahan causing-versus-relieving scope checked."
+  },
+  "errors": []
+}

@@ -1,0 +1,44 @@
+{
+  "author": "Rahul Kumar",
+  "title": "Risking Future Generations",
+  "journal": "Ethical Theory and Moral Practice",
+  "volume": 21,
+  "issue": 2,
+  "year": 2018,
+  "pages": "245–257",
+  "doi": "10.1007/s10677-018-9880-z",
+  "accepted": "2018-03-06",
+  "published_online": "2018-03-25",
+  "publisher_url": "https://link.springer.com/article/10.1007/s10677-018-9880-z",
+  "author_profile_url": "https://queensu.academia.edu/RahulKumar",
+  "author_upload_url": "https://www.academia.edu/36279682/Risking_Future_Generations_Ethical_Theory_and_Moral_Practice_",
+  "access_date": "2026-10-06",
+  "version_read": "Author-posted personal-copy text exposed by public Academia HTML extraction; journal metadata checked against publisher. No original PDF or facsimile reading claimed.",
+  "preservation_status": "Link-only. Web-tool extraction made the full main argument and notes readable, but ordinary author-upload HTML retrieval returned HTTP403. No original source bytes or source SHA256 are preserved.",
+  "retrieval": {
+    "attempted_at_utc": "2026-10-06T10:16:27.439232+00:00",
+    "requested_url": "https://www.academia.edu/36279682/Risking_Future_Generations_Ethical_Theory_and_Moral_Practice_",
+    "error_type": "HTTPError",
+    "error": "HTTP Error 403: Forbidden",
+    "preservation_status": "Link-only: ordinary original retrieval failed; no source bytes or source hash."
+  },
+  "investigator_reading_scope": "Complete main argument and notes1–16, with references, through two overlapping direct web opens of the author-posted text. Initial extraction lines0–101; positioned extraction lines31–130. The unnumbered argument includes the opening Risky Policy case, generic standpoints, ex ante risk, non-identity and entitlement, anticipated waiver/regret, default moral relationship, and conclusion. This is full-text extraction reading, not a visual PDF reading.",
+  "root_independent_reading_scope": "Selected author-upload passages only: extraction lines 32–49, 74–93 (including notes 11–13), and 103–125, read through direct web opens. An initial lines 31–130 output was supplemented by a focused lines 66–114 output to resolve middle truncation. No complete-article, PDF or visual facsimile reading is credited to root.",
+  "recommended_independent_passages": [
+    {
+      "anchor": "Taking a particular course of action to be permitted by a principle",
+      "extraction_lines": "32–49",
+      "purpose": "Generic permissions and representative standpoints; note6 relevance constraint."
+    },
+    {
+      "anchor": "First, recall that contractualist thinking sees guidance",
+      "extraction_lines": "74–93",
+      "purpose": "Actual entitlement and standpoint instantiation; explicit note11 exclusion of existence-interest, note12 uninstantiated wronging, and alternative-principle comparison."
+    },
+    {
+      "anchor": "Contractualism portrays all human beings as standing",
+      "extraction_lines": "103–125",
+      "purpose": "Default moral relationship, future-person application, and claimed continuity with general risk account."
+    }
+  ]
+}

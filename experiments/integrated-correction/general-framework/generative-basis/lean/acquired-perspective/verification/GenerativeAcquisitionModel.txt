@@ -1,0 +1,3 @@
+'Generative.Model.Acquisition.correction_and_use_trace' depends on axioms: [propext]
+'Generative.Model.Acquisition.formed_acquisition_and_use' depends on axioms: [propext]
+'Generative.Model.Acquisition.acquired_representation_and_actual_use' depends on axioms: [propext]

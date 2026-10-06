@@ -1,0 +1,114 @@
+{
+  "GenerativeCore": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "FormedSelection": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+    "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+  },
+  "RecipientCorrection": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean",
+    "sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1"
+  },
+  "RecipientIdentification": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean",
+    "sha256": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8"
+  },
+  "EmissionArchive": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean",
+    "sha256": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d"
+  },
+  "RecipientArchive": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean",
+    "sha256": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0"
+  },
+  "ArchivePreparation": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean",
+    "sha256": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248"
+  },
+  "PaidArchiveReader": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean",
+    "sha256": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9"
+  },
+  "RecordedEvidence": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean",
+    "sha256": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9"
+  },
+  "ReasonReplay": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean",
+    "sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20"
+  },
+  "RecipientReasons": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean",
+    "sha256": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d"
+  },
+  "PaidRecipientReasons": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean",
+    "sha256": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218"
+  },
+  "ReasonPreparation": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean",
+    "sha256": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6"
+  },
+  "ReasonReplayBridge": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean",
+    "sha256": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e"
+  },
+  "RecipientAction": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean",
+    "sha256": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b"
+  },
+  "ActionPreparation": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+    "sha256": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f"
+  },
+  "ActionWitness": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean",
+    "sha256": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7"
+  },
+  "PublicationSafety": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean",
+    "sha256": "27f5be6e07bbaad59101ff24c41e0513f573949b7acd80c94bd8b8b2f760c2fd"
+  },
+  "PublicationBudget": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean",
+    "sha256": "a947733ac7394a00d90c8be94410aaf27324f7d9b418d8be07aae5dad9f21f97"
+  },
+  "PublicationBridge": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean",
+    "sha256": "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538"
+  },
+  "RevisionPreparation": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+    "sha256": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94"
+  },
+  "FreshRevision": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean",
+    "sha256": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38"
+  },
+  "RevisionWitness": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean",
+    "sha256": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f"
+  },
+  "PlasticityPreparation": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean",
+    "sha256": "d981b4cbe24b781fd5ceb79e0778d91a9fcb32b98e303d08c5bd0565244a7867"
+  },
+  "PairedPlasticity": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
+    "sha256": "6ce4f08cb9f2b497a409482bbfc2281fd6d83a5efad14d2cabb7fbc2d3792b83"
+  },
+  "PlasticityWitness": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
+    "sha256": "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a"
+  },
+  "CoupledOccurrence": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+    "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e"
+  },
+  "CoupledConcernHistory": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean",
+    "sha256": "fc1123bb28126ad18c457fffcebb78452f3448a6da136dfff6955dfbc2f373cd"
+  }
+}

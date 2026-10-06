@@ -1,0 +1,7 @@
+'Generative.Deeper.leaf_diagonal' does not depend on any axioms
+'Generative.Deeper.diagonal_injective' does not depend on any axioms
+'Generative.Deeper.tower_nonempty_iff' does not depend on any axioms
+'Generative.Deeper.tower_subsingleton' does not depend on any axioms
+'Generative.Deeper.tower_subsingleton_iff' does not depend on any axioms
+'Generative.Deeper.tower_empty_iff' does not depend on any axioms
+'Generative.Deeper.seed_distinction_persists' does not depend on any axioms

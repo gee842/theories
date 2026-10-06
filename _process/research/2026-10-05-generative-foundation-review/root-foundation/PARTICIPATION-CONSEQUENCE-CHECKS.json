@@ -1,0 +1,460 @@
+{
+  "checked_at_utc": "2026-10-06T06:58:27.751893+00:00",
+  "status": "passed",
+  "scope": "Evidence bindings, saved-result extraction and scoped link check only; no new scientific validation.",
+  "source_package_files_verified": 10,
+  "original_model_source_bindings_verified": {
+    "witness.json": 10,
+    "results.json": 10,
+    "independent-check.json": 14,
+    "handoff-check.json": 14
+  },
+  "matched_saved_arms": 5,
+  "saved_trace_events": 30,
+  "new_theorems": 0,
+  "original_model_modified": false,
+  "simulation_rerun": false,
+  "new_empirical_data": false,
+  "assumption_free_foundation_established": false,
+  "next_connection": "Consequence-sensitive formation/revision of relevant access, target differentiation and acquisition practices, with affected organizational continuation identified where claimed.",
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "sha256": "f3703d362543bb62f518118a95b91d5f6ad7ca745da6b76cf929417536cadc7c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "sha256": "cfeb17bab47c4f5a45f22320095c6dfea43cb8291eee3e831758d500fb87f6ec"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "sha256": "bff793306cf5ea1cff15f18be14e168b35cf9c8a3d86c862699efc93bd29faf9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "sha256": "4a30c43725d3bdd4cc3b380e0b3f37fac656302310501179df1ea4af6420c588"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "sha256": "3a719832ca9f7c17ea5f339605d289eb42c7d1309f250ce51656c62473218de0"
+    },
+    {
+      "path": "sources/38-participation-consequence-2026-10-06/README.md",
+      "sha256": "ff5e7b472553d9ed627bf26f472d734103ec98d71fd9918b1c35a05177f85ac2"
+    }
+  ],
+  "canonical_edits": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "6a2607dd4460546c63c8789403ae2eefe41c2e8250c300047829f4c2659f9f6d",
+      "own_fragment_present": true,
+      "whole_file_matches_immediate_post_edit": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha256": "b6d53a0433d07923397ff5074106f2f6f1d41ba0215f943ae82e3185b1d853e9",
+      "own_fragment_present": true,
+      "whole_file_matches_immediate_post_edit": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "dad73595561517da346a57bc5b96340ef33583513297463966db5dfeb0c2f859",
+      "own_fragment_present": true,
+      "whole_file_matches_immediate_post_edit": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "8fc199be17b42cd4298d66b191ef8bbfccd511d82a047d0adc61cf9a5ddad5da",
+      "own_fragment_present": true,
+      "whole_file_matches_immediate_post_edit": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sha256": "739e0c85a81f241318721ac75a2dfc9092b6b947fc731f835ea72171565193bc",
+      "own_fragment_present": true,
+      "whole_file_matches_immediate_post_edit": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "sha256": "126a7f70cdec449c663217df657f9f97b5d9d34e0ab761699a142506b1dfc457",
+      "own_fragment_present": true,
+      "whole_file_matches_immediate_post_edit": true
+    }
+  ],
+  "local_links": [
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "SELF-ACQUISITION-BRIDGE.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "NONDUAL-TREE-MECHANISM.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "ARCHITECTURE-LEARNING-REVIEW.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "ARCHITECTURE-LEARNING-MATH.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/witness.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/model.py"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "development/participation-consequence/EXTRACTED-EVIDENCE.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/model.py"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/independent-check.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/handoff-check.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+      "target": "development/participation-consequence/extract_evidence.py"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "target": "SELF-ACQUISITION-BRIDGE.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/README.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-MECHANISM.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "NONDUAL-TREE-GENEALOGY.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "NONDUAL-TREE-MECHANISM.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "NONDUAL-APPLICABILITY-COMPARATORS.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../sources/38-participation-consequence-2026-10-06/original/kramar-alim-2021.pdf"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../sources/38-participation-consequence-2026-10-06/original/sonoda-2012.xml"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../sources/38-participation-consequence-2026-10-06/original/reiber-nogueira-2021.html"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../sources/38-participation-consequence-2026-10-06/metadata/criticism-reading.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../sources/38-participation-consequence-2026-10-06/README.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "NONDUAL-TREE-GENEALOGY.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "NONDUAL-TREE-MECHANISM.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "target": "NONDUAL-APPLICABILITY-COMPARATORS.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "SELF-ACQUISITION-BRIDGE.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "NONDUAL-TREE-CONTINUATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "NONDUAL-CORE-MATH.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/README.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "ARCHITECTURE-LEARNING-MATH.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/model.py"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "PRACTICAL-BOUNDARY-INTEGRATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "PARTICIPATION-CONSEQUENCE-MECHANISM.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "development/participation-consequence/extract_evidence.py"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "development/participation-consequence/EXTRACTED-EVIDENCE.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "../../../../sources/38-participation-consequence-2026-10-06/manifest.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+      "target": "PARTICIPATION-CONSEQUENCE-INTEGRATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-one-connected-generative-model.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "NONDUAL-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-MECHANISM.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "development/participation-consequence/EXTRACTED-EVIDENCE.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-REVIEW.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "../../../../sources/38-participation-consequence-2026-10-06/README.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PRACTICAL-BOUNDARY-INTEGRATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-CHECK.py"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-CHECKS.json"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-CANONICAL-EDITS.json"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "original/kramar-alim-2021.pdf"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "original/sonoda-2012.xml"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "original/reiber-nogueira-2021.html"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "metadata/retrieval.json"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "metadata/criticism-reading.json"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "reading/reiber-nogueira-2021.txt"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "metadata/reading-scope.json"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "reading/kramar-alim-2021.txt"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "reading/sonoda-2012.txt"
+    },
+    {
+      "owner": "sources/38-participation-consequence-2026-10-06/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md"
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md"
+    },
+    {
+      "owner": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md"
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#acquired-distinctions-change-enacted-participation"
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PARTICIPATION-CONSEQUENCE-MECHANISM.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PARTICIPATION-CONSEQUENCE-REVIEW.md"
+    },
+    {
+      "owner": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "PARTICIPATION-CONSEQUENCE-INTEGRATION.md"
+    },
+    {
+      "owner": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md"
+    },
+    {
+      "owner": "sources/SOURCES.md",
+      "target": "38-participation-consequence-2026-10-06/README.md"
+    },
+    {
+      "owner": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "sources/38-participation-consequence-2026-10-06/manifest.json",
+      "sha256": "a04e33513e8c5783cbd3801a70d538cbd2f97b779861637fc55435ea670a09e3"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/participation-consequence/extract_evidence.py",
+      "sha256": "1d7d21a1f0a177c9397b7d9110f5e02612650d99db8fe41584112bb18b300f50"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/participation-consequence/EXTRACTED-EVIDENCE.json",
+      "sha256": "74ebb9459c67d59aa91f04289f7fdc75ccbbb46e0223d72c093ba3ce2f57f119"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-CANONICAL-EDITS.json",
+      "sha256": "deec4448b6856239739fd3a38f1ccb850964fbc8450be1eb4b15965be393452b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-CHECK.py",
+      "sha256": "88c65c8387d54246d4ea4e3f09f7531deeab32be2ae0c7953cad5e56b724c54e"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+'Generative.InquirySufficiency.FiniteClassification.mem_cons_constructive' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.mem_map_constructive' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.states_complete' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.mem_collect_iff' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.decisionBit_true_iff' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.mem_enumerate_iff' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.beliefDecision' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.afterMembership' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.mem_successors_iff' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.actual_successor_retained' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.classifiedThrough' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.implication_iff_bounded_policy' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.boolean_initial_iff_bounded_policy' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.tableProcess' does not depend on any axioms
+'Generative.InquirySufficiency.FiniteClassification.boolean_model_iff_bounded_policy' does not depend on any axioms

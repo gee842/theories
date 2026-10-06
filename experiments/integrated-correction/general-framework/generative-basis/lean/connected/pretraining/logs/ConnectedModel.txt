@@ -1,0 +1,18 @@
+'Generative.ConnectedModel.permission_cut_step' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_trial_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_bank_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_step_preserves_patient' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_trace' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_connected_accounts' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.permission_cut_payload' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.short_trial_preserves_reader' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_prefix_to_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.reached_work_is_informed_and_affordable' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_cut_before_work' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_work_then_cut' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_paid_settlement_after_cut' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_joined_cut_settlement' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.actual_cut_all_continuations' depends on axioms: [propext, Quot.sound]
+'Generative.ConnectedModel.Actual.interpreted_fulfillment_does_not_change_existing_selector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,21 @@
+{
+  "task_name": "/root/continuation_large_transport",
+  "role": "One-message forwarding operator, not a tested participant or reviewer",
+  "reason": "Additional transport capacity to forward the saved large w01 response verbatim; original worker and protocol unchanged",
+  "source": "transcripts/w01/06.followup.txt",
+  "source_sha256": "8dfca08d7813faf831a80246c5e3b43591732d689a7fc8fd20fe4d9902ddb63f",
+  "source_bytes": 30457,
+  "operation": "collaboration.followup_task to existing /root/audit_continuation_w01",
+  "broker_operation_repeated": false,
+  "initial_dispatch_returned": {
+    "task_name": "/root/continuation_large_transport"
+  },
+  "timing": "After policy/mechanism/scorer freeze and after request6 was already executed",
+  "subsequent_assignment": {
+    "source": "transcripts/w02/09.followup.txt",
+    "source_sha256": "d79e7ad2f787624c421a519bd17b09d6b66325333fd1975f89527a4cd54ffcd7",
+    "bytes": 30505,
+    "result": "accepted forwarding to original w02; no broker operation",
+    "role": "Transport only, second one-message assignment"
+  }
+}

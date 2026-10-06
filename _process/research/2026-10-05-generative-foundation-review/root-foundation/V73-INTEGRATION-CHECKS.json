@@ -1,0 +1,874 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document links, fragments, additive-edit ownership and source-byte preservation; not scientific validation",
+  "baseline_head": "037b68889c60772cd4a40476202be30558c27826",
+  "source_files_checked": 109,
+  "source_sha256": {
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/THEORY.md": "7198977493e258e91d8fb7fae78ede22640586ce293f33ef3c23c05873d67b2d",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md": "b39a9ef17c0cf8fc02255d0db5cb7980960080e811bae2d16955992f75641939",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/checks_v73.py": "268d4edde69d937ae6c8f8a4e05f9516a23bd82c857601ac03aa470e221918a8",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/CHANGELOG.md": "8c8b19b1c8c1ab37b9ab11d543e6446ce69a30c94300a3436499d5375a809393",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/EVIDENCE.md": "35c75d889416b54c03010b9dccb461be3740a9fcdb6f16d592fd7286b3b0ae07",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/xref_v73.py": "bafceb1448d8218c625316729d8e7dc911c3d1df38b2befe75612d3445fdcdf9",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/DISCUSSION.md": "2fa71f7839b0f5347ac9a23acc1b75392d49b1d7bb8a40556291d1636190d369",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/SUPPLEMENT.md": "bde717ed355ed2213f05dd1642567a90f7f2d4eafdb04556579d0727eed2ab36",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/TESTS.md": "43598185c40e5e27da22446cfb59e2a46fc0226ea452a8584bada0507a7ec12d",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/checks_v73.log": "021ef4a4faedc2601eceb8b34d12e8f44408864ba0a6e1b843ff0c3f61d5dc20",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/README.md": "81bb7c9dced3f3d6e118ca9eece9eab009e54296a23bda5aad8679ba7d30466e",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/.gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/RELEASE-REVIEW.md": "9ea0e68db7630ce915dbbb54bb8d94c450e03d8f5358e361dd3f85c5981599da",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/CLAIMS.md": "14cd3531b9fd7297921a636d8b343e62f61d675e92170c1a144d8c847867fbf4",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/LEDGER.md": "c7ae3e8e8879062b18ab810c0b76c2b74943cd34331a6d2830c59e511f765bfb",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/planning/design-v73.md": "51cd7681af704d2861b6f5a77364fb26338304e9123b27298785c3b70f642e9d",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/planning/INTEGRATION-PLAN.md": "d64a23cc71315f14251376e7f242cd6a17568a3f9bba034348c628901c57a4d6",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/planning/DEVELOPMENT-PLAN.md": "aa89db84bbbb265d587b1a5b474f76c014f68503a150c3e96c6001b2dfd5e072",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/planning/USER-PROPOSAL.txt": "23623fbbfe1c0eae6b2305ea5a9f7a773a120aee6c1e064845d92007fef9b886",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/planning/evidence-v73.md": "9fdcdd9bd0c3fe5c2c0c98a8a3af3422b11c716afc75283e9637a0fc66317e8a",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/planning/math-v73.md": "bab74a6e9a830dbf1cea3d89f0fa71ab24251069ae0b1f4c2683f97efb4c92e3",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/systems_checks.py": "a21c522e321b8941f892d9fdac48c285f01b847f0a1c82fa8feba8296e615072",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/assembly.log": "262fa13f18653c44cf70d664dafd8c2d34ea548857b095a99d5016594b2dc282",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/audit_v73.py": "802c8d4c3636531712dae8ab295103ef082791eced5b8402771f021c57015008",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/path-checks.log": "8ed547173892459ff1a7019f00b4f60f2821e50576a1dbeb0171ba7c143aa04b",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/summary.json": "64a2c7f70ffdd0198e1d2d8e43c365c4f62b3695726349746c4a167e437aa423",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/independent-path-checks.json": "f31115edeb29a8481b4ddbdd60f48c7c695b5d46c6a6ebd055361db476addfb8",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/readiness_checks.py": "ffbdc181501c4dcbe8a0150ac9f12848b2426d01582f773d98bd041db14bb508",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/source-diff.patch": "fa14836190ea2b91a383eb289f60d7978d79e081c04773a6f69302f0fd774a72",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/correction_checks.py": "429d8606b72dbaa2f5ba750fd9e26a0a7d9babb2ec29bc2a069638c81c297d36",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/references.log": "e4eee9a35c2246abc420671cd84c558aeac466b68ceb37f4ad1f1d6411f8c628",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/path_checks.py": "364858613a2c448d381f924b3a64353a3572af90458942dc46a1729c5c5275c0",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/preservation.json": "64a2c7f70ffdd0198e1d2d8e43c365c4f62b3695726349746c4a167e437aa423",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/transition_checks.py": "e867df5ca60a015ea2b89b9724ee5c4e6265c0743f7074f646485ad5361d7cc5",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/xref.log": "3d898861d7a9151e7d47922d57e917640ded15427ae58bfa1c7b2ce55bc58001",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/preservation.log": "e91dd69476a9035b2baafe80003b9032e5c84b74fe29f1b9d3890074c0145804",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/v72-baseline-manifest.json": "5c8cb65a2805232cb20b6f3b32c0e3e249900d89b1bcf4e9049d5d8c4561c1e2",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/math_checks.py": "c5435cb64c00cbc46ac9c5431392c4e2469b07a0dd5b425409abdb1d6e3339fc",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/v71-baseline-manifest.json": "d6bcf62394adafbbb063279c7bb84a09c34d7a54cfc468462c9d63f6a4a964f2",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/final-audit.log": "64a2c7f70ffdd0198e1d2d8e43c365c4f62b3695726349746c4a167e437aa423",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/source-changes.json": "b7da38be2fcb28622a6dc040d59ed83972b86c38f36e840a9f2a722a147aed56",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/v73-input-manifest.json": "636adee7f6c2fb1e060145a158674cf1806c2abbd274f8431e2c17d09dc346f0",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/__pycache__/math_checks.cpython-314.pyc": "282893648b79712c04e357d9d514138285b6d76fb8d9b2964de4cce0a13a7eb1",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/__pycache__/correction_checks.cpython-314.pyc": "c2fcfbae820e19a8d694bb3f64f9d65964f457d1e96ba8c1d5243b8d20041016",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/__pycache__/systems_checks.cpython-314.pyc": "9bae67d7b9ceac613a96c9c294cc262221bd640ca14fb89f05a425fb000876ee",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/__pycache__/path_checks.cpython-314.pyc": "e656fe34a6914c7330515d2e9ac0d9a848fe097002814f9a5660a088fd08845d",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/__pycache__/transition_checks.cpython-314.pyc": "831ffca5cf46a23b30886ea47f689f32e64ef3b8a61eaa3cec8f1ac2d98b7e60",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/__pycache__/readiness_checks.cpython-314.pyc": "e8454e6b8d7f7929376c5715c2cbeb0d0a204047483b0d4865fb0dc9992257e5",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/verification/__pycache__/path_checks.cpython-311.pyc": "9cde16a09285811650d3e059f580e84456d5fad2ec582775537111ed8c774bd6",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/math-review.md": "c7e5e7cefe997005413abf972778bd3e99cd2b515736b81eb8b1ec1fcdcf0d36",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/V73-CLAIM-REVIEW.md": "7cdc35aaab95f80e5dfce41943d7304aa2649d0bff314cb35189cdb91e33badb",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/V73-INSTITUTION-REVIEW.md": "3fa1902c196d1b03c589a82750cfd8b3c5ed4c89b690ce69ef5abff3ad963f0e",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/v73_math_independent.py": "9e4c7fd9c4de109c71dfe78bea81b7ab1147d32f7279ab419051d6ab35274a7e",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/design-review.md": "cbceecd799bca7349d799fbaf2128ffa25730d5b10796ba2c79f90df9abdd15a",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/V73-MATH-REVIEW.md": "39aee3cc0c49a769b113de7233f57472e5970366a9120f2c5fc9c1c57fd51c33",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/evidence-review.md": "2ddc8a3047802d17157ac5578163c4c0c3326a3808bcf448f9315d1dc30da385",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/reviews/__pycache__/v73_math_independent.cpython-311.pyc": "22e8d9fe615e29c5fb16028a440caab3355157fc295d3c42c5d254fa3ccb1205",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/sentcheck.py": "4473bd323942952a0ff6a23bfebd05e3e9d81222ca2673512493d62f32b0d855",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/keymap.json": "399371ec8cdec66a94b63cc8da358841e610e04c2ea626eea4fa569a84d03ac7",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/persub.py": "a79bbc71c70f9624b0796366e167e1dd891155a183ef672af0c349eeb3bbe2b2",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/refs_v73.py": "c8310ebc3b6130213fa11d40270c6a7948a398b967787e5c59a0ed8c87c7e574",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/assemble_v73.py": "13a690f4362f58020166add6efb35e2cff70855285e1b107fc8a016fab5283de",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/START-HERE.md": "cf1c2c33c09ca1512822bb64e94db15c7edd8f14f07cdebec79b6b7420c2116c",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/CHANGELOG.md": "ba3a84a63ac2356fe409e943b60c990d8007b87eb7c12b27233258f9747cb09b",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/EVIDENCE.md": "2acd2d3fa8a62f433ce848c401ae7492eb9471ab7c6d39fec9ba2fcc6aa3a6c9",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/TESTS.md": "060d3e52a3d39354a03f79fa92ea8bd844ee0ad14a0837aa3e9cdcc60f45501c",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/README.md": "bf7772aff0008aaa0fac86aeab8f66543f2f72153d9ce2e847f57d1376a465a1",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/RELEASE-REVIEW.md": "9b46f20e3490cb8e17086ace058045509e417598ae5e894e64bad225a573392d",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/CLAIMS.md": "b9e40dafaf04b06dfaa01329b424394e6ed4c6715c7842c591d237e130cdb5bf",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/reg/LEDGER.md": "a5cdc9397e7eb5ceca1b61b66169428a862830d4a59889ba420392db9df9fbb2",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/50_s5.md": "0c41d54646055491457d46f63fab5b98a13ce9a69a45cf250e4fb1d083cc63b9",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/80_s8.md": "ec5bf961f0c6366c5ffc320b220ef3aac2af485821e8762f94ae0921b9f77d11",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/b0_s11.md": "2198914deab322311258fbeb73b1763d8b6705e3e1c23a23e78bcc5d8ca97121",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/20_s2.md": "08d102a9d56ba319507b9433d51f650385893538cb74e881e29f5eb32faaa2cd",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/a0_s10.md": "e2bc7d13b8adf8a958af179761226d97c9f7f7b9f156e637f07969514b224b0a",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/60_s6.md": "40b21c9f96831273617ae73748fa51b2ea392293c96df397a73c2790f69d4ebb",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/z9_refs.md": "abab2f7152de9dc0192ee4034f042dae0d4d8e44e7e86f9291e21d3f54d2f26b",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/00_head.md": "c5c2c5b623bfd2cde8f472ad06a0f0304ad028fed11940d529e9ea08278a6927",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/d0_symbols.md": "22a0a067162c511161d220770bd6ca70a24f765c0c6297f53b9d0e468f8e52d0",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/10_s01.md": "2729ca7da058bd48774114541e436d8b9d30235898d7bd42336f2ade8a85b6db",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/90_s9.md": "f8687881945c55fcc372b3cb28764b1e2984af5867794cf7279935c64af994b2",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/30_s3.md": "63aea30e0dd6341ecf4ec1df56141e49d0d7b8542a586aead08b9a1b83bdde68",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/40_s4.md": "a748946a2543cb07d0dd9a568872db19cabf60024d0514b8dd14e5dc7295b656",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/70_s7.md": "aaabcf312956f94314493709c26847da3c79dea38f2ecc22f92781949cdc3b5c",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/c0_s12.md": "bece35b4a4088981db2ba19ee58995517db8652aaaf10135cb5c4271f33612a6",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/__pycache__/refs_v73.cpython-314.pyc": "040afb32ea60570d17dd83f4b47802c5f329ced4299273c4bf75c8f7210897eb",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/disc/10_X10.md": "9e5b7fb02081b281f6fc883fdb513066e2e56c326278d1f51e24061ec264686b",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/disc/z9_refs.md": "fc024f2345f499512b371e09dea7217404489dbc7a2aedef22e1417b3b51e796",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/disc/08_X8.md": "9621ea8d014cff63251fe5d0f78529e15e14c6f46ce665fbec63a704fc45df19",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/disc/01_X1.md": "c477ea95be9cbfb3714f3d8e39d5ccdfa4eeb0b2087c53d90eeede5d7fbb6852",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/disc/11_X11.md": "a658f03a0022548f099c757de7cd870cf8a6a8ce344b753a72eff7058f36a3fb",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/disc/02_X2.md": "a485aba8d7cbd981a8948c43deeb35d9cb8585da90d5650713a476ac61be59f7",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/13_S13.md": "290c63d04a09fd0139c1076c43bba25d9ad13755b9e60c352fb688e0c435b5e4",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/02_S2.md": "10702ca801297c3a2a830e60c8ca15eca04fb19e93aee4cf76276283a7672810",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/06_S6.md": "c0c75261c7b53053469a2af17c3d2ab3fa0ddbadeb4850118170cb996a21c2c3",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/14_S14.md": "a3387617b96d6ab653ecb58469770284315d5d8705a8b94dcd06ab91f8252ef7",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/10_S10.md": "632036d8854cb5a51cffaa8ce3950543da66e75f58cbe258a00ee609baaa9581",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/07_S7.md": "89f7db83210a744696a23f07b9e3eb90201010aaa461741f0ad7160c6d26e45c",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/z9_refs.md": "3fe305bc8c87561473665a9345555df66e198231befebaa73bee676b43ec212a",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/17_S17.md": "c663e8ffe50a2becb94bb3ed53a9ecb0b42faa5cbcb52123b414debdaa7d66ce",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/03_S3.md": "a16b70a1ab9cb777ab59090434c037642b552048dc777b1cb73d1bcd6fb4e8c1",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/08_S8.md": "584f9af89dac25ddf9c0af8b48dd6260a28b36e5db3972c2618d205db24b3fae",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/15_S15.md": "e344bf3279ffb3b5be754b7f7c9467f83804dd703d21b4cb13311c6d2da04d09",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/05_S5.md": "1d99ce4d4eb0f867f74d5bd4251311dd34e3abeeafc65b3fe33c2edf9301ea28",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/00_S0.md": "d54aa66cae809c7135b580bc6a8f80b6e0f46523acb07b81f9b2a027b4f9df20",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/16_S16.md": "621d2c65fd96c0c459a37bc29ed6a9431fa363d894a763414bfca3d02abc9f3e",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/09_S9.md": "e3d3783d3e819a331f23ec0cf2f5cea620099441adde8ef2ce43ed5e73a3bdd8",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/11_S11.md": "4bd370521c38ebc9f876e97acf9919e3414c7f63d94bd9a1cdf152f9bcf93121",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/04_S4.md": "c67459d3db37816cd3946fcd77db3e28c57be898b377e52706f6b92466fe2e2c"
+  },
+  "source_changed_or_missing": [],
+  "source_added": [],
+  "owned_insertions": {
+    "RESEARCH.md": [
+      {
+        "sha256": "ad4a5b2cf1f10415274d7df8095c29c4e19967403ee34b0e6e2683a64fe3a631",
+        "text": "\n**Six V7.3 mechanisms integrated, 6 October 2026:** [the new canonical chapter](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md) connects shared-benefit blindness, held/working objectives, networks of correctors, delegation and competence loss, strategic communication, and durable funded reform to the current generative foundation. Existing shared-return, paid market, learning and concern results retain their established scope. [Mechanism audit](_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md), [evidence and interfaces](_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md), and [separate review](_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md) preserve inherited conditions, counterexamples and genealogy. This completes the requested explanatory integration, with no new scientific run, joint dynamical theorem or empirical conjunction. **Next causal connection:** actual acquired evaluation → action under identified relative/common continuation returns → recipient effects and usable correction. The patient-to-independent-actor grounding and ethical-minimum investigations remain the stronger justificatory work; conditional-foundation acceptance and alignment completion boundaries are unchanged.\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/README.md": [
+      {
+        "sha256": "a88f238bd50b7860cd370c98419433054dfc8e5a162165e35d7bb23bcc6ac881",
+        "text": "\n**V7.3 mechanisms in the common foundation, 6 October 2026:** [the integrated account](unified-2026-10-05/GENERATIVE-SELECTION.md) now explains how formed understanding and concern gain or lose influence under relative selection, compounding, networked capture, competence loss, strategic communication and slow reform. It joins the current theory's existing shared-return, paid market, learning and concern results at explicit explanatory interfaces, retaining local laws and unproved compositions. The [main theory](unified-2026-10-05/THEORY.md#six-mechanisms-connecting-formed-capacities-to-their-social-continuation), [premise ledger](unified-2026-10-05/FOUNDATION-PREMISES.md#9-selection-communication-and-maintained-correction) and [derivation map](unified-2026-10-05/GENERATIVE-GROUNDING.md#formed-capacities-within-changing-selection) carry all six. Next is a causal join from acquired evaluation through altered continuation incentives into accountable action; why another being gives an independent actor a reason remains a distinct foundational question. This integration adds no empirical result or universal necessity claim.\n"
+      }
+    ],
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": [
+      {
+        "sha256": "6840e33f2f6102e95688ccd6e5b768c26862fd088fa8fc2e3cdf6637b4cbd2ff",
+        "text": "\n**V7.3 integration, 6 October 2026:** [the canonical chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md) integrates all six requested mechanisms into the selection-to-concern/wisdom connection. Read the [mechanism and assumption audit](V73-MECHANISM-AUDIT.md), [current overlap and evidence/interface assessment](V73-EVIDENCE-AND-INTERFACES.md), [independent internal review](V73-INTEGRATION-REVIEW.md), and [integration record](V73-INTEGRATION.md). The source-preserving synthesis credits existing paid capture and recovery, distinguishes all model laws and scopes, and leaves actual acquired-evaluation/continuation-incentive composition as a concrete next interface. It does not replace the stronger ethical-grounding investigation or reopen the accepted conditional foundation.\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md": [
+      {
+        "sha256": "a178568f027a961a1786eca1b65876296d44ea24195065987bcc6a733f43fe18",
+        "text": "### Six mechanisms connecting formed capacities to their social continuation\n\nThe [explicit V7.3 integration](GENERATIVE-SELECTION.md) develops the preceding meta-selection connection through six conditional mechanisms. It credits the newer paid market, shared-return, learning and concern results; these mechanisms have overlapping explanatory roles but are not one jointly proved state law.\n\n**Shared dependence can be invisible to selection.** If a host benefit enters every payoff additively and identically, a translation-invariant relative rule cancels it from share dynamics. A costly contribution therefore needs an actual differential retention, transmission, liability or constraint route. The current shared-return model already separates increased total reproduction from increased producer frequency. This sharper interface prevents the analyst's recognition of useful regulation from silently becoming its reward.\n\n**Compounding can change effective priorities while held concern stays fixed.** In V7.3's local continuation calculation, the working self-model narrows when the return to a relative gain exceeds the return to a common gain; it can widen under the reverse inequality. Accurate understanding of dependence does not itself remove this incentive. Factual belief, acquired evaluation and operative priority must therefore remain distinguishable. The result retains its deterministic local reference, fixed-opponent and discounted-return conditions; it is not a general formula for ethical learning.\n\n**Independence is a maintained relation within a network.** Success can alter appointments, funding, access, standards and enforcement across several domains. Repairing one evaluator can leave other channels supporting its capture. V7.3's full inbound-gain certificates sharpen the present scalar market and paid-interference results, while distinguishing eventual recovery from safety during the transient. Capture also requires impaired corrective purpose or protected interest; concentration and legitimate revision alone do not establish it.\n\n**Delegation can consume independent competence.** Under a supplied disuse and recovery law, replacing an activity can erode the capacity needed to resume it or overrule its substitute. Formal authority may persist after its safe exercise becomes unavailable. Maintaining parallel competence can prevent that particular loss when its costs can be met. The mechanism extends the current account of depleted correction and succession without identifying every delegation with permanent loss of agency.\n\n**Communication is itself affected by selection.** In the predecessor's specified cheap-talk game, relative objectives increase sender–receiver conflict and restrict informative communication. Shared hazard does not certify a warning's credibility. This joins the current faithful-reporting problem to strategic communication among centers. Costly signals, independent verification and broader narrative effects retain separate premises; a derived working objective cannot simply be inserted into another equilibrium without checking the interface.\n\n**Reform must outlast the state that reproduces failure.** V7.3 adds delayed influence decay, a required intervention duration, recruitable alternatives, and a finite funded transition to the current safe-path and recovery results. Visible improvement can precede escape from a capture basin. Preserved material that cannot recruit into the new opportunity is not an operative alternative. A viable destination therefore needs a survivable path, while neither its incumbents nor every existing possibility must persist indefinitely.\n\nTogether these mechanisms explain how already formed understanding and concern can acquire or lose causal influence when activity changes the conditions of further selection and correction. They also explain constructive responses under the corresponding laws: change consequence allocation, reduce appropriable control, maintain independent capacities, make evidence usable and finance the actual transition. Which response is warranted still depends on affected beings, justified authority and competing claims. Selected success supplies neither ethical standing nor a universal favorable direction. The [chapter's composition contract](GENERATIVE-SELECTION.md#7-their-place-in-the-common-derivation) preserves different carriers, meanings, clocks, resources and successor states; its [next connection](GENERATIVE-SELECTION.md#8-ethical-direction-scope-and-the-next-connection) concerns acquired evaluation under changed continuation incentives.\n\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md": [
+      {
+        "sha256": "09a6c630de486208f40bcf022d8886d7ba94a5f21806fd8801f1f70cca25e493",
+        "text": "\n**V7.3 integrated into the generative account, 6 October 2026:** [Selection, shared conditions and the renewal of correction](GENERATIVE-SELECTION.md) now connects shared-benefit blindness, effective priorities under compounding, networks of correctors, delegation-induced competence loss, strategic communication and durable reform to the existing formation, learning and concern results. The [main theory](THEORY.md#six-mechanisms-connecting-formed-capacities-to-their-social-continuation), premise ledger and derivation map carry the integration. It explains how formed understanding and concern can gain or lose practical influence; its inherited local laws do not establish one combined implementation, empirical inevitability or ethical necessity.\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": [
+      {
+        "sha256": "1027f9c118673cf30af44c17e78d59603e6301d391eb212082925263d2db04b9",
+        "text": "### Formed capacities within changing selection\n\nThe [six-mechanism V7.3 integration](GENERATIVE-SELECTION.md) now makes this stage explicit across interacting centers. A shared benefit can be indispensable yet cancel from relative selection; compounding can narrow a working objective while held concern remains unchanged; success can alter a network of correctors; delegation can erode independent competence; incentives can reduce informative communication; and reform can fail when support is withdrawn before slow state and recruitable alternatives permit durable recovery. These are conditional mechanisms within the common generative explanation, alongside the existing shared-return and paid market results.\n\nThe named connection is **formed understanding and concern → effective influence under selection that changes objectives, evidence and corrective authority**. Their local selection laws, continuation-return assumptions, conversion networks, competence dynamics, communication games and reform powers remain supplied inputs. This integration closes the requested explanatory mapping, not a new joint dynamical proof or empirical conjunction. It preserves the accepted conditional foundation and the stronger ethical-grounding goal. The next causal join should retain actual acquired evaluation and factual knowledge while changing an identified relative/common-return channel, then trace action, recipient effects and usable correction without resetting resources or importing a new ethical objective. Patient-to-independent-actor justification remains a separate foundational bridge.\n\n"
+      },
+      {
+        "sha256": "fba0465d70b6f801d4e3e22c47bc3e12093bc35eddcc9f20fbdcde437f81da27",
+        "text": "| Formed understanding and concern remain effective under changing social selection | The [six-mechanism V7.3 integration](GENERATIVE-SELECTION.md) joins inherited common-payoff blindness, induced working priorities, network capture, delegated competence loss, strategic communication and delayed reform to current shared-return, paid market and concern results. | Preserve each local law; map an actual acquired evaluative state into identified continuation/retention incentives, recipient effects and usable correction. The integration is explanatory, not a joint implementation or universal ethical derivation; patient-ground justification remains separate. |\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md": [
+      {
+        "sha256": "980d6e2de2fcd9c29ccd9bb87cfeecb973754858336bfc036a4c2542c31c8dbe",
+        "text": "\n## 9. Selection, communication and maintained correction\n\nThe [V7.3 integration](GENERATIVE-SELECTION.md) extends the explanatory map through the social continuation of formed capacities. Its six mechanisms are inherited conditional results and interpretive connections, with the following additional local inputs. None is a new premise that every system must instantiate.\n\n| Local input | Conditional explanatory consequence | Boundary retained |\n|---|---|---|\n| Additive identical host benefit and a translation-invariant relative selection law | Shared support drops out of relative-share change; costly provision needs a differential route | Actual survival and opportunities still depend on shared conditions; unequal exposure and correlated advantages can change selection |\n| Specified deterministic reinvestment and finite differentiable continuation returns near the symmetric reference | Relative return exceeding common return narrows the working objective despite fixed held concern | Does not identify factual belief, acquired value or ethical reason; reverse returns can widen the objective |\n| Specified conversion network, correction rates and admissible initial states | Full incoming-gain bounds certify eventual domain recovery | Inherited support can create unsafe transients; exactly absent alternatives, actual funding and legitimate authority remain separate |\n| Identified disuse/recovery law and a safe competence threshold | Delegation can make safe reversal temporarily unavailable | Parallel maintenance or recovery can prevent permanent loss; delegation of authority is a different relation |\n| Defined sender/receiver utilities, information and cheap-talk equilibrium | Relative accounting can reduce informative communication | Verified channels and costly signals are outside the theorem; strategic credibility does not establish truth or moral validity |\n| Declared slow field dynamics, recruitable alternatives, executable reform and sufficient transition/maintenance support | A sufficiently long intervention can enter and maintain a protected region | Safe endpoint, safe path, selection of the intervention and legitimacy are distinct; failure of a sufficient certificate is not impossibility |\n\nThe current market model already joins paid influence, rule erosion, correction funding and recovery; the shared-return analysis already separates collective production from producer selection. The additional integration preserves these contributions and connects them to working objectives, multi-domain control, competence and communication. It does not identify continuous fields, discrete market rounds and paid material histories merely through shared notation.\n\nFor a further composition, map actual carriers, material returns, held evaluations, information, clocks, funds, authority and affected centers. In particular, show how an acquired evaluative state enters choice under changed continuation returns without replacing the inherited state or silently supplying a new reward. The [mechanism audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md) and [evidence/interface assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md) specify remaining identification tasks and counterexamples. Ethical grounding concerns why a patient supplies a reason; these mechanisms explain how such a reason can gain or lose practical influence. Neither question can substitute for the other.\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md": [
+      {
+        "sha256": "8ed7c7abeb78f2d8b640618ecb21fbf7275e4b9c98e57342f49722e7f0a16a61",
+        "text": "## V7.3 mechanisms explicitly integrated, 6 October 2026\n\nThe [generative selection chapter](GENERATIVE-SELECTION.md) makes the source mechanisms part of the common explanatory account. These rows inherit their original theorem or model scope; this integration adds no scientific run or kernel-checked result. The [mechanism audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md) gives the precise equations and counterexamples.\n\n| Integrated claim | Inherited status and source | Conditions and limit |\n|---|---|---|\n| A shared support benefit can be invisible to relative selection | V7.3 Lemmas 3.3 and 3.11; explicit relation to current shared-return and market results | Additive identical benefit, relative invariance and stated carrier comparisons; absolute survival, unequal exposure and correlated advantages remain distinct |\n| Effective priorities can narrow with held concern and accurate understanding unchanged | V7.3 Proposition 3.9 and Remark 3.10 | Local symmetric deterministic continuation, fixed opponents and finite differentiable discounted returns; reverse return inequality can widen priorities; no general concentration, strategic-equilibrium or ethical inference |\n| Several selection domains can maintain or undo corrective independence | V7.3 §4 and S4, with S16's bounded host/capture join | Specified conversion/correction laws and initial states; row-sum recovery is not transient safety; concentration alone does not establish capture; paid discrete market dynamics remains a distinct realization |\n| Delegation can erode competence needed for safe reversal | V7.3 Lemma 6.3 and its correction interface | Supplied disuse/recovery law and safe floor; maintained competence or available recovery can prevent permanent loss; authority and competence are distinct |\n| Relative objectives can reduce informative communication | V7.3 Proposition 5.16 | Specified cheap-talk game and utility conditions; verified channels and costly signals require separate analysis; two-player boundary is payoff-equivalence to no talk, not a ban on messages |\n| Lasting reform can require sufficient duration, recruitable alternatives and a funded safe path | V7.3 S11.4 and S17.1; relation to current paid market recovery | Slow-state law, available alternatives, executable durable intervention, liability and continuing resources; failed sufficient certificate does not prove impossible reform |\n| All six mechanisms are now one proved or empirically identified process | **Not established** | The synthesis maps interfaces and existing overlaps; shared notation cannot compose continuous fields, strategic equilibria and material histories |\n| Their integration derives universal ethical necessity or the V7.3 policy package | **Not established** | Patient-grounded reasons, legitimate authority, empirical diagnosis and practical comparisons retain separate justification |\n\nThe requested explanatory integration is complete at this scope. The next causal connection is actual acquired evaluation under identified continuation/retention incentives, with resources, factual knowledge, recipients and correction preserved. The stronger patient-to-independent-actor grounding remains a separate active research objective.\n\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md": [
+      {
+        "sha256": "b3698d17b60812c3eb4415ad2f5a5e921a5e800c63e09bd02a16e368b77f6392",
+        "text": "**Explicit six-mechanism integration, 6 October 2026:** [Selection, shared conditions and the renewal of correction](GENERATIVE-SELECTION.md) now carries the predecessor into the common derivation in detail: common-payoff blindness (Lemma 3.3 and Lemma 3.11); held versus working objectives (Proposition 3.9 and Remark 3.10); network capture and recovery (§4); delegation and competence loss (Lemma 6.3); strategic informativeness (Proposition 5.16); and reform duration, recruitable alternatives and funded entry (S11.4 and S17.1). The [mechanism audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md) retains equations, premises and counterexamples. The [evidence/interface assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md) credits existing shared-return, market, concern and reporting results and separates their remaining joins.\n\nThese are inherited conditional mechanisms and a new explanatory integration, not six new discoveries or independent evidence from repeated copies. Original V7.3 files remain unchanged. Its empirical conjunction, political implementation and unrun institutional pilot keep their earlier status; no joint implementation, inevitable favorable direction or ethical-grounding theorem follows from this synthesis. [Review and preservation record](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md).\n\n"
+      }
+    ],
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md": [
+      {
+        "sha256": "23139382d4773bda39a11cd4df7a597a0ca6443f396178e0a3781f5479423c6d",
+        "text": "\n## Explicit V7.3 mechanism integration, 6 October 2026\n\nRen requested integration of all six mechanisms identified in the comparison with V7.3. [Selection, shared conditions and the renewal of correction](GENERATIVE-SELECTION.md) now connects common-payoff blindness, held/working objectives, networks of correctors, delegation-induced competence loss, strategic communication and durable reform to the existing generative derivation. The main theory, premise ledger, derivation map, claim register, source map, brief entry and repository indices now carry the connection.\n\nThe [mechanism audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md) preserves inherited equations, assumptions and counterexamples; the [evidence/interface assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md) credits the already explicit shared-return, paid market, recovery, concern and reporting results. A [separate internal review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md) checks the integration against its sources. These are collaborating AI reviews, not independent human certification.\n\nThe explanatory integration is complete; a combined dynamical implementation, new empirical support and universal ethical necessity are not claimed. No scientific result, executable law or original V7.3 source was changed, so historical checks were not rerun as though organization supplied new validation. The [integration record](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md) records document checks and source preservation. The next causal interface is acquired evaluation under changed continuation incentives with actual resources, recipient consequences and correction retained. The stronger ethical grounding and universal-minimum work remain separate active obligations, and the accepted conditional candidate retains its scope.\n"
+      }
+    ]
+  },
+  "concurrent_replacements_excluded": [
+    {
+      "path": "RESEARCH.md",
+      "kind": "replace",
+      "old_lines": 1,
+      "new_lines": 1
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "kind": "replace",
+      "old_lines": 1,
+      "new_lines": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "kind": "replace",
+      "old_lines": 1,
+      "new_lines": 1
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "kind": "replace",
+      "old_lines": 1,
+      "new_lines": 1
+    }
+  ],
+  "new_document_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md": "b98e426478a0e84574cf7aacfdfdf1218dd2d7ae43f4c3e10cd27d11301451bb",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md": "5c59d3c261d3999105751dac42d23101582c0cd7439639c36ae049ccf0fff329",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md": "65937b5a1285944f2f2b7a431e2a55df62ac8846d6f62bf81005178191205be7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md": "16fce0c349069d0c07c5519fa9bd438737e4bd84b0daba30d72075de69f1e921",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md": "9b7e7a91f18b4a15dbc01b0a404468008b4ed64c7cbb58aa1e8bc979e96dfc17"
+  },
+  "local_link_occurrences_checked": 130,
+  "reference_uses_checked": 20,
+  "link_results": [
+    {
+      "from": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/THEORY.md#six-mechanisms-connecting-formed-capacities-to-their-social-continuation",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/FOUNDATION-PREMISES.md#9-selection-communication-and-maintained-correction",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/GENERATIVE-GROUNDING.md#formed-capacities-within-changing-selection",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "V73-INTEGRATION-REVIEW.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "V73-INTEGRATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "target": "GENERATIVE-SELECTION.md#7-their-place-in-the-common-derivation",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "target": "GENERATIVE-SELECTION.md#8-ethical-direction-scope-and-the-next-connection",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "target": "THEORY.md#six-mechanisms-connecting-formed-capacities-to-their-social-continuation",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "GENERATIVE-GROUNDING.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/30_s3.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/03_S3.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "MARKET-DYNAMICS-MATH.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "EVALUATIVE-PLASTICITY.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/30_s3.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/03_S3.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "MARKET-DYNAMICS-MATH.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/40_s4.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/04_S4.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/16_S16.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "FORMATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "EVALUATIVE-SUCCESSION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/60_s6.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/06_S6.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/50_s5.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/05_S5.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/b0_s11.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "MARKET-DYNAMICS-MATH.md#recovery-before-support-failure",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/b0_s11.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/11_S11.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/17_S17.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "CONTROLLED-REFINEMENT.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "STRONGEST-FOUNDATION-CLAIM.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "UNIVERSAL-ETHICAL-MINIMUM.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "status": "ok"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/THEORY.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/SUPPLEMENT.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/CLAIMS.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/RELEASE-REVIEW.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/03_S3.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#7-selection-changes-the-conditions-of-selection",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/03_S3.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/04_S4.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/16_S16.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/06_S6.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/04_S4.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/05_S5.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/11_S11.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/17_S17.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md#f13-faithful-implementation-joins-models-without-changing-their-questions",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/THEORY.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/SUPPLEMENT.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/EVIDENCE.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STRONGEST-FOUNDATION-CLAIM.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../foundation-assessment/MARKET-IDENTIFICATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-PRIOR-ART.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/THEORY.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/SUPPLEMENT.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "../../../../drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/EVIDENCE.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STRONGEST-FOUNDATION-CLAIM.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#six-mechanisms-connecting-formed-capacities-to-their-social-continuation",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#formed-capacities-within-changing-selection",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#9-selection-communication-and-maintained-correction",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md#v73-mechanisms-explicitly-integrated-6-october-2026",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md#s14--meta-selection-and-the-v73-predecessor",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "../../../../RESEARCH.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "V73-MECHANISM-AUDIT.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "V73-EVIDENCE-AND-INTERFACES.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "V73-INTEGRATION-REVIEW.md",
+      "status": "ok"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+      "target": "V73-INTEGRATION-CHECKS.json",
+      "status": "ok"
+    }
+  ],
+  "document_errors": [],
+  "passed": true
+}

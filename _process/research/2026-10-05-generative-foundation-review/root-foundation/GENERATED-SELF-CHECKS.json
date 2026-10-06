@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-06",
+  "scope": "Documentation links, source-quotation presence, additive integration entries and preserved bytes only. No new empirical experiment or formal validation; no philosophical necessity certified.",
+  "owned_documents": [
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+      "sha256": "351b62ffbf50bb0d7eec7f85db0b3a95b1c6437dcde38e8364ccd88ae1f4fc9a",
+      "words": 2301
+    },
+    {
+      "file": "sources/15-codex-theory-conversations/2026-10-06-generated-i-and-owner-independent-ethics.md",
+      "sha256": "53a17e8debf4d36f10615d5ea3ac19c3d760f383dd80737a3e1a8fefdf07df44",
+      "words": 194
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATION-AND-GENERATED-SELF.md",
+      "sha256": "d06d53895a0578500b77330460ad2872312e28699dc7d6e02f3bdcd357cf30c7",
+      "words": 553
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-SOURCES.md",
+      "sha256": "1c118454f2cdf54e7aef06b91bebf16b8a6040f7e9b6567a581fa9ab9444ed91",
+      "words": 1999
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OWNERLESS-ETHICS-SOURCES.md",
+      "sha256": "982bd31b033dd2f5d5ee2671a78ad84b61a2f77a040a197c7b7e0e07da4045cf",
+      "words": 1798
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-REVIEW.md",
+      "sha256": "165142801d06485bd49efc99af6985dca1cd56ccf464757437ef6f9dd4275823",
+      "words": 2218
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-INTEGRATION.md",
+      "sha256": "658488b592ba9306af89127db05b2b177f602a9fde338d57051ff42e4be6d140",
+      "words": 705
+    }
+  ],
+  "current_minimum_sha256": "65a3775025c74023c08b74dfdbda13e772243610296652b71afff2d0431fd3cc",
+  "local_links_checked": 125,
+  "integration_entries_checked": 6,
+  "snapshot_sha256": "083bfca5a6cefeff5fb8b1c72f005672825eac2ec8da36f4258748ae21ed35e5",
+  "snapshot_matches": true,
+  "errors": []
+}

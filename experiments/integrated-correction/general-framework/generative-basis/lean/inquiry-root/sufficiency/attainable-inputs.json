@@ -1,0 +1,69 @@
+{
+  "scope": "Existing criterion evidence, read only; no new scientific run or full native refinement claim.",
+  "files": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/results.json",
+      "sha256": "e35ec64da8a486eb8b9d089f4334758b41a2f525cdadf4fa12161a6930ec1d8c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review-check.json",
+      "sha256": "0b6d37cab949bc23fa1e02b6c0d61cad7692d0844fa51548be5e0804c537fb3f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/check.py",
+      "sha256": "fc5ac39d102f1111b523747d2f123496104b890e07022def73f8ddd55666f134"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/review_check.py",
+      "sha256": "ed9ae426cc108bf3e2786298e0b4e2c6c569e5a520bc7e323a04d7e7230b1538"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/criteria/PROTOCOL.md",
+      "sha256": "4606949a46f4b6fd3a687aaac7b5d205fe1e8df59d7bbf4cb52ea545831ec708"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent-check.json",
+      "sha256": "5efe94e31a1d06026a02708ec5792ead962371fc59e57dc185a9b6f56bd7afb7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent_check.py",
+      "sha256": "719aa55c41d8cd6046aad99df0226da5767515381878c6427236a6d6b6837167"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/check.py",
+      "sha256": "7a68aeaaf926a28066b2c82f696ca610d9498601fed6527310ea0791a09f2d00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/PROTOCOL.md",
+      "sha256": "ef2df61885b58502d14ac7112e15c11fac1394f02cd19c70d853bbfffa3191ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/results.json",
+      "sha256": "c89b2f775ad34312d9d5eb2b872a06b053aa18199dbdbcaad2a85a8bbb6b4cff"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/review-check.json",
+      "sha256": "dc279141d126aa4cb48ce12b70143e70f45cde4370945bce79de0b6a1f80d6d9"
+    }
+  ]
+}

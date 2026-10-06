@@ -1,0 +1,728 @@
+PAGE 1
+PHYSICSBIOPHYSICS AND
+COMPUTATIONAL BIOLOGY
+Encoding memory in tube diameter hierarchy of living
+ﬂow network
+Mirna Kramara
+ and Karen Alima,b,1
+aBiological Physics and Morphogenesis Group, Max Planck Institute for Dynamics and Self-Organization, 37077 G ¨ottingen, Germany; and bPhysik
+Department, Technische Universit¨at M ¨unchen, 85748 Garching, Germany
+Edited by Andrea J. Liu, University of Pennsylvania, Philadelphia, PA, and approved January 19, 2021 (received for review April 23, 2020)
+The concept of memory is traditionally associated with organ-
+isms possessing a nervous system. However, even very simple
+organisms store information about past experiences to thrive in
+a complex environment—successfully exploiting nutrient sources,
+avoiding danger, and warding off predators. How can simple
+organisms encode information about their environment? We
+here follow how the giant unicellular slime mold Physarum
+polycephalum responds to a nutrient source. We ﬁnd that the
+network-like body plan of the organism itself serves to encode
+the location of a nutrient source. The organism entirely consists
+of interlaced tubes of varying diameters. Now, we observe that
+these tubes grow and shrink in diameter in response to a nutri-
+ent source, thereby imprinting the nutrient’s location in the tube
+diameter hierarchy. Combining theoretical model and experimen-
+tal data, we reveal how memory is encoded: a nutrient source
+locally releases a softening agent that gets transported by the
+cytoplasmic ﬂows within the tubular network. Tubes receiving
+a lot of softening agent grow in diameter at the expense of
+other tubes shrinking. Thereby, the tubes’ capacities for ﬂow-
+based transport get permanently upgraded toward the nutrient
+location, redirecting future decisions and migration. This demon-
+strates that nutrient location is stored in and retrieved from the
+networks’ tube diameter hierarchy. Our ﬁndings explain how
+network-forming organisms like slime molds and fungi thrive in
+complex environments. We here identify a ﬂow networks’ version
+of associative memory—very likely of relevance for the plethora
+of living ﬂow networks as well as for bioinspired design.
+ﬂow networks| adaptive networks| decision making| behavior
+T
+he ability to retain and access memories of past events when
+making decisions about future actions puts an individual into
+signiﬁcant advantage over those lacking this ability (1). Con-
+sequently, the mechanisms of storing and recalling memories
+across species have evolved to be very complex (2). Even though
+the concept of memory has been traditionally associated with
+cognition (3), species devoid of nervous systems also possess
+abilities of memory encoding. Alternative strategies of nonneu-
+ronal organisms involve metabolic or gene expression pathways.
+As such, organisms cope in a multitude of ways, from epigenetic
+mechanisms and DNA inversion (4, 5) to tunable circadian clocks
+(6) and cell memory during chemotaxis (7). Yet, encoding mem-
+ory by gene expression pathways takes at least half an hour in the
+simplest organisms (8) if not a full day (6), only allowing for slow
+decision processes.
+The fast decision dynamics of 10 to 20 min of the often
+termed intelligent unicellular eukaryote Physarum polycephalum
+(9–11) suggest that so far unknown strategies to encode mem-
+ory may exist. The network-shaped slime mold P. polycephalum
+is renowned for its capability to mount decisions that solve com-
+plex problems. P. polycephalum quickly reorganizes its tubular
+body plan to feed itself an optimal diet among multiple nutri-
+ent sources (10, 12), to ﬁnd the shortest path between nutrients
+in a maze (13, 14), to connect nutrient sources with an opti-
+mized transport network (9), and to solve the two-armed bandit
+problem (15). Pure chemotaxis toward nutrient or avoidance of
+undesirable territory (16, 17) cannot account for the complex-
+ity of problems solved. P. polycephalum’s strategy to encode and
+read out memories about its environment remains unknown.
+In the process of decision making, the network of P. poly-
+cephalum’s body constantly reorganizes its actomyosin-lined
+tubes. Actomyosin cortex drives rhythmic cross-sectional con-
+tractions of tubes (18). The contractions are spatially organized
+in a network-spanning peristaltic wave (19, 20). Contractions
+displace the cytoplasm in the tubes, thereby generating network-
+wide shuttle ﬂows. Upon encountering a nutrient stimulus, tube
+contractions change to propagate the signal by ﬂuid ﬂow (21).
+However, the change in the contractions is transient (21, 22),
+indicating the existence of another mechanism that facilitates
+long-term memory encoding in the network of P. polycephalum.
+The complex decisions of P. polycephalum emerge by migra-
+tion or changes in its network morphology. Network morphology,
+in particular the hierarchy in tube diameters, is controlling ﬂow-
+based transport within the network (23, 24). Migration is itself
+controlled by cytoplasmic ﬂows (25–28) and is thus also governed
+by network morphology. This suggests that network morphology
+could be key to elucidating the memory-encoding abilities of the
+nonneural organism.
+Here, we investigate how the location of a nutrient source is
+encoded in the network morphology of P. polycephalum. By ana-
+lyzing the course of a network’s response to a nutrient stimulus in
+experiments, we ﬁnd that the organism quickly imprints the stim-
+ulus by local tube dilation at the expense of other tubes shrinking,
+thereby setting up a new hierarchy of tube diameters. The signal
+to dilate tubes is propagated across the network by cytoplasmic
+ﬂows generated by peristaltic contractions of the tubes, result-
+ing in a permanent change in tube diameters. Based on our
+Signiﬁcance
+Simple organisms manage to thrive in complex environments.
+Having memory about the environment is key in taking
+informed decisions. Physarum polycephalum excels as a giant
+unicellular eukaryote, being even able to solve optimization
+problems despite the lack of a nervous system. Here, we
+follow experimentally the organism’s response to a nutri-
+ent source and ﬁnd that memory about nutrient location is
+encoded in the morphology of the network-shaped organ-
+ism. Our theoretical predictions in line with our observations
+unveil the mechanism behind memory encoding and demon-
+strate the P. polycephalum ’s ability to read out previously
+stored information.
+Author contributions: M.K. and K.A. designed research, performed research, and wrote
+the paper.y
+The authors declare no competing interest.y
+This article is a PNAS Direct Submission.y
+Published under thePNAS license .y
+Seeonline for related content such as Commentaries. y
+1To whom correspondence may be addressed. Email: k.alim@tum.de.y
+This article contains supporting information online athttps://www.pnas.org/lookup/suppl/
+doi:10.1073/pnas.2007815118/-/DCSupplemental.y
+Published February 22, 2021.
+PNAS 2021 Vol. 118 No. 10 e2007815118 https://doi.org/10.1073/pnas.2007815118 | 1of6
+Downloaded from https://www.pnas.org by 138.246.3.190 on November 3, 2022 from IP address 138.246.3.190.
+
+
+PAGE 2
+observations, we theoretically formulate a mechanism of encod-
+ing the location of a nutrient stimulus into the network hierar-
+chy: the stimulus triggers the release of a chemical agent that
+causes the gel-like tube walls to soften, resulting in a signiﬁcant
+dilation of tubes receiving sufﬁcient soluble agent. The chem-
+ical agent propagates by contraction-driven cytoplasmic ﬂows,
+initiating dilation downstream of the stimulus and thus, propa-
+gating the information about the stimulus location. Numerical
+solution of the theoretical model correctly predicts the exper-
+imentally observed ﬂow-dependent tube diameter response to
+the stimulus—generating the new network hierarchy. Finally,
+we show that memories encoded in network hierarchy are read
+out as network morphology is shaping the direction of future
+migration. This strategy to encode information by strengthening
+existing transport connections close to the stimulus reminisces
+of associative memory formation and thus may be important for
+living ﬂow networks in general.
+Results
+Changes in Tube Diameter Hierarchy Imprint Nutrient Stimulus Posi-
+tion. To study the response of P. polycephalum to nutrient stim-
+uli, we collected time series of bright-ﬁeld images of the organism
+while foraging over approximately 5 h, during which a nutrient
+stimulus was applied as a single local source in close proximity
+to the network (Fig. 1). Within 45 min after stimulus application,
+the organism internally reorganized to create a new migration
+direction facing the stimulus. Subsequently (i.e., 90 and 310 min),
+the organism migrated toward the stimulus. At 310 min, the
+organism almost fully consumed the nutrient source and con-
+tinued to forage. Strikingly, a ring of thick tubes around the
+consumed nutrient source imprinted the stimulus location in the
+network. This observation ignited the idea that tube diameters
+may encode the location of a nutrient source. Given that P. poly-
+cephalum is known to make decisions even within 10 to 20 min,
+we next focused on the immediate response after the stimulus
+was applied.
+To quantify network morphology and its dynamics in response
+to nutrient stimuli, we trimmed the specimen and analyzed
+networks with a stable morphology (i.e., before the onset of
+migration and without overt reaction to microscope light). We
+followed the initial reorganization during the 45 min after stimu-
+lus application (Fig. 2). We subsequently analyzed the time series
+of bright-ﬁeld images to quantify the dynamics of tube diame-
+ters. A tube designates a segment between two network vertices.
+By diameter, we refer to the diameter trend of the rhythmi-
+cally contracting tube in order to identify long-lasting changes
+in the network ( Materials and Methods and SI Appendix ). The
+network rapidly acquires a new spatial distribution of tube diam-
+eters within about 15 min after stimulus application—a pattern
+that persists until the end of the experiment (45 min), when the
+organism starts to migrate toward the stimulus.
+Initially, application of the stimulus causes a large-scale
+increase in diameter of the tubes in immediate proximity to the
+stimulus location and a decrease in tube volume farther away from
+the stimulus location (Fig. 2A). Close inspection of the stimulus-
+induced relative changes in tube diameter across the network
+reveals spatial heterogeneity in the response: the diameters of the
+thick tubes directed toward the nutrient stimulus increase, while
+the diameters of thinner tubes in general decrease—the more the
+farther the distance from the stimulus or the farther from the thick
+tubes directed toward the stimulus location (Fig. 2B). Altogether,
+this heterogeneous response increases the hierarchy in network
+tube diameters (SI Appendix, Fig. S1).
+The observation that thinner tubes that are close to thick tubes
+do not shrink compared with those farther away from thick tubes
+correlates with the dispersion pattern of chemicals in networks
+(24) and thus, suggests that ﬂuid ﬂows-based transport is at the
+basis of the observed network reorganization.
+Fluid Flow Propagates Stimulus into the Network. To investigate if
+transport by ﬂow is underlying the change in tube diameters, we
+sort all network tubes by their Euclidean distance to the stim-
+ulus location and display their diameter dynamics (Fig. 3). We
+ﬁnd that the dilation of tubes propagates in a wave-like manner
+from the stimulus site at the speed of 15µm/s, corresponding
+to the speed of particles advected through the network, orders
+of magnitude slower than change in pressure (21) yet outpacing
+the speed by diffusion (SI Appendix, Fig. S2). The heterogeneous
+spread of the dilation front further excludes diffusion as driver
+of transport ( SI Appendix , Fig. S3 ). Direct observation of ﬂow
+shear rate during changes in tube diameters also explicitly rules
+out shear forces as driver (SI Appendix, Fig. S4).
+A remarkable feature of the observed process is the persis-
+tence of tube dilation. The new distribution of tube diameters is
+established within about 15 min of stimulus application and per-
+sists to the end of the experiment (45 min). The stability of the
+new tube diameters indicates a lasting change of the mechanical
+properties of the tube material caused by the stimulus that would
+allow withstanding the rapid movement of mass by shuttle ﬂows
+throughout the network. The rapid and signiﬁcant, up to twofold,
+dilation of tubes near the stimulus site suggests that a chemi-
+cal agent acts on the mechanical properties of the tubes. Direct
+softening of tube wall would also account for the network-wide
+transient increase in contraction amplitude ( SI Appendix , Fig.
+S5). Agent-driven softening of tube walls is in line with observa-
+tions of migration fronts being softer than the remaining tubular
+network, arising from the difference in actomyosin organization
+(29–32).
+Mechanism of Encoding Memory in Differential Tube Diameter
+Dynamics. Experiments suggest the following mechanism to
+encode memory of a stimulus location into network hierarchy.
+min -60 min 0 min 45 min 90 min 310
+5 mm 5 mm 5 mm 5 mm 5 mm
+Fig. 1. Memory of a nutrient stimulus’ position is encoded in network hierarchy. Bright-ﬁeld images of a foraging P. polycephalum network subject to a
+localized nutrient stimulus (red arrow) applied at 0 min. The network previously migrating to the right reorganizes migration direction facing the nutrient
+within 45 min. Subsequently, nutrient is exhausted (90 min) until foraging is resumed (310 min). Nutrient location is imprinted in the network hierarchy by
+thick tubes formed around the nutrient source—persisting long after the nutrient is consumed.
+2 of 6 | PNAS
+https://doi.org/10.1073/pnas.2007815118
+Kramar and Alim
+Encoding memory in tube diameter hierarchy of living ﬂow network
+Downloaded from https://www.pnas.org by 138.246.3.190 on November 3, 2022 from IP address 138.246.3.190.
+
+
+PAGE 3
+PHYSICSBIOPHYSICS AND
+COMPUTATIONAL BIOLOGY
+A B
+Relative tube growth
+Fig. 2. Rapidly after nutrient stimulus application, hierarchy of tube diameters changes, establishing a new migration direction. ( A) Bright-ﬁeld images of
+a network before and after the application of a nutrient stimulus (red arrow). A new migration direction is being created at the top of the network. ( B)
+Relative tube growth over the 45 min after stimulus (red dot) application. While overall mass is redistributed from the bottom to the top of the network,
+close to the stimulus site, initially larger tubes lose less mass, thus increasing network hierarchy. N(tubes) = 2,165.
+Upon stimulus application, a soluble chemical agent gets
+released within the cytoplasm at the stimulus location. The chem-
+ical agent softens tube wall material and thereby, triggers tube
+dilation. This effect spreads throughout the network as the agent
+gets advected by cytoplasmic ﬂows.
+To test whether this mechanism can explain experiments,
+we build a theoretical model with physiological parameters
+(Materials and Methods ). More precisely, we compute tube
+diameter dynamics that arise from peristaltic contraction-driven
+transport of the chemical agent within the ﬂow for differ-
+ent, experimentally determined contraction frequencies of the
+organism.
+As the networks’ response is dominantly graded with distance
+to stimulus site (Fig. 3), we focus on the dynamics within a sin-
+gle tube of network size directed toward the stimulus site only.
+The cylindrical tube of radius a(z, t) extends along the longi-
+tudinal axis z∈ [0, L]. The thin shell of the active, elastic tube
+represents the actomyosin cortex that is enclosing the incom-
+pressible, low-Reynolds number cytoplasmic ﬂuid (Re ∼ 10−3).
+The cortex exerts stress σ (z, t)=σT +σE in radial direction,
+where σT is the contractile stress of the cortex activity and σE
+is the elastic restoring stress of the tube wall. As the tube is long
+and slender, a/L≪ 1, the ﬂow velocity of the cytoplasm u(z, t)
+caused by tube contractions follows Stokes equation simpliﬁed
+with lubrication approximation (33):
+¯u =− a 2
+8µ
+∂
+∂z (σT +σE), [1]
+whereµ denotes cytoplasm viscosity. To describe the peristaltic
+contractions, the contractile stress is set toσT = A cos (ωt− kz),
+A being the amplitude of the contraction-inducing cortex ten-
+sion andω being the contraction frequency. The elastic stress is
+considered linear due to the small thickness of the tube wall com-
+pared with the radius of the tube:σE = E/h (a− a0), where E is
+the elastic modulus of the tube wall, h is the tube wall height,
+and a0 is its resting radius (34). We model the softening effect
+of the time-averaged concentration of the chemical agent⟨c⟩ on
+the elastic modulus as
+E = E0−δE ⟨c⟩
+⟨c0⟩ +⟨c⟩, [2]
+where E0 is the elastic modulus of the unperturbed tube wall and
+⟨c0⟩ is the time average of the agent concentration released at the
+site of the stimulus along the tube.
+To average out concentration gradients arising solely due to
+shuttle ﬂow, we time average the concentration of the chem-
+ical agent over two contraction periods, ∂
+∂t⟨c⟩ = (⟨c⟩− c)/ τ,
+where τ is the characteristic stimulus–response timescale of
+the elastic modulus. The transport of the chemical agent by
+ﬂuid ﬂow is described by Taylor dispersion (35, 36), which
+we extend by a decay term accounting for the chemical being
+degraded:
+∂c
+∂t = ∂
+∂z
+{
+−¯uc +
+(
+κ + ¯ua 2
+48κ
+)∂c
+∂z
+}
+− kdegc, [3]
+where κ is the molecular diffusivity and kdeg is the decay rate
+of the chemical agent. Note that we here aim to model the
+very quick sensing response of the organism on the timescale of
+tens of minutes, which precedes the engulfment of the nutrient
+stimulus on the timescale of hours. Therefore, we account for
+a one-time release of the chemical agent due to sensing only.
+Finally, the total mass in the tube is conserved:
+∂a 2
+∂t =− ∂
+∂z
+(
+a 2¯u
+)
+, [4]
+giving rise to self-organized tube radii. As before, we use the
+term diameter to refer to diameter trend of the contracting tube
+averaged over two contraction periods.
+Memory-Encoding Mechanism Predicts Flow-Driven Tube Diameter
+Dynamics in Agreement with Experiments. We test the memory-
+encoding mechanism by simulating a one-time, local release of
+the softening agent and tracking the diameter dynamics along
+the closed tube as the chemical gets advected by ﬂow. We dis-
+tinguish diameter dynamics at two segments along the tube at
+Fig. 3. Tube dilation propagates by ﬂow transport velocity from stimulus
+site. Here depicted is the evolution of relative tube diameters in the entire
+network. Individual tubes are sorted by their Euclidean distance to the stim-
+ulus site. Stimulus time is denoted by the white vertical line. The speed of
+the dilation front triggered by stimulus matches ﬂow advection velocity of
+P. polycephalum networks. N(tubes) = 2,165.
+Kramar and Alim
+Encoding memory in tube diameter hierarchy of living ﬂow network
+PNAS | 3of6
+https://doi.org/10.1073/pnas.2007815118
+Downloaded from https://www.pnas.org by 138.246.3.190 on November 3, 2022 from IP address 138.246.3.190.
+
+
+PAGE 4
+increasing distances from the stimulus site (Fig. 4A). Shortly after
+stimulus release close to tube end, the tube segment closest to
+the stimulus site dilates, while the other reference segment far-
+ther away decreases in diameter—due to conservation of ﬂuid
+volume. Only as time progresses does the tube segment farther
+downstream receive softening agent by ﬂow driving it to dilate
+subsequently (SI Appendix, Fig. S6). Yet, the tube segment down-
+stream does not dilate as much as the segment close to the
+stimulus site, thereby creating a hierarchy of tube diameters in
+our beforehand uniform tube. The hierarchy arises as tube seg-
+ments downstream receive less agent. These different softening
+agent concentrations are not caused by agent’s decay, which is
+very slow kdeg = 0.001 s−1 (here, also exempliﬁed by the long-
+term persistence of the dilation). Rather, the ﬂow velocity at
+stimulus site is much slower than in the middle of the tube due to
+the eminent closed boundary at the end of the tube. Thus, most
+of the soluble agent stays close to its release site, while only a
+part gets advected, causing the delayed and decreased response
+downstream.
+We next aim to make a quantitative prediction from the model
+that exempliﬁes the crucial role of ﬂow-based transport. To this
+end, we probe how the tube diameter response time is altered
+by changing ﬂow velocities. Here, we use that contraction fre-
+quencies, which directly control ﬂow velocities, vary naturally in
+P. polycephalum. We quantify as response time the time between
+stimulus application and minimal diameter in our tube segment
+farther along the tube (Fig. 4A) while decreasing contraction fre-
+quency (Fig. 4B). We ﬁnd that the response time increases with
+decreasing contraction frequency, underlining the central role of
+ﬂow-based transport in setting up the hierarchy in response to
+the stimulus.
+Having in hand these two predictions on the tube diameters
+dynamics close and far to the stimulus and the response time,
+we return to our experimental data. We automatically sort all
+tubes in the network [N(tubes) = 2,165] by their response to the
+stimulus (described in SI Appendix ), resulting in the two char-
+acteristic dynamics predicted by the model (Fig. 4 C), with pure
+tube dilation close to the stimulus and tube shrinkage and sub-
+sequent dilation farther from the stimulus. This tube behavior
+is robust among all datasets ( SI Appendix , Fig. S9–S13 ). Pre-
+dicted dynamics along a single tube and experimentally observed
+dynamics within a network strongly resemble each other apart
+from two factors that arise due to the simpliﬁcation of a single
+tube in the model. First, the magnitude of dilation and shrink-
+age is directly tied to the total volume of the tube (37) and as
+such, smaller in the single tube compared with the voluminous
+network. Second, in a network, the softening agent is diluted in
+the multitude of tubes: the farther it gets from the stimulus site,
+the less softening agent gets to an individual tube. This results
+in an on average smaller dilation and subsequent tube shrinkage.
+Taking these geometry-related considerations into account, the
+resemblance of predicted dynamics and observations is striking.
+Finally, we categorize our experimental datasets by contrac-
+tion frequency (SI Appendix, Fig. S7) and quantify the response
+time across the networks (Fig. 4 D). As predicted, the observed
+response time increases as contraction frequency decreases—
+despite the very different morphologies and sizes of the net-
+works. Taken together with the dynamics of tube diameters, this
+agreement of data and prediction conﬁrms that the advection of
+a softening agent by ﬂuid ﬂows imprints nutrient location into a
+speciﬁc change in hierarchy of tube diameters.
+Encoded Memory Is Read Out. Taken together, our experiments
+and model show that a nutrient stimulus changes the hierarchy
+of tube diameters and thereby, imprints its location into the net-
+work. To state that the imprint in network hierarchy poses a
+memory for the organism, we need to test if the memory (i.e.,
+network hierarchy) can be read out. Does the network respond
+differently to a new nutrient stimulus when previously having
+encountered one in the same direction or not?
+Directly testing this is a futile approach as forP. polycephalum,
+there are never two identical networks to compare dynamics
+with and without memory. Furthermore, the innate tendency
+of the network to reorganize its topology and migrate becomes
+adverse to quantiﬁcation beyond the time window used here.
+Fortunately, every network comes with a given hierarchy of
+A
+C
+B
+D
+Fig. 4. Theoretical model of elastic tube dilation triggered by ﬂow-transported softening agent captures characteristic tube dynamics observed in the
+experiment. (A) Predictions of a theoretical model of a closed peristaltic tube (sketch) on the tube diameter dynamics at the marked segments. Releasing
+a soluble wall-softening agent (red symbol/vertical line) within the elastic tube predicts characteristic tube dilation and relaxation. Tube dilation response
+time (dotted line) is shifted in time due to the agent being transported by peristaltic ﬂow. ( B) A decrease in contraction frequency slowing down ﬂows
+directly increases the tube segment’s response time until dilation. ( C) Experimental tube diameter dynamics are fully classiﬁed into the two characteristic
+dynamics predicted by the model (sketch). The dynamics of the mean tube diameter averaged over each ensemble of tubes follow theoretically predicted
+tube dynamics. N(tubes) = 2,165. ( D) Quantiﬁcation of the response time until dilation in experimental datasets shows increase of response time with
+decreasing contraction frequency, in line with theory. Error bars show the full range of tube response times in every dataset.N(tubes) = 2,165, 486, 438, and
+45 for 10, 8, 6, and 4 mHz, respectively.
+4 of 6 | PNAS
+https://doi.org/10.1073/pnas.2007815118
+Kramar and Alim
+Encoding memory in tube diameter hierarchy of living ﬂow network
+Downloaded from https://www.pnas.org by 138.246.3.190 on November 3, 2022 from IP address 138.246.3.190.
+
+
+PAGE 5
+PHYSICSBIOPHYSICS AND
+COMPUTATIONAL BIOLOGY
+AB
+-30 -15 0 15 30
+time [min]
+1
+1.5
+2
+2.5
+3
+tube diameter [m]
+10-4
+Fig. 5. Network reads out memory encoded in network hierarchy by previous stimuli. (A) Bright-ﬁeld image of the plasmodial network right after stimulus
+application as in Fig. 2. ( B) Within the part of the network overall undergoing shrinkage (Fig. 4 C), thick transport tubes positioned close (red) and far
+(orange) with respect to stimulus differ in dynamics. The average tube diameters of the tubes closer by ﬂow-based travel time to stimulus undergo negligible
+shrinkage and recover their prestimulus diameter, whereas the tubes farther away shrink overall permanently.
+tube diameters (Fig. 5A), with particularly thick tubes formed in
+response to nutrient stimuli (9, 13). We here use this fact to test
+if the memory of previous stimuli represented by thicker tubes
+affects the response to a new nutrient stimulus.
+At ﬁrst sight, our analysis of Fig. 4C identiﬁes two characteristic
+tube dynamics depending on Euclidean distance to food stimulus
+only. This suggests that initial tube diameter does not impact stim-
+ulus response. However, given the insight gained from our model,
+it is clear that particularly thick tubes matter for the stimulus
+response as thicker tubes have higher ﬂow velocities (24) and thus,
+more effectively transport the softening agent. Indeed, analyzing
+only the dynamics of thick tubes highlighted in Fig. 5 B reveals
+that thick tubes starting close to the stimulus hardly undergo a
+decrease in the diameter next to thin tubes drastically shrinking
+in an overall shrinking domain. Thus, at close inspection tube
+diameter hierarchy does impact stimulus response. Yet, memory
+retrieval is also not a mere self-reinforcement of thick tubes as
+observed in long-term network adaptation for P. polycephalum
+(9): Fig. 5 also highlights an even thicker tube far from the stimulus
+site that drastically shrinks (≈50% loss in diameter). The faraway
+tube is far in travel time by ﬂow from the stimulus and therefore,
+hardly receives softening agent.
+Hence, memories stored in the hierarchy of tube diameters
+and particularly in the location of thick tubes are subsequently
+layered on top of each other, with every new stimulus dif-
+ferentially reinforcing and weakening existing thick tubes in
+superposition of existing memories (SI Appendix, Fig. S8).
+The key to why tube hierarchy represents memory and impacts
+organism behavior is the ﬂow. Flows are the means to migrate
+toward a nutrient source. Ingeniously, these ﬂows are used to
+enhance transport toward a nutrient source by growing specif-
+ically those tubes that are quickest to be reached from the
+stimulus site by ﬂow-based transport. Having thick tubes as mem-
+ories of previous stimuli positioned close to the stimulus allows
+the new stimuli to spread more quickly and reorganize mass
+transport more efﬁciently.
+Discussion
+Our observation of a nutrient stimulus leaving an imprint on
+network morphology leads to the discovery of memory forma-
+tion in the living ﬂow network P. polycephalum. We showed that
+the process of stimulus encoding starts with a local softening of
+tube walls, creating a stimulus-speciﬁc hierarchy in tube diame-
+ters. Both experiments and model show that softening is caused
+by a chemical agent transported by ﬂows, propagating graded
+tube growth across the network. While the softening agent ﬂows
+through the network, it reads out the existing hierarchy of tube
+diameters as it is encoding a new stimulus, thus using information
+stored by previous stimuli.
+The quick process of memory formation by changing network
+hierarchy we observe has a long-lasting effect on the network as
+ﬂow patterns are irretrievably changed, thus governing long-term
+network reorganization (9). An idle network decreases the estab-
+lished hierarchy of its tube diameters by pruning away the thin
+tubes ﬁrst (23, 24), the tubes surviving longest being the tubes
+directly bearing the memory of the nutrient stimulus that led to
+their growth. Such persistence of the encoded memory, as well as
+the ability of the network to encode multiple consecutive stimuli,
+surpasses transient adaptation to nutrient source.
+The identity of the chemical agent causing tube softening is
+still unknown. However, the phenomenon of actomyosin soften-
+ing has been observed across living organisms [e.g., in ﬁbroblasts
+(38) or blood vessel endothelial cells (39)]. The decreased den-
+sity of the actomyosin cortex measured in the migration front
+of P. polycephalum (30) is in line with the softening hypothe-
+sis. Perhaps the most likely candidate for the chemical agent is
+adenosine triphosphate (ATP), whose concentration is found to
+be twice as high at the migration front compared with the back
+of the organism (40), the migration front formation here being a
+direct result of stimulus sensing.
+Softening of tube walls to trigger their immediate growth is
+a mechanism that allows for very quick changes in tube diam-
+eter hierarchy. The timescale of less than 15 min observed by
+us explains P. polycephalum’s fast decisions within 10 to 20 min
+(9–11) that outcompete other basal organisms in speed (6, 8).
+Our observations show that these memories can be overwrit-
+ten or reinforced as tubes close in ﬂow-based travel times to
+stimuli keep being fueled. Finally, P. polycephalum ’s ability to
+highlight the shortest path in a maze (13, 14) or solve the travel-
+ing salesman problem (41) seems the logical result of memories
+being formed. By identifying the mechanism the organism uses
+to initially encode the nutritive stimulus, we present the missing
+piece of the puzzle connecting nutrient encounter and long-term
+network reorganization that P. polycephalum is famous for (9).
+The concept that tube diameter hierarchy serves as memory
+not only elucidates the remarkable problem-solving capabilities
+of P. polycephalum , but also demonstrates its ability to mimic
+phenomena known from higher organisms, in this case synap-
+tic facilitation (42) or synaptic plasticity (43) and reinforcement
+learning (44). Demonstrating the ability of the network to exhibit
+a phenomenon reminiscent of associative memory (45) may very
+well be of relevance for the plethora of living ﬂow networks
+and contribute to biologically inspired design for biomimetic
+materials and soft robots (46).
+Materials and Methods
+Culturing and Imaging of P. polycephalum . Plasmodial networks were pre-
+pared from microplasmodia grown in a liquid culture using the medium by
+Daniel and Rusch (47) with hematin (5 mg/mL) instead of chicken embryo
+extract (48). The networks were imaged 24 to 36 h after plating on 1.5%
+agar and incubated under microscope light for 1 h after trimming to
+decrease the inﬂuence of light and cutting on the tube contraction (22). The
+Kramar and Alim
+Encoding memory in tube diameter hierarchy of living ﬂow network
+PNAS | 5 of 6
+https://doi.org/10.1073/pnas.2007815118
+Downloaded from https://www.pnas.org by 138.246.3.190 on November 3, 2022 from IP address 138.246.3.190.
+
+
+PAGE 6
+plasmodia were imaged with a Zeiss Axio Zoom V.16 microscope equipped
+with a Hamamatsu ORCA-Flash 4.0 digital camera and a Zeiss PlanNeoFluar
+1×/0.25 objective. The Zeiss Zen 2 (Blue Edition) software was used for
+imaging. An image was acquired every 3 s. Stimuli were applied by placing
+small pellets of heat-killed HB101 bacteria on the agar using an Eppendorf
+Microloader pipette tip. In two experiments presented in Movies S3 and S5,
+1 µL of a solution containing 0.5 M glucose and 0.1 M leucine was placed on
+the agar close to the network as a nutrient stimulus.
+Image Analysis. First, the network skeletons, pixel intensities, and tube
+radii dynamics were extracted using a custom-written MATLAB (The Math-
+works) code (22). Subsequently, tube diameters are calculated from the
+time average of tube radii over 100 frames, thereby averaging out radii
+contractions.
+Numerical Simulations. The equations of the theoretical model were solved
+numerically in a custom-written MATLAB (The Mathworks) code using a
+theta-weighted Crank–Nicholson scheme with closed boundary conditions.
+Initially, the tube has a uniform radiusa0. The softening agent is introduced
+at stimulus time, growing exponentially in time to a ﬁnal concentration
+of 60.0 at 4 min. In space, the stimulus is represented as a narrow Gaus-
+sian concentration proﬁle close to the left end of the tube. The parameters
+used in the simulations are as follows: resting tube radius a0 = 50 µm, tube
+length L = 0.5 cm, contraction frequency ω = 2π/120 s (32), wavelength
+of the traveling wave λ = L, dynamic viscosity of cytoplasm µ = 6.4· 10−3
+Ns/m2 (49), tube wall height h = 0.1a0, amplitude of contraction-inducing
+cortex tension A = 10 Pa (21), molecular diffusivity of small chemical species
+κ = 10−10 m2/s, and decay rate of the chemical agent kdeg = 0.001 s−1. The
+parameters give rise to Reynolds number Re = 2¯ua0/ν≈ 0.001. The effec-
+tive resting elastic modulus isE = 10 Pa from Young’s modulus of 100 Pa (20,
+50), and for the feedback of chemical agent on cortex mechanics,δE = 2.5Pa
+and⟨c0⟩ = 10.0 were chosen to result in E = 0.8E0 at the minimum.
+Data Availability. All study data are included in the article and/or Support-
+ing Information.
+ACKNOWLEDGMENTS. We thank Natalie Andrew for Movie S3. M.K.
+acknowledges the support of International Max Planck Research School for
+Physics of Biological and Complex Systems. This work was supported by the
+Max Planck Society.
+1. J. S. Nairne, J. E. VanArsdall, J. N. Pandeirada, J. R. Blunt, Adaptive memory: Enhanced
+location memory after survival processing. J. Exp. Psychol. Learn. Mem. Cogn. 38,
+495–501 (2012).
+2. D. Shohamy, N. D. Daw, Integrating memories to guide decisions. Curr Opin Behav Sci
+5, 85–90 (2015).
+3. D. A. Redish, S. J. Y. Mizumori, Memory and decision making. Neurobiol. Learn. Mem.
+117, 1–3 (2015).
+4. J. Casades ´us, R. D’Ari, Memory in bacteria and phage.Bioessays 24, 512–518 (2002).
+5. T. Kinoshita, M. Seki, Epigenetic memory for stress response and adaptation in plants.
+Plant Cell Physiol. 55, 1859–1863 (2014).
+6. G. K. Pattanayak, C. Phong, M. J. Rust, Rhythms in energy storage control the ability
+of the cyanobacterial circadian clock to reset. Curr. Biol. 24, 1934–1938 (2014).
+7. M. Skoge et al., Cellular memory in eukaryotic chemotaxis.Proc. Natl. Acad. Sci. U.S.A
+111, 14448–14453 (2014).
+8. A. Amir, O. Kobiler, A. Rokney, A. B. Oppenheim, J. Stavans, Noise in timing and
+precision of gene activities in a genetic cascade. Mol. Syst. Biol. 3, 1–10 (2007).
+9. A. Tero et al., Rules for biologically inspired adaptive network design. Science 327,
+439–442 (2010).
+10. T. Latty, M. Beekman, Speed-accuracy trade-offs during foraging decisions in the
+acellular slime mould Physarum polycephalum. Proc. Biol. Sci. 278, 539–545 (2011).
+11. B. Meyer, C. Ansorge, T. Nakagaki, The role of noise in self-organized decision making
+by the true slime mold Physarum polycephalum. PloS One 12, e0172933 (2017).
+12. A. Dussutour, T. Latty, M. Beekman, S. J. Simpson, Amoeboid organism solves complex
+nutritional challenges. Proc. Natl. Acad. Sci. U.S.A 107, 4607–4611 (2010).
+13. T. Nakagaki, H. Yamada, ´A. T ´oth, Maze-solving by an amoeboid organism. Nature
+407, 470 (2000).
+14. V. Bonifaci, K. Mehlhorn, G. Varma, Physarum can compute shortest paths. J. Theor.
+Biol. 309, 121–133 (2012).
+15. C. R. Reid et al., Decision-making without a brain: How an amoeboid organism solves
+the two-armed bandit. J. R. Soc. Interface 13, 20160030 (2016).
+16. J. Smith-Ferguson, C. R. Reid, T. Latty, M. Beekman, H ¨ansel, Gretel and the slime
+mould—how an external spatial memory aids navigation in complex environments.
+J. Phys. D Appl. Phys. 50, 414003 (2017).
+17. C. R. Reid, T. Latty, A. Dussutour, M. Beekman, Slime mold uses an externalized spatial
+“memory” to navigate in complex environments. Proc. Natl. Acad. Sci. U.S.A 109,
+17490–17494 (2012).
+18. N. Kamiya, Physical and chemical basis of cytoplasmic streaming. Annu. Rev. Plant
+Physiol. 32, 205–236 (1981).
+19. K. Alim, G. Amselem, F. Peaudecerf, M. P. Brenner, A. Pringle, Random network peri-
+stalsis in Physarum polycephalum organizes ﬂuid ﬂows across an individual. Proc.
+Natl. Acad. Sci. U.S.A. 110, 13306–13311 (2013).
+20. J. D. Julien, K. Alim, Oscillatory ﬂuid ﬂow drives scaling of contraction wave with
+system size. Proc. Natl. Acad. Sci. U.S.A. 115, 10612–10617 (2018).
+21. K. Alim, N. Andrew, A. Pringle, M. P. Brenner, Mechanism of signal propagation in
+Physarum polycephalum. Proc. Natl. Acad. Sci. U.S.A. 114, 5136–5141 (2017).
+22. F. K. B ¨auerle, M. Kramar, K. Alim, Spatial mapping reveals multi-step pattern of
+wound healing in Physarum polycephalum. J. Phys. D Appl. Phys. 50, 434005 (2017).
+23. W. Baumgarten, M. J. B. Hauser, Functional organization of the vascular network of
+Physarum polycephalum. Phys. Biol. 10, 026003 (2013).
+24. S. Marbach, K. Alim, N. Andrew, A. Pringle, M. P. Brenner, Pruning to increase Taylor
+dispersion in Physarum polycephalum networks. Phys. Rev. Lett. 117, 178103 (2016).
+25. S. Kuroda, S. Takagi, T. Nakagaki, T. Ueda, Allometry inPhysarum plasmodium during
+free locomotion: Size versus shape, speed and rhythm. J. Exp. Biol. 218, 3729–3738
+(2015).
+26. S. Zhang, R. D. Guy, J. C. Lasheras, J. C. del ´Alamo, Self-organized mechano-chemical
+dynamics in amoeboid locomotion of Physarum fragments. J. Phys. D Appl. Phys. 50,
+204004 (2017).
+27. B. Rodiek, S. Takagi, T. Ueda, M. J. B. Hauser, Patterns of cell thickness oscillations
+during directional migration of Physarum polycephalum. Eur. Biophys. J. 44, 349–358
+(2015).
+28. O. L. Lewis, S. Zhang, R. D. Guy, J. C. del Alamo, Coordination of contractility, adhe-
+sion and ﬂow in migrating Physarum amoebae. J. R. Soc. Interface 12, 20141359
+(2015).
+29. C. Oettmeier, H. G. D ¨obereiner, A lumped parameter model of endoplasm ﬂow
+in Physarum polycephalum explains migration and polarization-induced asymmetry
+during the onset of locomotion. PloS One 14, e0215622 (2019).
+30. C. Oettmeier, J. Lee, H. G. D ¨obereiner, Form follows function: Ultrastructure of dif-
+ferent morphotypes of Physarum polycephalum . J. Phys. D Appl. Phys. 51, 134006
+(2018).
+31. A. Tero, R. Kobayashi, T. Nakagaki, A coupled-oscillator model with a conservation
+law for the rhythmic amoeboid movements of plasmodial slime molds.Physica D 205,
+125–135 (2005).
+32. J. P. Rieu, H. Delano ¨e-Ayari, S. Takagi, Y. Tanaka, T. Nakagaki, Periodic traction in
+migrating large amoeba of Physarum polycephalum. J. R. Soc. Interface 12, 20150099
+(2015).
+33. D. Takagi, N. J. Balmforth, Peristaltic pumping of viscous ﬂuid in an elastic tube. J.
+Fluid Mech. 672, 196–218 (2011).
+34. K. Vajravelu, S. Sreenadh, P. Devaki, K. V. Prasad, Peristaltic pumping of a Casson ﬂuid
+in an elastic tube. J. Appl. Fluid Mech. 9, 1897–1905 (2016).
+35. G. I. Taylor, Dispersion of soluble matter in solvent ﬂowing slowly through a tube.
+Proc. R. Soc. A 219, 186–203 (1953).
+36. R. Aris, G. I. Taylor, On the dispersion of a solute in a ﬂuid ﬂowing through a tube.
+Proc. R. Soc. A 235, 67–77 (1956).
+37. J. Sedzinski et al. , Polar actomyosin contractility destabilizes the position of the
+cytokinetic furrow. Nature 476, 462 (2011).
+38. J. C. Martens, M. Radmacher, Softening of the actin cytoskeleton by inhibition of
+myosin II. Pﬂ ¨ugers Archiv 456, 95–100 (2008).
+39. J. Fels, P. Jeggle, K. Kusche-Vihrog, H. Oberleithner, Cortical actin nanodynam-
+ics determines nitric oxide release in vascular endothelium. PloS One 7, e41520
+(2012).
+40. T. Ueda, K. Matsumoto, T. Akitaya, Y. Kobatake, Spatial and temporal orga-
+nization of intracellular adenine nucleotides and cyclic nucleotides in relation
+to rhythmic motility in Physarum plasmodium . Exp. Cell Res. 162, 486–494
+(1986).
+41. L. Zhu, M. Aono, S. J. Kim, M. Hara, Amoeba-based computing for traveling sales-
+man problem: Long-term correlations between spatially separated individual cells of
+Physarum polycephalum. Biosystems 112, 1–10 (2013).
+42. S. L. Jackman, W. G. Regehr, The mechanisms and functions of synaptic facilitation.
+Neuron 94, 447–464 (2017).
+43. R. Lamprecht, J. LeDoux, Structural plasticity and memory.Nat. Rev. Neurosci.5, 45–54
+(2004).
+44. E. O. Neftci, B. B. Averbeck, Reinforcement learning in artiﬁcial and biological
+systems. Nat. Mach. Intell. 1, 133–143 (2019).
+45. T. Takeuchi, A. J. Duszkiewicz, R. G. Morris, The synaptic plasticity and memory
+hypothesis: Encoding, storage and persistence. Philos. Trans. R. Soc. B 369, 20130288
+(2014).
+46. K. Nakajima, T. Li, H. Hauser, R. Pfeifer, Exploiting short-term memory in soft
+body dynamics as a computational resource. J. R. Soc. Interface 11, 20140437
+(2014).
+47. J. W. Daniel, H. P. Rusch, The pure culture of Physarum polycephalum on a partially
+deﬁned soluble medium. Microbiology 25, 47–59 (1961).
+48. J. W. Daniel, J. Kelley, H. P. Rusch, Hematin–requiring plasmodial myxomycete. J.
+Bacteriol. 84, 1104–1110 (1962).
+49. R. Swaminathan, C. P. Hoang, A. S. Verkman, Photobleaching recovery and anisotropy
+decay of green ﬂuorescent protein GFP-S65T in solution and cells: Cytoplasmic vis-
+cosity probed by green ﬂuorescent protein translational and rotational diffusion.
+Biophys. J. 72, 1900–1907 (1997).
+50. S. Alonso, M. Radszuweit, H. Engel, M. B ¨ar, Mechanochemical pattern formation in
+simple models of active viscoelastic ﬂuids and solids. J. Phys. D Appl. Phys. 50, 434004
+(2017).
+6 of 6 | PNAS
+https://doi.org/10.1073/pnas.2007815118
+Kramar and Alim
+Encoding memory in tube diameter hierarchy of living ﬂow network
+Downloaded from https://www.pnas.org by 138.246.3.190 on November 3, 2022 from IP address 138.246.3.190.

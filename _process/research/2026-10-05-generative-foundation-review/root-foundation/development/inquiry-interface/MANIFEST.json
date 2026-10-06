@@ -1,0 +1,18 @@
+{
+  "scope": "Source preservation and Markdown link check only; no scientific dynamics or formal proof rerun.",
+  "artifacts": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+      "sha256": "976082b3a24af44a91e44e5353a9bfadd4fa6bdb59f341deab47f563be76e836"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inquiry-interface/extract_inquiry_evidence.py",
+      "sha256": "c08a753d9e69443038ae8aa99989def8c17900f765434aac0d2a3c4129d04a44"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inquiry-interface/INQUIRY-EVIDENCE.json",
+      "sha256": "eede436d32b2b78114b376cc38e31c03a0d390428295d2c8ad0f67b4ad5f8335"
+    }
+  ],
+  "note_local_links_checked": 11
+}

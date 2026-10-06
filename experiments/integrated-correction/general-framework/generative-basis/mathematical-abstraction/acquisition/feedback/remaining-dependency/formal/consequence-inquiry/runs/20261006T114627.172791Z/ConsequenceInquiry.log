@@ -1,0 +1,15 @@
+'ConsequenceInquiry.view_preserves_source' does not depend on any axioms
+'ConsequenceInquiry.view_preserves_stock_total' depends on axioms: [propext]
+'ConsequenceInquiry.advance_preserves_stocks_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.advance_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.viewBody_account' does not depend on any axioms
+'ConsequenceInquiry.viewBody_paid' does not depend on any axioms
+'ConsequenceInquiry.view_advance_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.step_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.view_step_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.run_preserves_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.view_run_at_empty_source' depends on axioms: [propext]
+'ConsequenceInquiry.equal_view_runs' depends on axioms: [propext]
+'ConsequenceInquiry.feedbackRun' depends on axioms: [propext]
+'ConsequenceInquiry.feedbackView' does not depend on any axioms
+'ConsequenceInquiry.feedback_indistinguishable' depends on axioms: [propext]

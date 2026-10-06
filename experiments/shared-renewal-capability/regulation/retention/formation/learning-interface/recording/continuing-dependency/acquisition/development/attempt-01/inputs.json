@@ -1,0 +1,7 @@
+{
+  "status": "frozen_before_first_execution",
+  "time_utc": "2026-10-06T10:14:08.754983+00:00",
+  "source_sha256": "3d68e40ae687d2a27544b9a6f68050baa545100f0ff8f2ca59086f405c5c847c",
+  "protocol_sha256": "8839625aeb6df53a54a54a9cf23b3a917880a56464ed2ab668fdf81debe33ddb",
+  "execution_convention_sha256": "d69b509a6c249df23e4d3b7b0a32281cab5fdfb592249ac804f356186de938bc"
+}

@@ -1,0 +1,490 @@
+{
+  "accepted": true,
+  "traces": 65,
+  "state_comparisons": 2033,
+  "account_event_comparisons": 928,
+  "native_event_comparisons": 555,
+  "inherited_ledger_events": 197,
+  "matched_prefix_states": 29,
+  "sensor_product_states": {
+    "primary_changed": 3,
+    "primary_reader_clamped": 3,
+    "stable": 3,
+    "inverted_prefix": 3
+  },
+  "adverse_controls": {
+    "false_positive_stops_with_zero_income": true,
+    "missing_distinct_from_zero": true,
+    "failed_commit_preserves_old_candidates": true,
+    "failed_retention_preserves_actual_arrival": true,
+    "sensory_mismatch_precedes_extraction": true
+  },
+  "outcomes": {
+    "primary_changed": {
+      "states": 51,
+      "charges": 24,
+      "native_events": 11,
+      "status": "complete"
+    },
+    "primary_reader_clamped": {
+      "states": 58,
+      "charges": 27,
+      "native_events": 16,
+      "status": "complete"
+    },
+    "stable": {
+      "states": 33,
+      "charges": 15,
+      "native_events": 8,
+      "status": "complete"
+    },
+    "blocked": {
+      "states": 50,
+      "charges": 23,
+      "native_events": 11,
+      "status": "complete"
+    },
+    "missing_receipt": {
+      "states": 26,
+      "charges": 12,
+      "native_events": 8,
+      "status": "receipt_missing"
+    },
+    "misleading_receipt": {
+      "states": 32,
+      "charges": 14,
+      "native_events": 8,
+      "status": "complete"
+    },
+    "interrupted_first_write": {
+      "states": 28,
+      "charges": 12,
+      "native_events": 8,
+      "status": "interruption:commit_applicability"
+    },
+    "interrupted_final_retention": {
+      "states": 51,
+      "charges": 23,
+      "native_events": 11,
+      "status": "interruption:retain_applicability"
+    },
+    "sensor_mismatch": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "reset_mismatch": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "outside_family": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "fuel_zero": {
+      "states": 3,
+      "charges": 0,
+      "native_events": 0,
+      "status": "funding:applicability_installation"
+    },
+    "fuel_three": {
+      "states": 21,
+      "charges": 8,
+      "native_events": 6,
+      "status": "funding:native_read"
+    },
+    "capacity_24": {
+      "states": 3,
+      "charges": 0,
+      "native_events": 0,
+      "status": "capacity:applicability_installation"
+    },
+    "one_packet": {
+      "states": 45,
+      "charges": 20,
+      "native_events": 10,
+      "status": "source_unavailable"
+    },
+    "source_exhausted": {
+      "states": 25,
+      "charges": 11,
+      "native_events": 7,
+      "status": "source_unavailable"
+    },
+    "inverted_prefix": {
+      "states": 61,
+      "charges": 29,
+      "native_events": 14,
+      "status": "complete"
+    },
+    "grid/0": {
+      "states": 33,
+      "charges": 15,
+      "native_events": 8,
+      "status": "complete"
+    },
+    "grid/1": {
+      "states": 27,
+      "charges": 13,
+      "native_events": 8,
+      "status": "receipt_missing"
+    },
+    "grid/2": {
+      "states": 51,
+      "charges": 24,
+      "native_events": 11,
+      "status": "complete"
+    },
+    "grid/3": {
+      "states": 50,
+      "charges": 23,
+      "native_events": 11,
+      "status": "complete"
+    },
+    "grid/4": {
+      "states": 26,
+      "charges": 12,
+      "native_events": 8,
+      "status": "receipt_missing"
+    },
+    "grid/5": {
+      "states": 32,
+      "charges": 14,
+      "native_events": 8,
+      "status": "complete"
+    },
+    "grid/6": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/7": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/8": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/9": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/10": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/11": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/12": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/13": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/14": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/15": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/16": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/17": {
+      "states": 22,
+      "charges": 10,
+      "native_events": 7,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/18": {
+      "states": 51,
+      "charges": 24,
+      "native_events": 11,
+      "status": "complete"
+    },
+    "grid/19": {
+      "states": 26,
+      "charges": 12,
+      "native_events": 8,
+      "status": "receipt_missing"
+    },
+    "grid/20": {
+      "states": 32,
+      "charges": 14,
+      "native_events": 8,
+      "status": "complete"
+    },
+    "grid/21": {
+      "states": 50,
+      "charges": 23,
+      "native_events": 11,
+      "status": "complete"
+    },
+    "grid/22": {
+      "states": 26,
+      "charges": 12,
+      "native_events": 8,
+      "status": "receipt_missing"
+    },
+    "grid/23": {
+      "states": 32,
+      "charges": 14,
+      "native_events": 8,
+      "status": "complete"
+    },
+    "grid/24": {
+      "states": 61,
+      "charges": 29,
+      "native_events": 14,
+      "status": "complete"
+    },
+    "grid/25": {
+      "states": 28,
+      "charges": 13,
+      "native_events": 9,
+      "status": "receipt_missing"
+    },
+    "grid/26": {
+      "states": 34,
+      "charges": 15,
+      "native_events": 9,
+      "status": "complete"
+    },
+    "grid/27": {
+      "states": 60,
+      "charges": 28,
+      "native_events": 14,
+      "status": "complete"
+    },
+    "grid/28": {
+      "states": 28,
+      "charges": 13,
+      "native_events": 9,
+      "status": "receipt_missing"
+    },
+    "grid/29": {
+      "states": 34,
+      "charges": 15,
+      "native_events": 9,
+      "status": "complete"
+    },
+    "grid/30": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/31": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/32": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/33": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/34": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/35": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/36": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/37": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/38": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/39": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/40": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/41": {
+      "states": 24,
+      "charges": 11,
+      "native_events": 8,
+      "status": "sensory_prediction_mismatch"
+    },
+    "grid/42": {
+      "states": 35,
+      "charges": 16,
+      "native_events": 9,
+      "status": "complete"
+    },
+    "grid/43": {
+      "states": 29,
+      "charges": 14,
+      "native_events": 9,
+      "status": "receipt_missing"
+    },
+    "grid/44": {
+      "states": 61,
+      "charges": 29,
+      "native_events": 14,
+      "status": "complete"
+    },
+    "grid/45": {
+      "states": 60,
+      "charges": 28,
+      "native_events": 14,
+      "status": "complete"
+    },
+    "grid/46": {
+      "states": 28,
+      "charges": 13,
+      "native_events": 9,
+      "status": "receipt_missing"
+    },
+    "grid/47": {
+      "states": 34,
+      "charges": 15,
+      "native_events": 9,
+      "status": "complete"
+    }
+  },
+  "mutation_checks": {
+    "ancestral_fuel_reset": "detected",
+    "free_installation": "detected",
+    "altered_sensor_model": "detected",
+    "missing_native_receipt": "detected",
+    "invented_clamp_arrival": "detected",
+    "unmatched_reader_checkpoint": "detected"
+  },
+  "scope": "Independent protocol replay of every saved new event/state; no producer imports or transitions.",
+  "ancestral_scope": "Saved accepted preparation is trusted as ancestry; exact saved pre-use prefixes, 197 ancestral tariff events, original observations and finite sensor-product equivalence are independently checked. No rerun of earlier formation or exhaustive old learning.",
+  "proof_scope": "Finite product-graph sensory equivalence and concrete exact rational replay; no Lean certification, generic formal refinement, empirical verification or optimality claim.",
+  "hashes_stable": true,
+  "source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/PROTOCOL.md": "9dfe7dfe921789c78438bb9c9abf773a7cc6d59553a28acb91a75fc59ceb0536",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py": "c96ac67b60d589aef8284f3f1ba8d26b5aa3cdb489ef6ee1e07f728a7e5d35c9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/results.json": "a63cc7addc0b5e1d3fa19d3f6830f5747f3180c58f4d8188e30bfeeecf9fcb14",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/independent_check.py": "cc3ca0e9cf4bf99073e040ece98951bc03c5f119c12c3c6e2a3787f7f9c9f89f"
+  },
+  "primary_result": {
+    "status": "complete",
+    "retained": true,
+    "candidates": [
+      1
+    ],
+    "record": {
+      "sensor": 0,
+      "receipt": 1,
+      "valid": true
+    },
+    "word": "",
+    "committed_attempts": 2,
+    "actual_attempts": 2,
+    "fuel": "772283/65536",
+    "spent": "186463/32768",
+    "income": "10",
+    "source": 0,
+    "wasted": 10,
+    "phase": 0,
+    "live": 25,
+    "peak": 48,
+    "original_H_unchanged": true
+  },
+  "clamp_result": {
+    "status": "complete",
+    "retained": true,
+    "candidates": [
+      1,
+      2
+    ],
+    "record": {
+      "sensor": 1,
+      "receipt": 0,
+      "valid": true
+    },
+    "word": "aaaaa",
+    "committed_attempts": 2,
+    "actual_attempts": 2,
+    "fuel": "11581/32768",
+    "spent": "466687/65536",
+    "income": "0",
+    "source": 0,
+    "wasted": 20,
+    "phase": 2,
+    "live": 31,
+    "peak": 48,
+    "original_H_unchanged": true
+  }
+}

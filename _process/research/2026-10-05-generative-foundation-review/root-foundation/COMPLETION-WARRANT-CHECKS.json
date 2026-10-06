@@ -1,0 +1,21 @@
+{
+  "scope": "Owned documents, local links and exact preservation; proof acceptance by separate independent hand review",
+  "documents_or_owned_sections": 12,
+  "local_links": 46,
+  "anchors": 14,
+  "math_delimiters": "balanced",
+  "owned_text_whitespace": "clean",
+  "preserved_inputs": 5,
+  "previous_canonical_reconstructed_exactly": true,
+  "scientific_experiments_executed": false,
+  "new_proof_assistant_audits": 0,
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md": "db6c16af3562d9c40e321552784e3cc3efd9b93e3088ddaaf5de13499c77f171",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-MATH.md": "e364f059171ad392c849cd8b3e2f18c128df35ec20ee9f53fdbcad5ac0ae4fe9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-REVIEW.md": "990f13c36208ecdfb8484f1814185934013ae16ca04f316f9650495052ac3a93",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-SOURCES.md": "39e33e26e1d2dd701195d87b645790e1cf48dc669c5bf834df55d52c800dd2d0",
+    "sources/15-codex-theory-conversations/2026-10-06-completion-warrant-continuation.md": "56ef4e3b83f48a16e8cb6f67f2b24ce20e8ce2ee739cab980e056e32892ac5a7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-EDITS.json": "3a79fe01d1c540ed6fb29f0f82990dbba53f10d808be59f302444d7e01b1b2bf",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-CHECK.py": "d5dad6c8b044bd34d64d9af1ebefc9835b449d9cf61ee8344a367abc523766d2"
+  }
+}

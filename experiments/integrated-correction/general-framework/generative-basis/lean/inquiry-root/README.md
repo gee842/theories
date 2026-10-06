@@ -1,8 +1,10 @@
 # Necessity of an entire generated inquiry theory
 
+**Core/tree continuation, 6 October 2026:** [CoreTreeRearticulation.lean](CoreTreeRearticulation.lean) proves context weakening, expansion of reused branches, exact mutual-generation equivalence, whole-tree basis conservativity and the exact boundary for adding a claimed branch. All five new reports are empty. [The separate combined checker](check_core_tree.py) and [receipt](core-tree-verification.json) also integrate the actual episode and current generative-model entry, preserving all predecessor bytes and exact audit contracts. The older checker below is unchanged. [Interpretation and limits](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md) treat this as a mathematical contribution within the generative tree, not its exhaustive definition or a proof of ontology.
+
 6 October 2026. AI-authored continuation of Ren's 慧根 claim under the governing generative foundation. [Research argument and exact scope](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md).
 
-**Status:** a fresh Lean 4.29.1 build passes 27 new declaration audits and rebuilds 23 inherited declarations. This establishes the explicit conditional mathematical claims below. It does not establish that the full proposed philosophical basis is necessary for every scientific philosophy.
+**Current verification, 6 October 2026:** the [additive revalidation](revalidation/README.md) freshly rebuilds the original four-module package with Lean 4.29.1. All 27 package and 23 inherited declaration audits pass against current source bytes. These are existing results, not new declarations. The original [receipt](verification.json) and logs remain unchanged; the changed Depletion proof bodies retain all five theorem statements and now have empty axiom reports. Other modules retain their recorded standard dependencies. This establishes the explicit conditional mathematical claims below, not necessity of the full philosophical basis for every scientific philosophy.
 
 | Module | Checked content |
 |---|---|
@@ -16,7 +18,9 @@ The operational families use explicitly supplied observation and spending laws. 
 
 ## Reproduce
 
-Run `python3 check.py` in this directory. The checker uses the already installed pinned compiler, freezes current source bytes, compiles all four modules in a new temporary directory and checks the reported declaration dependencies. It rejects proof holes, custom axiom declarations, unsafe declarations, unchecked native decisions and compiler warnings. It verifies that source bytes did not change during the check. It writes only this package's report and compiler logs; no dependency is installed.
+To preserve the historical receipt, run `python3 revalidation/check.py` in this directory. The additive wrapper freezes the original checker, pin and four sources, runs that unchanged checker in an isolated copy, and saves a distinct receipt, source snapshots and logs under `revalidation/runs/`. It checks the live inputs and original records again after compilation. No dependency is installed. The original `check.py` remains available, but running it directly rewrites the original `verification.json` and logs.
+
+The checker uses the installed pinned compiler, compiles all four modules in a fresh temporary directory and checks the reported declaration dependencies. It rejects proof holes, custom axiom declarations, unsafe declarations, unchecked native decisions and compiler warnings. The installed standard-library distribution is used rather than rebuilt; this is not an independent verification of Lean itself.
 
 ## Genealogy and limits
 

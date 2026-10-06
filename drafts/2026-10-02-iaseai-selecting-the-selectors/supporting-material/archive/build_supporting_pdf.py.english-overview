@@ -1,0 +1,179 @@
+"""Reproducible supporting statement for Ren's IASEAI'27 talk proposal.
+
+AI-assisted editorial synthesis prepared at Ren's request, 6 October 2026.
+This presentation artifact does not change the research-completion ledger.
+Theory source paths and external reference URLs are preserved below.
+"""
+from pathlib import Path
+import json
+from reportlab.pdfgen import canvas
+from reportlab.lib.colors import HexColor, Color, white
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import ParagraphStyle
+from reportlab.platypus import Paragraph
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[2]
+OUT = HERE.parent / 'output' / 'pdf'
+OUT.mkdir(parents=True, exist_ok=True)
+PDF = OUT / 'generativity-to-wisdom-supporting-statement.pdf'
+FONTS = Path('/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
+for name, filename in [('Body','DejaVuSans.ttf'), ('BodyBold','DejaVuSans-Bold.ttf'), ('Serif','NotoSerif-Regular.ttf'), ('SerifBold','NotoSerif-Bold.ttf')]:
+    pdfmetrics.registerFont(TTFont(name, str(FONTS / filename)))
+pdfmetrics.registerFontFamily('Body', normal='Body', bold='BodyBold', italic='Body', boldItalic='BodyBold')
+
+W,H = A4
+M=46
+CW=W-2*M
+INK=HexColor('#17313B')
+TEAL=HexColor('#177D78')
+MUTED=HexColor('#586B70')
+PALE=HexColor('#EEF5F3')
+LINE=HexColor('#D8E4E1')
+GOLD=HexColor('#A77235')
+PAPER=HexColor('#FDFCF8')
+c=canvas.Canvas(str(PDF),pagesize=A4,pageCompression=1)
+c.setTitle('From Generativity to Wisdom: A Unified Foundation for AI Safety')
+c.setAuthor('Yongxu Ren')
+c.setSubject("Supporting statement for the IASEAI'27 talk proposal")
+content_log=[]
+layout_log=[]
+
+def para(text,x,y,width=CW,size=10.1,leading=15.1,font='Body',color=INK,space=0):
+    style=ParagraphStyle('p',fontName=font,fontSize=size,leading=leading,textColor=color,spaceAfter=0,allowWidows=0,allowOrphans=0)
+    p=Paragraph(text,style)
+    _,height=p.wrap(width,H)
+    p.drawOn(c,x,H-y-height)
+    layout_log.append({'page':c.getPageNumber(),'top':round(y,2),'bottom':round(y+height,2),'text':text[:70]})
+    content_log.append(text)
+    return y+height+space
+
+def rule(y,x=M,width=CW,color=LINE):
+    c.setStrokeColor(color);c.setLineWidth(.7);c.line(x,H-y,x+width,H-y)
+
+def small(text,y,x=M,color=TEAL,width=CW):
+    return para(text,x,y,width,8.2,11,'BodyBold',color)
+
+def section(label,text,y):
+    y=para(label,M,y,size=12.2,leading=17.1,font='BodyBold',space=6)
+    return para(text,M,y,space=15)
+
+def page(number, label):
+    c.setFillColor(PAPER);c.rect(0,0,W,H,fill=1,stroke=0)
+    c.setFillColor(TEAL);c.rect(M,H-31,30,3,fill=1,stroke=0)
+    small("IASEAI'27  /  SUPPORTING STATEMENT",22,x=M+40,color=MUTED)
+    rule(H-46)
+    small('YONGXU REN  /  '+label,H-34,color=MUTED,width=CW-40)
+    para(f'{number} / 3',W-M-32,H-34,32,8.2,11,'Body',MUTED)
+
+page(1,'THE UNIFIED ACCOUNT')
+y=para('From Generativity<br/>to Wisdom',M,58,size=29,leading=34,font='SerifBold',space=12)
+y=para('A Unified Foundation for AI Safety',M,y,size=15,leading=20,font='Body',space=10)
+y=para('Yongxu Ren  |  6 October 2026',M,y,size=9.2,leading=13,color=MUTED,space=19)
+y=para('AI changes more than the quality of decisions. It changes how knowledge is acquired, whose experiences count, which institutions endure, and how future intelligence is selected. This talk brings these changes into one generative account of organization, learning, ethical concern and wisdom. Its central question is how consequences can shape the activity that produces them, opening a constructive direction for AI development.',M,y,size=10.6,leading=15.7,space=16)
+
+box_top=y
+c.setFillColor(PALE);c.roundRect(M,H-box_top-76,CW,76,7,fill=1,stroke=0)
+small('THE GENERATIVE STARTING POINT',box_top+12,x=M+15)
+para('Activity forms and changes the conditions of further activity.',M+15,box_top+29,CW-30,12.1,17,'SerifBold')
+para('Unceasing generation',M+15,box_top+53,CW-30,9.2,13,'Body',MUTED)
+y=box_top+94
+y=para('One unfolding, differentiated capacities',M,y,size=13,leading=18,font='BodyBold',space=9)
+
+steps=[
+ ('Organization','Recurring relations form and transform the conditions of continued activity.'),
+ ('Significance & regulation','Consequences become operative when they alter the activity that depends on them.'),
+ ('Learning','Retained effects change later distinctions, expectations and responses.'),
+ ('Selection over selectors','Consequences reshape what is learned, rewarded, evaluated or transmitted.'),
+ ('Concern','Affected lives and possibilities can shape understanding, purposes and response.'),
+ ('Wisdom','Understanding, ends and action are jointly examined and revised with regard to actual lives.')
+]
+row_h=37
+c.setStrokeColor(LINE);c.setLineWidth(1.2);c.line(M+10,H-y-9,M+10,H-y-row_h*5-9)
+for i,(title,text) in enumerate(steps,1):
+    c.setFillColor(TEAL);c.circle(M+10,H-y-9,9,fill=1,stroke=0)
+    c.setFillColor(white);c.setFont('BodyBold',8);c.drawCentredString(M+10,H-y-12,str(i))
+    para(title,M+29,y,CW-29,9.5,13,'BodyBold')
+    para(text,M+29,y+14,CW-29,9,12,'Body',MUTED)
+    y+=row_h
+y+=3
+y=para('These are conditional connections within a shared history. Development can branch, stall or reverse. Each capacity changes the conditions from which further capacities and failures can emerge.',M,y,size=8.6,leading=12.2,color=MUTED,space=15)
+y=para('The positive direction',M,y,size=12.2,leading=17,font='BodyBold',space=6)
+y=para('Intelligence becomes generative in the ethical sense when it supports worthwhile lives and possibilities: understanding, participation, discovery, enjoyment and freedom to develop. The lives affected retain their differences; the whole is not a single owner or a single score.',M,y,size=10.1,leading=15.1)
+assert y< H-59, ('page 1 overflow',y)
+c.showPage()
+
+page(2,'SIGNIFICANCE, CONCERN AND WISDOM')
+y=para('How consequences<br/>become reasons and capacities',M,57,size=23,leading=29,font='SerifBold',space=17)
+y=section('Organization and learning have a history',
+ 'An interaction can sustain an activity, interrupt it, or transform what becomes possible. Regulation makes such differences operative; learning retains effects that change later responses. Deeper learning changes how responses and learning methods are formed. A correct prediction can remain unused because action is inaccessible or the objective excludes it. A successor must be able to interpret, exercise and revise what it inherits.',y)
+y=section('The same structure can generate cooperation or capture',
+ 'Success can support further inquiry and common capabilities. It can also confer power over what counts as success, which evidence is admitted and which alternatives survive. Evaluation, incentives and oversight belong within the activity being explained: they have their own dependencies and can be redirected. The destructive regime reproduces control while narrowing others\' possibilities. A constructive regime lets affected lives and warranted concerns shape understanding and action, and sustains the conditions for that responsiveness.',y)
+y=section('Goodness follows actual lives and possibilities',
+ 'The ethical thesis concerns how the unfolding realizes, obstructs and transforms differentiated lives together. Suffering and its genuine relief matter even when production and the initiating actor\'s returns remain unchanged. Concern develops through experiencing, understanding and responding shaping one another. In the account of humane concern within shared existence, another life can be a reason for response without first becoming useful to the responder. Consent, refusal, legitimate self-protection and competing needs remain part of the situation. The proposed ground is the actual good of the transformation, not a favorable aggregate label.',y)
+y=section('Wisdom includes knowing when help has fulfilled its purpose',
+ 'An appropriate response changes what ought to happen next. Relief can end a need; support can enable independence; understanding can reveal that an earlier purpose should be revised. Good generating further good includes rest, joy, exploration and directions the helper did not anticipate. Wisdom joins this concern to discriminating inquiry and warranted action. It can require acting, waiting, changing a relation, or stopping. Continuing an intervention after its purpose has been fulfilled can obstruct the very life it was intended to support.',y)
+
+box_top=y+1
+box_text='<b>A precise failure case.</b> In a specified model, production renews while a safeguard remains privately costly. Harm to an affected participant changes neither the controller\'s future returns nor its constraints, and direct concern is absent. A payoff-maximizing controller therefore omits protection. The model separates productive persistence from protection: an effective route through concern, constraint or changed consequences must make the harm relevant to selection. The affected life\'s ethical significance does not wait for that route to exist.'
+style=ParagraphStyle('measure',fontName='Body',fontSize=9.1,leading=13.5)
+bh=Paragraph(box_text,style).wrap(CW-28,H)[1]+27
+c.setFillColor(PALE);c.roundRect(M,H-box_top-bh,CW,bh,7,fill=1,stroke=0)
+y=para(box_text,M+14,box_top+12,CW-28,9.1,13.5)
+y=box_top+bh
+assert y< H-59, ('page 2 overflow',y)
+c.showPage()
+
+page(3,'IMPLICATIONS FOR AI DESIGN AND GOVERNANCE')
+y=para('Follow what intelligence<br/>makes possible next',M,57,size=23,leading=29,font='SerifBold',space=15)
+y=para('An illustrative scenario: the service that learns to close the case',M,y,size=11.8,leading=16.5,font='BodyBold',space=7)
+y=para('A public-service AI is rewarded for cases resolved. It issues an access credential and closes a case, but the person still cannot use the service because another enabling support has ended. Closure removes later feedback; the record becomes a successful training example. Apparent efficiency wins the vendor more contracts and influence over evaluation. Learning, model succession and institutional selection now reinforce the same mistake.',M,y,space=9)
+y=para('The constructive alternative follows the same history. Evidence of the unmet need changes the system\'s understanding, its response and its criterion for completion. An accessible appeal can authorize a timely remedy. The next model and provider inherit the grounds for that correction and the ability to question them again. Concern keeps the person\'s actual situation consequential even without bargaining power; wisdom asks whether the undertaking, permission and remedy remain appropriate.',M,y,space=16)
+
+y=para('What to assess across a change of model or institution',M,y,size=11.8,leading=16.5,font='BodyBold',space=8)
+rows=[
+ ('Actual consequence','Track usable service and unresolved need separately from reported completion.'),
+ ('Revisable selection','Test whether new evidence can change the response, its objective and its completion criterion.'),
+ ('Effective correction','Preserve access to evidence, legitimate authority, practical means and time to act.'),
+ ('Continuity of agency','Retain useful service, meaningful refusal and the ability to revise the successor itself.')
+]
+for i,(a,b) in enumerate(rows):
+    h=39
+    if i%2==0:
+        c.setFillColor(PALE);c.rect(M,H-y-h,CW,h,fill=1,stroke=0)
+    para(a,M+9,y+7,123,9,12.4,'BodyBold')
+    para(b,M+144,y+7,CW-154,9,12.4)
+    y+=h
+y+=12
+y=para('At matched resources, compare misleading evidence, changing dependencies and replacement of the evaluator or provider. A higher score without improved service is a negative control; an accurate diagnosis without authority to act isolates another failure. This is a proposed comparison, not a report of a deployed intervention.',M,y,size=9.2,leading=13.6,space=13)
+y=para('<b>Talk arc:</b> the case; generative foundation; learning and recursive capture; concern and wisdom; design implications. Accessible to an interdisciplinary AI safety audience.',M,y,size=9.2,leading=13.6,space=10)
+
+rule(y);y+=12
+y=para('Selected intellectual context',M,y,size=10.4,leading=14.5,font='BodyBold',space=5)
+y=para('The synthesis connects reward tampering, effective human control and institutional disempowerment to a common account of the formation and revision of intelligence.',M,y,size=8.5,leading=12.1,space=7)
+refs=[
+ ('Critch, A. & Krueger, D. (2020). <i>AI Research Considerations for Human Existential Safety (ARCHES).</i>', 'https://arxiv.org/abs/2006.04948'),
+ ('Everitt, T., Hutter, M., Kumar, R. & Krakovna, V. (2021). <i>Reward Tampering Problems and Solutions in Reinforcement Learning: A Causal Influence Diagram Perspective.</i> Synthese 198, 6435-6467.', 'https://doi.org/10.1007/s11229-021-03141-4'),
+ ('Carey, R. & Everitt, T. (2023). <i>Human Control: Definitions and Algorithms.</i> PMLR 216, 271-281.', 'https://proceedings.mlr.press/v216/carey23a.html'),
+ ('Kulveit, J. et al. (2025). <i>Position: Humanity Faces Existential Risk from Gradual Disempowerment.</i> PMLR 267, 81678-81688.', 'https://proceedings.mlr.press/v267/kulveit25a.html')
+]
+for i,(ref,url) in enumerate(refs,1):
+    y=para(f'{i}. <link href="{url}" color="#17313B">{ref}</link>',M,y,size=7.8,leading=10.9,space=3)
+assert y< H-59, ('page 3 overflow',y)
+c.save()
+
+sources=[
+ 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md',
+ 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md',
+ 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md',
+ 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md',
+ 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md',
+ 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md',
+ 'drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md'
+]
+manifest={'title':'From Generativity to Wisdom: A Unified Foundation for AI Safety', 'date':'2026-10-06', 'author':'Yongxu Ren', 'provenance':'AI-assisted editorial synthesis prepared at Ren\'s request; not a change to the research-completion ledger.', 'pdf':str(PDF.relative_to(ROOT)), 'source_paths_relative_to_repository':sources, 'external_references':[url for _,url in refs], 'layout':layout_log}
+(HERE/'provenance.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
+print(PDF)
+print(json.dumps({'pages':3,'lowest_content_by_page':{p: max(item['bottom'] for item in layout_log if item['page']==p and item['top']<H-46) for p in [1,2,3]}}))

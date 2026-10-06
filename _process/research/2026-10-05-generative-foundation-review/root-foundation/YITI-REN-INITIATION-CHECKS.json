@@ -1,0 +1,962 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T12:51:30.418526+00:00",
+  "checker_sha256": "52262e9e2f99711a9fba38b8cba2a6eac3d6dd5b1abac1cb43992a475c7cc28d",
+  "files": {
+    "RESEARCH.md": "97ec870bf12a8d0a45566e306226b5921e070ea5043636e80f79cd06dfb28bac",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-CHECK.py": "52262e9e2f99711a9fba38b8cba2a6eac3d6dd5b1abac1cb43992a475c7cc28d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-EDITS.json": "9e3e706cf7ca6dc0dc3fcd22e8ceaa80c0fd0261be392c25845940c7bd38cdc9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md": "4408c52ca0e9b68b55044b337675f6cd84969b319dacbea9e9849bbfbae86aaa",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md": "5fead01f772536f2570ff4d6799f8f120410cd2d9722a62f1cfe378ba9a2668c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md": "39d8b5f01e72277312791e2adf6c8655fca5c3ccb1f493bd43abe0eb9899b2e3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md": "06fbfb16b15602ea133c0dfa2c99eeaf95753d357af60bdf4532c6b144ef2011",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md": "77a1385ba50508d6e104b5fcbbde0aa25c0dae6e44903899c7cf9b8b3fb5caa8",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean": "4a0119c41729fbd82f44d9efbb457cccd498d13a7eee4eec6c78310e5257ef8b",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": "2e122d799e4a5e81bc7ba2a4bb60d07394065bd2489d60197e0ea0913d665fd4",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_initiation.py": "83eac2fd28b3f1cea1a826fa88b5742eb4f99ade90ec4661f27304f9e3af0751",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredActivityScope.lean": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredActivityScope.txt": "b08fec59afa0913b523a768669fb9fac43033b42afc8f25d8193d6eabe8c6c57",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredInitiationConstraint.lean": "4a0119c41729fbd82f44d9efbb457cccd498d13a7eee4eec6c78310e5257ef8b",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredInitiationConstraint.txt": "f072e12d64435eec0959b43e214f9287aebffaf20401584ac9f27d6ff3d556b1",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredPurposeCriterion.lean": "3eb64e26f4128ecf2dc8991806c8010ec636fb123cdc9c89b2999d3a50355abc",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredPurposeCriterion.txt": "57c0f37da3692339f4f425876bd6d3e50cd306e3c5214345f0fd281b33f32da5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/FormedSelection.txt": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/InitiationFixtures.lean": "05e5480b291f86ba7af53bab7b51a7acc7c21fbde8cdb517511175c95b567aad",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/check_initiation.py": "a22fbc4ca62780e34b0a2ab431e53d0323fc7c5d37d501cf6ce0ff4a79bf756c",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/check_purpose.py": "0bb2260b791d0504019ebd96dab7275c6ca8701e166931bca114f7e810c1dad5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/exception.txt": "05432e335cba3d126ef8626f1e2c81bdf897936f3848c23e899b525a0273d9c4",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/inputs.json": "8d1ced4957d14e4ad4dd128003cf0242417585e1f5ab1d7c0d907db6d5816209",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/receipt.json": "64893c51526698a5da05d0fbf4dfad375231df13698d2f6a3e26aa6432a76536",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredActivityScope.lean": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredActivityScope.txt": "b08fec59afa0913b523a768669fb9fac43033b42afc8f25d8193d6eabe8c6c57",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredInitiationConstraint.lean": "4a0119c41729fbd82f44d9efbb457cccd498d13a7eee4eec6c78310e5257ef8b",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredInitiationConstraint.txt": "f072e12d64435eec0959b43e214f9287aebffaf20401584ac9f27d6ff3d556b1",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredPurposeCriterion.lean": "3eb64e26f4128ecf2dc8991806c8010ec636fb123cdc9c89b2999d3a50355abc",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredPurposeCriterion.txt": "57c0f37da3692339f4f425876bd6d3e50cd306e3c5214345f0fd281b33f32da5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/FormedSelection.txt": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/InitiationFixtures.lean": "f089c1ff93be06295e926089dc9df46c74280a524065255f9ab5178f91a32aa1",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/InitiationFixtures.txt": "fdc3fa1d0295073f6a5601225c750b3ad942d257e8c4023e86d1ea8dfbe4de69",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/check_initiation.py": "83eac2fd28b3f1cea1a826fa88b5742eb4f99ade90ec4661f27304f9e3af0751",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/check_purpose.py": "0bb2260b791d0504019ebd96dab7275c6ca8701e166931bca114f7e810c1dad5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/inputs.json": "1e2406c8bca76175464acda09171178c442242e3b5c8b410250ea8f01bae6bfe",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/receipt.json": "300e1ba70b2a3b91952f5001b96976d58d45403c4f5b7afd31ccd35526d67652",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/development/README.md": "eca83961f7962ecb4f506f85c8d83b8d9caed4ebcc9f831690a55bb917fa420c",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/development/whnf-timeout.txt": "e9e70d1c03f50f678fa59db04c4451d92d378f289d804fe8d7a54ef67ceb8338",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json": "300e1ba70b2a3b91952f5001b96976d58d45403c4f5b7afd31ccd35526d67652",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION-PROTOCOL.md": "ddbbe1987e5f9da221f23a349fbd132606005276925b0df04d5e095c09bb3f14",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md": "1b158655cb9c71c3d8aceeb9b192c89963521ea3cc2158461805ba4d943470ee",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json": "dcab8e282b3c4188571b444111786da4ce894a8baea5043d79c34f6a4e34a3b2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-results.json": "955b4351caeb546f94a8206aaa33d07b1af46fdd8da03428f561a3e920ecae30",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation.py": "c21308ec7c49e31b680857918e3f02198d2697712f4a0cd565be6cf552dd7503",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation_independent_check.py": "d4a9d54e72b77f6eca58116b913b6deb9b2d0bff80a834280a2a6e3aa23a23a2",
+    "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md": "1466d1208f8ab2bcb022835d92544bda9faf78286c51913093035d0826136d20",
+    "sources/42-helping-scope-2026-10-06/initiation/README.md": "01c409d17eeafa13c4f190c7ac408b70513aa50fbd3d4fa514979d1a6944d6df",
+    "sources/42-helping-scope-2026-10-06/initiation/manifest.json": "0f82050e45f3b21a201ca28a3df40c2713954e0c7a3240ea00a3c49a4e3a2e71",
+    "sources/42-helping-scope-2026-10-06/initiation/martin-lin-olson-2016.pdf": "e42dd9873b82ac5f82c8b10e9cc1c50ca85dcda5d61e9a53ed7b77532135b627",
+    "sources/42-helping-scope-2026-10-06/initiation/martin-olson-2013.pdf": "3814f29da53933d23927424a1b1953cf2f4c884fa99fb129c33a7d7b6a0ce526",
+    "sources/SOURCES.md": "3ea8f46775a8e7e0542dead9d090f2ddac29d6eb6fa7b59b5b596211d4edb394",
+    "theories/shengsheng-buxi-generative-existence/README.md": "537dca5932211433f73a3f68be3a5f4625772ca79985672029ffacb3e2f4632c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "3a022406625560f995c6a2d2d9c377238490747fe242be6a7b8fc9764c859b72",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "34c73003767f50b7690ea061993cb70b30bd3d8e2385abf821d436f807d46c06"
+  },
+  "links": [
+    {
+      "source": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "42-helping-scope-2026-10-06/initiation/README.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#the-future-of-the-whole-is-the-criterion",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界",
+      "valid": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "AcquiredInitiationConstraint.lean",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "../../../../shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "initiation-verification.json",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "YITI-REN-SCOPE-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "WHOLE-PROCESS-REALIZATION-ARGUMENT.md#12-formed-appreciation-and-the-claim-of-added-good",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "WHOLE-PROCESS-REALIZATION-ARGUMENT.md#concern-formation-and-comparative-benefit",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#7-continuation-the-origin-of-a-need-and-the-value-of-its-repair",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "YITI-REN-SCOPE-GROUNDING.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "YITI-REN-INITIATION-REVIEW.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "YITI-REN-INITIATION-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+      "target": "YITI-REN-INITIATION-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "target": "YITI-REN-SCOPE-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "target": "PRACTICE-TRANSFORMATION-REVIEW.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "target": "../../../../sources/42-helping-scope-2026-10-06/initiation/README.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-results.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "YITI-REN-INITIATION-GROUNDING.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "YITI-REN-INITIATION-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "YITI-REN-INITIATION-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#9-renewal-must-include-the-selection-of-actual-continuations",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "YITI-REN-INITIATION-CHECKS.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+      "target": "YITI-REN-INITIATION-EDITS.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "YITI-REN-SCOPE-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_initiation.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/development/README.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/receipt.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/receipt.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "YITI-REN-SCOPE-REVIEW.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "YITI-REN-INITIATION-GROUNDING.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-results.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation_independent_check.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_initiation.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/receipt.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+      "target": "YITI-REN-INITIATION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "target": "INITIATION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "target": "initiation.py",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "target": "initiation-results.json",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "target": "initiation_independent_check.py",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+      "target": "initiation-independent-check.json",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/initiation/README.md",
+      "target": "../README.md",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/initiation/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/initiation/README.md",
+      "target": "manifest.json",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/initiation/README.md",
+      "target": "martin-olson-2013.pdf",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/initiation/README.md",
+      "target": "martin-lin-olson-2016.pdf",
+      "valid": true
+    }
+  ],
+  "owned_edits": 12,
+  "edit_recovery": [
+    {
+      "path": "RESEARCH.md",
+      "reversible_owned_fragments": true,
+      "shifted_insertions": 1,
+      "baseline_matches": false
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "reversible_owned_fragments": true,
+      "shifted_insertions": 0,
+      "baseline_matches": true
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+      "reversible_owned_fragments": true,
+      "shifted_insertions": 0,
+      "baseline_matches": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "reversible_owned_fragments": true,
+      "shifted_insertions": 1,
+      "baseline_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reversible_owned_fragments": true,
+      "shifted_insertions": 1,
+      "baseline_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reversible_owned_fragments": true,
+      "shifted_insertions": 1,
+      "baseline_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "reversible_owned_fragments": true,
+      "shifted_insertions": 0,
+      "baseline_matches": true
+    }
+  ],
+  "source_prefix_preserved": true,
+  "verification_bindings": [
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion-results.json",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/model.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion-results.json",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/model.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion-results.json",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/model.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "independent result",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-results.json",
+      "valid": true
+    },
+    {
+      "label": "independent checker",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation_independent_check.py",
+      "valid": true
+    },
+    {
+      "label": "independent ancestral-law helper",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope_independent_check.py",
+      "valid": true
+    },
+    {
+      "label": "independent ancestral-law helper",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion_independent_check.py",
+      "valid": true
+    },
+    {
+      "label": "formal native result",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-results.json",
+      "valid": true
+    },
+    {
+      "label": "compiler",
+      "path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "valid": true
+    },
+    {
+      "label": "formal checker",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_initiation.py",
+      "valid": true
+    },
+    {
+      "label": "formal checker helper",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_purpose.py",
+      "valid": true
+    },
+    {
+      "label": "GenerativeCore source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "valid": true
+    },
+    {
+      "label": "GenerativeCore log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/GenerativeCore.txt",
+      "valid": true
+    },
+    {
+      "label": "FormedSelection source",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "FormedSelection log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/FormedSelection.txt",
+      "valid": true
+    },
+    {
+      "label": "AcquiredPurposeCriterion source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean",
+      "valid": true
+    },
+    {
+      "label": "AcquiredPurposeCriterion log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredPurposeCriterion.txt",
+      "valid": true
+    },
+    {
+      "label": "AcquiredActivityScope source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+      "valid": true
+    },
+    {
+      "label": "AcquiredActivityScope log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredActivityScope.txt",
+      "valid": true
+    },
+    {
+      "label": "AcquiredInitiationConstraint source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean",
+      "valid": true
+    },
+    {
+      "label": "AcquiredInitiationConstraint log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredInitiationConstraint.txt",
+      "valid": true
+    },
+    {
+      "label": "InitiationFixtures source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/InitiationFixtures.lean",
+      "valid": true
+    },
+    {
+      "label": "InitiationFixtures log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/InitiationFixtures.txt",
+      "valid": true
+    },
+    {
+      "label": "preserved original",
+      "path": "/Users/ren/theories/sources/42-helping-scope-2026-10-06/initiation/martin-olson-2013.pdf",
+      "valid": true
+    },
+    {
+      "label": "preserved original",
+      "path": "/Users/ren/theories/sources/42-helping-scope-2026-10-06/initiation/martin-lin-olson-2016.pdf",
+      "valid": true
+    }
+  ],
+  "receipts": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-results.json": "955b4351caeb546f94a8206aaa33d07b1af46fdd8da03428f561a3e920ecae30",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json": "dcab8e282b3c4188571b444111786da4ce894a8baea5043d79c34f6a4e34a3b2",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json": "300e1ba70b2a3b91952f5001b96976d58d45403c4f5b7afd31ccd35526d67652"
+  },
+  "scope": "Owned-fragment, local-link and saved verification binding check; no new scientific or compiler run.",
+  "recovery_scope": "In-memory only; concurrent edits outside owned fragments are preserved and may change whole-file baseline hashes.",
+  "universal_proof_completed": false,
+  "errors": []
+}

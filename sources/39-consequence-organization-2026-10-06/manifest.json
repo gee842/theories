@@ -1,0 +1,40 @@
+{
+  "scope": "Exact preservation hashes, not independent validation of experimental claims",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1797,
+      "sha256": "b0309f9bcd99398394e56950a1f2a7960e1c498b191743e7f3bab2c53a13d2a2"
+    },
+    {
+      "path": "metadata/provenance.json",
+      "bytes": 6265,
+      "sha256": "dc6072effbcc9c8008cf89fe775b1ff7b1d55d43da2f95162eb2c55ed4d1e6dc"
+    },
+    {
+      "path": "original/hulme-2012-figure4.jpg",
+      "bytes": 210556,
+      "sha256": "59264b373496baa5f5c414e5446e1c87402a1b08c1d967b0059776d408227cbd"
+    },
+    {
+      "path": "original/hulme-2012-figure6.jpg",
+      "bytes": 87454,
+      "sha256": "557c44f7c8f820bb5db2f27e0cf83e383ad1d5955b15305dd46cdeb537fd96d4"
+    },
+    {
+      "path": "original/hulme-2012.html",
+      "bytes": 219680,
+      "sha256": "98cc81998427495caf4e87511ef2289740a9c0c059baa79a07ac834115bd6f94"
+    },
+    {
+      "path": "reading/hulme-2012.txt",
+      "bytes": 70061,
+      "sha256": "e99b02540058393488c537e409838e197ea57a1455c8c79bc6782e52eb66d77f"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 4983,
+      "sha256": "4370c1ab91cf7296563ba2fc2e0d96d816729ad845d104da2c9dc68f6906e2e9"
+    }
+  ]
+}

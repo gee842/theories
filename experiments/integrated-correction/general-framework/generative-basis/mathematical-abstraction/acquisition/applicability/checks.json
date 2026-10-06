@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "producer artifact assertions; no independent implementation",
+  "named_cases": 17,
+  "grid_cases": 48,
+  "traces": 65,
+  "event_states": 2033,
+  "bound_sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/PROTOCOL.md": "9dfe7dfe921789c78438bb9c9abf773a7cc6d59553a28acb91a75fc59ceb0536",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py": "c96ac67b60d589aef8284f3f1ba8d26b5aa3cdb489ef6ee1e07f728a7e5d35c9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "grid_statuses": {
+    "complete": 16,
+    "receipt_missing": 8,
+    "sensory_prediction_mismatch": 24
+  },
+  "result_sha256": "a63cc7addc0b5e1d3fa19d3f6830f5747f3180c58f4d8188e30bfeeecf9fcb14",
+  "checker_sha256": "0eba50d9e4d63d1bcbfd8e50d001c026c7d4dd78c44ac2f979bd4bcf3c266809"
+}

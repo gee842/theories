@@ -1,0 +1,6 @@
+{
+  "prior_build_passed": true,
+  "reason": "Independent review requested precise finite-continuation wording. Comment-only revision; proof terms and claims unchanged. Final source-bound build updated to exact delivered bytes.",
+  "before": "retains its old help assessment forever",
+  "after": "retains its old help assessment through every admitted finite continuation"
+}

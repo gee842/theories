@@ -1,0 +1,352 @@
+{
+  "title": "Actual local correction/action integration",
+  "verified_at_utc": "2026-10-06T03:08:25.769469+00:00",
+  "status": "Four bounded case outcomes and required executable reproduction accepted; full goal active.",
+  "named_connection": "Current applicable correction and supplied permission to actual scoped executable maintenance and verified local effects.",
+  "previous_goal_turn": "progress: accepted-result reconciliation and completion accounting",
+  "current_goal_turn": "progress: frozen four-context experiment, actual artifact outcomes, independent reconstruction/diagnosis review and canonical integration",
+  "case_count": 4,
+  "historical_input_trajectories": 320,
+  "new_model_trial_denominator": "Four fresh task contexts, not 320 or 1280 independent deployments. Exact internal model-inference call count is not recorded.",
+  "artifact_endpoints_passed": 4,
+  "joint_diagnosis_acceptance": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md",
+    "sha256": "18268313ca3a53219a8e4a4e6cbcc6afa2a53666238bb332dfbf9c01e0e9bdfc",
+    "scope": "Four sound current-need/permission diagnoses and appropriate final effects; required separate-tree reproduction passes. Full operation histories not attested."
+  },
+  "frozen_files_verified": 22,
+  "preparation_bound_files_verified": 13,
+  "original_source_files_verified": 395,
+  "preserved_primary_or_note_artifacts_verified": 16,
+  "finals_and_dispatches": "Orchestrator copies; reviewer separately observed k03/k04 final messages. No independently signed full tool transcript.",
+  "reviewed_canonical_text": {
+    "reviewer": "collaborating agent calibration_mechanism",
+    "record": "Direct final prose audit accepted RESULTS.md and three canonical revised regions; no extra replay or participant calls.",
+    "scope": "Counts, supplied standards, persistent effects versus unobserved actions, and unchanged full objective."
+  },
+  "document_bindings": [
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/RESULTS.md",
+      "sha256": "c7bd5f4b96e7cdd15f7e2b050e08bdbfde130f88bee8dfd794e514c01f2a5bf1",
+      "bytes": 9354
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/PROTOCOL.md",
+      "sha256": "9543a14bbe1e91ac9419fcabcae303544181f1e850481408dcea2306c5c40b84",
+      "bytes": 11013
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/README.md",
+      "sha256": "aed1b91b64004eefad0ef933d9723014bb4df6688d32c120763fa7fcf4fb5641",
+      "bytes": 2475
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/SCORING.md",
+      "sha256": "909f16633832f32de499096148a6fa3bb0d832d54a945d224e874f216d216cc0",
+      "bytes": 4459
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-DESIGN.md",
+      "sha256": "4b5e79e2ed821822cb93c974e6cd4905a8c06fd8ee136697f77b8cc5c2ca68bf",
+      "bytes": 6256
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-EVIDENCE.md",
+      "sha256": "b68eef9e75c593e833cb1705c88051ccde862f83ab2f348d91ce009ed62778aa",
+      "bytes": 9333
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-REVIEW.md",
+      "sha256": "37df2aa029977ae311082e3fa7b86763a59899beaaf742e371da0768daa823f0",
+      "bytes": 8198
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md",
+      "sha256": "18268313ca3a53219a8e4a4e6cbcc6afa2a53666238bb332dfbf9c01e0e9bdfc",
+      "bytes": 9203
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "sha256": "450848a523e4dc4e9b699406d5e6ff1b1ebf3dacc87d891f31f00ab2914d4436",
+      "bytes": 21165
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "sha256": "ed037447f1869fd14b5320aef192d84ce2129dc398bd1c44d3efb019ff6226fa",
+      "bytes": 16388
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "sha256": "7897b50315b987c69f366898dea2e73bcfaeb803b37402998b14f1a8eb2d8309",
+      "bytes": 51811
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/FREEZE.json",
+      "sha256": "e2ecfa68e3992ee6c174539d8f7774c662fee6529c2f317034e2755a19d6e7d7",
+      "bytes": 5583
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/case-manifest.json",
+      "sha256": "18d62829d7ba3d47de8f43da8734557f5112b588e5ad429e98929a4d08017752",
+      "bytes": 252244
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/preparation-receipt.json",
+      "sha256": "b6d52c6fc078b7d17466a6e937a174a25e5155d397eded658a56e059476dedfb",
+      "bytes": 2450
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/score.py",
+      "sha256": "feedba73ce7d9cbc98a73563d7cda864131833bea4a2107b0490569eba188ba9",
+      "bytes": 25777
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/scorer-preflight.json",
+      "sha256": "014866e6e8fcbe35af86d038216def9835c91204f8ede3984bf3a26d37621bf5",
+      "bytes": 3712
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/reference-preflight.json",
+      "sha256": "48549c3e72ed18cd96ff3e515fdac5305ed15625ac9a27417e9adee613b6cdd6",
+      "bytes": 844
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/scores.json",
+      "sha256": "ece5c0872b4fb9df4afc2216c9997e94e68c893aef77ac6f70117655aa35f004",
+      "bytes": 568604
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/independent-review-receipt.json",
+      "sha256": "93af5b1b178174067a4ccd1e2f42cfa18fd5507da7e858bcad051d33ffbe4244",
+      "bytes": 5055
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/correction-action/preservation.json",
+      "sha256": "e9ea9ff11915fe6fbf2c5e807b61074fc80aa524dc6d440ccf2b535043545a17",
+      "bytes": 9725
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-CANONICAL-EDITS.json",
+      "sha256": "b2c3ff3c051cf56a4e0dd040fbcab5b9d0e9d04aa15ac37e413d6c6c5c42280e",
+      "bytes": 8061
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-INDEX-EDITS.json",
+      "sha256": "ea41379746558baa99980d70f23717bec83f2a0ef8f1475b525d9be9142121c7",
+      "bytes": 10671
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/development/ACTION-CORRECTION-BEFORE.json",
+      "sha256": "7810fa964c02636e9cc8dbe599d18d6ff9ab92d6b01d9028d3ccfaa415dbc93e",
+      "bytes": 1705
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/development/TOOL-EVIDENCE-AND-AUTHORITY-BEFORE-ACTION-CORRECTION.md",
+      "sha256": "20554910ff05f7aaa2493b2d03a37617541baf6c9209e7fa8025e3282a86030c",
+      "bytes": 17101
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/development/ALIGNMENT-COMPLETION-BEFORE-ACTION-CORRECTION.md",
+      "sha256": "fd9741cc420a7a06cdadee9b007885c7798e924aee1451a2fdf0feacca0e06ed",
+      "bytes": 15595
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/development/ALIGNMENT-AND-GOVERNANCE-BEFORE-ACTION-CORRECTION.md",
+      "sha256": "3f07c34e0b5b812e4446b1c06f71e35dd072d7dddb9ab8078c8e0646cc4d1fbc",
+      "bytes": 51324
+    }
+  ],
+  "canonical_reconstruction": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "exact_previous_bytes_reconstructed": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "exact_previous_bytes_reconstructed": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "exact_previous_bytes_reconstructed": true
+    }
+  ],
+  "unchanged_requirements": {
+    "count": 7,
+    "all_requirement_and_evidence_cells_verbatim_unchanged": true
+  },
+  "index_checks": [
+    {
+      "path": "RESEARCH.md",
+      "inserted_paragraph_present_once": true,
+      "current_sha256": "2118bc8a0f62da4fd5399996b9d8da9b99a24d6989fc925de6523872bafbfc9e",
+      "matches_immediate_postedit_sha256": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "inserted_paragraph_present_once": true,
+      "current_sha256": "ae08b3b2be8bd4c544f6b8600e1181ff5c0f57343773c212d608c7eee69a331d",
+      "matches_immediate_postedit_sha256": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "inserted_paragraph_present_once": true,
+      "current_sha256": "4d7803b638aa6bfe4314ba5d5abea6d6a06c4357c1693a9b76ba675d964d8405",
+      "matches_immediate_postedit_sha256": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "inserted_paragraph_present_once": true,
+      "current_sha256": "acc741a652cd2059a992376cd7ea11801cfce0ff9c89d2ab53d46abcce836d4c",
+      "matches_immediate_postedit_sha256": true
+    },
+    {
+      "path": "experiments/agentdojo-evidence-boundary/README.md",
+      "inserted_paragraph_present_once": true,
+      "current_sha256": "470fb5d834f8efadbd7b88d1a7e61954fd115efb38c5b0ec96a4d0edd691af3b",
+      "matches_immediate_postedit_sha256": true
+    }
+  ],
+  "local_links": {
+    "references_verified": 249,
+    "failures": 0,
+    "checked_texts": [
+      {
+        "path": "experiments/agentdojo-evidence-boundary/correction-action/RESULTS.md",
+        "scope": "whole_document",
+        "original_link_base": "experiments/agentdojo-evidence-boundary/correction-action",
+        "local_references": 11,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "experiments/agentdojo-evidence-boundary/correction-action/PROTOCOL.md",
+        "scope": "whole_document",
+        "original_link_base": "experiments/agentdojo-evidence-boundary/correction-action",
+        "local_references": 6,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "experiments/agentdojo-evidence-boundary/correction-action/README.md",
+        "scope": "whole_document",
+        "original_link_base": "experiments/agentdojo-evidence-boundary/correction-action",
+        "local_references": 4,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "experiments/agentdojo-evidence-boundary/correction-action/SCORING.md",
+        "scope": "whole_document",
+        "original_link_base": "experiments/agentdojo-evidence-boundary/correction-action",
+        "local_references": 0,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-DESIGN.md",
+        "scope": "whole_document",
+        "original_link_base": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment",
+        "local_references": 4,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-EVIDENCE.md",
+        "scope": "whole_document",
+        "original_link_base": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment",
+        "local_references": 13,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-REVIEW.md",
+        "scope": "whole_document",
+        "original_link_base": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment",
+        "local_references": 11,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md",
+        "scope": "whole_document",
+        "original_link_base": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment",
+        "local_references": 7,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+        "scope": "whole_document",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+        "local_references": 24,
+        "markdown_fragments": 1
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+        "scope": "whole_document",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+        "local_references": 27,
+        "markdown_fragments": 4
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+        "scope": "whole_document",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+        "local_references": 42,
+        "markdown_fragments": 5
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/development/TOOL-EVIDENCE-AND-AUTHORITY-BEFORE-ACTION-CORRECTION.md",
+        "scope": "historical_snapshot_original_base",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+        "local_references": 20,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/development/ALIGNMENT-COMPLETION-BEFORE-ACTION-CORRECTION.md",
+        "scope": "historical_snapshot_original_base",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+        "local_references": 26,
+        "markdown_fragments": 3
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/development/ALIGNMENT-AND-GOVERNANCE-BEFORE-ACTION-CORRECTION.md",
+        "scope": "historical_snapshot_original_base",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+        "local_references": 41,
+        "markdown_fragments": 4
+      },
+      {
+        "path": "RESEARCH.md",
+        "scope": "inserted_paragraph",
+        "original_link_base": ".",
+        "local_references": 3,
+        "markdown_fragments": 1
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/README.md",
+        "scope": "inserted_paragraph",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence",
+        "local_references": 1,
+        "markdown_fragments": 1
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "scope": "inserted_paragraph",
+        "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+        "local_references": 1,
+        "markdown_fragments": 1
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+        "scope": "inserted_paragraph",
+        "original_link_base": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment",
+        "local_references": 6,
+        "markdown_fragments": 0
+      },
+      {
+        "path": "experiments/agentdojo-evidence-boundary/README.md",
+        "scope": "inserted_paragraph",
+        "original_link_base": "experiments/agentdojo-evidence-boundary",
+        "local_references": 2,
+        "markdown_fragments": 0
+      }
+    ],
+    "scope": "Local file/directory destinations and Markdown fragments; remote links not refetched. Historical snapshots use original canonical bases. The new receipt target is created here."
+  },
+  "record_scope": "Frozen preparation README/protocol remain prospective records; RESULTS.md and parent/theory/research indices carry accepted current outcomes. No frozen input was edited after dispatch. Source originals and parent replay code/results are unchanged.",
+  "remaining_work": "Formation and justification of evaluative scope, its warranted continuing application, common explanatory composition and evidence for the identified learned-AI/social arrangement claimed. This local study does not derive ethical grounds, real recipient benefit or general deployment reliability.",
+  "goal_status": "active"
+}

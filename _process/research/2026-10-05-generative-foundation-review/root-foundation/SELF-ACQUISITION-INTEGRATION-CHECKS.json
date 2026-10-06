@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Local links/anchors in current integration documents, preserved intermediate evidence hashes, and fresh acquisition receipt source hashes. Not scientific revalidation or ethical completion.",
+  "files": [
+    "RESEARCH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-FOUNDATION-DERIVATION-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-CONSTITUTION-CLOSURE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-ACQUISITION-BRIDGE.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/acquired-perspective/README.md",
+    "sources/15-codex-theory-conversations/2026-10-06-self-foundation-lean-no-additions.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+  ],
+  "links_checked": 1381,
+  "snapshot_files_checked": 20,
+  "acquisition_modules": 25,
+  "new_audits": 24,
+  "new_empty_axiom_audits": 6,
+  "new_axiom_union": [
+    "propext"
+  ],
+  "errors": []
+}

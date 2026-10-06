@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-06",
+  "scope": "Targeted conceptual wording corrections in five canonical development documents; inherited local mechanisms and results unchanged.",
+  "author": "Collaborating AI reviewer",
+  "scientific_checks_rerun": false,
+  "files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md",
+      "before_sha256": "bfc0135110771c9bbe61e06f475c0ee6888c1a92bb892c024b31a3959964d0f3",
+      "after_sha256": "ad2745b71f13715e5379699ee23d653b7ec9c758852f2a08d4c71bb755fc3e1e",
+      "integration_sha256": "ad2745b71f13715e5379699ee23d653b7ec9c758852f2a08d4c71bb755fc3e1e"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "before_sha256": "5838fb3195b1d48bff1ce0e124348b707d9cad19dd697d0c6e88babd99a2ba46",
+      "after_sha256": "ac417a4537f8c74270ed5c625ab8c641dabd98609cb552de7f09309c606360ab",
+      "integration_sha256": "ac417a4537f8c74270ed5c625ab8c641dabd98609cb552de7f09309c606360ab"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "before_sha256": "04c71cb76d5e19231a9cd3e1d78ab331e5a775af5840db1e65910337b224364e",
+      "after_sha256": "a1880420dee703a5074cb0e771f298bb68bba95dcec051a2ab870c165056e7e3",
+      "integration_sha256": "a1880420dee703a5074cb0e771f298bb68bba95dcec051a2ab870c165056e7e3"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "before_sha256": "6196ace9ddd94c2444779dafc2defa094d0c2458439a64251d52c356dc9f5d86",
+      "after_sha256": "f2688a5180fa3ce32fcda9330d38ea8ff9a8580e18f7854868c8b8cbeb9b4af8",
+      "integration_sha256": "f2688a5180fa3ce32fcda9330d38ea8ff9a8580e18f7854868c8b8cbeb9b4af8"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "snapshot": "_process/research/2026-10-05-generative-health/succession/wording-revision/before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "before_sha256": "6a3b904be9977b2590ca88113e40c64e27f43aa7ef26dfd05d13d7b0a188539e",
+      "after_sha256": "5af6340d7518e6867278375934f88b50c31a51587a5ce03c286d7b01b399d888",
+      "integration_sha256": "5af6340d7518e6867278375934f88b50c31a51587a5ce03c286d7b01b399d888"
+    }
+  ],
+  "checks": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md",
+      "snapshot_hash_valid": true,
+      "changed_lines": 8,
+      "headings_preserved": true,
+      "fenced_blocks_preserved": true,
+      "display_math_preserved": true,
+      "links_preserved": true,
+      "inline_code_preserved": true,
+      "numeric_tokens_preserved": true,
+      "missing_local_link_targets": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "snapshot_hash_valid": true,
+      "changed_lines": 4,
+      "headings_preserved": true,
+      "fenced_blocks_preserved": true,
+      "display_math_preserved": true,
+      "links_preserved": true,
+      "inline_code_preserved": true,
+      "numeric_tokens_preserved": true,
+      "missing_local_link_targets": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "snapshot_hash_valid": true,
+      "changed_lines": 2,
+      "headings_preserved": true,
+      "fenced_blocks_preserved": true,
+      "display_math_preserved": true,
+      "links_preserved": true,
+      "inline_code_preserved": true,
+      "numeric_tokens_preserved": true,
+      "missing_local_link_targets": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "snapshot_hash_valid": true,
+      "changed_lines": 6,
+      "headings_preserved": true,
+      "fenced_blocks_preserved": true,
+      "display_math_preserved": true,
+      "links_preserved": true,
+      "inline_code_preserved": true,
+      "numeric_tokens_preserved": true,
+      "missing_local_link_targets": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "snapshot_hash_valid": true,
+      "changed_lines": 2,
+      "headings_preserved": true,
+      "fenced_blocks_preserved": true,
+      "display_math_preserved": true,
+      "links_preserved": true,
+      "inline_code_preserved": true,
+      "numeric_tokens_preserved": true,
+      "missing_local_link_targets": []
+    }
+  ],
+  "changes": [
+    "Qualified the broad development account and separated sensitivity from warranted concern without requiring costly or unrewarded response.",
+    "Replaced financial metaphors in broad support and learning explanations with the actual local fuel and material operations.",
+    "Corrected money/payment wording in method revision while preserving declared tariff details and numerical results.",
+    "Restated the integrated selection account without generalizing financial payoff to every action.",
+    "Separated generic process/trace meaning from the concern realization’s fuel consumption; retained differentiated patient consequences.",
+    "Clarified that the formal Action type does not require intentional agency."
+  ],
+  "scope_guards": {
+    "only_five_requested_canonical_files_edited": true,
+    "formal_definitions_and_source_code_unchanged": true,
+    "headings_and_anchors_unchanged": true,
+    "formulas_and_numeric_results_unchanged": true,
+    "all_existing_links_unchanged": true,
+    "scientific_results_not_revalidated": true,
+    "new_inline_identifier_mention": "Action, explanatory prose only"
+  },
+  "targeted_phrase_scan": {
+    "obsolete_phrases": [
+      "running out of money",
+      "which actions pay",
+      "captured support can pay",
+      "material return funds",
+      "支付与患者条件共同随历史保留",
+      "指定共同方案缺钱",
+      "elicit a costly response even without a return"
+    ],
+    "remaining": {},
+    "untargeted_local_model_terms_preserved": true
+  }
+}

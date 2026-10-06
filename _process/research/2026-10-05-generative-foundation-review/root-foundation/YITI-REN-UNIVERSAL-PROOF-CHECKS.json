@@ -1,0 +1,1026 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-06T07:41:59.370316+00:00",
+  "scope": "Document integrity and owned-edit recovery only; not a proof of ethical truth or completion. No scientific or Lean runs in this round. Reversal is in memory only; no shared file was reverted.",
+  "new_note_sha256": "90129cb28fc4b9ba4e3b92dfeda16ddaeb0196fa32f207e138af6082f30d4fc7",
+  "edit_ledger_sha256": "e2c358d210bc57826b738092ebf88451abcaf111267285943f93d8829553ca10",
+  "owned_edits": 9,
+  "edit_recovery": [
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+      "all_owned_fragments_reversible": true,
+      "reconstructed_original_sha256_matches": true,
+      "current_sha256": "8deb66e90ad341b4a514e024c946739e06614e1bbc751f5cd118be062fc08f92",
+      "methods": [
+        "exact fragment reversal in memory"
+      ],
+      "errors": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "all_owned_fragments_reversible": true,
+      "reconstructed_original_sha256_matches": true,
+      "current_sha256": "4e9a38207aa848f958f6eaf1b5593426f28f5c5833a616e2bd9829884ad8f5a1",
+      "methods": [
+        "exact fragment reversal in memory",
+        "exact fragment reversal in memory",
+        "exact fragment reversal in memory"
+      ],
+      "errors": []
+    },
+    {
+      "path": "RESEARCH.md",
+      "all_owned_fragments_reversible": true,
+      "reconstructed_original_sha256_matches": false,
+      "current_sha256": "4e93f13b1f2cafbe7d0ebe074b1bcb4aaa8987d7ea0bf3b73c22306669cdf077",
+      "methods": [
+        "owned insertion reversal in memory preserving intervening edits"
+      ],
+      "errors": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "all_owned_fragments_reversible": true,
+      "reconstructed_original_sha256_matches": false,
+      "current_sha256": "27143ce33b23aae2bec09bcf9eaf09f0d047716273cfbd1bec06789f67f5bd9f",
+      "methods": [
+        "exact fragment reversal in memory",
+        "owned insertion reversal in memory preserving intervening edits"
+      ],
+      "errors": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "all_owned_fragments_reversible": true,
+      "reconstructed_original_sha256_matches": false,
+      "current_sha256": "8fa90c46cd1e6c0f176cf09a93cb1bc0165ef5a1527a834a593dbd7321bd57d5",
+      "methods": [
+        "owned insertion reversal in memory preserving intervening edits"
+      ],
+      "errors": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "all_owned_fragments_reversible": true,
+      "reconstructed_original_sha256_matches": false,
+      "current_sha256": "538d7b1549652e556b2051464733cc7fac7fd358a869b22a327735819af052e7",
+      "methods": [
+        "owned insertion reversal in memory preserving intervening edits"
+      ],
+      "errors": []
+    }
+  ],
+  "links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "CONSTITUTIVE-ANSWER-ARGUMENT.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "ELECTIVE-CONCERN-ARGUMENT.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "YITI-REN-COFORMATION-INTEGRATION.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "CONSTITUTIVE-ANSWER-ARGUMENT.md#3-no-additional-authorization-follows-merely-from-having-a-reason",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "NONINSTRUMENTAL-ROOT-ARGUMENT.md#2-第一次尝试从发生中取得最小起点",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "reference": "YITI-REN-UNIVERSAL-PROOF-CHECKS.json",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+      "reference": "2026-10-06-nondual-core-tree-continuation.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#9-直接尝试无假设的普遍证明",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "file_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "file_exists": true,
+      "anchor_exists": true
+    }
+  ],
+  "trailing_whitespace": [],
+  "universal_proof_completed": false,
+  "new_scientific_runs": false,
+  "recovery_scope_note": "All owned fragments are uniquely reversible in memory. Two reconstructed whole-file hashes match their recorded starting hashes; four do not. Concurrent shared-file edits may account for the latter, but this check does not certify preservation of every earlier byte in those four files. It does not overwrite or revert them.",
+  "follow_up_checks": [
+    {
+      "phase": "nondual-structure-and-premise-genealogy-followup",
+      "checked_at": "2026-10-06T07:53:34.187386+00:00",
+      "scope": "Owned document edits and links only; prior receipt preserved as historical. No code, proof or scientific runs.",
+      "status": "passed",
+      "owned_edits": 6,
+      "links": [
+        {
+          "source": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "reference": "2026-10-06-nondual-core-tree-continuation.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "CONSTITUTIVE-ANSWER-ARGUMENT.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "ELECTIVE-CONCERN-ARGUMENT.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "YITI-REN-COFORMATION-INTEGRATION.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "CONSTITUTIVE-ANSWER-ARGUMENT.md#3-no-additional-authorization-follows-merely-from-having-a-reason",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "NONINSTRUMENTAL-ROOT-ARGUMENT.md#2-第一次尝试从发生中取得最小起点",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "YITI-REN-UNIVERSAL-PROOF-CHECKS.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#对承受者与剩余假设来源的追问",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md#8-后续修正剩余假设的来源与一体结构",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md#8-后续修正剩余假设的来源与一体结构",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/README.md",
+          "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md#8-后续修正剩余假设的来源与一体结构",
+          "valid": true
+        }
+      ],
+      "edit_recovery": [
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "unique_owned_reversal_in_memory": true,
+          "baseline_hash_matches": true
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "unique_owned_reversal_in_memory": true,
+          "baseline_hash_matches": true
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "unique_owned_reversal_in_memory": true,
+          "baseline_hash_matches": true
+        },
+        {
+          "path": "RESEARCH.md",
+          "unique_owned_reversal_in_memory": true,
+          "baseline_hash_matches": false
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/README.md",
+          "unique_owned_reversal_in_memory": true,
+          "baseline_hash_matches": false
+        }
+      ],
+      "trailing_whitespace": [],
+      "note_sha256": "9b7039a13b5adb8f8918768d64c6ba1492e1688e808303a6d65933a177489f97",
+      "ledger_sha256": "b8fb8f5ac421f38dce8fcf9ed16aa3dd5d1617e34079695fbeedc5227920ee73",
+      "universal_proof_completed": false
+    },
+    {
+      "phase": "whole-structure-obstruction-and-restoration",
+      "checked_at": "2026-10-06T08:11:55.879574+00:00",
+      "status": "passed",
+      "scope": "Owned document changes, source prefix preservation and local links. Not validation of ethical truth, experience realization or universal proof. Existing science and Lean results were inspected, not rerun.",
+      "owned_edits": 15,
+      "file_hashes": {
+        "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md": "417520d3f5785a81907065f1f5844ed3b740e9ba36390e31955e31aad0a2d111",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "054b29698dafc0c6e38613bebcf61a818712e06d2f44d0d5e9b3bb1a3b2f39f9",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md": "41e85af6266f956d922b315c8cad3eb97a0389c69e2df3e843f288a23c5d8c4e",
+        "RESEARCH.md": "4d91a886b0a0d807e57bb52e116dbf376a8d650593c16897caa14a45651489b4",
+        "theories/shengsheng-buxi-generative-existence/README.md": "200172389bebf2719b7e9278758c42e4b474ac7a0b5831d5a7af798c384541f9",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "25e4f3f88ea1396f7cde2e95ee2cafe7f45de2a49d41a5f58bf601e63f161a35",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "dcff8dfc174cb87411a83418c2e56d8cd9da9c2fdd074216941813e1cd58a6b9",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md": "1257a0fb48518c7add631c0c2bd43b42b2606bdce2b0df9d693af4642eb92416",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md": "b18f5cd6afe273cdb4f99d8e21352318f468a7e8e4905b24c4a8a54638e9f91a"
+      },
+      "ledger_sha256": "c0541d9243ec55dcf4c4fd9eb176e488d8db0810b838088bd721573f00d07411",
+      "source_original_prefix_preserved": true,
+      "links": [
+        {
+          "source": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "reference": "2026-10-06-nondual-core-tree-continuation.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#要求完成整体构成偏蔽与复通的说明",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "INQUIRY-REVISION.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#6-整体构成偏蔽与复通的继续",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-SOURCES.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-REVIEW.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "PRETRAINING-EVIDENCE-INTEGRATION.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-MATH.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-verification.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_coformation.py",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-EDITS.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-CHECKS.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#要求完成整体构成偏蔽与复通的说明",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#11-仁感应理解与实践一体的实现偏蔽与复通",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/NondualCore.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#11-仁感应理解与实践一体的实现偏蔽与复通",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#6-整体构成偏蔽与复通的继续",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/README.md",
+          "reference": "unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#11-仁感应理解与实践一体的实现偏蔽与复通",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "reference": "NONINSTRUMENTAL-CONCERN.md#11-仁感应理解与实践一体的实现偏蔽与复通",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+          "reference": "YITI-REN-COFORMATION-INTEGRATION.md#6-整体构成偏蔽与复通的继续",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "reference": "YITI-REN-COFORMATION-INTEGRATION.md#6-整体构成偏蔽与复通的继续",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "PRACTICAL-BOUNDARY-ETHICAL-ARGUMENT.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "CONSTITUTIVE-ANSWER-ARGUMENT.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "NONINSTRUMENTAL-ROOT-ARGUMENT.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#the-constitutive-candidate-and-its-test",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "YITI-REN-COFORMATION-SOURCES.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "PRETRAINING-EVIDENCE-INTEGRATION.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-verification.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "YITI-REN-COFORMATION-MATH.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "YITI-REN-UNIVERSAL-PROOF-CHECKS.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-REVIEW.md#9-整体构成偏蔽与复通的后续审查",
+          "valid": true
+        }
+      ],
+      "trailing_whitespace": [],
+      "edit_recovery": [
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": true,
+          "methods": [
+            "exact fragment reversal in memory"
+          ]
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": true,
+          "methods": [
+            "exact fragment reversal in memory",
+            "exact fragment reversal in memory",
+            "exact fragment reversal in memory",
+            "exact fragment reversal in memory",
+            "exact fragment reversal in memory"
+          ]
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": true,
+          "methods": [
+            "exact fragment reversal in memory",
+            "exact fragment reversal in memory",
+            "exact fragment reversal in memory"
+          ]
+        },
+        {
+          "path": "RESEARCH.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": false,
+          "methods": [
+            "owned insertion reversal in memory"
+          ]
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/README.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": false,
+          "methods": [
+            "owned insertion reversal in memory"
+          ]
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": false,
+          "methods": [
+            "owned insertion reversal in memory"
+          ]
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": false,
+          "methods": [
+            "owned insertion reversal in memory"
+          ]
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": true,
+          "methods": [
+            "exact fragment reversal in memory"
+          ]
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "owned_edits_reversible": true,
+          "reconstructed_baseline_hash_matches": true,
+          "methods": [
+            "exact fragment reversal in memory"
+          ]
+        }
+      ],
+      "recovery_limits": "All reversals are in memory; no shared file is reverted. A whole-file baseline mismatch does not certify preservation of all earlier bytes and may reflect concurrent work. Unique owned-fragment recovery is checked separately.",
+      "new_scientific_runs": false,
+      "new_formal_theorems": false,
+      "assumption_free_universal_proof_completed": false,
+      "completed_scope": "Whole-structure reconstruction, obstruction/restoration mechanism candidates, substantive countercases, existing model interfaces, collaborating AI review."
+    },
+    {
+      "phase": "ren-within-generative-tree",
+      "checked_at": "2026-10-06T08:16:58.012163+00:00",
+      "status": "passed",
+      "scope": "Documentation positioning and scope correction only; no new theorem, scientific run or universal proof. In-memory reversal does not revert shared files; unmatched baseline hashes are not whole-file preservation certification.",
+      "owned_edits": 8,
+      "links": [
+        {
+          "source": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "reference": "2026-10-06-nondual-core-tree-continuation.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#仁在生成之树中的位置",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "reference": "../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#仁在生成之树中的位置",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "reference": "NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#仁在生成之树中的位置",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/README.md",
+          "reference": "../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#仁在生成之树中的位置",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-SOURCES.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-REVIEW.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "PRETRAINING-EVIDENCE-INTEGRATION.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-MATH.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-verification.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_coformation.py",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-EDITS.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-CHECKS.json",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#要求完成整体构成偏蔽与复通的说明",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#11-仁感应理解与实践一体的实现偏蔽与复通",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/NondualCore.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-REVIEW.md#9-整体构成偏蔽与复通的后续审查",
+          "valid": true
+        }
+      ],
+      "edit_recovery": [
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "5cea08577924bca72b2c46deef5844ddbc5c180321807361ccf5e3df65d31476"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "882ca2b16cc791b08953054692b55e673e35cd933e09857e763bcbd50fb50cf8"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "d486dee6844b3b0494670cb3b26065e51740c23037c1529032c32e81d317a1be"
+        },
+        {
+          "path": "RESEARCH.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "9a7a148e0022357510b2ae4d1bfdf8aa1fb2f70ac1742dbf195c29ab621f1eb4"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/README.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "cb045b8f79fb8a93d4c8afe700314982ed4037037b281db7d36870bb3e9b2165"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "369ce71cc45a5ef5252ccf532f8584f415fbad9e422d5573735797452f5d67e0"
+        }
+      ],
+      "trailing_whitespace": [],
+      "ledger_sha256": "05766f17b9b437104efb95af4b1b88cf464e9028924da1cb99d47753edf4a607"
+    },
+    {
+      "phase": "ren-formation-and-further-generation",
+      "checked_at": "2026-10-06T08:50:37.191438+00:00",
+      "status": "passed",
+      "scope": "Owned research-text integration, link/anchor validation, source-prefix preservation and in-memory edit reversal; no scientific rerun, machine proof or universal ethics certificate.",
+      "owned_edits": 21,
+      "edited_files": 8,
+      "links": [
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "GENERATIVE-GROUNDING.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md#7-关系经历与关切形成的经验区分",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "EVALUATIVE-UPTAKE.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "EVALUATIVE-SUCCESSION.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "EVALUATIVE-PLASTICITY.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "INQUIRY-REVISION.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "../../../_process/research/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#7-从树内定位推进到形成与继续生成",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "YITI-REN-COFORMATION-SOURCES.md#7-关系经历与关切形成的经验区分",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#4-仁的形成也在被关切的历程之内",
+          "valid": true
+        },
+        {
+          "source": "RESEARCH.md",
+          "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#7-从树内定位推进到形成与继续生成",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/README.md",
+          "reference": "unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#4-仁的形成也在被关切的历程之内",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/README.md",
+          "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#7-从树内定位推进到形成与继续生成",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "reference": "../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "valid": true
+        },
+        {
+          "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "reference": "NONINSTRUMENTAL-CONCERN.md#4-仁的形成也在被关切的历程之内",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean",
+          "valid": true
+        },
+        {
+          "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "reference": "YITI-REN-UNIVERSAL-PROOF-CHECKS.json",
+          "valid": true
+        }
+      ],
+      "edit_recovery": [
+        {
+          "path": "RESEARCH.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": false,
+          "current_sha256": "addfd32b298e09c1c1306eadd9d22dbe6a20cc77a931f3d41537cb945d2ef317"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "be9f7517d2c77964d4cff0794ea93085f49595766bcc2652afa90894c3caefe5"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "36d0d6b1a7284474ad1e06b70f9679c518d3ea75d09eb41547467586297dfe65"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "7efd6ec2cae8da6a1fa2eac383d051f0c37ce1c83d2caa85cef6f945f100a83d"
+        },
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "8ac8652e498d35562b601de73f16ba5f855f83ce5bef3219be8c629caa16b420"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/README.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": false,
+          "current_sha256": "8a29533260e385bf44ae5ac0cfbf652abc711aacb3f33910760ef24014f34d09"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": false,
+          "current_sha256": "cfdf655d214a76fb97859ac73f671f85a7298bf40902b28f512cb720b9635950"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "owned_fragments_reversible_in_memory": true,
+          "baseline_hash_matches": true,
+          "current_sha256": "122572873c3af6c775b96ff5058a00d2d265f25794d02a38d799ea7d05c2a397"
+        }
+      ],
+      "trailing_whitespace": [
+        {
+          "path": "RESEARCH.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        },
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/README.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+          "trailing_whitespace_lines": [],
+          "unexpected_control_character_offsets": []
+        }
+      ],
+      "source_prefix_preserved": true,
+      "edit_ledger_sha256": "afb80eefe73d5b73ecdc2c461c11b73fbd5eebfd91385e0b1ac95183d8a98a9a",
+      "universal_proof_completed": false,
+      "new_scientific_runs": 0,
+      "errors": [],
+      "recovery_scope_note": "All 21 owned edits are reversible in memory. Five file baselines match; RESEARCH.md, the theory README and GENERATIVE-GROUNDING.md retain concurrent changes outside these fragments, so this receipt does not certify whole-file equality or revert those changes. Historical receipts remain historical."
+    }
+  ]
+}

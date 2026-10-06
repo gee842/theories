@@ -1,0 +1,26 @@
+{
+  "GenerativeCore": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "FormedSelection": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+    "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+  },
+  "AcquiredPurposeCriterion": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean",
+    "sha256": "3eb64e26f4128ecf2dc8991806c8010ec636fb123cdc9c89b2999d3a50355abc"
+  },
+  "AcquiredActivityScope": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+    "sha256": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac"
+  },
+  "AcquiredInitiationConstraint": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean",
+    "sha256": "4a0119c41729fbd82f44d9efbb457cccd498d13a7eee4eec6c78310e5257ef8b"
+  },
+  "InitiationFixtures": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/InitiationFixtures.lean",
+    "sha256": "05e5480b291f86ba7af53bab7b51a7acc7c21fbde8cdb517511175c95b567aad"
+  }
+}

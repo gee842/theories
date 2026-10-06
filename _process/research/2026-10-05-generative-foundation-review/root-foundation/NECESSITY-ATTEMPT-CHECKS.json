@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "scope": "File/link/preservation check only; no scientific rerun, theorem certification or empirical validation",
+  "canonical_preexisting_bytes_preserved": true,
+  "before_sha256": "40de8572dfad5ca49869ac7f030d59333ad4400faeffa4a0717a94caeac7ec5c",
+  "owned_additions": 7,
+  "checked_local_references": 47,
+  "primary_pdf_sha256": "c84511a734a5e78d4ada14b0934dea0eadce9e6598a2130d5c6b1e8aa6e608c6",
+  "issues": [],
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "sha256": "73fe64485e5be90746c6fbd1db0d819bea0198c74de6aa8e1506e9515913a7ed"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md",
+      "sha256": "027b35a1d30cff1e70b6b72bf45e18dfb0670711efe93cb581c20c0ba9b3c0a6"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "sha256": "1cbfb525d02b73e7fd83eb8e252b7fcdd6634c8b9c27f756884e90551efcdcb0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "sha256": "32c9b330cf0434573394c57c49dcaaf5aa54d8ba1b1358d14e5688d4f2f3d2ca"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "9c3a15854c4d7069cbd8d976cbc02a3a155ce89f3df42e89f994a7b0f447b86c"
+    },
+    {
+      "path": "sources/37-ethical-minimum-primary-2026-10-06/ownerless-necessity/README.md",
+      "sha256": "68ddb6340f6d8dca2b0f68a2b86fe6978c7066b4e20349a8699e2265959fa228"
+    }
+  ],
+  "edit_receipt_sha256": "d8a60358374f5ddd254cd3ba9112e418f63e14be85e1f496ade4600d6d03622f",
+  "references": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "NONINSTRUMENTAL-ROOT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "WARRANT-OF-CONCERN-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "NECESSITY-ATTEMPT-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "ASSISTANCE-JURISDICTION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "CONSTITUTIVE-ANSWER-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+      "to": "NECESSITY-ATTEMPT-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md",
+      "to": "WARRANT-OF-CONCERN-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md",
+      "to": "NONINSTRUMENTAL-ROOT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md",
+      "to": "ETHICAL-CONSTITUTION-CLOSURE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "OWNERLESS-ETHICS-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "CONSTITUTIVE-ANSWER-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "WANG-YANGMING-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "WARRANT-OF-CONCERN-GENEALOGY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "../../../../sources/37-ethical-minimum-primary-2026-10-06/ownerless-necessity/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "NECESSITY-ATTEMPT-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+      "to": "NECESSITY-ATTEMPT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "WARRANT-OF-CONCERN-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "NECESSITY-ATTEMPT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "NECESSITY-ATTEMPT-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "NONINSTRUMENTAL-ROOT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "NECESSITY-ATTEMPT-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#necessity-attempt-the-full-ground-of-a-reason"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "development/NECESSITY-ATTEMPT-BEFORE.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "NECESSITY-ATTEMPT-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+      "to": "NECESSITY-ATTEMPT-CHECKS.json"
+    },
+    {
+      "from": "sources/37-ethical-minimum-primary-2026-10-06/ownerless-necessity/README.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md"
+    },
+    {
+      "from": "sources/37-ethical-minimum-primary-2026-10-06/ownerless-necessity/README.md",
+      "to": "harris-2011-anatman-altruism-jbe.pdf"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "to": "#necessity-attempt-the-full-ground-of-a-reason"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#necessity-attempt-the-full-ground-of-a-reason"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "NECESSITY-ATTEMPT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "NECESSITY-ATTEMPT-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "NECESSITY-ATTEMPT-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "NECESSITY-ATTEMPT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "UNIFIED-ETHICAL-GROUNDING.md#necessity-attempt-the-full-ground-of-a-reason"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "37-ethical-minimum-primary-2026-10-06/ownerless-necessity/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md"
+    }
+  ],
+  "integration_review": {
+    "reviewer": "collaborating AI ethics_audit",
+    "scope": "Full integration and seven exact additions",
+    "result": "accepted without corrections",
+    "limits": "Internal argumentative review; no new empirical or formal confirmation"
+  }
+}

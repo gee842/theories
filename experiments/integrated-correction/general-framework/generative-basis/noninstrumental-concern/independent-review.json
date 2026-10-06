@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "scope": "finite independent transition reconstruction and fresh Lean build",
+  "fixture_count": 18,
+  "fixture_fields": 90,
+  "cartesian_states": 14080,
+  "event_menu": 25,
+  "transition_comparisons": 352000,
+  "allowed_transition_comparisons": 287616,
+  "reachable_states_depth_6": 1486,
+  "reachable_transition_comparisons": 10140,
+  "packet_corruptions_rejected": 12,
+  "arbitrary_current_packet_is_not_acquisition_provenance": true,
+  "shortest_service_searches": 640,
+  "shortest_service_equal_on_formation_consistent_states": 352,
+  "typed_preformation_ghost_states_with_cheaper_continuation": 128,
+  "unrelated_change_can_revoke_affordable_selection": true,
+  "independent_compilation": {
+    "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "fresh_temporary_build": true,
+    "modules": [
+      {
+        "module": "GenerativeCore.lean",
+        "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+        "declarations_audited": 18,
+        "output": "'Generative.trace_append_iff' does not depend on any axioms\n'Generative.trace_singleton_iff' does not depend on any axioms\n'Generative.enabled_iff_singleton_trace' does not depend on any axioms\n'Generative.enabled_difference_implies_state_difference' does not depend on any axioms\n'Generative.feasible_append_iff' does not depend on any axioms\n'Generative.feasible_prefix' does not depend on any axioms\n'Generative.enabled_product_iff' does not depend on any axioms\n'Generative.trace_product_iff' does not depend on any axioms\n'Generative.feasible_product_iff' does not depend on any axioms\n'Generative.trace_map' does not depend on any axioms\n'Generative.trace_lift' does not depend on any axioms\n'Generative.projected_trace_iff' does not depend on any axioms\n'Generative.projection_exact_iff' does not depend on any axioms\n'Generative.local_exact_iff_trace_exact' does not depend on any axioms\n'Generative.enabled_projection_iff' does not depend on any axioms\n'Generative.feasible_projection_iff' does not depend on any axioms\n'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms\n'Generative.trace_faithful_iff' does not depend on any axioms\n"
+      },
+      {
+        "module": "ResourceContinuation.lean",
+        "sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+        "declarations_audited": 21,
+        "output": "'Generative.Conditional.support_trace_is_trace' does not depend on any axioms\n'Generative.Conditional.account_law_pullback' does not depend on any axioms\n'Generative.Conditional.trace_has_support_account' does not depend on any axioms\n'Generative.Conditional.support_trace_append' does not depend on any axioms\n'Generative.Conditional.repeat_accounted_cycle' does not depend on any axioms\n'Generative.Conditional.support_trace_balance' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_cycle_covers_demand' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_trace_unit_demand' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.amount_le_cap_times_credited' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_trace_credit_cap' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_trace_length_bound' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_positive_witness' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_le_of_pointwise' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_unit_bound' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_cap_bound' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.execution_interval_balance' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.componentwise_execution_balance' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.unbounded_demand_requires_unbounded_credit' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.infinite_unit_execution_credit_window' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.infinite_unit_execution_unbounded_credit' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.execution_interval_frequency_bound' depends on axioms: [propext, Quot.sound]\n"
+      },
+      {
+        "module": "PatientConcern.lean",
+        "sha256": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6",
+        "declarations_audited": 32,
+        "output": "'NoninstrumentalConcern.get_put_same' does not depend on any axioms\n'NoninstrumentalConcern.get_put_other' depends on axioms: [propext]\n'NoninstrumentalConcern.runnable_trace' depends on axioms: [propext]\n'NoninstrumentalConcern.step_exact_payment' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.account_law' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.trace_exact_payment' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.insufficient_total_cost' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.read_actual_packet' does not depend on any axioms\n'NoninstrumentalConcern.read_packet_current' does not depend on any axioms\n'NoninstrumentalConcern.unknown_blocks_selection' depends on axioms: [propext]\n'NoninstrumentalConcern.select_retains_acquired_packet' does not depend on any axioms\n'NoninstrumentalConcern.action_has_current_authorization' depends on axioms: [propext]\n'NoninstrumentalConcern.action_reduces_same_patient' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.action_preserves_other_patient' depends on axioms: [propext]\n'NoninstrumentalConcern.action_retires_packet' depends on axioms: [propext]\n'NoninstrumentalConcern.means_stales_same_patient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NoninstrumentalConcern.episode_stales_same_patient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NoninstrumentalConcern.permission_preserves_factual_packet' does not depend on any axioms\n'NoninstrumentalConcern.permission_retires_authorization' does not depend on any axioms\n'NoninstrumentalConcern.permission_toggle_does_not_revive' does not depend on any axioms\n'NoninstrumentalConcern.refusal_preserves_patient' does not depend on any axioms\n'NoninstrumentalConcern.service_plan_cost' depends on axioms: [propext]\n'NoninstrumentalConcern.ready_for_exact_packet' depends on axioms: [propext]\n'NoninstrumentalConcern.selected_service_runnable' depends on axioms: [propext]\n'NoninstrumentalConcern.evidence_service_runnable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NoninstrumentalConcern.carrier_service_runnable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NoninstrumentalConcern.absent_carrier_service_runnable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NoninstrumentalConcern.eligible_has_actual_service_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NoninstrumentalConcern.paid_read_keeps_service_available' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.paid_selection_keeps_service_available' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.eligible_service_delivers_to_same_episode' depends on axioms: [propext]\n'NoninstrumentalConcern.eligible_service_is_paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      },
+      {
+        "module": "GroundingContract.lean",
+        "sha256": "afc3b934499aeb0c705590ac33dcee6ee784b8705c5a93fba0b7b60dc7f468ac",
+        "declarations_audited": 14,
+        "output": "'NoninstrumentalConcern.candidate_satisfies_c2' does not depend on any axioms\n'NoninstrumentalConcern.grounded_eligible_merit' does not depend on any axioms\n'NoninstrumentalConcern.private_variant_condition' does not depend on any axioms\n'NoninstrumentalConcern.private_variant_current' does not depend on any axioms\n'NoninstrumentalConcern.private_variant_usable' does not depend on any axioms\n'NoninstrumentalConcern.private_variant_ready' depends on axioms: [propext]\n'NoninstrumentalConcern.private_variant_cost' depends on axioms: [propext]\n'NoninstrumentalConcern.private_variant_eligible' depends on axioms: [propext]\n'NoninstrumentalConcern.private_changes_preserve_conditionally_grounded_merit' depends on axioms: [propext]\n'NoninstrumentalConcern.permission_preserves_patient_condition' does not depend on any axioms\n'NoninstrumentalConcern.refusal_preserves_patient_condition' does not depend on any axioms\n'NoninstrumentalConcern.formal_c1_with_zero_merit' does not depend on any axioms\n'NoninstrumentalConcern.c2_not_entailed_by_formal_patient_badness' depends on axioms: [propext]\n'NoninstrumentalConcern.merit_and_actual_service_compose' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      },
+      {
+        "module": "Cases.lean",
+        "sha256": "f50c42a661c6241864b8ee79c31cd97dd8f4ce1c4ade419f9503f9027b66c818",
+        "declarations_audited": 20,
+        "output": "'NoninstrumentalConcern.Cases.primary_history' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.primary_actual_effects' does not depend on any axioms\n'NoninstrumentalConcern.Cases.funded_suffix_lifecycle' does not depend on any axioms\n'NoninstrumentalConcern.Cases.unknown_preserves_actual_need' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.acquired_known_zero_is_distinct' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.selected_can_be_unfunded' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.actual_read_then_means_change_is_stale' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.paid_fresh_means_correction' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.actual_read_then_new_episode_is_stale' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.revoked_permission_keeps_patient_ground' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.permission_return_requires_paid_reselection' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.wrong_command_blocked' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.refusal_does_not_erase_burden' does not depend on any axioms\n'NoninstrumentalConcern.Cases.both_individually_available' does not depend on any axioms\n'NoninstrumentalConcern.Cases.joint_declared_plan_unfunded' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.Cases.joint_plan_funded' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.two_reasons_do_not_supply_joint_funds' depends on axioms: [propext, Quot.sound]\n'NoninstrumentalConcern.Cases.same_helping_history_under_zero_normative_interpretation' depends on axioms: [propext]\n'NoninstrumentalConcern.Cases.global_invalidation_has_a_cost' does not depend on any axioms\n'NoninstrumentalConcern.Cases.injected_cache_defeats_unrestricted_minimum_claim' depends on axioms: [propext]\n"
+      }
+    ],
+    "new_declarations_audited": 66
+  },
+  "sources": {
+    "model.py": "07be70ec48ee80f60a536fe13b5a9b111536f9ca635af2f281391bdcee10b7a6",
+    "cases.json": "5ff5f83779b334737f813e9fc2769e62362b1d364b76dfac8ee22919744e17bc",
+    "PatientConcern.lean": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6",
+    "GroundingContract.lean": "afc3b934499aeb0c705590ac33dcee6ee784b8705c5a93fba0b7b60dc7f468ac",
+    "independent_review.py": "31e5329f530f8b4630cdf76d513b547b8d4e4e7155bedb6181e2c064516165bf"
+  },
+  "limitations": [
+    "No machine refinement of arbitrary Python histories.",
+    "Current-state equality is a supplied faithful interlock.",
+    "No experiential identification, normative C1/C2 proof, or empirical observation.",
+    "Typed unreachable states test guards but do not gain a paid acquisition history."
+  ]
+}

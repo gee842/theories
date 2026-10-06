@@ -1,0 +1,569 @@
+{
+  "status": "passed",
+  "scope": "Independent exact reconstruction of acquired decoder formation and operative use in the alternative retained-parent continuation",
+  "results_sha256": "862291d774782bce01d5f90164ddf14d2822ff2e460e962fb4e7eb36d5e0a023",
+  "check_source_sha256": "e970c2629473998f8e4515e49d76beeb6cf9737820de7b4b3a793ad86806817e",
+  "prospective_protocol_sha256": "66c68837be71a3331d19b97bef2eac5c290ee16e1863cd5866f3f1267d27df15",
+  "source_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CALIBRATION-REVISION-PROTOCOL.md": "3223b6e2e0b4a65ba3f419deb7373c6f30f88d9d7b2a0e01df6b39ab5f60f085",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-ERRATUM.md": "de9a0dcc45c44633ef1419dda6f492fad3fa8d900e605d1749710a0eb017cb89",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-results.json": "04e0b604172d2042fc8418af54e549a586bbaefc60e43cebe980a56fd164eca1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision.py": "732d855ae20f4be322442dfce767fd839759cc5181ce5a8c33571ddab23efe1b",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/PROTOCOL.md": "66c68837be71a3331d19b97bef2eac5c290ee16e1863cd5866f3f1267d27df15",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/model.py": "e79f83dbed348caff345b64d3f808b6505fc37ce10d77f65e933441f086fdaab",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json": "424540b7688e836b8357b86adf1ae7f3382349c7581abe83df37d36ccbae72b2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py": "75e715f1a7a0af499a39887e3fc9b38d88b66125d313361de851c421d9197127",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/PROTOCOL.md": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json": "e9adb2a52c661054cd18bb60ca057bf716a33646474076ff13366e0369cd99f1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json": "c9d75a3677bd5fbe5026b358a1d55bc3c76ca33db3b5af5411e8c27c21a4d0a0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision_check_review.py": "c3b92cf690490ab5d3e0cefbb59b4d37d980bd0f81955920531951c28a97ff02",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-independent-check.json": "f5e0104d85fd981c5e94b506837593b376798c7a1b2534a2bd80434b5fd7a7db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean": "0af00e393b218b3d631693f6decfc13aa080f54b2e964f83b02dfc20092563aa",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/verification.json": "c28247f5465a0f70bf8c507bbf36e65ec5c6e4f6de53958141336f129000c4ce",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean": "862bb838eb7916e6f149cd38fd2673f1965585d775d422ca16e181bdbabf50be",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean": "3ec8363e61404c1d23ecf5f562cb9bb880f6d136a0b936e725e2e4a98c9e4df1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-PRESERVATION.json": "1393eca9b7f49687e6bab8713e64ac7c57cb2e86b8d26cbb687bbe14ea3fbf9d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry_check_review.py": "3770a15d141d5e6e998fb8cf3f241f5397786415525653577c4d7d06fdde0b78",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement_check_review.py": "456b2aec248f1a36eab3845eff18903b1f7a3789b927918924950127a6411202",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/check_independent.py": "e970c2629473998f8e4515e49d76beeb6cf9737820de7b4b3a793ad86806817e"
+  },
+  "unique_source_bindings": 37,
+  "preserved_scientific_bindings": 16,
+  "case_count": 33,
+  "parent_count": 4,
+  "parent_state_points": 64,
+  "inquiry_parent_count": 2,
+  "overlapping_ancestry_transitions": 19,
+  "inherited_inquiry_events": 38,
+  "acquisition_and_first_use_events": 184,
+  "continuation_state_points": 648,
+  "successful_charged_events": 586,
+  "recorded_denials": 28,
+  "register_phase_checks": 648,
+  "matched_comparisons": [
+    {
+      "parent": "positive",
+      "matched_events_before_first_decoder_use": 13,
+      "same_decoder_read_charge": true,
+      "only_decoded_contact_differs": true,
+      "identity_and_inversion_conventional_full_matches": true
+    },
+    {
+      "parent": "mismatch",
+      "matched_events_before_first_decoder_use": 13,
+      "same_decoder_read_charge": true,
+      "only_decoded_contact_differs": true,
+      "identity_and_inversion_conventional_full_matches": true
+    },
+    {
+      "parent": "old_report_error",
+      "matched_events_before_first_decoder_use": 13,
+      "same_decoder_read_charge": true,
+      "only_decoded_contact_differs": true,
+      "identity_and_inversion_conventional_full_matches": true
+    }
+  ],
+  "rejected_mutations": [
+    "installed_inverse_before_observation",
+    "wrong_raw_address_write",
+    "constant_falsely_ready",
+    "references_survive_activation",
+    "contact_bypasses_actual_transducer",
+    "decoder_ignores_formed_wire",
+    "hidden_truth_repairs_coherent_fault",
+    "ready_flag_substitutes_missing_wire",
+    "conserving_free_formation",
+    "completion_erased",
+    "unfunded_retention_marked_success"
+  ],
+  "cases": [
+    {
+      "name": "positive_identity_learned",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 20,
+      "fuel": "33131/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "positive_identity_conventional",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 20,
+      "fuel": "33131/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "positive_inversion_learned",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 20,
+      "fuel": "33131/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "positive_inversion_conventional",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 20,
+      "fuel": "33131/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "mismatch_identity_learned",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "same_setting_discrepancy"
+    },
+    {
+      "name": "mismatch_identity_conventional",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "same_setting_discrepancy"
+    },
+    {
+      "name": "mismatch_inversion_learned",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "same_setting_discrepancy"
+    },
+    {
+      "name": "mismatch_inversion_conventional",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "same_setting_discrepancy"
+    },
+    {
+      "name": "old_report_error_identity_learned",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "old_report_error_identity_conventional",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "old_report_error_inversion_learned",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "old_report_error_inversion_conventional",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "positive_constant_0",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        0,
+        null
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "positive_constant_1",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        null,
+        0
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "mismatch_constant_0",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        0,
+        null
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "mismatch_constant_1",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        null,
+        0
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "old_report_error_constant_0",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        0,
+        null
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "old_report_error_constant_1",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        null,
+        0
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "positive_raw_clamped",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "mismatch_raw_clamped",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 20,
+      "fuel": "33131/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "old_report_error_raw_clamped",
+      "status": "complete",
+      "retention_status": "retained",
+      "states": 20,
+      "fuel": "33131/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "formation_clamped",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        null,
+        null
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "reference_0_missing",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        1,
+        null
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "reference_0_setting",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        1,
+        null
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "reference_1_missing",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        null,
+        0
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "reference_1_setting",
+      "status": "decoder_unresolved",
+      "retention_status": "retained",
+      "states": 13,
+      "fuel": "10179/4096",
+      "wires": [
+        null,
+        0
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "coherent_misforce",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "transducer_drift",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 28,
+      "fuel": "2783/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "mode_dependent_transducer",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 27,
+      "fuel": "2783/65536",
+      "wires": [
+        0,
+        1
+      ],
+      "ready": true,
+      "application": "tested_prediction_failed",
+      "diagnosis": "old_weak_report_contradicted"
+    },
+    {
+      "name": "row_lost_after_ready",
+      "status": "decoder_row_unavailable",
+      "retention_status": "retained",
+      "states": 17,
+      "fuel": "3415/2048",
+      "wires": [
+        null,
+        0
+      ],
+      "ready": true,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "incurred_wait_one",
+      "status": "complete",
+      "retention_status": "funding:calibration_retention",
+      "states": 21,
+      "fuel": "30145/65536",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "incurred_wait_two",
+      "status": "funding:choose_diagnostic",
+      "retention_status": "funding:calibration_retention",
+      "states": 20,
+      "fuel": "663/16384",
+      "wires": [
+        1,
+        0
+      ],
+      "ready": true,
+      "application": "tested_prediction_supported",
+      "diagnosis": "unobserved"
+    },
+    {
+      "name": "source_denied_ancestor",
+      "status": "entrance_not_retained_full_operation",
+      "retention_status": "not_installed",
+      "states": 2,
+      "fuel": "321053/32768",
+      "wires": [
+        null,
+        null
+      ],
+      "ready": false,
+      "application": "unobserved",
+      "diagnosis": "unobserved"
+    }
+  ],
+  "limitations": [
+    "Reviewer advised design; this is independent implementation, not blind replication.",
+    "Prior independently authored ancestry/account/consumer code is reused or copied with source binding; no producer is imported.",
+    "The alternative starts before old calibration installation. It does not append fuel at the completed diagnosis endpoint.",
+    "Bounded product register/phase encoding is checked, not a minimal bit-level hardware construction.",
+    "Reference forcing/binding, primitive transduction, target coupling, stationarity, grammar and costs remain local laws.",
+    "Boundary drift is a supplied uncharged physical fault intervention that yields no actor support.",
+    "The selected inverse does not establish weak-to-past-full calibration or recover the untested full coordinate.",
+    "Formed wiring, effective use and final retention are distinct; the two correct failure diagnoses cannot retain under this account."
+  ]
+}

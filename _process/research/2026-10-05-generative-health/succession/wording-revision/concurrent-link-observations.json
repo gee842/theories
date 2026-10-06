@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-06",
+  "scope": "Concurrent additions outside this wording revision; not edited or silently repaired.",
+  "observation": "A complete scan passed with 1932 links. Later scans observed new Huigen purpose-revision index paragraphs and links outside the wording edits; their target anchors were not present at the time inspected. This records ownership, not a waiver of full-document validity.",
+  "links": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "link": "HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "link": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "RESEARCH.md",
+      "link": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "RESEARCH.md",
+      "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "RESEARCH.md",
+      "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-revising-purposes-without-erasing-their-consequences-6-october-2026",
+      "issue": "unresolved anchor"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "link": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences",
+      "issue": "unresolved anchor"
+    }
+  ]
+}

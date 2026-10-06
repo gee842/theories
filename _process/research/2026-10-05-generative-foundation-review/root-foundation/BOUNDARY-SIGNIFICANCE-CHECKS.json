@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-06",
+  "kind": "Document integration and provenance check; not a scientific rerun",
+  "status": "passed",
+  "files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "7a407788f3883af24a7ca0d527a8892d310b1d7fc7da88747c80783394d6a9c0"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "sha256": "9c2627dd097ce4593d1fd3333914ca1d93c975ca9d86d557e9e4ae05a5ca0fbb"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUNDARY-SIGNIFICANCE-RECONSTRUCTION.md",
+      "sha256": "c03bc97b718b8130761648b5338eb6070758ee089e9e25d75f7947dbb299777b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUNDARY-SIGNIFICANCE-REVIEW.md",
+      "sha256": "b857932dd0dbdb87dad79cecc13f05601439daf8ed582b0be65ce3efa92a0920"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUNDARY-SIGNIFICANCE-SOURCES.md",
+      "sha256": "d611ecae3f4785a1f2c8c590dd759f6f66ce97ae9b5b5d7abffaacbada251139"
+    }
+  ],
+  "owned_index_paragraphs": [
+    {
+      "path": "RESEARCH.md",
+      "marker": "**Ethical branch: which consequences",
+      "sha256": "3d7d7c33af6b0d58c79635195b36c84b21f6836ffefe06d4fc70113ef76c5dab"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "marker": "**Ethical branch investigation",
+      "sha256": "b3852285125095b0bc3b456f2dc809d435efba73ffaa3bc989692938c71ae454"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "marker": "**Practical boundary/significance investigation",
+      "sha256": "ab33503a88e95f539cbe61d1351aeba58f679df3dd764ecd57ba5210e3fd15a6"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "marker": "**Ethical branch: consequential revision",
+      "sha256": "20c77c8f724dff46e349cd80929eb3024396e21001000507c03c19b166c83e45"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "marker": "Cheng Hao on responsive participation",
+      "sha256": "96902ce802f5fb2ecde01a6c0ce624040df79a4171123922421c3c4471d6e193"
+    }
+  ],
+  "preserved_snapshots": [
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-BOUNDARY-SIGNIFICANCE.md",
+      "sha256": "509174f73f7a8b04b07dfe1b0c54762f5b147e17053c38209e12ea2da994ef19",
+      "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+      "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/DEEPER-GENERATIVE-ROOT-BEFORE-BOUNDARY-SIGNIFICANCE.md",
+      "sha256": "18faf20356a9b0941c39c789603c51d20ee4445f8d6b9015145d6f3172fb375c",
+      "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    }
+  ],
+  "inherited_case_sources": [
+    {
+      "path": "experiments/joint-formation/model.py",
+      "sha256": "b8e5fed50c9d8056ea4ba80daec4dac2f79d1b1143484d60a8e043828784b77b"
+    },
+    {
+      "path": "experiments/joint-formation/results/named-cases.json",
+      "sha256": "1641541900af87a325235fa92e41a1af5f9022179651c8e8d9614fcf4b8eeef7"
+    }
+  ],
+  "local_links_checked": 173,
+  "local_fragments_checked": 22,
+  "unrelated_prior_canonical_body_preserved": true,
+  "review": "Mechanism reviewer read both new canonical sections, deeper-root amendments and neighboring recipient/succession scopes; no blockers.",
+  "errors": []
+}

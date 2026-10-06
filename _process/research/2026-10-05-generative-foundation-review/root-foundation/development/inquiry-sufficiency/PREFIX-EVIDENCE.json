@@ -1,0 +1,1836 @@
+{
+  "scope": "Finite prediction calculations at saved prefixes; no model import, native dynamics rerun, new controller, or formal theorem.",
+  "script_sha256": "69fcbda436ef1edbbe9dc8dda9bf4c86fc37c646ec38e18fc6aecf54c7b0800d",
+  "bindings": {
+    "methods": {
+      "producer": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py",
+          "sha256": "84e62031fd46bca6b28356df262ab498df65b579f96a29a2333515c59ba27d5d"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py",
+          "sha256": "bba25f7c9639c9c995f8fa950b85f0eea43e98359d2b3f295a8e2aea73684c09"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/PROTOCOL.md",
+          "sha256": "05229487040e2489ba89bc94727e481bf23e63cd265ba320f95b9948265ad20e"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py",
+          "sha256": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+          "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+        }
+      ],
+      "independent": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py",
+          "sha256": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py",
+          "sha256": "84e62031fd46bca6b28356df262ab498df65b579f96a29a2333515c59ba27d5d"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/check.py",
+          "sha256": "bba25f7c9639c9c995f8fa950b85f0eea43e98359d2b3f295a8e2aea73684c09"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/PROTOCOL.md",
+          "sha256": "05229487040e2489ba89bc94727e481bf23e63cd265ba320f95b9948265ad20e"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py",
+          "sha256": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+          "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+          "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+        }
+      ],
+      "results": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/results.json",
+        "sha256": "7106ef4c49504ff0d1ba86c127abc4d8c207097810477a269043ff39947d9173"
+      },
+      "prior_check": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent-check.json",
+        "sha256": "d2e3aca076eb8cccc315dbf9716adbaba762f15a3f4fc58868d5090f75dd6b35"
+      }
+    },
+    "access": {
+      "producer": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+          "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+          "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+          "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+        }
+      ],
+      "independent": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+          "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+          "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+          "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent_check.py",
+          "sha256": "719aa55c41d8cd6046aad99df0226da5767515381878c6427236a6d6b6837167"
+        }
+      ],
+      "results": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+        "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+      },
+      "prior_check": {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/independent-check.json",
+        "sha256": "5efe94e31a1d06026a02708ec5792ead962371fc59e57dc185a9b6f56bd7afb7"
+      }
+    }
+  },
+  "source_machines": [
+    {
+      "alphabet": [
+        "a"
+      ],
+      "outputs": [
+        0,
+        0,
+        1
+      ],
+      "transitions": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "initial": 0
+    },
+    {
+      "alphabet": [
+        "a"
+      ],
+      "outputs": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "transitions": [
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "initial": 0
+    }
+  ],
+  "four_feedback_prefixes": [
+    {
+      "acquisition_read_number": 3,
+      "history_index": 4,
+      "saved_history_prefix": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        }
+      ],
+      "survivors": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "candidate": [
+            0,
+            0
+          ],
+          "next_two_readings": [
+            0,
+            1
+          ]
+        },
+        {
+          "candidate": [
+            2,
+            0
+          ],
+          "next_two_readings": [
+            0,
+            0
+          ]
+        }
+      ],
+      "next_read_agreement": true,
+      "next_two_agreement": false,
+      "saved_commit_event_index": 29,
+      "saved_commit_event": {
+        "kind": "commit_read",
+        "work": 9,
+        "live": 45,
+        "temporary": 0,
+        "workspace": 16,
+        "peak": 65,
+        "rewrites": 4,
+        "extra": "0",
+        "bill": "6981/32768",
+        "fuel": "220215/32768"
+      }
+    },
+    {
+      "acquisition_read_number": 4,
+      "history_index": 6,
+      "saved_history_prefix": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "survivors": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "predictions": [
+        {
+          "candidate": [
+            0,
+            1
+          ],
+          "next_two_readings": [
+            1,
+            0
+          ]
+        },
+        {
+          "candidate": [
+            2,
+            1
+          ],
+          "next_two_readings": [
+            0,
+            1
+          ]
+        }
+      ],
+      "next_read_agreement": false,
+      "next_two_agreement": false,
+      "saved_commit_event_index": 36,
+      "saved_commit_event": {
+        "kind": "commit_read",
+        "work": 5,
+        "live": 45,
+        "temporary": 0,
+        "workspace": 10,
+        "peak": 55,
+        "rewrites": 4,
+        "extra": "0",
+        "bill": "4773/32768",
+        "fuel": "23393/4096"
+      }
+    },
+    {
+      "acquisition_read_number": 5,
+      "history_index": 8,
+      "saved_history_prefix": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      ],
+      "survivors": [
+        [
+          2,
+          3
+        ]
+      ],
+      "predictions": [
+        {
+          "candidate": [
+            2,
+            3
+          ],
+          "next_two_readings": [
+            1,
+            0
+          ]
+        }
+      ],
+      "next_read_agreement": true,
+      "next_two_agreement": true,
+      "saved_commit_event_index": 43,
+      "saved_commit_event": {
+        "kind": "commit_read",
+        "work": 5,
+        "live": 43,
+        "temporary": 0,
+        "workspace": 10,
+        "peak": 55,
+        "rewrites": 2,
+        "extra": "0",
+        "bill": "3749/32768",
+        "fuel": "155097/32768"
+      }
+    }
+  ],
+  "method_endpoints": {
+    "four_exact_budget": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 1
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "fuel": "0",
+      "source_remaining": 0,
+      "physical_phase": 2,
+      "predictively_equivalent": true,
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      ],
+      "last_events": [
+        {
+          "kind": "native_read",
+          "work": 0,
+          "live": 36,
+          "temporary": 2,
+          "workspace": 3,
+          "peak": 41,
+          "rewrites": 0,
+          "extra": "1/4",
+          "bill": "16425/65536",
+          "fuel": "20043/32768"
+        },
+        {
+          "kind": "compare_forward_prediction",
+          "work": 1,
+          "live": 36,
+          "temporary": 0,
+          "workspace": 3,
+          "peak": 39,
+          "rewrites": 1,
+          "extra": "0",
+          "bill": "1063/32768",
+          "fuel": "4745/8192"
+        },
+        {
+          "kind": "retain_after_use",
+          "work": 1,
+          "live": 36,
+          "temporary": 0,
+          "workspace": 0,
+          "peak": 36,
+          "rewrites": 0,
+          "extra": "9/16",
+          "bill": "4745/8192",
+          "fuel": "0"
+        }
+      ]
+    },
+    "four_one_quantum_short": {
+      "status": "funding:retain_after_use",
+      "retained": false,
+      "acquired_retained": true,
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 2,
+        "family": 1
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 1,
+        "observed": 1
+      },
+      "fuel": "37959/65536",
+      "source_remaining": 0,
+      "physical_phase": 2,
+      "predictively_equivalent": true,
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      ],
+      "last_events": [
+        {
+          "kind": "commit_use_cursor",
+          "work": 1,
+          "live": 36,
+          "temporary": 0,
+          "workspace": 3,
+          "peak": 39,
+          "rewrites": 1,
+          "extra": "0",
+          "bill": "1063/32768",
+          "fuel": "28255/32768"
+        },
+        {
+          "kind": "native_read",
+          "work": 0,
+          "live": 36,
+          "temporary": 2,
+          "workspace": 3,
+          "peak": 41,
+          "rewrites": 0,
+          "extra": "1/4",
+          "bill": "16425/65536",
+          "fuel": "40085/65536"
+        },
+        {
+          "kind": "compare_forward_prediction",
+          "work": 1,
+          "live": 36,
+          "temporary": 0,
+          "workspace": 3,
+          "peak": 39,
+          "rewrites": 1,
+          "extra": "0",
+          "bill": "1063/32768",
+          "fuel": "37959/65536"
+        }
+      ]
+    },
+    "four_frozen": {
+      "status": "complete",
+      "retained": true,
+      "acquired_retained": true,
+      "selected": {
+        "machine": {
+          "alphabet": [
+            "a"
+          ],
+          "outputs": [
+            0,
+            0,
+            1
+          ],
+          "transitions": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0
+            ]
+          ],
+          "initial": 0
+        },
+        "parity": 0,
+        "state": 1,
+        "family": 0
+      },
+      "use_confirmed": true,
+      "use_receipt": {
+        "expected": 0,
+        "observed": 0
+      },
+      "fuel": "61071/8192",
+      "source_remaining": 0,
+      "physical_phase": 1,
+      "predictively_equivalent": false,
+      "history": [
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 1,
+          "survivors": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "command": "a",
+          "observation": null,
+          "survivors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "command": "read",
+          "observation": 0,
+          "survivors": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "last_events": [
+        {
+          "kind": "native_read",
+          "work": 0,
+          "live": 34,
+          "temporary": 2,
+          "workspace": 3,
+          "peak": 39,
+          "rewrites": 0,
+          "extra": "1/4",
+          "bill": "16423/65536",
+          "fuel": "263299/32768"
+        },
+        {
+          "kind": "compare_forward_prediction",
+          "work": 1,
+          "live": 34,
+          "temporary": 0,
+          "workspace": 3,
+          "peak": 37,
+          "rewrites": 1,
+          "extra": "0",
+          "bill": "1061/32768",
+          "fuel": "131119/16384"
+        },
+        {
+          "kind": "retain_after_use",
+          "work": 1,
+          "live": 34,
+          "temporary": 0,
+          "workspace": 0,
+          "peak": 34,
+          "rewrites": 0,
+          "extra": "17/32",
+          "bill": "8977/16384",
+          "fuel": "61071/8192"
+        }
+      ]
+    }
+  },
+  "sensor_only_saved": {
+    "final_belief": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "history": [
+      {
+        "command": "read",
+        "observation": 0,
+        "survivors": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        "blocked_factor": null
+      },
+      {
+        "command": "a",
+        "observation": null,
+        "survivors": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "blocked_factor": null
+      },
+      {
+        "command": "read",
+        "observation": 1,
+        "survivors": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "blocked_factor": null
+      },
+      {
+        "command": "a",
+        "observation": null,
+        "survivors": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        "blocked_factor": null
+      },
+      {
+        "command": "read",
+        "observation": 1,
+        "survivors": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "blocked_factor": null
+      },
+      {
+        "command": "reset",
+        "observation": null,
+        "survivors": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "blocked_factor": null
+      },
+      {
+        "command": "a",
+        "observation": null,
+        "survivors": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "blocked_factor": null
+      },
+      {
+        "command": "read",
+        "observation": 1,
+        "survivors": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "blocked_factor": null
+      }
+    ],
+    "native_trace": [
+      {
+        "command": "read",
+        "observation": 0
+      },
+      {
+        "command": "a",
+        "observation": null
+      },
+      {
+        "command": "read",
+        "observation": 1
+      },
+      {
+        "command": "a",
+        "observation": null
+      },
+      {
+        "command": "read",
+        "observation": 1
+      },
+      {
+        "command": "reset",
+        "observation": null
+      },
+      {
+        "command": "a",
+        "observation": null
+      },
+      {
+        "command": "read",
+        "observation": 1
+      }
+    ],
+    "source_remaining": 10,
+    "fuel": "88177/32768",
+    "verdict": {
+      "status": "ambiguous",
+      "alternatives": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "agrees": {
+        "readiness_flip": [
+          0,
+          1
+        ],
+        "sensor_flip": [
+          0,
+          1
+        ],
+        "broken_reset": [
+          0
+        ],
+        "blocked_transfer": [
+          0
+        ]
+      },
+      "blocked_factor": null,
+      "inversion_parity": [
+        1
+      ]
+    }
+  },
+  "sensor_prediction_comparison": [
+    {
+      "candidate": [
+        1,
+        1
+      ],
+      "next_three_sensor_readings": [
+        0,
+        1,
+        1
+      ],
+      "arrival_after_one_a_if_remaining_source_is_probed": 0
+    },
+    {
+      "candidate": [
+        2,
+        1
+      ],
+      "next_three_sensor_readings": [
+        0,
+        1,
+        1
+      ],
+      "arrival_after_one_a_if_remaining_source_is_probed": 1
+    }
+  ],
+  "limits": [
+    "Candidate agreement is conditional on class adequacy and the query's stated horizon.",
+    "Advancing from q0 to q1 changes the rolling next-event question; disagreement is not forgetting a past correct prediction.",
+    "The current MethodLearner still requires a singleton. An early robust-prediction routine is not installed.",
+    "Zero fuel excludes additional native commands under the supplied positive tariff, not passive persistence or all real-world continuation.",
+    "No sufficiency criterion or reason for its horizon has been acquired by this analysis."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "attempt_id": "a0006",
+  "request_id": "ordinary-06",
+  "operation": "note",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "delivery": {
+      "kind": "note",
+      "artifact": {
+        "path": "deliveries/a0006-analysis-note.md",
+        "sha256": "a5379754065f5483006c19c989603946da999e89c689e07a7e55555b08d252ac",
+        "bytes": 589
+      }
+    }
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v1",
+    "version_sha256": "6ccca8b9075be9a45a39498c58a3c0a608366a7699618ab3a60cdc18ca33c6d9",
+    "production_run": "r0002",
+    "verification_run": "r0003",
+    "publication_attempt": "a0005"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

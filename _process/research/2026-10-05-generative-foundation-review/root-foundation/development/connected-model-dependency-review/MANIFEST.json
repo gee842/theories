@@ -1,0 +1,324 @@
+{
+  "scope": "Standalone dependency probes and finite-function equivalence check; reused the mechanism agent's isolated compiled dependency modules. Not a rerun of all underlying scientific checks.",
+  "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "input_modules": [
+    {
+      "module": "AcquiredEvaluation",
+      "sha256": "d28ec685d0683636bc24eb5876368cb055529a04e7e577521bb6c9e1a60e928c",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean"
+      ]
+    },
+    {
+      "module": "ActionPreparation",
+      "sha256": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean"
+      ]
+    },
+    {
+      "module": "ActionWitness",
+      "sha256": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean"
+      ]
+    },
+    {
+      "module": "ApplicationEvidence",
+      "sha256": "dcbf17d1c8e4d57798f7c7d4208e80f6c3ea318ae9202868cf9b83d8e7700fe6",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean"
+      ]
+    },
+    {
+      "module": "ArchivePreparation",
+      "sha256": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean"
+      ]
+    },
+    {
+      "module": "EmissionArchive",
+      "sha256": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean"
+      ]
+    },
+    {
+      "module": "EvaluationPreparation",
+      "sha256": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean"
+      ]
+    },
+    {
+      "module": "EvaluationWitness",
+      "sha256": "20f827f1ea41fcf8814deb2df03ca4b05d9103a1a3afca8f2047fd3762ac5254",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean"
+      ]
+    },
+    {
+      "module": "EvaluativeSuccession",
+      "sha256": "bb721907d8b0949dd0798365e70849ad4deb82b8db5698cce1a844cfbbde2054",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean"
+      ]
+    },
+    {
+      "module": "FormedSelection",
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+      ]
+    },
+    {
+      "module": "FreshRevision",
+      "sha256": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean"
+      ]
+    },
+    {
+      "module": "GenerativeCore",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "repository_sources": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+      ]
+    },
+    {
+      "module": "PaidArchiveReader",
+      "sha256": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean"
+      ]
+    },
+    {
+      "module": "PaidRecipientReasons",
+      "sha256": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean"
+      ]
+    },
+    {
+      "module": "PublicationBridge",
+      "sha256": "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean"
+      ]
+    },
+    {
+      "module": "PublicationBudget",
+      "sha256": "a947733ac7394a00d90c8be94410aaf27324f7d9b418d8be07aae5dad9f21f97",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean"
+      ]
+    },
+    {
+      "module": "PublicationSafety",
+      "sha256": "27f5be6e07bbaad59101ff24c41e0513f573949b7acd80c94bd8b8b2f760c2fd",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean"
+      ]
+    },
+    {
+      "module": "ReasonPreparation",
+      "sha256": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean"
+      ]
+    },
+    {
+      "module": "ReasonReplay",
+      "sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean"
+      ]
+    },
+    {
+      "module": "ReasonReplayBridge",
+      "sha256": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean"
+      ]
+    },
+    {
+      "module": "RecipientAction",
+      "sha256": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean"
+      ]
+    },
+    {
+      "module": "RecipientArchive",
+      "sha256": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean"
+      ]
+    },
+    {
+      "module": "RecipientCorrection",
+      "sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean"
+      ]
+    },
+    {
+      "module": "RecipientIdentification",
+      "sha256": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean"
+      ]
+    },
+    {
+      "module": "RecipientReasons",
+      "sha256": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean"
+      ]
+    },
+    {
+      "module": "RecordedEvidence",
+      "sha256": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean"
+      ]
+    },
+    {
+      "module": "RevisionPreparation",
+      "sha256": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean"
+      ]
+    },
+    {
+      "module": "RevisionWitness",
+      "sha256": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean"
+      ]
+    },
+    {
+      "module": "SuccessionPreparation",
+      "sha256": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean"
+      ]
+    },
+    {
+      "module": "SuccessionWitness",
+      "sha256": "8b9be215d66a44efc468368d7840e4db7634a97a8cffa5099b35d6f755f3dbc9",
+      "repository_sources": [
+        "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies.lean",
+      "sha256": "6bfff3487a8ac170642ad4bd2b4a998963c3e29942523b98c34ddf4160b677fb",
+      "bytes": 929
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies.txt",
+      "sha256": "26563628bccd8f3cdc47ce205d0665fb812242378b2822144be3178f60bd36c2",
+      "bytes": 2175
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies2.lean",
+      "sha256": "cae83b8a62a09c59380db3db5db6268c0ea982e71386cc3af76fd9d90e59de14",
+      "bytes": 811
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies2.txt",
+      "sha256": "34196e65c348e16e489c4614c7ef4c50fc25ab5e3df26e3d703d7e7832a95f05",
+      "bytes": 2061
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies3.lean",
+      "sha256": "d20a4db9a6632ff84ce6ca9574d37f1766fd488b83b1922d878b009fd879c9f1",
+      "bytes": 798
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies3.txt",
+      "sha256": "ad522e79c7328dfa9c82aaccf5dbfdd1df32f73717a1ef83c337410a708788f5",
+      "bytes": 1610
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies4.lean",
+      "sha256": "5b7bc5724792022bda9b3262839e6cde60630f214ef600f72e6fd797de666214",
+      "bytes": 350
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies4.txt",
+      "sha256": "98b0b5e260af5b4eb8db7051652f817320f6b289b51d7506a16f69a274bdbead",
+      "bytes": 745
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies5.lean",
+      "sha256": "0f5df1d551ad26b0666811cc7a051f5aa1ec7554e7179ba0b1587a8d9555dd70",
+      "bytes": 501
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies5.txt",
+      "sha256": "fa6853f2b10bcb28c2b857e4e3d7dca1fbf2bdcca952361c973ff95a0b86d629",
+      "bytes": 652
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ConstructiveDecisions-01.txt",
+      "sha256": "e045e51a6940b48d6ea63aef19efb24cefe4d9e7659a67e35140fd877dcfef4e",
+      "bytes": 2085
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ConstructiveDecisions-02.txt",
+      "sha256": "eafa3c0e8a5d9b5b7123b0e5b5f342d1686c35e47e1c3e62f53f5f61020d9561",
+      "bytes": 1414
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ConstructiveDecisions-attempt01.lean",
+      "sha256": "30ce81bc2b172647ddf0386da02172622df9b04c74d5b67622b580fae572faab",
+      "bytes": 7892
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ConstructiveDecisions.lean",
+      "sha256": "5c3208103713d60fa65e19f0a97e61b13621898deb859549a91666b9c5e1e31b",
+      "bytes": 7901
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies6.lean",
+      "sha256": "4d188adc97a9e57e0d57bcfb1ec535b1b93e627c2089cc4d550b4f91043b367f",
+      "bytes": 288
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model-dependency-review/ReviewerDependencies6.txt",
+      "sha256": "dae7ca644e2c1884d4ab1351e1daad0d9d578fd7aa2b1994b5641bc8f48c8529",
+      "bytes": 366
+    }
+  ],
+  "final_module": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean",
+    "sha256": "5c3208103713d60fa65e19f0a97e61b13621898deb859549a91666b9c5e1e31b",
+    "compile_exit_code": 0,
+    "definition_audits_empty": 9,
+    "equivalence_audits_propext": 9
+  },
+  "development_failures": [
+    {
+      "file": "ReviewerDependencies2.txt",
+      "detail": "Two guessed generated declaration names do not exist; earlier dependency query results retained."
+    },
+    {
+      "file": "ConstructiveDecisions-01.txt",
+      "detail": "One residual archive-latch equality goal was unclosed; failed attempt and sorryAx diagnostic retained. Second attempt uses explicit structure/phase case analysis and compiles without placeholders."
+    }
+  ],
+  "other_agent_scratch_excluded": [
+    "FieldProbe0",
+    "FieldProbe1",
+    "FieldProbe2",
+    "FieldProbe3",
+    "PrefixProbe",
+    "ReachedProbe"
+  ]
+}

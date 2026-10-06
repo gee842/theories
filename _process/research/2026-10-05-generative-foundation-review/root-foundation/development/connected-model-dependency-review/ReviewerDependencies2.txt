@@ -1,0 +1,37 @@
+def RecipientAction.route : ReasonReplay.Mask → Option Bool :=
+fun m =>
+  match m.p, m.q with
+  | true, false => some false
+  | false, true => some true
+  | x, x_1 => none
+'ReasonReplay.Mask' does not depend on any axioms
+'ReasonReplay.Mask.p' does not depend on any axioms
+'ReasonReplay.Mask.q' does not depend on any axioms
+'RecipientAction.route.match_1' depends on axioms: [propext]
+def RecipientAction.route.match_1.{u_1} : (motive : Bool → Bool → Sort u_1) →
+  (x x_1 : Bool) →
+    (Unit → motive true false) → (Unit → motive false true) → ((x x_2 : Bool) → motive x x_2) → motive x x_1 :=
+fun motive x x_1 h_1 h_2 h_3 =>
+  Bool.casesOn x (RecipientAction.route._sparseCasesOn_1 x_1 (h_2 ()) fun h => h_3 false x_1)
+    (RecipientAction.route._sparseCasesOn_2 x_1 (h_1 ()) fun h => h_3 true x_1)
+'RecipientIdentification.State' does not depend on any axioms
+'RecipientIdentification.targetOf' depends on axioms: [propext]
+'RecipientIdentification.returned' depends on axioms: [propext]
+'RecipientIdentification.feedback' depends on axioms: [propext]
+'RecipientIdentification.setRegisters' does not depend on any axioms
+'RecipientIdentification.acquiredRecord' depends on axioms: [propext]
+'EmissionArchive.latch' depends on axioms: [propext]
+'EmissionArchive.put' does not depend on any axioms
+def EmissionArchive.latch : {W E H R : Type} →
+  EmissionArchive.Producer W E H R → EmissionArchive.State W H R → E → W → EmissionArchive.Phase H R :=
+fun {W E H R} p s e w =>
+  match s.phase with
+  | EmissionArchive.Phase.bound i h =>
+    match p.emission h s.world e w with
+    | none => s.phase
+    | some r => EmissionArchive.Phase.latched i r []
+  | x => s.phase
+'RecipientArchive.encode' does not depend on any axioms
+'RecipientArchive.producer._proof_1' does not depend on any axioms
+ReviewerDependencies2.lean:19:14: error(lean.unknownIdentifier): Unknown constant `RecipientArchive.producer._proof_2`
+ReviewerDependencies2.lean:20:14: error(lean.unknownIdentifier): Unknown constant `RecipientArchive.producer._proof_3`

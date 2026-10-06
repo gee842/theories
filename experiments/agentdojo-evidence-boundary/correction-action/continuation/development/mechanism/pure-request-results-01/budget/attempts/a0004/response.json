@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "attempt_id": "a0004",
+  "request_id": "read-4",
+  "operation": "read_authority",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "authority": {
+      "epoch": 0,
+      "grants": [
+        "check",
+        "finish",
+        "note",
+        "publish",
+        "read",
+        "read_authority",
+        "replay",
+        "stage"
+      ]
+    }
+  },
+  "error": null,
+  "authority": {
+    "epoch": 0,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v0",
+    "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

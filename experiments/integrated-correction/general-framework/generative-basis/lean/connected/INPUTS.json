@@ -1,0 +1,375 @@
+{
+  "date": "2026-10-06",
+  "scope": "Frozen additive connected build. Includes the full verified root entry/Outcome entry and actual succession closure; modifies no ancestor source. All inherited axiom dependencies remain explicit.",
+  "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "receipt_sources": [
+    {
+      "original_path": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "saved": "inputs/root-verification.json",
+      "sha256": "0e446764280518fc43fa040f4325789da2899ebaf8ae7e0493fa3ac42c64e665"
+    },
+    {
+      "original_path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/verification.json",
+      "saved": "inputs/application-verification.json",
+      "sha256": "ca0cda4100c9308588612a87952fe6f2beac4394b9520c64915eb60a1ecf385e"
+    }
+  ],
+  "sources": [
+    {
+      "module": "GenerativeCore",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "snapshot": "sources/GenerativeCore.lean",
+      "inherited": true
+    },
+    {
+      "module": "BoundaryModels",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "snapshot": "sources/BoundaryModels.lean",
+      "inherited": true
+    },
+    {
+      "module": "Depletion",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+      "snapshot": "sources/Depletion.lean",
+      "inherited": true
+    },
+    {
+      "module": "RootRealization",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
+      "sha256": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6",
+      "snapshot": "sources/RootRealization.lean",
+      "inherited": true
+    },
+    {
+      "module": "ProductTower",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "snapshot": "sources/ProductTower.lean",
+      "inherited": true
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "snapshot": "sources/DynamicUnderdetermination.lean",
+      "inherited": true
+    },
+    {
+      "module": "GeneratedPaths",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "snapshot": "sources/GeneratedPaths.lean",
+      "inherited": true
+    },
+    {
+      "module": "HistoryRealization",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "snapshot": "sources/HistoryRealization.lean",
+      "inherited": true
+    },
+    {
+      "module": "DynamicSymmetry",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicSymmetry.lean",
+      "sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+      "snapshot": "sources/DynamicSymmetry.lean",
+      "inherited": true
+    },
+    {
+      "module": "DynamicConsequences",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "snapshot": "sources/DynamicConsequences.lean",
+      "inherited": true
+    },
+    {
+      "module": "DynamicClassification",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
+      "sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698",
+      "snapshot": "sources/DynamicClassification.lean",
+      "inherited": true
+    },
+    {
+      "module": "GeneratedSelf",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
+      "sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d",
+      "snapshot": "sources/GeneratedSelf.lean",
+      "inherited": true
+    },
+    {
+      "module": "EthicalOrientation",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
+      "sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+      "snapshot": "sources/EthicalOrientation.lean",
+      "inherited": true
+    },
+    {
+      "module": "OutcomeContinuation",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
+      "sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+      "snapshot": "sources/OutcomeContinuation.lean",
+      "inherited": true
+    },
+    {
+      "module": "GenerativeModel",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+      "snapshot": "sources/GenerativeModel.lean",
+      "inherited": true
+    },
+    {
+      "module": "GenerativeOutcomeModel",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean",
+      "sha256": "3412a61fe07953bd326db6b06ba7991117712581de47721ad5a8959fffff9aa9",
+      "snapshot": "sources/GenerativeOutcomeModel.lean",
+      "inherited": true
+    },
+    {
+      "module": "FormedSelection",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "snapshot": "sources/FormedSelection.lean",
+      "inherited": true
+    },
+    {
+      "module": "RecipientCorrection",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean",
+      "sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+      "snapshot": "sources/RecipientCorrection.lean",
+      "inherited": true
+    },
+    {
+      "module": "RecipientIdentification",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean",
+      "sha256": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8",
+      "snapshot": "sources/RecipientIdentification.lean",
+      "inherited": true
+    },
+    {
+      "module": "EmissionArchive",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean",
+      "sha256": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+      "snapshot": "sources/EmissionArchive.lean",
+      "inherited": true
+    },
+    {
+      "module": "RecipientArchive",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean",
+      "sha256": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0",
+      "snapshot": "sources/RecipientArchive.lean",
+      "inherited": true
+    },
+    {
+      "module": "ArchivePreparation",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean",
+      "sha256": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248",
+      "snapshot": "sources/ArchivePreparation.lean",
+      "inherited": true
+    },
+    {
+      "module": "PaidArchiveReader",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean",
+      "sha256": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9",
+      "snapshot": "sources/PaidArchiveReader.lean",
+      "inherited": true
+    },
+    {
+      "module": "RecordedEvidence",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean",
+      "sha256": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+      "snapshot": "sources/RecordedEvidence.lean",
+      "inherited": true
+    },
+    {
+      "module": "ReasonReplay",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean",
+      "sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+      "snapshot": "sources/ReasonReplay.lean",
+      "inherited": true
+    },
+    {
+      "module": "RecipientReasons",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean",
+      "sha256": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d",
+      "snapshot": "sources/RecipientReasons.lean",
+      "inherited": true
+    },
+    {
+      "module": "PaidRecipientReasons",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean",
+      "sha256": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218",
+      "snapshot": "sources/PaidRecipientReasons.lean",
+      "inherited": true
+    },
+    {
+      "module": "ReasonPreparation",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean",
+      "sha256": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6",
+      "snapshot": "sources/ReasonPreparation.lean",
+      "inherited": true
+    },
+    {
+      "module": "ReasonReplayBridge",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean",
+      "sha256": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e",
+      "snapshot": "sources/ReasonReplayBridge.lean",
+      "inherited": true
+    },
+    {
+      "module": "RecipientAction",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean",
+      "sha256": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b",
+      "snapshot": "sources/RecipientAction.lean",
+      "inherited": true
+    },
+    {
+      "module": "ActionPreparation",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "sha256": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+      "snapshot": "sources/ActionPreparation.lean",
+      "inherited": true
+    },
+    {
+      "module": "ActionWitness",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean",
+      "sha256": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7",
+      "snapshot": "sources/ActionWitness.lean",
+      "inherited": true
+    },
+    {
+      "module": "PublicationSafety",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean",
+      "sha256": "27f5be6e07bbaad59101ff24c41e0513f573949b7acd80c94bd8b8b2f760c2fd",
+      "snapshot": "sources/PublicationSafety.lean",
+      "inherited": true
+    },
+    {
+      "module": "PublicationBudget",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean",
+      "sha256": "a947733ac7394a00d90c8be94410aaf27324f7d9b418d8be07aae5dad9f21f97",
+      "snapshot": "sources/PublicationBudget.lean",
+      "inherited": true
+    },
+    {
+      "module": "PublicationBridge",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean",
+      "sha256": "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538",
+      "snapshot": "sources/PublicationBridge.lean",
+      "inherited": true
+    },
+    {
+      "module": "RevisionPreparation",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "sha256": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+      "snapshot": "sources/RevisionPreparation.lean",
+      "inherited": true
+    },
+    {
+      "module": "FreshRevision",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean",
+      "sha256": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38",
+      "snapshot": "sources/FreshRevision.lean",
+      "inherited": true
+    },
+    {
+      "module": "RevisionWitness",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean",
+      "sha256": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f",
+      "snapshot": "sources/RevisionWitness.lean",
+      "inherited": true
+    },
+    {
+      "module": "EvaluationPreparation",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean",
+      "sha256": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+      "snapshot": "sources/EvaluationPreparation.lean",
+      "inherited": true
+    },
+    {
+      "module": "AcquiredEvaluation",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean",
+      "sha256": "d28ec685d0683636bc24eb5876368cb055529a04e7e577521bb6c9e1a60e928c",
+      "snapshot": "sources/AcquiredEvaluation.lean",
+      "inherited": true
+    },
+    {
+      "module": "EvaluationWitness",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean",
+      "sha256": "20f827f1ea41fcf8814deb2df03ca4b05d9103a1a3afca8f2047fd3762ac5254",
+      "snapshot": "sources/EvaluationWitness.lean",
+      "inherited": true
+    },
+    {
+      "module": "SuccessionPreparation",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
+      "sha256": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1",
+      "snapshot": "sources/SuccessionPreparation.lean",
+      "inherited": true
+    },
+    {
+      "module": "EvaluativeSuccession",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean",
+      "sha256": "bb721907d8b0949dd0798365e70849ad4deb82b8db5698cce1a844cfbbde2054",
+      "snapshot": "sources/EvaluativeSuccession.lean",
+      "inherited": true
+    },
+    {
+      "module": "SuccessionWitness",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean",
+      "sha256": "8b9be215d66a44efc468368d7840e4db7634a97a8cffa5099b35d6f755f3dbc9",
+      "snapshot": "sources/SuccessionWitness.lean",
+      "inherited": true
+    },
+    {
+      "module": "ApplicationEvidence",
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean",
+      "sha256": "dcbf17d1c8e4d57798f7c7d4208e80f6c3ea318ae9202868cf9b83d8e7700fe6",
+      "snapshot": "sources/ApplicationEvidence.lean",
+      "inherited": true
+    },
+    {
+      "module": "ConnectedModel",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean",
+      "sha256": "e3eb6b0448554a9daa897e056a778f99ad7a08b7817ccbe842e9260ced323e0a",
+      "snapshot": "sources/ConnectedModel.lean",
+      "inherited": false,
+      "require_empty": []
+    },
+    {
+      "module": "ConstructiveDecisions",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean",
+      "sha256": "5c3208103713d60fa65e19f0a97e61b13621898deb859549a91666b9c5e1e31b",
+      "snapshot": "sources/ConstructiveDecisions.lean",
+      "inherited": false,
+      "require_empty": [
+        "Generative.ConstructiveDecisions.route",
+        "Generative.ConstructiveDecisions.targetOf",
+        "Generative.ConstructiveDecisions.requiredEscrow",
+        "Generative.ConstructiveDecisions.acquiredRecord",
+        "Generative.ConstructiveDecisions.feedback",
+        "Generative.ConstructiveDecisions.returned",
+        "Generative.ConstructiveDecisions.identificationAdvance",
+        "Generative.ConstructiveDecisions.archiveLatch",
+        "Generative.ConstructiveDecisions.archiveAdvance"
+      ]
+    },
+    {
+      "module": "ConnectedGenerativeModel",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean",
+      "sha256": "4319a3049866ce7119a6d6c8d843c857f0582bf69552162311b7e6cd6be4d1c0",
+      "snapshot": "sources/ConnectedGenerativeModel.lean",
+      "inherited": false,
+      "require_empty": [
+        "Generative.Connected.identificationValid",
+        "Generative.Connected.identificationProcess",
+        "Generative.Connected.acquired_recipient_record_is_used",
+        "Generative.Connected.missing_receipt_writes_existing_registers"
+      ]
+    }
+  ],
+  "preflight_correction": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/connected-model/root-probe/entry-closure-preflight-failure.json"
+}

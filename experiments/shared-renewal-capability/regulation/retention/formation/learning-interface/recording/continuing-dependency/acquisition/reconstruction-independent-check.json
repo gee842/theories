@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "scope": "Four fixed native continuations; exact immediate formation probabilities and failure of the specified strong Markov projection",
+  "producer_imported": false,
+  "native_process_imported": false,
+  "independent_helpers": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_check_review.py": "bbe629da4557a86523153d9f082a8850d118d4fbef21a4fd2dde9f1e98c23703",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/independent_check.py": "c9ff5611ac3248b02db951bb2edcf7bf23e77d559f6e7da438c67047791a9250"
+  },
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py": "4daecb9934d195f1c638e3b26dddd72143b05a9edfa6cfc789244851650bde5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md": "b0e70c98fc922950ddefeb7549d142e6fcc890526474a9f36c0f74a036a5bde5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/model.py": "3d68e40ae687d2a27544b9a6f68050baa545100f0ff8f2ca59086f405c5c847c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md": "8839625aeb6df53a54a54a9cf23b3a917880a56464ed2ab668fdf81debe33ddb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json": "ef28bad61277269c54e6a73fbe6cfbb596a6b23f011f76e37a62c6accde59630",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_response.py": "a5c22759c03cd5c5caecef5d1437eda309148e862293812fae1d36db2e67a2d0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/OPERATIVE-PROTOCOL.md": "4c72373d9f7e1c1154dcc4b37b716c5e7fc13be1cb208d513357829b358bb30e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/results.json": "18de3f7e66394d42443dea66db11e00a4d063393f2ed4891128e8f3fd0b96a93",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent-check.json": "98758832426bd1324584c20131fea9d25f1b6d3318912a619e2df8416bdaaf5f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent_check.py": "fc66a8377d36fb66a5f07370ac004ff3394bab8d79499444cb6c8ebb991c4aa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/reconstruction.py": "abd57e3e13d17a50d8c32c246bfe8385decad6ebb21282c62a615144c90583ae",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/RECONSTRUCTION-PROTOCOL.md": "f741753bd0251edb8f45d1fc9e12970857783888c6cb8ffef1e9e663f95b59c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-results.json": "6d3ee8ba419f66f09051f676ee7c31397e94d2bc771e220003bf7da32b2b2be9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative-independent-check.json": "1c5bbf0d23e1bfd8b2c739f39e8cc4753ca08955a98d225c403d3e581a1a579f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/operative_check_review.py": "bbe629da4557a86523153d9f082a8850d118d4fbef21a4fd2dde9f1e98c23703"
+  },
+  "producer_bound_files": 25,
+  "unique_bound_inputs_including_helpers": 26,
+  "checker_sha256": "fb35ca1fc2f4fd4e19c112a734e16fe0fb60df42290191fe56679e3207c358b7",
+  "result_sha256": "5e63a49c823324dd3f8f1b8b7072e02d9f894d7e5b34dd230f040fdb2ff76866",
+  "counts": {
+    "cases": 4,
+    "shared_prefix_events": 115,
+    "suffix_records": 36,
+    "suffix_native_events": 34,
+    "suffix_unavailable_requests": 2,
+    "stored_event_occurrences": 151
+  },
+  "full_state_observation_tables": 40,
+  "complete_rational_rate_tables": 40,
+  "apparatus_guard_tables": 40,
+  "guards_per_table": 11,
+  "conserved_original_energy_including_spent": 590,
+  "global_material": 78,
+  "occupied_apparatus_parts": 6,
+  "effective_native_material": 72,
+  "conditional_association_difference": "18/2485",
+  "next_event_a_probability_difference": "4123474980687500/569548386526593617",
+  "projection_pairs": 2,
+  "projected_class_rates": [
+    [
+      "1",
+      "0"
+    ],
+    [
+      "2",
+      "0"
+    ]
+  ],
+  "projection_scope": "Unequal total instantaneous rates to the same projected target at two reached full states with identical projection; no claim against history-conditioned or weak distribution-specific abstractions",
+  "learned_apparatus_unchanged": true,
+  "denied_repair_scope": "Immediate request with H resident; not permanent inability to reorganize and repair",
+  "no_prior_sweep_rerun": true
+}

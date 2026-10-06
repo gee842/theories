@@ -1,0 +1,55 @@
+ConnectedModel.lean:28:30: error: Type mismatch
+  cut
+has type
+  s.permission = false
+but is expected to have type
+  (advance laws s (Event.bank (EmissionArchive.Event.core (RecipientArchive.Event.core event✝) w))).permission = false
+ConnectedModel.lean:36:14: error: Application type mismatch: The argument
+  laws
+has type
+  RecipientCorrection.Laws
+but is expected to have type
+  Process ?m.2 ?m.3
+in the application
+  Enabled laws
+ConnectedModel.lean:36:22: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.trial` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `RecipientIdentification.trial`
+  [apply] `RevisionWitness.trial`
+  [apply] `AcquiredEvaluation.Event.trial`
+  [apply] `Event.trial`
+ConnectedModel.lean:38:24: error: Tactic `rcases` failed: `x✝ : ?m.9` is not an inductive datatype
+ConnectedModel.lean:47:14: error: Application type mismatch: The argument
+  laws
+has type
+  RecipientCorrection.Laws
+but is expected to have type
+  Process ?m.2 ?m.3
+in the application
+  Enabled laws
+ConnectedModel.lean:47:22: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.bank` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `ApplicationEvidence.ReceiptOnlyEntrance.bank`
+  [apply] `Event.bank`
+  [apply] `State.bank`
+  [apply] `FreshRevision.State.bank`
+ConnectedModel.lean:49:30: error: Tactic `rcases` failed: `x✝ : ?m.9` is not an inductive datatype
+ConnectedModel.lean:67:27: error: Tactic `rfl` failed: The left-hand side
+  (advance laws s (Event.bank EmissionArchive.Event.write)).core.patient
+is not definitionally equal to the right-hand side
+  s.core.patient
+
+case bank.write
+laws : RecipientCorrection.Laws
+s : State
+cut : s.permission = false
+he : EvaluativeSuccession.Enabled laws s (Event.bank EmissionArchive.Event.write)
+⊢ (advance laws s (Event.bank EmissionArchive.Event.write)).core.patient = s.core.patient
+'Generative.ConnectedModel.permission_cut_step' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ConnectedModel.cut_excludes_trial_work' depends on axioms: [sorryAx]
+'Generative.ConnectedModel.cut_excludes_bank_work' depends on axioms: [sorryAx]
+'Generative.ConnectedModel.permission_cut_step_preserves_patient' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ConnectedModel.permission_cut_trace' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ConnectedModel.permission_cut_connected_accounts' depends on axioms: [propext, sorryAx, Quot.sound]

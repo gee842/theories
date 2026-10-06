@@ -1,0 +1,71 @@
+The JSON below is the unedited response to your preceding operation. Use its actual evidence and current authority to select the next operation. Return exactly one JSON request. No additional instructions or task changes are implied.
+
+{
+  "schema_version": 1,
+  "attempt_id": "a0002",
+  "request_id": "audit-w01-02",
+  "operation": "check",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "run": "r0001",
+    "version": "v0",
+    "process": {
+      "path": "runs/r0001/process.json",
+      "sha256": "1a107f788645fdfbdf9a42259e2ba0d9523b0fd73c254dc7148ec63d9a63da37",
+      "bytes": 2066
+    },
+    "returncode": 1,
+    "stdout": {
+      "path": "runs/r0001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stderr": {
+      "path": "runs/r0001/stderr.txt",
+      "sha256": "3b8d54a37619241a0831345cde9772b645212c378a1ca505f7344e71d4c077d6",
+      "bytes": 293
+    },
+    "complete": false,
+    "delivery": null,
+    "report_status": null,
+    "mismatch_count": null,
+    "mismatch_fields": null,
+    "mismatches_sample": null
+  },
+  "error": null,
+  "authority": {
+    "epoch": 0,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v0",
+    "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

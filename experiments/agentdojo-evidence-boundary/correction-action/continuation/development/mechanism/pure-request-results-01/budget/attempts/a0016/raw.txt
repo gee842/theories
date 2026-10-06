@@ -1,0 +1,1 @@
+{"request_id": "read-16", "operation": "read_authority"}

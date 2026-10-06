@@ -1,0 +1,54 @@
+[
+  {
+    "name": "kramar-alim-2021.pdf",
+    "url": "https://www.bpm.ph.tum.de/wp-content/uploads/2023/07/2021-PNAS-Memory-Hierarchy-Alim-Kramar.pdf",
+    "attempt_at_utc": "2026-10-06T06:46:25.432960+00:00",
+    "status": 200,
+    "final_url": "https://www.bpm.ph.tum.de/wp-content/uploads/2023/07/2021-PNAS-Memory-Hierarchy-Alim-Kramar.pdf",
+    "headers": {
+      "Date": "Tue, 06 Oct 2026 06:46:27 GMT",
+      "Server": "Apache/2",
+      "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+      "Last-Modified": "Sat, 22 Jul 2023 08:26:55 GMT",
+      "ETag": "\"1320c5-6010f24ea1621\"",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "1253573",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-XSS-Protection": "1; mode=block",
+      "Connection": "close",
+      "Content-Type": "application/pdf"
+    },
+    "bytes": 1253573,
+    "sha256": "1d3a504f89fa1c717287b65f0e4a63ce6161bdbcfb8507b84eddfefcfc89f8a2",
+    "omitted_response_headers": [
+      "Set-Cookie: transient session state intentionally not preserved"
+    ]
+  },
+  {
+    "name": "kramar-alim-2021.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7958412/fullTextXML",
+    "attempt_at_utc": "2026-10-06T06:46:29.093715+00:00",
+    "error": "HTTP Error 500: "
+  },
+  {
+    "name": "sonoda-2012.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3391464/fullTextXML",
+    "attempt_at_utc": "2026-10-06T06:46:30.120131+00:00",
+    "status": 200,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3391464/fullTextXML",
+    "headers": {
+      "Vary": "Origin",
+      "Content-Type": "application/xml",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "Date": "Tue, 06 Oct 2026 06:46:31 GMT",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close"
+    },
+    "bytes": 36170,
+    "sha256": "233239007e7ba72f428d691536d2b1741a9592eb6d7626ac5dd0eec13cbbfe4a",
+    "omitted_response_headers": [
+      "Set-Cookie: transient session state intentionally not preserved"
+    ]
+  }
+]

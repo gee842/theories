@@ -1,0 +1,209 @@
+{
+  "checked_at_utc": "2026-10-06T07:36:18.558783+00:00",
+  "status": "passed",
+  "scope": "Only links and newly added index paragraphs for this audit. No Lean or scientific rerun. Concurrent documents may advance after this source snapshot.",
+  "report_sha256": "cb817ada1bd7b8c60e78d58ab58aac350c4a862c411f498ebc9aee3775f46c5b",
+  "links_checked": 30,
+  "links": [
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "fragment": "completing-the-application-when-the-protocol-obstructs-repair",
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md",
+      "fragment": "the-next-named-connection",
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-RECONSTRUCTION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-MECHANISM.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "fragment": "worked-continuation-knowledge-action-and-support-in-one-history",
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-AND-PREDECESSORS-COVERAGE.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT-CHECKS.json",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment": null,
+      "status": "passed"
+    },
+    {
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT-DOCUMENT-CHECKS.json",
+      "fragment": null,
+      "status": "self-referential check record"
+    }
+  ],
+  "source_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md": "809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "52d7079f6857f8f5ef6208458b61141bfefce937988603f73e64ef8b4e7e584f",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md": "a1880420dee703a5074cb0e771f298bb68bba95dcec051a2ab870c165056e7e3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md": "2de04e1eddb669e57c0955e9213e3b036c4f362d434add3c8a72ac2fad8be543",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md": "f5162cc98d5a015e4a885bb2dc1c42e8ef725cf784627b4f2cbf123cb2d8fe6f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md": "bfedc7264a865d366e21018a42b4d6fb3324752d2c1a9947f3c84321b4016a52",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md": "aa19915442e06febd21f0d8cc58d880ff3880fafa4576bb71c173f274d9d08cd",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md": "6e63f5620ca0563ea0a9c6420749cc7f311460775fed334418a4ac50f19c833e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md": "eb94f6fbb8344aa9a87e176fab232f3dcc82a05207f077e35c8b89a9fa96ab16",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md": "c1be8c4827efa190f455b0417824f2d4d1355d9c1eb77a02910757078ca78eca",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md": "80e1f5e9e78376ca21aa981732396314828460e1d95e40958da4c2e947f494d1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-RECONSTRUCTION.md": "bfdbb31ee44658ec4f442f7c85f3ce6b16fdf11b04ec550077491b0c6500132f",
+    "_process/research/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md": "40e28de5db1f7c0674aff920cc118850305559bcfef168f15f929872159e5395",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-MECHANISM.md": "0a92d82270f0dc063e443e17993adb5a35ac3779b8fb8916d2040eae900165ce",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md": "85a3e2358ce587b85a8992a64b126996335b24a125717de20516cf75eb3b00cb",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-AND-PREDECESSORS-COVERAGE.md": "16f392cb911799287dcbbf3e98d7eebfca431dbad42ee5d01e7a17987ed71a91",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md": "a5d748e25c000875e70b1bb023c455e1c3459445ecb9b917ba95661d77e3a9b5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT-CHECKS.json": "a2f16acd97170177ef72a1c303f907ebc1584879d30d54b566e41978e9a8e541",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md": "5af6340d7518e6867278375934f88b50c31a51587a5ce03c286d7b01b399d888",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md": "4d16f79cfca3f80ccb093878e89016aef48c8e9196bf0a6adb12f2ba201d3459",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md": "7e20e0a0d875d4bfc820736c0775be3da93af54e9e45a065e449dbf0ba8909ba",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md": "ac417a4537f8c74270ed5c625ab8c641dabd98609cb552de7f09309c606360ab",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md": "3376d9af0c452171e143a383af1ce262058aa108a82defb535a460131343657a"
+  },
+  "index_additions": [
+    {
+      "path": "RESEARCH.md",
+      "status": "passed",
+      "owned_paragraph": [
+        "**Remaining integration after the latest advances, 6 October 2026:** the [repository audit](_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md) credits the completed inquiry-sufficiency, relief/reconsideration, retained-evidence and coformation contributions, then separates further developmental connections from outdated summaries and additional V7.3 mathematics. Seven targeted formal receipts match their recorded artifacts in 958 hash comparisons; no proof or scientific check was rerun. The next substantive connection remains inquiry's effects on continuing activity → acquired revision of which unresolved differences require inquiry. The audit adds no law, axiom or foundation-completion claim."
+      ]
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "status": "passed",
+      "owned_paragraph": [
+        "**Current integration audit, 6 October 2026:** [the reassessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md) distinguishes completed conceptual and formal contributions from remaining connections within actual histories, further V7.3 incorporation and older summary updates. It includes the latest inquiry-sufficiency and relief/reconsideration work. Recorded formal artifacts match; the stronger no-assumptions foundation remains open. This is an audit, not a new mechanism or proof."
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "status": "passed",
+      "owned_paragraph": [
+        "**Repository integration audit, 6 October 2026:** [current coverage and remaining connections](REPOSITORY-INTEGRATION-AUDIT.md), with [seven-receipt hash checks](REPOSITORY-INTEGRATION-AUDIT-CHECKS.json). The audit incorporates inquiry-sufficiency and relief/reconsideration, credits prior completion scopes, and distinguishes developmental work, V7.3 mathematics and summary reconciliation. No theorem, event law or scientific rerun was added."
+      ]
+    }
+  ],
+  "independent_review": "No substantive scope correction; incorrect application heading link fixed.",
+  "problems": []
+}

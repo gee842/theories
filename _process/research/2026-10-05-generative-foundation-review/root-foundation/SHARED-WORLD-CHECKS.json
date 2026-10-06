@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-06",
+  "scope": "Source quote, owned additions, pre-edit byte preservation and local links; no scientific or necessity verification",
+  "preservation": {
+    "snapshot_hash_matches": true,
+    "canonical_subtraction_restores_exact_bytes": true
+  },
+  "owned_additions": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "count": 1
+    },
+    {
+      "path": "RESEARCH.md",
+      "count": 1
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "count": 1
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "count": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "count": 1
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "count": 1
+    }
+  ],
+  "user_quote_verbatim": true,
+  "edit_receipt_sha256": "e36e890295a88835ef720062f82d14a1104f5c1fddb8e81fb582db30012fd877",
+  "file_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md": "01177a3860ae3e3eb572e3e51eca8f55e996e1e32288a4dfd95a01e0bf110672",
+    "sources/15-codex-theory-conversations/2026-10-06-shared-world-grounding.md": "b7b2e2b93872954a5f214a066ddae2970de1f1dce865488741923744f1f19242",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": "fb2bf4f7bcb776a7ff7a4642e781f425e0837f1eb799c0d86aa3461db3e1d150"
+  },
+  "local_references_checked": 26,
+  "references": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-shared-world-grounding.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#others-wellbeing-and-the-world-in-which-we-continue",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md#standing-and-influence-have-different-grounds",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md#1-shared-dependence-and-the-selection-of-its-maintenance",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "SHARED-WORLD-EDITS.json",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "development/SHARED-WORLD-BEFORE.json",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "target": "SHARED-WORLD-CHECKS.json",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-shared-world-grounding.md",
+      "target": "2026-10-06-finish-unified-grounding.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-shared-world-grounding.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#others-wellbeing-and-the-world-in-which-we-continue",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-06-shared-world-grounding.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-shared-world-grounding.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "GENERATIVE-SELECTION.md#1-shared-dependence-and-the-selection-of-its-maintenance",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "FORMATION.md#standing-and-influence-have-different-grounds",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-06-shared-world-grounding.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#others-wellbeing-and-the-world-in-which-we-continue",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#others-wellbeing-and-the-world-in-which-we-continue",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#others-wellbeing-and-the-world-in-which-we-continue",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SHARED-WORLD-GROUNDING.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SHARED-WORLD-EDITS.json",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SHARED-WORLD-CHECKS.json",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-shared-world-grounding.md",
+      "exists": true,
+      "fragment_valid": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+      "exists": true,
+      "fragment_valid": true
+    }
+  ],
+  "internal_review": "Two agents supplied positive argument and counterregimes; integrated by root. Counterreviewer read full canonical section and six additions; accepted without fixes.",
+  "issues": [],
+  "passed": true
+}

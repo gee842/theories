@@ -1,0 +1,21 @@
+{
+  "scope": "Inherited scientific files frozen before recipe-grounding execution; no rerun requested by this preservation check.",
+  "sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py": "75e715f1a7a0af499a39887e3fc9b38d88b66125d313361de851c421d9197127",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json": "424540b7688e836b8357b86adf1ae7f3382349c7581abe83df37d36ccbae72b2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json": "e9adb2a52c661054cd18bb60ca057bf716a33646474076ff13366e0369cd99f1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json": "c9d75a3677bd5fbe5026b358a1d55bc3c76ca33db3b5af5411e8c27c21a4d0a0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CALIBRATION-REVISION-PROTOCOL.md": "3223b6e2e0b4a65ba3f419deb7373c6f30f88d9d7b2a0e01df6b39ab5f60f085",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision.py": "732d855ae20f4be322442dfce767fd839759cc5181ce5a8c33571ddab23efe1b",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-results.json": "04e0b604172d2042fc8418af54e549a586bbaefc60e43cebe980a56fd164eca1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision_check_review.py": "c3b92cf690490ab5d3e0cefbb59b4d37d980bd0f81955920531951c28a97ff02",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-independent-check.json": "f5e0104d85fd981c5e94b506837593b376798c7a1b2534a2bd80434b5fd7a7db",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean": "0af00e393b218b3d631693f6decfc13aa080f54b2e964f83b02dfc20092563aa",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/verification.json": "c28247f5465a0f70bf8c507bbf36e65ec5c6e4f6de53958141336f129000c4ce",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean": "862bb838eb7916e6f149cd38fd2673f1965585d775d422ca16e181bdbabf50be",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean": "3ec8363e61404c1d23ecf5f562cb9bb880f6d136a0b936e725e2e4a98c9e4df1"
+  }
+}

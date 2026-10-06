@@ -1,0 +1,29 @@
+'SystemsComplexity.VaryingFeedback.envelope_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.envelope_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.envelope_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.weighted_abs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.convex_abs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.step_nonincrease' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.two_step_first_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.three_step_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_nonincrease' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_three_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_geometric_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_eq_of_prefix_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_geometric_bound_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_envelope_tends_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.VaryingFeedback.squaredNorm_le_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_squaredNorm_tends_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.VaryingFeedback.trajectory_envelope_stable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

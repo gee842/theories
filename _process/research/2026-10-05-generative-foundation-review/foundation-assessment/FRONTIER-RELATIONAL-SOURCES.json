@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "read_on": "2026-10-06",
+  "review": "FRONTIER-RELATIONAL-COMPARISON.md",
+  "purpose": "Targeted conceptual comparison, not a priority determination or empirical reanalysis.",
+  "sources": [
+    {
+      "id": "wagner",
+      "title": "Triarchic Corrigibility",
+      "doi": "10.1007/s43681-026-01362-2",
+      "primary_url": "https://link.springer.com/article/10.1007/s43681-026-01362-2",
+      "reading_mode": "Publisher web-reader main article; local preserved publisher HTML identity checked",
+      "inspected_scope": [
+        "abstract",
+        "main article, especially sections 3 through 10"
+      ],
+      "not_inspected": [
+        "PDF edition",
+        "supplementary material"
+      ],
+      "preserved_original": {
+        "path": "sources/36-relational-alignment-comparators-2026-10-06/original/wagner-springer.html",
+        "bytes": 477778,
+        "sha256": "df24ed45300a1ee7ced96704ce3c66a18148921ae3a24be2f0debf8bc257579c"
+      },
+      "identity_validation": "Article title, author Markus Wagner, DOI and main article body markers inspected; cookie-related redirect is recorded without treating URL text as proof of an error body."
+    },
+    {
+      "id": "cox",
+      "title": "From control to relationship",
+      "doi": "10.1002/aaai.70090",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/10.1002/aaai.70090",
+      "reading_mode": "Publisher web-reader main article; direct download returned HTTP 403, no original body preserved",
+      "inspected_scope": [
+        "abstract",
+        "core proposal",
+        "methodology",
+        "findings",
+        "principles",
+        "limitations",
+        "AI involvement note"
+      ],
+      "not_inspected": [
+        "underlying dialogue corpus",
+        "supplementary files"
+      ],
+      "chronology": {
+        "publication_date_as_displayed": "24 August 2026",
+        "pilot_date_as_displayed_in_involvement_note": "27 November 2026",
+        "status": "Unresolved internal date/version discrepancy; no priority or misconduct conclusion."
+      },
+      "author_repository": {
+        "url": "https://github.com/jgraycox-coa/vcw-multi-ai-dialogue",
+        "inspected_scope": "README only",
+        "pinned_commit": null,
+        "corpus_audited": false,
+        "note": "README identifies a differently titled dialogue paper and arXiv 2601.20604; repository existence does not validate this article’s exact experiment or chronology."
+      }
+    }
+  ],
+  "direct_retrieval_record": "sources/36-relational-alignment-comparators-2026-10-06/metadata/direct-retrieval.json",
+  "local_reading_bindings": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md",
+      "sha256": "b8d89086044825cfca9ea64edc296fb12d4bce25344af5aede6a24bc41df9d3b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+      "sha256": "f6e4033286f0e23238f0ac38c3893575e6ed728bf5c12d0230c19ad35e07a523"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sha256": "c2c6e08ff2ecca7bafae51df49b892864d0a913a90d4e16c5548b96053bcf793"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+      "sha256": "da266f302153c33dc9932e53465153e76efd928f3d4118b5534d09333061ec79"
+    }
+  ],
+  "limits": [
+    "Reviewer counterexamples and proposed comparison are original analysis, not observed failures reported by either paper.",
+    "No scientific computations, participant calls, experimental corpus analysis or canonical edits were made.",
+    "Conditional foundation acceptance is preserved; targeted overlap does not establish field-wide priority."
+  ]
+}

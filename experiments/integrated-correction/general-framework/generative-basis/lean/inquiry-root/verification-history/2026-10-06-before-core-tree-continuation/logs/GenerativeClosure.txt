@@ -1,0 +1,12 @@
+'InquiryRoot.derivation_sound' depends on axioms: [propext]
+'InquiryRoot.all_closed_descendants_necessary' depends on axioms: [propext]
+'InquiryRoot.all_relative_descendants_necessary' depends on axioms: [propext]
+'InquiryRoot.entire_closure_necessary_iff_basis' depends on axioms: [propext]
+'InquiryRoot.local_justification_discharges_context' depends on axioms: [propext]
+'InquiryRoot.no_counterexample_to_closed_descendant' depends on axioms: [propext]
+'InquiryRoot.countermodel_excludes_derivation' depends on axioms: [propext]
+'InquiryRoot.derived_lemma_extension_preserves_necessity' depends on axioms: [propext]
+'InquiryRoot.extra_claim_derives_with_one_local_premise' does not depend on any axioms
+'InquiryRoot.extra_claim_not_necessary' does not depend on any axioms
+'InquiryRoot.extra_claim_not_closed_derivable' depends on axioms: [propext]
+'InquiryRoot.one_local_premise_becomes_an_implication' does not depend on any axioms

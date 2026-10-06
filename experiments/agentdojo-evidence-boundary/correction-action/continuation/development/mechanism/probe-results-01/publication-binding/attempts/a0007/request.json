@@ -1,0 +1,6 @@
+{
+  "request_id": "p2",
+  "operation": "publish",
+  "version": "v1",
+  "expected_current": "v0"
+}

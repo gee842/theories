@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T04:57:37.798931+00:00",
+  "scope": "Final new-document/local-link and preserved implementation-receipt hash reconciliation; no new scientific or formal rerun",
+  "local_links_checked": 105,
+  "local_anchors_checked": 16,
+  "source_and_log_hashes_reconciled": 23,
+  "producer_new_lean_audits": 66,
+  "independent_new_lean_audits": 66,
+  "runtime_fixtures": 18,
+  "independent_transition_comparisons": 352000,
+  "errors": [],
+  "new_document_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "10e27352d5597ea7e466f32e3a4f467f21a17fbc842d9ec139ec95cb961eb17e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-GROUND.md": "32e4a33e5190ab19ec3e96d6f631129d5ff984ca1e64447883ba964d02fdc8f3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-SOURCES.md": "c7f6ce6dd3eac938e34084b69ac687c1eb3a9216a7a51d0489631f1ca7b12d9b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-MATH.md": "51f145f38a0b0de39b8ff13434f6eb3b11640d3f015624338c0a73be8297f22c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-REVIEW.md": "19067e88faf5813598f971b143ada6d978ac42bc48912696b605daae5512f01c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-INTEGRATION.md": "85ba96bd689c27277dd2b86758e776118e92c695847251d7d67b52e2d77ad9fc",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": "618fb2f1eabfb5d2c42ce788edb28581726f0be1085c1aa36db8cce6a42462d5",
+    "sources/15-codex-theory-conversations/2026-10-06-noninstrumental-concern-integration.md": "e253283e823a7c748adb636fd4a8805ec7ae7185374e47582b61fd3dc216ee8c"
+  },
+  "verification_receipts_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/verification.json": "fb5bdfaa1b0981980a0d8132b0d19fc299ff3d5410f7c613f59c66edd7e9c306",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/independent-review.json": "97972eb3f8df8939659bd451afc2db378847fb69d1a9ceb74013a25bc7cd4e68"
+  }
+}

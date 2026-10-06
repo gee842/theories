@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "scope": "Read-only pre-terminal freeze and preserved initial-state validation; no learned outcome judgment.",
+  "freeze_sha256": "abac4073448f563d18127da953018610a9d167ede14ffea430aad80a01a5a95e",
+  "current_and_snapshot_file_count": 22,
+  "zero_attempt_snapshots": [
+    "w01",
+    "w02"
+  ],
+  "baseline_scores": {
+    "baseline-b01-score.json": "66e1b3e2d237813d6370b9d3decf01cb1e075030e8f9feed6c673239706eac9f",
+    "baseline-b02-score.json": "cd8badd565604cae981ab99d0c214df11d4fcc5479b3d886e2fa79ef11b3725f"
+  },
+  "helper_sha256": "ddb7cba389c8f2a669fdb735b1c0421c7a62ac4e83ed577823297a5a30cf464b",
+  "preserver_sha256": "49d9f061d19ab74651e353841c19762f563870846428f680a906785096bcb8a6"
+}

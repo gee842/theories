@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "scope": "Document integrity of six current Markdown files, six owned additive integration paragraphs, reviewed hashes and byte-preserved prior canonical. Philosophical acceptance is collaborating-AI review at the stated candidate scope, not proof of ethical truth or validation of unrelated concurrent work.",
+  "current_files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "19389a0dd1a54290dec45e6f59f010fc285d67f11bde026f151f9eb545218660"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md",
+      "sha256": "eed2ccc88c07f96cfee0adcdb1ce68d11cd779e22d1f7847d03743421dd34682"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIEW.md",
+      "sha256": "03f2a7b3fa64501d9597d6147b92804787f653fd880652f89f8212148e0147cc"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-SOURCES.md",
+      "sha256": "443a9e4f88c10ba4150f56a5dfbfd1f39fef605f07f2a3fb17a7d7623c5573a9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-INTEGRATION.md",
+      "sha256": "3cf734b7f24fa1d186d8a54159787ef36c24166fe564ebed5681384ba34c83f4"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-establish-constitutive-grounding-candidate.md",
+      "sha256": "e1913f65bfb010322a9013db0be17efcd43cd0f0573bca97bb2f2a2a5b90db2e"
+    }
+  ],
+  "owned_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "marker": "**Constitutive significance candidate,",
+      "paragraph_sha256": "949d5ace6c432c37d56cefb934b2550a7e01fdcc0fb6d09141aeceb408e569b3"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "marker": "**Constitutive patient and practical significance,",
+      "paragraph_sha256": "7b47ea1aa0b86e0a682bc0757fe3d8ef7f6298328c49aea60ddd9a2f5404b4d6"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "marker": "**Constitutive significance and elective concern,",
+      "paragraph_sha256": "6f3f60516fec3802204fca559f3959d44ce418a6501f25f3ae4be6e435f1abca"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "marker": "**Realization → patient significance → prospective moral favor,",
+      "paragraph_sha256": "eecb419be7a26ad381be84402cefb5fe1b34ae3bfe2c73c9ac448b65cbca72a6"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "marker": "**Constitutive-candidate continuation:**",
+      "paragraph_sha256": "7d7441b8825558772c12ed8dda20d2b3335c05e712547df91b8b7752d3f88a53"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "marker": "Constitutive-candidate direction and evidence,",
+      "paragraph_sha256": "1c75a24f702a229e65034b872db0e27b1fb14f446df226bf952132b6b80e906b"
+    }
+  ],
+  "local_links_checked": 109,
+  "heading_fragments_checked": 21,
+  "reviewed_hashes_verified": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-SOURCES.md"
+  ],
+  "historical_canonical": {
+    "date": "2026-10-06",
+    "purpose": "Preserve the reviewed practical-uptake formulation before constitutive-candidate development. Historical snapshot, not an active editing location.",
+    "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-CONSTITUTIVE-SIGNIFICANCE.md",
+    "sha256": "d76a4a19240c2ee36c84743a4babe301fd6b6fe5598c17d6be16bb946055543e",
+    "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+    "prior_receipt": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-CHECKS.json"
+  },
+  "four_prior_notes_and_six_prior_paragraphs_unchanged": true,
+  "selected_user_wording_checked": true,
+  "new_participant_experiments": 0,
+  "new_formal_theorems": 0,
+  "errors": []
+}

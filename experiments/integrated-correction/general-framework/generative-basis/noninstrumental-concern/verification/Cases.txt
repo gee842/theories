@@ -1,0 +1,20 @@
+'NoninstrumentalConcern.Cases.primary_history' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.primary_actual_effects' does not depend on any axioms
+'NoninstrumentalConcern.Cases.funded_suffix_lifecycle' does not depend on any axioms
+'NoninstrumentalConcern.Cases.unknown_preserves_actual_need' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.acquired_known_zero_is_distinct' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.selected_can_be_unfunded' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.actual_read_then_means_change_is_stale' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.paid_fresh_means_correction' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.actual_read_then_new_episode_is_stale' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.revoked_permission_keeps_patient_ground' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.permission_return_requires_paid_reselection' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.wrong_command_blocked' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.refusal_does_not_erase_burden' does not depend on any axioms
+'NoninstrumentalConcern.Cases.both_individually_available' does not depend on any axioms
+'NoninstrumentalConcern.Cases.joint_declared_plan_unfunded' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.Cases.joint_plan_funded' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.two_reasons_do_not_supply_joint_funds' depends on axioms: [propext, Quot.sound]
+'NoninstrumentalConcern.Cases.same_helping_history_under_zero_normative_interpretation' depends on axioms: [propext]
+'NoninstrumentalConcern.Cases.global_invalidation_has_a_cost' does not depend on any axioms
+'NoninstrumentalConcern.Cases.injected_cache_defeats_unrestricted_minimum_claim' depends on axioms: [propext]

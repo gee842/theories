@@ -1,0 +1,31 @@
+'Generative.AcquiredPurposeCriterion.compatible_candidate_retained' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.actual_repair_identifies_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredPurposeCriterion.count_only_criterion' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.acquired_requirement_changes_completion_content' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredPurposeCriterion.acquired_common_requirement_reserves_its_reading' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredPurposeCriterion.free_reading_would_misclassify_completion' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredPurposeCriterion.learned_criterion_fits_repair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredPurposeCriterion.successful_repair_does_not_exclude_fallback' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.fallback_has_a_genuinely_different_continuation' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.Native.admitted_is_actual_trace' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.Native.native_judgment_and_finish_reserve_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredPurposeCriterion.Native.actual_emission_is_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.AcquiredPurposeCriterion.Native.admitted_native_is_original' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredPurposeCriterion.Native.plant_admitted_is_actual_trace' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.Native.actual_training_forms_requirement' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.Native.matched_consumer_keeps_acquired_checkpoint' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.Native.same_restored_state_different_effective_closure' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.Native.acquired_criterion_has_actual_further_use' depends on axioms: [propext]
+'Generative.AcquiredPurposeCriterion.Native.clamped_criterion_retains_completed_count_but_loses_repair' depends on axioms: [propext]

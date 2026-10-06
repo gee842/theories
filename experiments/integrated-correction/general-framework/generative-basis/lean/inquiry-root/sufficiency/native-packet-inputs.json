@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "scope": "Frozen pre-existing native command and retained learned-machine provenance; no learner or scientific producer rerun.",
+  "files": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/PROTOCOL.md",
+      "sha256": "20e5a322515ca6434d82301953d2175dd5d511f1be1fd276a812b7659cc154e6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/check.py",
+      "sha256": "1580e5bf8c8a71fdb1190efdef0039c262c4f31fec5a920531cc60b4ee3d3d22"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py",
+      "sha256": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/PROTOCOL.md",
+      "sha256": "ef2df61885b58502d14ac7112e15c11fac1394f02cd19c70d853bbfffa3191ba"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/inquiry/check.py",
+      "sha256": "7a68aeaaf926a28066b2c82f696ca610d9498601fed6527310ea0791a09f2d00"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/results.json",
+      "sha256": "778b575c0f8f489aca6583e29f50a2bd707cddb851a27071831df4bac59e891b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py",
+      "sha256": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py",
+      "sha256": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "sha256": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py",
+      "sha256": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py",
+      "sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5"
+    },
+    {
+      "path": "experiments/shared-renewal-capability/regulation/retention/model.py",
+      "sha256": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+    }
+  ]
+}

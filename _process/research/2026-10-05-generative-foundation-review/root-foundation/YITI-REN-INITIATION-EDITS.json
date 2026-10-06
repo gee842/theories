@@ -1,0 +1,145 @@
+{
+  "edits": [
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+      "old": "",
+      "new": "\n## 要求继续启动、停止及优先的形成研究\n\n在助手报告活动范围形成这一轮已经整合、说明启动与优先关系及普遍正当根据仍未完成之后，Ren 要求：\n\n> 请继续\n\n上文是 AI 对直接上下文的说明；引文是 Ren 原话。AI 将本轮连接具体化为：实际形成和完成后果怎样进入新的启动判断，以及其与真实关切、现有与新形成关系的正当比较怎样衔接。此次继续没有将局部材料策略等同于普遍仁，也没有降低此前无假设目标。\n",
+      "mode": "append",
+      "baseline_sha256": "810eb808b6eff2d5495ecd04a441cd5992c0c9a9718bc27109716347b256ee4e",
+      "baseline_bytes": 5824
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+      "old": "\n\n## 同意开始四项剩余工作的下一轮\n\nRen 要求：\n\n> 详细讲 这四个预期工作量\n\n助手据此区分四项剩余工作：目的及活动范围自身的形成和结束；与真实承受、理解、回应的识别连接；普遍非工具性正当根据；包括局部规律和形式基础在内的依赖消解。助手提出先做几轮协调研究，并未保证能在该轮数内完成无假设普遍证明。以上是 AI 对上一轮说明的摘要，不是 Ren 的逐字理论陈述。\n\nRen 随后明确要求：\n\n> 好的 请开始做\n\nAI 的任务理解：实际开展下一轮机制、形式化、正向论证和经验识别，先检验持续活动及其适用范围怎样形成、改变和结束；保留更强完成目标，不能以局部实现或新文稿完成代替它。\n\n## 要求继续启动、停止及优先的形成研究\n\n在助手报告活动范围形成这一轮已经整合、说明启动与优先关系及普遍正当根据仍未完成之后，Ren 要求：\n\n> 请继续\n\n上文是 AI 对直接上下文的说明；引文是 Ren 原话。AI 将本轮连接具体化为：实际形成和完成后果怎样进入新的启动判断，以及其与真实关切、现有与新形成关系的正当比较怎样衔接。此次继续没有将局部材料策略等同于普遍仁，也没有降低此前无假设目标。\n",
+      "new": "\n\n## 同意开始四项剩余工作的下一轮\n\nRen 要求：\n\n> 详细讲 这四个预期工作量\n\n助手据此区分四项剩余工作：目的及活动范围自身的形成和结束；与真实承受、理解、回应的识别连接；普遍非工具性正当根据；包括局部规律和形式基础在内的依赖消解。助手提出先做几轮协调研究，并未保证能在该轮数内完成无假设普遍证明。以上是 AI 对上一轮说明的摘要，不是 Ren 的逐字理论陈述。\n\nRen 随后明确要求：\n\n> 好的 请开始做\n\nAI 的任务理解：实际开展下一轮机制、形式化、正向论证和经验识别，先检验持续活动及其适用范围怎样形成、改变和结束；保留更强完成目标，不能以局部实现或新文稿完成代替它。\n\n## 要求继续启动、停止及优先的形成研究\n\n在助手报告活动范围形成这一轮已经整合、说明启动与优先关系及普遍正当根据仍未完成之后，Ren 要求：\n\n> 请继续\n\n上文是 AI 对直接上下文的说明；引文是 Ren 原话。AI 将本轮连接具体化为：实际形成和完成后果怎样进入新的启动判断，以及其与真实关切、现有与新形成关系的正当比较怎样衔接。此次继续没有将局部材料策略等同于普遍仁，也没有降低此前无假设目标。\n\n\n## 整体积分的纠正\n\nRen 在本轮局部启动研究进行中明确纠正：\n\n> it is not about this \"expectation\" or that one, it is about the integral of the whole\n\n下述衔接是 AI 的工作解释，不是 Ren 的追加原话：研究对象应回到整个生成过程中的贯通关系；目的、活动、实际后果、理解和评价都在其中形成。不能以保护某项既有预期或把若干预期相加替代整体。这不是已经定义一个数值积分，也不自行证明任何总体伦理排序。已有启动实验保留为可审计的局部投影及其限制。\n",
+      "baseline_sha256": "810eb808b6eff2d5495ecd04a441cd5992c0c9a9718bc27109716347b256ee4e",
+      "baseline_bytes": 5824
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "old": "# SOURCES manifest\n",
+      "new": "# SOURCES manifest\n\n**Whole-integral correction and helping comparisons, 6 October 2026:** [Ren’s new exact correction](15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正) redirects the initiation study from particular expectations to the integral of the whole. [Two primary PDFs](42-helping-scope-2026-10-06/initiation/README.md) preserve Martin–Olson 2013 and Martin–Lin–Olson 2016 unchanged from the authors’ laboratory, with hashes, provenance and selected reading limits. These constrain local means/response identification; they do not establish the whole-future ethical criterion or replicate the material mechanism.\n",
+      "baseline_sha256": "2bb75eed95d5ff619f657dc3444a0856b55211a6e478bd7a0aabedecd401649e",
+      "baseline_bytes": 272822
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "old": "第14小节进一步实现活动及操作范围的形成、取得与结束，并分别检验结束许可和残留后果。一体结构与普遍证成的完成范围分别说明。",
+      "new": "第14小节进一步实现活动及操作范围的形成、取得与结束，并分别检验结束许可和残留后果。第15小节依 Ren 的整体积分纠正，将这些局部结果放回整个生成历程及其未来条件；各项预期的实现不能先成为整体的最终尺度。一体结构与普遍证成的完成范围分别说明。",
+      "baseline_sha256": "c928bfcf42b9e6228a8e659a0aba79d09838b689393e845606d86edce48c1179",
+      "baseline_bytes": 84594
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "old": "## 既有局部研究与形式结果\n",
+      "new": "### 15. 整体积分与局部启动的边界\n\n[Ren 在本轮明确纠正](../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正)：\n\n> it is not about this \"expectation\" or that one, it is about the integral of the whole\n\n**15.1 整体是正在形成的关系及整个后续展开。** 目的、活动、承受、理解和评价都在其中形成。某项预期达成、某个组织保全，乃至所有已经列出的目标都满足，也不能自动代表这段展开的整体方向。评价范围和评价能力自身怎样形成、维持并改变共同条件，须一同进入解释。本章因此接回[整体未来的研究主线](UNIFIED-ETHICAL-GROUNDING.md#the-future-of-the-whole-is-the-criterion)；局部理由推理保留其用途，不再作为先逐一证成独立目的、最后才拼出整体的必经次序。\n\n整体积分可以有数学表达，但应先说明所比较的完整历史及其质量。[已有整体优先的表达](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)从有根据的历史评价导出时间增量，而不预设互不相关的局部善再求和。这一表示关系没有自行证明评价的伦理内容；无限未来也不能因写出积分就保证收敛、可预测或完整排序。\n\n**15.2 新结果取得了启动依赖，也暴露其局部性。** [九条新历史](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md)在同一祖先和活动形成史中，分别取得真实形成与完成操作的消费通道。后来，忠实使用这些记录可避免新启动耗尽乙完成所需的条件；同状态读者钳制以及缺失、错误取得保留真实失败。活动实例、取得装置及其作用共同占用和改变现有条件，没有重置资源或取消旧产品。\n\n但足够形成甲并完成乙的分支仍留下一个自身已无继续路径的新甲。稀缺分支完成乙而没有形成甲，两者都满足保护乙的约束，末端支持及损伤也相同，却留下不同的活动结构及未来可能。这里首先被否定的是局部投影对整体的充分代表性；不能把新甲未完直接等同伦理恶，也不能靠给甲增加一个保护位就宣称已解释整个生成。\n\n**15.3 形式与实际历史保持各自范围。** [独立重放](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json)核对129项共同前史、2412项扩展事件、2421个51坐标状态及五次实际拒绝，八项数据损坏均检出。形式核验的最终状态及严格结论记录在[数学账](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md)。单通道一单位候选族、实例间配方迁移、接触及选择规律、保护乙约束和调度仍是局部模型输入。\n\n**15.4 仁的下一连接是整体方向怎样进入自身的形成与纠正。** [正面重构及其竞争说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md)将检验转向：一个持续局部成功的安排，是否关闭了真实更新、参与和纠正的路径；一种转化或有根据的结束，又是否实际恢复它们并改变整个后续展开。该比较须保留已实现的内容、真实损失及可行条件。最大化延续、活动数或未来分支数都不能替代这一比较。\n\n合理拒绝、差等和自我保护也须在这些具体关系中解释；整体不自动赋予某个中心替所有关系发言的权力。生活对应见[局部识别接口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md)。本轮有实际机制、严格反例和整体解释的校正；整个形成链与整体质量的无假设普遍证成仍未完成。[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md)保留这一范围。\n\n## 既有局部研究与形式结果\n",
+      "baseline_sha256": "c928bfcf42b9e6228a8e659a0aba79d09838b689393e845606d86edce48c1179",
+      "baseline_bytes": 84594
+    },
+    {
+      "path": "RESEARCH.md",
+      "old": "# Current theory and research\n",
+      "new": "# Current theory and research\n\n**整体积分与局部启动的边界，2026年10月6日：** [Ren 的纠正](sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正)将本轮中心放回整个生成过程及其未来，不能以保护某项预期或加总既定目的替代。[仁之树的更新](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界)保留新的材料连接：实际形成／完成的通道被取得并改变后来启动；九条运行的2412项扩展事件通过独立重构。保护乙成功仍可留下自身永无继续路径的新甲，因此局部成功不充分代表整体。[整合与审查](_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md)接回已有整体未来判据与条件积分表达，并保留局部规律及普遍证成边界。**下一中心连接：**整个后续关系的改变怎样进入理解、目的和评价范围本身的形成与纠正，以及这种转变何以构成整体的生成或退化。\n",
+      "baseline_sha256": "50b212274296c7f172ac2e23f4992dce69669a7b52e54cee8be67505089e0960",
+      "baseline_bytes": 253925
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "old": "# Generative Existence (生生不息论)\n",
+      "new": "# Generative Existence (生生不息论)\n\n**The whole integral and the limits of local initiation, 6 October 2026:** [Ren’s correction](../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正) returns the concern study to the whole unfolding, in which purposes and evaluation themselves form. [The new canonical section](unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界) retains a verified material acquisition/initiation connection and its counterexample: protecting an existing activity can still leave a newly formed one without any continuation under the law. [Integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md) connects this partial projection to the existing whole-future criterion and conditional integral, without equating whole quality with summed expectations. The next central task concerns formation and correction of purposes and evaluative scope through their effects on the whole continuation; universal grounding remains open.\n",
+      "baseline_sha256": "c22579cf59e49e6f4c75bdb128500cde3b9ae15ca3302bcaae5b939b3bc2bef3",
+      "baseline_bytes": 589700
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "old": "# Generative grounding of significance and learning\n",
+      "new": "# Generative grounding of significance and learning\n\n**Whole integral and a consequential limit of local success, 6 October 2026:** following [Ren’s direct correction](../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正), [the new concern continuation](NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界) treats protection of an existing activity as a partial projection, not the foundation’s criterion. In one retained material history, acquired formation/completion relations change later initiation; local protection can succeed while its own new activity becomes unable to continue. Separate replay preserves the actual ancestry, information use and irreversible effects. This supplies a concrete interface for the whole-future investigation below, not an ethical ranking or an aggregate objective. Next connect changes in the whole continuation to formation and correction of purposes, understanding and evaluative scope, and defend their generative or degenerative significance. Supplied recipes, inquiry/reader rules and local policy remain explicit; the stronger completion conditions are unchanged.\n",
+      "baseline_sha256": "09a6068bd6cdb67d360d4d383ca8f79dc44e4e385de1c1d57a0317277c7a26ad",
+      "baseline_bytes": 252391
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "old": "两者都满足保护乙的约束，末端支持及损伤也相同，却留下不同的活动结构及未来可能。",
+      "new": "两者都满足保护乙的约束，末端支持及损伤也相同，却留下不同的活动结构：一端甲未形成，另一端留下已形成却不能继续的甲。",
+      "baseline_sha256": "c928bfcf42b9e6228a8e659a0aba79d09838b689393e845606d86edce48c1179",
+      "baseline_bytes": 84594
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "old": "形式核验的最终状态及严格结论记录在[数学账](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md)。",
+      "new": "[全新 Lean 构建](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json)通过30项新增审计，证明单单位边界上的启动可消除原先可达的完成，并证明两类耗尽状态对任意允许的有限后继封闭；全部九条历史的有限对应也通过。[数学账](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md)保留逻辑依赖、首轮编译超时及未削弱覆盖的修复。",
+      "baseline_sha256": "c928bfcf42b9e6228a8e659a0aba79d09838b689393e845606d86edce48c1179",
+      "baseline_bytes": 84594
+    },
+    {
+      "path": "RESEARCH.md",
+      "old": "九条运行的2412项扩展事件通过独立重构。保护乙成功仍可留下自身永无继续路径的新甲，因此局部成功不充分代表整体。",
+      "new": "九条运行的2412项扩展事件通过独立重构，30项新增 Lean 声明审计通过。保护乙成功仍可留下自身永无继续路径的新甲；这一后继封闭及相同局部成功留下不同新结构的实例均已形式化，局部成功仍不充分代表整体。",
+      "baseline_sha256": "50b212274296c7f172ac2e23f4992dce69669a7b52e54cee8be67505089e0960",
+      "baseline_bytes": 253925
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "old": "## Acquired activity scope\n",
+      "new": "## Whole history and a local initiation constraint\n\n[AcquiredInitiationConstraint.lean](AcquiredInitiationConstraint.lean) continues the same material ancestor through actual formation/completion contacts and changed initiation. [Nine saved histories and separate replay](../../../../shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md) preserve the original products and failed continuations. The general theorems establish the one-unit foreclosure of an existing completion and two depleted-state invariants over all admitted finite traces. A saved ample case protects B yet leaves its newly formed A unable to continue; matched B/support projections also retain different new structures.\n\nRun `python3 check_initiation.py`. The [fresh receipt](initiation-verification.json) accepts six modules and 124 audits, with 30 new (13 source declarations including helpers, 17 generated certificates), all nine histories’ 2,412 events / 2,421 states × 51 coordinates, five denials and 129 ancestral events. [Mathematics and preserved failed compilation](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md) retain the initial fixture timeout and the proved equivalent explicit initial state used in the successful build. Unit magnitude, transfer family, contact/reader laws and the bounded protect-B policy remain supplied.\n\n[Ren’s whole-integral correction and integration](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md) make this a partial projection within the common formation of activities, purposes and evaluation. Local expectation fulfillment is not the governing whole criterion. Neither the successful build nor the whole-history representation proves universal ethical grounding.\n\n## Acquired activity scope\n",
+      "baseline_sha256": "b8da9a5516d9c8f7b52ffe709d17bd5d1fd9508bc55ccaa8db07279ab9681a1c",
+      "baseline_bytes": 18252
+    }
+  ],
+  "new_files": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-CHECK.py",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-EDITS.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_initiation.py",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredActivityScope.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredActivityScope.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredInitiationConstraint.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredInitiationConstraint.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredPurposeCriterion.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/AcquiredPurposeCriterion.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/FormedSelection.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/FormedSelection.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/GenerativeCore.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/GenerativeCore.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/InitiationFixtures.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/check_initiation.py",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/check_purpose.py",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/exception.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/inputs.json",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/receipt.json",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredActivityScope.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredActivityScope.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredInitiationConstraint.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredInitiationConstraint.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredPurposeCriterion.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/AcquiredPurposeCriterion.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/FormedSelection.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/FormedSelection.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/GenerativeCore.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/GenerativeCore.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/InitiationFixtures.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/InitiationFixtures.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/check_initiation.py",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/check_purpose.py",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/inputs.json",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290734421384000/receipt.json",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/development/README.md",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/development/whnf-timeout.txt",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION-PROTOCOL.md",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-results.json",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation.py",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation_independent_check.py",
+    "sources/42-helping-scope-2026-10-06/initiation/README.md",
+    "sources/42-helping-scope-2026-10-06/initiation/manifest.json",
+    "sources/42-helping-scope-2026-10-06/initiation/martin-lin-olson-2016.pdf",
+    "sources/42-helping-scope-2026-10-06/initiation/martin-olson-2013.pdf"
+  ]
+}

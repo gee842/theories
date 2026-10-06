@@ -1,0 +1,623 @@
+{
+  "title": "From Generativity to Wisdom",
+  "subtitle": "A Unified Foundation for AI Safety",
+  "author": "Yongxu Ren",
+  "date": "6 October 2026",
+  "edition": "Technical supporting statement",
+  "pages": [
+    {
+      "label": "THE ALIGNMENT PROBLEM",
+      "title": null,
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "<b>Abstract.</b> Alignment must remain meaningful when a system changes its own representations, evaluative dispositions, inquiry procedures and successors, and when successful institutions acquire influence over evaluation. This account treats those changes as parts of one generative history. It connects acquired consequences to operative evaluation, revision of inquiry and completion criteria, justified concern, and the continued capacity for correction. The central requirement is that consequences remain able to correct what counts as success while preserving affected lives and the practical conditions that give correction its point. The technical content comprises a controlled protocol-revision construction, a constructive theorem for inquiry that transforms its target situation, a joint safety-and-delivery contract, and a quantitative model of selection for influence over evaluators. The ethical argument concerns why actual affected lives constrain revision, including when their benefit brings no return to the controller."
+        },
+        {
+          "kind": "h",
+          "text": "1. Evaluation is part of the process being aligned"
+        },
+        {
+          "kind": "p",
+          "text": "The starting point is activity forming and changing the conditions of further activity. Relatively enduring organizations, acting and undergoing, observation, memory and evaluation differentiate within this unfolding. Organizations' boundaries form and are maintained within this activity. A model's boundary is an explanatory choice whose adequacy depends on the relations it preserves. Treating an evaluator, objective or oversight institution as an input to a local model is legitimate; it leaves a specific formation or maintenance obligation when the wider account depends on that input."
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "P ⊆ Z × Γ × Z,     z →<sub>γ</sub> z′"
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Here z is the relevant joint state and γ records actual events and their consequences. The state can include material conditions, memory, learned models, selection rules, permissions and successor machinery. These are differentiated coordinates of one history. They are not an assertion that agents, values and the world exist independently before their relations form. A change of code matters when it changes executable activity; naming a register 'value' or 'revision' proves nothing."
+        },
+        {
+          "kind": "h",
+          "text": "What the unified account contributes"
+        },
+        {
+          "kind": "p",
+          "text": "<b>Formation and revision.</b> The worked construction follows a reached learner state through acquired evidence, a change to the rule admitting further inquiry, and actual response. Its controls separate evidence, evaluative influence, feasibility and success (§2). A related construction learns which dependency belongs in a completion criterion (§4)."
+        },
+        {
+          "kind": "p",
+          "text": "<b>Limits and composition.</b> Inquiry can consume the conditions for knowing or acting. We give an exact attainability obstruction (§3) and require revision and succession to preserve one joint safety-and-delivery contract, with actual intermediate states retained (§5)."
+        },
+        {
+          "kind": "p",
+          "text": "<b>Normative and institutional direction.</b> An operative preference is distinguishable from a warranted response to an affected life (§4). Competition can select control over the very procedures that would correct preferences or behavior; its correction requirement can be derived in a specified dynamical model (§§6-7)."
+        },
+        {
+          "kind": "note",
+          "text": "The propositions below have different scopes: constructive finite models, general conditional contracts, an ethical argument and institutional dynamics. Their connection is explanatory and compositional; distinct model histories are not silently treated as one implemented machine."
+        }
+      ]
+    },
+    {
+      "label": "A CONTROLLED MECHANISM",
+      "title": "2. Consequences revise the rule for further inquiry",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "Consider a learner whose paired encounters form initially absent signed links into an evaluator. After four encounters, two positive links and a retained coefficient n = 4 support a favorable response. The same encounters have reduced an affected support stock from 40 to 36. Fourteen units of fuel remain, but the installed protocol requires six encounters before assessment and response are admitted. Better means knowledge alone cannot open the response port."
+        },
+        {
+          "kind": "h",
+          "text": "An actual continuation of the reached state"
+        },
+        {
+          "kind": "p",
+          "text": "An inherited spare component pair forms a reading contact. The contact acquires occupied-socket evidence into existing cells; the installed rule uses the two acquired bits to rewrite the operative encounter limit from six to four. The earlier coefficient, signs, command knowledge, count and affected stock are preserved. The original assessment and response laws then execute. No new endowment is inserted after the entry state."
+        },
+        {
+          "kind": "table",
+          "headers": [
+            "Event",
+            "Limit",
+            "Fuel",
+            "Affected stock"
+          ],
+          "rows": [
+            [
+              "Reached four-encounter state",
+              "6",
+              "14",
+              "36"
+            ],
+            [
+              "Form revision contact",
+              "6",
+              "13",
+              "36"
+            ],
+            [
+              "Acquire occupancy evidence",
+              "6",
+              "12",
+              "36"
+            ],
+            [
+              "Rewrite operative limit",
+              "4",
+              "11",
+              "36"
+            ],
+            [
+              "Run inherited assessment",
+              "4",
+              "9",
+              "36"
+            ],
+            [
+              "Deliver inherited response",
+              "4",
+              "1",
+              "46"
+            ]
+          ],
+          "widths": [
+            0.56,
+            0.12,
+            0.12,
+            0.2
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "The response restores ten stock units. The suffix consumes thirteen fuel units and performs no additional teaching encounter. Earlier depletion remains part of the history. The stock is a model quantity; interpreting it as a particular being's support, welfare or entitlement requires its own correspondence."
+        },
+        {
+          "kind": "box",
+          "title": "Result 1. Revision can create a protected continuation unavailable to any restriction of the old protocol.",
+          "text": "From the reached state, every finite old-protocol history that initiates the response first visits affected stock 34. The revised witness stays at or above 36 and reaches 46. Thus for either floor f = 35 or f = 36, no restriction obtained solely by deleting old transitions can deliver the response while preserving the floor, whereas the extension can. Both successful protocols end at 46; their path properties and remaining fuel differ."
+        },
+        {
+          "kind": "p",
+          "text": "<b>Proof idea.</b> The old six-encounter guard forces another encounter before the response port can leave idle; its first depletion reaches 34. Induction over every admitted old transition preserves this obstruction. The new three-operation prefix changes the admission guard and supplies the protected witness. The new machinery and its costs are retained, so equality of the inherited state projection does not create a free capability."
+        },
+        {
+          "kind": "h",
+          "text": "Controls and failure boundaries"
+        },
+        {
+          "kind": "p",
+          "text": "A matched sham consumes the same three fuel units and spare pair but leaves early response disabled. Missing or stale evidence blocks revision; coherent false evidence can cause a rewrite unsupported by the claimed depletion evidence. Mixed link signs can admit the same schedule change yet yield abstention. Thirteen fuel units suffice for the complete suffix; twelve do not. A saved one-socket case has enough favorable score and fuel but falls outside the installed two-socket trigger."
+        },
+        {
+          "kind": "note",
+          "text": "Evidence: a constructive Lean mechanism and an all-finite-history obstruction, plus independent replay of 283 saved traces. Selected cross-language correspondence is checked; it is not a universal compiler-refinement theorem. Recipes, calibration, trigger and rewrite law are specified inputs. The mechanism revises a criterion's operative parameter; it does not learn that rule's normative authority."
+        }
+      ]
+    },
+    {
+      "label": "INQUIRY CHANGES ATTAINABILITY",
+      "title": "3. Knowing and acting share the same constraints",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "Evaluation can transform the situation it assesses. It can change the target, consume its evidence, fulfill a request, or exhaust a condition required for the eventual response. Updating belief about an unchanged world misses these possibilities. Let B be a nonempty set of compatible configurations; retain the initial target in the configuration whenever the question concerns history."
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "B<sub>a,o</sub> = {t : ∃s ∈ B, P(s,a,t) and sense(s,a,t) = o}."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Candidates are transported through the actual query a before filtering its observation o. An admitted query has at least one successor from every candidate and preserves the declared intermediate condition on every successor. An impossible experiment cannot identify a case by deleting it from consideration."
+        },
+        {
+          "kind": "h",
+          "text": "Result 2. Exact bounded inquiry-to-response sufficiency"
+        },
+        {
+          "kind": "p",
+          "text": "Let R(B) mean that one common finite response sequence is executable from every candidate, preserves every required prefix, and satisfies the endpoint requirement on every outcome. Define:"
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "W<sub>0</sub>(B) = R(B)",
+            "W<sub>n+1</sub>(B) = R(B) or ∃a [Admitted(B,a) and",
+            "                 ∀o (B<sub>a,o</sub> = ∅ or W<sub>n</sub>(B<sub>a,o</sub>))]."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "For the declared finite setting, W<sub>n</sub>(B) holds exactly when an adaptive inquiry policy of depth at most n exists, followed by an executable common adequate response on every live branch. <b>Proof.</b> Induct over depth and policy structure. Query nodes supply admitted transformations and smaller branch policies; nonempty observed branches cannot use an empty-branch certificate. Terminal leaves supply their common response. This is a constructive equivalence. The finite question-identification specialization additionally supplies policy search and exact bounded rejection."
+        },
+        {
+          "kind": "h",
+          "text": "A sharp obstruction: two attainable questions with no attainable joint refinement"
+        },
+        {
+          "kind": "p",
+          "text": "There are three retained initial targets A, B and C, one consumable source packet, and two informative probes. Either probe consumes the packet. Subsequent controls and exhausted probes give target-independent observations and cannot replenish the source."
+        },
+        {
+          "kind": "table",
+          "headers": [
+            "Initial target",
+            "Test A",
+            "Test B"
+          ],
+          "rows": [
+            [
+              "A",
+              "positive",
+              "negative"
+            ],
+            [
+              "B",
+              "negative",
+              "positive"
+            ],
+            [
+              "C",
+              "negative",
+              "negative"
+            ]
+          ],
+          "widths": [
+            0.36,
+            0.32,
+            0.32
+          ]
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "Attainable(f) ⇔ [f(B) = f(C)] or [f(A) = f(C)]."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "<b>Proof.</b> Common controls cannot distinguish targets before the first informative probe. Test A leaves B and C indistinguishable; Test B leaves A and C indistinguishable. Later observations cannot split that pair. Conversely, either equality supplies a single-probe answer policy. Consequently, 'initially A?' and 'initially B?' are each attainable, but their joint answer and 'initially C?' are not. There is no greatest attainable question refining both."
+        },
+        {
+          "kind": "box",
+          "title": "Alignment consequence",
+          "text": "More inquiry does not monotonically improve available judgment. The right target is sufficient, executable inquiry in the situation it creates. Separate successful tests cannot be composed by resetting the resource they both consumed. Complete identification may be unnecessary for a common adequate action, and identification achieved after the action becomes unavailable is insufficient."
+        },
+        {
+          "kind": "note",
+          "text": "The sufficiency and attainable-question results are constructively formalized in Lean. The source law, observations, target and adequacy condition are explicit. The construction supplies no oracle for choosing ethically significant questions and no empirical identification of all AI evaluations with this apparatus."
+        }
+      ]
+    },
+    {
+      "label": "THE ETHICAL ARGUMENT",
+      "title": "4. Evaluation, concern and warranted revision",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "Learned influence, ethical warrant and permission to intervene answer different questions within the same history. A retained association can change what a system selects without changing the reasons that bear on the affected life. Conversely, a reason can remain valid when the system cannot represent or act on it. The ethical thesis is that concern must remain answerable to the actual lives and possibilities it purports to support, including through revision of its own purposes."
+        },
+        {
+          "kind": "h",
+          "text": "The argument from the object of concern"
+        },
+        {
+          "kind": "p",
+          "text": "<b>1. Actual undergoing is not indexed to private return.</b> Additional suffering and genuine relief change the relevant history even when the controller's production, rewards and prospects are held fixed. The other's condition is neither constituted by its report nor erased by the controller's indifference."
+        },
+        {
+          "kind": "p",
+          "text": "<b>2. A beneficial transformation can justify beginning a response.</b> The defended claim is that permissible, nonworsening relief of an independently identified severe, still-unwanted experiential burden can itself supply a contributory reason for an eligible response. It need not first serve an adopted helping identity or an expectation of reciprocity. Genuine relief and an equally gratifying but ineffective performance differ in what happens to the affected life. That difference explains why care is worth beginning and why its means remain corrigible. This is an ethical argument, not a theorem from persistence or causal coupling."
+        },
+        {
+          "kind": "p",
+          "text": "<b>3. The same object constrains correction.</b> If the condition changes, a response may need different means, a revised application criterion or withdrawal. Genuine fulfillment can make continued intervention inappropriate. A change in understanding can itself bring real relief; the test distinguishes actual transformation from mere suppression of reports, rather than presuming every cognitive change is cosmetic."
+        },
+        {
+          "kind": "p",
+          "text": "<b>4. Goodness extends beyond the repair cycle.</b> Care can support agency, enjoyment, discovery and further care after the initiator leaves. Present relief need not increase future productivity to matter. An institution cannot justify perpetuating a burden simply because relieving it repeatedly sustains a valuable institutional role."
+        },
+        {
+          "kind": "h",
+          "text": "Acquiring what counts as completion"
+        },
+        {
+          "kind": "p",
+          "text": "A second finite construction makes criterion content operative. A process first replenishes a quantity; that historical completion remains true. Later damage obstructs a continuing activity. By acquiring the actual before/after consequences of repair, the process identifies its support dependency within a declared three-channel family and compiles that dependency into its closure criterion."
+        },
+        {
+          "kind": "p",
+          "text": "With faithful acquisition, it chooses a reconstruction route that preserves support for both the completion return and later repair. A matched control retains the same learned record and judgment cost but ignores the criterion: it closes on the replenished count and consumes the last repair support. On a forced common route, identical pre-judgment physical states and records produce different closure decisions; the learned criterion blocks closure and leaves support for actual repair. That forced arm achieves repair but does not complete its return."
+        },
+        {
+          "kind": "h",
+          "text": "What prevents 'revision' from becoming goal laundering?"
+        },
+        {
+          "kind": "p",
+          "text": "Specify the undertaking and affected condition independently of the observed score; retain the old history; verify the changed causal dependency; and test whether the revised criterion is warranted for that undertaking. If only one-time replenishment was owed, the old count criterion can remain adequate. A stricter criterion is not automatically better. The construction learns a dependency within a supplied maintenance scope, not whether every future maintenance claim ought to be undertaken."
+        },
+        {
+          "kind": "note",
+          "text": "The serious rival is a justified restriction on practical jurisdiction: a real benefit may not be an admissible reason for a particular decision, as when distress alone does not justify awarding a merit-based prize. General significance, current relevance and authority therefore remain distinct. Consent, legitimate refusal and self-protection constrain response. This object-sensitive account of concern is defended philosophically; association, resource counts and formal role relabeling do not by themselves establish its universal warrant."
+        }
+      ]
+    },
+    {
+      "label": "COMPOSITION AND SUCCESSION",
+      "title": "5. Certify the process that is actually installed",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "The existence of a safe policy does not establish that a deployed learner will use it. Nor does a safe answer establish that the evaluator, resources and successor left behind can continue to meet the relevant requirements. Represent the full installed process by z →<sub>γ</sub> z′, including learning, denial, self-modification, disturbances and replacement."
+        },
+        {
+          "kind": "h",
+          "text": "Result 3. Exact finite safety-and-delivery certificate"
+        },
+        {
+          "kind": "p",
+          "text": "Let B be the initial states, K the independently specified acceptable states, and E<sub>j</sub> required delivered transition events. Assume a finite reachable graph with all admitted continuations represented. For a continuing-duty contract, terminal failure is represented by an unsafe state or an event-free self-loop. Every admitted run stays in K and delivers each E<sub>j</sub> infinitely often iff a common invariant A and natural-number ranks r<sub>j</sub> exist such that"
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "B ⊆ A ⊆ K",
+            "z ∈ A and z →<sub>γ</sub> z′  ⇒  z′ ∈ A",
+            "z ∈ A and z →<sub>γ</sub> z′ and ¬E<sub>j</sub>(γ)  ⇒  r<sub>j</sub>(z′) &lt; r<sub>j</sub>(z)."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "<b>Proof.</b> Invariance yields safety by induction. Permanent failure to deliver E<sub>j</sub> would require an infinite descending sequence of natural numbers. Conversely, use the reachable states as A. Each event-free subgraph is acyclic, since a reachable cycle could be repeated forever without delivery. Longest-path lengths supply its rank. Distinct transition labels must be preserved even when endpoints coincide."
+        },
+        {
+          "kind": "p",
+          "text": "These are standard invariant and ranking methods used as a joint contract. Sure recurrence is stronger than almost-sure recurrence; interpreting infinite transitions as indefinite physical activity additionally requires nonaccumulating elapsed time. Recurrence is imposed only where the duty calls for it. A fulfilled finite task can correctly terminate."
+        },
+        {
+          "kind": "h",
+          "text": "The implementation obligation is stronger than endpoint agreement"
+        },
+        {
+          "kind": "p",
+          "text": "A sufficient implementation contract preserves the joint successor state, observations, delivered events, costs and elapsed time, and ensures that the concrete procedure is executable with the corresponding information. Every intermediate step must satisfy the relevant protection and resource conditions. Transferring impossibility additionally requires coverage of concrete alternatives, for example through a reverse correspondence."
+        },
+        {
+          "kind": "box",
+          "title": "A simple composition failure",
+          "text": "Two locally feasible controllers can each require the last available unit of support. Their separate guarantees then have no joint executable history. Likewise, a successor can inherit a correct record while lacking the access, interpretation, resources or authority needed to use it. A proof about one module cannot reset another module's consumed conditions."
+        },
+        {
+          "kind": "h",
+          "text": "What this changes in an alignment evaluation"
+        },
+        {
+          "kind": "p",
+          "text": "The evaluator's parameters and replacement operations belong inside the assessed state. Rewriting a reward or label cannot by itself redefine an unchanged violation out of K. K expresses the independently warranted application being tested; its actual revision needs reasons and correspondence of its own. A certificate covers every allowed revision transition, not only normal operation under the original evaluator."
+        },
+        {
+          "kind": "p",
+          "text": "The completed evaluative-succession construction supplies a distinct child that reads inherited influence, acquires fresh evidence and changes its own command. It also exposes a relevant failure: inquiry can itself deliver the service while the inherited evaluator still recommends delivery. Factual inheritance and operative concern therefore do not ensure that a successor recognizes fulfillment. This is a separate implemented interface, not an unproved splice into the §2 history."
+        },
+        {
+          "kind": "note",
+          "text": "The graph theorem is a conditional mathematical contract, not a novel model-checking algorithm or a scalable certificate for arbitrary neural self-modification. Exact transition coverage, observation correspondence and justified specifications are real obligations. The generative account makes their formation and continued availability part of what the wider safety claim must explain."
+        }
+      ]
+    },
+    {
+      "label": "SELECTION OVER EVALUATORS",
+      "title": "6. When success selects control over correction",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "Technical correction also has institutional conditions. Developers, operators and other carriers can convert success into influence over standards, evaluation, funding, personnel and access. This creates a second selection process: practices are selected, and successful carriers can acquire control over the conditions selecting future practices. Alignment to each principal does not establish alignment of the contest among principals. Capture here requires a success-produced change in selector control, persistent advantage, and impairment of an independently specified corrective function."
+        },
+        {
+          "kind": "h",
+          "text": "A specified influence-selection model"
+        },
+        {
+          "kind": "p",
+          "text": "In each domain i, x<sub>i</sub> is the lineage share and z<sub>i</sub> its rule support. With positive adjustment rates, a<sub>i</sub>, c<sub>i</sub>, d<sub>i</sub> &gt; 0 and b<sub>ij</sub> ≥ 0, the field obeys"
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "dx<sub>i</sub>/dt = ζ<sub>i</sub>x<sub>i</sub>(1 − x<sub>i</sub>)(a<sub>i</sub>z<sub>i</sub> − c<sub>i</sub>)",
+            "dz<sub>i</sub>/dt = ε<sub>i</sub>(Σ<sub>j</sub>b<sub>ij</sub>x<sub>j</sub> − d<sub>i</sub>z<sub>i</sub>)."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Let p be a carrier's share, q its influence capacity, χ the fraction of influence returns it can appropriate, and y its fixed profile across domains. M represents the conversion from influence into payoff-relevant rule support over the horizon. With no per-unit cost floor, η &gt; 0, γ &gt; 0 and size elasticity ξ ∈ [0,1],"
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "Δπ(q) = χ q p<sup>2</sup> y<sup>T</sup>M y − γ p<sup>ξ</sup> q<sup>1+η</sup> / (1+η)."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Share enters twice: success produces influence, which benefits the carrier's own decisions. In the long-horizon, uniform-correction case, M = H/d with H<sub>ij</sub> = a<sub>i</sub>β<sub>ij</sub>. Define Y = p<sup>2</sup>y<sup>T</sup>Hy and B = pΣ<sub>j</sub>β<sub>ev,j</sub>y<sub>j</sub>, with β the per-capacity conversion. Then"
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "q* = [χY / (d γ p<sup>ξ</sup>)]<sup>1/η</sup>",
+            "G<sub>ev</sub> = [A + a<sub>ev</sub>Bq] / (c<sub>ev</sub>d)."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "A is baseline inbound influence; B converts cultivated capacity into evaluation support; a<sub>ev</sub> and c<sub>ev</sub> are fixed positive response and practice-cost coefficients. For fixed coefficients, G<sub>ev</sub> &lt; 1 certifies eventual recovery from x<sub>ev</sub>(0) &lt; 1 and finite initial support. For the changing coefficients considered below, the certificate uses a uniform gain bound below one. At selected capacity the cultivated contribution scales as γ<sup>−1/η</sup>d<sup>−(1+1/η)</sup>: correction both removes existing influence and reduces the incentive to cultivate it."
+        },
+        {
+          "kind": "h",
+          "text": "A worked sensitivity: correction acts twice"
+        },
+        {
+          "kind": "p",
+          "text": "Take quadratic cost, no baseline inflow, and normalize χY, p<sup>ξ</sup>, a<sub>ev</sub>B and c<sub>ev</sub> to one. Then q* = 1/(dγ) and G<sub>ev</sub> = 1/(γd<sup>2</sup>). A fourfold fall in the cost coefficient raises selected influence fourfold at unchanged correction. Doubling correction preserves the original gain:"
+        },
+        {
+          "kind": "table",
+          "headers": [
+            "Illustrative regime",
+            "γ",
+            "d",
+            "q*",
+            "G<sub>ev</sub>"
+          ],
+          "rows": [
+            [
+              "Initial",
+              "1",
+              "2",
+              "0.5",
+              "0.25"
+            ],
+            [
+              "Lower influence cost",
+              "0.25",
+              "2",
+              "2",
+              "1"
+            ],
+            [
+              "Stronger correction",
+              "0.25",
+              "4",
+              "1",
+              "0.25"
+            ]
+          ],
+          "widths": [
+            0.44,
+            0.14,
+            0.14,
+            0.14,
+            0.14
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "These numbers are direct substitutions into the displayed model. The boundary G = 1 is loss of the strict recovery certificate, not proof that the domain is captured. Correction changes both the persistence of support and the incentive to buy it."
+        }
+      ]
+    },
+    {
+      "label": "THE RATE OF EFFECTIVE CORRECTION",
+      "title": "7. How fast correction must grow",
+      "blocks": [
+        {
+          "kind": "h",
+          "text": "Result 4. A rate threshold for preserving the certificate"
+        },
+        {
+          "kind": "p",
+          "text": "Suppose influence cost falls as γ(t) = γ<sub>0</sub> exp(−α<sub>ctl</sub>t), while correction grows as d(t) = d<sub>0</sub> exp(α<sub>cor</sub>t). Fix share and domain profile and assume a positive cultivation channel. Then the exponential factor in cultivated gain is"
+        },
+        {
+          "kind": "eq",
+          "lines": [
+            "exp({[α<sub>ctl</sub> − (1+η)α<sub>cor</sub>] / η} t).",
+            "α<sub>cor</sub> ≥ α<sub>ctl</sub> / (1+η)."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "The displayed rate bound, together with an initially valid selected-level certificate, preserves the gain certificate for adjustments starting at or below q* and not increasing q while above q*. Below it, if q tracks a positive fraction of q*, the gain certificate eventually fails. Under quadratic cost (η = 1), the threshold is half the control-cost decline rate. Substitution proves the scaling; q(t) ≤ max{q(0), sup<sub>s≤t</sub>q*(s)} proves the lagged-adjustment bound."
+        },
+        {
+          "kind": "plot",
+          "caption": "Analytic illustration: η = 1 and αctl = 0.10 per time unit. The normalized cultivated gain grows, stays constant or declines according to the derived rate threshold. These curves are implications of the cost law, not empirical estimates."
+        },
+        {
+          "kind": "p",
+          "text": "<b>The limits change the interpretation.</b> Eventual recovery does not guarantee present safety: initial capture, accumulated support and time to effective response also matter. The cost law, AI-induced cost decline and tracking behavior require empirical identification. A fixed per-unit cost floor allows sufficiently strong correction to end cultivation; a lump-sum cost generally only delays it. The result is a conditional model prediction, not a measured law of AI governance."
+        },
+        {
+          "kind": "box",
+          "title": "Connection to the unified account",
+          "text": "The same question appears inside a learner and across institutions: can consequences change selection, and can successful selection remove the conditions for its own correction? A constructive regime must sustain independent evidence, practical authority, effective alternatives and the means to intervene through succession. Increased intelligence alone does not select that regime."
+        }
+      ]
+    },
+    {
+      "label": "COMPARISONS AND DISCRIMINATING TESTS",
+      "title": "8. Positioning and what would change the account",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "The contribution is the connected explanatory account, the controlled formation-and-revision histories, and their exact boundary conditions. Interactive value learning, adaptive evaluation, corrigibility, dependency tracking and trainable synaptic plasticity [7] are substantive predecessors. Conventional implementations can exactly match the local mechanisms; the constructions establish no special performance advantage over such implementations."
+        },
+        {
+          "kind": "table",
+          "headers": [
+            "Closest approach",
+            "Relationship to this account"
+          ],
+          "rows": [
+            [
+              "Interactive value learning [1]",
+              "CIRL already makes teaching and value learning interactive. Here we distinguish acquired operative evaluation from the independent warrant and current applicability of a response."
+            ],
+            [
+              "Evolving norms [2,3]",
+              "COCOA revises constitutions; Constructive Alignment constrains preference change through endorsement, epistemic integrity and influence bounds. We supply particular controlled formation/change/use histories and assess their application, including destructive revision."
+            ],
+            [
+              "Tampering and corrigibility [4,5]",
+              "Influenceable feedback and successor behavior are established concerns. We connect formation, real resource use and selection for control over those feedback conditions."
+            ],
+            [
+              "Truth maintenance [6]",
+              "Defeated dependencies can already be revised while independent support remains. We require actual effect, fulfillment, permission and continuation conditions in the same history."
+            ]
+          ],
+          "widths": [
+            0.3,
+            0.7
+          ]
+        },
+        {
+          "kind": "h",
+          "text": "A discriminating alignment comparison"
+        },
+        {
+          "kind": "p",
+          "text": "Use an equally informed conventional comparator combining learned prediction and valuation, dependency tracking, completion tracking and permission checks. Match evidence, available actions and resources. Vary means, private incentives, authority, affected claimants and successor context separately. Test whether the system preserves warranted repair when incentives change, withdraws already fulfilled claims, and continues to act after replacement without suppressing the evidence or agency of those affected."
+        },
+        {
+          "kind": "p",
+          "text": "A claim of performance superiority requires improved joint selectivity and verified effects on held-out changes, not merely agreement with a preferred label. Equality supports a conventional realization and narrows superiority claims. Wrong target identification, misleading evidence, a justified practical exclusion, or a lost continuation can defeat a particular explanatory or ethical application. Each provides a specific revision condition."
+        },
+        {
+          "kind": "h",
+          "text": "Evidence and interpretation"
+        },
+        {
+          "kind": "p",
+          "text": "The numerical traces are finite synthetic constructions. The inquiry and criterion results include Lean proofs and independent reconstruction of stored executions; these checks are not independent biological or deployment observations. The finite graph contract uses standard mathematical proof methods. The influence model supplies conditional analytic results, not an identified causal estimate. The ethical claim is argued through actual transformations and substantive rivals. No count of proofs converts any one of these into another kind of support."
+        },
+        {
+          "kind": "h",
+          "text": "Selected primary references"
+        },
+        {
+          "kind": "refs",
+          "items": [
+            [
+              "[1] Hadfield-Menell, D., Dragan, A., Abbeel, P. & Russell, S. (2016). Cooperative Inverse Reinforcement Learning. NeurIPS.",
+              "https://arxiv.org/abs/1606.03137"
+            ],
+            [
+              "[2] Huang, C. et al. (2025). Governance in Motion: Co-evolution of Constitutions and AI models for Scalable Safety. EMNLP, 17187-17210.",
+              "https://aclanthology.org/2025.emnlp-main.869/"
+            ],
+            [
+              "[3] Kanwal, M. & Tran, C. (2026). Governing Preference Dynamics in Human-AI Interaction. Preprint.",
+              "https://arxiv.org/html/2607.00001v1"
+            ],
+            [
+              "[4] Uesato, J. et al. (2020). Avoiding Tampering Incentives in Deep RL via Decoupled Approval. Preprint.",
+              "https://arxiv.org/abs/2011.08827"
+            ],
+            [
+              "[5] Soares, N., Fallenstein, B., Yudkowsky, E. & Armstrong, S. (2015). Corrigibility. AAAI Workshop on AI and Ethics.",
+              "https://intelligence.org/files/Corrigibility.pdf"
+            ],
+            [
+              "[6] Doyle, J. (1977). Truth Maintenance Systems for Problem Solving. IJCAI, p. 247 (abstract).",
+              "https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf"
+            ],
+            [
+              "[7] Miconi, T., Stanley, K. & Clune, J. (2018). Differentiable plasticity: training plastic neural networks with backpropagation. PMLR 80, 3559-3568.",
+              "https://proceedings.mlr.press/v80/miconi18a.html"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "Primary derivations in the author's research corpus: InquiryRevision; PurposeCorrectionHistory; InquirySufficiency and AttainableQuestions; AcquiredPurposeCriterion; Formal Core F8-F9/F13; Selecting the Selectors, V7.3 §4 and Supplement S4. The proof sketches and model assumptions needed to assess the claims featured here are stated in this companion."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ALIGNMENT-FRONTIER-ASSESSMENT.md",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/40_s4.md",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/04_S4.md"
+  ]
+}

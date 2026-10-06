@@ -1,0 +1,237 @@
+1
+GenerativeRepairApplicability.lean:25:53: error: unsolved goals
+case repair.true
+material : Nat
+s : State
+left✝ : Valid material s
+enabled : FormedSelection.Enabled material s Event.repair
+hi : s.intact = true
+⊢ False
+
+case damage.false
+material : Nat
+s : State
+left✝ : Valid material s
+enabled : FormedSelection.Enabled material s Event.damage
+hi : s.intact = false
+⊢ False
+GenerativeRepairApplicability.lean:28:14: warning: This simp argument is unused:
+  Enabled
+
+Hint: Omit it from the simp argument list.
+  simp_all [̵E̵n̵a̵b̵l̵e̵d̵,̵ ̵a̵d̵v̵a̵n̵c̵e̵,̵[̲a̲d̲v̲a̲n̲c̲e̲,̲ bit, eventIndicator]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+GenerativeRepairApplicability.lean:83:32: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.2 ?m.3
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:84:14: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.5 ?m.6
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:84:44: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.8 ?m.9
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:83:43: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.repair` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `Event.repair`
+  [apply] `Substring.Raw.repair`
+GenerativeRepairApplicability.lean:84:25: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.formA` could not be determined
+
+Hint: Using `Event.formA would be unambiguous:
+  [apply] `Event.formA`
+GenerativeRepairApplicability.lean:84:55: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.formH` could not be determined
+
+Hint: Using `Event.formH would be unambiguous:
+  [apply] `Event.formH`
+GenerativeRepairApplicability.lean:89:51: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.72 = ?m.72
+but is expected to have type
+  True
+in the application
+  And.intro rfl
+GenerativeRepairApplicability.lean:89:14: error: unsolved goals
+material : Nat
+s : State
+left✝ : Valid material s
+enabled : FormedSelection.Enabled material s Event.repair
+fuel : 0 < s.fuel
+⊢ ∀ (x : State),
+    ¬(sorry ()).step
+        { aFree := s.aFree, hFree := s.hFree, resident := s.resident, intact := true, localFuel := s.localFuel,
+          fuel := s.fuel - 1, source := s.source }
+        (sorry ()) x
+GenerativeRepairApplicability.lean:89:23: error: unsolved goals
+material : Nat
+s : State
+left✝ : Valid material s
+enabled : FormedSelection.Enabled material s Event.repair
+fuel : 0 < s.fuel
+⊢ ∀ (x : State),
+    ¬(sorry ()).step
+        { aFree := s.aFree, hFree := s.hFree, resident := s.resident, intact := true, localFuel := s.localFuel,
+          fuel := s.fuel - 1, source := s.source }
+        (sorry ()) x
+GenerativeRepairApplicability.lean:89:32: error: unsolved goals
+material : Nat
+s : State
+left✝ : Valid material s
+enabled : FormedSelection.Enabled material s Event.repair
+fuel : 0 < s.fuel
+⊢ ∀ (x : State),
+    ¬(sorry ()).step
+        { aFree := s.aFree, hFree := s.hFree, resident := s.resident, intact := true, localFuel := s.localFuel,
+          fuel := s.fuel - 1, source := s.source }
+        (sorry ()) x
+GenerativeRepairApplicability.lean:93:38: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.6 ?m.7
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:93:49: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.capture` could not be determined
+
+Hint: Using `Event.capture would be unambiguous:
+  [apply] `Event.capture`
+GenerativeRepairApplicability.lean:99:35: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.2 ?m.3
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:99:46: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.capture` could not be determined
+
+Hint: Using `Event.capture would be unambiguous:
+  [apply] `Event.capture`
+GenerativeRepairApplicability.lean:102:14: error: unsolved goals
+material : Nat
+s : State
+left✝ : Valid material s
+enabled : FormedSelection.Enabled material s Event.capture
+⊢ ∀ (x : State),
+    ¬(sorry ()).step
+        { aFree := s.aFree, hFree := s.hFree, resident := s.resident, intact := s.intact, localFuel := true,
+          fuel := s.fuel, source := s.source - 1 }
+        (sorry ()) x
+GenerativeRepairApplicability.lean:112:12: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.6 ?m.7
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:112:44: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.9 ?m.10
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:112:23: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.capture` could not be determined
+
+Hint: Using `Event.capture would be unambiguous:
+  [apply] `Event.capture`
+GenerativeRepairApplicability.lean:112:55: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.repair` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `Event.repair`
+  [apply] `Substring.Raw.repair`
+GenerativeRepairApplicability.lean:115:32: error: unsolved goals
+material : Nat
+s : State
+intact : s.intact = true
+source : 0 < s.source
+left✝¹ : Valid material s
+left✝ : FormedSelection.Enabled material s Event.localCopyA
+⊢ ∀ (x : State),
+    ¬(sorry ()).step
+        { aFree := s.aFree + 1, hFree := s.hFree, resident := s.resident, intact := true, localFuel := false,
+          fuel := s.fuel, source := s.source }
+        (sorry ()) x
+GenerativeRepairApplicability.lean:120:32: error: Application type mismatch: The argument
+  material
+has type
+  Nat
+but is expected to have type
+  Process ?m.5 ?m.6
+in the application
+  Enabled material
+GenerativeRepairApplicability.lean:120:43: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.capture` could not be determined
+
+Hint: Using `Event.capture would be unambiguous:
+  [apply] `Event.capture`
+GenerativeRepairApplicability.lean:122:14: error: unsolved goals
+material : Nat
+s : State
+emptySource : s.source = 0
+left✝¹ : Valid material s
+left✝ : FormedSelection.Enabled material s Event.repair
+⊢ ∀ (x : State),
+    ¬(sorry ()).step
+        { aFree := s.aFree, hFree := s.hFree, resident := s.resident, intact := true, localFuel := s.localFuel,
+          fuel := s.fuel - 1, source := 0 }
+        (sorry ()) x
+GenerativeRepairApplicability.lean:143:14: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (Process ?m.12 ?m.13) 78
+numerals are polymorphic in Lean, but the numeral `78` cannot be used in a context where the expected type is
+  Process ?m.12 ?m.13
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+GenerativeRepairApplicability.lean:143:44: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (Process ?m.17 ?m.18) 78
+numerals are polymorphic in Lean, but the numeral `78` cannot be used in a context where the expected type is
+  Process ?m.17 ?m.18
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+GenerativeRepairApplicability.lean:143:24: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.repair` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `Event.repair`
+  [apply] `Substring.Raw.repair`
+GenerativeRepairApplicability.lean:143:54: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.capture` could not be determined
+
+Hint: Using `Event.capture would be unambiguous:
+  [apply] `Event.capture`
+'Generative.RepairApplicability.bit_bound' does not depend on any axioms
+'Generative.RepairApplicability.step_restoration_balance' depends on axioms: [propext, sorryAx]
+'Generative.RepairApplicability.trace_restoration_balance' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.RepairApplicability.tally_zero_of_absent' depends on axioms: [propext]
+'Generative.RepairApplicability.later_repairs_bounded_by_new_damage' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.RepairApplicability.new_repair_requires_intervening_damage' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+GenerativeRepairApplicability.lean:192:14: error(lean.unknownIdentifier): Unknown constant `Generative.RepairApplicability.repair_removes_own_condition`
+GenerativeRepairApplicability.lean:193:14: error(lean.unknownIdentifier): Unknown constant `Generative.RepairApplicability.restored_capture_uses_current_conditions`
+GenerativeRepairApplicability.lean:194:14: error(lean.unknownIdentifier): Unknown constant `Generative.RepairApplicability.capture_removes_own_condition`
+GenerativeRepairApplicability.lean:195:14: error(lean.unknownIdentifier): Unknown constant `Generative.RepairApplicability.local_copy_reopens_capture`
+GenerativeRepairApplicability.lean:196:14: error(lean.unknownIdentifier): Unknown constant `Generative.RepairApplicability.restoration_without_source_has_no_capture`
+'Generative.RepairApplicability.Actual.existing_formed_prefix' depends on axioms: [propext]
+GenerativeRepairApplicability.lean:198:14: error(lean.unknownIdentifier): Unknown constant `Generative.RepairApplicability.Actual.restored_with_spare_support`
+'Generative.RepairApplicability.Actual.actual_disturbance_restoration' depends on axioms: [propext]
+'Generative.RepairApplicability.Actual.actual_local_reconstruction_and_capture' depends on axioms: [propext]
+'Generative.RepairApplicability.Actual.actual_continuation_keeps_whole_history' depends on axioms: [propext, Quot.sound]

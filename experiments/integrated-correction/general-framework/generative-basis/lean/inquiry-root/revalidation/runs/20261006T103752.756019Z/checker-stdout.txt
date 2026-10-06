@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "new": 27,
+  "inherited": 23,
+  "last_module": "InquiryFamilies"
+}

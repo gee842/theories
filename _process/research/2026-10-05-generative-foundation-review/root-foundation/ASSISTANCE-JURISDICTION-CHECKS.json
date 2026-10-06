@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "scope": "Document integrity of five current Markdown files, six owned additive paragraphs, reviewed hashes, and byte-preserved historical canonical. Philosophical review is internal collaborating-AI assessment at the declared candidate scope, not proof of ethical truth or verification of unrelated concurrent work.",
+  "current_files": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "86b669278b7f06cb951058e9575eeed2efe868dbc9af54e4f7b2fa24f6f40456"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-ARGUMENT.md",
+      "sha256": "f446762cab4831d3fc5d64cd5fcaf8de328ab3dcc6210a4e402c7182f868d3d0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-COUNTERREVIEW.md",
+      "sha256": "5d3b9f10b39280ee30cff250aa4aae5e361658d6d9974586e14f5020be5f138e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md",
+      "sha256": "54eb016c8465ad90df49b58dcc77ef8b5f75766f808fae3b27e3bbce3b4b109c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-INTEGRATION.md",
+      "sha256": "1fe1dfd8c2fc61a50fd8f7ac40186b75a935813d0aaab8dbcae076adfe55f642"
+    }
+  ],
+  "owned_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "marker": "**Protected choice and usable patient reasons",
+      "paragraph_sha256": "acd56f24e74a7f0b95a9c195fcc3e67d57d69ffef78b2c997d945781a3968f6b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "marker": "**Relief within an authored project",
+      "paragraph_sha256": "acc7fe0f2c2fe4bb1e2909d2cfe0807cad3d048f40ca665e81776a420814db2a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "marker": "**Assistance jurisdiction and prospective use",
+      "paragraph_sha256": "b7f4c69dfcc6dea905253780cd1e443c57cadbd8038d4456506c3f650aa0e26e"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "marker": "**Formed agency → justified choice boundaries",
+      "paragraph_sha256": "2a7612325c879057ba21fadf40e759822a4931bd1e0d3ee0c25ad3c08978dd7d"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "marker": "**Protected-choice continuation:**",
+      "paragraph_sha256": "21fa0aa9b1a9acd955c1398b156ba7d3b1652b70846609598fc557dfcb391923"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "marker": "Assistance-jurisdiction primary comparison",
+      "paragraph_sha256": "5aaae0bcdf371c0212d24974c76487aad485a5feabc63622771cf543834f33c5"
+    }
+  ],
+  "local_links_checked": 129,
+  "heading_fragments_checked": 19,
+  "reviewed_hashes_verified": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md"
+  ],
+  "historical_canonical": {
+    "date": "2026-10-06",
+    "purpose": "Preserve the reviewed elective-concern formulation before examining assistance jurisdiction and project-preserving relief. Historical snapshot, not an active working copy.",
+    "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "snapshot_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/UNIFIED-ETHICAL-GROUNDING-BEFORE-ASSISTANCE-JURISDICTION.md",
+    "sha256": "35da4abc22302fd038efb09ed43a0d248b94904fbe8c48839f005d07f09f35e7",
+    "link_resolution_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+    "prior_receipt": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ELECTIVE-CONCERN-CHECKS.json"
+  },
+  "four_prior_notes_and_six_prior_paragraphs_unchanged": true,
+  "new_participant_experiments": 0,
+  "new_formal_theorems": 0,
+  "errors": []
+}

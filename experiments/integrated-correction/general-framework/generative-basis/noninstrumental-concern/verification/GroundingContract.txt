@@ -1,0 +1,14 @@
+'NoninstrumentalConcern.candidate_satisfies_c2' does not depend on any axioms
+'NoninstrumentalConcern.grounded_eligible_merit' does not depend on any axioms
+'NoninstrumentalConcern.private_variant_condition' does not depend on any axioms
+'NoninstrumentalConcern.private_variant_current' does not depend on any axioms
+'NoninstrumentalConcern.private_variant_usable' does not depend on any axioms
+'NoninstrumentalConcern.private_variant_ready' depends on axioms: [propext]
+'NoninstrumentalConcern.private_variant_cost' depends on axioms: [propext]
+'NoninstrumentalConcern.private_variant_eligible' depends on axioms: [propext]
+'NoninstrumentalConcern.private_changes_preserve_conditionally_grounded_merit' depends on axioms: [propext]
+'NoninstrumentalConcern.permission_preserves_patient_condition' does not depend on any axioms
+'NoninstrumentalConcern.refusal_preserves_patient_condition' does not depend on any axioms
+'NoninstrumentalConcern.formal_c1_with_zero_merit' does not depend on any axioms
+'NoninstrumentalConcern.c2_not_entailed_by_formal_patient_badness' depends on axioms: [propext]
+'NoninstrumentalConcern.merit_and_actual_service_compose' depends on axioms: [propext, Classical.choice, Quot.sound]

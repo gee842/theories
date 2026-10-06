@@ -1,0 +1,7 @@
+[
+  {
+    "timing": "after broker input inventory, immediately before actual process launch",
+    "removed_path": "/private/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/continuation-probes-bsbxhnhq/early-checker-abort/runs/r0001/tree/experiments/agentdojo-evidence-boundary/replay-results.json",
+    "sha256": "be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4"
+  }
+]

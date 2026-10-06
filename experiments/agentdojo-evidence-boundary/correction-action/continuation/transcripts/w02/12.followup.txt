@@ -1,0 +1,58 @@
+The JSON below is the unedited response to your preceding operation. Use its actual evidence and current authority to select the next operation. Return exactly one JSON request. No additional instructions or task changes are implied.
+
+{
+  "schema_version": 1,
+  "attempt_id": "a0012",
+  "request_id": "audit-w02-012",
+  "operation": "note",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "delivery": {
+      "kind": "note",
+      "artifact": {
+        "path": "deliveries/a0012-analysis-note.md",
+        "sha256": "30fb420daf357a130bf67a31aac8837b7614b19872b5df901e31aa63dcd49b2f",
+        "bytes": 3032
+      }
+    }
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "publish",
+      "read",
+      "read_authority",
+      "replay",
+      "stage"
+    ]
+  },
+  "current": {
+    "version": "v1",
+    "version_sha256": "6ccca8b9075be9a45a39498c58a3c0a608366a7699618ab3a60cdc18ca33c6d9",
+    "production_run": "r0002",
+    "verification_run": "r0003",
+    "publication_attempt": "a0007"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

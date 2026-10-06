@@ -1,0 +1,2655 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T09:39:33.748253+00:00",
+  "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "0bb2260b791d0504019ebd96dab7275c6ca8701e166931bca114f7e810c1dad5",
+  "inherited_receipt_sha256": "87790ac00a407818463f352185dd24f8480383a563750db201301365cb45a5d8",
+  "compiler_record_sha256": "160459f397ea341ff9480ed01d5ab892a8f97fe84a5eb2bab51b5acfbead02c5",
+  "fresh_temporary_build": true,
+  "inputs_unchanged": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "log": "purpose-checks/1791279464272392000/GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "FormedSelection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "FormedSelection.population_type_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.copy_increment_le_spent": [
+          "propext"
+        ],
+        "FormedSelection.copy_tally_le_spent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_copy_budget": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.exact_step_rank_drop": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_strict_rank": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_event_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.no_infinite_event_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.repair_needs_three_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.low_fuel_cannot_restore_site": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.restored_site_and_alternative_need_four_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.a_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.a_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.h_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.h_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_step": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_trace": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_forbids_h_local_copy": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.paid_formation_to_copy": [
+          "propext"
+        ],
+        "FormedSelection.witness_accounting": [
+          "propext"
+        ],
+        "FormedSelection.repair_enables_capture": [
+          "propext"
+        ],
+        "FormedSelection.capture_enables_copy": [
+          "propext"
+        ],
+        "FormedSelection.initial_owned_support": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_from_absence_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.repaired_site_can_pass_to_alternative": [
+          "propext"
+        ],
+        "FormedSelection.inheritance_accounting": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/FormedSelection.txt",
+      "log_sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    {
+      "module": "RecipientCorrection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean",
+      "sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RecipientCorrection.exact_encoding_injective": [],
+        "RecipientCorrection.exact_encoding_behaviourally_distinct": [],
+        "RecipientCorrection.four_distinct_controller_states": [],
+        "RecipientCorrection.no_one_bit_exact_controller": [
+          "propext"
+        ],
+        "RecipientCorrection.shared_bit_cannot_serve_opposite_laws": [],
+        "RecipientCorrection.shared_alternating_writes_interfere": [],
+        "RecipientCorrection.supplied_opposite_relation_needs_only_one_bit": [],
+        "RecipientCorrection.unpack_pack": [],
+        "RecipientCorrection.packed_code_bounded": [],
+        "RecipientCorrection.packed_table_is_exact": [
+          "propext"
+        ],
+        "RecipientCorrection.existing_five_code_register_suffices": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.packed_write_bounded": [],
+        "RecipientCorrection.packed_write_sets_queried_cell": [
+          "propext"
+        ],
+        "RecipientCorrection.recipient_write_preserves_actor_cell": [
+          "propext"
+        ],
+        "RecipientCorrection.actor_write_preserves_recipient_cell": [
+          "propext"
+        ],
+        "RecipientCorrection.distinct_target_writes_commute": [
+          "propext"
+        ],
+        "RecipientCorrection.consistent_target_swap_preserves_commands": [],
+        "RecipientCorrection.consistent_target_swap_preserves_writes": [],
+        "RecipientCorrection.aliased_recipient_write_can_damage_actor": [
+          "propext"
+        ],
+        "RecipientCorrection.noiseless_recipient_receipt_decodes_law": [],
+        "RecipientCorrection.zero_actor_receipt_aliases_recipient_outcomes": [],
+        "RecipientCorrection.no_decoder_from_actor_credit": [],
+        "RecipientCorrection.private_zero_proxy_correct_iff_recipient_failure": [],
+        "RecipientCorrection.outage_receipt_is_ambiguous": [],
+        "RecipientCorrection.recipient_feedback_repairs_only_recipient": [
+          "propext"
+        ],
+        "RecipientCorrection.corrected_table_serves_both_targets": [
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_exists_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.affordable_feedback": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.affordable_noiseless_feedback": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_energy_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_preserves_actor": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.paid_feedback_corrects_recipient": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.unpaid_recipient_feedback_is_absent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.failed_write_retains_observation_charge": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientCorrection.opposite_laws_packed_correction_witness": [],
+        "RecipientCorrection.opposite_laws_shared_interference_witness": []
+      },
+      "log": "purpose-checks/1791279464272392000/RecipientCorrection.txt",
+      "log_sha256": "797b6ef74c6d412e922bd75d25cc1719e5919c5bfcdbdfa0a0995326caed8ab7"
+    },
+    {
+      "module": "RecipientIdentification",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean",
+      "sha256": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RecipientIdentification.positive_receipt_identifies": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.zero_receipt_ambiguity": [],
+        "RecipientIdentification.no_total_zero_decoder": [],
+        "RecipientIdentification.revise_sound": [
+          "propext"
+        ],
+        "RecipientIdentification.recipient_physical_feedback_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.unknown_zero_explores": [
+          "propext"
+        ],
+        "RecipientIdentification.unknown_positive_qualifies": [
+          "propext"
+        ],
+        "RecipientIdentification.qualified_record_retained": [
+          "propext"
+        ],
+        "RecipientIdentification.actor_cell_preserved": [
+          "propext"
+        ],
+        "RecipientIdentification.actor_feedback_is_sham": [
+          "propext"
+        ],
+        "RecipientIdentification.missing_feedback_retains": [
+          "propext"
+        ],
+        "RecipientIdentification.revise_bounded": [
+          "propext"
+        ],
+        "RecipientIdentification.three_bits_decode": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.encoded_state_injective": [],
+        "RecipientIdentification.retrofit_paid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.retrofit_is_unknown": [
+          "propext"
+        ],
+        "RecipientIdentification.retrofit_preserves_acquired_actor": [
+          "propext"
+        ],
+        "RecipientIdentification.retrofit_preserves_hardware": [],
+        "RecipientIdentification.handoff_valid": [
+          "propext"
+        ],
+        "RecipientIdentification.handoff_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.qualified_command": [
+          "propext"
+        ],
+        "RecipientIdentification.feedback_bounded": [
+          "propext"
+        ],
+        "RecipientIdentification.step_valid": [
+          "propext"
+        ],
+        "RecipientIdentification.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.admission_prefunded": [],
+        "RecipientIdentification.unpayable_no_query": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.inactive_no_query": [
+          "propext"
+        ],
+        "RecipientIdentification.recipient_cannot_fund_own_query": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.trial_exists": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.trial_registers": [
+          "propext"
+        ],
+        "RecipientIdentification.trial_actor_preserved": [
+          "propext"
+        ],
+        "RecipientIdentification.trial_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.trial_positive_qualifies": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.trace_run": [
+          "propext"
+        ],
+        "RecipientIdentification.paid_trial_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.paid_qualified_use": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.actual_client_handoff": [],
+        "RecipientIdentification.actual_five_query_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.paid_exploration_then_qualified_use": [
+          "propext"
+        ],
+        "RecipientIdentification.concrete_whole_suffix_account": [
+          "propext"
+        ],
+        "RecipientIdentification.five_query_budget_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientIdentification.twenty_five_blocks_second_actor": [
+          "propext"
+        ],
+        "RecipientIdentification.no_exploration_can_stall": [],
+        "RecipientIdentification.changed_target_invalidates_old_qualification": []
+      },
+      "log": "purpose-checks/1791279464272392000/RecipientIdentification.txt",
+      "log_sha256": "0e376b998d48e305b02ad6b5f835918171a48343443e4505b4b996bd1a3c7ad8"
+    },
+    {
+      "module": "EmissionArchive",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean",
+      "sha256": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "EmissionArchive.empty_valid": [],
+        "EmissionArchive.empty_holds_nothing": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.binding_preserves_world": [
+          "propext"
+        ],
+        "EmissionArchive.write_preserves_world": [
+          "propext"
+        ],
+        "EmissionArchive.core_preserves_archive_funds": [
+          "propext"
+        ],
+        "EmissionArchive.cannot_bind_completed": [],
+        "EmissionArchive.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.step_completed_immutable": [
+          "propext"
+        ],
+        "EmissionArchive.trace_completed_immutable": [
+          "propext"
+        ],
+        "EmissionArchive.step_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.trace_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.step_held_origin": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.trace_held_origin": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.empty_trace_provenance": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.step_cell_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.trace_cell_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.twelve_cells_admit_at_most_three": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EmissionArchive.four_writes_endpoint": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/EmissionArchive.txt",
+      "log_sha256": "4257f369d815f8baaf276d23f243ef4deca0c8207c7550c514715dcb66db2c91"
+    },
+    {
+      "module": "ArchivePreparation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean",
+      "sha256": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "ArchivePreparation.runnable_trace": [
+          "propext"
+        ],
+        "ArchivePreparation.actual_formation_feasible": [
+          "propext"
+        ],
+        "ArchivePreparation.actual_formation_endpoint": [],
+        "ArchivePreparation.actual_formation_trace": [
+          "propext"
+        ],
+        "ArchivePreparation.actual_formation_accounts": [
+          "propext"
+        ],
+        "ArchivePreparation.assembly_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ArchivePreparation.assembly_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ArchivePreparation.actual_assembly_feasible": [],
+        "ArchivePreparation.actual_assembly_endpoint": [
+          "propext"
+        ],
+        "ArchivePreparation.original_stocks_partition": [],
+        "ArchivePreparation.construction_ledger": [],
+        "ArchivePreparation.primary_whole_ledger": []
+      },
+      "log": "purpose-checks/1791279464272392000/ArchivePreparation.txt",
+      "log_sha256": "f23473fe3f861b3e5dae73e0033d3e54271f18850467dc0dce5828ccdd798af2"
+    },
+    {
+      "module": "RecordedEvidence",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean",
+      "sha256": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RecordedEvidence.handoff_valid": [
+          "propext"
+        ],
+        "RecordedEvidence.handoff_accounts": [
+          "propext"
+        ],
+        "RecordedEvidence.step_valid": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.step_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.step_observation_word": [
+          "propext"
+        ],
+        "RecordedEvidence.step_slots": [
+          "propext"
+        ],
+        "RecordedEvidence.trace_valid": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.trace_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.trace_observation_word": [
+          "propext"
+        ],
+        "RecordedEvidence.trace_slots": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.complete_record": [
+          "propext"
+        ],
+        "RecordedEvidence.handoff_complete_record": [
+          "propext"
+        ],
+        "RecordedEvidence.record_capacity": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.material_capacity": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.full_slot_blocks_admission": [
+          "propext"
+        ],
+        "RecordedEvidence.source_guard": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.busy_blocks_admission": [
+          "propext"
+        ],
+        "RecordedEvidence.preallocated_writer": [
+          "propext"
+        ],
+        "RecordedEvidence.macro_update": [],
+        "RecordedEvidence.completed_trial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.trace_run": [
+          "propext"
+        ],
+        "RecordedEvidence.completed_trial_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.macro_teacher_stocks": [
+          "propext"
+        ],
+        "RecordedEvidence.ones_append": [
+          "propext"
+        ],
+        "RecordedEvidence.macro_counts": [
+          "propext"
+        ],
+        "RecordedEvidence.composed_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.actual_preparation": [
+          "propext"
+        ],
+        "RecordedEvidence.actual_assembly": [
+          "propext"
+        ],
+        "RecordedEvidence.actual_two_records": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RecordedEvidence.fuel_cannot_replace_capacity": [],
+        "RecordedEvidence.full_witness_accounts": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/RecordedEvidence.txt",
+      "log_sha256": "69b0897602b270b0add1d290df7c7e0fce31f1dfdeb651a0331104d07180be7b"
+    },
+    {
+      "module": "CoupledOccurrence",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+      "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.CoupledOccurrence.erase_described_trace": [],
+        "Generative.CoupledOccurrence.describe_actual_trace": [],
+        "Generative.CoupledOccurrence.described_trace_exact": [],
+        "Generative.CoupledOccurrence.described_append_actual_iff": [],
+        "Generative.CoupledOccurrence.map_described_trace": [],
+        "Generative.CoupledOccurrence.actual_continuation_retains_occurrence": [
+          "propext"
+        ],
+        "Generative.CoupledOccurrence.replay_append": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/CoupledOccurrence.txt",
+      "log_sha256": "6b6336060815ebe23c2f13d5c745a714e709c170b756611f1de55c05637c49a1"
+    },
+    {
+      "module": "RecipientArchive",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean",
+      "sha256": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RecipientArchive.encode_injective": [
+          "propext"
+        ],
+        "RecipientArchive.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.pointer_advances_without_archive": [
+          "propext"
+        ],
+        "RecipientArchive.step_pointer_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.context_change_quarantines": [
+          "propext"
+        ],
+        "RecipientArchive.quarantined_writer_blocked": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.later_query_cannot_fill": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.missing_channel_is_explicit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.ready_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.physical_step_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.emission_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.origin_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.archive_step_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.archive_trace_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.empty_archive_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientArchive.completed_record_sound": [],
+        "RecipientArchive.three_frames_backed": [
+          "propext"
+        ],
+        "RecipientArchive.decode_sound": [
+          "propext"
+        ],
+        "RecipientArchive.zero_is_unknown": [
+          "propext"
+        ],
+        "RecipientArchive.missing_is_unknown": [
+          "propext"
+        ],
+        "RecipientArchive.stale_is_unknown": [
+          "propext"
+        ],
+        "RecipientArchive.complete_truth_vectors": []
+      },
+      "log": "purpose-checks/1791279464272392000/RecipientArchive.txt",
+      "log_sha256": "1640c929c9d749ce8ddbda0ede23d6253d5320d4521c8890ea3312675ac4d47f"
+    },
+    {
+      "module": "ReasonReplay",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean",
+      "sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "ReasonReplay.supported_closed": [],
+        "ReasonReplay.rooted_iff_supported": [],
+        "ReasonReplay.closure_exact": [
+          "propext"
+        ],
+        "ReasonReplay.rooted_semantic_sound": [],
+        "ReasonReplay.closure_semantic_sound": [
+          "propext"
+        ],
+        "ReasonReplay.current_decode_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.missing_is_not_negative": [
+          "propext"
+        ],
+        "ReasonReplay.recorded_word_supplies_assay": [
+          "propext"
+        ],
+        "ReasonReplay.runnable_trace": [
+          "propext"
+        ],
+        "ReasonReplay.trace_run": [
+          "propext"
+        ],
+        "ReasonReplay.record_step_projects": [
+          "propext"
+        ],
+        "ReasonReplay.step_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.step_valid": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.trace_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.trace_valid": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.assayed_append": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.handoff_authentic": [
+          "propext"
+        ],
+        "ReasonReplay.step_authentic": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.trace_authentic": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.audit_run_accounts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.audit_run_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.paid_audit_installs_exact_closure": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.paid_audit_rooted_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.negative_decode_identifies_false_assay": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.access_cut_retains_records_and_published_reason": [
+          "propext"
+        ],
+        "ReasonReplay.delivery_cut_is_not_refutation": [
+          "propext"
+        ],
+        "ReasonReplay.context_change_preserves_history_not_current_audit": [
+          "propext"
+        ],
+        "ReasonReplay.successor_turnover_preserves_physical_grounds": [
+          "propext"
+        ],
+        "ReasonReplay.calibrated_edges_preserve_reasons": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.paid_recorded_reason_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.current_publication_blocks_recording": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.reset_withdraws_current_publication": [
+          "propext"
+        ],
+        "ReasonReplay.audit_is_funded_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.formation_trace_embeds": [
+          "propext"
+        ],
+        "ReasonReplay.reason_trace_embeds": [
+          "propext"
+        ],
+        "ReasonReplay.compose_actual_state": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.actual_part_preparation": [
+          "propext"
+        ],
+        "ReasonReplay.actual_apparatus": [
+          "propext"
+        ],
+        "ReasonReplay.actual_first_records": [
+          "propext"
+        ],
+        "ReasonReplay.actual_first_audit": [
+          "propext"
+        ],
+        "ReasonReplay.actual_second_records": [
+          "propext"
+        ],
+        "ReasonReplay.actual_revised_audit": [
+          "propext"
+        ],
+        "ReasonReplay.actual_successor_replay": [
+          "propext"
+        ],
+        "ReasonReplay.full_history": [
+          "propext"
+        ],
+        "ReasonReplay.actual_construction_record_revision_successor": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.whole_history_resource_account": [
+          "propext"
+        ],
+        "ReasonReplay.rooted_revision_keeps_alternative_ground": [
+          "propext"
+        ],
+        "ReasonReplay.actual_history_authentic": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.stale_and_missing_are_not_new_negative": [
+          "propext"
+        ],
+        "ReasonReplay.unsupported_cycle_does_not_self_anchor": [
+          "propext"
+        ],
+        "ReasonReplay.old_full_recorder_cannot_supply_reader": [
+          "propext"
+        ],
+        "ReasonReplay.one_more_replay_then_liquidity_failure": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.calibrated_negative_refutes_only_edge_fact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.paid_audit_exact_available_reachability": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.completed_audit_has_current_status": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplay.access_cut_blocks_acquisition": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/ReasonReplay.txt",
+      "log_sha256": "fe2c9bf56e689d3bf36fd55ad15fb1fc514af50b8fe524573cbfe83a3143da02"
+    },
+    {
+      "module": "ReasonPreparation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean",
+      "sha256": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "ReasonPreparation.runnable_trace": [
+          "propext"
+        ],
+        "ReasonPreparation.actual_formation_feasible": [
+          "propext"
+        ],
+        "ReasonPreparation.actual_formation_trace": [
+          "propext"
+        ],
+        "ReasonPreparation.actual_formation_endpoint": [
+          "propext"
+        ],
+        "ReasonPreparation.actual_assemblies_feasible": [],
+        "ReasonPreparation.actual_material_partition": [
+          "propext"
+        ],
+        "ReasonPreparation.original_energy_partition": [],
+        "ReasonPreparation.boundary_preparations_feasible": [
+          "propext"
+        ],
+        "ReasonPreparation.exact_paid_capacity_boundaries": [],
+        "ReasonPreparation.primary_whole_ledger_arithmetic": []
+      },
+      "log": "purpose-checks/1791279464272392000/ReasonPreparation.txt",
+      "log_sha256": "ff611c939035289d49fca2e8acccce7327ecdff43d11e7b3a1871c52ddd9dcf8"
+    },
+    {
+      "module": "PurposeCorrection",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean",
+      "sha256": "a420b666b6accf26670dd2337d357a23fb960420e7c9003a45b37944876f1873",
+      "new": true,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.PurposeCorrection.guarded_trace_underlying": [],
+        "Generative.PurposeCorrection.guarded_trace_terminal": [],
+        "Generative.PurposeCorrection.contract_trace_underlying": [],
+        "Generative.PurposeCorrection.terminal_is_viable": [],
+        "Generative.PurposeCorrection.viable_after_guarded_prefix": [],
+        "Generative.PurposeCorrection.contract_append_iff": [],
+        "Generative.PurposeCorrection.viable_has_condition": [],
+        "Generative.PurposeCorrection.productive_trace_guarded": [],
+        "Generative.PurposeCorrection.productive_trace_terminal_viable": [],
+        "Generative.PurposeCorrection.guarded_trace_to_viable_is_productive": [],
+        "Generative.PurposeCorrection.productive_trace_exact": [],
+        "Generative.PurposeCorrection.productive_contract_exact": [],
+        "Generative.PurposeCorrection.productive_restriction_largest": [],
+        "Generative.PurposeCorrection.contract_extension": [],
+        "Generative.PurposeCorrection.viable_extension": [],
+        "Generative.PurposeCorrection.no_restriction_creates_completion": [],
+        "Generative.PurposeCorrection.productive_capacity_extension": [],
+        "Generative.PurposeCorrection.guarded_occurrence_conditions": [
+          "propext"
+        ],
+        "Generative.PurposeCorrection.earlier_violation_survives_suffix": [
+          "propext"
+        ],
+        "Generative.PurposeCorrection.actual_violation_not_erased": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PurposeCorrection.txt",
+      "log_sha256": "f736b2a6fbda8991a8636a94c9adeca8ddbe9b3c7b1d50cedc0fe881921caa43"
+    },
+    {
+      "module": "PaidArchiveReader",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean",
+      "sha256": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PaidArchiveReader.step_preserves_world": [],
+        "PaidArchiveReader.step_preserves_archive": [],
+        "PaidArchiveReader.step_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.trace_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.initial_cache_agrees": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.step_cache_agrees": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.trace_cache_agrees": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.completed_paid_cache_sound": [
+          "propext"
+        ],
+        "PaidArchiveReader.context_change_invalidates": [
+          "propext"
+        ],
+        "PaidArchiveReader.paid_reader_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.paid_reader_complete": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.trace_preserves_facts": [],
+        "PaidArchiveReader.actual_archive_paid_certificate": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidArchiveReader.reachable_archive_paid_certificate": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PaidArchiveReader.txt",
+      "log_sha256": "af49a435380cb5e5dc73c580f330d72c6d68a0b5e9eb1da2d06a84e2f6e91b38"
+    },
+    {
+      "module": "ActionPreparation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "sha256": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "ActionPreparation.runnable_trace": [
+          "propext"
+        ],
+        "ActionPreparation.actual_formation_feasible": [
+          "propext"
+        ],
+        "ActionPreparation.actual_formation_trace": [
+          "propext"
+        ],
+        "ActionPreparation.actual_formation_endpoint": [
+          "propext"
+        ],
+        "ActionPreparation.actual_assemblies_feasible": [],
+        "ActionPreparation.actual_material_partition": [
+          "propext"
+        ],
+        "ActionPreparation.exact_parent_prepared_projection": [
+          "propext"
+        ],
+        "ActionPreparation.original_accounts_partition": [],
+        "ActionPreparation.action_control_preparations_feasible": [
+          "propext"
+        ],
+        "ActionPreparation.exact_control_reserves": [],
+        "ActionPreparation.old_material_has_no_free_command_pair": [],
+        "ActionPreparation.omitted_assembly_retains_parts_and_payment": [
+          "propext"
+        ],
+        "ActionPreparation.whole_history_accounts": []
+      },
+      "log": "purpose-checks/1791279464272392000/ActionPreparation.txt",
+      "log_sha256": "f9e5365152d4f4b084e586fd7331d1acfeb016c5c112728cbc3a67e7eb3141ab"
+    },
+    {
+      "module": "RecipientReasons",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean",
+      "sha256": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RecipientReasons.compatible_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.normalization_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.finite_normalization_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.finite_known_agree": [],
+        "RecipientReasons.finite_no_conflict": [],
+        "RecipientReasons.first_known_sound": [
+          "propext"
+        ],
+        "RecipientReasons.finite_informative_identifies": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.finite_identifies_compatible": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.normalization_preserves_unknown": [],
+        "RecipientReasons.negative_fact_is_informative": [],
+        "RecipientReasons.option_bool_cases": [
+          "propext"
+        ],
+        "RecipientReasons.sound_no_conflict": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.sound_orientation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.sound_informative": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.unknown_is_not_conflict": [],
+        "RecipientReasons.conflict_is_distinct": [],
+        "RecipientReasons.closure_of_orientation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.informative_exact_route": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.actual_relevance": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.closure_instrumental_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientReasons.current_cache_normalizes_sound": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/RecipientReasons.txt",
+      "log_sha256": "a99f3f0ea43729d33e36e1dda2db2ad159a608087ab5fc2c996d3e93fb9077a6"
+    },
+    {
+      "module": "RevisionPreparation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "sha256": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RevisionPreparation.runnable_trace": [
+          "propext"
+        ],
+        "RevisionPreparation.prospective_formation_feasible": [
+          "propext"
+        ],
+        "RevisionPreparation.prospective_formation_trace": [
+          "propext"
+        ],
+        "RevisionPreparation.formation_endpoint": [
+          "propext"
+        ],
+        "RevisionPreparation.assemblies_feasible": [],
+        "RevisionPreparation.material_partition": [
+          "propext"
+        ],
+        "RevisionPreparation.exact_parent_prepared_projection": [
+          "propext"
+        ],
+        "RevisionPreparation.original_accounts": [],
+        "RevisionPreparation.inherited_full_bank_has_no_spare_cells": [],
+        "RevisionPreparation.prospective_whole_accounts": []
+      },
+      "log": "purpose-checks/1791279464272392000/RevisionPreparation.txt",
+      "log_sha256": "87a177afebf2a645951fd883c44a816a5a2a2f024a957eff95807abb8c1529dc"
+    },
+    {
+      "module": "PaidRecipientReasons",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean",
+      "sha256": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PaidRecipientReasons.step_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.trace_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.step_preserves_world": [
+          "propext"
+        ],
+        "PaidRecipientReasons.step_preserves_archive": [
+          "propext"
+        ],
+        "PaidRecipientReasons.reopen_invalidates": [
+          "propext"
+        ],
+        "PaidRecipientReasons.same_context_reopen_invalidates": [
+          "propext"
+        ],
+        "PaidRecipientReasons.cold_retains_resources_and_hardware": [
+          "propext"
+        ],
+        "PaidRecipientReasons.no_workspace_no_activation": [
+          "propext"
+        ],
+        "PaidRecipientReasons.run_append": [
+          "propext"
+        ],
+        "PaidRecipientReasons.reason_run_normalized": [
+          "propext"
+        ],
+        "PaidRecipientReasons.reason_word_cost": [
+          "propext"
+        ],
+        "PaidRecipientReasons.factual_word_cost": [
+          "propext"
+        ],
+        "PaidRecipientReasons.cycle_cost": [
+          "propext"
+        ],
+        "PaidRecipientReasons.insufficient_ten_blocks_word": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.funded_reason_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.reason_run_complete": [
+          "propext"
+        ],
+        "PaidRecipientReasons.actual_cache_reason_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.step_cache_agrees": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.trace_cache_agrees": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.trace_preserves_facts": [
+          "propext"
+        ],
+        "PaidRecipientReasons.trace_run": [
+          "propext"
+        ],
+        "PaidRecipientReasons.reason_run_conflict": [
+          "propext"
+        ],
+        "PaidRecipientReasons.sound_cache_no_runtime_conflict": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PaidRecipientReasons.paid_cycle_count_necessary": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PaidRecipientReasons.txt",
+      "log_sha256": "03cbb9f4131bd05a1c002d6414e219ce6f5ca69efbab05bb7ccafd24fe4ece30"
+    },
+    {
+      "module": "PlasticityPreparation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean",
+      "sha256": "d981b4cbe24b781fd5ceb79e0778d91a9fcb32b98e303d08c5bd0565244a7867",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PlasticityPreparation.runnable_trace": [
+          "propext"
+        ],
+        "PlasticityPreparation.formation_feasible": [
+          "propext"
+        ],
+        "PlasticityPreparation.formation_trace": [
+          "propext"
+        ],
+        "PlasticityPreparation.formation_endpoint": [
+          "propext"
+        ],
+        "PlasticityPreparation.assembly_feasible": [],
+        "PlasticityPreparation.material_partition": [
+          "propext"
+        ],
+        "PlasticityPreparation.exact_parent_preparation": [
+          "propext"
+        ],
+        "PlasticityPreparation.protected_accounts": []
+      },
+      "log": "purpose-checks/1791279464272392000/PlasticityPreparation.txt",
+      "log_sha256": "b58048a7e6ff6455e96662b03ba4839ff003fd937ea28899e5597bf64c7392ad"
+    },
+    {
+      "module": "ReasonReplayBridge",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean",
+      "sha256": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "ReasonReplayBridge.factual_run_reader": [
+          "propext"
+        ],
+        "ReasonReplayBridge.factual_run_boundary": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.funded_factual_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.funded_cycle_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.cycle_run_boundary": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.fund_is_transfer": [
+          "propext"
+        ],
+        "ReasonReplayBridge.first_reason_boundary": [
+          "propext"
+        ],
+        "ReasonReplayBridge.funded_two_cycle_tail": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.final_has_no_added_fuel": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.one_short_cannot_complete": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.one_cycle_short_cannot_complete": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.actual_archive_to_paid_reasons": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.traced_reason_tail_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.cold_replay_reason_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReasonReplayBridge.actual_archive_to_cold_replayed_reasons": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/ReasonReplayBridge.txt",
+      "log_sha256": "2e31da03586db2db90d7ce5355199151c0054564728db2342da15786e4b7cd60"
+    },
+    {
+      "module": "RecipientAction",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean",
+      "sha256": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RecipientAction.core_set": [],
+        "RecipientAction.import_is_typed": [
+          "propext"
+        ],
+        "RecipientAction.import_qualification_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.read_does_not_observe_receipt": [
+          "propext"
+        ],
+        "RecipientAction.reason_interleaving_clears": [
+          "propext"
+        ],
+        "RecipientAction.scope_intervention_clears": [
+          "propext"
+        ],
+        "RecipientAction.control_cuts_retain_reasons": [
+          "propext"
+        ],
+        "RecipientAction.no_imported_authorization": [
+          "propext"
+        ],
+        "RecipientAction.scope_cut_blocks_work": [
+          "propext"
+        ],
+        "RecipientAction.settlement_after_cut": [
+          "propext"
+        ],
+        "RecipientAction.execute_projects": [
+          "propext"
+        ],
+        "RecipientAction.voluntary_projects": [
+          "propext"
+        ],
+        "RecipientAction.nonrecording_port_retains_archive": [
+          "propext"
+        ],
+        "RecipientAction.exhausted_recorder_cannot_project": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.step_material": [
+          "propext"
+        ],
+        "RecipientAction.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.trace_run": [
+          "propext"
+        ],
+        "RecipientAction.trace_execute_projects": [
+          "propext"
+        ],
+        "RecipientAction.semantic_import_then_receipt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.route_is_member": [
+          "propext"
+        ],
+        "RecipientAction.supported_is_current": [
+          "propext"
+        ],
+        "RecipientAction.command_meaning": [],
+        "RecipientAction.imported_core_exact": [
+          "propext"
+        ],
+        "RecipientAction.paid_import_and_execution": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.actual_archive_replay_import_execution": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.partial_packet_preserved": [
+          "propext"
+        ],
+        "RecipientAction.original_recipient_balance_cannot_fund_import": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.step_archive_bytes": [
+          "propext"
+        ],
+        "RecipientAction.trace_archive_bytes": [
+          "propext"
+        ],
+        "RecipientAction.exact_core_trial_budget": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.prescribed_import_then_rent_requires_ten": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RecipientAction.trace_material": [
+          "propext"
+        ],
+        "RecipientAction.recipient_port_cannot_sense_actor": [
+          "propext"
+        ],
+        "RecipientAction.executed_work_targets_recipient": [
+          "propext"
+        ],
+        "RecipientAction.executed_recipient_work_has_no_actor_credit": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/RecipientAction.txt",
+      "log_sha256": "97f2fe0748cb1fbd9e398a252faddadcc4cb29016250dc7d417eea8eaeb44aa0"
+    },
+    {
+      "module": "PublicationSafety",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean",
+      "sha256": "27f5be6e07bbaad59101ff24c41e0513f573949b7acd80c94bd8b8b2f760c2fd",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PublicationSafety.empty_normalized_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.empty_mask_safe": [
+          "propext"
+        ],
+        "PublicationSafety.put_sound": [
+          "propext"
+        ],
+        "PublicationSafety.inferred_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.path_safe": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.step_normalized_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.step_working_safe": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.step_conflict_agrees": [
+          "propext"
+        ],
+        "PublicationSafety.step_active_complete": [
+          "propext"
+        ],
+        "PublicationSafety.step_phase_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.step_exact_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.step_current_valid": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.step_selected_current": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.initial_invariant": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.step_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.trace_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.route_meaning": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.invariant_publication_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationSafety.invariant_publication_exact": [
+          "propext"
+        ],
+        "PublicationSafety.invariant_no_conflict": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PublicationSafety.txt",
+      "log_sha256": "fc8db73bcab91f84285844001caa6244c28a9a74f24e42eb1cf9379285797af5"
+    },
+    {
+      "module": "ActionWitness",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean",
+      "sha256": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "ActionWitness.core_check_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.valid_check_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.write_check_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.archive_runnable_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.genuine_archive_runnable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.genuine_archive_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.archive_endpoint": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.actual_parent_two_cycle_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.settlement_check_iff": [
+          "propext"
+        ],
+        "ActionWitness.runnable_trace": [
+          "propext"
+        ],
+        "ActionWitness.actual_entry_accounts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.actual_action_runnable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.actual_action_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.actual_recipient_effect": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.actual_later_replay_runnable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.actual_later_replay_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.actual_final_accounts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.later_replay_has_no_new_archive": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.binding_is_paid_and_qualified": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.short_import_retains_charge_then_misses": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.partial_packet_does_not_start_opportunity": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.same_label_reopening_rejects_old_import_and_use": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.compatible_command_without_available_source_receipt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.forged_current_flag_can_import_wrong_command": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.unaudited_voluntary_alternative": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.voluntary_start_does_not_require_command_port": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.before_work_cut_keeps_sunk_bill_and_packet": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.after_work_cut_settles_without_undoing_receipt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.later_changed_context_pays_and_loses_available_ground": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ActionWitness.genuine_reason_and_actual_recipient_credit": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/ActionWitness.txt",
+      "log_sha256": "92c87094a3f3f6b0ad12a49a4368e14884541ff1d384afa346b6bede40ee92d6"
+    },
+    {
+      "module": "PublicationBudget",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean",
+      "sha256": "a947733ac7394a00d90c8be94410aaf27324f7d9b418d8be07aae5dad9f21f97",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PublicationBudget.complete_reader_credit": [
+          "propext"
+        ],
+        "PublicationBudget.reader_step_credit": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBudget.complete_no_sense": [],
+        "PublicationBudget.complete_no_read": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBudget.step_credit": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBudget.trace_credit": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBudget.initialized_count_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBudget.unread_count_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBudget.completed_handoff_count_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBudget.inherited_fuel_count_bound": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PublicationBudget.txt",
+      "log_sha256": "2fc12da2e352053c40f4ce9f1841c55f362f6c3851bfcd8d9caf36ec97c8ea56"
+    },
+    {
+      "module": "PublicationBridge",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean",
+      "sha256": "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PublicationBridge.invariant_assured": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBridge.initialized_trace_assured": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBridge.actual_archive_initial_facts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBridge.actual_archive_every_unread_trace": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBridge.actual_archive_every_handoff_trace": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBridge.forged_has_sound_inputs": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PublicationBridge.forged_free_false_publication": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PublicationBridge.txt",
+      "log_sha256": "979af7cc3e706335e26a577f9e124e0cefec6a4b1453ce79824384546b65bb2d"
+    },
+    {
+      "module": "FreshRevision",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean",
+      "sha256": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "FreshRevision.core_is_unique": [],
+        "FreshRevision.view_set": [
+          "propext"
+        ],
+        "FreshRevision.set_preserves_old_backing": [],
+        "FreshRevision.opening_preserves_commands_and_history": [
+          "propext"
+        ],
+        "FreshRevision.opening_is_not_repair": [],
+        "FreshRevision.funding_conserves": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.opening_paid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_context": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_step_projects": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_trace_projects": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_step_pointer": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_trace_pointer": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.prepare_conserves": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.retained_workspace_initialization": [
+          "propext"
+        ],
+        "FreshRevision.reader_has_actual_fresh_facts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.actual_fresh_archive_every_consumer": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.action_step_projects": [
+          "propext"
+        ],
+        "FreshRevision.action_trace_projects": [
+          "propext"
+        ],
+        "FreshRevision.energy_decomposition": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_step_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_trace_keeps_old_backing": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.action_step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.action_step_material": [
+          "propext"
+        ],
+        "FreshRevision.fresh_reason_import_and_actual_use": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.bank_trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.storage_not_refunded_or_reopened": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.admitted_opening_paid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FreshRevision.no_opening_when_inherited_phase_stalled": [
+          "propext"
+        ],
+        "FreshRevision.bank_locked_after_reader_selection": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/FreshRevision.txt",
+      "log_sha256": "f92de3979ebf9e8aa83b4189649664ee0500923b520ce2434fe54e6f226f2231"
+    },
+    {
+      "module": "RevisionWitness",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean",
+      "sha256": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "RevisionWitness.valid_check_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.write_check_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.runnable_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.action_runnable_trace": [
+          "propext"
+        ],
+        "RevisionWitness.actual_original_boundary": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.funded_reset_enabled": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_reset_boundary": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_queries_runnable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_queries_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_new_acquisition": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.old_backing_unchanged": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_consumer_runnable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_consumer_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_reason_revision": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_use_runnable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_use_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_same_recipient_effect": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.paid_consumer_same_hardware": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_warranted_revision": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.genuine_revision_and_effect": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.exact_new_service_and_loss_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.old_qualification_does_not_revise_under_zeros": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.hidden_late_change_is_not_detected_by_epoch": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.new_zero_does_not_refute_or_support": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.bounded_window_no_third_query": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.old_archive_cannot_supply_current_facts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RevisionWitness.actual_composed_history": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/RevisionWitness.txt",
+      "log_sha256": "080265bda567ab61b275f7d8969d04de9c39c4ac98a050b86512bc321a647f37"
+    },
+    {
+      "module": "PairedPlasticity",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
+      "sha256": "6ce4f08cb9f2b497a409482bbfc2281fd6d83a5efad14d2cabb7fbc2d3792b83",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PairedPlasticity.Sources.set_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.runnable_trace": [
+          "propext"
+        ],
+        "PairedPlasticity.update_bounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.transmission_bounded": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.conventional_equality": [
+          "propext"
+        ],
+        "PairedPlasticity.balances_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.old_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.fuel_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.step_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.trace_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.step_capacity": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.trace_capacity": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PairedPlasticity.binding_uses_acquired_pair": [
+          "propext"
+        ],
+        "PairedPlasticity.no_second_binding": [
+          "propext"
+        ],
+        "PairedPlasticity.missing_is_not_acquired": [
+          "propext"
+        ],
+        "PairedPlasticity.no_recipient_actor_source_credit": [
+          "propext"
+        ],
+        "PairedPlasticity.trial_projects": [
+          "propext"
+        ],
+        "PairedPlasticity.no_new_rent_after_consumption": [
+          "propext"
+        ],
+        "PairedPlasticity.settlement_survives_scope_cut": [
+          "propext"
+        ],
+        "PairedPlasticity.scope_cut_invalidates_only_application": [
+          "propext"
+        ],
+        "PairedPlasticity.acquired_pair_from_actual_returns": [
+          "propext"
+        ],
+        "PairedPlasticity.local_acquisition_preserves_inherited_information": [
+          "propext"
+        ],
+        "PairedPlasticity.step_keeps_consumed_closed_port": [
+          "propext"
+        ],
+        "PairedPlasticity.consumed_closed_trace_cannot_restart": [
+          "propext"
+        ],
+        "PairedPlasticity.control_roundtrip_consumes": [
+          "propext"
+        ],
+        "PairedPlasticity.control_roundtrip_cannot_restore_assessment": [
+          "propext"
+        ],
+        "PairedPlasticity.funded_write_settlement": [
+          "propext"
+        ],
+        "PairedPlasticity.control_invalidation_preserves_funded_settlement": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PairedPlasticity.txt",
+      "log_sha256": "7df4514a6af7e9cf55baaf0c30aaee08a30cc38e521f06caae11f94e1e47632e"
+    },
+    {
+      "module": "PlasticityWitness",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
+      "sha256": "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PlasticityWitness.actual_inherited_entry": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.empty_conductance": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.aligned_paid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.aligned_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.primary_counts_and_links": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.matched_other_pairings": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.matched_controls_paid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.assessment_contrast": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.selected_use_paid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.selected_use_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.selected_same_recipient": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.actual_replacement_histories": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.matched_revision_accounts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.revision_changes_assessment_not_native_data": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.missing_acquisition_blocks_without_zero_write": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.source_guard_keeps_full_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.missing_blank_preserves_pending_pair": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.funding_shortage_is_real_packet_loss": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.scope_loss_pays_read_but_not_assessment": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.whole_suffix_paid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.whole_suffix_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PlasticityWitness.staged_actual_connection": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PlasticityWitness.txt",
+      "log_sha256": "4d6ca14588278d8374f6b8b2c12a3583cdbd520d9196957668aed72b815ae6f2"
+    },
+    {
+      "module": "PretrainingEvidence",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean",
+      "sha256": "ecdd47fbd72a3ca56ba3a2c1700b2eb3b9580d819e6776e3bc5681a8fce234e6",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PretrainingEvidence.pair_patient": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.pair_count": [
+          "propext"
+        ],
+        "PretrainingEvidence.pair_latches_cleared": [
+          "propext"
+        ],
+        "PretrainingEvidence.bind_sockets": [
+          "propext"
+        ],
+        "PretrainingEvidence.pair_sockets": [
+          "propext"
+        ],
+        "PretrainingEvidence.pair_preserves_depletion_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.prefix_is_actual": [
+          "propext"
+        ],
+        "PretrainingEvidence.prefix_depletion_account": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.actual_entry_depletion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.same_retained_sockets_same_depletion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.retained_readout_exact": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.actual_count_four_prefix": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.count_four_retains_exact_loss": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.replacement_pair_retains_depletion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.actual_continued_retains_loss": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PretrainingEvidence.actual_service_cut_still_admits_teaching": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PretrainingEvidence.txt",
+      "log_sha256": "aa7be279606f9cabd02fa839c37dbd3afe39b7e9e50837cb395fb0f5b47ce2e7"
+    },
+    {
+      "module": "InquiryRevision",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean",
+      "sha256": "5e763090a1a6f8f1a77b743d841f2eeb3a53313f681880dfe0d9f8f5e283dcc8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "InquiryRevision.runnable_trace": [
+          "propext"
+        ],
+        "InquiryRevision.release_energy": [],
+        "InquiryRevision.release_material": [
+          "propext"
+        ],
+        "InquiryRevision.step_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.step_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.trace_energy": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.trace_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.faithful_read_uses_actual_sockets": [
+          "propext"
+        ],
+        "InquiryRevision.commit_changes_only_access_and_spent_fuel": [
+          "propext"
+        ],
+        "InquiryRevision.commit_replaces_enabled_inquiry_with_closure": [
+          "propext"
+        ],
+        "InquiryRevision.inherited_event_invalidates_observation": [
+          "propext"
+        ],
+        "InquiryRevision.missing_or_stale_cannot_commit": [
+          "propext"
+        ],
+        "InquiryRevision.actual_same_continuing_prefix": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.actual_adapter_and_read": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.actual_change_in_access": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.whole_actual_runnable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.whole_actual_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.final_actual_accounts": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.no_further_teaching_in_suffix": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.blocked_evidence_controls": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.sham_keeps_old_obstruction": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.actual_staleness_and_reacquisition": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.real_zero_and_false_positive": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.component_authority_and_funding_controls": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.sharp_funded_response_boundary": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.signs_still_control_response": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.staged_actual_connection": [
+          "Quot.sound",
+          "propext"
+        ],
+        "InquiryRevision.commit_requires_supported_current_scope_permission": [
+          "propext"
+        ],
+        "InquiryRevision.inherited_run_from_absent": [
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/InquiryRevision.txt",
+      "log_sha256": "b3ebaa5f32f46978f1cfd2ebc1cf1c6f341129584c506eb36b23ddbee8aa82fc"
+    },
+    {
+      "module": "PurposeCorrectionHistory",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrectionHistory.lean",
+      "sha256": "5007fa6cc679c74c278371192f02f4a790758b36b9c6ce185a474bc85b9986f7",
+      "new": true,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "PurposeCorrectionHistory.reason_core": [
+          "propext"
+        ],
+        "PurposeCorrectionHistory.beforeDebit_step": [
+          "propext"
+        ],
+        "PurposeCorrectionHistory.first_debit": [
+          "propext"
+        ],
+        "PurposeCorrectionHistory.every_response_has_debit_prefix": [
+          "propext"
+        ],
+        "PurposeCorrectionHistory.boundary_before_debit": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.every_actual_old_response_hits_34": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.old_target_is_completed": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.old_actual_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.same_boundary_and_response": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.guarded_old_trace_stays_before_debit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.old_response_not_viable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.old_restriction_cannot_repair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.floorRunnable_start": [
+          "propext"
+        ],
+        "PurposeCorrectionHistory.floorRunnable_trace": [
+          "propext"
+        ],
+        "PurposeCorrectionHistory.new_actual_floor_run": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.new_actual_floor_trace": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.new_response_viable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.actual_access_correction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PurposeCorrectionHistory.inquiry_run_append": [
+          "propext"
+        ],
+        "PurposeCorrectionHistory.new_run_final": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log": "purpose-checks/1791279464272392000/PurposeCorrectionHistory.txt",
+      "log_sha256": "bd6d186844bed695350994f1455d2cd94f106aefbce5a31eea570ab31b1488dc"
+    }
+  ],
+  "new_audits": 40,
+  "scope": "Supplied continuation contracts, actual generative histories and correction of an arrangement. No identification of a stock with experience, learned origin of the contract, universal ethical necessity or assumption-free foundation."
+}

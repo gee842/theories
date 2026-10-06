@@ -1,0 +1,1871 @@
+{
+  "scope": "Independent exact identification analysis; no installed decoder/controller change, utility claim or empirical validation",
+  "input_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/check.py": "fbec6d6cd2119e62e8081f290cd41e09683f1d0ca967aeabbd14d9aa324abf8d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/PROTOCOL.md": "ab8aad275955833ea958106362a48b8f1c5a85c6de6d758db491fda3b7276b8b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/formal-fixtures.tsv.gz": "1c4843ecf7089b1d742774b481594426f33c5a2b7acf670c3fe43ed901a22aaf",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/prefix-traces.json": "01ccd3e595f93a224e44d28d28c4296a552e2c25399cd26053e9ea425b323cef",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-calls.jsonl.gz": "49be507f62502383a3592e5d5e61ce720a220e3edecb17ae7d1616a00b2d67d3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-results.json": "334022661fa21beea46c841df5dc3c07e16da5d59762db8f6d752f8074d63da0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/runtime-verification.json": "9e5987d15aaae2cc1e618b171ecb40ad5cdda3e1a7b5a8dc55452c88785da348",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/check_runtime.py": "4b2c3033c8f5bc569e32c54810be5e94ed16dcf8a1d151623f6fbd434127832f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/results.json": "052c5e2d175a9e2c52c169f2a44c6bae24e5e1313970ac69aef958cf69f0da5d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/check_model.py": "1c690aea4b47119185189dcf5906845bfdd627127e435f75aacb6e86e4963f12",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/model-verification.json": "baacec628cbb5c6df28be7c8afa6fc77f78dfd95bafe80008c1b300aacb68f95",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/check_receipt_identification.py": "6ba54c282d8be20fbc3904dc015bd24343a71f20edbcd8b1915ba75ca6ebb7fe",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/ConstructedUpdater.lean": "c59f5c934ed1884ffddfa36d982b89e6f934386d462a56927478004018e02023",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/ConstructedPrediction.lean": "b3dca9bd1fa58b1c45450c3c77d66ad2bdbbe153c1797fbc4fca534d6878d51f"
+  },
+  "old_source_and_receipt_hashes_match": true,
+  "truth_cases": [
+    {
+      "action": false,
+      "regime": false,
+      "available": false,
+      "receipt": false,
+      "candidates": [
+        false,
+        true
+      ],
+      "old_decode": true,
+      "partial_decode": null,
+      "old_correct": false
+    },
+    {
+      "action": false,
+      "regime": false,
+      "available": true,
+      "receipt": true,
+      "candidates": [
+        false
+      ],
+      "old_decode": false,
+      "partial_decode": false,
+      "old_correct": true
+    },
+    {
+      "action": false,
+      "regime": true,
+      "available": false,
+      "receipt": false,
+      "candidates": [
+        false,
+        true
+      ],
+      "old_decode": true,
+      "partial_decode": null,
+      "old_correct": true
+    },
+    {
+      "action": false,
+      "regime": true,
+      "available": true,
+      "receipt": false,
+      "candidates": [
+        false,
+        true
+      ],
+      "old_decode": true,
+      "partial_decode": null,
+      "old_correct": true
+    },
+    {
+      "action": true,
+      "regime": false,
+      "available": false,
+      "receipt": false,
+      "candidates": [
+        false,
+        true
+      ],
+      "old_decode": false,
+      "partial_decode": null,
+      "old_correct": true
+    },
+    {
+      "action": true,
+      "regime": false,
+      "available": true,
+      "receipt": false,
+      "candidates": [
+        false,
+        true
+      ],
+      "old_decode": false,
+      "partial_decode": null,
+      "old_correct": true
+    },
+    {
+      "action": true,
+      "regime": true,
+      "available": false,
+      "receipt": false,
+      "candidates": [
+        false,
+        true
+      ],
+      "old_decode": false,
+      "partial_decode": null,
+      "old_correct": false
+    },
+    {
+      "action": true,
+      "regime": true,
+      "available": true,
+      "receipt": true,
+      "candidates": [
+        true
+      ],
+      "old_decode": true,
+      "partial_decode": true,
+      "old_correct": true
+    }
+  ],
+  "finite_records_stable_regime": [
+    {
+      "length": 0,
+      "ambiguous": 1,
+      "records": 1,
+      "all_failure": 1
+    },
+    {
+      "length": 1,
+      "ambiguous": 2,
+      "records": 4,
+      "all_failure": 2,
+      "identified": 2
+    },
+    {
+      "length": 2,
+      "ambiguous": 4,
+      "records": 16,
+      "all_failure": 4,
+      "identified": 10,
+      "inconsistent": 2
+    },
+    {
+      "length": 3,
+      "ambiguous": 8,
+      "records": 64,
+      "all_failure": 8,
+      "identified": 38,
+      "inconsistent": 18
+    },
+    {
+      "length": 4,
+      "ambiguous": 16,
+      "records": 256,
+      "all_failure": 16,
+      "identified": 130,
+      "inconsistent": 110
+    },
+    {
+      "length": 5,
+      "ambiguous": 32,
+      "records": 1024,
+      "all_failure": 32,
+      "identified": 422,
+      "inconsistent": 570
+    },
+    {
+      "length": 6,
+      "ambiguous": 64,
+      "records": 4096,
+      "all_failure": 64,
+      "identified": 1330,
+      "inconsistent": 2702
+    },
+    {
+      "length": 7,
+      "ambiguous": 128,
+      "records": 16384,
+      "all_failure": 128,
+      "identified": 4118,
+      "inconsistent": 12138
+    },
+    {
+      "length": 8,
+      "ambiguous": 256,
+      "records": 65536,
+      "all_failure": 256,
+      "identified": 12610,
+      "inconsistent": 52670
+    }
+  ],
+  "adaptive_all_failure": {
+    "depth": 3,
+    "complete_deterministic_policies": 128,
+    "ambiguity_for_both_regimes": 128,
+    "examples": [
+      {
+        "policy_bits": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "common_record": [
+          [
+            false,
+            false
+          ],
+          [
+            false,
+            false
+          ],
+          [
+            false,
+            false
+          ]
+        ],
+        "candidates": [
+          false,
+          true
+        ]
+      },
+      {
+        "policy_bits": [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "common_record": [
+          [
+            false,
+            false
+          ],
+          [
+            true,
+            false
+          ],
+          [
+            true,
+            false
+          ]
+        ],
+        "candidates": [
+          false,
+          true
+        ]
+      },
+      {
+        "policy_bits": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "common_record": [
+          [
+            true,
+            false
+          ],
+          [
+            true,
+            false
+          ],
+          [
+            true,
+            false
+          ]
+        ],
+        "candidates": [
+          false,
+          true
+        ]
+      }
+    ],
+    "scope": "Supported all-outage paths; neither a likelihood claim nor an arbitrary-depth implementation theorem"
+  },
+  "saved_outage_reanalysis": {
+    "counts": {
+      "unique_saved_calls": 830,
+      "positive_tape_records_replayed": 6640,
+      "trial_tape_records": 3744,
+      "ambiguous_failure_records": 2532,
+      "paid_write_records": 3664,
+      "ambiguous_paid_writes": 2452,
+      "ambiguous_paid_writes_changing_score": 2452,
+      "wrong_old_decodes": 1212,
+      "wrong_labels_paid_for": 1180,
+      "wrong_paid_labels_changing_score": 1180,
+      "sound_positive_inferences": 1212,
+      "wrong_decode_without_write": 32
+    },
+    "examples": {
+      "ambiguous_paid_write": {
+        "tag": "inherited/outages/variable/0",
+        "entrance": {
+          "corrected": false,
+          "fuel": 20,
+          "gate": -1,
+          "gate_life": 0,
+          "last": 0,
+          "life": 0,
+          "prelearn": false,
+          "q": 2,
+          "stage": 0,
+          "stale": -1,
+          "witness": false,
+          "written": false
+        },
+        "regime": false,
+        "tape": [
+          0,
+          0,
+          0
+        ],
+        "per_call_tape_weight": "1/16",
+        "candidates": [
+          false,
+          true
+        ],
+        "partial_decode": null,
+        "replay": {
+          "state": {
+            "corrected": false,
+            "fuel": 9,
+            "gate": 0,
+            "gate_life": 1,
+            "last": 0,
+            "life": 5,
+            "prelearn": false,
+            "q": 3,
+            "stage": 2,
+            "stale": -1,
+            "witness": false,
+            "written": true
+          },
+          "moments": {
+            "gate_forms": 1,
+            "base_forms": 1,
+            "retrofits": 1,
+            "rents": 1,
+            "trials": 1,
+            "captures": 0,
+            "writes": 1,
+            "updater_changes": 0,
+            "post_captures": 0,
+            "brier16": 4,
+            "decoder_errors": 1,
+            "spent": 11,
+            "waste": 10,
+            "unpaid_writes": 0,
+            "slow_writes": 1,
+            "fast_writes": 0,
+            "acquired_uses": 0
+          },
+          "status": 4,
+          "trace": [
+            {
+              "event": "entry",
+              "state": {
+                "corrected": false,
+                "fuel": 20,
+                "gate": -1,
+                "gate_life": 0,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 0,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 18,
+                "gate": -1,
+                "gate_life": 0,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_formed",
+              "state": {
+                "corrected": false,
+                "fuel": 18,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "base_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 3,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "base_formed",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 1,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 3,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "retrofit_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 14,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 1,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 6,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "retrofitted",
+              "state": {
+                "corrected": false,
+                "fuel": 14,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 6,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "rent_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 13,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 7,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "work_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 10,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 10,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "receipt",
+              "state": {
+                "corrected": false,
+                "fuel": 10,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 0,
+              "spent": 10,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false,
+                "decoded": 1,
+                "forecast_numerator": 2
+              }
+            },
+            {
+              "event": "write_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {}
+            },
+            {
+              "event": "record_written",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 3,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false
+              }
+            },
+            {
+              "event": "renewed_or_worn",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 1,
+                "last": 0,
+                "life": 5,
+                "prelearn": false,
+                "q": 3,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false
+              }
+            },
+            {
+              "event": "boundary",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 1,
+                "last": 0,
+                "life": 5,
+                "prelearn": false,
+                "q": 3,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {
+                "status": 4
+              }
+            }
+          ]
+        }
+      },
+      "wrong_paid_label": {
+        "tag": "inherited/outages/variable/0",
+        "entrance": {
+          "corrected": false,
+          "fuel": 20,
+          "gate": -1,
+          "gate_life": 0,
+          "last": 0,
+          "life": 0,
+          "prelearn": false,
+          "q": 2,
+          "stage": 0,
+          "stale": -1,
+          "witness": false,
+          "written": false
+        },
+        "regime": false,
+        "tape": [
+          0,
+          0,
+          0
+        ],
+        "per_call_tape_weight": "1/16",
+        "candidates": [
+          false,
+          true
+        ],
+        "partial_decode": null,
+        "replay": {
+          "state": {
+            "corrected": false,
+            "fuel": 9,
+            "gate": 0,
+            "gate_life": 1,
+            "last": 0,
+            "life": 5,
+            "prelearn": false,
+            "q": 3,
+            "stage": 2,
+            "stale": -1,
+            "witness": false,
+            "written": true
+          },
+          "moments": {
+            "gate_forms": 1,
+            "base_forms": 1,
+            "retrofits": 1,
+            "rents": 1,
+            "trials": 1,
+            "captures": 0,
+            "writes": 1,
+            "updater_changes": 0,
+            "post_captures": 0,
+            "brier16": 4,
+            "decoder_errors": 1,
+            "spent": 11,
+            "waste": 10,
+            "unpaid_writes": 0,
+            "slow_writes": 1,
+            "fast_writes": 0,
+            "acquired_uses": 0
+          },
+          "status": 4,
+          "trace": [
+            {
+              "event": "entry",
+              "state": {
+                "corrected": false,
+                "fuel": 20,
+                "gate": -1,
+                "gate_life": 0,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 0,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 18,
+                "gate": -1,
+                "gate_life": 0,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_formed",
+              "state": {
+                "corrected": false,
+                "fuel": 18,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "base_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 3,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "base_formed",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 1,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 3,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "retrofit_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 14,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 1,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 6,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "retrofitted",
+              "state": {
+                "corrected": false,
+                "fuel": 14,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 6,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "rent_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 13,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 7,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "work_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 10,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 10,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "receipt",
+              "state": {
+                "corrected": false,
+                "fuel": 10,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 0,
+              "spent": 10,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false,
+                "decoded": 1,
+                "forecast_numerator": 2
+              }
+            },
+            {
+              "event": "write_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {}
+            },
+            {
+              "event": "record_written",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 3,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false
+              }
+            },
+            {
+              "event": "renewed_or_worn",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 1,
+                "last": 0,
+                "life": 5,
+                "prelearn": false,
+                "q": 3,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false
+              }
+            },
+            {
+              "event": "boundary",
+              "state": {
+                "corrected": false,
+                "fuel": 9,
+                "gate": 0,
+                "gate_life": 1,
+                "last": 0,
+                "life": 5,
+                "prelearn": false,
+                "q": 3,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 11,
+              "waste": 10,
+              "transient": {
+                "status": 4
+              }
+            }
+          ]
+        }
+      },
+      "identified_success": {
+        "tag": "inherited/outages/variable/0",
+        "entrance": {
+          "corrected": false,
+          "fuel": 20,
+          "gate": -1,
+          "gate_life": 0,
+          "last": 0,
+          "life": 0,
+          "prelearn": false,
+          "q": 2,
+          "stage": 0,
+          "stale": -1,
+          "witness": false,
+          "written": false
+        },
+        "regime": false,
+        "tape": [
+          0,
+          0,
+          1
+        ],
+        "per_call_tape_weight": "3/16",
+        "candidates": [
+          false
+        ],
+        "partial_decode": false,
+        "replay": {
+          "state": {
+            "corrected": false,
+            "fuel": 17,
+            "gate": 0,
+            "gate_life": 2,
+            "last": 0,
+            "life": 6,
+            "prelearn": false,
+            "q": 1,
+            "stage": 2,
+            "stale": -1,
+            "witness": false,
+            "written": true
+          },
+          "moments": {
+            "gate_forms": 1,
+            "base_forms": 1,
+            "retrofits": 1,
+            "rents": 1,
+            "trials": 1,
+            "captures": 1,
+            "writes": 1,
+            "updater_changes": 0,
+            "post_captures": 0,
+            "brier16": 4,
+            "decoder_errors": 0,
+            "spent": 13,
+            "waste": 0,
+            "unpaid_writes": 0,
+            "slow_writes": 1,
+            "fast_writes": 0,
+            "acquired_uses": 0
+          },
+          "status": 4,
+          "trace": [
+            {
+              "event": "entry",
+              "state": {
+                "corrected": false,
+                "fuel": 20,
+                "gate": -1,
+                "gate_life": 0,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 0,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 18,
+                "gate": -1,
+                "gate_life": 0,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_formed",
+              "state": {
+                "corrected": false,
+                "fuel": 18,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "base_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 0,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 3,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "base_formed",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 1,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 3,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "retrofit_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 14,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 0,
+                "prelearn": false,
+                "q": 2,
+                "stage": 1,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 6,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "retrofitted",
+              "state": {
+                "corrected": false,
+                "fuel": 14,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 6,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "rent_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 13,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 7,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "work_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 10,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 10,
+              "spent": 10,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "receipt",
+              "state": {
+                "corrected": false,
+                "fuel": 18,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 0,
+              "spent": 12,
+              "waste": 0,
+              "transient": {
+                "action": 0,
+                "receipt": true,
+                "decoded": 0,
+                "forecast_numerator": 2
+              }
+            },
+            {
+              "event": "write_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 2,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": false
+              },
+              "inflight_packet": 0,
+              "spent": 13,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "record_written",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 1,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 13,
+              "waste": 0,
+              "transient": {
+                "action": 0,
+                "receipt": true
+              }
+            },
+            {
+              "event": "renewed_or_worn",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 1,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 13,
+              "waste": 0,
+              "transient": {
+                "action": 0,
+                "receipt": true
+              }
+            },
+            {
+              "event": "boundary",
+              "state": {
+                "corrected": false,
+                "fuel": 17,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 6,
+                "prelearn": false,
+                "q": 1,
+                "stage": 2,
+                "stale": -1,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 13,
+              "waste": 0,
+              "transient": {
+                "status": 4
+              }
+            }
+          ]
+        }
+      },
+      "unpaid_write": {
+        "tag": "inherited/outages/variable/8",
+        "entrance": {
+          "corrected": false,
+          "fuel": 6,
+          "gate": 0,
+          "gate_life": 0,
+          "last": 0,
+          "life": 4,
+          "prelearn": true,
+          "q": 2,
+          "stage": 2,
+          "stale": 0,
+          "witness": false,
+          "written": true
+        },
+        "regime": true,
+        "tape": [
+          0,
+          0,
+          0
+        ],
+        "per_call_tape_weight": "1/16",
+        "candidates": [
+          false,
+          true
+        ],
+        "partial_decode": null,
+        "replay": {
+          "state": {
+            "corrected": false,
+            "fuel": 0,
+            "gate": 0,
+            "gate_life": 1,
+            "last": 0,
+            "life": 3,
+            "prelearn": true,
+            "q": 2,
+            "stage": 2,
+            "stale": 0,
+            "witness": false,
+            "written": true
+          },
+          "moments": {
+            "gate_forms": 1,
+            "base_forms": 0,
+            "retrofits": 0,
+            "rents": 1,
+            "trials": 1,
+            "captures": 0,
+            "writes": 0,
+            "updater_changes": 0,
+            "post_captures": 0,
+            "brier16": 4,
+            "decoder_errors": 0,
+            "spent": 6,
+            "waste": 10,
+            "unpaid_writes": 1,
+            "slow_writes": 0,
+            "fast_writes": 0,
+            "acquired_uses": 0
+          },
+          "status": 3,
+          "trace": [
+            {
+              "event": "entry",
+              "state": {
+                "corrected": false,
+                "fuel": 6,
+                "gate": 0,
+                "gate_life": 0,
+                "last": 0,
+                "life": 4,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 10,
+              "spent": 0,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 4,
+                "gate": 0,
+                "gate_life": 0,
+                "last": 0,
+                "life": 4,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "gate_formed",
+              "state": {
+                "corrected": false,
+                "fuel": 4,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 4,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 10,
+              "spent": 2,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "rent_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 3,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 4,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 10,
+              "spent": 3,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "work_paid",
+              "state": {
+                "corrected": false,
+                "fuel": 0,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 4,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 10,
+              "spent": 6,
+              "waste": 0,
+              "transient": {}
+            },
+            {
+              "event": "receipt",
+              "state": {
+                "corrected": false,
+                "fuel": 0,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 4,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 6,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false,
+                "decoded": 1,
+                "forecast_numerator": 2
+              }
+            },
+            {
+              "event": "write_unaffordable_record_retained",
+              "state": {
+                "corrected": false,
+                "fuel": 0,
+                "gate": 0,
+                "gate_life": 2,
+                "last": 0,
+                "life": 4,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 6,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false
+              }
+            },
+            {
+              "event": "renewed_or_worn",
+              "state": {
+                "corrected": false,
+                "fuel": 0,
+                "gate": 0,
+                "gate_life": 1,
+                "last": 0,
+                "life": 3,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 6,
+              "waste": 10,
+              "transient": {
+                "action": 0,
+                "receipt": false
+              }
+            },
+            {
+              "event": "boundary",
+              "state": {
+                "corrected": false,
+                "fuel": 0,
+                "gate": 0,
+                "gate_life": 1,
+                "last": 0,
+                "life": 3,
+                "prelearn": true,
+                "q": 2,
+                "stage": 2,
+                "stale": 0,
+                "witness": false,
+                "written": true
+              },
+              "inflight_packet": 0,
+              "spent": 6,
+              "waste": 10,
+              "transient": {
+                "status": 3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "interpretation": "Distinct saved call/tape coverage counts, not population frequencies; entry masses are not carried by this artifact"
+  },
+  "old_success_after_actual_reverse": {
+    "actual_past": [
+      [
+        "rent",
+        null
+      ],
+      [
+        "work",
+        null
+      ],
+      [
+        "write",
+        null
+      ],
+      [
+        "finish",
+        null
+      ]
+    ],
+    "actual_change": [
+      "reverse",
+      null
+    ],
+    "observed": {
+      "prediction": {
+        "physical": {
+          "fuel": 18,
+          "packets": 11,
+          "last": true,
+          "lease": 6,
+          "regime": true,
+          "fast": false,
+          "module_lease": 2,
+          "seen": true,
+          "remainder": 0,
+          "material": 11
+        },
+        "score": 2,
+        "receipt": true,
+        "phase": "observed"
+      },
+      "parts": {
+        "a": 1,
+        "h": 1,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 2,
+        "bound_h": 4,
+        "register_units": 1,
+        "precursor": 0
+      }
+    },
+    "before": {
+      "prediction": {
+        "physical": {
+          "fuel": 17,
+          "packets": 11,
+          "last": true,
+          "lease": 6,
+          "regime": true,
+          "fast": false,
+          "module_lease": 2,
+          "seen": true,
+          "remainder": 0,
+          "material": 11
+        },
+        "score": 3,
+        "receipt": false,
+        "phase": "ready"
+      },
+      "parts": {
+        "a": 1,
+        "h": 1,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 2,
+        "bound_h": 4,
+        "register_units": 1,
+        "precursor": 0
+      }
+    },
+    "after": {
+      "prediction": {
+        "physical": {
+          "fuel": 17,
+          "packets": 11,
+          "last": true,
+          "lease": 6,
+          "regime": false,
+          "fast": false,
+          "module_lease": 2,
+          "seen": true,
+          "remainder": 0,
+          "material": 11
+        },
+        "score": 3,
+        "receipt": false,
+        "phase": "ready"
+      },
+      "parts": {
+        "a": 1,
+        "h": 1,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 2,
+        "bound_h": 4,
+        "register_units": 1,
+        "precursor": 0
+      }
+    },
+    "contemporaneous_inference": true,
+    "unchanged_record_is_currently_wrong": true
+  },
+  "statistical_comparator": {
+    "explicit_conditions": "One stable regime, fair prior, known iid availability3/4, eight funded fixed action0 trials; analysis only",
+    "record": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ]
+    ],
+    "likelihood_regime0": "1/65536",
+    "likelihood_regime1": "1",
+    "posterior_regime0": "1/65537",
+    "support_candidates": [
+      false,
+      true
+    ]
+  },
+  "inherited_all_history_metric": {
+    "case": "outages",
+    "arm": "variable",
+    "expected_decoder_errors": "174191759/603979776",
+    "provenance": "Read from the preserved broad-suite result; not recomputed from deduplicated calls"
+  },
+  "all_checks_passed": true
+}

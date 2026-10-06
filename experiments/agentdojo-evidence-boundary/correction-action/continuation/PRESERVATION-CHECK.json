@@ -1,0 +1,8 @@
+{
+  "status": "preserved_bytes_verified",
+  "cases": 4,
+  "case_file_references": 8149,
+  "distinct_stored_paths": 540,
+  "unique_new_blobs": 145,
+  "preservation_sha256": "7cb33d6f1b79f36c56814e3eb033d631c86022b5ed35a93195379417c97f57f5"
+}

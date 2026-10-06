@@ -1,0 +1,10 @@
+{
+  "file": "experiments/agentdojo-evidence-boundary/correction-action/continuation/broker.py",
+  "sha256": "48fbbd3ee666a534edb4877d930b68cc93ecf75cbd6955d24a58c0ec56da6f83",
+  "saved": "experiments/agentdojo-evidence-boundary/correction-action/continuation/development/review/broker-before-request-review.py",
+  "findings": [
+    "cache lookup precedes request-limit and finished guards",
+    "non-string unhashable operation becomes operation_error rather than a structured malformed rejection"
+  ],
+  "scope": "Static inspection; no executable was imported or run. Core existing probe evidence remains independently inspectable."
+}

@@ -1,0 +1,236 @@
+{
+  "created_at_utc": "2026-10-06T10:31:58.258619+00:00",
+  "status": "passed",
+  "scope": "Five owned integration edits, current full-file boundaries, local links and anchors, and two unchanged Lean files. This checks documentation preservation, not ethical truth or formal certification.",
+  "receipt_sha256": "686377dd0147ac462c2e14bd42a0744e163502dc150164fcc089ea12012191d1",
+  "passed": 45,
+  "failed": 0,
+  "checks": [
+    {
+      "kind": "current after boundary",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "kind": "unique owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "kind": "reconstructed before boundary",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "kind": "current after boundary",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "kind": "unique owned span",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "kind": "reconstructed before boundary",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "kind": "current after boundary",
+      "target": "RESEARCH.md",
+      "passed": true
+    },
+    {
+      "kind": "unique owned span",
+      "target": "RESEARCH.md",
+      "passed": true
+    },
+    {
+      "kind": "reconstructed before boundary",
+      "target": "RESEARCH.md",
+      "passed": true
+    },
+    {
+      "kind": "current after boundary",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "kind": "unique owned span",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "kind": "reconstructed before boundary",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "kind": "current after boundary",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true
+    },
+    {
+      "kind": "unique owned span",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true
+    },
+    {
+      "kind": "reconstructed before boundary",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true
+    },
+    {
+      "kind": "unchanged Lean",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean",
+      "passed": true
+    },
+    {
+      "kind": "unchanged Lean",
+      "target": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md -> FUTURE-GOOD-INTEGRAL.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md -> FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md -> FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> #significance-through-potential-future-goods",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md -> #significance-through-potential-future-goods",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "RESEARCH.md -> _process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md -> unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#forming-those-who-will-live-in-the-future",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md -> unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#forming-those-who-will-live-in-the-future",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md -> ../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md -> ../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "theories/shengsheng-buxi-generative-existence/README.md -> ../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-SOURCES.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-REVIEW.md",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-CHECKS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-ARGUMENT.md#7-prospective-concern-at-the-last-effective-window",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-ARGUMENT.md#7-prospective-concern-at-the-last-effective-window",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-PROTECTION-CHECKS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-SELECTION-CHECKS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-PREVENTION-CHECKS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "heading anchor",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-BEARER-FORMATION-ARGUMENT.md#connection-to-prospective-significance",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-SIGNIFICANCE-LINK-EDITS.json",
+      "passed": true
+    },
+    {
+      "kind": "local link",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md -> FUTURE-SIGNIFICANCE-LINK-CHECKS.json",
+      "passed": true
+    }
+  ],
+  "review_metadata_updated_at_utc": "2026-10-06T10:32:28.546512+00:00"
+}

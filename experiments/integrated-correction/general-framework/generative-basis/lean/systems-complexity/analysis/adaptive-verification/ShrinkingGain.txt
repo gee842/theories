@@ -1,0 +1,23 @@
+'SystemsComplexity.ShrinkingGain.shrinking_gain_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.gain_sum_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.lower_bound_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.lower_bound_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.lower_bound_above_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.orbit_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.orbit_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.orbit_coordinates_above_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.ShrinkingGain.orbit_first_nonincreasing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.envelope_above_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.squared_norm_above_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.every_frozen_gain_converges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SystemsComplexity.ShrinkingGain.varying_envelope_not_convergent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.ShrinkingGain.varying_squared_norm_not_convergent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SystemsComplexity.ShrinkingGain.frozen_convergence_not_varying_convergence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T05:26:50.893011+00:00",
+  "scope": "Final link, frozen-source, log, snapshot and old-receipt reconciliation; no additional scientific or proof rerun",
+  "local_links_checked": 102,
+  "anchors_checked": 14,
+  "status_hash_and_placement_checks": 47,
+  "new_lean_declaration_audits": 24,
+  "independent_finite_interpretations": 262144,
+  "normative_dependency_eliminated": false,
+  "assumption_free_foundation_complete": false,
+  "errors": [],
+  "new_study_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-ARGUMENT.md": "d9a453004b7e3cfe6655ad32f18c8c26572cba1444b9880b13227c0612e6ab3d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-MATH.md": "3fbd0efa99da97cb26dda328730c3ebf2545efaa2ca40cab81fd15ea233d35fe",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-REVIEW.md": "5b9a0ce059947065225bf5e753a560bbbdc1053106383f6eb9d0d8611bac8e81",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-SOURCES.md": "7ed1bafc31a11ea9fdd1a9bf54545db1a57537090d4ad127c9862fda79bf1e5f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-INTEGRATION.md": "59176ca28889f3b666e6b1ceb8f21aea7e1afe4ce584b5532deb0861360e849c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "d57d9c6118453fa70a313379942ac2c79a8647f82fefd3e8a40cccc689049094",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": "c2ff03d716ad690029d89b8ae76216e339dcde34bc39066f9111b1f9251cdd6c",
+    "sources/15-codex-theory-conversations/2026-10-06-attempt-assumption-free-concern-grounding.md": "43cf4b23a4d51823c19732739516bff67e88b8653b857cb0e6135a7da75213d9"
+  },
+  "receipt_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/root-verification.json": "0cbd3cb4669cb4bbbf1b70b89a791de5644762baaa83bc5770026f56b917640d",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/root-independent-review.json": "08a81ee7d9b1a7b4c2ed25a9572433ea6183d540b5c5f84ce1a8ee0d5ef002da",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/verification.json": "fb5bdfaa1b0981980a0d8132b0d19fc299ff3d5410f7c613f59c66edd7e9c306"
+  },
+  "snapshot_sha256": "10e27352d5597ea7e466f32e3a4f467f21a17fbc842d9ec139ec95cb961eb17e"
+}

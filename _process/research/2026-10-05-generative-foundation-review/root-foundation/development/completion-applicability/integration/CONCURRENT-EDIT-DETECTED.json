@@ -1,0 +1,45 @@
+{
+  "point": "Canonical addition completed; next RESEARCH.md guard found another session edit before mutation. No concurrent content overwritten. Remaining index edits rebased on current bytes.",
+  "files_checked": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-00-CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "ed8ec2c572d035a6dff6c3c17e8e0fe9d1fbabf956a2c0fff54e5ecce6880c97"
+    },
+    {
+      "path": "RESEARCH.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-01-RESEARCH.md",
+      "sha256": "8514703c372d1e668629fedbf237db0e223e2c9ff44e7762f53375e263413932"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-02-README.md",
+      "sha256": "540050e24aadcb2feb0fcdc47239a7ef8eced32739fe2eb0943a887c5ea102db"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-03-GENERATIVE-GROUNDING.md",
+      "sha256": "e3392e70e586fc4190c6b6445f7f254403512ecd8fd10cbb2fb56b0b39f0b9f0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-04-README.md",
+      "sha256": "f6df44cc450f2457f0e1507d6dd2a3935fcc72da2161ee716b6e78d4477285da"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-05-FOUNDATION-COMPOSITION.md",
+      "sha256": "cd8971b0c925899b5fc711d6dafe5a9b80a5dcdbe375932a6f90ffa217f61d51"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-06-FOUNDATION-PREMISES.md",
+      "sha256": "66b4a0e651995cb085d04018e800d6a740dcf305e7f20df12f4289816aa3e210"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/integration/before-07-README.md",
+      "sha256": "4d49622caef1afda9fff5a5eaf1b444a058b403fed635508865fea8ed63b8f31"
+    }
+  ]
+}

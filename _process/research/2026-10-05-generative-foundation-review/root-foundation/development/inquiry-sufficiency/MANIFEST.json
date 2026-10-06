@@ -1,0 +1,18 @@
+{
+  "scope": "Preservation and local link check; no old dynamics or formal proof rerun.",
+  "artifacts": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MECHANISM.md",
+      "sha256": "d7bdd2b7e067e95fd87cd4815cadde1940db1812157f0feff28a59ab131cd205"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inquiry-sufficiency/analyze_saved_prefixes.py",
+      "sha256": "69fcbda436ef1edbbe9dc8dda9bf4c86fc37c646ec38e18fc6aecf54c7b0800d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inquiry-sufficiency/PREFIX-EVIDENCE.json",
+      "sha256": "9e80565fa286e873b0dd446b766e1712c9756c6b59c137e2839ac7a1d0d5d067"
+    }
+  ],
+  "local_links_checked": 11
+}

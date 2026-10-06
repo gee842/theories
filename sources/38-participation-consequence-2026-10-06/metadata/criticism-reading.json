@@ -1,0 +1,59 @@
+{
+  "xml_attempt": {
+    "name": "reiber-2021.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8433532/fullTextXML",
+    "attempt_at_utc": "2026-10-06T06:51:44.012598+00:00",
+    "error": "HTTP Error 500: "
+  },
+  "html_attempts": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8433532/?report=xml",
+      "attempt_at_utc": "2026-10-06T06:52:28.248625+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8433532/?report=xml",
+      "headers": {
+        "Date": "Tue, 06 Oct 2026 06:52:28 GMT",
+        "Server": "istio-envoy",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "content-type": "text/html; charset=utf-8",
+        "Content-Length": "102732",
+        "vary": "Accept-Encoding,Cookie",
+        "x-frame-options": "DENY",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "same-origin",
+        "cross-origin-opener-policy": "same-origin",
+        "x-envoy-upstream-service-time": "59",
+        "X-UA-Compatible": "IE=Edge",
+        "X-XSS-Protection": "1; mode=block",
+        "Via": "1.1 google",
+        "Alt-Svc": "clear",
+        "Connection": "close"
+      },
+      "bytes": 102732,
+      "sha256": "9571bb31770aa01239b51d96266329ae606d92317ed9027c04b94585ce4680c3",
+      "omitted_response_headers": [
+        "Set-Cookie: transient session state intentionally not preserved"
+      ]
+    },
+    {
+      "url": "https://europepmc.org/articles/PMC8433532",
+      "attempt_at_utc": "2026-10-06T06:52:29.141342+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "scope": "Successful PMC response was HTML despite report=xml query. Main four paragraphs and references read in full. Other failed responses were not retained as originals.",
+  "reply_search": {
+    "date": "2026-10-06",
+    "queries": [
+      "Reiber Nogueira J\u00fanior 2105928118 Kramar Alim reply memory tube diameter 2021",
+      "\"2105928118\" reply",
+      "\"Kramar\" \"Alim\" \"Reply\" memory Reiber (pnas.org, PMC, PubMed)",
+      "\"Missing evidence for memory in the monocellular slime mold\" reply Kramar Alim"
+    ],
+    "result": "No author reply identified in this bounded search. This does not establish that no reply exists. DOI 10.1073/pnas.2102056118 was verified as Robert H. Austin's earlier commentary, not a Kramar/Alim reply.",
+    "checked_metadata_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/34470820/",
+      "https://pubmed.ncbi.nlm.nih.gov/33737448/"
+    ]
+  }
+}

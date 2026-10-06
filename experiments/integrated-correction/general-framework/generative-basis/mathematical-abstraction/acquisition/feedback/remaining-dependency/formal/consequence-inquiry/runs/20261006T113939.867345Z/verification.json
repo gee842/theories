@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "scope": "Unchanged-law source-zero observation congruence and finite feedback policies; source-bound actual endpoints",
+  "run": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113939.867345Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "source_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/CORRECTION-LOCALIZATION-PROTOCOL.md": "47b25788e20a10c8aa074091fa1447f5eb03f08a136eb01d8c7bffb02357d301",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-PROTOCOL.md": "81e497630e90b67b9e31c50e20a33d567df0b5247be5cb5a5302ff030fd113e7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REMAINING-DEPENDENCY-PROTOCOL.md": "d56551ba5d025e51d0b19a8e463e69b32fcd79746403120d25786be91cea1532",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization.py": "9d25b4aadf8efa56e75089b55caaecce03e05d0dfbbbc215dc3062940658e9ea",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry-results.json": "18fdf89d61d889aede92f746f11fc18ff845a151b6ae92b669ed92a2355c681f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/inquiry.py": "5e6f924a20ea710ce2f17b72137c9f6b9660dcdc153cf0f6e0da33279c2b59b5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/refinement.py": "2c22e1ac87cc6b32c001923f4bdf73e08633b339c23c4a43193caa8649a5b358",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-independent-check.json": "e9adb2a52c661054cd18bb60ca057bf716a33646474076ff13366e0369cd99f1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency-results.json": "424540b7688e836b8357b86adf1ae7f3382349c7581abe83df37d36ccbae72b2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md": "32a040e263137c0b9fee58ff142dfaa236eac009b70e2fcab53292e21631a398",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json": "c9d75a3677bd5fbe5026b358a1d55bc3c76ca33db3b5af5411e8c27c21a4d0a0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency.py": "75e715f1a7a0af499a39887e3fc9b38d88b66125d313361de851c421d9197127",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining_dependency_check_review.py": "d46972459e2680839a4092bd226f1a5da9401b748377d5c2b15089f3ccad1cdb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/study.py": "8b75188fa3d8912e29361a1625bea233884e69b7b44fbbded8b83c030140e7bc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/results.json": "ec5cdff0257d02111c0747cfa00e5a13ffbd280a7424f07a68809e8432d64e4e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean": "862bb838eb7916e6f149cd38fd2673f1965585d775d422ca16e181bdbabf50be",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check.py": "3b5fc5fb91aedbb82ae645da5496882ca08d45f2d6fd57b0608cfd8645aaa248",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check_consequence_inquiry.py": "f08d6c750d197b30985232447bd0129584994ba0cb0c5c52af498782861f9ceb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/CONTRACT.md": "519e1d774129863b92291c1cb500d9746a7d3cb32b670756d883bc63efffddae",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-results.json": "b1be5effd5a0aff4029495dbdad4ba506565fc779627344907ac68e9c008c8d1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction-localization-independent-check.json": "57a0bf08cb4982f41b4ffebb858128a2a6f15c91d759f24a8276e81a907a02be",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/correction_localization_check_review.py": "5f022d553af594acf0b24d00d2f8ecebd01942f124741e8c5e25ea5c3770b8e9"
+  },
+  "source_binding_count": 30,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "exit_code": 0,
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "RemainingDependency",
+      "exit_code": 0,
+      "source_sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "log_sha256": "1ebe1f21adfed36245fa0f136eeceb8a6cdbcf3c1c82d3eb732051314469e07d"
+    },
+    {
+      "module": "ConsequenceInquiry",
+      "exit_code": 0,
+      "source_sha256": "862bb838eb7916e6f149cd38fd2673f1965585d775d422ca16e181bdbabf50be",
+      "log_sha256": "68754ea71a9394253cdd9e4e6662682741fe1519afb9f39aae229bc55b221402"
+    },
+    {
+      "module": "ConsequenceInquirySaved",
+      "exit_code": 0,
+      "source_sha256": "6d3e1745900ef032f7594ffaebd2feda1d6a92627ba3080d1824fdd11de14425",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ConsequenceInquiryAudit",
+      "exit_code": 0,
+      "source_sha256": "b051f9094701ba10e1c9e9c37e82b0818e8b051e55013f0403ffbbf891a4dc6b",
+      "log_sha256": "bd46dcf31db3ab81aff8db4e27826763db4ddeb9adb8e85099c31b96fefcea6f"
+    }
+  ],
+  "general_theorem_count": 13,
+  "saved_fixture_theorem_count": 12,
+  "explicit_new_declaration_audits": 39,
+  "declaration_dependencies": {
+    "ConsequenceInquiry.viewBody": [],
+    "ConsequenceInquiry.view": [],
+    "ConsequenceInquiry.view_preserves_source": [],
+    "ConsequenceInquiry.view_preserves_stock_total": [
+      "propext"
+    ],
+    "ConsequenceInquiry.advance_preserves_stocks_at_empty_source": [
+      "propext"
+    ],
+    "ConsequenceInquiry.advance_preserves_empty_source": [
+      "propext"
+    ],
+    "ConsequenceInquiry.viewBody_account": [],
+    "ConsequenceInquiry.viewBody_paid": [],
+    "ConsequenceInquiry.view_advance_at_empty_source": [
+      "propext"
+    ],
+    "ConsequenceInquiry.step_preserves_empty_source": [
+      "propext"
+    ],
+    "ConsequenceInquiry.view_step_at_empty_source": [
+      "propext"
+    ],
+    "ConsequenceInquiry.run_preserves_empty_source": [
+      "propext"
+    ],
+    "ConsequenceInquiry.view_run_at_empty_source": [
+      "propext"
+    ],
+    "ConsequenceInquiry.equal_view_runs": [
+      "propext"
+    ],
+    "ConsequenceInquiry.feedbackRun": [
+      "propext"
+    ],
+    "ConsequenceInquiry.feedbackView": [],
+    "ConsequenceInquiry.feedback_indistinguishable": [
+      "propext"
+    ],
+    "ConsequenceInquirySaved.ordinaryConfig": [],
+    "ConsequenceInquirySaved.ordinary": [],
+    "ConsequenceInquirySaved.calibrationConfig": [],
+    "ConsequenceInquirySaved.calibration": [],
+    "ConsequenceInquirySaved.falseContactConfig": [],
+    "ConsequenceInquirySaved.falseContact": [],
+    "ConsequenceInquirySaved.alternateWord": [],
+    "ConsequenceInquirySaved.ordinaryAlternate": [],
+    "ConsequenceInquirySaved.calibrationAlternate": [],
+    "ConsequenceInquirySaved.falseContactAlternate": [],
+    "ConsequenceInquirySaved.ordinary_source_zero": [],
+    "ConsequenceInquirySaved.calibration_source_zero": [],
+    "ConsequenceInquirySaved.falseContact_source_zero": [],
+    "ConsequenceInquirySaved.ordinary_calibration_same_view": [],
+    "ConsequenceInquirySaved.distinct_actual_outcomes": [],
+    "ConsequenceInquirySaved.same_original_account": [],
+    "ConsequenceInquirySaved.all_words_preserve_ambiguity": [
+      "propext"
+    ],
+    "ConsequenceInquirySaved.no_correct_view_decoder": [],
+    "ConsequenceInquirySaved.ordinary_alternate_correspondence": [
+      "propext"
+    ],
+    "ConsequenceInquirySaved.calibration_alternate_correspondence": [
+      "propext"
+    ],
+    "ConsequenceInquirySaved.falseContact_alternate_correspondence": [
+      "propext"
+    ],
+    "ConsequenceInquirySaved.false_contact_still_separated": []
+  },
+  "standard_axioms": [
+    "propext"
+  ],
+  "custom_axioms": [],
+  "proof_holes": [],
+  "saved_parent_cases": 3,
+  "alternate_request_correspondences": 3,
+  "limitations": [
+    "Only the unchanged event law and source-zero states are covered.",
+    "The mathematical view is richer than actual controller input; projection does not erase physical effects.",
+    "The general proofs cover finite request words and the defined finite feedback-policy interpreter.",
+    "Original native ancestry remains bound to its existing independent receipt.",
+    "The saved state encoder is reused and hash-bound; no native producer is imported or rerun.",
+    "No universal Python refinement, new physical contact or ethical criterion is established.",
+    "The separately extended calibration-contact law is outside this old-law obstruction."
+  ]
+}

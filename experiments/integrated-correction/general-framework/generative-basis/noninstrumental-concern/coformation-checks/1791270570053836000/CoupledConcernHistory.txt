@@ -1,0 +1,67 @@
+'Generative.CoupledConcernHistory.runnable_occurrences' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.trace_endpoint_is_actual_run' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.trace_occurrences' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.runnable_prefix' depends on axioms: [propext]
+'Generative.CoupledConcernHistory.occurrences_join_at_actual_state' depends on axioms: [propext]
+CoupledConcernHistory.lean:119:19: error: unexpected token 'prefix'; expected rcasesPat
+CoupledConcernHistory.lean:119:4: error: Unexpected syntax
+  failed to pretty print term (use 'set_option pp.rawOnError true' for raw representation)
+CoupledConcernHistory.lean:115:76: error: unsolved goals
+case refine_2
+⊢ patient (entry Variant.active) = 40 ∧
+    patient (trained Variant.active) = 36 ∧
+      patient final = 46 ∧
+        (entry Variant.active).n = 0 ∧
+          (trained Variant.active).n = 4 ∧
+            final.n = 4 ∧
+              (trained Variant.active).link0 = some Sign.positive ∧
+                (trained Variant.active).link1 = some Sign.positive ∧
+                  (core final).packets = 0 ∧ ¬PairedPlasticity.Enabled final Event.attempt
+CoupledConcernHistory.lean:119:26: error: unexpected token ','; expected ':'
+CoupledConcernHistory.lean:120:87: error: unexpected identifier; expected ':'
+'Generative.CoupledConcernHistory.actual_formation_then_response' depends on axioms: [propext, sorryAx, Quot.sound]
+CoupledConcernHistory.lean:145:2: error: failed to synthesize
+  Decidable
+    (Step laws firstBeforeDecrease Event.recipientPay firstAfterDecrease ∧
+      patient firstBeforeDecrease = 40 ∧
+        patient firstAfterDecrease = 38 ∧
+          firstAfterDecrease.n = firstBeforeDecrease.n ∧
+            firstAfterDecrease.link0 = firstBeforeDecrease.link0 ∧
+              firstKnown.phase = Phase.bothKnown ∧
+                firstKnown.recipientBit = true ∧
+                  firstKnown.link0 = none ∧
+                    firstBound.link0 = some Sign.positive ∧
+                      patient firstBound = patient firstKnown ∧ patient firstBound = 38)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'Generative.CoupledConcernHistory.consequence_and_acquisition_are_distinct_dependent_changes' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.CoupledConcernHistory.actual_feedback_changes_response_constraints' depends on axioms: [propext, Quot.sound]
+'Generative.CoupledConcernHistory.actual_return_does_not_erase_intermediate_decrease' depends on axioms: [propext,
+ Quot.sound]
+CoupledConcernHistory.lean:205:6: error: Function expected at
+  decode
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  (endpointSummary (run laws (entry .active) word))
+CoupledConcernHistory.lean:210:9: error: Function expected at
+  decode
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  (endpointSummary (entry .active))
+CoupledConcernHistory.lean:211:9: error: Function expected at
+  decode
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  (endpointSummary returnedState)
+'Generative.CoupledConcernHistory.no_endpoint_summary_decoder_of_actual_decrease' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.CoupledConcernHistory.missing_readout_does_not_remove_consequence' depends on axioms: [propext, Quot.sound]

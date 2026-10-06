@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "date": "2026-10-06",
+  "pdf_sha256": "9911df7a63178c49626f0931a1349230d8175965e3c9d97789afff17044e915e",
+  "pages": 8,
+  "language": "English only",
+  "cjk_character_count": 0,
+  "missing_or_replacement_glyph_count": 0,
+  "reference_link_annotations": 8,
+  "visual_qa": "All 8 pages rendered with Poppler and visually inspected. Final pages 1-4 and 8 are pixel-identical to inspected renders; final changed pages 5-7 reinspected. No overlap, clipping or missing symbols.",
+  "formula_example_checks": "All three worked sensitivity rows verified by direct substitution; plot uses the exact derived analytic exponent.",
+  "source_reviews": {
+    "mechanism_and_formal_results": "Independent source review against InquiryRevision, PurposeCorrectionHistory, InquirySufficiency, AttainableQuestions and Formal Core; incorporated scope corrections for finite search, implementation transfer and false evidence.",
+    "ethics": "Independent review against the shared nondual method and ethical sources; restored the declared severe, still-unwanted burden domain and distinguished real boundaries from modeling choices.",
+    "governance_and_comparisons": "Independent review against V7.3 section 4 and supplement S4, plus primary literature. Corrected cost-floor interpretation, recovery conditions, comparative credit, and reference metadata.",
+    "scope": "Editorial source checking only. No new scientific experiment or proof execution was represented as performed for this PDF."
+  },
+  "submission_status": "Generated and verified; not attached or submitted."
+}

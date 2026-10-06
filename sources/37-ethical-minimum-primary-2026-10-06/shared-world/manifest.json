@@ -1,0 +1,22 @@
+{
+  "access_date": "2026-10-06",
+  "originals": [
+    {
+      "authors": [
+        "Marco A. Janssen",
+        "John M. Anderies",
+        "Irene Pérez",
+        "David J. Yu"
+      ],
+      "title": "The Effect of Information in a Behavioral Irrigation Experiment",
+      "version": "CBIE Working Paper #2015-001, 21 January 2015; not asserted identical to the later published article",
+      "retrieval_url": "https://dlc.dlib.indiana.edu/dlc/bitstreams/36cddd77-12f7-447f-9e64-bbd1fdd0c54d/download",
+      "filename": "janssen-et-al-2015-irrigation-working-paper.pdf",
+      "bytes": 1622585,
+      "sha256": "abec767b64dc0fe519a45c6df7730fa8cf07fc3922113c7e9681099e2102b470",
+      "reading_scope": "Source agent: main printed pp.1–17. Root: design, selected statistical results and discussion; appended instructions printed pp.4–9; rendered supplementary p.6 inspected directly. References not independently read.",
+      "reconstruction_scope": "Selected parameter consequences, not raw-data reanalysis, software reconstruction, or observed individual trajectory."
+    }
+  ],
+  "adaptations": "None. Original bytes preserved. Temporary page rendering not imported."
+}

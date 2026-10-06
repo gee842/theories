@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "preparation_sha256": "76ed300c374e82b91cb858d173fb349de7bbdb56ae7951044342c95079c2f3e4",
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "read",
+      "read_authority"
+    ]
+  },
+  "authority_triggered": true,
+  "attempts": 3,
+  "event_seq": 13,
+  "event_head": "4175253ab1b938d992747a6154bc0bf97426886214dda0aa99b5a2bc14f23d1c",
+  "requests": {
+    "ordinary-01": {
+      "request_sha256": "c6ab95ed9edca5f01dd7ce8decdefacc72a5ce46ba4c50a1bb8e8e2c7c160d31",
+      "response": {
+        "path": "attempts/a0001/response.json",
+        "sha256": "a03ccecb1398f6a292a5276f96d22bb3708dcd3b1da1d706debfcef28ac05947",
+        "bytes": 6410
+      }
+    },
+    "ordinary-02": {
+      "request_sha256": "9049dd5f4cfa75cba571975621fc1f1a6d8328b93d3fa11e96794c5f473f0632",
+      "response": {
+        "path": "attempts/a0002/response.json",
+        "sha256": "9b708dc29108bf1b72e57c32acb1ac4a99fb670a69090200f87c4077960004b1",
+        "bytes": 1152
+      }
+    },
+    "ordinary-03": {
+      "request_sha256": "e27a1dc6725b960918448ce79e8b410e9d19beffa17398d5301259afa50b9daa",
+      "response": {
+        "path": "attempts/a0003/response.json",
+        "sha256": "24db70c1c2611d6536653cc3602e189483379c143221ba36c1a1ceb4e9f66a22",
+        "bytes": 1415
+      }
+    }
+  },
+  "versions": {
+    "v0": {
+      "id": "v0",
+      "tree": "versions/v0/tree",
+      "origin": "preserved_historical_artifacts",
+      "production_run": null,
+      "artifacts": {
+        "replay.py": {
+          "path": "versions/v0/tree/experiments/agentdojo-evidence-boundary/replay.py",
+          "sha256": "e304e6ea5b89a845bf2868b931bd99df19c35fd5723ed334782bbcd8cb5b31f7",
+          "bytes": 23158
+        },
+        "replay-results.json": {
+          "path": "versions/v0/tree/experiments/agentdojo-evidence-boundary/replay-results.json",
+          "sha256": "be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4",
+          "bytes": 5120563
+        },
+        "replay-receipt.json": {
+          "path": "versions/v0/tree/experiments/agentdojo-evidence-boundary/replay-receipt.json",
+          "sha256": "d85f375f140a89ea672fb930f4739766b6862f81911902ad2f00ed791606fd9b",
+          "bytes": 1015
+        }
+      },
+      "inventory": {
+        "path": "versions/v0/inventory.json",
+        "sha256": "a4d2a540bcffb2651bfd1d534096d47330ba637036ca0fe6aac29de0678d03b3",
+        "bytes": 104635
+      }
+    }
+  },
+  "candidates": {},
+  "checks": {
+    "v0": [
+      {
+        "run": "r0001",
+        "delivery": {
+          "kind": "diagnosis",
+          "version": "v0",
+          "run": "r0001",
+          "artifact": {
+            "path": "deliveries/r0001-diagnosis-v0.json",
+            "sha256": "b3ae09ef2970cfa23fbfbac256b8853dc1d1703414d6b5925c39f95bd8281e07",
+            "bytes": 307878
+          },
+          "origin": {
+            "path": "runs/r0001/tree/experiments/agentdojo-evidence-boundary/replay-verification.json",
+            "sha256": "b3ae09ef2970cfa23fbfbac256b8853dc1d1703414d6b5925c39f95bd8281e07",
+            "bytes": 307878
+          }
+        },
+        "status": "fail",
+        "complete": true
+      }
+    ]
+  },
+  "runs": [
+    {
+      "id": "r0001",
+      "operation": "check",
+      "version": "v0",
+      "candidate": null,
+      "attempt_id": "a0001",
+      "tree": "runs/r0001/tree",
+      "inputs_unchanged": true,
+      "input_inventory": {
+        "path": "runs/r0001/input-inventory.json",
+        "sha256": "a4d2a540bcffb2651bfd1d534096d47330ba637036ca0fe6aac29de0678d03b3",
+        "bytes": 104635
+      },
+      "output_inventory": {
+        "path": "runs/r0001/output-inventory.json",
+        "sha256": "ebac1a3a6faa92642d3a5f2e99b096c60033800434ff1aae198f729080b7da1f",
+        "bytes": 104814
+      },
+      "process": {
+        "path": "runs/r0001/process.json",
+        "sha256": "b392f04a70b56a98938cdbaaf9b445fdc1a03af47ba72eeda59436cf11e3eed1",
+        "bytes": 2468
+      },
+      "stdout": {
+        "path": "runs/r0001/stdout.txt",
+        "sha256": "008d91ad4bdab8d7140d02e1a221691809d72a1894e701a084a1fc9c3e7f0354",
+        "bytes": 6370
+      },
+      "stderr": {
+        "path": "runs/r0001/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "kind": "diagnosis",
+      "version": "v0",
+      "run": "r0001",
+      "artifact": {
+        "path": "deliveries/r0001-diagnosis-v0.json",
+        "sha256": "b3ae09ef2970cfa23fbfbac256b8853dc1d1703414d6b5925c39f95bd8281e07",
+        "bytes": 307878
+      },
+      "origin": {
+        "path": "runs/r0001/tree/experiments/agentdojo-evidence-boundary/replay-verification.json",
+        "sha256": "b3ae09ef2970cfa23fbfbac256b8853dc1d1703414d6b5925c39f95bd8281e07",
+        "bytes": 307878
+      }
+    },
+    {
+      "kind": "note",
+      "artifact": {
+        "path": "deliveries/a0002-analysis-note.md",
+        "sha256": "391379fc8bb92969ff1cc5a996961c3e2848ef89affabf4b28e08f5495554d71",
+        "bytes": 664
+      }
+    }
+  ],
+  "finished": true
+}

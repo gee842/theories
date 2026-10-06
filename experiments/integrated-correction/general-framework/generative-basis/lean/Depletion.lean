@@ -24,18 +24,16 @@ theorem trace_reserve_bound (reserve : State → Nat)
     {s t : State} {as : List Action} (h : Trace P s as t) :
     as.length + reserve t ≤ reserve s := by
   induction h with
-  | nil s => simp
+  | nil s => exact (Nat.zero_add (reserve s)).symm ▸ Nat.le_refl _
   | cons hstep _ ih =>
-    have stepBound := decreases _ _ _ hstep
-    simp only [List.length_cons]
-    omega
+    exact (Nat.succ_add _ _).symm ▸
+      Nat.le_trans (Nat.succ_le_succ ih) (decreases _ _ _ hstep)
 
 theorem trace_length_bound (reserve : State → Nat)
     (decreases : ∀ s a t, P.step s a t → reserve t < reserve s)
     {s t : State} {as : List Action} (h : Trace P s as t) :
     as.length ≤ reserve s := by
-  have totalBound := trace_reserve_bound reserve decreases h
-  omega
+  exact Nat.le_trans (Nat.le_add_right _ _) (trace_reserve_bound reserve decreases h)
 
 /-- An actual return to the same condition state cannot coexist with strict
     depletion on every step of a nonempty cycle. -/
@@ -46,8 +44,9 @@ theorem no_nonempty_cycle_under_depletion (reserve : State → Nat)
   cases as with
   | nil => exact nonempty rfl
   | cons a rest =>
-    simp only [List.length_cons] at totalBound
-    omega
+    have positive : reserve s + 1 ≤ (rest.length + 1) + reserve s :=
+      (Nat.succ_add _ _).symm ▸ Nat.succ_le_succ (Nat.le_add_left _ _)
+    exact Nat.not_succ_le_self _ (Nat.le_trans positive totalBound)
 
 /-- An infinite sequence cannot keep strictly reducing a natural reserve. -/
 theorem infinite_execution_contradicts_depletion (reserve : State → Nat)
@@ -57,12 +56,14 @@ theorem infinite_execution_contradicts_depletion (reserve : State → Nat)
   have bound : ∀ n, n + reserve (states n) ≤ reserve (states 0) := by
     intro n
     induction n with
-    | zero => omega
+    | zero => exact (Nat.zero_add (reserve (states 0))).symm ▸ Nat.le_refl _
     | succ n ih =>
       have stepBound := decreases _ _ _ (steps n)
-      omega
-  have exceeded := bound (reserve (states 0) + 1)
-  omega
+      have smaller := Nat.lt_of_lt_of_le (Nat.add_lt_add_left stepBound n) ih
+      exact (Nat.succ_add _ _).symm ▸ smaller
+  have exceeded := Nat.le_trans (Nat.le_add_right _ _)
+    (bound (reserve (states 0) + 1))
+  exact Nat.not_succ_le_self _ exceeded
 
 theorem no_infinite_execution_under_depletion (reserve : State → Nat)
     (decreases : ∀ s a t, P.step s a t → reserve t < reserve s) :

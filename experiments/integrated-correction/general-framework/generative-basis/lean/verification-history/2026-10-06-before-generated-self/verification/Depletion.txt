@@ -1,0 +1,5 @@
+'Generative.trace_reserve_bound' depends on axioms: [propext, Quot.sound]
+'Generative.trace_length_bound' depends on axioms: [propext, Quot.sound]
+'Generative.no_nonempty_cycle_under_depletion' depends on axioms: [propext, Quot.sound]
+'Generative.infinite_execution_contradicts_depletion' depends on axioms: [propext, Quot.sound]
+'Generative.no_infinite_execution_under_depletion' depends on axioms: [propext, Quot.sound]

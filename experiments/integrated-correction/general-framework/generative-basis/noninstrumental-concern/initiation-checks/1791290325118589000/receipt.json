@@ -1,0 +1,77 @@
+{
+  "status": "failed",
+  "receipt_kind": "recovered_failed_attempt",
+  "timeout_seconds": 300,
+  "failed_module": "InitiationFixtures",
+  "exception": "subprocess.TimeoutExpired: Lean InitiationFixtures.lean exceeded the subprocess.run timeout of 300 seconds. The original runner did not catch this exception. The tool output preserved this exception, but partial fixture stdout was not serialized and is unavailable. Five preceding module logs were written and passed; no success receipt was written.",
+  "partial_fixture_stdout": null,
+  "source_bindings": {
+    "GenerativeCore": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    "FormedSelection": {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+    },
+    "AcquiredPurposeCriterion": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean",
+      "sha256": "3eb64e26f4128ecf2dc8991806c8010ec636fb123cdc9c89b2999d3a50355abc"
+    },
+    "AcquiredActivityScope": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+      "sha256": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac"
+    },
+    "AcquiredInitiationConstraint": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean",
+      "sha256": "4a0119c41729fbd82f44d9efbb457cccd498d13a7eee4eec6c78310e5257ef8b"
+    },
+    "InitiationFixtures": {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-checks/1791290325118589000/InitiationFixtures.lean",
+      "sha256": "05e5480b291f86ba7af53bab7b51a7acc7c21fbde8cdb517511175c95b567aad"
+    }
+  },
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "log": "GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "status": "completed_and_reported_passed"
+    },
+    {
+      "module": "FormedSelection",
+      "log": "FormedSelection.txt",
+      "log_sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+      "status": "completed_and_reported_passed"
+    },
+    {
+      "module": "AcquiredPurposeCriterion",
+      "log": "AcquiredPurposeCriterion.txt",
+      "log_sha256": "57c0f37da3692339f4f425876bd6d3e50cd306e3c5214345f0fd281b33f32da5",
+      "status": "completed_and_reported_passed"
+    },
+    {
+      "module": "AcquiredActivityScope",
+      "log": "AcquiredActivityScope.txt",
+      "log_sha256": "b08fec59afa0913b523a768669fb9fac43033b42afc8f25d8193d6eabe8c6c57",
+      "status": "completed_and_reported_passed"
+    },
+    {
+      "module": "AcquiredInitiationConstraint",
+      "log": "AcquiredInitiationConstraint.txt",
+      "log_sha256": "f072e12d64435eec0959b43e214f9287aebffaf20401584ac9f27d6ff3d556b1",
+      "status": "completed_and_reported_passed"
+    },
+    {
+      "module": "InitiationFixtures",
+      "log": null,
+      "log_sha256": null,
+      "status": "timed_out"
+    }
+  ],
+  "compiler_arguments": [
+    "-s",
+    "65536"
+  ],
+  "scope": "Recovery of the observed failed fresh attempt; not a successful certification. No source or fixture has been omitted from the preserved attempt."
+}

@@ -1,0 +1,11 @@
+{
+  "attempt": 1,
+  "status": "failed",
+  "law": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+  "law_sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+  "new": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeReconstructionRequirement.lean",
+  "new_sha256": "8a1ef6ab99e51ee428a0bc52fbe81d7910825e811603a4404ec8c3cbf12e1232",
+  "preserved_source_sha256": "8a1ef6ab99e51ee428a0bc52fbe81d7910825e811603a4404ec8c3cbf12e1232",
+  "log_sha256": "ebce2b766b3d4859a250dae8ab45f452aaf34ca55b99ae9b33988b2653941219",
+  "build_script_sha256": "3311c0413e34e696f68407bf083ca17835acc51ec4403129440e103a8836c58d"
+}

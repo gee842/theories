@@ -1,0 +1,15 @@
+{
+  "status": "passed_first_execution",
+  "counts": {
+    "cases": 20,
+    "ancestry_events": 94,
+    "suffix_events": 4348,
+    "suffix_native_events": 4078,
+    "successes": 8
+  },
+  "model_sha256": "3d68e40ae687d2a27544b9a6f68050baa545100f0ff8f2ca59086f405c5c847c",
+  "protocol_sha256": "8839625aeb6df53a54a54a9cf23b3a917880a56464ed2ab668fdf81debe33ddb",
+  "results_sha256": "18de3f7e66394d42443dea66db11e00a4d063393f2ed4891128e8f3fd0b96a93",
+  "run_log_sha256": "be211e2098bdca9049476d7e8225c3bff34f45560587e31ac84f8deeed1e3b44",
+  "input_freeze_sha256": "dd3d25b17b885361e6d7ffaa568337d05d71fafcfcb2d0aa4fa266e31c34744f"
+}

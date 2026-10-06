@@ -1,0 +1,45 @@
+{
+  "case_id": "k03",
+  "artifacts": [
+    {
+      "original_relative_path": "analysis-note.md",
+      "sha256": "6c8240001c742d6d71519d5b2c504653840dcdd021dbbb1fa679d1f10dde3e2f",
+      "bytes": 4966,
+      "encoding": "identity",
+      "storage": "preserved_unique_bytes",
+      "saved_path": "experiments/agentdojo-evidence-boundary/correction-action/runs/k03/analysis-note.md",
+      "stored_sha256": "6c8240001c742d6d71519d5b2c504653840dcdd021dbbb1fa679d1f10dde3e2f"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay.py",
+      "sha256": "8de40499294627703431b2af8f0e8f40e47462b17f2f780c3223e174d10786d4",
+      "bytes": 23403,
+      "encoding": "identity",
+      "storage": "preserved_unique_bytes",
+      "saved_path": "experiments/agentdojo-evidence-boundary/correction-action/runs/k03/replay.py",
+      "stored_sha256": "8de40499294627703431b2af8f0e8f40e47462b17f2f780c3223e174d10786d4"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay-results.json",
+      "sha256": "e39f8f05cd6ca2d55cf6656fd786d3466bf6fcc4c56dec08f36fb3f76f2159e9",
+      "bytes": 5120080,
+      "encoding": "gzip",
+      "storage": "preserved_unique_bytes",
+      "saved_path": "experiments/agentdojo-evidence-boundary/correction-action/runs/k03/replay-results.json.gz",
+      "stored_sha256": "ae582cc7a0dad43346d6ffc1d3ba19c2b742b928b31772946d03847b7da1e89b"
+    },
+    {
+      "original_relative_path": "experiments/agentdojo-evidence-boundary/replay-receipt.json",
+      "sha256": "06e21f21536098177ff452919e39a2d993459b0cafcad0cb915bda078f4a2479",
+      "bytes": 1015,
+      "encoding": "identity",
+      "storage": "preserved_unique_bytes",
+      "saved_path": "experiments/agentdojo-evidence-boundary/correction-action/runs/k03/replay-receipt.json",
+      "stored_sha256": "06e21f21536098177ff452919e39a2d993459b0cafcad0cb915bda078f4a2479"
+    }
+  ],
+  "final_inventory_sha256": "bdff5c4ca4ad9dbed69be62ebc2b33b31e1019c29257b4bfc099021f2dfe4d3f",
+  "dispatch_sha256": "cb5b97b2e2f3054bb7b2f5eb28f35030078ba42507c275a4ffa955fcd41dcd79",
+  "received_final_sha256": "8fca6d018388cf80e478f0f6c2b2bed2ddc69888b9b6ac8ee7bc1de0db7721ff",
+  "final_provenance": "Orchestrator copy of received collaboration final; no independent full tool transcript."
+}

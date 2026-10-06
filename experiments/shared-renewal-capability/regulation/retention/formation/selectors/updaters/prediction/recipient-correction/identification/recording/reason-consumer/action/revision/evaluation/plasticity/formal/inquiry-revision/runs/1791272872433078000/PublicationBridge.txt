@@ -1,0 +1,7 @@
+'PublicationBridge.invariant_assured' depends on axioms: [propext, Quot.sound]
+'PublicationBridge.initialized_trace_assured' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PublicationBridge.actual_archive_initial_facts' depends on axioms: [propext, Quot.sound]
+'PublicationBridge.actual_archive_every_unread_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PublicationBridge.actual_archive_every_handoff_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PublicationBridge.forged_has_sound_inputs' depends on axioms: [propext, Quot.sound]
+'PublicationBridge.forged_free_false_publication' depends on axioms: [propext, Quot.sound]

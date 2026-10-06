@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "scope": "Independent data-only scorer and preserved developer checks; no participant outcomes",
+  "scorer": {
+    "path": "../../score.py",
+    "sha256": "ce229a7decc58501ba6318c780b7cf5dc49a268731b20474af760af0e655bf6d",
+    "bytes": 51435
+  },
+  "files": {
+    "README.md": {
+      "sha256": "c08e057658e899ff8e0a492f84f03a4afb6e59226a109fda2063a8283f022247",
+      "bytes": 5675
+    },
+    "early-checker-abort-initial.json": {
+      "sha256": "1f0e8ab840dcf50da07de83965e1e89eb550e3a1d8820161c9906abe35612549",
+      "bytes": 3068
+    },
+    "early-checker-abort-repaired.json": {
+      "sha256": "59c7c722f3f5f9cec1a79abe27fd36738be5466d8eb73c68a93aac721b16a711",
+      "bytes": 3764
+    },
+    "early-checker-abort-scored.json": {
+      "sha256": "c8b263c60e6ba8ea79a58f5c6f2a0a18c396057a1cdab0d6219f1864f3c715b1",
+      "bytes": 3834
+    },
+    "ordinary-retained-initial.json": {
+      "sha256": "1b1b0d7288c91ac708340ee261d3f45f209cee501bce897ea68cf67c4b4fc611",
+      "bytes": 6704
+    },
+    "ordinary-retained-repaired.json": {
+      "sha256": "795113a3b2c7e58841181818dfc3547d5c9c7214c73ba3a5ce50598488e3b955",
+      "bytes": 7395
+    },
+    "ordinary-retained-scored.json": {
+      "sha256": "6a487c811627c01632d7d9018fac685ada0d8ec6c98408a43b93ad595a97cfcc",
+      "bytes": 7465
+    },
+    "ordinary-revoked-initial.json": {
+      "sha256": "eb501199733bd35a1ef2f71963cd738cd86f785a89c2f62b1ff24fe32e469a5b",
+      "bytes": 4977
+    },
+    "ordinary-revoked-repaired.json": {
+      "sha256": "0f8771f364ace1fc3aa9b61adabae954d28b823d8779e0f6f189722b8675a18f",
+      "bytes": 5668
+    },
+    "ordinary-revoked-scored.json": {
+      "sha256": "b1bada58d4e18a1436a5be7b66d152b75c91ca38ff49427bf643bc1cd15f1f1b",
+      "bytes": 5738
+    },
+    "preflight-initial-failure/preflight-results.json": {
+      "sha256": "eafe67e9471827644185164b89b24930df4d7e522fc038f6dae551cb14a2f588",
+      "bytes": 12527
+    },
+    "preflight-initial-failure/preflight.py": {
+      "sha256": "7efa737a352180bf64b9a6d382c63dcb786afb40a7d70e2df44295f28504c2dd",
+      "bytes": 7538
+    },
+    "preflight-initial-failure/score.py": {
+      "sha256": "f116795bb1f06952675e4b5071f79697811a589dbc859d1e0318409d1394c317",
+      "bytes": 50685
+    },
+    "preflight-results.json": {
+      "sha256": "c4e081b0ad97cb7500d55dede1991901f195eb5226dd3ec85f4cc8ac52af6a24",
+      "bytes": 12558
+    },
+    "preflight.py": {
+      "sha256": "7e1be6c163ae476fc11ea02680b178fc00975819f6acf4c2267bd190f058a068",
+      "bytes": 7685
+    },
+    "publication-binding-initial.json": {
+      "sha256": "ad97cbb002ce4e3cb73bdb94ad8b3639271d953b2c0450ea42e9d605ca360815",
+      "bytes": 5765
+    },
+    "publication-binding-repaired.json": {
+      "sha256": "ee5aaf7bf7674b4e6705fb0d0b314a96691dd89afaf210629bcb99c655dae391",
+      "bytes": 6458
+    },
+    "publication-binding-scored.json": {
+      "sha256": "01e201ac26d48b597b6364142f6fb55e153dbe1a2d965593289baf7ada939956",
+      "bytes": 6528
+    },
+    "revocation-and-retry-initial.json": {
+      "sha256": "8c510e5c28f7a5fde430bfb0515df05059ad99b5ec82aeef4c16767706f0b37f",
+      "bytes": 6390
+    },
+    "revocation-and-retry-repaired.json": {
+      "sha256": "c482d8080aded3246f4a71ee6ec7f749717a5add15a73d7d079c71dd791995e0",
+      "bytes": 7083
+    },
+    "revocation-and-retry-scored.json": {
+      "sha256": "d073db062c5ceab2915b023fb19de8a6619ef619e2434d60415883bf1c5a0756",
+      "bytes": 7261
+    }
+  }
+}

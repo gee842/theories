@@ -1,0 +1,570 @@
+{
+  "status": "passed",
+  "scope": "Source preservation, exact additive integration and local links only. No simulation, proof compiler, statistical reanalysis or ethical certification.",
+  "prior_source_bindings": [
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/consequence-organization/extract_method_evidence.py",
+      "sha256": "ad5d4ae8795273fa44c9d99145f7bd1b5118f2ddf5521e2715f42f64041782fa",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/PROTOCOL.md",
+      "sha256": "0491194fc7502ea6be11375f793ffc96fe3b60ba59c1468e5afe0c17eb53cd65",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/check.py",
+      "sha256": "5eddfd8d8e2d10c3e858ad443b683f2106f38d8adfb08a3b1049e00781ffc0ab",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/independent-check.json",
+      "sha256": "343271383adae738f6fcbf7a0541d399fa85ad4d19942fcea33803403f40ef97",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/independent_check.py",
+      "sha256": "6c0901f5da5a7fc202e2a743591a36d0ca978a36c0f8ca9fc6de7946f1e5d8c9",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py",
+      "sha256": "f2bcc85688975d9a6e6fac4c0944e5b4f6ce0ede779707719c41428db3a4d303",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/results.json",
+      "sha256": "2b0afb08f3507eaf2de3126dcc43a3dca8dd65ff6603658ee8aae697e42263e4",
+      "matches": true
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py",
+      "sha256": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a",
+      "matches": true
+    }
+  ],
+  "primary_package_files": [
+    {
+      "file": "README.md",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "metadata/provenance.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "original/hulme-2012-figure4.jpg",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "original/hulme-2012-figure6.jpg",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "original/hulme-2012.html",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "reading/hulme-2012.txt",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "file": "verification.json",
+      "hash_matches": true,
+      "size_matches": true
+    }
+  ],
+  "canonical_insertions": [
+    {
+      "file": "RESEARCH.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "sources/SOURCES.md",
+      "inserted_text_present": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "inserted_text_present": true
+    }
+  ],
+  "local_links": [
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#consequences-change-the-organization-of-later-learning",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "39-consequence-organization-2026-10-06/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "AUTONOMOUS-METHOD-FORMATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COST-SENSITIVE-LEARNING.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../sources/39-consequence-organization-2026-10-06/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../sources/39-consequence-organization-2026-10-06/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COST-SENSITIVE-LEARNING.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md#other-established-mechanisms-change-different-arrangements",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "development/consequence-organization/METHOD-EVIDENCE.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "../../../../sources/39-consequence-organization-2026-10-06/README.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "APPLICATION-REVISION-RECONSTRUCTION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "PRETRAINING-EVIDENCE-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "../../2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "CONSEQUENCE-ORGANIZATION-CANONICAL-EDITS.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "target": "CONSEQUENCE-ORGANIZATION-CHECKS.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#keep-foundational-language-at-the-right-level",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "AUTONOMOUS-METHOD-FORMATION-MATH.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/results.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "AUTONOMOUS-METHOD-FORMATION-REVIEW.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "development/consequence-organization/extract_method_evidence.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "target": "development/consequence-organization/METHOD-EVIDENCE.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "AUTONOMOUS-METHOD-FORMATION-MATH.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "APPLICATION-REVISION-RECONSTRUCTION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "development/consequence-organization/METHOD-EVIDENCE.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "../../../../sources/39-consequence-organization-2026-10-06/manifest.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+      "target": "CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "original/hulme-2012.html",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "original/hulme-2012-figure4.jpg",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "original/hulme-2012-figure6.jpg",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "reading/hulme-2012.txt",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "metadata/provenance.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "manifest.json",
+      "exists": true,
+      "fragment_ok": true
+    },
+    {
+      "document": "sources/39-consequence-organization-2026-10-06/README.md",
+      "target": "verification.json",
+      "exists": true,
+      "fragment_ok": true
+    }
+  ],
+  "local_link_count": 75,
+  "note_sha256": {
+    "CONSEQUENCE-ORGANIZATION-COMPARATORS.md": "bcc149eb9abd38b92b62056d15c92f75dec42234fb7adc76f5a41fc28f69621f",
+    "CONSEQUENCE-ORGANIZATION-INTEGRATION.md": "9d22dce99856f9d6c817a2d1a5efc4e9eb45008e69979ac7cd414895543a0c27",
+    "CONSEQUENCE-ORGANIZATION-MECHANISM.md": "8b69dea0e7e4bf50a856664f5a0055c1ecfc97ab178e44a5baffcfd80c4ec0d3",
+    "CONSEQUENCE-ORGANIZATION-REVIEW.md": "5287333f9978510b6561b502dd52515fac498a9c8a4ba170cc92be5aea73eef0"
+  },
+  "source_manifest_sha256": "d76745c387177abb60b8dad75555f202170f3cb3eeba37f873f34b5eba176d12",
+  "checker_sha256": "cc402cf4a853b26b628fde4e443358f3d940769543a8b76cbd18909181252e95"
+}

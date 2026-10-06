@@ -1,0 +1,34 @@
+'EvaluativeSuccession.producer' depends on axioms: [propext, Quot.sound]
+'EvaluativeSuccession.Current' does not depend on any axioms
+'EvaluativeSuccession.command' depends on axioms: [propext]
+'EvaluativeSuccession.Known' depends on axioms: [propext]
+'EvaluativeSuccession.canProbe' does not depend on any axioms
+'EvaluativeSuccession.help' does not depend on any axioms
+'EvaluativeSuccession.enter' does not depend on any axioms
+'EvaluativeSuccession.advance' depends on axioms: [propext, Quot.sound]
+'EvaluativeSuccession.Enabled' depends on axioms: [propext, Quot.sound]
+'RecipientArchive.producer' depends on axioms: [propext, Quot.sound]
+'RecipientArchive.Step' depends on axioms: [propext]
+'RecipientArchive.advance' depends on axioms: [propext]
+'RecipientIdentification.advance' depends on axioms: [propext]
+'RecipientIdentification.Enabled' does not depend on any axioms
+'PaidRecipientReasons.advance' depends on axioms: [propext]
+'PaidRecipientReasons.Enabled' does not depend on any axioms
+'EmissionArchive.advance' depends on axioms: [propext]
+'EmissionArchive.Enabled' does not depend on any axioms
+'RecipientAction.route' depends on axioms: [propext]
+'RecipientCorrection.packedAct' does not depend on any axioms
+def EvaluativeSuccession.producer : RecipientCorrection.Laws →
+  EmissionArchive.Producer RecipientArchive.World RecipientArchive.Event RecipientArchive.Header
+    RecipientArchive.Frame :=
+fun laws => RecipientArchive.producer laws fun i => decide (i = 1)
+def RecipientArchive.producer : RecipientCorrection.Laws →
+  (Nat → Bool) →
+    EmissionArchive.Producer RecipientArchive.World RecipientArchive.Event RecipientArchive.Header
+      RecipientArchive.Frame :=
+fun laws backing =>
+  { step := RecipientArchive.Step laws, bind := fun s i h => RecipientArchive.binding s i h ∧ i < 3 ∧ backing i = true,
+    writable := fun s => s.live = true, emission := RecipientArchive.emission, encode := RecipientArchive.encode,
+    fourBits := RecipientArchive.producer._proof_1, encoding_injective := ⋯,
+    energy := fun s => RecipientIdentification.energy s.core, charge := fun s e x => RecipientArchive.charge laws s e,
+    ledger := ⋯ }

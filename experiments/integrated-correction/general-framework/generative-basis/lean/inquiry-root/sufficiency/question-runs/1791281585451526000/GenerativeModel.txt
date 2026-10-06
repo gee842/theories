@@ -1,0 +1,8 @@
+'Generative.Model.laws_iff_endpoint_histories' does not depend on any axioms
+'Generative.Model.boolean_symmetry_iff_history_classes' does not depend on any axioms
+'Generative.Model.reduced_boolean_properties_iff_history_classes' does not depend on any axioms
+'Generative.Model.symmetric_laws_same_words_different_histories' does not depend on any axioms
+'Generative.Model.synchronized_word_constraints_preserve_feasibility_agreement' does not depend on any axioms
+'Generative.Model.history_record_exactness_iff' does not depend on any axioms
+'Generative.Model.changed_endpoint_with_no_profile_only_decoder' does not depend on any axioms
+'Generative.Model.history_profiles_and_invariance_do_not_select_orientation' does not depend on any axioms

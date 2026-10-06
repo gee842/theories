@@ -1,0 +1,37 @@
+{
+  "scope": "Exact source/log snapshots. Attempt01 failed implicit Decidable unfolding. Attempts02 and03 pass all17 theorem audits;03 changes only scope wording. No scientific experiment or original-law change.",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
+  "source_sha256": "89af77e013389b6e12c3e1aab79f102ae978621ec93747ba601714d9ae6d77a2",
+  "files": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-01.lean",
+      "sha256": "754f55a9bbc12322c9f4698b890cb65c826cb142831ed5a0e7f5bc660f654bf8",
+      "bytes": 8609
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-01.log",
+      "sha256": "3734faac71a349d91a4a0127277ac83daec7d77bf6e7f713a1a1f0c340496aa9",
+      "bytes": 2278
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-02.lean",
+      "sha256": "9ad6771b443b55eb52583baa3d36080122e5149d69ff8821b4c8f2a54b4826e5",
+      "bytes": 9318
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-02.log",
+      "sha256": "21c83480bbc625a459f3766cc2182b91091e0cd1dd932a69af3acb81d3177d12",
+      "bytes": 1952
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-03.lean",
+      "sha256": "89af77e013389b6e12c3e1aab79f102ae978621ec93747ba601714d9ae6d77a2",
+      "bytes": 9326
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/attempt-03.log",
+      "sha256": "fbb3841ca4322e44cbc1bf50b1462cc4ed01c26c1e4267c7613f5089a7828fe4",
+      "bytes": 1951
+    }
+  ]
+}

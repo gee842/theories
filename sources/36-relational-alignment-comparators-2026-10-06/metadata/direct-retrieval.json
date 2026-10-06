@@ -1,0 +1,21 @@
+[
+  {
+    "id": "wagner",
+    "url": "https://link.springer.com/article/10.1007/s43681-026-01362-2",
+    "requested_at_utc": "2026-10-06T03:27:32.126252+00:00",
+    "method": "urllib.request; no authentication; one bounded direct request",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1007/s43681-026-01362-2?error=cookies_not_supported&code=16bf6169-5717-4181-84f8-021d8ee17560",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 477778,
+    "sha256": "df24ed45300a1ee7ced96704ce3c66a18148921ae3a24be2f0debf8bc257579c"
+  },
+  {
+    "id": "cox",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/aaai.70090",
+    "requested_at_utc": "2026-10-06T03:27:32.126889+00:00",
+    "method": "urllib.request; no authentication; one bounded direct request",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "original_body_preserved": false
+  }
+]

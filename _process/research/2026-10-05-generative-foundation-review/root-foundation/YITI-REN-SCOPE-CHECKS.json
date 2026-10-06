@@ -1,0 +1,814 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-06T12:02:09.263673+00:00",
+  "checker_sha256": "e4e8417a22eb62f4306a9cdc731c71eb6f0b2976a1e6a638b01cff46948892a2",
+  "files": {
+    "RESEARCH.md": "bf1f8b686ab5ee6cab0705685237cc287113e9b4ffcfd6da50a363053dffbc60",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-CHECK.py": "e4e8417a22eb62f4306a9cdc731c71eb6f0b2976a1e6a638b01cff46948892a2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-EDITS.json": "465cd1fc27737886faf0da81d9cadb9e7c564ced810eeb8e2c89e40500d8cfe6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md": "259dbacc4b1349d74f360177210f7a2bae921c96d31692c206383db62a2ae887",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md": "431ef46a5115734e25fd5cc399c869293af330d91311546934ff9ed498cd8b73",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md": "97d5aed295b3de424891a9e8e72c47a0cbc86add23bcec7f842e8775c0a69377",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md": "841dae9d341e23555d7da566fbd703ab9a0755245585e0313ae5438357ead5f4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md": "c8af9da4afcd313a4366923f6f792bb4109131fc87a4dda1da45b95215335ebd",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": "b8da9a5516d9c8f7b52ffe709d17bd5d1fd9508bc55ccaa8db07279ab9681a1c",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_scope.py": "f72a2ac6f5241d6c907874987d409e387606a7e6a288a892cfe6a2a6fd729edb",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/AcquiredActivityScope.lean": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/AcquiredActivityScope.txt": "b08fec59afa0913b523a768669fb9fac43033b42afc8f25d8193d6eabe8c6c57",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/AcquiredPurposeCriterion.lean": "3eb64e26f4128ecf2dc8991806c8010ec636fb123cdc9c89b2999d3a50355abc",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/AcquiredPurposeCriterion.txt": "57c0f37da3692339f4f425876bd6d3e50cd306e3c5214345f0fd281b33f32da5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/ActivityScopeFixtures.lean": "1709140ea6751b27d745d5795c0626e0fd8f8561e364ff95289b6dec72c4fe3a",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/ActivityScopeFixtures.txt": "1d585ca2457f796085080a27322dcd6d72331a0c7c93241d4a9ac6067ede21bd",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/FormedSelection.txt": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/check_purpose.py": "0bb2260b791d0504019ebd96dab7275c6ca8701e166931bca114f7e810c1dad5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/check_scope.py": "e1b56a41e3f9e121f73ca5b1e8451a7df8ddc3ec1998e74d21b2b78ed4bdb7b0",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/inputs.json": "2aa4140858a820efd0bb21c885d9a6e0c95bd65396acbbcfac927b0b445f4fcf",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/receipt.json": "3fcf9dd46d9889c3dc0e7fbd42a3e6035ed86e9dccdc812473b4432076a2b04c",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/AcquiredActivityScope.lean": "ebec8d830e2c936febc41a2935b8436ad4550db2777e4a106171ec2bf2ba29ac",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/AcquiredActivityScope.txt": "b08fec59afa0913b523a768669fb9fac43033b42afc8f25d8193d6eabe8c6c57",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/AcquiredPurposeCriterion.lean": "3eb64e26f4128ecf2dc8991806c8010ec636fb123cdc9c89b2999d3a50355abc",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/AcquiredPurposeCriterion.txt": "57c0f37da3692339f4f425876bd6d3e50cd306e3c5214345f0fd281b33f32da5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/ActivityScopeFixtures.lean": "1709140ea6751b27d745d5795c0626e0fd8f8561e364ff95289b6dec72c4fe3a",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/ActivityScopeFixtures.txt": "87c767a4e9972c77ab128fd8ac3664ab970a00cd172ba6f73fb76babd2fd892c",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/FormedSelection.txt": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/check_purpose.py": "0bb2260b791d0504019ebd96dab7275c6ca8701e166931bca114f7e810c1dad5",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/check_scope.py": "f72a2ac6f5241d6c907874987d409e387606a7e6a288a892cfe6a2a6fd729edb",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/inputs.json": "59fa4b488d3d3f21300211aa8615fae61ff929c2f6531f4454887704f8aeedfa",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/receipt.json": "fab218a73c7a57ca5e88093523339fab02f63b97f292290716971ceca28f7b3b",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json": "fab218a73c7a57ca5e88093523339fab02f63b97f292290716971ceca28f7b3b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md": "605f54aedd4ed10d6c8b6686bd457ecabc4615474ad1c65ee5f26f8e38500c91",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md": "f806f27ea883c60086e7e82eac9cf8f46797d85cdfd4090c7dd5ac808abd2271",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-independent-check.json": "b87ada3f960ee38e40e189436d277dc19f33b90344fd9cff64d363514db9d08c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json": "ed9cad0a5f961c53ac5ab0acd48708d1e8ea41935672ca4399df8b4faad355a2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py": "78bbbe753c54f61779199c4a7e7615fdf3741670b7c53a5e4fa72e4a038e20eb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope_independent_check.py": "8d0413c5ca8d63759242db397dee48cbc98f43b6d9593ee816f0a8aba7e5e27d",
+    "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md": "810eb808b6eff2d5495ecd04a441cd5992c0c9a9718bc27109716347b256ee4e",
+    "sources/42-helping-scope-2026-10-06/README.md": "4ce986573efeeb08ced15fc5a227655d5a2bd5204578b58c9516626a199251a6",
+    "sources/42-helping-scope-2026-10-06/hepach-vaish-tomasello-2012.pdf": "95216a67b5a9ce0025f9647f0da422e008f96a313a252f02e2826cb98d00ba1d",
+    "sources/42-helping-scope-2026-10-06/hepach-vaish-tomasello-2016-online.pdf": "baf0b6bfa8dbe1d6d1252b9ce57fcf304fc1f0381f15fef1feba8add133473a7",
+    "sources/42-helping-scope-2026-10-06/manifest.json": "d432de46c6eac94a872bd8f4fbff8c88cd41d18867903fc74b42c09d6e618930",
+    "sources/SOURCES.md": "b76e9340f882f30caf2ed15712a8e737b13675b9d633060af2c069a940eedc88",
+    "theories/shengsheng-buxi-generative-existence/README.md": "ed2a14d7451fef5b6523c37446961ff85663220af043a3fcacfe6e2c857e1829",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "0e8d5b80c1067c0e3a035436b9fea7d14fac50491040045171567114311c3b81",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "c928bfcf42b9e6228a8e659a0aba79d09838b689393e845606d86edce48c1179"
+  },
+  "links": [
+    {
+      "source": "sources/SOURCES.md",
+      "target": "42-helping-scope-2026-10-06/README.md",
+      "valid": true
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#14-活动及其范围本身的形成改变和结束",
+      "valid": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#14-活动及其范围本身的形成改变和结束",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "NONINSTRUMENTAL-CONCERN.md#14-活动及其范围本身的形成改变和结束",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "AcquiredActivityScope.lean",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "../../../../shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "scope-verification.json",
+      "valid": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "ELECTIVE-CONCERN-ARGUMENT.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "WHOLE-PROCESS-REALIZATION-ARGUMENT.md#10-concerns-object-and-the-grounds-of-its-correction",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "YITI-REN-CRITERION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "YITI-REN-SCOPE-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#8-continuation-formed-understanding-can-correct-its-source",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "YITI-REN-DIRECTION-ARGUMENT.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+      "target": "YITI-REN-SCOPE-REVIEW.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md",
+      "target": "PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md",
+      "target": "../../../../sources/42-helping-scope-2026-10-06/README.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#同意开始四项剩余工作的下一轮",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "YITI-REN-CRITERION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-independent-check.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "YITI-REN-SCOPE-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "YITI-REN-SCOPE-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "YITI-REN-SCOPE-GROUNDING.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "YITI-REN-SCOPE-REVIEW.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+      "target": "YITI-REN-CRITERION-REVIEW.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "YITI-REN-CRITERION-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_scope.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287398620303000/receipt.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/receipt.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "YITI-REN-CRITERION-REVIEW.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "YITI-REN-SCOPE-GROUNDING.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope_independent_check.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-independent-check.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_scope.py",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#14-活动及其范围本身的形成改变和结束",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "YITI-REN-SCOPE-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+      "target": "YITI-REN-SCOPE-MATH.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "target": "SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "target": "scope.py",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "target": "scope-results.json",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "target": "scope_independent_check.py",
+      "valid": true
+    },
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE.md",
+      "target": "scope-independent-check.json",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/README.md",
+      "target": "manifest.json",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/README.md",
+      "target": "hepach-vaish-tomasello-2012.pdf",
+      "valid": true
+    },
+    {
+      "source": "sources/42-helping-scope-2026-10-06/README.md",
+      "target": "hepach-vaish-tomasello-2016-online.pdf",
+      "valid": true
+    }
+  ],
+  "owned_edits": 12,
+  "edit_recovery": [
+    {
+      "path": "RESEARCH.md",
+      "reversible_owned_fragments": true,
+      "baseline_matches": false
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "reversible_owned_fragments": true,
+      "baseline_matches": true
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md",
+      "reversible_owned_fragments": true,
+      "baseline_matches": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "reversible_owned_fragments": true,
+      "baseline_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reversible_owned_fragments": true,
+      "baseline_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reversible_owned_fragments": true,
+      "baseline_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "reversible_owned_fragments": true,
+      "baseline_matches": true
+    }
+  ],
+  "source_prefix_preserved": true,
+  "verification_bindings": [
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion-results.json",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/model.py",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "native",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion-results.json",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/model.py",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/SCOPE-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/CRITERION-PROTOCOL.md",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion-results.json",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/study.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/results.json",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/process.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/model.py",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "formal",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
+      "valid": true
+    },
+    {
+      "label": "independent result",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+      "valid": true
+    },
+    {
+      "label": "independent checker",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope_independent_check.py",
+      "valid": true
+    },
+    {
+      "label": "independent ancestral-law helper",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion_independent_check.py",
+      "valid": true
+    },
+    {
+      "label": "formal native result",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json",
+      "valid": true
+    },
+    {
+      "label": "compiler",
+      "path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "valid": true
+    },
+    {
+      "label": "formal checker",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_scope.py",
+      "valid": true
+    },
+    {
+      "label": "formal checker helper",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_purpose.py",
+      "valid": true
+    },
+    {
+      "label": "GenerativeCore source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "valid": true
+    },
+    {
+      "label": "GenerativeCore log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/GenerativeCore.txt",
+      "valid": true
+    },
+    {
+      "label": "FormedSelection source",
+      "path": "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "valid": true
+    },
+    {
+      "label": "FormedSelection log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/FormedSelection.txt",
+      "valid": true
+    },
+    {
+      "label": "AcquiredPurposeCriterion source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean",
+      "valid": true
+    },
+    {
+      "label": "AcquiredPurposeCriterion log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/AcquiredPurposeCriterion.txt",
+      "valid": true
+    },
+    {
+      "label": "AcquiredActivityScope source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
+      "valid": true
+    },
+    {
+      "label": "AcquiredActivityScope log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/AcquiredActivityScope.txt",
+      "valid": true
+    },
+    {
+      "label": "ActivityScopeFixtures source",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/ActivityScopeFixtures.lean",
+      "valid": true
+    },
+    {
+      "label": "ActivityScopeFixtures log",
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-checks/1791287626704976000/ActivityScopeFixtures.txt",
+      "valid": true
+    },
+    {
+      "label": "preserved original",
+      "path": "/Users/ren/theories/sources/42-helping-scope-2026-10-06/hepach-vaish-tomasello-2012.pdf",
+      "valid": true
+    },
+    {
+      "label": "preserved original",
+      "path": "/Users/ren/theories/sources/42-helping-scope-2026-10-06/hepach-vaish-tomasello-2016-online.pdf",
+      "valid": true
+    }
+  ],
+  "receipts": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-results.json": "ed9cad0a5f961c53ac5ab0acd48708d1e8ea41935672ca4399df8b4faad355a2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/scope-independent-check.json": "b87ada3f960ee38e40e189436d277dc19f33b90344fd9cff64d363514db9d08c",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json": "fab218a73c7a57ca5e88093523339fab02f63b97f292290716971ceca28f7b3b"
+  },
+  "scope": "Owned-fragment, local-link and saved verification binding check; no new scientific or compiler run.",
+  "recovery_scope": "In-memory only; concurrent edits outside owned fragments are preserved and may change whole-file baseline hashes.",
+  "universal_proof_completed": false,
+  "errors": []
+}

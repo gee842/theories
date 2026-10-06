@@ -1,0 +1,8 @@
+'PlasticityPreparation.runnable_trace' depends on axioms: [propext]
+'PlasticityPreparation.formation_feasible' depends on axioms: [propext]
+'PlasticityPreparation.formation_trace' depends on axioms: [propext]
+'PlasticityPreparation.formation_endpoint' depends on axioms: [propext]
+'PlasticityPreparation.assembly_feasible' does not depend on any axioms
+'PlasticityPreparation.material_partition' depends on axioms: [propext]
+'PlasticityPreparation.exact_parent_preparation' depends on axioms: [propext]
+'PlasticityPreparation.protected_accounts' does not depend on any axioms

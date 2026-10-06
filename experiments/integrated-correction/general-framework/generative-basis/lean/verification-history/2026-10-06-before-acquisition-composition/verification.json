@@ -1,0 +1,839 @@
+{
+  "checked_at_utc": "2026-10-06T05:31:52.122727+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "7f672e5dcef013001f5864fb260468521dcb94d1ebe56c6d923b613006c88ba1",
+  "checker_unchanged_during_check": true,
+  "historical_evidence_hashes_match": true,
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "local_precompiled_imports_used": false,
+  "axiom_policy": "No new declared axiom dependencies; every new/deeper audit empty. Only exact original declarations may retain recorded dependencies.",
+  "original_verification": "verification-history/2026-10-06-before-model-integration/verification.json",
+  "previous_integration_verification": "verification-history/2026-10-06-before-generated-self/verification.json",
+  "previous_integration_audits_retained": true,
+  "previous_nonentry_sources_unchanged": true,
+  "previous_integration_evidence_hashes_match": true,
+  "self_formation_extension_declarations": [
+    "Generative.EthicalOrientation.actual_histories_with_unselected_orientation",
+    "Generative.EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth",
+    "Generative.EthicalOrientation.continuation_preorder",
+    "Generative.EthicalOrientation.continuation_product_mono",
+    "Generative.EthicalOrientation.continuation_projection_iff",
+    "Generative.EthicalOrientation.converse_preorder",
+    "Generative.EthicalOrientation.history_length_map",
+    "Generative.EthicalOrientation.history_length_preorder",
+    "Generative.EthicalOrientation.history_orders_renaming_invariant",
+    "Generative.EthicalOrientation.opposed_coherent_annotation_invariant_orders",
+    "Generative.EthicalOrientation.pullback_fiber_invariant",
+    "Generative.EthicalOrientation.pullback_preorder",
+    "Generative.EthicalOrientation.toggle_compared_histories_same_residual",
+    "Generative.EthicalOrientation.toggle_continuation_equivalent",
+    "Generative.EthicalOrientation.toggle_has_no_every_step_strict_order",
+    "Generative.EthicalOrientation.toggle_same_endpoint_histories",
+    "Generative.EthicalOrientation.two_events_strictly_longer",
+    "Generative.Model.changed_endpoint_with_no_profile_only_decoder",
+    "Generative.Model.history_profiles_and_invariance_do_not_select_orientation",
+    "Generative.Model.history_record_exactness_iff",
+    "Generative.SelfFormation.actual_continuation_enters_residual",
+    "Generative.SelfFormation.exact_summary_collision_profiles",
+    "Generative.SelfFormation.exact_summary_distinguishes",
+    "Generative.SelfFormation.exact_summary_exists_iff",
+    "Generative.SelfFormation.no_invariant_unique_toggle_center",
+    "Generative.SelfFormation.no_profile_only_toggle_state_decoder",
+    "Generative.SelfFormation.profiles_extend",
+    "Generative.SelfFormation.profiles_refl",
+    "Generative.SelfFormation.profiles_retain_feasibility",
+    "Generative.SelfFormation.profiles_symm",
+    "Generative.SelfFormation.profiles_trans",
+    "Generative.SelfFormation.recurrence_without_profile_differentiation",
+    "Generative.SelfFormation.residual_at_unique_endpoint",
+    "Generative.SelfFormation.residual_empty_future",
+    "Generative.SelfFormation.residual_empty_history",
+    "Generative.SelfFormation.residual_exact_projection",
+    "Generative.SelfFormation.residual_history_realization",
+    "Generative.SelfFormation.residual_iff_actual_boundary",
+    "Generative.SelfFormation.residual_of_total",
+    "Generative.SelfFormation.residual_prefix",
+    "Generative.SelfFormation.residual_update",
+    "Generative.SelfFormation.toggle_states_differ_profiles_agree",
+    "Generative.SelfFormation.total_profiles_identical"
+  ],
+  "self_formation_extension_audits": 43,
+  "acquired_record_baseline": "verification-history/2026-10-06-before-acquired-record/verification.json",
+  "acquired_record_baseline_sources_unchanged": true,
+  "acquired_record_baseline_audits_retained": true,
+  "acquired_record_baseline_evidence_hashes_match": true,
+  "outcome_extension_declarations": [
+    "Generative.Model.outcome_agreement_preserves_feasible_future_agreement",
+    "Generative.Model.outcome_record_exactness_iff",
+    "Generative.Model.same_words_can_have_different_outcomes",
+    "Generative.OutcomeContinuation.empty_future_at_unique_endpoint",
+    "Generative.OutcomeContinuation.exact_outcome_summary_collision",
+    "Generative.OutcomeContinuation.exact_outcome_summary_distinguishes",
+    "Generative.OutcomeContinuation.exact_outcome_summary_exists_iff",
+    "Generative.OutcomeContinuation.exists_outcome_iff_feasible",
+    "Generative.OutcomeContinuation.identity_outcome_iff_trace",
+    "Generative.OutcomeContinuation.outcome_iff_actual_boundary",
+    "Generative.OutcomeContinuation.outcome_of_actual_history",
+    "Generative.OutcomeContinuation.outcome_profiles_extend",
+    "Generative.OutcomeContinuation.outcome_profiles_retain_feasibility",
+    "Generative.OutcomeContinuation.outcome_residual_update",
+    "Generative.OutcomeContinuation.outcome_singleton_at_unique_successor",
+    "Generative.OutcomeContinuation.outcome_singleton_iff",
+    "Generative.OutcomeContinuation.step_agreement_iff_endpoint_outcomes"
+  ],
+  "outcome_extension_audits": 17,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "GenerativeCore.olean",
+        "GenerativeCore.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 18,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "BoundaryModels",
+      "source": "BoundaryModels.lean",
+      "source_sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "BoundaryModels.olean",
+        "BoundaryModels.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 8,
+      "audited_declarations": [
+        "GenerativeBoundary.ObservationLoss.no_observation_only_classifier",
+        "GenerativeBoundary.SharedResource.individual_feasibility_without_joint_feasibility",
+        "GenerativeBoundary.FixedSelector.returns_after_two",
+        "GenerativeBoundary.FixedSelector.changes_phase_every_step",
+        "GenerativeBoundary.FixedSelector.selector_changes_next_phase",
+        "GenerativeBoundary.FixedSelector.selector_preserved_by_step",
+        "GenerativeBoundary.FixedSelector.selector_unchanged_at_every_time",
+        "GenerativeBoundary.FixedSelector.recurrent_process_with_fixed_selector"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "GenerativeBoundary.ObservationLoss.no_observation_only_classifier": [],
+        "GenerativeBoundary.SharedResource.individual_feasibility_without_joint_feasibility": [],
+        "GenerativeBoundary.FixedSelector.returns_after_two": [],
+        "GenerativeBoundary.FixedSelector.changes_phase_every_step": [],
+        "GenerativeBoundary.FixedSelector.selector_changes_next_phase": [],
+        "GenerativeBoundary.FixedSelector.selector_preserved_by_step": [],
+        "GenerativeBoundary.FixedSelector.selector_unchanged_at_every_time": [],
+        "GenerativeBoundary.FixedSelector.recurrent_process_with_fixed_selector": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/BoundaryModels.txt",
+      "output_sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "module": "Depletion",
+      "source": "Depletion.lean",
+      "source_sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "Depletion.olean",
+        "Depletion.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 5,
+      "audited_declarations": [
+        "Generative.trace_reserve_bound",
+        "Generative.trace_length_bound",
+        "Generative.no_nonempty_cycle_under_depletion",
+        "Generative.infinite_execution_contradicts_depletion",
+        "Generative.no_infinite_execution_under_depletion"
+      ],
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "axioms_by_declaration": {
+        "Generative.trace_reserve_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.trace_length_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.no_nonempty_cycle_under_depletion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.infinite_execution_contradicts_depletion": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.no_infinite_execution_under_depletion": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/Depletion.txt",
+      "output_sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "module": "RootRealization",
+      "source": "RootRealization.lean",
+      "source_sha256": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "RootRealization.olean",
+        "RootRealization.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 16,
+      "audited_declarations": [
+        "Generative.Realization.activity_changes_its_continuation_conditions",
+        "Generative.Realization.phase_determined_by_support_and_selector",
+        "Generative.Realization.restoration_guard",
+        "Generative.Realization.consequential_internal_revision",
+        "Generative.Realization.revision_guard_requires_depletion",
+        "Generative.Realization.restoration_requires_external_provision",
+        "Generative.Realization.reaches_renewable_state",
+        "Generative.Realization.nonempty_cycle",
+        "Generative.Realization.recurrent_execution",
+        "Generative.Realization.reaches_terminal",
+        "Generative.Realization.terminal_has_no_action",
+        "Generative.Realization.no_continuation_after_loss",
+        "Generative.Realization.same_law_admits_renewal_and_loss",
+        "Generative.Realization.decoration_local_exact",
+        "Generative.Realization.decoration_trace_exact",
+        "Generative.Realization.support_alone_is_incomplete"
+      ],
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "axioms_by_declaration": {
+        "Generative.Realization.activity_changes_its_continuation_conditions": [
+          "propext"
+        ],
+        "Generative.Realization.phase_determined_by_support_and_selector": [
+          "propext"
+        ],
+        "Generative.Realization.restoration_guard": [
+          "propext"
+        ],
+        "Generative.Realization.consequential_internal_revision": [
+          "propext"
+        ],
+        "Generative.Realization.revision_guard_requires_depletion": [
+          "propext"
+        ],
+        "Generative.Realization.restoration_requires_external_provision": [
+          "propext"
+        ],
+        "Generative.Realization.reaches_renewable_state": [
+          "propext"
+        ],
+        "Generative.Realization.nonempty_cycle": [
+          "propext"
+        ],
+        "Generative.Realization.recurrent_execution": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.Realization.reaches_terminal": [
+          "propext"
+        ],
+        "Generative.Realization.terminal_has_no_action": [
+          "propext"
+        ],
+        "Generative.Realization.no_continuation_after_loss": [
+          "propext"
+        ],
+        "Generative.Realization.same_law_admits_renewal_and_loss": [
+          "propext"
+        ],
+        "Generative.Realization.decoration_local_exact": [
+          "propext"
+        ],
+        "Generative.Realization.decoration_trace_exact": [
+          "propext"
+        ],
+        "Generative.Realization.support_alone_is_incomplete": [
+          "propext"
+        ]
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/RootRealization.txt",
+      "output_sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    },
+    {
+      "module": "ProductTower",
+      "source": "deeper/ProductTower.lean",
+      "source_sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "ProductTower.olean",
+        "ProductTower.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 7,
+      "audited_declarations": [
+        "Generative.Deeper.leaf_diagonal",
+        "Generative.Deeper.diagonal_injective",
+        "Generative.Deeper.tower_nonempty_iff",
+        "Generative.Deeper.tower_subsingleton",
+        "Generative.Deeper.tower_subsingleton_iff",
+        "Generative.Deeper.tower_empty_iff",
+        "Generative.Deeper.seed_distinction_persists"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Deeper.leaf_diagonal": [],
+        "Generative.Deeper.diagonal_injective": [],
+        "Generative.Deeper.tower_nonempty_iff": [],
+        "Generative.Deeper.tower_subsingleton": [],
+        "Generative.Deeper.tower_subsingleton_iff": [],
+        "Generative.Deeper.tower_empty_iff": [],
+        "Generative.Deeper.seed_distinction_persists": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/ProductTower.txt",
+      "output_sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "source": "deeper/DynamicUnderdetermination.lean",
+      "source_sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "DynamicUnderdetermination.olean",
+        "DynamicUnderdetermination.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 9,
+      "audited_declarations": [
+        "Generative.Deeper.idle_no_event",
+        "Generative.Deeper.static_event",
+        "Generative.Deeper.static_never_changes",
+        "Generative.Deeper.toggle_event",
+        "Generative.Deeper.toggle_always_changes",
+        "Generative.Deeper.static_history_never_changes",
+        "Generative.Deeper.toggle_two_event_cycle",
+        "Generative.Deeper.same_carrier_incompatible_laws",
+        "Generative.Deeper.event_without_state_distinction"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Deeper.idle_no_event": [],
+        "Generative.Deeper.static_event": [],
+        "Generative.Deeper.static_never_changes": [],
+        "Generative.Deeper.toggle_event": [],
+        "Generative.Deeper.toggle_always_changes": [],
+        "Generative.Deeper.static_history_never_changes": [],
+        "Generative.Deeper.toggle_two_event_cycle": [],
+        "Generative.Deeper.same_carrier_incompatible_laws": [],
+        "Generative.Deeper.event_without_state_distinction": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/DynamicUnderdetermination.txt",
+      "output_sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "module": "GeneratedPaths",
+      "source": "deeper/GeneratedPaths.lean",
+      "source_sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "GeneratedPaths.olean",
+        "GeneratedPaths.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 9,
+      "audited_declarations": [
+        "Generative.Deeper.reach_refl",
+        "Generative.Deeper.reach_step",
+        "Generative.Deeper.reach_trans",
+        "Generative.Deeper.trace_evaluate",
+        "Generative.Deeper.reach_evaluate",
+        "Generative.Deeper.reach_least",
+        "Generative.Deeper.reach_is_least_closure",
+        "Generative.Deeper.least_closure_unique",
+        "Generative.Deeper.reach_without_steps_iff"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Deeper.reach_refl": [],
+        "Generative.Deeper.reach_step": [],
+        "Generative.Deeper.reach_trans": [],
+        "Generative.Deeper.trace_evaluate": [],
+        "Generative.Deeper.reach_evaluate": [],
+        "Generative.Deeper.reach_least": [],
+        "Generative.Deeper.reach_is_least_closure": [],
+        "Generative.Deeper.least_closure_unique": [],
+        "Generative.Deeper.reach_without_steps_iff": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/GeneratedPaths.txt",
+      "output_sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "module": "HistoryRealization",
+      "source": "deeper/HistoryRealization.lean",
+      "source_sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "HistoryRealization.olean",
+        "HistoryRealization.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 7,
+      "audited_declarations": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Deeper.append_nil_constructive": [],
+        "Generative.Deeper.append_assoc_constructive": [],
+        "Generative.Deeper.history_trace_iff": [],
+        "Generative.Deeper.history_from_empty_iff": [],
+        "Generative.Deeper.history_feasible_iff": [],
+        "Generative.Deeper.process_language_prefix_closed": [],
+        "Generative.Deeper.process_language_exact_history_realization": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/HistoryRealization.txt",
+      "output_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "module": "DynamicSymmetry",
+      "source": "deeper/DynamicSymmetry.lean",
+      "source_sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "DynamicSymmetry.olean",
+        "DynamicSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 20,
+      "audited_declarations": [
+        "Generative.Deeper.unique_predecessor_of_total_deterministic_symmetric",
+        "Generative.Deeper.static_total",
+        "Generative.Deeper.toggle_total",
+        "Generative.Deeper.static_deterministic",
+        "Generative.Deeper.toggle_deterministic",
+        "Generative.Deeper.static_symmetric",
+        "Generative.Deeper.toggle_symmetric",
+        "Generative.Deeper.static_unique_predecessor",
+        "Generative.Deeper.toggle_unique_predecessor",
+        "Generative.Deeper.identity_bool_bijection",
+        "Generative.Deeper.negation_bool_bijection",
+        "Generative.Deeper.injective_bool_map_forms",
+        "Generative.Deeper.injective_bool_map_commutes_not",
+        "Generative.Deeper.static_renaming_invariant",
+        "Generative.Deeper.toggle_renaming_invariant",
+        "Generative.Deeper.static_symmetry_candidate",
+        "Generative.Deeper.toggle_symmetry_candidate",
+        "Generative.Deeper.static_ne_toggle",
+        "Generative.Deeper.no_state_map_identifies_static_toggle",
+        "Generative.Deeper.symmetric_dynamics_remain_underdetermined"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Deeper.unique_predecessor_of_total_deterministic_symmetric": [],
+        "Generative.Deeper.static_total": [],
+        "Generative.Deeper.toggle_total": [],
+        "Generative.Deeper.static_deterministic": [],
+        "Generative.Deeper.toggle_deterministic": [],
+        "Generative.Deeper.static_symmetric": [],
+        "Generative.Deeper.toggle_symmetric": [],
+        "Generative.Deeper.static_unique_predecessor": [],
+        "Generative.Deeper.toggle_unique_predecessor": [],
+        "Generative.Deeper.identity_bool_bijection": [],
+        "Generative.Deeper.negation_bool_bijection": [],
+        "Generative.Deeper.injective_bool_map_forms": [],
+        "Generative.Deeper.injective_bool_map_commutes_not": [],
+        "Generative.Deeper.static_renaming_invariant": [],
+        "Generative.Deeper.toggle_renaming_invariant": [],
+        "Generative.Deeper.static_symmetry_candidate": [],
+        "Generative.Deeper.toggle_symmetry_candidate": [],
+        "Generative.Deeper.static_ne_toggle": [],
+        "Generative.Deeper.no_state_map_identifies_static_toggle": [],
+        "Generative.Deeper.symmetric_dynamics_remain_underdetermined": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/DynamicSymmetry.txt",
+      "output_sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "module": "DynamicConsequences",
+      "source": "deeper/DynamicConsequences.lean",
+      "source_sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "DynamicConsequences.olean",
+        "DynamicConsequences.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 9,
+      "audited_declarations": [
+        "Generative.Deeper.same_steps_iff_endpoint_traces",
+        "Generative.Deeper.same_steps_feasible_iff",
+        "Generative.Deeper.feasible_of_step_total",
+        "Generative.Deeper.total_processes_same_feasible",
+        "Generative.Deeper.static_toggle_same_feasible",
+        "Generative.Deeper.static_toggle_singleton_endpoints_differ",
+        "Generative.Deeper.static_toggle_not_endpoint_trace_equivalent",
+        "Generative.Deeper.static_toggle_not_same_steps",
+        "Generative.Deeper.word_feasibility_does_not_determine_endpoints"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Deeper.same_steps_iff_endpoint_traces": [],
+        "Generative.Deeper.same_steps_feasible_iff": [],
+        "Generative.Deeper.feasible_of_step_total": [],
+        "Generative.Deeper.total_processes_same_feasible": [],
+        "Generative.Deeper.static_toggle_same_feasible": [],
+        "Generative.Deeper.static_toggle_singleton_endpoints_differ": [],
+        "Generative.Deeper.static_toggle_not_endpoint_trace_equivalent": [],
+        "Generative.Deeper.static_toggle_not_same_steps": [],
+        "Generative.Deeper.word_feasibility_does_not_determine_endpoints": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/DynamicConsequences.txt",
+      "output_sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "module": "DynamicClassification",
+      "source": "deeper/DynamicClassification.lean",
+      "source_sha256": "0da653296377300a7f77af100a7d2bcd46433e3f0882fe5a9b9bc8c697e32698",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "DynamicClassification.olean",
+        "DynamicClassification.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 6,
+      "audited_declarations": [
+        "Generative.Deeper.symmetry_candidate_of_step_description",
+        "Generative.Deeper.total_deterministic_renaming_descriptions",
+        "Generative.Deeper.total_deterministic_renaming_iff_descriptions",
+        "Generative.Deeper.symmetry_candidate_iff_descriptions",
+        "Generative.Deeper.symmetry_candidate_iff_reduced_properties",
+        "Generative.Deeper.static_toggle_descriptions_exclusive"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Deeper.symmetry_candidate_of_step_description": [],
+        "Generative.Deeper.total_deterministic_renaming_descriptions": [],
+        "Generative.Deeper.total_deterministic_renaming_iff_descriptions": [],
+        "Generative.Deeper.symmetry_candidate_iff_descriptions": [],
+        "Generative.Deeper.symmetry_candidate_iff_reduced_properties": [],
+        "Generative.Deeper.static_toggle_descriptions_exclusive": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/DynamicClassification.txt",
+      "output_sha256": "e6dda2f9ff8c5795eb23159ec3aaecae1324c014145f006b8020acd4273d7e71"
+    },
+    {
+      "module": "GeneratedSelf",
+      "source": "GeneratedSelf.lean",
+      "source_sha256": "96b5b5a71e465abbf6139bb230cecfa8b28bb48b58d519fd2a5c7cccdf165c6d",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "GeneratedSelf.olean",
+        "GeneratedSelf.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 23,
+      "audited_declarations": [
+        "Generative.SelfFormation.residual_empty_history",
+        "Generative.SelfFormation.residual_empty_future",
+        "Generative.SelfFormation.residual_iff_actual_boundary",
+        "Generative.SelfFormation.residual_update",
+        "Generative.SelfFormation.residual_prefix",
+        "Generative.SelfFormation.actual_continuation_enters_residual",
+        "Generative.SelfFormation.residual_at_unique_endpoint",
+        "Generative.SelfFormation.residual_history_realization",
+        "Generative.SelfFormation.profiles_refl",
+        "Generative.SelfFormation.profiles_symm",
+        "Generative.SelfFormation.profiles_trans",
+        "Generative.SelfFormation.profiles_extend",
+        "Generative.SelfFormation.profiles_retain_feasibility",
+        "Generative.SelfFormation.exact_summary_collision_profiles",
+        "Generative.SelfFormation.exact_summary_distinguishes",
+        "Generative.SelfFormation.exact_summary_exists_iff",
+        "Generative.SelfFormation.residual_exact_projection",
+        "Generative.SelfFormation.residual_of_total",
+        "Generative.SelfFormation.total_profiles_identical",
+        "Generative.SelfFormation.toggle_states_differ_profiles_agree",
+        "Generative.SelfFormation.no_profile_only_toggle_state_decoder",
+        "Generative.SelfFormation.recurrence_without_profile_differentiation",
+        "Generative.SelfFormation.no_invariant_unique_toggle_center"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.SelfFormation.residual_empty_history": [],
+        "Generative.SelfFormation.residual_empty_future": [],
+        "Generative.SelfFormation.residual_iff_actual_boundary": [],
+        "Generative.SelfFormation.residual_update": [],
+        "Generative.SelfFormation.residual_prefix": [],
+        "Generative.SelfFormation.actual_continuation_enters_residual": [],
+        "Generative.SelfFormation.residual_at_unique_endpoint": [],
+        "Generative.SelfFormation.residual_history_realization": [],
+        "Generative.SelfFormation.profiles_refl": [],
+        "Generative.SelfFormation.profiles_symm": [],
+        "Generative.SelfFormation.profiles_trans": [],
+        "Generative.SelfFormation.profiles_extend": [],
+        "Generative.SelfFormation.profiles_retain_feasibility": [],
+        "Generative.SelfFormation.exact_summary_collision_profiles": [],
+        "Generative.SelfFormation.exact_summary_distinguishes": [],
+        "Generative.SelfFormation.exact_summary_exists_iff": [],
+        "Generative.SelfFormation.residual_exact_projection": [],
+        "Generative.SelfFormation.residual_of_total": [],
+        "Generative.SelfFormation.total_profiles_identical": [],
+        "Generative.SelfFormation.toggle_states_differ_profiles_agree": [],
+        "Generative.SelfFormation.no_profile_only_toggle_state_decoder": [],
+        "Generative.SelfFormation.recurrence_without_profile_differentiation": [],
+        "Generative.SelfFormation.no_invariant_unique_toggle_center": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/GeneratedSelf.txt",
+      "output_sha256": "cc19a153226c56e71e7c389e6602ae781cb3216735a93e9dd3c34e42431fea75"
+    },
+    {
+      "module": "EthicalOrientation",
+      "source": "EthicalOrientation.lean",
+      "source_sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "EthicalOrientation.olean",
+        "EthicalOrientation.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 17,
+      "audited_declarations": [
+        "Generative.EthicalOrientation.continuation_preorder",
+        "Generative.EthicalOrientation.converse_preorder",
+        "Generative.EthicalOrientation.pullback_preorder",
+        "Generative.EthicalOrientation.pullback_fiber_invariant",
+        "Generative.EthicalOrientation.continuation_product_mono",
+        "Generative.EthicalOrientation.continuation_projection_iff",
+        "Generative.EthicalOrientation.history_length_map",
+        "Generative.EthicalOrientation.history_length_preorder",
+        "Generative.EthicalOrientation.history_orders_renaming_invariant",
+        "Generative.EthicalOrientation.two_events_strictly_longer",
+        "Generative.EthicalOrientation.opposed_coherent_annotation_invariant_orders",
+        "Generative.EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth",
+        "Generative.EthicalOrientation.toggle_same_endpoint_histories",
+        "Generative.EthicalOrientation.toggle_continuation_equivalent",
+        "Generative.EthicalOrientation.toggle_compared_histories_same_residual",
+        "Generative.EthicalOrientation.actual_histories_with_unselected_orientation",
+        "Generative.EthicalOrientation.toggle_has_no_every_step_strict_order"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.EthicalOrientation.continuation_preorder": [],
+        "Generative.EthicalOrientation.converse_preorder": [],
+        "Generative.EthicalOrientation.pullback_preorder": [],
+        "Generative.EthicalOrientation.pullback_fiber_invariant": [],
+        "Generative.EthicalOrientation.continuation_product_mono": [],
+        "Generative.EthicalOrientation.continuation_projection_iff": [],
+        "Generative.EthicalOrientation.history_length_map": [],
+        "Generative.EthicalOrientation.history_length_preorder": [],
+        "Generative.EthicalOrientation.history_orders_renaming_invariant": [],
+        "Generative.EthicalOrientation.two_events_strictly_longer": [],
+        "Generative.EthicalOrientation.opposed_coherent_annotation_invariant_orders": [],
+        "Generative.EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth": [],
+        "Generative.EthicalOrientation.toggle_same_endpoint_histories": [],
+        "Generative.EthicalOrientation.toggle_continuation_equivalent": [],
+        "Generative.EthicalOrientation.toggle_compared_histories_same_residual": [],
+        "Generative.EthicalOrientation.actual_histories_with_unselected_orientation": [],
+        "Generative.EthicalOrientation.toggle_has_no_every_step_strict_order": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/EthicalOrientation.txt",
+      "output_sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "module": "OutcomeContinuation",
+      "source": "OutcomeContinuation.lean",
+      "source_sha256": "30700141aeb7be1ef30ea8848a4ee1fd8fcd73673e6d2ce09e74636a15b81deb",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "OutcomeContinuation.olean",
+        "OutcomeContinuation.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 14,
+      "audited_declarations": [
+        "Generative.OutcomeContinuation.exists_outcome_iff_feasible",
+        "Generative.OutcomeContinuation.outcome_residual_update",
+        "Generative.OutcomeContinuation.outcome_iff_actual_boundary",
+        "Generative.OutcomeContinuation.outcome_of_actual_history",
+        "Generative.OutcomeContinuation.outcome_singleton_iff",
+        "Generative.OutcomeContinuation.outcome_singleton_at_unique_successor",
+        "Generative.OutcomeContinuation.empty_future_at_unique_endpoint",
+        "Generative.OutcomeContinuation.outcome_profiles_extend",
+        "Generative.OutcomeContinuation.outcome_profiles_retain_feasibility",
+        "Generative.OutcomeContinuation.exact_outcome_summary_collision",
+        "Generative.OutcomeContinuation.exact_outcome_summary_distinguishes",
+        "Generative.OutcomeContinuation.exact_outcome_summary_exists_iff",
+        "Generative.OutcomeContinuation.identity_outcome_iff_trace",
+        "Generative.OutcomeContinuation.step_agreement_iff_endpoint_outcomes"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.OutcomeContinuation.exists_outcome_iff_feasible": [],
+        "Generative.OutcomeContinuation.outcome_residual_update": [],
+        "Generative.OutcomeContinuation.outcome_iff_actual_boundary": [],
+        "Generative.OutcomeContinuation.outcome_of_actual_history": [],
+        "Generative.OutcomeContinuation.outcome_singleton_iff": [],
+        "Generative.OutcomeContinuation.outcome_singleton_at_unique_successor": [],
+        "Generative.OutcomeContinuation.empty_future_at_unique_endpoint": [],
+        "Generative.OutcomeContinuation.outcome_profiles_extend": [],
+        "Generative.OutcomeContinuation.outcome_profiles_retain_feasibility": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_collision": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_distinguishes": [],
+        "Generative.OutcomeContinuation.exact_outcome_summary_exists_iff": [],
+        "Generative.OutcomeContinuation.identity_outcome_iff_trace": [],
+        "Generative.OutcomeContinuation.step_agreement_iff_endpoint_outcomes": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/OutcomeContinuation.txt",
+      "output_sha256": "fe8575aa7381e9267e1c76ea34050e89249e05a41b2453afd20777a9ce41955d"
+    },
+    {
+      "module": "GenerativeModel",
+      "source": "GenerativeModel.lean",
+      "source_sha256": "84909d7da4118fe73449266c7dc14daa064e4f02f0f868f62fdd951b9bdb65dc",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "GenerativeModel.olean",
+        "GenerativeModel.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 11,
+      "audited_declarations": [
+        "Generative.Model.laws_iff_endpoint_histories",
+        "Generative.Model.boolean_symmetry_iff_history_classes",
+        "Generative.Model.reduced_boolean_properties_iff_history_classes",
+        "Generative.Model.symmetric_laws_same_words_different_histories",
+        "Generative.Model.synchronized_word_constraints_preserve_feasibility_agreement",
+        "Generative.Model.history_record_exactness_iff",
+        "Generative.Model.changed_endpoint_with_no_profile_only_decoder",
+        "Generative.Model.history_profiles_and_invariance_do_not_select_orientation",
+        "Generative.Model.outcome_record_exactness_iff",
+        "Generative.Model.outcome_agreement_preserves_feasible_future_agreement",
+        "Generative.Model.same_words_can_have_different_outcomes"
+      ],
+      "axioms": [],
+      "axioms_by_declaration": {
+        "Generative.Model.laws_iff_endpoint_histories": [],
+        "Generative.Model.boolean_symmetry_iff_history_classes": [],
+        "Generative.Model.reduced_boolean_properties_iff_history_classes": [],
+        "Generative.Model.symmetric_laws_same_words_different_histories": [],
+        "Generative.Model.synchronized_word_constraints_preserve_feasibility_agreement": [],
+        "Generative.Model.history_record_exactness_iff": [],
+        "Generative.Model.changed_endpoint_with_no_profile_only_decoder": [],
+        "Generative.Model.history_profiles_and_invariance_do_not_select_orientation": [],
+        "Generative.Model.outcome_record_exactness_iff": [],
+        "Generative.Model.outcome_agreement_preserves_feasible_future_agreement": [],
+        "Generative.Model.same_words_can_have_different_outcomes": []
+      },
+      "added_axiom_dependencies": {},
+      "clean_dependency_audit": true,
+      "output": "verification/GenerativeModel.txt",
+      "output_sha256": "3d7de52976f444b18758e5f9b39206e12752f6120251cd43e29d85e1edd2868d"
+    }
+  ],
+  "audited_declarations": 179,
+  "new_audited_declarations": 80,
+  "new_axiom_dependencies": [],
+  "scope": "Existing Process/Trace core and historical realizations, deeper closure/history results, exact Boolean classification, endpoint-history identification and feasible-word counterexample under synchronous composition, history-conditioned representation contracts, outcome-sensitive continuation records and orientation underdetermination. Concrete acquired-write provenance has a separate checked bridge in learning/construction/prediction. No added primitive event law or asserted physical/ethical premise. Not complete V7.3 dynamics or assumption-free foundations."
+}

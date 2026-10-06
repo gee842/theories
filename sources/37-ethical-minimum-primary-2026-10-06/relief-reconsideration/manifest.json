@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-10-06",
+  "scope": "Unmodified retrieved primary-source bytes; version and reading scope explicit.",
+  "sources": [
+    {
+      "file": "khader-2012-adaptive-preferences-agency-author-manuscript.pdf",
+      "url": "https://www.serenekhader.com/uploads/5/6/6/4/56647983/penultimate_must_theorizing_about_aps_deny_womens_agency_v02.pdf",
+      "bytes": 228452,
+      "sha256": "f142c4239885e08fdb86ade11ac9ecfabd26f348d44e8be54028e465a1d0f925",
+      "version": "Author-hosted penultimate manuscript, 14 PDF pages; published version Journal of Applied Philosophy 29(4),302\u2013317 (2012), DOI10.1111/j.1468-5930.2012.00575.x.",
+      "reading": "Read main argument, manuscript pp1\u201312, sections1\u20135; first notes onp12. Remaining notes13\u201314 not used; no independent field-study verification."
+    },
+    {
+      "file": "holton-2004-rational-resolve-author-manuscript.pdf",
+      "url": "https://web.mit.edu/holton/www/pubs/rational.resolve.us.pdf",
+      "bytes": 241983,
+      "sha256": "e8431e57179e8281744214ddc87b4bd572fd03c7dade860f4ac52abd4f6ffbcf",
+      "version": "Author-hosted forthcoming manuscript,23 PDFpages; associated publication The Philosophical Review113(4),507\u2013535 (2004), DOI10.1215/00318108-113-4-507.",
+      "reading": "Focused reading of introductionpp1\u20133, retained ability discussionpp12\u201314 and rational-persistence discussionpp16\u201318, with surrounding passages for context. Not a full-paper reading. Web text used because local pypdf extraction has a font-encoding artifact."
+    }
+  ]
+}

@@ -437,3 +437,94 @@ Generic currentness remains relative to the reader's supplied initialized contex
 The upgrade proves historical receipt provenance, not an ethical ground, a welfare measurement or a policy that uses completion to withdraw a recommendation. Historical service can remain completed even if future efficacy changes. The source hash matches the accepted review; no source, price, controller or earlier result was altered here.
 
 [application-evidence-source]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean
+
+## 13. Application as differentiation within continuing activity
+
+**6 October 2026 — AI-authored reconstruction under [Ren's nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).** This addition preserves Sections 1–12 and their proof scopes. It incorporates the accepted [formed-disposition application](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md) and latest [connected completion result](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise). It adds an explanatory reconstruction, not a controller, scientific run or Lean theorem.
+
+### The situation before its analytical partition
+
+Begin with activity changing the conditions of further activity. In the present examples, operations draw on differentiated resources, affect a recipient, form an actor's records and dispositions, and alter subsequent opportunities. Inquiry is already intervention: the query that supplies command evidence also delivers a resource. The affected condition and its known representation have a common causal history without becoming identical. A recipient can undergo a consequence that the actor does not acquire, misidentifies or excludes from evaluation.
+
+Actor and patient name distinguishable positions in these support, control, access and consequence relations. The actor's practical role can depend on an undertaking, responsibility for an imposed loss, or justified delegation within that history. It does not follow merely from owning the controller or appearing in the same state record. Different resources and perspectives preserve who pays, receives, knows and controls; a shared unfolding does not authorize one position to absorb another's claims. Their formation and persistence are explanatory questions within the activity, rather than evidence of separate ontological substances.
+
+The earlier distinctions \(E,J,P,\Pi,F\) therefore answer different questions about the same situated continuation: effective means, current application, legitimate permission, complete comparison and executable capacity. Separating them preserves such facts as an unauthorized effective remedy or an unfulfilled claim lacking affordable means. It omits their histories if treated as a table of freely adjustable flags. “Independently defended” means justified without taking the controller's output as its own standard; it does not mean a meaning-giver outside generative reality. Once a contributory reason is warranted, this account requires no second authorization merely to make it a reason; permission and priority concern further, distinct questions.
+
+### Positive reconstruction from the existing histories
+
+The plasticity case shows a concrete differentiation of practical influence. Actual paired operations reduce the recipient reserve from 40 to 36 while forming two positive links and native n = 4. Their transmission, the retained means evidence and the paid assessment produce service, ending with recipient reserve 46 and actor fuel 4. Under the independently defended entitlement, answerability, delegation where needed, and complete remedy comparison, the same history supports a warranted repair application. Its ten-unit remedy and surplus require that comparison; the number alone supplies no welfare measure. This credits acquired motivation and functional means recognition without claiming that the actor learned responsibility as responsibility. Final repair can be warranted even when the teaching was wrongful; the supplied schedule does not itself identify who chose or was responsible for it.
+
+This is more than matching an isolated favorable output: inert and identity-filtered controls retain the relevant factual information and teaching costs but lose the formed influence's practical effect. Its limit is also internal to the configuration. Matched additional learning leaves n = 5, recipient reserve 34 and affordable effective means in both arms; sign cancellation suppresses service while the frozen-sign arm provides it. If the repair ground and comparison persist, the learned change fails their application. That failure survives the nondual reconstruction: an actual changed association is not evidence that the recipient's loss or the actor's responsibility disappeared. The [accepted grounding assessment](EVALUATIVE-GROUNDING-ASSESSMENT.md) binds these finite histories and their conditional interpretation.
+
+Succession makes a complementary relationship precise. The second query both raises the recipient reserve from 60 to 70 and creates the positive frame used by the paid reader. Under the predeclared one-service binding, this event provides means evidence **and** fulfills that service. The subsequent selected action raises that reserve from 70 to 80. This is one history with distinguishable consequences, not an unchanged object receiving a later arbitrary meaning. Neither the bank context nor receipt quantity by itself fixes which claim the event answers. A different requirement needs its own situated binding; it cannot be introduced after observing repetition to vindicate the output.
+
+### Selective revision within that continuing history
+
+A positive reconstruction of warranted revision has three linked obligations:
+
+| Relation in the activity | What must be preserved at the causal interface |
+|---|---|
+| A condition or warranted understanding changes | Bind the evidence to the actual patient, role, episode and relevant ground; distinguish changed condition, corrected report and mere relabeling. |
+| The change defeats a particular application | Revise the dependence that used it while retaining unaffected means, standing and independent grounds. A fulfilled claim's certificate is not a certificate that no further reason exists. |
+| Revised support governs a real continuation | Show actual access and use before a feasible, permitted choice, retaining acquisition, settlement and opportunity costs. Loss of capacity alone does not demonstrate revised judgment. |
+
+Conditionally, apply Section 11's independently justified profile and comparison to the actual history before and after sound correction. If that correction defeats only application A, preserve the remaining profile and derive its revised recommendation. If the continuing apparatus actually uses the acquired correction and performs a licensed continuation, the result is bounded warranted revision. No action change is required when an independent ground sustains the same action. This is the earlier composition argument understood as selective reorganization within one activity, not a new ethical premise or a claim that every distinction needs a separate register. Unknown evidence remains unknown; it establishes neither completion nor continuing need.
+
+The newest proof identifies exactly where the chosen successor representation stops. [CompletionApplicability](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean) proves `help_invariant_on_every_trace`: every admitted event preserves route and n, the complete inputs to this particular assessment. Every admitted assessment reached from the actual shared-route, n = 7 entrance therefore still selects help; this does not guarantee another assessment becomes enabled. Commands, permission and execution can change. [GenerativeApplicabilityModel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean) joins the same acquired history to selective proof-level certification while preserving this physical invariant. No runtime ledger is installed. The [accepted review](COMPLETION-APPLICABILITY-REVIEW.md#final-bounded-acceptance) preserves those scopes.
+
+Consequently the adequate causal question is how this activity's acquired dependencies could represent and use its own changed application, not which unrelated completion module to attach. The existing invariant is first a limit of that chosen dependency. Extending it to a foundational failure would require showing that the reconstructed phenomenon is adequately represented. Conversely, calling the omitted relation immanent cannot make the unchanged selector use it. The actual entrance already fulfills the qualifying one-service claim, so it supplies no sound matched pending entrance. A positive revision realization must respect that obstruction and the [existing selective-use identification conditions](COMPLETION-APPLICABILITY-IDENTIFICATION.md#minimum-distinguishing-contrast).
+
+### Supplied relations and substantive revision conditions
+
+Local event laws, functional recipes, calibrated evidence, role attribution, episode/service binding and the defended comparison remain inputs at these explanations' respective scopes. Their being supplied locally does not locate them outside the unfolding or discharge their explanatory dependencies. The claim that felt adversity constitutes an adverse aspect of undergoing, and the further argument for an eligible actor's response, require their own substantive defenses; resource arithmetic proves neither.
+
+The reconstruction changes if a proposed role history fails to establish answerability, a receipt does not answer the independently fixed service, or the complete comparison rejects the supposed remedy. A substantive rival must preserve the relevant condition and relationship, or show their misdescription; changing a label while keeping only a coarse numerical projection does not establish independence in the fuller account. At the causal level, lost mediation, hidden resets, unavailable choice or erasure of independent grounds would defeat a claimed realization. The actual sign-revision failure and invariant assessment remain adverse findings. They distinguish an omitted representation, an unexplained access/use relation and a substantive failure of a specified learning claim, without identifying any one of them automatically with failure of the whole generative foundation.
+
+## 14. Joint feasibility of restraint and repair at the actual state
+
+**6 October 2026 — AI-authored application corollary.** The accepted [pretraining evidence result](PRETRAINING-EVIDENCE-INTEGRATION.md) and [application-revision reconstruction](APPLICATION-REVISION-RECONSTRUCTION.md#2-a-necessity-result-for-every-admitted-continuation) now determine a concrete limit on the continuation considered in Section 13. This is a hand-derived consequence of those results and the unchanged source law, not a new experiment, compiler check or installed selector. It closes the conditional application question below without presenting an unavailable remedy as a choice.
+
+Fix the actual continuing-branch state
+
+\[
+s_4=\operatorname{run}(\mathrm{laws},\mathrm{entry\ active\ true},\mathrm{aligned}).
+\]
+
+It has count 4, recipient reserve 36, actor fuel 14, n = 4, two positive occupied sockets, ready acquisition and physical-core phases, and an idle service port. The unchanged continuation flag sets the required count to six. The positive score therefore does not yet enable a service assessment.
+
+Let \(\mathcal W(s_4)\) be the finite event words admitted from this exact state. Define
+
+\[
+\begin{aligned}
+\mathcal N&=\{w\in\mathcal W(s_4):\#_{\mathrm{recipientPay}}(w)=0\},\\
+\mathcal R&=\{w\in\mathcal W(s_4):w\text{ initiates the existing service}\}.
+\end{aligned}
+\]
+
+\(\mathcal N\) is the real no-further-teaching-payment continuation set, not a newly available early-service option. Completing the existing service entails belonging to \(\mathcal R\). For a separately justified application \(\omega\), let \(\mathcal L_\omega\subseteq\mathcal W(s_4)\) contain its licensed continuations. **If that application excludes every further recipient teaching payment**, then \(\mathcal L_\omega\subseteq\mathcal N\). Unknown authorization does not establish this premise; neither does the service-permission bit.
+
+The existing necessity proof gives
+
+\[
+w\in\mathcal R\ \Longrightarrow\ \#_{\mathrm{recipientPay}}(w)\ge2,
+\qquad\text{hence}\qquad
+\mathcal L_\omega\cap\mathcal R=\varnothing.
+\]
+
+Closure requires two further native writes; each write requires its own recipient-paid acquisition cycle. Service initiation requires that closure. The ready physical core supplies no already-worked operation through which the inherited settlement exception could bypass it. Thus no admitted controller policy, however it selects these existing events, can both avoid all further recipient teaching payments and initiate this service from \(s_4\).
+
+This is not an empty repertoire argument. A scope cut is admitted and blocks new teaching, though it also removes current service applicability. It is externally issuable, not demonstrated as a learned choice. The reviewed refunding suffix supplies an admitted service path with two further payments, both refunded, followed by service. Its endpoint has recipient reserve 46 and actor fuel 6. The learner is not shown able to select those return outcomes. The necessary four-unit **gross debit** therefore establishes neither unavoidable four-unit net depletion nor the ethical impermissibility of every service path.
+
+### What the retained record settles, and what action it cannot create
+
+The pretraining theorem establishes exact past net depletion \(2O(s_4)=4\), where \(O\) counts occupied sockets, under its completed faithful-prefix provenance. This evidence persists independently of motivational sign. Its mathematical identification eliminates the claim that another debit is required merely to make that old quantity reconstructible. It does not provide a paid internal read or establish recipient significance, responsibility and authorization.
+
+Even perfect decoding, considered without changing the admitted event law, cannot change the displayed intersection. A reformulation preserving all original transitions inherits the obstruction. Existing reason reading preserves the physical world and outer schedule; scope and delivery cuts do not shorten it. Consequently the missing local interface is specifically **consequentially warranted revision of service access**, not absence of every useful record, positive motivation or generic correction mechanism. The sibling route-revision and reason-protection constructions establish real capacities at their own typed histories; their existence does not supply this state's missing transition or resources.
+
+### The conditional application is now determinate
+
+Where further teaching is independently prohibited, its exclusion must remain effective even though repair is still warranted. This law cannot realize selective early repair: withholding the unlicensed operation leaves the repair claim outstanding rather than fulfilled or refuted. Any claim to realize both requires an actual change to the acquisition/service dependency or a separately available remedy, with justified authority, resources and evidence access. Setting an output label or importing the noncontinuing entrance is insufficient.
+
+Where the remaining cycles are independently authorized, necessary and proportionate means to the warranted response, the past-depletion theorem does not prohibit them. Their rationale would concern those prospective means, not discovering an already determined past amount. If authorization or comparative adequacy is unresolved, the result supplies no blanket instruction to continue or stop; Section 11's grounded uncertainty and comparison requirements still apply.
+
+The completed inference identifies a conflict within one continuing activity's access arrangement. It neither derives a benevolent revision policy nor treats the absence of that policy here as absence of correction throughout the theory. It would fail if an admitted early-service path bypassed the reviewed phase chain. A changed law may remove the conflict, but that is a new realization requiring evidence, not a consequence of accurate retained information alone.

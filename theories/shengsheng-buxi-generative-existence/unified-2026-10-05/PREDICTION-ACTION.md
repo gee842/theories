@@ -6,6 +6,12 @@ The construction now follows this connection within one finite material and reso
 
 The circuit's functional recipe, observation decoder and action rule remain supplied local laws. This is a conditional realization of predictive control, not a derivation of those laws from distinction alone or an established chemical implementation.
 
+## One episode within the generative unfolding
+
+Following [Ren's core/tree correction](../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-continuation.md), the [new joint-episode derivation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md) makes explicit what the decoder view alone omits. The same actual return forms a receipt, changes available fuel, supplies the paid write and determines renewal or depletion of both operational leases. One packet is consumed, the acquired score persists and the transient receipt clears at completion. These aspects follow from actual intermediate states of the existing process; no new controller or independent evidence value is installed.
+
+The exact fuel expression retains natural-subtraction order, so no extra maintenance-affordability premise is hidden. Actual completion is a theorem condition, not guaranteed liveness. The existing available-work law also fixes the receipt when enacted command and regime are fixed: a freely toggled receipt would not preserve that law's full coupling. This leaves stochastic outage comparisons at their separate scope. The result is a local causal reconstruction within the shared nondual method, not a derivation of the sensing law or an identification of support with ethical good.
+
 ## 1. The actual producer and the additional recipe
 
 The process reuses the [formed-updater preparation](UPDATER-FORMATION.md) without changing its old reactions or adapter. It begins with two material units, neither A nor H formed, a damaged site, twenty-four common fuel units and 121 source-energy units. The old formation, repair and capture process reaches the paid adapter with probability **2/9**. The adapter leaves twenty common units, twelve packets of ten, and two recyclable backing slots. All unsuccessful preparation histories retain their actual unused resources in the results.
@@ -40,6 +46,8 @@ Y=\begin{cases}a,&C=1,\\1-a,&C=0.\end{cases}
 \]
 
 In the noiseless complementary plant, this identifies the currently productive orientation from the action and its consequence. No independent desired answer is sent to the learner. A source outage breaks this identification: no return can mean an unsuitable action or an unavailable packet. The outage comparisons keep the same fallible decoder instead of replacing its output with the hidden truth.
+
+The [subsequent formal derivation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md) makes the condition exact: this decoder is correct iff availability was true or the action differed from the regime. Success always identifies the event-time regime; unknown-availability failure does not. The unchanged formal work law uses availability true, and its phase guards keep that regime fixed until an actual next write. After finish and reversal, the old inference can be stale. The partial decoder used to state the identification boundary is analytical, not a new installed policy; probabilistic evidence from failures remains possible under explicit sampling conditions.
 
 After paying for a write, Fast sets q=4Y. Slow moves q one unit toward4 when Y=1, or toward0 when Y=0, staying within the five-state register. Slow therefore retains more earlier evidence. These are specified update algorithms; their comparison tests this environment, not an asserted universal ranking of learning rules.
 

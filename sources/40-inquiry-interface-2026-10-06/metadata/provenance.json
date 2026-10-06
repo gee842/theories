@@ -1,0 +1,104 @@
+{
+  "scope": "One primary author manuscript and inspected task diagram. Preservation, not new data analysis or experimental replication.",
+  "documents": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095768/",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095768/",
+      "status": 200,
+      "retrieved_utc": "2026-10-06T07:17:04.576546+00:00",
+      "headers": {
+        "Date": "Tue, 06 Oct 2026 07:17:03 GMT",
+        "Server": "istio-envoy",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "content-type": "text/html; charset=utf-8",
+        "Content-Length": "246022",
+        "vary": "Accept-Encoding,Cookie",
+        "x-frame-options": "DENY",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "same-origin",
+        "cross-origin-opener-policy": "same-origin",
+        "x-envoy-upstream-service-time": "76",
+        "X-UA-Compatible": "IE=Edge",
+        "X-XSS-Protection": "1; mode=block",
+        "Via": "1.1 google",
+        "Alt-Svc": "clear",
+        "Connection": "close"
+      },
+      "header_omissions": [
+        "Set-Cookie"
+      ],
+      "bytes": 246022,
+      "sha256": "448e70a0c91a592171fe99a5eae32ec16fab623cddf676667b6cb21f8a6de78a",
+      "file": "original/beran-smith-2011.html"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f29e/3095768/933e9cc05251/nihms286243f3.jpg",
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f29e/3095768/933e9cc05251/nihms286243f3.jpg",
+      "status": 200,
+      "retrieved_utc": "2026-10-06T07:17:57.550710+00:00",
+      "headers": {
+        "content-type": "image/jpeg",
+        "x-guploader-uploadid": "AP6rU82dyWTBp83H6RoBXM7-GW8_X27uRRMeQig6D-dj4srGxty-sPOHKLB-L0nP3G1S6JpIfOlpbVY",
+        "expires": "Tue, 06 Oct 2026 08:17:57 GMT",
+        "date": "Tue, 06 Oct 2026 07:17:57 GMT",
+        "cache-control": "public, max-age=3600",
+        "last-modified": "Sat, 10 Feb 2024 22:37:04 GMT",
+        "etag": "\"933e9cc05251b17d6ffbd330d7035418\"",
+        "x-goog-generation": "1707604624308466",
+        "x-goog-metageneration": "1",
+        "x-goog-stored-content-encoding": "identity",
+        "x-goog-stored-content-length": "34307",
+        "x-goog-hash": "md5=kz6cwFJRsX1v+9Mw1wNUGA==",
+        "x-goog-storage-class": "MULTI_REGIONAL",
+        "accept-ranges": "bytes",
+        "Content-Length": "34307",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Content-Type",
+        "server": "UploadServer",
+        "via": "1.1 google",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-headers": "*",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Connection": "close"
+      },
+      "header_omissions": [
+        "Set-Cookie"
+      ],
+      "bytes": 34307,
+      "sha256": "9893bac97734de9b1b7ed15f19d2e65b0cfc9194da723a055df27fc8e75dfbaa",
+      "file": "original/beran-smith-2011-figure3.jpg"
+    }
+  ],
+  "edition": "PMC author manuscript; not asserted byte-identical to final publisher version.",
+  "reading_edition": {
+    "input": "original/beran-smith-2011.html",
+    "output": "reading/beran-smith-2011.txt",
+    "method": "Python standard-library HTMLParser; remove script/style; normalize block whitespace; retain navigation and references",
+    "inspected": "Full main manuscript, methods, results, discussion and figure captions; Figure3 separately visually inspected. No raw data or supplemental corpus analyzed."
+  },
+  "failed_attempts": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095768/?report=xml",
+      "method": "urllib GET",
+      "result": "HTTP200 challenge page, not article; excluded from originals"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3095768/fullTextXML",
+      "method": "urllib GET",
+      "result": "HTTP503; no document body preserved"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3095768/figure/F3/",
+      "method": "web click",
+      "result": "CAPTCHA; direct CDN image subsequently retrieved from article HTML"
+    }
+  ],
+  "candidate_screening": {
+    "other_primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4738323/",
+    "doi": "10.1038/srep20202",
+    "scope": "Methods/results/discussion passages inspected for candidate selection, not imported as a second evidence corpus. Selected Beran/Smith for its direct fixed-chain challenge. No outcomes reanalyzed."
+  },
+  "privacy": "Set-Cookie response headers deliberately omitted; original source bytes unchanged.",
+  "analysis_scope_caution": "The manuscript uses different chance constructions for full-session action-pattern and first-response analyses; no reported p-values or significance totals are merged or recalculated here."
+}

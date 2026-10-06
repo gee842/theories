@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-06",
+  "kind": "sparse owned-content edit record",
+  "purpose": "Historical-priority supporting scope and affirmative ground; whole-process order preserved",
+  "protected_lean_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean": "d2a283b0b96071994c6173355063c572522396457a2853afbd4f18954e6863c6",
+    "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean": "afc3b934499aeb0c705590ac33dcee6ee784b8705c5a93fba0b7b60dc7f468ac"
+  },
+  "edits": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "old": "The strongest rival need not deny any of those past experiences, their badness, or the moral significance of either present relief.",
+      "new": "Completion of earlier adverse episodes does not imply completion of the life they partly constitute. Those episodes cannot now be relieved, but the next development can still improve how that continuing life goes. This identifies an alterable continuation; it does not establish a priority for altering it. Causal inactivity of the past is therefore insufficient to settle the ethical question.\n\nThe stronger affirmative premise would be that **alleviating an independently warranted serious shortfall in the good realized through a continuing life can give an available improvement additional significance**. That requires identifying the shortfall, defending its ethical relevance and explaining how this response addresses it. Mere continuity or a larger past pain count does not establish those claims. Where defended, the ground might concern a different whole-life benefit or greater moral importance of a benefit; neither interpretation permits counting the same relief twice. It supplies no general rule of decreasing lifetime weights.\n\nThe strongest rival need not deny any of those past experiences, their badness, or the moral significance of either present relief.",
+      "before_sha256": "d8b7b02544d2722e1db6ea5ce69dbb2456e80ccddf53f5de8d3326562c56ae84",
+      "after_sha256": "cd91edbc0ba32ff2626cd7d69b0be97ce21b97bd6fa217b4c67a9b78b7099abd"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+      "old": "The advance is a precise test of ethical content beyond history inclusion. The next derivation must justify how the identified continuity and its lived past bear on present benefit or priority, including limits when the current burdens differ. The whole cannot be reduced to its initiator's return, but that correction alone does not choose a lifetime-weighting rule. No ethical axiom, Lean theorem or completed universal necessity claim is added here.",
+      "new": "The advance is a precise test of ethical content beyond history inclusion. The next question **within this supporting extension** is how the identified continuity and its lived past bear on present benefit or priority, including limits when current burdens differ. Resolving that ranking is not a prerequisite for the contributory minimum: both rivals already grant relief-based favor and dispute its relative strength. The governing whole-process task remains the ethical quality of differentiated realization and impairment together, including the formation and correction of its appraisals. C1/C2 remain local interfaces, not a replacement starting point. The whole cannot be reduced to its initiator's return, but that correction alone does not choose a lifetime-weighting rule. No ethical axiom, Lean theorem or completed universal necessity claim is added here.",
+      "before_sha256": "cd91edbc0ba32ff2626cd7d69b0be97ce21b97bd6fa217b4c67a9b78b7099abd",
+      "after_sha256": "7fc1d6f32f1acc11926bc2fb456374a38fc42d419310945e6b9cf37830d20fec"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "old": "**Our use:** distinguish history-sensitive patient benefit, moral priority and adequacy of a representation.",
+      "new": "**Anders Herlitz, “Health, priority to the worse off, and time,” Medicine, Health Care and Philosophy 21, 517–527 (2018), [publisher full text](https://link.springer.com/article/10.1007/s11019-018-9825-2).** The source contributor read all five main sections and note 1; root rechecked the abstract, opening discussion, and selected theoretical-justification and combination passages. Neither inspected the cited works or empirical evidence; the paper's numerical examples are not used here. Accessed 6 October 2026; link-only, with no imported original bytes.\n\n**Bounded synopsis:** Herlitz defends considering both lifetime and prospective disadvantage. Equal lifetime health totals can coexist with unequal status, dependence and opportunities during particular periods. His second argument distinguishes health quantities from whole-life welfare, which may depend on temporal development and social relations. A richer lifetime appraisal can therefore support prospective priority. He retains lifetime fairness while leaving the combination unsettled. These arguments do not derive greater priority from ended adversity alone under our matched-effects controls, or derive moral weight from generated continuity. Our use is a boundary for the stronger proposal, not its proof or adoption of a health-unit scale.\n\n**Our use:** distinguish history-sensitive patient benefit, moral priority and adequacy of a representation.",
+      "before_sha256": "92ef00bd3a045f8f725bac3ae694bb1d0759086d855027135d858ef1eeae7cbe",
+      "after_sha256": "a498703501a3840553e48502d4cecaee364d633f8a73c7ac270d6ddfbed9316d"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "old": "The remaining derivation must justify the temporal relation's ethical significance and its limits.\n\nA separate [longitudinal empirical comparison]",
+      "new": "A completed episode does not make the continuing life unalterable, but giving its next improvement additional priority requires a defended history-sensitive ground. That ground cannot be supplied by continuity alone or by counting the same benefit twice. This is a supporting extension of G, not a prerequisite for the minimum that both rivals already grant in this comparison. The governing next derivation below retains the whole-process question.\n\nA separate [longitudinal empirical comparison]",
+      "before_sha256": "ff956ccc2a84405d21d4a04d163d9f1ff0d2f8a5969a8c0b75e8487d56168c56",
+      "after_sha256": "008cad57d8a627eb2403f2d4b2c9165064f22e4f03794830bf31b666cb9ae175"
+    },
+    {
+      "path": "RESEARCH.md",
+      "old": "**Next:** justify how generated continuity and its past bear on present benefit or priority, with current severity and legitimate claims retained.",
+      "new": "**Next within this supporting extension:** justify how generated continuity and its past bear on present benefit or priority, with current severity and legitimate claims retained. A continuing life remains alterable after past episodes end, but extra priority still needs its own ethical ground. The new Herlitz comparison supports richer appraisal without establishing that ground. Historical ranking is not a prerequisite for the contributory minimum; the governing whole-process derivation retains priority.",
+      "before_sha256": "bcfc5ad3d226e0595b88d608424f14da5aedc38180e53acf8e482780a62fe6e2",
+      "after_sha256": "fb430d512f4504e0f815e167d4ee8808a8586031260b643e02c38dff463d3bbc"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "old": "This tests the content of G within the concern derivation. Continuity identification, experiential appraisal and normative relevance remain supplied.",
+      "new": "This tests the content of G as a supporting extension within the concern derivation. It does not make a complete historical-priority rule a prerequisite for the contributory minimum or displace the whole-process grounding question. A continuing life remains alterable after past episodes end; the additional significance of improving it still needs justification. Continuity identification, experiential appraisal and normative relevance remain supplied.",
+      "before_sha256": "65cfb090c3e94b7005ebbc82525846060f326070b0f436c40d4fdf6c8da828f3",
+      "after_sha256": "941b2998673f8d1594ed6e4beb3e59c100c12db0cd1824fa55279371603a521f"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "old": "Primary comparison, internal review and the separate causal identification note preserve the remaining universal-grounding task.",
+      "new": "Primary comparison, internal review and the separate causal identification note preserve the remaining universal-grounding task. This historical-priority extension can enrich whole-history appraisal; it is not a prerequisite for the contributory minimum or a replacement for whole-process grounding.",
+      "before_sha256": "ab5ba8ee6ad576e7837f85f4c197923e58706d96cf4a6fa6950e364b5a53e33a",
+      "after_sha256": "fa5264605d06c5e37964cf98e85c96303057d4b84248ba58232e1d6af7cbd5a3"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "old": "adds selected McKerlie 1997, Ottersen 2013 and Sandman–Juth 2024 passages to the whole-history significance inquiry.",
+      "new": "adds selected McKerlie 1997, Ottersen 2013 and Sandman–Juth 2024 passages, followed by the scoped Herlitz 2018 comparison, to the whole-history significance inquiry.",
+      "before_sha256": "b103a4ebb2f0c68d2bd3dd55148d0b5d7338437cd6808901b46f5d994a32ccca",
+      "after_sha256": "2cf5384493a1a5fbbc45eb9be0eb0ccbca5c08aeb684b6a79f432dd7eb6d0975"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+      "old": "[Owned edits](HISTORY-PRIORITY-EDITS.json) and [verification](HISTORY-PRIORITY-CHECKS.json) concern the documented integration and retained formal files, not ethical truth.",
+      "new": "[Owned edits](HISTORY-PRIORITY-EDITS.json) and [verification](HISTORY-PRIORITY-CHECKS.json) concern the documented integration and retained formal files, not ethical truth.\n\n### Supporting scope and the continuing object of improvement\n\nThe follow-up review distinguishes completion of adverse episodes from completion of the life they partly constitute. This identifies what a current response can still improve; it does not derive extra priority from continuity. The stronger shortfall-sensitive ground remains an explicit ethical proposal to defend. Both interpretation as additional whole-life benefit and interpretation as greater moral importance must avoid double-counting the same relief. The new Herlitz reading constrains this proposal without establishing it; McKerlie's full paper remains unread.\n\nHistorical-priority adjudication is a supporting extension, not a required prior step for the contributory minimum. The controlled rivals already grant each relief-ground and dispute relative strength. The governing connection remains generative unfolding, differentiated realization and impairment, their joint ethical quality, and responsive transformation. C1/C2 remain local interfaces. This corrects the research-order ambiguity in the preceding “next” language without declaring either those interfaces or the whole foundation complete.\n\nA separate read-only audit confirms the existing [formal interpretation limit](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md): operational `Eligible` contains no justified-selection-criterion field; `select` copies evidence into authorization and does not determine an award winner. A permitted beneficial outcome therefore cannot automatically be interpreted as an authorized relief-based verdict. This confirms the prior distinction between selection and implementation rather than discovering a new counterexample. No code change, added exclusion axiom or Lean rerun follows.\n\nThe argument and scope contributors supplied separate read-only reviews. The [follow-up edit record](HISTORY-PRIORITY-SCOPE-EDITS.json) and [checks](HISTORY-PRIORITY-SCOPE-CHECKS.json) preserve this round's narrower claims and file scope.\n",
+      "before_sha256": "fdc6d129b7dbf44f3ea8b37acfd00949b2f69e40d22fd99fc3848fc1493e3ba3",
+      "after_sha256": "cf816fff97477209db5acb4bdc32041239c59492fbd3587bc22513054c0ac517"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "old": "[Edit record](HISTORY-PRIORITY-EDITS.json) and [checks](HISTORY-PRIORITY-CHECKS.json) preserve integration scope.",
+      "new": "[Edit record](HISTORY-PRIORITY-EDITS.json) and [checks](HISTORY-PRIORITY-CHECKS.json) preserve integration scope. The [follow-up scope review](WHOLE-PROCESS-GROUNDING-REVIEW.md#supporting-scope-and-the-continuing-object-of-improvement) keeps historical priority as a supporting extension, states the additional ethical premise, and preserves the governing whole-process derivation.",
+      "before_sha256": "3bbaed4297e32b86314282d9877e149f2ed744f70fb5cddd2f2eeb55f99f81a4",
+      "after_sha256": "af1aa2b1d6c2d5c36fbf9f58c208b881d40d99ec6ace7545a817aa0c65702580"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+      "old": "He retains lifetime fairness while leaving the combination unsettled.",
+      "new": "He retains lifetime fairness, favors strong but nonlexical priority to prospective disadvantage, and leaves the precise balancing unsettled.",
+      "before_sha256": "a498703501a3840553e48502d4cecaee364d633f8a73c7ac270d6ddfbed9316d",
+      "after_sha256": "caa5b45fe69b7098bd497c6085f238d2af075354f240fb6de1cbc154cebc9320",
+      "reason": "Primary reader fidelity repair: retain Herlitz positive nonlexical priority position."
+    }
+  ],
+  "validation_scope": "No substantive Lean changes. Review and file checks are not ethical proof.",
+  "reviews": {
+    "affirmative_argument": "accepted without necessary repairs after full relevant passage review",
+    "scope_and_formal_interface": "accepted; local interface confirms existing limitation",
+    "source_fidelity": "accepted subject to the applied nonlexical-priority repair"
+  },
+  "concurrency_note": "Initial 50 checks passed including complete before/after file boundaries. After the source fidelity repair, five shared index files had later changes outside the uniquely retained owned spans. They were read in place and not rewritten; final validation is at owned-content scope."
+}

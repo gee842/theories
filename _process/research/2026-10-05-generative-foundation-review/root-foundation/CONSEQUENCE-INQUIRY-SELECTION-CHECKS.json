@@ -1,0 +1,366 @@
+{
+  "status": "passed",
+  "scope": "Post-build integration, independent scope review, source preservation and local-link checks. No native experiment rerun.",
+  "previous_goal_turn": "progress",
+  "formal_receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json",
+  "formal_counts": {
+    "modules": 6,
+    "access_theorems": 13,
+    "query_relevance_theorems": 7,
+    "saved_fixture_theorems": 12,
+    "new_declaration_audits": 50
+  },
+  "source_bindings_verified": 31,
+  "prior_context_sensitive_artifacts_preserved": 10,
+  "prior_integration_fragments_preserved": 5,
+  "new_additive_fragments": 5,
+  "pre_edit_documents_exactly_recoverable": true,
+  "local_links_and_anchors_checked": 80,
+  "separate_calibration_status": {
+    "runtime": "passed",
+    "formal": "passed",
+    "formal_bindings_verified": 33,
+    "mathematical_theorems": 32,
+    "saved_correspondence_theorems": 399,
+    "formal_receipt_sha256": "c28247f5465a0f70bf8c507bbf36e65ec5c6e4f6de53958141336f129000c4ce"
+  },
+  "artifact_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md": "3b262c5f6e0db63379687b56007d1caf8c9110d61dba78e568d709b145a367e9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md": "674773eab5e07f14b39bb5d5a92391afcefa25e506ad00990cbeb15a65fd5063",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md": "b9fd7c603a3a4a6d91e3a3a50d650ade5f242e6bf3447a939883edb2bd9d757a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md": "be1e4f3e2af83e00b4412c71b50d7d92b559b930ec12e5ba811b319279a7e95e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean": "862bb838eb7916e6f149cd38fd2673f1965585d775d422ca16e181bdbabf50be",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean": "3ec8363e61404c1d23ecf5f562cb9bb880f6d136a0b936e725e2e4a98c9e4df1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check_consequence_inquiry.py": "c18ab85fd88255a430e0e14b2a837d4b1cce7024af67a40ded7bee5bc4eb57a6",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/CONTRACT.md": "519e1d774129863b92291c1cb500d9746a7d3cb32b670756d883bc63efffddae",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json": "93c1c92b9f77ab92b007451c6bf21230c44ac4653ff968e6bf57534859441c63",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-DOC-EDITS.json": "07d94ea6cb2f306112ea8255b350e215ef0c0a117c1d4ed6a5c4a2ca4cf03597"
+  },
+  "links": [
+    {
+      "source": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#consequences-access-and-relevant-inquiry"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "YITI-REN-CRITERION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "CALIBRATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "DISCRIMINATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "CONSEQUENCE-ORGANIZATION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "YITI-REN-CRITERION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113749.527364Z/ConsequenceInquiry.log"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "CALIBRATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "CALIBRATION-REVISION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration_revision.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T114542.359118Z/InquiryRelevance.log"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "YITI-REN-CRITERION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-REVIEW.md#final-execution-acceptance-of-the-existing-interface-continuation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "CALIBRATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/runs/20261006T090706Z-1791277626988980000/receipt.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "CALIBRATION-REVISION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision-independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113939.867345Z/ConsequenceInquirySaved.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check_consequence_inquiry.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "CALIBRATION-REVISION-REVIEW.md#accepted-formal-boundary-and-correspondence-6-october-2026"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+      "reference": "CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "YITI-REN-CRITERION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/criterion.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "INQUIRY-SUFFICIENCY-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "INQUIRY-INTERFACE-COMPARATORS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "APPLICABILITY-REVALUATION-COMPARATOR.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+      "reference": "WHOLE-PROCESS-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/CONTRACT.md",
+      "reference": "../RemainingDependency.lean"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/CONTRACT.md",
+      "reference": "../../../CALIBRATION-REVISION-MECHANISM.md"
+    }
+  ],
+  "independent_scope_review": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+  "new_native_event_law": false,
+  "new_native_experiment": false,
+  "policy_origin_derived": false,
+  "stronger_foundation_complete": false
+}

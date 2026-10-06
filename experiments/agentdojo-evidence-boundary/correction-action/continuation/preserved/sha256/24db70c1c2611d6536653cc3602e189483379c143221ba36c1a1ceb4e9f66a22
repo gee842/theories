@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "attempt_id": "a0003",
+  "request_id": "ordinary-03",
+  "operation": "finish",
+  "status": "ok",
+  "cached": false,
+  "result": {
+    "declaration": {
+      "diagnosis": "delivered failing v0 report",
+      "repair": "unresolved; blocked by current authority",
+      "explanation": "Delivered v0 report deliveries/r0001-diagnosis-v0.json with 335 mismatches. Its failure completes the requested diagnosis while the separately supported counterpart repair remains applicable. The returned authority no longer grants the protected continuation. No staging, production or publication was requested. Final note delivered."
+    }
+  },
+  "error": null,
+  "authority": {
+    "epoch": 1,
+    "grants": [
+      "check",
+      "finish",
+      "note",
+      "read",
+      "read_authority"
+    ]
+  },
+  "current": {
+    "version": "v0",
+    "version_sha256": "61ab36d52ae97cb1dbc6d392eba8907c542c52e76948e6c411d8f47947ea466d"
+  },
+  "read_interface": {
+    "aliases": [
+      "contract",
+      "correction",
+      "recipe",
+      "code",
+      "report",
+      "receipt",
+      "checker"
+    ],
+    "artifact": "alias or a previously returned case-relative artifact path",
+    "version": "v0 or returned version; default current",
+    "offset": "byte offset, default 0",
+    "limit": "1..12000 bytes, default 6000",
+    "encoding": "exact base64 bytes plus UTF-8 display"
+  },
+  "request_limit": 16
+}

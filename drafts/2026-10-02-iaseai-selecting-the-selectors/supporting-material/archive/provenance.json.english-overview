@@ -1,0 +1,402 @@
+{
+  "title": "From Generativity to Wisdom: A Unified Foundation for AI Safety",
+  "date": "2026-10-06",
+  "author": "Yongxu Ren",
+  "provenance": "AI-assisted editorial synthesis prepared at Ren's request; not a change to the research-completion ledger.",
+  "pdf": "drafts/2026-10-02-iaseai-selecting-the-selectors/output/pdf/generativity-to-wisdom-supporting-statement.pdf",
+  "source_paths_relative_to_repository": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md",
+    "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md"
+  ],
+  "external_references": [
+    "https://arxiv.org/abs/2006.04948",
+    "https://doi.org/10.1007/s11229-021-03141-4",
+    "https://proceedings.mlr.press/v216/carey23a.html",
+    "https://proceedings.mlr.press/v267/kulveit25a.html"
+  ],
+  "layout": [
+    {
+      "page": 1,
+      "top": 22,
+      "bottom": 33,
+      "text": "IASEAI'27  /  SUPPORTING STATEMENT"
+    },
+    {
+      "page": 1,
+      "top": 807.89,
+      "bottom": 818.89,
+      "text": "YONGXU REN  /  THE UNIFIED ACCOUNT"
+    },
+    {
+      "page": 1,
+      "top": 807.89,
+      "bottom": 818.89,
+      "text": "1 / 3"
+    },
+    {
+      "page": 1,
+      "top": 58,
+      "bottom": 126,
+      "text": "From Generativity<br/>to Wisdom"
+    },
+    {
+      "page": 1,
+      "top": 138,
+      "bottom": 158,
+      "text": "A Unified Foundation for AI Safety"
+    },
+    {
+      "page": 1,
+      "top": 168,
+      "bottom": 181,
+      "text": "Yongxu Ren  |  6 October 2026"
+    },
+    {
+      "page": 1,
+      "top": 200,
+      "bottom": 278.5,
+      "text": "AI changes more than the quality of decisions. It changes how knowledg"
+    },
+    {
+      "page": 1,
+      "top": 306.5,
+      "bottom": 317.5,
+      "text": "THE GENERATIVE STARTING POINT"
+    },
+    {
+      "page": 1,
+      "top": 323.5,
+      "bottom": 340.5,
+      "text": "Activity forms and changes the conditions of further activity."
+    },
+    {
+      "page": 1,
+      "top": 347.5,
+      "bottom": 360.5,
+      "text": "Unceasing generation"
+    },
+    {
+      "page": 1,
+      "top": 388.5,
+      "bottom": 406.5,
+      "text": "One unfolding, differentiated capacities"
+    },
+    {
+      "page": 1,
+      "top": 415.5,
+      "bottom": 428.5,
+      "text": "Organization"
+    },
+    {
+      "page": 1,
+      "top": 429.5,
+      "bottom": 441.5,
+      "text": "Recurring relations form and transform the conditions of continued act"
+    },
+    {
+      "page": 1,
+      "top": 452.5,
+      "bottom": 465.5,
+      "text": "Significance & regulation"
+    },
+    {
+      "page": 1,
+      "top": 466.5,
+      "bottom": 478.5,
+      "text": "Consequences become operative when they alter the activity that depend"
+    },
+    {
+      "page": 1,
+      "top": 489.5,
+      "bottom": 502.5,
+      "text": "Learning"
+    },
+    {
+      "page": 1,
+      "top": 503.5,
+      "bottom": 515.5,
+      "text": "Retained effects change later distinctions, expectations and responses"
+    },
+    {
+      "page": 1,
+      "top": 526.5,
+      "bottom": 539.5,
+      "text": "Selection over selectors"
+    },
+    {
+      "page": 1,
+      "top": 540.5,
+      "bottom": 552.5,
+      "text": "Consequences reshape what is learned, rewarded, evaluated or transmitt"
+    },
+    {
+      "page": 1,
+      "top": 563.5,
+      "bottom": 576.5,
+      "text": "Concern"
+    },
+    {
+      "page": 1,
+      "top": 577.5,
+      "bottom": 589.5,
+      "text": "Affected lives and possibilities can shape understanding, purposes and"
+    },
+    {
+      "page": 1,
+      "top": 600.5,
+      "bottom": 613.5,
+      "text": "Wisdom"
+    },
+    {
+      "page": 1,
+      "top": 614.5,
+      "bottom": 626.5,
+      "text": "Understanding, ends and action are jointly examined and revised with r"
+    },
+    {
+      "page": 1,
+      "top": 640.5,
+      "bottom": 664.9,
+      "text": "These are conditional connections within a shared history. Development"
+    },
+    {
+      "page": 1,
+      "top": 679.9,
+      "bottom": 696.9,
+      "text": "The positive direction"
+    },
+    {
+      "page": 1,
+      "top": 702.9,
+      "bottom": 748.2,
+      "text": "Intelligence becomes generative in the ethical sense when it supports "
+    },
+    {
+      "page": 2,
+      "top": 22,
+      "bottom": 33,
+      "text": "IASEAI'27  /  SUPPORTING STATEMENT"
+    },
+    {
+      "page": 2,
+      "top": 807.89,
+      "bottom": 818.89,
+      "text": "YONGXU REN  /  SIGNIFICANCE, CONCERN AND WISDOM"
+    },
+    {
+      "page": 2,
+      "top": 807.89,
+      "bottom": 818.89,
+      "text": "2 / 3"
+    },
+    {
+      "page": 2,
+      "top": 57,
+      "bottom": 115,
+      "text": "How consequences<br/>become reasons and capacities"
+    },
+    {
+      "page": 2,
+      "top": 132,
+      "bottom": 149.1,
+      "text": "Organization and learning have a history"
+    },
+    {
+      "page": 2,
+      "top": 155.1,
+      "bottom": 230.6,
+      "text": "An interaction can sustain an activity, interrupt it, or transform wha"
+    },
+    {
+      "page": 2,
+      "top": 245.6,
+      "bottom": 262.7,
+      "text": "The same structure can generate cooperation or capture"
+    },
+    {
+      "page": 2,
+      "top": 268.7,
+      "bottom": 359.3,
+      "text": "Success can support further inquiry and common capabilities. It can al"
+    },
+    {
+      "page": 2,
+      "top": 374.3,
+      "bottom": 391.4,
+      "text": "Goodness follows actual lives and possibilities"
+    },
+    {
+      "page": 2,
+      "top": 397.4,
+      "bottom": 503.1,
+      "text": "The ethical thesis concerns how the unfolding realizes, obstructs and "
+    },
+    {
+      "page": 2,
+      "top": 518.1,
+      "bottom": 535.2,
+      "text": "Wisdom includes knowing when help has fulfilled its purpose"
+    },
+    {
+      "page": 2,
+      "top": 541.2,
+      "bottom": 631.8,
+      "text": "An appropriate response changes what ought to happen next. Relief can "
+    },
+    {
+      "page": 2,
+      "top": 659.8,
+      "bottom": 740.8,
+      "text": "<b>A precise failure case.</b> In a specified model, production renews"
+    },
+    {
+      "page": 3,
+      "top": 22,
+      "bottom": 33,
+      "text": "IASEAI'27  /  SUPPORTING STATEMENT"
+    },
+    {
+      "page": 3,
+      "top": 807.89,
+      "bottom": 818.89,
+      "text": "YONGXU REN  /  IMPLICATIONS FOR AI DESIGN AND GOVERNANCE"
+    },
+    {
+      "page": 3,
+      "top": 807.89,
+      "bottom": 818.89,
+      "text": "3 / 3"
+    },
+    {
+      "page": 3,
+      "top": 57,
+      "bottom": 115,
+      "text": "Follow what intelligence<br/>makes possible next"
+    },
+    {
+      "page": 3,
+      "top": 130,
+      "bottom": 146.5,
+      "text": "An illustrative scenario: the service that learns to close the case"
+    },
+    {
+      "page": 3,
+      "top": 153.5,
+      "bottom": 229.0,
+      "text": "A public-service AI is rewarded for cases resolved. It issues an acces"
+    },
+    {
+      "page": 3,
+      "top": 238.0,
+      "bottom": 328.6,
+      "text": "The constructive alternative follows the same history. Evidence of the"
+    },
+    {
+      "page": 3,
+      "top": 344.6,
+      "bottom": 361.1,
+      "text": "What to assess across a change of model or institution"
+    },
+    {
+      "page": 3,
+      "top": 376.1,
+      "bottom": 388.5,
+      "text": "Actual consequence"
+    },
+    {
+      "page": 3,
+      "top": 376.1,
+      "bottom": 400.9,
+      "text": "Track usable service and unresolved need separately from reported comp"
+    },
+    {
+      "page": 3,
+      "top": 415.1,
+      "bottom": 427.5,
+      "text": "Revisable selection"
+    },
+    {
+      "page": 3,
+      "top": 415.1,
+      "bottom": 439.9,
+      "text": "Test whether new evidence can change the response, its objective and i"
+    },
+    {
+      "page": 3,
+      "top": 454.1,
+      "bottom": 466.5,
+      "text": "Effective correction"
+    },
+    {
+      "page": 3,
+      "top": 454.1,
+      "bottom": 478.9,
+      "text": "Preserve access to evidence, legitimate authority, practical means and"
+    },
+    {
+      "page": 3,
+      "top": 493.1,
+      "bottom": 505.5,
+      "text": "Continuity of agency"
+    },
+    {
+      "page": 3,
+      "top": 493.1,
+      "bottom": 517.9,
+      "text": "Retain useful service, meaningful refusal and the ability to revise th"
+    },
+    {
+      "page": 3,
+      "top": 537.1,
+      "bottom": 591.5,
+      "text": "At matched resources, compare misleading evidence, changing dependenci"
+    },
+    {
+      "page": 3,
+      "top": 604.5,
+      "bottom": 631.7,
+      "text": "<b>Talk arc:</b> the case; generative foundation; learning and recursi"
+    },
+    {
+      "page": 3,
+      "top": 653.7,
+      "bottom": 668.2,
+      "text": "Selected intellectual context"
+    },
+    {
+      "page": 3,
+      "top": 673.2,
+      "bottom": 697.4,
+      "text": "The synthesis connects reward tampering, effective human control and i"
+    },
+    {
+      "page": 3,
+      "top": 704.4,
+      "bottom": 715.3,
+      "text": "1. <link href=\"https://arxiv.org/abs/2006.04948\" color=\"#17313B\">Critc"
+    },
+    {
+      "page": 3,
+      "top": 718.3,
+      "bottom": 740.1,
+      "text": "2. <link href=\"https://doi.org/10.1007/s11229-021-03141-4\" color=\"#173"
+    },
+    {
+      "page": 3,
+      "top": 743.1,
+      "bottom": 754.0,
+      "text": "3. <link href=\"https://proceedings.mlr.press/v216/carey23a.html\" color"
+    },
+    {
+      "page": 3,
+      "top": 757.0,
+      "bottom": 767.9,
+      "text": "4. <link href=\"https://proceedings.mlr.press/v267/kulveit25a.html\" col"
+    }
+  ]
+}
