@@ -1,0 +1,22 @@
+'ContinuationScope.Situation' does not depend on any axioms
+'ContinuationScope.Improves' does not depend on any axioms
+'ContinuationScope.Nonforeclosing' does not depend on any axioms
+'ContinuationScope.Situation.reached' does not depend on any axioms
+'ContinuationScope.Situation.restrict' does not depend on any axioms
+'ContinuationScope.unreached_agree' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.unreached_never_matters' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.nonforeclosing_restrict_iff' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.omitted_scope_admits_needless_foreclosure' depends on axioms: [propext]
+'ContinuationScope.omitted_scope_can_condemn' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.Situation.securedCount' does not depend on any axioms
+'ContinuationScope.countP_lt_of_improves' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.improves_count' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.exists_max' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.nonforeclosing_exists' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.competition' does not depend on any axioms
+'ContinuationScope.both_courses_nonforeclosing' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.TreatsCentersAlike' does not depend on any axioms
+'ContinuationScope.symmetric_competition_has_no_structural_choice' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.beforeFulfillment' does not depend on any axioms
+'ContinuationScope.afterFulfillment' does not depend on any axioms
+'ContinuationScope.fulfillment_turns_retained_course_foreclosing' depends on axioms: [propext, Quot.sound]
