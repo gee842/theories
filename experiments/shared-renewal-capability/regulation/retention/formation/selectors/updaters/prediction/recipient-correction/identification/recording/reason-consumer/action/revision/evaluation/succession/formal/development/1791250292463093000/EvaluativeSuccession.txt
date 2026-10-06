@@ -1,0 +1,61 @@
+EvaluativeSuccession.lean:271:113: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (s.bank.live = true ∧
+      ∃ i r bits, (address✝ = i ∧ record✝ = r ∧ written✝ = bits) ∧ bits.length < 4 ∧ 0 < s.bank.escrow)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:278:33: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.reason event✝ with
+    | Event.assemble => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor < 8 ∧ 0 < s.held ∧ 0 < s.assembly
+    | Event.omitWindow => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor = 6 ∧ 0 < s.assembly
+    | Event.copyRead => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor = 8 ∧ s.copyLatch = none ∧ 0 < s.copyFund
+    | Event.copyWrite qualified scope permission delivery =>
+      s.life = Life.quiesced ∧ s.copyLatch.isSome = true ∧ s.core.escrow = 0 ∧ 0 < s.copyFund
+    | Event.bindAccess connected =>
+      s.life = Life.committed ∧ s.window = true ∧ s.cursor = 8 ∧ 0 < s.held ∧ 0 < s.assembly
+    | Event.release => s.life = Life.bound ∧ s.released = false
+    | Event.probeStart =>
+      s.life = Life.child ∧ s.released = true ∧ s.attempts < 2 ∧ s.probing = false ∧ s.reading = false
+    | Event.probeEnd => s.probing = true ∧ s.bank.phase = EmissionArchive.Phase.idle
+    | Event.bank e =>
+      s.life = Life.child ∧
+        s.probing = true ∧
+          s.reading = false ∧
+            bankGuard s e ∧
+              EmissionArchive.Enabled (producer laws) 3 (archive s) e ∧
+                EmissionArchive.Valid (producer laws) (archive s)
+    | Event.prepare =>
+      s.life = Life.child ∧
+        s.attempts = 2 ∧
+          s.probing = false ∧
+            s.reading = false ∧
+              s.bank.phase = EmissionArchive.Phase.idle ∧ s.reader.reserve = 0 ∧ s.reader.workspace = true
+    | Event.reason e => s.life = Life.child ∧ s.reading = true ∧ PaidRecipientReasons.Enabled s.reader e
+    | Event.read =>
+      s.life = Life.child ∧
+        s.reading = true ∧
+          s.closed = false ∧
+            s.port = Port.idle ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.core.hardware.fuel
+    | Event.assess => s.closed = false ∧ s.port = Port.read ∧ Known s ∧ 1 ≤ s.core.hardware.fuel
+    | Event.attempt => s.closed = false ∧ s.port = Port.help
+    | Event.abstain => s.closed = false ∧ s.port = Port.abstain
+    | Event.trial e =>
+      s.port = Port.executing ∧
+        s.closed = false ∧
+          RecipientOnly s e ∧
+            (Settlement s e ∨ Known s ∧ gates s) ∧
+              RecipientIdentification.Valid s.core ∧ RecipientIdentification.Enabled s.core e
+    | Event.scope v => v = false
+    | Event.permission v => v = false
+    | Event.delivery v => v = false
+    | Event.access v => v = false)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:344:2: error: Type mismatch
+  archive_set ?m.53 (EmissionArchive.advance (producer laws) (archive s) e) hc
+has type
+  archive (setArchive ?m.53 (EmissionArchive.advance (producer laws) (archive s) e)) =
+    EmissionArchive.advance (producer laws) (archive s) e
+but is expected to have type
+  archive (advance laws s (Event.bank e)) = EmissionArchive.advance (producer laws) (archive s) e

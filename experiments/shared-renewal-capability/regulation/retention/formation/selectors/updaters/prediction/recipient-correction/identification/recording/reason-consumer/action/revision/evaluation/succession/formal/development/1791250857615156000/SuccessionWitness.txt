@@ -1,0 +1,54 @@
+SuccessionWitness.lean:89:88: error: failed to synthesize
+  Decidable
+    (Runnable changed assembled copyWord ∧
+      copied.life = Life.committed ∧
+        copied.core.hardware.q = 0 ∧
+          copied.core.hardware.last = false ∧
+            copied.core.patient = 60 ∧
+              copied.core.hardware.fuel = 0 ∧
+                copied.copyFund = 0 ∧
+                  energy copied = 152 ∧ copied.history = entry.history ∧ copied.native = entry.native)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SuccessionWitness.lean:98:52: error: Tactic `decide` failed for proposition
+  Enabled changed released Event.probeStart ∧ BankRunnable changed firstStart firstWord
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `forall_prop_decidable`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableFalse`, `instDecidableOr`, `instDecidableTrue`, `Bool.decEq`, `instDecidableBankGuard`, `instDecidableCanProbe`, `instDecidableEnabled`, `instDecidableEnabledWorldEventHeaderFrameProducerOfNatNatArchive`, `instDecidableEqLife`, `instDecidableGates`, `instDecidableRecipientOnly`, `instDecidableSettlement`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Option.instDecidableEq`, `ReasonReplay.instDecidableEqMask`, `ReasonReplay.instDecidableEqNode`, `RecipientAction.instDecidableCurrentPublicationArchive`, `RecipientCorrection.instDecidableEqTarget`, `RecipientIdentification.instDecidableEnabled`, `RecipientIdentification.instDecidableEqEvent`, `RecipientIdentification.instDecidableEqPhase`, `RecipientIdentification.instDecidableValid`, `bankRunnableDecidable`, `ReasonReplay.instDecidableEqMask.decEq`, `RecipientIdentification.instDecidableEqEvent.decEq`, `RecipientIdentification.instDecidableEqPhase.decEq`, and `bankRunnableDecidable._aux_1`, reduction got stuck at the `Decidable` instance
+  ⋯ ▸ inferInstance
+
+Hint: Reduction got stuck on `▸` (Eq.rec), which suggests that one of the `Decidable` instances is defined using tactics such as `rw` or `simp`. To avoid tactics, make use of functions such as `«inferInstanceAs»` or `decidable_of_decidable_of_iff` to alter a proposition.
+SuccessionWitness.lean:106:54: error: Tactic `decide` failed for proposition
+  Runnable changed firstEnd betweenWord ∧ BankRunnable changed secondStart secondWord
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `forall_prop_decidable`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableFalse`, `instDecidableOr`, `instDecidableTrue`, `ActionWitness.instDecidableEqPhase_actionWitness`, `Bool.decEq`, `instDecidableBankGuard`, `instDecidableCanProbe`, `instDecidableEnabled`, `instDecidableEnabledWorldEventHeaderFrameProducerOfNatNatArchive`, `instDecidableEqLife`, `instDecidableGates`, `instDecidableRecipientOnly`, `instDecidableSettlement`, `runnableDecidable`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Option.instDecidableEq`, `ReasonReplay.instDecidableEqMask`, `ReasonReplay.instDecidableEqNode`, `RecipientAction.instDecidableCurrentPublicationArchive`, `RecipientCorrection.instDecidableEqTarget`, `RecipientIdentification.instDecidableEnabled`, `RecipientIdentification.instDecidableEqEvent`, `RecipientIdentification.instDecidableEqPhase`, `RecipientIdentification.instDecidableValid`, `bankRunnableDecidable`, `ActionWitness.instDecidableEqPhase_actionWitness.decEq`, `runnableDecidable._aux_1`, `ReasonReplay.instDecidableEqMask.decEq`, `RecipientIdentification.instDecidableEqEvent.decEq`, `RecipientIdentification.instDecidableEqPhase.decEq`, and `bankRunnableDecidable._aux_1`, reduction got stuck at the `Decidable` instance
+  ⋯ ▸ inferInstance
+
+Hint: Reduction got stuck on `▸` (Eq.rec), which suggests that one of the `Decidable` instances is defined using tactics such as `rw` or `simp`. To avoid tactics, make use of functions such as `«inferInstanceAs»` or `decidable_of_decidable_of_iff` to alter a proposition.
+SuccessionWitness.lean:113:20: error(lean.invalidField): Invalid field `retiringHardware`: The environment does not contain `EvaluativeSuccession.Historical.retiringHardware`, so it is not possible to project the field `retiringHardware` from an expression
+  bankEnd.history
+of type `Historical`
+SuccessionWitness.lean:129:89: error: Tactic `decide` failed for proposition
+  Enabled changed chosen Event.attempt ∧
+    Runnable changed acting selectedWord ∧
+      final.core.hardware.q = 2 ∧
+        final.core.hardware.last = true ∧
+          final.core.hardware.fuel = 0 ∧
+            final.core.packets = 0 ∧
+              final.core.patient = 80 ∧
+                final.native.n = 7 ∧
+                  final.native.energy = 6 ∧
+                    final.port = Port.consumed ∧ final.closed = true ∧ energy final = 86 ∧ material final = 78
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableFalse`, `instDecidableOr`, `instDecidableTrue`, `AcquiredEvaluation.instDecidableEqChannel`, `AcquiredEvaluation.instDecidableEqNativeMode`, `Bool.decEq`, `instDecidableCurrent`, `instDecidableEnabled`, `instDecidableEqLife`, `instDecidableEqPort`, `instDecidableGates`, `instDecidableKnown`, `instDecidableRecipientOnly`, `instDecidableSettlement`, `runnableDecidable`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Option.instDecidableEq`, `ReasonReplay.instDecidableEqMask`, `ReasonReplay.instDecidableEqNode`, `RecipientAction.instDecidableCurrentPublicationArchive`, `RecipientCorrection.instDecidableEqTarget`, `RecipientIdentification.instDecidableEnabled`, `RecipientIdentification.instDecidableEqEvent`, `RecipientIdentification.instDecidableEqPhase`, `RecipientIdentification.instDecidableValid`, `runnableDecidable._aux_1`, `ReasonReplay.instDecidableEqMask.decEq`, `RecipientIdentification.instDecidableEqEvent.decEq`, and `RecipientIdentification.instDecidableEqPhase.decEq`, reduction got stuck at the `Decidable` instance
+  ⋯ ▸ inferInstance
+
+Hint: Reduction got stuck on `▸` (Eq.rec), which suggests that one of the `Decidable` instances is defined using tactics such as `rw` or `simp`. To avoid tactics, make use of functions such as `«inferInstanceAs»` or `decidable_of_decidable_of_iff` to alter a proposition.

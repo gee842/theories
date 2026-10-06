@@ -1,0 +1,37 @@
+EvaluativeSuccession.lean:740:37: error: Application type mismatch: The argument
+  e
+has type
+  State
+but is expected to have type
+  Event
+in the application
+  enabled_route laws s r e
+EvaluativeSuccession.lean:741:74: error: Application type mismatch: The argument
+  e
+has type
+  State
+but is expected to have type
+  Event
+in the application
+  advance_route laws s r e
+EvaluativeSuccession.lean:741:79: error: Application type mismatch: The argument
+  e
+has type
+  State
+but is expected to have type
+  Event
+in the application
+  h e
+EvaluativeSuccession.lean:741:82: error: unsolved goals
+laws : RecipientCorrection.Laws
+s✝ t✝ : State
+es✝ : List Event
+r : Route
+s e t : State
+es : Event
+u : List Event
+he : (process laws).step s es e
+ht : Generative.Trace (process laws) e u t
+ih : (∀ (e : Event), e ∈ u → e ≠ Event.assess) → Generative.Trace (process laws) (routed e r) u (routed t r)
+h : ∀ (e : Event), e ∈ es :: u → e ≠ Event.assess
+⊢ sorry () = es ∨ sorry () ∈ u

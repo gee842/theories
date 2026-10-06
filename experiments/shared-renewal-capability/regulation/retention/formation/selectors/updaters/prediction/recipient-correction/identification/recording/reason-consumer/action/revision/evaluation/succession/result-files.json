@@ -1,0 +1,9 @@
+{
+  "file": "results.json.gz",
+  "format": "gzip-compressed JSON; accepted donor/ancestry catalogs and one-core continuation states",
+  "compressed_sha256": "d91c4f20b3783fdbd41eb5d7f9c40d4750e832654b983ee4b05093bb359d31ed",
+  "compressed_bytes": 4055198,
+  "uncompressed_sha256": "dd4600c581403a3baf66f319ab84332584a6ab62cb0eb22e9262571cd64bf5c8",
+  "uncompressed_bytes": 247258539,
+  "semantic_cases_sha256": "ce9dc71869566b09fc9eb7dc9a38b5817f16434f659510a471c0dcfe123e418f"
+}

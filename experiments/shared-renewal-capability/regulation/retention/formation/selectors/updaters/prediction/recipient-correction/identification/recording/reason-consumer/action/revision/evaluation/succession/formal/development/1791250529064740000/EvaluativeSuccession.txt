@@ -1,0 +1,8 @@
+EvaluativeSuccession.lean:483:24: error: Failed to rewrite using equation theorems for `run`
+
+Hint: Try rewriting with `EvaluativeSuccession.run.eq_def`
+EvaluativeSuccession.lean:561:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 1
+where
+ a := ↑s.core.hardware.fuel

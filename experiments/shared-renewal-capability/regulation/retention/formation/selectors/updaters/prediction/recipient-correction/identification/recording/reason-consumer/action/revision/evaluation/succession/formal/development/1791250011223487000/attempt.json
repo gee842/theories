@@ -1,0 +1,17 @@
+[
+  {
+    "name": "SuccessionPreparation",
+    "returncode": 0,
+    "source_sha256": "0084c3c23f15c55b0c3557d730e1e10f52c0e2a84ed2a96efc5577cf47e51af1"
+  },
+  {
+    "name": "EvaluativeSuccession",
+    "returncode": 0,
+    "source_sha256": "25e02592bbc0035c29bb6481e2e75f5ac2962f919444e3039e8b0ac8dfbac444"
+  },
+  {
+    "name": "SuccessionWitness",
+    "returncode": 0,
+    "source_sha256": "275fec18f7034053be1bc39cd5c2553c9af8a0a784e0ec613a51d5aa125c32c8"
+  }
+]

@@ -1,0 +1,20 @@
+EvaluativeSuccession.lean:483:24: error: Failed to rewrite using equation theorems for `run`
+
+Hint: Try rewriting with `EvaluativeSuccession.run.eq_def`
+EvaluativeSuccession.lean:561:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 1
+where
+ a := ↑s.core.hardware.fuel
+EvaluativeSuccession.lean:642:14: error: Application type mismatch: The argument
+  RecipientAction.command_meaning.mpr hm
+has type
+  RecipientReasons.Meaning G z
+    (RecipientAction.commandNode (RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient))
+but is expected to have type
+  RecipientReasons.Meaning G z
+    (if RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient = true then
+      ReasonReplay.Node.q
+    else ReasonReplay.Node.p)
+in the application
+  ⟨hm.left, RecipientAction.command_meaning.mpr hm⟩

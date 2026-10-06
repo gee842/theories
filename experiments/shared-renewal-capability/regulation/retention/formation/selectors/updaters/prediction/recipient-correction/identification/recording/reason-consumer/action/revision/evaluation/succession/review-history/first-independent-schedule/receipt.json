@@ -1,0 +1,11 @@
+{
+  "status": "independent_complete_schedule_preserved_before_its_first_execution",
+  "created_at": "2026-10-06T01:28:32.517366+00:00",
+  "source_sha256": "8d1cd1cd672b640bd89520f1332651cb37c285b67eb439bfadae2abc23497ff1",
+  "protocol_freeze_sha256": "6cdbc9ed4a96783e60a196e5970b8e7c9f1872b5c221c7fbfa16c5b6e0dcccc5",
+  "new_producer_code_inspected": false,
+  "new_producer_outcomes_inspected": false,
+  "new_producer_code_present": false,
+  "new_producer_outcomes_present": false,
+  "scope": "Adds exact accepted-parent account/admission adapter and independent complete schedule from the frozen contract and accepted old independent laws. No new producer transition imports. Syntax parsed only so far."
+}

@@ -1,0 +1,14 @@
+'PaidArchiveReader.step_preserves_world' does not depend on any axioms
+'PaidArchiveReader.step_preserves_archive' does not depend on any axioms
+'PaidArchiveReader.step_ledger' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.trace_ledger' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.initial_cache_agrees' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.step_cache_agrees' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.trace_cache_agrees' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.completed_paid_cache_sound' depends on axioms: [propext]
+'PaidArchiveReader.context_change_invalidates' depends on axioms: [propext]
+'PaidArchiveReader.paid_reader_trace' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.paid_reader_complete' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.trace_preserves_facts' does not depend on any axioms
+'PaidArchiveReader.actual_archive_paid_certificate' depends on axioms: [propext, Quot.sound]
+'PaidArchiveReader.reachable_archive_paid_certificate' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,20 @@
+{
+  "status": "repair_required_before_generic_acceptance",
+  "source_sha256": "11bcd0613b7103334f823ed33b36b6a2bcab8370d0f6bc4e2815de553c370799",
+  "findings": [
+    {
+      "id": "probe_authority_not_retired",
+      "location": "advance .bank / Enabled .bank / .probeEnd",
+      "counterexample": "After one probeStart and an enabled miss, probing remains true and core remains ready; with another packet, a second miss is enabled before probeEnd. Similarly a completed query can begin another RI cycle while probing remains true.",
+      "required": "Atomically retire that probe opportunity after its RI write/miss while preserving paid settlement and any actual frame transaction."
+    },
+    {
+      "id": "free_positive_guard_restoration",
+      "location": "Enabled .scope/.permission/.delivery/.access",
+      "counterexample": "Each Bool argument is enabled unconditionally, including true, permitting repair of denied newborn permission or disconnected n access without the one-time binding/grant law.",
+      "required": "Permit the frozen false cuts only, or a separately typed uncontrollable environment relation with explicit scope; no controller-accessible restoration."
+    }
+  ],
+  "protocol_changed": false,
+  "note": "Findings concern public general events, not merely the chosen witness. The frozen intended schedule and positive design are unchanged."
+}

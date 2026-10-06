@@ -1,0 +1,273 @@
+EvaluativeSuccession.lean:677:12: error: Tactic `rfl` failed: The left-hand side
+  {
+      core :=
+        have __src := s.core;
+        {
+          hardware :=
+            have __src := s.core.hardware;
+            { fuel := 0, stage := __src.stage, life := __src.life, gateLife := __src.gateLife,
+              coupling := __src.coupling, couplingLife := __src.couplingLife, written := __src.written,
+              q := s.copyLatch.getD 0, last := q✝ },
+          patient := __src.patient, packets := 0, escrow := 0, phase := RecipientIdentification.Phase.ready,
+          active := true },
+      reader :=
+        have __src := s.reader;
+        {
+          reader :=
+            have __src := s.reader.reader;
+            { world := __src.world, archive := __src.archive, currentContext := __src.currentContext, fuel := 0,
+              active := __src.active, token := __src.token, next := __src.next, cache := __src.cache },
+          reserve := 0, workspace := __src.workspace, phase := __src.phase, normalized := __src.normalized,
+          conflict := __src.conflict, working := __src.working, published := __src.published,
+          current := __src.current },
+      bank := s.bank, history := s.history, native := s.native,
+      commonCustody := s.commonCustody ++ [s.core.hardware.fuel, s.reader.reader.fuel, s.reader.reserve],
+      sourceCustody := s.sourceCustody ++ [10 * s.core.packets], assembly := s.assembly, copyFund := s.copyFund - 1,
+      operationFund := s.operationFund, writerFund := s.writerFund, readerFund := s.readerFund,
+      sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+      inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+      eligible := s.eligible, life := Life.committed, copyLatch := none, window := s.window, nAccess := s.nAccess,
+      scope := s.scope && sc✝, permission := s.permission && pm✝, delivery := s.delivery && dl✝, released := s.released,
+      attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+      port := s.port, closed := s.closed, route := s.route }.reader
+is not definitionally equal to the right-hand side
+  s.reader
+
+case h_4
+laws : RecipientCorrection.Laws
+s : State
+x✝ : Event
+q✝ sc✝ pm✝ dl✝ : Bool
+heq✝ : Event.attempt = Event.copyWrite q✝ sc✝ pm✝ dl✝
+⊢ {
+        core :=
+          have __src := s.core;
+          {
+            hardware :=
+              have __src := s.core.hardware;
+              { fuel := 0, stage := __src.stage, life := __src.life, gateLife := __src.gateLife,
+                coupling := __src.coupling, couplingLife := __src.couplingLife, written := __src.written,
+                q := s.copyLatch.getD 0, last := q✝ },
+            patient := __src.patient, packets := 0, escrow := 0, phase := RecipientIdentification.Phase.ready,
+            active := true },
+        reader :=
+          have __src := s.reader;
+          {
+            reader :=
+              have __src := s.reader.reader;
+              { world := __src.world, archive := __src.archive, currentContext := __src.currentContext, fuel := 0,
+                active := __src.active, token := __src.token, next := __src.next, cache := __src.cache },
+            reserve := 0, workspace := __src.workspace, phase := __src.phase, normalized := __src.normalized,
+            conflict := __src.conflict, working := __src.working, published := __src.published,
+            current := __src.current },
+        bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody ++ [s.core.hardware.fuel, s.reader.reader.fuel, s.reader.reserve],
+        sourceCustody := s.sourceCustody ++ [10 * s.core.packets], assembly := s.assembly, copyFund := s.copyFund - 1,
+        operationFund := s.operationFund, writerFund := s.writerFund, readerFund := s.readerFund,
+        sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := Life.committed, copyLatch := none, window := s.window, nAccess := s.nAccess,
+        scope := s.scope && sc✝, permission := s.permission && pm✝, delivery := s.delivery && dl✝,
+        released := s.released, attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing,
+        reading := s.reading, port := s.port, closed := s.closed, route := s.route }.reader =
+    s.reader
+EvaluativeSuccession.lean:677:12: error: Tactic `rfl` failed: The left-hand side
+  { core := s.core, reader := PaidRecipientReasons.advance s.reader PaidRecipientReasons.Event.cold, bank := s.bank,
+      history := s.history, native := s.native, commonCustody := s.commonCustody, sourceCustody := s.sourceCustody,
+      assembly := s.assembly - 1, copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+      readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+      inaccessibleSource := s.inaccessibleSource, held := s.held - 1, installed := s.installed + 1, cursor := s.cursor,
+      eligible := s.eligible, life := Life.bound, copyLatch := s.copyLatch, window := s.window, nAccess := connected✝,
+      scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+      attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+      port := s.port, closed := s.closed, route := s.route }.reader
+is not definitionally equal to the right-hand side
+  s.reader
+
+case h_5
+laws : RecipientCorrection.Laws
+s : State
+x✝ : Event
+connected✝ : Bool
+heq✝ : Event.attempt = Event.bindAccess connected✝
+⊢ { core := s.core, reader := PaidRecipientReasons.advance s.reader PaidRecipientReasons.Event.cold, bank := s.bank,
+        history := s.history, native := s.native, commonCustody := s.commonCustody, sourceCustody := s.sourceCustody,
+        assembly := s.assembly - 1, copyFund := s.copyFund, operationFund := s.operationFund,
+        writerFund := s.writerFund, readerFund := s.readerFund, sourceFund := s.sourceFund,
+        inaccessibleCommon := s.inaccessibleCommon, inaccessibleSource := s.inaccessibleSource, held := s.held - 1,
+        installed := s.installed + 1, cursor := s.cursor, eligible := s.eligible, life := Life.bound,
+        copyLatch := s.copyLatch, window := s.window, nAccess := connected✝, scope := s.scope,
+        permission := s.permission, delivery := s.delivery, released := s.released, attempts := s.attempts,
+        probeRunning := s.probeRunning, probing := s.probing, reading := s.reading, port := s.port, closed := s.closed,
+        route := s.route }.reader =
+    s.reader
+EvaluativeSuccession.lean:677:12: error: Tactic `rfl` failed: The left-hand side
+  (have t := setArchive s (EmissionArchive.advance (producer laws) (archive s) e✝);
+    match e✝ with
+    | EmissionArchive.Event.core (RecipientArchive.Event.core RecipientIdentification.Event.write) successor =>
+      { core := t.core, reader := t.reader, bank := t.bank, history := t.history, native := t.native,
+        commonCustody := t.commonCustody, sourceCustody := t.sourceCustody, assembly := t.assembly,
+        copyFund := t.copyFund, operationFund := t.operationFund, writerFund := t.writerFund,
+        readerFund := t.readerFund, sourceFund := t.sourceFund, inaccessibleCommon := t.inaccessibleCommon,
+        inaccessibleSource := t.inaccessibleSource, held := t.held, installed := t.installed, cursor := t.cursor,
+        eligible := t.eligible, life := t.life, copyLatch := t.copyLatch, window := t.window, nAccess := t.nAccess,
+        scope := t.scope, permission := t.permission, delivery := t.delivery, released := t.released,
+        attempts := t.attempts, probeRunning := false, probing := t.probing, reading := t.reading, port := t.port,
+        closed := t.closed, route := t.route }
+    | EmissionArchive.Event.core (RecipientArchive.Event.core RecipientIdentification.Event.miss) successor =>
+      { core := t.core, reader := t.reader, bank := t.bank, history := t.history, native := t.native,
+        commonCustody := t.commonCustody, sourceCustody := t.sourceCustody, assembly := t.assembly,
+        copyFund := t.copyFund, operationFund := t.operationFund, writerFund := t.writerFund,
+        readerFund := t.readerFund, sourceFund := t.sourceFund, inaccessibleCommon := t.inaccessibleCommon,
+        inaccessibleSource := t.inaccessibleSource, held := t.held, installed := t.installed, cursor := t.cursor,
+        eligible := t.eligible, life := t.life, copyLatch := t.copyLatch, window := t.window, nAccess := t.nAccess,
+        scope := t.scope, permission := t.permission, delivery := t.delivery, released := t.released,
+        attempts := t.attempts, probeRunning := false, probing := t.probing, reading := t.reading, port := t.port,
+        closed := t.closed, route := t.route }
+    | x => t).reader
+is not definitionally equal to the right-hand side
+  s.reader
+
+case h_9
+laws : RecipientCorrection.Laws
+s : State
+x✝ : Event
+e✝ : PublicationBridge.ArchiveEvent
+heq✝ : Event.attempt = Event.bank e✝
+⊢ (have t := setArchive s (EmissionArchive.advance (producer laws) (archive s) e✝);
+      match e✝ with
+      | EmissionArchive.Event.core (RecipientArchive.Event.core RecipientIdentification.Event.write) successor =>
+        { core := t.core, reader := t.reader, bank := t.bank, history := t.history, native := t.native,
+          commonCustody := t.commonCustody, sourceCustody := t.sourceCustody, assembly := t.assembly,
+          copyFund := t.copyFund, operationFund := t.operationFund, writerFund := t.writerFund,
+          readerFund := t.readerFund, sourceFund := t.sourceFund, inaccessibleCommon := t.inaccessibleCommon,
+          inaccessibleSource := t.inaccessibleSource, held := t.held, installed := t.installed, cursor := t.cursor,
+          eligible := t.eligible, life := t.life, copyLatch := t.copyLatch, window := t.window, nAccess := t.nAccess,
+          scope := t.scope, permission := t.permission, delivery := t.delivery, released := t.released,
+          attempts := t.attempts, probeRunning := false, probing := t.probing, reading := t.reading, port := t.port,
+          closed := t.closed, route := t.route }
+      | EmissionArchive.Event.core (RecipientArchive.Event.core RecipientIdentification.Event.miss) successor =>
+        { core := t.core, reader := t.reader, bank := t.bank, history := t.history, native := t.native,
+          commonCustody := t.commonCustody, sourceCustody := t.sourceCustody, assembly := t.assembly,
+          copyFund := t.copyFund, operationFund := t.operationFund, writerFund := t.writerFund,
+          readerFund := t.readerFund, sourceFund := t.sourceFund, inaccessibleCommon := t.inaccessibleCommon,
+          inaccessibleSource := t.inaccessibleSource, held := t.held, installed := t.installed, cursor := t.cursor,
+          eligible := t.eligible, life := t.life, copyLatch := t.copyLatch, window := t.window, nAccess := t.nAccess,
+          scope := t.scope, permission := t.permission, delivery := t.delivery, released := t.released,
+          attempts := t.attempts, probeRunning := false, probing := t.probing, reading := t.reading, port := t.port,
+          closed := t.closed, route := t.route }
+      | x => t).reader =
+    s.reader
+EvaluativeSuccession.lean:677:12: error: Tactic `rfl` failed: The left-hand side
+  { core := s.core,
+      reader :=
+        PaidRecipientReasons.initial
+          (PaidArchiveReader.initial () s.bank.records true (s.reader.reader.fuel + s.readerFund)) 0,
+      bank := s.bank, history := s.history, native := s.native, commonCustody := s.commonCustody,
+      sourceCustody := s.sourceCustody, assembly := s.assembly, copyFund := s.copyFund,
+      operationFund := s.operationFund, writerFund := s.writerFund, readerFund := 0, sourceFund := s.sourceFund,
+      inaccessibleCommon := s.inaccessibleCommon, inaccessibleSource := s.inaccessibleSource, held := s.held,
+      installed := s.installed, cursor := s.cursor, eligible := s.eligible, life := s.life, copyLatch := s.copyLatch,
+      window := s.window, nAccess := s.nAccess, scope := s.scope, permission := s.permission, delivery := s.delivery,
+      released := s.released, attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing,
+      reading := true, port := s.port, closed := s.closed, route := s.route }.reader
+is not definitionally equal to the right-hand side
+  s.reader
+
+case h_10
+laws : RecipientCorrection.Laws
+s : State
+x✝ : Event
+heq✝ : Event.attempt = Event.prepare
+⊢ { core := s.core,
+        reader :=
+          PaidRecipientReasons.initial
+            (PaidArchiveReader.initial () s.bank.records true (s.reader.reader.fuel + s.readerFund)) 0,
+        bank := s.bank, history := s.history, native := s.native, commonCustody := s.commonCustody,
+        sourceCustody := s.sourceCustody, assembly := s.assembly, copyFund := s.copyFund,
+        operationFund := s.operationFund, writerFund := s.writerFund, readerFund := 0, sourceFund := s.sourceFund,
+        inaccessibleCommon := s.inaccessibleCommon, inaccessibleSource := s.inaccessibleSource, held := s.held,
+        installed := s.installed, cursor := s.cursor, eligible := s.eligible, life := s.life, copyLatch := s.copyLatch,
+        window := s.window, nAccess := s.nAccess, scope := s.scope, permission := s.permission, delivery := s.delivery,
+        released := s.released, attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing,
+        reading := true, port := s.port, closed := s.closed, route := s.route }.reader =
+    s.reader
+EvaluativeSuccession.lean:677:12: error: Tactic `rfl` failed: The left-hand side
+  { core := s.core, reader := PaidRecipientReasons.advance s.reader e✝, bank := s.bank, history := s.history,
+      native := s.native, commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+      copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund, readerFund := s.readerFund,
+      sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+      inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+      eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+      scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+      attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+      port := cut s.port, closed := s.closed, route := s.route }.reader
+is not definitionally equal to the right-hand side
+  s.reader
+
+case h_11
+laws : RecipientCorrection.Laws
+s : State
+x✝ : Event
+e✝ : PaidRecipientReasons.Event
+heq✝ : Event.attempt = Event.reason e✝
+⊢ { core := s.core, reader := PaidRecipientReasons.advance s.reader e✝, bank := s.bank, history := s.history,
+        native := s.native, commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+        copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+        readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+        scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+        attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+        port := cut s.port, closed := s.closed, route := s.route }.reader =
+    s.reader
+EvaluativeSuccession.lean:677:12: error: Tactic `rfl` failed: The left-hand side
+  (if Known s ∧ gates s ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 0 < s.core.packets then
+      { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+        copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+        readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+        scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+        attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+        port := Port.executing, closed := s.closed, route := s.route }
+    else
+      { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+        copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+        readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+        scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+        attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+        port := Port.consumed, closed := true, route := s.route }).reader
+is not definitionally equal to the right-hand side
+  s.reader
+
+case h_14
+laws : RecipientCorrection.Laws
+s : State
+x✝ : Event
+heq✝ : Event.attempt = Event.attempt
+⊢ (if Known s ∧ gates s ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 0 < s.core.packets then
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+          port := Port.executing, closed := s.closed, route := s.route }
+      else
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+          port := Port.consumed, closed := true, route := s.route }).reader =
+    s.reader

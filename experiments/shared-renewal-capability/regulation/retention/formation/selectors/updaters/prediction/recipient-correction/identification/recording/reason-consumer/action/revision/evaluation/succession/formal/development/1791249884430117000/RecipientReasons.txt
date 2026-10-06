@@ -1,0 +1,21 @@
+'RecipientReasons.compatible_iff' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.normalization_sound' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.finite_normalization_sound' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.finite_known_agree' does not depend on any axioms
+'RecipientReasons.finite_no_conflict' does not depend on any axioms
+'RecipientReasons.first_known_sound' depends on axioms: [propext]
+'RecipientReasons.finite_informative_identifies' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.finite_identifies_compatible' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.normalization_preserves_unknown' does not depend on any axioms
+'RecipientReasons.negative_fact_is_informative' does not depend on any axioms
+'RecipientReasons.option_bool_cases' depends on axioms: [propext]
+'RecipientReasons.sound_no_conflict' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.sound_orientation' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.sound_informative' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.unknown_is_not_conflict' does not depend on any axioms
+'RecipientReasons.conflict_is_distinct' does not depend on any axioms
+'RecipientReasons.closure_of_orientation' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.informative_exact_route' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.actual_relevance' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.closure_instrumental_sound' depends on axioms: [propext, Quot.sound]
+'RecipientReasons.current_cache_normalizes_sound' depends on axioms: [propext, Quot.sound]

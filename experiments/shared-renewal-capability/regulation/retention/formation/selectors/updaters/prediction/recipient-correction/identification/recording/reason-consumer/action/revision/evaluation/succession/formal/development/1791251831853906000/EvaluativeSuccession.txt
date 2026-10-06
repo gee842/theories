@@ -1,0 +1,22 @@
+EvaluativeSuccession.lean:739:4: error: Tactic `apply` failed: could not unify the conclusion of `Generative.Trace.cons`
+  Generative.Trace ?m.45 ?m.46 (?m.48 :: ?m.49) (routed t r)
+with the goal
+  Generative.Trace (process laws) (routed s r) (e :: es) (routed u r)
+
+Note: The full type of `Generative.Trace.cons` is
+  Generative.Process.step ?m.45 ?m.46 ?m.48 ?m.47 →
+    Generative.Trace ?m.45 ?m.47 ?m.49 (routed t r) → Generative.Trace ?m.45 ?m.46 (?m.48 :: ?m.49) (routed t r)
+
+case cons
+laws : RecipientCorrection.Laws
+s✝ t✝ : State
+es✝ : List Event
+r : Route
+s t u : State
+e : Event
+es : List Event
+he : (process laws).step s e t
+ht : Generative.Trace (process laws) t es u
+ih : (∀ (e : Event), e ∈ es → e ≠ Event.assess) → Generative.Trace (process laws) (routed t r) es (routed u r)
+h : ∀ (e_1 : Event), e_1 ∈ e :: es → e_1 ≠ Event.assess
+⊢ Generative.Trace (process laws) (routed s r) (e :: es) (routed u r)

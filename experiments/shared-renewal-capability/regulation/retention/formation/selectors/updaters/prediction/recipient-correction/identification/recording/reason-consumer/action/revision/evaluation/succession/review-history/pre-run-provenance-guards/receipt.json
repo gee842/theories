@@ -1,0 +1,7 @@
+{
+  "status": "unrun source preserved before root source review correction",
+  "created_utc": "2026-10-06T01:35:05.358648+00:00",
+  "source_sha256": "441cc77b887e3c968b1851e71f5e22ab221793a8ce5453e89cac3fffdb13b891",
+  "scientific_execution_performed": false,
+  "finding": "Callable frame helpers need explicit owner/binding and sensed/acquired/ready phase guards so a frame cannot be bound after outcomes; frozen law unchanged."
+}

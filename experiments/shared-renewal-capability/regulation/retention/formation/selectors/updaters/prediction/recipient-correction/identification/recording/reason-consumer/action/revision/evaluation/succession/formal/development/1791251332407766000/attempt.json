@@ -1,0 +1,12 @@
+[
+  {
+    "name": "EvaluativeSuccession",
+    "returncode": 0,
+    "source_sha256": "55163897bf19b0e06922ba29988f4184f943828ac563ed7072798c0ffbab04f3"
+  },
+  {
+    "name": "SuccessionWitness",
+    "returncode": -2,
+    "source_sha256": "d8830043237445543c06727dd85adefb7a0cf783648c877c7dcd639f305c3300"
+  }
+]

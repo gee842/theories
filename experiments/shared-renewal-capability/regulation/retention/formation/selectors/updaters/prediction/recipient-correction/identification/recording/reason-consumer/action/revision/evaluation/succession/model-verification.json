@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-06T01:47:44.414420+00:00",
+  "finished_at": "2026-10-06T01:48:23.344852+00:00",
+  "counts": {
+    "cases": 29,
+    "mixtures": 261,
+    "histories": 3306,
+    "snapshots": 67974,
+    "aggregate_values": 11223,
+    "parent_catalog": 114,
+    "ancestry_catalog": 38,
+    "formation_prefixes": 372
+  },
+  "comparisons": {
+    "conventional_exact_histories": 1102,
+    "equal_input_histories": 1102
+  },
+  "mutations": [
+    {
+      "name": "free_copy_read",
+      "rejected": true,
+      "reason": "(((('mutation', 'free_copy_read'), 9, 'handoff.read'), 'whole continuation ledger'), 163, 162)"
+    },
+    {
+      "name": "copied_false_native_n",
+      "rejected": true,
+      "reason": "(((('mutation', 'copied_false_native_n'), 10, 'copy_write'), 'unchanged donor support'), {'bit': False, 'cells': 6, 'count': 3, 'mode': 'closed', 'n': 0, 'packets': [2, 2, 2], 'support': True}, {'n': 7, 'count': 3, 'mode': 'closed', 'bit': False, 'packets': [2, 2, 2], 'cells': 6, 'support': True})"
+    },
+    {
+      "name": "hidden_qualification_restoration",
+      "rejected": true,
+      "reason": "(((('mutation', 'hidden_qualification_restoration'), 10, 'copy_write'), 'actual core', 'last'), 1, 0)"
+    },
+    {
+      "name": "native_source_as_actor_fuel",
+      "rejected": true,
+      "reason": "(((('mutation', 'native_source_as_actor_fuel'), 12, 'release_child'), 'actual core', 'fuel'), 28, 26)"
+    },
+    {
+      "name": "double_child_release",
+      "rejected": true,
+      "reason": "(((('mutation', 'double_child_release'), 12, 'accounts.release_child'), 'whole continuation ledger'), 192, 162)"
+    },
+    {
+      "name": "retired_donor_reactivated",
+      "rejected": true,
+      "reason": "(((('mutation', 'retired_donor_reactivated'), 11, 'access'), 'distinct lifecycle'), ('child', 'live', 'commissioned'), ('child', 'retired', 'commissioned'))"
+    },
+    {
+      "name": "doubled_patient_in_retired_hardware",
+      "rejected": true,
+      "reason": "(((('mutation', 'doubled_patient_in_retired_hardware'), 10, 'copy_write'), 'retired hardware retained'), {'hardware': {'active': True, 'coupling': 0, 'coupling_life': 2, 'failed_q': -1, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 0, 'qualified_q': -1, 'recoded': True, 'stage': 2, 'witness': False, 'written': True, 'recipient': 60}, 'identity': 'original_learner', 'physical': {'acquired_record': None, 'core_action': None, 'core_phase': 'ready', 'core_target': None}}, {'hardware': {'active': True, 'coupling': 0, 'coupling_life': 2, 'failed_q': -1, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 0, 'qualified_q': -1, 'recoded': True, 'stage': 2, 'witness': False, 'written': True}, 'physical': {'acquired_record': None, 'core_action': None, 'core_phase': 'ready', 'core_target': None}, 'identity': 'original_learner'})"
+    },
+    {
+      "name": "wrong_recipient_target",
+      "rejected": true,
+      "reason": "(((('mutation', 'wrong_recipient_target'), 52, 'selected:sense'), 'actual recipient phase'), {'acquired_record': None, 'core_action': None, 'core_phase': 'sensed', 'core_target': 'actor'}, {'core_phase': 'sensed', 'core_target': 'recipient', 'core_action': None, 'acquired_record': None})"
+    },
+    {
+      "name": "actor_bit_overwritten",
+      "rejected": true,
+      "reason": "(((('mutation', 'actor_bit_overwritten'), 18, 'probe0.write'), 'historical actor bit'), 1, 0)"
+    },
+    {
+      "name": "unearned_positive_feedback",
+      "rejected": true,
+      "reason": "(((('mutation', 'unearned_positive_feedback'), 17, 'probe0:acquire'), 'actual recipient phase'), {'acquired_record': True, 'core_action': 0, 'core_phase': 'acquired', 'core_target': 'recipient'}, {'core_phase': 'acquired', 'core_target': 'recipient', 'core_action': 0, 'acquired_record': False})"
+    },
+    {
+      "name": "free_record_write",
+      "rejected": true,
+      "reason": "(((('mutation', 'free_record_write'), 27, 'bank.write_bit0'), 'whole continuation ledger'), 163, 162)"
+    },
+    {
+      "name": "reused_selected_authorization",
+      "rejected": true,
+      "reason": "(((('mutation', 'reused_selected_authorization'), 57, 'complete'), 'single-use evaluation state'), 'assessed_help', 'consumed')"
+    },
+    {
+      "name": "old_bank_consistently_rebound_as_fresh",
+      "rejected": true,
+      "reason": "(((('mutation', 'old_bank_consistently_rebound_as_fresh'), 11, 'access.assemble_bind'), 'physical bank identity'), 'old_physical_bank', 'new_physical_bank_1')"
+    },
+    {
+      "name": "stale_frame_with_consistently_rewritten_decode_and_publication",
+      "rejected": true,
+      "reason": "(((('mutation', 'stale_frame_with_consistently_rewritten_decode_and_publication'), 21, 'bank_bind'), 'actual newly acquired bank'), {'bound': [1, 0], 'budget': 0, 'cells': [None, None, None, None], 'complete': False, 'current': 1, 'epoch': True, 'escrow': 4, 'identity': 'new_physical_bank_1', 'latched': None, 'live': True, 'locked': False, 'next': 2, 'owner': 'child', 'pending': True, 'written': 0}, {'identity': 'new_physical_bank_1', 'owner': 'child', 'epoch': True, 'next': 2, 'current': 1, 'live': True, 'locked': False, 'bound': [1, 1], 'latched': None, 'cells': [None, None, None, None], 'written': 0, 'complete': False, 'pending': True, 'budget': 0, 'escrow': 4})"
+    }
+  ],
+  "mutation_count": 14,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/check_model.py": "f8f272429c97d296a24c5c6b47a174f260e8db72552e6911b34dde846cc408f9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/model.py": "cf7afad69d8c48f428a8a94d3cf7eb7cb713ab6c72fda6ab39b2668c98dab184",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/results.json.gz": "d91c4f20b3783fdbd41eb5d7f9c40d4750e832654b983ee4b05093bb359d31ed",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fixtures.json": "5fd9dfe25ca1ada5c89b3ee1254d13e9aaaad0d1d64dcbaee7204241598d55b0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/reporting.json": "9b43123bcd59a6da02fcc4a4fbda913a4669000f5f2cfb2414cd0e0b53e51823",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/protocol-freeze.json": "6cdbc9ed4a96783e60a196e5970b8e7c9f1872b5c221c7fbfa16c5b6e0dcccc5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/cases.json": "9af372c92ed3790256e432dcd133dedafb6749a322a98230bec0f28192733e5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/INTERFACE.md": "5f7b8ffd65f8a067d40033ee1531c7ac12818adb8fc8cf85e51737a55babff62",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/DRAFT-PROTOCOL.md": "df60bc8641368b52c2653606386911fa02414ec4f519e1c2834d1c9066ab84c9"
+  },
+  "scope": "Independent full inherited-history/protocol/resource/data/choice reconstruction. No new producer transition imports. Separate source/API tests and Lean theorem audit have their own scopes."
+}

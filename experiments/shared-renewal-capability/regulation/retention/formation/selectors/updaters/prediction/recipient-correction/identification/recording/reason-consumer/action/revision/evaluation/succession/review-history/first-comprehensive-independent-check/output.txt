@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-06T01:47:44.414420+00:00",
+  "finished_at": "2026-10-06T01:48:23.344852+00:00",
+  "counts": {
+    "cases": 29,
+    "mixtures": 261,
+    "histories": 3306,
+    "snapshots": 67974,
+    "aggregate_values": 11223,
+    "parent_catalog": 114,
+    "ancestry_catalog": 38,
+    "formation_prefixes": 372
+  },
+  "comparisons": {
+    "conventional_exact_histories": 1102,
+    "equal_input_histories": 1102
+  },
+  "mutation_count": 14,
+  "scope": "Independent full inherited-history/protocol/resource/data/choice reconstruction. No new producer transition imports. Separate source/API tests and Lean theorem audit have their own scopes."
+}

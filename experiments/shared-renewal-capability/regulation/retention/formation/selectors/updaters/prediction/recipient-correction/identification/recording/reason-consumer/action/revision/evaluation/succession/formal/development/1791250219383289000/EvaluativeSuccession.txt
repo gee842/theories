@@ -1,0 +1,328 @@
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.acquire channel✝, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.acquire channel✝, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.acquire channel✝, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.acquire channel✝, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.acquire channel✝, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.acquire channel✝, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.write, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.write, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.write, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.write, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.write, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:247:59: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match RecipientIdentification.Event.write, s.core.phase with
+    | RecipientIdentification.Event.acquire channel, RecipientIdentification.Phase.worked target receipt => True
+    | RecipientIdentification.Event.write, RecipientIdentification.Phase.acquired target record => True
+    | x, x_1 => False)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:251:10: warning: unused variable `laws`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+EvaluativeSuccession.lean:266:113: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (s.bank.live = true ∧
+      ∃ i r bits, (address✝ = i ∧ record✝ = r ∧ written✝ = bits) ∧ bits.length < 4 ∧ 0 < s.bank.escrow)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:273:33: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.bank event✝ with
+    | Event.assemble => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor < 8 ∧ 0 < s.held ∧ 0 < s.assembly
+    | Event.omitWindow => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor = 6 ∧ 0 < s.assembly
+    | Event.copyRead => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor = 8 ∧ s.copyLatch = none ∧ 0 < s.copyFund
+    | Event.copyWrite qualified scope permission delivery =>
+      s.life = Life.quiesced ∧ s.copyLatch.isSome = true ∧ s.core.escrow = 0 ∧ 0 < s.copyFund
+    | Event.bindAccess connected =>
+      s.life = Life.committed ∧ s.window = true ∧ s.cursor = 8 ∧ 0 < s.held ∧ 0 < s.assembly
+    | Event.release => s.life = Life.bound ∧ s.released = false
+    | Event.probeStart =>
+      s.life = Life.child ∧ s.released = true ∧ s.attempts < 2 ∧ s.probing = false ∧ s.reading = false
+    | Event.probeEnd => s.probing = true ∧ s.bank.phase = EmissionArchive.Phase.idle
+    | Event.bank e =>
+      s.life = Life.child ∧
+        s.probing = true ∧
+          s.reading = false ∧
+            bankGuard s e ∧
+              EmissionArchive.Enabled (producer laws) 3 (archive s) e ∧
+                EmissionArchive.Valid (producer laws) (archive s)
+    | Event.prepare =>
+      s.life = Life.child ∧
+        s.attempts = 2 ∧
+          s.probing = false ∧
+            s.reading = false ∧
+              s.bank.phase = EmissionArchive.Phase.idle ∧ s.reader.reserve = 0 ∧ s.reader.workspace = true
+    | Event.reason e => s.life = Life.child ∧ s.reading = true ∧ PaidRecipientReasons.Enabled s.reader e
+    | Event.read =>
+      s.life = Life.child ∧
+        s.reading = true ∧
+          s.closed = false ∧
+            s.port = Port.idle ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.core.hardware.fuel
+    | Event.assess => s.closed = false ∧ s.port = Port.read ∧ Known s ∧ 1 ≤ s.core.hardware.fuel
+    | Event.attempt => s.closed = false ∧ s.port = Port.help
+    | Event.abstain => s.closed = false ∧ s.port = Port.abstain
+    | Event.trial e =>
+      s.port = Port.executing ∧
+        s.closed = false ∧
+          RecipientOnly s e ∧
+            (Settlement s e ∨ Known s ∧ gates s) ∧
+              RecipientIdentification.Valid s.core ∧ RecipientIdentification.Enabled s.core e
+    | Event.scope value => True
+    | Event.permission value => True
+    | Event.delivery value => True
+    | Event.access value => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:273:33: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable
+    (match Event.reason event✝ with
+    | Event.assemble => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor < 8 ∧ 0 < s.held ∧ 0 < s.assembly
+    | Event.omitWindow => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor = 6 ∧ 0 < s.assembly
+    | Event.copyRead => s.eligible = true ∧ s.life = Life.donor ∧ s.cursor = 8 ∧ s.copyLatch = none ∧ 0 < s.copyFund
+    | Event.copyWrite qualified scope permission delivery =>
+      s.life = Life.quiesced ∧ s.copyLatch.isSome = true ∧ s.core.escrow = 0 ∧ 0 < s.copyFund
+    | Event.bindAccess connected =>
+      s.life = Life.committed ∧ s.window = true ∧ s.cursor = 8 ∧ 0 < s.held ∧ 0 < s.assembly
+    | Event.release => s.life = Life.bound ∧ s.released = false
+    | Event.probeStart =>
+      s.life = Life.child ∧ s.released = true ∧ s.attempts < 2 ∧ s.probing = false ∧ s.reading = false
+    | Event.probeEnd => s.probing = true ∧ s.bank.phase = EmissionArchive.Phase.idle
+    | Event.bank e =>
+      s.life = Life.child ∧
+        s.probing = true ∧
+          s.reading = false ∧
+            bankGuard s e ∧
+              EmissionArchive.Enabled (producer laws) 3 (archive s) e ∧
+                EmissionArchive.Valid (producer laws) (archive s)
+    | Event.prepare =>
+      s.life = Life.child ∧
+        s.attempts = 2 ∧
+          s.probing = false ∧
+            s.reading = false ∧
+              s.bank.phase = EmissionArchive.Phase.idle ∧ s.reader.reserve = 0 ∧ s.reader.workspace = true
+    | Event.reason e => s.life = Life.child ∧ s.reading = true ∧ PaidRecipientReasons.Enabled s.reader e
+    | Event.read =>
+      s.life = Life.child ∧
+        s.reading = true ∧
+          s.closed = false ∧
+            s.port = Port.idle ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 1 ≤ s.core.hardware.fuel
+    | Event.assess => s.closed = false ∧ s.port = Port.read ∧ Known s ∧ 1 ≤ s.core.hardware.fuel
+    | Event.attempt => s.closed = false ∧ s.port = Port.help
+    | Event.abstain => s.closed = false ∧ s.port = Port.abstain
+    | Event.trial e =>
+      s.port = Port.executing ∧
+        s.closed = false ∧
+          RecipientOnly s e ∧
+            (Settlement s e ∨ Known s ∧ gates s) ∧
+              RecipientIdentification.Valid s.core ∧ RecipientIdentification.Enabled s.core e
+    | Event.scope value => True
+    | Event.permission value => True
+    | Event.delivery value => True
+    | Event.access value => True)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EvaluativeSuccession.lean:293:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  u ≥ 0
+  t ≥ 0
+  r ≥ 0
+  q ≥ 0
+  p ≥ 0
+  o ≥ 0
+  n ≥ 0
+  m ≥ 0
+  l ≥ 0
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a - u ≥ 1
+where
+ a := ↑(RecipientIdentification.energy (RecipientAction.core s.parent.parent))
+ b := ↑s.parent.parent.reasons.reader.world.budget
+ c := ↑s.parent.parent.reasons.reader.world.escrow
+ d := ↑s.parent.parent.reasons.reader.fuel
+ e := ↑s.parent.parent.reasons.reserve
+ f := ↑s.parent.parent.commandReserve
+ g := ↑s.parent.parent.readerReserve
+ h := ↑s.parent.parent.sourceReserve
+ i := ↑s.parent.bank.budget
+ j := ↑s.parent.bank.escrow
+ k := ↑s.parent.actorReserve
+ l := ↑s.parent.readerReserve
+ m := ↑s.parent.sourceReserve
+ n := ↑s.training
+ o := ↑s.source0
+ p := ↑s.source1
+ q := ↑s.source2
+ r := ↑s.later
+ t := ↑s.laterSource
+ u := ↑(RecipientIdentification.energy (AcquiredEvaluation.core s))
+EvaluativeSuccession.lean:301:60: error: Application type mismatch: The argument
+  dl
+has type
+  Enabled laws s (Event.copyWrite qualified✝ q sc pm)
+of sort `Prop` but is expected to have type
+  Bool
+of sort `Type` in the application
+  ne q sc pm dl
+EvaluativeSuccession.lean:302:55: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.725 = ?m.725
+but is expected to have type
+  {
+        core :=
+          have __src := s.core;
+          {
+            hardware :=
+              have __src := s.core.hardware;
+              { fuel := 0, stage := __src.stage, life := __src.life, gateLife := __src.gateLife,
+                coupling := __src.coupling, couplingLife := __src.couplingLife, written := __src.written,
+                q := s.copyLatch.getD 0, last := q✝ },
+            patient := __src.patient, packets := 0, escrow := 0, phase := RecipientIdentification.Phase.ready,
+            active := true },
+        reader :=
+          have __src := s.reader;
+          {
+            reader :=
+              have __src := s.reader.reader;
+              { world := __src.world, archive := __src.archive, currentContext := __src.currentContext, fuel := 0,
+                active := __src.active, token := __src.token, next := __src.next, cache := __src.cache },
+            reserve := 0, workspace := __src.workspace, phase := __src.phase, normalized := __src.normalized,
+            conflict := __src.conflict, working := __src.working, published := __src.published,
+            current := __src.current },
+        bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody ++ [s.core.hardware.fuel, s.reader.reader.fuel, s.reader.reserve],
+        sourceCustody := s.sourceCustody ++ [10 * s.core.packets], assembly := s.assembly, copyFund := s.copyFund - 1,
+        operationFund := s.operationFund, writerFund := s.writerFund, readerFund := s.readerFund,
+        sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := Life.committed, copyLatch := none, window := s.window, nAccess := s.nAccess,
+        scope := s.scope && sc✝, permission := s.permission && pm✝, delivery := s.delivery && dl✝,
+        released := s.released, attempts := s.attempts, probing := s.probing, reading := s.reading, port := s.port,
+        closed := s.closed, route := s.route }.sourceCustody =
+    s.sourceCustody
+in the application
+  ⟨?m.723, rfl⟩
+EvaluativeSuccession.lean:302:55: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.779 = ?m.779
+but is expected to have type
+  (if Known s ∧ gates s ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 0 < s.core.packets then
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probing := s.probing, reading := s.reading, port := Port.executing,
+          closed := s.closed, route := s.route }
+      else
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probing := s.probing, reading := s.reading, port := Port.consumed, closed := true,
+          route := s.route }).sourceCustody =
+    s.sourceCustody
+in the application
+  ⟨?m.777, rfl⟩
+EvaluativeSuccession.lean:331:13: error: Type mismatch
+  congrArg fun w => w.context
+has type
+  ?m.51 = ?m.52 → RecipientArchive.World.context ?m.51 = RecipientArchive.World.context ?m.52
+but is expected to have type
+  (EmissionArchive.advance (producer laws) (archive s) EmissionArchive.Event.write).world.context = true
+EvaluativeSuccession.lean:329:2: error: Alternative `core` has not been provided
+EvaluativeSuccession.lean:332:6: error: unexpected token '('; expected command

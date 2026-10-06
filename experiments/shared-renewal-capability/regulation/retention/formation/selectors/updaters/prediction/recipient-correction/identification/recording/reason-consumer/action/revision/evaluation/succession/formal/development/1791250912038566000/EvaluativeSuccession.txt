@@ -1,0 +1,22 @@
+EvaluativeSuccession.lean:257:60: error: Application type mismatch: The argument
+  trivial
+has type
+  True
+but is expected to have type
+  Settlement s (RecipientIdentification.Event.acquire channel✝)
+in the application
+  isTrue trivial
+EvaluativeSuccession.lean:257:60: error: Application type mismatch: The argument
+  trivial
+has type
+  True
+but is expected to have type
+  Settlement s RecipientIdentification.Event.write
+in the application
+  isTrue trivial
+EvaluativeSuccession.lean:258:27: error: Type mismatch
+  h
+has type
+  Settlement s x✝¹
+but is expected to have type
+  False

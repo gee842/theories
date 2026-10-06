@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "Reporting copies independently checked aggregates exactly; no new model execution.",
+  "counts": {
+    "cases": 29,
+    "mixtures": 261,
+    "histories": 3306,
+    "prefixes": 67974
+  },
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/check_model.py": "f8f272429c97d296a24c5c6b47a174f260e8db72552e6911b34dde846cc408f9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/model-verification.json": "7be4723221f6d321375cd12816b3a27c5705a0ed49506f6bf0adaa1d917e5528",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/reporting.json": "9b43123bcd59a6da02fcc4a4fbda913a4669000f5f2cfb2414cd0e0b53e51823",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/result-files.json": "2ff3c89eb0dc6924b61c8b82c0a2ce14e5368a2929e8516f05855a451033a617",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/results.json.gz": "d91c4f20b3783fdbd41eb5d7f9c40d4750e832654b983ee4b05093bb359d31ed",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/review-history/independent-report-check/check.py": "7bd9e879643de4cffa7b037cdbfa92ef66bdf2b33403ffc6b3edd89c3748162b"
+  }
+}

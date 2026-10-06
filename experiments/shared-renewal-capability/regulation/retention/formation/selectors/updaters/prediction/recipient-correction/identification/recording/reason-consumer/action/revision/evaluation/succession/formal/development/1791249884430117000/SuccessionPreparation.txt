@@ -1,0 +1,28 @@
+SuccessionPreparation.lean:35:81: error: unexpected identifier; expected '}'
+SuccessionPreparation.lean:57:2: error: unsolved goals
+case a
+ext : ∀ (s t : ArchivePreparation.Assembly), s.plant = t.plant → s.cells = t.cells → s.readers = t.readers → s = t
+⊢ { aFree := 10 - 9, hFree := 11 - 9, resident := FormedSelection.Resident.active, intact := true, localFuel := true,
+      fuel := 265, source := 216 } =
+    { aFree := 1, hFree := 2, resident := FormedSelection.Resident.active, intact := true, localFuel := true,
+      fuel := 199, source := 186 }
+SuccessionPreparation.lean:58:4: error: 'change' tactic failed, pattern
+  (prepared 360 230).cells - 6 = (EvaluationPreparation.prepared 276 200).cells
+is not definitionally equal to target
+  (parentProjection (prepared 360 230)).cells = (EvaluationPreparation.prepared 276 200).cells
+SuccessionPreparation.lean:60:4: error: 'change' tactic failed, pattern
+  (prepared 360 230).readers - 2 = (EvaluationPreparation.prepared 276 200).readers
+is not definitionally equal to target
+  (parentProjection (prepared 360 230)).readers = (EvaluationPreparation.prepared 276 200).readers
+SuccessionPreparation.lean:65:46: error: Tactic `decide` proved that the proposition
+  ArchivePreparation.adapterFuel (prepared 360 230) = 198 + 66 ∧
+    (prepared 360 230).plant.source = 186 + 30 ∧ 360 + 230 = 276 + 200 + 18 + 66 + 30 ∧ 78 = 60 + 18
+is false
+'SuccessionPreparation.runnable_trace' depends on axioms: [propext]
+'SuccessionPreparation.prospective_formation_feasible' depends on axioms: [propext]
+'SuccessionPreparation.prospective_formation_trace' depends on axioms: [propext]
+'SuccessionPreparation.formation_endpoint' depends on axioms: [propext]
+'SuccessionPreparation.assemblies_feasible' does not depend on any axioms
+'SuccessionPreparation.material_partition' depends on axioms: [propext]
+'SuccessionPreparation.exact_parent_prepared_projection' depends on axioms: [propext, sorryAx]
+'SuccessionPreparation.original_compartments' depends on axioms: [sorryAx]

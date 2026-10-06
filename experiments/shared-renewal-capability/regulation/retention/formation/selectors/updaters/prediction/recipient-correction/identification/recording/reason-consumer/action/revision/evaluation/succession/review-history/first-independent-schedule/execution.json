@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-06T01:28:47.473641+00:00",
+  "source_sha256": "8d1cd1cd672b640bd89520f1332651cb37c285b67eb439bfadae2abc23497ff1",
+  "histories": 3306,
+  "snapshots": 64824,
+  "context": [
+    "inherited_interruption",
+    "conventional",
+    "fixed_normal",
+    9
+  ],
+  "scope": "Standalone independent schedule sanity execution on accepted inputs only; no producer implementation or new outcomes imported/read.",
+  "finished_at": "2026-10-06T01:28:53.958926+00:00"
+}

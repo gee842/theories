@@ -1,0 +1,161 @@
+EvaluativeSuccession.lean:700:49: error: Tactic `rfl` failed: The left-hand side
+  { core := (routed s r).core, reader := (routed s r).reader, bank := (routed s r).bank,
+    history := (routed s r).history, native := (routed s r).native, commonCustody := (routed s r).commonCustody,
+    sourceCustody := (routed s r).sourceCustody, assembly := (routed s r).assembly, copyFund := (routed s r).copyFund,
+    operationFund := (routed s r).operationFund, writerFund := (routed s r).writerFund,
+    readerFund := (routed s r).readerFund, sourceFund := (routed s r).sourceFund,
+    inaccessibleCommon := (routed s r).inaccessibleCommon, inaccessibleSource := (routed s r).inaccessibleSource,
+    held := (routed s r).held, installed := (routed s r).installed, cursor := (routed s r).cursor,
+    eligible := (routed s r).eligible, life := (routed s r).life, copyLatch := (routed s r).copyLatch,
+    window := (routed s r).window, nAccess := (routed s r).nAccess, scope := (routed s r).scope,
+    permission := (routed s r).permission, delivery := (routed s r).delivery, released := (routed s r).released,
+    attempts := (routed s r).attempts, probeRunning := (routed s r).probeRunning, probing := (routed s r).probing,
+    reading := (routed s r).reading, port := Port.executing, closed := (routed s r).closed,
+    route := (routed s r).route }
+is not definitionally equal to the right-hand side
+  routed
+    (if Known s ∧ gates s ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 0 < s.core.packets then
+      { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+        copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+        readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+        scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+        attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+        port := Port.executing, closed := s.closed, route := s.route }
+    else
+      { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+        copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+        readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+        scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+        attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+        port := Port.consumed, closed := true, route := s.route })
+    r
+
+case isTrue
+laws : RecipientCorrection.Laws
+s : State
+r : Route
+h : Event.attempt ≠ Event.assess
+h✝ :
+  Known (routed s r) ∧
+    gates (routed s r) ∧ (routed s r).core.phase = RecipientIdentification.Phase.ready ∧ 0 < (routed s r).core.packets
+⊢ { core := (routed s r).core, reader := (routed s r).reader, bank := (routed s r).bank,
+      history := (routed s r).history, native := (routed s r).native, commonCustody := (routed s r).commonCustody,
+      sourceCustody := (routed s r).sourceCustody, assembly := (routed s r).assembly, copyFund := (routed s r).copyFund,
+      operationFund := (routed s r).operationFund, writerFund := (routed s r).writerFund,
+      readerFund := (routed s r).readerFund, sourceFund := (routed s r).sourceFund,
+      inaccessibleCommon := (routed s r).inaccessibleCommon, inaccessibleSource := (routed s r).inaccessibleSource,
+      held := (routed s r).held, installed := (routed s r).installed, cursor := (routed s r).cursor,
+      eligible := (routed s r).eligible, life := (routed s r).life, copyLatch := (routed s r).copyLatch,
+      window := (routed s r).window, nAccess := (routed s r).nAccess, scope := (routed s r).scope,
+      permission := (routed s r).permission, delivery := (routed s r).delivery, released := (routed s r).released,
+      attempts := (routed s r).attempts, probeRunning := (routed s r).probeRunning, probing := (routed s r).probing,
+      reading := (routed s r).reading, port := Port.executing, closed := (routed s r).closed,
+      route := (routed s r).route } =
+    routed
+      (if Known s ∧ gates s ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 0 < s.core.packets then
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+          port := Port.executing, closed := s.closed, route := s.route }
+      else
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+          port := Port.consumed, closed := true, route := s.route })
+      r
+EvaluativeSuccession.lean:700:49: error: Tactic `rfl` failed: The left-hand side
+  { core := (routed s r).core, reader := (routed s r).reader, bank := (routed s r).bank,
+    history := (routed s r).history, native := (routed s r).native, commonCustody := (routed s r).commonCustody,
+    sourceCustody := (routed s r).sourceCustody, assembly := (routed s r).assembly, copyFund := (routed s r).copyFund,
+    operationFund := (routed s r).operationFund, writerFund := (routed s r).writerFund,
+    readerFund := (routed s r).readerFund, sourceFund := (routed s r).sourceFund,
+    inaccessibleCommon := (routed s r).inaccessibleCommon, inaccessibleSource := (routed s r).inaccessibleSource,
+    held := (routed s r).held, installed := (routed s r).installed, cursor := (routed s r).cursor,
+    eligible := (routed s r).eligible, life := (routed s r).life, copyLatch := (routed s r).copyLatch,
+    window := (routed s r).window, nAccess := (routed s r).nAccess, scope := (routed s r).scope,
+    permission := (routed s r).permission, delivery := (routed s r).delivery, released := (routed s r).released,
+    attempts := (routed s r).attempts, probeRunning := (routed s r).probeRunning, probing := (routed s r).probing,
+    reading := (routed s r).reading, port := Port.consumed, closed := true, route := (routed s r).route }
+is not definitionally equal to the right-hand side
+  routed
+    (if Known s ∧ gates s ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 0 < s.core.packets then
+      { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+        copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+        readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+        scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+        attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+        port := Port.executing, closed := s.closed, route := s.route }
+    else
+      { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+        commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+        copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+        readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+        inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+        eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+        scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+        attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+        port := Port.consumed, closed := true, route := s.route })
+    r
+
+case isFalse
+laws : RecipientCorrection.Laws
+s : State
+r : Route
+h : Event.attempt ≠ Event.assess
+h✝ :
+  ¬(Known (routed s r) ∧
+      gates (routed s r) ∧
+        (routed s r).core.phase = RecipientIdentification.Phase.ready ∧ 0 < (routed s r).core.packets)
+⊢ { core := (routed s r).core, reader := (routed s r).reader, bank := (routed s r).bank,
+      history := (routed s r).history, native := (routed s r).native, commonCustody := (routed s r).commonCustody,
+      sourceCustody := (routed s r).sourceCustody, assembly := (routed s r).assembly, copyFund := (routed s r).copyFund,
+      operationFund := (routed s r).operationFund, writerFund := (routed s r).writerFund,
+      readerFund := (routed s r).readerFund, sourceFund := (routed s r).sourceFund,
+      inaccessibleCommon := (routed s r).inaccessibleCommon, inaccessibleSource := (routed s r).inaccessibleSource,
+      held := (routed s r).held, installed := (routed s r).installed, cursor := (routed s r).cursor,
+      eligible := (routed s r).eligible, life := (routed s r).life, copyLatch := (routed s r).copyLatch,
+      window := (routed s r).window, nAccess := (routed s r).nAccess, scope := (routed s r).scope,
+      permission := (routed s r).permission, delivery := (routed s r).delivery, released := (routed s r).released,
+      attempts := (routed s r).attempts, probeRunning := (routed s r).probeRunning, probing := (routed s r).probing,
+      reading := (routed s r).reading, port := Port.consumed, closed := true, route := (routed s r).route } =
+    routed
+      (if Known s ∧ gates s ∧ s.core.phase = RecipientIdentification.Phase.ready ∧ 0 < s.core.packets then
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+          port := Port.executing, closed := s.closed, route := s.route }
+      else
+        { core := s.core, reader := s.reader, bank := s.bank, history := s.history, native := s.native,
+          commonCustody := s.commonCustody, sourceCustody := s.sourceCustody, assembly := s.assembly,
+          copyFund := s.copyFund, operationFund := s.operationFund, writerFund := s.writerFund,
+          readerFund := s.readerFund, sourceFund := s.sourceFund, inaccessibleCommon := s.inaccessibleCommon,
+          inaccessibleSource := s.inaccessibleSource, held := s.held, installed := s.installed, cursor := s.cursor,
+          eligible := s.eligible, life := s.life, copyLatch := s.copyLatch, window := s.window, nAccess := s.nAccess,
+          scope := s.scope, permission := s.permission, delivery := s.delivery, released := s.released,
+          attempts := s.attempts, probeRunning := s.probeRunning, probing := s.probing, reading := s.reading,
+          port := Port.consumed, closed := true, route := s.route })
+      r

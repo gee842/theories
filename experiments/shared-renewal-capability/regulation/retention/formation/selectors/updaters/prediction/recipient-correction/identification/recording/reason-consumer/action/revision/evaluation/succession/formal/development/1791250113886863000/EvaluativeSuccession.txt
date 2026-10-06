@@ -1,0 +1,256 @@
+EvaluativeSuccession.lean:5:13: error: unexpected token ':='; expected command
+EvaluativeSuccession.lean:6:13: error: unexpected token ':='; expected command
+EvaluativeSuccession.lean:7:13: error: unexpected token ':='; expected command
+EvaluativeSuccession.lean:8:13: error: unexpected token ':='; expected command
+EvaluativeSuccession.lean:9:13: error: unexpected token ':='; expected command
+EvaluativeSuccession.lean:15:18: error(lean.unknownIdentifier): Unknown identifier `PR.State`
+EvaluativeSuccession.lean:17:20: error(lean.unknownIdentifier): Unknown identifier `PR.State`
+EvaluativeSuccession.lean:18:2: error: `sorryAx` is not a structure
+EvaluativeSuccession.lean:21:21: error(lean.unknownIdentifier): Unknown identifier `PR.State`
+EvaluativeSuccession.lean:28:14: error(lean.unknownIdentifier): Unknown identifier `PR.State`
+EvaluativeSuccession.lean:30:20: error(lean.unknownIdentifier): Unknown identifier `AE.State`
+EvaluativeSuccession.lean:31:3: error(lean.unknownIdentifier): Unknown identifier `AE.core`
+EvaluativeSuccession.lean:31:20: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.ready` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `ReasonReplay.ready`
+  [apply] `AcquiredEvaluation.NativeMode.ready`
+  [apply] `RecipientIdentification.Phase.ready`
+EvaluativeSuccession.lean:31:30: error(lean.unknownIdentifier): Unknown identifier `AE.core`
+EvaluativeSuccession.lean:31:56: error(lean.unknownIdentifier): Unknown identifier `AE.core`
+EvaluativeSuccession.lean:32:3: error(lean.unknownIdentifier): Unknown identifier `AE.core`
+EvaluativeSuccession.lean:32:44: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.closed` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `AcquiredEvaluation.NativeMode.closed`
+  [apply] `Std.Broadcast.Error.closed`
+  [apply] `Std.CloseableChannel.Error.closed`
+EvaluativeSuccession.lean:33:16: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.finished` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `AcquiredEvaluation.Opportunity.finished`
+  [apply] `IO.TaskState.finished`
+EvaluativeSuccession.lean:33:55: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.consumed` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `RevisionWitness.consumed`
+  [apply] `AcquiredEvaluation.PortMode.consumed`
+EvaluativeSuccession.lean:35:22: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.idle` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `AcquiredEvaluation.PortMode.idle`
+  [apply] `EmissionArchive.Phase.idle`
+  [apply] `RecordedEvidence.Pending.idle`
+  [apply] `Std.Internal.UV.System.CPUTimes.idle`
+EvaluativeSuccession.lean:36:45: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.idle` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `AcquiredEvaluation.PortMode.idle`
+  [apply] `EmissionArchive.Phase.idle`
+  [apply] `RecordedEvidence.Pending.idle`
+  [apply] `Std.Internal.UV.System.CPUTimes.idle`
+EvaluativeSuccession.lean:39:14: error(lean.unknownIdentifier): Unknown identifier `AE.State`
+EvaluativeSuccession.lean:42:13: error(lean.unknownIdentifier): Unknown identifier `RI.Boundary`
+EvaluativeSuccession.lean:76:9: error(lean.unknownIdentifier): Unknown identifier `RI.State`
+EvaluativeSuccession.lean:78:9: error(lean.unknownIdentifier): Unknown identifier `FR.Bank`
+EvaluativeSuccession.lean:110:19: error(lean.unknownIdentifier): Unknown identifier `AE.State`
+EvaluativeSuccession.lean:115:19: error(lean.unknownIdentifier): Unknown identifier `AE.State`
+EvaluativeSuccession.lean:118:15: error(lean.unknownIdentifier): Unknown identifier `AE.State`
+EvaluativeSuccession.lean:119:2: error: invalid {...} notation, expected type is not of the form (C ...)
+  State
+EvaluativeSuccession.lean:135:26: error(lean.unknownIdentifier): Unknown identifier `RI.energy`
+EvaluativeSuccession.lean:135:43: error(lean.unknownIdentifier): Unknown identifier `PR.energy`
+EvaluativeSuccession.lean:135:62: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:135:76: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:136:2: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:136:18: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:136:38: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:136:58: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:136:69: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:137:2: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:137:18: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:137:31: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:137:44: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:137:57: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:137:78: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:139:33: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:139:42: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:142:4: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:142:16: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:142:28: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:142:43: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:143:4: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:143:18: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:143:32: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:143:46: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:143:61: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:145:2: error: expected structure
+EvaluativeSuccession.lean:147:21: error(lean.unknownIdentifier): Unknown identifier `RC.Laws`
+EvaluativeSuccession.lean:149:27: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:149:43: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:149:60: error(lean.unknownIdentifier): Unknown identifier `PR.CurrentPublication`
+EvaluativeSuccession.lean:149:34: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.child` could not be determined
+
+Hint: Using `Life.child would be unambiguous:
+  [apply] `Life.child`
+EvaluativeSuccession.lean:151:17: error(lean.unknownIdentifier): Unknown identifier `PR.CurrentPublication`
+EvaluativeSuccession.lean:154:17: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:154:57: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:156:32: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:156:49: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:156:68: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:157:2: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:157:37: error(lean.unknownIdentifier): Unknown identifier `RC.packedAct`
+EvaluativeSuccession.lean:158:0: warning: declaration uses `sorry`
+EvaluativeSuccession.lean:160:32: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:160:47: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:160:67: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:161:0: warning: declaration uses `sorry`
+EvaluativeSuccession.lean:163:32: error(lean.unknownIdentifier): Unknown identifier `RI.Event`
+EvaluativeSuccession.lean:164:10: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:164:10: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:168:32: error(lean.unknownIdentifier): Unknown identifier `RI.Event`
+EvaluativeSuccession.lean:173:35: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:173:51: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:174:2: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:174:24: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:174:42: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:174:59: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:173:42: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.child` could not be determined
+
+Hint: Using `Life.child would be unambiguous:
+  [apply] `Life.child`
+EvaluativeSuccession.lean:174:15: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.ready` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `ReasonReplay.ready`
+  [apply] `AcquiredEvaluation.NativeMode.ready`
+  [apply] `RecipientIdentification.Phase.ready`
+EvaluativeSuccession.lean:175:0: warning: declaration uses `sorry`
+EvaluativeSuccession.lean:178:23: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:178:36: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:182:29: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:184:37: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:184:37: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:185:4: error(lean.invalidDottedIdent): Invalid dotted identifier notation: The expected type of `.shared` could not be determined
+
+Hint: Using one of these would be unambiguous:
+  [apply] `AcquiredEvaluation.Routing.shared`
+  [apply] `Route.shared`
+EvaluativeSuccession.lean:197:30: error(lean.unknownIdentifier): Unknown identifier `PR.Event`
+EvaluativeSuccession.lean:198:19: error(lean.unknownIdentifier): Unknown identifier `RI.Event`
+EvaluativeSuccession.lean:203:88: error: unexpected identifier; expected '}'
+EvaluativeSuccession.lean:202:20: error(lean.unknownIdentifier): Unknown identifier `RC.Laws`
+EvaluativeSuccession.lean:244:20: error(lean.unknownIdentifier): Unknown identifier `RC.Laws`
+EvaluativeSuccession.lean:245:17: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:245:35: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:245:51: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:245:66: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:245:77: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  s
+has type `State` which does not have the necessary form.
+EvaluativeSuccession.lean:246:19: error: maximum number of errors (100; from option `maxErrors`) reached, exiting

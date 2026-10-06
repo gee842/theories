@@ -1,0 +1,5 @@
+# Selected projection requires completed child commissioning
+
+The first crosscheck invocation stopped before comparing the paid-copy milestone. Its projection equated the numerical active-core owner `child` with the formal lifecycle `.child`. At numerical `handoff.write_unknown`, ownership has transferred but the child's status is still `committed`; paid access rebinding and commissioning have not occurred. The old publication remains historical at this boundary. The added ownership assertion exposed the overly broad projection.
+
+The formal `Current` predicate explicitly requires lifecycle `.child`. The projection is repaired by requiring numerical `child_status == commissioned`, which is reached after paid access binding and account release. No producer, results, physical law, Lean source or expected milestone value changes. This is a crosscheck representation correction, not evidence of current reasons at birth. The original checker, failed output and execution receipt are preserved here.

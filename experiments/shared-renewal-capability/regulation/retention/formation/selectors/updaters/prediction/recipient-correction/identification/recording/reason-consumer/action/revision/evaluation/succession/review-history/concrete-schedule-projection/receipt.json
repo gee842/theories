@@ -1,0 +1,12 @@
+{
+  "status": "serialization_projection_before_first_producer_comparison",
+  "created_at": "2026-10-06T01:37:54.990393+00:00",
+  "source_sha256": "5e12c3bc47fbb159623c879161c2101c8b4e599d0055e2da89d9a485a9aab3a7",
+  "changes": [
+    "Align legal RI-write/frame-flush ordering after paid frame latch; disjoint escrows, unchanged guards/cost/final state.",
+    "Expose factual-complete and reason-combine zero-cost boundary snapshots, plus existing reader finite counters/fields."
+  ],
+  "producer_source_inspected": true,
+  "producer_outcomes_inspected": false,
+  "note": "Original independent law and complete pre-producer schedule sources/execution retained. No frozen protocol/case change."
+}

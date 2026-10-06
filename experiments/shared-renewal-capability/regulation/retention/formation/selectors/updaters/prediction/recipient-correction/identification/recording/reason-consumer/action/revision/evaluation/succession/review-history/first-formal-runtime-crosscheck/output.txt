@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/crosscheck_witness.py", line 217, in <module>
+    main()
+  File "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/crosscheck_witness.py", line 120, in main
+    check(main_path, "handoff.write_unknown", "paid_actual_copy",
+  File "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/crosscheck_witness.py", line 111, in check
+    actual = projection(matching[0]["state"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/crosscheck_witness.py", line 35, in projection
+    assert r["owner"] == b["owner"] == "child" and r["bound"] and b["live"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
