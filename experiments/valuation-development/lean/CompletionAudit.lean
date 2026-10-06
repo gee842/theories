@@ -1,0 +1,14 @@
+import ValuationCompletion
+open ValuationDevelopment
+#print axioms after_change_reached_exact
+#print axioms after_change_unreached_stale
+#print axioms greedy_exact_improved
+#print axioms greedy_stale_after_change
+#print axioms curious_exact_improved
+#print axioms curiosity_tracks_change
+#print axioms noise_floor
+#print axioms noise_locks_greedy_curiosity_recovers
+#print axioms fixed_other_reduces
+#print axioms joint_coverage_needs_synchrony
+#print axioms route_revised_by_consequence
+#print axioms other_valuation_formed_by_pairing

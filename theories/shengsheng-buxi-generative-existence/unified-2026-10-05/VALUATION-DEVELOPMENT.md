@@ -31,10 +31,22 @@ Amplification is thus neither generative nor degenerative in itself. The witness
 
 Consider retention that overwrites the estimate of the option taken and leaves the others alone, in a world whose consequences do not change. Every option an organization has reached is then estimated exactly. Every option it has not reached keeps its initial estimate for ever. Organizations that share one retained-state type and estimate reading, with any selection laws, hold identical estimates once each has reached every option. Exploration driven by retained conditions can supply that coverage: a retained curiosity counter corrects the self-confirming underestimate in three steps, and so do optimistic starting estimates. Retained conditions can also prevent coverage, as a low estimate does under greedy choice. An estimate difference that persists without coverage persists because of what each history has not reached. The initial or inherited value is part of its explanation. Changing consequence laws, noisy retention and interacting organizations remain open (§13 of the argument; 11 further Lean results).
 
+## Changing worlds, noise, interaction, and levels 5 and 6
+
+Section 14 of the argument adds 12 further Lean results.
+
+- **Changing worlds.** After a change, an option not re-reached keeps its old estimate, so coverage has to recur.
+- **Noise.** If each encounter halves error up to a noise allowance, error falls into a floor of twice that allowance and stays there. One unlucky observation can still lock a greedy learner into the worse option, and recurring curiosity recovers it.
+- **Interaction.** With the other's choice fixed, interaction reduces exactly to a single organization in an unchanging world. Otherwise each organization's world changes with the other's choices. In a coordination witness, curiosity out of phase never discovers the joint option, and a shared schedule does.
+- **Revising how one values (level 5).** A surprising consequence switches an organization's own update route, so its history changes how it learns, not only what it has learned.
+- **Coming to value others (level 6).** Another's consequences move the disposition only after paired experience has formed a coupling. Good shared events form positive concern and bad ones form negative concern.
+
+With these, the study's first outcome is complete at its stated formal scope: 67 results across four modules. Empirical identification, probabilistic versions, material realization and the ethical question are handed on to other work.
+
 ## What constrains the sign of a formed valuation
 
 No analyst is needed. Within one history, the sign is constrained by the current coupling and the consequences actually reached. Across continuing histories, the [prefix bound](CONDITIONAL-UNIVERSALITY.md#3-the-universal-prefix-bound) gives a necessary condition at the level of the whole ledger. Where every event makes a positive demand on support, continuation needs provision recurring arbitrarily late. Attributing that provision to one coupling, or applying the bound across successors, needs further accounts that are not built here. Where support arrives independently, harmful or decoupled valuations continue just as well. Constraint on valuations needs no reward function, and it guarantees nothing favorable.
 
 ## Supplied and open
 
-The following remain supplied: the organization/world boundary, deterministic selection, the consequence law of each model, the coupling sign of any concrete organization, and the variation that samples alternatives. Open questions are where natural systems sit among the capacities, exploration that depends on retained conditions, a stochastic restatement, and formal witnesses for revising the valuing route and for other-including valuation. Universal favorable direction and ethical warrant remain separate questions for the [unified ethical account](UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question).
+The following remain supplied: the organization/world boundary, deterministic selection, the consequence law of each model, the coupling sign of any concrete organization, and the variation that samples alternatives. Handed on to other work: where natural systems sit among the capacities (empirical), probabilistic versions, and material realization of the witnesses in the native generative core. Universal favorable direction and ethical warrant remain separate questions for the [unified ethical account](UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question).
