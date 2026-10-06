@@ -25,3 +25,11 @@ InquiryWarrant exit 0
 ## Audit
 
 [`audit-output.txt`](audit-output.txt) holds the complete `#print axioms` output for all 27 explicit new declarations. Dependencies are `propext` and `Quot.sound` only: no `sorryAx`, no `Classical.choice`, no custom axiom. The source contains no `sorry`, `axiom` or `native_decide`. The prerequisite modules rebuilt without error; their own audits are recorded in the earlier verification.
+
+## Addendum: ContinuationScope
+
+Same compiler and procedure. `ContinuationScope.lean` (SHA-256 `89aa3c118c08d28a4653b4b90bc258d022c55eb087e4e429c779810220ceec0a`) imports only the Lean prelude. It compiled with exit 0. [`continuation-scope-audit-output.txt`](continuation-scope-audit-output.txt) holds the `#print axioms` output for its 22 declarations: `propext` and `Quot.sound` only.
+
+## Addendum: RecordedClaims
+
+Same compiler and procedure. `RecordedClaims.lean` (SHA-256 `71b42b8bc11f63cbb853174e6bf83210416bf9e18d44cfaafa838a86b960b4a7`) imports only the Lean prelude and compiled with exit 0. [`recorded-claims-audit-output.txt`](recorded-claims-audit-output.txt) holds the audit for its 13 declarations; the only axiom dependency is `propext`.

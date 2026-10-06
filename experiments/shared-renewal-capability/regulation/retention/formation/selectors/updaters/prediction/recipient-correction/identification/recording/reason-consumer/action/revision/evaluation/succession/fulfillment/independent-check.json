@@ -1,0 +1,47 @@
+{
+  "status": "match",
+  "scope": "Independent reconstruction from PROTOCOL.md and the accepted succession model interface; producer and its checker not read.",
+  "accepted_model_sha256": "cf7afad69d8c48f428a8a94d3cf7eb7cb713ab6c72fda6ab39b2668c98dab184",
+  "protocol_sha256": "e234429ad64c822c399eea18a773a8d24914052712c47e5bd6b49a520053afcd",
+  "producer_results_sha256": "5f8505bce00e9795fb90cf64f32ec04fe9fc7935f97a85ef7e30957c64e5fc26",
+  "counts": {
+    "cases": 33,
+    "arms": 5,
+    "producers": 3,
+    "histories": 6270,
+    "compared_values": 136389,
+    "mismatches": 0,
+    "mismatches_by_key": {}
+  },
+  "config_notes": [
+    {
+      "case": "register_receipt_forged",
+      "producer_extra_keys": {
+        "register_forge": true
+      }
+    },
+    {
+      "case": "register_unprovisioned",
+      "producer_extra_keys": {
+        "register_provision": 0
+      }
+    }
+  ],
+  "mismatches": [],
+  "interpretations": [
+    "Register binds iff probe0 actually reaches recipient sensing in the accepted trial and provision >= 1 (bind costs 1). A source outage (availability False) still reaches sensing in the accepted mechanics, so it yields a bound, present, receipt-0 record (a certified miss), not an unbound register.",
+    "Latch occurs at probe0 actual acquisition: (epoch=1, action, present=int(feedback[0] != missing), receipt=int(bool(acquired_record))); with a missing channel receipt is 0. Four bits written at probe0 write if 4 units remain (always true with provision 6).",
+    "Register record counts as certified iff complete, epoch-bound (cell0 == 1), present == 1 and receipt == 1; the action bit does not matter (service meaning is any actual capture). Unknown iff unbound/absent/incomplete or present == 0. A present receipt-0 record is a certified miss: neither certified nor unknown.",
+    "Second-query frame contributes via reader cache entry 1: non-null -> certified 1; null -> counted as unknown only if the frame itself is absent/unbound/incomplete/present==0, otherwise (present negative) neither. At a valid assessment cache entry 1 is always non-null, so this choice does not affect decisions.",
+    "Status is computed only when the evaluator reaches its paid write (valid assessment), i.e. at the accepted choose() call site, where the register read (1 isolated unit) is placed. Where the write is not reached, status is none. Shared arm never reads the register: status none.",
+    "register_receipt_forged: after probe0 completes with an actual miss (bound, latched, written), receipt bit set to 1. Built from the changed config (where the first probe misses for the selected donor).",
+    "register_unprovisioned: built from the changed config with register provision 0; no bind, no record -> unknown.",
+    "first_feedback_missing_{changed,stable}: feedback[0] = missing in the respective config.",
+    "episode deliveries = probe0 capture + probe1 capture + selected capture (actual recipient +10 events).",
+    "excess_k = selected capture occurred and probe captures (before it) >= k.",
+    "withheld_while_unmet_k = an assessment was written (valid) with value False and probe captures < k; applies to every arm, including withholdings by the shared rule (n <= 6).",
+    "Arm decision: shared: 10n>64. fulfill_k1/k3: shared rule AND pending. k2_deliver: shared AND (pending or unknown). k2_hold: shared AND pending.",
+    "Metric \"source\" is the core source; \"actor\" (core fuel) is compared too."
+  ],
+  "mixture_totals_checked": "per-arm/producer mixture-weighted totals of the compared metrics also compared against producer metrics where present"
+}

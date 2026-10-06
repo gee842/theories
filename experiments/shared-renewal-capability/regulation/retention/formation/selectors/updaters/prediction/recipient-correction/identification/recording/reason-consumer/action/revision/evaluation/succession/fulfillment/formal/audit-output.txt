@@ -1,0 +1,18 @@
+'FulfillmentStatus.certified' depends on axioms: [propext]
+'FulfillmentStatus.unknownCount' depends on axioms: [propext]
+'FulfillmentStatus.delivered' does not depend on any axioms
+'FulfillmentStatus.Faithful' depends on axioms: [propext]
+'FulfillmentStatus.Status' does not depend on any axioms
+'FulfillmentStatus.status' depends on axioms: [propext]
+'FulfillmentStatus.bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FulfillmentStatus.lowest' does not depend on any axioms
+'FulfillmentStatus.highest' does not depend on any axioms
+'FulfillmentStatus.lowest_faithful' depends on axioms: [propext]
+'FulfillmentStatus.highest_faithful' depends on axioms: [propext, Quot.sound]
+'FulfillmentStatus.fulfilled_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FulfillmentStatus.pending_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FulfillmentStatus.unknown_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FulfillmentStatus.forged_record_misleads' depends on axioms: [propext]
+'FulfillmentStatus.decision' does not depend on any axioms
+'FulfillmentStatus.met_claim_withhold_only' depends on axioms: [propext, Quot.sound]
+'FulfillmentStatus.last_step_competes' depends on axioms: [propext, Quot.sound]
