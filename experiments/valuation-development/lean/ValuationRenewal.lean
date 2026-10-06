@@ -161,4 +161,27 @@ theorem valuing_is_not_keeping :
       (fun k => by cases k <;> decide) (fun k => by cases k <;> decide) (fun k => k = false)]
     exact attribution_is_by_population.1.2
 
+/-! ## The contraction hypothesis of C1 is necessary -/
+
+/-- Retention that doubles: selection never reads the retained condition. -/
+def doubler : Org Nat Unit Unit Nat where
+  select _ _ := ()
+  retain m _ _ _ := 2 * m
+
+theorem doubler_run : ∀ (n m : Nat), doubler.run (fun _ _ => 0) m (List.replicate n ()) = 2 ^ n * m
+  | 0, m => by simp [Org.run]
+  | n + 1, m => by
+    show doubler.run (fun _ _ => 0) (2 * m) (List.replicate n ()) = 2 ^ (n + 1) * m
+    rw [doubler_run n (2 * m), Nat.pow_succ, Nat.mul_assoc, Nat.mul_comm 2 m]
+
+/-- Without contraction, organizations that select alike at every step can
+amplify their difference without bound: started one unit apart, after `n` agreeing
+steps they are `2^n` apart. So the contraction hypothesis of `agreement_contracts`
+cannot be dropped. -/
+theorem contraction_needed (n : Nat) :
+    doubler.agreeAlong (fun _ _ => 0) 0 1 (List.replicate n ()) ∧
+    doubler.run (fun _ _ => 0) 1 (List.replicate n ()) -
+      doubler.run (fun _ _ => 0) 0 (List.replicate n ()) = 2 ^ n :=
+  ⟨schedule_agrees doubler _ (fun _ _ _ => rfl) _ 0 1, by rw [doubler_run, doubler_run]; simp⟩
+
 end ValuationDevelopment
