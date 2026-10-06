@@ -1,0 +1,12 @@
+{
+  "file": "results.json.gz",
+  "compressed_sha256": "5f8505bce00e9795fb90cf64f32ec04fe9fc7935f97a85ef7e30957c64e5fc26",
+  "uncompressed_sha256": "aa92d54082163252d83223e98c5468324222b17d54e4a48b75547a224fa2ef9c",
+  "counts": {
+    "cases": 33,
+    "arms": 5,
+    "producers": 3,
+    "histories": 6270,
+    "prefixes": 147792
+  }
+}
