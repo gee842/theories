@@ -48,15 +48,15 @@ INHERITED_SHA256 = {
     "RenewalAccounting": "b593f8c58d7a302506deff75f36fe01ca53db7df59d701ee509f31d7585e0927",
     "RenewalClosure": "2e8a923cf90c3113c88afbaf107f9057ac3123f5f259ca759bab7741e66bada7",
     "RenewalSufficiency": "51788ffa220bae4493958fab5f63d2a6a8c2714ce2e5f9c56f4cc8f5c30e90a3",
-    "RenewalLink": "869991e709df8d15098fdb917631791ea2f2bbcc118979489b57d175a050aeed",
-    "RenewalCharacterization": "abaa2b8dcf9ca62b6475c01034a173211ae9c823d6b97751d4afe6a03e366524",
+    "RenewalLink": "1abc38a98588f33d3d2cf31fe0bf3f7026b936116500da2d2bbfa7d53404fa18",
+    "RenewalCharacterization": "b972ae4ec4e640568672ce29356647f93bf7928e23c669fa6318fda47bbee0a0",
     "ValuationDevelopment": "646fe738830cf9da7037f9ef554aa455af0dd85b32ae1ba3591ba7e6dbb3b9d2",
     "ClosedLoopValuation": "ba21df526dae8fdf0b4f5e1f1947ab12391572e083d9f521e3b0284fbf2c43d3",
     "ExplorationCoverage": "c6f0f9c8ac71310b2f1f7511f4347ace50c285eb712cb4335bf63f5f159abd8e",
     "ValuationCompletion": "7af08fa21c4c12d7eb53e525394303d168b1be4df20d6132451d1ddc3118c35f",
     "ValuationBridges": "9e2557f07597903c5d54ace4645e8267b2c769dde90a861d12a9e07e0eae0248",
-    "LineageInProcess": "13a1f9b12a61ec67891877f5db4e7a0afe7841c26c45b0601cc43e571c84e039",
-    "ValuationRenewal": "fef50ef2a44974622f313b5917bd631f8a41437ce37bb968ab774e25bf9569ad"
+    "LineageInProcess": "605e5ba655d7f81665dec19936f82f0afd416d83085f3fb14d86c65926c62d70",
+    "ValuationRenewal": "e64e02644405dc228fd641f6e974bbb49d558177275922c1f245929bfc20e8a6"
 }
 NEW = ["EvaluationPersistence"]
 ALLOWED_AXIOMS = {"propext", "Quot.sound"}  # inherited from the valuation study's modules; reported to Ren

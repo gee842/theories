@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-10-06T20:59:29.525918+00:00",
+  "checked_at_utc": "2026-10-06T21:03:35.525965+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "checker_sha256": "50e5620d2eb5b9c9586faa3d06c26500435d1e665eeb5e9874f71d79ffd22c2c",
+  "checker_sha256": "41e68a6ac830b92936bd1d350892f3a20d1974db69e4fe6e19817b6aa2ec45bf",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
   "allowed_standard_axioms": [
@@ -118,10 +118,10 @@
     {
       "module": "RenewalLink",
       "source": "../../conditional/renewal/RenewalLink.lean",
-      "source_sha256": "869991e709df8d15098fdb917631791ea2f2bbcc118979489b57d175a050aeed",
+      "source_sha256": "1abc38a98588f33d3d2cf31fe0bf3f7026b936116500da2d2bbfa7d53404fa18",
       "exit_code": 0,
       "new": false,
-      "dependency_audits": 9,
+      "dependency_audits": 13,
       "axioms": [
         "Quot.sound",
         "propext"
@@ -129,15 +129,15 @@
       "empty_axiom_audits": 1,
       "clean": true,
       "output": "verification/RenewalLink.txt",
-      "output_sha256": "533839f78df6ee75de0fa3b34c113e5dab3a1b2745465058df56a85aeced9976"
+      "output_sha256": "413889009b034a2656e2a086ee8d5c1ffefcef8f2a8610ddb0ad7ec178514dc9"
     },
     {
       "module": "RenewalCharacterization",
       "source": "../../conditional/renewal/RenewalCharacterization.lean",
-      "source_sha256": "abaa2b8dcf9ca62b6475c01034a173211ae9c823d6b97751d4afe6a03e366524",
+      "source_sha256": "b972ae4ec4e640568672ce29356647f93bf7928e23c669fa6318fda47bbee0a0",
       "exit_code": 0,
       "new": false,
-      "dependency_audits": 42,
+      "dependency_audits": 48,
       "axioms": [
         "Quot.sound",
         "propext"
@@ -145,7 +145,7 @@
       "empty_axiom_audits": 3,
       "clean": true,
       "output": "verification/RenewalCharacterization.txt",
-      "output_sha256": "0b01199973e85560c0b4350ef3e9e96dca84889e4bea3272ef99b294cde5b6dc"
+      "output_sha256": "4cd67cb96e6ff7d68add8ff7c16887d5deefcc66cf2edd9a3a82d35195483930"
     },
     {
       "module": "ValuationDevelopment",
@@ -215,7 +215,7 @@
     {
       "module": "LineageInProcess",
       "source": "../../../../../../valuation-development/lean/LineageInProcess.lean",
-      "source_sha256": "13a1f9b12a61ec67891877f5db4e7a0afe7841c26c45b0601cc43e571c84e039",
+      "source_sha256": "605e5ba655d7f81665dec19936f82f0afd416d83085f3fb14d86c65926c62d70",
       "exit_code": 0,
       "new": false,
       "dependency_audits": 0,
@@ -228,7 +228,7 @@
     {
       "module": "ValuationRenewal",
       "source": "../../../../../../valuation-development/lean/ValuationRenewal.lean",
-      "source_sha256": "fef50ef2a44974622f313b5917bd631f8a41437ce37bb968ab774e25bf9569ad",
+      "source_sha256": "e64e02644405dc228fd641f6e974bbb49d558177275922c1f245929bfc20e8a6",
       "exit_code": 0,
       "new": false,
       "dependency_audits": 0,
