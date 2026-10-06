@@ -1,0 +1,76 @@
+ApplicationEvidence.lean:155:25: error: unsolved goals
+case false.false
+h : RecipientArchive.Header
+s t : RecipientArchive.World
+r : RecipientArchive.Frame
+hp : r.present = true
+hr : r.receipt = true
+guard :
+  ((s.live = true ∧ h.context = s.context) ∧ s.current = some h.address) ∧
+    h.action = RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient
+hs : s.core.phase = RecipientIdentification.Phase.worked RecipientCorrection.Target.recipient false
+he :
+  { context := s.context,
+      action := RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient, present := false,
+      receipt := false } =
+    r
+⊢ False
+
+case false.true
+h : RecipientArchive.Header
+s t : RecipientArchive.World
+r : RecipientArchive.Frame
+hp : r.present = true
+hr : r.receipt = true
+guard :
+  ((s.live = true ∧ h.context = s.context) ∧ s.current = some h.address) ∧
+    h.action = RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient
+hs : s.core.phase = RecipientIdentification.Phase.worked RecipientCorrection.Target.recipient true
+he :
+  { context := s.context,
+      action := RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient, present := false,
+      receipt := false } =
+    r
+⊢ False
+
+case true.false
+h : RecipientArchive.Header
+s t : RecipientArchive.World
+r : RecipientArchive.Frame
+hp : r.present = true
+hr : r.receipt = true
+guard :
+  ((s.live = true ∧ h.context = s.context) ∧ s.current = some h.address) ∧
+    h.action = RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient
+hs : s.core.phase = RecipientIdentification.Phase.worked RecipientCorrection.Target.recipient false
+he :
+  { context := s.context,
+      action := RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient, present := true,
+      receipt := false } =
+    r
+⊢ False
+
+case true.true
+h : RecipientArchive.Header
+s t : RecipientArchive.World
+r : RecipientArchive.Frame
+hp : r.present = true
+hr : r.receipt = true
+guard :
+  ((s.live = true ∧ h.context = s.context) ∧ s.current = some h.address) ∧
+    h.action = RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient
+hs : s.core.phase = RecipientIdentification.Phase.worked RecipientCorrection.Target.recipient true
+he :
+  { context := s.context,
+      action := RecipientCorrection.packedAct s.core.hardware.q RecipientCorrection.Target.recipient, present := true,
+      receipt := true } =
+    r
+⊢ r.context = s.context
+ApplicationEvidence.lean:185:23: error: Application type mismatch: The argument
+  hs
+has type
+  s.phase = EmissionArchive.Phase.bound i h
+but is expected to have type
+  EmissionArchive.Phase.bound i h = EmissionArchive.Phase.bound i h
+in the application
+  And.intro hs

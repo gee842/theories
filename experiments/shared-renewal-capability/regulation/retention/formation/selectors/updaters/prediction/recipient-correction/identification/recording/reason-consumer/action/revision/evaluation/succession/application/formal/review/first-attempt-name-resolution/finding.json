@@ -1,0 +1,14 @@
+{
+  "status": "review harness false rejection, preserved before repair",
+  "cause": "Unqualified #print axioms requests were compared to fully qualified compiler output. Lean exited0 with clean standard axioms.",
+  "repair": "Compare unique short names, retaining exact checks for every explicitly qualified request.",
+  "proof_source_changed": false,
+  "author_receipt_changed": false,
+  "files_sha256": {
+    "before.json": "df6447b9244347a65081eb6d2badfdab2693baa614fa1411ca83915c018a61d0",
+    "independent_compile.py": "1cec4ec624987012861b6e7a2f171ee54e80c66e840251b90e1154ef790722e8",
+    "logs/FormedSelection.txt": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+    "logs/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "verification.json": "ff48cef7e4311e1e1b5a037e7b7244788e4781ca81ee796f1a90b011fd98bc3a"
+  }
+}

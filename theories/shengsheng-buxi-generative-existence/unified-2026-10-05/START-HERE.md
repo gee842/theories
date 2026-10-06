@@ -12,6 +12,8 @@ The strongest common idea in the latest work is that **activity changes the cond
 
 This is the proposed root of 生生. The subject is a whole situation with differentiated centers and relations. A center exists through those relations; its particular consequences still matter. A flourishing aggregate can conceal a depleted participant, just as a stable measured total can conceal a growing internal difference.
 
+The [application-evidence proof](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-EVIDENCE-MATH.md) now gives a concrete example of activity changing its own practical conditions. In the specified receipt-only reader class, a supported command requires a recorded acquisition preceded by an actual recipient delivery. Under independently fixed one-service episode meanings, that delivery already fulfills the claim before the later selected use. Twenty-four new Lean audits and a separate fresh build establish this historical boundary. Publication is current relative to the reader's declared context; the proof supplies no new freshness sensor, ethical ground or fulfillment-sensitive policy. It shows why acquiring means knowledge and recognizing that further action is warranted are different tasks.
+
 ```mermaid
 flowchart TD
   A[Shared conditions and differentiated centers] --> B[Activity and interaction]

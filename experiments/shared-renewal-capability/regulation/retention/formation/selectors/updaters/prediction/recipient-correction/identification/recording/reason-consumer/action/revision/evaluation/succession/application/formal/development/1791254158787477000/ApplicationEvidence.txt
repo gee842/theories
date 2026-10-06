@@ -1,0 +1,34 @@
+'ApplicationEvidence.decode_has_positive_frame' depends on axioms: [propext]
+'ApplicationEvidence.normalize_nonempty' does not depend on any axioms
+'ApplicationEvidence.empty_closure_has_no_command' depends on axioms: [propext]
+'ApplicationEvidence.supported_normalized_nonempty' depends on axioms: [propext]
+'ApplicationEvidence.normalized_support_has_cache' depends on axioms: [propext]
+'ApplicationEvidence.current_command_has_accessible_positive_frame' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.initialized_paid_command_has_positive_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ApplicationEvidence.paid_trace_preserves_archive' depends on axioms: [propext]
+'ApplicationEvidence.trace_origin_located' depends on axioms: [propext]
+'ApplicationEvidence.stored_from_empty_has_located_origin' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.positive_emission_is_recipient_acquisition' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.positive_origin_shape' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.initialized_production_and_publication_has_positive_origin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ApplicationEvidence.located_positive_origin_is_actual_acquisition' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.worked_step_has_delivery_or_predecessor' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.worked_trace_has_delivery_or_initial_receipt' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.ready_acquisition_has_prior_delivery' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.prior_delivery_is_full_delivery' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.entrance_has_receipt_with_prior_delivery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ApplicationEvidence.current_command_implies_interpreted_service_met' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ApplicationEvidence.no_sound_pending_one_service_entrance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ApplicationEvidence.actual_publication_has_prior_paid_delivery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ApplicationEvidence.actual_credit_precedes_selected_use' depends on axioms: [propext, Quot.sound]
+'ApplicationEvidence.actual_no_sound_pending_one_service' depends on axioms: [propext, Classical.choice, Quot.sound]
