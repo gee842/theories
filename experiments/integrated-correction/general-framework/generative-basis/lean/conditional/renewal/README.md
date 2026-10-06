@@ -1,6 +1,14 @@
-# Renewal and closure: Phase 1
+# Renewal and closure: Phases 1 and 2
 
-6 October 2026 (UTC). AI-assisted Lean development for Phase 1 of the [renewal–closure roadmap](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-ROADMAP.md). The [study note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE1.md) states the claim, the conventions and the prior-art check.
+6 October 2026 (UTC). AI-assisted Lean development for Phases 1 and 2 of the [renewal–closure roadmap](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-ROADMAP.md). The [Phase 1 note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE1.md) states the claim, the conventions and the prior-art check. The [Phase 2 note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2.md) records sufficiency, the link between the two models, and the exact condition.
+
+## The main result
+
+**Renewal–closure theorem** (`renewal_closure_theorem`, in `RenewalCharacterization.lean`). Assume finitely many kinds and spans between one and `D`. Then some execution stays live forever, with no organization imported after the start, **if and only if** the law has a *self-renewing population*. That is a nonempty list of kinds such that:
+- each kind in it has a supporter in it whose span is at least two;
+- its tokens open over their spans at least what forming them demands: `Σ demand ≤ Σ rate · span`.
+
+Without such a population, every execution stops being live by an explicit time (`no_self_renewing_population_explicit_deadline`). With rates at most `A` and positive formation demands, that time is `((1 + A·D)^W · P₀ + 2) · W`. Here `W = (n + 1)·D + 1`, and `P₀` is the initial reserve plus what the initial tokens can open.
 
 ## What is proved
 
@@ -30,14 +38,43 @@ Taken together, the two files give two independent necessary conditions for endl
 - a realized closure (from finite reach and finitely many kinds);
 - some kind that brings in at least what its formation demands.
 
+**`RenewalSufficiency.lean`: closed populations that bring in enough renew forever.**
+
+Take a list `B` of kinds, repeats allowed, formed afresh on every tick. In the steady configuration `steady law B N`, each entry of `B` keeps one token of every age within its kind's span.
+- `steady_fixed`: one tick ages every token, drops those on their last tick and adds the new formations. It returns exactly the same configuration.
+- `steady_renews`, `steady_endless`: that tick is admissible and live when every formed kind has a supporter in `B` with span at least two, and `Σ demand ≤ Σ rate · span` over `B`. The steady configuration then renews forever, with any reserve, including none.
+- `balanced_closure_renews` **(B)**: a support-closed list of kinds that each bring in at least their formation demand renews forever.
+- `excess_supported_by_closure_renews` **(E)**: a support-closed list `C` that also supports a kind `q` with `demand q < rate q · span q` renews forever. Here `q` is formed `formation law C` times per tick next to `C`. The kinds of `C` may all fall short.
+- `closed_open_balanced_renews_forever`: the self-supporting kind with rate 1 and span 3 renews forever at demand 3. At demand 4 it cannot (`closed_open_short_cannot_renew_forever`). The exact threshold is visible in one kind.
+
+**`RenewalLink.lean`: both necessary conditions hold on one history.**
+
+An `Execution` is a supplied sequence of `channelProcess` ticks. Its only extra premise is that initial tokens hold no more than their kind's span.
+- `token_origin`: every token either came from the initial configuration or was formed on a definite earlier tick. Its remaining span records how long ago that was.
+- `executionSupport`: formations are occurrences in the sense of `OccurrenceSupport`. A support edge needs span at least two, because the supporter must survive the tick on which it acts. **The timescale separation that Montévil and Mossio put into the definition of a constraint comes out here as a consequence of the accounting.**
+- `live_late_descends_from_realized_closure`: in any execution, a live configuration after `(n + 1) · D` descends from a closed walk of such supporters. Each kind on that walk was formed within the preceding `(n + 1) · D` ticks.
+- `endless_renewal_needs_closure_and_adequate_kind`: an execution that stays live forever has both a realized closure at every late time and a kind with `demand ≤ rate · span`.
+
+**`RenewalCharacterization.lean`: the exact condition.**
+
+- `self_renewing_renews_forever`: sufficiency, through the steady configuration as an execution (`steadyExecution`).
+- `renewal_dichotomy`: for any execution, either the law has a self-renewing population, or the execution stops being live by `(P + 2) · W`, where `P` is the opening potential at time `W`. The proof has two cases.
+  - Suppose a kind that brings in more than its demand is formed after time `W`. Its formation descends from a realized cycle. The cycle plus the walk to that kind, with enough repeats of the kind, is a self-renewing population (`cycle_with_tail`, `excess_population`).
+  - Otherwise, the opening potential cannot rise, and each formation of a short kind lowers it (`stretch_potential`, `stretch_potential_short`). So some window of length `W` has no short formation. The closure that the live configuration at its end descends from consists of kinds that bring in enough.
+- `renews_forever_has_self_renewing_population`, `renewal_closure_theorem`: necessity, and the equivalence.
+- `potential_growth`, `potential_bound`, `no_self_renewing_population_explicit_deadline`: the deadline from the initial configuration alone.
+- `closed_open_short_has_no_self_renewing_population`: the single short kind of Phase 1 is decided by the law.
+- `dangling_support_renews_forever`, `dangling_kind_outside_every_closure`, `dangling_closure_falls_short`. A short self-supporting kind supports a second kind that supports nothing but brings in more than its demand. The second kind is in no closed set of the support relation, and the closure alone falls short, yet the law renews forever. **Renewal still needs a realized two-sided closure (`live_late_descends_from_realized_closure`). But the population that renews need only be closed under support. The kind that captures the flow can sit outside every two-sided closure of the support relation, and it is generative only through the provision it opens.**
+
+`RenewalClosure`'s window theorems now also state that the walk's occurrences come no later than the late occurrence (`s ≤ t`). The proofs build them that way, and the exact condition needs it.
+
 ## What is not yet proved
 
-These are Phase 2 items:
-- the exact condition when some kinds fall short and others do not (a balanced closure, or an excess kind reachable from a closure);
-- sufficiency;
-- the instance connecting `channelProcess` histories to `OccurrenceSupport`, which needs formation times tracked through ticks.
+- That the aggregate condition is equivalent to the roadmap's two named cases, a cycle of kinds that each bring in enough or an excess kind supported from a cycle, as a statement about the law alone. The necessity proof constructs one of the two, and sufficiency is proved for each, but the static cycle extraction is not stated.
+- Renewability of whole configurations, roadmap Phase 2b: which configurations can reach a standing renewal, and which histories damage that possibility.
+- The generalizations of Phase 3 (several required supporters, several flows) and the derivation of constraints inside the core (Phase 4).
 
-Kinds, edges, spans, demands and rates are supplied inputs. Nothing here says which history occurs, or that continuation is favorable.
+Kinds, edges, spans, demands and rates are supplied inputs. Nothing here says which history occurs, that a system reaches the steady configuration, or that continuation is favorable.
 
 ## Verify
 
@@ -45,8 +82,8 @@ From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 ch
 
 The checker:
 - requires the inherited `GenerativeCore`, `Depletion` and `SupportNecessity` to match the hashes in their own receipts;
-- builds all five modules fresh in a temporary directory;
+- builds all eight modules fresh in a temporary directory;
 - rejects `sorry`, custom axioms and warnings;
 - requires every new theorem to be audited.
 
-The [receipt](verification.json) records **32 new audits**: 8 with empty axiom reports, and 24 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package.
+The [receipt](verification.json) records **95 new audits**: 14 with empty axiom reports, and 81 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package. `Classical.choice` is avoided throughout; the note on `omega` in the Phase 2 note says how.

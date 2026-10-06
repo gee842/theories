@@ -51,6 +51,8 @@ The package is at [`lean/conditional/renewal/`](../../../../experiments/integrat
 
 ## What remains (Phase 2)
 
+Sufficiency and the link between the two models are now done; see the [Phase 2 note](RENEWAL-CLOSURE-PHASE2.md). The list below is kept as it was written.
+
 - **The mixed case.** Some kinds fall short and some do not. The target: endless renewal ⇔ a cycle whose kinds are all balanced, or an excess kind reachable from a cycle. Necessity needs the charge argument split by kind, together with item 1's chain.
 - **Sufficiency.** Explicit periodic schedules with initial-reserve bounds, including the balanced timing buffer the enumerations showed.
 - **Linking the two models.** Prove that `channelProcess` histories are an `OccurrenceSupport`. This needs formation times tracked through ticks, so that items 1 and 3 apply to the same histories.
