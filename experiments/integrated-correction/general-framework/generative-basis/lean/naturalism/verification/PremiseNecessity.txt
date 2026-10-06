@@ -1,0 +1,6 @@
+'Generative.Naturalism.continuation_credentialed' does not depend on any axioms
+'Generative.Naturalism.converse_credentialed' does not depend on any axioms
+'Generative.Naturalism.credentials_do_not_determine_verdict' does not depend on any axioms
+'Generative.Naturalism.empty_and_whole_unprivileged' does not depend on any axioms
+'Generative.Naturalism.empty_scope_admits_everything' does not depend on any axioms
+'Generative.Naturalism.unprivileged_does_not_fix_scope' does not depend on any axioms

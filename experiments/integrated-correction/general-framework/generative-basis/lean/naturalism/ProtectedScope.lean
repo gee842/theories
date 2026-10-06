@@ -206,37 +206,37 @@ theorem restraint_not_damage_harm_is :
 theorem committed_stuck (b : Bool) : (word : List (Option Bool)) → (u : Option Bool) →
     Trace committing (some b) word u → u = some b
   | [], _, h => (trace_nil_iff.mp h).symm
-  | a :: rest, u, h => by
+  | _ :: rest, u, h => by
     obtain ⟨m, hs, hr⟩ := trace_cons_iff.mp h
-    cases a with
-    | none => exact absurd hs (fun x => x)
-    | some c =>
-      have e : m = some b := hs.2
-      subst e
-      exact committed_stuck b rest u hr
+    have e : m = some b := hs.2
+    subst e
+    exact committed_stuck b rest u hr
 
 theorem committed_cannot_other (b : Bool) : ¬ Can committing (some b) (some (!b)) := by
   rintro ⟨word, u, hu, ⟨v, hv⟩⟩
   have e := committed_stuck b word u hu
   subst e
-  have : (!b) = b := hv.1
-  cases b <;> exact absurd this (by decide)
+  have h1 : some (!b) = some b := hv.1
+  cases b <;> cases h1
 
 theorem committed_can_own (b : Bool) : Can committing (some b) (some b) :=
-  can_of_enabled ⟨some b, show b = b ∧ some b = some b from ⟨rfl, rfl⟩⟩
+  can_of_enabled ⟨some b, show some b = some b ∧ some b = some b from ⟨rfl, rfl⟩⟩
+
+theorem open_step (b : Bool) : committing.step none none (some b) := by
+  refine ⟨rfl, ?_⟩
+  cases b
+  · exact Or.inr rfl
+  · exact Or.inl rfl
 
 theorem open_can_each (b : Bool) : Can committing none (some b) :=
-  ⟨[none], some b, .cons (show some b = some true ∨ some b = some false by
-      cases b
-      · exact Or.inr rfl
-      · exact Or.inl rfl) (.nil _),
-    ⟨some b, show b = b ∧ some b = some b from ⟨rfl, rfl⟩⟩⟩
+  ⟨[none], some b, .cons (open_step b) (.nil _),
+    ⟨some b, show some b = some b ∧ some b = some b from ⟨rfl, rfl⟩⟩⟩
 
 theorem course_never_removes (b : Bool) (c : Option Bool) :
     ¬ Removes committing (some b) c := by
   rintro ⟨s, t, hst, hs, ht⟩
   cases s with
-  | none => exact hst
+  | none => cases hst.1
   | some d =>
     have e : t = some d := hst.2
     subst e
@@ -244,8 +244,9 @@ theorem course_never_removes (b : Bool) (c : Option Bool) :
 
 /-- The history that commits to `true` and then carries it on. -/
 def commitThenCarry : Run committing none (some true) :=
-  .cons none (show some true = some true ∨ some true = some false from Or.inl rfl)
-    (.cons (some true) (show true = true ∧ some true = some true from ⟨rfl, rfl⟩) (.nil _))
+  .cons none (open_step true)
+    (.cons (some true) (show some true = some true ∧ some true = some true from ⟨rfl, rfl⟩)
+      (.nil _))
 
 /-- With every activity in scope, committing damages the untaken course. With the
 scope the actual history exercises, it does not. -/
@@ -261,9 +262,8 @@ theorem commitment_damage_depends_on_scope :
     | head =>
       -- Committing is in scope but removes the carried course, so it is not protected.
       exact hp (some true) (show some true ∈ [none, some true] from
-          List.Mem.tail _ (List.Mem.head _)) (by decide)
-        ⟨none, some false, (show some false = some true ∨ some false = some false
-          from Or.inr rfl), open_can_each true, committed_cannot_other false⟩
+          List.Mem.tail _ (List.Mem.head _)) (fun h => by cases h)
+        ⟨none, some false, open_step false, open_can_each true, committed_cannot_other false⟩
     | tail _ h =>
       cases h with
       | head => exact ht (committed_can_own true)
@@ -426,6 +426,7 @@ end Generative.Naturalism
 #print axioms Generative.Naturalism.committed_stuck
 #print axioms Generative.Naturalism.committed_cannot_other
 #print axioms Generative.Naturalism.committed_can_own
+#print axioms Generative.Naturalism.open_step
 #print axioms Generative.Naturalism.open_can_each
 #print axioms Generative.Naturalism.course_never_removes
 #print axioms Generative.Naturalism.commitment_damage_depends_on_scope

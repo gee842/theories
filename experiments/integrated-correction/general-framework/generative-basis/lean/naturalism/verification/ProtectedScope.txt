@@ -14,12 +14,13 @@
 'Generative.Naturalism.restrain_removes_harm' does not depend on any axioms
 'Generative.Naturalism.restraint_protected_iff' does not depend on any axioms
 'Generative.Naturalism.restraint_not_damage_harm_is' does not depend on any axioms
-'Generative.Naturalism.committed_stuck' depends on axioms: [propext]
-'Generative.Naturalism.committed_cannot_other' depends on axioms: [propext]
-'Generative.Naturalism.committed_can_own' depends on axioms: [propext]
-'Generative.Naturalism.open_can_each' depends on axioms: [propext]
-'Generative.Naturalism.course_never_removes' depends on axioms: [propext]
-'Generative.Naturalism.commitment_damage_depends_on_scope' depends on axioms: [propext]
+'Generative.Naturalism.committed_stuck' does not depend on any axioms
+'Generative.Naturalism.committed_cannot_other' does not depend on any axioms
+'Generative.Naturalism.committed_can_own' does not depend on any axioms
+'Generative.Naturalism.open_step' does not depend on any axioms
+'Generative.Naturalism.open_can_each' does not depend on any axioms
+'Generative.Naturalism.course_never_removes' does not depend on any axioms
+'Generative.Naturalism.commitment_damage_depends_on_scope' does not depend on any axioms
 'Generative.Naturalism.dip_can_from_one' does not depend on any axioms
 'Generative.Naturalism.recoverable_dip_not_damage' does not depend on any axioms
 'Generative.Naturalism.dip_never_removes' does not depend on any axioms

@@ -1,4 +1,5 @@
-'Generative.Naturalism.supervenes_iff_factors' depends on axioms: [Quot.sound]
+'Generative.Naturalism.supervenes_factors' does not depend on any axioms
+'Generative.Naturalism.covaries_of_supervenes' does not depend on any axioms
 'Generative.Naturalism.base_defined_supervenes' does not depend on any axioms
 'Generative.Naturalism.supervenes_of_finer' does not depend on any axioms
 'Generative.Naturalism.Run.toTrace' does not depend on any axioms
@@ -6,11 +7,12 @@
 'Generative.Naturalism.Run.start_mem_states' does not depend on any axioms
 'Generative.Naturalism.along_iff_steps' does not depend on any axioms
 'Generative.Naturalism.along_iff_chain' does not depend on any axioms
-'Generative.Naturalism.along_supervenes_on_states' depends on axioms: [propext]
+'Generative.Naturalism.along_supervenes_on_states' does not depend on any axioms
 'Generative.Naturalism.along_append' does not depend on any axioms
 'Generative.Naturalism.along_mono' does not depend on any axioms
 'Generative.Naturalism.chain_map' does not depend on any axioms
-'Generative.Naturalism.along_continuation_transport' depends on axioms: [propext, Quot.sound]
+'Generative.Naturalism.chain_congr' does not depend on any axioms
+'Generative.Naturalism.along_continuation_transport' does not depend on any axioms
 'Generative.Naturalism.preserved_throughout' does not depend on any axioms
 'Generative.Naturalism.witness_refutes_preservation' does not depend on any axioms
 'Generative.Naturalism.loss_localizes' does not depend on any axioms
