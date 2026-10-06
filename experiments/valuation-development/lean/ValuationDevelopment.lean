@@ -132,7 +132,7 @@ theorem extensions_diverge_on_other :
     (channelLearner (-1)).run unitWorld 0 (selfOnly ++ [true, true, true, true]) = -1 := by
   decide
 
-/-! ## U3. Prediction does not fix valuation, and behaviour does not separate them -/
+/-! ## U3. Prediction does not fix choice, and behaviour does not separate prediction from scoring -/
 
 /-- Two-option choice from a prediction of each option's consequence and a scoring
 of predicted consequences. Ties go to `false`. -/
@@ -156,7 +156,7 @@ theorem same_valuation_different_choice :
     choose2 (fun c : Nat => c) (fun a => if a then 2 else 1) ≠
     choose2 (fun c : Nat => c) (fun a => if a then 1 else 2) := by decide
 
-/-! ## U4. Consequence-driven learning tracks support only through coupling -/
+/-! ## U4. Consequence-driven learning can be captured by decoupled signals -/
 
 def sumFst : List (Int × Int) → Int
   | [] => 0
@@ -262,6 +262,15 @@ theorem shared_exposure_converges {M E : Type} (u : M → E → M) (d : M → M 
       Nat.mul_le_mul_left _ (Nat.succ_le_succ (Nat.zero_le k))
     omega
 
+/-- If the distance separates retained conditions (zero only for equal ones), the
+two organizations end in the same retained condition and therefore with the same
+valuation. -/
+theorem shared_exposure_equalizes {M E : Type} (u : M → E → M) (d : M → M → Nat)
+    (hsep : ∀ m m', d m m' = 0 → m = m')
+    (hc : ∀ m m' e, 2 * d (u m e) (u m' e) ≤ d m m') (es : List E) (m m' : M)
+    (hbig : d m m' < 2 ^ es.length) : runU u m es = runU u m' es :=
+  hsep _ _ (shared_exposure_converges u d hc es m m' hbig)
+
 /-- A halving learner toward the presented level, with absolute difference. -/
 def halve (m e : Nat) : Nat := (m + e) / 2
 def gap (a b : Nat) : Nat := if a ≤ b then b - a else a - b
@@ -273,6 +282,22 @@ def lockIn (m : Nat) (_ : Unit) : Nat := if m = 0 then 0 else min (m + 1) 5
 
 theorem multistable_divergence :
     runU lockIn 0 [(), (), (), ()] = 0 ∧ runU lockIn 1 [(), (), (), ()] = 5 := by decide
+
+/-- The separation holds for every length of shared history: the uncommitted
+learner stays at zero and the committed one never returns to zero. -/
+theorem multistable_divergence_forever :
+    ∀ (es : List Unit) (m : Nat), (m = 0 → runU lockIn m es = 0) ∧ (m ≠ 0 → runU lockIn m es ≠ 0) := by
+  intro es
+  induction es with
+  | nil => intro m; exact ⟨id, id⟩
+  | cons e es ih =>
+    intro m
+    simp only [runU]
+    refine ⟨fun h => ?_, fun h => ?_⟩
+    · have : lockIn m e = 0 := by simp [lockIn, h]
+      rw [this]; exact (ih 0).1 rfl
+    · have : lockIn m e ≠ 0 := by simp only [lockIn, h, if_false]; omega
+      exact (ih _).2 this
 
 /-- Divergence 2 (positional differentiation): identical law and initial condition,
 but one connected event is presented differently to the two centers it joins
@@ -294,7 +319,18 @@ theorem rounding_breaks_contraction :
     ¬ (2 * gap (halve 0 1) (halve 1 1) ≤ gap 0 1) ∧
     runU halve 0 [1, 1, 1, 1, 1] = 0 ∧ runU halve 1 [1, 1, 1, 1, 1] = 1 := by decide
 
-/-! ## U6. Formed capacities do not form a forced ladder -/
+/-- Both rounded learners are fixed under the shared encounter `1`, so the gap
+persists for every length of shared history. -/
+theorem rounding_gap_forever : ∀ n : Nat,
+    runU halve 0 (List.replicate n 1) = 0 ∧ runU halve 1 (List.replicate n 1) = 1 := by
+  intro n
+  induction n with
+  | zero => exact ⟨rfl, rfl⟩
+  | succ n ih =>
+    simp only [List.replicate_succ, runU]
+    exact ⟨by simpa [halve] using ih.1, by simpa [halve] using ih.2⟩
+
+/-! ## U6. The lower capacities (levels 1–4) do not form a forced ladder -/
 
 def historyDependent {M X A C : Type} (o : Org M X A C) (w : World X A C) : Prop :=
   ∃ m xs x, o.select (o.run w m xs) x ≠ o.select m x
@@ -320,8 +356,9 @@ theorem habituation_not_consequence_dependent : ¬ consequenceDependent habituat
   rintro ⟨m, x, a, c, c', h⟩
   exact h rfl
 
-/-- Anticipation without revision: an installed predictor selects well while the
-world matches it and keeps its stale valuation forever after the world changes. -/
+/-- Stale fixed selection: a constant selector (an anticipation reading is given
+only in prose; nothing here is a retained model) does well while the world matches
+it and keeps its choice forever after the world changes. -/
 def installedPredictor : Org Unit Unit Bool Bool where
   -- installed model: `true` yields the good consequence
   select _ _ := true
@@ -339,6 +376,33 @@ theorem stale_anticipation_not_history_dependent :
     ¬ historyDependent installedPredictor changedWorld := by
   rintro ⟨m, xs, x, h⟩
   exact h rfl
+
+/-- Anticipation with a retained model (level-4 mark): the retained condition is a
+model of which action yields the good consequence, and selection reads it. With a
+constant retention law the model is never revised and goes stale after a reversal. -/
+def retainedModel : Org Bool Unit Bool Bool where
+  select m _ := m
+  retain m _ _ _ := m
+
+theorem retained_model_goes_stale :
+    matchedWorld () (retainedModel.select true ()) = true ∧
+    ∀ xs : List Unit, changedWorld () (retainedModel.select (retainedModel.run changedWorld true xs) ()) = false := by
+  refine ⟨rfl, fun xs => ?_⟩
+  rw [no_retention_no_history retainedModel changedWorld (fun _ _ _ _ => rfl) xs true]
+  rfl
+
+/-- The same retained model, revised by consequences: a bad outcome switches the
+model to the other action. Anticipation and consequence-dependent revision are
+jointly realizable, and revision recovers after the reversal. -/
+def revisedModel : Org Bool Unit Bool Bool where
+  select m _ := m
+  retain _ _ a c := if c then a else !a
+
+theorem revised_model_recovers :
+    revisedModel.run changedWorld true [()] = false ∧
+    changedWorld () (revisedModel.select (revisedModel.run changedWorld true [()]) ()) = true ∧
+    consequenceDependent revisedModel := by
+  refine ⟨rfl, rfl, ⟨true, (), true, true, false, by decide⟩⟩
 
 /-- The coupled reinforcer is consequence-dependent and history-dependent. -/
 theorem reinforcer_consequence_dependent : consequenceDependent reinforcer :=

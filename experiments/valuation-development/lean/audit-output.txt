@@ -15,14 +15,19 @@
 'ValuationDevelopment.coupled_without_variation_depletes' does not depend on any axioms
 'ValuationDevelopment.shared_exposure_contracts' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.shared_exposure_converges' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.shared_exposure_equalizes' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.multistable_divergence' does not depend on any axioms
+'ValuationDevelopment.multistable_divergence_forever' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.positional_divergence' does not depend on any axioms
 'ValuationDevelopment.halving_nonexpanding_on_sample' does not depend on any axioms
 'ValuationDevelopment.rounding_breaks_contraction' does not depend on any axioms
+'ValuationDevelopment.rounding_gap_forever' depends on axioms: [propext]
 'ValuationDevelopment.fixed_selectivity_no_history' does not depend on any axioms
 'ValuationDevelopment.habituation_history_dependent' does not depend on any axioms
 'ValuationDevelopment.habituation_not_consequence_dependent' does not depend on any axioms
 'ValuationDevelopment.stale_anticipation' does not depend on any axioms
 'ValuationDevelopment.stale_anticipation_not_history_dependent' does not depend on any axioms
+'ValuationDevelopment.retained_model_goes_stale' does not depend on any axioms
+'ValuationDevelopment.revised_model_recovers' does not depend on any axioms
 'ValuationDevelopment.reinforcer_consequence_dependent' does not depend on any axioms
 'ValuationDevelopment.reinforcer_history_dependent' does not depend on any axioms
