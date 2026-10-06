@@ -89,9 +89,9 @@ The disposition is history- and consequence-dependent (`port_history_dependent`,
 
 ## The revising port: valuation and port as one process
 
-[RevisingPort.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean) builds the reading and the decision into the port itself, so the valuation organization and the port are one process rather than two linked by a theorem. It adds 58 declarations, all with empty axiom reports.
+[RevisingPort.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean) builds the reading and the decision into the port itself, so the valuation organization and the port are one process rather than two linked by a theorem. It adds 59 declarations, all with empty axiom reports.
 
-The revising port is the extended port plus what it retains: the last recorded pair of arrivals. Its own activity (native calls and recovery) leaves that reading alone. At an encounter it acts on the reading toward the contact it meets, forming when neither output last arrived, then runs the inquiry and retains what it records.
+The revising port's state is the extended port's state plus one more coordinate: the last recorded pair of arrivals. Its activity (native calls and recovery) leaves that reading alone. At an encounter it takes its own contact coordinate, acts on the reading (forming when neither output last arrived), then runs the inquiry and retains what it records. No split between an organization and a world is assumed: the valuation package's presented condition is the port's own contact, its consequence law is native execution, and the reading is set apart only by which steps change it (`reading_changes_only_at_encounters`), as the contact is set apart by formation.
 
 | Theorem | Content |
 |---|---|
