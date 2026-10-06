@@ -1,0 +1,40 @@
+'PluralRecords.Record' does not depend on any axioms
+'PluralRecords.Rule' does not depend on any axioms
+'PluralRecords.transpose' does not depend on any axioms
+'PluralRecords.transpose_transpose' depends on axioms: [propext]
+'PluralRecords.transpose_inj' depends on axioms: [propext]
+'PluralRecords.relabel' does not depend on any axioms
+'PluralRecords.TreatsAlike' does not depend on any axioms
+'PluralRecords.relabel_of_tie' depends on axioms: [propext, Quot.sound]
+'PluralRecords.tied_not_served' depends on axioms: [propext, Quot.sound]
+'PluralRecords.all_tied_forces_withholding' depends on axioms: [propext, Quot.sound]
+'PluralRecords.pick' does not depend on any axioms
+'PluralRecords.pick_some' depends on axioms: [propext]
+'PluralRecords.pick_none' depends on axioms: [propext, Quot.sound]
+'PluralRecords.pick_unique' depends on axioms: [propext, Quot.sound]
+'PluralRecords.pick_alike' depends on axioms: [propext, Quot.sound]
+'PluralRecords.Alone' does not depend on any axioms
+'PluralRecords.alone_alike' depends on axioms: [propext, Quot.sound]
+'PluralRecords.servable_iff_untied' depends on axioms: [propext, Quot.sound]
+'PluralRecords.ServesOpenClaim' does not depend on any axioms
+'PluralRecords.withholding_alike' does not depend on any axioms
+'PluralRecords.alike_nonforeclosing_iff' depends on axioms: [propext, Quot.sound]
+'PluralRecords.unequal_claims_leave_priority_open' depends on axioms: [propext, Quot.sound]
+'PluralRecords.LeastRecent' does not depend on any axioms
+'PluralRecords.leastRecent' does not depend on any axioms
+'PluralRecords.leastRecent_unique' does not depend on any axioms
+'PluralRecords.leastRecent_alike' depends on axioms: [propext, Quot.sound]
+'PluralRecords.Injective' does not depend on any axioms
+'PluralRecords.exists_min' depends on axioms: [propext, Quot.sound]
+'PluralRecords.leastRecent_serves' depends on axioms: [propext, Quot.sound]
+'PluralRecords.step' does not depend on any axioms
+'PluralRecords.run' does not depend on any axioms
+'PluralRecords.served' does not depend on any axioms
+'PluralRecords.run_succ_apply' depends on axioms: [propext]
+'PluralRecords.run_lt' depends on axioms: [propext, Quot.sound]
+'PluralRecords.run_mono' depends on axioms: [propext, Quot.sound]
+'PluralRecords.run_mono_le' depends on axioms: [propext, Quot.sound]
+'PluralRecords.recent_entry_was_served' depends on axioms: [propext, Quot.sound]
+'PluralRecords.run_injective' depends on axioms: [propext, Quot.sound]
+'PluralRecords.renewing_claims_served_in_turn' depends on axioms: [propext, Quot.sound]
+'PluralRecords.renewing_claims_need_initial_order' depends on axioms: [propext, Quot.sound]

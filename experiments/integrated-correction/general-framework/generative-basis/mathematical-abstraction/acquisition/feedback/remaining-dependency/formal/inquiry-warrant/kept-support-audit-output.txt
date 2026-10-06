@@ -1,0 +1,6 @@
+'KeptSupport.history' does not depend on any axioms
+'KeptSupport.alike_withholds_forever' depends on axioms: [propext]
+'KeptSupport.waiting_without_renewal_loses_support' depends on axioms: [propext, Quot.sound]
+'KeptSupport.historyWith' does not depend on any axioms
+'KeptSupport.historyWith_waits' depends on axioms: [propext, Quot.sound]
+'KeptSupport.renewing_keeper_stays_live' depends on axioms: [propext, Quot.sound]

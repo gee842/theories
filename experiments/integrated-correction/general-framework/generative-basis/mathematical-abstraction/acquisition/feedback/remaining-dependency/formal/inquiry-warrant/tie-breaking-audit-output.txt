@@ -1,0 +1,9 @@
+'TieBreaking.Chances' does not depend on any axioms
+'TieBreaking.LotteryAlike' does not depend on any axioms
+'TieBreaking.tied_equal_weight' depends on axioms: [propext, Quot.sound]
+'TieBreaking.full_tie_equal_weights' depends on axioms: [propext, Quot.sound]
+'TieBreaking.full_tie_open_uniform' depends on axioms: [propext, Quot.sound]
+'TieBreaking.uniform' does not depend on any axioms
+'TieBreaking.uniform_alike' does not depend on any axioms
+'TieBreaking.pointMass' does not depend on any axioms
+'TieBreaking.point_mass_not_alike_at_tie' depends on axioms: [propext, Quot.sound]

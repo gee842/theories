@@ -33,3 +33,20 @@ Same compiler and procedure. `ContinuationScope.lean` (SHA-256 `89aa3c118c08d28a
 ## Addendum: RecordedClaims
 
 Same compiler and procedure. `RecordedClaims.lean` (SHA-256 `71b42b8bc11f63cbb853174e6bf83210416bf9e18d44cfaafa838a86b960b4a7`) imports only the Lean prelude and compiled with exit 0. [`recorded-claims-audit-output.txt`](recorded-claims-audit-output.txt) holds the audit for its 13 declarations; the only axiom dependency is `propext`.
+
+## Addendum: CouplingOptima, PluralRecords, TieBreaking, KeptSupport
+
+Same compiler and procedure. `KeptSupport.lean` imports `RecordedClaims` and the renewal package (`lean/conditional/renewal/*`, with `GenerativeCore`, `Depletion` and `conditional/SupportNecessity`), and was built together with them; all exited 0. The other three import only the prelude or `PluralRecords`.
+
+| Module | SHA-256 | Declarations | Audit |
+|---|---|---:|---|
+| `CouplingOptima.lean` | `81646a8870f4b14a2a06b85ec256f5870e63ae9556b91335b83e421f77da6752` | 12 | [coupling-optima-audit-output.txt](coupling-optima-audit-output.txt): `propext`, `Quot.sound`; `Classical.choice` in four theorems |
+| `PluralRecords.lean` | `d64667360b7ff1e0b90ce1e664fbc2308a1d0396948073258afc8a9852d83148` | 40 | [plural-records-audit-output.txt](plural-records-audit-output.txt): `propext`, `Quot.sound` |
+| `TieBreaking.lean` | `170f3879af9de33ec1e238b737ce9c8c9760aefd87d7799abaf4548a618696c1` | 9 | [tie-breaking-audit-output.txt](tie-breaking-audit-output.txt): `propext`, `Quot.sound` |
+| `KeptSupport.lean` | `65ef65642e05e9d75d4feab0f3ba6ba73b03288c73af30c9bdaa29dd4dc08b3b` | 6 | [kept-support-audit-output.txt](kept-support-audit-output.txt): `propext`, `Quot.sound` |
+
+No source contains `sorry`, `axiom` or `native_decide`.
+
+`SelfModelCertification.lean` (fulfillment `formal/`, SHA-256 `7b839a96c4e1353e6e96c6273cf195f488461e2009b5c730887932ee07b4baa7`) was built with `ContinuationScope` and `FulfillmentStatus`; its audit is in that directory's `self-model-audit-output.txt`.
+
+An independent AI review rebuilt all five modules and found no proof error. It found three overclaims in the prose (the tie-break "exactly two courses", the uncomposed kept-support conjunction, and the self-model's reading of a missing record) and several scope notes. All were corrected before this build.

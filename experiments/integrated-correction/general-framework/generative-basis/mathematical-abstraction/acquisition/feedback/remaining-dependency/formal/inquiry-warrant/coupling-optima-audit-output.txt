@@ -1,0 +1,12 @@
+'CouplingOptima.Feasible' does not depend on any axioms
+'CouplingOptima.best' does not depend on any axioms
+'CouplingOptima.best_feasible' depends on axioms: [propext, Quot.sound]
+'CouplingOptima.met_le_best' depends on axioms: [propext, Quot.sound]
+'CouplingOptima.access_bound' depends on axioms: [propext, Quot.sound]
+'CouplingOptima.access_optimal_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CouplingOptima.receipt_bound' depends on axioms: [propext, Quot.sound]
+'CouplingOptima.receipt_optimal_iff' depends on axioms: [propext, Quot.sound]
+'CouplingOptima.receipt_optimal_forces_excess' depends on axioms: [propext, Quot.sound]
+'CouplingOptima.retention_only_serves_no_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CouplingOptima.weak_access_serves_no_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CouplingOptima.study_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]

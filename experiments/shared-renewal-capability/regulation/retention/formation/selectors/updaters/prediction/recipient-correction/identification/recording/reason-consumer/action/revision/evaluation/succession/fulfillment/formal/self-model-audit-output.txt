@@ -1,0 +1,9 @@
+'SelfModelCertification.World' does not depend on any axioms
+'SelfModelCertification.nextAction' does not depend on any axioms
+'SelfModelCertification.captures' does not depend on any axioms
+'SelfModelCertification.ReceiptCertified' depends on axioms: [propext]
+'SelfModelCertification.SelfCertified' depends on axioms: [propext]
+'SelfModelCertification.receipt_certified_implies_self' depends on axioms: [propext]
+'SelfModelCertification.receipt_iff_status' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SelfModelCertification.self_model_certifies_more' depends on axioms: [propext, Quot.sound]
+'SelfModelCertification.needs_stationarity' depends on axioms: [propext, Quot.sound]
