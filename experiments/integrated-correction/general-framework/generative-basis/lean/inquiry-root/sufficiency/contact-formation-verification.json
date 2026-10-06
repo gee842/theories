@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T20:21:06.851469+00:00",
+  "checked_at_utc": "2026-10-06T20:48:27.457023+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -353,15 +353,25 @@
       "audits": 8,
       "nonempty_audits": {},
       "clean": true
+    },
+    {
+      "module": "RevisingPort",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean",
+      "source_sha256": "1bb2efb15a8f0bf4ca83e5db5cea1b3e92afbf3894039381386215cd85763d91",
+      "exit_code": 0,
+      "audits": 49,
+      "nonempty_audits": {},
+      "clean": true
     }
   ],
-  "total_audits": 718,
+  "total_audits": 767,
   "new_module_audits": {
     "ContactFormation": 26,
     "FormationClosure": 48,
     "AcquiredContact": 26,
     "PortValuation": 11,
-    "ValuationInCore": 8
+    "ValuationInCore": 8,
+    "RevisingPort": 49
   },
   "scope": "ContactFormation, FormationClosure, AcquiredContact, ValuationDevelopment, ClosedLoopValuation, PortValuation and ValuationInCore over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."
 }
