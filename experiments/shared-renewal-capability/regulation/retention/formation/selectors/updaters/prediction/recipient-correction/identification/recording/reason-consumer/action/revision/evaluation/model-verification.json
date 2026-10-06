@@ -1,0 +1,147 @@
+{
+  "status": "passed",
+  "counts": {
+    "cases": 29,
+    "mixtures": 261,
+    "histories": 3306,
+    "prefixes": 40200,
+    "aggregate_metrics": 8352,
+    "preparation_prefix_comparisons": 3071,
+    "catalog_entries": 152
+  },
+  "comparisons": {
+    "matched_input_histories": 1102,
+    "fixed000_contrasts": 18,
+    "permission_preserves_assessment": 18,
+    "actual_funded_retired_port_boundaries": 18
+  },
+  "mutations": [
+    {
+      "name": "initial_unacquired_weight",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'initial_unacquired_weight'), 0, 'extension.at_actual_parent_prefix'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 10, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source': 10, '"
+    },
+    {
+      "name": "complete_wrong_loss_window_keeps_private_payments",
+      "status": "rejected",
+      "case": "signals_000",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'complete_wrong_loss_window_keeps_private_payments'), 3, 'native.read_known'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 13, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source"
+    },
+    {
+      "name": "complete_unavailable_source_dissipation_preserves_energy",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'complete_unavailable_source_dissipation_preserves_energy'), 2, 'native.return'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 12, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'sou"
+    },
+    {
+      "name": "complete_recipient_receipts_redirected_to_actor",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'complete_recipient_receipts_redirected_to_actor'), 19, 'recipient1.work'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 3, 'failed_q': -1, 'fuel': 10, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source': "
+    },
+    {
+      "name": "native_training_rewrites_unrelated_qualification",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'native_training_rewrites_unrelated_qualification'), 4, 'native.write'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 10, 'gate_life': 2, 'installed': True, 'last': False, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source':"
+    },
+    {
+      "name": "duplicate_active_core",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'duplicate_active_core'), 0, 'extension.at_actual_parent_prefix'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 10, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source': 10, 'stag"
+    },
+    {
+      "name": "replacement_reuses_held_pair",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'replacement_reuses_held_pair'), 23, 'replacement.assemble'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 0, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 50, 'recoded': True, 'source': 0, 'stage': 2, "
+    },
+    {
+      "name": "native_source_finances_before_return",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'native_source_finances_before_return'), 1, 'native.pay'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 14, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source': 10, 'stage': 2, '"
+    },
+    {
+      "name": "recipient_q_mismatches_current_fact",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'recipient_q_mismatches_current_fact'), 14, 'evaluation1.write'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 8, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 1, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source': 10, 'stage'"
+    },
+    {
+      "name": "actor_target_substituted",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "(((('mutation', 'actor_target_substituted'), 17, 'recipient1.sense'), 'independent event state'), {'core': {'active': True, 'coupling': 0, 'coupling_life': 2, 'escrow': 0, 'failed_q': -1, 'fuel': 6, 'gate_life': 2, 'installed': True, 'last': 1, 'life': 6, 'q': 3, 'qualified_q': -1, 'recipient': 40, 'recoded': True, 'source': 10, 'stage': 2, 'witnes"
+    },
+    {
+      "name": "funded_retired_port_reads_again",
+      "status": "rejected",
+      "case": "signals_111",
+      "producer": "variable",
+      "path_index": 4,
+      "reason": "((('mutation', 'funded_retired_port_reads_again'), 'complete event word length'), 25, 24)"
+    },
+    {
+      "name": "historical_bank_substitution_with_recomputed_local_hash",
+      "status": "rejected",
+      "parent_ref": "false_fresh_channel/conventional/11/37"
+    },
+    {
+      "name": "repeat_native_write",
+      "status": "rejected",
+      "scope": "independent guard boundary, not extra experiment arm"
+    },
+    {
+      "name": "return_again",
+      "status": "rejected",
+      "scope": "independent guard boundary, not extra experiment arm"
+    },
+    {
+      "name": "missing_source_cannot_fabricate_return",
+      "status": "rejected",
+      "scope": "independent guard boundary, not extra experiment arm"
+    }
+  ],
+  "mutation_count": 15,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/DRAFT-PROTOCOL.md": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/cases.json": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/INTERFACE.md": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/protocol-freeze.json": "1b834163d59fb272e5a60ba19f997e333f09b9810e664cd992b4e94262176bca",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/results.json.gz": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/result-files.json": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/fixtures.json": "01facecb0b4cfef6bb9dacf93244b10a74c706ffef7cc145f570bdccf4cb90af",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/reporting.json": "9c234d315e1f55d26189d03a6d89fca7f74f8fe0774513499e77c34edbb09c5b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/first-run-receipt.json": "b05c8dbfd412ae76658beac9dd82e1772a49331e4ef5166ded127336961a2ab0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/check_model.py": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/results.json.gz": "cbd19b32b18f3afbfb2c50cc6fb6d8f46fd633dec2e3902124e1c5a5ab7c3438",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/fixtures.json": "4bbc33b4b2e9793b8ff9c188f2f6d10c78557e95b6962afd6ec45a4b1680a5bc"
+  },
+  "independence": "Prospective native and full schedule bytes are preserved in review-history. No new producer transitions are imported; only accepted old independent RI/account helpers.",
+  "scope": "Exact finite inherited-history reconstruction and supplemental adversarial checks. Formal law and ethical applicability are separate reviews; no new empirical test."
+}

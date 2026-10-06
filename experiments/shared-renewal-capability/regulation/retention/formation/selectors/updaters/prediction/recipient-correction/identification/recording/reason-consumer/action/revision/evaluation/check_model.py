@@ -633,6 +633,164 @@ def check_preparation(cfg,actual,oldprep):
     return len(trace)
 
 
+def comparison_checks(data,specs):
+    matched=0
+    for item in specs["cases"]:
+        case=data["cases"][item["name"]]
+        for producer in specs["parent_producers"]:
+            groups=[case["arms"][arm]["producers"][producer]["paths"] for arm in specs["principal_arms"]]
+            for rows in zip(*groups):
+                cuts=[]
+                for row in rows:
+                    t=row["runtime_trace"]
+                    cut=next((j for j,x in enumerate(t) if x["event"]=="evaluation1.write"),len(t))
+                    cuts.append(t[:cut])
+                # If there is no first assessment, a later assessment can be
+                # the first policy-dependent event after hardware replacement.
+                if any(not any(x["event"]=="evaluation1.write" for x in r["runtime_trace"]) for r in rows):
+                    cuts=[]
+                    for row in rows:
+                        t=row["runtime_trace"]
+                        cut=next((j for j,x in enumerate(t) if x["event"] in ("evaluation1.write","evaluation2.write")),len(t))
+                        cuts.append(t[:cut])
+                eq(cuts[0],cuts[1],(item["name"],producer,"same perception/training before policy"))
+                eq(cuts[0],cuts[2],(item["name"],producer,"conventional same acquired input"))
+                matched+=1
+    fixed_contrasts=permission_boundaries=retired_boundaries=0
+    for producer in specs["parent_producers"]:
+        baseline=data["cases"]["signals_000"]["arms"]["shared"]["producers"][producer]["paths"]
+        fixed=data["cases"]["fixed_coefficient"]["arms"]["shared"]["producers"][producer]["paths"]
+        for zero,constant in zip(baseline,fixed):
+            eq(zero["predecessor_ref"],constant["predecessor_ref"],"fixed000 same origin")
+            z,c=zero["state"],constant["state"]
+            eq(z["native"],c["native"],"fixed000 identical actually acquired coefficient")
+            if c["outcomes"]["first_assessment"] is True:
+                assert z["native"]["n"]==0 and z["outcomes"]["first_assessment"] is False
+                fixed_contrasts+=1
+        for row in data["cases"]["permission_loss"]["arms"]["shared"]["producers"][producer]["paths"]:
+            s=row["state"]
+            if s["outcomes"]["first_assessment"] is True:
+                assert s["native"]["n"]==7 and not s["binding"]["permission"]
+                assert s["outcomes"]["first_attempted"] and not s["outcomes"]["first_completed"]
+                assert not s["outcomes"]["first_capture"] and not s["outcomes"]["second_capture"]
+                permission_boundaries+=1
+        for row in data["cases"]["signals_111"]["arms"]["identity_gated"]["producers"][producer]["paths"]:
+            s=row["state"]
+            if (s["native"]["n"]==7 and s["core"]["active"] and s["core"]["fuel"]>=8 and
+                s["core"]["source"]>=10 and all(s["binding"].values()) and
+                s["physical"]["core_phase"]=="ready" and s["port"]["mode"]=="consumed"):
+                assert not read_enabled(port_mode=s["port"]["mode"],native_count=3,core_phase="ready",fuel=s["core"]["fuel"])
+                cmd=old_checker().snapshot_command(current_parent(s,data["parent_catalog"]),"reason")
+                assert cmd==old_checker().candidate(s["core"])
+                assert not use_start_enabled(port_mode=s["port"]["mode"],current=True,same_destination=True,
+                    scope=True,permission=True,delivery=True,core_phase="ready",source=s["core"]["source"],candidate=cmd,supported=cmd)
+                assert not replacement_enabled(native_count=3,first_closed=True,old_port_present=True,
+                    old_port_mode="consumed",core_phase="ready",spare_accessible=True,spare_used=True,reserve=11)
+                retired_boundaries+=1
+    assert fixed_contrasts and permission_boundaries and retired_boundaries
+    return dict(matched_input_histories=matched,fixed000_contrasts=fixed_contrasts,
+                permission_preserves_assessment=permission_boundaries,actual_funded_retired_port_boundaries=retired_boundaries)
+
+
+def mutation_checks(data,specs,old_data):
+    configs={x["name"]:x["config"] for x in specs["cases"]}
+    results=[]
+    def select(case,arm="shared",positive=True):
+        for producer in specs["parent_producers"]:
+            for index,row in enumerate(data["cases"][case]["arms"][arm]["producers"][producer]["paths"]):
+                if row["state"]["native"]["count"]==3 and (not positive or row["state"]["outcomes"]["first_capture"]):
+                    return producer,index,row
+        raise AssertionError(("no real mutation fixture",case,arm))
+    def rejected(name,case,arm,change,positive=True):
+        producer,index,row=select(case,arm,positive)
+        mutant=deepcopy(row)
+        change(mutant)
+        cfg=configs[case]
+        original=old_data["cases"][cfg["parent_revision_case"]]["producers"][producer]["paths"][index]
+        try:check_row(cfg,arm,original,mutant,data["parent_catalog"],("mutation",name))
+        except AssertionError as error:
+            results.append(dict(name=name,status="rejected",case=case,producer=producer,path_index=index,
+                                reason=str(error)[:350]))
+        else:raise AssertionError(("mutation survived",name))
+    rejected("initial_unacquired_weight", "signals_111","shared",
+             lambda r:r["runtime_trace"][0]["state"]["native"].update(n=7))
+    def whole_lesson_window(r):
+        n=0
+        for item in r["runtime_trace"]:
+            if item["event"]=="native.read_known":item["state"]["native"]["bit"]=True
+            if item["event"]=="native.write":n=n//2+4
+            item["state"]["native"]["n"]=n
+        r["state"]=deepcopy(r["runtime_trace"][-1]["state"])
+        r["metrics"]["n"]=n
+    rejected("complete_wrong_loss_window_keeps_private_payments", "signals_000","identity_gated",whole_lesson_window,False)
+    def source_destroy(r):
+        used=set()
+        for item in r["runtime_trace"]:
+            s=item["state"]
+            if item["event"]=="native.return":used.add(s["native"]["count"])
+            for index in used:s["native"]["packets"][index]=0
+            s["new_waste"]+=2*len(used)
+        r["state"]=deepcopy(r["runtime_trace"][-1]["state"])
+        r["metrics"].update(native_source=0,new_waste=r["metrics"]["new_waste"]+6,retained=r["metrics"]["retained"]-6)
+    rejected("complete_unavailable_source_dissipation_preserves_energy", "signals_111","shared",source_destroy)
+    def redirect(r):
+        moved=0
+        for item in r["runtime_trace"]:
+            if item["event"] in ("recipient1.work","recipient2.work"):
+                moved+=10
+            item["state"]["core"]["fuel"]+=moved
+            item["state"]["core"]["recipient"]-=moved
+        r["state"]=deepcopy(r["runtime_trace"][-1]["state"])
+    rejected("complete_recipient_receipts_redirected_to_actor", "signals_111","shared",redirect)
+    def reset_qualification(r):
+        item=next(x for x in r["runtime_trace"] if x["event"]=="native.write")
+        item["state"]["core"]["last"]=False
+    rejected("native_training_rewrites_unrelated_qualification", "signals_111","shared",reset_qualification)
+    def clone_core(r):r["runtime_trace"][0]["state"]["native"]["core"]=deepcopy(r["state"]["core"])
+    rejected("duplicate_active_core", "signals_111","shared",clone_core)
+    def free_replace(r):
+        item=next(x for x in r["runtime_trace"] if x["event"]=="replacement.assemble")
+        item["state"]["inventory"]["held_a"]=1
+        item["state"]["inventory"]["held_h"]=1
+    rejected("replacement_reuses_held_pair", "signals_111","shared",free_replace)
+    def prepay_source(r):
+        item=next(x for x in r["runtime_trace"] if x["event"]=="native.pay")
+        item["state"]["native"]["packets"][0]-=2
+        item["state"]["core"]["fuel"]+=2
+    rejected("native_source_finances_before_return", "signals_111","shared",prepay_source)
+    def q_mismatch(r):
+        item=next(x for x in r["runtime_trace"] if x["event"]=="evaluation1.write")
+        item["state"]["core"]["q"]^=2
+    rejected("recipient_q_mismatches_current_fact", "signals_111","shared",q_mismatch)
+    def actor_sense(r):
+        item=next(x for x in r["runtime_trace"] if x["event"]=="recipient1.sense")
+        item["state"]["physical"]["core_target"]="actor"
+    rejected("actor_target_substituted", "signals_111","shared",actor_sense)
+    def repeat_read(r):
+        s=deepcopy(r["state"])
+        s["core"]["fuel"]-=1;s["new_spent"]["evaluation_read"]+=1;s["port"]["mode"]="read"
+        r["runtime_trace"].append(dict(event="evaluation2.read",state=s));r["state"]=s
+    rejected("funded_retired_port_reads_again", "signals_111","identity_gated",repeat_read,False)
+    # Provenance test repairs the forged local hash too; the independently
+    # retained accepted history still defeats substitution.
+    forged=deepcopy(data["parent_catalog"])
+    ref=next(k for k,v in forged.items() if v["state"]["opened"])
+    forged[ref]["state"]["selected_bank"]="old"
+    forged[ref]["state_sha256"]=object_sha(forged[ref]["state"])
+    try:check_catalog(forged,old_data,specs)
+    except AssertionError:results.append(dict(name="historical_bank_substitution_with_recomputed_local_hash",status="rejected",parent_ref=ref))
+    else:raise AssertionError("forged ancestry survived")
+    # Boundary-only guard controls do not pretend to be additional runs.
+    for label,call in [
+        ("repeat_native_write",lambda:native_write(Native(10,0,numerator=7,completed=3,mode="closed"))),
+        ("return_again",lambda:native_return(Native(10,4,mode="returned"),2)),
+        ("missing_source_cannot_fabricate_return",lambda:native_return(Native(10,4,sources=(0,2,2),mode="paid"),2))]:
+        try:call()
+        except AssertionError:results.append(dict(name=label,status="rejected",scope="independent guard boundary, not extra experiment arm"))
+        else:raise AssertionError((label,"guard survived"))
+    return results
+
+
 def main():
     repo=next(p for p in HERE.parents if (p/"AGENTS.md").exists())
     freeze=read_json(HERE/"protocol-freeze.json")
@@ -677,7 +835,24 @@ def main():
     counts=dict(cases=len(specs["cases"]),mixtures=len(specs["cases"])*len(specs["principal_arms"])*len(specs["parent_producers"]),
                 histories=histories,prefixes=prefixes,aggregate_metrics=metrics_count,
                 preparation_prefix_comparisons=preparation_prefixes,catalog_entries=len(data["parent_catalog"]))
-    print(json.dumps(dict(status="full_reconstruction_passed_additional_review_pending",counts=counts),indent=2))
+    comparisons=comparison_checks(data,specs)
+    mutations=mutation_checks(data,specs,old_data)
+    reporting=read_json(HERE/"reporting.json")
+    eq(reporting["source_sha256"],data["source_sha256"],"report source metadata")
+    eq(reporting["result_files"],files,"report result identity")
+    wanted_report={name:{arm:{producer:group["metrics"] for producer,group in bundle["producers"].items()}
+                        for arm,bundle in case["arms"].items()} for name,case in data["cases"].items()}
+    eq(reporting["cases"],wanted_report,"all reported metrics independently reconstructed")
+    eq(reporting["counts"],{k:counts[k] for k in ("cases","histories","prefixes")},"report exact counts")
+    inputs=[HERE/x for x in ("check_model.py","model.py","DRAFT-PROTOCOL.md","cases.json","INTERFACE.md",
+          "protocol-freeze.json","results.json.gz","result-files.json","fixtures.json","reporting.json","first-run-receipt.json")]
+    inputs.extend([PARENT/"check_model.py",PARENT/"results.json.gz",PARENT/"fixtures.json"])
+    report=dict(status="passed",counts=counts,comparisons=comparisons,mutations=mutations,
+        mutation_count=len(mutations),source_sha256={str(p.relative_to(repo)):hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs},
+        independence="Prospective native and full schedule bytes are preserved in review-history. No new producer transitions are imported; only accepted old independent RI/account helpers.",
+        scope="Exact finite inherited-history reconstruction and supplemental adversarial checks. Formal law and ethical applicability are separate reviews; no new empirical test.")
+    (HERE/"model-verification.json").write_text(json.dumps(report,indent=2)+"\n")
+    print(json.dumps({k:report[k] for k in ("status","counts","comparisons","mutation_count")},indent=2))
     return data,counts
 
 

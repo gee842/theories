@@ -490,6 +490,37 @@ theorem trace_capacity {laws : Laws} {s t : State} {es : List Event}
       have hh:=step_capacity he hn hc
       exact ih hh.1 hh.2
 
+theorem replacement_keeps_data (laws : Laws) (s : State) :
+    (advance laws s .replace).parent.bank=s.parent.bank ∧
+    (advance laws s .replace).parent.parent.reasons.reader.archive=s.parent.parent.reasons.reader.archive ∧
+    (advance laws s .replace).parent.parent.reasons.reader.world.records=s.parent.parent.reasons.reader.world.records ∧
+    (core (advance laws s .replace)).hardware.q=(core s).hardware.q ∧
+    (advance laws s .replace).cells=s.cells ∧ (advance laws s .replace).adapter=s.adapter :=
+  ⟨rfl,rfl,rfl,rfl,rfl,rfl⟩
+
+theorem run_append (laws : Laws) (s : State) (xs ys : List Event) :
+    run laws s (xs++ys)=run laws (run laws s xs) ys := by
+  induction xs generalizing s with
+  | nil => rfl
+  | cons e es ih => exact ih (advance laws s e)
+
+theorem closing_preserves_run_core (laws : Laws) (s : State) (es : List Event) :
+    core (run laws s (es++[.close]))=core (run laws s es) := by
+  rw [run_append]
+  rfl
+
+theorem attempt_preserves_core (laws : Laws) (s : State) :
+    core (advance laws s .attempt)=core s := rfl
+
+theorem run_attempt_close (laws : Laws) (s : State) (es : List Event) :
+    run laws s ([.attempt]++es++[.close])=
+      advance laws (run laws (advance laws s .attempt) es) .close := by
+  rw [run_append]
+  rfl
+
+theorem close_preserves_core (laws : Laws) (s : State) :
+    core (advance laws s .close)=core s := rfl
+
 end AcquiredEvaluation
 
 #print axioms AcquiredEvaluation.runnable_trace
@@ -529,3 +560,12 @@ end AcquiredEvaluation
 #print axioms AcquiredEvaluation.paid_native_word_ledger
 #print axioms AcquiredEvaluation.step_capacity
 #print axioms AcquiredEvaluation.trace_capacity
+
+#print axioms AcquiredEvaluation.replacement_keeps_data
+
+#print axioms AcquiredEvaluation.run_append
+#print axioms AcquiredEvaluation.closing_preserves_run_core
+#print axioms AcquiredEvaluation.attempt_preserves_core
+
+#print axioms AcquiredEvaluation.run_attempt_close
+#print axioms AcquiredEvaluation.close_preserves_core

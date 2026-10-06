@@ -1,0 +1,11 @@
+{
+  "status": "metadata_only_correction",
+  "finding": "PaidRecipientReasons.cold has zero charge; the preceding evaluation read was paid.",
+  "correction": "Replace paid reason reopening with reason-workspace cold invalidation after a paid evaluation read.",
+  "execution": "No numerical or compiler rerun. All 12 milestone comparisons, source evidence other than the explanatory checker text, preparation and mirror values remain exactly unchanged.",
+  "original_source_sha256": "4c1b8eeb07bd49bd224320aafa3a3624e8834d3c9d6ddedf662d82cb31228a2f",
+  "original_receipt_sha256": "521cfa7773de2df54b1952d980e76e9379d4d88113333efdad575f085f0d8dee",
+  "current_source_sha256": "878da35c21a8d0031724f4128ca603a0162f86363b0226464c0c11881f192100",
+  "current_receipt_sha256": "5fae8b5cadc9fea8fecd6167e940e6e79314d3785d44303af8e04ed1a2146eae",
+  "unchanged_comparison_payloads": true
+}

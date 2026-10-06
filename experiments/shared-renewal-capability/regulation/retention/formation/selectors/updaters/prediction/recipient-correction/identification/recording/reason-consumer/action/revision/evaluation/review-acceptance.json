@@ -1,0 +1,175 @@
+{
+  "status": "accepted",
+  "checked_at_utc": "2026-10-06T00:43:44.714263+00:00",
+  "unresolved_material_issues": [],
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model-verification.json": "5b5c4114c2f52ada951ad96d1ba0148adfbfd818a5f8165d1629b708b5c30faa",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/DRAFT-PROTOCOL.md": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/cases.json": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/protocol-freeze.json": "1b834163d59fb272e5a60ba19f997e333f09b9810e664cd992b4e94262176bca",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/INTERFACE.md": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/results.json.gz": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/result-files.json": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/first-run-receipt.json": "b05c8dbfd412ae76658beac9dd82e1772a49331e4ef5166ded127336961a2ab0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/reporting.json": "9c234d315e1f55d26189d03a6d89fca7f74f8fe0774513499e77c34edbb09c5b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/fixtures.json": "01facecb0b4cfef6bb9dacf93244b10a74c706ffef7cc145f570bdccf4cb90af",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/README.md": "038409dfdae7b7c7044874cfdd20ff34e566aa1d638836e72c893a7b8c8e7c64",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/check.py": "8f0f0d1ab254add4bf0694f0948f2a3e50f054ae58a9a3f1c68dcd53f68f0d3c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/verification.json": "bd4ad789213f48183049fe681ad3ad0421b6eef51fa7fcb5097d9e4fcfb12aa4",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean": "aee06990193d6b3413ab22e5df9afab3f444d32ffcfac47f04ea5a43ce816779",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean": "d28ec685d0683636bc24eb5876368cb055529a04e7e577521bb6c9e1a60e928c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean": "20f827f1ea41fcf8814deb2df03ca4b05d9103a1a3afca8f2047fd3762ac5254",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md": "f7fc5cc40668b3df0144efafe6b3ec2143aeca227b52ac3445f54015fc9af1a5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/crosscheck_witness.py": "878da35c21a8d0031724f4128ca603a0162f86363b0226464c0c11881f192100",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal-runtime-crosscheck.json": "5fae8b5cadc9fea8fecd6167e940e6e79314d3785d44303af8e04ed1a2146eae",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/formal-crosscheck-prose-correction/correction.json": "b955bcdc89426bf244ab91661ffbb883ab5c1723d67049e061ee1c9f243b0ab1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/root-formal-lifecycle/findings.json": "8ff4f010f7b4aea79e29c250fa74358b25455aed1b7a0d70c21d16a62d1254e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/prospective-oracle-initial.json": "523cfee9b38e8a0dd4ea848ea2930410c2915d866e04055e70fd202349781e21",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/prospective-oracle-guards.json": "05e0e98db4b42a492693b631eb71dd88dbdf8c9800efa034b205b4b9a82d157e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/prospective-oracle-full-schedule.json": "59061399346fef586479426e4eea5d2f8a713958e0ddaa6ca66e14ba5d82d327",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/oracle-interface-adaptation.json": "e53b3e9d3f23f63089005e2e28c8af40fb04f406df64b31a27daedf6346ea9fd",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/first-independent-run.json": "2560954a75f2c7371f59c1e57029cf8e3540212e95247b574aa98caf3721719e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-REVIEW.md": "936ccd86fed9cebf2af852c20fe39aab1ff06d12998c18219bbb0352d8bd9920",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-MATH.md": "2b3060789b0760bbd42c2a58bc784b02229bd7b6540b2bcfbca656d00791e890"
+  },
+  "numerical": {
+    "receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model-verification.json",
+    "counts": {
+      "cases": 29,
+      "mixtures": 261,
+      "histories": 3306,
+      "prefixes": 40200,
+      "aggregate_metrics": 8352,
+      "preparation_prefix_comparisons": 3071,
+      "catalog_entries": 152
+    },
+    "comparisons": {
+      "matched_input_histories": 1102,
+      "fixed000_contrasts": 18,
+      "permission_preserves_assessment": 18,
+      "actual_funded_retired_port_boundaries": 18
+    },
+    "mutation_count": 15,
+    "mutations": [
+      {
+        "name": "initial_unacquired_weight",
+        "status": "rejected"
+      },
+      {
+        "name": "complete_wrong_loss_window_keeps_private_payments",
+        "status": "rejected"
+      },
+      {
+        "name": "complete_unavailable_source_dissipation_preserves_energy",
+        "status": "rejected"
+      },
+      {
+        "name": "complete_recipient_receipts_redirected_to_actor",
+        "status": "rejected"
+      },
+      {
+        "name": "native_training_rewrites_unrelated_qualification",
+        "status": "rejected"
+      },
+      {
+        "name": "duplicate_active_core",
+        "status": "rejected"
+      },
+      {
+        "name": "replacement_reuses_held_pair",
+        "status": "rejected"
+      },
+      {
+        "name": "native_source_finances_before_return",
+        "status": "rejected"
+      },
+      {
+        "name": "recipient_q_mismatches_current_fact",
+        "status": "rejected"
+      },
+      {
+        "name": "actor_target_substituted",
+        "status": "rejected"
+      },
+      {
+        "name": "funded_retired_port_reads_again",
+        "status": "rejected"
+      },
+      {
+        "name": "historical_bank_substitution_with_recomputed_local_hash",
+        "status": "rejected"
+      },
+      {
+        "name": "repeat_native_write",
+        "status": "rejected"
+      },
+      {
+        "name": "return_again",
+        "status": "rejected"
+      },
+      {
+        "name": "missing_source_cannot_fabricate_return",
+        "status": "rejected"
+      }
+    ],
+    "first_reconstruction_passed_without_post_outcome_repair": true
+  },
+  "formal": {
+    "receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/verification.json",
+    "modules": 26,
+    "new_audits": 77,
+    "total_audits": 630,
+    "new_empty_axiom_audits": 4,
+    "new_standard_axiom_audits": 73,
+    "allowed_standard_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "all23_ancestors_match": true,
+    "source_unchanged_during_check": true
+  },
+  "crosscheck": {
+    "receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal-runtime-crosscheck.json",
+    "milestones": 12,
+    "preparation": true,
+    "actual_opposite_command_history": true,
+    "full_mixture_formal_refinement": false
+  },
+  "lifecycle_findings": {
+    "public_voluntary_bypass": "resolved: removed from public evaluation Event; non-settlement trial requires executing/due/current",
+    "opportunity_conflation": "resolved: explicit first/second opportunity lifecycle and replacement guards",
+    "unnecessary_qualification": "resolved: current supported command agreement does not require old last=true"
+  },
+  "bounded_recognition_join": {
+    "established": "Reached opposite acquired commands, unknown-fact withholding and mismatch obstruction mediate instrumental response and addressed execution under the declared law.",
+    "application_supplies": [
+      "independently justified patient-good interpretation",
+      "ethical ground G",
+      "legitimate authority",
+      "complete relevant comparison",
+      "observation-to-use law applicability"
+    ],
+    "not_derived": [
+      "patient standing",
+      "normative validity of positive transfer",
+      "whole learner succession"
+    ]
+  },
+  "scope": [
+    "Independent oracle authored before new implementation/outcomes; only accepted parent checker imported.",
+    "All 29 numerical cases retained with inherited masses, one core, all failed payment prefixes and exact resource/material accounts.",
+    "Selected normal-tariff C8 Lean construction and generic conditional interface; not a proof of all-case simulation equivalence.",
+    "Only evaluator-carrier replacement, retaining same learner, coefficient and archive.",
+    "Recipes, meter calibration, positive conversion, schedule, patient-good interpretation and ethical G remain explicitly supplied or independently justified.",
+    "No new empirical study, subjective-valence derivation, universal inclusiveness, conventional-control superiority or unified-foundation completion claim."
+  ],
+  "linked_notes_checked": 42,
+  "mutable_root_documents_not_pinned": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-SCOPE.md"
+  ]
+}
