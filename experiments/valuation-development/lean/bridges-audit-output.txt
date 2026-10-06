@@ -1,0 +1,33 @@
+'ValuationDevelopment.wsum_append' depends on axioms: [propext]
+'ValuationDevelopment.wsum_scale' depends on axioms: [propext]
+'ValuationDevelopment.wsum_bind' depends on axioms: [propext]
+'ValuationDevelopment.wsum_le' does not depend on any axioms
+'ValuationDevelopment.wsum_congr' does not depend on any axioms
+'ValuationDevelopment.wsum_const_mul' depends on axioms: [propext]
+'ValuationDevelopment.wsum_const' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.mem_wbind' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.wbind_preserves' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.wmass_bind_le' depends on axioms: [propext]
+'ValuationDevelopment.wtotal_bind' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.wmass_le_of_imp' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.wmass_le_total' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.escape_bound' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.SOrg.step_mass_flag' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.wmass_false' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.wrun_preserves' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.stochastic_coverage' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.stochastic_estimate_exact' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.eps_greedy_estimate_exact' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.eps_greedy_three_steps' does not depend on any axioms
+'ValuationDevelopment.noisy_greedy_locks' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.curiosity_escapes_noisy_lock' does not depend on any axioms
+'ValuationDevelopment.seq_sustained' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.par_sustained' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.branch_sustained' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.lineLedger_fields' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.lineage_sustained' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.lineage_needs_arrivals' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.count_le_enacted' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.later_arrivals_needed' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.lineage_needs_inheritance' depends on axioms: [propext]
+'ValuationDevelopment.ledger_silent_on_valuation' does not depend on any axioms

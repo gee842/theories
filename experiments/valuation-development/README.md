@@ -15,6 +15,8 @@
 | [lean/ExplorationAudit.lean](lean/ExplorationAudit.lean), [lean/exploration-audit-output.txt](lean/exploration-audit-output.txt) | `#print axioms` for the exploration module and its saved result |
 | [lean/ValuationCompletion.lean](lean/ValuationCompletion.lean) | 15 theorems (§14): stale estimates after a change, a noise floor (reached and kept) and noise-induced lock-in, reduction of interaction with a fixed partner and a joint-coverage witness, level-5 route revision and level-6 valuation of others formed by pairing, each reaching selection |
 | [lean/CompletionAudit.lean](lean/CompletionAudit.lean), [lean/completion-audit-output.txt](lean/completion-audit-output.txt) | `#print axioms` for the completion module and its saved result |
+| [lean/ValuationBridges.lean](lean/ValuationBridges.lean) | 33 theorems (§16): finite weighted laws and one escape bound; coverage and exact estimates for one option with probability at least `1 - (r/q)^n` (positive totals); a noisy witness in which greedy lock-in tends to certainty, and a curiosity witness; ledgers of generations closed under succession and division (formalized for lines and one division step), the lineage prefix bound, late arrivals needed under positive demand, and a countermodel without inheritance and an attribution illustration |
+| [lean/BridgesAudit.lean](lean/BridgesAudit.lean), [lean/bridges-audit-output.txt](lean/bridges-audit-output.txt) | `#print axioms` for the bridges module and its saved result |
 | [lean/lean-toolchain](lean/lean-toolchain) | `leanprover/lean4:v4.29.1` |
 
 ## Reproduce
@@ -31,15 +33,17 @@ LEAN_PATH=. lean -o ExplorationCoverage.olean ExplorationCoverage.lean
 LEAN_PATH=. lean ExplorationAudit.lean
 LEAN_PATH=. lean -o ValuationCompletion.olean ValuationCompletion.lean
 LEAN_PATH=. lean CompletionAudit.lean
+LEAN_PATH=. lean -o ValuationBridges.olean ValuationBridges.lean
+LEAN_PATH=. lean BridgesAudit.lean
 rm -f *.olean *.ilean
 ```
 
-Result on 7 October 2026: 27 theorems depend on no axioms. `coupled_signal_bounded`, `shared_exposure_contracts`, `shared_exposure_converges`, `shared_exposure_equalizes` and `multistable_divergence_forever` depend on `propext` and `Quot.sound`. `rounding_gap_forever` depends on `propext` only. These come through `omega` and `simp`. There are no custom axioms, no `sorry` and no `native_decide`. The closed-loop module adds 11 theorems: 5 depend on no axioms and 6 depend on `propext` and `Quot.sound` only. The exploration module adds 11 theorems and the completion module 15, all depending on no axioms or only on standard `propext` and `Quot.sound`. In total there are 70 theorems.
+Result on 7 October 2026: 27 theorems depend on no axioms. `coupled_signal_bounded`, `shared_exposure_contracts`, `shared_exposure_converges`, `shared_exposure_equalizes` and `multistable_divergence_forever` depend on `propext` and `Quot.sound`. `rounding_gap_forever` depends on `propext` only. These come through `omega` and `simp`. There are no custom axioms, no `sorry` and no `native_decide`. The closed-loop module adds 11 theorems: 5 depend on no axioms and 6 depend on `propext` and `Quot.sound` only. The exploration module adds 11 theorems and the completion module 15, all depending on no axioms or only on standard `propext` and `Quot.sound`. The bridges module adds 33: 5 depend on no axioms, 6 on `propext` only and 22 on `propext` and `Quot.sound`. In total there are 103 theorems.
 
 ## Scope
 
 - The universals quantify over every `Org` (selection plus retention law) and every consequence law.
 - The countermodels are concrete finite witnesses checked by evaluation.
 - `halving_nonexpanding_on_sample` is checked only over values below 8.
-- Everything is deterministic, and the noise floor has no probability law. Interaction covers two organizations with a common presented condition. Levels 5 and 6 are minimal witnesses whose route-switching rule and plasticity law are supplied.
+- Modules 1–4 are deterministic, and their noise floor has no probability law. The bridges module uses finite weighted laws with natural-number weights, constant total weight per step and one target option. It does not construct joint probability spaces for two learners, and it has no continuous measures. Its lineage ledgers take the per-generation prefix bound and inheritance as hypotheses. Interaction covers two organizations with a common presented condition. Levels 5 and 6 are minimal witnesses whose route-switching rule and plasticity law are supplied.
 - This is formal mathematics about the stated representation. It is not empirical evidence and not an ethical result.
