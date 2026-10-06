@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-10-06T20:04:28.843060+00:00",
+  "checked_at_utc": "2026-10-06T20:21:54.819130+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "checker_sha256": "5f0c79f1d26888cf138747c88018b10ded002d133f091743ed78abb59ef4b145",
+  "checker_sha256": "bd02bafac835d5c4fc4c4eee1da3b1e3f7e31ccb6132d80b2dcbff095fdc1a55",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
   "allowed_standard_axioms": [
@@ -82,9 +82,41 @@
       "clean": true,
       "output": "verification/RenewalAccounting.txt",
       "output_sha256": "7a1d725b1e122aee3377480c6490098fb122f02d6c088d6c83eed6561b980cd0"
+    },
+    {
+      "module": "RenewalSufficiency",
+      "source": "RenewalSufficiency.lean",
+      "source_sha256": "51788ffa220bae4493958fab5f63d2a6a8c2714ce2e5f9c56f4cc8f5c30e90a3",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 28,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 4,
+      "clean": true,
+      "output": "verification/RenewalSufficiency.txt",
+      "output_sha256": "62952cffa8955b01b18749e67b68e09be197d1c020fd5cf538b5542f6ebf1c05"
+    },
+    {
+      "module": "RenewalLink",
+      "source": "RenewalLink.lean",
+      "source_sha256": "fc86e8bd1fea2e8f68abc8eec7be368d5d24b798476276da3bbb2bef350e3988",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 7,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 0,
+      "clean": true,
+      "output": "verification/RenewalLink.txt",
+      "output_sha256": "a081ae03709943b22f2d4531c185bde7d44adf9ff9487945a18e76eff8d1e4ea"
     }
   ],
-  "new_audited_declarations": 32,
-  "new_empty_axiom_audits": 8,
-  "scope": "Conditional statements over supplied kinds, support edges, spans, formation demands and arrival rates: late occurrence descends from a realized closure of kinds; acyclic support has a deadline without a supplied rank; when every kind brings in less than its formation demands, a combined potential strictly decreases on every live tick, so renewal ends by an explicit deadline. No sufficiency, physical identification, or ethical appraisal is asserted."
+  "new_audited_declarations": 67,
+  "new_empty_axiom_audits": 12,
+  "scope": "Conditional statements over supplied kinds, support edges, spans, formation demands and arrival rates: late occurrence descends from a realized closure of kinds; acyclic support has a deadline without a supplied rank; when every kind brings in less than its formation demands, a combined potential strictly decreases on every live tick, so renewal ends by an explicit deadline; a support-closed population that is balanced, or that supports an excess kind, has a steady configuration fixed by one tick and so renews forever; and on one execution of the constraint-flow process, endless liveness needs both a realized closure of supporters that outlast the tick and a kind that brings in at least its formation demand. The exact mixed-case condition is not yet proved. No physical identification or ethical appraisal is asserted."
 }
