@@ -28,6 +28,8 @@ SOURCES = {
     "WholeQualityNaturalism": ROOT / "WholeQualityNaturalism.lean",
     "NaturalismIdentity": ROOT / "NaturalismIdentity.lean",
     "NaturalismReview": ROOT / "NaturalismReview.lean",
+    "ProtectedScope": ROOT / "ProtectedScope.lean",
+    "ProtectedScopeLimits": ROOT / "ProtectedScopeLimits.lean",
 }
 # Equal to the source_sha256 values in ../verification.json.
 INHERITED_SHA256 = {
@@ -37,7 +39,7 @@ INHERITED_SHA256 = {
     "DynamicConsequences": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
     "EthicalOrientation": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
 }
-NEW = ["WholeQualityNaturalism", "NaturalismIdentity", "NaturalismReview"]
+NEW = ["WholeQualityNaturalism", "NaturalismIdentity", "NaturalismReview", "ProtectedScope", "ProtectedScopeLimits"]
 ALLOWED_AXIOMS = {"propext", "Quot.sound"}
 
 
@@ -130,7 +132,13 @@ def main():
                  "fixed scopes and complete (including scalar) rankings fail it in finite "
                  "examples, including over actual transitions. The structural credentials hold "
                  "for every step relation; continuation inclusion registers restraint, every "
-                 "exclusive choice and every recovered dip as damage. No moral predicate is "
+                 "exclusive choice and every recovered dip as damage. A scope derived from the "
+                 "process (ongoing activities that remove no other ongoing activity, with "
+                 "eventual realizability) separates restraint from harm only with every activity "
+                 "in scope and only in a process where the victim removes nothing, and separates "
+                 "untaken from carried courses only with the exercised scope; no single scope does "
+                 "both, symmetric rivals stay unprotected, and unrecovered falls are not damage. "
+                 "No moral predicate is "
                  "formalized: the premise, the supervenience of moral properties, property "
                  "identity and any ethical verdict are not asserted.",
     }
