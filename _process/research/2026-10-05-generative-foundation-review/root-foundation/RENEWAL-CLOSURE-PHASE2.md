@@ -63,6 +63,8 @@ An `Execution` is a supplied sequence of `channelProcess` ticks whose initial to
 
 ## What remains
 
+[Phase 2b](RENEWAL-CLOSURE-PHASE2B.md) has since generalized the proof to designated kinds, such as the means of correction. The audit counts above are from the end of Phase 2.
+
 - **The two named cases on the law alone**, as noted above.
 - **Phase 2b: renewability of whole configurations.** The theorem is about laws: whether some history renews forever. The research center asks how a history generates or damages the conditions of its later realization. The next question is which configurations can still reach a standing renewal, and which histories lose that possibility. The dichotomy already gives one half: once no self-renewing population is reachable, the deadline applies.
 - **Phase 3:** several required supporters per formation, several flows, and the canonical organization. **Phase 4:** deriving the constraint notion inside the core from `FormationClosure` and the native port.

@@ -130,7 +130,9 @@ def main():
                  "between one and D, some execution stays live forever exactly when a nonempty "
                  "population of kinds is closed under support by constraints that outlast a "
                  "tick and opens over its spans at least what forming it demands, otherwise "
-                 "every execution stops being live by an explicit time. No physical "
+                 "every execution stops being live by an explicit time; the same holds for "
+                 "keeping a live token of designated kinds, such as means of correction, "
+                 "exactly when some self-renewing population contains one. No physical "
                  "identification or ethical appraisal is asserted.",
     }
     (ROOT / "verification.json").write_text(json.dumps(record, indent=2) + "\n")
