@@ -295,9 +295,10 @@ theorem support_walk (S : OccurrenceSupport Kind) (D : Nat)
 
 /-- **Late activity descends from a realized closure.** With every kind listed in
 `U` and support reach at most `D`, an occurrence after `U.length * D` descends
-from a nonempty closed walk of kinds. Every kind on that walk occurs within the
-last `U.length * D` time units before the late occurrence, so the closure is
-realized recently, not merely permitted by the edges. -/
+from a nonempty closed walk of kinds. Every kind on that walk, and on the walk
+from it to the late occurrence, occurs within the last `U.length * D` time units
+before the late occurrence. So the closure is realized recently, not merely
+permitted by the edges. -/
 theorem late_occurrence_descends_from_realized_closure [DecidableEq Kind]
     (S : OccurrenceSupport Kind) (U : List Kind) (complete : ∀ k, k ∈ U)
     (D : Nat) (bound : ∀ j, S.reach j ≤ D) {t : Nat} {k : Kind}
@@ -305,7 +306,7 @@ theorem late_occurrence_descends_from_realized_closure [DecidableEq Kind]
     ∃ j cycle rest,
       cycle ≠ [] ∧ Walk S.edge j (j :: cycle) j ∧ Walk S.edge j (j :: rest) k ∧
       DependenceClosed S.edge cycle ∧
-      ∀ v, v ∈ cycle → ∃ s, S.occurs v s ∧ s ≤ t ∧ t ≤ s + U.length * D := by
+      ∀ v, v ∈ cycle ++ rest → ∃ s, S.occurs v s ∧ s ≤ t ∧ t ≤ s + U.length * D := by
   have ⟨i, vs, walk, length, window⟩ := support_walk S D bound U.length t k occ late
   have long : U.length < vs.length := by omega
   have ⟨pre, x, mid, post, split⟩ :=
@@ -323,11 +324,14 @@ theorem late_occurrence_descends_from_realized_closure [DecidableEq Kind]
   intro v member
   apply window v
   cases List.mem_append.mp member with
-  | inl inMid => simp [inMid]
-  | inr isX =>
-    have same := List.mem_singleton.mp isX
-    subst v
-    simp
+  | inl inCycle =>
+    cases List.mem_append.mp inCycle with
+    | inl inMid => simp [inMid]
+    | inr isX =>
+      have same := List.mem_singleton.mp isX
+      subst v
+      simp
+  | inr inPost => simp [inPost]
 
 /-- The same conclusion as a nonempty cycle of the type process, the form used
 by `SupportNecessity`. -/
@@ -408,7 +412,7 @@ theorem episode_late_life_descends_from_realized_closure [DecidableEq Kind]
       (k := S.kind e) ⟨e, rfl, rfl⟩ bornLate
   refine ⟨j, cycle, rest, nonempty, loop, tail, closed, ?_⟩
   intro v member
-  obtain ⟨s, ⟨p, kindP, birthP⟩, _, near⟩ := window v member
+  obtain ⟨s, ⟨p, kindP, birthP⟩, _, near⟩ := window v (List.mem_append_left _ member)
   exact ⟨p, kindP, by rw [birthP]; exact near⟩
 
 #print axioms Walk.snoc
