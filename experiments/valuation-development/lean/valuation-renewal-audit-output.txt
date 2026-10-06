@@ -1,0 +1,5 @@
+'ValuationDevelopment.valuation_step' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.constant_valuation_steady' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.valuation_keeping_theorem' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.every_valuation_loses' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.valuing_is_not_keeping' depends on axioms: [propext, Quot.sound]
