@@ -22,6 +22,7 @@
 'Generative.Conditional.Renewal.support_closed_append' depends on axioms: [propext]
 'Generative.Conditional.Renewal.traced_support_closed' depends on axioms: [propext]
 'Generative.Conditional.Renewal.kept_kind_descends' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.kept_through_window_has_population' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.renewal_dichotomy_keeping' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.renewal_dichotomy' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.steady_contains_fresh' depends on axioms: [propext, Quot.sound]

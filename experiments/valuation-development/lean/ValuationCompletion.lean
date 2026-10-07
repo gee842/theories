@@ -37,7 +37,12 @@ theorem greedy_exact_improved :
     ExactForReached greedy improvedWorld estOf (fun a => if a then 4 else 6) := by
   refine ⟨?_, ?_, ?_⟩
   · intro m x a c; cases a <;> rfl
-  · intro m x a c b hb; cases a <;> cases b <;> simp_all [greedy, estOf]
+  · intro m x a c b hb
+    cases a <;> cases b
+    · exact absurd rfl hb
+    · rfl
+    · rfl
+    · exact absurd rfl hb
   · intro x a; rfl
 
 /-- The greedy learner that had learned the old world correctly never re-reaches
@@ -55,9 +60,12 @@ theorem greedy_stale_after_change : ∀ n : Nat,
     | succ k ih =>
       intro t
       have : greedy.next improvedWorld { onTrue := 4, onFalse := 2, total := t } () =
-          { onTrue := 4, onFalse := 2, total := t + 4 } := by simp [Org.next, greedy, improvedWorld]
-      simp only [Org.reaches, List.replicate_succ, this, ih, Bool.or_false]
-      simp [greedy]
+          { onTrue := 4, onFalse := 2, total := t + 4 } := rfl
+      show (decide (greedy.select { onTrue := 4, onFalse := 2, total := t } () = false) ||
+          greedy.reaches improvedWorld (greedy.next improvedWorld { onTrue := 4, onFalse := 2, total := t } ())
+            (List.replicate k ()) false) = false
+      rw [this, ih]
+      rfl
   intro n
   rw [hstart]
   refine ⟨key n 4, ?_⟩
@@ -69,7 +77,12 @@ theorem curious_exact_improved :
     ExactForReached curious improvedWorld curEst (fun a => if a then 4 else 6) := by
   refine ⟨?_, ?_, ?_⟩
   · intro m x a c; cases a <;> rfl
-  · intro m x a c b hb; cases a <;> cases b <;> simp_all [curious, greedy, curEst, estOf]
+  · intro m x a c b hb
+    cases a <;> cases b
+    · exact absurd rfl hb
+    · rfl
+    · rfl
+    · exact absurd rfl hb
   · intro x a; rfl
 
 /-- Recurring curiosity re-reaches `false` within three steps of the change, learns
@@ -82,6 +95,22 @@ theorem curiosity_tracks_change :
 
 /-! ## V2. Noisy learning: a noise floor, and noise as a source of lock-in -/
 
+/-- From `2·a ≤ 2·k`, `a ≤ k`. -/
+private theorem half_le {a k : Nat} (h : 2 * a ≤ 2 * k) : a ≤ k :=
+  Nat.le_of_mul_le_mul_left h (by decide)
+
+/-- From `2·a < 2·b`, `a < b`. -/
+private theorem half_lt {a b : Nat} (h : 2 * a < 2 * b) : a < b := by
+  cases Nat.lt_or_ge a b with
+  | inl hlt => exact hlt
+  | inr hge => exact absurd (Nat.lt_of_lt_of_le h (Nat.mul_le_mul_left 2 hge)) (Nat.lt_irrefl _)
+
+/-- If `2·a ≤ b + 2ε` and `b ≤ 2ε`, then `a ≤ 2ε`. -/
+private theorem within_floor {a b ε : Nat} (hu : 2 * a ≤ b + 2 * ε) (hb : b ≤ 2 * ε) : a ≤ 2 * ε := by
+  apply half_le
+  rw [Nat.two_mul (2 * ε)]
+  exact Nat.le_trans hu (Nat.add_le_add_right hb _)
+
 /-- If each encounter at least halves the error up to a noise allowance `ε`
 (`2·e' ≤ e + 2ε`), then after `n` encounters the error has either fallen by at
 least `n` or lies within the noise floor `2ε`, and it never leaves that floor. -/
@@ -90,16 +119,26 @@ theorem noise_floor {M E : Type} (u : M → E → M) (err : M → Nat) (ε : Nat
     ∀ (es : List E) (m : M), err (runU u m es) + es.length ≤ err m ∨ err (runU u m es) ≤ 2 * ε := by
   intro es
   induction es with
-  | nil => intro m; left; simp [runU]
+  | nil => intro m; exact Or.inl (Nat.le_refl _)
   | cons e es ih =>
     intro m
-    simp only [runU, List.length_cons]
+    show err (runU u (u m e) es) + (es.length + 1) ≤ err m ∨ err (runU u (u m e) es) ≤ 2 * ε
     have hu := h m e
-    rcases ih (u m e) with h1 | h1
-    · by_cases hb : err m ≤ 2 * ε
-      · right; omega
-      · left; omega
-    · right; exact h1
+    cases ih (u m e) with
+    | inl h1 =>
+      cases Nat.lt_or_ge (2 * ε) (err m) with
+      | inl hb =>
+        -- outside the floor: `err (u m e) < err m`, so the fall continues
+        apply Or.inl
+        have h2 : 2 * err (u m e) < 2 * err m := by
+          rw [Nat.two_mul (err m)]
+          exact Nat.lt_of_le_of_lt hu (Nat.add_lt_add_left hb _)
+        exact Nat.le_trans (Nat.succ_le_succ h1) (half_lt h2)
+      | inr hb =>
+        -- inside the floor: the next error is within it too
+        apply Or.inr
+        exact Nat.le_trans (Nat.le_trans (Nat.le_add_right _ _) h1) (within_floor hu hb)
+    | inr h1 => exact Or.inr h1
 
 /-- Once within the noise floor, the error stays there for every later history. -/
 theorem noise_floor_stays {M E : Type} (u : M → E → M) (err : M → Nat) (ε : Nat)
@@ -110,8 +149,7 @@ theorem noise_floor_stays {M E : Type} (u : M → E → M) (err : M → Nat) (ε
   | nil => intro m hm; exact hm
   | cons e es ih =>
     intro m hm
-    have hu := h m e
-    exact ih (u m e) (by omega)
+    exact ih (u m e) (within_floor (h m e) hm)
 
 /-- Noise in the consequence met: on a noisy step the better option yields 1
 instead of 4. -/

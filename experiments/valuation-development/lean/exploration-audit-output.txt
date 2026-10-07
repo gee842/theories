@@ -1,11 +1,11 @@
-'ValuationDevelopment.unreached_estimate_kept' depends on axioms: [propext]
-'ValuationDevelopment.reached_estimate_exact' depends on axioms: [propext]
-'ValuationDevelopment.coverage_equalizes' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.no_coverage_keeps_initial' depends on axioms: [propext]
-'ValuationDevelopment.reaches_append' depends on axioms: [propext]
-'ValuationDevelopment.greedy_exact' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.greedy_low_never_covers' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.optimism_covers' depends on axioms: [Quot.sound]
-'ValuationDevelopment.curious_exact' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.unreached_estimate_kept' does not depend on any axioms
+'ValuationDevelopment.reached_estimate_exact' does not depend on any axioms
+'ValuationDevelopment.coverage_equalizes' does not depend on any axioms
+'ValuationDevelopment.no_coverage_keeps_initial' does not depend on any axioms
+'ValuationDevelopment.reaches_append' does not depend on any axioms
+'ValuationDevelopment.greedy_exact' does not depend on any axioms
+'ValuationDevelopment.greedy_low_never_covers' does not depend on any axioms
+'ValuationDevelopment.optimism_covers' does not depend on any axioms
+'ValuationDevelopment.curious_exact' does not depend on any axioms
 'ValuationDevelopment.curiosity_covers_in_three' does not depend on any axioms
-'ValuationDevelopment.curiosity_equalizes_forever' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.curiosity_equalizes_forever' does not depend on any axioms

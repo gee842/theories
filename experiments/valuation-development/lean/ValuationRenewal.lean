@@ -60,13 +60,18 @@ theorem valuation_step (v : FormationValuation Kind) (c : Config Kind) :
   · have hc : chosen law v c = v c := if_pos h
     have h1 := h.1
     refine ⟨?_, ?_, ?_⟩
-    · simp only [nextConfig, hc]
-    · simp only [nextConfig, hc]; omega
+    · show aged c.tokens ++ formed law (chosen law v c) = aged c.tokens ++ formed law (chosen law v c)
+      rfl
+    · show c.reserve + opened law.rate c.tokens - formation law (chosen law v c) +
+        formation law (chosen law v c) ≤ c.reserve + opened law.rate c.tokens
+      rw [hc]; exact Nat.le_of_eq (AF.sub_add_cancel h1)
     · rw [hc]; exact h.2
   · have hc : chosen law v c = [] := if_neg h
     refine ⟨?_, ?_, ?_⟩
-    · simp only [nextConfig, hc]
-    · simp only [nextConfig, hc, formation]; omega
+    · rfl
+    · show c.reserve + opened law.rate c.tokens - formation law (chosen law v c) +
+        formation law (chosen law v c) ≤ c.reserve + opened law.rate c.tokens
+      rw [hc]; exact Nat.le_refl _
     · rw [hc]; intro k hk; cases hk
 
 /-- Every valuation, from a starting configuration within span, determines an
@@ -97,11 +102,12 @@ theorem constant_valuation_steady (B : List Kind) (N : Nat) (nonempty : B ≠ []
     show (nextConfig law (fun _ => B) (valRun law (fun _ => B) ⟨0, steady law B N⟩ n)).tokens = _
     generalize valRun law (fun _ => B) ⟨0, steady law B N⟩ n = c at ih ⊢
     obtain ⟨r, toks⟩ := c
-    simp only at ih
-    subst ih
+    have ih' : toks = steady law B N := ih
+    subst ih'
     have st := (steady_renews law B N r nonempty positive bound supported balanced).2
-    have hf : Formable law ⟨r, steady law B N⟩ B := ⟨by have := st.2.1; simp at this; show formation law B ≤ r + opened law.rate (steady law B N); omega, st.2.2⟩
-    simp only [nextConfig, chosen, if_pos hf]
+    have hf : Formable law ⟨r, steady law B N⟩ B := ⟨Nat.le_trans (Nat.le_add_left _ r) st.2.1, st.2.2⟩
+    show aged (steady law B N) ++ formed law (chosen law (fun _ => B) ⟨r, steady law B N⟩) = steady law B N
+    rw [show chosen law (fun _ => B) ⟨r, steady law B N⟩ = B from if_pos hf]
     exact (steady_fixed law B N positive bound)
 
 /-- **Valuation and renewal.** With finitely many kinds and spans between one and
@@ -151,19 +157,22 @@ keeps it alive forever; in `danglingSupport` a valuation keeps the short kind
 theorem valuing_is_not_keeping :
     (¬ ∃ v, ValuationKeeps lapsingCorrection (fun k => k = true) v) ∧
     (∃ v, ValuationKeeps danglingSupport (fun k => k = false) v) := by
-  have complete : ∀ k : Bool, k ∈ [false, true] := by intro k; cases k <;> simp
+  have complete : ∀ k : Bool, k ∈ [false, true] := fun k => by
+    cases k
+    · exact List.mem_cons_self
+    · exact List.mem_cons_of_mem _ List.mem_cons_self
   constructor
-  · rw [valuation_keeping_theorem lapsingCorrection [false, true] complete 3
-      (fun _ => Nat.le_refl 3) (fun _ => Nat.zero_lt_succ 2) (fun k => k = true)]
-    intro ⟨B, renewing, k, kIn, kK⟩
+  · intro h
+    obtain ⟨B, renewing, k, kIn, kK⟩ := (valuation_keeping_theorem lapsingCorrection [false, true]
+      complete 3 (fun _ => Nat.le_refl 3) (fun _ => Nat.zero_lt_succ 2) (fun k => k = true)).1 h
     exact lapsing_correction_cannot_be_kept
       ((renewal_keeping_theorem lapsingCorrection [false, true] complete (fun k => k = true)).2
         ⟨B, renewing, k, kIn, kK, Nat.zero_lt_succ 2⟩)
-  · rw [valuation_keeping_theorem danglingSupport [false, true] complete 3
-      (fun k => by cases k <;> decide) (fun k => by cases k <;> decide) (fun k => k = false)]
-    obtain ⟨B, renewing, k, kIn, kK, _⟩ := (renewal_keeping_theorem danglingSupport
+  · obtain ⟨B, renewing, k, kIn, kK, _⟩ := (renewal_keeping_theorem danglingSupport
       [false, true] complete (fun k => k = false)).1 attribution_is_by_population.1.2
-    exact ⟨B, renewing, k, kIn, kK⟩
+    exact (valuation_keeping_theorem danglingSupport [false, true] complete 3
+      (fun k => by cases k <;> decide) (fun k => by cases k <;> decide) (fun k => k = false)).2
+      ⟨B, renewing, k, kIn, kK⟩
 
 /-! ## The contraction hypothesis of C1 is necessary -/
 
@@ -173,10 +182,10 @@ def doubler : Org Nat Unit Unit Nat where
   retain m _ _ _ := 2 * m
 
 theorem doubler_run : ∀ (n m : Nat), doubler.run (fun _ _ => 0) m (List.replicate n ()) = 2 ^ n * m
-  | 0, m => by simp [Org.run]
+  | 0, m => (Nat.one_mul m).symm
   | n + 1, m => by
     show doubler.run (fun _ _ => 0) (2 * m) (List.replicate n ()) = 2 ^ (n + 1) * m
-    rw [doubler_run n (2 * m), Nat.pow_succ, Nat.mul_assoc, Nat.mul_comm 2 m]
+    rw [doubler_run n (2 * m), Nat.pow_succ, AF.mul_assoc, Nat.mul_comm 2 m]
 
 /-- Without contraction, organizations that select alike at every step can
 amplify their difference without bound: started one unit apart, after `n` agreeing
@@ -186,6 +195,6 @@ theorem contraction_needed (n : Nat) :
     doubler.agreeAlong (fun _ _ => 0) 0 1 (List.replicate n ()) ∧
     doubler.run (fun _ _ => 0) 1 (List.replicate n ()) -
       doubler.run (fun _ _ => 0) 0 (List.replicate n ()) = 2 ^ n :=
-  ⟨schedule_agrees doubler _ (fun _ _ _ => rfl) _ 0 1, by rw [doubler_run, doubler_run]; simp⟩
+  ⟨schedule_agrees doubler _ (fun _ _ _ => rfl) _ 0 1, by rw [doubler_run, doubler_run, Nat.mul_one, Nat.mul_zero]; rfl⟩
 
 end ValuationDevelopment
