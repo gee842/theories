@@ -10,7 +10,7 @@
 
 Without such a population, every history stops being live by an explicit time (`no_self_renewing_population_explicit_deadline`). With positive formation demands, that time is `s + (G^(s + W) · P₀ + 2) · W`. Here `D` and `A` are the longest span and the largest rate on the list of kinds, `W = (n + 1)·D + 1`, `G = 1 + A·D`, `s` is the longest remaining span among the initial tokens, and `P₀` is the initial reserve plus what the initial tokens can open.
 
-No bound on spans or rates is supplied: both are read off the finite list of kinds. Spans may be zero, and a history may start from any configuration, including initial tokens that hold more than their kind's span. The [Phase 2b note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md#premises-under-rens-no-assumption-rule-6-october-2026) lists what each remaining premise is for.
+No bound on spans or rates is supplied: both are read off the finite list of kinds. Spans may be zero, and a history may start from any configuration, including initial tokens that hold more than their kind's span. Equality between kinds need not be decidable. The two premises that remain are proved necessary in `RenewalPremises.lean`: finitely many kinds for the equivalence, and positive formation demand for a deadline read from the initial configuration. The [Phase 2b note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md#premises-under-rens-no-assumption-rule-6-october-2026) lists what each remaining premise is for.
 
 **Keeping designated kinds** (`renewal_keeping_theorem`). The proof is carried out for any decidable set of designated kinds. Some history keeps a live token of a designated kind at every time exactly when some self-renewing population contains a designated kind of positive span. The renewal theorem is the case where every kind is designated. When the means of correction (records, readers) are designated, this decides whether correction capacity can be renewed along with the rest. In `lapsingCorrection`, a closure that exactly renews itself supports a correction kind that falls short. The closure renews forever, but no history keeps the correction kind (`lapsing_correction_cannot_be_kept`).
 
@@ -70,6 +70,12 @@ A `History` is a supplied sequence of `channelProcess` ticks from any configurat
 - `closed_open_short_has_no_self_renewing_population`: the single short kind of Phase 1 is decided by the law.
 - `dangling_support_renews_forever`, `dangling_kind_outside_every_closure`, `dangling_closure_falls_short`. A short self-supporting kind supports a second kind that supports nothing but brings in more than its demand. The second kind is in no closed set of the support relation, and the closure alone falls short, yet the law renews forever. **Renewal still needs a realized two-sided closure (`live_late_descends_from_realized_closure`). But the population that renews need only be closed under support. The kind that captures the flow can sit outside every two-sided closure of the support relation, and it is generative only through the provision it opens.**
 
+**`RenewalPremises.lean`: the remaining premises are needed.**
+
+- `infinitely_many_kinds_break_the_equivalence`: with kinds `ℕ`, where kind `k` supports only kind `k + 1` (`chainLaw`), a history renews forever (`chainHistory`), but no list of kinds is closed under support (`chain_not_supported`). Without finitely many kinds, the equivalence fails, and late activity descends from no realized closure.
+- `zero_demand_defeats_initial_deadline`: in `freeFormation`, a seed kind supports a short self-supporting kind and a kind that costs nothing to form. The law has no self-renewing population, so every history stops being live (`free_formation_histories_end`). But forming `m` free tokens on the first tick keeps a history from the same start live for `m + 3` ticks (`free_formation_lives_long`), so no time read from the initial configuration bounds them all.
+- The pigeonhole argument in `RenewalClosure.lean` now splits the list of kinds at a membership witness (`contains_or_drawn_from`, `duplicate_of_long`), and the walk lemmas read predecessors and successors off the walk (`Walk.after_start`, `Walk.before_end`). So no theorem in the package assumes decidable equality of kinds. `kept_through_window_has_population` states the window argument without deciding the designated kinds; only naming the time of loss needs that.
+
 **`RenewalConfigurations.lean`: renewability of whole configurations.**
 
 A configuration (reserve plus every token with its remaining span) is `Renewable` when some history that stays live forever starts from it.
@@ -86,7 +92,7 @@ A configuration (reserve plus every token with its remaining span) is `Renewable
 
 - That the aggregate condition is equivalent to the roadmap's two named cases, a cycle of kinds that each bring in enough or an excess kind supported from a cycle, as a statement about the law alone. The necessity proof constructs one of the two, and sufficiency is proved for each, but the static cycle extraction is not stated.
 - An exact characterization of renewable configurations. `seeded_renewable` is sufficient but not necessary: phase-locked cycles can renew without ever having all kinds fresh at once.
-- **The premises still open in the [Phase 2b note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md#premises-under-rens-no-assumption-rule-6-october-2026).** Under Ren's no-assumption rule, bounded spans and rates are now derived, and positive spans and initial tokens within span are removed. Finitely many kinds, and positive demand for the explicit deadline, are still to be proved necessary. The law itself stays a supplied input until Phase 4. Lean's `propext` and `Quot.sound` are to be removed after that.
+- **Lean's `propext` and `Quot.sound`.** Under Ren's no-assumption rule, every premise of the main theorems is now derived, removed or proved necessary ([Phase 2b note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md#premises-under-rens-no-assumption-rule-6-october-2026)). The law itself stays a supplied input until Phase 4. The proofs still use these two standard axioms through `omega`, `simp` and core list lemmas; removing them is the next step.
 - The generalizations of Phase 3 (several required supporters, several flows) and the derivation of constraints inside the core (Phase 4).
 
 Kinds, edges, spans, demands and rates are supplied inputs. Nothing here says which history occurs, that a system reaches the steady configuration, or that continuation is favorable.
@@ -97,8 +103,8 @@ From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 ch
 
 The checker:
 - requires the inherited `GenerativeCore`, `Depletion` and `SupportNecessity` to match the hashes in their own receipts;
-- builds all nine modules fresh in a temporary directory;
+- builds all ten modules fresh in a temporary directory;
 - rejects `sorry`, custom axioms and warnings;
 - requires every new theorem to be audited.
 
-The [receipt](verification.json) records **146 new audits**: 24 with empty axiom reports, and 122 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package. `Classical.choice` is avoided throughout; the note on `omega` in the Phase 2 note says how.
+The [receipt](verification.json) records **167 new audits**: 29 with empty axiom reports, and 138 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package. `Classical.choice` is avoided throughout; the note on `omega` in the Phase 2 note says how.

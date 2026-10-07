@@ -43,18 +43,19 @@ theorem agreement_contracts {M X A C : Type} (o : Org M X A C) (w : World X A C)
       2 ^ xs.length * d (o.run w m xs) (o.run w m' xs) ≤ d m m' := by
   intro xs
   induction xs with
-  | nil => intro m m' _; simp [Org.run]
+  | nil => intro m m' _; show 1 * d m m' ≤ d m m'; rw [Nat.one_mul]; exact Nat.le_refl _
   | cons x xs ih =>
     intro m m' hagree
     obtain ⟨hsel, hrest⟩ := hagree
     have h1 := ih _ _ hrest
     have h2 : 2 * d (o.next w m x) (o.next w m' x) ≤ d m m' := by
-      simp only [Org.next]; rw [hsel]; exact hc _ _ _ _ _
-    have hrun : ∀ n : M, o.run w n (x :: xs) = o.run w (o.next w n x) xs := fun _ => rfl
-    rw [hrun m, hrun m', List.length_cons]
+      show 2 * d (o.retain m x (o.select m x) (w x (o.select m x)))
+          (o.retain m' x (o.select m' x) (w x (o.select m' x))) ≤ d m m'
+      rw [hsel]; exact hc _ _ _ _ _
+    show 2 ^ (xs.length + 1) * d (o.run w (o.next w m x) xs) (o.run w (o.next w m' x) xs) ≤ d m m'
     have h3 : 2 ^ (xs.length + 1) * d (o.run w (o.next w m x) xs) (o.run w (o.next w m' x) xs)
         = 2 * (2 ^ xs.length * d (o.run w (o.next w m x) xs) (o.run w (o.next w m' x) xs)) := by
-      rw [Nat.pow_succ, Nat.mul_comm (2 ^ xs.length) 2, Nat.mul_assoc]
+      rw [Nat.pow_succ, Nat.mul_comm (2 ^ xs.length) 2, AF.mul_assoc]
     rw [h3]
     exact Nat.le_trans (Nat.mul_le_mul_left 2 h1) h2
 
@@ -68,7 +69,7 @@ theorem amplification_needs_disagreement {M X A C : Type} (o : Org M X A C) (w :
     ¬ o.agreeAlong w m m' xs := by
   intro h
   have := agreement_contracts o w d hc xs m m' h
-  omega
+  exact Nat.lt_irrefl _ (Nat.lt_of_lt_of_le hbig this)
 
 /-- Selection that does not read retained conditions (a schedule of variation set
 by what is presented) always agrees, so the closed loop is shared exposure. -/
@@ -105,7 +106,10 @@ def lastMet : Org Nat Unit Bool Nat where
 theorem lastMet_contracts :
     ∀ m m' x a c, 2 * gap (lastMet.retain m x a c) (lastMet.retain m' x a c) ≤ gap m m' := by
   intro m m' x a c
-  simp [lastMet, gap]
+  show 2 * gap c c ≤ gap m m'
+  show 2 * (if c ≤ c then c - c else c - c) ≤ gap m m'
+  rw [if_pos (Nat.le_refl c), Nat.sub_self, Nat.mul_zero]
+  exact Nat.zero_le _
 
 theorem lastMet_amplifies : ∀ n : Nat,
     lastMet.run richWorld 2 (List.replicate (n + 1) ()) = 2 ∧
@@ -160,32 +164,31 @@ theorem greedy_amplifies : ∀ n : Nat,
       greedy.run richWorld { onTrue := 4, onFalse := 2, total := t } (List.replicate n ()) =
         { onTrue := 4, onFalse := 2, total := t + 4 * n } by
     intro n
-    refine ⟨by simpa using (h n 0).1, ?_⟩
+    refine ⟨?_, ?_⟩
+    · have h0 := (h n 0).1
+      rw [Nat.zero_add] at h0
+      exact h0
     cases n with
     | zero => rfl
     | succ k =>
       have hk := (h k 4).2
       show greedy.run richWorld (greedy.next richWorld highStart ()) (List.replicate k ()) = _
       have : greedy.next richWorld highStart () = { onTrue := 4, onFalse := 2, total := 4 } := by decide
-      rw [this, hk]
-      simp only [Nat.add_one_ne_zero, if_false, Est.mk.injEq, true_and]
-      omega
+      rw [this, hk, if_neg (fun e => Nat.noConfusion e), Nat.mul_succ, Nat.add_comm (4 * k) 4]
   intro n
   induction n with
-  | zero => intro t; exact ⟨by simp [Org.run], by simp [Org.run]⟩
+  | zero => intro t; exact ⟨rfl, rfl⟩
   | succ k ih =>
     intro t
     constructor
     · show greedy.run richWorld (greedy.next richWorld _ ()) (List.replicate k ()) = _
       have : greedy.next richWorld { onTrue := 1, onFalse := 2, total := t } () =
-          { onTrue := 1, onFalse := 2, total := t + 2 } := by
-        simp [Org.next, greedy, richWorld]
-      rw [this, (ih (t + 2)).1]; simp only [Est.mk.injEq, true_and]; omega
+          { onTrue := 1, onFalse := 2, total := t + 2 } := rfl
+      rw [this, (ih (t + 2)).1, Nat.mul_succ, Nat.add_comm (2 * k) 2, Nat.add_assoc]
     · show greedy.run richWorld (greedy.next richWorld _ ()) (List.replicate k ()) = _
       have : greedy.next richWorld { onTrue := 4, onFalse := 2, total := t } () =
-          { onTrue := 4, onFalse := 2, total := t + 4 } := by
-        simp [Org.next, greedy, richWorld]
-      rw [this, (ih (t + 4)).2]; simp only [Est.mk.injEq, true_and]; omega
+          { onTrue := 4, onFalse := 2, total := t + 4 } := rfl
+      rw [this, (ih (t + 4)).2, Nat.mul_succ, Nat.add_comm (4 * k) 4, Nat.add_assoc]
 
 /-- Variation by schedule removes the amplification. When what is presented sets
 which option is tried (`x = true` tries `true`), both estimators meet both
