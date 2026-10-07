@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T21:00:51.133738+00:00",
+  "checked_at_utc": "2026-10-07T09:31:22.824385+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -357,9 +357,18 @@
     {
       "module": "RevisingPort",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean",
-      "source_sha256": "94368c86bf519b903c5ce7d721514bef1c97e832ac6b722efde4726e3c1bdd1c",
+      "source_sha256": "d4560d3958152e8b02e37679ce20a450e4c27682450ee69ce3789313122f40f3",
       "exit_code": 0,
-      "audits": 58,
+      "audits": 61,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "RelationalCut",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RelationalCut.lean",
+      "source_sha256": "bb0a5dc53a5af363406f605be28208c97398e81875d9b84f4ea53a5d57a8f7b2",
+      "exit_code": 0,
+      "audits": 9,
       "nonempty_audits": {},
       "clean": true
     },
@@ -373,14 +382,15 @@
       "clean": true
     }
   ],
-  "total_audits": 780,
+  "total_audits": 792,
   "new_module_audits": {
     "ContactFormation": 26,
     "FormationClosure": 48,
     "AcquiredContact": 26,
     "PortValuation": 11,
     "ValuationInCore": 8,
-    "RevisingPort": 58,
+    "RevisingPort": 61,
+    "RelationalCut": 9,
     "CalibratedMacro": 4
   },
   "scope": "ContactFormation, FormationClosure, AcquiredContact, ValuationDevelopment, ClosedLoopValuation, PortValuation and ValuationInCore over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."

@@ -33,12 +33,14 @@
 
 **`EmbeddedEvaluation.lean`: evaluation as a relation inside the same process.** Rather than relating a "moral property" to a "natural base", evaluation is a record carried in the state and changed only by the process's own transitions. The record equals the whole-history relation of the same history (`record_tracks_whole_history`), so supervenience and identity are derived. Recording shares the process's continuation (`recording_enabled_iff`, `recording_feasible_iff`, `guided_recording_keeps_continuation`). The same law admits recordings in both orientations (`law_admits_opposite_recordings`): which evaluation forms is a question about formation within the history.
 
+**`RegeneratingPersistence.lean`: which evaluation persists, from the core alone.** An evaluating activity `e` persists from `s` when arbitrarily long actual continuations end where `e` is eventually realizable. With finitely many states, this holds exactly when `s` reaches a state the process regenerates by a nonempty return path and `e` is eventually realizable there (`persists_iff_regenerating_return`). Along the return path no activity's eventual realizability changes (`return_preserves_realizability`). The finite-list lemmas are proved in the module; nothing is imported beyond the core chain.
+
 ## What is not proved
 
 That moral properties supervene or explain observations; the premise itself and the choice of the whole scope; property identity beyond necessary coextension; a principled derivation of the protected scope of activities; any verdict when every option removes something. Processes, scopes and rankings are supplied inputs. Nothing here says which history occurs or that any orientation is good.
 
 ## Verify
 
-From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all twelve modules fresh in a temporary directory, rejects `sorry`, every axiom in new declarations (including `propext` and `Quot.sound`) and warnings, and requires every new theorem to be audited.
+From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all thirteen modules fresh in a temporary directory, rejects `sorry`, every axiom in new declarations (including `propext` and `Quot.sound`) and warnings, and requires every new theorem to be audited.
 
-The [receipt](verification.json) records **110 new audits, all with empty axiom reports**. The sources and receipt before the axiom removal are preserved in `verification-history/2026-10-06-before-axiom-removal/`.
+The [receipt](verification.json) records **120 new audits, all with empty axiom reports**. The sources and receipt before the axiom removal are preserved in `verification-history/2026-10-06-before-axiom-removal/`.
