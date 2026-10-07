@@ -1,0 +1,133 @@
+{
+  "checked_at_utc": "2026-10-07T13:31:26.096283+00:00",
+  "modules": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean": "9079796fff99dbf9ec6a6fda8091c15126a6b074f6661044d35d18e29d1e31e7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean": "bbd5bc2e9f473986e508d3341d924df46905660df9e423d897dcfef0ba71939f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean": "c8eb88aa005aba022950b8a4a21fad72dc1d8472ab136fc569da320305ce3a2a"
+  },
+  "checker_sha256": "f84278cbb934d091e5bf6edea1bf3cd770ca9995030710069c35f3f9553d7a9c",
+  "declared": 82,
+  "lint": "passed",
+  "reconstruction": {
+    "least_held": 114702,
+    "least_source": 20,
+    "final_held_at_least": 638974,
+    "rate_eleven_closure": "stopped",
+    "rate_nine_pairs_from_nine_failures": 10,
+    "rates_with_one_pair_per_failure": [
+      10
+    ]
+  },
+  "source_binding": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910"
+  },
+  "lean": {
+    "status": "passed",
+    "toolchain": "leanprover/lean4:v4.29.1",
+    "version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "modules": [
+      {
+        "module": "GenerativeCore",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "NativePacketProcess",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+        "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "InquirySufficiency",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+        "source_sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "AttainableQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+        "source_sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+        "source_sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketAdmissibility",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+        "source_sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PacketLawDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+        "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "ContactFormation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
+        "source_sha256": "e94ede1ad6ce5cc98b9947a819dfa99918fa2508bf3da4616c845d73cd0a3032",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "FormationClosure",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
+        "source_sha256": "c4ce285254e7a76f2b0bb3a371e590eee7379b84d072df0f1a402a177236092d",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "RecoveryQuantum",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean",
+        "source_sha256": "9079796fff99dbf9ec6a6fda8091c15126a6b074f6661044d35d18e29d1e31e7",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhaseCycleDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
+        "source_sha256": "327cfcd02d8f7deaf4c4bc45a95c12888c6e1241362ed14806dc5781ce32f94d",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhasePeriodSelection",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean",
+        "source_sha256": "832ab5f036cb62a6b475620e899b870da615da40e58bdd2004efb35b0e62bd32",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "FormationDraw",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean",
+        "source_sha256": "bbd5bc2e9f473986e508d3341d924df46905660df9e423d897dcfef0ba71939f",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "StartingStock",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean",
+        "source_sha256": "c8eb88aa005aba022950b8a4a21fad72dc1d8472ab136fc569da320305ce3a2a",
+        "exit_code": 0,
+        "clean": true
+      }
+    ],
+    "audits": 82,
+    "empty_audits": 82,
+    "nonempty": []
+  },
+  "scope": "The Python reconstruction is independent of the Lean sources and is not a kernel proof. Lean statements count as verified only when lean.status is passed. No existing module is changed."
+}
