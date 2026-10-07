@@ -18,8 +18,8 @@ From [recorded claims](RECORDED-CLAIMS-INTEGRATION.md) and
 2. At a full tie, a lottery that treats centers alike gives each tied center
    the same chance, possibly mixed with a chance of withholding
    (`full_tie_equal_weights`, `full_tie_open_uniform`).
-3. Kept support can outlast the wait only when its keeper has a
-   self-renewing population (`renewing_keeper_stays_live`). Otherwise there
+3. Kept support can outlast the wait only when the organized form in which it
+   persists has a self-renewing population (`renewing_holder_stays_live`). Otherwise there
    is an explicit deadline (`waiting_without_renewal_loses_support`).
 4. Any record entry that distinguishes the centers lets an alike rule serve.
    Which entries are relevant is not settled; with unequal claims, either

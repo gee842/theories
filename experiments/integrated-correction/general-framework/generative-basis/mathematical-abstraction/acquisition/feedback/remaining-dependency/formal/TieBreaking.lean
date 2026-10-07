@@ -41,14 +41,14 @@ structure Chances (n : Nat) where
 abbrev Lottery (n : Nat) := Record n → Chances n
 
 def LotteryAlike {n : Nat} (lot : Lottery n) : Prop :=
-  ∀ r a b, (∀ i, (lot (relabel r a b)).serve i = (lot r).serve (transpose a b i)) ∧
-    (lot (relabel r a b)).withhold = (lot r).withhold
+  ∀ r r' a b, (∀ k, r' k = r (transpose a b k)) →
+    (∀ i, (lot r').serve i = (lot r).serve (transpose a b i)) ∧
+      (lot r').withhold = (lot r).withhold
 
 theorem tied_equal_weight {n : Nat} (lot : Lottery n) (alike : LotteryAlike lot)
     (r : Record n) (a b : Fin n) (tie : r a = r b) : (lot r).serve a = (lot r).serve b := by
-  have h := (alike r a b).1 a
-  rw [relabel_of_tie r a b tie] at h
-  rw [h]; simp [transpose]
+  have h := (alike r r a b (relabel_of_tie r a b tie)).1 a
+  rw [h, transpose_left]
 
 theorem full_tie_equal_weights {n : Nat} (lot : Lottery n) (alike : LotteryAlike lot)
     (r : Record n) (tied : ∀ i j, r i = r j) (i j : Fin n) :
@@ -69,7 +69,7 @@ theorem full_tie_open_uniform {n : Nat} (lot : Lottery n) (alike : LotteryAlike 
 def uniform (n : Nat) : Lottery n := fun _ => ⟨fun _ => 1, 0⟩
 
 theorem uniform_alike (n : Nat) : LotteryAlike (uniform n) :=
-  fun _ _ _ => ⟨fun _ => rfl, rfl⟩
+  fun _ _ _ _ _ => ⟨fun _ => rfl, rfl⟩
 
 /-- A deterministic rule read as a lottery: all weight on its choice. -/
 def pointMass {n : Nat} (rule : Rule n) : Lottery n := fun r =>
@@ -82,14 +82,11 @@ theorem point_mass_not_alike_at_tie {n : Nat} (rule : Rule n)
   | none => rfl
   | some k =>
     exfalso
-    have other : ∃ j : Fin n, j ≠ k := by
-      by_cases h0 : k.val = 0
-      · exact ⟨⟨1, by omega⟩, fun e => by have := congrArg Fin.val e; simp at this; omega⟩
-      · exact ⟨⟨0, by omega⟩, fun e => by have := congrArg Fin.val e; simp at this; omega⟩
-    obtain ⟨j, hj⟩ := other
-    have h := full_tie_equal_weights _ alike r tied j k
-    simp [pointMass, hk] at h
-    exact hj h.symm
+    obtain ⟨j, hj⟩ := fin_other two k
+    have h : (if rule r = some j then 1 else 0) = (if rule r = some k then 1 else 0) :=
+      full_tie_equal_weights _ alike r tied j k
+    rw [hk, if_neg (fun e => hj (Option.some.inj e).symm), if_pos rfl] at h
+    exact nomatch h
 
 end TieBreaking
 

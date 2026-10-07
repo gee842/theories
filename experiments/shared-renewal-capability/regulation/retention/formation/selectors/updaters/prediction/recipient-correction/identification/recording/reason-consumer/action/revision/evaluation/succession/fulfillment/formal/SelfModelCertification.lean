@@ -4,8 +4,10 @@ import FulfillmentStatus
 Certifying fulfillment from records together with the evaluator's own update
 law, as prediction P4 of the fulfillment continuation required.
 
-Two opportunities: the first probe and the second query. A world fixes the
-law at each opportunity (which action captures) and the first action. The
+Two opportunities: the first probe and the second query. A course of the
+history fixes the law at each opportunity (which action captures) and the
+first action. The action and the law it meets are two relations within one
+history, not an evaluator set against a world. The
 second action follows the evaluator's own update law: switch after a recorded
 miss, otherwise keep the action. This follows the unknown-status rows of the
 accepted identification update, abstracted to one candidate bit; a qualified
@@ -19,7 +21,7 @@ blocked guard, exhausted support). In that case nothing was delivered there,
 and the self-model reading below would overcount.
 
 Receipt counting quantifies over every delivery history faithful to the
-records. Self-model certification quantifies only over worlds that also obey
+records. Self-model certification quantifies only over courses that also obey
 the update law and, when assumed, stationarity (the same law at both
 opportunities). Results:
 
@@ -28,7 +30,7 @@ opportunities). Results:
 * it is strictly stronger: with the first record missing and the second
   positive, receipt counting leaves a two-delivery claim unknown, while the
   self-model certifies it under stationarity (`self_model_certifies_more`);
-* the gain rests on stationarity: without it, a world with a changed law is
+* the gain rests on stationarity: without it, a course with a changed law is
   consistent and the claim stays uncertified (`needs_stationarity`).
 
 The premises (the update law is the evaluator's actual law; stationarity;
@@ -38,7 +40,7 @@ certification can be wrong.
 namespace SelfModelCertification
 open FulfillmentStatus
 
-structure World where
+structure Course where
   law0 : Bool
   law1 : Bool
   act0 : Bool
@@ -47,14 +49,14 @@ structure World where
 def nextAction (act0 : Bool) (r0 : Option Bool) : Bool :=
   if r0 = some false then !act0 else act0
 
-def captures (w : World) (r0 : Option Bool) : List Bool :=
+def captures (w : Course) (r0 : Option Bool) : List Bool :=
   [w.act0 == w.law0, nextAction w.act0 r0 == w.law1]
 
 def ReceiptCertified (rs : List (Option Bool)) (k : Nat) : Prop :=
   ∀ xs, Faithful rs xs → k ≤ delivered xs
 
 def SelfCertified (stationary : Bool) (r0 r1 : Option Bool) (k : Nat) : Prop :=
-  ∀ w : World, (stationary = true → w.law0 = w.law1) →
+  ∀ w : Course, (stationary = true → w.law0 = w.law1) →
     Faithful [r0, r1] (captures w r0) → k ≤ delivered (captures w r0)
 
 theorem receipt_certified_implies_self (stationary : Bool) (r0 r1 : Option Bool) (k : Nat)
@@ -70,22 +72,22 @@ theorem self_model_certifies_more :
     status [none, some true] 2 = .unknown ∧ ¬ ReceiptCertified [none, some true] 2 ∧
       SelfCertified true none (some true) 2 := by
   refine ⟨rfl, fun h => ?_, ?_⟩
-  · have := h [false, true] (by simp [Faithful])
-    simp [delivered] at this
+  · have := h [false, true] ⟨rfl, trivial⟩
+    exact absurd this (by decide)
   · intro ⟨l0, l1, a0⟩ stat f
     have hs : l0 = l1 := stat rfl
     subst hs
-    cases l0 <;> cases a0 <;> simp_all [captures, nextAction, Faithful, delivered]
+    cases l0 <;> cases a0 <;> first | decide | exact absurd f.1 (by decide)
 
 /-- Without stationarity a changed law is consistent with the same records. -/
 theorem needs_stationarity : ¬ SelfCertified false none (some true) 2 := by
   intro h
-  have := h ⟨false, true, true⟩ (by simp) (by simp [captures, nextAction, Faithful])
-  simp [captures, nextAction, delivered] at this
+  have := h ⟨false, true, true⟩ (fun h => nomatch h) ⟨rfl, trivial⟩
+  exact absurd this (by decide)
 
 end SelfModelCertification
 
-#print axioms SelfModelCertification.World
+#print axioms SelfModelCertification.Course
 #print axioms SelfModelCertification.nextAction
 #print axioms SelfModelCertification.captures
 #print axioms SelfModelCertification.ReceiptCertified

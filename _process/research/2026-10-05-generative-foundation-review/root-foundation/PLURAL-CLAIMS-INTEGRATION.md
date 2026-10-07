@@ -86,23 +86,23 @@ removes the perishability premise of `RecordedClaims` and imports the
 instead of re-proving it.
 
 - Without a further input, an alike rule stays at the symmetric open record
-  forever (`alike_withholds_forever`). Keeping support does not break the tie.
-  It can only buy time for an input.
-- If the keeper's law has no self-renewing population, there is an explicit
-  time, fixed by the initial reserve and tokens, by which the keeper is no
-  longer live while both claims are still unmet
-  (`waiting_without_renewal_loses_support`). Withholding is then deferral
-  until that deadline and foreclosure after it.
-- If the law has a self-renewing population, some execution of the keeper
-  stays live at every time (`renewing_keeper_stays_live`). Under the combined
-  hypotheses of the renewal–closure theorem, lasting liveness occurs exactly
-  in this case.
+  forever (`alike_withholds_forever`). Persisting support does not break the
+  tie. It can only hold time open for an input.
+- If the law of the organized form in which support persists has no
+  self-renewing population, there is an explicit time, fixed by the history's
+  start, by which that form is no longer live while both claims are still
+  unmet (`waiting_without_renewal_loses_support`).
+- If the law has a self-renewing population, some history stays live at every
+  time (`renewing_holder_stays_live`). With finitely many kinds, the
+  renewal–closure theorem says lasting liveness occurs exactly in this case.
 
-Supplied premises: kept support can be delivered exactly while the keeping
-organization is live, and one episode is one keeper tick. The record dynamics
-and the keeper's dynamics are set side by side, not composed: no theorem draws
-deliveries from the keeper's execution. Claims may have their own deadlines;
-waiting past those forecloses whatever the keeper does.
+The support, the claims and the record are differentiations of one history,
+not a system and what it uses; the renewal law is a local articulation of the
+same process. Supplied premises: persisting support can meet a claim exactly
+while its organized form is live, and one episode is one tick of the law. The
+record's course and the organized form's course are set side by side, not
+composed: no theorem draws a delivery from that form's tokens. Claims may have
+their own deadlines; waiting past those forecloses whatever the support does.
 
 ## 5. Equal chances at a tie
 
@@ -126,7 +126,7 @@ a recorded fact, is argued, not proved, in
 Structure and records settle every choice among centers except ties. Ties
 admit only equal chances (possibly mixed with withholding) among inputs that
 treat centers alike. Kept support can outlast the wait for a better input only
-under a self-renewing keeper. Once any order is supplied, time records carry it
+when its organized form can renew itself. Once any order is supplied, time records carry it
 forward. What remains open is which further facts may legitimately
 distinguish centers (need, prior arrival, agreement), and why treating
 centers alike is owed at all. These are philosophical questions here.
@@ -141,15 +141,19 @@ centers alike is owed at all. These are philosophical questions here.
 ## 7. Build and audit
 
 Built with the official Lean 4.29.1 Linux release, plain `lean -o` per
-module, in dependency order. `KeptSupport` was built together with
-`GenerativeCore`, `Depletion`, `SupportNecessity`, the five renewal modules and
-`RecordedClaims`; `SelfModelCertification` with `ContinuationScope` and
-`FulfillmentStatus`. All exited 0.
+module, in dependency order, together with the renewal, valuation-development,
+naturalism and sufficiency packages; all exited 0. On 7 October the proofs
+were rewritten so that, under Ren's rule, they use no axioms at all.
 
-| Module | Declarations | Axioms used | Audit |
-|---|---:|---|---|
-| `CouplingOptima` | 12 | `propext`, `Quot.sound`; `Classical.choice` in four theorems | [output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/inquiry-warrant/coupling-optima-audit-output.txt) |
-| `SelfModelCertification` | 9 | `propext`, `Quot.sound`; `Classical.choice` via the existing `fulfilled_iff` | [output](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/self-model-audit-output.txt) |
-| `PluralRecords` | 40 | `propext`, `Quot.sound` | [output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/inquiry-warrant/plural-records-audit-output.txt) |
-| `TieBreaking` | 9 | `propext`, `Quot.sound` | [output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/inquiry-warrant/tie-breaking-audit-output.txt) |
-| `KeptSupport` | 6 | `propext`, `Quot.sound` | [output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/inquiry-warrant/kept-support-audit-output.txt) |
+| Module | Audited | Empty axiom report |
+|---|---:|---:|
+| `CouplingOptima` | 28 | 28 |
+| `SelfModelCertification` | 9 | 9 |
+| `PluralRecords` | 49 | 49 |
+| `TieBreaking` | 9 | 9 |
+| `KeptSupport` | 6 | 4 |
+
+The two `KeptSupport` exceptions inherit `propext` and `Quot.sound` only from
+the renewal theorems they cite, which the renewal thread is rewriting. The
+statement changes this required are listed in the
+[build record](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/inquiry-warrant/BUILD.md#addendum-7-october-2026-empty-axiom-reports).

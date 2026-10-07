@@ -46,10 +46,27 @@ abbrev Rule (n : Nat) := Record n → Option (Fin n)
 def transpose {n : Nat} (a b k : Fin n) : Fin n :=
   if k = a then b else if k = b then a else k
 
+theorem transpose_left {n : Nat} (a b : Fin n) : transpose a b a = b := by
+  unfold transpose; rw [if_pos rfl]
+
+theorem transpose_right {n : Nat} (a b : Fin n) : transpose a b b = a := by
+  unfold transpose
+  match decEq b a with
+  | isTrue h => rw [if_pos h]; exact h
+  | isFalse h => rw [if_neg h, if_pos rfl]
+
+theorem transpose_other {n : Nat} (a b k : Fin n) (ha : k ≠ a) (hb : k ≠ b) :
+    transpose a b k = k := by
+  unfold transpose; rw [if_neg ha, if_neg hb]
+
 theorem transpose_transpose {n : Nat} (a b k : Fin n) :
     transpose a b (transpose a b k) = k := by
-  unfold transpose
-  by_cases h1 : k = a <;> by_cases h2 : k = b <;> simp_all
+  match decEq k a with
+  | isTrue h => rw [h, transpose_left, transpose_right]
+  | isFalse ha =>
+    match decEq k b with
+    | isTrue h => rw [h, transpose_right, transpose_left]
+    | isFalse hb => rw [transpose_other a b k ha hb, transpose_other a b k ha hb]
 
 theorem transpose_inj {n : Nat} (a b : Fin n) {x y : Fin n}
     (h : transpose a b x = transpose a b y) : x = y := by
@@ -59,26 +76,41 @@ theorem transpose_inj {n : Nat} (a b : Fin n) {x y : Fin n}
 def relabel {n : Nat} (r : Record n) (a b : Fin n) : Record n :=
   fun k => r (transpose a b k)
 
+/-- Exchanging two centers' entries exchanges the rule's output. Stated
+pointwise: any record whose entries are another's relabeled; this needs no
+equality of functions. -/
 def TreatsAlike {n : Nat} (rule : Rule n) : Prop :=
-  ∀ r a b, rule (relabel r a b) = (rule r).map (transpose a b)
+  ∀ r r' a b, (∀ k, r' k = r (transpose a b k)) → rule r' = (rule r).map (transpose a b)
 
-/-- Exchanging two centers with equal entries leaves the record unchanged. -/
+/-- Exchanging two centers with equal entries leaves every entry unchanged. -/
 theorem relabel_of_tie {n : Nat} (r : Record n) (j k : Fin n) (tie : r j = r k) :
-    relabel r j k = r := by
-  funext x
-  unfold relabel transpose
-  by_cases h1 : x = j <;> by_cases h2 : x = k <;> simp_all
+    ∀ x, r x = r (transpose j k x) := by
+  intro x
+  match decEq x j with
+  | isTrue h => rw [h, transpose_left]; exact tie
+  | isFalse hj =>
+    match decEq x k with
+    | isTrue h => rw [h, transpose_right]; exact tie.symm
+    | isFalse hk => rw [transpose_other j k x hj hk]
 
 /-- An alike rule never serves a center whose entry another center shares. -/
 theorem tied_not_served {n : Nat} (rule : Rule n) (alike : TreatsAlike rule)
     (r : Record n) (k j : Fin n) (hjk : j ≠ k) (tie : r j = r k) : rule r ≠ some k := by
   intro hk
-  have hr := relabel_of_tie r j k tie
-  have h := alike r j k
-  rw [hr, hk] at h
-  have hkk : transpose j k k = j := by simp [transpose, Ne.symm hjk]
+  have h := alike r r j k (relabel_of_tie r j k tie)
+  rw [hk] at h
+  have hkk : transpose j k k = j := transpose_right j k
   rw [Option.map_some, hkk] at h
   exact hjk (Option.some.inj h).symm
+
+theorem one_ne_zero' : (1 : Nat) ≠ 0 := by decide
+
+theorem fin_other {n : Nat} (two : 2 ≤ n) (k : Fin n) : ∃ j : Fin n, j ≠ k :=
+  match Nat.decEq k.val 0 with
+  | isTrue h0 => ⟨⟨1, Nat.lt_of_lt_of_le (by decide) two⟩, fun e =>
+      one_ne_zero' ((congrArg Fin.val e).trans h0)⟩
+  | isFalse h0 => ⟨⟨0, Nat.lt_of_lt_of_le (by decide) two⟩, fun e =>
+      h0 (congrArg Fin.val e).symm⟩
 
 /-- With at least two centers and all entries equal, an alike rule withholds. -/
 theorem all_tied_forces_withholding {n : Nat} (rule : Rule n) (alike : TreatsAlike rule)
@@ -87,24 +119,70 @@ theorem all_tied_forces_withholding {n : Nat} (rule : Rule n) (alike : TreatsAli
   | none => rfl
   | some k =>
     exfalso
-    by_cases h0 : k.val = 0
-    · exact tied_not_served rule alike r k ⟨1, by omega⟩
-        (fun e => by have := congrArg Fin.val e; simp at this; omega) (tied _ k) hk
-    · exact tied_not_served rule alike r k ⟨0, by omega⟩
-        (fun e => by have := congrArg Fin.val e; simp at this; omega) (tied _ k) hk
+    obtain ⟨j, hj⟩ := fin_other two k
+    exact tied_not_served rule alike r k j hj (tied _ k) hk
 
 /-! A rule built from a predicate that holds of at most one center. -/
 
 def pick {n : Nat} (p : Fin n → Prop) [DecidablePred p] : Option (Fin n) :=
   (List.finRange n).find? (fun i => decide (p i))
 
+theorem find?_some_true {α : Type} (q : α → Bool) :
+    ∀ (l : List α) {x : α}, l.find? q = some x → q x = true
+  | [], x, h => by
+    have h' : (none : Option α) = some x := h
+    exact nomatch h'
+  | a :: as, x, h => by
+    rw [List.find?_cons] at h
+    cases hq : q a with
+    | true =>
+      rw [hq] at h
+      have h' : some a = some x := h
+      rw [← Option.some.inj h']; exact hq
+    | false =>
+      rw [hq] at h
+      exact find?_some_true q as h
+
+theorem find?_none_false {α : Type} (q : α → Bool) :
+    ∀ (l : List α), l.find? q = none → ∀ y, y ∈ l → q y = false
+  | [], _, _, hy => nomatch hy
+  | a :: as, h, y, hy => by
+    rw [List.find?_cons] at h
+    cases hq : q a with
+    | true =>
+      rw [hq] at h
+      have h' : some a = none := h
+      exact nomatch h'
+    | false =>
+      rw [hq] at h
+      cases hy with
+      | head => exact hq
+      | tail _ hy' => exact find?_none_false q as h y hy'
+
+theorem mem_finRange_loop {n : Nat} : ∀ (i : Nat) (h : i ≤ n) (x : List (Fin n)),
+    (∀ y, y ∈ x → y ∈ Fin.foldr.loop n (fun j acc => j :: acc) i h x) ∧
+    (∀ k : Fin n, k.val < i → k ∈ Fin.foldr.loop n (fun j acc => j :: acc) i h x)
+  | 0, _, _ => ⟨fun _ hy => hy, fun _ hk => absurd hk (Nat.not_lt_zero _)⟩
+  | i + 1, h, x => by
+    have ih := mem_finRange_loop i (Nat.le_of_lt h) (⟨i, h⟩ :: x)
+    refine ⟨fun y hy => ih.1 y (List.Mem.tail _ hy), fun k hk => ?_⟩
+    match Nat.lt_or_ge k.val i with
+    | .inl lt => exact ih.2 k lt
+    | .inr ge =>
+      have e : k = ⟨i, h⟩ := Fin.ext (Nat.le_antisymm (Nat.le_of_lt_succ hk) ge)
+      rw [e]; exact ih.1 _ (List.Mem.head _)
+
+theorem mem_finRange' {n : Nat} (i : Fin n) : i ∈ List.finRange n :=
+  (mem_finRange_loop n (Nat.le_refl n) []).2 i i.isLt
+
 theorem pick_some {n : Nat} (p : Fin n → Prop) [DecidablePred p] {i : Fin n}
-    (h : pick p = some i) : p i := by
-  have := List.find?_some h; simpa using this
+    (h : pick p = some i) : p i :=
+  of_decide_eq_true (find?_some_true (fun i => decide (p i)) (List.finRange n) h)
 
 theorem pick_none {n : Nat} (p : Fin n → Prop) [DecidablePred p]
-    (h : pick p = none) (i : Fin n) : ¬ p i := by
-  have := List.find?_eq_none.mp h i (List.mem_finRange i); simpa using this
+    (h : pick p = none) (i : Fin n) : ¬ p i :=
+  of_decide_eq_false (find?_none_false (fun i => decide (p i)) (List.finRange n) h i
+    (mem_finRange' i))
 
 theorem pick_unique {n : Nat} (p : Fin n → Prop) [DecidablePred p]
     (uniq : ∀ i j, p i → p j → i = j) {i : Fin n} (hi : p i) : pick p = some i := by
@@ -116,20 +194,21 @@ theorem pick_unique {n : Nat} (p : Fin n → Prop) [DecidablePred p]
 `P`, the rule `pick (P r)` treats the centers alike. -/
 theorem pick_alike {n : Nat} (P : Record n → Fin n → Prop) [∀ r, DecidablePred (P r)]
     (uniq : ∀ r i j, P r i → P r j → i = j)
-    (equi : ∀ r a b i, P (relabel r a b) i ↔ P r (transpose a b i)) :
+    (equi : ∀ r r' a b, (∀ k, r' k = r (transpose a b k)) →
+      ∀ i, P r' i ↔ P r (transpose a b i)) :
     TreatsAlike (fun r => pick (P r)) := by
-  intro r a b
-  show pick (P (relabel r a b)) = (pick (P r)).map (transpose a b)
+  intro r r' a b hr
+  show pick (P r') = (pick (P r)).map (transpose a b)
   cases h : pick (P r) with
   | some i =>
     have hi := pick_some (P r) h
     apply pick_unique _ (uniq _)
-    rw [equi, transpose_transpose]; exact hi
+    exact (equi r r' a b hr _).mpr (by rw [transpose_transpose]; exact hi)
   | none =>
-    cases h' : pick (P (relabel r a b)) with
+    cases h' : pick (P r') with
     | none => rfl
     | some i =>
-      exact absurd ((equi r a b i).mp (pick_some _ h')) (pick_none (P r) h _)
+      exact absurd ((equi r r' a b hr i).mp (pick_some _ h')) (pick_none (P r) h _)
 
 /-- The centers holding a given entry `v` alone. -/
 def Alone {n : Nat} (v : Nat) (r : Record n) (i : Fin n) : Prop :=
@@ -142,22 +221,23 @@ theorem alone_alike {n : Nat} (v : Nat) : TreatsAlike (fun r : Record n => pick 
   apply pick_alike
   · intro r i j hi hj
     exact Decidable.byContradiction fun h => hj.2 i h hi.1
-  · intro r a b i
-    simp only [Alone, relabel]
+  · intro r r' a b hr i
     constructor
-    · rintro ⟨h1, h2⟩
-      refine ⟨h1, fun j hj => ?_⟩
+    · intro ⟨h1, h2⟩
+      refine ⟨(hr i).symm.trans h1, fun j hj => ?_⟩
       have := h2 (transpose a b j) (fun e => hj (by rw [← e, transpose_transpose]))
-      rwa [transpose_transpose] at this
-    · rintro ⟨h1, h2⟩
-      exact ⟨h1, fun j hj => h2 _ (fun e => hj (transpose_inj a b e))⟩
+      have e2 : r' (transpose a b j) = r j := by rw [hr, transpose_transpose]
+      rw [e2] at this; exact this
+    · intro ⟨h1, h2⟩
+      exact ⟨(hr i).trans h1, fun j hj e =>
+        h2 _ (fun e' => hj (transpose_inj a b e')) ((hr j).symm.trans e)⟩
 
 /-- An alike rule can serve center `k` exactly when no other center shares
 its entry. -/
 theorem servable_iff_untied {n : Nat} (r : Record n) (k : Fin n) :
     (∃ rule : Rule n, TreatsAlike rule ∧ rule r = some k) ↔ ∀ j, j ≠ k → r j ≠ r k := by
   constructor
-  · rintro ⟨rule, alike, hk⟩ j hj tie
+  · intro ⟨rule, alike, hk⟩ j hj tie
     exact tied_not_served rule alike r k j hj tie hk
   · intro h
     exact ⟨_, alone_alike (r k), pick_unique _ (fun i j hi hj =>
@@ -174,7 +254,7 @@ def ServesOpenClaim {n : Nat} (r : Record n) : Option (Fin n) → Prop
   | some k => 0 < r k ∨ ∀ j, r j = 0
 
 theorem withholding_alike {n : Nat} : TreatsAlike (fun _ : Record n => none) := by
-  intro _ _ _; rfl
+  intro _ _ _ _ _; rfl
 
 /-- A record admits an alike, nonforeclosing choice exactly when all claims
 are fulfilled or some open claim differs in size from every other claim. -/
@@ -182,33 +262,38 @@ theorem alike_nonforeclosing_iff {n : Nat} (r : Record n) :
     (∃ rule : Rule n, TreatsAlike rule ∧ ServesOpenClaim r (rule r)) ↔
       (∀ j, r j = 0) ∨ ∃ k, 0 < r k ∧ ∀ j, j ≠ k → r j ≠ r k := by
   constructor
-  · rintro ⟨rule, alike, nf⟩
+  · intro ⟨rule, alike, nf⟩
     cases hk : rule r with
     | none => rw [hk] at nf; exact .inl nf
     | some k =>
       rw [hk] at nf
-      rcases nf with pos | all
-      · exact .inr ⟨k, pos, (servable_iff_untied r k).mp ⟨rule, alike, hk⟩⟩
-      · exact .inl all
-  · rintro (all | ⟨k, pos, untied⟩)
-    · exact ⟨_, withholding_alike, all⟩
-    · obtain ⟨rule, alike, hk⟩ := (servable_iff_untied r k).mpr untied
+      cases nf with
+      | inl pos => exact .inr ⟨k, pos, (servable_iff_untied r k).mp ⟨rule, alike, hk⟩⟩
+      | inr all => exact .inl all
+  · intro hyp
+    cases hyp with
+    | inl all => exact ⟨_, withholding_alike, all⟩
+    | inr hk =>
+      obtain ⟨k, pos, untied⟩ := hk
+      obtain ⟨rule, alike, hk⟩ := (servable_iff_untied r k).mpr untied
       exact ⟨rule, alike, by rw [hk]; exact .inl pos⟩
 
 /-- Unequal claims let structure choose, but not which: with open claims of
 sizes 1 and 2, serving either center is alike and nonforeclosing. -/
 theorem unequal_claims_leave_priority_open :
     let r : Record 2 := fun i => i.val + 1
-    (∃ rule : Rule 2, TreatsAlike rule ∧ rule r = some 0 ∧ ServesOpenClaim r (rule r)) ∧
-    (∃ rule : Rule 2, TreatsAlike rule ∧ rule r = some 1 ∧ ServesOpenClaim r (rule r)) := by
+    (∃ rule : Rule 2, TreatsAlike rule ∧ rule r = some ⟨0, by decide⟩ ∧
+      ServesOpenClaim r (rule r)) ∧
+    (∃ rule : Rule 2, TreatsAlike rule ∧ rule r = some ⟨1, by decide⟩ ∧
+      ServesOpenClaim r (rule r)) := by
   intro r
-  have s : ∀ k : Fin 2, ∃ rule : Rule 2, TreatsAlike rule ∧ rule r = some k := fun k =>
-    (servable_iff_untied r k).mpr (by
-      intro j hj e; apply hj; apply Fin.ext; simp [r] at e; exact e)
-  obtain ⟨r0, a0, h0⟩ := s 0
-  obtain ⟨r1, a1, h1⟩ := s 1
-  exact ⟨⟨r0, a0, h0, by rw [h0]; exact .inl (by simp [r])⟩,
-    ⟨r1, a1, h1, by rw [h1]; exact .inl (by simp [r])⟩⟩
+  have s : ∀ k : Fin 2, pick (Alone (r k) r) = some k := fun k =>
+    pick_unique _ (fun i j hi hj => Decidable.byContradiction fun e => hj.2 i e hi.1)
+      ⟨rfl, fun j hj e => hj (Fin.ext (Nat.succ.inj e))⟩
+  exact ⟨⟨_, alone_alike (r ⟨0, by decide⟩), s ⟨0, by decide⟩,
+      by rw [s ⟨0, by decide⟩]; exact .inl (Nat.zero_lt_succ _)⟩,
+    ⟨_, alone_alike (r ⟨1, by decide⟩), s ⟨1, by decide⟩,
+      by rw [s ⟨1, by decide⟩]; exact .inl (Nat.zero_lt_succ _)⟩⟩
 
 /-! Renewing claims. The entry is the time a center was last served. Each
 step serves the least recently served center and records the current time. -/
@@ -227,14 +312,15 @@ theorem leastRecent_unique {n : Nat} (r : Record n) (i j : Fin n)
 
 theorem leastRecent_alike {n : Nat} : TreatsAlike (@leastRecent n) := by
   apply pick_alike _ leastRecent_unique
-  intro r a b i
-  simp only [LeastRecent, relabel]
+  intro r r' a b hr i
   constructor
   · intro h j hj
     have := h (transpose a b j) (fun e => hj (by rw [← e, transpose_transpose]))
-    rwa [transpose_transpose] at this
+    have e2 : r' (transpose a b j) = r j := by rw [hr, transpose_transpose]
+    rw [e2, hr i] at this; exact this
   · intro h j hj
-    exact h _ (fun e => hj (transpose_inj a b e))
+    have := h _ (fun e => hj (transpose_inj a b e))
+    rw [hr i, hr j]; exact this
 
 def Injective {n : Nat} (r : Record n) : Prop := ∀ i j, r i = r j → i = j
 
@@ -242,14 +328,14 @@ theorem exists_min {n : Nat} (r : Record n) (i0 : Fin n) : ∃ i, ∀ j, r i ≤
   suffices ∀ v, (∃ i, r i ≤ v) → ∃ i, ∀ j, r i ≤ r j from this _ ⟨i0, Nat.le_refl _⟩
   intro v
   induction v with
-  | zero => rintro ⟨i, hi⟩; exact ⟨i, fun j => by omega⟩
+  | zero => intro ⟨i, hi⟩; exact ⟨i, fun j => Nat.le_trans hi (Nat.zero_le _)⟩
   | succ v ih =>
-    rintro ⟨i, hi⟩
-    by_cases h : ∃ i, r i ≤ v
-    · exact ih h
-    · exact ⟨i, fun j => by
-        have := fun k => Nat.lt_of_not_le (fun hk => h ⟨k, hk⟩)
-        have := this j; omega⟩
+    intro ⟨i, hi⟩
+    cases h : pick (fun k => r k ≤ v) with
+    | some k => exact ih ⟨k, pick_some _ h⟩
+    | none =>
+      exact ⟨i, fun j => Nat.le_trans hi
+        (Nat.succ_le_of_lt (Nat.lt_of_not_le (pick_none _ h j)))⟩
 
 theorem leastRecent_serves {n : Nat} (r : Record n) (inj : Injective r) (i0 : Fin n) :
     ∃ k, leastRecent r = some k := by
@@ -277,24 +363,32 @@ variable {n : Nat} (rule : Rule n) (r0 : Record n) (t0 : Nat)
 theorem run_succ_apply (s : Nat) (j : Fin n) :
     run rule r0 t0 (s + 1) j =
       if served rule r0 t0 s = some j then t0 + s else run rule r0 t0 s j := by
-  simp only [run, step, served]
-  rcases Option.eq_none_or_eq_some (rule (run rule r0 t0 s)) with h0 | ⟨k, hk⟩
-  · simp [h0]
-  · simp only [hk, Option.some.injEq]
-    by_cases h : j = k
-    · subst h; simp
-    · simp [h, Ne.symm h]
+  show step rule (run rule r0 t0 s) (t0 + s) j =
+    if rule (run rule r0 t0 s) = some j then t0 + s else run rule r0 t0 s j
+  unfold step
+  cases h : rule (run rule r0 t0 s) with
+  | none => exact (if_neg (fun e => nomatch e)).symm
+  | some k =>
+    show (if j = k then t0 + s else run rule r0 t0 s j) = _
+    match decEq j k with
+    | isTrue hjk => rw [if_pos hjk, if_pos (congrArg some hjk.symm)]
+    | isFalse hjk => rw [if_neg hjk, if_neg (fun e => hjk (Option.some.inj e).symm)]
 
 theorem run_lt (fresh : ∀ j, r0 j < t0) (s : Nat) (j : Fin n) : run rule r0 t0 s j < t0 + s := by
   induction s with
-  | zero => simpa using fresh j
-  | succ s ih => rw [run_succ_apply]; split <;> omega
+  | zero => exact fresh j
+  | succ s ih =>
+    rw [run_succ_apply]
+    match decEq (served rule r0 t0 s) (some j) with
+    | isTrue h => rw [if_pos h]; exact Nat.lt_add_one _
+    | isFalse h => rw [if_neg h]; exact Nat.lt_succ_of_lt ih
 
 theorem run_mono (fresh : ∀ j, r0 j < t0) (s : Nat) (j : Fin n) :
     run rule r0 t0 s j ≤ run rule r0 t0 (s + 1) j := by
-  rw [run_succ_apply]; split
-  · exact Nat.le_of_lt (run_lt rule r0 t0 fresh s j)
-  · exact Nat.le_refl _
+  rw [run_succ_apply]
+  match decEq (served rule r0 t0 s) (some j) with
+  | isTrue h => rw [if_pos h]; exact Nat.le_of_lt (run_lt rule r0 t0 fresh s j)
+  | isFalse h => rw [if_neg h]; exact Nat.le_refl _
 
 theorem run_mono_le (fresh : ∀ j, r0 j < t0) (s d : Nat) (j : Fin n) :
     run rule r0 t0 s j ≤ run rule r0 t0 (s + d) j := by
@@ -311,10 +405,10 @@ theorem recent_entry_was_served (fresh : ∀ j, r0 j < t0) (s d : Nat) (j : Fin 
   | succ d ih =>
     rw [← Nat.add_assoc, run_succ_apply] at h
     match decEq (served rule r0 t0 (s + d)) (some j) with
-    | isTrue hs => exact ⟨s + d, by omega, by omega, hs⟩
+    | isTrue hs => exact ⟨s + d, Nat.le_add_right s d, Nat.lt_add_one _, hs⟩
     | isFalse hs =>
       rw [if_neg hs] at h
-      obtain ⟨u, h1, h2, h3⟩ := ih h; exact ⟨u, h1, by omega, h3⟩
+      obtain ⟨u, h1, h2, h3⟩ := ih h; exact ⟨u, h1, Nat.lt_succ_of_lt h2, h3⟩
 
 theorem run_injective (fresh : ∀ j, r0 j < t0) (inj : Injective r0) (s : Nat) :
     Injective (run rule r0 t0 s) := by
@@ -325,11 +419,14 @@ theorem run_injective (fresh : ∀ j, r0 j < t0) (inj : Injective r0) (s : Nat) 
     rw [run_succ_apply, run_succ_apply] at e
     have li := run_lt rule r0 t0 fresh s i
     have lj := run_lt rule r0 t0 fresh s j
-    split at e <;> split at e
-    · next hi hj => rw [hi] at hj; exact Option.some.inj hj
-    · omega
-    · omega
-    · exact ih i j e
+    match decEq (served rule r0 t0 s) (some i), decEq (served rule r0 t0 s) (some j) with
+    | isTrue hi, isTrue hj => rw [hi] at hj; exact Option.some.inj hj
+    | isTrue hi, isFalse hj =>
+      rw [if_pos hi, if_neg hj] at e; rw [← e] at lj; exact absurd lj (Nat.lt_irrefl _)
+    | isFalse hi, isTrue hj =>
+      rw [if_neg hi, if_pos hj] at e; rw [e] at li; exact absurd li (Nat.lt_irrefl _)
+    | isFalse hi, isFalse hj =>
+      rw [if_neg hi, if_neg hj] at e; exact ih i j e
 
 end Run
 
@@ -351,9 +448,11 @@ theorem renewing_claims_served_in_turn {n : Nat} (r0 : Record n) (t0 : Nat)
     rw [run_succ_apply, if_pos hs]
   have hk := run_mono_le leastRecent r0 t0 fresh (s + 1) d k
   have hlt := least j hjk
+  rw [hk1] at hk
   obtain ⟨u, h1, h2, h3⟩ :=
-    recent_entry_was_served leastRecent r0 t0 fresh (s + 1) d j (by omega)
-  exact ⟨u, by omega, h2, h3⟩
+    recent_entry_was_served leastRecent r0 t0 fresh (s + 1) d j
+      (Nat.succ_le_of_lt (Nat.lt_of_le_of_lt hk hlt))
+  exact ⟨u, h1, h2, h3⟩
 
 /-- Before any order is supplied (all entries equal), no alike rule serves. -/
 theorem renewing_claims_need_initial_order {n : Nat} (two : 2 ≤ n) (rule : Rule n)
@@ -402,3 +501,12 @@ end PluralRecords
 #print axioms PluralRecords.run_injective
 #print axioms PluralRecords.renewing_claims_served_in_turn
 #print axioms PluralRecords.renewing_claims_need_initial_order
+#print axioms PluralRecords.transpose_left
+#print axioms PluralRecords.transpose_right
+#print axioms PluralRecords.transpose_other
+#print axioms PluralRecords.fin_other
+#print axioms PluralRecords.find?_some_true
+#print axioms PluralRecords.find?_none_false
+#print axioms PluralRecords.mem_finRange_loop
+#print axioms PluralRecords.mem_finRange'
+#print axioms PluralRecords.one_ne_zero'
