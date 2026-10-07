@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-07T13:36:54.328418+00:00",
+  "checked_at_utc": "2026-10-07T13:59:49.509078+00:00",
   "modules": {
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean": "129bcde17d359873ea3189d809fc149fd2004bf440b1b6731c5f14909d61124d"
   },
@@ -21,7 +21,7 @@
       {
         "module": "NativePacketProcess",
         "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
-        "source_sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+        "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
         "exit_code": 0,
         "clean": true
       },
@@ -56,21 +56,21 @@
       {
         "module": "PacketLawDerivation",
         "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
-        "source_sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70",
+        "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
         "exit_code": 0,
         "clean": true
       },
       {
         "module": "PhaseCycleDerivation",
         "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
-        "source_sha256": "90ffb0bab5a2c8dc29aff88f187ae780f567515635594f131ad1d53d1647b830",
+        "source_sha256": "327cfcd02d8f7deaf4c4bc45a95c12888c6e1241362ed14806dc5781ce32f94d",
         "exit_code": 0,
         "clean": true
       },
       {
         "module": "PhasePeriodSelection",
         "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean",
-        "source_sha256": "d77c2b5c23147f49447ed79ec5e6075cbc8aff636f1a0479f0cd5c7be1f1fe99",
+        "source_sha256": "832ab5f036cb62a6b475620e899b870da615da40e58bdd2004efb35b0e62bd32",
         "exit_code": 0,
         "clean": true
       },
