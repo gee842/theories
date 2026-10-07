@@ -35,12 +35,19 @@
 
 **`RegeneratingPersistence.lean`: which evaluation persists, from the core alone.** An evaluating activity `e` persists from `s` when arbitrarily long actual continuations end where `e` is eventually realizable. With finitely many states, this holds exactly when `s` reaches a state the process regenerates by a nonempty return path and `e` is eventually realizable there (`persists_iff_regenerating_return`). Along the return path no activity's eventual realizability changes (`return_preserves_realizability`). The finite-list lemmas are proved in the module; nothing is imported beyond the core chain.
 
+**`EnactedOrientation.lean`: which orientation can be enacted indefinitely (7 October 2026).** The earlier opposite-orientation results compare records that change nothing (`recording_enabled_iff`). Here an evaluation is enacted: a marking `Q` picks out the transitions of the history that it endorses. At the level of eventual realizability (`Can`):
+
+- No transition gains (`no_transition_gains`), so the loss orientation `converse CanLe` holds along every history (`loss_order_along_every_history`) and distinguishes nothing; `CanLe` fails on every losing transition (`loses_not_canLe`).
+- With a complete finite list of states, no history has as many losing transitions as there are states (`strict_loss_bounded`), and an evaluation that endorses only losing transitions is enacted fewer times than that (`loss_endorsing_enactment_bounded`). A marking that recurs without bound cannot have only losing enactments (`recurring_enactment_not_all_loss`). These use no decidable equality: the start of a losing transition is never reached again (`loss_marked_bound`).
+- With decidable equality as well, a recurring marking has a reachable enactment on a return path that keeps every activity's eventual realizability (`recurring_enactment_keeps`); both orientations agree there (`return_transition_both_orders`); an activity enacted without bound persists (`unbounded_enactment_persists`).
+- Preserved limits: loss can precede persistence (`loss_then_persistence` in `severing`); finiteness is necessary (`ladder_loss_recurs`); at immediate feasibility, failures of `ContinuationLe` recur without bound in `dip` (`dip_immediate_loss_recurs`), so `law_admits_opposite_recordings` stands at that level.
+
 ## What is not proved
 
 That moral properties supervene or explain observations; the premise itself and the choice of the whole scope; property identity beyond necessary coextension; a principled derivation of the protected scope of activities; any verdict when every option removes something. Processes, scopes and rankings are supplied inputs. Nothing here says which history occurs or that any orientation is good.
 
 ## Verify
 
-From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all thirteen modules fresh in a temporary directory, rejects `sorry`, every axiom in new declarations (including `propext` and `Quot.sound`) and warnings, and requires every new theorem to be audited.
+From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all fourteen modules fresh in a temporary directory, rejects `sorry`, every axiom in new declarations (including `propext` and `Quot.sound`) and warnings, and requires every new theorem to be audited.
 
-The [receipt](verification.json) records **120 new audits, all with empty axiom reports**. The sources and receipt before the axiom removal are preserved in `verification-history/2026-10-06-before-axiom-removal/`.
+The [receipt](verification.json) records **147 new audits, all with empty axiom reports**. The sources and receipt before the axiom removal are preserved in `verification-history/2026-10-06-before-axiom-removal/`.
