@@ -248,7 +248,7 @@ kinds and spans at most `D`, a live configuration after `(n + 1) · D` descends
 from a closed walk of support kinds. Each supporter on that walk has span at
 least two, and each of its kinds was formed within the preceding `(n + 1) · D`
 ticks. -/
-theorem live_late_descends_from_realized_closure [DecidableEq Kind]
+theorem live_late_descends_from_realized_closure
     {law : ChannelLaw Kind} (X : Execution law) (U : List Kind) (complete : ∀ k, k ∈ U)
     (D : Nat) (spanBound : ∀ k, law.span k ≤ D) {t : Nat}
     (live : Live (X.states t)) (late : (U.length + 1) * D < t) :
@@ -300,7 +300,7 @@ theorem find_or_none (P : Kind → Prop) [DecidablePred P] :
 forever has a kind that brings in at least what its formation demands, and every
 live configuration after `(n + 1) · D` descends from a realized closure of
 support kinds whose supporters outlast the tick. -/
-theorem endless_renewal_needs_closure_and_adequate_kind [DecidableEq Kind]
+theorem endless_renewal_needs_closure_and_adequate_kind
     {law : ChannelLaw Kind} (X : Execution law) (U : List Kind) (complete : ∀ k, k ∈ U)
     (D : Nat) (spanBound : ∀ k, law.span k ≤ D) (alive : ∀ n, Live (X.states n)) :
     (∃ k, law.demand k ≤ law.rate k * law.span k) ∧
