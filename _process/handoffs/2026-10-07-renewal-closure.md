@@ -2,6 +2,19 @@
 
 7 October 2026. AI-authored handoff from the project thread "How significant is the theory", written at Ren's request at the end of the axiom-free round. Branch `claude/project-thread-upsxp6`. This round's work is commit `ac6539c`, merged to main together with this handoff.
 
+## Resume state (wrap-up, 7 October 2026, 09:50 UTC)
+
+- **Branch:** `claude/project-thread-upsxp6`, identical to main. The axiom-free work reached main at `ca81880`. This section was added in the next commit.
+- **Position:** continuable. No proof is half-finished, nothing is uncommitted, and no background work is running.
+- **Verified on that main:**
+  - `python3 check.py` passes: 11 modules, 219 audits, all empty.
+  - The valuation chain was rebuilt from scratch (19 modules plus 8 audit files), and `check_contact_formation.py` passes.
+- **To resume:**
+  - Put Lean 4.29.1 on `PATH` (`/opt/lean/lean-4.29.1-linux/bin`).
+  - Run `python3 check.py` in the package directory.
+  - Then follow "Exact next step" below.
+- **Open item for Ren:** merging branch `claude/project-thread-x1q9hl`. Two things wait on it: the last 7 valuation results that still carry axioms, through `ResourceContinuation`, and `port_cannot_continue_indefinitely`, which step 4 below compares against.
+
 ## What the study answers
 
 Ren asked for a formal theory of renewal: one nontrivial theorem saying when a process renews the conditions of its own activity instead of importing organization, stated against Montévil and Mossio's closure of constraints. It serves the research center: how the whole unfolding generates or damages the conditions of its later realization, renewal and correction. Read the [roadmap](../research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-ROADMAP.md), the notes for [Phase 1](../research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE1.md), [Phase 2](../research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2.md) and [Phase 2b](../research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md), and the [Lean package README](../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md).
