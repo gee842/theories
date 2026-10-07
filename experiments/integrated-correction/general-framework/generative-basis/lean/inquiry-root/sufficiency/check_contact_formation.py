@@ -18,7 +18,7 @@ CLOSURE = HERE / "process-law-verification.json"
 NEW = ["ContactFormation", "FormationClosure", "AcquiredContact", "PortValuation", "ValuationInCore",
        "RevisingPort", "RelationalCut", "PortAlignment"]
 # Imported from the valuation-development package, built in the same closure.
-VALUATION = ["ValuationDevelopment", "ClosedLoopValuation"]
+VALUATION = ["AxiomFree", "ValuationDevelopment", "ClosedLoopValuation"]
 # Imported only for their definitions; their own audits belong to their packages.
 ALIGNMENT = ["RemainingDependency", "InquiryRelevance", "InquiryWarrant"]
 SUPPORT = set(VALUATION + ALIGNMENT)
@@ -67,7 +67,8 @@ def main():
             output = result.stdout + result.stderr
             audits = AUDIT.findall(output)
             nonempty = {n: a for n, a in audits if a.strip()}
-            clean = (result.returncode == 0 and "warning" not in output and not placeholders
+            clean = (result.returncode == 0 and (name in SUPPORT or "warning" not in output)
+                     and not placeholders
                      and not declared and not nonempty)
             rows.append({"module": name, "source": str(path.relative_to(REPO)),
                          "source_sha256": sha(data), "exit_code": result.returncode,

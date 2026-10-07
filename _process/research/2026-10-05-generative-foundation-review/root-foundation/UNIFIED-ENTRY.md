@@ -2,7 +2,7 @@
 
 7 October 2026. This is the working table for Ren's goal of formal unification: one Lean entry in which the process law, contact formation and acquisition, the three-phase cycle, U1/U2, renewal–closure, valuation development and the alignment modules all apply to the same generative process. Each connection must be a proof that a package's notions are realized by that process, not a restatement.
 
-The process is the packet port as the core derives it ([process-law derivation](PROCESS-LAW-DERIVATION.md)), extended by recovery and formation ([contact-formation study](CONTACT-FORMATION-LAW.md)) and by the reading it retains (the revising port). All modules listed as connected audit completely empty: no `propext`, no `Quot.sound`, no other axiom. The [contact-formation checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_contact_formation.py) builds them together with the 32-module core: 45 modules, 801 audits, all empty.
+The process is the packet port as the core derives it ([process-law derivation](PROCESS-LAW-DERIVATION.md)), extended by recovery and formation ([contact-formation study](CONTACT-FORMATION-LAW.md)) and by the reading it retains (the revising port). All modules listed as connected audit completely empty: no `propext`, no `Quot.sound`, no other axiom. The [contact-formation checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_contact_formation.py) builds them together with the 32-module core: 46 modules, 801 audits, all empty.
 
 ## Packages
 
