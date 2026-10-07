@@ -1,5 +1,6 @@
 import GenerativeCore
 import SupportNecessity
+import RenewalBasics
 
 /-!
 # Renewal and closure: late activity descends from a realized closure
@@ -134,7 +135,7 @@ theorem Walk.after_start {edge : Kind → Kind → Prop} {i k : Kind} {vs : List
     refine ⟨vs, rfl, ?_⟩
     intro v member
     rw [shape] at member
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same => exact ⟨i, List.mem_cons_self, by rw [same]; exact step⟩
     | inr inTail =>
       obtain ⟨u, uIn, edgeUV⟩ := preds v inTail
@@ -151,7 +152,7 @@ theorem Walk.before_end {edge : Kind → Kind → Prop} {i k : Kind} {vs : List 
     obtain ⟨init, shape, succs⟩ := ih
     refine ⟨i :: init, by rw [shape]; rfl, ?_⟩
     intro v member
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same =>
       exact ⟨j, List.mem_cons_of_mem _ rest.start_mem, by rw [same]; exact step⟩
     | inr inInit =>
@@ -165,7 +166,7 @@ theorem Walk.predecessor {edge : Kind → Kind → Prop} {i k : Kind} {vs : List
   intro v member different
   obtain ⟨tail, shape, preds⟩ := walk.after_start
   rw [shape] at member
-  cases List.mem_cons.mp member with
+  cases mem_cons_split member with
   | inl same => exact False.elim (different same)
   | inr inTail => exact preds v inTail
 
@@ -176,10 +177,10 @@ theorem Walk.successor {edge : Kind → Kind → Prop} {i k : Kind} {vs : List K
   induction walk with
   | nil k =>
     intro v member different
-    exact False.elim (different (List.mem_singleton.mp member))
+    exact False.elim (different (mem_singleton_eq member))
   | @cons i j k vs step rest ih =>
     intro v member different
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same =>
       subst v
       cases rest with
@@ -200,7 +201,7 @@ theorem Walk.end_predecessor {edge : Kind → Kind → Prop} {i k : Kind} {vs : 
     | nil => exact ⟨i, List.mem_cons_self, step⟩
     | @cons j' m k' vs' step' rest' =>
       have positive := rest'.length_pos
-      have ⟨u, inside, edgeUK⟩ := ih (by simp only [List.length_cons]; omega)
+      have ⟨u, inside, edgeUK⟩ := ih (Nat.succ_le_succ positive)
       exact ⟨u, List.mem_cons_of_mem _ inside, edgeUK⟩
 
 /-- Closure in the sense of Montévil and Mossio, at the level of kinds: every
@@ -222,16 +223,16 @@ theorem closed_walk_dependence_closed {edge : Kind → Kind → Prop}
     · intro v member
       obtain ⟨tail, shape, preds⟩ := rest.after_start
       rw [shape] at member
-      cases List.mem_cons.mp member with
+      cases mem_cons_split member with
       | inl atStart => exact ⟨j, jIn, by rw [atStart]; exact first⟩
       | inr inTail => exact preds v inTail
     · intro v member
       obtain ⟨init, shape, succs⟩ := rest.before_end
       rw [shape] at member
-      cases List.mem_append.mp member with
+      cases mem_append_split member with
       | inl inInit => exact succs v inInit
       | inr atEnd =>
-        rw [List.mem_singleton.mp atEnd]
+        rw [mem_singleton_eq atEnd]
         exact ⟨x, rest.start_mem, first⟩
 
 /-- Each kind of a list drawn from `pre ++ y :: post` is `y` or is drawn from
@@ -244,10 +245,10 @@ theorem contains_or_drawn_from {y : Kind} {pre post : List Kind} :
   | z :: l, inside => by
     have zIn := inside z List.mem_cons_self
     have zCases : z = y ∨ z ∈ pre ++ post := by
-      cases List.mem_append.mp zIn with
+      cases mem_append_split zIn with
       | inl inPre => exact Or.inr (List.mem_append_left _ inPre)
       | inr inRest =>
-        cases List.mem_cons.mp inRest with
+        cases mem_cons_split inRest with
         | inl same => exact Or.inl same
         | inr inPost => exact Or.inr (List.mem_append_right _ inPost)
     cases zCases with
@@ -260,7 +261,7 @@ theorem contains_or_drawn_from {y : Kind} {pre post : List Kind} :
         exact Or.inl ⟨z :: mid, rest, by rw [split]; rfl⟩
       | inr drawn =>
         refine Or.inr (fun x member => ?_)
-        cases List.mem_cons.mp member with
+        cases mem_cons_split member with
         | inl same => rw [same]; exact zDrawn
         | inr tail => exact drawn x tail
 
@@ -283,11 +284,11 @@ theorem duplicate_of_long :
       exact ⟨[], y, mid, post, by rw [split]; rfl⟩
     | inr drawn =>
       have lengths : U.length = (front ++ back).length + 1 := by
-        rw [splitU, List.length_append, List.length_append, List.length_cons]
-        omega
+        rw [splitU, length_append_eq, length_append_eq]
+        rfl
       have shorter : (front ++ back).length < rest.length := by
-        simp only [List.length_cons] at long
-        omega
+        rw [lengths] at long
+        exact Nat.lt_of_succ_lt_succ long
       obtain ⟨pre, x, mid, post, split⟩ := duplicate_of_long (front ++ back) rest drawn shorter
       exact ⟨y :: pre, x, mid, post, by rw [split]; rfl⟩
 
@@ -301,29 +302,30 @@ theorem support_walk (S : OccurrenceSupport Kind) (D : Nat)
   | 0, t, k, occ, _ => by
     refine ⟨k, [k], Walk.nil k, rfl, ?_⟩
     intro v member
-    have same := List.mem_singleton.mp member
+    have same := mem_singleton_eq member
     subst v
-    exact ⟨t, occ, Nat.le_refl t, by omega⟩
+    exact ⟨t, occ, Nat.le_refl t, Nat.le_add_right t (0 * D)⟩
   | m + 1, t, k, occ, late => by
     have positive : 0 < t := Nat.lt_of_le_of_lt (Nat.zero_le _) late
     have ⟨j, s, edgeJK, occJ, earlier, within⟩ := S.support k t occ positive
     have reachBound := bound j
+    have withinD : t ≤ s + D := Nat.le_trans within (Nat.add_le_add_left reachBound s)
     have lateS : m * D < s := by
       rw [Nat.succ_mul] at late
-      omega
+      exact Nat.lt_of_add_lt_add_right (Nat.lt_of_lt_of_le late withinD)
     have ⟨i, vs, walk, length, window⟩ := support_walk S D bound m s j occJ lateS
-    refine ⟨i, vs ++ [k], walk.snoc edgeJK, by simp [length], ?_⟩
+    refine ⟨i, vs ++ [k], walk.snoc edgeJK, by rw [length_append_eq, length]; rfl, ?_⟩
     intro v member
-    cases List.mem_append.mp member with
+    cases mem_append_split member with
     | inl old =>
       obtain ⟨r, occV, before, near⟩ := window v old
       refine ⟨r, occV, Nat.le_trans before (Nat.le_of_lt earlier), ?_⟩
-      rw [Nat.succ_mul]
-      omega
+      rw [Nat.succ_mul, ← Nat.add_assoc]
+      exact Nat.le_trans withinD (Nat.add_le_add_right near D)
     | inr new =>
-      have same := List.mem_singleton.mp new
+      have same := mem_singleton_eq new
       subst v
-      exact ⟨t, occ, Nat.le_refl t, by omega⟩
+      exact ⟨t, occ, Nat.le_refl t, Nat.le_add_right t ((m + 1) * D)⟩
 
 /-- **Late activity descends from a realized closure.** With every kind listed in
 `U` and support reach at most `D`, an occurrence after `U.length * D` descends
@@ -340,7 +342,9 @@ theorem late_occurrence_descends_from_realized_closure
       DependenceClosed S.edge cycle ∧
       ∀ v, v ∈ cycle ++ rest → ∃ s, S.occurs v s ∧ s ≤ t ∧ t ≤ s + U.length * D := by
   have ⟨i, vs, walk, length, window⟩ := support_walk S D bound U.length t k occ late
-  have long : U.length < vs.length := by omega
+  have long : U.length < vs.length := by
+    rw [length]
+    exact Nat.lt_succ_self U.length
   have ⟨pre, x, mid, post, split⟩ :=
     duplicate_of_long U vs (fun v _ => complete v) long
   subst split
@@ -350,20 +354,26 @@ theorem late_occurrence_descends_from_realized_closure
   have ⟨loop, tail⟩ := Walk.split (x :: mid) post back
   have loopShape : (x :: mid) ++ [x] = x :: (mid ++ [x]) := rfl
   rw [loopShape] at loop
-  have nonempty : mid ++ [x] ≠ [] := by simp
+  have nonempty : mid ++ [x] ≠ [] := by
+    intro empty
+    cases mid with
+    | nil => cases empty
+    | cons _ _ => cases empty
   refine ⟨x, mid ++ [x], post, nonempty, loop, tail,
     closed_walk_dependence_closed loop nonempty, ?_⟩
   intro v member
   apply window v
-  cases List.mem_append.mp member with
+  apply List.mem_append_right pre
+  cases mem_append_split member with
   | inl inCycle =>
-    cases List.mem_append.mp inCycle with
-    | inl inMid => simp [inMid]
+    cases mem_append_split inCycle with
+    | inl inMid => exact List.mem_cons_of_mem x (List.mem_append_left _ inMid)
     | inr isX =>
-      have same := List.mem_singleton.mp isX
+      have same := mem_singleton_eq isX
       subst v
-      simp
-  | inr inPost => simp [inPost]
+      exact List.mem_cons_self
+  | inr inPost =>
+    exact List.mem_cons_of_mem x (List.mem_append_right mid (List.mem_cons_of_mem x inPost))
 
 /-- The same conclusion as a nonempty cycle of the type process, the form used
 by `SupportNecessity`. -/
@@ -418,8 +428,10 @@ theorem episode_acyclic_deadline {Episode : Type v}
   have life := S.lifetime e
   have bornLate : U.length * L < S.birth e := by
     have bound := lifeBound (S.kind e)
+    have lifeL : t ≤ S.birth e + L :=
+      Nat.le_trans expires (Nat.le_trans life (Nat.add_le_add_left bound (S.birth e)))
     rw [Nat.succ_mul] at late
-    omega
+    exact Nat.lt_of_add_lt_add_right (Nat.lt_of_lt_of_le late lifeL)
   exact acyclic_support_deadline (episodeSupport S) U complete L lifeBound acyclic
     bornLate (S.kind e) ⟨e, rfl, rfl⟩
 
@@ -436,9 +448,10 @@ theorem episode_late_life_descends_from_realized_closure
   have life := S.lifetime e
   have bound := lifeBound (S.kind e)
   have bornLate : U.length * L < S.birth e := by
+    have lifeL : t ≤ S.birth e + L :=
+      Nat.le_trans alive.2 (Nat.le_trans life (Nat.add_le_add_left bound (S.birth e)))
     rw [Nat.succ_mul] at late
-    have := alive.2
-    omega
+    exact Nat.lt_of_add_lt_add_right (Nat.lt_of_lt_of_le late lifeL)
   have ⟨j, cycle, rest, nonempty, loop, tail, closed, window⟩ :=
     late_occurrence_descends_from_realized_closure (episodeSupport S) U complete L lifeBound
       (k := S.kind e) ⟨e, rfl, rfl⟩ bornLate

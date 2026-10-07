@@ -48,10 +48,10 @@ theorem opened_one_pos {tok : Token Kind} (alive : 1 ≤ tok.remaining) :
   | [], member => by cases member
   | head :: rest, member => by
     rw [opened]
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same =>
       subst same
-      rw [if_neg (by omega)]
+      rw [if_neg (Nat.ne_of_gt alive)]
       exact Nat.le_add_right 1 _
     | inr tail =>
       exact Nat.le_trans (opened_one_pos alive tail) (Nat.le_add_left _ _)
@@ -67,7 +67,7 @@ theorem dead_stays_dead {law : ChannelLaw Kind} {c c' : Config Kind} {births : L
   obtain ⟨tok, member, _⟩ := live_has_alive_token live
   apply dead
   rw [step.1] at member
-  cases List.mem_append.mp member with
+  cases mem_append_split member with
   | inl agedIn =>
     obtain ⟨old, oldIn, _, _, kept⟩ := mem_aged agedIn
     exact alive_token_live oldIn (Nat.le_of_succ_le kept)
@@ -154,7 +154,18 @@ theorem mem_agedN {l : List (Token Kind)} :
   | n + 1, tok, member => by
     obtain ⟨mid, midIn, midKind, midAge, kept⟩ := mem_aged member
     obtain ⟨old, oldIn, oldKind, oldAge, _⟩ := mem_agedN n midIn
-    exact ⟨old, oldIn, oldKind.trans midKind, by omega, Or.inr (by omega)⟩
+    refine ⟨old, oldIn, oldKind.trans midKind, ?_, Or.inr ?_⟩
+    · rw [Nat.add_comm n 1, ← Nat.add_assoc, midAge, oldAge]
+    · rw [← midAge] at kept
+      exact Nat.le_of_succ_le_succ kept
+
+theorem configurations_enlarge_balance {a e f r x o : Nat} (balance : a + f ≤ r + o) :
+    a + e + f ≤ r + e + (x + o) :=
+  calc a + e + f = a + f + e := Nat.add_right_comm a e f
+    _ ≤ r + o + e := Nat.add_le_add_right balance e
+    _ = r + e + o := Nat.add_right_comm r o e
+    _ ≤ r + e + o + x := Nat.le_add_right _ _
+    _ = r + e + (x + o) := by rw [Nat.add_assoc, Nat.add_comm o x]
 
 /-- Adding held provision or formed tokens from outside keeps renewability. -/
 def History.enlarge {law : ChannelLaw Kind} (H : History law) (extraReserve : Nat)
@@ -166,13 +177,13 @@ def History.enlarge {law : ChannelLaw Kind} (H : History law) (extraReserve : Na
     refine ⟨?_, ?_, ?_⟩
     · show agedN (n + 1) extra ++ (H.states (n + 1)).tokens =
         aged (agedN n extra ++ (H.states n).tokens) ++ formed law (H.ticks n)
-      rw [shape, aged_append, List.append_assoc]
+      rw [shape, aged_append, append_assoc_eq]
       rfl
     · show (H.states (n + 1)).reserve + extraReserve + formation law (H.ticks n) ≤
         (H.states n).reserve + extraReserve +
           opened law.rate (agedN n extra ++ (H.states n).tokens)
       rw [opened_append]
-      omega
+      exact configurations_enlarge_balance balance
     · intro k member
       obtain ⟨tok, agedIn, edge⟩ := supported k member
       refine ⟨tok, ?_, edge⟩
@@ -191,7 +202,7 @@ theorem renewable_of_more {law : ChannelLaw Kind} {R R' : Nat} {T extra : List (
       ⟨R', extra ++ T⟩
     rw [start]
     show Config.mk (R + (R' - R)) (extra ++ T) = ⟨R', extra ++ T⟩
-    exact congrArg (fun r => Config.mk r (extra ++ T)) (by omega)
+    exact congrArg (fun r => Config.mk r (extra ++ T)) (add_sub_of_le_eq more)
   · show 1 ≤ opened (fun _ => 1) (agedN n extra ++ (H.states n).tokens)
     rw [opened_append]
     exact Nat.le_trans (alive n) (Nat.le_add_left _ _)
@@ -207,10 +218,10 @@ theorem mem_aged_of_kept {tok : Token Kind} (kept : 2 ≤ tok.remaining) :
     ∀ {l : List (Token Kind)}, tok ∈ l → ⟨tok.kind, tok.remaining - 1⟩ ∈ aged l
   | [], member => by cases member
   | head :: rest, member => by
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same =>
       subst same
-      rw [aged, if_neg (by omega)]
+      rw [aged, if_neg (fun small => Nat.not_succ_le_self 1 (Nat.le_trans kept small))]
       exact List.mem_cons_self
     | inr tail =>
       have inside := mem_aged_of_kept kept tail
@@ -230,7 +241,17 @@ theorem agedN_empty (N : Nat) {l : List (Token Kind)}
       exact List.mem_cons_self
     obtain ⟨old, oldIn, _, age, _⟩ := mem_agedN (N + 1) member
     have within := bound old oldIn
-    exact False.elim (by omega)
+    have big : N + 1 ≤ old.remaining := by
+      rw [← age]
+      exact Nat.le_add_left _ _
+    exact absurd (Nat.le_trans big within) (Nat.not_succ_le_self N)
+
+theorem configurations_build_balance {R a f o : Nat} (within : a + f ≤ R) :
+    R - (a + f) + f ≤ R - a + o := by
+  obtain ⟨k, sum⟩ := Nat.le.dest within
+  subst sum
+  rw [add_sub_cancel_left_eq, Nat.add_assoc, add_sub_cancel_left_eq, Nat.add_comm k f]
+  exact Nat.le_add_right _ _
 
 /-- The configuration after `i` ticks of forming `B`, starting from `c`. -/
 def build (law : ChannelLaw Kind) (B : List Kind) (c : Config Kind) (i : Nat) : Config Kind :=
@@ -245,14 +266,14 @@ theorem build_step {law : ChannelLaw Kind} {B : List Kind} {c : Config Kind} (D 
   refine ⟨?_, ?_, ?_⟩
   · show agedN (i + 1) c.tokens ++ steady law B (i + 1) =
       aged (agedN i c.tokens ++ steady law B i) ++ formed law B
-    rw [formed_eq_block_zero law B positive, aged_append, List.append_assoc,
+    rw [formed_eq_block_zero law B positive, aged_append, append_assoc_eq,
       steady_shift]
     rfl
   · show c.reserve - (i + 1) * formation law B + formation law B ≤
       c.reserve - i * formation law B + opened law.rate (agedN i c.tokens ++ steady law B i)
     have scaled := Nat.mul_le_mul_right (formation law B) (Nat.succ_le_of_lt early)
     rw [Nat.succ_mul] at scaled ⊢
-    omega
+    exact configurations_build_balance (Nat.le_trans scaled enough)
   · intro k member
     cases i with
     | zero =>
@@ -306,6 +327,16 @@ configuration: the longer of the population's longest span and the
 configuration's longest remaining span. -/
 def buildLength (law : ChannelLaw Kind) (B : List Kind) (c : Config Kind) : Nat :=
   max (maxOver law.span B) (maxOver Token.remaining c.tokens)
+
+theorem configurations_sub_succ_lt (N j : Nat) : N + 1 - (j + 1) < N + 1 := by
+  rw [Nat.succ_sub_succ]
+  exact Nat.lt_succ_of_le (Nat.sub_le N j)
+
+theorem configurations_sub_succ_add_one {N j : Nat} (within : j ≤ N) :
+    N + 1 - (j + 1) + 1 = N + 1 - j := by
+  obtain ⟨k, sum⟩ := Nat.le.dest within
+  subst sum
+  rw [Nat.succ_sub_succ, add_sub_cancel_left_eq, Nat.add_assoc, add_sub_cancel_left_eq]
 
 theorem seeded_positivePart {law : ChannelLaw Kind} {B : List Kind} {c : Config Kind}
     (seeded : Seeded law c B) : Seeded law c (positivePart law B) :=
@@ -361,8 +392,8 @@ theorem seeded_renewable {law : ChannelLaw Kind} {B : List Kind}
     | zero => intro _; exact standing
     | succ j ih =>
       intro within'
-      have earlier : N + 1 - (j + 1) < N + 1 := by omega
-      have next : N + 1 - (j + 1) + 1 = N + 1 - j := by omega
+      have earlier := configurations_sub_succ_lt N j
+      have next := configurations_sub_succ_add_one (Nat.le_of_succ_le_succ within')
       have step := build_step (N + 1) positive renewing' seeded' enough' earlier
       rw [next] at step
       exact renewable_of_step (build_live positive renewing' seeded' _) step
@@ -371,7 +402,7 @@ theorem seeded_renewable {law : ChannelLaw Kind} {B : List Kind}
   rw [Nat.sub_self] at start
   have same : build law B' c 0 = c := by
     show Config.mk (c.reserve - 0 * formation law B') (c.tokens ++ []) = c
-    rw [Nat.zero_mul, Nat.sub_zero, List.append_nil]
+    rw [Nat.zero_mul, Nat.sub_zero, append_nil_eq]
   rw [same] at start
   exact start
 
@@ -424,8 +455,9 @@ theorem young_token_without_reserve_not_renewable :
     | nil => rfl
     | cons k rest =>
       rw [births] at budget
-      have : 3 ≤ formation closedOpenBalanced (k :: rest) := Nat.le_add_right 3 _
-      exact False.elim (by omega)
+      have demand : 3 ≤ formation closedOpenBalanced (k :: rest) := Nat.le_add_right 3 _
+      exact absurd (Nat.le_trans demand (Nat.le_trans (Nat.le_add_left _ _) budget))
+        (by decide)
   rw [noBirths] at shape
   have next : X.states 1 = ⟨(X.states 1).reserve, [⟨(), 1⟩]⟩ := by
     cases h : X.states 1 with
@@ -483,13 +515,17 @@ theorem keeping_and_losing_renewal :
 #print axioms renewable_iff_step
 #print axioms renewability_not_generated
 #print axioms mem_agedN
+#print axioms configurations_enlarge_balance
 #print axioms renewable_of_more
 #print axioms mem_aged_of_kept
 #print axioms agedN_empty
+#print axioms configurations_build_balance
 #print axioms build_step
 #print axioms build_live
 #print axioms le_longer_left
 #print axioms le_longer_right
+#print axioms configurations_sub_succ_lt
+#print axioms configurations_sub_succ_add_one
 #print axioms seeded_positivePart
 #print axioms formation_le_mul
 #print axioms seeded_renewable

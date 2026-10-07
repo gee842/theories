@@ -30,6 +30,12 @@ universe u
 
 variable {Kind : Type u}
 
+theorem link_add_one_comm (a b : Nat) : a + (b + 1) = a + 1 + b :=
+  (Nat.add_right_comm a 1 b).symm
+
+theorem link_le_of_add_eq {a b c t : Nat} (sum : a + t = b + c) (within : c ≤ t) : a ≤ b :=
+  le_of_add_le_add_right_of (k := t) (by rw [sum]; exact Nat.add_le_add_left within b)
+
 theorem mem_aged {tok : Token Kind} :
     ∀ {l : List (Token Kind)}, tok ∈ aged l →
       ∃ old, old ∈ l ∧ old.kind = tok.kind ∧ tok.remaining + 1 = old.remaining ∧
@@ -41,10 +47,12 @@ theorem mem_aged {tok : Token Kind} :
       obtain ⟨o, inside, kindEq, ageEq, kept⟩ := mem_aged member
       exact ⟨o, List.mem_cons_of_mem _ inside, kindEq, ageEq, kept⟩
     · rw [aged, if_neg last] at member
-      cases List.mem_cons.mp member with
+      have kept : 2 ≤ old.remaining := Nat.gt_of_not_le last
+      cases mem_cons_split member with
       | inl same =>
         subst same
-        exact ⟨old, List.mem_cons_self, rfl, by simp only; omega, by omega⟩
+        exact ⟨old, List.mem_cons_self, rfl,
+          sub_add_cancel_of_le (Nat.le_of_succ_le kept), kept⟩
       | inr tail =>
         obtain ⟨o, inside, kindEq, ageEq, kept⟩ := mem_aged tail
         exact ⟨o, List.mem_cons_of_mem _ inside, kindEq, ageEq, kept⟩
@@ -54,7 +62,7 @@ theorem mem_formed (law : ChannelLaw Kind) {tok : Token Kind} :
       tok.kind ∈ births ∧ tok.remaining = law.span tok.kind
   | k :: rest, member => by
     rw [formed] at member
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same => subst same; exact ⟨List.mem_cons_self, rfl⟩
     | inr tail =>
       obtain ⟨inside, span⟩ := mem_formed law tail
@@ -85,19 +93,21 @@ theorem token_origin {law : ChannelLaw Kind} (X : History law) :
   | 0, tok, member => Or.inl ⟨tok, member, rfl, rfl⟩
   | t + 1, tok, member => by
     rw [(X.steps t).1] at member
-    cases List.mem_append.mp member with
+    cases mem_append_split member with
     | inl agedIn =>
       obtain ⟨old, oldIn, kindEq, ageEq, _⟩ := mem_aged agedIn
       cases token_origin X t old oldIn with
       | inl initial =>
         obtain ⟨first, firstIn, firstKind, firstAge⟩ := initial
-        exact Or.inl ⟨first, firstIn, firstKind.trans kindEq, by omega⟩
+        exact Or.inl ⟨first, firstIn, firstKind.trans kindEq,
+          by rw [link_add_one_comm, ageEq, firstAge]⟩
       | inr formedEarlier =>
         obtain ⟨m, earlier, inTick, spanEq⟩ := formedEarlier
-        exact Or.inr ⟨m, by omega, kindEq ▸ inTick, by rw [← kindEq]; omega⟩
+        exact Or.inr ⟨m, Nat.le_succ_of_le earlier, kindEq ▸ inTick,
+          by rw [← kindEq, link_add_one_comm, ageEq, spanEq]⟩
     | inr formedNow =>
       obtain ⟨inTick, spanEq⟩ := mem_formed law formedNow
-      exact Or.inr ⟨t, Nat.lt_succ_self t, inTick, by omega⟩
+      exact Or.inr ⟨t, Nat.lt_succ_self t, inTick, by rw [spanEq]⟩
 
 /-- The largest value of `f` on a list. -/
 def maxOver {α : Type u} (f : α → Nat) : List α → Nat
@@ -111,11 +121,11 @@ theorem le_maxOver {α : Type u} (f : α → Nat) :
     rw [maxOver]
     by_cases smaller : f b ≤ maxOver f rest
     · rw [if_pos smaller]
-      cases List.mem_cons.mp member with
+      cases mem_cons_split member with
       | inl same => subst same; exact smaller
       | inr tail => exact le_maxOver f tail
     · rw [if_neg smaller]
-      cases List.mem_cons.mp member with
+      cases mem_cons_split member with
       | inl same => subst same; exact Nat.le_refl _
       | inr tail => exact Nat.le_trans (le_maxOver f tail) (Nat.le_of_lt (Nat.gt_of_not_le smaller))
 
@@ -137,16 +147,14 @@ theorem History.settled_within {law : ChannelLaw Kind} (H : History law) :
   cases token_origin H H.settle tok member with
   | inl initial =>
     obtain ⟨first, firstIn, _, firstAge⟩ := initial
-    have bound := le_maxOver Token.remaining firstIn
-    have zero : tok.remaining = 0 := by
-      show tok.remaining = 0
-      have : first.remaining ≤ H.settle := bound
-      omega
+    have bound : first.remaining ≤ H.settle := le_maxOver Token.remaining firstIn
+    have zero : tok.remaining = 0 :=
+      Nat.eq_zero_of_le_zero (link_le_of_add_eq (firstAge.trans (Nat.zero_add _).symm) bound)
     rw [zero]
     exact Nat.zero_le _
   | inr formedEarlier =>
     obtain ⟨m, earlier, _, spanEq⟩ := formedEarlier
-    omega
+    exact link_le_of_add_eq spanEq earlier
 
 /-- Every history, from the time its initial tokens have run out, is an
 execution. -/
@@ -159,12 +167,12 @@ theorem step_within {law : ChannelLaw Kind} {c c' : Config Kind} {births : List 
     WithinSpan law c' := by
   intro tok member
   rw [step.1] at member
-  cases List.mem_append.mp member with
+  cases mem_append_split member with
   | inl agedIn =>
     obtain ⟨old, oldIn, kindEq, ageEq, _⟩ := mem_aged agedIn
     have bound := within old oldIn
-    rw [kindEq] at bound
-    omega
+    rw [kindEq, ← ageEq] at bound
+    exact Nat.le_of_succ_le bound
   | inr formedIn =>
     obtain ⟨_, spanEq⟩ := mem_formed law formedIn
     rw [spanEq]
@@ -175,14 +183,15 @@ theorem execution_within {law : ChannelLaw Kind} (X : Execution law) :
   | 0 => X.initialWithinSpan
   | n + 1 => step_within (execution_within X n) (X.steps n)
 
-/-- Formations, and initial tokens at time zero, as occurrences. A supporter
-must outlast the tick, so the support edge records a span of at least two. -/
-def executionSupport {law : ChannelLaw Kind} (X : Execution law) : OccurrenceSupport Kind where
-  occurs k t := (t = 0 ∧ ∃ tok, tok ∈ (X.states 0).tokens ∧ tok.kind = k) ∨
-    (∃ m, t = m + 1 ∧ k ∈ X.ticks m)
-  edge j k := law.edge j k ∧ 2 ≤ law.span j
-  reach j := law.span j - 1
-  support := by
+/-- Each formation in an execution is supported by an earlier occurrence of a
+kind with span at least two, within that kind's reach. -/
+theorem execution_formation_supported {law : ChannelLaw Kind} (X : Execution law) :
+    ∀ k t, ((t = 0 ∧ ∃ tok, tok ∈ (X.states 0).tokens ∧ tok.kind = k) ∨
+        (∃ m, t = m + 1 ∧ k ∈ X.ticks m)) → 0 < t →
+      ∃ j s, (law.edge j k ∧ 2 ≤ law.span j) ∧
+        ((s = 0 ∧ ∃ tok, tok ∈ (X.states 0).tokens ∧ tok.kind = j) ∨
+          (∃ m, s = m + 1 ∧ j ∈ X.ticks m)) ∧
+        s < t ∧ t ≤ s + (law.span j - 1) := by
     intro k t occ positive
     cases occ with
     | inl initial => exact False.elim (Nat.lt_irrefl 0 (initial.1 ▸ positive))
@@ -196,12 +205,32 @@ def executionSupport {law : ChannelLaw Kind} (X : Execution law) : OccurrenceSup
         obtain ⟨first, firstIn, firstKind, firstAge⟩ := initial
         have within := X.initialWithinSpan first firstIn
         rw [firstKind, kindEq] at within
-        refine ⟨tok.kind, 0, ⟨edgeTK, by omega⟩, ?_, Nat.zero_lt_succ n, by omega⟩
+        have twoAhead : n + 1 + 1 ≤ law.span tok.kind :=
+          Nat.le_trans (Nat.add_le_add_left kept n)
+            (by rw [Nat.add_comm n, firstAge]; exact within)
+        refine ⟨tok.kind, 0, ⟨edgeTK, Nat.le_trans (Nat.le_add_left 2 n) twoAhead⟩, ?_,
+          Nat.zero_lt_succ n, by rw [Nat.zero_add]; exact Nat.pred_le_pred twoAhead⟩
         exact Or.inl ⟨rfl, first, firstIn, firstKind.trans kindEq⟩
       | inr formedEarlier =>
         obtain ⟨m, earlier, inTick', spanEq⟩ := formedEarlier
         rw [kindEq] at spanEq inTick'
-        refine ⟨tok.kind, m + 1, ⟨edgeTK, by omega⟩, Or.inr ⟨m, rfl, inTick'⟩, by omega, by omega⟩
+        have two : 2 ≤ law.span tok.kind := Nat.le_trans kept (link_le_of_add_eq spanEq earlier)
+        have pastTick : n + 1 + 1 ≤ m + 1 + (law.span tok.kind - 1) + 1 := by
+          rw [Nat.add_assoc (m + 1) (law.span tok.kind - 1) 1,
+            sub_add_cancel_of_le (Nat.le_of_succ_le two), Nat.add_comm (m + 1), ← spanEq,
+            Nat.add_comm old.remaining n]
+          exact Nat.add_le_add_left kept n
+        refine ⟨tok.kind, m + 1, ⟨edgeTK, two⟩, Or.inr ⟨m, rfl, inTick'⟩,
+          Nat.succ_le_succ earlier, Nat.le_of_succ_le_succ pastTick⟩
+
+/-- Formations, and initial tokens at time zero, as occurrences. A supporter
+must outlast the tick, so the support edge records a span of at least two. -/
+def executionSupport {law : ChannelLaw Kind} (X : Execution law) : OccurrenceSupport Kind where
+  occurs k t := (t = 0 ∧ ∃ tok, tok ∈ (X.states 0).tokens ∧ tok.kind = k) ∨
+    (∃ m, t = m + 1 ∧ k ∈ X.ticks m)
+  edge j k := law.edge j k ∧ 2 ≤ law.span j
+  reach j := law.span j - 1
+  support := execution_formation_supported X
 
 /-- A live configuration holds a token with time left. -/
 theorem live_has_alive_token {c : Config Kind} (live : Live c) :
@@ -228,11 +257,19 @@ theorem alive_token_recent_formation {law : ChannelLaw Kind} (X : Execution law)
     obtain ⟨first, firstIn, firstKind, firstAge⟩ := initial
     have within := X.initialWithinSpan first firstIn
     have bound := spanBound first.kind
-    exact False.elim (by omega)
+    have reached : 1 + t ≤ D :=
+      Nat.le_trans (Nat.add_le_add_right alive t)
+        (by rw [firstAge]; exact Nat.le_trans within bound)
+    exact absurd (Nat.lt_of_le_of_lt (Nat.le_trans (Nat.le_add_left t 1) reached) late)
+      (Nat.lt_irrefl t)
   | inr formedEarlier =>
     obtain ⟨m, earlier, inTick, spanEq⟩ := formedEarlier
     have bound := spanBound tok.kind
-    exact ⟨m + 1, Or.inr ⟨m, rfl, inTick⟩, earlier, by omega⟩
+    refine ⟨m + 1, Or.inr ⟨m, rfl, inTick⟩, earlier, ?_⟩
+    show t + 1 ≤ m + 1 + D
+    rw [Nat.add_comm t 1, Nat.add_comm (m + 1) D]
+    exact Nat.le_trans (Nat.add_le_add_right alive t)
+      (by rw [spanEq]; exact Nat.add_le_add_right bound (m + 1))
 
 /-- A live configuration after the longest span holds a token formed recently. -/
 theorem live_late_has_recent_formation {law : ChannelLaw Kind} (X : Execution law)
@@ -261,17 +298,19 @@ theorem live_late_descends_from_realized_closure
     have : D ≤ (U.length + 1) * D := by
       rw [Nat.succ_mul]
       exact Nat.le_add_left _ _
-    omega
+    exact Nat.lt_of_le_of_lt this late
   obtain ⟨k, s, occ, sBefore, recent⟩ :=
     live_late_has_recent_formation X D spanBound live Dbound
   have reachBound : ∀ j, (executionSupport X).reach j ≤ D := by
     intro j
-    have := spanBound j
     show law.span j - 1 ≤ D
-    omega
+    exact Nat.le_trans (Nat.sub_le _ _) (spanBound j)
   have lateS : U.length * D < s := by
     rw [Nat.succ_mul] at late
-    omega
+    have sum : U.length * D + 1 + D ≤ s + D := by
+      rw [Nat.add_right_comm (U.length * D) 1 D]
+      exact Nat.le_trans late (Nat.le_of_lt recent)
+    exact le_of_add_le_add_right_of sum
   obtain ⟨j, cycle, _, nonempty, loop, _, closed, window⟩ :=
     late_occurrence_descends_from_realized_closure (executionSupport X) U complete D reachBound
       occ lateS
@@ -280,7 +319,9 @@ theorem live_late_descends_from_realized_closure
   obtain ⟨r, occV, before, near⟩ := window v (List.mem_append_left _ member)
   refine ⟨r, occV, Nat.le_trans before sBefore, ?_⟩
   rw [Nat.succ_mul]
-  omega
+  show t + 1 ≤ r + (U.length * D + D)
+  rw [← Nat.add_assoc]
+  exact Nat.le_trans recent (Nat.add_le_add_right near D)
 
 /-- A decidable search through a finite list of kinds. -/
 theorem find_or_none (P : Kind → Prop) [DecidablePred P] :
@@ -292,7 +333,7 @@ theorem find_or_none (P : Kind → Prop) [DecidablePred P] :
       match find_or_none P rest with
       | Or.inl ⟨j, inside, holds⟩ => Or.inl ⟨j, List.mem_cons_of_mem _ inside, holds⟩
       | Or.inr absent => Or.inr (fun j member => by
-          cases List.mem_cons.mp member with
+          cases mem_cons_split member with
           | inl same => exact same ▸ here
           | inr tail => exact absent j tail)
 
@@ -322,6 +363,8 @@ theorem endless_renewal_needs_closure_and_adequate_kind
     exact False.elim (short_kinds_cannot_renew_forever law D spanBound short
       ⟨X.states, X.ticks, fun n => ⟨alive n, X.steps n⟩⟩)
 
+#print axioms link_add_one_comm
+#print axioms link_le_of_add_eq
 #print axioms mem_aged
 #print axioms mem_formed
 #print axioms token_origin
@@ -329,6 +372,7 @@ theorem endless_renewal_needs_closure_and_adequate_kind
 #print axioms History.settled_within
 #print axioms step_within
 #print axioms execution_within
+#print axioms execution_formation_supported
 #print axioms live_has_alive_token
 #print axioms alive_token_recent_formation
 #print axioms live_late_has_recent_formation

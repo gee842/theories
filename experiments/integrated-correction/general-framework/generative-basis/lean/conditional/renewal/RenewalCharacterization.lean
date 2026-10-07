@@ -78,7 +78,7 @@ theorem block_within (law : ChannelLaw Kind) (d : Nat) {tok : Token Kind} :
   | k :: rest, member => by
     by_cases young : d < law.span k
     · rw [block, if_pos young] at member
-      cases List.mem_cons.mp member with
+      cases mem_cons_split member with
       | inl same => subst same; exact Nat.sub_le _ _
       | inr tail => exact block_within law d tail
     · rw [block, if_neg young] at member
@@ -88,7 +88,7 @@ theorem steady_within (law : ChannelLaw Kind) (B : List Kind) {tok : Token Kind}
     ∀ {N : Nat}, tok ∈ steady law B N → tok.remaining ≤ law.span tok.kind
   | 0, member => by cases member
   | N + 1, member => by
-    cases List.mem_append.mp member with
+    cases mem_append_split member with
     | inl here => exact block_within law N here
     | inr there => exact steady_within law B there
 
@@ -113,7 +113,7 @@ theorem mem_positivePart (law : ChannelLaw Kind) {k : Kind} :
   | j :: rest, member => by
     by_cases positive : 0 < law.span j
     · rw [positivePart, if_pos positive] at member
-      cases List.mem_cons.mp member with
+      cases mem_cons_split member with
       | inl same => subst same; exact ⟨List.mem_cons_self, positive⟩
       | inr tail =>
         obtain ⟨inside, kPositive⟩ := mem_positivePart law tail
@@ -128,11 +128,11 @@ theorem positivePart_mem (law : ChannelLaw Kind) {k : Kind} (positive : 0 < law.
   | j :: rest, member => by
     by_cases jPositive : 0 < law.span j
     · rw [positivePart, if_pos jPositive]
-      cases List.mem_cons.mp member with
+      cases mem_cons_split member with
       | inl same => subst same; exact List.mem_cons_self
       | inr tail => exact List.mem_cons_of_mem _ (positivePart_mem law positive tail)
     · rw [positivePart, if_neg jPositive]
-      cases List.mem_cons.mp member with
+      cases mem_cons_split member with
       | inl same => subst same; exact False.elim (jPositive positive)
       | inr tail => exact positivePart_mem law positive tail
 
@@ -144,11 +144,12 @@ theorem positivePart_balance (law : ChannelLaw Kind) :
     obtain ⟨lower, same⟩ := positivePart_balance law rest
     by_cases positive : 0 < law.span k
     · rw [positivePart, if_pos positive]
-      simp only [formation, spanOpening]
-      exact ⟨Nat.add_le_add_left lower _, by rw [same]⟩
+      exact ⟨Nat.add_le_add_left lower _, congrArg (law.rate k * law.span k + ·) same⟩
     · rw [positivePart, if_neg positive]
-      have zero : law.span k = 0 := by omega
-      simp only [formation, spanOpening, zero, Nat.mul_zero, Nat.zero_add]
+      have zero : law.span k = 0 := Nat.eq_zero_of_le_zero (Nat.le_of_not_lt positive)
+      show formation law (positivePart law rest) ≤ law.demand k + formation law rest ∧
+        spanOpening law (positivePart law rest) = law.rate k * law.span k + spanOpening law rest
+      rw [zero, Nat.mul_zero, Nat.zero_add]
       exact ⟨Nat.le_trans lower (Nat.le_add_left _ _), same⟩
 
 /-- Kinds with span zero open nothing, so dropping them keeps a population
@@ -201,13 +202,15 @@ theorem self_renewing_renews_forever (law : ChannelLaw Kind) {B : List Kind}
 /-- A decided search through a stretch of ticks. -/
 theorem range_search (P : Nat → Prop) (decide : ∀ m, P m ∨ ¬ P m) (a : Nat) :
     ∀ L, (∃ m, a ≤ m ∧ m < a + L ∧ P m) ∨ (∀ m, a ≤ m → m < a + L → ¬ P m)
-  | 0 => Or.inr (fun m low high _ => by omega)
+  | 0 => Or.inr (fun _ low high _ => Nat.lt_irrefl a (Nat.lt_of_le_of_lt low high))
   | L + 1 =>
     match range_search P decide a L, decide (a + L) with
-    | Or.inl ⟨m, low, high, holds⟩, _ => Or.inl ⟨m, low, by omega, holds⟩
-    | Or.inr _, Or.inl here => Or.inl ⟨a + L, Nat.le_add_right a L, by omega, here⟩
+    | Or.inl ⟨m, low, high, holds⟩, _ => Or.inl ⟨m, low, Nat.lt_succ_of_lt high, holds⟩
+    | Or.inr _, Or.inl here =>
+      Or.inl ⟨a + L, Nat.le_add_right a L, Nat.lt_succ_self (a + L), here⟩
     | Or.inr absent, Or.inr notHere => Or.inr (fun m low high =>
-        if same : m = a + L then same ▸ notHere else absent m low (by omega))
+        if same : m = a + L then same ▸ notHere
+        else absent m low (Nat.lt_of_le_of_ne (Nat.le_of_lt_succ high) same))
 
 /-- Whether some kind formed on a tick has a decidable property. -/
 theorem tick_search (law : ChannelLaw Kind) (X : Execution law) (Q : Kind → Prop)
@@ -222,8 +225,7 @@ theorem tick_search (law : ChannelLaw Kind) (X : Execution law) (Q : Kind → Pr
 theorem weighted_formed_eq (law : ChannelLaw Kind) :
     ∀ births : List Kind, weighted law.rate (formed law births) = spanOpening law births
   | [] => rfl
-  | k :: rest => by
-    simp only [formed, weighted, spanOpening, weighted_formed_eq law rest]
+  | k :: rest => congrArg (law.rate k * law.span k + ·) (weighted_formed_eq law rest)
 
 theorem spanOpening_le_formation (law : ChannelLaw Kind) :
     ∀ births : List Kind, (∀ k, k ∈ births → law.rate k * law.span k ≤ law.demand k) →
@@ -233,8 +235,7 @@ theorem spanOpening_le_formation (law : ChannelLaw Kind) :
     have here := each k List.mem_cons_self
     have ih := spanOpening_le_formation law rest
       (fun j member => each j (List.mem_cons_of_mem _ member))
-    simp only [formation, spanOpening]
-    omega
+    exact Nat.add_le_add here ih
 
 theorem spanOpening_lt_formation (law : ChannelLaw Kind) :
     ∀ births : List Kind, (∀ k, k ∈ births → law.rate k * law.span k ≤ law.demand k) →
@@ -248,15 +249,28 @@ theorem spanOpening_lt_formation (law : ChannelLaw Kind) :
     have here := each k List.mem_cons_self
     have restEach : ∀ i, i ∈ rest → law.rate i * law.span i ≤ law.demand i :=
       fun i inside => each i (List.mem_cons_of_mem _ inside)
-    simp only [formation, spanOpening]
-    cases List.mem_cons.mp member with
+    show law.rate k * law.span k + spanOpening law rest + 1 ≤ law.demand k + formation law rest
+    cases mem_cons_split member with
     | inl same =>
-      subst same
+      rw [same] at shortJ
       have ih := spanOpening_le_formation law rest restEach
-      omega
+      rw [Nat.add_right_comm]
+      exact Nat.add_le_add shortJ ih
     | inr tail =>
       have ih := spanOpening_lt_formation law rest restEach ⟨j, tail, shortJ⟩
-      omega
+      rw [Nat.add_assoc]
+      exact Nat.add_le_add here ih
+
+theorem characterization_cancel {a b c d : Nat} (step : a + c ≤ b + d) (enough : d ≤ c) :
+    a ≤ b :=
+  le_of_add_le_add_right_of (Nat.le_trans step (Nat.add_le_add_left enough b))
+
+theorem characterization_cancel_short {a b c d : Nat} (step : a + c ≤ b + d)
+    (enough : d + 1 ≤ c) : a + 1 ≤ b := by
+  have shifted : a + 1 + d ≤ b + d := by
+    rw [Nat.add_assoc, Nat.add_comm 1 d]
+    exact Nat.le_trans (Nat.add_le_add_left enough a) step
+  exact le_of_add_le_add_right_of shifted
 
 /-- The opening potential of an execution at time `m`. -/
 def potential {law : ChannelLaw Kind} (X : Execution law) (m : Nat) : Nat :=
@@ -268,8 +282,7 @@ theorem tick_potential {law : ChannelLaw Kind} (X : Execution law) (m : Nat)
   have step := opening_step law (X.steps m)
   rw [weighted_formed_eq] at step
   have enough := spanOpening_le_formation law (X.ticks m) each
-  simp only [potential]
-  omega
+  exact characterization_cancel step enough
 
 theorem tick_potential_short {law : ChannelLaw Kind} (X : Execution law) (m : Nat)
     (each : ∀ k, k ∈ X.ticks m → law.rate k * law.span k ≤ law.demand k)
@@ -278,9 +291,7 @@ theorem tick_potential_short {law : ChannelLaw Kind} (X : Execution law) (m : Na
   have step := opening_step law (X.steps m)
   rw [weighted_formed_eq] at step
   have enough := spanOpening_lt_formation law (X.ticks m) each short
-  clear short
-  simp only [potential]
-  omega
+  exact characterization_cancel_short step enough
 
 /-- Over a stretch with no formation of a kind that brings in more than its
 demand, the opening potential does not rise. -/
@@ -291,8 +302,9 @@ theorem stretch_potential {law : ChannelLaw Kind} (X : Execution law) (a : Nat) 
   | 0, _ => Nat.le_refl _
   | L + 1, each => by
     have earlier := stretch_potential X a L
-      (fun m low high => each m low (by omega))
-    have last := tick_potential X (a + L) (each (a + L) (Nat.le_add_right a L) (by omega))
+      (fun m low high => each m low (Nat.lt_succ_of_lt high))
+    have last := tick_potential X (a + L)
+      (each (a + L) (Nat.le_add_right a L) (Nat.lt_succ_self (a + L)))
     rw [← Nat.add_assoc]
     exact Nat.le_trans last earlier
 
@@ -306,16 +318,17 @@ theorem stretch_potential_short {law : ChannelLaw Kind} (X : Execution law) (a L
     potential X (a + L) + 1 ≤ potential X a := by
   obtain ⟨m, low, high, shortAt⟩ := short
   have at_m := tick_potential_short X m (each m low high) shortAt
-  clear shortAt
+  have shape : a + (m - a) = m := add_sub_of_le_eq low
   have before := stretch_potential X a (m - a)
-    (fun i lowI highI => each i lowI (by omega))
-  have shape : a + (m - a) = m := by omega
+    (fun i lowI highI => each i lowI
+      (Nat.lt_trans (Nat.lt_of_lt_of_le highI (Nat.le_of_eq shape)) high))
   rw [shape] at before
+  have shape' : m + 1 + (a + L - (m + 1)) = a + L := add_sub_of_le_eq high
   have after := stretch_potential X (m + 1) (a + L - (m + 1))
-    (fun i lowI highI => each i (by omega) (by omega))
-  have shape' : m + 1 + (a + L - (m + 1)) = a + L := by omega
+    (fun i lowI highI => each i (Nat.le_trans low (Nat.le_trans (Nat.le_succ m) lowI))
+      (Nat.lt_of_lt_of_le highI (Nat.le_of_eq shape')))
   rw [shape'] at after
-  omega
+  exact Nat.le_trans (Nat.add_le_add_right after 1) (Nat.le_trans at_m before)
 
 /-! ## Necessity -/
 
@@ -332,12 +345,12 @@ theorem cycle_with_tail {edge : Kind → Kind → Prop} {j q : Kind}
     | nil => exact False.elim (nonempty rfl)
   have inside : ∀ v, v ∈ j :: rest → v ∈ cycle ++ rest := by
     intro v member
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same => exact List.mem_append_left _ (same ▸ jIn)
     | inr tail => exact List.mem_append_right _ tail
   refine ⟨?_, inside q tail.end_mem⟩
   intro v member
-  cases List.mem_append.mp member with
+  cases mem_append_split member with
   | inl here =>
     obtain ⟨u, uIn, edgeUV⟩ := closed.2.1 v here
     exact ⟨u, List.mem_append_left _ uIn, edgeUV⟩
@@ -387,7 +400,7 @@ theorem support_closed_append {law : ChannelLaw Kind} {C E : List Kind}
     (closedC : SupportClosed law C) (closedE : SupportClosed law E) :
     SupportClosed law (C ++ E) := by
   intro k member
-  cases List.mem_append.mp member with
+  cases mem_append_split member with
   | inl here =>
     obtain ⟨j, jIn, edgeJK, spanJ⟩ := closedC k here
     exact ⟨j, List.mem_append_left _ jIn, edgeJK, spanJ⟩
@@ -409,6 +422,12 @@ theorem traced_support_closed {law : ChannelLaw Kind} {j r : Kind}
   obtain ⟨u, uIn, edgeUV, spanU⟩ := closedAll v member
   exact ⟨u, uIn, edgeUV, spanU⟩
 
+theorem characterization_lt_of_add_lt {a b c : Nat} (lt : a + c < b + c) : a < b := by
+  have shifted : a + 1 + c ≤ b + c := by
+    rw [Nat.add_right_comm]
+    exact lt
+  exact le_of_add_le_add_right_of shifted
+
 /-- A live token of a designated kind late in an execution descends from a
 realized cycle through a walk. Every kind on both was formed in the preceding
 `(n + 1) · D` ticks. -/
@@ -425,19 +444,18 @@ theorem kept_kind_descends {law : ChannelLaw Kind} (X : Execution law)
   have spanPositive : 0 < law.span tok.kind :=
     Nat.lt_of_lt_of_le alive (execution_within X t tok member)
   have Dlate : D < t := by
-    have : D ≤ (U.length + 1) * D := by
+    have within : D ≤ (U.length + 1) * D := by
       rw [Nat.succ_mul]
       exact Nat.le_add_left _ _
-    omega
+    exact Nat.lt_of_le_of_lt within late
   obtain ⟨s, occ, before, near⟩ := alive_token_recent_formation X D spanBound member alive Dlate
   have reachBound : ∀ j, (executionSupport X).reach j ≤ D := by
     intro j
-    have := spanBound j
     show law.span j - 1 ≤ D
-    omega
+    exact Nat.le_trans (Nat.sub_le _ _) (spanBound j)
   have lateS : U.length * D < s := by
     rw [Nat.succ_mul] at late
-    omega
+    exact characterization_lt_of_add_lt (Nat.lt_trans late near)
   obtain ⟨j, cycle, rest, nonempty, loop, tail, closed, window⟩ :=
     late_occurrence_descends_from_realized_closure (executionSupport X) U complete D
       reachBound occ lateS
@@ -445,8 +463,20 @@ theorem kept_kind_descends {law : ChannelLaw Kind} (X : Execution law)
   intro v inside
   obtain ⟨r, occV, beforeV, nearV⟩ := window v inside
   refine ⟨r, occV, Nat.le_trans beforeV before, ?_⟩
-  rw [Nat.succ_mul]
-  omega
+  rw [Nat.succ_mul, ← Nat.add_assoc]
+  exact Nat.lt_of_lt_of_le near (Nat.add_le_add_right nearV D)
+
+theorem characterization_add_succ_le {a b c i : Nat} (drop : a + 1 ≤ b) (bound : b + i ≤ c) :
+    a + (i + 1) ≤ c := by
+  rw [Nat.add_comm i 1, ← Nat.add_assoc]
+  exact Nat.le_trans (Nat.add_le_add_right drop i) bound
+
+theorem characterization_le_of_add_lt {e w m q : Nat} (near : e + w < m + 1 + q)
+    (short : q < w) : e ≤ m := by
+  rw [Nat.add_right_comm m 1 q] at near
+  have below : e + w < m + w :=
+    Nat.lt_of_le_of_lt (Nat.le_of_succ_le_succ near) (Nat.add_lt_add_left short m)
+  exact Nat.le_of_lt (characterization_lt_of_add_lt below)
 
 /-- **The window theorem, for designated kinds.** If an execution holds a live
 token of a designated kind at every time up to `(P + 2) · W`, the law has a
@@ -463,10 +493,11 @@ theorem kept_through_window_has_population (law : ChannelLaw Kind)
   generalize hP : potential X W = P at kept
   have reachBound : ∀ j, (executionSupport X).reach j ≤ D := by
     intro j
-    have := spanBound j
     show law.span j - 1 ≤ D
-    omega
-  have Wlate : (U.length + 1) * D < W := by omega
+    exact Nat.le_trans (Nat.sub_le _ _) (spanBound j)
+  have Wlate : (U.length + 1) * D < W := by
+    rw [← hW]
+    exact Nat.lt_succ_self _
   cases range_search
       (fun m => ∃ k, k ∈ X.ticks m ∧ law.demand k + 1 ≤ law.rate k * law.span k)
       (tick_search law X _) W ((P + 1) * W) with
@@ -476,16 +507,17 @@ theorem kept_through_window_has_population (law : ChannelLaw Kind)
     obtain ⟨m, low, _, q, inTick, excess⟩ := found
     have keepsW : Keeps K (X.states W) := by
       apply kept W
-      have : 1 * W ≤ (P + 2) * W := Nat.mul_le_mul_right W (by omega)
-      rw [Nat.one_mul] at this
-      exact this
+      have once : 1 * W ≤ (P + 2) * W :=
+        Nat.mul_le_mul_right W (Nat.succ_le_succ (Nat.zero_le _))
+      rw [Nat.one_mul] at once
+      exact once
     obtain ⟨r, j₂, cycle₂, rest₂, kR, rPositive, nonempty₂, loop₂, tail₂, closed₂, _⟩ :=
       kept_kind_descends X U complete D spanBound Wlate keepsW
     obtain ⟨closedR, rIn⟩ := traced_support_closed nonempty₂ loop₂ tail₂ closed₂
     have occ : (executionSupport X).occurs q (m + 1) := Or.inr ⟨m, rfl, inTick⟩
-    have late : U.length * D < m + 1 := by
-      rw [Nat.succ_mul] at hW
-      omega
+    have late : U.length * D < m + 1 :=
+      Nat.lt_of_le_of_lt (Nat.mul_le_mul_right D (Nat.le_succ _))
+        (Nat.lt_of_lt_of_le Wlate (Nat.le_trans low (Nat.le_succ m)))
     obtain ⟨j, cycle, rest, nonempty, loop, tail, closed, _⟩ :=
       late_occurrence_descends_from_realized_closure (executionSupport X) U complete D
         reachBound occ late
@@ -521,23 +553,22 @@ theorem kept_through_window_has_population (law : ChannelLaw Kind)
           exact Or.inl ⟨w, Nat.lt_succ_of_lt below, good⟩
         | inr bound =>
           have inRange : W + i * W + W ≤ W + (P + 1) * W := by
-            have := Nat.mul_le_mul_right W within
-            rw [Nat.succ_mul] at this
-            omega
+            rw [Nat.add_assoc, ← Nat.succ_mul]
+            exact Nat.add_le_add_left (Nat.mul_le_mul_right W within) W
           have eachHere : ∀ m, W + i * W ≤ m → m < W + i * W + W → ∀ k, k ∈ X.ticks m →
               law.rate k * law.span k ≤ law.demand k :=
-            fun m low high => each m (by omega) (by omega)
+            fun m low high => each m (Nat.le_trans (Nat.le_add_right W (i * W)) low)
+              (Nat.lt_of_lt_of_le high inRange)
           cases range_search
               (fun m => ∃ k, k ∈ X.ticks m ∧ law.rate k * law.span k + 1 ≤ law.demand k)
               (tick_search law X _) (W + i * W) W with
           | inl shortFound =>
             have drop := stretch_potential_short X (W + i * W) W eachHere shortFound
-            clear shortFound
             refine Or.inr ?_
             have shape : W + (i + 1) * W = W + i * W + W := by
               rw [Nat.succ_mul, Nat.add_assoc]
             rw [shape]
-            omega
+            exact characterization_add_succ_le drop bound
           | inr noShort =>
             refine Or.inl ⟨i, Nat.lt_succ_self i, ?_⟩
             intro m low high k member
@@ -547,18 +578,22 @@ theorem kept_through_window_has_population (law : ChannelLaw Kind)
         ∀ k, k ∈ X.ticks m → law.demand k ≤ law.rate k * law.span k := by
       cases windows (P + 1) (Nat.le_refl _) with
       | inl good => exact good
-      | inr impossible => exact False.elim (by omega)
+      | inr impossible =>
+        exact False.elim (Nat.not_succ_le_self P
+          (Nat.le_trans (Nat.le_add_left (P + 1) _) impossible))
     obtain ⟨w, below, good⟩ := found
     -- At the end of that window, either no designated kind is kept, or the one
     -- kept descends from a cycle and walk of kinds that bring in enough.
     have endBound : W + w * W + W ≤ (P + 2) * W := by
-      have := Nat.mul_le_mul_right W (Nat.le_of_lt_succ below)
       have shape : (P + 2) * W = W + P * W + W := by
-        rw [Nat.succ_mul, Nat.succ_mul]
-        omega
-      omega
+        rw [Nat.succ_mul, Nat.succ_mul, Nat.add_comm (P * W) W]
+      rw [shape]
+      exact Nat.add_le_add_right
+        (Nat.add_le_add_left (Nat.mul_le_mul_right W (Nat.le_of_lt_succ below)) W) W
     have keepsEnd := kept (W + w * W + W) endBound
-    have late : (U.length + 1) * D < W + w * W + W := by omega
+    have endLate : W ≤ W + w * W + W :=
+      Nat.le_trans (Nat.le_add_right W (w * W)) (Nat.le_add_right _ W)
+    have late : (U.length + 1) * D < W + w * W + W := Nat.lt_of_lt_of_le Wlate endLate
     obtain ⟨r, _, cycle, rest, kR, rPositive, nonempty, loop, tail, closed, window⟩ :=
       kept_kind_descends X U complete D spanBound late keepsEnd
     have adequate : ∀ v, v ∈ cycle ++ rest → law.demand v ≤ law.rate v * law.span v := by
@@ -567,10 +602,13 @@ theorem kept_through_window_has_population (law : ChannelLaw Kind)
       cases occ with
       | inl initial =>
         obtain ⟨zero, _⟩ := initial
-        exact False.elim (by omega)
+        rw [zero, Nat.zero_add] at near
+        exact False.elim
+          (Nat.lt_irrefl _ (Nat.lt_trans Wlate (Nat.lt_of_le_of_lt endLate near)))
       | inr formedAt =>
         obtain ⟨m, timeEq, inTick⟩ := formedAt
-        exact good m (by omega) (by omega) v inTick
+        rw [timeEq] at near before
+        exact good m (characterization_le_of_add_lt near Wlate) before v inTick
     obtain ⟨closedC, rIn⟩ := traced_support_closed nonempty loop tail closed
     exact ⟨cycle ++ rest, ⟨append_nonempty nonempty, closedC,
       balanced_of_each law _ adequate⟩, r, rIn, kR, rPositive⟩
@@ -651,15 +689,13 @@ theorem steady_contains_fresh (law : ChannelLaw Kind) {B : List Kind} {k : Kind}
     (member : k ∈ B) (positive : 0 < law.span k) :
     ∀ N, 0 < N → ⟨k, law.span k⟩ ∈ steady law B N
   | 0, zero => False.elim (Nat.lt_irrefl 0 zero)
-  | N + 1, _ => by
-    cases N with
-    | zero =>
-      have fresh := mem_block law 0 member positive
-      rw [Nat.sub_zero] at fresh
-      exact List.mem_append_left _ fresh
-    | succ M =>
-      exact List.mem_append_right _ (steady_contains_fresh law member positive (M + 1)
-        (Nat.zero_lt_succ M))
+  | 1, _ => by
+    have fresh := mem_block law 0 member positive
+    rw [Nat.sub_zero] at fresh
+    exact List.mem_append_left _ fresh
+  | M + 2, _ =>
+    List.mem_append_right _ (steady_contains_fresh law member positive (M + 1)
+      (Nat.zero_lt_succ M))
 
 /-- **Keeping designated kinds.** With finitely many kinds, some history keeps a
 live token of a designated kind at every time exactly when some self-renewing
@@ -718,14 +754,15 @@ theorem opened_le_weighted (w : Kind → Nat) :
   | [] => Nat.le_refl 0
   | tok :: rest => by
     have ih := opened_le_weighted w rest
-    simp only [opened, weighted]
+    show (if tok.remaining = 0 then 0 else w tok.kind) + opened w rest ≤
+      w tok.kind * tok.remaining + weighted w rest
     by_cases zero : tok.remaining = 0
-    · rw [if_pos zero]
-      omega
+    · rw [if_pos zero, Nat.zero_add]
+      exact Nat.le_trans ih (Nat.le_add_left _ _)
     · rw [if_neg zero]
       have once : w tok.kind ≤ w tok.kind * tok.remaining :=
         Nat.le_mul_of_pos_right _ (Nat.pos_of_ne_zero zero)
-      omega
+      exact Nat.add_le_add once ih
 
 theorem length_le_formation (law : ChannelLaw Kind) (demandPositive : ∀ k, 1 ≤ law.demand k) :
     ∀ births : List Kind, births.length ≤ formation law births
@@ -733,8 +770,9 @@ theorem length_le_formation (law : ChannelLaw Kind) (demandPositive : ∀ k, 1 �
   | k :: rest => by
     have ih := length_le_formation law demandPositive rest
     have here := demandPositive k
-    simp only [List.length_cons, formation]
-    omega
+    show rest.length + 1 ≤ law.demand k + formation law rest
+    rw [Nat.add_comm rest.length 1]
+    exact Nat.add_le_add here ih
 
 theorem spanOpening_le_length (law : ChannelLaw Kind) (A D : Nat)
     (rateBound : ∀ k, law.rate k ≤ A) (spanBound : ∀ k, law.span k ≤ D) :
@@ -743,8 +781,9 @@ theorem spanOpening_le_length (law : ChannelLaw Kind) (A D : Nat)
   | k :: rest => by
     have ih := spanOpening_le_length law A D rateBound spanBound rest
     have here := Nat.mul_le_mul (rateBound k) (spanBound k)
-    simp only [List.length_cons, spanOpening, Nat.mul_succ]
-    omega
+    show law.rate k * law.span k + spanOpening law rest ≤ A * D * (rest.length + 1)
+    rw [Nat.mul_succ, Nat.add_comm (A * D * rest.length)]
+    exact Nat.add_le_add here ih
 
 /-- With positive formation demands, one tick multiplies the opening potential
 by at most `1 + A · D`: formations are paid from what is already held or
@@ -759,12 +798,13 @@ theorem potential_growth {law : ChannelLaw Kind} (H : History law) (A D : Nat)
   have openBound := opened_le_weighted law.rate (H.states m).tokens
   have count := length_le_formation law demandPositive (H.ticks m)
   have opening := spanOpening_le_length law A D rateBound spanBound (H.ticks m)
-  have few : (H.ticks m).length ≤ openingPotential law (H.states m) := by
-    simp only [openingPotential]
-    omega
+  have few : (H.ticks m).length ≤ openingPotential law (H.states m) :=
+    Nat.le_trans count (Nat.le_trans (Nat.le_add_left _ _)
+      (Nat.le_trans balance (Nat.add_le_add_left openBound _)))
   have scaled := Nat.mul_le_mul_left (A * D) few
-  rw [Nat.add_mul, Nat.one_mul]
-  omega
+  rw [add_mul_eq, Nat.one_mul]
+  exact Nat.le_trans (Nat.le_add_right _ _)
+    (Nat.le_trans step (Nat.add_le_add_left (Nat.le_trans opening scaled) _))
 
 theorem potential_bound {law : ChannelLaw Kind} (H : History law) (A D : Nat)
     (rateBound : ∀ k, law.rate k ≤ A) (spanBound : ∀ k, law.span k ≤ D)
@@ -776,7 +816,7 @@ theorem potential_bound {law : ChannelLaw Kind} (H : History law) (A D : Nat)
     have grow := potential_growth H A D rateBound spanBound demandPositive m
     have ih := Nat.mul_le_mul_left (1 + A * D) (potential_bound H A D rateBound spanBound
       demandPositive m)
-    rw [Nat.pow_succ, Nat.mul_comm ((1 + A * D) ^ m) (1 + A * D), Nat.mul_assoc]
+    rw [Nat.pow_succ, Nat.mul_comm ((1 + A * D) ^ m) (1 + A * D), mul_assoc_eq]
     exact Nat.le_trans grow ih
 
 /-- The growth factor of the opening potential per tick: one plus the largest
@@ -823,6 +863,9 @@ theorem no_self_renewing_population_explicit_deadline
 
 /-! ## Examples -/
 
+theorem characterization_shuffle (a s l : Nat) : a + s + (l + 1) = a + 1 + (s + l) := by
+  rw [← Nat.add_assoc (a + s) l 1, Nat.add_assoc a s l, Nat.add_right_comm a (s + l) 1]
+
 /-- The law decides the single short kind: no population of it renews. -/
 theorem closed_open_short_has_no_self_renewing_population :
     ¬ ∃ B, SelfRenewing closedOpenShort B := by
@@ -834,16 +877,16 @@ theorem closed_open_short_has_no_self_renewing_population :
     induction B with
     | nil => exact Nat.le_refl 0
     | cons k rest ih =>
-      simp only [spanOpening, formation, List.length_cons]
       show 1 * 3 + spanOpening closedOpenShort rest + (rest.length + 1) ≤
         4 + formation closedOpenShort rest
-      omega
+      rw [characterization_shuffle]
+      exact Nat.add_le_add (Nat.le_refl 4) ih
   have short := gap B
   cases B with
   | nil => exact nonempty rfl
   | cons k rest =>
-    simp only [List.length_cons] at short
-    omega
+    exact Nat.not_succ_le_self _ (Nat.le_trans (Nat.le_trans
+      (Nat.add_le_add_left (Nat.succ_le_succ (Nat.zero_le rest.length)) _) short) balanced)
 
 /-- Two kinds. Kind `false` supports itself and kind `true`; it falls short
 (rate 1, span 2, demand 5). Kind `true` supports nothing and brings in more
@@ -906,10 +949,10 @@ theorem lapsing_balance :
     cases k with
     | false =>
       show 1 * 3 + spanOpening lapsingCorrection rest ≤ 3 + formation lapsingCorrection rest
-      omega
+      exact Nat.add_le_add (Nat.le_refl 3) ih
     | true =>
       show 1 * 3 + spanOpening lapsingCorrection rest ≤ 4 + formation lapsingCorrection rest
-      omega
+      exact Nat.add_le_add (Nat.le_succ 3) ih
 
 theorem lapsing_correction_gap :
     ∀ B : List Bool, true ∈ B →
@@ -919,18 +962,20 @@ theorem lapsing_correction_gap :
     cases k with
     | false =>
       have inside : true ∈ rest := by
-        cases List.mem_cons.mp member with
+        cases mem_cons_split member with
         | inl same => exact Bool.noConfusion same
         | inr tail => exact tail
       have ih := lapsing_correction_gap rest inside
       show 1 * 3 + spanOpening lapsingCorrection rest + 1 ≤
         3 + formation lapsingCorrection rest
-      omega
+      rw [Nat.add_assoc]
+      exact Nat.add_le_add (Nat.le_refl 3) ih
     | true =>
       have ih := lapsing_balance rest
       show 1 * 3 + spanOpening lapsingCorrection rest + 1 ≤
         4 + formation lapsingCorrection rest
-      omega
+      rw [Nat.add_right_comm]
+      exact Nat.add_le_add (Nat.le_refl 4) ih
 
 /-- **Correction lapses while the closure renews.** No execution keeps the
 correction kind forever. Every execution loses it by an explicit time. -/
@@ -947,7 +992,7 @@ theorem lapsing_correction_cannot_be_kept :
   obtain ⟨B, ⟨_, _, balanced⟩, k, kIn, kTrue, _⟩ := population
   subst kTrue
   have gap := lapsing_correction_gap B kIn
-  omega
+  exact Nat.not_succ_le_self _ (Nat.le_trans gap balanced)
 
 #print axioms block_within
 #print axioms mem_positivePart
@@ -958,6 +1003,12 @@ theorem lapsing_correction_cannot_be_kept :
 #print axioms steady_within
 #print axioms self_renewing_renews_forever
 #print axioms range_search
+#print axioms characterization_cancel
+#print axioms characterization_cancel_short
+#print axioms characterization_lt_of_add_lt
+#print axioms characterization_add_succ_le
+#print axioms characterization_le_of_add_lt
+#print axioms characterization_shuffle
 #print axioms tick_search
 #print axioms weighted_formed_eq
 #print axioms spanOpening_le_formation
