@@ -41,7 +41,7 @@ E(t)+d(a)&=E(s).
 \end{aligned}
 \]
 
-These exact equalities imply four instances of `AccountLaw`. Capture is provision across the usable or local boundary and an equal withdrawal across the source boundary. It supplies no credit to the closed boundary. A repaired site makes a transfer possible; it does not create the transferred resource.
+These exact equalities imply four instances of `SustainLaw`. Capture is provision across the usable or local boundary and an equal withdrawal across the source boundary. It supplies no credit to the closed boundary. A repaired site makes a transfer possible; it does not create the transferred resource.
 
 The concurrent [FormationAccounts.lean](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean) gives a boundary-indexed version of the usable, source, closed and common accounts, including exact trace equalities and a reaction/leakage split. The overlapping results concern the **same supplied event law** and are consistency checks, not independent empirical evidence. The additional work here is the local-store account, capture necessity, local-copy budget and explicit post-repair continuation.
 
@@ -49,7 +49,7 @@ The concurrent [FormationAccounts.lean](../../../../experiments/shared-renewal-c
 
 For any root trace (s\xrightarrow{w}t), `root_trace_account` constructs its `SupportTrace` with exact expenditure, provision and positive-credit-event totals. Every actual intermediate state is retained. Event-only weights are valid here because the concrete model defines these quantities by event; the generic theorem also accommodates state-dependent weights.
 
-Applying `support_trace_balance` yields
+Applying `support_trace_bound` yields
 
 \[
 \begin{aligned}

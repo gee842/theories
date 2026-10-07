@@ -12,8 +12,8 @@ This module asks whether that choice follows from what the organization must
 draw from its sustaining store in order to continue.
 
 1. Native draw. Every completed sensing command (`a`, `read`, `reset`) draws
-   exactly the native interface amount `bill`, and leaves that amount unchanged;
-   a completed history of such commands draws its length times `bill`. The amount
+   exactly the native interface amount `draw`, and leaves that amount unchanged;
+   a completed history of such commands draws its length times `draw`. The amount
    grows strictly with retained cells. A retained one-action cycle model of
    period `n` occupies `1 + 2n` cells (`Machine.cells` in the acquisition source;
    this correspondence is supplied, not proved here).
@@ -47,8 +47,8 @@ exhaustive for periods one through eight only.
 namespace Generative.InquirySufficiency.PhasePeriodSelection
 
 open Generative
-open Generative.NativePacketProcess (State Command execute bill peak debit charge
-  charge_paid_iff process)
+open Generative.NativePacketProcess (State Command execute draw peak enact support
+  support_sustained_iff process)
 open Generative.InquirySufficiency.PhaseCycleDerivation
   (bitAt allOf anyOf upto patterns bothValuesOccur)
 
@@ -68,15 +68,15 @@ def sensingOnly : List Command → Bool
 theorem sensing_command_draws (s t : State) (command : Command)
     (observation : NativePacketProcess.Observation) (isSensing : sensing command = true)
     (actual : execute s command = .complete t observation) :
-    t.spent = s.spent + bill s ∧ bill t = bill s ∧ t.live = s.live ∧
+    t.enacted = s.enacted + draw s ∧ draw t = draw s ∧ t.live = s.live ∧
       t.workspace = s.workspace := by
   unfold execute at actual
-  generalize interface : charge s = payment at actual
-  cases payment with
+  generalize interface : support s = outcome at actual
+  cases outcome with
   | capacity => cases actual
-  | funding => cases actual
-  | paid ready =>
-    obtain ⟨_, equality⟩ := (charge_paid_iff s ready).mp interface
+  | insufficient => cases actual
+  | sustained ready =>
+    obtain ⟨_, equality⟩ := (support_sustained_iff s ready).mp interface
     cases equality
     cases command with
     | a => cases actual; exact ⟨rfl, rfl, rfl, rfl⟩
@@ -88,7 +88,7 @@ theorem sensing_command_draws (s t : State) (command : Command)
 native per-command amount, which stays fixed along the history. -/
 theorem sensing_history_draws {s t : State} {commands : List Command}
     (trace : Trace process s commands t) (onlySensing : sensingOnly commands = true) :
-    t.spent = s.spent + commands.length * bill s ∧ bill t = bill s := by
+    t.enacted = s.enacted + commands.length * draw s ∧ draw t = draw s := by
   induction trace with
   | nil =>
     refine ⟨?_, rfl⟩
@@ -111,13 +111,13 @@ theorem sensing_history_draws {s t : State} {commands : List Command}
     obtain ⟨restDrawn, restSame⟩ := ih restSensing
     refine ⟨?_, restSame.trans same⟩
     rw [restDrawn, drawn, same]
-    change s.spent + bill s + rest.length * bill s = s.spent + (rest.length + 1) * bill s
-    rw [Nat.succ_mul, Nat.add_assoc, Nat.add_comm (bill s)]
+    change s.enacted + draw s + rest.length * draw s = s.enacted + (rest.length + 1) * draw s
+    rw [Nat.succ_mul, Nat.add_assoc, Nat.add_comm (draw s)]
 
 /-- The per-command amount grows strictly with retained cells. -/
 theorem draw_grows_with_live (s t : State) (more : s.live < t.live)
-    (workspace : s.workspace = t.workspace) : bill s < bill t := by
-  unfold bill peak
+    (workspace : s.workspace = t.workspace) : draw s < draw t := by
+  unfold draw peak
   rw [workspace]
   exact Nat.add_lt_add_left (Nat.add_lt_add_right (Nat.add_lt_add_right more _) _) _
 
@@ -362,18 +362,18 @@ theorem three_phase_least_guaranteed_draw (pattern : List Bool) (commands rest :
     (threeLive : threeState.live = rest + retainedCycleCells 3)
     (otherLive : otherState.live = rest + retainedCycleCells pattern.length)
     (workspace : threeState.workspace = otherState.workspace) :
-    7 * bill threeState ≤ commands * bill otherState ∧
-      (pattern.length ≠ 3 → 7 * bill threeState < commands * bill otherState) := by
+    7 * draw threeState ≤ commands * draw otherState ∧
+      (pattern.length ≠ 3 → 7 * draw threeState < commands * draw otherState) := by
   have seven := at_least_seven pattern commands bounded
     (Nat.le_trans (by decide) three) known
-  have perCommand : bill threeState ≤ bill otherState := by
+  have perCommand : draw threeState ≤ draw otherState := by
     cases Nat.lt_or_eq_of_le three with
     | inl longer =>
       exact Nat.le_of_lt (draw_grows_with_live threeState otherState
         (by rw [threeLive, otherLive]
             exact Nat.add_lt_add_left (retained_cells_grow 3 _ longer) rest) workspace)
     | inr same =>
-      unfold bill peak
+      unfold draw peak
       rw [threeLive, otherLive, workspace, ← same]
       exact Nat.le_refl _
   refine ⟨Nat.mul_le_mul seven perCommand, fun different => ?_⟩
@@ -381,7 +381,7 @@ theorem three_phase_least_guaranteed_draw (pattern : List Bool) (commands rest :
     cases Nat.lt_or_eq_of_le three with
     | inl longer => exact longer
     | inr same => exact absurd same.symm different
-  have strictly : bill threeState < bill otherState :=
+  have strictly : draw threeState < draw otherState :=
     draw_grows_with_live threeState otherState
       (by rw [threeLive, otherLive]
           exact Nat.add_lt_add_left (retained_cells_grow 3 _ longer) rest) workspace

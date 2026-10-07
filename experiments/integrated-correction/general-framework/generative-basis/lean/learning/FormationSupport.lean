@@ -44,7 +44,7 @@ theorem step_usable_ledger (h : Step material s a t) :
   omega
 
 theorem usable_account (material : Nat) :
-    AccountLaw (rootProcess material) usable
+    SustainLaw (rootProcess material) usable
       (eventQuantity expenditure) (eventQuantity captureAmount) := by
   intro s a t h
   have he := step_usable_ledger h
@@ -52,7 +52,7 @@ theorem usable_account (material : Nat) :
   omega
 
 theorem local_account (material : Nat) :
-    AccountLaw (rootProcess material) (fun s => bit s.localFuel)
+    SustainLaw (rootProcess material) (fun s => bit s.localFuel)
       (eventQuantity localExpenditure) (eventQuantity captureAmount) := by
   intro s a t h
   have he := step_local_ledger h
@@ -60,7 +60,7 @@ theorem local_account (material : Nat) :
   omega
 
 theorem source_account (material : Nat) :
-    AccountLaw (rootProcess material) State.source
+    SustainLaw (rootProcess material) State.source
       (eventQuantity captureAmount) (eventQuantity (fun _ => 0)) := by
   intro s a t h
   have he := step_source_ledger h
@@ -68,7 +68,7 @@ theorem source_account (material : Nat) :
   omega
 
 theorem closed_account (material : Nat) :
-    AccountLaw (rootProcess material) energy
+    SustainLaw (rootProcess material) energy
       (eventQuantity expenditure) (eventQuantity (fun _ => 0)) := by
   intro s a t h
   have he := step_energy_ledger h
@@ -81,17 +81,17 @@ theorem root_trace_account (demand credit : Event → Nat)
     (h : Generative.Trace (rootProcess material) s as t) :
     SupportTrace (rootProcess material) (eventQuantity demand) (eventQuantity credit)
       s as t (tally demand as) (tally credit as)
-        (tally (fun a => credited (credit a)) as) := by
+        (tally (fun a => arrivalEvent (credit a)) as) := by
   induction h with
   | nil s => exact .nil s
   | cons hs _ ih => exact .cons hs ih
 
 theorem root_account_bound (reserve : State → Nat) (demand credit : Event → Nat)
-    (law : AccountLaw (rootProcess material) reserve
+    (law : SustainLaw (rootProcess material) reserve
       (eventQuantity demand) (eventQuantity credit))
     (h : Generative.Trace (rootProcess material) s as t) :
     tally demand as + reserve t ≤ reserve s + tally credit as :=
-  support_trace_balance reserve law (root_trace_account demand credit h)
+  support_trace_bound reserve law (root_trace_account demand credit h)
 
 theorem tally_zero (as : List Event) : tally (fun _ => 0) as = 0 := by
   induction as with
@@ -194,7 +194,7 @@ theorem paid_witness_account :
     SupportTrace (rootProcess 3) (eventQuantity expenditure) (eventQuantity captureAmount)
       initial witnessEvents copied 5 1 1 := by
   simpa only [witnessEvents, tally, expenditure, captureAmount, eventIndicator,
-    credited, Event.noConfusion, ↓reduceIte, Nat.reduceAdd] using
+    arrivalEvent, Event.noConfusion, ↓reduceIte, Nat.reduceAdd] using
       root_trace_account expenditure captureAmount root_formation_to_copy
 
 theorem paid_witness_saturates :

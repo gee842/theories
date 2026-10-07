@@ -14,15 +14,15 @@ Three results close the contact-formation track.
 
 2. **Spare pairs from the port's own failures.** The contact-formation module
    supplied an inherited spare stock. Here the stock starts empty. A supported
-   recovery step turns ten units of recorded failed conversion (`wasted`) into
-   one spare pair. The native `wasted` counter itself is never decremented; a
+   recovery step turns ten units of recorded failed conversion (`dissipated`) into
+   one spare pair. The native `dissipated` counter itself is never decremented; a
    separate `recovered` count is bounded by it. Every formation is therefore
    backed by failed transfers recorded in the same history.
 
 3. **What evidence can and cannot decide.** A failed transfer leaves the same
-   receipt and the same ledger whether the contact is blocked or open but
-   misaligned. Retained accounting alone cannot identify blockage, and forming
-   an already open contact draws reserve and a spare pair for no change. When
+   receipt and the same record whether the contact is blocked or open but
+   misaligned. The retained record alone cannot identify blockage, and forming
+   an already open contact draws from what is held and uses a spare pair for no change. When
    the port is aligned to the output that differs from `tau`, the transfer
    identifies the contact exactly. That alignment uses phase and inversion
    knowledge that is not acquired here.
@@ -30,8 +30,8 @@ Three results close the contact-formation track.
 A single executed history then takes a blocked port with no spares through a
 failed probe, recover and formation to an actual transfer.
 
-Supplied: the recovery rate (ten wasted units per pair), its native interface
-demand, and the contact-opening rule. The decision to recover or form is not
+Supplied: the recovery rate (ten dissipated units per pair), its native interface
+draw, and the contact-opening rule. The decision to recover or form is not
 derived; it is the reason the evidence results are stated separately.
 -/
 
@@ -110,15 +110,15 @@ inductive Outcome where
   | stopped (port : Port)
 
 def finishRecovery (x : Port) (ready : NativePacketProcess.State) : Outcome :=
-  if 10 * (x.recovered + 1) ≤ ready.wasted then .complete ⟨ready, x.spare + 1, x.recovered + 1⟩
+  if 10 * (x.recovered + 1) ≤ ready.dissipated then .complete ⟨ready, x.spare + 1, x.recovered + 1⟩
   else .stopped ⟨ready, x.spare, x.recovered⟩
 
-/-- Meet the native interface demand, then recover a pair from ten unrecovered wasted units. -/
+/-- Meet the native interface draw, then recover a pair from ten unrecovered dissipated units. -/
 def recover (x : Port) : Outcome :=
-  match charge x.native with
+  match support x.native with
   | .capacity => .stopped x
-  | .funding => .stopped x
-  | .paid ready => finishRecovery x ready
+  | .insufficient => .stopped x
+  | .sustained ready => finishRecovery x ready
 
 /-- Contact formation exactly as in `ContactFormation`, carrying the recover count. -/
 def formPort (x : Port) : Outcome :=
@@ -149,21 +149,21 @@ def contact (x : Port) : Bool × Bool := (x.native.tau, x.native.blocked)
 
 theorem recover_complete_iff (x y : Port) :
     recover x = .complete y ↔
-      Payable x.native ∧ 10 * (x.recovered + 1) ≤ x.native.wasted ∧
-        y = ⟨debit x.native, x.spare + 1, x.recovered + 1⟩ := by
+      Supportable x.native ∧ 10 * (x.recovered + 1) ≤ x.native.dissipated ∧
+        y = ⟨enact x.native, x.spare + 1, x.recovered + 1⟩ := by
   constructor
   · intro completed
     unfold recover at completed
-    generalize interface : charge x.native = payment at completed
-    cases payment with
+    generalize interface : support x.native = outcome at completed
+    cases outcome with
     | capacity => cases completed
-    | funding => cases completed
-    | paid ready =>
-      obtain ⟨sustained, equality⟩ := (charge_paid_iff x.native ready).mp interface
+    | insufficient => cases completed
+    | sustained ready =>
+      obtain ⟨sustained, equality⟩ := (support_sustained_iff x.native ready).mp interface
       cases equality
       dsimp only at completed
       unfold finishRecovery at completed
-      by_cases backed : 10 * (x.recovered + 1) ≤ (debit x.native).wasted
+      by_cases backed : 10 * (x.recovered + 1) ≤ (enact x.native).dissipated
       · rw [if_pos backed] at completed
         cases completed
         exact ⟨sustained, backed, rfl⟩
@@ -171,15 +171,15 @@ theorem recover_complete_iff (x y : Port) :
         cases completed
   · rintro ⟨sustained, backed, rfl⟩
     unfold recover
-    rw [charge_paid x.native sustained.1 sustained.2]
+    rw [support_sustained x.native sustained.1 sustained.2]
     dsimp only
     unfold finishRecovery
-    rw [if_pos (show 10 * (x.recovered + 1) ≤ (debit x.native).wasted from backed)]
+    rw [if_pos (show 10 * (x.recovered + 1) ≤ (enact x.native).dissipated from backed)]
 
 theorem formPort_complete_iff (x y : Port) :
     formPort x = .complete y ↔
-      Payable x.native ∧ 1 ≤ x.spare ∧
-        y = ⟨ContactFormation.openContact (debit x.native), x.spare - 1, x.recovered⟩ := by
+      Supportable x.native ∧ 1 ≤ x.spare ∧
+        y = ⟨ContactFormation.openContact (enact x.native), x.spare - 1, x.recovered⟩ := by
   constructor
   · intro completed
     unfold formPort at completed
@@ -215,9 +215,9 @@ theorem class_change_requires_formation {x y : Port} {events : List Event}
     1 ≤ formations events :=
   law_change_requires_formation activity_retains_contact (fun c => targetOf c.1 c.2) trace changed
 
-theorem completed_native_wasted_monotone {s t : NativePacketProcess.State}
+theorem completed_native_dissipated_monotone {s t : NativePacketProcess.State}
     {command : NativePacketProcess.Command} {o : Observation}
-    (actual : execute s command = .complete t o) : s.wasted ≤ t.wasted := by
+    (actual : execute s command = .complete t o) : s.dissipated ≤ t.dissipated := by
   cases command with
   | probe =>
     obtain ⟨_, rfl, _⟩ := (probe_complete_iff s t o).mp actual
@@ -225,37 +225,37 @@ theorem completed_native_wasted_monotone {s t : NativePacketProcess.State}
     exact Nat.le_add_right _ _
   | a =>
     unfold execute at actual
-    generalize interface : charge s = payment at actual
-    cases payment with
+    generalize interface : support s = outcome at actual
+    cases outcome with
     | capacity => cases actual
-    | funding => cases actual
-    | paid ready =>
-      obtain ⟨_, rfl⟩ := (charge_paid_iff s ready).mp interface
+    | insufficient => cases actual
+    | sustained ready =>
+      obtain ⟨_, rfl⟩ := (support_sustained_iff s ready).mp interface
       cases actual
       exact Nat.le_refl _
   | reset =>
     unfold execute at actual
-    generalize interface : charge s = payment at actual
-    cases payment with
+    generalize interface : support s = outcome at actual
+    cases outcome with
     | capacity => cases actual
-    | funding => cases actual
-    | paid ready =>
-      obtain ⟨_, rfl⟩ := (charge_paid_iff s ready).mp interface
+    | insufficient => cases actual
+    | sustained ready =>
+      obtain ⟨_, rfl⟩ := (support_sustained_iff s ready).mp interface
       cases actual
       exact Nat.le_refl _
   | read =>
     unfold execute at actual
-    generalize interface : charge s = payment at actual
-    cases payment with
+    generalize interface : support s = outcome at actual
+    cases outcome with
     | capacity => cases actual
-    | funding => cases actual
-    | paid ready =>
-      obtain ⟨_, rfl⟩ := (charge_paid_iff s ready).mp interface
+    | insufficient => cases actual
+    | sustained ready =>
+      obtain ⟨_, rfl⟩ := (support_sustained_iff s ready).mp interface
       cases actual
       exact Nat.le_refl _
 
 /-- Recovered pairs never exceed a tenth of the recorded failed conversion. -/
-def Backed (x : Port) : Prop := 10 * x.recovered ≤ x.native.wasted
+def Backed (x : Port) : Prop := 10 * x.recovered ≤ x.native.dissipated
 
 theorem step_preserves_backing {x y : Port} {event : Event}
     (step : process.step x event y) (backed : Backed x) : Backed y := by
@@ -266,7 +266,7 @@ theorem step_preserves_backing {x y : Port} {event : Event}
       obtain ⟨⟨_, actual⟩, _, kept⟩ := step
       unfold Backed
       rw [kept]
-      exact Nat.le_trans backed (completed_native_wasted_monotone actual)
+      exact Nat.le_trans backed (completed_native_dissipated_monotone actual)
     | inr _ =>
       obtain ⟨_, enough, rfl⟩ := (recover_complete_iff x y).mp step
       exact enough
@@ -280,8 +280,8 @@ theorem trace_preserves_backing {x y : Port} {events : List Event}
   | nil => exact backed
   | cons step _ ih => exact ih (step_preserves_backing step backed)
 
-/-- Exact pair ledger: spares come only from recover and leave only by formation. -/
-theorem pair_ledger {x y : Port} {events : List Event} (trace : Trace process x events y) :
+/-- Exact pair record: spares come only from recover and leave only by formation. -/
+theorem pair_record {x y : Port} {events : List Event} (trace : Trace process x events y) :
     y.spare + formations events = x.spare + recoveries events ∧
       y.recovered = x.recovered + recoveries events := by
   induction trace with
@@ -314,19 +314,19 @@ theorem pair_ledger {x y : Port} {events : List Event} (trace : Trace process x 
 conversion recorded in the same history. -/
 theorem formations_backed_by_failures {x y : Port} {events : List Event}
     (trace : Trace process x events y) (noSpare : x.spare = 0) (noRecovery : x.recovered = 0)
-    (noWaste : x.native.wasted = 0) :
-    formations events ≤ recoveries events ∧ 10 * recoveries events ≤ y.native.wasted := by
-  have ledger := pair_ledger trace
+    (noDissipation : x.native.dissipated = 0) :
+    formations events ≤ recoveries events ∧ 10 * recoveries events ≤ y.native.dissipated := by
+  have record := pair_record trace
   have backed := trace_preserves_backing trace (by
     unfold Backed
-    rw [noRecovery, noWaste]
+    rw [noRecovery, noDissipation]
     exact Nat.le_refl 0)
-  rw [noSpare, Nat.zero_add] at ledger
+  rw [noSpare, Nat.zero_add] at record
   refine ⟨?_, ?_⟩
-  · rw [← ledger.1]
+  · rw [← record.1]
     exact Nat.le_add_left _ _
   · unfold Backed at backed
-    rw [ledger.2, noRecovery, Nat.zero_add] at backed
+    rw [record.2, noRecovery, Nat.zero_add] at backed
     exact backed
 
 theorem arrival_false_of_blocked (s : NativePacketProcess.State) (blocked : s.blocked = true) :
@@ -342,16 +342,16 @@ theorem arrival_false_of_misaligned (s : NativePacketProcess.State)
   cases s.tau <;> rfl
 
 /-- A blocked contact and an open but misaligned contact leave the same receipt
-and the same ledger after a probe. Accounting cannot tell them apart. -/
+and the same record after a probe. The record cannot tell them apart. -/
 theorem failed_transfer_indistinguishable (s : NativePacketProcess.State)
     (misaligned : output s.phase = s.tau) :
     let blockedPort := { s with blocked := true }
     let openPort := ContactFormation.openContact s
     receiptBit blockedPort = receiptBit openPort ∧
-      (probeFinal blockedPort).wasted = (probeFinal openPort).wasted ∧
+      (probeFinal blockedPort).dissipated = (probeFinal openPort).dissipated ∧
       (probeFinal blockedPort).transferred = (probeFinal openPort).transferred ∧
-      (probeFinal blockedPort).fuel = (probeFinal openPort).fuel ∧
-      (probeFinal blockedPort).income = (probeFinal openPort).income ∧
+      (probeFinal blockedPort).held = (probeFinal openPort).held ∧
+      (probeFinal blockedPort).arrived = (probeFinal openPort).arrived ∧
       (probeFinal blockedPort).source = (probeFinal openPort).source ∧
       targetOf blockedPort.tau blockedPort.blocked ≠ targetOf openPort.tau openPort.blocked := by
   have closed : arrival { s with blocked := true } = false :=
@@ -367,21 +367,21 @@ theorem failed_transfer_indistinguishable (s : NativePacketProcess.State)
   · rw [(probe_final_effects _).2.2.2.2.2.1, (probe_final_effects _).2.2.2.2.2.1, closed, missed]
     rfl
   · rw [(probe_final_effects _).2.2.1, (probe_final_effects _).2.2.1]
-    unfold gain
+    unfold arrivalAmount
     rw [closed, missed]
     rfl
   · rw [(probe_final_effects _).2.2.2.2.1, (probe_final_effects _).2.2.2.2.1]
-    unfold gain
+    unfold arrivalAmount
     rw [closed, missed]
     rfl
   · change targetOf s.tau true ≠ targetOf s.tau false
     cases s.tau <;> exact fun same => by cases same
 
-/-- Forming an already open contact draws reserve and a pair and changes no class. -/
+/-- Forming an already open contact draws from what is held, uses a pair and changes no class. -/
 theorem redundant_formation_draws (x y : Port) (open_ : x.native.blocked = false)
     (formed : formPort x = .complete y) :
     targetOf y.native.tau y.native.blocked = targetOf x.native.tau x.native.blocked ∧
-      y.native.fuel = x.native.fuel - bill x.native ∧ y.spare = x.spare - 1 := by
+      y.native.held = x.native.held - draw x.native ∧ y.spare = x.spare - 1 := by
   obtain ⟨_, _, rfl⟩ := (formPort_complete_iff x y).mp formed
   refine ⟨?_, rfl, rfl⟩
   change targetOf x.native.tau false = targetOf x.native.tau x.native.blocked
@@ -464,13 +464,13 @@ def nativeE (command : NativePacketProcess.Command) : Event := .inl (.inl comman
 def recoverE : Event := .inl (.inr ())
 def formE : Event := .inr ()
 
-/-- A blocked port with no spare pairs and an empty ledger. -/
+/-- A blocked port with no spare pairs and an empty record. -/
 def start : Port :=
   ⟨{ phase := .p0, tau := false, sigma := false, broken := false, blocked := true,
-     receiptFlip := false, source := 20, fuel := 200000, live := 0, workspace := 0,
-     capacity := 10, spent := 0, income := 0, transferred := 0, wasted := 0 }, 0, 0⟩
+     receiptFlip := false, source := 20, held := 200000, live := 0, workspace := 0,
+     capacity := 10, enacted := 0, arrived := 0, transferred := 0, dissipated := 0 }, 0, 0⟩
 
-/-- Align to the arriving output, probe and fail, recover the waste, form, probe again. -/
+/-- Align to the arriving output, probe and fail, recover the dissipated units, form, probe again. -/
 def history : List Event :=
   [nativeE .a, nativeE .a, nativeE .probe, recoverE, formE, nativeE .probe]
 
@@ -480,7 +480,7 @@ theorem failure_opens_contact :
     ∃ y, run start history = some y ∧ Trace process start history y ∧
       targetOf start.native.tau start.native.blocked = .C ∧
       targetOf y.native.tau y.native.blocked = .A ∧
-      y.native.transferred = 10 ∧ y.native.wasted = 10 ∧ y.native.source = 0 ∧
+      y.native.transferred = 10 ∧ y.native.dissipated = 10 ∧ y.native.source = 0 ∧
       y.spare = 0 ∧ y.recovered = 1 ∧ formations history = 1 ∧ recoveries history = 1 := by
   refine ⟨_, rfl, run_sound rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
 
@@ -515,11 +515,11 @@ end Generative.InquirySufficiency.FormationClosure
 #print axioms Generative.InquirySufficiency.FormationClosure.formPort_complete_iff
 #print axioms Generative.InquirySufficiency.FormationClosure.activity_retains_contact
 #print axioms Generative.InquirySufficiency.FormationClosure.class_change_requires_formation
-#print axioms Generative.InquirySufficiency.FormationClosure.completed_native_wasted_monotone
+#print axioms Generative.InquirySufficiency.FormationClosure.completed_native_dissipated_monotone
 #print axioms Generative.InquirySufficiency.FormationClosure.Backed
 #print axioms Generative.InquirySufficiency.FormationClosure.step_preserves_backing
 #print axioms Generative.InquirySufficiency.FormationClosure.trace_preserves_backing
-#print axioms Generative.InquirySufficiency.FormationClosure.pair_ledger
+#print axioms Generative.InquirySufficiency.FormationClosure.pair_record
 #print axioms Generative.InquirySufficiency.FormationClosure.formations_backed_by_failures
 #print axioms Generative.InquirySufficiency.FormationClosure.arrival_false_of_blocked
 #print axioms Generative.InquirySufficiency.FormationClosure.arrival_false_of_misaligned

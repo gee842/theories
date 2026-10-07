@@ -1,0 +1,185 @@
+{
+  "checked_at_utc": "2026-10-07T10:19:03.611256+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "b0a86b27172f97d51023f19011f9651e3821354d376d971bbaa86cf9122b2b44",
+  "inherited_checker_sha256": "8ee9d4bcf270252a3da00960168e6a823c450bacefef6800dc64f3e2c01db1da",
+  "inherited_receipt_sha256": "fa1e13c9422ccb97ba44bf795948cfe6c9f58761afd5d2ba8d3b0c955ea71211",
+  "fresh_temporary_build": true,
+  "sources_unchanged": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "source": "../GenerativeCore.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 18,
+      "empty_audits": 18,
+      "output": "actual-recovery-verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "source_sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "source": "../deeper/DynamicUnderdetermination.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 9,
+      "empty_audits": 9,
+      "output": "actual-recovery-verification/DynamicUnderdetermination.txt",
+      "output_sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "module": "DynamicSymmetry",
+      "source_sha256": "5f71b9cc6c69070b5033852a0809ad795ad5dd18a44eb2ca068d1915d744673b",
+      "source": "../deeper/DynamicSymmetry.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 20,
+      "empty_audits": 20,
+      "output": "actual-recovery-verification/DynamicSymmetry.txt",
+      "output_sha256": "e452e738d7ed39e8a7c3f357fa9efb04fec15dc1bb30eee25963df1d3a06aa98"
+    },
+    {
+      "module": "DynamicConsequences",
+      "source_sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "source": "../deeper/DynamicConsequences.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 9,
+      "empty_audits": 9,
+      "output": "actual-recovery-verification/DynamicConsequences.txt",
+      "output_sha256": "3c8bf5fe8360f932907008709c8e8c400246d853dd1a4af23ae928cb563302e4"
+    },
+    {
+      "module": "EthicalOrientation",
+      "source_sha256": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
+      "source": "../EthicalOrientation.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 17,
+      "empty_audits": 17,
+      "output": "actual-recovery-verification/EthicalOrientation.txt",
+      "output_sha256": "e196aa6a026847585956303bc3b11a70c4f24a23794cef950063427ed1a6e1fd"
+    },
+    {
+      "module": "WholeQualityNaturalism",
+      "source_sha256": "9dae9ddafed4abcd31be28211a3c6b3516dc527537f048821d5f804194bdc967",
+      "source": "WholeQualityNaturalism.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 25,
+      "empty_audits": 25,
+      "output": "actual-recovery-verification/WholeQualityNaturalism.txt",
+      "output_sha256": "8d731d10b991407aa6e93f2e40e6c1208f3d3c372476381d2e150fcf88641db8"
+    },
+    {
+      "module": "NaturalismIdentity",
+      "source_sha256": "e3c975a4197755ba314bf327b8ed475495177534848e11380220893e86e5538b",
+      "source": "NaturalismIdentity.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 20,
+      "empty_audits": 20,
+      "output": "actual-recovery-verification/NaturalismIdentity.txt",
+      "output_sha256": "aa10f711922cc89eee9593629aa51b93c7eba053b8741ad640fb1eb83b558930"
+    },
+    {
+      "module": "NaturalismReview",
+      "source_sha256": "e9e0b6d56396e41750f5fd8d9f208666eef5373f19a1f13a804eafa2896d0053",
+      "source": "NaturalismReview.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 10,
+      "empty_audits": 10,
+      "output": "actual-recovery-verification/NaturalismReview.txt",
+      "output_sha256": "50f4a4e29311dd373dd3cdbf9337fb3436ea11c43d7b2719ff213e40b20419a1"
+    },
+    {
+      "module": "ProtectedScope",
+      "source_sha256": "6f6fb7ea3529465e97318348e9a3e62d85920f766e5b391f0bea142b14d8b26e",
+      "source": "ProtectedScope.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 35,
+      "empty_audits": 35,
+      "output": "actual-recovery-verification/ProtectedScope.txt",
+      "output_sha256": "3fba9bbd085468f370aab51711047f1667273b893767866a99d770b470d73824"
+    },
+    {
+      "module": "ProtectedScopeLimits",
+      "source_sha256": "5e95cdd06badaa14279240096025173f02ed032cc93c7cb4b9229886bc68526d",
+      "source": "ProtectedScopeLimits.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 6,
+      "empty_audits": 6,
+      "output": "actual-recovery-verification/ProtectedScopeLimits.txt",
+      "output_sha256": "24ec9f119606a68ac6355df2099850dc71c5dd24e946ce5d99228ad39bf681e0"
+    },
+    {
+      "module": "PremiseNecessity",
+      "source_sha256": "1ed08ac3223a9e126c1d6065053076974f2b2548f55881b25ffe28efb64688da",
+      "source": "PremiseNecessity.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 9,
+      "empty_audits": 9,
+      "output": "actual-recovery-verification/PremiseNecessity.txt",
+      "output_sha256": "aac159a0e4022bc72ca84686849fd83449f9abaaec5771c22374d8f3166223d1"
+    },
+    {
+      "module": "EmbeddedEvaluation",
+      "source_sha256": "02cfb247e8313b54924824da769ddac9aab3358185697aa968c3c6accc04b619",
+      "source": "EmbeddedEvaluation.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 5,
+      "empty_audits": 5,
+      "output": "actual-recovery-verification/EmbeddedEvaluation.txt",
+      "output_sha256": "0962bc8f785344ed68976fbf699b7e626a3dbbbf524aeff4204f95d9d70cc7ab"
+    },
+    {
+      "module": "RegeneratingPersistence",
+      "source_sha256": "fb4ccc14778d7e7ba62b553c01be82b8da057e42a5eebbde07500e98150dd2b6",
+      "source": "RegeneratingPersistence.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 10,
+      "empty_audits": 10,
+      "output": "actual-recovery-verification/RegeneratingPersistence.txt",
+      "output_sha256": "9cb19f376cf203e828876271564f016be42b4203103b68a871f4d20437cc4b85"
+    },
+    {
+      "module": "EnactedOrientation",
+      "source_sha256": "3bb70275a9f2c03c4097c4bae15b086c03225271f23dc0302928e6dc26c0dad9",
+      "source": "EnactedOrientation.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 27,
+      "empty_audits": 27,
+      "output": "actual-recovery-verification/EnactedOrientation.txt",
+      "output_sha256": "7536454a4234e5c6101a86b4c95d2f6ee8f36d5f167201a510943fa37abfb944"
+    },
+    {
+      "module": "ActualRecovery",
+      "source_sha256": "24077eb643b044cefa60f17ccabb5593ec4d639ddce870d5e22ab726836c623b",
+      "source": "ActualRecovery.lean",
+      "exit_code": 0,
+      "clean": true,
+      "audits": 21,
+      "empty_audits": 21,
+      "output": "actual-recovery-verification/ActualRecovery.txt",
+      "output_sha256": "fe7292b96103d668ec7d2bc4b61f0a7ad6903815f7ea76188a2252b4970e9325"
+    }
+  ],
+  "independent_reconstruction": {
+    "status": "passed",
+    "cases": 303,
+    "scope": "n=0..100 for episode, maintained, postponed histories"
+  },
+  "scope": "Actual loss/recovery balance, retained interruption, and a finite same-process counterexample to eventual-level reduction. No ethical ordering or duration metric is derived."
+}

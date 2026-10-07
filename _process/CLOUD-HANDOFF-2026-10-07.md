@@ -2,6 +2,8 @@
 
 7 October 2026, Asia/Bangkok. Prepared at Ren's explicit request for an agent that has no access to this chat's memory. This is an AI-authored navigation and status note, not a new research result. The repository is authoritative; read newer entries before treating this dated note as current.
 
+**Later priority update, 7 October 2026:** [Ren expressly makes universal normative grounding and candidate metaethical invariants the first research priority](../sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md). Read the [canonical priority](../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#first-priority-universal-normative-grounding) and [integrated deep dive](research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md) before choosing the next study. The earlier handoff below remains a historical record; this update does not claim that universal grounding has been achieved or renew its one-time Git authorization.
+
 ## Assignment and first action
 
 Continue moving toward the establishment of a universal ethical minimum within the wider generative-foundation programme. Preserve the stronger ambition of a foundation without added assumptions. Do not declare either achieved from the completed conditional candidate or from an empty Lean axiom report.

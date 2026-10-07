@@ -18,7 +18,7 @@ class, the contact, and, when the contact is open, the inversion.
 What stays hidden is kept as results. A blocked contact hides the inversion,
 and receipts alone cannot separate the inversion from receipt inversion.
 The inquiry needs an intact reset (`broken = false`), two source packets and
-the reserve for five native operations; those are the conditions of the
+enough held for five native operations; those are the conditions of the
 theorems, not assumed favorable outcomes. Reading the record and comparing
 bits is described here, not built as a further mechanism in the port.
 -/
@@ -30,27 +30,27 @@ open FormationClosure
 
 theorem reset_shape {s t : NativePacketProcess.State} {o : Observation}
     (actual : execute s .reset = .complete t o) :
-    Payable s ∧ t = { debit s with phase := if s.broken then s.phase else .p0 } ∧ o = .silent := by
+    Supportable s ∧ t = { enact s with phase := if s.broken then s.phase else .p0 } ∧ o = .silent := by
   unfold execute at actual
-  generalize interface : charge s = payment at actual
-  cases payment with
+  generalize interface : support s = outcome at actual
+  cases outcome with
   | capacity => cases actual
-  | funding => cases actual
-  | paid ready =>
-    obtain ⟨sustained, rfl⟩ := (charge_paid_iff s ready).mp interface
+  | insufficient => cases actual
+  | sustained ready =>
+    obtain ⟨sustained, rfl⟩ := (support_sustained_iff s ready).mp interface
     cases actual
     exact ⟨sustained, rfl, rfl⟩
 
 theorem a_shape {s t : NativePacketProcess.State} {o : Observation}
     (actual : execute s .a = .complete t o) :
-    Payable s ∧ t = { debit s with phase := nextPhase s.phase } ∧ o = .silent := by
+    Supportable s ∧ t = { enact s with phase := nextPhase s.phase } ∧ o = .silent := by
   unfold execute at actual
-  generalize interface : charge s = payment at actual
-  cases payment with
+  generalize interface : support s = outcome at actual
+  cases outcome with
   | capacity => cases actual
-  | funding => cases actual
-  | paid ready =>
-    obtain ⟨sustained, rfl⟩ := (charge_paid_iff s ready).mp interface
+  | insufficient => cases actual
+  | sustained ready =>
+    obtain ⟨sustained, rfl⟩ := (support_sustained_iff s ready).mp interface
     cases actual
     exact ⟨sustained, rfl, rfl⟩
 
@@ -126,8 +126,8 @@ theorem inquiry_reveals {s : NativePacketProcess.State} (q : Inquiry s) (intact 
   cases e2
   cases e5
   cases s with
-  | mk phase tau sigma broken blocked flip source reserve live workspace capacity drawn
-      credit transferred wasted =>
+  | mk phase tau sigma broken blocked flip source held live workspace capacity enacted
+      arrived transferred dissipated =>
     subst intact
     refine ⟨?_, ?_, ?_, ?_, rfl, rfl, rfl⟩
     · exact record_reads_arrival transferred (arrivalAt false tau blocked)
@@ -226,25 +226,25 @@ theorem inquiry_needs_two_packets {s : NativePacketProcess.State} (q : Inquiry s
 def nativeRun (commands : List NativePacketProcess.Command) : List Event :=
   commands.map nativeE
 
-/-- Inquire, recover the wasted transfers, form, and inquire again. -/
+/-- Inquire, recover the dissipated transfers, form, and inquire again. -/
 def acquiredHistory : List Event :=
   nativeRun inquiryCommands ++ [recoverE, formE] ++ nativeRun inquiryCommands
 
 /-- A blocked port with no spares, two inquiries' worth of source and an empty record. -/
 def acquiredStart : Port :=
   ⟨{ phase := .p1, tau := true, sigma := false, broken := false, blocked := true,
-     receiptFlip := true, source := 40, fuel := 400000, live := 0, workspace := 0,
-     capacity := 10, spent := 0, income := 0, transferred := 0, wasted := 0 }, 0, 0⟩
+     receiptFlip := true, source := 40, held := 400000, live := 0, workspace := 0,
+     capacity := 10, enacted := 0, arrived := 0, transferred := 0, dissipated := 0 }, 0, 0⟩
 
 /-- The executed loop: the first inquiry finds no arrival (decision: form), the
-waste of its two failed probes is recovered into a pair, the contact is formed,
+dissipation of its two failed probes is recovered into a pair, the contact is formed,
 and the second inquiry records one arrival, revealing the inversion. -/
 theorem acquired_loop :
     ∃ y, run acquiredStart acquiredHistory = some y ∧
       Trace FormationClosure.process acquiredStart acquiredHistory y ∧
       targetOf acquiredStart.native.tau acquiredStart.native.blocked = .C ∧
       targetOf y.native.tau y.native.blocked = .B ∧
-      y.native.transferred = 10 ∧ y.native.wasted = 30 ∧ y.native.source = 0 ∧
+      y.native.transferred = 10 ∧ y.native.dissipated = 30 ∧ y.native.source = 0 ∧
       y.spare = 0 ∧ y.recovered = 1 := by
   exact ⟨_, rfl, run_sound rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
 

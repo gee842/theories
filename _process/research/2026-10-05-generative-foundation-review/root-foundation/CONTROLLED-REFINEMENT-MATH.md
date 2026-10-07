@@ -71,7 +71,7 @@ Both world descriptions preserve the unit-cost account. The failure is caused by
 
 ## 5. Resource transport and its limit
 
-An independently established abstract support law can be pulled back along the world-step-preserving map and then restricted to controlled steps, using the existing `account_law_pullback` and `closed_loop_account_law` results. For example, if
+An independently established abstract support law can be pulled back along the world-step-preserving map and then restricted to controlled steps, using the existing `sustain_law_pullback` and `closed_loop_account_law` results. For example, if
 
 \[
 b_Q(qt)+d_Q(qs,a,qt)\le b_Q(qs)+c_Q(qs,a,qt)

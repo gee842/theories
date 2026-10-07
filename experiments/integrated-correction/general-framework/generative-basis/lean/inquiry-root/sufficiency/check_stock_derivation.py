@@ -45,20 +45,20 @@ def lint(text):
 
 # ---- independent reconstruction of the closure history ----------------------
 
-BILL = 16384 + 0 + 0 + 2  # live = workspace = 0, two temporary cells
+DRAW = 16384 + 0 + 0 + 2  # live = workspace = 0, two temporary cells
 
 
-def run(history, fuel, source, rate=10, blocked=True, tau=False, phase=0, spare=0):
+def run(history, held, source, rate=10, blocked=True, tau=False, phase=0, spare=0):
     """Returns the final state or None. Output table (0,0,1); arrival when
     output xor tau and not blocked; a conversion moves ten source units."""
-    st = dict(fuel=fuel, source=source, wasted=0, transferred=0, spare=spare,
-              recovered=0, blocked=blocked, phase=phase, spent=0)
+    st = dict(held=held, source=source, dissipated=0, transferred=0, spare=spare,
+              recovered=0, blocked=blocked, phase=phase, enacted=0)
 
     def draw():
-        if st["fuel"] < BILL:
+        if st["held"] < DRAW:
             return False
-        st["fuel"] -= BILL
-        st["spent"] += BILL
+        st["held"] -= DRAW
+        st["enacted"] += DRAW
         return True
     for event in history:
         if not draw():
@@ -72,13 +72,13 @@ def run(history, fuel, source, rate=10, blocked=True, tau=False, phase=0, spare=
             arrived = ((st["phase"] == 2) != tau) and not st["blocked"]
             if arrived:
                 st["transferred"] += 10
-                st["fuel"] += 655360
+                st["held"] += 655360
             else:
-                st["wasted"] += 10
+                st["dissipated"] += 10
             if not draw():
                 return None
         elif event == "recover":
-            if rate * (st["recovered"] + 1) > st["wasted"]:
+            if rate * (st["recovered"] + 1) > st["dissipated"]:
                 return None
             st["spare"] += 1
             st["recovered"] += 1
@@ -92,25 +92,25 @@ def run(history, fuel, source, rate=10, blocked=True, tau=False, phase=0, spare=
 
 def reconstruction():
     history = ["a", "a", "probe", "recover", "form", "probe"]
-    least_fuel = next(f for f in range(0, 300000) if run(history, f, 20) is not None)
+    least_held = next(f for f in range(0, 300000) if run(history, f, 20) is not None)
     least_source = next(s for s in range(0, 100) if run(history, 10 ** 6, s) is not None)
-    assert least_fuel == 7 * BILL == 114702 and least_source == 20
+    assert least_held == 7 * DRAW == 114702 and least_source == 20
     final = run(history, 114702, 20)
-    assert final["transferred"] == 10 and final["fuel"] == 638974
+    assert final["transferred"] == 10 and final["held"] == 638974
     assert run(history, 114701, 20) is None and run(history, 114702, 19) is None
     assert run(history, 200000, 20, rate=11) is None
     nine = ["probe"] * 9 + ["recover"] * 10
     over = run(nine, 10 ** 6, 90, rate=9)
-    assert over["wasted"] == 90 and over["recovered"] == 10
+    assert over["dissipated"] == 90 and over["recovered"] == 10
     assert run(nine, 10 ** 6, 90, rate=10) is None
     # one-pair-per-failure holds only at rate 10, checked on small ledgers
     rates = [r for r in range(0, 30)
              if all((r * (n + 1) <= 10 * k) == (n + 1 <= k)
                     for k in range(0, 40) for n in range(0, 40))]
     assert rates == [10]
-    assert run(["form"], 100000, 0, spare=1)["wasted"] == 0
-    return dict(least_fuel=least_fuel, least_source=least_source,
-                final_fuel_at_least=final["fuel"], rate_eleven_closure="stopped",
+    assert run(["form"], 100000, 0, spare=1)["dissipated"] == 0
+    return dict(least_held=least_held, least_source=least_source,
+                final_held_at_least=final["held"], rate_eleven_closure="stopped",
                 rate_nine_pairs_from_nine_failures=over["recovered"],
                 rates_with_one_pair_per_failure=rates)
 
@@ -118,7 +118,7 @@ def reconstruction():
 def source_binding():
     diagnosis = DIAGNOSIS.read_bytes()
     text = diagnosis.decode()
-    for needle in ("if self._source < 10:", "self._source -= 10", "self.wasted += 10",
+    for needle in ("if self._source < 10:", "self._source -= 10", "self.wasted += 10",  # original source text
                    "self.transferred += 10",
                    "a.pay('native_'+command, extra=a.tariff.interface, temporary=2)",
                    "a.pay('arrival_receipt', extra=a.tariff.receipt, temporary=2)"):

@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T20:21:06.851469+00:00",
+  "checked_at_utc": "2026-10-07T09:50:36.042212+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -96,7 +96,7 @@
     {
       "module": "NativePacketProcess",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
-      "source_sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+      "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
       "exit_code": 0,
       "audits": 45,
       "nonempty_audits": {},
@@ -132,7 +132,7 @@
     {
       "module": "NativePacketCases",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean",
-      "source_sha256": "36f9d1ea87f201b70715699b05c045e0fdebe6f3497df3278d2a7cfbbe32d0d4",
+      "source_sha256": "70199646e488cb29e4fed6681299739dc4ad1336fee1f6e46cf8709a03e7d02e",
       "exit_code": 0,
       "audits": 94,
       "nonempty_audits": {},
@@ -231,7 +231,7 @@
     {
       "module": "PacketLawDerivation",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
-      "source_sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70",
+      "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
       "exit_code": 0,
       "audits": 51,
       "nonempty_audits": {},
@@ -294,7 +294,7 @@
     {
       "module": "ContactFormation",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
-      "source_sha256": "08a268ad3039cdb8e50876f47a013fa5e6a77f4a9e33e74d8170fa7a6cfd5423",
+      "source_sha256": "e94ede1ad6ce5cc98b9947a819dfa99918fa2508bf3da4616c845d73cd0a3032",
       "exit_code": 0,
       "audits": 26,
       "nonempty_audits": {},
@@ -303,7 +303,7 @@
     {
       "module": "FormationClosure",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
-      "source_sha256": "6c98403b67434950a48d8278ddfafb70d027d82b272ab5210c23172c3bf21559",
+      "source_sha256": "c4ce285254e7a76f2b0bb3a371e590eee7379b84d072df0f1a402a177236092d",
       "exit_code": 0,
       "audits": 48,
       "nonempty_audits": {},
@@ -312,16 +312,25 @@
     {
       "module": "AcquiredContact",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean",
-      "source_sha256": "11cc317b453298dfc4807cb8ecf01188b85ee0b8f65bd6ceed20a4cbda057ac8",
+      "source_sha256": "3ccbebd1b8c135a67346eb578934f41fb97a99ef8368053cfc57d1bbf25c9a5b",
       "exit_code": 0,
       "audits": 26,
       "nonempty_audits": {},
       "clean": true
     },
     {
+      "module": "AxiomFree",
+      "source": "experiments/valuation-development/lean/AxiomFree.lean",
+      "source_sha256": "74ea6f5a0b0d6db63945d54adbc8dc214963843f7c19b407404e760685968671",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
       "module": "ValuationDevelopment",
       "source": "experiments/valuation-development/lean/ValuationDevelopment.lean",
-      "source_sha256": "646fe738830cf9da7037f9ef554aa455af0dd85b32ae1ba3591ba7e6dbb3b9d2",
+      "source_sha256": "b976c2f213d4b0082f2f7b5482788e62f9397804c32c93310b4de7cb040808e8",
       "exit_code": 0,
       "audits": 0,
       "nonempty_audits": {},
@@ -330,7 +339,7 @@
     {
       "module": "ClosedLoopValuation",
       "source": "experiments/valuation-development/lean/ClosedLoopValuation.lean",
-      "source_sha256": "ba21df526dae8fdf0b4f5e1f1947ab12391572e083d9f521e3b0284fbf2c43d3",
+      "source_sha256": "a88bf12f0499da2252ae85ca297c887b02b73b3e0dba7bd1e14d072fae92995b",
       "exit_code": 0,
       "audits": 0,
       "nonempty_audits": {},
@@ -339,7 +348,7 @@
     {
       "module": "PortValuation",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean",
-      "source_sha256": "850d766443b307600bb75d13b5ef0444d81b332fe0e78ca46d6f0e72950762df",
+      "source_sha256": "d0e52b7ee400f919f8ebd2aba1251aa35581a3475d13cc517934e9ab8b39e529",
       "exit_code": 0,
       "audits": 11,
       "nonempty_audits": {},
@@ -353,15 +362,82 @@
       "audits": 8,
       "nonempty_audits": {},
       "clean": true
+    },
+    {
+      "module": "RevisingPort",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean",
+      "source_sha256": "d4560d3958152e8b02e37679ce20a450e4c27682450ee69ce3789313122f40f3",
+      "exit_code": 0,
+      "audits": 61,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "RelationalCut",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RelationalCut.lean",
+      "source_sha256": "bb0a5dc53a5af363406f605be28208c97398e81875d9b84f4ea53a5d57a8f7b2",
+      "exit_code": 0,
+      "audits": 9,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "RemainingDependency",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean",
+      "source_sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "InquiryRelevance",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean",
+      "source_sha256": "3ec8363e61404c1d23ecf5f562cb9bb880f6d136a0b936e725e2e4a98c9e4df1",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "InquiryWarrant",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean",
+      "source_sha256": "2237a87ac30eb38a869d1375632a55580ca1833722529ea1be0061add9d36a28",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "PortAlignment",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortAlignment.lean",
+      "source_sha256": "81ec920b80077b01877048ae57a5159c81b14465c12dc666ba1177c634d2c683",
+      "exit_code": 0,
+      "audits": 13,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "CalibratedMacro",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/CalibratedMacro.lean",
+      "source_sha256": "fa05255aace2be10a3cfafeee56f5f8c7404ceff769d7e9ac4571e574ca01856",
+      "exit_code": 0,
+      "audits": 4,
+      "nonempty_audits": {},
+      "clean": true
     }
   ],
-  "total_audits": 718,
+  "total_audits": 805,
   "new_module_audits": {
     "ContactFormation": 26,
     "FormationClosure": 48,
     "AcquiredContact": 26,
     "PortValuation": 11,
-    "ValuationInCore": 8
+    "ValuationInCore": 8,
+    "RevisingPort": 61,
+    "RelationalCut": 9,
+    "PortAlignment": 13,
+    "CalibratedMacro": 4
   },
   "scope": "ContactFormation, FormationClosure, AcquiredContact, ValuationDevelopment, ClosedLoopValuation, PortValuation and ValuationInCore over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."
 }

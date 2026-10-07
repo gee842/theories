@@ -92,11 +92,11 @@ theorem expiry_le_rank_deadline (S : EpisodeSystem Kind Episode)
     have increase := rankRises i j edge
     have multiplication : (rank i + 2) * L ≤ (rank j + 1) * L :=
       Nat.mul_le_mul_right L (Nat.succ_le_succ increase)
-    have budget := lifeBound j
+    have withinLife := lifeBound j
     have expansion : (rank i + 2) * L = (rank i + 1) * L + L :=
       Nat.succ_mul (rank i + 1) L
     rw [expansion] at multiplication
-    exact Nat.le_trans (Nat.add_le_add_left budget _) multiplication
+    exact Nat.le_trans (Nat.add_le_add_left withinLife _) multiplication
 
 theorem alive_le_rank_deadline (S : EpisodeSystem Kind Episode)
     (rank : Kind → Nat) (L : Nat)

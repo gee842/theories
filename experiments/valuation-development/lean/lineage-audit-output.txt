@@ -1,0 +1,14 @@
+'ValuationDevelopment.history_ledger_sustained' does not depend on any axioms
+'ValuationDevelopment.consecutive_segments_are_generations' does not depend on any axioms
+'ValuationDevelopment.lineage_account_law' does not depend on any axioms
+'ValuationDevelopment.lineLedger_heldEnd_congr' does not depend on any axioms
+'ValuationDevelopment.line_is_lineage_history' does not depend on any axioms
+'ValuationDevelopment.lineage_bound_is_prefix_bound' does not depend on any axioms
+'ValuationDevelopment.endless_demanding_line_needs_unbounded_arrivals' does not depend on any axioms
+'ValuationDevelopment.channel_account_law' does not depend on any axioms
+'ValuationDevelopment.generation_sustained' does not depend on any axioms
+'ValuationDevelopment.intervalTotal_split' does not depend on any axioms
+'ValuationDevelopment.generations_succeed' does not depend on any axioms
+'ValuationDevelopment.execution_lineage' does not depend on any axioms
+'ValuationDevelopment.lineage_renewal_theorem' does not depend on any axioms
+'ValuationDevelopment.attribution_is_by_population' does not depend on any axioms

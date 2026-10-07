@@ -1,0 +1,10 @@
+'Generative.Naturalism.mem_or_not' does not depend on any axioms
+'Generative.Naturalism.eraseOne_length' does not depend on any axioms
+'Generative.Naturalism.mem_eraseOne_or' does not depend on any axioms
+'Generative.Naturalism.trace_returns' does not depend on any axioms
+'Generative.Naturalism.loop_trace' does not depend on any axioms
+'Generative.Naturalism.length_append_word' does not depend on any axioms
+'Generative.Naturalism.loop_length' does not depend on any axioms
+'Generative.Naturalism.regenerating_return_gives_persistence' does not depend on any axioms
+'Generative.Naturalism.persists_iff_regenerating_return' does not depend on any axioms
+'Generative.Naturalism.return_preserves_realizability' does not depend on any axioms

@@ -4,13 +4,13 @@ import ResourceContinuation
 # Realizations and boundary cases for conditional support necessity
 
 These models witness compatibility and rule out stronger conclusions. They
-do not identify which account law any physical or social system satisfies.
+do not identify which sustaining law any physical or social system satisfies.
 -/
 
 namespace Generative.Conditional.Examples
 
 inductive Phase where
-  | ready | spent | terminal
+  | ready | depleted | terminal
   deriving DecidableEq
 
 inductive Event where
@@ -18,39 +18,39 @@ inductive Event where
   deriving DecidableEq
 
 inductive RenewalStep : Phase → Event → Phase → Prop where
-  | use : RenewalStep .ready .use .spent
-  | restore : RenewalStep .spent .restore .ready
+  | use : RenewalStep .ready .use .depleted
+  | restore : RenewalStep .depleted .restore .ready
   | abandon : RenewalStep .ready .abandon .terminal
 
 /-- One law admits a supported cycle and terminal loss from the same start. -/
 def renewalProcess : Process Phase Event := ⟨RenewalStep⟩
 
-def reserve : Phase → Nat
+def held : Phase → Nat
   | .ready => 1
-  | .spent | .terminal => 0
+  | .depleted | .terminal => 0
 
-def demand (_ : Phase) (_ : Event) (_ : Phase) : Nat := 1
+def enacted (_ : Phase) (_ : Event) (_ : Phase) : Nat := 1
 
-/-- Restoration receives two units, one of which pays for the restoring event.
+/-- Restoration brings two units, one of which the restoring event itself enacts.
     This is declared provision, not creation of support from nothing. -/
-def credit (_ : Phase) : Event → Phase → Nat
+def arrived (_ : Phase) : Event → Phase → Nat
   | .restore, _ => 2
   | .use, _ | .abandon, _ => 0
 
-theorem renewal_account_law : AccountLaw renewalProcess reserve demand credit := by
+theorem renewal_sustain_law : SustainLaw renewalProcess held enacted arrived := by
   intro s a t h
   cases h <;> decide
 
-theorem renewal_unit_demand : ∀ s a t, renewalProcess.step s a t → 1 ≤ demand s a t := by
+theorem renewal_unit_enactment : ∀ s a t, renewalProcess.step s a t → 1 ≤ enacted s a t := by
   intro s a t _
   exact Nat.le_refl 1
 
-theorem renewal_credit_cap : ∀ s a t, renewalProcess.step s a t → credit s a t ≤ 2 := by
+theorem renewal_arrival_cap : ∀ s a t, renewalProcess.step s a t → arrived s a t ≤ 2 := by
   intro s a t h
   cases h <;> decide
 
 theorem renewal_cycle :
-    SupportTrace renewalProcess demand credit .ready [.use, .restore] .ready 2 2 1 := by
+    SupportTrace renewalProcess enacted arrived .ready [.use, .restore] .ready 2 2 1 := by
   exact .cons RenewalStep.use (.cons RenewalStep.restore (.nil Phase.ready))
 
 theorem terminal_branch : Trace renewalProcess .ready [.abandon] .terminal := by
@@ -60,16 +60,21 @@ theorem terminal_has_no_continuation (a : Event) : ¬ Enabled renewalProcess .te
   rintro ⟨t, h⟩
   cases h
 
-def cycleStates (n : Nat) : Phase := if n % 2 = 0 then .ready else .spent
-def cycleActions (n : Nat) : Event := if n % 2 = 0 then .use else .restore
+/-- Whether an index is even, by recursion rather than division. -/
+def even : Nat → Bool
+  | 0 => true
+  | n + 1 => !even n
+
+def cycleStates (n : Nat) : Phase := if even n then .ready else .depleted
+def cycleActions (n : Nat) : Event := if even n then .use else .restore
 
 theorem cycle_is_lawful (n : Nat) :
     renewalProcess.step (cycleStates n) (cycleActions n) (cycleStates (n + 1)) := by
-  by_cases even : n % 2 = 0
-  · have odd : ¬ (n + 1) % 2 = 0 := by omega
-    simpa [renewalProcess, cycleStates, cycleActions, even, odd] using RenewalStep.use
-  · have next : (n + 1) % 2 = 0 := by omega
-    simpa [renewalProcess, cycleStates, cycleActions, even, next] using RenewalStep.restore
+  unfold cycleStates cycleActions
+  show RenewalStep _ _ (if !even n then _ else _)
+  cases even n with
+  | true => exact RenewalStep.use
+  | false => exact RenewalStep.restore
 
 theorem renewal_admits_infinite_execution :
     ∃ states : Nat → Phase, ∃ actions : Nat → Event,
@@ -85,33 +90,35 @@ theorem same_law_admits_continuation_and_loss :
   exact ⟨⟨cycleStates, cycleActions, rfl, cycle_is_lawful⟩,
     terminal_branch, terminal_has_no_continuation⟩
 
-/-- Provision on every event is insufficient when every event demands more. -/
+/-- Arrival on every event is insufficient when every event enacts more. -/
 def insufficientProcess : Process Nat Unit where
   step s _ t := t + 1 = s
 
-def insufficientDemand (_ : Nat) (_ : Unit) (_ : Nat) : Nat := 2
-def insufficientCredit (_ : Nat) (_ : Unit) (_ : Nat) : Nat := 1
+def insufficientEnacted (_ : Nat) (_ : Unit) (_ : Nat) : Nat := 2
+def insufficientArrived (_ : Nat) (_ : Unit) (_ : Nat) : Nat := 1
 
-theorem insufficient_account_law :
-    AccountLaw insufficientProcess id insufficientDemand insufficientCredit := by
+theorem insufficient_sustain_law :
+    SustainLaw insufficientProcess id insufficientEnacted insufficientArrived := by
   intro s a t h
   change t + 1 = s at h
-  simp only [id_eq, insufficientDemand, insufficientCredit]
-  omega
+  show t + 2 ≤ s + 1
+  rw [← h]
+  exact Nat.le_refl _
 
-theorem insufficient_credit_is_always_positive :
-    ∀ s a t, insufficientProcess.step s a t → 0 < insufficientCredit s a t := by
+theorem insufficient_arrival_is_always_positive :
+    ∀ s a t, insufficientProcess.step s a t → 0 < insufficientArrived s a t := by
   intro s a t _
   exact Nat.zero_lt_succ 0
 
 theorem insufficient_finite_bound {s t : Nat} {events : List Unit}
     (h : Trace insufficientProcess s events t) : events.length + t ≤ s := by
   induction h with
-  | nil s => simp
+  | nil s => show 0 + s ≤ s; rw [Nat.zero_add]; exact Nat.le_refl s
   | cons hs _ ih =>
     change _ + 1 = _ at hs
-    simp only [List.length_cons]
-    omega
+    show (_ + 1) + _ ≤ _
+    rw [Nat.succ_add, ← hs]
+    exact Nat.succ_le_succ ih
 
 theorem insufficient_has_no_infinite_execution :
     ¬ ∃ states : Nat → Nat, ∃ actions : Nat → Unit,
@@ -120,21 +127,24 @@ theorem insufficient_has_no_infinite_execution :
   have bound : ∀ n, n + states n ≤ states 0 := by
     intro n
     induction n with
-    | zero => omega
+    | zero => rw [Nat.zero_add]; exact Nat.le_refl _
     | succ n ih =>
       have h := steps n
       change states (n + 1) + 1 = states n at h
-      omega
+      rw [Nat.succ_add, ← Nat.add_succ]
+      show n + (states (n + 1) + 1) ≤ states 0
+      rw [h]
+      exact ih
   have impossible := bound (states 0 + 1)
-  omega
+  exact Nat.not_succ_le_self _ (Nat.le_trans (Nat.le_add_right _ _) impossible)
 
-/-- Zero-demand recurrence falls within the general balance but outside the
-    positive-demand corollaries. No credit is needed for these events. -/
+/-- Recurrence that enacts nothing falls within the general law but outside the
+    positive-enactment corollaries. Nothing needs to arrive for these events. -/
 def freeProcess : Process Unit Unit where
   step _ _ _ := True
 
-theorem free_account_law :
-    AccountLaw freeProcess (fun _ => 0) (fun _ _ _ => 0) (fun _ _ _ => 0) := by
+theorem free_sustain_law :
+    SustainLaw freeProcess (fun _ => 0) (fun _ _ _ => 0) (fun _ _ _ => 0) := by
   intro s a t _
   exact Nat.le_refl 0
 
@@ -143,80 +153,75 @@ theorem free_infinite_execution :
       ∀ n, freeProcess.step (states n) (actions n) (states (n + 1)) := by
   exact ⟨fun _ => (), fun _ => (), fun _ => True.intro⟩
 
-theorem free_process_has_no_unit_demand :
+theorem free_process_has_no_unit_enactment :
     ¬ (∀ s a t, freeProcess.step s a t → 1 ≤ (fun _ _ _ => 0 : Unit → Unit → Unit → Nat) s a t) := by
   intro h
   have impossible := h () () () True.intro
   exact Nat.not_succ_le_zero 0 impossible
 
 /-- One arbitrarily large delivery can support an arbitrarily long finite run;
-    a uniform event-frequency bound needs a uniform credit cap. -/
+    a uniform event-frequency bound needs a uniform cap on each arrival. -/
 def bulkProcess : Process Nat Nat where
   step s a t := t + 1 = s + a
 
-theorem bulk_account_law :
-    AccountLaw bulkProcess id (fun _ _ _ => 1) (fun _ a _ => a) := by
+theorem bulk_sustain_law :
+    SustainLaw bulkProcess id (fun _ _ _ => 1) (fun _ a _ => a) := by
   intro s a t h
   exact Nat.le_of_eq h
 
-theorem bulk_has_no_uniform_credit_cap :
+theorem bulk_has_no_uniform_arrival_cap :
     ¬ ∃ cap, ∀ s a t, bulkProcess.step s a t → a ≤ cap := by
   rintro ⟨cap, hcap⟩
-  have edge : bulkProcess.step 0 (cap + 1) cap := by
-    change cap + 1 = 0 + (cap + 1)
-    omega
-  have h := hcap 0 (cap + 1) cap edge
-  omega
+  have edge : bulkProcess.step 0 (cap + 1) cap := (Nat.zero_add (cap + 1)).symm
+  exact Nat.not_succ_le_self cap (hcap 0 (cap + 1) cap edge)
 
 theorem bulk_single_delivery (amount : Nat) :
     SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
       0 [amount + 1] amount 1 (amount + 1) 1 := by
-  have hs : bulkProcess.step 0 (amount + 1) amount := by
-    change amount + 1 = 0 + (amount + 1)
-    omega
+  have hs : bulkProcess.step 0 (amount + 1) amount := (Nat.zero_add (amount + 1)).symm
   have ht : SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
       amount [] amount 0 0 0 := .nil amount
-  simpa [credited] using SupportTrace.cons hs ht
+  exact SupportTrace.cons hs ht
 
-theorem bulk_consumes_reserve (amount : Nat) :
+theorem bulk_consumes_held (amount : Nat) :
     SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
       amount (List.replicate amount 0) 0 amount 0 0 := by
   induction amount with
   | zero => exact .nil 0
   | succ amount ih =>
-    have hs : bulkProcess.step (amount + 1) 0 amount := by
-      change amount + 1 = amount + 1 + 0
-      omega
-    simpa [List.replicate_succ, credited, Nat.add_comm] using SupportTrace.cons hs ih
+    have hs : bulkProcess.step (amount + 1) 0 amount := rfl
+    have h := SupportTrace.cons hs ih
+    rw [Nat.add_comm 1 amount] at h
+    exact h
 
 theorem bulk_single_delivery_then_run (amount : Nat) :
     SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
       0 ((amount + 1) :: List.replicate amount 0) 0 (amount + 1) (amount + 1) 1 := by
-  have hs : bulkProcess.step 0 (amount + 1) amount := by
-    change amount + 1 = 0 + (amount + 1)
-    omega
-  simpa [credited, Nat.add_comm] using SupportTrace.cons hs (bulk_consumes_reserve amount)
+  have hs : bulkProcess.step 0 (amount + 1) amount := (Nat.zero_add (amount + 1)).symm
+  have h := SupportTrace.cons hs (bulk_consumes_held amount)
+  rw [Nat.add_comm 1 amount] at h
+  exact h
 
-#print axioms renewal_account_law
-#print axioms renewal_unit_demand
-#print axioms renewal_credit_cap
+#print axioms renewal_sustain_law
+#print axioms renewal_unit_enactment
+#print axioms renewal_arrival_cap
 #print axioms renewal_cycle
 #print axioms terminal_branch
 #print axioms terminal_has_no_continuation
 #print axioms cycle_is_lawful
 #print axioms renewal_admits_infinite_execution
 #print axioms same_law_admits_continuation_and_loss
-#print axioms insufficient_account_law
-#print axioms insufficient_credit_is_always_positive
+#print axioms insufficient_sustain_law
+#print axioms insufficient_arrival_is_always_positive
 #print axioms insufficient_finite_bound
 #print axioms insufficient_has_no_infinite_execution
-#print axioms free_account_law
+#print axioms free_sustain_law
 #print axioms free_infinite_execution
-#print axioms free_process_has_no_unit_demand
-#print axioms bulk_account_law
-#print axioms bulk_has_no_uniform_credit_cap
+#print axioms free_process_has_no_unit_enactment
+#print axioms bulk_sustain_law
+#print axioms bulk_has_no_uniform_arrival_cap
 #print axioms bulk_single_delivery
-#print axioms bulk_consumes_reserve
+#print axioms bulk_consumes_held
 #print axioms bulk_single_delivery_then_run
 
 end Generative.Conditional.Examples

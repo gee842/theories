@@ -5,61 +5,71 @@ state laws shared by any reality satisfying explicit conditions. It contributes
 to the [conditional-universality statement](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md).
 It uses the existing [relational core](../README.md), without changing its laws.
 
-## Quantified account
+## Quantified law
 
 `ResourceContinuation.lean` quantifies over an arbitrary state carrier, event
-alphabet, and transition relation. Choose an independently justified reserve
-`r(s)`, event demand `d(s,a,t)`, and supplied credit `c(s,a,t)`, all natural
-numbers. Its law class requires every permitted event to satisfy
+alphabet, and transition relation. Choose, with independent justification,
+what each state holds available for further activity, `held(s)`, what each
+event enacts, `enacted(s,a,t)`, and what arrives during it, `arrived(s,a,t)`,
+all natural numbers. The law class `SustainLaw` (U1) requires every permitted
+event to satisfy
 
 ```
-r(t) + d(s,a,t) ≤ r(s) + c(s,a,t).
+held(t) + enacted(s,a,t) ≤ held(s) + arrived(s,a,t).
 ```
 
-The law allows unrecorded loss and zero-demand events. `SupportTrace` retains
-actual intermediate states and exact totals for each accounted history. Every
-finite core `Trace` has such an account. The main theorem derives
+No event enacts more than was held plus what arrived; nothing appears from
+nowhere. The law allows unrecorded loss and events that enact nothing.
+`SupportTrace` retains actual intermediate states and exact totals for each
+supported history. Every finite core `Trace` has such totals. The main theorem
+derives
 
 ```
-total demand + final reserve ≤ initial reserve + total credit.
+total enacted + final held ≤ initial held + total arrived.
 ```
 
-Accounted histories compose through their actual common boundary state, adding
-all three totals. An executable closed accounted cycle has an executable history
-of any finite number of repetitions, with proportional demand, credit, and
-credit-event count. This is an existential admissibility result under the stated
-law. A genuinely exhaustible external store cannot be omitted from the state and
-then treated as restored by an abstract local cycle.
+Supported histories compose through their actual common boundary state, adding
+all three totals. An executable closed supported cycle has an executable history
+of any finite number of repetitions, with proportional enacted and arrived
+totals and arrival-event count. This is an existential admissibility result
+under the stated law. A genuinely exhaustible external store cannot be omitted
+from the state and then treated as restored by an abstract local cycle.
 
-It also proves this balance on every finite interval of any supplied infinite
-execution. Thus unbounded cumulative demand requires unbounded cumulative
-credit. The theorem holds for each resource account separately, with no summing
-of unlike supports into a universal value. A step-preserving map into a process
-with a justified account transfers the bound to the concrete process.
+It also proves this bound on every finite interval of any supplied infinite
+execution. Thus unbounded cumulative enactment requires unbounded cumulative
+arrival. The theorem holds for each supporting quantity separately, with no
+summing of unlike supports into a universal value. A step-preserving map into a
+process with a justified law transfers the bound to the concrete process.
 
 Two stronger results expose their extra premises:
 
-- If **every event demands at least one unit**, every infinite execution has a
-  positive-credit event at some index from `start` through
-  `start + reserve(states(start))`, for every `start`.
-- If credit per event is also bounded above by `K`, then every interval satisfies
-  `event count + final reserve ≤ initial reserve + K × positive-credit-event count`.
+- If **every event enacts at least one unit**, every infinite execution has an
+  event in which something arrives at some index from `start` through
+  `start + held(states(start))`, for every `start`.
+- If what arrives in one event is also bounded above by `K`, then every interval
+  satisfies `event count + final held ≤ initial held + K × arrival-event count`.
 
 An infinite execution is conditional input to these necessity statements. No
 existence, inevitability, actor control, or favorable direction is inferred.
-Nonempty cycles with positive demand must cover that demand with credit.
+Around a nonempty cycle whose events enact something, what arrives must cover
+what was enacted.
+
+Vocabulary renamed on 6 October 2026 at [Ren's direction](../../../../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md),
+replacing an exchange picture (account, reserve, demand, credit). Statements
+and proofs are unchanged; the [rename record](../verification-history/2026-10-06-before-vocabulary-rename/README.md)
+lists every old and new name and checks that only names changed.
 
 ## Realizations and boundaries
 
 `RenewalExamples.lean` proves:
 
-- A resource-consuming cycle can continue forever with ongoing paid restoration.
+- A cycle that draws on what is held can continue forever with ongoing restoration.
   The very same event law permits a terminal branch from the same initial state.
-- Positive credit on every permitted event does not ensure continuation: demand
-  can exceed provision and deplete every finite initial reserve.
-- An infinite zero-demand process requires no credit and satisfies the general
-  balance. It falls outside the positive-demand results.
-- An arbitrarily large one-time credit can finance an arbitrarily long finite
+- Something arriving on every permitted event does not ensure continuation:
+  what is enacted can exceed what arrives and deplete every finite initial hold.
+- An infinite process that enacts nothing needs no arrival and satisfies the
+  general law. It falls outside the positive-enactment results.
+- An arbitrarily large single arrival can sustain an arbitrarily long finite
   run. A uniform lower frequency bound cannot silently assume a bounded delivery.
 
 `SupportNecessity.lean` supplies the complementary lifetime and dependency
@@ -79,20 +89,21 @@ that every enduring system has the same dependency architecture.
 
 ## What is supplied
 
-The reserve is a physical or operational accounting quantity to be identified,
-not reward, welfare, meaning, or a universal scalar value. At a declared system
-boundary credit can mean renewal, conversion of an untracked store, or external
-provision. The theorem does not identify which mechanism provides it. Recording
-the whole universe as the boundary may make a different account appropriate.
+What is held is a physical or operational quantity to be identified, not
+reward, welfare, meaning, or a universal scalar value. At a declared system
+boundary, what arrives can be renewal, conversion of an untracked store, or
+external provision. The theorem does not identify which mechanism provides it.
+Taking the whole universe as the boundary may make a different choice of
+quantities appropriate.
 
-Trivial all-zero accounts satisfy any relation and explain nothing. A useful
-application must establish the resource interpretation and demand premise
-independently of the desired conclusion. Positive-demand bounds apply to the
-specified discrete events; arbitrary subdivision or zero-cost stuttering changes
-that premise. Summable real-valued costs and physical duration are not covered by
+Trivial all-zero quantities satisfy any relation and explain nothing. A useful
+application must establish the interpretation and the enactment premise
+independently of the desired conclusion. Positive-enactment bounds apply to the
+specified discrete events; arbitrary subdivision or stuttering that enacts
+nothing changes that premise. Summable real-valued enactments and physical duration are not covered by
 the natural-number event-count corollaries. No empirical calibration is claimed
 here, and no regulator, learning rule, or concern mechanism is derived by these
-accounting constraints alone.
+constraints alone.
 
 ## Reproduce and audit
 
@@ -104,14 +115,18 @@ python3 check.py
 
 The checker pins Lean `4.29.1`, freezes all source bytes, rebuilds the inherited
 core and the new modules in a fresh temporary directory, rejects proof holes and
-custom axiom declarations, and audits every newly declared theorem. It accepts
-only the standard dependencies `propext` and `Quot.sound`; some declarations have
-empty axiom dependencies. This is not an axiom-free foundational claim.
+custom axiom declarations, and audits every newly declared theorem. Every audit
+must be empty: no Lean axiom, including `propext` and `Quot.sound`, is accepted.
+Lean's own logic remains a framework presupposition.
 
-The recorded check passed all four modules: 18 inherited core audits and **60
-new theorem audits** (21 accounting, 21 realization/boundary, 18 support).
-Of the new audits, 34 have empty axiom dependencies; the remaining 26 depend
-only on the allowed standard axioms.
+The recorded check passed all four modules: 18 inherited core audits and **63
+new theorem audits** (24 sustaining-law, 21 realization/boundary, 18 support),
+all empty. Until 6 October 2026, 26 of them depended on `propext` and
+`Quot.sound`, introduced by `omega` and `simp`. Following Ren's rule of no
+assumptions and no axioms, those proofs were rewritten with explicit
+constructive arithmetic; three helper lemmas (`le_cancel_left`, `step_then_rest`,
+`rest_then_step`) were added. No statement changed. `cycleStates` and
+`cycleActions` now read parity from a recursive `even` instead of `% 2`.
 
 `verification.json` records compiler, source, checker and log hashes, exact audited
 declarations, dependency results, and whether sources stayed unchanged during the

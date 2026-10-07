@@ -39,8 +39,8 @@
     "foundation_scope": "Supporting validation only. No new necessity argument, full-register certification or derivation of goodness and concern. Conditional acceptance and stronger open goal retain their scopes.",
     "next_connection": "Specify the required constitutive relation and defend its patient-good, eligibility and moral-relevance dependencies within the whole unfolding. Compatible recodings and valid deduction alone do not establish its indispensable warrant."
   },
-  "local_links_checked": 978,
-  "anchors_checked": 618,
+  "local_links_checked": 1002,
+  "anchors_checked": 638,
   "claim_rows_inventoried": 55,
   "new_lean_audits": 27,
   "claim_register_snapshot": {
@@ -1513,7 +1513,7 @@
     "foundation_status": "Full necessity and no-assumptions goal open; original conditional acceptance intact; addition optional."
   },
   "artifacts": {
-    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "427ed0aeb8347c3f341e01b5d48d0d2ec0e6078410fbba44ad57b7f9c9c24fd2",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "e738b9ab304f0702ec7f8465f34a0491f0d9de1c8f21c2b3f1a7cb38c341cf7d",
     "sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md": "995b491155dec8941aef11549a04483e71f76da856351250d5236aba2a89bf01",
     "sources/15-codex-theory-conversations/2026-10-06-goodness-as-generativity.md": "0f85e51f16a1b05981eef39cbd7c3a9115eb62135bd621f7e90d119445a4d5d5",
     "sources/15-codex-theory-conversations/2026-10-06-non-self-and-a-perspective-including-both.md": "081c63eeb64bd89ec7b44add10021c10deabb145925de2dd68a83db8c9a759f9",
@@ -1521,15 +1521,15 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/revalidation/README.md": "a959e9b7f74ff6b2273ba1955835acbb1ea525967094e031d21e9edfe70f2b56",
     "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md": "8203be3deb0bc0af20b66fe8f5423120a73545fa31176df5b5ed13d3a18a9d82",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md": "fecf1536cac2bf69efeba5b808abb4dd0b74333fba5aba2c4fd61dee7025ac76",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md": "33107a275994ee3e611b61be820b419b808b7ca95032ad59b2390152ebb7febd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md": "eba142cba6e798ee701488f4876724baedb7dea0ca6abe25bc0c7e6121c53e0d",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md": "7555111c7f9212310d1ab120ba48f1eb3c78b5666107ac69b5cf3e7266fcb6f7",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md": "da2bcac0f5c1f69bbfe86ed33f39da238cf47913527f947b9dda0c4441ed4910",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md": "c73c91bd3cb6ab7bf191143c737cc1b9cfc4512770dd20346621aa3f769b7a67",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md": "792da360e5b0749476d9f46a6f376958dd04e40d394407bf2af1331e3542ad28",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md": "80d8c725e6c0b737867229f8e4c92e767e429b8e0708616327641886c0c11969",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md": "5cb9f67d066d390f39b85c422262c18bb9c0acf19a9fd0107610b4b04214950b",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md": "5137661bd3cc3c62529c409aef9c4040a41b9f46928c1f85b6eaafee578e5aa6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md": "a05e8d62b9e31bae98b47a8e13c4e79d696731d2329ccd939a0a8e005827744c",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md": "b266ef45ae930843b53c5a11dd641fd195aba2f60f6453f0f4262f088af97c8f",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md": "80bc870577026c3592ff4856abdb7e2d716286a28982193c8d9e47624b4b3405",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md": "ebc1205039b44468bb5d888d54245bb96312a9beb3d0a434cdcb2148f53f5f4d",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md": "41823123f8f3d74ad2797adeeaea7c4d54b48eb27478a50f499e35e1267fc990",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CHECK.py": "7c7f0d1abf49345e42ebb8e7316ad899379bb5b16941bf85cf7298983722824d",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CLAIM-COVERAGE.json": "b3124e26191109d4e7d0add61772010b267690e68f75f9e0edc96092b21a0880",
@@ -2265,6 +2265,26 @@
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#17-final-value-is-not-yet-universal-practical-authority"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#64-mutual-development-as-a-test-of-ethical-grounding"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#60-mutual-development-and-the-grounding-limit"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
       "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#63-developing-purposes-and-the-unit-of-warranted-inquiry"
     },
     {
@@ -2774,6 +2794,14 @@
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
       "target": "HUIGEN-SELF-GROUND-SOURCES.md#59-prospective-guidance-within-a-transforming-activity"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
@@ -3454,6 +3482,26 @@
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
       "target": "HUIGEN-SELF-GROUND-SOURCES.md#59-prospective-guidance-within-a-transforming-activity"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#64-mutual-development-as-a-test-of-ethical-grounding"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#60-mutual-development-and-the-grounding-limit"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-FULL-THEORY-AUDIT.md#17-final-value-is-not-yet-universal-practical-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
@@ -4605,6 +4653,38 @@
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-non-self-and-a-perspective-including-both.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "NORMATIVE-WARRANT-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#60-mutual-development-and-the-grounding-limit"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#60-mutual-development-and-the-grounding-limit"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "NORMATIVE-WARRANT-INTEGRATION.md#the-affirmative-route-and-its-decisive-inference"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#12-ordinary-realization-and-the-ground-of-excellence"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#adjudication-of-the-proposed-discriminator"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
       "target": "FOUNDATION-ROOT-ACCEPTANCE.md"
     },
     {
@@ -5016,6 +5096,22 @@
       "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#practical-congruency-and-an-identifiable-ground"
     },
     {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#64-mutual-development-as-a-test-of-ethical-grounding"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "YITI-REN-COFORMATION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "OWNERLESS-ETHICS-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
+    },
+    {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
       "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
     },
@@ -5141,67 +5237,67 @@
     },
     {
       "source": "RESEARCH.md",
-      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#learning-within-a-shared-inquiry"
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#relational-final-value-and-universal-practical-force"
     },
     {
       "source": "RESEARCH.md",
-      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#63-developing-purposes-and-the-unit-of-warranted-inquiry"
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
     },
     {
       "source": "RESEARCH.md",
-      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#59-prospective-guidance-within-a-transforming-activity"
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
     },
     {
       "source": "RESEARCH.md",
-      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-developing-purposes-and-warranted-inquiry-6-october-2026"
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-relational-final-value-and-universal-scope-7-october-2026"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "unified-2026-10-05/HUIGEN.md#learning-within-a-shared-inquiry"
+      "target": "unified-2026-10-05/HUIGEN.md#relational-final-value-and-universal-practical-force"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#63-developing-purposes-and-the-unit-of-warranted-inquiry"
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#59-prospective-guidance-within-a-transforming-activity"
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-developing-purposes-and-warranted-inquiry-6-october-2026"
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-relational-final-value-and-universal-scope-7-october-2026"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "HUIGEN.md#learning-within-a-shared-inquiry"
+      "target": "HUIGEN.md#relational-final-value-and-universal-practical-force"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#63-developing-purposes-and-the-unit-of-warranted-inquiry"
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#59-prospective-guidance-within-a-transforming-activity"
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-developing-purposes-and-warranted-inquiry-6-october-2026"
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-relational-final-value-and-universal-scope-7-october-2026"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#learning-within-a-shared-inquiry"
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#relational-final-value-and-universal-practical-force"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-SELF-GROUND-AUDIT.md#63-developing-purposes-and-the-unit-of-warranted-inquiry"
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#65-relational-final-value-and-the-universal-argument"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-SELF-GROUND-SOURCES.md#59-prospective-guidance-within-a-transforming-activity"
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#61-understanding-achievement-and-welfare-making-explanation"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-REVIEW.md#follow-up-developing-purposes-and-warranted-inquiry-6-october-2026"
+      "target": "HUIGEN-REVIEW.md#follow-up-relational-final-value-and-universal-scope-7-october-2026"
     },
     {
       "source": "sources/SOURCES.md",

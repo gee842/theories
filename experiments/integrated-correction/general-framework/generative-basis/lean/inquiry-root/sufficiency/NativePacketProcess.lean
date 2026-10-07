@@ -3,21 +3,28 @@ import GenerativeCore
 /-!
 # Native packet process reconstructed from the existing diagnosis port
 
-Source: mathematical-abstraction/acquisition/access/diagnosis.py, Account.pay
-(lines 44–59) and Port.command (83–114). This is the default scale-one tariff:
-65536 integer fuel ticks represent one source unit; interface and receipt each
-cost 16384 ticks plus one tick of rent for each live/workspace/temporary cell.
-The two temporary cells are included in the capacity check before each payment.
+Source: mathematical-abstraction/acquisition/access/diagnosis.py, the original
+`Account.pay` (lines 44–59) and `Port.command` (83–114), at its default scale
+one. 65536 integer ticks of what is `held` represent one source unit. Each
+interface stage and each receipt stage draws 16384 ticks plus one tick for each
+live, workspace or temporary cell. The two temporary cells are included in the
+capacity check before each stage is supported.
 
 The port call holds live, workspace and capacity fixed. External diagnostic
 preparation, committed belief updates and retention are outside this executor.
 Historical event-log metadata and maximum peak are not state coordinates here.
-Every resource-changing stage and its ordering are retained, including source
-conversion before a separately funded receipt. An interrupted result contains
-the state actually reached. No rollback, restored packet or acquired receipt is
-inserted. A stopped call is represented separately from a completed command.
+Every stage that changes what is held, enacted or arrived is retained in order,
+including source conversion before a separately supported receipt. An
+interrupted result contains the state actually reached. No rollback, restored
+packet or acquired receipt is inserted. A stopped call is represented
+separately from a completed command.
 
-The cycle, gate and default tariff are inherited apparatus laws, not claimed to
+Vocabulary renamed on 6 October 2026 at Ren's direction. The Python original
+keeps its names; here `held`, `enacted`, `arrived` and `dissipated` replace
+fuel, spent, income and wasted, and a stage's `draw`, `support` and `enact`
+replace bill, charge and debit. Statements and proofs are unchanged.
+
+The cycle, gate and draw schedule are inherited apparatus laws, not claimed to
 follow from logic or to be universal. This source imports no desired macro table.
 -/
 
@@ -37,14 +44,14 @@ structure State where
   blocked : Bool
   receiptFlip : Bool
   source : Nat
-  fuel : Nat
+  held : Nat
   live : Nat
   workspace : Nat
   capacity : Nat
-  spent : Nat
-  income : Nat
+  enacted : Nat
+  arrived : Nat
   transferred : Nat
-  wasted : Nat
+  dissipated : Nat
 
 inductive Observation where
   | silent
@@ -52,16 +59,16 @@ inductive Observation where
   | receipt (value : Bool)
 
 inductive Failure where
-  | interfaceCapacity | interfaceFunding | sourceUnavailable
-  | receiptCapacity | receiptFunding
+  | interfaceCapacity | interfaceInsufficient | sourceUnavailable
+  | receiptCapacity | receiptInsufficient
 
 inductive Result where
   | complete (state : State) (observation : Observation)
   | stopped (state : State) (reason : Failure)
 
-inductive Payment where
-  | paid (state : State)
-  | capacity | funding
+inductive Support where
+  | sustained (state : State)
+  | capacity | insufficient
 
 def output : Phase → Bool
   | .p0 => false
@@ -85,44 +92,44 @@ def receiptBit (s : State) : Bool := arrival s != s.receiptFlip
 
 def peak (s : State) : Nat := s.live + s.workspace + 2
 
-def bill (s : State) : Nat := 16384 + peak s
+def draw (s : State) : Nat := 16384 + peak s
 
-def Payable (s : State) : Prop := peak s ≤ s.capacity ∧ bill s ≤ s.fuel
+def Supportable (s : State) : Prop := peak s ≤ s.capacity ∧ draw s ≤ s.held
 
-def debit (s : State) : State :=
-  { s with fuel := s.fuel - bill s, spent := s.spent + bill s }
+def enact (s : State) : State :=
+  { s with held := s.held - draw s, enacted := s.enacted + draw s }
 
-def charge (s : State) : Payment :=
+def support (s : State) : Support :=
   if peak s ≤ s.capacity then
-    if bill s ≤ s.fuel then .paid (debit s) else .funding
+    if draw s ≤ s.held then .sustained (enact s) else .insufficient
   else .capacity
 
-def gain (s : State) : Nat := if arrival s then 655360 else 0
+def arrivalAmount (s : State) : Nat := if arrival s then 655360 else 0
 
 /-- Applied only after the source guard in execute. It preserves the actual
-arrival before the later receipt charge, even if that charge is denied. -/
+arrival before the later receipt stage, even if that stage cannot be supported. -/
 def convert (s : State) : State :=
   { s with
     source := s.source - 10,
-    fuel := s.fuel + gain s,
-    income := s.income + gain s,
+    held := s.held + arrivalAmount s,
+    arrived := s.arrived + arrivalAmount s,
     transferred := s.transferred + (if arrival s then 10 else 0),
-    wasted := s.wasted + (if arrival s then 0 else 10) }
+    dissipated := s.dissipated + (if arrival s then 0 else 10) }
 
-/-- The second stage of the same command, after its interface charge. -/
+/-- The second stage of the same command, after its interface stage is supported. -/
 def finishProbe (ready : State) : Result :=
   if 10 ≤ ready.source then
-    match charge (convert ready) with
+    match support (convert ready) with
     | .capacity => .stopped (convert ready) .receiptCapacity
-    | .funding => .stopped (convert ready) .receiptFunding
-    | .paid recorded => .complete recorded (.receipt (receiptBit ready))
+    | .insufficient => .stopped (convert ready) .receiptInsufficient
+    | .sustained recorded => .complete recorded (.receipt (receiptBit ready))
   else .stopped ready .sourceUnavailable
 
 def execute (s : State) (command : Command) : Result :=
-  match charge s with
+  match support s with
   | .capacity => .stopped s .interfaceCapacity
-  | .funding => .stopped s .interfaceFunding
-  | .paid ready =>
+  | .insufficient => .stopped s .interfaceInsufficient
+  | .sustained ready =>
       match command with
       | .a => .complete { ready with phase := nextPhase ready.phase } .silent
       | .reset =>
@@ -139,46 +146,46 @@ remain fully represented by execute and their separate failure theorems. -/
 def process : Process State Command where
   step s command t := ∃ o, execute s command = .complete t o
 
-def probeFinal (s : State) : State := debit (convert (debit s))
+def probeFinal (s : State) : State := enact (convert (enact s))
 
 def ProbeReady (s : State) : Prop :=
-  Payable s ∧ 10 ≤ s.source ∧ Payable (convert (debit s))
+  Supportable s ∧ 10 ≤ s.source ∧ Supportable (convert (enact s))
 
-theorem charge_paid (s : State) (capacity : peak s ≤ s.capacity)
-    (funding : bill s ≤ s.fuel) : charge s = .paid (debit s) := by
-  unfold charge
-  rw [if_pos capacity, if_pos funding]
+theorem support_sustained (s : State) (capacity : peak s ≤ s.capacity)
+    (covered : draw s ≤ s.held) : support s = .sustained (enact s) := by
+  unfold support
+  rw [if_pos capacity, if_pos covered]
 
-theorem charge_capacity (s : State) (capacity : ¬ peak s ≤ s.capacity) :
-    charge s = .capacity := by
-  unfold charge
+theorem support_capacity (s : State) (capacity : ¬ peak s ≤ s.capacity) :
+    support s = .capacity := by
+  unfold support
   rw [if_neg capacity]
 
-theorem charge_funding (s : State) (capacity : peak s ≤ s.capacity)
-    (funding : ¬ bill s ≤ s.fuel) : charge s = .funding := by
-  unfold charge
-  rw [if_pos capacity, if_neg funding]
+theorem support_insufficient (s : State) (capacity : peak s ≤ s.capacity)
+    (short : ¬ draw s ≤ s.held) : support s = .insufficient := by
+  unfold support
+  rw [if_pos capacity, if_neg short]
 
-theorem charge_paid_iff (s t : State) :
-    charge s = .paid t ↔ Payable s ∧ t = debit s := by
-  unfold charge
+theorem support_sustained_iff (s t : State) :
+    support s = .sustained t ↔ Supportable s ∧ t = enact s := by
+  unfold support
   split
   next capacity =>
     split
-    next funding =>
+    next covered =>
       constructor
       · intro h
         cases h
-        exact ⟨⟨capacity, funding⟩, rfl⟩
+        exact ⟨⟨capacity, covered⟩, rfl⟩
       · rintro ⟨_, h⟩
         cases h
         rfl
-    next funding =>
+    next short =>
       constructor
       · intro h
         cases h
       · intro h
-        exact False.elim (funding h.1.2)
+        exact False.elim (short h.1.2)
   next capacity =>
     constructor
     · intro h
@@ -187,45 +194,45 @@ theorem charge_paid_iff (s t : State) :
       exact False.elim (capacity h.1.1)
 
 theorem probeReady_exact (s : State) :
-    ProbeReady s ↔ peak s ≤ s.capacity ∧ bill s ≤ s.fuel ∧ 10 ≤ s.source ∧
-      bill s ≤ s.fuel - bill s + gain s := by
+    ProbeReady s ↔ peak s ≤ s.capacity ∧ draw s ≤ s.held ∧ 10 ≤ s.source ∧
+      draw s ≤ s.held - draw s + arrivalAmount s := by
   constructor
   · intro h
     exact ⟨h.1.1, h.1.2, h.2.1, h.2.2.2⟩
-  · rintro ⟨capacity, funding, source, receipt⟩
-    exact ⟨⟨capacity, funding⟩, source, ⟨capacity, receipt⟩⟩
+  · rintro ⟨capacity, covered, source, receipt⟩
+    exact ⟨⟨capacity, covered⟩, source, ⟨capacity, receipt⟩⟩
 
 theorem probe_complete (s : State) (ready : ProbeReady s) :
     execute s .probe = .complete (probeFinal s) (.receipt (receiptBit s)) := by
   unfold execute
-  rw [charge_paid s ready.1.1 ready.1.2]
+  rw [support_sustained s ready.1.1 ready.1.2]
   change (if 10 ≤ s.source then
-    match charge (convert (debit s)) with
-    | .capacity => Result.stopped (convert (debit s)) .receiptCapacity
-    | .funding => Result.stopped (convert (debit s)) .receiptFunding
-    | .paid recorded => Result.complete recorded (.receipt (receiptBit (debit s)))
-    else Result.stopped (debit s) .sourceUnavailable) = _
-  rw [if_pos ready.2.1, charge_paid (convert (debit s)) ready.2.2.1 ready.2.2.2]
+    match support (convert (enact s)) with
+    | .capacity => Result.stopped (convert (enact s)) .receiptCapacity
+    | .insufficient => Result.stopped (convert (enact s)) .receiptInsufficient
+    | .sustained recorded => Result.complete recorded (.receipt (receiptBit (enact s)))
+    else Result.stopped (enact s) .sourceUnavailable) = _
+  rw [if_pos ready.2.1, support_sustained (convert (enact s)) ready.2.2.1 ready.2.2.2]
   rfl
 
 
-theorem a_complete (s : State) (ready : Payable s) :
-    execute s .a = .complete { debit s with phase := nextPhase s.phase } .silent := by
+theorem a_complete (s : State) (ready : Supportable s) :
+    execute s .a = .complete { enact s with phase := nextPhase s.phase } .silent := by
   unfold execute
-  rw [charge_paid s ready.1 ready.2]
+  rw [support_sustained s ready.1 ready.2]
   rfl
 
-theorem reset_complete (s : State) (ready : Payable s) :
+theorem reset_complete (s : State) (ready : Supportable s) :
     execute s .reset =
-      .complete { debit s with phase := if s.broken then s.phase else .p0 } .silent := by
+      .complete { enact s with phase := if s.broken then s.phase else .p0 } .silent := by
   unfold execute
-  rw [charge_paid s ready.1 ready.2]
+  rw [support_sustained s ready.1 ready.2]
   rfl
 
-theorem read_complete (s : State) (ready : Payable s) :
-    execute s .read = .complete (debit s) (.reading (readBit s)) := by
+theorem read_complete (s : State) (ready : Supportable s) :
+    execute s .read = .complete (enact s) (.reading (readBit s)) := by
   unfold execute
-  rw [charge_paid s ready.1 ready.2]
+  rw [support_sustained s ready.1 ready.2]
   rfl
 
 /-- Exact completion criterion, including the reached state and the actual
@@ -236,27 +243,27 @@ theorem probe_complete_iff (s t : State) (observation : Observation) :
   constructor
   · intro h
     unfold execute at h
-    generalize interface : charge s = payment at h
-    cases payment with
+    generalize interface : support s = outcome at h
+    cases outcome with
     | capacity => cases h
-    | funding => cases h
-    | paid ready =>
-      obtain ⟨payable, equality⟩ := (charge_paid_iff s ready).mp interface
+    | insufficient => cases h
+    | sustained ready =>
+      obtain ⟨supportable, equality⟩ := (support_sustained_iff s ready).mp interface
       cases equality
-      change finishProbe (debit s) = .complete t observation at h
+      change finishProbe (enact s) = .complete t observation at h
       unfold finishProbe at h
       split at h
       next source =>
-        generalize receipt : charge (convert (debit s)) = second at h
+        generalize receipt : support (convert (enact s)) = second at h
         cases second with
         | capacity => cases h
-        | funding => cases h
-        | paid recorded =>
-          obtain ⟨lastPayable, lastEquality⟩ :=
-            (charge_paid_iff (convert (debit s)) recorded).mp receipt
+        | insufficient => cases h
+        | sustained recorded =>
+          obtain ⟨lastSupportable, lastEquality⟩ :=
+            (support_sustained_iff (convert (enact s)) recorded).mp receipt
           cases lastEquality
           cases h
-          exact ⟨⟨payable, source, lastPayable⟩, rfl, rfl⟩
+          exact ⟨⟨supportable, source, lastSupportable⟩, rfl, rfl⟩
       next missing => cases h
   · rintro ⟨ready, rfl, rfl⟩
     exact probe_complete s ready
@@ -265,45 +272,45 @@ theorem interface_capacity_stops (s : State) (command : Command)
     (capacity : ¬ peak s ≤ s.capacity) :
     execute s command = .stopped s .interfaceCapacity := by
   unfold execute
-  rw [charge_capacity s capacity]
+  rw [support_capacity s capacity]
 
-theorem interface_funding_stops (s : State) (command : Command)
-    (capacity : peak s ≤ s.capacity) (funding : ¬ bill s ≤ s.fuel) :
-    execute s command = .stopped s .interfaceFunding := by
+theorem interface_insufficient_stops (s : State) (command : Command)
+    (capacity : peak s ≤ s.capacity) (short : ¬ draw s ≤ s.held) :
+    execute s command = .stopped s .interfaceInsufficient := by
   unfold execute
-  rw [charge_funding s capacity funding]
+  rw [support_insufficient s capacity short]
 
-/-- Source denial occurs after the interface debit; no source conversion occurs. -/
-theorem probe_source_stops (s : State) (ready : Payable s)
+/-- Source denial occurs after the interface stage is enacted; no source conversion occurs. -/
+theorem probe_source_stops (s : State) (ready : Supportable s)
     (source : ¬ 10 ≤ s.source) :
-    execute s .probe = .stopped (debit s) .sourceUnavailable := by
+    execute s .probe = .stopped (enact s) .sourceUnavailable := by
   unfold execute
-  rw [charge_paid s ready.1 ready.2]
+  rw [support_sustained s ready.1 ready.2]
   change (if 10 ≤ s.source then _ else _) = _
   rw [if_neg source]
 
-/-- A denied receipt retains the already converted source, actual arrival or
-waste, credited income and interface charge. It delivers no receipt. -/
-theorem probe_receipt_funding_stops (s : State) (ready : Payable s)
+/-- An unsupported receipt stage retains the already converted source, the actual
+arrival or dissipation, what arrived, and the enacted interface stage. It delivers no receipt. -/
+theorem probe_receipt_insufficient_stops (s : State) (ready : Supportable s)
     (source : 10 ≤ s.source)
-    (receipt : ¬ bill s ≤ s.fuel - bill s + gain s) :
-    execute s .probe = .stopped (convert (debit s)) .receiptFunding := by
+    (receipt : ¬ draw s ≤ s.held - draw s + arrivalAmount s) :
+    execute s .probe = .stopped (convert (enact s)) .receiptInsufficient := by
   unfold execute
-  rw [charge_paid s ready.1 ready.2]
+  rw [support_sustained s ready.1 ready.2]
   change (if 10 ≤ s.source then _ else _) = _
   rw [if_pos source]
-  rw [charge_funding (convert (debit s)) ready.1 receipt]
+  rw [support_insufficient (convert (enact s)) ready.1 receipt]
 
-/-- Exact native resource effects, in source units and integer fuel ticks.
-The two subtractions are ordered payments, not a credit before extraction. -/
+/-- Exact native resource effects, in source units and integer held ticks.
+The two subtractions are ordered draws; nothing arrives before conversion. -/
 theorem probe_final_effects (s : State) :
     (probeFinal s).phase = s.phase ∧
     (probeFinal s).source = s.source - 10 ∧
-    (probeFinal s).fuel = (s.fuel - bill s + gain s) - bill s ∧
-    (probeFinal s).spent = (s.spent + bill s) + bill s ∧
-    (probeFinal s).income = s.income + gain s ∧
+    (probeFinal s).held = (s.held - draw s + arrivalAmount s) - draw s ∧
+    (probeFinal s).enacted = (s.enacted + draw s) + draw s ∧
+    (probeFinal s).arrived = s.arrived + arrivalAmount s ∧
     (probeFinal s).transferred = s.transferred + (if arrival s then 10 else 0) ∧
-    (probeFinal s).wasted = s.wasted + (if arrival s then 0 else 10) :=
+    (probeFinal s).dissipated = s.dissipated + (if arrival s then 0 else 10) :=
   ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
 
 /-- Static port parameters are retained even by interrupted calls. The phase
@@ -317,29 +324,29 @@ def SameParameters (before after : State) : Prop :=
 theorem execute_retains_parameters (s : State) (command : Command) :
     SameParameters s (reached (execute s command)) := by
   unfold execute
-  generalize interface : charge s = payment
-  cases payment with
+  generalize interface : support s = outcome
+  cases outcome with
   | capacity => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
-  | funding => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
-  | paid ready =>
-    obtain ⟨_, equality⟩ := (charge_paid_iff s ready).mp interface
+  | insufficient => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
+  | sustained ready =>
+    obtain ⟨_, equality⟩ := (support_sustained_iff s ready).mp interface
     cases equality
     cases command with
     | a => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
     | reset => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
     | read => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
     | probe =>
-      change SameParameters s (reached (finishProbe (debit s)))
+      change SameParameters s (reached (finishProbe (enact s)))
       unfold finishProbe
       split
       next source =>
-        generalize receipt : charge (convert (debit s)) = second
+        generalize receipt : support (convert (enact s)) = second
         cases second with
         | capacity => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
-        | funding => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
-        | paid recorded =>
+        | insufficient => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
+        | sustained recorded =>
           obtain ⟨_, lastEquality⟩ :=
-            (charge_paid_iff (convert (debit s)) recorded).mp receipt
+            (support_sustained_iff (convert (enact s)) recorded).mp receipt
           cases lastEquality
           exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
       next missing => exact ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
@@ -353,30 +360,30 @@ theorem completed_retains_parameters {s t : State} {command : Command}
 
 
 /-- The second capacity check is faithfully present, but cannot newly fail:
-this port call does not change live/workspace/capacity between its two charges. -/
+this port call does not change live/workspace/capacity between its two stages. -/
 theorem receipt_capacity_unreachable (s t : State) (command : Command) :
     execute s command ≠ .stopped t .receiptCapacity := by
   unfold execute
-  generalize interface : charge s = payment
-  cases payment with
+  generalize interface : support s = outcome
+  cases outcome with
   | capacity => intro h; cases h
-  | funding => intro h; cases h
-  | paid ready =>
-    obtain ⟨payable, equality⟩ := (charge_paid_iff s ready).mp interface
+  | insufficient => intro h; cases h
+  | sustained ready =>
+    obtain ⟨supportable, equality⟩ := (support_sustained_iff s ready).mp interface
     cases equality
     cases command with
     | a => intro h; cases h
     | reset => intro h; cases h
     | read => intro h; cases h
     | probe =>
-      change finishProbe (debit s) ≠ .stopped t .receiptCapacity
+      change finishProbe (enact s) ≠ .stopped t .receiptCapacity
       unfold finishProbe
       split
       next source =>
-        by_cases enough : bill (convert (debit s)) ≤ (convert (debit s)).fuel
-        · rw [charge_paid (convert (debit s)) payable.1 enough]
+        by_cases enough : draw (convert (enact s)) ≤ (convert (enact s)).held
+        · rw [support_sustained (convert (enact s)) supportable.1 enough]
           intro h; cases h
-        · rw [charge_funding (convert (debit s)) payable.1 enough]
+        · rw [support_insufficient (convert (enact s)) supportable.1 enough]
           intro h; cases h
       next missing => intro h; cases h
 
@@ -388,7 +395,7 @@ end Generative.NativePacketProcess
 #print axioms Generative.NativePacketProcess.Observation
 #print axioms Generative.NativePacketProcess.Failure
 #print axioms Generative.NativePacketProcess.Result
-#print axioms Generative.NativePacketProcess.Payment
+#print axioms Generative.NativePacketProcess.Support
 #print axioms Generative.NativePacketProcess.output
 #print axioms Generative.NativePacketProcess.nextPhase
 #print axioms Generative.NativePacketProcess.arrivalAt
@@ -396,11 +403,11 @@ end Generative.NativePacketProcess
 #print axioms Generative.NativePacketProcess.readBit
 #print axioms Generative.NativePacketProcess.receiptBit
 #print axioms Generative.NativePacketProcess.peak
-#print axioms Generative.NativePacketProcess.bill
-#print axioms Generative.NativePacketProcess.Payable
-#print axioms Generative.NativePacketProcess.debit
-#print axioms Generative.NativePacketProcess.charge
-#print axioms Generative.NativePacketProcess.gain
+#print axioms Generative.NativePacketProcess.draw
+#print axioms Generative.NativePacketProcess.Supportable
+#print axioms Generative.NativePacketProcess.enact
+#print axioms Generative.NativePacketProcess.support
+#print axioms Generative.NativePacketProcess.arrivalAmount
 #print axioms Generative.NativePacketProcess.convert
 #print axioms Generative.NativePacketProcess.finishProbe
 #print axioms Generative.NativePacketProcess.execute
@@ -408,10 +415,10 @@ end Generative.NativePacketProcess
 #print axioms Generative.NativePacketProcess.process
 #print axioms Generative.NativePacketProcess.probeFinal
 #print axioms Generative.NativePacketProcess.ProbeReady
-#print axioms Generative.NativePacketProcess.charge_paid
-#print axioms Generative.NativePacketProcess.charge_capacity
-#print axioms Generative.NativePacketProcess.charge_funding
-#print axioms Generative.NativePacketProcess.charge_paid_iff
+#print axioms Generative.NativePacketProcess.support_sustained
+#print axioms Generative.NativePacketProcess.support_capacity
+#print axioms Generative.NativePacketProcess.support_insufficient
+#print axioms Generative.NativePacketProcess.support_sustained_iff
 #print axioms Generative.NativePacketProcess.probeReady_exact
 #print axioms Generative.NativePacketProcess.probe_complete
 #print axioms Generative.NativePacketProcess.a_complete
@@ -419,9 +426,9 @@ end Generative.NativePacketProcess
 #print axioms Generative.NativePacketProcess.read_complete
 #print axioms Generative.NativePacketProcess.probe_complete_iff
 #print axioms Generative.NativePacketProcess.interface_capacity_stops
-#print axioms Generative.NativePacketProcess.interface_funding_stops
+#print axioms Generative.NativePacketProcess.interface_insufficient_stops
 #print axioms Generative.NativePacketProcess.probe_source_stops
-#print axioms Generative.NativePacketProcess.probe_receipt_funding_stops
+#print axioms Generative.NativePacketProcess.probe_receipt_insufficient_stops
 #print axioms Generative.NativePacketProcess.probe_final_effects
 #print axioms Generative.NativePacketProcess.SameParameters
 #print axioms Generative.NativePacketProcess.execute_retains_parameters

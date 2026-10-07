@@ -9,13 +9,13 @@ therefore the effective probe law, is consequently invariant under every native
 history. This module adds one formation operation beside the unchanged port.
 
 Formation follows the port's own ordering. It first meets the native interface
-demand under the native capacity check, then requires one inherited spare
+draw under the native capacity check, then requires one inherited spare
 component pair. A completed formation consumes that pair and clears the
-blocked contact. If no spare pair remains, the reserve drawn for the interface
+blocked contact. If no spare pair remains, what was drawn for the interface
 is not restored and the contact stays blocked. No new material, free reset or favorable
 replacement configuration is introduced.
 
-Supplied here: the spare-pair stock, the use of the native interface demand for
+Supplied here: the spare-pair stock, the use of the native interface draw for
 formation, and the rule that a formed contact clears `blocked`. These follow the
 pattern of the existing inquiry-revision contact (one inherited spare pair, one
 supported operation), but that mechanism belongs to a different apparatus; its exact
@@ -35,7 +35,7 @@ structure Formed where
   spare : Nat
 
 inductive FormFailure where
-  | interfaceCapacity | interfaceReserve | noSpare
+  | interfaceCapacity | interfaceInsufficient | noSpare
 
 inductive FormResult where
   | complete (state : Formed)
@@ -44,19 +44,19 @@ inductive FormResult where
 def openContact (s : NativePacketProcess.State) : NativePacketProcess.State :=
   { s with blocked := false }
 
-/-- Meet the native interface demand, then consume one spare pair to open the contact.
-A missing pair is discovered after that demand is met, as the native source check is. -/
+/-- Meet the native interface draw, then consume one spare pair to open the contact.
+A missing pair is discovered after that draw is met, as the native source check is. -/
 def finishForm (x : Formed) (ready : NativePacketProcess.State) : FormResult :=
   if 1 ≤ x.spare then .complete ⟨openContact ready, x.spare - 1⟩
   else .stopped ⟨ready, x.spare⟩ .noSpare
 
 def form (x : Formed) : FormResult :=
-  match charge x.port with
+  match support x.port with
   | .capacity => .stopped x .interfaceCapacity
-  | .funding => .stopped x .interfaceReserve
-  | .paid ready => finishForm x ready
+  | .insufficient => .stopped x .interfaceInsufficient
+  | .sustained ready => finishForm x ready
 
-def formedState (x : Formed) : Formed := ⟨openContact (debit x.port), x.spare - 1⟩
+def formedState (x : Formed) : Formed := ⟨openContact (enact x.port), x.spare - 1⟩
 
 inductive Event where
   | native (command : NativePacketProcess.Command)
@@ -73,26 +73,26 @@ def formCount : List Event → Nat
   | .form :: rest => formCount rest + 1
   | .native _ :: rest => formCount rest
 
-theorem form_complete (x : Formed) (ready : Payable x.port) (pair : 1 ≤ x.spare) :
+theorem form_complete (x : Formed) (ready : Supportable x.port) (pair : 1 ≤ x.spare) :
     form x = .complete (formedState x) := by
   unfold form
-  rw [charge_paid x.port ready.1 ready.2]
+  rw [support_sustained x.port ready.1 ready.2]
   dsimp only
   unfold finishForm
   rw [if_pos pair]
   rfl
 
 theorem form_complete_iff (x y : Formed) :
-    form x = .complete y ↔ Payable x.port ∧ 1 ≤ x.spare ∧ y = formedState x := by
+    form x = .complete y ↔ Supportable x.port ∧ 1 ≤ x.spare ∧ y = formedState x := by
   constructor
   · intro completed
     unfold form at completed
-    generalize interface : charge x.port = payment at completed
-    cases payment with
+    generalize interface : support x.port = outcome at completed
+    cases outcome with
     | capacity => cases completed
-    | funding => cases completed
-    | paid ready =>
-      obtain ⟨sustained, equality⟩ := (charge_paid_iff x.port ready).mp interface
+    | insufficient => cases completed
+    | sustained ready =>
+      obtain ⟨sustained, equality⟩ := (support_sustained_iff x.port ready).mp interface
       cases equality
       dsimp only at completed
       unfold finishForm at completed
@@ -108,32 +108,32 @@ theorem form_complete_iff (x y : Formed) :
 theorem form_capacity_stops (x : Formed) (capacity : ¬ peak x.port ≤ x.port.capacity) :
     form x = .stopped x .interfaceCapacity := by
   unfold form
-  rw [charge_capacity x.port capacity]
+  rw [support_capacity x.port capacity]
 
-theorem form_reserve_stops (x : Formed) (capacity : peak x.port ≤ x.port.capacity)
-    (short : ¬ bill x.port ≤ x.port.fuel) :
-    form x = .stopped x .interfaceReserve := by
+theorem form_insufficient_stops (x : Formed) (capacity : peak x.port ≤ x.port.capacity)
+    (short : ¬ draw x.port ≤ x.port.held) :
+    form x = .stopped x .interfaceInsufficient := by
   unfold form
-  rw [charge_funding x.port capacity short]
+  rw [support_insufficient x.port capacity short]
 
-/-- Without a spare pair the interface demand is still drawn and nothing opens. -/
-theorem form_no_spare_still_draws (x : Formed) (ready : Payable x.port)
+/-- Without a spare pair the interface draw is still enacted and nothing opens. -/
+theorem form_no_spare_still_draws (x : Formed) (ready : Supportable x.port)
     (empty : x.spare = 0) :
-    form x = .stopped ⟨debit x.port, x.spare⟩ .noSpare ∧
-      (debit x.port).blocked = x.port.blocked ∧
-      (debit x.port).fuel = x.port.fuel - bill x.port := by
+    form x = .stopped ⟨enact x.port, x.spare⟩ .noSpare ∧
+      (enact x.port).blocked = x.port.blocked ∧
+      (enact x.port).held = x.port.held - draw x.port := by
   refine ⟨?_, rfl, rfl⟩
   unfold form
   have missing : ¬ 1 ≤ x.spare := by
     rw [empty]
     exact Nat.not_succ_le_zero 0
-  rw [charge_paid x.port ready.1 ready.2]
+  rw [support_sustained x.port ready.1 ready.2]
   dsimp only
   unfold finishForm
   rw [if_neg missing]
 
-/-- Exactly what a completed formation changes and retains. `fuel` and `spent`
-are the inherited native names for the usable reserve and its cumulative draw. -/
+/-- Exactly what a completed formation changes and retains. `held` and `enacted`
+are what remains available and what has become activity. -/
 theorem formed_effects (x : Formed) :
     (formedState x).port.blocked = false ∧
       (formedState x).port.tau = x.port.tau ∧
@@ -145,8 +145,8 @@ theorem formed_effects (x : Formed) :
       (formedState x).port.live = x.port.live ∧
       (formedState x).port.workspace = x.port.workspace ∧
       (formedState x).port.capacity = x.port.capacity ∧
-      (formedState x).port.fuel = x.port.fuel - bill x.port ∧
-      (formedState x).port.spent = x.port.spent + bill x.port ∧
+      (formedState x).port.held = x.port.held - draw x.port ∧
+      (formedState x).port.enacted = x.port.enacted + draw x.port ∧
       (formedState x).spare = x.spare - 1 :=
   ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
 
@@ -155,12 +155,12 @@ theorem failed_formation_retains_contact (x y : Formed) (reason : FormFailure)
     (stopped : form x = .stopped y reason) :
     y.port.blocked = x.port.blocked ∧ y.port.tau = x.port.tau ∧ y.spare = x.spare := by
   unfold form at stopped
-  generalize interface : charge x.port = payment at stopped
-  cases payment with
+  generalize interface : support x.port = outcome at stopped
+  cases outcome with
   | capacity => cases stopped; exact ⟨rfl, rfl, rfl⟩
-  | funding => cases stopped; exact ⟨rfl, rfl, rfl⟩
-  | paid ready =>
-    obtain ⟨_, equality⟩ := (charge_paid_iff x.port ready).mp interface
+  | insufficient => cases stopped; exact ⟨rfl, rfl, rfl⟩
+  | sustained ready =>
+    obtain ⟨_, equality⟩ := (support_sustained_iff x.port ready).mp interface
     cases equality
     dsimp only at stopped
     unfold finishForm at stopped
@@ -234,7 +234,7 @@ theorem opening_requires_formation {x y : Formed} {events : List Event}
       exact Nat.succ_le_succ (Nat.zero_le _)
 
 /-- Each completed formation consumes exactly one inherited spare pair. -/
-theorem spare_accounting {x y : Formed} {events : List Event}
+theorem spare_count {x y : Formed} {events : List Event}
     (trace : Trace process x events y) : y.spare + formCount events = x.spare := by
   induction trace with
   | nil => rfl
@@ -252,7 +252,7 @@ theorem spare_accounting {x y : Formed} {events : List Event}
 
 theorem formations_bounded_by_spares {x y : Formed} {events : List Event}
     (trace : Trace process x events y) : formCount events ≤ x.spare := by
-  rw [← spare_accounting trace]
+  rw [← spare_count trace]
   exact Nat.le_add_left _ _
 
 /-- Same alignment schedule, same phase, opposite transfer outcome: aligning
@@ -297,7 +297,7 @@ end Generative.InquirySufficiency.ContactFormation
 #print axioms Generative.InquirySufficiency.ContactFormation.form_complete
 #print axioms Generative.InquirySufficiency.ContactFormation.form_complete_iff
 #print axioms Generative.InquirySufficiency.ContactFormation.form_capacity_stops
-#print axioms Generative.InquirySufficiency.ContactFormation.form_reserve_stops
+#print axioms Generative.InquirySufficiency.ContactFormation.form_insufficient_stops
 #print axioms Generative.InquirySufficiency.ContactFormation.form_no_spare_still_draws
 #print axioms Generative.InquirySufficiency.ContactFormation.formed_effects
 #print axioms Generative.InquirySufficiency.ContactFormation.failed_formation_retains_contact
@@ -307,6 +307,6 @@ end Generative.InquirySufficiency.ContactFormation
 #print axioms Generative.InquirySufficiency.ContactFormation.native_trace_retains_contact
 #print axioms Generative.InquirySufficiency.ContactFormation.native_history_cannot_leave_C
 #print axioms Generative.InquirySufficiency.ContactFormation.opening_requires_formation
-#print axioms Generative.InquirySufficiency.ContactFormation.spare_accounting
+#print axioms Generative.InquirySufficiency.ContactFormation.spare_count
 #print axioms Generative.InquirySufficiency.ContactFormation.formations_bounded_by_spares
 #print axioms Generative.InquirySufficiency.ContactFormation.formation_changes_aligned_arrival

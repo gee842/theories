@@ -1,5 +1,6 @@
 import GenerativeCore
 import Depletion
+import RenewalBasics
 
 /-!
 # Renewal accounting: a constraint that brings in less than its formation demands
@@ -73,10 +74,11 @@ def formation (law : ChannelLaw Kind) : List Kind → Nat
 
 theorem weighted_append (w : Kind → Nat) :
     ∀ (l m : List (Token Kind)), weighted w (l ++ m) = weighted w l + weighted w m
-  | [], m => by simp [weighted]
+  | [], m => (Nat.zero_add (weighted w m)).symm
   | tok :: rest, m => by
-    simp only [List.cons_append, weighted, weighted_append w rest m]
-    omega
+    show w tok.kind * tok.remaining + weighted w (rest ++ m) =
+      w tok.kind * tok.remaining + weighted w rest + weighted w m
+    rw [weighted_append w rest m, Nat.add_assoc]
 
 /-- Aging moves exactly what live tokens open out of the weighted span. -/
 theorem weighted_aged (w : Kind → Nat) :
@@ -87,33 +89,38 @@ theorem weighted_aged (w : Kind → Nat) :
     by_cases last : tok.remaining ≤ 1
     · rw [aged, if_pos last, opened, weighted]
       by_cases zero : tok.remaining = 0
-      · rw [if_pos zero, zero, Nat.mul_zero]
-        omega
+      · rw [if_pos zero, zero, Nat.mul_zero, Nat.zero_add, Nat.zero_add]
+        exact ih
       · rw [if_neg zero]
-        have one : tok.remaining = 1 := by omega
-        rw [one, Nat.mul_one]
-        omega
-    · rw [aged, if_neg last, opened, weighted, weighted]
-      have notZero : ¬ tok.remaining = 0 := by omega
-      rw [if_neg notZero]
-      obtain ⟨r, shape⟩ : ∃ r, tok.remaining = r + 1 := ⟨tok.remaining - 1, by omega⟩
-      simp only [shape, Nat.add_sub_cancel, Nat.mul_succ]
-      omega
+        have one : tok.remaining = 1 := Nat.le_antisymm last (pos_of_ne_zero_of zero)
+        rw [one, Nat.mul_one, Nat.add_left_comm, ih]
+    · have notZero : ¬ tok.remaining = 0 := fun zero => last (zero ▸ Nat.zero_le 1)
+      have shape : tok.remaining = tok.remaining - 1 + 1 :=
+        (sub_add_cancel_of_le (pos_of_ne_zero_of notZero)).symm
+      rw [aged, if_neg last, opened, if_neg notZero]
+      show w tok.kind * (tok.remaining - 1) + weighted w (aged rest) +
+          (w tok.kind + opened w rest) = w tok.kind * tok.remaining + weighted w rest
+      calc w tok.kind * (tok.remaining - 1) + weighted w (aged rest) +
+            (w tok.kind + opened w rest)
+          = w tok.kind * (tok.remaining - 1) + w tok.kind +
+            (weighted w (aged rest) + opened w rest) := Nat.add_add_add_comm _ _ _ _
+        _ = w tok.kind * tok.remaining + weighted w rest := by
+          rw [ih, ← Nat.mul_succ]
+          exact congrArg (fun n => w tok.kind * n + weighted w rest) shape.symm
 
 theorem weighted_formed_le (law : ChannelLaw Kind) (w : Kind → Nat) (D : Nat)
     (spanBound : ∀ k, law.span k ≤ D) (wBound : ∀ k, w k ≤ 1) :
     ∀ births : List Kind, weighted w (formed law births) ≤ D * births.length
-  | [] => by simp [formed, weighted]
+  | [] => Nat.zero_le _
   | k :: rest => by
     have ih := weighted_formed_le law w D spanBound wBound rest
-    simp only [formed, weighted, List.length_cons, Nat.mul_succ]
-    have one : w k * law.span k ≤ D := by
-      have := wBound k
-      have := spanBound k
+    have one : w k * law.span k ≤ D :=
       calc w k * law.span k ≤ 1 * law.span k := Nat.mul_le_mul_right _ (wBound k)
         _ = law.span k := Nat.one_mul _
         _ ≤ D := spanBound k
-    omega
+    show w k * law.span k + weighted w (formed law rest) ≤ D * (rest.length + 1)
+    rw [Nat.mul_succ, Nat.add_comm (D * rest.length) D]
+    exact Nat.add_le_add one ih
 
 /-- When every kind falls short, a formation's demand exceeds what its tokens
 can ever open, by at least one per formation. -/
@@ -121,12 +128,13 @@ theorem formation_exceeds_opening (law : ChannelLaw Kind)
     (short : ∀ k, law.rate k * law.span k + 1 ≤ law.demand k) :
     ∀ births : List Kind,
       weighted law.rate (formed law births) + births.length ≤ formation law births
-  | [] => by simp [formed, weighted, formation]
+  | [] => Nat.le_refl 0
   | k :: rest => by
     have ih := formation_exceeds_opening law short rest
-    have here := short k
-    simp only [formed, weighted, formation, List.length_cons]
-    omega
+    show law.rate k * law.span k + weighted law.rate (formed law rest) + (rest.length + 1) ≤
+      law.demand k + formation law rest
+    rw [Nat.add_comm rest.length 1, Nat.add_add_add_comm]
+    exact Nat.add_le_add (short k) ih
 
 /-- One tick of a constraint–flow system. Every formed token needs a support
 token that is still alive after aging, so it existed before this tick. -/
@@ -162,8 +170,20 @@ theorem opening_step (law : ChannelLaw Kind) {c c' : Config Kind} {births : List
       openingPotential law c + weighted law.rate (formed law births) := by
   have ⟨shape, balance, _⟩ := step
   have aging := weighted_aged law.rate c.tokens
-  simp only [openingPotential, shape, weighted_append]
-  omega
+  show c'.reserve + weighted law.rate c'.tokens + formation law births ≤
+    c.reserve + weighted law.rate c.tokens + weighted law.rate (formed law births)
+  rw [shape, weighted_append, ← aging]
+  calc c'.reserve + (weighted law.rate (aged c.tokens) + weighted law.rate (formed law births)) +
+        formation law births
+      = c'.reserve + formation law births +
+        (weighted law.rate (aged c.tokens) + weighted law.rate (formed law births)) :=
+        Nat.add_right_comm _ _ _
+    _ ≤ c.reserve + opened law.rate c.tokens +
+        (weighted law.rate (aged c.tokens) + weighted law.rate (formed law births)) :=
+        Nat.add_le_add_right balance _
+    _ = c.reserve + (weighted law.rate (aged c.tokens) + opened law.rate c.tokens) +
+        weighted law.rate (formed law births) := by
+      rw [← Nat.add_assoc, Nat.add_assoc c.reserve, Nat.add_comm (opened law.rate c.tokens)]
 
 /-- With every kind short, each formation lowers the opening potential by at
 least one. -/
@@ -174,7 +194,12 @@ theorem short_opening_step (law : ChannelLaw Kind)
     openingPotential law c' + births.length ≤ openingPotential law c := by
   have base := opening_step law step
   have gap := formation_exceeds_opening law short births
-  omega
+  apply le_of_add_le_add_right_of (k := weighted law.rate (formed law births))
+  calc openingPotential law c' + births.length + weighted law.rate (formed law births)
+      = openingPotential law c' + (weighted law.rate (formed law births) + births.length) := by
+        rw [Nat.add_assoc, Nat.add_comm births.length]
+    _ ≤ openingPotential law c' + formation law births := Nat.add_le_add_left gap _
+    _ ≤ openingPotential law c + weighted law.rate (formed law births) := base
 
 /-- A live tick lowers remaining life by at least one, and formations add at
 most `D` each. -/
@@ -185,9 +210,17 @@ theorem life_step (law : ChannelLaw Kind) (D : Nat) (spanBound : ∀ k, law.span
   have ⟨live, shape, _, _⟩ := step
   have aging := weighted_aged (fun _ => 1) c.tokens
   have added := weighted_formed_le law (fun _ => 1) D spanBound (fun _ => Nat.le_refl 1) births
-  simp only [Live] at live
-  simp only [lifePotential, shape, weighted_append]
-  omega
+  have live : 1 ≤ opened (fun _ => 1) c.tokens := live
+  show weighted (fun _ => 1) c'.tokens + 1 ≤ weighted (fun _ => 1) c.tokens + D * births.length
+  rw [shape, weighted_append, ← aging]
+  calc weighted (fun _ => 1) (aged c.tokens) + weighted (fun _ => 1) (formed law births) + 1
+      = weighted (fun _ => 1) (aged c.tokens) + 1 + weighted (fun _ => 1) (formed law births) :=
+        Nat.add_right_comm _ _ _
+    _ ≤ weighted (fun _ => 1) (aged c.tokens) + opened (fun _ => 1) c.tokens +
+        weighted (fun _ => 1) (formed law births) :=
+        Nat.add_le_add_right (Nat.add_le_add_left live _) _
+    _ ≤ weighted (fun _ => 1) (aged c.tokens) + opened (fun _ => 1) c.tokens +
+        D * births.length := Nat.add_le_add_left added _
 
 /-- **Short constraints deplete.** If every kind brings in less than its
 formation demands over its span, the renewal potential strictly decreases on
@@ -202,8 +235,15 @@ theorem short_renewal_depletes (law : ChannelLaw Kind) (D : Nat)
   have opening := short_opening_step law short step.2
   have scaled := Nat.mul_le_mul_left D opening
   rw [Nat.mul_add] at scaled
-  simp only [renewalPotential]
-  omega
+  show lifePotential c' + D * openingPotential law c' + 1 ≤
+    lifePotential c + D * openingPotential law c
+  calc lifePotential c' + D * openingPotential law c' + 1
+      = lifePotential c' + 1 + D * openingPotential law c' := Nat.add_right_comm _ _ _
+    _ ≤ lifePotential c + D * births.length + D * openingPotential law c' :=
+        Nat.add_le_add_right life _
+    _ = lifePotential c + (D * openingPotential law c' + D * births.length) := by
+        rw [Nat.add_assoc, Nat.add_comm (D * births.length)]
+    _ ≤ lifePotential c + D * openingPotential law c := Nat.add_le_add_left scaled _
 
 /-- An explicit deadline: renewal lasts at most the starting renewal potential
 in ticks. -/

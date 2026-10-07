@@ -1,5 +1,6 @@
 import GenerativeCore
 import SupportNecessity
+import RenewalBasics
 
 /-!
 # Renewal and closure: late activity descends from a realized closure
@@ -122,24 +123,52 @@ theorem Walk.trace {edge : Kind → Kind → Prop} {i k : Kind} {vs : List Kind}
     | nil => exact Trace.cons step ih
     | cons => exact Trace.cons step ih
 
+/-- A walk lists its start followed by kinds that each have a listed
+predecessor. -/
+theorem Walk.after_start {edge : Kind → Kind → Prop} {i k : Kind} {vs : List Kind}
+    (walk : Walk edge i vs k) :
+    ∃ tail, vs = i :: tail ∧ ∀ v, v ∈ tail → ∃ u, u ∈ vs ∧ edge u v := by
+  induction walk with
+  | nil k => exact ⟨[], rfl, fun v member => by cases member⟩
+  | @cons i j k vs step rest ih =>
+    obtain ⟨tail, shape, preds⟩ := ih
+    refine ⟨vs, rfl, ?_⟩
+    intro v member
+    rw [shape] at member
+    cases mem_cons_split member with
+    | inl same => exact ⟨i, List.mem_cons_self, by rw [same]; exact step⟩
+    | inr inTail =>
+      obtain ⟨u, uIn, edgeUV⟩ := preds v inTail
+      exact ⟨u, List.mem_cons_of_mem _ uIn, edgeUV⟩
+
+/-- A walk lists kinds that each have a listed successor, followed by its
+end. -/
+theorem Walk.before_end {edge : Kind → Kind → Prop} {i k : Kind} {vs : List Kind}
+    (walk : Walk edge i vs k) :
+    ∃ init, vs = init ++ [k] ∧ ∀ v, v ∈ init → ∃ w, w ∈ vs ∧ edge v w := by
+  induction walk with
+  | nil k => exact ⟨[], rfl, fun v member => by cases member⟩
+  | @cons i j k vs step rest ih =>
+    obtain ⟨init, shape, succs⟩ := ih
+    refine ⟨i :: init, by rw [shape]; rfl, ?_⟩
+    intro v member
+    cases mem_cons_split member with
+    | inl same =>
+      exact ⟨j, List.mem_cons_of_mem _ rest.start_mem, by rw [same]; exact step⟩
+    | inr inInit =>
+      obtain ⟨w, wIn, edgeVW⟩ := succs v inInit
+      exact ⟨w, List.mem_cons_of_mem _ wIn, edgeVW⟩
+
 /-- Within a walk, every listed kind other than the start has a listed
 predecessor. -/
-theorem Walk.predecessor [DecidableEq Kind] {edge : Kind → Kind → Prop} {i k : Kind} {vs : List Kind}
+theorem Walk.predecessor {edge : Kind → Kind → Prop} {i k : Kind} {vs : List Kind}
     (walk : Walk edge i vs k) : ∀ v, v ∈ vs → v ≠ i → ∃ u, u ∈ vs ∧ edge u v := by
-  induction walk with
-  | nil k =>
-    intro v member different
-    exact False.elim (different (List.mem_singleton.mp member))
-  | @cons i j k vs step rest ih =>
-    intro v member different
-    cases List.mem_cons.mp member with
-    | inl same => exact False.elim (different same)
-    | inr tail =>
-      by_cases first : v = j
-      · subst v
-        exact ⟨i, List.mem_cons_self, step⟩
-      · have ⟨u, inside, edgeUV⟩ := ih v tail first
-        exact ⟨u, List.mem_cons_of_mem _ inside, edgeUV⟩
+  intro v member different
+  obtain ⟨tail, shape, preds⟩ := walk.after_start
+  rw [shape] at member
+  cases mem_cons_split member with
+  | inl same => exact False.elim (different same)
+  | inr inTail => exact preds v inTail
 
 /-- Within a walk, every listed kind other than the end has a listed
 successor. -/
@@ -148,10 +177,10 @@ theorem Walk.successor {edge : Kind → Kind → Prop} {i k : Kind} {vs : List K
   induction walk with
   | nil k =>
     intro v member different
-    exact False.elim (different (List.mem_singleton.mp member))
+    exact False.elim (different (mem_singleton_eq member))
   | @cons i j k vs step rest ih =>
     intro v member different
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same =>
       subst v
       cases rest with
@@ -172,7 +201,7 @@ theorem Walk.end_predecessor {edge : Kind → Kind → Prop} {i k : Kind} {vs : 
     | nil => exact ⟨i, List.mem_cons_self, step⟩
     | @cons j' m k' vs' step' rest' =>
       have positive := rest'.length_pos
-      have ⟨u, inside, edgeUK⟩ := ih (by simp only [List.length_cons]; omega)
+      have ⟨u, inside, edgeUK⟩ := ih (Nat.succ_le_succ positive)
       exact ⟨u, List.mem_cons_of_mem _ inside, edgeUK⟩
 
 /-- Closure in the sense of Montévil and Mossio, at the level of kinds: every
@@ -183,7 +212,7 @@ def DependenceClosed (edge : Kind → Kind → Prop) (C : List Kind) : Prop :=
   C ≠ [] ∧ (∀ v, v ∈ C → ∃ u, u ∈ C ∧ edge u v) ∧ (∀ v, v ∈ C → ∃ w, w ∈ C ∧ edge v w)
 
 /-- The kinds visited by a closed walk, after its start, form a closed set. -/
-theorem closed_walk_dependence_closed [DecidableEq Kind] {edge : Kind → Kind → Prop}
+theorem closed_walk_dependence_closed {edge : Kind → Kind → Prop}
     {j : Kind} {cycle : List Kind} (walk : Walk edge j (j :: cycle) j) (nonempty : cycle ≠ []) :
     DependenceClosed edge cycle := by
   cases walk with
@@ -192,71 +221,75 @@ theorem closed_walk_dependence_closed [DecidableEq Kind] {edge : Kind → Kind �
     have jIn : j ∈ cycle := rest.end_mem
     refine ⟨nonempty, ?_, ?_⟩
     · intro v member
-      by_cases atStart : v = x
-      · rw [atStart]
-        exact ⟨j, jIn, first⟩
-      · exact rest.predecessor v member atStart
+      obtain ⟨tail, shape, preds⟩ := rest.after_start
+      rw [shape] at member
+      cases mem_cons_split member with
+      | inl atStart => exact ⟨j, jIn, by rw [atStart]; exact first⟩
+      | inr inTail => exact preds v inTail
     · intro v member
-      by_cases atEnd : v = j
-      · rw [atEnd]
+      obtain ⟨init, shape, succs⟩ := rest.before_end
+      rw [shape] at member
+      cases mem_append_split member with
+      | inl inInit => exact succs v inInit
+      | inr atEnd =>
+        rw [mem_singleton_eq atEnd]
         exact ⟨x, rest.start_mem, first⟩
-      · exact rest.successor v member atEnd
 
-/-- Remove the first copy of `y`. Defined here so the pigeonhole argument does
-not inherit classical dependencies from library lemmas about `List.erase`. -/
-def removeOne [DecidableEq Kind] (y : Kind) : List Kind → List Kind
-  | [] => []
-  | z :: zs => if z = y then zs else z :: removeOne y zs
+/-- Each kind of a list drawn from `pre ++ y :: post` is `y` or is drawn from
+`pre ++ post`. So either the list contains `y`, or it is drawn from
+`pre ++ post`. No decision of equality between kinds is needed. -/
+theorem contains_or_drawn_from {y : Kind} {pre post : List Kind} :
+    ∀ l : List Kind, (∀ x, x ∈ l → x ∈ pre ++ y :: post) →
+      (∃ mid rest, l = mid ++ y :: rest) ∨ (∀ x, x ∈ l → x ∈ pre ++ post)
+  | [], _ => Or.inr (fun _ member => by cases member)
+  | z :: l, inside => by
+    have zIn := inside z List.mem_cons_self
+    have zCases : z = y ∨ z ∈ pre ++ post := by
+      cases mem_append_split zIn with
+      | inl inPre => exact Or.inr (List.mem_append_left _ inPre)
+      | inr inRest =>
+        cases mem_cons_split inRest with
+        | inl same => exact Or.inl same
+        | inr inPost => exact Or.inr (List.mem_append_right _ inPost)
+    cases zCases with
+    | inl same => exact Or.inl ⟨[], l, by rw [same]; rfl⟩
+    | inr zDrawn =>
+      cases contains_or_drawn_from l
+          (fun x member => inside x (List.mem_cons_of_mem _ member)) with
+      | inl found =>
+        obtain ⟨mid, rest, split⟩ := found
+        exact Or.inl ⟨z :: mid, rest, by rw [split]; rfl⟩
+      | inr drawn =>
+        refine Or.inr (fun x member => ?_)
+        cases mem_cons_split member with
+        | inl same => rw [same]; exact zDrawn
+        | inr tail => exact drawn x tail
 
-theorem mem_removeOne_of_ne [DecidableEq Kind] {y x : Kind} :
-    ∀ {l : List Kind}, x ≠ y → x ∈ l → x ∈ removeOne y l
-  | [], _, member => by cases member
-  | z :: zs, different, member => by
-    by_cases zy : z = y
-    · rw [removeOne, if_pos zy]
-      cases List.mem_cons.mp member with
-      | inl same => exact absurd (same.trans zy) different
-      | inr tail => exact tail
-    · rw [removeOne, if_neg zy]
-      cases List.mem_cons.mp member with
-      | inl same => rw [same]; exact List.mem_cons_self
-      | inr tail => exact List.mem_cons_of_mem _ (mem_removeOne_of_ne different tail)
-
-theorem length_removeOne_of_mem [DecidableEq Kind] {y : Kind} :
-    ∀ {l : List Kind}, y ∈ l → (removeOne y l).length + 1 = l.length
-  | [], member => by cases member
-  | z :: zs, member => by
-    by_cases zy : z = y
-    · rw [removeOne, if_pos zy]
-      rfl
-    · rw [removeOne, if_neg zy]
-      have inTail : y ∈ zs := by
-        cases List.mem_cons.mp member with
-        | inl same => exact absurd same.symm zy
-        | inr tail => exact tail
-      have ih := length_removeOne_of_mem inTail
-      simp only [List.length_cons]
-      omega
-
-/-- Pigeonhole for lists drawn from a finite list of kinds. -/
-theorem duplicate_of_long [DecidableEq Kind] :
+/-- Pigeonhole for lists drawn from a finite list of kinds. The proof splits
+the list of kinds at a membership witness, so it needs no decision of equality
+between kinds. -/
+theorem duplicate_of_long :
     ∀ (U vs : List Kind), (∀ x, x ∈ vs → x ∈ U) → U.length < vs.length →
       ∃ pre x mid post, vs = pre ++ x :: (mid ++ x :: post)
   | U, [], _, long => False.elim (Nat.not_lt_zero _ long)
   | U, y :: rest, inside, long => by
-    by_cases repeated : y ∈ rest
-    · have ⟨mid, post, split⟩ := List.append_of_mem repeated
+    obtain ⟨front, back, splitU⟩ := List.append_of_mem (inside y List.mem_cons_self)
+    have restInside : ∀ x, x ∈ rest → x ∈ front ++ y :: back := by
+      intro x member
+      rw [← splitU]
+      exact inside x (List.mem_cons_of_mem _ member)
+    cases contains_or_drawn_from rest restInside with
+    | inl found =>
+      obtain ⟨mid, post, split⟩ := found
       exact ⟨[], y, mid, post, by rw [split]; rfl⟩
-    · have yU : y ∈ U := inside y List.mem_cons_self
-      have restInside : ∀ x, x ∈ rest → x ∈ removeOne y U := by
-        intro x member
-        have different : x ≠ y := fun same => repeated (same ▸ member)
-        exact mem_removeOne_of_ne different (inside x (List.mem_cons_of_mem _ member))
-      have shorter : (removeOne y U).length < rest.length := by
-        have removed := length_removeOne_of_mem yU
-        simp only [List.length_cons] at long
-        omega
-      have ⟨pre, x, mid, post, split⟩ := duplicate_of_long (removeOne y U) rest restInside shorter
+    | inr drawn =>
+      have lengths : U.length = (front ++ back).length + 1 := by
+        rw [splitU, length_append_eq, length_append_eq]
+        rfl
+      have shorter : (front ++ back).length < rest.length := by
+        rw [lengths] at long
+        exact Nat.lt_of_succ_lt_succ long
+      obtain ⟨pre, x, mid, post, split⟩ := duplicate_of_long (front ++ back) rest drawn shorter
       exact ⟨y :: pre, x, mid, post, by rw [split]; rfl⟩
 
 /-- Backward chain: an occurrence later than `m * D` descends through a walk of
@@ -269,45 +302,49 @@ theorem support_walk (S : OccurrenceSupport Kind) (D : Nat)
   | 0, t, k, occ, _ => by
     refine ⟨k, [k], Walk.nil k, rfl, ?_⟩
     intro v member
-    have same := List.mem_singleton.mp member
+    have same := mem_singleton_eq member
     subst v
-    exact ⟨t, occ, Nat.le_refl t, by omega⟩
+    exact ⟨t, occ, Nat.le_refl t, Nat.le_add_right t (0 * D)⟩
   | m + 1, t, k, occ, late => by
     have positive : 0 < t := Nat.lt_of_le_of_lt (Nat.zero_le _) late
     have ⟨j, s, edgeJK, occJ, earlier, within⟩ := S.support k t occ positive
     have reachBound := bound j
+    have withinD : t ≤ s + D := Nat.le_trans within (Nat.add_le_add_left reachBound s)
     have lateS : m * D < s := by
       rw [Nat.succ_mul] at late
-      omega
+      exact Nat.lt_of_add_lt_add_right (Nat.lt_of_lt_of_le late withinD)
     have ⟨i, vs, walk, length, window⟩ := support_walk S D bound m s j occJ lateS
-    refine ⟨i, vs ++ [k], walk.snoc edgeJK, by simp [length], ?_⟩
+    refine ⟨i, vs ++ [k], walk.snoc edgeJK, by rw [length_append_eq, length]; rfl, ?_⟩
     intro v member
-    cases List.mem_append.mp member with
+    cases mem_append_split member with
     | inl old =>
       obtain ⟨r, occV, before, near⟩ := window v old
       refine ⟨r, occV, Nat.le_trans before (Nat.le_of_lt earlier), ?_⟩
-      rw [Nat.succ_mul]
-      omega
+      rw [Nat.succ_mul, ← Nat.add_assoc]
+      exact Nat.le_trans withinD (Nat.add_le_add_right near D)
     | inr new =>
-      have same := List.mem_singleton.mp new
+      have same := mem_singleton_eq new
       subst v
-      exact ⟨t, occ, Nat.le_refl t, by omega⟩
+      exact ⟨t, occ, Nat.le_refl t, Nat.le_add_right t ((m + 1) * D)⟩
 
 /-- **Late activity descends from a realized closure.** With every kind listed in
 `U` and support reach at most `D`, an occurrence after `U.length * D` descends
-from a nonempty closed walk of kinds. Every kind on that walk occurs within the
-last `U.length * D` time units before the late occurrence, so the closure is
-realized recently, not merely permitted by the edges. -/
-theorem late_occurrence_descends_from_realized_closure [DecidableEq Kind]
+from a nonempty closed walk of kinds. Every kind on that walk, and on the walk
+from it to the late occurrence, occurs within the last `U.length * D` time units
+before the late occurrence. So the closure is realized recently, not merely
+permitted by the edges. -/
+theorem late_occurrence_descends_from_realized_closure
     (S : OccurrenceSupport Kind) (U : List Kind) (complete : ∀ k, k ∈ U)
     (D : Nat) (bound : ∀ j, S.reach j ≤ D) {t : Nat} {k : Kind}
     (occ : S.occurs k t) (late : U.length * D < t) :
     ∃ j cycle rest,
       cycle ≠ [] ∧ Walk S.edge j (j :: cycle) j ∧ Walk S.edge j (j :: rest) k ∧
       DependenceClosed S.edge cycle ∧
-      ∀ v, v ∈ cycle → ∃ s, S.occurs v s ∧ s ≤ t ∧ t ≤ s + U.length * D := by
+      ∀ v, v ∈ cycle ++ rest → ∃ s, S.occurs v s ∧ s ≤ t ∧ t ≤ s + U.length * D := by
   have ⟨i, vs, walk, length, window⟩ := support_walk S D bound U.length t k occ late
-  have long : U.length < vs.length := by omega
+  have long : U.length < vs.length := by
+    rw [length]
+    exact Nat.lt_succ_self U.length
   have ⟨pre, x, mid, post, split⟩ :=
     duplicate_of_long U vs (fun v _ => complete v) long
   subst split
@@ -317,21 +354,30 @@ theorem late_occurrence_descends_from_realized_closure [DecidableEq Kind]
   have ⟨loop, tail⟩ := Walk.split (x :: mid) post back
   have loopShape : (x :: mid) ++ [x] = x :: (mid ++ [x]) := rfl
   rw [loopShape] at loop
-  have nonempty : mid ++ [x] ≠ [] := by simp
+  have nonempty : mid ++ [x] ≠ [] := by
+    intro empty
+    cases mid with
+    | nil => cases empty
+    | cons _ _ => cases empty
   refine ⟨x, mid ++ [x], post, nonempty, loop, tail,
     closed_walk_dependence_closed loop nonempty, ?_⟩
   intro v member
   apply window v
-  cases List.mem_append.mp member with
-  | inl inMid => simp [inMid]
-  | inr isX =>
-    have same := List.mem_singleton.mp isX
-    subst v
-    simp
+  apply List.mem_append_right pre
+  cases mem_append_split member with
+  | inl inCycle =>
+    cases mem_append_split inCycle with
+    | inl inMid => exact List.mem_cons_of_mem x (List.mem_append_left _ inMid)
+    | inr isX =>
+      have same := mem_singleton_eq isX
+      subst v
+      exact List.mem_cons_self
+  | inr inPost =>
+    exact List.mem_cons_of_mem x (List.mem_append_right mid (List.mem_cons_of_mem x inPost))
 
 /-- The same conclusion as a nonempty cycle of the type process, the form used
 by `SupportNecessity`. -/
-theorem late_occurrence_requires_type_cycle [DecidableEq Kind]
+theorem late_occurrence_requires_type_cycle
     (S : OccurrenceSupport Kind) (U : List Kind) (complete : ∀ k, k ∈ U)
     (D : Nat) (bound : ∀ j, S.reach j ≤ D) {t : Nat} {k : Kind}
     (occ : S.occurs k t) (late : U.length * D < t) :
@@ -344,7 +390,7 @@ theorem late_occurrence_requires_type_cycle [DecidableEq Kind]
 
 /-- **Deadline without a supplied rank.** If the support edges allow no nonempty
 type cycle, nothing occurs after `U.length * D`. -/
-theorem acyclic_support_deadline [DecidableEq Kind]
+theorem acyclic_support_deadline
     (S : OccurrenceSupport Kind) (U : List Kind) (complete : ∀ k, k ∈ U)
     (D : Nat) (bound : ∀ j, S.reach j ≤ D)
     (acyclic : ∀ j word, word ≠ [] → ¬ Trace (typeProcess S.edge) j word j)
@@ -373,7 +419,7 @@ def episodeSupport {Episode : Type v} (S : EpisodeSystem Kind Episode) :
 finitely many kinds and lifetimes at most `L`, if the type relation has no
 nonempty cycle then no episode is alive after `(U.length + 1) * L`. No rank
 certificate is supplied. -/
-theorem episode_acyclic_deadline [DecidableEq Kind] {Episode : Type v}
+theorem episode_acyclic_deadline {Episode : Type v}
     (S : EpisodeSystem Kind Episode) (U : List Kind) (complete : ∀ k, k ∈ U)
     (L : Nat) (lifeBound : ∀ k, S.duration k ≤ L)
     (acyclic : ∀ j word, word ≠ [] → ¬ Trace (typeProcess S.edge) j word j)
@@ -382,14 +428,16 @@ theorem episode_acyclic_deadline [DecidableEq Kind] {Episode : Type v}
   have life := S.lifetime e
   have bornLate : U.length * L < S.birth e := by
     have bound := lifeBound (S.kind e)
+    have lifeL : t ≤ S.birth e + L :=
+      Nat.le_trans expires (Nat.le_trans life (Nat.add_le_add_left bound (S.birth e)))
     rw [Nat.succ_mul] at late
-    omega
+    exact Nat.lt_of_add_lt_add_right (Nat.lt_of_lt_of_le late lifeL)
   exact acyclic_support_deadline (episodeSupport S) U complete L lifeBound acyclic
     bornLate (S.kind e) ⟨e, rfl, rfl⟩
 
 /-- In an episode system, an episode alive after `(U.length + 1) * L` descends
 from a realized closure of kinds. -/
-theorem episode_late_life_descends_from_realized_closure [DecidableEq Kind]
+theorem episode_late_life_descends_from_realized_closure
     {Episode : Type v} (S : EpisodeSystem Kind Episode) (U : List Kind)
     (complete : ∀ k, k ∈ U) (L : Nat) (lifeBound : ∀ k, S.duration k ≤ L)
     {e : Episode} {t : Nat} (alive : Alive S e t) (late : (U.length + 1) * L < t) :
@@ -400,15 +448,16 @@ theorem episode_late_life_descends_from_realized_closure [DecidableEq Kind]
   have life := S.lifetime e
   have bound := lifeBound (S.kind e)
   have bornLate : U.length * L < S.birth e := by
+    have lifeL : t ≤ S.birth e + L :=
+      Nat.le_trans alive.2 (Nat.le_trans life (Nat.add_le_add_left bound (S.birth e)))
     rw [Nat.succ_mul] at late
-    have := alive.2
-    omega
+    exact Nat.lt_of_add_lt_add_right (Nat.lt_of_lt_of_le late lifeL)
   have ⟨j, cycle, rest, nonempty, loop, tail, closed, window⟩ :=
     late_occurrence_descends_from_realized_closure (episodeSupport S) U complete L lifeBound
       (k := S.kind e) ⟨e, rfl, rfl⟩ bornLate
   refine ⟨j, cycle, rest, nonempty, loop, tail, closed, ?_⟩
   intro v member
-  obtain ⟨s, ⟨p, kindP, birthP⟩, _, near⟩ := window v member
+  obtain ⟨s, ⟨p, kindP, birthP⟩, _, near⟩ := window v (List.mem_append_left _ member)
   exact ⟨p, kindP, by rw [birthP]; exact near⟩
 
 #print axioms Walk.snoc
@@ -418,12 +467,13 @@ theorem episode_late_life_descends_from_realized_closure [DecidableEq Kind]
 #print axioms Walk.split
 #print axioms Walk.start_mem
 #print axioms Walk.trace
+#print axioms Walk.after_start
+#print axioms Walk.before_end
 #print axioms Walk.predecessor
 #print axioms Walk.successor
 #print axioms Walk.end_predecessor
 #print axioms closed_walk_dependence_closed
-#print axioms mem_removeOne_of_ne
-#print axioms length_removeOne_of_mem
+#print axioms contains_or_drawn_from
 #print axioms duplicate_of_long
 #print axioms support_walk
 #print axioms late_occurrence_descends_from_realized_closure

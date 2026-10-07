@@ -1,0 +1,326 @@
+Yes. And after checking the literature, **the closest precedent is much closer than I initially made it sound**: there is a serious philosophical tradition explicitly trying to derive universally binding ethics from very weak facts about agency or rational participation, rather than simply postulating moral values.
+
+The striking case is **Alan Gewirth**. In *Reason and Morality* (1978), Gewirth tries to show that merely insofar as you are an agent pursuing purposes, you must regard **freedom and well-being as necessary conditions of your agency**; and because your justification appeals to your status *as an agent*, consistency forces you to grant the corresponding rights to every other agent. His resulting Principle of Generic Consistency is roughly:
+
+\[
+\boxed{
+\text{Act consistently with the generic rights of yourself and all other agents.}
+}
+\]
+
+Gewirth intended this as a logically unavoidable principle for rational agents, not just a moral intuition. [Internet Encyclopedia of Philosophy](https://iep.utm.edu/gewirth/?utm_source=chatgpt.com)
+
+That is remarkably close to the direction we're discussing.
+
+### The intellectual landscape
+
+| Tradition | Starting point | Tries to derive | Relation to our idea |
+|---|---|---|---|
+| **Kant** | rational agency | universalizability; persons as ends | ancestor of nearly everything here |
+| **Gewirth** | being an agent with purposes | universal rights to freedom/well-being | **probably closest** |
+| **Korsgaard / constitutivism** | what it takes to constitute yourself as a rational agent | universal moral constraints | very close |
+| **Habermas / discourse ethics** | what you already presuppose by rationally arguing with others | norms acceptable by all affected | gives the multi-agent / shared-reality component |
+| **Scanlon** | justification between persons | principles nobody could reasonably reject | gives non-domination / mutual justification |
+| **Sen** | people possessing diverse ends | preserve substantive capabilities / opportunities | close to our “possibility space” idea |
+| **moral uncertainty** | we may be wrong about morality itself | decisions robust across moral theories | gives fallibility |
+| **CEV / Long Reflection** | present human values are incomplete | preserve a process allowing better values to emerge | closest AI-alignment analogue |
+
+Korsgaard is especially relevant. Her constitutivist project asks essentially:
+
+> What norms must an entity already accept simply in virtue of being a rational agent?
+
+She argues that rational agency involves self-legislation and universal principles, and tries to derive the value of humanity from this. The literature explicitly describes this as grounding morality in **constitutive features of agency**, avoiding the need for external moral facts. [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/constructivism-metaethics/?utm_source=chatgpt.com)
+
+So the structure is:
+
+\[
+\text{agency}
+\Rightarrow
+\text{constitutive requirements}
+\Rightarrow
+\text{normativity}.
+\]
+
+Exactly the kind of derivation you're imagining.
+
+### Gewirth is even more directly relevant
+
+His argument is approximately:
+
+\[
+\text{I act toward purposes}
+\]
+
+therefore
+
+\[
+\text{I require certain generic conditions of agency}
+\]
+
+especially
+
+\[
+F=\text{freedom},\qquad W=\text{well-being}.
+\]
+
+I therefore must claim:
+
+\[
+\text{I ought to have }F,W.
+\]
+
+But if the reason for that claim is:
+
+\[
+\text{because I am an agent},
+\]
+
+rather than:
+
+\[
+\text{because I happen to be Yongxu},
+\]
+
+then another agent \(B\) has the same relevant property:
+
+\[
+Agent(A) \cong Agent(B).
+\]
+
+So consistency supposedly forces:
+
+\[
+\forall x,\ Agent(x)\rightarrow Rights(x,F,W).
+\]
+
+The Internet Encyclopedia of Philosophy summarizes Gewirth precisely this way: all rational agents must recognize freedom and well-being as necessary to agency and therefore recognize these rights universally. [Internet Encyclopedia of Philosophy](https://iep.utm.edu/gewirth/?utm_source=chatgpt.com)
+
+Notice how close this is to what I called **symmetry** in the previous answer.
+
+You could almost write:
+
+\[
+\boxed{
+\text{Agency}+\text{symmetry}
+\Rightarrow
+\text{universal consideration of agency}
+}
+\]
+
+Gewirth has already tried to prove that.
+
+But importantly, **the proof is controversial**. Critics dispute steps such as moving from “I require freedom to pursue my goals” to “I have a right to freedom,” and then from that first-person claim to genuinely universal obligations. Even sympathetic contemporary work still discusses whether those transitions really succeed. [Springer](https://link.springer.com/article/10.1007/s12142-011-0210-2?utm_source=chatgpt.com)
+
+So this is not a solved theorem.
+
+---
+
+There is another lineage that may actually help us fix this problem.
+
+**Habermas** asks not what an isolated agent presupposes, but what agents presuppose when they enter genuine rational discourse.
+
+His discourse principle roughly says that valid norms must be capable of acceptance by **all affected persons participating freely in rational discourse**. [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/archives/sum2024/entries/habermas/?utm_source=chatgpt.com)
+
+Conceptually:
+
+\[
+\text{I make a claim to you}
+\]
+
+already presupposes things like:
+
+\[
+\text{you can respond}
+\]
+
+\[
+\text{reasons matter}
+\]
+
+\[
+\text{coercion isn't equivalent to justification}
+\]
+
+\[
+\text{relevant participants cannot simply be excluded}.
+\]
+
+Then ethics can potentially bootstrap itself out of the **structure of mutual justification**.
+
+This gets much closer to our notion of a **shared reality**.
+
+---
+
+And Scanlon makes another move:
+
+\[
+\boxed{
+\text{A principle is acceptable only if nobody could reasonably reject it.}
+}
+\]
+
+Rather than aggregating everyone into
+
+\[
+\sum_i U_i,
+\]
+
+each person remains a distinct standpoint to whom the rule must be justifiable. [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/archives/sum2022/entries/contractualism/?utm_source=chatgpt.com)
+
+That's potentially important for avoiding the classic failure mode:
+
+> kill 1% because doing so slightly raises the summed utility of the other 99%.
+
+---
+
+### But there is a piece I don't see unified in those theories
+
+This is the part I think is genuinely interesting in what we're converging toward.
+
+Most of these theories derive something like:
+
+\[
+\text{respect agents}
+\]
+
+or
+
+\[
+\text{preserve agency}.
+\]
+
+But our proposed primitive is potentially deeper:
+
+\[
+\boxed{
+\text{preserve the process through which value itself can continue to emerge,
+be discovered, criticized and revised.}
+}
+\]
+
+That means we're not merely protecting current agents' preferences.
+
+We're protecting:
+
+\[
+\text{agents}
++
+\text{epistemic correction}
++
+\text{value discovery}
++
+\text{novel perspectives}
++
+\text{future agents}
++
+\text{future possibilities}.
+\]
+
+Sen gets partway there with **capabilities**: what matters is not merely what someone currently achieves but the genuine set of possibilities open to them. His framework deliberately emphasizes real opportunities and allows pluralism about what people value. [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/archives/spr2015/entries/capability-approach/?utm_source=chatgpt.com)
+
+And AI alignment has stumbled toward the other half.
+
+Yudkowsky's **Coherent Extrapolated Volition** says, approximately, don't freeze humanity's present preferences; try to capture what humanity would want if we knew more, reasoned better and developed further together. [LessWrong](https://www.lesswrong.com/w/coherent-extrapolated-volition-alignment-target?utm_source=chatgpt.com)
+
+Toby Ord's **Long Reflection** makes a related civilization-level argument: secure humanity's future first, then give civilization time to work out what we actually value before irreversibly determining the long-run future. [Root Quarterly](https://www.rootquarterly.com/root-quarterly/2020/12/21/book-excerpt-the-long-reflection?utm_source=chatgpt.com)
+
+And the moral-uncertainty literature explicitly asks:
+
+\[
+\text{What should we do when we're uncertain which morality is correct?}
+\]
+
+rather than pretending we already know the final morality. [PhilPapers](https://philpapers.org/rec/MACWWS-4?utm_source=chatgpt.com)
+
+AI research is also beginning to operationalize this: for example, recent alignment work explicitly models moral uncertainty rather than forcing models into artificially confident moral judgments. [AAAI Publications](https://ojs.aaai.org/index.php/AAAI/article/view/41088?utm_source=chatgpt.com)
+
+### So I would characterize the research gap this way
+
+The pieces exist:
+
+\[
+\begin{aligned}
+\text{Gewirth/Korsgaard}:&&&\text{agency}\\
+\text{Habermas}:&&&\text{intersubjective justification}\\
+\text{Scanlon}:&&&\text{non-rejectability}\\
+\text{Sen}:&&&\text{capability / possibility}\\
+\text{moral uncertainty}:&&&\text{fallibility}\\
+\text{CEV/Long Reflection}:&&&\text{future value discovery}
+\end{aligned}
+\]
+
+But I don't know of an established theory that unifies them into:
+
+\[
+\boxed{
+\begin{array}{c}
+\text{embedded agency}\\
++\text{multiple agents}\\
++\text{symmetry}\\
++\text{epistemic uncertainty}\\
++\text{moral uncertainty}\\
++\text{open-ended value discovery}\\[3pt]
+\Downarrow\\
+\text{preserve and enlarge legitimate becoming}
+\end{array}}
+\]
+
+and then tries to **formally derive** things like corrigibility, non-domination, truthfulness, plurality, reversible action, preservation of agency, and resistance to power-concentrating closure from it.
+
+That last step is particularly different from Gewirth.
+
+Gewirth roughly has:
+
+\[
+\boxed{\text{agency}\rightarrow\text{rights}}
+\]
+
+Your 生生 formulation could instead become:
+
+\[
+\boxed{
+\text{agency + uncertainty + plurality + dynamics}
+\rightarrow
+\text{conditions for continued legitimate becoming}
+}
+\]
+
+And crucially it could judge **systems and trajectories**, not merely individual actions.
+
+That lets you talk about:
+
+\[
+\text{Moloch},
+\quad
+\text{arms races},
+\quad
+\text{monopoly},
+\quad
+\text{totalitarianism},
+\quad
+\text{ecological collapse},
+\quad
+\text{AI takeover}
+\]
+
+as structurally similar phenomena:
+
+\[
+\boxed{
+\text{a subsystem increases its local optimization power}
+\rightarrow
+\text{suppresses alternative trajectories}
+\rightarrow
+\text{reduces the whole system's capacity for future value-generation}.
+}
+\]
+
+That particular synthesis looks much less explored to me.
+
+So I would **not** pitch this as “nobody has ever tried to derive universal ethics from agency.” That would be false; Gewirth in particular would immediately be raised by a knowledgeable reviewer.
+
+The much stronger framing is:
+
+> **Previous theories derive universal norms from rational agency, discourse, or interpersonal justification. We ask whether a still weaker set of assumptions about embedded, fallible, mutually affecting agents is sufficient to derive meta-norms governing the preservation of the open-ended process by which value itself is discovered and instantiated.**
+
+That, I think, is a serious research program—and one that could connect your 生生 framework directly to contemporary metaethics **and** AI alignment.

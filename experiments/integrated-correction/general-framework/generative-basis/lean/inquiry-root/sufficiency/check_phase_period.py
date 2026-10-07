@@ -134,8 +134,10 @@ def lean_build(expected):
     lean = shutil.which("lean")
     if lean is None:
         return dict(status="lean_unavailable", toolchain=toolchain)
+    # Without elan, use the lean on PATH if it is the pinned release.
+    prefix = [lean, "+" + toolchain] if shutil.which("elan") else [lean]
     try:
-        version = subprocess.run([lean, "+" + toolchain, "--version"], text=True,
+        version = subprocess.run(prefix + ["--version"], text=True,
                                  capture_output=True, timeout=600)
     except Exception as error:  # elan cannot fetch the toolchain, for example
         return dict(status="lean_unavailable", toolchain=toolchain, error=str(error))
@@ -148,7 +150,7 @@ def lean_build(expected):
         for name, path in closure():
             source = path.read_bytes()
             (build / (name + ".lean")).write_bytes(source)
-            run = subprocess.run([lean, "+" + toolchain, "-o", name + ".olean", name + ".lean"],
+            run = subprocess.run(prefix + ["-o", name + ".olean", name + ".lean"],
                                  cwd=build, text=True, capture_output=True, timeout=1800,
                                  env={"LEAN_PATH": str(build), "PATH": "/usr/bin:/bin"})
             output = run.stdout + run.stderr

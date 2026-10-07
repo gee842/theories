@@ -1,0 +1,7 @@
+'ValuationDevelopment.valuation_step' does not depend on any axioms
+'ValuationDevelopment.constant_valuation_steady' does not depend on any axioms
+'ValuationDevelopment.valuation_keeping_theorem' does not depend on any axioms
+'ValuationDevelopment.every_valuation_loses' does not depend on any axioms
+'ValuationDevelopment.valuing_is_not_keeping' does not depend on any axioms
+'ValuationDevelopment.doubler_run' does not depend on any axioms
+'ValuationDevelopment.contraction_needed' does not depend on any axioms

@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-10-06T19:34:57.592937+00:00",
+  "checked_at_utc": "2026-10-06T21:00:51.188824+00:00",
   "module": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
-  "module_sha256": "90ffb0bab5a2c8dc29aff88f187ae780f567515635594f131ad1d53d1647b830",
-  "checker_sha256": "bdbbd747fa714bf4b7b4a14622cae00e6e9cd42b571bc2aad042de542ba308d0",
+  "module_sha256": "327cfcd02d8f7deaf4c4bc45a95c12888c6e1241362ed14806dc5781ce32f94d",
+  "checker_sha256": "73df6ae35976b121eb8373fa2c42adbbf11e9c38a90499fabb074c9edd64ad51",
   "declared": 52,
   "lint": "passed",
   "enumeration": {
@@ -127,7 +127,7 @@
       {
         "module": "NativePacketProcess",
         "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
-        "source_sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+        "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
         "exit_code": 0,
         "clean": true
       },
@@ -162,14 +162,14 @@
       {
         "module": "PacketLawDerivation",
         "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
-        "source_sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70",
+        "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
         "exit_code": 0,
         "clean": true
       },
       {
         "module": "PhaseCycleDerivation",
         "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
-        "source_sha256": "90ffb0bab5a2c8dc29aff88f187ae780f567515635594f131ad1d53d1647b830",
+        "source_sha256": "327cfcd02d8f7deaf4c4bc45a95c12888c6e1241362ed14806dc5781ce32f94d",
         "exit_code": 0,
         "clean": true
       }

@@ -289,8 +289,138 @@ The account in one paragraph: an organization's valuation is its selective dispo
 - material realization of each witness within the native generative core;
 - the ethical question of which valuations and which access *should* be formed, with the [unified ethical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question).
 
-Together with the two open bridges named above, these are what remains of the question this study addressed.
+Together with the two open bridges named above, these are what remains of the question this study addressed. *(Update: §16 closes both bridges at a stated formal scope.)*
+
+## 16. The two bridges: chance and lineage
+
+Section 15 left two bridges open. This section closes each at a stated formal scope. The [bridges module](../../../../experiments/valuation-development/lean/ValuationBridges.lean) adds 33 core-Lean results. Of these, 18 are infrastructure lemmas for finite weighted laws and line ledgers, and 15 are the stated results. The transition addressed is still step 2 → step 3 of the accepted work sequence. The question is whether the conclusions about valuation development survive chance, and whether support constrains valuation across generations as well as within one history.
+
+### P. Chance
+
+**Representation.** Selection and consequence become finite weighted laws: lists of natural-number weights and outcomes. A probability is a ratio of two masses, so nothing about real numbers is postulated. A stochastic organization (`SOrg`) has a weighted selection law and the same retention as before. The analyst may carry a record of whether a given option has been reached. The organization never reads that record.
+
+**P1. Escape bound (general).** Suppose a law along a history has three properties. A set of conditions `G` is absorbing. From every condition outside `G`, at most `r` units of weight stay outside it. Every step has total weight `q`. Then after `n` steps the weight outside `G` is at most `r^n` out of `q^n` (`escape_bound`). The three hypotheses need hold only on states satisfying an invariant `J` of the law, and the initial law must lie in `J`. The noisy lock-in witness below needs this: outside its invariant, the escape hypothesis fails. The bound is the one interface used below.
+
+**P2. Coverage with high probability (general).** Suppose every selection law of a stochastic organization puts total weight `q` and at most `r` on options other than `a`, and every consequence law has the same total. Then, whatever drives the exploration, the weight of histories in which `a` is still unreached after `n` steps is at most `(r q')^n` out of `(q q')^n` (`stochastic_coverage`). Provided `q, q' > 0`, that is a probability of at most `(r/q)^n`. Add retention exact for the option reached and a fixed consequence of `a`, the hypotheses of E1. Then the estimate of `a` is wrong with probability at most `(r/q)^n` (`stochastic_estimate_exact`). This restates `reached_estimate_exact` and coverage for one target option of one organization. Under persistent exploration (`r < q`) that option is reached with probability tending to one, and its estimate is exact on every history that reached it (an invariant inside the proof). The equalization of E1 across all options and across two organizations is not restated: it needs a union bound over options and a joint law for the two organizations. The hypotheses stay load-bearing. If `r = q`, so that some state never explores, the bound is vacuous, and the deterministic greedy underestimate of §12 is its limit case.
+
+**P3. Witnesses.**
+- Greedy choice with weight 2 on the favoured option and 1 on the other, started from the §12 underestimate, keeps that underestimate with probability at most `(2/3)^n` for every `n` (`eps_greedy_estimate_exact`). After three steps the bound is attained: 8 of 27 (`eps_greedy_three_steps`).
+- Under noisy consequences, `true` yields 4 with weight 2 and 0 with weight 1, so its mean is 8/3, and `false` yields 2. A greedy learner that starts with the correct preference is locked into the worse option with probability at least `1 - (2/3)^n` for every `n`. Once locked, it never selects `true` again (`noisy_greedy_locks`). The deterministic V2 witness showed that one unlucky observation can lock in. Under chance, lock-in tends to certainty.
+- Recurring curiosity escapes: after six steps 665 of 729 units of weight are locked for greedy choice. For curiosity, 155 units hold an estimate of 0, a state that is not absorbing because curiosity re-tries the option (`curiosity_escapes_noisy_lock`). This is a finite witness, not a general bound for curiosity.
+
+**Reading.** Chance does not remove the deterministic results. It replaces "for every history" with a bound on the weight of histories, and the same hypothesis carries the result in both forms: coverage. Noise does not make exploration unnecessary. In the witness it makes the absence of exploration worse: under noise, lock-in tends to certainty.
+
+### L. Lineage
+
+**Representation.** A generation, or any composite of generations, has a ledger: what it enacted (化), what arrived to it (来), and the support it held (存) at its start and at its end. The CU-U2 prefix bound of [CONDITIONAL-UNIVERSALITY §3](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md#3-the-universal-prefix-bound) reads as `enacted + held at end ≤ held at start + arrived`. A ledger satisfying it is *sustained*.
+
+**L1. Closure (general).** Sustained ledgers are closed under succession, where a successor starts with no more than its predecessor holds at the end (`seq_sustained`). They are also closed under division, where children together start with no more than the parent holds at the end (`par_sustained`, `branch_sustained`). Any line or branching family built from sustained generations by these two operations, with inheritance at every succession and division, is therefore itself sustained. This follows by composing `seq_sustained` and `par_sustained`. It is formalized for lines (`lineage_sustained`) and for one division step (`branch_sustained`). This is the account that lets CU-U2 apply across successors. Given inheritance at every succession and division, the bound for one history becomes a bound for a lineage without a new axiom, because the composite of sustained generations is again a generation in the ledger's sense.
+
+**L2. Positive demand needs late arrivals (general).** Where every generation enacts at least one unit, a line of `n` generations needs arrivals totalling at least `n` minus what the first held (`lineage_needs_arrivals`). Split a line anywhere. Arrivals must cover the later part's length, beyond what the first generation held and received and what the earlier part received (`later_arrivals_needed`). A corollary, not stated as a separate theorem, follows for an unending line of demanding generations: for every split point, the part after it receives positive arrivals. Arrivals must therefore keep coming arbitrarily late.
+
+**L3. Countermodels.**
+- Without inheritance, two generations that are each sustained form a line that is not (`lineage_needs_inheritance`). The successor's starting support came from somewhere the ledger does not record. Inheritance is therefore the premise that makes the lineage bound hold.
+- Illustration, not a countermodel: the ledger is silent about valuation. The ledger has no disposition field, so it is silent about valuation by construction. `ledger_silent_on_valuation` places one sustained ledger beside the level-6 learner's formed dispositions of either sign.
+
+**Reading.** Across generations, as within one history, a continuing line of demanding generations needs provision that keeps arriving. What constrains a valuation lineage is the relation between what it enacts and what arrives to it, not an analyst's reward. Two things remain outside the ledger. One is which coupling an arrival belongs to: attributing the arrivals to the valuation that selected the activity needs a further account. The other is whether the arrivals are favourable to anyone. §5 and §14 stand: harmful or decoupled valuations can continue where support arrives independently of them.
+
+### Status after this round
+
+Both bridges named in §15 are closed at the scope stated. Chance is closed for finite weighted laws with constant total weight per step and a single target option. Lineage is closed for natural-number ledgers under succession and division. The study now has 103 core-Lean results across five modules, none with custom axioms. A separate internal AI reviewer accepted this round with twelve corrections, which have been applied. Its optional rename of `pay` in `pairRun` was not made, so that the verified earlier module stays unchanged.
+
+**Still supplied:**
+- the boundary between organization and world;
+- the weighted laws;
+- inheritance between generations;
+- the per-generation ledger, whose CU-U2 form comes from CONDITIONAL-UNIVERSALITY rather than from the organizations of this study.
+
+**Not built here:** joint probability spaces for two learners (equalizing two learners needs a coupling of their laws, or a union bound over one), probability laws whose total varies by state, continuous measures, and an account that attributes arrivals to couplings. The first three are extensions of the stated results. The last is the remaining open link for §5: attributing arrivals to couplings is what a lineage-level filtering of valuations by support would need.
+
+**Handed on to other work:**
+- empirical identification;
+- realization of the witnesses in the native generative core;
+- the ethical question.
+
+This completes the study at its formal scope. It does not complete the unified foundation.
+
+## 17. Formal unification: the lineage on the shared process
+
+Ren set formal unification as the goal. The generation ledger of §16 was a separate model. The [lineage-in-process module](../../../../experiments/valuation-development/lean/LineageInProcess.lean) adds 14 core-Lean results, 2 of them infrastructure lemmas. These results show that the ledger is not a separate model: it is the per-event support law of the shared `Process` (`AccountLaw`, U1, called SustainLaw in the project vocabulary), and its lineage bound is that law's prefix bound (U2). The module imports the verified `ResourceContinuation` and renewal modules unchanged.
+
+**A. Histories have ledgers (general).**
+- Every actual history of every process satisfying U1 has a sustained ledger (`history_ledger_sustained`).
+- Consecutive segments of one history are generations: the successor inherits exactly what its predecessor holds at the end. Succession of ledgers (`Ledger.seq`) is the ledger of the concatenated history (`consecutive_segments_are_generations`).
+
+**B. Generations are events of a U1 process (general).** In `lineageProcess`, the state is the support held, and an event is a sustained generation that starts with no more than is held. A generation that starts with less than was held records support dissipated between generations. This process satisfies U1 (`lineage_account_law`).
+- A line of sustained, inheriting generations is an actual history of the lineage process (`line_is_lineage_history`).
+- The §16 lineage bound is recovered as the core prefix bound `support_trace_balance` (`lineage_bound_is_prefix_bound`).
+- An endless line of demanding generations needs unbounded arrivals, by the core theorem `unbounded_demand_requires_unbounded_credit` (`endless_demanding_line_needs_unbounded_arrivals`).
+
+The per-generation sustainment and inheritance that §16 supplied as hypotheses are, in A, consequences of U1 along one history.
+
+**C. Renewal (general, plus the renewal thread's witnesses).**
+- The renewal channel process satisfies U1: a tick's formations are demanded from the reserve, and arrivals are opened by the organization's own live tokens (`channel_account_law`).
+- Every window of every execution is therefore a sustained generation (`generation_sustained`). Successive windows inherit exactly and compose (`generations_succeed`). Each execution, cut into windows of equal length, is a history of the lineage process (`execution_lineage`).
+- `lineage_renewal_theorem` puts this together with the renewal–closure theorem on the same process. With finitely many kinds and spans between one and `D`, some lineage stays live forever exactly when the law has a self-renewing population.
+
+**The attribution link of §16.** The renewal model makes arrivals attributable to kinds, because each token opens arrival at its kind's rate. The question left open was whether support filters valuations one coupling at a time. On this process it does not: what a lineage keeps is decided by membership in a self-renewing population (`renewal_keeping_theorem`), not by what each kind brings in. The two witnesses (`attribution_is_by_population`) are the renewal thread's own:
+- In `danglingSupport`, kind `false` opens 2 against a formation demand of 5, yet some lineage keeps it forever on arrivals opened by kind `true`.
+- In `lapsingCorrection`, a closure renews forever while the correction kind it supports cannot be kept.
+
+So the §5 question has a precise answer at this scope. Support constrains which *populations* of formed kinds can continue. A kind, or the valuation that selects it, persists by belonging to such a population, whatever its own balance.
+
+**Scope.** This connects the valuation study's lineage account, not its selection-and-retention organizations, to the shared process. The study's organizations are embedded in the core by the separate `ValuationInCore` work. Valuations selecting *which* kinds a channel process forms are built in §18. The study now has 117 core-Lean results across six modules, none with custom axioms. No empirical or ethical claim is made.
+
+## 18. No supplied inputs: valuations decide what the process forms
+
+Ren's standing rule of 6 October 2026: no assumptions and no axioms. Every input a result relies on must be derived in Lean from the process, or proved necessary for the stated claim. §17 left one input supplied. In the renewal executions, the list of kinds formed on each tick came with the execution. The [valuation–renewal module](../../../../experiments/valuation-development/lean/ValuationRenewal.lean) derives it, adding 7 core-Lean results.
+
+**Construction.** A valuation reads the current configuration and selects which kinds to form. The process forms them when two conditions hold: what is held plus what arrives covers the formation demand, and each formed kind has a supporter that survives the tick. Otherwise it forms nothing. What is held afterwards is what was held, plus what arrived, minus what was formed. Every valuation, from every starting configuration within span, therefore determines one execution of the shared channel process (`valuation_step`, `valExecution`). Nothing about the formation sequence is supplied any more.
+
+**Results (general).**
+- `valuation_keeping_theorem`: with finitely many kinds and spans between one and `D`, some valuation keeps a designated kind alive forever exactly when some self-renewing population contains it. A constant valuation that forms that population on every tick suffices, and it needs no starting reserve (`constant_valuation_steady`).
+- `every_valuation_loses`: without such a population, every valuation, from every starting configuration, loses the designated kind by the explicit time of the renewal theorem.
+- `valuing_is_not_keeping` (on the renewal thread's witnesses): no valuation of `lapsingCorrection` keeps the correction kind, however it values it. In `danglingSupport`, a valuation keeps the short kind alive by also forming the kind whose arrivals sustain it.
+
+**Reading.** What the process keeps is a property of the valuation's whole population, not of the valued kind. A valuation that forms only what it values can lose it; a valuation that also forms what sustains the valued kind can keep it. This is the formal version, on the shared process, of the claim that constraint on valuations comes from support, without an analyst's reward.
+
+**Status of every input under the rule.**
+
+| Input | Status |
+|---|---|
+| Which kinds are formed | Derived from a valuation in the process (this section). |
+| Per-generation support balance (U1) and inheritance for the renewal process | Derived: U1 is part of the channel step (`channel_account_law`), and inheritance holds exactly along one history (§17). |
+| Per-generation balance for an arbitrary process | A hypothesis of the general theorem, quantified over every process. It is a premise only where a process does not itself satisfy it. |
+| Inheritance in the abstract lineage account (§16) | Proved necessary: `lineage_needs_inheritance`. |
+| Persistent exploration (`r < q`) in P2 | Proved necessary by the deterministic limit: greedy choice never covers (`greedy_low_never_covers`). |
+| Coverage in E1 | Proved necessary: `no_coverage_keeps_initial`, `greedy_stale_after_change`. |
+| Unchanging consequences in E1 | Proved necessary: `after_change_unreached_stale`. |
+| Contraction in C1 | Proved necessary: `contraction_needed`. Under doubling retention, two organizations that select alike at every step and start one unit apart end `2^n` apart. |
+| Finitely many kinds and a span bound in the renewal theorem | Hypotheses of the renewal thread's theorem. Its `infiniteChain` witness shows renewal without closure when kinds are unbounded. |
+| The numbers of a channel law (kinds, rates, spans, demands) | Quantified over: the theorems hold for every law. Deriving particular values from the native process belongs to the process-law work. |
+| Decidability of the support relation | Carried as data of the model: the valuation run takes a decision procedure for the support relation as an argument (`[DecidableRel law.edge]`). No axiom is involved, and `#print axioms` shows none for it. A model whose support relation has no decision procedure cannot run a valuation; it can still satisfy every theorem that does not compute a run. |
+| The particular organizations and worlds of the witnesses | Not premises: each witness proves an existence claim. |
+| `propext`, `Quot.sound` | Removed (Ren, 7 October: the generative model needs no axioms). 123 of the 130 results now depend on no axiom at all (the renewal package became axiom-free on 7 October). The other 7, in `LineageInProcess`, take these axioms only from shared support theorems they call, and become axiom-free when that package's axiom-free version reaches main. See the companion README. |
+
+The study now has 124 core-Lean results across seven modules. The remaining frontier under the rule is outside the valuation study. Kinds and rates are to be derived from the native process by the process-law work. Whether `simp` and `omega` should be replaced so that even the standard axioms are avoided is a choice about the whole project.
+
+## 19. One process: the study's splits as cuts
+
+Ren's standing direction of 6 October 2026 is to avoid narrative, priors and hidden assumptions, and in particular dualist framings that return unnoticed. The theory is monist and relational. The study has used several paired terms, and each is checked here. The [one-process module](../../../../experiments/valuation-development/lean/OneProcess.lean) adds 6 core-Lean results.
+
+**Organization and world.** An organization together with its consequence law is one `Process` of the shared core. Its histories are exactly that process's traces (`run_is_trace`, `trace_is_run`). The consequence law is not a second thing standing over against the organization. It is part of the one step relation.
+
+**One center and another.**
+- Two interacting organizations are one organization on their joint state, and the paired history is that organization's history (`pair_is_one_process`). The only input left is what both meet together.
+- Cut the joint process at the first center. Its part of the joint history is the run of a single organization whose consequence law is its relation to the other's actual selections (`cut_first`). Cut at the second center and the same holds from the other side (`cut_second`).
+- Both cuts are read off the one joint history, so neither is privileged (`both_cuts_one_history`). What one cut calls "its world" is, from the other cut, that center's own activity. The earlier reduction to a fixed other (`fixed_other_reduces`, §14) is the special case in which the other's activity does not vary.
+
+**Valuation and process.** Operational valuation was defined (§2) as the selection component of the step. In §18 a valuation over formations is the part of the channel step that decides what is formed. In both cases valuation names a relation inside the one process, not an evaluator applied to it.
+
+**Self and other in levels 5 and 6.** The level-6 coupling forms through paired events of the joint process: the sign of a center's response to another's consequences is set by what their shared events did. "Other-including" therefore names a relation formed in the joint history. It is not a bridge between two antecedently separate selves.
+
+**Scope.** These results cover the study's own representations: a deterministic organization with its consequence law, and two centers with a shared presented condition. A joint process of more than two centers is not formalized, though the same construction applies. Choosing the presented condition `x` as what both meet is itself a cut. The process-law work derives presented conditions from the native process. Earlier sections keep their wording as written, and this section governs how their paired terms are read. The current formulation page carries the same reading note. The study now has 130 core-Lean results across eight modules.
 
 ## Verification
 
-From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12, the [exploration audit output](../../../../experiments/valuation-development/lean/exploration-audit-output.txt) lists the 11 results for §13, and the [completion audit output](../../../../experiments/valuation-development/lean/completion-audit-output.txt) lists the 15 results for §14. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.
+From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12, the [exploration audit output](../../../../experiments/valuation-development/lean/exploration-audit-output.txt) lists the 11 results for §13, the [completion audit output](../../../../experiments/valuation-development/lean/completion-audit-output.txt) lists the 15 results for §14, the [bridges audit output](../../../../experiments/valuation-development/lean/bridges-audit-output.txt) lists the 33 results for §16, the [lineage audit output](../../../../experiments/valuation-development/lean/lineage-audit-output.txt) lists the 14 results for §17, and the [valuation–renewal audit output](../../../../experiments/valuation-development/lean/valuation-renewal-audit-output.txt) lists the 7 results for §18, and the [one-process audit output](../../../../experiments/valuation-development/lean/one-process-audit-output.txt) lists the 6 results for §19. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.

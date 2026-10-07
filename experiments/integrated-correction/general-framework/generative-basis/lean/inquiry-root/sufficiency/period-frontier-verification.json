@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-07T10:15:34.202368+00:00",
+  "checker_sha256": "4a66289d148b0f54fe4053cff8763377fbc94ed484f64609f8de9ad130a1ccf0",
+  "solver_sha256": "772c7fafc303f6d242d4d78a16e685322bc1865e194d97698138a9f121477b97",
+  "search_completed": true,
+  "scope": "Periods 9--14, depth at most 7, binary cycles, unknown phase and inversion, both requested values; rotation/complement quotient. A None solver answer means no guarantee by depth 7, not impossibility at every depth. No new Lean theorem.",
+  "rows": [
+    {
+      "period": 9,
+      "rotation_complement_classes": 29,
+      "within_seven": [
+        {
+          "pattern": "001001001",
+          "least_commands_by_requested_value": [
+            4,
+            7
+          ]
+        }
+      ],
+      "counterexamples_to_candidate": []
+    },
+    {
+      "period": 10,
+      "rotation_complement_classes": 55,
+      "within_seven": [],
+      "counterexamples_to_candidate": []
+    },
+    {
+      "period": 11,
+      "rotation_complement_classes": 93,
+      "within_seven": [],
+      "counterexamples_to_candidate": []
+    },
+    {
+      "period": 12,
+      "rotation_complement_classes": 179,
+      "within_seven": [
+        {
+          "pattern": "001001001001",
+          "least_commands_by_requested_value": [
+            4,
+            7
+          ]
+        }
+      ],
+      "counterexamples_to_candidate": []
+    },
+    {
+      "period": 13,
+      "rotation_complement_classes": 315,
+      "within_seven": [],
+      "counterexamples_to_candidate": []
+    },
+    {
+      "period": 14,
+      "rotation_complement_classes": 595,
+      "within_seven": [],
+      "counterexamples_to_candidate": []
+    }
+  ],
+  "counterexample_found": false
+}

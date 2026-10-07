@@ -1,0 +1,10 @@
+'Generative.Naturalism.credentials_hold_for_every_relation' does not depend on any axioms
+'Generative.Naturalism.switching_own' does not depend on any axioms
+'Generative.Naturalism.switching_not_other' does not depend on any axioms
+'Generative.Naturalism.total_orders_undermine_on_transitions' does not depend on any axioms
+'Generative.Naturalism.scalar_ranking_undermines_on_transitions' does not depend on any axioms
+'Generative.Naturalism.generation_endorses_no_switch' does not depend on any axioms
+'Generative.Naturalism.committing_open_can' does not depend on any axioms
+'Generative.Naturalism.committing_lost' does not depend on any axioms
+'Generative.Naturalism.every_exclusive_choice_registers_as_damage' does not depend on any axioms
+'Generative.Naturalism.recovered_dip_still_condemned' does not depend on any axioms

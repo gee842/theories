@@ -64,7 +64,7 @@ The [formed-variant construction](../../../_process/research/2026-10-05-support-
 | Source account | Remaining source | One unit per capture | Zero |
 | Local store | Locally stored fuel | Local copying and local leakage | One unit per capture |
 
-These accounts describe different boundaries of the **same actual process**. A capture is provision for the usable account and transfer within the closed account. It is not creation of support from nothing. The new bridge applies the general `AccountLaw` and history bounds to the concrete event relation; the ledgers no longer meet only through matching prose.
+These accounts describe different boundaries of the **same actual process**. A capture is provision for the usable account and transfer within the closed account. It is not creation of support from nothing. The new bridge applies the general `SustainLaw` and history bounds to the concrete event relation; the ledgers no longer meet only through matching prose.
 
 After any actual preparation history, further expenditure is bounded by the usable reserve and remaining source at the successor actually reached. The initial budget is unavailable for reuse once earlier formation, association or repair has spent it. The established mixed formation-to-copy witness supplies an exact accounting check: four units of initial common fuel and one captured unit pay five expenditures.
 

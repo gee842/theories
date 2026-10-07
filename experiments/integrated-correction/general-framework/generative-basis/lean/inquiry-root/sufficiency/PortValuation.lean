@@ -20,9 +20,8 @@ redundant-formation countercase seen from the side of valuation.
 
 A second result compares two histories from the same blocked port: one revises
 its contact on the strength of its own inquiry, the other inquires without
-revising. The revising history ends holding far more reserve and with an
-actual transfer; the other ends with neither. The comparison uses the inherited
-native names (`fuel`) pending the project-wide rename.
+revising. The revising history ends holding far more and with an
+actual transfer; the other ends with neither.
 
 "Valuation" keeps the thin functional sense of `ValuationDevelopment`: a
 selective disposition, not experience or ethical warrant.
@@ -73,7 +72,7 @@ theorem port_change_needs_retained_difference (m : Option (Bool × Bool))
   priority_change_needs_retained_difference portOrg portWorld m h₁ h₂ x changed
 
 /-- After forming, the retained reading is stale: the disposition would form again
-on the now open contact, which only draws reserve. One further encounter with the
+on the now open contact, which only draws on what is held. One further encounter with the
 open contact restores a correct disposition. -/
 theorem disposition_stale_then_recovers (tau : Bool) :
     portOrg.select (portOrg.run portWorld none [(tau, true)]) (tau, false) = true ∧
@@ -84,15 +83,15 @@ theorem disposition_stale_then_recovers (tau : Bool) :
 def unrevisedHistory : List Event := nativeRun inquiryCommands ++ nativeRun inquiryCommands
 
 /-- From the same blocked start, the history that revises its contact on the
-strength of its own inquiry ends holding more reserve and with an actual
+strength of its own inquiry ends holding more and with an actual
 transfer; the history that only inquires ends with neither and stays class C. -/
 theorem revision_changes_continuation :
     ∃ y z, run acquiredStart acquiredHistory = some y ∧
       run acquiredStart unrevisedHistory = some z ∧
       Trace FormationClosure.process acquiredStart unrevisedHistory z ∧
-      y.native.fuel = 793184 ∧ z.native.fuel = 170596 ∧
+      y.native.held = 793184 ∧ z.native.held = 170596 ∧
       y.native.transferred = 10 ∧ z.native.transferred = 0 ∧
-      z.native.wasted = 40 ∧ z.native.source = 0 ∧
+      z.native.dissipated = 40 ∧ z.native.source = 0 ∧
       targetOf z.native.tau z.native.blocked = .C := by
   exact ⟨_, _, rfl, rfl, run_sound rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
 

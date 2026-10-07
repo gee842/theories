@@ -168,7 +168,7 @@ theorem step_exact_payment {s t : State} {e : Event} (h : process.step s e t) :
   case episode i n => cases i <;> simp [advance, put, spending]
   case permission i b => cases i <;> simp [advance, put, spending]
 
-theorem account_law : Generative.Conditional.AccountLaw process State.fuel
+theorem account_law : Generative.Conditional.SustainLaw process State.fuel
     (fun _ e _ => spending e) (fun _ _ _ => 0) := by
   intro s e t h
   have hp := step_exact_payment h

@@ -1,12 +1,12 @@
-'Generative.Conditional.Renewal.weighted_append' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.weighted_aged' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.weighted_formed_le' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.formation_exceeds_opening' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.opening_step' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.short_opening_step' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.life_step' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.short_renewal_depletes' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.short_renewal_deadline' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.short_kinds_cannot_renew_forever' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.weighted_append' does not depend on any axioms
+'Generative.Conditional.Renewal.weighted_aged' does not depend on any axioms
+'Generative.Conditional.Renewal.weighted_formed_le' does not depend on any axioms
+'Generative.Conditional.Renewal.formation_exceeds_opening' does not depend on any axioms
+'Generative.Conditional.Renewal.opening_step' does not depend on any axioms
+'Generative.Conditional.Renewal.short_opening_step' does not depend on any axioms
+'Generative.Conditional.Renewal.life_step' does not depend on any axioms
+'Generative.Conditional.Renewal.short_renewal_depletes' does not depend on any axioms
+'Generative.Conditional.Renewal.short_renewal_deadline' does not depend on any axioms
+'Generative.Conditional.Renewal.short_kinds_cannot_renew_forever' does not depend on any axioms
 'Generative.Conditional.Renewal.closedOpenShort_ticks' does not depend on any axioms
-'Generative.Conditional.Renewal.closed_open_short_cannot_renew_forever' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.closed_open_short_cannot_renew_forever' does not depend on any axioms

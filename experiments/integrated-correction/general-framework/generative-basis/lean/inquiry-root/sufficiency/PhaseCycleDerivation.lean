@@ -26,7 +26,7 @@ is accountable for in the downstream alignment and diagnosis.
    up to rotation and global inversion. Period four admits none with the
    two-advance bound; period five admits some. One-advance reach admits none up
    to period six. Thus three is the least admissible period, not the only one.
-3. Recurrence within non-recurring activity. Three paid advances restore the
+3. Recurrence within non-recurring activity. Three supported advances restore the
    phase, while no nonempty sequence of completed advances restores the whole
    native configuration: each draws on the sustaining store.
 
@@ -38,10 +38,10 @@ universal necessity of three is claimed.
 
 namespace Generative.InquirySufficiency.PhaseCycleDerivation
 
-open Generative.NativePacketProcess (Phase output nextPhase bill peak)
+open Generative.NativePacketProcess (Phase output nextPhase draw peak)
 open Generative.InquirySufficiency.PacketLawDerivation
-  (Native phaseAfter rotations RotationsReady rotation_fields rotation_fuel
-    rotations_ready_implies_budget sub_add_cancel_constructive)
+  (Native phaseAfter rotations RotationsReady rotation_fields rotation_held
+    rotations_ready_implies_held_bound sub_add_cancel_constructive)
 
 /-! ## 1. The native phases are the orbit of one primitive advance -/
 
@@ -303,23 +303,23 @@ theorem two_cycle_confounds_phase_with_inversion (steps : Nat) :
 /-! ## 3. The phase recurs; the whole native configuration does not -/
 
 /-- Each completed native call draws at least one unit from the sustaining
-store (the inherited `bill` is at least 16384). -/
-theorem activity_drawn_positive (s : Native) : 1 ≤ bill s :=
+store (the inherited `draw` is at least 16384). -/
+theorem activity_drawn_positive (s : Native) : 1 ≤ draw s :=
   Nat.le_trans (by decide : 1 ≤ 16384) (Nat.le_add_right 16384 (peak s))
 
 theorem rotations_never_restore_whole (count : Nat) (s : Native)
     (ready : RotationsReady (count + 1) s) : rotations (count + 1) s ≠ s := by
   intro same
-  have remaining := rotation_fuel (count + 1) s
+  have remaining := rotation_held (count + 1) s
   rw [same] at remaining
-  have restored := sub_add_cancel_constructive s.fuel ((count + 1) * bill s)
-    (rotations_ready_implies_budget (count + 1) s ready)
+  have restored := sub_add_cancel_constructive s.held ((count + 1) * draw s)
+    (rotations_ready_implies_held_bound (count + 1) s ready)
   rw [← remaining] at restored
-  have positive : 1 ≤ (count + 1) * bill s := by
+  have positive : 1 ≤ (count + 1) * draw s := by
     rw [Nat.succ_mul]
     exact Nat.le_trans (activity_drawn_positive s) (Nat.le_add_left _ _)
-  exact Nat.lt_irrefl s.fuel
-    (Nat.le_trans (Nat.add_le_add_left positive s.fuel) (Nat.le_of_eq restored))
+  exact Nat.lt_irrefl s.held
+    (Nat.le_trans (Nat.add_le_add_left positive s.held) (Nat.le_of_eq restored))
 
 theorem phase_recurs_whole_does_not (s : Native) (ready : RotationsReady 3 s) :
     (rotations 3 s).phase = s.phase ∧ rotations 3 s ≠ s :=

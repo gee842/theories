@@ -2,8 +2,9 @@
 """Fresh build of the renewal–closure modules from frozen source bytes.
 
 Inherited modules must keep the source hashes recorded by their own receipts.
-New declarations may use only Lean's standard propext and Quot.sound; every new
-theorem must be audited, and sorry, custom axioms and warnings are rejected.
+Every audit of a new declaration must be empty: no axiom at all, including Lean's
+standard propext, Quot.sound and Classical.choice. Every new theorem must be
+audited, and sorry, custom axioms and warnings are rejected.
 Uses `lean +<toolchain>` through elan when available, else `lean` on PATH;
 either way the reported version must be 4.29.1.
 """
@@ -23,20 +24,23 @@ SOURCES = {
     "GenerativeCore": LEAN / "GenerativeCore.lean",
     "Depletion": LEAN / "Depletion.lean",
     "SupportNecessity": LEAN / "conditional/SupportNecessity.lean",
+    "RenewalBasics": ROOT / "RenewalBasics.lean",
     "RenewalClosure": ROOT / "RenewalClosure.lean",
     "RenewalAccounting": ROOT / "RenewalAccounting.lean",
     "RenewalSufficiency": ROOT / "RenewalSufficiency.lean",
     "RenewalLink": ROOT / "RenewalLink.lean",
     "RenewalCharacterization": ROOT / "RenewalCharacterization.lean",
+    "RenewalConfigurations": ROOT / "RenewalConfigurations.lean",
+    "RenewalPremises": ROOT / "RenewalPremises.lean",
 }
 INHERITED_SHA256 = {
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
     "Depletion": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
-    "SupportNecessity": "d55d4e960e7d95f0c17e8f915b5b46b85c9c04fbf34c036b17c725cf98b66aa0",
+    "SupportNecessity": "30050ec7366ef84fa6d2bd71ea8f5998ef0d9975b6841393b7014b147573b715",
 }
-NEW = ["RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink",
-       "RenewalCharacterization"]
-ALLOWED_AXIOMS = {"propext", "Quot.sound"}
+NEW = ["RenewalBasics", "RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink",
+       "RenewalCharacterization", "RenewalConfigurations", "RenewalPremises"]
+ALLOWED_AXIOMS = set()
 
 
 def digest(data):
@@ -126,12 +130,26 @@ def main():
                  "has a steady configuration fixed by one tick and so renews forever; and on "
                  "one execution of the constraint-flow process, endless liveness needs both a "
                  "realized closure of supporters that outlast the tick and a kind that brings in "
-                 "at least its formation demand; and, with finitely many kinds and spans "
-                 "between one and D, some execution stays live forever exactly when a nonempty "
+                 "at least its formation demand; and, with finitely many kinds, with span and "
+                 "rate bounds read off the list of kinds and no condition on spans or initial "
+                 "tokens, some history stays live forever exactly when a nonempty "
                  "population of kinds is closed under support by constraints that outlast a "
                  "tick and opens over its spans at least what forming it demands, otherwise "
-                 "every execution stops being live by an explicit time. No physical "
-                 "identification or ethical appraisal is asserted.",
+                 "every history stops being live by an explicit time, read from the law and "
+                 "the initial configuration when formation demands are positive; the same "
+                 "holds for keeping a live token of designated kinds, such as means of "
+                 "correction, exactly when some self-renewing population contains one of "
+                 "positive span; for whole "
+                 "configurations, renewability is never gained along a history without "
+                 "import, a seeded configuration with enough reserve reaches a standing "
+                 "renewal, and renewability is not a function of the reserve and kinds "
+                 "present; no decision of equality between kinds and no axiom (not even "
+                 "propext, Quot.sound or Classical.choice) is used; finitely many kinds "
+                 "are needed (a chain of infinitely many kinds renews forever with no "
+                 "self-renewing population), and positive formation demand is needed for a "
+                 "deadline read from the initial configuration (a kind free to form stores "
+                 "provision that keeps a short cycle going arbitrarily long from one start). "
+                 "No physical identification or ethical appraisal is asserted.",
     }
     (ROOT / "verification.json").write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps({"status": record["status"], "modules": len(results),

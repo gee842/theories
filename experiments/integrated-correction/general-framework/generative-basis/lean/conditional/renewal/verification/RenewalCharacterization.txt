@@ -1,29 +1,55 @@
-'Generative.Conditional.Renewal.block_within' depends on axioms: [propext]
-'Generative.Conditional.Renewal.steady_within' depends on axioms: [propext]
-'Generative.Conditional.Renewal.self_renewing_renews_forever' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.range_search' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.tick_search' depends on axioms: [propext]
-'Generative.Conditional.Renewal.weighted_formed_eq' depends on axioms: [propext]
-'Generative.Conditional.Renewal.spanOpening_le_formation' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.spanOpening_lt_formation' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.tick_potential' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.tick_potential_short' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.stretch_potential' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.stretch_potential_short' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.cycle_with_tail' depends on axioms: [propext]
-'Generative.Conditional.Renewal.excess_population' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.renewal_dichotomy' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.renews_forever_has_self_renewing_population' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.renewal_closure_theorem' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.no_self_renewing_population_deadline' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.opened_le_weighted' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.length_le_formation' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.spanOpening_le_length' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.potential_growth' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.potential_bound' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.no_self_renewing_population_explicit_deadline' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.closed_open_short_has_no_self_renewing_population' depends on axioms: [propext,
- Quot.sound]
+'Generative.Conditional.Renewal.block_within' does not depend on any axioms
+'Generative.Conditional.Renewal.mem_positivePart' does not depend on any axioms
+'Generative.Conditional.Renewal.positivePart_mem' does not depend on any axioms
+'Generative.Conditional.Renewal.positivePart_balance' does not depend on any axioms
+'Generative.Conditional.Renewal.positivePart_renewing' does not depend on any axioms
+'Generative.Conditional.Renewal.standingExecution_live' does not depend on any axioms
+'Generative.Conditional.Renewal.steady_within' does not depend on any axioms
+'Generative.Conditional.Renewal.self_renewing_renews_forever' does not depend on any axioms
+'Generative.Conditional.Renewal.range_search' does not depend on any axioms
+'Generative.Conditional.Renewal.characterization_cancel' does not depend on any axioms
+'Generative.Conditional.Renewal.characterization_cancel_short' does not depend on any axioms
+'Generative.Conditional.Renewal.characterization_lt_of_add_lt' does not depend on any axioms
+'Generative.Conditional.Renewal.characterization_add_succ_le' does not depend on any axioms
+'Generative.Conditional.Renewal.characterization_le_of_add_lt' does not depend on any axioms
+'Generative.Conditional.Renewal.characterization_shuffle' does not depend on any axioms
+'Generative.Conditional.Renewal.tick_search' does not depend on any axioms
+'Generative.Conditional.Renewal.weighted_formed_eq' does not depend on any axioms
+'Generative.Conditional.Renewal.spanOpening_le_formation' does not depend on any axioms
+'Generative.Conditional.Renewal.spanOpening_lt_formation' does not depend on any axioms
+'Generative.Conditional.Renewal.tick_potential' does not depend on any axioms
+'Generative.Conditional.Renewal.tick_potential_short' does not depend on any axioms
+'Generative.Conditional.Renewal.stretch_potential' does not depend on any axioms
+'Generative.Conditional.Renewal.stretch_potential_short' does not depend on any axioms
+'Generative.Conditional.Renewal.cycle_with_tail' does not depend on any axioms
+'Generative.Conditional.Renewal.excess_population' does not depend on any axioms
+'Generative.Conditional.Renewal.keeps_decide' does not depend on any axioms
+'Generative.Conditional.Renewal.live_keeps_everything' does not depend on any axioms
+'Generative.Conditional.Renewal.support_closed_append' does not depend on any axioms
+'Generative.Conditional.Renewal.traced_support_closed' does not depend on any axioms
+'Generative.Conditional.Renewal.kept_kind_descends' does not depend on any axioms
+'Generative.Conditional.Renewal.kept_through_window_has_population' does not depend on any axioms
+'Generative.Conditional.Renewal.renewal_dichotomy_keeping' does not depend on any axioms
+'Generative.Conditional.Renewal.renewal_dichotomy' does not depend on any axioms
+'Generative.Conditional.Renewal.steady_contains_fresh' does not depend on any axioms
+'Generative.Conditional.Renewal.renewal_keeping_theorem' does not depend on any axioms
+'Generative.Conditional.Renewal.no_keeping_population_deadline' does not depend on any axioms
+'Generative.Conditional.Renewal.span_le_longest' does not depend on any axioms
+'Generative.Conditional.Renewal.renews_forever_has_self_renewing_population' does not depend on any axioms
+'Generative.Conditional.Renewal.renewal_closure_theorem' does not depend on any axioms
+'Generative.Conditional.Renewal.no_self_renewing_population_deadline' does not depend on any axioms
+'Generative.Conditional.Renewal.opened_le_weighted' does not depend on any axioms
+'Generative.Conditional.Renewal.length_le_formation' does not depend on any axioms
+'Generative.Conditional.Renewal.spanOpening_le_length' does not depend on any axioms
+'Generative.Conditional.Renewal.potential_growth' does not depend on any axioms
+'Generative.Conditional.Renewal.potential_bound' does not depend on any axioms
+'Generative.Conditional.Renewal.no_keeping_population_explicit_deadline' does not depend on any axioms
+'Generative.Conditional.Renewal.no_self_renewing_population_explicit_deadline' does not depend on any axioms
+'Generative.Conditional.Renewal.closed_open_short_has_no_self_renewing_population' does not depend on any axioms
 'Generative.Conditional.Renewal.dangling_closure_falls_short' does not depend on any axioms
 'Generative.Conditional.Renewal.dangling_kind_outside_every_closure' does not depend on any axioms
-'Generative.Conditional.Renewal.dangling_support_renews_forever' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.dangling_support_renews_forever' does not depend on any axioms
+'Generative.Conditional.Renewal.lapsing_closure_renews_forever' does not depend on any axioms
+'Generative.Conditional.Renewal.lapsing_balance' does not depend on any axioms
+'Generative.Conditional.Renewal.lapsing_correction_gap' does not depend on any axioms
+'Generative.Conditional.Renewal.lapsing_correction_cannot_be_kept' does not depend on any axioms
