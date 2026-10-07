@@ -175,7 +175,34 @@ Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 
 
 **与估值研究的关系。** 估值研究的 `valuation_keeping_theorem` 是在更新通道过程上的对应结果（某估值能让一个种类永远延续，当且仅当存在包含它的自我更新群体）。本节的结果在一般 `Process` 上陈述，可以被那里复用。首版曾直接引用那个定理，因而继承了 `propext` 与 `Quot.sound`；按 Ren 的要求已删除（保留在 git 历史中），改为这里的直接证明。待那边的无公理版本合并后，可以证明二者在通道过程上的对应，而不是保留两套平行陈述。
 
+## 11. 评价被实行时，取向是否由延续导出
+
+2026年10月7日。Ren 问：取向是生成的，这是否已经推出？本节回答：**部分推出。** 在延续所定义的层次（最终可实现性）上，被无限实行的东西的方向已经推出是生成的；在立即可行性层次上没有推出；"延续即善"没有推出。[`EnactedOrientation.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/EnactedOrientation.lean) 有 27 条结果，全部不依赖公理（整个包 147 条）。
+
+**此前的反例是记录之间的比较。** `law_admits_opposite_recordings` 中的两种记录都不开启也不阻止任何活动（`recording_enabled_iff`），记录的取向从不影响发生什么，所以它们一样能延续。本节问的是：评价被**实行**时，即它认可的转换就是历史中实际发生的转换时，会怎样。用一个标记 `Q` 挑出被实行的转换，此外不输入任何东西。
+
+**在最终可实现性层次上，两个取向在过程内部不对称。**
+
+- **没有转换会增加最终可实现性**（`no_transition_gains`）。所以"以损失为上"的非严格取向 `converse CanLe` 在每段历史的每次转换上都成立（`loss_order_along_every_history`）：它认可一切发生的事，不区分任何历史。延续包含 `CanLe` 则在每次有损失的转换上不成立（`loses_not_canLe`），是唯一真正有所区分的那一个。
+- **损失不能被无限实行。** 状态有限时，任何历史中造成损失的转换都少于状态数（`strict_loss_bounded`）；只认可损失的评价，沿任何历史被实行的次数都少于状态数（`loss_endorsing_enactment_bounded`）。理由在过程内部：一次损失转换的起点此后再也到达不了，所以每次损失都封闭掉一个状态（`loss_marked_bound`）。这几条不用状态的可判定相等。
+- **能反复实行的都在保持。** 无论一个评价认可什么，只要它被无界地反复实行，就不可能所有可到达的实行都是损失（`recurring_enactment_not_all_loss`）；再加上状态的可判定相等，可以找到一次位于回路上的实行，它保持每个活动的最终可实现性，两个取向在它上面一致（`recurring_enactment_keeps`、`return_transition_both_orders`）。一个被无界实行的活动也就延续（`unbounded_enactment_persists`，接第10节）。
+
+所以"以损失为其实行的评价会削弱自身的延续"这一猜想在这一层次上成立，但要说准确：**一个以损失为其实行的评价，削弱的是它自身实行的反复，而不必是评价活动本身的可实现性。** 延续选出的是被无限实行的东西的方向，不是每个延续着的评价的判断方向。
+
+**保留的反例。**
+
+- **损失可以先于延续。** 在 `severing` 中，一次转换永久取消了一个活动，之后评价活动 `e` 照样延续（`loss_then_persistence`）。延续给损失设了上界，但不排除损失。一个认可损失的评价也可以延续，只要它此后不再实行损失。
+- **有限性是必要的。** 在 `ladder`（自然数状态）中每次转换都取消一个活动，损失转换无界反复（`ladder_loss_recurs`）。
+- **在立即可行性层次上取向仍未定。** 在 `dip` 中，不满足 `ContinuationLe` 的转换可以无界反复（`dip_immediate_loss_recurs`），每次都在同一回路上恢复。第5.1、8节的反例在这个层次上仍然成立。
+- 最终可实现性层次仍把每次排他性承诺记为损失（第5.4节与 `ProtectedScope`）。这里的结果说的是这些损失在任何历史中都是有限次的，并不改变它们被记为损失。
+
+**对第8节表中"取向"一行的影响。** 该行证明的是：形式资格不决定取向。这一点不变。新增的是：在一元的、被实行的意义上，最终可实现性层次的取向不再是自由输入，过程的时间结构（可实现性只能保持或失去，不能新增）使得只有保持能被无限实行。仍然需要的输入是：取哪个层次（最终还是立即）、状态有限（已证必要）、以及正向陈述里使用的状态可判定相等（与 `persists_iff_regenerating_return` 相同的模型数据；有界性定理本身不需要它）。
+
+**未证。** "延续"或"能被无限实行"是否就是善；哪段历史实际到达哪个回路；在立即可行性层次上对恢复与损失的整体比较（第5.4节第2点）。
+
 ## 形式索引
+
+`EnactedOrientation.lean`：`Reach`、`CanLe`、`Loses`、`Gains`、`no_transition_gains`、`loss_order_along_every_history`、`return_transition_both_orders`、`Marked`、`RecursUnboundedly`、`loss_marked_bound`、`strict_loss_bounded`、`loss_endorsing_enactment_bounded`、`recurring_enactment_not_all_loss`、`recurring_enactment_keeps`、`unbounded_enactment_persists`、`loss_then_persistence`、`ladder_loss_recurs`、`dip_immediate_loss_recurs`。
 
 `RegeneratingPersistence.lean`：`PersistsFrom`、`trace_returns`、`regenerating_return_gives_persistence`、`persists_iff_regenerating_return`、`return_preserves_realizability`，以及自证的有限列表引理。
 
