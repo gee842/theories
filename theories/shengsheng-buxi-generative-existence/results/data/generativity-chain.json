@@ -1305,6 +1305,52 @@
               "label_en": "Receipt"
             }
           ]
+        },
+        {
+          "id": "F15",
+          "title_zh": "原生活动的回收、形成支出与起始支持",
+          "title_en": "Native recovery, formation draw and starting support",
+          "claim_zh": "以每次已记录失败对应一对部件为条件，回收率由原生转化的十单位耗散确定；同一操作支出律使形成及回收承担原生支出。指定闭包历史所需最小起点为114702持有量及20源量，且能在该点完成；同史失败支承条件还确定起始备用对为空。",
+          "claim_en": "Conditional on one pair per recorded failed conversion, the native ten-unit dissipation fixes recovery rate; one operation-draw law forces formation and recovery to incur the native draw. The specified closure history requires and attains a least start of 114702 held and 20 source units; same-history failure backing also fixes empty initial spare stock.",
+          "scope_zh": "三个模块共82项声明审计均为空；本次只核对既有回执的16项文件绑定，未重跑Lean。每失败一对、共同支出律及所述起点条件仍是承诺；转化单位与费率本身、支持实际存在及生物对应未由此导出。共同律只在相应原生及形成／回收操作都可完成的状态约束支出，非普遍正成本。",
+          "scope_en": "The three modules record 82 empty declaration audits; this index checked 16 existing receipt bindings without rerunning Lean. One pair per failure, a common draw law and stated starting conditions remain commitments; the conversion quantum, tariff, actual existence of support and biological correspondence are not derived. The common law constrains draw where the corresponding native and formation/recovery operations can complete, not a universal positive cost.",
+          "links": [
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md",
+              "label_zh": "回收率与条件",
+              "label_en": "Recovery rate and conditions"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md",
+              "label_zh": "共同支出律与限制",
+              "label_en": "Common draw law and limits"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md",
+              "label_zh": "最小起始支持",
+              "label_en": "Least starting support"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean",
+              "label_zh": "回收源码",
+              "label_en": "Recovery source"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean",
+              "label_zh": "支出源码",
+              "label_en": "Draw source"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean",
+              "label_zh": "起点源码",
+              "label_en": "Starting-stock source"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/stock-derivation-verification.json",
+              "label_zh": "共同回执",
+              "label_en": "Shared receipt"
+            }
+          ]
         }
       ]
     },
@@ -1473,7 +1519,7 @@
     }
   ],
   "reviewed_sources": {
-    "RESEARCH.md": "5e597d5f079b49114f77b5721836a930fb7e00ed5328507be12de0f91bea086a",
+    "RESEARCH.md": "22035b7362de97e65779e99617ce4cb2f1565938bb53dced53520720ff466b9e",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md": "044dfbe5474e7541e216cc03664985b5f8d0a4c00bb204dd7f234ae51275ec4f",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md": "da266f302153c33dc9932e53465153e76efd928f3d4118b5534d09333061ec79",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md": "198d9eb4403f389aec98838544aab2c7274557640802b5e7082bcaf6cb014dc5",
@@ -1561,7 +1607,14 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md": "906156b116c870d9104d8b79aa9e22bd96739b977a08aff642e28b7ce80c7d25",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md": "f9b12e1606030cd6beff8075d8b79ebdbcf122013822b8931587f5559b9e30e8",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md": "0d3766b4c78cbc6339fc032e505f0c151646ecd31ecc1f7f09721cf8c26ca0cc",
-    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json": "505e7fc2028cdcfc4541d68c2faab6a32b2005d585bdf8a8a3fcf4a74acff274"
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json": "505e7fc2028cdcfc4541d68c2faab6a32b2005d585bdf8a8a3fcf4a74acff274",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md": "4421fda5fa8911012b5d75f941537e80ca8e4a09526ff03b28135f7ed2bac40e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md": "bafa9a53192a011b28cfd9c55fa96ce9006ca2776e1edd54e1b7139518ea4b51",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md": "72b3a02c0ad1f933a9da2d6973f466aca4298f40fb1003e44f08a3dd0f3790aa",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean": "9079796fff99dbf9ec6a6fda8091c15126a6b074f6661044d35d18e29d1e31e7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean": "bbd5bc2e9f473986e508d3341d924df46905660df9e423d897dcfef0ba71939f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean": "c8eb88aa005aba022950b8a4a21fad72dc1d8472ab136fc569da320305ce3a2a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/stock-derivation-verification.json": "e6c6369b1afd8f43269a90bb6dfdb161327d788ffb8f04b0caea8c30823c11d3"
   },
   "discovery_globs": [
     "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/*.md",
@@ -1752,6 +1805,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-MATH.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-MATH.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
@@ -2056,6 +2110,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPROCITY-BOUNDARY.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECORDED-CLAIMS-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-SOURCES.md",
@@ -2136,7 +2191,9 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-REVIEW.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-SOURCES.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-ARGUMENT.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-INTEGRATION.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-LEAN.md",
@@ -2177,6 +2234,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-COUNTERREVIEW.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-INTEGRATION.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-MATH.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-REVIEW.md",

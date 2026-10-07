@@ -59,3 +59,9 @@ python3 _process/research/2026-10-05-generative-foundation-review/root-foundatio
 The first command checks catalogue coverage, fields, referenced files, source-version hashes and generated output consistency. Edit the three reading JSON registers, reread changed sources, then regenerate without `--check`. The Lean generator refreshes its source inventory and compares generated outputs. Neither command compiles Lean or certifies an ethical premise.
 
 编辑核验结果写入 [RESULTS-CATALOGUE-CHECKS.json](RESULTS-CATALOGUE-CHECKS.json)。这个回执只记录本轮文档检查；以后其他会话改变源码可能使快照过时，更新时需按受影响范围重读。
+
+## 发布快照续记 / Release snapshot continuation — 2026-10-08
+
+Ren 随后明确要求将本轮及其他最新成果提交并推送远端 `main`。据此冻结本地快照 `e40ae559`，在独立工作树合并远端 `2c2171c4`，保留原工作区之后的新改动。重新核读受影响条目，纳入生命恢复、减损比较及远端三个支持前提模块；理论链扩展为63项。原检查回执保持其历史字节，发布版另见 [RESULTS-CATALOGUE-RELEASE-CHECKS.json](RESULTS-CATALOGUE-RELEASE-CHECKS.json)。
+
+Ren subsequently authorized committing this work together with the latest research and pushing remote `main`. The local snapshot and remote changes were combined in an isolated checkout, preserving later concurrent edits in the live workspace. Affected entries were reread and refreshed. This release checks catalogue consistency and selected existing receipt/source bindings; it performs no new Lean compilation or retrospective repository-wide proof audit.

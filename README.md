@@ -10,11 +10,13 @@ We are developing a **monist, relational theory of generativity**: activity form
 
 ## 查看理论与论证 / Browse the theory and arguments
 
-最新推进：[真实生成取舍与认识校准](_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md)提出经反评审的接续比较候选；新增11项 Lean 定理检查必要损失及认识条件，未证明候选的伦理优先。 / Latest: a reviewed continuation-based comparison, with eleven new theorems auditing loss necessity and epistemic conditions rather than proving the ethical priority.
+最新伦理推进：[损失与比较根据](_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md)新增16项 Lean 定理／23项审计，支持已成立比较在匹配减损下的传递；第一次混合比较的伦理根据及有限牺牲上限仍开放。 / Latest ethical development: sixteen new theorems and twenty-three audits support transport of established comparisons under matched loss reduction; the first mixed ethical comparison and a finite-sacrifice bound remain open.
+
+生命依存推进：[恢复扩展](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md)新增15项 Lean 定理／20项审计，容许双向被动输运与中途越界，推导实际有界终点所需的支持。下一步解释组织如何使生命功能真正恢复。 / Living-dependency development: fifteen new theorems and twenty audits allow bidirectional passive transfer and excursions, deriving support necessary for actual bounded endpoints. Resumption of living function through retained or reconstructed organization is the next connection.
 
 | 入口 / Entry | 内容 / Contents |
 |---|---|
-| **[生成—共同实现—伦理完整链 / Connected generativity–ethics table](theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md)** | 62项中英对照，按根基、共同实现、情境理由、学习／良知／智慧与形式支撑逐项链接；有变化时持续更新。 / 62 paired entries with theory, evidence and proof links, maintained as research changes. |
+| **[生成—共同实现—伦理完整链 / Connected generativity–ethics table](theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md)** | 63项中英对照，按根基、共同实现、情境理由、学习／良知／智慧与形式支撑逐项链接；有变化时持续更新。 / 63 paired entries with theory, evidence and proof links, maintained as research changes. |
 | **[成果与论证总目录 / Results catalogue](theories/shengsheng-buxi-generative-existence/results/README.md)** | 统一理论逐章中英论证、意义、范围、Lean 对应与后续问题。 / Paired arguments, significance, scope, Lean correspondence and next questions. |
 | [17 个理论分支 / Theory map](theories/shengsheng-buxi-generative-existence/results/THEORY-MAP.md) | 生生、元吸引子、智善、关系性自我、文言、技术与共同生活；含方法档案。 / The broader theories, practical programmes and method archive. |
 | [论证 A–L](theories/shengsheng-buxi-generative-existence/results/ARGUMENTS-A-L.md) · [论证 M–Z](theories/shengsheng-buxi-generative-existence/results/ARGUMENTS-M-Z.md) | 逐项中英阅读版，链接完整原文、形式结果与证据。 / Bilingual readings linked to full accounts and evidence. |

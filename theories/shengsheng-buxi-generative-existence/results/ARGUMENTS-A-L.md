@@ -1288,15 +1288,15 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Scope:** The original five-condition candidate is complete; universal metaethics, actual compliance, exclusive necessity and assumption-free grounding require distinct further arguments.
 
-**后续：** 当前伦理连接是生成增益与实际损失的内容、持续及范围如何给比较以力度；生命依存分支推进双向输运及可恢复转化。共同起点的更强根据与数学接纳继续研究。
+**后续：** 当前伦理连接是生成增益与实际损失的内容、持续及范围如何给比较以力度。生命依存已纳入双向被动输运和实际有界终点的必要支持账户；下一步解释保留或重建的组织如何使特定生命活动真正恢复。共同起点的更强根据与整个归纳域的接纳继续研究。
 
-**Next:** The ethical bridge concerns how the content, duration and scope of real gains and losses warrant comparison. Living-dependency work advances signed transport and recoverable transformation; stronger warrant and mathematical admission remain ongoing.
+**Next:** The ethical bridge concerns how the content, duration and scope of real gains and losses warrant comparison. Living dependencies now include bidirectional passive transfer and a necessary support account for actual bounded endpoints; next explain how retained or reconstructed organization resumes specified living activity. Stronger ethical warrant and admission of the whole inductive domain remain ongoing.
 
 **Lean 对应 / Lean correspondence:** [GenerativeModel.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean)
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [FOUNDATION-ROOT-ACCEPTANCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) · [GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) · [NORMATIVE-WARRANT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md) · [GENERATIVE-PREMISE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md) · [ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md) · [ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md) · [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [GENERATIVE-TRADEOFF-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [FOUNDATION-ROOT-ACCEPTANCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) · [GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) · [NORMATIVE-WARRANT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md) · [GENERATIVE-PREMISE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md) · [ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md) · [ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md) · [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [GENERATIVE-TRADEOFF-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md) · [ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md)
 
 <a id="generative-mathematical-admissibility"></a>
 ## 通过一致完备化解释数学可容许性 / Mathematical admissibility through coherent completion
@@ -1729,24 +1729,24 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **状态 / Status:** 局部机制推导已检查；生命全域覆盖开放 / Local mechanistic derivation checked; living-domain coverage open
 
-**中文论证：** 在指定维持区间内，净内向输运改变需保持有界的量，补偿输出消耗功。组合这些关系可推导一般支持账户：累积负荷超过生理容限与保留功时，所讨论的继续需要额外支持。早先形成的条件能在休眠或休息中持续有效。
+**中文论证：** 输运改变相关物质量，主动补偿需要功；组合这些关系可推出一般支持账户。维持区间内的原结果进一步扩展为实际历史上有界终点的必要账户，容许双向被动输运及中途越界。被动缓解、已有容限、保留功与有限供给的实际消耗都得到计入；单次越界本身不推出新输入必要。
 
-**English argument:** Within a specified maintained regime, net inward transport changes a bounded amount and compensating export requires work. Their composition derives the general support account: once cumulative load exceeds retained tolerance and work, the maintained continuation requires additional support. Earlier formation can remain effective during rest or dormancy.
+**English argument:** Transport changes a relevant amount and active compensation requires work; composing these relations derives a general support account. The maintained-regime result extends to necessary accounting for actual bounded endpoints, allowing bidirectional passive transfer and intermediate excursions. Passive relief, tolerance, retained work and finite provision are counted; an excursion alone does not require fresh input.
 
 **意义：** 将先前给定的消耗账户推进为可从具体机制推出的关系，使一般延续证明更接近生命的实际依存。
 
 **Significance:** Derives a previously supplied support account from a mechanism, advancing the real-living correspondence of general continuation proofs.
 
-**范围：** 研究记录10项新 Lean 定理／20项声明审计；输运律、操作界、单位与功耦合仍需实际对应。界限不是不可逆死亡阈值，也未证明所有生命有统一维护常数或连续局部生产。
+**范围：** 维持结果记录10项新定理／20项审计，恢复扩展另有15项新定理／20项审计。输运、单位、界与功耦合仍需实际对应。量恢复不等于生命功能恢复；证明不构造恢复轨迹、不保证反复成功，也未证明所有生命有统一维护常数或不可逆死亡阈值。
 
-**Scope:** The study records ten new Lean theorems and twenty audits. Transport, bounds, units and work coupling require real correspondence. The bound is not irreversible death, nor a universal maintenance constant or continuous-production requirement.
+**Scope:** The maintained result records ten new theorems/twenty audits; the recovery extension adds fifteen new theorems/twenty audits. Transport, units, bounds and work coupling require real correspondence. Amount restoration is not restored living function: the proof constructs no recovery trajectory, guarantees no recurring success, and establishes no universal maintenance constant or irreversible death threshold.
 
-**后续：** 正在：生命依存的机制对应。下一步：双向被动输运、可恢复的状态改变、几何与生理组织变化，以及装置自身的形成和保留。
+**后续：** 正在：实际生命依存与恢复的机制对应。下一步：保留或重建的组织如何使指定生命活动实际恢复；说明装置形成、几何变化，以及休眠、活动与后继阶段之间的依存。
 
-**Next:** Ongoing: mechanistic correspondence for living dependencies. Next: signed passive transport, recoverable regime changes, changing geometry and physiological organization, and formation and retention of the machinery.
+**Next:** Ongoing: mechanism correspondence for living dependence and recovery. Next: explain how retained or reconstructed organization actually resumes a specified living activity, including machinery formation, changing geometry and dependencies across dormant, active and successor stages.
 
-**Lean 对应 / Lean correspondence:** [LivingRealization.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean)
+**Lean 对应 / Lean correspondence:** [LivingRealization.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean) · [LivingRecovery.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRecovery.lean)
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [LIVING-DEPENDENCY-MECHANISMS.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md) · [LIVING-DEPENDENCY-COVERAGE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md) · [LIVING-REALIZATION-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [LIVING-DEPENDENCY-MECHANISMS.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md) · [LIVING-DEPENDENCY-COVERAGE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md) · [LIVING-REALIZATION-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md) · [LIVING-RECOVERY-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md) · [LIVING-RECOVERY-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md) · [LIVING-RECOVERY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-REVIEW.md)
