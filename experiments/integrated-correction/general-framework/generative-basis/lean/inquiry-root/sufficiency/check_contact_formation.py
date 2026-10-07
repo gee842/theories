@@ -18,7 +18,7 @@ CLOSURE = HERE / "process-law-verification.json"
 NEW = ["ContactFormation", "FormationClosure", "AcquiredContact", "PortValuation", "ValuationInCore",
        "RevisingPort", "RelationalCut", "CalibratedMacro"]
 # Imported from the valuation-development package, built in the same closure.
-VALUATION = ["ValuationDevelopment", "ClosedLoopValuation"]
+VALUATION = ["AxiomFree", "ValuationDevelopment", "ClosedLoopValuation"]
 AUDIT = re.compile(r"'([^']+)' (?:does not depend on any axioms|depends on axioms: \[([^\]]*)\])")
 
 

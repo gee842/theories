@@ -38,7 +38,7 @@ theorem add_sub_of_le {a b : Nat} (h : a ≤ b) : a + (b - a) = b := by
 
 theorem le_of_add_le_add_right : ∀ {a b c : Nat}, a + b ≤ c + b → a ≤ c
   | _, 0, _, h => h
-  | _, b + 1, _, h => le_of_add_le_add_right (Nat.le_of_succ_le_succ h)
+  | _, _ + 1, _, h => le_of_add_le_add_right (Nat.le_of_succ_le_succ h)
 
 theorem le_of_add_le_add_left {a b c : Nat} (h : a + b ≤ a + c) : b ≤ c := by
   rw [Nat.add_comm a b, Nat.add_comm a c] at h; exact le_of_add_le_add_right h

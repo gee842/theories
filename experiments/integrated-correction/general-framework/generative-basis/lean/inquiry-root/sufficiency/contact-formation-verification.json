@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-07T09:31:22.824385+00:00",
+  "checked_at_utc": "2026-10-07T09:41:13.865170+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -319,9 +319,18 @@
       "clean": true
     },
     {
+      "module": "AxiomFree",
+      "source": "experiments/valuation-development/lean/AxiomFree.lean",
+      "source_sha256": "74ea6f5a0b0d6db63945d54adbc8dc214963843f7c19b407404e760685968671",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
       "module": "ValuationDevelopment",
       "source": "experiments/valuation-development/lean/ValuationDevelopment.lean",
-      "source_sha256": "646fe738830cf9da7037f9ef554aa455af0dd85b32ae1ba3591ba7e6dbb3b9d2",
+      "source_sha256": "b976c2f213d4b0082f2f7b5482788e62f9397804c32c93310b4de7cb040808e8",
       "exit_code": 0,
       "audits": 0,
       "nonempty_audits": {},
@@ -330,7 +339,7 @@
     {
       "module": "ClosedLoopValuation",
       "source": "experiments/valuation-development/lean/ClosedLoopValuation.lean",
-      "source_sha256": "ba21df526dae8fdf0b4f5e1f1947ab12391572e083d9f521e3b0284fbf2c43d3",
+      "source_sha256": "a88bf12f0499da2252ae85ca297c887b02b73b3e0dba7bd1e14d072fae92995b",
       "exit_code": 0,
       "audits": 0,
       "nonempty_audits": {},

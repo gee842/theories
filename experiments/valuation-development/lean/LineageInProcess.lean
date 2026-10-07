@@ -8,12 +8,12 @@
 
   Three connections:
   A. Every actual history of every process satisfying the per-event support law
-     (`AccountLaw`, U1; renamed SustainLaw in the project vocabulary) has a sustained
+     (`SustainLaw`, U1) has a sustained
      ledger, and consecutive segments of one history are generations that inherit
      exactly: `Ledger.seq` is trace concatenation.
   B. Conversely, generation ledgers are the events of a process (`lineageProcess`)
      that satisfies U1. The lineage bound of §16 is then the U2 prefix bound
-     (`support_trace_balance`) of that process, not a separate result.
+     (`support_trace_bound`) of that process, not a separate result.
   C. The renewal channel process (`channelProcess`) satisfies U1, so every window of
      every execution is a sustained generation. On that shared process the
      renewal–closure theorem decides which kinds a lineage can keep. Arrivals are
@@ -44,17 +44,17 @@ def traceLedger (reserve : State → Nat) (s t : State) (enacted arrived : Nat) 
 
 /-- Every actual history of a process satisfying U1 has a sustained ledger. -/
 theorem history_ledger_sustained (reserve : State → Nat)
-    {demand credit : State → Action → State → Nat} (law : AccountLaw P reserve demand credit)
+    {demand credit : State → Action → State → Nat} (law : SustainLaw P reserve demand credit)
     {s t : State} {as : List Action} {spent received count : Nat}
     (h : SupportTrace P demand credit s as t spent received count) :
     (traceLedger reserve s t spent received).Sustained :=
-  support_trace_balance reserve law h
+  support_trace_bound reserve law h
 
 /-- Consecutive segments of one history are generations: the successor inherits
 exactly what its predecessor holds at the end, and their succession is the ledger
 of the concatenated history, which is again sustained. -/
 theorem consecutive_segments_are_generations (reserve : State → Nat)
-    {demand credit : State → Action → State → Nat} (law : AccountLaw P reserve demand credit)
+    {demand credit : State → Action → State → Nat} (law : SustainLaw P reserve demand credit)
     {s m t : State} {xs ys : List Action} {sp₁ r₁ c₁ sp₂ r₂ c₂ : Nat}
     (left : SupportTrace P demand credit s xs m sp₁ r₁ c₁)
     (right : SupportTrace P demand credit m ys t sp₂ r₂ c₂) :
@@ -75,7 +75,7 @@ def lineageProcess : Process Nat Ledger where
   step r g r' := g.heldStart ≤ r ∧ r' = g.heldEnd ∧ g.Sustained
 
 theorem lineage_account_law :
-    AccountLaw lineageProcess id (fun _ g _ => g.enacted) (fun _ g _ => g.arrived) := by
+    SustainLaw lineageProcess id (fun _ g _ => g.enacted) (fun _ g _ => g.arrived) := by
   intro r g r' ⟨hs, he, hg⟩
   show r' + g.enacted ≤ r + g.arrived
   rw [he, Nat.add_comm]
@@ -97,9 +97,9 @@ theorem line_is_lineage_history : ∀ (rest : List Ledger) (g : Ledger) (r : Nat
   induction rest with
   | nil =>
     intro g r hr hg _ _
-    refine ⟨credited g.arrived + 0, ?_⟩
-    have := SupportTrace.cons (P := lineageProcess) (demand := fun _ g _ => g.enacted)
-      (credit := fun _ g _ => g.arrived) (s := r) (m := g.heldEnd) (a := g)
+    refine ⟨arrivalEvent g.arrived + 0, ?_⟩
+    have := SupportTrace.cons (P := lineageProcess) (enacted := fun _ g _ => g.enacted)
+      (arrived := fun _ g _ => g.arrived) (s := r) (m := g.heldEnd) (a := g)
       ⟨hr, rfl, hg⟩ (SupportTrace.nil g.heldEnd)
     exact this
   | cons h rest ih =>
@@ -107,9 +107,9 @@ theorem line_is_lineage_history : ∀ (rest : List Ledger) (g : Ledger) (r : Nat
     obtain ⟨hhg, hinh'⟩ := hinh
     obtain ⟨count, tr⟩ := ih h g.heldEnd hhg (hall h (List.mem_cons_self ..))
       (fun k hk => hall k (List.mem_cons_of_mem _ hk)) hinh'
-    refine ⟨credited g.arrived + count, ?_⟩
-    have step := SupportTrace.cons (P := lineageProcess) (demand := fun _ g _ => g.enacted)
-      (credit := fun _ g _ => g.arrived) (s := r) (a := g) ⟨hr, rfl, hg⟩ tr
+    refine ⟨arrivalEvent g.arrived + count, ?_⟩
+    have step := SupportTrace.cons (P := lineageProcess) (enacted := fun _ g _ => g.enacted)
+      (arrived := fun _ g _ => g.arrived) (s := r) (a := g) ⟨hr, rfl, hg⟩ tr
     have hend : (lineLedger g (h :: rest)).heldEnd = (lineLedger h rest).heldEnd :=
       lineLedger_heldEnd_congr rest (g.seq h) h rfl
     obtain ⟨e1, a1, _⟩ := lineLedger_fields (h :: rest) g
@@ -124,22 +124,22 @@ theorem lineage_bound_is_prefix_bound (rest : List Ledger) (g : Ledger) (hg : g.
     (hall : ∀ h ∈ rest, h.Sustained) (hinh : Inherits (g :: rest)) :
     (lineLedger g rest).Sustained := by
   obtain ⟨count, tr⟩ := line_is_lineage_history rest g g.heldStart (Nat.le_refl _) hg hall hinh
-  have hb := support_trace_balance id lineage_account_law tr
+  have hb := support_trace_bound id lineage_account_law tr
   obtain ⟨_, _, hst⟩ := lineLedger_fields rest g
   unfold Ledger.Sustained
   rw [hst]
   exact hb
 
 /-- Positive demand in every generation needs unbounded arrivals along an endless
-line: the core theorem `unbounded_demand_requires_unbounded_credit`, applied to the
+line: the core theorem `unbounded_enactment_requires_unbounded_arrival`, applied to the
 lineage process. -/
 theorem endless_demanding_line_needs_unbounded_arrivals
     (held : Nat → Nat) (gens : Nat → Ledger)
     (steps : ∀ n, lineageProcess.step (held n) (gens n) (held (n + 1)))
     (unit : ∀ n, 1 ≤ (gens n).enacted) :
     ∀ bound, ∃ length, bound < intervalTotal (fun n => (gens n).arrived) 0 length := by
-  apply unbounded_demand_requires_unbounded_credit (P := lineageProcess) id
-    (demand := fun _ g _ => g.enacted) (credit := fun _ g _ => g.arrived)
+  apply unbounded_enactment_requires_unbounded_arrival (P := lineageProcess) id
+    (enacted := fun _ g _ => g.enacted) (arrived := fun _ g _ => g.arrived)
     lineage_account_law held gens steps
   intro bound
   exact ⟨bound + 1, Nat.lt_of_lt_of_le (Nat.lt_succ_self bound)
@@ -157,7 +157,7 @@ variable {Kind : Type w}
 /-- The renewal channel process satisfies U1: what a tick forms is demanded from the
 reserve, and what arrives is opened by the live tokens of the organization itself. -/
 theorem channel_account_law (law : ChannelLaw Kind) :
-    AccountLaw (channelProcess law) (fun c => c.reserve)
+    SustainLaw (channelProcess law) (fun c => c.reserve)
       (fun _ births _ => formation law births) (fun c _ _ => opened law.rate c.tokens) :=
   fun _ _ _ step => step.2.1
 
@@ -171,9 +171,9 @@ def generationLedger {law : ChannelLaw Kind} (X : Execution law) (a L : Nat) : L
 /-- Every window of every execution is a sustained generation. -/
 theorem generation_sustained {law : ChannelLaw Kind} (X : Execution law) (a L : Nat) :
     (generationLedger X a L).Sustained :=
-  execution_interval_balance (P := channelProcess law) (fun c => c.reserve)
-    (demand := fun _ births _ => formation law births)
-    (credit := fun c _ _ => opened law.rate c.tokens)
+  execution_interval_bound (P := channelProcess law) (fun c => c.reserve)
+    (enacted := fun _ births _ => formation law births)
+    (arrived := fun c _ _ => opened law.rate c.tokens)
     (channel_account_law law) X.states X.ticks X.steps a L
 
 theorem intervalTotal_split (q : Nat → Nat) (a L : Nat) : ∀ L',
