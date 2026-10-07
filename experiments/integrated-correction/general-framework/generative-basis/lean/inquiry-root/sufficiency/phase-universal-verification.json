@@ -1,0 +1,90 @@
+{
+  "checked_at_utc": "2026-10-07T13:36:54.328418+00:00",
+  "modules": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean": "129bcde17d359873ea3189d809fc149fd2004bf440b1b6731c5f14909d61124d"
+  },
+  "checker_sha256": "4e71d0d20186a63ea605e29d176c03b9c4279357a5f0cd5eae9fe19130056a88",
+  "declared": 47,
+  "lint": "passed",
+  "lean": {
+    "status": "passed",
+    "toolchain": "leanprover/lean4:v4.29.1",
+    "version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "modules": [
+      {
+        "module": "GenerativeCore",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "NativePacketProcess",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+        "source_sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "InquirySufficiency",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+        "source_sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "AttainableQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+        "source_sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+        "source_sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketAdmissibility",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+        "source_sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PacketLawDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+        "source_sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhaseCycleDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
+        "source_sha256": "90ffb0bab5a2c8dc29aff88f187ae780f567515635594f131ad1d53d1647b830",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhasePeriodSelection",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean",
+        "source_sha256": "d77c2b5c23147f49447ed79ec5e6075cbc8aff636f1a0479f0cd5c7be1f1fe99",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhasePeriodUniversal",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean",
+        "source_sha256": "129bcde17d359873ea3189d809fc149fd2004bf440b1b6731c5f14909d61124d",
+        "exit_code": 0,
+        "clean": true
+      }
+    ],
+    "audits": 47,
+    "empty_audits": 47,
+    "nonempty": []
+  },
+  "scope": "Reduction lemmas only: sub-belief monotonicity, transfer between paired beliefs, propext-free arithmetic of the advance, and stretches read forward. The unbounded period lower bound itself is not claimed. Lean statements count as verified only when lean.status is passed. No existing module is changed."
+}
