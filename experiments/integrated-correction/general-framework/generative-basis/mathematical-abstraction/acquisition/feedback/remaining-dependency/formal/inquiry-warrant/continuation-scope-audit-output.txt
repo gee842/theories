@@ -3,20 +3,28 @@
 'ContinuationScope.Nonforeclosing' does not depend on any axioms
 'ContinuationScope.Situation.reached' does not depend on any axioms
 'ContinuationScope.Situation.restrict' does not depend on any axioms
-'ContinuationScope.unreached_agree' depends on axioms: [propext, Quot.sound]
-'ContinuationScope.unreached_never_matters' depends on axioms: [propext, Quot.sound]
-'ContinuationScope.nonforeclosing_restrict_iff' depends on axioms: [propext, Quot.sound]
-'ContinuationScope.omitted_scope_admits_needless_foreclosure' depends on axioms: [propext]
-'ContinuationScope.omitted_scope_can_condemn' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.unreached_agree' does not depend on any axioms
+'ContinuationScope.unreached_never_matters' does not depend on any axioms
+'ContinuationScope.nonforeclosing_restrict_iff' does not depend on any axioms
+'ContinuationScope.omitted_scope_admits_needless_foreclosure' does not depend on any axioms
+'ContinuationScope.omitted_scope_can_condemn' does not depend on any axioms
 'ContinuationScope.Situation.securedCount' does not depend on any axioms
-'ContinuationScope.countP_lt_of_improves' depends on axioms: [propext, Quot.sound]
-'ContinuationScope.improves_count' depends on axioms: [propext, Quot.sound]
-'ContinuationScope.exists_max' depends on axioms: [propext, Quot.sound]
-'ContinuationScope.nonforeclosing_exists' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.countP_lt_of_improves' does not depend on any axioms
+'ContinuationScope.improves_count' does not depend on any axioms
+'ContinuationScope.exists_max' does not depend on any axioms
+'ContinuationScope.nonforeclosing_exists' does not depend on any axioms
 'ContinuationScope.competition' does not depend on any axioms
-'ContinuationScope.both_courses_nonforeclosing' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.both_courses_nonforeclosing' does not depend on any axioms
 'ContinuationScope.TreatsCentersAlike' does not depend on any axioms
-'ContinuationScope.symmetric_competition_has_no_structural_choice' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.symmetric_competition_has_no_structural_choice' does not depend on any axioms
 'ContinuationScope.beforeFulfillment' does not depend on any axioms
 'ContinuationScope.afterFulfillment' does not depend on any axioms
-'ContinuationScope.fulfillment_turns_retained_course_foreclosing' depends on axioms: [propext, Quot.sound]
+'ContinuationScope.fulfillment_turns_retained_course_foreclosing' does not depend on any axioms
+'ContinuationScope.mem_cons_cases' does not depend on any axioms
+'ContinuationScope.any_false_mem' does not depend on any axioms
+'ContinuationScope.mem_filter_of' does not depend on any axioms
+'ContinuationScope.of_mem_filter' does not depend on any axioms
+'ContinuationScope.countP_go_acc' does not depend on any axioms
+'ContinuationScope.countP_cons_true' does not depend on any axioms
+'ContinuationScope.countP_cons_false' does not depend on any axioms
+'ContinuationScope.countP_le_of_incl' does not depend on any axioms

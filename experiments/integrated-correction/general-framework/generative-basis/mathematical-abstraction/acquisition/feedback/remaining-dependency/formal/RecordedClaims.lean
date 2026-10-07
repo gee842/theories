@@ -78,18 +78,25 @@ theorem record_rule_alike : TreatsAlike recordRule := by
 theorem record_rule_nonforeclosing (r : Record) (h : r ≠ ⟨false, false⟩) :
     Nonforeclosing r (recordRule r) := by
   rcases r with ⟨a, b⟩
-  cases a <;> cases b <;> simp_all [recordRule, Nonforeclosing, Record.get]
+  cases a <;> cases b
+  · exact absurd rfl h
+  · exact Or.inl rfl
+  · exact Or.inl rfl
+  · exact ⟨rfl, rfl⟩
 
 /-- At the symmetric open record every rule that treats the centers alike
 withholds, and withholding there forecloses both open claims. -/
 theorem symmetric_open_forces_withholding (rule : Rule) (alike : TreatsAlike rule) :
     rule ⟨false, false⟩ = none ∧ ¬ Nonforeclosing ⟨false, false⟩ none := by
-  refine ⟨?_, by simp [Nonforeclosing]⟩
-  have h := alike ⟨false, false⟩
-  simp only [Record.swap] at h
+  refine ⟨?_, fun hn => Bool.noConfusion hn.1⟩
+  have h : rule ⟨false, false⟩ = (rule ⟨false, false⟩).map (!·) := alike ⟨false, false⟩
   cases hr : rule ⟨false, false⟩ with
   | none => rfl
-  | some c => rw [hr] at h; cases c <;> simp at h
+  | some c =>
+    rw [hr] at h
+    cases c
+    · exact Bool.noConfusion (Option.some.inj h)
+    · exact Bool.noConfusion (Option.some.inj h)
 
 /-- Every other record admits a choice that treats the centers alike and
 forecloses nothing needlessly. -/
@@ -113,18 +120,30 @@ theorem record_rule_unique (rule : Rule) (alike : TreatsAlike rule)
     rw [hs] at h
     cases hr : rule r with
     | none => rfl
-    | some c => rw [hr] at h; cases c <;> simp at h
+    | some c =>
+      rw [hr] at h
+      cases c
+      · exact Bool.noConfusion (Option.some.inj h)
+      · exact Bool.noConfusion (Option.some.inj h)
   intro ⟨a, b⟩
   cases a <;> cases b
   · exact fixed _ rfl
-  · have h := nf ⟨false, true⟩ (by decide)
+  · have h := nf ⟨false, true⟩ (fun e => Bool.noConfusion (Record.mk.inj e).2)
     cases hr : rule ⟨false, true⟩ with
-    | none => rw [hr] at h; simp [Nonforeclosing] at h
-    | some c => rw [hr] at h; cases c <;> simp_all [Nonforeclosing, Record.get, recordRule]
-  · have h := nf ⟨true, false⟩ (by decide)
+    | none => rw [hr] at h; exact Bool.noConfusion h.1
+    | some c =>
+      rw [hr] at h
+      cases c
+      · rfl
+      · exact h.elim (fun e => Bool.noConfusion e) (fun e => Bool.noConfusion e.1)
+  · have h := nf ⟨true, false⟩ (fun e => Bool.noConfusion (Record.mk.inj e).1)
     cases hr : rule ⟨true, false⟩ with
-    | none => rw [hr] at h; simp [Nonforeclosing] at h
-    | some c => rw [hr] at h; cases c <;> simp_all [Nonforeclosing, Record.get, recordRule]
+    | none => rw [hr] at h; exact Bool.noConfusion h.2
+    | some c =>
+      rw [hr] at h
+      cases c
+      · exact h.elim (fun e => Bool.noConfusion e) (fun e => Bool.noConfusion e.2)
+      · rfl
   · exact fixed _ rfl
 
 /-- Delivering to a center records its claim as fulfilled. -/
