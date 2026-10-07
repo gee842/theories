@@ -22,6 +22,15 @@
 
 **一元地看（推测）。** 这个反例本身用了一个二分：先给“载体”（状态集合），再在外面挑“规律”。按一元、关系的读法，状态不是先于关系的东西，状态就是由关系（哪些转换发生）区分出来的。那么问题应改成：在同一过程里，哪些转换关系能自我延续。这与第2项现在的做法同构（见下）。可能的定理形式：一个关系系统中，能持续生成自身后续转换的那部分，就是“选定的动力学”。这还没有做。
 
+**已证（2026年10月6日，按 Ren“你不确定就先证一下试试”）。** [RelationalDynamics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalDynamics.lean) 把“状态由关系区分”写成双模拟（bisimulation）：两个位置算同一个，当且仅当它们能发生的转换一一对应、并且对应之后仍然对应。这是定义，不是公理。13 条审计全部为空，连同 `GenerativeCore`、`DynamicUnderdetermination` 整个闭包都不用任何公理（[检查器](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_relational.py)，[回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-dynamics-verification.json)）。
+
+- `continuing_single_event_is_one_recurrence`：只有一种事件、且每处都能继续的过程，不论载体是什么，关系上都是同一个“单一复现”（一个点、一个自环）。
+- `static_toggle_one_dynamics`、`static_toggle_same_histories`：`static` 和 `toggle` 关系上是同一个动力学，有完全相同的历史。
+- `states_relationally_identical`、`unchanged_reads_carrier_identity`：`Bool` 的两个状态关系上不可区分；“状态不变”这个区别读的是载体上的相等，不是任何关系。
+- `idle_differs_from_recurrence`、`toggle_continues`、`idle_cannot_continue`：剩下唯一的区别是有活动与无活动：`toggle` 永远能继续，`idle` 一步也不能。
+
+**结论与范围。** 原反例里 `static` 与 `toggle` 的不确定，是因为先给了载体身份再挑规律；按关系的读法它消失了。剩下的是“继续还是不继续”，而这个区别本身就是关系上的区别。说生生之理选定了“继续”，是解释，不是定理。范围只到一种事件：有两种以上事件时，关系上不同的动力学仍然很多（例如只发生 a，与 a、b 交替），它们由什么选定，仍未解决；下一步要证的是：在同一过程里，哪些关系类能维持自身的后续转换。
+
 ## 2. 评价方向
 
 **模块：** [EthicalOrientation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean)。
