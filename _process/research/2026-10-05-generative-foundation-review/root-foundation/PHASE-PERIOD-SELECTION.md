@@ -1,5 +1,7 @@
 # Which period the native activity draws least to use
 
+**Latest continuation:** [the arbitrary-period proof](PERIOD-GENERAL-PROOF.md) completes the general bound and conditional draw comparison in Lean, with no upper period cutoff. The bounded results and preserved counterexamples below remain valid at their stated scopes; their former open-proof status is historical.
+
 **7 October continuation:** the [reset-free acquired-contact study](PHASE-RECOVERED-CONTACT.md) closes this note's phase-recovery → contact-inquiry → formation join, with a trace of the same extended process. The [merged review](MERGED-OBLIGATIONS-INTEGRATION.md#unbounded-period-selection-remains-a-real-obligation) records a new [period-independent argument](PERIOD-LOWER-BOUND-ARGUMENT.md), separately checked policy/pruning components, and the remaining original-game-to-mask Lean correspondence. The composed arbitrary-period theorem remains open under the current proof standard; the added periods 9–14 search is finite evidence, not that proof.
 
 7 October 2026. AI-assisted continuation of the [phase-cycle derivation](PHASE-CYCLE-DERIVATION.md). That study left two bridges open: the selection of the least admissible period, and the join with contact formation. This note takes up both. It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): the period is examined as part of what one organized activity must draw on to keep going. It is not scored against an outside objective.

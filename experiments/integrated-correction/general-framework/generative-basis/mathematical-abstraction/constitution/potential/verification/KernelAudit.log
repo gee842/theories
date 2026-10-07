@@ -1,0 +1,45 @@
+'PotentialTruth.Frame' does not depend on any axioms
+'PotentialTruth.FutureCoverage' does not depend on any axioms
+'PotentialTruth.extend' depends on axioms: [propext]
+'PotentialTruth.Available' does not depend on any axioms
+'PotentialTruth.available_future' does not depend on any axioms
+'PotentialTruth.available_extend' depends on axioms: [propext]
+'PotentialTruth.Formula' does not depend on any axioms
+'PotentialTruth.Interpretation' does not depend on any axioms
+'PotentialTruth.sat' depends on axioms: [propext]
+'PotentialTruth.potentialSat' depends on axioms: [propext]
+'PotentialTruth.potential_iff_global' depends on axioms: [propext]
+'PotentialTruth.emptyAssignment' does not depend on any axioms
+'PotentialTruth.sentence_agreement' depends on axioms: [propext]
+'PotentialTruth.future_invariance' depends on axioms: [propext]
+'PotentialTruth.prefixFrame' does not depend on any axioms
+'PotentialTruth.prefix_coverage' depends on axioms: [propext]
+'PotentialTruth.prefix_domain_finite' depends on axioms: [propext, Quot.sound]
+'PotentialTruth.prefix_no_full_world' does not depend on any axioms
+'PotentialTruth.OrderRelation' does not depend on any axioms
+'PotentialTruth.natOrder' depends on axioms: [propext]
+'PotentialTruth.unboundedSentence' depends on axioms: [propext]
+'PotentialTruth.unbounded_global' depends on axioms: [propext]
+'PotentialTruth.unbounded_potential' depends on axioms: [propext]
+'PotentialTruth.currentSat' depends on axioms: [propext]
+'PotentialTruth.unbounded_current_false' depends on axioms: [propext, Quot.sound]
+'PotentialTruth.unbounded_current_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoverageBoundary.FutureExists' does not depend on any axioms
+'CoverageBoundary.future_exists_agreement' does not depend on any axioms
+'CoverageBoundary.coverage_iff_all_unary_existentials' does not depend on any axioms
+'CoverageBoundary.GlobalCoverage' does not depend on any axioms
+'CoverageBoundary.JointExtensions' does not depend on any axioms
+'CoverageBoundary.coverage_of_joint_extensions' does not depend on any axioms
+'CoverageBoundary.Fork' does not depend on any axioms
+'CoverageBoundary.forkFuture' depends on axioms: [propext]
+'CoverageBoundary.forkDomain' does not depend on any axioms
+'CoverageBoundary.forkFrame' depends on axioms: [propext]
+'CoverageBoundary.fork_global_coverage' depends on axioms: [propext]
+'CoverageBoundary.fork_every_value_from_start' depends on axioms: [propext]
+'CoverageBoundary.fork_left_misses_true' depends on axioms: [propext]
+'CoverageBoundary.fork_not_future_coverage' depends on axioms: [propext]
+'CoverageBoundary.fork_not_joint_extensions' depends on axioms: [propext]
+'CoverageBoundary.emptyInterpretation' does not depend on any axioms
+'CoverageBoundary.anotherValue' depends on axioms: [propext]
+'CoverageBoundary.another_global_true' depends on axioms: [propext]
+'CoverageBoundary.another_potential_false_at_start' depends on axioms: [propext]

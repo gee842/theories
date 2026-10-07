@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-07",
+  "purpose": "Preserve the exact working-tree README before the user-requested results-first reorganization. Relative links in the snapshot retain the original repository-root base.",
+  "original": "README.md",
+  "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README-BEFORE-RESULTS-CATALOGUE.md",
+  "sha256": "105f8f59db7ea0490aa5c951a94806e25ee3ab1f89af88d07946a8631d85c0dd",
+  "concurrent_update_preserved": {
+    "original": "README.md",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README-BEFORE-RESULTS-CATALOGUE-LATEST.md",
+    "sha256": "abea5cee2c0603d4c120c2002f88844111bebcbed407e7a8e3df606a300c026e",
+    "change": "Added the approved generative-premise route, integrated into the new homepage."
+  }
+}

@@ -1,0 +1,27 @@
+import TrajectoryFidelity
+
+#print axioms Perspectival.represented_is_saturated
+#print axioms Perspectival.saturated_is_represented
+#print axioms Perspectival.representation_exists_iff
+#print axioms Perspectival.step_congruence_preserves_futures
+#print axioms Perspectival.step_congruence_iff_futures
+#print axioms Perspectival.future_representation_exists_iff
+#print axioms Perspectival.current_and_step_preserve_future_comparison
+#print axioms Perspectival.current_and_step_give_future_representation
+#print axioms Perspectival.omitted_future_obstructs_representation
+#print axioms Perspectival.action_congruence_preserves_words
+#print axioms Perspectival.action_congruence_iff_words
+#print axioms Perspectival.current_and_action_preserve_word_comparisons
+#print axioms Perspectival.word_representation_exists_iff
+#print axioms Perspectival.current_and_action_give_word_representation
+#print axioms Perspectival.current_capacity_is_represented
+#print axioms Perspectival.initial_views_agree
+#print axioms Perspectival.current_view_not_step_congruent
+#print axioms Perspectival.current_fidelity_does_not_give_future_fidelity
+#print axioms Perspectival.three_cycle_count_histories_agree
+#print axioms Perspectival.third_cycle_has_different_continuation_conditions
+#print axioms Perspectival.fourth_cycle_diverges_despite_matching_routes
+#print axioms Perspectival.one_cycle_exposes_capacity_before_count_diverges
+#print axioms Perspectival.route_view_step_congruent
+#print axioms Perspectival.route_view_represents_capacity
+#print axioms Perspectival.route_view_preserves_all_future_capacity_comparisons

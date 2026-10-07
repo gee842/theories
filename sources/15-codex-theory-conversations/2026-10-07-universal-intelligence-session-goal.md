@@ -14,6 +14,12 @@ Ren first quoted the assistant's preceding statement that acting, undergoing, kn
 
 ## Operational interpretation — AI-authored
 
+The active thread goal subsequently makes the formal deliverable explicit:
+
+> 本 session 的目标是证明 universal meta-ethics of all intelligence，请包括形式化证明，使用lean
+
+This is the user-provided goal text. It preserves the full universal objective while requiring checked formal proofs; it does not authorize presenting assumed ethical bridges as derived conclusions.
+
 The governing aim of this session is **to prove universal meta-ethics of all intelligence**. Local generative results, bounded ethical applications and preservation of an installed objective cannot substitute for that aim. Interconnectedness is a requirement on the account's adequacy: intelligences and their boundaries, capacities, effects and evaluative practices must be explained within generative relationships, not treated as fundamentally separate starting points.
 
 We implement “遵循这个理论” as following this whole, relational explanatory direction and testing the theory's substantive universal claim. This does not record Ren as having supplied a completed proof, nor infer that acknowledging interconnectedness alone establishes every current formulation's exclusive truth. No assumption that every pair of beings directly interacts is added.

@@ -1,0 +1,35 @@
+'RegenerativeDiversity.Circuit' does not depend on any axioms
+'RegenerativeDiversity.depth' does not depend on any axioms
+'RegenerativeDiversity.evaluate' does not depend on any axioms
+'RegenerativeDiversity.prefixCircuit' does not depend on any axioms
+'RegenerativeDiversity.Tap' does not depend on any axioms
+'RegenerativeDiversity.prefix_depth' depends on axioms: [propext]
+'RegenerativeDiversity.prefix_evaluation' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.cutInput' does not depend on any axioms
+'RegenerativeDiversity.prefix_distinguishable' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.retained_tap' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.State' does not depend on any axioms
+'RegenerativeDiversity.Event' does not depend on any axioms
+'RegenerativeDiversity.intakeState' does not depend on any axioms
+'RegenerativeDiversity.assemblyState' does not depend on any axioms
+'RegenerativeDiversity.duplicateState' does not depend on any axioms
+'RegenerativeDiversity.reconstructionState' does not depend on any axioms
+'RegenerativeDiversity.Step' does not depend on any axioms
+'RegenerativeDiversity.process' does not depend on any axioms
+'RegenerativeDiversity.Balanced' does not depend on any axioms
+'RegenerativeDiversity.step_balance' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.trace_balance' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.growthState' does not depend on any axioms
+'RegenerativeDiversity.growthCycle' does not depend on any axioms
+'RegenerativeDiversity.growthHistory' does not depend on any axioms
+'RegenerativeDiversity.growth_cycle' depends on axioms: [propext]
+'RegenerativeDiversity.growth_trace' depends on axioms: [propext]
+'RegenerativeDiversity.growing_repertoire' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.OneShotBound' does not depend on any axioms
+'RegenerativeDiversity.one_shot_step' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.one_shot_trace' depends on axioms: [propext, Quot.sound]
+'RegenerativeDiversity.copyState' does not depend on any axioms
+'RegenerativeDiversity.copyCycle' does not depend on any axioms
+'RegenerativeDiversity.copyHistory' does not depend on any axioms
+'RegenerativeDiversity.copy_cycle' depends on axioms: [propext]
+'RegenerativeDiversity.copying_without_diversification' depends on axioms: [propext]

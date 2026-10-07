@@ -1,0 +1,66 @@
+'ReconfigurableRoutes.dyadAC' does not depend on any axioms
+'ReconfigurableRoutes.zForm' does not depend on any axioms
+'ReconfigurableRoutes.z_common_address' depends on axioms: [propext]
+'ReconfigurableRoutes.z_distinct' does not depend on any axioms
+'ReconfigurableRoutes.Event' does not depend on any axioms
+'ReconfigurableRoutes.advance' does not depend on any axioms
+'ReconfigurableRoutes.Enabled' depends on axioms: [propext]
+'ReconfigurableRoutes.enabledDecidable' depends on axioms: [propext]
+'ReconfigurableRoutes.Step' depends on axioms: [propext]
+'ReconfigurableRoutes.process' depends on axioms: [propext]
+'ReconfigurableRoutes.oldEvents' does not depend on any axioms
+'ReconfigurableRoutes.events' does not depend on any axioms
+'ReconfigurableRoutes.children' depends on axioms: [propext]
+'ReconfigurableRoutes.finite_branching' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.old_step' depends on axioms: [propext]
+'ReconfigurableRoutes.old_trace' depends on axioms: [propext]
+'ReconfigurableRoutes.Synchronized' depends on axioms: [propext]
+'ReconfigurableRoutes.bypassProcess' depends on axioms: [propext]
+'ReconfigurableRoutes.retainingProcess' depends on axioms: [propext]
+'ReconfigurableRoutes.step_accounts' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.trace_accounts' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.release_preserves_products_and_history' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.bypass_step_progress' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.bypass_trace_progress' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.forget_bypass' depends on axioms: [propext]
+'ReconfigurableRoutes.old_bypass_trace' depends on axioms: [propext]
+'ReconfigurableRoutes.bypass_output_bound' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.ThreePartProducts' does not depend on any axioms
+'ReconfigurableRoutes.step_three_part_products' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.trace_three_part_products' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.trace_product_material_bound' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.retaining_starved_step' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.retaining_starved_trace' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.unfed_step_spends' depends on axioms: [propext]
+'ReconfigurableRoutes.zero_work_trace_constant' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.small_fresh_step_no_product' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.small_one_work_no_product' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.coupled' does not depend on any axioms
+'ReconfigurableRoutes.coupled_prefix' depends on axioms: [propext]
+'ReconfigurableRoutes.coupled_step' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.coupled_list' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.zPending' does not depend on any axioms
+'ReconfigurableRoutes.zResult' does not depend on any axioms
+'ReconfigurableRoutes.manual_z' depends on axioms: [propext]
+'ReconfigurableRoutes.reclaim_then_z' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.reclaim_then_existing' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.reconfigured_alternatives_match_support' depends on axioms: [propext]
+'ReconfigurableRoutes.formed_then_reconfigured_history' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.final_reconfigured_costs' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.repeated_use_strict_threshold' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.retained_material_cannot_complete' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.allThree' does not depend on any axioms
+'ReconfigurableRoutes.two_uses_then_reclaim' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.two_use_ordinary_tie' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.direct_z_from_small_source' depends on axioms: [propext]
+'ReconfigurableRoutes.prematurelyCoupled' does not depend on any axioms
+'ReconfigurableRoutes.premature_coupling_history' depends on axioms: [propext]
+'ReconfigurableRoutes.premature_coupling_loses_completion' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.premature_release_exhausts_work' depends on axioms: [propext]
+'ReconfigurableRoutes.commonChoice' does not depend on any axioms
+'ReconfigurableRoutes.common_choice_actual_history' depends on axioms: [propext]
+'ReconfigurableRoutes.common_can_reuse_coupling' depends on axioms: [propext]
+'ReconfigurableRoutes.common_can_form_z_without_release' depends on axioms: [propext]
+'ReconfigurableRoutes.common_can_release_then_z' depends on axioms: [propext]
+'ReconfigurableRoutes.common_cannot_add_two_completions' depends on axioms: [propext, Quot.sound]
+'ReconfigurableRoutes.ordinary_z_keeps_more_work_and_bar' does not depend on any axioms

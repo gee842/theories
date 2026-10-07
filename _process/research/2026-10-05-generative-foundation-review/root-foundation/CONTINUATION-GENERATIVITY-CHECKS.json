@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Bangkok",
+  "scope": "Root integration and independent fresh Lean rerun; no empirical replication or universal ethical proof.",
+  "root_lean_rerun_at_utc": "2026-10-07T12:55:32.041287+00:00",
+  "theorems": 17,
+  "declaration_audits": 22,
+  "all_axiom_dependencies_empty": true,
+  "formal_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/continuation-renewal-verification/verification.json",
+  "source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY.md": "bd462dd885c490bc3eabe3d5a57030e02569d2d858b77c0b27a4de7732f051ba",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY-REVIEW.md": "7bf2791c738ea24cb313bd948c3c2feb37a3d8759d1f69bbfa8007d2822e80aa",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY-SOURCES.md": "a804e235617295db324e58deef163eba5ea26bbf4516856f1057a5b77e268562",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md": "044dfbe5474e7541e216cc03664985b5f8d0a4c00bb204dd7f234ae51275ec4f",
+    "sources/15-codex-theory-conversations/2026-10-07-continuation-depends-on-generativity.md": "4815bb9988ae55e3da78b53c54d59f4b9dd427e3ab08bf095c484dc6d48dbe8d"
+  },
+  "review_corrections": [
+    "Shared formation is not sufficient to infer endorsement-independent warrant.",
+    "General recurrence does not by itself prove a supplied event is restorative.",
+    "Configuration-growth claims concern represented configurations and fixed configuration scores."
+  ],
+  "preservation": "New exact-message transcription; no external publication bytes imported and no earlier source originals edited."
+}

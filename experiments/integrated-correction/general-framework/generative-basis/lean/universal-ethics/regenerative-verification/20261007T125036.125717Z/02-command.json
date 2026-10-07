@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/ren/.elan/bin/lean",
+    "+leanprover/lean4:v4.29.1",
+    "-o",
+    "GenerativeCore.olean",
+    "GenerativeCore.lean"
+  ],
+  "returncode": 0,
+  "output": "'Generative.trace_append_iff' does not depend on any axioms\n'Generative.trace_singleton_iff' does not depend on any axioms\n'Generative.enabled_iff_singleton_trace' does not depend on any axioms\n'Generative.enabled_difference_implies_state_difference' does not depend on any axioms\n'Generative.feasible_append_iff' does not depend on any axioms\n'Generative.feasible_prefix' does not depend on any axioms\n'Generative.enabled_product_iff' does not depend on any axioms\n'Generative.trace_product_iff' does not depend on any axioms\n'Generative.feasible_product_iff' does not depend on any axioms\n'Generative.trace_map' does not depend on any axioms\n'Generative.trace_lift' does not depend on any axioms\n'Generative.projected_trace_iff' does not depend on any axioms\n'Generative.projection_exact_iff' does not depend on any axioms\n'Generative.local_exact_iff_trace_exact' does not depend on any axioms\n'Generative.enabled_projection_iff' does not depend on any axioms\n'Generative.feasible_projection_iff' does not depend on any axioms\n'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms\n'Generative.trace_faithful_iff' does not depend on any axioms\n"
+}

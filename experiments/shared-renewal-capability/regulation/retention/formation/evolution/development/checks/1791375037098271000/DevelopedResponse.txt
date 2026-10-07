@@ -1,0 +1,363 @@
+DevelopedResponse.lean:78:0: error: code generator does not support recursor `List.rec` yet, consider using 'match ... with' and/or structural recursion
+DevelopedResponse.lean:111:0: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'instDecidableNativeRunnable', which is 'noncomputable'
+DevelopedResponse.lean:124:87: error: unexpected identifier; expected '}'
+DevelopedResponse.lean:148:0: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'instDecidableEnabled', which is 'noncomputable'
+DevelopedResponse.lean:169:14: error: Tactic `rfl` failed: The left-hand side
+  (advance s Event.assembleRig).core
+is not definitionally equal to the right-hand side
+  coreRun s.core (physicalWord s Event.assembleRig)
+
+case assembleRig
+s : State
+⊢ (advance s Event.assembleRig).core = coreRun s.core (physicalWord s Event.assembleRig)
+DevelopedResponse.lean:169:14: error: Tactic `rfl` failed: The left-hand side
+  (advance s Event.bindRig).core
+is not definitionally equal to the right-hand side
+  coreRun s.core (physicalWord s Event.bindRig)
+
+case bindRig
+s : State
+⊢ (advance s Event.bindRig).core = coreRun s.core (physicalWord s Event.bindRig)
+DevelopedResponse.lean:169:14: error: Tactic `rfl` failed: The left-hand side
+  (advance s Event.handover).core
+is not definitionally equal to the right-hand side
+  coreRun s.core (physicalWord s Event.handover)
+
+case handover
+s : State
+⊢ (advance s Event.handover).core = coreRun s.core (physicalWord s Event.handover)
+DevelopedResponse.lean:169:14: error: Tactic `rfl` failed: The left-hand side
+  (advance s Event.damage).core
+is not definitionally equal to the right-hand side
+  coreRun s.core (physicalWord s Event.damage)
+
+case damage
+s : State
+⊢ (advance s Event.damage).core = coreRun s.core (physicalWord s Event.damage)
+DevelopedResponse.lean:169:14: error: Tactic `rfl` failed: The left-hand side
+  (advance s Event.associateNext).core
+is not definitionally equal to the right-hand side
+  coreRun s.core (physicalWord s Event.associateNext)
+
+case associateNext
+s : State
+⊢ (advance s Event.associateNext).core = coreRun s.core (physicalWord s Event.associateNext)
+DevelopedResponse.lean:169:14: error: Tactic `rfl` failed: The left-hand side
+  (advance s Event.read).core
+is not definitionally equal to the right-hand side
+  coreRun s.core (physicalWord s Event.read)
+
+case read
+s : State
+⊢ (advance s Event.read).core = coreRun s.core (physicalWord s Event.read)
+DevelopedResponse.lean:169:14: error: Tactic `rfl` failed: The left-hand side
+  (advance s Event.act).core
+is not definitionally equal to the right-hand side
+  coreRun s.core (physicalWord s Event.act)
+
+case act
+s : State
+⊢ (advance s Event.act).core = coreRun s.core (physicalWord s Event.act)
+DevelopedResponse.lean:205:23: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `DevelopedResponse.State.mk` has 15 explicit field, but only 1 was provided
+DevelopedResponse.lean:236:28: error: Tactic `decide` failed for proposition
+  Runnable 6 initial timelyPrefix
+because its `Decidable` instance
+  instDecidableRunnable 6 initial timelyPrefix
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts initial).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:236:56: error: Tactic `decide` failed for proposition
+  Runnable 6 initial mistimedPrefix
+because its `Decidable` instance
+  instDecidableRunnable 6 initial mistimedPrefix
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts initial).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:248:28: error: Tactic `decide` failed for proposition
+  Runnable 6 timelyCarrier development
+because its `Decidable` instance
+  instDecidableRunnable 6 timelyCarrier development
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts timelyCarrier).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:248:56: error: Tactic `decide` failed for proposition
+  Runnable 6 mistimedCarrier development
+because its `Decidable` instance
+  instDecidableRunnable 6 mistimedCarrier development
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts mistimedCarrier).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:248:68: error: Tactic `decide` failed for proposition
+  timelyChild.core = mistimedChild.core ∧
+    timelyChild.core.fuel = 9 ∧
+      timelyChild.rigs = 1 ∧
+        mistimedChild.rigs = 1 ∧
+          timelyChild.gate = some false ∧
+            mistimedChild.gate = some true ∧
+              timelyChild.reading = none ∧
+                mistimedChild.reading = none ∧ timelyChild.generation = 1 ∧ mistimedChild.generation = 1
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, `FormedSelection.instDecidableEqState`, `Nat.decEq`, and `FormedSelection.instDecidableEqState.decEq`, reduction got stuck at the `Decidable` instance
+  match h : timelyChild.1.aFree.beq mistimedChild.1.aFree with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+DevelopedResponse.lean:261:28: error: Tactic `decide` failed for proposition
+  Runnable 6 timelyChild assay
+because its `Decidable` instance
+  instDecidableRunnable 6 timelyChild assay
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts timelyChild).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:261:56: error: Tactic `decide` failed for proposition
+  Runnable 6 mistimedChild assay
+because its `Decidable` instance
+  instDecidableRunnable 6 mistimedChild assay
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts mistimedChild).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:261:68: error: Tactic `decide` failed for proposition
+  timelyAssayed.reading = some false ∧
+    mistimedAssayed.reading = some false ∧
+      timelyAssayed.core.fuel = mistimedAssayed.core.fuel ∧
+        timelyAssayed.core.fuel = 7 ∧
+          timelyAssayed.core.intact = true ∧
+            mistimedAssayed.core.intact = false ∧
+              Enabled 6 timelyAssayed Event.capture ∧
+                ¬Enabled 6 mistimedAssayed Event.capture ∧ ¬Enabled 6 mistimedAssayed Event.copy
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd` and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match timelyAssayed.reading with
+  | none =>
+    match some false with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some false with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqBool a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+DevelopedResponse.lean:273:28: error: Tactic `decide` failed for proposition
+  Runnable 6 timelyAssayed redevelopment
+because its `Decidable` instance
+  instDecidableRunnable 6 timelyAssayed redevelopment
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts timelyAssayed).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:273:40: error: Tactic `decide` failed for proposition
+  grandchildAssayed.generation = 2 ∧
+    grandchildAssayed.rigs = 2 ∧
+      grandchildAssayed.gate = some false ∧
+        grandchildAssayed.reading = some false ∧
+          grandchildAssayed.acted = true ∧
+            grandchildAssayed.core.intact = true ∧
+              grandchildAssayed.carriersMade = 2 ∧ grandchildAssayed.core.fuel = 2 ∧ grandchildAssayed.core.source = 0
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : grandchildAssayed.generation.beq 2 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+DevelopedResponse.lean:283:12: error: Tactic `decide` failed for proposition
+  ¬Runnable 6 mistimedAssayed redevelopment
+because its `Decidable` instance
+  instDecidableNot
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableNot`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts mistimedAssayed).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:283:39: error: Tactic `decide` failed for proposition
+  Runnable 6 mistimedAssayed (Event.assistedRepair :: redevelopment)
+because its `Decidable` instance
+  instDecidableRunnable 6 mistimedAssayed (Event.assistedRepair :: redevelopment)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts mistimedAssayed).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:283:51: error: Tactic `decide` failed for proposition
+  rescuedGrandchild.generation = 2 ∧
+    rescuedGrandchild.gate = some false ∧
+      rescuedGrandchild.reading = some false ∧
+        rescuedGrandchild.core.intact = true ∧ rescuedGrandchild.core.fuel = 1 ∧ rescuedGrandchild.core.source = 0
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : rescuedGrandchild.generation.beq 2 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+DevelopedResponse.lean:290:47: error: Tactic `decide` failed for proposition
+  timelyCarrier.paired = some false ∧
+    ¬Enabled 6 timelyCarrier Event.bindRig ∧
+      ¬Enabled 6 timelyCarrier Event.associateNext ∧ Enabled 6 timelyCarrier Event.assembleRig
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableNot`, `Bool.decEq`, `instDecidableEnabled`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match (heldParts timelyCarrier).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:297:87: error: Tactic `decide` failed for proposition
+  grandchildAssayed.core.intact = true ∧
+    grandchildAssayed.gate = some false ∧
+      ¬Enabled 6 grandchildAssayed Event.capture ∧ ¬Enabled 6 grandchildAssayed Event.copy
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match grandchildAssayed.core.intact, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:319:70: error: Tactic `decide` failed for proposition
+  effectiveDamagedResponse timelyChild = true ∧
+    effectiveDamagedResponse mistimedChild = false ∧
+      developedTable.aa = 1 ∧
+        developedTable.ah = 1 ∧
+          developedTable.ha = 0 ∧
+            developedTable.hh = 0 ∧
+              aCount timelyChild.core = 1 ∧
+                aCount mistimedChild.core = 1 ∧ hCount timelyChild.core = 0 ∧ hCount mistimedChild.core = 0
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match effectiveDamagedResponse timelyChild, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:331:2: error: 'change' tactic failed, pattern
+  ConsequenceTransmission.beforeNumerator a h (ConsequenceTransmission.transmittedWeights developedTable) <
+      ConsequenceTransmission.afterNumerator a h (ConsequenceTransmission.transmittedWeights developedTable) ↔
+    1 * a < 1 * h
+is not definitionally equal to target
+  ConsequenceTransmission.beforeNumerator a h (ConsequenceTransmission.transmittedWeights developedTable) <
+      ConsequenceTransmission.afterNumerator a h (ConsequenceTransmission.transmittedWeights developedTable) ↔
+    (developedTable.ah + developedTable.hh) * a < (developedTable.aa + developedTable.ha) * h
+DevelopedResponse.lean:345:0: error: code generator does not support recursor `List.rec` yet, consider using 'match ... with' and/or structural recursion
+DevelopedResponse.lean:358:28: error: Tactic `decide` failed for proposition
+  Runnable 6 initial fullTimely
+because its `Decidable` instance
+  instDecidableRunnable 6 initial fullTimely
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts initial).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:358:40: error: Tactic `decide` failed for proposition
+  MaterialAccounted 6 initial fullTimely ∧
+    energy initial.core = 22 ∧ historyCost initial fullTimely = 20 ∧ energy grandchildAssayed.core = 2
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableMaterialAccounted`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (population initial.core + heldParts initial).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:364:28: error: Tactic `decide` failed for proposition
+  Runnable 6 initial fullRescued
+because its `Decidable` instance
+  instDecidableRunnable 6 initial fullRescued
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableEnabled`, `instDecidableRunnable`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (heldParts initial).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+DevelopedResponse.lean:364:40: error: Tactic `decide` failed for proposition
+  MaterialAccounted 6 initial fullRescued ∧ historyCost initial fullRescued = 21 ∧ energy rescuedGrandchild.core = 1
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `instDecidableMaterialAccounted`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (population initial.core + heldParts initial).ble 6, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+'DevelopedResponse.runnable_trace' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.native_runnable_trace' depends on axioms: [propext]
+'DevelopedResponse.command_uses_gate_and_reading' depends on axioms: [propext]
+'DevelopedResponse.same_carrier_different_developmental_record' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.equal_cost_development_reconstructs_different_gates' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.same_assay_enacts_developed_difference' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.consequence_reformation_reaches_operating_grandchild' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.supplied_assistance_can_rescue_development' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.carrier_is_not_already_a_developed_response' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.operational_response_without_next_capture' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.developed_table_comes_from_operating_assays' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.transmission_formula_applies_to_developed_table' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.advance_core' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.enabled_energy_balance' depends on axioms: [propext, sorryAx, Quot.sound]
+'DevelopedResponse.runnable_energy_balance' depends on axioms: [propext, sorryAx, Quot.sound]
+'DevelopedResponse.whole_timely_history_with_material_and_energy' depends on axioms: [propext, sorryAx]
+'DevelopedResponse.whole_rescued_history_with_material_and_energy' depends on axioms: [propext, sorryAx]

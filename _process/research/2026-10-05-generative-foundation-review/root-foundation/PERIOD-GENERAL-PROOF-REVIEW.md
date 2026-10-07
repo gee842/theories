@@ -1,0 +1,43 @@
+# Review of the composed arbitrary-period inquiry proof
+
+7 October 2026. AI-authored semantic and scope review of the [composed period proof](PERIOD-GENERAL-PROOF.md), continuing the [earlier reduction review](PERIOD-REDUCTION-REVIEW.md). The reviewer implemented `PeriodPrunedCover`, but did not author the three composition modules reviewed here. This is an independent review of their normalization, policy correspondence and final composition; it is not an independent reimplementation of the pruning certificates.
+
+**Assessment:** no scope or correspondence defect was found in the reviewed statements and their connections. The composed argument retains one policy-covering mask across all phases, preserves the fixed reading inversion, handles early stopping and leading advances, and excludes the empty-carrier exception explicitly. The conclusion remains conditional on the original inquiry game. It supplies a constraint on recognition within that process, not normative warrant or a premise-free derivation of the process law.
+
+This review inspected source and the definitions it uses; it performed no additional numerical or compiler run. Compiler validation, dependency audits and the fresh import-closure receipt are recorded separately in the [main proof note](PERIOD-GENERAL-PROOF.md). This document does not substitute a review judgment for checked proofs.
+
+## Exact reviewed sources
+
+The following SHA256 values identify the bytes reviewed. The original game and policy semantics, cyclic-window encoding and periodicity interface were also read as supporting context.
+
+| Source | SHA256 |
+|---|---|
+| [PeriodFirstRead.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodFirstRead.lean) | `2322961f1033f8e2f204e16734abbe574e577374f2ee32a94197d0c8079c8d73` |
+| [PeriodPolicyCover.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodPolicyCover.lean) | `aa501c4ce5ca28b678a212534d5876f54eead6796d180094a02502ddbe008723` |
+| [PeriodGeneralProof.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodGeneralProof.lean) | `6ef0830cf8b9e30822c0bb3c6ed93f3b3efe476b9dbcc039633b4aa97c861222` |
+
+## Correspondence findings
+
+1. **A common mask is selected before the phase varies.** `policy_covered` places the existential family index before its universal word quantifier. Its induction chooses one child index for advance, or independently chosen low and high child indices for read, before considering a word. `winning_residual_covered` carries that same index across every bounded phase. `residual_covers` consequently provides two global indices, one per requested target. `seven_has_one_triple` returns a disjunction of whole-cycle coverage statements. It does not let different phases independently select masks or orientations.
+
+2. **Zero-branch normalization preserves the actual observation rule.** At each phase, the original full belief includes the inversion equal to that phase's actual output. That candidate genuinely produces first observation zero. Choosing the zero child therefore yields one residual policy that works at every phase with its corresponding initial inversion. Subsequent advances retain that inversion. The residual reading is accordingly `bit(position) != bit(0)`, exactly as used by `localWins` and proved by `local_is_original`. There is no assumption that the original policy's zero and one branches are symmetric. The two requested target families are independently checked; their use does not depend on an unproved complement identity.
+
+3. **Leading advances are removed only under full uncertainty.** `afterAdvance` uses a bounded predecessor for every bounded phase and leaves inversion unchanged. This transfers a globally winning advance-prefixed policy to its common suffix. The induction repeats this only while handling the initial policy prefix under `Full`. It does not delete an advance after a reading has restricted the possible histories, nor choose a different suffix for each phase. Positive carrier size supplies the required predecessor relation.
+
+4. **Early stopping and unused allowance remain distinct from commands.** `Policy.stop` exists at every budget. `full_reaches_value` obtains an actual bounded endpoint bearing the requested value, so success for the other requested value provides the opposite-output witness needed by `normalize_first_read`. That witness rules out a globally successful stop before the first read. The residual may nevertheless stop early on later branches. `pad` increases the available budget while preserving `wins`; it does not append an executed command. The lower bound is therefore a worst-case guarantee, not a claim that every realized branch executes seven commands.
+
+5. **The local window is wide enough for every admitted policy.** The invariant `budget + position < 7` is carried through both constructors. Advance increases position while decreasing the available budget; read decreases only the budget. Thus every output coordinate consulted by a residual with at most six commands occurs among the seven encoded actual outputs. `local_is_original` uses the actual modular walk, including repeated wraparound on short carriers. Coverage only requires inclusion of a policy's successful words in one family member; it does not assume that every retained member is realizable or that every seven-bit word occurs on the particular cycle.
+
+6. **Nonemptiness is explicit, and the list representation is broader than matching lengths.** An empty initial belief makes universal success tests vacuous, so `0 < period` is essential to the final statements. It provides the phase-zero candidate used for reachable-output and empty-mask contradictions. No equality between pattern length and carrier size is required for these inquiry theorems: the represented outputs are `bitAt pattern phase` on bounded phases, using its existing false default for missing entries; entries beyond the carrier are irrelevant. This is a precise extension of the representation, not a claim that malformed representations have additional physical meaning. The cost comparison's matching-length premise is separate.
+
+7. **The final direction is necessary, not an unproved equivalence.** `no_six_commands` excludes a both-value guarantee within six commands; budget monotonicity extends this to every smaller budget. `seven_has_one_triple` and `seven_repeatsEveryThree` give necessary consequences of a seven-command guarantee. The latter includes carrier divisibility by three and three-step output equality. It does not assert that the declared carrier has size exactly three: larger carriers may repeat the same triple. These three reviewed modules do not establish an arbitrary-carrier converse merely by naming the predicate `repeatsEveryThree`.
+
+## Scope that must remain explicit in delivery
+
+The lower bound concerns **reset-free deterministic adaptive policies using advance and read**, with both phase and a **fixed** reading inversion initially unknown. The supplied read law is the one represented by the original game. Other native commands, including reset or probe, are outside this command vocabulary; the theorem must not be described as a lower bound over every command in `NativePacketProcess`. Changing observation reliability, allowing inversion to change, or supplying initial phase information changes the target game.
+
+Each requested value may have a different policy, and each policy must succeed from every possible start for that request. This is not a seven-command budget for visiting both values sequentially in one continuing execution. It also does not optimize expected command count, a known-phase average, or a randomized performance criterion. The earlier average-cost and single-target counterexamples remain relevant within their recorded scopes.
+
+`PeriodCostSelection` was not independently reviewed here. Its draw schedule, retained-cell representation and strict comparison require their own explicit premises and checked composition, as recorded in the main note.
+
+The distinguished phase, reading, retained inversion and command are related coordinates of the one specified unfolding. The review does not introduce independently existing observer and world domains. Its successful correspondence check establishes adequacy for this conditional recognition question; it does not establish universal ethical necessity, justify the selected performance objective, or discharge the stronger no-assumptions objective.

@@ -1,6 +1,6 @@
 # Latitude under continuing need: integration and goal audit
 
-6 October 2026. AI-authored continuation of the [universal ethical minimum](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md). The exact active objective remains **move toward the establishment of a universal ethical minimum compatible with plural worthwhile lives**. The selected connection is **bounded rescue duty → justified limits where real severe needs, substantial authorship and actual noncompliance coexist**.
+6 October 2026. AI-authored continuation of the [universal ethical minimum](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md). The exact active objective remains **move toward the establishment of a universal ethical minimum compatible with plural worthwhile lives**. The selected connection is **bounded rescue duty → justified limits where real severe needs, substantial self-direction and actual noncompliance coexist**.
 
 ## Previous-turn classification and current evidence
 
@@ -17,7 +17,7 @@ The [argument](LATITUDE-UNDER-NEED-ARGUMENT.md) holds a helper's actual irreplac
 
 These judgments give the candidate permission determinate content. They are not entailed by equal standing, generative differentiation or the fact that projects have value. The positive rationale for the second concerns justification to the person bearing the graver loss. The demanding objection is that many real people can have jointly sufficient claims without any fictional collective sufferer. That challenge remains open, including theories that combine only serious or otherwise relevant claims.
 
-The construction therefore does not establish a general agent-relative prerogative, a universal authorship floor, or moderate demands in every actual society. It supplies a constrained candidate with visible inferential commitments. If one patient's complete loss is as strong or stronger, this particular permission argument ceases to apply. Its failure alone does not prove a duty to sacrifice; that verdict needs its own sufficient grounds.
+The construction therefore does not establish a general agent-relative prerogative, a universal self-direction floor, or moderate demands in every actual society. It supplies a constrained candidate with visible inferential commitments. If one patient's complete loss is as strong or stronger, this particular permission argument ceases to apply. Its failure alone does not prove a duty to sacrifice; that verdict needs its own sufficient grounds.
 
 The [review](LATITUDE-UNDER-NEED-REVIEW.md) evaluates the same people, means and burdens under an individual-priority demanding account and a cumulative demanding account. It preserves the patient's suffering under the proposed permission, and distinguishes a meaningful self-directed caring life from loss of one particular dimension of this helper's life. Nothing defines altruism as inherently unchosen or worthless.
 

@@ -1,0 +1,1173 @@
+{
+  "status": "passed",
+  "utc": "20261007T161603.450304Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "reconfiguration-checks/20261007T161603.450304Z",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "FormationRoutes": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+    "ReconfigurableRoutes": "747929335d04ce9703070af7cfc309bb996a4695f19e96ff5d6dd6392c743141"
+  },
+  "checker_sha256": {
+    "check_reconfiguration.py": "f68070d29c941659c31dc584ad32d74650e1c9175c6795c48f3b3aba7d3f6f1f",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Finite paid release and third-formation implications of supplied assembly/recovery laws; no ethical or empirical proof.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "theorems": 23,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.Process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Enabled"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.Trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_nil_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_cons_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.productProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_mk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.Process": [],
+        "Generative.Enabled": [],
+        "Generative.Trace": [],
+        "Generative.trace_nil_iff": [],
+        "Generative.trace_cons_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.trace_append_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.Feasible": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.productProcess": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_left": [],
+        "Generative.trace_product_right": [],
+        "Generative.trace_product_mk": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "FormationRoutes",
+      "theorems": 35,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "FormationRoutes.Role"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormationRoutes.Tree"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.parts"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormationRoutes.Port"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.inspect"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.dyadAB"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.dyadBC"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.leftForm"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.rightForm"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.common_address_distinguishes"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.forms_distinct"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormationRoutes.Bar"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.barParts"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.Spans"
+        },
+        {
+          "kind": "instance",
+          "name": "FormationRoutes.spansDecidable"
+        },
+        {
+          "kind": "structure",
+          "name": "FormationRoutes.Lot"
+        },
+        {
+          "kind": "structure",
+          "name": "FormationRoutes.State"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.initial"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.stocked"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormationRoutes.Event"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.advance"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.Enabled"
+        },
+        {
+          "kind": "instance",
+          "name": "FormationRoutes.enabledDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.Step"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.process"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.Synchronized"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.bypassProcess"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.children"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.finite_branching"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.sourceRaw"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.sourceWork"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.partialParts"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.productParts"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.material"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.workAccount"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.manualProgress"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.disconnected_step_is_bypass"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.step_accounts"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.trace_accounts"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.bypass_step_progress"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.bypass_trace_progress"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.forget_bypass"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.bypass_output_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.bypass_three_work_at_most_one"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.unfed_step_spends"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.zero_work_no_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.zero_work_trace_constant"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.disconnected_fresh_step_no_product"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.disconnected_one_work_no_product"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.disconnect"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.disconnection_preserves_support"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormationRoutes.Form"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.treeOf"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.syncEvent"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.startEvent"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.finishEvent"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.dyadOf"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.ready"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.pushed"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.pushed_length"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.receive_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.attach_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.formed_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.synchronized_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.synchronized_list"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.formed_joint_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.formed_joint_costs"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.multiple_completions_exceed_bypass"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.both_forms_in_one_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.both_forms_unreachable_by_bypass"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.manualPending"
+        },
+        {
+          "kind": "def",
+          "name": "FormationRoutes.manualResult"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.manual_two_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.either_form_without_coupling"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.matched_connected_can_finish"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.matched_disconnected_cannot_finish"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.repair_uses_last_work"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.connected_underfunded_cannot_finish"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormationRoutes.redundant_for_single_target_with_two_work"
+        }
+      ],
+      "axiom_dependencies": {
+        "FormationRoutes.Role": [],
+        "FormationRoutes.Tree": [],
+        "FormationRoutes.parts": [],
+        "FormationRoutes.Port": [],
+        "FormationRoutes.inspect": [
+          "propext"
+        ],
+        "FormationRoutes.dyadAB": [],
+        "FormationRoutes.dyadBC": [],
+        "FormationRoutes.leftForm": [],
+        "FormationRoutes.rightForm": [],
+        "FormationRoutes.common_address_distinguishes": [
+          "propext"
+        ],
+        "FormationRoutes.forms_distinct": [],
+        "FormationRoutes.Bar": [],
+        "FormationRoutes.barParts": [
+          "propext"
+        ],
+        "FormationRoutes.Spans": [
+          "propext"
+        ],
+        "FormationRoutes.spansDecidable": [
+          "propext"
+        ],
+        "FormationRoutes.Lot": [],
+        "FormationRoutes.State": [],
+        "FormationRoutes.initial": [],
+        "FormationRoutes.stocked": [],
+        "FormationRoutes.Event": [],
+        "FormationRoutes.advance": [],
+        "FormationRoutes.Enabled": [
+          "propext"
+        ],
+        "FormationRoutes.enabledDecidable": [
+          "propext"
+        ],
+        "FormationRoutes.Step": [
+          "propext"
+        ],
+        "FormationRoutes.process": [
+          "propext"
+        ],
+        "FormationRoutes.Synchronized": [],
+        "FormationRoutes.bypassProcess": [
+          "propext"
+        ],
+        "FormationRoutes.children": [
+          "propext"
+        ],
+        "FormationRoutes.finite_branching": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.sourceRaw": [],
+        "FormationRoutes.sourceWork": [],
+        "FormationRoutes.partialParts": [],
+        "FormationRoutes.productParts": [],
+        "FormationRoutes.material": [
+          "propext"
+        ],
+        "FormationRoutes.workAccount": [],
+        "FormationRoutes.manualProgress": [],
+        "FormationRoutes.disconnected_step_is_bypass": [
+          "propext"
+        ],
+        "FormationRoutes.step_accounts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.trace_accounts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.bypass_step_progress": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.bypass_trace_progress": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.forget_bypass": [
+          "propext"
+        ],
+        "FormationRoutes.bypass_output_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.bypass_three_work_at_most_one": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.unfed_step_spends": [
+          "propext"
+        ],
+        "FormationRoutes.zero_work_no_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.zero_work_trace_constant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.disconnected_fresh_step_no_product": [
+          "propext"
+        ],
+        "FormationRoutes.disconnected_one_work_no_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.disconnect": [],
+        "FormationRoutes.disconnection_preserves_support": [
+          "propext"
+        ],
+        "FormationRoutes.Form": [],
+        "FormationRoutes.treeOf": [],
+        "FormationRoutes.syncEvent": [],
+        "FormationRoutes.startEvent": [],
+        "FormationRoutes.finishEvent": [],
+        "FormationRoutes.dyadOf": [],
+        "FormationRoutes.ready": [],
+        "FormationRoutes.pushed": [],
+        "FormationRoutes.pushed_length": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.receive_step": [
+          "propext"
+        ],
+        "FormationRoutes.attach_step": [
+          "propext"
+        ],
+        "FormationRoutes.formed_prefix": [
+          "propext"
+        ],
+        "FormationRoutes.synchronized_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.synchronized_list": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.formed_joint_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.formed_joint_costs": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.multiple_completions_exceed_bypass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.both_forms_in_one_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.both_forms_unreachable_by_bypass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.manualPending": [],
+        "FormationRoutes.manualResult": [],
+        "FormationRoutes.manual_two_steps": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.either_form_without_coupling": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.matched_connected_can_finish": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.matched_disconnected_cannot_finish": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.repair_uses_last_work": [
+          "propext"
+        ],
+        "FormationRoutes.connected_underfunded_cannot_finish": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormationRoutes.redundant_for_single_target_with_two_work": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ReconfigurableRoutes",
+      "theorems": 45,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.dyadAC"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.zForm"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.z_common_address"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.z_distinct"
+        },
+        {
+          "kind": "inductive",
+          "name": "ReconfigurableRoutes.Event"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.advance"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.Enabled"
+        },
+        {
+          "kind": "instance",
+          "name": "ReconfigurableRoutes.enabledDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.Step"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.process"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.oldEvents"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.events"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.children"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.finite_branching"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.old_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.old_trace"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.Synchronized"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.bypassProcess"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.retainingProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.step_accounts"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.trace_accounts"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.release_preserves_products_and_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.bypass_step_progress"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.bypass_trace_progress"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.forget_bypass"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.old_bypass_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.bypass_output_bound"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.ThreePartProducts"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.step_three_part_products"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.trace_three_part_products"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.trace_product_material_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.retaining_starved_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.retaining_starved_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.unfed_step_spends"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.zero_work_trace_constant"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.small_fresh_step_no_product"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.small_one_work_no_product"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.coupled"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.coupled_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.coupled_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.coupled_list"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.zPending"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.zResult"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.manual_z"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.reclaim_then_z"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.reclaim_then_existing"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.reconfigured_alternatives_match_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.formed_then_reconfigured_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.final_reconfigured_costs"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.repeated_use_strict_threshold"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.retained_material_cannot_complete"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.allThree"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.two_uses_then_reclaim"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.two_use_ordinary_tie"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.direct_z_from_small_source"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.prematurelyCoupled"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.premature_coupling_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.premature_coupling_loses_completion"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.premature_release_exhausts_work"
+        },
+        {
+          "kind": "def",
+          "name": "ReconfigurableRoutes.commonChoice"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.common_choice_actual_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.common_can_reuse_coupling"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.common_can_form_z_without_release"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.common_can_release_then_z"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.common_cannot_add_two_completions"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReconfigurableRoutes.ordinary_z_keeps_more_work_and_bar"
+        }
+      ],
+      "axiom_dependencies": {
+        "ReconfigurableRoutes.dyadAC": [],
+        "ReconfigurableRoutes.zForm": [],
+        "ReconfigurableRoutes.z_common_address": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.z_distinct": [],
+        "ReconfigurableRoutes.Event": [],
+        "ReconfigurableRoutes.advance": [],
+        "ReconfigurableRoutes.Enabled": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.enabledDecidable": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.Step": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.process": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.oldEvents": [],
+        "ReconfigurableRoutes.events": [],
+        "ReconfigurableRoutes.children": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.finite_branching": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.old_step": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.old_trace": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.Synchronized": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.bypassProcess": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.retainingProcess": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.step_accounts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.trace_accounts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.release_preserves_products_and_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.bypass_step_progress": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.bypass_trace_progress": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.forget_bypass": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.old_bypass_trace": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.bypass_output_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.ThreePartProducts": [],
+        "ReconfigurableRoutes.step_three_part_products": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.trace_three_part_products": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.trace_product_material_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.retaining_starved_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.retaining_starved_trace": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.unfed_step_spends": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.zero_work_trace_constant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.small_fresh_step_no_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.small_one_work_no_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.coupled": [],
+        "ReconfigurableRoutes.coupled_prefix": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.coupled_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.coupled_list": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.zPending": [],
+        "ReconfigurableRoutes.zResult": [],
+        "ReconfigurableRoutes.manual_z": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.reclaim_then_z": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.reclaim_then_existing": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.reconfigured_alternatives_match_support": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.formed_then_reconfigured_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.final_reconfigured_costs": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.repeated_use_strict_threshold": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.retained_material_cannot_complete": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.allThree": [],
+        "ReconfigurableRoutes.two_uses_then_reclaim": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.two_use_ordinary_tie": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.direct_z_from_small_source": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.prematurelyCoupled": [],
+        "ReconfigurableRoutes.premature_coupling_history": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.premature_coupling_loses_completion": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.premature_release_exhausts_work": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.commonChoice": [],
+        "ReconfigurableRoutes.common_choice_actual_history": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.common_can_reuse_coupling": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.common_can_form_z_without_release": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.common_can_release_then_z": [
+          "propext"
+        ],
+        "ReconfigurableRoutes.common_cannot_add_two_completions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReconfigurableRoutes.ordinary_z_keeps_more_work_and_bar": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "FormationRoutes.lean": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+    "FormationRoutes.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FormationRoutesAxiomAudit.lean": "e30478875943e9a4b419856118d73626b81b7d5e46633b760de576f1a1870422",
+    "FormationRoutesAxiomAudit.log": "1f019279491bfcba01b417568ae58dba54d139d0dacb2c414b2f930c4e11c75c",
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCoreAxiomAudit.lean": "1fa733a28044ead178c5a811051dd0d7bc0f4505ef5c69d360c6bc126eabc027",
+    "GenerativeCoreAxiomAudit.log": "a940c563aa7dafc2204031660bcc59f2780125b6bdb5350b7daac8b1226585f1",
+    "ReconfigurableRoutes.lean": "747929335d04ce9703070af7cfc309bb996a4695f19e96ff5d6dd6392c743141",
+    "ReconfigurableRoutes.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ReconfigurableRoutesAxiomAudit.lean": "d1f902613fc345ec078538a5f413dd1919263930a02edac5b0c97ffade3f28db",
+    "ReconfigurableRoutesAxiomAudit.log": "b0541c1ad8b5252cf4dcf5fa0a39053446099e4e84e856c909e426a41a30f73e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_reconfiguration.py": "f68070d29c941659c31dc584ad32d74650e1c9175c6795c48f3b3aba7d3f6f1f",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

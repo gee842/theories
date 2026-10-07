@@ -1,0 +1,479 @@
+{
+  "checked_at_utc": "2026-10-07T13:08:56.548489+00:00",
+  "status": "passed",
+  "scope": "Final research-note links, anchors and source bindings for regenerative-direction continuation; not a new compiler run, empirical study or universal ethical proof. Shared-index entries are bound as paragraphs to preserve concurrent work.",
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "sha256": "8e485f0314094e45a3e6d787e17f5b1d9803aa58db9cd2207d2889208728ef4e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "sha256": "5c756160c6ab0cb48d622caa1087e7d32db739df67745a1bfff56e54e8b3cfb6"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "sha256": "5d53addaa3857343ab4a9257a94700f400bdf15b35fbe5b27de73dfb79e795e5"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "sha256": "88cb73efd5c4344b82e9b5d297b47a6430e3198519ee0020f8e43df149b1600e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "sha256": "4946e23fad19116eabfd5ed4e2b6733e7736b165d383e817dbef3ce0ef5e170e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "sha256": "a52f53a048b56213279c61d12325ef55db78185a57ad3aa5d316fd699a23588f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md",
+      "sha256": "fbef5e9ed437e91aab7d4c3851fc339742df53d587ec85de1d2905bedb512e5f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+      "sha256": "84968a3affe1b242fb75d9043a3da804c4a5ccb6b82e690148411f4cbf91b68f"
+    }
+  ],
+  "local_links_checked": 66,
+  "local_links": [
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "REGENERATIVE-DIRECTION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "REGENERATIVE-DIRECTION-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#8-shengsheng-the-favorable-significance-of-generative-formation-itself"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md#7-abiotic-regeneration-under-the-new-shengsheng-criterion"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#2-a-common-history-with-genuinely-different-continuations"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "REGENERATIVE-POSSIBILITY-INTERFACE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "UNIVERSAL-WARRANT-SUFFICIENCY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+      "target": "PORT-RENEWAL-LAW-CLOSURE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "target": "REGENERATIVE-DIRECTION-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "target": "REGENERATIVE-DIRECTION-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md#7-abiotic-regeneration-under-the-new-shengsheng-criterion"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#2-a-common-history-with-genuinely-different-continuations"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "target": "REGENERATIVE-DIRECTION-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "target": "REGENERATIVE-DIRECTION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "OPEN-OBLIGATIONS-CONTINUATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "REGENERATIVE-DIVERSITY-MATH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "CONTINUATION-RENEWAL-MATH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "REGENERATIVE-DIRECTION-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "REGENERATIVE-DIRECTION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "REGENERATIVE-DIRECTION-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "DIRECT-PORT-RENEWAL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "REGENERATIVE-POSSIBILITY-INTERFACE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "DIRECT-PORT-RENEWAL-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+      "target": "REGENERATIVE-DIRECTION-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/GenerativePossibility.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "REGENERATIVE-DIRECTION-ARGUMENT.md#2-specify-the-history-without-placing-the-verdict-in-it"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "RENEWAL-CLOSURE-PHASE2B.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "DIRECT-PORT-RENEWAL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "REGENERATIVE-DIRECTION-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_port_direct_renewal.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "PORT-RENEWAL-LAW-CLOSURE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortDirectRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "PHASE-RECOVERED-CONTACT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/GenerativePossibility.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "DIRECT-PORT-RENEWAL-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_port_direct_renewal.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md",
+      "target": "DIRECT-PORT-RENEWAL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortDirectRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md",
+      "target": "REGENERATIVE-DIRECTION-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+      "target": "RENEWAL-CLOSURE-ROADMAP.md#phase-2b--renewability-of-whole-configurations-p-c"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+      "target": "RENEWAL-CLOSURE-PHASE2.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+      "target": "RENEWAL-CLOSURE-ROADMAP.md#11-what-this-serves-the-whole-unfolding"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+      "target": "REGENERATIVE-POSSIBILITY-INTERFACE.md#what-this-clarifies-in-the-earlier-renewal-result"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md"
+    }
+  ],
+  "shared_index_entries": [
+    {
+      "path": "RESEARCH.md",
+      "paragraph": "**Regenerative direction and direct material renewal, 7 October 2026:** [The integrated continuation](_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md) defends actually formed regenerative capacity as a positive contribution under Ren’s criterion, with a rival that accepts abiotic achievement but disputes the significance of unused productive capacity. A direct Lean proof shows actual inquiry and recovery regenerate a backed formation input, retaining finite source and all eight supported stages; initial formation requires nine. A separate checked distinction prevents complete-law reachability from being mistaken for already formed organization. Fresh verification passes 27 modules/647 audits, with 21 new declarations and explicit standard dependencies. **Next ethical inference:** justify the favorable character and practical significance of actual unexercised productive capacity against terminal achievement and whole losses. Neither another organization nor universal ethical warrant is proved.",
+      "paragraph_sha256": "ce5c80d06a16103a54a76642c9448d38f4c5ec45fe1f651cea1bbf48d02db27c"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "paragraph": "**Regenerative direction and direct material renewal, 7 October 2026:** [The new integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md) combines a positive ethical argument about actual regenerative capacity, substantive counterreview and source assessment with a direct proof in the existing port. Inquiry and recovery regenerate a backed formation input while consuming finite source; a distinct actual formation is not inferred from accumulated spares. Lean 4.29.1 checks 21 new declarations in a fresh 27-module closure. The reachability/formed-condition clarification preserves the old renewal theorem. Universal warrant remains open; the next connection concerns the favorable significance of usable but unexercised capacity and its practical relation to finite achievement.",
+      "paragraph_sha256": "c215f7e300f83f2ef17f0fe9112409c49b5d4da39633f011c47f384a5481b544"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "paragraph": "**Actual regeneration → proposed ethical contribution, 7 October 2026:** [The integrated direct continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md) establishes source-consuming regeneration of a material formation condition in the actual port, with all inquiry, recovery and initial-formation costs. It requires no aging-token correspondence; that separate mapping remains relevant only for transferring a specified channel theorem. A checked actual formation distinguishes present organization from complete-law reachability. The affirmative argument develops Ren’s criterion through genuinely usable but unexercised capacity, facing an enacted-formation rival and retaining terminal achievements and whole losses. The supplied operational laws and the ethical identification remain distinct. The next central inference is the favorable character and practical significance of that actual productive relation, not another generic renewal mechanism. Universal warrant is not yet established.",
+      "paragraph_sha256": "7cad2848e3795ac7a2a643a2cae8f5c2886eadcb02615f72f111e0b52f3e6a18"
+    }
+  ],
+  "lean_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-verification.json",
+    "sha256": "c72605a6600f158a3ed053352e74d6026cdc2a05ca60ce5b6399f7578588c7bc",
+    "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "modules": 27,
+    "total_declaration_audits": 647,
+    "new_declaration_audits": 21,
+    "new_empty_audits": 16,
+    "new_nonempty_audits": 5,
+    "new_standard_dependency_union": [
+      "Quot.sound",
+      "propext"
+    ],
+    "source_bindings": [
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/GenerativeCore.lean",
+        "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/NativePacketProcess.lean",
+        "sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/ResourceContinuation.lean",
+        "sha256": "8414185c411458c1098f813d84e091fd91c89d9746c0ecde1e47bbd490e6ccf8"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/Depletion.lean",
+        "sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/NativePortContinuation.lean",
+        "sha256": "155d4239aa948c70318349e5dbd9173fe3b9b86dce07b90c827a782b1008ed82"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/InquirySufficiency.lean",
+        "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/AttainableQuestions.lean",
+        "sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/OnePacketQuestions.lean",
+        "sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/OnePacketAdmissibility.lean",
+        "sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/PacketLawDerivation.lean",
+        "sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/ContactFormation.lean",
+        "sha256": "e94ede1ad6ce5cc98b9947a819dfa99918fa2508bf3da4616c845d73cd0a3032"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/FormationClosure.lean",
+        "sha256": "c4ce285254e7a76f2b0bb3a371e590eee7379b84d072df0f1a402a177236092d"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/AcquiredContact.lean",
+        "sha256": "3ccbebd1b8c135a67346eb578934f41fb97a99ef8368053cfc57d1bbf25c9a5b"
+      },
+      {
+        "source": "experiments/valuation-development/lean/AxiomFree.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/AxiomFree.lean",
+        "sha256": "74ea6f5a0b0d6db63945d54adbc8dc214963843f7c19b407404e760685968671"
+      },
+      {
+        "source": "experiments/valuation-development/lean/ValuationDevelopment.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/ValuationDevelopment.lean",
+        "sha256": "b976c2f213d4b0082f2f7b5482788e62f9397804c32c93310b4de7cb040808e8"
+      },
+      {
+        "source": "experiments/valuation-development/lean/ClosedLoopValuation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/ClosedLoopValuation.lean",
+        "sha256": "a88bf12f0499da2252ae85ca297c887b02b73b3e0dba7bd1e14d072fae92995b"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/PortValuation.lean",
+        "sha256": "d0e52b7ee400f919f8ebd2aba1251aa35581a3475d13cc517934e9ab8b39e529"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ValuationInCore.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/ValuationInCore.lean",
+        "sha256": "f611ad79a969d5d5f7237e2c114cde4778d7f074b7a606c4c8d5acdd8aaefeea"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/RevisingPort.lean",
+        "sha256": "d4560d3958152e8b02e37679ce20a450e4c27682450ee69ce3789313122f40f3"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/WholePortContinuation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/WholePortContinuation.lean",
+        "sha256": "37c00732bba5e341bd439235cfc445d59641a5f7f0621fc91d54c23dfcb7a2ce"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RelationalCut.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/RelationalCut.lean",
+        "sha256": "bb0a5dc53a5af363406f605be28208c97398e81875d9b84f4ea53a5d57a8f7b2"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/RenewalBasics.lean",
+        "sha256": "eab6cd5724280b15dd5dc7df1943978936802189d2dee7f2e51c6f06a587d0b0"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/RenewalAccounting.lean",
+        "sha256": "887f70a476b9e169497e8cf663c469f540bb31cb2d943a5c486a57c6d23f7a1a"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalBoundary.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/PortRenewalBoundary.lean",
+        "sha256": "099c64b04c2db3f0c27fc19697ae3de2f2b61ded502530fabcbb925e25795474"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalLawClosure.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/PortRenewalLawClosure.lean",
+        "sha256": "8e5b8971e4f37a464df5e71494f1da46d18c4598cb1b9965f3b93cf17ffd025d"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortDirectRenewal.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/PortDirectRenewal.lean",
+        "sha256": "653731cdda419f2f931dfde187769ec95de1de3485a9ef8483dba37c397664ac"
+      },
+      {
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/GenerativePossibility.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-runs/20261007T125605.958089Z/sources/GenerativePossibility.lean",
+        "sha256": "33a948ac312a5162a3d952320e8e8a009bb31924950e6cf3e872b196d4c6e6fe"
+      }
+    ],
+    "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_port_direct_renewal.py",
+    "checker_sha256": "82a524da582e0c1d45b65ac67bbefce93404e393f5f624b227a4e59c7c5adddc",
+    "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+  },
+  "whitespace_check": "passed; git diff --check on scoped tracked paths and direct trailing-whitespace scan on all eight notes",
+  "review_scope": "Affirmative/counterreview/source investigation integrated; separate direct-renewal semantic review; independent possibility-module and integration cross-reviews. All AI-authored; no independent external certification."
+}

@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-10-07T13:13:48.559256+00:00",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_temporary_directory": true,
+  "LEAN_PATH": "fresh temporary directory only",
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "RecursiveGenerativeSelection.olean",
+      "RecursiveGenerativeSelection.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "RecursiveGenerativeSelectionAudit.lean"
+    ]
+  ],
+  "audited_declarations": [
+    "RecursiveGenerativeSelection.mul_assoc_eq",
+    "RecursiveGenerativeSelection.add_mul_eq",
+    "RecursiveGenerativeSelection.strict_mul_cancel_right",
+    "RecursiveGenerativeSelection.support",
+    "RecursiveGenerativeSelection.descendants",
+    "RecursiveGenerativeSelection.pooled",
+    "RecursiveGenerativeSelection.cross_compare_iff",
+    "RecursiveGenerativeSelection.more_supporters_produce_more_support",
+    "RecursiveGenerativeSelection.supporter_share_falls_within",
+    "RecursiveGenerativeSelection.descendant_totals_positive",
+    "RecursiveGenerativeSelection.pooled_counts",
+    "RecursiveGenerativeSelection.support_contribution_threshold",
+    "RecursiveGenerativeSelection.global_supporter_share_rises_iff",
+    "RecursiveGenerativeSelection.weak_coupling_witness",
+    "RecursiveGenerativeSelection.strong_coupling_witness"
+  ],
+  "audit_count": 15,
+  "all_axiom_dependencies_empty": true,
+  "source_sha256": {
+    "RecursiveGenerativeSelection.lean": "8dd0c4a32ed06be7f714ab614be0dbd70997a9697352db06cf71d4a0d9949e8f",
+    "RecursiveGenerativeSelectionAudit.lean": "acbd0a5d940a3c87302e5f3f899567254f2c49173b737807a75f63a60d2bcbce",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+  },
+  "checker_sha256": "e6c5373bfbf9682c08bb8c0b7ae04e2e84082b44e52e8019461a82ad51e9c64f",
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "61c08c36e7858894c0b0ad3066c5ba1ef6c1d578a6997eeaead81d1386e59bbc"
+  },
+  "scope": "Formal implications under stated hypotheses; no empirical or normative validation."
+}

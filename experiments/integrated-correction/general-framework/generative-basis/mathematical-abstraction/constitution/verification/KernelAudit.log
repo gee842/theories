@@ -1,0 +1,84 @@
+'RootConstitution.Signature' does not depend on any axioms
+'RootConstitution.Term' does not depend on any axioms
+'RootConstitution.Formula' does not depend on any axioms
+'RootConstitution.Structure' does not depend on any axioms
+'RootConstitution.Term.eval' does not depend on any axioms
+'RootConstitution.cons' depends on axioms: [propext]
+'RootConstitution.Formula.sat' depends on axioms: [propext]
+'RootConstitution.Embedding' does not depend on any axioms
+'RootConstitution.map_cons' depends on axioms: [propext, Quot.sound]
+'RootConstitution.eval_embedding' depends on axioms: [Quot.sound]
+'RootConstitution.Elementary' depends on axioms: [propext]
+'RootConstitution.WitnessAdequate' depends on axioms: [propext]
+'RootConstitution.elementary_witness' depends on axioms: [propext, Quot.sound]
+'RootConstitution.witness_elementary' depends on axioms: [propext, Quot.sound]
+'RootConstitution.elementary_iff_witness' depends on axioms: [propext, Quot.sound]
+'RootConstitution.Formula.all' does not depend on any axioms
+'RootConstitution.all_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootConstitution.WitnessSelectors' depends on axioms: [propext]
+'RootConstitution.conditional_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootConstitution.classicalSelectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootConstitution.Hull' depends on axioms: [propext]
+'RootConstitution.ClosedUnder' depends on axioms: [propext]
+'RootConstitution.hull_closed' depends on axioms: [propext]
+'RootConstitution.hull_least' depends on axioms: [propext]
+'RootConstitution.hull_iff_all_closed' depends on axioms: [propext]
+'RootConstitution.hullStructure' depends on axioms: [propext]
+'RootConstitution.hullEmbedding' depends on axioms: [propext]
+'RootConstitution.hull_witnessAdequate' depends on axioms: [propext]
+'RootConstitution.hull_elementary' depends on axioms: [propext, Quot.sound]
+'RootConstitution.hull_contains_seeds' depends on axioms: [propext]
+'RootConstitution.hull_nonempty' depends on axioms: [propext]
+'RootConstitution.Term.rename' does not depend on any axioms
+'RootConstitution.liftRename' depends on axioms: [propext]
+'RootConstitution.Formula.rename' depends on axioms: [propext]
+'RootConstitution.eval_rename' depends on axioms: [Quot.sound]
+'RootConstitution.cons_liftRename' depends on axioms: [propext, Quot.sound]
+'RootConstitution.sat_rename' depends on axioms: [propext, Quot.sound]
+'RootConstitution.emptyAssignment' does not depend on any axioms
+'RootConstitution.empty_assignment_unique' depends on axioms: [Quot.sound]
+'RootConstitution.Formula.or' does not depend on any axioms
+'RootConstitution.or_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootConstitution.tagged' depends on axioms: [propext]
+'RootConstitution.tagged_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootConstitution.tagged_has_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootConstitution.selector_recovers_sentence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootConstitution.IterationFunction' does not depend on any axioms
+'RootConstitution.iterationLanguage' does not depend on any axioms
+'RootConstitution.natIteration' depends on axioms: [propext]
+'RootConstitution.intIteration' depends on axioms: [propext]
+'RootConstitution.naturalEmbedding' depends on axioms: [propext]
+'RootConstitution.predecessorBody' depends on axioms: [propext]
+'RootConstitution.predecessorSentence' depends on axioms: [propext]
+'RootConstitution.integer_predecessor_truth' depends on axioms: [propext]
+'RootConstitution.natural_predecessor_false' depends on axioms: [propext, Quot.sound]
+'RootConstitution.compositional_embedding_not_elementary' depends on axioms: [propext, Quot.sound]
+'RootConstitution.compositional_embedding_not_witnessAdequate' depends on axioms: [propext, Quot.sound]
+'EqualityGenerativity.Formula' does not depend on any axioms
+'EqualityGenerativity.extend' depends on axioms: [propext]
+'EqualityGenerativity.Holds' depends on axioms: [propext]
+'EqualityGenerativity.SamePattern' does not depend on any axioms
+'EqualityGenerativity.Fresh' does not depend on any axioms
+'EqualityGenerativity.HasFresh' does not depend on any axioms
+'EqualityGenerativity.pattern_symm' does not depend on any axioms
+'EqualityGenerativity.pattern_extend' depends on axioms: [propext]
+'EqualityGenerativity.extend_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.truth_of_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.noVars' does not depend on any axioms
+'EqualityGenerativity.sentence_agreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.upper' depends on axioms: [propext]
+'EqualityGenerativity.le_upper' depends on axioms: [propext]
+'EqualityGenerativity.upper_succ_fresh' depends on axioms: [propext, Quot.sound]
+'EqualityGenerativity.nat_hasFresh' depends on axioms: [propext, Quot.sound]
+'EqualityGenerativity.finite_witness_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.evaluate' depends on axioms: [propext, Quot.sound]
+'EqualityGenerativity.evaluate_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.sentence_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.double' does not depend on any axioms
+'EqualityGenerativity.double_injective' depends on axioms: [propext, Quot.sound]
+'EqualityGenerativity.double_not_surjective' depends on axioms: [propext, Quot.sound]
+'EqualityGenerativity.injective_preserves_equality_formulas' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.double_preserves_all_equality_formulas' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EqualityGenerativity.GeneratedNat' does not depend on any axioms
+'EqualityGenerativity.every_nat_generated' does not depend on any axioms
+'EqualityGenerativity.generated_nat_least' does not depend on any axioms

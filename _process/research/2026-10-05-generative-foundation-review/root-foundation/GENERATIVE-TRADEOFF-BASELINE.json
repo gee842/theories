@@ -1,0 +1,22 @@
+{
+  "unchanged": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/comparison-verification.json": "5c62df06f708086ace4a3ddc60c2d26fa76f5e2c1323d63601030081d7542109",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean": "99f075dc281d26d8bcc2d713805a17a407396ff86b4fe1b6d16460cb41a5d34e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurableRoutes.lean": "747929335d04ce9703070af7cfc309bb996a4695f19e96ff5d6dd6392c743141",
+    "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md": "fc9824eb837482c6253e6eb3f7a8bd2932902033bb305d49f09d4021fab9a515",
+    "sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md": "cc7b067a5ac13c47e40df98a7d691b00c3ba84bdaf51d09a87c57a2a5eed973d",
+    "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md": "c453e4e37c57a09f6f2304b210898ceeb884a759ca7b0a49668c4fc941ca5a59"
+  },
+  "preserved_prefixes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md": {
+      "length": 11676,
+      "sha256": "b2325e442f7283304b272c008c061b4d9c6bcdcce3e362a8cbe72fa72edce81f"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md": {
+      "length": 48757,
+      "sha256": "ea2384c7ecabe31414d69c6ac00296915e056d5c2b43fede2a1357a26167cc78"
+    }
+  }
+}

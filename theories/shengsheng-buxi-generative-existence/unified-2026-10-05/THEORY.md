@@ -309,6 +309,8 @@ Stochastic conclusions are also different. A finite Markov chain can hit every r
 
 ## 10 Shared generativity and 善
 
+**Current positive criterion, clarified by Ren on 7 October 2026:** [生生不息 as the whole's continuing creation of more 生](UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction), with richer generated possibilities and diversity and the capacity for increasingly complex organization. Ren accepts multiple scopes of 生, including biological/ecological life, life/mind/relationships and general organization-forming processes. Their relation and universal ethical significance are now the substantive investigation. This does not assert necessary physical progress or a single complexity maximum. The older application formulation below remains credited, but its word “worthwhile” cannot silently supply this new foundational identification.
+
 **一体之仁 as coformation.** The [current account](NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释) explains concern through actual undergoing, acquired understanding and response changing one another within generative activity. Undergoing can persist without recognition; understanding may also genuinely transform it. Response changes the situation to which future concern must answer, including whether to stop, withdraw control or support a new development. This constrains the core's representation: it must preserve the relevant intermediate consequences and changing relations, not merely an endpoint success score. The noninstrumental ethical claim concerns the significance of the actual transformation; neither a common trace nor an increased resource quantity proves its universal warrant.
 
 The primary foundational question is how interacting differences form organizations and how some organizations develop significance, regulation, learning and the capacity to revise their own selection mechanisms. Within that account, a further directional question asks whether, how and under which conditions reality generates increasingly shared and responsive regeneration. The present work establishes conditional mechanisms of renewal and responsiveness, their failures, and constraints on their operation. The [governing position](GENERATIVE-GROUNDING.md) makes both the universal explanatory ambition and the unfinished derivations explicit.
@@ -325,7 +327,7 @@ Five different propositions should therefore remain visible:
 
 The fourth proposition is the stronger direction-of-reality hypothesis within the explanatory program. Interconnection alone does not prove it: the same relations can transmit depletion, coercion, or collapse. Demonstrating it would require a specified mechanism of formation and spread, a justified scope of environments, and evidence against plausible alternatives. Restricting attention to surviving regenerative systems would introduce survivor selection rather than establish the direction of all becoming.
 
-The ethical proposal is:
+The earlier application-oriented ethical formulation is:
 
 > **善 concerns how activity supports, repairs, and enables the worthwhile possibilities of affected beings, including their effective capacity to understand, contest, and change the conditions shaping those possibilities.**
 

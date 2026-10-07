@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "utc": "20261007T163757.626776Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "comparison-checks/20261007T163757.626776Z",
+  "source_sha256": {
+    "GenerativeComparison": "dd117b90385458f5141ada87de9f839df67d48b91ade354aedbfa9635b652e7d"
+  },
+  "checker_sha256": {
+    "check_comparison.py": "fc05272411a7ebbec5bae6638c1d8f81e688a03057f53c25fe9ca82e376d3d9f",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Inference audit for separately supplied G0, comparison C, practical articulation P and selection coherence N; no proof of their necessity, completeness or empirical correspondence.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeComparison",
+      "theorems": 10,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Inventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.G0"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Extends"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.GenerativeExtension"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ComparisonPrinciple"
+        },
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Situation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.PracticalArticulation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.SelectionCoherence"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.new_realization_has_positive_relevance"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_irreflexive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.comparison_supplies_situated_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.coherent_selection_survives_filter"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.feasible_restriction_preserves_survivor"
+        },
+        {
+          "kind": "abbrev",
+          "name": "GenerativeComparison.Profile"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.profileInventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.count"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.firstAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.secondAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ScoreBetter"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.tradeoffSituation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_appraisals_respect_all_extensions"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.tradeoff_has_opposite_strict_appraisals"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_tradeoff_options_survive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.each_appraisal_has_a_different_coherent_selection"
+        }
+      ],
+      "axiom_dependencies": {
+        "GenerativeComparison.Inventory": [],
+        "GenerativeComparison.G0": [],
+        "GenerativeComparison.Extends": [],
+        "GenerativeComparison.GenerativeExtension": [],
+        "GenerativeComparison.ComparisonPrinciple": [],
+        "GenerativeComparison.Situation": [],
+        "GenerativeComparison.PracticalArticulation": [],
+        "GenerativeComparison.SelectionCoherence": [],
+        "GenerativeComparison.Survives": [],
+        "GenerativeComparison.new_realization_has_positive_relevance": [],
+        "GenerativeComparison.generative_extension_irreflexive": [],
+        "GenerativeComparison.generative_extension_transitive": [],
+        "GenerativeComparison.comparison_supplies_situated_reason": [],
+        "GenerativeComparison.coherent_selection_survives_filter": [],
+        "GenerativeComparison.feasible_restriction_preserves_survivor": [],
+        "GenerativeComparison.Profile": [],
+        "GenerativeComparison.profileInventory": [],
+        "GenerativeComparison.count": [],
+        "GenerativeComparison.firstAppraisal": [],
+        "GenerativeComparison.secondAppraisal": [],
+        "GenerativeComparison.ScoreBetter": [],
+        "GenerativeComparison.tradeoffSituation": [],
+        "GenerativeComparison.both_appraisals_respect_all_extensions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeComparison.tradeoff_has_opposite_strict_appraisals": [
+          "propext"
+        ],
+        "GenerativeComparison.both_tradeoff_options_survive": [],
+        "GenerativeComparison.each_appraisal_has_a_different_coherent_selection": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "GenerativeComparison.lean": "dd117b90385458f5141ada87de9f839df67d48b91ade354aedbfa9635b652e7d",
+    "GenerativeComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeComparisonAxiomAudit.lean": "2869fee824ca5a587da29e23354964f95fdf3cf517a5f51ac19284686c083b2c",
+    "GenerativeComparisonAxiomAudit.log": "8f09bcc079d6ef82d4e84bf921900feae5c3df546b6cc6204ed9b6ed4c547d9f",
+    "GenerativeComparisonSignatures.lean": "905a540adbeab118f8a867ad67d2e3034dd41e2680285e360fa2c4eb7a8d9b05",
+    "GenerativeComparisonSignatures.log": "eacdf3861a69f67fa3018e9a72353ee62fd7076cc65524b9fa0e4965d17a4fac",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_comparison.py": "fc05272411a7ebbec5bae6638c1d8f81e688a03057f53c25fe9ca82e376d3d9f",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

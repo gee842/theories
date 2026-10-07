@@ -1,0 +1,374 @@
+{
+  "checked_at_utc": "2026-10-07T16:17:08.272156+00:00",
+  "status": "passed",
+  "scope": "Documentation, original user wording, shared integration entries and existing fresh Lean receipt/source/log bindings. Not another compiler run or empirical/ethical validation.",
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "sha256": "7fee3fbf9c37f383a5a3462466f9621dd106db10e414a4dc2cf5b6bfc1b3d983"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "sha256": "cec35938b51afcfe4b3619190f5637205313c61268b644349f8957aa9b4db52b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "sha256": "12f07c12e01293a3c2eb728cace89e56c1c0a4b04838bfae98f27fe51cfb3901"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "sha256": "b66e1c6908aa819ff2d8d5b00c526607ade95ac95b689176e9f5809dee351a91"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "sha256": "3ba154e26d2b742e38c92911c9c853802dfa3ad530d0bcf6602fb6566ccced94"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md",
+      "sha256": "6222e081d25b7163c9de79fc298911fcc6e38ec853650cef84e0397db0e74fcf"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md",
+      "sha256": "deb99db2833eefd26f953e6acc803882dac11363f3339ba38842b0ef6b0bbf6d"
+    }
+  ],
+  "local_links_checked": 66,
+  "local_links": [
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "SITUATED-RENEWAL-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "SITUATED-RENEWAL-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_situated_continuation.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "target": "DIRECT-PORT-RENEWAL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_situated_continuation.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-CONTINUATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "SITUATED-RENEWAL-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md#4-the-general-conditional-practical-argument"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md#2-new-focused-primary-reading-necessary-means-transmission"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-continuation-depends-on-generativity.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "CONTINUATION-GENERATIVITY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "CONTINUATION-RENEWAL-MATH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "CONTINUATION-RENEWAL-MATH.md#3-exact-results-and-hypotheses"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "LIANGZHI-PRACTICAL-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "CONTINUATION-RENEWAL-MATH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-checks/20261007T155755.741665Z/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md",
+      "target": "COMPLETION-WARRANT-SOURCES.md#1-primary-antecedent-finite-refutation-and-safety"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md",
+      "target": "CONTINUATION-GENERATIVITY-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-SOURCES.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md",
+      "target": "2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md",
+      "target": "2026-10-07-lean-proof-requirement.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#general-requirements-and-situated-realization"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    }
+  ],
+  "shared_entries": [
+    {
+      "path": "RESEARCH.md",
+      "content": "**General generative requirements proved conditionally, 7 October 2026.** [The integrated proof](_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) answers [Ren’s request for a general derivation](sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md). Actual cumulative demand under an indexed support law forces timely support addition or changed provision; failure of inherited replenishment forces departure from that route. A separate invariant/progress certificate with an explicit admissible implementation constructs a continuing history, retaining alternatives and all dependencies on the same history. Fresh Lean 4.29.1 passes **24 new named theorems / 42 new declaration audits**, with standard dependencies exposed. The affirmative argument, counterreview and focused primary assessment establish the interpretation as conditional practical relevance through justified continuation, not first ethical authority. **Next universal connection:** justify the whole continuation and derive/identify its actual dependency and reconstruction laws; no case-by-case moral axiom or permanently-unused-capacity gate is required.",
+      "content_sha256": "b1f9c14065280788f66e7619c8b7575c2e363c5050ca813459177895681d905c"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "content": "**General continuation → situated generative requirements, 7 October 2026:** [the new proof and integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) establish uniform conditional requirements for arbitrary histories and indexed dependencies. Excess actual demand requires support addition or route change; inherited replenishment failure requires replacement. Explicit invariant, progress and implementation certificates separately construct a continuing history. Fresh Lean checks pass 24 new named theorems and 42 declaration audits. The [current ethical formulation](unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#general-requirements-and-situated-realization) connects these necessities to justified continuation without making every recipe obligatory. Living correspondence, adequate replacement and universal first warrant remain explicit; the result is not a completed ethics from the bare process interface.",
+      "content_sha256": "7f9a5d4a4f44c08c82955e2cea307ffda16192470c6cdb7f5851c339bb9c0f2e"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "content": "**Continued dependency use → general situated requirements, 7 October 2026:** [the checked general derivation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) composes actual support accounting over arbitrary finite windows, deriving necessary addition or route change and replacement when the inherited route cannot replenish. A same-history composition retains all required dependencies; explicit admissible implementation, invariant and progress certificates construct supported continuation. Twenty-four new named Lean theorems pass. The practical argument makes actual necessities relevant through the same justified continuation, while leaving first ethical warrant substantive. **Next:** derive or identify the intended living continuation’s dependency and reconstruction relationships and defend its whole ethical ground. Do not repeat the general result as isolated repair examples, infer adequate substitution merely from a changed route, or claim the bare core already derives every supplied law.",
+      "content_sha256": "92c15a87717d21aa4d4f156198041ba1d833f77d6fb6d166c554ef2d11dd481b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "heading": "General requirements and situated realization",
+      "content": "\n7 October 2026. [Ren asks for a general proof](../../../sources/15-codex-theory-conversations/2026-10-07-general-generative-proof-request.md), rather than independent arguments for infinitely many cases: to continue humanity, systems or life, generative conditions must be realized situationally. The [integrated round](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) joins actual Lean proofs, an affirmative philosophical argument, substantive counterreview and focused primary-source assessment.\n\n**一般条件推论已经成立：实际持续使用所需关系，若需求超过既有支持，就必须在这段实际发生的过程中补充支持或改变支承关系；原有关系不能补充时，就必须改变它。满足条件的方式可以不同，不是每一个配方都必须执行，也不是每一个个体都必须不断生产。** The theorem quantifies over arbitrary represented dependency families and histories. Support accounting and actual demand are independently stated premises; no recurrence conclusion is hidden in their definitions.\n\nA separate sufficient result takes an actual implementation, an invariant realizing the stated living condition, and a progress certificate preventing indefinite postponement. It constructs a single continuing history with timely renewal. The same actual history carries all required dependencies. Preserved opportunities alone do not supply actual realization; a changed provision route alone does not certify adequate replacement. These distinctions remain explicit in the proof.\n\nThe [general practical argument](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md) locates necessary conditions within the same justification as the continuation they realize. If continued living is justified here, legitimate effective reconstruction can have a reason through that living. If that continuation remains required at the stated scope, abandoning all necessary realizations cannot count as fulfilling it. Actual losses, differentiated participation, permissible means, finite achievements and possible revision of the target remain part of that scope. A sufficient recipe is not uniquely required; a causal law is not by itself a moral command.\n\nFresh Lean 4.29.1 verification passes **24 new named theorems and 42 new declaration audits** in a four-module closure with 92 audits. Standard logical dependencies are reported explicitly. This establishes the general operational implications, not an empirical theorem about all life or universal ethical authority. The next common obligation is to derive and identify the relevant living dependencies and reconstruction laws within the fuller generative account, while defending the ethical character and practical scope of that whole continuation. The [future-horizon correction](../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md) remains: permanently unused capacity’s independent intrinsic worth is not a mandatory gate.\n",
+      "content_sha256": "9ee9788c4a52f10d70ddfa2f1e59fb1bfcdfef08b01995acc35a4e41f4756679"
+    }
+  ],
+  "Lean_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json",
+    "sha256": "0b0d412caa1ea4612be4f8d8ae4c1a1716e0f700c2f426b9da49ba0b0519c03c",
+    "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-checks/20261007T155755.741665Z",
+    "modules": 4,
+    "audits": 92,
+    "new_declarations": 42,
+    "new_named_theorems": 24,
+    "new_empty_audits": 35,
+    "new_nonempty_audits": 7,
+    "dependency_union": [
+      "Quot.sound",
+      "propext"
+    ],
+    "source_bindings": [
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-checks/20261007T155755.741665Z/sources/GenerativeCore.lean",
+        "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-checks/20261007T155755.741665Z/sources/ContinuationRenewal.lean",
+        "sha256": "8b0754f2a63414a40aab814ac962effaaab47c1bc83e0e28a5f93b5f902d4f3c"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-checks/20261007T155755.741665Z/sources/SituatedRenewal.lean",
+        "sha256": "d5156a6e6201caa93ea652e93aec2946482fd144ea73f22661a0ab4c58132669"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean",
+        "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-checks/20261007T155755.741665Z/sources/SituatedContinuation.lean",
+        "sha256": "e5db4c23b6e7d49c82c7d82600b72004e5e36f3b49499e2bb285fda3e5b53c4f"
+      }
+    ],
+    "checker_sha256": "9e1b2970fca1d352b6d45fc2e3e61d601e52b7fde5cc3aa220fd036d670ea415",
+    "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+    "log_sha256": {
+      "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "ContinuationRenewal.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SituatedRenewal.txt": "2613fd3ad894f312705e7713741ee9b0e281cb208971ce7ccc23906531fc1715",
+      "SituatedContinuation.txt": "ccfde492d11dce1de16f254fe65d4788287f2669a0926a45538b545f6dd95ec6",
+      "axioms.txt": "305a6469b27a8f4d22574c903a1d0e771ec3a608b7d3ed813d3bc5224f2190e9"
+    }
+  },
+  "source_preservation": "Both quoted user messages matched exactly, including double space in the proposal. Source record is a local conversation transcription, not an imported export.",
+  "review": "Independent operational and ethical review, primary-source assessment and final exposition cross-review integrated. All reviews AI-authored.",
+  "whitespace": "Scoped git diff --check and direct new-file scan passed."
+}

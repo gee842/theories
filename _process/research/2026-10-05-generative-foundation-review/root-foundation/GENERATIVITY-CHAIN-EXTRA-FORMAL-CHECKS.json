@@ -1,0 +1,180 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T18:48:51.552804+00:00",
+  "checked_at_Asia_Bangkok": "2026-10-08T01:48:51.552804+07:00",
+  "kind": "Read-only source, signature, receipt and artifact-binding review for formal-support rows F13 and F14",
+  "method": "Read both current Lean sources and retained theorem signatures; verify recorded source/checker/artifact hashes, declaration inventory, theorem counts and axiom log agreement. No Lean compiler rerun, empirical validation or new proof claim.",
+  "review_scope": "Independent internal AI source/receipt review of these bounded packages; not a retrospective repository-wide proof audit.",
+  "important_scope": "Empty proof-axiom reports do not remove theorem hypotheses, supplied model laws, correspondences or normative premises.",
+  "path_correction": "Both receipts are under universal-ethics/generative-capacity/.",
+  "packages": [
+    {
+      "id": "F13",
+      "module": "GenerativeTradeoff",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/tradeoff-verification.json",
+      "receipt_sha256": "dd5de8e58ca389e6bb396dcdd00ab4a996f1b45eebc2b1d51b91697a9a573c00",
+      "recorded_compilation_utc": "20261007T165316.883014Z",
+      "recorded_lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean",
+      "source_sha256": "0d038dd797886d58fe490ed2795f8c8cdba9d159ca56509f934eb60969242995",
+      "current_source_matches_receipt": true,
+      "current_source_matches_retained_snapshot": true,
+      "retained_receipt_identical": true,
+      "source_scanner_matches_declared_inventory": true,
+      "proof_escape_scanner_passed": true,
+      "recorded_named_theorems": 11,
+      "recorded_explicit_declarations": 28,
+      "signature_log": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/tradeoff-checks/20261007T165316.883014Z/GenerativeTradeoffSignatures.log",
+      "all_theorem_signatures_present": true,
+      "axiom_log": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/tradeoff-checks/20261007T165316.883014Z/GenerativeTradeoffAxiomAudit.log",
+      "axiom_log_matches_receipt": true,
+      "empty_dependency_declarations": 28,
+      "nonempty_dependencies": {},
+      "retained_artifact_hash_checks": {
+        "GenerativeTradeoff.lean": true,
+        "GenerativeTradeoff.log": true,
+        "GenerativeTradeoffAxiomAudit.lean": true,
+        "GenerativeTradeoffAxiomAudit.log": true,
+        "GenerativeTradeoffSignatures.lean": true,
+        "GenerativeTradeoffSignatures.log": true,
+        "check.py": true,
+        "check_tradeoff.py": true,
+        "version.log": true
+      },
+      "current_checker_hash_checks": {
+        "check_tradeoff.py": true,
+        "check.py": true
+      },
+      "compiler_rerun": false,
+      "title_zh": "必要损失、真实替代与认识校准",
+      "title_en": "Necessary loss, real alternatives and epistemic calibration",
+      "claim_zh": "相对于明确可实现目标，必要损失须覆盖所有已表示可行成功途径；真实无损替代推翻必要性，末态恢复不抹去中途损失；每种处境各有途径不等于存在统一回应。",
+      "claim_en": "Relative to an attainable target, necessary loss covers every represented feasible successful route; a real lossless alternative defeats necessity, endpoint restoration does not erase interruption, and a route for each circumstance is not one uniform response.",
+      "scope_zh": "目标、损失、回应范围、历史及可行规律供给；将候选集结论用于现实还须保留真实处境，集合缩小本身不保证这一点。11项定理/28项声明空依赖；未证明K、净善、许可、实际观察策略或全部现实替代已覆盖。",
+      "scope_en": "Target, loss, response repertoire, histories and feasibility law are supplied; applying candidate-set conclusions requires retaining the actual circumstance, which subset refinement alone does not ensure. Recorded 11 theorems/28 declarations with empty dependencies; no K, net goodness, permission, implemented observation policy or complete real-world alternative coverage is proved.",
+      "critical_hypotheses": [
+        "NecessaryLoss includes existence of a successful response; impossible targets are not classified as having a necessary price.",
+        "Retained actuality is required to instantiate a universally certified candidate claim.",
+        "UniformLossless fixes one response across candidate circumstances; per-circumstance existence does not supply it.",
+        "The finite handover law stipulates three support stages and models no costs outside the represented interruption."
+      ],
+      "not_proved": [
+        "First ethical warrant",
+        "K mixed-comparison priority",
+        "Permission or obligation from necessity",
+        "Physical implementation or an empirical observation policy",
+        "Whole-consequence losslessness"
+      ]
+    },
+    {
+      "id": "F14",
+      "module": "GenerativeLossComparison",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-verification.json",
+      "receipt_sha256": "9ecde57972c333aef54fef2594f6de46b3b2bff64ec364aa6bd5b2a8d6d0af7d",
+      "recorded_compilation_utc": "20261007T171054.483538Z",
+      "recorded_lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+      "source_sha256": "a099877f064827b1d622eb1b9b7ba4a91e24cfb721b00337f2557c560d8144d5",
+      "current_source_matches_receipt": true,
+      "current_source_matches_retained_snapshot": true,
+      "retained_receipt_identical": true,
+      "source_scanner_matches_declared_inventory": true,
+      "proof_escape_scanner_passed": true,
+      "recorded_named_theorems": 16,
+      "recorded_explicit_declarations": 23,
+      "signature_log": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-checks/20261007T171054.483538Z/GenerativeLossComparisonSignatures.log",
+      "all_theorem_signatures_present": true,
+      "axiom_log": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-checks/20261007T171054.483538Z/GenerativeLossComparisonAxiomAudit.log",
+      "axiom_log_matches_receipt": true,
+      "empty_dependency_declarations": 20,
+      "nonempty_dependencies": {
+        "GenerativeLossComparison.cutoff_transitive": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeLossComparison.continuation_first_transitive": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeLossComparison.loss_sensitivity_alone_supplies_no_cutoff": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "retained_artifact_hash_checks": {
+        "GenerativeLossComparison.lean": true,
+        "GenerativeLossComparison.log": true,
+        "GenerativeLossComparisonAxiomAudit.lean": true,
+        "GenerativeLossComparisonAxiomAudit.log": true,
+        "GenerativeLossComparisonSignatures.lean": true,
+        "GenerativeLossComparisonSignatures.log": true,
+        "check.py": true,
+        "check_loss_comparison.py": true,
+        "version.log": true
+      },
+      "current_checker_hash_checks": {
+        "check_loss_comparison.py": true,
+        "check.py": true
+      },
+      "compiler_rerun": false,
+      "title_zh": "既有混合比较的减损传递",
+      "title_en": "Loss-reduction transport of an established mixed comparison",
+      "claim_zh": "已成立严格优先在相容的匹配减损下保持；已成立拒绝在匹配增损下保持。损失敏感及传递性仍容许不同阈值，甚至接续优先于每个有限损失的关系。",
+      "claim_en": "Established strict priority survives compatible matched loss reduction; established rejection survives matched loss increase. Loss sensitivity and transitivity still admit different cutoffs, including continuation priority over every finite loss.",
+      "scope_zh": "传递的Le、完整匹配NoWorse与其相容性、已成立严格比较均供给；推到实践理由另需PracticalBridge及两端可行性。16项定理/23声明；20项空依赖，3项仅propext与Quot.sound。未证明首个混合比较、K或普遍有限牺牲上限。",
+      "scope_en": "Transitive Le, fully matched NoWorse and compatibility, and an established strict comparison are supplied; practical reasons additionally need PracticalBridge and feasibility of both endpoints. Recorded 16 theorems/23 declarations: 20 empty, three only propext/Quot.sound. No first mixed comparison, K or universal finite sacrifice bound is proved.",
+      "critical_hypotheses": [
+        "Strict comparison is Le a b together with not Le b a; transitivity transports an existing strict anchor.",
+        "Matched loss change must preserve relevant gain and all other adverse relationships; semantic adequacy of NoWorse is not derived.",
+        "The practical theorem separately supplies PracticalBridge and feasibility of baseline and improved options; it does not prove the bridge.",
+        "Faithful redescription preserves the full relation in both directions; arbitrary self-modification need not be faithful.",
+        "Duration controls hold gain, intensity, affected relationships and recovery content fixed; real calendar duration does not by itself meet this matching premise."
+      ],
+      "not_proved": [
+        "First mixed comparison or first ethical warrant",
+        "G0 or K",
+        "A loss exchange rate",
+        "A universal finite sacrifice cutoff",
+        "Completeness, obligatory choice or arbitrary self-modification preservation"
+      ]
+    }
+  ],
+  "living_recovery_followup": {
+    "status": "final_source_bound_receipt_available_and_passed",
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json",
+    "receipt_sha256": "505e7fc2028cdcfc4541d68c2faab6a32b2005d585bdf8a8a3fcf4a74acff274",
+    "recorded_compilation_utc": "2026-10-07T18:45:09.104927+00:00",
+    "retained_run": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-checks/20261007T184505.678085Z",
+    "source_sha256": "d835300e75172b58093aa4289df3a499df7bfd81eb0fe17e69223c49ddbd8173",
+    "all_five_current_source_and_snapshot_hashes_match": {
+      "GenerativeCore": true,
+      "ContinuationRenewal": true,
+      "SituatedRenewal": true,
+      "LivingRealization": true,
+      "LivingRecovery": true
+    },
+    "retained_receipt_identical": true,
+    "current_checker_matches": true,
+    "all_retained_log_hashes_match": {
+      "GenerativeCore.txt": true,
+      "ContinuationRenewal.txt": true,
+      "SituatedRenewal.txt": true,
+      "LivingRealization.txt": true,
+      "LivingRecovery.txt": true,
+      "axioms.txt": true
+    },
+    "recorded_import_closure_audits": 107,
+    "recorded_new_theorems": 15,
+    "recorded_new_declarations": 20,
+    "new_empty_dependency_declarations": 8,
+    "new_nonempty_dependency_declarations": 12,
+    "new_dependency_union": [
+      "Quot.sound",
+      "propext"
+    ],
+    "compiler_rerun": false,
+    "review_scope": "Availability and final source/checker/log binding check only, with proof note read; not a second full theorem-proof review.",
+    "summary_zh": "已存在可信最终源绑定回执；不是仅初查。实际双向总输运与工作耦合可推出终点返回的必要预算，允许中途越界；不证明恢复存在、实际生理充分性、全生命覆盖或伦理根据。",
+    "summary_en": "A credible final source-bound receipt exists; this is no longer merely preliminary. Actual bidirectional gross transport and work coupling yield a necessary budget for a bounded endpoint while permitting intermediate excursions; no recovery existence, physiological sufficiency, universal living coverage or ethical warrant is proved."
+  }
+}

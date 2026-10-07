@@ -1,6 +1,8 @@
-# Claims through paid action and continuing protection
+<a id="claims-through-paid-action-and-continuing-protection"></a>
 
-6 October 2026. AI-authored supporting interface within [generative grounding](GENERATIVE-GROUNDING.md). A fresh Lean 4.29.1 build passes all **45 new theorem audits**; separate collaborating-agent review covers every statement and proof. This study connects partial evidence and admitted claims to the existing [paid protection process](REASON-PROTECTION.md), without changing its physical law or adding a new component.
+# Claims through resource-dependent action and continuing protection
+
+6 October 2026. AI-authored supporting interface within [generative grounding](GENERATIVE-GROUNDING.md). A fresh Lean 4.29.1 build passes all **45 new theorem audits**; separate collaborating-agent review covers every statement and proof. This study connects partial evidence and admitted claims to the existing [resource-dependent protection process](REASON-PROTECTION.md), without changing its physical law or adding a new component.
 
 **An action can succeed for someone without settling every affected claim. A successful episode can also leave later protection unsecured.** The distinction matters when connecting concern to effective action and succession: fulfilled claims, retained reasons and sustained protection are different achievements.
 
@@ -26,7 +28,7 @@ The existing process records cumulative harm separately for each patient. Every 
 
 Consequently, the patients protected throughout the concatenation are the **intersection** of the patients protected in each segment. A union of certificates from separate episodes can overstate continuous protection. Earlier certificates remain evidence about their original intervals; their targets and times cannot silently expand.
 
-The accepted parent supplies a concrete test. Its first action protects both patients and ends with harm counts `(0,0)`. Its revised action protects q and ends at `(1,0)`; the later successor episode ends at `(2,0)`. The initial protection of p was real. It does not establish p's protection over the longer history. The same paid states, events and energy accounts are used throughout.
+The accepted parent supplies a concrete test. Its first action protects both patients and ends with harm counts `(0,0)`. Its revised action protects q and ends at `(1,0)`; the later successor episode ends at `(2,0)`. The initial protection of p was real. It does not establish p's protection over the longer history. The same states reached through resource use, events and energy accounts are used throughout.
 
 This is a theorem about the declared cumulative-harm ledger. It does not claim that injuries cannot heal or that welfare can only decline. Likewise, certificates of completed one-time services can accumulate when their meaning and fulfillment persist. That requires an explicit persistence condition and a shared assessment horizon.
 
@@ -42,7 +44,7 @@ Here p and q are the protection model's two patients. They are not the fresh-rec
 
 ## Contribution to the common foundation
 
-The earlier finite-action, evidence-class and semantic-transport results already establish important choice and interpretation conditions. This study's contribution is their bounded connection to an actual paid protection law, an explicit unresolved-claims contract and the exact temporal condition on continued protection. No novelty claim is made for elementary set or order arguments.
+The earlier finite-action, evidence-class and semantic-transport results already establish important choice and interpretation conditions. This study's contribution is their bounded connection to an actual resource-dependent protection law, an explicit unresolved-claims contract and the exact temporal condition on continued protection. No novelty claim is made for elementary set or order arguments.
 
 This supplies a supporting interface for the central remaining derivation: **formed understanding → justified evaluative concern → effective, corrigible action through succession**. The causal formation of concern, justification of standing and authority, choice among conflicting claims, continuing support and empirical identification remain with their respective studies. A mathematical ledger alone supplies none of them.
 

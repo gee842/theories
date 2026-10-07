@@ -1,0 +1,524 @@
+{
+  "checked_at_utc": "2026-10-07T15:57:58.911962+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "SituatedRenewal",
+    "SituatedContinuation"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-checks/20261007T155755.741665Z",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.Process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Enabled"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.Trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_nil_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_cons_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.productProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_mk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "audits": 28,
+      "theorems": 23,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "ContinuationRenewal",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
+      "source_sha256": "8b0754f2a63414a40aab814ac962effaaab47c1bc83e0e28a5f93b5f902d4f3c",
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.no_unrenewed_tail_of_accessible"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.no_renewal_free_tail"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_after_of_accessible"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_arbitrarily_late_of_decidable"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_within_rank_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_within_rank_plus_one_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.rank_renewal_arbitrarily_late"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingState"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingRank"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingRenewal"
+        },
+        {
+          "kind": "instance",
+          "name": "ContinuationRenewal.alternatingRenewalDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingStep"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_actual_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_nonrenewal_decreases"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_renews_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_period_two"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_one_restoring_form"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_restoration_raises_rank"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_has_actual_unrenewed_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_no_new_configurations"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_every_configuration_score_bounded"
+        }
+      ],
+      "audits": 22,
+      "theorems": 17,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "SituatedRenewal",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean",
+      "source_sha256": "d5156a6e6201caa93ea652e93aec2946482fd144ea73f22661a0ab4c58132669",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.SituatedRenewal.DependencyLaw"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.Response"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.Window"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.windowWord"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.window_is_trace"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.sumWindow"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.totalDemand"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.sumWindow_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.window_account_or_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.response_before_exhaustion"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.inherited_failure_requires_replacement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.every_required_dependency_recurrently_responds"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.no_response_strictly_depletes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.response_within_remaining_bound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.idle"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.idleDependencies"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.continuation_without_required_use_has_no_response"
+        }
+      ],
+      "audits": 17,
+      "theorems": 9,
+      "nonempty_audits": {
+        "Generative.SituatedRenewal.window_account_or_response": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.response_before_exhaustion": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.inherited_failure_requires_replacement": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.every_required_dependency_recurrently_responds": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.no_response_strictly_depletes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.response_within_remaining_bound": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "SituatedContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean",
+      "source_sha256": "e5db4c23b6e7d49c82c7d82600b72004e5e36f3b49499e2bb285fda3e5b53c4f",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.trajectory"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.HasContinuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.actual_suffix_continues"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.excludes_all_routes_cannot_sustain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.joint_continuation_supplies_components"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.continuation_realizes_required_dependencies"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.rules_retain_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.certified_history_renews"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.implemented_rules_sustain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.alternatives_remain_alternatives"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.SituatedContinuation.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.supportProcess"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.restorative"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.supportRank"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.support_progress"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.repairChoice"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.replacementChoice"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.repair_implements"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.replacement_implements"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.repair_never_replaces"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.replacement_never_repairs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.adequate_alternative_histories"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.SituatedContinuation.Opportunity"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedContinuation.opportunityProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedContinuation.permanent_opportunity_without_completion"
+        }
+      ],
+      "audits": 25,
+      "theorems": 15,
+      "nonempty_audits": {
+        "Generative.SituatedContinuation.continuation_realizes_required_dependencies": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 92,
+  "new_audits": 42,
+  "new_theorems": 24,
+  "nonempty_audits": {
+    "Generative.SituatedRenewal.window_account_or_response": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.response_before_exhaustion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.inherited_failure_requires_replacement": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.every_required_dependency_recurrently_responds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.no_response_strictly_depletes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.response_within_remaining_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedContinuation.continuation_realizes_required_dependencies": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "9e1b2970fca1d352b6d45fc2e3e61d601e52b7fde5cc3aa220fd036d670ea415",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "ContinuationRenewal.olean",
+      "ContinuationRenewal.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "SituatedRenewal.olean",
+      "SituatedRenewal.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "SituatedContinuation.olean",
+      "SituatedContinuation.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "SituatedAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "ContinuationRenewal.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SituatedRenewal.txt": "2613fd3ad894f312705e7713741ee9b0e281cb208971ce7ccc23906531fc1715",
+    "SituatedContinuation.txt": "ccfde492d11dce1de16f254fe65d4788287f2669a0926a45538b545f6dd95ec6",
+    "axioms.txt": "305a6469b27a8f4d22574c903a1d0e771ec3a608b7d3ed813d3bc5224f2190e9"
+  },
+  "source_changed_during_run": [],
+  "scope": "General conditional necessity and constructive sufficient certificates; explicit declarations audited, generated declarations kernel-checked. No policy synthesis, empirical universality or first ethical warrant proved."
+}

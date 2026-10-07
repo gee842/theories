@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Bangkok",
+  "scope": "Integrated one-generation formal test, philosophical review and primary-source assessment; no universal ethical completion or empirical replication.",
+  "root_fresh_lean_check_at_utc": "2026-10-07T13:13:48.559256+00:00",
+  "lean_theorems": 12,
+  "lean_audits": 15,
+  "all_axiom_dependencies_empty": true,
+  "formal_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recursive-generative-selection-verification/verification.json",
+  "checked_local_links_and_anchors": 64,
+  "link_errors": [],
+  "source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md": "ec3eac7c3b90a77d652646f545593b16b84d4efd4be83eaefbf72f317b45aaa6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md": "5acffc96247b4b15f48b9efcd17f43da61a2b9bfebd4f9df5dc0a7f4b36e3130",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-SOURCES.md": "e090e4a1afdfec3646ba6c865b10a23a5dc2cf75d5c70c2af354c203ed0c5b10",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION.md": "0f3c844f5f8f7d56f6292020bba0a50fae416d2f23733276e20aec353e7a72ac",
+    "sources/15-codex-theory-conversations/2026-10-07-recursive-generative-selection.md": "9e5dd9673134c1357b1b1b8b71822509086c0a32a6982ad7b1db13ea2e516f08"
+  },
+  "review_corrections": [
+    "One connected whole need not be a reproducing unit in a population of wholes.",
+    "Practical should is attributed to the positive ethical candidate, not inferred from winning.",
+    "Preserve the stronger hypothesis of evolution of arrangements connecting selection to renewal.",
+    "Nonproduction in the finite model is not whole degeneration; one round does not establish long-run extinction or recursion."
+  ],
+  "source_access": "Subagent exact reading ranges recorded in source note. Root directly read Chuang2009 and Ratzke2018 primary abstracts. No publication bytes imported."
+}

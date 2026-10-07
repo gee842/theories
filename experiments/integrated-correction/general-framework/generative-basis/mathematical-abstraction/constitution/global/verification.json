@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean": {
+      "sha256": "cd822ce7b32d1cef5b5aa6fc81271deaac88553720f563ab366e22d4685837d0",
+      "named_declarations": 21,
+      "theorems": 14
+    }
+  },
+  "named_declarations_audited": 21,
+  "theorems_checked": 14,
+  "standard_axioms_used": [],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "RootCoverageBoundary.PointwiseComplete": [],
+    "RootCoverageBoundary.fixed_point_of_complete": [],
+    "RootCoverageBoundary.no_complete_fixedpoint_free": [],
+    "RootCoverageBoundary.boolDiagonal": [],
+    "RootCoverageBoundary.bool_flip_no_fixed_point": [],
+    "RootCoverageBoundary.bool_diagonal_unrepresented": [],
+    "RootCoverageBoundary.no_full_bool_coverage": [],
+    "RootCoverageBoundary.Represents": [],
+    "RootCoverageBoundary.CoversPredicates": [],
+    "RootCoverageBoundary.predicateDiagonal": [],
+    "RootCoverageBoundary.no_iff_neg": [],
+    "RootCoverageBoundary.predicate_diagonal_unrepresented": [],
+    "RootCoverageBoundary.no_full_predicate_coverage": [],
+    "RootCoverageBoundary.no_diagonal_closed_complete_family": [],
+    "RootCoverageBoundary.externalReading": [],
+    "RootCoverageBoundary.external_reading_covers": [],
+    "RootCoverageBoundary.extendReading": [],
+    "RootCoverageBoundary.extension_preserves": [],
+    "RootCoverageBoundary.extension_represents_new": [],
+    "RootCoverageBoundary.extension_preserves_coverage": [],
+    "RootCoverageBoundary.diagonal_extension_strict": []
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/check.py": "450cb419a55e78adc3c8de15c5c2804278cabdc2a2c888ab2943f2c432f3e4cd",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/verification/KernelAudit.lean": "70ee09c501423b132f33edb8ed96e51b0cbbe8c085edf53d14d1a07d389651f1",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/verification/KernelAudit.log": "ff10b9cd3d272b8eac598ff10b8d4b6aad8af1be82d7c7ab93d5fc6075434db8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/verification/CoverageBoundary.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scope": "Set/function diagonal and fixed-point results for explicit self-indexed coverage, with lower-domain extensions; not a proof against stratified semantics, a generative root, or all mathematical grounding."
+}

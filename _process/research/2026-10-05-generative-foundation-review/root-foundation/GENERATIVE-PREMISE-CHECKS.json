@@ -1,0 +1,316 @@
+{
+  "status": "passed",
+  "utc": "2026-10-07T16:43:41.177973+00:00",
+  "scope": "Frozen proof/source bindings, source quotation and prior-byte preservation, new document links. No extra mathematical or empirical validation.",
+  "new_theorems": 11,
+  "explicit_declaration_audits": 27,
+  "axiom_dependencies": [
+    "Quot.sound",
+    "propext"
+  ],
+  "model_sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+  "proof_receipt_sha256": "5c62df06f708086ace4a3ddc60c2d26fa76f5e2c1323d63601030081d7542109",
+  "source_sha256": "cc7b067a5ac13c47e40df98a7d691b00c3ba84bdaf51d09a87c57a2a5eed973d",
+  "checker_sha256": "2cdbd6245d91d4a82acc0405a130adf5bf577920d26427dd411675576f3e2458",
+  "prior_preservation": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "bytes": 36221,
+      "sha256": "0173eddbb9667ec33e340e1f3dd884eb491bb3d8894c085c62becd7a3c84e4cd",
+      "preserved": true
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md",
+      "bytes": 2731,
+      "sha256": "fc9824eb837482c6253e6eb3f7a8bd2932902033bb305d49f09d4021fab9a515",
+      "preserved": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean",
+      "bytes": 19136,
+      "sha256": "99f075dc281d26d8bcc2d713805a17a407396ff86b4fe1b6d16460cb41a5d34e",
+      "preserved": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean",
+      "bytes": 17824,
+      "sha256": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+      "preserved": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurableRoutes.lean",
+      "bytes": 21109,
+      "sha256": "747929335d04ce9703070af7cfc309bb996a4695f19e96ff5d6dd6392c743141",
+      "preserved": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reconfiguration-verification.json",
+      "bytes": 33604,
+      "sha256": "4573bc0a1aa5e1dde9ff85b784d99b44412a506c074a2429af2c28c8f5a25edb",
+      "preserved": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reconfiguration-correspondence-verification.json",
+      "bytes": 975102,
+      "sha256": "80ede2cfb054ef4d28e3b0876983082b0eb5de6929eca77b4d2b0b17b878f00c",
+      "preserved": true
+    }
+  ],
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md": "b2325e442f7283304b272c008c061b4d9c6bcdcce3e362a8cbe72fa72edce81f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md": "296a30894b5bc9959edc9c51da573060bcc6fa2d3136132a4c171f837f726ce0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md": "7f2c9b1a5e9758ea7134d98f73be38c26170f783d310efbb316a5c3fe5abbc41",
+    "sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md": "cc7b067a5ac13c47e40df98a7d691b00c3ba84bdaf51d09a87c57a2a5eed973d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md": "942a732f33b4895f6cc46a4bceb65a1dd9c6dd2c3f38b2c85954cc17127f46a5",
+    "README.md": "abea5cee2c0603d4c120c2002f88844111bebcbed407e7a8e3df606a300c026e",
+    "RESEARCH.md": "5f7ace506b19824b671217bc893a6a31058f1d235ae936cd2be6539cfb0fabca",
+    "_process/BRIEF.md": "dac4ab0e7737be8448757e334403f0452f0aac63485b2c499d07a518c5d1065b",
+    "sources/SOURCES.md": "b5d7f69c2425a244b1c39740bb23267000982b35d4dd95da4ff3301ef7f3ff59",
+    "theories/shengsheng-buxi-generative-existence/README.md": "81a3ecc8c80b0add1ea863d6f0005e45c1b1d61e157f9c4fd13e639f58ad3501",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "b210f7ccbdc567ec11e0a8690c3b911805ceff6fac1552d23f110334870bce1f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "27c6a38b12b6e3876f55606746d446ca655b9cff012192244cb464600bce32c3",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": "b4f1c725c03be62dfc00fbab4fdfee2c0e986bf7a7b6cb49d0d778942559b0d9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md": "bcfba8c968760eb1f197d617bb4afb61f7d143e315840d31a8b7d82e6e327770",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md": "ea2384c7ecabe31414d69c6ac00296915e056d5c2b43fede2a1357a26167cc78"
+  },
+  "local_links_checked": 59,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md#11-重组与建设性结束"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/comparison-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md#11-重组与建设性结束"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md#11-重组与建设性结束"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/comparison-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+      "target": "GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md",
+      "target": "2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "GenerativeComparison.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../../../../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../WholePracticalRestriction.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "check_comparison.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "comparison-verification.json"
+    },
+    {
+      "from": "README.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "README.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/BRIEF.md",
+      "target": "../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/BRIEF.md",
+      "target": "research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#from-the-generative-premise-to-situated-reasons"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-PREMISE-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-REVIEW.md"
+    }
+  ],
+  "errors": []
+}

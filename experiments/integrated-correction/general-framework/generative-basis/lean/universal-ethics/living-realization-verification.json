@@ -1,0 +1,599 @@
+{
+  "checked_at_utc": "2026-10-07T16:56:29.578489+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "LivingRealization"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-checks/20261007T165626.734264Z",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.Process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Enabled"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.Trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_nil_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_cons_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.productProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_mk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "audits": 28,
+      "theorems": 23,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "ContinuationRenewal",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
+      "source_sha256": "8b0754f2a63414a40aab814ac962effaaab47c1bc83e0e28a5f93b5f902d4f3c",
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.no_unrenewed_tail_of_accessible"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.no_renewal_free_tail"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_after_of_accessible"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_arbitrarily_late_of_decidable"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_within_rank_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.renewal_within_rank_plus_one_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.rank_renewal_arbitrarily_late"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingState"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingRank"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingRenewal"
+        },
+        {
+          "kind": "instance",
+          "name": "ContinuationRenewal.alternatingRenewalDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "ContinuationRenewal.alternatingStep"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_actual_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_nonrenewal_decreases"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_renews_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_period_two"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_one_restoring_form"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_restoration_raises_rank"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_has_actual_unrenewed_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_no_new_configurations"
+        },
+        {
+          "kind": "theorem",
+          "name": "ContinuationRenewal.alternating_every_configuration_score_bounded"
+        }
+      ],
+      "audits": 22,
+      "theorems": 17,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "SituatedRenewal",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean",
+      "source_sha256": "d5156a6e6201caa93ea652e93aec2946482fd144ea73f22661a0ab4c58132669",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.SituatedRenewal.DependencyLaw"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.Response"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.Window"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.windowWord"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.window_is_trace"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.sumWindow"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.totalDemand"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.sumWindow_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.window_account_or_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.response_before_exhaustion"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.inherited_failure_requires_replacement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.every_required_dependency_recurrently_responds"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.no_response_strictly_depletes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.response_within_remaining_bound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.idle"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SituatedRenewal.idleDependencies"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SituatedRenewal.continuation_without_required_use_has_no_response"
+        }
+      ],
+      "audits": 17,
+      "theorems": 9,
+      "nonempty_audits": {
+        "Generative.SituatedRenewal.window_account_or_response": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.response_before_exhaustion": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.inherited_failure_requires_replacement": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.every_required_dependency_recurrently_responds": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.no_response_strictly_depletes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SituatedRenewal.response_within_remaining_bound": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "LivingRealization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean",
+      "source_sha256": "539742f929fbc8d3d9efc015ae0b08d80463ed99e65a0ea4af4c4f2eaf80b083",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.LivingRealization.TransportLaw"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.Within"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.maintained"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.ionHeadroom"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.supportedHeadroom"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.ion_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.support_account"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.transportDependency"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.supportDependency"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.compensation_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.support_input_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.recurrent_support_input"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.included_store_account"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.storeDependency"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.included_store_bounds_load"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.exampleProcess"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingRealization.exampleLaw"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.headroom_can_accommodate_ingress"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.retained_work_can_compensate"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingRealization.inactive_then_compensating_history"
+        }
+      ],
+      "audits": 20,
+      "theorems": 10,
+      "nonempty_audits": {
+        "Generative.LivingRealization.ion_account": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.support_account": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.transportDependency": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.supportDependency": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.compensation_required": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.support_input_required": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.recurrent_support_input": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.included_store_account": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.storeDependency": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.included_store_bounds_load": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.headroom_can_accommodate_ingress": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.retained_work_can_compensate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingRealization.inactive_then_compensating_history": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 87,
+  "new_audits": 20,
+  "new_theorems": 10,
+  "nonempty_audits": {
+    "Generative.SituatedRenewal.window_account_or_response": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.response_before_exhaustion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.inherited_failure_requires_replacement": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.every_required_dependency_recurrently_responds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.no_response_strictly_depletes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.SituatedRenewal.response_within_remaining_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.ion_account": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.support_account": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.transportDependency": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.supportDependency": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.compensation_required": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.support_input_required": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.recurrent_support_input": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.included_store_account": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.storeDependency": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.included_store_bounds_load": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.headroom_can_accommodate_ingress": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.retained_work_can_compensate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingRealization.inactive_then_compensating_history": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "e91cf9f30d691aaee3e041e8bdd5886cada7d6c7f867ef6e0561495c83ec33b9",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "ContinuationRenewal.olean",
+      "ContinuationRenewal.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "SituatedRenewal.olean",
+      "SituatedRenewal.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "LivingRealization.olean",
+      "LivingRealization.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "LivingRealizationAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "ContinuationRenewal.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SituatedRenewal.txt": "2613fd3ad894f312705e7713741ee9b0e281cb208971ce7ccc23906531fc1715",
+    "LivingRealization.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "e9498122608cc03b92f9f28389bea1b3b7e94e8cf0d2f85ba890c7c1d98c7018"
+  },
+  "source_changed_during_run": [],
+  "scope": "Transport and energetic coupling derive a scoped maintenance account; explicit declarations audited, generated declarations kernel-checked. No stochastic biological refinement, universal living coverage or ethical warrant proved."
+}

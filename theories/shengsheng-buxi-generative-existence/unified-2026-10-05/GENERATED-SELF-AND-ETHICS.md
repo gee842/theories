@@ -56,7 +56,7 @@ The [self-model source study](../../../_process/research/2026-10-05-generative-f
 
 This supports an affirmative research strategy: explain the formation and revision of self-representation, rather than use a primitive self as its own explanation. It does not establish that all conceptions of an irreducible subject have been refuted. Nor does a changeable boundary imply that every boundary is arbitrary.
 
-The repository's [prediction/action construction](PREDICTION-ACTION.md) supplies the local learner used in the [acquisition continuation below](#acquired-action-effects-and-organizational-use). That proof establishes a retained prediction of action effects on organizational support, paid correction and actual use. It does not yet derive bodily ownership or self-recognition. Acquiring a usable own/world attribution without supervised ownership labels remains a stronger task; the supplied physical organization and decoder must not be mistaken for its solution.
+The repository's [prediction/action construction](PREDICTION-ACTION.md) supplies the local learner used in the [acquisition continuation below](#acquired-action-effects-and-organizational-use). That proof establishes a retained prediction of action effects on organizational support, resource-dependent correction and actual use. It does not yet derive bodily ownership or self-recognition. Acquiring a usable own/world attribution without supervised ownership labels remains a stronger task; the supplied physical organization and decoder must not be mistaken for its solution.
 
 ## Experiential direction before an ownership judgment
 

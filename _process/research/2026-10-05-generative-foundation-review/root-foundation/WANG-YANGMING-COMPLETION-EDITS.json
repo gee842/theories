@@ -1,0 +1,153 @@
+{
+  "scope": "Wang Yangming completion only; shared files owned at exact inserted-fragment scope",
+  "insertions": [
+    {
+      "path": "RESEARCH.md",
+      "text": "**王阳明整体整合完成，2026年10月7日。** 按 Ren「先完成王阳明」，[当前主文](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md)将一体之仁、明德亲民、知行与工夫重构为有伦理内容的同一展开；原典的本然良知和造化强说完整保留。实践形成的目的、理解及整个后续生活进入评价，苏秦张仪及适应性控制竞争者阻止把成功影响等同仁。拒绝、自护与合理结束明确作为有待具体论证的现代扩展。[来源、反审及整合](_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)与新增12项实际通过的 Lean 声明共同收束本轮；其中8项无命名公理依赖，其余仅使用明列的标准逻辑依赖。形式接口检验同一完整有限历史上的表示与共同响应条件，`Fits` 的伦理根据仍给定。**下一根本推论：**仁的整体实现何以具有跨不同智能形成史的实践效力；无假设普遍证明未完成。6日比较的独立患者／行动者主线作为历史分解保留，由本轮整体重构取代。\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "text": "**王阳明整体整合，2026年10月7日；本轮完成。** [当前章](unified-2026-10-05/WANG-YANGMING.md)从明德亲民的一木本末、知行工夫的一事，说明仁如何贯穿生成树中的承受、理解、目的与回应。原典复核与控制竞争论证共同区分仁的实现和有效支配，保留差等、合理拒绝及自我照料的解释负担。新增12项 Lean 声明已实际检查；有限整体历史的表示准则不供应首个伦理根据。[整合与依赖范围](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)明确：完成原典约束下的整合，不等于证明本然良知普遍可靠，或完成一切智能的无假设伦理奠基。\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "text": "**王阳明整体整合，2026年10月7日：** [完成记录](WANG-YANGMING-COMPLETION-INTEGRATION.md)、[原典](WANG-YANGMING-COMPLETION-SOURCES.md)、[反审](WANG-YANGMING-COMPLETION-REVIEW.md)和[数学接口](WANG-YANGMING-COMPLETION-MATH.md)接入[当前章](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md)。完成一体之仁、知行与工夫的整体重构及实践／控制辨别；12项新增 Lean 声明实际通过，8项命名公理依赖为空，标准逻辑依赖和伦理参数明确保留。旧王阳明章按原字节保存。普遍规范根据仍是下一根本推论，不再把先验独立的患者—行动者分解当作完整阳明结构。\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+      "text": "**2026年10月7日，王阳明整合已收束：** [当前王阳明章](WANG-YANGMING.md)以明德亲民、知行和工夫的同一展开接回本章，保留本然良知的原典强说，检验私欲、有效控制、差等及现代拒绝／自护扩展。新的整体有限历史接口已经 Lean 实际检查；其适切关系仍需实质辩护，不能将原典与形式的完成算作无假设普遍证明。详见[整合记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)。\n"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "text": "**王阳明优先收束，2026年10月7日：** [Ren 的原话](15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md)与 AI 范围说明分开保存。[原典核对](../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md)记录《王阳明集》卷一、二、三、二十六相关直接阅读和限制；公开转录未作异本校勘，也未导入新的外部原件字节。旧王阳明章的原字节保存与新增形式记录见[整合](../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)。\n"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+      "text": "## Situated practice in the whole history — 7 October 2026\n\n[SituatedPractice.lean](SituatedPractice.lean) reuses `GenerativeCore` and `CoupledOccurrence` to retain full finite event/state histories. It checks the exact common-continuation condition for a readout to support a robust feasible response, actual enactment, refinement, changed appraisals, and a pairwise-versus-joint compatibility boundary. This is a correspondence result, not a definition of true knowledge or proof of moral warrant; the whole-history `Fits` relation remains supplied. An empty suffix does not prove enacted stopping or its ethical correctness.\n\nRun `python3 check_wang_practice.py`. The [fresh receipt](wang-practice-verification.json) verifies 37 audits across three modules, including 12 new declarations: 8 empty named-axiom dependencies, with the others using standard `propext`, `Quot.sound` or `Classical.choice`. Initial failed and final passing source/log snapshots are retained. [Mathematics and dependencies](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md) and [Wang integration](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md) state the original-text, reconstruction and universal-grounding boundaries.\n"
+    }
+  ],
+  "historical_snapshot": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md",
+    "bytes": 17105,
+    "sha256": "cc38e7584132c6d0d2c40f8fe30c0d4e16f76284454a310b62745d509dc220be",
+    "links": "original chapter directory; no relinking"
+  },
+  "owned_files": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-CHECK.py",
+      "sha256": "6a7c4ddb1fc316eea009c56e48be4381bd253a316a6b5880e78ec66742fa1eed"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+      "sha256": "4610ea4e79dd5a9164ca5f26f4b532e10e6f69cfe2144b04287a4b3d945f94d8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+      "sha256": "3f21c581f7eebd9f84c34e44c66986cdd4cf49c31a49d6d0dcb51505406b8eba"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+      "sha256": "2d33c518fe07e594c1111e3df3be1d567af66711f69b539cad42cddc4f48e887"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+      "sha256": "7f85ad6fa24e4d41b8939178052048f42191f88cae3f4ac236cdcaf838b72719"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md",
+      "sha256": "cc38e7584132c6d0d2c40f8fe30c0d4e16f76284454a310b62745d509dc220be"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean",
+      "sha256": "628963b9c132a75c387adcca32bd4f29a02c378bf60e8f69ce87dcb93b98b06c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_wang_practice.py",
+      "sha256": "a9881cc21f9008e0ba9fb04e4ca2dc472975e3dd2ce5510f31946770c7401f5e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/CoupledOccurrence.lean",
+      "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/CoupledOccurrence.txt",
+      "sha256": "6b6336060815ebe23c2f13d5c745a714e709c170b756611f1de55c05637c49a1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/SituatedPractice.lean",
+      "sha256": "da30acdded4d0b68e7adbf10a94c24d9e2aceb6dbaacf9bceff646a12b007e74"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/SituatedPractice.txt",
+      "sha256": "39f763c3d62eafd8d7a316b69683a00d537e99f5ab049aa9cdff40a3c056fc7c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/check_wang_practice.py",
+      "sha256": "a9881cc21f9008e0ba9fb04e4ca2dc472975e3dd2ce5510f31946770c7401f5e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/inputs.json",
+      "sha256": "31f775fe249880be7e5700b8dbd6794f798510bf25304a2a9b2f6e16af4406f2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/receipt.json",
+      "sha256": "4f1d7e20940461aa5311bfe761478adc6b13df21c1085069900fcc5e10448226"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/CoupledOccurrence.lean",
+      "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/CoupledOccurrence.txt",
+      "sha256": "6b6336060815ebe23c2f13d5c745a714e709c170b756611f1de55c05637c49a1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/GenerativeCore.txt",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/SituatedPractice.lean",
+      "sha256": "628963b9c132a75c387adcca32bd4f29a02c378bf60e8f69ce87dcb93b98b06c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/SituatedPractice.txt",
+      "sha256": "055141b1171af39b270adcd997491a9d3921ad0a1e1ea8770d0aade7aaf757d0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/check_wang_practice.py",
+      "sha256": "a9881cc21f9008e0ba9fb04e4ca2dc472975e3dd2ce5510f31946770c7401f5e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/inputs.json",
+      "sha256": "9b6af6e421d7c313e7174a47e42527a8e9e582415300cd419d34e646f21d847a"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/receipt.json",
+      "sha256": "aae5d070d36a8152e307b831b49fc3ace84e611cd20a9389df99852aac97e454"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json",
+      "sha256": "aae5d070d36a8152e307b831b49fc3ace84e611cd20a9389df99852aac97e454"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md",
+      "sha256": "631ec9bbe7d4de2258e04d8d7378c3f157844de3da6a2492112b9932d3dd0877"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+      "sha256": "2da40d8868d819a0f4006e815f1a8f734995b8ce6ed0488ad8467905cc6be7cf"
+    }
+  ]
+}

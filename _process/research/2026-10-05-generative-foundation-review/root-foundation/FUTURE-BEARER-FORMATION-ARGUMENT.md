@@ -57,7 +57,7 @@ The advance is a direct test of whole-process improvement when beneficiaries the
 
 ## 7. Prospective concern at the last effective window
 
-The [imposition argument §14](HUIGEN-SELF-GROUND-AUDIT.md#14-imposed-burdens-and-the-nonparticipating-patient) already distinguishes an originator's responsibility from an uninvolved responder's opportunity. The [assistance-jurisdiction review](ASSISTANCE-JURISDICTION-COUNTERREVIEW.md#4-doing-allowing-and-the-limits-of-the-affirmative-argument) preserves doing/allowing differences and genuine restrictions on which considerations may justify a choice. [Responsive formation](RESPONSIVE-FORMATION-COUNTERREVIEW.md#2-no-completed-responder-is-needed-but-an-available-first-step-is) already examines available action before a responder group forms. The new comparison combines **absence of prior authorship with absence of a presently existing beneficiary**.
+The [imposition argument §14](HUIGEN-SELF-GROUND-AUDIT.md#14-imposed-burdens-and-the-nonparticipating-patient) already distinguishes an originator's responsibility from an uninvolved responder's opportunity. The [assistance-jurisdiction review](ASSISTANCE-JURISDICTION-COUNTERREVIEW.md#4-doing-allowing-and-the-limits-of-the-affirmative-argument) preserves doing/allowing differences and genuine restrictions on which considerations may justify a choice. [Responsive formation](RESPONSIVE-FORMATION-COUNTERREVIEW.md#2-no-completed-responder-is-needed-but-an-available-first-step-is) already examines available action before a responder group forms. The new comparison combines **absence of prior participation in formation with absence of a presently existing beneficiary**.
 
 Compare two configurations with different causal histories but matched, independently specified future possibilities:
 
@@ -94,7 +94,7 @@ Hold the uninvolved responder, timing and existing claims fixed. Add an independ
 
 An actual application must explain why R preserves identity and B changes it; model labels cannot establish either. Efficacy, access, means, risks and relevant relational consequences remain independently assessed. These are controlled conceptual alternatives, not an implemented formative mechanism.
 
-If the rival favors R over A but denies a reason favoring B over A, it already admits prospective concern by a nonoriginator. Neither temporal nonexistence nor absence of prior authorship explains its remaining restriction. The issue is **selection across different possible lives**. If it denies R as well, the broader prospective restriction remains to defend. This refines §7's diagnosis rather than declaring its rival refuted.
+If the rival favors R over A but denies a reason favoring B over A, it already admits prospective concern by a nonoriginator. Neither temporal nonexistence nor absence of prior participation in formation explains its remaining restriction. The issue is **selection across different possible lives**. If it denies R as well, the broader prospective restriction remains to defend. This refines §7's diagnosis rather than declaring its rival refuted.
 
 ### Preserve the ground of a particular comparison
 

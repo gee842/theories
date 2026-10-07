@@ -1,0 +1,79 @@
+'FormationRoutes.Role' does not depend on any axioms
+'FormationRoutes.Tree' does not depend on any axioms
+'FormationRoutes.parts' does not depend on any axioms
+'FormationRoutes.Port' does not depend on any axioms
+'FormationRoutes.inspect' depends on axioms: [propext]
+'FormationRoutes.dyadAB' does not depend on any axioms
+'FormationRoutes.dyadBC' does not depend on any axioms
+'FormationRoutes.leftForm' does not depend on any axioms
+'FormationRoutes.rightForm' does not depend on any axioms
+'FormationRoutes.common_address_distinguishes' depends on axioms: [propext]
+'FormationRoutes.forms_distinct' does not depend on any axioms
+'FormationRoutes.Bar' does not depend on any axioms
+'FormationRoutes.barParts' depends on axioms: [propext]
+'FormationRoutes.Spans' depends on axioms: [propext]
+'FormationRoutes.spansDecidable' depends on axioms: [propext]
+'FormationRoutes.Lot' does not depend on any axioms
+'FormationRoutes.State' does not depend on any axioms
+'FormationRoutes.initial' does not depend on any axioms
+'FormationRoutes.stocked' does not depend on any axioms
+'FormationRoutes.Event' does not depend on any axioms
+'FormationRoutes.advance' does not depend on any axioms
+'FormationRoutes.Enabled' depends on axioms: [propext]
+'FormationRoutes.enabledDecidable' depends on axioms: [propext]
+'FormationRoutes.Step' depends on axioms: [propext]
+'FormationRoutes.process' depends on axioms: [propext]
+'FormationRoutes.Synchronized' does not depend on any axioms
+'FormationRoutes.bypassProcess' depends on axioms: [propext]
+'FormationRoutes.children' depends on axioms: [propext]
+'FormationRoutes.finite_branching' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.sourceRaw' does not depend on any axioms
+'FormationRoutes.sourceWork' does not depend on any axioms
+'FormationRoutes.partialParts' does not depend on any axioms
+'FormationRoutes.productParts' does not depend on any axioms
+'FormationRoutes.material' depends on axioms: [propext]
+'FormationRoutes.workAccount' does not depend on any axioms
+'FormationRoutes.manualProgress' does not depend on any axioms
+'FormationRoutes.disconnected_step_is_bypass' depends on axioms: [propext]
+'FormationRoutes.step_accounts' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.trace_accounts' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.bypass_step_progress' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.bypass_trace_progress' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.forget_bypass' depends on axioms: [propext]
+'FormationRoutes.bypass_output_bound' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.bypass_three_work_at_most_one' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.unfed_step_spends' depends on axioms: [propext]
+'FormationRoutes.zero_work_no_step' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.zero_work_trace_constant' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.disconnected_fresh_step_no_product' depends on axioms: [propext]
+'FormationRoutes.disconnected_one_work_no_product' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.disconnect' does not depend on any axioms
+'FormationRoutes.disconnection_preserves_support' depends on axioms: [propext]
+'FormationRoutes.Form' does not depend on any axioms
+'FormationRoutes.treeOf' does not depend on any axioms
+'FormationRoutes.syncEvent' does not depend on any axioms
+'FormationRoutes.startEvent' does not depend on any axioms
+'FormationRoutes.finishEvent' does not depend on any axioms
+'FormationRoutes.dyadOf' does not depend on any axioms
+'FormationRoutes.ready' does not depend on any axioms
+'FormationRoutes.pushed' does not depend on any axioms
+'FormationRoutes.pushed_length' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.receive_step' depends on axioms: [propext]
+'FormationRoutes.attach_step' depends on axioms: [propext]
+'FormationRoutes.formed_prefix' depends on axioms: [propext]
+'FormationRoutes.synchronized_step' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.synchronized_list' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.formed_joint_history' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.formed_joint_costs' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.multiple_completions_exceed_bypass' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.both_forms_in_one_history' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.both_forms_unreachable_by_bypass' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.manualPending' does not depend on any axioms
+'FormationRoutes.manualResult' does not depend on any axioms
+'FormationRoutes.manual_two_steps' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.either_form_without_coupling' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.matched_connected_can_finish' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.matched_disconnected_cannot_finish' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.repair_uses_last_work' depends on axioms: [propext]
+'FormationRoutes.connected_underfunded_cannot_finish' depends on axioms: [propext, Quot.sound]
+'FormationRoutes.redundant_for_single_target_with_two_work' depends on axioms: [propext, Quot.sound]

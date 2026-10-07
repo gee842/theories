@@ -16,22 +16,22 @@ The supplied new controller replaces eight old controller symbols with24 bounded
 
 ## From the learned plan to the changed generator
 
-The controller pays to traverse its retained model and find the shortest unary word reaching learned output1. That computes `aa`; it is not passed a correct word or native phase from the hidden plant. A paid reset followed by those two actions enacts the plan. The established contact law connects output1 to potential source capture. That physical calibration is a premise; an abstract binary label does not intrinsically mean support.
+The controller pays to traverse its retained model and find the shortest unary word reaching learned output1. That computes `aa`; it is not passed a correct word or native phase from the hidden plant. A resource-dependent reset followed by those two actions enacts the plan. The established contact law connects output1 to potential source capture. That physical calibration is a premise; an abstract binary label does not intrinsically mean support.
 
-The native probe consumes the sole remaining packet. If productive, it actually credits10 fuel units before the separately paid receipt. Otherwise the packet is wasted. Only after acquiring the receipt does the controller pay to write
+The native probe consumes the sole remaining packet. If productive, it actually credits10 fuel units before the separately resource-dependent receipt. Otherwise the packet is wasted. Only after acquiring the receipt does the controller pay to write
 
 \[
 p=1-c,
 \]
 
-where c is the acquired arrival bit. The initially zero method bit receives separate paid maintenance. A later paid read of p and dispatch select one of two procedures:
+where c is the acquired arrival bit. The initially zero method bit receives separate resource-dependent maintenance. A later resource-dependent read of p and dispatch select one of two procedures:
 
 | Retained method bit | Enacted generator | Generated current hypotheses |
 |---|---|---|
 |0|G0, reuse the learned machine|H3, both reading parities and all phases:6 candidates|
 |1|G1, broaden the model family|H3 plus the supplied `stutter(H3)` construction, both reading parities and all phases:14 candidates|
 
-G1 actually constructs and stores the larger machine; it does not merely attach an “explore” label. Both methods then obtain fresh observations using the earlier paid candidate-elimination routine. They retain the selected model, reading parity, newly acquired cursor and method bit, execute one forward prediction, and pay final maintenance. No second productive packet is available; this later use is predictive.
+G1 actually constructs and stores the larger machine; it does not merely attach an “explore” label. Both methods then obtain fresh observations using the earlier resource-dependent candidate-elimination routine. They retain the selected model, reading parity, newly acquired cursor and method bit, execute one forward prediction, and pay final maintenance. No second productive packet is available; this later use is predictive.
 
 The method bit changes before this branch's first generator dispatch. The prior learned model has actually guided the failed resource attempt, but G0 has not first been tried and found inferior to G1 within that history. The construction establishes consequence-dependent selection between supplied procedures, not comparative learning from their earlier performance.
 
@@ -48,7 +48,7 @@ Both complete acquisition, a matching new prediction and maintenance. Their maxi
 
 Changing worlds alone would leave several possible explanations. The stronger intervention uses the same unchanged H3 world and the same actual ten-unit return, but inverts the receipt channel. Both the accurate and misleading arms consume identical amounts of modeled fuel through the method read. With accurate receipt, p remains0 and G0 runs. With misleading receipt, p becomes1 and G1 runs. Both complete their later procedures, so the difference is not caused by one arm exhausting its modeled fuel.
 
-A matched write-clamp pays the same write bill while leaving the old method bit unchanged. After that same misleading receipt it runs G0. Its expenditure and subsequent audit/use trace match the accurate narrow arm, while its acquired probe receipt remains inverted. Thus the acquired signal affects a paid retained bit, and that bit mediates which generator subsequently executes. It is unnecessary to introduce an observer's accuracy score or abstract reward as an input to the selector.
+A matched write-clamp pays the same write bill while leaving the old method bit unchanged. After that same misleading receipt it runs G0. Its expenditure and subsequent audit/use trace match the accurate narrow arm, while its acquired probe receipt remains inverted. Thus the acquired signal affects a resource-dependent retained bit, and that bit mediates which generator subsequently executes. It is unnecessary to introduce an observer's accuracy score or abstract reward as an input to the selector.
 
 This demonstrates consequence-sensitive method selection under a fixed supplied update law. It does not demonstrate that the learner discovered the update law, compared its long-run value against alternatives, formed the sensor calibration, or selected its own opportunity schedule. A conventional finite lookup controller reproduces the same transition law; naming this process generative creates no additional performance advantage.
 

@@ -1,0 +1,15 @@
+import RecursiveSelectionInheritance
+
+#print axioms RecursiveSelectionInheritance.State
+#print axioms RecursiveSelectionInheritance.Transfer
+#print axioms RecursiveSelectionInheritance.material
+#print axioms RecursiveSelectionInheritance.operate
+#print axioms RecursiveSelectionInheritance.assemble
+#print axioms RecursiveSelectionInheritance.operation_accounts
+#print axioms RecursiveSelectionInheritance.assembly_accounts
+#print axioms RecursiveSelectionInheritance.connected_two_generation_accounts
+#print axioms RecursiveSelectionInheritance.assembly_row_limits
+#print axioms RecursiveSelectionInheritance.fully_assembled_strong_share_rises_iff
+#print axioms RecursiveSelectionInheritance.faithful_two_generation_history
+#print axioms RecursiveSelectionInheritance.converted_two_generation_history
+#print axioms RecursiveSelectionInheritance.insufficient_source_or_excess_assembly_fails

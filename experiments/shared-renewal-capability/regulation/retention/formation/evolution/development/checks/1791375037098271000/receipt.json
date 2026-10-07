@@ -1,0 +1,392 @@
+{
+  "status": "failed",
+  "checked_at_utc": "2026-10-07T12:10:52.171336+00:00",
+  "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "f861effa6534a2455fe2f4bd22bb41bb31d46e7f196d984511d8371bd1b25719",
+  "inherited_receipt_sha256": "1798cc32373a8b032996d36194f6c29e616ea17ffd7e58938be860796f013f5c",
+  "fresh_temporary_build": true,
+  "inputs_unchanged": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "log": "checks/1791375037098271000/GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "FormedSelection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "FormedSelection.population_type_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_valid": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_material_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_common_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.copy_increment_le_spent": [
+          "propext"
+        ],
+        "FormedSelection.copy_tally_le_spent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_copy_budget": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.exact_step_rank_drop": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_strict_rank": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_event_bound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.no_infinite_event_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.repair_needs_three_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.low_fuel_cannot_restore_site": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.step_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.trace_paid_mixed_phase": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.restored_site_and_alternative_need_four_initial_common_units": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_step": [
+          "propext"
+        ],
+        "FormedSelection.a_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.h_absence_trace": [
+          "propext"
+        ],
+        "FormedSelection.a_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.h_appearance_requires_formation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.a_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.h_copy_has_template": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_step": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_trace": [
+          "propext"
+        ],
+        "FormedSelection.owned_support_forbids_h_local_copy": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.paid_formation_to_copy": [
+          "propext"
+        ],
+        "FormedSelection.witness_accounting": [
+          "propext"
+        ],
+        "FormedSelection.repair_enables_capture": [
+          "propext"
+        ],
+        "FormedSelection.capture_enables_copy": [
+          "propext"
+        ],
+        "FormedSelection.initial_owned_support": [
+          "propext"
+        ],
+        "FormedSelection.no_h_local_copies_from_absence_without_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.repaired_site_can_pass_to_alternative": [
+          "propext"
+        ],
+        "FormedSelection.inheritance_accounting": [
+          "propext"
+        ]
+      },
+      "log": "checks/1791375037098271000/FormedSelection.txt",
+      "log_sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+    },
+    {
+      "module": "FormationRoot",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean",
+      "sha256": "2ef3a84db441945ae20057041e1ccab668ea4fff320c78882929e4f42cfa09e8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "FormedSelection.trace_to_root": [
+          "propext"
+        ],
+        "FormedSelection.trace_from_root": [
+          "propext"
+        ],
+        "FormedSelection.trace_iff_root": [
+          "propext"
+        ],
+        "FormedSelection.root_energy_ledger": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.root_three_unit_bootstrap": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.root_four_unit_mixed_bootstrap": [
+          "Quot.sound",
+          "propext"
+        ],
+        "FormedSelection.root_formation_to_copy": [
+          "propext"
+        ],
+        "FormedSelection.root_no_h_local_copy_before_resident_wear": [
+          "propext"
+        ],
+        "FormedSelection.root_repaired_site_inheritance": [
+          "propext"
+        ],
+        "FormedSelection.trace_append_iff": [
+          "propext"
+        ]
+      },
+      "log": "checks/1791375037098271000/FormationRoot.txt",
+      "log_sha256": "b1072e71ef599875b5e26b9fff52bf220bc96e3f0731b0663eaad34de8687404"
+    },
+    {
+      "module": "ConsequenceTransmission",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean",
+      "sha256": "6d0cc231a53f910afa0fa9d056aa23be244a800c666f1c51f4f6b50d78c39c07",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "ConsequenceTransmission.numerator_balance": [
+          "propext"
+        ],
+        "ConsequenceTransmission.strict_increase_iff": [
+          "propext"
+        ],
+        "ConsequenceTransmission.neutral_iff": [
+          "propext"
+        ],
+        "ConsequenceTransmission.strict_decrease_iff": [
+          "propext"
+        ],
+        "ConsequenceTransmission.denominator_positive": [],
+        "ConsequenceTransmission.shared_access_is_neutral": [
+          "propext"
+        ],
+        "ConsequenceTransmission.Native.positive_a_weight_has_native_event": [
+          "propext"
+        ],
+        "ConsequenceTransmission.Native.positive_h_weight_has_native_event": [
+          "propext"
+        ],
+        "ConsequenceTransmission.Native.native_copy_transmits_its_response_structure": [
+          "propext"
+        ],
+        "ConsequenceTransmission.Native.actual_capture_changes_copy_access": [
+          "propext"
+        ],
+        "ConsequenceTransmission.Native.actual_transfer_with_both_structures_present": [
+          "propext"
+        ],
+        "ConsequenceTransmission.Native.same_composition_opposite_access": [
+          "propext"
+        ],
+        "ConsequenceTransmission.transmission_preserves_total_event_weight": [],
+        "ConsequenceTransmission.transmitted_structure_increase_iff": [
+          "propext"
+        ],
+        "ConsequenceTransmission.faithful_transmission_matches_template": [],
+        "ConsequenceTransmission.faithful_increase_iff_template_increase": [],
+        "ConsequenceTransmission.positive_template_advantage_can_reverse_in_transmission": [],
+        "ConsequenceTransmission.Native.reached_neutral_event_is_native": [
+          "propext"
+        ],
+        "ConsequenceTransmission.balanced_transfer_matches_template": []
+      },
+      "log": "checks/1791375037098271000/ConsequenceTransmission.txt",
+      "log_sha256": "bbf26f90e8ba48f79ed96734bc7bd8887650f06ff99b2fce7bba7300454d598e"
+    },
+    {
+      "module": "DevelopedResponse",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/DevelopedResponse.lean",
+      "sha256": "5bef2c85e9cd8c043ec9af0297b39c88b03523ce4ca29349eb2a59d2749082f5",
+      "new": true,
+      "passed": false,
+      "exit_code": 1,
+      "axioms_by_declaration": {
+        "DevelopedResponse.runnable_trace": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.native_runnable_trace": [
+          "propext"
+        ],
+        "DevelopedResponse.command_uses_gate_and_reading": [
+          "propext"
+        ],
+        "DevelopedResponse.same_carrier_different_developmental_record": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.equal_cost_development_reconstructs_different_gates": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.same_assay_enacts_developed_difference": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.consequence_reformation_reaches_operating_grandchild": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.supplied_assistance_can_rescue_development": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.carrier_is_not_already_a_developed_response": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.operational_response_without_next_capture": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.developed_table_comes_from_operating_assays": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.transmission_formula_applies_to_developed_table": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.advance_core": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.enabled_energy_balance": [
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.runnable_energy_balance": [
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.whole_timely_history_with_material_and_energy": [
+          "propext",
+          "sorryAx"
+        ],
+        "DevelopedResponse.whole_rescued_history_with_material_and_energy": [
+          "propext",
+          "sorryAx"
+        ]
+      },
+      "log": "checks/1791375037098271000/DevelopedResponse.txt",
+      "log_sha256": "5f4968cc2977400120e6ca0e03b053906391dc09e8592edabd5c0f80461f8137"
+    }
+  ],
+  "new_audits": 17,
+  "scope": "Finite same-history developmental reconstruction of functioning response gates from actual sampled native conditions and capture; two equal-cost developmental timings, descendant response, consequence-supported grandchild carrier/rig/binding and fresh enactment, assisted rescue and finite-source obstruction. Native support accounting and held-part prefix checks retained. Functional assay transmission-table correspondence does not assert biological liangzhi, natural event weights, normative warrant or indefinite renewal."
+}

@@ -1,0 +1,2390 @@
+{
+  "updated": "2026-10-08",
+  "scope_zh": "本表覆盖你指定的完整理论链：生成根基、共同实现、生生伦理、情境判断、学习、良知与智慧，以及相关证明、评审和来源。它按论证关系整理，完整列出这条链的主要命题与支撑入口；不把整个仓库的其他理论分支或每个辅助引理逐行混入。精细章节与声明可由总成果目录继续查阅。",
+  "scope_en": "This table covers the requested connected chain: generative grounding, joint realization, Shengsheng ethics, situated judgment, learning, Liangzhi and wisdom, together with proofs, reviews and sources. It organizes the chain’s main propositions and supporting entries by their argumentative roles; it does not mix in every other repository branch or every auxiliary lemma. The wider catalogue provides the finer chapter and declaration inventory.",
+  "quote_zh": "新形成的关系使原来不能共同发生的生活与进一步形成条件能够共同实现时，整体获得了新的实现方式；其正面意义可以就在这种共同形成中，而不必先变成发起者的收益。",
+  "quote_en": "When newly formed relations enable forms of living and conditions for further formation that could not previously occur together to be jointly realized, the whole acquires a new mode of realization; its favorable significance may lie in this co-formation itself, without first becoming a return to its initiator.",
+  "quote_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md#4-正面伦理推论得到更准确的对象但仍需要根据",
+  "maintenance_record": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+  "sections": [
+    {
+      "id": "ground",
+      "title_zh": "一、共同根基与正面论断",
+      "title_en": "Shared grounding and the positive claim",
+      "entries": [
+        {
+          "id": "C01",
+          "title_zh": "同一生成展开与关系分化",
+          "title_en": "One generative unfolding and relational differentiation",
+          "claim_zh": "活动形成并改变后续活动的条件；主体、认识、行动和评价在其中分化，不是彼此独立的起点。",
+          "claim_en": "Activity forms and changes the conditions of further activity; subjects, knowing, acting and evaluation differentiate within it rather than beginning independently.",
+          "scope_zh": "项目方法与基础候选；必然性未证",
+          "scope_en": "Project method and foundational candidate; necessity unproved",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#begin-within-generative-unfolding"
+            }
+          ]
+        },
+        {
+          "id": "C02",
+          "title_zh": "整体作为根据与真实差异",
+          "title_en": "The whole as ground, with real differentiation",
+          "claim_zh": "伦理研究以相互关联的整体为根据，同时保留各处经验、生命、参与及损失；整体不是一个更大的价值所有者。",
+          "claim_en": "Ethical grounding concerns the interconnected whole while retaining distinct experiences, lives, participation and losses; the whole is not a larger value-owner.",
+          "scope_zh": "当前哲学重构；普遍根据待证",
+          "scope_en": "Current philosophical reconstruction; universal grounding open",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#the-whole-is-the-unit-of-grounding"
+            }
+          ]
+        },
+        {
+          "id": "C04",
+          "title_zh": "多个生的范围与跨范围后果",
+          "title_en": "Multiple ranges of life and cross-range consequences",
+          "claim_zh": "生物生态、心智关系与生活方式、广义组织生成均保留；一个范围的增长不能直接代替整体判断。",
+          "claim_en": "Biological/ecological life, minds and relationships, ways of living, and broad organization remain distinct ranges; growth in one does not settle the whole appraisal.",
+          "scope_zh": "研究范围已明确；统一比较未完成",
+          "scope_en": "Research ranges specified; integrated comparison incomplete",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-DIRECTION-RECONSTRUCTION.md#2-多个范围同一展开"
+            }
+          ]
+        },
+        {
+          "id": "C03",
+          "title_zh": "生生不息的正面方向",
+          "title_en": "Shengsheng as a positive direction",
+          "claim_zh": "整体创造更多生、更丰富的可能与多样性，并使复杂组织继续发展的能力，是正在论证的善的方向。",
+          "claim_en": "The whole’s formation of more life, richer possibilities and diversity, and capacities for further organizational development is the proposed favorable direction.",
+          "scope_zh": "Ren 明确方向；普遍伦理身份未证",
+          "scope_en": "Direction stated by Ren; universal ethical identification unproved",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
+            }
+          ]
+        },
+        {
+          "id": "C21",
+          "title_zh": "共同形成本身的候选正面意义",
+          "title_en": "Co-formation itself as a candidate favorable realization",
+          "claim_zh": "新关系使原本不能共同发生的生活及进一步形成条件共同实现时，整体形成一种新的实现方式；其正面意义不必先成为发起者收益。",
+          "claim_en": "When new relations enable forms of living and conditions for further formation that could not previously occur together to be jointly realized, the whole gains a new mode of realization; its favorable significance need not first become a return to the initiator.",
+          "scope_zh": "本表核心哲学候选；不是由共同可行性直接证明的普遍伦理身份。",
+          "scope_en": "The central philosophical candidate; universal ethical identity is not proved merely by joint feasibility.",
+          "links": [
+            {
+              "label_zh": "所引原段",
+              "label_en": "Quoted passage",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md#4-正面伦理推论得到更准确的对象但仍需要根据"
+            },
+            {
+              "label_zh": "完整正面论证",
+              "label_en": "Affirmative argument",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-ARGUMENT.md#5-the-strongest-affirmative-ethical-hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "C05",
+          "title_zh": "不以回报发起者为善的条件",
+          "title_en": "Goodness need not return to the initiator",
+          "claim_zh": "实际的好与后续生成可以发生在别处或发起者退出之后；无需先证明它最终回报一个扩大的自我。",
+          "claim_en": "Actual good and further generation can occur elsewhere or after the initiator leaves; they need not first be justified as benefits returning to an enlarged self.",
+          "scope_zh": "被辩护的整体伦理立场；普遍效力待证",
+          "scope_en": "Defended whole ethical position; universal authority open",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#begin-within-generative-unfolding"
+            },
+            {
+              "label_zh": "相关论证",
+              "label_en": "Related argument",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#whole-appraisal-needs-no-additional-beneficiary"
+            }
+          ]
+        },
+        {
+          "id": "C06",
+          "title_zh": "自身之善、休息与有限实现",
+          "title_en": "Self-good, rest and finite realization",
+          "claim_zh": "自身照料、休息与有限完成属于整体中的真实实现，不必靠后续生产或额外外部收益才有地位。",
+          "claim_en": "Self-care, rest and finite fulfillment are real realizations within the whole; they need not earn standing through later production or additional outward returns.",
+          "scope_zh": "明确保留的伦理范围；非生产义务",
+          "scope_en": "Explicitly retained ethical scope; no productivity duty",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#self-care-is-a-realization-within-the-whole"
+            },
+            {
+              "label_zh": "相关论证",
+              "label_en": "Related argument",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#renewal-and-practical-importance-do-not-exhaust-goodness"
+            }
+          ]
+        },
+        {
+          "id": "C22",
+          "title_zh": "方向、持续能力与最大化的区别",
+          "title_en": "Direction, continuing capacity and maximization",
+          "claim_zh": "生生方向不要求每一步增长、每种旧形式保留或最大化单一数字；真实新生、有限实现与损失在同一历史中判断。",
+          "claim_en": "The generative direction requires neither growth at every step, preservation of every old form nor maximization of a single number; novelty, finite fulfillment and losses are assessed within one history.",
+          "scope_zh": "当前方向的范围限定；没有预设单调性、全序或永续。",
+          "scope_en": "Scope qualification of the current direction; no assumed monotonicity, total ordering or endless persistence.",
+          "links": [
+            {
+              "label_zh": "正面方向及限定",
+              "label_en": "Direction and qualifications",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
+            },
+            {
+              "label_zh": "前提与选择的检查",
+              "label_en": "Premise and selection audit",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formation",
+      "title_zh": "二、延续、共同实现与转化",
+      "title_en": "Continuation, co-realization and transformation",
+      "entries": [
+        {
+          "id": "C07",
+          "title_zh": "延续依赖条件再形成",
+          "title_en": "Continuation depends on renewing conditions",
+          "claim_zh": "在未更新活动受明确良基约束时，无限延续必须反复更新；固定形式更新也可以满足它，不要求持续新颖。",
+          "claim_en": "When unrenewed activity obeys a stated well-founded constraint, infinite continuation requires recurrent renewal; renewal may preserve a fixed form without continual novelty.",
+          "scope_zh": "条件 Lean 已查；真实生命对应另需论证",
+          "scope_en": "Conditional Lean result checked; living correspondence still required",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#continuation-depends-on-generativity"
+            }
+          ]
+        },
+        {
+          "id": "C08",
+          "title_zh": "一般必要关系与情境实现",
+          "title_en": "General dependencies and situated realization",
+          "claim_zh": "持续需求超过既有支持时必须补充或改接；充分的保持与推进证书可构造及时更新的同一延续。限定的非负净内向运输、维持上界与外排工作耦合可导出支持账，保留继承容差、存留支持与休止。新的端点预算容许中途越界及被动向外缓解。",
+          "claim_en": "Continued demand beyond inherited support requires replenishment or changed provision; sufficient preservation and progress certificates construct one timely renewing continuation. A scoped derivation obtains the support account from nonnegative net inward transport, a maintained operative bound and work-coupled export, retaining inherited tolerance, retained work support and inactivity. New endpoint accounting admits intermediate excursions and passive outward relief.",
+          "scope_zh": "一般条件证明及限定运输实现已由 Lean 检查；运输连接新增10项定理／20项声明，未证明全部生命适用或伦理义务。维持条件的暂时离开不等于不可逆失去生命。后续端点研究的15项定理／20项声明已有源绑定回执；未由预算证明恢复存在、生理功能恢复或全程安全。",
+          "scope_en": "General conditional proofs and a restricted transport realization are Lean-checked; the latter adds 10 theorems/20 declarations, without establishing coverage of all life or ethical duty. A temporary departure from a maintained condition is not irreversible loss of life. The subsequent endpoint study has a source-bound receipt for 15 theorems/20 declarations; its budget does not establish existence of recovery, restored physiological function or safety throughout.",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#general-requirements-and-situated-realization"
+            },
+            {
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md#a-derived-maintenance-mechanism",
+              "label_zh": "生命依存的机制推导",
+              "label_en": "Mechanistic derivation of living dependencies"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md",
+              "label_zh": "端点返回的必要账目",
+              "label_en": "Necessary accounts for endpoint return"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json",
+              "label_zh": "端点研究回执",
+              "label_en": "Endpoint-study receipt"
+            }
+          ]
+        },
+        {
+          "id": "C09",
+          "title_zh": "形成能力、实际运用与接续",
+          "title_en": "Formed capacity, actual exercise and continuation",
+          "claim_zh": "能力已形成、能力实际被运用、下轮条件得到再形成是不同关系；任意高的有限完成可能，不能仅凭这些替代可能性推出一条实际持续形成的历史。",
+          "claim_en": "Formed capacity, its actual exercise and renewed next-stage conditions are distinct; arbitrarily high finite completion possibilities do not by themselves establish one history of ongoing actual formation.",
+          "scope_zh": "局部 Lean 与独立重建已查；善的身份待证",
+          "scope_en": "Local Lean and independent reconstruction checked; ethical identity open",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
+            }
+          ]
+        },
+        {
+          "id": "C10",
+          "title_zh": "有支持的共同形成",
+          "title_en": "Supported joint formation",
+          "claim_zh": "新形成的共用关系能在同一有限支持下让不同形式共同完成，即便每一形式本来已能单独完成。",
+          "claim_en": "A formed shared relation can enable different forms to be completed together under the same finite support even when each was already separately achievable.",
+          "scope_zh": "给定规律下 Lean 已查；整体优势非自动",
+          "scope_en": "Lean checked under supplied laws; no automatic whole superiority",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#supported-joint-formation"
+            }
+          ]
+        },
+        {
+          "id": "C11",
+          "title_zh": "共同实现的精确保存",
+          "title_en": "Exact preservation of joint realization",
+          "claim_zh": "保留所有共同可实现陈述束，等价于每条旧接续有一条新接续保留其全部所表示实现；逐项可能性不足。",
+          "claim_en": "Preserving every jointly realizable claim bundle is equivalent to matching each old continuation with one new continuation preserving its represented realizations; marginal possibilities are insufficient.",
+          "scope_zh": "5 项新定理的一部分；21 项声明全空公理报告",
+          "scope_en": "Part of five new checked theorems; all 21 declaration axiom reports empty",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-MATH.md#3-exact-joint-preservation-theorem"
+            }
+          ]
+        },
+        {
+          "id": "C12",
+          "title_zh": "完整描述与真实变化",
+          "title_en": "Complete description and actual change",
+          "claim_zh": "完整记录事实不等于让所有旧关系继续为真；保持同角色的全部正反真值会排除明确的新真旧假见证。",
+          "claim_en": "Complete factual recording does not require every old relation to remain true; preserving all same-role signed truths excludes an explicit newly-true/previously-false witness.",
+          "scope_zh": "Lean 已查；时间索引变化保留",
+          "scope_en": "Lean checked; time-indexed change remains possible",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-MATH.md#5-why-preservation-of-all-facts-cannot-define-strict-enrichment"
+            }
+          ]
+        },
+        {
+          "id": "C13",
+          "title_zh": "重组与建设性结束",
+          "title_en": "Reconfiguration and constructive endings",
+          "claim_zh": "结束特定组织可以参与后续形成；是否有理由结束取决于完整关系、可行替代与真实损失，不由新产物出现自动决定。",
+          "claim_en": "Ending a particular organization can participate in further formation; justification depends on the full relation, feasible alternatives and real losses, not merely a new output.",
+          "scope_zh": "局部重组 Lean 已查；伦理比较为候选",
+          "scope_en": "Local reconfiguration Lean checked; ethical comparison remains a candidate",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#reconfiguration-and-constructive-endings"
+            }
+          ]
+        },
+        {
+          "id": "C14",
+          "title_zh": "生成对选择的递归影响",
+          "title_en": "Recursive influence of generation on selection",
+          "claim_zh": "活动后果可改变留存、后继形成与下一轮选择条件；共同产出优势不保证贡献变体获得传递优势。",
+          "claim_en": "Activity’s consequences can change retention, successor formation and later selection; a collective output advantage does not guarantee transmission advantage for the contributing variant.",
+          "scope_zh": "条件机制与 Lean；普遍向善未证",
+          "scope_en": "Conditional mechanism and Lean; universal favorable evolution unproved",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethics",
+      "title_zh": "三、伦理根据、真实取舍与情境理由",
+      "title_en": "Ethical warrant, real tradeoffs and situated reasons",
+      "entries": [
+        {
+          "id": "C16",
+          "title_zh": "有根据的修正与学习",
+          "title_en": "Warranted revision through learning",
+          "claim_zh": "学习应允许根据真实变化与证据修正旧判断，同时保留对实际根据的负责；封闭异议或保持旧判决都不等于正确。",
+          "claim_en": "Learning must allow correction through actual changes and evidence while remaining answerable to the grounds; silencing challenges or freezing old verdicts does not establish correctness.",
+          "scope_zh": "被辩护的范围区分；普遍规范不变量待证",
+          "scope_en": "Defended scope distinction; universal normative invariant open",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit"
+            }
+          ]
+        },
+        {
+          "id": "C17",
+          "title_zh": "显式生成公理路线",
+          "title_en": "The explicit generative-axiom route",
+          "claim_zh": "将生及继续生成的正面意义明确作为起点，可以共用一套情境推论；它保留为独立路线，不是起点自身已无前提得证。",
+          "claim_en": "Taking the favorable significance of life and further generation as an explicit starting point supports shared situated inference; this separate route does not prove its starting point without premises.",
+          "scope_zh": "已授权并发展的显式前提理论；非零公理结果",
+          "scope_en": "Authorized explicit-premise theory; not a zero-axiom result",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#an-explicit-ethical-starting-point-and-the-generative-conditions-of-a-future"
+            }
+          ]
+        },
+        {
+          "id": "C18",
+          "title_zh": "整体质量与差异化实践理由",
+          "title_en": "Whole quality and differentiated practical reasons",
+          "claim_zh": "有根据的整体质量须通过实际作用、能力、承担与限度说明不同位置的理由；理由不自动成为义务、权限或服从。",
+          "claim_en": "Warranted whole quality must address different positions through actual effects, capacities, commitments and limits; a reason is not automatically a duty, authority or compliance.",
+          "scope_zh": "有前提推论与 Lean 已查；普遍实践根据待证",
+          "scope_en": "Conditional inference and Lean checked; universal practical grounding open",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#from-the-generative-premise-to-situated-reasons"
+            },
+            {
+              "label_zh": "相关论证",
+              "label_en": "Related argument",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+            }
+          ]
+        },
+        {
+          "id": "C19",
+          "title_zh": "真实混合与不可抹去的损失",
+          "title_en": "Real mixtures and losses that remain",
+          "claim_zh": "真实取舍须保留双方的实现与损失：当下被中断的生活与后来接续同属生成根据。G0 路线的 K 候选给某些中断—实际恢复—接续路线以可反驳支持；已有充分比较则可沿真正匹配的减损传递。",
+          "claim_en": "Real tradeoffs retain both realizations and losses: interrupted present living and later continuation belong to the same generative ground. Within the G0 route, candidate K gives some interruption–actual recovery–continuation routes defeasible support; an already warranted sufficient comparison can transport across genuinely matched loss reduction.",
+          "scope_zh": "K 尚非 G0 最薄表达的已证后果；可反驳支持不是全盘严格优先。首个混合比较与有限牺牲上限仍待辩护；下一问题是接续关系相对有限完成的伦理分量。结构不包含不等于伦理不可比较。形式包见 F13–F14。",
+          "scope_en": "K is not proved by G0’s minimal statement; defeasible support is not overall strict priority. The first mixed comparison and finite sacrifice bound still need defense; next is the ethical contribution of continuation relative to finite fulfillment. Structural non-inclusion is not ethical incomparability. Formal packages: F13–F14.",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md#5-真正混合的情况不能由表示修复替代判断"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#1-本轮的正面推进",
+              "label_zh": "K 候选与取舍",
+              "label_en": "Candidate K and tradeoffs"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md",
+              "label_zh": "损失与比较的边界",
+              "label_en": "Loss and comparison limits"
+            },
+            {
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#loss-sensitive-comparison-and-the-first-mixed-anchor",
+              "label_zh": "最新理论接续",
+              "label_en": "Current theoretical continuation"
+            }
+          ]
+        },
+        {
+          "id": "C23",
+          "title_zh": "有限认识中的情境判断",
+          "title_en": "Situated judgment under finite knowledge",
+          "claim_zh": "回应会共同改变生活、进一步形成的条件及取得后果证据的能力；部分理由、总体排序与实施根据须分别说明。实际处境须仍在候选范围中；各处境分别有路，不等于未知处境下已有统一可实施的回应。",
+          "claim_en": "A response co-shapes living, conditions of further formation and access to evidence of its consequences; contributory reasons, overall ranking and grounds for implementation require distinct support. The actual situation must remain within the candidate range; a route in each possible situation is not one response implementable across unknown situations.",
+          "scope_zh": "正面论证与实质反审；未知不等于无损，可修订性不单独认证回应。F13 检查条件认识关系，不证明 K；未知不是必要损失的证明。",
+          "scope_en": "Affirmative argument and substantive review; unknown effects are not absent losses, and revisability alone does not justify a response. F13 checks conditional epistemic relations, not K; uncertainty is not proof of necessary loss.",
+          "links": [
+            {
+              "label_zh": "情境与不确定性",
+              "label_en": "Situation and uncertainty",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+            },
+            {
+              "label_zh": "整合与范围修正",
+              "label_en": "Integration and scope correction",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#4-必要损失与目前只知道这条路不同",
+              "label_zh": "必要性与有限认识",
+              "label_en": "Necessity and finite knowledge"
+            }
+          ]
+        },
+        {
+          "id": "C20",
+          "title_zh": "零公理普遍元伦理目标",
+          "title_en": "The zero-axiom universal metaethical target",
+          "claim_zh": "须从整体实际生成说明伦理质量及跨智能实践效力，并区分普遍有效、实际认可服从与理论表述的唯一必要性。",
+          "claim_en": "The target is to ground ethical quality and practical force across intelligence in actual whole generation, distinguishing universal validity, recognition/compliance and the unique necessity of a formulation.",
+          "scope_zh": "当前最高目标；尚未证明，也未证明不可能",
+          "scope_en": "Current governing target; neither proved nor shown impossible",
+          "links": [
+            {
+              "label_zh": "当前表述与范围",
+              "label_en": "Current statement and scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#zero-axiom-continuation-joint-realization-and-actual-change"
+            },
+            {
+              "label_zh": "相关论证",
+              "label_en": "Related argument",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "title_zh": "四、学习、关切、良知与智慧怎样形成",
+      "title_en": "Formation of learning, concern, Liangzhi and wisdom",
+      "entries": [
+        {
+          "id": "M01",
+          "title_zh": "依存、运作意义与调节",
+          "title_en": "Dependency, operational significance and regulation",
+          "claim_zh": "组织所依存的关系改变其后续活动；当后果进入回应并改变支承条件时，调节便在同一过程中形成。",
+          "claim_en": "Dependencies change what an organization can do next; regulation forms when consequences enter responses that alter those enabling relations.",
+          "scope_zh": "条件性机制与应用综合已接受；运作意义不等于体验或伦理价值。",
+          "scope_en": "Conditional mechanism and application synthesis accepted; operational significance is not experience or ethical value.",
+          "links": [
+            {
+              "label_zh": "依存、运作意义与调节",
+              "label_en": "Dependency, operational significance and regulation",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md"
+            }
+          ],
+          "connection_zh": "说明共同形成为什么需要真实支持与反馈，不能只把成功活动并列。",
+          "connection_en": "Explains why co-formation requires actual support and feedback, not a list of separately successful activities.",
+          "source_section": "1. From interaction to something that can fare differently",
+          "source_line": 13,
+          "row_type": "mechanism",
+          "source_id": "operational_significance_regulation"
+        },
+        {
+          "id": "M02",
+          "title_zh": "选择器及修订机制的形成",
+          "title_en": "Formation of selectors and their revision mechanisms",
+          "claim_zh": "决定回应的机制本身可以形成、损耗、替换，并通过实际后果影响下一轮重建。",
+          "claim_en": "Mechanisms selecting responses can themselves form, wear and be replaced, with actual consequences shaping subsequent reconstruction.",
+          "scope_zh": "有限条件构造与检查完成；备选规则、组装配方和提案律仍给定。",
+          "scope_en": "Finite conditional construction checked; alternative rules, assembly recipes and proposal laws remain supplied.",
+          "links": [
+            {
+              "label_zh": "选择器及修订机制的形成",
+              "label_en": "Formation of selectors and their revision mechanisms",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md"
+            },
+            {
+              "label_zh": "相关接续",
+              "label_en": "Related continuation",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md"
+            }
+          ],
+          "connection_zh": "把组织方式怎样继续生成组织方式接入共同历史。",
+          "connection_en": "Connects the formation of organizing mechanisms to further organization within one history.",
+          "source_section": "Forming and changing the mechanisms that revise selectors",
+          "source_line": 1,
+          "row_type": "mechanism",
+          "source_id": "selection_over_selectors"
+        },
+        {
+          "id": "M03",
+          "title_zh": "后果学习、预测与行动",
+          "title_en": "Consequence learning, prediction and action",
+          "claim_zh": "实际行动形成证据与留存记录；新证据可纠正预测并改变后续命令，但准确预测不保证行动有效。",
+          "claim_en": "Actual action produces evidence and retained records; new evidence can correct prediction and change later commands, while accuracy alone does not ensure useful action.",
+          "scope_zh": "有限构造经 Lean 与独立数值重建检查；感知、解码及行动耦合的局部法则仍显式。",
+          "scope_en": "Finite construction checked in Lean and independent reconstruction; local sensing, decoding and action-coupling laws remain explicit.",
+          "links": [
+            {
+              "label_zh": "后果学习、预测与行动",
+              "label_en": "Consequence learning, prediction and action",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md"
+            }
+          ],
+          "connection_zh": "把知道与实行放回同一资源和材料历史。",
+          "connection_en": "Places knowing and acting within one material and resource history.",
+          "source_section": "One episode within the generative unfolding",
+          "source_line": 9,
+          "row_type": "mechanism",
+          "source_id": "acquired_prediction_action"
+        },
+        {
+          "id": "M04",
+          "title_zh": "学习方式的后果性修订",
+          "title_en": "Consequence-based revision of how learning occurs",
+          "claim_zh": "取得的诊断证据能够改变以后解释后果的机制，同时保留既有记录并传递修订结果。",
+          "claim_en": "Acquired diagnostic evidence can change the mechanism interpreting later outcomes while retaining existing records and transmitting the revision.",
+          "scope_zh": "有限接口已检查；也能保留错误更新器，不保证演化改善学习。",
+          "scope_en": "Finite interface checked; it can also preserve a wrong updater and does not guarantee improving learning.",
+          "links": [
+            {
+              "label_zh": "学习方式的后果性修订",
+              "label_en": "Consequence-based revision of how learning occurs",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md"
+            }
+          ],
+          "connection_zh": "使共同形成包含形成方式的变化，而不只重复相同产物。",
+          "connection_en": "Makes co-formation include changes in how formation proceeds, rather than repetition of the same output.",
+          "source_section": "A learner changes how it learns and passes on the change",
+          "source_line": 1,
+          "row_type": "mechanism",
+          "source_id": "learning_route_revision"
+        },
+        {
+          "id": "M05",
+          "title_zh": "后继学习与纠正的传递",
+          "title_en": "Successor learning and transmission of correction",
+          "claim_zh": "实际形成的后继可以取得新证据、纠正继承的回应，并让下一代继承该纠正。",
+          "claim_en": "An actually formed successor can acquire new evidence, correct an inherited response and transmit that correction to a further successor.",
+          "scope_zh": "有限谱系连接已检查；复制、运作与留存各需满足条件，错误回应也可被保存。",
+          "scope_en": "Finite lineage connection checked; copying, operation and retention have distinct conditions, and incorrect responses can also survive.",
+          "links": [
+            {
+              "label_zh": "后继学习与纠正的传递",
+              "label_en": "Successor learning and transmission of correction",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUCCESSOR-LEARNING.md"
+            }
+          ],
+          "connection_zh": "把共同生成扩展到有材料连续性的接续，而不将复制标签当成存续。",
+          "connection_en": "Extends co-formation through materially supported succession rather than equating copied labels with continuation.",
+          "source_section": "What becomes connected",
+          "source_line": 7,
+          "row_type": "mechanism",
+          "source_id": "successor_learning"
+        },
+        {
+          "id": "M06",
+          "title_zh": "对受影响关系的理解与纠正",
+          "title_en": "Understanding and correcting recipient-directed action",
+          "claim_zh": "某处有效的回应可能在另一处失败；按实际关系区分记录，可以纠正后者而不覆盖前者的知识。",
+          "claim_en": "A response effective in one relation can fail in another; context-specific records can correct the latter without overwriting the former knowledge.",
+          "scope_zh": "信息要求、有限实现与比较已检查；帮助改善可以没有私人资源增益。",
+          "scope_en": "Information requirements, finite realization and comparisons checked; improved help can yield no additional private resources.",
+          "links": [
+            {
+              "label_zh": "对受影响关系的理解与纠正",
+              "label_en": "Understanding and correcting recipient-directed action",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md"
+            }
+          ],
+          "connection_zh": "说明共同发生保留分化，不能把不同位置压成同一输入或利益。",
+          "connection_en": "Shows why co-occurrence must preserve differentiated positions rather than collapse them into one input or interest.",
+          "source_section": "The result",
+          "source_line": 5,
+          "row_type": "mechanism",
+          "source_id": "recipient_correction"
+        },
+        {
+          "id": "M07",
+          "title_zh": "证据、理由及修订的实际接续",
+          "title_en": "Actual continuity of evidence, reasons and revision",
+          "claim_zh": "保留的证据经当前语境解释支持理由；撤回失效路径时，独立根据与实际重建条件必须保留。",
+          "claim_en": "Retained evidence supports reasons through current contextual interpretation; withdrawing a defeated route must preserve independent grounds and actual reconstruction conditions.",
+          "scope_zh": "有限记录—理由—接续构造已验证；校准、事实到理由的关联及根理由仍需根据。",
+          "scope_en": "Finite record–reason–succession construction verified; calibration, fact-to-reason relevance and root reasons still need warrant.",
+          "links": [
+            {
+              "label_zh": "证据、理由及修订的实际接续",
+              "label_en": "Actual continuity of evidence, reasons and revision",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md"
+            },
+            {
+              "label_zh": "相关接续",
+              "label_en": "Related continuation",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md"
+            }
+          ],
+          "connection_zh": "使共同实现涵盖证据怎样进入判断和行动，不以记录存在代替有效纠正。",
+          "connection_en": "Makes co-realization include how evidence enters judgment and action, rather than treating stored records as effective correction.",
+          "source_section": "Retained observations, revisable reasons and resource-dependent reconstruction",
+          "source_line": 5,
+          "row_type": "interface",
+          "source_id": "recorded_reason_revision"
+        },
+        {
+          "id": "M08",
+          "title_zh": "取得的后果进入评价与选择",
+          "title_en": "Acquired consequences entering evaluation and choice",
+          "claim_zh": "新取得的后果记录能够形成留存的评价影响，并改变为同一受影响者采取的实际行动。",
+          "claim_en": "Newly acquired consequence records can form retained evaluative influence and change actual action for the same recipient.",
+          "scope_zh": "有限连接经 Lean 与独立重建接受；评价形成不独自证明普遍伦理有效性。",
+          "scope_en": "Finite connection accepted through Lean and independent reconstruction; formed evaluation does not itself prove universal ethical validity.",
+          "links": [
+            {
+              "label_zh": "取得的后果进入评价与选择",
+              "label_en": "Acquired consequences entering evaluation and choice",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md"
+            }
+          ],
+          "connection_zh": "连接形成理解与共同实践，区分因果影响、正确应用和规范根据。",
+          "connection_en": "Connects acquired understanding with shared practice while distinguishing causal influence, warranted application and normative grounds.",
+          "source_section": "When acquired consequences change recipient-directed choice",
+          "source_line": 5,
+          "row_type": "interface",
+          "source_id": "evaluative_uptake"
+        },
+        {
+          "id": "M09",
+          "title_zh": "评价影响、后继与新证据",
+          "title_en": "Evaluative influence, succession and fresh evidence",
+          "claim_zh": "后继继承实际取得的评价影响，并以新证据修正手段、选择和实施行动。",
+          "claim_en": "A successor inherits actually acquired evaluative influence and uses fresh evidence to revise means, choose and act.",
+          "scope_zh": "有限分阶段连接已接受；配方、校准、支持及伦理应用范围仍显式。",
+          "scope_en": "Finite staged connection accepted; recipes, calibration, support and ethical application remain explicit.",
+          "links": [
+            {
+              "label_zh": "评价影响、后继与新证据",
+              "label_en": "Evaluative influence, succession and fresh evidence",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md"
+            }
+          ],
+          "connection_zh": "把学习、评价及后续实行放在同一接续契约中。",
+          "connection_en": "Places learning, evaluation and later enactment within one succession contract.",
+          "source_section": "Effective continuation and justified application",
+          "source_line": 41,
+          "row_type": "interface",
+          "source_id": "evaluative_succession"
+        },
+        {
+          "id": "M10",
+          "title_zh": "仁、感应、理解与实践的共同形成",
+          "title_en": "Co-formation of ren, responsiveness, understanding and practice",
+          "claim_zh": "关切可以在共同活动中形成，并以实际受阻、缓解和展开纠正回应，而不只追求私人回报。",
+          "claim_en": "Concern can form through shared activity and let actual obstruction, relief and development correct responses beyond private returns.",
+          "scope_zh": "构成解释、偏蔽复通及局部模型接口已发展；最小根基到仁的完整推导未完成。",
+          "scope_en": "Constitutive account, distortion/restoration analysis and local interfaces developed; the complete derivation of ren from the minimal root remains unfinished.",
+          "links": [
+            {
+              "label_zh": "仁、感应、理解与实践的共同形成",
+              "label_en": "Co-formation of ren, responsiveness, understanding and practice",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md"
+            }
+          ],
+          "connection_zh": "最直接将引文的共同形成用于生命、感应和行动的相互塑造。",
+          "connection_en": "Directly applies co-formation to the mutual shaping of living, responsiveness and action.",
+          "source_section": "11. 仁、感应、理解与实践：一体的实现、偏蔽与复通",
+          "source_line": 159,
+          "row_type": "philosophical_mechanistic",
+          "source_id": "noninstrumental_concern"
+        },
+        {
+          "id": "M11",
+          "title_zh": "目的纠正与新继续方式",
+          "title_en": "Purpose correction and new ways to continue",
+          "claim_zh": "达到终点不等于维持活动的全过程条件；若旧路径没有合格完成，仅筛选旧路径不能创造它。",
+          "claim_en": "Reaching an endpoint does not ensure an activity's conditions held throughout; filtering old paths cannot create a qualified completion absent from them.",
+          "scope_zh": "一般条件定理已实际检查；给定活动的实现正确性不证明该活动正当。",
+          "scope_en": "General conditional theorems checked; correct realization of a specified activity does not prove its justification.",
+          "links": [
+            {
+              "label_zh": "目的纠正与新继续方式",
+              "label_en": "Purpose correction and new ways to continue",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md"
+            }
+          ],
+          "connection_zh": "要求共同实现保留过程与内容，并允许改变关系或修订目的。",
+          "connection_en": "Requires co-realization to preserve process and content while allowing changed relations or revised purposes.",
+          "source_section": "12. 目的、实际活动与新能力：继续方向的形式连接",
+          "source_line": 235,
+          "row_type": "interface",
+          "source_id": "purpose_correction"
+        },
+        {
+          "id": "M12",
+          "title_zh": "本然良知的生成演化与发展",
+          "title_en": "Generative evolution and development of liangzhi",
+          "claim_zh": "先前活动改变发育、交往和再形成条件，使感应、照料与纠正能力能够传递和重建。",
+          "claim_en": "Earlier activity changes developmental, social and reproductive conditions, allowing responsiveness, care and correction capacities to be transmitted and reconstructed.",
+          "scope_zh": "19项传递与17项发展声明已检查，有局部原始研究支持；完整良知历史与普遍可靠性未证。",
+          "scope_en": "Nineteen transmission and seventeen development declarations checked, with bounded primary evidence; a complete liangzhi history and universal reliability remain unproved.",
+          "links": [
+            {
+              "label_zh": "本然良知的生成演化与发展",
+              "label_en": "Generative evolution and development of liangzhi",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+            }
+          ],
+          "connection_zh": "把共同生成延伸为跨代形成，区分载体复制与回应能力的实际再形成。",
+          "connection_en": "Extends co-formation across generations and distinguishes carrier copying from actual reconstruction of responsive capacities.",
+          "source_section": "本然良知的生成演化",
+          "source_line": 5,
+          "row_type": "developmental",
+          "source_id": "liangzhi_evolution_development"
+        },
+        {
+          "id": "M13",
+          "title_zh": "良知的活动辨别与校准",
+          "title_en": "Activity-sensitive discernment and calibration of liangzhi",
+          "claim_zh": "回应须辨明物品、手段及请求在实际共同活动中的作用，而非固定服从或固定物品评价。",
+          "claim_en": "Responses must discern the role of objects, means and requests in actual shared activity rather than follow fixed obedience or object rankings.",
+          "scope_zh": "两项幼儿原始研究及旧证明对应经过限定评估；未证明完整发展史或伦理目的修订。",
+          "scope_en": "Two primary toddler studies and correspondence with earlier proofs assessed within bounds; no complete developmental history or ethical-purpose revision established.",
+          "links": [
+            {
+              "label_zh": "良知的活动辨别与校准",
+              "label_en": "Activity-sensitive discernment and calibration of liangzhi",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+            }
+          ],
+          "connection_zh": "解释具体意义怎样随共同生成的关系而定。",
+          "connection_en": "Explains how concrete significance depends on co-formed relationships.",
+          "source_section": "6. 认识接口：所需随共同活动而具体化",
+          "source_line": 86,
+          "row_type": "evidence_interface",
+          "source_id": "liangzhi_calibration"
+        },
+        {
+          "id": "M14",
+          "title_zh": "关切的变通、交接与有限完成",
+          "title_en": "Responsive concern, handoff and finite completion",
+          "claim_zh": "手段、目的、知情参与和既有承担的改变会改变回应；实际交接与合理结束也能参与接续。",
+          "claim_en": "Changes in means, purposes, informed participation and undertakings change responses; actual handoff and justified endings can participate in continuation.",
+          "scope_zh": "20项交接、失败、恢复及有限结束声明已检查；依存不独自分配责任，成功交接不独自认证仁。",
+          "scope_en": "Twenty handoff, failure, recovery and finite-ending declarations checked; dependence alone allocates no duty, and successful handoff alone does not establish ren.",
+          "links": [
+            {
+              "label_zh": "关切的变通、交接与有限完成",
+              "label_en": "Responsive concern, handoff and finite completion",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+            }
+          ],
+          "connection_zh": "共同生成不要求每个人持续同样生产，也不要求每项旧活动永久保留。",
+          "connection_en": "Co-formation requires neither identical ongoing production from everyone nor permanent preservation of every old activity.",
+          "source_section": "7. 同一关切可以改变回应，接续也可以通过交接实现",
+          "source_line": 102,
+          "row_type": "practical_interface",
+          "source_id": "liangzhi_handoff_completion"
+        },
+        {
+          "id": "M15",
+          "title_zh": "智慧的协同修正与慧根",
+          "title_en": "Coordinated correction in wisdom and huigen",
+          "claim_zh": "智慧协同因果理解、有根据的关切与可实行回应，并能够修正事实、排除规则和阻断纠正的权力。",
+          "claim_en": "Wisdom coordinates causal understanding, warranted concern and feasible response while revising facts, exclusion rules and power that blocks correction.",
+          "scope_zh": "有界条件综合已接受；慧根的必要性、全部伦理内容与普遍智慧未证明。",
+          "scope_en": "Bounded conditional synthesis accepted; huigen's necessity, full ethical content and universal wisdom remain unproved.",
+          "links": [
+            {
+              "label_zh": "智慧的协同修正与慧根",
+              "label_en": "Coordinated correction in wisdom and huigen",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md"
+            },
+            {
+              "label_zh": "相关接续",
+              "label_en": "Related continuation",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+            }
+          ],
+          "connection_zh": "将共同形成推进为理解、评价、行动及其修订条件的协同。",
+          "connection_en": "Extends co-formation to coordination among understanding, evaluation, action and their conditions of revision.",
+          "source_section": "7. From effective concern toward wisdom",
+          "source_line": 93,
+          "row_type": "synthesis",
+          "source_id": "wisdom_huigen"
+        },
+        {
+          "id": "M16",
+          "title_zh": "有效纠正的形成与战略脆弱性",
+          "title_en": "Formation and strategic vulnerability of effective correction",
+          "claim_zh": "能够建设纠正能力与能够承受对方对其后续条件的破坏，是不同要求。",
+          "claim_en": "Being able to build corrective capacity differs from being able to withstand attacks on its future conditions.",
+          "scope_zh": "条件战略构造与精确枚举已完成；保持历史验证范围，不升级为普遍制度结论。",
+          "scope_en": "Conditional strategic construction and exact enumeration completed; historical validation scope retained without a universal institutional conclusion.",
+          "links": [
+            {
+              "label_zh": "有效纠正的形成与战略脆弱性",
+              "label_en": "Formation and strategic vulnerability of effective correction",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md"
+            }
+          ],
+          "connection_zh": "检验共同条件怎样受到竞争和权力改变，而不预设所有连接都有利。",
+          "connection_en": "Tests how competition and power transform shared conditions without presuming every connection beneficial.",
+          "source_section": "How effective correction can form and be prevented",
+          "source_line": 5,
+          "row_type": "strategic_mechanism",
+          "source_id": "correction_formation_vulnerability"
+        },
+        {
+          "id": "M17",
+          "title_zh": "关切、有效能力与更新的共同形成",
+          "title_en": "Joint formation of concern, effective power and renewal",
+          "claim_zh": "学习、关切、查验、保护与后继重建可以在同一受支持的选择过程中相互接续。",
+          "claim_en": "Learning, concern, inspection, protection and successor reconstruction can connect within one supported choice process.",
+          "scope_zh": "条件联合构造完成；廉价隔离、俘获和资源不足仍构成失败区，未证自然必然向善。",
+          "scope_en": "Conditional joint construction completed; cheap insulation, capture and inadequate resources remain failure regimes, with no inevitable favorable direction proved.",
+          "links": [
+            {
+              "label_zh": "关切、有效能力与更新的共同形成",
+              "label_en": "Joint formation of concern, effective power and renewal",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md"
+            }
+          ],
+          "connection_zh": "直接展示分别可行的机制如何在同一历史中共同成立。",
+          "connection_en": "Directly demonstrates how separately feasible mechanisms can jointly operate in one history.",
+          "source_section": "How concern evidence and effective power can form and renew together",
+          "source_line": 5,
+          "row_type": "strategic_synthesis",
+          "source_id": "joint_concern_power_renewal"
+        },
+        {
+          "id": "M18",
+          "title_zh": "可修订关切的联合实现",
+          "title_en": "Joint realization of revisable concern",
+          "claim_zh": "理由修订、有效保护和资源支持的后继重建能够共存，但伦理过滤与战略均衡不能自动拼接。",
+          "claim_en": "Reason revision, effective protection and supported successor reconstruction can coexist, but ethical filtering and strategic equilibrium do not compose automatically.",
+          "scope_zh": "条件联合过程与部分有限决策已建立；伦理锚点、审计可靠性和权限仍明确。",
+          "scope_en": "Conditional joint process and some finite decisions established; ethical anchors, audit soundness and authority remain explicit.",
+          "links": [
+            {
+              "label_zh": "可修订关切的联合实现",
+              "label_en": "Joint realization of revisable concern",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md"
+            }
+          ],
+          "connection_zh": "把共同生成要求用于伦理、信息、资源及治理条件的实际兼容。",
+          "connection_en": "Applies co-formation to actual compatibility among ethical, informational, resource and governance conditions.",
+          "source_section": "Toward a settlement of revisable concern",
+          "source_line": 5,
+          "row_type": "ethical_strategic_synthesis",
+          "source_id": "revisable_concern_settlement"
+        },
+        {
+          "id": "M19",
+          "title_zh": "证据进入制度规则与实际补救",
+          "title_en": "Evidence entering institutional rules and delivered remedy",
+          "claim_zh": "纠正个案不等于撤回失效的共同推断；纠正须沿实际依存传到规则、公共信息与补救。",
+          "claim_en": "Correcting a case does not withdraw a defeated shared inference; correction must follow actual dependencies into rules, public information and remedy.",
+          "scope_zh": "有原始资料约束的历史应用与诊断契约；未估计设计的因果收益或完成普遍治理。",
+          "scope_en": "Primary-source-constrained historical application and diagnostic contract; no causal benefit estimate or complete general governance solution.",
+          "links": [
+            {
+              "label_zh": "证据进入制度规则与实际补救",
+              "label_en": "Evidence entering institutional rules and delivered remedy",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md"
+            }
+          ],
+          "connection_zh": "在制度中检验共同条件的形成与改变是否真正到达受影响生活。",
+          "connection_en": "Tests whether changes in shared institutional conditions actually reach affected lives.",
+          "source_section": "External evidence and institutional correction",
+          "source_line": 3,
+          "row_type": "historical_application",
+          "source_id": "institutional_correction"
+        },
+        {
+          "id": "M20",
+          "title_zh": "对齐与治理中的未来条件",
+          "title_en": "Conditions of a future in alignment and governance",
+          "claim_zh": "对齐须连接理解、关切、实际权能、纠正与更新，使行动对受影响生活及后续条件负责。",
+          "claim_en": "Alignment must connect understanding, concern, effective power, correction and renewal so that action answers to affected lives and their future conditions.",
+          "scope_zh": "候选原则、条件机制与限定经验接口；完整对齐治理及比较优势尚未确立。",
+          "scope_en": "Candidate principle, conditional mechanisms and bounded empirical interfaces; complete alignment/governance and comparative advantage remain unestablished.",
+          "links": [
+            {
+              "label_zh": "对齐与治理中的未来条件",
+              "label_en": "Conditions of a future in alignment and governance",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+            }
+          ],
+          "connection_zh": "将整条共同形成链用于 AI 与制度，而不把单项任务成功当成整体对齐。",
+          "connection_en": "Applies the full co-formation chain to AI and institutions rather than equating local task success with alignment.",
+          "source_section": "The conditions of a future in AI alignment and governance",
+          "source_line": 13,
+          "row_type": "application_programme",
+          "source_id": "alignment_governance"
+        }
+      ]
+    },
+    {
+      "id": "formal",
+      "title_zh": "五、形式支撑及其精确范围",
+      "title_en": "Formal support and its exact scope",
+      "entries": [
+        {
+          "id": "F01",
+          "title_zh": "同一过程中的路径组合",
+          "title_en": "Composition within one process",
+          "claim_zh": "两段已允许路径可以经实际到达的共同中间状态接合；忠实表示保留相应路径。",
+          "claim_en": "Admitted path segments compose through their shared reached state; faithful representations preserve the corresponding traces.",
+          "scope_zh": "任意给定的状态、事件及允许转换关系；未导出具体规律、学习或伦理方向。既有Lean 4.29.1记录：核心23项定理、28项声明，依赖为空；本表未重跑。",
+          "scope_en": "Arbitrary supplied state/event types and transition relation; no concrete law, learning or ethical direction derived. Existing Lean 4.29.1 record: 23 core theorems, 28 declarations, empty dependencies; not rerun for this table.",
+          "links": [
+            {
+              "label_zh": "核心源码",
+              "label_en": "Core source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+            },
+            {
+              "label_zh": "同次导入闭包回执",
+              "label_en": "Recorded import-closure receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F02",
+          "title_zh": "继续发生与反复更新",
+          "title_en": "Continuation and recurrent renewal",
+          "claim_zh": "无更新变化良基，且每步更新或沿该关系下降时，无限实际历史中更新会任意晚地发生；自然数秩给出有限窗口。",
+          "claim_en": "With well-founded unrenewed change and renewal-or-descent at each step, an infinite actual history renews arbitrarily late; a natural rank yields a finite window.",
+          "scope_zh": "无限实际历史、良基关系及分支前提均明确；由否定更新推出下降的版本要得到正面见证还需可判定性。复现固定形式不推出无界新颖或伦理善。既有17定理/22声明，依赖全空。",
+          "scope_en": "The infinite actual history, well-founded relation and per-step split are explicit; obtaining positive witnesses from absence-implies-descent additionally uses decidability. Repeated fixed-form renewal implies neither unbounded novelty nor ethical goodness. Recorded 17 theorems/22 declarations, all dependencies empty.",
+          "links": [
+            {
+              "label_zh": "精确假设",
+              "label_en": "Exact hypotheses",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md#3-exact-results-and-hypotheses"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean"
+            },
+            {
+              "label_zh": "回执",
+              "label_en": "Receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/continuation-renewal-verification/verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F03",
+          "title_zh": "真实依存要求补充或转变",
+          "title_en": "Actual dependence requires addition or change",
+          "claim_zh": "在同一实际窗口中，累计需求超过继承支持，必有正补充或支承途径改变；旧途径不能补充时，必须改变途径。",
+          "claim_en": "Within one actual window, cumulative demand exceeding inherited support forces addition or a change of provision; failure of inherited replenishment forces route change.",
+          "scope_zh": "给定逐步依存不等式、自然数支持/需求量、途径同一性和其可判定相等；不假定每步正消耗。途径改变不自动充分或正当。既有SituatedRenewal 9定理/17声明；其部分证明使用propext、Quot.sound。",
+          "scope_en": "Requires the per-step dependency inequality, natural-valued support/demand, route identity and decidable route equality; no positive draw on every step. Route change is not automatically sufficient or justified. Recorded SituatedRenewal: 9 theorems/17 declarations; some proofs use propext and Quot.sound.",
+          "links": [
+            {
+              "label_zh": "实际窗口及截止",
+              "label_en": "Actual windows and deadlines",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md#actual-histories-and-the-finite-deadline"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean"
+            },
+            {
+              "label_zh": "共享回执",
+              "label_en": "Shared receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F04",
+          "title_zh": "同一历史中的充分实现",
+          "title_en": "Sufficient realization on one history",
+          "claim_zh": "明确可执行的后继/事件函数与保持条件、推进秩共同构造一条持续历史，并在界内更新；各依存回应必须位于该历史。",
+          "claim_en": "Explicit admissible successor/event functions, invariant retention and progress rank construct a continuing history with bounded renewal; required dependency responses occur on that history.",
+          "scope_zh": "规律、初态不变条件、所有允许结果的保持/推进及实现函数均是前提；未证明策略合成或对任意物理结果的控制。既有SituatedContinuation 15定理/25声明；与前行合计24定理/42声明，不重复计数；一项调用依存证明而带标准依赖。",
+          "scope_en": "Law, initial invariant, retention/progress for permitted outcomes and implementation functions are premises; no policy synthesis or control of arbitrary physical outcomes. Recorded SituatedContinuation: 15 theorems/25 declarations; with F03, 24/42 total, not additional counts. One theorem inherits standard dependencies from the demand proof.",
+          "links": [
+            {
+              "label_zh": "一般推论与限度",
+              "label_en": "General argument and limits",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md#what-is-derived-and-what-remains-open"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean"
+            },
+            {
+              "label_zh": "共享回执",
+              "label_en": "Shared receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F05",
+          "title_zh": "形成继续形成的能力",
+          "title_en": "Forming capacity for further formation",
+          "claim_zh": "明确组装规律下，可以沿一条兼容历史反复完成形成并再现输入位置；任意深的单次成品与持续实际形成分别证明。",
+          "claim_en": "Under an explicit assembly law, one compatible history repeatedly completes formations and reconstructs an input position; arbitrarily deep one-off products and ongoing actual formation are proved separately.",
+          "scope_zh": "源供给、材料/工作量、组装语法与接口规律均给定；不断聚集而不完成的历史也允许。既有38定理/75声明，标准依赖propext、Quot.sound；174条独立有限对应记录，不是经验实验。",
+          "scope_en": "Source supply, material/work, assembly grammar and interface law are supplied; perpetual gathering without completion is also admitted. Recorded 38 theorems/75 declarations, standard propext/Quot.sound dependencies; 174 independent finite correspondence records, not an empirical experiment.",
+          "links": [
+            {
+              "label_zh": "研究整合",
+              "label_en": "Research integration",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#5-本轮已检查的结果"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean"
+            },
+            {
+              "label_zh": "证明回执",
+              "label_en": "Proof receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/verification.json"
+            },
+            {
+              "label_zh": "对应回执",
+              "label_en": "Correspondence receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correspondence-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F06",
+          "title_zh": "共同关系扩大有支持的共同实现",
+          "title_en": "A formed common relation enables supported joint realization",
+          "claim_zh": "形成的连接参与后续共同组装：k个产物的路径用k+1工作，绕过连接的完整路径至少用2k；同等当前支持下断开会阻止相应一工作完成。",
+          "claim_en": "A formed coupling participates in subsequent joint assembly: k products use k+1 work, while complete bypass requires at least 2k; under matched current support, disconnection blocks the specified one-work completion.",
+          "scope_zh": "有限组装/接合效率、源转移和工作规律给定；断开比较是配置映射，不是免费实际拆卸证明。选定产物的共实现不保证全部其他机会无损。既有35定理/79声明，标准依赖；1,109条有限对应记录。",
+          "scope_en": "Finite assembly/contact efficiency, source transfer and work laws are supplied; disconnection is a configuration map, not a free physical dismantling theorem. Co-realizing selected products does not preserve every other opportunity. Recorded 35 theorems/79 declarations, standard dependencies; 1,109 finite correspondence records.",
+          "links": [
+            {
+              "label_zh": "共同实现检查",
+              "label_en": "Joint-realization checks",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#8-共同实现的形式检查"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+            },
+            {
+              "label_zh": "证明回执",
+              "label_en": "Proof receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json"
+            },
+            {
+              "label_zh": "对应回执",
+              "label_en": "Correspondence receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-correspondence-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F07",
+          "title_zh": "重组、机会与建设性结束",
+          "title_en": "Reconfiguration, opportunity and constructive endings",
+          "claim_zh": "回收既有连接可以为新形成提供必需材料；材料充足时无需结束连接。准备/回收成本改变原效率优势，过早准备可消灭本可完成的机会。",
+          "claim_en": "Recovering an existing coupling can provide material necessary for a new formation; with ample material, ending it is unnecessary. Setup/release costs change efficiency, and premature setup can destroy an otherwise feasible completion.",
+          "scope_zh": "同一局部释放、回收、组装规律及有限支持；真正生活和体验损失不能当作可互换零件。既有45定理/66声明，标准依赖propext、Quot.sound；12,402条有限对应记录。建设性结束的伦理意义仍须整体辩护。",
+          "scope_en": "One local release/recovery/assembly law and finite support; actual lived or experiential losses are not interchangeable apparatus parts. Recorded 45 theorems/66 declarations, propext/Quot.sound; 12,402 finite correspondence records. Ethical significance of constructive ending still needs whole appraisal.",
+          "links": [
+            {
+              "label_zh": "相同历史的比较",
+              "label_en": "Same-history comparisons",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#12-相同历史中的三种辨别"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurableRoutes.lean"
+            },
+            {
+              "label_zh": "证明回执",
+              "label_en": "Proof receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reconfiguration-verification.json"
+            },
+            {
+              "label_zh": "对应回执",
+              "label_en": "Correspondence receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reconfiguration-correspondence-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F08",
+          "title_zh": "显式伦理前提的条件后果",
+          "title_en": "Conditional consequences of explicit ethical premises",
+          "claim_zh": "无损生成延伸、伦理比较、情境理由及不受支配选择的联系可分别检查；所有无损增加获赞同仍不决定混合取舍，持续改善也可能使最优筛选为空。",
+          "claim_en": "Generative extension, ethical comparison, situated reason and nondominated selection can be audited separately; honoring every no-loss increase does not settle tradeoffs, and continual improvement can leave the maximality filter empty.",
+          "scope_zh": "G0正面相关、C比较原则、P实践传递、N选择一致性分别给定；不得把此旧显式前提路线当作当前零假设结果。既有11定理/27声明，标准依赖propext、Quot.sound；它们不证明G0/C/P/N本身。",
+          "scope_en": "G0 positive relevance, C comparison, P practical articulation and N selection coherence are separate supplied commitments; this earlier explicit-premise route is not the current zero-assumption result. Recorded 11 theorems/27 declarations with propext/Quot.sound; none proves those commitments themselves.",
+          "links": [
+            {
+              "label_zh": "前提路线整合",
+              "label_en": "Premise-route integration",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean"
+            },
+            {
+              "label_zh": "回执",
+              "label_en": "Receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/comparison-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F09",
+          "title_zh": "共同可实现性与完整事实的边界",
+          "title_en": "Joint realizability and the limits of full factual preservation",
+          "claim_zh": "逐历史保存全部已表示实现等价于保存全部同历史可实现组合；边际项目相同仍会失去组合。若每项准确否定也必须保持，匹配历史不可能有同义的新真旧假实现。",
+          "claim_en": "Per-history profile preservation equals preservation of all jointly realizable bundles; identical marginals can conceal joint loss. If exact complements must also be retained, a matched history cannot newly realize a previously false same-meaning claim.",
+          "scope_zh": "共享稳定含义、可行历史与全组合范围明确；不是有限观察推断、统一政策或概率保证。否定结果保持同一时序角色，不否认较早无而较晚有。最新既有记录5定理/21声明全部依赖空；本表未重跑，空依赖不等于零假设。",
+          "scope_en": "Stable meanings, feasible histories and the full bundle range are explicit; no inference from finite observations, uniform policy or probability guarantee. The complement result fixes temporal role and allows earlier absence with later presence. Latest recorded 5 theorems/21 declarations all have empty dependencies; not rerun here, and empty dependencies do not mean zero assumptions.",
+          "links": [
+            {
+              "label_zh": "精确范围",
+              "label_en": "Exact scope",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-MATH.md#3-exact-joint-preservation-theorem"
+            },
+            {
+              "label_zh": "否定完备的限定",
+              "label_en": "Complement-closure qualification",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-MATH.md#5-why-preservation-of-all-facts-cannot-define-strict-enrichment"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean"
+            },
+            {
+              "label_zh": "回执",
+              "label_en": "Receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-classification-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F10",
+          "title_zh": "整体比较与情境比较的对应",
+          "title_en": "Correspondence of whole and situated comparisons",
+          "claim_zh": "局部比较对相同整体实现相容，当且仅当它们来自一个共同整体关系；点覆盖不够给出成对比较的唯一性，局部严格比较仍可形成整体循环。",
+          "claim_en": "Local comparisons agree on identical whole realizations exactly when they descend from a common whole relation; point coverage does not ensure unique pair comparisons, and locally strict comparisons can form a global cycle.",
+          "scope_zh": "整体历史、选项实现映射及比较关系均供给；表示相容不证明伦理真理。忠实改写限于保留实现，实际学习不必是改写。既有14定理/31声明全部依赖空；排序也不重建全部支持理由。",
+          "scope_en": "Whole histories, option-realization maps and comparison relations are supplied; representational compatibility is not ethical truth. Faithful recoding preserves realizations, while actual learning need not be recoding. Recorded 14 theorems/31 declarations all empty; rankings also need not recover their supporting grounds.",
+          "links": [
+            {
+              "label_zh": "数学整合",
+              "label_en": "Mathematical integration",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#3-the-checked-mathematical-result"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+            },
+            {
+              "label_zh": "回执",
+              "label_en": "Receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F11",
+          "title_zh": "规范根据的范围覆盖",
+          "title_en": "Coverage of warranted normative grounds",
+          "claim_zh": "已独立成立的种子根据经保持完整根据的有效推论能够覆盖目标，当且仅当目标位于其推导闭包；相容范围能沿同一历史组合。",
+          "claim_en": "Independently warranted seeds and justified full-ground-preserving implications cover a target exactly when it lies in their derivation closure; compatible scopes compose along the same history.",
+          "scope_zh": "种子B、有效边E、独立目标D及重叠相容性均需实质辩护；因果接触不是规范推论，覆盖不能产生第一根据。既有WholeGroundCoverage与CutCoverageAudit共39定理/61声明全部依赖空；建设性cut结论保留可判定性/双重否定限定。",
+          "scope_en": "Seeds B, justified edges E, independent target D and overlap compatibility need substantive warrant; causal contact is not normative implication and coverage supplies no first ground. Recorded WholeGroundCoverage/CutCoverageAudit: 39 theorems/61 declarations, all empty; constructive cut results retain decidability/double-negation qualifications.",
+          "links": [
+            {
+              "label_zh": "精确普遍推论",
+              "label_en": "Exact universal inference",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md#2-the-checked-universal-inference"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean"
+            },
+            {
+              "label_zh": "建设性审计",
+              "label_en": "Constructive audit",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean"
+            },
+            {
+              "label_zh": "回执",
+              "label_en": "Receipt",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/verification.json"
+            }
+          ]
+        },
+        {
+          "id": "F12",
+          "title_zh": "认识与学习后的意义保持",
+          "title_en": "Meaning preservation through recognition and change",
+          "claim_zh": "给定比较在读出纤维上不变，且相同读出每步保持相同，则读出能在每个有限延续中保留该比较；不同动作序列另有对应定理。",
+          "claim_en": "When a supplied comparison is constant on readout fibers and equal readouts remain equal after each step, the readout preserves that comparison through every finite continuation; separate theorems cover action words.",
+          "scope_zh": "确定性规律、读出、独立比较、当前一致性与逐步同余均供给；状态须保留历史根据。未导出学习机制、伦理正确性、动机或实行；真实修改可改变根据，不能仅要求旧判词不变。既有25定理全部依赖空，日志有源码哈希；F9仍按其历史手证范围保留，不冒称新Lean验证。",
+          "scope_en": "Deterministic law, readout, independent comparison, saturation and step congruence are supplied; the state must retain historical grounds. No learning mechanism, ethical correctness, motivation or compliance is derived; genuine change may alter grounds. Recorded 25 theorems all empty, with source hashes in the log; historical F9 remains at its original hand-proof scope, not newly Lean-verified.",
+          "links": [
+            {
+              "label_zh": "范围与假设",
+              "label_en": "Scope and inputs",
+              "path": "experiments/valuation-development/lean/perspectival/README.md#inputs-and-interpretation"
+            },
+            {
+              "label_zh": "源码",
+              "label_en": "Source",
+              "path": "experiments/valuation-development/lean/perspectival/TrajectoryFidelity.lean"
+            },
+            {
+              "label_zh": "验证日志",
+              "label_en": "Verification log",
+              "path": "experiments/valuation-development/lean/perspectival/verification-output.txt"
+            },
+            {
+              "label_zh": "规范保持的开放问题",
+              "label_en": "Open normative-preservation question",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md#6-wider-route-and-supporting-work"
+            }
+          ]
+        },
+        {
+          "id": "F13",
+          "title_zh": "必要损失与有限认识的校准",
+          "title_en": "Necessary loss and finite-knowledge calibration",
+          "claim_zh": "达成目标需要损失，要核对所有可行达成路线并保留实际处境；各处境分别存在无损路线不保证一个统一回应，恢复末态也不能抹去历史中断。",
+          "claim_en": "Target-relative necessary loss concerns every feasible successful route and retained actuality; a lossless route in each situation does not ensure one uniform response, and endpoint restoration does not erase an interruption.",
+          "scope_zh": "既有11项定理／28项声明，空公理依赖；给定有限处境、回应与历史表，只检查已表示的损失。未证明 K、物理实现或实际观察策略。",
+          "scope_en": "Recorded 11 theorems/28 declarations with empty axiom dependencies; supplied finite situations, responses and histories, and represented loss only. No proof of K, physical implementation or an actual observation policy.",
+          "links": [
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+              "label_zh": "整合与范围",
+              "label_en": "Integration and scope"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean",
+              "label_zh": "源码",
+              "label_en": "Source"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/tradeoff-verification.json",
+              "label_zh": "回执",
+              "label_en": "Receipt"
+            }
+          ]
+        },
+        {
+          "id": "F14",
+          "title_zh": "已辩护比较的减损传递与上限问题",
+          "title_en": "Loss reduction from warranted comparisons and the cutoff question",
+          "claim_zh": "给定充分比较锚点、同范围传递性及匹配减损的相容性，可把已成立的优先或拒绝传递到相关改进或恶化；损失敏感本身不推出有限牺牲上限。",
+          "claim_en": "Given a sufficient comparison anchor, same-scope transitivity and compatibility with matched loss reduction, established priority or rejection transports to relevant improvements or worsenings; loss sensitivity alone supplies no finite sacrifice bound.",
+          "scope_zh": "既有16项定理／23项声明；仅标准 propext、Quot.sound 依赖。锚点、比较与实践桥梁明确给定；受限排序控制不反驳完整理论，也不证明第一根据或 K 的全盘优先。本轮为作者实质自审；完整目标后的独立 agent 验证仍待进行。",
+          "scope_en": "Recorded 16 theorems/23 declarations; only standard propext/Quot.sound dependencies. Anchors, comparisons and practical bridges are supplied; restricted ordering controls neither refute the full theory nor prove first warrant or overall priority from K. This round includes substantive author self-review; independent agent verification after full completion remains pending.",
+          "links": [
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md",
+              "label_zh": "论证、反审与范围",
+              "label_en": "Argument, counterreview and scope"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+              "label_zh": "源码",
+              "label_en": "Source"
+            },
+            {
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-verification.json",
+              "label_zh": "回执",
+              "label_en": "Receipt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "title_zh": "六、原话、评审与证据入口",
+      "title_en": "Directives, reviews and evidence",
+      "entries": [
+        {
+          "id": "E01",
+          "title_zh": "Ren 的非二元方法与生生方向",
+          "title_en": "Ren’s nondual method and generative direction",
+          "claim_zh": "原话规定从同一生成展开解释关系分化，保留多个“生”的研究范围，并正面研究生生的伦理方向。",
+          "claim_en": "The directives require explaining differentiation within one unfolding, retaining multiple ranges of life/formation and investigating Shengsheng as a favorable direction.",
+          "scope_zh": "用户研究指令与理论来源；指令本身不计作证明。",
+          "scope_en": "User research directives and theoretical sources; instructions are not proofs.",
+          "links": [
+            {
+              "label_zh": "非二元指令",
+              "label_en": "Nondual directive",
+              "path": "sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md"
+            },
+            {
+              "label_zh": "生生方向原话",
+              "label_en": "Generative direction",
+              "path": "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+            }
+          ]
+        },
+        {
+          "id": "E02",
+          "title_zh": "零公理与显式前提两条路线的来源",
+          "title_en": "Sources for zero-axiom and explicit-premise routes",
+          "claim_zh": "保留“生成重要”的显式起点研究，同时按当前要求继续更强的零公理理论；两条路线分别报告完成范围。",
+          "claim_en": "Retain inquiry from an explicit generation-matters premise while pursuing the stronger zero-axiom theory; report their achievements separately.",
+          "scope_zh": "原话与执行范围；不能把一条路线的结果当成另一条已完成。",
+          "scope_en": "Direct messages and execution scope; success of one route does not complete the other.",
+          "links": [
+            {
+              "label_zh": "公理与未来",
+              "label_en": "Axiom and future",
+              "path": "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+            },
+            {
+              "label_zh": "零公理继续指令",
+              "label_en": "Zero-axiom continuation",
+              "path": "sources/15-codex-theory-conversations/2026-10-07-zero-axiom-complete-classification.md"
+            },
+            {
+              "label_zh": "本表及维护请求",
+              "label_en": "This index and its upkeep",
+              "path": "sources/15-codex-theory-conversations/2026-10-08-bilingual-generativity-chain-index.md"
+            }
+          ]
+        },
+        {
+          "id": "E03",
+          "title_zh": "条件性统一基础的完成审查",
+          "title_en": "Completion review of the conditional foundation",
+          "claim_zh": "共同基础已在显式根据、相连推导、组合、生成/退化解释和区分性支持五项原定条件下被接受。",
+          "claim_en": "The conditional foundation has been accepted under its five original criteria: explicit grounds, connected derivation, composition, constructive/destructive regimes and discriminating support.",
+          "scope_zh": "声明范围内完成；普遍经验真理、唯一必要性和零假设根据仍开放。",
+          "scope_en": "Complete at its declared scope; universal empirical truth, unique necessity and assumption-free grounding remain open.",
+          "links": [
+            {
+              "label_zh": "五项完成审查",
+              "label_en": "Five-condition review",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
+            }
+          ]
+        },
+        {
+          "id": "E04",
+          "title_zh": "规范根据的正面论证与实质反审",
+          "title_en": "Affirmative grounding arguments and substantive counterreview",
+          "claim_zh": "同一完整关系须接受正面解释、保留其事实的强对手和证据评估；思想案例与形式反例各有范围。",
+          "claim_en": "The same complete relationship faces an affirmative explanation, a substantive rival preserving its facts, and evidence assessment; thought cases and formal counterexamples retain their scopes.",
+          "scope_zh": "研究评审与来源入口；不把评审次数或原文引用数当作证明。",
+          "scope_en": "Research review and source entry points; neither review counts nor citation counts constitute proof.",
+          "links": [
+            {
+              "label_zh": "优先研究整合",
+              "label_en": "Priority integration",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md"
+            },
+            {
+              "label_zh": "原始文献评估",
+              "label_en": "Primary-source assessment",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-SOURCES.md"
+            },
+            {
+              "label_zh": "本轮实质反审",
+              "label_en": "Current substantive review",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-REVIEW.md"
+            },
+            {
+              "label_zh": "Sen 阅读与局限",
+              "label_en": "Sen reading and limits",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-SOURCES.md"
+            }
+          ]
+        },
+        {
+          "id": "E05",
+          "title_zh": "良知的经典与发展证据",
+          "title_en": "Classical and developmental evidence for Liangzhi",
+          "claim_zh": "经典文本、社会形成与发展研究为具体机制和解释提供比较；形成动机的证据不直接证明伦理有效性。",
+          "claim_en": "Classical texts and studies of social formation and development constrain particular mechanisms and interpretations; evidence for motivation formation does not directly establish ethical validity.",
+          "scope_zh": "各来源按原阅读和研究范围使用；不是新经验实验。",
+          "scope_en": "Each source retains its recorded reading and evidential scope; no new empirical experiment.",
+          "links": [
+            {
+              "label_zh": "演化与发展来源",
+              "label_en": "Evolution and development sources",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md"
+            },
+            {
+              "label_zh": "王阳明原典范围",
+              "label_en": "Wang Yangming source scope",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md"
+            },
+            {
+              "label_zh": "实践整合",
+              "label_en": "Practical integration",
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+            }
+          ]
+        },
+        {
+          "id": "E06",
+          "title_zh": "实际对应与证据范围",
+          "title_en": "Real-world correspondence and evidential scope",
+          "claim_zh": "模型表示、合成检验、实际观察和哲学根据承担不同工作；来源谱系与反例随当前结果一起保留。生命机制研究把真实交换与维持需求连接；恢复证据区分暂时离开条件、功能恢复及不可逆丧失。",
+          "claim_en": "Model representation, synthetic checks, observation and philosophical warrant do different work; provenance and counterexamples remain alongside current results. Living-mechanism studies connect actual exchange with maintenance demand; recovery evidence distinguishes temporary departure, functional restoration and irreversible loss.",
+          "scope_zh": "综合证据账本；不是对整个现实已完成验证。恢复证据是原研究的限定重读；端点达标不证明全程保持或回到旧生理状态。",
+          "scope_en": "Integrated evidence ledger; not completed verification of the whole real domain. Recovery evidence is a scoped rereading of the original study; endpoint restoration does not prove maintained function throughout or return to the old physiological regime.",
+          "links": [
+            {
+              "label_zh": "经验范围",
+              "label_en": "Empirical scope",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md"
+            },
+            {
+              "label_zh": "来源图",
+              "label_en": "Source map",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md"
+            },
+            {
+              "label_zh": "细项主张",
+              "label_en": "Claim register",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+              "label_zh": "生命机制与原始研究",
+              "label_en": "Living mechanisms and primary studies"
+            },
+            {
+              "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md",
+              "label_zh": "恢复证据与对应范围",
+              "label_en": "Recovery evidence and correspondence"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewed_sources": {
+    "RESEARCH.md": "5e597d5f079b49114f77b5721836a930fb7e00ed5328507be12de0f91bea086a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md": "044dfbe5474e7541e216cc03664985b5f8d0a4c00bb204dd7f234ae51275ec4f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md": "da266f302153c33dc9932e53465153e76efd928f3d4118b5534d09333061ec79",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md": "198d9eb4403f389aec98838544aab2c7274557640802b5e7082bcaf6cb014dc5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md": "bcfba8c968760eb1f197d617bb4afb61f7d143e315840d31a8b7d82e6e327770",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md": "ed9024c3c64efcab3516b881776effbf8af75331d6633ed1181a6f2005c3369a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md": "022fea674093dc5f10d77a920630a9144bb13cc8e88ea284d4b7e48c3dafaef1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md": "c0d0b1a20ee752519145fa5720e8838c3b3a23b26f71f0f20f2ec74be6ef602e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md": "0d519f2a4cc6235b6bbd8e1de2e5166ebadbb0f0aa9ddaadcb6f8b0eabf08f76",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-SOURCES.md": "5615ef27b335499c9bdbb4b9535558218f040fa2e778c8ce32fa0a66e8271581",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-DIRECTION-RECONSTRUCTION.md": "a34253282e9aabaef854839725f16c946f20fa87a5d17ba5c31fe71afd34d7bb",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md": "cec35938b51afcfe4b3619190f5637205313c61268b644349f8957aa9b4db52b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md": "9407e370a80c5562a7fc9f641fbde5dbd004f83d423556297651b654db3cc5dc",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md": "ac91109e0ba9dbc4aabed4251a31f8ede57137fb798b03c1948861cc79e501d4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md": "7f85ad6fa24e4d41b8939178052048f42191f88cae3f4ac236cdcaf838b72719",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md": "b31755cafd6cfdac78ca5a5ef99a4aecb3ba9207dd7829627d857e8209c74b29",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-ARGUMENT.md": "3e7ecdae2823fa2e68028582f337c67d2541d88395b99fe3800f214612dc674f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md": "f14a7e23e697a788b3c40c30a0156a00d8bb0832dd0b54294c47755af8a7694f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-MATH.md": "c65671356d1a6f3d016ad0696a77202d0a8e64ab8b705236e46a897dc5f78290",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-REVIEW.md": "f4bd51d3ab73bfc5787ff23d09fcadcd4239abf3856d4359f6222457bf70cc2f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-SOURCES.md": "8fac8f1c7db2e244ee3864a6f589e7d96ca6406347940c25b394d606f551369d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean": "8b0754f2a63414a40aab814ac962effaaab47c1bc83e0e28a5f93b5f902d4f3c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean": "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean": "e5db4c23b6e7d49c82c7d82600b72004e5e36f3b49499e2bb285fda3e5b53c4f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean": "d5156a6e6201caa93ea652e93aec2946482fd144ea73f22661a0ab4c58132669",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean": "8ddf51311583755908ba843986f262f7a0b4071764031a6fa1a1bf2c0dbd512a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean": "b7036c386f34acdd6fbb2041ce81161b3aa433593e003aa7655391c430e7db87",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/continuation-renewal-verification/verification.json": "3f14ac74e7f08524586fb61e932dd3df70c0b52010f1174b429684a2f5578254",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean": "99f075dc281d26d8bcc2d713805a17a407396ff86b4fe1b6d16460cb41a5d34e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurableRoutes.lean": "747929335d04ce9703070af7cfc309bb996a4695f19e96ff5d6dd6392c743141",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/comparison-verification.json": "5c62df06f708086ace4a3ddc60c2d26fa76f5e2c1323d63601030081d7542109",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correspondence-verification.json": "045c0d636a0f54662aebf4bc0589c94ca73b0e20bfe9c7eb198221d74b7be127",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reconfiguration-correspondence-verification.json": "80ede2cfb054ef4d28e3b0876983082b0eb5de6929eca77b4d2b0b17b878f00c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reconfiguration-verification.json": "4573bc0a1aa5e1dde9ff85b784d99b44412a506c074a2429af2c28c8f5a25edb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-correspondence-verification.json": "acea0d40e84acc399545c32a9456164062e49dce178ab0cbb82049ff40061325",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json": "28cab74bc6be5f7f38c67539dbc13e37a6661cc2ad6ad935053b07b5092826db",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/verification.json": "a8cb243f68cf196a420db1f895de89341b2808ee121fe6decda3c5d6ac6f858e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-classification-verification.json": "9b5e873ed4351933e97689aa590e476d10b2f2c13700e2a645f0655dea1e5129",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification.json": "fd810ce8d7e8e63678647e3c7bed73238ce7ffe1063b193a24a71ddcc9523b19",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json": "0b0d412caa1ea4612be4f8d8ae4c1a1716e0f700c2f426b9da49ba0b0519c03c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/verification.json": "7cfb6835cc3f29455db9337fe02365a5113af0ad7d73698b62c85c7abd8df45d",
+    "experiments/valuation-development/lean/perspectival/README.md": "8505e581fc1f1cfb8dbe2c70a1b7d40bcaad4eea920d8c71abc50d72bf9f855d",
+    "experiments/valuation-development/lean/perspectival/TrajectoryFidelity.lean": "a1107b8fc26bdc92d08e513b0fff2e09666247e6acc4746e53592427036a770e",
+    "experiments/valuation-development/lean/perspectival/verification-output.txt": "4e35d1a42339f1802d717ae5a5ab39d4fc43f48ee83ae506335d40e5200bbeb7",
+    "sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md": "09bf87ed895355ad7fd0a6e32b9f76f94688e8894d61d8ed98d72a8a255e5aff",
+    "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md": "fc9824eb837482c6253e6eb3f7a8bd2932902033bb305d49f09d4021fab9a515",
+    "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md": "c453e4e37c57a09f6f2304b210898ceeb884a759ca7b0a49668c4fc941ca5a59",
+    "sources/15-codex-theory-conversations/2026-10-07-zero-axiom-complete-classification.md": "2c8ea3484a7b299150492eb154ae094e7bced5f001eedd3cbfe4fe5e329d948f",
+    "sources/15-codex-theory-conversations/2026-10-08-bilingual-generativity-chain-index.md": "25e7074003c322736df131f107d43a581c286ced42506e65a29c172b79145efa",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md": "5b08d4cc75b2beaffc1ab4dd61b08d18059de6e32e8e7bbd881664e3e6ccad25",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md": "fbfe297b2fb3826453600a488233a89d01df71dbfd9ff855576c57cb5ee6a11e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md": "f3208aff28c56fe697bb677b867c3f861b3bea894f17b655e95f919201cc28db",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md": "a25f5ed39ae4529c5f934c7e363785f4d135e868ead2a5dffebfad05305cc44b",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md": "3a478b88269dce0b8a0f7fa10c6380f2d21cc75eb0e048c827e7ef07de0343fa",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md": "3f78cd13568bc488a2d02db7ae50eaf1189bf22889c95aedf5b637be63e33d37",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md": "e1e1e4f397d4ecb48d25960af6e0eb0884e6492d374a64fd604820f411d82d0c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md": "9cbc8436e52ca71865521723ebf9d09471abcd8abd0a6bc09a142232387865e5",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "196ace67d97637269821d8bda4b5172513b5ff01f61d671d877c0f276aa45f61",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "955cdb998e9e3ee9a0f0e0cf58f33bcfdc1089e7b70ceea3f6ad093a73ffd2fa",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md": "e6260ca58c651289d238ea3219b4674fc94b9d45f3bbcfd7b6fc9e5cdc35d468",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md": "941631667196124111ea391d7f18385590207ee138ac01fd4f56eddd80dd236b",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md": "8c48b03a167a8909148d542420a38d829b2494258fd1383617127e19e7f82c54",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md": "656874a38d364428971ce521d52668cc15720032c1b591457c20d4bbf13f0c21",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md": "fc657d385f274d98e709045a5621f866cc33f65ff3acdbbd6a1a8d04f57a4df4",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md": "bd940255446ae7335ae589298afc3acbedbec034a5415a277eb81fbc9622b8bc",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md": "68cc74e7102d157d6fe0f15a1e329c654bffa1ede87c77238d23a070c8d7cea9",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md": "ca09048d33d693f254773c2b17d5a3f0fb893ea7f6ad5d95985c093001499f32",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md": "69eaca6af6e1c9a6c6ded10b48e008eeb0585adfa61a84f630dfcd9823cb7326",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md": "d7fe22d758c16c058ad663bd49abb110d001f90aefa0a6dc34f74b86880c69e0",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md": "7151b2fe9aa8d37dc573b217c2e43347ebf7389ca0c47d8cd5a8ca34ecf81edd",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUCCESSOR-LEARNING.md": "0ede6d0ff079d9571c405d189d5c709a8c08f37e89c1f7e357aea5944cce86a0",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": "5b8e5c910a59767942152a22669fb4628357f4f6a9f4745891a80b329b7afaf4",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md": "f72807e6377db4c56aae459c56a5e307f5fced7da3b9cc0065ca463af6b1e78f",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md": "11ace32d6373747d1ff4d773cee965ff8e588044eb0f9af2596bc85691dd28cf",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md": "54556a1c78b15dcad32490f79488354ee3595a627535e61d7e8669c0b9b63c99",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md": "2ec717cf6a82394f8a3b7bf84858e4706ca0c11ec2563aefc764c322d009b426",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean": "0d038dd797886d58fe490ed2795f8c8cdba9d159ca56509f934eb60969242995",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/tradeoff-verification.json": "dd5de8e58ca389e6bb396dcdd00ab4a996f1b45eebc2b1d51b91697a9a573c00",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean": "a099877f064827b1d622eb1b9b7ba4a91e24cfb721b00337f2557c560d8144d5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-verification.json": "9ecde57972c333aef54fef2594f6de46b3b2bff64ec364aa6bd5b2a8d6d0af7d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md": "906156b116c870d9104d8b79aa9e22bd96739b977a08aff642e28b7ce80c7d25",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md": "f9b12e1606030cd6beff8075d8b79ebdbcf122013822b8931587f5559b9e30e8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md": "0d3766b4c78cbc6339fc032e505f0c151646ecd31ecc1f7f09721cf8c26ca0cc",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json": "505e7fc2028cdcfc4541d68c2faab6a32b2005d585bdf8a8a3fcf4a74acff274"
+  },
+  "discovery_globs": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/*.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/*.md"
+  ],
+  "known_discovery_paths": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGENTDOJO-EVIDENCE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGENTDOJO-REPLAY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-COMPARATOR.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICABILITY-REVALUATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-DISTINCTION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-DISTINCTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-DISTINCTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-EVIDENCE-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-EVIDENCE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-FEEDBACK-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-FEEDBACK-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-RECONSTRUCTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-PROPOSAL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSISTANCE-JURISDICTION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUNDARY-SIGNIFICANCE-RECONSTRUCTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUNDARY-SIGNIFICANCE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUNDARY-SIGNIFICANCE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CALIBRATION-REVISION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CALIBRATION-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LI-CLASSICAL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-MODEL-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-RECIPROCITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-THEORY-MAP.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-FOUNDATION-DERIVATION-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-HISTORIES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-IDEALS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-PREFIX.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-ROLE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-IDENTITY-DIAGNOSTIC-NOTE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-WISDOM-INPUTS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-SUPPORT-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-WARRANT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-ANSWER-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-ANSWER-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-ANSWER-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-ANSWER-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-SIGNIFICANCE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-SCOPE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-NONDUAL-REORIENTATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-SOURCE-READING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CYBERNETICS-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-CLASSICAL-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-GENEALOGY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-NORMATIVE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEEPER-ROOT-GENEALOGY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEEPER-ROOT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-GROUNDING-EPISTEMOLOGY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ELECTIVE-CONCERN-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ELECTIVE-CONCERN-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ELECTIVE-CONCERN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ELECTIVE-CONCERN-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-CLAIM-SCOPE-NOTES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-SCOPE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-CONSTITUTION-CLOSURE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-MINIMUM-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-MINIMUM-PLURALITY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-MINIMUM-RIVAL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-MINIMUM-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM-ACTUAL-RECOVERY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM-PROTECTED-SCOPE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-CONTRACT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-COMPOSITION-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-GROUNDING-ASSESSMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-GROUNDING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-CONTRIBUTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-IMPLEMENTATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-ORACLE-CONTRACT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-SCOPE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-SCOPE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-SCOPE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FRESH-ACQUISITION-AI-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FRESH-ACQUISITION-ASSUMPTIONS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FRESH-ACQUISITION-INTERFACE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FULFILLMENT-WITHDRAWAL-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-BEARER-FORMATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-CONTINUATION-PROOF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-COUPLING-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DEVELOPMENT-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DEVELOPMENT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOODNESS-WITHOUT-RETURN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-FORM-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-LEXICAL-PILOT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-MAPPING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-THEORY-MAP.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INFORMATION-AND-RENEWAL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-COMPARISON.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-INTERFACE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-APPLICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-LEAN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INVARIANCE-AND-PRIOR-ART.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LANGUAGE-AND-FORMATION-CORRECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-PERMISSION-TRANSPORT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LATITUDE-UNDER-NEED-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-CLAIM-AGENTS-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SUPPORT-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-PHYSICAL-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GENERATIVITY-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-PREDICTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-PREDICTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-UPDATER-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-UPDATER-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ROOT-FRONTIER-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ROOT-FRONTIER-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ROOT-FRONTIER-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-CLOSURE-RESOLUTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-CONSTITUTION-RIVALS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-CONSTITUTIVE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-FOUNDATION-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-GENERATIVE-PRESENTATIONS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-GROUNDING-RESOLUTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-LEARNING-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-MODEL-ADMISSIBILITY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-STRUCTURAL-RESULTS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-TRUTH-CONSTITUTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-UNIQUENESS-RESOLUTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MERCY-AUTHORITY-AND-MOTIVE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MERGED-OBLIGATIONS-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-REVISION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-REVISION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/METHOD-REVISION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/METHOD-REVISION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/METHOD-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MINIMUM-GROUNDING-CONTINUATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NECESSITY-ATTEMPT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-QUESTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-RECONSTRUCTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-RECONSTRUCTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GENERATIVE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-GROUNDING-QUESTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-CONTINUATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-GENEALOGY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-GROUND.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-OBLIGATIONS-CONTINUATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATION-AND-GENERATED-SELF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/OWNERLESS-ETHICS-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AND-AGENT-SCOPE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-GENERAL-PROOF-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-GENERAL-PROOF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-LOWER-BOUND-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-REDUCTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERMITTED-RELIEF-AND-DESERT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-CORRESPONDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-PROSPECTIVE-CONTROL-CORRESPONDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-PROSPECTIVE-CONTROL-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-PROSPECTIVE-CONTROL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-PROSPECTIVE-CONTROL-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-RATIFICATION-CORRESPONDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-RATIFICATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-RATIFICATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-RATIFICATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-TRAJECTORY-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-TRAJECTORY-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-TRAJECTORY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-CYCLE-DERIVATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-RECOVERED-CONTACT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CAPACITY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CLAIMS-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-BOUNDARY-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-BOUNDARY-ETHICAL-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-BOUNDARY-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-BOUNDARY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-BOUNDARY-RECONSTRUCTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-GENEALOGY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-ENTRY-DEPENDENCY-MAP.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-OPEN-ITEMS-CONTEXT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROSPECTIVE-GROUND-CONSTITUTION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README-BEFORE-RESULTS-CATALOGUE-LATEST.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README-BEFORE-RESULTS-CATALOGUE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-ACTION-EMPIRICAL-CANDIDATES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-ACTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-ACTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-REVISION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-REVISION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-REVISION-SCOPE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-EVIDENCE-DOWNSTREAM-CONTRACT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-IMPLEMENTATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-CANONICAL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPROCITY-BOUNDARY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECORDED-CLAIMS-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-SELECTION-FORMATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-SELECTION-INHERITANCE-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-WARRANT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-WARRANT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATION-AND-REASON-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATION-AND-REASON-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATION-AND-REASON-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GOODNESS-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GOODNESS-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GOODNESS-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-RECONSIDERATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-AND-REOPENED-EVALUATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELIEF-APPRAISAL-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REMAINING-DEPENDENCY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REMAINING-DEPENDENCY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE1.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-ROADMAP.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESCUE-REQUIREMENT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESPONSIVE-FORMATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESPONSIVE-FORMATION-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESPONSIVE-FORMATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESPONSIVE-FORMATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REVIEW-EPISTEMIC.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REVIEW-INVARIANCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REVIEW-TURNOVER.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-FUNCTIONS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-LEAN.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-ABSTRACTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-LEAN.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-ATTEMPT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-BOUNDARY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-LEAN.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-ORDER.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-LEAN.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-TYPES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-LEAN.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-DIAGNOSTICS-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-DIAGNOSTICS-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-DESIGN.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-PROVENANCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-RESULTS-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-ACQUISITION-BRIDGE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-ETHICS-LEAN-GROUND.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-LEAN-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-COMPARATORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-CONTRACT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-DIRECTION-RECONSTRUCTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-ETHICAL-DISCERNMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STRONGEST-CLAIM-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STRONGEST-CLAIM-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STRONGEST-CLAIM-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STRONGEST-CLAIM-LOGIC.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-HIGHER-DYNAMICS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIE-BREAKING-LEGITIMACY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/TURNOVER-AND-CLOSURE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-ENTRY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GOODNESS-CLOSURE-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GOODNESS-CLOSURE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GOODNESS-CLOSURE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GOODNESS-CLOSURE-SCOPE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GROUNDING-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GROUNDING-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GROUNDING-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GROUNDING-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-RESPONSE-COMPOSITION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-WARRANT-SUFFICIENCY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-AND-PREDECESSORS-COVERAGE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-EVIDENCE-AND-INTERFACES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-LEAN-INTERFACES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-MECHANISM.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-MECHANISMS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-GENEALOGY.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-CONFUCIAN.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-CORPUS-MAP.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-LANGUAGE-AND-CORPUS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-LATER-TRANSFORMATIONS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-MOHIST-POLITICAL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-CONTINUATION-WARRANT-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-CONTINUATION-WARRANT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-CONTINUATION-WARRANT-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-CONTINUATION-WARRANT-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-GENERATIVE-AUTHORITY-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-GENERATIVE-AUTHORITY-COUNTERREVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-HISTORY-INSTITUTIONAL-COMPARATOR.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PORT-CONTINUATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-SCOPE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-DIRECTION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-PURPOSE-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-MATH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-REVIEW.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-SOURCES.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AXIS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS-AND-PAID-ACTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LI-AND-RECIPROCITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONTROLLED-REFINEMENT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COST-SENSITIVE-LEARNING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DAO-AND-GENERATIVITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION-MATH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION-PRIOR-ART.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMED-ROUTE-MONITOR.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HANZI-AND-THEORY-TREE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION-MATH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-OBSTRUCTIONS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-PRIOR-ART.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-PREDICTION-COMPOSITION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-SELECTOR-COMPOSITION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-UPDATER-COMPOSITION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/META-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MODEL-FAMILY-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRE-QIN-AND-WENYAN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-PROTOCOL.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-ACTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-TRANSMISSION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ROUTE-DIAGNOSTICS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STOCHASTIC-PREDICTION-COMPOSITION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STRONGEST-FOUNDATION-CLAIM.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUCCESSOR-LEARNING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-IDENTIFICATION-BOUNDS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+  ]
+}

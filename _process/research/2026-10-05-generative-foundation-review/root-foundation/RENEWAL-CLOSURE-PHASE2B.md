@@ -4,6 +4,8 @@
 
 **Transition addressed.** This phase links the renewal–closure theorem to the [research center](RENEWAL-CLOSURE-ROADMAP.md#11-what-this-serves-the-whole-unfolding): how the whole unfolding generates or damages the conditions of its later realization, renewal and correction. Kinds, edges, spans, demands and rates stay supplied inputs. Nothing here ranks histories ethically.
 
+**Interpretation clarified, 7 October 2026.** The claims below that possibility cannot be generated internally concern this fixed law’s existence of an infinite live continuation. They do not say that actual organization cannot form internally or that its conditions must enter from outside generative reality. The [checked possibility interface](REGENERATIVE-POSSIBILITY-INTERFACE.md#what-this-clarifies-in-the-earlier-renewal-result) distinguishes complete-law reachability from an actually formed condition; the original results and historical wording below remain at their stated scope.
+
 ## Done: whether correction capacity can be renewed
 
 Records, readers and other means of correction are constraints in this model. They are retained, they enable a process, and they wear over a longer span. So whether correction can continue is a question of the same kind as whether organization can continue. The Phase 2 proof answers both, because it was carried out for designated kinds.

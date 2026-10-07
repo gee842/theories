@@ -2,7 +2,7 @@
 
 5 October 2026; extended 6 October with action-dependent future opportunities. Research direction from Ren; AI-assisted theory, proofs, evidence audit, and independent internal review. This advances the [unified foundation](THEORY.md), [joint formation](JOINT-FORMATION.md), and [revisable-concern study](../../../_process/research/2026-10-05-revisable-concern/THEORY.md). The [research record](../../../_process/research/2026-10-05-revisable-concern/settlement/README.md) preserves the full branches, checks, repairs, and remaining obligations.
 
-**The central constructive question now has a conditional answer:** one process can select and pay for learning, revising the application of its reasons, preserving their grounds, exercising effective protection, and rebuilding these capacities through succession. This is stronger than showing that those functions work separately. It is still a specified process with supplied ethical anchors, a sound finite audit, useful commercial opportunities, and bounded means of obstruction.
+**The central constructive question now has a conditional answer:** one process can select and use available resources for learning, revising the application of its reasons, preserving their grounds, exercising effective protection, and rebuilding these capacities through succession. This is stronger than showing that those functions work separately. It is still a specified process with supplied ethical anchors, a sound finite audit, useful commercial opportunities, and bounded means of obstruction.
 
 The broader aspiration remains larger than this result. Neither the process's successful renewal nor the mathematics establishes that reality generally becomes wiser, that every ethically relevant case will be represented, or why subjective experience exists. These claims need different grounds. Calling their absence an impossibility theorem would also overstate what has been established.
 
@@ -17,7 +17,7 @@ The integrated account therefore keeps six questions distinct:
 | What happens to the other? | A description of the affected being, condition, context, actual action, and outcome; uncertainty remains explicit. |
 | Why should it count? | A defended reason, including the ethical bridge from a subject's loss to a reason in shared deliberation. |
 | Does this reason apply here? | A warranted interpretation or comparison, with its dependencies and possible defeaters. |
-| Does the process admit and retain it? | An implemented admission and revision procedure, memory, and paid access to relevant evidence. |
+| Does the process admit and retain it? | An implemented admission and revision procedure, memory, and resource-dependent access to relevant evidence. |
 | Does it change what happens? | Motivation, a feasible action, timely authority, resources, and resistance to interference. |
 | Can correction continue? | A successor able to inherit or reconstruct the reasons and rebuild the necessary capacities. |
 
@@ -37,7 +37,7 @@ Finally, the reserve must pay upkeep and audit before their receipt arrives, and
 
 In the exact six-episode witness, admitted sets are `{p}`, `{p,q}`, `{q}`, then `{p,q}` for the remaining episodes. The third audit defeats one derivation while preserving another. An initial reserve of five grows to 67, with every payment made when due. **Two actual harms remain in the ledger:** one before q's admission and one when p's particular support is retracted. After the supplied valid relation stabilizes with complete coverage, both patients are protected. The model does not turn nonadmission into nonexistence or lack of standing.
 
-The audit can completely reconstruct the current finite record at its charged price. Durable provenance is selected and retained, but this model does not establish that inherited storage is indispensable: a successor can use the paid reconstruction route. Nor does finite graph closure invent unrestricted new meanings. These distinctions prevent the achieved theorem from quietly assuming its broader research targets.
+The audit can completely reconstruct the current finite record at its charged price. Durable provenance is selected and retained, but this model does not establish that inherited storage is indispensable: a successor can use the resource-dependent reconstruction route. Nor does finite graph closure invent unrestricted new meanings. These distinctions prevent the achieved theorem from quietly assuming its broader research targets.
 
 A [bounded feature refinement](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/FEATURE-CONSTRUCTION.md) goes beyond a fixed primitive classifier. From three binary measurements it assembles 231 candidate expressions. A cheap identity proxy fits the discovery rows but fails every validation row; a constructed four-literal expression fits all eight cases. The separate check charges for assembly, labels, evaluation, and replay within the game's audit allowance. This is construction within a finite supplied grammar and authored assay table. It supplies neither real-world validation nor a new ethical reason.
 
@@ -94,7 +94,7 @@ Before interpreting an implemented equilibrium as justified concern, an applicat
 
 Conversely, filtering an action menu through an ethical rule can change the strategic game and its financing. One cannot append the normative remainder to the proved game and assume the same equilibrium survives. The formal theorem applies to its stated menu and preferences. The ethical results evaluate declared feasible choices. A proof of their general automatic compatibility has not been supplied.
 
-The positive integration is nevertheless substantive. It shows how warranted revision and paid renewal can coexist, why justified scope is not exhausted by acquired motivation, and how some practical choices can be resolved without pretending that all values form a complete numerical order. These results constrain the next implementation rather than merely naming its aspirations.
+The positive integration is nevertheless substantive. It shows how warranted revision and resource-dependent renewal can coexist, why justified scope is not exhausted by acquired motivation, and how some practical choices can be resolved without pretending that all values form a complete numerical order. These results constrain the next implementation rather than merely naming its aspirations.
 
 ## 6. What evidence can and cannot settle
 

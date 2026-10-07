@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261007T161531.315813Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "reconfiguration-checks/20261007T161531.315813Z",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "FormationRoutes": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+    "ReconfigurableRoutes": "aed2c15869306d334fe969f27819aff524c4d7b5e45363e5aedd0be1ed7252cb"
+  },
+  "checker_sha256": {
+    "check_reconfiguration.py": "f68070d29c941659c31dc584ad32d74650e1c9175c6795c48f3b3aba7d3f6f1f",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Finite paid release and third-formation implications of supplied assembly/recovery laws; no ethical or empirical proof.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "ReconfigurableRoutes.lean:356:2: error: Tactic `apply` failed: could not unify the conclusion of `Generative.trace_append_iff.mpr`\n  Generative.Trace ?m.37 ?m.38 (?m.40 ++ ?m.41) ?m.39\nwith the goal\n  Generative.Trace bypassProcess (stocked 9 6)\n    [Event.old Event.startAB, Event.old Event.finishLeft, Event.old Event.startBC, Event.old Event.finishRight,\n      Event.startAC, Event.finishZ]\n    allThree\n\nNote: The full type of `Generative.trace_append_iff.mpr` is\n  (\u2203 m, Generative.Trace ?m.37 ?m.38 ?m.40 m \u2227 Generative.Trace ?m.37 m ?m.41 ?m.39) \u2192\n    Generative.Trace ?m.37 ?m.38 (?m.40 ++ ?m.41) ?m.39\n\n\u22a2 Generative.Trace bypassProcess (stocked 9 6)\n    [Event.old Event.startAB, Event.old Event.finishLeft, Event.old Event.startBC, Event.old Event.finishRight,\n      Event.startAC, Event.finishZ]\n    allThree\nReconfigurableRoutes.lean:412:51: error: failed to synthesize\n  Decidable (ThreePartProducts commonChoice)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+}

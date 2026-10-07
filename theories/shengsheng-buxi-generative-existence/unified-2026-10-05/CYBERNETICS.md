@@ -6,7 +6,7 @@
 
 This advances the comparison and assumption review for [organizational dependency → operational significance → regulation → selector revision](GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work). It supplies no new claim that the remaining mechanisms are complete.
 
-**Subsequent mechanism development, 6 October 2026:** [the connected generative account](GENERATIVE-DEVELOPMENT.md) now joins actual formation and acquired prediction to consequence-dependent motor-coupling revision and a paid response to a distinct recipient, with explicit shared-routing premises, failures and independent finite checks. It advances the emergence-to-concern connection below without deriving general understanding, autonomous selection of target-routing programmes or ethical standing.
+**Subsequent mechanism development, 6 October 2026:** [the connected generative account](GENERATIVE-DEVELOPMENT.md) now joins actual formation and acquired prediction to consequence-dependent motor-coupling revision and a resource-dependent response to a distinct recipient, with explicit shared-routing premises, failures and independent finite checks. It advances the emergence-to-concern connection below without deriving general understanding, autonomous selection of target-routing programmes or ethical standing.
 
 ## Three meanings of containment
 
@@ -27,7 +27,7 @@ The first two claims have concrete support. The third is the research programme.
 | Feedback and regulation | A difference changes a response, whose effects change further conditions of activity | Explicit causal interface and conditional material constructions |
 | Essential variables and viability | Conditions enabling continued organization, reconstruction or activity | Actual dependencies must be specified; no universal scalar value follows |
 | Information available for control | Consequential distinctions reach and remain available to a response mechanism | Checked indistinguishability obstruction under complete-channel premises |
-| Adaptation and ultrastability | Consequences alter the mapping that selects responses | Paid selector revision, exactly matched by a conventional automaton |
+| Adaptation and ultrastability | Consequences alter the mapping that selects responses | Resource-dependent selector revision, exactly matched by a conventional automaton |
 | Revision of adaptive machinery | A changed updater governs reconstruction of a selector | Conditional formed-updater construction, matched by hierarchical feedback |
 | Observing systems | Sensing, memory, models and descriptions are activities within the world | Formal causal inclusion; the epistemological comparison is broader |
 | Ethics and responsibility | Effects on differentiated centers and their capacities for further activity and revision | Ethical arguments and conditional concern models; connected derivation remains open |
@@ -66,11 +66,11 @@ The [controlled-refinement result](CONTROLLED-REFINEMENT.md) supplies a reconstr
 
 ## What the material explanation contributes
 
-In the existing [regulation construction](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md), damage promotes paid formation of a repair mechanism. Repair restores access to a support source. Actual captured support can fund further copies of the mechanism. An analyst measures outcomes, but that measurement does not cause copying: the material return does.
+In the existing [regulation construction](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md), damage promotes resource-dependent formation of a repair mechanism. Repair restores access to a support source. Actual captured support can fund further copies of the mechanism. An analyst measures outcomes, but that measurement does not cause copying: the material return does.
 
 Removing the source can reverse the copying benefit while leaving the repair chemistry in place. A useful-looking response is not inherently rewarded. Its consequences must reach the actual machinery of retention. The scaffold, reaction repertoire, chemistry and starting resources remain local-model premises.
 
-The [selector study](SELECTOR-REVISION.md) extends the relation: support maintains an installed mapping; failed trials exhaust its lifetime; paid replacement can change the mapping. Its conventional counterpart has exactly the same transition kernel. In the specified post-change diagnostic, the first recovery opportunity requires seven inherited fuel units and three remaining exposures. A future return cannot finance an already-unaffordable trial.
+The [selector study](SELECTOR-REVISION.md) extends the relation: support maintains an installed mapping; failed trials exhaust its lifetime; resource-dependent replacement can change the mapping. Its conventional counterpart has exactly the same transition kernel. In the specified post-change diagnostic, the first recovery opportunity requires seven inherited fuel units and three remaining exposures. A future return cannot finance an already-unaffordable trial.
 
 The [updater construction](UPDATER-FORMATION.md) changes a mechanism governing selector reconstruction. Conventional hierarchical feedback again matches exactly. These studies recover cybernetic organization through particular costed constructions. Their contribution cannot be a prediction differing from their own exact redescription. Instead, explicit formation and maintenance may expose a constraint omitted from a simpler model, reduce a supplied premise or help identify a real mechanism.
 
@@ -90,7 +90,7 @@ Feedback polarity does not settle it either. A correcting loop can stabilize dom
 
 On 30 October 2024, Ren explicitly asked for an account of wealth and power concentration in second-order cybernetics, then described successful agents gaining the power to reshape others' values and the system's selection pressures. The [original human message](../../../sources/12-claude-ai-chats/2024-10-30_Cybernetic_Feedback_Loops_of_Capitalist_Wealth_Concentration_0e5e11e1.md) precedes the later vocabulary of selection over selectors. Its prediction of eventual collapse remains historical; present theory does not assume destructive regimes reliably eliminate themselves.
 
-The comparison initially identified **formed and revisable machinery acquiring a prediction, correcting it after changed dependencies, and using it in paid action under the same inherited history**. The subsequent [prediction study](PREDICTION-ACTION.md) and [generative development](GENERATIVE-DEVELOPMENT.md) now establish conditional instances through revised motor coupling and functional recipient response. The remaining concern bridge must explain acquisition and selection of cross-center evaluation and connect its revision to warranted reasons, including when private return is absent.
+The comparison initially identified **formed and revisable machinery acquiring a prediction, correcting it after changed dependencies, and using it in resource-dependent action under the same inherited history**. The subsequent [prediction study](PREDICTION-ACTION.md) and [generative development](GENERATIVE-DEVELOPMENT.md) now establish conditional instances through revised motor coupling and functional recipient response. The remaining concern bridge must explain acquisition and selection of cross-center evaluation and connect its revision to warranted reasons, including when private return is absent.
 
 A useful comparison preserves accessible information, support, actions and construction opportunities across models. It tests disrupted feedback, lost memory, starved maintenance and reversed learned relations. Exactly equivalent conventional models must agree; a simpler model omitting a real dependency may fail. Identification across materially different systems would support broader scope. If an apparent advance reinstalls a supplied success signal or benefits from hidden funding, its explanation must be revised.
 

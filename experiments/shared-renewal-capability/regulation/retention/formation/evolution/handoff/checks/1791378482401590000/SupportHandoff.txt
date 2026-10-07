@@ -1,0 +1,288 @@
+SupportHandoff.lean:86:49: error: unexpected identifier; expected '}'
+SupportHandoff.lean:122:76: error(lean.unknownIdentifier): Unknown constant `Bool.and_eq_true.mp`
+SupportHandoff.lean:133:12: error: `simp` made no progress
+SupportHandoff.lean:133:12: error: `simp` made no progress
+SupportHandoff.lean:133:12: error: `simp` made no progress
+SupportHandoff.lean:133:12: error: `simp` made no progress
+SupportHandoff.lean:133:12: error: `simp` made no progress
+SupportHandoff.lean:133:12: error: `simp` made no progress
+SupportHandoff.lean:133:12: error: `simp` made no progress
+SupportHandoff.lean:171:15: error(lean.unknownIdentifier): Unknown constant `Bool.and_eq_true.mp`
+SupportHandoff.lean:190:3: error: unexpected token 'prefix'; expected identifier
+SupportHandoff.lean:191:39: error: unexpected token 'def'; expected ':'
+SupportHandoff.lean:193:18: error: Application type mismatch: The argument
+  prepared
+has type
+  List Event → State
+but is expected to have type
+  State
+in the application
+  run prepared
+SupportHandoff.lean:196:18: error: unexpected token 'prefix'; expected term
+SupportHandoff.lean:196:25: error: unexpected token '++'; expected ':'
+SupportHandoff.lean:200:45: error: unexpected token 'prefix'; expected ':=', 'where' or '|'
+SupportHandoff.lean:200:52: error: unexpected identifier; expected ':'
+SupportHandoff.lean:209:33: error: Application type mismatch: The argument
+  prepared
+has type
+  List Event → State
+but is expected to have type
+  State
+in the application
+  Generative.Trace (process 3) prepared
+SupportHandoff.lean:213:24: error: Application type mismatch: The argument
+  prepared
+has type
+  List Event → State
+but is expected to have type
+  State
+in the application
+  advance prepared
+SupportHandoff.lean:226:37: error: Application type mismatch: The argument
+  runnable_trace ?m.61
+has type
+  Generative.Trace (process ?m.58) ?m.59 ?m.60 (run ?m.59 ?m.60)
+but is expected to have type
+  handoffFinal.products = 3
+in the application
+  And.intro (runnable_trace ?m.61)
+SupportHandoff.lean:225:28: error: Tactic `decide` failed for proposition
+  Runnable 3 tested [Event.dismantleFirst]
+because its `Decidable` instance
+  runnableDecidable 3 tested [Event.dismantleFirst]
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, `Nat.decLt`, `instDecidableEnabled`, `runnableDecidable`, and `runnableDecidable._aux_1`, reduction got stuck at the `Decidable` instance
+  match (Nat.succ 0).ble tested.fuel, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:225:51: error: Tactic `decide` failed for proposition
+  switched.work = true
+because its `Decidable` instance
+  instDecidableEqBool switched.work true
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool` and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match switched.work, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:225:62: error: Tactic `decide` failed for proposition
+  switched.products = 2
+because its `Decidable` instance
+  instDecidableEqNat switched.products 2
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : switched.products.beq 2 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+SupportHandoff.lean:225:73: error: Tactic `decide` failed for proposition
+  connected switched Port.first = false
+because its `Decidable` instance
+  instDecidableEqBool (connected switched Port.first) false
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool` and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match connected switched Port.first, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:226:7: error: Tactic `decide` failed for proposition
+  connected switched Port.second = true
+because its `Decidable` instance
+  instDecidableEqBool (connected switched Port.second) true
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool` and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match connected switched Port.second, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:226:18: error: Tactic `decide` failed for proposition
+  canProduce switched Port.second = true
+because its `Decidable` instance
+  instDecidableEqBool (canProduce switched Port.second) true
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool` and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match canProduce switched Port.second, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:226:29: error: failed to synthesize
+  Decidable (Generative.Trace (process 3) switched finishing handoffFinal)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SupportHandoff.lean:226:56: error: Expected type must not contain metavariables
+  Runnable ?m.58 ?m.59 ?m.60
+SupportHandoff.lean:226:68: error: Tactic `decide` failed for proposition
+  handoffFinal.first = false ∧ handoffFinal.second = false ∧ handoffFinal.work = false ∧ handoffFinal.failedAttempts = 0
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match handoffFinal.first, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:232:28: error: Expected type must not contain metavariables
+  Runnable ?m.24 ?m.25 ?m.26
+SupportHandoff.lean:232:40: error: Expected type must not contain free variables
+  material handoffFinal = 6 ∧ handoffFinal.loose = 3 ∧ handoffWord.length = 10 ∧ handoffFinal.fuel = 4
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SupportHandoff.lean:235:23: error: Application type mismatch: The argument
+  prepared
+has type
+  List Event → State
+but is expected to have type
+  State
+in the application
+  run prepared
+SupportHandoff.lean:242:33: error: Application type mismatch: The argument
+  prepared
+has type
+  List Event → State
+but is expected to have type
+  State
+in the application
+  Generative.Trace (process 3) prepared
+SupportHandoff.lean:246:40: error: Tactic `decide` failed for proposition
+  interrupted.first = false ∧
+    interrupted.second = false ∧
+      interrupted.work = true ∧
+        interrupted.products = 1 ∧ interrupted.failedAttempts = 1 ∧ interrupted.loose = 4 ∧ interrupted.fuel = 9
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, and `Bool.decEq`, reduction got stuck at the `Decidable` instance
+  match interrupted.first, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:253:28: error: Tactic `decide` failed for proposition
+  Runnable 3 interrupted repairWord
+because its `Decidable` instance
+  runnableDecidable 3 interrupted repairWord
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, `Nat.decLt`, `instDecidableEnabled`, `runnableDecidable`, and `runnableDecidable._aux_1`, reduction got stuck at the `Decidable` instance
+  match (Nat.succ 0).ble interrupted.fuel, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:253:40: error: Tactic `decide` failed for proposition
+  repaired.products = 3 ∧
+    repaired.work = false ∧
+      repaired.first = false ∧
+        repaired.second = false ∧ repaired.failedAttempts = 1 ∧ material repaired = 6 ∧ repaired.fuel = 3
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : repaired.products.beq 3 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+SupportHandoff.lean:255:31: error: unexpected token 'prefix'; expected term
+SupportHandoff.lean:256:8: error: unexpected token '++'; expected ':'
+SupportHandoff.lean:264:28: error: Tactic `decide` failed for proposition
+  Runnable 3 (initial 7) allOriginal
+because its `Decidable` instance
+  runnableDecidable 3 (initial 7) allOriginal
+did not reduce to `isTrue` or `isFalse`.
+
+Reduction got stuck at the `Decidable` instance
+  runnableDecidable 3 (initial 7) allOriginal
+SupportHandoff.lean:264:40: error: Tactic `decide` failed for proposition
+  ended.products = 3 ∧
+    ended.first = false ∧
+      ended.second = false ∧
+        ended.work = false ∧ ended.failedAttempts = 0 ∧ material ended = 6 ∧ ended.loose = 3 ∧ ended.fuel = 0
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqNat`, and `Nat.decEq`, reduction got stuck at the `Decidable` instance
+  match h : ended.products.beq 3 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+SupportHandoff.lean:271:37: error: Expected type must not contain free variables
+  (initial 7).fuel < handoffWord.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SupportHandoff.lean:286:11: error: unexpected token 'prefix'; expected term
+SupportHandoff.lean:286:18: error: unexpected token '++'; expected ':'
+SupportHandoff.lean:288:11: error: Application type mismatch: The argument
+  prepared
+has type
+  List Event → State
+but is expected to have type
+  State
+in the application
+  advance prepared
+SupportHandoff.lean:303:4: error: Application type mismatch: The argument
+  runnable_described_trace ?m.49
+has type
+  Generative.Trace (Generative.PurposeCorrection.stateOccurrences (process 3)) interrupted
+    (descriptions interrupted repairWord) (run interrupted repairWord)
+but is expected to have type
+  Generative.Trace (Generative.PurposeCorrection.stateOccurrences (process 3)) (run (initial 14) past) ?m.41 ?m.39
+in the application
+  Generative.PurposeCorrection.actual_violation_not_erased (runnable_described_trace ?m.46)
+    (runnable_described_trace ?m.49)
+SupportHandoff.lean:302:74: error: Expected type must not contain free variables
+  Runnable 3 (initial 14) past
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SupportHandoff.lean:303:81: error: Tactic `decide` failed for proposition
+  Runnable 3 interrupted repairWord
+because its `Decidable` instance
+  runnableDecidable 3 interrupted repairWord
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, `Nat.decLt`, `instDecidableEnabled`, `runnableDecidable`, and `runnableDecidable._aux_1`, reduction got stuck at the `Decidable` instance
+  match (Nat.succ 0).ble interrupted.fuel, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+SupportHandoff.lean:304:4: error: Expected type must not contain free variables
+  firstFailed ∈ descriptions (initial 14) past
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SupportHandoff.lean:305:4: error: failed to synthesize
+  Decidable ¬(NoFailedAttempt firstFailed.snd.fst ∧ NoFailedAttempt firstFailed.snd.snd)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'SupportHandoff.runnable_trace' does not depend on any axioms
+'SupportHandoff.step_material' depends on axioms: [propext, sorryAx, Quot.sound]
+'SupportHandoff.step_support' depends on axioms: [propext, sorryAx, Quot.sound]
+'SupportHandoff.trace_material' depends on axioms: [propext, sorryAx, Quot.sound]
+'SupportHandoff.trace_support' depends on axioms: [propext, sorryAx, Quot.sound]
+'SupportHandoff.insufficient_support_for_word' depends on axioms: [propext, sorryAx, Quot.sound]
+'SupportHandoff.disconnected_second_cannot_produce' depends on axioms: [propext]
+'SupportHandoff.successful_attempt_constructs_product' depends on axioms: [propext, sorryAx, Quot.sound]
+'SupportHandoff.unavailable_attempt_is_actual' depends on axioms: [propext, sorryAx, Quot.sound]
+SupportHandoff.lean:318:14: error(lean.unknownIdentifier): Unknown constant `SupportHandoff.formation_and_dependency_are_actual`
+'SupportHandoff.replacement_is_assembled_connected_and_tested' depends on axioms: [sorryAx]
+'SupportHandoff.original_support_ends_before_real_completion' depends on axioms: [sorryAx]
+'SupportHandoff.whole_handoff_preserves_material_and_support' depends on axioms: [sorryAx]
+'SupportHandoff.early_exit_reaches_an_actual_failed_attempt' depends on axioms: [sorryAx]
+'SupportHandoff.recovery_can_complete_the_same_activity' depends on axioms: [sorryAx]
+'SupportHandoff.real_completion_needs_no_replacement' depends on axioms: [sorryAx]
+'SupportHandoff.low_support_blocks_handoff_but_not_finite_ending' depends on axioms: [propext, sorryAx, Quot.sound]
+'SupportHandoff.runnable_described_trace' does not depend on any axioms
+'SupportHandoff.later_recovery_does_not_erase_failed_occurrence' depends on axioms: [propext, sorryAx]

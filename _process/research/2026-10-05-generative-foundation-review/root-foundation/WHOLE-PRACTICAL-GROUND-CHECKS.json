@@ -1,0 +1,990 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T15:57:14.073155+00:00",
+  "scope": "Owned artifact and receipt checks; not a new Lean run or ethical proof.",
+  "owned_fragments": 6,
+  "local_links": [
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#11-co-formation-and-the-scope-of-the-universal-claim"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#11-co-formation-and-the-scope-of-the-universal-claim"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#co-formation-and-universal-scope"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#11-co-formation-and-the-scope-of-the-universal-claim"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-PRACTICAL-GROUND-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-PRACTICAL-GROUND-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-PRACTICAL-GROUND-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-PRACTICAL-GROUND-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-PRACTICAL-RESTRICTION-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "REGENERATIVE-DIVERSITY-MATH.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-SOURCES.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md#6-generative-source-and-the-content-of-benevolence"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#7-goal-continuation-genuine-attenuation-and-first-ethical-identification"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#8-joint-explanation-and-the-source-of-corrective-force"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#9-shengsheng-as-a-substantive-ethical-direction"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#10-supported-plurality-and-the-source-of-ethical-authority"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md#11-co-formation-and-the-scope-of-the-universal-claim"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#27-fulfillment-and-succession-can-share-an-explanation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#30-the-selfs-good-is-already-within-the-whole"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "WHOLE-PROCESS-REALIZATION-ARGUMENT.md#9-continuation-6-october-2026-actual-engagement-and-the-grounds-of-its-value"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#67-capacity-for-ends-and-the-first-ethical-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md#authorized-continuation-findings-and-integration"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "PERSPECTIVAL-RATIFICATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#adjudication-of-the-proposed-discriminator"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#68-explanatory-identification-and-the-evidence-for-the-whole-root"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#69-shared-appraisal-through-transformation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "CONTINUATION-GENERATIVITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "REGENERATIVE-DIVERSITY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-situated-nondual-framing-question.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#67-capacity-for-ends-and-the-first-ethical-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "NORMATIVE-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#29-achieved-form-and-the-ground-of-ethical-direction"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#adjudication-of-the-proposed-discriminator"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "PERSPECTIVAL-RATIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#67-capacity-for-ends-and-the-first-ethical-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md#argument-synopsis-and-exact-reading-locations"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#3-the-affirmative-co-grounding-attempt"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#68-explanatory-identification-and-the-evidence-for-the-whole-root"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#ending-an-activity-and-the-quality-of-the-whole-continuation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md#4-joint-justification-and-a-pragmatic-rival"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#when-a-fixed-past-changes-present-significance"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md#5-value-beyond-use-by-an-already-valued-life"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#9-can-the-formation-and-correction-of-goods-establish-the-universal-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "CONTINUATION-GENERATIVITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "REGENERATIVE-DIVERSITY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-situated-nondual-framing-question.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#67-capacity-for-ends-and-the-first-ethical-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md",
+      "target": "WHOLE-PRACTICAL-RESTRICTION-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#67-capacity-for-ends-and-the-first-ethical-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#63-purposiveness-as-a-candidate-first-good"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-PROCESS-REALIZATION-SOURCES.md#fulfilled-experience-and-whole-ethical-appraisal"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#46-revising-purposes-without-erasing-their-consequences"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-PROCESS-REALIZATION-SOURCES.md#fulfillment-does-not-impose-indefinite-preservation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "PERSPECTIVAL-RATIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#29-achieved-form-and-the-ground-of-ethical-direction"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md#6-joint-ethical-identification-and-the-exclusivity-test"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#68-explanatory-identification-and-the-evidence-for-the-whole-root"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md#7-abiotic-regeneration-under-the-new-shengsheng-criterion"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-PROCESS-REALIZATION-SOURCES.md#2-moore-constitution-causal-support-and-response-to-existing-evil"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-PROCESS-REALIZATION-SOURCES.md#benevolences-ground-scope-and-enabling-conditions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#9-can-the-formation-and-correction-of-goods-establish-the-universal-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "CONTINUATION-GENERATIVITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-continuation-depends-on-generativity.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-situated-nondual-framing-question.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "CONSTITUTIVE-ANSWER-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "WHOLE-PROCESS-GROUNDING-ARGUMENT.md#34-self-good-practical-reasons-and-the-remaining-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "WHOLE-CONTINUATION-WARRANT-INTEGRATION.md#3-the-universal-sufficiency-audit"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "UNIVERSAL-RESPONSE-COMPOSITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#66-normative-powers-and-assistance-specific-exclusion"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "UNIVERSAL-WARRANT-SUFFICIENCY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "PROSPECTIVE-GROUND-CONSTITUTION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "ELECTIVE-CONCERN-COUNTERREVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "UNIVERSAL-RESPONSE-COMPOSITION-ARGUMENT.md#6-what-would-change-the-next-action"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "WHOLE-CONTINUATION-WARRANT-INTEGRATION.md#2-what-this-changes-about-candidate-invariants"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "PROSPECTIVE-GROUND-CONSTITUTION-ARGUMENT.md#6-what-changes-the-next-action"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#formation-participation-and-responsibility"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md",
+      "target": "NORMATIVE-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "#9-shengsheng-as-a-substantive-ethical-direction"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "#10-supported-plurality-and-the-source-of-ethical-authority"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "#11-co-formation-and-the-scope-of-the-universal-claim"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-GROUND-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-GROUND-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "MECHANISM-STATUS-RECONCILIATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "MERGED-OBLIGATIONS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-CONTINUATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "UNIVERSAL-RESPONSE-COMPOSITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "PROSPECTIVE-GROUND-CONSTITUTION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "UNIVERSAL-WARRANT-SUFFICIENCY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-RESTRICTION-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-GROUND-ARGUMENT.md#7-executed-comparison-authorship-withdrawal-and-new-support"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-GROUND-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-GROUND-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-RESTRICTION-MATH.md#validation-and-dependency-record"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-GROUND-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-PRACTICAL-GROUND-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#69-shared-appraisal-through-transformation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#8-shengsheng-the-favorable-significance-of-generative-formation-itself"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md#7-abiotic-regeneration-under-the-new-shengsheng-criterion"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md#5-value-beyond-use-by-an-already-valued-life"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "REGENERATIVE-DIVERSITY-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-continuation-depends-on-generativity.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "CONTINUATION-GENERATIVITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#9-can-the-formation-and-correction-of-goods-establish-the-universal-ground"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md#8-does-the-formation-and-correction-of-goods-confer-universal-authority"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-situated-nondual-framing-question.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md#6-generative-source-and-the-content-of-benevolence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "CONTINUATION-RENEWAL-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "LIANGZHI-PRACTICAL-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md#10-continuation-a-common-relation-makes-plural-formation-jointly-achievable"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-recursive-generative-selection.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md#6-generative-source-and-the-content-of-benevolence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "UNIVERSAL-WARRANT-SUFFICIENCY.md#1-the-missing-universal-inference"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "UNIVERSAL-WARRANT-SUFFICIENCY.md#4-a-substantive-immanent-rival"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "WHOLE-PRACTICAL-GROUND-ARGUMENT.md#5-the-substantive-rival-survives-within-the-whole"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "WHOLE-PRACTICAL-GROUND-ARGUMENT.md#7-executed-comparison-authorship-withdrawal-and-new-support"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "WHOLE-PRACTICAL-GROUND-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "PROSPECTIVE-GROUND-CONSTITUTION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "WHOLE-PRACTICAL-GROUND-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "WHOLE-CONTINUATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "UNIVERSAL-RESPONSE-COMPOSITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md",
+      "target": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-SOURCES.md",
+      "target": "WHOLE-PRACTICAL-GROUND-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-SOURCES.md",
+      "target": "WHOLE-CONTINUATION-WARRANT-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_practical.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/verification.json"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RegenerativeDiversity.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalCharacterization.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalPremises.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/constructive-succession/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsComplexity.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "WHOLE-PRACTICAL-GROUND-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_regenerative.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/verification.json"
+    }
+  ],
+  "theorems": 14,
+  "audited_declarations": 31,
+  "all_axiom_dependencies_empty": false,
+  "original_practical_axioms": [],
+  "original_count_scope": "WholePracticalRestriction only; regenerative bundle audited separately.",
+  "regenerative_bundle": {
+    "theorems": 14,
+    "audited_declarations": 36,
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification.json",
+    "receipt_sha256": "f3813009ff6f047b79d7677f89e87a73019f12c356196d32d746bafb1c314871"
+  },
+  "lean_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification.json",
+  "lean_receipt_sha256": "fd810ce8d7e8e63678647e3c7bed73238ce7ffe1063b193a24a71ddcc9523b19",
+  "checker_sha256": "dd382bfaf0236bab7c54684ac194ecbb141fdbfc6c73ac8c830bd9177b38ced1",
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md": "4f9dcbaaba80c132fef3a4710e403a3a74890de08615bbb71b5f72aa5cf26a19",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md": "4e8f41f8faf84bc3f7ae1595bb1d23bd00457fbeb6cac65f4bcbe0d618105ffa",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md": "ea34907711dc08eba28c0e81e83419f5285721673b671967e01629671e98a45f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-ARGUMENT.md": "a381d986b2354419d08cf10b667ef1d0412cdda7aab38c940631854fdc2a1809",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-CHECK.py": "dd382bfaf0236bab7c54684ac194ecbb141fdbfc6c73ac8c830bd9177b38ced1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-EDITS.json": "4b15e9dee00318d3d4bd8ab16e3a200d411317ed6c168f1a0641e77e2e0263f8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md": "b31755cafd6cfdac78ca5a5ef99a4aecb3ba9207dd7829627d857e8209c74b29",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-REVIEW.md": "489f34c7477720de433f8fb20a71e82caf5a7db2e9df21941efe80b80c85de11",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-GROUND-SOURCES.md": "e0e55dd75b155b5d83a227e9ded539e9af625c41c20d2ba99be30c48006c0c59",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PRACTICAL-RESTRICTION-MATH.md": "0018032165adf6a4a5e38326b9b784f5febfedb7bb974dde618c31717908f2e0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean": "b7036c386f34acdd6fbb2041ce81161b3aa433593e003aa7655391c430e7db87",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_practical.py": "5983c5783b54e1af8d87273b9a4e9d2ce7d1d70c07f121e31e684591299275d8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification.json": "fd810ce8d7e8e63678647e3c7bed73238ce7ffe1063b193a24a71ddcc9523b19",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111824.211255Z/WholePracticalRestriction.lean": "7bc95e38a8ae892245459aab57769a1a1cebe586d831de1b24e1176a4e8fd61d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111824.211255Z/attempt-note.json": "51bc33c1007138c43de4bea3c67f95705f64fd1387cd0f7f47648cd46f4dadb5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111917.667918Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111917.667918Z/02-command.json": "fcee8212583ee7975d1bad66c6524f49fd5352f401235dd2a91fcba63e18a79d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111917.667918Z/WholePracticalRestriction.lean": "7bc95e38a8ae892245459aab57769a1a1cebe586d831de1b24e1176a4e8fd61d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111917.667918Z/failure.json": "0d03b3105f64fca1f6db7b0824d9efa3ae3788c4f444ae05e779f3cd7269faf1",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111918.158203Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111918.158203Z/02-command.json": "02fb0fab3e95f8961f58ff0eb2bf6735842c9490f85257491e27dc5eafc05183",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111918.158203Z/WholePracticalRestriction.lean": "0c7fd330b91c15dc2458f801b52f99c66d316f98cbcf0ce51507f31f193edf4b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111918.158203Z/failure.json": "296f8604924875e2492e2aaa05dff7d719024a0d003aa474331c2c0379b098d6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/02-command.json": "f9078e9a0a1182228b88a0edbe34f8d5c68e3d4e99b28ea6ff78ddeb6e3c2dfb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/03-command.json": "a1eb77a3a3d40eca53f43315e72b96bf2181975adf23de6dd2f01a9810439a2a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/WholePracticalRestriction.lean": "a540b973417e595033155a7143f9da6b3767245a5eb7b296dece484faa3d3d92",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/WholePracticalRestriction.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/WholePracticalRestrictionAxiomAudit.lean": "2a207f0edfbb7c86ad845ef4d7baeb19dcd6ddb7bbedb4d5ca7fc94e9863f43b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/WholePracticalRestrictionAxiomAudit.log": "820637ccf3289f11c8030526b41ef8fb6f3392c3b76bcdd37f412b8c0f353246",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T111939.713162Z/verification.json": "be2ea36ed45ab2288d9733b5f644f1a5f8c430dc63bb2bd976bf7c8c81045f11",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/02-command.json": "f9078e9a0a1182228b88a0edbe34f8d5c68e3d4e99b28ea6ff78ddeb6e3c2dfb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/03-command.json": "91f42441cc721e805e5b7635d127f8e8d9be8c6656f74179d4f3195adbb9982a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/WholePracticalRestriction.lean": "d3e60411ce25da4448200b11074a8ccf69b460d2464447cf71f7b7ca0133979a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/WholePracticalRestriction.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/WholePracticalRestrictionAxiomAudit.lean": "eb7d94147b90ef9248d25ca422371203f55ab4579d425ec0c6d5f67baec16f7e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/WholePracticalRestrictionAxiomAudit.log": "e9196ebae701a43161fbf986f5f866d7719fd0f1b32514314d2c1c3a0bc3b938",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112016.839031Z/attempt-note.json": "ed1bf5971f26014fd8b6b1a226b85fbf063de6c6cf020b4c59755a1ff6978fa9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/02-command.json": "f9078e9a0a1182228b88a0edbe34f8d5c68e3d4e99b28ea6ff78ddeb6e3c2dfb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/03-command.json": "8bae12d5d564b0becf3cd42899e9efa1d917e0245c0397f027252e2655c0f682",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/WholePracticalRestriction.lean": "3068f851300c206d0b1bbb5e482d19d25b81cbadd5f1de9cfbce3b78761f29dc",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/WholePracticalRestriction.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/WholePracticalRestrictionAxiomAudit.lean": "eb7d94147b90ef9248d25ca422371203f55ab4579d425ec0c6d5f67baec16f7e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/WholePracticalRestrictionAxiomAudit.log": "e5f64e0eae750cb18f0b3718019ab656873006b3c84c2465c720522dbb4e8c62",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112036.520494Z/verification.json": "e009a1e6a78c573c9105c4c1951b3c9d02e1cb83f6819cd63e15051bfb83f6f3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/02-command.json": "f9078e9a0a1182228b88a0edbe34f8d5c68e3d4e99b28ea6ff78ddeb6e3c2dfb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/03-command.json": "8bae12d5d564b0becf3cd42899e9efa1d917e0245c0397f027252e2655c0f682",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/WholePracticalRestriction.lean": "b7036c386f34acdd6fbb2041ce81161b3aa433593e003aa7655391c430e7db87",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/WholePracticalRestriction.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/WholePracticalRestrictionAxiomAudit.lean": "eb7d94147b90ef9248d25ca422371203f55ab4579d425ec0c6d5f67baec16f7e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/WholePracticalRestrictionAxiomAudit.log": "e5f64e0eae750cb18f0b3718019ab656873006b3c84c2465c720522dbb4e8c62",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/check_practical.py": "5983c5783b54e1af8d87273b9a4e9d2ce7d1d70c07f121e31e684591299275d8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/practical-verification/20261007T112137.294648Z/verification.json": "fd810ce8d7e8e63678647e3c7bed73238ce7ffe1063b193a24a71ddcc9523b19",
+    "sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md": "708604bde5a8bac74e1b807621ac303ae6877bdbbd5474e5deb3b75e9b920d5d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md": "bbc03b108d547491eb1d798de7a0cf1a74382ee1fa36a106c3f387604018ae3c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RegenerativeDiversity.lean": "bc7ee57790699cf2db5ccde82431af31e24a03c3c0ec20f1cc3b4e214c5b88e2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_regenerative.py": "acd40f4caea9d77f972e12ad22bf4325a6e0034b8510cce14b94a2b0ce1bf517",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification.json": "f3813009ff6f047b79d7677f89e87a73019f12c356196d32d746bafb1c314871",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/02-command.json": "834b53c1c5a20c5adcbdbcd4d68613d5c7aca08c6ef9e3016c6968b0bc58e31b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/03-command.json": "d740c0fedb04065b53c8a8280187efbfeeffbcd3f3667cc62f9662a70c3b96cf",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/RegenerativeDiversity.lean": "5a0a8e9bd02bbc359347c2579095df0e8869d12fa900160964044b8c6f5bf0de",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/check_regenerative.py": "7d3ba77b6a1866cb136c9da621d5fe693d1fe7e34abdb9f2c2822dd09a90827a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125036.125717Z/failure.json": "8ae00c8423874b830658a4d1fd40b647417b9fe5bd90885dd1004732e67f69c5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/02-command.json": "834b53c1c5a20c5adcbdbcd4d68613d5c7aca08c6ef9e3016c6968b0bc58e31b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/03-command.json": "01b3876ff100d99fc56351431249a7630bb1e2158940a136b4b1dd7f06bc5003",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/RegenerativeDiversity.lean": "7d328f8a0b8c59f75caea8e3cc5e595429e05d777ac745b4b94c2c688e196e93",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/check_regenerative.py": "acd40f4caea9d77f972e12ad22bf4325a6e0034b8510cce14b94a2b0ce1bf517",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125119.713282Z/failure.json": "0cd672fb58897f5a878d08c481ac8d6d10d607fd2ebe0d93f747c5e3e4d86b6c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/02-command.json": "834b53c1c5a20c5adcbdbcd4d68613d5c7aca08c6ef9e3016c6968b0bc58e31b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/03-command.json": "b4553f890f6148cf9e3330b149356682b9f25a43f4b1851d10c14f629a32bec7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/04-command.json": "81003d48eb218e158cbd3bcba1bfcc05d6d80da150c0dbc9371906aeaaefb98b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/RegenerativeDiversity.lean": "6e7aa6a8f5240eaeb9d366c16259776e11c2568bccbde8cd47c572e2464b8e08",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/RegenerativeDiversity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/RegenerativeDiversityAxiomAudit.lean": "4368f9d07a0e06cd080f5da3841cecf73d7afbb9e32e1e40de9493723d5304db",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/RegenerativeDiversityAxiomAudit.log": "610d3a5cd1f7a05e95e03ffab3bfae6873001c85a892a8146149a38a29320478",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/check_regenerative.py": "acd40f4caea9d77f972e12ad22bf4325a6e0034b8510cce14b94a2b0ce1bf517",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125206.161995Z/verification.json": "cb75ffea613e5af942ef2c5953df036f25c563c3545e96cc7888804299546214",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/01-command.json": "cfa9d0d7f3437291bbb3956231d478a257b5c57496be7ace0dead853956b29f8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/02-command.json": "834b53c1c5a20c5adcbdbcd4d68613d5c7aca08c6ef9e3016c6968b0bc58e31b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/03-command.json": "b4553f890f6148cf9e3330b149356682b9f25a43f4b1851d10c14f629a32bec7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/04-command.json": "7601782bc95dc3d0b8ae9a9b16d03902f25ff4246f1017a9ea323c948efd060b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/RegenerativeDiversity.lean": "bc7ee57790699cf2db5ccde82431af31e24a03c3c0ec20f1cc3b4e214c5b88e2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/RegenerativeDiversity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/RegenerativeDiversityAxiomAudit.lean": "0833f8eabaf59e85a96cb204402b9fff65b6435f4abf3aa54819ba44d1eb3864",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/RegenerativeDiversityAxiomAudit.log": "179b586fd19faf684e62d652f3579825f9a5aec83afd6b08991e299a48186bb9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/check_regenerative.py": "acd40f4caea9d77f972e12ad22bf4325a6e0034b8510cce14b94a2b0ce1bf517",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/regenerative-verification/20261007T125324.053423Z/verification.json": "f3813009ff6f047b79d7677f89e87a73019f12c356196d32d746bafb1c314871"
+  },
+  "universal_normative_grounding_proved": false
+}

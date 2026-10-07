@@ -1,0 +1,21 @@
+'CompletionExamples.FinitePart.ext' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.union_partsOf' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.finite_cover' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.partsOf_union' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.union_order_iff' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.parts_order_iff' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.every_finite_budget_run' does not depend on any axioms
+'CompletionExamples.no_budget_runs_forever' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.tick_history_identity' does not depend on any axioms
+'CompletionExamples.no_infinite_concrete_tick_run' does not depend on any axioms
+'CompletionExamples.finite_concrete_tick_run' does not depend on any axioms
+'CompletionExamples.ideal_finite_upper' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.finite_lub_preserved' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.boundedPart_increasing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionExamples.boundedParts_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionExamples.unbounded_allNaturals' depends on axioms: [propext]
+'CompletionExamples.principal_not_unbounded' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.original_nat_no_greatest' does not depend on any axioms
+'CompletionExamples.completed_nat_greatest' depends on axioms: [propext]
+'CompletionExamples.unbounded_reading_not_continuous' depends on axioms: [propext, Quot.sound]
+'CompletionExamples.right_append_not_prefix_monotone' does not depend on any axioms

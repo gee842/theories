@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "frozen_source_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean": {
+      "sha256": "932385b98b68ed960ed9fea04ec5df22714094690d9cbc02ebd055271aec45df",
+      "named_declarations": 17,
+      "theorems": 14
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean": {
+      "sha256": "8b8688748f9cf7b5136c1e6eeef3d966f5b50cfc5d1462d7f901027d6924bef6",
+      "named_declarations": 35,
+      "theorems": 19
+    }
+  },
+  "inherited_sources_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean": "d303192f92d8a1cd9366c130cc6162965e6bd24c543c3109c378a0fcfe5ebea8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean": "c5277128c5cb553e3169afd21e508ef76fe5476b72b43dde25cf11a202f784a7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean": "0a07c4fc4a1c610c6fed4c0297afecfcea128bd2521efadd8ff409bb436480dd",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean": "99355e45e58616fa37dd8d137f35055ffa1f485c77c1a66bb971a9f981aa2a46",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean": "5be7e5b676c505927832561c65bd7610e5753d051ed84a66828a5241c20a4bb9",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean": "16ae26ac47098c683f8d633b6aa6997457b1dee8d7af0db4807c424ff3c014e6",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean": "6a4e824f65234c6d6c33fbc292f1ca3145e2e59031416faa9f66b6bf4561e8e3"
+  },
+  "inherited_receipts_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification.json": "eea2f7bdafacc9ad3550c3a71eb2ba3dffa50138054d89030f47c6bdf6f1959c",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/verification.json": "16d49115b4042739b5280089e4b54082c698a40e6a5dc0a01c3ce5963ad2b384",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/verification.json": "bf27e945feef9f59821270853be9d015da78f7d52c533281edaa5ba2b447e330"
+  },
+  "theorems_checked": 33,
+  "named_declarations_audited": 52,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "FamilyAdmission.finite_of_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.sigma_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.sections_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.finite_sigma_full_admission": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.finite_sections_full_admission": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.support": [],
+    "FamilyAdmission.truthFibers": [],
+    "FamilyAdmission.truthFibers_subsingleton": [],
+    "FamilyAdmission.truthFibers_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.support_truthFibers": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.full_iff_subsingleton_support": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.full_iff_finite_support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.truthFamilyMap": [],
+    "FamilyAdmission.truthFamily_projection": [],
+    "FamilyAdmission.section_exists_iff": [
+      "Classical.choice"
+    ],
+    "FamilyAdmission.singleton_fibers_infinite_total": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FamilyAdmission.boolean_fibers_infinite_sections": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.GraphIdeal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.Functional": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.Total": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.FiniteFunctional": [],
+    "DependentCompletion.functional_iff_finite": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.total_iff_finite_coverage": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.SectionIdeal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.sectionIdeal_ext": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.graph": [],
+    "DependentCompletion.encodeSection": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.decodeSection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.decode_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.graph_decode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.decode_encode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.encode_decode": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.sectionMap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.graph_finite": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.finite_base_graph_admitted": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.sigmaMap": [
+      "propext"
+    ],
+    "DependentCompletion.piMap": [
+      "Quot.sound"
+    ],
+    "DependentCompletion.completedSectionMap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.transported_evaluation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.sigmaPredicateMap": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.sectionPredicateMap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.sigma_predicate_membership": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.section_predicate_membership": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.bimap_quantifiers": [],
+    "DependentCompletion.section_predicate_quantifiers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.empty_fiber_not_total": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.no_section_ideal_of_empty_fiber": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.zeroSection": [],
+    "DependentCompletion.zeroIdeal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.zero_ideal_membership": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.zero_ideal_evaluation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DependentCompletion.fin_zero_fiber_no_total": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/check.py": "d6057a55156d1462c98cece3f0373b9c0b7e5b45e13a8b27e229729e7df72052",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/KernelAudit.lean": "f00f3657da30627e953bc632b264af5e13223faab714efe9d180e1823a4601cc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/IdealWarrant.log": "244fb59afd4635017cbaa750b4cd30ca2c77845228d10b066120917ab85168e4",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/CompletionRole.log": "7fba21e4d19cdb4a235148a3e7a4c754697f40d102ae3633364d882efade4550",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/CompletionExamples.log": "a2caee8436ec4d83708c272e5333c24c8d1d76187df484c86bdeb8096d8656d0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/TypedTruth.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/Admission.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/FunctionGraphs.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/FiniteAdmission.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/FamilyAdmission.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/DependentCompletion.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/verification/KernelAudit.log": "decc98e095186bdb654063539af01e54defbfb2ffabf55a552e0fa2458af5624"
+  },
+  "scope": "New named declarations only in counts. Receipt-matching inherited sources rebuilt in isolation. Finite dependent sum/section domains and per-carrier admission, all-finite-fiber support/fullness boundary, dependent graph completion with fixed-base fiberwise transport. Supplied bases, whole fiber assignments, full ideals and classical interpretation remain. No independent infinite admission, full dependent object-language or universal mathematical grounding is inferred."
+}

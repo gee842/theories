@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "frozen_source_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean": {
+      "sha256": "c765f66dfb94e92948495aa61a8ac518f6c72d629de0d70d537a91e336b08569",
+      "named_declarations": 26,
+      "theorems": 12
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean": {
+      "sha256": "972d9c67e4a95d57db80c7d808f929a68ac66ed57e37a462ae0009e11817ebcb",
+      "named_declarations": 19,
+      "theorems": 10
+    }
+  },
+  "inherited_sources_sha256": {},
+  "inherited_receipts_sha256": {},
+  "theorems_checked": 22,
+  "named_declarations_audited": 45,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "PotentialTruth.Frame": [],
+    "PotentialTruth.FutureCoverage": [],
+    "PotentialTruth.extend": [
+      "propext"
+    ],
+    "PotentialTruth.Available": [],
+    "PotentialTruth.available_future": [],
+    "PotentialTruth.available_extend": [
+      "propext"
+    ],
+    "PotentialTruth.Formula": [],
+    "PotentialTruth.Interpretation": [],
+    "PotentialTruth.sat": [
+      "propext"
+    ],
+    "PotentialTruth.potentialSat": [
+      "propext"
+    ],
+    "PotentialTruth.potential_iff_global": [
+      "propext"
+    ],
+    "PotentialTruth.emptyAssignment": [],
+    "PotentialTruth.sentence_agreement": [
+      "propext"
+    ],
+    "PotentialTruth.future_invariance": [
+      "propext"
+    ],
+    "PotentialTruth.prefixFrame": [],
+    "PotentialTruth.prefix_coverage": [
+      "propext"
+    ],
+    "PotentialTruth.prefix_domain_finite": [
+      "Quot.sound",
+      "propext"
+    ],
+    "PotentialTruth.prefix_no_full_world": [],
+    "PotentialTruth.OrderRelation": [],
+    "PotentialTruth.natOrder": [
+      "propext"
+    ],
+    "PotentialTruth.unboundedSentence": [
+      "propext"
+    ],
+    "PotentialTruth.unbounded_global": [
+      "propext"
+    ],
+    "PotentialTruth.unbounded_potential": [
+      "propext"
+    ],
+    "PotentialTruth.currentSat": [
+      "propext"
+    ],
+    "PotentialTruth.unbounded_current_false": [
+      "Quot.sound",
+      "propext"
+    ],
+    "PotentialTruth.unbounded_current_empty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CoverageBoundary.FutureExists": [],
+    "CoverageBoundary.future_exists_agreement": [],
+    "CoverageBoundary.coverage_iff_all_unary_existentials": [],
+    "CoverageBoundary.GlobalCoverage": [],
+    "CoverageBoundary.JointExtensions": [],
+    "CoverageBoundary.coverage_of_joint_extensions": [],
+    "CoverageBoundary.Fork": [],
+    "CoverageBoundary.forkFuture": [
+      "propext"
+    ],
+    "CoverageBoundary.forkDomain": [],
+    "CoverageBoundary.forkFrame": [
+      "propext"
+    ],
+    "CoverageBoundary.fork_global_coverage": [
+      "propext"
+    ],
+    "CoverageBoundary.fork_every_value_from_start": [
+      "propext"
+    ],
+    "CoverageBoundary.fork_left_misses_true": [
+      "propext"
+    ],
+    "CoverageBoundary.fork_not_future_coverage": [
+      "propext"
+    ],
+    "CoverageBoundary.fork_not_joint_extensions": [
+      "propext"
+    ],
+    "CoverageBoundary.emptyInterpretation": [],
+    "CoverageBoundary.anotherValue": [
+      "propext"
+    ],
+    "CoverageBoundary.another_global_true": [
+      "propext"
+    ],
+    "CoverageBoundary.another_potential_false_at_start": [
+      "propext"
+    ]
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/check.py": "8dcdf05086f5e2f47a9c74048dfdaa72ecf7d6972832b7da892e0701aca12a59",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification/KernelAudit.lean": "286f26d2ff870e28adb5b7cb2003ddf0933f0652438896723939bbc4ad7a9dcc",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification/PotentialTruth.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification/CoverageBoundary.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification/KernelAudit.log": "161e8aea03d09da94005492e5a4ced36104284022fb028ad145ec560183317bc"
+  },
+  "scope": "New declarations only in counts. Two sources built in order in a fresh isolated directory; only bundled Std imported. Relational first-order truth mirrored through future quantifiers under a supplied stable interpretation, increasing frame and coverage from every stage. Finite Nat prefixes and a branching failure are explicit. The coverage converse tests all ambient unary predicates, not a fixed signature. No independent admission, truth algorithm, higher-order extension or unique metaphysical grounding is inferred."
+}

@@ -2,13 +2,13 @@
 
 6 October 2026. AI-authored construction under [generative grounding](GENERATIVE-GROUNDING.md), continuing [recipient correction](RECIPIENT-CORRECTION.md). **Accepted bounded result:** a declared assembly process forms alternative retained evidence routes before they operate; actual recipient resources then pay to copy the resulting route and record, and a successor's actual return can pay for its finite retention. Equal original-actor resources and equal initial copying access do not force equal successor retention.
 
-This advances **formed recipient route → acquired response → paid transmission and retention**. The recipes, proposal law, calibrated addressing, recipient operation, copying association and prices remain supplied local inputs. The child expresses an inherited estimate in one action; it does not yet perform another learning cycle. The result therefore explains a conditional consequence-to-retention connection without establishing selection for truthful learning in general.
+This advances **formed recipient route → acquired response → resource-dependent transmission and retention**. The recipes, proposal law, calibrated addressing, recipient operation, copying association and prices remain supplied local inputs. The child expresses an inherited estimate in one action; it does not yet perform another learning cycle. The result therefore explains a conditional consequence-to-retention connection without establishing selection for truthful learning in general.
 
 ## What was missing, and what now connects
 
 The predecessor's policy `arm` was an external experiment setting. Its packed register contained two estimated orientations, not the evidence-routing policy. Copying those bits could not demonstrate inheritance of that policy. The [prospective contract](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md) and [saved-evidence audit](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/handoff-audit.json) preserved this gap, together with a difficult comparison: faithful correction and a misleading private-zero proxy can both leave actor nine and recipient ten, while retaining different recipient estimates.
 
-The new [executable construction](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/model.py) installs a retained route `gamma` and a bounded four-code payload `q` before the original four recipient/actor exposures. After assembly, the operational suffix reads that stored route; it receives no external arm argument. Its command reads only the record and paid target report. The hidden target law determines physical capture, not the chosen command or copier's preference.
+The new [executable construction](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/model.py) installs a retained route `gamma` and a bounded four-code payload `q` before the original four recipient/actor exposures. After assembly, the operational suffix reads that stored route; it receives no external arm argument. Its command reads only the record and resource-dependent target report. The hidden target law determines physical capture, not the chosen command or copier's preference.
 
 ```mermaid
 flowchart LR
@@ -37,7 +37,7 @@ For adequate parts, the independently implemented four-exposure dynamics project
 
 The successor boundary carries the real terminal actor fuel, recipient stock, live installed route and payload. The old action source is exhausted. One receiver blank, one routing part and a ten-unit auxiliary packet are declared separately in the extended experiment. Unused stocks remain accounted for when construction fails.
 
-The actor pays one for a finite donor-access interval. This requires an already accessible module and does not resurrect lost memory. The recipient pays one for its own declared operation, one to read the actual template onto a blank, one to assemble the receiver and one to commit the record on that same carrier. It then transfers five units to the child. Every recipient payment leaves a stipulated floor of one; seed transfer moves existing fuel rather than creating or dissipating it. A missing part after reading leaves the paid occupied carrier and prior charges intact.
+The actor pays one for a finite donor-access interval. This requires an already accessible module and does not resurrect lost memory. The recipient pays one for its own declared operation, one to read the actual template onto a blank, one to assemble the receiver and one to commit the record on that same carrier. It then transfers five units to the child. Every recipient payment leaves a stipulated floor of one; seed transfer moves existing fuel rather than creating or dissipating it. A missing part after reading leaves the resource-dependent occupied carrier and prior charges intact.
 
 The child spends one on retention, one on target access and three on work before receiving any return. It queries the same named recipient: the donor's actor bit is not reinterpreted as knowledge of a new carrier's self. Correct work transfers the auxiliary packet's ten units to the recipient; incorrect work loses them. A final recipient payment of one retains the child for the specified finite interval. No recipient return replenishes the original actor.
 
@@ -77,10 +77,10 @@ These are one-cycle count laws. They are not the expected frequency of a repeate
 ## Countercases are part of the result
 
 - A frozen or disconnected route supplied with the correct record performs equally well in this stable, read-only continuation. The copied channel's later acquisition and revision function is not exercised here.
-- Changing the target reverses which inherited record succeeds. A wrong paid target context can defeat an otherwise correct record.
+- Changing the target reverses which inherited record succeeds. A wrong resource-dependent target context can defeat an otherwise correct record.
 - Stripping the acquired recipient estimate, removing the whole module or disabling recipient action blocks the corresponding benefit. A disconnected evidence input alone does not disable an already stored response.
 - A public correct template can succeed using resources produced by another route; a public wrong template fails. These are explicit substitutions, demonstrating that the local association between contributor and copied template is consequential and supplied.
-- Refusal avoids the actor's donor-access payment; omission can preserve recipient stock. No actor preference for participation is derived. Resource scarcity and missing parts retain paid partial failures.
+- Refusal avoids the actor's donor-access payment; omission can preserve recipient stock. No actor preference for participation is derived. Resource scarcity and missing parts retain resource-dependent partial failures.
 
 Interventions change named state or rule inputs. They are not presented as unchanged-law continuations of the baseline. The recipient operation and reserve floor are stipulated operational demands, not a derivation of welfare or ethical standing.
 
@@ -94,7 +94,7 @@ This is a proof of the declared deterministic interface, not a Lean refinement p
 
 ## What this changes in the foundation
 
-A response policy previously supplied only as an experimental choice now has a paid retained implementation before use, and the recipient's actual subsequent return can maintain a copy without repayment to the original actor. This supplies one concrete path by which consequences for another center affect persistence of a responding structure. It preserves distinct accounts and does not require a single aggregate value assigned to both centers.
+A response policy previously supplied only as an experimental choice now has a resource-dependent retained implementation before use, and the recipient's actual subsequent return can maintain a copy without repayment to the original actor. This supplies one concrete path by which consequences for another center affect persistence of a responding structure. It preserves distinct accounts and does not require a single aggregate value assigned to both centers.
 
 The **next unresolved bridge** is to let a funded successor acquire new evidence, revise its estimate or routing mechanism, and transmit the actual revised structure under changing contexts. Correct frozen controls, misleading but subsidized routes, copying errors, local versus pooled support, finite component renewal and donor/recipient conflict must remain possible. Otherwise the experiment could explain persistence of a lucky record while leaving learning and selection over learners supplied.
 

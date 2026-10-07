@@ -1,0 +1,31 @@
+{
+  "recorded_on": "2026-10-08",
+  "timezone": "Asia/Bangkok",
+  "scope": "Exact shared-file bytes before this index adds its own navigation/maintenance entry. Existing unrelated edits preserved; snapshot links retain original source base.",
+  "files": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/generative-chain-index-before/AGENTS.md",
+      "sha256": "0124b49da60124433e2769154f1d2c207b31317ab2b44f639dc6877edb54b040",
+      "original_link_base": "."
+    },
+    {
+      "source": "README.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/generative-chain-index-before/README.md",
+      "sha256": "edd131fa2c35f4503d5460927320758c0b1f2c8f69eb58cb28d65411b79de81d",
+      "original_link_base": "."
+    },
+    {
+      "source": "RESEARCH.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/generative-chain-index-before/RESEARCH.md",
+      "sha256": "ed22e263d34d1422d154e690d3c3a7fee7bd3f0a33594c05c6a8bc66f4bb43c5",
+      "original_link_base": "."
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/generative-chain-index-before/theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "6d5dc977858c7ec90c16b5d03a502a7de7dfe7c63f2d7812d807fc6b92a935df",
+      "original_link_base": "theories/shengsheng-buxi-generative-existence"
+    }
+  ]
+}

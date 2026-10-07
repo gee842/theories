@@ -1,0 +1,223 @@
+{
+  "status": "passed",
+  "utc": "2026-10-07T17:01:01.571060+00:00",
+  "scope": "Document/receipt/preservation check; no additional compilation or ethical proof.",
+  "new_theorems": 11,
+  "new_declaration_audits": 28,
+  "axiom_dependencies": [],
+  "frozen_artifacts_verified": 9,
+  "formal_receipt_sha256": "dd5de8e58ca389e6bb396dcdd00ab4a996f1b45eebc2b1d51b91697a9a573c00",
+  "baseline_sha256": "1abe543ffdcb3859285934e521015e6541a7c411ab5a237b448d5c24daf0fcb5",
+  "checker_sha256": "120440e1783c005edd9ce1cabd6f2e1de49e6e5e813b31cfd086655e2b0224b4",
+  "unchanged_files": 8,
+  "historical_prefixes": 2,
+  "documents_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md": "54556a1c78b15dcad32490f79488354ee3595a627535e61d7e8669c0b9b63c99",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md": "d5d5e84943e809c682c01652bd15e5e7326f30a9951874d2c85a5249f95b4aa7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md": "99f311c1f34206b7b346ff2268a40c8b1d590ee364f5585999be2dcd0ead18d0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md": "43e6e75541cccb4be80aaaa62678c3507f4d549275a0b22879676017b166f025"
+  },
+  "integrated_section_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md": "54556a1c78b15dcad32490f79488354ee3595a627535e61d7e8669c0b9b63c99",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md": "d5d5e84943e809c682c01652bd15e5e7326f30a9951874d2c85a5249f95b4aa7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md": "99f311c1f34206b7b346ff2268a40c8b1d590ee364f5585999be2dcd0ead18d0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md": "43e6e75541cccb4be80aaaa62678c3507f4d549275a0b22879676017b166f025",
+    "README.md": "7fdd3eef6ca8627118753feff8ee1f16972379e2bde3b0793368ea618daaba45",
+    "RESEARCH.md": "aa74399283243d5630a51b84f83117f7d2119469b4abd6cdb7833bf0c67ef045",
+    "_process/BRIEF.md": "1cc4a95fcc795f15da401f7d886b3d7404fa82ea0fa07c863f6ca7bbd3ebff6f",
+    "theories/shengsheng-buxi-generative-existence/README.md": "0a385c2874bb0a22c3cb297dbae49123f090526d79c6a664e45bbe4267e73956",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "2801bbf4657df1286650a964d70418e44245b33846cc26414550cb15c1ed0ecd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "22b9629d125f69ac4fd8668b7046b37c3761a68a93d65b707c1df8d775a5ae34",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md": "b5621e50f014e46592fffae60112daad36e72a5f2fe567f1d93c6c730ca29f86",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": "a616b21b130f9cc943cf62b9d1569dd6442ef69a5d8403fa835abb6cd3c0a72a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md": "fce1e8867432fc8a955a13ec1a84f8fd466ed2d0642e9cef15c4163886c1c045",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md": "04bb39710406b2b83f8921e5756c07dde1903d70373cfacbc0dac4d68aaf84e7"
+  },
+  "local_links_checked": 46,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/tradeoff-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md",
+      "target": "GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md",
+      "target": "FUTURE-GOOD-INTEGRAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md",
+      "target": "SITUATED-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "GENERATIVE-PREMISE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md#11-重组与建设性结束"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "GENERATIVE-TRADEOFF-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "GENERATIVE-TRADEOFF-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/tradeoff-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md",
+      "target": "GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "README.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/BRIEF.md",
+      "target": "research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#mixed-generative-comparisons-and-revisable-loss-judgments"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-TRADEOFF-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-TRADEOFF-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-TRADEOFF-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-ARGUMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-REVIEW.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "GenerativeTradeoff.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "check_tradeoff.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "tradeoff-verification.json"
+    }
+  ]
+}

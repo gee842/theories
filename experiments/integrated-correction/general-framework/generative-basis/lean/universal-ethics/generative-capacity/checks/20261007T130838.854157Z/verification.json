@@ -1,0 +1,659 @@
+{
+  "status": "passed",
+  "utc": "20261007T130838.854157Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "checker_sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+  "retained_run": "checks/20261007T130838.854157Z",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "FormativeCapacity": "ff8c3cf2a029a19db766b515c7652ddb181e688df50754319cf0fb3182ea34fc"
+  },
+  "scope": "Checked mathematical implications of the stated assembly law; no ethical verdict or empirical validation.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "theorems": 23,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.Process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Enabled"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.Trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_nil_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_cons_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.productProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_mk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.Process": [],
+        "Generative.Enabled": [],
+        "Generative.Trace": [],
+        "Generative.trace_nil_iff": [],
+        "Generative.trace_cons_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.trace_append_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.Feasible": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.productProcess": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_left": [],
+        "Generative.trace_product_right": [],
+        "Generative.trace_product_mk": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "FormativeCapacity",
+      "theorems": 38,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "FormativeCapacity.Tree"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.parts"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.depth"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.socketAddress"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.live"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.grow"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.close"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.spine"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.grow_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.close_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.close_has_no_socket"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.grow_socket_address"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.grow_live"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.spine_grows"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.spine_depth"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.spine_socket_address"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.spine_closed_address"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormativeCapacity.Phase"
+        },
+        {
+          "kind": "structure",
+          "name": "FormativeCapacity.State"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormativeCapacity.Event"
+        },
+        {
+          "kind": "abbrev",
+          "name": "FormativeCapacity.Feed"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.initial"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.advance"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.Enabled"
+        },
+        {
+          "kind": "instance",
+          "name": "FormativeCapacity.enabledDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.Step"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.process"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.children"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.finite_branching"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.material"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.inputLots"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.workSpent"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.total"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.step_accounts"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.trace_accounts"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.build_reconstructs_next_interface"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.no_socket_no_capture"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.closed_step_spends"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.InfiniteFrom"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.closed_no_infinite"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.infinite_never_commissions_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.one_shot_infinite_only_gathers"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.constantFeed"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.gathered"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.gather_step"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.gatherWord"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.gather_trace"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.batchState"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.batch_commission"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.batch_build"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.batch_builds"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.batch_terminal"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.arbitrary_finite_terminal_depth"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.milestone"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.charged"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.open_commission"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.cycle_capture"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.cycle_build"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.nextFrame"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.frame"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.two_frames"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.even_frame"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.growthStates"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.growthEvents"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.growth_lawful"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.fullStates"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.fullEvents"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.continuing_formation_run"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.actual_growth_milestones"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.completed_formations_recur"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.actual_depth_unbounded"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.infinite_gathering_without_formation"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeCapacity.finiteFeed"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.finite_feed_cursor_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeCapacity.finite_feed_trace_bound"
+        }
+      ],
+      "axiom_dependencies": {
+        "FormativeCapacity.Tree": [],
+        "FormativeCapacity.parts": [],
+        "FormativeCapacity.depth": [],
+        "FormativeCapacity.socketAddress": [],
+        "FormativeCapacity.live": [],
+        "FormativeCapacity.grow": [],
+        "FormativeCapacity.close": [],
+        "FormativeCapacity.spine": [],
+        "FormativeCapacity.grow_parts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.close_parts": [
+          "propext"
+        ],
+        "FormativeCapacity.close_has_no_socket": [
+          "propext"
+        ],
+        "FormativeCapacity.grow_socket_address": [
+          "propext"
+        ],
+        "FormativeCapacity.grow_live": [
+          "propext"
+        ],
+        "FormativeCapacity.spine_grows": [
+          "propext"
+        ],
+        "FormativeCapacity.spine_depth": [
+          "propext"
+        ],
+        "FormativeCapacity.spine_socket_address": [
+          "propext"
+        ],
+        "FormativeCapacity.spine_closed_address": [
+          "propext"
+        ],
+        "FormativeCapacity.Phase": [],
+        "FormativeCapacity.State": [],
+        "FormativeCapacity.Event": [],
+        "FormativeCapacity.Feed": [],
+        "FormativeCapacity.initial": [],
+        "FormativeCapacity.advance": [],
+        "FormativeCapacity.Enabled": [],
+        "FormativeCapacity.enabledDecidable": [],
+        "FormativeCapacity.Step": [],
+        "FormativeCapacity.process": [],
+        "FormativeCapacity.children": [],
+        "FormativeCapacity.finite_branching": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.material": [],
+        "FormativeCapacity.inputLots": [
+          "propext"
+        ],
+        "FormativeCapacity.workSpent": [
+          "propext"
+        ],
+        "FormativeCapacity.total": [],
+        "FormativeCapacity.step_accounts": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.trace_accounts": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.build_reconstructs_next_interface": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.no_socket_no_capture": [
+          "propext"
+        ],
+        "FormativeCapacity.closed_step_spends": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.InfiniteFrom": [],
+        "FormativeCapacity.closed_no_infinite": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.infinite_never_commissions_closed": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.one_shot_infinite_only_gathers": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.constantFeed": [],
+        "FormativeCapacity.gathered": [],
+        "FormativeCapacity.gather_step": [
+          "propext"
+        ],
+        "FormativeCapacity.gatherWord": [],
+        "FormativeCapacity.gather_trace": [
+          "propext"
+        ],
+        "FormativeCapacity.batchState": [],
+        "FormativeCapacity.batch_commission": [
+          "propext"
+        ],
+        "FormativeCapacity.batch_build": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.batch_builds": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.batch_terminal": [
+          "propext"
+        ],
+        "FormativeCapacity.arbitrary_finite_terminal_depth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.milestone": [],
+        "FormativeCapacity.charged": [],
+        "FormativeCapacity.open_commission": [],
+        "FormativeCapacity.cycle_capture": [
+          "propext"
+        ],
+        "FormativeCapacity.cycle_build": [
+          "propext"
+        ],
+        "FormativeCapacity.nextFrame": [],
+        "FormativeCapacity.frame": [],
+        "FormativeCapacity.two_frames": [],
+        "FormativeCapacity.even_frame": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.growthStates": [],
+        "FormativeCapacity.growthEvents": [],
+        "FormativeCapacity.growth_lawful": [
+          "propext"
+        ],
+        "FormativeCapacity.fullStates": [],
+        "FormativeCapacity.fullEvents": [],
+        "FormativeCapacity.continuing_formation_run": [
+          "propext"
+        ],
+        "FormativeCapacity.actual_growth_milestones": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.completed_formations_recur": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.actual_depth_unbounded": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.infinite_gathering_without_formation": [
+          "propext"
+        ],
+        "FormativeCapacity.finiteFeed": [],
+        "FormativeCapacity.finite_feed_cursor_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeCapacity.finite_feed_trace_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "FormativeCapacity.lean": "ff8c3cf2a029a19db766b515c7652ddb181e688df50754319cf0fb3182ea34fc",
+    "FormativeCapacity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FormativeCapacityAxiomAudit.lean": "28e232990d4ac418e8307bc966baed75758193caf561f7fc2e638ddcddf0cede",
+    "FormativeCapacityAxiomAudit.log": "751778ad1163d365cade92a56e97ea896669b2acc19dc73f7ea4a7f39a00d473",
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCoreAxiomAudit.lean": "1fa733a28044ead178c5a811051dd0d7bc0f4505ef5c69d360c6bc126eabc027",
+    "GenerativeCoreAxiomAudit.log": "a940c563aa7dafc2204031660bcc59f2780125b6bdb5350b7daac8b1226585f1",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "frozen_source_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean": {
+      "sha256": "3f18a6d422129f3fcc1195f6b142984cd03567d55d42a0ca1e701478469d90e4",
+      "named_declarations": 38,
+      "theorems": 24
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean": {
+      "sha256": "d492efce5893d189a4d8c78c3adae0b15d4d41e1b315dd531096260d0af83b6d",
+      "named_declarations": 9,
+      "theorems": 4
+    }
+  },
+  "inherited_sources_sha256": {},
+  "inherited_receipts_sha256": {},
+  "theorems_checked": 28,
+  "named_declarations_audited": 47,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "InductiveDomain.iterate": [],
+    "InductiveDomain.Generated": [],
+    "InductiveDomain.NoJunk": [],
+    "InductiveDomain.Closed": [],
+    "InductiveDomain.FullInduction": [],
+    "InductiveDomain.SelectedInduction": [],
+    "InductiveDomain.generated_closed": [],
+    "InductiveDomain.generated_least": [],
+    "InductiveDomain.fullInduction_iff_noJunk": [],
+    "InductiveDomain.selected_iff_noJunk": [],
+    "InductiveDomain.Separated": [],
+    "InductiveDomain.iterate_injective": [],
+    "InductiveDomain.index": [
+      "Classical.choice"
+    ],
+    "InductiveDomain.iterate_index": [
+      "Classical.choice"
+    ],
+    "InductiveDomain.index_iterate": [
+      "Classical.choice"
+    ],
+    "InductiveDomain.NatEquivalence": [],
+    "InductiveDomain.naturalEquivalence": [
+      "Classical.choice"
+    ],
+    "InductiveDomain.Hom": [],
+    "InductiveDomain.hom_iterate": [],
+    "InductiveDomain.recurse": [
+      "Classical.choice"
+    ],
+    "InductiveDomain.recurse_iterate": [
+      "Classical.choice"
+    ],
+    "InductiveDomain.recurse_hom": [
+      "Classical.choice"
+    ],
+    "InductiveDomain.hom_unique": [
+      "Quot.sound"
+    ],
+    "InductiveDomain.unique_recursion": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InductiveDomain.bool_generated": [],
+    "InductiveDomain.bool_fullInduction": [],
+    "InductiveDomain.bool_not_separated": [],
+    "InductiveDomain.extraSuccessor": [],
+    "InductiveDomain.extra_separated": [
+      "propext"
+    ],
+    "InductiveDomain.extra_iterate": [
+      "propext"
+    ],
+    "InductiveDomain.extra_not_noJunk": [
+      "propext"
+    ],
+    "InductiveDomain.nat_iterate": [],
+    "InductiveDomain.nat_generated": [],
+    "InductiveDomain.nat_separated": [],
+    "InductiveDomain.OnlyGenerated": [],
+    "InductiveDomain.restricted_selected_induction": [],
+    "InductiveDomain.restricted_excludes_false": [],
+    "InductiveDomain.restricted_not_full": [],
+    "Initiality.Initial": [],
+    "Initiality.generatedZero": [],
+    "Initiality.generatedSuccessor": [],
+    "Initiality.initial_noJunk": [],
+    "Initiality.liftedZero": [],
+    "Initiality.liftedSuccessor": [],
+    "Initiality.initial_nat_hom": [],
+    "Initiality.separated_of_noJunk_nat_hom": [],
+    "Initiality.initial_iff_generated_separated": [
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/check.py": "6b60088a5828796e37e7b11700c7aacdb24ecf6302329dd560e2e555f4ea4f56",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/verification/KernelAudit.lean": "c7067e74774cb3d42b412c1b48c2ae0b391963edff46c147665e4971d081b1e8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/verification/InductiveDomain.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/verification/Initiality.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/verification/KernelAudit.log": "2802bb17bcedda09827f0069df02985f390ebf8cfa59b1bc39599bc193ad9d00"
+  },
+  "scope": "New declarations only in counts. Two sources built in order in a fresh isolated directory; only bundled Std imported. Supplied zero/successor carrier: full and selected induction, generated coverage, separated constructor identities, Nat reconstruction and same-universe initiality. Ambient Nat, induction and logic remain foundational resources even where printed axiom lists are empty. No independent infinity or full-predicate admission is inferred."
+}

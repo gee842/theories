@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T11:19:51.257778+00:00",
+  "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "a9881cc21f9008e0ba9fb04e4ca2dc472975e3dd2ce5510f31946770c7401f5e",
+  "inherited_receipt_sha256": "160459f397ea341ff9480ed01d5ab892a8f97fe84a5eb2bab51b5acfbead02c5",
+  "fresh_temporary_build": true,
+  "inputs_unchanged": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "log": "wang-practice-checks/1791371990097356000/GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "CoupledOccurrence",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+      "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.CoupledOccurrence.erase_described_trace": [],
+        "Generative.CoupledOccurrence.describe_actual_trace": [],
+        "Generative.CoupledOccurrence.described_trace_exact": [],
+        "Generative.CoupledOccurrence.described_append_actual_iff": [],
+        "Generative.CoupledOccurrence.map_described_trace": [],
+        "Generative.CoupledOccurrence.actual_continuation_retains_occurrence": [
+          "propext"
+        ],
+        "Generative.CoupledOccurrence.replay_append": [
+          "propext"
+        ]
+      },
+      "log": "wang-practice-checks/1791371990097356000/CoupledOccurrence.txt",
+      "log_sha256": "6b6336060815ebe23c2f13d5c745a714e709c170b756611f1de55c05637c49a1"
+    },
+    {
+      "module": "SituatedPractice",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean",
+      "sha256": "628963b9c132a75c387adcca32bd4f29a02c378bf60e8f69ce87dcb93b98b06c",
+      "new": true,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.SituatedPractice.extension_erases_to_actual_trace": [],
+        "Generative.SituatedPractice.enacted_ready_fits": [],
+        "Generative.SituatedPractice.ready_has_fitting_extension": [],
+        "Generative.SituatedPractice.ready_empty_iff": [
+          "propext"
+        ],
+        "Generative.SituatedPractice.no_fitting_history_no_ready": [],
+        "Generative.SituatedPractice.sound_response_iff_common_continuation": [
+          "Classical.choice"
+        ],
+        "Generative.SituatedPractice.refinement_preserves_response_existence": [],
+        "Generative.SituatedPractice.incompatible_histories_obstruct_response": [],
+        "Generative.SituatedPractice.changed_appraisal_requires_response_revision": [],
+        "Generative.SituatedPractice.PairwiseBoundary.every_pair_has_common_response": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Generative.SituatedPractice.PairwiseBoundary.whole_family_has_no_common_response": [],
+        "Generative.SituatedPractice.PairwiseBoundary.differentiated_response_fits": [
+          "propext"
+        ]
+      },
+      "log": "wang-practice-checks/1791371990097356000/SituatedPractice.txt",
+      "log_sha256": "055141b1171af39b270adcd997491a9d3921ad0a1e1ea8770d0aade7aaf757d0"
+    }
+  ],
+  "new_audits": 12,
+  "scope": "Whole finite occurrence-history response correspondence; common-continuation selection iff every attained readout fibre admits one robustly fitting feasible word. Fits and readout are supplied local interfaces; no ethical first warrant, universal moral adequacy, acquired selector, motivation or inevitable enactment is established."
+}

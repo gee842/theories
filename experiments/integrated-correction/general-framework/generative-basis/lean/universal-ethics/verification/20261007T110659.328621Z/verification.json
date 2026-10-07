@@ -1,0 +1,273 @@
+{
+  "status": "passed",
+  "utc": "20261007T110659.328621Z",
+  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "checker_sha256": "12f59e111282e86c254b74e7e31b1d39cf59b0516d0bde0f4891f5d4ec8b8ad3",
+  "retained_run": "verification/20261007T110659.328621Z",
+  "modules": [
+    {
+      "module": "WholeGroundCoverage",
+      "sha256": "8ddf51311583755908ba843986f262f7a0b4071764031a6fa1a1bf2c0dbd512a",
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.Reached"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.Admissible"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.Entails"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reason_inheritance"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reached_is_admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reached_iff_entails"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.universal_target_coverage_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.uncovered_has_admissible_omission"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reached_mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.substitute_grounded_seeds"
+        },
+        {
+          "kind": "structure",
+          "name": "WholeGroundCoverage.LocalAtlas"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.ScopedEdge"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.JoinedEdge"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.LocalSound"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_sound_iff_joined_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_sound_gives_global_inheritance"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_reach_in_joined"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.CompatibleGrounds"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.GluedGround"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.glued_ground_iff_local"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.compatible_local_ground_transport_glues"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.jointly_grounded_scope_inheritance"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.HistoryEdge"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_edge_preserves_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_reach_projects"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_reach_lifts"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_reach_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_local_sound_gives_global"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.Place"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.Window"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.firstSeed"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.InWindow"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.WindowStep"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.alternatingAtlas"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_domains_cover"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_first_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_second_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_join_reaches_finish"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.first_scope_reach_stays_inside"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.second_scope_reach_stays_at_seed"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_beyond_separate_closures"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.unconnectedAtlas"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.unconnected_reach_is_seed"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_domain_coverage_insufficient"
+        }
+      ],
+      "theorems": 27,
+      "axioms": [],
+      "kernel_checked": true
+    },
+    {
+      "module": "CutCoverageAudit",
+      "sha256": "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669",
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "UniversalEthics.CutCoverageAudit.Reach"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.HasCut"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.NoCut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.reach_avoids_reverse_closed_cut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.reachable_implies_no_cut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.has_cut_implies_not_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.not_reachable_has_cut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.has_cut_iff_not_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.no_cut_iff_double_negated_reachability"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.no_cut_to_reachable_of_decidable"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.no_cut_iff_reachable_of_decidable"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.DoubleNegationElimination"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.UniversalCutUpgrade"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.singleton_reachability_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.double_negation_elimination_implies_universal_cut_upgrade"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.universal_cut_upgrade_implies_double_negation_elimination"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.universal_cut_upgrade_iff_double_negation_elimination"
+        }
+      ],
+      "theorems": 12,
+      "axioms": [],
+      "kernel_checked": true
+    }
+  ],
+  "scope": "Declared mathematical implications only; universal ethical warrant unresolved."
+}

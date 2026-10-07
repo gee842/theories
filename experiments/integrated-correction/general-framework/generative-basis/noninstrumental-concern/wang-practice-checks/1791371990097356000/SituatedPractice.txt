@@ -1,0 +1,12 @@
+'Generative.SituatedPractice.extension_erases_to_actual_trace' does not depend on any axioms
+'Generative.SituatedPractice.enacted_ready_fits' does not depend on any axioms
+'Generative.SituatedPractice.ready_has_fitting_extension' does not depend on any axioms
+'Generative.SituatedPractice.ready_empty_iff' depends on axioms: [propext]
+'Generative.SituatedPractice.no_fitting_history_no_ready' does not depend on any axioms
+'Generative.SituatedPractice.sound_response_iff_common_continuation' depends on axioms: [Classical.choice]
+'Generative.SituatedPractice.refinement_preserves_response_existence' does not depend on any axioms
+'Generative.SituatedPractice.incompatible_histories_obstruct_response' does not depend on any axioms
+'Generative.SituatedPractice.changed_appraisal_requires_response_revision' does not depend on any axioms
+'Generative.SituatedPractice.PairwiseBoundary.every_pair_has_common_response' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedPractice.PairwiseBoundary.whole_family_has_no_common_response' does not depend on any axioms
+'Generative.SituatedPractice.PairwiseBoundary.differentiated_response_fits' depends on axioms: [propext]

@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "command": [
+    "/Users/ren/.elan/bin/lean",
+    "+leanprover/lean4:v4.29.1",
+    "-o",
+    "RegenerativeDiversity.olean",
+    "RegenerativeDiversity.lean"
+  ],
+  "sources": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "RegenerativeDiversity": "7d328f8a0b8c59f75caea8e3cc5e595429e05d777ac745b4b94c2c688e196e93"
+  },
+  "checker_sha256": "acd40f4caea9d77f972e12ad22bf4325a6e0034b8510cce14b94a2b0ce1bf517",
+  "output": "RegenerativeDiversity.lean:79:38: error: No goals to be solved\nRegenerativeDiversity.lean:79:9: error: unsolved goals\ncase zero\nk : Nat\nh : k \u2264 0\nthis : k = 0\n\u22a2 Tap (prefixCircuit k) (prefixCircuit 0)\n"
+}

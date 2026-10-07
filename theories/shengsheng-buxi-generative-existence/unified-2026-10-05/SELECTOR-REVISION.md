@@ -8,7 +8,7 @@
 
 A selector has orientation m∈{0,1} and remaining lifetime ℓ. It maps an observed sensory bit b to response b XOR m. The environment's hidden condition z determines which response actually captures a fuel packet. The selector receives no condition label, reversal notification or future information. A condition change can make the formerly productive cue-response mapping unproductive.
 
-The compartment starts with no selector and a finite reserve. It pays one fuel unit to assemble a selector, with either orientation equally likely. Reading the cue and reconstructing its selected response cost two more units. Actual productive capture supplies four fuel units; one pays for template-preserving renewal of the selector, restoring its lifetime to two. An unsuccessful paid trial reduces its remaining lifetime. On expiry, paid reconstruction can produce the other orientation. The old orientation remains physically accessible in its residue, equally available to every controller.
+The compartment starts with no selector and a finite reserve. It pays one fuel unit to assemble a selector, with either orientation equally likely. Reading the cue and reconstructing its selected response cost two more units. Actual productive capture supplies four fuel units; one pays for template-preserving renewal of the selector, restoring its lifetime to two. An unsuccessful resource-dependent trial reduces its remaining lifetime. On expiry, resource-dependent reconstruction can produce the other orientation. The old orientation remains physically accessible in its residue, equally available to every controller.
 
 This is replacement of a rule-bearing component **within one continuing compartment**. Resources and source packets continue through every change. There is no population of organizations from which an observer selects survivors, and no numerical success score controls a transition. Failed formation and inability to pay for the next trial remain in the outcome distribution. The source is a finite externally timed packet stream; unused packets spill rather than accumulate for an inactive compartment.
 
@@ -45,10 +45,10 @@ The prespecified primary preparation uses nine initial fuel units, twelve packet
 | Material random renewal | 4.5 | 3/8 | 3/8 |
 | Conventional random-restart automaton | 4.5 | 3/8 | 3/8 |
 | Directed failure feedback | 6 | 1/2 | 1/2 |
-| Fixed mapping, paid reconstruction | 2 | 0 | 0 |
-| Outcome-blind paid renewal intervention | 3.358391 | 0.168304 | 0.212814 |
+| Fixed mapping, resource-dependent reconstruction | 2 | 0 | 0 |
+| Outcome-blind resource-dependent renewal intervention | 3.358391 | 0.168304 | 0.212814 |
 
-The revision witness requires capture before the reversal, **paid assembly changing orientation after it**, then capture using the new orientation. A fixed mapping becoming useful because the environment changes cannot satisfy this witness. All probabilities include histories that fail before the reversal. Final reserve readiness is an accounting diagnostic after the finite packet stream, not a survival guarantee.
+The revision witness requires capture before the reversal, **resource-dependent assembly changing orientation after it**, then capture using the new orientation. A fixed mapping becoming useful because the environment changes cannot satisfy this witness. All probabilities include histories that fail before the reversal. Final reserve readiness is an accounting diagnostic after the finite packet stream, not a survival guarantee.
 
 The random-restart automaton and material law have the same physical-state transition kernel. Their complete distributions agree, not merely the table's means. The stronger directed controller uses failure information that random assembly discards. It is at least as good in the reported capture/readiness metrics throughout the declared comparison set; that finite finding is not a proof of dominance in every noisy environment. The fixed and outcome-blind arms are ablations, not sufficient conventional benchmarks. Outcome-blind renewal changes the material maintenance coupling and can have different realized maintenance expenses.
 
@@ -66,7 +66,7 @@ Thus more consequence-sensitive upkeep is not an unconditional improvement. Both
 
 ## Evidence and connection to the larger derivation
 
-**Subsequent material interface, 6 October 2026:** [a checked staged construction](MATERIAL-SELECTOR-COMPOSITION.md) now supplies actual A/H parts through the earlier formation, repair and local-copy law, then restricts this selector law by paid component recipes. Its selector projection preserves the operational history, and an exact lift criterion identifies the required inherited part stocks. This advances the composition gap described below at a finite, declared interface. It does not establish unrestricted concurrent chemistry or derive the assembly wiring, packet access and maintenance coupling from the earlier molecules alone.
+**Subsequent material interface, 6 October 2026:** [a checked staged construction](MATERIAL-SELECTOR-COMPOSITION.md) now supplies actual A/H parts through the earlier formation, repair and local-copy law, then restricts this selector law by resource-dependent component recipes. Its selector projection preserves the operational history, and an exact lift criterion identifies the required inherited part stocks. This advances the composition gap described below at a finite, declared interface. It does not establish unrestricted concurrent chemistry or derive the assembly wiring, packet access and maintenance coupling from the earlier molecules alone.
 
 The [executable study](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/README.md) evaluates **11 declared cases and 55 case-controller combinations** using exact fractions. A separate implementation with a different state representation reproduces all **13 reported metrics** in every arm and checks **85,932** conditional recovery configurations. The source/fuel/expense/waste ledger is preserved through actual successors. These are internal mathematical and computational checks, not empirical observations.
 

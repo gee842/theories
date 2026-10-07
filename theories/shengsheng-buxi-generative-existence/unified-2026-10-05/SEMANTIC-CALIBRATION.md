@@ -24,7 +24,7 @@ Starting with an unqualified register, the actual positive-receipt updater prese
 
 If a current scoped reason recommends command `r`, and a readable, correctly bound qualified register has `r=c(q)`, the invariant entails that `r` is compatible with the same recipient relation. Compatibility here means receipt whenever the modeled opportunity is present; it does not guarantee that an opportunity exists. The proof imports the existing identification updater, rather than giving a new memory cell an unexplained truth label.
 
-The scope is decisive. The fixed response relation, faithful acquisition, command decoding, patient identity and absence of later corruption remain premises. The invariant concerns the content of acquired memory. It does not create the earlier paid exposures, a new read route, permission to act, a source packet or a beneficial effect in an independently identified patient.
+The scope is decisive. The fixed response relation, faithful acquisition, command decoding, patient identity and absence of later corruption remain premises. The invariant concerns the content of acquired memory. It does not create the earlier resource-dependent exposures, a new read route, permission to act, a source packet or a beneficial effect in an independently identified patient.
 
 ## What the actual saved histories show
 
@@ -42,7 +42,7 @@ The checked evidence comprises **12 new Lean audits** over the existing updater,
 
 | Situation | What the check can establish | What remains unresolved |
 |---|---|---|
-| Only the archived action tags are corrupted; acquired controller and recipient relation are intact | The wrong source command disagrees with the sound acquired candidate | A permitted and paid way to investigate or repair it |
+| Only the archived action tags are corrupted; acquired controller and recipient relation are intact | The wrong source command disagrees with the sound acquired candidate | A permitted and resource-dependent way to investigate or repair it |
 | Both the source command and the retained candidate are corrupted consistently | They can agree while recommending the wrong command | An informative acquisition path outside that shared fault |
 | The recipient relation changes without changing visible context labels | Old memory and old reasons can still agree | Evidence of change; matching labels do not prove causal stability |
 | New correct evidence contradicts stale qualified memory | There is a disagreement | Which record is current and better grounded; old qualification cannot have an unconditional veto |
@@ -67,6 +67,6 @@ This remains distinct from deriving concern. Correctly identifying which command
 
 Measurement-tampering research already distinguishes apparent agreement from actual outcomes; unsupervised knowledge-discovery research shows that a consistency criterion need not identify the intended truth feature; explanation-faithfulness research separates plausible reasons from the causes of actual model behavior. The [primary-source comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-SOURCES.md) records these different questions and a still-unrun learned-AI experiment. Our result is not a solution to any of those full empirical problems.
 
-The next connection is **paid access to the correctly bound pre-import evidence → justified treatment of disagreement or change → actual recipient action and consequence**. Its success must retain acquisition, read and storage costs; tolerate valid new evidence contradicting old memory; and preserve the same patient and objective. The central physical continuation remains separately owned. Repeated agreement tests without this interface would not advance the full derivation.
+The next connection is **resource-dependent access to the correctly bound pre-import evidence → justified treatment of disagreement or change → actual recipient action and consequence**. Its success must retain acquisition, read and storage costs; tolerate valid new evidence contradicting old memory; and preserve the same patient and objective. The central physical continuation remains separately owned. Repeated agreement tests without this interface would not advance the full derivation.
 
 The result would fail at its stated scope if a retained qualified command lacked the claimed positive-receipt history, if the independent check used a mismatched lineage, or if corruption reached the controller through the supposedly separate route. Detecting common corruption or silent change would require stronger accessible evidence than the present monitor receives. Full alignment, justified objectives, plural authority and empirical generalization remain ongoing.

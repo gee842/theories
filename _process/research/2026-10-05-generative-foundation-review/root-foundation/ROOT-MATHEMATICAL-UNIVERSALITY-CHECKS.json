@@ -1,0 +1,77 @@
+{
+  "checked_at_utc": "2026-10-07T11:18:14.021009+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-ARGUMENT.md": "7d1851df551fc4072b5ec98679a1a2da8a94d5ca19195b6f1d82fbe94433eb57",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-REVIEW.md": "4dae65c74f86871a97bca42a445d8eefaf785050f776c02e88cc902a8a71d490",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-SOURCES.md": "aedb4548857744ad5af1907f6367dd2896cc400e3d2d149f02da096cd0a26e3f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-LEAN.md": "9ba55904cd96fe62d4dc60a397dc23ce726ef1af3aeefc108992488e7768b73a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-INTEGRATION.md": "7023426cc8c91329839f74103ee1239205370a60e7a7614f7d67f47eb3c4786c",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md": "de51b889f12648f85519fff7469bd14cf3d1ef704ca8c4a9bb3333e8935d7aa6",
+    "sources/15-codex-theory-conversations/2026-10-07-pursue-unique-mathematical-constitution.md": "693ba6925f57245f150a80e6dcdb08ae8a004462cc09978060c9a69f908fede9"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 83,
+  "heading_fragments_checked": 7,
+  "previous_completion_assets_preserved": 8,
+  "lean_receipt_sha256": "ce06d886f39dea16a28f0dc8034615c32e227ce46db47420d0e188287fc7e4d1",
+  "lean_theorems_checked": 43,
+  "lean_named_declaration_audits": 84,
+  "internal_review": {
+    "result": "No substantive blocker; full integration and both Lean modules reviewed. Two minor clarifications adopted: explicit tuple upper bound including empty case; limitation applies to explanatory reduction, not the successful hull theorem.",
+    "validation": "Reviewer independently matched both Lean source hashes to passed 43-theorem, 84-declaration receipt."
+  },
+  "manifest_sha256": "1d3798f5f2fa3fa3b1ef97a1449447b737c911d3d868fd05ad8c52d8ed2237e2",
+  "checker_sha256": "50dc0718516de60089ac55cda7ede4a7f960cebb26de1fb70cbb954596cca6cc",
+  "errors": [],
+  "passed": true
+}

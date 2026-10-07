@@ -1,0 +1,20 @@
+'SupportHandoff.runnable_trace' does not depend on any axioms
+'SupportHandoff.step_material' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.step_support' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.trace_material' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.trace_support' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.insufficient_support_for_word' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.disconnected_second_cannot_produce' depends on axioms: [propext]
+'SupportHandoff.successful_attempt_constructs_product' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.unavailable_attempt_is_actual' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.formation_and_dependency_are_actual' does not depend on any axioms
+'SupportHandoff.replacement_is_assembled_connected_and_tested' does not depend on any axioms
+'SupportHandoff.original_support_ends_before_real_completion' does not depend on any axioms
+'SupportHandoff.whole_handoff_preserves_material_and_support' does not depend on any axioms
+'SupportHandoff.early_exit_reaches_an_actual_failed_attempt' does not depend on any axioms
+'SupportHandoff.recovery_can_complete_the_same_activity' does not depend on any axioms
+'SupportHandoff.replacement_after_removal_can_complete_without_failure' does not depend on any axioms
+'SupportHandoff.real_completion_needs_no_replacement' does not depend on any axioms
+'SupportHandoff.low_support_blocks_handoff_but_not_finite_ending' depends on axioms: [propext, Quot.sound]
+'SupportHandoff.runnable_described_trace' does not depend on any axioms
+'SupportHandoff.later_recovery_does_not_erase_failed_occurrence' depends on axioms: [propext]

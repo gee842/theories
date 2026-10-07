@@ -1,5 +1,7 @@
 # Independent review of the finite-window period reduction
 
+**Subsequent formal continuation:** [the composed proof](PERIOD-GENERAL-PROOF.md) implements the correspondence obligations identified here and records their current verification status. Its covering-family proof does not assume exact maximality or realizability of every generated candidate. The earlier review and finite comparisons below retain their original scope.
+
 7 October 2026. AI-authored counterreview of the general-period continuation of [period selection](PHASE-PERIOD-SELECTION.md). This checks whether the proposed local-language certificate addresses the **same** unknown-phase/unknown-inversion game as `PhasePeriodSelection.knowsWithin`. It supplies a formal implementation premise to the governing ethical programme; it supplies no ethical order or reason to select persistence.
 
 **Assessment:** the mathematical reduction has a coherent route to an arbitrary-period result. Finite-window enumeration is not a bound on cycle length. Its general application still needs the explicit semantic and encoding connections below; computing the finite certificate alone does not prove the original game's arbitrary-period theorem. The review found no counterexample in 1,020 comparisons with the retained solver. Those comparisons are finite corroboration, not a replacement for the connections.

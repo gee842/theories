@@ -1,0 +1,245 @@
+{
+  "status": "passed",
+  "utc": "20261007T125324.053423Z",
+  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "checker_sha256": "acd40f4caea9d77f972e12ad22bf4325a6e0034b8510cce14b94a2b0ce1bf517",
+  "retained_run": "regenerative-verification/20261007T125324.053423Z",
+  "modules": [
+    {
+      "module": "RegenerativeDiversity",
+      "sha256": "bc7ee57790699cf2db5ccde82431af31e24a03c3c0ec20f1cc3b4e214c5b88e2",
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "RegenerativeDiversity.Circuit"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.depth"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.evaluate"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.prefixCircuit"
+        },
+        {
+          "kind": "inductive",
+          "name": "RegenerativeDiversity.Tap"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.prefix_depth"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.prefix_evaluation"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.cutInput"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.prefix_distinguishable"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.retained_tap"
+        },
+        {
+          "kind": "structure",
+          "name": "RegenerativeDiversity.State"
+        },
+        {
+          "kind": "inductive",
+          "name": "RegenerativeDiversity.Event"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.intakeState"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.assemblyState"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.duplicateState"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.reconstructionState"
+        },
+        {
+          "kind": "inductive",
+          "name": "RegenerativeDiversity.Step"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.process"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.Balanced"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.step_balance"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.trace_balance"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.growthState"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.growthCycle"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.growthHistory"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.growth_cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.growth_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.growing_repertoire"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.OneShotBound"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.one_shot_construction"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.one_shot_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.one_shot_trace"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.copyState"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.copyCycle"
+        },
+        {
+          "kind": "def",
+          "name": "RegenerativeDiversity.copyHistory"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.copy_cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "RegenerativeDiversity.copying_without_diversification"
+        }
+      ],
+      "theorems": 14,
+      "axiom_dependencies": {
+        "RegenerativeDiversity.Circuit": [],
+        "RegenerativeDiversity.depth": [],
+        "RegenerativeDiversity.evaluate": [],
+        "RegenerativeDiversity.prefixCircuit": [],
+        "RegenerativeDiversity.Tap": [],
+        "RegenerativeDiversity.prefix_depth": [
+          "propext"
+        ],
+        "RegenerativeDiversity.prefix_evaluation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.cutInput": [],
+        "RegenerativeDiversity.prefix_distinguishable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.retained_tap": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.State": [],
+        "RegenerativeDiversity.Event": [],
+        "RegenerativeDiversity.intakeState": [],
+        "RegenerativeDiversity.assemblyState": [],
+        "RegenerativeDiversity.duplicateState": [],
+        "RegenerativeDiversity.reconstructionState": [],
+        "RegenerativeDiversity.Step": [],
+        "RegenerativeDiversity.process": [],
+        "RegenerativeDiversity.Balanced": [],
+        "RegenerativeDiversity.step_balance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.trace_balance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.growthState": [],
+        "RegenerativeDiversity.growthCycle": [],
+        "RegenerativeDiversity.growthHistory": [],
+        "RegenerativeDiversity.growth_cycle": [
+          "propext"
+        ],
+        "RegenerativeDiversity.growth_trace": [
+          "propext"
+        ],
+        "RegenerativeDiversity.growing_repertoire": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.OneShotBound": [],
+        "RegenerativeDiversity.one_shot_construction": [],
+        "RegenerativeDiversity.one_shot_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.one_shot_trace": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegenerativeDiversity.copyState": [],
+        "RegenerativeDiversity.copyCycle": [],
+        "RegenerativeDiversity.copyHistory": [],
+        "RegenerativeDiversity.copy_cycle": [
+          "propext"
+        ],
+        "RegenerativeDiversity.copying_without_diversification": [
+          "propext"
+        ]
+      },
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "kernel_checked": true
+    }
+  ],
+  "dependencies": {
+    "GenerativeCore": {
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    }
+  },
+  "scope": "Declared mathematical implications only; universal ethical warrant unresolved."
+}

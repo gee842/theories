@@ -1,0 +1,213 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "frozen_source_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean": {
+      "sha256": "209a9e161b5aacd740582e16da474df1fb4f4792b9315c6f307d25a3d1d9e020",
+      "named_declarations": 26,
+      "theorems": 19
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean": {
+      "sha256": "2951d70f850649b9b89ab2d64adb3d47e8be27f9494d8169b36aaeddd08c0c66",
+      "named_declarations": 22,
+      "theorems": 12
+    }
+  },
+  "inherited_sources_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean": "d303192f92d8a1cd9366c130cc6162965e6bd24c543c3109c378a0fcfe5ebea8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean": "c5277128c5cb553e3169afd21e508ef76fe5476b72b43dde25cf11a202f784a7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean": "0a07c4fc4a1c610c6fed4c0297afecfcea128bd2521efadd8ff409bb436480dd",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean": "5be7e5b676c505927832561c65bd7610e5753d051ed84a66828a5241c20a4bb9"
+  },
+  "inherited_receipts_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/verification.json": "16d49115b4042739b5280089e4b54082c698a40e6a5dc0a01c3ce5963ad2b384"
+  },
+  "theorems_checked": 31,
+  "named_declarations_audited": 48,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "IndexedAssembly.FiniteChain": [],
+    "IndexedAssembly.ChainUnion": [],
+    "IndexedAssembly.FiniteChainClosed": [],
+    "IndexedAssembly.ChainFamily": [],
+    "IndexedAssembly.chainFamily_directed": [
+      "propext"
+    ],
+    "IndexedAssembly.union_chainFamily": [
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.directed_implies_chain_closed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parityStages": [
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parity_zero": [
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parity_successor": [
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parity_stage_membership": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parity_stages_finite": [
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parity_stages_increasing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parityChain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parity_union": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.parity_admitted": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.finiteOrCofinite_parity_stages": [
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.finiteOrCofinite_parity_union_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.finiteOrCofinite_not_chain_closed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.prefixChain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.prefix_stage_membership": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.prefix_union": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.full_of_finite_chain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.full_iff_finite_chain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.chain_iff_full_given_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "IndexedAssembly.chain_iff_directed_given_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RelationalAssembly.Projection": [],
+    "RelationalAssembly.Witness": [],
+    "RelationalAssembly.witnessSetoid": [],
+    "RelationalAssembly.Assembly": [],
+    "RelationalAssembly.Support": [],
+    "RelationalAssembly.abstractWitness": [],
+    "RelationalAssembly.output": [],
+    "RelationalAssembly.output_abstract": [],
+    "RelationalAssembly.realize": [
+      "Classical.choice"
+    ],
+    "RelationalAssembly.output_realize": [
+      "Classical.choice"
+    ],
+    "RelationalAssembly.realize_output": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationalAssembly.output_injective": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationalAssembly.output_surjective": [
+      "Classical.choice"
+    ],
+    "RelationalAssembly.abstract_eq_iff": [
+      "Quot.sound"
+    ],
+    "RelationalAssembly.projection_iff_output": [
+      "Classical.choice"
+    ],
+    "RelationalAssembly.projected_content_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RelationalAssembly.projection_reindex": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RelationalAssembly.parity_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RelationalAssembly.parity_iff_output": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RelationalAssembly.OutputAbstractionClosed": [],
+    "RelationalAssembly.CorrespondenceClosed": [],
+    "RelationalAssembly.support_admitted": [
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/check.py": "b9b4cea299a4e827bdea388cdb5ab5bf78903263cfca67079cab6d8b7c5cb83e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/KernelAudit.lean": "706f721586ecc640a203fe7f500389468016d0cf95fff4e78427947ae8ea6472",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/IdealWarrant.log": "244fb59afd4635017cbaa750b4cd30ca2c77845228d10b066120917ab85168e4",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/CompletionRole.log": "7fba21e4d19cdb4a235148a3e7a4c754697f40d102ae3633364d882efade4550",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/CompletionExamples.log": "a2caee8436ec4d83708c272e5333c24c8d1d76187df484c86bdeb8096d8656d0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/Admission.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/IndexedAssembly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/RelationalAssembly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification/KernelAudit.log": "d97458cb0a99e5253c956e93a33a293cecd35cb1f765ef34bc587ff5b1b311ca"
+  },
+  "scope": "New named declarations only in headline counts. Inherited completion dependencies are freshly compiled from receipt-matching frozen bytes. Explicit parity recurrence, fullness equivalence for unrestricted Nat-indexed finite chains, and extensional abstraction of a supplied witness relation. Whole-relation availability and object-admission closure remain premises; no independent universal warrant inferred."
+}

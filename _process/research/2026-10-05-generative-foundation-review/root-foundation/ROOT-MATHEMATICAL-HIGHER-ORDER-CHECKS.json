@@ -1,0 +1,87 @@
+{
+  "checked_at_utc": "2026-10-07T12:10:18.548896+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-LEAN.md": "53b456fdd7473d57670bf2482b21c682e372a44e6e6daf1c72711aeafd856ba2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-REVIEW.md": "7f7ccd9d99400ea9dd4e687f4ed911443138d30ffb99ab7506146398c6762644",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-SOURCES.md": "0c93089a1494f06de4a499fcbda9a5e6e471b913c9db807b2359634c8dbdd06d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-INTEGRATION.md": "82fb0a6787b3d10c7231f302ca74a7a5539efbe6584d9ee7a66c57d856d5b04b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-TYPES.md": "201a8054a773cc02e74ada91e09a31eb0cede09a2dbc520efbb60b26959b3687",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/README.md": "048fc84fba7729890c575c3e34052be983f7cf992fb9073a91201d86a9d2f2a7",
+    "sources/15-codex-theory-conversations/2026-10-07-finish-higher-order-reconstruction.md": "73728fd8fdc2a9da416de74836d6f8e3abd1bf66c0444b75c19a21994861c57e"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 56,
+  "heading_fragments_checked": 2,
+  "previous_proof_assets_preserved": 32,
+  "new_lean_receipts": {
+    "higher-order": {
+      "sha256": "eea2f7bdafacc9ad3550c3a71eb2ba3dffa50138054d89030f47c6bdf6f1959c",
+      "theorems_checked": 43,
+      "named_declarations_audited": 97
+    }
+  },
+  "lean_theorems_checked": 43,
+  "lean_named_declaration_audits": 97,
+  "internal_review": "Root and collaborating reviewer read both final modules. Reviewer accepted full finite-arity second-order and declared finite simple-type scopes, binder surjectivity, extensional equality, supplied fullness, semantic comprehension and actual finite-range counterexample; receipt hashes independently matched.",
+  "concurrent_change_observation": null,
+  "manifest_sha256": "a2450b5d7ccb36c4bc5dfc40336666070cb65ab9ea8e3de3e717c3f5ce672107",
+  "checker_sha256": "023527280b4e52c20a60c7d88a209e83401dddf3f59165f9a9ceee039cfbc7f4",
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,85 @@
+{
+  "checked_at_utc": "2026-10-07T16:43:28.530949+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-ARGUMENT.md": "9331736ccd1e6b43604d42ed738fd6255e2677920354c8c4670f6bf297412d42",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-REVIEW.md": "53b23e880d8140428cf5f89151c08147f205cb83ce8c4d35d5ebd12a4e572ea0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md": "fb64c9e7faee912dbad5f32e8a74b2ed971edbb74b38f6c5e33d1fd4b71bd1cb",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/README.md": "37548192438e264631801abd90328f023b0f0083fef62cde200e585c42055118",
+    "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md": "d67f449a07aebc77ae42844f2f454f80b924c491728abea5147acb85ccf1eb08"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 44,
+  "heading_fragments_checked": 3,
+  "previous_proof_assets_preserved": 85,
+  "new_lean_receipts": {
+    "families": {
+      "sha256": "1231872501890d8c1c0d09c969ad1b5417f4da987b3f69d0c58c13384cf0d48d",
+      "theorems_checked": 33,
+      "named_declarations_audited": 52
+    }
+  },
+  "lean_theorems_checked": 33,
+  "lean_named_declaration_audits": 52,
+  "internal_review": "Separate affirmative/source assessment and independent critical review; root integration and fresh Lean build. Internal AI review, not external peer review.",
+  "concurrent_change_observation": "Large pre-existing multi-session worktree; immediate pre-write bytes preserved by additive edits, no commits.",
+  "manifest_sha256": "df70778d95f48931c529429626500e6f77bc292604024c2f621ae0c8462cff51",
+  "checker_sha256": "de69df3de949aa1bda897e91d404564620a9d4f9ab9f23c2de417c8a0c1861a0",
+  "errors": [],
+  "passed": true
+}

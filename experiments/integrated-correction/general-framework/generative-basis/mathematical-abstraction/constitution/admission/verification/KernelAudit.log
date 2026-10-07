@@ -1,0 +1,88 @@
+'PredicateAdmission.Included' does not depend on any axioms
+'PredicateAdmission.PredicateUnion' does not depend on any axioms
+'PredicateAdmission.NonemptyDirected' does not depend on any axioms
+'PredicateAdmission.IncludesFinite' does not depend on any axioms
+'PredicateAdmission.DirectedUnionClosed' does not depend on any axioms
+'PredicateAdmission.Full' does not depend on any axioms
+'PredicateAdmission.FiniteProfiles' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finiteProfiles_directed' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.union_finiteProfiles' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finiteProfiles_admitted' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.full_of_finite_directed' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.full_iff_finite_directed' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.directed_iff_full_given_finite' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.Finite' does not depend on any axioms
+'PredicateAdmission.Complement' does not depend on any axioms
+'PredicateAdmission.BinaryUnion' does not depend on any axioms
+'PredicateAdmission.FiniteOrCofinite' does not depend on any axioms
+'PredicateAdmission.finite_congr' does not depend on any axioms
+'PredicateAdmission.finite_empty' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finite_singleton' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finite_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredicateAdmission.finite_union' depends on axioms: [propext]
+'PredicateAdmission.finiteOrCofinite_includes_finite' does not depend on any axioms
+'PredicateAdmission.finiteOrCofinite_empty' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finiteOrCofinite_full' depends on axioms: [propext]
+'PredicateAdmission.finiteOrCofinite_singleton' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finiteOrCofinite_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredicateAdmission.finiteOrCofinite_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredicateAdmission.finite_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredicateAdmission.finiteOrCofinite_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredicateAdmission.Image' does not depend on any axioms
+'PredicateAdmission.Bijective' does not depend on any axioms
+'PredicateAdmission.finite_image' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.bijective_image_complement' does not depend on any axioms
+'PredicateAdmission.finiteOrCofinite_bijective_image' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.inverse' depends on axioms: [Classical.choice]
+'PredicateAdmission.inverse_right' depends on axioms: [Classical.choice]
+'PredicateAdmission.inverse_left' depends on axioms: [Classical.choice]
+'PredicateAdmission.inverse_bijective' depends on axioms: [Classical.choice]
+'PredicateAdmission.image_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredicateAdmission.finiteOrCofinite_bijection_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredicateAdmission.listBound' does not depend on any axioms
+'PredicateAdmission.member_le_bound' depends on axioms: [propext]
+'PredicateAdmission.Even' does not depend on any axioms
+'PredicateAdmission.even_not_finite' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.even_complement_not_finite' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.even_not_admitted' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finiteOrCofinite_not_full' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.finiteOrCofinite_not_directed_closed' depends on axioms: [propext, Quot.sound]
+'PredicateAdmission.parity_directed_failure' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.GraphIdeal' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.Functional' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.Total' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.FiniteFunctional' does not depend on any axioms
+'FunctionGraphReconstruction.functional_iff_finite' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.total_iff_finite_coverage' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.FunctionIdeal' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.functionIdeal_ext' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.graph' does not depend on any axioms
+'FunctionGraphReconstruction.encodeFunction' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.decodeFunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.decode_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graph_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.decode_encode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.encode_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.functionMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.emptyGraph' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.empty_functional' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.empty_not_total' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.functions_admitted_by_completion' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.trueFiber' does not depend on any axioms
+'FunctionGraphReconstruction.characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.characteristic_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.full_boolean_functions_iff_predicates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FunctionGraphReconstruction.GraphCompleted' depends on axioms: [propext, Quot.sound]
+'FunctionGraphReconstruction.compose' does not depend on any axioms
+'FunctionGraphReconstruction.graphTypeMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graphEnv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graphEnv_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graphEval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graph_term_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.GraphHolds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graph_formula_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graph_empty_env' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.graph_sentence_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FunctionGraphReconstruction.higher_eta_graph' depends on axioms: [propext, Classical.choice, Quot.sound]

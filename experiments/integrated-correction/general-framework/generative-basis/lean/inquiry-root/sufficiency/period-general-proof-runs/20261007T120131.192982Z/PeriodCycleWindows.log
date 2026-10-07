@@ -1,0 +1,16 @@
+'Generative.InquirySufficiency.PeriodCycleWindows.walk' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.walk_step' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.encode7' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.encode7_lt' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.window' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.encoded_bits' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.bit_window' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.encode7_next' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.encode7_previous' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.next_window' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.previous_window_at_next' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.next_bounded' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.mod_below' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.mod_self' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.predecessor' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodCycleWindows.previous_window' does not depend on any axioms

@@ -1,0 +1,896 @@
+{
+  "status": "passed",
+  "scope": "Owned documentation links, historical preservation, and bindings to the existing actual Lean run; no new empirical or Lean run.",
+  "ledger_sha256": "345de238b088a6921b57d3d58e4feb12116ffe9a51c7e1006655e686134511af",
+  "checker_sha256": "6a7c4ddb1fc316eea009c56e48be4381bd253a316a6b5880e78ec66742fa1eed",
+  "local_links_checked": 79,
+  "checks": [
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "RESEARCH.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/README.md",
+        "target": "unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/README.md",
+        "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "WANG-YANGMING-COMPLETION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "WANG-YANGMING-COMPLETION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "WANG-YANGMING-COMPLETION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+        "target": "WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "sources/SOURCES.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "sources/SOURCES.md",
+        "target": "15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "sources/SOURCES.md",
+        "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "sources/SOURCES.md",
+        "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+        "target": "SituatedPractice.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+        "target": "wang-practice-verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+        "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md",
+        "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "old_chapter_exact_bytes",
+      "passed": true,
+      "detail": {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md",
+        "bytes": 17105,
+        "sha256": "cc38e7584132c6d0d2c40f8fe30c0d4e16f76284454a310b62745d509dc220be",
+        "links": "original chapter directory; no relinking"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-CHECK.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "WANG-YANGMING-COMPLETION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "WANG-YANGMING-COMPLETION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "WANG-YANGMING-COMPLETION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "WANG-YANGMING-MECHANISMS.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "WANG-YANGMING-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "target": "development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "YITI-REN-COFORMATION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "WHOLE-CONTINUATION-WARRANT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_wang_practice.py"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/receipt.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/receipt.json"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "PRACTICE-TRANSFORMATION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "MERGED-OBLIGATIONS-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "WANG-YANGMING-COMPLETION-SOURCES.md#4-差等拒绝与更有效的控制"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "WHOLE-CONTINUATION-WARRANT-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "WANG-YANGMING-COMPLETION-SOURCES.md#4-差等拒绝与更有效的控制"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "WHOLE-CONTINUATION-WARRANT-INTEGRATION.md#3-the-universal-sufficiency-audit"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "WANG-YANGMING-COMPLETION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "WANG-YANGMING-COMPLETION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "target": "WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+        "target": "WANG-YANGMING-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+        "target": "YITI-REN-COFORMATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+        "target": "PRACTICE-TRANSFORMATION-GENEALOGY.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_wang_practice.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/CoupledOccurrence.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/CoupledOccurrence.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/GenerativeCore.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/GenerativeCore.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/SituatedPractice.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/SituatedPractice.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/check_wang_practice.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/inputs.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371969976789000/receipt.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/CoupledOccurrence.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/CoupledOccurrence.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/GenerativeCore.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/GenerativeCore.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/SituatedPractice.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/SituatedPractice.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/check_wang_practice.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/inputs.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/receipt.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md",
+        "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md",
+        "target": "2026-10-07-universal-intelligence-session-goal.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md",
+        "target": "2026-10-06-project-wide-nondual-method.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md",
+        "target": "2026-10-07-lean-proof-requirement.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "NONINSTRUMENTAL-CONCERN.md#13-后果进入完成判据局部内容的取得与实际使用"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "NONINSTRUMENTAL-CONCERN.md#14-活动及其范围本身的形成改变和结束"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MERGED-OBLIGATIONS-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md#4-差等拒绝与更有效的控制"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "lean_passed_fresh_build",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compiler_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lean_checker_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lean_source_binding",
+      "passed": true,
+      "detail": "GenerativeCore"
+    },
+    {
+      "name": "lean_log_binding",
+      "passed": true,
+      "detail": "GenerativeCore"
+    },
+    {
+      "name": "lean_module_passed",
+      "passed": true,
+      "detail": "GenerativeCore"
+    },
+    {
+      "name": "lean_source_binding",
+      "passed": true,
+      "detail": "CoupledOccurrence"
+    },
+    {
+      "name": "lean_log_binding",
+      "passed": true,
+      "detail": "CoupledOccurrence"
+    },
+    {
+      "name": "lean_module_passed",
+      "passed": true,
+      "detail": "CoupledOccurrence"
+    },
+    {
+      "name": "lean_source_binding",
+      "passed": true,
+      "detail": "SituatedPractice"
+    },
+    {
+      "name": "lean_log_binding",
+      "passed": true,
+      "detail": "SituatedPractice"
+    },
+    {
+      "name": "lean_module_passed",
+      "passed": true,
+      "detail": "SituatedPractice"
+    },
+    {
+      "name": "audit_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_standard_dependencies",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

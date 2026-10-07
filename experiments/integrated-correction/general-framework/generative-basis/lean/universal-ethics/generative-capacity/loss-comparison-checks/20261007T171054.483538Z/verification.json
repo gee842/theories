@@ -1,0 +1,163 @@
+{
+  "status": "passed",
+  "utc": "20261007T171054.483538Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "loss-comparison-checks/20261007T171054.483538Z",
+  "source_sha256": {
+    "GenerativeLossComparison": "a099877f064827b1d622eb1b9b7ba4a91e24cfb721b00337f2557c560d8144d5"
+  },
+  "checker_sha256": {
+    "check_loss_comparison.py": "7ebeb5d06bf2efe032c221318be4b672a6fa92d5d02dc6f0266a28451e61f541",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Conditional transport of independently warranted mixed comparisons, matched loss changes and explicit cutoff controls; no first normative anchor, universal threshold, duty or actual compliance is proved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeLossComparison",
+      "theorems": 16,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "GenerativeLossComparison.Strict"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeLossComparison.Transitive"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeLossComparison.Compatible"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.strict_improvement_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.strict_rejection_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.matched_loss_reduction_preserves_priority"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.matched_loss_increase_preserves_rejection"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeLossComparison.PracticalBridge"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.transported_comparison_supplies_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.faithful_redescription_preserves_strict"
+        },
+        {
+          "kind": "inductive",
+          "name": "GenerativeLossComparison.Route"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeLossComparison.Cutoff"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.cutoff_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.shorter_interruption_no_worse"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.cutoff_priority_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.cutoff_rejection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.compatible_cutoffs_disagree"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.a_good_anchor_does_not_license_more_loss"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeLossComparison.ContinuationFirst"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.continuation_first_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.continuation_first_still_prefers_shorter"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.continuation_first_accepts_every_finite_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeLossComparison.loss_sensitivity_alone_supplies_no_cutoff"
+        }
+      ],
+      "axiom_dependencies": {
+        "GenerativeLossComparison.Strict": [],
+        "GenerativeLossComparison.Transitive": [],
+        "GenerativeLossComparison.Compatible": [],
+        "GenerativeLossComparison.strict_improvement_transport": [],
+        "GenerativeLossComparison.strict_rejection_transport": [],
+        "GenerativeLossComparison.matched_loss_reduction_preserves_priority": [],
+        "GenerativeLossComparison.matched_loss_increase_preserves_rejection": [],
+        "GenerativeLossComparison.PracticalBridge": [],
+        "GenerativeLossComparison.transported_comparison_supplies_reason": [],
+        "GenerativeLossComparison.faithful_redescription_preserves_strict": [],
+        "GenerativeLossComparison.Route": [],
+        "GenerativeLossComparison.Cutoff": [],
+        "GenerativeLossComparison.cutoff_transitive": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeLossComparison.shorter_interruption_no_worse": [],
+        "GenerativeLossComparison.cutoff_priority_iff": [],
+        "GenerativeLossComparison.cutoff_rejection_iff": [],
+        "GenerativeLossComparison.compatible_cutoffs_disagree": [],
+        "GenerativeLossComparison.a_good_anchor_does_not_license_more_loss": [],
+        "GenerativeLossComparison.ContinuationFirst": [],
+        "GenerativeLossComparison.continuation_first_transitive": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeLossComparison.continuation_first_still_prefers_shorter": [],
+        "GenerativeLossComparison.continuation_first_accepts_every_finite_loss": [],
+        "GenerativeLossComparison.loss_sensitivity_alone_supplies_no_cutoff": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "GenerativeLossComparison.lean": "a099877f064827b1d622eb1b9b7ba4a91e24cfb721b00337f2557c560d8144d5",
+    "GenerativeLossComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeLossComparisonAxiomAudit.lean": "2af74835f5bdfa7f3419a73382a10aca60ee2a2989c0652c090fa4ee2999cb5a",
+    "GenerativeLossComparisonAxiomAudit.log": "53ebaa875f2a6283d76180894f69ce13e08275387c6a1951b5163c6c403627e1",
+    "GenerativeLossComparisonSignatures.lean": "9396194914b00988ef2a1c0979f5035e7b6fd676c9a74a6d99635aa3a2657ebc",
+    "GenerativeLossComparisonSignatures.log": "7bb162f88ecc67ee7f93c65ceabcfba4f65cf8d67d553dc1178bf5190c48e6a4",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_loss_comparison.py": "7ebeb5d06bf2efe032c221318be4b672a6fa92d5d02dc6f0266a28451e61f541",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

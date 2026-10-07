@@ -1,22 +1,22 @@
 # From formed machinery to acquired prediction and action
 
-6 October 2026. AI-assisted continuation of the [generative-grounding programme](GENERATIVE-GROUNDING.md), following [Ren's instruction to continue](../../../sources/15-codex-theory-conversations/2026-10-06-prediction-action-continuation.md). The named connection is **actual formation → paid acquisition of a prediction → correction after dependency change → an action causally using the corrected prediction**.
+6 October 2026. AI-assisted continuation of the [generative-grounding programme](GENERATIVE-GROUNDING.md), following [Ren's instruction to continue](../../../sources/15-codex-theory-conversations/2026-10-06-prediction-action-continuation.md). The named connection is **actual formation → resource-dependent acquisition of a prediction → correction after dependency change → an action causally using the corrected prediction**.
 
-The construction now follows this connection within one finite material and resource history. A circuit acquires its record through the consequences of its own paid actions. After the environment changes, the old prediction initially misdirects it; further paid evidence changes the retained register, and that register changes a later productive command. The learned value is not a supplied reward or an observer's success score.
+The construction now follows this connection within one finite material and resource history. A circuit acquires its record through the consequences of its own resource-dependent actions. After the environment changes, the old prediction initially misdirects it; further resource-dependent observation changes the retained register, and that register changes a later productive command. The learned value is not a supplied reward or an observer's success score.
 
 The circuit's functional recipe, observation decoder and action rule remain supplied local laws. This is a conditional realization of predictive control, not a derivation of those laws from distinction alone or an established chemical implementation.
 
 ## One episode within the generative unfolding
 
-Following [Ren's core/tree correction](../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-continuation.md), the [new joint-episode derivation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md) makes explicit what the decoder view alone omits. The same actual return forms a receipt, changes available fuel, supplies the paid write and determines renewal or depletion of both operational leases. One packet is consumed, the acquired score persists and the transient receipt clears at completion. These aspects follow from actual intermediate states of the existing process; no new controller or independent evidence value is installed.
+Following [Ren's core/tree correction](../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-continuation.md), the [new joint-episode derivation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md) makes explicit what the decoder view alone omits. The same actual return forms a receipt, changes available fuel, supplies the resource-dependent write and determines renewal or depletion of both operational leases. One packet is consumed, the acquired score persists and the transient receipt clears at completion. These aspects follow from actual intermediate states of the existing process; no new controller or independent evidence value is installed.
 
 The exact fuel expression retains natural-subtraction order, so no extra maintenance-affordability premise is hidden. Actual completion is a theorem condition, not guaranteed liveness. The existing available-work law also fixes the receipt when enacted command and regime are fixed: a freely toggled receipt would not preserve that law's full coupling. This leaves stochastic outage comparisons at their separate scope. The result is a local causal reconstruction within the shared nondual method, not a derivation of the sensing law or an identification of support with ethical good.
 
 ## 1. The actual producer and the additional recipe
 
-The process reuses the [formed-updater preparation](UPDATER-FORMATION.md) without changing its old reactions or adapter. It begins with two material units, neither A nor H formed, a damaged site, twenty-four common fuel units and 121 source-energy units. The old formation, repair and capture process reaches the paid adapter with probability **2/9**. The adapter leaves twenty common units, twelve packets of ten, and two recyclable backing slots. All unsuccessful preparation histories retain their actual unused resources in the results.
+The process reuses the [formed-updater preparation](UPDATER-FORMATION.md) without changing its old reactions or adapter. It begins with two material units, neither A nor H formed, a damaged site, twenty-four common fuel units and 121 source-energy units. The old formation, repair and capture process reaches the resource-dependent adapter with probability **2/9**. The adapter leaves twenty common units, twelve packets of ten, and two recyclable backing slots. All unsuccessful preparation histories retain their actual unused resources in the results.
 
-The slots first form an actual old updater and selector, paying two and one common units respectively. A further **three-unit retrofit** gives them a finite predictive function: the updater slot implements a Slow or Fast writing rule, while the selector slot becomes a composite sensor, register and response circuit. The old R instance maps to Slow, and D to Fast, through this declared new recipe. Their original random/opposite-selector algorithms have not simply been renamed predictive learning.
+The slots first form an actual old updater and selector, consuming two and one common units respectively. A further **three-unit retrofit** gives them a finite predictive function: the updater slot implements a Slow or Fast writing rule, while the selector slot becomes a composite sensor, register and response circuit. The old R instance maps to Slow, and D to Fast, through this declared new recipe. Their original random/opposite-selector algorithms have not simply been renamed predictive learning.
 
 The first completed retrofit therefore leaves **fourteen** common fuel units. The formal connection starts from actual earlier events and their successor, including every payment. It does not initialize a freshly funded predictor beside a finished formation example.
 
@@ -39,7 +39,7 @@ a(q,\mathrm{last})=
 
 Before the action's outcome is known, the circuit forecasts its capture probability as q/4 for action1 and 1−q/4 for action0. This is the declared interpretation of the finite register; it is not automatically a calibrated posterior.
 
-The paid trial produces an actual receipt C, equal to one for capture and zero otherwise. The acquired teaching bit is
+The resource-dependent trial produces an actual receipt C, equal to one for capture and zero otherwise. The acquired teaching bit is
 
 \[
 Y=\begin{cases}a,&C=1,\\1-a,&C=0.\end{cases}
@@ -49,7 +49,7 @@ In the noiseless complementary plant, this identifies the currently productive o
 
 The [subsequent formal derivation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md) makes the condition exact: this decoder is correct iff availability was true or the action differed from the regime. Success always identifies the event-time regime; unknown-availability failure does not. The unchanged formal work law uses availability true, and its phase guards keep that regime fixed until an actual next write. After finish and reversal, the old inference can be stale. The partial decoder used to state the identification boundary is analytical, not a new installed policy; probabilistic evidence from failures remains possible under explicit sampling conditions.
 
-After paying for a write, Fast sets q=4Y. Slow moves q one unit toward4 when Y=1, or toward0 when Y=0, staying within the five-state register. Slow therefore retains more earlier evidence. These are specified update algorithms; their comparison tests this environment, not an asserted universal ranking of learning rules.
+After consuming the resources for a write, Fast sets q=4Y. Slow moves q one unit toward4 when Y=1, or toward0 when Y=0, staying within the five-state register. Slow therefore retains more earlier evidence. These are specified update algorithms; their comparison tests this environment, not an asserted universal ranking of learning rules.
 
 Prediction, observation and action each have physical costs:
 
@@ -59,7 +59,7 @@ Prediction, observation and action each have physical costs:
 | Base selector construction | 1 |
 | Predictive retrofit | 3 |
 | Retaining an active record for an exposure | 1 |
-| Response work and observation, paid before return | 3 |
+| Response work and observation, consumed before return | 3 |
 | Writing the acquired receipt | 1 |
 | Captured packet | 10 |
 | Renewal after capture, for both modules together | 2 |
@@ -70,14 +70,14 @@ The source loses one packet at every exposure, including inactive opportunities.
 
 ## 3. A joined correction history and its resource boundary
 
-Start with the actual paid preparation, a Slow updater and orientation1. Six productive trials under z=1 take q from2 to4 and fuel from fourteen to thirty-two. The source has six packets left. Then z changes to0:
+Start with the actual resource-dependent preparation, a Slow updater and orientation1. Six productive trials under z=1 take q from2 to4 and fuel from fourteen to thirty-two. The source has six packets left. Then z changes to0:
 
 | Subsequent event | Fuel afterward | Retained q | Consequence |
 |---|---:|---:|---|
-| First failed action1 and paid write | 27 | 3 | Old command remains. |
-| Second failed action1 and paid write | 22 | 2 | Tie retains action1; updater expires. |
-| Paid Fast replacement, failed action1 and write | 15 | 0 | Updater changes while inherited memory persists; new rule changes the next command. |
-| Paid action0 and capture | 18 | 0 | Corrected command obtains support. |
+| First failed action1 and resource-dependent write | 27 | 3 | Old command remains. |
+| Second failed action1 and resource-dependent write | 22 | 2 | Tie retains action1; updater expires. |
+| Resource-dependent Fast replacement, failed action1 and write | 15 | 0 | Updater changes while inherited memory persists; new rule changes the next command. |
+| Resource-dependent action0 and capture | 18 | 0 | Corrected command obtains support. |
 
 Two source packets remain. Whole-history accounting is
 
@@ -110,7 +110,7 @@ In the primary case, with twelve exposures and reversal after six:
 
 Every successfully commissioned primary learner in the first five arms corrects within the horizon. This leaves the **7/9 preparation failures** visible rather than treating the commissioned subset as the entire population.
 
-The correction criterion concerns the same circuit: acquired prediction was productively used before reversal, its inherited command subsequently failed, a paid q-write changed the issued command with the last-action bit held fixed, and a later changed paid command captured. Rebuilding the circuit resets an unfinished witness. The scoring flags never enter its policy or writes.
+The correction criterion concerns the same circuit: acquired prediction was productively used before reversal, its inherited command subsequently failed, a resource-dependent q-write changed the issued command with the last-action bit held fixed, and a later changed resource-dependent command captured. Rebuilding the circuit resets an unfinished witness. The scoring flags never enter its policy or writes.
 
 The conventional realization has the same full finite distribution, including accumulated readouts. Fast performs better than Slow in the noiseless primary case; under packet availability3/4, Slow obtains slightly more expected captures than equally priced Fast. The fallible receipt decoder then makes actual errors. Neither the fixed comparison nor endogenous variation establishes a universally best updater.
 
@@ -120,7 +120,7 @@ At original reserve twelve, the expensive circuit finishes its assembly but cann
 
 The inverted-action arm learns from its real receipts but executes the opposite of the normal register command. In the primary case its forecast error per scored trial is **3/32**, lower than the variable normal arm's **109/768**. Yet it obtains only **1/9** expected captures instead of 19/9. It accurately predicts many of the failures produced by its own action route.
 
-Their observation coverage differs: expected paid trials are 2/3 and 8/3 respectively. The loss figures are trial-weighted diagnostics, not a common exogenous prediction task or an advantage theorem. Reporting total error alone would also misleadingly favor inactive learners. Both loss and actual sampling coverage remain visible.
+Their observation coverage differs: expected resource-dependent trials are 2/3 and 8/3 respectively. The loss figures are trial-weighted diagnostics, not a common exogenous prediction task or an advantage theorem. Reporting total error alone would also misleadingly favor inactive learners. Both loss and actual sampling coverage remain visible.
 
 This is a concrete separation within the generative account: acquired predictive accuracy can coexist with destructive action coupling. The supplied normal rule chooses the predicted productive route. Its direction has not been derived merely by constructing a forecaster. The [comparator assessment](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-COMPARATORS.md) records these limits and the relation to conventional feedback.
 
@@ -136,6 +136,6 @@ The [controlled-refinement criterion](CONTROLLED-REFINEMENT.md) requires retaine
 
 The parallel [typed-part updater construction](MATERIAL-UPDATER-COMPOSITION.md) now gives a restricted consumable implementation of the earlier updater law. It adds competition for actual parts between updater and selector construction. It does not yet supply the new predictive retrofit's sensors, record capacity or write operations. The present recyclable-slot implementation and that stronger component restriction must be joined explicitly before transferring their complete histories or probabilities.
 
-The [paid teaching](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) and [transfer-reliability](../../../_process/research/2026-10-05-concern-theory/TRANSFER-EVIDENCE-INTEGRATION.md) results now have a finite constructive example of formed machinery acquiring, retaining, revising and using a consequence record. They do not automatically gain the stationary sampling, calibrated decoder, growing evidence storage or decision guarantees they separately require.
+The [resource-dependent teaching](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) and [transfer-reliability](../../../_process/research/2026-10-05-concern-theory/TRANSFER-EVIDENCE-INTEGRATION.md) results now have a finite constructive example of formed machinery acquiring, retaining, revising and using a consequence record. They do not automatically gain the stationary sampling, calibrated decoder, growing evidence storage or decision guarantees they separately require.
 
 The next missing connection is the **formation and consequence-dependent revision of the prediction-to-action coupling**, with a reliable observation interface when failed return is ambiguous. The present intervention exposes why that coupling needs explanation. A further step toward concern must retain distinct centers and explain how another's predicted condition enters evaluation; private predictive accuracy and private support do not supply that relation. This milestone advances the connected derivation while leaving the unified foundation ongoing.

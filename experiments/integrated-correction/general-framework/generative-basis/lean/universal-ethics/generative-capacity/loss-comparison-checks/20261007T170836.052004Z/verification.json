@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "utc": "20261007T170836.052004Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "loss-comparison-checks/20261007T170836.052004Z",
+  "source_sha256": {
+    "GenerativeLossComparison": "f59a54f079b7fd0e260fb07154996baa3a15e1f9ae1def93d1fac1b4918e99bd"
+  },
+  "checker_sha256": {
+    "check_loss_comparison.py": "7ebeb5d06bf2efe032c221318be4b672a6fa92d5d02dc6f0266a28451e61f541",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Conditional transport of independently warranted mixed comparisons, matched loss changes and explicit cutoff controls; no first normative anchor, universal threshold, duty or actual compliance is proved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "('GenerativeLossComparison.continuation_first_still_prefers_shorter', ['propext', 'Classical.choice', 'Quot.sound'])"
+}

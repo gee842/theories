@@ -1,0 +1,48 @@
+'IndexedAssembly.FiniteChain' does not depend on any axioms
+'IndexedAssembly.ChainUnion' does not depend on any axioms
+'IndexedAssembly.FiniteChainClosed' does not depend on any axioms
+'IndexedAssembly.ChainFamily' does not depend on any axioms
+'IndexedAssembly.chainFamily_directed' depends on axioms: [propext]
+'IndexedAssembly.union_chainFamily' depends on axioms: [propext, Quot.sound]
+'IndexedAssembly.directed_implies_chain_closed' depends on axioms: [propext, Quot.sound]
+'IndexedAssembly.parityStages' depends on axioms: [propext, Quot.sound]
+'IndexedAssembly.parity_zero' depends on axioms: [propext, Quot.sound]
+'IndexedAssembly.parity_successor' depends on axioms: [propext, Quot.sound]
+'IndexedAssembly.parity_stage_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.parity_stages_finite' depends on axioms: [propext, Quot.sound]
+'IndexedAssembly.parity_stages_increasing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.parityChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.parity_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.parity_admitted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.finiteOrCofinite_parity_stages' depends on axioms: [propext, Quot.sound]
+'IndexedAssembly.finiteOrCofinite_parity_union_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.finiteOrCofinite_not_chain_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.prefixChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.prefix_stage_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.prefix_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.full_of_finite_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.full_iff_finite_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.chain_iff_full_given_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndexedAssembly.chain_iff_directed_given_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationalAssembly.Projection' does not depend on any axioms
+'RelationalAssembly.Witness' does not depend on any axioms
+'RelationalAssembly.witnessSetoid' does not depend on any axioms
+'RelationalAssembly.Assembly' does not depend on any axioms
+'RelationalAssembly.Support' does not depend on any axioms
+'RelationalAssembly.abstractWitness' does not depend on any axioms
+'RelationalAssembly.output' does not depend on any axioms
+'RelationalAssembly.output_abstract' does not depend on any axioms
+'RelationalAssembly.realize' depends on axioms: [Classical.choice]
+'RelationalAssembly.output_realize' depends on axioms: [Classical.choice]
+'RelationalAssembly.realize_output' depends on axioms: [Classical.choice, Quot.sound]
+'RelationalAssembly.output_injective' depends on axioms: [Classical.choice, Quot.sound]
+'RelationalAssembly.output_surjective' depends on axioms: [Classical.choice]
+'RelationalAssembly.abstract_eq_iff' depends on axioms: [Quot.sound]
+'RelationalAssembly.projection_iff_output' depends on axioms: [Classical.choice]
+'RelationalAssembly.projected_content_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationalAssembly.projection_reindex' depends on axioms: [propext, Quot.sound]
+'RelationalAssembly.parity_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationalAssembly.parity_iff_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationalAssembly.OutputAbstractionClosed' does not depend on any axioms
+'RelationalAssembly.CorrespondenceClosed' does not depend on any axioms
+'RelationalAssembly.support_admitted' depends on axioms: [Classical.choice, Quot.sound]

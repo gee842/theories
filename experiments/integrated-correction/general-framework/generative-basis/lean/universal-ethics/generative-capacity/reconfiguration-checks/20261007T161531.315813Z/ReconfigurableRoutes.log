@@ -1,0 +1,20 @@
+ReconfigurableRoutes.lean:356:2: error: Tactic `apply` failed: could not unify the conclusion of `Generative.trace_append_iff.mpr`
+  Generative.Trace ?m.37 ?m.38 (?m.40 ++ ?m.41) ?m.39
+with the goal
+  Generative.Trace bypassProcess (stocked 9 6)
+    [Event.old Event.startAB, Event.old Event.finishLeft, Event.old Event.startBC, Event.old Event.finishRight,
+      Event.startAC, Event.finishZ]
+    allThree
+
+Note: The full type of `Generative.trace_append_iff.mpr` is
+  (∃ m, Generative.Trace ?m.37 ?m.38 ?m.40 m ∧ Generative.Trace ?m.37 m ?m.41 ?m.39) →
+    Generative.Trace ?m.37 ?m.38 (?m.40 ++ ?m.41) ?m.39
+
+⊢ Generative.Trace bypassProcess (stocked 9 6)
+    [Event.old Event.startAB, Event.old Event.finishLeft, Event.old Event.startBC, Event.old Event.finishRight,
+      Event.startAC, Event.finishZ]
+    allThree
+ReconfigurableRoutes.lean:412:51: error: failed to synthesize
+  Decidable (ThreePartProducts commonChoice)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

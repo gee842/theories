@@ -1,0 +1,17 @@
+'Generative.SituatedRenewal.DependencyLaw' does not depend on any axioms
+'Generative.SituatedRenewal.Response' does not depend on any axioms
+'Generative.SituatedRenewal.Window' does not depend on any axioms
+'Generative.SituatedRenewal.windowWord' does not depend on any axioms
+'Generative.SituatedRenewal.window_is_trace' does not depend on any axioms
+'Generative.SituatedRenewal.sumWindow' does not depend on any axioms
+'Generative.SituatedRenewal.totalDemand' does not depend on any axioms
+'Generative.SituatedRenewal.sumWindow_append' does not depend on any axioms
+'Generative.SituatedRenewal.window_account_or_response' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.response_before_exhaustion' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.inherited_failure_requires_replacement' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.every_required_dependency_recurrently_responds' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.no_response_strictly_depletes' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.response_within_remaining_bound' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.idle' does not depend on any axioms
+'Generative.SituatedRenewal.idleDependencies' does not depend on any axioms
+'Generative.SituatedRenewal.continuation_without_required_use_has_no_response' does not depend on any axioms

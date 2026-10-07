@@ -4,7 +4,7 @@
 
 **A broader response becomes better grounded when another center's actual consequences can correct it while that center remains distinguishable.** Reusing an existing response can make another target accessible, but it does not establish that the response suits that target. An organization needs both a route that reaches the target and an evidence process that can change its future action.
 
-The [architecture-formation result](ARCHITECTURE-FORMATION.md) now explains how local parts and bonds produce broad or identity-filtered response paths, and how productive activity changes later construction. Its harmful-transfer case leaves private outcomes unchanged while an incorrectly reused response damages the recipient. The [recipient-correction result](RECIPIENT-CORRECTION.md) separately implements paid learning about another target without overwriting the actor's correspondence. The present task joins these capacities through actual formed graphs, remaining resources and accessible evidence.
+The [architecture-formation result](ARCHITECTURE-FORMATION.md) now explains how local parts and bonds produce broad or identity-filtered response paths, and how productive activity changes later construction. Its harmful-transfer case leaves private outcomes unchanged while an incorrectly reused response damages the recipient. The [recipient-correction result](RECIPIENT-CORRECTION.md) separately implements resource-dependent learning about another target without overwriting the actor's correspondence. The present task joins these capacities through actual formed graphs, remaining resources and accessible evidence.
 
 ## Why architecture and evidence must be joined
 
@@ -12,16 +12,16 @@ The architecture determines what can act and what can be encountered through a p
 
 This is a conditional information boundary. Other channels—passive observation, testimony or a separately constructed probe—could provide recipient evidence. They would require their own access, calibration and costs. The present join must not silently add such a bypass to a filtered route.
 
-Once evidence arrives, its target must remain identifiable. A recipient's productive action can differ from the actor's. Replacing one shared estimate after each trial can then make learning about one target spoil the response to the other. The existing recipient-correction theorem establishes the relevant distinguishability requirement and a paid indexed representation. That theorem does not identify the physical recoding chemistry or prove that target labels are calibrated.
+Once evidence arrives, its target must remain identifiable. A recipient's productive action can differ from the actor's. Replacing one shared estimate after each trial can then make learning about one target spoil the response to the other. The existing recipient-correction theorem establishes the relevant distinguishability requirement and a resource-dependent indexed representation. That theorem does not identify the physical recoding chemistry or prove that target labels are calibrated.
 
 The connection being addressed is:
 
 \[
 \text{actual formed route}
-\to\text{paid target trial}
+\to\text{resource-dependent target trial}
 \to\text{accessible recipient outcome}
 \to\text{retained target-specific correction}
-\to\text{changed paid response and continued maintenance}.
+\to\text{changed resource-dependent response and continued maintenance}.
 \]
 
 The actor's private receipt remains distinct from the recipient's outcome. A recipient success and a recipient failure can both give the actor zero. Learning from that private zero can accidentally produce the right first correction after failure and then corrupt the record after success. Behavioral improvement alone therefore does not identify which evidence caused it.
@@ -34,7 +34,7 @@ Four new ten-unit packets belong to a separately declared initial bank. It stays
 
 The four opportunities are actor, recipient, actor, recipient. The first actor action can finance a retrofit: attach a return wire using one actual spare connector and one fuel, then pay two to recode existing memory. A partially attached wire keeps its cost even if recoding fails. Neither attachment nor recoding bypasses the old identity filter.
 
-The old register and last-action field jointly have ten possible codes. A supplied recipe uses eight for an actor bit, a recipient candidate and a qualification bit: `q = 2*actor + recipient`, with `last` now holding qualification. This is a paid change of interpretation within existing persistent capacity. Immediate action/receipt transmission is a separate supplied transaction interface. Both candidate bits start from the actual inherited actor estimate, and recipient qualification starts false. Earlier successful recipient actions are not silently converted into a new stored certificate.
+The old register and last-action field jointly have ten possible codes. A supplied recipe uses eight for an actor bit, a recipient candidate and a qualification bit: `q = 2*actor + recipient`, with `last` now holding qualification. This is a resource-dependent change of interpretation within existing persistent capacity. Immediate action/receipt transmission is a separate supplied transaction interface. Both candidate bits start from the actual inherited actor estimate, and recipient qualification starts false. Earlier successful recipient actions are not silently converted into a new stored certificate.
 
 Commands still pass through the retained motor coupler. Primary recipient writes preserve the actor bit and its resulting command; raw numeric `q` need not remain unchanged after recoding. An aliased-write control writes the recipient update to both bits and tests the resulting interference.
 
@@ -63,7 +63,7 @@ Under the primary direct-route law, with a correct inherited actor command, two 
 | Corrected recipient trial and positive write | \(F-9\) |
 | Final maintenance of both graphs | \(F-11\) |
 
-**Six units permit the first paid candidate change; eleven permit the full correction, use and final maintenance history.** The middle actor action must prepay five before its return, so ten fails even though future packets remain. These are conditional bounds for an accessible direct route; fuel cannot make a blocked route transmit or replace a missing connector.
+**Six units permit the first resource-dependent candidate change; eleven permit the full correction, use and final maintenance history.** The middle actor action must prepay five before its return, so ten fails even though future packets remain. These are conditional bounds for an accessible direct route; fuel cannot make a blocked route transmit or replace a missing connector.
 
 Actual parent histories expose both obstructions. A retained direct route can reach the handoff with eleven units and one spare connector. Other histories have more fuel but no free connector because assembly bound all four. Existing bound and unused structures are not refunded. The [mathematical account](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-MATH.md) records the history and exact boundary.
 
@@ -75,11 +75,11 @@ The producer has executed twelve fixed cases and six control arms per case. A se
 |---|---:|---:|---:|
 | Faithful indexed evidence | 11/405 | 11/405 | 11/135 |
 | Conventional realization of the same law | 11/405 | 11/405 | 11/135 |
-| Matched paid absent feedback | 0 | 0 | 11/135 |
+| Matched resource-dependent absent feedback | 0 | 0 | 11/135 |
 | Private-zero proxy | 11/405 | 0 | 11/135 |
 | Faithful feedback with aliased writes | 0 | 0 | 22/405 |
 
-The strict history requires an actual first recipient trial, real observed zero, paid changed recipient write with actor correspondence preserved, an intervening productive actor action, a later different recipient command with real positive receipt, and final paid site retention. Its probability is not the chance of merely writing a different candidate: that broader event has mass **31/810**, compared with **22/810 = 11/405** for the complete strict history.
+The strict history requires an actual first recipient trial, real observed zero, resource-dependent changed recipient write with actor correspondence preserved, an intervening productive actor action, a later different recipient command with real positive receipt, and final resource-dependent site retention. Its probability is not the chance of merely writing a different candidate: that broader event has mass **31/810**, compared with **22/810 = 11/405** for the complete strict history.
 
 Faithful and absent feedback give exactly the same primary actor captures, actor fuel and site retention. The faithful channel improves the recipient outcome without earning a private resource premium in this comparison. There is no endogenous selector choosing it because an analyst rates its evidence more highly. Aliasing the writable records can instead spoil the actor command and the private return that funds later operation.
 

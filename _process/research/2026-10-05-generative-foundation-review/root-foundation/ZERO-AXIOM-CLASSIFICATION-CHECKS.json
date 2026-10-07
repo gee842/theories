@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Bangkok",
+  "status": "passed",
+  "scope": "Documentation, preservation, and correspondence to the already performed source-bound Lean run. This script does not rerun mathematics or create ethical evidence. Existing unrelated links are not claimed audited.",
+  "new_documents": [
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-zero-axiom-complete-classification.md",
+      "sha256": "2c8ea3484a7b299150492eb154ae094e7bced5f001eedd3cbfe4fe5e329d948f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md",
+      "sha256": "f14a7e23e697a788b3c40c30a0156a00d8bb0832dd0b54294c47755af8a7694f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-ARGUMENT.md",
+      "sha256": "3e7ecdae2823fa2e68028582f337c67d2541d88395b99fe3800f214612dc674f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-REVIEW.md",
+      "sha256": "f4bd51d3ab73bfc5787ff23d09fcadcd4239abf3856d4359f6222457bf70cc2f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-SOURCES.md",
+      "sha256": "8fac8f1c7db2e244ee3864a6f589e7d96ca6406347940c25b394d606f551369d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-MATH.md",
+      "sha256": "c65671356d1a6f3d016ad0696a77202d0a8e64ab8b705236e46a897dc5f78290"
+    }
+  ],
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "baseline_preserved_by_additions_only": true,
+      "added_lines": 2,
+      "non_additive_operations": []
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "baseline_preserved_by_additions_only": true,
+      "added_lines": 2,
+      "non_additive_operations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "baseline_preserved_by_additions_only": true,
+      "added_lines": 2,
+      "non_additive_operations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "baseline_preserved_by_additions_only": true,
+      "added_lines": 12,
+      "non_additive_operations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "baseline_preserved_by_additions_only": true,
+      "added_lines": 2,
+      "non_additive_operations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "baseline_preserved_by_additions_only": true,
+      "added_lines": 2,
+      "non_additive_operations": []
+    }
+  ],
+  "local_links_checked": 84,
+  "preserved_snapshot_files": 6,
+  "formal_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-classification-verification.json",
+  "formal_run": "joint-classification-checks/20261007T165011.097826Z",
+  "formal_source_sha256": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+  "theorems": 5,
+  "explicit_declarations": 21,
+  "all_explicit_axiom_dependencies_empty": true,
+  "retained_formal_artifacts_verified": 9,
+  "issues": []
+}

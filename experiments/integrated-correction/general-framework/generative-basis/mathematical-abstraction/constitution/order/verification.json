@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean": {
+      "sha256": "35bdd409152a2d00de01c1c238dfe306c06ececaebcd94f1abd43fabf6b9dd0a",
+      "named_declarations": 58,
+      "theorems": 33
+    }
+  },
+  "named_declarations_audited": 58,
+  "theorems_checked": 33,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "OrderGenerativity.DenseOrder": [],
+    "OrderGenerativity.LE": [],
+    "OrderGenerativity.lt_asymm": [],
+    "OrderGenerativity.le_refl": [],
+    "OrderGenerativity.le_trans": [],
+    "OrderGenerativity.lt_of_le_lt": [],
+    "OrderGenerativity.lt_of_lt_le": [],
+    "OrderGenerativity.finite_max": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.reverse": [],
+    "OrderGenerativity.finite_min": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.extend": [
+      "propext"
+    ],
+    "OrderGenerativity.SamePattern": [],
+    "OrderGenerativity.pattern_symm": [],
+    "OrderGenerativity.pattern_extend": [
+      "propext"
+    ],
+    "OrderGenerativity.WitnessCase": [],
+    "OrderGenerativity.candidate": [],
+    "OrderGenerativity.cut_realized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.pattern_of_cut": [
+      "propext"
+    ],
+    "OrderGenerativity.extend_pattern": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.Formula": [],
+    "OrderGenerativity.Holds": [
+      "propext"
+    ],
+    "OrderGenerativity.truth_of_pattern": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.noVars": [],
+    "OrderGenerativity.sentence_agreement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.finite_witness_reduction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.exists_witness_case": [],
+    "OrderGenerativity.anyWitness": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.anyWitness_correct": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.evaluate": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.evaluate_correct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.sentence_evaluation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.rationalOrder": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.rationalDecidable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.decideSentence": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.decideSentence_correct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.Formula.all": [],
+    "OrderGenerativity.all_semantics": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.Formula.or": [],
+    "OrderGenerativity.or_semantics": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.densitySentence": [
+      "propext"
+    ],
+    "OrderGenerativity.leastElementSentence": [
+      "propext"
+    ],
+    "OrderGenerativity.greatestElementSentence": [
+      "propext"
+    ],
+    "OrderGenerativity.density_decision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.leastElement_decision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.greatestElement_decision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.density_truth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.no_least_element_truth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.no_greatest_element_truth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.OrderEmbedding": [],
+    "OrderGenerativity.orderEmbedding_elementary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrderGenerativity.Generated": [],
+    "OrderGenerativity.Closed": [],
+    "OrderGenerativity.generated_closed": [],
+    "OrderGenerativity.generated_least": [],
+    "OrderGenerativity.generated_iff_all_closed": [],
+    "OrderGenerativity.generatedOrder": [],
+    "OrderGenerativity.generatedEmbedding": [],
+    "OrderGenerativity.generated_elementary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/check.py": "5a3442ec0516af9c55148fd0170d9b3b8b22804b73a1d52e9869d9d3fa6a26e0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/verification/KernelAudit.lean": "8bc43833885effd502830023360ac8602f8169c133fc36a57683cf92103dd50e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/verification/KernelAudit.log": "5af48fe22a4709755429186eab6def330e3cc668b35d82fd7fe6180b9773cc58",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/verification/DenseOrder.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scope": "Full pure order/equality formula preservation and executable decision under explicit dense linear order and no-endpoint hypotheses; finite before/between/after generation. Not universal mathematical coverage or exclusive metaphysical grounding."
+}

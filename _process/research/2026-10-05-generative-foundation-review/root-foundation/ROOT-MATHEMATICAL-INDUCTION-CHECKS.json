@@ -1,0 +1,85 @@
+{
+  "checked_at_utc": "2026-10-07T17:02:58.421082+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-ARGUMENT.md": "23f30e8554cf2d4f26b291fa605ee9917e86de66d12ac6a0c49ec11af00e6815",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-REVIEW.md": "f141c7d235c5e5e7d7ecbefefa0e02d777312e92926c610012fe6cadb93de115",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md": "262544af13256aff90ca387f6f055fbb9e73e2eac087d999b0fa55f7ad5bd09e",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/README.md": "8bfcfcc48e54811df1d255e42858d3b0d5309f0cd1c7dcbd2e8bfcbcd06ea429",
+    "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md": "604980dce44fb719a11e06e24a8bddbbdfcf46cdd2bed0ecf0a55db5fb6845ed"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 45,
+  "heading_fragments_checked": 6,
+  "previous_proof_assets_preserved": 101,
+  "new_lean_receipts": {
+    "induction": {
+      "sha256": "11c477dad978a4ece805efa978d1852bf43d42f348d9d1bdbe68475daece3212",
+      "theorems_checked": 28,
+      "named_declarations_audited": 47
+    }
+  },
+  "lean_theorems_checked": 28,
+  "lean_named_declaration_audits": 47,
+  "internal_review": "Independent argument and critical review agents plus root primary-source assessment, integration and fresh frozen-source Lean build. Internal AI review, not external peer review.",
+  "concurrent_change_observation": "Pre-existing concurrent worktree; nine immediate pre-write contents preserved by additive insertions. No commits.",
+  "manifest_sha256": "9322985b704ef733fc0f7e80188bfec8c0106073f9c2ae41d976420d83637664",
+  "checker_sha256": "75512727e86317a3c113bca36a2c7f70bbdce187c05bec4679aac659fe3954c0",
+  "errors": [],
+  "passed": true
+}

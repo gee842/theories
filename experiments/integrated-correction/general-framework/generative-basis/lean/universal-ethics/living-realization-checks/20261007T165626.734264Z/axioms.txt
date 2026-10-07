@@ -1,0 +1,87 @@
+'Generative.Process' does not depend on any axioms
+'Generative.Enabled' does not depend on any axioms
+'Generative.Trace' does not depend on any axioms
+'Generative.trace_nil_iff' does not depend on any axioms
+'Generative.trace_cons_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.Feasible' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.productProcess' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_left' does not depend on any axioms
+'Generative.trace_product_right' does not depend on any axioms
+'Generative.trace_product_mk' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+'ContinuationRenewal.no_unrenewed_tail_of_accessible' does not depend on any axioms
+'ContinuationRenewal.no_renewal_free_tail' does not depend on any axioms
+'ContinuationRenewal.renewal_after_of_accessible' does not depend on any axioms
+'ContinuationRenewal.renewal_arbitrarily_late' does not depend on any axioms
+'ContinuationRenewal.renewal_arbitrarily_late_of_decidable' does not depend on any axioms
+'ContinuationRenewal.renewal_within_rank_bound' does not depend on any axioms
+'ContinuationRenewal.renewal_within_rank_plus_one_steps' does not depend on any axioms
+'ContinuationRenewal.rank_renewal_arbitrarily_late' does not depend on any axioms
+'ContinuationRenewal.alternatingState' does not depend on any axioms
+'ContinuationRenewal.alternatingRank' does not depend on any axioms
+'ContinuationRenewal.alternatingRenewal' does not depend on any axioms
+'ContinuationRenewal.alternatingRenewalDecidable' does not depend on any axioms
+'ContinuationRenewal.alternatingStep' does not depend on any axioms
+'ContinuationRenewal.alternating_actual_steps' does not depend on any axioms
+'ContinuationRenewal.alternating_nonrenewal_decreases' does not depend on any axioms
+'ContinuationRenewal.alternating_renews_arbitrarily_late' does not depend on any axioms
+'ContinuationRenewal.alternating_period_two' does not depend on any axioms
+'ContinuationRenewal.alternating_one_restoring_form' does not depend on any axioms
+'ContinuationRenewal.alternating_restoration_raises_rank' does not depend on any axioms
+'ContinuationRenewal.alternating_has_actual_unrenewed_step' does not depend on any axioms
+'ContinuationRenewal.alternating_no_new_configurations' does not depend on any axioms
+'ContinuationRenewal.alternating_every_configuration_score_bounded' does not depend on any axioms
+'Generative.SituatedRenewal.DependencyLaw' does not depend on any axioms
+'Generative.SituatedRenewal.Response' does not depend on any axioms
+'Generative.SituatedRenewal.Window' does not depend on any axioms
+'Generative.SituatedRenewal.windowWord' does not depend on any axioms
+'Generative.SituatedRenewal.window_is_trace' does not depend on any axioms
+'Generative.SituatedRenewal.sumWindow' does not depend on any axioms
+'Generative.SituatedRenewal.totalDemand' does not depend on any axioms
+'Generative.SituatedRenewal.sumWindow_append' does not depend on any axioms
+'Generative.SituatedRenewal.window_account_or_response' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.response_before_exhaustion' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.inherited_failure_requires_replacement' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.every_required_dependency_recurrently_responds' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.no_response_strictly_depletes' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.response_within_remaining_bound' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedRenewal.idle' does not depend on any axioms
+'Generative.SituatedRenewal.idleDependencies' does not depend on any axioms
+'Generative.SituatedRenewal.continuation_without_required_use_has_no_response' does not depend on any axioms
+'Generative.LivingRealization.TransportLaw' does not depend on any axioms
+'Generative.LivingRealization.Within' does not depend on any axioms
+'Generative.LivingRealization.maintained' does not depend on any axioms
+'Generative.LivingRealization.ionHeadroom' does not depend on any axioms
+'Generative.LivingRealization.supportedHeadroom' does not depend on any axioms
+'Generative.LivingRealization.ion_account' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.support_account' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.transportDependency' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.supportDependency' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.compensation_required' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.support_input_required' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.recurrent_support_input' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.included_store_account' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.storeDependency' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.included_store_bounds_load' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.exampleProcess' does not depend on any axioms
+'Generative.LivingRealization.exampleLaw' does not depend on any axioms
+'Generative.LivingRealization.headroom_can_accommodate_ingress' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.retained_work_can_compensate' depends on axioms: [propext, Quot.sound]
+'Generative.LivingRealization.inactive_then_compensating_history' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "phase": "checker-preflight",
+  "compiler_invoked": false,
+  "reason": "Comment text matched overly broad forbidden-token check",
+  "checker_sha256": "4080abd9b6d28dc161fe66ecb52710fff773fc33c4b5b3a35405880c79a7fac4"
+}

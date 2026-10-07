@@ -1,0 +1,14 @@
+{
+  "GenerativeCore": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "CoupledOccurrence": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+    "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e"
+  },
+  "SituatedPractice": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean",
+    "sha256": "da30acdded4d0b68e7adbf10a94c24d9e2aceb6dbaacf9bceff646a12b007e74"
+  }
+}

@@ -1,0 +1,1 @@
+First checker preflight failed before Lean compilation: raw text scan matched the word unsafe in the inherited PurposeCorrection explanatory comment. No mathematical failure was evaluated.

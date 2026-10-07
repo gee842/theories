@@ -1,0 +1,132 @@
+def Covered (pattern : List Bool) (period : Nat) (mask : Mask) : Prop :=
+  ∀ phase, phase < period → bit mask (window pattern period phase).val = true
+
+theorem step_preserves (pattern : List Bool) (period : Nat) (positive : 0 < period)
+    (old new : Mask) (checked : stepOK old new = true) (covered : Covered pattern period old) :
+    Covered pattern period new := by
+  intro phase bound
+  have next := next_window pattern period phase
+  have out : (bit old ((window pattern period phase).val / 2) ||
+      bit old ((window pattern period phase).val / 2 + 64)) = true := by
+    cases next with
+    | inl same => rw [← same, covered _ (next_bounded period phase positive)]; rfl
+    | inr same =>
+      rw [← same, covered _ (next_bounded period phase positive)]
+      cases bit old ((window pattern period phase).val / 2) <;> rfl
+  obtain ⟨previous, pb, edge⟩ := previous_window pattern period phase positive bound
+  have incoming : (bit old ((window pattern period phase).val * 2 % 128) ||
+      bit old ((window pattern period phase).val * 2 % 128 + 1)) = true := by
+    cases edge with
+    | inl same => rw [← same, covered previous pb]; rfl
+    | inr same =>
+      rw [← same, covered previous pb]
+      cases bit old ((window pattern period phase).val * 2 % 128) <;> rfl
+  have survives : localPrune old (window pattern period phase).val = true := by
+    unfold localPrune
+    rw [covered phase bound, out, incoming]
+    rfl
+  have implication : (!localPrune old (window pattern period phase).val ||
+      bit new (window pattern period phase).val) = true :=
+    allOf_member (fun word => !localPrune old word || bit new word) (upto 128)
+      (window pattern period phase).val checked (member_upto 128 _ (window pattern period phase).isLt)
+  exact PeriodCoverRules.implies_true implication survives
+
+theorem route_preserves (pattern : List Bool) (period : Nat) (positive : 0 < period)
+    (route : List Mask) (checked : routeOK route = true)
+    (covered : Covered pattern period (item 0 route 0)) : Covered pattern period (last route) := by
+  induction route with
+  | nil => cases checked
+  | cons head tail ih =>
+    cases tail with
+    | nil => exact covered
+    | cons next tail =>
+      exact ih (right_true checked)
+        (step_preserves pattern period positive head next (left_true checked) covered)
+
+theorem root_preserves (pattern : List Bool) (period : Nat) (positive : 0 < period)
+    (budget : Nat) (value : Bool) (checked : rootsOK budget value = true)
+    (index : Nat) (bound : index < (PeriodCoverRules.family budget 0 value).length)
+    (covered : Covered pattern period (PeriodCoverRules.mask budget 0 value index)) :
+    ∃ selected, selected < (recurrent budget value).length ∧
+      Covered pattern period (item 0 (recurrent budget value) selected) := by
+  have cert := allOf_member _ _ _ checked (member_upto _ index bound)
+  have start : item 0 (rootRoute budget value index) 0 =
+      PeriodCoverRules.mask budget 0 value index :=
+    of_decide_eq_true (left_true (left_true (left_true cert)))
+  have route := right_true (left_true (left_true cert))
+  have bound' : rootTarget budget value index < (recurrent budget value).length :=
+    of_decide_eq_true (right_true (left_true cert))
+  have finish : last (rootRoute budget value index) =
+      item 0 (recurrent budget value) (rootTarget budget value index) := of_decide_eq_true (right_true cert)
+  have covering := route_preserves pattern period positive (rootRoute budget value index) route
+    (by rw [start]; exact covered)
+  rw [finish] at covering
+  exact ⟨rootTarget budget value index, bound', covering⟩
+
+theorem joint_preserves (pattern : List Bool) (period : Nat) (positive : 0 < period)
+    (budget : Nat) (checked : jointsOK budget = true)
+    (low high : Nat) (lowBound : low < (recurrent budget false).length)
+    (highBound : high < (recurrent budget true).length)
+    (lowCovered : Covered pattern period (item 0 (recurrent budget false) low))
+    (highCovered : Covered pattern period (item 0 (recurrent budget true) high)) :
+    jointKind budget low high < (if budget == 5 then 1 else 3) ∧
+      Covered pattern period (endMask (jointKind budget low high)) := by
+  have row := allOf_member _ _ _ checked (member_upto _ low lowBound)
+  have cert := allOf_member _ _ _ row (member_upto _ high highBound)
+  have initial : Covered pattern period (item 0 (jointRoute budget low high) 0) := by
+    intro phase bound
+    have included := allOf_member _ _ _ (left_true (left_true (left_true cert)))
+      (member_upto 128 _ (window pattern period phase).isLt)
+    exact PeriodCoverRules.implies_true included (both_true (lowCovered phase bound) (highCovered phase bound))
+  have route := right_true (left_true (left_true cert))
+  have finish : last (jointRoute budget low high) = endMask (jointKind budget low high) :=
+    of_decide_eq_true (right_true (left_true cert))
+  have bound : jointKind budget low high < (if budget == 5 then 1 else 3) :=
+    of_decide_eq_true (right_true cert)
+  have result := route_preserves pattern period positive (jointRoute budget low high) route initial
+  rw [finish] at result
+  exact ⟨bound, result⟩
+
+theorem zero_div_constructive (n : Nat) : 0 / n = 0 := by
+  change Nat.div 0 n = 0
+  unfold Nat.div
+  by_cases positive : 0 < n
+  · rw [dif_pos positive, Nat.div.go, dif_neg (Nat.not_le_of_gt positive)]
+  · rw [dif_neg positive]
+
+theorem zero_not_covered (pattern : List Bool) (period : Nat) (positive : 0 < period)
+    (covered : Covered pattern period 0) : False := by
+  have impossible := covered 0 positive
+  change (0 / 2 ^ (window pattern period 0).val % 2 == 1) = true at impossible
+  rw [zero_div_constructive, Nat.zero_mod] at impossible
+  cases impossible
+
+theorem six_impossible (pattern : List Bool) (period : Nat) (positive : 0 < period)
+    (i0 i1 : Nat) (b0 : i0 < (PeriodCoverRules.family 5 0 false).length)
+    (b1 : i1 < (PeriodCoverRules.family 5 0 true).length)
+    (c0 : Covered pattern period (PeriodCoverRules.mask 5 0 false i0))
+    (c1 : Covered pattern period (PeriodCoverRules.mask 5 0 true i1)) : False := by
+  obtain ⟨low, lb, lc⟩ := root_preserves pattern period positive 5 false roots_5_false i0 b0 c0
+  obtain ⟨high, hb, hc⟩ := root_preserves pattern period positive 5 true roots_5_true i1 b1 c1
+  obtain ⟨bound, result⟩ := joint_preserves pattern period positive 5 joints_5 low high lb hb lc hc
+  have zero : jointKind 5 low high = 0 := Nat.eq_zero_of_le_zero (Nat.le_of_succ_le_succ bound)
+  rw [zero] at result
+  exact zero_not_covered pattern period positive result
+
+theorem seven_classified (pattern : List Bool) (period : Nat) (positive : 0 < period)
+    (i0 i1 : Nat) (b0 : i0 < (PeriodCoverRules.family 6 0 false).length)
+    (b1 : i1 < (PeriodCoverRules.family 6 0 true).length)
+    (c0 : Covered pattern period (PeriodCoverRules.mask 6 0 false i0))
+    (c1 : Covered pattern period (PeriodCoverRules.mask 6 0 true i1)) :
+    Covered pattern period nativeWords ∨ Covered pattern period invertedWords := by
+  obtain ⟨low, lb, lc⟩ := root_preserves pattern period positive 6 false roots_6_false i0 b0 c0
+  obtain ⟨high, hb, hc⟩ := root_preserves pattern period positive 6 true roots_6_true i1 b1 c1
+  obtain ⟨bound, result⟩ := joint_preserves pattern period positive 6 joints_6 low high lb hb lc hc
+  cases kind : jointKind 6 low high with
+  | zero =>
+    rw [kind] at result
+    exact False.elim (zero_not_covered pattern period positive result)
+  | succ k =>
+    cases k with
+    | zero => rw [kind] at result; exact Or.inl result
+    | succ k => rw [kind] at result; exact Or.inr result

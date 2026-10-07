@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored continuation of the [alignment and governance objective](ALIGNMENT-COMPLETION.md) and [generative grounding](GENERATIVE-GROUNDING.md). **Accepted at its finite abstract-interface and semantic-contract scopes, with separate internal review.** The named connection is actual contextual evidence → a reason with a specified meaning → an action request concerning the same recipient and proposition.
 
-A local proof can remain correct while a later component uses its conclusion to act on the wrong subject. The new study identifies that risk in a concrete proposed join, supplies a semantic transport contract and tests it against actual saved recipient-reason histories. It advances an information/meaning interface. It does not construct the still-missing paid binding/use route from this publication to the existing recipient controller, or justify the objective that makes the instrumental reason relevant.
+A local proof can remain correct while a later component uses its conclusion to act on the wrong subject. The new study identifies that risk in a concrete proposed join, supplies a semantic transport contract and tests it against actual saved recipient-reason histories. It advances an information/meaning interface. It does not construct the still-missing resource-dependent binding/use route from this publication to the existing recipient controller, or justify the objective that makes the instrumental reason relevant.
 
 ## The proposed join changes the meaning of the same bits
 

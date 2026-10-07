@@ -1,0 +1,1166 @@
+{
+  "status": "passed",
+  "scope": "Owned text, links, and read-only source/log/compiler bindings of three prior Lean receipts. No new theorem, compilation or empirical run.",
+  "ledger_sha256": "6fdb6e4c71307ff02f9f3b232065411d2aa704dc219990007c80a062a84bbd44",
+  "checker_sha256": "81a5a68112f99468b23e7dd47e6aaf3e0d84ea8ebfb42ed9544d646d74a13307",
+  "local_links_checked": 109,
+  "checks": [
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "AGENTS.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "AGENTS.md",
+        "target": "sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "AGENTS.md",
+        "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "AGENTS.md",
+        "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "_process/BRIEF.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/BRIEF.md",
+        "target": "../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/BRIEF.md",
+        "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/BRIEF.md",
+        "target": "research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "RESEARCH.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/README.md",
+        "target": "unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/README.md",
+        "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-EVOLUTION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-CALIBRATION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-CALIBRATION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "target": "../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "target": "LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "FULFILLMENT-WITHDRAWAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "PLURAL-CLAIMS-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md#13-latest-constitutive-tests-and-the-current-research-impasse"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md",
+        "target": "LIANGZHI-CALIBRATION-REVIEW.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+        "target": "LIANGZHI-DEVELOPMENT-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+        "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+        "target": "FULFILLMENT-WITHDRAWAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+        "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md#2-joint-explanation-is-a-legitimate-route-to-investigate"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+        "target": "WANG-YANGMING-COMPLETION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md",
+        "target": "LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "LIANGZHI-DEVELOPMENT-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "FULFILLMENT-WITHDRAWAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "PLURAL-CLAIMS-INTEGRATION.md#2-certifying-fulfillment-with-a-self-model"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "LIANGZHI-DEVELOPMENT-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/inquiry-warrant/BUILD.md#addendum-7-october-2026-empty-axiom-reports"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "LIANGZHI-CALIBRATION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "LIANGZHI-CALIBRATION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md",
+        "target": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md#13-latest-constitutive-tests-and-the-current-research-impasse"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "WHOLE-PRACTICAL-GROUND-INTEGRATION.md#8-joint-explanation-and-the-source-of-corrective-force"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "PERSPECTIVAL-PROSPECTIVE-CONTROL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md#6-认识接口所需随共同活动而具体化"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CHECK.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/README.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "SELECTOR-REVISION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "LEARNING-ROUTE-REVISION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "VALUATION-DEVELOPMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "EVALUATIVE-SUCCESSION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/DevelopedResponse.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+      }
+    },
+    {
+      "name": "historical_receipt_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json"
+    },
+    {
+      "name": "historical_status",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json"
+    },
+    {
+      "name": "historical_compiler_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/GenerativeCore.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "GenerativeCore"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/CoupledOccurrence.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "CoupledOccurrence"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-checks/1791371990097356000/SituatedPractice.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "SituatedPractice"
+    },
+    {
+      "name": "historical_receipt_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json"
+    },
+    {
+      "name": "historical_status",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json"
+    },
+    {
+      "name": "historical_compiler_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-checks/1791282231652157000/GenerativeCore.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "GenerativeCore"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-checks/1791282231652157000/FormedSelection.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "FormedSelection"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-checks/1791282231652157000/AcquiredPurposeCriterion.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "AcquiredPurposeCriterion"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-checks/1791282231652157000/CriterionFixtures.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-checks/1791282231652157000/CriterionFixtures.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "CriterionFixtures"
+    },
+    {
+      "name": "historical_receipt_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification.json"
+    },
+    {
+      "name": "historical_status",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification.json"
+    },
+    {
+      "name": "historical_compiler_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification.json"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification/GenerativeCore.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "GenerativeCore"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification/RecipientCorrection.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "RecipientCorrection"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification/RecipientIdentification.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "RecipientIdentification"
+    },
+    {
+      "name": "historical_source_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean"
+    },
+    {
+      "name": "historical_log_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification/SemanticCalibration.txt"
+    },
+    {
+      "name": "historical_module_exit",
+      "passed": true,
+      "detail": "SemanticCalibration"
+    },
+    {
+      "name": "historical_module_occurrences",
+      "passed": true,
+      "detail": "3+4+4 includes repeated core; no new modules"
+    }
+  ]
+}

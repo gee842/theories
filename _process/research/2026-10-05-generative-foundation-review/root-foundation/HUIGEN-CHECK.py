@@ -24,8 +24,10 @@ def digest(path):
 
 def anchors(path):
     counts = {}
-    result = set()
-    for match in re.finditer(r"^#{1,6}\s+(.+)$", path.read_text(), re.M):
+    content = path.read_text()
+    # Renamed sections retain explicit HTML anchors for historical links.
+    result = set(re.findall(r"""<a\s+id=["']([^"']+)["']""", content))
+    for match in re.finditer(r"^#{1,6}\s+(.+)$", content, re.M):
         heading = re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", match.group(1))
         slug = re.sub(r"[^\w\-\s]", "", heading.lower()).replace(" ", "-")
         number = counts.get(slug, 0)

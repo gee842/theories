@@ -1,5 +1,7 @@
 # Continuation of the merged process-law and naturalism work
 
+**Subsequent continuation:** [the three-obligation report](OPEN-OBLIGATIONS-CONTINUATION.md) records the current result and verification status for the arbitrary-period proof, exact finite port renewal and universal-warrant attempt. The report below preserves the state of the earlier merged round.
+
 7 October 2026, Asia/Bangkok. AI-authored integration of Ren's request to continue unfinished work with subagents after pulling the merged research. This round addresses **acquired inquiry → supported reorganization → an adequate account of its actual history**. It supports the [first-priority normative-grounding programme](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#first-priority-universal-normative-grounding); it does not replace that programme with persistence or a finite controller.
 
 **Status:** the local connections below are established at their stated scope. Universal ethical warrant, a derived renewable law for the whole port, and a complete Lean proof of unbounded period selection remain unresolved. Period selection now has a reviewed general reduction and separately checked components, distinguished below. The [foundation's completion conditions](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation) are unchanged.

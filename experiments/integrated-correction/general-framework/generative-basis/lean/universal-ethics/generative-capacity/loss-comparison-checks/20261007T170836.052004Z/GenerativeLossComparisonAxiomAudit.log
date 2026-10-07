@@ -1,0 +1,25 @@
+'GenerativeLossComparison.Strict' does not depend on any axioms
+'GenerativeLossComparison.Transitive' does not depend on any axioms
+'GenerativeLossComparison.Compatible' does not depend on any axioms
+'GenerativeLossComparison.strict_improvement_transport' does not depend on any axioms
+'GenerativeLossComparison.strict_rejection_transport' does not depend on any axioms
+'GenerativeLossComparison.matched_loss_reduction_preserves_priority' does not depend on any axioms
+'GenerativeLossComparison.matched_loss_increase_preserves_rejection' does not depend on any axioms
+'GenerativeLossComparison.PracticalBridge' does not depend on any axioms
+'GenerativeLossComparison.transported_comparison_supplies_reason' does not depend on any axioms
+'GenerativeLossComparison.faithful_redescription_preserves_strict' does not depend on any axioms
+'GenerativeLossComparison.Route' does not depend on any axioms
+'GenerativeLossComparison.Cutoff' does not depend on any axioms
+'GenerativeLossComparison.cutoff_transitive' depends on axioms: [propext, Quot.sound]
+'GenerativeLossComparison.shorter_interruption_no_worse' does not depend on any axioms
+'GenerativeLossComparison.cutoff_priority_iff' does not depend on any axioms
+'GenerativeLossComparison.cutoff_rejection_iff' does not depend on any axioms
+'GenerativeLossComparison.compatible_cutoffs_disagree' does not depend on any axioms
+'GenerativeLossComparison.a_good_anchor_does_not_license_more_loss' does not depend on any axioms
+'GenerativeLossComparison.ContinuationFirst' does not depend on any axioms
+'GenerativeLossComparison.continuation_first_transitive' depends on axioms: [propext, Quot.sound]
+'GenerativeLossComparison.continuation_first_still_prefers_shorter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GenerativeLossComparison.continuation_first_accepts_every_finite_loss' does not depend on any axioms
+'GenerativeLossComparison.loss_sensitivity_alone_supplies_no_cutoff' depends on axioms: [propext, Quot.sound]

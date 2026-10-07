@@ -1,0 +1,35 @@
+ConsequenceTransmission.lean:236:2: error: Tactic `rfl` failed: equality lhs
+  { copyA := t.aa + t.ah, copyH := t.ha + t.hh, unchanged := t.unchanged }.copyA +
+    ({ copyA := t.aa + t.ah, copyH := t.ha + t.hh, unchanged := t.unchanged }.copyH +
+      { copyA := t.aa + t.ah, copyH := t.ha + t.hh, unchanged := t.unchanged }.unchanged)
+is not definitionally equal to rhs
+  { copyA := t.aa + t.ha, copyH := t.ah + t.hh, unchanged := t.unchanged }.copyA +
+    ({ copyA := t.aa + t.ha, copyH := t.ah + t.hh, unchanged := t.unchanged }.copyH +
+      { copyA := t.aa + t.ha, copyH := t.ah + t.hh, unchanged := t.unchanged }.unchanged)
+
+t : Transmission
+⊢ { copyA := t.aa + t.ah, copyH := t.ha + t.hh, unchanged := t.unchanged }.copyA +
+      ({ copyA := t.aa + t.ah, copyH := t.ha + t.hh, unchanged := t.unchanged }.copyH +
+        { copyA := t.aa + t.ah, copyH := t.ha + t.hh, unchanged := t.unchanged }.unchanged) =
+    { copyA := t.aa + t.ha, copyH := t.ah + t.hh, unchanged := t.unchanged }.copyA +
+      ({ copyA := t.aa + t.ha, copyH := t.ah + t.hh, unchanged := t.unchanged }.copyH +
+        { copyA := t.aa + t.ha, copyH := t.ah + t.hh, unchanged := t.unchanged }.unchanged)
+'ConsequenceTransmission.numerator_balance' depends on axioms: [propext]
+'ConsequenceTransmission.strict_increase_iff' depends on axioms: [propext]
+'ConsequenceTransmission.neutral_iff' depends on axioms: [propext]
+'ConsequenceTransmission.strict_decrease_iff' depends on axioms: [propext]
+'ConsequenceTransmission.denominator_positive' does not depend on any axioms
+'ConsequenceTransmission.shared_access_is_neutral' depends on axioms: [propext]
+'ConsequenceTransmission.Native.positive_a_weight_has_native_event' depends on axioms: [propext]
+'ConsequenceTransmission.Native.positive_h_weight_has_native_event' depends on axioms: [propext]
+'ConsequenceTransmission.Native.native_copy_transmits_its_response_structure' depends on axioms: [propext]
+'ConsequenceTransmission.Native.actual_capture_changes_copy_access' depends on axioms: [propext]
+'ConsequenceTransmission.Native.actual_transfer_with_both_structures_present' depends on axioms: [propext]
+'ConsequenceTransmission.Native.same_composition_opposite_access' depends on axioms: [propext]
+'ConsequenceTransmission.transmission_preserves_total_event_weight' depends on axioms: [propext, sorryAx, Quot.sound]
+'ConsequenceTransmission.transmitted_structure_increase_iff' depends on axioms: [propext]
+'ConsequenceTransmission.faithful_transmission_matches_template' does not depend on any axioms
+'ConsequenceTransmission.faithful_increase_iff_template_increase' does not depend on any axioms
+'ConsequenceTransmission.positive_template_advantage_can_reverse_in_transmission' does not depend on any axioms
+'ConsequenceTransmission.Native.reached_neutral_event_is_native' depends on axioms: [propext]
+'ConsequenceTransmission.balanced_transfer_matches_template' does not depend on any axioms

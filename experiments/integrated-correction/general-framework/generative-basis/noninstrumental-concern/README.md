@@ -1,5 +1,11 @@
 # Patient-grounded concern in a paid generative process
 
+## Situated practice in the whole history — 7 October 2026
+
+[SituatedPractice.lean](SituatedPractice.lean) reuses `GenerativeCore` and `CoupledOccurrence` to retain full finite event/state histories. It checks the exact common-continuation condition for a readout to support a robust feasible response, actual enactment, refinement, changed appraisals, and a pairwise-versus-joint compatibility boundary. This is a correspondence result, not a definition of true knowledge or proof of moral warrant; the whole-history `Fits` relation remains supplied. An empty suffix does not prove enacted stopping or its ethical correctness.
+
+Run `python3 check_wang_practice.py`. The [fresh receipt](wang-practice-verification.json) verifies 37 audits across three modules, including 12 new declarations: 8 empty named-axiom dependencies, with the others using standard `propext`, `Quot.sound` or `Classical.choice`. Initial failed and final passing source/log snapshots are retained. [Mathematics and dependencies](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md) and [Wang integration](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md) state the original-text, reconstruction and universal-grounding boundaries.
+
 ## Whole history and a local initiation constraint
 
 [AcquiredInitiationConstraint.lean](AcquiredInitiationConstraint.lean) continues the same material ancestor through actual formation/completion contacts and changed initiation. [Nine saved histories and separate replay](../../../../shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md) preserve the original products and failed continuations. The general theorems establish the one-unit foreclosure of an existing completion and two depleted-state invariants over all admitted finite traces. A saved ample case protects B yet leaves its newly formed A unable to continue; matched B/support projections also retain different new structures.

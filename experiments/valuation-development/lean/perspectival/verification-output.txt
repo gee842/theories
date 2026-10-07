@@ -1,0 +1,28 @@
+Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)
+'Perspectival.represented_is_saturated' does not depend on any axioms
+'Perspectival.saturated_is_represented' does not depend on any axioms
+'Perspectival.representation_exists_iff' does not depend on any axioms
+'Perspectival.step_congruence_preserves_futures' does not depend on any axioms
+'Perspectival.step_congruence_iff_futures' does not depend on any axioms
+'Perspectival.future_representation_exists_iff' does not depend on any axioms
+'Perspectival.current_and_step_preserve_future_comparison' does not depend on any axioms
+'Perspectival.current_and_step_give_future_representation' does not depend on any axioms
+'Perspectival.omitted_future_obstructs_representation' does not depend on any axioms
+'Perspectival.action_congruence_preserves_words' does not depend on any axioms
+'Perspectival.action_congruence_iff_words' does not depend on any axioms
+'Perspectival.current_and_action_preserve_word_comparisons' does not depend on any axioms
+'Perspectival.word_representation_exists_iff' does not depend on any axioms
+'Perspectival.current_and_action_give_word_representation' does not depend on any axioms
+'Perspectival.current_capacity_is_represented' does not depend on any axioms
+'Perspectival.initial_views_agree' does not depend on any axioms
+'Perspectival.current_view_not_step_congruent' does not depend on any axioms
+'Perspectival.current_fidelity_does_not_give_future_fidelity' does not depend on any axioms
+'Perspectival.three_cycle_count_histories_agree' does not depend on any axioms
+'Perspectival.third_cycle_has_different_continuation_conditions' does not depend on any axioms
+'Perspectival.fourth_cycle_diverges_despite_matching_routes' does not depend on any axioms
+'Perspectival.one_cycle_exposes_capacity_before_count_diverges' does not depend on any axioms
+'Perspectival.route_view_step_congruent' does not depend on any axioms
+'Perspectival.route_view_represents_capacity' does not depend on any axioms
+'Perspectival.route_view_preserves_all_future_capacity_comparisons' does not depend on any axioms
+a1107b8fc26bdc92d08e513b0fff2e09666247e6acc4746e53592427036a770e  TrajectoryFidelity.lean
+0d44303f8a6f5bf9c7ba3d7eecf5e77e7e28fb352cd2f4a40971c4037c496785  Audit.lean

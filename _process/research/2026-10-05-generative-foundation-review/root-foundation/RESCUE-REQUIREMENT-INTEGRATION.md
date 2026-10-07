@@ -18,7 +18,7 @@ The accepted correction is therefore precise: reject an argument that continuall
 
 ## Premises that remain supplied
 
-Applications still require independent identification of the patient and severe still-unwanted experience; efficacy and safety; relevant consent and authority over means; real full-history costs and responsibilities; and warranted alternatives. The underlying patient-to-actor moral contribution, positive goods of authorship and relationships, comparative priority and permission-defeating force remain ethical grounds under argument. No observed selection process, resource balance or learned reward establishes them merely by being successful.
+Applications still require independent identification of the patient and severe still-unwanted experience; efficacy and safety; relevant consent and authority over means; real full-history costs and responsibilities; and warranted alternatives. The underlying patient-to-actor moral contribution, positive goods of self-direction and relationships, comparative priority and permission-defeating force remain ethical grounds under argument. No observed selection process, resource balance or learned reward establishes them merely by being successful.
 
 The generative foundation contributes an account of formation, costs, histories and revision. It can help explain how a responder acquires reliable evidence, whether a relief route is funded, and how provision might become durable. Those contributions retain the supplied ethical premises. A causal model of helpers is not itself a justification of what anyone owes.
 
@@ -46,6 +46,6 @@ This local argument closes the selected round at its stated conditional philosop
 
 ## Next central comparison
 
-Compare **a genuine nontrivial authorship claim with continuing severe need under actual noncompliance**. Test a demanding allocation and a proposed permission to continue a worthwhile project against the same people, histories, capacities and unmet losses. A positive argument must explain why the alleged permission defeats this patient's claim rather than merely noting that projects have value. An argument for greater demands must preserve the helper's actual life and cannot conceal lifetime costs.
+Compare **a genuine nontrivial self-direction claim with continuing severe need under actual noncompliance**. Test a demanding allocation and a proposed permission to continue a worthwhile project against the same people, histories, capacities and unmet losses. A positive argument must explain why the alleged permission defeats this patient's claim rather than merely noting that projects have value. An argument for greater demands must preserve the helper's actual life and cannot conceal lifetime costs.
 
 Reliable shared provision may change that conflict, but its formation, costs and transitional unmet needs must be included. No imagined equal chance of occupying each position can replace known differences in exposure. Continue the deeper patient-to-actor grounding and the categorical-permission challenge as explicit interfaces. A justified categorical refusal right, mistaken patient identification, or an allocation that destroys defensible plural latitude would revise different parts of the account. The strongest possible universal foundation remains the aim; this narrow duty is one contribution toward it.

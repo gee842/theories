@@ -1,4 +1,6 @@
-# The formed predictor implements a paid learning operation
+<a id="the-formed-predictor-implements-a-paid-learning-operation"></a>
+
+# The formed predictor implements a resource-dependent learning operation
 
 **Subsequent complete-exposure bridge, 6 October 2026:** [stochastic predictor composition](STOCHASTIC-PREDICTION-COMPOSITION.md) now includes the callable program's failed rent, no-work packet loss, optional writing and actual later continuation. It proves the exact installed payable overlap with this older law, while preserving their different behavior outside it. The completed deterministic trial theorem below retains its original scope.
 
@@ -6,7 +8,7 @@
 
 ## A concrete connection between the parallel studies
 
-The [prediction-action construction](PREDICTION-ACTION.md) supplies a formed finite circuit with a paid predictive retrofit. The [protocol-composition result](PROTOCOL-COMPOSITION.md) supplies a general criterion for several physical events to implement one learning operation. This study establishes their connection for the predictor's deterministic, payable-write trial law.
+The [prediction-action construction](PREDICTION-ACTION.md) supplies a formed finite circuit with a resource-dependent predictive retrofit. The [protocol-composition result](PROTOCOL-COMPOSITION.md) supplies a general criterion for several physical events to implement one learning operation. This study establishes their connection for the predictor's deterministic, payable-write trial law.
 
 Every completed trial consists of exactly four actual events:
 
@@ -56,13 +58,13 @@ The checked examples use the existing primary parameters: rent one, work three a
 | Four fuel units and a correct route | The action's actual return funds writing, so the trial can complete. Requiring all three bills upfront would wrongly exclude it. |
 | A completed failure with only one updater lease unit initially | Completion leaves the updater expired. The next trial inherits that obstruction. |
 
-The unfinished attempts remain actual paid prefixes of the physical law. They have no completed macro step. The finite completed-history equivalence cannot be used to discard them from a probability, reliability or empirical claim.
+The unfinished attempts remain actual resource-dependent prefixes of the physical law. They have no completed macro step. The finite completed-history equivalence cannot be used to discard them from a probability, reliability or empirical claim.
 
 For completed histories, the earlier exact energy account carries through every micro-event, including unsuccessful source consumption and every cut inside a trial. Each completed trial consumes exactly one inherited source packet. Material and remaining source are inherited; no boundary resets them. The account uses the parent law's admissibility premises and declared costs. It does not derive those costs from chemistry or implement the separate consumable typed-part law.
 
 ## What this advances, and what would revise it
 
-We now have an actual example in which a paid physical sequence implements a learned-memory operation with the same subsequent command and the same resource history. The remaining problem is increasingly specific: explain the formation and consequence-dependent revision of the supplied sensing, writing and prediction-to-action routes, then connect their operational predictions to evaluative use and other centers of significance.
+We now have an actual example in which a resource-dependent physical sequence implements a learned-memory operation with the same subsequent command and the same resource history. The remaining problem is increasingly specific: explain the formation and consequence-dependent revision of the supplied sensing, writing and prediction-to-action routes, then connect their operational predictions to evaluative use and other centers of significance.
 
 The result would need revision if the concrete implementation could take another permitted first-return path, change its updater during the write, carry an unrepresented input, lose the bounded-score invariant, or charge a different intermediate cost. A noisy observation law or runtime recipient would require new interface proofs. These are concrete obligations for subsequent constructions, not consequences of calling both descriptions “learning.”
 

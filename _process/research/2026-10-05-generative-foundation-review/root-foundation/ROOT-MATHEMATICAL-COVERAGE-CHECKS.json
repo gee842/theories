@@ -1,0 +1,85 @@
+{
+  "checked_at_utc": "2026-10-07T16:26:07.823738+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-LEAN.md": "b36a28348d6a18ad2f4f385787a9d1c765ab02472fd98c500a2c0df1c4af3e02",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-REVIEW.md": "0a81b3afcd34a9c6abf32cdab96017ceebdab16109443a59b47133699fafd133",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-INTEGRATION.md": "659ef80655ecf150864dfc8b0ed96e067a9c31b32ad7cf929622cc168fcf6803",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/README.md": "65820dbb59101cd8791f6078c52f90552bbcd42fb74d04b2fbbf2744a3246b97",
+    "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md": "90a17b568c0db4a1063313b5a916a8e9e9205812656d85c6e05baa94f5a7c4a0"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 40,
+  "heading_fragments_checked": 0,
+  "previous_proof_assets_preserved": 70,
+  "new_lean_receipts": {
+    "coverage": {
+      "sha256": "bf27e945feef9f59821270853be9d015da78f7d52c533281edaa5ba2b447e330",
+      "theorems_checked": 36,
+      "named_declarations_audited": 66
+    }
+  },
+  "lean_theorems_checked": 36,
+  "lean_named_declaration_audits": 66,
+  "internal_review": "Implementing agent read both final modules and the dependency interfaces, checked model/type universe scopes, finite construction assumptions, inverse model coverage, symbolic arithmetic application and mismatched-symbol boundary. Critical review explicitly preserves the matched full-target structural alternative. No independent-agent or external peer review is claimed.",
+  "concurrent_change_observation": "Substantial unrelated concurrent repository edits remain untouched. No earlier proof package was modified; no commits were made.",
+  "manifest_sha256": "90be5388cb4f8270bdeaa517b47744a98b78a3508ca919951e78e60f8eb34bfd",
+  "checker_sha256": "2d843c12fc747434ea2af54e8be6b7d698df23b8b0c677877e5811741e4897ed",
+  "errors": [],
+  "passed": true
+}

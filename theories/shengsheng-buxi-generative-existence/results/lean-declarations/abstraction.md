@@ -1,0 +1,2278 @@
+# Lean 具名声明 / Named Lean declarations
+
+[返回 Lean 导航](../LEAN-INDEX.md)。本表显示当前工作源与审计入口；所有历史副本仍见 [JSON 清单](../data/lean-index.json)。这是显式声明的位置索引，不能代替命题、假设及对应论证的阅读。 / [Return to navigation](../LEAN-INDEX.md). Working sources and audit entries appear here; all historical copies remain in the JSON inventory. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.
+
+定理／引理逐项列出；定义与类型声明列在同一模块的折叠项中。限定名由文本 namespace 推断，仅供导航；私有内部名称和自动生成名称以 Lean 为准。 / Theorems and lemmas are individually listed; definitions and type declarations share each module's foldout. Namespace-qualified names are textual hints; Lean determines private/internal and generated names.
+
+[全部方向与模块 / All topics and modules](../LEAN-DECLARATIONS.md)
+
+## 抽象、适用性与构成 / Abstraction, applicability and constitution
+
+<a id="module-3a9468f07796"></a>
+
+<details>
+<summary>AcquiredApplicability.lean — 45 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean`
+
+Imports: `GenerativeCore`
+
+没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
+
+定义与类型 / Definitions and types:
+
+- `def` [AcquiredApplicability.ticks](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L21) (L21)
+- `structure` [AcquiredApplicability.Machine](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L23) (L23)
+- `def` [AcquiredApplicability.lookupD](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L29) (L29)
+- `def` [AcquiredApplicability.Machine.output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L34) (L34)
+- `def` [AcquiredApplicability.Machine.next](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L35) (L35)
+- `def` [AcquiredApplicability.Machine.walk](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L36) (L36)
+- `def` [AcquiredApplicability.Machine.answer](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L39) (L39)
+- `inductive` [AcquiredApplicability.Candidate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L41) (L41)
+- `def` [AcquiredApplicability.arrival](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L45) (L45)
+- `def` [AcquiredApplicability.family](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L50) (L50)
+- `def` [AcquiredApplicability.update](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L51) (L51)
+- `def` [AcquiredApplicability.conflicting](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L53) (L53)
+- `inductive` [AcquiredApplicability.ReceiptMode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L56) (L56)
+- `inductive` [AcquiredApplicability.Deny](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L60) (L60)
+- `structure` [AcquiredApplicability.Config](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L64) (L64)
+- `structure` [AcquiredApplicability.Account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L75) (L75)
+- `structure` [AcquiredApplicability.Physical](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L86) (L86)
+- `structure` [AcquiredApplicability.Record](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L93) (L93)
+- `structure` [AcquiredApplicability.Control](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L100) (L100)
+- `inductive` [AcquiredApplicability.PC](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L111) (L111)
+- `inductive` [AcquiredApplicability.Error](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L117) (L117)
+- `structure` [AcquiredApplicability.Body](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L122) (L122)
+- `structure` [AcquiredApplicability.State](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L136) (L136)
+- `def` [AcquiredApplicability.liveCells](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L142) (L142)
+- `def` [AcquiredApplicability.tariff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L145) (L145)
+- `def` [AcquiredApplicability.fail](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L149) (L149)
+- `def` [AcquiredApplicability.charge](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L153) (L153)
+- `def` [AcquiredApplicability.paid](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L160) (L160)
+- `def` [AcquiredApplicability.nativeCharge](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L165) (L165)
+- `def` [AcquiredApplicability.extracted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L168) (L168)
+- `inductive` [AcquiredApplicability.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L174) (L174)
+- `def` [AcquiredApplicability.guard](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L179) (L179)
+- `def` [AcquiredApplicability.advanceBody](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L203) (L203)
+- `def` [AcquiredApplicability.advance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L247) (L247)
+- `def` [AcquiredApplicability.Step](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L249) (L249)
+- `def` [AcquiredApplicability.process](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L250) (L250)
+- `def` [AcquiredApplicability.run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L251) (L251)
+- `def` [AcquiredApplicability.Runnable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L254) (L254)
+- `def` [AcquiredApplicability.nextEvent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L264) (L264)
+- `def` [AcquiredApplicability.policyWord](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L287) (L287)
+- `def` [AcquiredApplicability.history](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L293) (L293)
+- `def` [AcquiredApplicability.boolCode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L297) (L297)
+- `def` [AcquiredApplicability.optBoolCode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L298) (L298)
+- `def` [AcquiredApplicability.candidateCode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L299) (L299)
+- `def` [AcquiredApplicability.vector](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean#L304) (L304)
+
+</details>
+
+<a id="module-3a59dae65c20"></a>
+
+<details>
+<summary>ApplicabilityGrounding.lean — 6 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean`
+
+Imports: `ApplicabilityProofs`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [AcquiredApplicability.actualUse_mem_family](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean#L16) | 16 |
+| [AcquiredApplicability.actualUse_calibrated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean#L27) | 27 |
+| [AcquiredApplicability.extraction_realizes_actualUse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean#L37) | 37 |
+| [AcquiredApplicability.faithful_physical_update_retains](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean#L48) | 48 |
+| [AcquiredApplicability.first_faithful_physical_update_retains](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean#L56) | 56 |
+
+定义与类型 / Definitions and types:
+
+- `def` [AcquiredApplicability.actualUse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean#L12) (L12)
+
+文本中有 6 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 6 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-1c37938595ec"></a>
+
+<details>
+<summary>ApplicabilityProofs.lean — 49 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean`
+
+Imports: `AcquiredApplicability`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [AcquiredApplicability.cancel_add_right](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L16) | 16 |
+| [AcquiredApplicability.debit_cancel](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L21) | 21 |
+| [AcquiredApplicability.swap_last](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L31) | 31 |
+| [AcquiredApplicability.balance_trans](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L34) | 34 |
+| [AcquiredApplicability.Conserves.refl](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L54) | 54 |
+| [AcquiredApplicability.Conserves.trans](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L55) | 55 |
+| [AcquiredApplicability.fail_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L60) | 60 |
+| [AcquiredApplicability.charge_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L63) | 63 |
+| [AcquiredApplicability.paid_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L85) | 85 |
+| [AcquiredApplicability.native_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L93) | 93 |
+| [AcquiredApplicability.extracted_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L97) | 97 |
+| [AcquiredApplicability.advanceBody_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L136) | 136 |
+| [AcquiredApplicability.advance_H](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L181) | 181 |
+| [AcquiredApplicability.advance_config](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L182) | 182 |
+| [AcquiredApplicability.run_preserves_H](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L185) | 185 |
+| [AcquiredApplicability.run_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L190) | 190 |
+| [AcquiredApplicability.runnable_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L196) | 196 |
+| [AcquiredApplicability.trace_is_run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L203) | 203 |
+| [AcquiredApplicability.trace_preserves_H](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L212) | 212 |
+| [AcquiredApplicability.trace_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L217) | 217 |
+| [AcquiredApplicability.trace_no_phantom_credit](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L224) | 224 |
+| [AcquiredApplicability.trace_ledger](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L232) | 232 |
+| [AcquiredApplicability.mem_update_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L251) | 251 |
+| [AcquiredApplicability.faithful_candidate_retained](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L290) | 290 |
+| [AcquiredApplicability.zero_is_ambiguous](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L294) | 294 |
+| [AcquiredApplicability.positive_first](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L295) | 295 |
+| [AcquiredApplicability.productive_disagreement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L296) | 296 |
+| [AcquiredApplicability.second_positive_disambiguates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L299) | 299 |
+| [AcquiredApplicability.second_zero_disambiguates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L301) | 301 |
+| [AcquiredApplicability.misleading_receipt_can_remove_true_candidate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L304) | 304 |
+| [AcquiredApplicability.charge_when_affordable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L321) | 321 |
+| [AcquiredApplicability.charge_error_affordable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L336) | 336 |
+| [AcquiredApplicability.charge_preserves_observational_fields](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L340) | 340 |
+| [AcquiredApplicability.paid_apply](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L349) | 349 |
+| [AcquiredApplicability.charge_insufficient](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L353) | 353 |
+| [AcquiredApplicability.commit_updates_acquired_record](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L366) | 366 |
+| [AcquiredApplicability.commit_denied_preserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L389) | 389 |
+| [AcquiredApplicability.missing_receipt_is_not_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L399) | 399 |
+| [AcquiredApplicability.retention_denied_preserves_committed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L411) | 411 |
+| [AcquiredApplicability.scan_config_independent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L421) | 421 |
+| [AcquiredApplicability.scan_ambiguous_selects](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L427) | 427 |
+| [AcquiredApplicability.scan_ambiguous_skips](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L442) | 442 |
+| [AcquiredApplicability.selection_installs_scanned_word](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L457) | 457 |
+| [AcquiredApplicability.clamp_preserves_old_word_and_record](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L469) | 469 |
+| [AcquiredApplicability.policy_stops_after_first_positive](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L482) | 482 |
+| [AcquiredApplicability.policy_reads_acquired_failure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L497) | 497 |
+| [AcquiredApplicability.policy_clamped_failure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L514) | 514 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [AcquiredApplicability.Conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L45) (L45)
+- `def` [AcquiredApplicability.CanPay](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean#L316) (L316)
+
+</details>
+
+<a id="module-365cf9c6139b"></a>
+
+<details>
+<summary>CalibrationRevision.lean — 68 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CALIBRATION-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean`
+
+Imports: `RemainingDependency`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CalibrationRevision.untested_full_coordinate_is_underdetermined](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L26) | 26 |
+| [CalibrationRevision.every_weak_query_word_preserves_the_ambiguity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L36) | 36 |
+| [CalibrationRevision.same_observed_pair_has_distinct_full_laws](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L41) | 41 |
+| [CalibrationRevision.local_mismatch_refutes_global_calibration](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L51) | 51 |
+| [CalibrationRevision.local_agreement_does_not_establish_global_calibration](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L56) | 56 |
+| [CalibrationRevision.filtering_never_adds_a_candidate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L78) | 78 |
+| [CalibrationRevision.allowed_exactly_matches_coordinate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L86) | 86 |
+| [CalibrationRevision.faithful_filter_preserves_actual_map](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L91) | 91 |
+| [CalibrationRevision.one_full_bit_leaves_eight](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L98) | 98 |
+| [CalibrationRevision.full_and_fresh_same_setting_leave_four](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L102) | 102 |
+| [CalibrationRevision.missing_full_indication_does_not_mean_failure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L107) | 107 |
+| [CalibrationRevision.paid_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L262) | 262 |
+| [CalibrationRevision.paid_stocks_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L273) | 273 |
+| [CalibrationRevision.advance_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L282) | 282 |
+| [CalibrationRevision.advance_stocks_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L286) | 286 |
+| [CalibrationRevision.run_parent_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L290) | 290 |
+| [CalibrationRevision.run_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L295) | 295 |
+| [CalibrationRevision.run_stocks_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L303) | 303 |
+| [CalibrationRevision.whole_history_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L314) | 314 |
+| [CalibrationRevision.completion_and_old_report_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L319) | 319 |
+| [CalibrationRevision.exhausted_source_still_blocks_another_full_transfer](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L325) | 325 |
+| [CalibrationRevision.run_is_core_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L333) | 333 |
+| [CalibrationRevision.proposal_ignores_unread_physical_law](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L341) | 341 |
+| [CalibrationRevision.actual_parent_pair_has_equal_retained_reports_and_consequences](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L381) | 381 |
+| [CalibrationRevision.full_failure_revises_application_and_selects_real_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L388) | 388 |
+| [CalibrationRevision.actual_funded_recheck_discloses_local_mismatch](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L396) | 396 |
+| [CalibrationRevision.actual_funded_recheck_can_contradict_the_old_report](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L404) | 404 |
+| [CalibrationRevision.matched_clamp_preserves_full_evidence_revision_and_proposal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L411) | 411 |
+| [CalibrationRevision.clamped_history_does_not_acquire_the_fresh_reply](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L420) | 420 |
+| [CalibrationRevision.supported_tested_prediction_does_not_claim_global_calibration](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L426) | 426 |
+| [CalibrationRevision.missing_full_contact_withholds_mismatch_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L431) | 431 |
+| [CalibrationRevision.corrupted_fresh_contact_can_falsify_the_diagnosis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L436) | 436 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [CalibrationRevision.Model](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L16) (L16)
+- `def` [CalibrationRevision.sameObserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L23) (L23)
+- `def` [CalibrationRevision.GloballyCalibrated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L49) (L49)
+- `def` [CalibrationRevision.model](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L64) (L64)
+- `def` [CalibrationRevision.allowed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L68) (L68)
+- `def` [CalibrationRevision.filterMask](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L72) (L72)
+- `def` [CalibrationRevision.maskSize](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L76) (L76)
+- `inductive` [CalibrationRevision.Application](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L110) (L110)
+- `inductive` [CalibrationRevision.Diagnosis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L114) (L114)
+- `inductive` [CalibrationRevision.Phase](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L118) (L118)
+- `structure` [CalibrationRevision.Config](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L122) (L122)
+- `structure` [CalibrationRevision.Body](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L128) (L128)
+- `structure` [CalibrationRevision.State](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L150) (L150)
+- `def` [CalibrationRevision.paid](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L156) (L156)
+- `def` [CalibrationRevision.stockBit](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L160) (L160)
+- `def` [CalibrationRevision.stockDatum](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L166) (L166)
+- `def` [CalibrationRevision.boundRecord](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L171) (L171)
+- `def` [CalibrationRevision.filterRecord](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L178) (L178)
+- `def` [CalibrationRevision.reviseApplication](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L185) (L185)
+- `def` [CalibrationRevision.disagreement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L189) (L189)
+- `def` [CalibrationRevision.propose](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L194) (L194)
+- `def` [CalibrationRevision.reviseDiagnosis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L201) (L201)
+- `inductive` [CalibrationRevision.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L209) (L209)
+- `def` [CalibrationRevision.advance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L217) (L217)
+- `def` [CalibrationRevision.step](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L252) (L252)
+- `def` [CalibrationRevision.run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L254) (L254)
+- `def` [CalibrationRevision.process](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L258) (L258)
+- `def` [CalibrationRevision.actorTotal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L260) (L260)
+- `def` [CalibrationRevision.wholeTotal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L311) (L311)
+- `def` [CalibrationRevision.entrance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L347) (L347)
+- `def` [CalibrationRevision.fullEvidenceEvents](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L355) (L355)
+- `def` [CalibrationRevision.inquiryEvents](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L358) (L358)
+- `def` [CalibrationRevision.continuation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L365) (L365)
+- `def` [CalibrationRevision.mismatchParent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L369) (L369)
+- `def` [CalibrationRevision.oldReportErrorParent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L373) (L373)
+- `def` [CalibrationRevision.positiveParent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/calibration-revision/formal/CalibrationRevision.lean#L377) (L377)
+
+文本中有 32 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 32 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-f3d19e548781"></a>
+
+<details>
+<summary>RecipeGrounding.lean — 30 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipeGrounding.generated_exact](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L31) | 31 |
+| [RecipeGrounding.four_distinct_generated_tables](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L35) | 35 |
+| [RecipeGrounding.generated_represents_every_unary_function](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L38) | 38 |
+| [RecipeGrounding.selection_exists_iff_distinct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L64) | 64 |
+| [RecipeGrounding.selected_table_is_generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L69) | 69 |
+| [RecipeGrounding.actual_selected_decoder_recovers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L76) | 76 |
+| [RecipeGrounding.equal_reference_replies_preclude_any_decoder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L86) | 86 |
+| [RecipeGrounding.selected_recovery_iff_possible](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L95) | 95 |
+| [RecipeGrounding.one_reference_cannot_certify_recoverability](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L108) | 108 |
+| [RecipeGrounding.equal_observations_equal_adaptive_memory](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L125) | 125 |
+| [RecipeGrounding.compensated_routes_have_equal_observations](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L139) | 139 |
+| [RecipeGrounding.compensated_routes_preserve_real_target_difference](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L143) | 143 |
+| [RecipeGrounding.opposite_routes_have_no_common_reliable_decoder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L147) | 147 |
+| [RecipeGrounding.no_adaptive_unreferenced_reliable_selection](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L155) | 155 |
+| [RecipeGrounding.changed_use_transduction_defeats_calibrated_recipe](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L169) | 169 |
+| [RecipeGrounding.swapped_reference_binding_defeats_selected_recipe](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L177) | 177 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RecipeGrounding.Table](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L17) (L17)
+- `def` [RecipeGrounding.Table.read](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L22) (L22)
+- `def` [RecipeGrounding.rowOutputs](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L25) (L25)
+- `def` [RecipeGrounding.generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L28) (L28)
+- `structure` [RecipeGrounding.Wiring](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L44) (L44)
+- `def` [RecipeGrounding.Wiring.write](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L49) (L49)
+- `def` [RecipeGrounding.Wiring.complete](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L52) (L52)
+- `def` [RecipeGrounding.wiringFrom](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L58) (L58)
+- `def` [RecipeGrounding.selectDecoder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L61) (L61)
+- `def` [RecipeGrounding.Recovers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L73) (L73)
+- `def` [RecipeGrounding.acquire](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L119) (L119)
+- `def` [RecipeGrounding.target](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L134) (L134)
+- `def` [RecipeGrounding.transduction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L135) (L135)
+- `def` [RecipeGrounding.unreferencedObservation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeGrounding.lean#L136) (L136)
+
+文本中有 16 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 16 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-b95fad6c2723"></a>
+
+<details>
+<summary>RecipeNative.lean — 33 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean`
+
+Imports: `CalibrationRevision`, `RecipeGrounding`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipeNative.paid_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L149) | 149 |
+| [RecipeNative.inherited_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L160) | 160 |
+| [RecipeNative.every_attempt_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L164) | 164 |
+| [RecipeNative.run_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L168) | 168 |
+| [RecipeNative.every_attempt_preserves_ancestor_and_stocks](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L173) | 173 |
+| [RecipeNative.run_preserves_ancestor_and_stocks](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L182) | 182 |
+| [RecipeNative.run_is_core_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L191) | 191 |
+| [RecipeNative.actual_binder_matches_selected_decoder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L201) | 201 |
+| [RecipeNative.actual_bound_decoder_recovers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L206) | 206 |
+| [RecipeNative.decoding_uses_the_actual_stored_rows](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L212) | 212 |
+| [RecipeNative.absent_row_is_not_repaired_by_ready](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L220) | 220 |
+| [RecipeNative.inherited_complete_pipeline_account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L225) | 225 |
+| [RecipeNative.old_pipeline_plus_four_reference_surcharges_is_unfunded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L232) | 232 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [RecipeNative.RecipePhase](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L20) (L20)
+- `structure` [RecipeNative.Recipe](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L24) (L24)
+- `structure` [RecipeNative.Config](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L38) (L38)
+- `structure` [RecipeNative.State](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L47) (L47)
+- `def` [RecipeNative.paid](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L56) (L56)
+- `def` [RecipeNative.mapDatum](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L60) (L60)
+- `def` [RecipeNative.referenceDatum](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L63) (L63)
+- `def` [RecipeNative.boundReference](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L68) (L68)
+- `def` [RecipeNative.bind](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L75) (L75)
+- `def` [RecipeNative.isReady](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L86) (L86)
+- `def` [RecipeNative.decoder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L90) (L90)
+- `def` [RecipeNative.decodeContact](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L95) (L95)
+- `inductive` [RecipeNative.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L100) (L100)
+- `def` [RecipeNative.inherited](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L108) (L108)
+- `def` [RecipeNative.step](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L111) (L111)
+- `def` [RecipeNative.run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L137) (L137)
+- `def` [RecipeNative.process](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L141) (L141)
+- `def` [RecipeNative.entrance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L143) (L143)
+- `def` [RecipeNative.total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L147) (L147)
+- `def` [RecipeNative.recordedPair](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean#L198) (L198)
+
+文本中有 13 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 13 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-6c65c55bbb0f"></a>
+
+<details>
+<summary>ConsequenceInquiry.lean — 17 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean`
+
+Imports: `RemainingDependency`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ConsequenceInquiry.view_preserves_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L21) | 21 |
+| [ConsequenceInquiry.view_preserves_stock_total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L24) | 24 |
+| [ConsequenceInquiry.advance_preserves_stocks_at_empty_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L28) | 28 |
+| [ConsequenceInquiry.advance_preserves_empty_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L42) | 42 |
+| [ConsequenceInquiry.viewBody_account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L47) | 47 |
+| [ConsequenceInquiry.viewBody_paid](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L51) | 51 |
+| [ConsequenceInquiry.view_advance_at_empty_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L59) | 59 |
+| [ConsequenceInquiry.step_preserves_empty_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L77) | 77 |
+| [ConsequenceInquiry.view_step_at_empty_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L81) | 81 |
+| [ConsequenceInquiry.run_preserves_empty_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L88) | 88 |
+| [ConsequenceInquiry.view_run_at_empty_source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L94) | 94 |
+| [ConsequenceInquiry.equal_view_runs](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L105) | 105 |
+| [ConsequenceInquiry.feedback_indistinguishable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L132) | 132 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ConsequenceInquiry.viewBody](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L15) (L15)
+- `def` [ConsequenceInquiry.view](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L18) (L18)
+- `def` [ConsequenceInquiry.feedbackRun](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L113) (L113)
+- `def` [ConsequenceInquiry.feedbackView](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean#L126) (L126)
+
+文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-62dd1356dc98"></a>
+
+<details>
+<summary>ContinuationScope.lean — 30 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-SCOPE-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ContinuationScope.mem_cons_cases](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L49) | 49 |
+| [ContinuationScope.any_false_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L55) | 55 |
+| [ContinuationScope.mem_filter_of](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L68) | 68 |
+| [ContinuationScope.of_mem_filter](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L84) | 84 |
+| [ContinuationScope.unreached_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L118) | 118 |
+| [ContinuationScope.unreached_never_matters](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L130) | 130 |
+| [ContinuationScope.nonforeclosing_restrict_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L149) | 149 |
+| [ContinuationScope.omitted_scope_admits_needless_foreclosure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L163) | 163 |
+| [ContinuationScope.omitted_scope_can_condemn](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L181) | 181 |
+| [ContinuationScope.countP_go_acc](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L204) | 204 |
+| [ContinuationScope.countP_cons_true](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L217) | 217 |
+| [ContinuationScope.countP_cons_false](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L223) | 223 |
+| [ContinuationScope.countP_le_of_incl](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L229) | 229 |
+| [ContinuationScope.countP_lt_of_improves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L245) | 245 |
+| [ContinuationScope.improves_count](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L271) | 271 |
+| [ContinuationScope.exists_max](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L275) | 275 |
+| [ContinuationScope.nonforeclosing_exists](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L298) | 298 |
+| [ContinuationScope.both_courses_nonforeclosing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L310) | 310 |
+| [ContinuationScope.symmetric_competition_has_no_structural_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L337) | 337 |
+| [ContinuationScope.fulfillment_turns_retained_course_foreclosing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L357) | 357 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [ContinuationScope.Situation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L42) (L42)
+- `def` [ContinuationScope.Improves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L102) (L102)
+- `def` [ContinuationScope.Nonforeclosing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L107) (L107)
+- `def` [ContinuationScope.Situation.reached](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L111) (L111)
+- `def` [ContinuationScope.Situation.restrict](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L115) (L115)
+- `def` [ContinuationScope.Situation.securedCount](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L201) (L201)
+- `def` [ContinuationScope.competition](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L308) (L308)
+- `def` [ContinuationScope.TreatsCentersAlike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L329) (L329)
+- `def` [ContinuationScope.beforeFulfillment](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L349) (L349)
+- `def` [ContinuationScope.afterFulfillment](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ContinuationScope.lean#L354) (L354)
+
+文本中有 30 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 30 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-ad36cb089189"></a>
+
+<details>
+<summary>CouplingOptima.lean — 28 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CouplingOptima.add_right_cancel'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L49) | 49 |
+| [CouplingOptima.add_left_cancel'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L53) | 53 |
+| [CouplingOptima.le_of_add_le_add_right'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L57) | 57 |
+| [CouplingOptima.le_of_add_le_add_left'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L61) | 61 |
+| [CouplingOptima.add_sub_cancel'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L65) | 65 |
+| [CouplingOptima.add_sub_add_right'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L69) | 69 |
+| [CouplingOptima.add_sub_of_le'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L73) | 73 |
+| [CouplingOptima.add_sub_le_of_le'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L77) | 77 |
+| [CouplingOptima.eq_zero_of_le_zero'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L82) | 82 |
+| [CouplingOptima.add_eq_zero'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L85) | 85 |
+| [CouplingOptima.min_le_left'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L89) | 89 |
+| [CouplingOptima.min_le_right'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L95) | 95 |
+| [CouplingOptima.le_min'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L101) | 101 |
+| [CouplingOptima.best_le_P](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L107) | 107 |
+| [CouplingOptima.best_feasible](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L110) | 110 |
+| [CouplingOptima.met_le_best](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L114) | 114 |
+| [CouplingOptima.access_split](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L123) | 123 |
+| [CouplingOptima.access_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L136) | 136 |
+| [CouplingOptima.access_optimal_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L151) | 151 |
+| [CouplingOptima.receipt_split](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L195) | 195 |
+| [CouplingOptima.receipt_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L207) | 207 |
+| [CouplingOptima.receipt_optimal_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L218) | 218 |
+| [CouplingOptima.receipt_optimal_forces_excess](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L247) | 247 |
+| [CouplingOptima.retention_only_serves_no_one](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L257) | 257 |
+| [CouplingOptima.weak_access_serves_no_one](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L272) | 272 |
+| [CouplingOptima.study_coefficients](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L303) | 303 |
+
+定义与类型 / Definitions and types:
+
+- `def` [CouplingOptima.Feasible](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L41) (L41)
+- `def` [CouplingOptima.best](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/CouplingOptima.lean#L44) (L44)
+
+文本中有 28 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 28 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-102e6587264a"></a>
+
+<details>
+<summary>InquiryRelevance.lean — 11 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean`
+
+Imports: `RemainingDependency`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InquiryRelevance.used_setting_sufficient](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L28) | 28 |
+| [InquiryRelevance.off_target_witness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L36) | 36 |
+| [InquiryRelevance.query_sufficient_iff_used_setting](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L44) | 44 |
+| [InquiryRelevance.every_table_listed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L60) | 60 |
+| [InquiryRelevance.posterior_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L70) | 70 |
+| [InquiryRelevance.posterior_size](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L76) | 76 |
+| [InquiryRelevance.either_query_splits_equally](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L82) | 82 |
+
+定义与类型 / Definitions and types:
+
+- `def` [InquiryRelevance.LocalAgreement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L22) (L22)
+- `def` [InquiryRelevance.QuerySufficient](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L24) (L24)
+- `def` [InquiryRelevance.tables](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L57) (L57)
+- `def` [InquiryRelevance.posterior](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean#L66) (L66)
+
+文本中有 11 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 11 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-162f3791d24f"></a>
+
+<details>
+<summary>InquiryWarrant.lean — 38 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-WARRANT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean`
+
+Imports: `InquiryRelevance`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InquiryWarrant.beq_true_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L50) | 50 |
+| [InquiryWarrant.get_const](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L54) | 54 |
+| [InquiryWarrant.not_beq_self](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L58) | 58 |
+| [InquiryWarrant.not_ne_self](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L62) | 62 |
+| [InquiryWarrant.off_target_table](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L68) | 68 |
+| [InquiryWarrant.sufficient_iff_used](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L77) | 77 |
+| [InquiryWarrant.agrees_iff_local](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L93) | 93 |
+| [InquiryWarrant.agrees_const](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L98) | 98 |
+| [InquiryWarrant.agrees_flipped](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L104) | 104 |
+| [InquiryWarrant.abstention_adequate_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L127) | 127 |
+| [InquiryWarrant.inquiry_adequate_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L150) | 150 |
+| [InquiryWarrant.bearing_adequate_iff_sufficient](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L173) | 173 |
+| [InquiryWarrant.inquiry_needed_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L195) | 195 |
+| [InquiryWarrant.needed_for_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L215) | 215 |
+| [InquiryWarrant.dominated_without_reliance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L231) | 231 |
+| [InquiryWarrant.mem_of_mem_filter'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L247) | 247 |
+| [InquiryWarrant.filter_append'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L260) | 260 |
+| [InquiryWarrant.append_nil'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L272) | 272 |
+| [InquiryWarrant.self_needed_implies_needed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L276) | 276 |
+| [InquiryWarrant.self_scoped_rule_ignores_others](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L288) | 288 |
+| [InquiryWarrant.needed_only_through_other](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L327) | 327 |
+| [InquiryWarrant.answering_can_remove_the_means](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L345) | 345 |
+| [InquiryWarrant.competing_continuations](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L367) | 367 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [InquiryWarrant.Continuation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L32) (L32)
+- `def` [InquiryWarrant.agrees](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L46) (L46)
+- `def` [InquiryWarrant.InquiryAdequate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L112) (L112)
+- `def` [InquiryWarrant.AbstentionAdequate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L118) (L118)
+- `def` [InquiryWarrant.AnswerBearing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L122) (L122)
+- `def` [InquiryWarrant.InquirySecures](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L185) (L185)
+- `def` [InquiryWarrant.AbstentionSecures](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L188) (L188)
+- `def` [InquiryWarrant.InquiryNeeded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L192) (L192)
+- `def` [InquiryWarrant.NeededFor](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L212) (L212)
+- `def` [InquiryWarrant.selfOnly](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L243) (L243)
+- `def` [InquiryWarrant.selfReuse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L305) (L305)
+- `def` [InquiryWarrant.othersReuse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L310) (L310)
+- `def` [InquiryWarrant.selfElsewhere](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L315) (L315)
+- `def` [InquiryWarrant.othersSettled](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L320) (L320)
+- `def` [InquiryWarrant.JointlySecures](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean#L356) (L356)
+
+文本中有 38 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 38 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c764abc871d9"></a>
+
+<details>
+<summary>KeptSupport.lean — 6 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean`
+
+Imports: `RecordedClaims`, `RenewalCharacterization`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [KeptSupport.alike_withholds_forever](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean#L61) | 61 |
+| [KeptSupport.waiting_without_renewal_loses_support](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean#L77) | 77 |
+| [KeptSupport.historyWith_waits](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean#L96) | 96 |
+| [KeptSupport.renewing_holder_stays_live](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean#L110) | 110 |
+
+定义与类型 / Definitions and types:
+
+- `def` [KeptSupport.history](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean#L55) (L55)
+- `def` [KeptSupport.historyWith](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/KeptSupport.lean#L90) (L90)
+
+文本中有 6 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 6 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-2a54e07465df"></a>
+
+<details>
+<summary>PluralRecords.lean — 49 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PluralRecords.transpose_left](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L49) | 49 |
+| [PluralRecords.transpose_right](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L52) | 52 |
+| [PluralRecords.transpose_other](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L58) | 58 |
+| [PluralRecords.transpose_transpose](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L62) | 62 |
+| [PluralRecords.transpose_inj](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L71) | 71 |
+| [PluralRecords.relabel_of_tie](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L86) | 86 |
+| [PluralRecords.tied_not_served](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L97) | 97 |
+| [PluralRecords.one_ne_zero'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L106) | 106 |
+| [PluralRecords.fin_other](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L108) | 108 |
+| [PluralRecords.all_tied_forces_withholding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L116) | 116 |
+| [PluralRecords.find?_some_true](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L130) | 130 |
+| [PluralRecords.find?_none_false](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L146) | 146 |
+| [PluralRecords.mem_finRange_loop](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L162) | 162 |
+| [PluralRecords.mem_finRange'](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L175) | 175 |
+| [PluralRecords.pick_some](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L178) | 178 |
+| [PluralRecords.pick_none](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L182) | 182 |
+| [PluralRecords.pick_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L187) | 187 |
+| [PluralRecords.pick_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L195) | 195 |
+| [PluralRecords.alone_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L220) | 220 |
+| [PluralRecords.servable_iff_untied](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L237) | 237 |
+| [PluralRecords.withholding_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L256) | 256 |
+| [PluralRecords.alike_nonforeclosing_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L261) | 261 |
+| [PluralRecords.unequal_claims_leave_priority_open](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L283) | 283 |
+| [PluralRecords.leastRecent_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L308) | 308 |
+| [PluralRecords.leastRecent_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L313) | 313 |
+| [PluralRecords.exists_min](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L327) | 327 |
+| [PluralRecords.leastRecent_serves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L340) | 340 |
+| [PluralRecords.run_succ_apply](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L363) | 363 |
+| [PluralRecords.run_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L377) | 377 |
+| [PluralRecords.run_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L386) | 386 |
+| [PluralRecords.run_mono_le](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L393) | 393 |
+| [PluralRecords.recent_entry_was_served](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L400) | 400 |
+| [PluralRecords.run_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L413) | 413 |
+| [PluralRecords.renewing_claims_served_in_turn](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L436) | 436 |
+| [PluralRecords.renewing_claims_need_initial_order](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L458) | 458 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [PluralRecords.Record](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L42) (L42)
+- `abbrev` [PluralRecords.Rule](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L43) (L43)
+- `def` [PluralRecords.transpose](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L46) (L46)
+- `def` [PluralRecords.relabel](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L76) (L76)
+- `def` [PluralRecords.TreatsAlike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L82) (L82)
+- `def` [PluralRecords.pick](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L127) (L127)
+- `def` [PluralRecords.Alone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L214) (L214)
+- `def` [PluralRecords.ServesOpenClaim](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L252) (L252)
+- `def` [PluralRecords.LeastRecent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L301) (L301)
+- `def` [PluralRecords.leastRecent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L306) (L306)
+- `def` [PluralRecords.Injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L325) (L325)
+- `def` [PluralRecords.step](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L347) (L347)
+- `def` [PluralRecords.run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L353) (L353)
+- `def` [PluralRecords.served](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean#L357) (L357)
+
+文本中有 49 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 49 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-33531476b412"></a>
+
+<details>
+<summary>RecordedClaims.lean — 14 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECORDED-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecordedClaims.record_rule_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L74) | 74 |
+| [RecordedClaims.record_rule_nonforeclosing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L78) | 78 |
+| [RecordedClaims.symmetric_open_forces_withholding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L89) | 89 |
+| [RecordedClaims.only_symmetric_open_needs_more](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L103) | 103 |
+| [RecordedClaims.record_rule_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L114) | 114 |
+| [RecordedClaims.both_claims_met_after_first_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L157) | 157 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RecordedClaims.Record](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L45) (L45)
+- `def` [RecordedClaims.Record.get](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L50) (L50)
+- `def` [RecordedClaims.Record.swap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L53) (L53)
+- `abbrev` [RecordedClaims.Rule](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L56) (L56)
+- `def` [RecordedClaims.TreatsAlike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L58) (L58)
+- `def` [RecordedClaims.Nonforeclosing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L63) (L63)
+- `def` [RecordedClaims.recordRule](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L67) (L67)
+- `def` [RecordedClaims.serve](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RecordedClaims.lean#L150) (L150)
+
+文本中有 13 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 13 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c1c11c83ec55"></a>
+
+<details>
+<summary>RemainingDependency.lean — 80 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean`
+
+Imports: `GenerativeCore`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RemainingDependency.charge_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L53) | 53 |
+| [RemainingDependency.charge_never_increases_fuel](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L62) | 62 |
+| [RemainingDependency.charge_denial_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L72) | 72 |
+| [RemainingDependency.chosen_setting_supported](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L89) | 89 |
+| [RemainingDependency.productive_pair_has_selected_setting](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L94) | 94 |
+| [RemainingDependency.absent_evidence_is_not_negative](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L100) | 100 |
+| [RemainingDependency.no_constant_setting_serves_opposed_relations](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L104) | 104 |
+| [RemainingDependency.calibrated_selected_setting_transfers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L113) | 113 |
+| [RemainingDependency.faithful_bound_datum_decodes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L142) | 142 |
+| [RemainingDependency.wrong_context_stays_unknown](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L145) | 145 |
+| [RemainingDependency.missing_stays_unknown](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L148) | 148 |
+| [RemainingDependency.discharge_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L164) | 164 |
+| [RemainingDependency.supported_discharge_delivers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L171) | 171 |
+| [RemainingDependency.unsupported_discharge_wastes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L177) | 177 |
+| [RemainingDependency.transfer_actor_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L190) | 190 |
+| [RemainingDependency.transfer_stocks_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L200) | 200 |
+| [RemainingDependency.empty_source_cannot_debit_actor](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L210) | 210 |
+| [RemainingDependency.affordable_calibrated_selection_delivers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L214) | 214 |
+| [RemainingDependency.ancestral_coordinates_unchanged](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L330) | 330 |
+| [RemainingDependency.run_ancestral_coordinates_unchanged](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L333) | 333 |
+| [RemainingDependency.completed_component_stays_complete](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L339) | 339 |
+| [RemainingDependency.run_is_core_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L344) | 344 |
+| [RemainingDependency.consumer_read_ignores_latent_law](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L351) | 351 |
+| [RemainingDependency.weak_challenge_does_not_supply_load](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L354) | 354 |
+| [RemainingDependency.slot_write_does_not_supply_load](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L359) | 359 |
+| [RemainingDependency.paid_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L366) | 366 |
+| [RemainingDependency.paid_stocks_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L377) | 377 |
+| [RemainingDependency.advance_actor_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L385) | 385 |
+| [RemainingDependency.advance_stock_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L401) | 401 |
+| [RemainingDependency.run_actor_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L423) | 423 |
+| [RemainingDependency.run_stock_account_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L431) | 431 |
+| [RemainingDependency.whole_history_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L444) | 444 |
+| [RemainingDependency.finite_original_support_bounds_fuel](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L449) | 449 |
+| [RemainingDependency.truthful_paid_assay_acquires_pair](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L477) | 477 |
+| [RemainingDependency.truthful_paid_assay_commits_supported_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L482) | 482 |
+| [RemainingDependency.actual_dependent_service](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L487) | 487 |
+| [RemainingDependency.opposed_dependency_changes_the_enacted_relation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L494) | 494 |
+| [RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L501) | 501 |
+| [RemainingDependency.matched_assay_cost_through_commit](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L510) | 510 |
+| [RemainingDependency.missing_contact_is_unresolved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L519) | 519 |
+| [RemainingDependency.false_positive_can_misdirect_remaining_packet](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L526) | 526 |
+| [RemainingDependency.broken_calibration_defeats_correct_weak_record](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L533) | 533 |
+| [RemainingDependency.unavailable_relation_is_not_old_unfulfillment](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L539) | 539 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RemainingDependency.ticks](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L15) (L15)
+- `structure` [RemainingDependency.Pair](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L17) (L17)
+- `def` [RemainingDependency.Pair.get](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L22) (L22)
+- `def` [RemainingDependency.Pair.set](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L24) (L24)
+- `structure` [RemainingDependency.Account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L27) (L27)
+- `def` [RemainingDependency.tariff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L36) (L36)
+- `inductive` [RemainingDependency.Error](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L40) (L40)
+- `def` [RemainingDependency.charge](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L45) (L45)
+- `def` [RemainingDependency.choose](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L82) (L82)
+- `def` [RemainingDependency.faithful](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L87) (L87)
+- `def` [RemainingDependency.Calibrated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L111) (L111)
+- `structure` [RemainingDependency.Ancestor](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L119) (L119)
+- `structure` [RemainingDependency.Datum](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L130) (L130)
+- `def` [RemainingDependency.decode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L137) (L137)
+- `structure` [RemainingDependency.Stocks](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L150) (L150)
+- `def` [RemainingDependency.discharge](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L157) (L157)
+- `def` [RemainingDependency.Stocks.total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L162) (L162)
+- `def` [RemainingDependency.fullTransfer](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L183) (L183)
+- `inductive` [RemainingDependency.Mode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L223) (L223)
+- `def` [RemainingDependency.resultMode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L228) (L228)
+- `inductive` [RemainingDependency.Fault](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L233) (L233)
+- `structure` [RemainingDependency.Config](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L237) (L237)
+- `structure` [RemainingDependency.Body](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L244) (L244)
+- `structure` [RemainingDependency.State](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L262) (L262)
+- `def` [RemainingDependency.paid](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L269) (L269)
+- `def` [RemainingDependency.channel](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L273) (L273)
+- `inductive` [RemainingDependency.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L282) (L282)
+- `def` [RemainingDependency.advance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L292) (L292)
+- `def` [RemainingDependency.step](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L322) (L322)
+- `def` [RemainingDependency.process](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L324) (L324)
+- `def` [RemainingDependency.run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L326) (L326)
+- `def` [RemainingDependency.actorTotal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L364) (L364)
+- `def` [RemainingDependency.wholeTotal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L441) (L441)
+- `def` [RemainingDependency.entrance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L456) (L456)
+- `def` [RemainingDependency.assayEvents](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L460) (L460)
+- `def` [RemainingDependency.serviceEvents](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L466) (L466)
+- `def` [RemainingDependency.continuation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean#L473) (L473)
+
+文本中有 43 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 43 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c67844003d2b"></a>
+
+<details>
+<summary>TieBreaking.lean — 10 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean`
+
+Imports: `PluralRecords`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [TieBreaking.tied_equal_weight](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L48) | 48 |
+| [TieBreaking.full_tie_equal_weights](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L53) | 53 |
+| [TieBreaking.full_tie_open_uniform](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L62) | 62 |
+| [TieBreaking.uniform_alike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L71) | 71 |
+| [TieBreaking.point_mass_not_alike_at_tie](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L78) | 78 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [TieBreaking.Chances](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L37) (L37)
+- `abbrev` [TieBreaking.Lottery](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L41) (L41)
+- `def` [TieBreaking.LotteryAlike](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L43) (L43)
+- `def` [TieBreaking.uniform](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L69) (L69)
+- `def` [TieBreaking.pointMass](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean#L75) (L75)
+
+文本中有 9 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 9 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c1591ec1fb8e"></a>
+
+<details>
+<summary>CompletionBoundaries.lean — 35 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean`
+
+Imports: `CompletionExamples`, `FiniteBranching`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CompletionBoundaries.infinity_not_compact](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L15) | 15 |
+| [CompletionBoundaries.infinity_not_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L36) | 36 |
+| [CompletionBoundaries.finiteSegments_ne_principal_infinity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L42) | 42 |
+| [CompletionBoundaries.finitePrincipalFamily_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L52) | 52 |
+| [CompletionBoundaries.infinity_is_old_sup](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L61) | 61 |
+| [CompletionBoundaries.finitePrincipalFamily_directed_again](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L70) | 70 |
+| [CompletionBoundaries.completed_old_sequence_sup](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L80) | 80 |
+| [CompletionBoundaries.old_infinite_supremum_not_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L92) | 92 |
+| [CompletionBoundaries.flatten_finiteSegments](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L103) | 103 |
+| [CompletionBoundaries.flatten_principal_infinity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L111) | 111 |
+| [CompletionBoundaries.flatten_not_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L116) | 116 |
+| [CompletionBoundaries.identity_approximation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L123) | 123 |
+| [CompletionBoundaries.identity_infinity_embedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L135) | 135 |
+| [CompletionBoundaries.identity_infinity_not_basis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L139) | 139 |
+| [CompletionBoundaries.onlyFalse_embedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L152) | 152 |
+| [CompletionBoundaries.false_compact](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L156) | 156 |
+| [CompletionBoundaries.onlyFalse_compact](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L161) | 161 |
+| [CompletionBoundaries.false_approximants_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L163) | 163 |
+| [CompletionBoundaries.onlyFalse_monotone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L167) | 167 |
+| [CompletionBoundaries.false_generation_at_true](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L171) | 171 |
+| [CompletionBoundaries.true_not_generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L180) | 180 |
+| [CompletionBoundaries.onlyFalse_not_basis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L188) | 188 |
+| [CompletionBoundaries.guarded_concrete_lifting](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L201) | 201 |
+| [CompletionBoundaries.bounded_nat_greatest](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L231) | 231 |
+| [CompletionBoundaries.natInfinity_classification](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L249) | 249 |
+| [CompletionBoundaries.unit_ideal_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L273) | 273 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [CompletionBoundaries.NatInfinity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L10) (L10)
+- `abbrev` [CompletionBoundaries.infinityOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L11) (L11)
+- `abbrev` [CompletionBoundaries.infinityDcpo](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L12) (L12)
+- `def` [CompletionBoundaries.finiteSegments](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L23) (L23)
+- `def` [CompletionBoundaries.finitePrincipalFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L49) (L49)
+- `def` [CompletionBoundaries.flatten](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L100) (L100)
+- `def` [CompletionBoundaries.unitOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L144) (L144)
+- `def` [CompletionBoundaries.onlyFalse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L150) (L150)
+- `def` [CompletionBoundaries.GuardedStep](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionBoundaries.lean#L197) (L197)
+
+文本中有 26 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 26 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d333c1de816c"></a>
+
+<details>
+<summary>CompletionExamples.lean — 34 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean`
+
+Imports: `CompletionRole`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CompletionExamples.FinitePart.ext](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L15) | 15 |
+| [CompletionExamples.union_partsOf](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L57) | 57 |
+| [CompletionExamples.finite_cover](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L65) | 65 |
+| [CompletionExamples.partsOf_union](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L82) | 82 |
+| [CompletionExamples.union_order_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L94) | 94 |
+| [CompletionExamples.parts_order_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L104) | 104 |
+| [CompletionExamples.every_finite_budget_run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L116) | 116 |
+| [CompletionExamples.no_budget_runs_forever](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L119) | 119 |
+| [CompletionExamples.tick_history_identity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L127) | 127 |
+| [CompletionExamples.no_infinite_concrete_tick_run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L135) | 135 |
+| [CompletionExamples.finite_concrete_tick_run](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L143) | 143 |
+| [CompletionExamples.ideal_finite_upper](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L148) | 148 |
+| [CompletionExamples.finite_lub_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L165) | 165 |
+| [CompletionExamples.boundedPart_increasing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L182) | 182 |
+| [CompletionExamples.boundedParts_cover](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L187) | 187 |
+| [CompletionExamples.unbounded_allNaturals](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L211) | 211 |
+| [CompletionExamples.principal_not_unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L214) | 214 |
+| [CompletionExamples.original_nat_no_greatest](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L220) | 220 |
+| [CompletionExamples.completed_nat_greatest](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L223) | 223 |
+| [CompletionExamples.unbounded_reading_not_continuous](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L227) | 227 |
+| [CompletionExamples.right_append_not_prefix_monotone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L244) | 244 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [CompletionExamples.FinitePart](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L11) (L11)
+- `def` [CompletionExamples.finiteOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L25) (L25)
+- `def` [CompletionExamples.emptyPart](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L31) (L31)
+- `def` [CompletionExamples.singletonPart](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L35) (L35)
+- `def` [CompletionExamples.unionPart](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L39) (L39)
+- `def` [CompletionExamples.partsOf](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L46) (L46)
+- `def` [CompletionExamples.unionContents](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L54) (L54)
+- `def` [CompletionExamples.BudgetRun](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L114) (L114)
+- `def` [CompletionExamples.Tick](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L125) (L125)
+- `def` [CompletionExamples.boundedPart](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L177) (L177)
+- `def` [CompletionExamples.natOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L195) (L195)
+- `def` [CompletionExamples.allNaturals](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L201) (L201)
+- `def` [CompletionExamples.Unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean#L208) (L208)
+
+文本中有 21 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 21 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-cd95616611d7"></a>
+
+<details>
+<summary>CompletionRole.lean — 45 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean`
+
+Imports: `IdealWarrant`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CompletionRole.image_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L31) | 31 |
+| [CompletionRole.sup_congr](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L43) | 43 |
+| [CompletionRole.sup_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L50) | 50 |
+| [CompletionRole.toDirectedFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L68) | 68 |
+| [CompletionRole.fromDirectedFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L72) | 72 |
+| [CompletionRole.principal_embedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L81) | 81 |
+| [CompletionRole.principal_compact](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L87) | 87 |
+| [CompletionRole.principal_generation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L93) | 93 |
+| [CompletionRole.compact_iff_principal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L98) | 98 |
+| [CompletionRole.ideal_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L109) | 109 |
+| [CompletionRole.extend_upper](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L117) | 117 |
+| [CompletionRole.extend_least](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L122) | 122 |
+| [CompletionRole.extend_monotone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L130) | 130 |
+| [CompletionRole.extend_principal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L136) | 136 |
+| [CompletionRole.extend_continuous](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L143) | 143 |
+| [CompletionRole.extend_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L158) | 158 |
+| [CompletionRole.unique_continuous_extension](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L178) | 178 |
+| [CompletionRole.basis_monotone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L198) | 198 |
+| [CompletionRole.profile_monotone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L209) | 209 |
+| [CompletionRole.profile_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L214) | 214 |
+| [CompletionRole.extend_profile](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L226) | 226 |
+| [CompletionRole.orderIso_continuous](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L238) | 238 |
+| [CompletionRole.basisIso_preserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L269) | 269 |
+| [CompletionRole.basisIso_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L274) | 274 |
+| [CompletionRole.basisIso_backward_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L281) | 281 |
+| [CompletionRole.ideal_basis_role](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L290) | 290 |
+| [CompletionRole.unique_basis_representation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L311) | 311 |
+| [CompletionRole.positive_reading_monotone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L337) | 337 |
+| [CompletionRole.positive_reading_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L342) | 342 |
+| [CompletionRole.positive_readings_separate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L350) | 350 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [CompletionRole.Directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L13) (L13)
+- `structure` [CompletionRole.Dcpo](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L17) (L17)
+- `def` [CompletionRole.Monotone](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L22) (L22)
+- `def` [CompletionRole.Image](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L25) (L25)
+- `def` [CompletionRole.Compact](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L28) (L28)
+- `structure` [CompletionRole.Continuous](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L56) (L56)
+- `def` [CompletionRole.idealPoset](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L62) (L62)
+- `def` [CompletionRole.idealDcpo](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L76) (L76)
+- `def` [CompletionRole.extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L113) (L113)
+- `structure` [CompletionRole.BasisRole](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L190) (L190)
+- `def` [CompletionRole.profile](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L202) (L202)
+- `structure` [CompletionRole.OrderIso](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L230) (L230)
+- `def` [CompletionRole.basisIso](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L259) (L259)
+- `def` [CompletionRole.truthPoset](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L324) (L324)
+- `def` [CompletionRole.truthDcpo](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean#L330) (L330)
+
+文本中有 30 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 30 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-5f36470a468d"></a>
+
+<details>
+<summary>FiniteBranching.lean — 9 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CompletionLifting.reach_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L19) | 19 |
+| [CompletionLifting.finite_unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L31) | 31 |
+| [CompletionLifting.unbounded_child](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L60) | 60 |
+| [CompletionLifting.infinite_from_unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L72) | 72 |
+| [CompletionLifting.finite_initial_lifting](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L89) | 89 |
+| [CompletionLifting.labelled_lifting](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L106) | 106 |
+
+定义与类型 / Definitions and types:
+
+- `def` [CompletionLifting.Reach](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L15) (L15)
+- `def` [CompletionLifting.Unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L57) (L57)
+- `def` [CompletionLifting.RequestedStep](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean#L101) (L101)
+
+文本中有 6 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 6 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-81928aacbe61"></a>
+
+<details>
+<summary>HistoryIdeals.lean — 63 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean`
+
+Imports: `IdealWarrant`, `PrefixSafety`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CompletionWarrant.HistoryIdeals.word_ext](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L20) | 20 |
+| [CompletionWarrant.HistoryIdeals.tracePrefix_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L53) | 53 |
+| [CompletionWarrant.HistoryIdeals.tracePrefix_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L56) | 56 |
+| [CompletionWarrant.HistoryIdeals.prefixTrace_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L59) | 59 |
+| [CompletionWarrant.HistoryIdeals.prefixTrace_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L65) | 65 |
+| [CompletionWarrant.HistoryIdeals.compatible_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L79) | 79 |
+| [CompletionWarrant.HistoryIdeals.ideal_comparable_by_length](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L86) | 86 |
+| [CompletionWarrant.HistoryIdeals.bounded_has_max](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L92) | 92 |
+| [CompletionWarrant.HistoryIdeals.bounded_is_principal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L116) | 116 |
+| [CompletionWarrant.HistoryIdeals.unboundedWord_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L130) | 130 |
+| [CompletionWarrant.HistoryIdeals.unboundedWord_long](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L133) | 133 |
+| [CompletionWarrant.HistoryIdeals.mem_unionTrace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L139) | 139 |
+| [CompletionWarrant.HistoryIdeals.unionTrace_prefix_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L146) | 146 |
+| [CompletionWarrant.HistoryIdeals.unbounded_is_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L156) | 156 |
+| [CompletionWarrant.HistoryIdeals.ideal_classification](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L168) | 168 |
+| [CompletionWarrant.HistoryIdeals.principal_order_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L185) | 185 |
+| [CompletionWarrant.HistoryIdeals.finite_infinite_order_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L189) | 189 |
+| [CompletionWarrant.HistoryIdeals.infinite_not_below_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L193) | 193 |
+| [CompletionWarrant.HistoryIdeals.infinite_order_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L200) | 200 |
+| [CompletionWarrant.HistoryIdeals.history_order_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L226) | 226 |
+| [CompletionWarrant.HistoryIdeals.historyIdeal_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L238) | 238 |
+| [CompletionWarrant.HistoryIdeals.historyIdeal_surjective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L258) | 258 |
+| [CompletionWarrant.HistoryIdeals.history_admitted_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L275) | 275 |
+| [CompletionWarrant.HistoryIdeals.admitted_history_classification](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L288) | 288 |
+| [CompletionWarrant.HistoryIdeals.lower_history_classification](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L299) | 299 |
+| [CompletionWarrant.HistoryIdeals.admitted_history_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L304) | 304 |
+| [CompletionWarrant.HistoryIdeals.all_finite_content](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L311) | 311 |
+| [CompletionWarrant.HistoryIdeals.all_finite_hull_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L315) | 315 |
+| [CompletionWarrant.HistoryIdeals.infinite_not_finiteOnly](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L321) | 321 |
+| [CompletionWarrant.HistoryIdeals.finiteOnly_not_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L328) | 328 |
+| [CompletionWarrant.HistoryIdeals.finiteOnly_hull_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L334) | 334 |
+| [CompletionWarrant.HistoryIdeals.finiteOnly_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L337) | 337 |
+| [CompletionWarrant.HistoryIdeals.finiteOnly_not_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L343) | 343 |
+| [CompletionWarrant.HistoryIdeals.propertyClass_trace_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L351) | 351 |
+| [CompletionWarrant.HistoryIdeals.propertyClass_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L365) | 365 |
+| [CompletionWarrant.HistoryIdeals.propertyClass_hull_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L380) | 380 |
+| [CompletionWarrant.HistoryIdeals.propertyClass_not_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L384) | 384 |
+| [CompletionWarrant.HistoryIdeals.propertyClass_not_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L392) | 392 |
+| [CompletionWarrant.HistoryIdeals.recurrence_ideal_not_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L398) | 398 |
+| [CompletionWarrant.HistoryIdeals.recurrence_ideal_hull_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L403) | 403 |
+| [CompletionWarrant.HistoryIdeals.represented_ideal_not_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L408) | 408 |
+| [CompletionWarrant.HistoryIdeals.represented_ideal_hull_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L413) | 413 |
+| [CompletionWarrant.HistoryIdeals.bounded_language_boundary_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L418) | 418 |
+| [CompletionWarrant.HistoryIdeals.prefixLanguage_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L429) | 429 |
+| [CompletionWarrant.HistoryIdeals.boundary_prefixLanguage_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L435) | 435 |
+| [CompletionWarrant.HistoryIdeals.closed_language_boundary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L439) | 439 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [CompletionWarrant.HistoryIdeals.Word](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L12) (L12)
+- `def` [CompletionWarrant.HistoryIdeals.Prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L16) (L16)
+- `def` [CompletionWarrant.HistoryIdeals.wordPoset](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L35) (L35)
+- `def` [CompletionWarrant.HistoryIdeals.tracePrefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L48) (L48)
+- `def` [CompletionWarrant.HistoryIdeals.PrefixTrace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L50) (L50)
+- `def` [CompletionWarrant.HistoryIdeals.traceIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L69) (L69)
+- `def` [CompletionWarrant.HistoryIdeals.Unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L124) (L124)
+- `def` [CompletionWarrant.HistoryIdeals.unboundedWord](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L127) (L127)
+- `def` [CompletionWarrant.HistoryIdeals.unionTrace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L136) (L136)
+- `inductive` [CompletionWarrant.HistoryIdeals.History](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L211) (L211)
+- `def` [CompletionWarrant.HistoryIdeals.historyIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L215) (L215)
+- `def` [CompletionWarrant.HistoryIdeals.HistoryPrefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L219) (L219)
+- `def` [CompletionWarrant.HistoryIdeals.Boundary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L268) (L268)
+- `def` [CompletionWarrant.HistoryIdeals.Admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L271) (L271)
+- `def` [CompletionWarrant.HistoryIdeals.FiniteOnly](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L319) (L319)
+- `def` [CompletionWarrant.HistoryIdeals.PropertyClass](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L348) (L348)
+- `def` [CompletionWarrant.HistoryIdeals.PrefixLanguage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean#L426) (L426)
+
+文本中有 46 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 46 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-e3abf1a9ab66"></a>
+
+<details>
+<summary>IdealWarrant.lean — 68 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-IDEALS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CompletionWarrant.Ideal.ext](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L34) | 34 |
+| [CompletionWarrant.Ideal.le_refl](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L43) | 43 |
+| [CompletionWarrant.Ideal.le_trans](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L45) | 45 |
+| [CompletionWarrant.Ideal.le_antisymm](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L48) | 48 |
+| [CompletionWarrant.principal_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L59) | 59 |
+| [CompletionWarrant.principal_le_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L61) | 61 |
+| [CompletionWarrant.principal_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L67) | 67 |
+| [CompletionWarrant.le_familyUnion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L92) | 92 |
+| [CompletionWarrant.familyUnion_le](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L96) | 96 |
+| [CompletionWarrant.principalFamily_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L106) | 106 |
+| [CompletionWarrant.union_principalFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L117) | 117 |
+| [CompletionWarrant.admits_principal_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L148) | 148 |
+| [CompletionWarrant.refutable_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L154) | 154 |
+| [CompletionWarrant.permitted_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L169) | 169 |
+| [CompletionWarrant.scottClosed_iff_admits_permitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L174) | 174 |
+| [CompletionWarrant.admits_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L189) | 189 |
+| [CompletionWarrant.admits_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L203) | 203 |
+| [CompletionWarrant.scottClosed_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L206) | 206 |
+| [CompletionWarrant.finiteRefutable_iff_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L215) | 215 |
+| [CompletionWarrant.scottClosed_iff_lower_basis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L220) | 220 |
+| [CompletionWarrant.finiteRefutable_iff_lower_basis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L236) | 236 |
+| [CompletionWarrant.basis_eq_permitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L241) | 241 |
+| [CompletionWarrant.lower_basis_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L249) | 249 |
+| [CompletionWarrant.permitted_eq_content](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L254) | 254 |
+| [CompletionWarrant.basis_eq_content](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L264) | 264 |
+| [CompletionWarrant.admits_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L271) | 271 |
+| [CompletionWarrant.empty_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L276) | 276 |
+| [CompletionWarrant.empty_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L283) | 283 |
+| [CompletionWarrant.empty_content](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L286) | 286 |
+| [CompletionWarrant.content_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L293) | 293 |
+| [CompletionWarrant.hull_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L300) | 300 |
+| [CompletionWarrant.hull_contains](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L303) | 303 |
+| [CompletionWarrant.hull_least](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L307) | 307 |
+| [CompletionWarrant.hull_preserves_content](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L316) | 316 |
+| [CompletionWarrant.hull_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L328) | 328 |
+| [CompletionWarrant.avoiding_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L343) | 343 |
+| [CompletionWarrant.respects_iff_admits_avoiding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L349) | 349 |
+| [CompletionWarrant.respects_scottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L358) | 358 |
+| [CompletionWarrant.respects_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L362) | 362 |
+| [CompletionWarrant.respects_maximal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L366) | 366 |
+| [CompletionWarrant.respects_principal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L370) | 370 |
+| [CompletionWarrant.respects_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L376) | 376 |
+| [CompletionWarrant.refutable_eq_admits](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L394) | 394 |
+| [CompletionWarrant.hull_joint_content](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L409) | 409 |
+| [CompletionWarrant.lift_admits](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L455) | 455 |
+| [CompletionWarrant.lift_restrict](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L458) | 458 |
+| [CompletionWarrant.restrict_lift](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L467) | 467 |
+| [CompletionWarrant.lift_order_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L478) | 478 |
+| [CompletionWarrant.empty_lower_no_ideal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L490) | 490 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [CompletionWarrant.Poset](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L14) (L14)
+- `structure` [CompletionWarrant.Ideal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L22) (L22)
+- `def` [CompletionWarrant.Ideal.LE](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L32) (L32)
+- `def` [CompletionWarrant.principal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L53) (L53)
+- `structure` [CompletionWarrant.DirectedFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L70) (L70)
+- `def` [CompletionWarrant.familyUnion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L74) (L74)
+- `def` [CompletionWarrant.principalFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L103) (L103)
+- `def` [CompletionWarrant.LowerBasis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L131) (L131)
+- `def` [CompletionWarrant.Admits](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L134) (L134)
+- `def` [CompletionWarrant.Permitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L136) (L136)
+- `def` [CompletionWarrant.Content](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L138) (L138)
+- `def` [CompletionWarrant.FiniteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L140) (L140)
+- `structure` [CompletionWarrant.ScottClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L143) (L143)
+- `def` [CompletionWarrant.ScottHull](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L298) (L298)
+- `def` [CompletionWarrant.AvoidingBasis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L337) (L337)
+- `def` [CompletionWarrant.Respects](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L340) (L340)
+- `def` [CompletionWarrant.lowerPoset](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L419) (L419)
+- `def` [CompletionWarrant.restrictIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L425) (L425)
+- `def` [CompletionWarrant.liftIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean#L437) (L437)
+
+文本中有 49 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 49 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-ecba5d8a9232"></a>
+
+<details>
+<summary>PrefixSafety.lean — 84 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CompletionWarrant.PrefixSafety.samePrefix_refl](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L18) | 18 |
+| [CompletionWarrant.PrefixSafety.samePrefix_symm](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L21) | 21 |
+| [CompletionWarrant.PrefixSafety.samePrefix_trans](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L25) | 25 |
+| [CompletionWarrant.PrefixSafety.samePrefix_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L29) | 29 |
+| [CompletionWarrant.PrefixSafety.prefixOpen_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L41) | 41 |
+| [CompletionWarrant.PrefixSafety.prefixOpen_univ](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L45) | 45 |
+| [CompletionWarrant.PrefixSafety.prefixOpen_union](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L49) | 49 |
+| [CompletionWarrant.PrefixSafety.prefixOpen_inter](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L56) | 56 |
+| [CompletionWarrant.PrefixSafety.cylinder_open](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L66) | 66 |
+| [CompletionWarrant.PrefixSafety.finiteRefutable_iff_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L79) | 79 |
+| [CompletionWarrant.PrefixSafety.subset_prefixClosure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L82) | 82 |
+| [CompletionWarrant.PrefixSafety.prefixClosure_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L86) | 86 |
+| [CompletionWarrant.PrefixSafety.finiteRefutable_iff_prefixClosure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L92) | 92 |
+| [CompletionWarrant.PrefixSafety.prefixClosure_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L117) | 117 |
+| [CompletionWarrant.PrefixSafety.prefixClosure_least](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L132) | 132 |
+| [CompletionWarrant.PrefixSafety.prefixClosure_idempotent](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L139) | 139 |
+| [CompletionWarrant.PrefixSafety.topologicalClosure_iff_prefixClosure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L149) | 149 |
+| [CompletionWarrant.PrefixSafety.boundary_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L161) | 161 |
+| [CompletionWarrant.PrefixSafety.allTrue_recurs](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L186) | 186 |
+| [CompletionWarrant.PrefixSafety.allFalse_not_recurs](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L189) | 189 |
+| [CompletionWarrant.PrefixSafety.allFalse_not_eventuallyTrue](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L194) | 194 |
+| [CompletionWarrant.PrefixSafety.trueTail_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L202) | 202 |
+| [CompletionWarrant.PrefixSafety.trueTail_recurs](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L206) | 206 |
+| [CompletionWarrant.PrefixSafety.trueTail_eventuallyTrue](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L212) | 212 |
+| [CompletionWarrant.PrefixSafety.recurrence_closure_all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L216) | 216 |
+| [CompletionWarrant.PrefixSafety.terminationEvent_closure_all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L219) | 219 |
+| [CompletionWarrant.PrefixSafety.recurrence_not_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L222) | 222 |
+| [CompletionWarrant.PrefixSafety.recurrence_not_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L228) | 228 |
+| [CompletionWarrant.PrefixSafety.terminationEvent_not_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L230) | 230 |
+| [CompletionWarrant.PrefixSafety.unary_finite_not_infinity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L266) | 266 |
+| [CompletionWarrant.PrefixSafety.unary_finite_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L270) | 270 |
+| [CompletionWarrant.PrefixSafety.unary_finite_supremum_infinity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L279) | 279 |
+| [CompletionWarrant.PrefixSafety.unary_finite_not_directedClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L292) | 292 |
+| [CompletionWarrant.PrefixSafety.unary_finite_not_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L298) | 298 |
+| [CompletionWarrant.PrefixSafety.bool_ne_neg](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L314) | 314 |
+| [CompletionWarrant.PrefixSafety.diagonal_not_represented](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L317) | 317 |
+| [CompletionWarrant.PrefixSafety.represented_closure_all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L328) | 328 |
+| [CompletionWarrant.PrefixSafety.represented_not_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L332) | 332 |
+| [CompletionWarrant.PrefixSafety.programOutput_iff_represented](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L353) | 353 |
+| [CompletionWarrant.PrefixSafety.some_trace_not_programOutput](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L365) | 365 |
+| [CompletionWarrant.PrefixSafety.bitCode_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L378) | 378 |
+| [CompletionWarrant.PrefixSafety.bitDecode_bitCode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L403) | 403 |
+| [CompletionWarrant.PrefixSafety.finitePrograms_miss_some_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L416) | 416 |
+| [CompletionWarrant.PrefixSafety.programRealization_implies_dense](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L424) | 424 |
+| [CompletionWarrant.PrefixSafety.finitePrograms_not_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L432) | 432 |
+| [CompletionWarrant.PrefixSafety.emitLiteral_matches_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L456) | 456 |
+| [CompletionWarrant.PrefixSafety.literalOutput_realizes_prefixes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L469) | 469 |
+| [CompletionWarrant.PrefixSafety.literalOutput_not_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L474) | 474 |
+| [CompletionWarrant.PrefixSafety.contains_literals_realizes_prefixes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L480) | 480 |
+| [CompletionWarrant.PrefixSafety.deadEnd_boundary_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L489) | 489 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [CompletionWarrant.PrefixSafety.Trace](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L12) (L12)
+- `abbrev` [CompletionWarrant.PrefixSafety.Property](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L13) (L13)
+- `def` [CompletionWarrant.PrefixSafety.SamePrefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L15) (L15)
+- `def` [CompletionWarrant.PrefixSafety.PrefixOpen](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L34) (L34)
+- `def` [CompletionWarrant.PrefixSafety.PrefixClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L38) (L38)
+- `def` [CompletionWarrant.PrefixSafety.FiniteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L72) (L72)
+- `def` [CompletionWarrant.PrefixSafety.PrefixClosure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L76) (L76)
+- `def` [CompletionWarrant.PrefixSafety.TopologicalClosure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L146) (L146)
+- `def` [CompletionWarrant.PrefixSafety.AllPrefixesIn](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L158) (L158)
+- `def` [CompletionWarrant.PrefixSafety.Recurs](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L177) (L177)
+- `def` [CompletionWarrant.PrefixSafety.EventuallyTrue](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L179) (L179)
+- `def` [CompletionWarrant.PrefixSafety.allFalse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L181) (L181)
+- `def` [CompletionWarrant.PrefixSafety.allTrue](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L183) (L183)
+- `def` [CompletionWarrant.PrefixSafety.trueTail](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L199) (L199)
+- `abbrev` [CompletionWarrant.PrefixSafety.UnaryHistory](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L238) (L238)
+- `def` [CompletionWarrant.PrefixSafety.UnaryLE](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L240) (L240)
+- `def` [CompletionWarrant.PrefixSafety.UnaryFinite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L247) (L247)
+- `def` [CompletionWarrant.PrefixSafety.UnaryPrefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L249) (L249)
+- `def` [CompletionWarrant.PrefixSafety.UnaryFiniteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L251) (L251)
+- `def` [CompletionWarrant.PrefixSafety.UnaryDirected](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L254) (L254)
+- `def` [CompletionWarrant.PrefixSafety.UnarySupremum](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L258) (L258)
+- `def` [CompletionWarrant.PrefixSafety.UnaryDirectedClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L262) (L262)
+- `def` [CompletionWarrant.PrefixSafety.Represented](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L306) (L306)
+- `def` [CompletionWarrant.PrefixSafety.diagonal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L309) (L309)
+- `def` [CompletionWarrant.PrefixSafety.RealizesEveryFinitePrefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L325) (L325)
+- `structure` [CompletionWarrant.PrefixSafety.ProgramCoding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L342) (L342)
+- `def` [CompletionWarrant.PrefixSafety.programEnumeration](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L347) (L347)
+- `def` [CompletionWarrant.PrefixSafety.bitCode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L373) (L373)
+- `def` [CompletionWarrant.PrefixSafety.bitDecode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L399) (L399)
+- `def` [CompletionWarrant.PrefixSafety.finiteBitProgramCoding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L409) (L409)
+- `def` [CompletionWarrant.PrefixSafety.ProgramRealizesPrefixes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L421) (L421)
+- `def` [CompletionWarrant.PrefixSafety.emitLiteral](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L447) (L447)
+- `def` [CompletionWarrant.PrefixSafety.prefixLiteral](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L452) (L452)
+- `def` [CompletionWarrant.PrefixSafety.literalOutput](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean#L467) (L467)
+
+文本中有 50 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 50 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d133a5ed4253"></a>
+
+<details>
+<summary>Admission.lean — 50 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean`
+
+Imports: `CompletionExamples`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PredicateAdmission.finiteProfiles_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L33) | 33 |
+| [PredicateAdmission.union_finiteProfiles](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L40) | 40 |
+| [PredicateAdmission.finiteProfiles_admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L51) | 51 |
+| [PredicateAdmission.full_of_finite_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L56) | 56 |
+| [PredicateAdmission.full_iff_finite_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L63) | 63 |
+| [PredicateAdmission.directed_iff_full_given_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L71) | 71 |
+| [PredicateAdmission.finite_congr](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L83) | 83 |
+| [PredicateAdmission.finite_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L90) | 90 |
+| [PredicateAdmission.finite_singleton](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L92) | 92 |
+| [PredicateAdmission.finite_subset](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L94) | 94 |
+| [PredicateAdmission.finite_union](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L102) | 102 |
+| [PredicateAdmission.finiteOrCofinite_includes_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L108) | 108 |
+| [PredicateAdmission.finiteOrCofinite_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L111) | 111 |
+| [PredicateAdmission.finiteOrCofinite_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L114) | 114 |
+| [PredicateAdmission.finiteOrCofinite_singleton](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L117) | 117 |
+| [PredicateAdmission.finiteOrCofinite_complement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L120) | 120 |
+| [PredicateAdmission.finiteOrCofinite_union](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L129) | 129 |
+| [PredicateAdmission.finite_pattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L138) | 138 |
+| [PredicateAdmission.finiteOrCofinite_pattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L145) | 145 |
+| [PredicateAdmission.finite_image](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L154) | 154 |
+| [PredicateAdmission.bijective_image_complement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L165) | 165 |
+| [PredicateAdmission.finiteOrCofinite_bijective_image](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L175) | 175 |
+| [PredicateAdmission.inverse_right](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L184) | 184 |
+| [PredicateAdmission.inverse_left](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L187) | 187 |
+| [PredicateAdmission.inverse_bijective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L190) | 190 |
+| [PredicateAdmission.image_inverse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L197) | 197 |
+| [PredicateAdmission.finiteOrCofinite_bijection_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L208) | 208 |
+| [PredicateAdmission.member_le_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L220) | 220 |
+| [PredicateAdmission.even_not_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L230) | 230 |
+| [PredicateAdmission.even_complement_not_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L236) | 236 |
+| [PredicateAdmission.even_not_admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L244) | 244 |
+| [PredicateAdmission.finiteOrCofinite_not_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L247) | 247 |
+| [PredicateAdmission.finiteOrCofinite_not_directed_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L250) | 250 |
+| [PredicateAdmission.parity_directed_failure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L255) | 255 |
+
+定义与类型 / Definitions and types:
+
+- `def` [PredicateAdmission.Included](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L14) (L14)
+- `def` [PredicateAdmission.PredicateUnion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L16) (L16)
+- `structure` [PredicateAdmission.NonemptyDirected](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L18) (L18)
+- `def` [PredicateAdmission.IncludesFinite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L22) (L22)
+- `def` [PredicateAdmission.DirectedUnionClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L24) (L24)
+- `def` [PredicateAdmission.Full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L28) (L28)
+- `def` [PredicateAdmission.FiniteProfiles](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L30) (L30)
+- `def` [PredicateAdmission.Finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L75) (L75)
+- `def` [PredicateAdmission.Complement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L77) (L77)
+- `def` [PredicateAdmission.BinaryUnion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L79) (L79)
+- `def` [PredicateAdmission.FiniteOrCofinite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L81) (L81)
+- `def` [PredicateAdmission.Image](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L150) (L150)
+- `def` [PredicateAdmission.Bijective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L152) (L152)
+- `def` [PredicateAdmission.inverse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L181) (L181)
+- `def` [PredicateAdmission.listBound](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L216) (L216)
+- `def` [PredicateAdmission.Even](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean#L228) (L228)
+
+</details>
+
+<a id="module-967f5a53d7df"></a>
+
+<details>
+<summary>FunctionGraphs.lean — 36 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ADMISSION-FUNCTIONS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean`
+
+Imports: `TypedTruth`, `Admission`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FunctionGraphReconstruction.functional_iff_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L23) | 23 |
+| [FunctionGraphReconstruction.total_iff_finite_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L34) | 34 |
+| [FunctionGraphReconstruction.functionIdeal_ext](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L49) | 49 |
+| [FunctionGraphReconstruction.decode_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L69) | 69 |
+| [FunctionGraphReconstruction.graph_decode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L72) | 72 |
+| [FunctionGraphReconstruction.decode_encode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L81) | 81 |
+| [FunctionGraphReconstruction.encode_decode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L86) | 86 |
+| [FunctionGraphReconstruction.empty_functional](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L102) | 102 |
+| [FunctionGraphReconstruction.empty_not_total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L106) | 106 |
+| [FunctionGraphReconstruction.functions_admitted_by_completion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L111) | 111 |
+| [FunctionGraphReconstruction.characteristic_fiber](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L122) | 122 |
+| [FunctionGraphReconstruction.full_boolean_functions_iff_predicates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L129) | 129 |
+| [FunctionGraphReconstruction.graphEnv_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L157) | 157 |
+| [FunctionGraphReconstruction.graph_term_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L167) | 167 |
+| [FunctionGraphReconstruction.graph_formula_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L196) | 196 |
+| [FunctionGraphReconstruction.graph_empty_env](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L222) | 222 |
+| [FunctionGraphReconstruction.graph_sentence_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L227) | 227 |
+| [FunctionGraphReconstruction.higher_eta_graph](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L231) | 231 |
+
+定义与类型 / Definitions and types:
+
+- `def` [FunctionGraphReconstruction.GraphIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L13) (L13)
+- `def` [FunctionGraphReconstruction.Functional](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L15) (L15)
+- `def` [FunctionGraphReconstruction.Total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L18) (L18)
+- `def` [FunctionGraphReconstruction.FiniteFunctional](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L20) (L20)
+- `structure` [FunctionGraphReconstruction.FunctionIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L44) (L44)
+- `def` [FunctionGraphReconstruction.graph](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L55) (L55)
+- `def` [FunctionGraphReconstruction.encodeFunction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L57) (L57)
+- `def` [FunctionGraphReconstruction.decodeFunction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L66) (L66)
+- `def` [FunctionGraphReconstruction.functionMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L94) (L94)
+- `def` [FunctionGraphReconstruction.emptyGraph](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L100) (L100)
+- `def` [FunctionGraphReconstruction.trueFiber](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L116) (L116)
+- `def` [FunctionGraphReconstruction.characteristic](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L118) (L118)
+- `def` [FunctionGraphReconstruction.GraphCompleted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L138) (L138)
+- `def` [FunctionGraphReconstruction.compose](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L143) (L143)
+- `def` [FunctionGraphReconstruction.graphTypeMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L149) (L149)
+- `def` [FunctionGraphReconstruction.graphEnv](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L154) (L154)
+- `def` [FunctionGraphReconstruction.graphEval](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L162) (L162)
+- `def` [FunctionGraphReconstruction.GraphHolds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean#L189) (L189)
+
+</details>
+
+<a id="module-e1734fcd36ac"></a>
+
+<details>
+<summary>IndexedAssembly.lean — 26 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean`
+
+Imports: `Admission`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [IndexedAssembly.chainFamily_directed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L25) | 25 |
+| [IndexedAssembly.union_chainFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L32) | 32 |
+| [IndexedAssembly.directed_implies_chain_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L41) | 41 |
+| [IndexedAssembly.parity_zero](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L53) | 53 |
+| [IndexedAssembly.parity_successor](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L55) | 55 |
+| [IndexedAssembly.parity_stage_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L58) | 58 |
+| [IndexedAssembly.parity_stages_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L80) | 80 |
+| [IndexedAssembly.parity_stages_increasing](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L83) | 83 |
+| [IndexedAssembly.parity_union](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L93) | 93 |
+| [IndexedAssembly.parity_admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L106) | 106 |
+| [IndexedAssembly.finiteOrCofinite_parity_stages](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L111) | 111 |
+| [IndexedAssembly.finiteOrCofinite_parity_union_excluded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L114) | 114 |
+| [IndexedAssembly.finiteOrCofinite_not_chain_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L118) | 118 |
+| [IndexedAssembly.prefix_stage_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L127) | 127 |
+| [IndexedAssembly.prefix_union](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L130) | 130 |
+| [IndexedAssembly.full_of_finite_chain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L134) | 134 |
+| [IndexedAssembly.full_iff_finite_chain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L140) | 140 |
+| [IndexedAssembly.chain_iff_full_given_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L148) | 148 |
+| [IndexedAssembly.chain_iff_directed_given_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L152) | 152 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [IndexedAssembly.FiniteChain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L13) (L13)
+- `def` [IndexedAssembly.ChainUnion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L17) (L17)
+- `def` [IndexedAssembly.FiniteChainClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L19) (L19)
+- `def` [IndexedAssembly.ChainFamily](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L22) (L22)
+- `def` [IndexedAssembly.parityStages](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L49) (L49)
+- `def` [IndexedAssembly.parityChain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L89) (L89)
+- `def` [IndexedAssembly.prefixChain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean#L123) (L123)
+
+</details>
+
+<a id="module-b1e9ae8b3572"></a>
+
+<details>
+<summary>RelationalAssembly.lean — 22 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean`
+
+Imports: `IndexedAssembly`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RelationalAssembly.output_abstract](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L32) | 32 |
+| [RelationalAssembly.output_realize](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L39) | 39 |
+| [RelationalAssembly.realize_output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L44) | 44 |
+| [RelationalAssembly.output_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L51) | 51 |
+| [RelationalAssembly.output_surjective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L56) | 56 |
+| [RelationalAssembly.abstract_eq_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L59) | 59 |
+| [RelationalAssembly.projection_iff_output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L67) | 67 |
+| [RelationalAssembly.projected_content_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L75) | 75 |
+| [RelationalAssembly.projection_reindex](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L81) | 81 |
+| [RelationalAssembly.parity_projection](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L92) | 92 |
+| [RelationalAssembly.parity_iff_output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L96) | 96 |
+| [RelationalAssembly.support_admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L112) | 112 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RelationalAssembly.Projection](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L13) (L13)
+- `abbrev` [RelationalAssembly.Witness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L15) (L15)
+- `def` [RelationalAssembly.witnessSetoid](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L17) (L17)
+- `abbrev` [RelationalAssembly.Assembly](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L21) (L21)
+- `abbrev` [RelationalAssembly.Support](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L23) (L23)
+- `def` [RelationalAssembly.abstractWitness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L25) (L25)
+- `def` [RelationalAssembly.output](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L28) (L28)
+- `def` [RelationalAssembly.realize](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L35) (L35)
+- `def` [RelationalAssembly.OutputAbstractionClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L102) (L102)
+- `def` [RelationalAssembly.CorrespondenceClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/RelationalAssembly.lean#L107) (L107)
+
+</details>
+
+<a id="module-910666c286d1"></a>
+
+<details>
+<summary>FiniteAdmission.lean — 27 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-LEAN.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean`
+
+Imports: `FunctionGraphs`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FiniteAdmission.selection_represents](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L20) | 20 |
+| [FiniteAdmission.finite_domain_family_complete](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L50) | 50 |
+| [FiniteAdmission.finite_total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L55) | 55 |
+| [FiniteAdmission.predicate_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L59) | 59 |
+| [FiniteAdmission.finite_carrier_iff_all_predicates_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L62) | 62 |
+| [FiniteAdmission.full_of_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L70) | 70 |
+| [FiniteAdmission.full_iff_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L75) | 75 |
+| [FiniteAdmission.list_admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L79) | 79 |
+| [FiniteAdmission.finite_admission_of_formation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L96) | 96 |
+| [FiniteAdmission.full_of_finite_formation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L105) | 105 |
+| [FiniteAdmission.directed_closure_of_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L110) | 110 |
+| [FiniteAdmission.graph_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L114) | 114 |
+| [FiniteAdmission.function_graph_admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L127) | 127 |
+| [FiniteAdmission.bool_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L131) | 131 |
+| [FiniteAdmission.nat_not_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L136) | 136 |
+| [FiniteAdmission.predicates_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L140) | 140 |
+| [FiniteAdmission.assignments_cover](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L155) | 155 |
+| [FiniteAdmission.functions_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L172) | 172 |
+| [FiniteAdmission.direct_type_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L186) | 186 |
+| [FiniteAdmission.finite_type_full_admission](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L192) | 192 |
+| [FiniteAdmission.finite_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L198) | 198 |
+| [FiniteAdmission.completed_type_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L204) | 204 |
+| [FiniteAdmission.completed_type_full_admission](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L208) | 208 |
+
+定义与类型 / Definitions and types:
+
+- `def` [FiniteAdmission.FiniteCarrier](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L14) (L14)
+- `def` [FiniteAdmission.selections](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L16) (L16)
+- `def` [FiniteAdmission.update](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L147) (L147)
+- `def` [FiniteAdmission.assignments](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean#L151) (L151)
+
+</details>
+
+<a id="module-aacdf65172d8"></a>
+
+<details>
+<summary>SignatureTruth.lean — 39 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-LEAN.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean`
+
+Imports: `FunctionGraphs`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SignatureTruth.transported_compatible](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L22) | 22 |
+| [SignatureTruth.backward_compatible](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L29) | 29 |
+| [SignatureTruth.term_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L53) | 53 |
+| [SignatureTruth.formula_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L102) | 102 |
+| [SignatureTruth.sentence_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L131) | 131 |
+| [SignatureTruth.formula_comprehension](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L138) | 138 |
+| [SignatureTruth.theory_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L159) | 159 |
+| [SignatureTruth.entailment_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L176) | 176 |
+| [SignatureTruth.satisfiability_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L198) | 198 |
+| [SignatureTruth.direct_all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L210) | 210 |
+| [SignatureTruth.nat_add_assoc_direct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L232) | 232 |
+| [SignatureTruth.nat_add_assoc_completed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L243) | 243 |
+| [SignatureTruth.mismatched_symbols_change_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L263) | 263 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [SignatureTruth.Interpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L12) (L12)
+- `def` [SignatureTruth.transportInterpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L14) (L14)
+- `def` [SignatureTruth.Compatible](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L18) (L18)
+- `def` [SignatureTruth.backInterpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L25) (L25)
+- `inductive` [SignatureTruth.Term](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L33) (L33)
+- `def` [SignatureTruth.directEval](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L39) (L39)
+- `def` [SignatureTruth.completedEval](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L46) (L46)
+- `inductive` [SignatureTruth.Formula](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L79) (L79)
+- `def` [SignatureTruth.DirectHolds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L86) (L86)
+- `def` [SignatureTruth.CompletedHolds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L94) (L94)
+- `abbrev` [SignatureTruth.Theory](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L151) (L151)
+- `def` [SignatureTruth.DirectModels](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L153) (L153)
+- `def` [SignatureTruth.CompletedModels](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L156) (L156)
+- `def` [SignatureTruth.DirectEntails](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L168) (L168)
+- `def` [SignatureTruth.CompletedEntails](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L172) (L172)
+- `def` [SignatureTruth.DirectSatisfiable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L192) (L192)
+- `def` [SignatureTruth.CompletedSatisfiable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L195) (L195)
+- `def` [SignatureTruth.Formula.all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L208) (L208)
+- `inductive` [SignatureTruth.NatSymbols](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L216) (L216)
+- `def` [SignatureTruth.natInterpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L220) (L220)
+- `def` [SignatureTruth.addTerm](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L224) (L224)
+- `def` [SignatureTruth.addAssocSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L227) (L227)
+- `inductive` [SignatureTruth.PairSymbols](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L249) (L249)
+- `def` [SignatureTruth.sameInterpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L253) (L253)
+- `def` [SignatureTruth.splitInterpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L257) (L257)
+- `def` [SignatureTruth.pairEquality](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean#L261) (L261)
+
+</details>
+
+<a id="module-363e3103ce55"></a>
+
+<details>
+<summary>DependentCompletion.lean — 35 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean`
+
+Imports: `FiniteAdmission`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [DependentCompletion.functional_iff_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L25) | 25 |
+| [DependentCompletion.total_iff_finite_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L36) | 36 |
+| [DependentCompletion.sectionIdeal_ext](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L51) | 51 |
+| [DependentCompletion.decode_mem](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L71) | 71 |
+| [DependentCompletion.graph_decode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L74) | 74 |
+| [DependentCompletion.decode_encode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L83) | 83 |
+| [DependentCompletion.encode_decode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L88) | 88 |
+| [DependentCompletion.graph_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L102) | 102 |
+| [DependentCompletion.finite_base_graph_admitted](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L121) | 121 |
+| [DependentCompletion.transported_evaluation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L142) | 142 |
+| [DependentCompletion.sigma_predicate_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L156) | 156 |
+| [DependentCompletion.section_predicate_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L161) | 161 |
+| [DependentCompletion.bimap_quantifiers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L166) | 166 |
+| [DependentCompletion.section_predicate_quantifiers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L182) | 182 |
+| [DependentCompletion.empty_fiber_not_total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L189) | 189 |
+| [DependentCompletion.no_section_ideal_of_empty_fiber](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L194) | 194 |
+| [DependentCompletion.zero_ideal_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L203) | 203 |
+| [DependentCompletion.zero_ideal_evaluation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L214) | 214 |
+| [DependentCompletion.fin_zero_fiber_no_total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L217) | 217 |
+
+定义与类型 / Definitions and types:
+
+- `def` [DependentCompletion.GraphIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L15) (L15)
+- `def` [DependentCompletion.Functional](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L17) (L17)
+- `def` [DependentCompletion.Total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L20) (L20)
+- `def` [DependentCompletion.FiniteFunctional](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L22) (L22)
+- `structure` [DependentCompletion.SectionIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L46) (L46)
+- `def` [DependentCompletion.graph](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L57) (L57)
+- `def` [DependentCompletion.encodeSection](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L59) (L59)
+- `def` [DependentCompletion.decodeSection](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L68) (L68)
+- `def` [DependentCompletion.sectionMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L96) (L96)
+- `def` [DependentCompletion.sigmaMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L125) (L125)
+- `def` [DependentCompletion.piMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L131) (L131)
+- `def` [DependentCompletion.completedSectionMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L138) (L138)
+- `def` [DependentCompletion.sigmaPredicateMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L149) (L149)
+- `def` [DependentCompletion.sectionPredicateMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L152) (L152)
+- `def` [DependentCompletion.zeroSection](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L199) (L199)
+- `def` [DependentCompletion.zeroIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean#L201) (L201)
+
+</details>
+
+<a id="module-f0533e96feaa"></a>
+
+<details>
+<summary>FamilyAdmission.lean — 17 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean`
+
+Imports: `FiniteAdmission`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FamilyAdmission.finite_of_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L14) | 14 |
+| [FamilyAdmission.sigma_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L31) | 31 |
+| [FamilyAdmission.sections_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L41) | 41 |
+| [FamilyAdmission.finite_sigma_full_admission](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L50) | 50 |
+| [FamilyAdmission.finite_sections_full_admission](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L56) | 56 |
+| [FamilyAdmission.truthFibers_subsingleton](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L66) | 66 |
+| [FamilyAdmission.truthFibers_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L70) | 70 |
+| [FamilyAdmission.support_truthFibers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L77) | 77 |
+| [FamilyAdmission.full_iff_subsingleton_support](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L82) | 82 |
+| [FamilyAdmission.full_iff_finite_support](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L90) | 90 |
+| [FamilyAdmission.truthFamily_projection](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L105) | 105 |
+| [FamilyAdmission.section_exists_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L109) | 109 |
+| [FamilyAdmission.singleton_fibers_infinite_total](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L115) | 115 |
+| [FamilyAdmission.boolean_fibers_infinite_sections](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L126) | 126 |
+
+定义与类型 / Definitions and types:
+
+- `def` [FamilyAdmission.support](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L62) (L62)
+- `def` [FamilyAdmission.truthFibers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L64) (L64)
+- `def` [FamilyAdmission.truthFamilyMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean#L99) (L99)
+
+</details>
+
+<a id="module-475eb20715c8"></a>
+
+<details>
+<summary>EqualityGenerativity.lean — 28 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EqualityGenerativity.pattern_symm](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L37) | 37 |
+| [EqualityGenerativity.pattern_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L41) | 41 |
+| [EqualityGenerativity.extend_pattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L54) | 54 |
+| [EqualityGenerativity.truth_of_pattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L70) | 70 |
+| [EqualityGenerativity.sentence_agreement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L89) | 89 |
+| [EqualityGenerativity.le_upper](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L98) | 98 |
+| [EqualityGenerativity.upper_succ_fresh](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L106) | 106 |
+| [EqualityGenerativity.nat_hasFresh](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L111) | 111 |
+| [EqualityGenerativity.finite_witness_reduction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L114) | 114 |
+| [EqualityGenerativity.evaluate_correct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L147) | 147 |
+| [EqualityGenerativity.sentence_evaluation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L163) | 163 |
+| [EqualityGenerativity.double_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L169) | 169 |
+| [EqualityGenerativity.double_not_surjective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L174) | 174 |
+| [EqualityGenerativity.injective_preserves_equality_formulas](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L180) | 180 |
+| [EqualityGenerativity.double_preserves_all_equality_formulas](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L188) | 188 |
+| [EqualityGenerativity.every_nat_generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L199) | 199 |
+| [EqualityGenerativity.generated_nat_least](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L204) | 204 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [EqualityGenerativity.Formula](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L12) (L12)
+- `def` [EqualityGenerativity.extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L18) (L18)
+- `def` [EqualityGenerativity.Holds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L21) (L21)
+- `def` [EqualityGenerativity.SamePattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L27) (L27)
+- `def` [EqualityGenerativity.Fresh](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L31) (L31)
+- `def` [EqualityGenerativity.HasFresh](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L34) (L34)
+- `def` [EqualityGenerativity.noVars](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L87) (L87)
+- `def` [EqualityGenerativity.upper](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L94) (L94)
+- `def` [EqualityGenerativity.evaluate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L139) (L139)
+- `def` [EqualityGenerativity.double](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L167) (L167)
+- `inductive` [EqualityGenerativity.GeneratedNat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean#L195) (L195)
+
+</details>
+
+<a id="module-72d18a9b2453"></a>
+
+<details>
+<summary>WitnessHull.lean — 56 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RootConstitution.map_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L54) | 54 |
+| [RootConstitution.eval_embedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L61) | 61 |
+| [RootConstitution.elementary_witness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L84) | 84 |
+| [RootConstitution.witness_elementary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L94) | 94 |
+| [RootConstitution.elementary_iff_witness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L137) | 137 |
+| [RootConstitution.all_semantics](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L143) | 143 |
+| [RootConstitution.conditional_witness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L163) | 163 |
+| [RootConstitution.hull_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L189) | 189 |
+| [RootConstitution.hull_least](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L193) | 193 |
+| [RootConstitution.hull_iff_all_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L200) | 200 |
+| [RootConstitution.hull_witnessAdequate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L220) | 220 |
+| [RootConstitution.hull_elementary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L229) | 229 |
+| [RootConstitution.hull_contains_seeds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L233) | 233 |
+| [RootConstitution.hull_nonempty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L236) | 236 |
+| [RootConstitution.eval_rename](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L255) | 255 |
+| [RootConstitution.cons_liftRename](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L262) | 262 |
+| [RootConstitution.sat_rename](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L269) | 269 |
+| [RootConstitution.empty_assignment_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L297) | 297 |
+| [RootConstitution.or_semantics](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L302) | 302 |
+| [RootConstitution.tagged_semantics](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L325) | 325 |
+| [RootConstitution.tagged_has_witness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L340) | 340 |
+| [RootConstitution.selector_recovers_sentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L350) | 350 |
+| [RootConstitution.integer_predecessor_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L405) | 405 |
+| [RootConstitution.natural_predecessor_false](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L410) | 410 |
+| [RootConstitution.compositional_embedding_not_elementary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L416) | 416 |
+| [RootConstitution.compositional_embedding_not_witnessAdequate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L424) | 424 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RootConstitution.Signature](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L12) (L12)
+- `inductive` [RootConstitution.Term](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L16) (L16)
+- `inductive` [RootConstitution.Formula](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L20) (L20)
+- `structure` [RootConstitution.Structure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L27) (L27)
+- `def` [RootConstitution.Term.eval](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L33) (L33)
+- `def` [RootConstitution.cons](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L37) (L37)
+- `def` [RootConstitution.Formula.sat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L39) (L39)
+- `structure` [RootConstitution.Embedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L46) (L46)
+- `def` [RootConstitution.Elementary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L73) (L73)
+- `def` [RootConstitution.WitnessAdequate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L79) (L79)
+- `def` [RootConstitution.Formula.all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L141) (L141)
+- `structure` [RootConstitution.WitnessSelectors](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L158) (L158)
+- `def` [RootConstitution.classicalSelectors](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L171) (L171)
+- `inductive` [RootConstitution.Hull](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L176) (L176)
+- `structure` [RootConstitution.ClosedUnder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L183) (L183)
+- `def` [RootConstitution.hullStructure](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L207) (L207)
+- `def` [RootConstitution.hullEmbedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L213) (L213)
+- `def` [RootConstitution.Term.rename](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L241) (L241)
+- `def` [RootConstitution.liftRename](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L245) (L245)
+- `def` [RootConstitution.Formula.rename](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L248) (L248)
+- `def` [RootConstitution.emptyAssignment](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L295) (L295)
+- `def` [RootConstitution.Formula.or](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L300) (L300)
+- `def` [RootConstitution.tagged](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L320) (L320)
+- `inductive` [RootConstitution.IterationFunction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L370) (L370)
+- `def` [RootConstitution.iterationLanguage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L374) (L374)
+- `def` [RootConstitution.natIteration](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L378) (L378)
+- `def` [RootConstitution.intIteration](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L384) (L384)
+- `def` [RootConstitution.naturalEmbedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L390) (L390)
+- `def` [RootConstitution.predecessorBody](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L400) (L400)
+- `def` [RootConstitution.predecessorSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean#L403) (L403)
+
+文本中有 26 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 26 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-83c27fd36c83"></a>
+
+<details>
+<summary>CoverageBoundary.lean — 21 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-ATTEMPT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RootCoverageBoundary.fixed_point_of_complete](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L15) | 15 |
+| [RootCoverageBoundary.no_complete_fixedpoint_free](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L21) | 21 |
+| [RootCoverageBoundary.bool_flip_no_fixed_point](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L30) | 30 |
+| [RootCoverageBoundary.bool_diagonal_unrepresented](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L33) | 33 |
+| [RootCoverageBoundary.no_full_bool_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L38) | 38 |
+| [RootCoverageBoundary.no_iff_neg](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L50) | 50 |
+| [RootCoverageBoundary.predicate_diagonal_unrepresented](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L55) | 55 |
+| [RootCoverageBoundary.no_full_predicate_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L60) | 60 |
+| [RootCoverageBoundary.no_diagonal_closed_complete_family](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L67) | 67 |
+| [RootCoverageBoundary.external_reading_covers](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L77) | 77 |
+| [RootCoverageBoundary.extension_preserves](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L87) | 87 |
+| [RootCoverageBoundary.extension_represents_new](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L91) | 91 |
+| [RootCoverageBoundary.extension_preserves_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L95) | 95 |
+| [RootCoverageBoundary.diagonal_extension_strict](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L101) | 101 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RootCoverageBoundary.PointwiseComplete](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L11) (L11)
+- `def` [RootCoverageBoundary.boolDiagonal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L28) (L28)
+- `def` [RootCoverageBoundary.Represents](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L42) (L42)
+- `def` [RootCoverageBoundary.CoversPredicates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L45) (L45)
+- `def` [RootCoverageBoundary.predicateDiagonal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L48) (L48)
+- `def` [RootCoverageBoundary.externalReading](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L75) (L75)
+- `def` [RootCoverageBoundary.extendReading](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean#L82) (L82)
+
+</details>
+
+<a id="module-438373a5bced"></a>
+
+<details>
+<summary>SecondOrder.lean — 57 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-LEAN.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean`
+
+Imports: `CompletionExamples`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SecondOrderReconstruction.related_encode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L44) | 44 |
+| [SecondOrderReconstruction.related_decode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L47) | 47 |
+| [SecondOrderReconstruction.decode_encode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L50) | 50 |
+| [SecondOrderReconstruction.encode_decode](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L55) | 55 |
+| [SecondOrderReconstruction.related_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L60) | 60 |
+| [SecondOrderReconstruction.related_relation_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L69) | 69 |
+| [SecondOrderReconstruction.satisfaction_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L125) | 125 |
+| [SecondOrderReconstruction.full_domains_related](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L152) | 152 |
+| [SecondOrderReconstruction.full_satisfaction_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L161) | 161 |
+| [SecondOrderReconstruction.full_encode_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L166) | 166 |
+| [SecondOrderReconstruction.full_decode_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L170) | 170 |
+| [SecondOrderReconstruction.represented_domains_related](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L177) | 177 |
+| [SecondOrderReconstruction.selected_encode_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L184) | 184 |
+| [SecondOrderReconstruction.corresponding_fullness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L193) | 193 |
+| [SecondOrderReconstruction.predicate_allIndividual](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L207) | 207 |
+| [SecondOrderReconstruction.ideal_allIndividual](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L218) | 218 |
+| [SecondOrderReconstruction.predicate_allRelation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L229) | 229 |
+| [SecondOrderReconstruction.ideal_allRelation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L241) | 241 |
+| [SecondOrderReconstruction.full_relation_exists](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L252) | 252 |
+| [SecondOrderReconstruction.full_relation_forall](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L258) | 258 |
+| [SecondOrderReconstruction.full_sentence_reconstruction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L271) | 271 |
+| [SecondOrderReconstruction.full_totalUnary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L283) | 283 |
+| [SecondOrderReconstruction.unary_member_le](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L294) | 294 |
+| [SecondOrderReconstruction.finite_rejects_totalUnary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L303) | 303 |
+| [SecondOrderReconstruction.finite_not_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L315) | 315 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [SecondOrderReconstruction.RelVar](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L13) (L13)
+- `def` [SecondOrderReconstruction.Predicate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L17) (L17)
+- `def` [SecondOrderReconstruction.RelationIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L19) (L19)
+- `def` [SecondOrderReconstruction.PredicateEnv](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L21) (L21)
+- `def` [SecondOrderReconstruction.IdealEnv](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L23) (L23)
+- `def` [SecondOrderReconstruction.extendIndividual](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L25) (L25)
+- `def` [SecondOrderReconstruction.extendPredicate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L27) (L27)
+- `def` [SecondOrderReconstruction.extendIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L32) (L32)
+- `def` [SecondOrderReconstruction.encodeEnv](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L37) (L37)
+- `def` [SecondOrderReconstruction.decodeEnv](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L39) (L39)
+- `def` [SecondOrderReconstruction.EnvsRelated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L41) (L41)
+- `inductive` [SecondOrderReconstruction.Formula](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L86) (L86)
+- `def` [SecondOrderReconstruction.PredicateDomain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L95) (L95)
+- `def` [SecondOrderReconstruction.IdealDomain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L97) (L97)
+- `def` [SecondOrderReconstruction.PredicateSat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L99) (L99)
+- `def` [SecondOrderReconstruction.IdealSat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L110) (L110)
+- `def` [SecondOrderReconstruction.DomainsRelated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L121) (L121)
+- `def` [SecondOrderReconstruction.fullPredicates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L148) (L148)
+- `def` [SecondOrderReconstruction.fullIdeals](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L150) (L150)
+- `def` [SecondOrderReconstruction.FullPredicateSat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L155) (L155)
+- `def` [SecondOrderReconstruction.FullIdealSat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L158) (L158)
+- `def` [SecondOrderReconstruction.representedIdeals](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L174) (L174)
+- `def` [SecondOrderReconstruction.AllPredicates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L189) (L189)
+- `def` [SecondOrderReconstruction.AllIdeals](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L191) (L191)
+- `def` [SecondOrderReconstruction.Formula.allIndividual](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L201) (L201)
+- `def` [SecondOrderReconstruction.Formula.allRelation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L204) (L204)
+- `def` [SecondOrderReconstruction.emptyIndividuals](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L265) (L265)
+- `def` [SecondOrderReconstruction.emptyPredicates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L267) (L267)
+- `def` [SecondOrderReconstruction.emptyIdeals](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L269) (L269)
+- `def` [SecondOrderReconstruction.finitePredicates](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L277) (L277)
+- `def` [SecondOrderReconstruction.totalUnarySentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L280) (L280)
+- `def` [SecondOrderReconstruction.unaryBound](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean#L290) (L290)
+
+</details>
+
+<a id="module-77505a9c5a3f"></a>
+
+<details>
+<summary>TypedTruth.lean — 40 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean`
+
+Imports: `CompletionExamples`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [TypedTruth.forward_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L21) | 21 |
+| [TypedTruth.forward_surjective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L26) | 26 |
+| [TypedTruth.predicateMap_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L61) | 61 |
+| [TypedTruth.type_forward_backward](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L86) | 86 |
+| [TypedTruth.type_backward_forward](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L90) | 90 |
+| [TypedTruth.type_membership](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L94) | 94 |
+| [TypedTruth.mapEnv_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L112) | 112 |
+| [TypedTruth.term_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L132) | 132 |
+| [TypedTruth.formula_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L172) | 172 |
+| [TypedTruth.emptyEnv_map](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L201) | 201 |
+| [TypedTruth.sentence_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L206) | 206 |
+| [TypedTruth.full_predicate_completion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L210) | 210 |
+| [TypedTruth.formula_comprehension](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L219) | 219 |
+| [TypedTruth.direct_all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L232) | 232 |
+| [TypedTruth.completed_all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L237) | 237 |
+| [TypedTruth.eta_direct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L248) | 248 |
+| [TypedTruth.eta_completed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L255) | 255 |
+| [TypedTruth.higher_eta_completed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L261) | 261 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [TypedTruth.BiMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L15) (L15)
+- `def` [TypedTruth.identity](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L29) (L29)
+- `def` [TypedTruth.arrowMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L35) (L35)
+- `def` [TypedTruth.predicateMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L45) (L45)
+- `inductive` [TypedTruth.Ty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L66) (L66)
+- `def` [TypedTruth.Direct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L71) (L71)
+- `def` [TypedTruth.Completed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L76) (L76)
+- `def` [TypedTruth.typeMap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L81) (L81)
+- `inductive` [TypedTruth.Var](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L99) (L99)
+- `def` [TypedTruth.Env](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L103) (L103)
+- `def` [TypedTruth.extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L105) (L105)
+- `def` [TypedTruth.mapEnv](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L109) (L109)
+- `inductive` [TypedTruth.Term](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L117) (L117)
+- `def` [TypedTruth.directEval](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L122) (L122)
+- `def` [TypedTruth.completedEval](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L127) (L127)
+- `inductive` [TypedTruth.Formula](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L151) (L151)
+- `def` [TypedTruth.DirectHolds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L158) (L158)
+- `def` [TypedTruth.CompletedHolds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L165) (L165)
+- `def` [TypedTruth.emptyEnv](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L199) (L199)
+- `def` [TypedTruth.Formula.all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L230) (L230)
+- `def` [TypedTruth.etaSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L244) (L244)
+- `def` [TypedTruth.higherEtaSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean#L259) (L259)
+
+</details>
+
+<a id="module-c3d844e3d579"></a>
+
+<details>
+<summary>InductiveDomain.lean — 38 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InductiveDomain.generated_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L29) | 29 |
+| [InductiveDomain.generated_least](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L34) | 34 |
+| [InductiveDomain.fullInduction_iff_noJunk](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L41) | 41 |
+| [InductiveDomain.selected_iff_noJunk](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L45) | 45 |
+| [InductiveDomain.iterate_injective](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L54) | 54 |
+| [InductiveDomain.iterate_index](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L72) | 72 |
+| [InductiveDomain.index_iterate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L75) | 75 |
+| [InductiveDomain.hom_iterate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L98) | 98 |
+| [InductiveDomain.recurse_iterate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L110) | 110 |
+| [InductiveDomain.recurse_hom](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L116) | 116 |
+| [InductiveDomain.hom_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L126) | 126 |
+| [InductiveDomain.unique_recursion](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L132) | 132 |
+| [InductiveDomain.bool_generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L137) | 137 |
+| [InductiveDomain.bool_fullInduction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L143) | 143 |
+| [InductiveDomain.bool_not_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L146) | 146 |
+| [InductiveDomain.extra_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L153) | 153 |
+| [InductiveDomain.extra_iterate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L161) | 161 |
+| [InductiveDomain.extra_not_noJunk](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L166) | 166 |
+| [InductiveDomain.nat_iterate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L172) | 172 |
+| [InductiveDomain.nat_generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L177) | 177 |
+| [InductiveDomain.nat_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L179) | 179 |
+| [InductiveDomain.restricted_selected_induction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L184) | 184 |
+| [InductiveDomain.restricted_excludes_false](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L187) | 187 |
+| [InductiveDomain.restricted_not_full](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L194) | 194 |
+
+定义与类型 / Definitions and types:
+
+- `def` [InductiveDomain.iterate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L14) (L14)
+- `def` [InductiveDomain.Generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L18) (L18)
+- `def` [InductiveDomain.NoJunk](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L20) (L20)
+- `def` [InductiveDomain.Closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L22) (L22)
+- `def` [InductiveDomain.FullInduction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L24) (L24)
+- `def` [InductiveDomain.SelectedInduction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L26) (L26)
+- `structure` [InductiveDomain.Separated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L50) (L50)
+- `def` [InductiveDomain.index](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L69) (L69)
+- `structure` [InductiveDomain.NatEquivalence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L78) (L78)
+- `def` [InductiveDomain.naturalEquivalence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L86) (L86)
+- `def` [InductiveDomain.Hom](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L95) (L95)
+- `def` [InductiveDomain.recurse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L107) (L107)
+- `def` [InductiveDomain.extraSuccessor](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L149) (L149)
+- `def` [InductiveDomain.OnlyGenerated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean#L182) (L182)
+
+</details>
+
+<a id="module-831623a203ba"></a>
+
+<details>
+<summary>Initiality.lean — 9 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean`
+
+Imports: `InductiveDomain`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Initiality.initial_noJunk](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L25) | 25 |
+| [Initiality.initial_nat_hom](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L45) | 45 |
+| [Initiality.separated_of_noJunk_nat_hom](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L53) | 53 |
+| [Initiality.initial_iff_generated_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L69) | 69 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Initiality.Initial](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L14) (L14)
+- `def` [Initiality.generatedZero](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L18) (L18)
+- `def` [Initiality.generatedSuccessor](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L21) (L21)
+- `def` [Initiality.liftedZero](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L41) (L41)
+- `def` [Initiality.liftedSuccessor](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean#L43) (L43)
+
+</details>
+
+<a id="module-8080157d8373"></a>
+
+<details>
+<summary>DenseOrder.lean — 57 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-ATTEMPT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [OrderGenerativity.lt_asymm](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L26) | 26 |
+| [OrderGenerativity.le_refl](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L29) | 29 |
+| [OrderGenerativity.le_trans](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L31) | 31 |
+| [OrderGenerativity.lt_of_le_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L39) | 39 |
+| [OrderGenerativity.lt_of_lt_le](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L45) | 45 |
+| [OrderGenerativity.finite_max](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L51) | 51 |
+| [OrderGenerativity.finite_min](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L105) | 105 |
+| [OrderGenerativity.pattern_symm](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L119) | 119 |
+| [OrderGenerativity.pattern_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L123) | 123 |
+| [OrderGenerativity.cut_realized](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L162) | 162 |
+| [OrderGenerativity.pattern_of_cut](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L203) | 203 |
+| [OrderGenerativity.extend_pattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L239) | 239 |
+| [OrderGenerativity.truth_of_pattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L263) | 263 |
+| [OrderGenerativity.sentence_agreement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L282) | 282 |
+| [OrderGenerativity.finite_witness_reduction](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L286) | 286 |
+| [OrderGenerativity.exists_witness_case](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L296) | 296 |
+| [OrderGenerativity.anyWitness_correct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L320) | 320 |
+| [OrderGenerativity.evaluate_correct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L333) | 333 |
+| [OrderGenerativity.sentence_evaluation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L351) | 351 |
+| [OrderGenerativity.decideSentence_correct](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L386) | 386 |
+| [OrderGenerativity.all_semantics](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L392) | 392 |
+| [OrderGenerativity.or_semantics](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L405) | 405 |
+| [OrderGenerativity.density_decision](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L424) | 424 |
+| [OrderGenerativity.leastElement_decision](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L426) | 426 |
+| [OrderGenerativity.greatestElement_decision](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L428) | 428 |
+| [OrderGenerativity.density_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L430) | 430 |
+| [OrderGenerativity.no_least_element_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L433) | 433 |
+| [OrderGenerativity.no_greatest_element_truth](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L440) | 440 |
+| [OrderGenerativity.orderEmbedding_elementary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L452) | 452 |
+| [OrderGenerativity.generated_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L471) | 471 |
+| [OrderGenerativity.generated_least](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L475) | 475 |
+| [OrderGenerativity.generated_iff_all_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L483) | 483 |
+| [OrderGenerativity.generated_elementary](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L511) | 511 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [OrderGenerativity.DenseOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L11) (L11)
+- `def` [OrderGenerativity.LE](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L24) (L24)
+- `def` [OrderGenerativity.reverse](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L92) (L92)
+- `def` [OrderGenerativity.extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L113) (L113)
+- `def` [OrderGenerativity.SamePattern](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L115) (L115)
+- `inductive` [OrderGenerativity.WitnessCase](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L147) (L147)
+- `def` [OrderGenerativity.candidate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L154) (L154)
+- `inductive` [OrderGenerativity.Formula](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L249) (L249)
+- `def` [OrderGenerativity.Holds](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L256) (L256)
+- `def` [OrderGenerativity.noVars](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L280) (L280)
+- `def` [OrderGenerativity.anyWitness](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L315) (L315)
+- `def` [OrderGenerativity.evaluate](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L325) (L325)
+- `def` [OrderGenerativity.rationalOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L356) (L356)
+- `def` [OrderGenerativity.decideSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L384) (L384)
+- `def` [OrderGenerativity.Formula.all](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L390) (L390)
+- `def` [OrderGenerativity.Formula.or](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L403) (L403)
+- `def` [OrderGenerativity.densitySentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L417) (L417)
+- `def` [OrderGenerativity.leastElementSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L420) (L420)
+- `def` [OrderGenerativity.greatestElementSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L422) (L422)
+- `structure` [OrderGenerativity.OrderEmbedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L447) (L447)
+- `inductive` [OrderGenerativity.Generated](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L459) (L459)
+- `structure` [OrderGenerativity.Closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L465) (L465)
+- `def` [OrderGenerativity.generatedOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L489) (L489)
+- `def` [OrderGenerativity.generatedEmbedding](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean#L506) (L506)
+
+</details>
+
+<a id="module-e839ddaa98f9"></a>
+
+<details>
+<summary>CoverageBoundary.lean — 19 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean`
+
+Imports: `PotentialTruth`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CoverageBoundary.future_exists_agreement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L17) | 17 |
+| [CoverageBoundary.coverage_iff_all_unary_existentials](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L26) | 26 |
+| [CoverageBoundary.coverage_of_joint_extensions](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L39) | 39 |
+| [CoverageBoundary.fork_global_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L68) | 68 |
+| [CoverageBoundary.fork_every_value_from_start](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L74) | 74 |
+| [CoverageBoundary.fork_left_misses_true](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L79) | 79 |
+| [CoverageBoundary.fork_not_future_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L89) | 89 |
+| [CoverageBoundary.fork_not_joint_extensions](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L93) | 93 |
+| [CoverageBoundary.another_global_true](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L101) | 101 |
+| [CoverageBoundary.another_potential_false_at_start](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L107) | 107 |
+
+定义与类型 / Definitions and types:
+
+- `def` [CoverageBoundary.FutureExists](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L14) (L14)
+- `def` [CoverageBoundary.GlobalCoverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L34) (L34)
+- `def` [CoverageBoundary.JointExtensions](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L36) (L36)
+- `inductive` [CoverageBoundary.Fork](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L46) (L46)
+- `def` [CoverageBoundary.forkFuture](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L50) (L50)
+- `def` [CoverageBoundary.forkDomain](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L56) (L56)
+- `def` [CoverageBoundary.forkFrame](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L61) (L61)
+- `def` [CoverageBoundary.emptyInterpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L96) (L96)
+- `def` [CoverageBoundary.anotherValue](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean#L98) (L98)
+
+</details>
+
+<a id="module-e847c1e507df"></a>
+
+<details>
+<summary>PotentialTruth.lean — 26 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PotentialTruth.available_future](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L27) | 27 |
+| [PotentialTruth.available_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L31) | 31 |
+| [PotentialTruth.potential_iff_global](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L64) | 64 |
+| [PotentialTruth.sentence_agreement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L89) | 89 |
+| [PotentialTruth.future_invariance](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L94) | 94 |
+| [PotentialTruth.prefix_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L108) | 108 |
+| [PotentialTruth.prefix_domain_finite](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L113) | 113 |
+| [PotentialTruth.prefix_no_full_world](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L117) | 117 |
+| [PotentialTruth.unbounded_global](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L130) | 130 |
+| [PotentialTruth.unbounded_potential](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L134) | 134 |
+| [PotentialTruth.unbounded_current_false](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L148) | 148 |
+| [PotentialTruth.unbounded_current_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L156) | 156 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [PotentialTruth.Frame](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L13) (L13)
+- `def` [PotentialTruth.FutureCoverage](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L20) (L20)
+- `def` [PotentialTruth.extend](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L23) (L23)
+- `def` [PotentialTruth.Available](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L25) (L25)
+- `inductive` [PotentialTruth.Formula](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L36) (L36)
+- `def` [PotentialTruth.Interpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L44) (L44)
+- `def` [PotentialTruth.sat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L47) (L47)
+- `def` [PotentialTruth.potentialSat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L55) (L55)
+- `def` [PotentialTruth.emptyAssignment](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L87) (L87)
+- `def` [PotentialTruth.prefixFrame](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L101) (L101)
+- `inductive` [PotentialTruth.OrderRelation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L121) (L121)
+- `def` [PotentialTruth.natOrder](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L124) (L124)
+- `def` [PotentialTruth.unboundedSentence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L127) (L127)
+- `def` [PotentialTruth.currentSat](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean#L139) (L139)
+
+</details>

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Bangkok",
+  "scope": "Original bytes before this task adds its zero-axiom classification entries. Shared documents already contain unrelated uncommitted work. Snapshot links retain their original source base and are not portable reading editions.",
+  "files": [
+    {
+      "source": "RESEARCH.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/zero-axiom-classification-before/RESEARCH.md",
+      "sha256": "5f7ace506b19824b671217bc893a6a31058f1d235ae936cd2be6539cfb0fabca",
+      "bytes": 361926,
+      "original_link_base": "."
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/zero-axiom-classification-before/sources/SOURCES.md",
+      "sha256": "b5d7f69c2425a244b1c39740bb23267000982b35d4dd95da4ff3301ef7f3ff59",
+      "bytes": 314786,
+      "original_link_base": "sources"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/zero-axiom-classification-before/theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "81a3ecc8c80b0add1ea863d6f0005e45c1b1d61e157f9c4fd13e639f58ad3501",
+      "bytes": 643188,
+      "original_link_base": "theories/shengsheng-buxi-generative-existence"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/zero-axiom-classification-before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "b4f1c725c03be62dfc00fbab4fdfee2c0e986bf7a7b6cb49d0d778942559b0d9",
+      "bytes": 386848,
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/zero-axiom-classification-before/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sha256": "b210f7ccbdc567ec11e0a8690c3b911805ceff6fac1552d23f110334870bce1f",
+      "bytes": 310842,
+      "original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/zero-axiom-classification-before/_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "27c6a38b12b6e3876f55606746d446ca655b9cff012192244cb464600bce32c3",
+      "bytes": 166338,
+      "original_link_base": "_process/research/2026-10-05-generative-foundation-review/root-foundation"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "GenerativeCore": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "CoupledOccurrence": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+    "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e"
+  },
+  "PurposeCorrection": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean",
+    "sha256": "a420b666b6accf26670dd2337d357a23fb960420e7c9003a45b37944876f1873"
+  },
+  "SupportHandoff": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean",
+    "sha256": "c64b7e28e12a495cdf17914dd7f9b1480a1e65efd8622aae8137f6593863c702"
+  }
+}

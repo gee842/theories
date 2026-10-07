@@ -1,0 +1,115 @@
+{
+  "checked_at_utc": "2026-10-07T13:32:07.755843+00:00",
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_temporary_build": true,
+  "source_unchanged_during_check": true,
+  "LEAN_PATH": "fresh temporary directory only",
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "RecursiveGenerativeSelection.olean",
+      "RecursiveGenerativeSelection.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "RecursiveGenerativeSelectionAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "RecursiveSelectionInheritance.olean",
+      "RecursiveSelectionInheritance.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "RecursiveSelectionInheritanceAudit.lean"
+    ]
+  ],
+  "allowed_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "audit_count": 28,
+  "new_audit_count": 13,
+  "new_empty_axiom_audits": 8,
+  "axiom_dependencies": {
+    "RecursiveGenerativeSelection": {
+      "RecursiveGenerativeSelection.mul_assoc_eq": [],
+      "RecursiveGenerativeSelection.add_mul_eq": [],
+      "RecursiveGenerativeSelection.strict_mul_cancel_right": [],
+      "RecursiveGenerativeSelection.support": [],
+      "RecursiveGenerativeSelection.descendants": [],
+      "RecursiveGenerativeSelection.pooled": [],
+      "RecursiveGenerativeSelection.cross_compare_iff": [],
+      "RecursiveGenerativeSelection.more_supporters_produce_more_support": [],
+      "RecursiveGenerativeSelection.supporter_share_falls_within": [],
+      "RecursiveGenerativeSelection.descendant_totals_positive": [],
+      "RecursiveGenerativeSelection.pooled_counts": [],
+      "RecursiveGenerativeSelection.support_contribution_threshold": [],
+      "RecursiveGenerativeSelection.global_supporter_share_rises_iff": [],
+      "RecursiveGenerativeSelection.weak_coupling_witness": [],
+      "RecursiveGenerativeSelection.strong_coupling_witness": []
+    },
+    "RecursiveSelectionInheritance": {
+      "RecursiveSelectionInheritance.State": [],
+      "RecursiveSelectionInheritance.Transfer": [],
+      "RecursiveSelectionInheritance.material": [],
+      "RecursiveSelectionInheritance.operate": [],
+      "RecursiveSelectionInheritance.assemble": [],
+      "RecursiveSelectionInheritance.operation_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecursiveSelectionInheritance.assembly_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecursiveSelectionInheritance.connected_two_generation_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecursiveSelectionInheritance.assembly_row_limits": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecursiveSelectionInheritance.fully_assembled_strong_share_rises_iff": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecursiveSelectionInheritance.faithful_two_generation_history": [],
+      "RecursiveSelectionInheritance.converted_two_generation_history": [],
+      "RecursiveSelectionInheritance.insufficient_source_or_excess_assembly_fails": []
+    }
+  },
+  "source_sha256": {
+    "RecursiveGenerativeSelection.lean": "8dd0c4a32ed06be7f714ab614be0dbd70997a9697352db06cf71d4a0d9949e8f",
+    "RecursiveGenerativeSelectionAudit.lean": "acbd0a5d940a3c87302e5f3f899567254f2c49173b737807a75f63a60d2bcbce",
+    "RecursiveSelectionInheritance.lean": "7342016df2438e6ca3ac09deb1b1c1709de460971887f7f189253927b5759d2d",
+    "RecursiveSelectionInheritanceAudit.lean": "931cbbd68de8b2ef95aef22f202d860f20cabed9a45a56ce789ed522c28a8862",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+  },
+  "checker_sha256": "8010ca0090bfb8bf3d119e9dcb60618114d4d4b28352d4b8c432a2a77eb95315",
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "RecursiveGenerativeSelection-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RecursiveGenerativeSelection-axioms.txt": "61c08c36e7858894c0b0ad3066c5ba1ef6c1d578a6997eeaead81d1386e59bbc",
+    "RecursiveSelectionInheritance-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RecursiveSelectionInheritance-axioms.txt": "0093b0e6cb824e35e1bdf08875bba3415bc2ef054e080460e682fb0c27144a62"
+  },
+  "scope": "Finite supplied reconstruction law, actual two-generation histories, and their formal accounting; no evolutionary or ethical universality."
+}

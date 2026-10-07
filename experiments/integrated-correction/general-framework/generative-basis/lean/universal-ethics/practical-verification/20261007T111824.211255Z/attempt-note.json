@@ -1,0 +1,7 @@
+{
+  "status": "failed_compile",
+  "recorded_after_attempt": true,
+  "reason": "Initial checker retained source bytes but raised before saving compiler output. A byte-identical rerun retained the compile failure.",
+  "byte_identical_source_rerun": "20261007T111917.667918Z",
+  "source_sha256": "7bc95e38a8ae892245459aab57769a1a1cebe586d831de1b24e1176a4e8fd61d"
+}

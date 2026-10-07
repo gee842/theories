@@ -36,7 +36,7 @@ The useful independent variables are:
 | Available operator | A can enact relief in one case; B can enact it in the other | Actual patient, target condition, permissible remedy and matched efficacy/cost |
 | Operator's concern | Responsive versus indifferent operator | Patient's burden, patient-directed remedy, factual knowledge and relevant practical capacity |
 | Prior relationship | Prior entrustment or responsibility versus none | Present feasible control and the patient's actual burden |
-| Patient's accepted means | Patient accepts one means but refuses another | Relief potential must be distinguished from permission and authorship |
+| Patient's accepted means | Patient accepts one means but refuses another | Relief potential must be distinguished from permission and participation in shaping activity |
 | Observer-only escape | Operator stops witnessing distress while patient remains in it | Patient outcome is separately measured; operator relief does not count as patient relief |
 | Information correction | Reliable patient evidence corrects the operator's initial interpretation | Change in warranted identification is not itself creation of the patient-ground |
 
@@ -59,7 +59,7 @@ The practical capacity class must likewise be specified without defining a capab
 
 An instruction to act as the patient's caretaker, a prior promise, employment, accepted delegation or experimenter-assigned beneficiary task can introduce an independent reason to help. Such evidence is useful for mechanisms but cannot alone test a reason for an actor without a prior role. Similarly, a learned controller whose sole supplied reward is patient relief already has the target built into its selector. Neither construction establishes universal noncauser authority.
 
-Patient willingness is evidence about permitted means and authorship; it must not be treated as the entire ground of moral standing. In the narrow test, willingness can be stipulated as a controlled fact. Extending the account to infants, nonverbal animals, unconscious patients or uncertain refusal requires an additional interpretation. We should not make every patient's significance depend on its ability to formulate a request to every possible rescuer.
+Patient willingness is evidence about permitted means and participation in shaping activity; it must not be treated as the entire ground of moral standing. In the narrow test, willingness can be stipulated as a controlled fact. Extending the account to infants, nonverbal animals, unconscious patients or uncertain refusal requires an additional interpretation. We should not make every patient's significance depend on its ability to formulate a request to every possible rescuer.
 
 ## 5. What would change the account
 

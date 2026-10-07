@@ -1,0 +1,88 @@
+{
+  "checked_at_utc": "2026-10-07T13:14:08.669999+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-ARGUMENT.md": "fa46d248129dd7674f53fabb46b465269381b0ae99959342349b1a418fbd3cea",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-LEAN.md": "b04b5b6d02d6439cd8156085fffca7b8e70d89167e90c8122151481767e26ca1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-ABSTRACTION.md": "cde257052f077eb4cf1d10babe4fce14cf93c895772de46d2ad31d486223ec04",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-REVIEW.md": "51c12b952528dcbc8736a19e081c0deb713925f9f380834e7e480498ea231dbd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-SOURCES.md": "bd82ccf03b7a0d9e9f0d5876ef86ac5732b62e15bb2f56447b0fff084ba55777",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-INTEGRATION.md": "ec92ada04a58bfa5f2f1391e387339eb86407d3ae15ce3866b35c6eb00dcba18",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/README.md": "a442f509c8e8235b31429e647adb424843cd24782e61fea4dc7971ae35605df3",
+    "sources/15-codex-theory-conversations/2026-10-07-pursue-indexed-mathematical-assembly.md": "cc2564cfd5be1da4f776d60d1b82d5752137c6c953626553a71456e5e4c4a7af"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 72,
+  "heading_fragments_checked": 4,
+  "previous_proof_assets_preserved": 57,
+  "new_lean_receipts": {
+    "assembly": {
+      "sha256": "6597c566350181f211170a59e76bb86af4551b34813e66fab0820145854732c6",
+      "theorems_checked": 31,
+      "named_declarations_audited": 48
+    }
+  },
+  "lean_theorems_checked": 31,
+  "lean_named_declaration_audits": 48,
+  "internal_review": "Root and collaborating agents read both final Lean modules. Review independently matched all 18 proof receipt source/dependency/prior-receipt/support hashes and accepted 31 theorems/48 audits. Final integration, abstraction correspondence and package README reviewed: no substantive blockers. Relative philosophical warrant, whole-relation and abstraction premises, output-preserving correspondence, separate predicate-sort inclusion, and Nat-only full-range scope retained. Internal AI review, not external peer review.",
+  "concurrent_change_observation": "Substantial unrelated concurrent changes remain untouched. Recorded additions and new assembly assets are owned by this round. Earlier proof packages were preserved; no commits made.",
+  "manifest_sha256": "4bbd40b2e69892d2fdb371f7b8ea7d0dcde857bff87434901d7e8945a504f56a",
+  "checker_sha256": "3f3d2a7af496ee6c0e0a9165338cfc8c46ec4f491e4cd236475d3af8e7ee9b5a",
+  "errors": [],
+  "passed": true
+}

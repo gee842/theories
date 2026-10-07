@@ -1,0 +1,144 @@
+{
+  "status": "passed",
+  "utc": "20261007T112036.520494Z",
+  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "checker_sha256": "ebe0113fec1a821937c3b214e92d3921b0c851614fa2fee52d7a2f7dbb80b969",
+  "retained_run": "practical-verification/20261007T112036.520494Z",
+  "modules": [
+    {
+      "module": "WholePracticalRestriction",
+      "sha256": "3068f851300c206d0b1bbb5e482d19d25b81cbadd5f1de9cfbce3b78761f29dc",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "WholePracticalRestriction.Family"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.Compatible"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.Descends"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.Joined"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.CoveredPair"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.PointCoverage"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.PairCoverage"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.Irreflexive"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.Transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.descent_implies_compatibility"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.joined_descends_iff_compatible"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.compatibility_iff_common_whole_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.joined_is_least_extension"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.extensions_agree_on_covered_pairs"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.pair_coverage_gives_unique_comparisons"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.uncovered_pair_has_disagreeing_extensions"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.singletonCharts"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.point_coverage_does_not_give_pair_coverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.faithful_recoding_preserves_comparison"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.strict_whole_relation_restricts"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholePracticalRestriction.Three"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.cycleNext"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.cycleCharts"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.cycleWhole"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.cycle_charts_descend"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.locally_strict_compatible_cycle_has_no_strict_extension"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.whole_comparison_and_strictness_do_not_force_correspondence"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.firstSupport"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.secondSupport"
+        },
+        {
+          "kind": "def",
+          "name": "WholePracticalRestriction.supportSum"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholePracticalRestriction.same_comparisons_do_not_determine_supporting_entries"
+        }
+      ],
+      "theorems": 14,
+      "axioms": [],
+      "kernel_checked": true
+    }
+  ],
+  "scope": "Declared mathematical implications only; universal ethical warrant unresolved."
+}

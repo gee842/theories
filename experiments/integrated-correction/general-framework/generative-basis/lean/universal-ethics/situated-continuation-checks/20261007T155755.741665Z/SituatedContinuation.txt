@@ -1,0 +1,25 @@
+'Generative.SituatedContinuation.trajectory' does not depend on any axioms
+'Generative.SituatedContinuation.HasContinuation' does not depend on any axioms
+'Generative.SituatedContinuation.actual_suffix_continues' does not depend on any axioms
+'Generative.SituatedContinuation.excludes_all_routes_cannot_sustain' does not depend on any axioms
+'Generative.SituatedContinuation.joint_continuation_supplies_components' does not depend on any axioms
+'Generative.SituatedContinuation.continuation_realizes_required_dependencies' depends on axioms: [propext, Quot.sound]
+'Generative.SituatedContinuation.rules_retain_invariant' does not depend on any axioms
+'Generative.SituatedContinuation.certified_history_renews' does not depend on any axioms
+'Generative.SituatedContinuation.implemented_rules_sustain' does not depend on any axioms
+'Generative.SituatedContinuation.alternatives_remain_alternatives' does not depend on any axioms
+'Generative.SituatedContinuation.Event' does not depend on any axioms
+'Generative.SituatedContinuation.supportProcess' does not depend on any axioms
+'Generative.SituatedContinuation.restorative' does not depend on any axioms
+'Generative.SituatedContinuation.supportRank' does not depend on any axioms
+'Generative.SituatedContinuation.support_progress' does not depend on any axioms
+'Generative.SituatedContinuation.repairChoice' does not depend on any axioms
+'Generative.SituatedContinuation.replacementChoice' does not depend on any axioms
+'Generative.SituatedContinuation.repair_implements' does not depend on any axioms
+'Generative.SituatedContinuation.replacement_implements' does not depend on any axioms
+'Generative.SituatedContinuation.repair_never_replaces' does not depend on any axioms
+'Generative.SituatedContinuation.replacement_never_repairs' does not depend on any axioms
+'Generative.SituatedContinuation.adequate_alternative_histories' does not depend on any axioms
+'Generative.SituatedContinuation.Opportunity' does not depend on any axioms
+'Generative.SituatedContinuation.opportunityProcess' does not depend on any axioms
+'Generative.SituatedContinuation.permanent_opportunity_without_completion' does not depend on any axioms

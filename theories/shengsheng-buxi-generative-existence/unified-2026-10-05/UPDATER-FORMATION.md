@@ -1,6 +1,6 @@
 # Forming and changing the mechanisms that revise selectors
 
-6 October 2026. AI-assisted continuation under the [generative grounding](GENERATIVE-GROUNDING.md), following [Ren's instruction to continue](../../../sources/15-codex-theory-conversations/2026-10-06-updater-formation-continuation.md). The named connection is **actually formed constituents → paid updater formation → consequence-dependent change of the rule that reconstructs a selector → productive use of that changed rule**.
+6 October 2026. AI-assisted continuation under the [generative grounding](GENERATIVE-GROUNDING.md), following [Ren's instruction to continue](../../../sources/15-codex-theory-conversations/2026-10-06-updater-formation-continuation.md). The named connection is **actually formed constituents → resource-dependent updater formation → consequence-dependent change of the rule that reconstructs a selector → productive use of that changed rule**.
 
 This connection now has a conditional construction, an exact resource account, a complete formal witness and independently checked finite comparisons. The result changes what the preceding [selector study](SELECTOR-REVISION.md) supplied externally: its reconstruction rule can now be a costly, finite-lived structure replaced inside the continuing organization. The possible rules, their assembly chemistry and the law proposing replacements remain supplied local inputs.
 
@@ -25,7 +25,7 @@ Thus a change of updater is more than a change of response: from the same expire
 
 The preparation phase uses the existing [formed-variant process](../../../experiments/shared-renewal-capability/regulation/retention/formation/README.md). It starts without either A or H, with two material units, a damaged access site, eighteen common fuel units and ninety-seven source-energy units. These larger original stocks are declared before preparation. The older depleted formation witness still cannot finance the new construction.
 
-The reference keeps the original formation, association, repair, capture and local-copy channels at unit coefficients; bulk copying, damage, wear and leakage are zero. A paid adapter requires both A and H to have formed, the site to have been repaired, a local unit to have been captured, and at least one common fuel unit. It spends that common unit before making the captured local unit accessible. One A and one H become backing material for two recyclable module slots; neither new module is installed by the adapter.
+The reference keeps the original formation, association, repair, capture and local-copy channels at unit coefficients; bulk copying, damage, wear and leakage are zero. A resource-dependent adapter requires both A and H to have formed, the site to have been repaired, a local unit to have been captured, and at least one common fuel unit. It spends that common unit before making the captured local unit accessible. One A and one H become backing material for two recyclable module slots; neither new module is installed by the adapter.
 
 For old common fuel F, local fuel f and source energy E, the new account is
 
@@ -51,7 +51,7 @@ This probability concerns the embedded jump chain through all absorbing preparat
 
 The formal construction admits the following single history:
 
-**A/H formation → A association and repair → capture → paid adapter → R updater formation → selector assembly → four captures → environmental reversal → two failures → R rebuilds the old mapping → two further failures → D updater formation → D builds the opposite mapping → capture and renewal.**
+**A/H formation → A association and repair → capture → resource-dependent adapter → R updater formation → selector assembly → four captures → environmental reversal → two failures → R rebuilds the old mapping → two further failures → D updater formation → D builds the opposite mapping → capture and renewal.**
 
 The old updater has actually governed reconstruction. A replacement changes its kind. The new updater then governs a different reconstruction whose consequence renews it. The whole history starts with the declared unformed constituents; there is no resource reset at a stage boundary.
 
@@ -62,7 +62,7 @@ Its final fuel is nine and seven packets remain. The checked energy identity is
 +59\text{ operational costs and waste}+51\text{ remaining energy}.
 \]
 
-The numerical **functional revision witness** imposes the same kind of causal obligation: the old instance must have captured before reversal and actually governed a reconstruction; a later paid formation changes updater kind; that new instance must govern reconstruction and subsequently receive a capture. Flags are reset at every updater formation. Mere occupancy, a label change, or renewal funded by an inherited selector does not count.
+The numerical **functional revision witness** imposes the same kind of causal obligation: the old instance must have captured before reversal and actually governed a reconstruction; a later resource-dependent formation changes updater kind; that new instance must govern reconstruction and subsequently receive a capture. Flags are reset at every updater formation. Mere occupancy, a label change, or renewal funded by an inherited selector does not count.
 
 ## 4. Comparisons and a sharper recovery bound
 
@@ -96,7 +96,7 @@ The reported reserve statistic covers commissioned compartments only. Failed pre
 
 ## 5. What has been checked
 
-The [Lean package](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md) checks **25 new declarations** under Lean 4.29.1: original preparation-event embedding, paid material/resource handoff, full trace composition, ledgers, changing permitted proposal alternatives, startup and sequential-payment bounds, and the complete witness above. Segments without updater formation project to the old selector law at the **combined** renewal price. Updater formation adds paid events that cannot be erased from a full-history account.
+The [Lean package](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md) checks **25 new declarations** under Lean 4.29.1: original preparation-event embedding, resource-dependent material/resource handoff, full trace composition, ledgers, changing permitted proposal alternatives, startup and sequential-payment bounds, and the complete witness above. Segments without updater formation project to the old selector law at the **combined** renewal price. Updater formation adds resource-dependent events that cannot be erased from a full-history account.
 
 The declared standard proof dependencies include `propext`, `Quot.sound` and `Classical.choice`; there are no custom axioms or proof holes. This is not a claim that every declaration has an empty dependency list. Probability, noisy-capture channels, Python-to-Lean refinement and empirical chemistry remain outside the formal claims.
 
@@ -106,7 +106,7 @@ An independently written backward-recursion audit agrees with the producer's for
 
 The parallel [material selector construction](MATERIAL-SELECTOR-COMPOSITION.md) proves an exact assembly criterion for typed, consumable parts. This updater construction instead retools two formed constituents into recyclable backing slots and charges repeated assembly to fuel. They share an actual predecessor law and support discipline, but their different material interfaces have not been proved interchangeable. A future composition must select and justify a physical interface, including recycling costs where required.
 
-The [paid teaching interface](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) supplies conditions for acquired evidence, paid prediction and valid sampling. Its learning and action architecture remains declared. The next named bridge is **formed, revisable sensing/updating machinery → acquired prediction corrected after dependency change → accountable action using that prediction**, within one retained material and resource history.
+The [resource-dependent teaching interface](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) supplies conditions for acquired evidence, resource-dependent prediction and valid sampling. Its learning and action architecture remains declared. The next named bridge is **formed, revisable sensing/updating machinery → acquired prediction corrected after dependency change → accountable action using that prediction**, within one retained material and resource history.
 
 The completed [controlled-refinement result](CONTROLLED-REFINEMENT.md) supplies a compatibility criterion for that bridge: an exact world mapping preserves finite controlled histories when it preserves the complete observation channel and the same controller's inherited memory. Matching world possibilities and fuel costs alone can lose learned commands. This theorem assumes the same action vocabulary and step granularity; several formation reactions implementing one update require an additional event-to-history mapping. Probability and resource-account compatibility also require their own correspondence. It does not establish a mapping between the material implementations above or derive their controller architecture.
 

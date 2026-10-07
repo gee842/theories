@@ -1,0 +1,396 @@
+{
+  "checked_at_utc": "2026-10-07T11:29:14.196589+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "exit_code": 0,
+      "audits": 18,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.trace_append_iff' does not depend on any axioms\n'Generative.trace_singleton_iff' does not depend on any axioms\n'Generative.enabled_iff_singleton_trace' does not depend on any axioms\n'Generative.enabled_difference_implies_state_difference' does not depend on any axioms\n'Generative.feasible_append_iff' does not depend on any axioms\n'Generative.feasible_prefix' does not depend on any axioms\n'Generative.enabled_product_iff' does not depend on any axioms\n'Generative.trace_product_iff' does not depend on any axioms\n'Generative.feasible_product_iff' does not depend on any axioms\n'Generative.trace_map' does not depend on any axioms\n'Generative.trace_lift' does not depend on any axioms\n'Generative.projected_trace_iff' does not depend on any axioms\n'Generative.projection_exact_iff' does not depend on any axioms\n'Generative.local_exact_iff_trace_exact' does not depend on any axioms\n'Generative.enabled_projection_iff' does not depend on any axioms\n'Generative.feasible_projection_iff' does not depend on any axioms\n'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms\n'Generative.trace_faithful_iff' does not depend on any axioms\n"
+    },
+    {
+      "module": "NativePacketProcess",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+      "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
+      "exit_code": 0,
+      "audits": 45,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.NativePacketProcess.Phase' does not depend on any axioms\n'Generative.NativePacketProcess.Command' does not depend on any axioms\n'Generative.NativePacketProcess.State' does not depend on any axioms\n'Generative.NativePacketProcess.Observation' does not depend on any axioms\n'Generative.NativePacketProcess.Failure' does not depend on any axioms\n'Generative.NativePacketProcess.Result' does not depend on any axioms\n'Generative.NativePacketProcess.Support' does not depend on any axioms\n'Generative.NativePacketProcess.output' does not depend on any axioms\n'Generative.NativePacketProcess.nextPhase' does not depend on any axioms\n'Generative.NativePacketProcess.arrivalAt' does not depend on any axioms\n'Generative.NativePacketProcess.arrival' does not depend on any axioms\n'Generative.NativePacketProcess.readBit' does not depend on any axioms\n'Generative.NativePacketProcess.receiptBit' does not depend on any axioms\n'Generative.NativePacketProcess.peak' does not depend on any axioms\n'Generative.NativePacketProcess.draw' does not depend on any axioms\n'Generative.NativePacketProcess.Supportable' does not depend on any axioms\n'Generative.NativePacketProcess.enact' does not depend on any axioms\n'Generative.NativePacketProcess.support' does not depend on any axioms\n'Generative.NativePacketProcess.arrivalAmount' does not depend on any axioms\n'Generative.NativePacketProcess.convert' does not depend on any axioms\n'Generative.NativePacketProcess.finishProbe' does not depend on any axioms\n'Generative.NativePacketProcess.execute' does not depend on any axioms\n'Generative.NativePacketProcess.reached' does not depend on any axioms\n'Generative.NativePacketProcess.process' does not depend on any axioms\n'Generative.NativePacketProcess.probeFinal' does not depend on any axioms\n'Generative.NativePacketProcess.ProbeReady' does not depend on any axioms\n'Generative.NativePacketProcess.support_sustained' does not depend on any axioms\n'Generative.NativePacketProcess.support_capacity' does not depend on any axioms\n'Generative.NativePacketProcess.support_insufficient' does not depend on any axioms\n'Generative.NativePacketProcess.support_sustained_iff' does not depend on any axioms\n'Generative.NativePacketProcess.probeReady_exact' does not depend on any axioms\n'Generative.NativePacketProcess.probe_complete' does not depend on any axioms\n'Generative.NativePacketProcess.a_complete' does not depend on any axioms\n'Generative.NativePacketProcess.reset_complete' does not depend on any axioms\n'Generative.NativePacketProcess.read_complete' does not depend on any axioms\n'Generative.NativePacketProcess.probe_complete_iff' does not depend on any axioms\n'Generative.NativePacketProcess.interface_capacity_stops' does not depend on any axioms\n'Generative.NativePacketProcess.interface_insufficient_stops' does not depend on any axioms\n'Generative.NativePacketProcess.probe_source_stops' does not depend on any axioms\n'Generative.NativePacketProcess.probe_receipt_insufficient_stops' does not depend on any axioms\n'Generative.NativePacketProcess.probe_final_effects' does not depend on any axioms\n'Generative.NativePacketProcess.SameParameters' does not depend on any axioms\n'Generative.NativePacketProcess.execute_retains_parameters' does not depend on any axioms\n'Generative.NativePacketProcess.completed_retains_parameters' does not depend on any axioms\n'Generative.NativePacketProcess.receipt_capacity_unreachable' does not depend on any axioms\n"
+    },
+    {
+      "module": "ResourceContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
+      "source_sha256": "8414185c411458c1098f813d84e091fd91c89d9746c0ecde1e47bbd490e6ccf8",
+      "exit_code": 0,
+      "audits": 24,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.Conditional.le_cancel_left' does not depend on any axioms\n'Generative.Conditional.step_then_rest' does not depend on any axioms\n'Generative.Conditional.rest_then_step' does not depend on any axioms\n'Generative.Conditional.support_trace_is_trace' does not depend on any axioms\n'Generative.Conditional.sustain_law_pullback' does not depend on any axioms\n'Generative.Conditional.trace_has_support_totals' does not depend on any axioms\n'Generative.Conditional.support_trace_append' does not depend on any axioms\n'Generative.Conditional.repeat_supported_cycle' does not depend on any axioms\n'Generative.Conditional.support_trace_bound' does not depend on any axioms\n'Generative.Conditional.support_cycle_arrival_covers_enactment' does not depend on any axioms\n'Generative.Conditional.support_trace_unit_enactment' does not depend on any axioms\n'Generative.Conditional.amount_le_cap_times_arrival_events' does not depend on any axioms\n'Generative.Conditional.support_trace_arrival_cap' does not depend on any axioms\n'Generative.Conditional.support_trace_length_bound' does not depend on any axioms\n'Generative.Conditional.interval_total_positive_witness' does not depend on any axioms\n'Generative.Conditional.interval_total_le_of_pointwise' does not depend on any axioms\n'Generative.Conditional.interval_total_unit_bound' does not depend on any axioms\n'Generative.Conditional.interval_total_cap_bound' does not depend on any axioms\n'Generative.Conditional.execution_interval_bound' does not depend on any axioms\n'Generative.Conditional.componentwise_execution_bound' does not depend on any axioms\n'Generative.Conditional.unbounded_enactment_requires_unbounded_arrival' does not depend on any axioms\n'Generative.Conditional.infinite_unit_execution_arrival_window' does not depend on any axioms\n'Generative.Conditional.infinite_unit_execution_unbounded_arrival' does not depend on any axioms\n'Generative.Conditional.execution_interval_frequency_bound' does not depend on any axioms\n"
+    },
+    {
+      "module": "Depletion",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+      "source_sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
+      "exit_code": 0,
+      "audits": 5,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.trace_reserve_bound' does not depend on any axioms\n'Generative.trace_length_bound' does not depend on any axioms\n'Generative.no_nonempty_cycle_under_depletion' does not depend on any axioms\n'Generative.infinite_execution_contradicts_depletion' does not depend on any axioms\n'Generative.no_infinite_execution_under_depletion' does not depend on any axioms\n"
+    },
+    {
+      "module": "NativePortContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean",
+      "source_sha256": "155d4239aa948c70318349e5dbd9173fe3b9b86dce07b90c827a782b1008ed82",
+      "exit_code": 0,
+      "audits": 27,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.NativePortContinuation.cancel_right' does not depend on any axioms\n'Generative.NativePortContinuation.sub_add_restore' does not depend on any axioms\n'Generative.NativePortContinuation.add_sub_self_left' does not depend on any axioms\n'Generative.NativePortContinuation.chain' does not depend on any axioms\n'Generative.NativePortContinuation.continues_refl' does not depend on any axioms\n'Generative.NativePortContinuation.continues_trans' does not depend on any axioms\n'Generative.NativePortContinuation.enact_continues' does not depend on any axioms\n'Generative.NativePortContinuation.convert_continues' does not depend on any axioms\n'Generative.NativePortContinuation.phase_continues' does not depend on any axioms\n'Generative.NativePortContinuation.supported_continues' does not depend on any axioms\n'Generative.NativePortContinuation.execute_conserves' does not depend on any axioms\n'Generative.NativePortContinuation.step_continues' does not depend on any axioms\n'Generative.NativePortContinuation.trace_continues' does not depend on any axioms\n'Generative.NativePortContinuation.step_sustained_exact' does not depend on any axioms\n'Generative.NativePortContinuation.port_sustain_law' does not depend on any axioms\n'Generative.NativePortContinuation.completed_shape' does not depend on any axioms\n'Generative.NativePortContinuation.draw_positive' does not depend on any axioms\n'Generative.NativePortContinuation.step_enacts' does not depend on any axioms\n'Generative.NativePortContinuation.port_history_bound' does not depend on any axioms\n'Generative.NativePortContinuation.continuing_port_needs_arrivals' does not depend on any axioms\n'Generative.NativePortContinuation.arrival_amount' does not depend on any axioms\n'Generative.NativePortContinuation.enact_lowers_potential' does not depend on any axioms\n'Generative.NativePortContinuation.convert_keeps_potential_bound' does not depend on any axioms\n'Generative.NativePortContinuation.phase_keeps_potential' does not depend on any axioms\n'Generative.NativePortContinuation.step_lowers_potential' does not depend on any axioms\n'Generative.NativePortContinuation.port_history_length' does not depend on any axioms\n'Generative.NativePortContinuation.port_cannot_continue_indefinitely' does not depend on any axioms\n"
+    },
+    {
+      "module": "InquirySufficiency",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "source_sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+      "exit_code": 0,
+      "audits": 17,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.completes_has_actual_endpoint' does not depend on any axioms\n'Generative.InquirySufficiency.completes_every_actual_endpoint' does not depend on any axioms\n'Generative.InquirySufficiency.completes_all_actual_steps_safe' does not depend on any axioms\n'Generative.InquirySufficiency.completes_after_actual_prefix' does not depend on any axioms\n'Generative.InquirySufficiency.completes_append_iff' does not depend on any axioms\n'Generative.InquirySufficiency.finite_choice' does not depend on any axioms\n'Generative.InquirySufficiency.bounded_sound_empty_or_sufficient' does not depend on any axioms\n'Generative.InquirySufficiency.sufficient_has_bounded_policy' does not depend on any axioms\n'Generative.InquirySufficiency.sufficiency_iff_bounded_policy' does not depend on any axioms\n'Generative.InquirySufficiency.empty_belief_not_sufficient' does not depend on any axioms\n'Generative.InquirySufficiency.empty_or_inhabited_of_decidable' does not depend on any axioms\n'Generative.InquirySufficiency.nonemptyDecisionFromList' does not depend on any axioms\n'Generative.InquirySufficiency.sufficiency_iff_implication_form' does not depend on any axioms\n'Generative.InquirySufficiency.execution_is_actual_trace' does not depend on any axioms\n'Generative.InquirySufficiency.sound_execution_meets_goal' does not depend on any axioms\n'Generative.InquirySufficiency.sound_execution_preserves_every_prefix_condition' does not depend on any axioms\n'Generative.InquirySufficiency.sound_has_actual_execution' does not depend on any axioms\n"
+    },
+    {
+      "module": "AttainableQuestions",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+      "source_sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8",
+      "exit_code": 0,
+      "audits": 43,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.AttainableQuestions.Question' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.Agreement' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.Coarser' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.Join' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.FamilyJoin' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.Homogeneous' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.InquirySound' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.RefinesLeaves' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.Identifies' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.Attainable' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.IsGreatest' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.identifies_every_actual_execution_safe' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.identifies_has_actual_execution' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.PreservesAgreement' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.LeafContinuations' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.continueAtLeaves' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.ContinuationsIdentify' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.coarser_refl' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.coarser_trans' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.join_projects_left' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.join_projects_right' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.join_least' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.agreement_pair_iff' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.answer_projection_coarser' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.refines_coarser' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.identifies_coarser' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.attainable_downward' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.refines_join_iff' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.shared_policy_join_iff' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.attainable_join_iff_shared_policy' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.refines_family_iff' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.family_shared_policy_iff' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.missing_join_no_greatest' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.missing_join_no_attainable_common_upper' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.agreement_preserved_of_key_preserved' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.homogeneous_after' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.homogeneous_refines_every_continuation' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.continueAtLeaves_sound' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.continueAtLeaves_refines_later' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.continueAtLeaves_retains_first' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.continuing_inquiry_identifies_join' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.continuing_initial_question_identifies_join' does not depend on any axioms\n'Generative.InquirySufficiency.AttainableQuestions.attainable_by_continuing_inquiry' does not depend on any axioms\n"
+    },
+    {
+      "module": "OnePacketQuestions",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+      "source_sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd",
+      "exit_code": 0,
+      "audits": 37,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.OnePacketQuestions.negative' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.positive' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.denied' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.advance' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.receipt' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.process' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.sense' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.safe' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.initial' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.start' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.spent' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.all_actions_enabled' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.step_retains_initial_target' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.trace_retains_initial_target' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.spent_step' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.spent_observation' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.spent_pair_same_class' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.initial_question_constraint' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.test' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.hit' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.stopOnReceipt' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.oneProbe' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.first_probe_binary' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.after_first_probe_binary' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.one_probe_sound' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.same_first_receipt_same_answer' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.after_probe_homogeneous' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.one_probe_identifies' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.attainable_iff' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.isA' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.isB' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.isC' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.separately_attainable' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.joint_answer_unattainable' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.blocked_question_unattainable' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.join_question_unattainable' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketQuestions.no_attainable_common_upper' does not depend on any axioms\n"
+    },
+    {
+      "module": "OnePacketAdmissibility",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+      "source_sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730",
+      "exit_code": 0,
+      "audits": 11,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.OnePacketAdmissibility.packetSafe' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.initial_is_inhabited' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.exhausted_probe_forbidden' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.probe_safe_iff_not_denied' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.initial_probe_admissible' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.forget_packet_safety' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.one_probe_packet_sound' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.attainable_iff_packet_safe' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.exhausted_candidate_forbids_probe' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.separately_packet_attainable' does not depend on any axioms\n'Generative.InquirySufficiency.OnePacketAdmissibility.no_packet_attainable_common_upper' does not depend on any axioms\n"
+    },
+    {
+      "module": "PacketLawDerivation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+      "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
+      "exit_code": 0,
+      "audits": 51,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.PacketLawDerivation.Native' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.targetOf' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.representative' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.every_target_has_raw_representative' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.blocked_representatives_retained' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.profile' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.raw_profiles' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.profile_equal_iff_target_equal' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.native_gate_is_macro_receipt' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.sensorParity' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.native_read_uses_parity' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.same_phase_and_parity_same_reading' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.native_receipt_calibrated_iff' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.inverted_receipt_differs' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.onePacketProjection' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.projection_at_one_packet' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.projection_at_exhaustion' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.two_packet_state_outside_projection' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.alignmentCount' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.phaseAfter' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.alignment_at_most_two' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.alignment_reaches_requested_output' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotateOnce' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotations' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotationEvents' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.RotationsReady' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotation_fields' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotation_held' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotations_ready_from_held_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotations_have_native_trace' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.alignedState' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.alignedEvents' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.AlignmentGuard' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.alignment_guard_supplies_native_guards' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.zero_sub_constructive' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.sub_sub_constructive' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.le_sub_from_sum' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.report' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.calibrated_receipt_matches_macro' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.completed_probe_projects' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.native_guard_realizes_macro_probe' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.aligned_state_properties' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.aligned_probe_realizes_macro' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.exhausted_native_probe_cannot_complete' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.macro_denial_is_not_native_completion' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.sub_add_cancel_constructive' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.sum_le_from_remainder' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.rotations_ready_implies_held_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.alignment_guard_iff_native_guards' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.common_phase_same_schedule' does not depend on any axioms\n'Generative.InquirySufficiency.PacketLawDerivation.two_packet_completion_retains_source' does not depend on any axioms\n"
+    },
+    {
+      "module": "ContactFormation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
+      "source_sha256": "e94ede1ad6ce5cc98b9947a819dfa99918fa2508bf3da4616c845d73cd0a3032",
+      "exit_code": 0,
+      "audits": 26,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.ContactFormation.Formed' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.FormFailure' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.FormResult' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.openContact' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.finishForm' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.form' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formedState' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.Event' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.process' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formCount' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.form_complete' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.form_complete_iff' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.form_capacity_stops' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.form_insufficient_stops' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.form_no_spare_still_draws' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formed_effects' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.failed_formation_retains_contact' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formation_sets_open_class' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formation_leaves_class_C' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formation_changes_profile' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.native_trace_retains_contact' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.native_history_cannot_leave_C' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.opening_requires_formation' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.spare_count' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formations_bounded_by_spares' does not depend on any axioms\n'Generative.InquirySufficiency.ContactFormation.formation_changes_aligned_arrival' does not depend on any axioms\n"
+    },
+    {
+      "module": "FormationClosure",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
+      "source_sha256": "c4ce285254e7a76f2b0bb3a371e590eee7379b84d072df0f1a402a177236092d",
+      "exit_code": 0,
+      "audits": 48,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.FormationLaw.Retains' does not depend on any axioms\n'Generative.FormationLaw.trace_retains' does not depend on any axioms\n'Generative.FormationLaw.law_constant' does not depend on any axioms\n'Generative.FormationLaw.extend' does not depend on any axioms\n'Generative.FormationLaw.formations' does not depend on any axioms\n'Generative.FormationLaw.no_formation_retains' does not depend on any axioms\n'Generative.FormationLaw.change_requires_formation' does not depend on any axioms\n'Generative.FormationLaw.law_change_requires_formation' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.Port' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.Outcome' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.finishRecovery' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.recover' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.formPort' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.activity' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.formation' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.process' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.recoveries' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.contact' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.recover_complete_iff' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.formPort_complete_iff' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.activity_retains_contact' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.class_change_requires_formation' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.completed_native_dissipated_monotone' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.Backed' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.step_preserves_backing' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.trace_preserves_backing' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.pair_record' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.formations_backed_by_failures' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.arrival_false_of_blocked' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.arrival_false_of_misaligned' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.failed_transfer_indistinguishable' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.redundant_formation_draws' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.aligned_transfer_identifies_contact' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.completeNative' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.completeOutcome' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.runEvent' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.completeNative_some' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.completeOutcome_some' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.run' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.runEvent_sound' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.run_sound' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.nativeE' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.recoverE' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.formE' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.start' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.history' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.failure_opens_contact' does not depend on any axioms\n'Generative.InquirySufficiency.FormationClosure.start_native_history_stays_C' does not depend on any axioms\n"
+    },
+    {
+      "module": "AcquiredContact",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean",
+      "source_sha256": "3ccbebd1b8c135a67346eb578934f41fb97a99ef8368053cfc57d1bbf25c9a5b",
+      "exit_code": 0,
+      "audits": 26,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.AcquiredContact.reset_shape' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.a_shape' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.recordBit' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.record_grew' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.record_unchanged' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.record_reads_arrival' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.Reading' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.Inquiry' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.Inquiry.reading' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.inquiryCommands' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.Inquiry.trace' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.inquiry_reveals' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.inquiry_reads_profile' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.inquiry_calibrates_receipt' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.inquiry_identifies_class' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.formDecision' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.decision_identifies_contact' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.open_inquiry_reveals_inversion' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.blocked_hides_inversion' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.receipts_confound_inversions' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.inquiry_needs_two_packets' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.nativeRun' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.acquiredHistory' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.acquiredStart' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.acquired_loop' does not depend on any axioms\n'Generative.InquirySufficiency.AcquiredContact.acquired_start_decides_to_form' does not depend on any axioms\n"
+    },
+    {
+      "module": "AxiomFree",
+      "source": "experiments/valuation-development/lean/AxiomFree.lean",
+      "source_sha256": "74ea6f5a0b0d6db63945d54adbc8dc214963843f7c19b407404e760685968671",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": ""
+    },
+    {
+      "module": "ValuationDevelopment",
+      "source": "experiments/valuation-development/lean/ValuationDevelopment.lean",
+      "source_sha256": "b976c2f213d4b0082f2f7b5482788e62f9397804c32c93310b4de7cb040808e8",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": ""
+    },
+    {
+      "module": "ClosedLoopValuation",
+      "source": "experiments/valuation-development/lean/ClosedLoopValuation.lean",
+      "source_sha256": "a88bf12f0499da2252ae85ca297c887b02b73b3e0dba7bd1e14d072fae92995b",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": ""
+    },
+    {
+      "module": "PortValuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean",
+      "source_sha256": "d0e52b7ee400f919f8ebd2aba1251aa35581a3475d13cc517934e9ab8b39e529",
+      "exit_code": 0,
+      "audits": 11,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.PortValuation.portOrg' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.portWorld' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.world_is_native' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.disposition_after_encounter' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.port_history_dependent' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.port_consequence_dependent' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.port_change_needs_retained_difference' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.disposition_stale_then_recovers' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.unrevisedHistory' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.revision_changes_continuation' does not depend on any axioms\n'Generative.InquirySufficiency.PortValuation.revised_holds_more' does not depend on any axioms\n"
+    },
+    {
+      "module": "ValuationInCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ValuationInCore.lean",
+      "source_sha256": "f611ad79a969d5d5f7237e2c114cde4778d7f074b7a606c4c8d5acdd8aaefeea",
+      "exit_code": 0,
+      "audits": 8,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.ValuationInCore.orgProcess' does not depend on any axioms\n'Generative.ValuationInCore.orgProcess_total' does not depend on any axioms\n'Generative.ValuationInCore.trace_iff_run' does not depend on any axioms\n'Generative.ValuationInCore.run_is_trace' does not depend on any axioms\n'Generative.ValuationInCore.retained_disposition_constant' does not depend on any axioms\n'Generative.ValuationInCore.retained_disposition_not_history_dependent' does not depend on any axioms\n'Generative.ValuationInCore.history_dependence_needs_changed_coordinate' does not depend on any axioms\n'Generative.ValuationInCore.no_retention_is_retained_identity' does not depend on any axioms\n"
+    },
+    {
+      "module": "RevisingPort",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean",
+      "source_sha256": "d4560d3958152e8b02e37679ce20a450e4c27682450ee69ce3789313122f40f3",
+      "exit_code": 0,
+      "audits": 61,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.RevisingPort.actingConsequence' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.acted' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.revising' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.inquiry_retains_broken' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.activity_retains_broken' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.acted_effects' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.step_retains_broken' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.trace_retains_broken' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.encounter_effects' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.encounters' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.memory_is_org_run' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.memory_trace' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.actEvents' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.expand' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.act_trace' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.lift_native' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.inquiry_port_trace' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.port_trace' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.selections' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.formations_append' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.inquiry_forms_nothing' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.formations_are_selections' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.class_change_requires_selection' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.Accurate' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.accurate_selects_blocked' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.encounter_accurate' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.activity_keeps_accurate' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.step_keeps_accurate' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.trace_keeps_accurate' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.met_selects_blocked' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.controlOf' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.controlStep' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.probeOf' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.probeStep' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.inquire' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.actPort' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.actPort_sound' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.encounterPort' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.keep' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.afterAct' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.runRevisingEvent' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.runRevising' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.encounterPort_sound' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.keep_some' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.afterAct_some' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.runAgentEvent_sound' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.runAgent_sound' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.revisingHistory' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.revising_loop' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.profile_never_both' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.decision_rule_unique' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.portOrg_rule' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.one_output_cannot_decide' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.other_output_after_two_rotations' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.brokenPort' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.brokenInquiry' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.broken_readings_agree' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.broken_reset_cannot_decide' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.reading_changes_only_at_encounters' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.unconsumedFormation' does not depend on any axioms\n'Generative.InquirySufficiency.RevisingPort.unconsumed_formation_unbacked' does not depend on any axioms\n"
+    },
+    {
+      "module": "WholePortContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/WholePortContinuation.lean",
+      "source_sha256": "37c00732bba5e341bd439235cfc445d59641a5f7f0621fc91d54c23dfcb7a2ce",
+      "exit_code": 0,
+      "audits": 51,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.WholePortContinuation.open_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.recovery_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.formation_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.activity_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extended_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extended_trace_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.acted_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.inquiry_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revising_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revising_trace_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.continues_exact' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extendedEnacted' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extendedArrived' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revisingEnacted' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revisingArrived' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extended_sustain_law' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revising_sustain_law' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extended_history_bound' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revising_history_bound' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.recovery_lowers_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.formation_lowers_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.activity_lowers_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extended_lowers_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.acted_bounds_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.inquiry_lowers_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revising_lowers_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extended_history_length' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revising_history_length' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.extended_cannot_continue_indefinitely' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.revising_cannot_continue_indefinitely' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawnFormation' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawnProcess' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_sustain_law' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.materialPotential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.double_gap' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.activity_lowers_material' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_lowers_material' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_history_length' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_cannot_continue_indefinitely' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_formation_preserves_native_potential' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawnActed' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawnRevising' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_acted_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_revising_continues' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_revising_sustain_law' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_acted_bounds_material' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.inquiry_lowers_material' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_revising_lowers_material' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_revising_history_length' does not depend on any axioms\n'Generative.InquirySufficiency.WholePortContinuation.undrawn_revising_cannot_continue_indefinitely' does not depend on any axioms\n"
+    },
+    {
+      "module": "RelationalCut",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RelationalCut.lean",
+      "source_sha256": "bb0a5dc53a5af363406f605be28208c97398e81875d9b84f4ea53a5d57a8f7b2",
+      "exit_code": 0,
+      "audits": 9,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.RelationalCut.keeps' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.changes' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.keeps_retains' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.erase' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.cut_trace_iff' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.change_needs_changing_step' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.activity_keeps' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.blocked_formation_changes' does not depend on any axioms\n'Generative.InquirySufficiency.RelationalCut.redundant_formation_keeps' does not depend on any axioms\n"
+    },
+    {
+      "module": "RenewalBasics",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean",
+      "source_sha256": "eab6cd5724280b15dd5dc7df1943978936802189d2dee7f2e51c6f06a587d0b0",
+      "exit_code": 0,
+      "audits": 35,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.Conditional.Renewal.mem_cons_split' does not depend on any axioms\n'Generative.Conditional.Renewal.mem_singleton_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.mem_append_split' does not depend on any axioms\n'Generative.Conditional.Renewal.append_nil_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.append_assoc_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.length_append_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.eq_of_mem_replicate_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.succ_ne_zero_of' does not depend on any axioms\n'Generative.Conditional.Renewal.add_right_cancel_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.add_left_cancel_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.le_of_add_le_add_right_of' does not depend on any axioms\n'Generative.Conditional.Renewal.le_of_add_le_add_left_of' does not depend on any axioms\n'Generative.Conditional.Renewal.add_mul_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.mul_assoc_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.add_sub_cancel_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.add_sub_cancel_left_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.sub_add_cancel_of_le' does not depend on any axioms\n'Generative.Conditional.Renewal.add_sub_of_le_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.le_sub_of_add_le_of' does not depend on any axioms\n'Generative.Conditional.Renewal.sub_eq_zero_of_le_of' does not depend on any axioms\n'Generative.Conditional.Renewal.sub_le_of_le_add_of' does not depend on any axioms\n'Generative.Conditional.Renewal.add_le_of_le_sub_of' does not depend on any axioms\n'Generative.Conditional.Renewal.min_eq_left_of_le' does not depend on any axioms\n'Generative.Conditional.Renewal.min_eq_right_of_le' does not depend on any axioms\n'Generative.Conditional.Renewal.le_min_of' does not depend on any axioms\n'Generative.Conditional.Renewal.min_le_left_of' does not depend on any axioms\n'Generative.Conditional.Renewal.min_le_right_of' does not depend on any axioms\n'Generative.Conditional.Renewal.min_zero_eq' does not depend on any axioms\n'Generative.Conditional.Renewal.add_le_add_of' does not depend on any axioms\n'Generative.Conditional.Renewal.le_of_add_le_left_of' does not depend on any axioms\n'Generative.Conditional.Renewal.le_of_add_le_right_of' does not depend on any axioms\n'Generative.Conditional.Renewal.lt_of_add_one_le_of' does not depend on any axioms\n'Generative.Conditional.Renewal.add_one_le_of_lt_of' does not depend on any axioms\n'Generative.Conditional.Renewal.pos_of_ne_zero_of' does not depend on any axioms\n'Generative.Conditional.Renewal.eq_zero_or_pos_of' does not depend on any axioms\n"
+    },
+    {
+      "module": "RenewalAccounting",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean",
+      "source_sha256": "887f70a476b9e169497e8cf663c469f540bb31cb2d943a5c486a57c6d23f7a1a",
+      "exit_code": 0,
+      "audits": 12,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.Conditional.Renewal.weighted_append' does not depend on any axioms\n'Generative.Conditional.Renewal.weighted_aged' does not depend on any axioms\n'Generative.Conditional.Renewal.weighted_formed_le' does not depend on any axioms\n'Generative.Conditional.Renewal.formation_exceeds_opening' does not depend on any axioms\n'Generative.Conditional.Renewal.opening_step' does not depend on any axioms\n'Generative.Conditional.Renewal.short_opening_step' does not depend on any axioms\n'Generative.Conditional.Renewal.life_step' does not depend on any axioms\n'Generative.Conditional.Renewal.short_renewal_depletes' does not depend on any axioms\n'Generative.Conditional.Renewal.short_renewal_deadline' does not depend on any axioms\n'Generative.Conditional.Renewal.short_kinds_cannot_renew_forever' does not depend on any axioms\n'Generative.Conditional.Renewal.closedOpenShort_ticks' does not depend on any axioms\n'Generative.Conditional.Renewal.closed_open_short_cannot_renew_forever' does not depend on any axioms\n"
+    },
+    {
+      "module": "PortRenewalBoundary",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalBoundary.lean",
+      "source_sha256": "099c64b04c2db3f0c27fc19697ae3de2f2b61ded502530fabcbb925e25795474",
+      "exit_code": 0,
+      "audits": 20,
+      "nonempty_audits": {},
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.PortRenewalBoundary.renewal_sustain_law' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.contact_keeping_sustain_law' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.contact_changing_sustain_law' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.contact_change_has_actual_draw' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.successful_packet_units' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.examplePort' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.formedExample' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.probedExample' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.formationProbe' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.low_overhead_actual_trace' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.low_overhead_covers_whole_segment' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.high_overhead_actual_trace' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.high_overhead_shortfall' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.empty_source_opens_without_arrival' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.not_every_formed_contact_covers_formation' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.favorable_start_still_has_finite_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.recoveredStart' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.recoveredHistory' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.recovery_backed_low_overhead' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalBoundary.recovery_backed_high_overhead_shortfall' does not depend on any axioms\n"
+    },
+    {
+      "module": "PortRenewalLawClosure",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalLawClosure.lean",
+      "source_sha256": "8e5b8971e4f37a464df5e71494f1da46d18c4598cb1b9965f3b93cf17ffd025d",
+      "exit_code": 0,
+      "audits": 41,
+      "nonempty_audits": {
+        "Generative.InquirySufficiency.PortRenewalLawClosure.native_step_amounts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.inquiry_amounts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.inquiry_held_balance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.encounter_source_exact": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.encounter_enacted_exact": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.encounter_held_balance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.encounter_replenishes_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.probe_ready_of_two_draws": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.probe_held_balance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.fundedInquiry": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.funded_open_encounter": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.revising_source_nonincreasing": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.encounter_source_deadline": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.finite_replenishing_encounters": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.finite_encounter_horizon": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.exhausted_revising_step_lowers_held": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.no_exact_channel_tick_lift_at_exhaustion": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.channel_step_iff_actual_requirements": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.channel_forward_of_actual_cover": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.InquirySufficiency.PortRenewalLawClosure.no_unbounded_encounters_from_one_start": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "forbidden_axioms": {},
+      "unaudited_new_declarations": [],
+      "clean": true,
+      "compiler_output": "'Generative.InquirySufficiency.PortRenewalLawClosure.no_channel_birth_from_empty' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.live_tokens_do_not_stand_still' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.no_contact_only_formation_map' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.read_port_step' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.no_contact_invariant_live_map' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.sourceUsed' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.supportStages' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.native_step_amounts' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.inquiry_amounts' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.inquiry_arrival' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.inquiry_held_balance' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.native_source_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.native_trace_source_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.acted_source_retained' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.encounter_source_exact' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.encounter_enacted_exact' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.encounter_arrival_exact' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.encounter_held_balance' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.encounter_replenishes_iff' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.extended_source_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.extended_trace_source_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.revising_source_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.revising_trace_source_bound' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.probe_ready_of_two_draws' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.probe_held_balance' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.fundedInquiry' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.funded_open_encounter' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.encounterCount' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.revising_source_nonincreasing' depends on axioms: [propext,\n Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.encounter_source_deadline' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.finite_replenishing_encounters' depends on axioms: [propext,\n Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.finite_encounter_horizon' depends on axioms: [propext, Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.channel_permits_reserve_preserving_tick' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.exhausted_revising_step_lowers_held' depends on axioms: [propext,\n Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.no_exact_channel_tick_lift_at_exhaustion' depends on axioms: [propext,\n Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.channel_step_iff_actual_requirements' depends on axioms: [propext,\n Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.channel_forward_of_actual_cover' depends on axioms: [propext,\n Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.no_unbounded_encounters_from_one_start' depends on axioms: [propext,\n Quot.sound]\n'Generative.InquirySufficiency.PortRenewalLawClosure.replenishingExampleStart' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.replenishingExampleHistory' does not depend on any axioms\n'Generative.InquirySufficiency.PortRenewalLawClosure.actual_acquisition_and_replenishment' does not depend on any axioms\n"
+    }
+  ],
+  "total_audits": 626,
+  "new_declarations": 41,
+  "standard_axioms_allowed": [
+    "Quot.sound",
+    "propext"
+  ],
+  "checker_sha256": "39b6bead5f2e9f89ab09b5fa0eebbca383880465e2598a02a0740df57feb84bb",
+  "scope": "Exact finite replenishment through actual inquiry and revising histories; contact-only aging/support and exact full-channel mapping obstructions. Standard Lean dependencies are explicit; no derived indefinite renewal, fundamental source law, or normative warrant is claimed."
+}

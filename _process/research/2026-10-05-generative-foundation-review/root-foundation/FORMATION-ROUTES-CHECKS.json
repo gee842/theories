@@ -1,0 +1,472 @@
+{
+  "status": "passed",
+  "utc": "2026-10-07T13:36:49.117610+00:00",
+  "scope": "Document integration, source and receipt binding, retained prior sections and local links; no new compiler run or empirical validation.",
+  "formation_routes_sha256": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+  "new_theorems": 35,
+  "explicit_declaration_audits": 79,
+  "axiom_dependencies": [
+    "propext",
+    "Quot.sound"
+  ],
+  "matched_state_records": 1109,
+  "proof_receipt_sha256": "28cab74bc6be5f7f38c67539dbc13e37a6661cc2ad6ad935053b07b5092826db",
+  "correspondence_receipt_sha256": "acea0d40e84acc399545c32a9456164062e49dce178ab0cbb82049ff40061325",
+  "first_model_unchanged": true,
+  "retained_first_round_document_prefixes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md": {
+      "bytes": 24026,
+      "sha256": "55c37b2af75a8f693931387e818412a8fb34b35fdd84b200247a1b9f7f4a18b1"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md": {
+      "bytes": 19357,
+      "sha256": "c56e712f406a99d40ed1c92023ea60f1ef9a1be4a418048d9ec26b3b80b6e6c7"
+    }
+  },
+  "human_sources": {
+    "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md": "c453e4e37c57a09f6f2304b210898ceeb884a759ca7b0a49668c4fc941ca5a59",
+    "sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md": "37ec4b681bd355562735ea856b5d1cda5d48892beb2253c428767cbef2db706c"
+  },
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md": "76d031ed60d7aecaeb1835ad71b1ee2297b10dff76f54dc2bba4c75659c44019",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md": "07e6bbe9a0786f4bd6b6af698ff08c0574cf5bbfd6f3306764abc426782d7a4a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md": "b89f241984474cabcb15072f713cd2b60ed6d4a9f9d6924f5e454ab9e22ad263",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md": "f39ae7fae0311fa50d7e7198470e28ca59dfbede148d881ba3861f757ce2064f"
+  },
+  "local_links_checked": 108,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md#6-下一方向生成能力怎样继续生成"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "CONTINUATION-GENERATIVITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RegenerativeDiversity.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-COMPARATORS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_correspondence.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correspondence-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-COMPARATORS.md#7-independent-review-of-the-ethical-argument"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_routes_correspondence.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-correspondence-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md#10-continuation-a-common-relation-makes-plural-formation-jointly-achievable"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-COMPARATORS.md#9-next-round-actual-later-use-and-matched-formation-conditions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "FORMATION-ROUTES-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md#6-下一方向生成能力怎样继续生成"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "../../../../sources/12-claude-ai-chats/2026-05-02_生生不息的出处_1bd809e5.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "CONTINUATION-GENERATIVITY.md#5-the-ethical-argument-this-makes-possible"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md#8-shengsheng-the-favorable-significance-of-generative-formation-itself"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "WHOLE-ETHICAL-IDENTIFICATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md#4-形式化接口与下一项实质工作"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RegenerativeDiversity.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "SITUATED-WARRANT-INTEGRATION.md#10-从共同生成重新选择中心问题"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md#6-下一方向生成能力怎样继续生成"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RegenerativeDiversity.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md#10-continuation-a-common-relation-makes-plural-formation-jointly-achievable"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-correspondence-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "FormativeCapacity.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../../GenerativeCore.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../../conditional/RenewalExamples.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../ContinuationRenewal.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "../RegenerativeDiversity.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "check_correspondence.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "CorrespondenceSamples.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "correspondence-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "FormationRoutes.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "routes-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "check_routes.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "check_routes_correspondence.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "RoutesCorrespondenceSamples.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "target": "routes-correspondence-verification.json"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#7-从新增途径到共同实现"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#7-从新增途径到共同实现"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#supported-joint-formation"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#7-从新增途径到共同实现"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIRECTION-INTEGRATION.md#correction-future-conditions-and-the-horizon-of-appraisal"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#7-从新增途径到共同实现"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md#10-continuation-a-common-relation-makes-plural-formation-jointly-achievable"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-COMPARATORS.md#9-next-round-actual-later-use-and-matched-formation-conditions"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md#7-从新增途径到共同实现"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md#10-continuation-a-common-relation-makes-plural-formation-jointly-achievable"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-CAPACITY-COMPARATORS.md#9-next-round-actual-later-use-and-matched-formation-conditions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "GENERATIVE-CAPACITY-COMPARATORS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-COMPARATORS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-INTEGRATION.md#7-从新增途径到共同实现"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md#10-continuation-a-common-relation-makes-plural-formation-jointly-achievable"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generativity-future-horizon.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+      "target": "GENERATIVE-CAPACITY-COMPARATORS.md#9-next-round-actual-later-use-and-matched-formation-conditions"
+    }
+  ],
+  "errors": []
+}

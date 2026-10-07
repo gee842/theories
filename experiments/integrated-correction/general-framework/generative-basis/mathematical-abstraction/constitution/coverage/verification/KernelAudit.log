@@ -1,0 +1,66 @@
+'FiniteAdmission.FiniteCarrier' does not depend on any axioms
+'FiniteAdmission.selections' does not depend on any axioms
+'FiniteAdmission.selection_represents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.finite_domain_family_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.finite_total' does not depend on any axioms
+'FiniteAdmission.predicate_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.finite_carrier_iff_all_predicates_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.full_of_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.full_iff_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.list_admitted' depends on axioms: [propext, Quot.sound]
+'FiniteAdmission.finite_admission_of_formation' depends on axioms: [propext, Quot.sound]
+'FiniteAdmission.full_of_finite_formation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.directed_closure_of_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.graph_finite' depends on axioms: [propext, Quot.sound]
+'FiniteAdmission.function_graph_admitted' depends on axioms: [propext, Quot.sound]
+'FiniteAdmission.bool_finite' depends on axioms: [propext]
+'FiniteAdmission.nat_not_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.predicates_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.assignments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.assignments_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.functions_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.direct_type_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.finite_type_full_admission' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.finite_transport' depends on axioms: [propext, Quot.sound]
+'FiniteAdmission.completed_type_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteAdmission.completed_type_full_admission' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.Interpretation' does not depend on any axioms
+'SignatureTruth.transportInterpretation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.Compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.transported_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.backInterpretation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.backward_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.Term' does not depend on any axioms
+'SignatureTruth.directEval' does not depend on any axioms
+'SignatureTruth.completedEval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.term_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.Formula' does not depend on any axioms
+'SignatureTruth.DirectHolds' does not depend on any axioms
+'SignatureTruth.CompletedHolds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.formula_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.sentence_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.formula_comprehension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.Theory' does not depend on any axioms
+'SignatureTruth.DirectModels' does not depend on any axioms
+'SignatureTruth.CompletedModels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.theory_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.DirectEntails' does not depend on any axioms
+'SignatureTruth.CompletedEntails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.entailment_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.DirectSatisfiable' does not depend on any axioms
+'SignatureTruth.CompletedSatisfiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.satisfiability_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.Formula.all' does not depend on any axioms
+'SignatureTruth.direct_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.NatSymbols' does not depend on any axioms
+'SignatureTruth.natInterpretation' does not depend on any axioms
+'SignatureTruth.addTerm' does not depend on any axioms
+'SignatureTruth.addAssocSentence' does not depend on any axioms
+'SignatureTruth.nat_add_assoc_direct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.nat_add_assoc_completed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignatureTruth.PairSymbols' does not depend on any axioms
+'SignatureTruth.sameInterpretation' does not depend on any axioms
+'SignatureTruth.splitInterpretation' depends on axioms: [propext, Quot.sound]
+'SignatureTruth.pairEquality' does not depend on any axioms
+'SignatureTruth.mismatched_symbols_change_truth' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/ren/.elan/bin/lean",
+    "+leanprover/lean4:v4.29.1",
+    "-o",
+    "RegenerativeDiversity.olean",
+    "RegenerativeDiversity.lean"
+  ],
+  "returncode": 0,
+  "output": ""
+}

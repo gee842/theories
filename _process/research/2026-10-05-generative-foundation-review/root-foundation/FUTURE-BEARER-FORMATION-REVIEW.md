@@ -24,7 +24,7 @@ Reading scope: the complete argument, current whole-process argument/review, rel
 
 ## Continuation review: before the future bearer exists
 
-The §7 comparison addresses a conjunction not established by either antecedent case: an uninvolved participant has a last effective opportunity to redirect independently proceeding A toward B before either different future bearer exists. Earlier imposition/assistance work distinguishes authorship from available help; responsive-formation work already concerns action before response organization exists. The new point is the intersection with future-bearer formation.
+The §7 comparison addresses a conjunction not established by either antecedent case: an uninvolved participant has a last effective opportunity to redirect independently proceeding A toward B before either different future bearer exists. Earlier imposition/assistance work distinguishes contribution to forming the relevant condition from available help; responsive-formation work already concerns action before response organization exists. The new point is the intersection with future-bearer formation.
 
 Independent internal review of the proposed scope required two repairs, now present in the argument. Permission concerns the available means and legitimate access, while justification of the complete choice stays open. The closing window supplies timing, not ethical force. Also, responsibilities that intervention would bring cannot alone justify initially intervening. Doing nothing allows the antecedently organized A to proceed; it is not reclassified as imposing A.
 

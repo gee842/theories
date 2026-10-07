@@ -1,0 +1,105 @@
+{
+  "checked_at_utc": "2026-10-07T15:49:10.196989+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md": "1a4ed1c46ad956ede6dbda540c531ab10002bf2fb910dc4276f80f6f9fe1ae12",
+    "sources/15-codex-theory-conversations/2026-10-07-whole-family-warrant-continuation.md": "f67f7f937e76a3337cee4299f55e79ce5f33f6a347d6b04e8f33dcf5a813f42e"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": false
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": false
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 19,
+  "heading_fragments_checked": 3,
+  "previous_proof_assets_preserved": 70,
+  "existing_receipt_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json": {
+      "sha256": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4",
+      "unchanged": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/verification.json": {
+      "sha256": "ce06d886f39dea16a28f0dc8034615c32e227ce46db47420d0e188287fc7e4d1",
+      "unchanged": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/verification.json": {
+      "sha256": "4e95f6775b2e11f74b26fc17754bb04709aba1a5fc588f76cc72d8a589d071c2",
+      "unchanged": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/verification.json": {
+      "sha256": "c61d09f5b4fdbae1eb556fe04fe13de77448ed555ec45a67d49ab2d329814286",
+      "unchanged": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification.json": {
+      "sha256": "eea2f7bdafacc9ad3550c3a71eb2ba3dffa50138054d89030f47c6bdf6f1959c",
+      "unchanged": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/verification.json": {
+      "sha256": "16d49115b4042739b5280089e4b54082c698a40e6a5dc0a01c3ce5963ad2b384",
+      "unchanged": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/verification.json": {
+      "sha256": "6597c566350181f211170a59e76bb86af4551b34813e66fab0820145854732c6",
+      "unchanged": true
+    }
+  },
+  "new_mathematical_theorems": 0,
+  "new_lean_runs": 0,
+  "internal_review": "Affirmative, proof and counterreview agents independently audited the proposed route against prior Lean sources and warrant studies. All identified the unresolved whole-range commitment. Final root-authored reassessment reviewed: no blockers; single-output coding scope, collective domain explanation, earlier locality warrant and full-target rival preserved. Internal AI review only. Renewed-completion section was subsequently assessed by root only; the earlier agents did not review that addition. No additional independent review is claimed.",
+  "concurrent_change_observation": null,
+  "manifest_sha256": "97b33250b4f04461e2262a6b094af35ebf9c325771dea9fa89376c74b532eb1d",
+  "checker_sha256": "6026ae7004fd6b65373bfb26007f3acf6637cbe0cbcea5e9c749c4c67c304e6e",
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "utc": "2026-10-07T16:29:44.425980+00:00",
+  "scope": "Exact quotation, historical study prefix and proof receipts, and current document links. No new theorem, empirical evidence or compiler rerun.",
+  "source_sha256": "fc9824eb837482c6253e6eb3f7a8bd2932902033bb305d49f09d4021fab9a515",
+  "user_paragraph_sha256": "7243bfe2271b8e71a667146d25ffc7556fc1b6bb5aab247a5eab9f3b6477374f",
+  "prior_integration_prefix_sha256": "16a95ea8b852975a3737293ef16b2b4868a241bea17c37d7dedcfb6577ac5673",
+  "prior_formal_results_unchanged": true,
+  "document_sha256": {
+    "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md": "fc9824eb837482c6253e6eb3f7a8bd2932902033bb305d49f09d4021fab9a515",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md": "0173eddbb9667ec33e340e1f3dd884eb491bb3d8894c085c62becd7a3c84e4cd",
+    "RESEARCH.md": "cc2480030923e8e56b215ae4c6bb13d7335ec29783fdcd3f5c88da5ddc77cd79",
+    "sources/SOURCES.md": "5190c7586d5fb2c335ff96c8ca739209ad41e8274587d63468b641ce86cd4e69",
+    "theories/shengsheng-buxi-generative-existence/README.md": "0dfdfe96815940a968cff2790cdd9bc74e0a22e11a1bb0e93576f80ccd936b13",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "33fa469015456e840c0b8b423514de68b056a501df7508722e060e0b5fa62143",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": "dd087d722b9695dae15ced7dc8bae717dd70e3f8ec4a815655995bee1e5461ed"
+  },
+  "local_links_checked": 14,
+  "links": [
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#11-重组与建设性结束"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#15-生成的规范起点与未来的构成条件"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md",
+      "target": "GENERATION-FUTURE-PREMISE-CHECKS.json"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#15-生成的规范起点与未来的构成条件"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#15-生成的规范起点与未来的构成条件"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#an-explicit-ethical-starting-point-and-the-generative-conditions-of-a-future"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#15-生成的规范起点与未来的构成条件"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#15-生成的规范起点与未来的构成条件"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md#15-生成的规范起点与未来的构成条件"
+    }
+  ],
+  "errors": []
+}

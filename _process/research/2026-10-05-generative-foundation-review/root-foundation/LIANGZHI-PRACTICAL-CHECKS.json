@@ -1,0 +1,1387 @@
+{
+  "status": "passed",
+  "scope": "Owned text and links; independent source/log/compiler/checker/contract bindings of the new passed Lean receipt. No second compilation or empirical run.",
+  "ledger_sha256": "74cf7ceeba601d3221e2c4d6b0b3a4c9612779b56b33631fc02661cd8d45fe4f",
+  "checker_sha256": "e832ecfba5d9603ba01ed1f6d8f703b251543d3082a4b5bf6a13feb81d856b7f",
+  "local_links_checked": 121,
+  "checks": [
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "AGENTS.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "AGENTS.md",
+        "target": "sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "AGENTS.md",
+        "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "AGENTS.md",
+        "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "_process/BRIEF.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/BRIEF.md",
+        "target": "../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/BRIEF.md",
+        "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/BRIEF.md",
+        "target": "research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "RESEARCH.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "RESEARCH.md",
+        "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/README.md",
+        "target": "unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/README.md",
+        "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-EVOLUTION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-PRACTICAL-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-PRACTICAL-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "LIANGZHI-PRACTICAL-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "target": "../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "target": "LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_shared_fragment",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md",
+        "target": "LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md",
+        "target": "CONTINUATION-GENERATIVITY.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md",
+        "target": "LIANGZHI-PRACTICAL-SOURCES.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-CHECK.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md#7-同一关切可以改变回应接续也可以通过交接实现"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-PRACTICAL-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-PRACTICAL-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-PRACTICAL-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-EVOLUTION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "target": "CONTINUATION-GENERATIVITY.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "FULFILLMENT-WITHDRAWAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SEMANTICS.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/check.py"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/receipt.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482224854000/receipt.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/receipt.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/receipt.json"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "LIANGZHI-PRACTICAL-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "LIANGZHI-PRACTICAL-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-REVIEW.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md",
+        "target": "LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md",
+        "target": "WANG-YANGMING-COMPLETION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md",
+        "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md",
+        "target": "SHENGSHENG-DIRECTION-RECONSTRUCTION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md",
+        "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md",
+        "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "../../../../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "SupportHandoff.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "SEMANTICS.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "check.py"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "checks/1791378712930201000/receipt.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "checks/1791378482224854000/receipt.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "checks/1791378482401590000/receipt.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md",
+        "target": "checks/1791378575636007000/receipt.json"
+      }
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SEMANTICS.md"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/check.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482224854000/SEMANTICS.md"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482224854000/SupportHandoff.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482224854000/check.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482224854000/preflight.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482224854000/receipt.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/CoupledOccurrence.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/CoupledOccurrence.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/GenerativeCore.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/GenerativeCore.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/PurposeCorrection.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/PurposeCorrection.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/SEMANTICS.md"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/SupportHandoff.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/SupportHandoff.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/check.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/inputs.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378482401590000/receipt.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/CoupledOccurrence.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/CoupledOccurrence.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/GenerativeCore.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/GenerativeCore.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/PurposeCorrection.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/PurposeCorrection.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/SEMANTICS.md"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/SupportHandoff.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/SupportHandoff.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/check.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/inputs.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378575636007000/receipt.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/CoupledOccurrence.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/CoupledOccurrence.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/GenerativeCore.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/GenerativeCore.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/PurposeCorrection.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/PurposeCorrection.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/SEMANTICS.md"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/SupportHandoff.lean"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/SupportHandoff.txt"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/check.py"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/inputs.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/checks/1791378712930201000/receipt.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/verification.json"
+    },
+    {
+      "name": "owned_file_hash",
+      "passed": true,
+      "detail": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "WANG-YANGMING.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-REVIEW.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/README.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "SELECTOR-REVISION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "LEARNING-ROUTE-REVISION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "VALUATION-DEVELOPMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "EVALUATIVE-SUCCESSION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/DevelopedResponse.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/verification.json"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+      }
+    },
+    {
+      "name": "local_link",
+      "passed": true,
+      "detail": {
+        "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+      }
+    },
+    {
+      "name": "proof_receipt_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "proof_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compiler_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "proof_checker_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_contract_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inherited_receipt_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "module_status",
+      "passed": true,
+      "detail": "GenerativeCore"
+    },
+    {
+      "name": "source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "name": "log_binding",
+      "passed": true,
+      "detail": "checks/1791378712930201000/GenerativeCore.txt"
+    },
+    {
+      "name": "module_status",
+      "passed": true,
+      "detail": "CoupledOccurrence"
+    },
+    {
+      "name": "source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean"
+    },
+    {
+      "name": "log_binding",
+      "passed": true,
+      "detail": "checks/1791378712930201000/CoupledOccurrence.txt"
+    },
+    {
+      "name": "module_status",
+      "passed": true,
+      "detail": "PurposeCorrection"
+    },
+    {
+      "name": "source_binding",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean"
+    },
+    {
+      "name": "log_binding",
+      "passed": true,
+      "detail": "checks/1791378712930201000/PurposeCorrection.txt"
+    },
+    {
+      "name": "module_status",
+      "passed": true,
+      "detail": "SupportHandoff"
+    },
+    {
+      "name": "source_binding",
+      "passed": true,
+      "detail": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean"
+    },
+    {
+      "name": "log_binding",
+      "passed": true,
+      "detail": "checks/1791378712930201000/SupportHandoff.txt"
+    },
+    {
+      "name": "audit_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_new_theorems_audited",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only_reported_standard_dependencies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_dependency_distribution",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

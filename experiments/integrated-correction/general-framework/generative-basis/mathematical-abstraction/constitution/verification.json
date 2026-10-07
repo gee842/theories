@@ -1,0 +1,290 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean": {
+      "sha256": "c20122408b81abbe9fba073ee607dba4acfe5d58c2bbaba34a6c517782b7a0ab",
+      "named_declarations": 56,
+      "theorems": 26
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/EqualityGenerativity.lean": {
+      "sha256": "0a8ba41d0274685378d14cac7841486664163d2f11946dae233de19f53d15ffe",
+      "named_declarations": 28,
+      "theorems": 17
+    }
+  },
+  "named_declarations_audited": 84,
+  "theorems_checked": 43,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "RootConstitution.Signature": [],
+    "RootConstitution.Term": [],
+    "RootConstitution.Formula": [],
+    "RootConstitution.Structure": [],
+    "RootConstitution.Term.eval": [],
+    "RootConstitution.cons": [
+      "propext"
+    ],
+    "RootConstitution.Formula.sat": [
+      "propext"
+    ],
+    "RootConstitution.Embedding": [],
+    "RootConstitution.map_cons": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.eval_embedding": [
+      "Quot.sound"
+    ],
+    "RootConstitution.Elementary": [
+      "propext"
+    ],
+    "RootConstitution.WitnessAdequate": [
+      "propext"
+    ],
+    "RootConstitution.elementary_witness": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.witness_elementary": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.elementary_iff_witness": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.Formula.all": [],
+    "RootConstitution.all_semantics": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.WitnessSelectors": [
+      "propext"
+    ],
+    "RootConstitution.conditional_witness": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.classicalSelectors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.Hull": [
+      "propext"
+    ],
+    "RootConstitution.ClosedUnder": [
+      "propext"
+    ],
+    "RootConstitution.hull_closed": [
+      "propext"
+    ],
+    "RootConstitution.hull_least": [
+      "propext"
+    ],
+    "RootConstitution.hull_iff_all_closed": [
+      "propext"
+    ],
+    "RootConstitution.hullStructure": [
+      "propext"
+    ],
+    "RootConstitution.hullEmbedding": [
+      "propext"
+    ],
+    "RootConstitution.hull_witnessAdequate": [
+      "propext"
+    ],
+    "RootConstitution.hull_elementary": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.hull_contains_seeds": [
+      "propext"
+    ],
+    "RootConstitution.hull_nonempty": [
+      "propext"
+    ],
+    "RootConstitution.Term.rename": [],
+    "RootConstitution.liftRename": [
+      "propext"
+    ],
+    "RootConstitution.Formula.rename": [
+      "propext"
+    ],
+    "RootConstitution.eval_rename": [
+      "Quot.sound"
+    ],
+    "RootConstitution.cons_liftRename": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.sat_rename": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.emptyAssignment": [],
+    "RootConstitution.empty_assignment_unique": [
+      "Quot.sound"
+    ],
+    "RootConstitution.Formula.or": [],
+    "RootConstitution.or_semantics": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.tagged": [
+      "propext"
+    ],
+    "RootConstitution.tagged_semantics": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.tagged_has_witness": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.selector_recovers_sentence": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.IterationFunction": [],
+    "RootConstitution.iterationLanguage": [],
+    "RootConstitution.natIteration": [
+      "propext"
+    ],
+    "RootConstitution.intIteration": [
+      "propext"
+    ],
+    "RootConstitution.naturalEmbedding": [
+      "propext"
+    ],
+    "RootConstitution.predecessorBody": [
+      "propext"
+    ],
+    "RootConstitution.predecessorSentence": [
+      "propext"
+    ],
+    "RootConstitution.integer_predecessor_truth": [
+      "propext"
+    ],
+    "RootConstitution.natural_predecessor_false": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.compositional_embedding_not_elementary": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RootConstitution.compositional_embedding_not_witnessAdequate": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.Formula": [],
+    "EqualityGenerativity.extend": [
+      "propext"
+    ],
+    "EqualityGenerativity.Holds": [
+      "propext"
+    ],
+    "EqualityGenerativity.SamePattern": [],
+    "EqualityGenerativity.Fresh": [],
+    "EqualityGenerativity.HasFresh": [],
+    "EqualityGenerativity.pattern_symm": [],
+    "EqualityGenerativity.pattern_extend": [
+      "propext"
+    ],
+    "EqualityGenerativity.extend_pattern": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.truth_of_pattern": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.noVars": [],
+    "EqualityGenerativity.sentence_agreement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.upper": [
+      "propext"
+    ],
+    "EqualityGenerativity.le_upper": [
+      "propext"
+    ],
+    "EqualityGenerativity.upper_succ_fresh": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.nat_hasFresh": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.finite_witness_reduction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.evaluate": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.evaluate_correct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.sentence_evaluation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.double": [],
+    "EqualityGenerativity.double_injective": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.double_not_surjective": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.injective_preserves_equality_formulas": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.double_preserves_all_equality_formulas": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualityGenerativity.GeneratedNat": [],
+    "EqualityGenerativity.every_nat_generated": [],
+    "EqualityGenerativity.generated_nat_least": []
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/check.py": "cd23329bcdfa22bef102cae37c3532b21f9769c5f0c7854764e5e38dca115a29",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/verification/KernelAudit.lean": "5f613dbedd7b5b5b82615072d71334bf985204c92009ba63c412606a361f88cf",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/verification/KernelAudit.log": "0d67c1dcee7734f7191ec60fb788aaff748debf676e6ff1424519d471b6a2d5d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/verification/WitnessHull.log": "e85e9c63393f84b3d4ef79f9697e9999c9e8356cd1e8e877d1ff7a04b58d656f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/verification/EqualityGenerativity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scope": "Conditional semantic theorems and explicit pure-equality decision procedure; not unique metaphysical grounding, automatic target selection, or full arithmetic decision."
+}

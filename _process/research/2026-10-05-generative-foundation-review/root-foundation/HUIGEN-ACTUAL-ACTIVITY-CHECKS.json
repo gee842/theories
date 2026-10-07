@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "status": "bounded_link_and_artifact_verification_passed_full_check_failed",
+  "scope": "Local-link phase completed using explicit historical HTML anchors; old non-Markdown artifacts preserved except owned document-parser edit. Strict original claim-row byte-preservation fails at five concurrent terminology adaptations. No proof build or empirical revalidation.",
+  "full_checker_result": {
+    "local_links_checked": 1066,
+    "document_inputs": 28,
+    "original_claim_rows": 55,
+    "current_claim_rows": 81,
+    "failed_check": "changed, missing or duplicated original claim row",
+    "checker_line": 216
+  },
+  "claim_row_assessment": {
+    "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+    "exact_original_rows_still_present": 50,
+    "strictly_changed_rows": [
+      {
+        "historical": "| Learned concern can form from initially zero learned significance and recognition | Conditional construction in a parallel branch | Primitive valence, shared evaluation routing, informative paid learning, and specified recipient classes remain premises | Source S19 |",
+        "current": "| Learned concern can form from initially zero learned significance and recognition | Conditional construction in a parallel branch | Primitive valence, shared evaluation routing, informative resource-dependent learning, and specified recipient classes remain premises | Source S19 |",
+        "historical_sha256": "9c5177f51de977fe7aa29627c0ef4a5511dc0cb4daadbfd7f824ca6c7d860586",
+        "current_sha256": "d3f408d397f53ee767e0dd8ebaaa1da3a889686743623d117af17edefc69146c"
+      },
+      {
+        "historical": "| A joint process can select concern, evidence, input control and paid reconstruction from zero current learned capacities | Conditional finite and infinite equilibrium construction | Dated account objectives, explicit architecture and attack repertoire, strict incentive and prefix-resource region; no universal selection law | Joint formation J1–J9 |",
+        "current": "| A joint process can select concern, evidence, input control and resource-dependent reconstruction from zero current learned capacities | Conditional finite and infinite equilibrium construction | Dated account objectives, explicit architecture and attack repertoire, strict incentive and prefix-resource region; no universal selection law | Joint formation J1–J9 |",
+        "historical_sha256": "f4ea3df52d8e26649f23a5ae573fa3668e2a6f971e394ab1ece8f939d077a6da",
+        "current_sha256": "88a83b9e7246fa87c35e8b6662dececea5816932e9a6b837c737885199ad7ed1"
+      },
+      {
+        "historical": "| Paid calibration can identify a finite technical sensor interpretation | Constructive finite refinement | Correct binary fixtures, stationary polarity, faithful transfer and stated breach costs; post-calibration drift defeats it | Joint study evidence checker |",
+        "current": "| Resource-dependent calibration can identify a finite technical sensor interpretation | Constructive finite refinement | Correct binary fixtures, stationary polarity, faithful transfer and stated breach costs; post-calibration drift defeats it | Joint study evidence checker |",
+        "historical_sha256": "2f689d93da37547513455c5716e13d9d5140fda14c6f132cac69be0711571e13",
+        "current_sha256": "f2d6fc86b07cff04d7a6b3dec513d224559adad89fadbd8cb342688c2a377bc8"
+      },
+      {
+        "historical": "| Paid reason revision, protection, and reconstruction can coexist in one selected process | Conditional finite and infinite equilibrium existence | Positive root, sound finite audit, known contexts, useful commercial output, monotone gate prices and tie rule, costly joint exclusion, and every-prefix finance; protection covers admitted patients, not every ethically relevant case | [Settlement formal result](REVISABLE-CONCERN-SETTLEMENT.md#2-a-process-that-actually-chooses-revision-and-renewal); Source S23 |",
+        "current": "| Resource-dependent reason revision, protection, and reconstruction can coexist in one selected process | Conditional finite and infinite equilibrium existence | Positive root, sound finite audit, known contexts, useful commercial output, monotone gate prices and tie rule, costly joint exclusion, and every-prefix finance; protection covers admitted patients, not every ethically relevant case | [Settlement formal result](REVISABLE-CONCERN-SETTLEMENT.md#2-a-process-that-actually-chooses-revision-and-renewal); Source S23 |",
+        "historical_sha256": "51ba2a6a4c683adb406ca59a0f9dc937ac1a8fe964aebd6b8c796f795c5aac23",
+        "current_sha256": "b699bc3d1f6805a95658d8f8f887a6c525c0a19f37c278030f347264d5b233ac"
+      },
+      {
+        "historical": "| The audit can construct a useful feature absent among its initial primitives | Bounded construction and finite check | Supplied grammar, three binary measurements, authored eight-case table, and paid operations; not unrestricted discovery or a new ethical reason | [Feature construction](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/FEATURE-CONSTRUCTION.md) |",
+        "current": "| The audit can construct a useful feature absent among its initial primitives | Bounded construction and finite check | Supplied grammar, three binary measurements, authored eight-case table, and resource-dependent operations; not unrestricted discovery or a new ethical reason | [Feature construction](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/FEATURE-CONSTRUCTION.md) |",
+        "historical_sha256": "63ddbc3c8fa5e0e2efe8dc31b5d2fc227145bc3ca6f30a12efc829b29a1aaff3",
+        "current_sha256": "f6cf2cc264252c59cdc7fb645dd653596c58a80b900716ce40a3a46ed343d0ca"
+      }
+    ],
+    "assessment": "All five changed original rows match the precise paid/Paid to resource-dependent/Resource-dependent substitutions. This does not make their bytes unchanged or certify their proofs. The strict original-row guard remains unmodified.",
+    "unchanged_non_markdown_artifacts_excluding_owned_checker": 29
+  },
+  "checker_changes": "Recognize explicit HTML a id aliases alongside existing generated heading anchors. Claim-row preservation assertions remain unchanged.",
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md": "03df4d49cba34d2f5a51d4326d18c821e66762c46b23451aac4fd33227503804",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md": "0443f84198a0f313ea1f6aa5f57556e035b7a9f3519013660be908a4902f8f5d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md": "5273f8154ef49a337cf0b5b59e8f5a2a6e25939f0bec0be410bfb2b8f7bf0c70",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md": "04d7fc73d0a8163ac5ca55de0808f3ca56cf62c81154e7a267d0beaf7a604a77",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CHECK.py": "787c3a63149f8632b4a2be5bb1500a6b9142576367b7ce52d69fb29194535ba1",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "955cdb998e9e3ee9a0f0e0cf58f33bcfdc1089e7b70ceea3f6ad093a73ffd2fa"
+  },
+  "index_paragraph_sha256": {
+    "RESEARCH.md": "290ee9206f7e598413f9298b18b8900078e74f8f19138c2681118031425f1ca7",
+    "theories/shengsheng-buxi-generative-existence/README.md": "ec58440227daaf9cbc32783de76964771d41ccf05979443eeb96b5d5a8fde56e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "ad706da03501bec6588c3d41523e68286382a15e5ab6ec55f0cdc48b3beaf56a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "8f5e7424567ff55fe5a65c91140aac53e80019bb9ba64482301b6f392220b408"
+  },
+  "new_primary_works": 0,
+  "primary_works_extended": 1,
+  "new_proof_builds": 0,
+  "new_empirical_studies": 0,
+  "full_receipt_updated": false
+}

@@ -1,0 +1,58 @@
+GenerativeTradeoff.retained_actuality_receives_certified_necessity.{u, v, w} {Circumstance : Type u} {Response : Type v}
+  {History : Type w} {problem : GenerativeTradeoff.Problem Circumstance Response History}
+  {candidates : Circumstance → Prop} {actual : Circumstance} (retained : candidates actual)
+  (certified : GenerativeTradeoff.Certain candidates (GenerativeTradeoff.NecessaryLoss problem)) :
+  GenerativeTradeoff.NecessaryLoss problem actual
+GenerativeTradeoff.refinement_preserves_certified_necessity.{u, v, w} {Circumstance : Type u} {Response : Type v}
+  {History : Type w} {problem : GenerativeTradeoff.Problem Circumstance Response History}
+  {previous refined : Circumstance → Prop}
+  (subset : ∀ (circumstance : Circumstance), refined circumstance → previous circumstance)
+  (certified : GenerativeTradeoff.Certain previous (GenerativeTradeoff.NecessaryLoss problem)) :
+  GenerativeTradeoff.Certain refined (GenerativeTradeoff.NecessaryLoss problem)
+GenerativeTradeoff.actual_alternative_refutes_necessity.{u, v, w} {Circumstance : Type u} {Response : Type v}
+  {History : Type w} {problem : GenerativeTradeoff.Problem Circumstance Response History} {circumstance : Circumstance}
+  {response : Response} (alternative : GenerativeTradeoff.LosslessSuccess problem circumstance response) :
+  ¬GenerativeTradeoff.NecessaryLoss problem circumstance
+GenerativeTradeoff.uniform_response_supplies_each_route.{u, v, w} {Circumstance : Type u} {Response : Type v}
+  {History : Type w} {problem : GenerativeTradeoff.Problem Circumstance Response History}
+  {candidates : Circumstance → Prop} {response : Response}
+  (uniform : GenerativeTradeoff.UniformLossless problem candidates response) :
+  GenerativeTradeoff.Certain candidates fun circumstance =>
+    ∃ response, GenerativeTradeoff.LosslessSuccess problem circumstance response
+GenerativeTradeoff.restoration_matches_endpoint_but_retains_interruption :
+  GenerativeTradeoff.endpoint GenerativeTradeoff.restored =
+      GenerativeTradeoff.endpoint (GenerativeTradeoff.maintained true) ∧
+    GenerativeTradeoff.interruption GenerativeTradeoff.restored ∧
+      ¬GenerativeTradeoff.interruption (GenerativeTradeoff.maintained true)
+GenerativeTradeoff.absent_handover_makes_interruption_necessary :
+  GenerativeTradeoff.NecessaryLoss GenerativeTradeoff.handoverProblem GenerativeTradeoff.SupportCase.noHandover
+GenerativeTradeoff.available_handovers_are_actual_lossless_alternatives :
+  GenerativeTradeoff.LosslessSuccess GenerativeTradeoff.handoverProblem GenerativeTradeoff.SupportCase.leftReady
+      GenerativeTradeoff.Response.leftHandover ∧
+    GenerativeTradeoff.LosslessSuccess GenerativeTradeoff.handoverProblem GenerativeTradeoff.SupportCase.rightReady
+      GenerativeTradeoff.Response.rightHandover
+GenerativeTradeoff.truthful_identification_can_resolve_uncertain_necessity :
+  ¬GenerativeTradeoff.Certain (fun x => True) (GenerativeTradeoff.NecessaryLoss GenerativeTradeoff.handoverProblem) ∧
+    GenerativeTradeoff.onlyNoHandover GenerativeTradeoff.SupportCase.noHandover ∧
+      GenerativeTradeoff.Certain GenerativeTradeoff.onlyNoHandover
+        (GenerativeTradeoff.NecessaryLoss GenerativeTradeoff.handoverProblem)
+GenerativeTradeoff.deleting_actual_circumstance_fabricates_necessity :
+  GenerativeTradeoff.Certain GenerativeTradeoff.onlyNoHandover
+      (GenerativeTradeoff.NecessaryLoss GenerativeTradeoff.handoverProblem) ∧
+    ¬GenerativeTradeoff.onlyNoHandover GenerativeTradeoff.SupportCase.leftReady ∧
+      ¬GenerativeTradeoff.NecessaryLoss GenerativeTradeoff.handoverProblem GenerativeTradeoff.SupportCase.leftReady
+GenerativeTradeoff.pointwise_routes_do_not_supply_uniform_response :
+  (GenerativeTradeoff.Certain GenerativeTradeoff.unresolvedSide fun circumstance =>
+      ∃ response, GenerativeTradeoff.LosslessSuccess GenerativeTradeoff.handoverProblem circumstance response) ∧
+    ¬∃ response,
+        GenerativeTradeoff.UniformLossless GenerativeTradeoff.handoverProblem GenerativeTradeoff.unresolvedSide response
+GenerativeTradeoff.conditional_necessity_allows_lossless_nonattainment :
+  GenerativeTradeoff.NecessaryLoss GenerativeTradeoff.handoverProblem GenerativeTradeoff.SupportCase.noHandover ∧
+    GenerativeTradeoff.handoverProblem.feasible GenerativeTradeoff.SupportCase.noHandover
+        GenerativeTradeoff.Response.keep ∧
+      ¬GenerativeTradeoff.handoverProblem.loss
+            (GenerativeTradeoff.handoverProblem.continuation GenerativeTradeoff.SupportCase.noHandover
+              GenerativeTradeoff.Response.keep) ∧
+        ¬GenerativeTradeoff.handoverProblem.target
+            (GenerativeTradeoff.handoverProblem.continuation GenerativeTradeoff.SupportCase.noHandover
+              GenerativeTradeoff.Response.keep)

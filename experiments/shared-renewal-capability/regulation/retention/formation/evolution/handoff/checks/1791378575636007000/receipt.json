@@ -1,0 +1,171 @@
+{
+  "status": "failed",
+  "checked_at_utc": "2026-10-07T13:09:37.633411+00:00",
+  "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "547d56e6d23be6e034cde76eaa1afb246e54283d01f984d351b3523548fb2695",
+  "semantic_contract_sha256": "03eba2587afe52422827f17bbe01bc22c3e197ca7cbf1a34b86aebde7eb0c878",
+  "inherited_receipt_sha256": "dd1b1c4104b647a9c3d14c2c4f2116abe259581a411a8757e6f21cbb71ff37c7",
+  "fresh_temporary_build": true,
+  "inputs_unchanged": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "log": "checks/1791378575636007000/GenerativeCore.txt",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "CoupledOccurrence",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
+      "sha256": "b438acca4cf1403d6db93a5012b9dcc4f10acf1bff1dea18049edbc88fc5bd1e",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.CoupledOccurrence.erase_described_trace": [],
+        "Generative.CoupledOccurrence.describe_actual_trace": [],
+        "Generative.CoupledOccurrence.described_trace_exact": [],
+        "Generative.CoupledOccurrence.described_append_actual_iff": [],
+        "Generative.CoupledOccurrence.map_described_trace": [],
+        "Generative.CoupledOccurrence.actual_continuation_retains_occurrence": [
+          "propext"
+        ],
+        "Generative.CoupledOccurrence.replay_append": [
+          "propext"
+        ]
+      },
+      "log": "checks/1791378575636007000/CoupledOccurrence.txt",
+      "log_sha256": "6b6336060815ebe23c2f13d5c745a714e709c170b756611f1de55c05637c49a1"
+    },
+    {
+      "module": "PurposeCorrection",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean",
+      "sha256": "a420b666b6accf26670dd2337d357a23fb960420e7c9003a45b37944876f1873",
+      "new": false,
+      "passed": true,
+      "exit_code": 0,
+      "axioms_by_declaration": {
+        "Generative.PurposeCorrection.guarded_trace_underlying": [],
+        "Generative.PurposeCorrection.guarded_trace_terminal": [],
+        "Generative.PurposeCorrection.contract_trace_underlying": [],
+        "Generative.PurposeCorrection.terminal_is_viable": [],
+        "Generative.PurposeCorrection.viable_after_guarded_prefix": [],
+        "Generative.PurposeCorrection.contract_append_iff": [],
+        "Generative.PurposeCorrection.viable_has_condition": [],
+        "Generative.PurposeCorrection.productive_trace_guarded": [],
+        "Generative.PurposeCorrection.productive_trace_terminal_viable": [],
+        "Generative.PurposeCorrection.guarded_trace_to_viable_is_productive": [],
+        "Generative.PurposeCorrection.productive_trace_exact": [],
+        "Generative.PurposeCorrection.productive_contract_exact": [],
+        "Generative.PurposeCorrection.productive_restriction_largest": [],
+        "Generative.PurposeCorrection.contract_extension": [],
+        "Generative.PurposeCorrection.viable_extension": [],
+        "Generative.PurposeCorrection.no_restriction_creates_completion": [],
+        "Generative.PurposeCorrection.productive_capacity_extension": [],
+        "Generative.PurposeCorrection.guarded_occurrence_conditions": [
+          "propext"
+        ],
+        "Generative.PurposeCorrection.earlier_violation_survives_suffix": [
+          "propext"
+        ],
+        "Generative.PurposeCorrection.actual_violation_not_erased": [
+          "propext"
+        ]
+      },
+      "log": "checks/1791378575636007000/PurposeCorrection.txt",
+      "log_sha256": "f736b2a6fbda8991a8636a94c9adeca8ddbe9b3c7b1d50cedc0fe881921caa43"
+    },
+    {
+      "module": "SupportHandoff",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean",
+      "sha256": "00e66dd8e5ac22f6df7a5750735be8eab52cdc7c3eb1cc0b49d523724573da14",
+      "new": true,
+      "passed": false,
+      "exit_code": 1,
+      "axioms_by_declaration": {
+        "SupportHandoff.runnable_trace": [],
+        "SupportHandoff.step_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SupportHandoff.step_support": [
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "SupportHandoff.trace_material": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SupportHandoff.trace_support": [
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "SupportHandoff.insufficient_support_for_word": [
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "SupportHandoff.disconnected_second_cannot_produce": [
+          "propext"
+        ],
+        "SupportHandoff.successful_attempt_constructs_product": [
+          "Quot.sound",
+          "propext"
+        ],
+        "SupportHandoff.unavailable_attempt_is_actual": [
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "SupportHandoff.formation_and_dependency_are_actual": [],
+        "SupportHandoff.replacement_is_assembled_connected_and_tested": [],
+        "SupportHandoff.original_support_ends_before_real_completion": [],
+        "SupportHandoff.whole_handoff_preserves_material_and_support": [],
+        "SupportHandoff.early_exit_reaches_an_actual_failed_attempt": [],
+        "SupportHandoff.recovery_can_complete_the_same_activity": [],
+        "SupportHandoff.real_completion_needs_no_replacement": [],
+        "SupportHandoff.low_support_blocks_handoff_but_not_finite_ending": [
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "SupportHandoff.runnable_described_trace": [],
+        "SupportHandoff.later_recovery_does_not_erase_failed_occurrence": [
+          "propext"
+        ]
+      },
+      "log": "checks/1791378575636007000/SupportHandoff.txt",
+      "log_sha256": "2447cd58545d6551f6a8ef3a4c76c8280ea7f3385e07b17760e899fcad835eb0"
+    }
+  ],
+  "new_audits": 19,
+  "scope": "Finite material support handoff in one explicit process: assembly, connection, actual replacement work, original support ending before the activity completes, real failed attempt after early withdrawal, recovery, and finite ending without replacement. General material conservation and operational-support accounting. Local law and quota supplied; no native chemistry refinement, biological implementation, moral obligation, infinite renewal or universal ethical conclusion."
+}

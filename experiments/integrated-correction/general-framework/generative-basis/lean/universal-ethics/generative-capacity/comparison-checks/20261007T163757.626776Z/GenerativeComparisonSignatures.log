@@ -1,0 +1,52 @@
+GenerativeComparison.new_realization_has_positive_relevance.{u, v} {Whole : Type u} {Claim : Type v}
+  {inventory : GenerativeComparison.Inventory Whole Claim} {PositiveRelevant : Whole → Claim → Prop}
+  (positive : GenerativeComparison.G0 inventory PositiveRelevant) {first second : Whole}
+  (extension : GenerativeComparison.GenerativeExtension inventory first second) :
+  ∃ claim, PositiveRelevant second claim ∧ ¬inventory.realized first claim
+GenerativeComparison.generative_extension_irreflexive.{u, v} {Whole : Type u} {Claim : Type v}
+  (inventory : GenerativeComparison.Inventory Whole Claim) (history : Whole) :
+  ¬GenerativeComparison.GenerativeExtension inventory history history
+GenerativeComparison.generative_extension_transitive.{u, v} {Whole : Type u} {Claim : Type v}
+  {inventory : GenerativeComparison.Inventory Whole Claim} {first second third : Whole}
+  (left : GenerativeComparison.GenerativeExtension inventory first second)
+  (right : GenerativeComparison.GenerativeExtension inventory second third) :
+  GenerativeComparison.GenerativeExtension inventory first third
+GenerativeComparison.comparison_supplies_situated_reason.{u, v, w} {Whole : Type u} {Claim : Type v} {Option : Type w}
+  {inventory : GenerativeComparison.Inventory Whole Claim} {situation : GenerativeComparison.Situation Whole Option}
+  {Better : Whole → Whole → Prop} {Reason : Option → Option → Prop}
+  (comparison : GenerativeComparison.ComparisonPrinciple inventory Better)
+  (practical : GenerativeComparison.PracticalArticulation situation Better Reason) {first second : Option}
+  (firstFeasible : situation.feasible first) (secondFeasible : situation.feasible second)
+  (extension :
+    GenerativeComparison.GenerativeExtension inventory (situation.realize first) (situation.realize second)) :
+  Reason first second
+GenerativeComparison.coherent_selection_survives_filter.{u, v, w} {Whole : Type u} {Claim : Type v} {Option : Type w}
+  {inventory : GenerativeComparison.Inventory Whole Claim} {situation : GenerativeComparison.Situation Whole Option}
+  {Better : Whole → Whole → Prop} {Selected : Option → Prop}
+  (comparison : GenerativeComparison.ComparisonPrinciple inventory Better)
+  (coherence : GenerativeComparison.SelectionCoherence situation Better Selected) {first : Option}
+  (selected : Selected first) : GenerativeComparison.Survives inventory situation first
+GenerativeComparison.feasible_restriction_preserves_survivor.{u, v, w} {Whole : Type u} {Claim : Type v}
+  {Option : Type w} {inventory : GenerativeComparison.Inventory Whole Claim}
+  {situation : GenerativeComparison.Situation Whole Option} (restricted : Option → Prop) {first : Option}
+  (survivor : GenerativeComparison.Survives inventory situation first) (retained : restricted first) :
+  GenerativeComparison.Survives inventory
+    { feasible := fun option => situation.feasible option ∧ restricted option, realize := situation.realize } first
+GenerativeComparison.both_appraisals_respect_all_extensions :
+  GenerativeComparison.ComparisonPrinciple GenerativeComparison.profileInventory
+      (GenerativeComparison.ScoreBetter GenerativeComparison.firstAppraisal) ∧
+    GenerativeComparison.ComparisonPrinciple GenerativeComparison.profileInventory
+      (GenerativeComparison.ScoreBetter GenerativeComparison.secondAppraisal)
+GenerativeComparison.tradeoff_has_opposite_strict_appraisals :
+  GenerativeComparison.ScoreBetter GenerativeComparison.firstAppraisal (false, true) (true, false) ∧
+    GenerativeComparison.ScoreBetter GenerativeComparison.secondAppraisal (true, false) (false, true)
+GenerativeComparison.both_tradeoff_options_survive :
+  GenerativeComparison.Survives GenerativeComparison.profileInventory GenerativeComparison.tradeoffSituation
+      (true, false) ∧
+    GenerativeComparison.Survives GenerativeComparison.profileInventory GenerativeComparison.tradeoffSituation
+      (false, true)
+GenerativeComparison.each_appraisal_has_a_different_coherent_selection :
+  (GenerativeComparison.SelectionCoherence GenerativeComparison.tradeoffSituation
+      (GenerativeComparison.ScoreBetter GenerativeComparison.firstAppraisal) fun profile => profile = (true, false)) ∧
+    GenerativeComparison.SelectionCoherence GenerativeComparison.tradeoffSituation
+      (GenerativeComparison.ScoreBetter GenerativeComparison.secondAppraisal) fun profile => profile = (false, true)

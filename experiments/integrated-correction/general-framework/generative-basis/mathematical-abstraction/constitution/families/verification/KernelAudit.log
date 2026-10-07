@@ -1,0 +1,52 @@
+'FamilyAdmission.finite_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.sigma_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.sections_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.finite_sigma_full_admission' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.finite_sections_full_admission' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.support' does not depend on any axioms
+'FamilyAdmission.truthFibers' does not depend on any axioms
+'FamilyAdmission.truthFibers_subsingleton' does not depend on any axioms
+'FamilyAdmission.truthFibers_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.support_truthFibers' depends on axioms: [propext, Quot.sound]
+'FamilyAdmission.full_iff_subsingleton_support' depends on axioms: [propext, Quot.sound]
+'FamilyAdmission.full_iff_finite_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.truthFamilyMap' does not depend on any axioms
+'FamilyAdmission.truthFamily_projection' does not depend on any axioms
+'FamilyAdmission.section_exists_iff' depends on axioms: [Classical.choice]
+'FamilyAdmission.singleton_fibers_infinite_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FamilyAdmission.boolean_fibers_infinite_sections' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.GraphIdeal' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.Functional' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.Total' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.FiniteFunctional' does not depend on any axioms
+'DependentCompletion.functional_iff_finite' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.total_iff_finite_coverage' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.SectionIdeal' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.sectionIdeal_ext' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.graph' does not depend on any axioms
+'DependentCompletion.encodeSection' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.decodeSection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.decode_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.graph_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.decode_encode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.encode_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.sectionMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.graph_finite' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.finite_base_graph_admitted' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.sigmaMap' depends on axioms: [propext]
+'DependentCompletion.piMap' depends on axioms: [Quot.sound]
+'DependentCompletion.completedSectionMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.transported_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.sigmaPredicateMap' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.sectionPredicateMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.sigma_predicate_membership' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.section_predicate_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.bimap_quantifiers' does not depend on any axioms
+'DependentCompletion.section_predicate_quantifiers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.empty_fiber_not_total' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.no_section_ideal_of_empty_fiber' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.zeroSection' does not depend on any axioms
+'DependentCompletion.zeroIdeal' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.zero_ideal_membership' depends on axioms: [propext, Quot.sound]
+'DependentCompletion.zero_ideal_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DependentCompletion.fin_zero_fiber_no_total' depends on axioms: [propext, Quot.sound]

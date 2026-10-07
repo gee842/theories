@@ -1,0 +1,23 @@
+import CoverageBoundary
+
+#print axioms RootCoverageBoundary.PointwiseComplete
+#print axioms RootCoverageBoundary.fixed_point_of_complete
+#print axioms RootCoverageBoundary.no_complete_fixedpoint_free
+#print axioms RootCoverageBoundary.boolDiagonal
+#print axioms RootCoverageBoundary.bool_flip_no_fixed_point
+#print axioms RootCoverageBoundary.bool_diagonal_unrepresented
+#print axioms RootCoverageBoundary.no_full_bool_coverage
+#print axioms RootCoverageBoundary.Represents
+#print axioms RootCoverageBoundary.CoversPredicates
+#print axioms RootCoverageBoundary.predicateDiagonal
+#print axioms RootCoverageBoundary.no_iff_neg
+#print axioms RootCoverageBoundary.predicate_diagonal_unrepresented
+#print axioms RootCoverageBoundary.no_full_predicate_coverage
+#print axioms RootCoverageBoundary.no_diagonal_closed_complete_family
+#print axioms RootCoverageBoundary.externalReading
+#print axioms RootCoverageBoundary.external_reading_covers
+#print axioms RootCoverageBoundary.extendReading
+#print axioms RootCoverageBoundary.extension_preserves
+#print axioms RootCoverageBoundary.extension_represents_new
+#print axioms RootCoverageBoundary.extension_preserves_coverage
+#print axioms RootCoverageBoundary.diagonal_extension_strict

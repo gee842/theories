@@ -1,0 +1,6 @@
+{
+  "status": "failed_dependency_audit",
+  "recorded_after_attempt": true,
+  "reason": "Compilation succeeded; all-empty dependency contract failed for supporting-entry theorem using decision procedure for list membership. Retained audit log records propext and Quot.sound. Replaced membership proof by the explicit List.Mem constructor in later source.",
+  "audit_log_sha256": "e9196ebae701a43161fbf986f5f866d7719fd0f1b32514314d2c1c3a0bc3b938"
+}

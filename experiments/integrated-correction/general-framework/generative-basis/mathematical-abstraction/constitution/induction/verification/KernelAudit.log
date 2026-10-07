@@ -1,0 +1,47 @@
+'InductiveDomain.iterate' does not depend on any axioms
+'InductiveDomain.Generated' does not depend on any axioms
+'InductiveDomain.NoJunk' does not depend on any axioms
+'InductiveDomain.Closed' does not depend on any axioms
+'InductiveDomain.FullInduction' does not depend on any axioms
+'InductiveDomain.SelectedInduction' does not depend on any axioms
+'InductiveDomain.generated_closed' does not depend on any axioms
+'InductiveDomain.generated_least' does not depend on any axioms
+'InductiveDomain.fullInduction_iff_noJunk' does not depend on any axioms
+'InductiveDomain.selected_iff_noJunk' does not depend on any axioms
+'InductiveDomain.Separated' does not depend on any axioms
+'InductiveDomain.iterate_injective' does not depend on any axioms
+'InductiveDomain.index' depends on axioms: [Classical.choice]
+'InductiveDomain.iterate_index' depends on axioms: [Classical.choice]
+'InductiveDomain.index_iterate' depends on axioms: [Classical.choice]
+'InductiveDomain.NatEquivalence' does not depend on any axioms
+'InductiveDomain.naturalEquivalence' depends on axioms: [Classical.choice]
+'InductiveDomain.Hom' does not depend on any axioms
+'InductiveDomain.hom_iterate' does not depend on any axioms
+'InductiveDomain.recurse' depends on axioms: [Classical.choice]
+'InductiveDomain.recurse_iterate' depends on axioms: [Classical.choice]
+'InductiveDomain.recurse_hom' depends on axioms: [Classical.choice]
+'InductiveDomain.hom_unique' depends on axioms: [Quot.sound]
+'InductiveDomain.unique_recursion' depends on axioms: [Classical.choice, Quot.sound]
+'InductiveDomain.bool_generated' does not depend on any axioms
+'InductiveDomain.bool_fullInduction' does not depend on any axioms
+'InductiveDomain.bool_not_separated' does not depend on any axioms
+'InductiveDomain.extraSuccessor' does not depend on any axioms
+'InductiveDomain.extra_separated' depends on axioms: [propext]
+'InductiveDomain.extra_iterate' depends on axioms: [propext]
+'InductiveDomain.extra_not_noJunk' depends on axioms: [propext]
+'InductiveDomain.nat_iterate' does not depend on any axioms
+'InductiveDomain.nat_generated' does not depend on any axioms
+'InductiveDomain.nat_separated' does not depend on any axioms
+'InductiveDomain.OnlyGenerated' does not depend on any axioms
+'InductiveDomain.restricted_selected_induction' does not depend on any axioms
+'InductiveDomain.restricted_excludes_false' does not depend on any axioms
+'InductiveDomain.restricted_not_full' does not depend on any axioms
+'Initiality.Initial' does not depend on any axioms
+'Initiality.generatedZero' does not depend on any axioms
+'Initiality.generatedSuccessor' does not depend on any axioms
+'Initiality.initial_noJunk' does not depend on any axioms
+'Initiality.liftedZero' does not depend on any axioms
+'Initiality.liftedSuccessor' does not depend on any axioms
+'Initiality.initial_nat_hom' does not depend on any axioms
+'Initiality.separated_of_noJunk_nat_hom' does not depend on any axioms
+'Initiality.initial_iff_generated_separated' depends on axioms: [Classical.choice, Quot.sound]

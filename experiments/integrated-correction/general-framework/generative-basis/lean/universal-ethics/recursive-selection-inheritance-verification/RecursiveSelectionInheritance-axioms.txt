@@ -1,0 +1,15 @@
+'RecursiveSelectionInheritance.State' does not depend on any axioms
+'RecursiveSelectionInheritance.Transfer' does not depend on any axioms
+'RecursiveSelectionInheritance.material' does not depend on any axioms
+'RecursiveSelectionInheritance.operate' does not depend on any axioms
+'RecursiveSelectionInheritance.assemble' does not depend on any axioms
+'RecursiveSelectionInheritance.operation_accounts' depends on axioms: [propext, Quot.sound]
+'RecursiveSelectionInheritance.assembly_accounts' depends on axioms: [propext, Quot.sound]
+'RecursiveSelectionInheritance.connected_two_generation_accounts' depends on axioms: [propext, Quot.sound]
+'RecursiveSelectionInheritance.assembly_row_limits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelectionInheritance.fully_assembled_strong_share_rises_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RecursiveSelectionInheritance.faithful_two_generation_history' does not depend on any axioms
+'RecursiveSelectionInheritance.converted_two_generation_history' does not depend on any axioms
+'RecursiveSelectionInheritance.insufficient_source_or_excess_assembly_fails' does not depend on any axioms

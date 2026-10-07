@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "utc": "20261007T164403.182274Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "joint-classification-checks/20261007T164403.182274Z",
+  "source_sha256": {
+    "JointContinuationClassification": "2c491d510f8d823714922b38e2cafb4e8b79b637222955334796578ed05a9b83"
+  },
+  "checker_sha256": {
+    "check_joint_classification.py": "5d18ef70b5793c6f15052d7a1a284419ba9afa76caa2a6a44ee6e901457327a9",
+    "joint_classification_audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Conditional joint-profile representation audit and one supplied common-history event law; no ethical ranking or first ethical warrant.",
+  "audit_scope": "Every explicit named top-level declaration; generated constructors and projections are kernel checked with the module, not separately inventoried.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "declarations": [
+    {
+      "kind": "structure",
+      "name": "JointContinuationClassification.Continuations"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.Jointly"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.CarriesWholeProfiles"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.PreservesJointBundles"
+    },
+    {
+      "kind": "theorem",
+      "name": "JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation"
+    },
+    {
+      "kind": "theorem",
+      "name": "JointContinuationClassification.whole_profile_preservation_composes"
+    },
+    {
+      "kind": "theorem",
+      "name": "JointContinuationClassification.faithful_history_transport_preserves_joint_bundles"
+    },
+    {
+      "kind": "theorem",
+      "name": "JointContinuationClassification.complement_closed_preservation_excludes_new_realization"
+    },
+    {
+      "kind": "inductive",
+      "name": "JointContinuationClassification.Configuration"
+    },
+    {
+      "kind": "inductive",
+      "name": "JointContinuationClassification.Event"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.Step"
+    },
+    {
+      "kind": "structure",
+      "name": "JointContinuationClassification.History"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.Admissible"
+    },
+    {
+      "kind": "inductive",
+      "name": "JointContinuationClassification.Claim"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.Realized"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.retained"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.released"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.together"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.leftOnly"
+    },
+    {
+      "kind": "def",
+      "name": "JointContinuationClassification.rightOnly"
+    },
+    {
+      "kind": "theorem",
+      "name": "JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle"
+    }
+  ],
+  "theorems": 5,
+  "axiom_dependencies": {
+    "JointContinuationClassification.Continuations": [],
+    "JointContinuationClassification.Jointly": [],
+    "JointContinuationClassification.CarriesWholeProfiles": [],
+    "JointContinuationClassification.PreservesJointBundles": [],
+    "JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation": [],
+    "JointContinuationClassification.whole_profile_preservation_composes": [],
+    "JointContinuationClassification.faithful_history_transport_preserves_joint_bundles": [],
+    "JointContinuationClassification.complement_closed_preservation_excludes_new_realization": [],
+    "JointContinuationClassification.Configuration": [],
+    "JointContinuationClassification.Event": [],
+    "JointContinuationClassification.Step": [
+      "propext"
+    ],
+    "JointContinuationClassification.History": [],
+    "JointContinuationClassification.Admissible": [
+      "propext"
+    ],
+    "JointContinuationClassification.Claim": [],
+    "JointContinuationClassification.Realized": [],
+    "JointContinuationClassification.retained": [
+      "propext"
+    ],
+    "JointContinuationClassification.released": [
+      "propext"
+    ],
+    "JointContinuationClassification.together": [],
+    "JointContinuationClassification.leftOnly": [],
+    "JointContinuationClassification.rightOnly": [],
+    "JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle": [
+      "propext"
+    ]
+  },
+  "kernel_checked": true,
+  "sources_unchanged_during_check": true,
+  "commands": [
+    {
+      "command": [
+        "/Users/ren/.elan/bin/lean",
+        "+leanprover/lean4:v4.29.1",
+        "--version"
+      ],
+      "returncode": 0,
+      "log": "version.log"
+    },
+    {
+      "command": [
+        "/Users/ren/.elan/bin/lean",
+        "+leanprover/lean4:v4.29.1",
+        "-o",
+        "JointContinuationClassification.olean",
+        "JointContinuationClassification.lean"
+      ],
+      "returncode": 0,
+      "log": "compiler.log"
+    },
+    {
+      "command": [
+        "/Users/ren/.elan/bin/lean",
+        "+leanprover/lean4:v4.29.1",
+        "AxiomAudit.lean"
+      ],
+      "returncode": 0,
+      "log": "axioms.log"
+    },
+    {
+      "command": [
+        "/Users/ren/.elan/bin/lean",
+        "+leanprover/lean4:v4.29.1",
+        "Signatures.lean"
+      ],
+      "returncode": 0,
+      "log": "signatures.log"
+    }
+  ],
+  "artifact_sha256": {
+    "AxiomAudit.lean": "bf2526a91d356919deb8e1f320ce5688ec87e1907f16d1fb3db7eeeaadbb7026",
+    "JointContinuationClassification.lean": "2c491d510f8d823714922b38e2cafb4e8b79b637222955334796578ed05a9b83",
+    "Signatures.lean": "8bdba8156427a22c80c7b5dcbf7b973083342451fd30852aa20adf60be4f9897",
+    "axioms.log": "fc84a470e336cf2d867c3a954063823a7368d15197018d688571657145de43ce",
+    "check_joint_classification.py": "5d18ef70b5793c6f15052d7a1a284419ba9afa76caa2a6a44ee6e901457327a9",
+    "compiler.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "joint_classification_audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "signatures.log": "b029f40c58e42af8acdd1f0d5a11efc287be6db1bc267038a6d6df1af20ab505",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

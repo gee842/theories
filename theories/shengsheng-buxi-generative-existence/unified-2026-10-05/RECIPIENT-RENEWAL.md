@@ -1,6 +1,6 @@
 # Renewing learned responses through actual successors
 
-6 October 2026. AI-authored research development under [Ren's request to aim for a complete solution](../../../sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md). **Accepted at its declared finite mechanism and abstract-contract scopes, with separate internal review.** The named connection is actual recipient-sensitive learning → revised paid action → transmission of the acquired record → learning again by its actual successor. This advances the [generative derivation](GENERATIVE-GROUNDING.md) and the [alignment completion programme](ALIGNMENT-COMPLETION.md) at a specific mechanism interface.
+6 October 2026. AI-authored research development under [Ren's request to aim for a complete solution](../../../sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md). **Accepted at its declared finite mechanism and abstract-contract scopes, with separate internal review.** The named connection is actual recipient-sensitive learning → revised resource-dependent action → transmission of the acquired record → learning again by its actual successor. This advances the [generative derivation](GENERATIVE-GROUNDING.md) and the [alignment completion programme](ALIGNMENT-COMPLETION.md) at a specific mechanism interface.
 
 The main advance is a composition condition: a process that learns and helps once can repeat through actual descendants only if each intermediate payment, information transfer and material replacement remains possible. A favorable total return does not supply the reserve needed before that return arrives. The mathematical result generalizes beyond the particular learner; its executable realization retains the supplied costs, binary target law, source packets and construction recipes.
 
@@ -10,7 +10,7 @@ The accepted [transmission construction](RECIPIENT-TRANSMISSION.md) supplies an 
 
 The original actor's resources remain separate. The recipient finances each learner's actual shortfall under a stipulated one-unit reserve floor. Retired donors, new carrier identities, occupied components, incomplete copies, spent fuel and lost packets remain in the account. A copied descendant can be retained while acting incorrectly; productive action, acquired correction, copying and retention are different outcomes.
 
-All new source packets and blank/routing bundles are declared at the beginning of the requested horizon. Later allocation draws down those finite banks. Failed preparation and unavailable original children retain their probabilities and untouched new inventory. An added whole-block allocation rule prevents a block from starting without its required packet allocation; it is an explicit scheduling policy, not a derived physical necessity. Missing parts can instead permit paid learning followed by failed copying.
+All new source packets and blank/routing bundles are declared at the beginning of the requested horizon. Later allocation draws down those finite banks. Failed preparation and unavailable original children retain their probabilities and untouched new inventory. An added whole-block allocation rule prevents a block from starting without its required packet allocation; it is an explicit scheduling policy, not a derived physical necessity. Missing parts can instead permit resource-dependent learning followed by failed copying.
 
 This joins operational succession within the inherited abstract register implementation. It does not automatically identify that implementation with the separate consumable-part predictor, factual archive or reason/protection branches. Their material and semantic contracts still matter.
 
@@ -30,7 +30,7 @@ Expected returns cannot pay a missing earlier bill. Nor can this scalar ledger e
 
 ## The exact renewal condition
 
-Under the primary supplied law, an accessible TARGET learner enters with zero learner cash and a correct inherited estimate for the same calibrated recipient address. It has \(n\) successful opportunities before the target reverses, followed by one failed action, a paid correction, one corrected productive action, and a copied descendant's productive action.
+Under the primary supplied law, an accessible TARGET learner enters with zero learner cash and a correct inherited estimate for the same calibrated recipient address. It has \(n\) successful opportunities before the target reverses, followed by one failed action, a resource-dependent correction, one corrected productive action, and a copied descendant's productive action.
 
 Each learner probe costs seven: five before any return and two for acquired evidence and writing afterward. A productive action transfers ten source units to the recipient. A successful warm-up therefore adds three. After the \(n\) warm-ups, reserve is \(S=B+3n\), if those warm-ups could be funded in the first place.
 
@@ -66,7 +66,7 @@ The implementation's additional [self-run](../../../experiments/shared-renewal-c
 |---|---|
 | Conventional two-cell feedback with the same observations and bills | The mechanism can be ordinary feedback; a new interpretation does not establish algorithmic superiority |
 | A correct frozen record in a stable environment | Learning is useful under specified uncertainty/change, not necessary for every productive action |
-| Clamp the paid update, or copy the original record after correction | The contribution of acquired information and its actual transmission |
+| Clamp the resource-dependent update, or copy the original record after correction | The contribution of acquired information and its actual transmission |
 | Change the target again before descendant use | Correctly learned information can become stale; copying fidelity does not guarantee current correctness |
 | Outages or unavailable reports | Nonreceipt can mean mismatch or missing opportunity; faithful recording alone cannot disambiguate them |
 | Exhausted reserve, packet bank or component bank | Affordable interpretation, productive use and physical succession can fail at different stages |

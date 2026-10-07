@@ -6,7 +6,7 @@ The foundation requires mechanisms to compose through what they actually leave b
 
 ## The precise gap in the existing work
 
-The [paid prediction protocol](PREDICTION-PROTOCOL.md) proves a four-event completed trial: rent, work, write, finish. Its proof covers the declared deterministic, payable-write law. The [numerical predictor](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py) also includes reconstruction, outages, unpaid writing and scheduled packet loss.
+The [resource-dependent prediction protocol](PREDICTION-PROTOCOL.md) proves a four-event completed trial: rent, work, write, finish. Its proof covers the declared deterministic, payable-write law. The [numerical predictor](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py) also includes reconstruction, outages, unpaid writing and scheduled packet loss.
 
 The two laws expressly differ outside the completed-trial overlap:
 
@@ -31,9 +31,9 @@ The general probability rule already exists in the repository's [renewal-composi
 
 An analytically specified example starts with eight fuel units, a live predictor commanding the correct route, write cost six and availability one half. A first missed capture leaves four fuel units: not enough to write, but enough to attempt work again. If the second attempt captures, its return pays for writing and leaves two units.
 
-That missed-then-captured history has probability one quarter. The actual second-capture probability is one half. An account that treats the first unpaid write as permanent death retains only one quarter. The independent executable comparison confirms these source-law calculations. The score stays correct in this example; it demonstrates continuing action and a later paid write, rather than correction of a mistaken record.
+That missed-then-captured history has probability one quarter. The actual second-capture probability is one half. An account that treats the first unpaid write as permanent death retains only one quarter. The independent executable comparison confirms these source-law calculations. The score stays correct in this example; it demonstrates continuing action and a later resource-dependent write, rather than correction of a mistaken record.
 
-For a task requiring two consecutive paid writes, excluding a missed first write is appropriate. The error is using that restricted task's successful paths as the complete physical law for a different question about later action or recovery.
+For a task requiring two consecutive resource-dependent writes, excluding a missed first write is appropriate. The error is using that restricted task's successful paths as the complete physical law for a different question about later action or recovery.
 
 Similarly, a low-reserve predictor may write only after receiving a successful return. Looking only at completed writes then shows exclusively successful receipts even though half the actual attempts failed. The conditioning event and its probability must remain visible before that record is used as evidence about the process.
 

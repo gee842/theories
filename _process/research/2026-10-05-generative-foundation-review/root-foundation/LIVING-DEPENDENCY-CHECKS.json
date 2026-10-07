@@ -1,0 +1,312 @@
+{
+  "checked_at_utc": "2026-10-07T17:01:31.604871+00:00",
+  "status": "passed",
+  "scope": "Documentation, current-source and preserved fresh Lean receipt bindings. No experimental replication, stochastic-model refinement or universal living coverage certified.",
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "sha256": "08412bee3dcab298cd1b6d9252d610bb9d9290834a202135e92586ef1bac88e2"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+      "sha256": "a6252b407f8a563d72d6b9e0281740305d53df60f871053f7c0a9a431e12f1c9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "sha256": "d018e093926089c9520e13c699985347bc9065c23e59c98206e528d5d5061744"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-PHYSICAL-SOURCES.md",
+      "sha256": "77423f6633622d88926ff0ecbd7d4d67743454c4c5f061b7ded0b2f153cbbd1d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "sha256": "d14f3d5fc515d9ff5be7d62d5f3270bb86fb3d5b3f24f185d86cd741edc4896e"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "sha256": "e703f01d1ba0cc3540feb6ce1022becd98e460323b16e334db27348ae7c0fb54"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md",
+      "sha256": "0aeb857421f14a7312ab2a67b6478f94ba1fff0faa2e313cc64a8940352f8ae8"
+    }
+  ],
+  "shared_entries": [
+    {
+      "path": "RESEARCH.md",
+      "entry_sha256": "6b47a0913b3a7d099c5a1e57f0d8a3aa8c45930903d5dd879ddf74d34f35adf4",
+      "entry": "**Living dependencies: maintenance derived from transport, 7 October 2026.** [Ren selects living dependencies as this conversation's current goal](sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md). [The integrated advance](_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) derives the earlier support account from transport balance, a maintained operative bound and work-coupled export. Fresh Lean 4.29.1 passes **10 new theorems / 20 new declaration audits**, with 87 full-closure audits. Biological mechanism assessment, a persistent-component comparison, physical-source assessment and independent proof review are integrated. The result preserves inherited support, inactivity and depletion of an included provision store; it covers a specified nonnegative-net-transport regime, not all viability or stochastic histories. **Next connection:** signed passive transport and recoverable changes of realization, then wider living-domain correspondence. The [current formulation](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md) keeps the living goal active and other research intact."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "entry_sha256": "934f089665889c7837acc21d1af7f6cd60b3370175e971645cdef82f45a64ecc",
+      "entry": "**Living dependencies, 7 October 2026; current directed focus.** [The new formulation](unified-2026-10-05/LIVING-DEPENDENCIES.md) explains how actual transport and compensatory activity yield a maintained-condition dependency. [The integrated study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) adds 10 checked Lean theorems, mechanistic primary evidence and independent review. Earlier formed support, dormant intervals, retained components and finite provision remain explicit. Signed transport, recoverable changes of regime and full living-domain coverage remain open; this does not assert new ethical authority."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "entry_sha256": "ab3f0c72583519af5f5eddf181ced3c6ffe6caa4ec3974605a0626e18ef7e696",
+      "entry": "**Living dependencies as the current directed focus, 7 October 2026:** [Ren selects this connection](../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md). [The mechanism-based derivation](LIVING-DEPENDENCIES.md) now derives a support account from transport balance, work coupling and an operative bound, with 10 new checked Lean theorems and integrated primary evidence/review. This advances actual living correspondence beyond a supplied final depletion law. Its maintained, nonnegative-net-transport scope remains explicit; signed passive transport and recoverable transformations are the next connection, with full coverage unfinished. Other authorized research and the wider ethical target retain their scope."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "entry_sha256": "dc695b8e936d07f562fe53de0ffe2272bc10d5f1f9598f7a0424c8c6b816b749",
+      "entry": "**Living-dependency connection advanced, 7 October 2026.** Under [Ren's current focus](../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md), [the new maintained-transport derivation](LIVING-DEPENDENCIES.md) derives the general support account from more concrete transport and work-coupling laws. Ten new Lean theorems pass, with source evidence and independent review. This supplies a scoped physical correspondence for the situational ethical argument; it does not establish first ethical authority, continuous production by every bearer or universal living coverage. Signed passive transport, recoverable changes of regime and formation of the supplying machinery remain explanatory work."
+    }
+  ],
+  "local_links_checked": 53,
+  "local_links": [
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-REALIZATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-COVERAGE-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-PHYSICAL-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-COVERAGE-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-PHYSICAL-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-COVERAGE-REVIEW.md#4-exact-coverage-obligation"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_living_realization.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+      "target": "LIVING-GENERATIVITY-GROUNDING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+      "target": "GENERAL-CONTINUATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+      "target": "LIVING-GENERATIVITY-GROUNDING.md#4-a-primary-test-operative-inheritance-during-dormancy"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+      "target": "LIVING-DEPENDENCY-COVERAGE-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "LIVING-GENERATIVITY-GROUNDING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "LIVING-GENERATIVITY-GROUNDING.md#4-a-primary-test-operative-inheritance-during-dormancy"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "LIVING-REALIZATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-PHYSICAL-SOURCES.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "target": "LIVING-GENERATIVITY-GROUNDING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "target": "LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_living_realization.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-checks/20261007T165626.734264Z/verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../RESEARCH.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GENERATIVITY-GROUNDING.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "LIVING-DEPENDENCIES.md"
+    }
+  ],
+  "user_wording_preserved": true,
+  "formal_verification": {
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-verification.json",
+    "receipt_sha256": "efaebeba533fb218a6c47d63efcaa73e4d4413adbdc6da5bb928e7d01aa54f0c",
+    "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-checks/20261007T165626.734264Z",
+    "sources": [
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+        "matches_preserved_source": true
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
+        "sha256": "8b0754f2a63414a40aab814ac962effaaab47c1bc83e0e28a5f93b5f902d4f3c",
+        "matches_preserved_source": true
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean",
+        "sha256": "d5156a6e6201caa93ea652e93aec2946482fd144ea73f22661a0ab4c58132669",
+        "matches_preserved_source": true
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean",
+        "sha256": "539742f929fbc8d3d9efc015ae0b08d80463ed99e65a0ea4af4c4f2eaf80b083",
+        "matches_preserved_source": true
+      }
+    ],
+    "checker_sha256": "e91cf9f30d691aaee3e041e8bdd5886cada7d6c7f867ef6e0561495c83ec33b9",
+    "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+    "all_log_hashes_match": true,
+    "audit_names_match": 87,
+    "total_audits": 87,
+    "new_audits": 20,
+    "new_theorems": 10,
+    "new_axiom_dependencies": "7 empty, 13 only propext and Quot.sound",
+    "fresh_compile_performed": true
+  },
+  "independent_review": "Source, proof note, mechanism interpretation and receipt inspected; scope corrections integrated.",
+  "whitespace": "passed",
+  "goal_status": "active; scoped first round complete"
+}

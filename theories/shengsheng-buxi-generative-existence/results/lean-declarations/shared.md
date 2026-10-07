@@ -1,0 +1,4328 @@
+# Lean 具名声明 / Named Lean declarations
+
+[返回 Lean 导航](../LEAN-INDEX.md)。本表显示当前工作源与审计入口；所有历史副本仍见 [JSON 清单](../data/lean-index.json)。这是显式声明的位置索引，不能代替命题、假设及对应论证的阅读。 / [Return to navigation](../LEAN-INDEX.md). Working sources and audit entries appear here; all historical copies remain in the JSON inventory. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.
+
+定理／引理逐项列出；定义与类型声明列在同一模块的折叠项中。限定名由文本 namespace 推断，仅供导航；私有内部名称和自动生成名称以 Lean 为准。 / Theorems and lemmas are individually listed; definitions and type declarations share each module's foldout. Namespace-qualified names are textual hints; Lean determines private/internal and generated names.
+
+[全部方向与模块 / All topics and modules](../LEAN-DECLARATIONS.md)
+
+## 组织形成到可修正评价 / Organizational formation through revisable evaluation
+
+<a id="module-abe231e35227"></a>
+
+<details>
+<summary>CarrierTurnover.lean — 34 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+
+`experiments/shared-renewal-capability/formal/CarrierTurnover.lean`
+
+Imports: `ReserveTurnover`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CarrierTurnover.initial_consistent](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L88) | 88 |
+| [CarrierTurnover.initial_present](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L92) | 92 |
+| [CarrierTurnover.update_gone_permanent](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L99) | 99 |
+| [CarrierTurnover.update_live_role](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L104) | 104 |
+| [CarrierTurnover.update_first_loss](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L108) | 108 |
+| [CarrierTurnover.wear_nonnegative](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L112) | 112 |
+| [CarrierTurnover.update_consistent](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L117) | 117 |
+| [CarrierTurnover.update_gone_bound](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L133) | 133 |
+| [CarrierTurnover.marked_trace_project](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L164) | 164 |
+| [CarrierTurnover.lost_present](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L173) | 173 |
+| [CarrierTurnover.all_gone_continuation](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L179) | 179 |
+| [CarrierTurnover.marked_trace_consistent](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L188) | 188 |
+| [CarrierTurnover.marked_trace_gone_permanent](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L195) | 195 |
+| [CarrierTurnover.marked_trace_gone_bound](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L205) | 205 |
+| [CarrierTurnover.original_loss_requires_role_wear](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L217) | 217 |
+| [CarrierTurnover.all_original_losses_require_four_wears](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L226) | 226 |
+| [CarrierTurnover.original_turnover_work_bound](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L237) | 237 |
+| [CarrierTurnover.original_turnover_reserve_bound](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L247) | 247 |
+| [CarrierTurnover.original_turnover_restored_reserve](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L257) | 257 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [CarrierTurnover.Role](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L13) (L13)
+- `inductive` [CarrierTurnover.Form](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L17) (L17)
+- `def` [CarrierTurnover.role](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L22) (L22)
+- `def` [CarrierTurnover.wear](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L28) (L28)
+- `abbrev` [CarrierTurnover.Tag](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L34) (L34)
+- `abbrev` [CarrierTurnover.Marks](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L35) (L35)
+- `inductive` [CarrierTurnover.Update](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L41) (L41)
+- `def` [CarrierTurnover.Consistent](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L66) (L66)
+- `def` [CarrierTurnover.copies](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L71) (L71)
+- `def` [CarrierTurnover.Present](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L79) (L79)
+- `def` [CarrierTurnover.initial](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L82) (L82)
+- `def` [CarrierTurnover.AllGone](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L86) (L86)
+- `def` [CarrierTurnover.gone](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L131) (L131)
+- `inductive` [CarrierTurnover.MarkedTrace](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L154) (L154)
+- `def` [CarrierTurnover.lost](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean#L171) (L171)
+
+文本中有 12 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 12 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-46a3e9d8b95a"></a>
+
+<details>
+<summary>RenewalLedger.lean — 43 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+
+`experiments/shared-renewal-capability/formal/RenewalLedger.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RenewalLedger.step_nonnegative](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L131) | 131 |
+| [RenewalLedger.material_step](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L135) | 135 |
+| [RenewalLedger.work_step](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L138) | 138 |
+| [RenewalLedger.a_step](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L143) | 143 |
+| [RenewalLedger.g_step](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L147) | 147 |
+| [RenewalLedger.bare_available_step](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L151) | 151 |
+| [RenewalLedger.tally_add](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L165) | 165 |
+| [RenewalLedger.tally_sub](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L171) | 171 |
+| [RenewalLedger.tally_nonnegative](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L177) | 177 |
+| [RenewalLedger.trace_change](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L183) | 183 |
+| [RenewalLedger.trace_nonnegative](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L194) | 194 |
+| [RenewalLedger.trace_material](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L200) | 200 |
+| [RenewalLedger.trace_available](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L206) | 206 |
+| [RenewalLedger.no_two_inputs](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L212) | 212 |
+| [RenewalLedger.bare_no_later_construction](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L220) | 220 |
+| [RenewalLedger.minimum_repeated_turnover_captures](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L233) | 233 |
+| [RenewalLedger.minimum_full_turnover_captures](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L257) | 257 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RenewalLedger.State](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L12) (L12)
+- `def` [RenewalLedger.Nonnegative](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L25) (L25)
+- `def` [RenewalLedger.AtLeast](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L29) (L29)
+- `inductive` [RenewalLedger.Event](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L33) (L33)
+- `def` [RenewalLedger.input](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L41) (L41)
+- `def` [RenewalLedger.output](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L70) (L70)
+- `def` [RenewalLedger.step](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L99) (L99)
+- `def` [RenewalLedger.Enabled](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L108) (L108)
+- `def` [RenewalLedger.bare](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L109) (L109)
+- `def` [RenewalLedger.material](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L113) (L113)
+- `def` [RenewalLedger.packets](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L115) (L115)
+- `def` [RenewalLedger.work](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L116) (L116)
+- `def` [RenewalLedger.available](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L117) (L117)
+- `def` [RenewalLedger.gates](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L118) (L118)
+- `def` [RenewalLedger.capture](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L120) (L120)
+- `def` [RenewalLedger.leakage](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L121) (L121)
+- `def` [RenewalLedger.aBirth](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L122) (L122)
+- `def` [RenewalLedger.gBirth](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L123) (L123)
+- `def` [RenewalLedger.aWear](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L124) (L124)
+- `def` [RenewalLedger.gWear](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L125) (L125)
+- `def` [RenewalLedger.cWear](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L126) (L126)
+- `def` [RenewalLedger.yWear](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L127) (L127)
+- `def` [RenewalLedger.loss](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L128) (L128)
+- `inductive` [RenewalLedger.Trace](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L155) (L155)
+- `def` [RenewalLedger.tally](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L161) (L161)
+- `def` [RenewalLedger.operation](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean#L218) (L218)
+
+文本中有 5 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 5 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-6fd1230f8bb2"></a>
+
+<details>
+<summary>ReserveTurnover.lean — 8 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+
+`experiments/shared-renewal-capability/formal/ReserveTurnover.lean`
+
+Imports: `TypedRenewal`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ReserveTurnover.minimum_captures_with_work_change](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L12) | 12 |
+| [ReserveTurnover.organization_nonnegative](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L60) | 60 |
+| [ReserveTurnover.organization_work](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L64) | 64 |
+| [ReserveTurnover.organization_totalA](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L70) | 70 |
+| [ReserveTurnover.organization_gates](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L74) | 74 |
+| [ReserveTurnover.organization_turnover_reserve_bound](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L78) | 78 |
+| [ReserveTurnover.one_turnover_reserve_bound](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L90) | 90 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ReserveTurnover.organization](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean#L57) (L57)
+
+文本中有 5 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 5 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-04366373329a"></a>
+
+<details>
+<summary>TypedRenewal.lean — 48 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+
+`experiments/shared-renewal-capability/formal/TypedRenewal.lean`
+
+Imports: `RenewalLedger`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [TypedRenewal.input_project](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L155) | 155 |
+| [TypedRenewal.output_project](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L158) | 158 |
+| [TypedRenewal.project_step](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L161) | 161 |
+| [TypedRenewal.project_nonnegative](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L167) | 167 |
+| [TypedRenewal.project_atLeast](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L172) | 172 |
+| [TypedRenewal.enabled_project](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L177) | 177 |
+| [TypedRenewal.output_nonnegative](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L184) | 184 |
+| [TypedRenewal.step_nonnegative](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L187) | 187 |
+| [TypedRenewal.bare_map](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L197) | 197 |
+| [TypedRenewal.trace_project](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L206) | 206 |
+| [TypedRenewal.trace_nonnegative](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L216) | 216 |
+| [TypedRenewal.trace_material](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L227) | 227 |
+| [TypedRenewal.operation_project](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L238) | 238 |
+| [TypedRenewal.bare_no_later_construction](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L242) | 242 |
+| [TypedRenewal.tally_project](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L263) | 263 |
+| [TypedRenewal.minimum_repeated_turnover_captures](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L278) | 278 |
+| [TypedRenewal.minimum_full_turnover_captures](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L293) | 293 |
+| [TypedRenewal.exact_six_capture_budget](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L305) | 305 |
+| [TypedRenewal.pooled_enabled_does_not_lift](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L360) | 360 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [TypedRenewal.Kind](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L11) (L11)
+- `structure` [TypedRenewal.State](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L14) (L14)
+- `def` [TypedRenewal.choose](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L31) (L31)
+- `def` [TypedRenewal.Nonnegative](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L34) (L34)
+- `def` [TypedRenewal.AtLeast](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L39) (L39)
+- `inductive` [TypedRenewal.Event](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L44) (L44)
+- `def` [TypedRenewal.input](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L54) (L54)
+- `def` [TypedRenewal.output](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L79) (L79)
+- `def` [TypedRenewal.step](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L108) (L108)
+- `def` [TypedRenewal.Enabled](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L119) (L119)
+- `def` [TypedRenewal.project](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L121) (L121)
+- `def` [TypedRenewal.eventMap](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L126) (L126)
+- `def` [TypedRenewal.bare](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L193) (L193)
+- `inductive` [TypedRenewal.Trace](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L200) (L200)
+- `def` [TypedRenewal.material](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L222) (L222)
+- `def` [TypedRenewal.work](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L223) (L223)
+- `def` [TypedRenewal.totalA](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L224) (L224)
+- `def` [TypedRenewal.gates](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L225) (L225)
+- `def` [TypedRenewal.operation](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L231) (L231)
+- `def` [TypedRenewal.tally](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L259) (L259)
+- `def` [TypedRenewal.capture](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L269) (L269)
+- `def` [TypedRenewal.leakage](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L270) (L270)
+- `def` [TypedRenewal.aBirth](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L271) (L271)
+- `def` [TypedRenewal.gBirth](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L272) (L272)
+- `def` [TypedRenewal.aWear](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L273) (L273)
+- `def` [TypedRenewal.gWear](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L274) (L274)
+- `def` [TypedRenewal.cWear](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L275) (L275)
+- `def` [TypedRenewal.yWear](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L276) (L276)
+- `def` [TypedRenewal.blockedExample](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean#L358) (L358)
+
+文本中有 13 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 13 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-4ab19d4a2066"></a>
+
+<details>
+<summary>Retention.lean — 51 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EndogenousRetention.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L94) | 94 |
+| [EndogenousRetention.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L98) | 98 |
+| [EndogenousRetention.material_ledgers](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L103) | 103 |
+| [EndogenousRetention.trace_material_ledgers](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L109) | 109 |
+| [EndogenousRetention.step_fuel_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L113) | 113 |
+| [EndogenousRetention.trace_fuel_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L118) | 118 |
+| [EndogenousRetention.copy_increment_le_expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L127) | 127 |
+| [EndogenousRetention.copies_le_spent](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L131) | 131 |
+| [EndogenousRetention.trace_copy_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L139) | 139 |
+| [EndogenousRetention.bootstrap_step](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L147) | 147 |
+| [EndogenousRetention.bootstrap_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L152) | 152 |
+| [EndogenousRetention.bootstrap_under_two_fuel](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L158) | 158 |
+| [EndogenousRetention.bootstrap_forbids_productive_steps](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L165) | 165 |
+| [EndogenousRetention.exact_step_rank_drop](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L177) | 177 |
+| [EndogenousRetention.every_step_decreases_rank](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L182) | 182 |
+| [EndogenousRetention.trace_rank_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L186) | 186 |
+| [EndogenousRetention.trace_length_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L194) | 194 |
+| [EndogenousRetention.no_nonempty_return](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L198) | 198 |
+| [EndogenousRetention.no_infinite_event_path](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L204) | 204 |
+| [EndogenousRetention.terminal_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L219) | 219 |
+| [EndogenousRetention.witness_from_absence](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L252) | 252 |
+| [EndogenousRetention.witness_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L261) | 261 |
+| [EndogenousRetention.repair_restores_capture](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L266) | 266 |
+| [EndogenousRetention.copying_requires_actual_capture](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L270) | 270 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [EndogenousRetention.Config](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L13) (L13)
+- `structure` [EndogenousRetention.State](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L20) (L20)
+- `inductive` [EndogenousRetention.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L27) (L27)
+- `def` [EndogenousRetention.damaged](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L31) (L31)
+- `def` [EndogenousRetention.precursor](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L32) (L32)
+- `def` [EndogenousRetention.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L34) (L34)
+- `def` [EndogenousRetention.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L37) (L37)
+- `def` [EndogenousRetention.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L46) (L46)
+- `def` [EndogenousRetention.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L55) (L55)
+- `inductive` [EndogenousRetention.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L71) (L71)
+- `def` [EndogenousRetention.expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L76) (L76)
+- `def` [EndogenousRetention.copyIncrement](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L80) (L80)
+- `def` [EndogenousRetention.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L84) (L84)
+- `def` [EndogenousRetention.copies](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L88) (L88)
+- `def` [EndogenousRetention.BootstrapTrap](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L145) (L145)
+- `def` [EndogenousRetention.rank](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L171) (L171)
+- `def` [EndogenousRetention.rankDrop](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L173) (L173)
+- `def` [EndogenousRetention.Terminal](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L216) (L216)
+- `def` [EndogenousRetention.witnessConfig](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L242) (L242)
+- `def` [EndogenousRetention.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L243) (L243)
+- `def` [EndogenousRetention.afterFormation](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L244) (L244)
+- `def` [EndogenousRetention.afterRepair](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L245) (L245)
+- `def` [EndogenousRetention.afterFirstCapture](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L246) (L246)
+- `def` [EndogenousRetention.afterFirstCopy](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L247) (L247)
+- `def` [EndogenousRetention.afterSecondCapture](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L248) (L248)
+- `def` [EndogenousRetention.finalState](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L249) (L249)
+- `def` [EndogenousRetention.witnessEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean#L250) (L250)
+
+文本中有 24 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 24 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-6ab582d74d00"></a>
+
+<details>
+<summary>RootBridge.lean — 9 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean`
+
+Imports: `GenerativeCore`, `Retention`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EndogenousRetention.trace_to_root](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L14) | 14 |
+| [EndogenousRetention.trace_from_root](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L20) | 20 |
+| [EndogenousRetention.trace_iff_root](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L26) | 26 |
+| [EndogenousRetention.root_trace_fuel_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L30) | 30 |
+| [EndogenousRetention.root_trace_copy_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L35) | 35 |
+| [EndogenousRetention.root_bootstrap_obstruction](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L39) | 39 |
+| [EndogenousRetention.root_witness_from_absence](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L44) | 44 |
+| [EndogenousRetention.trace_append_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L49) | 49 |
+
+定义与类型 / Definitions and types:
+
+- `def` [EndogenousRetention.rootProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean#L12) (L12)
+
+文本中有 8 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 8 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-af38a04c2c3b"></a>
+
+<details>
+<summary>ConsequenceTransmission.lean — 34 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean) · [理论 / Theory](../../unified-2026-10-05/LIANGZHI-EVOLUTION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean`
+
+Imports: `FormationRoot`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ConsequenceTransmission.numerator_balance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L43) | 43 |
+| [ConsequenceTransmission.strict_increase_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L52) | 52 |
+| [ConsequenceTransmission.neutral_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L65) | 65 |
+| [ConsequenceTransmission.strict_decrease_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L76) | 76 |
+| [ConsequenceTransmission.denominator_positive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L89) | 89 |
+| [ConsequenceTransmission.shared_access_is_neutral](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L95) | 95 |
+| [ConsequenceTransmission.Native.positive_a_weight_has_native_event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L118) | 118 |
+| [ConsequenceTransmission.Native.positive_h_weight_has_native_event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L128) | 128 |
+| [ConsequenceTransmission.Native.native_copy_transmits_its_response_structure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L140) | 140 |
+| [ConsequenceTransmission.Native.actual_capture_changes_copy_access](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L151) | 151 |
+| [ConsequenceTransmission.Native.actual_transfer_with_both_structures_present](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L169) | 169 |
+| [ConsequenceTransmission.Native.same_composition_opposite_access](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L193) | 193 |
+| [ConsequenceTransmission.Native.reached_neutral_event_is_native](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L202) | 202 |
+| [ConsequenceTransmission.transmission_preserves_total_event_weight](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L233) | 233 |
+| [ConsequenceTransmission.transmitted_structure_increase_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L243) | 243 |
+| [ConsequenceTransmission.faithful_transmission_matches_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L248) | 248 |
+| [ConsequenceTransmission.balanced_transfer_matches_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L256) | 256 |
+| [ConsequenceTransmission.faithful_increase_iff_template_increase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L263) | 263 |
+| [ConsequenceTransmission.positive_template_advantage_can_reverse_in_transmission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L275) | 275 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [ConsequenceTransmission.Weights](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L21) (L21)
+- `def` [ConsequenceTransmission.total](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L27) (L27)
+- `def` [ConsequenceTransmission.afterNumerator](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L31) (L31)
+- `def` [ConsequenceTransmission.beforeNumerator](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L36) (L36)
+- `def` [ConsequenceTransmission.denominator](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L39) (L39)
+- `def` [ConsequenceTransmission.Native.weights](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L109) (L109)
+- `def` [ConsequenceTransmission.Native.transferInitial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L163) (L163)
+- `def` [ConsequenceTransmission.Native.transferReady](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L164) (L164)
+- `def` [ConsequenceTransmission.Native.transferCopied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L165) (L165)
+- `def` [ConsequenceTransmission.Native.transferWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L166) (L166)
+- `structure` [ConsequenceTransmission.Transmission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L216) (L216)
+- `def` [ConsequenceTransmission.templateWeights](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L224) (L224)
+- `def` [ConsequenceTransmission.transmittedWeights](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L227) (L227)
+- `def` [ConsequenceTransmission.Faithful](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L230) (L230)
+- `def` [ConsequenceTransmission.altered](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean#L273) (L273)
+
+文本中有 19 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 19 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-15a26dae9373"></a>
+
+<details>
+<summary>SupportHandoff.lean — 54 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean) · [理论 / Theory](../../unified-2026-10-05/LIANGZHI-EVOLUTION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean`
+
+Imports: `PurposeCorrection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SupportHandoff.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L110) | 110 |
+| [SupportHandoff.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L116) | 116 |
+| [SupportHandoff.step_support](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L133) | 133 |
+| [SupportHandoff.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L142) | 142 |
+| [SupportHandoff.trace_support](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L148) | 148 |
+| [SupportHandoff.insufficient_support_for_word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L157) | 157 |
+| [SupportHandoff.disconnected_second_cannot_produce](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L164) | 164 |
+| [SupportHandoff.successful_attempt_constructs_product](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L170) | 170 |
+| [SupportHandoff.unavailable_attempt_is_actual](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L186) | 186 |
+| [SupportHandoff.formation_and_dependency_are_actual](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L207) | 207 |
+| [SupportHandoff.replacement_is_assembled_connected_and_tested](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L216) | 216 |
+| [SupportHandoff.original_support_ends_before_real_completion](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L224) | 224 |
+| [SupportHandoff.whole_handoff_preserves_material_and_support](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L236) | 236 |
+| [SupportHandoff.early_exit_reaches_an_actual_failed_attempt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L249) | 249 |
+| [SupportHandoff.recovery_can_complete_the_same_activity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L256) | 256 |
+| [SupportHandoff.replacement_after_removal_can_complete_without_failure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L271) | 271 |
+| [SupportHandoff.real_completion_needs_no_replacement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L282) | 282 |
+| [SupportHandoff.low_support_blocks_handoff_but_not_finite_ending](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L291) | 291 |
+| [SupportHandoff.runnable_described_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L301) | 301 |
+| [SupportHandoff.later_recovery_does_not_erase_failed_occurrence](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L316) | 316 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [SupportHandoff.Port](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L18) (L18)
+- `structure` [SupportHandoff.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L21) (L21)
+- `def` [SupportHandoff.bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L33) (L33)
+- `def` [SupportHandoff.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L34) (L34)
+- `def` [SupportHandoff.connected](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L37) (L37)
+- `def` [SupportHandoff.canProduce](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L41) (L41)
+- `inductive` [SupportHandoff.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L43) (L43)
+- `def` [SupportHandoff.conditions](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L49) (L49)
+- `def` [SupportHandoff.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L62) (L62)
+- `def` [SupportHandoff.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L69) (L69)
+- `def` [SupportHandoff.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L92) (L92)
+- `def` [SupportHandoff.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L95) (L95)
+- `def` [SupportHandoff.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L99) (L99)
+- `def` [SupportHandoff.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L197) (L197)
+- `def` [SupportHandoff.preparationWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L198) (L198)
+- `def` [SupportHandoff.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L199) (L199)
+- `def` [SupportHandoff.installAndTest](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L200) (L200)
+- `def` [SupportHandoff.tested](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L201) (L201)
+- `def` [SupportHandoff.switched](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L202) (L202)
+- `def` [SupportHandoff.finishing](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L203) (L203)
+- `def` [SupportHandoff.handoffWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L204) (L204)
+- `def` [SupportHandoff.handoffFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L205) (L205)
+- `def` [SupportHandoff.earlyExit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L242) (L242)
+- `def` [SupportHandoff.interrupted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L243) (L243)
+- `def` [SupportHandoff.repairWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L244) (L244)
+- `def` [SupportHandoff.repaired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L247) (L247)
+- `def` [SupportHandoff.delayedReplacement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L266) (L266)
+- `def` [SupportHandoff.delayedFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L269) (L269)
+- `def` [SupportHandoff.allOriginal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L278) (L278)
+- `def` [SupportHandoff.ended](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L280) (L280)
+- `def` [SupportHandoff.descriptions](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L298) (L298)
+- `def` [SupportHandoff.past](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L309) (L309)
+- `def` [SupportHandoff.firstFailed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L310) (L310)
+- `def` [SupportHandoff.NoFailedAttempt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean#L312) (L312)
+
+文本中有 20 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 20 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-411df828cbbe"></a>
+
+<details>
+<summary>FormationAccounts.lean — 23 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean) · [理论 / Theory](../../unified-2026-10-05/LEARNING-INTERFACE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SUPPORT-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean`
+
+Imports: `FormationSupport`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FormedSelection.Accounts.spending_split](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L55) | 55 |
+| [FormedSelection.Accounts.tally_spending_split](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L59) | 59 |
+| [FormedSelection.Accounts.step_account_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L69) | 69 |
+| [FormedSelection.Accounts.identified_account_laws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L78) | 78 |
+| [FormedSelection.Accounts.root_account_balance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L89) | 89 |
+| [FormedSelection.Accounts.root_account_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L96) | 96 |
+| [FormedSelection.Accounts.root_open_closed_consistency](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L108) | 108 |
+| [FormedSelection.Accounts.root_reaction_loss_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L121) | 121 |
+| [FormedSelection.Accounts.root_common_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L126) | 126 |
+| [FormedSelection.Accounts.root_exhausted_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L134) | 134 |
+| [FormedSelection.Accounts.root_append_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L143) | 143 |
+| [FormedSelection.Accounts.root_shared_boundary_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L155) | 155 |
+| [FormedSelection.Accounts.zero_fuel_cost_damage](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L164) | 164 |
+| [FormedSelection.Accounts.fuel_demand_is_not_unit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L168) | 168 |
+| [FormedSelection.Accounts.mixed_witness_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L177) | 177 |
+
+定义与类型 / Definitions and types:
+
+- `def` [FormedSelection.Accounts.reactionExpenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L19) (L19)
+- `def` [FormedSelection.Accounts.fuelLoss](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L24) (L24)
+- `inductive` [FormedSelection.Accounts.Boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L28) (L28)
+- `def` [FormedSelection.Accounts.reserve](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L32) (L32)
+- `def` [FormedSelection.Accounts.demandWeight](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L38) (L38)
+- `def` [FormedSelection.Accounts.creditWeight](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L43) (L43)
+- `def` [FormedSelection.Accounts.demand](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L47) (L47)
+- `def` [FormedSelection.Accounts.credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean#L50) (L50)
+
+文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-3599c054bffb"></a>
+
+<details>
+<summary>FormationRoot.lean — 11 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SUPPORT-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean`
+
+Imports: `GenerativeCore`, `FormedSelection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FormedSelection.trace_to_root](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L14) | 14 |
+| [FormedSelection.trace_from_root](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L20) | 20 |
+| [FormedSelection.trace_iff_root](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L26) | 26 |
+| [FormedSelection.root_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L30) | 30 |
+| [FormedSelection.root_three_unit_bootstrap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L35) | 35 |
+| [FormedSelection.root_four_unit_mixed_bootstrap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L41) | 41 |
+| [FormedSelection.root_formation_to_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L47) | 47 |
+| [FormedSelection.root_no_h_local_copy_before_resident_wear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L51) | 51 |
+| [FormedSelection.root_repaired_site_inheritance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L57) | 57 |
+| [FormedSelection.trace_append_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L61) | 61 |
+
+定义与类型 / Definitions and types:
+
+- `def` [FormedSelection.rootProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean#L12) (L12)
+
+文本中有 10 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 10 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c9712e044702"></a>
+
+<details>
+<summary>FormedSelection.lean — 82 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FormedSelection.population_type_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L126) | 126 |
+| [FormedSelection.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L130) | 130 |
+| [FormedSelection.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L136) | 136 |
+| [FormedSelection.material_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L141) | 141 |
+| [FormedSelection.trace_material_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L147) | 147 |
+| [FormedSelection.step_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L151) | 151 |
+| [FormedSelection.trace_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L157) | 157 |
+| [FormedSelection.step_common_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L166) | 166 |
+| [FormedSelection.trace_common_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L171) | 171 |
+| [FormedSelection.copy_increment_le_spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L180) | 180 |
+| [FormedSelection.copy_tally_le_spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L183) | 183 |
+| [FormedSelection.trace_copy_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L192) | 192 |
+| [FormedSelection.exact_step_rank_drop](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L197) | 197 |
+| [FormedSelection.step_strict_rank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L203) | 203 |
+| [FormedSelection.trace_event_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L208) | 208 |
+| [FormedSelection.no_infinite_event_path](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L216) | 216 |
+| [FormedSelection.step_paid_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L235) | 235 |
+| [FormedSelection.trace_paid_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L242) | 242 |
+| [FormedSelection.repair_needs_three_initial_common_units](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L253) | 253 |
+| [FormedSelection.low_fuel_cannot_restore_site](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L260) | 260 |
+| [FormedSelection.step_paid_mixed_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L276) | 276 |
+| [FormedSelection.trace_paid_mixed_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L283) | 283 |
+| [FormedSelection.restored_site_and_alternative_need_four_initial_common_units](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L291) | 291 |
+| [FormedSelection.a_absence_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L303) | 303 |
+| [FormedSelection.h_absence_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L309) | 309 |
+| [FormedSelection.a_absence_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L315) | 315 |
+| [FormedSelection.h_absence_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L323) | 323 |
+| [FormedSelection.a_appearance_requires_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L331) | 331 |
+| [FormedSelection.h_appearance_requires_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L338) | 338 |
+| [FormedSelection.a_copy_has_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L345) | 345 |
+| [FormedSelection.h_copy_has_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L352) | 352 |
+| [FormedSelection.owned_support_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L363) | 363 |
+| [FormedSelection.owned_support_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L369) | 369 |
+| [FormedSelection.owned_support_forbids_h_local_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L377) | 377 |
+| [FormedSelection.no_h_local_copies_without_resident_wear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L382) | 382 |
+| [FormedSelection.paid_formation_to_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L402) | 402 |
+| [FormedSelection.witness_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L411) | 411 |
+| [FormedSelection.repair_enables_capture](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L418) | 418 |
+| [FormedSelection.capture_enables_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L421) | 421 |
+| [FormedSelection.initial_owned_support](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L424) | 424 |
+| [FormedSelection.no_h_local_copies_from_absence_without_resident_wear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L427) | 427 |
+| [FormedSelection.repaired_site_can_pass_to_alternative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L438) | 438 |
+| [FormedSelection.inheritance_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L450) | 450 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [FormedSelection.Resident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L12) (L12)
+- `structure` [FormedSelection.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L16) (L16)
+- `inductive` [FormedSelection.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L26) (L26)
+- `def` [FormedSelection.bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L32) (L32)
+- `def` [FormedSelection.occupied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L33) (L33)
+- `def` [FormedSelection.activeResident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L34) (L34)
+- `def` [FormedSelection.alternativeResident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L35) (L35)
+- `def` [FormedSelection.population](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L36) (L36)
+- `def` [FormedSelection.aCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L37) (L37)
+- `def` [FormedSelection.hCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L38) (L38)
+- `def` [FormedSelection.precursor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L39) (L39)
+- `def` [FormedSelection.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L40) (L40)
+- `def` [FormedSelection.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L42) (L42)
+- `def` [FormedSelection.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L59) (L59)
+- `def` [FormedSelection.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L77) (L77)
+- `inductive` [FormedSelection.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L92) (L92)
+- `def` [FormedSelection.expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L97) (L97)
+- `def` [FormedSelection.commonExpenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L101) (L101)
+- `def` [FormedSelection.copyIncrement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L106) (L106)
+- `def` [FormedSelection.eventIndicator](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L110) (L110)
+- `def` [FormedSelection.tally](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L112) (L112)
+- `def` [FormedSelection.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L116) (L116)
+- `def` [FormedSelection.rank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L117) (L117)
+- `def` [FormedSelection.rankDrop](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L120) (L120)
+- `def` [FormedSelection.phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L229) (L229)
+- `def` [FormedSelection.Absent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L250) (L250)
+- `def` [FormedSelection.mixedPhase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L270) (L270)
+- `def` [FormedSelection.SupportOwned](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L360) (L360)
+- `def` [FormedSelection.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L393) (L393)
+- `def` [FormedSelection.formedH](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L394) (L394)
+- `def` [FormedSelection.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L395) (L395)
+- `def` [FormedSelection.associated](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L396) (L396)
+- `def` [FormedSelection.repaired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L397) (L397)
+- `def` [FormedSelection.captured](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L398) (L398)
+- `def` [FormedSelection.copied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L399) (L399)
+- `def` [FormedSelection.witnessEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L400) (L400)
+- `def` [FormedSelection.inheritanceInitial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L433) (L433)
+- `def` [FormedSelection.inheritanceFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L434) (L434)
+- `def` [FormedSelection.inheritanceEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L435) (L435)
+
+文本中有 43 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 43 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d6edcd35ca09"></a>
+
+<details>
+<summary>RecordedEvidence.lean — 61 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean`
+
+Imports: `GenerativeCore`, `FormedSelection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecordedEvidence.handoff_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L91) | 91 |
+| [RecordedEvidence.handoff_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L95) | 95 |
+| [RecordedEvidence.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L100) | 100 |
+| [RecordedEvidence.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L106) | 106 |
+| [RecordedEvidence.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L111) | 111 |
+| [RecordedEvidence.step_observation_word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L125) | 125 |
+| [RecordedEvidence.step_slots](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L130) | 130 |
+| [RecordedEvidence.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L134) | 134 |
+| [RecordedEvidence.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L140) | 140 |
+| [RecordedEvidence.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L146) | 146 |
+| [RecordedEvidence.trace_observation_word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L155) | 155 |
+| [RecordedEvidence.trace_slots](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L163) | 163 |
+| [RecordedEvidence.complete_record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L172) | 172 |
+| [RecordedEvidence.handoff_complete_record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L177) | 177 |
+| [RecordedEvidence.record_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L182) | 182 |
+| [RecordedEvidence.material_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L186) | 186 |
+| [RecordedEvidence.full_slot_blocks_admission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L191) | 191 |
+| [RecordedEvidence.source_guard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L194) | 194 |
+| [RecordedEvidence.busy_blocks_admission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L198) | 198 |
+| [RecordedEvidence.preallocated_writer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L201) | 201 |
+| [RecordedEvidence.macro_update](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L213) | 213 |
+| [RecordedEvidence.completed_trial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L217) | 217 |
+| [RecordedEvidence.trace_run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L228) | 228 |
+| [RecordedEvidence.completed_trial_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L237) | 237 |
+| [RecordedEvidence.macro_teacher_stocks](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L248) | 248 |
+| [RecordedEvidence.ones_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L253) | 253 |
+| [RecordedEvidence.macro_counts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L258) | 258 |
+| [RecordedEvidence.composed_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L263) | 263 |
+| [RecordedEvidence.actual_preparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L279) | 279 |
+| [RecordedEvidence.actual_assembly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L296) | 296 |
+| [RecordedEvidence.actual_two_records](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L305) | 305 |
+| [RecordedEvidence.fuel_cannot_replace_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L313) | 313 |
+| [RecordedEvidence.full_witness_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L318) | 318 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [RecordedEvidence.Pending](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L15) (L15)
+- `def` [RecordedEvidence.busy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L19) (L19)
+- `def` [RecordedEvidence.pendingWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L20) (L20)
+- `structure` [RecordedEvidence.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L22) (L22)
+- `def` [RecordedEvidence.handoff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L31) (L31)
+- `def` [RecordedEvidence.materialUsed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L32) (L32)
+- `def` [RecordedEvidence.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L33) (L33)
+- `def` [RecordedEvidence.observed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L34) (L34)
+- `def` [RecordedEvidence.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L35) (L35)
+- `inductive` [RecordedEvidence.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L39) (L39)
+- `def` [RecordedEvidence.CanAdmit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L43) (L43)
+- `def` [RecordedEvidence.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L46) (L46)
+- `def` [RecordedEvidence.receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L53) (L53)
+- `def` [RecordedEvidence.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L55) (L55)
+- `def` [RecordedEvidence.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L66) (L66)
+- `def` [RecordedEvidence.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L68) (L68)
+- `def` [RecordedEvidence.spending](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L69) (L69)
+- `def` [RecordedEvidence.assemblyCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L70) (L70)
+- `def` [RecordedEvidence.emission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L71) (L71)
+- `def` [RecordedEvidence.tally](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L72) (L72)
+- `def` [RecordedEvidence.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L74) (L74)
+- `def` [RecordedEvidence.ones](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L76) (L76)
+- `def` [RecordedEvidence.completedUpdate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L208) (L208)
+- `def` [RecordedEvidence.initialPlant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L273) (L273)
+- `def` [RecordedEvidence.preparedPlant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L274) (L274)
+- `def` [RecordedEvidence.preparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L275) (L275)
+- `def` [RecordedEvidence.installed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L293) (L293)
+- `def` [RecordedEvidence.exhausted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean#L303) (L303)
+
+文本中有 33 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 33 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-315e6988dc15"></a>
+
+<details>
+<summary>ReasonReplay.lean — 128 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [理论 / Theory](../../unified-2026-10-05/HUIGEN.md) · [研究 / Study](../../../../_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean`
+
+Imports: `RecordedEvidence`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ReasonReplay.supported_closed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L76) | 76 |
+| [ReasonReplay.rooted_iff_supported](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L90) | 90 |
+| [ReasonReplay.closure_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L107) | 107 |
+| [ReasonReplay.rooted_semantic_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L118) | 118 |
+| [ReasonReplay.closure_semantic_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L126) | 126 |
+| [ReasonReplay.current_decode_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L146) | 146 |
+| [ReasonReplay.missing_is_not_negative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L159) | 159 |
+| [ReasonReplay.recorded_word_supplies_assay](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L164) | 164 |
+| [ReasonReplay.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L287) | 287 |
+| [ReasonReplay.trace_run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L293) | 293 |
+| [ReasonReplay.record_step_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L299) | 299 |
+| [ReasonReplay.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L305) | 305 |
+| [ReasonReplay.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L320) | 320 |
+| [ReasonReplay.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L352) | 352 |
+| [ReasonReplay.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L370) | 370 |
+| [ReasonReplay.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L376) | 376 |
+| [ReasonReplay.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L382) | 382 |
+| [ReasonReplay.assayed_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L388) | 388 |
+| [ReasonReplay.handoff_authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L408) | 408 |
+| [ReasonReplay.step_authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L414) | 414 |
+| [ReasonReplay.trace_authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L435) | 435 |
+| [ReasonReplay.audit_run_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L442) | 442 |
+| [ReasonReplay.audit_run_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L451) | 451 |
+| [ReasonReplay.paid_audit_installs_exact_closure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L456) | 456 |
+| [ReasonReplay.paid_audit_rooted_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L472) | 472 |
+| [ReasonReplay.negative_decode_identifies_false_assay](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L484) | 484 |
+| [ReasonReplay.access_cut_retains_records_and_published_reason](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L489) | 489 |
+| [ReasonReplay.delivery_cut_is_not_refutation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L494) | 494 |
+| [ReasonReplay.context_change_preserves_history_not_current_audit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L499) | 499 |
+| [ReasonReplay.successor_turnover_preserves_physical_grounds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L505) | 505 |
+| [ReasonReplay.calibrated_edges_preserve_reasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L515) | 515 |
+| [ReasonReplay.paid_recorded_reason_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L541) | 541 |
+| [ReasonReplay.current_publication_blocks_recording](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L558) | 558 |
+| [ReasonReplay.reset_withdraws_current_publication](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L566) | 566 |
+| [ReasonReplay.audit_is_funded_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L572) | 572 |
+| [ReasonReplay.formation_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L604) | 604 |
+| [ReasonReplay.reason_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L611) | 611 |
+| [ReasonReplay.compose_actual_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L618) | 618 |
+| [ReasonReplay.actual_part_preparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L638) | 638 |
+| [ReasonReplay.actual_apparatus](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L676) | 676 |
+| [ReasonReplay.actual_first_records](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L678) | 678 |
+| [ReasonReplay.actual_first_audit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L680) | 680 |
+| [ReasonReplay.actual_second_records](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L682) | 682 |
+| [ReasonReplay.actual_revised_audit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L684) | 684 |
+| [ReasonReplay.actual_successor_replay](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L686) | 686 |
+| [ReasonReplay.full_history](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L689) | 689 |
+| [ReasonReplay.actual_construction_record_revision_successor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L692) | 692 |
+| [ReasonReplay.whole_history_resource_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L697) | 697 |
+| [ReasonReplay.rooted_revision_keeps_alternative_ground](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L705) | 705 |
+| [ReasonReplay.actual_history_authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L714) | 714 |
+| [ReasonReplay.stale_and_missing_are_not_new_negative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L717) | 717 |
+| [ReasonReplay.unsupported_cycle_does_not_self_anchor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L723) | 723 |
+| [ReasonReplay.old_full_recorder_cannot_supply_reader](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L727) | 727 |
+| [ReasonReplay.one_more_replay_then_liquidity_failure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L734) | 734 |
+| [ReasonReplay.calibrated_negative_refutes_only_edge_fact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L747) | 747 |
+| [ReasonReplay.paid_audit_exact_available_reachability](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L755) | 755 |
+| [ReasonReplay.completed_audit_has_current_status](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L767) | 767 |
+| [ReasonReplay.access_cut_blocks_acquisition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L778) | 778 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [ReasonReplay.Node](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L15) (L15)
+- `structure` [ReasonReplay.Graph](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L19) (L19)
+- `structure` [ReasonReplay.Mask](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L25) (L25)
+- `def` [ReasonReplay.emptyMask](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L30) (L30)
+- `def` [ReasonReplay.Mask.has](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L31) (L31)
+- `inductive` [ReasonReplay.Path](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L36) (L36)
+- `def` [ReasonReplay.paths](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L40) (L40)
+- `def` [ReasonReplay.pathIndex](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L41) (L41)
+- `def` [ReasonReplay.pathCost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L42) (L42)
+- `def` [ReasonReplay.endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L43) (L43)
+- `def` [ReasonReplay.positive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L45) (L45)
+- `def` [ReasonReplay.edge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L47) (L47)
+- `def` [ReasonReplay.pathValid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L52) (L52)
+- `def` [ReasonReplay.applyPath](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L58) (L58)
+- `def` [ReasonReplay.closureMask](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L64) (L64)
+- `inductive` [ReasonReplay.Rooted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L67) (L67)
+- `def` [ReasonReplay.supported](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L71) (L71)
+- `def` [ReasonReplay.queryContext](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L133) (L133)
+- `def` [ReasonReplay.queryEdge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L134) (L134)
+- `def` [ReasonReplay.decodeAt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L136) (L136)
+- `def` [ReasonReplay.decodedAt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L139) (L139)
+- `def` [ReasonReplay.Assayed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L142) (L142)
+- `structure` [ReasonReplay.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L172) (L172)
+- `def` [ReasonReplay.handoff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L185) (L185)
+- `def` [ReasonReplay.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L188) (L188)
+- `def` [ReasonReplay.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L189) (L189)
+- `def` [ReasonReplay.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L191) (L191)
+- `def` [ReasonReplay.debit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L193) (L193)
+- `def` [ReasonReplay.sensedDecode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L196) (L196)
+- `inductive` [ReasonReplay.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L199) (L199)
+- `def` [ReasonReplay.assayGuard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L211) (L211)
+- `def` [ReasonReplay.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L217) (L217)
+- `def` [ReasonReplay.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L229) (L229)
+- `def` [ReasonReplay.spending](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L242) (L242)
+- `def` [ReasonReplay.tally](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L248) (L248)
+- `def` [ReasonReplay.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L252) (L252)
+- `def` [ReasonReplay.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L263) (L263)
+- `def` [ReasonReplay.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L264) (L264)
+- `def` [ReasonReplay.auditEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L266) (L266)
+- `def` [ReasonReplay.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L270) (L270)
+- `def` [ReasonReplay.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L274) (L274)
+- `def` [ReasonReplay.runnableDecidable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L278) (L278)
+- `def` [ReasonReplay.Authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L403) (L403)
+- `def` [ReasonReplay.endpoints](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L512) (L512)
+- `def` [ReasonReplay.CurrentPublication](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L555) (L555)
+- `inductive` [ReasonReplay.Stage](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L589) (L589)
+- `inductive` [ReasonReplay.StageEvent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L591) (L591)
+- `def` [ReasonReplay.StagedStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L594) (L594)
+- `def` [ReasonReplay.stagedProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L600) (L600)
+- `def` [ReasonReplay.StagedTrace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L602) (L602)
+- `def` [ReasonReplay.primary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L630) (L630)
+- `def` [ReasonReplay.truth](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L631) (L631)
+- `def` [ReasonReplay.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L632) (L632)
+- `def` [ReasonReplay.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L633) (L633)
+- `def` [ReasonReplay.formationEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L634) (L634)
+- `def` [ReasonReplay.recordBit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L658) (L658)
+- `def` [ReasonReplay.apparatusEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L659) (L659)
+- `def` [ReasonReplay.firstRecordEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L661) (L661)
+- `def` [ReasonReplay.secondRecordEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L662) (L662)
+- `def` [ReasonReplay.ready](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L664) (L664)
+- `def` [ReasonReplay.firstRecorded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L665) (L665)
+- `def` [ReasonReplay.firstPublished](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L666) (L666)
+- `def` [ReasonReplay.changed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L667) (L667)
+- `def` [ReasonReplay.secondRecorded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L668) (L668)
+- `def` [ReasonReplay.secondPublished](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L669) (L669)
+- `def` [ReasonReplay.successor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L670) (L670)
+- `def` [ReasonReplay.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L671) (L671)
+- `def` [ReasonReplay.fullEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L673) (L673)
+- `def` [ReasonReplay.extraSuccessor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L731) (L731)
+- `def` [ReasonReplay.extraFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean#L732) (L732)
+
+文本中有 58 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 58 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-970e18466304"></a>
+
+<details>
+<summary>ClaimLedger.lean — 35 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ClaimLedger.distinct_patient_keeps_claim_distinct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L47) | 47 |
+| [ClaimLedger.distinct_episode_keeps_claim_distinct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L55) | 55 |
+| [ClaimLedger.initial_wellFormed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L63) | 63 |
+| [ClaimLedger.record_admitted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L68) | 68 |
+| [ClaimLedger.record_wellFormed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L71) | 71 |
+| [ClaimLedger.unresolved_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L76) | 76 |
+| [ClaimLedger.certified_disjoint_unresolved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L88) | 88 |
+| [ClaimLedger.record_unresolved_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L93) | 93 |
+| [ClaimLedger.no_new_certificate_preserves_unresolved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L102) | 102 |
+| [ClaimLedger.unresolved_retains_independently_admitted_reason](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L108) | 108 |
+| [ClaimLedger.recorded_certificates_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L116) | 116 |
+| [ClaimLedger.recorded_sound_iff_old_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L124) | 124 |
+| [ClaimLedger.traces_compose](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L141) | 141 |
+| [ClaimLedger.partial_evidence_actual_execution](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L152) | 152 |
+| [ClaimLedger.successive_execution_with_persistent_claims](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L178) | 178 |
+| [ClaimLedger.service_step_is_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L228) | 228 |
+| [ClaimLedger.one_unit_cannot_deliver_both_positive_services](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L234) | 234 |
+| [ClaimLedger.paid_service_preserves_unfulfilled_claim](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L243) | 243 |
+| [ClaimLedger.no_funding_does_not_erase_admitted_claims](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L260) | 260 |
+| [ClaimLedger.missing_certificate_does_not_prove_missing_effect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L275) | 275 |
+| [ClaimLedger.prior_certificate_without_persistence_can_be_false](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L281) | 281 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [ClaimLedger.AddressedClaim](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L23) (L23)
+- `structure` [ClaimLedger.Ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L31) (L31)
+- `def` [ClaimLedger.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L35) (L35)
+- `def` [ClaimLedger.record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L38) (L38)
+- `def` [ClaimLedger.unresolved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L41) (L41)
+- `def` [ClaimLedger.WellFormed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L44) (L44)
+- `inductive` [ClaimLedger.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L135) (L135)
+- `inductive` [ClaimLedger.Patient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L197) (L197)
+- `inductive` [ClaimLedger.Service](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L200) (L200)
+- `def` [ClaimLedger.serviceCost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L203) (L203)
+- `def` [ClaimLedger.services](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L208) (L208)
+- `structure` [ClaimLedger.ServiceState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L214) (L214)
+- `def` [ClaimLedger.serviceAdvance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L220) (L220)
+- `def` [ClaimLedger.serviceStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean#L225) (L225)
+
+文本中有 21 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 21 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-b0831c6b108c"></a>
+
+<details>
+<summary>ProtectionLedger.lean — 36 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean`
+
+Imports: `ReasonProtection`, `ClaimLedger`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ProtectionLedger.step_harm_monotone](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L36) | 36 |
+| [ProtectionLedger.trace_harm_monotone](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L43) | 43 |
+| [ProtectionLedger.no_new_harm_compose_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L53) | 53 |
+| [ProtectionLedger.no_new_harm_three_intervals_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L64) | 64 |
+| [ProtectionLedger.actual_trace_lifts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L97) | 97 |
+| [ProtectionLedger.scoped_trace_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L106) | 106 |
+| [ProtectionLedger.scoped_trace_preserves_addressed_interval](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L114) | 114 |
+| [ProtectionLedger.scoped_trace_preserves_actual_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L122) | 122 |
+| [ProtectionLedger.action_ledger_keeps_addressed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L136) | 136 |
+| [ProtectionLedger.action_ledger_certificate_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L139) | 139 |
+| [ProtectionLedger.action_ledger_unresolved_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L143) | 143 |
+| [ProtectionLedger.paid_action_certificates_are_actual](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L154) | 154 |
+| [ProtectionLedger.actual_trace_to_claim_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L171) | 171 |
+| [ProtectionLedger.claim_trace_to_actual_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L179) | 179 |
+| [ProtectionLedger.paid_partial_evidence_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L192) | 192 |
+| [ProtectionLedger.grounded_paid_action_contract](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L229) | 229 |
+| [ProtectionLedger.actual_revised_action_and_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L263) | 263 |
+| [ProtectionLedger.actual_second_interval](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L280) | 280 |
+| [ProtectionLedger.actual_protection_intersects_across_horizons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L290) | 290 |
+| [ProtectionLedger.actual_obstructed_interval](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L301) | 301 |
+| [ProtectionLedger.obstruction_preserves_claims_and_costs](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L308) | 308 |
+| [ProtectionLedger.withdrawal_can_leave_uncertified_claim_without_harm](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L323) | 323 |
+| [ProtectionLedger.low_funds_preserve_reason_and_allow_withdrawal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L342) | 342 |
+| [ProtectionLedger.actual_voluntary_route_remains_available](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L352) | 352 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ProtectionLedger.harm](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L24) (L24)
+- `def` [ProtectionLedger.NoNewHarm](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L28) (L28)
+- `structure` [ProtectionLedger.ScopedState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L78) (L78)
+- `def` [ProtectionLedger.withScope](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L83) (L83)
+- `def` [ProtectionLedger.ScopedStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L86) (L86)
+- `def` [ProtectionLedger.scopedProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L91) (L91)
+- `def` [ProtectionLedger.ScopedTrace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L94) (L94)
+- `def` [ProtectionLedger.actionLedger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L133) (L133)
+- `def` [ProtectionLedger.addressedBoth](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L258) (L258)
+- `def` [ProtectionLedger.revisedLedger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L259) (L259)
+- `def` [ProtectionLedger.afterFirst](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L278) (L278)
+- `def` [ProtectionLedger.obstructedWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean#L299) (L299)
+
+文本中有 24 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 24 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-84e1d134b181"></a>
+
+<details>
+<summary>ReasonProtection.lean — 132 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean`
+
+Imports: `ReasonReplay`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ReasonProtection.covers_self](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L33) | 33 |
+| [ReasonProtection.covers_trans](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L34) | 34 |
+| [ReasonProtection.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L159) | 159 |
+| [ReasonProtection.trace_run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L165) | 165 |
+| [ReasonProtection.core_step_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L171) | 171 |
+| [ReasonProtection.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L177) | 177 |
+| [ReasonProtection.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L193) | 193 |
+| [ReasonProtection.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L206) | 206 |
+| [ReasonProtection.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L227) | 227 |
+| [ReasonProtection.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L233) | 233 |
+| [ReasonProtection.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L239) | 239 |
+| [ReasonProtection.step_authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L245) | 245 |
+| [ReasonProtection.trace_authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L253) | 253 |
+| [ReasonProtection.core_segment_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L260) | 260 |
+| [ReasonProtection.core_trace_lifts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L269) | 269 |
+| [ReasonProtection.run_core_clean](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L280) | 280 |
+| [ReasonProtection.action_cost_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L307) | 307 |
+| [ReasonProtection.action_run_core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L310) | 310 |
+| [ReasonProtection.action_run_harms](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L316) | 316 |
+| [ReasonProtection.action_feasible_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L323) | 323 |
+| [ReasonProtection.protected_action_has_no_new_admitted_harm](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L343) | 343 |
+| [ReasonProtection.cut_does_not_refute_or_erase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L359) | 359 |
+| [ReasonProtection.force_does_not_erase_actual_safeguards](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L362) | 362 |
+| [ReasonProtection.withdrawal_consumes_opportunity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L366) | 366 |
+| [ReasonProtection.run_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L371) | 371 |
+| [ReasonProtection.audit_tally](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L379) | 379 |
+| [ReasonProtection.audit_core_projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L381) | 381 |
+| [ReasonProtection.audit_then_action_fuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L385) | 385 |
+| [ReasonProtection.audit_then_action_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L394) | 394 |
+| [ReasonProtection.tally_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L404) | 404 |
+| [ReasonProtection.audit_and_action_feasible_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L411) | 411 |
+| [ReasonProtection.reached_reason_and_protection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L437) | 437 |
+| [ReasonProtection.formation_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L476) | 476 |
+| [ReasonProtection.operation_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L483) | 483 |
+| [ReasonProtection.compose_actual_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L490) | 490 |
+| [ReasonProtection.actual_part_preparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L510) | 510 |
+| [ReasonProtection.actual_apparatus](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L551) | 551 |
+| [ReasonProtection.reader_projection_is_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L554) | 554 |
+| [ReasonProtection.actual_first_audit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L556) | 556 |
+| [ReasonProtection.actual_first_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L557) | 557 |
+| [ReasonProtection.actual_revised_audit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L558) | 558 |
+| [ReasonProtection.actual_revised_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L559) | 559 |
+| [ReasonProtection.actual_successor_audit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L560) | 560 |
+| [ReasonProtection.actual_successor_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L561) | 561 |
+| [ReasonProtection.full_history](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L563) | 563 |
+| [ReasonProtection.actual_construction_revision_and_protection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L565) | 565 |
+| [ReasonProtection.complete_material_energy_and_harm_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L570) | 570 |
+| [ReasonProtection.actual_retraction_keeps_harm_visible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L582) | 582 |
+| [ReasonProtection.actual_archive_authentic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L589) | 589 |
+| [ReasonProtection.original_hardware_has_no_actuator_pair](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L594) | 594 |
+| [ReasonProtection.reasons_remain_when_next_audit_unfunded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L597) | 597 |
+| [ReasonProtection.actual_delivery_cut_preserves_reasons_but_allows_harm](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L616) | 616 |
+| [ReasonProtection.same_context_reset_cancels_lease_keeps_bill](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L624) | 624 |
+| [ReasonProtection.unaudited_voluntary_protection_is_possible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L629) | 629 |
+| [ReasonProtection.no_gate_still_allows_open_production](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L633) | 633 |
+| [ReasonProtection.audit_full_protection_feasible_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L639) | 639 |
+| [ReasonProtection.actual_final_reopen_preserves_ground_and_is_enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L647) | 647 |
+| [ReasonProtection.enforced_release_protects_requested](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L654) | 654 |
+| [ReasonProtection.release_consumes_its_opportunity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L671) | 671 |
+| [ReasonProtection.actual_predecessor_for_voluntary_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L689) | 689 |
+| [ReasonProtection.voluntary_protection_is_strictly_cheaper_than_armed_word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L693) | 693 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [ReasonProtection.Mask](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L15) (L15)
+- `def` [ReasonProtection.empty](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L17) (L17)
+- `def` [ReasonProtection.full](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L18) (L18)
+- `def` [ReasonProtection.card](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L19) (L19)
+- `def` [ReasonProtection.Covers](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L21) (L21)
+- `inductive` [ReasonProtection.Patient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L25) (L25)
+- `def` [ReasonProtection.member](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L28) (L28)
+- `def` [ReasonProtection.insert](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L29) (L29)
+- `def` [ReasonProtection.union](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L30) (L30)
+- `def` [ReasonProtection.difference](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L31) (L31)
+- `def` [ReasonProtection.patientNode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L37) (L37)
+- `structure` [ReasonProtection.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L39) (L39)
+- `def` [ReasonProtection.wrap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L52) (L52)
+- `def` [ReasonProtection.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L55) (L55)
+- `def` [ReasonProtection.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L56) (L56)
+- `def` [ReasonProtection.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L58) (L58)
+- `def` [ReasonProtection.debit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L61) (L61)
+- `def` [ReasonProtection.required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L64) (L64)
+- `def` [ReasonProtection.preserveLease](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L67) (L67)
+- `inductive` [ReasonProtection.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L71) (L71)
+- `def` [ReasonProtection.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L84) (L84)
+- `def` [ReasonProtection.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L103) (L103)
+- `def` [ReasonProtection.spending](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L116) (L116)
+- `def` [ReasonProtection.tally](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L121) (L121)
+- `def` [ReasonProtection.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L123) (L123)
+- `def` [ReasonProtection.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L126) (L126)
+- `def` [ReasonProtection.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L128) (L128)
+- `def` [ReasonProtection.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L142) (L142)
+- `def` [ReasonProtection.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L146) (L146)
+- `def` [ReasonProtection.runnableDecidable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L150) (L150)
+- `def` [ReasonProtection.safeguards](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L291) (L291)
+- `def` [ReasonProtection.actionWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L294) (L294)
+- `def` [ReasonProtection.actionCost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L297) (L297)
+- `def` [ReasonProtection.Fresh](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L301) (L301)
+- `def` [ReasonProtection.auditWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L377) (L377)
+- `inductive` [ReasonProtection.Stage](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L461) (L461)
+- `inductive` [ReasonProtection.StageEvent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L463) (L463)
+- `def` [ReasonProtection.StagedStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L466) (L466)
+- `def` [ReasonProtection.stagedProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L472) (L472)
+- `def` [ReasonProtection.StagedTrace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L474) (L474)
+- `def` [ReasonProtection.primary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L502) (L502)
+- `def` [ReasonProtection.truth](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L503) (L503)
+- `def` [ReasonProtection.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L504) (L504)
+- `def` [ReasonProtection.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L505) (L505)
+- `def` [ReasonProtection.formationEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L506) (L506)
+- `def` [ReasonProtection.apparatusEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L532) (L532)
+- `def` [ReasonProtection.ready](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L533) (L533)
+- `def` [ReasonProtection.firstBeforeAuditEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L534) (L534)
+- `def` [ReasonProtection.firstBeforeAudit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L535) (L535)
+- `def` [ReasonProtection.firstPublished](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L536) (L536)
+- `def` [ReasonProtection.firstFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L537) (L537)
+- `def` [ReasonProtection.secondBeforeAuditEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L538) (L538)
+- `def` [ReasonProtection.secondBeforeAudit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L539) (L539)
+- `def` [ReasonProtection.secondPublished](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L540) (L540)
+- `def` [ReasonProtection.qOnly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L541) (L541)
+- `def` [ReasonProtection.secondFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L542) (L542)
+- `def` [ReasonProtection.thirdBeforeAuditEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L543) (L543)
+- `def` [ReasonProtection.thirdBeforeAudit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L544) (L544)
+- `def` [ReasonProtection.thirdPublished](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L545) (L545)
+- `def` [ReasonProtection.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L546) (L546)
+- `def` [ReasonProtection.fullEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L548) (L548)
+- `def` [ReasonProtection.freshFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L592) (L592)
+- `def` [ReasonProtection.armedBoth](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L612) (L612)
+- `def` [ReasonProtection.deliveryCut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L613) (L613)
+- `def` [ReasonProtection.unsafeReleased](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L614) (L614)
+- `def` [ReasonProtection.resetAfterArm](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L623) (L623)
+- `def` [ReasonProtection.voluntaryPreparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L680) (L680)
+- `def` [ReasonProtection.voluntaryStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L681) (L681)
+- `def` [ReasonProtection.voluntaryPrefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L683) (L683)
+- `def` [ReasonProtection.voluntaryWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L686) (L686)
+- `def` [ReasonProtection.voluntaryFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean#L687) (L687)
+
+文本中有 61 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 61 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d4766cfc350c"></a>
+
+<details>
+<summary>SelectorRevision.lean — 45 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean`
+
+Imports: `Std`, `GenerativeCore`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SelectorRevision.response_matches_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L92) | 92 |
+| [SelectorRevision.commands_do_not_read_regime](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L98) | 98 |
+| [SelectorRevision.step_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L102) | 102 |
+| [SelectorRevision.trace_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L128) | 128 |
+| [SelectorRevision.trial_preserves_selector](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L140) | 140 |
+| [SelectorRevision.renewal_inherits_selector](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L144) | 144 |
+| [SelectorRevision.failed_trial_wears_selector](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L150) | 150 |
+| [SelectorRevision.changed_selector_requires_paid_assembly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L155) | 155 |
+| [SelectorRevision.reversal_preserves_actual_resources_and_selector](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L170) | 170 |
+| [SelectorRevision.trace_composition_uses_actual_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L177) | 177 |
+| [SelectorRevision.revised_selector_witness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L191) | 191 |
+| [SelectorRevision.witness_changes_response_mapping](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L202) | 202 |
+| [SelectorRevision.paid_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L214) | 214 |
+| [SelectorRevision.paid_exists_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L220) | 220 |
+| [SelectorRevision.failure_cost_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L245) | 245 |
+| [SelectorRevision.recovery_cost_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L251) | 251 |
+| [SelectorRevision.recovery_prefix_affordable_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L257) | 257 |
+| [SelectorRevision.no_recovery_below_first_cost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L261) | 261 |
+| [SelectorRevision.each_failed_candidate_adds_full_block](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L268) | 268 |
+| [SelectorRevision.each_failed_candidate_adds_lifetime_trials](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L273) | 273 |
+| [SelectorRevision.source_horizon_obstruction](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L279) | 279 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [SelectorRevision.Parameters](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L12) (L12)
+- `def` [SelectorRevision.Admissible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L20) (L20)
+- `structure` [SelectorRevision.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L24) (L24)
+- `inductive` [SelectorRevision.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L32) (L32)
+- `def` [SelectorRevision.response](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L39) (L39)
+- `def` [SelectorRevision.productiveResponse](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L40) (L40)
+- `def` [SelectorRevision.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L42) (L42)
+- `def` [SelectorRevision.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L48) (L48)
+- `def` [SelectorRevision.expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L61) (L61)
+- `def` [SelectorRevision.waste](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L66) (L66)
+- `def` [SelectorRevision.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L71) (L71)
+- `def` [SelectorRevision.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L73) (L73)
+- `def` [SelectorRevision.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L84) (L84)
+- `def` [SelectorRevision.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L86) (L86)
+- `def` [SelectorRevision.spentAlong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L88) (L88)
+- `def` [SelectorRevision.exampleParameters](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L182) (L182)
+- `def` [SelectorRevision.exampleInitial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L183) (L183)
+- `def` [SelectorRevision.exampleFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L184) (L184)
+- `def` [SelectorRevision.exampleEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L185) (L185)
+- `inductive` [SelectorRevision.Paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L209) (L209)
+- `def` [SelectorRevision.failureCosts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L235) (L235)
+- `def` [SelectorRevision.recoveryCosts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L239) (L239)
+- `def` [SelectorRevision.recoveryCost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L242) (L242)
+- `def` [SelectorRevision.recoveryTrials](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean#L243) (L243)
+
+文本中有 21 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 21 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-98344ea49fe4"></a>
+
+<details>
+<summary>UpdaterFormation.lean — 56 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-UPDATER-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean`
+
+Imports: `Std`, `GenerativeCore`, `FormedSelection`, `SelectorRevision`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [UpdaterFormation.event_projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L97) | 97 |
+| [UpdaterFormation.step_remainder_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L108) | 108 |
+| [UpdaterFormation.step_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L113) | 113 |
+| [UpdaterFormation.trace_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L140) | 140 |
+| [UpdaterFormation.trace_material_preserved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L152) | 152 |
+| [UpdaterFormation.trace_projects_when_no_modules_formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L158) | 158 |
+| [UpdaterFormation.directed_module_changes_available_assembly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L173) | 173 |
+| [UpdaterFormation.module_change_requires_paid_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L184) | 184 |
+| [UpdaterFormation.bridge_energy_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L213) | 213 |
+| [UpdaterFormation.bridge_has_two_actual_materials](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L223) | 223 |
+| [UpdaterFormation.bridge_material_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L232) | 232 |
+| [UpdaterFormation.old_depleted_witness_cannot_pay_bridge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L237) | 237 |
+| [UpdaterFormation.old_step_preserved_exactly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L265) | 265 |
+| [UpdaterFormation.old_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L270) | 270 |
+| [UpdaterFormation.organization_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L282) | 282 |
+| [UpdaterFormation.actual_formation_bridge_continuation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L293) | 293 |
+| [UpdaterFormation.joined_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L306) | 306 |
+| [UpdaterFormation.synchronized_prefix_affordable_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L323) | 323 |
+| [UpdaterFormation.new_module_budget_obstruction](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L331) | 331 |
+| [UpdaterFormation.actual_old_preparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L343) | 343 |
+| [UpdaterFormation.actual_old_entrance_enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L351) | 351 |
+| [UpdaterFormation.entrance_is_actual_paid_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L366) | 366 |
+| [UpdaterFormation.paid_updater_revision_witness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L369) | 369 |
+| [UpdaterFormation.whole_preparation_to_changed_updater_witness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L387) | 387 |
+| [UpdaterFormation.whole_witness_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L395) | 395 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [UpdaterFormation.Parameters](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L10) (L10)
+- `def` [UpdaterFormation.effective](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L18) (L18)
+- `def` [UpdaterFormation.Admissible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L21) (L21)
+- `structure` [UpdaterFormation.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L25) (L25)
+- `inductive` [UpdaterFormation.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L34) (L34)
+- `def` [UpdaterFormation.selectorAllowed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L42) (L42)
+- `def` [UpdaterFormation.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L45) (L45)
+- `def` [UpdaterFormation.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L54) (L54)
+- `def` [UpdaterFormation.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L61) (L61)
+- `def` [UpdaterFormation.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L70) (L70)
+- `def` [UpdaterFormation.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L71) (L71)
+- `def` [UpdaterFormation.projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L73) (L73)
+- `def` [UpdaterFormation.expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L80) (L80)
+- `def` [UpdaterFormation.waste](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L85) (L85)
+- `def` [UpdaterFormation.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L90) (L90)
+- `def` [UpdaterFormation.spentAlong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L93) (L93)
+- `def` [UpdaterFormation.BridgeEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L201) (L201)
+- `def` [UpdaterFormation.entrance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L206) (L206)
+- `inductive` [UpdaterFormation.JointState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L244) (L244)
+- `inductive` [UpdaterFormation.JointEvent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L249) (L249)
+- `def` [UpdaterFormation.JointStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L255) (L255)
+- `def` [UpdaterFormation.jointProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L262) (L262)
+- `def` [UpdaterFormation.bundleRecoveryCost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L320) (L320)
+- `def` [UpdaterFormation.primary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L337) (L337)
+- `def` [UpdaterFormation.oldInitial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L338) (L338)
+- `def` [UpdaterFormation.oldEntrance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L339) (L339)
+- `def` [UpdaterFormation.oldPreparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L340) (L340)
+- `def` [UpdaterFormation.exampleState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L355) (L355)
+- `def` [UpdaterFormation.primaryEntrance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L358) (L358)
+- `def` [UpdaterFormation.finalWitness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L359) (L359)
+- `def` [UpdaterFormation.updaterWitness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean#L360) (L360)
+
+文本中有 25 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 25 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-ed1c7c0f33b2"></a>
+
+<details>
+<summary>PredictionAction.lean — 79 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean`
+
+Imports: `Std`, `GenerativeCore`, `FormedSelection`, `SelectorRevision`, `UpdaterFormation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PredictionAction.noiseless_receipt_decodes_target](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L93) | 93 |
+| [PredictionAction.outage_record_is_ambiguous](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L97) | 97 |
+| [PredictionAction.changing_memory_changes_command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L101) | 101 |
+| [PredictionAction.command_does_not_read_hidden_regime](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L105) | 105 |
+| [PredictionAction.revised_score_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L109) | 109 |
+| [PredictionAction.step_score_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L113) | 113 |
+| [PredictionAction.trace_score_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L119) | 119 |
+| [PredictionAction.updater_reformation_retains_memory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L125) | 125 |
+| [PredictionAction.reversal_retains_memory_and_resources](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L128) | 128 |
+| [PredictionAction.step_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L135) | 135 |
+| [PredictionAction.trace_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L165) | 165 |
+| [PredictionAction.step_material_preserved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L177) | 177 |
+| [PredictionAction.trace_material_preserved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L182) | 182 |
+| [PredictionAction.retrofit_preserves_actual_memory_reference](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L195) | 195 |
+| [PredictionAction.paid_retrofit_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L201) | 201 |
+| [PredictionAction.whole_history_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L207) | 207 |
+| [PredictionAction.paid_cycle](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L236) | 236 |
+| [PredictionAction.cycle_then](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L240) | 240 |
+| [PredictionAction.three_evidence_then_action_affordable_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L251) | 251 |
+| [PredictionAction.slow_needs_three_false_writes_from_four](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L258) | 258 |
+| [PredictionAction.fast_one_false_write_from_four](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L262) | 262 |
+| [PredictionAction.old_joined_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L284) | 284 |
+| [PredictionAction.prediction_trace_embeds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L295) | 295 |
+| [PredictionAction.join_actual_formed_machinery](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L305) | 305 |
+| [PredictionAction.actual_old_preparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L334) | 334 |
+| [PredictionAction.actual_bridge_enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L342) | 342 |
+| [PredictionAction.actual_paid_old_machinery](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L345) | 345 |
+| [PredictionAction.actual_retrofit_enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L351) | 351 |
+| [PredictionAction.actual_retrofit_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L354) | 354 |
+| [PredictionAction.acquired_corrected_prediction_action_witness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L362) | 362 |
+| [PredictionAction.actual_formed_prefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L381) | 381 |
+| [PredictionAction.whole_formation_prediction_corrected_action_witness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L386) | 386 |
+| [PredictionAction.corrective_write_changes_command_with_action_held_fixed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L397) | 397 |
+| [PredictionAction.whole_witness_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L403) | 403 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [PredictionAction.Parameters](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L12) (L12)
+- `inductive` [PredictionAction.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L19) (L19)
+- `structure` [PredictionAction.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L23) (L23)
+- `inductive` [PredictionAction.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L30) (L30)
+- `def` [PredictionAction.command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L35) (L35)
+- `def` [PredictionAction.receiptOf](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L38) (L38)
+- `def` [PredictionAction.decode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L39) (L39)
+- `def` [PredictionAction.label](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L40) (L40)
+- `def` [PredictionAction.revisedScore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L42) (L42)
+- `def` [PredictionAction.forecastNumerator](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L46) (L46)
+- `def` [PredictionAction.capture](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L47) (L47)
+- `def` [PredictionAction.maintenance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L48) (L48)
+- `def` [PredictionAction.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L50) (L50)
+- `def` [PredictionAction.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L58) (L58)
+- `def` [PredictionAction.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L66) (L66)
+- `def` [PredictionAction.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L74) (L74)
+- `def` [PredictionAction.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L75) (L75)
+- `def` [PredictionAction.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L76) (L76)
+- `def` [PredictionAction.expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L78) (L78)
+- `def` [PredictionAction.waste](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L85) (L85)
+- `def` [PredictionAction.spentAlong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L89) (L89)
+- `def` [PredictionAction.RetrofitEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L188) (L188)
+- `def` [PredictionAction.retrofit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L191) (L191)
+- `def` [PredictionAction.cycleEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L224) (L224)
+- `def` [PredictionAction.cycleEnd](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L225) (L225)
+- `def` [PredictionAction.CycleEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L228) (L228)
+- `def` [PredictionAction.correctiveCosts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L248) (L248)
+- `inductive` [PredictionAction.FullState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L264) (L264)
+- `inductive` [PredictionAction.FullEvent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L269) (L269)
+- `def` [PredictionAction.FullStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L275) (L275)
+- `def` [PredictionAction.fullProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L281) (L281)
+- `def` [PredictionAction.primary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L318) (L318)
+- `def` [PredictionAction.oldInitial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L319) (L319)
+- `def` [PredictionAction.oldEntrance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L320) (L320)
+- `def` [PredictionAction.oldPreparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L321) (L321)
+- `def` [PredictionAction.physical](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L323) (L323)
+- `def` [PredictionAction.exampleState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L326) (L326)
+- `def` [PredictionAction.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L329) (L329)
+- `def` [PredictionAction.beginning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L330) (L330)
+- `def` [PredictionAction.finalState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L331) (L331)
+- `def` [PredictionAction.formationOps](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L332) (L332)
+- `def` [PredictionAction.cycles](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L356) (L356)
+- `def` [PredictionAction.witnessEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L360) (L360)
+- `def` [PredictionAction.preEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L377) (L377)
+- `def` [PredictionAction.correctiveObservation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean#L394) (L394)
+
+文本中有 34 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 34 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-adaf58c1d9b6"></a>
+
+<details>
+<summary>RecipientCorrection.lean — 59 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipientCorrection.exact_encoding_injective](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L24) | 24 |
+| [RecipientCorrection.exact_encoding_behaviourally_distinct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L36) | 36 |
+| [RecipientCorrection.four_distinct_controller_states](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L44) | 44 |
+| [RecipientCorrection.no_one_bit_exact_controller](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L57) | 57 |
+| [RecipientCorrection.shared_bit_cannot_serve_opposite_laws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L66) | 66 |
+| [RecipientCorrection.shared_alternating_writes_interfere](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L70) | 70 |
+| [RecipientCorrection.supplied_opposite_relation_needs_only_one_bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L80) | 80 |
+| [RecipientCorrection.unpack_pack](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L96) | 96 |
+| [RecipientCorrection.packed_code_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L100) | 100 |
+| [RecipientCorrection.packed_table_is_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L104) | 104 |
+| [RecipientCorrection.existing_five_code_register_suffices](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L108) | 108 |
+| [RecipientCorrection.packed_write_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L112) | 112 |
+| [RecipientCorrection.packed_write_sets_queried_cell](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L115) | 115 |
+| [RecipientCorrection.recipient_write_preserves_actor_cell](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L119) | 119 |
+| [RecipientCorrection.actor_write_preserves_recipient_cell](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L123) | 123 |
+| [RecipientCorrection.distinct_target_writes_commute](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L127) | 127 |
+| [RecipientCorrection.consistent_target_swap_preserves_commands](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L138) | 138 |
+| [RecipientCorrection.consistent_target_swap_preserves_writes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L142) | 142 |
+| [RecipientCorrection.aliased_recipient_write_can_damage_actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L146) | 146 |
+| [RecipientCorrection.noiseless_recipient_receipt_decodes_law](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L156) | 156 |
+| [RecipientCorrection.zero_actor_receipt_aliases_recipient_outcomes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L160) | 160 |
+| [RecipientCorrection.no_decoder_from_actor_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L164) | 164 |
+| [RecipientCorrection.private_zero_proxy_correct_iff_recipient_failure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L174) | 174 |
+| [RecipientCorrection.outage_receipt_is_ambiguous](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L178) | 178 |
+| [RecipientCorrection.recipient_feedback_repairs_only_recipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L182) | 182 |
+| [RecipientCorrection.corrected_table_serves_both_targets](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L191) | 191 |
+| [RecipientCorrection.paid_feedback_exists_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L225) | 225 |
+| [RecipientCorrection.affordable_feedback](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L238) | 238 |
+| [RecipientCorrection.affordable_noiseless_feedback](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L247) | 247 |
+| [RecipientCorrection.paid_feedback_energy_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L254) | 254 |
+| [RecipientCorrection.paid_feedback_preserves_actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L264) | 264 |
+| [RecipientCorrection.paid_feedback_corrects_recipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L273) | 273 |
+| [RecipientCorrection.unpaid_recipient_feedback_is_absent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L282) | 282 |
+| [RecipientCorrection.failed_write_retains_observation_charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L291) | 291 |
+| [RecipientCorrection.opposite_laws_packed_correction_witness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L308) | 308 |
+| [RecipientCorrection.opposite_laws_shared_interference_witness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L315) | 315 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [RecipientCorrection.Target](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L8) (L8)
+- `abbrev` [RecipientCorrection.Laws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L12) (L12)
+- `def` [RecipientCorrection.lookup](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L14) (L14)
+- `def` [RecipientCorrection.Exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L18) (L18)
+- `def` [RecipientCorrection.BehaviourallyDifferent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L21) (L21)
+- `def` [RecipientCorrection.sharedAct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L63) (L63)
+- `def` [RecipientCorrection.sharedWrite](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L64) (L64)
+- `def` [RecipientCorrection.knownOppositeAct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L76) (L76)
+- `def` [RecipientCorrection.bitNat](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L84) (L84)
+- `def` [RecipientCorrection.pack](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L85) (L85)
+- `def` [RecipientCorrection.unpack](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L86) (L86)
+- `def` [RecipientCorrection.packedAct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L87) (L87)
+- `def` [RecipientCorrection.update](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L89) (L89)
+- `def` [RecipientCorrection.packedWrite](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L93) (L93)
+- `def` [RecipientCorrection.swapTarget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L132) (L132)
+- `def` [RecipientCorrection.swapLaws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L136) (L136)
+- `def` [RecipientCorrection.receiptOf](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L152) (L152)
+- `def` [RecipientCorrection.decode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L153) (L153)
+- `def` [RecipientCorrection.actorCreditFromRecipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L154) (L154)
+- `structure` [RecipientCorrection.Record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L200) (L200)
+- `def` [RecipientCorrection.observeRecipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L209) (L209)
+- `def` [RecipientCorrection.writeRecipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L215) (L215)
+- `def` [RecipientCorrection.paidFeedback](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean#L220) (L220)
+
+文本中有 36 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 36 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-1c2d7eee36a8"></a>
+
+<details>
+<summary>RecipientIdentification.lean — 92 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean`
+
+Imports: `GenerativeCore`, `RecipientCorrection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipientIdentification.positive_receipt_identifies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L30) | 30 |
+| [RecipientIdentification.zero_receipt_ambiguity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L34) | 34 |
+| [RecipientIdentification.no_total_zero_decoder](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L37) | 37 |
+| [RecipientIdentification.revise_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L47) | 47 |
+| [RecipientIdentification.recipient_physical_feedback_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L53) | 53 |
+| [RecipientIdentification.unknown_zero_explores](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L57) | 57 |
+| [RecipientIdentification.unknown_positive_qualifies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L61) | 61 |
+| [RecipientIdentification.qualified_record_retained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L65) | 65 |
+| [RecipientIdentification.actor_cell_preserved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L68) | 68 |
+| [RecipientIdentification.actor_feedback_is_sham](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L73) | 73 |
+| [RecipientIdentification.missing_feedback_retains](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L76) | 76 |
+| [RecipientIdentification.revise_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L79) | 79 |
+| [RecipientIdentification.three_bits_decode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L86) | 86 |
+| [RecipientIdentification.encoded_state_injective](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L92) | 92 |
+| [RecipientIdentification.retrofit_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L126) | 126 |
+| [RecipientIdentification.retrofit_is_unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L129) | 129 |
+| [RecipientIdentification.retrofit_preserves_acquired_actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L133) | 133 |
+| [RecipientIdentification.retrofit_preserves_hardware](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L138) | 138 |
+| [RecipientIdentification.handoff_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L246) | 246 |
+| [RecipientIdentification.handoff_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L250) | 250 |
+| [RecipientIdentification.qualified_command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L254) | 254 |
+| [RecipientIdentification.feedback_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L260) | 260 |
+| [RecipientIdentification.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L265) | 265 |
+| [RecipientIdentification.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L287) | 287 |
+| [RecipientIdentification.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L312) | 312 |
+| [RecipientIdentification.admission_prefunded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L322) | 322 |
+| [RecipientIdentification.unpayable_no_query](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L324) | 324 |
+| [RecipientIdentification.inactive_no_query](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L327) | 327 |
+| [RecipientIdentification.recipient_cannot_fund_own_query](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L330) | 330 |
+| [RecipientIdentification.trial_exists](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L338) | 338 |
+| [RecipientIdentification.trial_registers](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L366) | 366 |
+| [RecipientIdentification.trial_actor_preserved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L373) | 373 |
+| [RecipientIdentification.trial_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L378) | 378 |
+| [RecipientIdentification.trial_positive_qualifies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L385) | 385 |
+| [RecipientIdentification.trace_run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L401) | 401 |
+| [RecipientIdentification.paid_trial_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L409) | 409 |
+| [RecipientIdentification.paid_qualified_use](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L415) | 415 |
+| [RecipientIdentification.actual_client_handoff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L435) | 435 |
+| [RecipientIdentification.actual_five_query_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L439) | 439 |
+| [RecipientIdentification.paid_exploration_then_qualified_use](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L456) | 456 |
+| [RecipientIdentification.concrete_whole_suffix_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L465) | 465 |
+| [RecipientIdentification.five_query_budget_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L474) | 474 |
+| [RecipientIdentification.twenty_five_blocks_second_actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L482) | 482 |
+| [RecipientIdentification.no_exploration_can_stall](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L490) | 490 |
+| [RecipientIdentification.changed_target_invalidates_old_qualification](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L493) | 493 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RecipientIdentification.Registers](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L11) (L11)
+- `def` [RecipientIdentification.actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L16) (L16)
+- `def` [RecipientIdentification.candidate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L17) (L17)
+- `def` [RecipientIdentification.Sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L18) (L18)
+- `def` [RecipientIdentification.revise](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L20) (L20)
+- `def` [RecipientIdentification.feedback](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L25) (L25)
+- `def` [RecipientIdentification.encode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L84) (L84)
+- `structure` [RecipientIdentification.Boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L105) (L105)
+- `def` [RecipientIdentification.Eligible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L117) (L117)
+- `def` [RecipientIdentification.registers](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L120) (L120)
+- `def` [RecipientIdentification.setRegisters](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L121) (L121)
+- `def` [RecipientIdentification.retrofit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L123) (L123)
+- `inductive` [RecipientIdentification.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L144) (L144)
+- `def` [RecipientIdentification.targetOf](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L150) (L150)
+- `def` [RecipientIdentification.requiredEscrow](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L154) (L154)
+- `structure` [RecipientIdentification.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L159) (L159)
+- `def` [RecipientIdentification.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L168) (L168)
+- `def` [RecipientIdentification.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L170) (L170)
+- `def` [RecipientIdentification.Handoff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L172) (L172)
+- `def` [RecipientIdentification.issued](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L175) (L175)
+- `def` [RecipientIdentification.returned](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L176) (L176)
+- `def` [RecipientIdentification.credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L179) (L179)
+- `def` [RecipientIdentification.patientCredit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L180) (L180)
+- `def` [RecipientIdentification.acquiredRecord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L182) (L182)
+- `inductive` [RecipientIdentification.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L184) (L184)
+- `def` [RecipientIdentification.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L189) (L189)
+- `def` [RecipientIdentification.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L198) (L198)
+- `def` [RecipientIdentification.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L216) (L216)
+- `def` [RecipientIdentification.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L219) (L219)
+- `def` [RecipientIdentification.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L220) (L220)
+- `def` [RecipientIdentification.spending](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L222) (L222)
+- `def` [RecipientIdentification.waste](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L228) (L228)
+- `def` [RecipientIdentification.spentAlong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L233) (L233)
+- `def` [RecipientIdentification.trial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L334) (L334)
+- `def` [RecipientIdentification.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L336) (L336)
+- `def` [RecipientIdentification.exampleBoundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L423) (L423)
+- `def` [RecipientIdentification.exampleStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L424) (L424)
+- `def` [RecipientIdentification.exampleLaws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L425) (L425)
+- `def` [RecipientIdentification.rTrial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L426) (L426)
+- `def` [RecipientIdentification.aTrial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L427) (L427)
+- `def` [RecipientIdentification.afterR₁](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L428) (L428)
+- `def` [RecipientIdentification.afterA₁](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L429) (L429)
+- `def` [RecipientIdentification.afterR₂](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L430) (L430)
+- `def` [RecipientIdentification.afterA₂](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L431) (L431)
+- `def` [RecipientIdentification.afterR₃](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L432) (L432)
+- `def` [RecipientIdentification.fiveTrials](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L433) (L433)
+- `def` [RecipientIdentification.FiveAffordable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean#L469) (L469)
+
+文本中有 45 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 45 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-f08c6d6875b6"></a>
+
+<details>
+<summary>ArchivePreparation.lean — 28 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean`
+
+Imports: `GenerativeCore`, `FormedSelection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ArchivePreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L30) | 30 |
+| [ArchivePreparation.actual_formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L38) | 38 |
+| [ArchivePreparation.actual_formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L40) | 40 |
+| [ArchivePreparation.actual_formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L42) | 42 |
+| [ArchivePreparation.actual_formation_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L46) | 46 |
+| [ArchivePreparation.assembly_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L69) | 69 |
+| [ArchivePreparation.assembly_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L74) | 74 |
+| [ArchivePreparation.actual_assembly_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L98) | 98 |
+| [ArchivePreparation.actual_assembly_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L100) | 100 |
+| [ArchivePreparation.original_stocks_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L109) | 109 |
+| [ArchivePreparation.construction_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L113) | 113 |
+| [ArchivePreparation.primary_whole_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L116) | 116 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ArchivePreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L8) (L8)
+- `def` [ArchivePreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L9) (L9)
+- `def` [ArchivePreparation.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L13) (L13)
+- `def` [ArchivePreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L17) (L17)
+- `def` [ArchivePreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L36) (L36)
+- `structure` [ArchivePreparation.Assembly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L51) (L51)
+- `inductive` [ArchivePreparation.Kind](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L57) (L57)
+- `def` [ArchivePreparation.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L61) (L61)
+- `def` [ArchivePreparation.enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L63) (L63)
+- `def` [ArchivePreparation.assemble](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L65) (L65)
+- `def` [ArchivePreparation.assemblyRun](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L79) (L79)
+- `def` [ArchivePreparation.AssemblyRunnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L83) (L83)
+- `def` [ArchivePreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L95) (L95)
+- `def` [ArchivePreparation.assembled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L96) (L96)
+- `def` [ArchivePreparation.adapterFuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L105) (L105)
+- `def` [ArchivePreparation.workingFuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean#L107) (L107)
+
+文本中有 12 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 12 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-4ee9e7930d43"></a>
+
+<details>
+<summary>EmissionArchive.lean — 40 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean`
+
+Imports: `GenerativeCore`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EmissionArchive.empty_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L103) | 103 |
+| [EmissionArchive.empty_holds_nothing](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L105) | 105 |
+| [EmissionArchive.binding_preserves_world](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L108) | 108 |
+| [EmissionArchive.write_preserves_world](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L111) | 111 |
+| [EmissionArchive.core_preserves_archive_funds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L116) | 116 |
+| [EmissionArchive.cannot_bind_completed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L120) | 120 |
+| [EmissionArchive.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L127) | 127 |
+| [EmissionArchive.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L144) | 144 |
+| [EmissionArchive.step_completed_immutable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L154) | 154 |
+| [EmissionArchive.trace_completed_immutable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L169) | 169 |
+| [EmissionArchive.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L176) | 176 |
+| [EmissionArchive.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L201) | 201 |
+| [EmissionArchive.step_held_origin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L208) | 208 |
+| [EmissionArchive.trace_held_origin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L251) | 251 |
+| [EmissionArchive.empty_trace_provenance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L265) | 265 |
+| [EmissionArchive.step_cell_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L278) | 278 |
+| [EmissionArchive.trace_cell_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L289) | 289 |
+| [EmissionArchive.twelve_cells_admit_at_most_three](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L298) | 298 |
+| [EmissionArchive.four_writes_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L309) | 309 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [EmissionArchive.Producer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L7) (L7)
+- `inductive` [EmissionArchive.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L19) (L19)
+- `structure` [EmissionArchive.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L24) (L24)
+- `def` [EmissionArchive.empty](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L32) (L32)
+- `def` [EmissionArchive.stored](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L35) (L35)
+- `def` [EmissionArchive.held](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L37) (L37)
+- `def` [EmissionArchive.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L40) (L40)
+- `inductive` [EmissionArchive.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L47) (L47)
+- `def` [EmissionArchive.latch](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L52) (L52)
+- `def` [EmissionArchive.put](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L59) (L59)
+- `def` [EmissionArchive.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L62) (L62)
+- `def` [EmissionArchive.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L73) (L73)
+- `def` [EmissionArchive.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L79) (L79)
+- `def` [EmissionArchive.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L82) (L82)
+- `def` [EmissionArchive.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L83) (L83)
+- `def` [EmissionArchive.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L85) (L85)
+- `def` [EmissionArchive.spentAlong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L89) (L89)
+- `def` [EmissionArchive.origin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L93) (L93)
+- `def` [EmissionArchive.originsAlong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L99) (L99)
+- `def` [EmissionArchive.bindings](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L273) (L273)
+- `def` [EmissionArchive.writeRun](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean#L305) (L305)
+
+文本中有 19 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 19 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-dacef2fbbee5"></a>
+
+<details>
+<summary>PaidArchiveReader.lean — 28 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean`
+
+Imports: `RecipientArchive`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PaidArchiveReader.step_preserves_world](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L57) | 57 |
+| [PaidArchiveReader.step_preserves_archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L60) | 60 |
+| [PaidArchiveReader.step_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L63) | 63 |
+| [PaidArchiveReader.trace_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L67) | 67 |
+| [PaidArchiveReader.initial_cache_agrees](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L73) | 73 |
+| [PaidArchiveReader.step_cache_agrees](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L76) | 76 |
+| [PaidArchiveReader.trace_cache_agrees](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L95) | 95 |
+| [PaidArchiveReader.completed_paid_cache_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L101) | 101 |
+| [PaidArchiveReader.context_change_invalidates](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L112) | 112 |
+| [PaidArchiveReader.paid_reader_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L124) | 124 |
+| [PaidArchiveReader.paid_reader_complete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L134) | 134 |
+| [PaidArchiveReader.trace_preserves_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L139) | 139 |
+| [PaidArchiveReader.actual_archive_paid_certificate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L149) | 149 |
+| [PaidArchiveReader.reachable_archive_paid_certificate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L162) | 162 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [PaidArchiveReader.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L9) (L9)
+- `def` [PaidArchiveReader.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L19) (L19)
+- `inductive` [PaidArchiveReader.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L22) (L22)
+- `def` [PaidArchiveReader.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L26) (L26)
+- `def` [PaidArchiveReader.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L35) (L35)
+- `def` [PaidArchiveReader.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L41) (L41)
+- `def` [PaidArchiveReader.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L43) (L43)
+- `def` [PaidArchiveReader.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L45) (L45)
+- `def` [PaidArchiveReader.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L47) (L47)
+- `def` [PaidArchiveReader.Complete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L49) (L49)
+- `def` [PaidArchiveReader.CacheAgrees](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L51) (L51)
+- `def` [PaidArchiveReader.Facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L54) (L54)
+- `def` [PaidArchiveReader.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L118) (L118)
+- `def` [PaidArchiveReader.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean#L122) (L122)
+
+文本中有 14 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 14 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-9d1b8fb5e31a"></a>
+
+<details>
+<summary>RecipientArchive.lean — 39 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean`
+
+Imports: `EmissionArchive`, `RecipientIdentification`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipientArchive.encode_injective](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L17) | 17 |
+| [RecipientArchive.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L76) | 76 |
+| [RecipientArchive.pointer_advances_without_archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L95) | 95 |
+| [RecipientArchive.step_pointer_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L100) | 100 |
+| [RecipientArchive.context_change_quarantines](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L110) | 110 |
+| [RecipientArchive.quarantined_writer_blocked](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L115) | 115 |
+| [RecipientArchive.later_query_cannot_fill](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L120) | 120 |
+| [RecipientArchive.missing_channel_is_explicit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L124) | 124 |
+| [RecipientArchive.ready_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L136) | 136 |
+| [RecipientArchive.physical_step_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L139) | 139 |
+| [RecipientArchive.emission_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L167) | 167 |
+| [RecipientArchive.origin_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L194) | 194 |
+| [RecipientArchive.archive_step_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L214) | 214 |
+| [RecipientArchive.archive_trace_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L229) | 229 |
+| [RecipientArchive.empty_archive_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L238) | 238 |
+| [RecipientArchive.completed_record_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L245) | 245 |
+| [RecipientArchive.three_frames_backed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L256) | 256 |
+| [RecipientArchive.decode_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L263) | 263 |
+| [RecipientArchive.zero_is_unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L274) | 274 |
+| [RecipientArchive.missing_is_unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L277) | 277 |
+| [RecipientArchive.stale_is_unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L280) | 280 |
+| [RecipientArchive.complete_truth_vectors](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L285) | 285 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RecipientArchive.Frame](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L8) (L8)
+- `def` [RecipientArchive.encode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L15) (L15)
+- `structure` [RecipientArchive.Header](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L23) (L23)
+- `structure` [RecipientArchive.World](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L31) (L31)
+- `inductive` [RecipientArchive.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L39) (L39)
+- `def` [RecipientArchive.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L44) (L44)
+- `def` [RecipientArchive.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L51) (L51)
+- `def` [RecipientArchive.binding](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L57) (L57)
+- `def` [RecipientArchive.emission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L63) (L63)
+- `def` [RecipientArchive.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L72) (L72)
+- `def` [RecipientArchive.producer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L83) (L83)
+- `def` [RecipientArchive.PhysicalSound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L132) (L132)
+- `def` [RecipientArchive.ArchiveSound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L190) (L190)
+- `def` [RecipientArchive.Backed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L252) (L252)
+- `def` [RecipientArchive.PrimaryBacking](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L254) (L254)
+- `def` [RecipientArchive.decode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L259) (L259)
+- `def` [RecipientArchive.designated](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean#L283) (L283)
+
+文本中有 22 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 22 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c89e3d27ff4d"></a>
+
+<details>
+<summary>ActionPreparation.lean — 21 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean`
+
+Imports: `ReasonPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ActionPreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L24) | 24 |
+| [ActionPreparation.actual_formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L37) | 37 |
+| [ActionPreparation.actual_formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L39) | 39 |
+| [ActionPreparation.actual_formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L42) | 42 |
+| [ActionPreparation.actual_assemblies_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L46) | 46 |
+| [ActionPreparation.actual_material_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L49) | 49 |
+| [ActionPreparation.exact_parent_prepared_projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L56) | 56 |
+| [ActionPreparation.original_accounts_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L68) | 68 |
+| [ActionPreparation.action_control_preparations_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L73) | 73 |
+| [ActionPreparation.exact_control_reserves](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L80) | 80 |
+| [ActionPreparation.old_material_has_no_free_command_pair](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L85) | 85 |
+| [ActionPreparation.omitted_assembly_retains_parts_and_payment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L90) | 90 |
+| [ActionPreparation.whole_history_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L95) | 95 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ActionPreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L8) (L8)
+- `def` [ActionPreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L9) (L9)
+- `def` [ActionPreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L13) (L13)
+- `def` [ActionPreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L30) (L30)
+- `def` [ActionPreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L31) (L31)
+- `def` [ActionPreparation.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L32) (L32)
+- `def` [ActionPreparation.parentProjection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L34) (L34)
+- `def` [ActionPreparation.withoutPort](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean#L88) (L88)
+
+文本中有 13 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 13 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-1e9f6921303e"></a>
+
+<details>
+<summary>ActionWitness.lean — 74 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean`
+
+Imports: `RecipientAction`, `ActionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ActionWitness.core_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L51) | 51 |
+| [ActionWitness.valid_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L64) | 64 |
+| [ActionWitness.write_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L74) | 74 |
+| [ActionWitness.archive_runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L120) | 120 |
+| [ActionWitness.genuine_archive_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L136) | 136 |
+| [ActionWitness.genuine_archive_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L138) | 138 |
+| [ActionWitness.archive_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L142) | 142 |
+| [ActionWitness.actual_parent_two_cycle_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L154) | 154 |
+| [ActionWitness.settlement_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L174) | 174 |
+| [ActionWitness.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L201) | 201 |
+| [ActionWitness.actual_entry_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L214) | 214 |
+| [ActionWitness.actual_action_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L219) | 219 |
+| [ActionWitness.actual_action_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L221) | 221 |
+| [ActionWitness.actual_recipient_effect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L224) | 224 |
+| [ActionWitness.actual_later_replay_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L229) | 229 |
+| [ActionWitness.actual_later_replay_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L231) | 231 |
+| [ActionWitness.actual_final_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L234) | 234 |
+| [ActionWitness.later_replay_has_no_new_archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L240) | 240 |
+| [ActionWitness.binding_is_paid_and_qualified](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L245) | 245 |
+| [ActionWitness.short_import_retains_charge_then_misses](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L254) | 254 |
+| [ActionWitness.partial_packet_does_not_start_opportunity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L264) | 264 |
+| [ActionWitness.same_label_reopening_rejects_old_import_and_use](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L272) | 272 |
+| [ActionWitness.compatible_command_without_available_source_receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L280) | 280 |
+| [ActionWitness.forged_current_flag_can_import_wrong_command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L292) | 292 |
+| [ActionWitness.unaudited_voluntary_alternative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L304) | 304 |
+| [ActionWitness.voluntary_start_does_not_require_command_port](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L313) | 313 |
+| [ActionWitness.before_work_cut_keeps_sunk_bill_and_packet](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L320) | 320 |
+| [ActionWitness.after_work_cut_settles_without_undoing_receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L328) | 328 |
+| [ActionWitness.later_changed_context_pays_and_loses_available_ground](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L340) | 340 |
+| [ActionWitness.genuine_reason_and_actual_recipient_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L347) | 347 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ActionWitness.laws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L13) (L13)
+- `def` [ActionWitness.producer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L14) (L14)
+- `inductive` [ActionWitness.ArchiveEvent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L18) (L18)
+- `def` [ActionWitness.toOld](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L23) (L23)
+- `def` [ActionWitness.archiveAdvance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L28) (L28)
+- `def` [ActionWitness.archiveEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L29) (L29)
+- `def` [ActionWitness.coreCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L34) (L34)
+- `def` [ActionWitness.validCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L58) (L58)
+- `def` [ActionWitness.writeCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L70) (L70)
+- `def` [ActionWitness.archiveRun](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L101) (L101)
+- `def` [ActionWitness.oldWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L105) (L105)
+- `def` [ActionWitness.ArchiveRunnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L109) (L109)
+- `def` [ActionWitness.recordedTrial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L126) (L126)
+- `def` [ActionWitness.actorTrial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L129) (L129)
+- `def` [ActionWitness.archiveWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L130) (L130)
+- `def` [ActionWitness.originalWorld](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L132) (L132)
+- `def` [ActionWitness.archiveStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L133) (L133)
+- `def` [ActionWitness.archiveEnd](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L134) (L134)
+- `def` [ActionWitness.observed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L150) (L150)
+- `def` [ActionWitness.parentReasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L152) (L152)
+- `def` [ActionWitness.entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L161) (L161)
+- `def` [ActionWitness.settlementCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L169) (L169)
+- `def` [ActionWitness.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L190) (L190)
+- `def` [ActionWitness.bindingWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L207) (L207)
+- `def` [ActionWitness.actionWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L208) (L208)
+- `def` [ActionWitness.afterAction](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L209) (L209)
+- `def` [ActionWitness.replayWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L210) (L210)
+- `def` [ActionWitness.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L212) (L212)
+- `def` [ActionWitness.installed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L243) (L243)
+- `def` [ActionWitness.shortEntry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L251) (L251)
+- `def` [ActionWitness.shortBound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L252) (L252)
+- `def` [ActionWitness.partialEntry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L261) (L261)
+- `def` [ActionWitness.partialBound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L262) (L262)
+- `def` [ActionWitness.readState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L270) (L270)
+- `def` [ActionWitness.outageWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L278) (L278)
+- `def` [ActionWitness.forged](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L289) (L289)
+- `def` [ActionWitness.unaudited](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L301) (L301)
+- `def` [ActionWitness.voluntaryWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L302) (L302)
+- `def` [ActionWitness.rented](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L317) (L317)
+- `def` [ActionWitness.cutRented](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L318) (L318)
+- `def` [ActionWitness.throughWork](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L324) (L324)
+- `def` [ActionWitness.cutWorked](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L325) (L325)
+- `def` [ActionWitness.settlementWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L326) (L326)
+- `def` [ActionWitness.changedReplayWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean#L337) (L337)
+
+文本中有 30 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 30 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-142128063360"></a>
+
+<details>
+<summary>RecipientAction.lean — 62 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean`
+
+Imports: `ReasonReplayBridge`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipientAction.core_set](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L143) | 143 |
+| [RecipientAction.import_is_typed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L145) | 145 |
+| [RecipientAction.import_qualification_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L152) | 152 |
+| [RecipientAction.read_does_not_observe_receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L160) | 160 |
+| [RecipientAction.reason_interleaving_clears](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L165) | 165 |
+| [RecipientAction.scope_intervention_clears](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L169) | 169 |
+| [RecipientAction.control_cuts_retain_reasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L174) | 174 |
+| [RecipientAction.no_imported_authorization](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L178) | 178 |
+| [RecipientAction.scope_cut_blocks_work](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L183) | 183 |
+| [RecipientAction.settlement_after_cut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L190) | 190 |
+| [RecipientAction.execute_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L198) | 198 |
+| [RecipientAction.voluntary_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L204) | 204 |
+| [RecipientAction.nonrecording_port_retains_archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L210) | 210 |
+| [RecipientAction.exhausted_recorder_cannot_project](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L217) | 217 |
+| [RecipientAction.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L224) | 224 |
+| [RecipientAction.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L232) | 232 |
+| [RecipientAction.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L266) | 266 |
+| [RecipientAction.trace_run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L276) | 276 |
+| [RecipientAction.trace_execute_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L282) | 282 |
+| [RecipientAction.semantic_import_then_receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L294) | 294 |
+| [RecipientAction.route_is_member](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L311) | 311 |
+| [RecipientAction.supported_is_current](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L316) | 316 |
+| [RecipientAction.command_meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L325) | 325 |
+| [RecipientAction.imported_core_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L329) | 329 |
+| [RecipientAction.paid_import_and_execution](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L336) | 336 |
+| [RecipientAction.actual_archive_replay_import_execution](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L353) | 353 |
+| [RecipientAction.partial_packet_preserved](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L378) | 378 |
+| [RecipientAction.original_recipient_balance_cannot_fund_import](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L383) | 383 |
+| [RecipientAction.step_archive_bytes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L389) | 389 |
+| [RecipientAction.trace_archive_bytes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L398) | 398 |
+| [RecipientAction.exact_core_trial_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L404) | 404 |
+| [RecipientAction.prescribed_import_then_rent_requires_ten](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L417) | 417 |
+| [RecipientAction.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L433) | 433 |
+| [RecipientAction.recipient_port_cannot_sense_actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L439) | 439 |
+| [RecipientAction.executed_work_targets_recipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L443) | 443 |
+| [RecipientAction.executed_recipient_work_has_no_actor_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L447) | 447 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [RecipientAction.Archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L13) (L13)
+- `abbrev` [RecipientAction.Reasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L14) (L14)
+- `structure` [RecipientAction.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L16) (L16)
+- `def` [RecipientAction.core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L30) (L30)
+- `def` [RecipientAction.setCore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L32) (L32)
+- `def` [RecipientAction.debit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L36) (L36)
+- `def` [RecipientAction.clear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L39) (L39)
+- `def` [RecipientAction.route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L45) (L45)
+- `def` [RecipientAction.supported](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L51) (L51)
+- `def` [RecipientAction.ReadyImport](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L55) (L55)
+- `def` [RecipientAction.Authorized](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L57) (L57)
+- `def` [RecipientAction.Settlement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L61) (L61)
+- `def` [RecipientAction.RecipientOnly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L66) (L66)
+- `inductive` [RecipientAction.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L72) (L72)
+- `def` [RecipientAction.importCore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L80) (L80)
+- `def` [RecipientAction.stepCore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L85) (L85)
+- `def` [RecipientAction.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L89) (L89)
+- `def` [RecipientAction.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L107) (L107)
+- `def` [RecipientAction.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L118) (L118)
+- `def` [RecipientAction.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L121) (L121)
+- `def` [RecipientAction.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L123) (L123)
+- `def` [RecipientAction.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L127) (L127)
+- `def` [RecipientAction.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L129) (L129)
+- `def` [RecipientAction.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L135) (L135)
+- `def` [RecipientAction.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L139) (L139)
+- `def` [RecipientAction.commandNode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean#L309) (L309)
+
+文本中有 36 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 36 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-1f4b41b7b576"></a>
+
+<details>
+<summary>AcquiredEvaluation.lean — 80 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean`
+
+Imports: `RevisionWitness`, `EvaluationPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [AcquiredEvaluation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L187) | 187 |
+| [AcquiredEvaluation.update_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L193) | 193 |
+| [AcquiredEvaluation.shared_threshold](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L196) | 196 |
+| [AcquiredEvaluation.three_losses](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L198) | 198 |
+| [AcquiredEvaluation.conventional_same_on_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L201) | 201 |
+| [AcquiredEvaluation.permission_cut_retains_evaluation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L205) | 205 |
+| [AcquiredEvaluation.trial_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L210) | 210 |
+| [AcquiredEvaluation.recipient_only](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L215) | 215 |
+| [AcquiredEvaluation.writes_consume_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L219) | 219 |
+| [AcquiredEvaluation.no_new_trial_after_consumption](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L223) | 223 |
+| [AcquiredEvaluation.pending_port_not_replaceable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L229) | 229 |
+| [AcquiredEvaluation.energy_with_fuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L235) | 235 |
+| [AcquiredEvaluation.old_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L242) | 242 |
+| [AcquiredEvaluation.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L249) | 249 |
+| [AcquiredEvaluation.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L296) | 296 |
+| [AcquiredEvaluation.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L306) | 306 |
+| [AcquiredEvaluation.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L324) | 324 |
+| [AcquiredEvaluation.native_operation_shortfall](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L330) | 330 |
+| [AcquiredEvaluation.known_command_meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L337) | 337 |
+| [AcquiredEvaluation.trace_trial_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L348) | 348 |
+| [AcquiredEvaluation.current_selected_trial_effect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L359) | 359 |
+| [AcquiredEvaluation.assessment_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L381) | 381 |
+| [AcquiredEvaluation.unsupported_blocks_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L393) | 393 |
+| [AcquiredEvaluation.mismatched_command_blocks_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L400) | 400 |
+| [AcquiredEvaluation.started_command_is_current](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L405) | 405 |
+| [AcquiredEvaluation.context_interleaving_does_not_close](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L422) | 422 |
+| [AcquiredEvaluation.replacement_cannot_repeat](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L426) | 426 |
+| [AcquiredEvaluation.completed_opportunity_no_new_read](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L431) | 431 |
+| [AcquiredEvaluation.close_preserves_pending](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L436) | 436 |
+| [AcquiredEvaluation.faithful_native_update](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L446) | 446 |
+| [AcquiredEvaluation.missing_is_not_false_update](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L452) | 452 |
+| [AcquiredEvaluation.native_word_charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L458) | 458 |
+| [AcquiredEvaluation.paid_native_word_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L461) | 461 |
+| [AcquiredEvaluation.step_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L467) | 467 |
+| [AcquiredEvaluation.trace_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L485) | 485 |
+| [AcquiredEvaluation.replacement_keeps_data](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L493) | 493 |
+| [AcquiredEvaluation.run_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L501) | 501 |
+| [AcquiredEvaluation.closing_preserves_run_core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L507) | 507 |
+| [AcquiredEvaluation.attempt_preserves_core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L512) | 512 |
+| [AcquiredEvaluation.run_attempt_close](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L515) | 515 |
+| [AcquiredEvaluation.close_preserves_core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L521) | 521 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [AcquiredEvaluation.NativeMode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L10) (L10)
+- `inductive` [AcquiredEvaluation.PortMode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L13) (L13)
+- `inductive` [AcquiredEvaluation.Opportunity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L16) (L16)
+- `inductive` [AcquiredEvaluation.Routing](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L19) (L19)
+- `inductive` [AcquiredEvaluation.Channel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L22) (L22)
+- `structure` [AcquiredEvaluation.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L26) (L26)
+- `def` [AcquiredEvaluation.core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L50) (L50)
+- `def` [AcquiredEvaluation.setCore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L51) (L51)
+- `def` [AcquiredEvaluation.fuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L53) (L53)
+- `def` [AcquiredEvaluation.withFuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L54) (L54)
+- `def` [AcquiredEvaluation.source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L55) (L55)
+- `def` [AcquiredEvaluation.withSource](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L56) (L56)
+- `def` [AcquiredEvaluation.transfer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L58) (L58)
+- `def` [AcquiredEvaluation.returned](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L59) (L59)
+- `def` [AcquiredEvaluation.update](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L60) (L60)
+- `def` [AcquiredEvaluation.Current](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L62) (L62)
+- `def` [AcquiredEvaluation.command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L64) (L64)
+- `def` [AcquiredEvaluation.Known](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L66) (L66)
+- `def` [AcquiredEvaluation.Admitted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L67) (L67)
+- `def` [AcquiredEvaluation.CanStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L71) (L71)
+- `def` [AcquiredEvaluation.table](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L75) (L75)
+- `def` [AcquiredEvaluation.help](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L76) (L76)
+- `inductive` [AcquiredEvaluation.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L83) (L83)
+- `def` [AcquiredEvaluation.Due](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L94) (L94)
+- `def` [AcquiredEvaluation.Readable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L95) (L95)
+- `def` [AcquiredEvaluation.Assessable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L97) (L97)
+- `def` [AcquiredEvaluation.Closeable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L98) (L98)
+- `def` [AcquiredEvaluation.old](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L111) (L111)
+- `def` [AcquiredEvaluation.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L114) (L114)
+- `def` [AcquiredEvaluation.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L138) (L138)
+- `def` [AcquiredEvaluation.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L160) (L160)
+- `def` [AcquiredEvaluation.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L161) (L161)
+- `def` [AcquiredEvaluation.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L162) (L162)
+- `def` [AcquiredEvaluation.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L163) (L163)
+- `def` [AcquiredEvaluation.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L165) (L165)
+- `def` [AcquiredEvaluation.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L171) (L171)
+- `def` [AcquiredEvaluation.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L174) (L174)
+- `def` [AcquiredEvaluation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L177) (L177)
+- `def` [AcquiredEvaluation.nativeWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean#L443) (L443)
+
+文本中有 41 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 41 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-29ef86360e74"></a>
+
+<details>
+<summary>EvaluationPreparation.lean — 15 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean`
+
+Imports: `RevisionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EvaluationPreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L23) | 23 |
+| [EvaluationPreparation.prospective_formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L39) | 39 |
+| [EvaluationPreparation.prospective_formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L40) | 40 |
+| [EvaluationPreparation.formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L43) | 43 |
+| [EvaluationPreparation.assemblies_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L46) | 46 |
+| [EvaluationPreparation.material_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L49) | 49 |
+| [EvaluationPreparation.exact_parent_prepared_projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L53) | 53 |
+| [EvaluationPreparation.original_compartments](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L64) | 64 |
+
+定义与类型 / Definitions and types:
+
+- `def` [EvaluationPreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L8) (L8)
+- `def` [EvaluationPreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L9) (L9)
+- `def` [EvaluationPreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L12) (L12)
+- `def` [EvaluationPreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L29) (L29)
+- `def` [EvaluationPreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L30) (L30)
+- `def` [EvaluationPreparation.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L32) (L32)
+- `def` [EvaluationPreparation.parentProjection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean#L36) (L36)
+
+文本中有 8 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 8 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-121ae848f6c7"></a>
+
+<details>
+<summary>EvaluationWitness.lean — 55 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean`
+
+Imports: `AcquiredEvaluation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EvaluationWitness.inherited_core_normal_form](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L16) | 16 |
+| [EvaluationWitness.retain_current](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L19) | 19 |
+| [EvaluationWitness.retained_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L22) | 22 |
+| [EvaluationWitness.inherited_actual_entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L46) | 46 |
+| [EvaluationWitness.paid_native_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L53) | 53 |
+| [EvaluationWitness.paid_native_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L54) | 54 |
+| [EvaluationWitness.acquired_coefficient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L57) | 57 |
+| [EvaluationWitness.matched_postperception_training](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L63) | 63 |
+| [EvaluationWitness.different_paid_decisions](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L70) | 70 |
+| [EvaluationWitness.first_actual_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L78) | 78 |
+| [EvaluationWitness.paid_carrier_replacement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L82) | 82 |
+| [EvaluationWitness.retained_data_not_new_learner](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L88) | 88 |
+| [EvaluationWitness.second_actual_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L95) | 95 |
+| [EvaluationWitness.whole_actual_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L101) | 101 |
+| [EvaluationWitness.complete_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L117) | 117 |
+| [EvaluationWitness.exclusion_with_equal_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L128) | 128 |
+| [EvaluationWitness.permission_is_not_valuation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L138) | 138 |
+| [EvaluationWitness.stale_read_has_no_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L144) | 144 |
+| [EvaluationWitness.completed_capacity_is_finite](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L147) | 147 |
+| [EvaluationWitness.actual_staged_composition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L152) | 152 |
+| [EvaluationWitness.actual_acquired_evidence_retained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L173) | 173 |
+| [EvaluationWitness.acting_current_evidence](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L182) | 182 |
+| [EvaluationWitness.acted_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L185) | 185 |
+| [EvaluationWitness.first_core_is_actual_acted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L188) | 188 |
+| [EvaluationWitness.actual_reason_sensitive_effect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L193) | 193 |
+| [EvaluationWitness.acquired_content_changes_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L206) | 206 |
+| [EvaluationWitness.operational_shortfall_can_remove_a_continuation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L212) | 212 |
+| [EvaluationWitness.interrupted_work_is_not_repaired_by_replacement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L222) | 222 |
+
+定义与类型 / Definitions and types:
+
+- `def` [EvaluationWitness.inheritedCore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L15) (L15)
+- `def` [EvaluationWitness.retained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L17) (L17)
+- `def` [EvaluationWitness.entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L27) (L27)
+- `def` [EvaluationWitness.lesson](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L30) (L30)
+- `def` [EvaluationWitness.train](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L32) (L32)
+- `def` [EvaluationWitness.trained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L34) (L34)
+- `def` [EvaluationWitness.choose](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L36) (L36)
+- `def` [EvaluationWitness.chosen](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L37) (L37)
+- `def` [EvaluationWitness.selectedTrial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L39) (L39)
+- `def` [EvaluationWitness.first](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L41) (L41)
+- `def` [EvaluationWitness.second](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L42) (L42)
+- `def` [EvaluationWitness.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L43) (L43)
+- `def` [EvaluationWitness.whole](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L44) (L44)
+- `def` [EvaluationWitness.filteredFirst](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L124) (L124)
+- `def` [EvaluationWitness.filteredSecond](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L125) (L125)
+- `def` [EvaluationWitness.filteredFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L126) (L126)
+- `def` [EvaluationWitness.cut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L135) (L135)
+- `def` [EvaluationWitness.blocked](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L136) (L136)
+- `def` [EvaluationWitness.stale](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L143) (L143)
+- `def` [EvaluationWitness.acting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L178) (L178)
+- `def` [EvaluationWitness.actWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L179) (L179)
+- `def` [EvaluationWitness.acted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L180) (L180)
+- `def` [EvaluationWitness.returnTrain](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L203) (L203)
+- `def` [EvaluationWitness.zeroWeight](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L204) (L204)
+- `def` [EvaluationWitness.interrupted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L218) (L218)
+- `def` [EvaluationWitness.interruptedCut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L219) (L219)
+- `def` [EvaluationWitness.interruptedClosed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean#L220) (L220)
+
+文本中有 28 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 28 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-0f653cfbf240"></a>
+
+<details>
+<summary>PairedPlasticity.lean — 79 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean`
+
+Imports: `RevisionWitness`, `PlasticityPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PairedPlasticity.Sources.set_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L21) | 21 |
+| [PairedPlasticity.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L190) | 190 |
+| [PairedPlasticity.update_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L195) | 195 |
+| [PairedPlasticity.transmission_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L197) | 197 |
+| [PairedPlasticity.conventional_equality](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L206) | 206 |
+| [PairedPlasticity.balances_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L209) | 209 |
+| [PairedPlasticity.old_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L215) | 215 |
+| [PairedPlasticity.fuel_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L222) | 222 |
+| [PairedPlasticity.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L227) | 227 |
+| [PairedPlasticity.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L278) | 278 |
+| [PairedPlasticity.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L287) | 287 |
+| [PairedPlasticity.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L304) | 304 |
+| [PairedPlasticity.step_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L310) | 310 |
+| [PairedPlasticity.trace_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L322) | 322 |
+| [PairedPlasticity.binding_uses_acquired_pair](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L328) | 328 |
+| [PairedPlasticity.no_second_binding](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L333) | 333 |
+| [PairedPlasticity.missing_is_not_acquired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L337) | 337 |
+| [PairedPlasticity.no_recipient_actor_source_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L341) | 341 |
+| [PairedPlasticity.trial_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L345) | 345 |
+| [PairedPlasticity.no_new_rent_after_consumption](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L351) | 351 |
+| [PairedPlasticity.settlement_survives_scope_cut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L357) | 357 |
+| [PairedPlasticity.scope_cut_invalidates_only_application](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L368) | 368 |
+| [PairedPlasticity.acquired_pair_from_actual_returns](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L378) | 378 |
+| [PairedPlasticity.local_acquisition_preserves_inherited_information](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L386) | 386 |
+| [PairedPlasticity.step_keeps_consumed_closed_port](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L397) | 397 |
+| [PairedPlasticity.consumed_closed_trace_cannot_restart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L408) | 408 |
+| [PairedPlasticity.control_roundtrip_consumes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L422) | 422 |
+| [PairedPlasticity.control_roundtrip_cannot_restore_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L429) | 429 |
+| [PairedPlasticity.funded_write_settlement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L445) | 445 |
+| [PairedPlasticity.control_invalidation_preserves_funded_settlement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L455) | 455 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [PairedPlasticity.Sources](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L9) (L9)
+- `def` [PairedPlasticity.Sources.get](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L18) (L18)
+- `def` [PairedPlasticity.Sources.set](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L19) (L19)
+- `def` [PairedPlasticity.Sources.total](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L20) (L20)
+- `inductive` [PairedPlasticity.Sign](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L26) (L26)
+- `def` [PairedPlasticity.signValue](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L27) (L27)
+- `def` [PairedPlasticity.conductance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L28) (L28)
+- `def` [PairedPlasticity.occupied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L29) (L29)
+- `inductive` [PairedPlasticity.Variant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L30) (L30)
+- `inductive` [PairedPlasticity.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L31) (L31)
+- `inductive` [PairedPlasticity.PortMode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L35) (L35)
+- `inductive` [PairedPlasticity.Channel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L36) (L36)
+- `structure` [PairedPlasticity.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L40) (L40)
+- `def` [PairedPlasticity.core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L68) (L68)
+- `def` [PairedPlasticity.setCore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L69) (L69)
+- `def` [PairedPlasticity.fuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L71) (L71)
+- `def` [PairedPlasticity.patient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L72) (L72)
+- `def` [PairedPlasticity.withBalances](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L73) (L73)
+- `def` [PairedPlasticity.withFuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L74) (L74)
+- `def` [PairedPlasticity.update](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L75) (L75)
+- `def` [PairedPlasticity.receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L76) (L76)
+- `def` [PairedPlasticity.transfer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L77) (L77)
+- `def` [PairedPlasticity.limit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L78) (L78)
+- `def` [PairedPlasticity.current](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L79) (L79)
+- `def` [PairedPlasticity.command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L81) (L81)
+- `def` [PairedPlasticity.Known](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L83) (L83)
+- `def` [PairedPlasticity.Admitted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L84) (L84)
+- `def` [PairedPlasticity.CanStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L86) (L86)
+- `def` [PairedPlasticity.learnedSign](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L92) (L92)
+- `def` [PairedPlasticity.replacementSign](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L93) (L93)
+- `def` [PairedPlasticity.rawTransmission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L94) (L94)
+- `def` [PairedPlasticity.transmission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L95) (L95)
+- `def` [PairedPlasticity.help](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L96) (L96)
+- `def` [PairedPlasticity.conventional](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L97) (L97)
+- `def` [PairedPlasticity.invalidate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L98) (L98)
+- `def` [PairedPlasticity.old](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L99) (L99)
+- `inductive` [PairedPlasticity.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L102) (L102)
+- `def` [PairedPlasticity.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L112) (L112)
+- `def` [PairedPlasticity.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L137) (L137)
+- `def` [PairedPlasticity.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L163) (L163)
+- `def` [PairedPlasticity.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L164) (L164)
+- `def` [PairedPlasticity.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L165) (L165)
+- `def` [PairedPlasticity.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L166) (L166)
+- `def` [PairedPlasticity.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L169) (L169)
+- `def` [PairedPlasticity.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L175) (L175)
+- `def` [PairedPlasticity.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L178) (L178)
+- `def` [PairedPlasticity.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L181) (L181)
+- `def` [PairedPlasticity.acquisitionWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L376) (L376)
+- `def` [PairedPlasticity.Locked](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean#L395) (L395)
+
+文本中有 30 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 30 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c527ff17c751"></a>
+
+<details>
+<summary>PlasticityPreparation.lean — 15 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean`
+
+Imports: `RevisionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PlasticityPreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L19) | 19 |
+| [PlasticityPreparation.formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L32) | 32 |
+| [PlasticityPreparation.formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L33) | 33 |
+| [PlasticityPreparation.formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L34) | 34 |
+| [PlasticityPreparation.assembly_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L36) | 36 |
+| [PlasticityPreparation.material_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L37) | 37 |
+| [PlasticityPreparation.exact_parent_preparation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L39) | 39 |
+| [PlasticityPreparation.protected_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L48) | 48 |
+
+定义与类型 / Definitions and types:
+
+- `def` [PlasticityPreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L7) (L7)
+- `def` [PlasticityPreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L8) (L8)
+- `def` [PlasticityPreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L11) (L11)
+- `def` [PlasticityPreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L24) (L24)
+- `def` [PlasticityPreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L25) (L25)
+- `def` [PlasticityPreparation.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L27) (L27)
+- `def` [PlasticityPreparation.parentProjection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean#L30) (L30)
+
+文本中有 8 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 8 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-ac933f076498"></a>
+
+<details>
+<summary>PlasticityWitness.lean — 56 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean`
+
+Imports: `PairedPlasticity`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PlasticityWitness.actual_inherited_entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L27) | 27 |
+| [PlasticityWitness.empty_conductance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L35) | 35 |
+| [PlasticityWitness.aligned_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L38) | 38 |
+| [PlasticityWitness.aligned_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L39) | 39 |
+| [PlasticityWitness.primary_counts_and_links](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L41) | 41 |
+| [PlasticityWitness.matched_other_pairings](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L47) | 47 |
+| [PlasticityWitness.matched_controls_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L54) | 54 |
+| [PlasticityWitness.assessment_contrast](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L60) | 60 |
+| [PlasticityWitness.selected_use_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L66) | 66 |
+| [PlasticityWitness.selected_use_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L67) | 67 |
+| [PlasticityWitness.selected_same_recipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L69) | 69 |
+| [PlasticityWitness.actual_replacement_histories](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L80) | 80 |
+| [PlasticityWitness.matched_revision_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L89) | 89 |
+| [PlasticityWitness.revision_changes_assessment_not_native_data](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L95) | 95 |
+| [PlasticityWitness.missing_acquisition_blocks_without_zero_write](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L107) | 107 |
+| [PlasticityWitness.source_guard_keeps_full_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L113) | 113 |
+| [PlasticityWitness.missing_blank_preserves_pending_pair](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L121) | 121 |
+| [PlasticityWitness.funding_shortage_is_real_packet_loss](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L130) | 130 |
+| [PlasticityWitness.scope_loss_pays_read_but_not_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L138) | 138 |
+| [PlasticityWitness.whole_suffix_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L143) | 143 |
+| [PlasticityWitness.whole_suffix_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L144) | 144 |
+| [PlasticityWitness.staged_actual_connection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L148) | 148 |
+
+定义与类型 / Definitions and types:
+
+- `def` [PlasticityWitness.source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L8) (L8)
+- `def` [PlasticityWitness.entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L9) (L9)
+- `def` [PlasticityWitness.laws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L11) (L11)
+- `def` [PlasticityWitness.pair](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L13) (L13)
+- `def` [PlasticityWitness.aligned](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L16) (L16)
+- `def` [PlasticityWitness.opposed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L17) (L17)
+- `def` [PlasticityWitness.mixed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L18) (L18)
+- `def` [PlasticityWitness.continued](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L19) (L19)
+- `def` [PlasticityWitness.trained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L21) (L21)
+- `def` [PlasticityWitness.closed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L22) (L22)
+- `def` [PlasticityWitness.chosen](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L23) (L23)
+- `def` [PlasticityWitness.actionWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L24) (L24)
+- `def` [PlasticityWitness.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L25) (L25)
+- `def` [PlasticityWitness.repaired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L75) (L75)
+- `def` [PlasticityWitness.revisionChosen](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L76) (L76)
+- `def` [PlasticityWitness.revisionFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L77) (L77)
+- `def` [PlasticityWitness.frozenFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L78) (L78)
+- `def` [PlasticityWitness.missingWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L104) (L104)
+- `def` [PlasticityWitness.missingEnd](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L105) (L105)
+- `def` [PlasticityWitness.noPacket](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L112) (L112)
+- `def` [PlasticityWitness.oneBlank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L116) (L116)
+- `def` [PlasticityWitness.throughSecondAcquisition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L117) (L117)
+- `def` [PlasticityWitness.oneBlankEnd](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L119) (L119)
+- `def` [PlasticityWitness.shortEntry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L127) (L127)
+- `def` [PlasticityWitness.shortChosen](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L128) (L128)
+- `def` [PlasticityWitness.shortMiss](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L129) (L129)
+- `def` [PlasticityWitness.scopeCut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L136) (L136)
+- `def` [PlasticityWitness.denied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L137) (L137)
+- `def` [PlasticityWitness.fullWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L142) (L142)
+- `def` [PlasticityWitness.corePhaseCode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L162) (L162)
+- `def` [PlasticityWitness.phaseCode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L165) (L165)
+- `def` [PlasticityWitness.portCode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L169) (L169)
+- `def` [PlasticityWitness.vector](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L171) (L171)
+- `def` [PlasticityWitness.row](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean#L176) (L176)
+
+文本中有 22 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 22 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c09aabdc4749"></a>
+
+<details>
+<summary>PretrainingEvidence.lean — 21 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean`
+
+Imports: `PlasticityWitness`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PretrainingEvidence.pair_patient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L18) | 18 |
+| [PretrainingEvidence.pair_count](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L28) | 28 |
+| [PretrainingEvidence.pair_latches_cleared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L32) | 32 |
+| [PretrainingEvidence.bind_sockets](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L37) | 37 |
+| [PretrainingEvidence.pair_sockets](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L47) | 47 |
+| [PretrainingEvidence.pair_preserves_depletion_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L63) | 63 |
+| [PretrainingEvidence.prefix_is_actual](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L82) | 82 |
+| [PretrainingEvidence.prefix_depletion_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L90) | 90 |
+| [PretrainingEvidence.actual_entry_depletion](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L98) | 98 |
+| [PretrainingEvidence.same_retained_sockets_same_depletion](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L103) | 103 |
+| [PretrainingEvidence.retained_readout_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L114) | 114 |
+| [PretrainingEvidence.actual_count_four_prefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L124) | 124 |
+| [PretrainingEvidence.count_four_retains_exact_loss](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L135) | 135 |
+| [PretrainingEvidence.replacement_pair_retains_depletion](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L143) | 143 |
+| [PretrainingEvidence.actual_continued_retains_loss](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L158) | 158 |
+| [PretrainingEvidence.actual_service_cut_still_admits_teaching](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L169) | 169 |
+
+定义与类型 / Definitions and types:
+
+- `def` [PretrainingEvidence.sockets](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L16) (L16)
+- `inductive` [PretrainingEvidence.Prefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L74) (L74)
+- `def` [PretrainingEvidence.depletionReadout](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L112) (L112)
+- `def` [PretrainingEvidence.countFour](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L121) (L121)
+- `def` [PretrainingEvidence.serviceCut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean#L166) (L166)
+
+文本中有 16 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 16 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-df65151201cb"></a>
+
+<details>
+<summary>InquiryRevision.lean — 77 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean`
+
+Imports: `PretrainingEvidence`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InquiryRevision.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L90) | 90 |
+| [InquiryRevision.release_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L96) | 96 |
+| [InquiryRevision.release_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L98) | 98 |
+| [InquiryRevision.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L101) | 101 |
+| [InquiryRevision.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L114) | 114 |
+| [InquiryRevision.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L138) | 138 |
+| [InquiryRevision.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L146) | 146 |
+| [InquiryRevision.faithful_read_uses_actual_sockets](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L152) | 152 |
+| [InquiryRevision.commit_changes_only_access_and_spent_fuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L156) | 156 |
+| [InquiryRevision.commit_replaces_enabled_inquiry_with_closure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L166) | 166 |
+| [InquiryRevision.inherited_event_invalidates_observation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L174) | 174 |
+| [InquiryRevision.missing_or_stale_cannot_commit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L179) | 179 |
+| [InquiryRevision.inherited_run_from_absent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L195) | 195 |
+| [InquiryRevision.actual_same_continuing_prefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L205) | 205 |
+| [InquiryRevision.actual_adapter_and_read](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L215) | 215 |
+| [InquiryRevision.actual_change_in_access](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L220) | 220 |
+| [InquiryRevision.whole_actual_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L225) | 225 |
+| [InquiryRevision.whole_actual_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L226) | 226 |
+| [InquiryRevision.final_actual_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L228) | 228 |
+| [InquiryRevision.no_further_teaching_in_suffix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L234) | 234 |
+| [InquiryRevision.blocked_evidence_controls](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L245) | 245 |
+| [InquiryRevision.sham_keeps_old_obstruction](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L249) | 249 |
+| [InquiryRevision.actual_staleness_and_reacquisition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L252) | 252 |
+| [InquiryRevision.real_zero_and_false_positive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L261) | 261 |
+| [InquiryRevision.component_authority_and_funding_controls](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L272) | 272 |
+| [InquiryRevision.sharp_funded_response_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L278) | 278 |
+| [InquiryRevision.signs_still_control_response](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L285) | 285 |
+| [InquiryRevision.staged_actual_connection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L294) | 294 |
+| [InquiryRevision.commit_requires_supported_current_scope_permission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L307) | 307 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [InquiryRevision.Mode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L11) (L11)
+- `inductive` [InquiryRevision.Channel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L14) (L14)
+- `structure` [InquiryRevision.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L17) (L17)
+- `def` [InquiryRevision.Context](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L21) (L21)
+- `def` [InquiryRevision.acquired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L25) (L25)
+- `def` [InquiryRevision.release](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L26) (L26)
+- `def` [InquiryRevision.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L30) (L30)
+- `def` [InquiryRevision.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L31) (L31)
+- `def` [InquiryRevision.sockets](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L33) (L33)
+- `def` [InquiryRevision.observedBits](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L34) (L34)
+- `def` [InquiryRevision.readMode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L39) (L39)
+- `inductive` [InquiryRevision.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L44) (L44)
+- `def` [InquiryRevision.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L49) (L49)
+- `def` [InquiryRevision.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L59) (L59)
+- `def` [InquiryRevision.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L69) (L69)
+- `def` [InquiryRevision.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L72) (L72)
+- `def` [InquiryRevision.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L74) (L74)
+- `def` [InquiryRevision.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L75) (L75)
+- `def` [InquiryRevision.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L78) (L78)
+- `def` [InquiryRevision.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L81) (L81)
+- `def` [InquiryRevision.entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L182) (L182)
+- `def` [InquiryRevision.teachingPrefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L183) (L183)
+- `def` [InquiryRevision.s4](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L184) (L184)
+- `def` [InquiryRevision.assembled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L185) (L185)
+- `def` [InquiryRevision.observed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L186) (L186)
+- `def` [InquiryRevision.revised](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L187) (L187)
+- `def` [InquiryRevision.adaptation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L188) (L188)
+- `def` [InquiryRevision.assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L189) (L189)
+- `def` [InquiryRevision.action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L190) (L190)
+- `def` [InquiryRevision.assessed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L191) (L191)
+- `def` [InquiryRevision.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L192) (L192)
+- `def` [InquiryRevision.whole](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L193) (L193)
+- `def` [InquiryRevision.miss](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L240) (L240)
+- `def` [InquiryRevision.zero](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L241) (L241)
+- `def` [InquiryRevision.wrong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L242) (L242)
+- `def` [InquiryRevision.sham](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L243) (L243)
+- `def` [InquiryRevision.stale](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L244) (L244)
+- `def` [InquiryRevision.noLossWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L257) (L257)
+- `def` [InquiryRevision.noLoss](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L259) (L259)
+- `def` [InquiryRevision.noLossAdapter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L260) (L260)
+- `def` [InquiryRevision.scopeDenied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L267) (L267)
+- `def` [InquiryRevision.permissionDenied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L268) (L268)
+- `def` [InquiryRevision.noPart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L269) (L269)
+- `def` [InquiryRevision.withFuelAtFour](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L270) (L270)
+- `def` [InquiryRevision.contrasted](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L283) (L283)
+- `def` [InquiryRevision.modeCode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L314) (L314)
+- `def` [InquiryRevision.vector](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L315) (L315)
+- `def` [InquiryRevision.row](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean#L318) (L318)
+
+文本中有 29 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 29 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-2aa3f81f3ba3"></a>
+
+<details>
+<summary>Enumeration.lean — 6 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean`
+
+Imports: `PretrainingEvidence`
+
+没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
+
+定义与类型 / Definitions and types:
+
+- `def` [PretrainingEvidence.Enumeration.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean#L8) (L8)
+- `def` [PretrainingEvidence.Enumeration.walk](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean#L13) (L13)
+- `def` [PretrainingEvidence.Enumeration.signCode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean#L21) (L21)
+- `def` [PretrainingEvidence.Enumeration.phaseCode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean#L27) (L27)
+- `def` [PretrainingEvidence.Enumeration.row](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean#L39) (L39)
+- `def` [PretrainingEvidence.Enumeration.emit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/Enumeration.lean#L47) (L47)
+
+</details>
+
+<a id="module-dd170fb920e6"></a>
+
+<details>
+<summary>ApplicationEvidence.lean — 33 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-EVIDENCE-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean`
+
+Imports: `SuccessionWitness`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ApplicationEvidence.decode_has_positive_frame](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L13) | 13 |
+| [ApplicationEvidence.normalize_nonempty](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L26) | 26 |
+| [ApplicationEvidence.empty_closure_has_no_command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L32) | 32 |
+| [ApplicationEvidence.supported_normalized_nonempty](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L36) | 36 |
+| [ApplicationEvidence.normalized_support_has_cache](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L53) | 53 |
+| [ApplicationEvidence.current_command_has_accessible_positive_frame](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L70) | 70 |
+| [ApplicationEvidence.initialized_paid_command_has_positive_frame](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L83) | 83 |
+| [ApplicationEvidence.paid_trace_preserves_archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L96) | 96 |
+| [ApplicationEvidence.trace_origin_located](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L112) | 112 |
+| [ApplicationEvidence.stored_from_empty_has_located_origin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L127) | 127 |
+| [ApplicationEvidence.positive_emission_is_recipient_acquisition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L137) | 137 |
+| [ApplicationEvidence.positive_origin_shape](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L160) | 160 |
+| [ApplicationEvidence.initialized_production_and_publication_has_positive_origin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L190) | 190 |
+| [ApplicationEvidence.located_positive_origin_is_actual_acquisition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L239) | 239 |
+| [ApplicationEvidence.worked_step_has_delivery_or_predecessor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L262) | 262 |
+| [ApplicationEvidence.worked_trace_has_delivery_or_initial_receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L303) | 303 |
+| [ApplicationEvidence.ready_acquisition_has_prior_delivery](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L335) | 335 |
+| [ApplicationEvidence.prior_delivery_is_full_delivery](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L346) | 346 |
+| [ApplicationEvidence.entrance_has_receipt_with_prior_delivery](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L386) | 386 |
+| [ApplicationEvidence.current_command_implies_interpreted_service_met](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L418) | 418 |
+| [ApplicationEvidence.no_sound_pending_one_service_entrance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L427) | 427 |
+| [ApplicationEvidence.actual_publication_has_prior_paid_delivery](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L468) | 468 |
+| [ApplicationEvidence.actual_credit_precedes_selected_use](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L478) | 478 |
+| [ApplicationEvidence.actual_no_sound_pending_one_service](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L484) | 484 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ApplicationEvidence.PositiveFrame](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L9) (L9)
+- `def` [ApplicationEvidence.LocatedOrigin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L103) (L103)
+- `def` [ApplicationEvidence.AcquiredOnTrace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L226) (L226)
+- `def` [ApplicationEvidence.DeliveredOnTrace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L252) (L252)
+- `def` [ApplicationEvidence.AcquiredAfterDelivery](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L322) (L322)
+- `structure` [ApplicationEvidence.ReceiptOnlyEntrance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L361) (L361)
+- `def` [ApplicationEvidence.EpisodeBound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L399) (L399)
+- `def` [ApplicationEvidence.ServiceMeaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L412) (L412)
+- `def` [ApplicationEvidence.actualEntrance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean#L436) (L436)
+
+文本中有 24 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 24 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d6e11394f125"></a>
+
+<details>
+<summary>EvaluativeSuccession.lean — 90 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean`
+
+Imports: `EvaluationWitness`, `SuccessionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EvaluativeSuccession.settlement_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L260) | 260 |
+| [EvaluativeSuccession.write_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L281) | 281 |
+| [EvaluativeSuccession.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L322) | 322 |
+| [EvaluativeSuccession.entry_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L328) | 328 |
+| [EvaluativeSuccession.actual_candidate_commit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L336) | 336 |
+| [EvaluativeSuccession.paid_read_is_actual_candidate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L345) | 345 |
+| [EvaluativeSuccession.no_second_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L349) | 349 |
+| [EvaluativeSuccession.archive_set](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L353) | 353 |
+| [EvaluativeSuccession.bank_successor_context](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L358) | 358 |
+| [EvaluativeSuccession.archive_bank_advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L373) | 373 |
+| [EvaluativeSuccession.bank_step_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L381) | 381 |
+| [EvaluativeSuccession.bank_trace_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L390) | 390 |
+| [EvaluativeSuccession.reader_step_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L399) | 399 |
+| [EvaluativeSuccession.reader_trace_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L403) | 403 |
+| [EvaluativeSuccession.fresh_bank_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L413) | 413 |
+| [EvaluativeSuccession.energy_decomposition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L430) | 430 |
+| [EvaluativeSuccession.bank_overhead](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L435) | 435 |
+| [EvaluativeSuccession.step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L443) | 443 |
+| [EvaluativeSuccession.trace_run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L498) | 498 |
+| [EvaluativeSuccession.trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L504) | 504 |
+| [EvaluativeSuccession.step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L514) | 514 |
+| [EvaluativeSuccession.trace_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L528) | 528 |
+| [EvaluativeSuccession.step_retains_native_and_history](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L534) | 534 |
+| [EvaluativeSuccession.trace_retains_native_and_history](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L546) | 546 |
+| [EvaluativeSuccession.no_free_guard_repair](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L554) | 554 |
+| [EvaluativeSuccession.completed_probe_cannot_start_another_core_event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L559) | 559 |
+| [EvaluativeSuccession.selected_write_retires_token](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L565) | 565 |
+| [EvaluativeSuccession.no_recipient_target_substitution](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L570) | 570 |
+| [EvaluativeSuccession.unknown_read_is_paid_and_consumed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L574) | 574 |
+| [EvaluativeSuccession.assessment_uses_retained_data](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L584) | 584 |
+| [EvaluativeSuccession.conventional_same_on_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L592) | 592 |
+| [EvaluativeSuccession.actual_fresh_publication](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L596) | 596 |
+| [EvaluativeSuccession.current_command_meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L607) | 607 |
+| [EvaluativeSuccession.selected_step_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L619) | 619 |
+| [EvaluativeSuccession.selected_trace_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L625) | 625 |
+| [EvaluativeSuccession.selected_physical_effect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L635) | 635 |
+| [EvaluativeSuccession.warranted_instrumental_meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L659) | 659 |
+| [EvaluativeSuccession.run_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L665) | 665 |
+| [EvaluativeSuccession.attempt_reader](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L674) | 674 |
+| [EvaluativeSuccession.choice_reader](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L681) | 681 |
+| [EvaluativeSuccession.advance_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L689) | 689 |
+| [EvaluativeSuccession.run_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L709) | 709 |
+| [EvaluativeSuccession.permission_data](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L719) | 719 |
+| [EvaluativeSuccession.enter_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L725) | 725 |
+| [EvaluativeSuccession.enabled_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L730) | 730 |
+| [EvaluativeSuccession.trace_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L733) | 733 |
+| [EvaluativeSuccession.routed_data](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L744) | 744 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [EvaluativeSuccession.Records](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L9) (L9)
+- `abbrev` [EvaluativeSuccession.Reasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L10) (L10)
+- `def` [EvaluativeSuccession.readerUnit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L12) (L12)
+- `def` [EvaluativeSuccession.QuietReader](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L16) (L16)
+- `def` [EvaluativeSuccession.Admissible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L25) (L25)
+- `structure` [EvaluativeSuccession.Historical](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L36) (L36)
+- `structure` [EvaluativeSuccession.Native](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L52) (L52)
+- `def` [EvaluativeSuccession.Native.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L61) (L61)
+- `inductive` [EvaluativeSuccession.Life](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L63) (L63)
+- `inductive` [EvaluativeSuccession.Port](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L65) (L65)
+- `inductive` [EvaluativeSuccession.Route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L67) (L67)
+- `structure` [EvaluativeSuccession.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L70) (L70)
+- `def` [EvaluativeSuccession.oldCommon](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L106) (L106)
+- `def` [EvaluativeSuccession.oldSource](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L108) (L108)
+- `def` [EvaluativeSuccession.enter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L111) (L111)
+- `def` [EvaluativeSuccession.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L114) (L114)
+- `def` [EvaluativeSuccession.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L118) (L118)
+- `def` [EvaluativeSuccession.archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L120) (L120)
+- `def` [EvaluativeSuccession.setArchive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L122) (L122)
+- `def` [EvaluativeSuccession.producer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L124) (L124)
+- `def` [EvaluativeSuccession.Current](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L126) (L126)
+- `def` [EvaluativeSuccession.command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L130) (L130)
+- `def` [EvaluativeSuccession.Known](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L133) (L133)
+- `def` [EvaluativeSuccession.gates](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L137) (L137)
+- `def` [EvaluativeSuccession.Settlement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L140) (L140)
+- `def` [EvaluativeSuccession.RecipientOnly](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L145) (L145)
+- `def` [EvaluativeSuccession.canProbe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L150) (L150)
+- `def` [EvaluativeSuccession.bankGuard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L154) (L154)
+- `def` [EvaluativeSuccession.help](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L161) (L161)
+- `def` [EvaluativeSuccession.cut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L166) (L166)
+- `inductive` [EvaluativeSuccession.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L170) (L170)
+- `def` [EvaluativeSuccession.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L179) (L179)
+- `def` [EvaluativeSuccession.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L208) (L208)
+- `def` [EvaluativeSuccession.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L233) (L233)
+- `def` [EvaluativeSuccession.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L234) (L234)
+- `def` [EvaluativeSuccession.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L236) (L236)
+- `def` [EvaluativeSuccession.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L243) (L243)
+- `def` [EvaluativeSuccession.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L247) (L247)
+- `def` [EvaluativeSuccession.settlementCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L255) (L255)
+- `def` [EvaluativeSuccession.writeCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L277) (L277)
+- `def` [EvaluativeSuccession.overhead](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L426) (L426)
+- `def` [EvaluativeSuccession.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L494) (L494)
+- `def` [EvaluativeSuccession.routed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean#L687) (L687)
+
+文本中有 47 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 47 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-6c08598bc18a"></a>
+
+<details>
+<summary>SuccessionHistoryInterface.lean — 25 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOODNESS-WITHOUT-RETURN-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean`
+
+Imports: `SuccessionWitness`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SuccessionHistoryInterface.withHistory_self](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L17) | 17 |
+| [SuccessionHistoryInterface.withHistory_overwrite](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L19) | 19 |
+| [SuccessionHistoryInterface.live_data](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L22) | 22 |
+| [SuccessionHistoryInterface.archive_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L29) | 29 |
+| [SuccessionHistoryInterface.current_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L32) | 32 |
+| [SuccessionHistoryInterface.command_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L35) | 35 |
+| [SuccessionHistoryInterface.known_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L38) | 38 |
+| [SuccessionHistoryInterface.help_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L41) | 41 |
+| [SuccessionHistoryInterface.energy_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L44) | 44 |
+| [SuccessionHistoryInterface.material_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L47) | 47 |
+| [SuccessionHistoryInterface.enabled_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L50) | 50 |
+| [SuccessionHistoryInterface.advance_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L54) | 54 |
+| [SuccessionHistoryInterface.charge_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L73) | 73 |
+| [SuccessionHistoryInterface.run_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L77) | 77 |
+| [SuccessionHistoryInterface.runnable_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L87) | 87 |
+| [SuccessionHistoryInterface.spent_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L95) | 95 |
+| [SuccessionHistoryInterface.trace_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L103) | 103 |
+| [SuccessionHistoryInterface.continuation_interface](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L116) | 116 |
+| [SuccessionHistoryInterface.toOld_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L127) | 127 |
+| [SuccessionHistoryInterface.bankWord_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L132) | 132 |
+| [SuccessionHistoryInterface.runBank_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L141) | 141 |
+| [SuccessionHistoryInterface.actual_suffix_withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L150) | 150 |
+| [SuccessionHistoryInterface.actual_suffix_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L156) | 156 |
+| [SuccessionHistoryInterface.actual_suffix_live_outcome](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L169) | 169 |
+
+定义与类型 / Definitions and types:
+
+- `def` [SuccessionHistoryInterface.withHistory](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean#L15) (L15)
+
+文本中有 24 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 24 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-0316e1fac3b9"></a>
+
+<details>
+<summary>SuccessionPreparation.lean — 15 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean`
+
+Imports: `EvaluationPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SuccessionPreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L23) | 23 |
+| [SuccessionPreparation.prospective_formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L37) | 37 |
+| [SuccessionPreparation.prospective_formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L38) | 38 |
+| [SuccessionPreparation.formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L41) | 41 |
+| [SuccessionPreparation.assemblies_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L44) | 44 |
+| [SuccessionPreparation.material_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L47) | 47 |
+| [SuccessionPreparation.exact_parent_prepared_projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L51) | 51 |
+| [SuccessionPreparation.original_compartments](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L62) | 62 |
+
+定义与类型 / Definitions and types:
+
+- `def` [SuccessionPreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L8) (L8)
+- `def` [SuccessionPreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L9) (L9)
+- `def` [SuccessionPreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L12) (L12)
+- `def` [SuccessionPreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L29) (L29)
+- `def` [SuccessionPreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L30) (L30)
+- `def` [SuccessionPreparation.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L31) (L31)
+- `def` [SuccessionPreparation.parentProjection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean#L34) (L34)
+
+文本中有 8 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 8 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d529bfeccc02"></a>
+
+<details>
+<summary>SuccessionWitness.lean — 82 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOODNESS-WITHOUT-RETURN-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean`
+
+Imports: `EvaluativeSuccession`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SuccessionWitness.runnable_bank_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L50) | 50 |
+| [SuccessionWitness.actual_donor_admissible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L75) | 75 |
+| [SuccessionWitness.actual_entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L77) | 77 |
+| [SuccessionWitness.eight_assemblies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L82) | 82 |
+| [SuccessionWitness.paid_actual_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L86) | 86 |
+| [SuccessionWitness.paid_binding_release](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L92) | 92 |
+| [SuccessionWitness.first_probe_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L98) | 98 |
+| [SuccessionWitness.first_probe_actual](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L101) | 101 |
+| [SuccessionWitness.second_probe_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L106) | 106 |
+| [SuccessionWitness.fresh_acquisition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L109) | 109 |
+| [SuccessionWitness.actual_consumer_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L116) | 116 |
+| [SuccessionWitness.actual_new_publication](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L119) | 119 |
+| [SuccessionWitness.acquired_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L123) | 123 |
+| [SuccessionWitness.actual_selected_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L127) | 127 |
+| [SuccessionWitness.first_probe_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L133) | 133 |
+| [SuccessionWitness.second_probe_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L137) | 137 |
+| [SuccessionWitness.actual_consumer_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L141) | 141 |
+| [SuccessionWitness.actual_new_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L144) | 144 |
+| [SuccessionWitness.reading_reader_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L152) | 152 |
+| [SuccessionWitness.actual_fresh_reasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L155) | 155 |
+| [SuccessionWitness.acting_reader_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L163) | 163 |
+| [SuccessionWitness.selected_current_reason](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L166) | 166 |
+| [SuccessionWitness.actual_effect_from_fresh_evidence](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L176) | 176 |
+| [SuccessionWitness.setup_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L190) | 190 |
+| [SuccessionWitness.prefix_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L197) | 197 |
+| [SuccessionWitness.suffix_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L206) | 206 |
+| [SuccessionWitness.whole_actual_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L212) | 212 |
+| [SuccessionWitness.complete_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L215) | 215 |
+| [SuccessionWitness.actual_staged_composition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L225) | 225 |
+| [SuccessionWitness.prefix_without_assessment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L259) | 259 |
+| [SuccessionWitness.filtered_consumed_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L261) | 261 |
+| [SuccessionWitness.filtered_actual_prefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L267) | 267 |
+| [SuccessionWitness.equal_information_filter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L272) | 272 |
+| [SuccessionWitness.permission_does_not_remove_reason](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L285) | 285 |
+| [SuccessionWitness.unavailable_influence_attempt_is_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L295) | 295 |
+| [SuccessionWitness.access_cut_invalidates_pending_read](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L301) | 301 |
+| [SuccessionWitness.finite_successor_capacity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L305) | 305 |
+
+定义与类型 / Definitions and types:
+
+- `def` [SuccessionWitness.entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L11) (L11)
+- `def` [SuccessionWitness.changed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L12) (L12)
+- `def` [SuccessionWitness.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L13) (L13)
+- `def` [SuccessionWitness.assembled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L14) (L14)
+- `def` [SuccessionWitness.copyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L15) (L15)
+- `def` [SuccessionWitness.copied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L16) (L16)
+- `def` [SuccessionWitness.releaseWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L17) (L17)
+- `def` [SuccessionWitness.released](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L18) (L18)
+- `def` [SuccessionWitness.firstStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L19) (L19)
+- `inductive` [SuccessionWitness.Command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L21) (L21)
+- `def` [SuccessionWitness.toOld](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L25) (L25)
+- `def` [SuccessionWitness.runBank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L30) (L30)
+- `def` [SuccessionWitness.bankWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L34) (L34)
+- `def` [SuccessionWitness.BankRunnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L38) (L38)
+- `def` [SuccessionWitness.firstWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L57) (L57)
+- `def` [SuccessionWitness.firstEnd](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L58) (L58)
+- `def` [SuccessionWitness.betweenWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L59) (L59)
+- `def` [SuccessionWitness.secondStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L60) (L60)
+- `def` [SuccessionWitness.secondWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L61) (L61)
+- `def` [SuccessionWitness.bankEnd](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L64) (L64)
+- `def` [SuccessionWitness.prepareWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L65) (L65)
+- `def` [SuccessionWitness.reading](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L66) (L66)
+- `def` [SuccessionWitness.consumerWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L67) (L67)
+- `def` [SuccessionWitness.consumed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L68) (L68)
+- `def` [SuccessionWitness.choiceWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L69) (L69)
+- `def` [SuccessionWitness.chosen](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L70) (L70)
+- `def` [SuccessionWitness.acting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L71) (L71)
+- `def` [SuccessionWitness.selectedWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L72) (L72)
+- `def` [SuccessionWitness.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L73) (L73)
+- `def` [SuccessionWitness.setupWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L183) (L183)
+- `def` [SuccessionWitness.firstSegment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L184) (L184)
+- `def` [SuccessionWitness.secondSegment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L185) (L185)
+- `def` [SuccessionWitness.prefixWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L186) (L186)
+- `def` [SuccessionWitness.suffix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L187) (L187)
+- `def` [SuccessionWitness.whole](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L188) (L188)
+- `def` [SuccessionWitness.filteredEntry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L251) (L251)
+- `def` [SuccessionWitness.filteredConsumed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L252) (L252)
+- `def` [SuccessionWitness.filteredChosen](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L253) (L253)
+- `def` [SuccessionWitness.filteredFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L254) (L254)
+- `def` [SuccessionWitness.permissionCut](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L282) (L282)
+- `def` [SuccessionWitness.blocked](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L283) (L283)
+- `def` [SuccessionWitness.inaccessible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L292) (L292)
+- `def` [SuccessionWitness.unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L293) (L293)
+- `def` [SuccessionWitness.retiredRead](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L299) (L299)
+- `def` [SuccessionWitness.lostAfterRead](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean#L300) (L300)
+
+文本中有 37 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 37 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-641fa8f3ad8b"></a>
+
+<details>
+<summary>FulfillmentStatus.lean — 18 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FULFILLMENT-WITHDRAWAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean`
+
+Imports: `ContinuationScope`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FulfillmentStatus.bounds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L57) | 57 |
+| [FulfillmentStatus.lowest_faithful](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L89) | 89 |
+| [FulfillmentStatus.highest_faithful](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L101) | 101 |
+| [FulfillmentStatus.fulfilled_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L116) | 116 |
+| [FulfillmentStatus.pending_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L135) | 135 |
+| [FulfillmentStatus.unknown_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L157) | 157 |
+| [FulfillmentStatus.forged_record_misleads](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L186) | 186 |
+| [FulfillmentStatus.met_claim_withhold_only](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L207) | 207 |
+| [FulfillmentStatus.last_step_competes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L229) | 229 |
+
+定义与类型 / Definitions and types:
+
+- `def` [FulfillmentStatus.certified](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L24) (L24)
+- `def` [FulfillmentStatus.unknownCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L30) (L30)
+- `def` [FulfillmentStatus.delivered](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L35) (L35)
+- `def` [FulfillmentStatus.Faithful](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L41) (L41)
+- `inductive` [FulfillmentStatus.Status](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L49) (L49)
+- `def` [FulfillmentStatus.status](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L52) (L52)
+- `def` [FulfillmentStatus.lowest](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L78) (L78)
+- `def` [FulfillmentStatus.highest](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L84) (L84)
+- `def` [FulfillmentStatus.decision](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/FulfillmentStatus.lean#L200) (L200)
+
+文本中有 18 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 18 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-2633962036d2"></a>
+
+<details>
+<summary>SelfModelCertification.lean — 9 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean`
+
+Imports: `FulfillmentStatus`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SelfModelCertification.receipt_certified_implies_self](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L62) | 62 |
+| [SelfModelCertification.receipt_iff_status](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L66) | 66 |
+| [SelfModelCertification.self_model_certifies_more](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L71) | 71 |
+| [SelfModelCertification.needs_stationarity](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L83) | 83 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [SelfModelCertification.Course](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L43) (L43)
+- `def` [SelfModelCertification.nextAction](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L49) (L49)
+- `def` [SelfModelCertification.captures](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L52) (L52)
+- `def` [SelfModelCertification.ReceiptCertified](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L55) (L55)
+- `def` [SelfModelCertification.SelfCertified](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/fulfillment/formal/SelfModelCertification.lean#L58) (L58)
+
+文本中有 9 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 9 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-b592dcce60e2"></a>
+
+<details>
+<summary>FreshRevision.lean — 54 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean`
+
+Imports: `ActionWitness`, `PublicationBridge`, `RevisionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FreshRevision.core_is_unique](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L115) | 115 |
+| [FreshRevision.view_set](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L117) | 117 |
+| [FreshRevision.set_preserves_old_backing](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L121) | 121 |
+| [FreshRevision.opening_preserves_commands_and_history](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L126) | 126 |
+| [FreshRevision.opening_is_not_repair](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L135) | 135 |
+| [FreshRevision.funding_conserves](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L142) | 142 |
+| [FreshRevision.opening_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L148) | 148 |
+| [FreshRevision.bank_context](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L157) | 157 |
+| [FreshRevision.bank_step_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L174) | 174 |
+| [FreshRevision.bank_trace_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L181) | 181 |
+| [FreshRevision.bank_step_pointer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L189) | 189 |
+| [FreshRevision.bank_trace_pointer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L209) | 209 |
+| [FreshRevision.prepare_conserves](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L216) | 216 |
+| [FreshRevision.retained_workspace_initialization](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L223) | 223 |
+| [FreshRevision.reader_has_actual_fresh_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L229) | 229 |
+| [FreshRevision.actual_fresh_archive_every_consumer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L242) | 242 |
+| [FreshRevision.action_step_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L257) | 257 |
+| [FreshRevision.action_trace_projects](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L260) | 260 |
+| [FreshRevision.energy_decomposition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L273) | 273 |
+| [FreshRevision.bank_step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L278) | 278 |
+| [FreshRevision.bank_step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L287) | 287 |
+| [FreshRevision.bank_trace_keeps_old_backing](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L291) | 291 |
+| [FreshRevision.action_step_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L303) | 303 |
+| [FreshRevision.action_step_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L311) | 311 |
+| [FreshRevision.fresh_reason_import_and_actual_use](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L321) | 321 |
+| [FreshRevision.bank_trace_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L354) | 354 |
+| [FreshRevision.storage_not_refunded_or_reopened](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L367) | 367 |
+| [FreshRevision.admitted_opening_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L378) | 378 |
+| [FreshRevision.no_opening_when_inherited_phase_stalled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L385) | 385 |
+| [FreshRevision.bank_locked_after_reader_selection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L390) | 390 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [FreshRevision.Bank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L13) (L13)
+- `structure` [FreshRevision.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L23) (L23)
+- `def` [FreshRevision.core](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L36) (L36)
+- `def` [FreshRevision.view](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L38) (L38)
+- `def` [FreshRevision.setView](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L42) (L42)
+- `def` [FreshRevision.backing](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L45) (L45)
+- `def` [FreshRevision.producer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L47) (L47)
+- `def` [FreshRevision.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L49) (L49)
+- `def` [FreshRevision.material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L52) (L52)
+- `def` [FreshRevision.fund](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L55) (L55)
+- `def` [FreshRevision.Openable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L58) (L58)
+- `def` [FreshRevision.opening](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L61) (L61)
+- `def` [FreshRevision.OpenStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L69) (L69)
+- `def` [FreshRevision.BankGuard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L71) (L71)
+- `def` [FreshRevision.bankAdvance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L80) (L80)
+- `def` [FreshRevision.BankStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L84) (L84)
+- `def` [FreshRevision.bankProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L90) (L90)
+- `def` [FreshRevision.prepareConsumer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L95) (L95)
+- `def` [FreshRevision.PrepareStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L99) (L99)
+- `def` [FreshRevision.consumerReader](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L102) (L102)
+- `def` [FreshRevision.actionAdvance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L106) (L106)
+- `def` [FreshRevision.ActionStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L109) (L109)
+- `def` [FreshRevision.actionProcess](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L113) (L113)
+- `def` [FreshRevision.overhead](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean#L268) (L268)
+
+文本中有 30 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 30 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-cd73453f54b6"></a>
+
+<details>
+<summary>RevisionPreparation.lean — 17 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean`
+
+Imports: `ActionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RevisionPreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L23) | 23 |
+| [RevisionPreparation.prospective_formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L37) | 37 |
+| [RevisionPreparation.prospective_formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L39) | 39 |
+| [RevisionPreparation.formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L42) | 42 |
+| [RevisionPreparation.assemblies_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L45) | 45 |
+| [RevisionPreparation.material_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L48) | 48 |
+| [RevisionPreparation.exact_parent_prepared_projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L52) | 52 |
+| [RevisionPreparation.original_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L64) | 64 |
+| [RevisionPreparation.inherited_full_bank_has_no_spare_cells](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L67) | 67 |
+| [RevisionPreparation.prospective_whole_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L71) | 71 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RevisionPreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L8) (L8)
+- `def` [RevisionPreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L9) (L9)
+- `def` [RevisionPreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L12) (L12)
+- `def` [RevisionPreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L29) (L29)
+- `def` [RevisionPreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L30) (L30)
+- `def` [RevisionPreparation.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L31) (L31)
+- `def` [RevisionPreparation.parentProjection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean#L34) (L34)
+
+文本中有 10 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 10 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d03c440ac0b4"></a>
+
+<details>
+<summary>RevisionWitness.lean — 56 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean`
+
+Imports: `FreshRevision`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RevisionWitness.valid_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L48) | 48 |
+| [RevisionWitness.write_check_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L60) | 60 |
+| [RevisionWitness.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L110) | 110 |
+| [RevisionWitness.action_runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L148) | 148 |
+| [RevisionWitness.actual_original_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L164) | 164 |
+| [RevisionWitness.funded_reset_enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L171) | 171 |
+| [RevisionWitness.actual_reset_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L173) | 173 |
+| [RevisionWitness.actual_queries_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L180) | 180 |
+| [RevisionWitness.actual_queries_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L182) | 182 |
+| [RevisionWitness.actual_new_acquisition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L186) | 186 |
+| [RevisionWitness.old_backing_unchanged](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L194) | 194 |
+| [RevisionWitness.actual_consumer_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L201) | 201 |
+| [RevisionWitness.actual_consumer_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L203) | 203 |
+| [RevisionWitness.actual_reason_revision](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L206) | 206 |
+| [RevisionWitness.actual_use_runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L211) | 211 |
+| [RevisionWitness.actual_use_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L213) | 213 |
+| [RevisionWitness.actual_same_recipient_effect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L216) | 216 |
+| [RevisionWitness.paid_consumer_same_hardware](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L224) | 224 |
+| [RevisionWitness.actual_warranted_revision](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L231) | 231 |
+| [RevisionWitness.genuine_revision_and_effect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L237) | 237 |
+| [RevisionWitness.exact_new_service_and_loss_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L245) | 245 |
+| [RevisionWitness.old_qualification_does_not_revise_under_zeros](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L256) | 256 |
+| [RevisionWitness.hidden_late_change_is_not_detected_by_epoch](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L262) | 262 |
+| [RevisionWitness.new_zero_does_not_refute_or_support](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L273) | 273 |
+| [RevisionWitness.bounded_window_no_third_query](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L281) | 281 |
+| [RevisionWitness.old_archive_cannot_supply_current_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L287) | 287 |
+| [RevisionWitness.actual_composed_history](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L298) | 298 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RevisionWitness.entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L14) (L14)
+- `def` [RevisionWitness.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L17) (L17)
+- `def` [RevisionWitness.changed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L18) (L18)
+- `inductive` [RevisionWitness.Command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L20) (L20)
+- `def` [RevisionWitness.toOld](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L26) (L26)
+- `def` [RevisionWitness.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L32) (L32)
+- `def` [RevisionWitness.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L33) (L33)
+- `def` [RevisionWitness.validCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L42) (L42)
+- `def` [RevisionWitness.writeCheck](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L56) (L56)
+- `def` [RevisionWitness.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L90) (L90)
+- `def` [RevisionWitness.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L94) (L94)
+- `def` [RevisionWitness.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L99) (L99)
+- `def` [RevisionWitness.trial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L117) (L117)
+- `def` [RevisionWitness.recordedTrial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L120) (L120)
+- `def` [RevisionWitness.queryWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L124) (L124)
+- `def` [RevisionWitness.bankEnd](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L126) (L126)
+- `def` [RevisionWitness.reading](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L128) (L128)
+- `def` [RevisionWitness.actionRun](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L130) (L130)
+- `def` [RevisionWitness.ActionRunnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L134) (L134)
+- `def` [RevisionWitness.consumerWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L155) (L155)
+- `def` [RevisionWitness.consumed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L157) (L157)
+- `def` [RevisionWitness.useWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L159) (L159)
+- `def` [RevisionWitness.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L162) (L162)
+- `def` [RevisionWitness.lockedStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L252) (L252)
+- `def` [RevisionWitness.lockedCore](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L253) (L253)
+- `def` [RevisionWitness.late](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L260) (L260)
+- `def` [RevisionWitness.zeroBank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L269) (L269)
+- `def` [RevisionWitness.zeroRead](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L270) (L270)
+- `def` [RevisionWitness.zeroConsumed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean#L271) (L271)
+
+文本中有 27 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 27 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c2e841f7d5e2"></a>
+
+<details>
+<summary>PaidRecipientReasons.lean — 42 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean`
+
+Imports: `RecipientReasons`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PaidRecipientReasons.step_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L103) | 103 |
+| [PaidRecipientReasons.trace_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L117) | 117 |
+| [PaidRecipientReasons.step_preserves_world](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L123) | 123 |
+| [PaidRecipientReasons.step_preserves_archive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L130) | 130 |
+| [PaidRecipientReasons.reopen_invalidates](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L137) | 137 |
+| [PaidRecipientReasons.same_context_reopen_invalidates](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L140) | 140 |
+| [PaidRecipientReasons.cold_retains_resources_and_hardware](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L144) | 144 |
+| [PaidRecipientReasons.no_workspace_no_activation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L150) | 150 |
+| [PaidRecipientReasons.run_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L153) | 153 |
+| [PaidRecipientReasons.reason_run_normalized](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L158) | 158 |
+| [PaidRecipientReasons.reason_word_cost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L167) | 167 |
+| [PaidRecipientReasons.factual_word_cost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L169) | 169 |
+| [PaidRecipientReasons.cycle_cost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L171) | 171 |
+| [PaidRecipientReasons.insufficient_ten_blocks_word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L173) | 173 |
+| [PaidRecipientReasons.funded_reason_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L180) | 180 |
+| [PaidRecipientReasons.reason_run_complete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L203) | 203 |
+| [PaidRecipientReasons.actual_cache_reason_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L207) | 207 |
+| [PaidRecipientReasons.step_cache_agrees](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L215) | 215 |
+| [PaidRecipientReasons.trace_cache_agrees](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L224) | 224 |
+| [PaidRecipientReasons.trace_preserves_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L231) | 231 |
+| [PaidRecipientReasons.trace_run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L242) | 242 |
+| [PaidRecipientReasons.reason_run_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L248) | 248 |
+| [PaidRecipientReasons.sound_cache_no_runtime_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L252) | 252 |
+| [PaidRecipientReasons.paid_cycle_count_necessary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L258) | 258 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [PaidRecipientReasons.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L10) (L10)
+- `def` [PaidRecipientReasons.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L21) (L21)
+- `def` [PaidRecipientReasons.put](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L24) (L24)
+- `def` [PaidRecipientReasons.inferred](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L27) (L27)
+- `def` [PaidRecipientReasons.debit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L30) (L30)
+- `inductive` [PaidRecipientReasons.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L33) (L33)
+- `def` [PaidRecipientReasons.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L43) (L43)
+- `def` [PaidRecipientReasons.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L63) (L63)
+- `def` [PaidRecipientReasons.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L73) (L73)
+- `def` [PaidRecipientReasons.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L75) (L75)
+- `def` [PaidRecipientReasons.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L77) (L77)
+- `def` [PaidRecipientReasons.charge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L79) (L79)
+- `def` [PaidRecipientReasons.spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L85) (L85)
+- `def` [PaidRecipientReasons.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L87) (L87)
+- `def` [PaidRecipientReasons.reasonWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L91) (L91)
+- `def` [PaidRecipientReasons.factualWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L95) (L95)
+- `def` [PaidRecipientReasons.cycle](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L97) (L97)
+- `def` [PaidRecipientReasons.CurrentPublication](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean#L99) (L99)
+
+文本中有 24 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 24 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-817e5110d349"></a>
+
+<details>
+<summary>ReasonPreparation.lean — 18 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean`
+
+Imports: `ArchivePreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ReasonPreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L24) | 24 |
+| [ReasonPreparation.actual_formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L38) | 38 |
+| [ReasonPreparation.actual_formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L40) | 40 |
+| [ReasonPreparation.actual_formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L43) | 43 |
+| [ReasonPreparation.actual_assemblies_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L47) | 47 |
+| [ReasonPreparation.actual_material_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L50) | 50 |
+| [ReasonPreparation.original_energy_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L55) | 55 |
+| [ReasonPreparation.boundary_preparations_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L59) | 59 |
+| [ReasonPreparation.exact_paid_capacity_boundaries](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L65) | 65 |
+| [ReasonPreparation.primary_whole_ledger_arithmetic](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L71) | 71 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ReasonPreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L7) (L7)
+- `def` [ReasonPreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L8) (L8)
+- `def` [ReasonPreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L12) (L12)
+- `def` [ReasonPreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L30) (L30)
+- `def` [ReasonPreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L32) (L32)
+- `def` [ReasonPreparation.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L33) (L33)
+- `def` [ReasonPreparation.common](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L35) (L35)
+- `def` [ReasonPreparation.protectedReserve](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean#L36) (L36)
+
+文本中有 10 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 10 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-edd06589e118"></a>
+
+<details>
+<summary>ReasonReplayBridge.lean — 19 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean`
+
+Imports: `PaidRecipientReasons`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ReasonReplayBridge.factual_run_reader](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L9) | 9 |
+| [ReasonReplayBridge.factual_run_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L12) | 12 |
+| [ReasonReplayBridge.funded_factual_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L20) | 20 |
+| [ReasonReplayBridge.funded_cycle_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L34) | 34 |
+| [ReasonReplayBridge.cycle_run_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L43) | 43 |
+| [ReasonReplayBridge.fund_is_transfer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L65) | 65 |
+| [ReasonReplayBridge.first_reason_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L71) | 71 |
+| [ReasonReplayBridge.funded_two_cycle_tail](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L80) | 80 |
+| [ReasonReplayBridge.final_has_no_added_fuel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L94) | 94 |
+| [ReasonReplayBridge.one_short_cannot_complete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L105) | 105 |
+| [ReasonReplayBridge.one_cycle_short_cannot_complete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L113) | 113 |
+| [ReasonReplayBridge.actual_archive_to_paid_reasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L123) | 123 |
+| [ReasonReplayBridge.traced_reason_tail_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L151) | 151 |
+| [ReasonReplayBridge.cold_replay_reason_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L163) | 163 |
+| [ReasonReplayBridge.actual_archive_to_cold_replayed_reasons](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L173) | 173 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ReasonReplayBridge.postFund](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L56) (L56)
+- `def` [ReasonReplayBridge.firstReason](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L58) (L58)
+- `def` [ReasonReplayBridge.completionWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L60) (L60)
+- `def` [ReasonReplayBridge.final](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean#L62) (L62)
+
+文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-2771495028b1"></a>
+
+<details>
+<summary>RecipientReasons.lean — 37 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean) · [理论 / Theory](../../unified-2026-10-05/EVALUATIVE-APPLICATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean`
+
+Imports: `PaidArchiveReader`, `ReasonReplay`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipientReasons.compatible_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L49) | 49 |
+| [RecipientReasons.normalization_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L52) | 52 |
+| [RecipientReasons.finite_normalization_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L72) | 72 |
+| [RecipientReasons.finite_known_agree](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L79) | 79 |
+| [RecipientReasons.finite_no_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L83) | 83 |
+| [RecipientReasons.first_known_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L89) | 89 |
+| [RecipientReasons.finite_informative_identifies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L101) | 101 |
+| [RecipientReasons.finite_identifies_compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L114) | 114 |
+| [RecipientReasons.normalization_preserves_unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L118) | 118 |
+| [RecipientReasons.negative_fact_is_informative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L120) | 120 |
+| [RecipientReasons.option_bool_cases](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L122) | 122 |
+| [RecipientReasons.sound_no_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L127) | 127 |
+| [RecipientReasons.sound_orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L133) | 133 |
+| [RecipientReasons.sound_informative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L140) | 140 |
+| [RecipientReasons.unknown_is_not_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L147) | 147 |
+| [RecipientReasons.conflict_is_distinct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L149) | 149 |
+| [RecipientReasons.closure_of_orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L153) | 153 |
+| [RecipientReasons.informative_exact_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L167) | 167 |
+| [RecipientReasons.actual_relevance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L172) | 172 |
+| [RecipientReasons.closure_instrumental_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L183) | 183 |
+| [RecipientReasons.current_cache_normalizes_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L193) | 193 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RecipientReasons.Triple](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L11) (L11)
+- `def` [RecipientReasons.empty](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L17) (L17)
+- `def` [RecipientReasons.normalize](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L18) (L18)
+- `def` [RecipientReasons.entrySound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L22) (L22)
+- `def` [RecipientReasons.Sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L23) (L23)
+- `def` [RecipientReasons.known](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L26) (L26)
+- `def` [RecipientReasons.conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L29) (L29)
+- `def` [RecipientReasons.orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L31) (L31)
+- `def` [RecipientReasons.derived](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L35) (L35)
+- `def` [RecipientReasons.star](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L40) (L40)
+- `def` [RecipientReasons.Compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L42) (L42)
+- `def` [RecipientReasons.Meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L44) (L44)
+- `def` [RecipientReasons.normalizeFacts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L61) (L61)
+- `def` [RecipientReasons.ListSound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L64) (L64)
+- `def` [RecipientReasons.firstKnown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L67) (L67)
+- `def` [RecipientReasons.cacheTriple](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean#L190) (L190)
+
+文本中有 21 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 21 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-255a96b41300"></a>
+
+<details>
+<summary>PublicationBridge.lean — 11 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean`
+
+Imports: `PublicationBudget`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PublicationBridge.invariant_assured](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L12) | 12 |
+| [PublicationBridge.initialized_trace_assured](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L19) | 19 |
+| [PublicationBridge.actual_archive_initial_facts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L28) | 28 |
+| [PublicationBridge.actual_archive_every_unread_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L41) | 41 |
+| [PublicationBridge.actual_archive_every_handoff_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L58) | 58 |
+| [PublicationBridge.forged_has_sound_inputs](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L88) | 88 |
+| [PublicationBridge.forged_free_false_publication](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L93) | 93 |
+
+定义与类型 / Definitions and types:
+
+- `def` [PublicationBridge.Assured](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L6) (L6)
+- `abbrev` [PublicationBridge.ArchiveState](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L25) (L25)
+- `abbrev` [PublicationBridge.ArchiveEvent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L26) (L26)
+- `def` [PublicationBridge.forged](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean#L83) (L83)
+
+文本中有 7 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 7 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-2c579a67c493"></a>
+
+<details>
+<summary>PublicationBudget.lean — 14 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean`
+
+Imports: `PublicationSafety`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PublicationBudget.complete_reader_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L20) | 20 |
+| [PublicationBudget.reader_step_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L24) | 24 |
+| [PublicationBudget.complete_no_sense](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L33) | 33 |
+| [PublicationBudget.complete_no_read](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L40) | 40 |
+| [PublicationBudget.step_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L46) | 46 |
+| [PublicationBudget.trace_credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L76) | 76 |
+| [PublicationBudget.initialized_count_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L87) | 87 |
+| [PublicationBudget.unread_count_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L94) | 94 |
+| [PublicationBudget.completed_handoff_count_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L100) | 100 |
+| [PublicationBudget.inherited_fuel_count_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L108) | 108 |
+
+定义与类型 / Definitions and types:
+
+- `def` [PublicationBudget.readerCredit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L6) (L6)
+- `def` [PublicationBudget.credit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L9) (L9)
+- `def` [PublicationBudget.isPublication](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L16) (L16)
+- `def` [PublicationBudget.publications](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean#L18) (L18)
+
+文本中有 10 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 10 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-946dd1d4cfb2"></a>
+
+<details>
+<summary>PublicationSafety.lean — 26 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean`
+
+Imports: `ReasonReplayBridge`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PublicationSafety.empty_normalized_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L37) | 37 |
+| [PublicationSafety.empty_mask_safe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L40) | 40 |
+| [PublicationSafety.put_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L43) | 43 |
+| [PublicationSafety.inferred_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L52) | 52 |
+| [PublicationSafety.path_safe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L64) | 64 |
+| [PublicationSafety.step_normalized_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L78) | 78 |
+| [PublicationSafety.step_working_safe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L86) | 86 |
+| [PublicationSafety.step_conflict_agrees](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L94) | 94 |
+| [PublicationSafety.step_active_complete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L103) | 103 |
+| [PublicationSafety.step_phase_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L114) | 114 |
+| [PublicationSafety.step_exact_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L123) | 123 |
+| [PublicationSafety.step_current_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L148) | 148 |
+| [PublicationSafety.step_selected_current](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L171) | 171 |
+| [PublicationSafety.initial_invariant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L199) | 199 |
+| [PublicationSafety.step_invariant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L205) | 205 |
+| [PublicationSafety.trace_invariant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L215) | 215 |
+| [PublicationSafety.route_meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L221) | 221 |
+| [PublicationSafety.invariant_publication_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L229) | 229 |
+| [PublicationSafety.invariant_publication_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L238) | 238 |
+| [PublicationSafety.invariant_no_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L244) | 244 |
+
+定义与类型 / Definitions and types:
+
+- `def` [PublicationSafety.RouteSafe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L9) (L9)
+- `def` [PublicationSafety.prefixMask](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L12) (L12)
+- `def` [PublicationSafety.ExactPhase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L16) (L16)
+- `def` [PublicationSafety.ActiveComplete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L18) (L18)
+- `def` [PublicationSafety.SelectedFromCurrent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L20) (L20)
+- `structure` [PublicationSafety.Invariant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean#L25) (L25)
+
+文本中有 20 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 20 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-ad79f81f6792"></a>
+
+<details>
+<summary>SemanticCalibration.lean — 22 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean`
+
+Imports: `RecipientIdentification`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SemanticCalibration.acquired_step_preserves_qualification](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L29) | 29 |
+| [SemanticCalibration.finite_replay_preserves_qualification](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L40) | 40 |
+| [SemanticCalibration.initially_unqualified_replay_is_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L47) | 47 |
+| [SemanticCalibration.corroboration_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L64) | 64 |
+| [SemanticCalibration.grounded_corroboration_is_compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L74) | 74 |
+| [SemanticCalibration.replay_corroboration_is_compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L85) | 85 |
+| [SemanticCalibration.sound_qualified_anchor_corroborates_exactly_the_true_command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L94) | 94 |
+| [SemanticCalibration.disagreement_excludes_joint_current_soundness](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L101) | 101 |
+| [SemanticCalibration.self_import_guarantees_agreement_without_calibration](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L114) | 114 |
+| [SemanticCalibration.common_corruption_agrees_but_is_wrong](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L141) | 141 |
+| [SemanticCalibration.full_visible_state_cannot_identify_both_uncalibrated_worlds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L147) | 147 |
+| [SemanticCalibration.stale_qualification_can_accept_old_error_and_decline_new_truth](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L156) | 156 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [SemanticCalibration.Exposure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L15) (L15)
+- `def` [SemanticCalibration.acquire](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L21) (L21)
+- `def` [SemanticCalibration.replay](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L26) (L26)
+- `def` [SemanticCalibration.corroborate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L58) (L58)
+- `def` [SemanticCalibration.importClaim](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L111) (L111)
+- `structure` [SemanticCalibration.Visible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L126) (L126)
+- `structure` [SemanticCalibration.World](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L132) (L132)
+- `def` [SemanticCalibration.agreed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L137) (L137)
+- `def` [SemanticCalibration.world0](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L138) (L138)
+- `def` [SemanticCalibration.world1](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean#L139) (L139)
+
+文本中有 12 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 12 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-42569f077f11"></a>
+
+<details>
+<summary>InspectionPreparation.lean — 16 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean`
+
+Imports: `ActionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InspectionPreparation.runnable_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L27) | 27 |
+| [InspectionPreparation.actual_formation_feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L38) | 38 |
+| [InspectionPreparation.actual_formation_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L40) | 40 |
+| [InspectionPreparation.actual_formation_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L43) | 43 |
+| [InspectionPreparation.actual_assembly_and_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L46) | 46 |
+| [InspectionPreparation.exact_parent_prepared_projection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L56) | 56 |
+| [InspectionPreparation.original_accounts_partition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L69) | 69 |
+| [InspectionPreparation.omitted_assembly_retains_parts_and_payment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L76) | 76 |
+
+定义与类型 / Definitions and types:
+
+- `def` [InspectionPreparation.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L8) (L8)
+- `def` [InspectionPreparation.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L9) (L9)
+- `def` [InspectionPreparation.Runnable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L13) (L13)
+- `def` [InspectionPreparation.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L33) (L33)
+- `def` [InspectionPreparation.assemblyWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L34) (L34)
+- `def` [InspectionPreparation.prepared](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L36) (L36)
+- `def` [InspectionPreparation.parentProjection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L53) (L53)
+- `def` [InspectionPreparation.withoutInspector](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean#L74) (L74)
+
+文本中有 8 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 8 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-3ca0f0fbccd6"></a>
+
+<details>
+<summary>InspectionWitness.lean — 12 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean`
+
+Imports: `ActionWitness`, `PaidPreImport`, `InspectionPreparation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InspectionWitness.actual_original_acquired_anchor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L23) | 23 |
+| [InspectionWitness.actual_paid_read_and_inspection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L29) | 29 |
+| [InspectionWitness.actual_consumption_and_import](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L38) | 38 |
+| [InspectionWitness.exact_parent_import_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L45) | 45 |
+| [InspectionWitness.actual_module_isolation_and_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L49) | 49 |
+| [InspectionWitness.actual_trial_from_guarded_import](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L59) | 59 |
+
+定义与类型 / Definitions and types:
+
+- `def` [InspectionWitness.laws](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L10) (L10)
+- `def` [InspectionWitness.entry](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L11) (L11)
+- `def` [InspectionWitness.afterCommand](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L13) (L13)
+- `def` [InspectionWitness.checked](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L14) (L14)
+- `def` [InspectionWitness.consumed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L15) (L15)
+- `def` [InspectionWitness.imported](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean#L16) (L16)
+
+文本中有 6 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 6 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-72d53bbb0ddb"></a>
+
+<details>
+<summary>PaidPreImport.lean — 29 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean`
+
+Imports: `RecipientAction`, `SemanticCalibration`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PaidPreImport.inspection_preserves_entire_parent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L83) | 83 |
+| [PaidPreImport.paid_inspection_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L89) | 89 |
+| [PaidPreImport.paid_comparison_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L107) | 107 |
+| [PaidPreImport.inspection_trace_exact_and_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L117) | 117 |
+| [PaidPreImport.parent_command_read_is_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L138) | 138 |
+| [PaidPreImport.consume_retires_even_without_import_money](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L143) | 143 |
+| [PaidPreImport.no_event_rearms_origin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L150) | 150 |
+| [PaidPreImport.no_trace_rearms_origin](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L154) | 154 |
+| [PaidPreImport.consumed_origin_blocks_new_reads](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L163) | 163 |
+| [PaidPreImport.instrumented_intervention_retires](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L167) | 167 |
+| [PaidPreImport.damaged_read_charges_and_retires](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L174) | 174 |
+| [PaidPreImport.guarded_import_is_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L183) | 183 |
+| [PaidPreImport.accepted_command_correct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L192) | 192 |
+| [PaidPreImport.faithful_import_after_acceptance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L202) | 202 |
+| [PaidPreImport.stable_anchor_then_faithful_recipient_receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L209) | 209 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [PaidPreImport.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L12) (L12)
+- `structure` [PaidPreImport.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L16) (L16)
+- `def` [PaidPreImport.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L29) (L29)
+- `def` [PaidPreImport.candidate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L32) (L32)
+- `def` [PaidPreImport.qualification](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L33) (L33)
+- `def` [PaidPreImport.decision](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L37) (L37)
+- `def` [PaidPreImport.pay](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L42) (L42)
+- `inductive` [PaidPreImport.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L44) (L44)
+- `def` [PaidPreImport.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L49) (L49)
+- `def` [PaidPreImport.Ready](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L60) (L60)
+- `def` [PaidPreImport.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L63) (L63)
+- `def` [PaidPreImport.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L75) (L75)
+- `def` [PaidPreImport.process](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L78) (L78)
+- `def` [PaidPreImport.inspect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L80) (L80)
+
+文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-69dd2fd3322c"></a>
+
+<details>
+<summary>RecipientReasons.lean — 37 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean`
+
+Imports: `PaidArchiveReader`, `ReasonReplay`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipientReasons.compatible_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L49) | 49 |
+| [RecipientReasons.normalization_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L52) | 52 |
+| [RecipientReasons.finite_normalization_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L72) | 72 |
+| [RecipientReasons.finite_known_agree](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L79) | 79 |
+| [RecipientReasons.finite_no_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L83) | 83 |
+| [RecipientReasons.first_known_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L89) | 89 |
+| [RecipientReasons.finite_informative_identifies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L101) | 101 |
+| [RecipientReasons.finite_identifies_compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L114) | 114 |
+| [RecipientReasons.normalization_preserves_unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L118) | 118 |
+| [RecipientReasons.negative_fact_is_informative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L120) | 120 |
+| [RecipientReasons.option_bool_cases](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L122) | 122 |
+| [RecipientReasons.sound_no_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L127) | 127 |
+| [RecipientReasons.sound_orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L133) | 133 |
+| [RecipientReasons.sound_informative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L140) | 140 |
+| [RecipientReasons.unknown_is_not_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L147) | 147 |
+| [RecipientReasons.conflict_is_distinct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L149) | 149 |
+| [RecipientReasons.closure_of_orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L153) | 153 |
+| [RecipientReasons.informative_exact_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L167) | 167 |
+| [RecipientReasons.actual_relevance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L172) | 172 |
+| [RecipientReasons.closure_instrumental_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L183) | 183 |
+| [RecipientReasons.current_cache_normalizes_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L193) | 193 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RecipientReasons.Triple](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L11) (L11)
+- `def` [RecipientReasons.empty](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L17) (L17)
+- `def` [RecipientReasons.normalize](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L18) (L18)
+- `def` [RecipientReasons.entrySound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L22) (L22)
+- `def` [RecipientReasons.Sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L23) (L23)
+- `def` [RecipientReasons.known](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L26) (L26)
+- `def` [RecipientReasons.conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L29) (L29)
+- `def` [RecipientReasons.orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L31) (L31)
+- `def` [RecipientReasons.derived](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L35) (L35)
+- `def` [RecipientReasons.star](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L40) (L40)
+- `def` [RecipientReasons.Compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L42) (L42)
+- `def` [RecipientReasons.Meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L44) (L44)
+- `def` [RecipientReasons.normalizeFacts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L61) (L61)
+- `def` [RecipientReasons.ListSound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L64) (L64)
+- `def` [RecipientReasons.firstKnown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L67) (L67)
+- `def` [RecipientReasons.cacheTriple](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L190) (L190)
+
+</details>
+
+<a id="module-a51c4566a005"></a>
+
+<details>
+<summary>SemanticAction.lean — 31 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SemanticAction.preserves_iff_no_counterexample](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L19) | 19 |
+| [SemanticAction.preserves_composition](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L32) | 32 |
+| [SemanticAction.preserves_under_justified_scope_restriction](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L45) | 45 |
+| [SemanticAction.rejecting_everything_is_sound_but_exports_nothing](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L53) | 53 |
+| [SemanticAction.raw_route_as_patient_has_counterexample](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L71) | 71 |
+| [SemanticAction.no_injective_mask_decoder_preserves_fixed_bearer](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L77) | 77 |
+| [SemanticAction.addressed_command_keeps_bearer_and_changes_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L91) | 91 |
+| [SemanticAction.role_scope_composes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L117) | 117 |
+| [SemanticAction.justified_role_scope_transports_instrumental](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L123) | 123 |
+| [SemanticAction.changed_actor_can_preserve_role_scope](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L133) | 133 |
+| [SemanticAction.matching_label_is_insufficient_after_reopening](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L138) | 138 |
+| [SemanticAction.sound_admission_preserves_reason](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L160) | 160 |
+| [SemanticAction.distinct_reason_and_action_stages_have_models](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L163) | 163 |
+| [SemanticAction.authorization_and_feasibility_do_not_supply_ground](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L176) | 176 |
+| [SemanticAction.compatibility_does_not_supply_evaluative_good](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L184) | 184 |
+| [SemanticAction.selected_action_requires_two_independent_contracts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L197) | 197 |
+
+定义与类型 / Definitions and types:
+
+- `def` [SemanticAction.Preserves](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L11) (L11)
+- `def` [SemanticAction.Counterexample](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L15) (L15)
+- `def` [SemanticAction.compose](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L29) (L29)
+- `inductive` [SemanticAction.Patient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L65) (L65)
+- `def` [SemanticAction.routeMask](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L68) (L68)
+- `def` [SemanticAction.bitAsPatient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L69) (L69)
+- `structure` [SemanticAction.CommandClaim](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L86) (L86)
+- `structure` [SemanticAction.World](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L99) (L99)
+- `def` [SemanticAction.RoleScope](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L108) (L108)
+- `def` [SemanticAction.Instrumental](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L114) (L114)
+- `structure` [SemanticAction.Status](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L145) (L145)
+- `def` [SemanticAction.SoundAdmission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L154) (L154)
+- `def` [SemanticAction.receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L181) (L181)
+- `def` [SemanticAction.Compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L182) (L182)
+- `def` [SemanticAction.Realizes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean#L193) (L193)
+
+文本中有 16 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 16 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-6d5ab3eb998c"></a>
+
+<details>
+<summary>RouteDiagnostics.lean — 31 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean) · [理论 / Theory](../../unified-2026-10-05/ROUTE-DIAGNOSTICS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-DIAGNOSTICS-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean`
+
+Imports: `FormedRecipientRoute`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RouteDiagnostics.written_recipient_bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L41) | 41 |
+| [RouteDiagnostics.actual_write_flip_signature](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L51) | 51 |
+| [RouteDiagnostics.completed_inspection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L91) | 91 |
+| [RouteDiagnostics.observation_exists_iff_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L102) | 102 |
+| [RouteDiagnostics.inspection_has_no_refunds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L117) | 117 |
+| [RouteDiagnostics.paid_observation_has_exact_signature](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L126) | 126 |
+| [RouteDiagnostics.two_polarity_classifier](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L155) | 155 |
+| [RouteDiagnostics.classifier_sound_and_complete](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L161) | 161 |
+| [RouteDiagnostics.single_polarity_aliases](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L169) | 169 |
+| [RouteDiagnostics.closed_frozen_words_identical](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L183) | 183 |
+| [RouteDiagnostics.wrong_start_three_receipts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L196) | 196 |
+| [RouteDiagnostics.wrong_start_two_receipts_alias](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L204) | 204 |
+| [RouteDiagnostics.correct_stable_receipts_never_separate](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L209) | 209 |
+| [RouteDiagnostics.unpaid_write_is_not_a_negative_signature](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L223) | 223 |
+| [RouteDiagnostics.unobserved_committed_write_is_not_an_inspection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L230) | 230 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RouteDiagnostics.Sample](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L17) (L17)
+- `def` [RouteDiagnostics.bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L24) (L24)
+- `def` [RouteDiagnostics.written](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L28) (L28)
+- `def` [RouteDiagnostics.sample](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L31) (L31)
+- `def` [RouteDiagnostics.flip](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L34) (L34)
+- `def` [RouteDiagnostics.signature](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L36) (L36)
+- `structure` [RouteDiagnostics.Costs](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L59) (L59)
+- `def` [RouteDiagnostics.totalCost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L66) (L66)
+- `structure` [RouteDiagnostics.Inspection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L68) (L68)
+- `def` [RouteDiagnostics.inspect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L76) (L76)
+- `inductive` [RouteDiagnostics.Class](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L138) (L138)
+- `def` [RouteDiagnostics.routeClass](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L142) (L142)
+- `def` [RouteDiagnostics.classify](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L148) (L148)
+- `def` [RouteDiagnostics.word](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L177) (L177)
+- `def` [RouteDiagnostics.receiptWord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L190) (L190)
+- `def` [RouteDiagnostics.unitCosts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean#L221) (L221)
+
+文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-e00c807b1ad5"></a>
+
+<details>
+<summary>FormedRouteMonitor.lean — 73 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean`
+
+Imports: `SuccessorLearning`, `RouteDiagnostics`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FormedRouteMonitor.summary_classification_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L48) | 48 |
+| [FormedRouteMonitor.credit_contact_is_actual_work_outcome](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L181) | 181 |
+| [FormedRouteMonitor.fee_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L188) | 188 |
+| [FormedRouteMonitor.ordinary_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L195) | 195 |
+| [FormedRouteMonitor.ordinary_preserves_bounded_zero_cash](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L209) | 209 |
+| [FormedRouteMonitor.step_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L220) | 220 |
+| [FormedRouteMonitor.step_preserves_bounded_zero_cash](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L246) | 246 |
+| [FormedRouteMonitor.trace_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L257) | 257 |
+| [FormedRouteMonitor.trace_preserves_bounded_zero_cash](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L271) | 271 |
+| [FormedRouteMonitor.enabled_list_is_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L298) | 298 |
+| [FormedRouteMonitor.run_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L309) | 309 |
+| [FormedRouteMonitor.frame_last_commit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L315) | 315 |
+| [FormedRouteMonitor.unfinished_frame_preserves_summaries](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L320) | 320 |
+| [FormedRouteMonitor.completed_frame_projects_sample](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L331) | 331 |
+| [FormedRouteMonitor.completed_frame_flip](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L341) | 341 |
+| [FormedRouteMonitor.completed_frame_updates_summaries](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L356) | 356 |
+| [FormedRouteMonitor.merge_preserves_consistent_evidence](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L366) | 366 |
+| [FormedRouteMonitor.completed_frame_preserves_summary_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L373) | 373 |
+| [FormedRouteMonitor.paid_frame_diagnosis_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L386) | 386 |
+| [FormedRouteMonitor.absent_or_unknown_bus_blocks_commit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L398) | 398 |
+| [FormedRouteMonitor.seal_requires_completed_work](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L403) | 403 |
+| [FormedRouteMonitor.paid_post_read_precedes_commit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L407) | 407 |
+| [FormedRouteMonitor.floor_blocks_inspection_without_refund](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L411) | 411 |
+| [FormedRouteMonitor.completed_two_frames_exhaust_lease](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L417) | 417 |
+| [FormedRouteMonitor.known_binding_break_discards_summaries](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L422) | 422 |
+| [FormedRouteMonitor.assembly_initializes_sound_evidence](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L430) | 430 |
+| [FormedRouteMonitor.missing_components_block_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L434) | 434 |
+| [FormedRouteMonitor.unretained_grandchild_cannot_enter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L451) | 451 |
+| [FormedRouteMonitor.admitted_entry_preserves_energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L456) | 456 |
+| [FormedRouteMonitor.typed_boundary_admission](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L490) | 490 |
+| [FormedRouteMonitor.target_two_frames_are_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L494) | 494 |
+| [FormedRouteMonitor.target_retains_full_signature](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L497) | 497 |
+| [FormedRouteMonitor.nonwriting_second_frame_stops_after_write](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L504) | 504 |
+| [FormedRouteMonitor.controlled_private_zero_success_identifies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L513) | 513 |
+| [FormedRouteMonitor.stable_success_is_uninformative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L517) | 517 |
+| [FormedRouteMonitor.complete_target_local_energy_and_material](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L523) | 523 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [FormedRouteMonitor.Summary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L19) (L19)
+- `def` [FormedRouteMonitor.encode](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L23) (L23)
+- `def` [FormedRouteMonitor.merge](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L25) (L25)
+- `def` [FormedRouteMonitor.summaryBit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L31) (L31)
+- `def` [FormedRouteMonitor.classify](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L36) (L36)
+- `def` [FormedRouteMonitor.SoundSummary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L44) (L44)
+- `inductive` [FormedRouteMonitor.Quota](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L54) (L54)
+- `def` [FormedRouteMonitor.nextQuota](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L57) (L57)
+- `inductive` [FormedRouteMonitor.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L61) (L61)
+- `structure` [FormedRouteMonitor.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L66) (L66)
+- `abbrev` [FormedRouteMonitor.Bus](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L83) (L83)
+- `inductive` [FormedRouteMonitor.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L85) (L85)
+- `def` [FormedRouteMonitor.ordinary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L91) (L91)
+- `def` [FormedRouteMonitor.OrdinaryEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L94) (L94)
+- `def` [FormedRouteMonitor.fee](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L99) (L99)
+- `def` [FormedRouteMonitor.FeeEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L103) (L103)
+- `def` [FormedRouteMonitor.creditContact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L107) (L107)
+- `def` [FormedRouteMonitor.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L111) (L111)
+- `def` [FormedRouteMonitor.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L129) (L129)
+- `def` [FormedRouteMonitor.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L166) (L166)
+- `inductive` [FormedRouteMonitor.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L169) (L169)
+- `def` [FormedRouteMonitor.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L174) (L174)
+- `def` [FormedRouteMonitor.cells](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L175) (L175)
+- `def` [FormedRouteMonitor.heads](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L176) (L176)
+- `def` [FormedRouteMonitor.diagnosis](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L178) (L178)
+- `def` [FormedRouteMonitor.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L280) (L280)
+- `def` [FormedRouteMonitor.allEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L284) (L284)
+- `def` [FormedRouteMonitor.framePrefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L304) (L304)
+- `def` [FormedRouteMonitor.frame](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L307) (L307)
+- `def` [FormedRouteMonitor.physicalRecord](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L326) (L326)
+- `def` [FormedRouteMonitor.sampleProjection](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L327) (L327)
+- `def` [FormedRouteMonitor.enter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L442) (L442)
+- `def` [FormedRouteMonitor.boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L473) (L473)
+- `def` [FormedRouteMonitor.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L479) (L479)
+- `def` [FormedRouteMonitor.assembled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L483) (L483)
+- `def` [FormedRouteMonitor.afterFirst](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L486) (L486)
+- `def` [FormedRouteMonitor.throughWrite](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean#L488) (L488)
+
+文本中有 36 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 36 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-737754c24400"></a>
+
+<details>
+<summary>RevisionSuccession.lean — 32 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean`
+
+Imports: `RouteRevision`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RevisionSuccession.funding_preserves_whole_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L34) | 34 |
+| [RevisionSuccession.funded_copy_preserves_actual_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L43) | 43 |
+| [RevisionSuccession.inherited_copy_trace_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L50) | 50 |
+| [RevisionSuccession.target_retention_is_an_actual_paid_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L63) | 63 |
+| [RevisionSuccession.proxy_funds_donor_but_cannot_use](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L76) | 76 |
+| [RevisionSuccession.nonwriters_cannot_fund_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L85) | 85 |
+| [RevisionSuccession.joined_monitor_revision_and_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L91) | 91 |
+| [RevisionSuccession.actual_controlled_ancestry_also_repairs](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L113) | 113 |
+| [RevisionSuccession.late_reversal_blocks_corrected_target](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L127) | 127 |
+| [RevisionSuccession.late_reversal_retains_wrong_proxy_child](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L135) | 135 |
+| [RevisionSuccession.immediate_copy_retains_wrong_payload](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L149) | 149 |
+| [RevisionSuccession.two_probes_pay_template_but_not_seed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L163) | 163 |
+| [RevisionSuccession.extra_buffer_retains_same_proxy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L177) | 177 |
+| [RevisionSuccession.missing_copy_packet_preserves_paid_partial_child](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L188) | 188 |
+| [RevisionSuccession.primary_whole_typed_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L196) | 196 |
+| [RevisionSuccession.kept_target_has_actual_paid_successor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L204) | 204 |
+| [RevisionSuccession.grant14_retains_proxy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L216) | 216 |
+| [RevisionSuccession.grant13_pays_template_but_not_seed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L225) | 225 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RevisionSuccession.donor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L14) (L14)
+- `def` [RevisionSuccession.FundDonor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L17) (L17)
+- `def` [RevisionSuccession.copyStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L22) (L22)
+- `def` [RevisionSuccession.outsideEnergy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L26) (L26)
+- `def` [RevisionSuccession.copyEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L29) (L29)
+- `def` [RevisionSuccession.copied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L31) (L31)
+- `def` [RevisionSuccession.proxyAncestryTarget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L109) (L109)
+- `def` [RevisionSuccession.reversalProbes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L122) (L122)
+- `def` [RevisionSuccession.reversed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L125) (L125)
+- `def` [RevisionSuccession.probes2](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L158) (L158)
+- `def` [RevisionSuccession.writtenPrefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L161) (L161)
+- `def` [RevisionSuccession.bufferedProxy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L173) (L173)
+- `def` [RevisionSuccession.beforeWork](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L185) (L185)
+- `def` [RevisionSuccession.proxyWithGrant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean#L212) (L212)
+
+文本中有 18 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 18 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-39cee25a965f"></a>
+
+<details>
+<summary>RouteRevision.lean — 56 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean`
+
+Imports: `FormedRouteMonitor`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RouteRevision.enabled_list_is_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L125) | 125 |
+| [RouteRevision.run_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L131) | 131 |
+| [RouteRevision.proposals_have_identical_guards](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L136) | 136 |
+| [RouteRevision.paid_read_uses_only_actual_diagnosis](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L139) | 139 |
+| [RouteRevision.read_requests_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L142) | 142 |
+| [RouteRevision.read_ignores_hidden_law](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L150) | 150 |
+| [RouteRevision.swap_preserves_actual_record_and_actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L154) | 154 |
+| [RouteRevision.swap_invalidates_old_evidence](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L159) | 159 |
+| [RouteRevision.binding_break_cancels_swap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L167) | 167 |
+| [RouteRevision.missing_part_blocks_swap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L170) | 170 |
+| [RouteRevision.read_and_swap_do_not_refund](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L173) | 173 |
+| [RouteRevision.step_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L178) | 178 |
+| [RouteRevision.trace_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L217) | 217 |
+| [RouteRevision.step_floor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L233) | 233 |
+| [RouteRevision.step_payload_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L243) | 243 |
+| [RouteRevision.step_probe_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L250) | 250 |
+| [RouteRevision.actual_first_monitor_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L278) | 278 |
+| [RouteRevision.actual_controlled_proxy_boundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L286) | 286 |
+| [RouteRevision.every_proposal_is_paid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L292) | 292 |
+| [RouteRevision.target_three_probes_are_actual](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L298) | 298 |
+| [RouteRevision.proxy_three_probes_are_actual](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L303) | 303 |
+| [RouteRevision.nonwriters_stop_in_partial_probe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L312) | 312 |
+| [RouteRevision.unresolved_first_frame_pays_without_swap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L321) | 321 |
+| [RouteRevision.nonrequesting_read_cannot_swap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L332) | 332 |
+| [RouteRevision.successful_swap_is_single_use](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L336) | 336 |
+| [RouteRevision.trace_floor_payload_and_probe_bounds](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L339) | 339 |
+| [RouteRevision.keep_preserves_actual_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L349) | 349 |
+| [RouteRevision.armed_swap_request_cannot_keep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L355) | 355 |
+| [RouteRevision.unresolved_paid_decision_continues_actual_learner](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L362) | 362 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [RouteRevision.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L12) (L12)
+- `structure` [RouteRevision.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L15) (L15)
+- `def` [RouteRevision.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L31) (L31)
+- `def` [RouteRevision.firstBoundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L34) (L34)
+- `def` [RouteRevision.requests](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L44) (L44)
+- `def` [RouteRevision.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L48) (L48)
+- `def` [RouteRevision.heads](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L51) (L51)
+- `def` [RouteRevision.routeParts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L53) (L53)
+- `def` [RouteRevision.paidMonitor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L56) (L56)
+- `inductive` [RouteRevision.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L59) (L59)
+- `def` [RouteRevision.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L64) (L64)
+- `def` [RouteRevision.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L78) (L78)
+- `def` [RouteRevision.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L103) (L103)
+- `inductive` [RouteRevision.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L104) (L104)
+- `def` [RouteRevision.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L109) (L109)
+- `def` [RouteRevision.allEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L113) (L113)
+- `def` [RouteRevision.replacement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L265) (L265)
+- `def` [RouteRevision.trial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L266) (L266)
+- `def` [RouteRevision.probes3](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L268) (L268)
+- `def` [RouteRevision.ordinaryBoundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L270) (L270)
+- `def` [RouteRevision.proxyBoundary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L272) (L272)
+- `def` [RouteRevision.repaired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L275) (L275)
+- `def` [RouteRevision.tested](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L276) (L276)
+- `def` [RouteRevision.twoWorkPrefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L308) (L308)
+- `def` [RouteRevision.keepDecision](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L358) (L358)
+- `def` [RouteRevision.keptTarget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L359) (L359)
+- `def` [RouteRevision.keptTargetTested](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean#L360) (L360)
+
+文本中有 29 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 29 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-5dd8cb345fbf"></a>
+
+<details>
+<summary>SuccessorLearning.lean — 74 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean`
+
+Imports: `FormedRecipientRoute`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SuccessorLearning.retained_entry_carries_actual_child](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L77) | 77 |
+| [SuccessorLearning.entry_accounts_for_reserved_source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L86) | 86 |
+| [SuccessorLearning.unretained_child_cannot_enter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L100) | 100 |
+| [SuccessorLearning.command_ignores_law_and_funding](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L162) | 162 |
+| [SuccessorLearning.funding_is_transfer_not_expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L165) | 165 |
+| [SuccessorLearning.reversal_preserves_acquired_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L169) | 169 |
+| [SuccessorLearning.paid_write_uses_acquired_record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L175) | 175 |
+| [SuccessorLearning.truthful_record_corrects_only_recipient](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L181) | 181 |
+| [SuccessorLearning.revision_keeps_fixed_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L197) | 197 |
+| [SuccessorLearning.step_preserves_actor_route_and_carrier](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L204) | 204 |
+| [SuccessorLearning.step_preserves_payload_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L216) | 216 |
+| [SuccessorLearning.step_energy_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L231) | 231 |
+| [SuccessorLearning.step_preserves_recipient_floor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L248) | 248 |
+| [SuccessorLearning.trace_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L258) | 258 |
+| [SuccessorLearning.trace_preserves_recipient_floor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L269) | 269 |
+| [SuccessorLearning.trace_preserves_payload_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L275) | 275 |
+| [SuccessorLearning.enabled_list_is_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L302) | 302 |
+| [SuccessorLearning.actual_old_copy_enters_learning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L320) | 320 |
+| [SuccessorLearning.learning_events_are_enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L329) | 329 |
+| [SuccessorLearning.own_consequence_changes_paid_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L331) | 331 |
+| [SuccessorLearning.unchanged_code_blocks_corrected_capture](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L340) | 340 |
+| [SuccessorLearning.frozen_route_ties_under_stable_law](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L346) | 346 |
+| [SuccessorLearning.frozen_route_fails_after_change](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L352) | 352 |
+| [SuccessorLearning.prefix_affordable_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L365) | 365 |
+| [SuccessorLearning.corrective_use_threshold](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L373) | 373 |
+| [SuccessorLearning.revised_copy_threshold](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L380) | 380 |
+| [SuccessorLearning.two_warmups_minimal_for_ten](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L386) | 386 |
+| [SuccessorLearning.unbuffered_actual_stock_cannot_use_correction](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L389) | 389 |
+| [SuccessorLearning.funded_copy_start_preserves_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L410) | 410 |
+| [SuccessorLearning.recopy_reads_childs_current_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L420) | 420 |
+| [SuccessorLearning.revised_grandchild_is_paid_and_productive](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L433) | 433 |
+| [SuccessorLearning.joined_learning_and_recopy_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L440) | 440 |
+| [SuccessorLearning.old_template_clamp_loses_grandchild_return](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L452) | 452 |
+| [SuccessorLearning.complete_local_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L458) | 458 |
+| [SuccessorLearning.join_with_earlier_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L464) | 464 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [SuccessorLearning.Template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L9) (L9)
+- `abbrev` [SuccessorLearning.Route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L10) (L10)
+- `inductive` [SuccessorLearning.Op](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L12) (L12)
+- `inductive` [SuccessorLearning.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L16) (L16)
+- `structure` [SuccessorLearning.Prices](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L20) (L20)
+- `def` [SuccessorLearning.primary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L30) (L30)
+- `def` [SuccessorLearning.cost](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L32) (L32)
+- `def` [SuccessorLearning.before](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L39) (L39)
+- `structure` [SuccessorLearning.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L46) (L46)
+- `def` [SuccessorLearning.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L65) (L65)
+- `def` [SuccessorLearning.enter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L70) (L70)
+- `def` [SuccessorLearning.command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L104) (L104)
+- `def` [SuccessorLearning.outcome](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L109) (L109)
+- `inductive` [SuccessorLearning.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L111) (L111)
+- `def` [SuccessorLearning.specialGuard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L117) (L117)
+- `def` [SuccessorLearning.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L122) (L122)
+- `def` [SuccessorLearning.revised](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L129) (L129)
+- `def` [SuccessorLearning.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L134) (L134)
+- `def` [SuccessorLearning.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L154) (L154)
+- `inductive` [SuccessorLearning.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L157) (L157)
+- `def` [SuccessorLearning.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L281) (L281)
+- `def` [SuccessorLearning.allEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L285) (L285)
+- `def` [SuccessorLearning.trial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L308) (L308)
+- `def` [SuccessorLearning.oldStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L312) (L312)
+- `def` [SuccessorLearning.oldEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L313) (L313)
+- `def` [SuccessorLearning.oldRetained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L314) (L314)
+- `def` [SuccessorLearning.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L317) (L317)
+- `def` [SuccessorLearning.learningEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L324) (L324)
+- `def` [SuccessorLearning.afterWarmup](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L325) (L325)
+- `def` [SuccessorLearning.afterFailure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L326) (L326)
+- `def` [SuccessorLearning.learned](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L327) (L327)
+- `def` [SuccessorLearning.prefixAffordable](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L361) (L361)
+- `def` [SuccessorLearning.failedThenCorrectedStartup](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L371) (L371)
+- `def` [SuccessorLearning.recopyPrefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L378) (L378)
+- `def` [SuccessorLearning.FundDonor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L397) (L397)
+- `def` [SuccessorLearning.copyStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L405) (L405)
+- `def` [SuccessorLearning.grandStart](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L427) (L427)
+- `def` [SuccessorLearning.grandEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L429) (L429)
+- `def` [SuccessorLearning.grandFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean#L430) (L430)
+
+文本中有 35 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 35 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-3d3e3f859742"></a>
+
+<details>
+<summary>FormedRecipientRoute.lean — 69 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean) · [理论 / Theory](../../unified-2026-10-05/RECIPIENT-TRANSMISSION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean`
+
+Imports: `RecipientCorrection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FormedRecipientRoute.action_is_parent_packed_action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L44) | 44 |
+| [FormedRecipientRoute.target_route_uses_actual_receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L47) | 47 |
+| [FormedRecipientRoute.closed_route_leaves_recipient_cell](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L51) | 51 |
+| [FormedRecipientRoute.private_zero_uses_private_zero](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L54) | 54 |
+| [FormedRecipientRoute.frozen_route_retains_payload](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L58) | 58 |
+| [FormedRecipientRoute.revision_preserves_physical_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L61) | 61 |
+| [FormedRecipientRoute.revision_keeps_bounded_payload](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L66) | 66 |
+| [FormedRecipientRoute.formation_choices_have_identical_guards](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L105) | 105 |
+| [FormedRecipientRoute.formation_copies_actual_inherited_bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L108) | 108 |
+| [FormedRecipientRoute.formed_payload_is_bounded](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L112) | 112 |
+| [FormedRecipientRoute.formation_payments_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L116) | 116 |
+| [FormedRecipientRoute.formation_step_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L128) | 128 |
+| [FormedRecipientRoute.insufficient_route_fuel_keeps_common_payment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L151) | 151 |
+| [FormedRecipientRoute.absent_module_cannot_handoff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L208) | 208 |
+| [FormedRecipientRoute.present_module_handoff_preserves_actual_state](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L213) | 213 |
+| [FormedRecipientRoute.command_ignores_hidden_law](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L290) | 290 |
+| [FormedRecipientRoute.inactive_donor_cannot_pay_to_resurrect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L293) | 293 |
+| [FormedRecipientRoute.work_never_repays_actor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L297) | 297 |
+| [FormedRecipientRoute.read_copies_actual_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L300) | 300 |
+| [FormedRecipientRoute.write_moves_record_without_extra_carrier](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L303) | 303 |
+| [FormedRecipientRoute.read_assemble_write_copies_any_route_payload](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L309) | 309 |
+| [FormedRecipientRoute.copying_preserves_bounded_payload](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L312) | 312 |
+| [FormedRecipientRoute.step_retains_donor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L320) | 320 |
+| [FormedRecipientRoute.step_energy_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L325) | 325 |
+| [FormedRecipientRoute.step_material_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L343) | 343 |
+| [FormedRecipientRoute.step_preserves_recipient_floor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L360) | 360 |
+| [FormedRecipientRoute.trace_accounts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L367) | 367 |
+| [FormedRecipientRoute.trace_preserves_recipient_floor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L379) | 379 |
+| [FormedRecipientRoute.recipient_prefix_affordable_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L394) | 394 |
+| [FormedRecipientRoute.enabled_list_is_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L423) | 423 |
+| [FormedRecipientRoute.concrete_copy_and_use_enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L429) | 429 |
+| [FormedRecipientRoute.concrete_template_and_private_tie](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L433) | 433 |
+| [FormedRecipientRoute.faithful_successor_retained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L441) | 441 |
+| [FormedRecipientRoute.proxy_is_copied_but_cannot_be_retained](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L446) | 446 |
+| [FormedRecipientRoute.changed_context_reverses_retention](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L451) | 451 |
+| [FormedRecipientRoute.correctly_seeded_frozen_route_ties](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L455) | 455 |
+| [FormedRecipientRoute.missing_part_leaves_paid_record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L460) | 460 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [FormedRecipientRoute.Route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L19) (L19)
+- `structure` [FormedRecipientRoute.Template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L25) (L25)
+- `def` [FormedRecipientRoute.action](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L30) (L30)
+- `def` [FormedRecipientRoute.channel](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L32) (L32)
+- `def` [FormedRecipientRoute.revise](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L38) (L38)
+- `structure` [FormedRecipientRoute.Formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L73) (L73)
+- `inductive` [FormedRecipientRoute.FormationEvent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L83) (L83)
+- `def` [FormedRecipientRoute.formationEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L87) (L87)
+- `def` [FormedRecipientRoute.formationAdvance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L92) (L92)
+- `def` [FormedRecipientRoute.FormationStep](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L100) (L100)
+- `def` [FormedRecipientRoute.moduleCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L103) (L103)
+- `structure` [FormedRecipientRoute.Prices](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L160) (L160)
+- `inductive` [FormedRecipientRoute.Phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L175) (L175)
+- `structure` [FormedRecipientRoute.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L180) (L180)
+- `def` [FormedRecipientRoute.handoff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L202) (L202)
+- `inductive` [FormedRecipientRoute.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L221) (L221)
+- `def` [FormedRecipientRoute.command](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L225) (L225)
+- `def` [FormedRecipientRoute.outcome](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L230) (L230)
+- `def` [FormedRecipientRoute.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L232) (L232)
+- `def` [FormedRecipientRoute.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L247) (L247)
+- `def` [FormedRecipientRoute.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L276) (L276)
+- `inductive` [FormedRecipientRoute.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L279) (L279)
+- `def` [FormedRecipientRoute.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L284) (L284)
+- `def` [FormedRecipientRoute.carrierCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L287) (L287)
+- `def` [FormedRecipientRoute.routingCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L288) (L288)
+- `def` [FormedRecipientRoute.copyPrice](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L386) (L386)
+- `def` [FormedRecipientRoute.paidRecipientPrefix](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L388) (L388)
+- `def` [FormedRecipientRoute.primary](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L399) (L399)
+- `def` [FormedRecipientRoute.start](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L401) (L401)
+- `def` [FormedRecipientRoute.prefixEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L404) (L404)
+- `def` [FormedRecipientRoute.run](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L406) (L406)
+- `def` [FormedRecipientRoute.allEnabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean#L410) (L410)
+
+文本中有 37 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 37 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-a8de4892aa41"></a>
+
+<details>
+<summary>RenewalLiquidity.lean — 53 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md)
+
+`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecipientRenewal.required_nonnegative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L20) | 20 |
+| [RecipientRenewal.feasible_iff_required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L23) | 23 |
+| [RecipientRenewal.required_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L31) | 31 |
+| [RecipientRenewal.feasible_append](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L42) | 42 |
+| [RecipientRenewal.final_surplus_not_prefix_solvency](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L48) | 48 |
+| [RecipientRenewal.correct_probe_required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L59) | 59 |
+| [RecipientRenewal.correct_probe_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L60) | 60 |
+| [RecipientRenewal.failed_probe_required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L61) | 61 |
+| [RecipientRenewal.failed_probe_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L62) | 62 |
+| [RecipientRenewal.corrected_use_required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L63) | 63 |
+| [RecipientRenewal.correct_copy_required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L64) | 64 |
+| [RecipientRenewal.correct_copy_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L65) | 65 |
+| [RecipientRenewal.correction_copy_required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L66) | 66 |
+| [RecipientRenewal.correction_copy_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L67) | 67 |
+| [RecipientRenewal.warmups_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L73) | 73 |
+| [RecipientRenewal.warmups_required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L80) | 80 |
+| [RecipientRenewal.block_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L93) | 93 |
+| [RecipientRenewal.block_feasible_iff_guard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L97) | 97 |
+| [RecipientRenewal.block_endpoint](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L108) | 108 |
+| [RecipientRenewal.two_warmup_guard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L113) | 113 |
+| [RecipientRenewal.one_warmup_guard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L117) | 117 |
+| [RecipientRenewal.zero_warmup_guard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L121) | 121 |
+| [RecipientRenewal.two_warmup_advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L124) | 124 |
+| [RecipientRenewal.two_warmup_invariant](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L128) | 128 |
+| [RecipientRenewal.schedule_feasible_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L141) | 141 |
+| [RecipientRenewal.arbitrarily_many_finite_two_warmup_blocks](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L153) | 153 |
+| [RecipientRenewal.two_warmup_reserve](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L167) | 167 |
+| [RecipientRenewal.one_warmup_reserve](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L175) | 175 |
+| [RecipientRenewal.zero_warmup_reserve](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L183) | 183 |
+| [RecipientRenewal.one_warmup_next_block_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L191) | 191 |
+| [RecipientRenewal.zero_warmup_next_block_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L196) | 196 |
+| [RecipientRenewal.one_warmup_full_schedule_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L201) | 201 |
+| [RecipientRenewal.zero_warmup_full_schedule_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L213) | 213 |
+| [RecipientRenewal.one_warmup_full_event_schedule_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L225) | 225 |
+| [RecipientRenewal.zero_warmup_full_event_schedule_exact](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L230) | 230 |
+| [RecipientRenewal.primary_two_warmup_source_account](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L235) | 235 |
+| [RecipientRenewal.false_large_warmup_bootstrap](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L238) | 238 |
+| [RecipientRenewal.primary_one_warmup_cannot_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L241) | 241 |
+| [RecipientRenewal.primary_two_warmup_can_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L242) | 242 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RecipientRenewal.required](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L12) (L12)
+- `def` [RecipientRenewal.feasible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L16) (L16)
+- `def` [RecipientRenewal.correctProbe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L52) (L52)
+- `def` [RecipientRenewal.failedProbe](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L53) (L53)
+- `def` [RecipientRenewal.correctCopy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L56) (L56)
+- `def` [RecipientRenewal.correctionAndCopy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L57) (L57)
+- `def` [RecipientRenewal.warmups](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L69) (L69)
+- `def` [RecipientRenewal.block](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L88) (L88)
+- `def` [RecipientRenewal.guard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L90) (L90)
+- `def` [RecipientRenewal.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L106) (L106)
+- `def` [RecipientRenewal.schedule](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L133) (L133)
+- `def` [RecipientRenewal.scheduleGuard](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L137) (L137)
+- `def` [RecipientRenewal.repeated](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L149) (L149)
+- `def` [RecipientRenewal.reserveAfter](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean#L163) (L163)
+
+文本中有 39 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 39 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>

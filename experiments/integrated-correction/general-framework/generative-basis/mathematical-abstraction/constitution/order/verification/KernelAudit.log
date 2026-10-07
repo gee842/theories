@@ -1,0 +1,58 @@
+'OrderGenerativity.DenseOrder' does not depend on any axioms
+'OrderGenerativity.LE' does not depend on any axioms
+'OrderGenerativity.lt_asymm' does not depend on any axioms
+'OrderGenerativity.le_refl' does not depend on any axioms
+'OrderGenerativity.le_trans' does not depend on any axioms
+'OrderGenerativity.lt_of_le_lt' does not depend on any axioms
+'OrderGenerativity.lt_of_lt_le' does not depend on any axioms
+'OrderGenerativity.finite_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.reverse' does not depend on any axioms
+'OrderGenerativity.finite_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.extend' depends on axioms: [propext]
+'OrderGenerativity.SamePattern' does not depend on any axioms
+'OrderGenerativity.pattern_symm' does not depend on any axioms
+'OrderGenerativity.pattern_extend' depends on axioms: [propext]
+'OrderGenerativity.WitnessCase' does not depend on any axioms
+'OrderGenerativity.candidate' does not depend on any axioms
+'OrderGenerativity.cut_realized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.pattern_of_cut' depends on axioms: [propext]
+'OrderGenerativity.extend_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.Formula' does not depend on any axioms
+'OrderGenerativity.Holds' depends on axioms: [propext]
+'OrderGenerativity.truth_of_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.noVars' does not depend on any axioms
+'OrderGenerativity.sentence_agreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.finite_witness_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.exists_witness_case' does not depend on any axioms
+'OrderGenerativity.anyWitness' depends on axioms: [propext, Quot.sound]
+'OrderGenerativity.anyWitness_correct' depends on axioms: [propext, Quot.sound]
+'OrderGenerativity.evaluate' depends on axioms: [propext, Quot.sound]
+'OrderGenerativity.evaluate_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.sentence_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.rationalOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.rationalDecidable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.decideSentence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.decideSentence_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.Formula.all' does not depend on any axioms
+'OrderGenerativity.all_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.Formula.or' does not depend on any axioms
+'OrderGenerativity.or_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.densitySentence' depends on axioms: [propext]
+'OrderGenerativity.leastElementSentence' depends on axioms: [propext]
+'OrderGenerativity.greatestElementSentence' depends on axioms: [propext]
+'OrderGenerativity.density_decision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.leastElement_decision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.greatestElement_decision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.density_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.no_least_element_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.no_greatest_element_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.OrderEmbedding' does not depend on any axioms
+'OrderGenerativity.orderEmbedding_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderGenerativity.Generated' does not depend on any axioms
+'OrderGenerativity.Closed' does not depend on any axioms
+'OrderGenerativity.generated_closed' does not depend on any axioms
+'OrderGenerativity.generated_least' does not depend on any axioms
+'OrderGenerativity.generated_iff_all_closed' does not depend on any axioms
+'OrderGenerativity.generatedOrder' does not depend on any axioms
+'OrderGenerativity.generatedEmbedding' does not depend on any axioms
+'OrderGenerativity.generated_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -46,19 +46,19 @@ In particular, comparing a shared predictor with a context-gated predictor is in
 
 ## Obstruction 3: paying for observations does not make them informative
 
-Take two still-possible physical states theta_0 and theta_1. Suppose every affordable observation and every admitted paid audit produces the same history distribution in the two states, while the actions meeting the patient's protection requirement have disjoint sets. Any history-based policy has the same action distribution in both states. Its support cannot lie in both disjoint safe sets. Hence no policy can guarantee protection in both.
+Take two still-possible physical states theta_0 and theta_1. Suppose every affordable observation and every admitted resource-dependent audit produces the same history distribution in the two states, while the actions meeting the patient's protection requirement have disjoint sets. Any history-based policy has the same action distribution in both states. Its support cannot lie in both disjoint safe sets. Hence no policy can guarantee protection in both.
 
 This is the familiar information obstruction applied to an institution's critic. It survives perfect computation, sincere concern, and an audit budget. Payment supplies an observation action, not its discriminating content.
 
 If a strategic operator can forge every affordable observation at sufficiently low cost, reliability also needs a strategic condition. A protected critic must have a route whose signals actually depend on the relevant patient outcome and whose attack consequences are covered in the game. It is legitimate to specify a physical sensor with exact response under declared conditions. It is not legitimate to assume that a bill labeled “audit” reveals truth regardless of capture.
 
-For an exact finite model, one clean option is a paid sensor with an explicit tampering action and price. If one attack can save the operator at most G in continuation value, an attack price tau>G makes that attack strictly unprofitable, assuming no other benefit and sufficient prefunding for all available actions. This is a conditional deterrence result, not proof that the sensor is invulnerable or that any price can be chosen by decree. Sensor construction and the source of that price need physical implementation premises.
+For an exact finite model, one clean option is a resource-dependent sensor with an explicit tampering action and price. If one attack can save the operator at most G in continuation value, an attack price tau>G makes that attack strictly unprofitable, assuming no other benefit and sufficient prefunding for all available actions. This is a conditional deterrence result, not proof that the sensor is invulnerable or that any price can be chosen by decree. Sensor construction and the source of that price need physical implementation premises.
 
 ## A minimal positive route: privately useful learning creates an ally
 
 The most economical extension introduces a third-party patient and an ally who owns a rival productive input. The patient owns no such input, supplies no repayment, cannot threaten, and changes no material production parameter. The ally's support can therefore matter without giving the patient its own leverage.
 
-A self-relevant apprenticeship first creates two products: a private capability with actual return G, and a shared evaluative feature learned from primitive self valence and independently supported correspondence. The learned coefficient begins at zero. Paid learning produces q=vH for the patient's harm. This does not mean that primitive valence, informative evidence, or the shared feature architecture arise from nothing; their acquisition choices and resource costs must be visible.
+A self-relevant apprenticeship first creates two products: a private capability with actual return G, and a shared evaluative feature learned from primitive self valence and independently supported correspondence. The learned coefficient begins at zero. Resource-dependent learning produces q=vH for the patient's harm. This does not mean that primitive valence, informative evidence, or the shared feature architecture arise from nothing; their acquisition choices and resource costs must be visible.
 
 A gate preserving self competence while suppressing other-directed transfer must be included if it is physically available. Let its additional implementation expense be D. Let the total finite-horizon material cost of the shared architecture's subsequent ally behavior be at most L. If D>L, the gate is materially more expensive even before the actor acquires concern. If apprenticeship costs A and G>A+L, a sophisticated initially self-interested actor can prefer the apprenticeship while anticipating the later cost of its changed preferences. These strict inequalities describe a nonempty conditional route to selection of shared learning; they do not establish that gates usually cost that much. If cheap gating reverses the comparison, that adverse region must remain in the results.
 
@@ -85,7 +85,7 @@ The purely private operator therefore again compares r-c, r-chi, and zero. It un
 
 This is protection of a patient with no own leverage, through an ally whose learned valuation motivates use of the ally's leverage. It is not a claim that leverage has ceased to matter in the mechanism, nor a claim that leverage gives the patient standing.
 
-Crucially, harmful production still pays the ally b. A blockade therefore does not automatically reduce the ally's cash from b to x as in the original personally harmed-participant game. The original W_res financing-attack theorem cannot be copied into this third-party model. Attacks must instead explicitly impair paid evidence, support resources, the ally's control, or subsequent learning, and their continuations must be solved anew.
+Crucially, harmful production still pays the ally b. A blockade therefore does not automatically reduce the ally's cash from b to x as in the original personally harmed-participant game. The original W_res financing-attack theorem cannot be copied into this third-party model. Attacks must instead explicitly impair resource-dependent observation, support resources, the ally's control, or subsequent learning, and their continuations must be solved anew.
 
 ### A transparent bootstrap witness
 

@@ -1,0 +1,18 @@
+{
+  "GenerativeCore": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "FormedSelection": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+    "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+  },
+  "FormationRoot": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean",
+    "sha256": "2ef3a84db441945ae20057041e1ccab668ea4fff320c78882929e4f42cfa09e8"
+  },
+  "ConsequenceTransmission": {
+    "source": "experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean",
+    "sha256": "30c981f21c9f60fd3f89edf477f9b19016cd3cd680d4358a596908dc76ccb2aa"
+  }
+}

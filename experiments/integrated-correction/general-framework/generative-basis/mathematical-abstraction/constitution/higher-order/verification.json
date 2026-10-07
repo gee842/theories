@@ -1,0 +1,350 @@
+{
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_isolated_olean_build": true,
+  "frozen_source_build": true,
+  "sources": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean": {
+      "sha256": "8225bc273680ce355f3321516c26fa3e2bf6df1704da7bb5e193c8bec98daf8e",
+      "named_declarations": 57,
+      "theorems": 25
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean": {
+      "sha256": "99355e45e58616fa37dd8d137f35055ffa1f485c77c1a66bb971a9f981aa2a46",
+      "named_declarations": 40,
+      "theorems": 18
+    }
+  },
+  "inherited_sources_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean": "d303192f92d8a1cd9366c130cc6162965e6bd24c543c3109c378a0fcfe5ebea8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean": "c5277128c5cb553e3169afd21e508ef76fe5476b72b43dde25cf11a202f784a7",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionExamples.lean": "0a07c4fc4a1c610c6fed4c0297afecfcea128bd2521efadd8ff409bb436480dd"
+  },
+  "inherited_receipt_sha256": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4",
+  "theorems_checked": 43,
+  "named_declarations_audited": 97,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_holes": false,
+  "audits": {
+    "SecondOrderReconstruction.RelVar": [],
+    "SecondOrderReconstruction.Predicate": [],
+    "SecondOrderReconstruction.RelationIdeal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.PredicateEnv": [],
+    "SecondOrderReconstruction.IdealEnv": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.extendIndividual": [
+      "propext"
+    ],
+    "SecondOrderReconstruction.extendPredicate": [],
+    "SecondOrderReconstruction.extendIdeal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.encodeEnv": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.decodeEnv": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.EnvsRelated": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.related_encode": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.related_decode": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.decode_encode": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.encode_decode": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.related_extend": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.related_relation_eq": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.Formula": [],
+    "SecondOrderReconstruction.PredicateDomain": [],
+    "SecondOrderReconstruction.IdealDomain": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.PredicateSat": [
+      "propext"
+    ],
+    "SecondOrderReconstruction.IdealSat": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.DomainsRelated": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.satisfaction_transport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.fullPredicates": [],
+    "SecondOrderReconstruction.fullIdeals": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_domains_related": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.FullPredicateSat": [
+      "propext"
+    ],
+    "SecondOrderReconstruction.FullIdealSat": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_satisfaction_transport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_encode_truth": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_decode_truth": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.representedIdeals": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.represented_domains_related": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.selected_encode_truth": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.AllPredicates": [],
+    "SecondOrderReconstruction.AllIdeals": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.corresponding_fullness": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.Formula.allIndividual": [],
+    "SecondOrderReconstruction.Formula.allRelation": [],
+    "SecondOrderReconstruction.predicate_allIndividual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.ideal_allIndividual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.predicate_allRelation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.ideal_allRelation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_relation_exists": [
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_relation_forall": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.emptyIndividuals": [],
+    "SecondOrderReconstruction.emptyPredicates": [],
+    "SecondOrderReconstruction.emptyIdeals": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_sentence_reconstruction": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.finitePredicates": [],
+    "SecondOrderReconstruction.totalUnarySentence": [
+      "propext"
+    ],
+    "SecondOrderReconstruction.full_totalUnary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.unaryBound": [
+      "propext"
+    ],
+    "SecondOrderReconstruction.unary_member_le": [
+      "propext"
+    ],
+    "SecondOrderReconstruction.finite_rejects_totalUnary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SecondOrderReconstruction.finite_not_full": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.BiMap": [],
+    "TypedTruth.forward_injective": [],
+    "TypedTruth.forward_surjective": [],
+    "TypedTruth.identity": [],
+    "TypedTruth.arrowMap": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.predicateMap": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.predicateMap_membership": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.Ty": [],
+    "TypedTruth.Direct": [],
+    "TypedTruth.Completed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.typeMap": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.type_forward_backward": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.type_backward_forward": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.type_membership": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.Var": [],
+    "TypedTruth.Env": [],
+    "TypedTruth.extend": [],
+    "TypedTruth.mapEnv": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.mapEnv_extend": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.Term": [],
+    "TypedTruth.directEval": [],
+    "TypedTruth.completedEval": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.term_transport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.Formula": [],
+    "TypedTruth.DirectHolds": [],
+    "TypedTruth.CompletedHolds": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.formula_transport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.emptyEnv": [],
+    "TypedTruth.emptyEnv_map": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.sentence_transport": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.full_predicate_completion": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.formula_comprehension": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.Formula.all": [],
+    "TypedTruth.direct_all": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.completed_all": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.etaSentence": [],
+    "TypedTruth.eta_direct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.eta_completed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TypedTruth.higherEtaSentence": [],
+    "TypedTruth.higher_eta_completed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "supporting_files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/check.py": "1c57ead7ffec3ad8e831cc6227d1aa6b3e29b78b121e02d0d945a99f30c9050c",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification/KernelAudit.lean": "2211c4bc48ecf404df667bdb7e6e197450c7e0a8cbc282a98f5b1d586aa6ef5b",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification/IdealWarrant.log": "244fb59afd4635017cbaa750b4cd30ca2c77845228d10b066120917ab85168e4",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification/CompletionRole.log": "7fba21e4d19cdb4a235148a3e7a4c754697f40d102ae3633364d882efade4550",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification/CompletionExamples.log": "a2caee8436ec4d83708c272e5333c24c8d1d76187df484c86bdeb8096d8656d0",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification/SecondOrder.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification/TypedTruth.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/verification/KernelAudit.log": "3953c0b8f52b2a4c7906e741fb29a4cdc7a4ae7f703d9ef897ca308201f584c9"
+  },
+  "scope": "New named declarations only in headline counts. Inherited completion dependencies are freshly compiled from receipt-matching frozen bytes. Conditional semantic reconstruction; no effective truth algorithm or ultimate root justification inferred."
+}

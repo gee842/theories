@@ -1,0 +1,75 @@
+'FormativeCapacity.Tree' does not depend on any axioms
+'FormativeCapacity.parts' does not depend on any axioms
+'FormativeCapacity.depth' does not depend on any axioms
+'FormativeCapacity.socketAddress' does not depend on any axioms
+'FormativeCapacity.live' does not depend on any axioms
+'FormativeCapacity.grow' does not depend on any axioms
+'FormativeCapacity.close' does not depend on any axioms
+'FormativeCapacity.spine' does not depend on any axioms
+'FormativeCapacity.grow_parts' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.close_parts' depends on axioms: [propext]
+'FormativeCapacity.close_has_no_socket' depends on axioms: [propext]
+'FormativeCapacity.grow_socket_address' depends on axioms: [propext]
+'FormativeCapacity.grow_live' depends on axioms: [propext]
+'FormativeCapacity.spine_grows' depends on axioms: [propext]
+'FormativeCapacity.spine_depth' depends on axioms: [propext]
+'FormativeCapacity.spine_socket_address' depends on axioms: [propext]
+'FormativeCapacity.spine_closed_address' depends on axioms: [propext]
+'FormativeCapacity.Phase' does not depend on any axioms
+'FormativeCapacity.State' does not depend on any axioms
+'FormativeCapacity.Event' does not depend on any axioms
+'FormativeCapacity.Feed' does not depend on any axioms
+'FormativeCapacity.initial' does not depend on any axioms
+'FormativeCapacity.advance' does not depend on any axioms
+'FormativeCapacity.Enabled' does not depend on any axioms
+'FormativeCapacity.enabledDecidable' does not depend on any axioms
+'FormativeCapacity.Step' does not depend on any axioms
+'FormativeCapacity.process' does not depend on any axioms
+'FormativeCapacity.children' does not depend on any axioms
+'FormativeCapacity.finite_branching' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.material' does not depend on any axioms
+'FormativeCapacity.inputLots' depends on axioms: [propext]
+'FormativeCapacity.workSpent' depends on axioms: [propext]
+'FormativeCapacity.total' does not depend on any axioms
+'FormativeCapacity.step_accounts' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.trace_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormativeCapacity.build_reconstructs_next_interface' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.no_socket_no_capture' depends on axioms: [propext]
+'FormativeCapacity.closed_step_spends' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.InfiniteFrom' does not depend on any axioms
+'FormativeCapacity.closed_no_infinite' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.infinite_never_commissions_closed' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.one_shot_infinite_only_gathers' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.constantFeed' does not depend on any axioms
+'FormativeCapacity.gathered' does not depend on any axioms
+'FormativeCapacity.gather_step' depends on axioms: [propext]
+'FormativeCapacity.gatherWord' does not depend on any axioms
+'FormativeCapacity.gather_trace' depends on axioms: [propext]
+'FormativeCapacity.batchState' does not depend on any axioms
+'FormativeCapacity.batch_commission' depends on axioms: [propext]
+'FormativeCapacity.batch_build' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.batch_builds' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.batch_terminal' depends on axioms: [propext]
+'FormativeCapacity.arbitrary_finite_terminal_depth' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.milestone' does not depend on any axioms
+'FormativeCapacity.charged' does not depend on any axioms
+'FormativeCapacity.open_commission' does not depend on any axioms
+'FormativeCapacity.cycle_capture' depends on axioms: [propext]
+'FormativeCapacity.cycle_build' depends on axioms: [propext]
+'FormativeCapacity.nextFrame' does not depend on any axioms
+'FormativeCapacity.frame' does not depend on any axioms
+'FormativeCapacity.two_frames' does not depend on any axioms
+'FormativeCapacity.even_frame' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.growthStates' does not depend on any axioms
+'FormativeCapacity.growthEvents' does not depend on any axioms
+'FormativeCapacity.growth_lawful' depends on axioms: [propext]
+'FormativeCapacity.fullStates' does not depend on any axioms
+'FormativeCapacity.fullEvents' does not depend on any axioms
+'FormativeCapacity.continuing_formation_run' depends on axioms: [propext]
+'FormativeCapacity.actual_growth_milestones' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.completed_formations_recur' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.actual_depth_unbounded' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.infinite_gathering_without_formation' depends on axioms: [propext]
+'FormativeCapacity.finiteFeed' does not depend on any axioms
+'FormativeCapacity.finite_feed_cursor_bound' depends on axioms: [propext, Quot.sound]
+'FormativeCapacity.finite_feed_trace_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

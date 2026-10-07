@@ -1,0 +1,20 @@
+'Generative.PurposeCorrection.guarded_trace_underlying' does not depend on any axioms
+'Generative.PurposeCorrection.guarded_trace_terminal' does not depend on any axioms
+'Generative.PurposeCorrection.contract_trace_underlying' does not depend on any axioms
+'Generative.PurposeCorrection.terminal_is_viable' does not depend on any axioms
+'Generative.PurposeCorrection.viable_after_guarded_prefix' does not depend on any axioms
+'Generative.PurposeCorrection.contract_append_iff' does not depend on any axioms
+'Generative.PurposeCorrection.viable_has_condition' does not depend on any axioms
+'Generative.PurposeCorrection.productive_trace_guarded' does not depend on any axioms
+'Generative.PurposeCorrection.productive_trace_terminal_viable' does not depend on any axioms
+'Generative.PurposeCorrection.guarded_trace_to_viable_is_productive' does not depend on any axioms
+'Generative.PurposeCorrection.productive_trace_exact' does not depend on any axioms
+'Generative.PurposeCorrection.productive_contract_exact' does not depend on any axioms
+'Generative.PurposeCorrection.productive_restriction_largest' does not depend on any axioms
+'Generative.PurposeCorrection.contract_extension' does not depend on any axioms
+'Generative.PurposeCorrection.viable_extension' does not depend on any axioms
+'Generative.PurposeCorrection.no_restriction_creates_completion' does not depend on any axioms
+'Generative.PurposeCorrection.productive_capacity_extension' does not depend on any axioms
+'Generative.PurposeCorrection.guarded_occurrence_conditions' depends on axioms: [propext]
+'Generative.PurposeCorrection.earlier_violation_survives_suffix' depends on axioms: [propext]
+'Generative.PurposeCorrection.actual_violation_not_erased' depends on axioms: [propext]

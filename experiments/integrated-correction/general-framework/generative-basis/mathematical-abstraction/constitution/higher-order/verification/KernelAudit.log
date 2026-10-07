@@ -1,0 +1,97 @@
+'SecondOrderReconstruction.RelVar' does not depend on any axioms
+'SecondOrderReconstruction.Predicate' does not depend on any axioms
+'SecondOrderReconstruction.RelationIdeal' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.PredicateEnv' does not depend on any axioms
+'SecondOrderReconstruction.IdealEnv' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.extendIndividual' depends on axioms: [propext]
+'SecondOrderReconstruction.extendPredicate' does not depend on any axioms
+'SecondOrderReconstruction.extendIdeal' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.encodeEnv' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.decodeEnv' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.EnvsRelated' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.related_encode' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.related_decode' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.decode_encode' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.encode_decode' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.related_extend' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.related_relation_eq' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.Formula' does not depend on any axioms
+'SecondOrderReconstruction.PredicateDomain' does not depend on any axioms
+'SecondOrderReconstruction.IdealDomain' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.PredicateSat' depends on axioms: [propext]
+'SecondOrderReconstruction.IdealSat' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.DomainsRelated' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.satisfaction_transport' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.fullPredicates' does not depend on any axioms
+'SecondOrderReconstruction.fullIdeals' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.full_domains_related' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.FullPredicateSat' depends on axioms: [propext]
+'SecondOrderReconstruction.FullIdealSat' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.full_satisfaction_transport' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.full_encode_truth' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.full_decode_truth' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.representedIdeals' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.represented_domains_related' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.selected_encode_truth' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.AllPredicates' does not depend on any axioms
+'SecondOrderReconstruction.AllIdeals' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.corresponding_fullness' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.Formula.allIndividual' does not depend on any axioms
+'SecondOrderReconstruction.Formula.allRelation' does not depend on any axioms
+'SecondOrderReconstruction.predicate_allIndividual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SecondOrderReconstruction.ideal_allIndividual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SecondOrderReconstruction.predicate_allRelation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SecondOrderReconstruction.ideal_allRelation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SecondOrderReconstruction.full_relation_exists' depends on axioms: [propext]
+'SecondOrderReconstruction.full_relation_forall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SecondOrderReconstruction.emptyIndividuals' does not depend on any axioms
+'SecondOrderReconstruction.emptyPredicates' does not depend on any axioms
+'SecondOrderReconstruction.emptyIdeals' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.full_sentence_reconstruction' depends on axioms: [propext, Quot.sound]
+'SecondOrderReconstruction.finitePredicates' does not depend on any axioms
+'SecondOrderReconstruction.totalUnarySentence' depends on axioms: [propext]
+'SecondOrderReconstruction.full_totalUnary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SecondOrderReconstruction.unaryBound' depends on axioms: [propext]
+'SecondOrderReconstruction.unary_member_le' depends on axioms: [propext]
+'SecondOrderReconstruction.finite_rejects_totalUnary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SecondOrderReconstruction.finite_not_full' depends on axioms: [propext, Quot.sound]
+'TypedTruth.BiMap' does not depend on any axioms
+'TypedTruth.forward_injective' does not depend on any axioms
+'TypedTruth.forward_surjective' does not depend on any axioms
+'TypedTruth.identity' does not depend on any axioms
+'TypedTruth.arrowMap' depends on axioms: [propext, Quot.sound]
+'TypedTruth.predicateMap' depends on axioms: [propext, Quot.sound]
+'TypedTruth.predicateMap_membership' depends on axioms: [propext, Quot.sound]
+'TypedTruth.Ty' does not depend on any axioms
+'TypedTruth.Direct' does not depend on any axioms
+'TypedTruth.Completed' depends on axioms: [propext, Quot.sound]
+'TypedTruth.typeMap' depends on axioms: [propext, Quot.sound]
+'TypedTruth.type_forward_backward' depends on axioms: [propext, Quot.sound]
+'TypedTruth.type_backward_forward' depends on axioms: [propext, Quot.sound]
+'TypedTruth.type_membership' depends on axioms: [propext, Quot.sound]
+'TypedTruth.Var' does not depend on any axioms
+'TypedTruth.Env' does not depend on any axioms
+'TypedTruth.extend' does not depend on any axioms
+'TypedTruth.mapEnv' depends on axioms: [propext, Quot.sound]
+'TypedTruth.mapEnv_extend' depends on axioms: [propext, Quot.sound]
+'TypedTruth.Term' does not depend on any axioms
+'TypedTruth.directEval' does not depend on any axioms
+'TypedTruth.completedEval' depends on axioms: [propext, Quot.sound]
+'TypedTruth.term_transport' depends on axioms: [propext, Quot.sound]
+'TypedTruth.Formula' does not depend on any axioms
+'TypedTruth.DirectHolds' does not depend on any axioms
+'TypedTruth.CompletedHolds' depends on axioms: [propext, Quot.sound]
+'TypedTruth.formula_transport' depends on axioms: [propext, Quot.sound]
+'TypedTruth.emptyEnv' does not depend on any axioms
+'TypedTruth.emptyEnv_map' depends on axioms: [propext, Quot.sound]
+'TypedTruth.sentence_transport' depends on axioms: [propext, Quot.sound]
+'TypedTruth.full_predicate_completion' depends on axioms: [propext, Quot.sound]
+'TypedTruth.formula_comprehension' depends on axioms: [propext, Quot.sound]
+'TypedTruth.Formula.all' does not depend on any axioms
+'TypedTruth.direct_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedTruth.completed_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedTruth.etaSentence' does not depend on any axioms
+'TypedTruth.eta_direct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedTruth.eta_completed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedTruth.higherEtaSentence' does not depend on any axioms
+'TypedTruth.higher_eta_completed' depends on axioms: [propext, Classical.choice, Quot.sound]

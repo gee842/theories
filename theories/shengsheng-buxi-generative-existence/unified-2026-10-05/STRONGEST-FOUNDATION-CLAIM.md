@@ -4,6 +4,8 @@
 
 ## The target
 
+**Scope clarification, 7 October 2026:** this document preserves an AI-authored stronger candidate, including positive practical favor without a prior role. [Ren's universal-intelligence objective](UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions) does not prescribe that particular consequence in advance. A universal account must justify its common ground and differentiated practical significance, including any legitimate exclusions; it cannot obtain universality merely by restricting its domain. The stranger-response conjecture below remains live and unproved. Its failure or revision would require reassessing this candidate, not automatically abandoning universal meta-ethics or announcing that another account has succeeded.
+
 **Seek a minimal generative account that explains how organization, significance, understanding and revisable agency arise, and establishes why the actual goods and harms of differentiated beings give capable actors reasons that do not depend on those actors already wanting to care. Derive the demands of wisdom from those grounds together with the conditions of adequate understanding and effective action. Show which parts every adequate rival must preserve, whatever its vocabulary.**
 
 **目标：寻求一个尽可能小而充分的生成性根基，说明组织、意义、理解与可修正的行动能力如何形成，并论证不同生命与主体的真实好坏，何以能向有相应行动能力者提供不依赖其既有意愿的理由；再从这些理由及理解、行动的实际条件中，推导智慧的要求，并说明任何充分的替代理论必须保留哪些内容。**

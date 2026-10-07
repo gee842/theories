@@ -32,7 +32,7 @@ The [earlier private-adoption comparison](CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIE
 
 | Case | What adoption may constitute | What it does not establish by itself |
 |---|---|---|
-| Choosing a private project | A legitimate agent-specific commitment or authorship interest, if the proposed power exists | That no consideration concerning a beneficiary could favor the choice beforehand |
+| Choosing a private project | A legitimate agent-specific commitment or self-direction interest, if the proposed power exists | That no consideration concerning a beneficiary could favor the choice beforehand |
 | Creating a shared practice or relationship | New relational goods, expectations and possibly responsibilities | That reasons based on an already existing adverse episode have exactly the same creation condition |
 | Giving a valid promise or accepting entrusted care | A new claim, responsibility or authority relation | That the promise created every reason for the promised helpful act |
 | Privately adopting relief of an existing stranger's burden | A special commitment concerning independently existing patient stakes | That its special ground exhausts all moral grounds concerning the relief |
@@ -71,7 +71,7 @@ These are uses of the source note, which this reviewer read in full. Its primary
 
 ## 6. Adjudication and the remaining premise
 
-The direct candidate retains affirmative warrant in the clean case. The actual relief is a good explanation of what makes the prospective act morally worth considering, before one has chosen to care. Legitimate self-authorship explains why an actor may acquire special commitments and why its life cannot be treated as an unlimited service resource. It does not yet explain why that patient-ground contributes exactly nothing until selected. The case for adding a commitment reason is stronger than the current case for excluding every baseline reason.
+The direct candidate retains affirmative warrant in the clean case. The actual relief is a good explanation of what makes the prospective act morally worth considering, before one has chosen to care. Legitimate self-direction explains why an actor may acquire special commitments and why its life cannot be treated as an unlimited service resource. It does not yet explain why that patient-ground contributes exactly nothing until selected. The case for adding a commitment reason is stronger than the current case for excluding every baseline reason.
 
 This is a defended comparative judgment, not a proof that the authored-purpose account is impossible. A stronger exclusion account would justify a normative jurisdiction over positive *moral address*, distinguish it from permission over conduct, and explain why that jurisdiction covers the antecedent patient's relief while retaining its own given constraints. A stronger direct account would explain why the patient-ground belongs among given reasons under this eligible action relation; it cannot establish this merely by finding given reasons elsewhere or by calling the alleged relation constitutive.
 

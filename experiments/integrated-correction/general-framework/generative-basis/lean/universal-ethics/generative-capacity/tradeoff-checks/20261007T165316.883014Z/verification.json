@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "utc": "20261007T165316.883014Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "tradeoff-checks/20261007T165316.883014Z",
+  "source_sha256": {
+    "GenerativeTradeoff": "0d038dd797886d58fe490ed2795f8c8cdba9d159ca56509f934eb60969242995"
+  },
+  "checker_sha256": {
+    "check_tradeoff.py": "f4b47861d4de61a497a5a79deca64e222d668f9c0e96dc0affc144e2ed1378aa",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Descriptive audit of target-relative loss necessity, full represented interruption history and candidate truth retention; no ethical priority, physical implementation or actual observation policy is proved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeTradeoff",
+      "theorems": 11,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "GenerativeTradeoff.Problem"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.Successful"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.LosslessSuccess"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.NecessaryLoss"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.Certain"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.UniformLossless"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.retained_actuality_receives_certified_necessity"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.refinement_preserves_certified_necessity"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.actual_alternative_refutes_necessity"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.uniform_response_supplies_each_route"
+        },
+        {
+          "kind": "inductive",
+          "name": "GenerativeTradeoff.SupportCase"
+        },
+        {
+          "kind": "inductive",
+          "name": "GenerativeTradeoff.Response"
+        },
+        {
+          "kind": "inductive",
+          "name": "GenerativeTradeoff.Stage"
+        },
+        {
+          "kind": "structure",
+          "name": "GenerativeTradeoff.History"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.maintained"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.restored"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.endpoint"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.interruption"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.handoverProblem"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.unresolvedSide"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeTradeoff.onlyNoHandover"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.restoration_matches_endpoint_but_retains_interruption"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.absent_handover_makes_interruption_necessary"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.available_handovers_are_actual_lossless_alternatives"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.truthful_identification_can_resolve_uncertain_necessity"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.deleting_actual_circumstance_fabricates_necessity"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.pointwise_routes_do_not_supply_uniform_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeTradeoff.conditional_necessity_allows_lossless_nonattainment"
+        }
+      ],
+      "axiom_dependencies": {
+        "GenerativeTradeoff.Problem": [],
+        "GenerativeTradeoff.Successful": [],
+        "GenerativeTradeoff.LosslessSuccess": [],
+        "GenerativeTradeoff.NecessaryLoss": [],
+        "GenerativeTradeoff.Certain": [],
+        "GenerativeTradeoff.UniformLossless": [],
+        "GenerativeTradeoff.retained_actuality_receives_certified_necessity": [],
+        "GenerativeTradeoff.refinement_preserves_certified_necessity": [],
+        "GenerativeTradeoff.actual_alternative_refutes_necessity": [],
+        "GenerativeTradeoff.uniform_response_supplies_each_route": [],
+        "GenerativeTradeoff.SupportCase": [],
+        "GenerativeTradeoff.Response": [],
+        "GenerativeTradeoff.Stage": [],
+        "GenerativeTradeoff.History": [],
+        "GenerativeTradeoff.maintained": [],
+        "GenerativeTradeoff.restored": [],
+        "GenerativeTradeoff.endpoint": [],
+        "GenerativeTradeoff.interruption": [],
+        "GenerativeTradeoff.handoverProblem": [],
+        "GenerativeTradeoff.unresolvedSide": [],
+        "GenerativeTradeoff.onlyNoHandover": [],
+        "GenerativeTradeoff.restoration_matches_endpoint_but_retains_interruption": [],
+        "GenerativeTradeoff.absent_handover_makes_interruption_necessary": [],
+        "GenerativeTradeoff.available_handovers_are_actual_lossless_alternatives": [],
+        "GenerativeTradeoff.truthful_identification_can_resolve_uncertain_necessity": [],
+        "GenerativeTradeoff.deleting_actual_circumstance_fabricates_necessity": [],
+        "GenerativeTradeoff.pointwise_routes_do_not_supply_uniform_response": [],
+        "GenerativeTradeoff.conditional_necessity_allows_lossless_nonattainment": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "GenerativeTradeoff.lean": "0d038dd797886d58fe490ed2795f8c8cdba9d159ca56509f934eb60969242995",
+    "GenerativeTradeoff.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeTradeoffAxiomAudit.lean": "093ca0b89cbd863a90ba2eb102e094ae0aa82b09f4e19703353328b29fe338a7",
+    "GenerativeTradeoffAxiomAudit.log": "6ebfcfa5065d4aa1da92e623ceb614096cf14d1b22b08c50bd5202ed3d6dec29",
+    "GenerativeTradeoffSignatures.lean": "ef7e4f2dc0854931988bb6558f804498ddba7ad59a0cea3191e7cbfbf8566f23",
+    "GenerativeTradeoffSignatures.log": "3e26884e7e4e459e5211170897610f8761beb94af9fc56f5e9aecaaffbd9555e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_tradeoff.py": "f4b47861d4de61a497a5a79deca64e222d668f9c0e96dc0affc144e2ed1378aa",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

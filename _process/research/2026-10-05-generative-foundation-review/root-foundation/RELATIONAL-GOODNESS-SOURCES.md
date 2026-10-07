@@ -1,5 +1,7 @@
 # Goodness and continuing consequences: the existing karma analogy
 
+**Subsequent direct clarification, 7 October 2026:** [Ren's positive ethical direction and multiple scopes of 生](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) now guide the candidate's reconstruction. The earlier formulations and reading record below remain historical; §5 restores the directly stated positive genealogy alongside its qualification.
+
 6 October 2026. AI-authored genealogy under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **good activity → changed conditions of further activity → further good**. The exact analogy already exists in Ren's words and subsequent theory drafts. This note recovers it without treating causal continuation as sufficient ethical justification.
 
 ## 1. Ren's words, rather than later formulations
@@ -37,3 +39,9 @@ The definition and propagation claim cannot validate each other circularly. If g
 A constructive chain can nevertheless provide additional practical grounds where its intermediate conditions and worthwhile effects are identified. This does not make present relief depend on future productivity, nor require benefits to return to their initiator. The old text already anticipates propagation and its reversals; the new task is to explain their actual conditions and connect them to the defended practical ground.
 
 Reading scope is the specified original messages and draft passages, current method and ethical formulations, and the complete [current review](RELATIONAL-GOODNESS-REVIEW.md) and [positive argument](RELATIONAL-GOODNESS-ARGUMENT.md). No source-scope blocker was found. The argument author also read this complete genealogy and accepted its provenance and limits, without claiming a separate reading of the original passages. No external primary access, new empirical evidence or formal validation is claimed.
+
+## 5. Direct positive genealogy and the later scope clarification
+
+7 October 2026. Root and the source investigator separately read the following human messages in the [2 May original conversation](../../../../sources/12-claude-ai-chats/2026-05-02_生生不息的出处_1bd809e5.md). At 20:50 Ren describes combinations forming more differences, structures enabling new structures, and consequences becoming causes. At 21:05 he expressly makes universal good and evil take the universe's 生 as the standard and seeks a pattern across structures. At 22:55 he distinguishes continued generation, necessary complexity increase, ethical goodness and maximizing complexity. All three passages are retained; the later qualification does not erase the earlier positive position.
+
+The current answer makes the whole direction's relation to produced possibility, diversity and continuing complex organization explicit, and its follow-up retains multiple meanings of 生. This is now the authoritative input for the [new reconstruction](SHENGSHENG-DIRECTION-RECONSTRUCTION.md). The July14 draft and the former “worthwhile possibilities” formulation are AI-authored developments; they cannot veto the new statement. No formula for a universal scalar, compulsory per-step growth or strict scope nesting is attributed to Ren. No external literature or source-byte import is added in this genealogy update.

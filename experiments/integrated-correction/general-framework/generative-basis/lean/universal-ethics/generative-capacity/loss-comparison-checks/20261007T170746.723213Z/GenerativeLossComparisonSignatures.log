@@ -1,0 +1,61 @@
+GenerativeLossComparison.strict_improvement_transport.{u} {H : Type u} {Le : H → H → Prop}
+  (trans : GenerativeLossComparison.Transitive Le) {baseline original improved : H}
+  (anchor : GenerativeLossComparison.Strict Le baseline original) (improvement : Le original improved) :
+  GenerativeLossComparison.Strict Le baseline improved
+GenerativeLossComparison.strict_rejection_transport.{u} {H : Type u} {Le : H → H → Prop}
+  (trans : GenerativeLossComparison.Transitive Le) {baseline original worsened : H}
+  (anchor : GenerativeLossComparison.Strict Le original baseline) (worsening : Le worsened original) :
+  GenerativeLossComparison.Strict Le worsened baseline
+GenerativeLossComparison.matched_loss_reduction_preserves_priority.{u} {H : Type u} {Le NoWorse : H → H → Prop}
+  (trans : GenerativeLossComparison.Transitive Le) (comparison : GenerativeLossComparison.Compatible NoWorse Le)
+  {baseline original reduced : H} (anchor : GenerativeLossComparison.Strict Le baseline original)
+  (matched : NoWorse original reduced) : GenerativeLossComparison.Strict Le baseline reduced
+GenerativeLossComparison.matched_loss_increase_preserves_rejection.{u} {H : Type u} {Le NoWorse : H → H → Prop}
+  (trans : GenerativeLossComparison.Transitive Le) (comparison : GenerativeLossComparison.Compatible NoWorse Le)
+  {baseline original increased : H} (anchor : GenerativeLossComparison.Strict Le original baseline)
+  (matched : NoWorse increased original) : GenerativeLossComparison.Strict Le increased baseline
+GenerativeLossComparison.transported_comparison_supplies_reason.{u} {H O : Type u} {Le : H → H → Prop}
+  {feasible : O → Prop} {realize : O → H} {Reason : O → O → Prop} (trans : GenerativeLossComparison.Transitive Le)
+  (bridge : GenerativeLossComparison.PracticalBridge Le feasible realize Reason) {baseline original improved : O}
+  (fb : feasible baseline) (fi : feasible improved)
+  (anchor : GenerativeLossComparison.Strict Le (realize baseline) (realize original))
+  (improvement : Le (realize original) (realize improved)) : Reason baseline improved
+GenerativeLossComparison.faithful_redescription_preserves_strict.{u} {H J : Type u} {Le : H → H → Prop}
+  {Le' : J → J → Prop} (f : H → J) (faithful : ∀ (a b : H), Le' (f a) (f b) ↔ Le a b) (a b : H) :
+  GenerativeLossComparison.Strict Le' (f a) (f b) ↔ GenerativeLossComparison.Strict Le a b
+GenerativeLossComparison.cutoff_transitive (k : Nat) :
+  GenerativeLossComparison.Transitive (GenerativeLossComparison.Cutoff k)
+GenerativeLossComparison.shorter_interruption_no_worse (k n m : Nat) (h : m ≤ n) :
+  GenerativeLossComparison.Cutoff k (GenerativeLossComparison.Route.repair n) (GenerativeLossComparison.Route.repair m)
+GenerativeLossComparison.cutoff_priority_iff (k n : Nat) :
+  GenerativeLossComparison.Strict (GenerativeLossComparison.Cutoff k) GenerativeLossComparison.Route.finish
+      (GenerativeLossComparison.Route.repair n) ↔
+    n < k
+GenerativeLossComparison.cutoff_rejection_iff (k n : Nat) :
+  GenerativeLossComparison.Strict (GenerativeLossComparison.Cutoff k) (GenerativeLossComparison.Route.repair n)
+      GenerativeLossComparison.Route.finish ↔
+    k < n
+GenerativeLossComparison.compatible_cutoffs_disagree :
+  GenerativeLossComparison.Strict (GenerativeLossComparison.Cutoff 2) (GenerativeLossComparison.Route.repair 4)
+      GenerativeLossComparison.Route.finish ∧
+    GenerativeLossComparison.Strict (GenerativeLossComparison.Cutoff 6) GenerativeLossComparison.Route.finish
+      (GenerativeLossComparison.Route.repair 4)
+GenerativeLossComparison.a_good_anchor_does_not_license_more_loss :
+  GenerativeLossComparison.Strict (GenerativeLossComparison.Cutoff 2) GenerativeLossComparison.Route.finish
+      (GenerativeLossComparison.Route.repair 1) ∧
+    GenerativeLossComparison.Strict (GenerativeLossComparison.Cutoff 2) (GenerativeLossComparison.Route.repair 4)
+      GenerativeLossComparison.Route.finish
+GenerativeLossComparison.continuation_first_transitive :
+  GenerativeLossComparison.Transitive GenerativeLossComparison.ContinuationFirst
+GenerativeLossComparison.continuation_first_still_prefers_shorter (n m : Nat) (h : m < n) :
+  GenerativeLossComparison.Strict GenerativeLossComparison.ContinuationFirst (GenerativeLossComparison.Route.repair n)
+    (GenerativeLossComparison.Route.repair m)
+GenerativeLossComparison.continuation_first_accepts_every_finite_loss (n : Nat) :
+  GenerativeLossComparison.Strict GenerativeLossComparison.ContinuationFirst GenerativeLossComparison.Route.finish
+    (GenerativeLossComparison.Route.repair n)
+GenerativeLossComparison.loss_sensitivity_alone_supplies_no_cutoff :
+  ¬∃ k,
+      ∀ (n : Nat),
+        k < n →
+          GenerativeLossComparison.Strict GenerativeLossComparison.ContinuationFirst
+            (GenerativeLossComparison.Route.repair n) GenerativeLossComparison.Route.finish

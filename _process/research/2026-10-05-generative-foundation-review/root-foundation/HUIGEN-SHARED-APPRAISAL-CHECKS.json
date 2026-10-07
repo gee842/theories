@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "status": "passed_at_bounded_scope",
+  "scope": "Local links in five full study/canonical documents and the two new index paragraphs, plus unchanged non-Markdown artifacts from the preceding receipt. No scientific revalidation.",
+  "existing_full_checker_status": "Stopped at historical section 16 link: explicit HTML anchor exists but heading-only anchor parser omits it. No new passing full receipt issued.",
+  "heading_parser_sha256": "7c7f0d1abf49345e42ebb8e7316ad899379bb5b16941bf85cf7298983722824d",
+  "supplement": "Union generated heading anchors with explicit HTML a id attributes; preserve original aliases and renamed headings.",
+  "local_links_checked": 800,
+  "html_alias_uses": [
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "13-benefit-authorship-and-permission"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "16-concern-authorship-and-the-authority-to-intervene"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "16-concern-authorship-and-the-authority-to-intervene"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "16-concern-authorship-and-the-authority-to-intervene"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "16-concern-authorship-and-the-authority-to-intervene"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "16-concern-authorship-and-the-authority-to-intervene"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "13-benefit-authorship-and-permission"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "16-concern-authorship-and-the-authority-to-intervene"
+    ],
+    [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "13-benefit-authorship-and-permission"
+    ]
+  ],
+  "unresolved_links": [],
+  "non_markdown_artifacts_matched": 30,
+  "non_markdown_artifact_mismatches": [],
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md": "b28fd41eb1389f3c3e22d5402056adbcb325aaa1df99837510fa08f2a3f9d279",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md": "ac9ee586411c64869af134b2893036ae55cb465adc262bbb9de9981855d751db",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md": "d7b4cce15f287d057f72f9fea119aab203b89965074b994cf6440d7c4572663c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md": "7bb98c250da9e953255696e16c104d65a0a3828f6d1dbc3ad99f5b9094a9847d",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "a3bc5a8ceb6dab8ee6bd8f3a4c66c818c942a6143417f866b0918eab647c0899"
+  },
+  "index_paragraph_sha256": {
+    "RESEARCH.md": "2d64bbeb24c725160d5c21ab6e15c2c8e261c8cc80ee9c821cf708ffa7a02951",
+    "theories/shengsheng-buxi-generative-existence/README.md": "3d0baa73051a12f5762542e6077fdb4e9ae5b531bd84843f1e5a0a26e512ba42"
+  },
+  "new_proof_builds": 0,
+  "new_empirical_studies": 0
+}
