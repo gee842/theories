@@ -321,7 +321,7 @@ theorem stretch_potential_short {law : ChannelLaw Kind} (X : Execution law) (a L
 
 /-- A closed walk with a walk leaving it: together they are support-closed and
 contain the walk's end. -/
-theorem cycle_with_tail [DecidableEq Kind] {edge : Kind → Kind → Prop} {j q : Kind}
+theorem cycle_with_tail {edge : Kind → Kind → Prop} {j q : Kind}
     {cycle rest : List Kind} (nonempty : cycle ≠ [])
     (loop : Walk edge j (j :: cycle) j) (tail : Walk edge j (j :: rest) q)
     (closed : DependenceClosed edge cycle) :
@@ -342,12 +342,11 @@ theorem cycle_with_tail [DecidableEq Kind] {edge : Kind → Kind → Prop} {j q 
     obtain ⟨u, uIn, edgeUV⟩ := closed.2.1 v here
     exact ⟨u, List.mem_append_left _ uIn, edgeUV⟩
   | inr there =>
-    if same : v = j then
-      obtain ⟨u, uIn, edgeUV⟩ := closed.2.1 v (same ▸ jIn)
-      exact ⟨u, List.mem_append_left _ uIn, edgeUV⟩
-    else
-      obtain ⟨u, uIn, edgeUV⟩ := tail.predecessor v (List.mem_cons_of_mem _ there) same
-      exact ⟨u, inside u uIn, edgeUV⟩
+    obtain ⟨after, shape, preds⟩ := tail.after_start
+    injection shape with _ same
+    rw [← same] at preds
+    obtain ⟨u, uIn, edgeUV⟩ := preds v there
+    exact ⟨u, inside u uIn, edgeUV⟩
 
 /-- An excess kind supported from a support-closed list gives a self-renewing
 population: the list plus enough repeats of the excess kind. -/
@@ -398,7 +397,7 @@ theorem support_closed_append {law : ChannelLaw Kind} {C E : List Kind}
 
 /-- A cycle with a walk leaving it, in the support relation of an execution, as
 a support-closed list containing the walk's end. -/
-theorem traced_support_closed [DecidableEq Kind] {law : ChannelLaw Kind} {j r : Kind}
+theorem traced_support_closed {law : ChannelLaw Kind} {j r : Kind}
     {cycle rest : List Kind} (nonempty : cycle ≠ [])
     (loop : Walk (fun a b => law.edge a b ∧ 2 ≤ law.span a) j (j :: cycle) j)
     (tail : Walk (fun a b => law.edge a b ∧ 2 ≤ law.span a) j (j :: rest) r)
@@ -413,7 +412,7 @@ theorem traced_support_closed [DecidableEq Kind] {law : ChannelLaw Kind} {j r : 
 /-- A live token of a designated kind late in an execution descends from a
 realized cycle through a walk. Every kind on both was formed in the preceding
 `(n + 1) · D` ticks. -/
-theorem kept_kind_descends [DecidableEq Kind] {law : ChannelLaw Kind} (X : Execution law)
+theorem kept_kind_descends {law : ChannelLaw Kind} (X : Execution law)
     (U : List Kind) (complete : ∀ k, k ∈ U) (D : Nat) (spanBound : ∀ k, law.span k ≤ D)
     {K : Kind → Prop} {t : Nat} (late : (U.length + 1) * D < t) (keeps : Keeps K (X.states t)) :
     ∃ r j cycle rest, K r ∧ 0 < law.span r ∧ cycle ≠ [] ∧
@@ -449,18 +448,19 @@ theorem kept_kind_descends [DecidableEq Kind] {law : ChannelLaw Kind} (X : Execu
   rw [Nat.succ_mul]
   omega
 
-/-- **The dichotomy, for designated kinds.** For any execution, either the law
-has a self-renewing population containing a designated kind, or the execution
-holds no live token of a designated kind at some time by `(P + 2) · W`. Here
-`W` is `(n + 1) · D + 1` and `P` is the opening potential at time `W`. -/
-theorem renewal_dichotomy_keeping [DecidableEq Kind] (law : ChannelLaw Kind)
+/-- **The window theorem, for designated kinds.** If an execution holds a live
+token of a designated kind at every time up to `(P + 2) · W`, the law has a
+self-renewing population containing a designated kind of positive span. Here
+`W` is `(n + 1) · D + 1` and `P` is the opening potential at time `W`. Nothing
+about the designated kinds needs to be decided. -/
+theorem kept_through_window_has_population (law : ChannelLaw Kind)
     (U : List Kind) (complete : ∀ k, k ∈ U) (D : Nat) (spanBound : ∀ k, law.span k ≤ D)
-    (K : Kind → Prop) [DecidablePred K] (X : Execution law) :
-    (∃ B, SelfRenewing law B ∧ ∃ k, k ∈ B ∧ K k ∧ 0 < law.span k) ∨
-      ∃ t, t ≤ (potential X ((U.length + 1) * D + 1) + 2) * ((U.length + 1) * D + 1) ∧
-        ¬ Keeps K (X.states t) := by
-  generalize hW : (U.length + 1) * D + 1 = W
-  generalize hP : potential X W = P
+    (K : Kind → Prop) (X : Execution law)
+    (kept : ∀ t, t ≤ (potential X ((U.length + 1) * D + 1) + 2) * ((U.length + 1) * D + 1) →
+      Keeps K (X.states t)) :
+    ∃ B, SelfRenewing law B ∧ ∃ k, k ∈ B ∧ K k ∧ 0 < law.span k := by
+  generalize hW : (U.length + 1) * D + 1 = W at kept
+  generalize hP : potential X W = P at kept
   have reachBound : ∀ j, (executionSupport X).reach j ≤ D := by
     intro j
     have := spanBound j
@@ -474,29 +474,27 @@ theorem renewal_dichotomy_keeping [DecidableEq Kind] (law : ChannelLaw Kind)
     -- A late formation of an excess kind descends from a realized cycle, and so
     -- does a designated kind kept at time `W`.
     obtain ⟨m, low, _, q, inTick, excess⟩ := found
-    cases keeps_decide K (X.states W) with
-    | inr lost =>
-      refine Or.inr ⟨W, ?_, lost⟩
+    have keepsW : Keeps K (X.states W) := by
+      apply kept W
       have : 1 * W ≤ (P + 2) * W := Nat.mul_le_mul_right W (by omega)
       rw [Nat.one_mul] at this
       exact this
-    | inl keepsW =>
-      obtain ⟨r, j₂, cycle₂, rest₂, kR, rPositive, nonempty₂, loop₂, tail₂, closed₂, _⟩ :=
-        kept_kind_descends X U complete D spanBound Wlate keepsW
-      obtain ⟨closedR, rIn⟩ := traced_support_closed nonempty₂ loop₂ tail₂ closed₂
-      have occ : (executionSupport X).occurs q (m + 1) := Or.inr ⟨m, rfl, inTick⟩
-      have late : U.length * D < m + 1 := by
-        rw [Nat.succ_mul] at hW
-        omega
-      obtain ⟨j, cycle, rest, nonempty, loop, tail, closed, _⟩ :=
-        late_occurrence_descends_from_realized_closure (executionSupport X) U complete D
-          reachBound occ late
-      obtain ⟨closedQ, qIn⟩ := traced_support_closed nonempty loop tail closed
-      have closedC := support_closed_append closedQ closedR
-      have nonemptyC : (cycle ++ rest) ++ (cycle₂ ++ rest₂) ≠ [] :=
-        append_nonempty (append_nonempty nonempty)
-      exact Or.inl ⟨_, excess_population law nonemptyC closedC (List.mem_append_left _ qIn)
-        excess, r, List.mem_append_left _ (List.mem_append_right _ rIn), kR, rPositive⟩
+    obtain ⟨r, j₂, cycle₂, rest₂, kR, rPositive, nonempty₂, loop₂, tail₂, closed₂, _⟩ :=
+      kept_kind_descends X U complete D spanBound Wlate keepsW
+    obtain ⟨closedR, rIn⟩ := traced_support_closed nonempty₂ loop₂ tail₂ closed₂
+    have occ : (executionSupport X).occurs q (m + 1) := Or.inr ⟨m, rfl, inTick⟩
+    have late : U.length * D < m + 1 := by
+      rw [Nat.succ_mul] at hW
+      omega
+    obtain ⟨j, cycle, rest, nonempty, loop, tail, closed, _⟩ :=
+      late_occurrence_descends_from_realized_closure (executionSupport X) U complete D
+        reachBound occ late
+    obtain ⟨closedQ, qIn⟩ := traced_support_closed nonempty loop tail closed
+    have closedC := support_closed_append closedQ closedR
+    have nonemptyC : (cycle ++ rest) ++ (cycle₂ ++ rest₂) ≠ [] :=
+      append_nonempty (append_nonempty nonempty)
+    exact ⟨_, excess_population law nonemptyC closedC (List.mem_append_left _ qIn)
+      excess, r, List.mem_append_left _ (List.mem_append_right _ rIn), kR, rPositive⟩
   | inr noExcess =>
     have each : ∀ m, W ≤ m → m < W + (P + 1) * W → ∀ k, k ∈ X.ticks m →
         law.rate k * law.span k ≤ law.demand k := by
@@ -559,30 +557,57 @@ theorem renewal_dichotomy_keeping [DecidableEq Kind] (law : ChannelLaw Kind)
         rw [Nat.succ_mul, Nat.succ_mul]
         omega
       omega
-    cases keeps_decide K (X.states (W + w * W + W)) with
-    | inr lost => exact Or.inr ⟨W + w * W + W, endBound, lost⟩
-    | inl keepsEnd =>
-      have late : (U.length + 1) * D < W + w * W + W := by omega
-      obtain ⟨r, _, cycle, rest, kR, rPositive, nonempty, loop, tail, closed, window⟩ :=
-        kept_kind_descends X U complete D spanBound late keepsEnd
-      have adequate : ∀ v, v ∈ cycle ++ rest → law.demand v ≤ law.rate v * law.span v := by
-        intro v member
-        obtain ⟨s, occ, before, near⟩ := window v member
-        cases occ with
-        | inl initial =>
-          obtain ⟨zero, _⟩ := initial
-          exact False.elim (by omega)
-        | inr formedAt =>
-          obtain ⟨m, timeEq, inTick⟩ := formedAt
-          exact good m (by omega) (by omega) v inTick
-      obtain ⟨closedC, rIn⟩ := traced_support_closed nonempty loop tail closed
-      exact Or.inl ⟨cycle ++ rest, ⟨append_nonempty nonempty, closedC,
-        balanced_of_each law _ adequate⟩, r, rIn, kR, rPositive⟩
+    have keepsEnd := kept (W + w * W + W) endBound
+    have late : (U.length + 1) * D < W + w * W + W := by omega
+    obtain ⟨r, _, cycle, rest, kR, rPositive, nonempty, loop, tail, closed, window⟩ :=
+      kept_kind_descends X U complete D spanBound late keepsEnd
+    have adequate : ∀ v, v ∈ cycle ++ rest → law.demand v ≤ law.rate v * law.span v := by
+      intro v member
+      obtain ⟨s, occ, before, near⟩ := window v member
+      cases occ with
+      | inl initial =>
+        obtain ⟨zero, _⟩ := initial
+        exact False.elim (by omega)
+      | inr formedAt =>
+        obtain ⟨m, timeEq, inTick⟩ := formedAt
+        exact good m (by omega) (by omega) v inTick
+    obtain ⟨closedC, rIn⟩ := traced_support_closed nonempty loop tail closed
+    exact ⟨cycle ++ rest, ⟨append_nonempty nonempty, closedC,
+      balanced_of_each law _ adequate⟩, r, rIn, kR, rPositive⟩
+
+/-- **The dichotomy, for designated kinds.** For any execution, either the law
+has a self-renewing population containing a designated kind of positive span,
+or the execution holds no live token of a designated kind at some time by
+`(P + 2) · W`. Naming that time needs the designated kinds to be decidable. -/
+theorem renewal_dichotomy_keeping (law : ChannelLaw Kind)
+    (U : List Kind) (complete : ∀ k, k ∈ U) (D : Nat) (spanBound : ∀ k, law.span k ≤ D)
+    (K : Kind → Prop) [DecidablePred K] (X : Execution law) :
+    (∃ B, SelfRenewing law B ∧ ∃ k, k ∈ B ∧ K k ∧ 0 < law.span k) ∨
+      ∃ t, t ≤ (potential X ((U.length + 1) * D + 1) + 2) * ((U.length + 1) * D + 1) ∧
+        ¬ Keeps K (X.states t) := by
+  have lostDecide : ∀ t, ¬ Keeps K (X.states t) ∨ ¬ ¬ Keeps K (X.states t) := fun t =>
+    match keeps_decide K (X.states t) with
+    | Or.inl keeps => Or.inr (fun lost => lost keeps)
+    | Or.inr lost => Or.inl lost
+  cases range_search (fun t => ¬ Keeps K (X.states t)) lostDecide 0
+      ((potential X ((U.length + 1) * D + 1) + 2) * ((U.length + 1) * D + 1) + 1) with
+  | inl found =>
+    obtain ⟨t, _, high, lost⟩ := found
+    rw [Nat.zero_add] at high
+    exact Or.inr ⟨t, Nat.le_of_lt_succ high, lost⟩
+  | inr notLost =>
+    refine Or.inl (kept_through_window_has_population law U complete D spanBound K X ?_)
+    intro t within
+    cases keeps_decide K (X.states t) with
+    | inl keeps => exact keeps
+    | inr lost =>
+      exact False.elim (notLost t (Nat.zero_le t)
+        (by rw [Nat.zero_add]; exact Nat.lt_succ_of_le within) lost)
 
 /-- **The dichotomy.** For any execution, either the law has a self-renewing
 population, or the execution stops being live by `(P + 2) · W`. This is the
 case where every kind is designated. -/
-theorem renewal_dichotomy [DecidableEq Kind] (law : ChannelLaw Kind) (U : List Kind)
+theorem renewal_dichotomy (law : ChannelLaw Kind) (U : List Kind)
     (complete : ∀ k, k ∈ U) (D : Nat) (spanBound : ∀ k, law.span k ≤ D)
     (X : Execution law) :
     (∃ B, SelfRenewing law B) ∨
@@ -603,22 +628,20 @@ theorem span_le_longest (law : ChannelLaw Kind) {U : List Kind} (complete : ∀ 
 
 /-- **Necessity.** A history that stays live forever shows that the law has a
 self-renewing population. -/
-theorem renews_forever_has_self_renewing_population [DecidableEq Kind]
+theorem renews_forever_has_self_renewing_population
     (law : ChannelLaw Kind) (U : List Kind) (complete : ∀ k, k ∈ U)
     (endless : RenewsForever law) : ∃ B, SelfRenewing law B := by
   obtain ⟨H, alive⟩ := endless
-  cases renewal_dichotomy law U complete (maxOver law.span U) (span_le_longest law complete)
-      H.settled with
-  | inl population => exact population
-  | inr dies =>
-    obtain ⟨t, _, dead⟩ := dies
-    exact False.elim (dead (alive (H.settle + t)))
+  obtain ⟨B, renewing, _⟩ := kept_through_window_has_population law U complete
+    (maxOver law.span U) (span_le_longest law complete) (fun _ => True) H.settled
+    (fun t _ => live_keeps_everything (alive (H.settle + t)))
+  exact ⟨B, renewing⟩
 
 /-- **The renewal–closure theorem.** With finitely many kinds, a law admits a
 history that renews forever exactly when it has a nonempty population of kinds,
 closed under support by constraints that outlast a tick, whose tokens open over
 their spans at least what forming them demands. -/
-theorem renewal_closure_theorem [DecidableEq Kind] (law : ChannelLaw Kind)
+theorem renewal_closure_theorem (law : ChannelLaw Kind)
     (U : List Kind) (complete : ∀ k, k ∈ U) :
     RenewsForever law ↔ ∃ B, SelfRenewing law B :=
   ⟨renews_forever_has_self_renewing_population law U complete,
@@ -641,18 +664,14 @@ theorem steady_contains_fresh (law : ChannelLaw Kind) {B : List Kind} {k : Kind}
 /-- **Keeping designated kinds.** With finitely many kinds, some history keeps a
 live token of a designated kind at every time exactly when some self-renewing
 population contains a designated kind of positive span. -/
-theorem renewal_keeping_theorem [DecidableEq Kind] (law : ChannelLaw Kind)
-    (U : List Kind) (complete : ∀ k, k ∈ U) (K : Kind → Prop) [DecidablePred K] :
+theorem renewal_keeping_theorem (law : ChannelLaw Kind)
+    (U : List Kind) (complete : ∀ k, k ∈ U) (K : Kind → Prop) :
     KeepsForever law K ↔ ∃ B, SelfRenewing law B ∧ ∃ k, k ∈ B ∧ K k ∧ 0 < law.span k := by
   constructor
   · intro keeps
     obtain ⟨H, always⟩ := keeps
-    cases renewal_dichotomy_keeping law U complete (maxOver law.span U)
-        (span_le_longest law complete) K H.settled with
-    | inl population => exact population
-    | inr dies =>
-      obtain ⟨t, _, lost⟩ := dies
-      exact False.elim (lost (always (H.settle + t)))
+    exact kept_through_window_has_population law U complete (maxOver law.span U)
+      (span_le_longest law complete) K H.settled (fun t _ => always (H.settle + t))
   · intro population
     obtain ⟨B, renewing, k, kIn, kK, kPositive⟩ := population
     have kIn' := positivePart_mem law kPositive kIn
@@ -668,7 +687,7 @@ def renewalWindow (law : ChannelLaw Kind) (U : List Kind) : Nat :=
 span, every history loses its designated kinds by `s + (P + 2) · W`. Here `s` is
 the longest remaining span among the initial tokens, `W` is `renewalWindow`, and
 `P` is the opening potential at time `s + W`. -/
-theorem no_keeping_population_deadline [DecidableEq Kind] (law : ChannelLaw Kind)
+theorem no_keeping_population_deadline (law : ChannelLaw Kind)
     (U : List Kind) (complete : ∀ k, k ∈ U) (K : Kind → Prop) [DecidablePred K]
     (absent : ¬ ∃ B, SelfRenewing law B ∧ ∃ k, k ∈ B ∧ K k ∧ 0 < law.span k)
     (H : History law) :
@@ -683,7 +702,7 @@ theorem no_keeping_population_deadline [DecidableEq Kind] (law : ChannelLaw Kind
 
 /-- **The deadline.** Without a self-renewing population, every history stops
 being live by `s + (P + 2) · W`. -/
-theorem no_self_renewing_population_deadline [DecidableEq Kind] (law : ChannelLaw Kind)
+theorem no_self_renewing_population_deadline (law : ChannelLaw Kind)
     (U : List Kind) (complete : ∀ k, k ∈ U) (absent : ¬ ∃ B, SelfRenewing law B)
     (H : History law) :
     ∃ t, t ≤ H.settle + (openingPotential law (H.states (H.settle + renewalWindow law U)) + 2) *
@@ -772,7 +791,7 @@ positive span, every history loses its designated kinds by
 the initial tokens, `W` is `renewalWindow`, `G` is `renewalGrowth`, and `P₀` is
 the initial reserve plus what the initial tokens can open. All of these are read
 from the law and the initial configuration. -/
-theorem no_keeping_population_explicit_deadline [DecidableEq Kind]
+theorem no_keeping_population_explicit_deadline
     (law : ChannelLaw Kind) (U : List Kind) (complete : ∀ k, k ∈ U)
     (demandPositive : ∀ k, 1 ≤ law.demand k)
     (K : Kind → Prop) [DecidablePred K]
@@ -791,7 +810,7 @@ theorem no_keeping_population_explicit_deadline [DecidableEq Kind]
 /-- **The explicit deadline.** With positive formation demands, and without a
 self-renewing population, every history stops being live by
 `s + (G ^ (s + W) · P₀ + 2) · W`. -/
-theorem no_self_renewing_population_explicit_deadline [DecidableEq Kind]
+theorem no_self_renewing_population_explicit_deadline
     (law : ChannelLaw Kind) (U : List Kind) (complete : ∀ k, k ∈ U)
     (demandPositive : ∀ k, 1 ≤ law.demand k)
     (absent : ¬ ∃ B, SelfRenewing law B) (H : History law) :
@@ -954,6 +973,7 @@ theorem lapsing_correction_cannot_be_kept :
 #print axioms support_closed_append
 #print axioms traced_support_closed
 #print axioms kept_kind_descends
+#print axioms kept_through_window_has_population
 #print axioms renewal_dichotomy_keeping
 #print axioms renewal_dichotomy
 #print axioms steady_contains_fresh

@@ -5,12 +5,13 @@
 'Generative.Conditional.Renewal.Walk.split' does not depend on any axioms
 'Generative.Conditional.Renewal.Walk.start_mem' does not depend on any axioms
 'Generative.Conditional.Renewal.Walk.trace' does not depend on any axioms
+'Generative.Conditional.Renewal.Walk.after_start' depends on axioms: [propext]
+'Generative.Conditional.Renewal.Walk.before_end' depends on axioms: [propext]
 'Generative.Conditional.Renewal.Walk.predecessor' depends on axioms: [propext]
 'Generative.Conditional.Renewal.Walk.successor' depends on axioms: [propext]
 'Generative.Conditional.Renewal.Walk.end_predecessor' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.closed_walk_dependence_closed' depends on axioms: [propext]
-'Generative.Conditional.Renewal.mem_removeOne_of_ne' depends on axioms: [propext]
-'Generative.Conditional.Renewal.length_removeOne_of_mem' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.contains_or_drawn_from' depends on axioms: [propext]
 'Generative.Conditional.Renewal.duplicate_of_long' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.support_walk' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.late_occurrence_descends_from_realized_closure' depends on axioms: [propext, Quot.sound]
