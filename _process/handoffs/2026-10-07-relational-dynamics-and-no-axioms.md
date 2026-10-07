@@ -4,8 +4,7 @@
 
 ## Where the work is
 
-- Branch: `claude/project-thread-x1q9hl` on `yongxu/theories`. The last commit is the one that adds this file. It includes `main` up to `ca81880` (7 October), merged three times during this round.
-- **The branch is not on `main`.** This session cannot push to `main` because the permission check refuses it. Ren needs to merge the branch. It merges cleanly, since it already contains `main`.
+- Branch: `claude/project-thread-x1q9hl` on `yongxu/theories`, merged into `main` on 7 October 2026 (fast-forward to `ab995e9`, after merging main into the branch four times this round). The branch and `main` match as of this file's commit.
 - Lean: 4.29.1 with no Mathlib. In the cloud it is at `/opt/lean-4.29.1-linux/bin`; put it on `PATH` and every checker named below runs. See the team memory `lean-build-in-cloud`.
 
 ## What is proved, and where
