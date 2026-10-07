@@ -1,0 +1,12 @@
+'Generative.Deeper.continues_step' does not depend on any axioms
+'Generative.Deeper.continues_of_step' does not depend on any axioms
+'Generative.Deeper.continues_of_run' does not depend on any axioms
+'Generative.Deeper.continues_histories' does not depend on any axioms
+'Generative.Deeper.bisimulation_continues' does not depend on any axioms
+'Generative.Deeper.continuation_separates' does not depend on any axioms
+'Generative.Deeper.core_continues' does not depend on any axioms
+'Generative.Deeper.core_erased_is_one_recurrence' does not depend on any axioms
+'Generative.Deeper.onlyFirst_continues' does not depend on any axioms
+'Generative.Deeper.alternating_continues' does not depend on any axioms
+'Generative.Deeper.first_twice_separates' does not depend on any axioms
+'Generative.Deeper.labels_carry_remaining_difference' does not depend on any axioms

@@ -31,6 +31,14 @@
 
 **结论与范围。** 原反例里 `static` 与 `toggle` 的不确定，是因为先给了载体身份再挑规律；按关系的读法它消失了。剩下的是“继续还是不继续”，而这个区别本身就是关系上的区别。说生生之理选定了“继续”，是解释，不是定理。范围只到一种事件：有两种以上事件时，关系上不同的动力学仍然很多（例如只发生 a，与 a、b 交替），它们由什么选定，仍未解决；下一步要证的是：在同一过程里，哪些关系类能维持自身的后续转换。
 
+**多种事件（2026年10月7日续证）。** [RelationalContinuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalContinuation.lean) 对任意过程、任意事件做了这一步，12 条审计全部为空。
+
+- `Continues`（定义）：一个位置“能继续”，当且仅当它处在这样一个区域里：区域中每一处都有一个事件通回区域内。这是关系性质：一步保持它（`continues_step`、`continues_of_step`），任何无尽的运行都满足它（`continues_of_run`），它给出任意长度的有限历史（`continues_histories`），关系上同一的位置在它上面一致（`bisimulation_continues`、`continuation_separates`）。
+- `core_erased_is_one_recurrence`：把任意过程限制到能继续的部分，并且不预先给定哪个事件是哪个，结果就是那个单一复现，不论载体和事件是什么。
+- `labels_carry_remaining_difference`（保留的反例）：两个过程（只发生第一种事件；两种事件随位置交替）处处能继续，彼此没有任何位置关系上同一，但抹去事件身份后都是单一复现。所以“能继续”本身不在多事件动力学之间作选择；剩下的区别全在预先给定的事件身份上。
+
+**这说明了什么。** 不预先给定载体身份和事件身份时，一个动力学说出的内容，就是在哪里保持继续、在哪里失去继续。把这读作“过程如何生成或损坏自身后续展开的条件”，是把结果接到研究中心的解释，不是定理。**仍未解决：** 事件身份能否也由关系区分出来；如果能，会留下哪些带事件的动力学。
+
 ## 2. 评价方向
 
 **模块：** [EthicalOrientation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean)。

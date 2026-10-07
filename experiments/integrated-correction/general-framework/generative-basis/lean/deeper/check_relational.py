@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build RelationalDynamics with its import closure and require empty axiom audits.
+"""Build RelationalDynamics and RelationalContinuation with their import closure and require empty axiom audits.
 
 Uses `lean +<toolchain>` when elan is installed, otherwise the `lean` on PATH,
 and requires Lean 4.29.1 either way. No axiom is allowed, including propext,
@@ -17,10 +17,11 @@ import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parent
-MODULES = ["GenerativeCore", "DynamicUnderdetermination", "RelationalDynamics"]
+MODULES = ["GenerativeCore", "DynamicUnderdetermination", "RelationalDynamics",
+           "RelationalContinuation"]
 SOURCES = {name: (ROOT.parent if name == "GenerativeCore" else ROOT) /
            (name + ".lean") for name in MODULES}
-NEW = {"RelationalDynamics"}
+NEW = {"RelationalDynamics", "RelationalContinuation"}
 ALLOWED_AXIOMS = set()
 
 

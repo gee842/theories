@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T21:12:45.097630+00:00",
+  "checked_at": "2026-10-07T09:24:43.662076+00:00",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "allowed_axioms": [],
@@ -20,6 +20,12 @@
       "module": "RelationalDynamics",
       "sha256": "292fff843e984f602b3d5c62c33539abdc4d026ef376501e1f50ca5bce313ca3",
       "audits": 13,
+      "axioms": []
+    },
+    {
+      "module": "RelationalContinuation",
+      "sha256": "5357953ee4b838da22d426e831a0a04b782042cb3eb736ed81960110e98799eb",
+      "audits": 12,
       "axioms": []
     }
   ]
