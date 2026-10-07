@@ -1,5 +1,7 @@
 # Brief for readers of this corpus
 
+**本次 alignment 伦理奠基采用公理起点，2026年10月8日。** [Ren 明确纠正](../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)要求停止无公理追索。以已有 G0 为规范公理完成比较与实践推导，再做完成后的独立 agent 验证；不再把 G0 自身的无前提证明作为该任务的门槛。下文更强无假设目标保留历史与其他会话范围，不得重新阻断这一任务。额外规范承诺、对应条件、真实损失与 Lean 实查要求继续适用。
+
 **真实取舍的最新进展，2026年10月7日。** [生成取舍整合](research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md)提出实际恢复接续支持承担真实中断的 K 候选，保留当下损失及广泛长期负担的反例。11项新 Lean 定理／28项审计检查目标相对的必要损失与认识条件，不证明 K 的伦理优先。下一工作直接辩护损失内容、持续及影响范围怎样改变比较力度；普遍规范根据仍是第一优先，不以另一动力学例子替代。
 
 **显式生成起点路线已获批准，2026年10月7日。** [Ren 要求沿此继续](../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md)。[当前推导](research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md)从整体生生的正面意义说明不同情境的维护、重组与结束理由，明确比较和选择所需的更强条件。11项新 Lean 定理审计推理范围，未证明规范起点自身；没有最终最优方案时不能强加最终最大化。下一工作处理真实生成冲突与认识校准，保留更强基础目标而不让它阻止这条已批准路线。

@@ -1,0 +1,61 @@
+# Organization and resumed activity: independent review
+
+8 October 2026, Asia/Bangkok. AI-authored review for [living dependencies](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md), following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The connection under review is **retained or reconstructed organization → actual resumption of a specified living activity**. The [preceding recovery review](LIVING-RECOVERY-REVIEW.md) established why restoring a measured amount alone does not establish that connection.
+
+**Design verdict:** a general reaction-history origin theorem can advance the account if it derives a requirement across all admitted alternative routes and is connected to an independently investigated living function. A fresh vocabulary of catalysts, products and repair would not by itself be an advance: the repository already has substantive models of those relationships. The proposed generic statement should identify inherited organization or an actual earlier entry/formation event, without declaring an independently supplied recipe universally necessary. Final source and evidence review remain pending below.
+
+## 1. Credit the inherited mechanism results
+
+This review inspected the current canonical account, relevant existing source definitions and the accompanying scope notes. It did not rerun their older checks.
+
+| Existing work | Already established at its recorded scope | What a new study must not claim to introduce |
+|---|---|---|
+| [TypedRenewal](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean) and its [formal README](../../../../experiments/shared-renewal-capability/formal/README.md) | An enabled 42-event stoichiometric vocabulary includes retained catalysts, assembly, copying, formation, repair, binding, wear and consumables; actual traces project into an accounting model. | The first material reaction model, first catalyst distinction or first resource-dependent repair in this repository. |
+| [CarrierTurnover](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean) and its [scope note](../../2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md) | A permissive carrier observer preserves original-loss history and derives role-wear requirements. Its component-presence conditions do not establish complete particle allocation or bond pairing. | First provenance tracking, or a claim that a count/observer path automatically supplies a constructive physical path. |
+| [RecursiveSelectionInheritance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveSelectionInheritance.lean) | Material daughters are assembled from produced carriers and their actual reconstructed coupling operates again; remaining source, support, inactive structures and loose carriers persist. | First actual formation followed by operation, or first preservation of resources between generations. |
+| [FormationRoutes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean) and the [capacity integration](GENERATIVE-CAPACITY-INTEGRATION.md) | Formed structure changes supported outputs; retained material, paid repair, alternative assembly routes and later reconfiguration matter to actual histories. | First demonstration that organization matters beyond raw quantity, or that a repair can consume the support needed for subsequent output. |
+| [FormationSupport](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean) | Actual local expenditure can require a prior capture in the same history, and an actual prefix determines the stocks available to its continuation. | First general observation that an absent resource must actually arrive before use, or first prohibition of source resets. |
+
+The intended addition is narrower: a **reusable origin/entry argument over an arbitrary reaction family**, with a new biological comparison separating retained functional organization from merely present material. This is mathematical generalization and correspondence work; it is not a claim that the original core supplied molecular reaction laws without premises.
+
+## 2. What the general derivation should establish
+
+For a selected organizing pool, inspect every allowed reaction that can introduce a member. A pool-preserving closure condition must be derived from the declared prestate requirements and update, not supplied as the desired conclusion that later function requires inherited organization. If every pool-producing reaction requires an already present pool participant, an initially empty pool has no admitted route of entry. If some reaction does not satisfy that condition, its actual occurrence is a candidate entry event; merely adding the recipe to the vocabulary is not its realization.
+
+Applied to an actual productive event, the useful result is an origin disjunction: the required organization was available initially, or an actual earlier prefix contains the relevant entry. All declared alternative recipes must be included. The result need not select one privileged repair operation. A spontaneous, imported or assembly route can defeat a claimed closed pool; that is a correction to the represented dependency, not a failure of life or a refutation of the whole generative theory.
+
+Catalytic participation and consumption require precise multiplicities. The same copy must not be counted both as retained catalyst and consumed material unless the reaction semantics explicitly warrants that convention. Required catalysts must exist before the transition; the product cannot retroactively enable its own production. The actual update and prefix must retain the resulting stock changes.
+
+Count-level origin is weaker than molecular genealogy. Initial population presence does not by itself establish uninterrupted retention of the particular molecule later acting. Conversely, material from a disassembled complex may participate in a reconstructed complex without preserving the earlier complex's identity. Individual ancestry or binding geometry would need a richer representation and correspondence, as the earlier carrier work already explains.
+
+## 3. The organizing pool must earn its biological meaning
+
+An active/protected-complex pool need not be closed if the realization admits assembly from separately retained subunits or components. Such assembly is a genuine entry route even when no new protein synthesis is involved. Excluding it simply to prove inherited intact-complex necessity would predetermine the conclusion. The general entry theorem should admit this possibility and let the investigated history identify the actual route.
+
+Protected, inactive, active and damaged forms must have independently meaningful roles in the reaction mechanism and functional assay. Naming a species “functional” cannot substitute for demonstrating the output it enables. Likewise, a reporter product should be newly produced in the relevant history rather than merely carried into the endpoint from an initial stock. The target remains a specified function; one reporter output does not certify complete organismal viability.
+
+The proposed ribosome comparison is potentially discriminating because it can separate equal prepared abundance from unequal realized protein synthesis, and retained protected organization from new synthesis during reactivation. The relevant evidence must establish the normalization, preparation, functional readout, intervention and alternatives. Prepared cell-free activity also depends on its other supplied components. A preparation's reduced activity does not make the tested protective route universally indispensable, and residual activity must remain visible.
+
+The strongest next comparison is therefore an actual intervention changing organization while the chosen bulk inputs are controlled, followed by a functionally meaningful output or resumption assay. A repair or reactivation intervention should identify what it restores; an associated protein loss alone does not prove that replacing that protein is sufficient. These are mechanistic differences within one history, not an independent living subject placed outside its material conditions.
+
+## 4. What would be merely a supplied-interface restatement
+
+No new living derivation follows from defining an event as enabled exactly when a field called “alive,” “ready” or “organized” is true, then proving that successful activity had that field. The same problem remains if the field becomes a species count but its production, damage and functional role are unconstrained labels. A generic reaction theorem can validly expose implications of supplied chemistry; its biological importance depends on identifying the chemistry and activity independently.
+
+The proposed entry result should therefore be reported separately from three stronger questions: whether the productive event actually occurs, whether it realizes the chosen living function, and whether every independently specified living continuation has a dependency of this kind. An actual finite reconstruction witness can address the first under its declared laws. Mechanism and evidence address the second. A single reaction family cannot settle the third by definition.
+
+## 5. Evidence review
+
+The complete [organization evidence assessment](LIVING-ORGANIZATION-EVIDENCE.md) was independently read. Its investigator, not this reviewer, read the primary passages from Feaga and colleagues' 2020 study and Feaga and Dworkin's 2021 study. The note preserves its indexed-text access limits, omitted supplements and raw data, and the shared laboratory provenance of the two publications. No additional primary reading or replication is claimed here.
+
+The comparison supplies a substantive discrimination: equal **nominal** prepared ribosome loading does not guarantee equal protein output following defects in the studied protection mechanism. The binding-capable but dimerization-defective comparison is more informative than deletion alone. Residual output remains, and the note does not infer zero competent complexes or prove that replacing S2/S3 is sufficient. Similar whole-cell abundance is not identification of the component's localization or assembly state.
+
+The later study also supports the contribution of retained dimers to prepared protein synthesis and distinguishes initial dimer resolution from a requirement for new protein synthesis. The transcription-linked cellular intervention and cell-free reporter assay remain separate experiments; they are not silently joined into one tracked molecular history. Neither result says that translation proceeds without previously formed machinery or that no other route can produce a competent complex.
+
+**Evidence verdict:** no substantive blocker at the stated scope. The studies identify a functional relationship that a purely amount-based recovery model leaves unresolved. They do not empirically establish an empty organizing pool, exclude every alternative formation route, or turn one impaired preparation into categorical impossibility. The formal application's closure and function correspondence therefore retain their own obligations.
+
+The complete [catalytic-network comparison](LIVING-ORGANIZATION-NETWORKS.md) was also read. Its author directly read the specified opening sections of Steel and Hordijk; this reviewer did not independently reread that source. The note uses the RAF/CAF distinction to compare eventual network organization with conditions present at the time of actual formation. It preserves spontaneous, import and assembly alternatives and does not attribute biological closure or a new Lean theorem to the primary source. No substantive overreach was found.
+
+## 6. Final source and verification review
+
+Pending the concrete module and proof note. No new mathematical result is claimed by the design and evidence review above.

@@ -1,5 +1,7 @@
 # SOURCES manifest
 
+**本次 alignment 伦理奠基的公理纠正，2026年10月8日：** [Ren 原话](15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)明确要求停止无公理追索，沿规范公理完成当前任务。选定消息逐字记录，AI 执行解释另列；先前无假设工作保留历史及其他会话范围。
+
 **Zero-axiom complete-classification continuation, 7 October 2026:** [Ren's exact question and instruction](15-codex-theory-conversations/2026-10-07-zero-axiom-complete-classification.md) are preserved separately from AI interpretation. The instruction selects the stronger zero-axiom route for this continuation without erasing the earlier explicit-axiom investigation. The [source assessment](../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-SOURCES.md) records the investigator's direct selected reading of Sen's published Nobel lecture, journal pp. 352–353, 356 and 359–360, from an openly hosted reproduction, with byte hash and access limits. This is link-only preservation; no external source bytes, empirical intervention or universal ethical proof is claimed. Root integrated the assessment without claiming an additional independent primary reading.
 
 **生成伦理前提路线获准继续，2026年10月7日：** [Ren 的原话“ok，请沿这个方向继续”](15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md)连同指向的论证背景单独保存，不视为认可所有后续 AI 比较规则。[首轮整合](../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md)使用直接输入和既有条件证明，增加形式推理审计及独立概念审查，没有引入新外部文献或经验数据。

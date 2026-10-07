@@ -1,5 +1,9 @@
 # Generative Existence (生生不息论)
 
+**alignment 伦理公理路线，2026年10月8日：** [Ren 要求停止无公理追索](../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)。本次工作从 G0 的明确规范公理继续完成比较与实践推导，之后独立 agent 验证；不再以第一公理自身尚未证明为由停工。[当前执行范围](unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#current-alignment-task-an-explicit-normative-axiom)将规范起点、额外承诺及形式结论分开，保留已有结果和其他研究。
+
+**Potentialist mathematical truth checked, 8 October 2026.** [The new integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md) shows that future-stage quantifiers preserve the declared relational first-order truth under stable atomic meanings, growing domains and access to every target object from every stage. Natural-number prefixes give an instance with every stage finite and none full. **22 new Lean theorems / 45 audits pass.** A branching counterexample separates initial reachability from persistent witness access. The affirmative argument, independent internal review and primary-source assessment are integrated; the established mirroring approach is not claimed as novel. Independent modal warrant, higher-order admission and exclusive root grounding remain open.
+
 **损失怎样改变比较根据，2026年10月8日：** [新研究](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md)将已辩护取舍的匹配减损运输、第一次混合比较与有限牺牲上限分开。16 项新 Lean 定理／23 项声明审计支持第一项及弱规则的边界；伦理锚点、普遍根据与实践要求仍未全部完成。下一步直接研究接续相对有限完成的伦理分量。[当前表述](unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#loss-sensitive-comparison-and-the-first-mixed-anchor)保留这些范围。
 
 **生成—共同实现—伦理的完整中英链，2026年10月8日：** [62项持续维护对照表](results/GENERATIVITY-CHAIN.md)串联根基、共同实现、生生伦理、情境理由、学习、良知与智慧，逐项附原文、证明及评审入口。保留各项实际完成范围，并随相关研究更新；它是既有成果的阅读索引，不是新增的普遍证明。

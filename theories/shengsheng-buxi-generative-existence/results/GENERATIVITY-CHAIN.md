@@ -122,10 +122,10 @@ Theories, methods, mechanisms, propositions and verification packages are differ
 
 ## 持续维护 / Ongoing maintenance
 
-这份表在原位置持续更新。关联研究发生实质变化时，同时修订中英文论断、状态与链接；每日检查补齐其他会话产生的变化。未发现相关变化时不改写内容，也不重复运行已通过的证明。
+这份表在原位置持续更新。关联研究发生实质变化时，同时修订中英文论断、状态与链接。未发现相关变化时不改写内容，也不重复运行已通过的证明。
 
-Maintain this same document in place. When linked research changes substantively, revise both languages, status and links together; a daily check catches changes from other chats. Without relevant changes, leave the content and successful proof runs untouched.
+Maintain this same document in place. When linked research changes substantively, revise both languages, status and links together. Without relevant changes, leave the content and successful proof runs untouched.
 
-生成文件的编辑来源是 [双语数据](data/generativity-chain.json)。源文件摘要只用于发现变化，不能代替重读与判断；维护流程、每日检查和更新记录见 [维护记录 / Maintenance record](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md)。
+生成文件的编辑来源是 [双语数据](data/generativity-chain.json)。源文件摘要只用于发现变化，不能代替重读与判断；维护流程和更新记录见 [维护记录 / Maintenance record](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md)。
 
-The [bilingual data](data/generativity-chain.json) is the editable source. Source hashes detect changes; they do not replace reading or judgment. Follow the linked maintenance record for the daily workflow and update history.
+The [bilingual data](data/generativity-chain.json) is the editable source. Source hashes detect changes; they do not replace reading or judgment. Follow the linked maintenance record for the maintenance workflow and update history.

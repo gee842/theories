@@ -1,0 +1,86 @@
+{
+  "checked_at_utc": "2026-10-07T18:55:50.966567+00:00",
+  "scope": "Owned document, source-binding and preservation checks; no new Lean run, empirical test or metaphysical proof.",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md": "006b1daa600c0050f477d45faf0f01c5f36ceaf23131c875e41f985e56149e7f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md": "c5832c2bba1bd828ffb2bedd6a43c06e3bf61421efe3c0770ae21bc2ac559d28",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md": "6bcbeec80d84e84d2b4f6c47ec535d50295deccf64d2642a831987c298bc13ba",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-SOURCES.md": "4824e1d7357d227f1b1d7e16692bde442a9a4016b2abb9c9b9c0e9191bb58e4d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md": "32917c68eb837ec51bfa48357b47445044eec053b0f7661b76612d60c56dd91f",
+    "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md": "389cdbf53a4c3d6b468415b9c9d4073f041c8a49208dfa334745ab2dcccc4577"
+  },
+  "shared_additions": [
+    {
+      "path": "RESEARCH.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md",
+      "insertion_present": true,
+      "prior_bytes_preserved_at_write": true,
+      "prior_content_still_matches": true
+    }
+  ],
+  "local_links_checked": 47,
+  "heading_fragments_checked": 0,
+  "previous_proof_assets_preserved": 110,
+  "new_lean_receipts": {
+    "potential": {
+      "sha256": "f8530242f02042f7b0c32b5f6cb4d9eb5fffc24803b5a2e88ddf6937cb274daa",
+      "theorems_checked": 22,
+      "named_declarations_audited": 45
+    }
+  },
+  "lean_theorems_checked": 22,
+  "lean_named_declaration_audits": 45,
+  "internal_review": "Independent affirmative and critical-review agents plus root primary-source assessment, integration and fresh frozen-source Lean build. Review independently recomputed all eight receipt bindings. Internal AI review, not external peer review. The critical-review agent also read the final integration and source assessment: no substantive blockers, no edits requested; classical semantic interpretation remains distinct from the correspondence proof dependency and modal warrant.",
+  "concurrent_change_observation": "Shared documents contain concurrent ethical, living-dependency and results-catalogue edits. Only the recorded owned insertions were added; original bytes were preserved at each write. Later unrelated edits may change whole-file hashes.",
+  "manifest_sha256": "918441896ffb6302512a5bf516ff1945afa3a83afcad50477d34d6a82febb139",
+  "checker_sha256": "34a93c46a50f6910746a06d5a29974039ae61c981db73857ca99c9907a19a3a5",
+  "errors": [],
+  "passed": true
+}

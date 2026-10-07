@@ -1,6 +1,6 @@
 # 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance
 
-Recorded 8 October 2026, Asia/Bangkok. [Ren's request and selections](../../../../sources/15-codex-theory-conversations/2026-10-08-bilingual-generativity-chain-index.md) authorize a complete bilingual table of the connected chain, saved as a document and updated when the research changes, with daily checks. This record is AI-authored.
+Recorded 8 October 2026, Asia/Bangkok. [Ren's request and selections](../../../../sources/15-codex-theory-conversations/2026-10-08-bilingual-generativity-chain-index.md) authorize a complete bilingual table of the connected chain, saved as a document and updated when the research changes. The later [cancellation directive](../../../../sources/15-codex-theory-conversations/2026-10-08-cancel-daily-theory-chain-update.md) removes the daily scheduled check. This record is AI-authored.
 
 ## 文档与范围 / Document and coverage
 
@@ -16,13 +16,13 @@ The table points to the same original research as the broader results catalogue,
 
 - [配对数据 / Paired data](../../../../theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json)：双语行、稳定ID、相对链接、内容更新日期、已读来源哈希、已检查页面清单。
 - [生成与检查脚本 / Renderer and checker](build_generative_chain.py)：生成同一 Markdown 文档，检查配对字段、ID、文件、章节锚点、来源版本及输出一致性。
-- [用户指令 / User source](../../../../sources/15-codex-theory-conversations/2026-10-08-bilingual-generativity-chain-index.md)：保留范围和每日检查的实际授权。
+- [用户指令 / User source](../../../../sources/15-codex-theory-conversations/2026-10-08-bilingual-generativity-chain-index.md)：保留原始范围与历史授权；每日安排已由后续指令取消。
 
 数据中的 `reviewed_sources` 只是已核读版本的指纹，不能证明摘要正确。`known_discovery_paths` 只表明哪些文件路径已经检查是否进入本表，不表示所有这些文档都已全文重读、属于本表范围或已经证明。
 
 Source fingerprints record reviewed versions; they do not establish semantic correctness. The discovery inventory records inspected page paths, not full-text reading or inclusion of every page. Watch existing linked files plus `RESEARCH.md`, and inspect newly added current-theory/root-foundation pages for relevance.
 
-## 每日与研究后的维护流程 / Daily and post-research workflow
+## 研究后的维护流程 / Post-research maintenance workflow
 
 1. 从仓库指令与当前 `RESEARCH.md` 开始，检查 Git 状态，保留其他会话的工作。运行 `--changes` 查看已关联来源的变化及新增/删除页面。
 2. 重读变化的原文；新页面先判断是否进入本理论链。核对当前结论、明示假设、反例、中文与英文意义、原有回执与当前源码是否仍对应。只有来源真的支持，才升级完成状态。
@@ -45,15 +45,13 @@ python3 _process/research/2026-10-05-generative-foundation-review/root-foundatio
 
 `--record-review` 的示例路径需要替换为实际已读文件；它不自动更正文字。渲染会拒绝未确认的已关联来源变化。新增页面仍由维护者判断，不自动复制章节或新增结论。
 
-## 日程 / Schedule
+## 日程已取消 / Schedule cancelled
 
-用户选择每天检查、有变化才更新。已创建“更新中英生成理论链”，状态 ACTIVE，自动任务标识 `automation`；每天09:00，按本地时区 Asia/Bangkok，在本聊天继续维护同一仓库文档。创建后已回读任务设置确认名称、状态、每日时刻及目标聊天。没有相关变化时保持安静；只报告实质更新、维护失败或需要用户处理的问题。
+Ren 随后要求：“把之前每天更新的规则去掉”。已通过应用工具删除“更新中英生成理论链”自动任务（原标识 `automation`），每日09:00检查不再执行。仓库指令、阅读文档及生成器已移除有效的每日安排；现有文档和研究发生变化时的同步维护保留。
 
-Ren selected a daily change-only check. The task “更新中英生成理论链” is ACTIVE, identifier `automation`, scheduled for 09:00 in the local Asia/Bangkok timezone and attached to this chat. Its saved name, status, daily time and target chat were read back after creation. Stay quiet on unchanged, nonactionable state; report meaningful updates, failure or a need for user input.
+Ren subsequently requested removal of the daily update rule. The app tool deleted “更新中英生成理论链” (former identifier `automation`), ending the daily 09:00 check. Repository instructions, the reading document and its renderer no longer prescribe daily upkeep. The document and maintenance during relevant research remain available.
 
-本地文件的定期任务需要电脑开机且桌面应用运行，见[官方任务文档](https://learn.chatgpt.com/docs/automations?surface=app)。本索引维护规则也已接入仓库工作指令，后续研究无需等到每日检查才同步。
-
-Local scheduled work requires the computer and desktop app to be running, as described in the linked official documentation. The repository maintenance instruction also supports updating this index during research, without waiting for the daily check.
+[后续原话 / Follow-up directive](../../../../sources/15-codex-theory-conversations/2026-10-08-cancel-daily-theory-chain-update.md)取代先前的日程授权；原始请求与初次检查回执保留历史范围，不代表仍有活动日程。 / The follow-up supersedes the scheduling authorization; the original request and initial receipt remain historical records, not active schedules.
 
 ## 初次核验与保存 / Initial verification and preservation
 
@@ -66,6 +64,7 @@ Four shared-file pre-edit byte snapshots and original link bases are recorded in
 | 日期 / Date | 变化 / Change |
 |---|---|
 | 2026-10-08 | 建立62项中英理论链索引、来源版本和维护流程；安排用户要求的每日变化检查。 / Created the 62-entry bilingual chain, source versions and maintenance workflow; arranged the requested daily change check. |
+| 2026-10-08 | 按后续指令删除每日自动任务并移除每日维护规则；理论内容保持不变。 / Deleted the daily automation and removed the daily-maintenance rule at Ren’s subsequent request; theory content unchanged. |
 
 ## 交付前独立复核 / Independent editorial review before delivery
 
