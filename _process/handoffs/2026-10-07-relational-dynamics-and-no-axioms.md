@@ -4,7 +4,7 @@
 
 ## Where the work is
 
-- Branch: `claude/project-thread-x1q9hl` on `yongxu/theories`, merged into `main` on 7 October 2026 (fast-forward to `ab995e9`, after merging main into the branch four times this round). The branch and `main` match as of this file's commit.
+- Branch: `claude/project-thread-x1q9hl` on `yongxu/theories`, merged into `main` on 7 October 2026 (fast-forward to `ab995e9`, after merging main into the branch four times this round). The branch and `main` match as of this file's commit. As of 7 October 09:45 UTC, main had no newer commits and the tree was clean, so the checker runs above are current.
 - Lean: 4.29.1 with no Mathlib. In the cloud it is at `/opt/lean-4.29.1-linux/bin`; put it on `PATH` and every checker named below runs. See the team memory `lean-build-in-cloud`.
 
 ## What is proved, and where
@@ -31,6 +31,12 @@ Rerun after the merge with main: the contact-formation, renewal, naturalism, con
 1. **Dynamics selection, now narrowed.** Once neither carrier identity nor event identity is supplied, a dynamics differs only in where continuation is kept or lost. Event identity is still a supplied distinction, and `labels_carry_remaining_difference` shows that continuation alone does not select among labelled dynamics. Reading "continuation is what generativity selects" is interpretation, not a theorem.
 2. **Evaluation direction.** This belongs to the naturalism thread. On the merged tree, all 147 of its audits are empty.
 3. **Lean's own logic.** It cannot be removed from inside Lean, because of Gödel's second incompleteness theorem. Possible mitigations are a minimal list of kernel rules or an independent checker.
+
+## Resume point
+
+The work stopped at a continuable position: every proof step is finished and committed, and no file is half-written. To continue, spawn a thread on `main` with this brief:
+
+> Continue the dependency-map thread from `_process/handoffs/2026-10-07-relational-dynamics-and-no-axioms.md`. Read item 1 of `PROCESS-LAW-OPEN-ITEMS-CONTEXT.md` and `deeper/RelationalContinuation.lean`, then prove whether event identity can be read relationally (the next step below). Follow Ren's rules: no axioms at all, monist and relational, and commit and merge to main after each finished piece.
 
 ## Exact next step
 
