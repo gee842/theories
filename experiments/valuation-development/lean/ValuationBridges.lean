@@ -60,16 +60,20 @@ variable {S T : Type}
 theorem wsum_append (d e : Dist S) (f : S → Nat) :
     wsum (d ++ e) f = wsum d f + wsum e f := by
   induction d with
-  | nil => simp [wsum]
-  | cons x d ih => obtain ⟨p, s⟩ := x; simp [wsum, ih, Nat.add_assoc]
+  | nil => exact (Nat.zero_add _).symm
+  | cons x d ih =>
+    obtain ⟨p, s⟩ := x
+    show p * f s + wsum (d ++ e) f = p * f s + wsum d f + wsum e f
+    rw [ih, Nat.add_assoc]
 
 theorem wsum_scale (e : Dist S) (p : Nat) (f : S → Nat) :
     wsum (e.map (fun x => (p * x.1, x.2))) f = p * wsum e f := by
   induction e with
-  | nil => simp [wsum]
+  | nil => rfl
   | cons x e ih =>
     obtain ⟨q, s⟩ := x
-    simp only [List.map, wsum, ih, Nat.mul_add, Nat.mul_assoc]
+    show p * q * f s + wsum (e.map (fun x => (p * x.1, x.2))) f = p * (q * f s + wsum e f)
+    rw [ih, Nat.mul_add, AF.mul_assoc]
 
 theorem wsum_bind (d : Dist S) (k : S → Dist T) (f : T → Nat) :
     wsum (wbind d k) f = wsum d (fun s => wsum (k s) f) := by
@@ -77,7 +81,9 @@ theorem wsum_bind (d : Dist S) (k : S → Dist T) (f : T → Nat) :
   | nil => rfl
   | cons x d ih =>
     obtain ⟨p, s⟩ := x
-    simp only [wbind, wsum, wsum_append, wsum_scale, ih]
+    show wsum ((k s).map (fun e => (p * e.1, e.2)) ++ wbind d k) f =
+      p * wsum (k s) f + wsum d (fun s => wsum (k s) f)
+    rw [wsum_append, wsum_scale, ih]
 
 theorem wsum_le (d : Dist S) (f g : S → Nat) (h : ∀ e ∈ d, f e.2 ≤ g e.2) :
     wsum d f ≤ wsum d g := by
@@ -85,7 +91,7 @@ theorem wsum_le (d : Dist S) (f g : S → Nat) (h : ∀ e ∈ d, f e.2 ≤ g e.2
   | nil => exact Nat.le_refl _
   | cons x d ih =>
     obtain ⟨p, s⟩ := x
-    simp only [wsum]
+    show p * f s + wsum d f ≤ p * g s + wsum d g
     have h1 : f s ≤ g s := h (p, s) (List.mem_cons_self ..)
     have h2 := ih (fun e he => h e (List.mem_cons_of_mem _ he))
     exact Nat.add_le_add (Nat.mul_le_mul_left p h1) h2
@@ -98,27 +104,30 @@ theorem wsum_congr (d : Dist S) (f g : S → Nat) (h : ∀ e ∈ d, f e.2 = g e.
 theorem wsum_const_mul (d : Dist S) (c : Nat) (f : S → Nat) :
     wsum d (fun s => c * f s) = c * wsum d f := by
   induction d with
-  | nil => simp [wsum]
+  | nil => rfl
   | cons x d ih =>
     obtain ⟨p, s⟩ := x
-    simp only [wsum, ih, Nat.mul_add]
-    rw [Nat.mul_left_comm]
+    show p * (c * f s) + wsum d (fun s => c * f s) = c * (p * f s + wsum d f)
+    rw [ih, Nat.mul_add, AF.mul_left_comm]
 
 theorem wsum_const (d : Dist S) (c : Nat) : wsum d (fun _ => c) = c * wtotal d := by
   unfold wtotal wmass
   rw [← wsum_const_mul]
-  simp
+  exact wsum_congr d _ _ (fun _ _ => (Nat.mul_one c).symm)
 
 theorem mem_wbind {d : Dist S} {k : S → Dist T} {t : Nat × T} (h : t ∈ wbind d k) :
     ∃ e ∈ d, ∃ f ∈ k e.2, t.2 = f.2 := by
   induction d with
-  | nil => simp [wbind] at h
+  | nil => exact absurd h AF.not_mem_nil
   | cons x d ih =>
     obtain ⟨p, s⟩ := x
-    simp only [wbind, List.mem_append, List.mem_map] at h
-    rcases h with ⟨f, hf, rfl⟩ | h
-    · exact ⟨(p, s), List.mem_cons_self .., f, hf, rfl⟩
-    · obtain ⟨e, he, f, hf, ht⟩ := ih h
+    have h' : t ∈ (k s).map (fun e => (p * e.1, e.2)) ++ wbind d k := h
+    cases AF.mem_append h' with
+    | inl h =>
+      obtain ⟨f, hf, hft⟩ := AF.mem_map h
+      exact ⟨(p, s), List.mem_cons_self .., f, hf, hft ▸ rfl⟩
+    | inr h =>
+      obtain ⟨e, he, f, hf, ht⟩ := ih h
       exact ⟨e, List.mem_cons_of_mem _ he, f, hf, ht⟩
 
 /-- Invariants carry along sequential composition. -/
@@ -149,13 +158,15 @@ theorem wtotal_bind (d : Dist S) (k : S → Dist T) (J : S → Bool) (q : Nat)
   intro e he
   have := hk e.2 (hJ e he)
   unfold wtotal wmass at this
-  simpa using this
+  exact this.trans (Nat.mul_one q).symm
 
 theorem wmass_le_of_imp (d : Dist S) (P Q : S → Bool)
     (h : ∀ e ∈ d, P e.2 = true → Q e.2 = true) : wmass P d ≤ wmass Q d := by
   apply wsum_le
   intro e he
-  cases hp : P e.2 <;> simp [h e he, hp]
+  cases hp : P e.2 with
+  | false => exact Nat.zero_le _
+  | true => rw [h e he hp]; exact Nat.le_refl _
 
 theorem wmass_le_total (d : Dist S) (P : S → Bool) : wmass P d ≤ wtotal d :=
   wmass_le_of_imp d P _ (fun _ _ _ => rfl)
@@ -183,7 +194,7 @@ theorem escape_bound {S X : Type} (k : X → S → Dist S) (J G : S → Bool) (r
       (∀ e ∈ wrun k xs d, J e.2 = true) := by
   intro xs
   induction xs with
-  | nil => intro d hd; exact ⟨by simp [wrun], by simp [wrun], fun e he => hd e he⟩
+  | nil => intro d hd; exact ⟨Nat.le_of_eq (Nat.one_mul _).symm, (Nat.one_mul _).symm, fun e he => hd e he⟩
   | cons x xs ih =>
     intro d hd
     have hd' : ∀ e ∈ wbind d (k x), J e.2 = true :=
@@ -192,17 +203,19 @@ theorem escape_bound {S X : Type} (k : X → S → Dist S) (J G : S → Bool) (r
     have hstep : wmass (fun t => !G t) (wbind d (k x)) ≤ r * wmass (fun t => !G t) d := by
       apply wmass_bind_le d (k x) _ _ J r hd
       intro s hs
-      cases hg : G s
-      · simpa using hesc x s hs hg
-      · simp [habs x s hs hg]
+      show wmass (fun t => !G t) (k x s) ≤ r * (if (!G s) = true then 1 else 0)
+      cases hg : G s with
+      | false => exact Nat.le_trans (hesc x s hs hg) (Nat.le_of_eq (Nat.mul_one r).symm)
+      | true => rw [habs x s hs hg]; exact Nat.zero_le _
     have htotal := wtotal_bind d (k x) J q hd (htot x)
     refine ⟨?_, ?_, h3⟩
-    · simp only [wrun, List.length_cons, Nat.pow_succ]
+    · show wmass (fun t => !G t) (wrun k xs (wbind d (k x))) ≤ r ^ xs.length * r * wmass (fun t => !G t) d
       calc wmass (fun t => !G t) (wrun k xs (wbind d (k x)))
           ≤ r ^ xs.length * wmass (fun t => !G t) (wbind d (k x)) := h1
         _ ≤ r ^ xs.length * (r * wmass (fun t => !G t) d) := Nat.mul_le_mul_left _ hstep
-        _ = r ^ xs.length * r * wmass (fun t => !G t) d := (Nat.mul_assoc ..).symm
-    · simp only [wrun, List.length_cons, Nat.pow_succ, h2, htotal, Nat.mul_assoc]
+        _ = r ^ xs.length * r * wmass (fun t => !G t) d := (AF.mul_assoc ..).symm
+    · show wtotal (wrun k xs (wbind d (k x))) = q ^ xs.length * q * wtotal d
+      rw [h2, htotal, AF.mul_assoc]
 
 /-! ## P1. Stochastic organizations and the coverage bound -/
 
@@ -229,8 +242,9 @@ theorem SOrg.step_mass_flag {M X A C : Type} [DecidableEq A] (o : SOrg M X A C) 
   apply wsum_congr
   intro e _
   rw [wsum_bind]
-  simp only [wsum, Nat.add_zero, Nat.one_mul]
-  rw [wsum_const (w x e.2) (if P (s.2 || decide (e.2 = a)) = true then 1 else 0), hw, Nat.mul_comm]
+  show wsum (w x e.2) (fun _ => 1 * (if P (s.2 || decide (e.2 = a)) = true then 1 else 0)) =
+    q' * (if P (s.2 || decide (e.2 = a)) = true then 1 else 0)
+  rw [wsum_const, hw, Nat.one_mul, Nat.mul_comm]
 
 theorem wmass_false {S : Type} (d : Dist S) : wmass (fun _ => false) d = 0 := by
   unfold wmass
@@ -260,14 +274,17 @@ theorem stochastic_coverage {M X A C : Type} [DecidableEq A] (o : SOrg M X A C) 
     (fun _ _ _ _ _ => rfl)
     (by
       intro x s _ hs
-      simp only at hs
+      have hs : s.2 = true := hs
+      show wmass (fun t => (fun b => !b) t.2) (o.step w a x s) = 0
       rw [o.step_mass_flag w a x s q' (hw x) (fun b => !b), hs]
-      simp [wmass_false])
+      show q' * wmass (fun _ => false) (o.select s.1 x) = 0
+      rw [wmass_false]; rfl)
     (by
       intro x s _ hs
-      simp only at hs
+      have hs : s.2 = false := hs
+      show wmass (fun t => (fun b => !b) t.2) (o.step w a x s) ≤ q' * r
       rw [o.step_mass_flag w a x s q' (hw x) (fun b => !b), hs]
-      exact Nat.mul_le_mul_left q' (by simpa using hr s.1 x))
+      exact Nat.mul_le_mul_left q' (hr s.1 x))
     (by
       intro x s _
       unfold wtotal
@@ -281,6 +298,16 @@ theorem stochastic_coverage {M X A C : Type} [DecidableEq A] (o : SOrg M X A C) 
     rw [this, Nat.mul_one, Nat.mul_comm q' r] at h1; exact h1
   · have : wtotal [((1 : Nat), (m, false))] = 1 := rfl
     rw [h2, this, Nat.mul_one, Nat.mul_comm q' q]
+
+private theorem mem_step {M X A C : Type} [DecidableEq A] {o : SOrg M X A C} {w : SWorld X A C}
+    {a : A} {x : X} {s : M × Bool} {f : Nat × (M × Bool)} (hf : f ∈ o.step w a x s) :
+    ∃ eb ∈ o.select s.1 x, ∃ ec ∈ w x eb.2,
+      f.2 = (o.retain s.1 x eb.2 ec.2, s.2 || decide (eb.2 = a)) := by
+  obtain ⟨eb, hb, f1, hf1, h1⟩ := mem_wbind hf
+  obtain ⟨ec, hc, f2, hf2, h2⟩ := mem_wbind hf1
+  have hf2 := AF.mem_singleton hf2
+  refine ⟨eb, hb, ec, hc, ?_⟩
+  rw [h1, h2, hf2]
 
 /-- The probabilistic form of §13: where retention is exact for the option reached
 and the consequence of `a` is fixed, the estimate of `a` is wrong only on histories
@@ -297,27 +324,33 @@ theorem stochastic_estimate_exact {M X A C : Type} [DecidableEq A] [DecidableEq 
   have inv : ∀ e ∈ wrun (o.step w a) xs [(1, (m, false))], e.2.2 = true → est e.2.1 a = v := by
     apply wrun_preserves (o.step w a) (fun s => s.2 = true → est s.1 a = v)
     · intro x s hs f hf
-      unfold SOrg.step at hf
-      obtain ⟨eb, _, f1, hf1, h1⟩ := mem_wbind hf
-      obtain ⟨ec, hc, f2, hf2, h2⟩ := mem_wbind hf1
-      simp only [List.mem_singleton] at hf2
-      rw [h1, h2, hf2]
+      obtain ⟨eb, _, ec, hc, h1⟩ := mem_step hf
+      rw [h1]
       intro hflag
-      by_cases hba : eb.2 = a
-      · rw [hba, hexact]; exact hfix x ec (hba ▸ hc)
-      · rw [hkeep _ _ _ _ hba]
-        have : s.2 = true := by simpa [hba] using hflag
-        exact hs this
+      have hflag : (s.2 || decide (eb.2 = a)) = true := hflag
+      cases (inferInstance : Decidable (eb.2 = a)) with
+      | isTrue hba =>
+        show est (o.retain s.1 x eb.2 ec.2) a = v
+        rw [hba, hexact]; exact hfix x ec (hba ▸ hc)
+      | isFalse hba =>
+        show est (o.retain s.1 x eb.2 ec.2) a = v
+        rw [hkeep _ _ _ _ hba]
+        cases AF.or_true_cases hflag with
+        | inl h => exact hs h
+        | inr h => exact absurd (AF.decide_true h) hba
     · intro e he
-      simp only [List.mem_singleton] at he
-      subst he; intro h; cases h
+      have he := AF.mem_singleton he
+      subst he; intro h; exact Bool.noConfusion h
   calc wmass (fun t => !decide (est t.1 a = v)) (wrun (o.step w a) xs [(1, (m, false))])
       ≤ wmass (fun t => !t.2) (wrun (o.step w a) xs [(1, (m, false))]) := by
         apply wmass_le_of_imp
         intro e he hne
-        cases hflag : e.2.2
-        · rfl
-        · simp [inv e he hflag] at hne
+        cases hflag : e.2.2 with
+        | false => rfl
+        | true =>
+          have hne : (!decide (est e.2.1 a = v)) = true := hne
+          rw [decide_eq_true (inv e he hflag)] at hne
+          exact Bool.noConfusion hne
     _ ≤ (r * q') ^ xs.length := (stochastic_coverage o w a q r q' hq hr hw m xs).1
 
 /-! ## P2. Witnesses -/
@@ -335,6 +368,12 @@ def epsGreedy : SOrg Est Unit Bool Nat where
   select m _ := let g := decide (m.onTrue > m.onFalse); [(2, g), (1, !g)]
   retain := greedy.retain
 
+private theorem epsGreedy_off (g : Bool) :
+    wmass (fun b => !decide (b = true)) [(2, g), (1, !g)] ≤ 2 :=
+  match g with
+  | true => by decide
+  | false => by decide
+
 /-- From the self-confirming underestimate of §12, persistent exploration makes the
 estimate of the better option exact on all but at most `2^n` of `3^n` units of
 weight: probability at least `1 - (2/3)^n`, for every length of history. -/
@@ -343,12 +382,14 @@ theorem eps_greedy_estimate_exact (xs : List Unit) :
       ≤ 2 ^ xs.length := by
   have := stochastic_estimate_exact epsGreedy richWorld.toS true estOf 4 3 2 1
     (fun m x c => rfl)
-    (fun m x b c hb => by cases b <;> simp_all [epsGreedy, greedy, estOf])
-    (fun x e he => by simp [World.toS, richWorld] at he; rw [he])
-    (fun m x => by simp [epsGreedy, wtotal, wmass, wsum])
-    (fun m x => by cases h : decide (m.onTrue > m.onFalse) <;> simp [epsGreedy, wmass, wsum, h])
+    (fun m x b c hb => match b, hb with
+      | false, _ => rfl
+      | true, hb => absurd rfl hb)
+    (fun x e he => by rw [AF.mem_singleton he]; rfl)
+    (fun m x => rfl)
+    (fun m x => epsGreedy_off (decide (m.onTrue > m.onFalse)))
     (fun x b => rfl) lowStart xs
-  simpa using this
+  exact this
 
 /-- The bound is attained: after three steps exactly 8 of 27 units of weight still
 hold the underestimate. -/
@@ -360,6 +401,33 @@ theorem eps_greedy_three_steps :
 /-- Noisy consequences: `true` yields 4 with weight 2 and 0 with weight 1 (mean 8/3),
 `false` yields 2 with weight 3. `true` is the better option in expectation. -/
 def noisyS : SWorld Unit Bool Nat := fun _ a => if a then [(2, 4), (1, 0)] else [(3, 2)]
+
+private theorem and_true_cases : ∀ {a b : Bool}, (a && b) = true → a = true ∧ b = true
+  | true, true, _ => ⟨rfl, rfl⟩
+
+private theorem mem_pair {α : Type} {x a b : α} : x ∈ [a, b] → x = a ∨ x = b
+  | .head _ => Or.inl rfl
+  | .tail _ (.head _) => Or.inr rfl
+  | .tail _ (.tail _ h) => nomatch h
+
+private theorem greedy_noisy_mem {s : Est × Bool} {x : Unit} {f : Nat × (Est × Bool)}
+    (hf : f ∈ greedy.toS.step noisyS true x s) :
+    ∃ ec ∈ noisyS x (greedy.select s.1 x),
+      f.2 = (greedy.retain s.1 x (greedy.select s.1 x) ec.2,
+        s.2 || decide (greedy.select s.1 x = true)) := by
+  obtain ⟨eb, heb, ec, hec, h⟩ := mem_step hf
+  have heb : eb = (1, greedy.select s.1 x) := AF.mem_singleton heb
+  subst heb
+  exact ⟨ec, hec, h⟩
+
+private theorem greedy_noisy_step (s : Est × Bool) (x : Unit) (b : Bool)
+    (hb : greedy.select s.1 x = b) :
+    greedy.toS.step noisyS true x s =
+      wbind [(1, b)] (fun b => wbind (noisyS x b) fun c =>
+        [(1, (greedy.retain s.1 x b c, s.2 || decide (b = true)))]) := by
+  show wbind [(1, greedy.select s.1 x)] _ = _
+  rw [hb]
+  rfl
 
 /-- Noise locks greedy choice into the worse option with probability tending to
 certainty: from a correct preference, the weight of histories not yet locked
@@ -375,31 +443,55 @@ theorem noisy_greedy_locks (xs : List Unit) :
   have hb := escape_bound (greedy.toS.step noisyS true) J (fun t => decide (t.1.onTrue = 0)) 2 3
     (by
       intro x s hs f hf
-      simp only [J, Bool.and_eq_true, Bool.or_eq_true, decide_eq_true_eq] at hs
-      obtain ⟨h2, h0 | h3⟩ := hs
-      · have hsel : greedy.select s.1 () = false := by simp [greedy, h0, h2]
-        simp [SOrg.step, Org.toS, wbind, hsel, noisyS] at hf
-        rcases hf with ⟨_, rfl⟩
-        simp [J, greedy, h0]
-      · have hsel : greedy.select s.1 () = true := by simp [greedy, h2]; omega
-        simp [SOrg.step, Org.toS, wbind, hsel, noisyS] at hf
-        rcases hf with ⟨_, rfl⟩ | ⟨_, rfl⟩ <;> simp [J, greedy, h2])
+      obtain ⟨⟨t, fa, tot⟩, flag⟩ := s
+      have hs : (decide (fa = 2) && (decide (t = 0) || decide (3 ≤ t))) = true := hs
+      obtain ⟨h2, h03⟩ := and_true_cases hs
+      have h2 : fa = 2 := AF.decide_true h2
+      subst h2
+      obtain ⟨ec, hec, hf2⟩ := greedy_noisy_mem hf
+      rw [hf2]
+      cases AF.or_true_cases h03 with
+      | inl h0 =>
+        have h0 : t = 0 := AF.decide_true h0
+        subst h0
+        have hec : ec ∈ [(3, 2)] := hec
+        rw [AF.mem_singleton hec]; rfl
+      | inr h3 =>
+        have hsel : greedy.select ⟨t, 2, tot⟩ x = true := decide_eq_true (AF.decide_true h3)
+        rw [hsel] at hec ⊢
+        cases mem_pair hec with
+        | inl h => rw [h]; rfl
+        | inr h => rw [h]; rfl)
     (by
       intro x s hs hg
-      simp only [J, Bool.and_eq_true, decide_eq_true_eq] at hs
-      simp only [decide_eq_true_eq] at hg
-      simp [SOrg.step, Org.toS, wbind, noisyS, wmass, wsum, greedy, hg])
+      obtain ⟨⟨t, fa, tot⟩, flag⟩ := s
+      have hs : (decide (fa = 2) && (decide (t = 0) || decide (3 ≤ t))) = true := hs
+      have h2 : fa = 2 := AF.decide_true (and_true_cases hs).1
+      have hg : decide (t = 0) = true := hg
+      have h0 : t = 0 := AF.decide_true hg
+      subst h2; subst h0
+      rfl)
     (by
       intro x s hs hg
-      simp only [J, Bool.and_eq_true, Bool.or_eq_true, decide_eq_true_eq] at hs
-      simp only [decide_eq_false_iff_not] at hg
-      have h3 : 3 ≤ s.1.onTrue := by omega
-      have hlt : s.1.onFalse < s.1.onTrue := by omega
-      simp [SOrg.step, Org.toS, wbind, noisyS, wmass, wsum, greedy, hlt])
+      obtain ⟨⟨t, fa, tot⟩, flag⟩ := s
+      have hs : (decide (fa = 2) && (decide (t = 0) || decide (3 ≤ t))) = true := hs
+      obtain ⟨h2, h03⟩ := and_true_cases hs
+      have h2 : fa = 2 := AF.decide_true h2
+      subst h2
+      have hg : decide (t = 0) = false := hg
+      have h3 : 3 ≤ t := by
+        cases AF.or_true_cases h03 with
+        | inl h0 => rw [hg] at h0; exact Bool.noConfusion h0
+        | inr h3 => exact AF.decide_true h3
+      have hsel : greedy.select ⟨t, 2, tot⟩ x = true := decide_eq_true h3
+      rw [greedy_noisy_step (⟨t, 2, tot⟩, flag) x true hsel]
+      exact Nat.le_refl _)
     (by
-      intro x s hs
-      cases h : greedy.select s.1 () <;> simp [SOrg.step, Org.toS, wbind, h, noisyS, wtotal, wmass, wsum])
-    xs [(1, (highStart, false))] (by intro e he; simp at he; subst he; decide)
+      intro x s _
+      cases h : greedy.select s.1 x with
+      | false => rw [greedy_noisy_step s x false h]; rfl
+      | true => rw [greedy_noisy_step s x true h]; rfl)
+    xs [(1, (highStart, false))] (fun e he => by rw [AF.mem_singleton he]; rfl)
   obtain ⟨h1, h2, h3⟩ := hb
   have e1 : wmass (fun t : Est × Bool => !decide (t.1.onTrue = 0)) [(1, (highStart, false))] = 1 := by decide
   have e2 : wtotal [((1 : Nat), (highStart, false))] = 1 := by decide
@@ -407,9 +499,12 @@ theorem noisy_greedy_locks (xs : List Unit) :
   rw [e2, Nat.mul_one] at h2
   refine ⟨h1, h2, ?_⟩
   intro e he h0
-  have := h3 e he
-  simp only [J, Bool.and_eq_true, decide_eq_true_eq] at this
-  simp [greedy, h0, this.1]
+  have hJ : (decide (e.2.1.onFalse = 2) && (decide (e.2.1.onTrue = 0) || decide (3 ≤ e.2.1.onTrue))) = true :=
+    h3 e he
+  have h2 : e.2.1.onFalse = 2 := AF.decide_true (and_true_cases hJ).1
+  show decide (e.2.1.onTrue > e.2.1.onFalse) = false
+  rw [h0, h2]
+  rfl
 
 /-- Recurring curiosity does not get locked: after six steps greedy choice has 665
 of 729 units of weight locked, curiosity 155. -/
@@ -451,20 +546,34 @@ def Ledger.par (hs : List Ledger) : Ledger :=
 more than the predecessor holds at the end (inheritance). -/
 theorem seq_sustained (g h : Ledger) (hg : g.Sustained) (hh : h.Sustained)
     (hinh : h.heldStart ≤ g.heldEnd) : (g.seq h).Sustained := by
-  unfold Ledger.Sustained Ledger.seq at *; simp only; omega
+  have hg : g.enacted + g.heldEnd ≤ g.heldStart + g.arrived := hg
+  have hh : h.enacted + h.heldEnd ≤ h.heldStart + h.arrived := hh
+  show g.enacted + h.enacted + h.heldEnd ≤ g.heldStart + (g.arrived + h.arrived)
+  calc g.enacted + h.enacted + h.heldEnd = g.enacted + (h.enacted + h.heldEnd) := Nat.add_assoc ..
+    _ ≤ g.enacted + (h.heldStart + h.arrived) := Nat.add_le_add_left hh _
+    _ ≤ g.enacted + (g.heldEnd + h.arrived) := Nat.add_le_add_left (Nat.add_le_add_right hinh _) _
+    _ = g.enacted + g.heldEnd + h.arrived := (Nat.add_assoc ..).symm
+    _ ≤ g.heldStart + g.arrived + h.arrived := Nat.add_le_add_right hg _
+    _ = g.heldStart + (g.arrived + h.arrived) := Nat.add_assoc ..
+
+private theorem add_add_add_swap (a b c d : Nat) : a + b + (c + d) = a + c + (b + d) := by
+  rw [Nat.add_assoc, Nat.add_left_comm b c d, ← Nat.add_assoc]
 
 /-- Sustained ledgers are closed under division. -/
 theorem par_sustained : ∀ hs : List Ledger, (∀ h ∈ hs, h.Sustained) → (Ledger.par hs).Sustained := by
   intro hs
   induction hs with
-  | nil => intro _; simp [Ledger.par, Ledger.Sustained]
+  | nil => intro _; exact Nat.le_refl 0
   | cons h hs ih =>
     intro hall
-    have h1 := hall h (List.mem_cons_self ..)
-    have h2 := ih (fun k hk => hall k (List.mem_cons_of_mem _ hk))
-    unfold Ledger.Sustained Ledger.par at *
-    simp only [List.map_cons, List.sum_cons] at *
-    omega
+    have h1 : h.enacted + h.heldEnd ≤ h.heldStart + h.arrived := hall h (List.mem_cons_self ..)
+    have h2 : (hs.map Ledger.enacted).sum + (hs.map Ledger.heldEnd).sum ≤
+        (hs.map Ledger.heldStart).sum + (hs.map Ledger.arrived).sum :=
+      ih (fun k hk => hall k (List.mem_cons_of_mem _ hk))
+    show h.enacted + (hs.map Ledger.enacted).sum + (h.heldEnd + (hs.map Ledger.heldEnd).sum) ≤
+      h.heldStart + (hs.map Ledger.heldStart).sum + (h.arrived + (hs.map Ledger.arrived).sum)
+    rw [add_add_add_swap, add_add_add_swap h.heldStart]
+    exact Nat.add_le_add h1 h2
 
 /-- A parent followed by its children, which together start with no more than the
 parent holds at the end, is sustained. -/
@@ -475,8 +584,9 @@ theorem branch_sustained (g : Ledger) (hs : List Ledger) (hg : g.Sustained)
 
 /-- A line of generations, each inheriting from the one before. -/
 def Inherits : List Ledger → Prop
+  | [] => True
+  | [_] => True
   | g :: h :: rest => h.heldStart ≤ g.heldEnd ∧ Inherits (h :: rest)
-  | _ => True
 
 /-- The whole line as one ledger. -/
 def lineLedger : Ledger → List Ledger → Ledger
@@ -489,14 +599,15 @@ theorem lineLedger_fields : ∀ (rest : List Ledger) (g : Ledger),
     (lineLedger g rest).heldStart = g.heldStart := by
   intro rest
   induction rest with
-  | nil => intro g; simp [lineLedger]
+  | nil => intro g; exact ⟨rfl, rfl, rfl⟩
   | cons h rest ih =>
     intro g
     obtain ⟨a, b, c⟩ := ih (g.seq h)
-    simp only [lineLedger, List.map_cons, List.sum_cons]
+    show (lineLedger (g.seq h) rest).enacted = g.enacted + (h.enacted + (rest.map Ledger.enacted).sum) ∧
+      (lineLedger (g.seq h) rest).arrived = g.arrived + (h.arrived + (rest.map Ledger.arrived).sum) ∧
+      (lineLedger (g.seq h) rest).heldStart = g.heldStart
     rw [a, b, c]
-    simp only [Ledger.seq]
-    exact ⟨by omega, by omega, trivial⟩
+    exact ⟨Nat.add_assoc .., Nat.add_assoc .., rfl⟩
 
 /-- The lineage prefix bound: along a line of sustained generations that inherit,
 total enacted plus what the last generation holds at its end is at most what the
@@ -516,6 +627,16 @@ theorem lineage_sustained : ∀ (rest : List Ledger) (g : Ledger),
     | nil => trivial
     | cons k rest' => exact ⟨h2.1, h2.2⟩
 
+private theorem count_le_enacted' : ∀ (hs : List Ledger), (∀ h ∈ hs, 1 ≤ h.enacted) →
+    hs.length ≤ (hs.map Ledger.enacted).sum
+  | [], _ => Nat.le_refl 0
+  | h :: hs, hpos => by
+    have h1 := hpos h (List.mem_cons_self ..)
+    have h2 := count_le_enacted' hs (fun k hk => hpos k (List.mem_cons_of_mem _ hk))
+    show hs.length + 1 ≤ h.enacted + (hs.map Ledger.enacted).sum
+    rw [Nat.add_comm h.enacted]
+    exact Nat.add_le_add h2 h1
+
 /-- Positive demand in every generation needs arrivals along the line: a line of
 `n + 1` sustained, inheriting generations each enacting at least one unit has
 arrivals totalling at least `n + 1` minus what the first held. -/
@@ -523,36 +644,32 @@ theorem lineage_needs_arrivals (g : Ledger) (rest : List Ledger) (hg : g.Sustain
     (hall : ∀ h ∈ rest, h.Sustained) (hinh : Inherits (g :: rest))
     (hpos : ∀ h ∈ g :: rest, 1 ≤ h.enacted) :
     rest.length + 1 ≤ g.heldStart + g.arrived + (rest.map Ledger.arrived).sum := by
-  have hs := lineage_sustained rest g hg hall hinh
+  have hs : (lineLedger g rest).enacted + (lineLedger g rest).heldEnd ≤
+      (lineLedger g rest).heldStart + (lineLedger g rest).arrived :=
+    lineage_sustained rest g hg hall hinh
   obtain ⟨he, ha, hst⟩ := lineLedger_fields rest g
-  unfold Ledger.Sustained at hs
   rw [he, ha, hst] at hs
-  have hsum : rest.length ≤ (rest.map Ledger.enacted).sum := by
-    clear hs he ha hst hinh hall
-    induction rest with
-    | nil => simp
-    | cons h rest ih =>
-      simp only [List.length_cons, List.map_cons, List.sum_cons]
-      have := hpos h (List.mem_cons_of_mem _ (List.mem_cons_self ..))
-      have := ih (fun k hk => by
-        rcases List.mem_cons.mp hk with rfl | hk
-        · exact hpos _ (List.mem_cons_self ..)
-        · exact hpos k (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ hk)))
-      omega
-  have := hpos g (List.mem_cons_self ..)
-  omega
+  have hsum : rest.length ≤ (rest.map Ledger.enacted).sum :=
+    count_le_enacted' rest (fun k hk => hpos k (List.mem_cons_of_mem _ hk))
+  have h1 : 1 ≤ g.enacted := hpos g (List.mem_cons_self ..)
+  calc rest.length + 1 ≤ (rest.map Ledger.enacted).sum + g.enacted := Nat.add_le_add hsum h1
+    _ = g.enacted + (rest.map Ledger.enacted).sum := Nat.add_comm ..
+    _ ≤ g.enacted + (rest.map Ledger.enacted).sum + (lineLedger g rest).heldEnd := Nat.le_add_right ..
+    _ ≤ g.heldStart + (g.arrived + (rest.map Ledger.arrived).sum) := hs
+    _ = g.heldStart + g.arrived + (rest.map Ledger.arrived).sum := (Nat.add_assoc ..).symm
 
 theorem count_le_enacted : ∀ (hs : List Ledger), (∀ h ∈ hs, 1 ≤ h.enacted) →
     hs.length ≤ (hs.map Ledger.enacted).sum := by
   intro hs
   induction hs with
-  | nil => intro _; simp
+  | nil => intro _; exact Nat.le_refl 0
   | cons h hs ih =>
     intro hpos
-    have := hpos h (List.mem_cons_self ..)
-    have := ih (fun k hk => hpos k (List.mem_cons_of_mem _ hk))
-    simp only [List.length_cons, List.map_cons, List.sum_cons]
-    omega
+    have h1 := hpos h (List.mem_cons_self ..)
+    have h2 := ih (fun k hk => hpos k (List.mem_cons_of_mem _ hk))
+    show hs.length + 1 ≤ h.enacted + (hs.map Ledger.enacted).sum
+    rw [Nat.add_comm h.enacted]
+    exact Nat.add_le_add h2 h1
 
 /-- Arrivals must keep coming late. Split a line into an earlier part and a later
 part in which every generation enacts at least one unit. Whatever the earlier part
@@ -563,13 +680,20 @@ theorem later_arrivals_needed (g : Ledger) (early late : List Ledger)
     (hg : g.Sustained) (hall : ∀ k ∈ early ++ late, k.Sustained)
     (hinh : Inherits (g :: (early ++ late))) (hpos : ∀ k ∈ late, 1 ≤ k.enacted) :
     late.length ≤ g.heldStart + g.arrived + (early.map Ledger.arrived).sum + (late.map Ledger.arrived).sum := by
-  have hs := lineage_sustained (early ++ late) g hg hall hinh
+  have hs : (lineLedger g (early ++ late)).enacted + (lineLedger g (early ++ late)).heldEnd ≤
+      (lineLedger g (early ++ late)).heldStart + (lineLedger g (early ++ late)).arrived :=
+    lineage_sustained (early ++ late) g hg hall hinh
   obtain ⟨he, ha, hst⟩ := lineLedger_fields (early ++ late) g
-  unfold Ledger.Sustained at hs
-  rw [he, ha, hst] at hs
-  simp only [List.map_append, List.sum_append] at hs
-  have := count_le_enacted late hpos
-  omega
+  rw [he, ha, hst, AF.map_append, AF.map_append, AF.sum_append, AF.sum_append] at hs
+  calc late.length ≤ (late.map Ledger.enacted).sum := count_le_enacted late hpos
+    _ ≤ (early.map Ledger.enacted).sum + (late.map Ledger.enacted).sum := Nat.le_add_left ..
+    _ ≤ g.enacted + ((early.map Ledger.enacted).sum + (late.map Ledger.enacted).sum) :=
+      Nat.le_add_left ..
+    _ ≤ g.enacted + ((early.map Ledger.enacted).sum + (late.map Ledger.enacted).sum) +
+        (lineLedger g (early ++ late)).heldEnd := Nat.le_add_right ..
+    _ ≤ g.heldStart + (g.arrived + ((early.map Ledger.arrived).sum + (late.map Ledger.arrived).sum)) := hs
+    _ = g.heldStart + g.arrived + (early.map Ledger.arrived).sum + (late.map Ledger.arrived).sum := by
+      rw [Nat.add_assoc g.heldStart g.arrived, Nat.add_assoc, Nat.add_assoc]
 
 /-- Without inheritance the bound fails: a successor that starts with more than its
 predecessor held, with nothing recorded as arriving, is sustained generation by
@@ -581,7 +705,7 @@ theorem lineage_needs_inheritance :
     oneUnit.Sustained ∧ oneUnit.Sustained ∧ ¬ Inherits [oneUnit, oneUnit] ∧
     ¬ (oneUnit.seq oneUnit).Sustained := by
   refine ⟨by decide, by decide, ?_, by decide⟩
-  simp [Inherits, oneUnit]
+  exact fun h => Nat.not_succ_le_zero 0 h.1
 
 /-- The ledger is silent about valuation: generations with opposite formed
 dispositions toward another center (§14, level 6) can carry the same sustained

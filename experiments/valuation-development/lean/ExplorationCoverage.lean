@@ -49,8 +49,9 @@ theorem unreached_estimate_kept (h : ExactForReached o w est v) :
   | nil => intro m a _; rfl
   | cons x xs ih =>
     intro m a hr
-    simp only [Org.reaches, Bool.or_eq_false_iff, decide_eq_false_iff_not] at hr
-    obtain ⟨hne, hrest⟩ := hr
+    have hr' : (decide (o.select m x = a) || o.reaches w (o.next w m x) xs a) = false := hr
+    obtain ⟨hdec, hrest⟩ := AF.or_false_cases hr'
+    have hne : ¬ o.select m x = a := AF.decide_false hdec
     show est (o.run w (o.next w m x) xs) a = est m a
     rw [ih _ _ hrest]
     exact hkeep _ _ _ _ _ (fun h' => hne h'.symm)
@@ -60,7 +61,10 @@ theorem reached_estimate_exact (h : ExactForReached o w est v) :
     ∀ (xs : List X) (m : M) (a : A), o.reaches w m xs a = true → est (o.run w m xs) a = v a := by
   intro xs
   induction xs with
-  | nil => intro m a hr; simp [Org.reaches] at hr
+  | nil =>
+    intro m a hr
+    have hf : false = true := hr
+    exact Bool.noConfusion hf
   | cons x xs ih =>
     intro m a hr
     show est (o.run w (o.next w m x) xs) a = v a
@@ -68,10 +72,15 @@ theorem reached_estimate_exact (h : ExactForReached o w est v) :
     | true => exact ih _ _ hlater
     | false =>
       rw [unreached_estimate_kept o w est v h xs _ a hlater]
-      simp only [Org.reaches, hlater, Bool.or_false, decide_eq_true_eq] at hr
+      have hr' : (decide (o.select m x = a) || o.reaches w (o.next w m x) xs a) = true := hr
+      rw [hlater] at hr'
+      have hsel : o.select m x = a := by
+        cases AF.or_true_cases hr' with
+        | inl hd => exact AF.decide_true hd
+        | inr hf => exact Bool.noConfusion hf
       obtain ⟨hexact, _, hstat⟩ := h
-      simp only [Org.next]
-      rw [hr, hexact, hstat]
+      show est (o.retain m x (o.select m x) (w x (o.select m x))) a = v a
+      rw [hsel, hexact, hstat]
 
 end Coverage
 
@@ -83,8 +92,8 @@ theorem coverage_equalizes {M X A C : Type} [DecidableEq A]
     (h₁ : ExactForReached o₁ w est v) (h₂ : ExactForReached o₂ w est v)
     (xs ys : List X) (m₁ m₂ : M)
     (hcov₁ : ∀ a, o₁.reaches w m₁ xs a = true) (hcov₂ : ∀ a, o₂.reaches w m₂ ys a = true) :
-    est (o₁.run w m₁ xs) = est (o₂.run w m₂ ys) := by
-  funext a
+    ∀ a, est (o₁.run w m₁ xs) a = est (o₂.run w m₂ ys) a := by
+  intro a
   rw [reached_estimate_exact o₁ w est v h₁ xs m₁ a (hcov₁ a),
       reached_estimate_exact o₂ w est v h₂ ys m₂ a (hcov₂ a)]
 
@@ -101,14 +110,17 @@ theorem reaches_append {M X A C : Type} [DecidableEq A] (o : Org M X A C) (w : W
     ∀ (xs ys : List X) (m : M) (a : A), o.reaches w m xs a = true → o.reaches w m (xs ++ ys) a = true := by
   intro xs
   induction xs with
-  | nil => intro ys m a h; simp [Org.reaches] at h
+  | nil =>
+    intro ys m a h
+    have hf : false = true := h
+    exact Bool.noConfusion hf
   | cons x xs ih =>
     intro ys m a h
+    have h' : (decide (o.select m x = a) || o.reaches w (o.next w m x) xs a) = true := h
     show (decide (o.select m x = a) || o.reaches w (o.next w m x) (xs ++ ys) a) = true
-    simp only [Org.reaches, Bool.or_eq_true] at h ⊢
-    rcases h with h | h
-    · exact Or.inl h
-    · exact Or.inr (ih ys _ a h)
+    cases AF.or_true_cases h' with
+    | inl hd => rw [hd]; rfl
+    | inr hr => rw [ih ys _ a hr]; exact Bool.or_true _
 
 /-! ## Witnesses: the greedy estimator and retained-condition exploration -/
 
@@ -117,7 +129,12 @@ def estOf (m : Est) (a : Bool) : Nat := if a then m.onTrue else m.onFalse
 theorem greedy_exact : ExactForReached greedy richWorld estOf (fun a => if a then 4 else 2) := by
   refine ⟨?_, ?_, ?_⟩
   · intro m x a c; cases a <;> rfl
-  · intro m x a c b hb; cases a <;> cases b <;> simp_all [greedy, estOf]
+  · intro m x a c b hb
+    cases a <;> cases b
+    · exact absurd rfl hb
+    · rfl
+    · rfl
+    · exact absurd rfl hb
   · intro x a; rfl
 
 /-- The greedy low starter never reaches `true`, for every length of history. -/
@@ -132,9 +149,12 @@ theorem greedy_low_never_covers : ∀ n : Nat,
   | succ k ih =>
     intro t
     have : greedy.next richWorld { onTrue := 1, onFalse := 2, total := t } () =
-        { onTrue := 1, onFalse := 2, total := t + 2 } := by simp [Org.next, greedy, richWorld]
-    simp only [Org.reaches, List.replicate_succ, this, ih, Bool.or_false]
-    simp [greedy]
+        { onTrue := 1, onFalse := 2, total := t + 2 } := rfl
+    show (decide (greedy.select { onTrue := 1, onFalse := 2, total := t } () = true) ||
+        greedy.reaches richWorld (greedy.next richWorld { onTrue := 1, onFalse := 2, total := t } ())
+          (List.replicate k ()) true) = false
+    rw [this, ih]
+    rfl
 
 /-- Retained-condition exploration that covers: optimistic initial estimates. The
 same greedy law, started with both estimates at 9, tries both options within two
@@ -143,9 +163,9 @@ def optimistic : Est := { onTrue := 9, onFalse := 9, total := 0 }
 
 theorem optimism_covers :
     (∀ a, greedy.reaches richWorld optimistic [(), ()] a = true) ∧
-    estOf (greedy.run richWorld optimistic [(), ()]) = estOf (greedy.run richWorld highStart [(), ()]) := by
+    ∀ a, estOf (greedy.run richWorld optimistic [(), ()]) a = estOf (greedy.run richWorld highStart [(), ()]) a := by
   refine ⟨fun a => by cases a <;> decide, ?_⟩
-  funext a; cases a <;> decide
+  intro a; cases a <;> decide
 
 /-- Retained-condition exploration that covers: a curiosity counter. Every third
 step the organization tries the option its estimates do not favour. The counter is
@@ -166,7 +186,12 @@ def curEst (m : Cur) (a : Bool) : Nat := estOf m.est a
 theorem curious_exact : ExactForReached curious richWorld curEst (fun a => if a then 4 else 2) := by
   refine ⟨?_, ?_, ?_⟩
   · intro m x a c; cases a <;> rfl
-  · intro m x a c b hb; cases a <;> cases b <;> simp_all [curious, greedy, curEst, estOf]
+  · intro m x a c b hb
+    cases a <;> cases b
+    · exact absurd rfl hb
+    · rfl
+    · rfl
+    · exact absurd rfl hb
   · intro x a; rfl
 
 def curLow : Cur := { est := lowStart, count := 0 }
@@ -179,9 +204,9 @@ theorem curiosity_covers_in_three :
 
 /-- After three steps, and for every longer history, the low and high curious
 starters hold identical, exact estimates: the underestimate is corrected. -/
-theorem curiosity_equalizes_forever : ∀ ys : List Unit,
-    curEst (curious.run richWorld curLow ([(), (), ()] ++ ys)) =
-    curEst (curious.run richWorld curHigh ([(), (), ()] ++ ys)) := by
+theorem curiosity_equalizes_forever : ∀ ys : List Unit, ∀ a,
+    curEst (curious.run richWorld curLow ([(), (), ()] ++ ys)) a =
+    curEst (curious.run richWorld curHigh ([(), (), ()] ++ ys)) a := by
   intro ys
   exact coverage_equalizes curious curious richWorld curEst _ curious_exact curious_exact _ _ _ _
     (fun a => reaches_append curious richWorld _ ys _ a (curiosity_covers_in_three a).1)

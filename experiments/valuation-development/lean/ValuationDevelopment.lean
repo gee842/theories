@@ -20,6 +20,8 @@
   condition `m`. It is not a claim about experience or ethical warrant.
 -/
 
+import AxiomFree
+
 namespace ValuationDevelopment
 
 structure Org (M X A C : Type) where
@@ -60,7 +62,10 @@ theorem no_retention_no_history {M X A C : Type} (o : Org M X A C) (w : World X 
   intro xs
   induction xs with
   | nil => intro m; rfl
-  | cons x xs ih => intro m; simp only [Org.run, hfix]; exact ih m
+  | cons x xs ih =>
+    intro m
+    show o.run w (o.retain m x (o.select m x) (w x (o.select m x))) xs = m
+    rw [hfix]; exact ih m
 
 /-- Changed choice is not changed valuation: a process with nothing retained in
 the organization (`M = Unit`) still chooses differently when an environmental
@@ -92,7 +97,8 @@ theorem agree_on_encountered {M X A C : Type} (o₁ o₂ : Org M X A C) (w : Wor
     intro m hall
     have hx : P x := hall x (List.mem_cons_self ..)
     have hrest : ∀ y ∈ xs, P y := fun y hy => hall y (List.mem_cons_of_mem _ hy)
-    simp only [Org.run]
+    show o₁.run w (o₁.retain m x (o₁.select m x) (w x (o₁.select m x))) xs =
+      o₂.run w (o₂.retain m x (o₂.select m x) (w x (o₂.select m x))) xs
     rw [hsel m x, hret m x _ _ hx]
     exact ih _ hrest
 
@@ -166,17 +172,144 @@ def sumSnd : List (Int × Int) → Int
   | [] => 0
   | p :: ps => p.2 + sumSnd ps
 
+/-! Axiom-free integer order facts used by `coupled_signal_bounded`. Core Lean's
+`Int` order lemmas reach `propext`; these private helpers reduce the needed
+monotonicity of addition to natural-number bookkeeping. -/
+
+private def irep : Int → Nat × Nat
+  | .ofNat n => (n, 0)
+  | .negSucc n => (0, n + 1)
+
+private theorem nsub_zero_of_le : ∀ {b a : Nat}, b ≤ a → b - a = 0
+  | 0, a, _ => Nat.zero_sub a
+  | b+1, 0, h => absurd h (Nat.not_succ_le_zero b)
+  | b+1, a+1, h => by rw [Nat.succ_sub_succ]; exact nsub_zero_of_le (Nat.le_of_succ_le_succ h)
+
+private theorem sNN_succ (a b : Nat) : Int.subNatNat (a + 1) (b + 1) = Int.subNatNat a b := by
+  unfold Int.subNatNat
+  rw [Nat.succ_sub_succ, Nat.succ_sub_succ]
+
+private theorem sNN_shift (a b : Nat) : ∀ k, Int.subNatNat (a + k) (b + k) = Int.subNatNat a b
+  | 0 => rfl
+  | k + 1 => by
+    show Int.subNatNat ((a + k) + 1) ((b + k) + 1) = _
+    rw [sNN_succ, sNN_shift a b k]
+
+private theorem sNN_eq {a b c d : Nat} (h : a + d = c + b) :
+    Int.subNatNat a b = Int.subNatNat c d := by
+  rw [← sNN_shift a b d, h, Nat.add_comm b d, sNN_shift]
+
+private theorem irep_spec : ∀ x : Int, x = Int.subNatNat (irep x).1 (irep x).2
+  | .ofNat n => by
+    show Int.ofNat n = Int.subNatNat n 0
+    unfold Int.subNatNat
+    rw [Nat.zero_sub]
+    rfl
+  | .negSucc n => rfl
+
+private theorem sNN_zero (n : Nat) : Int.subNatNat n 0 = Int.ofNat n := (irep_spec (.ofNat n)).symm
+
+private theorem irep_sNN (a b : Nat) :
+    (irep (Int.subNatNat a b)).1 + b = a + (irep (Int.subNatNat a b)).2 := by
+  cases h : b - a with
+  | zero =>
+    rw [Int.subNatNat_of_sub_eq_zero h]
+    show (a - b) + b = a + 0
+    rw [AF.sub_add_cancel (Nat.le_of_sub_eq_zero h)]
+    rfl
+  | succ k =>
+    rw [Int.subNatNat_of_sub_eq_succ h]
+    show 0 + b = a + (k + 1)
+    have hab : a ≤ b := match Nat.decLe a b with
+      | isTrue hl => hl
+      | isFalse hn => absurd (h.symm.trans (nsub_zero_of_le (Nat.le_of_not_le hn)))
+          (fun e => Nat.noConfusion e)
+    rw [Nat.zero_add, ← AF.add_sub_of_le hab, h]
+
+private theorem irep_add : ∀ x y : Int,
+    x + y = Int.subNatNat ((irep x).1 + (irep y).1) ((irep x).2 + (irep y).2)
+  | .ofNat n, .ofNat m => irep_spec (Int.ofNat (n + m))
+  | .ofNat n, .negSucc m => by
+    show Int.subNatNat n (m + 1) = Int.subNatNat (n + 0) (0 + (m + 1))
+    rw [Nat.zero_add] <;> rfl
+  | .negSucc n, .ofNat m => by
+    show Int.subNatNat m (n + 1) = Int.subNatNat (0 + m) ((n + 1) + 0)
+    rw [Nat.zero_add] <;> rfl
+  | .negSucc n, .negSucc m => by
+    show Int.negSucc (n + m + 1) = Int.subNatNat (0 + 0) ((n + 1) + (m + 1))
+    rw [Nat.succ_add] <;> rfl
+
+private theorem irep_neg : ∀ x : Int, irep (-x) = ((irep x).2, (irep x).1)
+  | .ofNat 0 => rfl
+  | .ofNat (_ + 1) => rfl
+  | .negSucc _ => rfl
+
+private theorem nonneg_sNN {p q : Nat} (h : Int.NonNeg (Int.subNatNat p q)) : q ≤ p :=
+  match Int.NonNeg.elim h with
+  | ⟨n, hn⟩ => by
+    have H := irep_sNN p q
+    rw [hn] at H
+    have H' : n + q = p := H
+    rw [← H']
+    exact Nat.le_add_left q n
+
+private theorem sub_irep (a b : Int) :
+    b - a = Int.subNatNat ((irep b).1 + (irep a).2) ((irep b).2 + (irep a).1) := by
+  show b + -a = _
+  rw [irep_add, irep_neg]
+
+private theorem int_le_irep {a b : Int} (h : a ≤ b) :
+    (irep b).2 + (irep a).1 ≤ (irep b).1 + (irep a).2 := by
+  have h' : Int.NonNeg (b - a) := h
+  rw [sub_irep] at h'
+  exact nonneg_sNN h'
+
+private theorem irep_int_le {a b : Int} (h : (irep b).2 + (irep a).1 ≤ (irep b).1 + (irep a).2) :
+    a ≤ b := by
+  show Int.NonNeg (b - a)
+  rw [sub_irep, sNN_eq (c := (irep b).1 + (irep a).2 - ((irep b).2 + (irep a).1)) (d := 0)
+    (by rw [Nat.add_zero, AF.sub_add_cancel h]), sNN_zero]
+  exact Int.NonNeg.mk _
+
+/-- Nat bookkeeping for `int_add_le_add`. -/
+private theorem nat_key {a1 a2 b1 b2 c1 c2 d1 d2 u1 u2 v1 v2 : Nat}
+    (hu : u1 + (a2 + c2) = (a1 + c1) + u2) (hv : v1 + (b2 + d2) = (b1 + d1) + v2)
+    (hab : b2 + a1 ≤ b1 + a2) (hcd : d2 + c1 ≤ d1 + c2) : v2 + u1 ≤ v1 + u2 := by
+  apply AF.le_of_add_le_add_right (b := (a2 + c2) + (b2 + d2))
+  have e1 : v2 + u1 + ((a2 + c2) + (b2 + d2)) = (u2 + v2) + ((b2 + a1) + (d2 + c1)) := by
+    rw [← Nat.add_assoc, Nat.add_assoc v2, hu]
+    repeat rw [Nat.add_assoc]
+    rw [Nat.add_left_comm c1 u2, Nat.add_left_comm a1 u2, Nat.add_left_comm v2 u2,
+      Nat.add_left_comm b2 a1, Nat.add_comm d2 c1, Nat.add_left_comm b2 c1]
+  have e2 : (u2 + v2) + ((b1 + a2) + (d1 + c2)) = v1 + u2 + ((a2 + c2) + (b2 + d2)) := by
+    have : (u2 + v2) + ((b1 + a2) + (d1 + c2)) = u2 + ((b1 + d1) + v2) + (a2 + c2) := by
+      repeat rw [Nat.add_assoc]
+      rw [Nat.add_left_comm v2 b1, Nat.add_left_comm a2 d1, Nat.add_left_comm v2 d1]
+    rw [this, ← hv]
+    repeat rw [Nat.add_assoc]
+    rw [Nat.add_left_comm u2 v1, ← Nat.add_assoc b2 d2, Nat.add_comm (b2 + d2) (a2 + c2),
+      Nat.add_assoc a2 c2]
+  rw [e1, ← e2]
+  exact Nat.add_le_add_left (Nat.add_le_add hab hcd) _
+
+private theorem int_add_le_add {a b c d : Int} (hab : a ≤ b) (hcd : c ≤ d) : a + c ≤ b + d := by
+  apply irep_int_le
+  have hu := irep_sNN ((irep a).1 + (irep c).1) ((irep a).2 + (irep c).2)
+  have hv := irep_sNN ((irep b).1 + (irep d).1) ((irep b).2 + (irep d).2)
+  rw [← irep_add] at hu hv
+  exact nat_key hu hv (int_le_irep hab) (int_le_irep hcd)
+
 /-- If no encounter yields more learning signal than support change, cumulative
 signal never exceeds cumulative support change along any actual history. -/
 theorem coupled_signal_bounded (l : List (Int × Int)) (h : ∀ p ∈ l, p.1 ≤ p.2) :
     sumFst l ≤ sumSnd l := by
   induction l with
-  | nil => exact Int.le_refl 0
+  | nil => exact Int.NonNeg.mk 0
   | cons p ps ih =>
     have hp := h p (List.mem_cons_self ..)
     have hps := ih (fun q hq => h q (List.mem_cons_of_mem _ hq))
-    simp only [sumFst, sumSnd]
-    omega
+    show p.1 + sumFst ps ≤ p.2 + sumSnd ps
+    exact int_add_le_add hp hps
 
 /-- A signal-reinforced chooser. State: (preference for work, preference for tap,
 support). Work restores two support units, every step consumes one. Each
@@ -237,15 +370,15 @@ theorem shared_exposure_contracts {M E : Type} (u : M → E → M) (d : M → M 
     ∀ (es : List E) (m m' : M), 2 ^ es.length * d (runU u m es) (runU u m' es) ≤ d m m' := by
   intro es
   induction es with
-  | nil => intro m m'; simp [runU]
+  | nil => intro m m'; show 1 * d m m' ≤ d m m'; rw [Nat.one_mul]; exact Nat.le_refl _
   | cons e es ih =>
     intro m m'
-    simp only [runU, List.length_cons]
+    show 2 ^ (es.length + 1) * d (runU u (u m e) es) (runU u (u m' e) es) ≤ d m m'
     have h1 := ih (u m e) (u m' e)
     have h2 := hc m m' e
     have h3 : 2 ^ (es.length + 1) * d (runU u (u m e) es) (runU u (u m' e) es)
         = 2 * (2 ^ es.length * d (runU u (u m e) es) (runU u (u m' e) es)) := by
-      rw [Nat.pow_succ, Nat.mul_comm (2 ^ es.length) 2, Nat.mul_assoc]
+      rw [Nat.pow_succ, Nat.mul_comm (2 ^ es.length) 2, AF.mul_assoc]
     rw [h3]
     exact Nat.le_trans (Nat.mul_le_mul_left 2 h1) h2
 
@@ -260,7 +393,8 @@ theorem shared_exposure_converges {M E : Type} (u : M → E → M) (d : M → M 
     rw [hd] at h
     have : 2 ^ es.length * 1 ≤ 2 ^ es.length * (k + 1) :=
       Nat.mul_le_mul_left _ (Nat.succ_le_succ (Nat.zero_le k))
-    omega
+    rw [Nat.mul_one] at this
+    exact absurd (Nat.lt_of_le_of_lt (Nat.le_trans this h) hbig) (Nat.lt_irrefl _)
 
 /-- If the distance separates retained conditions (zero only for equal ones), the
 two organizations end in the same retained condition and therefore with the same
@@ -292,11 +426,16 @@ theorem multistable_divergence_forever :
   | nil => intro m; exact ⟨id, id⟩
   | cons e es ih =>
     intro m
-    simp only [runU]
+    show (m = 0 → runU lockIn (lockIn m e) es = 0) ∧ (m ≠ 0 → runU lockIn (lockIn m e) es ≠ 0)
     refine ⟨fun h => ?_, fun h => ?_⟩
-    · have : lockIn m e = 0 := by simp [lockIn, h]
+    · have : lockIn m e = 0 := by rw [h]; rfl
       rw [this]; exact (ih 0).1 rfl
-    · have : lockIn m e ≠ 0 := by simp only [lockIn, h, if_false]; omega
+    · have : lockIn m e ≠ 0 := by
+        show (if m = 0 then 0 else min (m + 1) 5) ≠ 0
+        rw [if_neg h, Nat.min_def]
+        cases Nat.decLe (m + 1) 5 with
+        | isTrue hle => rw [if_pos hle]; exact fun e => Nat.noConfusion e
+        | isFalse hn => rw [if_neg hn]; exact fun e => Nat.noConfusion e
       exact (ih _).2 this
 
 /-- Divergence 2 (positional differentiation): identical law and initial condition,
@@ -327,8 +466,7 @@ theorem rounding_gap_forever : ∀ n : Nat,
   induction n with
   | zero => exact ⟨rfl, rfl⟩
   | succ n ih =>
-    simp only [List.replicate_succ, runU]
-    exact ⟨by simpa [halve] using ih.1, by simpa [halve] using ih.2⟩
+    exact ih
 
 /-! ## U6. The lower capacities (levels 1–4) do not form a forced ladder -/
 

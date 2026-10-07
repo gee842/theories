@@ -9,19 +9,19 @@
 'ValuationDevelopment.prediction_valuation_tradeoff' does not depend on any axioms
 'ValuationDevelopment.same_prediction_different_choice' does not depend on any axioms
 'ValuationDevelopment.same_valuation_different_choice' does not depend on any axioms
-'ValuationDevelopment.coupled_signal_bounded' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.coupled_signal_bounded' does not depend on any axioms
 'ValuationDevelopment.proxy_capture' does not depend on any axioms
 'ValuationDevelopment.coupled_recovery' does not depend on any axioms
 'ValuationDevelopment.coupled_without_variation_depletes' does not depend on any axioms
-'ValuationDevelopment.shared_exposure_contracts' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.shared_exposure_converges' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.shared_exposure_equalizes' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.shared_exposure_contracts' does not depend on any axioms
+'ValuationDevelopment.shared_exposure_converges' does not depend on any axioms
+'ValuationDevelopment.shared_exposure_equalizes' does not depend on any axioms
 'ValuationDevelopment.multistable_divergence' does not depend on any axioms
-'ValuationDevelopment.multistable_divergence_forever' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.multistable_divergence_forever' does not depend on any axioms
 'ValuationDevelopment.positional_divergence' does not depend on any axioms
 'ValuationDevelopment.halving_nonexpanding_on_sample' does not depend on any axioms
 'ValuationDevelopment.rounding_breaks_contraction' does not depend on any axioms
-'ValuationDevelopment.rounding_gap_forever' depends on axioms: [propext]
+'ValuationDevelopment.rounding_gap_forever' does not depend on any axioms
 'ValuationDevelopment.fixed_selectivity_no_history' does not depend on any axioms
 'ValuationDevelopment.habituation_history_dependent' does not depend on any axioms
 'ValuationDevelopment.habituation_not_consequence_dependent' does not depend on any axioms
