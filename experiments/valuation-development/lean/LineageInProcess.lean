@@ -77,9 +77,9 @@ def lineageProcess : Process Nat Ledger where
 theorem lineage_account_law :
     AccountLaw lineageProcess id (fun _ g _ => g.enacted) (fun _ g _ => g.arrived) := by
   intro r g r' ⟨hs, he, hg⟩
-  unfold Ledger.Sustained at hg
-  simp only [id]
-  omega
+  show r' + g.enacted ≤ r + g.arrived
+  rw [he, Nat.add_comm]
+  exact Nat.le_trans hg (Nat.add_le_add_right hs _)
 
 theorem lineLedger_heldEnd_congr : ∀ (rest : List Ledger) (g g' : Ledger),
     g.heldEnd = g'.heldEnd → (lineLedger g rest).heldEnd = (lineLedger g' rest).heldEnd
@@ -101,7 +101,7 @@ theorem line_is_lineage_history : ∀ (rest : List Ledger) (g : Ledger) (r : Nat
     have := SupportTrace.cons (P := lineageProcess) (demand := fun _ g _ => g.enacted)
       (credit := fun _ g _ => g.arrived) (s := r) (m := g.heldEnd) (a := g)
       ⟨hr, rfl, hg⟩ (SupportTrace.nil g.heldEnd)
-    simpa [lineLedger] using this
+    exact this
   | cons h rest ih =>
     intro g r hr hg hall hinh
     obtain ⟨hhg, hinh'⟩ := hinh
@@ -116,7 +116,7 @@ theorem line_is_lineage_history : ∀ (rest : List Ledger) (g : Ledger) (r : Nat
     obtain ⟨e2, a2, _⟩ := lineLedger_fields rest h
     rw [hend, e1, a1]
     rw [e2, a2] at step
-    simpa [List.map_cons, List.sum_cons, Nat.add_assoc] using step
+    exact step
 
 /-- The lineage bound of §16 recovered as the U2 prefix bound of the lineage
 process: one law, applied to a different carrier. -/
@@ -127,9 +127,8 @@ theorem lineage_bound_is_prefix_bound (rest : List Ledger) (g : Ledger) (hg : g.
   have hb := support_trace_balance id lineage_account_law tr
   obtain ⟨_, _, hst⟩ := lineLedger_fields rest g
   unfold Ledger.Sustained
-  simp only [id] at hb
   rw [hst]
-  omega
+  exact hb
 
 /-- Positive demand in every generation needs unbounded arrivals along an endless
 line: the core theorem `unbounded_demand_requires_unbounded_credit`, applied to the
@@ -183,8 +182,7 @@ theorem intervalTotal_split (q : Nat → Nat) (a L : Nat) : ∀ L',
   | L' + 1 => by
     show intervalTotal q a (L + L') + q (a + (L + L')) =
       intervalTotal q a L + (intervalTotal q (a + L) L' + q (a + L + L'))
-    rw [intervalTotal_split q a L L', Nat.add_assoc a L L']
-    omega
+    rw [intervalTotal_split q a L L', Nat.add_assoc (intervalTotal q a L), Nat.add_assoc a L L']
 
 /-- Successive windows are successive generations: each inherits exactly, and
 their succession is the ledger of the joined window. -/
@@ -192,7 +190,9 @@ theorem generations_succeed {law : ChannelLaw Kind} (X : Execution law) (a L L' 
     (generationLedger X (a + L) L').heldStart = (generationLedger X a L).heldEnd ∧
     (generationLedger X a L).seq (generationLedger X (a + L) L') = generationLedger X a (L + L') := by
   refine ⟨rfl, ?_⟩
-  simp only [generationLedger, Ledger.seq, intervalTotal_split, Nat.add_assoc]
+  unfold generationLedger Ledger.seq
+  rw [intervalTotal_split (fun n => formation law (X.ticks n)) a L L',
+    intervalTotal_split (fun n => opened law.rate (X.states n).tokens) a L L', Nat.add_assoc a L L']
 
 /-- The lineage of an execution: generation `i` occupies ticks `i·L, …, (i+1)·L - 1`.
 It is an actual history of the lineage process. -/
@@ -201,7 +201,8 @@ theorem execution_lineage {law : ChannelLaw Kind} (X : Execution law) (L : Nat) 
       (X.states ((i + 1) * L)).reserve := by
   intro i
   refine ⟨Nat.le_refl _, ?_, generation_sustained X (i * L) L⟩
-  simp only [generationLedger, Nat.succ_mul]
+  show (X.states ((i + 1) * L)).reserve = (X.states (i * L + L)).reserve
+  rw [Nat.succ_mul]
 
 /-- **Lineage and renewal on one process.** With finitely many kinds: every
 generation of every execution is sustained, successive generations inherit exactly,
@@ -227,7 +228,10 @@ theorem attribution_is_by_population :
     (RenewsForever lapsingCorrection ∧ ¬ KeepsForever lapsingCorrection (fun k => k = true)) := by
   refine ⟨⟨dangling_closure_falls_short, ?_⟩, lapsing_closure_renews_forever,
     lapsing_correction_cannot_be_kept⟩
-  have complete : ∀ k : Bool, k ∈ [false, true] := by intro k; cases k <;> simp
+  have complete : ∀ k : Bool, k ∈ [false, true] := fun k => by
+    cases k
+    · exact List.mem_cons_self
+    · exact List.mem_cons_of_mem _ List.mem_cons_self
   refine (renewal_keeping_theorem danglingSupport [false, true] complete
     (fun k => k = false)).2 ?_
   refine ⟨[false, true, true, true, true, true], ⟨List.cons_ne_nil _ _, ?_, ?_⟩, false,

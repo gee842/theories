@@ -1,14 +1,14 @@
 'ValuationDevelopment.history_ledger_sustained' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.consecutive_segments_are_generations' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.lineage_account_law' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.lineage_account_law' does not depend on any axioms
 'ValuationDevelopment.lineLedger_heldEnd_congr' does not depend on any axioms
-'ValuationDevelopment.line_is_lineage_history' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.line_is_lineage_history' does not depend on any axioms
 'ValuationDevelopment.lineage_bound_is_prefix_bound' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.endless_demanding_line_needs_unbounded_arrivals' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.channel_account_law' does not depend on any axioms
 'ValuationDevelopment.generation_sustained' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.intervalTotal_split' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.generations_succeed' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.intervalTotal_split' does not depend on any axioms
+'ValuationDevelopment.generations_succeed' does not depend on any axioms
 'ValuationDevelopment.execution_lineage' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.lineage_renewal_theorem' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.attribution_is_by_population' depends on axioms: [propext, Quot.sound]
