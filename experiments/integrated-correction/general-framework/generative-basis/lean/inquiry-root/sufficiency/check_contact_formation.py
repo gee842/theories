@@ -15,9 +15,13 @@ HERE = Path(__file__).resolve().parent
 CORE = HERE.parents[1]
 REPO = CORE.parents[4]
 CLOSURE = HERE / "process-law-verification.json"
-NEW = ["ContactFormation", "FormationClosure", "AcquiredContact", "PortValuation", "ValuationInCore", "RevisingPort", "RelationalCut"]
+NEW = ["ContactFormation", "FormationClosure", "AcquiredContact", "PortValuation", "ValuationInCore",
+       "RevisingPort", "RelationalCut", "PortAlignment"]
 # Imported from the valuation-development package, built in the same closure.
 VALUATION = ["ValuationDevelopment", "ClosedLoopValuation"]
+# Imported only for their definitions; their own audits belong to their packages.
+ALIGNMENT = ["RemainingDependency", "InquiryRelevance", "InquiryWarrant"]
+SUPPORT = set(VALUATION + ALIGNMENT)
 AUDIT = re.compile(r"'([^']+)' (?:does not depend on any axioms|depends on axioms: \[([^\]]*)\])")
 
 
@@ -40,14 +44,21 @@ def main():
     valuation_dir = REPO / "experiments/valuation-development/lean"
     modules += [(name, HERE / (name + ".lean")) for name in NEW[:3]]
     modules += [(name, valuation_dir / (name + ".lean")) for name in VALUATION]
-    modules += [(name, HERE / (name + ".lean")) for name in NEW[3:]]
+    alignment_dir = (CORE.parent / "mathematical-abstraction/acquisition/feedback/"
+                     "remaining-dependency/formal")
+    modules += [(name, HERE / (name + ".lean")) for name in NEW[3:7]]
+    modules += [(name, alignment_dir / (name + ".lean")) for name in ALIGNMENT]
+    modules += [(name, HERE / (name + ".lean")) for name in NEW[7:]]
     rows, passed = [], True
     with tempfile.TemporaryDirectory(prefix="contact-formation-") as temporary:
         build = Path(temporary)
         env = dict(os.environ, LEAN_PATH=str(build))
         for name, path in modules:
             data = path.read_bytes()
-            (build / (name + ".lean")).write_bytes(data)
+            built = data
+            if name in SUPPORT:
+                built = re.sub(rb"(?m)^#print axioms .*$", b"", data)
+            (build / (name + ".lean")).write_bytes(built)
             text = re.sub(r"/-.*?-/|--[^\n]*", "", data.decode(), flags=re.S)
             placeholders = re.findall(r"\b(sorry|admit|native_decide)\b", text)
             declared = re.findall(r"^\s*(?:axiom|opaque|constant)\s+\S+", text, re.M)

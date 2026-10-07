@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T21:08:29.661141+00:00",
+  "checked_at_utc": "2026-10-07T09:25:12.334081+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -371,9 +371,45 @@
       "audits": 9,
       "nonempty_audits": {},
       "clean": true
+    },
+    {
+      "module": "RemainingDependency",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean",
+      "source_sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "InquiryRelevance",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean",
+      "source_sha256": "3ec8363e61404c1d23ecf5f562cb9bb880f6d136a0b936e725e2e4a98c9e4df1",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "InquiryWarrant",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryWarrant.lean",
+      "source_sha256": "e7805809d157aa5e528e5085298a7f77dc6e033bc93578545eb9bbb3e1dfecb2",
+      "exit_code": 0,
+      "audits": 0,
+      "nonempty_audits": {},
+      "clean": true
+    },
+    {
+      "module": "PortAlignment",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortAlignment.lean",
+      "source_sha256": "81ec920b80077b01877048ae57a5159c81b14465c12dc666ba1177c634d2c683",
+      "exit_code": 0,
+      "audits": 13,
+      "nonempty_audits": {},
+      "clean": true
     }
   ],
-  "total_audits": 788,
+  "total_audits": 801,
   "new_module_audits": {
     "ContactFormation": 26,
     "FormationClosure": 48,
@@ -381,7 +417,8 @@
     "PortValuation": 11,
     "ValuationInCore": 8,
     "RevisingPort": 61,
-    "RelationalCut": 9
+    "RelationalCut": 9,
+    "PortAlignment": 13
   },
   "scope": "ContactFormation, FormationClosure, AcquiredContact, ValuationDevelopment, ClosedLoopValuation, PortValuation and ValuationInCore over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the inquiry schedule and its reading are described rather than built as a further mechanism."
 }
