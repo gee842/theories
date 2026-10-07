@@ -16,8 +16,10 @@ kinds whose supporters outlast the tick on which they act. This is the
 timescale separation of Montévil and Mossio, here as a consequence rather than
 a definition.
 
-The only extra premise is that initial tokens hold no more than their kind's
-span.
+An `Execution` is a history whose initial tokens hold no more than their
+kind's span. This is not a premise of the main theorems: every history becomes
+an execution once its initial tokens have run out (`History.settled`), and the
+theorems are stated for histories from any start.
 -/
 
 namespace Generative.Conditional.Renewal
@@ -58,16 +60,24 @@ theorem mem_formed (law : ChannelLaw Kind) {tok : Token Kind} :
       obtain ⟨inside, span⟩ := mem_formed law tail
       exact ⟨List.mem_cons_of_mem _ inside, span⟩
 
-/-- A supplied execution of the constraint–flow process. -/
-structure Execution (law : ChannelLaw Kind) where
+/-- A history of the constraint–flow process from any configuration. -/
+structure History (law : ChannelLaw Kind) where
   states : Nat → Config Kind
   ticks : Nat → List Kind
   steps : ∀ n, (channelProcess law).step (states n) (ticks n) (states (n + 1))
-  initialWithinSpan : ∀ tok, tok ∈ (states 0).tokens → tok.remaining ≤ law.span tok.kind
+
+/-- Every token holds no more than its kind's span. -/
+def WithinSpan (law : ChannelLaw Kind) (c : Config Kind) : Prop :=
+  ∀ tok, tok ∈ c.tokens → tok.remaining ≤ law.span tok.kind
+
+/-- A history whose initial tokens hold no more than their kind's span. Every
+history becomes one once its initial tokens have run out (`History.settled`). -/
+structure Execution (law : ChannelLaw Kind) extends History law where
+  initialWithinSpan : WithinSpan law (states 0)
 
 /-- Where each token came from: the initial configuration, or a formation on an
 earlier tick, with the remaining span fixed by how long ago. -/
-theorem token_origin {law : ChannelLaw Kind} (X : Execution law) :
+theorem token_origin {law : ChannelLaw Kind} (X : History law) :
     ∀ t tok, tok ∈ (X.states t).tokens →
       (∃ first, first ∈ (X.states 0).tokens ∧ first.kind = tok.kind ∧
         tok.remaining + t = first.remaining) ∨
@@ -89,6 +99,82 @@ theorem token_origin {law : ChannelLaw Kind} (X : Execution law) :
       obtain ⟨inTick, spanEq⟩ := mem_formed law formedNow
       exact Or.inr ⟨t, Nat.lt_succ_self t, inTick, by omega⟩
 
+/-- The largest value of `f` on a list. -/
+def maxOver {α : Type u} (f : α → Nat) : List α → Nat
+  | [] => 0
+  | a :: rest => if f a ≤ maxOver f rest then maxOver f rest else f a
+
+theorem le_maxOver {α : Type u} (f : α → Nat) :
+    ∀ {l : List α} {a : α}, a ∈ l → f a ≤ maxOver f l
+  | [], _, member => by cases member
+  | b :: rest, a, member => by
+    rw [maxOver]
+    by_cases smaller : f b ≤ maxOver f rest
+    · rw [if_pos smaller]
+      cases List.mem_cons.mp member with
+      | inl same => subst same; exact smaller
+      | inr tail => exact le_maxOver f tail
+    · rw [if_neg smaller]
+      cases List.mem_cons.mp member with
+      | inl same => subst same; exact Nat.le_refl _
+      | inr tail => exact Nat.le_trans (le_maxOver f tail) (Nat.le_of_lt (Nat.gt_of_not_le smaller))
+
+/-- The history after its first `k` ticks. -/
+def History.shift {law : ChannelLaw Kind} (H : History law) (k : Nat) : History law where
+  states n := H.states (k + n)
+  ticks n := H.ticks (k + n)
+  steps n := H.steps (k + n)
+
+/-- The time by which every initial token has run out. -/
+def History.settle {law : ChannelLaw Kind} (H : History law) : Nat :=
+  maxOver Token.remaining (H.states 0).tokens
+
+/-- Once the initial tokens have run out, every token holds no more than its
+kind's span. -/
+theorem History.settled_within {law : ChannelLaw Kind} (H : History law) :
+    WithinSpan law (H.states H.settle) := by
+  intro tok member
+  cases token_origin H H.settle tok member with
+  | inl initial =>
+    obtain ⟨first, firstIn, _, firstAge⟩ := initial
+    have bound := le_maxOver Token.remaining firstIn
+    have zero : tok.remaining = 0 := by
+      show tok.remaining = 0
+      have : first.remaining ≤ H.settle := bound
+      omega
+    rw [zero]
+    exact Nat.zero_le _
+  | inr formedEarlier =>
+    obtain ⟨m, earlier, _, spanEq⟩ := formedEarlier
+    omega
+
+/-- Every history, from the time its initial tokens have run out, is an
+execution. -/
+def History.settled {law : ChannelLaw Kind} (H : History law) : Execution law where
+  toHistory := H.shift H.settle
+  initialWithinSpan := H.settled_within
+
+theorem step_within {law : ChannelLaw Kind} {c c' : Config Kind} {births : List Kind}
+    (within : WithinSpan law c) (step : (channelProcess law).step c births c') :
+    WithinSpan law c' := by
+  intro tok member
+  rw [step.1] at member
+  cases List.mem_append.mp member with
+  | inl agedIn =>
+    obtain ⟨old, oldIn, kindEq, ageEq, _⟩ := mem_aged agedIn
+    have bound := within old oldIn
+    rw [kindEq] at bound
+    omega
+  | inr formedIn =>
+    obtain ⟨_, spanEq⟩ := mem_formed law formedIn
+    rw [spanEq]
+    exact Nat.le_refl _
+
+theorem execution_within {law : ChannelLaw Kind} (X : Execution law) :
+    ∀ n, WithinSpan law (X.states n)
+  | 0 => X.initialWithinSpan
+  | n + 1 => step_within (execution_within X n) (X.steps n)
+
 /-- Formations, and initial tokens at time zero, as occurrences. A supporter
 must outlast the tick, so the support edge records a span of at least two. -/
 def executionSupport {law : ChannelLaw Kind} (X : Execution law) : OccurrenceSupport Kind where
@@ -105,7 +191,7 @@ def executionSupport {law : ChannelLaw Kind} (X : Execution law) : OccurrenceSup
       subst timeEq
       obtain ⟨tok, agedIn, edgeTK⟩ := (X.steps n).2.2 k inTick
       obtain ⟨old, oldIn, kindEq, _, kept⟩ := mem_aged agedIn
-      cases token_origin X n old oldIn with
+      cases token_origin X.toHistory n old oldIn with
       | inl initial =>
         obtain ⟨first, firstIn, firstKind, firstAge⟩ := initial
         have within := X.initialWithinSpan first firstIn
@@ -137,7 +223,7 @@ theorem alive_token_recent_formation {law : ChannelLaw Kind} (X : Execution law)
     (D : Nat) (spanBound : ∀ k, law.span k ≤ D) {t : Nat} {tok : Token Kind}
     (member : tok ∈ (X.states t).tokens) (alive : 1 ≤ tok.remaining) (late : D < t) :
     ∃ s, (executionSupport X).occurs tok.kind s ∧ s ≤ t ∧ t < s + D := by
-  cases token_origin X t tok member with
+  cases token_origin X.toHistory t tok member with
   | inl initial =>
     obtain ⟨first, firstIn, firstKind, firstAge⟩ := initial
     have within := X.initialWithinSpan first firstIn
@@ -239,6 +325,10 @@ theorem endless_renewal_needs_closure_and_adequate_kind [DecidableEq Kind]
 #print axioms mem_aged
 #print axioms mem_formed
 #print axioms token_origin
+#print axioms le_maxOver
+#print axioms History.settled_within
+#print axioms step_within
+#print axioms execution_within
 #print axioms live_has_alive_token
 #print axioms alive_token_recent_formation
 #print axioms live_late_has_recent_formation

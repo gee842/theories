@@ -1,11 +1,11 @@
-'ValuationDevelopment.after_change_reached_exact' depends on axioms: [propext]
-'ValuationDevelopment.after_change_unreached_stale' depends on axioms: [propext]
-'ValuationDevelopment.greedy_exact_improved' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.greedy_stale_after_change' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.curious_exact_improved' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.after_change_reached_exact' does not depend on any axioms
+'ValuationDevelopment.after_change_unreached_stale' does not depend on any axioms
+'ValuationDevelopment.greedy_exact_improved' does not depend on any axioms
+'ValuationDevelopment.greedy_stale_after_change' does not depend on any axioms
+'ValuationDevelopment.curious_exact_improved' does not depend on any axioms
 'ValuationDevelopment.curiosity_tracks_change' does not depend on any axioms
-'ValuationDevelopment.noise_floor' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.noise_floor_stays' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.noise_floor' does not depend on any axioms
+'ValuationDevelopment.noise_floor_stays' does not depend on any axioms
 'ValuationDevelopment.noise_locks_greedy_curiosity_recovers' does not depend on any axioms
 'ValuationDevelopment.fixed_other_reduces' does not depend on any axioms
 'ValuationDevelopment.joint_coverage_needs_synchrony' does not depend on any axioms

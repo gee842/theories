@@ -204,18 +204,17 @@ theorem execution_lineage {law : ChannelLaw Kind} (X : Execution law) (L : Nat) 
   show (X.states ((i + 1) * L)).reserve = (X.states (i * L + L)).reserve
   rw [Nat.succ_mul]
 
-/-- **Lineage and renewal on one process.** With finitely many kinds and spans
-between one and `D`: every generation of every execution is sustained, successive
-generations inherit exactly, and some lineage stays live forever exactly when the law
-has a self-renewing population. -/
+/-- **Lineage and renewal on one process.** With finitely many kinds: every
+generation of every execution is sustained, successive generations inherit exactly,
+and some lineage stays live forever exactly when the law has a self-renewing
+population. -/
 theorem lineage_renewal_theorem [DecidableEq Kind] (law : ChannelLaw Kind)
-    (U : List Kind) (complete : ∀ k, k ∈ U) (D : Nat) (spanBound : ∀ k, law.span k ≤ D)
-    (positive : ∀ k, 0 < law.span k) :
+    (U : List Kind) (complete : ∀ k, k ∈ U) :
     (∀ (X : Execution law) (a L : Nat), (generationLedger X a L).Sustained ∧
       (generationLedger X (a + L) L).heldStart = (generationLedger X a L).heldEnd) ∧
     (RenewsForever law ↔ ∃ B, SelfRenewing law B) :=
   ⟨fun X a L => ⟨generation_sustained X a L, rfl⟩,
-    renewal_closure_theorem law U complete D spanBound positive⟩
+    renewal_closure_theorem law U complete⟩
 
 /-- **Attribution is by population, not by kind.** Kind `false` of `danglingSupport`
 falls short of its own formation demand (it opens 2 and demands 5), yet some lineage
@@ -233,10 +232,10 @@ theorem attribution_is_by_population :
     cases k
     · exact List.mem_cons_self
     · exact List.mem_cons_of_mem _ List.mem_cons_self
-  refine (renewal_keeping_theorem danglingSupport [false, true] complete 3
-    (fun k => by cases k <;> decide) (fun k => by cases k <;> decide) (fun k => k = false)).2 ?_
+  refine (renewal_keeping_theorem danglingSupport [false, true] complete
+    (fun k => k = false)).2 ?_
   refine ⟨[false, true, true, true, true, true], ⟨List.cons_ne_nil _ _, ?_, ?_⟩, false,
-    List.mem_cons_self, rfl⟩
+    List.mem_cons_self, rfl, by decide⟩
   · intro k _
     exact ⟨false, List.mem_cons_self, rfl, Nat.le_refl 2⟩
   · show 10 ≤ 32
