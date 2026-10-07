@@ -1,19 +1,19 @@
-'Generative.Conditional.Renewal.liveFor_zero' depends on axioms: [propext]
+'Generative.Conditional.Renewal.liveFor_zero' does not depend on any axioms
 'Generative.Conditional.Renewal.liveFor_of_step' does not depend on any axioms
 'Generative.Conditional.Renewal.formed_replicate' does not depend on any axioms
 'Generative.Conditional.Renewal.aged_replicate_two' does not depend on any axioms
 'Generative.Conditional.Renewal.aged_replicate_one' does not depend on any axioms
-'Generative.Conditional.Renewal.chain_not_supported' depends on axioms: [propext]
-'Generative.Conditional.Renewal.chain_has_no_self_renewing_population' depends on axioms: [propext]
-'Generative.Conditional.Renewal.chain_renews_forever' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.infinitely_many_kinds_break_the_equivalence' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.free_formation_closed_members' depends on axioms: [propext]
-'Generative.Conditional.Renewal.free_formation_short' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.free_formation_has_no_self_renewing_population' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.chain_not_supported' does not depend on any axioms
+'Generative.Conditional.Renewal.chain_has_no_self_renewing_population' does not depend on any axioms
+'Generative.Conditional.Renewal.chain_renews_forever' does not depend on any axioms
+'Generative.Conditional.Renewal.infinitely_many_kinds_break_the_equivalence' does not depend on any axioms
+'Generative.Conditional.Renewal.free_formation_closed_members' does not depend on any axioms
+'Generative.Conditional.Renewal.free_formation_short' does not depend on any axioms
+'Generative.Conditional.Renewal.free_formation_has_no_self_renewing_population' does not depend on any axioms
 'Generative.Conditional.Renewal.free_formation_complete' does not depend on any axioms
-'Generative.Conditional.Renewal.free_formation_histories_end' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.formation_replicate_free' depends on axioms: [propext]
-'Generative.Conditional.Renewal.opened_replicate_free' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.cycle_lives' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.free_formation_lives_long' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.zero_demand_defeats_initial_deadline' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.free_formation_histories_end' does not depend on any axioms
+'Generative.Conditional.Renewal.formation_replicate_free' does not depend on any axioms
+'Generative.Conditional.Renewal.opened_replicate_free' does not depend on any axioms
+'Generative.Conditional.Renewal.cycle_lives' does not depend on any axioms
+'Generative.Conditional.Renewal.free_formation_lives_long' does not depend on any axioms
+'Generative.Conditional.Renewal.zero_demand_defeats_initial_deadline' does not depend on any axioms

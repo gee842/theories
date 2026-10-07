@@ -1,16 +1,13 @@
 {
-  "checked_at_utc": "2026-10-07T09:23:27.881609+00:00",
+  "checked_at_utc": "2026-10-07T09:41:10.553218+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "checker_sha256": "c5b4812d06328a3863a41cef67ce57d5afa54afbf635c82148f228cc6ef48b91",
+  "checker_sha256": "87ade6ed59321cb841f2016f031f2335dee3a94389a201d3dde6bfd4f94783e8",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
-  "allowed_standard_axioms": [
-    "Quot.sound",
-    "propext"
-  ],
+  "allowed_standard_axioms": [],
   "modules": [
     {
       "module": "GenerativeCore",
@@ -52,119 +49,111 @@
       "output_sha256": "9f58bc308816d98a048c83c743d2088b1906f575d6b7ccfdb578f595111fdae7"
     },
     {
+      "module": "RenewalBasics",
+      "source": "RenewalBasics.lean",
+      "source_sha256": "eab6cd5724280b15dd5dc7df1943978936802189d2dee7f2e51c6f06a587d0b0",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 35,
+      "axioms": [],
+      "empty_axiom_audits": 35,
+      "clean": true,
+      "output": "verification/RenewalBasics.txt",
+      "output_sha256": "b6895604b151ac3535ef0195d48b442cc5ccf089834f034813a22bd5fd212396"
+    },
+    {
       "module": "RenewalClosure",
       "source": "RenewalClosure.lean",
-      "source_sha256": "36f4a3a663f5b6e3680f81f90bc93c06f77784274e0a86b32c65a762d4a5a045",
+      "source_sha256": "4c4996a24eceb79cdb1d38625196c72a6a8eec9749a109116c62c392f466fc11",
       "exit_code": 0,
       "new": true,
       "dependency_audits": 21,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 7,
+      "axioms": [],
+      "empty_axiom_audits": 21,
       "clean": true,
       "output": "verification/RenewalClosure.txt",
-      "output_sha256": "2d86d7c23d394fc343376c6ef73a26d5ed773e4569d036a80c1c99cf9c8f8145"
+      "output_sha256": "9c8ec416d95444215cdc4565482a76da17b1024964e3ed2dd128ee79a7183648"
     },
     {
       "module": "RenewalAccounting",
       "source": "RenewalAccounting.lean",
-      "source_sha256": "b593f8c58d7a302506deff75f36fe01ca53db7df59d701ee509f31d7585e0927",
+      "source_sha256": "887f70a476b9e169497e8cf663c469f540bb31cb2d943a5c486a57c6d23f7a1a",
       "exit_code": 0,
       "new": true,
       "dependency_audits": 12,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 1,
+      "axioms": [],
+      "empty_axiom_audits": 12,
       "clean": true,
       "output": "verification/RenewalAccounting.txt",
-      "output_sha256": "7a1d725b1e122aee3377480c6490098fb122f02d6c088d6c83eed6561b980cd0"
+      "output_sha256": "085780f21ae18747ffaf4e2f607d5e1e7b3a720feb08eb3991803b8394f0b83c"
     },
     {
       "module": "RenewalSufficiency",
       "source": "RenewalSufficiency.lean",
-      "source_sha256": "51788ffa220bae4493958fab5f63d2a6a8c2714ce2e5f9c56f4cc8f5c30e90a3",
+      "source_sha256": "8de09c944ec633d243ae05ab945202cd44094f415092e82bdffdae3fc8502b87",
       "exit_code": 0,
       "new": true,
-      "dependency_audits": 28,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 4,
+      "dependency_audits": 32,
+      "axioms": [],
+      "empty_axiom_audits": 32,
       "clean": true,
       "output": "verification/RenewalSufficiency.txt",
-      "output_sha256": "62952cffa8955b01b18749e67b68e09be197d1c020fd5cf538b5542f6ebf1c05"
+      "output_sha256": "684651553e59b2b74c5c0ca436031883220ccfd1beb94f120aac1c9326266ba3"
     },
     {
       "module": "RenewalLink",
       "source": "RenewalLink.lean",
-      "source_sha256": "ba25070c5d2edd7edcb92c2e1fcd47d1287a1564fcb349e75bb956957238ee77",
+      "source_sha256": "b743b6e1156a0afd0af9e1385cdac51ebd83cf67e80f42e3f8afce6388c5c90f",
       "exit_code": 0,
       "new": true,
-      "dependency_audits": 13,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 1,
+      "dependency_audits": 16,
+      "axioms": [],
+      "empty_axiom_audits": 16,
       "clean": true,
       "output": "verification/RenewalLink.txt",
-      "output_sha256": "413889009b034a2656e2a086ee8d5c1ffefcef8f2a8610ddb0ad7ec178514dc9"
+      "output_sha256": "6d7bacd9fa3fb813b6e80849026171e26c37657545fb60acccd4ecceeeee55aa"
     },
     {
       "module": "RenewalCharacterization",
       "source": "RenewalCharacterization.lean",
-      "source_sha256": "63afd2c3321c17ecebeed956ae8e2b8a96ba40fb4be2419a585c349dcde08daf",
+      "source_sha256": "1d8eea4e1aa8e4c6eb4b0325e057dd3d9a41aaabc24ecbde57ebc84e0991019c",
       "exit_code": 0,
       "new": true,
-      "dependency_audits": 49,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 3,
+      "dependency_audits": 55,
+      "axioms": [],
+      "empty_axiom_audits": 55,
       "clean": true,
       "output": "verification/RenewalCharacterization.txt",
-      "output_sha256": "992d23b6a2c71ce2aca5c8c6db6f4be2ac11aa2514df1492d5e1a527a708cc05"
+      "output_sha256": "0228b54f787791ef87a12409859f15587d1e7a540fd7260b59710426959aa498"
     },
     {
       "module": "RenewalConfigurations",
       "source": "RenewalConfigurations.lean",
-      "source_sha256": "46fa55c6f8fec63c015b817a02b0700a8c943a64382019c8310269477fec465d",
+      "source_sha256": "290e4f80638f1b4f94a5a09cfdfd4f863cb206a37d0c4183bd66fc8590178c82",
       "exit_code": 0,
       "new": true,
-      "dependency_audits": 25,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 8,
+      "dependency_audits": 29,
+      "axioms": [],
+      "empty_axiom_audits": 29,
       "clean": true,
       "output": "verification/RenewalConfigurations.txt",
-      "output_sha256": "ca2ea39ca93011e7787706f3cd02b98df6f60100e1cd688dde22fe5608e9ad11"
+      "output_sha256": "70faf137850c8e1c890bf2640cfd9153fe818dcecd5b170df878c7352dde84c8"
     },
     {
       "module": "RenewalPremises",
       "source": "RenewalPremises.lean",
-      "source_sha256": "712ed3a2ec284c02e466f014017966bf6538ff379832a6931f2c6ec171a87ba9",
+      "source_sha256": "df2440dc4627af031f16f1b897cf6581d5d6884f90b7c0436fa9680ab671f28a",
       "exit_code": 0,
       "new": true,
       "dependency_audits": 19,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 5,
+      "axioms": [],
+      "empty_axiom_audits": 19,
       "clean": true,
       "output": "verification/RenewalPremises.txt",
-      "output_sha256": "aaa9f097dbec773958170e72658057d2ca3755064a08ba5d5f72f9553301ea0b"
+      "output_sha256": "172379cbbef53037379713c354d729e9d905d8d45c314ebaa44e955f683d3303"
     }
   ],
-  "new_audited_declarations": 167,
-  "new_empty_axiom_audits": 29,
-  "scope": "Conditional statements over supplied kinds, support edges, spans, formation demands and arrival rates: late occurrence descends from a realized closure of kinds; acyclic support has a deadline without a supplied rank; when every kind brings in less than its formation demands, a combined potential strictly decreases on every live tick, so renewal ends by an explicit deadline; a support-closed population that is balanced, or that supports an excess kind, has a steady configuration fixed by one tick and so renews forever; and on one execution of the constraint-flow process, endless liveness needs both a realized closure of supporters that outlast the tick and a kind that brings in at least its formation demand; and, with finitely many kinds, with span and rate bounds read off the list of kinds and no condition on spans or initial tokens, some history stays live forever exactly when a nonempty population of kinds is closed under support by constraints that outlast a tick and opens over its spans at least what forming it demands, otherwise every history stops being live by an explicit time, read from the law and the initial configuration when formation demands are positive; the same holds for keeping a live token of designated kinds, such as means of correction, exactly when some self-renewing population contains one of positive span; for whole configurations, renewability is never gained along a history without import, a seeded configuration with enough reserve reaches a standing renewal, and renewability is not a function of the reserve and kinds present; no decision of equality between kinds is used; finitely many kinds are needed (a chain of infinitely many kinds renews forever with no self-renewing population), and positive formation demand is needed for a deadline read from the initial configuration (a kind free to form stores provision that keeps a short cycle going arbitrarily long from one start). No physical identification or ethical appraisal is asserted."
+  "new_audited_declarations": 219,
+  "new_empty_axiom_audits": 219,
+  "scope": "Conditional statements over supplied kinds, support edges, spans, formation demands and arrival rates: late occurrence descends from a realized closure of kinds; acyclic support has a deadline without a supplied rank; when every kind brings in less than its formation demands, a combined potential strictly decreases on every live tick, so renewal ends by an explicit deadline; a support-closed population that is balanced, or that supports an excess kind, has a steady configuration fixed by one tick and so renews forever; and on one execution of the constraint-flow process, endless liveness needs both a realized closure of supporters that outlast the tick and a kind that brings in at least its formation demand; and, with finitely many kinds, with span and rate bounds read off the list of kinds and no condition on spans or initial tokens, some history stays live forever exactly when a nonempty population of kinds is closed under support by constraints that outlast a tick and opens over its spans at least what forming it demands, otherwise every history stops being live by an explicit time, read from the law and the initial configuration when formation demands are positive; the same holds for keeping a live token of designated kinds, such as means of correction, exactly when some self-renewing population contains one of positive span; for whole configurations, renewability is never gained along a history without import, a seeded configuration with enough reserve reaches a standing renewal, and renewability is not a function of the reserve and kinds present; no decision of equality between kinds and no axiom (not even propext, Quot.sound or Classical.choice) is used; finitely many kinds are needed (a chain of infinitely many kinds renews forever with no self-renewing population), and positive formation demand is needed for a deadline read from the initial configuration (a kind free to form stores provision that keeps a short cycle going arbitrarily long from one start). No physical identification or ethical appraisal is asserted."
 }
