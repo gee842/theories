@@ -8,24 +8,24 @@ Study note: _process/research/2026-10-05-generative-foundation-review/root-found
 FORMATION-DRAW.md.
 
 `ContactFormation` and `FormationClosure` let formation and recovery draw the
-native amount `bill` and list that choice as supplied. This module asks whether
+native amount `draw` and list that choice as supplied. This module asks whether
 it follows from the native activity.
 
 1. **One draw per operation, natively.** `PhasePeriodSelection.sensing_command_draws`
-   proves that a completed `a`, `read` or `reset` draws exactly `bill`. A
+   proves that a completed `a`, `read` or `reset` draws exactly `draw`. A
    completed probe makes two such draws, one before and one after its
    conversion (`native_operation_draw`). So the native activity already has one
-   draw law: each operation draws `bill`, whatever the command, and `bill` stays
+   draw law: each operation draws `draw`, whatever the command, and `draw` stays
    fixed along every completed history.
 2. **The closure process keeps that one law.** With formation and recovery drawing
-   `bill`, every event of the closure process, native or not, draws its number
-   of operations times `bill` (`closure_one_draw_law`, `closure_trace_draw`).
+   `draw`, every event of the closure process, native or not, draws its number
+   of operations times `draw` (`closure_one_draw_law`, `closure_trace_draw`).
 3. **Any other draw breaks it.** Formation and recovery are stated with an open
-   draw (`formWith`, `recoverWith`; with `bill` they are the supplied ones,
+   draw (`formWith`, `recoverWith`; with `draw` they are the supplied ones,
    `formWith_native`, `recoverWith_native`). If the extended process has any single
-   draw law at all, that law equals `bill` on every state where a native command
+   draw law at all, that law equals `draw` on every state where a native command
    completes (`one_law_is_native_draw`), and then formation and recovery must draw
-   `bill` wherever they and a native command both complete
+   `draw` wherever they and a native command both complete
    (`one_law_forces_formation_draw`, `one_law_forces_recovery_draw`). A free
    formation has no single draw law (`free_formation_breaks_one_law`).
 
@@ -67,71 +67,71 @@ def operations : NativePacketProcess.Command → Nat
 theorem native_operation_draw {s t : NativePacketProcess.State}
     {command : NativePacketProcess.Command} {o : Observation}
     (actual : execute s command = .complete t o) :
-    t.spent = s.spent + operations command * bill s ∧ bill t = bill s := by
+    t.enacted = s.enacted + operations command * draw s ∧ draw t = draw s := by
   cases command with
   | probe =>
     obtain ⟨_, rfl, _⟩ := (probe_complete_iff s t o).mp actual
     refine ⟨?_, rfl⟩
     rw [(probe_final_effects s).2.2.2.1]
-    change s.spent + bill s + bill s = s.spent + 2 * bill s
+    change s.enacted + draw s + draw s = s.enacted + 2 * draw s
     rw [Nat.two_mul, Nat.add_assoc]
   | a =>
     obtain ⟨drawn, same, _, _⟩ :=
       PhasePeriodSelection.sensing_command_draws s t .a o rfl actual
     refine ⟨?_, same⟩
     rw [drawn]
-    change s.spent + bill s = s.spent + 1 * bill s
+    change s.enacted + draw s = s.enacted + 1 * draw s
     rw [Nat.one_mul]
   | reset =>
     obtain ⟨drawn, same, _, _⟩ :=
       PhasePeriodSelection.sensing_command_draws s t .reset o rfl actual
     refine ⟨?_, same⟩
     rw [drawn]
-    change s.spent + bill s = s.spent + 1 * bill s
+    change s.enacted + draw s = s.enacted + 1 * draw s
     rw [Nat.one_mul]
   | read =>
     obtain ⟨drawn, same, _, _⟩ :=
       PhasePeriodSelection.sensing_command_draws s t .read o rfl actual
     refine ⟨?_, same⟩
     rw [drawn]
-    change s.spent + bill s = s.spent + 1 * bill s
+    change s.enacted + draw s = s.enacted + 1 * draw s
     rw [Nat.one_mul]
 
 /-! ## 2. Formation and recovery with an open draw -/
 
-def drawWith (draw : NativePacketProcess.State → Nat) (s : NativePacketProcess.State) :
+def drawWith (amount : NativePacketProcess.State → Nat) (s : NativePacketProcess.State) :
     NativePacketProcess.State :=
-  { s with fuel := s.fuel - draw s, spent := s.spent + draw s }
+  { s with held := s.held - amount s, enacted := s.enacted + amount s }
 
-def attemptDraw (draw : NativePacketProcess.State → Nat) (s : NativePacketProcess.State) :
-    Payment :=
+def attemptDraw (amount : NativePacketProcess.State → Nat) (s : NativePacketProcess.State) :
+    Support :=
   if peak s ≤ s.capacity then
-    if draw s ≤ s.fuel then .paid (drawWith draw s) else .funding
+    if amount s ≤ s.held then .sustained (drawWith amount s) else .insufficient
   else .capacity
 
-theorem attemptDraw_native : attemptDraw bill = charge := rfl
+theorem attemptDraw_native : attemptDraw draw = support := rfl
 
-theorem attemptDraw_held_iff (draw : NativePacketProcess.State → Nat)
+theorem attemptDraw_held_iff (amount : NativePacketProcess.State → Nat)
     (s t : NativePacketProcess.State) :
-    attemptDraw draw s = .paid t ↔
-      (peak s ≤ s.capacity ∧ draw s ≤ s.fuel) ∧ t = drawWith draw s := by
+    attemptDraw amount s = .sustained t ↔
+      (peak s ≤ s.capacity ∧ amount s ≤ s.held) ∧ t = drawWith amount s := by
   unfold attemptDraw
   by_cases capacity : peak s ≤ s.capacity
   · rw [if_pos capacity]
-    by_cases funding : draw s ≤ s.fuel
-    · rw [if_pos funding]
+    by_cases insufficient : amount s ≤ s.held
+    · rw [if_pos insufficient]
       constructor
       · intro h
         cases h
-        exact ⟨⟨capacity, funding⟩, rfl⟩
+        exact ⟨⟨capacity, insufficient⟩, rfl⟩
       · rintro ⟨_, rfl⟩
         rfl
-    · rw [if_neg funding]
+    · rw [if_neg insufficient]
       constructor
       · intro h
         cases h
       · intro h
-        exact absurd h.1.2 funding
+        exact absurd h.1.2 insufficient
   · rw [if_neg capacity]
     constructor
     · intro h
@@ -139,48 +139,48 @@ theorem attemptDraw_held_iff (draw : NativePacketProcess.State → Nat)
     · intro h
       exact absurd h.1.1 capacity
 
-def formWith (draw : NativePacketProcess.State → Nat) (x : Port) : Outcome :=
-  match attemptDraw draw x.native with
+def formWith (amount : NativePacketProcess.State → Nat) (x : Port) : Outcome :=
+  match attemptDraw amount x.native with
   | .capacity => .stopped x
-  | .funding => .stopped x
-  | .paid ready =>
+  | .insufficient => .stopped x
+  | .sustained ready =>
     if 1 ≤ x.spare then .complete ⟨ContactFormation.openContact ready, x.spare - 1, x.recovered⟩
     else .stopped ⟨ready, x.spare, x.recovered⟩
 
-def recoverWith (draw : NativePacketProcess.State → Nat) (x : Port) : Outcome :=
-  match attemptDraw draw x.native with
+def recoverWith (amount : NativePacketProcess.State → Nat) (x : Port) : Outcome :=
+  match attemptDraw amount x.native with
   | .capacity => .stopped x
-  | .funding => .stopped x
-  | .paid ready => finishRecovery x ready
+  | .insufficient => .stopped x
+  | .sustained ready => finishRecovery x ready
 
-theorem recoverWith_native (x : Port) : recoverWith bill x = recover x := rfl
+theorem recoverWith_native (x : Port) : recoverWith draw x = recover x := rfl
 
-theorem formWith_native (x : Port) : formWith bill x = formPort x := by
+theorem formWith_native (x : Port) : formWith draw x = formPort x := by
   unfold formWith formPort ContactFormation.form
   rw [attemptDraw_native]
-  cases charge x.native with
+  cases support x.native with
   | capacity => rfl
-  | funding => rfl
-  | paid ready =>
+  | insufficient => rfl
+  | sustained ready =>
     dsimp only
     unfold ContactFormation.finishForm
     by_cases pair : 1 ≤ x.spare
     · rw [if_pos pair, if_pos pair]
     · rw [if_neg pair, if_neg pair]
 
-theorem formWith_complete_iff (draw : NativePacketProcess.State → Nat) (x y : Port) :
-    formWith draw x = .complete y ↔
-      (peak x.native ≤ x.native.capacity ∧ draw x.native ≤ x.native.fuel) ∧ 1 ≤ x.spare ∧
-        y = ⟨ContactFormation.openContact (drawWith draw x.native), x.spare - 1, x.recovered⟩ := by
+theorem formWith_complete_iff (amount : NativePacketProcess.State → Nat) (x y : Port) :
+    formWith amount x = .complete y ↔
+      (peak x.native ≤ x.native.capacity ∧ amount x.native ≤ x.native.held) ∧ 1 ≤ x.spare ∧
+        y = ⟨ContactFormation.openContact (drawWith amount x.native), x.spare - 1, x.recovered⟩ := by
   constructor
   · intro completed
     unfold formWith at completed
-    generalize paid : attemptDraw draw x.native = payment at completed
-    cases payment with
+    generalize sustained : attemptDraw amount x.native = result at completed
+    cases result with
     | capacity => cases completed
-    | funding => cases completed
-    | paid ready =>
-      obtain ⟨met, rfl⟩ := (attemptDraw_held_iff draw x.native ready).mp paid
+    | insufficient => cases completed
+    | sustained ready =>
+      obtain ⟨met, rfl⟩ := (attemptDraw_held_iff amount x.native ready).mp sustained
       dsimp only at completed
       by_cases pair : 1 ≤ x.spare
       · rw [if_pos pair] at completed
@@ -190,27 +190,27 @@ theorem formWith_complete_iff (draw : NativePacketProcess.State → Nat) (x y : 
         cases completed
   · rintro ⟨met, pair, rfl⟩
     unfold formWith
-    rw [(attemptDraw_held_iff draw x.native _).mpr ⟨met, rfl⟩]
+    rw [(attemptDraw_held_iff amount x.native _).mpr ⟨met, rfl⟩]
     dsimp only
     rw [if_pos pair]
 
-theorem recoverWith_complete_iff (draw : NativePacketProcess.State → Nat) (x y : Port) :
-    recoverWith draw x = .complete y ↔
-      (peak x.native ≤ x.native.capacity ∧ draw x.native ≤ x.native.fuel) ∧
-        10 * (x.recovered + 1) ≤ x.native.wasted ∧
-        y = ⟨drawWith draw x.native, x.spare + 1, x.recovered + 1⟩ := by
+theorem recoverWith_complete_iff (amount : NativePacketProcess.State → Nat) (x y : Port) :
+    recoverWith amount x = .complete y ↔
+      (peak x.native ≤ x.native.capacity ∧ amount x.native ≤ x.native.held) ∧
+        10 * (x.recovered + 1) ≤ x.native.dissipated ∧
+        y = ⟨drawWith amount x.native, x.spare + 1, x.recovered + 1⟩ := by
   constructor
   · intro completed
     unfold recoverWith at completed
-    generalize paid : attemptDraw draw x.native = payment at completed
-    cases payment with
+    generalize sustained : attemptDraw amount x.native = result at completed
+    cases result with
     | capacity => cases completed
-    | funding => cases completed
-    | paid ready =>
-      obtain ⟨met, rfl⟩ := (attemptDraw_held_iff draw x.native ready).mp paid
+    | insufficient => cases completed
+    | sustained ready =>
+      obtain ⟨met, rfl⟩ := (attemptDraw_held_iff amount x.native ready).mp sustained
       dsimp only at completed
       unfold finishRecovery at completed
-      by_cases backed : 10 * (x.recovered + 1) ≤ (drawWith draw x.native).wasted
+      by_cases backed : 10 * (x.recovered + 1) ≤ (drawWith amount x.native).dissipated
       · rw [if_pos backed] at completed
         cases completed
         exact ⟨met, backed, rfl⟩
@@ -218,13 +218,13 @@ theorem recoverWith_complete_iff (draw : NativePacketProcess.State → Nat) (x y
         cases completed
   · rintro ⟨met, backed, rfl⟩
     unfold recoverWith
-    rw [(attemptDraw_held_iff draw x.native _).mpr ⟨met, rfl⟩]
+    rw [(attemptDraw_held_iff amount x.native _).mpr ⟨met, rfl⟩]
     dsimp only
     unfold finishRecovery
-    rw [if_pos (show 10 * (x.recovered + 1) ≤ (drawWith draw x.native).wasted from backed)]
+    rw [if_pos (show 10 * (x.recovered + 1) ≤ (drawWith amount x.native).dissipated from backed)]
 
 /-- The closure process with formation and recovery drawing `formDraw` and
-`recoverDraw`. With `bill` for both it has exactly the closure steps. -/
+`recoverDraw`. With `draw` for both it has exactly the closure steps. -/
 def processWith (formDraw recoverDraw : NativePacketProcess.State → Nat) :
     Process Port FormationClosure.Event where
   step x e y := match e with
@@ -234,16 +234,16 @@ def processWith (formDraw recoverDraw : NativePacketProcess.State → Nat) :
     | .inr _ => formWith formDraw x = .complete y
 
 theorem processWith_native_step (x y : Port) (e : FormationClosure.Event) :
-    (processWith bill bill).step x e y ↔ FormationClosure.process.step x e y := by
+    (processWith draw draw).step x e y ↔ FormationClosure.process.step x e y := by
   cases e with
   | inl e =>
     cases e with
     | inl command => exact Iff.rfl
     | inr _ =>
-      change recoverWith bill x = .complete y ↔ recover x = .complete y
+      change recoverWith draw x = .complete y ↔ recover x = .complete y
       rw [recoverWith_native]
   | inr _ =>
-    change formWith bill x = .complete y ↔ formPort x = .complete y
+    change formWith draw x = .complete y ↔ formPort x = .complete y
     rw [formWith_native]
 
 /-- Operations an event of the extended process makes. -/
@@ -256,11 +256,11 @@ def eventOperations : FormationClosure.Event → Nat
 def OneDrawLaw (P : Process Port FormationClosure.Event)
     (amount : NativePacketProcess.State → Nat) : Prop :=
   ∀ x e y, P.step x e y →
-    y.native.spent = x.native.spent + eventOperations e * amount x.native
+    y.native.enacted = x.native.enacted + eventOperations e * amount x.native
 
 /-! ## 3. The closure process has one draw law -/
 
-theorem closure_one_draw_law : OneDrawLaw (processWith bill bill) bill := by
+theorem closure_one_draw_law : OneDrawLaw (processWith draw draw) draw := by
   intro x e y step
   cases e with
   | inl e =>
@@ -269,12 +269,12 @@ theorem closure_one_draw_law : OneDrawLaw (processWith bill bill) bill := by
       obtain ⟨⟨_, actual⟩, _, _⟩ := step
       exact (native_operation_draw actual).1
     | inr _ =>
-      obtain ⟨_, _, rfl⟩ := (recoverWith_complete_iff bill x y).mp step
-      change x.native.spent + bill x.native = x.native.spent + 1 * bill x.native
+      obtain ⟨_, _, rfl⟩ := (recoverWith_complete_iff draw x y).mp step
+      change x.native.enacted + draw x.native = x.native.enacted + 1 * draw x.native
       rw [Nat.one_mul]
   | inr _ =>
-    obtain ⟨_, _, rfl⟩ := (formWith_complete_iff bill x y).mp step
-    change x.native.spent + bill x.native = x.native.spent + 1 * bill x.native
+    obtain ⟨_, _, rfl⟩ := (formWith_complete_iff draw x y).mp step
+    change x.native.enacted + draw x.native = x.native.enacted + 1 * draw x.native
     rw [Nat.one_mul]
 
 def totalOperations : List FormationClosure.Event → Nat
@@ -282,7 +282,7 @@ def totalOperations : List FormationClosure.Event → Nat
   | e :: rest => eventOperations e + totalOperations rest
 
 theorem closure_step_keeps_amount {x y : Port} {e : FormationClosure.Event}
-    (step : FormationClosure.process.step x e y) : bill y.native = bill x.native := by
+    (step : FormationClosure.process.step x e y) : draw y.native = draw x.native := by
   cases e with
   | inl e =>
     cases e with
@@ -299,8 +299,8 @@ theorem closure_step_keeps_amount {x y : Port} {e : FormationClosure.Event}
 /-- A completed closure history draws its operations times the fixed amount. -/
 theorem closure_trace_draw {x y : Port} {events : List FormationClosure.Event}
     (trace : Trace FormationClosure.process x events y) :
-    y.native.spent = x.native.spent + totalOperations events * bill x.native ∧
-      bill y.native = bill x.native := by
+    y.native.enacted = x.native.enacted + totalOperations events * draw x.native ∧
+      draw y.native = draw x.native := by
   induction trace with
   | nil =>
     refine ⟨?_, rfl⟩
@@ -311,9 +311,9 @@ theorem closure_trace_draw {x y : Port} {events : List FormationClosure.Event}
     have same := closure_step_keeps_amount step
     refine ⟨?_, ih.2.trans same⟩
     rw [ih.1, law, same]
-    change s.native.spent + eventOperations e * bill s.native +
-        totalOperations rest * bill s.native =
-      s.native.spent + (eventOperations e + totalOperations rest) * bill s.native
+    change s.native.enacted + eventOperations e * draw s.native +
+        totalOperations rest * draw s.native =
+      s.native.enacted + (eventOperations e + totalOperations rest) * draw s.native
     rw [add_mul_right, Nat.add_assoc]
 
 /-! ## 4. One draw law fixes the formation and recovery draw -/
@@ -322,50 +322,50 @@ theorem closure_trace_draw {x y : Port} {events : List FormationClosure.Event}
 state where a native advance completes. -/
 theorem one_law_is_native_draw {formDraw recoverDraw amount : NativePacketProcess.State → Nat}
     (law : OneDrawLaw (processWith formDraw recoverDraw) amount)
-    (s : NativePacketProcess.State) (ready : Payable s) : amount s = bill s := by
+    (s : NativePacketProcess.State) (ready : Supportable s) : amount s = draw s := by
   have step : (processWith formDraw recoverDraw).step ⟨s, 0, 0⟩ (.inl (.inl .a))
-      ⟨{ debit s with phase := nextPhase s.phase }, 0, 0⟩ :=
+      ⟨{ enact s with phase := nextPhase s.phase }, 0, 0⟩ :=
     ⟨⟨_, a_complete s ready⟩, rfl, rfl⟩
   have drawn := law _ _ _ step
-  change s.spent + bill s = s.spent + 1 * amount s at drawn
+  change s.enacted + draw s = s.enacted + 1 * amount s at drawn
   rw [Nat.one_mul] at drawn
   exact (cancel_left _ drawn).symm
 
 theorem one_law_forces_formation_draw
     {formDraw recoverDraw amount : NativePacketProcess.State → Nat}
     (law : OneDrawLaw (processWith formDraw recoverDraw) amount)
-    (x : Port) (ready : Payable x.native) (covered : formDraw x.native ≤ x.native.fuel)
-    (pair : 1 ≤ x.spare) : formDraw x.native = bill x.native := by
+    (x : Port) (ready : Supportable x.native) (covered : formDraw x.native ≤ x.native.held)
+    (pair : 1 ≤ x.spare) : formDraw x.native = draw x.native := by
   have step : (processWith formDraw recoverDraw).step x (.inr ()) _ :=
     (formWith_complete_iff formDraw x _).mpr ⟨⟨ready.1, covered⟩, pair, rfl⟩
   have drawn := law _ _ _ step
-  change x.native.spent + formDraw x.native = x.native.spent + 1 * amount x.native at drawn
+  change x.native.enacted + formDraw x.native = x.native.enacted + 1 * amount x.native at drawn
   rw [Nat.one_mul, one_law_is_native_draw law x.native ready] at drawn
   exact cancel_left _ drawn
 
 theorem one_law_forces_recovery_draw
     {formDraw recoverDraw amount : NativePacketProcess.State → Nat}
     (law : OneDrawLaw (processWith formDraw recoverDraw) amount)
-    (x : Port) (ready : Payable x.native) (covered : recoverDraw x.native ≤ x.native.fuel)
-    (backed : 10 * (x.recovered + 1) ≤ x.native.wasted) :
-    recoverDraw x.native = bill x.native := by
+    (x : Port) (ready : Supportable x.native) (covered : recoverDraw x.native ≤ x.native.held)
+    (backed : 10 * (x.recovered + 1) ≤ x.native.dissipated) :
+    recoverDraw x.native = draw x.native := by
   have step : (processWith formDraw recoverDraw).step x (.inl (.inr ())) _ :=
     (recoverWith_complete_iff recoverDraw x _).mpr ⟨⟨ready.1, covered⟩, backed, rfl⟩
   have drawn := law _ _ _ step
-  change x.native.spent + recoverDraw x.native = x.native.spent + 1 * amount x.native at drawn
+  change x.native.enacted + recoverDraw x.native = x.native.enacted + 1 * amount x.native at drawn
   rw [Nat.one_mul, one_law_is_native_draw law x.native ready] at drawn
   exact cancel_left _ drawn
 
 /-- A blocked port with one spare pair, enough held amount and no dissipation yet. -/
 def onePairPort : Port :=
   ⟨{ phase := .p0, tau := false, sigma := false, broken := false, blocked := true,
-     receiptFlip := false, source := 0, fuel := 100000, live := 0, workspace := 0,
-     capacity := 10, spent := 0, income := 0, transferred := 0, wasted := 0 }, 1, 0⟩
+     receiptFlip := false, source := 0, held := 100000, live := 0, workspace := 0,
+     capacity := 10, enacted := 0, arrived := 0, transferred := 0, dissipated := 0 }, 1, 0⟩
 
 /-- A formation that draws nothing leaves the extended process without any
 single draw law. -/
 theorem free_formation_breaks_one_law :
-    ¬ ∃ amount, OneDrawLaw (processWith (fun _ => 0) bill) amount := by
+    ¬ ∃ amount, OneDrawLaw (processWith (fun _ => 0) draw) amount := by
   rintro ⟨amount, law⟩
   have forced := one_law_forces_formation_draw law onePairPort
     ⟨show 2 ≤ 10 by decide, show 16386 ≤ 100000 by decide⟩

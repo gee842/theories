@@ -8,7 +8,7 @@ Study note: _process/research/2026-10-05-generative-foundation-review/root-found
 STARTING-STOCK.md.
 
 `FormationClosure.start` begins with no spare pairs, no recovered pairs,
-nothing dissipated, 200000 held units (`fuel`) and 20 source units. This module
+nothing dissipated, 200000 held units (`held`) and 20 source units. This module
 asks which of these starting amounts follow from the activity that starts there.
 
 1. **Spare pairs: zero is forced.** From a beginning with nothing dissipated and
@@ -47,7 +47,7 @@ open FormationLaw RecoveryQuantum FormationDraw
 /-! ## 1. The spare-pair stock -/
 
 theorem nothing_dissipated_nothing_recovered (x : Port) (backed : Backed x)
-    (empty : x.native.wasted = 0) : x.recovered = 0 := by
+    (empty : x.native.dissipated = 0) : x.recovered = 0 := by
   unfold Backed at backed
   rw [empty] at backed
   cases r : x.recovered with
@@ -57,20 +57,20 @@ theorem nothing_dissipated_nothing_recovered (x : Port) (backed : Backed x)
     exact absurd (Nat.le_trans (Nat.le_add_left 10 (10 * n)) backed) (by decide)
 
 /-- With an inherited pair, formation completes with nothing dissipated. -/
-theorem inherited_pair_forms_unbacked (x : Port) (ready : Payable x.native)
+theorem inherited_pair_forms_unbacked (x : Port) (ready : Supportable x.native)
     (pair : 1 ≤ x.spare) :
     ∃ y, Trace FormationClosure.process x [formE] y ∧ formations [formE] = 1 ∧
-      y.native.wasted = x.native.wasted := by
+      y.native.dissipated = x.native.dissipated := by
   refine ⟨_, trace_singleton_iff.mpr ((formPort_complete_iff x _).mpr ⟨ready, pair, rfl⟩),
     rfl, rfl⟩
 
 /-- Every formation of every later history is backed by a recorded failed conversion. -/
 def FormationsBackedFrom (x : Port) : Prop :=
   ∀ events y, Trace FormationClosure.process x events y →
-    10 * formations events ≤ y.native.wasted
+    10 * formations events ≤ y.native.dissipated
 
-theorem backing_iff_empty_stock (x : Port) (ready : Payable x.native)
-    (noDissipation : x.native.wasted = 0) (noRecovery : x.recovered = 0) :
+theorem backing_iff_empty_stock (x : Port) (ready : Supportable x.native)
+    (noDissipation : x.native.dissipated = 0) (noRecovery : x.recovered = 0) :
     FormationsBackedFrom x ↔ x.spare = 0 := by
   constructor
   · intro backed
@@ -91,16 +91,16 @@ theorem backing_iff_empty_stock (x : Port) (ready : Payable x.native)
 
 theorem execute_complete_covered {s t : NativePacketProcess.State}
     {command : NativePacketProcess.Command} {o : Observation}
-    (actual : execute s command = .complete t o) : Payable s := by
+    (actual : execute s command = .complete t o) : Supportable s := by
   unfold execute at actual
-  generalize interface : charge s = payment at actual
-  cases payment with
+  generalize interface : support s = result at actual
+  cases result with
   | capacity => cases actual
-  | funding => cases actual
-  | paid ready => exact ((charge_paid_iff s ready).mp interface).1
+  | insufficient => cases actual
+  | sustained ready => exact ((support_sustained_iff s ready).mp interface).1
 
 theorem step_covered {x y : Port} {e : FormationClosure.Event}
-    (step : FormationClosure.process.step x e y) : Payable x.native := by
+    (step : FormationClosure.process.step x e y) : Supportable x.native := by
   cases e with
   | inl e =>
     cases e with
@@ -111,22 +111,22 @@ theorem step_covered {x y : Port} {e : FormationClosure.Event}
   | inr _ => exact ((formPort_complete_iff x y).mp step).1
 
 /-- Below one draw, no event of the closure process completes. -/
-theorem nothing_held_nothing_proceeds (x : Port) (short : x.native.fuel < bill x.native)
+theorem nothing_held_nothing_proceeds (x : Port) (short : x.native.held < draw x.native)
     (e : FormationClosure.Event) (y : Port) : ¬ FormationClosure.process.step x e y :=
   fun step => Nat.lt_irrefl _ (Nat.lt_of_le_of_lt (step_covered step).2 short)
 
 theorem sensing_shape {s t : NativePacketProcess.State} {command : NativePacketProcess.Command}
     {o : Observation} (actual : execute s command = .complete t o)
     (notProbe : command ≠ .probe) :
-    t.fuel = (debit s).fuel ∧ t.spent = (debit s).spent ∧ t.income = s.income ∧
+    t.held = (enact s).held ∧ t.enacted = (enact s).enacted ∧ t.arrived = s.arrived ∧
       t.source = s.source := by
   unfold execute at actual
-  generalize interface : charge s = payment at actual
-  cases payment with
+  generalize interface : support s = result at actual
+  cases result with
   | capacity => cases actual
-  | funding => cases actual
-  | paid ready =>
-    obtain ⟨_, rfl⟩ := (charge_paid_iff s ready).mp interface
+  | insufficient => cases actual
+  | sustained ready =>
+    obtain ⟨_, rfl⟩ := (support_sustained_iff s ready).mp interface
     cases command with
     | a => cases actual; exact ⟨rfl, rfl, rfl, rfl⟩
     | reset => cases actual; exact ⟨rfl, rfl, rfl, rfl⟩
@@ -148,8 +148,8 @@ theorem probe_conserves (f sp b i g : Nat) (first : b ≤ f) (second : b ≤ f -
 
 theorem step_conserves {x y : Port} {e : FormationClosure.Event}
     (step : FormationClosure.process.step x e y) :
-    y.native.fuel + y.native.spent + x.native.income =
-      x.native.fuel + x.native.spent + y.native.income := by
+    y.native.held + y.native.enacted + x.native.arrived =
+      x.native.held + x.native.enacted + y.native.arrived := by
   have ready := step_covered step
   cases e with
   | inl e =>
@@ -187,28 +187,28 @@ theorem cancel_right (a b c : Nat) (h : a + c = b + c) : a = b := by
 /-- Held amount plus cumulative draw is conserved up to arrival. -/
 theorem held_amount_conserved {x y : Port} {events : List FormationClosure.Event}
     (trace : Trace FormationClosure.process x events y) :
-    y.native.fuel + y.native.spent + x.native.income =
-      x.native.fuel + x.native.spent + y.native.income := by
+    y.native.held + y.native.enacted + x.native.arrived =
+      x.native.held + x.native.enacted + y.native.arrived := by
   induction trace with
   | nil => rfl
   | @cons s m t e rest step _ ih =>
     have first := step_conserves step
-    apply cancel_right _ _ m.native.income
-    calc t.native.fuel + t.native.spent + s.native.income + m.native.income
-        = (t.native.fuel + t.native.spent + m.native.income) + s.native.income := by
+    apply cancel_right _ _ m.native.arrived
+    calc t.native.held + t.native.enacted + s.native.arrived + m.native.arrived
+        = (t.native.held + t.native.enacted + m.native.arrived) + s.native.arrived := by
           rw [Nat.add_right_comm]
-      _ = (m.native.fuel + m.native.spent + t.native.income) + s.native.income := by rw [ih]
-      _ = (m.native.fuel + m.native.spent + s.native.income) + t.native.income := by
+      _ = (m.native.held + m.native.enacted + t.native.arrived) + s.native.arrived := by rw [ih]
+      _ = (m.native.held + m.native.enacted + s.native.arrived) + t.native.arrived := by
           rw [Nat.add_right_comm]
-      _ = (s.native.fuel + s.native.spent + m.native.income) + t.native.income := by rw [first]
-      _ = s.native.fuel + s.native.spent + t.native.income + m.native.income := by
+      _ = (s.native.held + s.native.enacted + m.native.arrived) + t.native.arrived := by rw [first]
+      _ = s.native.held + s.native.enacted + t.native.arrived + m.native.arrived := by
           rw [Nat.add_right_comm]
 
 /-- A history without arrival started holding its draws and what remains. -/
 theorem held_covers_draws_before_arrival {x y : Port} {events : List FormationClosure.Event}
     (trace : Trace FormationClosure.process x events y)
-    (noArrival : y.native.income = x.native.income) :
-    x.native.fuel = y.native.fuel + totalOperations events * bill x.native := by
+    (noArrival : y.native.arrived = x.native.arrived) :
+    x.native.held = y.native.held + totalOperations events * draw x.native := by
   have conserved := held_amount_conserved trace
   rw [noArrival] at conserved
   have balance := cancel_right _ _ _ conserved
@@ -287,14 +287,14 @@ theorem source_accounting {x y : Port} {events : List FormationClosure.Event}
 /-- The closure start with held amount `held` and source `source`. -/
 def startWith (held source : Nat) : Port :=
   ⟨{ phase := .p0, tau := false, sigma := false, broken := false, blocked := true,
-     receiptFlip := false, source := source, fuel := held, live := 0, workspace := 0,
-     capacity := 10, spent := 0, income := 0, transferred := 0, wasted := 0 }, 0, 0⟩
+     receiptFlip := false, source := source, held := held, live := 0, workspace := 0,
+     capacity := 10, enacted := 0, arrived := 0, transferred := 0, dissipated := 0 }, 0, 0⟩
 
 theorem start_is_startWith : start = startWith 200000 20 := rfl
 
 theorem blocked_step_no_arrival {x y : Port} {e : FormationClosure.Event}
     (step : FormationClosure.process.step x e y) (blocked : x.native.blocked = true) :
-    y.native.income = x.native.income := by
+    y.native.arrived = x.native.arrived := by
   have closed := arrival_false_of_blocked x.native blocked
   cases e with
   | inl e =>
@@ -305,7 +305,7 @@ theorem blocked_step_no_arrival {x y : Port} {e : FormationClosure.Event}
       | probe =>
         obtain ⟨_, equal, _⟩ := (probe_complete_iff _ _ o).mp actual
         rw [equal, (probe_final_effects _).2.2.2.2.1]
-        unfold gain
+        unfold arrivalAmount
         rw [closed]
         rfl
       | a =>
@@ -328,7 +328,7 @@ theorem blocked_step_no_arrival {x y : Port} {e : FormationClosure.Event}
 theorem blocked_history_no_arrival {x y : Port} {events : List FormationClosure.Event}
     (trace : Trace FormationClosure.process x events y) (none : formations events = 0)
     (blocked : x.native.blocked = true) :
-    y.native.income = x.native.income ∧ y.native.blocked = true := by
+    y.native.arrived = x.native.arrived ∧ y.native.blocked = true := by
   induction trace with
   | nil => exact ⟨rfl, blocked⟩
   | @cons s m t e rest step _ ih =>
@@ -360,11 +360,11 @@ theorem history_needs {held source : Nat} {y : Port}
     have held' := held_covers_draws_before_arrival before (formArrived.trans noArrival)
     have amount := (closure_trace_draw before).2
     have lastReady := step_covered (trace_singleton_iff.mp last)
-    have covered : bill (startWith held source).native + 6 * bill (startWith held source).native
-        ≤ (startWith held source).native.fuel := by
+    have covered : draw (startWith held source).native + 6 * draw (startWith held source).native
+        ≤ (startWith held source).native.held := by
       rw [held']
       exact Nat.add_le_add_right (amount ▸ lastReady.2) _
-    have amountIs : bill (startWith held source).native = 16386 := rfl
+    have amountIs : draw (startWith held source).native = 16386 := rfl
     rw [amountIs] at covered
     exact covered
   · have converted := source_accounting trace
@@ -378,7 +378,7 @@ theorem least_starting_stock :
     (∀ held source y, run (startWith held source) history = some y →
       114702 ≤ held ∧ 20 ≤ source) ∧
       (∃ y, run (startWith 114702 20) history = some y ∧
-        y.native.transferred = 10 ∧ y.native.fuel = 638974) ∧
+        y.native.transferred = 10 ∧ y.native.held = 638974) ∧
       run (startWith 114701 20) history = none ∧
       run (startWith 114702 19) history = none :=
   ⟨fun _ _ _ ran => history_needs (run_sound ran), ⟨_, rfl, rfl, rfl⟩, rfl, rfl⟩

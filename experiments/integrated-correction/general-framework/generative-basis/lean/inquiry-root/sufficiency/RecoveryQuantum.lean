@@ -49,21 +49,21 @@ open FormationLaw
 
 theorem conversion_settles_quantum (s : NativePacketProcess.State) :
     (convert s).source = s.source - 10 ∧
-      (convert s).transferred + (convert s).wasted = s.transferred + s.wasted + 10 := by
+      (convert s).transferred + (convert s).dissipated = s.transferred + s.dissipated + 10 := by
   refine ⟨rfl, ?_⟩
   change s.transferred + (if arrival s then 10 else 0) +
-      (s.wasted + (if arrival s then 0 else 10)) = s.transferred + s.wasted + 10
+      (s.dissipated + (if arrival s then 0 else 10)) = s.transferred + s.dissipated + 10
   cases arrival s
-  · change s.transferred + 0 + (s.wasted + 10) = s.transferred + s.wasted + 10
+  · change s.transferred + 0 + (s.dissipated + 10) = s.transferred + s.dissipated + 10
     rw [Nat.add_zero, Nat.add_assoc]
-  · change s.transferred + 10 + s.wasted = s.transferred + s.wasted + 10
+  · change s.transferred + 10 + s.dissipated = s.transferred + s.dissipated + 10
     exact Nat.add_right_comm _ _ _
 
 theorem failed_conversion_dissipates_quantum (s : NativePacketProcess.State)
     (failed : arrival s = false) :
-    (convert s).wasted = s.wasted + 10 ∧ (convert s).transferred = s.transferred := by
+    (convert s).dissipated = s.dissipated + 10 ∧ (convert s).transferred = s.transferred := by
   refine ⟨?_, ?_⟩
-  · change s.wasted + (if arrival s then 0 else 10) = s.wasted + 10
+  · change s.dissipated + (if arrival s then 0 else 10) = s.dissipated + 10
     rw [failed]
     rfl
   · change s.transferred + (if arrival s then 10 else 0) = s.transferred
@@ -85,47 +85,47 @@ def dissipated (failed : Bool) : Nat := if failed then 10 else 0
 theorem native_dissipation_step {s t : NativePacketProcess.State}
     {command : NativePacketProcess.Command} {o : Observation}
     (actual : execute s command = .complete t o) :
-    t.wasted = s.wasted + dissipated (failedConversion command s) := by
+    t.dissipated = s.dissipated + dissipated (failedConversion command s) := by
   cases command with
   | probe =>
     obtain ⟨_, rfl, _⟩ := (probe_complete_iff s t o).mp actual
     rw [(probe_final_effects s).2.2.2.2.2.2]
-    change s.wasted + (if arrival s then 0 else 10) = s.wasted + (if (!arrival s) then 10 else 0)
+    change s.dissipated + (if arrival s then 0 else 10) = s.dissipated + (if (!arrival s) then 10 else 0)
     cases arrival s <;> rfl
   | a =>
     unfold execute at actual
-    generalize interface : charge s = payment at actual
-    cases payment with
+    generalize interface : support s = result at actual
+    cases result with
     | capacity => cases actual
-    | funding => cases actual
-    | paid ready =>
-      obtain ⟨_, rfl⟩ := (charge_paid_iff s ready).mp interface
+    | insufficient => cases actual
+    | sustained ready =>
+      obtain ⟨_, rfl⟩ := (support_sustained_iff s ready).mp interface
       cases actual
       rfl
   | reset =>
     unfold execute at actual
-    generalize interface : charge s = payment at actual
-    cases payment with
+    generalize interface : support s = result at actual
+    cases result with
     | capacity => cases actual
-    | funding => cases actual
-    | paid ready =>
-      obtain ⟨_, rfl⟩ := (charge_paid_iff s ready).mp interface
+    | insufficient => cases actual
+    | sustained ready =>
+      obtain ⟨_, rfl⟩ := (support_sustained_iff s ready).mp interface
       cases actual
       rfl
   | read =>
     unfold execute at actual
-    generalize interface : charge s = payment at actual
-    cases payment with
+    generalize interface : support s = result at actual
+    cases result with
     | capacity => cases actual
-    | funding => cases actual
-    | paid ready =>
-      obtain ⟨_, rfl⟩ := (charge_paid_iff s ready).mp interface
+    | insufficient => cases actual
+    | sustained ready =>
+      obtain ⟨_, rfl⟩ := (support_sustained_iff s ready).mp interface
       cases actual
       rfl
 
 /-- The dissipated record shows `count` failed conversions. -/
 def FailureRecord (s : NativePacketProcess.State) (count : Nat) : Prop :=
-  s.wasted = 10 * count
+  s.dissipated = 10 * count
 
 def countStep (failed : Bool) : Nat := if failed then 1 else 0
 
@@ -169,36 +169,36 @@ theorem trace_failure_record {x y : Port} {events : List FormationClosure.Event}
 /-! ## 2. Recovery at any rate, and the rate the activity fixes -/
 
 def finishRecoveryAt (rate : Nat) (x : Port) (ready : NativePacketProcess.State) : Outcome :=
-  if rate * (x.recovered + 1) ≤ ready.wasted then
+  if rate * (x.recovered + 1) ≤ ready.dissipated then
     .complete ⟨ready, x.spare + 1, x.recovered + 1⟩
   else .stopped ⟨ready, x.spare, x.recovered⟩
 
 /-- `FormationClosure.recover` with its rate left open. -/
 def recoverAt (rate : Nat) (x : Port) : Outcome :=
-  match charge x.native with
+  match support x.native with
   | .capacity => .stopped x
-  | .funding => .stopped x
-  | .paid ready => finishRecoveryAt rate x ready
+  | .insufficient => .stopped x
+  | .sustained ready => finishRecoveryAt rate x ready
 
 theorem recoverAt_ten : recoverAt 10 = recover := rfl
 
 theorem recoverAt_complete_iff (rate : Nat) (x y : Port) :
     recoverAt rate x = .complete y ↔
-      Payable x.native ∧ rate * (x.recovered + 1) ≤ x.native.wasted ∧
-        y = ⟨debit x.native, x.spare + 1, x.recovered + 1⟩ := by
+      Supportable x.native ∧ rate * (x.recovered + 1) ≤ x.native.dissipated ∧
+        y = ⟨enact x.native, x.spare + 1, x.recovered + 1⟩ := by
   constructor
   · intro completed
     unfold recoverAt at completed
-    generalize interface : charge x.native = payment at completed
-    cases payment with
+    generalize interface : support x.native = result at completed
+    cases result with
     | capacity => cases completed
-    | funding => cases completed
-    | paid ready =>
-      obtain ⟨sustained, equality⟩ := (charge_paid_iff x.native ready).mp interface
+    | insufficient => cases completed
+    | sustained ready =>
+      obtain ⟨sustained, equality⟩ := (support_sustained_iff x.native ready).mp interface
       cases equality
       dsimp only at completed
       unfold finishRecoveryAt at completed
-      by_cases backed : rate * (x.recovered + 1) ≤ (debit x.native).wasted
+      by_cases backed : rate * (x.recovered + 1) ≤ (enact x.native).dissipated
       · rw [if_pos backed] at completed
         cases completed
         exact ⟨sustained, backed, rfl⟩
@@ -206,10 +206,10 @@ theorem recoverAt_complete_iff (rate : Nat) (x y : Port) :
         cases completed
   · rintro ⟨sustained, backed, rfl⟩
     unfold recoverAt
-    rw [charge_paid x.native sustained.1 sustained.2]
+    rw [support_sustained x.native sustained.1 sustained.2]
     dsimp only
     unfold finishRecoveryAt
-    rw [if_pos (show rate * (x.recovered + 1) ≤ (debit x.native).wasted from backed)]
+    rw [if_pos (show rate * (x.recovered + 1) ≤ (enact x.native).dissipated from backed)]
 
 /-- Each recovered pair is backed by a distinct recorded failed conversion. -/
 def PairsBackedAt (rate : Nat) : Prop :=
@@ -219,17 +219,17 @@ def PairsBackedAt (rate : Nat) : Prop :=
 /-- Each recorded failed conversion not yet recovered can be recovered when
 the interface draw is met. -/
 def EachFailureRecoverableAt (rate : Nat) : Prop :=
-  ∀ (x : Port) (count : Nat), Payable x.native → FailureRecord x.native count →
+  ∀ (x : Port) (count : Nat), Supportable x.native → FailureRecord x.native count →
     x.recovered + 1 ≤ count → ∃ y, recoverAt rate x = .complete y
 
 /-- A port state used only to test the two requirements. -/
 def witness (dissipatedUnits recoveredPairs : Nat) : Port :=
   ⟨{ phase := .p0, tau := false, sigma := false, broken := false, blocked := true,
-     receiptFlip := false, source := 0, fuel := 100000, live := 0, workspace := 0,
-     capacity := 10, spent := 0, income := 0, transferred := 0,
-     wasted := dissipatedUnits }, 0, recoveredPairs⟩
+     receiptFlip := false, source := 0, held := 100000, live := 0, workspace := 0,
+     capacity := 10, enacted := 0, arrived := 0, transferred := 0,
+     dissipated := dissipatedUnits }, 0, recoveredPairs⟩
 
-theorem witness_sustainable (d r : Nat) : Payable (witness d r).native :=
+theorem witness_sustainable (d r : Nat) : Supportable (witness d r).native :=
   ⟨show 2 ≤ 10 by decide, show 16386 ≤ 100000 by decide⟩
 
 theorem ten_backs_pairs : PairsBackedAt 10 := by
@@ -258,7 +258,7 @@ theorem backed_rate_at_least_ten {rate : Nat} (backed : PairsBackedAt rate) : 10
   | inr enough => exact enough
   | inl finer =>
     exfalso
-    have fits : rate * (rate + 1) ≤ (witness (10 * rate) rate).native.wasted := by
+    have fits : rate * (rate + 1) ≤ (witness (10 * rate) rate).native.dissipated := by
       change rate * (rate + 1) ≤ 10 * rate
       rw [Nat.mul_comm 10 rate]
       exact Nat.mul_le_mul_left rate finer
@@ -314,7 +314,7 @@ theorem coarser_rate_strands_failure :
     (∃ y, runAt 10 start history = some y ∧ y.recovered = 1) ∧
       runAt 11 start history = none ∧
       (∃ m, runAt 11 start [nativeE .a, nativeE .a, nativeE .probe] = some m ∧
-        FailureRecord m.native 1 ∧ m.recovered = 0 ∧ Payable m.native ∧
+        FailureRecord m.native 1 ∧ m.recovered = 0 ∧ Supportable m.native ∧
         ∀ y, recoverAt 11 m ≠ .complete y) := by
   refine ⟨⟨_, rfl, rfl⟩, rfl, ⟨_, rfl, rfl, rfl, ⟨by decide, by decide⟩, ?_⟩⟩
   intro y completed
@@ -324,8 +324,8 @@ theorem coarser_rate_strands_failure :
 /-- A blocked port with enough held amount for nine failed conversions. -/
 def nineFailuresStart : Port :=
   ⟨{ phase := .p0, tau := false, sigma := false, broken := false, blocked := true,
-     receiptFlip := false, source := 90, fuel := 1000000, live := 0, workspace := 0,
-     capacity := 10, spent := 0, income := 0, transferred := 0, wasted := 0 }, 0, 0⟩
+     receiptFlip := false, source := 90, held := 1000000, live := 0, workspace := 0,
+     capacity := 10, enacted := 0, arrived := 0, transferred := 0, dissipated := 0 }, 0, 0⟩
 
 def nineFailuresThenTenRecoveries : List FormationClosure.Event :=
   List.replicate 9 (nativeE .probe) ++ List.replicate 10 recoverE

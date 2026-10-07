@@ -1,6 +1,6 @@
 # What the start of the closure history must hold
 
-7 October 2026. AI-assisted continuation of the [contact-formation track](CONTACT-FORMATION-LAW.md). `FormationClosure.start` begins with no spare pairs, nothing recovered, nothing dissipated, 200000 held units (`fuel`) and 20 source units. This note asks which of these follow from the activity that starts there. It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): held amount and source are coordinates of the one configuration, and the question is what the activity's own draws and conversions require of them.
+7 October 2026. AI-assisted continuation of the [contact-formation track](CONTACT-FORMATION-LAW.md). `FormationClosure.start` begins with no spare pairs, nothing recovered, nothing dissipated, 200000 held units (`held`) and 20 source units. This note asks which of these follow from the activity that starts there. It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): held amount and source are coordinates of the one configuration, and the question is what the activity's own draws and conversions require of them.
 
 **Formal status:** [StartingStock.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean), 25 declarations, every axiom report empty. It imports `RecoveryQuantum` and `FormationDraw`. It is checked by [check_stock_derivation.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_stock_derivation.py), which also recomputes the least start by independent Python search.
 
@@ -17,7 +17,7 @@ Activity of a history → the starting amounts it requires.
 | With nothing dissipated, the native backing invariant forces nothing recovered | `nothing_dissipated_nothing_recovered` |
 | Below one draw, no event of the closure process completes | `nothing_held_nothing_proceeds` |
 | Held amount plus cumulative draw is conserved up to arrival | `held_amount_conserved` |
-| A history without arrival started holding its operations times `bill`, plus what remains | `held_covers_draws_before_arrival` |
+| A history without arrival started holding its operations times `draw`, plus what remains | `held_covers_draws_before_arrival` |
 | Every completed history converts ten source units per probe | `source_accounting` |
 | **The closure history's least start.** It completes from held amount `f` and source `S` only if `f ≥ 114702` (seven draws of 16386) and `S ≥ 20` (two conversions); it completes at exactly that start and stops with one unit less of either | `history_needs`, `least_starting_stock` |
 
