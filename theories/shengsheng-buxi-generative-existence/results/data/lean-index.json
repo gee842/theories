@@ -17,25 +17,25 @@
     "classification": "Path-based documentary roles; working-source is not a claim of accepted, complete, canonical or checked status. A file containing only #print axioms and no inventoried named declarations is an audit-driver."
   },
   "statistics": {
-    "lean_paths": 1711,
-    "distinct_byte_contents": 541,
+    "lean_paths": 1715,
+    "distinct_byte_contents": 545,
     "byte_identical_duplicate_groups": 230,
     "roles": {
       "audit-driver": 12,
       "development-attempt": 420,
       "historical-draft": 3,
       "imported-archive": 23,
-      "saved-copy": 959,
-      "working-source": 294
+      "saved-copy": 960,
+      "working-source": 297
     },
-    "working_named_theorem_lemma_occurrences": 5975,
-    "working_explicit_named_declaration_occurrences": 9726,
+    "working_named_theorem_lemma_occurrences": 6031,
+    "working_explicit_named_declaration_occurrences": 9808,
     "working_groups": {
       "abstraction": 41,
       "concern": 15,
       "core": 50,
       "ethics": 24,
-      "inquiry": 45,
+      "inquiry": 48,
       "learning": 32,
       "other": 1,
       "renewal": 12,
@@ -2341,6 +2341,18 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean",
+      "sha256": "bbd5bc2e9f473986e508d3341d924df46905660df9e423d897dcfef0ba71939f",
+      "role": "working-source",
+      "group": "inquiry",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "direct_documentation_links_from": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/README.md"
+      ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean",
       "sha256": "06889cdcee41208db379a21e3963fb421fcfe964dc44e5e56f1379634e89871d",
       "role": "working-source",
@@ -2699,6 +2711,18 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean",
+      "sha256": "9079796fff99dbf9ec6a6fda8091c15126a6b074f6661044d35d18e29d1e31e7",
+      "role": "working-source",
+      "group": "inquiry",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "direct_documentation_links_from": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/README.md"
+      ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RelationalCut.lean",
       "sha256": "bb0a5dc53a5af363406f605be28208c97398e81875d9b84f4ea53a5d57a8f7b2",
       "role": "working-source",
@@ -2717,6 +2741,18 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md"
+      ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean",
+      "sha256": "c8eb88aa005aba022950b8a4a21fad72dc1d8472ab136fc569da320305ce3a2a",
+      "role": "working-source",
+      "group": "inquiry",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "direct_documentation_links_from": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/README.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -9920,11 +9956,16 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean",
-      "sha256": "5379db643f1d87c94a610c6d7493fd68c8b7427036054166b9b37e0651d686ad",
+      "sha256": "972d9c67e4a95d57db80c7d808f929a68ac66ed57e37a462ae0009e11817ebcb",
       "role": "working-source",
       "group": "abstraction",
-      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
-      "direct_documentation_links_from": [],
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md",
+      "direct_documentation_links_from": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md"
+      ],
       "proof_status": "not_assessed_by_catalogue"
     },
     {
@@ -9932,10 +9973,22 @@
       "sha256": "c765f66dfb94e92948495aa61a8ac518f6c72d629de0d70d537a91e336b08569",
       "role": "working-source",
       "group": "abstraction",
-      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md",
       "direct_documentation_links_from": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md"
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md"
       ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification/KernelAudit.lean",
+      "sha256": "286f26d2ff870e28adb5b7cb2003ddf0933f0652438896723939bbc4ad7a9dcc",
+      "role": "saved-copy",
+      "group": "abstraction",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md",
+      "direct_documentation_links_from": [],
       "proof_status": "not_assessed_by_catalogue"
     },
     {
@@ -31695,6 +31748,24 @@
       },
       "print_axioms_commands": 26
     },
+    "286f26d2ff870e28adb5b7cb2003ddf0933f0652438896723939bbc4ad7a9dcc": {
+      "byte_size": 2161,
+      "line_count": 48,
+      "imports": [
+        "PotentialTruth",
+        "CoverageBoundary"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 45
+    },
     "28e232990d4ac418e8307bc966baed75758193caf561f7fc2e638ddcddf0cede": {
       "byte_size": 3470,
       "line_count": 76,
@@ -48685,142 +48756,6 @@
         "unsafe": []
       },
       "print_axioms_commands": 12
-    },
-    "5379db643f1d87c94a610c6d7493fd68c8b7427036054166b9b37e0651d686ad": {
-      "byte_size": 3909,
-      "line_count": 118,
-      "imports": [
-        "PotentialTruth"
-      ],
-      "declarations": [
-        {
-          "kind": "def",
-          "name": "FutureExists",
-          "qualified_name_hint": "CoverageBoundary.FutureExists",
-          "line": 14
-        },
-        {
-          "kind": "theorem",
-          "name": "future_exists_agreement",
-          "qualified_name_hint": "CoverageBoundary.future_exists_agreement",
-          "line": 17
-        },
-        {
-          "kind": "theorem",
-          "name": "coverage_iff_all_unary_existentials",
-          "qualified_name_hint": "CoverageBoundary.coverage_iff_all_unary_existentials",
-          "line": 26
-        },
-        {
-          "kind": "def",
-          "name": "GlobalCoverage",
-          "qualified_name_hint": "CoverageBoundary.GlobalCoverage",
-          "line": 34
-        },
-        {
-          "kind": "def",
-          "name": "JointExtensions",
-          "qualified_name_hint": "CoverageBoundary.JointExtensions",
-          "line": 36
-        },
-        {
-          "kind": "theorem",
-          "name": "coverage_of_joint_extensions",
-          "qualified_name_hint": "CoverageBoundary.coverage_of_joint_extensions",
-          "line": 39
-        },
-        {
-          "kind": "inductive",
-          "name": "Fork",
-          "qualified_name_hint": "CoverageBoundary.Fork",
-          "line": 46
-        },
-        {
-          "kind": "def",
-          "name": "forkFuture",
-          "qualified_name_hint": "CoverageBoundary.forkFuture",
-          "line": 50
-        },
-        {
-          "kind": "def",
-          "name": "forkDomain",
-          "qualified_name_hint": "CoverageBoundary.forkDomain",
-          "line": 56
-        },
-        {
-          "kind": "def",
-          "name": "forkFrame",
-          "qualified_name_hint": "CoverageBoundary.forkFrame",
-          "line": 61
-        },
-        {
-          "kind": "theorem",
-          "name": "fork_global_coverage",
-          "qualified_name_hint": "CoverageBoundary.fork_global_coverage",
-          "line": 68
-        },
-        {
-          "kind": "theorem",
-          "name": "fork_every_value_from_start",
-          "qualified_name_hint": "CoverageBoundary.fork_every_value_from_start",
-          "line": 74
-        },
-        {
-          "kind": "theorem",
-          "name": "fork_left_misses_true",
-          "qualified_name_hint": "CoverageBoundary.fork_left_misses_true",
-          "line": 79
-        },
-        {
-          "kind": "theorem",
-          "name": "fork_not_future_coverage",
-          "qualified_name_hint": "CoverageBoundary.fork_not_future_coverage",
-          "line": 89
-        },
-        {
-          "kind": "theorem",
-          "name": "fork_not_joint_extensions",
-          "qualified_name_hint": "CoverageBoundary.fork_not_joint_extensions",
-          "line": 93
-        },
-        {
-          "kind": "def",
-          "name": "emptyInterpretation",
-          "qualified_name_hint": "CoverageBoundary.emptyInterpretation",
-          "line": 96
-        },
-        {
-          "kind": "def",
-          "name": "anotherValue",
-          "qualified_name_hint": "CoverageBoundary.anotherValue",
-          "line": 98
-        },
-        {
-          "kind": "theorem",
-          "name": "another_global_true",
-          "qualified_name_hint": "CoverageBoundary.another_global_true",
-          "line": 101
-        },
-        {
-          "kind": "theorem",
-          "name": "another_potential_false_at_start",
-          "qualified_name_hint": "CoverageBoundary.another_potential_false_at_start",
-          "line": 107
-        }
-      ],
-      "declaration_counts": {
-        "def": 8,
-        "inductive": 1,
-        "theorem": 10
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
     },
     "539742f929fbc8d3d9efc015ae0b08d80463ed99e65a0ea4af4c4f2eaf80b083": {
       "byte_size": 11030,
@@ -92273,6 +92208,207 @@
       },
       "print_axioms_commands": 0
     },
+    "9079796fff99dbf9ec6a6fda8091c15126a6b074f6661044d35d18e29d1e31e7": {
+      "byte_size": 17652,
+      "line_count": 372,
+      "imports": [
+        "FormationClosure"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "conversion_settles_quantum",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.conversion_settles_quantum",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "failed_conversion_dissipates_quantum",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.failed_conversion_dissipates_quantum",
+          "line": 62
+        },
+        {
+          "kind": "def",
+          "name": "failedConversion",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.failedConversion",
+          "line": 75
+        },
+        {
+          "kind": "def",
+          "name": "dissipated",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.dissipated",
+          "line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "native_dissipation_step",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.native_dissipation_step",
+          "line": 85
+        },
+        {
+          "kind": "def",
+          "name": "FailureRecord",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.FailureRecord",
+          "line": 127
+        },
+        {
+          "kind": "def",
+          "name": "countStep",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.countStep",
+          "line": 130
+        },
+        {
+          "kind": "theorem",
+          "name": "failure_record_step",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.failure_record_step",
+          "line": 132
+        },
+        {
+          "kind": "theorem",
+          "name": "trace_failure_record",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.trace_failure_record",
+          "line": 142
+        },
+        {
+          "kind": "def",
+          "name": "finishRecoveryAt",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.finishRecoveryAt",
+          "line": 171
+        },
+        {
+          "kind": "def",
+          "name": "recoverAt",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.recoverAt",
+          "line": 177
+        },
+        {
+          "kind": "theorem",
+          "name": "recoverAt_ten",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.recoverAt_ten",
+          "line": 183
+        },
+        {
+          "kind": "theorem",
+          "name": "recoverAt_complete_iff",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.recoverAt_complete_iff",
+          "line": 185
+        },
+        {
+          "kind": "def",
+          "name": "PairsBackedAt",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.PairsBackedAt",
+          "line": 215
+        },
+        {
+          "kind": "def",
+          "name": "EachFailureRecoverableAt",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.EachFailureRecoverableAt",
+          "line": 221
+        },
+        {
+          "kind": "def",
+          "name": "witness",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.witness",
+          "line": 226
+        },
+        {
+          "kind": "theorem",
+          "name": "witness_sustainable",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.witness_sustainable",
+          "line": 232
+        },
+        {
+          "kind": "theorem",
+          "name": "ten_backs_pairs",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.ten_backs_pairs",
+          "line": 235
+        },
+        {
+          "kind": "theorem",
+          "name": "ten_recovers_each_failure",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.ten_recovers_each_failure",
+          "line": 242
+        },
+        {
+          "kind": "theorem",
+          "name": "recoverable_rate_at_most_ten",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.recoverable_rate_at_most_ten",
+          "line": 248
+        },
+        {
+          "kind": "theorem",
+          "name": "backed_rate_at_least_ten",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.backed_rate_at_least_ten",
+          "line": 256
+        },
+        {
+          "kind": "theorem",
+          "name": "rate_determined",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.rate_determined",
+          "line": 272
+        },
+        {
+          "kind": "def",
+          "name": "runEventAt",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.runEventAt",
+          "line": 283
+        },
+        {
+          "kind": "def",
+          "name": "runAt",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.runAt",
+          "line": 288
+        },
+        {
+          "kind": "theorem",
+          "name": "runEventAt_ten",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.runEventAt_ten",
+          "line": 294
+        },
+        {
+          "kind": "theorem",
+          "name": "runAt_ten",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.runAt_ten",
+          "line": 300
+        },
+        {
+          "kind": "theorem",
+          "name": "coarser_rate_strands_failure",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.coarser_rate_strands_failure",
+          "line": 313
+        },
+        {
+          "kind": "def",
+          "name": "nineFailuresStart",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.nineFailuresStart",
+          "line": 325
+        },
+        {
+          "kind": "def",
+          "name": "nineFailuresThenTenRecoveries",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.nineFailuresThenTenRecoveries",
+          "line": 330
+        },
+        {
+          "kind": "theorem",
+          "name": "finer_rate_overcounts",
+          "qualified_name_hint": "Generative.InquirySufficiency.RecoveryQuantum.finer_rate_overcounts",
+          "line": 335
+        }
+      ],
+      "declaration_counts": {
+        "def": 13,
+        "theorem": 17
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 30
+    },
     "90ffb0bab5a2c8dc29aff88f187ae780f567515635594f131ad1d53d1647b830": {
       "byte_size": 18607,
       "line_count": 382,
@@ -95050,6 +95186,142 @@
         "unsafe": []
       },
       "print_axioms_commands": 23
+    },
+    "972d9c67e4a95d57db80c7d808f929a68ac66ed57e37a462ae0009e11817ebcb": {
+      "byte_size": 3955,
+      "line_count": 118,
+      "imports": [
+        "PotentialTruth"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "FutureExists",
+          "qualified_name_hint": "CoverageBoundary.FutureExists",
+          "line": 14
+        },
+        {
+          "kind": "theorem",
+          "name": "future_exists_agreement",
+          "qualified_name_hint": "CoverageBoundary.future_exists_agreement",
+          "line": 17
+        },
+        {
+          "kind": "theorem",
+          "name": "coverage_iff_all_unary_existentials",
+          "qualified_name_hint": "CoverageBoundary.coverage_iff_all_unary_existentials",
+          "line": 26
+        },
+        {
+          "kind": "def",
+          "name": "GlobalCoverage",
+          "qualified_name_hint": "CoverageBoundary.GlobalCoverage",
+          "line": 34
+        },
+        {
+          "kind": "def",
+          "name": "JointExtensions",
+          "qualified_name_hint": "CoverageBoundary.JointExtensions",
+          "line": 36
+        },
+        {
+          "kind": "theorem",
+          "name": "coverage_of_joint_extensions",
+          "qualified_name_hint": "CoverageBoundary.coverage_of_joint_extensions",
+          "line": 39
+        },
+        {
+          "kind": "inductive",
+          "name": "Fork",
+          "qualified_name_hint": "CoverageBoundary.Fork",
+          "line": 46
+        },
+        {
+          "kind": "def",
+          "name": "forkFuture",
+          "qualified_name_hint": "CoverageBoundary.forkFuture",
+          "line": 50
+        },
+        {
+          "kind": "def",
+          "name": "forkDomain",
+          "qualified_name_hint": "CoverageBoundary.forkDomain",
+          "line": 56
+        },
+        {
+          "kind": "def",
+          "name": "forkFrame",
+          "qualified_name_hint": "CoverageBoundary.forkFrame",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "fork_global_coverage",
+          "qualified_name_hint": "CoverageBoundary.fork_global_coverage",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "fork_every_value_from_start",
+          "qualified_name_hint": "CoverageBoundary.fork_every_value_from_start",
+          "line": 74
+        },
+        {
+          "kind": "theorem",
+          "name": "fork_left_misses_true",
+          "qualified_name_hint": "CoverageBoundary.fork_left_misses_true",
+          "line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "fork_not_future_coverage",
+          "qualified_name_hint": "CoverageBoundary.fork_not_future_coverage",
+          "line": 89
+        },
+        {
+          "kind": "theorem",
+          "name": "fork_not_joint_extensions",
+          "qualified_name_hint": "CoverageBoundary.fork_not_joint_extensions",
+          "line": 93
+        },
+        {
+          "kind": "def",
+          "name": "emptyInterpretation",
+          "qualified_name_hint": "CoverageBoundary.emptyInterpretation",
+          "line": 96
+        },
+        {
+          "kind": "def",
+          "name": "anotherValue",
+          "qualified_name_hint": "CoverageBoundary.anotherValue",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "another_global_true",
+          "qualified_name_hint": "CoverageBoundary.another_global_true",
+          "line": 101
+        },
+        {
+          "kind": "theorem",
+          "name": "another_potential_false_at_start",
+          "qualified_name_hint": "CoverageBoundary.another_potential_false_at_start",
+          "line": 107
+        }
+      ],
+      "declaration_counts": {
+        "def": 8,
+        "inductive": 1,
+        "theorem": 10
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
     },
     "988e7be11c25e131ffeee525744aa6a5b03900b40957f44a3ccbfdf44293edfd": {
       "byte_size": 3034,
@@ -112652,6 +112924,190 @@
       },
       "print_axioms_commands": 47
     },
+    "bbd5bc2e9f473986e508d3341d924df46905660df9e423d897dcfef0ba71939f": {
+      "byte_size": 18138,
+      "line_count": 403,
+      "imports": [
+        "FormationClosure",
+        "PhasePeriodSelection"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "cancel_left",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.cancel_left",
+          "line": 48
+        },
+        {
+          "kind": "theorem",
+          "name": "add_mul_right",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.add_mul_right",
+          "line": 57
+        },
+        {
+          "kind": "def",
+          "name": "operations",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.operations",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "native_operation_draw",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.native_operation_draw",
+          "line": 67
+        },
+        {
+          "kind": "def",
+          "name": "drawWith",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.drawWith",
+          "line": 102
+        },
+        {
+          "kind": "def",
+          "name": "attemptDraw",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.attemptDraw",
+          "line": 106
+        },
+        {
+          "kind": "theorem",
+          "name": "attemptDraw_native",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.attemptDraw_native",
+          "line": 112
+        },
+        {
+          "kind": "theorem",
+          "name": "attemptDraw_held_iff",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.attemptDraw_held_iff",
+          "line": 114
+        },
+        {
+          "kind": "def",
+          "name": "formWith",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.formWith",
+          "line": 142
+        },
+        {
+          "kind": "def",
+          "name": "recoverWith",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.recoverWith",
+          "line": 150
+        },
+        {
+          "kind": "theorem",
+          "name": "recoverWith_native",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.recoverWith_native",
+          "line": 156
+        },
+        {
+          "kind": "theorem",
+          "name": "formWith_native",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.formWith_native",
+          "line": 158
+        },
+        {
+          "kind": "theorem",
+          "name": "formWith_complete_iff",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.formWith_complete_iff",
+          "line": 171
+        },
+        {
+          "kind": "theorem",
+          "name": "recoverWith_complete_iff",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.recoverWith_complete_iff",
+          "line": 197
+        },
+        {
+          "kind": "def",
+          "name": "processWith",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.processWith",
+          "line": 228
+        },
+        {
+          "kind": "theorem",
+          "name": "processWith_native_step",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.processWith_native_step",
+          "line": 236
+        },
+        {
+          "kind": "def",
+          "name": "eventOperations",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.eventOperations",
+          "line": 250
+        },
+        {
+          "kind": "def",
+          "name": "OneDrawLaw",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.OneDrawLaw",
+          "line": 256
+        },
+        {
+          "kind": "theorem",
+          "name": "closure_one_draw_law",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.closure_one_draw_law",
+          "line": 263
+        },
+        {
+          "kind": "def",
+          "name": "totalOperations",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.totalOperations",
+          "line": 280
+        },
+        {
+          "kind": "theorem",
+          "name": "closure_step_keeps_amount",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.closure_step_keeps_amount",
+          "line": 284
+        },
+        {
+          "kind": "theorem",
+          "name": "closure_trace_draw",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.closure_trace_draw",
+          "line": 300
+        },
+        {
+          "kind": "theorem",
+          "name": "one_law_is_native_draw",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.one_law_is_native_draw",
+          "line": 323
+        },
+        {
+          "kind": "theorem",
+          "name": "one_law_forces_formation_draw",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.one_law_forces_formation_draw",
+          "line": 334
+        },
+        {
+          "kind": "theorem",
+          "name": "one_law_forces_recovery_draw",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.one_law_forces_recovery_draw",
+          "line": 346
+        },
+        {
+          "kind": "def",
+          "name": "onePairPort",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.onePairPort",
+          "line": 360
+        },
+        {
+          "kind": "theorem",
+          "name": "free_formation_breaks_one_law",
+          "qualified_name_hint": "Generative.InquirySufficiency.FormationDraw.free_formation_breaks_one_law",
+          "line": 367
+        }
+      ],
+      "declaration_counts": {
+        "def": 10,
+        "theorem": 17
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 27
+    },
     "bc7ee57790699cf2db5ccde82431af31e24a03c3c0ec20f1cc3b4e214c5b88e2": {
       "byte_size": 11491,
       "line_count": 288,
@@ -119876,6 +120332,178 @@
         "unsafe": []
       },
       "print_axioms_commands": 0
+    },
+    "c8eb88aa005aba022950b8a4a21fad72dc1d8472ab136fc569da320305ce3a2a": {
+      "byte_size": 19417,
+      "line_count": 412,
+      "imports": [
+        "RecoveryQuantum",
+        "FormationDraw"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "nothing_dissipated_nothing_recovered",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.nothing_dissipated_nothing_recovered",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "inherited_pair_forms_unbacked",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.inherited_pair_forms_unbacked",
+          "line": 60
+        },
+        {
+          "kind": "def",
+          "name": "FormationsBackedFrom",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.FormationsBackedFrom",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "backing_iff_empty_stock",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.backing_iff_empty_stock",
+          "line": 72
+        },
+        {
+          "kind": "theorem",
+          "name": "execute_complete_covered",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.execute_complete_covered",
+          "line": 92
+        },
+        {
+          "kind": "theorem",
+          "name": "step_covered",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.step_covered",
+          "line": 102
+        },
+        {
+          "kind": "theorem",
+          "name": "nothing_held_nothing_proceeds",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.nothing_held_nothing_proceeds",
+          "line": 114
+        },
+        {
+          "kind": "theorem",
+          "name": "sensing_shape",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.sensing_shape",
+          "line": 118
+        },
+        {
+          "kind": "theorem",
+          "name": "draw_conserves",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.draw_conserves",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "probe_conserves",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.probe_conserves",
+          "line": 141
+        },
+        {
+          "kind": "theorem",
+          "name": "step_conserves",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.step_conserves",
+          "line": 149
+        },
+        {
+          "kind": "theorem",
+          "name": "cancel_right",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.cancel_right",
+          "line": 183
+        },
+        {
+          "kind": "theorem",
+          "name": "held_amount_conserved",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.held_amount_conserved",
+          "line": 188
+        },
+        {
+          "kind": "theorem",
+          "name": "held_covers_draws_before_arrival",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.held_covers_draws_before_arrival",
+          "line": 208
+        },
+        {
+          "kind": "def",
+          "name": "conversions",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.conversions",
+          "line": 218
+        },
+        {
+          "kind": "theorem",
+          "name": "step_source",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.step_source",
+          "line": 227
+        },
+        {
+          "kind": "theorem",
+          "name": "conversions_cons",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.conversions_cons",
+          "line": 259
+        },
+        {
+          "kind": "theorem",
+          "name": "source_accounting",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.source_accounting",
+          "line": 276
+        },
+        {
+          "kind": "def",
+          "name": "startWith",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.startWith",
+          "line": 288
+        },
+        {
+          "kind": "theorem",
+          "name": "start_is_startWith",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.start_is_startWith",
+          "line": 293
+        },
+        {
+          "kind": "theorem",
+          "name": "blocked_step_no_arrival",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.blocked_step_no_arrival",
+          "line": 295
+        },
+        {
+          "kind": "theorem",
+          "name": "blocked_history_no_arrival",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.blocked_history_no_arrival",
+          "line": 328
+        },
+        {
+          "kind": "theorem",
+          "name": "history_split",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.history_split",
+          "line": 345
+        },
+        {
+          "kind": "theorem",
+          "name": "history_needs",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.history_needs",
+          "line": 350
+        },
+        {
+          "kind": "theorem",
+          "name": "least_starting_stock",
+          "qualified_name_hint": "Generative.InquirySufficiency.StartingStock.least_starting_stock",
+          "line": 377
+        }
+      ],
+      "declaration_counts": {
+        "def": 3,
+        "theorem": 22
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 25
     },
     "c8eeededa432a8d29c96a6e47fd60f1be6ba25f98c185755453f8dc81b7f4e16": {
       "byte_size": 605,

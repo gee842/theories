@@ -10,7 +10,7 @@
 |---|---:|---:|
 | [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 24 | 314 |
 | [评价的形成与良知 / Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
-| [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 45 | 1,417 |
+| [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 48 | 1,473 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
 | [学习、预测与动力学 / Learning, prediction and dynamics](lean-declarations/learning.md) | 32 | 553 |
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
@@ -119,6 +119,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [FiniteInquiryClassification.lean](lean-declarations/inquiry.md#module-13aee3c0e811) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [FormationAccounts.lean](lean-declarations/shared.md#module-411df828cbbe) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FormationClosure.lean](lean-declarations/inquiry.md#module-d330223ee429) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
+| [FormationDraw.lean](lean-declarations/inquiry.md#module-1d28de9ca37e) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [FormationRoot.lean](lean-declarations/shared.md#module-3599c054bffb) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FormationRoutes.lean](lean-declarations/ethics.md#module-43eea8d884d9) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [FormationSupport.lean](lean-declarations/learning.md#module-4716569d13e3) | 学习、预测与动力学 / Learning, prediction and dynamics |
@@ -265,6 +266,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [ReconfigurationCorrespondenceSamples.lean](lean-declarations/ethics.md#module-12ce623ea5ce) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [RecordedClaims.lean](lean-declarations/abstraction.md#module-33531476b412) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [RecordedEvidence.lean](lean-declarations/shared.md#module-d6edcd35ca09) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
+| [RecoveryQuantum.lean](lean-declarations/inquiry.md#module-02ce03487a51) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [RecursiveGenerativeSelection.lean](lean-declarations/ethics.md#module-ecb2b467bd36) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [RecursiveGenerativeSelectionAudit.lean](lean-declarations/ethics.md#module-002fc680ef8a) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [RecursiveSelectionInheritance.lean](lean-declarations/ethics.md#module-177504233211) | 规范根据与生成方向 / Normative grounding and generative direction |
@@ -310,6 +312,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [SituatedContinuation.lean](lean-declarations/ethics.md#module-4199e2843e06) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [SituatedPractice.lean](lean-declarations/concern.md#module-618b534f95cf) | 关切与共同活动 / Concern and shared activity |
 | [SituatedRenewal.lean](lean-declarations/ethics.md#module-4c743231f0b3) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [StartingStock.lean](lean-declarations/inquiry.md#module-086d448b5bc8) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [SuccessionHistoryInterface.lean](lean-declarations/shared.md#module-6c08598bc18a) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [SuccessionPreparation.lean](lean-declarations/shared.md#module-0316e1fac3b9) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [SuccessionWitness.lean](lean-declarations/shared.md#module-d529bfeccc02) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |

@@ -956,10 +956,10 @@
     "significance_en": "This is the governing dependency map and completion standard, organizing local results around unresolved common connections.",
     "scope_zh": "原五条件候选已完成；普遍元伦理、实际遵循、表述的独占必要性及无假设目标各未被合并证明。",
     "scope_en": "The original five-condition candidate is complete; universal metaethics, actual compliance, exclusive necessity and assumption-free grounding require distinct further arguments.",
-    "next_zh": "当前伦理连接是生成增益与实际损失的内容、持续及范围如何给比较以力度；生命依存分支推进双向输运及可恢复转化。共同起点的更强根据与数学接纳继续研究。",
-    "next_en": "The ethical bridge concerns how the content, duration and scope of real gains and losses warrant comparison. Living-dependency work advances signed transport and recoverable transformation; stronger warrant and mathematical admission remain ongoing.",
+    "next_zh": "当前伦理连接是生成增益与实际损失的内容、持续及范围如何给比较以力度。生命依存已纳入双向被动输运和实际有界终点的必要支持账户；下一步解释保留或重建的组织如何使特定生命活动真正恢复。共同起点的更强根据与整个归纳域的接纳继续研究。",
+    "next_en": "The ethical bridge concerns how the content, duration and scope of real gains and losses warrant comparison. Living dependencies now include bidirectional passive transfer and a necessary support account for actual bounded endpoints; next explain how retained or reconstructed organization resumes specified living activity. Stronger ethical warrant and admission of the whole inductive domain remain ongoing.",
     "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-    "source_sha256": "b5b86d3a15fbfcd96ac780943cd26e2e10565843236cd741f240852728b10875",
+    "source_sha256": "196ace67d97637269821d8bda4b5172513b5ff01f61d671d877c0f276aa45f61",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean"
     ],
@@ -971,7 +971,8 @@
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md"
     ]
   },
   {
@@ -1312,27 +1313,31 @@
   {
     "id": "living-dependencies",
     "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
-    "source_sha256": "e703f01d1ba0cc3540feb6ce1022becd98e460323b16e334db27348ae7c0fb54",
+    "source_sha256": "11ace32d6373747d1ff4d773cee965ff8e588044eb0f9af2596bc85691dd28cf",
     "title_zh": "生命延续中的实际依存",
     "title_en": "Living dependencies within generative continuation",
     "category": "mechanism-mathematics",
     "status": "局部机制推导已检查；生命全域覆盖开放 / Local mechanistic derivation checked; living-domain coverage open",
-    "argument_zh": "在指定维持区间内，净内向输运改变需保持有界的量，补偿输出消耗功。组合这些关系可推导一般支持账户：累积负荷超过生理容限与保留功时，所讨论的继续需要额外支持。早先形成的条件能在休眠或休息中持续有效。",
-    "argument_en": "Within a specified maintained regime, net inward transport changes a bounded amount and compensating export requires work. Their composition derives the general support account: once cumulative load exceeds retained tolerance and work, the maintained continuation requires additional support. Earlier formation can remain effective during rest or dormancy.",
+    "argument_zh": "输运改变相关物质量，主动补偿需要功；组合这些关系可推出一般支持账户。维持区间内的原结果进一步扩展为实际历史上有界终点的必要账户，容许双向被动输运及中途越界。被动缓解、已有容限、保留功与有限供给的实际消耗都得到计入；单次越界本身不推出新输入必要。",
+    "argument_en": "Transport changes a relevant amount and active compensation requires work; composing these relations derives a general support account. The maintained-regime result extends to necessary accounting for actual bounded endpoints, allowing bidirectional passive transfer and intermediate excursions. Passive relief, tolerance, retained work and finite provision are counted; an excursion alone does not require fresh input.",
     "significance_zh": "将先前给定的消耗账户推进为可从具体机制推出的关系，使一般延续证明更接近生命的实际依存。",
     "significance_en": "Derives a previously supplied support account from a mechanism, advancing the real-living correspondence of general continuation proofs.",
-    "scope_zh": "研究记录10项新 Lean 定理／20项声明审计；输运律、操作界、单位与功耦合仍需实际对应。界限不是不可逆死亡阈值，也未证明所有生命有统一维护常数或连续局部生产。",
-    "scope_en": "The study records ten new Lean theorems and twenty audits. Transport, bounds, units and work coupling require real correspondence. The bound is not irreversible death, nor a universal maintenance constant or continuous-production requirement.",
-    "next_zh": "正在：生命依存的机制对应。下一步：双向被动输运、可恢复的状态改变、几何与生理组织变化，以及装置自身的形成和保留。",
-    "next_en": "Ongoing: mechanistic correspondence for living dependencies. Next: signed passive transport, recoverable regime changes, changing geometry and physiological organization, and formation and retention of the machinery.",
+    "scope_zh": "维持结果记录10项新定理／20项审计，恢复扩展另有15项新定理／20项审计。输运、单位、界与功耦合仍需实际对应。量恢复不等于生命功能恢复；证明不构造恢复轨迹、不保证反复成功，也未证明所有生命有统一维护常数或不可逆死亡阈值。",
+    "scope_en": "The maintained result records ten new theorems/twenty audits; the recovery extension adds fifteen new theorems/twenty audits. Transport, units, bounds and work coupling require real correspondence. Amount restoration is not restored living function: the proof constructs no recovery trajectory, guarantees no recurring success, and establishes no universal maintenance constant or irreversible death threshold.",
+    "next_zh": "正在：实际生命依存与恢复的机制对应。下一步：保留或重建的组织如何使指定生命活动实际恢复；说明装置形成、几何变化，以及休眠、活动与后继阶段之间的依存。",
+    "next_en": "Ongoing: mechanism correspondence for living dependence and recovery. Next: explain how retained or reconstructed organization actually resumes a specified living activity, including machinery formation, changing geometry and dependencies across dormant, active and successor stages.",
     "lean": [
-      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRecovery.lean"
     ],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md"
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-REVIEW.md"
     ]
   }
 ]

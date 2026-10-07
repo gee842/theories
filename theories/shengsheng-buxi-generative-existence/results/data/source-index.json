@@ -113,6 +113,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
@@ -202,6 +203,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-IMPLEMENTATION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECORDED-CLAIMS-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-SOURCES.md",
@@ -237,6 +239,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-DIRECTION-RECONSTRUCTION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-ETHICAL-DISCERNMENT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/STRONGEST-CLAIM-COUNTERREVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/STRONGEST-CLAIM-LOGIC.md",
@@ -1641,6 +1644,15 @@
         "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md"
       ]
     },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md": {
+      "title": "Formation and recovery draw what every native operation draws",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_stock_derivation.py",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      ]
+    },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md": {
       "title": "Independent review: a formed finite route monitor",
       "local_links": [
@@ -1855,6 +1867,8 @@
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-verification.json",
         "sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md",
@@ -2216,6 +2230,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-PHYSICAL-SOURCES.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-CHECKS.json",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-REVIEW.md",
@@ -3821,6 +3836,15 @@
         "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
       ]
     },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md": {
+      "title": "The recovery rate is the dissipation of one failed conversion",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_stock_derivation.py",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      ]
+    },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md": {
       "title": "Shared generative support and its transmission across two levels",
       "local_links": [
@@ -4202,7 +4226,38 @@
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-ARGUMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-SOURCES.md",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification.json",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      ]
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md": {
+      "title": "Classical first-order truth through possible finite continuation",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-SOURCES.md",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification.json",
+        "sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      ]
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-REVIEW.md": {
+      "title": "Independent review: potential continuation and truth",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification.json",
         "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
       ]
     },
@@ -4388,6 +4443,15 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_situated_continuation.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json",
         "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+      ]
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md": {
+      "title": "What the start of the closure history must hold",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_stock_derivation.py",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
       ]
     },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-REVIEW.md": {
@@ -5311,7 +5375,6 @@
         "experiments/constructive-succession/README.md",
         "experiments/continuing-participation/README.md",
         "experiments/evaluator-succession/README.md",
-        "experiments/guardian-anarchy/README.md",
         "experiments/inquiry-renewal/README.md",
         "experiments/integrated-correction/README.md",
         "experiments/integrated-correction/endogenous-continuation/README.md",
@@ -5355,12 +5418,15 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-CYCLE-DERIVATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean",
@@ -5398,11 +5464,14 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AcquiredContact.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ValuationInCore.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/receipt.json",
@@ -6028,6 +6097,16 @@
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/formal/DenseOrder.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/order/verification/KernelAudit.lean"
+      ]
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md": {
+      "title": "Potentialist truth and future coverage",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-SOURCES.md",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/verification.json"
       ]
     },
     "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md": {

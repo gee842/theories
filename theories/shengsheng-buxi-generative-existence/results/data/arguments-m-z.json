@@ -1213,15 +1213,15 @@
     "title_zh": "整体生成中的统一伦理根据",
     "title_en": "Unified ethical grounding within generative activity",
     "category": "normative-foundation",
-    "status": "显式起点推导已推进；普遍根据开放 / Explicit-premise progress; universal warrant open",
-    "argument_zh": "整体中的生及其继续生成具有正面规范意义，是当前明确承担的共同起点，涵盖生态、生命心智关系生活及广义组织的多个范围。保留相关实际根据且无遗漏损失的生成扩展，可在另行明确的比较与实践前提下支持维护、重组或结束；一般依存证明说明继续的必要条件。混合比较另提出可反驳的K候选：恢复共同生活可能支持承担中断，但恢复不抹去当次损失，未来也无自动无限优先。",
-    "argument_en": "Life and further generation within the whole form the explicit common normative starting point, across ecological, lived and broad organizational scopes. An actual extension preserving relevant grounds without omitted losses can support maintenance, reorganization or endings under explicit comparison and practical premises; general dependency proofs establish necessary conditions of continuation. A defeasible K candidate further considers accepting interruption to restore shared living; recovery does not erase the loss or give every future unlimited priority.",
-    "significance_zh": "把生生的正面方向、普遍推论与具体实践放在共同框架中，不逐案另立道德公理。",
-    "significance_en": "Connects shengsheng’s positive direction, general inference and situated practice without inventing a new moral axiom for each case.",
-    "scope_zh": "显式起点研究的11个 Lean 定理／27项声明区分G0相关性、C/P理由推论与N选择约束；零公理接续另有5项定理检查共同实现、保持及表示遗漏。两组都保留对应前提，未完成无前提伦理证成。普遍有效、遵从与唯一性分开。 后续11项取舍定理／28项审计检查必要损失与认识对应，不证明K的伦理优先。 最新16项损失比较定理／23项审计运输已成立的比较；不能替代第一次伦理锚点或推出有限牺牲上限。",
-    "scope_en": "The explicit-premise study’s 11 theorems/27 audits separate G0 relevance, C/P reasons and N choice constraints. A further five-theorem zero-axiom investigation checks joint realization, preservation and representational omissions. Both retain correspondence premises; neither completes premise-free ethical warrant. Validity, compliance and exclusivity remain distinct. A further eleven tradeoff theorems/twenty-eight audits check necessary loss and epistemic correspondence, not K’s ethical priority. The latest sixteen loss-comparison theorems/twenty-three audits transport an established comparison; they neither establish its first ethical anchor nor derive a finite sacrifice bound.",
-    "next_zh": "正在：实际接续与有限完成的伦理比较。下一步：解释形成后续生活的关系有什么比较分量，并独立辩护真实混合判断与损失界限；不再以运输定理替代这些根据。",
-    "next_en": "Ongoing: ethical comparison of continuing realization and finite fulfillment. Next: justify the comparative weight of forming further living, first mixed judgments and loss limits, rather than replace their grounds with another transport theorem.",
+    "status": "显式前提推导已推进；最新普遍完成尝试未获新推论 / Explicit-premise progress; latest universal completion attempt adds no inference",
+    "argument_zh": "整体中的生及其继续生成具有正面规范意义，是当前明确承担的共同起点，涵盖生态、生命心智关系生活及广义组织。保留完整相关根据的实际生成扩展，可在明确的比较与实践前提下支持维护、重组或结束。K提出为恢复共同生活而承担中断的可反驳理由；损失仍属同一根据。已有充分混合判断可沿匹配减损运输，但K的一项支持不自动构成全盘优先，接续也不因同时形成未来条件而必然胜过有限完成。",
+    "argument_en": "Life and further generation within the whole provide the explicit common normative starting point across ecological, lived and broad organizational scopes. Actual generative extension preserving relevant grounds can support maintenance, reorganization or endings under stated comparison and practical premises. K offers defeasible favor for interruption that restores shared living; loss remains part of the same ground. Warranted mixed judgments can transport across matched loss reductions. K alone supplies no all-things-considered priority, and forming future conditions does not automatically defeat finite fulfillment.",
+    "significance_zh": "以共同生生方向连接一般条件与情境实践，辨明已有比较的扩展、首次伦理根据及牺牲界限，避免逐案重立公理或重复计算进展。",
+    "significance_en": "Connects a common generative direction to situated practice while distinguishing extension of warranted comparisons, first ethical grounding and sacrifice limits.",
+    "scope_zh": "显式起点11项定理／27项审计区分相关性、比较、实践桥梁及选择约束；零公理接续5项定理检查共同实现；取舍11项／28项检查必要损失及认识对应；损失比较16项／23项运输已成立的比较。生活依存另有10+15项条件定理，支持维护与有界终点的对应。8日直接完成尝试未获新的普遍规范推论：局部组织续存不能代替整体生生，首次混合锚点与有限牺牲上限仍待辩护。既有检查有效；无前提根据、普遍有效、遵从及唯一性分开，完整完成后的独立验证尚待进行。",
+    "scope_en": "Checked results: explicit-premise inference, 11 theorems/27 audits; joint realization, five theorems; necessary loss and recognition, 11/28; comparison transport, 16/23. Living-dependency work adds 10+15 conditional theorems concerning maintained activity and bounded endpoints. The 8 October completion attempt adds no universal normative inference: local institutional persistence cannot substitute for whole generative continuation. First mixed anchors and finite sacrifice bounds remain to be justified. Existing checks retain their scope. Premise-free warrant, universal validity, compliance and exclusivity remain distinct; independent verification after full completion is pending.",
+    "next_zh": "正在研究接续关系相对有限完成的伦理分量。下一步需要能改变比较支持的新论证或区分性依据，并保留实际形成、经历、承担分布及结束；重复共同依存、K或比较运输不能完成该连接。",
+    "next_en": "Ongoing: continuation’s ethical weight relative to finite fulfillment. Next requires a new argument or discriminating evidence preserving formation, experience, distributed burdens and endings; repeating dependence, K or comparison transport cannot close this connection.",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean",
@@ -1234,7 +1234,9 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurableRoutes.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRecovery.lean"
     ],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
@@ -1246,9 +1248,14 @@
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-verification.json"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/loss-comparison-verification.json",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-verification.json",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json"
     ],
-    "source_sha256": "45e5ea95bc0e7b847c7af48050ca47f2c2630bd308aa678ce5f8ee96e46c9954",
+    "source_sha256": "5b8e5c910a59767942152a22669fb4628357f4f6a9f4745891a80b329b7afaf4",
     "status_code": "explicit-premise-progress-universal-open"
   },
   {

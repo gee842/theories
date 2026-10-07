@@ -2199,7 +2199,7 @@ Imports: `Std`
 <details>
 <summary>CoverageBoundary.lean — 19 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/CoverageBoundary.lean`
 
@@ -2237,7 +2237,7 @@ Imports: `PotentialTruth`
 <details>
 <summary>PotentialTruth.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/potential/formal/PotentialTruth.lean`
 

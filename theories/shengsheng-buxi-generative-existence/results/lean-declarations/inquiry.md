@@ -465,6 +465,54 @@ Imports: `ContactFormation`
 
 </details>
 
+<a id="module-1d28de9ca37e"></a>
+
+<details>
+<summary>FormationDraw.lean — 27 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean`
+
+Imports: `FormationClosure`, `PhasePeriodSelection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.InquirySufficiency.FormationDraw.cancel_left](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L48) | 48 |
+| [Generative.InquirySufficiency.FormationDraw.add_mul_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L57) | 57 |
+| [Generative.InquirySufficiency.FormationDraw.native_operation_draw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L67) | 67 |
+| [Generative.InquirySufficiency.FormationDraw.attemptDraw_native](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L112) | 112 |
+| [Generative.InquirySufficiency.FormationDraw.attemptDraw_held_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L114) | 114 |
+| [Generative.InquirySufficiency.FormationDraw.recoverWith_native](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L156) | 156 |
+| [Generative.InquirySufficiency.FormationDraw.formWith_native](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L158) | 158 |
+| [Generative.InquirySufficiency.FormationDraw.formWith_complete_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L171) | 171 |
+| [Generative.InquirySufficiency.FormationDraw.recoverWith_complete_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L197) | 197 |
+| [Generative.InquirySufficiency.FormationDraw.processWith_native_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L236) | 236 |
+| [Generative.InquirySufficiency.FormationDraw.closure_one_draw_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L263) | 263 |
+| [Generative.InquirySufficiency.FormationDraw.closure_step_keeps_amount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L284) | 284 |
+| [Generative.InquirySufficiency.FormationDraw.closure_trace_draw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L300) | 300 |
+| [Generative.InquirySufficiency.FormationDraw.one_law_is_native_draw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L323) | 323 |
+| [Generative.InquirySufficiency.FormationDraw.one_law_forces_formation_draw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L334) | 334 |
+| [Generative.InquirySufficiency.FormationDraw.one_law_forces_recovery_draw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L346) | 346 |
+| [Generative.InquirySufficiency.FormationDraw.free_formation_breaks_one_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L367) | 367 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Generative.InquirySufficiency.FormationDraw.operations](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L61) (L61)
+- `def` [Generative.InquirySufficiency.FormationDraw.drawWith](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L102) (L102)
+- `def` [Generative.InquirySufficiency.FormationDraw.attemptDraw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L106) (L106)
+- `def` [Generative.InquirySufficiency.FormationDraw.formWith](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L142) (L142)
+- `def` [Generative.InquirySufficiency.FormationDraw.recoverWith](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L150) (L150)
+- `def` [Generative.InquirySufficiency.FormationDraw.processWith](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L228) (L228)
+- `def` [Generative.InquirySufficiency.FormationDraw.eventOperations](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L250) (L250)
+- `def` [Generative.InquirySufficiency.FormationDraw.OneDrawLaw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L256) (L256)
+- `def` [Generative.InquirySufficiency.FormationDraw.totalOperations](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L280) (L280)
+- `def` [Generative.InquirySufficiency.FormationDraw.onePairPort](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean#L360) (L360)
+
+文本中有 27 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 27 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
 <a id="module-b5e59468402d"></a>
 
 <details>
@@ -2569,6 +2617,57 @@ Imports: `AttainableQuestions`
 
 </details>
 
+<a id="module-02ce03487a51"></a>
+
+<details>
+<summary>RecoveryQuantum.lean — 30 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean`
+
+Imports: `FormationClosure`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.InquirySufficiency.RecoveryQuantum.conversion_settles_quantum](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L50) | 50 |
+| [Generative.InquirySufficiency.RecoveryQuantum.failed_conversion_dissipates_quantum](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L62) | 62 |
+| [Generative.InquirySufficiency.RecoveryQuantum.native_dissipation_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L85) | 85 |
+| [Generative.InquirySufficiency.RecoveryQuantum.failure_record_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L132) | 132 |
+| [Generative.InquirySufficiency.RecoveryQuantum.trace_failure_record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L142) | 142 |
+| [Generative.InquirySufficiency.RecoveryQuantum.recoverAt_ten](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L183) | 183 |
+| [Generative.InquirySufficiency.RecoveryQuantum.recoverAt_complete_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L185) | 185 |
+| [Generative.InquirySufficiency.RecoveryQuantum.witness_sustainable](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L232) | 232 |
+| [Generative.InquirySufficiency.RecoveryQuantum.ten_backs_pairs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L235) | 235 |
+| [Generative.InquirySufficiency.RecoveryQuantum.ten_recovers_each_failure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L242) | 242 |
+| [Generative.InquirySufficiency.RecoveryQuantum.recoverable_rate_at_most_ten](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L248) | 248 |
+| [Generative.InquirySufficiency.RecoveryQuantum.backed_rate_at_least_ten](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L256) | 256 |
+| [Generative.InquirySufficiency.RecoveryQuantum.rate_determined](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L272) | 272 |
+| [Generative.InquirySufficiency.RecoveryQuantum.runEventAt_ten](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L294) | 294 |
+| [Generative.InquirySufficiency.RecoveryQuantum.runAt_ten](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L300) | 300 |
+| [Generative.InquirySufficiency.RecoveryQuantum.coarser_rate_strands_failure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L313) | 313 |
+| [Generative.InquirySufficiency.RecoveryQuantum.finer_rate_overcounts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L335) | 335 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.failedConversion](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L75) (L75)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.dissipated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L83) (L83)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.FailureRecord](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L127) (L127)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.countStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L130) (L130)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.finishRecoveryAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L171) (L171)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.recoverAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L177) (L177)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.PairsBackedAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L215) (L215)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.EachFailureRecoverableAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L221) (L221)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.witness](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L226) (L226)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.runEventAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L283) (L283)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.runAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L288) (L288)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.nineFailuresStart](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L325) (L325)
+- `def` [Generative.InquirySufficiency.RecoveryQuantum.nineFailuresThenTenRecoveries](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean#L330) (L330)
+
+文本中有 30 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 30 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
 <a id="module-8965a528dcb0"></a>
 
 <details>
@@ -2683,6 +2782,52 @@ Imports: `PortValuation`, `ValuationInCore`
 - `def` [Generative.InquirySufficiency.RevisingPort.unconsumedFormation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean#L605) (L605)
 
 文本中有 61 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 61 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-086d448b5bc8"></a>
+
+<details>
+<summary>StartingStock.lean — 25 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean`
+
+Imports: `RecoveryQuantum`, `FormationDraw`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.InquirySufficiency.StartingStock.nothing_dissipated_nothing_recovered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L49) | 49 |
+| [Generative.InquirySufficiency.StartingStock.inherited_pair_forms_unbacked](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L60) | 60 |
+| [Generative.InquirySufficiency.StartingStock.backing_iff_empty_stock](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L72) | 72 |
+| [Generative.InquirySufficiency.StartingStock.execute_complete_covered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L92) | 92 |
+| [Generative.InquirySufficiency.StartingStock.step_covered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L102) | 102 |
+| [Generative.InquirySufficiency.StartingStock.nothing_held_nothing_proceeds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L114) | 114 |
+| [Generative.InquirySufficiency.StartingStock.sensing_shape](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L118) | 118 |
+| [Generative.InquirySufficiency.StartingStock.draw_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L136) | 136 |
+| [Generative.InquirySufficiency.StartingStock.probe_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L141) | 141 |
+| [Generative.InquirySufficiency.StartingStock.step_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L149) | 149 |
+| [Generative.InquirySufficiency.StartingStock.cancel_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L183) | 183 |
+| [Generative.InquirySufficiency.StartingStock.held_amount_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L188) | 188 |
+| [Generative.InquirySufficiency.StartingStock.held_covers_draws_before_arrival](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L208) | 208 |
+| [Generative.InquirySufficiency.StartingStock.step_source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L227) | 227 |
+| [Generative.InquirySufficiency.StartingStock.conversions_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L259) | 259 |
+| [Generative.InquirySufficiency.StartingStock.source_accounting](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L276) | 276 |
+| [Generative.InquirySufficiency.StartingStock.start_is_startWith](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L293) | 293 |
+| [Generative.InquirySufficiency.StartingStock.blocked_step_no_arrival](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L295) | 295 |
+| [Generative.InquirySufficiency.StartingStock.blocked_history_no_arrival](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L328) | 328 |
+| [Generative.InquirySufficiency.StartingStock.history_split](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L345) | 345 |
+| [Generative.InquirySufficiency.StartingStock.history_needs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L350) | 350 |
+| [Generative.InquirySufficiency.StartingStock.least_starting_stock](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L377) | 377 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Generative.InquirySufficiency.StartingStock.FormationsBackedFrom](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L68) (L68)
+- `def` [Generative.InquirySufficiency.StartingStock.conversions](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L218) (L218)
+- `def` [Generative.InquirySufficiency.StartingStock.startWith](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean#L288) (L288)
+
+文本中有 25 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 25 textual `#print axioms` commands; results belong to the original verification records.
 
 </details>
 

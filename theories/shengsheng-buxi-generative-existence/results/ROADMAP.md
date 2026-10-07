@@ -20,6 +20,8 @@ The current account connects whole generation, differentiated living and actual 
 
 **最新推进 / Latest development.** [真实取舍与校准](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md)已提出可反驳的 K 比较候选，并以11项取舍定理和28项审计检查必要损失及认识对应。恢复共同生活不抹去中断，未来无自动无限优先；K 的伦理力度不是这些定理证明的结论。下一步须解释损失的内容、持续和影响范围怎样改变比较。 / The tradeoff study develops a defeasible K comparison and checks necessary loss and epistemic correspondence in eleven theorems and twenty-eight audits. Recovery does not erase interruption or give every future unlimited priority. K’s ethical force remains to be justified through the content, duration and scope of loss.
 
+[减损比较续轮](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md)另以16项定理／23项审计说明已成立的充分比较在匹配减损下如何传递。这不独自建立第一次混合比较，也不给有限牺牲上限。下一中心问题是接续相对有限完成的伦理分量及理由范围。 / A further sixteen theorems and twenty-three audits explain how established sufficient comparisons transport under matched loss reduction. They supply neither the first mixed comparison nor a finite-sacrifice bound. The next central question concerns continuation’s ethical weight relative to finite fulfillment and the scope of resulting reasons.
+
 **正在 / Ongoing.** [生成能力整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md)已经比较同一历史中的形成、共同实现、重组与结束；[情境根据](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md)考察回应怎样同时改变生活、依赖和以后判断的条件。这些研究容纳休息、接受照料、有限完成与真实损失。
 
 Existing studies compare formation, joint realization, reconfiguration and endings within one history, and examine how responses change lives, dependencies and later judgment. They accommodate rest, receiving care, finite fulfillment and real loss.
@@ -60,7 +62,7 @@ The five-condition assessment accepts the conditional connected foundation, incl
 
 ## 6. 科学对应与有区分力的检验 / Scientific correspondence and discriminating tests
 
-**新完成的局部连接 / Newly completed local connection.** [生命依存](../unified-2026-10-05/LIVING-DEPENDENCIES.md)把输运平衡、补偿所需的功及操作界组合为一般支持账户，记录10项 Lean 定理与20项审计。它解释某类维持过程，保留休眠、已有容限与恢复；下一步是双向被动输运及可恢复转化，生命全域对应仍开放。 / Living-dependency work derives a support account from transport balance, compensation work and an operative bound, with ten checked theorems and twenty audits. Its maintained-process scope retains dormancy, tolerance and recovery; signed transport and recoverable transformation are next, with universal living coverage open.
+**新完成的局部连接 / Newly completed local connection.** [生命依存](../unified-2026-10-05/LIVING-DEPENDENCIES.md)先以10项定理／20项审计推导维持过程的一般支持账户，再以15项定理／20项审计纳入双向被动输运、中途越界与实际有界终点。它保留被动缓解、已有容限、保留功和有限供给，但不构造恢复，也不从量恢复推出功能恢复。下一步解释保留或重建的组织如何使特定生命活动实际恢复；生命全域对应仍开放。 / Living-dependency work first derives a maintained-process support account in ten theorems/twenty audits, then adds bidirectional passive transfer, excursions and actual bounded endpoints in fifteen theorems/twenty audits. It retains relief, tolerance, stored work and finite provision without constructing recovery or inferring restored function from a restored amount. Next explain how retained or reconstructed organization resumes specified living activity; universal living coverage remains open.
 
 **已有证据整合；进一步检验有待开展 / Existing evidence integrated; further tests proposed.** [经验范围](../unified-2026-10-05/EMPIRICAL-SCOPE.md)区分模型内部检查、跨领域对应及真实观察；[实验接入](../unified-2026-10-05/EXPERIMENTAL-ACCESS.md)列出数据、操纵和识别的限制。既有实验或文献阅读不等于本项目做过新干预。
 
