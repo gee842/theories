@@ -1,0 +1,9 @@
+'Generative.InquirySufficiency.PeriodWindowPruning.Covered' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.pruneAt' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.pruning_adds_nothing' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.represented_windows_survive' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.rounds' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.rounds_preserve_coverage' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.roundsUntil' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.early_rounds_preserve_coverage' does not depend on any axioms
+'Generative.InquirySufficiency.PeriodWindowPruning.cyclic_pruning_preserves' does not depend on any axioms

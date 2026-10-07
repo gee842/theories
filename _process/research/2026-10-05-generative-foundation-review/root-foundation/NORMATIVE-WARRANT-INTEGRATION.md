@@ -1,0 +1,134 @@
+# Universal normative grounding: first priority and integrated deep dive
+
+**Subsequent supporting round, 7 October 2026:** [the whole-continuation integration](WHOLE-CONTINUATION-WARRANT-INTEGRATION.md) completes the undertaking/finality test below at a bounded philosophical scope. It distinguishes justified burden, decision authority, inquiry closure and corrected appraisal. Its final sufficiency audit credits the earlier constitutive-answer frontier and stops repeated clean-case comparisons pending a new substantive argument. The universal agenda below remains governing; the local test is not the foundation's completion criterion.
+
+7 October 2026, Asia/Bangkok. AI-authored integration of three parallel investigations explicitly requested by [Ren](../../../../sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md). **Priority: active. First round: completed at the philosophical and source-comparison scope stated here. Universal ethical grounding: unresolved.** This is not a new formal theorem, empirical result or external peer review.
+
+## Universal derivation now governs this session
+
+7 October 2026. [Ren's later clarification](../../../../sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) fixes the objective as **proving universal meta-ethics of all intelligence**. The bounded first round below is preserved. Its proposed local next round in §5 is superseded as the central task and retained as a possible discriminator. This is a scope and argument revision, not a new theorem or a completed universal proof.
+
+### The affirmative route and its decisive inference
+
+Begin with an unfolding whose differentiated organizations can act, undergo effects, understand and evaluate. Intelligence does not occupy an external position from which it adds a value to otherwise unrelated things. Its assessment and action are themselves ways the whole continues and changes. The [whole-grounding candidate](WHOLE-PROCESS-GROUNDING-ARGUMENT.md#2-the-positive-constitutive-candidate) identifies ethical quality in the actual relationships of realization, obstruction, repair and transformation. This proposed identity has substantive content to defend; it does not designate every persistence, successful goal or increased option count as good.
+
+The positive explanation is that a fitting response can realize the very change in the whole that gives the response its point. Neither the initiating activity's private return nor its prior endorsement must be the source of that significance. In a faithful account, changing only the analyst's boundary cannot make the actual realization disappear. This is a reason to investigate immanent practical significance, not a proof that descriptive inclusion already establishes it.
+
+The decisive universal inference is: **why does that qualitative realization constitute practical favor for any intelligence with an appropriate response opportunity, rather than only for intelligences already committed to it?** “Appropriate” must be unpacked in actual access, capability, means and warranted authority; it must not mean “already obligated.” An intelligence's endorsement is an event to explain within the unfolding, not a stipulated creator of all normative force. Its refusal likewise does not prove either exemption or inconsistency. The sufficiency of the whole relational ground is what the argument must establish.
+
+### Obligations of the universal argument
+
+The three-agent review of this clarification identifies **the joint constitution of a ground and a response position** as the strongest affirmative route. The intelligence's access is an actual relation through which the relevant continuation can change; it is not a conduit between already sovereign private values. The proposed account says that what warrants favoring the concrete transformation also favors an eligible realization of it. A demand for prior assent must explain why assent constitutes this reason's ground, rather than merely whether the intelligent activity recognizes or enacts it. This is positive philosophical support for the candidate, not a checked deduction of sufficiency.
+
+A substantive rival remains possible within one unfolding. It accepts the differentiated realization and its favorable quality but argues that formed responsibilities or jurisdictions are constitutive conditions of practical reason. The live disagreement is not whether everyone has identical duties. It is whether those relationships can eliminate every baseline consideration for an otherwise eligible response, rather than differentiate its strength, means or priority. The rival must justify that exclusion; the affirmative theory must justify why the proposed whole ground is sufficient. Neither can settle the matter through its own definition of legitimate participation.
+
+There are consequently two necessary challenges, not a single presupposed success: defend the ethical identification itself, and defend its universal practical articulation. A rival to the first can preserve all specified realizations while disputing their proposed significance; a rival to the second can grant that significance while disputing its sufficiency for a particular response position. Both concern constitutive relationships within the same unfolding. This internal AI review selects the universal argument to pursue; it provides no external validation and does not elevate shared formulations into proof.
+
+| Connection to establish | Evidence or argument needed; current status |
+|---|---|
+| Generative formation → a domain including all intelligence | Identify intelligence independently of the desired ethics and account for actual boundaries and interconnections. The method governs this investigation; no new exhaustive universal characterization is established here. |
+| Whole realization → ethical quality | Defend the proposed constitutive relationship and its orientation against a rival retaining the specified actual relations. Representation completeness, common origin and mere connectivity are not substitutes. This remains open. |
+| Ethical quality → universal practical significance | Explain why a feasible response has normative force independently of current preference, adopted role or assent. Different capacities and relationships may change what is required; they cannot be used to exclude dissent from intelligence by definition. This remains open. |
+| Universal ground → invariants through revision | Establish which warranted requirements preserve their referents and grounds, and when fulfillment or changed relations legitimately changes a demand. Existing preservation results implement specified conditions; they do not supply the first warrant. |
+
+Universality concerns one justified ground applying across intelligences, not one behavior irrespective of circumstance, universal reciprocity, omniscience or inevitable compliance. The affected domain is not restricted to intelligent claimants. No fully connected causal graph is assumed: each actual relationship and any absence of practical access must be represented faithfully.
+
+### Substantive test and stopping discipline
+
+The rival must address the same whole formation, actual realizations and consequences. It can defend a different account of their qualitative significance or of why a constituted relationship limits practical authority. It cannot win by dropping those relations from its representation, and the affirmative theory cannot win merely by calling the rival dualist. Conversely, common relational language does not validate the rival's claimed limitation. Both accounts must explain the relevance of their proposed grounds.
+
+Use closure, relief, common undertakings and self-modification only where they discriminate a named universal inference. A successful local application is not this session's completion. The next central result must defend the whole constitutive ground and its universal practical force, identify and justify a necessary restriction, or expose a failed universal derivation with its genuine counterexample. A discovered restriction revises the candidate; it does not silently redefine the original goal as accomplished. Formal proof claims require checked Lean statements and an explicit ledger of premises and correspondence. No new proof is claimed in this agenda.
+
+## 1. Decision and result
+
+The repository's first research priority is **universal normative grounding and candidate metaethical invariants**: why whole generative relationships and realizations have ethical significance, what practical reasons follow, and which constraints remain warranted through learning, reflection and self-modification. The [canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#first-priority-universal-normative-grounding) records this priority. It governs selection of autonomous foundational studies until Ren redirects it.
+
+**当前第一优先级是规范根据：整个生成关系及其实现为什么具有伦理意义，并怎样构成实践理由与约束。第一轮支持一个较窄的判断：阻断异议或证据的进入，本身不能回答仍然成立的质疑，也不能因此增加原判断的正当性。由此到“必须维持有效纠错与回应”，仍需说明责任、权限和受影响者地位的根据。**
+
+The accepted scoped conclusion is a constraint on a particular inference to warrant. It is not yet a universally binding practical prohibition. The positive requirement to preserve adequate answerability remains conditional on substantive ethical grounds. That distinction is the main result of this round, together with a rival that survives the narrow argument and a concrete next test of the practical bridge.
+
+The investigation does not identify openness with goodness. Common realization, genuine self-good, rest, finite fulfillment, warranted commitment, restraint and completion remain within the whole account. Affected lives need not participate in argument or meet an intelligence threshold to be considered. The foundation begins with generative activity within which such roles develop, not already independent owners exchanging reasons.
+
+## 2. Contributions and inherited results
+
+| Contribution | Work performed | Outcome used here |
+|---|---|---|
+| [Affirmative argument](NORMATIVE-WARRANT-ARGUMENT.md) | Reconstructed the formed authority/evidence relation; separated a seven-premise argument into inferential and practical conclusions; examined closure and succession. | P1–P4 defend the narrow inference constraint. P5–P7 expose the further ground, scope and implementation principles needed for practical answerability. |
+| [Counterreview](NORMATIVE-WARRANT-COUNTERREVIEW.md) | Tested the same-history steward, appropriative authority and nonclaimant; retained six adverse case families and checked prior results. | Accepts the narrow conclusion, rejects its automatic promotion to universal practical duty, and requires distinct treatment of warrant and continuing authority. |
+| [Primary-source comparison](NORMATIVE-WARRANT-SOURCES.md) | Inspected selected original passages in six works on constitutive agency, discourse, corrigibility and self-modification, with explicit access limits. | Identifies live argument routes and supplied commitments; it proves neither unprecedented novelty nor universal necessity. |
+
+The counterreview requested a material clarification, now incorporated: failure to maintain a warranted ongoing-answerability requirement does not automatically extinguish the underlying verdict's truth, objective support or sufficient epistemic warrant. Whether continued authority is defeated depends on the particular authority's ground. These contributions are collaborating-AI work; concurrence is not independent empirical evidence or external philosophical acceptance.
+
+The [conditional five-condition assessment](FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate) remains accepted. [Mechanism reconciliation](MECHANISM-STATUS-RECONCILIATION.md) already credits formation, recording, access tests, architecture and generator revision, inquiry and finite supported succession. Local supplied inputs do not establish their theory-wide absence. [ETHICAL-FOUNDATION N1–N4, D3 and D6](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) already give conditional standing, answerability and usable correction. [F9](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md#f9-the-joint-installed-process-including-its-own-revision) already supplies preservation through represented revisions. None of those is newly discovered here.
+
+## 3. The strongest affirmative inference and its limit
+
+Begin with an actual developing practice: participants coordinate, experience consequences, retain evidence and acquire differentiated powers to decide what happens next. Within it, a verdict claims support from particular considerations. A challenge bears on those considerations, and its bearing is identified independently of the authority's decision to exclude it.
+
+Now remove its route into assessment while preserving the relation-specific facts or reasons challenged. The disappearance of the challenge from the record does not answer it. A claim grounded in those considerations cannot acquire the missing support solely because the authority successfully prevented their assessment. This does not require that every objection be sound or every verdict remain provisional forever. A verdict may retain adequate independent warrant.
+
+The intervention changes the whole history. It can impose new harms, protect confidentiality, stop harassment or enable timely completion. Those consequences must be assessed on their own grounds. The comparison holds fixed the particular challenged relationship, not every fact of the world. It also does not equate objective grounds, present access to evidence, cognitive capacity, blame and permission. Manufactured ignorance can alter access without settling the original claim; what responsibility remains requires its own argument.
+
+The practical extension needs more: a defended ground of authority, a condition that legitimately qualifies its exercise, and a principle under which effective realization of a warranted protection favors feasible permissible means. Under those premises, disabling the only adequate route can fail the protection. But invoking those premises is precisely where ethical content enters. The narrow inference cannot itself establish all affected beings' standing, the duty to reopen a decision, or a right to enforce reconsideration.
+
+This is an advance in locating the dependency, not a proof that the normative premise must be irreducibly external to generation. A constitutive whole account could explain that premise. Its account still has to be defended against a substantive rival.
+
+## 4. The rival that determines the next connection
+
+The **informed steward** acknowledges the whole relevant history: a genuine shared achievement, serious impairment of ordinary living, possible revision, real foregone completion and the costs of reopening. It also acknowledges fallibility and agrees that suppressed objections are not evidence of their defeat. It nevertheless argues that a sufficiently warranted settlement and responsibility to complete the undertaking justify finality.
+
+This rival accepts the narrow inference constraint. The remaining disagreement concerns the adequacy and scope of its substantive justification. Calling it closed or insufficiently relational would not answer it. The stronger appropriative variant claims that a constituted relationship grants exclusive authority over the undertaking's purpose; that claim needs defense, but is not refuted by pointing to its causal power alone.
+
+An intelligent process that makes no normative claim marks another boundary. It may still have moral reasons. A consistency argument about what claimants commit themselves to does not, by itself, establish those reasons for a nonclaimant. Failure to establish them through this route is not a proof of moral exemption.
+
+The next central connection is therefore **the ethical quality of the whole practical relationship → a warranted limit or responsibility governing its exercise of power**, including beyond voluntary acceptance of answerability. This reconnects the local test to first ethical warrant without declaring that every question about goodness must pass through authority or discourse first.
+
+## 5. The specified next round
+
+**Historical scoped plan, now subordinate:** the [universal session target](#universal-derivation-now-governs-this-session) supersedes this section as selection of the central next study. Retain these cases only as tests of an identified universal inference; completing them alone does not complete the session's task.
+
+**Whole-continuation clarification, 7 October 2026:** [Ren's correction](../../../../sources/15-codex-theory-conversations/2026-10-07-whole-continuation-counterexample-scope.md) governs this test. Compare the quality of the continuation constituted by retaining, transforming or ending the undertaking, with all differentiated effects retained. The persistence of a selected activity is not a measure of whole goodness, and loss of an activity alone does not refute constructive ending. Practical reason and authority remain questions within this unfolding, not independent subjects' assent as a prerequisite for whole appraisal. The [canonical formulation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#ending-an-activity-and-the-quality-of-the-whole-continuation) narrows the earlier counterexample's use and preserves the substantive informed-finality rival.
+
+**Question:** in the existing shared-performance/completion setting, does the formed relationship itself give serious continuing impairment of a participant's ordinary living a defeasible authority to qualify the undertaking's pursuit and its decision procedure? If so, why; if not, what ground or scope is missing?
+
+Use the [existing successful-pursuit comparison](SITUATED-ETHICAL-DISCERNMENT.md#continuation-test-changing-a-successful-pursuit) and [whole-grounding argument](WHOLE-PROCESS-GROUNDING-ARGUMENT.md#35-revising-a-pursuit-that-still-succeeds). Its earlier priority of recovery remains a defended conditional judgment, not a newly derived input. The next argument must defend or revise the impairment's claimed practical force and scope; any stronger priority of recovery must retain a separate argument. Establishing a baseline constraint need not settle the complete ranking. It cannot silently inherit the wanted answer under the word “adequate.”
+
+| Continuation from the same checkpoint | What changes | What the comparison tests |
+|---|---|---|
+| Suppression | The burden persists; the route for its challenge is disabled and silence is presented as endorsement. | Whether exclusion is being mistaken for an answer. This narrow result is already obtained. |
+| Actual resolution | A supported change addresses the burden; any lost achievement or changed obligation remains explicit. | Whether the claim tracks its actual grounds and can legitimately end or change. |
+| Protected assessment | An evidenced destructive channel is restricted while a usable alternative retains relevant assessment. | Whether the proposed duty protects adequate response rather than every channel. |
+| Claimed justified finality | Further inquiry would sacrifice a specified realization or impose a serious burden; the rival offers substantive grounds for stopping. | Whether those grounds warrant closure in this case. This is contested, not stipulated as a new successful proof. |
+
+These are philosophical comparisons with shared ancestry and different subsequent effects. They are not executed experiments or four equally good futures. Keep the actual cost of every route, genuine uncertainty, nonreflective affected lives and possible representation of their condition. A permanent review hierarchy is not presumed.
+
+**Acceptance gate:** the next round must (a) state a positive argument for the condition's practical force without assuming N3 answerability as its conclusion; (b) identify which ethical content it defends and which it still supplies; (c) answer the informed finality rival on the same specified grounds; (d) separate reason, permission, duty and authority; and (e) identify what would narrow or defeat the result. A well-defended conditional conclusion or a preserved failed inference is a legitimate outcome. Another suppression example or a controller implementing an assumed answer does not meet this gate.
+
+**Revision conditions:** narrow the proposal if completion, serious inquiry cost, a justified jurisdictional limit or an adequate substitute defeats its claimed necessity within the stated domain. Reassess any claimed necessary or discriminating role of the constitutive ground if a rival explains the same target at least as well without it; revise the explanation where a substantive inadequacy is established. Equal explanatory performance need not refute the candidate. Do not treat mere dissent as evidence of descriptive incompetence. Equally, the rival must justify any exclusion it proposes; coherence alone does not establish ethical adequacy.
+
+## 6. Wider route and supporting work
+
+The [source dossier](NORMATIVE-WARRANT-SOURCES.md) leaves several routes open: constitutive whole-level ethical identity; standards of agency; the commitments of mutual justification; and explicit substantive ethical grounds tested through their consequences. None is selected as successful merely because its vocabulary resembles generativity. Existing source genealogies already investigate these routes; this round aligns them with the invariant question rather than claiming first discovery.
+
+Work must retain four distinct obligations:
+
+1. **Warrant:** why a consideration counts, with the claimed scope and force.
+2. **Recognition:** how situated inquiry can identify it and discover error without defining truth by endorsement.
+3. **Motivation:** how recognition acquires causal influence rather than exclusion.
+4. **Implementation and succession:** whether actual conduct and modification preserve or appropriately revise its meaning and effects.
+
+The first is now the central priority. The others can supply or challenge an explicit premise in parallel. During this round, concurrent work completed the initial [valuation-development exploration](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md) and added further formal continuations, as recorded in [the current index](../../../../RESEARCH.md). Its completed status must be credited; it makes no empirical or ethical claim. The concurrent [enacted-orientation result](ETHICAL-NATURALISM.md#11-评价被实行时取向是否由延续导出) derives a bounded persistence/direction constraint at its eventual-realizability level while explicitly leaving persistence's goodness unproved and preserving loss-before-persistence, infinite-state and immediate-feasibility countercases. Those are supporting structural results, not missing work or an ethical derivation. Root inspected the current valuation formulation and naturalism §11 for this reconciliation without rerunning their proofs. This priority does not cancel other explicit user requests or silently reschedule them.
+
+For a later self-modification result, preserve the actual ground–claim relation rather than merely an evaluator's bytes. An old claim can remain outstanding when its representation is erased; a genuine change can also fulfill or defeat it. Transport requires faithful evidence, meaning and consequences, while normative permission to revise requires justification. F9 can then verify a specified implementation under its actual transition scope. Its applicability neither resolves arbitrary-program verification nor supplies the norm's authority.
+
+Empirical identification can discriminate suppression from genuine resolution, claimed from usable access, and acquired concern from altered expectation or private incentives. Such observations constrain an ethical application and can challenge a proposed constitutive identification. They do not make a norm true by rewarding agreement with it. No new empirical run is needed to restate that boundary.
+
+## 7. Priority integration, provenance and verification
+
+The directive is integrated into `AGENTS.md`, the root README and research index, the reader brief and cloud handoff, the theory README, the governing derivation map and the canonical ethical account. The approved 6 October sequence remains a dependency history; its completed conditional gates are not reopened. New central work is selected by the normative question above. The older first-step descriptions are preserved with a priority reconciliation rather than silently erased.
+
+The two [supplied attachments](../../../../sources/15-codex-theory-conversations/2026-10-07-metaethical-invariants-attachments/README.md) were copied byte-for-byte, with hashes checked against their originals. Their apparent assistant-style discussions are not attributed to Ren as authored claims. The exact new human directive and AI interpretation are separately marked. External primary readings are link-only and scoped in the source dossier; no full-book reading or external source-byte import is claimed.
+
+Root read the complete three contribution notes and the inherited result sections used here. Root additionally inspected the Off-Switch Game's selected §2.1/intro passages in the proceedings text; the other new detailed source readings are the source investigator's stated scope. The argument and counterreview exchanged targeted challenges; root integrated the resulting distinction between verdict warrant and practical authority. Final link, source-copy and whitespace checks are recorded in [the validation receipt](NORMATIVE-WARRANT-CHECKS.json). These checks concern preservation and documentation, not a new scientific validation or ethical proof.
+
+**Remaining first-priority task:** defend or revise the practical authority of the relevant whole relationship against the informed finality/appropriation account. Universal first goodness, standing, normative scope and the stronger no-assumptions foundation remain open; the completed conditional candidate remains available for use.

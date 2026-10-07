@@ -1,5 +1,7 @@
 # Supported contact formation changes the derived packet law
 
+**7 October merged continuation:** [Phase-recovered contact](PHASE-RECOVERED-CONTACT.md) replaces the intact-reset dependency with actual readings in a new inquiry/formation loop. [Whole-port continuation](WHOLE-PORT-CONTINUATION.md) proves support and finite-source bounds for the extended and revising processes, and shows formation draw is unnecessary for those conclusions. The [common entry](MERGED-OBLIGATIONS-INTEGRATION.md) connects the new loop to support and an actual-history contact profile. Original protocol results and failures below remain at their stated scope.
+
 **Track closed, 6 October 2026.** The [closing section](#closing-the-track-formation-from-the-ports-own-failures) generalizes the result and removes the inherited spare stock. The [acquisition section](#acquiring-the-contact-inversion-and-receipt-calibration) derives the decision to form, receipt calibration and the inversion from an inquiry the port runs on itself.
 
 6 October 2026. AI-assisted Lean continuation of the [process-law derivation](PROCESS-LAW-DERIVATION.md), at Ren's direction to keep proving the generative core in Lean. This addresses the next derivation that note names: **formation of the contact organization → changed effective inquiry law**.

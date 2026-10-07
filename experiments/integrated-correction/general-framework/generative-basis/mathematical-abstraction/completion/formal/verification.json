@@ -1,0 +1,974 @@
+{
+  "checked_at_utc": "2026-10-07T10:30:04.313975+00:00",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "fresh_build": true,
+  "modules": 7,
+  "audited_declarations": 338,
+  "theorems": 228,
+  "custom_axioms": [],
+  "proof_holes": false,
+  "standard_axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Kernel-checked mathematical statements under their explicit hypotheses; no ethical or metaphysical warrant inferred",
+  "source_sha256": {
+    "IdealWarrant.lean": "d303192f92d8a1cd9366c130cc6162965e6bd24c543c3109c378a0fcfe5ebea8",
+    "CompletionRole.lean": "c5277128c5cb553e3169afd21e508ef76fe5476b72b43dde25cf11a202f784a7",
+    "PrefixSafety.lean": "828f59ccd66b2a8ffaaace509842701458b74fb701c20e631b68797195646f0c",
+    "CompletionExamples.lean": "0a07c4fc4a1c610c6fed4c0297afecfcea128bd2521efadd8ff409bb436480dd",
+    "HistoryIdeals.lean": "4d73bc8bde12b7eb3a5873e32600a6813087c03f82a14d9fa51dc11f49f53389",
+    "FiniteBranching.lean": "8db027bf112dae881fa65ed57a820832e8f221677ee96b8975dec3e338b0d56d",
+    "CompletionBoundaries.lean": "87ff35aba2fe798c24044f4ce0ca6c81c33cddc8b6ad9f08213bf3b375f2accd"
+  },
+  "checker_sha256": "ef3de975c038f3cca097c68ee06a840ede415978f6fb84f0e8d4cff0fcc06e65",
+  "axiom_audits": {
+    "CompletionWarrant.Poset": [],
+    "CompletionWarrant.Ideal": [],
+    "CompletionWarrant.Ideal.LE": [],
+    "CompletionWarrant.Ideal.ext": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.Ideal.le_refl": [],
+    "CompletionWarrant.Ideal.le_trans": [],
+    "CompletionWarrant.Ideal.le_antisymm": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.principal": [],
+    "CompletionWarrant.principal_mem": [],
+    "CompletionWarrant.principal_le_iff": [],
+    "CompletionWarrant.principal_mono": [],
+    "CompletionWarrant.DirectedFamily": [],
+    "CompletionWarrant.familyUnion": [],
+    "CompletionWarrant.le_familyUnion": [],
+    "CompletionWarrant.familyUnion_le": [],
+    "CompletionWarrant.principalFamily": [],
+    "CompletionWarrant.principalFamily_directed": [],
+    "CompletionWarrant.union_principalFamily": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.LowerBasis": [],
+    "CompletionWarrant.Admits": [],
+    "CompletionWarrant.Permitted": [],
+    "CompletionWarrant.Content": [],
+    "CompletionWarrant.FiniteRefutable": [],
+    "CompletionWarrant.ScottClosed": [],
+    "CompletionWarrant.admits_principal_iff": [],
+    "CompletionWarrant.refutable_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.permitted_lower": [],
+    "CompletionWarrant.scottClosed_iff_admits_permitted": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.admits_refutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.admits_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.scottClosed_refutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.finiteRefutable_iff_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.scottClosed_iff_lower_basis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.finiteRefutable_iff_lower_basis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.basis_eq_permitted": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.lower_basis_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.permitted_eq_content": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.basis_eq_content": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.admits_empty": [],
+    "CompletionWarrant.empty_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.empty_finiteRefutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.empty_content": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.content_lower": [],
+    "CompletionWarrant.ScottHull": [],
+    "CompletionWarrant.hull_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.hull_contains": [],
+    "CompletionWarrant.hull_least": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.hull_preserves_content": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.hull_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.AvoidingBasis": [],
+    "CompletionWarrant.Respects": [],
+    "CompletionWarrant.avoiding_lower": [],
+    "CompletionWarrant.respects_iff_admits_avoiding": [],
+    "CompletionWarrant.respects_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.respects_finiteRefutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.respects_maximal": [],
+    "CompletionWarrant.respects_principal": [],
+    "CompletionWarrant.respects_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.refutable_eq_admits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.hull_joint_content": [],
+    "CompletionWarrant.lowerPoset": [],
+    "CompletionWarrant.restrictIdeal": [],
+    "CompletionWarrant.liftIdeal": [],
+    "CompletionWarrant.lift_admits": [
+      "Classical.choice"
+    ],
+    "CompletionWarrant.lift_restrict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.restrict_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.lift_order_iff": [],
+    "CompletionWarrant.empty_lower_no_ideal": [],
+    "CompletionRole.Directed": [],
+    "CompletionRole.Dcpo": [],
+    "CompletionRole.Monotone": [],
+    "CompletionRole.Image": [],
+    "CompletionRole.Compact": [],
+    "CompletionRole.image_directed": [],
+    "CompletionRole.sup_congr": [],
+    "CompletionRole.sup_mono": [],
+    "CompletionRole.Continuous": [],
+    "CompletionRole.idealPoset": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.toDirectedFamily": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.fromDirectedFamily": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.idealDcpo": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.principal_embedding": [],
+    "CompletionRole.principal_compact": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.principal_generation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.compact_iff_principal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.ideal_directed": [],
+    "CompletionRole.extend": [],
+    "CompletionRole.extend_upper": [],
+    "CompletionRole.extend_least": [],
+    "CompletionRole.extend_monotone": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.extend_principal": [],
+    "CompletionRole.extend_continuous": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.extend_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.unique_continuous_extension": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.BasisRole": [],
+    "CompletionRole.basis_monotone": [],
+    "CompletionRole.profile": [],
+    "CompletionRole.profile_monotone": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.profile_extend": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.extend_profile": [],
+    "CompletionRole.OrderIso": [],
+    "CompletionRole.orderIso_continuous": [],
+    "CompletionRole.basisIso": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.basisIso_preserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.basisIso_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.basisIso_backward_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.ideal_basis_role": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.unique_basis_representation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionRole.truthPoset": [
+      "propext"
+    ],
+    "CompletionRole.truthDcpo": [
+      "propext"
+    ],
+    "CompletionRole.positive_reading_monotone": [
+      "propext"
+    ],
+    "CompletionRole.positive_reading_membership": [
+      "propext"
+    ],
+    "CompletionRole.positive_readings_separate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.Trace": [],
+    "CompletionWarrant.PrefixSafety.Property": [],
+    "CompletionWarrant.PrefixSafety.SamePrefix": [],
+    "CompletionWarrant.PrefixSafety.samePrefix_refl": [],
+    "CompletionWarrant.PrefixSafety.samePrefix_symm": [],
+    "CompletionWarrant.PrefixSafety.samePrefix_trans": [],
+    "CompletionWarrant.PrefixSafety.samePrefix_mono": [],
+    "CompletionWarrant.PrefixSafety.PrefixOpen": [],
+    "CompletionWarrant.PrefixSafety.PrefixClosed": [],
+    "CompletionWarrant.PrefixSafety.prefixOpen_empty": [],
+    "CompletionWarrant.PrefixSafety.prefixOpen_univ": [],
+    "CompletionWarrant.PrefixSafety.prefixOpen_union": [],
+    "CompletionWarrant.PrefixSafety.prefixOpen_inter": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.cylinder_open": [],
+    "CompletionWarrant.PrefixSafety.FiniteRefutable": [],
+    "CompletionWarrant.PrefixSafety.PrefixClosure": [],
+    "CompletionWarrant.PrefixSafety.finiteRefutable_iff_closed": [],
+    "CompletionWarrant.PrefixSafety.subset_prefixClosure": [],
+    "CompletionWarrant.PrefixSafety.prefixClosure_mono": [],
+    "CompletionWarrant.PrefixSafety.finiteRefutable_iff_prefixClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.prefixClosure_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.prefixClosure_least": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.prefixClosure_idempotent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.TopologicalClosure": [],
+    "CompletionWarrant.PrefixSafety.topologicalClosure_iff_prefixClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.AllPrefixesIn": [],
+    "CompletionWarrant.PrefixSafety.boundary_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.Recurs": [],
+    "CompletionWarrant.PrefixSafety.EventuallyTrue": [],
+    "CompletionWarrant.PrefixSafety.allFalse": [],
+    "CompletionWarrant.PrefixSafety.allTrue": [],
+    "CompletionWarrant.PrefixSafety.allTrue_recurs": [],
+    "CompletionWarrant.PrefixSafety.allFalse_not_recurs": [],
+    "CompletionWarrant.PrefixSafety.allFalse_not_eventuallyTrue": [],
+    "CompletionWarrant.PrefixSafety.trueTail": [],
+    "CompletionWarrant.PrefixSafety.trueTail_prefix": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.trueTail_recurs": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.trueTail_eventuallyTrue": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.recurrence_closure_all": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.terminationEvent_closure_all": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.recurrence_not_finiteRefutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.recurrence_not_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.terminationEvent_not_finiteRefutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.UnaryHistory": [],
+    "CompletionWarrant.PrefixSafety.UnaryLE": [],
+    "CompletionWarrant.PrefixSafety.UnaryFinite": [],
+    "CompletionWarrant.PrefixSafety.UnaryPrefix": [],
+    "CompletionWarrant.PrefixSafety.UnaryFiniteRefutable": [],
+    "CompletionWarrant.PrefixSafety.UnaryDirected": [],
+    "CompletionWarrant.PrefixSafety.UnarySupremum": [],
+    "CompletionWarrant.PrefixSafety.UnaryDirectedClosed": [],
+    "CompletionWarrant.PrefixSafety.unary_finite_not_infinity": [],
+    "CompletionWarrant.PrefixSafety.unary_finite_directed": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.unary_finite_supremum_infinity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.unary_finite_not_directedClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.unary_finite_not_finiteRefutable": [],
+    "CompletionWarrant.PrefixSafety.Represented": [],
+    "CompletionWarrant.PrefixSafety.diagonal": [],
+    "CompletionWarrant.PrefixSafety.bool_ne_neg": [],
+    "CompletionWarrant.PrefixSafety.diagonal_not_represented": [],
+    "CompletionWarrant.PrefixSafety.RealizesEveryFinitePrefix": [],
+    "CompletionWarrant.PrefixSafety.represented_closure_all": [],
+    "CompletionWarrant.PrefixSafety.represented_not_finiteRefutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.ProgramCoding": [],
+    "CompletionWarrant.PrefixSafety.programEnumeration": [],
+    "CompletionWarrant.PrefixSafety.programOutput_iff_represented": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.some_trace_not_programOutput": [
+      "propext"
+    ],
+    "CompletionWarrant.PrefixSafety.bitCode": [],
+    "CompletionWarrant.PrefixSafety.bitCode_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.bitDecode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.bitDecode_bitCode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.finiteBitProgramCoding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.finitePrograms_miss_some_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.ProgramRealizesPrefixes": [],
+    "CompletionWarrant.PrefixSafety.programRealization_implies_dense": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.finitePrograms_not_finiteRefutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.emitLiteral": [],
+    "CompletionWarrant.PrefixSafety.prefixLiteral": [],
+    "CompletionWarrant.PrefixSafety.emitLiteral_matches_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.literalOutput": [],
+    "CompletionWarrant.PrefixSafety.literalOutput_realizes_prefixes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.literalOutput_not_finiteRefutable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.contains_literals_realizes_prefixes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.PrefixSafety.deadEnd_boundary_empty": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.FinitePart": [],
+    "CompletionExamples.FinitePart.ext": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.finiteOrder": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.emptyPart": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.singletonPart": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.unionPart": [
+      "propext"
+    ],
+    "CompletionExamples.partsOf": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.unionContents": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.union_partsOf": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.finite_cover": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.partsOf_union": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.union_order_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.parts_order_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.BudgetRun": [],
+    "CompletionExamples.every_finite_budget_run": [],
+    "CompletionExamples.no_budget_runs_forever": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.Tick": [],
+    "CompletionExamples.tick_history_identity": [],
+    "CompletionExamples.no_infinite_concrete_tick_run": [],
+    "CompletionExamples.finite_concrete_tick_run": [],
+    "CompletionExamples.ideal_finite_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.finite_lub_preserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.boundedPart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionExamples.boundedPart_increasing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionExamples.boundedParts_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionExamples.natOrder": [],
+    "CompletionExamples.allNaturals": [
+      "propext"
+    ],
+    "CompletionExamples.Unbounded": [],
+    "CompletionExamples.unbounded_allNaturals": [
+      "propext"
+    ],
+    "CompletionExamples.principal_not_unbounded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.original_nat_no_greatest": [],
+    "CompletionExamples.completed_nat_greatest": [
+      "propext"
+    ],
+    "CompletionExamples.unbounded_reading_not_continuous": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionExamples.right_append_not_prefix_monotone": [],
+    "CompletionWarrant.HistoryIdeals.Word": [],
+    "CompletionWarrant.HistoryIdeals.Prefix": [],
+    "CompletionWarrant.HistoryIdeals.word_ext": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.wordPoset": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.tracePrefix": [],
+    "CompletionWarrant.HistoryIdeals.PrefixTrace": [],
+    "CompletionWarrant.HistoryIdeals.tracePrefix_prefix": [],
+    "CompletionWarrant.HistoryIdeals.tracePrefix_trace": [],
+    "CompletionWarrant.HistoryIdeals.prefixTrace_lower": [],
+    "CompletionWarrant.HistoryIdeals.prefixTrace_eq": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.traceIdeal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.compatible_prefix": [],
+    "CompletionWarrant.HistoryIdeals.ideal_comparable_by_length": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.bounded_has_max": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.bounded_is_principal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.Unbounded": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.unboundedWord": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.unboundedWord_mem": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.unboundedWord_long": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.unionTrace": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.mem_unionTrace": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.unionTrace_prefix_mem": [
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.unbounded_is_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.ideal_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.principal_order_iff": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.finite_infinite_order_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.infinite_not_below_finite": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.infinite_order_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.History": [],
+    "CompletionWarrant.HistoryIdeals.historyIdeal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.HistoryPrefix": [],
+    "CompletionWarrant.HistoryIdeals.history_order_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.historyIdeal_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.historyIdeal_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.Boundary": [],
+    "CompletionWarrant.HistoryIdeals.Admitted": [],
+    "CompletionWarrant.HistoryIdeals.history_admitted_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.admitted_history_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.lower_history_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.admitted_history_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.all_finite_content": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.all_finite_hull_full": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.FiniteOnly": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.infinite_not_finiteOnly": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.finiteOnly_not_refutable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.finiteOnly_hull_full": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.finiteOnly_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.finiteOnly_not_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.PropertyClass": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.propertyClass_trace_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.propertyClass_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.propertyClass_hull_full": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.propertyClass_not_refutable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.propertyClass_not_scottClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.recurrence_ideal_not_refutable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.recurrence_ideal_hull_full": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.represented_ideal_not_refutable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.represented_ideal_hull_full": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.bounded_language_boundary_empty": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.PrefixLanguage": [],
+    "CompletionWarrant.HistoryIdeals.prefixLanguage_lower": [
+      "Quot.sound"
+    ],
+    "CompletionWarrant.HistoryIdeals.boundary_prefixLanguage_iff": [],
+    "CompletionWarrant.HistoryIdeals.closed_language_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionLifting.Reach": [],
+    "CompletionLifting.reach_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionLifting.finite_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionLifting.Unbounded": [],
+    "CompletionLifting.unbounded_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionLifting.infinite_from_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionLifting.finite_initial_lifting": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionLifting.RequestedStep": [],
+    "CompletionLifting.labelled_lifting": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.NatInfinity": [],
+    "CompletionBoundaries.infinityOrder": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.infinityDcpo": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.infinity_not_compact": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.finiteSegments": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.infinity_not_finite": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.finiteSegments_ne_principal_infinity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.finitePrincipalFamily": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.finitePrincipalFamily_directed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.infinity_is_old_sup": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.finitePrincipalFamily_directed_again": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.completed_old_sequence_sup": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.old_infinite_supremum_not_preserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.flatten": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.flatten_finiteSegments": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.flatten_principal_infinity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.flatten_not_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.identity_approximation": [],
+    "CompletionBoundaries.identity_infinity_embedding": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.identity_infinity_not_basis": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.unitOrder": [],
+    "CompletionBoundaries.onlyFalse": [],
+    "CompletionBoundaries.onlyFalse_embedding": [
+      "propext"
+    ],
+    "CompletionBoundaries.false_compact": [
+      "propext"
+    ],
+    "CompletionBoundaries.onlyFalse_compact": [
+      "propext"
+    ],
+    "CompletionBoundaries.false_approximants_directed": [
+      "propext"
+    ],
+    "CompletionBoundaries.onlyFalse_monotone": [
+      "propext"
+    ],
+    "CompletionBoundaries.false_generation_at_true": [
+      "propext"
+    ],
+    "CompletionBoundaries.true_not_generated": [
+      "propext"
+    ],
+    "CompletionBoundaries.onlyFalse_not_basis": [
+      "propext"
+    ],
+    "CompletionBoundaries.GuardedStep": [],
+    "CompletionBoundaries.guarded_concrete_lifting": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.bounded_nat_greatest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.natInfinity_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CompletionBoundaries.unit_ideal_unique": [
+      "propext",
+      "Quot.sound"
+    ]
+  }
+}

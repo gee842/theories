@@ -1,5 +1,7 @@
 # Finite checks for mathematical abstraction
 
+**General completion proofs, 7 October 2026:** the [separate Lean package](completion/formal/README.md) checks the current ideal-completion/admissibility results on arbitrary ideal families and infinite traces. Its seven modules contain 228 named theorems and 338 declaration audits; standard dependencies are reported. This is generalized formal verification, not a new run of the historical finite checker below. [The integration](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md) identifies the supporting contribution to normative preservation and its remaining warrant boundary.
+
 **Acquisition continuation, 6 October 2026:** the [paid learner extension](acquisition/README.md) now acquires an exact abstraction through its own observations and prediction failures, preserving actual inherited funds, additional component laws, retention and novel use. Its controls and separate finite enumeration are new implementation evidence. The original 9,994-machine structural check below remains unchanged.
 
 6 October 2026. This owned package checks finite instances and boundary cases from [Mathematical structure, acquired abstraction and finite certificates](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-STRUCTURAL-RESULTS.md). Its research connection is acquired prediction → reusable abstraction → warranted inference.

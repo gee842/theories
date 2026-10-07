@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-07",
+  "provenance": "User-supplied pasted-text attachments; original authorship not independently established. Not attributed to Ren as authored claims.",
+  "files": [
+    {
+      "original_attachment_path": "/Users/ren/.codex/attachments/7a5db31e-327a-46b2-b80c-5d5afd365c99/Pasted text.txt",
+      "preserved_file": "literature-precedents.original.txt",
+      "bytes": 11186,
+      "sha256": "d40f6257f5e919de90447b39486a4a6752daf3023cf6fb3b82a1dba8d0a02231",
+      "exact_copy_verified": true
+    },
+    {
+      "original_attachment_path": "/Users/ren/.codex/attachments/9d636fa3-0199-408c-9694-f9fbb4ea4a71/Pasted text.txt",
+      "preserved_file": "possible-implications.original.txt",
+      "bytes": 10491,
+      "sha256": "45e5030939a6dc3171880db099c0cd4298e361d612e094bf122e2dda69f8f517",
+      "exact_copy_verified": true
+    }
+  ]
+}

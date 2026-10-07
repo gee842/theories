@@ -1,5 +1,7 @@
 # 伦理自然主义的四条论证：生成论的对应、证明与未完成部分
 
+**7 October continuation:** [Actual recovery and its retained interruption](ETHICAL-NATURALISM-ACTUAL-RECOVERY.md) now resolve the proposed immediate/eventual representation bridge. Twenty-one new axiom-free results retain actual restoration and show why eventual possibilities alone omit the interruption. The [merged integration](MERGED-OBLIGATIONS-INTEGRATION.md) also puts a contact profile and native support on the same actual port run. Neither result derives protected scope or universal ethical warrant; older package counts below describe their respective stages.
+
 2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 120 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
 
 **审查状态。** 首版发表后，同日由一个独立 AI 审查者复核。审查确认证明全部成立，但指出四处阻断性的表述过度和若干应改之处。本版已按审查改写；第7节列出改正内容，首版保留在 git 历史中。新增的 `NaturalismReview.lean` 给出改正后的形式陈述，前两个模块未改动。
@@ -199,6 +201,16 @@ Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 
 **对第8节表中"取向"一行的影响。** 该行证明的是：形式资格不决定取向。这一点不变。新增的是：在一元的、被实行的意义上，最终可实现性层次的取向不再是自由输入，过程的时间结构（可实现性只能保持或失去，不能新增）使得只有保持能被无限实行。仍然需要的输入是：取哪个层次（最终还是立即）、状态有限（已证必要）、以及正向陈述里使用的状态可判定相等（与 `persists_iff_regenerating_return` 相同的模型数据；有界性定理本身不需要它）。
 
 **未证。** "延续"或"能被无限实行"是否就是善；哪段历史实际到达哪个回路；在立即可行性层次上对恢复与损失的整体比较（第5.4节第2点）。
+
+### 11.1 取消活动与整体延续的评价范围
+
+7 October 2026. [Ren 纠正前述反例的解释范围](../../../../sources/15-codex-theory-conversations/2026-10-07-whole-continuation-counterexample-scope.md)：应问取消一项活动后，整体的持续是否可以变得更好。以下是 AI 撰写的范围修正，不是新定理。
+
+`severing` 本身是一个共同过程：两个配置、三个活动标记，没有原初的主体、客体或所有者。`loss_then_persistence` 证明 `cut` 后 `other` 永久不可实现，而 `e` 仍满足 `PersistsFrom`。这里的持续是任意长的可容许延续末端仍保有 `e` 的最终可实现性，不是实际未来必然如此、概率判断或伦理评价。
+
+因此，该例只否定“所选活动可以持续，就必定保留先前每一种活动”。它没有证明整体变坏，也没有反驳“取消某项活动可以构成整体生成的改善”。两个状态完整描述这个极小模型，不等于已完整表达待评价的整体关系。先前助手把该例用于解释整体伦理的困难，超出了这个反例的判别能力；保留原数学结论，收窄其伦理用途。
+
+真正的比较必须保留活动终止如何改变实际关系、实现、负担与后续生成条件。对“保留全部活动”的准则，具有充分根据的限制或完成可以构成挑战；对本已容许建设性终止的整体理论，单有取消并非反例。应检验其具体的整体质量判准及相同条件下的竞争解释，而不能随意翻转一个省略这些关系的评价谓词。[当前整体比较](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#ending-an-activity-and-the-quality-of-the-whole-continuation)保留善的构成说明这一研究任务，也不预先宣布改善已经成立。
 
 ## 形式索引
 

@@ -1,0 +1,30 @@
+{
+  "scope": "Integration, source preservation and binding to the separately executed Lean receipt",
+  "documents_or_owned_sections": 17,
+  "local_links": 84,
+  "anchors": 8,
+  "preserved_inputs": 6,
+  "previous_canonical_reconstructed_exactly": true,
+  "reviewed_source_hashes_matched": 6,
+  "lean_modules": 7,
+  "lean_theorems": 228,
+  "lean_audited_declarations": 338,
+  "custom_axioms": [],
+  "proof_holes": false,
+  "scientific_experiments_executed": false,
+  "normative_grounding_proved": false,
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md": "4d71c43d9d2a6057c5f46ab4e27489aad62b21b1fef5b49501678e323fb3fde8",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md": "8de4f67fb16995d92225d401aa8540a575962da7f0a457cbd75ac300cd973a67",
+    "sources/15-codex-theory-conversations/2026-10-07-lean-proof-requirement.md": "3c1ca4661251ed6b986fe2ba6cdd5914512440060072778327f95194b2c61bff",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md": "046e446321a85a6ce416ded05f78dd7aec30bbaeea72f153fbcefc42df69d541",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-IDEALS.md": "58d981ce3b9566584452427ee081c2023eeacde5d29a071613567c467e378c06",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-ROLE.md": "8ee2b2879776e735a30b85084c3edf214e6ca12c2a3cc7e7febd5883df47d9ec",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-PREFIX.md": "a1bef9e292f12f3c506faf5e8261c63af08f17895cc5c19ef61583040f63c680",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-HISTORIES.md": "5c66b83bc119c4d2b46c8cc5632e116434385f483f388ccc2dbd1e22f6700aa8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md": "013b778f9c1f42a698dc98371e90c34dad38c61205823f86230e9b775996da59",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-EDITS.json": "d1df247e6775d017d899221fde85d603e07c612e687cc02f26e20369ebf81a6d",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-CHECK.py": "c2c1e91c4a20c6245ccffa4a12a7afcb8761ce5f1bb25becb7a33a1a09e4eeba"
+  }
+}

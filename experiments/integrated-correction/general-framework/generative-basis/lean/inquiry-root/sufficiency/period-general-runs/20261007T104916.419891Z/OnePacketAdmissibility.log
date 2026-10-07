@@ -1,0 +1,11 @@
+'Generative.InquirySufficiency.OnePacketAdmissibility.packetSafe' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.initial_is_inhabited' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.exhausted_probe_forbidden' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.probe_safe_iff_not_denied' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.initial_probe_admissible' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.forget_packet_safety' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.one_probe_packet_sound' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.attainable_iff_packet_safe' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.exhausted_candidate_forbids_probe' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.separately_packet_attainable' does not depend on any axioms
+'Generative.InquirySufficiency.OnePacketAdmissibility.no_packet_attainable_common_upper' does not depend on any axioms
