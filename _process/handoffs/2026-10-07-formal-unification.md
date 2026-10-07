@@ -35,4 +35,15 @@ Write-ups:
 2. Prove recovery and formation continue (`Continues`) like native supported stages. That gives `SustainLaw` and a strictly falling potential for `FormationClosure.process` and the revising port, and therefore `no_infinite_execution_under_depletion` for the whole revising port. Decide formation's draw there.
 3. Then attempt the renewal bridge: is the formed contact adequate in renewal's sense (opening ≥ formation demand), so that the port's deadline comes from its finite source?
 
-Branch `claude/project-thread-mlqbun`; this handoff is merged to main together with the work above.
+## Resume point
+
+The thread stopped at a clean boundary: no proof is half-finished, and every module above is merged to main. Work last merged at `fc57476`; this handoff update is merged after it. Branch: `claude/project-thread-mlqbun`.
+
+## Open items for Ren
+
+- The formation decision card (material slot / keep as one event / drop the draw) is unanswered.
+- The rename branch `claude/project-thread-x1q9hl` needs Ren's word to merge; step 1 above waits on it.
+
+## Spawning a continuation
+
+Give the new thread: this file, [UNIFIED-ENTRY.md](../research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-ENTRY.md), and the standing rules (no assumptions, no axioms including `propext`/`Quot.sound`, monist and relational names and prose, auto-merge to main after re-running `check_contact_formation.py`). Start at "Exact next step" item 1. If the rename has not landed, start at item 3 (the renewal bridge), which does not touch renamed fields.
