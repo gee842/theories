@@ -5,9 +5,9 @@
 'RecordedClaims.Nonforeclosing' does not depend on any axioms
 'RecordedClaims.recordRule' does not depend on any axioms
 'RecordedClaims.record_rule_alike' does not depend on any axioms
-'RecordedClaims.record_rule_nonforeclosing' depends on axioms: [propext]
-'RecordedClaims.symmetric_open_forces_withholding' depends on axioms: [propext]
-'RecordedClaims.only_symmetric_open_needs_more' depends on axioms: [propext]
-'RecordedClaims.record_rule_unique' depends on axioms: [propext]
+'RecordedClaims.record_rule_nonforeclosing' does not depend on any axioms
+'RecordedClaims.symmetric_open_forces_withholding' does not depend on any axioms
+'RecordedClaims.only_symmetric_open_needs_more' does not depend on any axioms
+'RecordedClaims.record_rule_unique' does not depend on any axioms
 'RecordedClaims.serve' does not depend on any axioms
 'RecordedClaims.both_claims_met_after_first_choice' does not depend on any axioms

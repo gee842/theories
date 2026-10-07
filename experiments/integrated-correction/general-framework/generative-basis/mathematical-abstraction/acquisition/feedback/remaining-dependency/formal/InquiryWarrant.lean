@@ -46,9 +46,66 @@ effect it relies on. -/
 def agrees (c : Continuation) (weak : Pair Bool) : Bool :=
   weak.get c.setting == c.expected
 
+/-- Local helper: Boolean `==` is `true` exactly at equality. -/
+theorem beq_true_iff (a b : Bool) : (a == b) = true ↔ a = b := by
+  cases a <;> cases b <;> decide
+
+/-- Local helper: a constant table reads its value at every setting. -/
+theorem get_const (e s : Bool) : (⟨e, e⟩ : Pair Bool).get s = e := by
+  cases s <;> rfl
+
+/-- Local helper: a flipped bit never equals the original. -/
+theorem not_beq_self (e : Bool) : ((!e) == e) = false := by
+  cases e <;> rfl
+
+/-- Local helper: a flipped bit is a different bit. -/
+theorem not_ne_self (e : Bool) : (!e) ≠ e := by
+  cases e <;> decide
+
+/-- Local helper (local counterpart of `off_target_witness`): away from the
+relied-on setting, some table agrees with the constant one at the query and
+flips the relied-on bit. -/
+theorem off_target_table (s e q : Bool) (hq : q ≠ s) :
+    ∃ alt : Pair Bool, alt.get q = e ∧ alt.get s = !e := by
+  cases s <;> cases q
+  · exact absurd rfl hq
+  · exact ⟨⟨!e, e⟩, rfl, rfl⟩
+  · exact ⟨⟨e, !e⟩, rfl, rfl⟩
+  · exact absurd rfl hq
+
+/-- Local helper (local counterpart of `query_sufficient_iff_used_setting`). -/
+theorem sufficient_iff_used (r f q : Bool) : QuerySufficient r f q ↔ q = r := by
+  constructor
+  · intro sufficient
+    match Bool.decEq q r with
+    | isTrue hq => exact hq
+    | isFalse hq =>
+      obtain ⟨alt, hq', hr⟩ := off_target_table r f q hq
+      have same : (⟨f, f⟩ : Pair Bool).get q = alt.get q := (get_const f q).trans hq'.symm
+      have agree : LocalAgreement ⟨f, f⟩ r f := get_const f r
+      have bad : alt.get r = f := (sufficient _ _ same).mp agree
+      exact absurd (hr.symm.trans bad) (not_ne_self f)
+  · intro hq
+    subst hq
+    intro weak alternative h
+    exact ⟨fun x => h.symm.trans x, fun x => h.trans x⟩
+
 theorem agrees_iff_local (c : Continuation) (weak : Pair Bool) :
-    agrees c weak = true ↔ LocalAgreement weak c.setting c.expected := by
-  simp [agrees, LocalAgreement]
+    agrees c weak = true ↔ LocalAgreement weak c.setting c.expected :=
+  beq_true_iff _ _
+
+/-- Local helper: the constant table at the relied-on effect agrees. -/
+theorem agrees_const (c : Continuation) : agrees c ⟨c.expected, c.expected⟩ = true := by
+  show (Pair.get ⟨c.expected, c.expected⟩ c.setting == c.expected) = true
+  rw [get_const]
+  exact (beq_true_iff _ _).mpr rfl
+
+/-- Local helper: a table whose relied-on bit is flipped disagrees. -/
+theorem agrees_flipped (c : Continuation) (alt : Pair Bool)
+    (h : alt.get c.setting = !c.expected) : agrees c alt = false := by
+  show (alt.get c.setting == c.expected) = false
+  rw [h]
+  exact not_beq_self _
 
 /-- After a faithful weak test at `q`, some response policy acts adequately
 whatever the still-possible weak table is. -/
@@ -73,10 +130,9 @@ theorem abstention_adequate_iff (c : Continuation) :
   · rintro ⟨action, h⟩ hb
     have h1 := h ⟨c.expected, c.expected⟩
     have h2 := h ⟨!c.expected, !c.expected⟩
-    have e1 : agrees c ⟨c.expected, c.expected⟩ = true := by
-      cases hs : c.setting <;> simp [agrees, Pair.get, hs]
-    have e2 : agrees c ⟨!c.expected, !c.expected⟩ = false := by
-      cases hs : c.setting <;> cases he : c.expected <;> simp [agrees, Pair.get, hs, he]
+    have e1 : agrees c ⟨c.expected, c.expected⟩ = true := agrees_const c
+    have e2 : agrees c ⟨!c.expected, !c.expected⟩ = false :=
+      agrees_flipped c _ (get_const _ _)
     rw [e1] at h1
     rw [e2] at h2
     exact hb (h1.symm.trans h2)
@@ -95,22 +151,15 @@ theorem inquiry_adequate_iff (q : Bool) (c : Continuation) :
     InquiryAdequate q c ↔ q = c.setting ∨ ¬ AnswerBearing c := by
   constructor
   · rintro ⟨policy, h⟩
-    by_cases hq : q = c.setting
-    · exact Or.inl hq
-    · refine Or.inr fun hb => ?_
-      have hw := off_target_witness c.setting c.expected q hq
-      simp only [] at hw
-      obtain ⟨same, agree, disagree⟩ := hw
+    match Bool.decEq q c.setting with
+    | isTrue hq => exact Or.inl hq
+    | isFalse hq =>
+      refine Or.inr fun hb => ?_
+      obtain ⟨alt, hq', hs⟩ := off_target_table c.setting c.expected q hq
       have h1 := h ⟨c.expected, c.expected⟩
-      have h2 := h ((⟨c.expected, c.expected⟩ : Pair Bool).set c.setting (!c.expected))
-      rw [(agrees_iff_local _ _).mpr agree] at h1
-      have e2 : agrees c ((⟨c.expected, c.expected⟩ : Pair Bool).set c.setting
-          (!c.expected)) = false := by
-        cases hc : agrees c ((⟨c.expected, c.expected⟩ : Pair Bool).set c.setting
-          (!c.expected))
-        · rfl
-        · exact False.elim (disagree ((agrees_iff_local _ _).mp hc))
-      rw [e2, ← same] at h2
+      have h2 := h alt
+      rw [agrees_const, get_const] at h1
+      rw [agrees_flipped c alt hs, hq'] at h2
       exact hb (h1.symm.trans h2)
   · rintro (hq | hb)
     · refine ⟨fun b => c.adequate (b == c.expected), fun weak => ?_⟩
@@ -124,12 +173,13 @@ of a test coincides with the epistemic sufficiency already proved. -/
 theorem bearing_adequate_iff_sufficient (q : Bool) (c : Continuation)
     (hb : AnswerBearing c) :
     InquiryAdequate q c ↔ QuerySufficient c.setting c.expected q := by
-  rw [inquiry_adequate_iff, query_sufficient_iff_used_setting]
   constructor
-  · rintro (h | h)
-    · exact h
+  · intro h
+    rcases (inquiry_adequate_iff q c).mp h with h | h
+    · exact (sufficient_iff_used _ _ _).mpr h
     · exact False.elim (h hb)
-  · exact Or.inl
+  · intro h
+    exact (inquiry_adequate_iff q c).mpr (Or.inl ((sufficient_iff_used _ _ _).mp h))
 
 /-- The inquiry's own draw on support is carried forward with its answer. -/
 def InquirySecures (support draw : Nat) (q : Bool) (c : Continuation) : Prop :=
@@ -145,17 +195,18 @@ def InquiryNeeded (support draw : Nat) (q : Bool) (c : Continuation) : Prop :=
 theorem inquiry_needed_iff (support draw : Nat) (q : Bool) (c : Continuation) :
     InquiryNeeded support draw q c ↔
       q = c.setting ∧ AnswerBearing c ∧ c.requirement + draw ≤ support := by
-  unfold InquiryNeeded InquirySecures AbstentionSecures
-  rw [inquiry_adequate_iff, abstention_adequate_iff]
   constructor
   · rintro ⟨⟨fits, hq⟩, notAbstain⟩
     have hb : AnswerBearing c :=
-      Decidable.byContradiction fun hb => notAbstain ⟨by omega, hb⟩
-    rcases hq with hq | hq
+      Decidable.byContradiction fun hb =>
+        notAbstain ⟨Nat.le_trans (Nat.le_add_right _ _) fits,
+          (abstention_adequate_iff c).mpr hb⟩
+    rcases (inquiry_adequate_iff q c).mp hq with hq | hq
     · exact ⟨hq, hb, fits⟩
     · exact False.elim (hq hb)
   · rintro ⟨hq, hb, fits⟩
-    exact ⟨⟨fits, Or.inl hq⟩, fun ⟨_, nb⟩ => nb hb⟩
+    exact ⟨⟨fits, (inquiry_adequate_iff q c).mpr (Or.inl hq)⟩,
+      fun ⟨_, na⟩ => (abstention_adequate_iff c).mp na hb⟩
 
 /-- Some surviving continuation needs the test. -/
 def NeededFor (support draw : Nat) (q : Bool) (cs : List Continuation) : Prop :=
@@ -182,10 +233,9 @@ theorem dominated_without_reliance (support draw : Nat) (q : Bool)
     (∀ c ∈ cs, InquirySecures support draw q c → AbstentionSecures support c) ∧
       ¬ NeededFor support draw q cs := by
   refine ⟨fun c hc ⟨fits, ha⟩ => ?_, fun hn => ?_⟩
-  · rw [inquiry_adequate_iff] at ha
-    rcases ha with hq | hb
+  · rcases (inquiry_adequate_iff q c).mp ha with hq | hb
     · exact False.elim (none c hc hq.symm)
-    · exact ⟨by omega, (abstention_adequate_iff c).mpr hb⟩
+    · exact ⟨Nat.le_trans (Nat.le_add_right _ _) fits, (abstention_adequate_iff c).mpr hb⟩
   · obtain ⟨c, hc, hq, _, _⟩ := (needed_for_iff _ _ _ _).mp hn
     exact none c hc hq
 
@@ -193,11 +243,41 @@ theorem dominated_without_reliance (support draw : Nat) (q : Bool)
 def selfOnly (cs : List Continuation) : List Continuation :=
   cs.filter fun c => !c.other
 
+/-- Local helper: membership in a filtered list implies membership. -/
+theorem mem_of_mem_filter' {α : Type} (p : α → Bool) (x : α) :
+    ∀ l : List α, x ∈ l.filter p → x ∈ l
+  | [], h => h
+  | a :: l, h => by
+    cases hp : p a
+    · rw [List.filter_cons_of_neg (by rw [hp]; decide)] at h
+      exact List.mem_cons_of_mem _ (mem_of_mem_filter' p x l h)
+    · rw [List.filter_cons_of_pos hp] at h
+      cases h with
+      | head => exact List.mem_cons_self
+      | tail _ h => exact List.mem_cons_of_mem _ (mem_of_mem_filter' p x l h)
+
+/-- Local helper: filtering distributes over append. -/
+theorem filter_append' {α : Type} (p : α → Bool) :
+    ∀ l m : List α, (l ++ m).filter p = l.filter p ++ m.filter p
+  | [], _ => rfl
+  | a :: l, m => by
+    cases hp : p a
+    · rw [List.cons_append, List.filter_cons_of_neg (by rw [hp]; decide),
+        List.filter_cons_of_neg (by rw [hp]; decide)]
+      exact filter_append' p l m
+    · rw [List.cons_append, List.filter_cons_of_pos hp, List.filter_cons_of_pos hp,
+        List.cons_append, filter_append' p l m]
+
+/-- Local helper: appending the empty list. -/
+theorem append_nil' {α : Type} : ∀ l : List α, l ++ [] = l
+  | [] => rfl
+  | a :: l => congrArg (a :: ·) (append_nil' l)
+
 theorem self_needed_implies_needed (support draw : Nat) (q : Bool)
     (cs : List Continuation) :
     NeededFor support draw q (selfOnly cs) → NeededFor support draw q cs := by
   rintro ⟨c, hc, hn⟩
-  exact ⟨c, (List.mem_filter.mp hc).1, hn⟩
+  exact ⟨c, mem_of_mem_filter' _ _ _ hc, hn⟩
 
 /-- A selection rule that consults only self-borne continuations gives the
 same verdict however many continuations of other centers are added. This holds
@@ -212,12 +292,12 @@ theorem self_scoped_rule_ignores_others (rule : List Continuation → Bool)
     induction others with
     | nil => rfl
     | cons c rest ih =>
-      have hc : c.other = true := h c (List.mem_cons_self ..)
+      have hc : c.other = true := h c List.mem_cons_self
       unfold selfOnly
-      rw [List.filter_cons, hc]
+      rw [List.filter_cons_of_neg (by rw [hc]; decide)]
       exact ih fun d hd => h d (List.mem_cons_of_mem _ hd)
   unfold selfOnly at this ⊢
-  rw [List.filter_append, this, List.append_nil]
+  rw [filter_append', this, append_nil']
 
 /-! ### Witnesses at the actual failed operation (setting 1, full effect 0) -/
 
@@ -249,11 +329,15 @@ theorem needed_only_through_other :
       NeededFor 3 1 true [selfElsewhere, othersReuse] := by
   refine ⟨?_, ?_⟩
   · rintro ⟨c, hc, hn⟩
-    simp [selfOnly, selfElsewhere, othersReuse] at hc
-    subst hc
-    exact absurd ((inquiry_needed_iff _ _ _ _).mp hn).1 (by decide)
-  · refine (needed_for_iff _ _ _ _).mpr ⟨othersReuse, by simp, rfl, ?_, by decide⟩
-    simp [AnswerBearing, othersReuse]
+    have e : selfOnly [selfElsewhere, othersReuse] = [selfElsewhere] := rfl
+    rw [e] at hc
+    cases hc with
+    | head => exact absurd ((inquiry_needed_iff _ _ _ _).mp hn).1 (by decide)
+    | tail _ h => cases h
+  · refine (needed_for_iff _ _ _ _).mpr
+      ⟨othersReuse, List.Mem.tail _ (List.Mem.head _), rfl, ?_, by decide⟩
+    show (true : Bool) ≠ false
+    decide
 
 /-- Answering can remove the means of acting on the answer: with support 1 the
 test answers the question but leaves too little to carry the continuation,
@@ -263,10 +347,9 @@ theorem answering_can_remove_the_means :
       ¬ AbstentionSecures 1 selfReuse := by
   refine ⟨(inquiry_adequate_iff _ _).mpr (Or.inl rfl), ?_, ?_⟩
   · rintro ⟨fits, _⟩
-    simp [selfReuse] at fits
+    exact absurd fits (by decide)
   · rintro ⟨_, ha⟩
-    rw [abstention_adequate_iff] at ha
-    exact ha (by simp [AnswerBearing, selfReuse])
+    exact (abstention_adequate_iff _).mp ha (by decide)
 
 /-- A joint course: whether to test, and which continuations to carry out
 together from one support quantity, each adequately. -/
@@ -287,26 +370,32 @@ theorem competing_continuations :
       ∀ inquire q : Bool, ¬ JointlySecures 3 1 inquire q [selfReuse, othersSettled] := by
   refine ⟨⟨by decide, ?_⟩, ⟨by decide, ?_⟩, ?_⟩
   · intro c hc
-    simp only [List.mem_singleton] at hc
-    subst hc
-    exact (inquiry_adequate_iff _ _).mpr (Or.inl rfl)
+    cases hc with
+    | head => exact (inquiry_adequate_iff _ _).mpr (Or.inl rfl)
+    | tail _ h => cases h
   · intro c hc
-    simp only [List.mem_singleton] at hc
-    subst hc
-    exact (abstention_adequate_iff _).mpr (by simp [AnswerBearing, othersSettled])
+    cases hc with
+    | head => exact (abstention_adequate_iff _).mpr (by decide)
+    | tail _ h => cases h
   · intro inquire q ⟨fits, each⟩
     cases inquire
-    · have ha := each selfReuse (by simp)
-      simp only [Bool.false_eq_true, if_false] at ha
-      rw [abstention_adequate_iff] at ha
-      exact ha (by simp [AnswerBearing, selfReuse])
-    · simp [selfReuse, othersSettled] at fits
+    · have ha : AbstentionAdequate selfReuse := each selfReuse (List.Mem.head _)
+      exact (abstention_adequate_iff _).mp ha (by decide)
+    · exact absurd fits (by decide)
 
 end InquiryWarrant
 
 #print axioms InquiryWarrant.Continuation
 #print axioms InquiryWarrant.agrees
+#print axioms InquiryWarrant.beq_true_iff
+#print axioms InquiryWarrant.get_const
+#print axioms InquiryWarrant.not_beq_self
+#print axioms InquiryWarrant.not_ne_self
+#print axioms InquiryWarrant.off_target_table
+#print axioms InquiryWarrant.sufficient_iff_used
 #print axioms InquiryWarrant.agrees_iff_local
+#print axioms InquiryWarrant.agrees_const
+#print axioms InquiryWarrant.agrees_flipped
 #print axioms InquiryWarrant.InquiryAdequate
 #print axioms InquiryWarrant.AbstentionAdequate
 #print axioms InquiryWarrant.AnswerBearing
@@ -321,6 +410,9 @@ end InquiryWarrant
 #print axioms InquiryWarrant.needed_for_iff
 #print axioms InquiryWarrant.dominated_without_reliance
 #print axioms InquiryWarrant.selfOnly
+#print axioms InquiryWarrant.mem_of_mem_filter'
+#print axioms InquiryWarrant.filter_append'
+#print axioms InquiryWarrant.append_nil'
 #print axioms InquiryWarrant.self_needed_implies_needed
 #print axioms InquiryWarrant.self_scoped_rule_ignores_others
 #print axioms InquiryWarrant.selfReuse

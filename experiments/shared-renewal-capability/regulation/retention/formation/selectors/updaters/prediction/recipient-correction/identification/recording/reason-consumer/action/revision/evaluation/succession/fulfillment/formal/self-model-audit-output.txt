@@ -1,0 +1,9 @@
+'SelfModelCertification.Course' does not depend on any axioms
+'SelfModelCertification.nextAction' does not depend on any axioms
+'SelfModelCertification.captures' does not depend on any axioms
+'SelfModelCertification.ReceiptCertified' does not depend on any axioms
+'SelfModelCertification.SelfCertified' does not depend on any axioms
+'SelfModelCertification.receipt_certified_implies_self' does not depend on any axioms
+'SelfModelCertification.receipt_iff_status' does not depend on any axioms
+'SelfModelCertification.self_model_certifies_more' does not depend on any axioms
+'SelfModelCertification.needs_stationarity' does not depend on any axioms

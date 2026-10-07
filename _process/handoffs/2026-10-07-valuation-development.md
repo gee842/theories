@@ -2,6 +2,22 @@
 
 7 October 2026. AI-authored handoff from the project thread "How valuation develops", written at Ren's request at the end of the axiom-free round. Branch `claude/project-thread-mx6miu`; this round's last commit on main before the handoff is `6ca9789`.
 
+## Resume state (wrap-up, 7 October 2026, 09:50 UTC)
+
+The study stopped at a continuable position: no proof is half-finished and nothing is uncommitted. Ren asked every thread to wrap up.
+
+- **Branch:** `claude/project-thread-mx6miu`, identical to `main` after this handoff commit.
+- **Verified on:** main at `5b109655`, merged into the branch. All eight valuation modules and their imports (18 modules) were rebuilt from scratch, and the eight `*Audit.lean` files were rerun:
+  - 130 results;
+  - 118 of them print "does not depend on any axioms";
+  - no `sorryAx`, `native_decide` or errors.
+- **Nothing upstream has changed:** `ResourceContinuation.lean` and `lean/conditional/renewal/` were not touched on main between `2acd0f1` and `5b109655`, so the 12 inherited results are unchanged.
+- **To resume:** run the builder with core Lean 4.29.1 (`/opt/lean/lean-4.29.1-linux/bin` on `PATH`). It must resolve imports across `experiments/`, because `LineageInProcess` and `ValuationRenewal` import the core modules. Then follow "Exact next step" below.
+- **A new agent picking this up** should read, in order:
+  1. this file;
+  2. §18 of the argument (the input-status table);
+  3. `AxiomFree.lean` (the proof style that keeps results axiom-free).
+
 ## What the study answers
 
 How organized processes form and revise their own selective dispositions (operational valuation) without an analyst supplying a reward function. Read the [argument](../research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) (§§1–19), the [current formulation](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md) and the [formal companion](../../experiments/valuation-development/README.md).
