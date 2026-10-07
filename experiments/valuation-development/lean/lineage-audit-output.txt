@@ -10,5 +10,5 @@
 'ValuationDevelopment.intervalTotal_split' does not depend on any axioms
 'ValuationDevelopment.generations_succeed' does not depend on any axioms
 'ValuationDevelopment.execution_lineage' does not depend on any axioms
-'ValuationDevelopment.lineage_renewal_theorem' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.attribution_is_by_population' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.lineage_renewal_theorem' does not depend on any axioms
+'ValuationDevelopment.attribution_is_by_population' does not depend on any axioms

@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-10-07T09:36:28.669927+00:00",
+  "checked_at_utc": "2026-10-07T09:50:55.894895+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "checker_sha256": "6f5a3d0f5329ff0097a3eaa3ad650026ceb5944f1065649f4a0882614b63a25e",
+  "checker_sha256": "8ee9d4bcf270252a3da00960168e6a823c450bacefef6800dc64f3e2c01db1da",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
   "allowed_standard_axioms": [],
@@ -177,9 +177,22 @@
       "clean": true,
       "output": "verification/RegeneratingPersistence.txt",
       "output_sha256": "9cb19f376cf203e828876271564f016be42b4203103b68a871f4d20437cc4b85"
+    },
+    {
+      "module": "EnactedOrientation",
+      "source": "EnactedOrientation.lean",
+      "source_sha256": "3bb70275a9f2c03c4097c4bae15b086c03225271f23dc0302928e6dc26c0dad9",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 27,
+      "axioms": [],
+      "empty_axiom_audits": 27,
+      "clean": true,
+      "output": "verification/EnactedOrientation.txt",
+      "output_sha256": "7536454a4234e5c6101a86b4c95d2f6ee8f36d5f167201a510943fa37abfb944"
     }
   ],
-  "new_audited_declarations": 120,
-  "new_empty_axiom_audits": 120,
-  "scope": "Supervenience is factorization through base-identity classes; a step quality along a history is a function of its visited states, composes through the shared boundary, is invariant under exact re-representation, and is not fixed by endpoints and action word; damage-free histories keep every initially realizable activity realizable throughout, and every loss is located at an actual transition. These credentials hold equally for the converse orientation. Under the stated non-undermining premise over the whole scope of activities, admissible orientations are exactly sub-relations of continuation inclusion; fixed scopes and complete (including scalar) rankings fail it in finite examples, including over actual transitions. The structural credentials hold for every step relation; continuation inclusion registers restraint, every exclusive choice and every recovered dip as damage. A scope derived from the process (ongoing activities that remove no other ongoing activity, with eventual realizability) separates restraint from harm only with every activity in scope and only in a process where the victim removes nothing, and separates untaken from carried courses only with the exercised scope; no single scope does both, symmetric rivals stay unprotected, and unrecovered falls are not damage. The orientation input and the whole-scope input are proved necessary: the credentials do not determine the verdict, and unprivileged scopes include both the empty and the whole scope, and the action vocabulary is necessary. Evaluation is also modelled as a record inside the same process: the record equals the whole-history relation, shares the process's continuation, and which recording relation forms is not fixed by the law. With finitely many states, an evaluating activity persists exactly when a regenerated state where it is realizable is reachable, and the return path loses no eventual realizability. No separate moral predicate is formalized: the premise, the supervenience of moral properties, property identity and any ethical verdict are not asserted."
+  "new_audited_declarations": 147,
+  "new_empty_axiom_audits": 147,
+  "scope": "Supervenience is factorization through base-identity classes; a step quality along a history is a function of its visited states, composes through the shared boundary, is invariant under exact re-representation, and is not fixed by endpoints and action word; damage-free histories keep every initially realizable activity realizable throughout, and every loss is located at an actual transition. These credentials hold equally for the converse orientation. Under the stated non-undermining premise over the whole scope of activities, admissible orientations are exactly sub-relations of continuation inclusion; fixed scopes and complete (including scalar) rankings fail it in finite examples, including over actual transitions. The structural credentials hold for every step relation; continuation inclusion registers restraint, every exclusive choice and every recovered dip as damage. A scope derived from the process (ongoing activities that remove no other ongoing activity, with eventual realizability) separates restraint from harm only with every activity in scope and only in a process where the victim removes nothing, and separates untaken from carried courses only with the exercised scope; no single scope does both, symmetric rivals stay unprotected, and unrecovered falls are not damage. The orientation input and the whole-scope input are proved necessary: the credentials do not determine the verdict, and unprivileged scopes include both the empty and the whole scope, and the action vocabulary is necessary. Evaluation is also modelled as a record inside the same process: the record equals the whole-history relation, shares the process's continuation, and which recording relation forms is not fixed by the law. With finitely many states, an evaluating activity persists exactly when a regenerated state where it is realizable is reachable, and the return path loses no eventual realizability. Enacted evaluation: no transition gains eventual realizability, so the loss orientation endorses every transition; with finitely many states, losing transitions number fewer than the states along any history, and every enactment that recurs without bound keeps eventual realizability. Loss can precede persistence, finiteness is necessary, and at immediate feasibility loss recurs. No separate moral predicate is formalized: the premise, the supervenience of moral properties, property identity and any ethical verdict are not asserted."
 }

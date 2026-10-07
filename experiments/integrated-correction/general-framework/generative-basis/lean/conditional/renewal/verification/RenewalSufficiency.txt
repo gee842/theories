@@ -1,28 +1,32 @@
 'Generative.Conditional.Renewal.aged_append' does not depend on any axioms
-'Generative.Conditional.Renewal.opened_append' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.aged_block' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.block_beyond' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.opened_append' does not depend on any axioms
+'Generative.Conditional.Renewal.sufficiency_sub_ne_zero_of_lt' does not depend on any axioms
+'Generative.Conditional.Renewal.sufficiency_not_lt_of_sub_le_one' does not depend on any axioms
+'Generative.Conditional.Renewal.sufficiency_lt_of_not_sub_le_one' does not depend on any axioms
+'Generative.Conditional.Renewal.aged_block' does not depend on any axioms
+'Generative.Conditional.Renewal.block_beyond' does not depend on any axioms
 'Generative.Conditional.Renewal.formed_eq_block_zero' does not depend on any axioms
-'Generative.Conditional.Renewal.steady_shift' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.steady_fixed' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.opened_block' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.capped_step' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.sum_map_add' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.sum_map_zero' depends on axioms: [propext]
-'Generative.Conditional.Renewal.opened_steady' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.steady_shift' does not depend on any axioms
+'Generative.Conditional.Renewal.steady_fixed' does not depend on any axioms
+'Generative.Conditional.Renewal.opened_block' does not depend on any axioms
+'Generative.Conditional.Renewal.capped_step' does not depend on any axioms
+'Generative.Conditional.Renewal.sum_map_add' does not depend on any axioms
+'Generative.Conditional.Renewal.sum_map_zero' does not depend on any axioms
+'Generative.Conditional.Renewal.sufficiency_sum_map_congr' does not depend on any axioms
+'Generative.Conditional.Renewal.opened_steady' does not depend on any axioms
 'Generative.Conditional.Renewal.spanOpening_eq' does not depend on any axioms
-'Generative.Conditional.Renewal.mem_block' depends on axioms: [propext]
-'Generative.Conditional.Renewal.block_one_survives' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.steady_renews' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.steady_endless' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.formation_append' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.spanOpening_append' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.formation_replicate' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.spanOpening_replicate' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.balanced_of_each' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.balanced_closure_renews' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.mem_append_replicate' depends on axioms: [propext]
+'Generative.Conditional.Renewal.mem_block' does not depend on any axioms
+'Generative.Conditional.Renewal.block_one_survives' does not depend on any axioms
+'Generative.Conditional.Renewal.steady_renews' does not depend on any axioms
+'Generative.Conditional.Renewal.steady_endless' does not depend on any axioms
+'Generative.Conditional.Renewal.formation_append' does not depend on any axioms
+'Generative.Conditional.Renewal.spanOpening_append' does not depend on any axioms
+'Generative.Conditional.Renewal.formation_replicate' does not depend on any axioms
+'Generative.Conditional.Renewal.spanOpening_replicate' does not depend on any axioms
+'Generative.Conditional.Renewal.balanced_of_each' does not depend on any axioms
+'Generative.Conditional.Renewal.balanced_closure_renews' does not depend on any axioms
+'Generative.Conditional.Renewal.mem_append_replicate' does not depend on any axioms
 'Generative.Conditional.Renewal.append_nonempty' does not depend on any axioms
-'Generative.Conditional.Renewal.balanced_with_excess' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.excess_supported_by_closure_renews' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.closed_open_balanced_renews_forever' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.balanced_with_excess' does not depend on any axioms
+'Generative.Conditional.Renewal.excess_supported_by_closure_renews' does not depend on any axioms
+'Generative.Conditional.Renewal.closed_open_balanced_renews_forever' does not depend on any axioms

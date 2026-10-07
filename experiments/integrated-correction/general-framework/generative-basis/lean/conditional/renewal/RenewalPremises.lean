@@ -40,7 +40,7 @@ variable {Kind : Type u}
 def History.idle (law : ChannelLaw Kind) (c : Config Kind) : History law where
   states n := ⟨c.reserve, agedN n c.tokens⟩
   ticks _ := []
-  steps _ := ⟨(List.append_nil _).symm, Nat.add_le_add_left (Nat.zero_le _) _,
+  steps _ := ⟨(append_nil_eq _).symm, Nat.add_le_add_left (Nat.zero_le _) _,
     fun _ member => by cases member⟩
 
 /-- Some history from the configuration is live at every time up to `T`. -/
@@ -103,11 +103,11 @@ theorem chain_not_supported {B : List Nat} (closed : SupportClosed chainLaw B) :
   | 0, member => by
     obtain ⟨j, _, edge, _⟩ := closed 0 member
     have zero : 0 = j + 1 := edge
-    exact Nat.succ_ne_zero j zero.symm
+    exact succ_ne_zero_of j zero.symm
   | k + 1, member => by
     obtain ⟨j, jIn, edge, _⟩ := closed (k + 1) member
     have same : k + 1 = j + 1 := edge
-    have kj : k = j := Nat.add_right_cancel same
+    have kj : k = j := add_right_cancel_eq same
     rw [← kj] at jIn
     exact chain_not_supported closed k jIn
 
@@ -128,7 +128,7 @@ def chainHistory : History chainLaw where
     · show 0 + (1 + 0) ≤ 0 + (1 + (1 + 0))
       decide
     · intro k member
-      rw [List.mem_singleton.mp member]
+      rw [mem_singleton_eq member]
       exact ⟨⟨n + 1, 1⟩, List.mem_singleton_self _, rfl⟩
 
 theorem chain_renews_forever : RenewsForever chainLaw :=
@@ -154,10 +154,15 @@ itself. Every kind has span 2 and rate 1. Forming the cycle kind demands 3,
 more than its token opens; forming the free kind demands nothing. -/
 def freeFormation : ChannelLaw SeedKind where
   edge j k := match j, k with
+    | .seed, .seed => False
     | .seed, .cycle => True
     | .seed, .free => True
+    | .cycle, .seed => False
     | .cycle, .cycle => True
-    | _, _ => False
+    | .cycle, .free => False
+    | .free, .seed => False
+    | .free, .cycle => False
+    | .free, .free => False
   span _ := 2
   demand k := match k with
     | .seed => 1
@@ -189,9 +194,10 @@ theorem free_formation_short {B : List SeedKind} (allCycle : ∀ k, k ∈ B → 
   | cons k rest ih =>
     have restShort := ih (fun j member => allCycle j (List.mem_cons_of_mem _ member))
     rw [allCycle k List.mem_cons_self]
-    show 1 * 2 + spanOpening freeFormation rest + (rest.length + 1) ≤
+    show 2 + spanOpening freeFormation rest + rest.length + 1 ≤
       3 + formation freeFormation rest
-    omega
+    rw [Nat.add_assoc 2, Nat.add_right_comm 2]
+    exact Nat.add_le_add_left restShort 3
 
 theorem free_formation_has_no_self_renewing_population :
     ¬ ∃ B, SelfRenewing freeFormation B := by
@@ -201,8 +207,10 @@ theorem free_formation_has_no_self_renewing_population :
   cases B with
   | nil => exact nonempty rfl
   | cons k rest =>
-    simp only [List.length_cons] at short
-    omega
+    have overdrawn : spanOpening freeFormation (k :: rest) + (rest.length + 1) ≤
+        spanOpening freeFormation (k :: rest) := Nat.le_trans short balanced
+    exact Nat.not_succ_le_self _
+      (Nat.le_trans (Nat.add_le_add_left (Nat.le_add_left 1 rest.length) _) overdrawn)
 
 theorem free_formation_complete : ∀ k : SeedKind, k ∈ [.seed, .cycle, .free] := by
   intro k
@@ -232,8 +240,8 @@ theorem opened_replicate_free (s : Nat) :
   | m + 1 => by
     show (if s + 1 = 0 then 0 else 1) +
       opened freeFormation.rate (List.replicate m ⟨SeedKind.free, s + 1⟩) = m + 1
-    rw [if_neg (Nat.succ_ne_zero s), opened_replicate_free s m]
-    omega
+    rw [if_neg (succ_ne_zero_of s), opened_replicate_free s m]
+    exact Nat.add_comm 1 m
 
 /-- The short cycle with reserve `R` stays live for `R` ticks. -/
 theorem cycle_lives (R : Nat) :
@@ -243,10 +251,10 @@ theorem cycle_lives (R : Nat) :
   | succ R ih =>
     refine liveFor_of_step (births := [.cycle])
       (alive_token_live List.mem_cons_self (Nat.le_refl 1)) ⟨rfl, ?_, ?_⟩ ih
-    · show R + (3 + 0) ≤ R + 1 + (1 + (1 + 0))
-      omega
+    · show R + 3 ≤ R + 1 + 2
+      exact Nat.le_refl (R + 3)
     · intro k member
-      rw [List.mem_singleton.mp member]
+      rw [mem_singleton_eq member]
       exact ⟨⟨.cycle, 1⟩, List.mem_singleton_self _, True.intro⟩
 
 /-- The starting configuration: reserve 4 and one fresh seed token. -/
@@ -275,9 +283,9 @@ theorem free_formation_lives_long (m : Nat) : LiveFor freeFormation freeStart (m
     · show m + (3 + 0) ≤ m + 1 + opened freeFormation.rate
         (⟨.cycle, 1⟩ :: (List.replicate m ⟨.free, 1⟩ ++ [⟨.cycle, 2⟩]))
       rw [openedSecond]
-      omega
+      exact Nat.add_le_add_left (Nat.succ_le_succ (Nat.le_add_right 1 m)) (m + 1)
     · intro k member
-      rw [List.mem_singleton.mp member, agedSecond]
+      rw [mem_singleton_eq member, agedSecond]
       exact ⟨⟨.cycle, 1⟩, List.mem_singleton_self _, True.intro⟩
   have first : LiveFor freeFormation
       ⟨2, ⟨.seed, 1⟩ :: ⟨.cycle, 2⟩ :: List.replicate m ⟨.free, 2⟩⟩ (m + 2) := by
@@ -296,10 +304,10 @@ theorem free_formation_lives_long (m : Nat) : LiveFor freeFormation freeStart (m
       rfl
     · show m + 1 + (3 + 0) ≤ 2 + opened freeFormation.rate
         (⟨.seed, 1⟩ :: ⟨.cycle, 2⟩ :: List.replicate m ⟨.free, 2⟩)
-      rw [openedFirst]
-      omega
+      rw [openedFirst, Nat.add_comm 1 m, Nat.add_comm 1 (m + 1), Nat.add_comm 2]
+      exact Nat.le_refl (m + 4)
     · intro k member
-      rw [List.mem_singleton.mp member, agedFirst]
+      rw [mem_singleton_eq member, agedFirst]
       exact ⟨⟨.cycle, 1⟩, List.mem_cons_self, True.intro⟩
   refine liveFor_of_step (births := .cycle :: List.replicate m .free)
     (alive_token_live (c := freeStart) List.mem_cons_self (Nat.le_succ 1)) ⟨?_, ?_, ?_⟩ first
@@ -312,9 +320,9 @@ theorem free_formation_lives_long (m : Nat) : LiveFor freeFormation freeStart (m
     exact Nat.le_refl 5
   · intro k member
     refine ⟨⟨.seed, 1⟩, List.mem_singleton_self _, ?_⟩
-    cases List.mem_cons.mp member with
+    cases mem_cons_split member with
     | inl same => rw [same]; exact True.intro
-    | inr inFree => rw [List.eq_of_mem_replicate inFree]; exact True.intro
+    | inr inFree => rw [eq_of_mem_replicate_eq inFree]; exact True.intro
 
 /-- **Positive formation demand is needed for a deadline read from the initial
 configuration.** `freeFormation` has no self-renewing population, so every

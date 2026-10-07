@@ -2,8 +2,9 @@
 """Fresh build of the renewal–closure modules from frozen source bytes.
 
 Inherited modules must keep the source hashes recorded by their own receipts.
-New declarations may use only Lean's standard propext and Quot.sound; every new
-theorem must be audited, and sorry, custom axioms and warnings are rejected.
+Every audit of a new declaration must be empty: no axiom at all, including Lean's
+standard propext, Quot.sound and Classical.choice. Every new theorem must be
+audited, and sorry, custom axioms and warnings are rejected.
 Uses `lean +<toolchain>` through elan when available, else `lean` on PATH;
 either way the reported version must be 4.29.1.
 """
@@ -23,6 +24,7 @@ SOURCES = {
     "GenerativeCore": LEAN / "GenerativeCore.lean",
     "Depletion": LEAN / "Depletion.lean",
     "SupportNecessity": LEAN / "conditional/SupportNecessity.lean",
+    "RenewalBasics": ROOT / "RenewalBasics.lean",
     "RenewalClosure": ROOT / "RenewalClosure.lean",
     "RenewalAccounting": ROOT / "RenewalAccounting.lean",
     "RenewalSufficiency": ROOT / "RenewalSufficiency.lean",
@@ -36,9 +38,9 @@ INHERITED_SHA256 = {
     "Depletion": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
     "SupportNecessity": "30050ec7366ef84fa6d2bd71ea8f5998ef0d9975b6841393b7014b147573b715",
 }
-NEW = ["RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink",
+NEW = ["RenewalBasics", "RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink",
        "RenewalCharacterization", "RenewalConfigurations", "RenewalPremises"]
-ALLOWED_AXIOMS = {"propext", "Quot.sound"}
+ALLOWED_AXIOMS = set()
 
 
 def digest(data):
@@ -141,7 +143,8 @@ def main():
                  "configurations, renewability is never gained along a history without "
                  "import, a seeded configuration with enough reserve reaches a standing "
                  "renewal, and renewability is not a function of the reserve and kinds "
-                 "present; no decision of equality between kinds is used; finitely many kinds "
+                 "present; no decision of equality between kinds and no axiom (not even "
+                 "propext, Quot.sound or Classical.choice) is used; finitely many kinds "
                  "are needed (a chain of infinitely many kinds renews forever with no "
                  "self-renewing population), and positive formation demand is needed for a "
                  "deadline read from the initial configuration (a kind free to form stores "

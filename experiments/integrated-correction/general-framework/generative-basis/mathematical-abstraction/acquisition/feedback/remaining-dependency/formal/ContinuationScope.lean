@@ -46,6 +46,58 @@ structure Situation (A K : Type) where
 
 variable {A K : Type}
 
+theorem mem_cons_cases {α : Type} {a x : α} {l : List α} (h : a ∈ x :: l) :
+    a = x ∨ a ∈ l := by
+  cases h with
+  | head => exact Or.inl rfl
+  | tail _ h => exact Or.inr h
+
+theorem any_false_mem {α : Type} (f : α → Bool) :
+    ∀ l : List α, l.any f = false → ∀ x ∈ l, f x = false
+  | [], _, _, hx => nomatch hx
+  | y :: ys, h, x, hx => by
+    have h' : (f y || ys.any f) = false := h
+    cases hfy : f y with
+    | true => rw [hfy] at h'; exact nomatch h'
+    | false =>
+      rw [hfy] at h'
+      cases mem_cons_cases hx with
+      | inl e => rw [e]; exact hfy
+      | inr hm => exact any_false_mem f ys h' x hm
+
+theorem mem_filter_of {α : Type} {p : α → Bool} {x : α} :
+    ∀ {l : List α}, x ∈ l → p x = true → x ∈ l.filter p
+  | [], hx, _ => nomatch hx
+  | y :: ys, hx, hp => by
+    cases hy : p y with
+    | true =>
+      rw [List.filter_cons_of_pos hy]
+      cases mem_cons_cases hx with
+      | inl e => rw [e]; exact List.Mem.head _
+      | inr hm => exact List.Mem.tail _ (mem_filter_of hm hp)
+    | false =>
+      rw [List.filter_cons_of_neg (fun h => nomatch hy.symm.trans h)]
+      cases mem_cons_cases hx with
+      | inl e => rw [e, hy] at hp; exact nomatch hp
+      | inr hm => exact mem_filter_of hm hp
+
+theorem of_mem_filter {α : Type} {p : α → Bool} {x : α} :
+    ∀ {l : List α}, x ∈ l.filter p → x ∈ l ∧ p x = true
+  | [], hx => nomatch hx
+  | y :: ys, hx => by
+    cases hy : p y with
+    | true =>
+      rw [List.filter_cons_of_pos hy] at hx
+      cases mem_cons_cases hx with
+      | inl e => rw [e]; exact ⟨List.Mem.head _, hy⟩
+      | inr hm =>
+        have r := of_mem_filter hm
+        exact ⟨List.Mem.tail _ r.1, r.2⟩
+    | false =>
+      rw [List.filter_cons_of_neg (fun h => nomatch hy.symm.trans h)] at hx
+      have r := of_mem_filter hx
+      exact ⟨List.Mem.tail _ r.1, r.2⟩
+
 /-- `b` secures every considered continuation `a` secures, and one more. -/
 def Improves (s : Situation A K) (b a : A) : Prop :=
   (∀ k ∈ s.continuations, s.secures a k = true → s.secures b k = true) ∧
@@ -66,34 +118,33 @@ def Situation.restrict (s : Situation A K) (scope : K → Bool) : Situation A K 
 theorem unreached_agree (s : Situation A K) (k : K) (h : s.reached k = false)
     (a b : A) (ha : a ∈ s.courses) (hb : b ∈ s.courses) :
     s.secures a k = s.secures b k := by
-  have h' := h
-  simp only [Situation.reached, List.any_eq_false] at h'
-  have inner := h' a ha
-  rw [Bool.not_eq_true, List.any_eq_false] at inner
-  have := inner b hb
-  cases hx : s.secures a k <;> cases hy : s.secures b k <;> simp_all
+  have inner := any_false_mem _ s.courses h a ha
+  have hab : (s.secures a k != s.secures b k) = false :=
+    any_false_mem _ s.courses inner b hb
+  revert hab
+  cases s.secures a k <;> cases s.secures b k <;> intro hab <;>
+    first | rfl | exact nomatch hab
 
 /-- Restricting attention to the reached continuations never changes whether
 one available course improves on another. -/
 theorem unreached_never_matters (s : Situation A K) (a b : A)
     (ha : a ∈ s.courses) (hb : b ∈ s.courses) :
     Improves s b a ↔ Improves (s.restrict s.reached) b a := by
-  unfold Improves Situation.restrict
-  simp only [List.mem_filter]
   constructor
   · rintro ⟨incl, k, hk, yes, no⟩
-    refine ⟨fun k' hk' => incl k' hk'.1, k, ⟨hk, ?_⟩, yes, no⟩
-    cases hr : s.reached k
-    · have := unreached_agree s k hr a b ha hb
-      rw [no, yes] at this
-      cases this
-    · rfl
+    have hr : s.reached k = true := by
+      cases hr : s.reached k
+      · have := unreached_agree s k hr a b ha hb
+        rw [no, yes] at this
+        exact nomatch this
+      · rfl
+    exact ⟨fun k' hk' => incl k' (of_mem_filter hk').1, k, mem_filter_of hk hr, yes, no⟩
   · rintro ⟨incl, k, hk, yes, no⟩
-    refine ⟨fun k' hk' sa => ?_, k, hk.1, yes, no⟩
+    refine ⟨fun k' hk' sa => ?_, k, (of_mem_filter hk).1, yes, no⟩
     cases hr : s.reached k'
     · rw [← unreached_agree s k' hr a b ha hb]
       exact sa
-    · exact incl k' ⟨hk', hr⟩ sa
+    · exact incl k' (mem_filter_of hk' hr) sa
 
 theorem nonforeclosing_restrict_iff (s : Situation A K) (a : A) :
     Nonforeclosing s a ↔ Nonforeclosing (s.restrict s.reached) a := by
@@ -117,10 +168,13 @@ theorem omitted_scope_admits_needless_foreclosure (scope : K → Bool) (k : K)
       Nonforeclosing (s.restrict scope) false := by
   refine ⟨rfl, ?_, ?_⟩
   · rintro ⟨_, none⟩
-    exact none ⟨true, by simp, fun _ _ _ => rfl, k, by simp, rfl, rfl⟩
-  · refine ⟨by simp [Situation.restrict], ?_⟩
+    exact none ⟨true, List.Mem.tail _ (List.Mem.head _), fun _ _ _ => rfl, k,
+      List.Mem.head _, rfl, rfl⟩
+  · refine ⟨List.Mem.head _, ?_⟩
     rintro ⟨b, _, _, k', hk', _, _⟩
-    simp [Situation.restrict, omitted] at hk'
+    have hk'' : k' ∈ ([k] : List K).filter scope := hk'
+    rw [List.filter_cons_of_neg (fun h => nomatch omitted.symm.trans h)] at hk''
+    exact nomatch hk''
 
 /-- Omission can also condemn: each course secures one center's continuation;
 dropping one of them makes the course that secures it look improvable. -/
@@ -129,46 +183,90 @@ theorem omitted_scope_can_condemn :
       { courses := [false, true], continuations := [false, true],
         secures := fun a k => a == k }
     Nonforeclosing s true ∧ ¬ Nonforeclosing (s.restrict fun k => !k) true := by
-  refine ⟨⟨by simp, ?_⟩, ?_⟩
-  · rintro ⟨b, _, incl, _⟩
-    have := incl true (by simp) (by simp)
-    cases b <;> simp_all
+  refine ⟨⟨List.Mem.tail _ (List.Mem.head _), ?_⟩, ?_⟩
+  · rintro ⟨b, _, incl, k, _, yes, no⟩
+    have := incl true (List.Mem.tail _ (List.Mem.head _)) rfl
+    cases b
+    · exact nomatch this
+    · exact nomatch yes.symm.trans no
   · rintro ⟨_, none⟩
-    refine none ⟨false, by simp [Situation.restrict], ?_, false,
-      by simp [Situation.restrict], rfl, rfl⟩
+    refine none ⟨false, List.Mem.head _, ?_, false, List.Mem.head _, rfl, rfl⟩
     intro k hk _
-    simp [Situation.restrict] at hk
-    subst hk
-    rfl
+    have hk' : k ∈ [false] := hk
+    cases mem_cons_cases hk' with
+    | inl e => rw [e]; rfl
+    | inr hm => exact nomatch hm
 
 /-- How many considered continuations a course secures. -/
 def Situation.securedCount (s : Situation A K) (a : A) : Nat :=
   s.continuations.countP fun k => s.secures a k
 
+theorem countP_go_acc {α : Type} (p : α → Bool) :
+    ∀ (l : List α) (n : Nat), List.countP.go p l n = List.countP.go p l 0 + n
+  | [], n => (Nat.zero_add n).symm
+  | x :: xs, n => by
+    show (bif p x then List.countP.go p xs (n + 1) else List.countP.go p xs n) =
+      (bif p x then List.countP.go p xs (0 + 1) else List.countP.go p xs 0) + n
+    cases p x with
+    | true =>
+      show List.countP.go p xs (n + 1) = List.countP.go p xs (0 + 1) + n
+      rw [countP_go_acc p xs (n + 1), countP_go_acc p xs (0 + 1), Nat.add_assoc,
+        Nat.zero_add, Nat.add_comm 1 n]
+    | false => exact countP_go_acc p xs n
+
+theorem countP_cons_true {α : Type} {p : α → Bool} {x : α} {xs : List α}
+    (h : p x = true) : (x :: xs).countP p = xs.countP p + 1 := by
+  show (bif p x then List.countP.go p xs (0 + 1) else List.countP.go p xs 0) = _
+  rw [h]
+  exact countP_go_acc p xs (0 + 1)
+
+theorem countP_cons_false {α : Type} {p : α → Bool} {x : α} {xs : List α}
+    (h : p x = false) : (x :: xs).countP p = xs.countP p := by
+  show (bif p x then List.countP.go p xs (0 + 1) else List.countP.go p xs 0) = _
+  rw [h]
+  rfl
+
+theorem countP_le_of_incl {α : Type} (p q : α → Bool) :
+    ∀ l : List α, (∀ k ∈ l, p k = true → q k = true) → l.countP p ≤ l.countP q
+  | [], _ => Nat.le_refl _
+  | y :: ys, incl => by
+    have ih := countP_le_of_incl p q ys (fun k hk => incl k (List.Mem.tail _ hk))
+    cases hp : p y with
+    | true =>
+      have hq := incl y (List.Mem.head _) hp
+      rw [countP_cons_true hp, countP_cons_true hq]
+      exact Nat.succ_le_succ ih
+    | false =>
+      rw [countP_cons_false hp]
+      cases hq : q y with
+      | true => rw [countP_cons_true hq]; exact Nat.le_succ_of_le ih
+      | false => rw [countP_cons_false hq]; exact ih
+
 theorem countP_lt_of_improves (p q : K → Bool) :
     ∀ l : List K, (∀ k ∈ l, p k = true → q k = true) →
       (∃ k ∈ l, q k = true ∧ p k = false) → l.countP p < l.countP q
-  | [], _, ⟨_, hk, _⟩ => by cases hk
+  | [], _, ⟨_, hk, _⟩ => nomatch hk
   | x :: xs, incl, ⟨k, hk, yes, no⟩ => by
     have inclTail : ∀ k ∈ xs, p k = true → q k = true :=
-      fun k hk => incl k (List.mem_cons_of_mem _ hk)
-    have le : xs.countP p ≤ xs.countP q := by
-      clear hk yes no incl
-      induction xs with
-      | nil => exact Nat.le_refl _
-      | cons y ys ih =>
-        have hy := inclTail y (List.mem_cons_self ..)
-        have ih' := ih (fun k hk => inclTail k (List.mem_cons_of_mem _ hk))
-        simp only [List.countP_cons]
-        cases hp : p y <;> cases hq : q y <;> simp_all <;> omega
-    rcases List.mem_cons.mp hk with rfl | hk'
-    · simp only [List.countP_cons, yes, no]
-      simp
-      omega
-    · have lt := countP_lt_of_improves p q xs inclTail ⟨k, hk', yes, no⟩
-      have hx := incl x (List.mem_cons_self ..)
-      simp only [List.countP_cons]
-      cases hp : p x <;> cases hq : q x <;> simp_all <;> omega
+      fun k hk => incl k (List.Mem.tail _ hk)
+    have le : xs.countP p ≤ xs.countP q := countP_le_of_incl p q xs inclTail
+    cases mem_cons_cases hk with
+    | inl e =>
+      rw [e] at yes no
+      rw [countP_cons_false no, countP_cons_true yes]
+      exact Nat.lt_succ_of_le le
+    | inr hk' =>
+      have lt := countP_lt_of_improves p q xs inclTail ⟨k, hk', yes, no⟩
+      cases hp : p x with
+      | true =>
+        have hq := incl x (List.Mem.head _) hp
+        rw [countP_cons_true hp, countP_cons_true hq]
+        exact Nat.succ_lt_succ lt
+      | false =>
+        rw [countP_cons_false hp]
+        cases hq : q x with
+        | true => rw [countP_cons_true hq]; exact Nat.lt_succ_of_lt lt
+        | false => rw [countP_cons_false hq]; exact lt
 
 theorem improves_count (s : Situation A K) (a b : A) (h : Improves s b a) :
     s.securedCount a < s.securedCount b :=
@@ -177,18 +275,23 @@ theorem improves_count (s : Situation A K) (a b : A) (h : Improves s b a) :
 theorem exists_max (f : A → Nat) :
     ∀ l : List A, l ≠ [] → ∃ a ∈ l, ∀ b ∈ l, f b ≤ f a
   | [], h => absurd rfl h
-  | [x], _ => ⟨x, by simp, fun b hb => by simp at hb; rw [hb]; exact Nat.le_refl _⟩
+  | [x], _ => ⟨x, List.Mem.head _, fun b hb => by
+      cases mem_cons_cases hb with
+      | inl e => rw [e]; exact Nat.le_refl _
+      | inr hm => exact nomatch hm⟩
   | x :: y :: rest, _ => by
-    obtain ⟨m, hm, hmax⟩ := exists_max f (y :: rest) (by simp)
-    by_cases hxm : f m ≤ f x
-    · refine ⟨x, by simp, fun b hb => ?_⟩
-      rcases List.mem_cons.mp hb with rfl | hb
-      · exact Nat.le_refl _
-      · exact Nat.le_trans (hmax b hb) hxm
-    · refine ⟨m, List.mem_cons_of_mem _ hm, fun b hb => ?_⟩
-      rcases List.mem_cons.mp hb with rfl | hb
-      · omega
-      · exact hmax b hb
+    obtain ⟨m, hm, hmax⟩ := exists_max f (y :: rest) (fun h => nomatch h)
+    match Nat.decLe (f m) (f x) with
+    | isTrue hxm =>
+      refine ⟨x, List.Mem.head _, fun b hb => ?_⟩
+      cases mem_cons_cases hb with
+      | inl e => rw [e]; exact Nat.le_refl _
+      | inr hb => exact Nat.le_trans (hmax b hb) hxm
+    | isFalse hxm =>
+      refine ⟨m, List.Mem.tail _ hm, fun b hb => ?_⟩
+      cases mem_cons_cases hb with
+      | inl e => rw [e]; exact Nat.le_of_lt (Nat.lt_of_not_le hxm)
+      | inr hb => exact hmax b hb
 
 /-- Every finite situation with an available course has a course that forecloses
 nothing needlessly. -/
@@ -196,9 +299,7 @@ theorem nonforeclosing_exists (s : Situation A K) (h : s.courses ≠ []) :
     ∃ a, Nonforeclosing s a := by
   obtain ⟨a, ha, amax⟩ := exists_max s.securedCount s.courses h
   refine ⟨a, ha, fun ⟨b, hb, imp⟩ => ?_⟩
-  have := improves_count s a b imp
-  have := amax b hb
-  omega
+  exact Nat.lt_irrefl _ (Nat.lt_of_lt_of_le (improves_count s a b imp) (amax b hb))
 
 /-! ### Symmetric competition between two centers -/
 
@@ -208,10 +309,19 @@ def competition : Bool → Bool → Bool := fun course k => course == k
 
 theorem both_courses_nonforeclosing (c : Bool) :
     Nonforeclosing ⟨[false, true], [false, true], competition⟩ c := by
-  refine ⟨by cases c <;> simp, ?_⟩
-  rintro ⟨b, _, incl, _⟩
-  have := incl c (by cases c <;> simp) (by simp [competition])
-  cases b <;> cases c <;> simp_all [competition]
+  have hc : c ∈ [false, true] := by
+    cases c
+    · exact List.Mem.head _
+    · exact List.Mem.tail _ (List.Mem.head _)
+  refine ⟨hc, ?_⟩
+  rintro ⟨b, _, incl, k, _, yes, no⟩
+  have hcc : competition c c = true := by cases c <;> rfl
+  have := incl c hc hcc
+  cases b <;> cases c
+  · exact nomatch yes.symm.trans no
+  · exact nomatch this
+  · exact nomatch this
+  · exact nomatch yes.symm.trans no
 
 /-- A deterministic choice rule over such two-course, two-continuation
 structures that treats the centers alike: relabeling both centers (and hence
@@ -221,17 +331,15 @@ def TreatsCentersAlike (rule : (Bool → Bool → Bool) → Bool) : Prop :=
 
 /-- No such rule can choose in the symmetric competition: the structure alone
 does not say whose continuation to secure. The rule must output a course, so
-abstention is not among its options; the proof uses only that the competition
-is unchanged by the relabeling. -/
+abstention is not among its options. The proof needs only one structure that
+the relabeling leaves unchanged; the constant structure is used, so that no
+equality of functions is needed, and the symmetric competition is another. -/
 theorem symmetric_competition_has_no_structural_choice :
     ¬ ∃ rule, TreatsCentersAlike rule := by
   rintro ⟨rule, alike⟩
-  have h := alike competition
-  have same : (fun course k => competition (!course) (!k)) = competition := by
-    funext course k
-    cases course <;> cases k <;> rfl
-  rw [same] at h
-  cases hr : rule competition <;> simp [hr] at h
+  have h := alike fun _ _ => true
+  revert h
+  cases rule fun _ _ => true <;> intro h <;> exact nomatch h
 
 /-! ### Withdrawal after fulfillment -/
 
@@ -250,22 +358,24 @@ theorem fulfillment_turns_retained_course_foreclosing :
     Nonforeclosing beforeFulfillment true ∧ Nonforeclosing beforeFulfillment false ∧
       ¬ Nonforeclosing afterFulfillment true ∧ Nonforeclosing afterFulfillment false ∧
       afterFulfillment.reached true = false := by
-  refine ⟨⟨by simp [beforeFulfillment], ?_⟩, ⟨by simp [beforeFulfillment], ?_⟩,
-    ?_, ⟨by simp [afterFulfillment, beforeFulfillment], ?_⟩, rfl⟩
-  · rintro ⟨b, _, incl, _⟩
-    have := incl true (by simp [beforeFulfillment]) (by simp [beforeFulfillment])
-    cases b <;> simp_all [beforeFulfillment]
-  · rintro ⟨b, _, incl, _⟩
-    have := incl false (by simp [beforeFulfillment]) (by simp [beforeFulfillment])
-    cases b <;> simp_all [beforeFulfillment]
+  refine ⟨⟨List.Mem.tail _ (List.Mem.head _), ?_⟩, ⟨List.Mem.head _, ?_⟩,
+    ?_, ⟨List.Mem.head _, ?_⟩, rfl⟩
+  · rintro ⟨b, _, incl, k, _, yes, no⟩
+    have := incl true (List.Mem.tail _ (List.Mem.head _)) rfl
+    cases b
+    · exact nomatch this
+    · exact nomatch yes.symm.trans no
+  · rintro ⟨b, _, incl, k, _, yes, no⟩
+    have := incl false (List.Mem.head _) rfl
+    cases b
+    · exact nomatch yes.symm.trans no
+    · exact nomatch this
   · rintro ⟨_, none⟩
-    refine none ⟨false, by simp [afterFulfillment, beforeFulfillment], ?_, false,
-      by simp [afterFulfillment, beforeFulfillment], by simp [afterFulfillment], by
-        simp [afterFulfillment]⟩
+    refine none ⟨false, List.Mem.head _, ?_, false, List.Mem.head _, rfl, rfl⟩
     intro k _ _
-    cases k <;> simp [afterFulfillment]
+    cases k <;> rfl
   · rintro ⟨b, _, _, k, hk, yes, no⟩
-    cases k <;> cases b <;> simp_all [afterFulfillment]
+    cases k <;> exact nomatch no
 
 end ContinuationScope
 
@@ -291,3 +401,11 @@ end ContinuationScope
 #print axioms ContinuationScope.beforeFulfillment
 #print axioms ContinuationScope.afterFulfillment
 #print axioms ContinuationScope.fulfillment_turns_retained_course_foreclosing
+#print axioms ContinuationScope.mem_cons_cases
+#print axioms ContinuationScope.any_false_mem
+#print axioms ContinuationScope.mem_filter_of
+#print axioms ContinuationScope.of_mem_filter
+#print axioms ContinuationScope.countP_go_acc
+#print axioms ContinuationScope.countP_cons_true
+#print axioms ContinuationScope.countP_cons_false
+#print axioms ContinuationScope.countP_le_of_incl
