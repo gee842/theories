@@ -1,0 +1,46 @@
+ContinuationRenewal.no_unrenewed_tail_of_accessible.{u} {State : Type u} {unrenewed : State → State → Prop}
+  {states : Nat → State} {a : State} (accessible : Acc unrenewed a) (start : Nat) :
+  states start = a → ¬∀ (n : Nat), start ≤ n → unrenewed (states (n + 1)) (states n)
+ContinuationRenewal.no_renewal_free_tail.{u} {State : Type u} {unrenewed : State → State → Prop}
+  (wellFounded : WellFounded unrenewed) (states : Nat → State) (renewal : Nat → Prop)
+  (decreases : ∀ (n : Nat), ¬renewal n → unrenewed (states (n + 1)) (states n)) (start : Nat) :
+  ¬∀ (n : Nat), start ≤ n → ¬renewal n
+ContinuationRenewal.renewal_after_of_accessible.{u} {State : Type u} {unrenewed : State → State → Prop}
+  {states : Nat → State} {renewal : Nat → Prop} (step : ∀ (n : Nat), renewal n ∨ unrenewed (states (n + 1)) (states n))
+  {a : State} (accessible : Acc unrenewed a) (start : Nat) : states start = a → ∃ n, start ≤ n ∧ renewal n
+ContinuationRenewal.renewal_arbitrarily_late.{u} {State : Type u} {unrenewed : State → State → Prop}
+  (wellFounded : WellFounded unrenewed) (states : Nat → State) (renewal : Nat → Prop)
+  (step : ∀ (n : Nat), renewal n ∨ unrenewed (states (n + 1)) (states n)) (start : Nat) : ∃ n, start ≤ n ∧ renewal n
+ContinuationRenewal.renewal_arbitrarily_late_of_decidable.{u} {State : Type u} {unrenewed : State → State → Prop}
+  (wellFounded : WellFounded unrenewed) (states : Nat → State) (renewal : Nat → Prop) [DecidablePred renewal]
+  (decreases : ∀ (n : Nat), ¬renewal n → unrenewed (states (n + 1)) (states n)) (start : Nat) :
+  ∃ n, start ≤ n ∧ renewal n
+ContinuationRenewal.renewal_within_rank_bound (rank : Nat → Nat) (renewal : Nat → Prop) [DecidablePred renewal]
+  (decreases : ∀ (n : Nat), ¬renewal n → rank (n + 1) < rank n) (bound start : Nat) :
+  rank start ≤ bound → ∃ n, start ≤ n ∧ n ≤ start + bound ∧ renewal n
+ContinuationRenewal.renewal_within_rank_plus_one_steps (rank : Nat → Nat) (renewal : Nat → Prop) [DecidablePred renewal]
+  (decreases : ∀ (n : Nat), ¬renewal n → rank (n + 1) < rank n) (start : Nat) :
+  ∃ n, start ≤ n ∧ n ≤ start + rank start ∧ renewal n
+ContinuationRenewal.rank_renewal_arbitrarily_late (rank : Nat → Nat) (renewal : Nat → Prop) [DecidablePred renewal]
+  (decreases : ∀ (n : Nat), ¬renewal n → rank (n + 1) < rank n) (start : Nat) : ∃ n, start ≤ n ∧ renewal n
+ContinuationRenewal.alternating_actual_steps (n : Nat) :
+  ContinuationRenewal.alternatingStep (ContinuationRenewal.alternatingState n)
+    (ContinuationRenewal.alternatingState (n + 1))
+ContinuationRenewal.alternating_nonrenewal_decreases (n : Nat) (absent : ¬ContinuationRenewal.alternatingRenewal n) :
+  ContinuationRenewal.alternatingRank (n + 1) < ContinuationRenewal.alternatingRank n
+ContinuationRenewal.alternating_renews_arbitrarily_late (start : Nat) :
+  ∃ n, start ≤ n ∧ ContinuationRenewal.alternatingRenewal n
+ContinuationRenewal.alternating_period_two (n : Nat) :
+  ContinuationRenewal.alternatingState (n + 2) = ContinuationRenewal.alternatingState n
+ContinuationRenewal.alternating_one_restoring_form (n : Nat) (renewed : ContinuationRenewal.alternatingRenewal n) :
+  ContinuationRenewal.alternatingState n = false ∧ ContinuationRenewal.alternatingState (n + 1) = true
+ContinuationRenewal.alternating_restoration_raises_rank (n : Nat) (renewed : ContinuationRenewal.alternatingRenewal n) :
+  ContinuationRenewal.alternatingRank n = 0 ∧ ContinuationRenewal.alternatingRank (n + 1) = 1
+ContinuationRenewal.alternating_has_actual_unrenewed_step :
+  ¬ContinuationRenewal.alternatingRenewal 0 ∧
+    ContinuationRenewal.alternatingRank 1 < ContinuationRenewal.alternatingRank 0
+ContinuationRenewal.alternating_no_new_configurations (n : Nat) :
+  ContinuationRenewal.alternatingState n = ContinuationRenewal.alternatingState 0 ∨
+    ContinuationRenewal.alternatingState n = ContinuationRenewal.alternatingState 1
+ContinuationRenewal.alternating_every_configuration_score_bounded (score : Bool → Nat) :
+  ∃ bound, ∀ (n : Nat), score (ContinuationRenewal.alternatingState n) ≤ bound

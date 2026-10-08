@@ -1,0 +1,11 @@
+'Generative.ExplanatoryHistoryInterfaces.boundary_join_replacement' does not depend on any axioms
+'Generative.ExplanatoryHistoryInterfaces.boundaries_compatible' does not depend on any axioms
+'Generative.ExplanatoryHistoryInterfaces.all_joining_contexts_iff_boundaries' depends on axioms: [propext]
+'Generative.ExplanatoryHistoryInterfaces.local_probes_complete_for_all_contexts' depends on axioms: [propext]
+'Generative.ExplanatoryHistoryInterfaces.every_exact_joining_account_retains_interfaces' depends on axioms: [propext]
+'Generative.ExplanatoryHistoryInterfaces.interface_account_exact' depends on axioms: [propext]
+'Generative.ExplanatoryHistoryInterfaces.interface_account_reduced' depends on axioms: [propext]
+'Generative.ExplanatoryHistoryInterfaces.different_histories_same_required_interface' depends on axioms: [propext]
+'Generative.ExplanatoryHistoryInterfaces.all_exact_accounts_factor_through_interfaces' depends on axioms: [propext]
+'Generative.ExplanatoryHistoryInterfaces.history_account_exact' does not depend on any axioms
+'Generative.ExplanatoryHistoryInterfaces.history_account_need_not_be_reduced' depends on axioms: [propext]

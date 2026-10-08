@@ -1,5 +1,7 @@
 # Meta attractors within generative activity
 
+**Formation and reconciliation, 8 October 2026:** [Common organization, differentiated regulation and continuing revision](COMMON-ORGANIZATION.md) now joins native formation to acquired updater choice and further revision in one paid history, and corrects the older mathematical shortcuts. The new package has 41 theorems / 89 audits plus 112 inherited theorem audits. Existing recurrence and inquiry results below retain their original scopes; the new joined model has no new asymptotic-attraction claim.
+
 **Correction-bearing succession joined, 8 October 2026.** [The alignment continuation](../shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md#4-selection-must-fund-actual-succession) adds a concrete corrective installation that refines the existing market law with an explicit migration fee. Twenty-three new Lean theorems in the 59-theorem package retain actual command execution, claims, receipts, parts and bounded competitive admission. / 新连接完成指定纠正载体的条件性接续，不冒充所有市场参与者的微观重建、任意俘获免疫或已完成实测对应。旧元吸引子结果保持原范围。
 
 8 October 2026. Ren selected the following [working definition](../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md), first proposed by the assistant:

@@ -4,7 +4,7 @@
 
 `branching-target-uniqueness` · **recorded-checked** · theorem · F01
 
-记录源 / Editable record: [branching-target-uniqueness.json](branching-target-uniqueness.json) · [登记表 / Register](../RESULT-REGISTER.md)
+记录源 / Editable record: [branching-target-uniqueness.json](branching-target-uniqueness.json) · [登记表 / Register](../../../../RESULTS.md)
 
 Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 

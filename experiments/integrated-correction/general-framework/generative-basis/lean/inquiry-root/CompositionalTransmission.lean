@@ -135,7 +135,7 @@ theorem sending_preserves_equal_interfaces (e : Expr) (x y : Exchange)
   unfold SameInterface send
   rw [hr,answer]
   split
-  · exact ⟨rfl,hi,hs⟩
+  · exact ⟨hr,hi,hs⟩
   · split
     · cases respond y.sender e with
       | none => exact ⟨rfl,hi,hs⟩
@@ -177,7 +177,7 @@ theorem every_cohort_reconstructs_the_transmitted_operation (p : Program)
     (routes : p.route ∈ generatedRoutes 2) (distinct : p.first ≠ p.second) (n : Nat) :
     (cohort p n).installed = some p ∧ 7 ≤ (cohort p n).support := by
   induction n with
-  | zero => exact ⟨rfl,by decide⟩
+  | zero => exact ⟨rfl,by change 7 ≤ 7; omega⟩
   | succ n ih => exact reconstructed_successor_retains_operation _ p ih.1 routes distinct ih.2
 
 theorem every_cohort_retains_all_expression_correspondence (c : Code)
@@ -246,5 +246,30 @@ theorem task_distinction_loss_can_recur_in_every_cohort (n : Nat) :
 
 theorem successful_reconstruction_can_teach_a_later_participant :
     (successor (learn (develop (prepared 25 4)) 25 8)).installed = some (programFor usual) := by decide
+
+theorem duplicate_reconstructs_after_actual_transmission (t : Frame)
+    (installed : t.installed = some duplicated) (enough : 7 ≤ t.support) :
+    (successor t).installed = some duplicated ∧ 7 ≤ (successor t).support := by
+  unfold successor
+  rw [learning_uses_sender_interface t duplicated installed 25 8 basic]
+  unfold learn
+  rw [basic_lesson_reads_program duplicated t.support (by decide) enough]
+  decide
+
+def limitedCohort : Nat → Frame
+  | 0 => source (programFor collapsed) 7
+  | n+1 => successor (limitedCohort n)
+
+theorem initial_limitation_can_change_and_then_stabilize_operation (n : Nat) :
+    (limitedCohort (n+1)).installed = some duplicated ∧
+    7 ≤ (limitedCohort (n+1)).support := by
+  induction n with
+  | zero => decide
+  | succ n ih => exact duplicate_reconstructs_after_actual_transmission _ ih.1 ih.2
+
+theorem stabilized_change_can_fail_the_original_task (n : Nat) :
+    (limitedCohort (n+1)).installed = some duplicated ∧
+    operate duplicated novel ≠ eval collapsed novel := by
+  exact ⟨(initial_limitation_can_change_and_then_stabilize_operation n).1,by decide⟩
 
 end Generative.CompositionalTransmission

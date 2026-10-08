@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "wisdom-root-session",
+  "title": {
+    "zh": "慧根会话的构成与形成目标",
+    "en": "Constitution and formation of wisdom"
+  },
+  "scope_type": "authorized-session",
+  "scope": {
+    "zh": "Ren 明确授权的慧根研究会话及接续；不是目录维护任务。",
+    "en": "Ren’s explicitly authorized wisdom-root inquiry and its continuations; not a requirement for catalogue maintenance."
+  },
+  "objective": {
+    "zh": "说明核心作为智慧之根的必要关系与实际生成。",
+    "en": "Explain the necessary relations and actual formation involved in the core as the root of wisdom."
+  },
+  "premises": {
+    "zh": "理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。",
+    "en": "Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission."
+  },
+  "completion": {
+    "zh": "完整目标状态以开放成果记录为准；有限智慧、判断和风险成果直接复用。",
+    "en": "The open result record states the full target; reuse existing bounded wisdom, judgment and risk results."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+  ],
+  "result_ids": [
+    "wisdom-root"
+  ]
+}

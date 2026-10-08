@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Owned documents, proof/output bindings and paired M24 row only",
-  "local_links": 129,
+  "local_links": 163,
   "theorems": 47,
   "audits": 65,
   "carrier_theorems": 40,
@@ -20,10 +20,11 @@
   "exploratory_network_cases": 1024,
   "numerical_cases": 2734,
   "owned_documents": {
-    "theories/meta-attractor/GENERATIVE-REGIMES.md": "004cb9d6e1c3e08433dd29c81851560b113aef703c38838b8a2570e2d98e8fc6",
-    "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md": "558214b028de02b5631d8a498903f77651a09d12e196df1977c2002e3af01f29",
-    "experiments/market-generativity/meta-attractor/README.md": "baec86075efa5d5f80af27f9873a32fe18a3fefa381286b497bd26d6c06dac28",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md": "ba78996c49f130cc66d263d30caa044d924acde446628b04b164efcaa3e16761",
+    "theories/meta-attractor/GENERATIVE-REGIMES.md": "d2a6c19c0e4817467351d4c057d8c5ddea92674ec0dd8000598afaf597d94544",
+    "theories/meta-attractor/COMMON-ORGANIZATION.md": "2d76c4fd0d31c39d9cbbb69ef494944f0626bb819e417cc925ad3f52991dffae",
+    "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md": "0618901f07d6e68f918607cf0a6e148af506d2766e3705d084b5de120aa0eb52",
+    "experiments/market-generativity/meta-attractor/README.md": "de566d732e400a95fa2e9c765fd7ff2a6b1bbc280d9446f7fd88d38c705d75b2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md": "1c6f3c8e3202a7f7bb5c0fdf2c78fc0317ad0ae5f11012deb21792fcc6bb9e68",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md": "8842da07cb0b8e2ac1dc13d4e7e1fd41acdc9396f1b267b360b77280e8557729",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md": "6558ccfb2046b74e0924684c2cd66cd793cdf957f7e8ba5e5e6914eb525eba0d",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md": "b8bcac825d6b19c6aeee76f7be1f481986799223464128a6899e86c3eaf24408",
@@ -31,7 +32,8 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md": "231cbc4bdba1f2f621edb696dafe718d6ac4afc8f55d7e43e66f1bb35fa882a8",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md": "a7541ec304b4360eb71711c7c067c2c4b5df19106742ee48601c26dc43524639",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md": "403b6595907868ac22f50f8a59174c97d3870169ce8f08d8fb180d134856389b",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md": "8df73a10b9b1fbe0384794b2c334b2e322ba43419c97e2268ff64bce7904069d"
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md": "8df73a10b9b1fbe0384794b2c334b2e322ba43419c97e2268ff64bce7904069d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md": "43163bd3af90b8f7b6693d8aaaf454a5f56e4d4b5b83281a5dddf30c09a069c9"
   },
   "source_bindings": {
     "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
@@ -88,13 +90,9 @@
     "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
     "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
-    "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
-    "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
     "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
   ],
-  "checker_sha256": "47e5ba20e81d51d067aaf4ab15d11e7af5e62e05018f16d8e0ddacd9e9c6b7a9"
+  "checker_sha256": "bc59b5c81de1d23a915fb893d092f5a8e25c7d1ee1709bc3f27fcbcd610eaece"
 }

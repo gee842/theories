@@ -2,6 +2,10 @@
 
 2026-10-08，Asia/Bangkok。研究方向：Yongxu Ren；论述与形式化：AI 撰写。[Ren 的原话](../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md)授权研究，而非宣布普遍唯一性成立。
 
+**纠正后的正面推进：同一接合活动能迫出共同结构，不必抹去不同历史。** 新增38项 Lean 定理／166项含继承审计通过。检验由原接合规律形成；每份精确说明都保留影响接续的区别，并有共同因子，不要求说明自身最小。固定片段接合结果唯一时，该共同内容带有唯一对应的操作结构；任意原过程的实际有限历史给出对应，原过程仍可分支。§84–89说明前提与剩余普遍推论。[论证、反审及实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md)。新20空、18标准，无新增经典选择依赖。 / **Positive continuation:** generated joining questions force common operational content while distinct histories remain distinct; universal correspondence remains open.
+
+**方法与停止判断已纠正：原反例不能充当共同生成基础的失败证据。** Ren 指出二元预设后，复查确认先给定位置与关系、再要求两个完整模型逐点同构，并未对准生成关系的共同必要性。旧定理保持模型论范围；撤回把它当作原目标已“hit a wall”的判断，不再把全局双射强加为必要门槛。见[§83](#83-非二元纠正不能把表示的边界当成生成根基的边界)；本次没有新增定理。 / **Method correction:** preserve the formal counterexample, withdraw the stopping judgment for common-foundation uniqueness, and investigate constituted distinctions within one unfolding.
+
 **普遍唯一性的一条强化路线已遇到证明级反例。** 新增33项 Lean 定理：全部有限一阶关系真值一致，甚至存在保留所有有限参数公式的同一个映射，仍不保证原生结构同构。两边都从根生成且具有接合；Cantor 对角线排除任何双射。正面修复是“真值保持＋覆盖整个范围 ⇒ 同构”，覆盖性不能从前者推出。§77–82明确这不是对所有生成基础的否定。完整180项审计，113空、67标准；新2空、31标准。[论证、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md)。 / **A proved wall:** complete finitary relational truth does not determine native isomorphism; global coverage remains a separate premise.
 
 **变化中的共同方案已接通：证书保持有精确条件，持续可完成仍不保证实际完成。** 新增42项 Lean 定理／211项含继承审计通过。形成、撤去、占用与释放接入同一原生规律；每个允许前缀后都有完成后缀。可用清单不变而占用改变使证书失效，实际释放／形成可以恢复或建立准备；无限无关活动保留准备却永不推进目标。§71–76明确连续准备、最终实现及原子执行的范围。新6空、36标准依赖，完整119空、92标准。[论证、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md)。 / **Changing support:** exact preservation guards, same-law completion and an infinite readiness-without-progress witness; universal uniqueness remains open.
@@ -726,3 +730,103 @@ Lean 已检查充要式：在上述真值保持前提下，该映射是同构，
 本轮33项新定理、180项含继承审计全部通过；新2项空依赖，31项含标准依赖，其中13项含经典选择。没有自定公理或证明缺口，不等于没有逻辑基础或模型前提。无限集合的一阶理论与 Cantor 对角线是已有数学，本轮是明确连接与 Lean 实查，[整合文件](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md)记录来源、对应及反审。
 
 **English current summary.** All finite first-order identity/step/joint truths, including whole-domain quantifiers and coherent preservation of every finite source parameter tuple, can agree between wholly root-reachable nonisomorphic models. Surjective elementary maps do give isomorphisms, but Cantor excludes coverage in the explicit pair. This blocks that route to native uniqueness; it neither disproves a shared necessary generative foundation nor establishes unrestricted explanatory adequacy.
+
+## 83. 非二元纠正：不能把表示的边界当成生成根基的边界
+
+Ren 指出本轮可能再次陷入二元预设与外加叙事。复查确认：我把“任何充分解释是否都绕不开生成关系”改成了“两个完整模型能否逐点同构”。前者的共同必要基础未必要求后者的全部实现相同；我尚未证明这个门槛相关，却据它宣告本轮已走到墙。这一停止判断撤回，§82作为前一轮历史判断保留，当前范围以本节为准。
+
+具体形式化先给定集合 X，以不相等定义步骤，以两两不相等定义接合，再给定语言和解释函数。它可以合法回答局部模型论问题，但没有解释位置、身份区别、接合条件和解释活动怎样在同一生成中形成。从根一步可达只证明给定图上的可达性，不能仅凭命名就成为构成性生成的证明。把它称为“同一关系整体”，也不能补回这些关系。
+
+分析时使用不同类型本身不等于宣称两个存在领域；局部给定的规律也不等于处在现实之外。这里的错误是，没有论证这套分解对原问题充分，就用其恢复失败安排整个根基研究的停止点。数学工具的文化来源不能决定其真假，原先33项 Lean 定理和真实的基数差异均保留。
+
+研究应回到同一生成中活动怎样形成并改变继续条件，怎样分化出位置、保留区别、形成记录、进行解释并接受纠正。需要检验的是：对于同一个已明确的形成与接续现象，不同的充分说明是否都必须保留某些构成关系，以及这种共同结构在什么对应下唯一。对应方式需要由解释任务论证，不能预先等同于完整位置集合的双射，也不能把“充分”直接定义为已保留生成结构。
+
+已有知行接续机制可以复用作具体对应，不能重新计作成果。解释本身在生成中形成，也不独自证明被解释的一切必有同一生成本性，更不证明当前表述独一无二；错误解释同样会形成。下一步要检验的是这些尚未证明的连接，而不是把非二元变成免于反例的宣言。[完整复查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment)记录旧证明的有效范围与目标恢复。
+
+**English current correction.** The counterexample separates elementary equivalence from isomorphism; it does not establish a wall for an unavoidable common generative basis. Supplied positions, inequality-defined edges and an interpretation function do not explain the constitution of distinctions or inquiry. Preserve the theorem while withdrawing its use as a stopping judgment. The investigation returns to necessary relations across adequate accounts of the same formation and continuation, without equating nonduality with proved universality.
+
+## 84. 把检验放回同一接合活动
+
+本轮按 Ren 的纠正继续：比较同一形成与接续的不同说明，不再拿所有完整模型是否同构代替共同基础问题。前面固定问题集的唯一性和局部边界恢复均已完成，直接复用。
+
+现在由同一个接合关系形成检验：先留一个待比较的位置，再把已有片段接到它的左侧或右侧，继续形成更大的安排。一个安排能实现，必须有原接合关系中的逐步见证；每个中间结果确实进入后续接合。没有另加一个研究者选定的成功谓词，也没有在过程之外增设观察者。
+
+Lean 已证明，内外安排相接的实现，恰好等于先实现内层、再从其同一结果实现外层。这里说的是给定规律下的可实现性，不冒称所有检验都已经被实际取得或执行。片段与规律的实际根据仍要说明，不能靠改名为“内在”就算完成。
+
+## 85. 不同说明为什么不能混淆某些区别
+
+如果某个由接合形成的安排能与甲实现，却不能与乙实现，任何准确回答这些安排的说明都必须区分甲乙。这一必要性来自具体接合的不同后果，未预先要求说明保持一个另给的结构映射。
+
+Lean 已证明，即使说明保留额外细节、不满足最小性，它也有一个唯一对应到共同情境内容的因子；共同内容的全部已用情形都由这些同一活动产生。此处不需要两个世界的完整位置集合之间有双射，也不要求额外代码都被使用。
+
+这仍须明确说明承诺：所证是准确回答这一接续范围所必需的内容，不是把所有哲学上的充分解释定义成这类回答。一个只承诺较窄范围的说明，应按自己的真实承诺评估。
+
+## 86. 共同内容还能迫出操作结构
+
+两片段如果在全部有限接合情境中可以互换，它们与固定搭配的可接合性相同。若一个固定片段对接合至多得到一个结果，Lean 还证明替换后的结果继续保持情境等价。
+
+更强地，情境等价恰好是该范围内最大的接合相容关系：任何能在左右接合中持续对应结果的关系，都保留全部情境；在上述唯一结果条件下，情境等价自身也满足这种持续对应。这里不以一张独立答案表作起点。
+
+由真实接合见证在说明代码上导出的操作，其定义域准确保留原可接合性；对精确且已约去无关区别的说明，操作结果唯一。两份这样的说明之间，原有同一活动对应会自动保留这个操作。普通说明可以更丰富，最小性仅用于识别这个共同因子的代码，不作为所有说明的门槛。
+
+## 87. 从一般定理接回同一过程的实际历史
+
+复用原过程中有路径见证的有限历史：开始条件、事件序列和结束条件都属于同一条已承认的历史。两段历史只在实际边界一致时接续，所有中间步骤仍遵循同一规律。
+
+本轮证明：两段这样的历史在全部有限嵌套接合安排中等价，当且仅当开始和结束接口相同。前面的局部空历史探测因此对这个完整接合问题族已经充分；其充分性经过证明，不由“局部探测应该够用”预设。
+
+原过程允许有不同分支。确定的是两个已经固定的历史怎样接成一个更长历史，不是现实未来只有一种走向。已有局部单位结果说明接口角色如何从接合恢复，本轮没有再把它们当作新发现；也未宣称由此推出原过程规律的终极来源。
+
+## 88. 不同历史可以共同保留同一个必要接口
+
+Lean 给出了两种精确说明：一种保留完整历史，一种仅保留开始与结束接口。对接合可能性，两者都准确；完整历史说明可以保留更多真实区别，因而不必最小。
+
+继承的循环过程里，发生不同事件的两段历史确实不同，却在所有接合安排中等价。新证明同时保留这两件事，并证明完整历史说明不满足最小性。这是不同说明共有必要结构的正例，不再被当作生成基础唯一性失败。
+
+如果任务还要求解释内部发生了什么，只有接口的说明便没有承担那个更丰富的范围。如果原状态遗漏了会改变继续的作用，接口定理也只适用于原表示，不能据此抹去遗漏作用。差异是否可以约去，由所解释的具体关系决定。
+
+## 89. 对共同必要基础推进到哪里
+
+现在有一条明示条件下的正面推导：同一接合活动产生检验；检验的真实差异迫使说明保留区别；这些区别在适当条件下组成共同操作结构。每份说明不必相同，也不必最小，而共同的必要内容能够严格比较。
+
+本轮38项新定理全部通过 Lean，另128项继承审计保持原范围；完整166项为125空、41标准，新20空、18标准，无新增经典选择依赖。没有自定公理或证明缺口，不等于没有规律、范围和对应前提。情境等价与语法同余是已有数学方法，本轮贡献在于新的接合推导与实际历史对应。
+
+尚未证明的是：任意所关心的形成现象及其同样充分的不同解释，都必然满足怎样的共同接合对应。需要正面论证解释承诺为何涵盖相关构成关系，并检验保持同一现象的对手；不能先把“充分”定义成接受我们的 core。这是接下来要推进的普遍连接，不是本轮发现了它不可能的反例。[整合记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md)分列前提、反审及已完成的复用结果。
+
+**English current summary.** Joining activity generates its own continuation questions. Exact accounts must retain differences that alter these possibilities, even when those accounts retain additional history. Functional fragment composition yields a common partial operation with unique correspondence on reduced accounts. For admitted histories of any supplied process, local boundary probes are complete for all nested joining contexts, while different event histories can remain distinct. The universal explanatory correspondence remains an open positive investigation, not a newly established impossibility.
+
+## 90. 共同结构不必只有一个接合结果
+
+继续取消一个局部限制：同一对片段的接合，现在可以有多个真正可区分的结果。检验仍由同一接合关系产生，但不只问一条路径能否完成，还问一个接合结果是否同时保留几种后续可能性。这里的“同时保留”不等于这些活动能够同时执行。
+
+Lean 已将原有有限分支恢复定理接到左右接合：若每对片段的可能结果有限，对全部有限分支问题的回答相同，就能逐步匹配接合及其结果。两边的片段都可以替换，结果仍有对应。没有预设每份说明自身必须保存结构映射，也不要求原生片段由问题完全分离。
+
+这是新的范围：删除唯一结果条件，同时明示有限结果条件，并丰富检验族。旧的单孔情境定理保留，不把这种变化说成没有代价的单纯加强。一般片段集和检验族仍可无限，有限的是每对输入的直接结果集合。
+
+## 91. 多结果的共同内容与唯一对应
+
+由真实接合在说明代码上导出一个多结果关系。新证明保证：只要代码关系允许某个结果类，原来指定的那一对片段就确实能产生该结果类中的某个结果。不能只靠偷偷更换代表片段才使接合成立。
+
+对精确且约去无关区别的说明，这个共同关系在已用代码上具有唯一的同片段对齐对应。它保留全部可能结果类，不挑选一个“正确未来”。一般精确说明仍可保留更多区别，只需拥有这个共同因子；最小性没有进入所有充分说明的定义。
+
+同一有限接合规律的实查例子确认：一对输入产生左支或右支，两结果可由继续接合区分。任何精确说明都必须区分它们，最小的共同表示也仍是多结果的。因此这里的共同结构唯一性，可以与实际分支并存。
+
+## 92. 检验及多步接合一起进入共同表示
+
+不把检验所用的伙伴留在共同表示之外：新定理将每个伙伴通过同一个编码转换，在导出的接合关系内部重新解释问题，所有有限分支问题的答案保持不变。这包括嵌套的接续、合取和否定；语义否定并不自动成为实际取得的反面证据。
+
+另一项新定理处理任意有限二叉接合树。叶子固定为原来指定的片段；如果编码后的树可以实现，就能在原接合中实现这同一棵树，并得到相同结果代码。中间层不能通过混用不同代表，凭空制造原来不存在的接续。
+
+树形关系实现不等于同一物理资源可以重复使用，也没有证明共享节点、循环结构、概率或实际执行调度。这些额外关系必须在相应的完整任务中保留；已有共同实现研究继续按其范围复用。
+
+## 93. 本轮推进的普遍推论及下一连接
+
+如果一份说明承诺解释某种活动怎样形成并保留后续可能性，那么把“一个结果仍有两种可能”误作“两个互不相容的结果各有一种可能”，会改变它承诺解释的现象。这个必要区别有具体关系根据，不以预设独立主体和外界为起点。另一种语言或整体约束描述可以充分，只要它真实保留这些内容。
+
+现在已经接通同一接合的不同说明、多个结果、检验的共同编码和有限树形实现。尚未完成的普遍连接更明确了：不同说明可能从同一展开中取得不同分节，未必预先共用片段集及伙伴对齐；需要从它们真实保留的形成关系推导共同细化或互译。这里不把这一未完成连接报告为不可能性，也不将“充分”先定义成接受现有 core。
+
+## 94. 新证明的准确范围
+
+本轮26项新 Lean 声明全部通过，另197项继承审计；完整223项为166空依赖、57标准依赖。新声明中6空、20标准，8项继承了经典选择依赖。没有自定公理或证明缺口，不等于零逻辑依赖或零模型前提。一般分支恢复是已知并已在仓库完成的数学，本轮贡献是接合对应、检验转换及有限树形接续。[既有研究中的新增整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#9-multivalued-continuation-exact-delta-and-result-identities)保存反审、结果身份和冻结回执。
+
+**English continuation.** A finite-outcome joining law may remain genuinely multivalued. Exact answers to its richer branch questions force joining-compatible distinctions; minimal accounts share a relation of all possible outcome classes. The same encoding translates the partners inside questions and lifts any finite joining tree from its originally specified leaves. No native identity, probability, resource duplication or universal explanatory scope follows. The next universal connection concerns independently adequate articulations of the same formation when a common fragment set and alignment are not already given.

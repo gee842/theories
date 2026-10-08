@@ -470,3 +470,148 @@ Author counterreview:
 **Next substantive connection:** obtain and renew the relevant response description and its calibration when the law itself changes or a previously omitted consequence becomes relevant, under the actual costs and authority of testing. The general model-revision and warranted-acquisition mechanisms are completed inputs; the unclosed join is their specific use to distinguish calibration error, changed response and missing relationships without giving the learner that diagnosis in advance. These are further explanatory and correspondence obligations, not evidence that all action or generativity must stop. Full biological validation and a universal ethical convergence claim remain unestablished.
 
 The [owned edit record](ACTION-AWARE-TRACKING-INDEX-EDITS.json) and [documentary checks](ACTION-AWARE-TRACKING-CHECKS.json) preserve preceding text and concurrent work. This is author counterreview and actual formal checking, not independent-agent acceptance or a new empirical experiment.
+
+## 32. Connect completed diagnosis to the revised predictor
+
+**完成这次具体连接，也纠正上一轮的范围表述。** The [model-revision cycle](MODEL-REVISION-INTEGRATION.md) already completed discrepancy detection, constructing alternatives from a supplied grammar, comparative testing, testing beyond candidate agreement, bounded return to use and reopening after changed conditions. The [evidence-qualified correction](EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md), [fallible inspection](FALLIBLE-INSPECTION-INTEGRATION.md) and [temporal inspection](TEMPORAL-INSPECTION-INTEGRATION.md) accounts likewise retain their completed scopes. “Diagnosis and revision remain unfinished” would wrongly reopen these results. The narrower connection left by §31 was from acquired diagnostic quantities to the continuous predictor and its recovery guarantee.
+
+The new [DiagnosticTracking formalization](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean) closes that local connection. It instantiates the established investigative pattern in a scalar calibration family; it does not import the Boolean `ModelRevision` mechanism or assert that its physical interface is identical. Its checked imports are `ActionAwareTracking` and, through that module, `SituatedTracking`. The mathematical join is actual; the broader interpretive reuse is an explanatory correspondence with its own conditions.
+
+Within one changing activity, some operations vary an intervention and an accessible setting, effects persist as readings, and retained differences guide prediction. Represent those variations by u and z. A supported calibration episode has a warranted common reference, coded zero, and readout relation
+
+\[
+Y(u,z)=b+g u+k z+h u z.
+\]
+
+The distinction between response and readout is licensed here by specified calibration and continuation relations within that same process. This projection preserves controlled changes, condition interaction and recording offset. It omits the material formation of the apparatus, richer dynamics, authority to intervene and effects on other lives. The bilinear vocabulary, accessible controls, fidelity bounds, common reference and transfer conditions are explicit premises, not discoveries made by writing the equation.
+
+For the normative programme, the transition advanced is **acquired revision of consequence descriptions → more reliable factual grounds for practical judgment and goal reconsideration**. G0 and the completed practical commitments retain their declared normative roles. Predictive recovery does not supply the acceptable risk increase requested earlier.
+
+## 33. Same discrepancy, discriminating records, a newly included interaction
+
+At u=z=1, an offset change, a response change and an omitted setting dependence can produce the same output 2 instead of the old expectation 1. In the respective parameter cases (b,g,k,h)=(1,1,0,0), (0,2,0,0) and (0,1,1,0), the three readings at (0,0), (1,0), (0,1) instead produce (1,2,1), (0,2,0), (0,1,1). Lean checks these distinct records. The repair is computed from readings; no hidden cause label is supplied to the predictor.
+
+Those three probes still miss h u z: it contributes zero at each. The jointly varied probe (1,1) exposes the discrepancy h. Writing y₀₀, y₁₀, y₀₁, y₁₁ for the four acquired readings, the expanded description uses
+
+\[
+\widehat b=y_{00},\quad \widehat g=y_{10}-y_{00},\quad
+\widehat k=y_{01}-y_{00},\quad
+\widehat h=y_{11}-y_{10}-y_{01}+y_{00}.
+\]
+
+The last quantity is the failed additive prediction's residual. Admitting the joint term turns it into a relation predicting other cases. Lean checks exact recovery for every member of the stated family and the resulting effect prediction at arbitrary real u,z. This is conditional transfer within that family; four observations do not establish the family itself. The available expansion term is supplied, not a proof of unrestricted concept invention.
+
+The fourth reading tests the three-reading additive account. Once used to fit the added interaction, it is no longer independent validation of the expanded account. A checked counterexample adds c u(u−1): none of the four calibration readings changes, but the output at (2,0) changes by 2c. An obtainable, appropriate further probe can expose this particular omission. Its algebraic availability does not establish physical access or permission.
+
+The records also do not uniquely locate every physical fault. A checked identity combines a reference offset and a readout offset into the same observed intercept at every u,z. Without a separately warranted reference they remain confounded. A changed fitted gain could likewise require a richer recording-pathway account. Distinguishing three stipulated alternatives is not identifying all actual causes. A shared usable prediction can still support action while causal location remains unsettled, as the existing correction account explains.
+
+## 34. Carry acquired uncertainty into the update
+
+If the four absolute reading errors are bounded by η₀₀, η₁₀, η₀₁ and η₁₁, Lean checks
+
+\[
+\begin{aligned}
+|\widehat b-b|&\le\eta_{00},&
+|\widehat g-g|&\le\eta_{10}+\eta_{00},\\
+|\widehat k-k|&\le\eta_{01}+\eta_{00},&
+|\widehat h-h|&\le\eta_{11}+\eta_{10}+\eta_{01}+\eta_{00}.
+\end{aligned}
+\]
+
+No independence or error cancellation is presumed. The shared baseline error occurs in several quantities; these conservative bounds do not treat the same recording pathway as independent confirmation. They are deterministic bounds, not statistical confidence levels estimated from four samples.
+
+Suppose the later raw reading R satisfies |R−(r+b)|≤ν and the next condition satisfies r′=r+gu+kz+huz+d, with |d|≤D. Install R−b̂ as the corrected reading and p=ĝu+k̂z+ĥuz as the predicted increment. Lean checks the predictor's residual bound
+
+\[
+\begin{aligned}
+W\le{}&(1-q)(\nu+\eta_{00})
+ +(\eta_{10}+\eta_{00})|u| +(\eta_{01}+\eta_{00})|z|\\
+ &+(\eta_{11}+\eta_{10}+\eta_{01}+\eta_{00})|uz|+D,
+\end{aligned}
+\]
+
+and the actual tracking step eₜ₊₁≤q eₜ+Wₜ. This is the diagnostic-to-predictor connection. Stronger joint intervention amplifies uncertainty through |uz|; improved prediction does not itself authorize that intervention.
+
+This displayed calibration-to-use theorem requires the same b,g,k,h during calibration and use. A separate checked drift lemma transfers an old precision bound to a current one when an actual drift bound is supplied; the corrected-reading and effect lemmas accept current parameter bounds. The lemma does not acquire its own drift bound. A detected regime change requires recalibration or independently supported transfer, not automatic reuse of old evidence.
+
+The inherited retained-radius result applies wherever these residual bounds and its initial bound hold. An invalid earlier radius is not retroactively repaired. A restarted certificate needs a warranted current initial bound; historical records and discovered errors remain preserved.
+
+## 35. Recovery after an earlier failure
+
+**过去有限阶段的误判，不必阻止之后继续收敛。** For any finite N, the update may have arbitrary finite errors before N. If from N onward the corrected reading equals the current condition and the predicted increment equals its actual next change, the prediction error tends to zero for 0≤q<1. A further checked theorem obtains that premise from the four exact calibration readings and installed corrections in the supplied bilinear continuation. It does not replace the old estimate with the hidden true state; the update contracts away retained error.
+
+Exact repair is an ideal witness. If the repaired recurrence instead has Wₜ≤(1−q)B after N, with B≥0, a new tail theorem proves that error eventually stays below B+ε for every ε>0. Persistent nonzero uncertainty gives no promise of convergence to zero. The inherited vanishing-input theorem covers a vanishing actual residual; accessible vanishing bounds also support a converging retained radius under its own initial-condition premise.
+
+Asymptotic results require continued implementation. Four probes do not establish indefinite support, permanent stability or a recovery deadline. No theorem requires restoring an erased distinction between earlier histories: future informative events and a warranted new description can supply the relation needed for what follows. Failure of one calibration does not imply stopping all unrelated generative activity.
+
+## 36. Primary comparison and author counterreview
+
+**NIST/SEMATECH, [Two-level full factorial designs](https://www.itl.nist.gov/div898/handbook/pri/section3/pri3331.htm).** The full short page was inspected on 8 October 2026, including its design/analysis matrices and main-effect and interaction discussion. Testing combinations and representing interactions are established experimental-design techniques. Our four-corner algebra uses 0/1 coding; it does not inherit statistical independence or the page's orthogonality discussion for −1/+1 coding. The contribution is the connection to acquired prediction and checked recovery, not invention of factorial design. No external source bytes or experimental observations were imported.
+
+| Challenge | Finding and retained scope |
+|---|---|
+| The prior answer reopened a completed generic diagnosis frontier. | Corrected. General revision and inspection remain completed inputs; this round closes their specific scalar predictive connection. |
+| One residual identifies its cause. | Three equal-output alternatives refute that inference; discriminating evidence is required within the family. |
+| Four passing readings certify completeness. | The curvature counterexample refutes this. Fitting records do not establish the family or extrapolation. |
+| The predictor receives true coefficients. | It receives functions of acquired readings. True coefficients occur in correspondence hypotheses used to prove those functions' accuracy. |
+| A fitted offset identifies a physical readout fault. | Reference and recording offsets can remain observationally confounded. |
+| Greater precision authorizes stronger action. | The bound retains amplitude effects; permission and whole-loss appraisal remain substantive requirements. |
+| Repair makes previous confidence sound. | An old invalid certificate remains invalid; restarting needs a warranted current error bound. |
+| Noise defeats all recovery. | Exact repair supports zero-error convergence; bounded residual supports eventual containment. Actual correspondence decides which applies. |
+| This completes biological validation. | No new measurements or organism-level validation were supplied. Earlier calibration failures retain their force. |
+
+This is author-conducted counterreview, not independent-agent acceptance. Formal validity does not certify the substantive reference, measurement or application premises.
+
+## 37. Completion, proof audit and the actual boundary
+
+[DiagnosticTracking.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean), its [checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_diagnostic_tracking.py) and [passing receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/diagnostic-tracking-verification.json) retain **17 new theorems / 21 explicit declaration audits**. The two unchanged imports were rebuilt separately: `SituatedTracking` has 15 theorems / 19 audits, `ActionAwareTracking` has 17 theorems / 22 audits. These 32 inherited theorems are not new results. All 62 explicit declarations use only `propext`, `Classical.choice`, `Quot.sound`. Lean 4.30.0-rc2 checked frozen sources against the existing pinned Mathlib revision. Twenty-two artifacts retain sources, checker/helper, signatures, axiom/dependency reports and build logs. The passing run has no warnings, proof holes, custom axioms or native proof shortcuts.
+
+**The named local join is complete:** observable contrasts can revise the response description; acquired parameters and their errors enter the predictor; qualified repair can restore tracking and convergence despite finite earlier error. This does not reopen the general revision cycle with every continuation.
+
+**The application boundary is correspondence and realization.** In a selected material situation, warrant the common reference, informative operations, reading/drift bounds, tests capable of defeating the expanded family, support and authority for inquiry and subsequent action. These are concrete empirical and practical obligations, not a newly proved impossibility of situational awareness or a reason to suspend all grounded activity. Full cell–organ–body–ecosystem validation, complete semantic awareness and inevitable convergence of intelligent goals remain unestablished at their original scopes.
+
+The [owned edit record](DIAGNOSTIC-TRACKING-INDEX-EDITS.json) and [documentary checks](DIAGNOSTIC-TRACKING-CHECKS.json) bind these additions to the proof sources and paired M20 update while preserving earlier text and concurrent work.
+
+## 38. Existing experiments ground the operational account
+
+**Ren 提醒已有大量实验文献可以推进完成；这次核读确认，不能把没有本仓库新做的实验误作没有经验根据。** The [six-study primary-source assessment](SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md) now grounds the operational account in published physical and biological work, with [reading scopes and claim assignments](SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.json). It is a targeted synthesis, not an exhaustive review or a new experiment.
+
+The evidence contributes three different kinds of support. First, enacted acquisition–model revision–action loops demonstrate that the central organization is physically realizable. Second, experimentally manipulated feedback and context discriminate accounts of what changes during learning. Third, observed failures constrain which forms of adaptation count as reliable understanding. These jointly support the proposed mechanism class while leaving the realization of our particular scalar law to application-specific correspondence.
+
+This is the empirical change to §37: **there is already direct experimental support for situated acquisition, revision and useful recovery; acquiring the first such support is no longer a remaining generic task.** Our new formulation reuses conventional system identification, adaptive control and learning science. Their successes are evidence to integrate, not results to recreate under new vocabulary or claim as our discoveries.
+
+## 39. What the experiments require us to revise
+
+The literature prevents three conflations. Useful recovery can occur without identifying every physical cause; the relevant description need only support the justified current question. Observable adaptation can involve different mixtures of memory formation, memory expression and deliberate adjustment; a single performance curve need not identify that mixture. And a stable learned response can still be inappropriate to the actual task. The [source-by-source assessment](SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md#correspondence-to-our-claims) assigns evidence and adverse cases explicitly.
+
+The retained scalar predictor is therefore a local sufficient construction. It is not presented as the discovered universal psychology of intelligent understanding. In particular, an observed finite recovery trajectory does not establish its infinite-time limit, or calibrate all the residual bounds in our theorem. No new mathematical claim is asserted in this literature round, and the existing checked proofs retain their original hypotheses and source versions.
+
+The existing [biological evidence and reanalysis](BIOLOGICAL-RENEWAL-INTEGRATION.md) and [thermal prediction comparison](PREDICTIVE-CALIBRATION-INTEGRATION.md) already provide relevant positive results with actual failures. Credit both. Nothing in the new literature makes earlier interval misses, assay differences or inter-laboratory replication problems disappear.
+
+## 40. Completion at the empirical-support level
+
+**本轮完成了情境学习—修订—恢复这一操作性说明的文献实证奠基。** The connected account can now cite published interventions and physical performance, alongside formal sufficient conditions and substantive counterexamples. It need not wait for a newly commissioned all-scale experiment before having empirical standing. This conclusion concerns the existence and operation of these capacities under studied conditions, not their inevitable occurrence in every intelligence.
+
+Complementary experiments can support different connections in a general theory. They do not have to share one organism, instrument or cohort to be relevant. The [single-preparation biological protocol](BIOLOGICAL-JOINT-VALIDATION.md) is a stronger target for joined quantitative prediction and transport, not a universal admission rule for evidence. That separately requested full joint validation remains unfinished; no fictitious cross-paper trajectory has been created to finish it.
+
+The contribution to goal revision is better grounded knowledge of what an activity changes and how the currently used interpretation can fail or recover. Ethical appraisal, legitimate authority and a case's acceptable added risk remain governed by the explicit normative route and actual consequences. Empirical learning success does not silently provide a new moral axiom or establish convergence on one goal.
+
+This round adds **six assessed primary studies, no new Lean theorem and no new laboratory experiment or raw-data reanalysis**. [Owned edits](SITUATED-EXPERIMENTAL-EVIDENCE-INDEX-EDITS.json) and [documentary checks](SITUATED-EXPERIMENTAL-EVIDENCE-CHECKS.json) preserve prior results and concurrent changes. The next study should address a named application, genuine conflicting observation or still-unmet substantive claim; it should not reopen this completed evidence synthesis as a generic lack of experiments.
+
+## 41. Public records now test a specific correspondence
+
+**Ren 指明数据和研究已公开，继续直接复用；这一轮实际取得并分析了全部16位恢复实验参与者的数据。** The [retained analysis](../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md) moves beyond the preceding literature synthesis. All 16 original MAT files match deposited hashes. They contain 5,440 trial records and 2,656 measured channel responses; 800 later observations are reserved for forecast evaluation. This is a secondary analysis, not new laboratory execution.
+
+Result: `situated-recovery-empirical-correspondence`, F04. Reused results: the conditional tracking/diagnostic constructions (§§20–37) and the completed experimental mechanism synthesis (§§38–40). Delta: actual participant-level measurement correspondence, finite retention and out-of-fit prediction. Supplied correspondence: the authors' experimental schedule, reference-force definition and derived adaptation measurement. Evidence: preserved original bytes, checked projections, participant-level uncertainty and future-trial forecast errors. Boundary: no direct observation of hidden memory, full understanding or the formal observer's true error; no new theorem. This is a new empirical correspondence for the existing account, not a new discovery of contextual inference.
+
+Baseline-corrected final-50-trial mean response is 0.09759 in spontaneous recovery and 0.20958 in evoked recovery, with participant-bootstrap intervals [0.01103, 0.18495] and [0.12279, 0.28460]. Positive individual means occur in 6/8 and 7/8 respectively. The between-group difference is 0.11198, interval [-0.01126, 0.23160], exact permutation p=0.10862. These facts support finite mean retention and heterogeneity, not a robust late-stage group difference from this analysis.
+
+The forecast comparison is also mixed. Spontaneous-recovery mean held-out RMSE is lowest for zero-level decay (0.10589); evoked recovery is lowest for a constant calibration mean (0.10519). A free-level relaxation model improves over zero-level decay for 6/8 evoked participants but not universally. Its unstable near-unit fits remain visible; a clearly post hoc nonnegative-level sensitivity still does not displace the constant model's lower mean evoked error. Richer descriptions must earn predictive support at the relevant scope.
+
+## 42. The measured quantity determines the convergence claim
+
+**这里测得的是施力补偿反应；它不是“理解程度”，也不是 Lean 追踪定理中的真实误差。** A zero response can coexist with retained learning; later responses can change through both memory updating and altered expression. The published contextual account offers an explanation, while our limited curve comparison alone does not uniquely identify it. Hand movement, perturbation, feedback and retained effects are connected aspects of one experimental history, not independent ontological domains.
+
+This resolves a concrete application issue by making the correspondence explicit rather than fitting any convenient series to a familiar equation. Descriptive forecasts now face actual later observations. The original sufficient observer proof remains valid, but its hidden target and bounded residual cannot be declared measured through this adaptation coefficient. Finite response persistence, accurate finite prediction and a mathematical infinite-time limit are different assertions about this activity.
+
+The [data counterreview](SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md#public-data-counterreview) preserves source-processing discrepancies, prior knowledge of published results, between-person sampling and failed model superiority. The targeted data analysis is complete, and public-data access is no longer a missing premise for it. The stronger biological joint and open-ended goal-formation claims retain their scope; neither is recast as a demand that Ren commission a new experiment.

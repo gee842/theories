@@ -1,0 +1,125 @@
+AcquiredSegmentation.lean:58:24: error: Type mismatch: After simplification, term
+  congrArg (List.cons x) ih
+ has type
+  y :: (ys ++ rest.flatten) = xs
+but is expected to have type
+  xs = []
+AcquiredSegmentation.lean:58:24: error: Type mismatch: After simplification, term
+  congrArg (List.cons x) ih
+ has type
+  y :: (ys ++ rest.flatten) = xs
+but is expected to have type
+  rest✝.flatten = xs
+AcquiredSegmentation.lean:58:24: error: Type mismatch: After simplification, term
+  congrArg (List.cons x) ih
+ has type
+  y :: (ys ++ rest.flatten) = xs
+but is expected to have type
+  (if r x y✝ = true then (x :: y✝ :: ys✝) :: rest✝ else [x] :: (y✝ :: ys✝) :: rest✝).flatten = x :: xs
+AcquiredSegmentation.lean:144:18: error: unsolved goals
+case cons.cons.false.false
+vs : List Bool
+ih :
+  (match
+      match chunks idealBond (List.flatMap word vs) with
+      | [] => [[b]]
+      | [] :: rest => [b] :: rest
+      | (y :: ys) :: rest =>
+        if (b == a) = true ∧ (y == b) = true ∨ (b == c) = true ∧ (y == d) = true then (b :: y :: ys) :: rest
+        else [b] :: (y :: ys) :: rest with
+    | [] => [[a]]
+    | [] :: rest => [a] :: rest
+    | (y :: ys) :: rest =>
+      if (a == a) = true ∧ (y == b) = true ∨ (a == c) = true ∧ (y == d) = true then (a :: y :: ys) :: rest
+      else [a] :: (y :: ys) :: rest) =
+    [a, b] :: List.map word vs
+⊢ (match
+      if (b == a) = true ∧ (a == b) = true ∨ (b == c) = true ∧ (a == d) = true then [b, a, b] :: List.map word vs
+      else [b] :: [a, b] :: List.map word vs with
+    | [] => [[a]]
+    | [] :: rest => [a] :: rest
+    | (y :: ys) :: rest =>
+      if (a == a) = true ∧ (y == b) = true ∨ (a == c) = true ∧ (y == d) = true then (a :: y :: ys) :: rest
+      else [a] :: (y :: ys) :: rest) =
+    [a, b] :: [a, b] :: List.map word vs
+
+case cons.cons.false.true
+vs : List Bool
+ih :
+  (match
+      match chunks idealBond (List.flatMap word vs) with
+      | [] => [[d]]
+      | [] :: rest => [d] :: rest
+      | (y :: ys) :: rest =>
+        if (d == a) = true ∧ (y == b) = true ∨ (d == c) = true ∧ (y == d) = true then (d :: y :: ys) :: rest
+        else [d] :: (y :: ys) :: rest with
+    | [] => [[c]]
+    | [] :: rest => [c] :: rest
+    | (y :: ys) :: rest =>
+      if (c == a) = true ∧ (y == b) = true ∨ (c == c) = true ∧ (y == d) = true then (c :: y :: ys) :: rest
+      else [c] :: (y :: ys) :: rest) =
+    [c, d] :: List.map word vs
+⊢ (match
+      if (b == a) = true ∧ (c == b) = true ∨ (b == c) = true ∧ (c == d) = true then [b, c, d] :: List.map word vs
+      else [b] :: [c, d] :: List.map word vs with
+    | [] => [[a]]
+    | [] :: rest => [a] :: rest
+    | (y :: ys) :: rest =>
+      if (a == a) = true ∧ (y == b) = true ∨ (a == c) = true ∧ (y == d) = true then (a :: y :: ys) :: rest
+      else [a] :: (y :: ys) :: rest) =
+    [a, b] :: [c, d] :: List.map word vs
+
+case cons.cons.true.false
+vs : List Bool
+ih :
+  (match
+      match chunks idealBond (List.flatMap word vs) with
+      | [] => [[b]]
+      | [] :: rest => [b] :: rest
+      | (y :: ys) :: rest =>
+        if (b == a) = true ∧ (y == b) = true ∨ (b == c) = true ∧ (y == d) = true then (b :: y :: ys) :: rest
+        else [b] :: (y :: ys) :: rest with
+    | [] => [[a]]
+    | [] :: rest => [a] :: rest
+    | (y :: ys) :: rest =>
+      if (a == a) = true ∧ (y == b) = true ∨ (a == c) = true ∧ (y == d) = true then (a :: y :: ys) :: rest
+      else [a] :: (y :: ys) :: rest) =
+    [a, b] :: List.map word vs
+⊢ (match
+      if (d == a) = true ∧ (a == b) = true ∨ (d == c) = true ∧ (a == d) = true then [d, a, b] :: List.map word vs
+      else [d] :: [a, b] :: List.map word vs with
+    | [] => [[c]]
+    | [] :: rest => [c] :: rest
+    | (y :: ys) :: rest =>
+      if (c == a) = true ∧ (y == b) = true ∨ (c == c) = true ∧ (y == d) = true then (c :: y :: ys) :: rest
+      else [c] :: (y :: ys) :: rest) =
+    [c, d] :: [a, b] :: List.map word vs
+
+case cons.cons.true.true
+vs : List Bool
+ih :
+  (match
+      match chunks idealBond (List.flatMap word vs) with
+      | [] => [[d]]
+      | [] :: rest => [d] :: rest
+      | (y :: ys) :: rest =>
+        if (d == a) = true ∧ (y == b) = true ∨ (d == c) = true ∧ (y == d) = true then (d :: y :: ys) :: rest
+        else [d] :: (y :: ys) :: rest with
+    | [] => [[c]]
+    | [] :: rest => [c] :: rest
+    | (y :: ys) :: rest =>
+      if (c == a) = true ∧ (y == b) = true ∨ (c == c) = true ∧ (y == d) = true then (c :: y :: ys) :: rest
+      else [c] :: (y :: ys) :: rest) =
+    [c, d] :: List.map word vs
+⊢ (match
+      if (d == a) = true ∧ (c == b) = true ∨ (d == c) = true ∧ (c == d) = true then [d, c, d] :: List.map word vs
+      else [d] :: [c, d] :: List.map word vs with
+    | [] => [[c]]
+    | [] :: rest => [c] :: rest
+    | (y :: ys) :: rest =>
+      if (c == a) = true ∧ (y == b) = true ∨ (c == c) = true ∧ (y == d) = true then (c :: y :: ys) :: rest
+      else [c] :: (y :: ys) :: rest) =
+    [c, d] :: [c, d] :: List.map word vs
+AcquiredSegmentation.lean:227:48: error: Tactic `decide` proved that the proposition
+  (broadened 21).log = List.map some [a, b, a, b, c, d, c] ∧ parse (broadened 21) utterance = none
+is false

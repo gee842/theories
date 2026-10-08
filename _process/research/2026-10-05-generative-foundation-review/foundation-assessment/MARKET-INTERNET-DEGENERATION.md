@@ -386,3 +386,86 @@ C_{t+1}\le C_t-15/16.
 本轮局部三态结构与支持连接已经完成，作者反审、实际 Lean 检查及图像核对分列保存；没有独立 agent 验收。**下一未完连接是：在同一支出和权限条件下，哪些持续改变或有支持的进入能够越过完整状态域的分界，并在实际支持耗尽前完成；变化速率属于这条时序问题。** 已完成的边界、局部吸引与支持结局作为结果复用，不再列为待证明的抽象机制。
 
 English continuation: The original rational one-parameter family now has an exhaustive classification of physical fixed states. At beta=1/2, two endpoint neighborhoods contract geometrically and eventually remain within every positive rational tolerance; arbitrarily small interior perturbations can escape a fixed neighborhood in finite time. Exact lifting to the original paid operating history reveals an essential distinction: the low selection attractor exhausts its necessary support and triggers finite guarded failure, while the high neighborhood meets the existing nonfailure certificate. Thirty-eight new Lean theorems / 52 declaration audits pass, with 58 inherited theorems / 66 audits separately rebuilt. This is local attraction and actual support coupling, not a full basin, real-state or all-parameter bifurcation classification, or empirical market calibration.
+
+<a id="supported-finite-transition"></a>
+
+## 26. 本轮接续：有限纠正怎样接通实际转变
+
+Result(s): 未迁移的 `RegimeAttraction` 局部吸引／支持结果、`MarketGenerativity.example_certificate` 与 `safe_history_never_fails`；伦理方向复用 `alignment-direction-g0-j`。同一市场活动通过留存影响、责任效力、维护份额和支持消耗形成下一步条件；纠正是在这些关系中实现的改变，不是独立控制者在过程外重置状态。
+
+Delta: 检验有限期阻断影响侵蚀（运行参数 β=0），是否从任意正维护份额进入原 β=1/2 的保护区，并将到达时间与同一历史的支持要求接通。零份额、过晚开始和实际改变 β 的实现条件须保留。
+
+Supplied premises / correspondence: 原有有理更新律、授权且真实生效的有限期阻断、每步额外支持耗用 κ≥0、无其他冲击；β 改变的组织形成尚不在此三坐标模型中。不得以参数可写便声称制度改革已经被实现。
+
+Evidence / boundary / integration: [RegimeTransition](../../../../experiments/market-generativity/formal/RegimeTransition.lean) 与[源绑定回执](../../../../experiments/market-generativity/formal/transition-verification.json)实际检查 **27 项新定理／35 项新声明审计**，另重新编译 96 项继承定理／118 项审计。新主张登记为 `market-supported-finite-transition`；正式复用的原保护结果迁移为 `market-protected-continuation`。到达输出通过 `landing_supplies_safety` 满足原证书输入，`supported_finite_transition` 直接复用 `safe_history_never_fails`。没有独立 agent 验收。
+
+## 27. 从正维护余量到有限到达
+
+在纠正实际生效的有限阶段，令 β=0，其余运行参数沿用原例。影响量 w 没有被删除或清零，责任效力 q 也没有被直接设为充分；同一历史继续按
+
+\[
+x'=x+\tfrac45x(1-x)(q-\tfrac38),\qquad
+q'=\tfrac34q+\tfrac14,\qquad
+w'=\tfrac34w+\tfrac14(1-x)
+\]
+
+演化。β=0 表示本阶段既有影响不再侵蚀 q，不表示影响关系从现实消失。该变化的授权、落实与维持在本轮是明示的实现前提，不是把形成问题藏进零这个数里。
+
+`positive_seed_finite_landing` 检查：对所有有理物理初态 x,q,w∈[0,1]，只要 x>0，就有有限 N，使纠正后的状态进入
+
+\[
+P:\quad x\ge\tfrac34,\quad q\ge\tfrac12,\quad w\le\tfrac14.
+\]
+
+这个结论允许从前轮低吸引邻域内的正份额开始。它既不假设初始选择差额已经为正，也不先把状态推过未知的三维分界。证明保留实际时序：q 在三步后超过 1/2；正 x 在这三步内不会归零；此后 x 单调增加，在尚未达到 7/8 时每步至少增加 x/80；达到该值后，w 的残留影响逐步衰减到 1/4 以下。P 是已知保护区域，不是声称已经求出的完整吸引域。
+
+到达 P 后撤去本项额外阻断，让 β 回到原来的 1/2，原保护证书便可接续。**有限改变选择关系，可以让后续状态在原参数下保持保护；不必永久取消原模型允许的全部影响。** 这是有限参数干预后的保护区转移，尚不是整条参数族的严格分岔分类，也没有追加“此后必收敛到 H”的未经检查结论。
+
+## 28. 支持怎样撑过转变，而不是事后补账
+
+纠正每步额外消耗 κ≥0 个已表示的支持单位；它被明确加入原支持更新：
+
+\[
+C'=\max(0,\tfrac9{10}C+3x-1-\kappa).
+\]
+
+原纠正货币预算仍是 B=1、每步先付 1、再收入 1。κ 是同一支持量的额外耗用，不是把所有制度、生活和生态成本折成一个普遍货币量。该局部对应是否充分须独立核实。
+
+定义 N 步的保守支持上界：
+
+\[
+K_0=5,\qquad K_{n+1}=\tfrac{10}{9}(K_n+1+\kappa),\qquad
+K_N=(15+10\kappa)(\tfrac{10}{9})^N-10(1+\kappa).
+\]
+
+闭式由 `cover_formula` 检查，幂表达复用此前 `radius_formula`。若 C₀≥K_N，则 `remaining_cover` 给出每个 t≤N 的 C_t≥K_{N−t}≥5。这个界保守地不预支维护产生的 3x 收益，**不是最小资金或最优干预成本**。
+
+`pulse_coupling_history` 把投影与原 State 的运行历史逐步等同；`pulse_prefix_executes` 检查每个实际守卫均允许继续。最终组合 `supported_finite_transition` 给出：
+
+1. 任意物理初态 x>0，以及任意指定的有限有理 κ≥0，存在有限纠正时长 N。
+2. **若开始时已有** C₀≥K_N，整个纠正前缀真实执行，到达原 Safe 条件。
+3. 以到达时的完整状态、剩余支持和预算作为后续初态，撤去额外纠正与 κ 耗用，原 β=1/2 法则在所有后续时刻通过守卫。
+
+支持只在最初给定一次，交接处没有补充、重置、倒算已发生损失或复活失败历史。存在足够的有限初始支持，不等于任意实际储备都够；原 guard 的停止也不代表现实绝对无法重建，而是这条局部历史不能越过自己的失败条件。
+
+## 29. 三个边界：余量、时长、实际期限
+
+**维护余量。** `zero_seed_never_lands` 检查 x=0 在此份额法则下始终为零，β 的有限纠正不能补出已不存在的维护活动。此时需要有实际支持与形成过程的进入机制。正份额与零份额的差别来自本模型的乘法选择律；不能提升为全部现实组织的不可逆界限。
+
+**时长不能统一预设。** `share_history_upper` 检查 x_N≤(3/2)^N x₀；`no_uniform_pulse_duration` 对每个预先指定的 N 构造正份额 x₀=1/[4(3/2)^N]、q₀=w₀=1，使 x_N≤1/4，尚未到达 P。即使初始责任效力已经充分，极少的维护活动也不能在任意固定期限内保证恢复。任意正份额都有某个有限方案，与存在一个对所有正份额都够用的统一时长，是不同的量词。
+
+**实际支持会先到期。** `too_late_even_without_extra_cost` 保留一个精确反例：x₀=1/100、q₀=1/3、w₀=1、C₀=5。立刻取 β=0，且额外耗用 κ=0，下一步支持仍降到 353/100<5；原实际守卫立刻停止。这不是纠正经费未付，而是改变效力尚未来得及传到维护与支持。
+
+因此，可恢复性涉及的是**仍能再生产的活动、改变返回关系的实际能力，以及贯穿转变的支持和时间**。它们来自同一展开，却不能由一个“参数方向变好”互相替代。上一轮给出退化选择的吸引边界；本轮新增可执行转变的充分条件和真实失败见证，不声称找到了完整可恢复域的必要充分边界。
+
+## 30. 理论意义、反审和仍缺的连接
+
+**对元吸引子的推进。** 域内返回规律解释一次改善为什么会消退；有限纠正结果进一步说明，既有返回组织并非不可改变。纠正需要持续到新的维护份额与影响余量足以接续保护。单纯制造一次 q 改善、长期改变 β、恢复 x=0 后的进入，仍是不同机制；本轮完成其中有正余量的有限持续改变及支持交接。
+
+**对生成性对齐的推进。** 复用 G0/J/E，评价仍针对整体中的具体生活、可能性与真实损失。本轮给实践判断增加一项可用的机制事实：保留有益替代的实际活动与过渡支持，能够影响未来纠正是否可实现。不能等到所有替代已退出或必要支持见底，再把“现在同意纠正”当作已完成对齐。由此不推出维护任何现存企业的义务，也不证明 P 覆盖现实全部伦理要求。
+
+**实质反审。** ① β=0 是强的、被给定的有效干预；本轮没有从政治意愿推出它必定成立。② 连续有理比例允许任意小正 x；真实组织的离散规模、退出阈值和再进入会改变对应。③ κ 只表示一个可加支持量，其他不可替代条件不能被该界覆盖。④ 干预阶段无额外误差，撤除后复用原证书的局部充分条件；不存在全局最优控制、完整盆界或全参数稳定性证明。⑤ 普通常规控制、制度改革及恢复动力学可给出同样的条件解释；当前工作没有证明元吸引子术语独占解释。⑥ 没有新增现实观察，更没有以既有 Reddit、D&D 或广告市场资料声称这些数值已被校准。
+
+**下一未完连接。** 本轮结果已关闭“有正余量时，有限持续纠正能否在有账可查的支持条件下交接到原保护区”这个缺口。继续应解释现实可实施的部分阻断、干预形成与保留怎样给出这个 β 改变；以及余量消失后，实际进入怎样恢复候选活动。现有形成／纠正机制应按接口复用，不能把一个免费新增参与者或永久监督者充作答案。完整三维吸引域、现实参数与变化速率仍有各自范围，不自动变成重复本轮证明的待做任务。
+
+English: A supplied finite beta=0 intervention now takes every physical rational state with positive renewal share into the original beta=1/2 protection rectangle. The proof does not reset quality, influence or participants. A recursively calculated initial stock cover, including a nonnegative per-step intervention burden, keeps every prefix above the essential floor. The actual arrived full state then supplies the old perpetual protection theorem after withdrawal, without replenishment at handoff. Zero share stays zero, no fixed pulse duration works for every positive seed, and an exact floor-stock example fails immediately despite effective correction. These are a supported transition theorem and limits, not a minimal policy, complete recovery boundary, endogenous institution-formation result or empirical calibration. Twenty-seven new theorems / 35 declaration audits and 96 inherited theorems / 118 audits were actually checked. Normative use reuses G0/J/E; actual implementation, discrete entry and plural support correspondence remain substantive obligations.

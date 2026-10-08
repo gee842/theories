@@ -1,0 +1,56 @@
+OpenFutureRevision.lean:54:21: error: Application type mismatch: The argument
+  within
+has type
+  n ≤ 0 + bound
+but is expected to have type
+  n ≤ bound
+in the application
+  And.intro within
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.left (advance Rule.left Stage.leftReady)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.left (advance Rule.left Stage.rightReady)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.left (advance Rule.left Stage.formedLeft)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.left (advance Rule.left Stage.formedRight)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.right (advance Rule.right Stage.leftReady)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.right (advance Rule.right Stage.rightReady)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.right (advance Rule.right Stage.formedLeft)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.right (advance Rule.right Stage.formedRight)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.directRight (advance Rule.directRight Stage.leftReady)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.directRight (advance Rule.directRight Stage.rightReady)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.directRight (advance Rule.directRight Stage.formedLeft)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+OpenFutureRevision.lean:95:26: error: failed to synthesize
+  Decidable (completed (advance Rule.directRight (advance Rule.directRight Stage.formedRight)))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

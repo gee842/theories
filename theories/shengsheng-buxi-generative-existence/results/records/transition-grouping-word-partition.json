@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F09",
+  "reviewed_at_utc": "2026-10-08T13:03:12.525158+00:00",
+  "related": [],
+  "id": "transition-grouping-word-partition",
+  "title": {
+    "zh": "转移分节恢复编码词序列",
+    "en": "Transition grouping recovers encoded word sequences"
+  },
+  "claim": {
+    "zh": "当相邻关系恰为 ab 与 cd 内部连接时，分节保留任意有限的该二词编码序列的词划分；已有接触史实际取得此关系。",
+    "en": "When the adjacency relation joins exactly the interiors of ab and cd, segmentation recovers the word partition of every finite sequence in that encoding; an existing encounter history acquires this relation."
+  },
+  "hypotheses": [
+    {
+      "zh": "给定四个基本事件、二词编码及 chunks 递归算法；关系为 idealBond。",
+      "en": "Four supplied elementary events, the two-word encoding and recursive chunks algorithm; the relation is idealBond."
+    },
+    {
+      "zh": "实际取得见证使用既定接触序列、严格多数判准与足够记录支持。",
+      "en": "The acquisition witness uses the stated encounter sequence, strict-majority criterion and adequate recording support."
+    }
+  ],
+  "correspondence": {
+    "zh": "该关系是日志中已观察转移的分节判准；声音分类与语言对应没有由此推导。",
+    "en": "The relation is a grouping criterion derived from observed transitions in a log; sound categories and linguistic correspondence are not derived."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
+  "aliases": [
+    "Generative.AcquiredSegmentation.ideal_grouping_recovers_words"
+  ],
+  "dependencies": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
+      "detail": {
+        "zh": "重复可合并预定词界；部分经历只支持一个表达而误分另一表达。",
+        "en": "Repetition can merge intended boundaries; partial experience can parse one expression while misgrouping another."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "固定二词编码与分节算法；任意长度形式对应不保证有限支持下实际执行，不建立自然语言或完整认知。",
+    "en": "Fixed two-word encoding and algorithm; arbitrary-length correspondence does not guarantee affordable execution or establish natural language and complete cognition."
+  },
+  "validation_scope": {
+    "zh": "迁移既有23项定理／51项声明审计中的指定分节结果；不因登记新增成果或重跑证明。",
+    "en": "Migrates the specified grouping result from the existing 23-theorem/51-audit package; registration adds no theorem or proof rerun."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
+      "role": "proof",
+      "sha256": "95fdab3a4c1707b754aab480a4f2265076867c8a38ed71a955c93d77a914301c",
+      "declarations": [
+        "Generative.AcquiredSegmentation.ideal_grouping_recovers_words",
+        "Generative.AcquiredSegmentation.actual_exposure_forms_the_grouping_relation",
+        "Generative.AcquiredSegmentation.learned_grouping_transfers_to_every_word_sequence",
+        "Generative.AcquiredSegmentation.partial_experience_can_parse_one_form_without_general_grouping"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json",
+      "role": "receipt",
+      "sha256": "6e3af122875534e1c832d3aec182caca8e53a9c378fc5900b460ea8d2cc9bff2",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json",
+      "sha256_pointer": "/source_sha256/AcquiredSegmentation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "直接复用词划分，接到后续绑定或解释；不要把再次调用计作新分节成果。",
+    "en": "Reuse the partition for subsequent binding or interpretation; another invocation is not a new grouping result."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移已经实际检查的分节主张，保留原源码、回执和反例。",
+      "en": "2026-10-08: migrated the already checked grouping claim, preserving original source, receipt and counterexamples."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "finite-continuation-plans",
+  "title": {
+    "zh": "有限接续充分性与分支方案",
+    "en": "Finite continuation adequacy and branching plans"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "给定转移、观察、目标与许可时，n 步 viable 等价于存在一个依观察分支且 works 的 n 步方案。",
+    "en": "For supplied transitions, observations, target and admissibility, n-step viable is equivalent to an observation-branching n-step plan satisfying works."
+  },
+  "hypotheses": [
+    {
+      "zh": "有限步数与现有 viable、Plan、works；观察分支的选择使用所列既有逻辑依赖。",
+      "en": "Finite horizon and the existing viable, Plan and works; branch selection retains the recorded logical dependencies."
+    }
+  ],
+  "correspondence": {
+    "zh": "模型中的许可不自动是伦理正当性；作用覆盖与观察校准另需根据。",
+    "en": "Model admissibility is not automatically ethical permission; effect coverage and observation calibration require warrant."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+  "aliases": [
+    "ContinuationAdequacy.viable_iff_plan"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+      "detail": {
+        "zh": "一阶可共同采取的行动不保证第二步；所列盲观察例保留失败。",
+        "en": "A common first response need not support the second step; the blind-observation example retains the failure."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "一阶可共同采取的行动不保证第二步；所列盲观察例保留失败。",
+    "en": "A common first response need not support the second step; the blind-observation example retains the failure."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+      "role": "proof",
+      "sha256": "674a3a23358ae3d665345c749d3fc5415645e5e7fcc68cb95c173a397ff80266",
+      "declarations": [
+        "ContinuationAdequacy.viable_iff_plan",
+        "ContinuationAdequacy.blind_second_step_fails"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json",
+      "role": "receipt",
+      "sha256": "96610f9c121fd605b6f8b1002b32d9d3ed37e13eb98c17b5e57153bf1b481ab6",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json",
+      "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用有限方案接口；无限接续和实际取得足够观察仍单独研究。",
+    "en": "Reuse the finite-plan interface; infinite continuation and actual acquisition of sufficient observation remain separate."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

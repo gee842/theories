@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "universal-intelligence-session",
+  "title": {
+    "zh": "普遍智能会话的独立目标",
+    "en": "Independent universal-intelligence target"
+  },
+  "scope_type": "authorized-session",
+  "scope": {
+    "zh": "原普遍智能会话及其明确授权接续，不自动成为每个仓库任务目标。",
+    "en": "The original universal-intelligence session and explicitly authorized continuations; not automatically every repository task’s objective."
+  },
+  "objective": {
+    "zh": "证明所有智能的普遍元伦理，说明整体相依与其中差异化行动能力的形成。 8日最新接续明确采用G0，从关系中形成的个体位置及当前有根据的可见未来，建立正面生成意义与可修订的实践方向。",
+    "en": "Prove universal metaethics of all intelligence, explaining interconnection and differentiated agency formed within the whole. The latest 8 October continuation uses G0 to establish positive generative warrant and revisable practical direction from formed relational positions and supported visible futures."
+  },
+  "premises": {
+    "zh": "规范普遍性、实际遵循和当前表述的唯一必要性必须分别论证。 保留真实生成可能与新证据纠正判断两层开放；完整积分、全知和整体严格改善不是正面根据的前提。",
+    "en": "Normative universality, actual compliance and exclusive necessity of this formulation need separate arguments. Preserve both real generative possibilities and evidence-responsive revision; complete integration, omniscience and strict whole improvement are not premises of positive warrant."
+  },
+  "completion": {
+    "zh": "不能以局部生成定理、给定价值保存或有限比较宣告普遍目标完成。 本次有限正面原则按其明确前提验收；不得把全面总排序、所有后果无损或必然服从另设为该原则的完成条件。",
+    "en": "A local generative theorem, preservation of supplied value or bounded comparison does not complete the universal target. Assess the current finite positive principle under its explicit premises; do not add a complete ranking, losslessness of every consequence or inevitable compliance as its completion gate."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence",
+    "sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md"
+  ],
+  "result_ids": [
+    "universal-practical-warrant",
+    "positive-ground-open-futures"
+  ]
+}

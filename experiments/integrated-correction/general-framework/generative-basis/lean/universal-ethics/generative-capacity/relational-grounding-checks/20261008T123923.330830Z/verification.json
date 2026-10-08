@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261008T123923.330830Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "relational-grounding-checks/20261008T123923.330830Z",
+  "source_sha256": {
+    "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "RelationalGrounding": "8a480ead4e17a4c69c8fa7236df797b404a97d7d58408aebdb845c4206f02f82"
+  },
+  "checker_sha256": {
+    "check_relational_grounding.py": "ace4ba47e0e7003f2dbb3f984b295bb65a97c9fef4c91f7b596d68ae640b6354",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "A verified composition of existing JointContinuationClassification and GenerativeComparison. The retained/released single event law supplies a joint-bundle extension, which supplies the structural premise to explicit normative C. Identical marginals cannot support that strict C comparison through any marginal-determined summary. Joint-bundle descriptions distinguish this case; one admissible retained history still realizes only one claim. Only the full joint bundle is marked generative. Positive ethical relevance of this living possibility and absence of omitted losses remain substantive correspondence premises. Possible joint realization is not actual joint realization; neither behavioral convergence nor universal ethical completion is proved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "RelationalGrounding.lean:100:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  summary Regime.released\nin the target expression\n  (fun a b => compare (summary a) (summary b)) Regime.released Regime.retained\n\nSummary : Type\nsummary : Regime \u2192 Summary\nmarginalDetermines : \u2200 (a b : Regime), (\u2200 (claim : Claim), marginal a claim \u2194 marginal b claim) \u2192 summary a = summary b\ncompare : Summary \u2192 Summary \u2192 Prop\nirreflexive : \u2200 (s : Summary), \u00accompare s s\ncomparison : ComparisonPrinciple jointInventory fun a b => compare (summary a) (summary b)\nstrict : (fun a b => compare (summary a) (summary b)) Regime.released Regime.retained\nsame : summary Regime.released = summary Regime.retained\n\u22a2 False\n"
+}

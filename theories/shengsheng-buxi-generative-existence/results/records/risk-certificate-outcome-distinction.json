@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "risk-certificate-outcome-distinction",
+  "title": {
+    "zh": "风险界限与实现结果的区别",
+    "en": "Risk bounds and realized outcomes"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F08",
+  "reviewed_at_utc": "2026-10-08T12:38:59.650976+00:00",
+  "claim": {
+    "zh": "在给定三路线过程和两个有限等权事件规律下，正确的三分之一风险界限允许实际失败；不存在只依当前模式／到达结果、对两规律全部允许实现都正确判定该事前界限的判断器。",
+    "en": "In the supplied three-route process with two finite equal-weight event laws, a true one-third risk bound permits actual failure; no judge using only the mode/arrival projection correctly classifies that prior bound for every admitted realization of both laws."
+  },
+  "hypotheses": [
+    {
+      "zh": "模式与所选路线相同则不到达，否则到达；给定事件列表[0,1,2]与[0,0,1,2]，每项等权。重复模式来自不同事件，不是重复观察。",
+      "en": "Arrival fails exactly when the mode equals the selected route. Supplied event lists are [0,1,2] and [0,0,1,2], with equal weight per entry; duplicate modes denote distinct events, not duplicate observations."
+    },
+    {
+      "zh": "三分之一为数值规格；终点判别器仅接收模式／结果投影，不接收规律或完整历史。",
+      "en": "One third is a numerical specification. The endpoint judge receives only the mode/result projection, not the law or full history."
+    }
+  ],
+  "correspondence": {
+    "zh": "继承的assured_route_iff把计数失败与实际不到达相连；概率解释仍需事件权重的实际根据，伦理许可不由界限导出。",
+    "en": "Inherited assured_route_iff connects counted failures with failed arrival. A probability interpretation still needs warranted event weights; ethical permission does not follow from the bound."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+  "aliases": [
+    "Generative.WisdomFallibleJudgment.no_endpoint_only_prior_certificate"
+  ],
+  "dependencies": [
+    {
+      "id": "assured-route-criterion",
+      "detail": {
+        "zh": "原证明用 assured_route_iff 将计数失败接到实际不到达。",
+        "en": "The existing proof uses assured_route_iff to connect counted failure with failed arrival."
+      },
+      "relation": "formal-reuse",
+      "interface": {
+        "output": {
+          "zh": "到达恰在路线不同于阻断模式时成立。",
+          "en": "Arrival holds exactly when the route differs from the blocked mode."
+        },
+        "input": {
+          "zh": "风险例需要证明所计失败确为原过程的失败。",
+          "en": "The risk examples need counted failures to be failures of the original process."
+        },
+        "conditions": {
+          "zh": "原过程不变，两个事件规律和权重仍给定。",
+          "en": "The original process is unchanged; the two event laws and weights remain supplied."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "detail": {
+        "zh": "正确的是风险陈述，失败的是目标实现；未证明内容为假的信念有根据。终点不足不表示结果与更新无关。",
+        "en": "The risk statement is true while the target realization fails; warranted false belief is not established. Endpoint insufficiency does not make outcomes irrelevant to updating."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "局部应用，不是新的概率理论。未证明伦理可接受风险、概率学习或整个智慧根基；给定规律与原过程保持公开。",
+    "en": "A local application, not new probability theory. Ethical risk acceptance, probability learning and the complete wisdom root remain unproved; the event laws and process are supplied."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1实际检查5项新应用定理，均仅propext；59项继承审计分列，合计64项，44空／20标准。冻结源码与回执绑定；无全仓库验收。",
+    "en": "Lean 4.29.1 actually checked five new application theorems, each using only propext; 59 inherited audits are separate, 64 overall with 44 empty / 20 standard. Frozen source and receipt are bound; no repository-wide acceptance."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+      "role": "proof",
+      "sha256": "3c04364b3c56f6157b5f9a822cf1a7853da8e0fcad0a79a3bd92184a791aaa3a",
+      "declarations": [
+        "Generative.WisdomFallibleJudgment.uniform_failure_weight",
+        "Generative.WisdomFallibleJudgment.bounded_risk_without_uniform_completion",
+        "Generative.WisdomFallibleJudgment.biased_bound_fails",
+        "Generative.WisdomFallibleJudgment.matching_realizations_with_different_certificates",
+        "Generative.WisdomFallibleJudgment.no_endpoint_only_prior_certificate"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json",
+      "role": "receipt",
+      "sha256": "d7a472e1d2757c88c16c8678d1d35bfd40bd83aac62f5a8cc2246f471b8ecfa8",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "role": "integration",
+      "sha256": "866a74d352d910cfcec2fe581cd596fdba55a84656e519cc6ee91a8d7bf33b97",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json",
+      "sha256_pointer": "/modules/5/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "复用这个完成的范围修正；完整根基研究须检验独立智慧内容和全部实质承诺，不能以更多同类风险例替代。",
+    "en": "Reuse this completed scope correction. The full-root study must examine independent wisdom content and the entire substantive core, rather than substitute more risk examples."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：登记原三路线过程上的新应用／对应；基础概率与信息不足模式保留通常解释的信用，五项证明不计成五套独立理论。",
+      "en": "2026-10-08: recorded a new application/correspondence in the inherited route process. Ordinary probability and information-insufficiency explanations retain credit; five proofs are not five independent theories."
+    },
+    {
+      "zh": "2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。",
+      "en": "2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation."
+    }
+  ]
+}

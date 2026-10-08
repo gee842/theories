@@ -1,0 +1,1269 @@
+{
+  "status": "passed",
+  "utc": "20261008T122017.721573Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "compositional-transmission-checks/20261008T122017.721573Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "CompositionalAcquisition": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848",
+    "CompositionalFormation": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5",
+    "CompositionalTransmission": "77ce8a949486590333088868931080e89ccfd8dc6a9380ad39b55ffeeb48d624"
+  },
+  "checker_sha256": {
+    "check_compositional_transmission.py": "78cfb31f5f3ce0b1708b18c869d75c140cdd203f68e50b3050accf06243f13d7",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Actual response transmission, reconstruction, repeated cultural continuation and peer repair under supplied schedules and formation laws. No biological inheritance, grammar origin, full cognition or universal cultural progress.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "KnowledgeCorrespondence",
+      "theorems": 20,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.SoundOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.ExactOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.Resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_is_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_requires_resolution"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.resolution_admits_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.sound_restricts_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.refinement_preserves_resolution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.KnowledgeCorrespondence.History"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.signal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.allHistories"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.normal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.reference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.pairedEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decodePair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.direct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.calibrated_pair_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.raw_signal_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.no_exact_raw_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_exact_on_normal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.lucky_actual_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.parity_record_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.double_reversal_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.FixedContentSafe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.true_content_trivially_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_not_exact"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.KnowledgeCorrespondence.SoundOn": [],
+        "Generative.KnowledgeCorrespondence.ExactOn": [],
+        "Generative.KnowledgeCorrespondence.Resolves": [],
+        "Generative.KnowledgeCorrespondence.exact_is_sound": [],
+        "Generative.KnowledgeCorrespondence.exact_requires_resolution": [],
+        "Generative.KnowledgeCorrespondence.decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.resolution_admits_decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention": [],
+        "Generative.KnowledgeCorrespondence.sound_restricts_domain": [],
+        "Generative.KnowledgeCorrespondence.refinement_preserves_resolution": [],
+        "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness": [],
+        "Generative.KnowledgeCorrespondence.History": [],
+        "Generative.KnowledgeCorrespondence.signal": [],
+        "Generative.KnowledgeCorrespondence.target": [],
+        "Generative.KnowledgeCorrespondence.allHistories": [],
+        "Generative.KnowledgeCorrespondence.normal": [],
+        "Generative.KnowledgeCorrespondence.reference": [],
+        "Generative.KnowledgeCorrespondence.pairedEvidence": [],
+        "Generative.KnowledgeCorrespondence.decodePair": [],
+        "Generative.KnowledgeCorrespondence.direct": [],
+        "Generative.KnowledgeCorrespondence.calibrated_pair_exact": [],
+        "Generative.KnowledgeCorrespondence.raw_signal_not_resolving": [],
+        "Generative.KnowledgeCorrespondence.no_exact_raw_decoder": [],
+        "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains": [],
+        "Generative.KnowledgeCorrespondence.direct_exact_on_normal": [],
+        "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain": [],
+        "Generative.KnowledgeCorrespondence.lucky_actual_correct": [],
+        "Generative.KnowledgeCorrespondence.parity_record_exact": [],
+        "Generative.KnowledgeCorrespondence.double_reversal_exact": [],
+        "Generative.KnowledgeCorrespondence.FixedContentSafe": [],
+        "Generative.KnowledgeCorrespondence.true_content_trivially_safe": [],
+        "Generative.KnowledgeCorrespondence.abstention_sound": [],
+        "Generative.KnowledgeCorrespondence.abstention_not_exact": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "CompositionalAcquisition",
+      "theorems": 25,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "Generative.CompositionalAcquisition.Expr"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.CompositionalAcquisition.Code"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.eval"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.p0"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.p1"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.orderProbe"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.CompositionalAcquisition.Evidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.observe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.acquire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.probe_readings"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.acquired_code_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.acquired_all_expressions"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.rename"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.renamed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.reencoding_preserves_content"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.operationCost"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.acquisitionCost"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.acquisition_cost"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.CompositionalAcquisition.Learner"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.trialRecords"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.readEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.interpretationFromRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.actual_records_supply_evidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.actual_records_form_interpretation"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.train"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.training_uses_actual_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.training_forms_interpreter"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.training_support_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.insufficient_training_unchanged"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.acquired_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.acquired_execution_conserved"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.primitiveEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.separated"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.primitive_readings_do_not_resolve_order"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.no_exact_order_without_composite_probe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.usual"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.switched"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.novel"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.initial"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.novel_expression_not_a_training_item"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.novel_execution_from_acquisition"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.acquired_capacity_can_outlast_executable_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.missing_composite_record_blocks_interpretation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.corrupted_composite_record_changes_interpretation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.changed_order_invalidates_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.unresolved_order_can_preserve_a_novel_answer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.nonuniform"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.nonuniform_matches_training"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.nonuniform_fails_transfer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalAcquisition.pick"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalAcquisition.changed_motivation_preserves_acquired_content"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.CompositionalAcquisition.Expr": [],
+        "Generative.CompositionalAcquisition.Code": [],
+        "Generative.CompositionalAcquisition.eval": [],
+        "Generative.CompositionalAcquisition.p0": [],
+        "Generative.CompositionalAcquisition.p1": [],
+        "Generative.CompositionalAcquisition.orderProbe": [],
+        "Generative.CompositionalAcquisition.Evidence": [],
+        "Generative.CompositionalAcquisition.observe": [],
+        "Generative.CompositionalAcquisition.acquire": [],
+        "Generative.CompositionalAcquisition.probe_readings": [],
+        "Generative.CompositionalAcquisition.acquired_code_exact": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalAcquisition.acquired_all_expressions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalAcquisition.rename": [],
+        "Generative.CompositionalAcquisition.renamed": [],
+        "Generative.CompositionalAcquisition.reencoding_preserves_content": [],
+        "Generative.CompositionalAcquisition.operationCost": [],
+        "Generative.CompositionalAcquisition.acquisitionCost": [],
+        "Generative.CompositionalAcquisition.acquisition_cost": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.Learner": [],
+        "Generative.CompositionalAcquisition.trialRecords": [],
+        "Generative.CompositionalAcquisition.readEvidence": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.interpretationFromRecords": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.actual_records_supply_evidence": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.actual_records_form_interpretation": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.train": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.training_uses_actual_records": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.training_forms_interpreter": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalAcquisition.training_support_conserved": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.insufficient_training_unchanged": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.execute": [],
+        "Generative.CompositionalAcquisition.acquired_execution": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalAcquisition.acquired_execution_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalAcquisition.primitiveEvidence": [],
+        "Generative.CompositionalAcquisition.separated": [],
+        "Generative.CompositionalAcquisition.primitive_readings_do_not_resolve_order": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.no_exact_order_without_composite_probe": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.usual": [],
+        "Generative.CompositionalAcquisition.switched": [],
+        "Generative.CompositionalAcquisition.novel": [],
+        "Generative.CompositionalAcquisition.initial": [],
+        "Generative.CompositionalAcquisition.novel_expression_not_a_training_item": [],
+        "Generative.CompositionalAcquisition.novel_execution_from_acquisition": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.acquired_capacity_can_outlast_executable_support": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.missing_composite_record_blocks_interpretation": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.corrupted_composite_record_changes_interpretation": [
+          "propext"
+        ],
+        "Generative.CompositionalAcquisition.changed_order_invalidates_transfer": [],
+        "Generative.CompositionalAcquisition.unresolved_order_can_preserve_a_novel_answer": [],
+        "Generative.CompositionalAcquisition.nonuniform": [],
+        "Generative.CompositionalAcquisition.nonuniform_matches_training": [],
+        "Generative.CompositionalAcquisition.nonuniform_fails_transfer": [],
+        "Generative.CompositionalAcquisition.pick": [],
+        "Generative.CompositionalAcquisition.changed_motivation_preserves_acquired_content": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "CompositionalFormation",
+      "theorems": 37,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Generative.CompositionalFormation.Route"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.dispatch"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.CompositionalFormation.Program"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.operate"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.routeFor"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.programFor"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.formed_operation_correspondence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.generatedRoutes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.two_connector_routes"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.fits"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.correct_program_fits_actual_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.fit_implies_record_agreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.separating_probe_identifies_generated_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.accepted_generated_program_transfers"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.CompositionalFormation.Frame"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.fromLearner"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.place"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.assemble"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.inspect"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.discard"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.attempt"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.search"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.develop"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.respond"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.placing_preserves_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.placing_accounts_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.assembly_preserves_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.inspecting_preserves_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.discarding_preserves_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.attempt_preserves_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.search_preserves_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.development_preserves_support"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.prepared"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.developed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.interpretation_alone_does_not_supply_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.incorrect_route_is_built_tried_and_replaced"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.development_retains_actual_acquisition"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.formed_route_executes_novel_expression"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.whole_example_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.no_parts_preserves_record_but_blocks_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.partial_assembly_keeps_consumption"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.interpreted_and_formed_can_lack_execution_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.reverse_order_requires_different_formed_route"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.damaged"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.retained_verdict_does_not_replace_damaged_connection"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.collapsed"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.duplicated"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.old_record_can_admit_wrong_constructed_operation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.expanded_repertoire_can_form_a_failing_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.asymmetric_composition_exposes_the_new_failure"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.encounter"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.reconsider"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.encounter_preserves_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.reconsideration_preserves_support"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.corrected"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.further"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.fresh_record_changes_actual_reconstruction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.repaired_operation_uses_a_further_untrained_expression"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.repair_keeps_the_cost_of_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.discrepancy_alone_does_not_supply_repair_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.unobserved_failure_can_retain_wrong_operation"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalFormation.extent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.equal_primitive_effects_preserve_extent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.indistinguishable_reversal_preserves_every_expression"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalFormation.extra_probe_restores_transfer_for_generated_routes"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.CompositionalFormation.Route": [],
+        "Generative.CompositionalFormation.dispatch": [],
+        "Generative.CompositionalFormation.Program": [],
+        "Generative.CompositionalFormation.operate": [],
+        "Generative.CompositionalFormation.routeFor": [],
+        "Generative.CompositionalFormation.programFor": [],
+        "Generative.CompositionalFormation.formed_operation_correspondence": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.generatedRoutes": [],
+        "Generative.CompositionalFormation.two_connector_routes": [],
+        "Generative.CompositionalFormation.fits": [],
+        "Generative.CompositionalFormation.correct_program_fits_actual_records": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.fit_implies_record_agreement": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.separating_probe_identifies_generated_route": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.accepted_generated_program_transfers": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.Frame": [],
+        "Generative.CompositionalFormation.fromLearner": [],
+        "Generative.CompositionalFormation.place": [],
+        "Generative.CompositionalFormation.assemble": [],
+        "Generative.CompositionalFormation.inspect": [],
+        "Generative.CompositionalFormation.discard": [],
+        "Generative.CompositionalFormation.attempt": [],
+        "Generative.CompositionalFormation.search": [],
+        "Generative.CompositionalFormation.develop": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.respond": [],
+        "Generative.CompositionalFormation.placing_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.placing_accounts_parts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.assembly_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.inspecting_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.discarding_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.attempt_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.search_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.development_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.prepared": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.developed": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.interpretation_alone_does_not_supply_route": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.incorrect_route_is_built_tried_and_replaced": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.development_retains_actual_acquisition": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.formed_route_executes_novel_expression": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.whole_example_account": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.no_parts_preserves_record_but_blocks_formation": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.partial_assembly_keeps_consumption": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.interpreted_and_formed_can_lack_execution_support": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.reverse_order_requires_different_formed_route": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.damaged": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.retained_verdict_does_not_replace_damaged_connection": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.collapsed": [],
+        "Generative.CompositionalFormation.duplicated": [],
+        "Generative.CompositionalFormation.old_record_can_admit_wrong_constructed_operation": [],
+        "Generative.CompositionalFormation.expanded_repertoire_can_form_a_failing_route": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.asymmetric_composition_exposes_the_new_failure": [],
+        "Generative.CompositionalFormation.encounter": [],
+        "Generative.CompositionalFormation.reconsider": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.encounter_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.reconsideration_preserves_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalFormation.corrected": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.further": [],
+        "Generative.CompositionalFormation.fresh_record_changes_actual_reconstruction": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.repaired_operation_uses_a_further_untrained_expression": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.repair_keeps_the_cost_of_failure": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.discrepancy_alone_does_not_supply_repair_parts": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.unobserved_failure_can_retain_wrong_operation": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.extent": [],
+        "Generative.CompositionalFormation.equal_primitive_effects_preserve_extent": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.indistinguishable_reversal_preserves_every_expression": [
+          "propext"
+        ],
+        "Generative.CompositionalFormation.extra_probe_restores_transfer_for_generated_routes": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "CompositionalTransmission",
+      "theorems": 24,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.CompositionalTransmission.Exchange"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.blank"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.source"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.send"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.lesson"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.basic"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.extended"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.learn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.programRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.response_remaining_is_bounded"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.send_preserves_joint_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.lesson_preserves_joint_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.delivery_uses_actual_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.absent_response_does_not_fabricate_sample"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.basic_lesson_reads_program"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.reconstructed_program_from_actual_outputs"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.SameInterface"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.sending_preserves_equal_interfaces"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.lessons_preserve_equal_interfaces"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.learning_uses_sender_interface"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.reconstructed_successor_retains_operation"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.cohort"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.every_cohort_reconstructs_the_transmitted_operation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.every_cohort_retains_all_expression_correspondence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.selective"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.joint00"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.firstLearner"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.formed_teacher_can_teach_after_supported_preparation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.execution_only_budget_can_interrupt_teaching"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.teacher_program_changes_received_evidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.faithfully_reconstructed_operation_can_lose_a_task_distinction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.extra_funding_does_not_fix_transmitted_content"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.same_teacher_different_encounters_change_reconstruction"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.misleadingPeer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.CompositionalTransmission.revisedPeer"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.peer_demonstration_can_repair_without_new_generation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.erroneous_peer_demonstration_can_preserve_error"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.received_disagreement_is_not_automatically_repaired"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.task_distinction_loss_can_recur_in_every_cohort"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.CompositionalTransmission.successful_reconstruction_can_teach_a_later_participant"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.CompositionalTransmission.Exchange": [],
+        "Generative.CompositionalTransmission.blank": [],
+        "Generative.CompositionalTransmission.source": [],
+        "Generative.CompositionalTransmission.send": [],
+        "Generative.CompositionalTransmission.lesson": [],
+        "Generative.CompositionalTransmission.basic": [],
+        "Generative.CompositionalTransmission.extended": [],
+        "Generative.CompositionalTransmission.learn": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.programRecords": [],
+        "Generative.CompositionalTransmission.response_remaining_is_bounded": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.send_preserves_joint_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.lesson_preserves_joint_support": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.delivery_uses_actual_response": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.absent_response_does_not_fabricate_sample": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.basic_lesson_reads_program": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.reconstructed_program_from_actual_outputs": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.SameInterface": [],
+        "Generative.CompositionalTransmission.sending_preserves_equal_interfaces": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.lessons_preserve_equal_interfaces": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.learning_uses_sender_interface": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.successor": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.reconstructed_successor_retains_operation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.cohort": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.every_cohort_reconstructs_the_transmitted_operation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.every_cohort_retains_all_expression_correspondence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.selective": [],
+        "Generative.CompositionalTransmission.joint00": [],
+        "Generative.CompositionalTransmission.firstLearner": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.formed_teacher_can_teach_after_supported_preparation": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.execution_only_budget_can_interrupt_teaching": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.teacher_program_changes_received_evidence": [],
+        "Generative.CompositionalTransmission.faithfully_reconstructed_operation_can_lose_a_task_distinction": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.extra_funding_does_not_fix_transmitted_content": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.same_teacher_different_encounters_change_reconstruction": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.misleadingPeer": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.revisedPeer": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.peer_demonstration_can_repair_without_new_generation": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.erroneous_peer_demonstration_can_preserve_error": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.received_disagreement_is_not_automatically_repaired": [
+          "propext"
+        ],
+        "Generative.CompositionalTransmission.task_distinction_loss_can_recur_in_every_cohort": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.CompositionalTransmission.successful_reconstruction_can_teach_a_later_participant": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "CompositionalAcquisition.lean": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848",
+    "CompositionalAcquisition.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CompositionalAcquisitionAudit.lean": "3e8d4c9b8e0831f19643fecba73c52ae9ca389b6fb454380297a7aa9bae6d9cb",
+    "CompositionalAcquisitionAudit.log": "4d33cdfe93f592317293685c268f25846260e8f119f3378fc77682db4d8f5bb9",
+    "CompositionalAcquisitionSignatures.lean": "24af62f254c51c141e0be06d961b5c207278ba29a6bccec8ccd6a2bae2fb9c15",
+    "CompositionalAcquisitionSignatures.log": "79f3b77fe4c75ba9a1c6990f3bda87c5a158fa0b2fb78f3afe5fd322ff590ee6",
+    "CompositionalFormation.lean": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5",
+    "CompositionalFormation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CompositionalFormationAudit.lean": "f46ceaa876a6ed673c451d436dc75e8407cbe13be3e341827d3f5e59b777a271",
+    "CompositionalFormationAudit.log": "4b99295619ae323a8a7f99017a8c60ab95a3a7b1e46491a51bbd35fed82cbbe0",
+    "CompositionalFormationSignatures.lean": "cad780a4d755a84295b7d602974bbc7320dce24195a86108c2c88694ca30e1df",
+    "CompositionalFormationSignatures.log": "27fa1abb452e629660def15ad7f42354394f30f41003b3ecefa37ced74f57073",
+    "CompositionalTransmission.lean": "77ce8a949486590333088868931080e89ccfd8dc6a9380ad39b55ffeeb48d624",
+    "CompositionalTransmission.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CompositionalTransmissionAudit.lean": "5e065f27b293e1bcda6495e60482cae755b7e92a7c1a68d4d35c7e2c77e797e1",
+    "CompositionalTransmissionAudit.log": "76f80d99929018ce94ea37a99a99bb62d5c83e81c936ab9ef61ab42d5ff315dc",
+    "CompositionalTransmissionSignatures.lean": "2c459d5ddbd68b5c26d0cceff264a76fbf5fa8dea3ac4bcbd1c84802c4cd9b76",
+    "CompositionalTransmissionSignatures.log": "6edc5ea94dcc4a1f733028770a3f1d56fef7d05fb656ec55c8a9015613870240",
+    "KnowledgeCorrespondence.lean": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "KnowledgeCorrespondence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "KnowledgeCorrespondenceAudit.lean": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b",
+    "KnowledgeCorrespondenceAudit.log": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21",
+    "KnowledgeCorrespondenceSignatures.lean": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13",
+    "KnowledgeCorrespondenceSignatures.log": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_compositional_transmission.py": "78cfb31f5f3ce0b1708b18c869d75c140cdd203f68e50b3050accf06243f13d7",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

@@ -4,7 +4,7 @@
 
 ## Where the current claim lives
 
-For each migrated claim, edit its one JSON record in [results/records](../theories/shengsheng-buxi-generative-existence/results/records). The [register](../theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md) and matching Markdown pages are generated reading views. The record states the claim, assumptions, interpretation, evidence, status, dependencies, boundaries, aliases and next substantive delta. Proofs remain in their existing modules; arguments remain in their existing theory chapters and studies. Records point to them rather than copying whole arguments or proofs.
+For each migrated claim, edit its one JSON record in [results/records](../theories/shengsheng-buxi-generative-existence/results/records). The [register](../RESULTS.md) and matching Markdown pages are generated reading views. The record states the claim, assumptions, interpretation, evidence, status, dependencies, boundaries, aliases and next substantive delta. Proofs remain in their existing modules; arguments remain in their existing theory chapters and studies. Records point to them rather than copying whole arguments or proofs.
 
 每项已迁移主张只有一个可编辑 JSON 记录；登记表与阅读页自动生成。原理论、研究、证明和回执继续保存。登记的是特定范围内的主张，不是把整个会话或一个宽泛主题当成一条定理。
 
@@ -45,24 +45,36 @@ Integration: which existing record changed; which output now meets which input
 
 ## Update and verify
 
-Edit only the affected `records/<id>.json`. Its schema is demonstrated by the seeded records; all substantive summaries are paired Chinese/English. IDs are stable semantic names, not dates or session IDs. `canonical_source` and every boundary must refer to a listed source. Record formal names as aliases where they denote the same result; do not use an entire module as an alias for one lemma.
+Edit the affected `records/<id>.json` in a directory listed in `_process/research-config.json`. Shared tools live in `tools/research/`; old dated commands remain compatibility entry points. Its schema is demonstrated by the seeded records; all substantive summaries are paired Chinese/English. IDs are stable semantic names, not dates or session IDs. `canonical_source` and every boundary must refer to a listed source. Record formal names as aliases where they denote the same result; do not use an entire module as an alias for one lemma.
 
 `recorded-checked` requires a proof source and a successful existing receipt with an exact source-hash field. `reviewed-scoped` requires a substantive statement and review. `open` is an unmet target, not a failed local theorem. The source hashes record what was read; they must never be refreshed just to silence a check. When a source changes, inspect its diff and full relevant context, revise the claim/scope if needed, then update that record's hashes and history. Preserve old scientific receipts rather than editing them to match new bytes. A changed mathematical claim requires the actual Lean check directed by Ren. Documentary reorganization alone does not require a new proof run.
 
 ```sh
-python3 _process/research/2026-10-05-generative-foundation-review/root-foundation/build_result_registry.py --search support
-python3 _process/research/2026-10-05-generative-foundation-review/root-foundation/build_result_registry.py
-python3 _process/research/2026-10-05-generative-foundation-review/root-foundation/build_result_registry.py --check
+make research-find QUERY=support
+make research-render
+make research-check
+python3 -B tools/research/research.py check --ids joint-plan-composition
+python3 -B tools/research/research.py check --changed-since HEAD
 ```
 
-The renderer refuses to update views while reviewed sources have drifted. Exit 1 means invalid metadata or outdated rendering; exit 2 means source drift. The checker verifies structural requirements, references, declaration presence, receipt hash bindings, unique aliases, dependency cycles and generated views. It does not prove semantic equivalence, audit every transitive import or establish the substantive warrant of premises. New hypotheses hidden inside definitions remain a human/research review obligation.
+A stale record keeps its earlier reading page; healthy records and the shared indexes can still render. Exit 1 means invalid metadata, an unincorporated concurrent edit, or outdated rendering; exit 2 means source drift in the selected records. Other records’ drift is reported separately. Changed-file selection follows result dependencies as well as direct source references. No hashes are refreshed automatically. The checker verifies structural requirements, references, declaration presence, receipt hash bindings, unique aliases, dependency cycles and generated views. It does not prove semantic equivalence, audit every transitive import or establish the substantive warrant of premises. New hypotheses hidden inside definitions remain a human/research review obligation.
 
 For supersession, keep the old record with `status: superseded` and `superseded_by: <id>`. Record the precise replacement scope and preserve the old evidence. `withdrawn` needs an explanation in history and a linked boundary; it never deletes the counterexample.
 
 ## Integration and concurrent sessions
 
-At study closure update the affected record, its theory chapter/README and [RESEARCH.md](../RESEARCH.md) navigation. The log points to the canonical status; it need not repeat an expanding result summary. Update the [generativity chain](../theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md) only when its scientific content changes, following its own bilingual/hash workflow. The full catalogue remains a reading guide; the [session map](../theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md) remains a dated provenance map. Neither becomes a second editable claim register.
+At study closure update the affected record and substantive theory chapter/study. Do not append status to generated README, RESEARCH, ROADMAP, CLAIMS, OPEN-QUESTIONS or foundation-index pages. Run `make research-render` to derive their navigation from records and scoped authorizations. Complete earlier text is preserved in linked historical reading editions, including original section anchors. Add new research authorization to the appropriate `_process/goals/<id>.json`; scientific status belongs only to result records. Update the [generativity chain](../theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md) only when its scientific content changes, following its own bilingual/hash workflow. The full catalogue remains a reading guide; the [session map](../theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md) remains a dated provenance map. Neither becomes a second editable claim register.
 
 Multiple sessions may add different record files concurrently. Before editing a shared record, reread its current bytes and `git diff`; reconcile new evidence rather than replacing another session's update. Before committing, inspect status and review only owned changes unless Ren explicitly authorizes a whole-repository checkpoint. After integration, inspect changes since the starting commit for new work. Report incoming work with its paths and scope; do not silently absorb unfinished proofs, refresh their hashes or mark them accepted. Finishing a structural task does not authorize an endless research or monitoring loop.
 
+If a session appended prose to a generated view, read and reconcile it into the relevant existing source/record, then use `python3 -B tools/research/research.py preserve-view <path> --note '<review and integration scope>'`. Every prior snapshot remains hash-bound. The render command serializes cooperating writers, checks metadata/source changes during rendering, and refuses unincorporated output changes. It cannot prevent arbitrary editors from changing a file after a check; rerun after new work arrives.
+
 合并时保留其他会话改动；科学证据的状态优先于登记表标签。跨会话整合要指出已经接通的推论及仍缺的对应，不能以新增索引或更多文件冒充理论完成。
+
+## Shared validation and discovery
+
+`make research-check` validates the configured registry, scoped goals, generated navigation, local targets, original-byte preservation and declared receipt bindings. GitHub Actions runs the same check and `make research-test`. CI does not build every Lean package or accept a scientific result. For mathematical changes, continue the existing source-bound Lean workflow.
+
+`make research-find QUERY=topic` searches canonical claims first, then active theory, studies and working sources, excluding frozen copies and attempts. Use `python3 -B tools/research/research.py find topic --archives` for deliberate historical discovery. `make research-imports` emits textual import candidates with ambiguous/unresolved names separated; it does not infer a conceptual composition from an import.
+
+Dependency records can include an `interface` with paired `output`, `input` and `conditions` plus a reviewed `evidence` path. Preserve whether the edge is formal reuse, application or interpretation. Reference the exact existing connecting declaration in the reviewed source; adding metadata does not establish a new mathematical bridge.

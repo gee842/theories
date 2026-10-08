@@ -1,5 +1,7 @@
 # Ethical learning across changes of concern and living
 
+**Current correction, 8 October 2026:** [§§69–72](#generative-first-correction-account) withdraw the foundational-wall status in §§62–68 and restore whole generative goodness as the basis for institutional appraisal. Earlier contraction examples remain conditional; the historical stopping narrative is superseded.
+
 8 October 2026. AI-authored theoretical continuation of the authorized generative-alignment priority, following [Ren's request to focus on theory](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#theoretical-continuation). Current formulation: [伦理学习 / Ethical learning](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md).
 
 ## 1. The precise advance and credited results
@@ -786,6 +788,8 @@ The earlier content-acquisition and unfamiliar-living accounts in theory §§31�
 
 <a id="new-reasons-and-mandate-revision-account"></a>
 
+**Historical record:** the following wall assessment and contraction emphasis are superseded by [the generative-first correction](#generative-first-correction-account). The source comparisons and conditional cases retain their original scope.
+
 ## 62. Continue acquired reasons through shared revision to a substantive wall
 
 Ren [requested continuation until a wall](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-mandate-revision-until-wall). [Theory §§67–74](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#new-reasons-and-mandate-revision) pursues the previous precise connection: acquired new living grounds entering collective review and a justified change to the entrusted task. It then tests further routes beyond preexisting authorization and records where a sufficient normative account has not been obtained.
@@ -844,7 +848,7 @@ Both comparisons limit novelty. The membership-boundary problem, consequence-bas
 
 **“The source candidates already finish the derivation.”** They provide important positive resources. Applying a consequence-based public or a dialogical institution still requires identifying relevant standing, decision scope, burden and effective uptake in this account. Repeating those source labels would leave these relations supplied. The argument records a current research limit, not the impossibility or worthlessness of further development from those traditions.
 
-## 67. The exact wall and why the run stops here
+## 67. Historical stopping claim — foundational-wall status withdrawn
 
 The unresolved class concerns a genuinely grounded new, nonemergency living need with no existing legitimate mandate, live specific undertaking, accountable harm or direct rescue ground sufficient to allocate the requested task. A proposed shared response would impose substantial burdens on dissenting positions. Voluntary supplements, justified restraint of one's own activity and available procedures have not supplied a complete response. We have not sufficiently justified who may establish a binding new arrangement, its scope or its treatment of dissent.
 
@@ -854,8 +858,120 @@ Dissent itself is not treated as an absolute primitive right. Its weight and gro
 
 The wall is substantive because it remains after preserving the actual relationships, rather than arising from an omitted word in a formalization. It is bounded because the positive routes in §§63–64 already cover interpretation repair, accountable effects, contraction, existing procedure and justified cooperative formation. It is not the revival of completed axiom-free grounding, practical judgment or local correction tasks.
 
-## 68. Result, status and documentary record
+## 68. Historical result and documentary record — see corrected status below
 
 Completed now: scoped admission of acquired grounds, distinctions among types of mandate change, a constructed shared revision history, examination of further authority candidates, primary-source comparison and author counterreview. The run stops at the stated first contested-authorization wall, as requested. No new theorem, experiment, independent-agent acceptance or full-foundation completion is claimed. Mathematical work was not added because the unresolved step concerns substantive warrant, not a missing proof of a supplied command condition.
 
 The new philosophical sections, exact user source and scoped bilingual M20 update are bound by [owned edits](MANDATE-REVISION-WALL-INDEX-EDITS.json) and [documentary checks](MANDATE-REVISION-WALL-CHECKS.json). Prefix, link and rendering checks certify their documentary consistency, not the philosophical argument or freshness of unrelated ongoing research.
+
+
+<a id="generative-first-correction-account"></a>
+## 69. User correction: appraise generative goodness before institutional form
+
+[Ren's exact correction](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#generative-good-before-institutional-power) challenges the preceding focus on contracting institutional power. [Theory §§75–77](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#generative-good-before-institutional-power) implements it. The error was not a universal quantifier in the sentence: the preceding text said “can.” The error was making limits and contraction the salient direction, then elevating a first-authorization question into a separate foundation gate before adequately examining the proposed organization's generative quality.
+
+The priority follows the already authorized G0 route and nondual method. Activities form shared understanding, coordination, capacities and positions of decision. Evaluate the lives, possibilities, diversity, continuing organization and actual losses realized through these relations. Expanded institutional capacity can be a positive realization. Its significance need not first be justified as an exception to a presumption against power. Nor does contraction become good merely by reducing the reach of a controller.
+
+**Status correction:** withdraw the claim in §§62–68 that this strand has reached a substantive foundational wall at first contested authorization. Retain the earlier reasoning as history and its actual conditional applications. This is a correction of the inquiry's ordering, not a proof that every disputed institutional arrangement is justified or that questions of binding decisions disappear.
+
+## 70. Affirmative connection and exact dependency scope
+
+The constructive shared-learning history makes expanded coordination part of the proposed good: retaining materials, sustaining teaching and making different languages and research directions practicable. Within the stipulated no-countervailing-loss comparison, existing J1 supports the improvement. In a genuine mixed case, the comparison must use the previously disclosed commitments and preserve actual losses; the example does not supply a universal scalar or force all cases into J1. It is a constructed application, not evidence about a real education institution.
+
+The support for organization comes from what it helps realize and from the organizing relationships themselves. Participation can be a constituent of living, while also contributing to knowledge and continuing cooperation. Responsibility concerns actual undertakings and dependencies; justified scope for decision concerns what those relations warrant. Neither all of these relations nor their value is exhausted by an output score. Institutional boundaries, dissent, agreement and review remain assessable within that account, without becoming independent starting domains.
+
+G0, J1–J4 and epistemic correspondence keep their existing roles. No new authority axiom is adopted, and no claim that G0 alone entails every implementation power is made. Existing local models may correctly supply a legitimate mandate for their own scope. That supplied input does not prove that a standalone authorization theory must be completed before the broader generative account can explain the formation of good organization. The previous transition from a local premise to a foundation-wide stopping condition was unwarranted.
+
+## 71. Author counterreview and retained source scope
+
+**Does this merely reverse the slogan and favor expansion?** No. The constructive case warrants growth only through the specified actual gains and comparison. A harmful loss of plural learning in the same history changes the premises. Maintenance, more support, altered coordination and contraction remain candidates. No name or direction of power change supplies the ethical verdict.
+
+**Does “good first” treat affected lives as expendable inputs?** No. Their actual living, participation, burdens and continuing possibilities belong to the whole being appraised. G0/J's already stated commitments prevent deleting those contents to manufacture an apparently favorable comparison. This correction neither replaces those commitments with aggregate output nor treats refusal as automatically decisive.
+
+**Has a missing institutional explanation been solved by relabeling it?** No. The withdrawn claim concerns the status and priority of the alleged wall. A concrete contested allocation can still need a fuller argument about organization, burdens and decision scope. It must be examined through its actual generative relations and losses; the mere absence of prior permission does not establish the alleged general theoretical impasse. No formal or empirical resolution of every such conflict is claimed.
+
+**Are valid earlier restraint cases being erased to agree with the user?** No. Cases with independently established harmful use, defeated purposes or justified transfer retain their conditions. They do not establish contraction as the direction of alignment. The exact earlier texts and their source readings remain available; supersession notices mark the inference being withdrawn.
+
+**Does the criticism reject Western authors by origin?** No. Earlier Dewey and Fraser comparisons retain only their originally recorded reading scope. Their accounts can inform particular questions without governing this theory's starting point. No new source reading, empirical corroboration or claim that either author's entire position has been refuted is made. The specific rejected move is our own importation of a restriction/authorization-first framing.
+
+## 72. Current result and documentary scope
+
+This round corrects the direction of the account: whole generative appraisal → warranted formation and revision of shared organization and capability. It restores an affirmative route for constructive expansion while retaining real losses, philosophical disagreement and the accepted explicit-axiom structure. Completed direction, concern acquisition and conditional implementation results remain reusable; they are not reopened or retroactively reverified.
+
+The exact user text, canonical correction and current navigation are synchronized with paired M20 claim, scope and connection fields. Historical wall passages remain explicitly superseded. [Owned replacement record](GENERATIVE-FIRST-CORRECTION-EDITS.json) preserves replaced text and baseline hashes; [documentary checks](GENERATIVE-FIRST-CORRECTION-CHECKS.json) check links, reversible edits, the paired row and unchanged accepted direction. They do not certify philosophical truth, independent acceptance or the freshness of other sessions' research. No new theorem or experiment is introduced.
+
+
+<a id="monist-organizational-warrant-account"></a>
+## 73. Monist continuation: result identity and substantive delta
+
+Result: `organizational-formation-from-generative-comparison`, with [current theory §§78–84](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#monist-organizational-warrant). Reuse `practical-judgment-g0-j` and `alignment-direction-g0-j`; retain their earlier independent acceptance and source scopes. Reuse the unmigrated conditional accounts of acquired basic conditions, unfamiliar-living recognition and meaningful succession. The earlier generative-first correction supplies the governing direction and is incorporated in this result's genealogy, not counted as a second theorem.
+
+**Delta:** move from a direction correction to a conditional derivation of organizational formation as a practical requirement. The general checked inference constructs a nonempty undefeated range and excludes every continuation missing a relation for which a superior eligible continuation can be constructed. A worked whole-history application derives a required coordinating function while leaving either of two carriers available. The inquiry then tests a coarse self-assessment, repairs its representational omission, and examines the stronger normative-content connection.
+
+**Inputs retained:** one generative history with warranted local distinctions; G0 and explicit J commitments; actual correspondence of protection, losses, feasibility, candidate eligibility and improvement. Finite-menu scope and physical support laws are local inputs. No universal feasibility, infallible judgment, authority flag or convergence assumption is generated by monism.
+
+**Output-to-input connection:** PracticalJudgment's `finite_frontier` supplies a nonempty undefeated choice and `dominated_excluded` rules out a deficient choice given a real improving witness. `formation_required_of_improvable_absence` assembles these outputs into `Required ... formed`. This is a verified inference, not a claim that three independently scoped studies already share one physical process.
+
+## 74. The affirmative philosophical proof and its exact normative strength
+
+First reconstruct activity forming further conditions, including shared memory, understanding, coordination and execution. The corresponding institutions and roles are differentiations of that history. A controller and a separate world do not precede their relations. Preserving a complete history while redrawing an institutional boundary cannot by itself delete another living realization or burden. This uses the existing nondual method, not a new proof that all reality is monist.
+
+G0 then supplies the positive significance of living and further generation. J1/J2 and the practical commitments give their already defended, scoped comparative force. If building an organizational relation is what makes a superior whole continuation possible, its constructive role can support formation. More strongly, when every eligible continuation lacking that relation is defeated and an undefeated choice exists, every such choice includes it. The formal proof obtains nonemptiness from finite scope; the argument does not impose an unattainable optimum on arbitrary infinite histories.
+
+The whole-to-role inference concerns an actual role within that warranted continuation. It does not declare each separately redescribed part intrinsically good or authorize every action a named institution might perform. Real losses remain losses even where a whole plan is justified. Conversely, a justified organizational contribution need not first be cast as an exception to a generic restriction on power. The full activity, including formation and decision scope, is what needs practical justification.
+
+This avoids an equivocation about `eligible`. The general theorem's predicate is supplied; its normative interpretation requires full warrant. The concrete example uses a physical support test for its candidate menu. Kernel checking of that test does not certify real institutional permission. The new argument demonstrates how a functional organizational requirement follows once the whole comparison and candidate scope are warranted; it does not pretend to have deduced those premises from a budget. Nor does that remaining correspondence restore a separate restriction-first authorization gate.
+
+## 75. Mathematical correspondence, inheritance and actual checks
+
+[RelationalOrganization.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean) imports only the unchanged PracticalJudgment module, which imports Std. [The checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_relational_organization.py) builds both from captured bytes in a fresh directory and retains source snapshots, signatures, logs and per-declaration axiom reports. [The successful receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json) records Lean 4.29.1 and exact hashes. Standard dependencies are `propext`, `Classical.choice` and `Quot.sound` where reported; no custom axioms or proof placeholders occur.
+
+There are **13 new theorem declarations / 29 named-declaration audits**, plus **30 inherited theorems / 46 inherited audits**. The count includes instances and a definitional identity, not thirteen independently justified moral principles. Failed initial compilations remain in the retained run history; only the final successful snapshot supports the claim.
+
+| Declaration or group | What it establishes | What remains supplied |
+|---|---|---|
+| `formation_required_of_improvable_absence` | Finite nonempty eligible alternatives plus strict transitive comparison and improving witnesses imply the relation in every undefeated choice | Eligibility warrant, comparison warrant, actual improving constructions and relation meaning |
+| `left_better_than_idle`, `left_better_than_overbuild`, `coordination_is_required` | The two-level comparator supports formed coordination in the concrete history | J2's normative priority and the basic-claim correspondence |
+| `formation_has_a_real_loss` | A forgone occasion remains explicitly represented | The occasion's nonbasic classification in this example |
+| `frontier_exactly_the_two_working_routes`, `neither_named_route_is_required` | Either working route suffices; no one route is universally required by this comparison | Real-world equivalence or uniqueness of carriers is not inferred |
+| `more_construction_can_defeat_its_own_basis` | Actual support depletion defeats overbuilding's living claim | The local spending and retention laws |
+| `no_construction_report_only_basis_judge` | The produced construction report cannot classify retained basis across these histories | The declared report content; not a universal limit on inquiry |
+| `amount_sensitive_repair_recovers_the_local_basis` | Obtaining the specified amount recovers this already defined condition | Faithful access to amount and the condition's meaning; it is a definition audit, not new semantic grounding |
+
+The case does not begin with primitive persons competing for property. Two indexed protection contents describe a shared continuation, and route names describe positions through which the relation forms. The six-unit stock, two-unit minimum and selected phase effects are a narrow representation. It preserves construction cost, retained basis, renewed participation and a lost occasion; it omits empirical living identification, full institutional process and the formation of the measuring apparatus. Those omissions limit application, not the logical validity of the stated inference.
+
+## 76. Source assessment and genealogy
+
+The immediate primary source is [Ren's exact instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#monist-proof-until-wall), read with the preceding correction. It authorizes a monist proof attempt and continued testing, not attribution of the new theorem or model to Ren.
+
+The supplied text [智能向善，天下生生](../../../../sources/15-user-provided-2026-09-06/智能向善，天下生生.md) was read in full. Its positive account of shared capacity, learning, care, rest, differentiated development and continuing transformation supports the present interpretation of institutional growth through what it enables. Its normative proposals are primary theoretical material, not empirical verification of every causal or historical assertion in it. This round does not assume that all enlargement of control is bad, nor convert a call for plurality into one preset institutional design.
+
+The older imported [R · 与生生不息对齐之必然](../../../../sources/07-shengsheng-buxi/ssbx-repo/义理/R_与生生不息对齐之必然.md) was inspected at its opening thesis and §3.5, alongside its recorded proof-summary context. Its power-as-inherently-antigenerative and universal necessity formulations are historical claims, not premises silently carried into this proof. Ren's current correction governs interpretation. No source bytes were changed, and its printed past compilation claims were not treated as a fresh check of those original modules. This review does not evaluate the entire essay or its claims about contemporary AI methods.
+
+The [current nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), practical principles and [acquired basic conditions](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions) supply the actual interpretive controls. In particular, indispensability for one organization is distinct from an irreplaceable condition of living. Earlier Dewey/Fraser comparisons retain their previous reading scope; they do not establish the ordering or authority of the current proof. No new external empirical study is claimed.
+
+## 77. Substantive author counterreview
+
+**“The proof assumes its ethical conclusion in `formed`.”** It does not: that predicate describes the represented operating relation. The general improvement premise is substantively strong and explicit. It needs an independently warranted construction and complete comparison. The theorem adds the necessity inference and nonvacuity; it does not prove that every context supplies the premise.
+
+**“Eligibility still hides the old authority wall.”** The predicate marks the theorem's input scope, not a new independent moral source. Actual formation, burdens, means and decision relations require whole practical appraisal. The four-case predicate is merely physical feasibility and is labeled as such. Claiming that its truth alone licensed a real institution would be an overreach expressly excluded here.
+
+**“The example makes construction costless.”** Formation consumes two units and loses an occasion; J2, not J1, supports the stated comparison. Classification of that loss and retention of all other basic contents are supplied. If the occasion is a final irreplaceable participation, or the support depletion injures another basic condition, the model's correspondence changes and its verdict cannot simply be reused.
+
+**“Carrier freedom means smaller or distributed institutions are better.”** No. Only two stipulated routes are equally adequate. No general claim about institutional scale or concentration follows. A unique actual capability can require a particular carrier; positive expansion can be warranted. The lesson is to justify the actual relation rather than infer sovereignty or contraction from a label.
+
+**“The countercase refutes the full nondual theory by omitting relations.”** No. It refutes only the inference from a true construction report to the represented living basis. The full model retains actual depletion, so the omitted measurement can be identified and repaired. The theory itself directs that repair. This is why the report countercase is not announced as the final wall.
+
+**“The remaining gap demands omniscience or axiom-free ethics.”** No. Fallible recognition, timely inquiry, contextual judgment, acquired conditions and the G0/J commitments remain available and reusable. The stronger tested inference asks whether organizational necessity, proliferating structure or current recognition alone supply the specific basic-content comparison for a newly formed living configuration. They do not yet do so. An additional substantive axiom is permissible but must state what it protects and why; a universal blanket priority for all incumbent organizational necessities is too broad.
+
+**“Another session already completed this.”** General practice, acquired-condition principles, observation limits and conditional wisdom are credited as prior work. This round adds the precise organizational requirement and its checked output-to-input composition, then locates the unclosed new-form correspondence. It does not claim to originate all relations between knowledge, power and living, or reopen other completed theorem families.
+
+## 78. The tested limit and current status
+
+The stronger passage still lacks a sufficiently defended identification of the concrete living content and basic-priority significance of unfamiliar forms newly produced by organization. Necessity for an incumbent process can be altered by a warranted change of carrier; more future organization does not measure every actual good; present recognition can miss the very new content at issue. These are failures of proposed sufficient routes, not proof that the whole account is false or that no further axiom could help.
+
+The local observation omission has been repaired, so it is not confused with that explanatory limit. Existing acquired-basic-condition principles already require assessment by actual living role; the remaining work is their substantive application where the living contents themselves cannot simply be borrowed from the known case. The philosophical distinction is not certified by freely switching a predicate in the Lean model. The model instead makes the supplied interpretation visible, and the further argument examines why the suggested structural substitutes do not earn it.
+
+**Completed at scope:** a monist reconstruction of organizational appraisal, a conditional formation requirement, a paid constructive instance with carrier latitude, an explicit failed overbuilding history, and a repaired local report. **Not completed:** a general derivation of specific normative content for every newly formed living configuration, inevitable motivation or behavior, empirical institutional validation, or the unified foundation as a whole. The stronger limit does not suspend the completed explicit-axiom alignment direction.
+
+This is the requested stopping point for this run after testing the further connection. [Owned integration record](MONIST-ORGANIZATION-INDEX-EDITS.json) and [documentary checks](MONIST-ORGANIZATION-CHECKS.json) cover source preservation and the scoped bilingual index. The result record supplies one maintained summary; this study remains the argument and evidence location. Author counterreview is not independent-agent acceptance.

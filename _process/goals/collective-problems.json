@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "collective-problems",
+  "title": {
+    "zh": "共同问题与可修订目的",
+    "en": "Common problems and revisable purposes"
+  },
+  "scope_type": "authorized-session",
+  "scope": {
+    "zh": "集体对齐会话的提醒；同时作为相关研究选题时的方法约束。",
+    "en": "The collective-alignment session’s reminder, also a methodological constraint when relevant studies choose their questions."
+  },
+  "objective": {
+    "zh": "研究共同活动如何辨明、解决问题，并修订问题、目的和组织。",
+    "en": "Investigate how shared activity identifies and addresses problems while revising problem statements, ends and organization."
+  },
+  "premises": {
+    "zh": "不默认对立利益、筹码、谁赢更多或固定共同效用；保留实际冲突。",
+    "en": "Do not presume opposed interests, bargaining leverage, who wins more or fixed shared utility; retain actual conflicts."
+  },
+  "completion": {
+    "zh": "复用已完成机制，明确新的共同问题形成与回应连接。",
+    "en": "Reuse completed mechanisms and identify the new connection in forming and responding to common problems."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md#common-problem-solving-and-awareness",
+    "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md#common-problems-and-revisable-purposes"
+  ],
+  "result_ids": []
+}

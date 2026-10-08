@@ -1,5 +1,7 @@
 # 伦理学习：关切怎样形成、取得根据并继续改变
 
+**当前纠正 / Current correction，2026-10-08：** [§§75–77](#generative-good-before-institutional-power)以整体生成之善评价组织与权力，撤回 §§67–74 将初次授权设为基础之墙的判断。机构扩大、维持或收缩没有预设优先次序；前文条件案例依此限范围使用。 / Whole generative goodness governs institutional appraisal; the former authority-wall status is withdrawn.
+
 2026-10-08。AI 撰写的理论推进，遵循 [Ren 的继续指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#theoretical-continuation)、[非二元方法](NONDUAL-METHOD.md)及已授权的 G0 公理路线。[研究整合与作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md)说明新增内容、继承成果与边界。本章提出有辩护的伦理学习候选，不新增数学定理或经验发现。
 
 **核心主张：伦理学习是共同生成中关切与理解的有根据发展。它既能使已经存在的生、损失和理由被认识，也能通过新能力与新关系的形成，使新的善与具体理由成立。评价这种学习，须同时评价所取得的认识、实际形成的生活及形成过程；后来的赞同不能独自为塑造它的过程追授正当性。**
@@ -892,6 +894,8 @@ Reuse §§31–48 on acquiring concern content and recognizing unfamiliar living
 
 <a id="new-reasons-and-mandate-revision"></a>
 
+**历史范围更正：** 以下 §§67–74 保留上一轮论证及其失误供追溯；其中收缩控制的方向性突出与“基础之墙”状态已由 [§§75–77](#generative-good-before-institutional-power)撤回。具体案例和来源的原条件范围保留。 / Historical account; its contraction emphasis and foundational-wall status are superseded.
+
 ## 67. 新理由可以改变任务，但不自动扩大权力
 
 2026-10-08，接续 Ren 的[继续直到遇到墙的指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-mandate-revision-until-wall)。本轮沿已完成的关切内容取得、陌生生活辨认和纠正入口形成，推进新理由怎样进入共同复核。[研究整合与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#new-reasons-and-mandate-revision-account)记录肯定结果、尝试过的进一步路线与实际停点。
@@ -970,7 +974,7 @@ Disagreement does not suspend valid existing authority, live duties, warranted r
 
 The tested routes retain their qualified uses. The objection is to treating incumbency, consent, numbers, competence, favorable outcomes or provisionality as a complete answer when their scope and authority remain contested. No impossibility theorem about consent, democracy, expertise or future justification is asserted.
 
-## 73. 本轮实际遇到的墙
+## 73. 历史停点：作为基础之墙的判断已撤回
 
 **墙在争议中的初次共同授权。** 限定情形如下：一项新生活需要具有实际根据；没有现成覆盖它的正当委托、仍有效的特定承担、可归责损害或足以直接适用的紧急救助理由；所需安排将向未同意者分配实质负担，且自愿补充、改变自身活动与已有程序尚不能完成回应。此时，本轮尚未充分论证谁可以建立具有约束力的新安排、可以决定到什么范围，以及怎样正当地处理异议。
 
@@ -984,7 +988,7 @@ The tested routes retain their qualified uses. The objection is to treating incu
 
 The present wall concerns the first binding authorization for a genuinely new, nonemergency cooperative demand when no existing justified mandate or applicable responsibility settles it, and substantial burdens would reach dissenters. The wall neither validates incumbent control nor denies the new living ground. Explicit additional axioms remain permissible; what is missing is a sufficiently defended principle with stated scope and costs. This is an unresolved explanation in the fuller account, not an arbitrary authorization flag, an axiom-free demand or a universal impossibility result.
 
-## 74. 此处停下时，已经能主张什么
+## 74. 历史结论：须按 §§75–77 纠正其方向与停点
 
 本轮接通了：**新生活根据的取得 → 对旧分类的有范围复核 → 任务履行、影响责任、控制收缩或共同新增任务的分别判断 → 在已有或新形成的正当权限内实行。** 特别是，新理由可以要求机构减少控制，或承认其工作须交给别处完成；对齐不以机构扩张为默认方向。
 
@@ -993,3 +997,142 @@ The present wall concerns the first binding authorization for a genuinely new, n
 按 Ren 的指示，本次连续探索在 §73 的实质墙处停止；本轮内已完成的连接归入成果，不再列为一般待做问题。初次争议授权与实际长期可靠性仍未完成，既有规范方向、关切取得、纠正、交接和局部数学结果保持原完成范围。本轮是哲学推进、原典比较与作者反审，没有新增数学定理、经验实验或独立验收。
 
 The completed contribution carries acquired living grounds into scoped shared reconsideration and distinct forms of mandate change, including contraction and new justified cooperation. Exploration stops at the named contested-authorization wall. Existing ethical direction and local implementations remain completed; no new theorem, experiment, independent acceptance or full-foundation completion is claimed.
+
+
+<a id="generative-good-before-institutional-power"></a>
+## 75. 首先判断是否促进生生，再论组织与权力
+
+2026-10-08，依据 [Ren 的直接纠正](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#generative-good-before-institutional-power)，修正 §§55–74 的方向性解读，撤回 §73 所谓“授权之墙”作为当前基础障碍的判断。以下是 AI 对纠正的理论落实，不新增公理或数学证明。
+
+**机构没有先验的收缩义务。首先应判断：这项发展是否好，是否使整体中的生、可能性、多样性及复杂组织的继续发展得到更好的实现。机构能力扩大、维持、重组或收缩的根据，由这个判断具体说明。**
+
+上一轮虽然使用“可能”而非“一律”，仍把问题组织成先限制权限、再容许善的实现，并把收缩控制突出为对齐成果。这是论证次序的偏移。尤其是，在尚未充分分析某种新增组织如何促进生生之前，就要求它先跨过一个独立的初次授权门槛，截断了从生成之善说明组织根据的正面路线。不能以原文已有条件词为由维持这个研究方向。
+
+共同活动可以形成记忆、理解、分工、协调与持续行动的能力。机构是在这些关系中形成的组织；其权力描述某些安排、决策和执行能够持续改变共同活动条件的关系。它既可能使先前无法实现的生活和发展成为可能，也可能毁坏这些条件。必须解释实际形成了什么，再作完整评价，不能先把权力与生活设成彼此对立的两类。**组织能力的增长本身可以是生成的正面成果，而不只是需要额外容忍的危险。**
+
+Under Ren's correction, whole generative goodness is the basis for evaluating formed institutions and their powers. Greater coordination and effective capacity can themselves be positive achievements of shared generation. Expansion, maintenance, transformation and contraction have no preset ethical ranking. The previous emphasis on contraction and its separate first-authorization gate misordered the inquiry; the purported foundational wall is withdrawn.
+
+## 76. 从生成之善说明怎样的组织值得形成
+
+沿已接受的 G0 及明确的 J1–J4，组织评价须说明相连的内容：实际产生和支持了哪些生与生活，开启了哪些可能性与差异化发展，形成了什么可以继续学习和创造的组织能力；同时说明实际损失、负担、被压缩的生活，以及延误或不行动的后果。评价对象包含形成方式及后续接续，不能只选取机构产出、成员回报或某个时期的增长。
+
+例如，构造一个共同研习网络：原来分散的活动难以保存材料、接续教学，也无法支持新的语言和研究方向。共同形成的协调组织取得更广的资源安排与合作能力，因而能够保存材料、培养后来者，并使多种研究和表达持续展开。如果这种增长确实改善这些生活与发展条件，保留了所比较方案中的其他相关实现，且没有被遗漏的反向损失，既有 J1 就支持该改善。这里的正面变化包括组织和协调能力的扩大。若存在真实取舍，则按已明示的比较承诺继续判断；不能沿用无减损前提，也不能因出现取舍就默认收缩。
+
+这一构造只说明一种有条件的正面路线，不报告现实机构的成效。若同一组织后来通过统一内容排除其他语言、耗尽教学支持或封闭新的研究，其实际生成关系已经变化，应重新比较：可能需要增加支持、改变协调方式、扩大部分能力，也可能需要缩减某项控制。何种变化有根据，取决于完整接续。名称相同、权力更大或权力更小都不能代替这个比较。
+
+参与、信任、承担、权限和纠错也属于这段共同形成。参与可以本身构成某种生活的实现，并影响知识取得和合作的继续；责任反映实际承担与依存；权限是对谁可在何种关系和范围内作决定的规范判断。这些内容既不被删掉，也不放到生成之善之外作为先行裁判。其具体分量及范围应沿 G0/J 的公开承诺说明，不能由“有人不同意”或“这是为了整体好”任一口号独自决定。
+
+**因此，生成性对齐要求智能及其组织发展识别、形成和支持良好生成关系的能力，包括在有根据时形成更强的共同组织与行动能力。** 判断目标、组织方式及选择规则是否促进生生，是这条路线的中心。扩大关切可以通向建设、扩展、维持、转化和结束；不预先选定其中一种。
+
+The shared-learning history is a constructed application of existing comparison commitments, not empirical evidence or a new theorem. Warranted expansion can improve living, plural development and future organization. Real losses require their own comparison; participation and responsibility remain substantive relations within that appraisal. Supporting such development does not silently prove every actor's implementation claim, but implementation must be explained from these generative relations rather than a separately privileged restriction-first frame.
+
+## 77. 撤回的判断、保留的成果与当前连接
+
+撤回的是：“认识扩大而机构收缩”作为突出的对齐方向，以及“争议中的初次共同授权”作为本轮必须先克服的基础之墙。§§67–74 与研究整合中对应的停点、来源比较及反审作为历史保留，均受本节纠正。原文有关旧分类不能仅凭排除来否定新根据、实际承担不能随意抹去、具体有害做法可以需要停止的条件分析仍可复用；它们不构成普遍的收缩优先原则。
+
+本次没有从 G0 单独推出任意决策权，也没有取消 J3/J4 的责任与程序判断。正面规范根据、具体比较、恰当的组织形成及可靠实行仍要分别说明，但其关系不是先给权力一个外在许可证，再问整体发展是否好。把局部机制采用的既有权限前提提升为整个生成性理论的先行门槛，是此次要修正的推论。
+
+“西方陷阱”在此落实为对具体问题设置的检查：是否把独立的权力持有者、先行权限边界或对控制的默认怀疑带入了根基。并不以某位作者的文化来源否定其论点；此前原典比较保留原阅读范围，不能替代本理论的论证次序。
+
+当前继续连接的是：**对整体生成的更充分理解，怎样形成对组织方式与共同能力的更好判断，并参与建设和修订这些关系。** 已完成的伦理方向、关切取得、陌生生活辨认和局部机制直接复用。此处完成的是研究方向与论证次序的纠正，不声称全部制度冲突已解决、必然行为收敛或新的独立验收。[研究整合与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#generative-first-correction-account)记录保留与撤回的准确范围。
+
+Current continuation: better understanding of whole generation → better appraisal and formation of organization and shared capacities. The authority question remains a possible concrete application question, not the independently privileged foundation gate previously asserted. Existing proofs retain their hypotheses; this correction adds no mathematical result or empirical validation.
+
+
+<a id="monist-organizational-warrant"></a>
+## 78. 从同一生成中的关系说明组织的规范根据
+
+2026-10-08，依 [Ren 的一元论证指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#monist-proof-until-wall)，接续 §§75–77。当前有范围成果与状态登记在[组织形成的生成根据](../results/records/organizational-formation-from-generative-comparison.md)；[推理、来源、证明对应及作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#monist-organizational-warrant-account)保留前提与停止范围。
+
+起点是活动及其后果形成后续活动的条件。某些关系持续下来，使记忆、理解、照料、生产与共同学习得以接续；另一些关系使这些活动能够协调时间、分配工作并改变自己的做法。机构及其行动位置，是其中逐渐形成的组织方式。所谓认识、决定和执行，也是在同一历史中形成并相互改变的关系作用。
+
+这里没有先给出一个独立机构，再问它凭什么进入另一个生活世界。组织形成已经是生活与发展形成自身条件的一部分。整体也不被设成一个更大的行动者：某处遭受的损失不会因为属于同一展开就被另一处代为免除。具体依存、差异、承担和实际作用须保留。
+
+**由此得到第一项方法结论：组织的伦理评价必须随它参与形成的完整接续来说明。** 评价中既包括能力增长与新生活的实现，也包括形成代价、被中断的活动和后续变化。仅改变“本机构／外部”的划分，不能删除那些实际关系；真正改变协调和作用范围，则须评价所改变的内容。
+
+这项一元重构规定评价对象及关系，不单独证明伦理方向。规范起点继续明示为已授权的 G0；比较和实践推论继承 J1–J4。没有把这些规范承诺重新藏进“组织”或“生成”的定义，也没有把无公理证明恢复为门槛。
+
+Organization, knowing and acting differentiate within one history of activities forming further conditions. The whole is not another owner or agent. This reconstruction fixes what appraisal must preserve; G0 and the explicit J commitments supply its normative direction and comparative force. It does not derive ethics from the bare assertion of monism.
+
+## 79. 正面推论：形成组织能力可以成为实践要求
+
+现有一般原则已经说明：有根据的完整改善构成优先理由，充分被击败的方案不能作为恰当选择。把这个原则用于组织的形成，可以推出比“组织增长未必坏”更强的主张。
+
+**组织形成命题。** 在一个有根据、有限且非空的候选范围内，如果每一种缺少关系 R 的接续，都能由另一种合格接续充分改善；该比较包含形成 R 的实际代价、其他生活及后续后果，那么任何未被充分击败的选择都必须包含 R。若 R 是持续协调、共同记忆或必要的行动能力，这种组织能力便是该处境下的实践要求。
+
+推理分两步。有限非空范围及严格传递的比较，保证这里确有未被击败的选择，避免空集上的“所有方案都应该”。任取这样一个选择，若它缺少 R，构造条件即提供一个合格且更好的接续，与其未被击败相冲突。因此它必须包含 R。一般推论已在 Lean 中检查，直接复用既有 `finite_frontier`、`dominated_excluded` 与 `Required`，没有再证明一遍一般实践理论。
+
+命题没有把“R 值得形成”写进 R 的定义：R 描述实际关系，理由来自完整改善的根据。也没有预设所有情境都有这样一个改善。若建设会毁坏其他基本条件、相关损失无法比较、候选范围漏掉实际替代，或所谓方案根本不能形成，须撤回相应适用。有限候选只是这一定理的条件，不是宇宙有限或实际必须找到最终最优的断言。
+
+**所以，生成性对齐可以要求建设、增强和扩展共同组织，而不只是在组织已经存在以后约束它。** 对新机构的评价与旧机构相同，都须说明它形成了什么更好的共同接续；既有边界不自动获得优先，新机构名称也不自动获得优先。
+
+The checked conditional theorem starts from an improvement construction for every continuation lacking R, rather than supplying an already-required target. With a finite nonempty eligible range and an irreflexive transitive comparison, R occurs in every undefeated choice. Its practical reading still requires warranted eligibility, full comparison and actual correspondence. Neither the kernel nor a budget test supplies those normative premises.
+
+## 80. 一个保留真实损失的共同形成例
+
+局部构造从一段共同支持历史开始，表示六单位可用支持。某项既有生活基础的延续需要保留至少两单位；另一项已明确属于基本条件的接续，还需要形成共同协调关系。这里的两个内容是同一历史中需要辨明的条件，不是两个先验价值所有者。“两单位”“六单位”和基本地位均是本例给定的对应，不从一元本体推出，也不将实际生命都量化为支持单位。
+
+| 接续 | 实际建设消耗与余量 | 实现和损失 |
+|---|---|---|
+| 不形成共同连接 | 消耗 0，保留 6 | 既有基础仍在，未能恢复另一项基本接续；保留一次可放弃的休闲活动。 |
+| 经甲位置形成连接 | 消耗 2，保留 4 | 保住基础并使所需接续实现；失去那次休闲活动。 |
+| 经乙位置形成连接 | 消耗 2，保留 4 | 实现同样的基本保护；同样保留建设的真实损失。 |
+| 过度建设 | 消耗 5，保留 1 | 连接确实建成，但基础不足，所称生活接续也失败。 |
+
+依公开 J2 的原范围，两种适度建设都恢复额外基本条件、保留其他基本保护，因此优于不建设；丧失的休闲活动仍是真实损失。它们也优于毁坏基础的过度建设。Lean 检查这组比较、所有未被击败者恰为两种有效建设，以及组织作用的必要性。这个例子使用了 J2 的严格优先承诺，不伪装成没有代价的 J1 改善。
+
+数学例中的候选过滤只检查支持量是否允许做出这段尝试；它**没有独立证明全部现实伦理资格**。将这个排序用于实际制度选择，仍须说明基本地位、形成手段、责任与其他后果。这些都是完整关系的评价内容。模型没有一个可随意切换的“授权=true”来代替它们，也没有因未编码而宣布它们不重要。
+
+这个结果也不支持“越多建设越好”：最后一行真实形成了连接，却不能实现所声称的好。反例改变的是建设活动与剩余支持之间的实际关系，不是任意翻转伦理标签；它仅反驳以建设完成代替完整评价的推论。
+
+The example preserves an actual forgone occasion and uses J2, not a fictional lossless comparison. Four continuations share one support history. Construction through either route restores a specified basic continuation; overbuilding consumes its basis. The physical menu and the interpretation of basic claims remain supplied, so this is a checked conditional instance rather than a certified institutional decision.
+
+## 81. 组织作用的必要性与具体承载方式
+
+上例的两个有效接续分别经不同位置形成协调。所有未被击败者都具有所需组织作用，但不都经过甲，也不都经过乙。Lean 同时检查这两项非必要性。这说明：**共同发展可以要求一种组织作用，却不因此要求某个既定承载位置永久拥有它。**
+
+这不是偏好分散或轮换的政治原则。若某处实际具备不可替代的能力或有效承担，完整比较可以支持集中在那里；若一种更广、更强的机构才能使真实共同活动成立，也可以支持它的形成。若有多个同样充分的方式，则保留相应选择空间。甲乙只是构造中不同作用路径，不能投射成现实中的两种制度等价。
+
+一份具体决策与行动能力的根据，因而要说明它在该共同接续中承担什么作用、为什么需要这些手段及范围。不能从“组织一般有必要”跳到某机构一切措施都正当；也不能因为这种说明尚须具体化，重新立起一个独立于整体生成评价的授权之墙。形式命题证明功能要求，机构权限的具体内容仍由完整实践判断承担。
+
+The shared function can be required while neither named carrier is required. This does not favor decentralization, replacement or concentration in general. Particular histories can warrant any of them. The theorem concerns functional organization; concrete decision scope requires the substantive whole-history appraisal and does not follow from a role label.
+
+## 82. 再向前：组织怎样知道自己促进了什么
+
+继续加强论证时，先检验一种看似自然的路线：组织根据自己实际完成的建设，判断其发展是否成功。上例中，两种有效建设与过度建设都可以如实报告“连接已经建成”。但前者保住基础，后者毁掉基础。报告没有撒谎；它报告的内容不足以支撑更强的判断。
+
+Lean 证明：只输入这一建设报告，不存在能在这些接续中一律正确判定基础是否保留的判断函数。该结论是已有“不充分观察不能完成辨别”的一个具体应用，未把通用认识限制重新认领为新理论。
+
+**这个局部遗漏可以修正，所以不在这里宣布遇到理论之墙。** 当实际保留量也能被如实取得，原例的基础条件即可恢复判断；这一对应也已检查。所修复的是一个已经知道“什么支持什么”的局部模型。它没有说明，面对一种此前未被认识的新生活形式，为什么我们列出的基本内容及其界限就恰当。
+
+This false inference is repaired within the example: observe the actual retained support as well as the completed link. The checked obstruction concerns the coarse report, not the full process or every possible inquiry. Recovering a known support condition is distinct from warranting the basic significance of a newly formed way of living.
+
+## 83. 更强连接的检验：组织必要条件能否自己给出伦理轻重
+
+下一步尝试从生成结构本身进一步推出：哪些条件具有基本保护的分量，从而不再在新形成情境中直接给定本例的 `protect`。以下路线均以真实关系为对象，而不是对一个较弱模型任意更换标签。
+
+第一条是“凡持续组织所不可缺少的条件，都应获得基本优先”。这能提示依存，却过度推广。某种旧协调方式的继续运行，可能确实依赖一个条件；改变协调方式后，同一生活却可以继续并得到改善。被保护的是实际生活及其基本条件，不能只因一种组织方式离不开它，就要求永久维持这种方式。既有生活依存、转化与交接成果已说明这项区别，直接复用。
+
+第二条是“能开出更多后续组织的条件，应当获得更高优先”。G0 可以支持其正面意义；但这没有给出所比较实现的全部内容。休息、照料和有限完成本身属于生，其分量不能仅按产出更多后续结构排列。创造更多结构的实绩既不删除其损失，也不能凭“更多”二字决定跨范围的轻重。这里不否定增长的好，而是保留好之间仍需说明的具体关系。
+
+第三条是“由已形成的参与与认可确定基本内容”。共同学习与实际参与可以揭示原先看不见的意义，既有伦理学习成果已给出这条正面路径。但受损、沉默、陌生表达及没有共同历史的生活，都不能仅因不被目前的解释圈理解而被排除。后来认可也不能独自为整个形成过程追授正当性。它能提供证据和实际新关系，不能单独封闭比较。
+
+因此，已有的关系识别、有限调查、反例检验和共同修订继续提供有根据的实际判断，并不要求等待一个全知标准。现在尚未得到的是一个更强的、跨新形式的充分论证：从该形式的实际生成和生活内容，推出哪些丧失构成何种基本剥夺，以及为什么其分量足以支撑正在主张的比较。
+
+The tested stronger routes are necessity for an incumbent organization, prolific further formation, and current recognition. They each contribute evidence or a positive aspect, but none alone warrants the proposed basic-priority classification. This is not an axiom-free demand: J2 remains an explicit commitment; what is unproved is its stronger application to newly formed living contents through these routes alone.
+
+## 84. 本轮的具体停止处及已完成范围
+
+**本轮停在：新组织与新生活形式出现时，怎样从其实际生成关系充分说明具体规范内容，尤其是哪些条件应被视为基本，以及相应比较的分量。** 不能把“某个组织维持所必需”直接等同于“整体应优先保护”；也不能把“建设完成”或“大家认可”当作这项对应已经成立。
+
+这里必须区分三个层次。记录遗漏了已知的支持量，是局部表示缺失，本轮已修正；具体判断尚缺证据，可以沿既有有限认识理论继续调查和行动；试图仅凭上述一般结构就证明新形式的基本地位，则是本轮进一步推论尚未完成之处。没有证明完整的一元理论存在反例，更没有证明这种说明不可能。
+
+这不是重开已完成的后天基本条件候选：它已有“按实际生活作用判断、区分生活与特定载体”的有辩护原则。本轮需要而尚未取得的，是在新形成、不能直接借用已知生活内容的情境中，完成这一原则的实质对应。也不重开已有的交叉基本要求、风险比较、智慧及经验识别研究；那些成果在其条件成立时直接可用。
+
+允许提出进一步公理，但需把所肯定的具体内容、范围、理由与代价公开说明。“所有自维持组织一律具有基本地位”是过宽的候选；“凡已独立认定为基本的内容都基本”则没有补上新连接。本轮未取得足够辩护，不将它们宣布为新采用的公理。这不是宣布必须无前提证明，也不使该更强目标成为已有对齐方向的完成门槛。
+
+**已得到的正面主张：在 G0/J 与有根据的完整比较下，智能应参与形成促进生生的组织关系；当缺少某项协调能力的全部合格接续都被充分改善所击败时，建设该能力就是实践要求。** 它可以包含扩大机构的行动能力，也可以由不同位置承载。尚未完成的是把这种有范围的证明提升为对一切新生活形式都充分的生成判断。
+
+本轮新增13项 Lean 定理声明／29项具名声明审计，另实查30项继承定理／46项审计。其中含构造实例、一个观察限制及一个定义对应检查，不能算成13条独立规范原则；没有经验实验或独立 agent 验收。[实查回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json)绑定实际源码。正文中的一元重构及规范前提的辩护不是由 Lean 编译替代的。
+
+The conditional organizational-warrant argument is complete at its stated scope. The further inference stops at substantive correspondence for basic significance in newly formed living, after repairing a merely representational omission. This does not invalidate monism, reopen completed G0/J or acquired-condition principles, require omniscience, or establish inevitable compliance. Thirteen new Lean theorem declarations and 29 declaration audits include applications and a definitional identity; thirty inherited theorems and 46 audits remain separately credited.

@@ -1,0 +1,13 @@
+name: Research structure
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  records-and-navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test infrastructure
+        run: make research-test
+      - name: Check records, evidence bindings, preservation and generated navigation
+        run: make research-check

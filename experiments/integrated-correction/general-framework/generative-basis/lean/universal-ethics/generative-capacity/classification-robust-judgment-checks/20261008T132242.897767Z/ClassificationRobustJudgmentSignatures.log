@@ -1,0 +1,55 @@
+ClassificationRobustJudgment.all_secondary_iff {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop) (f : H → N → Prop)
+  (a b : H) :
+  ClassificationRobustJudgment.compared p g f (fun x => False) a b ↔
+    PracticalJudgment.Better p (ConcernExtension.extend g f) a b
+ClassificationRobustJudgment.all_basic_retains_fresh {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (f : H → N → Prop) (a b : H) (h : ClassificationRobustJudgment.compared p g f (fun x => True) a b) :
+  PracticalJudgment.Included (f b) (f a)
+ClassificationRobustJudgment.classification_robust_iff {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (f : H → N → Prop) (a b : H) :
+  (∀ (q : N → Prop), ClassificationRobustJudgment.compared p g f q a b) ↔
+    PracticalJudgment.Included (f b) (f a) ∧ PracticalJudgment.Better p (ConcernExtension.extend g f) a b
+ClassificationRobustJudgment.two_extremes_suffice {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (f : H → N → Prop) (a b : H) :
+  (∀ (q : N → Prop), ClassificationRobustJudgment.compared p g f q a b) ↔
+    ClassificationRobustJudgment.compared p g f (fun x => False) a b ∧
+      ClassificationRobustJudgment.compared p g f (fun x => True) a b
+ClassificationRobustJudgment.known_basic_improvement_is_robust {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (f : H → N → Prop) (a b : H) (basic : PracticalJudgment.StrictIncluded (p b) (p a))
+  (fresh : PracticalJudgment.Included (f b) (f a)) (q : N → Prop) : ClassificationRobustJudgment.compared p g f q a b
+ClassificationRobustJudgment.fresh_enrichment_is_robust {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (f : H → N → Prop) (a b : H) (pba : PracticalJudgment.Included (p b) (p a))
+  (pab : PracticalJudgment.Included (p a) (p b)) (gba : PracticalJudgment.Included (g b) (g a))
+  (fresh : PracticalJudgment.StrictIncluded (f b) (f a)) (q : N → Prop) :
+  ClassificationRobustJudgment.compared p g f q a b
+ClassificationRobustJudgment.formation_required_without_fixed_classification {H C G N : Type} (p : H → C → Prop)
+  (g : H → G → Prop) (f : H → N → Prop) (eligible formed : H → Prop) (menu : List H) (nonempty : menu ≠ [])
+  (exactMenu : ∀ (a : H), eligible a ↔ a ∈ menu)
+  (construction :
+    ∀ (a : H),
+      eligible a →
+        ¬formed a →
+          ∃ b,
+            eligible b ∧
+              PracticalJudgment.Included (f a) (f b) ∧ PracticalJudgment.Better p (ConcernExtension.extend g f) b a)
+  (q : N → Prop) :
+  PracticalJudgment.Required (PracticalJudgment.Frontier eligible (ClassificationRobustJudgment.compared p g f q))
+    formed
+ClassificationRobustJudgment.joint_enrichment_is_strict :
+  PracticalJudgment.StrictIncluded (ClassificationRobustJudgment.freshJoint RelationalGrounding.Regime.released)
+    (ClassificationRobustJudgment.freshJoint RelationalGrounding.Regime.retained)
+ClassificationRobustJudgment.joint_enrichment_without_fixed_classification
+  (q : (JointContinuationClassification.Claim → Prop) → Prop) :
+  ClassificationRobustJudgment.compared (fun x x_1 => True) (fun x x_1 => False) ClassificationRobustJudgment.freshJoint
+    q RelationalGrounding.Regime.retained RelationalGrounding.Regime.released
+ClassificationRobustJudgment.classification_can_matter_with_real_loss :
+  ClassificationRobustJudgment.oldOccasion false () ∧
+    ¬ClassificationRobustJudgment.oldOccasion true () ∧
+      ¬ClassificationRobustJudgment.compared ClassificationRobustJudgment.oldBasic
+            ClassificationRobustJudgment.oldOccasion ClassificationRobustJudgment.newContent (fun x => False) true
+            false ∧
+        ¬ClassificationRobustJudgment.compared ClassificationRobustJudgment.oldBasic
+              ClassificationRobustJudgment.oldOccasion ClassificationRobustJudgment.newContent (fun x => False) false
+              true ∧
+          ClassificationRobustJudgment.compared ClassificationRobustJudgment.oldBasic
+            ClassificationRobustJudgment.oldOccasion ClassificationRobustJudgment.newContent (fun x => True) true false

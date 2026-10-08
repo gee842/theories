@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "liangzhi-evolution",
+  "title": {
+    "zh": "良知的生成演化",
+    "en": "Generative evolution of Liangzhi"
+  },
+  "scope_type": "project-direction",
+  "scope": {
+    "zh": "相关良知、发展与社会形成研究；其他独立目标保持。",
+    "en": "Relevant Liangzhi, developmental and social-formation research; independent goals remain valid."
+  },
+  "objective": {
+    "zh": "说明实际形成的辨别怎样识别、校准并修正生活与依存关系。",
+    "en": "Explain how formed discrimination identifies, calibrates and revises living and dependency relations."
+  },
+  "premises": {
+    "zh": "传递、发展、动机形成与伦理有效性分别说明；复用已完成机制和一般责任原则。",
+    "en": "Distinguish transmission, development, motivation and ethical validity; reuse completed mechanisms and general responsibility principles."
+  },
+  "completion": {
+    "zh": "后续推进未解的实际辨别连接，不重开完成的传递、发展、交接与责任原则。",
+    "en": "Advance the unresolved discrimination connection without reopening completed transmission, development, handoff or responsibility principles."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+  ],
+  "result_ids": []
+}

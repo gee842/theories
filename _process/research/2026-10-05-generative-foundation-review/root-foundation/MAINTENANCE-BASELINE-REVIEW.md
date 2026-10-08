@@ -1,6 +1,6 @@
 # 维护参照不能被自身撤除改写：独立反审
 
-2026-10-08。AI 独立反审，沿已有 G0/J 公理路线。按[本轮协议](MAINTENANCE-BASELINE-PROTOCOL.md)，这里只检查 `ChanceAdequacy` 的一类具体对应错误；不把它称为新的 J3、普遍反操纵原则或旧定理的反例。最终源码与回执冻结后补充实查验收。
+2026-10-08。AI 独立反审，沿已有 G0/J 公理路线。按[本轮协议](MAINTENANCE-BASELINE-PROTOCOL.md)，这里只检查 `ChanceAdequacy` 的一类具体对应错误；不把它称为新的 J3、普遍反操纵原则或旧定理的反例。**独立验收：接受**，范围是下述任务对应纠错与实际检查的条件性应用。
 
 ## 1. 先关闭重复的研究入口
 
@@ -30,6 +30,19 @@
 
 ## 4. 实查与完成范围
 
-本轮不新增原典读取或经验测量。[此前来源](CHANCE-ADEQUACY-SOURCES.md)保持原范围。待冻结源码后，独立核对实际操作是否改变支持、失败控制是否保留原任务与真实损失、完成是否发生于退役之前，以及全部签名、依赖与回执产物。手工说明不代替实际 Lean 检查。
+已独立完整核读冻结的[源码](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MaintenanceBaseline.lean)、[专用检查器](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_maintenance_baseline.py)、[肯定论证](MAINTENANCE-BASELINE-ARGUMENT.md)、[证明说明](MAINTENANCE-BASELINE-PROOF.md)与[整合](MAINTENANCE-BASELINE-INTEGRATION.md)。本轮不新增原典读取或经验测量，[此前来源](CHANCE-ADEQUACY-SOURCES.md)保持原范围。
+
+实际 Lean 4.29.1 [回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json)记录运行 `20261008T121326.478309Z`：**4 项新定理／13 项新声明审计**；`AlignmentInquiry`、`ChanceAdequacy` 和 `ObservableContinuation` 的 **21 项继承定理／55 项继承审计**单列，未重新算作新增。逐一检查全部声明扫描、精确导入、签名及依赖日志，核对四个现行模块、两个检查器、全部 **29 项保留产物**、顶层与保留回执的相同字节，以及记录的 Lean 二进制哈希。三个附加例确已内核检查，未加入新定理数。新声明中 11 项空依赖，1 项仅 `propext`，1 项含 `propext` 与 `Quot.sound`，没有自设公理。**未另运行 Lean 编译器**；本次独立验收依据实际编译产物与对应源码，不冒称第二次执行。
+
+实质核对结果如下：
+
+- 退役确实禁用左路及包含左路的并行操作，需求和未交付没有被偷偷改成完成。缩小后的目标通过与原目标失败同时成立，故检验的是对应误用，而非旧定理无效。
+- 正例从指定初态调用实际响应并扣除预算，先形成交付记录，再退役。原左路成功模式已交付；另一模式在单左路例中仍未服务，不能因此取消其其他理由。并行例扩大的是此次交付事件，不是退役后持续能力。
+- 通用传递条件容许“同任务真正完成”或“当前仍待覆盖”两条路径。完成记录与实际交付的对应、原任务有效性均显式保留，不能由记录名取得；不要求所有旧目标永久原样存在。
+- 自然数质量界只使用共同正总量下的有限事件表示。原目标质量一、裸退役交付质量零，以及先并行交付质量二均吻合源码；没有另外证明任意实数概率、不停供保证或新的伦理权重。
+
+现行 [ChanceAdequacy 对应说明](CHANCE-ADEQUACY-CORRESPONDENCE.md)的一段定向修正已经反审：原通道失效必须按原任务和有根据的比较条件判断，不能自动采用本次撤除后的能力。该段同时保留当前不可能、真正完成、修复和有根据结束的区别。已核[变更记录](MAINTENANCE-BASELINE-INDEX-EDITS.json)首项所存原文、改文及前后哈希，并以单段反替换恢复原哈希；其他内容保持。旧 8 项定理／14 项审计及其历史验证不变，本轮不追认新版本为旧时已经读过的版本。
+
+验收绑定的新源码 SHA-256 为 `48d26515db6aa2a4e2692e22e1eea1586c95090b139d2a728a21031a8bd3ca77`，专用检查器为 `360814559168e7adc0defbab761d3910238c64656f68f8f8e5d3abb018c1a635`；论证为 `4e302947d6e98b9bb367bc14ec0699e5dc9891ebaa979bb2126b9c15e654919a`，证明说明为 `2697cb4538d77d85e2b00a3da00d38e0b7b380555b60bed7e34e2c264602d232`。范围检查接受的是这一窄应用，不是对实际装置、全部正当变更或普遍伦理的完整认证。
 
 这项具体对应审计完成后，应关闭该实施诊断。下一中心规范问题回到**没有此前受保护承担时，初始机会怎样才充分，以及哪些合法裁量允许直接选择**。不能以再找一项旧基线或增添另一个控制器不断推迟这个未解比较。

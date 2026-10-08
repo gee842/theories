@@ -55,3 +55,14 @@ After the assistant reported intervention-based discovery and the limit of local
 > continue
 
 The assistant continues by examining construction of broader intervention access, restoration capacity during inquiry, repeated finite expansion and the scope of its certificates. This research direction and its interpretation are AI-authored. The instruction does not require unrestricted causal self-certification as a condition of ordinary justified action.
+
+## Reconciliation and common organization
+
+After the assistant distinguished central integration from a fully reconciled theory, Ren instructed:
+
+> please work on: reconciling the older formulations and mathematical descriptions, and joining the conditional mechanisms into a fuller account of **how common organization forms, differentiates regulation, and remains able to revise that regulation**
+>
+>
+> be mindful, earlier formulations may contain mistakes
+
+This authorizes critical reconciliation and a connected positive account, including correction of older claims rather than forced agreement. The ensuing formulation, mathematical comparisons and joined construction are AI-authored. The instruction does not endorse every historical assertion or authorize replacing the preserved originals. [Current account](../../theories/meta-attractor/COMMON-ORGANIZATION.md).

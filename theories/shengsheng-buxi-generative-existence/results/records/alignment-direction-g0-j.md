@@ -4,7 +4,7 @@
 
 `alignment-direction-g0-j` · **reviewed-scoped** · argument · F07
 
-记录源 / Editable record: [alignment-direction-g0-j.json](alignment-direction-g0-j.json) · [登记表 / Register](../RESULT-REGISTER.md)
+记录源 / Editable record: [alignment-direction-g0-j.json](alignment-direction-g0-j.json) · [登记表 / Register](../../../../RESULTS.md)
 
 Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
@@ -32,6 +32,13 @@ Boundary source / 边界来源: [ALIGNMENT-DIRECTION.md](../../unified-2026-10-0
 
 - **application**: [practical-judgment-g0-j](practical-judgment-g0-j.md). 把既有原则应用到明示 AI 服务关系；形式例直接导入 PracticalJudgment。 / Applies the existing principles to declared AI-service relations; the formal example imports PracticalJudgment.
 
+**Output / 输出:** G0/J 下的比较与有界实践原则。 / Comparison and bounded practical principles under G0/J.
+
+**Input / 输入:** AI 服务与交接案例的规范应用。 / Normative application to AI service and transfer cases.
+
+**Preserved conditions / 保留条件:** AI 对应 E、权限、承担及真实损失仍独立说明；应用而非普遍遵循定理。 / AI correspondence E, authority, undertakings and real losses remain explicit; an application, not a universal compliance theorem. [ALIGNMENT-DIRECTION.md](../../unified-2026-10-05/ALIGNMENT-DIRECTION.md)
+
+
 ## 来源与既有回执 Sources and existing receipts
 
 | Role | Source | Declarations |
@@ -54,3 +61,4 @@ Aliases / 别名: —
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "generative-foundation",
+  "title": {
+    "zh": "生成基础与持续研究",
+    "en": "Generative foundation and continuity"
+  },
+  "scope_type": "project-direction",
+  "scope": {
+    "zh": "全项目持续研究范围；特定任务按自己的授权完成标准推进。",
+    "en": "Continuing project research scope; individual tasks retain their authorized completion standards."
+  },
+  "objective": {
+    "zh": "在同一展开中说明组织、意义、调节、学习、选择器修订、关切与智慧。",
+    "en": "Explain organization, significance, regulation, learning, selector revision, concern and wisdom within one unfolding."
+  },
+  "premises": {
+    "zh": "一元关系方法；明示局部模型给定输入，不把普遍有利方向放进定义。",
+    "en": "Monist relational method; expose supplied local inputs without defining universal favorable direction into the target."
+  },
+  "completion": {
+    "zh": "有条件候选与普遍、无假设及唯一必要性各有范围；沿当前生成根据所列条件判断。",
+    "en": "Conditional completion, universality, assumption-free grounding and exclusive necessity retain distinct scopes, assessed against the governing grounding criteria."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-06-unified-generativity-goal-and-continuity.md",
+    "sources/15-codex-theory-conversations/2026-10-06-approved-derivation-path.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+  ],
+  "result_ids": [
+    "conditional-foundation-assessment"
+  ]
+}

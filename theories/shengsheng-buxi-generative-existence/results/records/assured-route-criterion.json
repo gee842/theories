@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "assured-route-criterion",
+  "title": {
+    "zh": "三路线中的保证到达条件",
+    "en": "Assured arrival in the three-route process"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F08",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "在给定三路线过程里，从未到达状态执行路线 a 保证到达，当且仅当 a 不等于唯一不可通行模式 m。",
+    "en": "In the supplied three-route process, taking route a from an unreached state assures arrival iff a differs from the uniquely blocked mode m."
+  },
+  "hypotheses": [
+    {
+      "zh": "Mode 与 Route 为 Fin 3，advance 保持模式并记录 a≠m；Reached 为到达标志。",
+      "en": "Mode and Route are Fin 3; advance retains the mode and records a≠m; Reached is the arrival flag."
+    }
+  ],
+  "correspondence": {
+    "zh": "一项给定的单步过程，不是智慧、伦理许可或感知形成的定义。",
+    "en": "A supplied one-step process, not a definition of wisdom, ethical permission or sensor formation."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+  "aliases": [
+    "Generative.WisdomResponseStructure.assured_route_iff"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+      "detail": {
+        "zh": "风险权重、取得模式的能力和选择的伦理根据均不由此等价式提供。",
+        "en": "Risk weights, capacity to acquire the mode, and ethical grounds for selection are not supplied by this equivalence."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "风险权重、取得模式的能力和选择的伦理根据均不由此等价式提供。",
+    "en": "Risk weights, capacity to acquire the mode, and ethical grounds for selection are not supplied by this equivalence."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+      "role": "proof",
+      "sha256": "2760db38cbfb9eaa2b2ad969be9124d8e6c28a1389ed2c5fa7c26223fa7a878c",
+      "declarations": [
+        "Generative.WisdomResponseStructure.assured_route_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json",
+      "role": "receipt",
+      "sha256": "d7a472e1d2757c88c16c8678d1d35bfd40bd83aac62f5a8cc2246f471b8ecfa8",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json",
+      "sha256_pointer": "/modules/4/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "风险应用直接复用这个实际后果接口。",
+    "en": "Risk applications reuse this actual-outcome interface directly."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

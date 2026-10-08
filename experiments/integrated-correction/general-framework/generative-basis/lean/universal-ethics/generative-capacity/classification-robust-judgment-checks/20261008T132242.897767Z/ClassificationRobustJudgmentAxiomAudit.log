@@ -1,0 +1,23 @@
+'ClassificationRobustJudgment.classifiedBasic' does not depend on any axioms
+'ClassificationRobustJudgment.classifiedGain' does not depend on any axioms
+'ClassificationRobustJudgment.compared' does not depend on any axioms
+'ClassificationRobustJudgment.all_secondary_iff' depends on axioms: [propext, Quot.sound]
+'ClassificationRobustJudgment.all_basic_retains_fresh' does not depend on any axioms
+'ClassificationRobustJudgment.classification_robust_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClassificationRobustJudgment.two_extremes_suffice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClassificationRobustJudgment.known_basic_improvement_is_robust' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ClassificationRobustJudgment.fresh_enrichment_is_robust' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClassificationRobustJudgment.formation_required_without_fixed_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ClassificationRobustJudgment.freshJoint' does not depend on any axioms
+'ClassificationRobustJudgment.joint_enrichment_is_strict' does not depend on any axioms
+'ClassificationRobustJudgment.joint_enrichment_without_fixed_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ClassificationRobustJudgment.oldBasic' does not depend on any axioms
+'ClassificationRobustJudgment.oldOccasion' does not depend on any axioms
+'ClassificationRobustJudgment.newContent' does not depend on any axioms
+'ClassificationRobustJudgment.classification_can_matter_with_real_loss' depends on axioms: [propext, Quot.sound]

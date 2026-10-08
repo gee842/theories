@@ -1,0 +1,7 @@
+{
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+  "passed": true,
+  "total_empty_axiom_audits": 125,
+  "total_declaration_audits": 166,
+  "total_standard_axiom_audits": 41
+}

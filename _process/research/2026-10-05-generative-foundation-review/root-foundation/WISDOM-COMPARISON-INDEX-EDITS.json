@@ -1,0 +1,602 @@
+{
+  "scope": "Matched comparison of retained relations, explanatory roles and invariant-ground claims; interpretive continuation only, no new theorem.",
+  "substantive": [
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "before_sha256": "9dddf66398b6fad39fca30ce831ac726567106a84683482f45ace0b8d435935a",
+      "after_sha256": "5b31fde4c64dd45bb1f9b5a46b90c8f97f746400d72d73bd4595a4bcfba52f23",
+      "insertion": "",
+      "append": "\n<a id=\"continuing-substantive-comparison\"></a>\n## 继续比较实质关系 / Continuing the substantive comparison\n\n在助手说明共同根需要解释智慧分化、且忠实替代说明尚未排除后，Ren 指示：\n\n> 请继续\n\n编者说明：[主研究第13节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)落实对替代说明的比较。Dancy、Dewey 的选择、四种解释作用与具体比较均为 AI 展开，不归为 Ren 的原话或已接受的结论。\n",
+      "old_content_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "before_sha256": "0bd7196c9f10346444ce86215cd9a6b47ded84406d0865fcf20841a507e7a5b0",
+      "after_sha256": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f",
+      "insertion": "**实质对照的结果，2026-10-08：**[第13节](#substantive-rival-comparison)把替代说明落实到 Dancy 与 Dewey，并复用原目的评价案例。情境判断可以保留实际约束，却仍争论普遍规范根是否必要；理由的支持作用、成立条件、认识条件和实行条件也须分别说明。本轮无新数学证明，完整根目标保持开放。",
+      "append": "\n<a id=\"substantive-rival-comparison\"></a>\n## 13. 对手保留什么，真正争论什么 / What the rival retains and what is disputed\n\n2026-10-08，[Ren 再次要求继续](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#continuing-substantive-comparison)。**成果接续：**更新`wisdom-root`，复用第10节的已查目的评价结果、第11节的`risk-certificate-outcome-distinction`及已完成G0/J/E路线。本轮新增量是两个实际文献对照、同一案例的解释对应及根基论证修正；无新增数学定理、Lean运行、实验或独立验收。\n\n### 13.1 先确定比较中的同一段关系\n\n已有目的形成过程包含活动后果、保留的反馈、形成的目的及改变后续实践的能力。旧安排与新安排都从这段过程分化，不能把其中的“评价者”当作过程之外的独立裁判。比较先固定该过程已有的成就与真实保护关系，再问不同解释保留了什么。被省略的是各模型之外的完整生活历史，不是一个与事实领域分离的价值世界；伦理应用仍需实际对应E与公开G0/J。\n\n第12节笼统的“经验、习惯、德性与判断”对照需要具体化。这里选两位已有文献入口的作者，各自提供不同的检验，不把两者拼成一个实际上不存在的学派。\n\n**Dancy 的理由特殊主义。** 他主张情境中的理由敏感性，允许经验提供提示，同时质疑道德判断必须依赖普遍原则。他明确承认具体约束，并区分一个因素的理由作用与使它起作用的条件。[作者原文，§§3、6–8](https://plato.stanford.edu/entries/moral-particularism/)。这给我们的检验是：从“判断受约束”走到“必须有我们这套普遍根”，还有实质论证要做。这里不是把Dancy当作已经证明正确的对手。\n\n**Dewey 的目的形成。** 他把目的放在活动内部，强调实现后的继续，并反对只选中意后果、抹去其他真实影响。[《人性与行为》第三部VI，原书pp.223–233](https://www.gutenberg.org/cache/epub/41386/pg41386-images.html)。我们据此给予其相应解释信用；不能把“目的可形成、可改变”本身当作本core独有的根部内容。该节不等于对我们G0/J的认可。\n\n**读取范围。** 2026-10-08重读上述作者论述及其连续语境，Dancy的范围比早先§§1–3扩至所列各节；Dewey沿用并复核原书所列页段。不据此评价两位作者全部著作，不声称已完成原则主义争论。此处为链接式核读，未导入原文副本。\n\n### 13.2 同一个已完成案例，对照不能换题\n\n复用[目的评价研究§§2–4](WISDOM-GOAL-GROUNDING.md#fixed-law-comparison)的原过程、两种实践和两类实际配置。两类配置中，旧／新成就表完全相同：旧实践计数产出较多，新实践掌握较多。在第一类中，旧实践损伤参与，新实践保持参与和维护；第二类中，旧实践保持两者，而新实践损伤维护。在该已公开J2比较的范围内，第一类支持换到新实践，第二类支持保留旧实践。\n\n这个例子已经完成，不重计七项定理，也不改变原规范假设。它的作用是给解释对照一个相同的目标内容：需要保留两种真实损失及由它们支持的相反比较。\n\n| 对照如何解释 | 保留／省略了什么 | 此次判断 |\n|---|---|---|\n| 只按旧、新目的的成就表选择 | 合并两类实际保护关系 | 已有`attainment_only_selector_insufficient`否定其在原全配置要求下的充分性；不能据此否定全部目标理论 |\n| 固定但对实际损失敏感的比较规则 | 保留保护关系，允许操作目的换或不换 | 原`fixed_ground_rule_adequate`已有正例；“固定”不构成反驳 |\n| 经验丰富的情境判断 | 若实际辨明这两种保护关系，并接受本例所述比较，就保留目标内容；不必逐步复述规则 | 不能因为缺少显式原则执行就排除；目前不是整个core必要性的反例，也不是它的完整接受者 |\n| 活动中形成并重定向目的的说明 | 保留目标形成、后果和后续实践；还须单独交代本例严格比较的根据 | 可解释形成关系，不能凭“形成了”替代J2，也不能把其有限文本当作我们的整个伦理论证 |\n\n后两行是本研究对解释类型的应用，不是声称作者本人评价过这个模型，更不把Dancy与Dewey的立场合并。若一个对手不接受J2，它提出的是规范根据或适用范围的争议，不能再称为“保留相同比较内容而省掉必要区别”的反例；相反，仅拒绝我们的术语不会构成实质冲突。\n\n原信息必要性只约束在全部局部配置中兑现所述比较的确定性选择。有限证据、合理风险或单次判断保持第11节的范围，不能强迫它们满足该更强保证。对手若有不同可靠性目标，须按其真实目标比较，不能先升级要求再判失败。\n\n### 13.3 constraint在理由中承担的不同作用\n\n从相连的参与、维护和实践关系出发，可以进一步区分以下解释工作。这是哲学分析，不是四类独立存在物，也不是新增完备分类定理。\n\n| 要回答的问题 | 本例中的关系 | 误并后的问题 |\n|---|---|---|\n| 什么在这里支持这一回应？ | 按公开J2，恢复／保住基本参与且维持其他基本保护的实际差别 | 把较多产出或较新目的本身当成善 |\n| 这一支持在什么范围成立？ | 基本保护的真实对应、其他基本代价没有被遗漏、比较的问题与范围保持 | 不论代价和处境都重复同一句要求 |\n| 现在有何根据这样判断？ | 已取得资料及其与实际后果的联系；已有取得和修订研究提供条件性实现 | 从判断很自信，或一次碰巧成功，推断它有根据 |\n| 这一回应怎样实际做到？ | 现有路径、支持、权限与承担的接续；已有实践论证区分各项 | 以“做得到”当作充分理由，或以“暂时做不到”删除全部真实需要 |\n\n同一关系可以承担不止一种作用，具体分析不能预先把它锁进一个格子。例如，形成的依赖既会改变可行接续，也可能在J3下参与责任判断；实际权限有时同时影响可行性和正当性。各作用须沿实际形成及公开根据说明，而不是仅凭标签分配。\n\n这进一步精确化了Ren的直觉：**core若是理由之根，必须说明哪些关系支持判断、哪些使该支持适用，以及我们怎样取得和实行它。** 仅把这些都叫“constraint”，还不足以说明它们的不同作用。可行性、证据可靠性与规范支持不能彼此代替，但可以在同一过程里连接。\n\n既有[一般生成要求](GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md)已说明，某种生活的继续根据能够经其实际实现条件支持回应；无需为每种支持条件另立与生活分离的内在价值。本段直接复用，不另设规范门槛。这里强调的是：这种相连根据仍须辨明支持内容及范围，不能把所有因果条件都提升为同等强度的伦理要求。\n\n### 13.4 比较后的实质结论\n\n本轮将“换词还是省略”的问题推进到可定位的结果：\n\n1. **已定位的省略：**只保留指定成就表确实丢失了改变原比较的保护关系。已有Lean结果支持这一条件性判断，不需要为了对照作者再建一个玩具例子。\n2. **不是省略的变化：**固定规则、经验判断或以活动形成解释目的，均可能保留这些实际关系。这里保留的是解释信用，不是自动宣布整个core已被包含。\n3. **仍真实存在的分歧：**接受有根据的具体判断，是否还必须接受一组共同、稳定且有实质内容的生成／规范根据，以及本core是否恰好给出了它们。我们不能把拒绝这一进一步主张的人描述成否认一切理由或约束。\n\n因而，当前正面路线应当寻找**在反对者忠实说明其判断时也不能删掉的具体关系**，并解释这些关系为什么共同形成一个有内容的根。支持这一方向的，是已完成的局部辨别与形成结果；尚缺的是它们在整个智慧范围中的联合必要性，而不是再添一个“所有活动总受某种约束”的断言。\n\nG0仍按授权作为基本正面规范起点采用，J与E明示。上述比较没有要求先无公理证明G0才可继续，也没有证明所有智慧传统都必须认可这一表述。公理路线的可用性、同一规范内容的其他表达，以及该内容对全部智慧是否不可省略，是不同的论证责任。\n\n### 13.5 正面候选、反审与下一实质连接\n\n**候选深化。** 共同根的解释力可以来自：同一段实际关系，在形成、共同实现、认识取得与继续修订的问题中，产生相互制约的判断内容。一个较好的根部解释应使这些连接可追踪，并减少把待求答案逐条另作输入。这说明为什么从core继续追问可能产生智慧，而不是先读格言再给它改名；现有结果提供局部支撑，普遍发现能力仍未完成。\n\n**作者反审。** 若我们只把每个正确判断连同所有条件收进一个无界表格，既没有说明条件为何相关，也没有给出形成与推演路径，就未增加解释。若每次反例出现才把它排除出“完整条件”，必要性主张会失去检验内容。反过来，若对手已经保留同样的实际生成关系和规范内容，它应作为另一种忠实表达得到信用；本研究无需击败一个仅在表达上不同的版本。实际争议必须落在具体承诺，而不能依靠“所有真正的理由都已经是我们的core”这一循环说法。\n\n**下一连接已收窄：**在固定G0/J/E应用范围内，核对从已完成的局部根据到新情境的正当接续，是否保留了实际承担理由作用的关系，而不只复制相似特征；再辨明这种接续所需的共同关系是否超出了目标评价例中的局部必要性。直接复用现有形成、情境修订和风险成果，不重开这些机制。目的不是逼迫全部智慧采用一套显式程序，而是对共同根的实质内容进行可失败的检验。\n\n**English scope.** This matched interpretive comparison distinguishes retained relational content from disputed universal grounding. The existing goal-ground theorem excludes only its specified attainment-only selector; contextual sensitivity and fixed relation-sensitive rules retain credit. Dancy supplies a live challenge to inference from particular constraints to a necessary general basis; Dewey supplies an established formation account. Support, applicability, warranted recognition and practical realization have distinct explanatory roles within one unfolding. No new theorem, whole-theory identity, universal necessity or independent acceptance is claimed.\n",
+      "old_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "before_sha256": "577b36d9f0064ae8c1a75edc1df87674eb4e38a371e3727f90afc3ed083aa74b",
+      "after_sha256": "ee9df3a1b17686396e15735d04582f40bfc202ed5756fcd4ec1488cb714df472",
+      "insertion": "**理由约束的实质对照 / Substantive comparison of reason constraints，2026-10-08。** [第12节](#reason-constraints-and-rivals)接入[具体文献与原案例比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)，区分保留关系、换表述及普遍根的争议。/ Contextual judgment can retain particular constraints while disputing a necessary general basis. This is interpretive work reusing checked results, not a new proof.",
+      "append": "\n<a id=\"reason-constraints-and-rivals\"></a>\n## 12. 保留关系与争论根基 / Retained relations and disputed grounding\n\n[主研究第13节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)把上一节的对照落实到Dancy的理由特殊主义、Dewey的目的形成及已完成的目标评价案例。两种文献分别检验规范根的必要性与生成说明的解释信用，不合并成一个学派。\n\n在原目标评价例里，仅有旧、新成就表会遗漏改变比较的参与／维护关系；这一条件性不足已有证明。一个实际辨明这些关系的经验判断，则不能仅因不显式执行原则而被排除。固定且对关系敏感的规则也已有充分性见证。因此，规则固定或判断重视情境都不足以裁判根基地位。\n\n从同一形成过程分析，理由所支持的内容、该支持适用的条件、现在有根据认识它的条件，以及实际实行回应的条件，各有不同作用。例如，保护生活的根据、证据质量与执行能力不能相互替代；形成的依存却可能同时影响实践可能性与公开J3下的责任。这里区分解释工作，不设事实／价值或认识／行动的独立领域。\n\n共同根的正面任务，是说明这些关系如何形成、相连并支持新判断。局部有理由并不自动证明必须有某一组普遍原则；对手也不因承认情境关系就接受整个core。G0/J/E路线继续使用，已完成形成和实践论证继续复用。下一检验针对理由关系跨情境接续的根据，避免只凭相似特征移植答案。\n\nThis continuation reuses the checked goal-ground and risk results without adding mathematical claims. Particular constraints, their applicability, evidence and execution remain related but distinct explanatory roles. The selected rivals retain substantial content; the disputed step is the necessity of the full common generative/normative basis. Whole-root necessity and universal discovery remain open.\n",
+      "old_content_preserved": true
+    }
+  ],
+  "navigation": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "5199a3298becf6d3fdc3222e5c2e32bf576b1d0002ec197da4e123236d3eb5f2",
+      "after_sha256": "05d9b507f6b9249af4d7acad7003afa9a47cd92e6ecef53571038fa23b91c695",
+      "insertion": "**理由约束与真实对照 / Reason constraints and substantive rivals，2026-10-08。** [主研究第13节](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)以Dancy、Dewey和原目的评价例区分省略关系、换表达与普遍根据争议。/ No new theorem: support, applicability, evidence and realization are distinguished; the open wisdom-root target now tests warranted transfer of reason-bearing relations across contexts.",
+      "append": "",
+      "old_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "52cd4e9fced7d079a2bc224e8c3f42a9ebd1005ea039e05a1f05f92b9d598e97",
+      "after_sha256": "7ef46d1177ecd3363d79d6eed80858e24817d9708edcfaf6a84fdf3afa17ce24",
+      "insertion": "**理由的不同约束作用 / Different roles of reason constraints，2026-10-08。** [智慧接续](unified-2026-10-05/WISDOM-AND-CONTEXT.md#reason-constraints-and-rivals)及[实际文献对照](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)定位判断支持、适用、认识与实行的不同关系。/ Existing proofs are reused; a rival can preserve particular constraints while disputing the necessary general basis. The full root remains open.",
+      "append": "",
+      "old_content_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "e4931f754efd5506d25b04fac2bddb05087333bae958eafff465ad199d651523",
+      "after_sha256": "2e8252f3d756ccfc0770d6b0a58fd1c3955ba6831dfc12b71b66497f58fb0ae0",
+      "insertion": "**Substantive wisdom-root comparison, 8 October 2026:** [Core study §13](CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison) compares Dancy and Dewey against the unchanged goal-ground case. It locates retained relations and disputed general grounding, distinguishing support, applicability, evidence and realization. No new proof or result identity; the next comparison concerns warranted transfer of reason-bearing relations across contexts.",
+      "append": "",
+      "old_content_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "before_sha256": "84aa2e13655db58e5aeb57b7805dc0d4cc30be40614873f9cdeaf665c534f417",
+      "after_sha256": "e22c46acb17ae9371e2b7da2edcb46575ff82d57edb8e101578e93497ad28ae0",
+      "insertion": "**理由约束的对照 / Comparing reason constraints，2026-10-08。** M15接入[主研究第13节](CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)，复用旧目的评价证明并明确四种解释作用及普遍根据争议。/ Only owned additions, three read/authored versions, M15 and the open wisdom-root record change. [Edits](WISDOM-COMPARISON-INDEX-EDITS.json); [scoped checks](WISDOM-COMPARISON-CHECKS.json). No new theorem, result identity or full-table acceptance.",
+      "append": "",
+      "old_content_preserved": true
+    }
+  ],
+  "reviews": {
+    "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md": {
+      "before": "9dddf66398b6fad39fca30ce831ac726567106a84683482f45ace0b8d435935a",
+      "after": "5b31fde4c64dd45bb1f9b5a46b90c8f97f746400d72d73bd4595a4bcfba52f23"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md": {
+      "before": "0bd7196c9f10346444ce86215cd9a6b47ded84406d0865fcf20841a507e7a5b0",
+      "after": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md": {
+      "before": "577b36d9f0064ae8c1a75edc1df87674eb4e38a371e3727f90afc3ed083aa74b",
+      "after": "ee9df3a1b17686396e15735d04582f40bfc202ed5756fcd4ec1488cb714df472"
+    }
+  },
+  "rows": {
+    "M15": {
+      "before": {
+        "id": "M15",
+        "title_zh": "智慧的协同修正与慧根",
+        "title_en": "Coordinated correction in wisdom and huigen",
+        "claim_zh": "智慧协同因果理解、有根据的关切与可实行回应，并能够修正事实、排除规则和阻断纠正的权力。 本轮接续说明同一要求可有相反回应，前次成功也可实际改变下一步的条件。 新候选解释把共同生成约束的可追踪展开作为智慧推演能力的来源；理由通过真实实现关系及公开规范根据获得内容。 后续回应必要性检验表明：同一过程中的充分辨别可以不同，且未必有仍充分的共同最粗描述；共同根不预设共同最小表述。 目的评价接续定位成就指标遗漏的实际保护关系：相同旧、新成就表可有相反比较，固定的关系敏感规则亦能满足要求。 有限判断接续表明，正确风险陈述可以伴随实际失败；必要性检验须匹配判断的内容与强度，单次成败不独自判定事前界限。 整个根的覆盖检验进一步区分具体判断、形成的能力与完整解释：共同根须解释智慧的分化及联系，不要求每次活动执行全部理论分支。",
+        "claim_en": "Wisdom coordinates causal understanding, warranted concern and feasible response while revising facts, exclusion rules and power that blocks correction. A contextual continuation shows opposite responses under one requirement, including a reversal caused by the previous response’s success. A new candidate explains derivational productivity through traceable consequences of shared generative constraints; practical reasons acquire content through actual realization relations and explicit normative grounds. A subsequent response-necessity test shows distinct adequate descriptions of one process need not have an adequate common coarsening; a common root does not presuppose one least shared representation. A goal-evaluation continuation identifies omitted protection relations: identical old/new attainment profiles can have opposed practical frontiers, while a fixed relation-sensitive rule remains adequate. A limited-judgment continuation shows that a true risk statement permits actual failure; necessity tests must preserve claim content and strength, and a single outcome does not alone identify the prior bound. The whole-root coverage audit distinguishes episodes, formed capacities and full explanation: a common root must explain differentiated wisdom and its connections, without requiring every activity to enact every branch.",
+        "scope_zh": "有界条件综合已接受；慧根的必要性、全部伦理内容与普遍智慧未证明。 形式支撑后续修复：原15项查询定理与1项辅助重证均为空依赖；连同实际自定义依赖，六模块63项审计全空。此修复不升级慧根或伦理的普遍必要性。 新11项定理／50项含依赖审计（44空、6标准），两组熟悉原典及不利案例按范围比较；未作盲法预测或证明伦理根据同一。 按 Ren 纠正，下一中心检验是固定共同前提、独立于目标格言给出推演，再比较最强常规解释。仅有哲学重构和有范围原典比较，无新增定理／实验；普遍发现能力与历史覆盖未证。 Ren 随后明确以证明“the root of wisdom”为本会话目标：须建立构成必要性并接通智慧的生成说明。共同受约束不能单独解释智慧；局部发表或例子不替代完整目标，根基仍未证。 此次另增9项 Lean 定理，连同50项继承共59项审计（44空、15标准）；新增8项仅propext，1项另含Quot.sound。固定一步技术过程、确定性回应与目标给定；不把可靠到达等同智慧，不宣称历史收敛。下一普遍连接是理由根据与目的修订，复用已完成机制及G0/J/E。 此次另增7项定理／11项审计，93项继承定理／165项审计分列；新增5项定理仅propext、1项仅Quot.sound、1项含二者，4项定义空报告。局部比较与全配置要求给定，未证明所有智慧必须接受J2；后续核对独立智慧范围及全部实质core，不重开已完成目的形成。 此次另增5项Lean应用／对应定理，59项继承审计分列，共64项（44空、20标准），新增5项均仅propext。给定事件权重、路线法则及数值界限，未证明概率校准、伦理风险许可或有根据的错误信念；复用已有有限认识与实践责任。该范围修正已完成，全部智慧与整个实质core的根基连接仍开放。 此轮在原主研究中比较领域自知、理论／实践智慧及熟练应变，无新定理、实验或独立验收；有意选择的原典不是历史覆盖证明。保留经验／德性／判断的忠实对照，其解释未被排除；已完成形成与评价应用不重开，完整根基必要性仍未证。",
+        "scope_en": "Bounded conditional synthesis accepted; huigen's necessity, full ethical content and universal wisdom remain unproved. Formal-support repair: the fifteen original inquiry theorems and one helper reproof have empty reports; their six-module logical/inquiry closure has 63 empty audits. This does not upgrade universal huigen or ethical necessity. Eleven new theorems / fifty import-inclusive audits (44 empty, 6 standard); two familiar primary-text comparisons retain adverse details. No blind prediction or identity of ethical grounds is claimed. Following Ren’s correction, the next central test fixes shared premises and derives judgments before matching maxims, against adequate conventional accounts. This is philosophical reconstruction and scoped primary comparison, with no new theorem or experiment; universal discovery and historical coverage remain unproved. Ren subsequently fixes proving “the root of wisdom” as this session’s objective: establish constitutive necessity and connect the formation of wisdom. Common constraint satisfaction alone does not explain wisdom. Local publication or examples do not replace the full target, which remains unproved. This continuation adds nine Lean theorems and fifty inherited audits, 59 overall (44 empty, 15 standard); eight new reports use only propext, one also Quot.sound. The one-step process, deterministic response and target are supplied. Guaranteed arrival is not identified with wisdom and historical convergence is not proved. The next universal connection concerns warranted ends and their revision, reusing completed mechanisms and G0/J/E. This continuation adds seven theorems / eleven audits, separately from 93 inherited theorems / 165 audits; five new proofs use propext only, one Quot.sound only, one both, with four empty definition reports. The local comparison and uniform adequacy requirement are supplied; J2 is not proved necessary for every wisdom. Further work concerns independent wisdom scope and the full substantive core, not reopening completed goal formation. This continuation adds five Lean application/correspondence theorems, separately from 59 inherited audits: 64 overall, 44 empty / 20 standard; all five new reports use only propext. Event weights, route law and numerical bound are supplied. Probability calibration, ethical risk permission and warranted false belief are not established; completed limited-knowledge and practical-responsibility results are reused. The scope correction is complete, while independent wisdom coverage and the full substantive core remain open. This continuation compares domain self-limitation, theoretical/practical wisdom and skilled responsiveness in the existing study, with no new theorem, experiment or independent acceptance. Selected primary texts do not prove historical coverage. The faithful experience/virtue/judgment comparator is not excluded; completed formation and evaluative application are reused, and full-root necessity remains unproved.",
+        "links": [
+          {
+            "label_zh": "智慧的协同修正与慧根",
+            "label_en": "Coordinated correction in wisdom and huigen",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md"
+          },
+          {
+            "label_zh": "相关接续",
+            "label_en": "Related continuation",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+          },
+          {
+            "label_zh": "查询证明修复与范围",
+            "label_en": "Constructive inquiry repair and scope",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#12-constructive-proofs-of-the-existing-inquiry-laws"
+          },
+          {
+            "label_zh": "当前完整构建回执",
+            "label_en": "Current affected-build receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+            "label_zh": "智慧与情境",
+            "label_en": "Wisdom and context"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+            "label_zh": "证明与反审",
+            "label_en": "Proof and counterreview"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+            "label_zh": "原典与范围",
+            "label_en": "Primary sources and scope"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+            "label_zh": "约束、理由与推演能力",
+            "label_en": "Constraints, reasons and derivational productivity"
+          },
+          {
+            "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+            "label_zh": "Ren 的论文方向与纠正",
+            "label_en": "Ren’s paper direction and correction"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#root-of-wisdom-target",
+            "label_zh": "慧根证明目标与当前连接",
+            "label_en": "Root proof target and current connections"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+            "label_zh": "回应必要性与反审",
+            "label_en": "Response necessity and counterreview"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+            "label_zh": "9项新证明",
+            "label_en": "Nine new proofs"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-response-structure-verification.json",
+            "label_zh": "回应结构实查",
+            "label_en": "Response-structure verification"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md",
+            "label_zh": "目的评价的必要关系与反审",
+            "label_en": "Goal-ground necessity and counterreview"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/WisdomGoalGrounds.lean",
+            "label_zh": "7项目标根据证明",
+            "label_en": "Seven goal-ground proofs"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/wisdom-goal-grounds-verification.json",
+            "label_zh": "目标根据实查",
+            "label_en": "Goal-ground verification"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+            "label_zh": "有限判断与反审",
+            "label_en": "Limited judgment and counterreview"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+            "label_zh": "5项新应用证明",
+            "label_en": "Five new application proofs"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-verification.json",
+            "label_zh": "有限判断实查",
+            "label_en": "Limited-judgment verification"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root",
+            "label_zh": "整个根与独立智慧内容",
+            "label_en": "Whole root and independent wisdom content"
+          }
+        ],
+        "connection_zh": "将共同形成推进为理解、评价、行动及其修订条件的协同。",
+        "connection_en": "Extends co-formation to coordination among understanding, evaluation, action and their conditions of revision.",
+        "source_section": "7. From effective concern toward wisdom",
+        "source_line": 93,
+        "row_type": "synthesis",
+        "source_id": "wisdom_huigen"
+      },
+      "after": {
+        "id": "M15",
+        "title_zh": "智慧的协同修正与慧根",
+        "title_en": "Coordinated correction in wisdom and huigen",
+        "claim_zh": "智慧协同因果理解、有根据的关切与可实行回应，并能够修正事实、排除规则和阻断纠正的权力。 本轮接续说明同一要求可有相反回应，前次成功也可实际改变下一步的条件。 新候选解释把共同生成约束的可追踪展开作为智慧推演能力的来源；理由通过真实实现关系及公开规范根据获得内容。 后续回应必要性检验表明：同一过程中的充分辨别可以不同，且未必有仍充分的共同最粗描述；共同根不预设共同最小表述。 目的评价接续定位成就指标遗漏的实际保护关系：相同旧、新成就表可有相反比较，固定的关系敏感规则亦能满足要求。 有限判断接续表明，正确风险陈述可以伴随实际失败；必要性检验须匹配判断的内容与强度，单次成败不独自判定事前界限。 整个根的覆盖检验进一步区分具体判断、形成的能力与完整解释：共同根须解释智慧的分化及联系，不要求每次活动执行全部理论分支。 实质对照区分理由的支持、适用、认识与实行作用；承认具体约束不独自确立一套普遍根，须辨明可正当接续的共同关系。",
+        "claim_en": "Wisdom coordinates causal understanding, warranted concern and feasible response while revising facts, exclusion rules and power that blocks correction. A contextual continuation shows opposite responses under one requirement, including a reversal caused by the previous response’s success. A new candidate explains derivational productivity through traceable consequences of shared generative constraints; practical reasons acquire content through actual realization relations and explicit normative grounds. A subsequent response-necessity test shows distinct adequate descriptions of one process need not have an adequate common coarsening; a common root does not presuppose one least shared representation. A goal-evaluation continuation identifies omitted protection relations: identical old/new attainment profiles can have opposed practical frontiers, while a fixed relation-sensitive rule remains adequate. A limited-judgment continuation shows that a true risk statement permits actual failure; necessity tests must preserve claim content and strength, and a single outcome does not alone identify the prior bound. The whole-root coverage audit distinguishes episodes, formed capacities and full explanation: a common root must explain differentiated wisdom and its connections, without requiring every activity to enact every branch. A substantive comparison distinguishes support, applicability, recognition and realization roles of reasons. Particular constraints do not alone establish a universal basis; the common relations warranting transfer must be identified.",
+        "scope_zh": "有界条件综合已接受；慧根的必要性、全部伦理内容与普遍智慧未证明。 形式支撑后续修复：原15项查询定理与1项辅助重证均为空依赖；连同实际自定义依赖，六模块63项审计全空。此修复不升级慧根或伦理的普遍必要性。 新11项定理／50项含依赖审计（44空、6标准），两组熟悉原典及不利案例按范围比较；未作盲法预测或证明伦理根据同一。 按 Ren 纠正，下一中心检验是固定共同前提、独立于目标格言给出推演，再比较最强常规解释。仅有哲学重构和有范围原典比较，无新增定理／实验；普遍发现能力与历史覆盖未证。 Ren 随后明确以证明“the root of wisdom”为本会话目标：须建立构成必要性并接通智慧的生成说明。共同受约束不能单独解释智慧；局部发表或例子不替代完整目标，根基仍未证。 此次另增9项 Lean 定理，连同50项继承共59项审计（44空、15标准）；新增8项仅propext，1项另含Quot.sound。固定一步技术过程、确定性回应与目标给定；不把可靠到达等同智慧，不宣称历史收敛。下一普遍连接是理由根据与目的修订，复用已完成机制及G0/J/E。 此次另增7项定理／11项审计，93项继承定理／165项审计分列；新增5项定理仅propext、1项仅Quot.sound、1项含二者，4项定义空报告。局部比较与全配置要求给定，未证明所有智慧必须接受J2；后续核对独立智慧范围及全部实质core，不重开已完成目的形成。 此次另增5项Lean应用／对应定理，59项继承审计分列，共64项（44空、20标准），新增5项均仅propext。给定事件权重、路线法则及数值界限，未证明概率校准、伦理风险许可或有根据的错误信念；复用已有有限认识与实践责任。该范围修正已完成，全部智慧与整个实质core的根基连接仍开放。 此轮在原主研究中比较领域自知、理论／实践智慧及熟练应变，无新定理、实验或独立验收；有意选择的原典不是历史覆盖证明。保留经验／德性／判断的忠实对照，其解释未被排除；已完成形成与评价应用不重开，完整根基必要性仍未证。 第13节对照Dancy、Dewey及既有目的评价例，无新数学结果；只按成就表选择的不足已证，忠实情境判断未排除。下一连接在G0/J/E明示范围检验理由关系向新情境的正当接续。",
+        "scope_en": "Bounded conditional synthesis accepted; huigen's necessity, full ethical content and universal wisdom remain unproved. Formal-support repair: the fifteen original inquiry theorems and one helper reproof have empty reports; their six-module logical/inquiry closure has 63 empty audits. This does not upgrade universal huigen or ethical necessity. Eleven new theorems / fifty import-inclusive audits (44 empty, 6 standard); two familiar primary-text comparisons retain adverse details. No blind prediction or identity of ethical grounds is claimed. Following Ren’s correction, the next central test fixes shared premises and derives judgments before matching maxims, against adequate conventional accounts. This is philosophical reconstruction and scoped primary comparison, with no new theorem or experiment; universal discovery and historical coverage remain unproved. Ren subsequently fixes proving “the root of wisdom” as this session’s objective: establish constitutive necessity and connect the formation of wisdom. Common constraint satisfaction alone does not explain wisdom. Local publication or examples do not replace the full target, which remains unproved. This continuation adds nine Lean theorems and fifty inherited audits, 59 overall (44 empty, 15 standard); eight new reports use only propext, one also Quot.sound. The one-step process, deterministic response and target are supplied. Guaranteed arrival is not identified with wisdom and historical convergence is not proved. The next universal connection concerns warranted ends and their revision, reusing completed mechanisms and G0/J/E. This continuation adds seven theorems / eleven audits, separately from 93 inherited theorems / 165 audits; five new proofs use propext only, one Quot.sound only, one both, with four empty definition reports. The local comparison and uniform adequacy requirement are supplied; J2 is not proved necessary for every wisdom. Further work concerns independent wisdom scope and the full substantive core, not reopening completed goal formation. This continuation adds five Lean application/correspondence theorems, separately from 59 inherited audits: 64 overall, 44 empty / 20 standard; all five new reports use only propext. Event weights, route law and numerical bound are supplied. Probability calibration, ethical risk permission and warranted false belief are not established; completed limited-knowledge and practical-responsibility results are reused. The scope correction is complete, while independent wisdom coverage and the full substantive core remain open. This continuation compares domain self-limitation, theoretical/practical wisdom and skilled responsiveness in the existing study, with no new theorem, experiment or independent acceptance. Selected primary texts do not prove historical coverage. The faithful experience/virtue/judgment comparator is not excluded; completed formation and evaluative application are reused, and full-root necessity remains unproved. Section 13 compares Dancy, Dewey and the existing goal-ground case, with no new mathematical result. Attainment-only insufficiency is checked; faithful situated judgment remains unexcluded. The next connection tests warranted transfer of reason-bearing relations across contexts within explicit G0/J/E scope.",
+        "links": [
+          {
+            "label_zh": "智慧的协同修正与慧根",
+            "label_en": "Coordinated correction in wisdom and huigen",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md"
+          },
+          {
+            "label_zh": "相关接续",
+            "label_en": "Related continuation",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+          },
+          {
+            "label_zh": "查询证明修复与范围",
+            "label_en": "Constructive inquiry repair and scope",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#12-constructive-proofs-of-the-existing-inquiry-laws"
+          },
+          {
+            "label_zh": "当前完整构建回执",
+            "label_en": "Current affected-build receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+            "label_zh": "智慧与情境",
+            "label_en": "Wisdom and context"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+            "label_zh": "证明与反审",
+            "label_en": "Proof and counterreview"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+            "label_zh": "原典与范围",
+            "label_en": "Primary sources and scope"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+            "label_zh": "约束、理由与推演能力",
+            "label_en": "Constraints, reasons and derivational productivity"
+          },
+          {
+            "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+            "label_zh": "Ren 的论文方向与纠正",
+            "label_en": "Ren’s paper direction and correction"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#root-of-wisdom-target",
+            "label_zh": "慧根证明目标与当前连接",
+            "label_en": "Root proof target and current connections"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+            "label_zh": "回应必要性与反审",
+            "label_en": "Response necessity and counterreview"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+            "label_zh": "9项新证明",
+            "label_en": "Nine new proofs"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-response-structure-verification.json",
+            "label_zh": "回应结构实查",
+            "label_en": "Response-structure verification"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md",
+            "label_zh": "目的评价的必要关系与反审",
+            "label_en": "Goal-ground necessity and counterreview"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/WisdomGoalGrounds.lean",
+            "label_zh": "7项目标根据证明",
+            "label_en": "Seven goal-ground proofs"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/wisdom-goal-grounds-verification.json",
+            "label_zh": "目标根据实查",
+            "label_en": "Goal-ground verification"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+            "label_zh": "有限判断与反审",
+            "label_en": "Limited judgment and counterreview"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+            "label_zh": "5项新应用证明",
+            "label_en": "Five new application proofs"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-verification.json",
+            "label_zh": "有限判断实查",
+            "label_en": "Limited-judgment verification"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root",
+            "label_zh": "整个根与独立智慧内容",
+            "label_en": "Whole root and independent wisdom content"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison",
+            "label_zh": "实际对照与理由约束",
+            "label_en": "Substantive rivals and reason constraints"
+          }
+        ],
+        "connection_zh": "将共同形成推进为理解、评价、行动及其修订条件的协同。",
+        "connection_en": "Extends co-formation to coordination among understanding, evaluation, action and their conditions of revision.",
+        "source_section": "7. From effective concern toward wisdom",
+        "source_line": 93,
+        "row_type": "synthesis",
+        "source_id": "wisdom_huigen"
+      }
+    }
+  },
+  "result_record": {
+    "path": "theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json",
+    "before_sha256": "79f06957e252d111582771bd9c86005ecace73fff3b9dffc32d5a187cb85738a",
+    "after_sha256": "41bbcd5f1837ccd44258f837df6b3bbb1e2e9f9a880a32568138541dcbe7a13c",
+    "before": {
+      "schema_version": 1,
+      "id": "wisdom-root",
+      "title": {
+        "zh": "核心作为智慧之根的目标",
+        "en": "Core as the root of wisdom target"
+      },
+      "kind": "target",
+      "status": "open",
+      "family": "F08",
+      "reviewed_at_utc": "2026-10-08T12:54:13.403303+00:00",
+      "claim": {
+        "zh": "待建立：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成。",
+        "en": "Open: establish that the core not only constrains activity but constitutes and explains the actual formation of wisdom at the claimed scope."
+      },
+      "hypotheses": [
+        {
+          "zh": "保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。",
+          "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
+        }
+      ],
+      "correspondence": {
+        "zh": "适当把握理由、目的的根据及修订须接入实际形成的关系；区分具体判断、形成的能力与完整解释，不要求每次智慧活动执行全部理论分支。",
+        "en": "Appropriate grasp of reasons, warranted ends and revision must connect to actually formed relations; distinguish an episode, a formed capacity and its full explanation, without requiring every wise activity to enact every theoretical branch."
+      },
+      "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "aliases": [],
+      "dependencies": [],
+      "related": [
+        {
+          "id": "conditional-foundation-assessment",
+          "detail": {
+            "zh": "已完成候选有自己的有限智慧范围；不能自动升级为本目标。",
+            "en": "The completed candidate has its own bounded wisdom scope, which does not automatically satisfy this target."
+          }
+        },
+        {
+          "id": "risk-certificate-outcome-distinction",
+          "detail": {
+            "zh": "局部结果修正必要性检验强度，不构成整个根基的形式转换或完成证明。",
+            "en": "The local result corrects the strength of the necessity test; it is not a formal adapter or completion proof for the full root."
+          }
+        }
+      ],
+      "counterexamples": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+          "detail": {
+            "zh": "足够描述不自动有仍充分的共同最粗表示。",
+            "en": "Sufficient descriptions need not admit a still-sufficient common coarsest representation."
+          }
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+          "detail": {
+            "zh": "正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。",
+            "en": "A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom."
+          }
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+          "detail": {
+            "zh": "第12节保留理论智慧、领域自知与熟练应变的不同内容。整个根的解释职责不等于每次判断的功能清单；经验／德性／判断的忠实对照尚未排除。",
+            "en": "Section 12 preserves theoretical wisdom, domain self-limitation and skilled responsiveness. Whole-root explanatory obligations are not an episode-level checklist; a faithful experience/virtue/judgment comparator remains unexcluded."
+          }
+        }
+      ],
+      "limitations": {
+        "zh": "目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。 目的评价的必要关系与有限判断范围修正已局部完成，不能升级为全部智慧的定义。",
+        "en": "The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom."
+      },
+      "validation_scope": {
+        "zh": "登记开放目标、既有局部证明及第12节原典／解释范围比较。本轮无新数学定理或实查；作者反审不冒称独立验收。",
+        "en": "Records the open target, existing local proofs and the section 12 primary-text/explanatory-scope comparison. No new theorem or proof run in this continuation; author counterreview is not independent acceptance."
+      },
+      "references": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+          "role": "statement",
+          "sha256": "0bd7196c9f10346444ce86215cd9a6b47ded84406d0865fcf20841a507e7a5b0",
+          "declarations": []
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+          "role": "integration",
+          "sha256": "3277bbd8462f82dcbbac1b7164585a426776ec85811811f8ae1827d9e94a522e",
+          "declarations": []
+        },
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+          "role": "provenance",
+          "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+          "declarations": []
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+          "role": "integration",
+          "sha256": "866a74d352d910cfcec2fe581cd596fdba55a84656e519cc6ee91a8d7bf33b97",
+          "declarations": []
+        }
+      ],
+      "proof_bindings": [],
+      "next_delta": {
+        "zh": "复用已完成形成、评价应用与G0/J/E，检验它们对局部胜任之适用范围把握的解释内容，并与保留同样智慧内容的说明比较必要性。",
+        "en": "Reuse completed formation, evaluative application and G0/J/E; examine their explanation of warranted recognition of competence limits, and test necessity against accounts preserving the same wisdom content."
+      },
+      "history": [
+        {
+          "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+          "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+        },
+        {
+          "zh": "2026-10-08：在原目标不变、仍开放的前提下，接入已完成目的评价与本轮有限判断修正；更新实际核读并追加的core来源，不重开已完成机制。",
+          "en": "2026-10-08: retained the unchanged open target while integrating completed goal evaluation and the limited-judgment correction; updated the read and extended core source, without reopening completed mechanisms."
+        },
+        {
+          "zh": "2026-10-08：在同一主研究第12节加入三个原典的有范围比较，区分判断／能力／完整解释；承认忠实对照未被排除，保持完整目标开放。不新增独立成果或数学计数。",
+          "en": "2026-10-08: added scoped comparisons of three primary texts in the existing study, distinguishing episodes, capacities and full explanation. The faithful comparator is not excluded and the full target remains open; no extra result identity or mathematical count."
+        }
+      ]
+    },
+    "after": {
+      "schema_version": 1,
+      "id": "wisdom-root",
+      "title": {
+        "zh": "核心作为智慧之根的目标",
+        "en": "Core as the root of wisdom target"
+      },
+      "kind": "target",
+      "status": "open",
+      "family": "F08",
+      "reviewed_at_utc": "2026-10-08T13:11:41.593697+00:00",
+      "claim": {
+        "zh": "待建立：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成。",
+        "en": "Open: establish that the core not only constrains activity but constitutes and explains the actual formation of wisdom at the claimed scope."
+      },
+      "hypotheses": [
+        {
+          "zh": "保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。",
+          "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
+        }
+      ],
+      "correspondence": {
+        "zh": "适当把握理由、目的的根据及修订须接入实际形成的关系；区分具体判断、形成的能力与完整解释，并区分同一过程中理由的支持、适用、认识与实行作用。",
+        "en": "Appropriate grasp of reasons, warranted ends and revision must connect to actually formed relations. Distinguish episodes, formed capacities and full explanation, and distinguish support, applicability, recognition and realization roles within one unfolding."
+      },
+      "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "aliases": [],
+      "dependencies": [],
+      "related": [
+        {
+          "id": "conditional-foundation-assessment",
+          "detail": {
+            "zh": "已完成候选有自己的有限智慧范围；不能自动升级为本目标。",
+            "en": "The completed candidate has its own bounded wisdom scope, which does not automatically satisfy this target."
+          }
+        },
+        {
+          "id": "risk-certificate-outcome-distinction",
+          "detail": {
+            "zh": "局部结果修正必要性检验强度，不构成整个根基的形式转换或完成证明。",
+            "en": "The local result corrects the strength of the necessity test; it is not a formal adapter or completion proof for the full root."
+          }
+        }
+      ],
+      "counterexamples": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+          "detail": {
+            "zh": "足够描述不自动有仍充分的共同最粗表示。",
+            "en": "Sufficient descriptions need not admit a still-sufficient common coarsest representation."
+          }
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+          "detail": {
+            "zh": "正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。",
+            "en": "A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom."
+          }
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+          "detail": {
+            "zh": "第12节保留不同智慧内容；第13节落实Dancy、Dewey及原目的评价例的对照。具体约束不独自确立一套必要的普遍根；情境判断与固定的关系敏感规则可保留局部比较，未被排除。",
+            "en": "Section 12 preserves differentiated wisdom; section 13 compares Dancy, Dewey and the existing goal-ground case. Particular constraints do not alone establish a necessary universal basis. Situated judgment and a fixed relation-sensitive rule can retain the local comparison and are not excluded."
+          }
+        }
+      ],
+      "limitations": {
+        "zh": "目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。 目的评价的必要关系与有限判断范围修正已局部完成，不能升级为全部智慧的定义。",
+        "en": "The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom."
+      },
+      "validation_scope": {
+        "zh": "登记开放目标、既有局部证明及第12–13节原典／解释比较。本轮复用已查目的评价结果，无新数学定理或实查；作者反审不冒称独立验收。",
+        "en": "Records the open target, existing local proofs and sections 12–13 primary-text/explanatory comparisons. The checked goal-ground result is reused; this continuation adds no theorem or proof run, and author counterreview is not independent acceptance."
+      },
+      "references": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+          "role": "statement",
+          "sha256": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f",
+          "declarations": []
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+          "role": "integration",
+          "sha256": "3277bbd8462f82dcbbac1b7164585a426776ec85811811f8ae1827d9e94a522e",
+          "declarations": []
+        },
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+          "role": "provenance",
+          "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+          "declarations": []
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+          "role": "integration",
+          "sha256": "866a74d352d910cfcec2fe581cd596fdba55a84656e519cc6ee91a8d7bf33b97",
+          "declarations": []
+        }
+      ],
+      "proof_bindings": [],
+      "next_delta": {
+        "zh": "固定G0/J/E应用范围，复用已完成形成、评价、情境修订与风险结果，检验实际承担理由作用的关系怎样正当地接续到新情境，及其共同根据是否超出既有目标评价例的局部必要性。",
+        "en": "Fix the G0/J/E application scope and reuse completed formation, evaluation, contextual revision and risk results. Test warranted transfer of reason-bearing relations to new contexts and whether their common grounds extend beyond the existing local goal-evaluation necessity."
+      },
+      "history": [
+        {
+          "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+          "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+        },
+        {
+          "zh": "2026-10-08：在原目标不变、仍开放的前提下，接入已完成目的评价与本轮有限判断修正；更新实际核读并追加的core来源，不重开已完成机制。",
+          "en": "2026-10-08: retained the unchanged open target while integrating completed goal evaluation and the limited-judgment correction; updated the read and extended core source, without reopening completed mechanisms."
+        },
+        {
+          "zh": "2026-10-08：在同一主研究第12节加入三个原典的有范围比较，区分判断／能力／完整解释；承认忠实对照未被排除，保持完整目标开放。不新增独立成果或数学计数。",
+          "en": "2026-10-08: added scoped comparisons of three primary texts in the existing study, distinguishing episodes, capacities and full explanation. The faithful comparator is not excluded and the full target remains open; no extra result identity or mathematical count."
+        },
+        {
+          "zh": "2026-10-08：第13节将忠实对照落实到两项原典及既有案例，区分实际关系的保留与普遍根据的争议；收窄下一连接，不新建成果身份、不新增定理。",
+          "en": "2026-10-08: section 13 makes the faithful comparison concrete through two primary texts and the existing case, distinguishing retained relations from disputed universal grounding. The next connection is narrowed; no new result identity or theorem."
+        }
+      ]
+    }
+  },
+  "preservation": {
+    "other_chain_entries": true,
+    "other_review_hashes": true,
+    "discovery_inventory": true,
+    "other_rendered_lines": true,
+    "record_claim_and_open_status": true,
+    "other_record_references": true
+  },
+  "concurrent_navigation_migration": [
+    {
+      "path": "RESEARCH.md",
+      "exact_archive": "_process/architecture/history/05d9b507f6b9249a/RESEARCH.md",
+      "sha256": "05d9b507f6b9249af4d7acad7003afa9a47cd92e6ecef53571038fa23b91c695",
+      "current_navigation_verified": true,
+      "route": "Current generated navigation links to the live wisdom-root record and canonical core study."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "exact_archive": "_process/architecture/history/7ef46d1177ecd336/README.md",
+      "sha256": "7ef46d1177ecd3363d79d6eed80858e24817d9708edcfaf6a84fdf3afa17ce24",
+      "current_navigation_verified": true,
+      "route": "Current generated navigation links to the live wisdom-root record and canonical core study."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "exact_archive": "_process/architecture/history/2e8252f3d756ccfc/README.md",
+      "sha256": "2e8252f3d756ccfc0770d6b0a58fd1c3955ba6831dfc12b71b66497f58fb0ae0",
+      "current_navigation_verified": true,
+      "route": "Current study navigation links to the generativity chain and its M15 comparison entry."
+    }
+  ]
+}

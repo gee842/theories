@@ -61,3 +61,11 @@ Ren's next exact instruction, after the fallible-inspection result:
 > continue
 
 AI scope interpretation: test the temporal scope of inspection when current fault location or control relations can change, preserve candidate coverage through explicitly admitted histories, and connect renewed evidence to actual correction without refunding prior costs on later failure. The [temporal-inspection study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md) records the new bridge and its remaining correspondence conditions. The finite transition model and its interpretation are AI-authored, not additional claims attributed to Ren.
+
+## Continuation through mediated control
+
+Ren's next exact instruction, following the temporal-inspection result:
+
+> please
+
+AI scope interpretation: test whether executed, permission-checked instructions can establish the transition scope previously supplied by a change notice, carry evidence through the same transformation, and preserve a concrete failure when an additional writer bypasses that interface. The [mediated-control study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md) records the result and its physical correspondence limits. This task selection, bounded language and interpretation are AI-authored, not additional words attributed to Ren.

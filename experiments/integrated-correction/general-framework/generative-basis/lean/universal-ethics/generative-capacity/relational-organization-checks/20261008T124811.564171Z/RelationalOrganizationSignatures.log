@@ -1,0 +1,49 @@
+RelationalOrganization.formation_required_of_improvable_absence {H : Type} (eligible : H → Prop) (better : H → H → Prop)
+  (formed : H → Prop) (menu : List H) (nonempty : menu ≠ []) (exactMenu : ∀ (a : H), eligible a ↔ a ∈ menu)
+  (irreflexive : ∀ (a : H), ¬better a a) (transitive : ∀ {a b c : H}, better a b → better b c → better a c)
+  (construction : ∀ (a : H), eligible a → ¬formed a → ∃ b, eligible b ∧ better b a) :
+  PracticalJudgment.Required (PracticalJudgment.Frontier eligible better) formed
+RelationalOrganization.left_formation_retains_basis :
+  RelationalOrganization.remaining RelationalOrganization.Form.left = 4 ∧
+    RelationalOrganization.basis RelationalOrganization.Form.left ∧
+      RelationalOrganization.renewed RelationalOrganization.Form.left
+RelationalOrganization.formation_has_a_real_loss :
+  RelationalOrganization.freeOccasion RelationalOrganization.Form.idle () ∧
+    ¬RelationalOrganization.freeOccasion RelationalOrganization.Form.left ()
+RelationalOrganization.left_better_than_idle :
+  RelationalOrganization.better RelationalOrganization.Form.left RelationalOrganization.Form.idle
+RelationalOrganization.left_better_than_overbuild :
+  RelationalOrganization.better RelationalOrganization.Form.left RelationalOrganization.Form.overbuild
+RelationalOrganization.every_unformed_continuation_has_a_better_one (a : RelationalOrganization.Form) :
+  RelationalOrganization.eligible a →
+    ¬RelationalOrganization.formed a → ∃ b, RelationalOrganization.eligible b ∧ RelationalOrganization.better b a
+RelationalOrganization.coordination_is_required :
+  PracticalJudgment.Required (PracticalJudgment.Frontier RelationalOrganization.eligible RelationalOrganization.better)
+    RelationalOrganization.formed
+RelationalOrganization.frontier_exactly_the_two_working_routes (a : RelationalOrganization.Form) :
+  PracticalJudgment.Frontier RelationalOrganization.eligible RelationalOrganization.better a ↔
+    a = RelationalOrganization.Form.left ∨ a = RelationalOrganization.Form.right
+RelationalOrganization.neither_named_route_is_required :
+  ¬PracticalJudgment.Required (PracticalJudgment.Frontier RelationalOrganization.eligible RelationalOrganization.better)
+        RelationalOrganization.usesLeft ∧
+    ¬PracticalJudgment.Required
+        (PracticalJudgment.Frontier RelationalOrganization.eligible RelationalOrganization.better)
+        RelationalOrganization.usesRight
+RelationalOrganization.more_construction_can_defeat_its_own_basis :
+  RelationalOrganization.spent RelationalOrganization.Form.left <
+      RelationalOrganization.spent RelationalOrganization.Form.overbuild ∧
+    RelationalOrganization.linked RelationalOrganization.Form.overbuild ∧
+      ¬RelationalOrganization.basis RelationalOrganization.Form.overbuild ∧
+        ¬PracticalJudgment.Frontier RelationalOrganization.eligible RelationalOrganization.better
+            RelationalOrganization.Form.overbuild
+RelationalOrganization.same_construction_report_different_living_basis :
+  RelationalOrganization.constructionReport RelationalOrganization.Form.left =
+      RelationalOrganization.constructionReport RelationalOrganization.Form.overbuild ∧
+    RelationalOrganization.basis RelationalOrganization.Form.left ∧
+      ¬RelationalOrganization.basis RelationalOrganization.Form.overbuild
+RelationalOrganization.no_construction_report_only_basis_judge :
+  ¬∃ judge,
+      ∀ (f : RelationalOrganization.Form),
+        judge (RelationalOrganization.constructionReport f) ↔ RelationalOrganization.basis f
+RelationalOrganization.amount_sensitive_repair_recovers_the_local_basis (f : RelationalOrganization.Form) :
+  RelationalOrganization.repairedBasisJudgment (RelationalOrganization.remaining f) ↔ RelationalOrganization.basis f

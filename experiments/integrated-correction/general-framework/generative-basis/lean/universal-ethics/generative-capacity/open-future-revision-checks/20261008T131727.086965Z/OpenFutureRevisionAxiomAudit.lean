@@ -1,0 +1,20 @@
+import OpenFutureRevision
+#print axioms OpenFutureRevision.handed_off_progress
+#print axioms OpenFutureRevision.boundedInventory
+#print axioms OpenFutureRevision.generation_by_bound
+#print axioms OpenFutureRevision.positive_ground_by_bound
+#print axioms OpenFutureRevision.Stage
+#print axioms OpenFutureRevision.Rule
+#print axioms OpenFutureRevision.completed
+#print axioms OpenFutureRevision.advance
+#print axioms OpenFutureRevision.remaining
+#print axioms OpenFutureRevision.each_fixed_rule_finishes
+#print axioms OpenFutureRevision.each_rule_local_progress
+#print axioms OpenFutureRevision.restartChoice
+#print axioms OpenFutureRevision.revisingRun
+#print axioms OpenFutureRevision.revising_run_stays_unfinished
+#print axioms OpenFutureRevision.revised_rules_can_fail_forever
+#print axioms OpenFutureRevision.revision_resets_remaining
+#print axioms OpenFutureRevision.changed_form_with_valid_handoff
+#print axioms OpenFutureRevision.realizes
+#print axioms OpenFutureRevision.realized_form_need_not_be_fixed

@@ -20,8 +20,9 @@ def main():
     spec=importlib.util.spec_from_file_location('meta_chain_check',HERE/'build_generative_chain.py')
     chain=importlib.util.module_from_spec(spec);spec.loader.exec_module(chain)
     owned=[ROOT/'theories/meta-attractor/GENERATIVE-REGIMES.md',
+           ROOT/'theories/meta-attractor/COMMON-ORGANIZATION.md',
            ROOT/'sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md',
-           EXPERIMENT/'README.md']+[HERE/f'META-ATTRACTOR-{name}.md' for name in ['INTEGRATION','EVIDENCE','REVIEW','CARRIER-DIAGNOSIS','REPRODUCTION','ADMISSION','TESTING','DISCOVERY','EXPANDING-INQUIRY']]
+           EXPERIMENT/'README.md']+[HERE/f'META-ATTRACTOR-{name}.md' for name in ['INTEGRATION','EVIDENCE','REVIEW','CARRIER-DIAGNOSIS','REPRODUCTION','ADMISSION','TESTING','DISCOVERY','EXPANDING-INQUIRY','RECONCILIATION']]
     links=[]
     for path in owned:
         headings=re.findall(r'^#{1,6} .+$',path.read_text(),re.M)
@@ -127,7 +128,7 @@ def main():
     assert digest(EXPERIMENT/'diagnose.py')==numerical['checker_sha256']
     assert digest(EXPERIMENT.parent/'model.py')==numerical['model_sha256']
     data=chain.read_data()
-    edit=json.loads((HERE/'META-ATTRACTOR-INQUIRY-INDEX-EDITS.json').read_text())
+    edit=json.loads((HERE/'META-ATTRACTOR-RECONCILIATION-INDEX-EDITS.json').read_text())
     entry=next(e for s in data['sections'] for e in s['entries'] if e['id']==edit['entry_id'])
     for field,prefix in edit['owned_prefixes'].items():
         assert entry[field].startswith(prefix), field

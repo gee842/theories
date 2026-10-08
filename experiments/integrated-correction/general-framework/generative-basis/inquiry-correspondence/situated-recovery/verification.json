@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "scope": "Original-byte integrity, projection units, finite-data score arithmetic and source bindings; not an independent experiment or proof of scientific truth.",
+  "original_files_bound": 18,
+  "original_mat_files": 16,
+  "participants": 16,
+  "trial_records": 5440,
+  "measured_channel_observations": 2656,
+  "held_out_observations": 800,
+  "source_sha256": {
+    "ANALYSIS-PLAN.md": "be345d358f6c85b2ea4eb226ccd0b4934305b7a53283c1867b55a6437bdfa5d9",
+    "SENSITIVITY-NOTE.md": "eee49e1de225dc515d1bac950511e0deadfb6eb736c185481eb2f0f6118b7b2f",
+    "analyze_recovery.py": "cd8338252b756d6f2a99c0565ca2c7a12fd7a065cb2dd973349220820c9c7fc1",
+    "analyze_sensitivity.py": "1cc03f3457ebb12077020c694652a2ba4f1009c6c37aa9a26eef1c13022a6016",
+    "plot_recovery.py": "aa9f05a0910135a9b1b26948733381841cf7de9280716b70d056f1fd02193ac7",
+    "fetch_sources.py": "a1a9ff10bab7a508685c626d08671ae0abcbe1e0d674186c4d92c986bb183cba",
+    "requirements.txt": "7b3e11e56025a842acd039458c29f3e422acb25ffe8d5b890887da3dffa45c05",
+    "results.json": "af5a4b25cbc33a075e8f03cb32c0cbfc89b7288612b0f5309f617a38d2e6eb42",
+    "sensitivity-results.json": "e4ee68e39ea2c2f2e798d4dce5402809ad24e7d7f1ee5fe0fca99288c0eca695",
+    "observations.json": "ffde45a7c309d13e89d6848922d0ffab0e28fb999ac6bbe34fc46b92f1eec5a6",
+    "extraction-audit.json": "7f9757bc0ea3b8cc444597629aa10944a9a6c8affae04e4e9c55eca0a3184b8f",
+    "recovery-results.png": "52baf3d9e49ef72f656658bf6cfe9e03f9c20ef203a4ccbd8937e3b6eb0e6eb6",
+    "recovery-results.svg": "d7b49f01a72a5bfbdfb85ab92efff7680f10c67ab2582ca2782c4b953dec46fb",
+    "README.md": "c2e5020d364d432f948d76ede3940d971f141215460cf2c50e200be3a5e1b545",
+    "check_recovery.py": "55aa27a0d80587083d8185add16d165328e6d0bf70cc958ced2d5490b336e181"
+  },
+  "original_retrieval_sha256": "00fa15ff9ce5ba2ca2eef92d8fb781ebccd86b970e4effc812f29d0964dabb08",
+  "new_laboratory_experiments": 0,
+  "new_theorems": 0,
+  "independent_review": false,
+  "latent_state_identified": false,
+  "infinite_limit_established": false
+}

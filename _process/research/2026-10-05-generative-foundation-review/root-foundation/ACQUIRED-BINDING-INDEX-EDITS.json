@@ -1,0 +1,246 @@
+{
+  "scope": "Owned acquired-binding continuation in existing study; two canonical claim records.",
+  "before_entry": {
+    "id": "M26",
+    "title_zh": "认知发展与取得的组合解释",
+    "title_en": "Cognitive development and acquired compositional interpretation",
+    "claim_zh": "实际记录形成组合解释及操作连接，经示范进入他人的重构与再传递；现在接通经历形成的分节与已有组合使用。范围内新序列可适用，局部成功、一般对应及实际支持分开；稳定任务失误与部分经历反例保留。完整认知、学习与演化心理目标继续。",
+    "claim_en": "Actual records form compositional interpretation and operative routes; demonstrations enter others’ reconstruction and transmission. Acquired grouping now enters existing compositional use. Transfer within the encoding, local success and affordable response remain distinct; stable task failures and partial-experience counterexamples remain. The full cognitive/evolutionary objective continues.",
+    "scope_zh": "取得25项定理／52项审计；构造37／65；传递27／45；分节新增23／51，最新196项继承审计分列。基本辨别、分节判准、解码意义及取得策略仍有前提；作者反审。下一连接是取得并修订当前给定的意义绑定；完整注意、心理、演化对应及意识未完成。",
+    "scope_en": "Acquisition: 25 theorems / 52 audits; formation: 37 / 65; transmission: 27 / 45; grouping adds 23 / 51, with 196 inherited audits separately rebuilt. Elementary discrimination, grouping criterion, meanings and access policy remain supplied. Author counterreview. Next: acquiring and correcting the supplied content binding. Broad attention, psychology, evolutionary correspondence and consciousness remain incomplete.",
+    "links": [
+      {
+        "label_zh": "当前理论与完整目标",
+        "label_en": "Account and full objective",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+      },
+      {
+        "label_zh": "论证、证据及反审",
+        "label_en": "Argument, evidence and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "形式源码",
+        "label_en": "Formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-acquisition-verification.json"
+      },
+      {
+        "label_zh": "Ren 的目标",
+        "label_en": "Ren's objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md"
+      },
+      {
+        "label_zh": "连接形成与修复",
+        "label_en": "Formation and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "构造形式源码",
+        "label_en": "Formation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean"
+      },
+      {
+        "label_zh": "构造实查回执",
+        "label_en": "Formation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-formation-verification.json"
+      },
+      {
+        "label_zh": "沟通与重构",
+        "label_en": "Communication and reconstruction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "传递形式源码",
+        "label_en": "Transmission formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean"
+      },
+      {
+        "label_zh": "传递实查回执",
+        "label_en": "Transmission receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-verification.json"
+      },
+      {
+        "label_zh": "取得分节与使用",
+        "label_en": "Acquired grouping and use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "分节形式源码",
+        "label_en": "Segmentation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean"
+      },
+      {
+        "label_zh": "分节实查回执",
+        "label_en": "Segmentation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json"
+      }
+    ]
+  },
+  "updated_entry": {
+    "id": "M26",
+    "title_zh": "认知发展与取得的组合解释",
+    "title_en": "Cognitive development and acquired compositional interpretation",
+    "claim_zh": "实际记录形成组合操作并进入他人的重构与传递；取得的分节现接通由多次歧义接触形成的绑定，再进入新组合使用。范围内任意序列对应、实际支持与参考正确性分开；错误唯一绑定、矛盾暂停及误排来源保留。完整认知、学习与演化心理目标继续。",
+    "claim_en": "Actual records form compositional operations and enter others’ reconstruction and transmission. Acquired grouping now joins bindings learned across ambiguous encounters and subsequent compositional use. All-sequence correspondence within scope, support and reference correctness remain distinct; wrong unique bindings, suspension and mistaken source exclusion remain. The full cognitive/evolutionary objective continues.",
+    "scope_zh": "取得25项定理／52项审计；构造37／65；传递27／45；分节23／51；绑定新增23／41，最新247项继承审计分列。分类、已有操作、场景覆盖、交集规则及来源判断给定。新成果记录单独维护；下一连接是身体与社会活动形成实际可取得的场景，完整注意、心理、演化对应及意识未完成。",
+    "scope_en": "Acquisition: 25 theorems / 52 audits; formation: 37 / 65; transmission: 27 / 45; grouping: 23 / 51; binding adds 23 / 41, with 247 inherited audits separately rebuilt. Categories, existing operations, scene coverage, intersection rule and source judgments remain supplied. Canonical records maintain the claims. Next: bodily/social formation of accessible scenes; broad attention, psychology, evolutionary correspondence and consciousness remain incomplete.",
+    "links": [
+      {
+        "label_zh": "当前理论与完整目标",
+        "label_en": "Account and full objective",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+      },
+      {
+        "label_zh": "论证、证据及反审",
+        "label_en": "Argument, evidence and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "形式源码",
+        "label_en": "Formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-acquisition-verification.json"
+      },
+      {
+        "label_zh": "Ren 的目标",
+        "label_en": "Ren's objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md"
+      },
+      {
+        "label_zh": "连接形成与修复",
+        "label_en": "Formation and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "构造形式源码",
+        "label_en": "Formation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean"
+      },
+      {
+        "label_zh": "构造实查回执",
+        "label_en": "Formation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-formation-verification.json"
+      },
+      {
+        "label_zh": "沟通与重构",
+        "label_en": "Communication and reconstruction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "传递形式源码",
+        "label_en": "Transmission formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean"
+      },
+      {
+        "label_zh": "传递实查回执",
+        "label_en": "Transmission receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-verification.json"
+      },
+      {
+        "label_zh": "取得分节与使用",
+        "label_en": "Acquired grouping and use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "分节形式源码",
+        "label_en": "Segmentation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean"
+      },
+      {
+        "label_zh": "分节实查回执",
+        "label_en": "Segmentation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json"
+      },
+      {
+        "label_zh": "绑定成果与范围",
+        "label_en": "Binding result and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md"
+      },
+      {
+        "label_zh": "分节成果复用",
+        "label_en": "Grouping result reuse",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+      },
+      {
+        "label_zh": "绑定形式源码",
+        "label_en": "Binding formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean"
+      },
+      {
+        "label_zh": "绑定实查回执",
+        "label_en": "Binding receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json"
+      }
+    ]
+  },
+  "all_other_entries_preserved": true,
+  "all_other_rendered_lines_preserved": true,
+  "reviewed_owned_sources": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md": "d2a648de00807e738b61d6c8c7e769ee6016afbbce2cb031ad40f38bb7ce4371",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md": "769ea4dccfa9e66f488dcb84bf70dfd862d0aa55e2b901995c85408b1be8566b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean": "0395ecdcce1d3d4712930497ace63d030279e3fe610a60f945d372e45878946d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_acquired_binding.py": "ba905608af2cc7d253e4d43769ca656acc202430c1d7953a22e21a745d289eda",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json": "397cdc260034c70c0f28aa8f5d96078fc445ffe38777edbea0bbe77f7eefa661",
+    "theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.json": "ab70125aabf5caeecec86b01851c1de69e1dcbcb5b903c1aa5c5e7f75feffdde",
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.json": "ee32f8c22a4cd7d3bcf50d36fa2a1d362026c2d4445b44ed727be7f2414991ea"
+  },
+  "discovery_added": [],
+  "navigation_replacements": {
+    "RESEARCH.md": {
+      "old": "**认知、学习与演化心理 / Cognition, learning and evolutionary psychology，2026-10-08。** [完整目标与当前候选](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md)在取得、构造与传递之后，接通[经历形成的分节与使用](_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md)：23项新 Lean 定理／51项审计，196项继承审计分列。任意有限编码序列的对应、某一表达的成功及实际支持分别保留；重复跨界、缺口和部分经历反例已实查。/ The grouping-to-existing-use connection is conditionally complete. Next: acquiring and correcting the content binding currently supplied by the decoder, with selective social access an explicit correspondence requirement. The broader attention, cognition and evolutionary-psychology objective remains active.\n\n",
+      "new": "**认知、学习与演化心理 / Cognition, learning and evolutionary psychology，2026-10-08。** [当前成果与范围](theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md)接通取得的分节、由歧义接触形成的绑定和组合使用；[原研究续篇](_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#7-continuation-learned-bindings-replace-the-fixed-decoder)保留错误唯一绑定、矛盾暂停及误排来源。/ The fixed binding is replaced within the stated interface. Next: how bodily/social activity forms the scene available for binding, distinguishing access, retention and performance. The [full objective](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md) remains active.\n\n",
+      "before_sha256": "bc83d17ca7c98f4d9554ae7e763f4951dc9e45b286e1e7bf2b627bbc113bb74b",
+      "after_sha256": "5199a3298becf6d3fdc3222e5c2e32bf576b1d0002ec197da4e123236d3eb5f2",
+      "inverse_preserves_other_bytes": true
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": {
+      "old": "**Cognition, learning and evolutionary psychology，8 October 2026.** Following acquired composition, formation/repair and communication, [acquired segmentation](ACQUIRED-SEGMENTATION-INTEGRATION.md) connects retained transitions, grouping, message assembly and existing use: 23 new theorems / 51 audits, with 196 inherited audits. All-sequence correspondence is scoped to the stated encoding; partial success, overgrouping and inadequate support remain. Next: acquisition and correction of the currently supplied content binding, with selective social access explicit. The full objective remains active.\n\n",
+      "new": "**Cognition, learning and evolutionary psychology，8 October 2026.** [Acquired binding and use](../../../../theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md) now composes the earlier grouping theorem with bindings learned across ambiguous encounters. The [existing study continuation](ACQUIRED-SEGMENTATION-INTEGRATION.md#7-continuation-learned-bindings-replace-the-fixed-decoder) records proofs, primary comparisons and counterreview. Next: bodily/social formation of accessible scenes; the full cognitive/evolutionary objective remains active.\n\n",
+      "before_sha256": "d39bd6685748df743c94198b0ea1446be5adfc1a151aea6369fc7ddb85096b93",
+      "after_sha256": "e4931f754efd5506d25b04fac2bddb05087333bae958eafff465ad199d651523",
+      "inverse_preserves_other_bytes": true
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "old": "**取得分节并进入使用 / Acquired grouping enters use，2026-10-08。** [论证、证据及反审](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md)新增23项 Lean 定理／51项审计，196项继承审计分列。经历改变分节，再接通已有组合；局部成功不等于全范围恢复，支持不足及跨界保留。/ The next connection is acquiring and correcting the meanings currently supplied by the decoder. Elementary discrimination and the access policy remain supplied; the [full cognitive/evolutionary objective](unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md) remains active.\n\n",
+      "new": "**取得绑定并进入组合使用 / Acquired bindings enter composition，2026-10-08。** [维护成果](results/records/acquired-binding-compositional-use.md)及[研究续篇](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#7-continuation-learned-bindings-replace-the-fixed-decoder)接通分节、歧义接触、绑定及已有操作，保留误绑定与错误来源排除。/ Next: how bodily/social activity forms the scene available for binding. The [full cognitive/evolutionary objective](unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md) remains active.\n\n",
+      "before_sha256": "13fe514449e531af74fe2a01a654a757a43e5108c6942275a94d83b8c8660b61",
+      "after_sha256": "52cd4e9fced7d079a2bc224e8c3f42a9ebd1005ea039e05a1f05f92b9d598e97",
+      "inverse_preserves_other_bytes": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": {
+      "old": "**Acquired segmentation and compositional use, 8 October 2026.** [Source](AcquiredSegmentation.lean), [checker](check_acquired_segmentation.py) and [receipt](acquired-segmentation-verification.json): 23 new theorems / 51 audits with 196 inherited audits. Recorded transitions change grouping before message assembly and the earlier formed operation. All-word-sequence transfer is scoped to the supplied encoding; partial success, overgrouping, observational gaps and insufficient support remain. Categories, criterion, meanings and further-access policy are explicit premises. [Argument and source comparison](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md).\n\n",
+      "new": "**Acquired binding and compositional use, 8 October 2026.** [Source](AcquiredBinding.lean), [checker](check_acquired_binding.py) and [receipt](acquired-binding-verification.json): 23 new theorems / 41 audits with 247 inherited audits. [Canonical result](../../../../../../theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md) joins learned grouping, acquired bindings and existing response. Categories, known operations, scene coverage, intersection rule and source-admission judgments remain supplied; false binding and mistaken exclusions remain. [Existing study continuation](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#7-continuation-learned-bindings-replace-the-fixed-decoder).\n\n",
+      "before_sha256": "efa8525d3943c300be22e7cb6a8859db5af638b1cc306aefaff1606c106166f0",
+      "after_sha256": "c6a97ece18acaab45c97769c6769aa953da7e2833d419d6d506781dfe9947ff8",
+      "inverse_preserves_other_bytes": true
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "old": "**取得分节接通组合使用 / Acquired grouping enters composition，2026-10-08。** [当前认知研究](COGNITION-LEARNING-AND-EVOLUTION.md)续接经历关系、分节、消息构成与已有操作：23项新 Lean 定理／51项审计，196项继承审计分列。[论证与对应](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md)保留局部成功而一般分节仍失误、跨界及支持不足。/ This local interface is complete under supplied categories, criterion, meanings and access policy. Next: acquisition and correction of the supplied content binding, with social access explicit. Full cognition/evolutionary psychology and the universal foundation remain incomplete.\n\n",
+      "new": "**取得绑定接通组合使用 / Acquired bindings enter composition，2026-10-08。** [维护成果](../results/records/acquired-binding-compositional-use.md)把取得的分节接到由歧义接触形成的绑定，再进入已有操作；[论证与对应](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#7-continuation-learned-bindings-replace-the-fixed-decoder)保留场景覆盖、来源判断和错误反例。/ Next: bodily/social formation of the effective scene available for binding. Existing operations and categories remain supplied; the [full cognitive/evolutionary objective](COGNITION-LEARNING-AND-EVOLUTION.md) and universal foundation remain incomplete.\n\n",
+      "before_sha256": "983293ba829c168c67347b4fed24f67aeab72706311037c4fe6aac6995bf0d8b",
+      "after_sha256": "8648cd4c8de484c578d23b25aec2ca223716df70d23e36ea3b807479c4f014ed",
+      "inverse_preserves_other_bytes": true
+    }
+  },
+  "navigation_insertions": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "text": "**取得绑定进入组合使用 / Acquired binding enters compositional use，2026-10-08。** M26成对接入[既有研究的新连接](ACQUIRED-SEGMENTATION-INTEGRATION.md#7-continuation-learned-bindings-replace-the-fixed-decoder)：23项新 Lean 定理／41项审计，247项继承审计分列；迁移原分节主张并建立有明确正式依赖的新绑定成果记录。/ Only owned M26, navigation and seven authored/read fingerprints change. Repeated ambiguity, wrong unique bindings, suspension and mistaken source exclusion remain. [Edits](ACQUIRED-BINDING-INDEX-EDITS.json); [scoped checks](ACQUIRED-BINDING-CHECKS.json). No full-goal or independent acceptance; unrelated rows and reviews remain.\n\n",
+      "before_sha256": "81b93296c3a7379b16a07e1e708f359f3bcef2b11e6839446c169ce4fb1a5bcb",
+      "after_sha256": "84aa2e13655db58e5aeb57b7805dc0d4cc30be40614873f9cdeaf665c534f417",
+      "inverse_preserves_other_bytes": true
+    }
+  },
+  "data_before_sha256": "6a8ca563b8807bae3475ddd1ae8a06699c7f678bda2a0b1d843aceff5f85a340",
+  "data_after_sha256": "062521e6886faab1c627f65c3469d56ec9107e9a2a3f8df20e5cae9501175726",
+  "render_before_sha256": "8574c37dfd87866f2a511d897b6905ba6240c2b8f5eac3049a5efffb891830aa",
+  "render_after_sha256": "d29b7506c590f58ec16ee07663773f486a31828398e9de8bb5d4919f265aa10f"
+}

@@ -1,0 +1,32 @@
+RelationalGrounding.released_profiles_are_carried :
+  JointContinuationClassification.CarriesWholeProfiles JointContinuationClassification.released
+    JointContinuationClassification.retained
+RelationalGrounding.joint_bundle_extension :
+  GenerativeComparison.GenerativeExtension RelationalGrounding.jointInventory RelationalGrounding.Regime.released
+    RelationalGrounding.Regime.retained
+RelationalGrounding.marginals_agree_but_joint_descriptions_differ :
+  (∀ (claim : JointContinuationClassification.Claim),
+      RelationalGrounding.marginal RelationalGrounding.Regime.released claim ↔
+        RelationalGrounding.marginal RelationalGrounding.Regime.retained claim) ∧
+    RelationalGrounding.jointInventory.realized RelationalGrounding.Regime.retained RelationalGrounding.allBundle ∧
+      ¬RelationalGrounding.jointInventory.realized RelationalGrounding.Regime.released RelationalGrounding.allBundle
+RelationalGrounding.strict_comparison_cannot_factor_through_marginals {Summary : Type}
+  (summary : RelationalGrounding.Regime → Summary)
+  (marginalDetermines :
+    ∀ (a b : RelationalGrounding.Regime),
+      (∀ (claim : JointContinuationClassification.Claim),
+          RelationalGrounding.marginal a claim ↔ RelationalGrounding.marginal b claim) →
+        summary a = summary b)
+  (compare : Summary → Summary → Prop) (irreflexive : ∀ (s : Summary), ¬compare s s) :
+  ¬GenerativeComparison.ComparisonPrinciple RelationalGrounding.jointInventory fun a b =>
+      compare (summary a) (summary b)
+RelationalGrounding.joint_description_separates :
+  (fun bundle => RelationalGrounding.jointInventory.realized RelationalGrounding.Regime.released bundle) ≠ fun bundle =>
+    RelationalGrounding.jointInventory.realized RelationalGrounding.Regime.retained bundle
+RelationalGrounding.retained_possibility_does_not_force_joint_actualization :
+  JointContinuationClassification.retained.feasible RelationalGrounding.retainedLeft ∧
+    JointContinuationClassification.retained.realized RelationalGrounding.retainedLeft
+        JointContinuationClassification.Claim.leftRealized ∧
+      ¬JointContinuationClassification.retained.realized RelationalGrounding.retainedLeft
+            JointContinuationClassification.Claim.rightRealized ∧
+        RelationalGrounding.jointInventory.realized RelationalGrounding.Regime.retained RelationalGrounding.allBundle

@@ -1,0 +1,16 @@
+[
+  {
+    "args": [],
+    "exit_code": 0,
+    "stdout": "{\n  \"records\": 16,\n  \"errors\": [],\n  \"source_drift\": [],\n  \"scope\": \"Documentary checks only; no Lean build or semantic proof audit.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"records\": 16,\n  \"errors\": [],\n  \"source_drift\": [],\n  \"scope\": \"Documentary checks only; no Lean build or semantic proof audit.\"\n}\n",
+    "stderr": ""
+  }
+]

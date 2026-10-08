@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "functional-joining-common-structure",
+  "title": {
+    "zh": "单值接合的共同操作结构",
+    "en": "Common operational structure for functional joining"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F22",
+  "reviewed_at_utc": "2026-10-08T13:12:41.147096+00:00",
+  "claim": {
+    "zh": "固定输入对的结果至多一个时，两份精确且约简的全情境说明具有相同的诱导部分操作，并在已用代码上有唯一的同片段对齐对应。",
+    "en": "When a fixed input pair has at most one result, two exact reduced accounts of all joining contexts carry the same induced partial operation, with a unique same-fragment-aligned correspondence on used codes."
+  },
+  "hypotheses": [
+    {
+      "zh": "Functional J；全部有限单孔接合情境；双方 Exact 与 Reduced。",
+      "en": "Functional J; all finite single-hole joining contexts; Exact and Reduced for both accounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "片段、接合及其检验解释同一活动内的关系；数学语义不等于所有问题已被实际取得。",
+    "en": "Fragments, joining and its questions interpret relations within the same activity; mathematical semantics does not establish acquired access to every answer."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+  "aliases": [
+    "Generative.ExplanatoryContextualStructure.unique_common_operational_structure"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "multivalued-joining-common-structure",
+      "detail": {
+        "zh": "接续允许多结果但丰富检验并明示有限纤维；范围不同，旧结果保留。",
+        "en": "The continuation allows multiple outcomes but enriches tests and states finite fibers; the distinct older scope remains."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "detail": {
+        "zh": "不要求结果纤维的另加有限性；不恢复内部历史。多结果扩展改变检验范围，不能反写旧定理或宣称全部世界唯一。",
+        "en": "No separate finite-fiber premise; internal histories are not recovered. The multivalued extension changes the test scope and neither rewrites this theorem nor establishes uniqueness of whole worlds."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不要求结果纤维的另加有限性；不恢复内部历史。多结果扩展改变检验范围，不能反写旧定理或宣称全部世界唯一。",
+    "en": "No separate finite-fiber premise; internal histories are not recovered. The multivalued extension changes the test scope and neither rewrites this theorem nor establishes uniqueness of whole worlds."
+  },
+  "validation_scope": {
+    "zh": "所列 Lean 源码与成功冻结回执逐字哈希绑定；本轮223项审计含26项新声明。旧功能性定理信用此前166项回执，未冒充新证明。",
+    "en": "Listed Lean sources bind by exact hash to successful frozen receipts. This round checks 223 declarations including 26 new ones. The older functional theorem credits its previous 166-audit receipt, not a new proof."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+      "role": "proof",
+      "sha256": "1b28083176e41d2e73b5e764b67e12503e693e22df3c40552b2e0f1a40e22571",
+      "declarations": [
+        "Generative.ExplanatoryContextualStructure.unique_common_operational_structure"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+      "role": "receipt",
+      "sha256": "26402c57ca37b8f231da0f05e992c23835ee526ff387ee13a171983b16243e4a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "e7a7d1c8c68afaa08c285dac3a84ba874f0efb6291668dd8701d8bf79e231e5b",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+      "sha256_pointer": "/modules/8/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "从同一形成的不同关系分节取得共同细化或互译，不预设同一片段集与伙伴对齐；不重开已完成的有限结果恢复。",
+    "en": "Earn common refinement or translation between different articulations of the same formation without presupposing a common fragment set and partner alignment; reuse completed finite-outcome recovery."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：在既有接合情境研究中接续；已完成结果分别迁移，新连接与复用分列。",
+      "en": "2026-10-08: continued the existing joining-context study; migrated completed claims separately and distinguished new connections from reuse."
+    }
+  ]
+}

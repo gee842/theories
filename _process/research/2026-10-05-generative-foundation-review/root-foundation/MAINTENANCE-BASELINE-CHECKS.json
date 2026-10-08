@@ -1,0 +1,477 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T12:23:32.767643+00:00",
+  "scope": "Owned source versions, retained Lean binding, links, review disposition and paired M20. No new compiler run, empirical validation, ethical-premise certification or full-table certification.",
+  "checker_sha256": "54fb7031ea17fe070d99dad17e9f8ae57b7cb7f5c202bb8905b9ed457c586077",
+  "edits_sha256": "6d5fad14a2856c9dc60efd7c6ad1467ff72f8de7bbf4997b86567e7110becc95",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md": "3249ed833fe789ad965d6dfbe60f85b9a0a00d5cf14cb85aac352b1b72ae4b5b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md": "4e302947d6e98b9bb367bc14ec0699e5dc9891ebaa979bb2126b9c15e654919a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md": "2697cb4538d77d85e2b00a3da00d38e0b7b380555b60bed7e34e2c264602d232",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md": "c6dd42cdef29f64b373f92f308285679d2a98140750afeaea3ddce100face226",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md": "fb809c35b6c065510d7b94d0ed6e50cf2a2d64dbcb907de33d4a07d26ead6c4c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md": "6dd1dcf35ccff4cf3665cd3ffac0d0fc0379ec67caecc06e2774a24c3fe5ea8f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MaintenanceBaseline.lean": "48d26515db6aa2a4e2692e22e1eea1586c95090b139d2a728a21031a8bd3ca77",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_maintenance_baseline.py": "360814559168e7adc0defbab761d3910238c64656f68f8f8e5d3abb018c1a635",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json": "7c815c4ef34c8066f8df94ecb9a474db79e9c9d52667e65ecc5a8399ad40e646"
+  },
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md",
+      "to": "OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md",
+      "to": "TEMPORAL-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md",
+      "to": "JOINT-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md",
+      "to": "CORRECTION-HANDOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md",
+      "to": "EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "CHANCE-ADEQUACY-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "CHANCE-ADEQUACY-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#6-目的变化学习与结束责任--changed-purposes-learning-and-discharge"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md#17-a-local-allowance-cannot-renew-itself-by-changing-the-reference"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "TEMPORAL-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "JOINT-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "CORRECTION-HANDOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "MAINTENANCE-BASELINE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "MAINTENANCE-BASELINE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+      "to": "CHANCE-ADEQUACY-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "MAINTENANCE-BASELINE-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "MAINTENANCE-BASELINE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MaintenanceBaseline.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "CHANCE-ADEQUACY-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "OBSERVABLE-CONTINUATION-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "CHANCE-ADEQUACY-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md#17-a-local-allowance-cannot-renew-itself-by-changing-the-reference"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_maintenance_baseline.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-checks/20261008T121326.478309Z/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md",
+      "to": "MAINTENANCE-BASELINE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "MAINTENANCE-BASELINE-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "TEMPORAL-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "JOINT-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "CORRECTION-HANDOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "VERSIONED-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#6-目的变化学习与结束责任--changed-purposes-learning-and-discharge"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "CHANCE-ADEQUACY-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "CHANCE-ADEQUACY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MaintenanceBaseline.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_maintenance_baseline.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "MAINTENANCE-BASELINE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "MAINTENANCE-BASELINE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "CHANCE-ADEQUACY-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "CHANCE-ADEQUACY-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+      "to": "MAINTENANCE-BASELINE-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "../../../../sources/15-codex-theory-conversations/2026-10-08-chance-adequacy-lean-continuation.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "TEMPORAL-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "JOINT-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "CORRECTION-HANDOFF-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "ACQUIRED-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "CHANCE-ADEQUACY-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MaintenanceBaseline.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#4-谁承担什么--allocating-responsibilities"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "CHANCE-ADEQUACY-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md#17-a-local-allowance-cannot-renew-itself-by-changing-the-reference"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "RISK-CONDITIONING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+      "to": "MAINTENANCE-BASELINE-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "CHANCE-ADEQUACY-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "CHANCE-ADEQUACY-PROOF-AUDIT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "CHANCE-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "to": "MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "MaintenanceBaseline.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "maintenance-baseline-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "MAINTENANCE-BASELINE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "MAINTENANCE-BASELINE-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "MAINTENANCE-BASELINE-CHECKS.json"
+    }
+  ],
+  "navigation_passages": 10,
+  "proof_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json",
+    "sha256": "7c815c4ef34c8066f8df94ecb9a474db79e9c9d52667e65ecc5a8399ad40e646",
+    "retained_run": "maintenance-baseline-checks/20261008T121326.478309Z",
+    "retained_artifact_count": 29,
+    "source_sha256": {
+      "AlignmentInquiry": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+      "ChanceAdequacy": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41",
+      "ObservableContinuation": "a010674b1b4bf8baf3cce8a33170d52d1edec3f249345f2df9c29aa690aa6b8a",
+      "MaintenanceBaseline": "48d26515db6aa2a4e2692e22e1eea1586c95090b139d2a728a21031a8bd3ca77"
+    },
+    "checker_sha256": {
+      "check_maintenance_baseline.py": "360814559168e7adc0defbab761d3910238c64656f68f8f8e5d3abb018c1a635",
+      "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+    },
+    "new_theorems": 4,
+    "new_declaration_audits": 13,
+    "inherited_theorems": 21,
+    "inherited_declaration_audits": 55,
+    "separately_checked_examples": [
+      {
+        "claim": "retirement disables actual left and parallel execution",
+        "kernel_checked": true,
+        "counted_as_new_theorem": false
+      },
+      {
+        "claim": "the independent right route remains executable in its working mode after retirement",
+        "kernel_checked": true,
+        "counted_as_new_theorem": false
+      },
+      {
+        "claim": "the generic original-target transport accepts independently checked completion despite an empty retired current target",
+        "kernel_checked": true,
+        "counted_as_new_theorem": false
+      }
+    ]
+  },
+  "documentary_checker_does_not_rerun_lean": true,
+  "new_empirical_measurements": 0,
+  "independent_review": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+    "sha256": "c6dd42cdef29f64b373f92f308285679d2a98140750afeaea3ddce100face226",
+    "disposition": "accepted as an intervention-dependent task interpretation diagnostic with genuine completion controls",
+    "formal_review_scope": "independent source and receipt audit, not another compiler run"
+  },
+  "paired_row": "M20",
+  "other_entries_preserved_at_mutation": 93,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "unowned_review_hashes_preserved_at_mutation": true,
+  "scoped_render": "Canonical renderer; only M20 replaced and other lines retained.",
+  "global_check": {
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md\"\n    ],\n    \"removed_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md\"\n    ]\n  }\n}\n",
+    "stderr": ""
+  },
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+      "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  }
+}

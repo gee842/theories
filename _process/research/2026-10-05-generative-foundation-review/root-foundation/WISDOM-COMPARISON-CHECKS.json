@@ -1,0 +1,418 @@
+{
+  "checked_at_utc": "2026-10-08T13:14:51.120880+00:00",
+  "passed": true,
+  "checks_count": 95,
+  "local_references": 45,
+  "scope": "Owned interpretive comparison, existing result metadata and M15 only. Reused proof source versions are checked against retained receipts; no new theorem, Lean run, independent acceptance or full-table freshness.",
+  "checks": [
+    {
+      "check": "reviewed owned version sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned version _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned version theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    },
+    {
+      "check": "owned content retained sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "passed": true
+    },
+    {
+      "check": "original preserved at edit sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "passed": true
+    },
+    {
+      "check": "byte inverse sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "passed": true
+    },
+    {
+      "check": "owned content retained _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "passed": true
+    },
+    {
+      "check": "original preserved at edit _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "passed": true
+    },
+    {
+      "check": "byte inverse _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "passed": true
+    },
+    {
+      "check": "owned content retained theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    },
+    {
+      "check": "original preserved at edit theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    },
+    {
+      "check": "byte inverse theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    },
+    {
+      "check": "navigation migration preserves content and current route RESEARCH.md",
+      "passed": true,
+      "detail": "_process/architecture/history/05d9b507f6b9249a/RESEARCH.md; Current generated navigation links to the live wisdom-root record and canonical core study."
+    },
+    {
+      "check": "original preserved at edit RESEARCH.md",
+      "passed": true
+    },
+    {
+      "check": "navigation migration preserves content and current route theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true,
+      "detail": "_process/architecture/history/7ef46d1177ecd336/README.md; Current generated navigation links to the live wisdom-root record and canonical core study."
+    },
+    {
+      "check": "original preserved at edit theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "check": "navigation migration preserves content and current route _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true,
+      "detail": "_process/architecture/history/2e8252f3d756ccfc/README.md; Current study navigation links to the generativity chain and its M15 comparison entry."
+    },
+    {
+      "check": "original preserved at edit _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true
+    },
+    {
+      "check": "owned content retained _process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "passed": true
+    },
+    {
+      "check": "original preserved at edit _process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "passed": true
+    },
+    {
+      "check": "byte inverse _process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "passed": true
+    },
+    {
+      "check": "owned M15 matches",
+      "passed": true
+    },
+    {
+      "check": "owned M15 rendered",
+      "passed": true
+    },
+    {
+      "check": "preserved at edit other_chain_entries",
+      "passed": true
+    },
+    {
+      "check": "preserved at edit other_review_hashes",
+      "passed": true
+    },
+    {
+      "check": "preserved at edit discovery_inventory",
+      "passed": true
+    },
+    {
+      "check": "preserved at edit other_rendered_lines",
+      "passed": true
+    },
+    {
+      "check": "preserved at edit record_claim_and_open_status",
+      "passed": true
+    },
+    {
+      "check": "preserved at edit other_record_references",
+      "passed": true
+    },
+    {
+      "check": "chain fingerprint sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "passed": true
+    },
+    {
+      "check": "chain fingerprint _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "passed": true
+    },
+    {
+      "check": "chain fingerprint theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    },
+    {
+      "check": "local reference sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#root-of-wisdom-target",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison",
+      "passed": true
+    },
+    {
+      "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#ren-对中心问题的纠正--correction-of-the-central-question",
+      "passed": true
+    },
+    {
+      "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#root-of-wisdom-objective",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-REVISION-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md#5-最接近的文献与新颖性边界--primary-source-comparison",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md#3-formal-correspondence",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#2-the-exact-transfer-theorem",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md#10-necessity-across-representations-without-trivial-containment",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md#proof-and-correspondence",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md#remaining-universal-connection",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md#native-example",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md#proof-audit",
+      "passed": true
+    },
+    {
+      "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#continuing-wisdom-scope",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#12-reason-making-circumstances-and-explanatory-necessity",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "passed": true
+    },
+    {
+      "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#continuing-substantive-comparison",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md#fixed-law-comparison",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#reason-constraints-and-rivals",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#wisdom-scope-and-root",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#fallible-judgment-and-root",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#goal-grounding-and-root",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#response-structure-and-root",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#constraint-to-wisdom",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-COMPARISON-INDEX-EDITS.json",
+      "passed": true
+    },
+    {
+      "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-COMPARISON-CHECKS.json",
+      "passed": true
+    },
+    {
+      "check": "wisdom-root owned metadata current",
+      "passed": true
+    },
+    {
+      "check": "wisdom-root remains open",
+      "passed": true
+    },
+    {
+      "check": "registry wisdom-root metadata",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "registry wisdom-root source bindings",
+      "passed": true
+    },
+    {
+      "check": "wisdom-root rendered view",
+      "passed": true
+    },
+    {
+      "check": "reused goal-ground receipt passed",
+      "passed": true
+    },
+    {
+      "check": "reused source version PracticalJudgment",
+      "passed": true
+    },
+    {
+      "check": "reused source version KnowledgeCorrespondence",
+      "passed": true
+    },
+    {
+      "check": "reused source version GoalFormationRevision",
+      "passed": true
+    },
+    {
+      "check": "reused source version WisdomGoalGrounds",
+      "passed": true
+    },
+    {
+      "check": "reused limited-judgment receipt passed",
+      "passed": true
+    },
+    {
+      "check": "reused source version experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "passed": true
+    },
+    {
+      "check": "reused source version experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "passed": true
+    },
+    {
+      "check": "reused source version experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean",
+      "passed": true
+    },
+    {
+      "check": "reused source version experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+      "passed": true
+    },
+    {
+      "check": "reused source version experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+      "passed": true
+    },
+    {
+      "check": "reused source version experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+      "passed": true
+    },
+    {
+      "check": "comparison scope is explicit",
+      "passed": true
+    }
+  ],
+  "unrelated_registry_source_drift": [],
+  "global_attempts": "WISDOM-COMPARISON-GLOBAL-CHECKS.json",
+  "incoming_work_scope": "Global table checks retain unreviewed changes and new record links from concurrent work. Only three fully read substantive sources were refreshed; shared navigation insertions do not accept all other changes in those files. Three navigation files were concurrently converted to generated views. Exact archived bytes include our additions; current views link to the live wisdom-root record/core or M15. These generated views were left intact.",
+  "checker_note": "An initial documentary check used the wrong live path for KnowledgeCorrespondence.lean and stopped before writing this report; corrected to its existing inquiry-root location. No source or proof was changed.",
+  "earlier_navigation_findings": {
+    "status": "resolved by checking concurrent generated-view migration, not restoring obsolete prefixes",
+    "findings": [
+      {
+        "check": "owned content retained RESEARCH.md",
+        "passed": false,
+        "interpretation": "The original prefix is absent from the current generated view; subsequent checks verify exact archived preservation and the live navigation route."
+      },
+      {
+        "check": "owned content retained theories/shengsheng-buxi-generative-existence/README.md",
+        "passed": false,
+        "interpretation": "The original prefix is absent from the current generated view; subsequent checks verify exact archived preservation and the live navigation route."
+      },
+      {
+        "check": "owned content retained _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "passed": false,
+        "interpretation": "The original prefix is absent from the current generated view; subsequent checks verify exact archived preservation and the live navigation route."
+      }
+    ]
+  },
+  "completed_at_utc": "2026-10-08T13:15:46.573682+00:00"
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "enacted-scene-binding",
+  "title": {
+    "zh": "行动形成可供绑定的场景",
+    "en": "Action forms scenes available for binding"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F09",
+  "reviewed_at_utc": "2026-10-08T13:21:00.795254+00:00",
+  "claim": {
+    "zh": "指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入，因此其任意有限编码序列的解释结果继续成立；另外有实际响应及访问、保留、时序失败见证。",
+    "en": "The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs, preserving interpretation of every finite encoded sequence; separate witnesses cover actual response and access, retention and timing failures."
+  },
+  "hypotheses": [
+    {
+      "zh": "给定整数二维位置、Manhattan 距离与范围2、三个已识别操作位置、移动规律、命名约定和安排。",
+      "en": "Integer two-dimensional positions, Manhattan distance and range two, three identified operation sites, movement law, naming convention and schedule are supplied."
+    },
+    {
+      "zh": "复用已取得分节与绑定架构；成功史有37单位声明支持，移动消耗5单位。",
+      "en": "The acquired grouping/binding architecture is reused; the successful history has 37 declared support units, including five consumed by movement."
+    }
+  ],
+  "correspondence": {
+    "zh": "接收位置与被命名位置是同一局部安排的关系角色。范围表示可取得性，未独自解释完整视野、注意、身体或沟通意图。",
+    "en": "Receiving and named positions are relational roles within one local arrangement. Range represents accessibility; it does not itself explain a full visual field, attention, bodies or communicative intention."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+  "aliases": [
+    "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation"
+  ],
+  "dependencies": [
+    {
+      "id": "acquired-binding-compositional-use",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "空间接触史产生旧绑定构造的解释输入，直接调用其任意序列定理。",
+        "en": "The spatial history produces the prior construction’s interpretation inputs and directly invokes its all-sequence theorem."
+      },
+      "interface": {
+        "output": {
+          "zh": "给定取得绑定后，编码序列解释等于相应原子消息组合。",
+          "en": "After the stated acquired bindings, encoded-sequence interpretation equals the corresponding atomic message assembly."
+        },
+        "input": {
+          "zh": "新移动史保留相同日志、候选范围、绑定记录与排除记录。",
+          "en": "The movement history has the same log, repertoire, binding records and exclusions."
+        },
+        "conditions": {
+          "zh": "解释输入相同，不要求整个状态或支出历史相同；额外移动成本保留。",
+          "en": "Interpretation inputs match; whole-state or expenditure-history identity is not assumed, and movement costs remain."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+      "detail": {
+        "zh": "位置和名称次数相同可因时序产生相反绑定；清楚视野漏掉所指可误学；访问无保留不形成绑定，支持不足阻断移动或执行。",
+        "en": "Matching positions and name counts can yield inverted bindings through timing; a clear view omitting the target can mislead; access without retention does not bind, and insufficient support prevents movement or response."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "是给定安排下的新输入接通，不是移动安排自发形成、完整注意、知觉分类、意向理解或演化心理证明。",
+    "en": "A new input composition under a supplied schedule, not a proof of schedule formation, complete attention, perceptual categories, intention understanding or evolutionary psychology."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 新查16项定理／29项声明审计，288项继承审计分列；作者反审和含未泛化结果的原始文献比较，无新实验或独立验收。",
+    "en": "Lean 4.29.1: 16 new theorems / 29 declaration audits, with 288 inherited audits separately rebuilt; author counterreview and primary comparison including failed generalization, without a new experiment or independent acceptance."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+      "role": "proof",
+      "sha256": "e801ec6a3187354d9ad0c211687ee6ac655b7845f984fd53e2fad23798715631",
+      "declarations": [
+        "Generative.EnactedScene.enacted_scenes_supply_the_previous_binding_inputs",
+        "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation",
+        "Generative.EnactedScene.enacted_access_reaches_actual_response",
+        "Generative.EnactedScene.unchanged_position_and_name_counts_do_not_establish_coordination",
+        "Generative.EnactedScene.a_clear_view_can_omit_the_named_target"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json",
+      "role": "receipt",
+      "sha256": "8a9fc92ce6eda7cf26ae79941ce9de120e50c420730b5d9f6755e44c9652c431",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "84563b2f7e85bcc4519ce17d139bee0bc61251e3570df1de025a143760ca1b60",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json",
+      "sha256_pointer": "/source_sha256/EnactedScene",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "接通产生经历的探究与沟通行动的选择和修订；复用已有探究及方法形成，不重建泛型更新机制。",
+    "en": "Connect selection and revision of exploratory/communicative actions that produce encounters; reuse existing inquiry and method formation rather than rebuilding a generic updater."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：由实际移动计算可取得候选，并正式接通已检查的绑定解释；动作选择与类别形成的前提保留。",
+      "en": "2026-10-08: computed accessible alternatives from actual movement and formally joined the checked binding interpretation; action-selection and category-formation premises remain."
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+RelationalOrganization.lean:28:5: error: unknown tactic
+RelationalOrganization.lean:27:2: error: unsolved goals
+case refine_2
+H : Type
+eligible : H → Prop
+better : H → H → Prop
+formed : H → Prop
+menu : List H
+nonempty : menu ≠ []
+exactMenu : ∀ (a : H), eligible a ↔ a ∈ menu
+irreflexive : ∀ (a : H), ¬better a a
+transitive : ∀ {a b c : H}, better a b → better b c → better a c
+construction : ∀ (a : H), eligible a → ¬formed a → ∃ b, eligible b ∧ better b a
+a : H
+ha : a ∈ menu
+unbeaten : ∀ (b : H), b ∈ menu → ¬better b a
+x : H
+hx : Frontier eligible better x
+⊢ formed x
+RelationalOrganization.lean:76:60: error: failed to synthesize
+  Decidable (remaining Form.left = 4 ∧ basis Form.left ∧ renewed Form.left)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:79:58: error: failed to synthesize
+  Decidable (freeOccasion Form.idle () ∧ ¬freeOccasion Form.left ())
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:85:4: error: failed to synthesize
+  Decidable (protect Form.left true)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:86:4: error: failed to synthesize
+  Decidable ¬protect Form.idle true
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:92:4: error: failed to synthesize
+  Decidable (protect Form.left false)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:93:4: error: failed to synthesize
+  Decidable ¬protect Form.overbuild false
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:99:29: error: failed to synthesize
+  Decidable (eligible Form.left)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:100:37: error: failed to synthesize
+  Decidable (formed Form.left)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:101:38: error: failed to synthesize
+  Decidable (formed Form.right)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:102:34: error: failed to synthesize
+  Decidable (eligible Form.left)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:117:12: error(lean.unknownIdentifier): Unknown constant `RelationalOrganization.Form.forall`
+RelationalOrganization.lean:117:12: error(lean.unknownIdentifier): Unknown constant `RelationalOrganization.Form.forall`
+RelationalOrganization.lean:117:12: error(lean.unknownIdentifier): Unknown constant `RelationalOrganization.Form.forall`
+RelationalOrganization.lean:117:12: error(lean.unknownIdentifier): Unknown constant `RelationalOrganization.Form.forall`
+RelationalOrganization.lean:114:59: error: unsolved goals
+case idle
+⊢ ∃ x,
+    (match x with
+        | Form.idle => 0
+        | Form.left => 2
+        | Form.right => 2
+        | Form.overbuild => 5) ≤
+        6 ∧
+      (2 ≤
+          6 -
+            match x with
+            | Form.idle => 0
+            | Form.left => 2
+            | Form.right => 2
+            | Form.overbuild => 5) ∧
+        match x with
+        | Form.idle => False
+        | x => True
+
+case left
+⊢ ∀ (b : Form),
+    (match b with
+        | Form.idle => 0
+        | Form.left => 2
+        | Form.right => 2
+        | Form.overbuild => 5) ≤
+        6 →
+      (2 ≤
+          6 -
+            match b with
+            | Form.idle => 0
+            | Form.left => 2
+            | Form.right => 2
+            | Form.overbuild => 5) →
+        (match b with
+          | Form.idle => False
+          | x => True) →
+          ¬(match b with
+              | Form.idle => 0
+              | Form.left => 2
+              | Form.right => 2
+              | Form.overbuild => 5) =
+              0
+
+case right
+⊢ ∀ (b : Form),
+    (match b with
+        | Form.idle => 0
+        | Form.left => 2
+        | Form.right => 2
+        | Form.overbuild => 5) ≤
+        6 →
+      (2 ≤
+          6 -
+            match b with
+            | Form.idle => 0
+            | Form.left => 2
+            | Form.right => 2
+            | Form.overbuild => 5) →
+        (match b with
+          | Form.idle => False
+          | x => True) →
+          ¬(match b with
+              | Form.idle => 0
+              | Form.left => 2
+              | Form.right => 2
+              | Form.overbuild => 5) =
+              0
+
+case overbuild
+⊢ ∃ x,
+    (match x with
+        | Form.idle => 0
+        | Form.left => 2
+        | Form.right => 2
+        | Form.overbuild => 5) ≤
+        6 ∧
+      ((6 -
+            match x with
+            | Form.idle => 0
+            | Form.left => 2
+            | Form.right => 2
+            | Form.overbuild => 5) <
+          2 →
+        ((2 ≤
+              6 -
+                match x with
+                | Form.idle => 0
+                | Form.left => 2
+                | Form.right => 2
+                | Form.overbuild => 5) →
+            ¬match x with
+              | Form.idle => False
+              | x => True) →
+          (6 -
+                match x with
+                | Form.idle => 0
+                | Form.left => 2
+                | Form.right => 2
+                | Form.overbuild => 5) <
+              2 ∧
+            ((2 ≤
+                  6 -
+                    match x with
+                    | Form.idle => 0
+                    | Form.left => 2
+                    | Form.right => 2
+                    | Form.overbuild => 5) →
+                ¬match x with
+                  | Form.idle => False
+                  | x => True) ∧
+              (match x with
+                | Form.idle => 0
+                | Form.left => 2
+                | Form.right => 2
+                | Form.overbuild => 5) =
+                0)
+RelationalOrganization.lean:125:10: error: failed to synthesize
+  Decidable ¬usesLeft Form.right
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:128:10: error: failed to synthesize
+  Decidable ¬usesRight Form.left
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:133:24: error: failed to synthesize
+  Decidable (linked Form.overbuild)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:133:35: error: failed to synthesize
+  Decidable ¬basis Form.overbuild
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RelationalOrganization.lean:134:31: error: failed to synthesize
+  Decidable (eligible Form.left)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

@@ -1,0 +1,11 @@
+AcquiredBinding.lean:43:2: error: Tactic `constructor` failed: target is not an inductive datatype
+
+s : Lexicon
+form : List Sound
+meaning : Expr
+⊢ meaning ∈ s.repertoire →
+    ((∀ (x : Encounter), x ∈ s.records → x.origin ∈ s.excluded ∨ ¬x.form = form ∨ meaning ∈ x.offered) ↔
+      ∀ (r : Encounter), r ∈ s.records → ¬r.origin ∈ s.excluded → r.form = form → meaning ∈ r.offered)
+AcquiredBinding.lean:82:18: error(lean.invalidField): Invalid field `symm`: The environment does not contain `List.Mem.symm`, so it is not possible to project the field `symm` from an expression
+  mem
+of type `List.Mem target [e]`

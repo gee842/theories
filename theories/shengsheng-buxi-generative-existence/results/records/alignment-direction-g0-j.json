@@ -32,7 +32,22 @@
         "zh": "把既有原则应用到明示 AI 服务关系；形式例直接导入 PracticalJudgment。",
         "en": "Applies the existing principles to declared AI-service relations; the formal example imports PracticalJudgment."
       },
-      "relation": "application"
+      "relation": "application",
+      "interface": {
+        "output": {
+          "zh": "G0/J 下的比较与有界实践原则。",
+          "en": "Comparison and bounded practical principles under G0/J."
+        },
+        "input": {
+          "zh": "AI 服务与交接案例的规范应用。",
+          "en": "Normative application to AI service and transfer cases."
+        },
+        "conditions": {
+          "zh": "AI 对应 E、权限、承担及真实损失仍独立说明；应用而非普遍遵循定理。",
+          "en": "AI correspondence E, authority, undertakings and real losses remain explicit; an application, not a universal compliance theorem."
+        },
+        "evidence": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md"
+      }
     }
   ],
   "related": [],
@@ -111,6 +126,10 @@
     {
       "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
       "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。",
+      "en": "2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation."
     }
   ]
 }

@@ -1,0 +1,12 @@
+'Generative.ExplanatoryContextualStructure.exact_same_code' does not depend on any axioms
+'Generative.ExplanatoryContextualStructure.different_realization_forces_distinction' does not depend on any axioms
+'Generative.ExplanatoryContextualStructure.operation_domain_exact' does not depend on any axioms
+'Generative.ExplanatoryContextualStructure.operation_on_realized_result' depends on axioms: [propext]
+'Generative.ExplanatoryContextualStructure.operation_functional' depends on axioms: [propext]
+'Generative.ExplanatoryContextualStructure.canonical_exact' does not depend on any axioms
+'Generative.ExplanatoryContextualStructure.canonical_reduced' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryContextualStructure.every_exact_account_has_canonical_factor' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryContextualStructure.aligned_matching_transports_operation' does not depend on any axioms
+'Generative.ExplanatoryContextualStructure.aligned_matching_preserves_operation' does not depend on any axioms
+'Generative.ExplanatoryContextualStructure.unique_common_operational_structure' depends on axioms: [propext]

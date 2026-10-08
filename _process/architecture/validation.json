@@ -1,0 +1,132 @@
+{
+  "checked_at_utc": "2026-10-08T13:22:12.248214+00:00",
+  "scope": "Repository structure, navigation, original bytes and existing receipt bindings; no new scientific validation.",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/research/tests",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 0.264s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "tools/research/research.py",
+        "check"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "{\n  \"records\": 34,\n  \"selected_records\": [\n    \"acquired-binding-compositional-use\",\n    \"aggregate-exit-funding\",\n    \"alignment-direction-g0-j\",\n    \"assured-route-criterion\",\n    \"branching-target-uniqueness\",\n    \"branching-tests-bisimulation\",\n    \"code-plan-global-support\",\n    \"conditional-foundation-assessment\",\n    \"derivation-soundness\",\n    \"enacted-scene-binding\",\n    \"exclusive-footprint-support\",\n    \"fallible-witness-diagnosability\",\n    \"finite-basis-common-interpretation\",\n    \"finite-continuation-plans\",\n    \"finite-joining-tree-lifting\",\n    \"finite-trace-transport\",\n    \"fulfillment-chance-floor\",\n    \"functional-joining-common-structure\",\n    \"joining-questions-survive-encoding\",\n    \"joint-code-plan-lifting\",\n    \"joint-decomposition-lifting\",\n    \"joint-plan-composition\",\n    \"joint-target-uniqueness\",\n    \"multivalued-joining-common-structure\",\n    \"organizational-formation-from-generative-comparison\",\n    \"positive-ground-open-futures\",\n    \"practical-judgment-g0-j\",\n    \"relational-generative-comparison\",\n    \"risk-certificate-outcome-distinction\",\n    \"situated-recovery-empirical-correspondence\",\n    \"trace-law-equivalence\",\n    \"transition-grouping-word-partition\",\n    \"universal-practical-warrant\",\n    \"wisdom-root\"\n  ],\n  \"errors\": [],\n  \"source_drift\": [],\n  \"unrelated_source_drift\": [],\n  \"scope\": \"Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/build_result_registry.py",
+        "--check"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout": "{\n  \"records\": 34,\n  \"errors\": [],\n  \"source_drift\": [],\n  \"other_record_drift\": [],\n  \"scope\": \"Documentary checks only; no Lean build or semantic proof audit.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Users/ren/theories/tools/research/research.py",
+        "check",
+        "--ids",
+        "trace-law-equivalence"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "stdout": "{\n  \"records\": 34,\n  \"selected_records\": [\n    \"trace-law-equivalence\"\n  ],\n  \"errors\": [],\n  \"source_drift\": [],\n  \"unrelated_source_drift\": [],\n  \"scope\": \"Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "build_lean_catalogue.py",
+        "--help"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "build_results_catalogue.py",
+        "--help"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "build_session_result_map.py",
+        "--help"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "build_generative_chain.py",
+        "--help"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0
+    }
+  ],
+  "records": 34,
+  "dependency_edges": 14,
+  "preserved_versions": 14,
+  "working_lean_modules": 520,
+  "textual_import_candidates": 584,
+  "unresolved_or_external_imports": 89,
+  "isolated_staged_snapshot": {
+    "tree": "52864513d207ad48632414d265ef9a4bd1e2d78f",
+    "scope": "Full staged tree exported independently of the shared checkout; both metadata check and all 23 tests passed. This validation receipt was appended afterwards.",
+    "checks": [
+      {
+        "command": [
+          "python3",
+          "-B",
+          "tools/research/research.py",
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"records\": 34,\n  \"selected_records\": [\n    \"acquired-binding-compositional-use\",\n    \"aggregate-exit-funding\",\n    \"alignment-direction-g0-j\",\n    \"assured-route-criterion\",\n    \"branching-target-uniqueness\",\n    \"branching-tests-bisimulation\",\n    \"code-plan-global-support\",\n    \"conditional-foundation-assessment\",\n    \"derivation-soundness\",\n    \"enacted-scene-binding\",\n    \"exclusive-footprint-support\",\n    \"fallible-witness-diagnosability\",\n    \"finite-basis-common-interpretation\",\n    \"finite-continuation-plans\",\n    \"finite-joining-tree-lifting\",\n    \"finite-trace-transport\",\n    \"fulfillment-chance-floor\",\n    \"functional-joining-common-structure\",\n    \"joining-questions-survive-encoding\",\n    \"joint-code-plan-lifting\",\n    \"joint-decomposition-lifting\",\n    \"joint-plan-composition\",\n    \"joint-target-uniqueness\",\n    \"multivalued-joining-common-structure\",\n    \"organizational-formation-from-generative-comparison\",\n    \"positive-ground-open-futures\",\n    \"practical-judgment-g0-j\",\n    \"relational-generative-comparison\",\n    \"risk-certificate-outcome-distinction\",\n    \"situated-recovery-empirical-correspondence\",\n    \"trace-law-equivalence\",\n    \"transition-grouping-word-partition\",\n    \"universal-practical-warrant\",\n    \"wisdom-root\"\n  ],\n  \"errors\": [],\n  \"source_drift\": [],\n  \"unrelated_source_drift\": [],\n  \"scope\": \"Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tools/research/tests",
+          "-p",
+          "test_*.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 0.272s\n\nOK\n"
+      }
+    ]
+  }
+}

@@ -4,9 +4,9 @@
 
 `universal-practical-warrant` · **open** · target · F08
 
-记录源 / Editable record: [universal-practical-warrant.json](universal-practical-warrant.json) · [登记表 / Register](../RESULT-REGISTER.md)
+记录源 / Editable record: [universal-practical-warrant.json](universal-practical-warrant.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T13:14:50.773314+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -53,3 +53,4 @@ Aliases / 别名: —
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-08：核读整合章新增的有限可见未来正面根据及关系生成比较；它们沿显式G0路线，未改变本独立目标及原研究范围。仅更新该已读整合引用，不新增证明。 / 2026-10-08: read the integration additions on positive ground in visible futures and relational comparison. They follow explicit G0 and do not complete or alter this independent target. Updated only this reviewed integration reference; no new proof.

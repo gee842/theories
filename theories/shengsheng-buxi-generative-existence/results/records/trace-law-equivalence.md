@@ -4,7 +4,7 @@
 
 `trace-law-equivalence` · **recorded-checked** · theorem · F01
 
-记录源 / Editable record: [trace-law-equivalence.json](trace-law-equivalence.json) · [登记表 / Register](../RESULT-REGISTER.md)
+记录源 / Editable record: [trace-law-equivalence.json](trace-law-equivalence.json) · [登记表 / Register](../../../../RESULTS.md)
 
 Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
@@ -30,7 +30,13 @@ Boundary source / 边界来源: [DynamicConsequences.lean](../../../../experimen
 
 ## 依赖与关联 Dependencies and related results
 
-No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
+- **formal-reuse**: [finite-trace-transport](finite-trace-transport.md). 两个方向使用恒等映射的 trace_map；单步恢复另用已有引理。 / Both directions use trace_map with the identity map; step recovery separately uses the existing singleton lemma.
+
+**Output / 输出:** 保步映射下的目标历史。 / Target trace under a step-preserving map.
+
+**Input / 输入:** SameSteps 两个蕴涵分别提供 hstep。 / The two SameSteps implications each supply hstep.
+
+**Preserved conditions / 保留条件:** 同一状态、动作类型和原端点；没有物理规律识别。 / Same state/action types and endpoints; no physical law identification. [DynamicConsequences.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean)
 
 
 ## 来源与既有回执 Sources and existing receipts
@@ -55,3 +61,4 @@ Aliases / 别名: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generativ
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 公开包装直接调用原定理；P01 已记录此复用，不计两个独立证明。 / The public wrapper directly invokes the original theorem; P01 records the reuse, counted as one result.
+- 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.

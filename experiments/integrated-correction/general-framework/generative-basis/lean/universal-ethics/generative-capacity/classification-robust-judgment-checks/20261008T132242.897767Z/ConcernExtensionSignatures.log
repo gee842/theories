@@ -1,0 +1,33 @@
+ConcernExtension.included_extension_iff {H I J : Type} (old : H → I → Prop) (fresh : H → J → Prop) (a b : H) :
+  PracticalJudgment.Included (ConcernExtension.extend old fresh a) (ConcernExtension.extend old fresh b) ↔
+    PracticalJudgment.Included (old a) (old b) ∧ PracticalJudgment.Included (fresh a) (fresh b)
+ConcernExtension.strict_extension_transfer_iff {H I J : Type} (old : H → I → Prop) (fresh : H → J → Prop) (a b : H)
+  (h : PracticalJudgment.StrictIncluded (old a) (old b)) :
+  PracticalJudgment.StrictIncluded (ConcernExtension.extend old fresh a) (ConcernExtension.extend old fresh b) ↔
+    PracticalJudgment.Included (fresh a) (fresh b)
+ConcernExtension.retained_old_new_strict {H I J : Type} (old : H → I → Prop) (fresh : H → J → Prop) (a b : H)
+  (hab : PracticalJudgment.Included (old a) (old b)) (hn : PracticalJudgment.StrictIncluded (fresh a) (fresh b)) :
+  PracticalJudgment.StrictIncluded (ConcernExtension.extend old fresh a) (ConcernExtension.extend old fresh b)
+ConcernExtension.crossed_extension_is_incomparable {H I J : Type} (old : H → I → Prop) (fresh : H → J → Prop) (a b : H)
+  (ho : PracticalJudgment.StrictIncluded (old a) (old b)) (hn : PracticalJudgment.StrictIncluded (fresh b) (fresh a)) :
+  ¬PracticalJudgment.Included (ConcernExtension.extend old fresh a) (ConcernExtension.extend old fresh b) ∧
+    ¬PracticalJudgment.Included (ConcernExtension.extend old fresh b) (ConcernExtension.extend old fresh a)
+ConcernExtension.covered_profiles_no_better {H C G : Type} (p : H → C → Prop) (g : H → G → Prop) (a b : H)
+  (pab : PracticalJudgment.Included (p a) (p b)) (gab : PracticalJudgment.Included (g a) (g b)) :
+  ¬PracticalJudgment.Better p g a b
+ConcernExtension.positive_extension_changes_judgment {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (fresh : H → N → Prop) (a b : H) (pab : PracticalJudgment.Included (p a) (p b))
+  (pba : PracticalJudgment.Included (p b) (p a)) (gab : PracticalJudgment.Included (g a) (g b))
+  (gba : PracticalJudgment.Included (g b) (g a)) (hn : PracticalJudgment.StrictIncluded (fresh b) (fresh a)) :
+  ¬PracticalJudgment.Better p g a b ∧
+    ¬PracticalJudgment.Better p g b a ∧ PracticalJudgment.Better p (ConcernExtension.extend g fresh) a b
+ConcernExtension.gain_judgment_transfer_iff {H C G N : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (fresh : H → N → Prop) (a b : H) (pab : PracticalJudgment.Included (p a) (p b))
+  (pba : PracticalJudgment.Included (p b) (p a)) (hgain : PracticalJudgment.StrictIncluded (g b) (g a)) :
+  PracticalJudgment.Better p (ConcernExtension.extend g fresh) a b ↔ PracticalJudgment.Included (fresh b) (fresh a)
+ConcernExtension.new_basic_condition_can_reverse {H C G N R : Type} (p : H → C → Prop) (g : H → G → Prop)
+  (freshBasic : H → N → Prop) (freshGain : H → R → Prop) (a b : H) (pab : PracticalJudgment.Included (p a) (p b))
+  (pba : PracticalJudgment.Included (p b) (p a)) (hgain : PracticalJudgment.StrictIncluded (g b) (g a))
+  (hbasic : PracticalJudgment.StrictIncluded (freshBasic a) (freshBasic b)) :
+  PracticalJudgment.Better p g a b ∧
+    PracticalJudgment.Better (ConcernExtension.extend p freshBasic) (ConcernExtension.extend g freshGain) b a

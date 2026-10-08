@@ -1,5 +1,11 @@
 # 智慧、情境与共同核心 / Wisdom, context and the common core
 
+**理由约束的实质对照 / Substantive comparison of reason constraints，2026-10-08。** [第12节](#reason-constraints-and-rivals)接入[具体文献与原案例比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)，区分保留关系、换表述及普遍根的争议。/ Contextual judgment can retain particular constraints while disputing a necessary general basis. This is interpretive work reusing checked results, not a new proof.
+
+**智慧的分化与整个根 / Differentiated wisdom and the whole root，2026-10-08。** [第11节](#wisdom-scope-and-root)接入[独立内容与替代解释比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root)：具体判断、形成的能力与完整解释各有范围。/ The common-root candidate must explain differentiated standards and their connections; this philosophical continuation adds no theorem and leaves the full root open.
+
+**有限判断与真实失败 / Limited judgment and actual failure，2026-10-08。** [第10节](#fallible-judgment-and-root)接入[5项新 Lean 应用](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)：正确风险陈述可以伴随实际失败，单次成败不独自判定原界限。/ Claim strength governs the necessity test; numerical risk certification does not establish ethical permission or the full wisdom root.
+
 **目标评价的接续 / Evaluating ends，2026-10-08。** [第9节](#goal-grounding-and-root)接入[7项新 Lean 定理与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md)：旧、新目标成就相同仍可有相反保护比较；固定的关系敏感规则也能满足要求。/ The new necessity concerns retained content, not exclusive algorithmic form. Full wisdom and the universal root remain unproved.
 
 **新的必要性检验 / New necessity test，2026-10-08。** [第8节](#response-structure-and-root)与[证明整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md)接入9项新 Lean 定理：足够行动的不同描述，未必有仍足够行动的共同最粗描述。/ A common practical ground need not be a shared least description. Earlier zero-new-proof updates retain their historical scope; universal wisdom remains unproved.
@@ -106,3 +112,42 @@ The nine checked theorems concern one-step deterministic response in a supplied 
 这使“智慧之根”的候选解释进入目的评价：生活关系经公开规范根据成为理由，理由也约束那些在关系中形成并继续改变它们的目的。必要性落在所保留的判断内容，不能用“固定”或“会变”两个标签独自裁判一个解释。丰富的目标表示若纳入相关关系，应得到完整比较信用。
 
 The new theorem concerns a fixed, supplied comparison and a family of actual outcome configurations. It does not establish J2's necessity for every wisdom tradition, require infallible choice from limited evidence, or prove the complete core indispensable. The same-author counterreview and primary comparison retain Aristotle's distinction between successful cleverness, right desire and practical wisdom, without identifying his ethical grounds with G0. [The study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md) records seven new theorems and eleven audits, with 93 inherited theorems and 165 inherited audits separately credited. The remaining root connection concerns independently specified wisdom and the full substantive foundation; completed formation, practical and risk results remain reusable results.
+
+<a id="fallible-judgment-and-root"></a>
+## 10. 有范围的理由与失败后的接续 / Scoped reasons and continuation after failure
+
+同一过程形成观察和判断，判断参与回应，回应又形成后续条件。检验这些判断时，需要保留它们所声称内容的区别：保证每个分支成功，与说明某项风险不超过给定界限，是不同强度的主张。
+
+新增5项Lean应用沿用第8节的三路线后果关系。给定三个等权事件，任意固定路线的失败权重均为三分之一，仍允许实际失败。另一组给定权重使固定路线的同一界限失效，却允许相同的成功或失败终点。因此只看一次模式／结果投影不足以独自判定原界限；结合保留的证据、新资料及历史仍可能修订认识。
+
+这不是为三分之一风险给出伦理许可，也未证明概率已经被学得。实际行动理由继续由公开G0/J/E、可行替代、时间与形成的承担说明。[一般实践判断](PRACTICAL-JUDGMENT.md)已保留有限、及时、可复核的决定和残余责任。事前陈述成立不抹去后来损失；后来损失也不独自证明事前陈述错误。两方面须在同一历史中接续。
+
+**对慧根目标的推进：**有限智慧不必以永不失败为标准，但每项理由仍须说明其根据及有效范围。必要关系的检验应保留目标判断实际声称的内容，而不是先把它升级为全知或必胜。[研究、原始来源对照与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)明确，此次证明的是正确风险陈述与失败实现并存，尚非内容为假的信念可以得到辩护。
+
+Five new application/correspondence theorems and 59 inherited audits are distinguished. This closes a local scope correction; it does not establish universal wisdom, actual probability calibration or ethical risk acceptance. Existing formation, risk and G0/J/E results remain credited. The full target still requires a substantive coverage and necessity argument across independently characterized wisdom, allowing tacit and collective realizations and faithful alternative explanations.
+
+<a id="wisdom-scope-and-root"></a>
+## 11. 共同根怎样解释不同智慧 / How a common root explains different wisdom
+
+同一活动可以形成操作辨别、论证能力、对认识范围的把握，以及对生活得失的判断。这些能力相连，也可能发展不均。共同根的解释须保留这种分化：一次理论理解不必立即产生行动收益，熟练动作不必逐步以语言演绎，技术成功也不独自说明目的正当。
+
+[此次原典比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root)核对《申辩》关于专长与越界的段落、《尼各马可伦理学》第VI卷的不同智慧，以及《养生主》中的操练与遇难戒惧。它们修正的是我们的覆盖表述，不证明文本已接受同一core，也不构成智慧的穷尽分类。
+
+因此，整个根的解释职责不能直接变成每次智慧活动的功能清单。具体判断需要保持所涉内容与根据；形成的能力需要相应取得与运用关系；完整生成解释还需要说明这些能力的联系及规范根据。三者是同一历史中的不同问题，不是独立本体。说明认识的生成也不等于说明其对象一律在时间中生成。
+
+正面候选是：共同生成关系使不同判断具有不可任意替换的内容，并解释它们怎样取得、相连和修正。伦理实践继续以公开G0/J/E说明生活之善、损失与回应，不能把某段技艺或理论认识直接算成普遍伦理的证明。保留经验、德性与具体判断的替代说明仍能解释本次比较；整个core的不可省略性尚未由此确立。
+
+This interpretive audit adds no mathematical proof or empirical experiment. Existing response, goal-ground, risk and formation results remain complete at their original scopes. The completed goal-formation and evaluative-application studies already connect acquired evidence, disclosed grounds and subsequent action at their stated scope. The remaining root comparison concerns their contribution to warranted scope recognition and their indispensability against accounts preserving the same wisdom content. The universal root claim remains open; local episodes need not explicitly possess the theory or instantiate every branch.
+
+<a id="reason-constraints-and-rivals"></a>
+## 12. 保留关系与争论根基 / Retained relations and disputed grounding
+
+[主研究第13节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)把上一节的对照落实到Dancy的理由特殊主义、Dewey的目的形成及已完成的目标评价案例。两种文献分别检验规范根的必要性与生成说明的解释信用，不合并成一个学派。
+
+在原目标评价例里，仅有旧、新成就表会遗漏改变比较的参与／维护关系；这一条件性不足已有证明。一个实际辨明这些关系的经验判断，则不能仅因不显式执行原则而被排除。固定且对关系敏感的规则也已有充分性见证。因此，规则固定或判断重视情境都不足以裁判根基地位。
+
+从同一形成过程分析，理由所支持的内容、该支持适用的条件、现在有根据认识它的条件，以及实际实行回应的条件，各有不同作用。例如，保护生活的根据、证据质量与执行能力不能相互替代；形成的依存却可能同时影响实践可能性与公开J3下的责任。这里区分解释工作，不设事实／价值或认识／行动的独立领域。
+
+共同根的正面任务，是说明这些关系如何形成、相连并支持新判断。局部有理由并不自动证明必须有某一组普遍原则；对手也不因承认情境关系就接受整个core。G0/J/E路线继续使用，已完成形成和实践论证继续复用。下一检验针对理由关系跨情境接续的根据，避免只凭相似特征移植答案。
+
+This continuation reuses the checked goal-ground and risk results without adding mathematical claims. Particular constraints, their applicability, evidence and execution remain related but distinct explanatory roles. The selected rivals retain substantial content; the disputed step is the necessity of the full common generative/normative basis. Whole-root necessity and universal discovery remain open.

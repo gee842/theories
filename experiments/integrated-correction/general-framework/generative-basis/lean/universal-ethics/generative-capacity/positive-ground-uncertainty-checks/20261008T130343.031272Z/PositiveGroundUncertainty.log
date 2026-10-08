@@ -1,0 +1,12 @@
+PositiveGroundUncertainty.lean:234:13: error: failed to synthesize
+  Decidable (live FormationModel.one)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PositiveGroundUncertainty.lean:234:24: error: failed to synthesize
+  Decidable (live FormationModel.two)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PositiveGroundUncertainty.lean:234:35: error: failed to synthesize
+  Decidable ¬live FormationModel.barren
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

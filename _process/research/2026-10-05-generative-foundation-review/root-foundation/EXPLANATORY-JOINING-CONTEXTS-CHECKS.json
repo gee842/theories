@@ -1,0 +1,448 @@
+{
+  "passed": true,
+  "scope": "38 new checked claims and their integration; not a whole-table or independent scientific review.",
+  "new_theorems": 38,
+  "stage_theorems": [
+    16,
+    11,
+    11
+  ],
+  "inherited_audits": 128,
+  "total_declaration_audits": 166,
+  "total_empty_axiom_audits": 125,
+  "total_standard_axiom_audits": 41,
+  "new_empty_axiom_audits": 20,
+  "new_standard_axiom_audits": 18,
+  "new_classical_choice_audits": 0,
+  "new_theorem_inventory": {
+    "ExplanatoryJoiningContexts.lean": [
+      "realizes_splice",
+      "possible_splice",
+      "realizes_functional",
+      "continuation_after_realization",
+      "same_refl",
+      "same_symm",
+      "same_trans",
+      "possible_right",
+      "possible_left",
+      "same_preserves_joinability",
+      "same_continuation_results",
+      "same_join_results",
+      "compatible_transports_realization",
+      "compatible_refines_same",
+      "same_compatible",
+      "same_iff_compatible_relation"
+    ],
+    "ExplanatoryContextualStructure.lean": [
+      "exact_same_code",
+      "different_realization_forces_distinction",
+      "operation_domain_exact",
+      "operation_on_realized_result",
+      "operation_functional",
+      "canonical_exact",
+      "canonical_reduced",
+      "every_exact_account_has_canonical_factor",
+      "aligned_matching_transports_operation",
+      "aligned_matching_preserves_operation",
+      "unique_common_operational_structure"
+    ],
+    "ExplanatoryHistoryInterfaces.lean": [
+      "boundary_join_replacement",
+      "boundaries_compatible",
+      "all_joining_contexts_iff_boundaries",
+      "local_probes_complete_for_all_contexts",
+      "every_exact_joining_account_retains_interfaces",
+      "interface_account_exact",
+      "interface_account_reduced",
+      "different_histories_same_required_interface",
+      "all_exact_accounts_factor_through_interfaces",
+      "history_account_exact",
+      "history_account_need_not_be_reduced"
+    ]
+  },
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json",
+  "receipt_sha256": "26402c57ca37b8f231da0f05e992c23835ee526ff387ee13a171983b16243e4a",
+  "source_and_frozen_log_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "audits": 18
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "log_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe",
+      "audits": 7
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+      "sha256": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+      "log_sha256": "6dbed6431dcbda668df4d730c07dde76db30141da09973cd6bcd78385c13a37f",
+      "audits": 17
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+      "sha256": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+      "log_sha256": "28b0e02b62cb780f89731ca209aa00ee4b3868c537ee781636ce2a8198255a7a",
+      "audits": 17
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+      "sha256": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+      "log_sha256": "aa4c0d049327a18e313ffc123c9d10e0b98b17b62f7a98a79f0b2f59f0720b01",
+      "audits": 15
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean",
+      "sha256": "1149035f2cc534f133664e6e1377f96761a16d532fe01af8639063ab4503176d",
+      "log_sha256": "be1047c08d2e9176779967cf5d4c713b1fa82462f6047ac986e9b29a010ee0fd",
+      "audits": 23
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean",
+      "sha256": "a2167da3bd8c6364f0bcd7bfbc443edb153e3329c034fd015a42a844e3e4e0cf",
+      "log_sha256": "da459d7c49a67059234ae681283046ae43f73ef5f9dcc8930caedf02e9d65c87",
+      "audits": 31
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean",
+      "sha256": "ce2396e989a8476f9c3871e825a723b378b8864a115d43f98d27b94af9f31cbd",
+      "log_sha256": "03e19c6fdad01cd250efc81036b5ff97d3386bea4107c1e1ba98cde5b6966dcd",
+      "audits": 16
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+      "sha256": "1b28083176e41d2e73b5e764b67e12503e693e22df3c40552b2e0f1a40e22571",
+      "log_sha256": "f5c1b2e877e4fb9532b8481e8aeeeb1ecce261873671bc3340cee836783ccf44",
+      "audits": 11
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean",
+      "sha256": "dc86c689d1d5a07db6a198474fdd3b27c12e4081db5649da1d1888df69d9268c",
+      "log_sha256": "07215dc6b684c244f18f7b9e1a44db40e15e52ffdecca442a3abf74bc6c63e9c",
+      "audits": 11
+    }
+  ],
+  "inherited_source_and_dependency_inventory_unchanged": true,
+  "local_links_checked": 68,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#纠正后继续--correct-and-continue"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md#84-把检验放回同一接合活动"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "EXPLANATORY-JOINING-CONTEXTS-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "EXPLANATORY-INQUIRY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_joining_contexts.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "EXPLANATORY-JOINING-CONTEXTS-CHECKS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "#83-非二元纠正不能把表示的边界当成生成根基的边界"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-UNIVERSALITY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md#primary-sources-and-genealogy"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "KNOWLEDGE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md#7-primary-sources-and-inherited-work"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-UNIVERSALITY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-UNIVERSALITY-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/EXPLANATORY-NECESSITY.md#84-把检验放回同一接合活动"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#纠正后继续--correct-and-continue"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+    }
+  ],
+  "owned_rows": [
+    "C30",
+    "F22"
+  ],
+  "prior_row_contributions_preserved": true,
+  "prior_checked_chapter_and_source_preserved": true,
+  "owned_rendered_rows_match": true,
+  "shared_chapter_sections_contiguous": true,
+  "concurrent_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md": "ce921fbb55e3a37487670824344a1a3b68ac4ac93b42454e8093bd02a680060e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md": "52be136edab46a2f335dd4ce9cdaf32511dc9f42f16f040308ff6b6b5177688c",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md": "5f7656960adbac5dcb8c0efb868c00c5dbd22b56d366ee1b3571cf1134bba7a5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-CHECK.py": "ca7f3a1760e079e47431bbdb4b9daeef13209d93791eab3e040f1caf5da5f5a0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INDEX-EDITS.json": "8c74dee1ff83299ea2170146926f8537359ad814c9aba83751e9350aabb002b6"
+  }
+}

@@ -1,6 +1,6 @@
 # 不能用自己撤掉的支承重算履约目标 / Maintenance after changing its own conditions
 
-2026-10-08。AI 整合，接续 Ren 的“继续”与持续有效的 [Lean 实查要求](../../../../sources/15-codex-theory-conversations/2026-10-08-chance-adequacy-lean-continuation.md)。沿 G0/J 路线。[协议](MAINTENANCE-BASELINE-PROTOCOL.md)、[肯定论证](MAINTENANCE-BASELINE-ARGUMENT.md)、[证明](MAINTENANCE-BASELINE-PROOF.md)与[独立反审](MAINTENANCE-BASELINE-REVIEW.md)分别保留其范围。最终实查与反审待绑定。
+2026-10-08。AI 整合，接续 Ren 的“继续”与持续有效的 [Lean 实查要求](../../../../sources/15-codex-theory-conversations/2026-10-08-chance-adequacy-lean-continuation.md)。沿 G0/J 路线。[协议](MAINTENANCE-BASELINE-PROTOCOL.md)、[肯定论证](MAINTENANCE-BASELINE-ARGUMENT.md)、[证明](MAINTENANCE-BASELINE-PROOF.md)与[独立反审](MAINTENANCE-BASELINE-REVIEW.md)分别保留其范围。**4项新定理／13项审计实际通过，独立验收接受；本轮指定的对应纠错完成。**
 
 ## 1. 先关闭已经完成的机制清单
 
@@ -45,7 +45,7 @@ This is a correction to a task interpretation under intervention. It does not in
 
 本例只处理一次交付。这里的质量统计是**整段任务历史中的交付事件**，不是退役后仍在运行的能力。未构造新设施或长期继任供给，没有证明换线期间连续无断供、物理截止时限、实际记录可信或全部合理解除规则。
 
-[实际回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json)绑定运行 `20261008T121326.478309Z` 的29项产物。新源码 SHA-256 为 `48d26515db6aa2a4e2692e22e1eea1586c95090b139d2a728a21031a8bd3ca77`；新模块11项声明空依赖，1项仅 `propext`，1项含 `propext` 与 `Quot.sound`。没有自设公理、证明缺口或跳过内核。这不等于规范及对应已无前提。最终独立验收见[反审记录](MAINTENANCE-BASELINE-REVIEW.md)。
+[实际回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/maintenance-baseline-verification.json)绑定运行 `20261008T121326.478309Z` 的29项产物。新源码 SHA-256 为 `48d26515db6aa2a4e2692e22e1eea1586c95090b139d2a728a21031a8bd3ca77`；新模块11项声明空依赖，1项仅 `propext`，1项含 `propext` 与 `Quot.sound`。没有自设公理、证明缺口或跳过内核。这不等于规范及对应已无前提。[独立反审](MAINTENANCE-BASELINE-REVIEW.md)核验四模块源码、全部签名与依赖、两检查器、29项产物、三个应用例及旧段落定向修改，接受本轮范围；未另运行 Lean 编译器。
 
 ## 4. 规范根据、最强对手与所获推进
 

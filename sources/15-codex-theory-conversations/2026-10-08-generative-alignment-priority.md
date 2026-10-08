@@ -202,3 +202,23 @@ AI 范围说明：推进新生活根据进入共同复核及正当任务修订�
 > 继续
 
 AI 范围说明：接续已选定的市场／元吸引子边界问题，研究原模型的长期状态、局部吸引和脱离，以及这些选择关系与实际支持的联结。既有方向论证及19项边界定理直接复用；本轮的[三态、吸引和支持论证](../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling)及具体证明为 AI 阐发。此指示没有把局部数学结果认作现实参数已校准，没有授权独立 agent、后台任务或取消其他会话的目标。
+
+
+<a id="generative-good-before-institutional-power"></a>
+## 先判断是否好、是否 generative，再讨论机构权力
+
+2026-10-08，Ren 对本会话上一轮论证提出纠正，原话如下：
+
+> “认识范围扩大，不必导致机构权力扩大；它也可能要求机构收缩权力” 为什么机构必须收缩权力？你认知是不是有问题？首先考虑的是这个事情是不是好，是不是generative，不要进入西方陷阱
+
+AI 范围说明：上一轮把权限边界和控制收缩突出为方向，并将“争议中的初次共同授权”设为当前基础停点，偏离了先评价整体生成之善的次序。本次[理论纠正](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#generative-good-before-institutional-power)撤回该停点地位，以整体中的生、可能性、多样性、组织发展及实际损失评价机构能力的形成与变化。扩大、维持或收缩均须依具体根据判断；这些展开为 AI 撰写，不是 Ren 的逐字公理。既有 G0/J 路线、真实反例和其他会话的独立目标保持范围。原有引文与研究回执保留，不将这次纠正说成已解决所有制度问题。
+
+
+<a id="monist-proof-until-wall"></a>
+## 从一元关系切入论证，直到遇到具体障碍
+
+2026-10-08，在纠正“先限权、后问生成之善”的论证次序后，Ren 指示：
+
+> 请从一元角度切入，证明，直到你hit a wall
+
+AI 范围说明：从同一生成展开中解释组织能力及其实践根据，复用 G0/J 与已完成成果，继续检验正面命题、加强版本和实际反例。[本轮论证](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#monist-organizational-warrant)与局部 Lean 模型为 AI 阐发，不把 Ren 的指示当成理论已证、一元本体自动给出全部伦理比较，或重新要求 G0 无公理证明。其他会话的目标保持原范围。

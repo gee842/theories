@@ -1,0 +1,11 @@
+import OpenFutureRevision
+#check OpenFutureRevision.handed_off_progress
+#check OpenFutureRevision.generation_by_bound
+#check OpenFutureRevision.positive_ground_by_bound
+#check OpenFutureRevision.each_fixed_rule_finishes
+#check OpenFutureRevision.each_rule_local_progress
+#check OpenFutureRevision.revising_run_stays_unfinished
+#check OpenFutureRevision.revised_rules_can_fail_forever
+#check OpenFutureRevision.revision_resets_remaining
+#check OpenFutureRevision.changed_form_with_valid_handoff
+#check OpenFutureRevision.realized_form_need_not_be_fixed

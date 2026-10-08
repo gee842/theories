@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "joint-code-plan-lifting",
+  "title": {
+    "zh": "提升有限嵌套共同方案",
+    "en": "Lifting finite nested joint plans"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "同一准确约简表示及正确叶项解释下，代码整体实现有限嵌套共同方案，当且仅当原生整体实现该方案。",
+    "en": "With one exact reduced presentation and correct leaf interpretation, the coded whole realizes a finite nested joint plan iff the native whole realizes it."
+  },
+  "hypotheses": [
+    {
+      "zh": "JointCompact、Exact、Reduced、逐叶项正确性及有限 Plan。",
+      "en": "JointCompact, Exact, Reduced, pointwise leaf correctness and a finite Plan."
+    }
+  ],
+  "correspondence": {
+    "zh": "每节点共享一个共同见证；叶项身份与跨分支共享不由代码存在自动确定。",
+    "en": "Each node retains a common witness; leaf identities and cross-branch sharing are not automatically fixed by code existence."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+  "aliases": [
+    "Generative.ExplanatoryJointness.joint_plan_lifts"
+  ],
+  "dependencies": [
+    {
+      "id": "joint-decomposition-lifting",
+      "detail": {
+        "zh": "逐节点调用整体共同分解提升，再对子方案归纳。",
+        "en": "Each node invokes whole-decomposition lifting, followed by induction on subplans."
+      },
+      "relation": "formal-reuse",
+      "interface": {
+        "output": {
+          "zh": "给定整体代表的成对原生见证。",
+          "en": "Native paired witnesses for a given whole representative."
+        },
+        "input": {
+          "zh": "递归方案节点的子整体和编码等式。",
+          "en": "Subwholes and code equalities for the recursive plan node."
+        },
+        "conditions": {
+          "zh": "相同模型、紧致性、准确约简表示及叶项解释。",
+          "en": "Same model, compactness, exact reduced presentation and leaf interpretation."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "detail": {
+        "zh": "不能把某个计划有见证升级为任意指定部分均能接合。",
+        "en": "Existence of a witnessed plan does not make arbitrary designated parts composable."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不能把某个计划有见证升级为任意指定部分均能接合。",
+    "en": "Existence of a witnessed plan does not make arbitrary designated parts composable."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "role": "proof",
+      "sha256": "18f745f8ef8bae379e3fadcf059a68c529caa5af4453adc469182148e4fa4e4f",
+      "declarations": [
+        "Generative.ExplanatoryJointness.joint_plan_lifts"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "role": "receipt",
+      "sha256": "aa8a37f8bf4539f5d3e90986a1e0a74fdf9568cacc1b1438a2421f3721d6f420",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "sha256_pointer": "/modules/9/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "直接复用 joint_plan_lifts，再提供应用中的叶项对应。",
+    "en": "Reuse joint_plan_lifts and supply the application’s leaf correspondence."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。",
+      "en": "2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation."
+    }
+  ]
+}

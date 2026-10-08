@@ -49,3 +49,34 @@ Ren 随后指示：
 > 继续
 
 编者说明：该指示延续完整慧根目标。助手的[目标评价必要关系研究](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md)复用既有形成与规范成果，检查成就指标的不足及固定上层规则这一替代解释。具体命题、模型和判断属于 AI elaboration，不是新增用户原话。
+
+<a id="continuing-limited-judgment"></a>
+## 解释范围后继续 / Continuing after clarifying scope
+
+Ren 要求解释上一轮结论：
+
+> 解释**目前证明的是目标评价中的一项条件性必要关系。** 全部智慧是否都需要这些关系，以及它们是否足以确立整个 core 的根基地位，仍须继续论证；G0/J/E 保持明示。
+
+在助手解释条件性必要关系及未完成的完整目标后，Ren 指示：
+
+> 好 继续
+
+编者说明：继续完整慧根研究；[本轮有限判断研究](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)修正把全部智慧按每次成功检验的过强推广。数值风险界限、局部事件规律及哲学解释均为 AI 展开，不能归为 Ren 认可的伦理风险标准。
+
+<a id="continuing-wisdom-scope"></a>
+## 继续检验整个根 / Continuing the whole-root investigation
+
+在有限风险判断与实际失败的区分完成后，Ren 指示：
+
+> 请继续
+
+编者说明：助手接续完整目标，在[主研究第12节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root)比较独立的智慧内容与根基承诺。具体原典选择、解释与候选论证是 AI 工作；没有将本轮结果说成 Ren 已接受的智慧定义或完整证明。
+
+<a id="continuing-substantive-comparison"></a>
+## 继续比较实质关系 / Continuing the substantive comparison
+
+在助手说明共同根需要解释智慧分化、且忠实替代说明尚未排除后，Ren 指示：
+
+> 请继续
+
+编者说明：[主研究第13节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)落实对替代说明的比较。Dancy、Dewey 的选择、四种解释作用与具体比较均为 AI 展开，不归为 Ren 的原话或已接受的结论。

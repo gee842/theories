@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "utc": "20261008T125637.277558Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "acquired-binding-checks/20261008T125637.277558Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "CompositionalAcquisition": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848",
+    "CompositionalFormation": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5",
+    "CompositionalTransmission": "d5a6fb23c43dd10782d7696fbbc7e433013eb4000c7ee4f425a8cf4b6e50211b",
+    "AcquiredSegmentation": "95fdab3a4c1707b754aab480a4f2265076867c8a38ed71a955c93d77a914301c",
+    "AcquiredBinding": "450ad8c93ec0694198030aee0a1a62b7a734167c5c9b253d127224af701a6c2c"
+  },
+  "checker_sha256": {
+    "check_acquired_binding.py": "ba905608af2cc7d253e4d43769ca656acc202430c1d7953a22e21a745d289eda",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Bindings acquired across ambiguous encounters replace the fixed decoder and enter existing grouping and compositional response. Categories, repertoire, scene coverage, intersection rule and source-exclusion judgments remain supplied. No complete semantics, infant-neural identification or full cognition.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "AcquiredBinding.lean:43:2: error: Tactic `constructor` failed: target is not an inductive datatype\n\ns : Lexicon\nform : List Sound\nmeaning : Expr\n\u22a2 meaning \u2208 s.repertoire \u2192\n    ((\u2200 (x : Encounter), x \u2208 s.records \u2192 x.origin \u2208 s.excluded \u2228 \u00acx.form = form \u2228 meaning \u2208 x.offered) \u2194\n      \u2200 (r : Encounter), r \u2208 s.records \u2192 \u00acr.origin \u2208 s.excluded \u2192 r.form = form \u2192 meaning \u2208 r.offered)\nAcquiredBinding.lean:82:18: error(lean.invalidField): Invalid field `symm`: The environment does not contain `List.Mem.symm`, so it is not possible to project the field `symm` from an expression\n  mem\nof type `List.Mem target [e]`\n"
+}

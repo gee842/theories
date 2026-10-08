@@ -1,0 +1,14 @@
+'Generative.ExplanatoryJoiningBranchWitnesses.finite_outcomes' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningBranchWitnesses.genuinely_multivalued' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningBranchWitnesses.shared_retains' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningBranchWitnesses.split_loses_shared_continuation' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningBranchWitnesses.both_linear_alternatives_remain' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningBranchWitnesses.roots_branch_distinguished' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningBranchWitnesses.outcomes_branch_distinguished' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningBranchWitnesses.every_exact_account_distinguishes_outcomes' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryJoiningBranchWitnesses.canonical_operation_still_multivalued' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryJoiningBranchWitnesses.canonical_outcomes_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

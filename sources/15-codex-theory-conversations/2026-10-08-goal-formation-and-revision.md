@@ -95,3 +95,27 @@ After the preceding account of situated tracking and its remaining correspondenc
 > 继续
 
 AI-authored execution: [extend the existing study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#26-learn-the-effects-of-acting-within-the-situation) to acquired prediction of action-induced change, the relation between precision and action magnitude, and finite versus expanding coverage. The response family, probe, bounds and illustrative histories are the assistant's constructions, not additional claims attributed to Ren. The continuation authorizes theoretical work; it does not assert that an empirical intervention was performed, endorse a numerical ethical tolerance or create a new scheduled task.
+
+## Continue the diagnostic connection
+
+After asking whether this part was complete and receiving the assistant's scoped status, Ren said:
+
+> 继续
+
+AI-authored execution: [connect diagnostic readings and description revision to the existing predictor](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#32-connect-completed-diagnosis-to-the-revised-predictor), including recovery after finite earlier errors. Re-reading the completed general model-revision account corrected an overbroad preceding status: that general cycle is not an unfinished task. The common-reference bilinear family and four-probe construction are the assistant's local model, not further assertions attributed to Ren. Seventeen new checked theorems do not assert empirical intervention, universal awareness, an ethically permitted risk increment or convergence of all intelligent goals.
+
+## Published experiments as evidence
+
+Ren's next message:
+
+> 我觉得文献中应该已经有大量实验支撑，可以让你搞定
+
+AI-authored execution: assess existing primary experiments and integrate their actual support for situated learning, description revision and recovery. The [six-study assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md) distinguishes the empirical grounding of a general account from numerical certification of a particular model and from the separately requested full biological joint validation. Ren's message authorizes using existing evidence; it does not assert that every selected paper supports the theory, require a favorable verdict, waive counterexamples or claim a new experiment occurred.
+
+## Continue through existing public data
+
+Ren's exact follow-up:
+
+> 数据网上都有，不需要自己搞，别人已经进行了大量研究，继续
+
+AI scope: use existing published research and public observations to continue the authorized account. This does not require commissioning a new experiment or redoing every published analysis. The following work actually imports and analyzes the complete 16-person recovery dataset, with provenance, adverse results and a scoped correspondence; it does not attribute the AI's fitted models or status judgments to Ren. [Research continuation](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence).

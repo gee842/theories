@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "joining-questions-survive-encoding",
+  "title": {
+    "zh": "接合检验随同一编码保真",
+    "en": "Joining questions remain exact under the same encoding"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F22",
+  "reviewed_at_utc": "2026-10-08T13:12:41.149589+00:00",
+  "claim": {
+    "zh": "将问题中每个接合伙伴按同一说明编码后，在诱导多结果接合关系内解释所得问题，答案与原问题相同。",
+    "en": "After encoding every joining partner in a question through the same account, interpreting the translated question in the induced multivalued joining relation gives exactly the original answer."
+  },
+  "hypotheses": [
+    {
+      "zh": "同一部分接合 J；每对输入具有有限结果集合。",
+      "en": "One partial joining relation J; each input pair has a finite outcome set."
+    },
+    {
+      "zh": "目标含全部有限否定、合取、左右接合后继问题，无独立原子谓词。",
+      "en": "The target contains all finite negation, conjunction and left/right joining-successor questions, with no independent atomic predicates."
+    },
+    {
+      "zh": "Exact 给出完整精确答案；Reduced 仅用于最小代码与输出代码的提升。",
+      "en": "Exact supplies complete truthful answers; Reduced is used for minimal codes and lifting output codes."
+    }
+  ],
+  "correspondence": {
+    "zh": "片段、接合及其检验解释同一活动内的关系；数学语义不等于所有问题已被实际取得。",
+    "en": "Fragments, joining and its questions interpret relations within the same activity; mathematical semantics does not establish acquired access to every answer."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+  "aliases": [
+    "Generative.ExplanatoryJoiningBranches.questions_survive_encoding"
+  ],
+  "dependencies": [
+    {
+      "id": "multivalued-joining-common-structure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "代表片段一致的输出提升接入复合结构。",
+        "en": "Representative-wise output lifting feeds the compound structure."
+      },
+      "interface": {
+        "output": {
+          "zh": "每个编码输出可由指定输入对实现。",
+          "en": "Every code outcome is realizable by the specified input pair."
+        },
+        "input": {
+          "zh": "questions_survive_encoding 在每个左右接续问题消费 operation_lifts，并递归保持逻辑联结。",
+          "en": "questions_survive_encoding consumes operation_lifts at every left/right successor question and recursively preserves the logical constructors."
+        },
+        "conditions": {
+          "zh": "同一 J、编码、有限纤维、Exact、Reduced 完整保留。",
+          "en": "The same J, encoding, finite fibers, Exact and Reduced are retained."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "detail": {
+        "zh": "涵盖有限否定、合取及接续的语义，不证明检验装置形成、实际负面证据或所有问题已取得。",
+        "en": "Covers semantics of finite negation, conjunction and continuation; it does not establish apparatus formation, actual negative evidence or acquired access to all questions."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "涵盖有限否定、合取及接续的语义，不证明检验装置形成、实际负面证据或所有问题已取得。",
+    "en": "Covers semantics of finite negation, conjunction and continuation; it does not establish apparatus formation, actual negative evidence or acquired access to all questions."
+  },
+  "validation_scope": {
+    "zh": "所列 Lean 源码与成功冻结回执逐字哈希绑定；本轮223项审计含26项新声明。旧功能性定理信用此前166项回执，未冒充新证明。",
+    "en": "Listed Lean sources bind by exact hash to successful frozen receipts. This round checks 223 declarations including 26 new ones. The older functional theorem credits its previous 166-audit receipt, not a new proof."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "role": "proof",
+      "sha256": "4c9c2ff814f1e5d2fbd9948a7466833b438ae8875cd5dcb41a2897aa60c9b3f3",
+      "declarations": [
+        "Generative.ExplanatoryJoiningBranches.questions_survive_encoding"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "role": "receipt",
+      "sha256": "ee0939ec4f4f14674312e91690ccd6bf9d436dca03b0d6664ec00c5fde832533",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "e7a7d1c8c68afaa08c285dac3a84ba874f0efb6291668dd8701d8bf79e231e5b",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "sha256_pointer": "/modules/12/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "从同一形成的不同关系分节取得共同细化或互译，不预设同一片段集与伙伴对齐；不重开已完成的有限结果恢复。",
+    "en": "Earn common refinement or translation between different articulations of the same formation without presupposing a common fragment set and partner alignment; reuse completed finite-outcome recovery."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：在既有接合情境研究中接续；已完成结果分别迁移，新连接与复用分列。",
+      "en": "2026-10-08: continued the existing joining-context study; migrated completed claims separately and distinguished new connections from reuse."
+    }
+  ]
+}

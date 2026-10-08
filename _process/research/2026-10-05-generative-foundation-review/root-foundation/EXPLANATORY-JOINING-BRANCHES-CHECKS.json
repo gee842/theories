@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "scope": "Owned proof sources, exact receipt/logs, result metadata and appended integration; no global freshness or independent scientific acceptance.",
+  "new_declarations": 26,
+  "inherited_audits": 197,
+  "total_audits": 223,
+  "new_empty": 6,
+  "new_standard": 20,
+  "new_classical_choice": 8,
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+  "receipt_sha256": "ee0939ec4f4f14674312e91690ccd6bf9d436dca03b0d6664ec00c5fde832533",
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "log_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+      "sha256": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+      "log_sha256": "6dbed6431dcbda668df4d730c07dde76db30141da09973cd6bcd78385c13a37f"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+      "sha256": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+      "log_sha256": "28b0e02b62cb780f89731ca209aa00ee4b3868c537ee781636ce2a8198255a7a"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+      "sha256": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+      "log_sha256": "aa4c0d049327a18e313ffc123c9d10e0b98b17b62f7a98a79f0b2f59f0720b01"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "log_sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalDynamics.lean",
+      "sha256": "292fff843e984f602b3d5c62c33539abdc4d026ef376501e1f50ca5bce313ca3",
+      "log_sha256": "7d5c9f0530ec293b12108c3016a33bb4de1773440073a8b7eaf4f00f115ada1d"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "log_sha256": "bcce85471dcff1eb32718c12f997092bd2c0ad05bd8bb82dd5fb289efe538c01"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniversality.lean",
+      "sha256": "60b8b30c41ee8812c1a51f2035621048da42d3d7c6d9fa8eea1a0acbf11a7338",
+      "log_sha256": "21e9ab92081115fdf7fe0c44449b22c6c0c97208b3316f7f193d66993c77b85d"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean",
+      "sha256": "1149035f2cc534f133664e6e1377f96761a16d532fe01af8639063ab4503176d",
+      "log_sha256": "be1047c08d2e9176779967cf5d4c713b1fa82462f6047ac986e9b29a010ee0fd"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean",
+      "sha256": "a2167da3bd8c6364f0bcd7bfbc443edb153e3329c034fd015a42a844e3e4e0cf",
+      "log_sha256": "da459d7c49a67059234ae681283046ae43f73ef5f9dcc8930caedf02e9d65c87"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean",
+      "sha256": "ce2396e989a8476f9c3871e825a723b378b8864a115d43f98d27b94af9f31cbd",
+      "log_sha256": "03e19c6fdad01cd250efc81036b5ff97d3386bea4107c1e1ba98cde5b6966dcd"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "sha256": "4c9c2ff814f1e5d2fbd9948a7466833b438ae8875cd5dcb41a2897aa60c9b3f3",
+      "log_sha256": "8f03917cdb40d6d16691edc8719907dc74fc849173cdddcdb334326c8c1d4372"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean",
+      "sha256": "8642814c7270ef08759e57f5c8dec54061f6c29c6b69e461e50317833a20087c",
+      "log_sha256": "f14a375a915b9d775a44b14ec6e8da2d9c5d90dbd47a190de6b7f5cfb3d17434"
+    }
+  ],
+  "new_inventory": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean": [
+      "finite_outcomes_image_finite",
+      "bisimulation_iff_compatible",
+      "branch_same_compatible",
+      "compatible_refines_branch_same",
+      "branch_same_iff_compatible_relation",
+      "holds_ask",
+      "branch_same_refines_context_same",
+      "join_result_matches",
+      "operation_lifts",
+      "canonical_exact",
+      "canonical_reduced",
+      "every_exact_account_has_canonical_factor",
+      "matching_preserves_operation",
+      "common_multivalued_structure",
+      "questions_survive_encoding",
+      "tree_lifts"
+    ],
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean": [
+      "finite_outcomes",
+      "genuinely_multivalued",
+      "shared_retains",
+      "split_loses_shared_continuation",
+      "both_linear_alternatives_remain",
+      "roots_branch_distinguished",
+      "outcomes_branch_distinguished",
+      "every_exact_account_distinguishes_outcomes",
+      "canonical_operation_still_multivalued",
+      "canonical_outcomes_lift"
+    ]
+  },
+  "preserved_prior_study_and_chapter": true,
+  "preserved_prior_chain_contributions": true,
+  "owned_rows": [
+    "C30",
+    "F22"
+  ],
+  "local_links_checked": 10,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/joining-questions-survive-encoding.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/finite-joining-tree-lifting.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_joining_branches.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "EXPLANATORY-BRANCHING-INTEGRATION.md#8-primary-source-assessment"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "reference": "EXPLANATORY-JOINING-BRANCHES-CHECKS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#9-multivalued-continuation-exact-delta-and-result-identities"
+    }
+  ],
+  "result_records": {
+    "functional-joining-common-structure": "2aea65efd7f56ff87f81f856d6aa11b5218ed92f4aa4fe86e09c2ddf79a57138",
+    "multivalued-joining-common-structure": "cbf2025b5285b5a0d21450e9d7bba04f5488ada46a380b64a3241a7351fba1d3",
+    "joining-questions-survive-encoding": "cb0b00271a8f522e0cf8d4a86581c54d17025ae3d906d6fc8a2315334d210729",
+    "finite-joining-tree-lifting": "0cb4746fdf9235faf513b88ab95446572b427c3bcd8a2d5d5b46a4ec03590b62"
+  },
+  "reused_incoming_record": "branching-tests-bisimulation",
+  "unrelated_registry_drift": [],
+  "pending_chain_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-BRANCHES-CHECK.py": "b74ce7f1b628e856ec480769272aeb9f49fbcf298d3578ba852a6862cc1bb13d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-BRANCHES-INDEX-EDITS.json": "571b3c5352f20c797be821b7fdb089dd8c1b8ccb82613ad06bbfa06e5b5f5857",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md": "e7a7d1c8c68afaa08c285dac3a84ba874f0efb6291668dd8701d8bf79e231e5b"
+  }
+}

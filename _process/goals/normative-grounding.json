@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "normative-grounding",
+  "title": {
+    "zh": "普遍规范根据的持续方向",
+    "en": "Continuing normative grounding direction"
+  },
+  "scope_type": "project-direction",
+  "scope": {
+    "zh": "保留7日首要方向；8日明确公理路线修正对其特定任务优先适用。",
+    "en": "Retain the 7 October priority; the 8 October explicit-axiom correction takes precedence for its specified task."
+  },
+  "objective": {
+    "zh": "推进整体生成与实际实现如何具有伦理意义，并形成实际理由和约束。",
+    "en": "Investigate how whole generativity and actual realization carry ethical significance and support practical reasons and constraints."
+  },
+  "premises": {
+    "zh": "区分根据、认识、动机与实际遵循；生生的正面范围不先改成已独立判好之物。",
+    "en": "Distinguish warrant, recognition, motivation and actual compliance; do not redefine living as only what has already been independently valued."
+  },
+  "completion": {
+    "zh": "不得以给定目标的保存替代伦理根据；先信用已完成的 G0/J 推论，再指出新增连接。",
+    "en": "Preserving a supplied objective does not replace ethical warrant; credit completed G0/J inferences and specify the new connection."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md",
+    "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md"
+  ],
+  "result_ids": []
+}

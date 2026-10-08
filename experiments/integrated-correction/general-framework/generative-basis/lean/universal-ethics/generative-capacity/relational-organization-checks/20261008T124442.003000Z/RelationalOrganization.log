@@ -1,0 +1,1019 @@
+RelationalOrganization.lean:77:108: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed,
+  ̲  ̲ ̲ ̲ ̲ ̲spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:77:117: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed,
+  ̲  ̲ ̲ ̲ ̲ ̲spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:77:127: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed,
+  ̲  ̲ ̲ ̲ ̲ ̲spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:77:135: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed,
+  ̲  ̲ ̲ ̲ ̲ ̲spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:77:149: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed,
+  ̲  ̲ ̲ ̲ ̲ ̲spent, linked, protect, eligible, formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:77:159: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed,
+  ̲  ̲ ̲ ̲ ̲ ̲spent, linked, protect, eligible, formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:64: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked,
+  ̲  ̲ ̲ ̲ ̲ ̲protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:75: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent,
+  ̲  ̲ ̲ ̲ ̲ ̲linked, protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:82: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked,
+  ̲  ̲ ̲ ̲ ̲ ̲protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:98: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent,
+  ̲ l̵i̵n̵k̵e̵d̵,̵  ̲ ̲ ̲ ̲protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:106: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent,
+  ̲  ̲ ̲ ̲ ̲ ̲linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:115: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent,
+  ̲  ̲ ̲ ̲ ̲ ̲linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:125: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent,
+  ̲  ̲ ̲ ̲ ̲ ̲linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:147: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent,
+  ̲  ̲ ̲ ̲ ̲ ̲linked, protect, eligible, formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:80:157: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent,
+  ̲  ̲ ̲ ̲ ̲ ̲linked, protect, eligible, formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:86:61: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:86:71: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:86:79: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:86:93: warning: This simp argument is unused:
+  menu
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, freeOccasion,̵ ̵m̵e̵n̵u̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:87:61: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:87:71: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:87:79: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:87:93: warning: This simp argument is unused:
+  menu
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, freeOccasion,̵ ̵m̵e̵n̵u̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:93:28: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:93:44: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:93:61: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:93:71: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:93:79: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:93:93: warning: This simp argument is unused:
+  menu
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, freeOccasion,̵ ̵m̵e̵n̵u̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:94:28: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:94:44: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:94:61: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:94:71: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:94:79: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:94:93: warning: This simp argument is unused:
+  menu
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, freeOccasion,̵ ̵m̵e̵n̵u̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:35: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:46: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:53: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:69: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:77: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:96: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲ f̵o̵r̵m̵e̵d̵,̵  ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:104: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:118: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:100:128: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:101:61: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:101:85: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵e̵c̵t̵,̵ ̵eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:101:94: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲ e̵l̵i̵g̵i̵b̵l̵e̵,̵  ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:101:112: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:101:126: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:101:136: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:102:62: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:102:86: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵e̵c̵t̵,̵ ̵eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:102:95: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲ e̵l̵i̵g̵i̵b̵l̵e̵,̵  ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:102:113: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:102:127: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:102:137: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:40: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:51: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:58: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:74: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:82: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵e̵c̵t̵,̵ ̵eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:101: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:109: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:123: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:103:133: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect,
+  ̲  ̲ ̲ ̲eligible, formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:10: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked, protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:21: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent, linked, protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:28: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:37: warning: This simp argument is unused:
+  spent
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, s̵p̵e̵n̵t̵,̵ ̵linked, protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:44: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:52: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:61: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:71: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:107:79: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵menu]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:16: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked, protect, eligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:27: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent, linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:34: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:43: warning: This simp argument is unused:
+  spent
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, s̵p̵e̵n̵t̵,̵ ̵linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:50: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:58: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:67: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:77: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:85: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:139:109: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:16: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked, protect, eligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:27: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent, linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:34: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:43: warning: This simp argument is unused:
+  spent
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, s̵p̵e̵n̵t̵,̵ ̵linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:50: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:58: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:67: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:77: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:85: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:142:99: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, freeOccasion,
+  ̲ u̵s̵e̵s̵L̵e̵f̵t̵,̵  ̲ ̲ ̲ ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:19: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:30: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent, linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:37: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:53: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:61: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion,
+  ̲  ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:70: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion,
+  ̲  ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:80: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, f̵o̵r̵m̵e̵d̵,̵ ̵freeOccasion,
+  ̲  ̲ ̲ ̲usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:88: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft,
+  ̲  ̲ ̲ ̲usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:102: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:112: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:133: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵b̲as̲in̵i̵n̵g̵s̲,
+  ̲ b̵a̵s̵i̵s̵,̵  ̲ ̲renewed, spent, linked, protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:144: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲ b̵a̵s̵i̵s̵,̵  ̲ ̲renewed, spent, linked, protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:151: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:160: warning: This simp argument is unused:
+  spent
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, s̵p̵e̵n̵t̵,̵ ̵linked, protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:175: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:184: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:194: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:202: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:216: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:226: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:265: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:281: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:289: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:298: warning: This simp argument is unused:
+  eligible
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, e̵l̵i̵g̵i̵b̵l̵e̵,̵ ̵formed, freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:308: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, fo̵rm̵ed̵,̵ ̵f̵r̵ee̵Occasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:316: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:330: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:147:340: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining,
+  ̲  ̲ ̲ ̲basis, renewed, spent, linked, protect, eligible, formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:37: warning: This simp argument is unused:
+  remaining
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵m̵a̵i̵n̵i̵n̵g̵,̵ ̵basis, renewed, spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:48: warning: This simp argument is unused:
+  basis
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, b̵a̵s̵i̵s̵,̵ ̵renewed, spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:55: warning: This simp argument is unused:
+  renewed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, r̵e̵n̵e̵w̵e̵d̵,̵ ̵spent, linked, protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:71: warning: This simp argument is unused:
+  linked
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, l̵i̵n̵k̵e̵d̵,̵ ̵protect, eligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:79: warning: This simp argument is unused:
+  protect
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, p̵r̵o̵t̵ec̵t̵,̵ ̵e̵ligible, formed,
+  ̲  ̲ ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:98: warning: This simp argument is unused:
+  formed
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲ f̵o̵r̵m̵e̵d̵,̵  ̲ ̲freeOccasion, usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:106: warning: This simp argument is unused:
+  freeOccasion
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, f̵r̵e̵e̵O̵c̵c̵a̵s̵i̵o̵n̵,̵ ̵usesLeft, usesRight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:120: warning: This simp argument is unused:
+  usesLeft
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesL̵e̵f̵t̵,̵ ̵u̵s̵e̵s̵Right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RelationalOrganization.lean:148:130: warning: This simp argument is unused:
+  usesRight
+
+Hint: Omit it from the simp argument list.
+  simp [remaining, basis, renewed, spent, linked, protect, eligible,
+  ̲  ̲ ̲ ̲formed, freeOccasion, usesLeft,̵ ̵u̵s̵e̵s̵R̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

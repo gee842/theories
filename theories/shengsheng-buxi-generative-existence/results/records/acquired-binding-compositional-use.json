@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F09",
+  "reviewed_at_utc": "2026-10-08T13:21:00.795254+00:00",
+  "related": [],
+  "id": "acquired-binding-compositional-use",
+  "title": {
+    "zh": "取得的绑定接通组合使用",
+    "en": "Acquired bindings enter compositional use"
+  },
+  "claim": {
+    "zh": "指定经历形成分节并由四次各自歧义的接触取得形式到已有操作的绑定；对二词编码的任意有限序列，学习后的解释等于相应原子表达的组合。有限支持下另有实际执行见证。",
+    "en": "The specified history forms grouping and acquires form-to-known-operation bindings from four individually ambiguous encounters. Interpretation of every finite sequence in the two-word encoding equals assembly of its corresponding atomic expressions. A separate finite-support witness executes the result."
+  },
+  "hypotheses": [
+    {
+      "zh": "既有操作、基本分类、分节算法、三项已知操作范围、交集更新和接触安排给定；成功史保留足够支持。",
+      "en": "Existing operations, elementary categories, grouping algorithm, three-operation repertoire, intersection update and encounter schedule are supplied; the successful history has sufficient support."
+    },
+    {
+      "zh": "一般正确性要求目标在候选范围且每个相关获准接触包含该目标；纠正时来源排除判断另行给定。",
+      "en": "General correctness requires the target in the repertoire and in each relevant admitted encounter; source-exclusion judgments for correction are separately supplied."
+    }
+  ],
+  "correspondence": {
+    "zh": "取得的是新形式指向已可用操作的关系；场景列表代表实际可取得的候选，需有独立的感知与社会对应。",
+    "en": "What is acquired is a new form-to-available-operation relationship; scene lists represent accessible alternatives and require independent perceptual/social correspondence."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+  "aliases": [
+    "Generative.AcquiredBinding.acquired_binding_and_grouping_compose"
+  ],
+  "dependencies": [
+    {
+      "id": "transition-grouping-word-partition",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "直接调用分节词划分定理，再以实际取得的解码结果组合。",
+        "en": "Directly invokes the word-partition theorem, then composes it with acquired decoding."
+      },
+      "interface": {
+        "output": {
+          "zh": "编码序列的分节等于词列表。",
+          "en": "Segmentation of an encoded sequence equals its word list."
+        },
+        "input": {
+          "zh": "readForms 在词列表上使用取得的绑定。",
+          "en": "readForms consumes the word list through acquired bindings."
+        },
+        "conditions": {
+          "zh": "新学习史保留相同 idealBond，且每个词的绑定已由接触取得；无固定 decodeChunk 调用。",
+          "en": "The new history preserves idealBond and acquires each word binding from encounters; it does not invoke fixed decodeChunk."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean"
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+      "detail": {
+        "zh": "遗漏真实候选可造成错误唯一绑定；重复歧义不辨明意义；误排真实来源保留错误，有限支持可阻断执行。",
+        "en": "Omitting the target can create a wrong unique binding; repeated ambiguity does not identify a meaning; excluding sound evidence preserves error, and finite support can prevent execution."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "未推导已有操作的全部意义、分类与注意起源，或来源判断的可靠性；不是完整语义、婴儿神经机制或演化心理证明。",
+    "en": "Does not derive the full meanings of prior operations, category/attention origins or source-judgment reliability; not a proof of complete semantics, infant neural mechanisms or evolutionary psychology."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 新编23项定理／41项声明审计，247项继承审计分列。作者反审与原始证据比较；无独立验收或新实验。",
+    "en": "Fresh Lean 4.29.1 build: 23 new theorems / 41 declaration audits, with 247 inherited audits separately rebuilt. Author counterreview and primary-evidence comparison; no independent acceptance or new experiment."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+      "role": "proof",
+      "sha256": "0395ecdcce1d3d4712930497ace63d030279e3fe610a60f945d372e45878946d",
+      "declarations": [
+        "Generative.AcquiredBinding.acquired_binding_and_grouping_compose",
+        "Generative.AcquiredBinding.unique_resolution_is_correct_under_coverage",
+        "Generative.AcquiredBinding.acquired_bindings_reach_actual_compositional_response",
+        "Generative.AcquiredBinding.excluding_the_sound_encounters_preserves_the_wrong_binding"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json",
+      "role": "receipt",
+      "sha256": "397cdc260034c70c0f28aa8f5d96078fc445ffe38777edbea0bbe77f7eefa661",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "84563b2f7e85bcc4519ce17d139bee0bc61251e3570df1de025a143760ca1b60",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json",
+      "sha256_pointer": "/source_sha256/AcquiredBinding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用新接通的 enacted-scene-binding：空间关系与给定移动／命名安排现能生成本结果的记录输入；下一连接是这些探究与沟通安排的选择和修订，分类与注意发育仍未完成。",
+    "en": "Reuse enacted-scene-binding: spatial relations and supplied movement/naming schedules now generate this result’s record inputs. Next is selection and revision of those exploratory/communicative schedules; category and attention development remain incomplete."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：接通取得的分节、由歧义接触形成的绑定和已有组合使用；固定解码被替代，错误与来源判断前提保留。",
+      "en": "2026-10-08: joined acquired grouping, bindings learned from ambiguous encounters and existing compositional use; replaced the fixed decoder while preserving error and source-judgment premises."
+    },
+    {
+      "zh": "2026-10-08：审读原研究第11–13节，新空间接触史正式供给原绑定输入；本记录的证明和原范围未变，下一连接更新。",
+      "en": "2026-10-08: reviewed study sections 11–13; a spatial encounter history formally supplies the original binding inputs. This record’s proof and scope are unchanged; the next connection is updated."
+    }
+  ]
+}

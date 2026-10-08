@@ -1,0 +1,36 @@
+[
+  {
+    "tool": "build_result_registry.py",
+    "args": [],
+    "exit_code": 2,
+    "stdout": "{\n  \"records\": 17,\n  \"errors\": [],\n  \"source_drift\": [\n    {\n      \"id\": \"universal-practical-warrant\",\n      \"path\": \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md\",\n      \"reviewed_sha256\": \"ce6bea50c458fc1d97ed267f900872a414c1bf640a5963dd2587174eea70e3c7\",\n      \"current_sha256\": \"31d5239412398491c4fa7a0ff3cce9db16f59f2c118bb8d2faa6b229a95a6ee5\"\n    }\n  ],\n  \"other_record_drift\": [],\n  \"scope\": \"Documentary checks only; no Lean build or semantic proof audit.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "tool": "build_result_registry.py",
+    "args": [
+      "--check"
+    ],
+    "exit_code": 2,
+    "stdout": "{\n  \"records\": 17,\n  \"errors\": [],\n  \"source_drift\": [\n    {\n      \"id\": \"universal-practical-warrant\",\n      \"path\": \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md\",\n      \"reviewed_sha256\": \"ce6bea50c458fc1d97ed267f900872a414c1bf640a5963dd2587174eea70e3c7\",\n      \"current_sha256\": \"31d5239412398491c4fa7a0ff3cce9db16f59f2c118bb8d2faa6b229a95a6ee5\"\n    }\n  ],\n  \"other_record_drift\": [],\n  \"scope\": \"Documentary checks only; no Lean build or semantic proof audit.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "tool": "build_generative_chain.py",
+    "args": [
+      "--render"
+    ],
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md\"\n    ],\n    \"removed_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md\",\n      \"theories/meta-attractor/COMMON-ORGANIZATION.md\"\n    ]\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "tool": "build_generative_chain.py",
+    "args": [
+      "--check"
+    ],
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md\"\n    ],\n    \"removed_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md\",\n      \"theories/meta-attractor/COMMON-ORGANIZATION.md\"\n    ]\n  }\n}\n",
+    "stderr": ""
+  }
+]

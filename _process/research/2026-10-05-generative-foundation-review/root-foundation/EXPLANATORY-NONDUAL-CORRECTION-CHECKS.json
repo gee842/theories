@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "scope": "Interpretive target/correspondence correction, not a new mathematical result.",
+  "new_theorems": 0,
+  "lean_rerun": false,
+  "prior_33_theorems_and_180_audit_closure_unchanged": true,
+  "prior_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-first-order-wall-checks/20261008T120907.759727Z/receipt.json",
+  "prior_owned_text_reconstructed": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md": "3e768b2545447aa7e76a49bc8ef72040f47b4efe56b79ec52e3f3d660d2cbc54",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md": "6c2baa5b402aa0e0bf4b0ae161b79a5dece75cd0cc72504c56cb3170870a027c",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md": "8485e2c96c6d4cb8fd72c90d442c9bb4889c4b4ed625e18aff7dae569cfe08b8"
+  },
+  "owned_rows": [
+    "C30",
+    "F22"
+  ],
+  "prior_rows_and_unrelated_content_preserved": true,
+  "owned_rendered_rows_match": true,
+  "local_links_checked": 17,
+  "links": [
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
+      "reference": "#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#对非二元方法与停止判断的纠正--correction-of-method-and-stopping-judgment"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
+      "reference": "NONDUAL-TREE-CONTINUATION.md#3-一个已经存在可以逐状态检查的同一历程"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
+      "reference": "EXPLANATORY-NONDUAL-CORRECTION-CHECKS.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "#83-非二元纠正不能把表示的边界当成生成根基的边界"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/EXPLANATORY-NECESSITY.md#83-非二元纠正不能把表示的边界当成生成根基的边界"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "reference": "15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#对非二元方法与停止判断的纠正--correction-of-method-and-stopping-judgment"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "reference": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "EXPLANATORY-NONDUAL-CORRECTION-EDITS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "EXPLANATORY-NONDUAL-CORRECTION-CHECKS.json"
+    }
+  ],
+  "global_review_claimed": false,
+  "independent_review_claimed": false,
+  "pending_shared_reviews": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/meta-attractor/GENERATIVE-REGIMES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md": "046962117783fc81db9b59566e9ecf1f88171ae70912bd09298cd462158b0e15",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md": "6b02eb474d288400212a9a732bbe46ebd712b30c5061347e25d5288e10004458",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md": "eff32e59a6b5700f8dc9ddd3de3c664497b0d6655eca6992a94b66ee8d196ecc",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NONDUAL-CORRECTION-CHECK.py": "c55f197ad8056f0ba5a5389fd2aca1ff480b405e7e118f4b7697845348c4550c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NONDUAL-CORRECTION-EDITS.json": "cee70292a902dc9f11c93f7a866aa1963a95bb7f20f70afda1b3db20130ff6b2"
+  }
+}

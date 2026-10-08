@@ -1,0 +1,136 @@
+{
+  "dataset_doi": "10.5061/dryad.m63xsj42r",
+  "public_mirror": "https://zenodo.org/records/5516490",
+  "license": "CC0 per author README",
+  "files": [
+    {
+      "path": "evoked_recovery_participant1.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant1.mat?download=1",
+      "bytes": 25771259,
+      "sha256": "3c9e1db16f457a0b6fc7be26a311654a6ab124308b2f7c06135b09ed44c557c7",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "evoked_recovery_participant2.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant2.mat?download=1",
+      "bytes": 28662261,
+      "sha256": "1a19f34501afcada72b7a8c8fb8097682e36b354a5e265296d85806bb02fefa7",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "evoked_recovery_participant3.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant3.mat?download=1",
+      "bytes": 24550974,
+      "sha256": "dd3cd3e33fd00f5ec11e5a6a8586013a9a828e30ee04554cfe66ef6bbd9c3acf",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "evoked_recovery_participant4.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant4.mat?download=1",
+      "bytes": 23730809,
+      "sha256": "3f80377443fea989206e2ce470ce3fde9c50c7c766edede9d2e0a838179d311a",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "evoked_recovery_participant5.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant5.mat?download=1",
+      "bytes": 24744697,
+      "sha256": "5f400fb90ca6a7a0223c4cd90c8e850429704be6ef444aa161d567285ceb7067",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "evoked_recovery_participant6.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant6.mat?download=1",
+      "bytes": 25685821,
+      "sha256": "573d93d81eacb89cb325914f66b143b2465da56a6102d6bed06ead3e792ae700",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "evoked_recovery_participant7.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant7.mat?download=1",
+      "bytes": 24598369,
+      "sha256": "5dca7da593acc8b136d046e7a6dfeae5d8f6f33771518b448728654daafa046a",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "evoked_recovery_participant8.mat",
+      "url": "https://zenodo.org/records/5516490/files/evoked_recovery_participant8.mat?download=1",
+      "bytes": 24070186,
+      "sha256": "a33f702c46b5a057dbf0157b9fd7261967fc84c1eb869fc2101dddbce5d15333",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant1.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant1.mat?download=1",
+      "bytes": 25352383,
+      "sha256": "a8f707bceab4279b9299b802ca8a2be403108fbee8acfe2b49e0a1ff022be72e",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant2.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant2.mat?download=1",
+      "bytes": 27685871,
+      "sha256": "b33ba938921202f85e0813d812967ae08629b31fbe4ea0989c3c4e9749c32c65",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant3.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant3.mat?download=1",
+      "bytes": 27289366,
+      "sha256": "421872e90501ee94f5d7914cd149b5299402d01db0750382750fbc9868281973",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant4.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant4.mat?download=1",
+      "bytes": 30007247,
+      "sha256": "e6f2d6672987e51ce523af202a21e0ca599c59f637ab807727b034c89f98ca86",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant5.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant5.mat?download=1",
+      "bytes": 28446136,
+      "sha256": "93e9a123263caa5cdaec838c0e032f2b22db16b94754bace6a8cfea4ba9a456a",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant6.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant6.mat?download=1",
+      "bytes": 26132431,
+      "sha256": "9a025206f004705d3e1ece4d7549ec203aa82594de6d78abca7b71a0bce58eb7",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant7.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant7.mat?download=1",
+      "bytes": 29142110,
+      "sha256": "dee0b5c39bd388ff2d287429a75fe894f03ef8c773399daf174e22a3e7e17a9a",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "spontaneous_recovery_participant8.mat",
+      "url": "https://zenodo.org/records/5516490/files/spontaneous_recovery_participant8.mat?download=1",
+      "bytes": 25138332,
+      "sha256": "3054d94927dedc86113f15c15bbe278d8560d25085b055b6f690ca4c0608821c",
+      "dryad_digest_matches": true
+    },
+    {
+      "path": "README.txt",
+      "url": "https://zenodo.org/records/5516490/files/README.txt?download=1",
+      "bytes": 6330,
+      "sha256": "875bce6266cbf10229355723fc4f83f8166c5fe7b4c3e35d0adcb258dc03cd57"
+    },
+    {
+      "path": "Fig2_data_figure.m",
+      "url": "https://zenodo.org/records/5512855/files/Fig2_data_figure.m?download=1",
+      "bytes": 10660,
+      "sha256": "f9386330d5baaaf340444883bc8444b204691b72ccf8cef990b604eb678bf838"
+    }
+  ],
+  "access_notes": [
+    "Dryad direct download returned HTTP 403; its API download required authentication (401). Public metadata remained accessible.",
+    "Normal browser preview exposed the CC0 README; public Zenodo deposit was used for original files. No authentication or access control was bypassed.",
+    "All 16 MAT files match the public Dryad version 140790 SHA-256 and size."
+  ]
+}

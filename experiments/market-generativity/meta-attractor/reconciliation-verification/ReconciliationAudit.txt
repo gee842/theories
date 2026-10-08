@@ -1,0 +1,207 @@
+'LegacyReconciliation.Pair' does not depend on any axioms
+'LegacyReconciliation.mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.cov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.raw_moment_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.constant_proxy_has_no_covariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.same_positive_cross_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.contracting_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.expanding_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.negative_links_positive_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.rankOneCov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.gram_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.covariance_from_two_centered_observations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LegacyReconciliation.covariance_does_not_preserve_positive_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LegacyReconciliation.dominantDiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.iterate' does not depend on any axioms
+'LegacyReconciliation.missing_dominant_component_stays_absent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LegacyReconciliation.first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.changing_covariance_order_matters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.uniform_weight_rate_has_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LegacyReconciliation.joint' does not depend on any axioms
+'LegacyReconciliation.joint_rule_coordinate' does not depend on any axioms
+'LegacyReconciliation.no_closed_label_update' does not depend on any axioms
+'CommonOrganization.params' does not depend on any axioms
+'CommonOrganization.admissible' does not depend on any axioms
+'CommonOrganization.State' does not depend on any axioms
+'CommonOrganization.Event' does not depend on any axioms
+'CommonOrganization.proposal' does not depend on any axioms
+'CommonOrganization.orientation' does not depend on any axioms
+'CommonOrganization.command' does not depend on any axioms
+'CommonOrganization.fee' depends on axioms: [propext]
+'CommonOrganization.Enabled' does not depend on any axioms
+'CommonOrganization.advance' depends on axioms: [propext]
+'CommonOrganization.Step' depends on axioms: [propext]
+'CommonOrganization.process' depends on axioms: [propext]
+'CommonOrganization.energy' does not depend on any axioms
+'CommonOrganization.cost' depends on axioms: [propext]
+'CommonOrganization.spent' depends on axioms: [propext]
+'CommonOrganization.proposal_does_not_read_regime' does not depend on any axioms
+'CommonOrganization.orientation_does_not_read_regime' does not depend on any axioms
+'CommonOrganization.failed_trial_is_retained' depends on axioms: [propext, Quot.sound]
+'CommonOrganization.no_misses_proposes_undirected' depends on axioms: [propext]
+'CommonOrganization.misses_propose_directed' depends on axioms: [propext]
+'CommonOrganization.revision_remains_available' does not depend on any axioms
+'CommonOrganization.paid_receipt_available' depends on axioms: [propext, Quot.sound]
+'CommonOrganization.step_accounting' depends on axioms: [propext, Quot.sound]
+'CommonOrganization.trace_accounting' depends on axioms: [propext, Quot.sound]
+'CommonOrganization.receipts' depends on axioms: [propext]
+'CommonOrganization.receipts_are_paid' depends on axioms: [propext, Quot.sound]
+'CommonOrganization.finite_support_bounds_trials' depends on axioms: [propext, Quot.sound]
+'CommonOrganization.run' depends on axioms: [propext]
+'CommonOrganization.run_sound' depends on axioms: [propext]
+'CommonOrganization.entrance' does not depend on any axioms
+'CommonOrganization.preparation' does not depend on any axioms
+'CommonOrganization.failure' does not depend on any axioms
+'CommonOrganization.replacement' does not depend on any axioms
+'CommonOrganization.furtherChange' does not depend on any axioms
+'CommonOrganization.history' does not depend on any axioms
+'CommonOrganization.beforeReplacement' does not depend on any axioms
+'CommonOrganization.recovered' does not depend on any axioms
+'CommonOrganization.oldInitial' does not depend on any axioms
+'CommonOrganization.oldEntrance' does not depend on any axioms
+'CommonOrganization.fundedEntrance' does not depend on any axioms
+'CommonOrganization.waiting' does not depend on any axioms
+'CommonOrganization.restored' does not depend on any axioms
+'CommonOrganization.finalState' does not depend on any axioms
+'CommonOrganization.actual_failure_record' depends on axioms: [propext]
+'CommonOrganization.acquired_replacement' depends on axioms: [propext]
+'CommonOrganization.successful_response_can_be_revised_again' depends on axioms: [propext]
+'CommonOrganization.whole_regulation_history' depends on axioms: [propext]
+'CommonOrganization.frozenReceipt' does not depend on any axioms
+'CommonOrganization.receipt_changes_replacement' depends on axioms: [propext]
+'CommonOrganization.frozen_receipt_repeats_failed_orientation' depends on axioms: [propext]
+'CommonOrganization.no_funds_blocks_even_informed_revision' does not depend on any axioms
+'CommonOrganization.blindRun' depends on axioms: [propext]
+'CommonOrganization.blind_prefix_has_same_organization' depends on axioms: [propext]
+'CommonOrganization.blind_replacement_fails_again' depends on axioms: [propext]
+'CommonOrganization.JointState' does not depend on any axioms
+'CommonOrganization.JointEvent' does not depend on any axioms
+'CommonOrganization.JointStep' depends on axioms: [propext]
+'CommonOrganization.jointProcess' depends on axioms: [propext]
+'CommonOrganization.lift_regulation' depends on axioms: [propext]
+'CommonOrganization.formed_preparation' depends on axioms: [propext]
+'CommonOrganization.actual_connection' depends on axioms: [propext]
+'CommonOrganization.formation_regulation_revision_in_one_history' depends on axioms: [propext]
+'CommonOrganization.full_accounting' depends on axioms: [propext]
+'Generative.trace_nil_iff' does not depend on any axioms
+'Generative.trace_cons_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_left' does not depend on any axioms
+'Generative.trace_product_right' does not depend on any axioms
+'Generative.trace_product_mk' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+'FormedSelection.population_type_sum' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_valid' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_valid' depends on axioms: [propext, Quot.sound]
+'FormedSelection.material_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_material_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_energy_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_common_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_common_ledger' depends on axioms: [propext, Quot.sound]
+'FormedSelection.copy_increment_le_spent' does not depend on any axioms
+'FormedSelection.copy_tally_le_spent' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_copy_budget' depends on axioms: [propext, Quot.sound]
+'FormedSelection.exact_step_rank_drop' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_strict_rank' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_event_bound' depends on axioms: [propext, Quot.sound]
+'FormedSelection.no_infinite_event_path' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_paid_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_paid_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.repair_needs_three_initial_common_units' depends on axioms: [propext, Quot.sound]
+'FormedSelection.low_fuel_cannot_restore_site' depends on axioms: [propext, Quot.sound]
+'FormedSelection.step_paid_mixed_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.trace_paid_mixed_phase' depends on axioms: [propext, Quot.sound]
+'FormedSelection.restored_site_and_alternative_need_four_initial_common_units' depends on axioms: [propext, Quot.sound]
+'FormedSelection.a_absence_step' depends on axioms: [propext]
+'FormedSelection.h_absence_step' depends on axioms: [propext]
+'FormedSelection.a_absence_trace' depends on axioms: [propext]
+'FormedSelection.h_absence_trace' depends on axioms: [propext]
+'FormedSelection.a_appearance_requires_formation' depends on axioms: [propext, Quot.sound]
+'FormedSelection.h_appearance_requires_formation' depends on axioms: [propext, Quot.sound]
+'FormedSelection.a_copy_has_template' depends on axioms: [propext]
+'FormedSelection.h_copy_has_template' depends on axioms: [propext]
+'FormedSelection.owned_support_step' depends on axioms: [propext]
+'FormedSelection.owned_support_trace' depends on axioms: [propext]
+'FormedSelection.owned_support_forbids_h_local_copy' depends on axioms: [propext]
+'FormedSelection.no_h_local_copies_without_resident_wear' depends on axioms: [propext]
+'FormedSelection.paid_formation_to_copy' does not depend on any axioms
+'FormedSelection.witness_accounting' does not depend on any axioms
+'FormedSelection.repair_enables_capture' does not depend on any axioms
+'FormedSelection.capture_enables_copy' does not depend on any axioms
+'FormedSelection.initial_owned_support' depends on axioms: [propext]
+'FormedSelection.no_h_local_copies_from_absence_without_resident_wear' depends on axioms: [propext]
+'FormedSelection.repaired_site_can_pass_to_alternative' does not depend on any axioms
+'FormedSelection.inheritance_accounting' does not depend on any axioms
+'SelectorRevision.response_matches_iff' depends on axioms: [propext]
+'SelectorRevision.commands_do_not_read_regime' does not depend on any axioms
+'SelectorRevision.step_energy_ledger' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.trial_preserves_selector' depends on axioms: [propext]
+'SelectorRevision.renewal_inherits_selector' depends on axioms: [propext]
+'SelectorRevision.failed_trial_wears_selector' depends on axioms: [propext]
+'SelectorRevision.changed_selector_requires_paid_assembly' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.reversal_preserves_actual_resources_and_selector' does not depend on any axioms
+'SelectorRevision.trace_composition_uses_actual_state' does not depend on any axioms
+'SelectorRevision.revised_selector_witness' does not depend on any axioms
+'SelectorRevision.witness_changes_response_mapping' does not depend on any axioms
+'SelectorRevision.paid_ledger' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.paid_exists_iff' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.failure_cost_sum' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.recovery_cost_sum' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.recovery_prefix_affordable_iff' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.no_recovery_below_first_cost' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.each_failed_candidate_adds_full_block' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.each_failed_candidate_adds_lifetime_trials' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.source_horizon_obstruction' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.event_projection' depends on axioms: [propext]
+'UpdaterFormation.step_remainder_material' does not depend on any axioms
+'UpdaterFormation.step_energy_ledger' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.trace_material_preserved' does not depend on any axioms
+'UpdaterFormation.trace_projects_when_no_modules_formed' depends on axioms: [propext]
+'UpdaterFormation.directed_module_changes_available_assembly' depends on axioms: [propext]
+'UpdaterFormation.module_change_requires_paid_formation' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.bridge_energy_exact' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.bridge_has_two_actual_materials' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.bridge_material_exact' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.old_depleted_witness_cannot_pay_bridge' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.old_step_preserved_exactly' depends on axioms: [propext]
+'UpdaterFormation.old_trace_embeds' depends on axioms: [propext]
+'UpdaterFormation.organization_trace_embeds' depends on axioms: [propext]
+'UpdaterFormation.actual_formation_bridge_continuation' depends on axioms: [propext]
+'UpdaterFormation.joined_energy_ledger' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.synchronized_prefix_affordable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UpdaterFormation.new_module_budget_obstruction' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.actual_old_preparation' does not depend on any axioms
+'UpdaterFormation.actual_old_entrance_enabled' does not depend on any axioms
+'UpdaterFormation.entrance_is_actual_paid_state' does not depend on any axioms
+'UpdaterFormation.paid_updater_revision_witness' does not depend on any axioms
+'UpdaterFormation.whole_preparation_to_changed_updater_witness' depends on axioms: [propext]
+'UpdaterFormation.whole_witness_accounting' depends on axioms: [propext]

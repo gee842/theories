@@ -1,0 +1,38 @@
+'Generative.KnowledgeCorrespondence.SoundOn' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.ExactOn' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.Resolves' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.exact_is_sound' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.exact_requires_resolution' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.decoder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.KnowledgeCorrespondence.resolution_admits_decoder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.KnowledgeCorrespondence.exact_possible_iff_resolves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.sound_restricts_domain' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.refinement_preserves_resolution' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.History' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.signal' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.target' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.allHistories' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.normal' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.reference' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.pairedEvidence' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.decodePair' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.direct' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.calibrated_pair_exact' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.raw_signal_not_resolving' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.no_exact_raw_decoder' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.direct_exact_on_normal' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.lucky_actual_correct' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.parity_record_exact' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.double_reversal_exact' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.FixedContentSafe' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.true_content_trivially_safe' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.abstention_sound' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.abstention_not_exact' does not depend on any axioms

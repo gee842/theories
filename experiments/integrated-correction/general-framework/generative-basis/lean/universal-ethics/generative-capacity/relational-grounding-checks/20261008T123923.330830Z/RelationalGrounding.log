@@ -1,0 +1,14 @@
+RelationalGrounding.lean:100:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  summary Regime.released
+in the target expression
+  (fun a b => compare (summary a) (summary b)) Regime.released Regime.retained
+
+Summary : Type
+summary : Regime → Summary
+marginalDetermines : ∀ (a b : Regime), (∀ (claim : Claim), marginal a claim ↔ marginal b claim) → summary a = summary b
+compare : Summary → Summary → Prop
+irreflexive : ∀ (s : Summary), ¬compare s s
+comparison : ComparisonPrinciple jointInventory fun a b => compare (summary a) (summary b)
+strict : (fun a b => compare (summary a) (summary b)) Regime.released Regime.retained
+same : summary Regime.released = summary Regime.retained
+⊢ False

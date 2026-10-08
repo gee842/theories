@@ -1,0 +1,34 @@
+Controls.lean:9:2: error: Tactic `apply` failed: could not unify the conclusion of `contingent_generation_has_positive_ground (fun x => True)
+  prior (generatedInventory m) positive g0`
+  True → ∃ q, positive ?h q ∧ ¬prior ?h q
+with the goal
+  ∀ (branch : Bool), ∃ q, positive branch q ∧ ¬prior branch q
+
+Note: The full type of `contingent_generation_has_positive_ground (fun x => True) prior (generatedInventory m) positive
+  g0` is
+  (∀ (h : Bool), True → ∃ q, (generatedInventory m).generative q ∧ (generatedInventory m).realized h q ∧ ¬prior h q) →
+    ∀ (h : Bool), True → ∃ q, positive h q ∧ ¬prior h q
+
+m : FormationModel
+productive : 0 < magnitude m
+positive : Bool → LivingClaim → Prop
+g0 : G0 (generatedInventory m) positive
+⊢ ∀ (branch : Bool), ∃ q, positive branch q ∧ ¬prior branch q
+Controls.lean:15:50: error: Ambiguous term
+  repertoire
+Possible interpretations:
+  Generative.StandardsBridge.repertoire : List (Rule Bool)
+  
+  PositiveGroundUncertainty.repertoire : List (Rule Bool)
+Controls.lean:16:19: error: Ambiguous term
+  repertoire
+Possible interpretations:
+  Generative.StandardsBridge.repertoire : List (Rule Bool)
+  
+  PositiveGroundUncertainty.repertoire : List (Rule Bool)
+Controls.lean:17:32: error: Ambiguous term
+  repertoire
+Possible interpretations:
+  Generative.StandardsBridge.repertoire : List (Rule Bool)
+  
+  PositiveGroundUncertainty.repertoire : List (Rule Bool)

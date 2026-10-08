@@ -1,0 +1,81 @@
+OpenFutureRevision.handed_off_progress {S : Type} (states : Nat → S) (rank : Nat → S → Nat) (completed : Nat → Prop)
+  (localStep : ∀ (n : Nat), ¬completed n → rank n (states (n + 1)) < rank n (states n))
+  (handoff : ∀ (n : Nat), ¬completed n → rank (n + 1) (states (n + 1)) ≤ rank n (states (n + 1))) (n : Nat) :
+  ¬completed n → rank (n + 1) (states (n + 1)) < rank n (states n)
+OpenFutureRevision.generation_by_bound {H S Q : Type} (admitted : H → Prop) (states : H → Nat → S)
+  (rank : H → Nat → S → Nat) (completed : H → Nat → Prop) (decideEvent : (h : H) → DecidablePred (completed h))
+  (appears : H → Nat → Q → Prop) (generative : Q → Prop) (before : H → Q → Prop) (bound : Nat)
+  (initial : ∀ (h : H), admitted h → rank h 0 (states h 0) ≤ bound)
+  (localStep :
+    ∀ (h : H), admitted h → ∀ (n : Nat), ¬completed h n → rank h n (states h (n + 1)) < rank h n (states h n))
+  (handoff :
+    ∀ (h : H),
+      admitted h → ∀ (n : Nat), ¬completed h n → rank h (n + 1) (states h (n + 1)) ≤ rank h n (states h (n + 1)))
+  (correspondence :
+    ∀ (h : H), admitted h → ∀ (n : Nat), completed h n → ∃ q, generative q ∧ appears h n q ∧ ¬before h q)
+  (h : H) :
+  admitted h →
+    ∃ q,
+      (OpenFutureRevision.boundedInventory appears generative bound).generative q ∧
+        (OpenFutureRevision.boundedInventory appears generative bound).realized h q ∧ ¬before h q
+OpenFutureRevision.positive_ground_by_bound {H Q : Type} (admitted : H → Prop) (appears : H → Nat → Q → Prop)
+  (generative : Q → Prop) (before : H → Q → Prop) (bound : Nat) (positive : H → Q → Prop)
+  (g0 : GenerativeComparison.G0 (OpenFutureRevision.boundedInventory appears generative bound) positive)
+  (formed :
+    ∀ (h : H),
+      admitted h →
+        ∃ q,
+          (OpenFutureRevision.boundedInventory appears generative bound).generative q ∧
+            (OpenFutureRevision.boundedInventory appears generative bound).realized h q ∧ ¬before h q)
+  (h : H) : admitted h → ∃ q, positive h q ∧ ¬before h q
+OpenFutureRevision.each_fixed_rule_finishes (p : OpenFutureRevision.Rule) (s : OpenFutureRevision.Stage) :
+  OpenFutureRevision.completed (OpenFutureRevision.advance p (OpenFutureRevision.advance p s))
+OpenFutureRevision.each_rule_local_progress (p : OpenFutureRevision.Rule) (s : OpenFutureRevision.Stage)
+  (unfinished : ¬OpenFutureRevision.completed (OpenFutureRevision.advance p s)) :
+  OpenFutureRevision.remaining p (OpenFutureRevision.advance p s) < OpenFutureRevision.remaining p s
+OpenFutureRevision.revising_run_stays_unfinished (n : Nat) :
+  OpenFutureRevision.revisingRun n = OpenFutureRevision.Stage.leftReady ∨
+    OpenFutureRevision.revisingRun n = OpenFutureRevision.Stage.rightReady
+OpenFutureRevision.revised_rules_can_fail_forever :
+  (∀ (n : Nat),
+      OpenFutureRevision.completed
+        (OpenFutureRevision.advance (OpenFutureRevision.restartChoice (OpenFutureRevision.revisingRun n))
+          (OpenFutureRevision.advance (OpenFutureRevision.restartChoice (OpenFutureRevision.revisingRun n))
+            (OpenFutureRevision.revisingRun n)))) ∧
+    (∀ (n : Nat),
+        OpenFutureRevision.remaining (OpenFutureRevision.restartChoice (OpenFutureRevision.revisingRun n))
+            (OpenFutureRevision.revisingRun (n + 1)) <
+          OpenFutureRevision.remaining (OpenFutureRevision.restartChoice (OpenFutureRevision.revisingRun n))
+            (OpenFutureRevision.revisingRun n)) ∧
+      ∀ (n : Nat), ¬OpenFutureRevision.completed (OpenFutureRevision.revisingRun n)
+OpenFutureRevision.revision_resets_remaining (n : Nat) :
+  OpenFutureRevision.remaining (OpenFutureRevision.restartChoice (OpenFutureRevision.revisingRun n))
+        (OpenFutureRevision.revisingRun (n + 1)) =
+      1 ∧
+    OpenFutureRevision.remaining (OpenFutureRevision.restartChoice (OpenFutureRevision.revisingRun (n + 1)))
+        (OpenFutureRevision.revisingRun (n + 1)) =
+      2
+OpenFutureRevision.changed_form_with_valid_handoff :
+  OpenFutureRevision.advance OpenFutureRevision.Rule.left OpenFutureRevision.Stage.leftReady =
+      OpenFutureRevision.Stage.rightReady ∧
+    OpenFutureRevision.remaining OpenFutureRevision.Rule.directRight OpenFutureRevision.Stage.rightReady ≤
+        OpenFutureRevision.remaining OpenFutureRevision.Rule.left OpenFutureRevision.Stage.rightReady ∧
+      OpenFutureRevision.advance OpenFutureRevision.Rule.directRight OpenFutureRevision.Stage.rightReady =
+          OpenFutureRevision.Stage.formedRight ∧
+        OpenFutureRevision.advance OpenFutureRevision.Rule.left OpenFutureRevision.Stage.rightReady =
+          OpenFutureRevision.Stage.formedLeft
+OpenFutureRevision.realized_form_need_not_be_fixed :
+  (∀ (p : Bool),
+      ∃ q,
+        OpenFutureRevision.realizes
+          (OpenFutureRevision.advance
+            (if p = true then OpenFutureRevision.Rule.directRight else OpenFutureRevision.Rule.left)
+            OpenFutureRevision.Stage.rightReady)
+          q) ∧
+    ¬∃ q,
+        ∀ (p : Bool),
+          OpenFutureRevision.realizes
+            (OpenFutureRevision.advance
+              (if p = true then OpenFutureRevision.Rule.directRight else OpenFutureRevision.Rule.left)
+              OpenFutureRevision.Stage.rightReady)
+            q

@@ -1,0 +1,85 @@
+EnactedScene.lean:31:36: error: unexpected identifier; expected '}'
+EnactedScene.lean:58:2: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+p : Place
+s : Situation
+⊢ (have cost := distance s.position p;
+        if cost ≤ s.lexicon.percept.machine.support then { lexicon := s.lexicon, position := p, sites := s.sites }
+        else sorry).lexicon.records =
+    s.lexicon.records
+EnactedScene.lean:64:2: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+p : Place
+s : Situation
+⊢ (have cost := distance s.position p;
+              if cost ≤ s.lexicon.percept.machine.support then { lexicon := s.lexicon, position := p, sites := s.sites }
+              else sorry).lexicon.percept.machine.support +
+      (have cost := distance s.position p;
+              if cost ≤ s.lexicon.percept.machine.support then { lexicon := s.lexicon, position := p, sites := s.sites }
+              else sorry).lexicon.percept.machine.spent =
+    s.lexicon.percept.machine.support + s.lexicon.percept.machine.spent
+EnactedScene.lean:69:90: error: unsolved goals
+p : Place
+s : Situation
+short : s.lexicon.percept.machine.support < distance s.position p
+⊢ sorry () = s
+EnactedScene.lean:70:8: warning: declaration uses `sorry`
+EnactedScene.lean:95:51: error: unsolved goals
+s t : Lexicon
+raw : List Sound
+h : s.percept.log = t.percept.log ∧ s.repertoire = t.repertoire ∧ s.records = t.records ∧ s.excluded = t.excluded
+f : List Sound
+⊢ (match List.filter (compatible s f) t.repertoire with
+    | [e] => some e
+    | x => none) =
+    match List.filter (compatible t f) t.repertoire with
+    | [e] => some e
+    | x => none
+EnactedScene.lean:97:34: warning: This simp argument is unused:
+  compatible
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵s̵o̵l̵v̵e̵,̵c̵a̵n̵d̵i̵d̵a̵t̵e̵s̵,̵c̵o̵m̵p̵a̵t̵i̵b̵l̵e̵,̵h̵.̵2̵.̵1̵,̵h̵.̵2̵.̵2̵.̵1̵,̵h̵.̵2̵.̵2̵.̵2̵]̵[̲r̲e̲s̲o̲l̲v̲e̲,̲ ̲c̲a̲n̲d̲i̲d̲a̲t̲e̲s̲,̲ ̲h̲.̲2̲.̲1̲,̲ ̲h̲.̲2̲.̲2̲.̲1̲,̲ ̲h̲.̲2̲.̲2̲.̲2̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EnactedScene.lean:97:51: warning: This simp argument is unused:
+  h.2.2.1
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵s̵o̵l̵v̵e̵,̵c̵a̵n̵d̵i̵d̵a̵t̵e̵s̵,̵c̵o̵m̵p̵a̵t̵i̵b̵l̵e̵,̵h̵.̵2̵.̵1̵,̵h̵.̵2̵.̵2̵.̵1̵,̵h̵.̵2̵.̵2̵.̵2̵]̵[̲r̲e̲s̲o̲l̲v̲e̲,̲ ̲c̲a̲n̲d̲i̲d̲a̲t̲e̲s̲,̲ ̲c̲o̲m̲p̲a̲t̲i̲b̲l̲e̲,̲ ̲h̲.̲2̲.̲1̲,̲ ̲h̲.̲2̲.̲2̲.̲2̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EnactedScene.lean:97:59: warning: This simp argument is unused:
+  h.2.2.2
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵s̵o̵l̵v̵e̵,̵c̵a̵n̵d̵i̵d̵a̵t̵e̵s̵,̵c̵o̵m̵p̵a̵t̵i̵b̵l̵e̵,̵h̵.̵2̵.̵1̵,̵h̵.̵2̵.̵2̵.̵1̵,̵h̵.̵2̵.̵2̵.̵2̵]̵[̲r̲e̲s̲o̲l̲v̲e̲,̲ ̲c̲a̲n̲d̲i̲d̲a̲t̲e̲s̲,̲ ̲c̲o̲m̲p̲a̲t̲i̲b̲l̲e̲,̲ ̲h̲.̲2̲.̲1̲,̲ ̲h̲.̲2̲.̲2̲.̲1̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EnactedScene.lean:121:42: error: Tactic `decide` proved that the proposition
+  Option.map (fun r => (r.fst, r.snd.percept.machine.support, r.snd.percept.machine.spent))
+      (AcquiredBinding.execute utterance (coordinated 37).lexicon) =
+    some ([true, false, true], 0, 30)
+is false
+EnactedScene.lean:126:28: error: Tactic `decide` proved that the proposition
+  (coordinated 37).lexicon.percept.machine.support = 4 ∧
+    (coordinated 37).lexicon.percept.machine.spent = 26 ∧ 7 + 7 + 10 + 5 + 4 + 4 = 37
+is false
+EnactedScene.lean:159:60: error: Tactic `decide` proved that the proposition
+  interpret (coordinated 36).lexicon utterance = some intended ∧
+    AcquiredBinding.execute utterance (coordinated 36).lexicon = none
+is false
+EnactedScene.lean:163:52: error: Tactic `decide` failed for proposition
+  (move (2, 2) (start 24)).position = (1, 0) ∧ visible (move (2, 2) (start 24)) = [p0, p1]
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `Bool.decEq`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match h : (move (2, 2) (start 24)).2.fst.beq 1 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯

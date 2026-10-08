@@ -1,0 +1,7 @@
+import RelationalGrounding
+#check RelationalGrounding.released_profiles_are_carried
+#check RelationalGrounding.joint_bundle_extension
+#check RelationalGrounding.marginals_agree_but_joint_descriptions_differ
+#check RelationalGrounding.strict_comparison_cannot_factor_through_marginals
+#check RelationalGrounding.joint_description_separates
+#check RelationalGrounding.retained_possibility_does_not_force_joint_actualization

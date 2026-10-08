@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "code-plan-global-support",
+  "title": {
+    "zh": "代码共同方案的全局支持",
+    "en": "Global support of coded joint plans"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "代码方案经原生提升后，在 Within 与 Separate 下，其全部叶项请求受原生整体覆盖且无重复。",
+    "en": "After native lifting, a coded joint plan’s combined leaf requests are covered by the native whole without duplication under Within and Separate."
+  },
+  "hypotheses": [
+    {
+      "zh": "joint_plan_lifts 的全部前提，以及支持 F 的包含、排他和叶项正确性。",
+      "en": "All joint_plan_lifts premises plus footprint containment, exclusivity and leaf correctness."
+    }
+  ],
+  "correspondence": {
+    "zh": "这是同一模型和叶项解释内的实际形式组合，不是可加预算与任意时序模型的通用转换。",
+    "en": "This is formal composition within the same model and leaf interpretation, not a universal adapter to additive budgets or arbitrary temporal models."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+  "aliases": [
+    "Generative.ExplanatoryFootprints.code_plan_has_global_support"
+  ],
+  "dependencies": [
+    {
+      "id": "joint-code-plan-lifting",
+      "detail": {
+        "zh": "代码实现先提升为同一原生共同方案。",
+        "en": "Code realization first lifts to the same native joint plan."
+      },
+      "relation": "formal-reuse",
+      "interface": {
+        "output": {
+          "zh": "提升后的原生 Realizes，或其叶项支持定理。",
+          "en": "Lifted native Realizes, or its leaf-support theorem."
+        },
+        "input": {
+          "zh": "realized_requests_supported 消费同一原生 Realizes。",
+          "en": "realized_requests_supported consumes that same native Realizes."
+        },
+        "conditions": {
+          "zh": "全部提升前提、Within、Separate 和叶项正确性保留。",
+          "en": "All lifting premises, Within, Separate and leaf correctness remain."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean"
+      }
+    },
+    {
+      "id": "exclusive-footprint-support",
+      "detail": {
+        "zh": "已实现原生方案随后给出其全部请求的根支持。",
+        "en": "The realized native plan then supplies root support for all requests."
+      },
+      "relation": "formal-reuse",
+      "interface": {
+        "output": {
+          "zh": "提升后的原生 Realizes，或其叶项支持定理。",
+          "en": "Lifted native Realizes, or its leaf-support theorem."
+        },
+        "input": {
+          "zh": "realized_requests_supported 消费同一原生 Realizes。",
+          "en": "realized_requests_supported consumes that same native Realizes."
+        },
+        "conditions": {
+          "zh": "全部提升前提、Within、Separate 和叶项正确性保留。",
+          "en": "All lifting premises, Within, Separate and leaf correctness remain."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+      "detail": {
+        "zh": "不去掉排他性，也不从可用支持反向推出一般共同实现。",
+        "en": "It removes neither exclusivity nor the additional conditions needed for converse realization."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不去掉排他性，也不从可用支持反向推出一般共同实现。",
+    "en": "It removes neither exclusivity nor the additional conditions needed for converse realization."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+      "role": "proof",
+      "sha256": "dc6ce537f5fabb729327b28194fc9bc06cf98b47ba76ecf3f32324e00857ecc9",
+      "declarations": [
+        "Generative.ExplanatoryFootprints.code_plan_has_global_support"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json",
+      "role": "receipt",
+      "sha256": "873e0ce7f081927642f2629954ab05c6294f57efecf1e5a50a4d889b89335650",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json",
+      "sha256_pointer": "/modules/10/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "复用既有二步组合，不重证叶项支持；应用时明示同一原生关系。",
+    "en": "Reuse the existing two-stage composition instead of reproving leaf support; identify the same native relation in applications."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。",
+      "en": "2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation."
+    }
+  ]
+}

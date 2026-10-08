@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "branching-tests-bisimulation",
+  "title": {
+    "zh": "分支测试等价与双模拟",
+    "en": "Branching-test equivalence and bisimulation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "两个 image-finite 模型在全部有限分支测试上同测，等价于存在关联这两个位置的双模拟。",
+    "en": "For two image-finite models, agreement on all finite branching tests is equivalent to a bisimulation relating the two positions."
+  },
+  "hypotheses": [
+    {
+      "zh": "ExplanatoryBranching 的模型、测试与两侧 ImageFinite；既有经典逻辑依赖保留。",
+      "en": "ExplanatoryBranching models and tests, ImageFinite on both sides, and the recorded classical logical dependencies."
+    }
+  ],
+  "correspondence": {
+    "zh": "解释声称覆盖这些问题时才适用；没有证明所有测试实际可取得。",
+    "en": "Applies when the explanation covers these questions; it does not establish actual availability of all tests."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+  "aliases": [
+    "Generative.ExplanatoryBranching.same_iff_bisimilar"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "detail": {
+        "zh": "该测试语言不自动表达共同占用；更丰富的共同语言有自己的关系与条件。",
+        "en": "This test language does not automatically express joint occupation; the richer joint language has its own relations and conditions."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "该测试语言不自动表达共同占用；更丰富的共同语言有自己的关系与条件。",
+    "en": "This test language does not automatically express joint occupation; the richer joint language has its own relations and conditions."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "role": "proof",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "declarations": [
+        "Generative.ExplanatoryBranching.same_iff_bisimilar"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json",
+      "role": "receipt",
+      "sha256": "f8619d4410229178fc852d88bb0bb280fc59f4f4dabf6f9381db41ac2685151a",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json",
+      "sha256_pointer": "/modules/7/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "复用同测到后继匹配的证明，按实际问题说明测试范围。",
+    "en": "Reuse the proof from test agreement to successor matching and justify the actual test scope."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

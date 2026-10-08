@@ -4,7 +4,7 @@
 
 `finite-basis-common-interpretation` · **recorded-checked** · theorem · F11
 
-记录源 / Editable record: [finite-basis-common-interpretation.json](finite-basis-common-interpretation.json) · [登记表 / Register](../RESULT-REGISTER.md)
+记录源 / Editable record: [finite-basis-common-interpretation.json](finite-basis-common-interpretation.json) · [登记表 / Register](../../../../RESULTS.md)
 
 Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
@@ -32,6 +32,13 @@ Boundary source / 边界来源: [JointInterpretation.lean](../../../../experimen
 
 - **formal-reuse**: [derivation-soundness](derivation-soundness.md). 反向从共同根基到共同闭包使用健全性；局部前提仍保留。 / The common-basis-to-common-closure direction uses soundness; local premises remain explicit.
 
+**Output / 输出:** 同一解释中根基与局部前提保证推导结论。 / Basis and local assumptions guarantee the derived conclusion in the same interpretation.
+
+**Input / 输入:** 共同根基见证扩展为整个闭包共同见证。 / Extend a common basis witness to a common witness for the closure.
+
+**Preserved conditions / 保留条件:** 有限覆盖、可接纳解释和根基真并未由健全性取得。 / Finite coverage, admissibility and basis truth are not acquired by soundness. [JointInterpretation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean)
+
+
 ## 来源与既有回执 Sources and existing receipts
 
 | Role | Source | Declarations |
@@ -52,3 +59,4 @@ Aliases / 别名: `InquiryRoot.JointInterpretation.pointwise_closure_iff_common`
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.

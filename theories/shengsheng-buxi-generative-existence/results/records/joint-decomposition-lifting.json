@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "joint-decomposition-lifting",
+  "title": {
+    "zh": "从整体代码提升共同分解",
+    "en": "Lifting a joint decomposition from a whole code"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T13:02:25.936140+00:00",
+  "claim": {
+    "zh": "在共同纤维紧致、表示准确且约简时，整体代码的共同分解可从该整体的任一给定原生代表提升。",
+    "en": "Under joint-fiber compactness and an exact reduced presentation, a code-level joint decomposition lifts from any given native representative of the whole code."
+  },
+  "hypotheses": [
+    {
+      "zh": "JointCompact、Exact、Reduced；codeJoint 使用同一模型的原生 joint 关系。",
+      "en": "JointCompact, Exact and Reduced; codeJoint uses the same model’s native joint relation."
+    }
+  ],
+  "correspondence": {
+    "zh": "整体、代码与成对关系的解释是给定的，不假设所有物理实现满足紧致性。",
+    "en": "The whole/code/joint interpretation is supplied; universal physical compactness is not assumed."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+  "aliases": [
+    "Generative.ExplanatoryJointness.code_joint_lifts_from_whole"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "detail": {
+        "zh": "提升存在部分，不保证任意指定的部分可以替换或重复使用同一支持。",
+        "en": "Lifting provides some parts, not arbitrary substitution of designated parts or duplication of support."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "提升存在部分，不保证任意指定的部分可以替换或重复使用同一支持。",
+    "en": "Lifting provides some parts, not arbitrary substitution of designated parts or duplication of support."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "role": "proof",
+      "sha256": "18f745f8ef8bae379e3fadcf059a68c529caa5af4453adc469182148e4fa4e4f",
+      "declarations": [
+        "Generative.ExplanatoryJointness.code_joint_lifts_from_whole"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "role": "receipt",
+      "sha256": "aa8a37f8bf4539f5d3e90986a1e0a74fdf9568cacc1b1438a2421f3721d6f420",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "sha256_pointer": "/modules/9/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "复用 code_joint_lifts_from_whole 作为递归计划的每节点接口。",
+    "en": "Reuse code_joint_lifts_from_whole as the per-node interface for recursive plans."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

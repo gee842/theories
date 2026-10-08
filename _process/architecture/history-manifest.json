@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "scope": "Exact pre-reorganization bytes plus separately labelled local-link-adapted reading editions. No source or proof history is erased.",
+  "documents": {
+    "AGENTS.md": {
+      "original": "AGENTS.md",
+      "sha256": "0371e616118b4c19208a6680590dacd25ac2f0b1b1c7b678626c36c23106da88",
+      "raw": "_process/architecture/history/0371e616118b4c19/AGENTS.md",
+      "reading": "_process/architecture/history/0371e616118b4c19/AGENTS.reading.md",
+      "reading_sha256": "9381b45e19991dbc272616c3ead18bad07801f73e3506fcf1377a213bfe49369"
+    },
+    "README.md": {
+      "original": "README.md",
+      "sha256": "47dfae942acfeeb4902f8a039b97fe02683ba43c22c76817f1636e2e86b987fd",
+      "raw": "_process/architecture/history/47dfae942acfeeb4/README.md",
+      "reading": "_process/architecture/history/47dfae942acfeeb4/README.reading.md",
+      "reading_sha256": "46e80aa370158db931ff5056e5e0e66c053b1a1dd1384b494d37b26843c73834"
+    },
+    "RESEARCH.md": {
+      "original": "RESEARCH.md",
+      "sha256": "05d9b507f6b9249af4d7acad7003afa9a47cd92e6ecef53571038fa23b91c695",
+      "raw": "_process/architecture/history/05d9b507f6b9249a/RESEARCH.md",
+      "reading": "_process/architecture/history/05d9b507f6b9249a/RESEARCH.reading.md",
+      "reading_sha256": "151f1c041fd2a9f34c20a4c782010675998de548b182db58eb8f8ec84e912f33",
+      "prior_versions": [
+        {
+          "original": "RESEARCH.md",
+          "sha256": "078d172c20d009584c4c010f5e2be2613d440c32e84407489759aa74af99c52e",
+          "raw": "_process/architecture/history/078d172c20d00958/RESEARCH.md",
+          "reading": "_process/architecture/history/078d172c20d00958/RESEARCH.reading.md",
+          "reading_sha256": "741fc3256ca3d4934752abcbd6bf5215e09c463a94309b1fae4fc520e7dbeba2"
+        }
+      ]
+    },
+    "_process/BRIEF.md": {
+      "original": "_process/BRIEF.md",
+      "sha256": "a00b8cc377928e2f64be0461c0f17596fe58e4547dd9c7f329a37bdb964fabe8",
+      "raw": "_process/architecture/history/a00b8cc377928e2f/BRIEF.md",
+      "reading": "_process/architecture/history/a00b8cc377928e2f/BRIEF.reading.md",
+      "reading_sha256": "bd295ea2e7673bf2b8a223e19ae4d92778f3bbe8588eb9aa478a2833dc3c5dd0"
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "original": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "7ef46d1177ecd3363d79d6eed80858e24817d9708edcfaf6a84fdf3afa17ce24",
+      "raw": "_process/architecture/history/7ef46d1177ecd336/README.md",
+      "reading": "_process/architecture/history/7ef46d1177ecd336/README.reading.md",
+      "reading_sha256": "13cd94a1ded227cf233f511eaade0a9b6863ba7082f04cfbd7c2b5a0f2d4bcdd",
+      "prior_versions": [
+        {
+          "original": "theories/shengsheng-buxi-generative-existence/README.md",
+          "sha256": "e54fd614eb5a10ab49913e513b03c93c201fa735ef837693e3128d94fafa945f",
+          "raw": "_process/architecture/history/e54fd614eb5a10ab/README.md",
+          "reading": "_process/architecture/history/e54fd614eb5a10ab/README.reading.md",
+          "reading_sha256": "257a43e321efc6a4131a3d09ce8be1a62c349df7193e48b517b3d929c3107f0d"
+        }
+      ]
+    },
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md": {
+      "original": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "sha256": "9a1ac77d4bfab76a1ad025cf760a8fb0ace986052398c22c366d00b3f41a1f88",
+      "raw": "_process/architecture/history/9a1ac77d4bfab76a/ROADMAP.md",
+      "reading": "_process/architecture/history/9a1ac77d4bfab76a/ROADMAP.reading.md",
+      "reading_sha256": "bbecdca5d8fe7654e662d00193dc52931b9bbfab9a92b77967d322fa3420eef0",
+      "prior_versions": [
+        {
+          "original": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+          "sha256": "375d7ef128db2b010dfbb8afa013f0810ed32b819aab6ff89d32fbf2484157b7",
+          "raw": "_process/architecture/history/375d7ef128db2b01/ROADMAP.md",
+          "reading": "_process/architecture/history/375d7ef128db2b01/ROADMAP.reading.md",
+          "reading_sha256": "d5853a519648e1623c43ed7f505d9d6101d6afe2e637653a13928eca83b6ea71"
+        }
+      ]
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": {
+      "original": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "2e8252f3d756ccfc0770d6b0a58fd1c3955ba6831dfc12b71b66497f58fb0ae0",
+      "raw": "_process/architecture/history/2e8252f3d756ccfc/README.md",
+      "reading": "_process/architecture/history/2e8252f3d756ccfc/README.reading.md",
+      "reading_sha256": "6f9d8fba3803af0c95525b2b7fcdab04fccd4863f54fd5dce93a37b2295623b7",
+      "prior_versions": [
+        {
+          "original": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+          "sha256": "d39bd6685748df743c94198b0ea1446be5adfc1a151aea6369fc7ddb85096b93",
+          "raw": "_process/architecture/history/d39bd6685748df74/README.md",
+          "reading": "_process/architecture/history/d39bd6685748df74/README.reading.md",
+          "reading_sha256": "15ec42846519253a17098e61fb8cfc474e36adf19dd6d4ee02812f24d533ef15"
+        }
+      ]
+    },
+    "OPEN-QUESTIONS.md": {
+      "original": "OPEN-QUESTIONS.md",
+      "sha256": "e003847ee1a444284b2e86e568259aa550b4dc25da003348d607fcee3b6a9dd0",
+      "raw": "_process/architecture/history/e003847ee1a44428/OPEN-QUESTIONS.md",
+      "reading": "_process/architecture/history/e003847ee1a44428/OPEN-QUESTIONS.reading.md",
+      "reading_sha256": "06c952f5148db024606223e513de2747be832bdccedf8195e22f06a56dc9cc4e"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md": {
+      "original": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "sha256": "2e9e081ccd2d6d27bbcbf176a11ce9e71d0aec01acef0cb9b9948c5270a26a3d",
+      "raw": "_process/architecture/history/2e9e081ccd2d6d27/CLAIMS.md",
+      "reading": "_process/architecture/history/2e9e081ccd2d6d27/CLAIMS.reading.md",
+      "reading_sha256": "b69f20f83443692a06e11c60aba753830430167141fa7ba6b3490499f81a5055"
+    },
+    "theories/shengsheng-buxi-generative-existence/results/records/finite-branching-relational-recovery.md": {
+      "original": "theories/shengsheng-buxi-generative-existence/results/records/finite-branching-relational-recovery.md",
+      "sha256": "37a9dc7c5fa9fc004dd5f70ee868e57d413be710acda6e041b232ff05c3d9d21",
+      "raw": "_process/architecture/history/37a9dc7c5fa9fc00/finite-branching-relational-recovery.md",
+      "reading": "_process/architecture/history/37a9dc7c5fa9fc00/finite-branching-relational-recovery.reading.md",
+      "reading_sha256": "5d2bc74a19ffceb9ecb837b170ca4dc0bcc7357c96c2dc5e8ad22584ff61e18d"
+    }
+  },
+  "reconciliations": [
+    {
+      "path": "RESEARCH.md",
+      "sha256": "05d9b507f6b9249af4d7acad7003afa9a47cd92e6ecef53571038fa23b91c695",
+      "note": "Reviewed new wisdom §13, acquired-binding and organizational-formation entries. Existing study sources and canonical records retain their scientific scopes; complete latest overview retained in this snapshot."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "7ef46d1177ecd3363d79d6eed80858e24817d9708edcfaf6a84fdf3afa17ce24",
+      "note": "Reviewed the corresponding wisdom, acquired-binding and organizational-formation updates. Their canonical records and substantive chapters are the current entry points."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "sha256": "9a1ac77d4bfab76a1ad025cf760a8fb0ace986052398c22c366d00b3f41a1f88",
+      "note": "Reviewed the organizational-formation result and remaining new-living correspondence boundary; canonical result retains that scope."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "sha256": "2e8252f3d756ccfc0770d6b0a58fd1c3955ba6831dfc12b71b66497f58fb0ae0",
+      "note": "Reviewed wisdom §13 and acquired-binding continuation. Preserve this latest full study index and generate navigation to their existing sources."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/finite-branching-relational-recovery.md",
+      "sha256": "37a9dc7c5fa9fc004dd5f70ee868e57d413be710acda6e041b232ff05c3d9d21",
+      "note": "This generated page was rendered during a concurrent migration; its author subsequently removed the editable JSON. Its complete bytes are preserved here. The supporting same_is_bisimulation direction is in the existing ExplanatoryBranching source used by branching-tests-bisimulation. No scientific source or receipt removed; this is retirement of an orphan generated view only."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "status": "passed",
+  "scope": "Public human data correspondence and held-out forecast comparison, preserving six-study literature grounding and unchanged formal proof scope.",
+  "local_links_checked": 26,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md#public-data-counterreview"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+      "reference": "JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../results/records/situated-recovery-empirical-correspondence.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#18-experimental-grounding-already-exists"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "ANALYSIS-PLAN.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "../../../../../../sources/situated-recovery/heald-2021/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "SENSITIVITY-NOTE.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "recovery-results.png"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "requirements.txt"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "results.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "sensitivity-results.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "observations.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "extraction-audit.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "sources/situated-recovery/heald-2021/README.md",
+      "reference": "retrieval.json"
+    },
+    {
+      "from": "sources/situated-recovery/heald-2021/README.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "SITUATED-RECOVERY-DATA-INDEX-EDITS.json"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "situated-recovery/heald-2021/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md"
+    }
+  ],
+  "prior_documents_preserved": 4,
+  "owned_M20_matches_renderer": true,
+  "other_entries_preserved_at_mutation": true,
+  "unrelated_entries_match_edit_baseline": true,
+  "other_table_lines_match_edit_baseline": true,
+  "source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md": "3365f2a872b54bc72cf68e85370cec725a084cb853bc865b948793363ba6c847",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md": "b9f5becc224f0089139d2df9c06aef8efe582bd3d7c1496af7f34a29dda1e82d",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": "d4803e02fe1856d4b8dfaf5fed116cb128221d2916338e71361be5e4005ad2ed",
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": "0c570e38d394a1a919a992c00355d2990d958159f4d7479f3a37fed60d1b2a69",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md": "c2e5020d364d432f948d76ede3940d971f141215460cf2c50e200be3a5e1b545",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/results.json": "af5a4b25cbc33a075e8f03cb32c0cbfc89b7288612b0f5309f617a38d2e6eb42",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/verification.json": "c308b05d71119471a8ada531d3e94b0a04dc3f4514d8966d2e873b3031382d09",
+    "sources/situated-recovery/heald-2021/README.md": "6e3a886681ed1a54c3c89db6bc973668907727712fd4849e77fb5055c40ada7c",
+    "theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.json": "9bc3f4aff5393e6eb75a407bab1cd5df26d2ae833b11fc6c7a0e75489a52d535"
+  },
+  "checker_sha256": "37e2a489b7339fca050f45952b56f9d92917c2adf2e7c993b71e8824b7c06788",
+  "empirical_receipt_sha256": "c308b05d71119471a8ada531d3e94b0a04dc3f4514d8966d2e873b3031382d09",
+  "prior_Lean_sources_unchanged": true,
+  "new_theorems": 0,
+  "proof_recompiled": false,
+  "pending_global_chain_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "whole_chain_certified": false,
+  "independent_review": false
+}

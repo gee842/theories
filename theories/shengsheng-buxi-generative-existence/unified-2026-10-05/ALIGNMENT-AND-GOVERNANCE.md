@@ -1,5 +1,7 @@
 # The conditions of a future in AI alignment and governance
 
+**实际执行与证据接续 / Executed changes and continuing evidence，2026-10-08。** [论证、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md)由有界写入指令推导变化范围，以同一变换接续候选，耦合权限、记录及旧命令撤销：27项新 Lean 定理／57项审计、24,416项记录匹配。/ This closes the instruction-to-evidence connection within the specified grammar; a misleading caller label cannot understate its executed effect. Exact transport permits the worked shutdown in 19 units, while an extra writer can leave identical records with false coverage. Runtime mediation, physical semantics, actual source/fault coverage and protected command execution remain substantive conditions; earlier temporal and ethical results are reused.
+
 **评价条件本身的变化 / Changes in the conditions of evaluation，2026-10-08。** [维护目标重算检验](BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline)证明一种具体失真：先撤旧支持，再按受损能力缩小目标，可能认证空目标而未交付；真实完成后结束则允许。/ Four new Lean theorems / 13 audits test this task correspondence. The result neither forbids justified goal revision nor grants a self-issued release; previously proved correction mechanisms remain reusable.
 
 **风险条件与理由接续 / Conditional risk and continuing reasons，2026-10-08。** [理论接续](CHOICE-AND-GENERATIVE-CONTEXT.md#risk-conditioning-and-continuing-reasons)明确当前风险对应与有效历史须共同进入持续判断；[论证、作者反审及实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md)以同一联合规律检查平方诊断的跨阶段反转，10项新 Lean 定理／21项审计通过。/ This closes a test of the static-to-sequential extension, not dynamic fairness generally. NP remains a scoped candidate; current support, stage and historical warrant must be fixed before calibrating costly sharing. No best lottery or independent acceptance.
@@ -70,7 +72,7 @@ The completed direction argument, general practical account and checked comparis
 
 ### Ethical learning and the formation of new reasons
 
-**新理由、任务修订与权限范围 / New reasons, mandate revision and authority，2026-10-08。** [伦理学习 §§67–74](ETHICAL-LEARNING.md#new-reasons-and-mandate-revision)区分理由受理、履行纠正、影响责任、控制收缩及共同新任务；认识更广可以要求权力更小。/ The run reaches a first contested-authorization wall after testing incumbency, consent, majority, expertise, beneficial outcomes and provisionality. Better judgment alone gives neither an AI nor an institution new jurisdiction; existing justified duties and correction remain.
+**组织能力的实践要求 / Practical requirement for organizational capacity，2026-10-08。** [当前成果](../results/records/organizational-formation-from-generative-comparison.md)将一元关系重构接到完整比较：缺少某项组织作用的全部合格接续均被充分改善击败时，恰当选择必须形成该作用。/ It can warrant expansion without prescribing one carrier. Local construction success is not whole generative appraisal; basic significance of unfamiliar new forms remains a further substantive correspondence.
 
 **纠正不必等待在任者重新关心 / Correction beyond incumbent concern，2026-10-08。** [伦理学习 §§61–66](ETHICAL-LEARNING.md#forming-corrective-access)研究共同准备如何保留有权限、能实行的回应，并区分内部制衡与对无回报生活的涵盖。/ Existing command, reconfiguration and request-history results remain credited. The formation candidate is finite; changed motives, correlated control, absent capacity and unjust mandates are not certified away.
 

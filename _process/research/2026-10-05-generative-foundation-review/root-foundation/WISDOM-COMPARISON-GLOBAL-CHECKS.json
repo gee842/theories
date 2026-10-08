@@ -1,0 +1,173 @@
+{
+  "checked_at_utc": "2026-10-08T13:12:00.429075+00:00",
+  "scope": "Documentary checks; unrelated source drift is recorded without acceptance. No Lean run.",
+  "results": [
+    {
+      "command": [
+        "/Users/ren/.pyenv/versions/3.11.2/bin/python",
+        "tools/research/registry.py",
+        "--ids",
+        "wisdom-root"
+      ],
+      "exit_code": 0,
+      "output": {
+        "records": 28,
+        "errors": [],
+        "source_drift": [],
+        "other_record_drift": [
+          {
+            "id": "universal-practical-warrant",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+            "reviewed_sha256": "ce6bea50c458fc1d97ed267f900872a414c1bf640a5963dd2587174eea70e3c7",
+            "current_sha256": "78ae766abf81c0982ac2533977e2c6a46d470d9e1d83178885c37a2d1f92751b"
+          }
+        ],
+        "scope": "Documentary checks only; no Lean build or semantic proof audit."
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/ren/.pyenv/versions/3.11.2/bin/python",
+        "tools/research/registry.py",
+        "--ids",
+        "wisdom-root",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": {
+        "records": 28,
+        "errors": [],
+        "source_drift": [],
+        "other_record_drift": [
+          {
+            "id": "universal-practical-warrant",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+            "reviewed_sha256": "ce6bea50c458fc1d97ed267f900872a414c1bf640a5963dd2587174eea70e3c7",
+            "current_sha256": "78ae766abf81c0982ac2533977e2c6a46d470d9e1d83178885c37a2d1f92751b"
+          }
+        ],
+        "scope": "Documentary checks only; no Lean build or semantic proof audit."
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/ren/.pyenv/versions/3.11.2/bin/python",
+        "tools/research/generative_chain.py",
+        "--render"
+      ],
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+            "theories/shengsheng-buxi-generative-existence/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+            "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+            "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-ARGUMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-ARGUMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-PROOF.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-REVIEW.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+          ],
+          "removed_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+            "theories/meta-attractor/COMMON-ORGANIZATION.md"
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/ren/.pyenv/versions/3.11.2/bin/python",
+        "tools/research/generative_chain.py",
+        "--check"
+      ],
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+            "theories/shengsheng-buxi-generative-existence/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+            "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+            "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-ARGUMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-ARGUMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-PROOF.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-REVIEW.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+          ],
+          "removed_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+            "theories/meta-attractor/COMMON-ORGANIZATION.md"
+          ]
+        }
+      },
+      "stderr": ""
+    }
+  ]
+}

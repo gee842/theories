@@ -4,9 +4,9 @@
 
 `wisdom-root` · **open** · target · F08
 
-记录源 / Editable record: [wisdom-root.json](wisdom-root.json) · [登记表 / Register](../RESULT-REGISTER.md)
+记录源 / Editable record: [wisdom-root.json](wisdom-root.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T13:11:41.593697+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -18,21 +18,24 @@ Canonical source: [CORE-CONSTRAINT-AND-WISDOM.md](../../../../_process/research/
 
 - 保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。 / Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom.
 
-适当把握理由、目的的根据及修订须接入实际形成的关系。 / Appropriate grasp of reasons, warranted ends and their revision must connect to actually formed relations.
+适当把握理由、目的的根据及修订须接入实际形成的关系；区分具体判断、形成的能力与完整解释，并区分同一过程中理由的支持、适用、认识与实行作用。 / Appropriate grasp of reasons, warranted ends and revision must connect to actually formed relations. Distinguish episodes, formed capacities and full explanation, and distinguish support, applicability, recognition and realization roles within one unfolding.
 
 ## 检验与边界 Validation and boundaries
 
-登记目标与当前局部必要性研究；不宣称完整智慧或唯一核心已证。 / Records the target and current local necessity study; neither full wisdom nor a unique core is certified.
+登记开放目标、既有局部证明及第12–13节原典／解释比较。本轮复用已查目的评价结果，无新数学定理或实查；作者反审不冒称独立验收。 / Records the open target, existing local proofs and sections 12–13 primary-text/explanatory comparisons. The checked goal-ground result is reused; this continuation adds no theorem or proof run, and author counterreview is not independent acceptance.
 
-目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。 / The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description.
+目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。 目的评价的必要关系与有限判断范围修正已局部完成，不能升级为全部智慧的定义。 / The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom.
 
 - 足够描述不自动有仍充分的共同最粗表示。 / Sufficient descriptions need not admit a still-sufficient common coarsest representation. [WISDOM-RESPONSE-NECESSITY.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md)
+- 正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。 / A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom. [WISDOM-FALLIBLE-JUDGMENT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)
+- 第12节保留不同智慧内容；第13节落实Dancy、Dewey及原目的评价例的对照。具体约束不独自确立一套必要的普遍根；情境判断与固定的关系敏感规则可保留局部比较，未被排除。 / Section 12 preserves differentiated wisdom; section 13 compares Dancy, Dewey and the existing goal-ground case. Particular constraints do not alone establish a necessary universal basis. Situated judgment and a fixed relation-sensitive rule can retain the local comparison and are not excluded. [CORE-CONSTRAINT-AND-WISDOM.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
 
 ## 依赖与关联 Dependencies and related results
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
 - Related, not a proved adapter / 关联而非已证转换: [conditional-foundation-assessment](conditional-foundation-assessment.md). 已完成候选有自己的有限智慧范围；不能自动升级为本目标。 / The completed candidate has its own bounded wisdom scope, which does not automatically satisfy this target.
+- Related, not a proved adapter / 关联而非已证转换: [risk-certificate-outcome-distinction](risk-certificate-outcome-distinction.md). 局部结果修正必要性检验强度，不构成整个根基的形式转换或完成证明。 / The local result corrects the strength of the necessity test; it is not a formal adapter or completion proof for the full root.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -41,15 +44,19 @@ No dependency on another migrated record is asserted; source imports and supplie
 | statement | [CORE-CONSTRAINT-AND-WISDOM.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) | — |
 | integration | [WISDOM-RESPONSE-NECESSITY.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| integration | [WISDOM-FALLIBLE-JUDGMENT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-推进目的根据及其修订连接，复用现有形成、辨别与实践结果。 / Advance warranted ends and their revision while reusing existing formation, discrimination and practical results.
+固定G0/J/E应用范围，复用已完成形成、评价、情境修订与风险结果，检验实际承担理由作用的关系怎样正当地接续到新情境，及其共同根据是否超出既有目标评价例的局部必要性。 / Fix the G0/J/E application scope and reuse completed formation, evaluation, contextual revision and risk results. Test warranted transfer of reason-bearing relations to new contexts and whether their common grounds extend beyond the existing local goal-evaluation necessity.
 
 Aliases / 别名: —
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-08：在原目标不变、仍开放的前提下，接入已完成目的评价与本轮有限判断修正；更新实际核读并追加的core来源，不重开已完成机制。 / 2026-10-08: retained the unchanged open target while integrating completed goal evaluation and the limited-judgment correction; updated the read and extended core source, without reopening completed mechanisms.
+- 2026-10-08：在同一主研究第12节加入三个原典的有范围比较，区分判断／能力／完整解释；承认忠实对照未被排除，保持完整目标开放。不新增独立成果或数学计数。 / 2026-10-08: added scoped comparisons of three primary texts in the existing study, distinguishing episodes, capacities and full explanation. The faithful comparator is not excluded and the full target remains open; no extra result identity or mathematical count.
+- 2026-10-08：第13节将忠实对照落实到两项原典及既有案例，区分实际关系的保留与普遍根据的争议；收窄下一连接，不新建成果身份、不新增定理。 / 2026-10-08: section 13 makes the faithful comparison concrete through two primary texts and the existing case, distinguishing retained relations from disputed universal grounding. The next connection is narrowed; no new result identity or theorem.

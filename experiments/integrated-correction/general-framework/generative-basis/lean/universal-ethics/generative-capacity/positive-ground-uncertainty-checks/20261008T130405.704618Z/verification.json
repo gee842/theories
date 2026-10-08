@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "utc": "20261008T130405.704618Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "positive-ground-uncertainty-checks/20261008T130405.704618Z",
+  "source_sha256": {
+    "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "PositiveGroundUncertainty": "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd"
+  },
+  "checker_sha256": {
+    "check_positive_ground_uncertainty.py": "c46103abd796f9572a2a646808d530641e0f49b7cc35750c909f8512e0aa33aa",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Positive ground and contributory reason under explicit G0 and direct articulation, without C, global no-loss or a strict whole ordering. The same response can secure some new generative realization in each admitted future while no fixed form is secured across all branches. A finite signed integral finds a positive relational occurrence with supplied generative correspondence; a represented adverse burden remains. Old joint positive possibilities and query access are retained. Acquired evidence distinguishes two live productive hypotheses from a barren one, while branch form remains open and further evidence can discriminate or retract the certificate. The finite visible scope, local law, meaning, units and direct normative articulation remain explicit; no infinite integral, final action permission or universal behavioral convergence is inferred.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "Controls.lean:9:2: error: Tactic `apply` failed: could not unify the conclusion of `contingent_generation_has_positive_ground (fun x => True)\n  prior (generatedInventory m) positive g0`\n  True \u2192 \u2203 q, positive ?h q \u2227 \u00acprior ?h q\nwith the goal\n  \u2200 (branch : Bool), \u2203 q, positive branch q \u2227 \u00acprior branch q\n\nNote: The full type of `contingent_generation_has_positive_ground (fun x => True) prior (generatedInventory m) positive\n  g0` is\n  (\u2200 (h : Bool), True \u2192 \u2203 q, (generatedInventory m).generative q \u2227 (generatedInventory m).realized h q \u2227 \u00acprior h q) \u2192\n    \u2200 (h : Bool), True \u2192 \u2203 q, positive h q \u2227 \u00acprior h q\n\nm : FormationModel\nproductive : 0 < magnitude m\npositive : Bool \u2192 LivingClaim \u2192 Prop\ng0 : G0 (generatedInventory m) positive\n\u22a2 \u2200 (branch : Bool), \u2203 q, positive branch q \u2227 \u00acprior branch q\nControls.lean:15:50: error: Ambiguous term\n  repertoire\nPossible interpretations:\n  Generative.StandardsBridge.repertoire : List (Rule Bool)\n  \n  PositiveGroundUncertainty.repertoire : List (Rule Bool)\nControls.lean:16:19: error: Ambiguous term\n  repertoire\nPossible interpretations:\n  Generative.StandardsBridge.repertoire : List (Rule Bool)\n  \n  PositiveGroundUncertainty.repertoire : List (Rule Bool)\nControls.lean:17:32: error: Ambiguous term\n  repertoire\nPossible interpretations:\n  Generative.StandardsBridge.repertoire : List (Rule Bool)\n  \n  PositiveGroundUncertainty.repertoire : List (Rule Bool)\n"
+}

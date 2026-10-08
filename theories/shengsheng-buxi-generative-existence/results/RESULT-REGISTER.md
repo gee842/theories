@@ -8,25 +8,44 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-15 migrated records: 13 scoped results/arguments/assessments and 2 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+34 migrated records: 32 scoped results/arguments/assessments and 2 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
 | ID | Claim / 主张 | Kind | Recorded status |
 |---|---|---|---|
+| `acquired-binding-compositional-use` | [取得的绑定接通组合使用 / Acquired bindings enter compositional use](records/acquired-binding-compositional-use.md) | theorem | recorded-checked |
 | `aggregate-exit-funding` | [可加退出承担的共同资金界 / Joint funding of additive exit obligations](records/aggregate-exit-funding.md) | theorem | recorded-checked |
 | `alignment-direction-g0-j` | [G0/J 的 AI 对齐方向应用 / AI alignment direction from G0/J](records/alignment-direction-g0-j.md) | argument | reviewed-scoped |
+| `assured-route-criterion` | [三路线中的保证到达条件 / Assured arrival in the three-route process](records/assured-route-criterion.md) | theorem | recorded-checked |
 | `branching-target-uniqueness` | [分支测试下的目标唯一性 / Target uniqueness for branching tests](records/branching-target-uniqueness.md) | theorem | recorded-checked |
+| `branching-tests-bisimulation` | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](records/branching-tests-bisimulation.md) | theorem | recorded-checked |
+| `code-plan-global-support` | [代码共同方案的全局支持 / Global support of coded joint plans](records/code-plan-global-support.md) | theorem | recorded-checked |
 | `conditional-foundation-assessment` | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](records/conditional-foundation-assessment.md) | assessment | reviewed-scoped |
 | `derivation-soundness` | [带前提的推导健全性 / Premise-tracked derivation soundness](records/derivation-soundness.md) | theorem | recorded-checked |
+| `enacted-scene-binding` | [行动形成可供绑定的场景 / Action forms scenes available for binding](records/enacted-scene-binding.md) | theorem | recorded-checked |
 | `exclusive-footprint-support` | [局部排他支持推至全部叶项 / Exclusive footprints support all leaves](records/exclusive-footprint-support.md) | theorem | recorded-checked |
 | `fallible-witness-diagnosability` | [可失实见证的完整辨别条件 / Complete diagnosability with fallible witnesses](records/fallible-witness-diagnosability.md) | theorem | recorded-checked |
 | `finite-basis-common-interpretation` | [有限根基的共同解释 / Common interpretation of a finite basis](records/finite-basis-common-interpretation.md) | theorem | recorded-checked |
+| `finite-continuation-plans` | [有限接续充分性与分支方案 / Finite continuation adequacy and branching plans](records/finite-continuation-plans.md) | theorem | recorded-checked |
+| `finite-joining-tree-lifting` | [有限接合树从指定片段提升 / Finite joining trees lift from specified fragments](records/finite-joining-tree-lifting.md) | theorem | recorded-checked |
+| `finite-trace-transport` | [保步映射传递有限历史 / Step-preserving maps transport finite traces](records/finite-trace-transport.md) | theorem | recorded-checked |
 | `fulfillment-chance-floor` | [实际履行导出同律机会下界 / Fulfillment implies a same-law chance floor](records/fulfillment-chance-floor.md) | theorem | recorded-checked |
+| `functional-joining-common-structure` | [单值接合的共同操作结构 / Common operational structure for functional joining](records/functional-joining-common-structure.md) | theorem | recorded-checked |
+| `joining-questions-survive-encoding` | [接合检验随同一编码保真 / Joining questions remain exact under the same encoding](records/joining-questions-survive-encoding.md) | theorem | recorded-checked |
+| `joint-code-plan-lifting` | [提升有限嵌套共同方案 / Lifting finite nested joint plans](records/joint-code-plan-lifting.md) | theorem | recorded-checked |
+| `joint-decomposition-lifting` | [从整体代码提升共同分解 / Lifting a joint decomposition from a whole code](records/joint-decomposition-lifting.md) | theorem | recorded-checked |
 | `joint-plan-composition` | [局部方案的共同接续 / Joint continuation of local plans](records/joint-plan-composition.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
+| `multivalued-joining-common-structure` | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](records/multivalued-joining-common-structure.md) | theorem | recorded-checked |
+| `organizational-formation-from-generative-comparison` | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](records/organizational-formation-from-generative-comparison.md) | argument | reviewed-scoped |
+| `positive-ground-open-futures` | [可见未来中的确定正面根据与开放形态 / Certain positive ground with open forms in visible futures](records/positive-ground-open-futures.md) | theorem | recorded-checked |
 | `practical-judgment-g0-j` | [G0/J 下的一般实践判断 / Practical judgment under G0/J](records/practical-judgment-g0-j.md) | argument | reviewed-scoped |
+| `relational-generative-comparison` | [共同生成比较所需的关系信息 / Relational information required for a joint-generative comparison](records/relational-generative-comparison.md) | theorem | recorded-checked |
+| `risk-certificate-outcome-distinction` | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](records/risk-certificate-outcome-distinction.md) | theorem | recorded-checked |
+| `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
 | `trace-law-equivalence` | [逐步规律与端点历史等价 / Step laws and endpoint traces](records/trace-law-equivalence.md) | theorem | recorded-checked |
+| `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `wisdom-root` | [核心作为智慧之根的目标 / Core as the root of wisdom target](records/wisdom-root.md) | target | open |
 
@@ -42,8 +61,8 @@
 From the repository root:
 
 ```sh
-python3 _process/research/2026-10-05-generative-foundation-review/root-foundation/build_result_registry.py --check
-python3 _process/research/2026-10-05-generative-foundation-review/root-foundation/build_result_registry.py --search support
+make research-check
+make research-find QUERY=support
 ```
 
 The checker verifies record structure, aliases, links, named-declaration presence, dependency cycles, reviewed source hashes and generated views. It does not compile Lean, prove semantic equivalence, establish empirical correspondence or replace substantive review. / 检查器核对结构、别名、链接、声明存在、依赖环、已读源码哈希及生成一致性；不编译 Lean，不证明语义等价、经验对应或伦理前提。
