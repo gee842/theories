@@ -430,6 +430,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/market-generativity/formal/RegimeTransition.lean)
 
+## metaethical-core-characterization ← positioned-positive-reason
+
+`formal-reuse` — universal_reason 直接调用 every_situated_position_has_reason；其前提 D 由 positioned_articulation_of_articulates 从 A 推出，所需 G0 由 significant_of_grounds 从种子、N_rel、N_std 推出。 / universal_reason directly calls every_situated_position_has_reason; its premise D is derived from A by positioned_articulation_of_articulates, and its G0 from seed, N_rel and N_std by significant_of_grounds.
+
+**Producer output / 上游输出:** 对任一位置、任一回应：有通达且回应在所见范围上确保正面新内容，即有一项支持理由。 / For any position and response: access and secured positive new content on the scope supply a contributory reason.
+
+**Consumer input / 下游输入:** PositionedArticulation access admitted before positive Reason，positive 取不带索引的意义 ∀ p, sig p c。 / PositionedArticulation access admitted before positive Reason, with positive the unindexed significance ∀ p, sig p c.
+
+**Retained conditions / 保留条件:** 所见范围取 Scope（sound 策略的实际执行端点）；库存取框架在 living 读法下的状态库存。 / Admitted continuations are Scope (endpoints of actual executions of a sound policy); the inventory is the frame's state inventory under the `living` reading.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)
+
 ## multivalued-joining-common-structure ← branching-tests-bisimulation
 
 `formal-reuse` — 检查过的同一接合到模态模型适配。 / Checked adapter from the same joining to the modal model.

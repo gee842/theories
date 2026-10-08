@@ -120,7 +120,8 @@ def validate(records):
                 drift.append({'id': ident, 'path': path, 'reviewed_sha256': expected, 'current_sha256': digest(p)})
             for name in ref.get('declarations', []):
                 # Existence aid only: the linked source establishes namespace and meaning.
-                if not re.search(r'^\s*(?:(?:protected|private)\s+)?(?:theorem|lemma|def|abbrev)\s+' + re.escape(name.split('.')[-1]) + r'(?=\s|\{|\(|:)', p.read_text(), re.M):
+                # A declaration may be written with a dotted prefix (`theorem Run.reach`).
+                if not re.search(r'^\s*(?:(?:protected|private)\s+)?(?:theorem|lemma|def|abbrev|structure|inductive)\s+(?:[\w.]+\.)?' + re.escape(name.split('.')[-1]) + r'(?=\s|\{|\(|:)', p.read_text(), re.M):
                     fail(f'declaration not found: {name} in {path}')
         if r.get('canonical_source') not in paths:
             fail('canonical source must be a hashed reference')

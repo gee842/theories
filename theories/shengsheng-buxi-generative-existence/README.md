@@ -20,7 +20,7 @@ Read [the shared method / 非二元方法](unified-2026-10-05/NONDUAL-METHOD.md)
 
 ## 已登记成果 / Registered results
 
-89 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+90 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -80,6 +80,7 @@ Read [the shared method / 非二元方法](unified-2026-10-05/NONDUAL-METHOD.md)
 | [有支持的有限纠正与保护交接 / Supported finite correction and protective handoff](results/records/market-supported-finite-transition.md) | recorded-checked | [RegimeTransition.lean](../../experiments/market-generativity/formal/RegimeTransition.lean) |
 | [材料准备的实际输出 / Actual material preparation output](results/records/material-preparation-output.md) | recorded-checked | [MaterialMaturation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean) |
 | [实际指令接续候选证据 / Executed instructions transport candidate evidence](results/records/mediated-evidence-transport.md) | recorded-checked | [MediatedControl.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean) |
+| [生成之论脊柱上的普遍元伦理核心：G0 由种子与边界中立刻画 / The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](results/records/metaethical-core-characterization.md) | recorded-checked | [MetaethicalCore.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) |
 | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](results/records/multivalued-joining-common-structure.md) | recorded-checked | [ExplanatoryJoiningBranches.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean) |
 | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](results/records/naming-attention-coverage.md) | reviewed-scoped | [README.md](../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md) |
 | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](results/records/open-form-realization-under-revision.md) | recorded-checked | [OpenFutureRevision.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean) |
