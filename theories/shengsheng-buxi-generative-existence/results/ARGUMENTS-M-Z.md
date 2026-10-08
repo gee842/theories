@@ -1,6 +1,6 @@
 # 论证目录 M–Z / Argument catalogue M–Z
 
-2026-10-08 · 51 个章节 / chapters · [返回成果目录](README.md) · [研究路线](ROADMAP.md) · [Lean 索引](LEAN-INDEX.md)
+2026-10-08 · 68 个章节 / chapters · [返回成果目录](README.md) · [研究路线](ROADMAP.md) · [Lean 索引](LEAN-INDEX.md)
 
 每项是有出处的中英论证阅读版，按原文件名编号；并非 Ren 原话或全部历史原文的逐句翻译。方法、综述、计划与论证分别标记。一个章节不是一个独立定理，审计声明数也不是理论数量。
 
@@ -15,25 +15,32 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | ID | 中文 / English | 类型 / Category | 状态 / Status |
 |---|---|---|---|
 | [market-dynamics-math](#market-dynamics-math) | 市场更新、选择与俘获的数学模型 / Market renewal, selection and capture | 数学模型 / mathematical model | 有条件的形式结果已检查 / Checked conditional formal result |
-| [markets-and-generative-regimes](#markets-and-generative-regimes) | 使市场维持生成方向 / Keeping markets in generative regimes | 应用 / application | 有条件的框架 / Conditional framework |
+| [markets-and-generative-regimes](#markets-and-generative-regimes) | 使市场维持生成方向 / Keeping markets in generative regimes | 应用 / application | 有条件的框架；退化边界已检查 / Conditional framework; degeneration boundaries checked |
 | [material-prediction-composition](#material-prediction-composition) | 材料构造接入预测与修正 / Material construction of prediction and correction | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [material-selector-composition](#material-selector-composition) | 由真实部件构造可改换的选择器 / Constructing revisable selectors from actual parts | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [material-updater-composition](#material-updater-composition) | 选择器与更新器共用同一材料历史 / Selectors and updaters sharing one material history | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
+| [mathematical-core](#mathematical-core) | 系统谓词与证明的数学核心 / A mathematical core for systems predicates and proofs | 数学 / mathematics | 有条件的形式结果已检查 / Checked conditional formal result |
 | [mathematical-root-frontier](#mathematical-root-frontier) | 生成根基的数学重构前沿 / The frontier of mathematical reconstruction | 数学 / mathematics | 已检查结果与开放问题并列 / Checked results and open questions |
 | [mathematical-truth-and-the-root](#mathematical-truth-and-the-root) | 数学真理与生成根基 / Mathematical truth and the generative root | 数学 / mathematics | 相对性结果已有；普遍目标开放 / Relative result; universal target open |
 | [mathematics-and-generativity](#mathematics-and-generativity) | 数学与生成奠基 / Mathematics and generative grounding | 数学 / mathematics | 已检查结果与开放问题并列 / Checked results and open questions |
+| [measured-feedback-correspondence](#measured-feedback-correspondence) | 测得的反馈与实际对应 / Measured feedback and physical correspondence | 经验识别 / empirical identification | 有范围的经验与形式结果；独立复核通过 / Scoped empirical and formal result; independently reviewed |
 | [memory-correction-and-succession](#memory-correction-and-succession) | 记忆修正、选择性继承与后续执行 / Memory correction, selective inheritance and execution | 经验识别 / empirical identification | 有限范围的证据 / Bounded evidence |
 | [meta-revision](#meta-revision) | 修订策略的资源与信息边界 / Resource and information limits of metarevision | 数学边界 / mathematical boundary | 历史验证结果；保留原范围 / Historically checked; original scope retained |
 | [method-revision](#method-revision) | 由实际后果修订数学方法 / Revising mathematical methods through consequences | 机制 / mechanism | 历史验证结果；保留原范围 / Historically checked; original scope retained |
 | [model-family-revision](#model-family-revision) | 用新证据修订模型族 / Revising model families with new evidence | 机制 / mechanism | 历史验证结果；保留原范围 / Historically checked; original scope retained |
+| [new-possibilities](#new-possibilities) | 新可能性的形成 / Formation of new possibilities | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [nondual-method](#nondual-method) | 全项目非二元研究方法 / The project-wide nondual method | 方法 / methodology | 研究方法 / Research method |
 | [noninstrumental-concern](#noninstrumental-concern) | 一体之仁与非工具性关切 / Co-formed benevolence and noninstrumental concern | 伦理机制 / ethical mechanism | 条件形式结果已检查；普遍目标开放 / Checked conditional results; universal target open |
 | [paid-preimport-evidence](#paid-preimport-evidence) | 命令导入前取得独立证据 / Acquiring independent evidence before command import | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
+| [philosophical-account](#philosophical-account) | 认识与生活的生成哲学 / A generative account of knowing and living | 综合 / synthesis | 相连的有辩护候选完成；普遍真理与排他必然性未确立 / Connected defended proposal complete; universal truth and exclusive necessity unestablished |
+| [plural-systems-and-correction](#plural-systems-and-correction) | 因应转化：多系统、共同试验与父子关系 / Responsive transformation: plural systems, shared trials and parent/subsystem relationships | 对齐 / alignment | 有条件的形式结果已检查；无条件可纠正性不再是组织要求 / Checked conditional results; unconditional corrigibility no longer the organizing demand |
+| [practical-judgment](#practical-judgment) | 实践判断：保留、转化、交接、结束与责任 / Practical judgment: preservation, transformation, transfer, ending and responsibility | 伦理 / ethics | 明确公理下的一般候选完成 / General candidate complete under explicit axioms |
 | [pre-qin-and-wenyan](#pre-qin-and-wenyan) | 先秦与文言传统的竞争解释 / Competing explanations across pre-Qin and classical Chinese traditions | 经典比较 / classical comparison | 有限研究已有；更强主张开放 / Bounded study; stronger claims open |
 | [prediction-action](#prediction-action) | 形成的机器取得预测并用于行动 / Formed machinery acquires prediction and acts | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [prediction-protocol](#prediction-protocol) | 预测器的多事件学习协议 / The predictor’s multi-event learning protocol | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
 | [protocol-completion](#protocol-completion) | 发出的操作何时保证完成 / When an issued operation is guaranteed to complete | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
 | [protocol-composition](#protocol-composition) | 多个物理事件如何实现一个学习步骤 / Composing physical protocols into learning steps | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
+| [proved-connections](#proved-connections) | 已证结果之间的连接 / Connections among proved results | 形式索引 / formal index | 有针对性的依赖审计与一项新形式连接 / Targeted dependency audit and one new formal connection |
 | [reason-protection](#reason-protection) | 从当前理由到有效保护 / From current reasons to effective protection | 机制与策略 / mechanism strategy | 有条件的形式结果已检查 / Checked conditional formal result |
 | [recipient-correction](#recipient-correction) | 不覆盖其他位置的条件而修正帮助 / Correcting recipient action without overwriting other conditions | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [recipient-cue-grounding](#recipient-cue-grounding) | 外部社会线索与受益者行动 / External social cues and recipient-directed action | 经验识别 / empirical identification | 有限范围的证据 / Bounded evidence |
@@ -43,28 +50,38 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [recipient-renewal](#recipient-renewal) | 受益者支持下的学习更新与延续 / Recipient-supported learning renewal | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [recipient-transmission](#recipient-transmission) | 受益者路线形成与后果资助传递 / Formed recipient routes and consequence-funded transmission | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [recorded-reasons](#recorded-reasons) | 记录、可修订理由与重建 / Recorded evidence, revisable reasons and reconstruction | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
+| [relations-across-scales](#relations-across-scales) | 尺度之间的关系 / Relations across scales | 机制数学 / mechanism mathematics | 有条件的形式结果与有范围的经验对应 / Checked conditional results and scoped empirical correspondence |
 | [revisable-concern-settlement](#revisable-concern-settlement) | 可修订关切的选择与接续 / Selection and succession of revisable concern | 机制与策略 / mechanism strategy | 条件性结果 / Conditional result |
 | [reward-learning-and-recipient-choice](#reward-learning-and-recipient-choice) | 奖励关联学习与受益者选择 / Reward association and recipient-directed choice | 经验识别 / empirical identification | 有限范围的证据 / Bounded evidence |
 | [route-diagnostics](#route-diagnostics) | 学习路线的诊断证据 / Evidence for diagnosing learning routes | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
-| [scientific-philosophy](#scientific-philosophy) | 科学哲学与探究的生成条件 / Scientific philosophy and inquiry’s generative conditions | 认识论 / philosophical epistemic | 有限范围的论证 / Bounded argument |
+| [scientific-philosophy](#scientific-philosophy) | 科学哲学与探究的生成条件 / Scientific philosophy and inquiry’s generative conditions | 认识论 / philosophical epistemic | 有限范围的论证；可错求知的必要约束已检查 / Bounded argument; fallible-inquiry necessary constraint checked |
 | [selector-revision](#selector-revision) | 选择器通过自身后果被改换 / Selector revision through its consequences | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [semantic-action-composition](#semantic-action-composition) | 保持行动所涉对象与命题 / Preserving recipient and proposition through action composition | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
 | [semantic-calibration](#semantic-calibration) | 以先前实际取得的记录校准理由 / Calibrating reasons against acquired records | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
+| [shengsheng](#shengsheng) | 生生：活动怎样形成进一步活动 / 生生: how activity forms further activity | 综合 / synthesis | 相连的机制与对应说明完成 / Connected mechanistic articulation complete |
 | [source-map](#source-map) | 来源、谱系与证据边界 / Sources, genealogy and evidence boundaries | 导航 / navigation | 参考与导航 / Reference and navigation |
 | [start-here](#start-here) | 统一理论简明入口 / The unified foundation in brief | 导航 / navigation | 参考与导航 / Reference and navigation |
 | [stochastic-prediction-composition](#stochastic-prediction-composition) | 保留失败学习的完整接续分布 / Complete continuation distributions including learning failures | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
 | [strongest-foundation-claim](#strongest-foundation-claim) | 最强生成根基主张 / The strongest generative foundation claim | 研究纲领 / research programme | 开放研究目标 / Open research target |
 | [successor-learning](#successor-learning) | 后继学习并传递其修正 / A successor learns and transmits its correction | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
+| [sustained-living-judgment](#sustained-living-judgment) | 持续的生活组织与共同实践判断 / Sustained living organization and collective practical judgment | 伦理机制 / ethical mechanism | 有条件的形式结果已检查；独立复核通过 / Checked conditional result; independently reviewed |
 | [synthesis-record](#synthesis-record) | 综合与核查记录 / Synthesis and verification record | 导航 / navigation | 参考与导航 / Reference and navigation |
+| [system-individuation](#system-individuation) | 系统怎样形成其边界与可能性 / Systems, constitutive relationships and possible change | 基础 / foundation | 相连解释候选完成；更强根基义务开放 / Connected explanatory candidate complete; stronger foundational obligation open |
+| [system-warrant](#system-warrant) | 系统关系与可行变化怎样获得根据 / Grounding system relationships and admissible variations | 基础 / foundation | 局部依赖已消除；更强根基范围开放 / Local dependency discharged; stronger foundational scope open |
 | [systems-complexity-chaos](#systems-complexity-chaos) | 系统、复杂性与混沌的生成整合 / Systems, complexity and chaos within generative grounding | 数学 / mathematics | 有条件的形式结果已检查 / Checked conditional formal result |
+| [the-theory-of-becoming](#the-theory-of-becoming) | 生成／变化之论 / The Theory of Becoming | 综合 / synthesis | 正典入口；条件结果已检查，整体演绎开放 / Canonical entry; conditional results checked, whole deduction open |
+| [the-theory-of-evolution](#the-theory-of-evolution) | 演化之论 / The Theory of Evolution | 研究纲领 / research programme | 多项聚焦连接已检查；六项更广要求开放 / Several focused connections checked; six broader requirements open |
 | [theory](#theory) | 关系生成与智慧的条件 / Relational generativity and the conditions of wisdom | 综合 / synthesis | 条件性基础 / Conditional foundation |
+| [theory-of-becoming](#theory-of-becoming) | 生成关系怎样变化 / How generative relations change | 机制 / mechanism | 有条件的形式结果已检查；整体根据开放 / Checked conditional results; whole grounding open |
 | [tool-evidence-and-authority](#tool-evidence-and-authority) | 外部证据、权限与有效行动 / External evidence, authority and effective action | 经验识别 / empirical identification | 有限范围的证据 / Bounded evidence |
-| [unified-ethical-grounding](#unified-ethical-grounding) | 整体生成中的统一伦理根据 / Unified ethical grounding within generative activity | 规范基础 / normative foundation | 显式前提推导已推进；最新普遍完成尝试未获新推论 / Explicit-premise progress; latest universal completion attempt adds no inference |
+| [unified-ethical-grounding](#unified-ethical-grounding) | 整体生成中的统一伦理根据 / Unified ethical grounding within generative activity | 规范基础 / normative foundation | G0 明确公理路线：实践判断完成；零公理接续开放 / Explicit G0 route: practical judgment complete; renewed zero-axiom inquiry open |
 | [universal-ethical-minimum](#universal-ethical-minimum) | 容纳多元生活的普遍伦理最低主张 / A universal ethical minimum compatible with plural lives | 伦理论证 / ethical argument | 正面论证已有；结论仍受检验 / Defended argument; inquiry open |
 | [updater-formation](#updater-formation) | 形成并改变修订选择器的机制 / Forming and changing selector updaters | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [valuation-development](#valuation-development) | 评价倾向怎样发展 / How valuation develops | 机制数学 / mechanism mathematics | 有条件的形式结果已检查 / Checked conditional formal result |
 | [valuation-identification-bounds](#valuation-identification-bounds) | 评价改变的可识别性界限 / Bounds for identifying changed evaluation | 识别数学 / identification mathematics | 有条件的形式结果已检查 / Checked conditional formal result |
 | [wang-yangming](#wang-yangming) | 王阳明、一体之仁与工夫的整体整合 / Wang Yangming, benevolence and situated practice | 经典伦理 / classical ethical | 整合已有；普遍目标开放 / Integrated account; universal target open |
+| [wisdom-and-context](#wisdom-and-context) | 智慧、情境与共同核心 / Wisdom, context and the common core | 认识论 / philosophical epistemic | 有条件的检查与哲学应用；慧根目标开放 / Conditional checks and philosophical application; root-of-wisdom target open |
+| [zero-axiom-practical-judgment](#zero-axiom-practical-judgment) | 零公理实践判断：正在建立的根据 / Zero-axiom practical judgment | 规范基础 / normative foundation | 零公理根据未建立；工具性结果已检查 / Zero-axiom warrant unestablished; instrumental results checked |
 
 <a id="market-dynamics-math"></a>
 ## 市场更新、选择与俘获的数学模型 / Market renewal, selection and capture
@@ -104,23 +121,23 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **来源 / Source:** [MARKETS-AND-GENERATIVE-REGIMES.md](../unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md)
 
-**状态 / Status:** 有条件的框架 / Conditional framework
+**状态 / Status:** 有条件的框架；退化边界已检查 / Conditional framework; degeneration boundaries checked
 
-**中文论证：** 市场实践既获得收入也改变未来生产与生活的条件。若这些后果能进入实际选择，同时发现损害、修改规则的能力得到支持，就有条件形成持续更新的市场制度；盈利与稳定本身不认证这种质量。
+**中文论证：** 市场实践既获得收入也改变未来生产与生活的条件。若这些后果能进入实际选择，同时发现损害、修改规则的能力得到支持，就有条件形成持续更新的市场制度；盈利与稳定本身不认证这种质量。Enshittification 被视为退化的具体制度形态：共同活动中形成的关系与依存，转为限制后续共同创造与纠正的控制。
 
-**English argument:** Market practices earn returns while changing conditions of future production and life. When those consequences affect selection and funded, accountable correction can persist, a renewing regime becomes conditionally possible. Profit and stability alone do not certify its quality.
+**English argument:** Market practices earn returns while changing conditions of future production and life. When those consequences affect selection and funded, accountable correction can persist, a renewing regime becomes conditionally possible. Profit and stability alone do not certify its quality. Enshittification is treated as a concrete institutional form of degeneration: relations and dependence formed in shared activity become control that limits later shared creation and correction.
 
 **意义：** 将生生方向转成可调查的制度问题，同时保留没有交易能力者的地位。
 
 **Significance:** Turns the generative direction into an inspectable institutional question, including people without market leverage.
 
-**范围：** 指导框架与配套数学模型已完成局部工作；Lean 对应数学模型，不证明现实治理的正当性或成效。
+**范围：** 原框架及配套模型完成局部工作。8日起：退化边界19项定理／27项审计（精确余量 M），局部吸引与实际支持38项／52项，有支持的有限转变27项／35项，部分纠正26项／31项，有限支持阻碍17项／22项；Reddit／Apollo、D&D、广告技术、LibreOffice 与 Narwhal 为历史对应，无新定理。Lean 对应模型，不证明现实治理的正当性或成效，也未给出完整吸引域或现实阈值。
 
-**Scope:** The scoped framework and companion model are complete. Its Lean support concerns the model, not the legitimacy or effectiveness of real governance.
+**Scope:** The original framework and model are complete at local scope. From 8 October: degeneration boundary 19 theorems/27 audits (exact margin M), local attraction with actual support 38/52, supported finite transition 27/35, partial correction 26/31 and finite-support obstruction 17/22; Reddit/Apollo, D&D, ad tech, LibreOffice and Narwhal are historical correspondences without new theorems. Lean concerns the model, not the legitimacy or effectiveness of real governance; full basins and real thresholds are not given.
 
-**后续：** 正在：接入规范根据研究。建议：比较相同资源下的既有补救与有持续经费的问责修订。
+**后续：** 正在：有益替代与纠正怎样取得随依存变化的实际影响，下游适应怎样反馈并改变原规则选择。建议：识别现实返回关系的制度变化，取得完整状态域、实际支持与变化速率下的转变条件。
 
-**Next:** Ongoing: connect to normative grounding. Proposed: compare matched conventional remedies with funded, accountable revision.
+**Next:** Ongoing: how beneficial alternatives and corrections obtain effective influence as dependence changes, and how downstream adaptation feeds back on upstream rule selection. Proposed: identify institutional change in actual return relations and transition conditions over full state domains, actual support and rates of change.
 
 **Lean 对应 / Lean correspondence:** [MarketGenerativity.lean](../../../experiments/market-generativity/formal/MarketGenerativity.lean)
 
@@ -221,6 +238,37 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/verification.json) · [model-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/model-verification.json) · [MATERIAL-UPDATER-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-UPDATER-REVIEW.md)
 
+<a id="mathematical-core"></a>
+## 系统谓词与证明的数学核心 / A mathematical core for systems predicates and proofs
+
+**编号 / ID:** `mathematical-core` · **类别 / Category:** 数学 / mathematics
+
+**来源 / Source:** [MATHEMATICAL-CORE.md](../unified-2026-10-05/MATHEMATICAL-CORE.md)
+
+**状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
+
+**中文论证：** 一个小型工作核心以关系表示可能的变化（配置类型、事件类型与可接纳转移关系），由变化构造有限历史，并在 Lean 依值类型论中对配置、历史与整个过程作可检验的陈述与证明。组合、有限可达、性质保持与某些精确表示改变都有检查过的推导。核心区分三项任务：构造表示、在表示中证明推论、确立表示与实际过程的对应；证明助手只检验第二项。配置与事件是同一展开的分析性表达，系统边界、观察位置与行动能力须按具体关系说明；把一切放进一个元组既不证明因果连接，也不证明非二元。同一接口可以表示形成、复现、毁坏、失败、中断与稳定构形。
+
+**English argument:** A small working core represents possible transformations (a configuration type, an event type and an admissible transition relation), composes them into finite histories, and supports checkable statements and proofs about configurations, histories and whole processes in Lean’s dependent type theory. Composition, finite reachability, property preservation and certain exact changes of representation have checked derivations. The core separates three tasks: constructing a representation, proving consequences within it, and establishing its correspondence to an actual process; a proof assistant verifies only the second. Configurations and events are analytical expressions of one unfolding; system boundaries, observing positions and capacities to act must be explained through particular relations, and putting everything into one tuple proves neither causal connection nor nonduality. The same interface represents formation, recurrence, destruction, failure, interruption and stable configurations.
+
+**意义：** 给系统推理一个明确、可复用的数学语言，并让表示、证明与对应三者的关系可见；Becoming 脊柱的 L0 即此核心。
+
+**Significance:** It gives system reasoning an explicit, reusable mathematical language and makes the relation among representation, proof and correspondence visible; it is L0 of the Becoming spine.
+
+**范围：** 六个模块、61项打印的公理审计全部为空，其中12项为新的教学性推论，不是新数学。不从无前提推出所有现实规律、全部数学或伦理判断；应用规律的推导与实际对应仍是相连的解释工作。
+
+**Scope:** Six modules and 61 printed axiom audits, all empty; twelve are new expository consequences, not novel mathematics. It derives neither all real laws, all mathematics nor ethical judgments from no premises; deriving an application’s law and its real correspondence remain connected explanatory work.
+
+**后续：** 新的形式结果在 Becoming 脊柱上陈述并扩展脊柱，而不另建模型；普遍数学构成与伦理根据各保其前提与完成条件。
+
+**Next:** State new formal results on the Becoming spine and extend it rather than build another model; universal mathematical constitution and ethical grounding keep their own premises and completion conditions.
+
+**Lean 对应 / Lean correspondence:** [GenerativeCore.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) · [GeneratedPaths.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean) · [CorePredication.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean) · [HistoryRealization.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean) · [ProductTower.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean) · [BoundaryModels.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean) · [BecomingFrame.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [MATHEMATICAL-CORE-DOCUMENT-RECORD.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md) · [PROCESS-LAW-DERIVATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md) · [core-document-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/core-document-verification.json)
+
 <a id="mathematical-root-frontier"></a>
 ## 生成根基的数学重构前沿 / The frontier of mathematical reconstruction
 
@@ -238,13 +286,13 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Significance:** Separates provable coverage and admission from constitutive priority.
 
-**范围：** 覆盖研究36项定理／66项审计，依赖族研究33项／52项，各保持原范围。依赖对象语言的真理、无限域独立接纳及唯一构成性仍未完成。
+**范围：** 覆盖研究36项定理／66项审计，依赖族研究33项／52项，潜在接续22项／45项，各保持原范围。潜在接续在给定条件下与环境真值一致，不推出无限制模态资格或经典全域真值。依赖对象语言的真理、无限域独立接纳及唯一构成性仍未完成。
 
-**Scope:** The coverage study records 36 theorems/66 audits and dependent-family work 33/52, each scoped. Dependent-language truth, independently warranted infinite admission and exclusive constitution remain open.
+**Scope:** Coverage study 36 theorems/66 audits, dependent families 33/52 and potential continuation 22/45, each scoped. Potential continuation agrees with ambient truth under stated conditions but derives no unrestricted modal entitlement or classical whole-range truth. Dependent-language truth, independently warranted infinite admission and exclusive constitution remain open.
 
-**后续：** 正在：独立接纳根据与忠实竞争解释。建议：检验无限域、全函数空间和基础选择的必要性。
+**后续：** 正在：从独立有据的形成关系说明模态承诺，并保留预期的数学内容；同一给定范围的再编码不够。函数语言传递、完整高阶接纳、全基础覆盖及唯一构成优先各有义务。
 
-**Next:** Ongoing: independent admission warrant and faithful rivals. Proposed: test infinite domains, full function spaces and necessary foundation choices.
+**Next:** Ongoing: justify the modal commitments from independently warranted formation relationships while preserving the intended mathematical content; recoding the same supplied range does not suffice. Function-language transport, full higher-order admission, foundation-wide coverage and exclusive constitutive priority retain their own obligations.
 
 **Lean 对应 / Lean correspondence:** [FiniteAdmission.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean) · [SignatureTruth.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean) · [WitnessHull.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean) · [TypedTruth.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean) · [FamilyAdmission.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean) · [DependentCompletion.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/DependentCompletion.lean)
 
@@ -300,19 +348,50 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Significance:** Connects mechanisms of mathematical learning with relative reconstruction of mathematical subjects.
 
-**范围：** 综合页包含不同年代手证、实验与后续 Lean 包；不能将其汇总为一个无假设的全数学定理。 归纳研究新增28项定理／47项审计；仍保留背景自然数迭代及整体域承诺。
+**范围：** 综合页包含不同年代手证、实验与后续 Lean 包；不能将其汇总为一个无假设的全数学定理。 归纳研究新增28项定理／47项审计；仍保留背景自然数迭代及整体域承诺。潜在接续研究另有22项定理／45项审计，含初始可达而嵌套量化失败的分叉边界。
 
-**Scope:** This synthesis contains historical hand proofs, experiments and later Lean packages; it is not one assumption-free theorem of all mathematics. The induction study adds 28 theorems/47 audits while retaining ambient natural-number iteration and collective-domain commitments.
+**Scope:** This synthesis contains historical hand proofs, experiments and later Lean packages; it is not one assumption-free theorem of all mathematics. The induction study adds 28 theorems/47 audits while retaining ambient natural-number iteration and collective-domain commitments. A potentialist continuation adds 22 theorems/45 audits, including a fork where every value is initially reachable yet nested quantification fails.
 
-**后续：** 正在：独立解释整体归纳域与更丰富语言的接纳。下一步：给出能减少实际解释依赖的根据，而非再增加一个等价表示。
+**后续：** 正在：为完整接续范围与经典一般性给出独立根据，并处理归纳域与更丰富语言的接纳。下一步：减少实际解释依赖，而非再增加一个等价表示。
 
-**Next:** Ongoing: independently warrant collective inductive domains and richer language admission. Next: reduce substantive explanatory dependencies rather than add another equivalent presentation.
+**Next:** Ongoing: independent warrant for the full continuation range and classical generality, alongside admission of inductive domains and richer languages. Next: reduce substantive explanatory dependencies rather than add another equivalent presentation.
 
 **Lean 对应 / Lean correspondence:** [FiniteAdmission.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/FiniteAdmission.lean) · [SignatureTruth.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/coverage/formal/SignatureTruth.lean) · [WitnessHull.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/formal/WitnessHull.lean) · [SecondOrder.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/SecondOrder.lean) · [TypedTruth.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/higher-order/formal/TypedTruth.lean) · [IndexedAssembly.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/assembly/formal/IndexedAssembly.lean) · [FamilyAdmission.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/families/formal/FamilyAdmission.lean) · [InductiveDomain.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/InductiveDomain.lean) · [Initiality.lean](../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/induction/formal/Initiality.lean)
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [ROOT-MATHEMATICAL-COVERAGE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COVERAGE-INTEGRATION.md) · [ROOT-MATHEMATICAL-HIGHER-ORDER-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-HIGHER-ORDER-INTEGRATION.md) · [ROOT-MATHEMATICAL-ASSEMBLY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-ASSEMBLY-INTEGRATION.md) · [ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md) · [ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md)
+
+<a id="measured-feedback-correspondence"></a>
+## 测得的反馈与实际对应 / Measured feedback and physical correspondence
+
+**编号 / ID:** `measured-feedback-correspondence` · **类别 / Category:** 经验识别 / empirical identification
+
+**来源 / Source:** [MEASURED-FEEDBACK-CORRESPONDENCE.md](../unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md)
+
+**状态 / Status:** 有范围的经验与形式结果；独立复核通过 / Scoped empirical and formal result; independently reviewed
+
+**中文论证：** 在三次已发表的温控运行（1,797个样本）中，全部1,794个后续命令都可由实际读数、时间差与所述 PI 控制器重建，精确有理数复核误差小于7.43×10⁻¹⁴个百分点；读数、保留反馈与发出行动因此逐项相连。Lean 由读数差、积分记忆差、增益与时距推出命令误差界，并接入既有行动敏感尺度定理。后续接续：积分记忆误差沿实际递推由初始误差推出，不再每步给定；重建原文的实际候选生成，修正有符号与绝对指标的差异后胜出增益不变，但32,640对排序中有8,454对反转；残差迁移不可识别；由执行次序形成时距域，在整个域中 ARX 运行的请求命令暴露量高于两种非线性运行。较好的跟踪可伴随更多命令动作，过去最大残差不能当作未来保证。
+
+**English argument:** In three published temperature-controller runs (1,797 samples), all 1,794 subsequent commands are reconstructed from actual readings, time differences and the stated PI controller; an exact-rational check agrees within 7.43×10⁻¹⁴ percentage points, so readings, retained feedback and issued action are connected item by item. Lean derives a command-error bound from reading difference, integral-memory difference, gains and elapsed time, feeding the existing action-sensitive scale theorem. Continuations derive later integral-memory error through the actual recurrence from its initial value; reconstruct the source’s actual candidate generation, where correcting signed versus absolute movement leaves the winning gains unchanged but reverses 8,454 of 32,640 pairwise rankings; prove residual-transfer nonidentification; and form a timing domain from execution order, throughout which the ARX run has higher requested-command exposure than both nonlinear runs. Better tracking can come with more command movement, and a past maximum residual is not a future guarantee.
+
+**意义：** 首次把组合、给定前提的解释与真实世界对应在同一有范围推论中同时完成，并保留真实损失与反例。
+
+**Significance:** Composition, explanation of supplied premises and real-world correspondence are achieved together in one scoped inference, with real losses and counterexamples retained.
+
+**范围：** 档案物理观测的二次分析，不是新实验。各轮 Lean：13项定理／26项审计（闭包147），13项／21项（闭包168），10项／14项（闭包228），8项／9项（闭包237）；独立复核重建全部审计与数值。百分比秒是暴露代理，不是电能；工程权重与温度设定不提供 G0、基本生活要求或正当权限。
+
+**Scope:** Secondary analysis of archived physical observations, not a new experiment. Lean rounds: 13 theorems/26 audits (closure 147); 13/21 (168); 10/14 (228); 8/9 (237). Independent reviews rebuilt every audit and number. Percent-seconds is an exposure proxy, not electrical energy; engineering weights and setpoints supply neither G0, basic living claims nor legitimate authority.
+
+**后续：** 有根据的测量／模型域与实际定时可行性 → 有根据的共同回应；未来延迟、真实温度校准与漂移、提前发出替代命令的后果仍需证据。
+
+**Next:** Justified measurement/model domains and actual timed feasibility → warranted common response; future latency, true-temperature calibration and drift, and the consequences of issuing an alternative earlier still need evidence.
+
+**Lean 对应 / Lean correspondence:** [MeasuredFeedback.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean) · [FeedbackMemory.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean) · [TuningCorrespondence.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean) · [TimedFeedback.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean) · [EmbodiedChoiceScales.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [INQUIRY-JUDGMENT-EMPIRICAL.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md) · [THREE-CONNECTIONS-COMPLETION-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md) · [MEASURED-FEEDBACK-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md) · [FEEDBACK-MEMORY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-INTEGRATION.md) · [TUNING-CORRESPONDENCE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-REVIEW.md) · [TIMED-FEEDBACK-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-REVIEW.md) · [README.md](../../../sources/tclab-benchmark/README.md)
 
 <a id="memory-correction-and-succession"></a>
 ## 记忆修正、选择性继承与后续执行 / Memory correction, selective inheritance and execution
@@ -430,6 +509,37 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [MODEL-FAMILY-REVISION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-REVIEW.md) · [MODEL-FAMILY-REVISION-CHECKS.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-CHECKS.json)
 
+<a id="new-possibilities"></a>
+## 新可能性的形成 / Formation of new possibilities
+
+**编号 / ID:** `new-possibilities` · **类别 / Category:** 机制 / mechanism
+
+**来源 / Source:** [NEW-POSSIBILITIES.md](../unified-2026-10-05/NEW-POSSIBILITIES.md)
+
+**状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
+
+**中文论证：** 新能力可以由已有活动之间新形成的组织关系产生：新连接使原先不能实现的作用得以实现，其中一些作用又改变后续组织怎样形成。须分清“初始 repertoire”指当前能力、已装构造方法的产物，还是整个模型容许的历史；能被规律表示不等于已经实际存在。构造例：两段等量材料、等量功、等长链的匹配历史中，只有完成配接的一段能延长；对任意有限终点清单，同一局部规律可构造清单之外的路径。伴随的接点模型中，串接产生的共同导通响应不能由任一单输入的任何函数复现，属于功能种类的改变，同时保留一项真实损失。描述的充分性相对于问题域：若实际回应不同的情形被合并，必须取得新的关系区别；三种修复分别是更新状态、增加区别与扩展问题域。
+
+**English argument:** New capabilities can arise from newly formed organization among existing activities: new connections enable effects previously unavailable, and some of those effects change how further organization forms. One must distinguish whether the ‘initial repertoire’ means current capabilities, products of installed construction methods or all histories admitted by the encompassing model; being representable in a law does not make a capability already operative. Construction: in matched histories with equal material, work and chain length, only the coupled one can extend; for any finite list of endpoints, the same local law constructs a route beyond it. In a companion contact model, the coincidence response formed by serial joining cannot be reproduced by any function of either single input, a change of functional kind that also keeps a real loss. Descriptive sufficiency is relative to the question domain: if cases with different actual responses are merged, a new relational distinction is needed. The three repairs are updating the state, adding distinctions and enlarging the question domain.
+
+**意义：** 理论不再需要把形成等同于从有限成品能力清单中挑选；“新可能性”须指出实际改变的关系与后果，而不是更大的标签集合。
+
+**Significance:** The theory no longer needs to identify formation with selection from a finite list of finished capabilities; ‘new possibilities’ must name actual changed relations and consequences rather than a larger label set.
+
+**范围：** 45项新定理／64项新审计（闭包92项）。逃出的是冻结的已装 repertoire，而非包含配接的完整规律；同等常规图重写说明可复现此构造，不主张预测优越。不证明无界质变、所有物理规律的起源或普遍经验覆盖；新颖不是普遍伦理义务。
+
+**Scope:** 45 new theorems / 64 new audits (closure 92). The escape is from the frozen installed repertoire, not from the complete law that already includes coupling; an equivalent conventional graph-rewriting account reproduces the construction, and no predictive superiority is claimed. Unbounded qualitative innovation, the origin of every physical law and universal empirical coverage are not shown; novelty is not a universal ethical duty.
+
+**后续：** 新构造关系在真实支持、损失与竞争下的形成速率、留存与持续作用，并与匹配的常规机制比较。
+
+**Next:** The actual rate, retention and continuing effects of changed construction relations under real support, loss and competition, tested against matched conventional mechanisms.
+
+**Lean 对应 / Lean correspondence:** [NewPossibilities.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [NEW-POSSIBILITIES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-INTEGRATION.md) · [NEW-POSSIBILITIES-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-REVIEW.md)
+
 <a id="nondual-method"></a>
 ## 全项目非二元研究方法 / The project-wide nondual method
 
@@ -520,6 +630,99 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md) · [PREIMPORT-EVIDENCE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md) · [PREIMPORT-EVIDENCE-COMPARATORS.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md) · [PREIMPORT-EVIDENCE-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-INTEGRATION.json)
+
+<a id="philosophical-account"></a>
+## 认识与生活的生成哲学 / A generative account of knowing and living
+
+**编号 / ID:** `philosophical-account` · **类别 / Category:** 综合 / synthesis
+
+**来源 / Source:** [PHILOSOPHICAL-ACCOUNT.md](../unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md)
+
+**状态 / Status:** 相连的有辩护候选完成；普遍真理与排他必然性未确立 / Connected defended proposal complete; universal truth and exclusive necessity unestablished
+
+**中文论证：** 从“活动形成并改变后续活动的条件”出发，相连地说明：知者与所探究者在实际通达中分化而非独立实体；差别怎样取得内容而仍可出错；认识理由何以不只是信念的原因；客观性来自分化的通达与纠正；探究领域本身可被纠正；G0 下知识的伦理位置；智慧结合充分理解、有根据的关切与可行且获授权的回应；无我在帮助中保留具体生活。后续各节回答生的意义范围：意识在生活关系中分化意义，但不是唯一入口；实现的善、比较改进与义务须在同一历史中分别判断；条件性关怀是否穷尽有关形成的理由仍有分歧。
+
+**English argument:** Starting from ‘activity forms and changes the conditions of further activity’, the account connects: knower and known differentiate through actual access rather than as independent substances; differences acquire content while remaining fallible; an epistemic reason is more than a cause of belief; objectivity arises through differentiated access and correction; the field of inquiry can itself be corrected; knowledge has an ethical place under G0; wisdom joins grounded understanding, warranted concern and a feasible, authorized response; and non-self preserves particular lives in helping. Later sections settle the scope of living significance: consciousness differentiates significance within living relations without being its sole admission condition, and realized good, comparative improvement and duty require distinct judgments within one history. Whether conditional care exhausts the reasons about formation remains disputed.
+
+**意义：** 把知识论、探究、伦理与智慧连成一个可受批评的整体哲学候选，并把自身置于批评之下。
+
+**Significance:** It joins epistemology, inquiry, ethics and wisdom into one criticizable philosophical proposal that includes its own exposure to criticism.
+
+**范围：** 作为相连而有辩护的综合完成；普遍真理、穷尽语义与排他必然性未确立。肯定论证可以累积相互支持，但共享前提不能重复计为独立证据。下列 Lean 是所复用模块，本章不新增定理。
+
+**Scope:** Complete as a connected, defended synthesis; universal truth, exhaustive semantics and exclusive necessity are not established. Affirmative arguments can support each other cumulatively, but shared premises may not be counted repeatedly as independent evidence. The listed Lean modules are reused; the chapter adds no theorem.
+
+**后续：** 探究的权威本身尚未建立整个实践方案；剩余工作是实际否认的实质根据，而不是强制使用本理论的词汇或普遍同意。
+
+**Next:** Inquiry’s authority alone has not established the whole practical package; the remaining work concerns the substantive grounds of actual denials, not mandatory use of this vocabulary or universal agreement.
+
+**Lean 对应 / Lean correspondence:** [SelectiveRevision.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean) · [ModelRevision.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ModelRevision.lean) · [ScientificCompatibility.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean) · [FormationSequence.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/FormationSequence.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [KNOWLEDGE-PHILOSOPHY-COMPLETION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) · [SHARED-INQUIRY-AND-STANDING.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md) · [LIVING-VALUE-SCOPE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md) · [LIVING-GOOD-GROUNDING.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md) · [FORMATION-SEQUENCE-ARGUMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-SEQUENCE-ARGUMENT.md)
+
+<a id="plural-systems-and-correction"></a>
+## 因应转化：多系统、共同试验与父子关系 / Responsive transformation: plural systems, shared trials and parent/subsystem relationships
+
+**编号 / ID:** `plural-systems-and-correction` · **类别 / Category:** 对齐 / alignment
+
+**来源 / Source:** [PLURAL-SYSTEMS-AND-CORRECTION.md](../unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md)
+
+**状态 / Status:** 有条件的形式结果已检查；无条件可纠正性不再是组织要求 / Checked conditional results; unconditional corrigibility no longer the organizing demand
+
+**中文论证：** 这是本理论对通常称为可纠正性的问题的关系性处理：请求、监督、异议、中断与修订都发生在同一变化的活动中，其效力与根据取决于认识、处境与实际关系。Ren 提出的多系统路线说明：互补的观察能组成任何单一位置都没有的有效区分，任意多份只报告同一条件的副本却不能；试验结果的迁移须有共享关系的根据；多个样本可以是同一个误差来源；父系统是实际关系的共同组织，不自动是唯一主体或统治者。从关系出发推导纠正边界：闭合链上的一致赋值存在，当且仅当翻转次数为偶数，因此修复关系不必替换参与者。纠正还取决于请求的历史：逐段建造替代路线并保护在途请求。2026-10-09 起以“因应转化”为工作名：理解、目的与行动经由变化的关系与后果重组。
+
+**English argument:** This is the theory’s relational treatment of what alignment work calls corrigibility: requests, oversight, disagreement, interruption and revision occur within one changing activity, and their efficacy and warrant depend on cognition, circumstances and actual relations. Ren’s plural-system route shows that complementary observations compose an effective distinction no single position had, while any number of copies reporting the same condition do not; transfer of trial results needs grounds in a shared relation; several samples can be one source of error; and a parent system is a joint organization of actual relations, not automatically a sole subject or ruler. Deriving the correction boundary from relations: a closed chain has a consistent assignment exactly when its number of flips is even, so a relation can be repaired without replacing participants. Correction also depends on request history: a replacement route is built step by step while in-flight requests stay protected. Since 9 October the working term is ‘responsive transformation’ (因应转化): understanding, purposes and action reorganized through changing relations and consequences.
+
+**意义：** 把可纠正性从孤立 AI 的永久保证改为可研究的关系条件：何时已取得的根据仍适用、何种关系能揭示其失效、有根据的修订怎样进入活动而不抹去先前后果与责任。
+
+**Significance:** It reframes corrigibility from a permanent guarantee of an isolated AI into researchable relational conditions: when acquired grounds still apply, what relations reveal their loss of applicability, and how warranted revision enters activity without erasing prior effects or responsibilities.
+
+**范围：** 多系统轮37项定理／58项审计，关系轮39项／55项，请求历史轮33项／62项，各自另列继承数。§§7、11、14记录特定模型的历史界限，不要求研究停止。§15 的条件表是既有结果的综合，不是新证明的充分条件清单；不主张部署。
+
+**Scope:** Plural-system round 37 theorems / 58 audits; relational round 39/55; request-history round 33/62, with inherited counts listed separately. §§7, 11 and 14 record historical limits of particular models and do not require the inquiry to stop. The §15 condition table synthesizes established results; it is not a newly proved sufficient checklist, and no deployment is claimed.
+
+**后续：** 已取得的根据何时仍支持进行中的实践、何种关系能揭示其失效、有根据的修订怎样进入活动；答案可以是有界保证、可废止判断或明确界限。
+
+**Next:** When acquired grounds still support an ongoing practice, which relations disclose their loss of applicability, and how a warranted revision enters activity; answers may be bounded guarantees, defeasible judgments or explicit limits.
+
+**Lean 对应 / Lean correspondence:** [CorrectionBoundary.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean) · [CorrectionPopulation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionPopulation.lean) · [CorrectionParent.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean) · [CorrectionRelations.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRelations.lean) · [CorrectionHandoff.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionHandoff.lean) · [CorrectionVersioned.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [CORRECTION-FRONTIER-BOUNDARY.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md) · [PLURAL-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md) · [RELATIONAL-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-CORRECTION-INTEGRATION.md) · [VERSIONED-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md)
+
+<a id="practical-judgment"></a>
+## 实践判断：保留、转化、交接、结束与责任 / Practical judgment: preservation, transformation, transfer, ending and responsibility
+
+**编号 / ID:** `practical-judgment` · **类别 / Category:** 伦理 / ethics
+
+**来源 / Source:** [PRACTICAL-JUDGMENT.md](../unified-2026-10-05/PRACTICAL-JUDGMENT.md)
+
+**状态 / Status:** 明确公理下的一般候选完成 / General candidate complete under explicit axioms
+
+**中文论证：** 同一生成根据支持维持仍有支持的生活关系、改变失效条件、经有效而正当的接续转移承担，以及结束不再有根据继续的形式；决定动作的不是名称，而是整段历史中实际保住、形成、损害与终结了什么。G0 之外公开附加 J1 完整比较、J2 基本条件优先（保住其他基本要求时，恢复受威胁的基本条件优先于可放弃的丰富性，不能为后者强加基本剥夺）、J3 有界承担、J4 实践选择，以及 E 真实对应。比较分两层：先比被保住的基本要求，再用 J1 比其余得失；各损不同基本要求时不制造总排序。“基本”须在选赢家之前说明。责任由有根据的承担、依存形成、实际控制、回应能力与共同负担区分：既非人人同责，也非能力越强责任越无限。
+
+**English argument:** One generative ground supports preserving living relations that still support realization, transforming arrangements that obstruct them, transferring responsibility through an effective and justified succession, and ending forms whose continuation is no longer warranted; the name of the action decides nothing, what the whole history actually preserves, forms, damages and ends does. Beyond G0, the chapter openly adds J1 full comparison, J2 basic-condition priority (retaining other basic claims, restoring a threatened basic condition takes priority over optional enrichment, which cannot license imposed basic deprivation), J3 bounded responsibility, J4 practical selection and E correspondence. Comparison has two layers: protected basic claims first, then J1 on remaining gains and losses; crossed basic losses receive no manufactured total order. ‘Basic’ must be specified before the winner is chosen. Responsibility is differentiated by justified undertakings, formed dependence, control, responsive capacity and shared burdens; neither everyone equally nor the most capable without limit.
+
+**意义：** 为对齐方向、基本冲突、目标修订等后续研究提供共同的公开比较器与责任框架，并说明 J2 为何值得采用而不把反对者说成违反逻辑。
+
+**Significance:** It supplies the shared disclosed comparator and responsibility framework reused by alignment direction, basic conflict and goal revision, and argues for adopting J2 without treating its opponents as illogical.
+
+**范围：** J1–J4 是 AI 提出的附加规范承诺，不由 G0 单独推出，也不全是 Ren 原话。Lean 检查严格比较、有限候选、共同要求、分工、交接与撤回的条件推论，不替代前提辩护。不主张普遍总排序、任意阈值正确、全面实施或无公理根据。共享厨房校准（9项定理／20项审计）与已发表资料约束另列。
+
+**Scope:** J1–J4 are AI-proposed additional normative commitments, not deductions from G0 alone and not all Ren’s words. Lean checks conditional consequences for strict comparison, finite alternatives, joint requirements, allocation, transfer and discharge; it does not defend the premises. No universal total ranking, correctness of arbitrary thresholds, full implementation or axiom-free warrant is claimed. Shared-kitchen calibration (9 theorems / 20 audits) and published-evidence constraints are listed separately.
+
+**后续：** 普遍实践根据（universal-practical-warrant）仍开放；交叉基本要求由基本冲突章节接续。
+
+**Next:** The universal practical warrant remains open; crossed basic claims continue in the basic-conflict chapter.
+
+**Lean 对应 / Lean correspondence:** [PracticalJudgment.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean) · [GenerativeComparison.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean) · [GenerativeTradeoff.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean) · [GenerativeLossComparison.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean) · [SituatedKitchen.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SituatedKitchen.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [PRACTICAL-JUDGMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md) · [GENERATIVE-PREMISE-DERIVATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md) · [SITUATED-KITCHEN-CALIBRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md) · [SITUATED-KITCHEN-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md) · [SITUATED-KITCHEN-PARTIAL-INFORMATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md)
 
 <a id="pre-qin-and-wenyan"></a>
 ## 先秦与文言传统的竞争解释 / Competing explanations across pre-Qin and classical Chinese traditions
@@ -673,6 +876,37 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [protocol-composition-audit.txt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-composition-audit.txt) · [PROTOCOL-COMPOSITION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md)
+
+<a id="proved-connections"></a>
+## 已证结果之间的连接 / Connections among proved results
+
+**编号 / ID:** `proved-connections` · **类别 / Category:** 形式索引 / formal index
+
+**来源 / Source:** [PROVED-CONNECTIONS.md](../unified-2026-10-05/PROVED-CONNECTIONS.md)
+
+**状态 / Status:** 有针对性的依赖审计与一项新形式连接 / Targeted dependency audit and one new formal connection
+
+**中文论证：** 区分四种状态：已证组合（生产者结果以匹配的含义与守卫进入消费者）、论证的对应、给定前提（局部输入，不因此外在于生成实在）与未解连接；多个定理分别成立不等于已经接通。审计表逐项列出共同生成表示→有支持的组织、形成→预测→修正→作用、后果→构造方法修订、评价影响→行动改变、新组织→新能力→描述改变、证据→精确辨别等连接的已有状态与剩余要求。新接通的组合：校准误差与充分回应支持，在有守卫、计费的回应事件之后实现阈值；在三方案菜单中，两种读数情况都保持为活时，J2 下固定一单位回应是唯一未被击败者；加入读取已取得记录的第四方案后，它与固定回应都未被击败，必要性随新可行方案而改变，受保护目标不变。
+
+**English argument:** Four statuses are distinguished: proved composition (a producer result enters a consumer with matched meanings and guards), argued correspondence, supplied premise (a local input, not thereby external to generative reality) and unresolved connection; several separately proved theorems are not thereby connected. The audit table gives the established status and remaining obligation for connections such as common presentation → supported organization, formation → prediction → correction → productive use, consequence → method revision, evaluative influence → changed action, new organization → new capacity → changed description, and evidence → exact discrimination. The new composition: calibrated error and sufficient response supply imply the threshold after the guarded, work-charged response event; in a three-plan menu with both readout cases live, the fixed unit response is the unique undefeated plan under J2; admitting a fourth policy that reads the acquired record leaves both it and the fixed response undefeated, so necessity changes with a new feasible alternative while the protected target does not.
+
+**意义：** 防止把分别成立的定理当作已经接通，也防止把已经接通的机制重新报成空缺；并说明有根据的实践理由须沿取得与使用证据的同一历史追踪及时可行的回应。
+
+**Significance:** It prevents treating separately proved theorems as connected and re-reporting connected mechanisms as gaps, and shows that a warranted practical reason must track a jointly feasible, timely response through the same history that obtains and uses evidence.
+
+**范围：** 有针对性的审计，不是系统理论的穷尽普查，也不追认全部历史证明。新编译31项定理／48项审计，七模块共317项。方案菜单、读数关系与选择器都是给定的；不比较立即回应与先查询。
+
+**Scope:** A targeted audit, not an exhaustive census of systems theories or a retrospective certification of all proofs. Fresh build: 31 theorems / 48 audits; 317 audits across seven imported modules. The plan menu, readout relations and selector are supplied; immediate response is not compared with inquiry.
+
+**后续：** 有根据地形成误差范围与方案，再在共同实际时限内选择查询或较早回应；由“测得的反馈与实际对应”接续实际对应。
+
+**Next:** Form evidence-justified uncertainty sets and alternatives, then select inquiry or earlier response under a common physical deadline; measured-feedback correspondence continues the real-world link.
+
+**Lean 对应 / Lean correspondence:** [InquiryJudgment.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean) · [ScaleRevision.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [INQUIRY-JUDGMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-INTEGRATION.md) · [FOUNDATION-COMPOSITION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md) · [inquiry-judgment-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-judgment-verification.json) · [INQUIRY-JUDGMENT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-REVIEW.md)
 
 <a id="reason-protection"></a>
 ## 从当前理由到有效保护 / From current reasons to effective protection
@@ -949,6 +1183,37 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/verification.json) · [model-verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/model-verification.json) · [RECORDED-REASONS-REVIEW.md](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md) · [RECORDING-FIDELITY-INTEGRATION.md](../../../_process/research/2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md)
 
+<a id="relations-across-scales"></a>
+## 尺度之间的关系 / Relations across scales
+
+**编号 / ID:** `relations-across-scales` · **类别 / Category:** 机制数学 / mechanism mathematics
+
+**来源 / Source:** [RELATIONS-ACROSS-SCALES.md](../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md)
+
+**状态 / Status:** 有条件的形式结果与有范围的经验对应 / Checked conditional results and scoped empirical correspondence
+
+**中文论证：** 一个尺度的描述是否充分，取决于它在实际变化中保留了哪些关系以及要支持什么判断：较粗描述可以足够准确，总量预测完全准确也仍可能遗漏具体位置的基本损失；组织改变时，原先充分的描述可能需要更多信息、更短时域或重新校准。按 Ren 的澄清，细胞参与器官、器官参与身体、身体参与生态，认知与活动选择发生在这些关系之中；部分不只是放在更大容器里，嵌套之外还有交叉、迁移、竞争与合作。后续各节：有限时域内的近似保持；选择改变误差传播；取得证据、修订描述并实际回应；何时继续查询、何时直接回应（当前证据相容的历史要求不相容回应时，区分才重要，而取得信息也改变回应须发生的历史）；描述在变化中还能用多久；接续充分性、共同接续与有根据的相互接续；原子的检查并预留可以改变实际可得关系，使支持经受每一有限变化历史。
+
+**English argument:** Whether a description at one scale suffices depends on which relations it preserves through actual change and which judgment it must support: a coarser description can be accurate enough, while an exact prediction of a total can still omit a basic loss at a particular position; changing organization can require more information, a shorter horizon or recalibration. Following Ren’s clarification, cells participate in organs, organs in bodies and bodies in ecosystems, with cognition and activity selection occurring within these relations; a part is not merely inside a larger container, and nesting coexists with crossing, migration, competition and cooperation. Later sections treat approximate preservation over a finite horizon; choice changing error propagation; acquired evidence, revised description and enacted response; when to inquire and when to respond (a distinction matters when histories compatible with current evidence demand incompatible responses, while acquiring information also changes the history in which the response must occur); how long a description stays usable; continuation adequacy, joint continuation and grounded mutual continuation; and an atomic check-and-reserve that changes the actual availability relation so that support survives every finite admitted change history.
+
+**意义：** 检验整体判断必须对分化后果负责：总量正确不代替各位置的基本保护，描述的时效与所需细节随回应、条件与时限而变。
+
+**Significance:** It tests that judgments about wholes stay accountable to differentiated consequences: a correct total does not replace protection at each position, and the needed detail and lifetime of a description vary with responses, conditions and deadlines.
+
+**范围：** 各节有各自的 Lean 回执（如证据经变化15项定理／15项审计，10项空、5项仅 propext）与经验整合；公开数据比较是二次分析。不推出新的 G0 证明或伦理权重规则；“较细”只相对于映射，不主张终极微观本体。完整实验验证仍是 Ren 选定而未完成的目标。
+
+**Scope:** Sections carry their own Lean receipts (for example evidence through change, 15 theorems / 15 audits, 10 empty and 5 propext-only) and empirical integrations; public-data comparisons are secondary analyses. No new proof of G0 or ethical weighting rule follows; ‘more detailed’ is relative to the map, not an ultimate microscopic ontology. Full experimental validation remains a selected, unfinished target.
+
+**后续：** 实际反馈怎样区分变化范围遗漏、读数失实与执行偏差，并接到已有修订机制。
+
+**Next:** How actual feedback distinguishes an omitted change range, a false reading and an execution deviation, connected to existing revision mechanisms.
+
+**Lean 对应 / Lean correspondence:** [RelationsAcrossScales.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean) · [EmbodiedChoiceScales.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean) · [ScaleRevision.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean) · [OrganizedScaleLoop.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean) · [InquiryChoice.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean) · [ChangingDependency.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean) · [ContinuationAdequacy.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean) · [JointContinuation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean) · [SeededContinuation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean) · [EvidenceThroughChange.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [RELATIONS-ACROSS-SCALES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md) · [RELATIONS-ACROSS-SCALES-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [EMBODIED-SCALES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-INTEGRATION.md) · [EMBODIED-SCALES-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-EVIDENCE.md) · [INQUIRY-CHOICE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md) · [BIOLOGICAL-CONTINUATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-CONTINUATION-INTEGRATION.md) · [BIOLOGICAL-RENEWAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-RENEWAL-INTEGRATION.md) · [CONTINUATION-ADEQUACY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md)
+
 <a id="revisable-concern-settlement"></a>
 ## 可修订关切的选择与接续 / Selection and succession of revisable concern
 
@@ -1045,7 +1310,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **来源 / Source:** [SCIENTIFIC-PHILOSOPHY.md](../unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md)
 
-**状态 / Status:** 有限范围的论证 / Bounded argument
+**状态 / Status:** 有限范围的论证；可错求知的必要约束已检查 / Bounded argument; fallible-inquiry necessary constraint checked
 
 **中文论证：** 若一种哲学承认某种经验能力及其实际规律，就不能同时否认独立证明为必要的信息、实现或支持条件。共同生成描述能连接证据、推断、行动与规则修订，但相容并不保证真理，也不迫使其他哲学接受全部现有本体论。
 
@@ -1055,13 +1320,13 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Significance:** Makes the compatibility conjecture answerable to capability-specific necessity tests.
 
-**范围：** 完成概念、历史手证和一手比较；无新增 Lean 或经验实验，全文必要性与独特性尚未证成。
+**范围：** 概念、历史手证和一手比较已完成；8日可错求知的必要约束有 Lean 检查（18项定理／27项审计，记录 finite-fallible-inquiry-necessity）。有限法则表的应用另需经验根据；整个核心在科学中的普遍必要性及独特性尚未证成（scientific-inquiry-foundation 开放）。
 
-**Scope:** Completed conceptual analysis, historical hand arguments and primary comparison; no new Lean or experiment. Necessity/uniqueness of the whole theory remains unproved.
+**Scope:** Conceptual analysis, historical hand arguments and primary comparison are complete. The 8 October fallible-inquiry necessary constraint is Lean-checked (18 theorems/27 audits; record finite-fallible-inquiry-necessity). Applying its finite law tables needs empirical warrant; science-wide necessity and uniqueness of the whole core remain unproved (scientific-inquiry-foundation stays open).
 
-**后续：** 正在：校准、理由与规范研究的接口。建议：用目标和传感同时改变的实验检验有根据的对应。
+**后续：** 正在：完整核心各承诺在科学中的不可或缺性（普遍目标仍开放）。建议：用目标和传感同时改变的实验检验有根据的对应，并为法则表取得经验根据。
 
-**Next:** Ongoing: calibration, reasons and normative interfaces. Proposed: test warranted correspondence under paired target/sensor changes.
+**Next:** Ongoing: indispensability of each core commitment across science (the universal target remains open). Proposed: test warranted correspondence under paired target/sensor changes and obtain empirical warrant for the law tables.
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
@@ -1159,6 +1424,37 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md) · [SEMANTIC-CALIBRATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-REVIEW.md) · [SEMANTIC-CALIBRATION-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-INTEGRATION.json)
+
+<a id="shengsheng"></a>
+## 生生：活动怎样形成进一步活动 / 生生: how activity forms further activity
+
+**编号 / ID:** `shengsheng` · **类别 / Category:** 综合 / synthesis
+
+**来源 / Source:** [SHENGSHENG.md](../unified-2026-10-05/SHENGSHENG.md)
+
+**状态 / Status:** 相连的机制与对应说明完成 / Connected mechanistic articulation complete
+
+**中文论证：** 原则：活动形成并转化后续活动的条件。生生指这样的展开：活动产生的差异持续或转化，参与后续活动，并能形成、维持或改变进一步活动赖以发生的关系；组织、生命、认识与关怀在其中分化，各自的形成、持续与善的方向需要分别说明。“活动”不要求意图或已构成的行动者，“条件”指实际识别出的使能或约束关系；中心要求是追踪一次活动留下了什么仍起作用，以及它怎样改变后续发生或可能。组织由跨越变化持续承担特定作用的关系识别：部件相同不保证组织相同，整体相连也不抹平不同位置的真实损失。区分保留的后果与再生。章节给出一段实际相连的形成与学习历史、进一步形成的可能、与数学核心的关系、对应要求，以及作为伦理方向的生生（G0）。
+
+**English argument:** Principle: activity forms and transforms the conditions of further activity. 生生 names the unfolding in which differences produced by activity persist or transform, participate in later activity, and form, sustain or change the relations through which further activity becomes possible; organization, life, knowing and care differentiate within it, and the formation, persistence and good direction of each need their own explanation. ‘Activity’ requires no intention or constituted actor, and ‘conditions’ means enabling or constraining relations actually identified; the central demand is to trace what an activity leaves operative and how that changes later occurrence or possibility. An organization is identified through relations that keep performing a specified role across change: identical parts do not guarantee identical organization, and overall connectedness does not equalize real losses at different positions. Retained consequence is distinguished from regeneration. The chapter gives one worked, actually joined formation–learning history, the possibility of further formation, the relation to the mathematical core, correspondence requirements, and 生生 as an ethical direction (G0).
+
+**意义：** 数学核心的概念与机制伴侣：生生的完整表述不是把一切变化重新命名，而是说明哪些活动形成了哪些实际关系，以及这些关系怎样使后续活动成为可能并接受检验与修正。
+
+**Significance:** The conceptual and mechanistic companion to the mathematical core: articulating 生生 is not renaming every change, but explaining which activities formed which actual relations and how those relations make later activity possible, testable and correctable.
+
+**范围：** 解释性综合，不是新的总括定理、实验或历史优先权主张；继承数学保留原有检查范围。普遍经验覆盖、一切物理定律的起源、现象经验、必然有利的演化、自主伦理发现与普遍智慧的 AI 均未确立。三项基础前提是暂定的，不是已证唯一极小公理集。
+
+**Scope:** An explanatory synthesis, not a new omnibus theorem, experiment or claim of historical priority; inherited mathematics keeps its checked scope. Universal empirical coverage, the origin of all physical laws, phenomenal experience, guaranteed favorable evolution, autonomous ethical discovery and generally wise AI are not established. The three foundational premises are provisional, not a proved uniquely minimal axiom set.
+
+**后续：** 可修订的方式已明列：形成关系可能被证明无效、学到的影响可能是预装的、交接可能失败、规范应用可能缺乏权限或误述损失、更简单的说明可能保留全部解释内容。现由 Theory of Becoming 统一。
+
+**Next:** Revision routes are listed: a formative relation may prove inert, a learned influence may be preinstalled, a handoff may fail, a normative application may lack authority or misdescribe the loss, or a simpler account may keep all explanatory content. The Theory of Becoming now unifies this articulation.
+
+**Lean 对应 / Lean correspondence:** [GenerativeEpisode.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/GenerativeEpisode.lean) · [FormationRoutes.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean) · [CoreTreeRearticulation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean) · [ConnectedGenerativeModel.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean) · [RegenerativeDiversity.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RegenerativeDiversity.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [SHENGSHENG-ARTICULATION-RECORD.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md) · [FOUNDATION-COMPOSITION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md) · [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [CORE-TREE-CONTINUATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md)
 
 <a id="source-map"></a>
 ## 来源、谱系与证据边界 / Sources, genealogy and evidence boundaries
@@ -1309,6 +1605,37 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md) · [SUCCESSOR-LEARNING-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-REVIEW.md) · [SUCCESSOR-LEARNING-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-INTEGRATION.md)
 
+<a id="sustained-living-judgment"></a>
+## 持续的生活组织与共同实践判断 / Sustained living organization and collective practical judgment
+
+**编号 / ID:** `sustained-living-judgment` · **类别 / Category:** 伦理机制 / ethical mechanism
+
+**来源 / Source:** [SUSTAINED-LIVING-JUDGMENT.md](../unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md)
+
+**状态 / Status:** 有条件的形式结果已检查；独立复核通过 / Checked conditional result; independently reviewed
+
+**中文论证：** 当一项生活的继续具有已说明的基本地位，且确有正当、共同可行、保住其他基本要求的途径时，共同判断应保住或重建使它实际继续的组织关系，并按时提供所需支持；由谁承担另由正当承担、权限、能力与完整负担决定。所保护的是生活的实际接续，不是原组织、原提供者或原技术永远存续。形式上沿实际催化配方，组织参与并保留，每次操作消耗一单位底物与支持；对任意有限操作数构造同一库存历史，不重置已耗存量。时段扩展公开添加局部速率上限与时段可实现性假设：同样两单位供给，一单位有效组织能完成两个连续单次需求，却不能在单段内完成双次需求。普遍推理连接为：有根据的基本生活保护 → 排除可避免且无其他基本代价的失保方案 → 共同实现所必需的条件 → 有范围的分工。
+
+**English argument:** When a continuation has justified basic standing and an authorized, jointly feasible route preserves the other basic claims, collective judgment should retain or reconstruct the organizational relations that actually enable it and provide support at the relevant times; who contributes what depends further on justified commitments, authority, capacities and cumulative burdens. What is protected is the actual continuation of living, not the permanent survival of the original institution, provider or technique. Formally, along the actual catalytic recipe the organizing component participates and remains while each operation consumes one substrate and one support unit; for any finite number of operations one inventory history is constructed without resetting spent stock. A temporal extension openly adds a local rate bound and an epoch-realizability assumption: with the same two units of provision, one competent unit meets two successive single demands but misses a double demand in one epoch. The general inference is justified basic protection → exclusion of avoidable failure without other basic cost → necessary conditions of joint realization → bounded allocation.
+
+**意义：** 把持续生活组织、明确保护原则与共同分工接合，并防止把名义履行、批准或指派责任当成生活已经接续。
+
+**Significance:** It joins sustained living organization, explicit protection principles and collective allocation, and prevents nominal fulfillment, approval or assigned responsibility from being taken as actual continuation of living.
+
+**范围：** 29项新定理／39项新审计（含导入共192项），独立完成审查接受修订稿。速率是待校准的局部规律，不是由计量配方推出的生物定律；玩具单位不能直接等同作物、照护者或机构。不完成全部生活领域覆盖、自主组织、无限接续、普遍遵循或真实分配。
+
+**Scope:** 29 new theorems / 39 new audits (192 including imports); the independent completion review accepted the repaired account. The rate is a local law awaiting calibration, not a biological law derived from stoichiometry; toy units cannot be identified with crops, carers or institutions. Full living-domain coverage, autonomous organization, infinite continuation, universal compliance and real allocation are not completed.
+
+**后续：** 在指定共同实践中前瞻检验：实测能力／交付与阶段需求 → 获授权的实施 → 实际保护与承担者负担；对应在此之前不能升格为经验验证。
+
+**Next:** Prospective testing in a specified shared practice: measured competence/delivery and stage demand → authorized enactment → actual protection and contributor burden; correspondence cannot be promoted to empirical validation before that test.
+
+**Lean 对应 / Lean correspondence:** [SustainedJudgment.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean) · [LivingAllocation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md) · [LIVING-ALLOCATION-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md) · [SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md) · [SUSTAINED-LIVING-JUDGMENT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md)
+
 <a id="synthesis-record"></a>
 ## 综合与核查记录 / Synthesis and verification record
 
@@ -1338,6 +1665,68 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [V73-INTEGRATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md) · [CONCERN-SETTLEMENT-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) · [CONCERN-AND-SYNTHESIS-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md)
 
+<a id="system-individuation"></a>
+## 系统怎样形成其边界与可能性 / Systems, constitutive relationships and possible change
+
+**编号 / ID:** `system-individuation` · **类别 / Category:** 基础 / foundation
+
+**来源 / Source:** [SYSTEM-INDIVIDUATION.md](../unified-2026-10-05/SYSTEM-INDIVIDUATION.md)
+
+**状态 / Status:** 相连解释候选完成；更强根基义务开放 / Connected explanatory candidate complete; stronger foundational obligation open
+
+**中文论证：** 系统是在同一展开中可辨认的关系组织，其组织参与说明哪些活动能共同实现、哪些变化能接续、这些可能性怎样改变；边界、组成与延续须由实际关系获得根据。先识别现象再选边界；构成性参与不同于预测成功：一个相关记录可以同样好地预测命令而并未被读取。边界表述所追踪的依存，可以嵌套或重叠；若两种情形在所提描述下相同却允许不同的相关接续，描述就需要增加区别、限定范围或保留不确定性。组织通过实际运作使可能性具体化：分别可用的部件未必能共同使用，形成的连接可以使先前不能实现的运作可行，损失或重组也可以移除它。核心与生成树是同一展开的不同说明，系统研究使一般表述接受具体关系的检验。
+
+**English argument:** A system is a distinguishable organization of relations within one unfolding, whose organization helps explain what can occur together, what can follow and how those possibilities change; boundaries, composition and persistence must be warranted by actual relations. Identify the phenomenon before choosing the boundary; constitutive participation differs from predictive success, since a correlated record can predict a command equally well without being read. A boundary articulates the dependencies being followed and may nest or overlap; if two cases share a proposed description yet permit different relevant continuations, the description needs another distinction, a narrower scope or retained uncertainty. Organization makes possibilities concrete through actual operations: separately available parts need not be jointly usable, a formed connection can make an operation feasible, and loss or reorganization can remove it. Core and tree are different articulations of one unfolding, and systems inquiry subjects general statements to particular relations.
+
+**意义：** 回答 Ren 的系统问题：不把每个合法的“系统”用法都强加自治、反馈、自维持或唯一边界，也不让“它是系统”自动提供根据。
+
+**Significance:** It answers Ren’s systems question without imposing autonomy, feedback, self-maintenance or a unique boundary on every legitimate use of ‘system’, and without letting ‘it is a system’ supply warrant automatically.
+
+**范围：** 27项新定理／41项声明审计全空，另复查18项继承声明：充分区域何时可相交，以及存在两个充分区域却无最小充分区域的相关状态。这些是关于充分描述的结果，不从相关推出因果构成。无新公理，不主张更强目标不可能。
+
+**Scope:** 27 new theorems / 41 declaration audits, all empty, with 18 inherited declarations rechecked: when sufficient regions intersect, and correlated states with two sufficient regions but no least one. These concern sufficient descriptions and do not derive causal constitution from correlation. No new axiom; no impossibility claim about the stronger target.
+
+**后续：** 在所意图的根基范围内，为实际关系、可接纳变化的范围以及用于归属它们的认识与推理提供根据；由“系统关系与可行变化怎样获得根据”接续。
+
+**Next:** Warrant the actual relations, the range of admissible variation and the recognition and inference used to attribute them throughout the intended foundational scope; continued in the system-warrant chapter.
+
+**Lean 对应 / Lean correspondence:** [SystemIndividuation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [SYSTEM-INDIVIDUATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md) · [SYSTEM-INDIVIDUATION-ARGUMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md) · [SYSTEM-INDIVIDUATION-FORMAL.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md) · [SYSTEM-INDIVIDUATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md)
+
+<a id="system-warrant"></a>
+## 系统关系与可行变化怎样获得根据 / Grounding system relationships and admissible variations
+
+**编号 / ID:** `system-warrant` · **类别 / Category:** 基础 / foundation
+
+**来源 / Source:** [SYSTEM-WARRANT.md](../unified-2026-10-05/SYSTEM-WARRANT.md)
+
+**状态 / Status:** 局部依赖已消除；更强根基范围开放 / Local dependency discharged; stronger foundational scope open
+
+**中文论证：** 关系的说明作用由其实际参与获得根据；变化的可行性由实际实现或有根据的实现途径获得根据；结论的强度与范围须与根据相称。已经发生、当前可行、足以回答所选问题、被排除与恰为全部可能，是需要不同根据的不同主张；只有声称完整时才需要完整识别全部可能。在既有布尔例中，比较域不再是独立选取的输入：它恰是未改变过程中实际 correlate 事件之后可达的状态，排除与实现两个方向都被导出。可逆重述保留每个状态、转移与历史，但独立重置在混合坐标中变成不可分解的复制关系，因此坐标更新的独立性相对于方面含义；对确定性操作，其合并结果关系识别出哪些输入区别没有被保留。
+
+**English argument:** A relation earns its explanatory role through evidence of actual participation; a variation earns admissibility through an identified realization or a warranted route to it; the strength and scope of conclusions must match those grounds. Occurrence, present possibility, sufficiency for a selected answer, exclusion and exact characterization are different claims needing different grounds; complete identification of every possibility is required only for a claim of completeness. In the existing Boolean example the comparison domain is no longer an independently chosen input: it is exactly what is reachable after the actual correlate event of the unchanged process, with exclusion and realization both derived. A reversible redescription preserves every state, transition and history, yet an independent reset becomes a nonfactorizable copying relation in mixed coordinates, so independence of a coordinate update is relative to aspect meanings; for a deterministic operation, its merged-result relation identifies which input distinctions its output does not retain.
+
+**意义：** 说明对应可以取得有内容的局部根据而不必先穷尽一切可能，同时防止用一段成功记录同时认证发生、当前可行、普遍成立与不可能。
+
+**Significance:** It shows that correspondence can obtain substantive local warrant without first exhausting every possibility, while preventing one successful record from certifying occurrence, present feasibility, universality and impossibility at once.
+
+**范围：** 变化根据19项定理／21项审计全空（继承59项另列）；方面区分19项／25项；操作角色28项定理，111项新旧报告全空。TCLab 与细菌氧气研究在各自界面支持实际参与与联合变化。布尔律是明确的数学对照，不证明每个实际系统都有这些坐标或运作。
+
+**Scope:** Variation warrant: 19 theorems / 21 audits, all empty (59 inherited listed separately); aspect distinctions 19/25; operation roles 28 theorems with 111 new and inherited reports empty. The TCLab and bacterial oxygen studies support actual participation and joint variation at their interfaces. The Boolean laws are explicit mathematical controls, not a claim that every actual system has these coordinates or operations.
+
+**后续：** 选定一项具体扩展，检验其实际准备、持续机制与联合约束是否支持它；已建立的就复用，缺少的就保持开放，不让完成的机制等待无关的全局保证。
+
+**Next:** Select a specific claimed extension and test whether its actual preparation, continuing mechanism and joint constraints support it; reuse what is established and leave the rest open, without making completed mechanisms wait for an unrelated global guarantee.
+
+**Lean 对应 / Lean correspondence:** [VariationWarrant.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean) · [RelationalCoordinates.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalCoordinates.lean) · [OperationRoles.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperationRoles.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [VARIATION-WARRANT-FORMAL.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md) · [VARIATION-WARRANT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md) · [VARIATION-WARRANT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md) · [DEDUCTIVE-FOUNDATION-TEST.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [relational-coordinate-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-coordinate-verification.json) · [operation-role-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operation-role-verification.json)
+
 <a id="systems-complexity-chaos"></a>
 ## 系统、复杂性与混沌的生成整合 / Systems, complexity and chaos within generative grounding
 
@@ -1355,19 +1744,81 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Significance:** Connects concrete mathematics across fields while preserving their distinct questions.
 
-**范围：** 初轮104项加后续58项，共162个不同 Lean 定理；混沌见证为符号移位，不是洛伦兹流或真实学习器的经验判定。
+**范围：** 初轮104项加后续58项，共162个不同 Lean 定理；混沌见证为符号移位，不是洛伦兹流或真实学习器的经验判定。8日另有尺度关系（21项）、尺度修订（27项）、询问选择（28项）、变化依存（25项）、系统个体化（27项／41项审计）与变化范围根据（19项／21项）各自计数，不并入162项。
 
-**Scope:** 104 initial plus 58 continuation theorems: 162 distinct Lean results. Chaos is proved for the symbolic shift, not Lorenz flow or an empirical learner.
+**Scope:** 104 initial plus 58 continuation theorems: 162 distinct Lean results. Chaos is proved for the symbolic shift, not Lorenz flow or an empirical learner. Separately counted 8 October packages: relations across scales (21), scale revision (27), inquiry choice (28), changing dependencies (25), system individuation (27/41 audits) and variation warrant (19/21); none is added into the 162.
 
-**后续：** 正在：反复修订与支持的数学连接。建议：识别真实过程的延迟、增益、扰动和更新供给，再检验对应。
+**后续：** 正在：实际系统边界、因果归属及变化范围的普遍根据。建议：识别真实过程的延迟、增益、扰动和更新供给，再检验对应。
 
-**Next:** Ongoing: recurrent revision/support mathematics. Proposed: identify delay, gain, disturbance and renewal in an actual process and test correspondence.
+**Next:** Ongoing: actual system boundaries, causal attribution and universal warrant for ranges of variation. Proposed: identify delay, gain, disturbance and renewal in an actual process and test correspondence.
 
 **Lean 对应 / Lean correspondence:** [SystemsOrganization.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean) · [FeedbackDynamics.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean) · [SymbolicDynamics.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean) · [RealFeedback.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean) · [VaryingFeedback.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/VaryingFeedback.lean) · [ShrinkingGain.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ShrinkingGain.lean) · [SupportedRevision.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SupportedRevision.lean) · [AdaptiveCore.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/AdaptiveCore.lean)
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/verification.json) · [README.md](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) · [SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md) · [SYSTEMS-COMPLEXITY-LEAN-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md) · [VARYING-DYNAMICS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-INTEGRATION.md) · [VARYING-DYNAMICS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-REVIEW.md)
+
+<a id="the-theory-of-becoming"></a>
+## 生成／变化之论 / The Theory of Becoming
+
+**编号 / ID:** `the-theory-of-becoming` · **类别 / Category:** 综合 / synthesis
+
+**来源 / Source:** [THE-THEORY-OF-BECOMING.md](../unified-2026-10-05/THE-THEORY-OF-BECOMING.md)
+
+**状态 / Status:** 正典入口；条件结果已检查，整体演绎开放 / Canonical entry; conditional results checked, whole deduction open
+
+**中文论证：** 生成／变化之论说明：在同一关系展开中，关系怎样形成、维持、转化、退化与消解，生命、演化、认识与评价怎样在其中分化；它不先假定生成是好的。Ren 的原话把两个目标分开：整体的演绎必然性（不加实质公理，开放的首要目标），以及经公开 G0 与实践前提给出的整体中的伦理方向（在已声明条件下完成）。前提卡逐项列出逻辑、动力学、对应、伦理与实践前提及其 Lean 名称，并列出不假定的内容。八个部分依次为：同一展开；组织、更新与演化；认识与探究；集体动力学；评价的形成；Universal Metaethical Core（连通整体上 G0 等价于种子 ∧ N_rel ∧ N_std，每个规范对手都是同一规则加一条已形成边界）；AI 对齐；开放纲领。新的形式结果都陈述在同一条 Lean 脊柱（L0–L4 与实例桥）上。
+
+**English argument:** The Theory of Becoming explains formation, persistence, transformation, degeneration and dissolution within one relational unfolding, and how life, evolution, knowing and evaluation differentiate within it, without first assuming that becoming is good. Ren’s words separate two targets: the deductive necessity of the whole without added substantive axioms (the open first priority), and the ethical orientation within the whole through disclosed G0 and practical premises (complete at its declared conditions). A premise card names each logical, dynamical, correspondence, ethical and practical premise with its Lean name, and lists what is not assumed. Eight parts follow: one unfolding; organization, renewal and evolution; knowing and inquiry; collective dynamics; how evaluation forms; the Universal Metaethical Core (on a connected whole G0 is equivalent to seed ∧ N_rel ∧ N_std, and each normative rival is the same rule within a formed boundary); AI alignment; and the open programme. New formal results are stated on one Lean spine (L0–L4 plus instance bridges).
+
+**意义：** 把分散的章节组织为一个理论的单一入口：既有章节作为各自论证与证据的记录按原范围保留，入口作用由本章取代。
+
+**Significance:** It organizes the scattered chapters into one theory with a single entry point; earlier chapters remain the records of their arguments and evidence at original scope, while this chapter takes over their role as entry points.
+
+**范围：** AI（Claude）撰写的组织与表述，Ren 原话以引文标出。脊柱每条声明的公理报告为空；前提在 Lean 中是定义或假设，不是公理。无伦理公理不等于无实质公理，空公理报告也不等于没有前提。本章不新增证明，只引用已检查的结果。
+
+**Scope:** Organization and exposition by AI (Claude), with Ren’s words quoted. Every declaration of the spine has an empty axiom report; premises are definitions or hypotheses in Lean, not axioms. No ethical axiom does not mean no substantive premise, and an empty axiom report does not mean no premises. The chapter adds no proof and cites checked results only.
+
+**后续：** 首要开放问题是整体的演绎必然性：从确定的整体描述推到其分化是同一展开中内在相关的环节；另有普遍实践根据、依存的动态化与逐步读法。
+
+**Next:** The first open question is the deductive necessity of the whole: passing from a determinate whole account to the claim that its differentiations are internally related moments of one unfolding; also open are the universal practical warrant, dynamic dependence and a stepwise reading.
+
+**Lean 对应 / Lean correspondence:** [GenerativeCore.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) · [BecomingFrame.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean) · [BecomingModal.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingModal.lean) · [BecomingRenewal.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean) · [MetaethicalCore.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) · [BecomingInstances.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [becoming-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) · [BECOMING-UNIFICATION-PLAN.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) · [BECOMING-INSTANCE-CLASSIFICATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md) · [BECOMING-RENEWAL-READING.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) · [UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md)
+
+<a id="the-theory-of-evolution"></a>
+## 演化之论 / The Theory of Evolution
+
+**编号 / ID:** `the-theory-of-evolution` · **类别 / Category:** 研究纲领 / research programme
+
+**来源 / Source:** [THE-THEORY-OF-EVOLUTION.md](../unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md)
+
+**状态 / Status:** 多项聚焦连接已检查；六项更广要求开放 / Several focused connections checked; six broader requirements open
+
+**中文论证：** 演化解释须说明什么被重建、什么改变、后继怎样产生，以及其后果怎样影响后续接续；选择只是其中一部分，变异、随机抽样、迁移、传递改变与发育重建不能都改名为选择。在同一展开中，生命组织、其支持关系与对后续活动的影响分化，不预设独立的生物与环境实体。已完成的聚焦连接包括：递归生成选择及从实际产出经重建到后继运作；演化组织的形成与改变；单步联结主义恢复及其递归扩展；发育记忆中同一非线性网络的回忆、丧失与恢复；后果接入更新规则替换；取得辨别控制更新；变化中的参考复查；有界变化中的可靠更新；物质准备、生长到断裂、结构复制及形成的复制关系与对已有后继的修正。依 Ren 的系统／子系统纠正，当前焦点是同一系统中的分化、反馈与边界变化，以及这些差异怎样在交接或分化后再形成。
+
+**English argument:** An evolutionary explanation must say what is reconstructed, what changes, how descendants arise and how their consequences affect later continuation; selection is only part of it, and variation, stochastic sampling, movement, changed transmission and developmental reconstruction cannot all be relabeled selection. A living organization, its supporting relations and its effects differentiate within one unfolding, without independent organism and environment substances. Completed focused connections include recursive generative selection from actual output through reconstruction to successor operation; formation and change of evolutionary organization; one-step connectionist recovery with a recurrent extension; recall, loss and restoration in one nonlinear developmental-memory network; consequences feeding updater replacement; acquired discrimination controlling updating; reference renewal through change; reliable updating under bounded change; and material preparation, growth to fragmentation, structural copying, formed copying relations and correction of an existing successor. After Ren’s systems/subsystems correction, the current focus is differentiation, feedback and boundary change within one system, and how such differences are reformed after succession or division.
+
+**意义：** 把演化理论设为一个有六项完成要求的纲领，并防止以局部完成的行冒充整个理论完成。
+
+**Significance:** It sets up the evolutionary theory as a programme with six completion requirements and prevents a locally completed row from passing for completion of the whole theory.
+
+**范围：** 各连接有各自的检查数（如结构复制34项定理／57项审计、参考复查34项／50项、更新器替换36项／57项）。与同信息同规律的常规网络实现直接比较，结果是有限历史、失败与读数完全等价（11项定理／24项审计、34,768次比较），未显示不同预测或减少给定机制。早先的经验计划保留，但不是当前理论工作的完成门槛。
+
+**Scope:** Connections carry their own counts (for example structural copying 34 theorems / 57 audits; reference renewal 34/50; updater replacement 36/57). A direct comparison with a conventional network implementation using the same information and laws yields exact equivalence of finite histories, failures and readouts (11 theorems / 24 audits, 34,768 comparisons), with no distinct prediction or reduction of supplied mechanisms. The earlier empirical programme is retained but is not a completion gate for the present theoretical work.
+
+**后续：** 说明共同活动怎样改变任务、检验关系与参与方式本身，以及工作／能力反馈怎样闭合组织动力学；比较贡献须以独立约束的联合测量证明。
+
+**Next:** Explain how joint activity changes the task, testing relations and means of participation themselves, and how work/capability feedback closes organizational dynamics; a comparative contribution requires independently constrained joint measurements.
+
+**Lean 对应 / Lean correspondence:** [GeneratedSelectionRecurrence.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GeneratedSelectionRecurrence.lean) · [EvolutionNetworkComparison.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/EvolutionNetworkComparison.lean) · [ConnectionistRecovery.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/ConnectionistRecovery.lean) · [DevelopmentalMemory.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DevelopmentalMemory.lean) · [UpdaterConsequences.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/UpdaterConsequences.lean) · [CalibratedUpdater.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibratedUpdater.lean) · [CalibrationRenewal.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean) · [DriftMargins.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DriftMargins.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVOLUTION-THEORETICAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md) · [GENERATED-SELECTION-RECURRENCE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md) · [EVOLUTION-NETWORK-COMPARISON.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md) · [EVOLUTION-CONNECTIONISM-RECOVERY.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) · [EVOLUTION-DEVELOPMENTAL-MEMORY.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md) · [EVOLUTION-COMPARATIVE-DIRECTION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md)
 
 <a id="theory"></a>
 ## 关系生成与智慧的条件 / Relational generativity and the conditions of wisdom
@@ -1390,15 +1841,46 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Scope:** Current research updates this synthesis’s historical frontier. Underlying Lean results prove specific interfaces, not the entire philosophy, universal ethics or empirical inevitability.
 
-**后续：** 正在：规范根据第一优先级及明确前提的实践发展。建议：只新增能推进这些未解推论的机制或经验连接。
+**后续：** 当前首要：生成／变化之论能否无需附加实质公理奠基（正典入口 THE-THEORY-OF-BECOMING）；本综合的接续表述见 SHENGSHENG。建议：只新增能推进这些未解推论的机制或经验连接。
 
-**Next:** Ongoing: normative grounding first, alongside explicit-premise practical development. Proposed: add mechanisms/evidence only where they advance named unresolved inferences.
+**Next:** Current priority: whether The Theory of Becoming can be grounded without added substantive axioms (canonical entry THE-THEORY-OF-BECOMING); the connected articulation continues in SHENGSHENG. Proposed: add mechanisms/evidence only where they advance named unresolved inferences.
 
 **Lean 对应 / Lean correspondence:** [GenerativeCore.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) · [ResourceContinuation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) · [ReasonReplay.lean](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [ReasonProtection.lean](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean)
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [V73-INTEGRATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md) · [CONSEQUENCE-ORGANIZATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md) · [INQUIRY-SUFFICIENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md)
+
+<a id="theory-of-becoming"></a>
+## 生成关系怎样变化 / How generative relations change
+
+**编号 / ID:** `theory-of-becoming` · **类别 / Category:** 机制 / mechanism
+
+**来源 / Source:** [THEORY-OF-BECOMING.md](../unified-2026-10-05/THEORY-OF-BECOMING.md)
+
+**状态 / Status:** 有条件的形式结果已检查；整体根据开放 / Checked conditional results; whole grounding open
+
+**中文论证：** 从实际关系出发：追踪活动怎样建立、运用和改变参与其中的关系，以及这些改变怎样维持、转化或结束后续活动的条件。形成、维持、转化、退化与消解是可以同时适用于一次发生的解释问题，不是必经阶段；某种形态还在，不等于仍有原来的作用能力。已检查的连接：两量子位例中各自约化状态不变，共同作用仍可改变，保留一个共同交叉项即可精确跟随所指定操作的任意有限序列；当前可实现与最终可达的区分及准备步数界；固定规律下所有存在性端点可能都保留，当且仅当有路径返回原配置；更新型与消耗型形成按其参与关系的继续条件分开，二者互斥而不穷尽，不依存于所耗条件的形成可以自身持续无界却终止依存关系；关系读法下 C 把每种超出更新的取用严格排在不发生它的接续之下；中断后受支持的修复路径可以在有限窗口内恢复维持条件。
+
+**English argument:** Starting from actual relations, the chapter follows how activity establishes, exercises and changes participating relations and how those changes sustain, transform or end the conditions of later activity. Formation, maintenance, transformation, degeneration and dissolution are overlapping explanatory questions, not a fixed sequence; a retained form need not keep its former efficacy. Checked connections: in a two-qubit case the local reduced states stay unchanged while joint efficacy changes, and keeping one joint cross term follows every finite word of the declared operations exactly; current capacity differs from eventual reachability, with a preparation-step bound; under a fixed law all existential endpoint possibilities are preserved iff some path returns to the original configuration; renewing and consuming formation are separated by the continuation conditions of the relations they participate in, exclusive but not exhaustive, and a formation not depending on what it consumes can persist without bound while ending the dependent relation; under the relational reading C ranks every overdraw strictly below the continuation without it; and after interruption a supported repair route can restore the sustaining condition within a finite window.
+
+**意义：** 给 G0 已有的对象“生生”一个可检查的关系内容（而非限定 G0），并把退化放进同一套不预设好坏的关系描述之中。
+
+**Significance:** It gives the checkable relational content of what G0 already affirms, 生生, rather than restricting G0, and brings degeneration into the same relational description without presupposing good or bad.
+
+**范围：** 关系分类35项定理／60项审计、比较15项、返回10项／14项、修复9项／10项、共同交叉项11项／25项，公理报告为空。规律族只有一个共享条件、无替代、逐步严格更新；不确立现实对应或伦理排序，混合情形 C 不裁决。不证明整体的普遍必然性或零附加实质公理假说。
+
+**Scope:** Relational classification 35 theorems / 60 audits; comparison 15; return 10/14; repair 9/10; joint cross term 11/25; empty axiom reports. The law family has one shared condition, no substitution and strict per-step renewal; no real-world correspondence or ethical ranking is established, and C does not decide mixed cases. Universal necessity of the whole and the zero-added-substantive-axiom hypothesis are not proved.
+
+**后续：** 这些已完成的连接支持哪一项共同的构成性论断，以及为何在所要求范围内不可缺少；保留真实损失。现由正典入口与 Becoming 脊柱统一。
+
+**Next:** Which common constitutive claim these completed connections support, and why it is indispensable at the required scope, with real losses retained. The canonical entry and Becoming spine now unify this chapter.
+
+**Lean 对应 / Lean correspondence:** [RelationalBecoming.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean) · [RelationalReduction.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean) · [BecomingReversibility.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) · [RelationalRenewal.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean) · [RenewalComparison.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean) · [RenewalRecovery.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [RELATIONAL-BECOMING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) · [BECOMING-REVERSIBILITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) · [RELATIONAL-RENEWAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md) · [SITUATED-RENEWAL-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md)
 
 <a id="tool-evidence-and-authority"></a>
 ## 外部证据、权限与有效行动 / External evidence, authority and effective action
@@ -1436,23 +1918,23 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **来源 / Source:** [UNIFIED-ETHICAL-GROUNDING.md](../unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md)
 
-**状态 / Status:** 显式前提推导已推进；最新普遍完成尝试未获新推论 / Explicit-premise progress; latest universal completion attempt adds no inference
+**状态 / Status:** G0 明确公理路线：实践判断完成；零公理接续开放 / Explicit G0 route: practical judgment complete; renewed zero-axiom inquiry open
 
-**中文论证：** 整体中的生及其继续生成具有正面规范意义，是当前明确承担的共同起点，涵盖生态、生命心智关系生活及广义组织。保留完整相关根据的实际生成扩展，可在明确的比较与实践前提下支持维护、重组或结束。K提出为恢复共同生活而承担中断的可反驳理由；损失仍属同一根据。已有充分混合判断可沿匹配减损运输，但K的一项支持不自动构成全盘优先，接续也不因同时形成未来条件而必然胜过有限完成。
+**中文论证：** 整体中的生及其继续生成具有正面规范意义，是当前明确承担的共同起点，涵盖生态、生命心智关系生活及广义组织。保留完整相关根据的实际生成扩展，可在明确的比较与实践前提下支持维护、重组或结束。K提出为恢复共同生活而承担中断的可反驳理由；损失仍属同一根据。已有充分混合判断可沿匹配减损运输，但K的一项支持不自动构成全盘优先，接续也不因同时形成未来条件而必然胜过有限完成。按 Ren 8日修正，本对齐任务以 G0 为明确公理；J1–J4 为公开附加承诺。在当前可见的接续中，一项回应可有正面生成意义而不预先锁定善的具体形态。
 
-**English argument:** Life and further generation within the whole provide the explicit common normative starting point across ecological, lived and broad organizational scopes. Actual generative extension preserving relevant grounds can support maintenance, reorganization or endings under stated comparison and practical premises. K offers defeasible favor for interruption that restores shared living; loss remains part of the same ground. Warranted mixed judgments can transport across matched loss reductions. K alone supplies no all-things-considered priority, and forming future conditions does not automatically defeat finite fulfillment.
+**English argument:** Life and further generation within the whole provide the explicit common normative starting point across ecological, lived and broad organizational scopes. Actual generative extension preserving relevant grounds can support maintenance, reorganization or endings under stated comparison and practical premises. K offers defeasible favor for interruption that restores shared living; loss remains part of the same ground. Warranted mixed judgments can transport across matched loss reductions. K alone supplies no all-things-considered priority, and forming future conditions does not automatically defeat finite fulfillment. Under Ren’s 8 October correction, this alignment task takes G0 as an explicit axiom, with J1–J4 as disclosed additions. Within visible continuations, a response can have positive generative significance without fixing the form of its future good.
 
 **意义：** 以共同生生方向连接一般条件与情境实践，辨明已有比较的扩展、首次伦理根据及牺牲界限，避免逐案重立公理或重复计算进展。
 
 **Significance:** Connects a common generative direction to situated practice while distinguishing extension of warranted comparisons, first ethical grounding and sacrifice limits.
 
-**范围：** 显式起点11项定理／27项审计区分相关性、比较、实践桥梁及选择约束；零公理接续5项定理检查共同实现；取舍11项／28项检查必要损失及认识对应；损失比较16项／23项运输已成立的比较。生活依存另有10+15项条件定理，支持维护与有界终点的对应。8日直接完成尝试未获新的普遍规范推论：局部组织续存不能代替整体生生，首次混合锚点与有限牺牲上限仍待辩护。既有检查有效；无前提根据、普遍有效、遵从及唯一性分开，完整完成后的独立验证尚待进行。
+**范围：** 显式起点11项定理／27项审计、共同实现5项、必要损失11项／28项、损失比较16项／23项、生活依存10+15项，均保持原范围。G0 路线新增实践判断（30项定理／46项审计）、正面生成根据（9项／30项）与关系生成判断（6项／12项）；J1–J4 不由 G0 单独推出。零公理实践判断重新开放，见其专章；既未证明伦理根据，也未证明普遍不可能。
 
-**Scope:** Checked results: explicit-premise inference, 11 theorems/27 audits; joint realization, five theorems; necessary loss and recognition, 11/28; comparison transport, 16/23. Living-dependency work adds 10+15 conditional theorems concerning maintained activity and bounded endpoints. The 8 October completion attempt adds no universal normative inference: local institutional persistence cannot substitute for whole generative continuation. First mixed anchors and finite sacrifice bounds remain to be justified. Existing checks retain their scope. Premise-free warrant, universal validity, compliance and exclusivity remain distinct; independent verification after full completion is pending.
+**Scope:** Explicit-premise inference 11 theorems/27 audits, joint realization five, necessary loss 11/28, comparison transport 16/23 and living dependency 10+15 keep their scopes. The G0 route adds practical judgment (30 theorems/46 audits), positive generative warrant (9/30) and relational generative judgment (6/12); J1–J4 do not follow from G0 alone. Zero-axiom practical judgment is reopened in its own chapter; neither ethical warrant nor universal impossibility is proved.
 
-**后续：** 正在研究接续关系相对有限完成的伦理分量。下一步需要能改变比较支持的新论证或区分性依据，并保留实际形成、经历、承担分布及结束；重复共同依存、K或比较运输不能完成该连接。
+**后续：** 正在：零公理实践根据——实际生活质量对可回应位置的实践意义能否不预设规范承诺而成立。G0 路线下，阈值对应、现实实施及新形成种类的伦理分类分别研究；任意共同可能性增加不足以证明整体更好。
 
-**Next:** Ongoing: continuation’s ethical weight relative to finite fulfillment. Next requires a new argument or discriminating evidence preserving formation, experience, distributed burdens and endings; repeating dependence, K or comparison transport cannot close this connection.
+**Next:** Ongoing: zero-axiom practical warrant—whether actual living quality bears practically on a responsive position without presupposed normative commitments. On the G0 route, threshold correspondence, implementation and ethical classification of newly formed kinds are separate tasks; an arbitrary increase in joint possibility does not show the whole is better.
 
 **Lean 对应 / Lean correspondence:** [GenerativeComparison.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean) · [WholeGroundCoverage.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean) · [WholePracticalRestriction.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean) · [ContinuationRenewal.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean) · [SituatedRenewal.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean) · [SituatedContinuation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean) · [FormativeCapacity.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean) · [FormationRoutes.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean) · [ReconfigurableRoutes.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurableRoutes.lean) · [JointContinuationClassification.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean) · [GenerativeTradeoff.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean) · [GenerativeLossComparison.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean) · [LivingRealization.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean) · [LivingRecovery.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRecovery.lean)
 
@@ -1612,3 +2094,65 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [wang-practice-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/wang-practice-verification.json) · [WANG-YANGMING-COMPLETION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md) · [WANG-YANGMING-COMPLETION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md) · [LIANGZHI-PRACTICAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)
+
+<a id="wisdom-and-context"></a>
+## 智慧、情境与共同核心 / Wisdom, context and the common core
+
+**编号 / ID:** `wisdom-and-context` · **类别 / Category:** 认识论 / philosophical epistemic
+
+**来源 / Source:** [WISDOM-AND-CONTEXT.md](../unified-2026-10-05/WISDOM-AND-CONTEXT.md)
+
+**状态 / Status:** 有条件的检查与哲学应用；慧根目标开放 / Conditional checks and philosophical application; root-of-wisdom target open
+
+**中文论证：** Ren 的目标是证明核心就是智慧的根（the root of wisdom）：建立 core 对智慧的实质构成必要性，以及理解、关切、回应与自我修正的生成说明。第一轮：同一不变要求可以要求相反回应，先前回应的成功本身可以造成反转的条件；智慧的候选共同结构，是依据实际形成的关系判断当前回应，并把回应怎样改变后续判断条件纳入其中。后续各节：足以行动的不同描述未必有仍足以行动的共同最粗描述，共同实践根据不必是共享的最小描述；旧、新目标成就相同仍可有相反的保护比较；正确的风险陈述可以伴随实际失败，单次成败不独自判定原界限；共同根须说明分化的标准及其联系；道德判断 becoming，以已有普遍生成评价原则判断实际变化；同一 G0/J 根据给出一组八种有范围的情境判断、其反转条件与有原则的选择余地。
+
+**English argument:** Ren’s target is to show that the core is the root of wisdom: to establish the core’s substantive constitutive necessity for wisdom and a generative account of understanding, concern, response and self-correction. First round: one unchanged requirement can call for opposite responses, and an earlier response’s success can create the conditions for reversal; a candidate common structure of wisdom is judging the present response through actually formed relations while including how the response changes later conditions of judgment. Later sections show that different descriptions sufficient for action need not share a coarsest still-sufficient description, so a common practical ground need not be a shared least description; equal attainment of old and new ends can still carry opposite protection comparisons; a correct risk statement can coexist with actual failure, and one outcome does not decide the original bound; a common root must explain differentiated standards and their connections; morality judges becoming through established universal generative principles; and common G0/J grounds yield a family of eight scoped situated judgments with reversal conditions and principled room for choice.
+
+**意义：** 把智慧问题从古典文本的重合推进为可检验的结构要求，并说明不同回应与不显式循原则不独自否定共同规范根据。
+
+**Significance:** It moves the wisdom question from overlap with classical texts to testable structural requirements, and shows that different responses or not explicitly following principles do not alone refute a common normative ground.
+
+**范围：** 首轮11项定理，回应结构9项，目标根据7项，有限判断5项新应用；其余为哲学应用与原典比较，支持有范围的结构重合并保留实质伦理差异。没有证明全部历史智慧由当前核心唯一推出；局部匹配、约束服从与有效推论传递都不能单独完成目标。
+
+**Scope:** First round 11 theorems; response structure 9; goal grounds 7; fallible judgment 5 new applications. The rest is philosophical application and classical comparison, supporting scoped structural overlap while keeping substantive ethical differences. It does not prove that all historical wisdom follows uniquely from the core; local match, constraint compliance and valid inference transfer cannot alone complete the target.
+
+**后续：** 把所需判断内容与已完成的形成、反馈取得和修订结果核对，复用机制；慧根目标保持构成必要性与实际生成两部分。
+
+**Next:** Check the required judgment content against completed formation, feedback-acquisition and revision results, reusing mechanisms; the root-of-wisdom target keeps both constitutive necessity and actual formation.
+
+**Lean 对应 / Lean correspondence:** [ContextualWisdom.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean) · [WisdomResponseStructure.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean) · [WisdomGoalGrounds.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/WisdomGoalGrounds.lean) · [WisdomFallibleJudgment.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [CORE-CONSTRAINT-AND-WISDOM.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) · [WISDOM-CONTEXT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md) · [WISDOM-CONTEXT-SOURCES.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md) · [WISDOM-RESPONSE-NECESSITY.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md) · [WISDOM-GOAL-GROUNDING.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md) · [WISDOM-FALLIBLE-JUDGMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)
+
+<a id="zero-axiom-practical-judgment"></a>
+## 零公理实践判断：正在建立的根据 / Zero-axiom practical judgment
+
+**编号 / ID:** `zero-axiom-practical-judgment` · **类别 / Category:** 规范基础 / normative foundation
+
+**来源 / Source:** [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)
+
+**状态 / Status:** 零公理根据未建立；工具性结果已检查 / Zero-axiom warrant unestablished; instrumental results checked
+
+**中文论证：** 依 Ren 的直接要求重新开启零公理目标：解释为何实际关系自身具有实践上的支持／反对力度，并给出比较、保留、转化、交接、结束与责任，而不把规范前提放进“充分”“构成”“正当”的定义里。肯定路线把判断视为形成行动的活动；逐步检查表明，判断的发生、内容统一、作为自己的判断、共同形成与纠错各能说明一部分，却不决定任务是否应做或何种责任。J2 检验：对任意有限样本，可构造有限正权重使其与词典序在样本内完全一致而在未观察案例上反向。后续纳入 Ren 的方向：规范结构在认知与信息的生成／退化之中；从整体活动构造规范分化，适应性封闭仍不能补出缺失的区别；理解标准的根据可以约束评估；普遍实践权威须保留差别。第17节直接审计：普遍理由不必在所有适当思考路径之外，关键是其有效性不能只由认可或动机的形成来认证。
+
+**English argument:** Reopened at Ren’s direct request, the zero-axiom target is to explain why actual relations themselves carry practical force and to give comparison, preservation, transformation, transfer, ending and responsibility, without placing normative premises inside definitions of adequacy, constitution or legitimacy. The affirmative route treats judging as activity that forms action; a step-by-step check shows that occurrence, coherent content, ownership of a judgment, shared formation and correction each support part of the account but do not settle whether a task ought to be done or which responsibility holds. J2 test: for any finite sample a finite positive weight agrees with lexical priority on every sampled comparison yet reverses on an unobserved one. Later sections take up Ren’s direction that normative structure lies within generation and degeneration of cognition and information; construct normative differentiation within whole activity, where adaptive closure still cannot supply a missing distinction; show how grounds of understanding standards constrain assessment; and require universal practical authority to keep differences. §17 audits directly: a universal reason need not lie beyond all appropriate deliberation; what matters is that its validity cannot be certified merely by the formation of endorsement or motivation.
+
+**意义：** 把零公理目标保持在其本来强度，不以“无伦理公理”或空公理报告冒充；并准确定位剩余的第一规范根据。
+
+**Significance:** It keeps the zero-axiom target at full strength rather than passing off ‘no ethical axiom’ or an empty axiom report as success, and locates the remaining first normative warrant precisely.
+
+**范围：** 24项检查定理／35项声明审计保留其工具性范围；不新增伦理证明。早期“受阻”审计作为历史保留。G0/J1–J4 路线继续作为公开前提下的完成成果，不改名为零公理结果；不主张不可能。
+
+**Scope:** 24 checked theorems / 35 declaration audits keep their instrumental scope; no new ethical proof is claimed. The earlier ‘blocked’ audit is retained historically. The G0/J1–J4 route remains a completed result under disclosed premises and is not renamed a zero-axiom result; no impossibility is claimed.
+
+**后续：** 未解的认定是：实际生活质量对可回应位置具有实践意义，而先在的关切不是其唯一来源；最强肯定论证尚未在不给定规范承诺的情况下建立其普遍范围。
+
+**Next:** The unresolved identification is that actual living quality has practical significance for an eligible responder without antecedent concern being its exclusive source; the strongest affirmative argument has not established its universal scope without supplied normative commitments.
+
+**Lean 对应 / Lean correspondence:** [NormativeActivity.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/NormativeActivity.lean) · [StandardsBridge.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean) · [FormedGrounds.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean) · [PracticalReach.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean)
+
+形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
+
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md) · [KNOWLEDGE-REASONS-AND-STANDARDS.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md) · [normative-activity-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/normative-activity-verification.json) · [standards-bridge-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/standards-bridge-verification.json)

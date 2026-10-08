@@ -8,8 +8,8 @@ Covers every branch README, including the method and memory archive. These are a
 
 | 理论 / Theory | 当前状态 / Status |
 |---|---|
-| [生生不息：统一生成基础 / Shengsheng: a unified generative foundation](#shengsheng-buxi-generative-existence) | 条件性候选已完成；更强基础继续研究 / Conditional candidate complete; stronger grounding open |
-| [元吸引子／总体化吸引子 / The meta-attractor](#meta-attractor) | 机制论证与条件模型；普遍趋势未证 / Mechanistic argument and conditional models |
+| [生成／变化之论（生生不息） / The Theory of Becoming (Shengsheng)](#shengsheng-buxi-generative-existence) | 条件候选与明确公理实践判断完成；无附加实质公理的奠基为当前研究假说 / Conditional candidate and explicit-axiom practical judgment complete; grounding without added substantive axioms is the current research hypothesis |
+| [元吸引子／总体化吸引子 / The meta-attractor](#meta-attractor) | 机制论证与条件模型；中性定义已采用，普遍趋势未证 / Mechanistic argument and conditional models; neutral definition adopted, universal tendency unproved |
 | [对认知的选择与对齐 / Alignment as selection on cognition](#alignment-selection-on-cognition) | 论证与稿件；经验识别未完成 / Argument and manuscripts; empirical identification open |
 | [自利螺旋与叙事价值框架 / The selfishness spiral and narrative-value frames](#selfishness-spiral-and-narrative-value-frames) | 历史机制论证；经验基础待核 / Historical mechanism; empirical support incomplete |
 | [智善：智能应当向善 / Zhishan: intelligence must be good](#zhishan-intelligence-must-be-good) | 成熟规范纲领；基础论证继续 / Developed normative programme; grounding ongoing |
@@ -27,48 +27,48 @@ Covers every branch README, including the method and memory archive. These are a
 | [工作方法与记忆谱系 / Working method and memory genealogy](#memories-and-working-style) | 方法及出处记录；非独立世界理论 / Method and provenance, not an independent theory |
 
 <a id="shengsheng-buxi-generative-existence"></a>
-## 生生不息：统一生成基础 / Shengsheng: a unified generative foundation
+## 生成／变化之论（生生不息） / The Theory of Becoming (Shengsheng)
 
 **编号 / ID:** `shengsheng-buxi-generative-existence` · **类别 / Category:** 基础 / Foundation
 
-**状态 / Status:** 条件性候选已完成；更强基础继续研究 / Conditional candidate complete; stronger grounding open
+**状态 / Status:** 条件候选与明确公理实践判断完成；无附加实质公理的奠基为当前研究假说 / Conditional candidate and explicit-axiom practical judgment complete; grounding without added substantive axioms is the current research hypothesis
 
-**论证：** 活动形成并改变后续活动的条件；在同一展开中形成的组织、记忆、学习、评价和行动可以通过有明确依存的构造连接起来。已有条件性整体候选通过五项完成审查；普遍伦理与无假设基础仍须另行建立。
+**论证：** 研究同一生成展开中的关系怎样形成、持续和改变，组织、生命、认识、学习、评价与智慧怎样在其中分化。条件性整体候选通过五项审查；Becoming 脊柱统一生成核心与元伦理接口；G0 明确公理路线下实践判断已完成。本页为生成的理论首页，正典入口为生成／变化之论专章。
 
-**Argument:** Activity forms and changes the conditions of further activity. Organization, memory, learning, evaluation and action can be connected through constructions with explicit dependencies within that unfolding. The conditional candidate meets its five reviewed criteria; universal ethical warrant and assumption-free grounding remain further tasks.
+**Argument:** Investigates how relations form, persist and change within one generative unfolding, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. The conditional candidate meets its five reviewed criteria; the Becoming spine unifies the generative core and the metaethical interfaces; practical judgment is complete on the explicit G0 route. This page is the generated theory home; the canonical entry is The Theory of Becoming chapter.
 
 **意义：** 使分散的动力学、认识与伦理研究进入同一可追溯推导，同时保留各处生命、损失和不同的未来。
 
 **Significance:** Connects dynamics, knowing and ethics in a traceable derivation while retaining differentiated lives, losses and possible futures.
 
-**后续：** 正在：共同生成的正面规范起点及其情境后果；建议：独立辩护起点、解释真实依存并处理冲突，区分普遍有效、实际遵循与唯一必要。
+**后续：** 正在：生成／变化之论能否无需附加实质公理奠基，及整体的演绎必然性；普遍实践根据。建议：保留真实损失与反例，区分普遍有效、实际遵循与唯一必要。
 
-**Next:** Ongoing: the positive normative starting point and situated consequences. Next: independently warrant that starting point, identify real dependencies and resolve mixed comparisons; distinguish universal validity, compliance and exclusive necessity.
+**Next:** Ongoing: whether The Theory of Becoming can be grounded without added substantive axioms, and the deductive necessity of the whole; universal practical warrant. Proposed: retain real losses and counterexamples; distinguish universal validity, compliance and exclusive necessity.
 
 **完整论述 / Full account:** [theories/shengsheng-buxi-generative-existence/README.md](../README.md)
 
 **Lean / 形式对应：** 本分支整体没有登记为一个 Lean 定理；可核查的细项见相关章节及 [Lean 索引](LEAN-INDEX.md)。相关章节表示研究联系，不自动证明旧分支的全部主张。 / The branch as a whole is not registered as one Lean theorem. Related chapters identify inspectable components and research connections, not a proof of every historical claim.
 
-**相关章节 / Related chapters:** [generative-grounding](ARGUMENTS-A-L.md#generative-grounding) · [generative-core-lean](ARGUMENTS-A-L.md#generative-core-lean) · [unified-ethical-grounding](ARGUMENTS-M-Z.md#unified-ethical-grounding) · [living-dependencies](ARGUMENTS-A-L.md#living-dependencies)
+**相关章节 / Related chapters:** [the-theory-of-becoming](ARGUMENTS-M-Z.md#the-theory-of-becoming) · [generative-grounding](ARGUMENTS-A-L.md#generative-grounding) · [generative-core-lean](ARGUMENTS-A-L.md#generative-core-lean) · [unified-ethical-grounding](ARGUMENTS-M-Z.md#unified-ethical-grounding) · [living-dependencies](ARGUMENTS-A-L.md#living-dependencies)
 
 <a id="meta-attractor"></a>
 ## 元吸引子／总体化吸引子 / The meta-attractor
 
 **编号 / ID:** `meta-attractor` · **类别 / Category:** 选择与制度 / Selection and institutions
 
-**状态 / Status:** 机制论证与条件模型；普遍趋势未证 / Mechanistic argument and conditional models
+**状态 / Status:** 机制论证与条件模型；中性定义已采用，普遍趋势未证 / Mechanistic argument and conditional models; neutral definition adopted, universal tendency unproved
 
-**论证：** 优势若能转化为改写选择规则的能力，成功方式便会影响下一轮评价、制度和认知形成。四个相互作用的层次可使纠错、拒绝与替代的能力逐渐丧失；饱和、异质性和反馈也能中断此过程。
+**论证：** 优势若能转化为改写选择规则的能力，成功方式便会影响下一轮评价、制度和认知形成。四个相互作用的层次可使纠错、拒绝与替代的能力逐渐丧失；饱和、异质性和反馈也能中断此过程。8日采用 Ren 选定的中性表述：活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续。
 
-**Argument:** When advantage can change the rules of selection, successful strategies shape later evaluation, institutions and cognition. Coupled cognitive, shared-meaning, institutional and material processes can erode correction and alternatives; saturation, heterogeneity and feedback can interrupt them.
+**Argument:** When advantage can change the rules of selection, successful strategies shape later evaluation, institutions and cognition. Coupled cognitive, shared-meaning, institutional and material processes can erode correction and alternatives; saturation, heterogeneity and feedback can interrupt them. On 8 October the neutral formulation Ren selected was adopted: an organization’s consequences take part in reconstructing the conditions that select it, so it continues through changing carriers.
 
 **意义：** 把“谁赢”推进到“什么决定谁能赢”，说明权力怎样改变未来判断的条件。
 
 **Significance:** Explains how power changes the conditions of future judgment, beyond the distribution of winners.
 
-**后续：** 已有后续：选择器修正与规则形成的条件研究；建议：统一旧形式层和术语，并以可区分的制度案例检验规则俘获与普通集中。
+**后续：** 已有后续：中性定义下的回返组织（新40项定理／69项审计）、共同组织与旧数学校正（41项／89项），以及局部对齐与共同破坏的方向纠正。建议：说明桥接、感测配方与候选库在持续活动中的形成与修订，完成证书迁移与实地校准。
 
-**Next:** Existing continuation: conditional selector revision and rule formation. Next: reconcile older formalisms and distinguish rule capture from concentration through discriminating institutional cases.
+**Next:** Continued: returning organization under the neutral definition (40 new theorems/69 audits), common organization and mathematical reconciliation (41/89), and the corrected direction on local alignment and collective destruction. Proposed: explain how bridge, sensing recipe and candidate repertoire form and change within continuing activity; complete certificate migration and field calibration.
 
 **完整论述 / Full account:** [theories/meta-attractor/README.md](../../meta-attractor/README.md)
 

@@ -332,7 +332,7 @@ Imports: `GenerativeCore`, `Retention`
 <details>
 <summary>ConsequenceTransmission.lean — 34 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean) · [理论 / Theory](../../unified-2026-10-05/LIANGZHI-EVOLUTION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean) · [理论 / Theory](../../unified-2026-10-05/LIANGZHI-EVOLUTION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean`
 
@@ -1204,7 +1204,7 @@ Imports: `Std`, `GenerativeCore`
 <details>
 <summary>UpdaterFormation.lean — 56 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-UPDATER-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean) · [理论 / Theory](../../../meta-attractor/COMMON-ORGANIZATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-UPDATER-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean`
 

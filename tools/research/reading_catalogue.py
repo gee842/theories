@@ -8,6 +8,8 @@ From the repository root:
 Argument prose is edited in the three JSON reading registers. This script owns
 results/README.md, THEORY-MAP.md and both ARGUMENTS chapter volumes.
 Source hashes identify inspected versions; refresh only after reviewing changes.
+Views listed in the generated manifest carry the token `generated-view`: their
+rows follow the record checks, so record additions do not stale the reading.
 """
 from __future__ import annotations
 
@@ -24,6 +26,8 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'theories/shengsheng-buxi-generative-existence/results'
 CANON = OUT.parent / 'unified-2026-10-05'
+MANIFEST = ROOT / '_process/architecture/generated-manifest.json'
+GENERATED_VIEW = 'generated-view'
 FIELDS = ('id', 'source', 'title_zh', 'title_en', 'category', 'status',
           'argument_zh', 'argument_en', 'significance_zh', 'significance_en',
           'scope_zh', 'scope_en', 'next_zh', 'next_en', 'source_sha256')
@@ -165,8 +169,8 @@ def index(chapters: list[dict], branches: list[dict]) -> str:
     for d in sorted(chapters, key=lambda x:x['id']):
         lines.append(f"| [`{d['id']}`]({chapter_link(d['id'])}) | {d['title_zh']} / {d['title_en']} | {category(d)} |")
     lines.extend(['', '## 维护 / Maintenance', '',
-                  '条目数据位于 [A–L](data/arguments-a-l.json)、[M–Z](data/arguments-m-z.json)和[分支表](data/theory-map.json)。`source_sha256` 记录阅读对应的源码版本；原文变化后须重读相关条目。以本目录取代复制工作区；原始研究继续在既有理论与研究文件中修订。', '',
-                  'The JSON registers hold the paired readings. `source_sha256` records the inspected version; changed sources require a targeted reread. Continue substantive work in the existing study files.', '',
+                  '条目数据位于 [A–L](data/arguments-a-l.json)、[M–Z](data/arguments-m-z.json)和[分支表](data/theory-map.json)。`source_sha256` 记录阅读对应的源码版本；原文变化后须重读相关条目。生成视图记为 `generated-view`，其各行随成果记录检查。以本目录取代复制工作区；原始研究继续在既有理论与研究文件中修订。', '',
+                  'The JSON registers hold the paired readings. `source_sha256` records the inspected version; changed sources require a targeted reread. Generated views record `generated-view`; their rows follow the record checks. Continue substantive work in the existing study files.', '',
                   '```sh',
                   'python3 _process/research/2026-10-05-generative-foundation-review/root-foundation/build_results_catalogue.py --check',
                   'python3 _process/research/2026-10-05-generative-foundation-review/root-foundation/build_lean_catalogue.py --check',
@@ -185,6 +189,7 @@ def main() -> int:
         chapters += json.loads((OUT/'data'/name).read_text())
     branches = json.loads((OUT/'data/theory-map.json').read_text())
     errors=[]
+    generated=set(json.loads(MANIFEST.read_text())['files'])
     for label, rows, expected in (
         ('chapters', chapters, {str(p.relative_to(ROOT)) for p in CANON.glob('*.md')}),
         ('branches', branches, {str(p.relative_to(ROOT)) for p in (ROOT/'theories').glob('*/README.md')})):
@@ -197,7 +202,9 @@ def main() -> int:
                 if not isinstance(d.get(field), str) or not d[field].strip(): errors.append(f'{d.get("id")}: missing {field}')
             for source in [d['source'], *d.get('lean',[]), *d.get('evidence',[])]:
                 if not (ROOT/source.split('#')[0]).exists(): errors.append(f'{d["id"]}: missing path {source}')
-            if (ROOT/d['source']).is_file():
+            if d['source'] in generated:
+                if d.get('source_sha256') != GENERATED_VIEW: errors.append(f'{d["id"]}: generated view; record {GENERATED_VIEW} after rereading its role')
+            elif (ROOT/d['source']).is_file():
                 digest=hashlib.sha256((ROOT/d['source']).read_bytes()).hexdigest()
                 if d.get('source_sha256') != digest: errors.append(f'{d["id"]}: source changed; reread entry before refreshing its hash')
     outputs={'README.md':index(chapters,branches),'THEORY-MAP.md':branch_volume(branches),

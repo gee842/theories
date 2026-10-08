@@ -1277,7 +1277,7 @@ Imports: `SystemsOrganization`, `FeedbackDynamics`, `SymbolicDynamics`
 <details>
 <summary>SystemsOrganization.lean — 41 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean`
 
@@ -1457,7 +1457,7 @@ Imports: `InquiryChoice`
 <details>
 <summary>ContinuationAdequacy.lean — 29 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean`
 
@@ -1499,6 +1499,46 @@ Imports: `Mathlib.Tactic`
 - `def` [ContinuationAdequacy.settle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L178) (L178)
 
 文本中有 14 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 14 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-000cb4a6ef8b"></a>
+
+<details>
+<summary>DiagnosticTracking.lean — 21 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean`
+
+Imports: `ActionAwareTracking`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [DiagnosticTracking.same_discrepancy_different_repairs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L25) | 25 |
+| [DiagnosticTracking.diagnostic_records_distinguish](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L29) | 29 |
+| [DiagnosticTracking.three_probes_miss_joint_relation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L35) | 35 |
+| [DiagnosticTracking.joint_probe_exposes_missing_relation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L40) | 40 |
+| [DiagnosticTracking.four_readings_recover_parameters](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L43) | 43 |
+| [DiagnosticTracking.acquired_effect_matches](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L54) | 54 |
+| [DiagnosticTracking.acquired_parameters_error_bounds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L60) | 60 |
+| [DiagnosticTracking.reference_and_readout_offsets_confounded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L79) | 79 |
+| [DiagnosticTracking.four_probes_do_not_certify_unrepresented_curvature](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L84) | 84 |
+| [DiagnosticTracking.bound_transfers_with_drift](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L94) | 94 |
+| [DiagnosticTracking.corrected_reading_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L100) | 100 |
+| [DiagnosticTracking.revised_effect_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L108) | 108 |
+| [DiagnosticTracking.calibration_to_revised_residual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L129) | 129 |
+| [DiagnosticTracking.acquired_revision_bounds_tracking_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L150) | 150 |
+| [DiagnosticTracking.repaired_tail_converges](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L176) | 176 |
+| [DiagnosticTracking.acquired_repair_restores_convergence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L189) | 189 |
+| [DiagnosticTracking.bounded_repaired_tail](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L208) | 208 |
+
+定义与类型 / Definitions and types:
+
+- `def` [DiagnosticTracking.response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L13) (L13)
+- `def` [DiagnosticTracking.acquiredGain](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L16) (L16)
+- `def` [DiagnosticTracking.acquiredJoint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L18) (L18)
+- `def` [DiagnosticTracking.acquiredEffect](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean#L21) (L21)
 
 </details>
 
@@ -1773,7 +1813,7 @@ Imports: `ScaleRevision`, `PracticalJudgment`
 <details>
 <summary>JointContinuation.lean — 29 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean`
 

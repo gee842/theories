@@ -8,6 +8,136 @@
 
 ## 可达询问、接触与过程律 / Attainable inquiry, contact and process laws
 
+<a id="module-9d82771d91d8"></a>
+
+<details>
+<summary>AcquiredBinding.lean — 41 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean`
+
+Imports: `AcquiredSegmentation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.AcquiredBinding.candidate_characterization](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L39) | 39 |
+| [Generative.AcquiredBinding.resolution_is_a_unique_candidate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L60) | 60 |
+| [Generative.AcquiredBinding.adequate_evidence_preserves_target](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L70) | 70 |
+| [Generative.AcquiredBinding.unique_resolution_is_correct_under_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L75) | 75 |
+| [Generative.AcquiredBinding.encounter_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L108) | 108 |
+| [Generative.AcquiredBinding.exclusion_preserves_original_records](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L117) | 117 |
+| [Generative.AcquiredBinding.no_support_keeps_binding_evidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L122) | 122 |
+| [Generative.AcquiredBinding.segmentation_without_binding_cannot_interpret](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L154) | 154 |
+| [Generative.AcquiredBinding.single_ambiguous_encounter_does_not_choose_a_meaning](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L158) | 158 |
+| [Generative.AcquiredBinding.actual_encounters_acquire_both_bindings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L162) | 162 |
+| [Generative.AcquiredBinding.learned_bindings_decode_every_encoded_sequence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L165) | 165 |
+| [Generative.AcquiredBinding.acquired_binding_and_grouping_compose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L173) | 173 |
+| [Generative.AcquiredBinding.acquired_bindings_reach_actual_compositional_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L182) | 182 |
+| [Generative.AcquiredBinding.actual_binding_history_retains_prior_learning](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L186) | 186 |
+| [Generative.AcquiredBinding.interpretation_can_outlast_affordable_execution](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L191) | 191 |
+| [Generative.AcquiredBinding.repeated_ambiguity_does_not_resolve_reference](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L197) | 197 |
+| [Generative.AcquiredBinding.omitted_target_can_produce_a_wrong_unique_binding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L205) | 205 |
+| [Generative.AcquiredBinding.contrary_encounters_suspend_instead_of_silently_relabeling](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L209) | 209 |
+| [Generative.AcquiredBinding.corrected_admission_repairs_use_without_erasing_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L214) | 214 |
+| [Generative.AcquiredBinding.excluding_the_sound_encounters_preserves_the_wrong_binding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L219) | 219 |
+| [Generative.AcquiredBinding.insufficient_binding_experience_preserves_partial_learning](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L222) | 222 |
+| [Generative.AcquiredBinding.supplied_repertoire_can_exclude_the_intended_content](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L227) | 227 |
+| [Generative.AcquiredBinding.failed_grouping_prevents_binding_record_formation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L231) | 231 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [Generative.AcquiredBinding.Encounter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L14) (L14)
+- `structure` [Generative.AcquiredBinding.Lexicon](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L20) (L20)
+- `def` [Generative.AcquiredBinding.compatible](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L27) (L27)
+- `def` [Generative.AcquiredBinding.candidates](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L31) (L31)
+- `def` [Generative.AcquiredBinding.resolve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L34) (L34)
+- `def` [Generative.AcquiredBinding.encounter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L87) (L87)
+- `def` [Generative.AcquiredBinding.excludeSource](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L100) (L100)
+- `def` [Generative.AcquiredBinding.readForms](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L126) (L126)
+- `def` [Generative.AcquiredBinding.interpret](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L133) (L133)
+- `def` [Generative.AcquiredBinding.execute](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L137) (L137)
+- `def` [Generative.AcquiredBinding.extra](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L143) (L143)
+- `def` [Generative.AcquiredBinding.emptyBinding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L144) (L144)
+- `def` [Generative.AcquiredBinding.teach](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L146) (L146)
+- `def` [Generative.AcquiredBinding.learned](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L152) (L152)
+- `def` [Generative.AcquiredBinding.repeatedAmbiguity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L194) (L194)
+- `def` [Generative.AcquiredBinding.misbound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L201) (L201)
+- `def` [Generative.AcquiredBinding.conflicted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L202) (L202)
+- `def` [Generative.AcquiredBinding.repaired](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean#L203) (L203)
+
+</details>
+
+<a id="module-84f4ce7a7d6e"></a>
+
+<details>
+<summary>AcquiredSegmentation.lean — 51 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean`
+
+Imports: `CompositionalTransmission`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.AcquiredSegmentation.grouping_preserves_encountered_sequence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L46) | 46 |
+| [Generative.AcquiredSegmentation.receiving_preserves_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L103) | 103 |
+| [Generative.AcquiredSegmentation.exposure_preserves_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L111) | 111 |
+| [Generative.AcquiredSegmentation.insufficient_reception_keeps_actual_record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L118) | 118 |
+| [Generative.AcquiredSegmentation.broadening_preserves_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L122) | 122 |
+| [Generative.AcquiredSegmentation.ideal_grouping_recovers_words](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L138) | 138 |
+| [Generative.AcquiredSegmentation.decoded_word_sequence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L151) | 151 |
+| [Generative.AcquiredSegmentation.actual_exposure_forms_the_grouping_relation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L168) | 168 |
+| [Generative.AcquiredSegmentation.learned_grouping_transfers_to_every_word_sequence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L172) | 172 |
+| [Generative.AcquiredSegmentation.acquired_segmentation_enters_message_assembly](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L180) | 180 |
+| [Generative.AcquiredSegmentation.no_experience_leaves_the_message_unparsed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L185) | 185 |
+| [Generative.AcquiredSegmentation.new_grouping_reaches_the_existing_formed_operation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L188) | 188 |
+| [Generative.AcquiredSegmentation.response_retains_training_history_and_original_acquisition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L193) | 193 |
+| [Generative.AcquiredSegmentation.exact_whole_history_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L197) | 197 |
+| [Generative.AcquiredSegmentation.grouped_message_can_lack_execution_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L201) | 201 |
+| [Generative.AcquiredSegmentation.missing_observation_slots_preserve_the_absence_of_an_edge](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L204) | 204 |
+| [Generative.AcquiredSegmentation.equal_event_frequencies_do_not_identify_grouping](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L211) | 211 |
+| [Generative.AcquiredSegmentation.encounter_relations_change_grouping_and_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L214) | 214 |
+| [Generative.AcquiredSegmentation.diagnostic_failure_changes_further_acquisition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L218) | 218 |
+| [Generative.AcquiredSegmentation.recognized_message_does_not_trigger_broadening](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L224) | 224 |
+| [Generative.AcquiredSegmentation.insufficient_further_acquisition_keeps_a_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L227) | 227 |
+| [Generative.AcquiredSegmentation.partial_experience_can_parse_one_form_without_general_grouping](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L233) | 233 |
+| [Generative.AcquiredSegmentation.recurrence_can_join_across_the_intended_units](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L241) | 241 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [Generative.AcquiredSegmentation.Sound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L13) (L13)
+- `structure` [Generative.AcquiredSegmentation.State](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L18) (L18)
+- `def` [Generative.AcquiredSegmentation.edges](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L23) (L23)
+- `def` [Generative.AcquiredSegmentation.edgeCount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L31) (L31)
+- `def` [Generative.AcquiredSegmentation.departures](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L32) (L32)
+- `def` [Generative.AcquiredSegmentation.bond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L34) (L34)
+- `def` [Generative.AcquiredSegmentation.chunks](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L37) (L37)
+- `def` [Generative.AcquiredSegmentation.decodeChunk](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L61) (L61)
+- `def` [Generative.AcquiredSegmentation.decodeChunks](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L66) (L66)
+- `def` [Generative.AcquiredSegmentation.assembleMessage](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L73) (L73)
+- `def` [Generative.AcquiredSegmentation.parse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L77) (L77)
+- `def` [Generative.AcquiredSegmentation.receive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L83) (L83)
+- `def` [Generative.AcquiredSegmentation.expose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L89) (L89)
+- `def` [Generative.AcquiredSegmentation.act](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L93) (L93)
+- `def` [Generative.AcquiredSegmentation.broadenAfterFailure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L100) (L100)
+- `def` [Generative.AcquiredSegmentation.word](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L130) (L130)
+- `def` [Generative.AcquiredSegmentation.encode](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L133) (L133)
+- `def` [Generative.AcquiredSegmentation.idealBond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L135) (L135)
+- `def` [Generative.AcquiredSegmentation.context](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L158) (L158)
+- `def` [Generative.AcquiredSegmentation.additional](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L159) (L159)
+- `def` [Generative.AcquiredSegmentation.utterance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L160) (L160)
+- `def` [Generative.AcquiredSegmentation.intended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L161) (L161)
+- `def` [Generative.AcquiredSegmentation.ready](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L163) (L163)
+- `def` [Generative.AcquiredSegmentation.experienced](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L164) (L164)
+- `def` [Generative.AcquiredSegmentation.narrow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L165) (L165)
+- `def` [Generative.AcquiredSegmentation.broadened](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L166) (L166)
+- `def` [Generative.AcquiredSegmentation.reordered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L209) (L209)
+- `def` [Generative.AcquiredSegmentation.learnerFavored](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean#L239) (L239)
+
+</details>
+
 <a id="module-d84368196389"></a>
 
 <details>
@@ -163,6 +293,70 @@ Imports: `CompositionalAcquisition`
 
 </details>
 
+<a id="module-17e1d21d3551"></a>
+
+<details>
+<summary>CompositionalTransmission.lean — 45 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean`
+
+Imports: `CompositionalFormation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.CompositionalTransmission.response_remaining_is_bounded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L46) | 46 |
+| [Generative.CompositionalTransmission.send_preserves_joint_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L57) | 57 |
+| [Generative.CompositionalTransmission.lesson_preserves_joint_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L74) | 74 |
+| [Generative.CompositionalTransmission.delivery_uses_actual_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L82) | 82 |
+| [Generative.CompositionalTransmission.absent_response_does_not_fabricate_sample](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L89) | 89 |
+| [Generative.CompositionalTransmission.basic_lesson_reads_program](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L97) | 97 |
+| [Generative.CompositionalTransmission.reconstructed_program_from_actual_outputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L111) | 111 |
+| [Generative.CompositionalTransmission.sending_preserves_equal_interfaces](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L131) | 131 |
+| [Generative.CompositionalTransmission.lessons_preserve_equal_interfaces](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L145) | 145 |
+| [Generative.CompositionalTransmission.learning_uses_sender_interface](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L151) | 151 |
+| [Generative.CompositionalTransmission.reconstructed_successor_retains_operation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L162) | 162 |
+| [Generative.CompositionalTransmission.every_cohort_reconstructs_the_transmitted_operation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L176) | 176 |
+| [Generative.CompositionalTransmission.every_cohort_retains_all_expression_correspondence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L183) | 183 |
+| [Generative.CompositionalTransmission.formed_teacher_can_teach_after_supported_preparation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L199) | 199 |
+| [Generative.CompositionalTransmission.execution_only_budget_can_interrupt_teaching](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L203) | 203 |
+| [Generative.CompositionalTransmission.teacher_program_changes_received_evidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L208) | 208 |
+| [Generative.CompositionalTransmission.faithfully_reconstructed_operation_can_lose_a_task_distinction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L212) | 212 |
+| [Generative.CompositionalTransmission.extra_funding_does_not_fix_transmitted_content](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L217) | 217 |
+| [Generative.CompositionalTransmission.same_teacher_different_encounters_change_reconstruction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L220) | 220 |
+| [Generative.CompositionalTransmission.peer_demonstration_can_repair_without_new_generation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L228) | 228 |
+| [Generative.CompositionalTransmission.erroneous_peer_demonstration_can_preserve_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L233) | 233 |
+| [Generative.CompositionalTransmission.received_disagreement_is_not_automatically_repaired](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L237) | 237 |
+| [Generative.CompositionalTransmission.task_distinction_loss_can_recur_in_every_cohort](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L240) | 240 |
+| [Generative.CompositionalTransmission.successful_reconstruction_can_teach_a_later_participant](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L247) | 247 |
+| [Generative.CompositionalTransmission.duplicate_reconstructs_after_actual_transmission](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L250) | 250 |
+| [Generative.CompositionalTransmission.initial_limitation_can_change_and_then_stabilize_operation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L263) | 263 |
+| [Generative.CompositionalTransmission.stabilized_change_can_fail_the_original_task](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L270) | 270 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [Generative.CompositionalTransmission.Exchange](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L13) (L13)
+- `def` [Generative.CompositionalTransmission.blank](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L18) (L18)
+- `def` [Generative.CompositionalTransmission.source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L21) (L21)
+- `def` [Generative.CompositionalTransmission.send](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L24) (L24)
+- `def` [Generative.CompositionalTransmission.lesson](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L34) (L34)
+- `def` [Generative.CompositionalTransmission.basic](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L38) (L38)
+- `def` [Generative.CompositionalTransmission.extended](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L39) (L39)
+- `def` [Generative.CompositionalTransmission.learn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L40) (L40)
+- `def` [Generative.CompositionalTransmission.programRecords](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L43) (L43)
+- `def` [Generative.CompositionalTransmission.SameInterface](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L127) (L127)
+- `def` [Generative.CompositionalTransmission.successor](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L160) (L160)
+- `def` [Generative.CompositionalTransmission.cohort](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L172) (L172)
+- `def` [Generative.CompositionalTransmission.selective](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L194) (L194)
+- `def` [Generative.CompositionalTransmission.joint00](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L195) (L195)
+- `def` [Generative.CompositionalTransmission.firstLearner](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L197) (L197)
+- `def` [Generative.CompositionalTransmission.misleadingPeer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L224) (L224)
+- `def` [Generative.CompositionalTransmission.revisedPeer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L225) (L225)
+- `def` [Generative.CompositionalTransmission.limitedCohort](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean#L259) (L259)
+
+</details>
+
 <a id="module-2bcbeddc6d03"></a>
 
 <details>
@@ -188,6 +382,119 @@ Imports: `GenerativeClosure`
 - `def` [InquiryRoot.CoreTree.branchBasis](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean#L86) (L86)
 
 文本中有 5 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 5 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-79f5d61b66c6"></a>
+
+<details>
+<summary>EnactedScene.lean — 29 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean`
+
+Imports: `AcquiredBinding`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.EnactedScene.moving_preserves_binding_records](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L57) | 57 |
+| [Generative.EnactedScene.moving_preserves_support_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L63) | 63 |
+| [Generative.EnactedScene.unaffordable_movement_preserves_actual_position](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L72) | 72 |
+| [Generative.EnactedScene.same_inputs_preserve_interpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L95) | 95 |
+| [Generative.EnactedScene.movement_changes_accessible_alternatives](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L112) | 112 |
+| [Generative.EnactedScene.enacted_scenes_supply_the_previous_binding_inputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L117) | 117 |
+| [Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L120) | 120 |
+| [Generative.EnactedScene.enacted_access_reaches_actual_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L125) | 125 |
+| [Generative.EnactedScene.movement_is_in_the_same_support_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L130) | 130 |
+| [Generative.EnactedScene.stationary_repetition_leaves_both_bindings_ambiguous](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L135) | 135 |
+| [Generative.EnactedScene.access_without_recording_does_not_acquire_the_bindings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L140) | 140 |
+| [Generative.EnactedScene.unchanged_position_and_name_counts_do_not_establish_coordination](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L146) | 146 |
+| [Generative.EnactedScene.mistimed_naming_produces_an_actual_inverted_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L154) | 154 |
+| [Generative.EnactedScene.a_clear_view_can_omit_the_named_target](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L159) | 159 |
+| [Generative.EnactedScene.movement_support_can_run_out_before_a_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L164) | 164 |
+| [Generative.EnactedScene.impossible_movement_does_not_invent_a_new_scene](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L168) | 168 |
+
+定义与类型 / Definitions and types:
+
+- `abbrev` [Generative.EnactedScene.Place](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L14) (L14)
+- `def` [Generative.EnactedScene.distance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L16) (L16)
+- `structure` [Generative.EnactedScene.Situation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L19) (L19)
+- `def` [Generative.EnactedScene.visible](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L25) (L25)
+- `def` [Generative.EnactedScene.move](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L28) (L28)
+- `def` [Generative.EnactedScene.nameForm](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L42) (L42)
+- `def` [Generative.EnactedScene.naming](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L46) (L46)
+- `def` [Generative.EnactedScene.start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L76) (L76)
+- `def` [Generative.EnactedScene.coordinated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L79) (L79)
+- `def` [Generative.EnactedScene.stationary](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L83) (L83)
+- `def` [Generative.EnactedScene.mistimed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L86) (L86)
+- `def` [Generative.EnactedScene.interpretationInputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L92) (L92)
+- `def` [Generative.EnactedScene.narrowWrong](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean#L157) (L157)
+
+</details>
+
+<a id="module-130b052828c4"></a>
+
+<details>
+<summary>EncounterChoice.lean — 46 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean`
+
+Imports: `EnactedScene`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.EncounterChoice.observation_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L93) | 93 |
+| [Generative.EncounterChoice.survey_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L100) | 100 |
+| [Generative.EncounterChoice.speaking_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L107) | 107 |
+| [Generative.EncounterChoice.naming_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L118) | 118 |
+| [Generative.EncounterChoice.visit_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L121) | 121 |
+| [Generative.EncounterChoice.step_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L128) | 128 |
+| [Generative.EncounterChoice.run_preserves_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L134) | 134 |
+| [Generative.EncounterChoice.calibration_records_actual_access](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L147) | 147 |
+| [Generative.EncounterChoice.binding_changes_which_scene_is_chosen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L151) | 151 |
+| [Generative.EncounterChoice.selected_encounters_supply_previous_interpretation_inputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L156) | 156 |
+| [Generative.EncounterChoice.selected_encounters_transfer_to_all_sequences](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L159) | 159 |
+| [Generative.EncounterChoice.selected_history_reaches_actual_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L164) | 164 |
+| [Generative.EncounterChoice.history_accounts_for_survey_and_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L169) | 169 |
+| [Generative.EncounterChoice.changed_arrangement_can_leave_an_accurate_old_record_stale](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L191) | 191 |
+| [Generative.EncounterChoice.stale_prediction_changes_choice_before_reobservation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L196) | 196 |
+| [Generative.EncounterChoice.reobservation_revises_the_access_model_and_next_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L199) | 199 |
+| [Generative.EncounterChoice.survey_without_names_does_not_supply_bindings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L205) | 205 |
+| [Generative.EncounterChoice.poor_catalogue_leaves_ambiguity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L209) | 209 |
+| [Generative.EncounterChoice.acquired_binding_can_exhaust_response_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L214) | 214 |
+| [Generative.EncounterChoice.known_access_does_not_execute_an_unaffordable_visit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L218) | 218 |
+| [Generative.EncounterChoice.local_naming_does_not_name_an_absent_atom](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L222) | 222 |
+| [Generative.EncounterChoice.removing_coverage_can_make_the_stopping_rule_wrong](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L225) | 225 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [Generative.EncounterChoice.View](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L14) (L14)
+- `structure` [Generative.EncounterChoice.Activity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L19) (L19)
+- `def` [Generative.EncounterChoice.recalled](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L25) (L25)
+- `def` [Generative.EncounterChoice.observe](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L28) (L28)
+- `def` [Generative.EncounterChoice.survey](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L38) (L38)
+- `def` [Generative.EncounterChoice.speak](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L45) (L45)
+- `def` [Generative.EncounterChoice.localNaming](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L53) (L53)
+- `def` [Generative.EncounterChoice.complete](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L58) (L58)
+- `def` [Generative.EncounterChoice.informative](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L61) (L61)
+- `def` [Generative.EncounterChoice.choose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L69) (L69)
+- `def` [Generative.EncounterChoice.visit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L76) (L76)
+- `def` [Generative.EncounterChoice.step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L81) (L81)
+- `def` [Generative.EncounterChoice.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L86) (L86)
+- `def` [Generative.EncounterChoice.account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L90) (L90)
+- `def` [Generative.EncounterChoice.catalogue](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L140) (L140)
+- `def` [Generative.EncounterChoice.initial](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L141) (L141)
+- `def` [Generative.EncounterChoice.calibrated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L142) (L142)
+- `def` [Generative.EncounterChoice.first](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L143) (L143)
+- `def` [Generative.EncounterChoice.second](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L144) (L144)
+- `def` [Generative.EncounterChoice.acquired](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L145) (L145)
+- `def` [Generative.EncounterChoice.earlierArrangement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L177) (L177)
+- `def` [Generative.EncounterChoice.olderView](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L180) (L180)
+- `def` [Generative.EncounterChoice.rearranged](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L185) (L185)
+- `def` [Generative.EncounterChoice.staleChoice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean#L189) (L189)
 
 </details>
 
@@ -228,7 +535,7 @@ Imports: `Std`
 <details>
 <summary>GenerativeClosure.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-FOUNDATION-DERIVATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-FOUNDATION-DERIVATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean`
 
@@ -261,6 +568,61 @@ Imports: `Std`
 - `def` [InquiryRoot.extraClaim](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean#L144) (L144)
 
 文本中有 12 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 12 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-b3efe142595e"></a>
+
+<details>
+<summary>HistoricalBinding.lean — 36 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean`
+
+Imports: `RetrospectiveBinding`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.HistoricalBinding.actual_history_retained](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L63) | 63 |
+| [Generative.HistoricalBinding.acquired_history_supplies_past_route](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L68) | 68 |
+| [Generative.HistoricalBinding.acquired_history_supplies_binding_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L75) | 75 |
+| [Generative.HistoricalBinding.later_deterioration_does_not_invalidate_earlier_content](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L133) | 133 |
+| [Generative.HistoricalBinding.later_improvement_does_not_rehabilitate_earlier_false_reports](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L138) | 138 |
+| [Generative.HistoricalBinding.late_assessment_alone_leaves_the_old_binding_open](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L143) | 143 |
+| [Generative.HistoricalBinding.known_change_without_location_does_not_settle_the_old_binding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L149) | 149 |
+| [Generative.HistoricalBinding.unknown_packet_disturbance_preserves_uncertainty](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L153) | 153 |
+| [Generative.HistoricalBinding.omitted_temporary_change_defeats_backward_confidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L159) | 159 |
+| [Generative.HistoricalBinding.same_current_assessment_can_support_different_past_bindings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L168) | 168 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [Generative.HistoricalBinding.Moment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L15) (L15)
+- `structure` [Generative.HistoricalBinding.History](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L19) (L19)
+- `def` [Generative.HistoricalBinding.routeAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L26) (L26)
+- `abbrev` [Generative.HistoricalBinding.Observation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L32) (L32)
+- `abbrev` [Generative.HistoricalBinding.Instruction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L33) (L33)
+- `def` [Generative.HistoricalBinding.acquire](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L35) (L35)
+- `def` [Generative.HistoricalBinding.fits](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L39) (L39)
+- `def` [Generative.HistoricalBinding.learn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L42) (L42)
+- `def` [Generative.HistoricalBinding.routesAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L45) (L45)
+- `structure` [Generative.HistoricalBinding.TimedPacket](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L49) (L49)
+- `def` [Generative.HistoricalBinding.bindingView](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L56) (L56)
+- `def` [Generative.HistoricalBinding.allHistories](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L97) (L97)
+- `def` [Generative.HistoricalBinding.changes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L101) (L101)
+- `def` [Generative.HistoricalBinding.envelope](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L106) (L106)
+- `def` [Generative.HistoricalBinding.secure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L108) (L108)
+- `def` [Generative.HistoricalBinding.vulnerable](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L109) (L109)
+- `def` [Generative.HistoricalBinding.deterioration](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L110) (L110)
+- `def` [Generative.HistoricalBinding.improvement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L111) (L111)
+- `def` [Generative.HistoricalBinding.concealedExcursion](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L112) (L112)
+- `def` [Generative.HistoricalBinding.constantSecure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L113) (L113)
+- `def` [Generative.HistoricalBinding.controls](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L115) (L115)
+- `def` [Generative.HistoricalBinding.lateControl](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L119) (L119)
+- `def` [Generative.HistoricalBinding.splitControls](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L120) (L120)
+- `def` [Generative.HistoricalBinding.packetFaults](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L125) (L125)
+- `def` [Generative.HistoricalBinding.packet](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L126) (L126)
+- `def` [Generative.HistoricalBinding.answer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean#L129) (L129)
 
 </details>
 
@@ -346,7 +708,7 @@ Imports: `GenerativeClosure`, `Depletion`
 <details>
 <summary>JointInterpretation.lean — 12 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean`
 
@@ -570,6 +932,61 @@ Imports: `Std`
 
 </details>
 
+<a id="module-048ae15d8789"></a>
+
+<details>
+<summary>RetrospectiveBinding.lean — 36 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean`
+
+Imports: `SourceReliance`, `AcquiredBinding`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.RetrospectiveBinding.covered_packet_preserves_atomic_content](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L59) | 59 |
+| [Generative.RetrospectiveBinding.acquired_routes_supply_binding_coverage](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L68) | 68 |
+| [Generative.RetrospectiveBinding.later_observation_preserves_naming_packets](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L94) | 94 |
+| [Generative.RetrospectiveBinding.observe_preserves_support_account](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L99) | 99 |
+| [Generative.RetrospectiveBinding.exhausted_memory_cannot_acquire_calibration](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L107) | 107 |
+| [Generative.RetrospectiveBinding.prior_naming_alone_leaves_both_forms_unresolved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L123) | 123 |
+| [Generative.RetrospectiveBinding.late_calibration_is_acquired_without_new_naming](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L127) | 127 |
+| [Generative.RetrospectiveBinding.late_calibration_changes_both_bindings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L132) | 132 |
+| [Generative.RetrospectiveBinding.retrospective_bindings_read_every_finite_sequence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L136) | 136 |
+| [Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L145) | 145 |
+| [Generative.RetrospectiveBinding.acquired_reinterpretation_reaches_actual_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L155) | 155 |
+| [Generative.RetrospectiveBinding.actual_history_preserves_prior_learning](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L160) | 160 |
+| [Generative.RetrospectiveBinding.retained_interpretation_can_exceed_execution_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L166) | 166 |
+| [Generative.RetrospectiveBinding.calibration_without_retained_naming_cannot_bind](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L170) | 170 |
+| [Generative.RetrospectiveBinding.partial_calibration_preserves_binding_uncertainty](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L173) | 173 |
+| [Generative.RetrospectiveBinding.channel_identity_matters_to_later_binding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L180) | 180 |
+| [Generative.RetrospectiveBinding.inherited_omitted_route_can_make_reinterpretation_wrong](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L189) | 189 |
+| [Generative.RetrospectiveBinding.later_challenge_suspends_without_deleting_the_old_packet](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L195) | 195 |
+| [Generative.RetrospectiveBinding.backward_transfer_can_fail_after_a_real_route_change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L206) | 206 |
+| [Generative.RetrospectiveBinding.packet_and_later_calibration_do_not_reveal_the_past_route](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L210) | 210 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [Generative.RetrospectiveBinding.Packet](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L16) (L16)
+- `structure` [Generative.RetrospectiveBinding.Memory](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L21) (L21)
+- `def` [Generative.RetrospectiveBinding.debit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L27) (L27)
+- `def` [Generative.RetrospectiveBinding.receive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L33) (L33)
+- `def` [Generative.RetrospectiveBinding.observe](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L38) (L38)
+- `def` [Generative.RetrospectiveBinding.calibrate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L43) (L43)
+- `def` [Generative.RetrospectiveBinding.routes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L46) (L46)
+- `def` [Generative.RetrospectiveBinding.alternatives](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L49) (L49)
+- `def` [Generative.RetrospectiveBinding.bindingView](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L55) (L55)
+- `def` [Generative.RetrospectiveBinding.secureRoute](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L111) (L111)
+- `def` [Generative.RetrospectiveBinding.start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L112) (L112)
+- `def` [Generative.RetrospectiveBinding.named](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L116) (L116)
+- `def` [Generative.RetrospectiveBinding.retrospective](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L120) (L120)
+- `def` [Generative.RetrospectiveBinding.jointFailureMemory](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L185) (L185)
+- `def` [Generative.RetrospectiveBinding.challenged](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L192) (L192)
+- `def` [Generative.RetrospectiveBinding.changedRouteHistory](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean#L202) (L202)
+
+</details>
+
 <a id="module-6fa299ebe0e7"></a>
 
 <details>
@@ -604,6 +1021,52 @@ Imports: `Std`
 - `def` [Generative.ScientificCompatibility.Compatible](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean#L18) (L18)
 - `def` [Generative.ScientificCompatibility.MandatoryCompatibility](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean#L20) (L20)
 - `def` [Generative.ScientificCompatibility.historyConstraint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean#L102) (L102)
+
+</details>
+
+<a id="module-a906d342f4df"></a>
+
+<details>
+<summary>ScientificInquiryNecessity.lean — 27 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.ScientificInquiryNecessity.tally_add](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L28) | 28 |
+| [Generative.ScientificInquiryNecessity.tally_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L34) | 34 |
+| [Generative.ScientificInquiryNecessity.pointwise_coverage_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L42) | 42 |
+| [Generative.ScientificInquiryNecessity.fallible_inquiry_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L56) | 56 |
+| [Generative.ScientificInquiryNecessity.error_budgets_require_difference](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L68) | 68 |
+| [Generative.ScientificInquiryNecessity.blind_coverage_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L78) | 78 |
+| [Generative.ScientificInquiryNecessity.common_processing_cannot_add_difference](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L90) | 90 |
+| [Generative.ScientificInquiryNecessity.tally_as_unit_weight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L102) | 102 |
+| [Generative.ScientificInquiryNecessity.distributional_coverage_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L111) | 111 |
+| [Generative.ScientificInquiryNecessity.likelihood_attains_overlap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L130) | 130 |
+| [Generative.ScientificInquiryNecessity.overlap_plus_excess](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L142) | 142 |
+| [Generative.ScientificInquiryNecessity.run_preserves_relation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L156) | 156 |
+| [Generative.ScientificInquiryNecessity.adaptive_blindness_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L165) | 165 |
+| [Generative.ScientificInquiryNecessity.excludes_blind_realization](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L196) | 196 |
+| [Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L208) | 208 |
+| [Generative.ScientificInquiryNecessity.ten_percent_errors_require_eighty_distinctions](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L225) | 225 |
+| [Generative.ScientificInquiryNecessity.sharp_fallible_witness](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L241) | 241 |
+| [Generative.ScientificInquiryNecessity.abstention_is_not_discrimination](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L247) | 247 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Generative.ScientificInquiryNecessity.tally](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L14) (L14)
+- `def` [Generative.ScientificInquiryNecessity.committed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L18) (L18)
+- `def` [Generative.ScientificInquiryNecessity.wrong](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L22) (L22)
+- `def` [Generative.ScientificInquiryNecessity.apart](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L26) (L26)
+- `def` [Generative.ScientificInquiryNecessity.likelihoodRead](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L127) (L127)
+- `def` [Generative.ScientificInquiryNecessity.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L150) (L150)
+- `def` [Generative.ScientificInquiryNecessity.cases5](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L237) (L237)
+- `def` [Generative.ScientificInquiryNecessity.evidence0](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L238) (L238)
+- `def` [Generative.ScientificInquiryNecessity.evidence1](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean#L239) (L239)
 
 </details>
 
