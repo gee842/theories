@@ -234,6 +234,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean)
 
+## formed-copying-registration ← inherited-structural-copying
+
+`formal-reuse` — registered_operation_refines 将注册后的运行对应到旧步骤；registered_inheritance 实际调用 copied_structure_inherits。 / registered_operation_refines relates registered execution to the old steps; registered_inheritance directly uses copied_structure_inherits.
+
+**Producer output / 上游输出:** 旧逐项复制在非空路径与明确供给下形成同结构后继。 / The old tokenwise copying process forms an identical daughter under its nonempty-path and declared-supply conditions.
+
+**Consumer input / 下游输入:** 新过程的工作投影经完整配准及顺序一致性对应到旧复制。 / The new work projection refines the old copying process under complete registration and order consistency.
+
+**Retained conditions / 保留条件:** 连接在所比较的连续复制操作中保持；损失／错位的混合历史不自动满足。 / Contacts remain stable during the compared copying operations; mixed histories with loss/displacement need not qualify.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingRegistration.lean)
+
 ## formed-software-continuation ← market-finite-support-obstruction
 
 `interpretive` — 以既有失败定理的固定扩展／供给范围为边界，检查真实组织改组中被省略的关系；不构造Lean适配。 / Uses the inherited obstruction theorem’s fixed expansion/provision scope to examine relationships omitted by that market account; no Lean adapter is constructed.
@@ -514,6 +526,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean)
 
+## relational-reading-comparison ← relational-renewal-classification
+
+`formal-reuse` — 导入 RelationalRenewal，直接调用 overdraw_consuming、within_renewal_renewing、within_renewal_sustains、independent_overdraw_persists 与 renewing_not_consuming。 / Imports RelationalRenewal and calls overdraw_consuming, within_renewal_renewing, within_renewal_sustains, independent_overdraw_persists and renewing_not_consuming directly.
+
+**Producer output / 上游输出:** overdraw_consuming：焦点形成为 ConsumingIn，且自某步 T 起维持性形成不再发生。 / overdraw_consuming: the focal formation is ConsumingIn, and from some step T the sustaining formation is never active.
+
+**Consumer input / 下游输入:** overdraw_relational_extension 由此把焦点发生排除在根据之外，并以 T 时的维持性发生作为扩展新增的根据。 / overdraw_relational_extension excludes the focal events from the grounds and takes the sustaining event at T as the extension's new ground.
+
+**Retained conditions / 保留条件:** 同一规律，0 < needG，needF ≤ needG，自 T0 起超额取用；另需 needG ≤ start 以支持无焦点的对照接续。 / Same Law, 0 < needG, needF ≤ needG, overdraw from T0; additionally needG ≤ start for the course without the focal formation.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean)
+
 ## reserved-shutdown-during-recovery ← recoverable-mediated-change
 
 `formal-reuse` — admission_establishes_stop_access 与 recovery_attempt_keeps_stop_margin 直接复用准备、tick 及 crash 的证据相容性；再接入实际停止和有限周期完成。 / admission_establishes_stop_access and recovery_attempt_keeps_stop_margin directly reuse evidence coherence from preparation, tick and crash; this then connects to executed stopping and finite-cycle completion.
@@ -629,6 +653,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 库存限于此位置可及的生命内容；正面相关性取此位置的意义；容差与分级连通成立。 / Inventory restricted to living content reachable by the position; positive relevance is the position's significance; tolerance and graded connection hold.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
+
+## supported-renewal-recovery ← relational-renewal-classification
+
+`application` — 应用既有 Law 与展开定义，不把旧不可返回定理当作正面恢复结论的前提。源模块在本次闭包中重新实查。 / Applies the existing Law and unfolding definitions; the prior no-return theorem is not a premise of positive recovery. The source module is freshly checked in this closure.
+
+**Producer output / 上游输出:** 给定输入历史产生的 level T、活动支持及门控递推。 / The input history produces level T, activity support and the gated recurrence.
+
+**Consumer input / 下游输入:** 修复窗口起点的支持及其后有限正净贡献；或两项活动同时失去支持。 / Support at the repair-window start and finite positive net contribution, or simultaneous loss of both supports.
+
+**Retained conditions / 保留条件:** 同一规律、阈值和递推；无第三条供给。正面定理增加有限窗口前提。 / Same law, thresholds and recurrence; no third supply. The positive theorem adds the finite-window premise.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean)
 
 ## theory-of-becoming-foundation ← becoming-context-coherence
 

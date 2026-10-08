@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-84 migrated records: 80 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+87 migrated records: 83 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -44,6 +44,7 @@
 | `finite-granularity-question-recovery` | [有限操作粒度的问答翻译与历史恢复 / Question translation and history recovery across finite operation scales](records/finite-granularity-question-recovery.md) | theorem | recorded-checked |
 | `finite-joining-tree-lifting` | [有限接合树从指定片段提升 / Finite joining trees lift from specified fragments](records/finite-joining-tree-lifting.md) | theorem | recorded-checked |
 | `finite-trace-transport` | [保步映射传递有限历史 / Step-preserving maps transport finite traces](records/finite-trace-transport.md) | theorem | recorded-checked |
+| `formed-copying-registration` | [形成的配准关系改变复制保真度 / Formed registration changes copying fidelity](records/formed-copying-registration.md) | theorem | recorded-checked |
 | `formed-goal-revision-continuation` | [取得根据的目的修订与实际接续 / Acquired grounds, goal revision and actual continuation](records/formed-goal-revision-continuation.md) | theorem | recorded-checked |
 | `formed-software-continuation` | [共同软件活动的接续与依存限度 / Continuation and dependence within shared software activity](records/formed-software-continuation.md) | assessment | reviewed-scoped |
 | `fulfillment-chance-floor` | [实际履行导出同律机会下界 / Fulfillment implies a same-law chance floor](records/fulfillment-chance-floor.md) | theorem | recorded-checked |
@@ -77,12 +78,13 @@
 | `positive-ground-open-futures` | [可见未来中的确定正面根据与开放形态 / Certain positive ground with open forms in visible futures](records/positive-ground-open-futures.md) | theorem | recorded-checked |
 | `practical-judgment-g0-j` | [G0/J 下的一般实践判断 / Practical judgment under G0/J](records/practical-judgment-g0-j.md) | argument | reviewed-scoped |
 | `prefix-observation-loss` | [全部前缀问答仍可遗漏中途失续 / All prefix questions can still omit an intermediate loss](records/prefix-observation-loss.md) | theorem | recorded-checked |
-| `protection-priority-excludes-uniform-aggregation` | [基本条件优先排除均匀聚合 / Basic-condition priority excludes uniform aggregation](records/protection-priority-excludes-uniform-aggregation.md) | theorem | recorded-checked |
+| `protection-priority-excludes-uniform-aggregation` | [基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示 / Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score](records/protection-priority-excludes-uniform-aggregation.md) | theorem | recorded-checked |
 | `recoverable-mediated-change` | [中断改变后的证据恢复与纠正边界 / Evidence recovery and corrective-access limits after interrupted change](records/recoverable-mediated-change.md) | theorem | recorded-checked |
 | `recurrent-chain-assembly` | [材料准备接入重复链状生成 / Prepared material joins recurrent chain formation](records/recurrent-chain-assembly.md) | theorem | recorded-checked |
 | `relational-generative-comparison` | [共同生成比较所需的关系信息 / Relational information required for a joint-generative comparison](records/relational-generative-comparison.md) | theorem | recorded-checked |
+| `relational-reading-comparison` | [以关系读生成：比较原则把消耗型形成排在其不发生之下 / Read relationally, comparison ranks consuming formation below its absence](records/relational-reading-comparison.md) | theorem | recorded-checked |
 | `relational-renewal-classification` | [参与关系中的更新与消耗：关系性分类 / Renewing and consuming as a relation to participated conditions](records/relational-renewal-classification.md) | theorem | recorded-checked |
-| `renewing-consuming-formation` | [更新与消耗的形成：生生不息的动力学区分 / Renewing and consuming formation: the dynamics that separate ceaseless generation](records/renewing-consuming-formation.md) | theorem | recorded-checked |
+| `renewing-consuming-formation` | [更新与消耗的形成：一个磨损规律类中的动力学区分 / Renewing and consuming formation: a dynamical distinction in one wear-law class](records/renewing-consuming-formation.md) | theorem | recorded-checked |
 | `reserved-shutdown-during-recovery` | [恢复期间保留停止能力 / Reserved shutdown during incomplete recovery](records/reserved-shutdown-during-recovery.md) | theorem | recorded-checked |
 | `residual-continuation-correspondence` | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](records/residual-continuation-correspondence.md) | theorem | recorded-checked |
 | `retained-reference-joining-recovery` | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](records/retained-reference-joining-recovery.md) | theorem | recorded-checked |
@@ -91,6 +93,7 @@
 | `scientific-inquiry-foundation` | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](records/scientific-inquiry-foundation.md) | target | open |
 | `self-good-reachable-g0` | [自我之善经一元关系推出可及范围的 G0 / Self-good grounds G0 over reachable generation in the monist ontology](records/self-good-reachable-g0.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
+| `supported-renewal-recovery` | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](records/supported-renewal-recovery.md) | theorem | recorded-checked |
 | `theory-of-becoming-foundation` | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](records/theory-of-becoming-foundation.md) | target | open |
 | `trace-law-equivalence` | [逐步规律与端点历史等价 / Step laws and endpoint traces](records/trace-law-equivalence.md) | theorem | recorded-checked |
 | `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |

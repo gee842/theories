@@ -1,0 +1,25 @@
+'ProtectionPriorityRival.Claim' does not depend on any axioms
+'ProtectionPriorityRival.realized' does not depend on any axioms
+'ProtectionPriorityRival.generative' does not depend on any axioms
+'ProtectionPriorityRival.inventory' does not depend on any axioms
+'ProtectionPriorityRival.protect' does not depend on any axioms
+'ProtectionPriorityRival.gain' does not depend on any axioms
+'ProtectionPriorityRival.extension_shape' depends on axioms: [propext, Quot.sound]
+'ProtectionPriorityRival.successor_extends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProtectionPriorityRival.g0_recognizes_traded_gains' does not depend on any axioms
+'ProtectionPriorityRival.priority_satisfies_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProtectionPriorityRival.priority_never_trades' depends on axioms: [propext, Quot.sound]
+'ProtectionPriorityRival.weighted' does not depend on any axioms
+'ProtectionPriorityRival.weighted_satisfies_comparison' depends on axioms: [propext, Quot.sound]
+'ProtectionPriorityRival.weighted_trades' depends on axioms: [propext]
+'ProtectionPriorityRival.comparison_does_not_yield_priority' depends on axioms: [propext, Quot.sound]
+'ProtectionPriorityRival.every_nat_score_trades' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProtectionPriorityRival.no_nat_score_represents_priority' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProtectionPriorityRival.g0_leaves_ordering_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProtectionPriorityRival.priority_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProtectionPriorityRival.num' does not depend on any axioms
+'ProtectionPriorityRival.den' does not depend on any axioms
+'ProtectionPriorityRival.ratioBetter' does not depend on any axioms
+'ProtectionPriorityRival.ratio_bounded' depends on axioms: [propext, Quot.sound]
+'ProtectionPriorityRival.ratio_agrees_with_priority' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProtectionPriorityRival.bounded_score_represents_priority' depends on axioms: [propext, Classical.choice, Quot.sound]

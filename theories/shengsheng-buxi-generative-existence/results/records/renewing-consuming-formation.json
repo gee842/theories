@@ -2,29 +2,29 @@
   "schema_version": 1,
   "id": "renewing-consuming-formation",
   "title": {
-    "zh": "更新与消耗的形成：生生不息的动力学区分",
-    "en": "Renewing and consuming formation: the dynamics that separate ceaseless generation"
+    "zh": "更新与消耗的形成：一个磨损规律类中的动力学区分",
+    "en": "Renewing and consuming formation: a dynamical distinction in one wear-law class"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-08T18:56:05.941008+00:00",
   "claim": {
-    "zh": "在一个明确的局部磨损规律下，同一展开中的形成若在更新速率之内，便每步都有进一步形成、永不停止；若持续超出更新并因此磨损进行更新的组织，整个展开的累计形成以所持条件加三角更新预算为界，并自该时刻起停止。与其共享条件的其他形成，无论怎样分配，都随之有界并停止，尽管它本身原可生生不息。消耗型形成起初可以形成得更多，预算之后持续形成超过每一种消耗型接续。逐事件读取的 G0 同时承认两者的形成事件；把它们分开的是不含规范谓词的动力学性质。",
-    "en": "Under an explicit local wear law, formation within the renewal rate continues at every step without end. Formation persistently beyond renewal, which wears the organization that renews its conditions, has a whole-unfolding total bounded by held conditions plus a triangular renewal budget and ceases from that time. Other formation sharing those conditions, under any allocation, is bounded and ceases with it, although on its own it would be ceaseless. Consuming formation can form more at first; after the budget, sustained formation exceeds every consuming continuation. Read event by event, G0 grants positive relevance to both continuations' formation; what separates them is a dynamical property containing no normative predicate."
+    "zh": "在一个明确的不可恢复磨损规律下，同一展开中的形成若在更新速率之内，便每步都有进一步形成，更新能力保持不变；若压力持续超出当前更新速率，整个展开的累计形成以所持条件加三角更新预算为界，并自该时刻起停止，更新能力自第一步超出起永久下降。共享这些条件的形成，无论怎样分配，都随之停止；两个部分各自都在更新之内、只是合起来超出时也是如此。消耗型形成起初可以形成得更多，一步计数把它排在前面；预算之后，每一种更新内的接续都超过每一种超出型接续。以每个形成事件为生成内容的宽读法下，形式 G0 同时承认两者，无损比较 C 在两者之间不适用。两种形式读法 Ceaseless 与 KeepsCapacity 都把它们分开，且彼此不同。这些区分不含规范谓词，对符号中立；把它们认作生生，是读法与对应。",
+    "en": "Under an explicit no-recovery wear law, formation within the renewal rate continues at every step and keeps its renewal capacity. Formation whose pressure persistently exceeds the current renewal rate has a whole-unfolding total bounded by held conditions plus a triangular renewal budget, ceases from that time, and permanently loses capacity from its first excess. Formation sharing those conditions, under any allocation, ceases with it, including when two parts are each within renewal and only jointly exceed it. Consuming formation can form more at first, so a one-step count ranks it first; after the budget, every within-renewal continuation exceeds every beyond-current one. Under the broad reading that counts every formation event as generative, formal G0 recognizes both and the no-loss comparison C does not apply between them. The formal readings Ceaseless and KeepsCapacity each separate them and differ from each other. These distinctions contain no normative predicate and are sign-neutral; identifying them with 生生 is a reading and correspondence question."
   },
   "hypotheses": [
     {
-      "zh": "所给 WearLaw：压力不超过更新时更新组织不变；超过时（且速率为正）速率严格下降；速率从不上升。这是局部规律，不是对一切过程的断言。",
-      "en": "The supplied WearLaw: pressure within renewal leaves the renewing organization unchanged; pressure beyond it (with positive rate) strictly lowers the rate; the rate never rises. A local law, not a claim about every process."
+      "zh": "所给 WearLaw：压力不超过更新时更新组织不变；超过时（且速率为正）速率严格下降；速率从不上升，也不恢复。这是局部规律，不是对一切过程的断言，并承担了区分的大部分内容。",
+      "en": "The supplied WearLaw: pressure within renewal leaves the renewing organization unchanged; pressure beyond it (with positive rate) strictly lowers the rate; the rate never rises or recovers. A local law, not a claim about every process, and it carries much of the distinction's content."
     },
     {
-      "zh": "“超出更新”指每步压力都超过初始更新速率；“更新之内”指每步压力在 1 与初始速率之间。",
-      "en": "Beyond renewal means every step's pressure exceeds the initial renewal rate; within renewal means each step's pressure lies between 1 and that rate."
+      "zh": "“超出”指每步压力都超过当时的更新速率（BeyondCurrent）；相对初始速率的 BeyondRenewal 更强，其结论作为推论保留。“更新之内”指每步压力在 1 与初始速率之间；KeepsCapacity 的刻画允许压力为 0。",
+      "en": "Beyond means each step's pressure exceeds the then-current rate (BeyondCurrent); BeyondRenewal, relative to the initial rate, is stronger and its results are kept as corollaries. Within renewal means each step's pressure lies between 1 and the initial rate; the KeepsCapacity characterization allows zero pressure."
     },
     {
-      "zh": "B 部分明示使用 GenerativeComparison 的 G0，并采用把每个已实现形成事件都算作生成内容的宽范围读法；Ceaseless 是 AI 对“生生不息”的形式读法。",
-      "en": "Part B explicitly uses G0 from GenerativeComparison with the broad reading that counts every realized formation event as generative; Ceaseless is the AI's formal reading of 生生不息."
+      "zh": "B 部分明示使用 GenerativeComparison 的 G0 与 C，采用把每个已实现形成事件都算作生成内容的宽读法，以表明这种读法分不开两者；它是 AI 的形式化，不是 Ren 的 G0，后者的对象是生生。Ceaseless 与 KeepsCapacity 是 AI 的形式读法。",
+      "en": "Part B explicitly uses G0 and C from GenerativeComparison with the broad reading that counts every realized formation event as generative, to show what that reading cannot separate; it is the AI's formalization, not Ren's G0, whose object is 生生. Ceaseless and KeepsCapacity are the AI's formal readings."
     }
   ],
   "correspondence": {
@@ -34,29 +34,41 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
   "aliases": [
     "RenewingFormation.within_renewal_ceaseless",
+    "RenewingFormation.beyond_current_bounded",
+    "RenewingFormation.beyond_current_ceases",
     "RenewingFormation.beyond_renewal_bounded",
     "RenewingFormation.beyond_renewal_ceases",
+    "RenewingFormation.joint_excess_ends_shared_formation",
     "RenewingFormation.shared_formation_ceases",
     "RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation",
+    "RenewingFormation.jointly_exceeding_parts_end_shared_formation",
+    "RenewingFormation.within_eventually_exceeds_every_beyond",
     "RenewingFormation.sustained_eventually_exceeds_every_consuming",
     "RenewingFormation.consuming_forms_more_first",
-    "RenewingFormation.event_reading_favors_both",
-    "RenewingFormation.whole_direction_separates"
+    "RenewingFormation.keeps_capacity_iff",
+    "RenewingFormation.beyond_loses_capacity_at_once",
+    "RenewingFormation.rest_keeps_capacity_not_ceaseless",
+    "RenewingFormation.wears_yet_ceaseless",
+    "RenewingFormation.event_reading_recognizes_both",
+    "RenewingFormation.comparison_does_not_apply",
+    "RenewingFormation.event_comparison_ranks_rest_below",
+    "RenewingFormation.ceaseless_separates",
+    "RenewingFormation.capacity_separates"
   ],
   "dependencies": [],
   "related": [
     {
       "id": "positive-ground-open-futures",
       "detail": {
-        "zh": "解释关联：该结果给出逐项正面根据；本结果说明逐事件读取不能分开更新型与消耗型形成，而整体方向的读法能。未修改其证明。",
-        "en": "Interpretive connection: that result gives per-item positive ground; this one shows that an event-by-event reading cannot separate renewing from consuming formation, whereas the whole-direction reading can. Its proof is unchanged."
+        "zh": "解释关联：该结果给出逐项正面根据；本结果说明以每个新组织为生成内容的宽读法分不开更新型与消耗型形成，并在一个规律类中给出能分开它们的描述性区分。未修改其证明。",
+        "en": "Interpretive connection: that result gives per-item positive ground; this one shows that the broad reading counting every new organization as generative cannot separate renewing from consuming formation, and supplies a descriptive distinction that does within one law class. Its proof is unchanged."
       }
     },
     {
       "id": "theory-of-becoming-foundation",
       "detail": {
-        "zh": "解释关联：在同一局部规律下，同时给出生生不息的形成与自我终止、并终止共享形成的形成，属于生成之论所要解释的生成与退化的分化；不完成其开放目标。",
-        "en": "Interpretive connection: under one local law it exhibits both ceaseless formation and formation that ends itself and shared formation, a differentiation of generation and degeneration that the Theory of Becoming seeks to explain; it does not complete that open target."
+        "zh": "解释关联：在同一局部规律下，同时给出每步都有形成的形成与自我终止、并终止共享形成的形成，属于生成之论所要解释的生成与退化的分化；不完成其开放目标。",
+        "en": "Interpretive connection: under one local law it exhibits both formation continuing at every step and formation that ends itself and shared formation, a differentiation of generation and degeneration that the Theory of Becoming seeks to explain; it does not complete that open target."
       }
     },
     {
@@ -69,8 +81,8 @@
     {
       "id": "alignment-direction-g0-j",
       "detail": {
-        "zh": "解释关联：按局部生成计数优化的系统可能偏好起初形成更多、随后终止共享形成的接续。",
-        "en": "Interpretive connection: a system optimizing local generative counts may prefer continuations that form more at first and later end shared formation."
+        "zh": "解释关联：一步的形成计数把消耗型接续排在持续形成之前，而在同一规律下这种消耗随后终止共享形成。未形式化任何优化器。",
+        "en": "Interpretive connection: a one-step count of formation ranks a consuming continuation above sustained formation, although under the same law such consumption later ends shared formation. No optimizer is formalized."
       }
     },
     {
@@ -79,47 +91,80 @@
         "en": "General classification proved independently the same day: renewing or consuming as a relation to the conditions of participated relations, over arbitrary unfoldings, with irreversibility derived from the renewer's dependence and externalizing consumption covered. This record's wear-law bound and G0 interface are not part of it. No import either way.",
         "zh": "同日独立证明的一般分类：按形成与所参与关系条件的关系区分更新与消耗，适用于任意展开；不可逆由更新者的依存推出，并覆盖外部化消耗。本记录的磨损规律界与 G0 接口不在其中。互不导入。"
       }
+    },
+    {
+      "id": "relational-reading-comparison",
+      "detail": {
+        "zh": "比较关联：在关系读法下，C 把规律族中每一种超出更新的取用严格排在它不发生的接续之下；在本结果的逐事件宽读法下，C 不适用（comparison_does_not_apply），二者相容。互不导入。",
+        "en": "Comparative connection: under a relational reading, C strictly ranks every overdraw in that law family below the course without it; under this record's broad event reading C does not apply (comparison_does_not_apply), and the two agree. No import either way."
+      }
     }
   ],
   "counterexamples": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
       "detail": {
-        "zh": "局部计数反转整体比较：只要有所持条件，就有消耗型压力在第一步形成得比持续形成更多。",
-        "en": "Local counts reverse the whole comparison: with any held stock, some consuming pressure forms more than sustained formation at the first step."
+        "zh": "一步计数反转整体比较：只要有所持条件，就有消耗型压力在第一步形成得比持续形成更多。",
+        "en": "A one-step count reverses the whole comparison: with any held stock, some consuming pressure forms more than sustained formation at the first step."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
+      "detail": {
+        "zh": "两种读法的反例：休息一步保持能力却不满足 Ceaseless；冲高一次、此后在降低速率内持续，满足 Ceaseless 却永久失去能力（wears_yet_ceaseless）。",
+        "en": "Counterexamples between readings: resting one step keeps capacity but is not Ceaseless; surging once and then continuing at the reduced rate is Ceaseless yet permanently loses capacity (wears_yet_ceaseless)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
+      "detail": {
+        "zh": "表示上的限度：逐事件读法下 C 把一次休息严格排在持续形成之下（event_comparison_ranks_rest_below），因为本规律省略了休息的恢复作用。",
+        "en": "Representational limit: under the event reading C ranks a single rest strictly below sustained formation (event_comparison_ranks_rest_below), because this law omits rest's restorative role."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
       "detail": {
-        "zh": "本规律中更新组织不恢复；先冲高后回落的情形不在定理内。停止本身未被判为坏，有限完成、休息与适当结束仍属 G0 所承认的生。",
-        "en": "The renewing organization does not recover under this law, and temporary surges are outside the theorems. Ceasing is not judged bad; finite fulfillment, rest and appropriate ending remain within G0."
+        "zh": "本规律中更新组织不恢复、也不增长；“更多”与复杂度上升未被表示。停止本身未被判为坏，有限完成、休息与适当结束仍属 G0 所承认的生。",
+        "en": "The renewing organization neither recovers nor grows under this law; 更多 and rising complexity are not represented. Ceasing is not judged bad; finite fulfillment, rest and appropriate ending remain within G0."
       }
     }
   ],
   "limitations": {
-    "zh": "完成的是一个规律类中的动力学区分及其与 G0 的接口；该类中消耗者依存于所耗条件。不覆盖外部化的消耗（焦点形成不依存于所耗条件），此时焦点或总形成的持续都不决定类别。不证明真实过程满足该规律、更新型形成总是更好、停止有伦理缺陷，或整体方向的读法是 G0 唯一正确的解释。",
-    "en": "Completes a dynamical separation within one law class, where the consumer depends on what it consumes, and its interface with G0. It does not cover externalizing consumption (a focal formation not depending on the condition it draws), where neither focal nor total persistence decides the class. It does not show that real processes satisfy the law, that renewing formation is always better, that ceasing is ethically defective, or that the whole-direction reading is the uniquely correct interpretation of G0."
+    "zh": "完成的是一个不可恢复磨损规律类中的描述性区分及其与 G0、C 的接口；该类只有一个共享条件，消耗者依存于它。区分是所给规律的推论。不覆盖外部化的消耗；不表示恢复、增长或“更多”；不证明形式读法就是生生、真实过程满足该规律、消耗更坏、停止有伦理缺陷，也没有形式化任何优化器。",
+    "en": "Completes a descriptive distinction within one no-recovery wear-law class, with one shared condition on which the consumer depends, and its interface with G0 and C; the distinction follows from the supplied law. It does not cover externalizing consumption, does not represent recovery, growth or 更多, and does not show that the formal readings are 生生, that real processes satisfy the law, that consuming is worse, or that ceasing is defective; no optimizer is formalized."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 检查通过：RenewingFormation 21项定理／35项声明审计（14项无依赖；1项 propext；14项 propext 与 Quot.sound；6项另含 Classical.choice，来自 omega 与 by_cases）；无自定义公理、sorry 或 native_decide。同次运行编译 GenerativeComparison、PracticalJudgment 与 ProtectionPriorityRival 及3个控制例。定理数含辅助引理。尚无独立审查。",
-    "en": "Successful Lean 4.29.1 check: RenewingFormation 21 theorems/35 declaration audits (14 with no dependency, 1 propext, 14 propext and Quot.sound, 6 also Classical.choice from omega and by_cases); no custom axiom, sorry or native_decide. The same run compiled GenerativeComparison, PracticalJudgment, ProtectionPriorityRival and 3 control examples. Theorem counts include helper lemmas. Not yet independently reviewed."
+    "zh": "Lean 4.29.1 检查通过（运行 20261008T192627.406862Z）：RenewingFormation 42项定理／60项声明审计（22项无依赖；1项 propext；25项 propext 与 Quot.sound；12项另含 Classical.choice）；无自定义公理、sorry 或 native_decide；同次编译 GenerativeComparison、PracticalJudgment、ProtectionPriorityRival 与4个控制例。定理数含辅助引理与推论。2026-10-09 独立审查附更正后接受了首版（21项定理），更正已依审查完成并经 Lean 检查，审查者未复审更正版；见 GENERATIVE-DISCRIMINATION-REVIEW。",
+    "en": "Successful Lean 4.29.1 check (run 20261008T192627.406862Z): RenewingFormation 42 theorems/60 declaration audits (22 with no dependency, 1 propext, 25 propext and Quot.sound, 12 also Classical.choice); no custom axiom, sorry or native_decide; the same run compiled GenerativeComparison, PracticalJudgment, ProtectionPriorityRival and 4 controls. Counts include helpers and corollaries. An independent review on 9 October accepted the first version (21 theorems) with corrections; the corrections were made as directed and Lean-checked, but the reviewer did not re-review the corrected version; see GENERATIVE-DISCRIMINATION-REVIEW."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
       "role": "proof",
-      "sha256": "2fe6aa4e9d0d43e205c06733fdc04e29a1322cc6d261c3df1972c411e530231b",
+      "sha256": "6ec58296e4837aa1aea7b9cb2fdd85df07890be782912f4916548a2489ea8023",
       "declarations": [
         "RenewingFormation.within_renewal_ceaseless",
+        "RenewingFormation.beyond_current_bounded",
+        "RenewingFormation.beyond_current_ceases",
         "RenewingFormation.beyond_renewal_bounded",
         "RenewingFormation.beyond_renewal_ceases",
+        "RenewingFormation.joint_excess_ends_shared_formation",
         "RenewingFormation.shared_formation_ceases",
         "RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation",
+        "RenewingFormation.jointly_exceeding_parts_end_shared_formation",
+        "RenewingFormation.within_eventually_exceeds_every_beyond",
         "RenewingFormation.sustained_eventually_exceeds_every_consuming",
         "RenewingFormation.consuming_forms_more_first",
-        "RenewingFormation.event_reading_favors_both",
-        "RenewingFormation.whole_direction_separates"
+        "RenewingFormation.keeps_capacity_iff",
+        "RenewingFormation.beyond_loses_capacity_at_once",
+        "RenewingFormation.rest_keeps_capacity_not_ceaseless",
+        "RenewingFormation.wears_yet_ceaseless",
+        "RenewingFormation.event_reading_recognizes_both",
+        "RenewingFormation.comparison_does_not_apply",
+        "RenewingFormation.event_comparison_ranks_rest_below",
+        "RenewingFormation.ceaseless_separates",
+        "RenewingFormation.capacity_separates"
       ]
     },
     {
@@ -133,25 +178,31 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
       "role": "receipt",
-      "sha256": "c3bd3a499f0ecf957d98dd921c7a72e3b570eb9b338dbd7058e963b5d04ca5d0",
+      "sha256": "77b9642d4336c32d80c9c74d7b9e60790305ab19812fcaefdd40584c48161a07",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
       "role": "statement",
-      "sha256": "e9ca792e8df93308e92c6b901bfca61d8cf3e8d0a39908ffef55c36c84af8576",
+      "sha256": "a1e7660a2a405543fece9e97418b1115d4dc868bbb499f30a18bbcefbec9e42a",
       "declarations": []
     },
     {
       "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "78bae7f18fffae2ebafb733e6b2ba4a04bb9c3c2e2e984b23d59db3ded59f2c0",
+      "sha256": "cdc0ae61453b294f941c6f096a5579746b5c175ef4fd22ad2b9013d8aad7253b",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md",
       "role": "provenance",
       "sha256": "e65a81f79b812627ad4f7cb0f26da96f79487a7d72c727a0fd969053f7920c8e",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md",
+      "role": "review",
+      "sha256": "f5fa2e390ae30afda3616244b4b016383bad2fc576f28f814b6b19c3773c70fe",
       "declarations": []
     }
   ],
@@ -172,8 +223,8 @@
     }
   ],
   "next_delta": {
-    "zh": "把规律类扩展到更新组织可以恢复、压力先冲高后回落的情形，并检查界限怎样改变；为具体过程建立对规律的经验对应；以 J1/J3 判断终止共享形成的损失。",
-    "en": "Extend the law class to recovering renewal and temporary surges and check how the bound changes; establish empirical correspondence for particular processes; assess the loss of ending shared formation under J1/J3."
+    "zh": "把规律类扩展到更新组织可以恢复或增长的情形，表示休息的恢复作用与“更多”，并检查界限怎样改变；为具体过程建立对规律的经验对应；以 J1/J3 判断终止共享形成的损失。",
+    "en": "Extend the law class to recovering or growing renewal, representing rest's restorative role and 更多, and check how the bound changes; establish empirical correspondence for particular processes; assess the loss of ending shared formation under J1/J3."
   },
   "history": [
     {
@@ -191,6 +242,10 @@
     {
       "en": "9 October 2026: added the related link to relational-renewal-classification at the authoring session's invitation; claim, sources and hashes unchanged.",
       "zh": "2026年10月9日：应本记录作者会话之邀，新增指向 relational-renewal-classification 的关联；主张、来源与哈希不变。"
+    },
+    {
+      "zh": "2026-10-09：独立审查附更正后接受（GENERATIVE-DISCRIMINATION-REVIEW）。按审查：假设弱化为超出当前速率（BeyondCurrent），原 beyond_renewal_* 作为推论保留原名；共享形成推广到联合超出；新增 KeepsCapacity 读法及两种读法的反例；新增 comparison_does_not_apply 与 event_comparison_ranks_rest_below；event_reading_favors_both 改名 event_reading_recognizes_both，whole_direction_separates 改名 ceaseless_separates。依 Ren 同日追问，写明宽读法不是 G0。与 ResourceContinuation 的差别改为磨损反馈（该处到达可依赖状态）。首版回执保留于 generative-discrimination-checks/20261008T185033.210526Z。同一 ID：主张的对象不变，范围在首次审查中修正。",
+      "en": "2026-10-09: independently reviewed and accepted with corrections (GENERATIVE-DISCRIMINATION-REVIEW). Per the review, the hypothesis is weakened to excess over the current rate (BeyondCurrent), with the original beyond_renewal_* kept as corollaries under their names; shared formation is generalized to joint excess; the KeepsCapacity reading and counterexamples between readings are added; comparison_does_not_apply and event_comparison_ranks_rest_below are added; event_reading_favors_both is renamed event_reading_recognizes_both and whole_direction_separates ceaseless_separates. Following Ren's follow-up the same day, the broad reading is marked as not G0. The difference from ResourceContinuation is restated as wear feedback (its arrival may depend on state). The first receipt is preserved in generative-discrimination-checks/20261008T185033.210526Z. Same ID: the claim's object is unchanged and its scope was corrected in first review."
     }
   ]
 }

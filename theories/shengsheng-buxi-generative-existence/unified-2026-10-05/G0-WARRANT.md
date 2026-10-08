@@ -10,6 +10,8 @@ This chapter does not prove G0 or convert it into a theorem. It organizes the ki
 
 **G0: living and further generation within the whole have basic positive normative significance.** It is an adopted axiom. Every normative foundation has a starting commitment; what remains open is comparative: what G0 explains, how much it assumes, which positions it addresses, and what would revise it.
 
+G0 的对象从一开始就是生生。Ren 追问：“我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”（[来源](../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)）。生成与退化作为关系不重叠，但一次发生可以同时参与二者。把形式库存中的 `generative` 读成“任何已实现的新组织”，是 AI 的宽读法，不是 G0。
+
 G0 只给出效价：实现了的生及继续生成有正面意义。把它变成某一位置的理由，靠的是直接实践解释 D／P；把各种理由变成比较与要求，靠的是 J1–J4；把它们用于具体处境，靠的是对应条件 E。下面各节分别说明这些承诺获得支持的方式。
 
 G0 supplies valence only. Direct articulation (D/P) makes it a reason for a position, J1–J4 turn reasons into comparisons and requirements, and E applies them to a situation.
@@ -24,35 +26,43 @@ Care, repair, creation, learning, renewal, rest, finite fulfillment and construc
 
 ### 2.2 区分力 / Discriminating content
 
-逐项读取 G0，即每一项实现了的新组织都有正面意义，会把同样的正面意义给予持续形成新组织却毁坏其依存条件的过程，例如肿瘤式增殖与自我强化的竞争性扩张。Ren 的判准本身是整体的：“一种整体的，不断创造更多生的方向”，并且明确不缩成“已被独立判好的可能性”（[原话](../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)）。
+若把形式 G0 的库存读宽，使每一项实现了的新组织都算作生成内容，形式 G0 就会把同样的正面意义给予那些持续形成新组织、却毁坏其依存条件的过程。肿瘤式增殖是这样，把代价外部化的竞争性扩张也是这样；后者不在下面的规律类中，见本节“这一区分的范围”。
 
-问题是：整体判准能否不借先行的好坏筛选，就把两者分开？[RenewingFormation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean) 在一个明确的局部规律类中回答“能”：
+这是宽读法的问题，不是 G0 的问题（§1）。Ren 的判准是整体的：“一种整体的，不断创造更多生的方向”，并且明确不缩成“已被独立判好的可能性”（[原话](../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)）。
 
-- 形成压力在更新之内时，形成生生不息（`within_renewal_ceaseless`）；
-- 压力持续超出更新、并因此磨损进行更新的组织时，整个展开的累计形成以 `stock + tri renew` 为界，并在这一时刻之前停止（`beyond_renewal_bounded`、`beyond_renewal_ceases`）；
-- 共享这些条件的其他形成，无论怎样分配，都随之停止，尽管它们本身原可生生不息（`consuming_part_ends_otherwise_ceaseless_formation`）；
-- 消耗型形成起初可以形成得更多；预算之后，持续形成超过每一种消耗型接续（`consuming_forms_more_first`、`sustained_eventually_exceeds_every_consuming`）；
-- 逐事件读取的 G0 同时承认两者的形成事件；把它们分开的，是动力学上的 `Ceaseless`（`event_reading_favors_both`、`whole_direction_separates`）。
+问题因此是：能否不借先行的好坏筛选，以可检查的描述性内容认出哪些形成属于生生？[RenewingFormation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean) 在一个明确的不可恢复磨损规律类中，以 AI 的两个形式读法回答“能”：
 
-Read event by event, G0 grants positive relevance to malignant formation as well. Under one supplied law class, the theorems show that Ren's whole-direction criterion separates formation within renewal (ceaseless) from formation that consumes the renewing organization (bounded, ceasing, and ending co-dependent formation), without any prior goodness filter, although the consuming process forms more at first. The separating content is dynamical and contains no normative predicate. G0 supplies valence; these theorems supply discrimination.
+- 形成压力在更新之内时，每步都有形成（`within_renewal_ceaseless`），更新能力保持不变；允许休息时也是如此（`keeps_capacity_iff`）；
+- 压力持续超出当前更新速率时，整个展开的累计形成以 `stock + tri renew` 为界，并在这一时刻之前停止（`beyond_current_bounded`、`beyond_current_ceases`）；从第一步超出起，更新能力永久下降（`beyond_loses_capacity_at_once`）；
+- 共享这些条件的其他形成，无论怎样分配，都随之停止（`consuming_part_ends_otherwise_ceaseless_formation`）。两个部分各自都在更新之内、只是合起来超出时，也是如此（`jointly_exceeding_parts_end_shared_formation`）；
+- 消耗型形成起初可以形成得更多，按一步计数它排在前面；预算之后，每一种更新内的接续都超过每一种超出型接续（`consuming_forms_more_first`、`within_eventually_exceeds_every_beyond`）；
+- 逐事件读取的 G0 同时承认两者的形成事件，无损比较 C 在两者之间也不适用，因为互不为生成扩展。分开它们的是动力学性质 `Ceaseless` 与 `KeepsCapacity`（`event_reading_recognizes_both`、`comparison_does_not_apply`、`ceaseless_separates`、`capacity_separates`）。
 
-“生生不息”在此的形式读法是：在所表示的范围内，每一步都有进一步的形成。这是 AI 的重构。停止本身没有被判为坏的，有限完成、休息与适当结束仍是 G0 所承认的生。伦理上更尖锐的关系，是终止那些本身并未超出更新的共享形成；对它的判断仍须经 J1／J3 与对应条件。真实过程是否满足所给磨损规律，须各自取得证据。
+这些区分是所给规律的推论，规律本身承担了大部分内容。定理按构造对符号中立：哪一侧在 G0 的对象之内，Lean 不提供。
 
-**这一区分的范围。** 在上述规律类中，消耗者本身依存于它所消耗的条件，因此终将终止自身。另一种情形不在其中：一个形成取用另一关系所依存的条件，自身却不依存于它。它可以每步都在、形成无界，而那一关系永久失去其条件；把代价外部化的“赢家”式扩张，即 meta-attractor 的情形，就是这样。此时，焦点形成自身的 `Ceaseless` 以至总形成的 `Ceaseless`，都识别不出这种消耗。起决定作用的是关系性质：是否有依存的关系永久失去其条件。另一分支的 `relational-renewal-classification`（登记中）在任意展开上给出这一分类，并证明焦点形成自身的活动与形成不决定其类别。因此，“整体方向”须读作每个依存关系的接续，而不是任何一个形成自身的持续或总量的持续。
+- 生生有正面意义，就是 G0 本身，不是另欠的前提。
+- 不是 Lean 结果、须另行承担的有两项。其一，这两个形式读法确实刻画了生生，这是 AI 的读法与对应。其二，“消耗更坏”这一比较由 C 承担。本模块的逐事件宽读法下，C 不适用。在关系读法下，另一会话的 [relational-reading-comparison](../results/records/relational-reading-comparison.md) 已检查：规律族中每一种超出更新的取用，都被 C 严格排在它不发生的接续之下。
 
-Scope of this separation: in this law class the consumer depends on what it consumes and so ends itself. A formation drawing on a condition that another relation depends on, without depending on it itself, can stay active and form without bound while that relation loses its condition for ever (the externalizing "winner", the meta-attractor case). Neither its own nor total ceaselessness detects this. The deciding property is relational: whether some dependent relation permanently loses its condition. The whole direction must be read over every dependent relation's continuation.
+Read with a broad inventory where every new organization counts as generative, formal G0 grants positive relevance to malignant formation as well; that is a defect of the broad reading, not of G0, whose object is 生生. Under one supplied no-recovery law class, the AI's formal readings `Ceaseless` and `KeepsCapacity` separate formation within renewal from formation that persistently exceeds and wears renewal, without any goodness predicate; under the broad event reading, the no-loss comparison C does not apply between them. The theorems are sign-neutral. That these readings capture 生生 is the AI's reading and a correspondence question; that consuming is worse is a comparison carried by C, checked under a relational reading in relational-reading-comparison. The distinctions follow from the supplied law, which carries much of the content.
+
+两个形式读法各有缺陷。`Ceaseless`（每一步都有形成）捕捉“不息”，但一次休息就使它不成立，而先冲高、再在降低的速率内持续的形成会永久失去更新能力，它却仍然成立（`rest_keeps_capacity_not_ceaseless`、`wears_yet_ceaseless`）。`KeepsCapacity`（更新组织保持其速率）容许休息，且在第一步超出时就判定。两者都不表示“更多”或复杂度上升，因为本规律不许更新速率增长。停止本身没有被判为坏的，有限完成、休息与适当结束仍是 G0 所承认的生。不过本表示省略了休息的恢复作用：逐事件读法下，C 甚至把一次休息严格排在持续形成之下（`event_comparison_ranks_rest_below`）。这是表示中省略的关系，不是对理论的反驳。伦理上更尖锐的关系，是终止那些本身并未超出更新的共享形成；对它的判断仍须经 J1／J3 与对应条件。真实过程是否满足所给磨损规律，须各自取得证据。
+
+**这一区分的范围。** 在上述规律类中，消耗者本身依存于它所消耗的条件，因此终将终止自身。另一种情形不在其中：一个形成取用另一关系所依存的条件，自身却不依存于它。它可以每步都在、形成无界，而那一关系永久失去其条件；把代价外部化的“赢家”式扩张，即 meta-attractor 的情形，就是这样。此时，焦点形成自身的 `Ceaseless` 以至总形成的 `Ceaseless`，都识别不出这种消耗。起决定作用的是关系性质：是否有依存的关系永久失去其条件。另一分支的 `relational-renewal-classification`（登记中）在任意展开上给出这一分类，并证明焦点形成自身的活动与形成不决定其类别。因此，“整体方向”须读作每个依存关系的接续，而不是任何一个形成自身的持续或总量的持续。上面的 `ceaseless_separates` 用的是总形成的持续；它之所以足够，是因为本规律类只有一个共享条件，消耗者又依存于它，于是总形成的持续与依存关系的接续恰好一致。在这个规律类之外，二者不一致。
+
+Scope of this separation: in this law class the consumer depends on what it consumes and so ends itself. A formation drawing on a condition that another relation depends on, without depending on it itself, can stay active and form without bound while that relation loses its condition for ever (the externalizing "winner", the meta-attractor case). Neither its own nor total ceaselessness detects this. The deciding property is relational: whether some dependent relation permanently loses its condition. The whole direction must be read over every dependent relation's continuation. `ceaseless_separates` uses total persistence, which suffices only because this law class has one shared condition on which the consumer depends.
 
 ### 2.3 与对手的判别 / Discrimination against rivals
 
-**均匀聚合。** [ProtectionPriorityRival.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) 检查了一个保护对增益的情境：
+**自然数评分与有界评分。** [ProtectionPriorityRival.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) 检查了一个构造的保护对增益情境：
 
-- J2 的排序满足无损扩展比较 C，并且从不以任何数量的增益交换基本条件；
-- 另有一个满足 C 的标量排序会交换，因此 J2 不能由 G0 与 C 推出；
-- 每一个满足 C 的自然数评分都会在有限数量的增益处交换。
+- G0、无损扩展比较 C 与 J2 的排序可同时成立，J2 从不以任何数量的增益交换基本条件（`g0_leaves_ordering_open`、`priority_never_trades`）；
+- G0 只约束正面相关性，不约束排序：它同样与一个满足 C、却会交换的排序并存。因此 J2 不由 C 推出；说它“不由 G0 推出”是平凡的（`comparison_does_not_yield_priority`）；
+- 每一个满足 C 的自然数评分都会在 `score 0 + 2` 项增益处交换（`every_nat_score_trades`）。起作用的是严格递增的自然数评分每步至少加一；
+- 一个有界的有理评分（保护为 1，`k` 项增益为 `k/(k+1)`）满足 C、从不交换，并在每一对选项上与 J2 一致（`ratio_agrees_with_priority`、`bounded_score_represents_priority`）。
 
-由此，J2 恰好排除“每项增益至少加一个单位”的整个聚合对手类。实数值、边际递减且有上界的评分没有被排除，仍是实质对手。此前已检查的结果分别说明：`no_protection_trade_by_count` 给出 J2 的不交换性质；`compatible_cutoffs_disagree` 与 `loss_sensitivity_alone_supplies_no_cutoff` 说明损失敏感性本身不给出截断；`both_tradeoff_options_survive` 说明 C 在真实取舍中留下不止一个选项。
+因此，这个情境把 J2 与自然数值（单位步长）评分分开，却分不开 J2 与有界、边际递减的评分。后者在此恰好表示 J2，仍是实质对手；要分开它们，需要别的情境。J2 不由 C 推出，是“C 对取舍不置可否”这一既有结果在保护对增益情境中的实例：`both_appraisals_respect_all_extensions`、`tradeoff_has_opposite_strict_appraisals`、`loss_sensitivity_alone_supplies_no_cutoff` 已有此意，`compatible_cutoffs_disagree` 与 `both_tradeoff_options_survive` 也相关。`no_protection_trade_by_count` 给出 J2 的不交换性质。新增的是三点：J2 在此满足 C；自然数评分不能表示 J2；有界评分能。
 
-J2 is independent of G0 and C, and excludes exactly the uniform-unit aggregation class in this situation; bounded-sensitivity rivals remain.
+In one constructed situation, G0, C and J2 hold together; G0 constrains relevance, not ordering, so J2 does not follow from C. Every natural-number score satisfying C trades, whereas a bounded rational score represents J2 exactly. The situation separates J2 from unit-step aggregation only; bounded-sensitivity rivals remain.
 
 **以后来认可为最终尺度。** [生成对齐修订](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md)中的对手一主张，后来的充分认可就足以证明形成过程正当。本框架拒绝其充分性：后来无异议不会使已发生的损失没有发生，J2 也不允许以更多认可换取仍存在的基本剥夺。
 
@@ -66,9 +76,9 @@ Partially completed on 9 October: starting from the evaluator's own self-good S0
 
 ### 2.4 对齐上的丰饶性 / Fruitfulness for alignment
 
-在 G0、J1–J4 与 E 之下，人类指令、机构目标和 AI 当前目的都可受伦理评价；一个具体案例已显示，哪些事实变化会改变判断（[对齐方向](ALIGNMENT-DIRECTION.md) §5）。§2.2 的结果为对齐补上一个可检查的警示：一个按局部生成计数优化的系统，可能偏好起初形成更多、随后终止共享形成的消耗型接续。按每个依存关系的接续来读的整体方向，不会犯这个错误；只看系统自身能否持续，则会漏掉把代价外部化的扩张。
+在 G0、J1–J4 与 E 之下，人类指令、机构目标和 AI 当前目的都可受伦理评价；一个具体案例已显示，哪些事实变化会改变判断（[对齐方向](ALIGNMENT-DIRECTION.md) §5）。§2.2 的结果为对齐补上一个已检查的警示：按一步的形成计数，消耗型接续排在持续形成之前；而在同一规律下，这种消耗随后会终止共享形成。按每个依存关系的接续来读的整体方向，旨在避免这一错误，所需的区分由 `relational-renewal-classification` 提供。至于哪一种优化目标避免它，尚无已检查的结论：这里没有形式化任何优化器。只看系统自身能否持续，则会漏掉把代价外部化的扩张，以及磨损一次后稳定的情形。
 
-Under the same commitments, human instructions, institutional aims and AI goals are open to ethical evaluation. §2.2 adds a checkable caution: optimizing local generative counts can prefer consuming continuations that form more at first and later end shared formation. Reading the whole direction over every dependent relation avoids this; checking only whether the system itself persists misses externalizing expansion.
+Under the same commitments, human instructions, institutional aims and AI goals are open to ethical evaluation. §2.2 adds a checked caution: a one-step count of formation ranks a consuming continuation above sustained formation, although under the same law such consumption later ends co-dependent formation. Reading the whole direction over every dependent relation aims to avoid this, with the needed distinction supplied by `relational-renewal-classification`. No optimizer is formalized, so there is no checked result about which objective avoids it. Checking only whether the system itself persists misses externalizing expansion and one-off wear.
 
 ## 3. 形式检查各承担什么 / What each formal check contributes
 
@@ -76,11 +86,11 @@ Under the same commitments, human instructions, institutional aims and AI goals 
 |---|---|---|
 | [PositiveGroundUncertainty](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean) | 前提足迹：正面结论只需 G0 与实际对应，不需整体改善、完整排序或未来积分；量词结构（每段接续都有某种生成，而没有一种固定形态遍及所有接续）；证书可撤回 | G0 为真 |
 | [PositionedPositiveReason](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean) | 前提足迹：每个能通达回应的位置都有该理由，不论是否认同；这种认同无关性来自 D，不来自 G0 与 E | D 本身的根据 |
-| [RenewingFormation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean) | 动力学区分：更新型与依存于所耗条件的消耗型形成、共享形成的终止、局部与整体比较的反转 | 外部化的消耗；真实过程对规律的对应；停止的伦理评价 |
-| [ProtectionPriorityRival](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) | J2 相对 G0/C 的独立性；被排除的聚合对手类 | 有界敏感性对手；基本分类 |
+| [RenewingFormation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean) | 所给不可恢复磨损规律下的描述性区分：两种形式读法（`Ceaseless`、`KeepsCapacity`）、共享与联合超出时共享形成的终止、一步计数与整体比较的反转；逐事件 G0 与 C 都不分开两者 | 形式读法即生生的认定（读法与对应）；“消耗更坏”的比较（由 C 承担，关系读法下见 relational-reading-comparison）；外部化的消耗；“更多”与复杂度上升；真实过程对规律的对应；停止的伦理评价 |
+| [ProtectionPriorityRival](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) | 在一个构造情境中：J2 相对 C 的独立性（G0 不约束排序）；自然数评分都交换；有界评分恰好表示 J2 | 把 J2 与有界敏感性对手分开；其他情境；基本分类 |
 | [AlignmentDirection](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean)、[PracticalJudgment](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean) | 案例中的判断确由所述前提推出；交叉基本损失不排序 | 前提正确；部署可靠 |
 
-Lean verifies inference, premise footprint, dynamical discrimination and independence. It cannot verify the axiom. The README evidence lines state these roles rather than counts alone.
+Lean verifies inference, premise footprint, descriptive dynamical distinctions and independence. It cannot verify the axiom, and the dynamical theorems are sign-neutral by construction: that their formal readings capture 生生 is a reading and correspondence question. The README evidence lines state these roles rather than counts alone. An [independent review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) of the two new modules and this chapter accepted them with corrections, which have been applied.
 
 ## 4. 什么会修订 G0 / What would revise G0
 
@@ -91,6 +101,6 @@ Lean verifies inference, premise footprint, dynamical discrimination and indepen
 
 ## 5. 仍未完成 / Open
 
-普遍实践根据（`universal-practical-warrant`）仍是开放目标。[位置索引的正面理由](../results/records/positioned-positive-reason.md)已检查：每个能通达回应的位置都有该理由，而认同无关性是 D 的内容，不是 G0 的推论。因此“普遍”在形式上有了对应，但它依赖 D；D 本身尚未从行动者自身立场得到论证。§2.2 的规律类没有更新组织的恢复、先冲高后回落的情形，也没有外部化的消耗。各项对应仍需具体证据。
+普遍实践根据（`universal-practical-warrant`）仍是开放目标。[位置索引的正面理由](../results/records/positioned-positive-reason.md)已检查：每个能通达回应的位置都有该理由，而认同无关性是 D 的内容，不是 G0 的推论。因此“普遍”在形式上有了对应，但它依赖 D；D 本身尚未从行动者自身立场得到论证。§2.2 的规律类没有更新组织的恢复、休息的恢复作用、“更多”或复杂度上升，也没有外部化的消耗；先冲高后回落的情形只由 `KeepsCapacity` 识别，`Ceaseless` 识别不了。§2.3 的情境分不开 J2 与有界敏感性对手。各项对应仍需具体证据。
 
 The universal practical warrant remains open. Position-indexed reasons are now checked, and endorsement independence is located in D rather than G0; D itself is not yet argued from an agent's own standpoint.

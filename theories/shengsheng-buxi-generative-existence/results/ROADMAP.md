@@ -6,6 +6,33 @@
 
 Directions preserve authorization and scope; completion status is obtained from linked result records where migrated. A goal belonging to another session is not silently assigned to the current session. / 方向记录保留授权范围；已迁移成果的完成状态只取自其记录，不把别的会话目标默认为本会话目标。
 
+<a id="cognition-learning-evolution"></a>
+## 认知、学习与演化心理的相连解释 / Connected explanation of cognition, learning and evolutionary psychology
+
+**Scope / 范围:** 本会话独立授权的完整认知目标；当前从学习和跨层次选择的连接推进。 / This session's independently authorized full cognitive objective; the current continuation connects learning to selection across scales.
+
+完成认知、学习与演化心理的相连解释，说明形成、保持和使用怎样经实际后果改变组织及其学习、评价和接续方式。 / Complete the connected explanation of cognition, learning and evolutionary psychology, including how formation, retention and use change organization and its learning, evaluation and continuation through actual consequences.
+
+**Premises / 前提:** 同一关系展开；公开实际作用、更新、传递、支持和对应条件。多层次选择不默认单一报酬、固定层级或必然有利方向。保留G0/J的独立规范范围。 / Begin with one relational unfolding; disclose operation, updating, transmission, support and correspondence conditions. Multilevel selection presupposes neither one reward, a fixed hierarchy nor inevitable favorable direction. Preserve the separate normative scope of G0/J.
+
+**Completion criterion / 完成条件:** 遵从现有认知章节十项完整解释职责。完成一个条件连接或否定不成立的普遍推论不完成全部目标；不得重开已完成机制。当前连接须综合正面机制、实际形式检查、原典对应与实质反审。 / Retain the ten full-explanation obligations in the existing cognition chapter. Completing a conditional connection or rejecting an unsupported universal inference does not complete the whole objective; completed mechanisms are not reopened. The current connection requires affirmative mechanism, actual formal checks, primary-source correspondence and substantive counterreview.
+
+[2026-10-08-cognition-learning-evolution-goal](../../../sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md) · [2026-10-09-learning-recursive-selection](../../../sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md) · [COGNITION-LEARNING-AND-EVOLUTION](../unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md)
+
+[acquired-binding-compositional-use](records/acquired-binding-compositional-use.md): `recorded-checked`
+
+[enacted-scene-binding](records/enacted-scene-binding.md): `recorded-checked`
+
+[encounter-control-and-retention](records/encounter-control-and-retention.md): `reviewed-scoped`
+
+[encounter-selection-and-revision](records/encounter-selection-and-revision.md): `recorded-checked`
+
+[historical-source-binding](records/historical-source-binding.md): `recorded-checked`
+
+[naming-attention-coverage](records/naming-attention-coverage.md): `reviewed-scoped`
+
+[retrospective-source-binding](records/retrospective-source-binding.md): `recorded-checked`
+
 <a id="collective-problems"></a>
 ## 共同问题与可修订目的 / Common problems and revisable purposes
 
@@ -158,6 +185,8 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 [conditional-foundation-assessment](records/conditional-foundation-assessment.md): `reviewed-scoped`
 
 [endpoint-loss-and-return](records/endpoint-loss-and-return.md): `recorded-checked`
+
+[relational-reading-comparison](records/relational-reading-comparison.md): `recorded-checked`
 
 [relational-renewal-classification](records/relational-renewal-classification.md): `recorded-checked`
 

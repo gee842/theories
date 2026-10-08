@@ -43,8 +43,8 @@
     {
       "id": "protection-priority-excludes-uniform-aggregation",
       "detail": {
-        "zh": "复用本结果的 Better 与 no_protection_trade_by_count，补上 J2 相对 G0/C 的独立性及被排除的对手类；本论证不变。",
-        "en": "Reuses this result's Better and no_protection_trade_by_count, adding J2's independence from G0/C and the excluded rival class; this argument is unchanged."
+        "zh": "复用本结果的 Better 与 no_protection_trade_by_count，在一个构造情境中补上 J2 相对 C 的独立性、被排除的自然数评分类与一致的有界评分；本论证不变。",
+        "en": "Reuses this result's Better and no_protection_trade_by_count, adding, in one constructed situation, J2's independence from C, the excluded natural-number score class and an agreeing bounded score; this argument is unchanged."
       }
     }
   ],
@@ -137,6 +137,10 @@
     {
       "zh": "2026-10-09：依 Ren 指示，证据行改为说明 Lean 检查承担什么，并引用 J2 排除均匀聚合的新结果；本论证与范围不变。",
       "en": "2026-10-09: following Ren's direction, the evidence line states what the Lean checks contribute and cites the new result that J2 excludes uniform aggregation; this argument and its scope are unchanged."
+    },
+    {
+      "zh": "2026-10-09：依独立审查（GENERATIVE-DISCRIMINATION-REVIEW X7、P1）修正证据行：补上“在一个构造情境中”，并写明有界评分与 J2 一致。本论证与范围不变。",
+      "en": "2026-10-09: evidence line corrected after independent review (GENERATIVE-DISCRIMINATION-REVIEW X7, P1): it now says \"in one constructed situation\" and that a bounded score agrees with J2. This argument and its scope are unchanged."
     }
   ],
   "overview": {
@@ -149,8 +153,8 @@
       "zh": "G0 加公开的 J1–J4 承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。J1–J4 是明示的附加承诺，并非单由 G0 推出。"
     },
     "evidence": {
-      "zh": "一般原则范围获独立验收。Lean 检查所述判断确由 G0、J1–J4 与对应条件推出，包括交叉基本损失不排序之处。另一项检查说明 J2 增加了什么：它满足无损比较，却从不以增益交换基本条件；而每一个满足该比较的自然数评分都会交换。有界敏感性对手仍然存在。J1–J4 是经论证的承诺，不是 Lean 的结果。",
-      "en": "Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from G0, J1–J4 and correspondence, including where crossed basic losses stay unranked. A separate check shows what J2 adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; bounded-sensitivity rivals remain. J1–J4 are argued commitments, not Lean results."
+      "zh": "一般原则范围获独立验收。Lean 检查所述判断确由 G0、J1–J4 与对应条件推出，包括交叉基本损失不排序之处。在一个构造的保护对增益情境中，另一项检查说明 J2 增加了什么：它满足无损比较，却从不以增益交换基本条件；每一个满足该比较的自然数评分都会交换，而一个有界评分与 J2 一致，所以有界敏感性对手仍然存在。J1–J4 是经论证的承诺，不是 Lean 的结果。",
+      "en": "Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from G0, J1–J4 and correspondence, including where crossed basic losses stay unranked. In one constructed protection-versus-gains situation, a separate check shows what J2 adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; a bounded score agrees with J2, so bounded-sensitivity rivals remain. J1–J4 are argued commitments, not Lean results."
     }
   }
 }

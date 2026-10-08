@@ -1,0 +1,1103 @@
+{
+  "status": "passed",
+  "utc": "20261008T192627.406862Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "generative-discrimination-checks/20261008T192627.406862Z",
+  "source_sha256": {
+    "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "RenewingFormation": "6ec58296e4837aa1aea7b9cb2fdd85df07890be782912f4916548a2489ea8023",
+    "ProtectionPriorityRival": "e104cc7426693a9f8222397efc9f5e6c49b50f47bbe4fb3b0024c04cf5e71103"
+  },
+  "checker_sha256": {
+    "check_generative_discrimination.py": "6873b98bef1c2519b70e7ad90bb677dfe561edfea31b8890007975e789c9b493",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "RenewingFormation: under a supplied no-recovery wear law, formation within renewal is ceaseless and keeps renewal capacity; formation whose pressure persistently exceeds the current renewal rate has a whole-unfolding total bounded by stock plus the triangular renewal budget and ceases by that budget time; shared formation under any allocation ceases under joint excess, including when each part is within renewal; KeepsCapacity holds exactly when no pressure exceeds the initial rate (positive rate) and differs from Ceaseless on rest and on one-off wear; a one-step count favors consuming formation while every within-renewal continuation exceeds every beyond-current one after the budget. Part A uses no normative predicate. Part B shows that G0 read over every formation event covers both continuations and that the no-loss comparison does not apply between them; any valence attached to the distinction is an interpretive premise. ProtectionPriorityRival: in one protection-versus-gains situation, G0, C and J2 hold together and J2 never trades; G0 leaves the ordering open and a natural-number ordering satisfying C trades; every natural-number score satisfying C trades; a bounded rational score agrees with J2 on every pair. Correspondence of real processes to the law, the basic classification and separation of J2 from bounded-sensitivity rivals remain outside the check.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checked_application_examples": [
+    {
+      "claim": "unitWear instance: consuming forms more at step 1, total stops at budget 6, sustained reaches 14 by step 7",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "unitWear joint instance: two parts at rate 2 jointly form the budget 3 and then nothing; one part alone forms 10 by step 5",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "sign-neutrality: any predicate in the G0 position covers both continuations; the Ceaseless distinction takes no valence argument",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "natural-number rival trades at six gains while basic-condition priority and the bounded ratio score do not",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    }
+  ],
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeComparison",
+      "new": false,
+      "theorems": 11,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Inventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.G0"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Extends"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.GenerativeExtension"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ComparisonPrinciple"
+        },
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Situation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.PracticalArticulation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.SelectionCoherence"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.new_realization_has_positive_relevance"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_irreflexive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.comparison_supplies_situated_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.coherent_selection_survives_filter"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.feasible_restriction_preserves_survivor"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.continual_improvement_has_no_survivor"
+        },
+        {
+          "kind": "abbrev",
+          "name": "GenerativeComparison.Profile"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.profileInventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.count"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.firstAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.secondAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ScoreBetter"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.tradeoffSituation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_appraisals_respect_all_extensions"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.tradeoff_has_opposite_strict_appraisals"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_tradeoff_options_survive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.each_appraisal_has_a_different_coherent_selection"
+        }
+      ],
+      "axiom_dependencies": {
+        "GenerativeComparison.Inventory": [],
+        "GenerativeComparison.G0": [],
+        "GenerativeComparison.Extends": [],
+        "GenerativeComparison.GenerativeExtension": [],
+        "GenerativeComparison.ComparisonPrinciple": [],
+        "GenerativeComparison.Situation": [],
+        "GenerativeComparison.PracticalArticulation": [],
+        "GenerativeComparison.SelectionCoherence": [],
+        "GenerativeComparison.Survives": [],
+        "GenerativeComparison.new_realization_has_positive_relevance": [],
+        "GenerativeComparison.generative_extension_irreflexive": [],
+        "GenerativeComparison.generative_extension_transitive": [],
+        "GenerativeComparison.comparison_supplies_situated_reason": [],
+        "GenerativeComparison.coherent_selection_survives_filter": [],
+        "GenerativeComparison.feasible_restriction_preserves_survivor": [],
+        "GenerativeComparison.continual_improvement_has_no_survivor": [],
+        "GenerativeComparison.Profile": [],
+        "GenerativeComparison.profileInventory": [],
+        "GenerativeComparison.count": [],
+        "GenerativeComparison.firstAppraisal": [],
+        "GenerativeComparison.secondAppraisal": [],
+        "GenerativeComparison.ScoreBetter": [],
+        "GenerativeComparison.tradeoffSituation": [],
+        "GenerativeComparison.both_appraisals_respect_all_extensions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeComparison.tradeoff_has_opposite_strict_appraisals": [
+          "propext"
+        ],
+        "GenerativeComparison.both_tradeoff_options_survive": [],
+        "GenerativeComparison.each_appraisal_has_a_different_coherent_selection": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "PracticalJudgment",
+      "new": false,
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "RenewingFormation",
+      "new": true,
+      "theorems": 42,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "RenewingFormation.Conditions"
+        },
+        {
+          "kind": "structure",
+          "name": "RenewingFormation.WearLaw"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.formedAt"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.next"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.path"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.formed"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.cumulative"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.Ceaseless"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.KeepsCapacity"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.WithinRenewal"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.BeyondRenewal"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.BeyondCurrent"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.tri"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.tri_mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.tri_zero_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.tri_wear"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.budget"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.renewal_never_grows"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.renewal_loss_persists"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.within_renewal_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.within_renewal_ceaseless"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.within_renewal_grows"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_initial_implies_current"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_current_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_current_bounded"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_current_budget_falls"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_current_ceases"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_current_not_ceaseless"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_renewal_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_renewal_bounded"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_renewal_budget_falls"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_renewal_ceases"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_renewal_not_ceaseless"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.joint_excess_ends_shared_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.shared_formation_ceases"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.without_consuming_part_ceaseless"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.jointly_exceeding_parts_end_shared_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.joint_consumption_inhabited"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.sustained_cumulative"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.sustained_eventually_exceeds_every_consuming"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.within_eventually_exceeds_every_beyond"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.consuming_forms_more_first"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.unitWear"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_current_strictly_weaker"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.keeps_capacity_of_within"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.keeps_capacity_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.beyond_loses_capacity_at_once"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.restOnce"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.surgeThenSettle"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.rest_keeps_capacity_not_ceaseless"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.settle_path"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.wears_yet_ceaseless"
+        },
+        {
+          "kind": "def",
+          "name": "RenewingFormation.eventInventory"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.event_reading_recognizes_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.comparison_does_not_apply"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.event_comparison_ranks_rest_below"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.ceaseless_separates"
+        },
+        {
+          "kind": "theorem",
+          "name": "RenewingFormation.capacity_separates"
+        }
+      ],
+      "axiom_dependencies": {
+        "RenewingFormation.Conditions": [],
+        "RenewingFormation.WearLaw": [],
+        "RenewingFormation.formedAt": [],
+        "RenewingFormation.next": [],
+        "RenewingFormation.path": [],
+        "RenewingFormation.formed": [],
+        "RenewingFormation.cumulative": [],
+        "RenewingFormation.Ceaseless": [],
+        "RenewingFormation.KeepsCapacity": [],
+        "RenewingFormation.WithinRenewal": [],
+        "RenewingFormation.BeyondRenewal": [],
+        "RenewingFormation.BeyondCurrent": [],
+        "RenewingFormation.tri": [],
+        "RenewingFormation.tri_mono": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.tri_zero_iff": [
+          "propext"
+        ],
+        "RenewingFormation.tri_wear": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.budget": [],
+        "RenewingFormation.renewal_never_grows": [],
+        "RenewingFormation.renewal_loss_persists": [],
+        "RenewingFormation.within_renewal_invariant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.within_renewal_ceaseless": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.within_renewal_grows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_initial_implies_current": [],
+        "RenewingFormation.beyond_current_invariant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_current_bounded": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_current_budget_falls": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_current_ceases": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_current_not_ceaseless": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_renewal_invariant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_renewal_bounded": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_renewal_budget_falls": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_renewal_ceases": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_renewal_not_ceaseless": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.joint_excess_ends_shared_formation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.shared_formation_ceases": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.without_consuming_part_ceaseless": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.jointly_exceeding_parts_end_shared_formation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.joint_consumption_inhabited": [],
+        "RenewingFormation.sustained_cumulative": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.sustained_eventually_exceeds_every_consuming": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.within_eventually_exceeds_every_beyond": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.consuming_forms_more_first": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.unitWear": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_current_strictly_weaker": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.keeps_capacity_of_within": [],
+        "RenewingFormation.keeps_capacity_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.beyond_loses_capacity_at_once": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.restOnce": [],
+        "RenewingFormation.surgeThenSettle": [],
+        "RenewingFormation.rest_keeps_capacity_not_ceaseless": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.settle_path": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.wears_yet_ceaseless": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.eventInventory": [],
+        "RenewingFormation.event_reading_recognizes_both": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.comparison_does_not_apply": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.event_comparison_ranks_rest_below": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewingFormation.ceaseless_separates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewingFormation.capacity_separates": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ProtectionPriorityRival",
+      "new": true,
+      "theorems": 15,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "ProtectionPriorityRival.Claim"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.realized"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.generative"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.inventory"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.protect"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.extension_shape"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.successor_extends"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.g0_recognizes_traded_gains"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.priority_satisfies_comparison"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.priority_never_trades"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.weighted"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.weighted_satisfies_comparison"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.weighted_trades"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.comparison_does_not_yield_priority"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.every_nat_score_trades"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.no_nat_score_represents_priority"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.g0_leaves_ordering_open"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.priority_iff"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.num"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.den"
+        },
+        {
+          "kind": "def",
+          "name": "ProtectionPriorityRival.ratioBetter"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.ratio_bounded"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.ratio_agrees_with_priority"
+        },
+        {
+          "kind": "theorem",
+          "name": "ProtectionPriorityRival.bounded_score_represents_priority"
+        }
+      ],
+      "axiom_dependencies": {
+        "ProtectionPriorityRival.Claim": [],
+        "ProtectionPriorityRival.realized": [],
+        "ProtectionPriorityRival.generative": [],
+        "ProtectionPriorityRival.inventory": [],
+        "ProtectionPriorityRival.protect": [],
+        "ProtectionPriorityRival.gain": [],
+        "ProtectionPriorityRival.extension_shape": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.successor_extends": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.g0_recognizes_traded_gains": [],
+        "ProtectionPriorityRival.priority_satisfies_comparison": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.priority_never_trades": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.weighted": [],
+        "ProtectionPriorityRival.weighted_satisfies_comparison": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.weighted_trades": [
+          "propext"
+        ],
+        "ProtectionPriorityRival.comparison_does_not_yield_priority": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.every_nat_score_trades": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.no_nat_score_represents_priority": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.g0_leaves_ordering_open": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.priority_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.num": [],
+        "ProtectionPriorityRival.den": [],
+        "ProtectionPriorityRival.ratioBetter": [],
+        "ProtectionPriorityRival.ratio_bounded": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.ratio_agrees_with_priority": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ProtectionPriorityRival.bounded_score_represents_priority": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "Controls.lean": "36c72a368476d6baca4d7aa63841f66bb9c4a7e147a4cae3da4fd8f6b6f6ff98",
+    "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeComparison.lean": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "GenerativeComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeComparisonAxiomAudit.lean": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e",
+    "GenerativeComparisonAxiomAudit.log": "66f7f5742924df733c730fbc3f8c6caf59156c8f5b9bf7bb5c4522e69db4be0f",
+    "GenerativeComparisonSignatures.lean": "bb1012bec6a2f508fa3e308f5ff3c666a651559eab86001b5b46e82013642809",
+    "GenerativeComparisonSignatures.log": "9a1754ab174b2e643d3359d1468c52053ccc3305e7c79e18b2b1ce67663da16f",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "ProtectionPriorityRival.lean": "e104cc7426693a9f8222397efc9f5e6c49b50f47bbe4fb3b0024c04cf5e71103",
+    "ProtectionPriorityRival.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ProtectionPriorityRivalAxiomAudit.lean": "7b6af06e336f5b9904663d1fa795ecbdef402c3d98ee6de7c833e931f8a30f1a",
+    "ProtectionPriorityRivalAxiomAudit.log": "d4c60c1f9dc2fd62373617fa4c3dfe9cfdb843eaf35e5dec8067963ec3013b49",
+    "ProtectionPriorityRivalSignatures.lean": "14916721b7eb73bf5c2442276ea3b40dda8c43d5b1e103ebe970371a2c3dcbdb",
+    "ProtectionPriorityRivalSignatures.log": "2f71b2389867afced27998f816a92a2202fbd624266d65f2c9dc6e790ba250ee",
+    "RenewingFormation.lean": "6ec58296e4837aa1aea7b9cb2fdd85df07890be782912f4916548a2489ea8023",
+    "RenewingFormation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RenewingFormationAxiomAudit.lean": "48c73fb84692039c65a16aef8c66de2036bff8725d1dade40468b3e4a4e01928",
+    "RenewingFormationAxiomAudit.log": "2c0ad31da7d09b3abfc4568f98d1c08999e941187e8f6e02a5f77a44951ab885",
+    "RenewingFormationSignatures.lean": "b2b56906f867c463e2d690a48d7285a5b2c87a80e4ed23f312ca51d85906a90d",
+    "RenewingFormationSignatures.log": "be8777a80fb4379d37bfb8a2f2dbdb619ada14480a554d7fda5d207cbb837443",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_generative_discrimination.py": "6873b98bef1c2519b70e7ad90bb677dfe561edfea31b8890007975e789c9b493",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

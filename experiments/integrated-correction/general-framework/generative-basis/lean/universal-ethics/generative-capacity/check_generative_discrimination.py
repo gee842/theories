@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Checks renewing/consuming formation dynamics and basic-condition priority against scalar rivals."""
+"""Checks renewing/consuming formation dynamics and basic-condition priority against score rivals."""
 from datetime import datetime, timezone
 import json
 import os
@@ -47,20 +47,30 @@ example : cumulative unitWear ⟨3, 2⟩ (fun _ => 2) 1 < cumulative unitWear �
     cumulative unitWear ⟨3, 2⟩ (fun _ => 5) 7 = 6 ∧
     cumulative unitWear ⟨3, 2⟩ (fun _ => 2) 7 = 14 := by decide
 
--- Valence control: any predicate in the G0 position covers both continuations' events;
--- the separation is the ceaseless/non-ceaseless dynamics, which takes no valence argument.
+-- Joint consumption: two parts each at the full rate 2 jointly draw 4; together they form
+-- only the budget 3 and then nothing, whereas either part alone forms 2 at every step.
+example : cumulative unitWear ⟨0, 2⟩ (fun _ => 4) 5 = 3 ∧ formed unitWear ⟨0, 2⟩ (fun _ => 4) 5 = 0 ∧
+    cumulative unitWear ⟨0, 2⟩ (fun _ => 2) 5 = 10 := by decide
+
+-- Sign-neutrality control: any predicate in the G0 position covers both continuations'
+-- events, and the Ceaseless distinction takes no valence argument. Which side a reading
+-- favors is therefore not supplied by these theorems.
 example (V : (Nat → Nat) → Nat × Nat → Prop)
     (anySign : G0 (eventInventory unitWear ⟨3, 2⟩) V) :
     V (fun _ => 5) (0, 2) ∧ V (fun _ => 2) (0, 1) ∧
     Ceaseless unitWear ⟨3, 2⟩ (fun _ => 2) ∧ ¬ Ceaseless unitWear ⟨3, 2⟩ (fun _ => 5) := by
-  refine ⟨(event_reading_favors_both unitWear ⟨3, 2⟩ (by decide) (by decide) V anySign).1,
-    (event_reading_favors_both unitWear ⟨3, 2⟩ (by decide) (by decide) V anySign).2.2 0 1 (by decide),
-    (whole_direction_separates unitWear ⟨3, 2⟩ (by decide) (fun _ => 5) (fun _ => show 2 < 5 by decide)).1,
-    (whole_direction_separates unitWear ⟨3, 2⟩ (by decide) (fun _ => 5) (fun _ => show 2 < 5 by decide)).2⟩
+  have beyond := beyond_initial_implies_current unitWear ⟨3, 2⟩ (fun _ => 5)
+    (fun _ => show 2 < 5 by decide)
+  refine ⟨(event_reading_recognizes_both unitWear ⟨3, 2⟩ (by decide) (by decide) V anySign).1,
+    (event_reading_recognizes_both unitWear ⟨3, 2⟩ (by decide) (by decide) V anySign).2.2 0 1 (by decide),
+    (ceaseless_separates unitWear ⟨3, 2⟩ (by decide) (fun _ => 5) beyond).1,
+    (ceaseless_separates unitWear ⟨3, 2⟩ (by decide) (fun _ => 5) beyond).2⟩
 
--- A concrete scalar rival trades where the basic-condition priority does not.
-example : weighted 5 0 < weighted 5 6 ∧ ¬ PracticalJudgment.Better protect gain 6 0 :=
-  ⟨weighted_trades 5, priority_never_trades 6 (by decide)⟩
+-- A natural-number rival trades where basic-condition priority does not; the bounded
+-- ratio score does not trade and ranks six gains above three.
+example : weighted 5 0 < weighted 5 6 ∧ ¬ PracticalJudgment.Better protect gain 6 0 ∧
+    ¬ (num 0 * den 6 < num 6 * den 0) ∧ (num 3 * den 6 < num 6 * den 3) :=
+  ⟨weighted_trades 5, priority_never_trades 6 (by decide), by decide, by decide⟩
 """
 
 
@@ -79,7 +89,7 @@ def main():
         "retained_run": str(retained.relative_to(HERE)),
         "source_sha256": {name: audit_support.digest(data) for name, data in sources.items()},
         "checker_sha256": {name: audit_support.digest(data) for name, data in helpers.items()},
-        "scope": "RenewingFormation: under a supplied wear law, formation within renewal is ceaseless; formation persistently beyond renewal has a whole-unfolding total bounded by stock plus the triangular renewal budget and ceases by that budget time; co-dependent formation under any allocation ceases with it; consuming formation can form more at first while sustained formation exceeds every consuming continuation after the budget. Part A uses no normative predicate. Part B shows that G0 read over every formation event covers both continuations, so separation comes from the dynamics. ProtectionPriorityRival: in one protection-versus-gains situation, J2's ordering satisfies C and never trades; a scalar ordering satisfies C and trades; every natural-number score satisfying C trades. Correspondence of real processes to the law, the basic classification and bounded-sensitivity rivals remain outside the check."
+        "scope": "RenewingFormation: under a supplied no-recovery wear law, formation within renewal is ceaseless and keeps renewal capacity; formation whose pressure persistently exceeds the current renewal rate has a whole-unfolding total bounded by stock plus the triangular renewal budget and ceases by that budget time; shared formation under any allocation ceases under joint excess, including when each part is within renewal; KeepsCapacity holds exactly when no pressure exceeds the initial rate (positive rate) and differs from Ceaseless on rest and on one-off wear; a one-step count favors consuming formation while every within-renewal continuation exceeds every beyond-current one after the budget. Part A uses no normative predicate. Part B shows that G0 read over every formation event covers both continuations and that the no-loss comparison does not apply between them; any valence attached to the distinction is an interpretive premise. ProtectionPriorityRival: in one protection-versus-gains situation, G0, C and J2 hold together and J2 never trades; G0 leaves the ordering open and a natural-number ordering satisfying C trades; every natural-number score satisfying C trades; a bounded rational score agrees with J2 on every pair. Correspondence of real processes to the law, the basic classification and separation of J2 from bounded-sensitivity rivals remain outside the check."
     }
     records = []
     try:
@@ -142,8 +152,9 @@ def main():
             run(["Controls.lean"], "Controls.log")
             receipt["checked_application_examples"] = [
                 {"claim": "unitWear instance: consuming forms more at step 1, total stops at budget 6, sustained reaches 14 by step 7", "kernel_checked": True, "counted_as_new_theorem": False},
-                {"claim": "any predicate in the G0 position covers both continuations; ceaseless separation takes no valence argument", "kernel_checked": True, "counted_as_new_theorem": False},
-                {"claim": "weighted scalar rival trades at six gains while basic-condition priority does not", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "unitWear joint instance: two parts at rate 2 jointly form the budget 3 and then nothing; one part alone forms 10 by step 5", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "sign-neutrality: any predicate in the G0 position covers both continuations; the Ceaseless distinction takes no valence argument", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "natural-number rival trades at six gains while basic-condition priority and the bounded ratio score do not", "kernel_checked": True, "counted_as_new_theorem": False},
             ]
         receipt["source_unchanged_during_check"] = all(
             SOURCES[name].read_bytes() == data for name, data in sources.items())

@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "protection-priority-excludes-uniform-aggregation",
   "title": {
-    "zh": "基本条件优先排除均匀聚合",
-    "en": "Basic-condition priority excludes uniform aggregation"
+    "zh": "基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示",
+    "en": "Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-08T18:56:05.941008+00:00",
   "claim": {
-    "zh": "在一个保护对增益的情境中，J2 的排序满足无损生成比较 C，并且从不以任何数量的次级增益交换受保护的基本条件；另有满足 C 的标量排序会交换，因此 J2 不能由 G0 与 C 推出；每一个满足 C 的自然数评分都会在有限增益处交换，因而没有这样的评分能表示 J2 在此情境中的判断。",
-    "en": "In one protection-versus-gains situation, J2's ordering satisfies the no-loss generative comparison C and never trades the protected basic condition for any number of secondary gains. A scalar ordering also satisfying C does trade, so J2 does not follow from G0 and C. Every natural-number score satisfying C trades at some finite number of gains, so no such score represents J2's verdict here."
+    "zh": "在一个构造的保护对增益情境中，G0、无损生成比较 C 与 J2 的排序可同时成立，J2 从不以任何数量的次级增益交换受保护的基本条件。G0 只约束正面相关性，不约束排序，它同样与一个满足 C、会交换的排序并存，因此 J2 不由 C 推出。每一个满足 C 的自然数评分都会在 score 0 + 2 项增益处交换，因而没有这样的评分能表示 J2。一个有界有理评分（保护为 1，k 项增益为 k/(k+1)）在每一对选项上与 J2 一致。所以此情境只把 J2 与单位步长的聚合分开。",
+    "en": "In one constructed protection-versus-gains situation, G0, the no-loss generative comparison C and J2's ordering hold together, and J2 never trades the protected basic condition for any number of secondary gains. G0 constrains positive relevance, not ordering: it holds equally alongside a trading ordering satisfying C, so J2 does not follow from C. Every natural-number score satisfying C trades at score 0 + 2 gains, so no such score represents J2. A bounded rational score (1 for protection, k/(k+1) for k gains) agrees with J2 on every pair of options. The situation therefore separates J2 from unit-step aggregation only."
   },
   "hypotheses": [
     {
@@ -19,8 +19,8 @@
       "en": "A single situation: option 0 retains the basic condition with no gain; option k>0 loses it and realizes k generative gains. The basic condition is not counted as new generative content."
     },
     {
-      "zh": "C 取自 GenerativeComparison.ComparisonPrinciple；J2 取自 PracticalJudgment.Better；G0 只用于承认增益的正面意义。",
-      "en": "C is GenerativeComparison.ComparisonPrinciple; J2 is PracticalJudgment.Better; G0 is used only to recognize gains as positively relevant."
+      "zh": "C 取自 GenerativeComparison.ComparisonPrinciple；J2 取自 PracticalJudgment.Better；G0 只用于承认增益的正面意义。“J2 不由 C 推出”是 C 对取舍不置可否这一既有结果（tradeoff_has_opposite_strict_appraisals、loss_sensitivity_alone_supplies_no_cutoff）在此情境的实例。",
+      "en": "C is GenerativeComparison.ComparisonPrinciple; J2 is PracticalJudgment.Better; G0 is used only to recognize gains as positively relevant. That J2 does not follow from C instances the existing result that C is silent on trade-offs (tradeoff_has_opposite_strict_appraisals, loss_sensitivity_alone_supplies_no_cutoff)."
     }
   ],
   "correspondence": {
@@ -31,9 +31,13 @@
   "aliases": [
     "ProtectionPriorityRival.priority_satisfies_comparison",
     "ProtectionPriorityRival.priority_never_trades",
+    "ProtectionPriorityRival.g0_leaves_ordering_open",
     "ProtectionPriorityRival.comparison_does_not_yield_priority",
-    "ProtectionPriorityRival.every_scalar_comparison_trades",
-    "ProtectionPriorityRival.no_scalar_represents_priority",
+    "ProtectionPriorityRival.every_nat_score_trades",
+    "ProtectionPriorityRival.no_nat_score_represents_priority",
+    "ProtectionPriorityRival.priority_iff",
+    "ProtectionPriorityRival.ratio_agrees_with_priority",
+    "ProtectionPriorityRival.bounded_score_represents_priority",
     "ProtectionPriorityRival.g0_recognizes_traded_gains"
   ],
   "dependencies": [],
@@ -41,8 +45,8 @@
     {
       "id": "practical-judgment-g0-j",
       "detail": {
-        "zh": "复用其 Better 与 no_protection_trade_by_count；补上 J2 相对 G0/C 的独立性及被排除的对手类。未修改其证明。",
-        "en": "Reuses its Better and no_protection_trade_by_count, adding J2's independence from G0/C and the excluded rival class. Its proof is unchanged."
+        "zh": "复用其 Better 与 no_protection_trade_by_count；补上 J2 相对 C 的独立性、被排除的自然数评分类，以及与 J2 一致的有界评分。未修改其证明。",
+        "en": "Reuses its Better and no_protection_trade_by_count, adding J2's independence from C, the excluded natural-number score class and a bounded score agreeing with J2. Its proof is unchanged."
       }
     },
     {
@@ -64,37 +68,41 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
       "detail": {
-        "zh": "weighted 0 满足 C，却以一项增益交换基本条件：G0 与 C 不推出 J2。",
-        "en": "weighted 0 satisfies C yet trades the basic condition for one gain: G0 and C do not yield J2."
+        "zh": "weighted 0 满足 C，却以一项增益交换基本条件：C 不推出 J2。",
+        "en": "weighted 0 satisfies C yet trades the basic condition for one gain: C does not yield J2."
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
       "detail": {
-        "zh": "实数值、边际递减且有上界的评分可与 J2 在此例一致，未被排除，仍是实质对手。",
-        "en": "Real-valued scores with bounded, diminishing sensitivity can agree with J2 here; they are not excluded and remain substantive rivals."
+        "zh": "有界有理评分 k/(k+1) 在此情境中与 J2 在每一对选项上一致（ratio_agrees_with_priority）：有界敏感性对手未被排除，仍是实质对手。",
+        "en": "The bounded rational score k/(k+1) agrees with J2 on every pair in this situation (ratio_agrees_with_priority): bounded-sensitivity rivals are not excluded and remain substantive."
       }
     }
   ],
   "limitations": {
-    "zh": "只检查一个情境构造与自然数评分类；不证明 J2 在其他情境中正确、受保护条件确属基本，或有界敏感性对手不成立。",
-    "en": "Checks one situation and the natural-number score class only; it does not show that J2 is right elsewhere, that the protected condition is basic, or that bounded-sensitivity rivals fail."
+    "zh": "只检查一个构造情境；排除的是自然数值（单位步长）评分，不是一般的聚合。不证明 J2 在其他情境中正确、受保护条件确属基本，或有界敏感性对手不成立；在此情境中二者无法区分。记录 ID 中的“uniform aggregation”指单位步长聚合。",
+    "en": "Checks one constructed situation; what it excludes is natural-number (unit-step) scores, not aggregation in general. It does not show that J2 is right elsewhere, that the protected condition is basic, or that bounded-sensitivity rivals fail; in this situation the two cannot be told apart. The record ID's \"uniform aggregation\" means unit-step aggregation."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 检查通过：ProtectionPriorityRival 10项定理／17项声明审计（8项无依赖；1项 propext；4项 propext 与 Quot.sound；4项另含 Classical.choice）；无自定义公理、sorry 或 native_decide；与 RenewingFormation 同一回执及控制例。尚无独立审查。",
-    "en": "Successful Lean 4.29.1 check: ProtectionPriorityRival 10 theorems/17 declaration audits (8 with no dependency, 1 propext, 4 propext and Quot.sound, 4 also Classical.choice); no custom axiom, sorry or native_decide; same receipt and controls as RenewingFormation. Not yet independently reviewed."
+    "zh": "Lean 4.29.1 检查通过（运行 20261008T192627.406862Z）：ProtectionPriorityRival 15项定理／25项声明审计（11项无依赖；1项 propext；5项 propext 与 Quot.sound；8项另含 Classical.choice）；无自定义公理、sorry 或 native_decide；与 RenewingFormation 同一回执及控制例。2026-10-09 独立审查附更正后接受了首版（10项定理）；更名、新增 g0_leaves_ordering_open 与有界评分定理均经 Lean 检查，审查者未复审更正版；见 GENERATIVE-DISCRIMINATION-REVIEW。",
+    "en": "Successful Lean 4.29.1 check (run 20261008T192627.406862Z): ProtectionPriorityRival 15 theorems/25 declaration audits (11 with no dependency, 1 propext, 5 propext and Quot.sound, 8 also Classical.choice); no custom axiom, sorry or native_decide; same receipt and controls as RenewingFormation. An independent review on 9 October accepted the first version (10 theorems) with corrections; the renames, g0_leaves_ordering_open and the bounded-score theorems are Lean-checked, but the reviewer did not re-review the corrected version; see GENERATIVE-DISCRIMINATION-REVIEW."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
       "role": "proof",
-      "sha256": "cedaf9775aa43342817148668ba5b2163ec01c0e1c5bdfbcc8d44fcafa673bcd",
+      "sha256": "e104cc7426693a9f8222397efc9f5e6c49b50f47bbe4fb3b0024c04cf5e71103",
       "declarations": [
         "ProtectionPriorityRival.priority_satisfies_comparison",
         "ProtectionPriorityRival.priority_never_trades",
+        "ProtectionPriorityRival.g0_leaves_ordering_open",
         "ProtectionPriorityRival.comparison_does_not_yield_priority",
-        "ProtectionPriorityRival.every_scalar_comparison_trades",
-        "ProtectionPriorityRival.no_scalar_represents_priority",
+        "ProtectionPriorityRival.every_nat_score_trades",
+        "ProtectionPriorityRival.no_nat_score_represents_priority",
+        "ProtectionPriorityRival.priority_iff",
+        "ProtectionPriorityRival.ratio_agrees_with_priority",
+        "ProtectionPriorityRival.bounded_score_represents_priority",
         "ProtectionPriorityRival.g0_recognizes_traded_gains"
       ]
     },
@@ -120,25 +128,31 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
       "role": "receipt",
-      "sha256": "c3bd3a499f0ecf957d98dd921c7a72e3b570eb9b338dbd7058e963b5d04ca5d0",
+      "sha256": "77b9642d4336c32d80c9c74d7b9e60790305ab19812fcaefdd40584c48161a07",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
       "role": "statement",
-      "sha256": "e9ca792e8df93308e92c6b901bfca61d8cf3e8d0a39908ffef55c36c84af8576",
+      "sha256": "a1e7660a2a405543fece9e97418b1115d4dc868bbb499f30a18bbcefbec9e42a",
       "declarations": []
     },
     {
       "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "78bae7f18fffae2ebafb733e6b2ba4a04bb9c3c2e2e984b23d59db3ded59f2c0",
+      "sha256": "cdc0ae61453b294f941c6f096a5579746b5c175ef4fd22ad2b9013d8aad7253b",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md",
       "role": "provenance",
       "sha256": "e65a81f79b812627ad4f7cb0f26da96f79487a7d72c727a0fd969053f7920c8e",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md",
+      "role": "review",
+      "sha256": "f5fa2e390ae30afda3616244b4b016383bad2fc576f28f814b6b19c3773c70fe",
       "declarations": []
     }
   ],
@@ -166,8 +180,8 @@
     }
   ],
   "next_delta": {
-    "zh": "把有界敏感性对手纳入同一情境的比较，找出它与 J2 判断不同的情形；把对手判别推广到多项基本条件与多情境。",
-    "en": "Bring bounded-sensitivity rivals into the comparison and find where they diverge from J2; extend rival discrimination to several basic conditions and situations."
+    "zh": "构造能把 J2 与有界敏感性评分分开的情境（多项基本条件、不同利害），或说明为何不能；把对手判别推广到多情境。",
+    "en": "Construct situations (several basic conditions, varying stakes) that separate J2 from bounded-sensitivity scores, or show why none can; extend rival discrimination across situations."
   },
   "history": [
     {
@@ -181,6 +195,10 @@
     {
       "zh": "2026-10-09：G0-WARRANT 与整合说明收窄 §2.2 的范围（外部化消耗）；本结果不变。",
       "en": "2026-10-09: G0-WARRANT and the integration note narrowed §2.2 for externalizing consumption; no change to this result."
+    },
+    {
+      "zh": "2026-10-09：独立审查附更正后接受（GENERATIVE-DISCRIMINATION-REVIEW）。按审查：every_scalar_comparison_trades、no_scalar_represents_priority 改名为 every_nat_score_trades、no_nat_score_represents_priority；新增 g0_leaves_ordering_open（G0 不约束排序）、priority_iff，以及把审查者的有界评分论证变为检查过的 ratio_agrees_with_priority、bounded_score_represents_priority；标题与主张由“排除均匀聚合”改为“排除自然数评分，可由有界评分表示”，ID 保持稳定；补上前例。首版回执保留于 generative-discrimination-checks/20261008T185033.210526Z。",
+      "en": "2026-10-09: independently reviewed and accepted with corrections (GENERATIVE-DISCRIMINATION-REVIEW). Per the review, every_scalar_comparison_trades and no_scalar_represents_priority are renamed every_nat_score_trades and no_nat_score_represents_priority; g0_leaves_ordering_open (G0 does not constrain ordering) and priority_iff are added, and the reviewer's bounded-score argument becomes the checked ratio_agrees_with_priority and bounded_score_represents_priority. The title and claim change from excluding uniform aggregation to excluding natural-number scores while being representable by a bounded score; the ID stays stable; precedents are cited. The first receipt is preserved in generative-discrimination-checks/20261008T185033.210526Z."
     }
   ]
 }

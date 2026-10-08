@@ -1,0 +1,53 @@
+ProtectionPriorityRival.extension_shape {a b : Nat}
+  (h : GenerativeComparison.GenerativeExtension ProtectionPriorityRival.inventory a b) : 1 ≤ a ∧ a < b
+ProtectionPriorityRival.successor_extends {k : Nat} (pos : 1 ≤ k) :
+  GenerativeComparison.GenerativeExtension ProtectionPriorityRival.inventory k (k + 1)
+ProtectionPriorityRival.g0_recognizes_traded_gains (PositiveRelevant : Nat → ProtectionPriorityRival.Claim → Prop)
+  (g0 : GenerativeComparison.G0 ProtectionPriorityRival.inventory PositiveRelevant) (k i : Nat) :
+  i < k → PositiveRelevant k (ProtectionPriorityRival.Claim.gain i)
+ProtectionPriorityRival.priority_satisfies_comparison :
+  GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory fun first second =>
+    PracticalJudgment.Better ProtectionPriorityRival.protect ProtectionPriorityRival.gain second first
+ProtectionPriorityRival.priority_never_trades (k : Nat) :
+  0 < k → ¬PracticalJudgment.Better ProtectionPriorityRival.protect ProtectionPriorityRival.gain k 0
+ProtectionPriorityRival.weighted_satisfies_comparison (protectWeight : Nat) :
+  GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory fun first second =>
+    ProtectionPriorityRival.weighted protectWeight first < ProtectionPriorityRival.weighted protectWeight second
+ProtectionPriorityRival.weighted_trades (protectWeight : Nat) :
+  ProtectionPriorityRival.weighted protectWeight 0 < ProtectionPriorityRival.weighted protectWeight (protectWeight + 1)
+ProtectionPriorityRival.comparison_does_not_yield_priority :
+  ∃ score,
+    (GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory fun first second =>
+        score first < score second) ∧
+      ∃ k,
+        0 < k ∧
+          score 0 < score k ∧ ¬PracticalJudgment.Better ProtectionPriorityRival.protect ProtectionPriorityRival.gain k 0
+ProtectionPriorityRival.every_nat_score_trades (score : Nat → Nat)
+  (comparison :
+    GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory fun first second =>
+      score first < score second) :
+  0 < score 0 + 2 ∧ score 0 < score (score 0 + 2)
+ProtectionPriorityRival.no_nat_score_represents_priority :
+  ¬∃ score,
+      (GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory fun first second =>
+          score first < score second) ∧
+        ∀ (k : Nat), 0 < k → score k ≤ score 0
+ProtectionPriorityRival.g0_leaves_ordering_open :
+  (GenerativeComparison.G0 ProtectionPriorityRival.inventory fun x x_1 => True) ∧
+    (GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory fun first second =>
+        PracticalJudgment.Better ProtectionPriorityRival.protect ProtectionPriorityRival.gain second first) ∧
+      (∀ (k : Nat),
+          0 < k → ¬PracticalJudgment.Better ProtectionPriorityRival.protect ProtectionPriorityRival.gain k 0) ∧
+        (GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory fun first second =>
+            ProtectionPriorityRival.weighted 0 first < ProtectionPriorityRival.weighted 0 second) ∧
+          ProtectionPriorityRival.weighted 0 0 < ProtectionPriorityRival.weighted 0 1
+ProtectionPriorityRival.priority_iff (a b : Nat) :
+  PracticalJudgment.Better ProtectionPriorityRival.protect ProtectionPriorityRival.gain a b ↔
+    a = 0 ∧ b ≠ 0 ∨ b ≠ 0 ∧ b < a
+ProtectionPriorityRival.ratio_bounded (k : Nat) : ProtectionPriorityRival.num k ≤ ProtectionPriorityRival.den k
+ProtectionPriorityRival.ratio_agrees_with_priority (a b : Nat) :
+  ProtectionPriorityRival.ratioBetter b a ↔
+    PracticalJudgment.Better ProtectionPriorityRival.protect ProtectionPriorityRival.gain a b
+ProtectionPriorityRival.bounded_score_represents_priority :
+  GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory ProtectionPriorityRival.ratioBetter ∧
+    ∀ (k : Nat), 0 < k → ¬ProtectionPriorityRival.ratioBetter 0 k

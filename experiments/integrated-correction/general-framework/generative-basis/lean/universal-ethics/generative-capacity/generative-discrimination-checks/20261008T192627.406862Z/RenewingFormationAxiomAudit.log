@@ -1,0 +1,64 @@
+'RenewingFormation.Conditions' does not depend on any axioms
+'RenewingFormation.WearLaw' does not depend on any axioms
+'RenewingFormation.formedAt' does not depend on any axioms
+'RenewingFormation.next' does not depend on any axioms
+'RenewingFormation.path' does not depend on any axioms
+'RenewingFormation.formed' does not depend on any axioms
+'RenewingFormation.cumulative' does not depend on any axioms
+'RenewingFormation.Ceaseless' does not depend on any axioms
+'RenewingFormation.KeepsCapacity' does not depend on any axioms
+'RenewingFormation.WithinRenewal' does not depend on any axioms
+'RenewingFormation.BeyondRenewal' does not depend on any axioms
+'RenewingFormation.BeyondCurrent' does not depend on any axioms
+'RenewingFormation.tri' does not depend on any axioms
+'RenewingFormation.tri_mono' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.tri_zero_iff' depends on axioms: [propext]
+'RenewingFormation.tri_wear' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.budget' does not depend on any axioms
+'RenewingFormation.renewal_never_grows' does not depend on any axioms
+'RenewingFormation.renewal_loss_persists' does not depend on any axioms
+'RenewingFormation.within_renewal_invariant' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.within_renewal_ceaseless' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.within_renewal_grows' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_step' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_initial_implies_current' does not depend on any axioms
+'RenewingFormation.beyond_current_invariant' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_current_bounded' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_current_budget_falls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.beyond_current_ceases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.beyond_current_not_ceaseless' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.beyond_renewal_invariant' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_renewal_bounded' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_renewal_budget_falls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.beyond_renewal_ceases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.beyond_renewal_not_ceaseless' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.joint_excess_ends_shared_formation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.shared_formation_ceases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.without_consuming_part_ceaseless' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RenewingFormation.jointly_exceeding_parts_end_shared_formation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RenewingFormation.joint_consumption_inhabited' does not depend on any axioms
+'RenewingFormation.sustained_cumulative' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.sustained_eventually_exceeds_every_consuming' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.within_eventually_exceeds_every_beyond' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.consuming_forms_more_first' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.unitWear' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_current_strictly_weaker' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.keeps_capacity_of_within' does not depend on any axioms
+'RenewingFormation.keeps_capacity_iff' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_loses_capacity_at_once' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.restOnce' does not depend on any axioms
+'RenewingFormation.surgeThenSettle' does not depend on any axioms
+'RenewingFormation.rest_keeps_capacity_not_ceaseless' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.settle_path' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.wears_yet_ceaseless' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.eventInventory' does not depend on any axioms
+'RenewingFormation.event_reading_recognizes_both' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.comparison_does_not_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.event_comparison_ranks_rest_below' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.ceaseless_separates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.capacity_separates' depends on axioms: [propext, Quot.sound]

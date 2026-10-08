@@ -1,0 +1,23 @@
+import RenewingFormation
+import ProtectionPriorityRival
+#print axioms RenewingFormation.within_renewal_ceaseless
+#print axioms RenewingFormation.beyond_renewal_bounded
+#print axioms RenewingFormation.beyond_renewal_ceases
+#print axioms RenewingFormation.shared_formation_ceases
+#print axioms RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation
+#print axioms RenewingFormation.sustained_eventually_exceeds_every_consuming
+#print axioms RenewingFormation.consuming_forms_more_first
+#print axioms RenewingFormation.event_reading_favors_both
+#print axioms RenewingFormation.whole_direction_separates
+#print axioms RenewingFormation.within_renewal_invariant
+#print axioms RenewingFormation.beyond_step
+#print axioms RenewingFormation.unitWear
+#print axioms ProtectionPriorityRival.priority_satisfies_comparison
+#print axioms ProtectionPriorityRival.priority_never_trades
+#print axioms ProtectionPriorityRival.comparison_does_not_yield_priority
+#print axioms ProtectionPriorityRival.every_scalar_comparison_trades
+#print axioms ProtectionPriorityRival.no_scalar_represents_priority
+#print axioms ProtectionPriorityRival.g0_recognizes_traded_gains
+#check @RenewingFormation.shared_formation_ceases
+#check @RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation
+#check @ProtectionPriorityRival.no_scalar_represents_priority

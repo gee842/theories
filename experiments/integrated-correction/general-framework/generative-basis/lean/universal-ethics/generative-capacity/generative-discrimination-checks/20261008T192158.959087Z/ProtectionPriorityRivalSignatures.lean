@@ -1,0 +1,16 @@
+import ProtectionPriorityRival
+#check ProtectionPriorityRival.extension_shape
+#check ProtectionPriorityRival.successor_extends
+#check ProtectionPriorityRival.g0_recognizes_traded_gains
+#check ProtectionPriorityRival.priority_satisfies_comparison
+#check ProtectionPriorityRival.priority_never_trades
+#check ProtectionPriorityRival.weighted_satisfies_comparison
+#check ProtectionPriorityRival.weighted_trades
+#check ProtectionPriorityRival.comparison_does_not_yield_priority
+#check ProtectionPriorityRival.every_nat_score_trades
+#check ProtectionPriorityRival.no_nat_score_represents_priority
+#check ProtectionPriorityRival.g0_leaves_ordering_open
+#check ProtectionPriorityRival.priority_iff
+#check ProtectionPriorityRival.ratio_bounded
+#check ProtectionPriorityRival.ratio_agrees_with_priority
+#check ProtectionPriorityRival.bounded_score_represents_priority

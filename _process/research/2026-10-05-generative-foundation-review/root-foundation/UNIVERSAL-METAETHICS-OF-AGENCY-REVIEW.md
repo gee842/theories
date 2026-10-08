@@ -71,7 +71,9 @@ def G0 (inventory) (PositiveRelevant) : Prop :=
 
 (B) 正是当前首要的 [Theory of Becoming](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md) 可以供给的桥：它已把退化纳入描述而不预设好坏，并把评价交给 G0／J。**若 Becoming 能以非评价的关系结构区分条件更新型形成与条件消耗型形成，G0 就获得非循环、可区分的内容；这是两条研究线之间最有产出的下一推论。** 若做不到，应公开采用 (A) 及其代价。
 
-**(B) 已完成（2026-10-09，[Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)）。** [关系性分类](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-renewal-classification.md)按形成与它所参与关系的条件分开更新型与消耗型，不用任何规范公理，Lean 层公理依赖全部为空。癌依存于它所消耗的条件，因而终止自身；升级竞赛起初在更新之内，随后消耗；不依存于所耗条件的“赢”可以无界持续，同时终止依存关系，而它自身的轨迹与可持续的形成无法区分。于是逐项“新组织”不能区分这些情形，关系结构可以。G0 以生生为对象时，这三类都不在其正面对象之内；G0 自身的正面意义仍是采用的承诺。另一会话的[较窄规律类结果](../../../../theories/shengsheng-buxi-generative-existence/results/records/renewing-consuming-formation.md)见 §6；二者的差别见[整合记录](RELATIONAL-RENEWAL-INTEGRATION.md#5-与既有及并行结果的关系)。
+**(B) 已完成（2026-10-09，[Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)）。** [关系性分类](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-renewal-classification.md)按形成与它所参与关系的条件分开更新型与消耗型，不用任何规范公理，Lean 层公理依赖全部为空。癌依存于它所消耗的条件，因而终止自身；升级竞赛起初在更新之内，随后消耗；不依存于所耗条件的“赢”可以无界持续，同时终止依存关系，而它自身的轨迹与可持续的形成无法区分。于是逐项“新组织”不能区分这些情形，关系结构可以。这三类都不是生生，因而不在 G0 的对象之内（措辞已依 Ren 追问修正，见下段）。另一会话的[较窄规律类结果](../../../../theories/shengsheng-buxi-generative-existence/results/records/renewing-consuming-formation.md)见 §6；二者的差别见[整合记录](RELATIONAL-RENEWAL-INTEGRATION.md#5-与既有及并行结果的关系)。
+
+**审查判断的修正（2026-10-09，[Ren 追问](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)）。** 上文说“在第三种范围下，这些过程确实满足‘持续形成新组织’，完整论述并未排除它们”。这一句不成立，原文保留。G0 的对象是“整体中的生及其继续生成”，即生生；“持续”已经排除消耗型：依存的消耗者终止自身，不依存的消耗者终止它所参与的关系。把形式 `generative` 读成“任何已实现的新组织”，是本审查的读法，不是 Ren 的 G0。所以恶性生成问题出在形式化的读法，不出在 G0。(B) 也不是对 G0 的限定，而是给 G0 已有的对象一个关系内容；出路 (A) 不再需要。生成与退化作为关系不重叠，但一次发生可以同时参与二者。“消耗更坏”是比较，由 C 承担。[已查的比较](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md)在关系读法下，把规律族中每一种超出更新的取用严格排在同一展开中它不发生的接续之下；逐事件读法做不到。混合情形 C 不裁决。
 
 ### 3.4 形式层没有行动者（类别 a）
 
@@ -189,3 +191,9 @@ Integration: README evidence lines now state what each check contributes; G0 sup
 **对 §3.3 的影响。** 出路 (B) 在一个明确的规律类中得到形式化：整体方向的读法，无须先行的好坏筛选，就把更新内的生生不息与磨损更新组织、终止共享形成的形成分开；逐事件读取的 G0 不能分开两者。出路 (A) 的代价因此不必承担。但这仍只是一个规律类，真实过程的对应须各自取得证据。
 
 **对 §3.5 的影响。** 三条首页证据行改为说明各项检查承担什么：前提足迹、动力学区分、相对 G0/C 的独立性、案例推理。G0 本身不由 Lean 验证，这一点写在首句。符号翻转探针对新的动力学定理不适用，因为它们不含规范谓词；检查器的控制例核对了这一点。
+
+**独立审查后的更正（2026-10-09）。** 本节以上原文保留。同日的[独立审查](GENERATIVE-DISCRIMINATION-REVIEW.md)附更正后接受两项结果，并指出本节有三处说过了头。
+
+1. **“出路 (A) 的代价因此不必承担”过强。** 本结果只涉及一个不可恢复的磨损规律类，外部化情形在其外。出路 (A) 不再需要，理由见 §3.3 末段：Ren 追问后确认，G0 的对象本来就是生生，恶性生成问题出在把 `generative` 读成任何新组织的形式化读法。本结果的作用较窄：在一个规律类中，给出不借好坏筛选、可检查的描述性内容，认出哪些形成属于这一对象。把 AI 的形式读法（`Ceaseless`、`KeepsCapacity`）认作生生，仍是读法与对应，不是 Lean 结果。
+2. **“符号翻转探针对新的动力学定理不适用”不对。** 新定理按构造对符号中立，探针给出同样的诊断：哪一侧在 G0 的对象之内，来自所给读法，不来自 Lean。新增的是供该读法所用的非平凡描述性区分；控制例核对的正是该区分不依赖效价参数。“消耗更坏”是比较，由 C 承担：本模块的逐事件宽读法下 C 不适用（`comparison_does_not_apply`）；在关系读法下，另一会话的 [relational-reading-comparison](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md) 已检查 C 的严格排序。
+3. **“J2 排除均匀聚合”不准确。** Lean 覆盖的是自然数值（单位步长）评分。修订后的模块另证明：一个有界有理评分在该情境中与 J2 在每一对选项上一致。所以这个情境只把 J2 与单位步长聚合分开。
