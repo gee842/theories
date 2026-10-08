@@ -1,0 +1,119 @@
+PositiveGroundUncertainty.positive_integral_has_positive_occurrence {R : Type} (domain : List R)
+  (contribution : R → Int) (positive : 0 < PositiveGroundUncertainty.finiteIntegral domain contribution) :
+  ∃ r, r ∈ domain ∧ 0 < contribution r
+PositiveGroundUncertainty.contingent_generation_has_positive_ground {H Q : Type} (admitted : H → Prop)
+  (before : H → Q → Prop) (inventory : GenerativeComparison.Inventory H Q) (positive : H → Q → Prop)
+  (g0 : GenerativeComparison.G0 inventory positive)
+  (formed : ∀ (h : H), admitted h → ∃ q, inventory.generative q ∧ inventory.realized h q ∧ ¬before h q) (h : H) :
+  admitted h → ∃ q, positive h q ∧ ¬before h q
+PositiveGroundUncertainty.certified_integral_supplies_contributory_reason {H Q R : Type} (admitted : H → Prop)
+  (before : H → Q → Prop) (inventory : GenerativeComparison.Inventory H Q) (positive : H → Q → Prop) (reason : H → Prop)
+  (g0 : GenerativeComparison.G0 inventory positive) (articulate : ∀ (h : H) (q : Q), positive h q → reason h)
+  (domain : List R) (contribution : H → R → Int) (meaning : R → Q)
+  (correspondence :
+    ∀ (h : H),
+      admitted h →
+        ∀ (r : R),
+          r ∈ domain →
+            0 < contribution h r →
+              inventory.generative (meaning r) ∧ inventory.realized h (meaning r) ∧ ¬before h (meaning r))
+  (certificate : ∀ (h : H), admitted h → 0 < PositiveGroundUncertainty.finiteIntegral domain (contribution h)) (h : H) :
+  admitted h → (∃ q, positive h q ∧ ¬before h q) ∧ reason h
+PositiveGroundUncertainty.same_response_secures_generation_without_fixed_form
+  (m : PositiveGroundUncertainty.FormationModel) (productive : 0 < PositiveGroundUncertainty.magnitude m) :
+  (∀ (branch : Bool),
+      ∃ q,
+        (PositiveGroundUncertainty.generatedInventory m).generative q ∧
+          (PositiveGroundUncertainty.generatedInventory m).realized branch q ∧
+            ¬PositiveGroundUncertainty.prior branch q) ∧
+    ¬∃ q,
+        (PositiveGroundUncertainty.generatedInventory m).generative q ∧
+          ∀ (branch : Bool), (PositiveGroundUncertainty.generatedInventory m).realized branch q
+PositiveGroundUncertainty.positive_occurrence_has_actual_generative_correspondence
+  (m : PositiveGroundUncertainty.FormationModel) (branch : Bool) (r : PositiveGroundUncertainty.Occurrence)
+  (member : r ∈ PositiveGroundUncertainty.positiveDomain)
+  (good :
+    0 <
+      PositiveGroundUncertainty.contribution (PositiveGroundUncertainty.respond PositiveGroundUncertainty.initial) m
+        branch r) :
+  (PositiveGroundUncertainty.generatedInventory m).generative (PositiveGroundUncertainty.occurrenceMeaning r) ∧
+    (PositiveGroundUncertainty.generatedInventory m).realized branch (PositiveGroundUncertainty.occurrenceMeaning r) ∧
+      ¬PositiveGroundUncertainty.prior branch (PositiveGroundUncertainty.occurrenceMeaning r)
+PositiveGroundUncertainty.positive_integral_and_adverse_full_change (m : PositiveGroundUncertainty.FormationModel)
+  (productive : 0 < PositiveGroundUncertainty.magnitude m) (branch : Bool) :
+  PositiveGroundUncertainty.positiveDomain.Nodup ∧
+    PositiveGroundUncertainty.fullDomain.Nodup ∧
+      0 <
+          PositiveGroundUncertainty.finiteIntegral PositiveGroundUncertainty.positiveDomain
+            (PositiveGroundUncertainty.contribution
+              (PositiveGroundUncertainty.respond PositiveGroundUncertainty.initial) m branch) ∧
+        PositiveGroundUncertainty.finiteIntegral PositiveGroundUncertainty.fullDomain
+              (PositiveGroundUncertainty.contribution
+                (PositiveGroundUncertainty.respond PositiveGroundUncertainty.initial) m branch) =
+            -1 ∧
+          PositiveGroundUncertainty.finiteIntegral PositiveGroundUncertainty.fullDomain
+              (PositiveGroundUncertainty.contribution PositiveGroundUncertainty.initial m branch) =
+            0
+PositiveGroundUncertainty.response_preserves_joint_openness_and_query_access
+  (m : PositiveGroundUncertainty.FormationModel) :
+  JointContinuationClassification.PreservesJointBundles
+      (PositiveGroundUncertainty.future PositiveGroundUncertainty.initial m)
+      (PositiveGroundUncertainty.future (PositiveGroundUncertainty.respond PositiveGroundUncertainty.initial) m) ∧
+    (PositiveGroundUncertainty.respond PositiveGroundUncertainty.initial).queryOpen = true
+PositiveGroundUncertainty.acquired_evidence_secures_good_and_leaves_both_opennesses :
+  PositiveGroundUncertainty.live PositiveGroundUncertainty.FormationModel.one ∧
+    PositiveGroundUncertainty.live PositiveGroundUncertainty.FormationModel.two ∧
+      ¬PositiveGroundUncertainty.live PositiveGroundUncertainty.FormationModel.barren ∧
+        Generative.StandardsBridge.learn PositiveGroundUncertainty.repertoire PositiveGroundUncertainty.firstEvidence =
+            [PositiveGroundUncertainty.rule PositiveGroundUncertainty.FormationModel.one,
+              PositiveGroundUncertainty.rule PositiveGroundUncertainty.FormationModel.two] ∧
+          Generative.StandardsBridge.answer
+                (Generative.StandardsBridge.learn PositiveGroundUncertainty.repertoire
+                  PositiveGroundUncertainty.firstEvidence)
+                false =
+              none ∧
+            (∀ (m : PositiveGroundUncertainty.FormationModel),
+                PositiveGroundUncertainty.live m →
+                  ∀ (branch : Bool),
+                    0 <
+                      PositiveGroundUncertainty.finiteIntegral PositiveGroundUncertainty.positiveDomain
+                        (PositiveGroundUncertainty.contribution
+                          (PositiveGroundUncertainty.respond PositiveGroundUncertainty.initial) m branch)) ∧
+              (∀ (m : PositiveGroundUncertainty.FormationModel),
+                  PositiveGroundUncertainty.live m →
+                    ∀ (branch : Bool),
+                      PositiveGroundUncertainty.finiteIntegral PositiveGroundUncertainty.positiveDomain
+                          (PositiveGroundUncertainty.contribution PositiveGroundUncertainty.initial m branch) =
+                        0) ∧
+                Generative.StandardsBridge.revise
+                      (Generative.StandardsBridge.learn PositiveGroundUncertainty.repertoire
+                        PositiveGroundUncertainty.firstEvidence)
+                      (false, true) =
+                    [PositiveGroundUncertainty.rule PositiveGroundUncertainty.FormationModel.one] ∧
+                  Generative.StandardsBridge.revise
+                        (Generative.StandardsBridge.learn PositiveGroundUncertainty.repertoire
+                          PositiveGroundUncertainty.firstEvidence)
+                        (false, false) =
+                      [PositiveGroundUncertainty.rule PositiveGroundUncertainty.FormationModel.two] ∧
+                    Generative.StandardsBridge.answer
+                          (Generative.StandardsBridge.revise
+                            (Generative.StandardsBridge.learn PositiveGroundUncertainty.repertoire
+                              PositiveGroundUncertainty.firstEvidence)
+                            (true, false))
+                          true =
+                        none ∧
+                      Generative.StandardsBridge.learn PositiveGroundUncertainty.repertoire
+                          (Generative.StandardsBridge.acquire
+                            (PositiveGroundUncertainty.rule PositiveGroundUncertainty.FormationModel.barren) 1 [true]) =
+                        [PositiveGroundUncertainty.rule PositiveGroundUncertainty.FormationModel.barren]
+PositiveGroundUncertainty.wider_scope_can_require_certificate_retraction :
+  (∀ (m : PositiveGroundUncertainty.FormationModel),
+      PositiveGroundUncertainty.live m →
+        PositiveGroundUncertainty.live m ∨ m = PositiveGroundUncertainty.FormationModel.barren) ∧
+    ¬∀ (m : PositiveGroundUncertainty.FormationModel),
+        PositiveGroundUncertainty.live m ∨ m = PositiveGroundUncertainty.FormationModel.barren →
+          ∀ (branch : Bool),
+            0 <
+              PositiveGroundUncertainty.finiteIntegral PositiveGroundUncertainty.positiveDomain
+                (PositiveGroundUncertainty.contribution
+                  (PositiveGroundUncertainty.respond PositiveGroundUncertainty.initial) m branch)

@@ -184,13 +184,13 @@ def render_views(records):
     ongoing = research_goals(goal_records)
     records_by_id = {r['id']: r for r in records}
     paths = ['README.md', 'RESEARCH.md', 'RESULTS.md', 'GOALS.md', 'DEPENDENCIES.md', '_process/BRIEF.md', THEORY + '/README.md', THEORY + '/results/ROADMAP.md', '_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md', 'OPEN-QUESTIONS.md', THEORY + '/unified-2026-10-05/CLAIMS.md']
-    titles = ['Universal Meta-Ethics of Agency', '研究入口 / Research navigation', '成果登记 / Canonical results', '研究方向与授权范围 / Directions and authorized scopes', '成果依赖与组合 / Result dependencies and composition', '研究方法与阅读说明 / Research method and reading guide', 'Universal Meta-Ethics of Agency / 能动性的普遍元伦理', '当前研究路线 / Current research directions', '基础研究与证据入口 / Foundation studies and evidence', '已登记的开放问题 / Registered open questions', '已登记主张与历史账本 / Registered claims and historical ledger']
+    titles = ['The Theory of Becoming', '研究入口 / Research navigation', '成果登记 / Canonical results', '研究方向与授权范围 / Directions and authorized scopes', '成果依赖与组合 / Result dependencies and composition', '研究方法与阅读说明 / Research method and reading guide', 'The Theory of Becoming / 生成／变化之论', '当前研究路线 / Current research directions', '基础研究与证据入口 / Foundation studies and evidence', '已登记的开放问题 / Registered open questions', '已登记主张与历史账本 / Registered claims and historical ledger']
     outputs = {}
     for path, title in zip(paths, titles):
         lines = ['# ' + title, '', README_MARKER if path == 'README.md' else MARKER, '',
                  ' · '.join(link(p, path, label) for p, label in [('README.md', 'Home / 首页'), ('RESULTS.md', 'Results / 成果'), ('GOALS.md', 'Scopes / 范围'), ('DEPENDENCIES.md', 'Connections / 连接'), ('_process/RESULT-WORKFLOW.md', 'Contribute / 贡献')]), '']
         if path == 'README.md':
-            lines += ['A universal metaethical core and a normative framework for AI alignment, grounded in shengsheng (生生): living and further generation within one relational unfolding.', '']
+            lines += ['The Theory of Becoming explains formation, persistence, transformation, degeneration and dissolution within one relational unfolding, without first assuming that becoming is good. Its Universal Metaethical Core adopts one explicit axiom, G0: living and further generation within the whole have basic positive normative significance. With explicit practical premises, it supplies reasons addressed to every situated intelligence and a normative framework for AI alignment.', '']
             if featured:
                 lines += ['## Leading results', '']
                 for r in featured:

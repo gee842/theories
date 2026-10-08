@@ -88,7 +88,7 @@ class FeaturedResultsTests(unittest.TestCase):
         with patch.object(navigation, 'read', side_effect=read), patch.object(navigation, 'goals', return_value=[]):
             views = navigation.render_views(records)
         root = views['README.md']
-        self.assertTrue(root.startswith('# Universal Meta-Ethics of Agency\n'))
+        self.assertTrue(root.startswith('# The Theory of Becoming\n'))
         self.assertLess(root.index('### second result'), root.index('### first result'))
         self.assertLess(root.index('first recorded evidence'), root.index('## Research and repository'))
         self.assertIn('second scoped summary', root)

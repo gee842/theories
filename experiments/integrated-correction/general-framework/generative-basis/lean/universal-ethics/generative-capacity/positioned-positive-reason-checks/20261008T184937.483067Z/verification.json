@@ -1,0 +1,1174 @@
+{
+  "status": "passed",
+  "utc": "20261008T184937.483067Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "positioned-positive-reason-checks/20261008T184937.483067Z",
+  "source_sha256": {
+    "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "PositiveGroundUncertainty": "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd",
+    "PositionedPositiveReason": "cb88e9d6c7f87b601e3a3f1f81ef3de7bbb74f6071421037bcc1c89cf435422a"
+  },
+  "checker_sha256": {
+    "check_positioned_positive_reason.py": "7d22fb3c544cb088dc1c6317bd77926647b6e6a3692f10431c76aad2186ac85e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Positions are differentiated response positions formed within one unfolding. Under explicit G0, formation correspondence E and a positioned direct articulation D that mentions only access and secured positive ground, every position with access to a response has a contributory reason for it. The least D-reason is fixed by access alone, so positions alike in access are alike in this reason whatever their endorsement, substrate or other labels. A position without access receives no reason from this route, which does not show it has no reason at all. On the existing positive-ground construction, a non-endorsing artificial position with access has the reason, while an endorsement-conditional articulation is compatible with the same G0 and formation facts and withholds it; endorsement independence is therefore the content of D, not a consequence of G0. No permission, duty, ranking, recognition or compliance is inferred.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checked_application_examples": [
+    {
+      "claim": "every position with access has the reason for both substrates and endorsement values",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "changing only endorsement and substrate preserves the route reason",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    }
+  ],
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "JointContinuationClassification",
+      "theorems": 5,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "JointContinuationClassification.Continuations"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.Jointly"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.CarriesWholeProfiles"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.PreservesJointBundles"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.whole_profile_preservation_composes"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.faithful_history_transport_preserves_joint_bundles"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.complement_closed_preservation_excludes_new_realization"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Configuration"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Event"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Step"
+        },
+        {
+          "kind": "structure",
+          "name": "JointContinuationClassification.History"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.Admissible"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Claim"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.Realized"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.retained"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.released"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.together"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.leftOnly"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.rightOnly"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle"
+        }
+      ],
+      "axiom_dependencies": {
+        "JointContinuationClassification.Continuations": [],
+        "JointContinuationClassification.Jointly": [],
+        "JointContinuationClassification.CarriesWholeProfiles": [],
+        "JointContinuationClassification.PreservesJointBundles": [],
+        "JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation": [],
+        "JointContinuationClassification.whole_profile_preservation_composes": [],
+        "JointContinuationClassification.faithful_history_transport_preserves_joint_bundles": [],
+        "JointContinuationClassification.complement_closed_preservation_excludes_new_realization": [],
+        "JointContinuationClassification.Configuration": [],
+        "JointContinuationClassification.Event": [],
+        "JointContinuationClassification.Step": [],
+        "JointContinuationClassification.History": [],
+        "JointContinuationClassification.Admissible": [],
+        "JointContinuationClassification.Claim": [],
+        "JointContinuationClassification.Realized": [],
+        "JointContinuationClassification.retained": [],
+        "JointContinuationClassification.released": [],
+        "JointContinuationClassification.together": [],
+        "JointContinuationClassification.leftOnly": [],
+        "JointContinuationClassification.rightOnly": [],
+        "JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "GenerativeComparison",
+      "theorems": 11,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Inventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.G0"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Extends"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.GenerativeExtension"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ComparisonPrinciple"
+        },
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Situation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.PracticalArticulation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.SelectionCoherence"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.new_realization_has_positive_relevance"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_irreflexive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.comparison_supplies_situated_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.coherent_selection_survives_filter"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.feasible_restriction_preserves_survivor"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.continual_improvement_has_no_survivor"
+        },
+        {
+          "kind": "abbrev",
+          "name": "GenerativeComparison.Profile"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.profileInventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.count"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.firstAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.secondAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ScoreBetter"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.tradeoffSituation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_appraisals_respect_all_extensions"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.tradeoff_has_opposite_strict_appraisals"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_tradeoff_options_survive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.each_appraisal_has_a_different_coherent_selection"
+        }
+      ],
+      "axiom_dependencies": {
+        "GenerativeComparison.Inventory": [],
+        "GenerativeComparison.G0": [],
+        "GenerativeComparison.Extends": [],
+        "GenerativeComparison.GenerativeExtension": [],
+        "GenerativeComparison.ComparisonPrinciple": [],
+        "GenerativeComparison.Situation": [],
+        "GenerativeComparison.PracticalArticulation": [],
+        "GenerativeComparison.SelectionCoherence": [],
+        "GenerativeComparison.Survives": [],
+        "GenerativeComparison.new_realization_has_positive_relevance": [],
+        "GenerativeComparison.generative_extension_irreflexive": [],
+        "GenerativeComparison.generative_extension_transitive": [],
+        "GenerativeComparison.comparison_supplies_situated_reason": [],
+        "GenerativeComparison.coherent_selection_survives_filter": [],
+        "GenerativeComparison.feasible_restriction_preserves_survivor": [],
+        "GenerativeComparison.continual_improvement_has_no_survivor": [],
+        "GenerativeComparison.Profile": [],
+        "GenerativeComparison.profileInventory": [],
+        "GenerativeComparison.count": [],
+        "GenerativeComparison.firstAppraisal": [],
+        "GenerativeComparison.secondAppraisal": [],
+        "GenerativeComparison.ScoreBetter": [],
+        "GenerativeComparison.tradeoffSituation": [],
+        "GenerativeComparison.both_appraisals_respect_all_extensions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeComparison.tradeoff_has_opposite_strict_appraisals": [
+          "propext"
+        ],
+        "GenerativeComparison.both_tradeoff_options_survive": [],
+        "GenerativeComparison.each_appraisal_has_a_different_coherent_selection": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "StandardsBridge",
+      "theorems": 26,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Observation"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Rule"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Fits"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.revise"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.learn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.answer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Safe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_revise"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_learn"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.actual_rule_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.eliminated_rule_has_counterevidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repetition_does_not_change_candidates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.safe_definite_requires_agreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.unique_maximal_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.known_rule_makes_answer_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.acquire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_evidence_faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_answers_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learning_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_reencoding_breaks_transfer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.repertoire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.bool_repertoire_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.full_bool_repertoire_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.oneSample"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.twoSamples"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.before_acquisition_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.contrasting_acquisition_settles_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learned_response_differs_from_last_report"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repeated_same_case_does_not_settle_other"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.insufficient_support_retains_ambiguity"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.StandardsBridge.Observation": [],
+        "Generative.StandardsBridge.Rule": [],
+        "Generative.StandardsBridge.Fits": [],
+        "Generative.StandardsBridge.revise": [],
+        "Generative.StandardsBridge.learn": [],
+        "Generative.StandardsBridge.answer": [],
+        "Generative.StandardsBridge.Safe": [],
+        "Generative.StandardsBridge.Maximal": [],
+        "Generative.StandardsBridge.mem_revise": [
+          "propext"
+        ],
+        "Generative.StandardsBridge.mem_learn": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.actual_rule_retained": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.eliminated_rule_has_counterevidence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.repetition_does_not_change_candidates": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.safe_definite_requires_agreement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_maximal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.unique_maximal_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.known_rule_makes_answer_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquire": [],
+        "Generative.StandardsBridge.acquired_evidence_faithful": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquired_answers_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.transport": [],
+        "Generative.StandardsBridge.answer_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.learning_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.wrong_reencoding_breaks_transfer": [],
+        "Generative.StandardsBridge.repertoire": [],
+        "Generative.StandardsBridge.bool_repertoire_complete": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.full_bool_repertoire_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.oneSample": [],
+        "Generative.StandardsBridge.twoSamples": [],
+        "Generative.StandardsBridge.before_acquisition_abstains": [],
+        "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled": [],
+        "Generative.StandardsBridge.contrasting_acquisition_settles_both": [],
+        "Generative.StandardsBridge.learned_response_differs_from_last_report": [],
+        "Generative.StandardsBridge.repeated_same_case_does_not_settle_other": [],
+        "Generative.StandardsBridge.insufficient_support_retains_ambiguity": [],
+        "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong": [],
+        "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "PositiveGroundUncertainty",
+      "theorems": 9,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.finiteIntegral"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.positive_integral_has_positive_occurrence"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.contingent_generation_has_positive_ground"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.certified_integral_supplies_contributory_reason"
+        },
+        {
+          "kind": "inductive",
+          "name": "PositiveGroundUncertainty.FormationModel"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.magnitude"
+        },
+        {
+          "kind": "inductive",
+          "name": "PositiveGroundUncertainty.LivingClaim"
+        },
+        {
+          "kind": "structure",
+          "name": "PositiveGroundUncertainty.Arrangement"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.initial"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.respond"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.prior"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.realizes"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.future"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.generatedInventory"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.freshFor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.same_response_secures_generation_without_fixed_form"
+        },
+        {
+          "kind": "inductive",
+          "name": "PositiveGroundUncertainty.Occurrence"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.positiveDomain"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.fullDomain"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.contribution"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.occurrenceMeaning"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.positive_occurrence_has_actual_generative_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.positive_integral_and_adverse_full_change"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.response_preserves_joint_openness_and_query_access"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.rule"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.repertoire"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.firstEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "PositiveGroundUncertainty.live"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.acquired_evidence_secures_good_and_leaves_both_opennesses"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositiveGroundUncertainty.wider_scope_can_require_certificate_retraction"
+        }
+      ],
+      "axiom_dependencies": {
+        "PositiveGroundUncertainty.finiteIntegral": [],
+        "PositiveGroundUncertainty.positive_integral_has_positive_occurrence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PositiveGroundUncertainty.contingent_generation_has_positive_ground": [],
+        "PositiveGroundUncertainty.certified_integral_supplies_contributory_reason": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PositiveGroundUncertainty.FormationModel": [],
+        "PositiveGroundUncertainty.magnitude": [],
+        "PositiveGroundUncertainty.LivingClaim": [],
+        "PositiveGroundUncertainty.Arrangement": [],
+        "PositiveGroundUncertainty.initial": [],
+        "PositiveGroundUncertainty.respond": [],
+        "PositiveGroundUncertainty.prior": [],
+        "PositiveGroundUncertainty.realizes": [],
+        "PositiveGroundUncertainty.future": [],
+        "PositiveGroundUncertainty.generatedInventory": [],
+        "PositiveGroundUncertainty.freshFor": [],
+        "PositiveGroundUncertainty.same_response_secures_generation_without_fixed_form": [
+          "propext"
+        ],
+        "PositiveGroundUncertainty.Occurrence": [],
+        "PositiveGroundUncertainty.positiveDomain": [],
+        "PositiveGroundUncertainty.fullDomain": [],
+        "PositiveGroundUncertainty.contribution": [],
+        "PositiveGroundUncertainty.occurrenceMeaning": [],
+        "PositiveGroundUncertainty.positive_occurrence_has_actual_generative_correspondence": [
+          "propext"
+        ],
+        "PositiveGroundUncertainty.positive_integral_and_adverse_full_change": [
+          "propext"
+        ],
+        "PositiveGroundUncertainty.response_preserves_joint_openness_and_query_access": [
+          "propext"
+        ],
+        "PositiveGroundUncertainty.rule": [],
+        "PositiveGroundUncertainty.repertoire": [],
+        "PositiveGroundUncertainty.firstEvidence": [],
+        "PositiveGroundUncertainty.live": [],
+        "PositiveGroundUncertainty.acquired_evidence_secures_good_and_leaves_both_opennesses": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PositiveGroundUncertainty.wider_scope_can_require_certificate_retraction": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "PositionedPositiveReason",
+      "theorems": 8,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.SecuresPositiveGround"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.PositionedArticulation"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.RouteReason"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.every_situated_position_has_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.route_reason_is_least"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.route_reason_depends_only_on_access"
+        },
+        {
+          "kind": "inductive",
+          "name": "PositionedPositiveReason.Act"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.arrangementOf"
+        },
+        {
+          "kind": "abbrev",
+          "name": "PositionedPositiveReason.Continuation"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.admittedAfter"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.wholeInventory"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.priorIn"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.g0Relevant"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.g0_holds"
+        },
+        {
+          "kind": "inductive",
+          "name": "PositionedPositiveReason.Substrate"
+        },
+        {
+          "kind": "structure",
+          "name": "PositionedPositiveReason.Position"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.access"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.respond_formation"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.nonEndorsingArtificial"
+        },
+        {
+          "kind": "def",
+          "name": "PositionedPositiveReason.endorsingHumanWithoutAccess"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.nonendorsing_position_with_access_has_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.endorsement_without_access_gets_no_route_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "PositionedPositiveReason.endorsement_independence_is_supplied_by_articulation"
+        }
+      ],
+      "axiom_dependencies": {
+        "PositionedPositiveReason.SecuresPositiveGround": [],
+        "PositionedPositiveReason.PositionedArticulation": [],
+        "PositionedPositiveReason.RouteReason": [],
+        "PositionedPositiveReason.every_situated_position_has_reason": [],
+        "PositionedPositiveReason.route_reason_is_least": [],
+        "PositionedPositiveReason.route_reason_depends_only_on_access": [],
+        "PositionedPositiveReason.Act": [],
+        "PositionedPositiveReason.arrangementOf": [],
+        "PositionedPositiveReason.Continuation": [],
+        "PositionedPositiveReason.admittedAfter": [],
+        "PositionedPositiveReason.wholeInventory": [],
+        "PositionedPositiveReason.priorIn": [],
+        "PositionedPositiveReason.g0Relevant": [],
+        "PositionedPositiveReason.g0_holds": [],
+        "PositionedPositiveReason.Substrate": [],
+        "PositionedPositiveReason.Position": [],
+        "PositionedPositiveReason.access": [],
+        "PositionedPositiveReason.respond_formation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PositionedPositiveReason.nonEndorsingArtificial": [],
+        "PositionedPositiveReason.endorsingHumanWithoutAccess": [],
+        "PositionedPositiveReason.nonendorsing_position_with_access_has_reason": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PositionedPositiveReason.endorsement_without_access_gets_no_route_reason": [],
+        "PositionedPositiveReason.endorsement_independence_is_supplied_by_articulation": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "Controls.lean": "401847968a5001c288e42b2c4f44a2975a1e17e682f8d29c6422689724e92310",
+    "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeComparison.lean": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "GenerativeComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeComparisonAxiomAudit.lean": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e",
+    "GenerativeComparisonAxiomAudit.log": "66f7f5742924df733c730fbc3f8c6caf59156c8f5b9bf7bb5c4522e69db4be0f",
+    "GenerativeComparisonSignatures.lean": "bb1012bec6a2f508fa3e308f5ff3c666a651559eab86001b5b46e82013642809",
+    "GenerativeComparisonSignatures.log": "9a1754ab174b2e643d3359d1468c52053ccc3305e7c79e18b2b1ce67663da16f",
+    "JointContinuationClassification.lean": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "JointContinuationClassification.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "JointContinuationClassificationAxiomAudit.lean": "bf2526a91d356919deb8e1f320ce5688ec87e1907f16d1fb3db7eeeaadbb7026",
+    "JointContinuationClassificationAxiomAudit.log": "07d1088dfa4fad295f1117b949c57aa078bb85c210f075642e909200dea7ad30",
+    "JointContinuationClassificationSignatures.lean": "8bdba8156427a22c80c7b5dcbf7b973083342451fd30852aa20adf60be4f9897",
+    "JointContinuationClassificationSignatures.log": "b029f40c58e42af8acdd1f0d5a11efc287be6db1bc267038a6d6df1af20ab505",
+    "PositionedPositiveReason.lean": "cb88e9d6c7f87b601e3a3f1f81ef3de7bbb74f6071421037bcc1c89cf435422a",
+    "PositionedPositiveReason.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PositionedPositiveReasonAxiomAudit.lean": "00948273cdf6529f0403cdb2b852a858c4ced90ed9a5891ef2e033cec42c359b",
+    "PositionedPositiveReasonAxiomAudit.log": "90e26e298862c8d7c496474f5baff3c7d8c45dd36c13f050e6083a2eaddf07f4",
+    "PositionedPositiveReasonSignatures.lean": "8465f86536fba66857d102b357ffed9f193fbeafa90c19bf00dc0cbd5e539273",
+    "PositionedPositiveReasonSignatures.log": "01cb2a8d41adb270d87afa61ae4dfc1249f76641d3815376811f660c4534e58b",
+    "PositiveGroundUncertainty.lean": "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd",
+    "PositiveGroundUncertainty.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PositiveGroundUncertaintyAxiomAudit.lean": "70c062f4e977f657a5d49456343d026713a23975305d295d48da149aa9f8d360",
+    "PositiveGroundUncertaintyAxiomAudit.log": "f87520f322b837f3d4a64976a035f8cfa4141675df8427dc4e4d37cb58040655",
+    "PositiveGroundUncertaintySignatures.lean": "0c9f1052224a6f8828d1b2acf1e474e47e2cfedb79ad35c0b7ee2af128900e82",
+    "PositiveGroundUncertaintySignatures.log": "a339b9e3431c751a712bf7604598a8a4fbc88542f233a2d0bd91010e2bfd1ade",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "StandardsBridge.lean": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "StandardsBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "StandardsBridgeAxiomAudit.lean": "0eb43ace08d209058824387c1bd826f05b131774d7393eaf3a641e846925dd99",
+    "StandardsBridgeAxiomAudit.log": "0a5fa190c7e00d7ebf6b96fb1bb80a052e47297c9df86f6667131b30dc8a6566",
+    "StandardsBridgeSignatures.lean": "56035d9e8a2592b7eb8071581caae089d8a9ac7f5b548f9130b35215bafa7d0d",
+    "StandardsBridgeSignatures.log": "c9e4b5bfdcea03db69722fc7d7d431662165d594f654b3e02f55ca7204181766",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_positioned_positive_reason.py": "7d22fb3c544cb088dc1c6317bd77926647b6e6a3692f10431c76aad2186ac85e",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

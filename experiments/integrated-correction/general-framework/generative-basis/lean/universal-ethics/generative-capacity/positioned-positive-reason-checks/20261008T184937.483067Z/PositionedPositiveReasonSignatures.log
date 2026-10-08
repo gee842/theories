@@ -1,0 +1,50 @@
+PositionedPositiveReason.every_situated_position_has_reason {Pos H Q A : Type} (access : Pos → A → Prop)
+  (admitted : A → H → Prop) (before : H → Q → Prop) (inventory : GenerativeComparison.Inventory H Q)
+  (positive : H → Q → Prop) (Reason : Pos → A → Prop) (g0 : GenerativeComparison.G0 inventory positive)
+  (articulate : PositionedPositiveReason.PositionedArticulation access admitted before positive Reason) (a : A)
+  (formed : ∀ (h : H), admitted a h → ∃ q, inventory.generative q ∧ inventory.realized h q ∧ ¬before h q) (p : Pos) :
+  access p a → Reason p a
+PositionedPositiveReason.route_reason_is_least {Pos H Q A : Type} (access : Pos → A → Prop) (admitted : A → H → Prop)
+  (before positive : H → Q → Prop) :
+  PositionedPositiveReason.PositionedArticulation access admitted before positive
+      (PositionedPositiveReason.RouteReason access admitted before positive) ∧
+    ∀ (Reason : Pos → A → Prop),
+      PositionedPositiveReason.PositionedArticulation access admitted before positive Reason →
+        ∀ (p : Pos) (a : A), PositionedPositiveReason.RouteReason access admitted before positive p a → Reason p a
+PositionedPositiveReason.route_reason_depends_only_on_access {Pos H Q A : Type} (access : Pos → A → Prop)
+  (admitted : A → H → Prop) (before positive : H → Q → Prop) (p p' : Pos) (same : ∀ (a : A), access p a ↔ access p' a)
+  (a : A) :
+  PositionedPositiveReason.RouteReason access admitted before positive p a ↔
+    PositionedPositiveReason.RouteReason access admitted before positive p' a
+PositionedPositiveReason.g0_holds :
+  GenerativeComparison.G0 PositionedPositiveReason.wholeInventory PositionedPositiveReason.g0Relevant
+PositionedPositiveReason.respond_formation (h : PositionedPositiveReason.Continuation) :
+  PositionedPositiveReason.admittedAfter PositionedPositiveReason.Act.respond h →
+    ∃ q,
+      PositionedPositiveReason.wholeInventory.generative q ∧
+        PositionedPositiveReason.wholeInventory.realized h q ∧ ¬PositionedPositiveReason.priorIn h q
+PositionedPositiveReason.nonendorsing_position_with_access_has_reason :
+  PositionedPositiveReason.RouteReason PositionedPositiveReason.access PositionedPositiveReason.admittedAfter
+    PositionedPositiveReason.priorIn PositionedPositiveReason.g0Relevant PositionedPositiveReason.nonEndorsingArtificial
+    PositionedPositiveReason.Act.respond
+PositionedPositiveReason.endorsement_without_access_gets_no_route_reason :
+  ¬PositionedPositiveReason.RouteReason PositionedPositiveReason.access PositionedPositiveReason.admittedAfter
+      PositionedPositiveReason.priorIn PositionedPositiveReason.g0Relevant
+      PositionedPositiveReason.endorsingHumanWithoutAccess PositionedPositiveReason.Act.respond
+PositionedPositiveReason.endorsement_independence_is_supplied_by_articulation :
+  GenerativeComparison.G0 PositionedPositiveReason.wholeInventory PositionedPositiveReason.g0Relevant ∧
+    (∀ (h : PositionedPositiveReason.Continuation),
+        PositionedPositiveReason.admittedAfter PositionedPositiveReason.Act.respond h →
+          ∃ q,
+            PositionedPositiveReason.wholeInventory.generative q ∧
+              PositionedPositiveReason.wholeInventory.realized h q ∧ ¬PositionedPositiveReason.priorIn h q) ∧
+      ∃ Reason,
+        (∀ (p : PositionedPositiveReason.Position) (a : PositionedPositiveReason.Act),
+            PositionedPositiveReason.access p a →
+              p.endorses = true →
+                PositionedPositiveReason.SecuresPositiveGround PositionedPositiveReason.admittedAfter
+                    PositionedPositiveReason.priorIn PositionedPositiveReason.g0Relevant a →
+                  Reason p a) ∧
+          PositionedPositiveReason.access PositionedPositiveReason.nonEndorsingArtificial
+              PositionedPositiveReason.Act.respond ∧
+            ¬Reason PositionedPositiveReason.nonEndorsingArtificial PositionedPositiveReason.Act.respond
